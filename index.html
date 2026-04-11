@@ -1,101 +1,1989 @@
-<script>
-  const DATA_URL = "data/player_pool_v1.json";
-  const FIXTURES_URL = "data/fixtures_group.csv";
-  const START_SECURITY_URL = "data/player_start_security_nt.csv";
-  const OPTIMAL_SQUADS_URL = "data/optimal_squads_by_formation.json";
-  const BUDGET_TOTAL = 50000000;
-  const MAX_PER_TEAM = 4;
-  const HISTORY_LIMIT = 30;
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VM 2026 Manager</title>
+  <style>
+    html, body {
+      height: 100%;
+    }
 
-  const STORAGE_KEYS = {
-    squad: "vm2026_squad_v2",
-    formation: "vm2026_formation_v2"
-  };
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #1f2937;
+      color: #111827;
+      overflow: hidden;
+    }
 
-  const FORMATIONS = {
-    "3-4-3": { df: 3, mf: 4, fw: 3 },
-    "3-5-2": { df: 3, mf: 5, fw: 2 },
-    "4-3-3": { df: 4, mf: 3, fw: 3 },
-    "4-4-2": { df: 4, mf: 4, fw: 2 },
-    "4-5-1": { df: 4, mf: 5, fw: 1 },
-    "5-3-2": { df: 5, mf: 3, fw: 2 },
-    "5-4-1": { df: 5, mf: 4, fw: 1 }
-  };
+    .topbar {
+      height: 56px;
+      box-sizing: border-box;
+      background: #ec4899;
+      color: white;
+      padding: 10px 18px;
+      font-weight: bold;
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
 
-  const POSITION_LABEL_TO_CODE = {
-    "Målmand": "GK",
-    "Forsvar": "DEF",
-    "Midtbane": "MID",
-    "Angriber": "FWD"
-  };
+    .page-wrap {
+      height: calc(100vh - 56px);
+      box-sizing: border-box;
+      padding: 12px 16px;
+      overflow: hidden;
+    }
 
-  let allPlayers = [];
-  let fixtures = [];
-  let optimalSquads = [];
-  let squad = JSON.parse(localStorage.getItem(STORAGE_KEYS.squad) || "{}");
-  let currentFormation = localStorage.getItem(STORAGE_KEYS.formation) || "4-4-2";
-  let activeSlotKey = null;
-  let squadHistory = [];
+    .page-inner {
+      width: 100%;
+      max-width: 1460px;
+      height: 100%;
+      margin: 0 auto;
+    }
 
-  const formationSelect = document.getElementById("formationSelect");
-  const pitch = document.getElementById("pitch");
-  const activeSlotText = document.getElementById("activeSlotText");
-  const searchInput = document.getElementById("searchInput");
-  const teamFilter = document.getElementById("teamFilter");
-  const positionFilter = document.getElementById("positionFilter");
-  const sortSelect = document.getElementById("sortSelect");
-  const tradeList = document.getElementById("tradeList");
-  const tradeHelpText = document.getElementById("tradeHelpText");
-  const spentValue = document.getElementById("spentValue");
-  const bankValue = document.getElementById("bankValue");
-  const playerCountValue = document.getElementById("playerCountValue");
-  const statusBox = document.getElementById("statusBox");
-  const topbarInfo = document.getElementById("topbarInfo");
-  const optimizeBtn = document.getElementById("optimizeBtn");
-  const fillMissingBtn = document.getElementById("fillMissingBtn");
-  const undoBtn = document.getElementById("undoBtn");
-  const clearTeamBtn = document.getElementById("clearTeamBtn");
+    .app {
+      display: grid;
+      grid-template-columns: minmax(0, 1.7fr) minmax(360px, 0.95fr);
+      gap: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
 
-  // ... resten af din kode er uændret ...
+    .left-panel {
+      background: linear-gradient(180deg, #88c23f 0%, #6faa31 100%);
+      padding: 14px 16px 16px;
+      height: 100%;
+      box-sizing: border-box;
+      overflow: auto;
+      min-width: 0;
+    }
 
-  async function init() {
-    try {
-      const playersResponsePromise = fetch(DATA_URL);
-      const startMapPromise = loadStartSecurityMap();
-      const fixturesPromise = loadFixtures();
-      const optimalSquadsPromise = loadOptimalSquads();
+    .right-panel {
+      background: #23252b;
+      color: white;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      height: 100%;
+      box-sizing: border-box;
+      overflow: hidden;
+      border-left: 1px solid rgba(255,255,255,0.08);
+    }
 
-      const [playersResponse, startMap] = await Promise.all([
-        playersResponsePromise,
-        startMapPromise,
-        fixturesPromise,
-        optimalSquadsPromise
-      ]);
+    .team-title {
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
 
-      if (!playersResponse.ok) {
-        throw new Error(`Kunne ikke hente datafil: ${playersResponse.status}`);
+    .bank-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .bank-box {
+      background: rgba(255,255,255,0.92);
+      color: #111827;
+      border-radius: 10px;
+      padding: 8px 11px;
+      min-width: 120px;
+      font-size: 12px;
+    }
+
+    .bank-box strong {
+      font-size: 13px;
+    }
+
+    .formation-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    .formation-select-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.92);
+      padding: 7px 10px;
+      border-radius: 10px;
+      color: #111827;
+      font-size: 13px;
+    }
+
+    .action-bar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .action-btn {
+      background: rgba(255,255,255,0.92);
+      color: #111827;
+      font-weight: bold;
+      padding: 9px 13px;
+      border-radius: 10px;
+      font-size: 13px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .action-btn.primary {
+      background: #fde047;
+    }
+
+    .action-btn.secondary {
+      background: #111827;
+      color: white;
+    }
+
+    .action-btn.tertiary {
+      background: #ffffff;
+      color: #111827;
+    }
+
+    .action-btn.undo {
+      background: #e5e7eb;
+      color: #111827;
+    }
+
+    .action-btn:disabled {
+      opacity: 0.55;
+      cursor: not-allowed;
+    }
+
+    .status-box {
+      margin-bottom: 12px;
+      padding: 9px 11px;
+      border-radius: 10px;
+      font-size: 13px;
+      line-height: 1.4;
+      display: none;
+    }
+
+    .status-box.error {
+      display: block;
+      background: #7f1d1d;
+      color: white;
+    }
+
+    .status-box.info {
+      display: block;
+      background: rgba(255,255,255,0.92);
+      color: #111827;
+    }
+
+    .info-box {
+      margin-bottom: 12px;
+      background: #2f3239;
+      border-radius: 10px;
+      padding: 10px 12px;
+      font-size: 12px;
+      line-height: 1.45;
+      color: white;
+      flex: 0 0 auto;
+    }
+
+    .info-box strong {
+      color: white;
+    }
+
+    select, input, button {
+      border-radius: 8px;
+      border: 1px solid #d1d5db;
+      padding: 8px 10px;
+      box-sizing: border-box;
+      font-size: 13px;
+    }
+
+    button {
+      border: none;
+      cursor: pointer;
+    }
+
+    .formation-select-wrap select {
+      border: 1px solid #d1d5db;
+      padding: 5px 8px;
+      font-size: 13px;
+    }
+
+    .pitch {
+      position: relative;
+      border-radius: 16px;
+      min-height: 800px;
+      border: 3px solid rgba(255,255,255,0.35);
+      overflow: hidden;
+      background:
+        linear-gradient(
+          180deg,
+          rgba(255,255,255,0.06) 0%,
+          rgba(255,255,255,0.06) 14.2%,
+          rgba(0,0,0,0.00) 14.2%,
+          rgba(0,0,0,0.00) 28.4%,
+          rgba(255,255,255,0.06) 28.4%,
+          rgba(255,255,255,0.06) 42.6%,
+          rgba(0,0,0,0.00) 42.6%,
+          rgba(0,0,0,0.00) 56.8%,
+          rgba(255,255,255,0.06) 56.8%,
+          rgba(255,255,255,0.06) 71%,
+          rgba(0,0,0,0.00) 71%,
+          rgba(0,0,0,0.00) 85.2%,
+          rgba(255,255,255,0.06) 85.2%,
+          rgba(255,255,255,0.06) 100%
+        );
+    }
+
+    .pitch-half {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      border-top: 2px solid rgba(255,255,255,0.38);
+    }
+
+    .pitch-circle {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 118px;
+      height: 118px;
+      margin-left: -59px;
+      margin-top: -59px;
+      border: 2px solid rgba(255,255,255,0.38);
+      border-radius: 50%;
+    }
+
+    .pitch-penalty-top,
+    .pitch-penalty-bottom {
+      position: absolute;
+      left: 50%;
+      width: 184px;
+      margin-left: -92px;
+      border: 2px solid rgba(255,255,255,0.32);
+      box-sizing: border-box;
+    }
+
+    .pitch-penalty-top {
+      top: 0;
+      height: 102px;
+      border-top: none;
+      border-radius: 0 0 10px 10px;
+    }
+
+    .pitch-penalty-bottom {
+      bottom: 0;
+      height: 102px;
+      border-bottom: none;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .pitch-goal-top,
+    .pitch-goal-bottom {
+      position: absolute;
+      left: 50%;
+      width: 78px;
+      margin-left: -39px;
+      border: 2px solid rgba(255,255,255,0.28);
+      box-sizing: border-box;
+    }
+
+    .pitch-goal-top {
+      top: 0;
+      height: 38px;
+      border-top: none;
+      border-radius: 0 0 8px 8px;
+    }
+
+    .pitch-goal-bottom {
+      bottom: 0;
+      height: 38px;
+      border-bottom: none;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .slot {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      width: 114px;
+      text-align: center;
+    }
+
+    .player-figure {
+      width: 46px;
+      height: 46px;
+      margin: 0 auto 5px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.18);
+      border: 2px solid rgba(255,255,255,0.45);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .player-figure.empty {
+      border-style: dashed;
+      background: rgba(255,255,255,0.08);
+    }
+
+    .slot.active .player-figure {
+      outline: 3px solid #fde047;
+      outline-offset: 3px;
+    }
+
+    .flag-img {
+      width: 22px;
+      height: 16px;
+      object-fit: cover;
+      border: 1px solid rgba(0,0,0,0.15);
+      border-radius: 2px;
+      background: white;
+    }
+
+    .player-name {
+      display: inline-block;
+      background: white;
+      color: #111827;
+      border-radius: 8px;
+      padding: 3px 7px;
+      font-size: 10px;
+      font-weight: bold;
+      max-width: 108px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 1.15;
+    }
+
+    .player-price {
+      margin-top: 3px;
+      display: inline-block;
+      background: rgba(255,255,255,0.92);
+      color: #111827;
+      border-radius: 8px;
+      padding: 2px 6px;
+      font-size: 10px;
+    }
+
+    .player-next {
+      margin-top: 4px;
+      display: inline-block;
+      background: rgba(17,24,39,0.82);
+      color: #fde68a;
+      border-radius: 8px;
+      padding: 2px 6px;
+      font-size: 9px;
+      line-height: 1.15;
+      max-width: 108px;
+      word-break: break-word;
+    }
+
+    .player-start {
+      margin-top: 4px;
+      display: inline-block;
+      border-radius: 8px;
+      padding: 2px 6px;
+      font-size: 9px;
+      line-height: 1.15;
+      max-width: 108px;
+      word-break: break-word;
+      font-weight: bold;
+    }
+
+    .player-start.good {
+      background: rgba(21,128,61,0.88);
+      color: white;
+    }
+
+    .player-start.medium {
+      background: rgba(180,83,9,0.88);
+      color: white;
+    }
+
+    .player-start.low {
+      background: rgba(127,29,29,0.88);
+      color: white;
+    }
+
+    .player-start.unknown {
+      background: rgba(55,65,81,0.88);
+      color: #e5e7eb;
+    }
+
+    .slot-btn {
+      margin-top: 5px;
+      background: #fde047;
+      color: #111827;
+      font-weight: bold;
+      padding: 4px 7px;
+      border-radius: 8px;
+      font-size: 11px;
+    }
+
+    .slot-btn.remove {
+      background: #111827;
+      color: white;
+    }
+
+    .trade-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 10px;
+      flex: 0 0 auto;
+    }
+
+    .trade-search {
+      margin-bottom: 10px;
+      flex: 0 0 auto;
+    }
+
+    .trade-search input,
+    .trade-header select {
+      width: 100%;
+      background: #2f3239;
+      color: white;
+      border: 1px solid #3f4450;
+      font-size: 13px;
+    }
+
+    .trade-info {
+      margin-bottom: 12px;
+      background: #2f3239;
+      border-radius: 10px;
+      padding: 10px 12px;
+      font-size: 12px;
+      line-height: 1.45;
+      flex: 0 0 auto;
+    }
+
+    .trade-list {
+      overflow-y: auto;
+      min-height: 0;
+      flex: 1 1 auto;
+      border-radius: 10px;
+      background: #1c1e23;
+      padding: 4px;
+    }
+
+    .trade-row {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr) 76px 58px 58px 86px;
+      gap: 10px;
+      align-items: center;
+      padding: 9px 8px;
+      border-bottom: 1px solid #2f3239;
+    }
+
+    .trade-row.disabled {
+      opacity: 0.45;
+    }
+
+    .plus-btn {
+      background: #fde047;
+      color: #111827;
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      font-size: 20px;
+      line-height: 1;
+      font-weight: bold;
+      padding: 0;
+    }
+
+    .plus-btn:disabled {
+      background: #6b7280;
+      color: #d1d5db;
+      cursor: not-allowed;
+    }
+
+    .trade-name {
+      font-weight: bold;
+      margin-bottom: 2px;
+      font-size: 13px;
+    }
+
+    .trade-meta {
+      font-size: 11px;
+      color: #cbd5e1;
+    }
+
+    .trade-next {
+      font-size: 11px;
+      color: #fde68a;
+      margin-top: 4px;
+    }
+
+    .trade-reason {
+      font-size: 10px;
+      color: #fca5a5;
+      margin-top: 4px;
+    }
+
+    .trade-position-col,
+    .trade-score-col,
+    .trade-start-col {
+      text-align: right;
+      min-width: 0;
+    }
+
+    .trade-position-value {
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 1.1;
+    }
+
+    .trade-position-label,
+    .trade-score-label,
+    .trade-start-label {
+      font-size: 10px;
+      color: #cbd5e1;
+      margin-top: 4px;
+    }
+
+    .trade-score-value,
+    .trade-start-value {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 1;
+    }
+
+    .trade-price {
+      text-align: right;
+      font-weight: bold;
+      min-width: 78px;
+      font-size: 13px;
+    }
+
+    .trade-subprice {
+      font-size: 10px;
+      color: #cbd5e1;
+      text-align: right;
+      margin-top: 3px;
+    }
+
+    .muted {
+      color: #cbd5e1;
+    }
+
+    @media (max-width: 1180px) {
+      body {
+        overflow: auto;
       }
 
-      const rawPlayers = await playersResponse.json();
-
-      if (!Array.isArray(rawPlayers)) {
-        throw new Error("Datafilen indeholder ikke en gyldig spillerliste.");
+      .page-wrap {
+        height: auto;
+        overflow: visible;
       }
 
-      allPlayers = attachStartSecurity(rawPlayers, startMap);
+      .page-inner {
+        height: auto;
+      }
 
-      cleanSquadForCurrentFormation();
-      buildTeamFilter();
-      setupEvents();
+      .app {
+        grid-template-columns: 1fr;
+        height: auto;
+      }
+
+      .left-panel,
+      .right-panel {
+        height: auto;
+        overflow: visible;
+      }
+
+      .pitch {
+        min-height: 680px;
+      }
+
+      .trade-list {
+        max-height: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div>VM 2026 Manager</div>
+    <div id="topbarInfo">Pre-final prototype</div>
+  </div>
+
+  <div class="page-wrap">
+    <div class="page-inner">
+      <div class="app">
+        <div class="left-panel">
+          <div class="team-title">Mit hold</div>
+
+          <div class="bank-row">
+            <div class="bank-box">
+              <div><strong>Brugt</strong></div>
+              <div id="spentValue">0</div>
+            </div>
+            <div class="bank-box">
+              <div><strong>Bank</strong></div>
+              <div id="bankValue">50.000.000</div>
+            </div>
+            <div class="bank-box">
+              <div><strong>Spillere</strong></div>
+              <div id="playerCountValue">0 / 11</div>
+            </div>
+          </div>
+
+          <div class="formation-bar">
+            <div class="formation-select-wrap">
+              <strong>Formation</strong>
+              <select id="formationSelect">
+                <option value="3-4-3">3-4-3</option>
+                <option value="3-5-2">3-5-2</option>
+                <option value="4-3-3">4-3-3</option>
+                <option value="4-4-2" selected>4-4-2</option>
+                <option value="4-5-1">4-5-1</option>
+                <option value="5-3-2">5-3-2</option>
+                <option value="5-4-1">5-4-1</option>
+              </select>
+            </div>
+
+            <div class="formation-select-wrap">
+              <strong>Valgt plads</strong>
+              <span id="activeSlotText">Ingen valgt</span>
+            </div>
+          </div>
+
+          <div class="action-bar">
+            <button id="optimizeBtn" class="action-btn primary">Vælg optimalt hold</button>
+            <button id="fillMissingBtn" class="action-btn tertiary">Fyld mangler optimalt</button>
+            <button id="undoBtn" class="action-btn undo">Fortryd</button>
+            <button id="clearTeamBtn" class="action-btn secondary">Ryd hold</button>
+          </div>
+
+          <div id="statusBox" class="status-box"></div>
+
+          <div class="pitch" id="pitch">
+            <div class="pitch-half"></div>
+            <div class="pitch-circle"></div>
+            <div class="pitch-penalty-top"></div>
+            <div class="pitch-penalty-bottom"></div>
+            <div class="pitch-goal-top"></div>
+            <div class="pitch-goal-bottom"></div>
+          </div>
+        </div>
+
+        <div class="right-panel">
+          <div class="trade-search">
+            <input id="searchInput" type="text" placeholder="Søg spiller..." />
+          </div>
+
+          <div class="trade-header">
+            <select id="teamFilter">
+              <option value="">Alle lande</option>
+            </select>
+            <select id="positionFilter">
+              <option value="">Alle positioner</option>
+              <option value="Målmand">Målmand</option>
+              <option value="Forsvar">Forsvar</option>
+              <option value="Midtbane">Midtbane</option>
+              <option value="Angriber">Angriber</option>
+            </select>
+            <select id="sortSelect">
+              <option value="score_desc">Højeste modelscore</option>
+              <option value="price_desc">Dyreste</option>
+              <option value="price_asc">Billigste</option>
+              <option value="advance_desc">Højeste viderechance</option>
+              <option value="start_desc">Højeste startsandsynlighed</option>
+              <option value="name_asc">Navn A-Å</option>
+            </select>
+          </div>
+
+          <div class="trade-info">
+            <div><strong>Handelspanel</strong></div>
+            <div id="tradeHelpText" class="muted">Klik på en spiller i listen for automatisk at fylde første ledige plads i den relevante kæde. Hvis kæden er fuld, vælg en spiller på banen for at udskifte.</div>
+          </div>
+
+          <div class="info-box">
+            <div><strong>Score:</strong> Modelens samlede vurdering af spillerens fantasy-potentiale.</div>
+            <div><strong>Start:</strong> Estimeret sandsynlighed for, at spilleren starter inde.</div>
+            <div><strong>Viderechance:</strong> Viser sandsynligheden for, at spillerens land går videre fra den aktuelle fase.</div>
+            <div><strong>Note:</strong> Bruges senere til fx mulig rotation eller allerede videre.</div>
+          </div>
+
+          <div class="trade-list" id="tradeList"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const DATA_URL = "data/player_pool_v1.json";
+    const FIXTURES_URL = "data/fixtures_group.csv";
+    const START_SECURITY_URL = "data/player_start_security_nt.csv";
+    const OPTIMAL_SQUADS_URL = "data/optimal_squads_by_formation.json";
+    const BUDGET_TOTAL = 50000000;
+    const MAX_PER_TEAM = 4;
+    const HISTORY_LIMIT = 30;
+
+    const STORAGE_KEYS = {
+      squad: "vm2026_squad_v2",
+      formation: "vm2026_formation_v2"
+    };
+
+    const FORMATIONS = {
+      "3-4-3": { df: 3, mf: 4, fw: 3 },
+      "3-5-2": { df: 3, mf: 5, fw: 2 },
+      "4-3-3": { df: 4, mf: 3, fw: 3 },
+      "4-4-2": { df: 4, mf: 4, fw: 2 },
+      "4-5-1": { df: 4, mf: 5, fw: 1 },
+      "5-3-2": { df: 5, mf: 3, fw: 2 },
+      "5-4-1": { df: 5, mf: 4, fw: 1 }
+    };
+
+    const POSITION_LABEL_TO_CODE = {
+      "Målmand": "GK",
+      "Forsvar": "DEF",
+      "Midtbane": "MID",
+      "Angriber": "FWD"
+    };
+
+    let allPlayers = [];
+    let fixtures = [];
+    let optimalSquads = [];
+    let squad = JSON.parse(localStorage.getItem(STORAGE_KEYS.squad) || "{}");
+    let currentFormation = localStorage.getItem(STORAGE_KEYS.formation) || "4-4-2";
+    let activeSlotKey = null;
+    let squadHistory = [];
+
+    const formationSelect = document.getElementById("formationSelect");
+    const pitch = document.getElementById("pitch");
+    const activeSlotText = document.getElementById("activeSlotText");
+    const searchInput = document.getElementById("searchInput");
+    const teamFilter = document.getElementById("teamFilter");
+    const positionFilter = document.getElementById("positionFilter");
+    const sortSelect = document.getElementById("sortSelect");
+    const tradeList = document.getElementById("tradeList");
+    const tradeHelpText = document.getElementById("tradeHelpText");
+    const spentValue = document.getElementById("spentValue");
+    const bankValue = document.getElementById("bankValue");
+    const playerCountValue = document.getElementById("playerCountValue");
+    const statusBox = document.getElementById("statusBox");
+    const topbarInfo = document.getElementById("topbarInfo");
+    const optimizeBtn = document.getElementById("optimizeBtn");
+    const fillMissingBtn = document.getElementById("fillMissingBtn");
+    const undoBtn = document.getElementById("undoBtn");
+    const clearTeamBtn = document.getElementById("clearTeamBtn");
+
+    function formatMoney(value) {
+      return Number(value || 0).toLocaleString("da-DK");
+    }
+
+    function pctWhole(value) {
+      return Math.round(Number(value || 0) * 100) + "%";
+    }
+
+    function startPct(value) {
+      const num = Number(value);
+      if (Number.isNaN(num) || num <= 0) return "–";
+      return `${Math.round(num)}%`;
+    }
+
+    function getStartBadge(player) {
+      const num = Number(player?.start_probability_pct || 0);
+
+      if (!num) return { text: "Start: –", className: "unknown" };
+      if (num >= 80) return { text: `Start: ${Math.round(num)}%`, className: "good" };
+      if (num >= 60) return { text: `Start: ${Math.round(num)}%`, className: "medium" };
+      return { text: `Start: ${Math.round(num)}%`, className: "low" };
+    }
+
+    function getFlagUrl(flagCode) {
+      if (!flagCode) return "";
+      return `https://flagcdn.com/24x18/${flagCode}.png`;
+    }
+
+    function saveState() {
+      localStorage.setItem(STORAGE_KEYS.squad, JSON.stringify(squad));
+      localStorage.setItem(STORAGE_KEYS.formation, currentFormation);
+    }
+
+    function cloneSquadState(value) {
+      return JSON.parse(JSON.stringify(value || {}));
+    }
+
+    function pushHistory() {
+      squadHistory.push(cloneSquadState(squad));
+      if (squadHistory.length > HISTORY_LIMIT) {
+        squadHistory.shift();
+      }
+      updateUndoButton();
+    }
+
+    function undoLastAction() {
+      if (!squadHistory.length) {
+        showStatus("Der er ikke noget at fortryde.", "info");
+        return;
+      }
+
+      squad = squadHistory.pop();
+      activeSlotKey = null;
+      activeSlotText.textContent = "Ingen valgt";
+      saveState();
+      render();
+      showStatus("Sidste ændring er fortrudt.", "info");
+    }
+
+    function updateUndoButton() {
+      undoBtn.disabled = squadHistory.length === 0;
+    }
+
+    function normalizeText(value) {
+      return String(value || "").trim().toLowerCase();
+    }
+
+    function normalizeName(value) {
+      return String(value || "")
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/[’']/g, "")
+        .replace(/\s+/g, " ")
+        .trim()
+        .toLowerCase();
+    }
+
+    function normalizeTeamId(value) {
+      return String(value || "").trim().toUpperCase();
+    }
+
+    function normalizePositionLabel(value) {
+      const text = String(value || "").trim();
+      return POSITION_LABEL_TO_CODE[text] || text.toUpperCase();
+    }
+
+    function positionShortLabel(value) {
+      const pos = normalizePositionLabel(value);
+      if (pos === "GK") return "Mål";
+      if (pos === "DEF") return "Forsvar";
+      if (pos === "MID") return "Midt";
+      if (pos === "FWD") return "Angreb";
+      return pos || "–";
+    }
+
+    function buildMergeKey(playerName, teamId, teamName = "") {
+      const teamPart = normalizeText(teamId || teamName);
+      return `${normalizeText(playerName)}||${teamPart}`;
+    }
+
+    function showStatus(text, variant = "error") {
+      statusBox.className = `status-box ${variant}`;
+      statusBox.textContent = text;
+    }
+
+    function clearStatus() {
+      statusBox.className = "status-box";
+      statusBox.textContent = "";
+    }
+
+    function getPlayerById(playerId) {
+      return allPlayers.find(player => String(player.player_id) === String(playerId)) || null;
+    }
+
+    function getPlayerScore(player) {
+      const score = Number(player?.display_score);
+      return Number.isFinite(score) ? score : 0;
+    }
+
+    function getPlayerPrice(player) {
+      const price = Number(player?.price_estimate);
+      return Number.isFinite(price) ? price : 0;
+    }
+
+    function getPlayerStart(player) {
+      const start = Number(player?.start_probability_pct);
+      return Number.isFinite(start) ? start : 0;
+    }
+
+    function findPlayerByOptimizerRow(row) {
+      if (!row) return null;
+
+      const wantedName = normalizeName(row.player_name);
+      const wantedTeamId = normalizeTeamId(row.team_id);
+      const wantedPosition = normalizePositionLabel(row.position);
+
+      const exact = allPlayers.find(player =>
+        normalizeName(player.player_name) === wantedName &&
+        normalizeTeamId(player.team_id) === wantedTeamId &&
+        normalizePositionLabel(player.position) === wantedPosition
+      );
+      if (exact) return exact;
+
+      const byNameAndTeam = allPlayers.filter(player =>
+        normalizeName(player.player_name) === wantedName &&
+        normalizeTeamId(player.team_id) === wantedTeamId
+      );
+      if (byNameAndTeam.length === 1) return byNameAndTeam[0];
+
+      const byNameAndPosition = allPlayers.filter(player =>
+        normalizeName(player.player_name) === wantedName &&
+        normalizePositionLabel(player.position) === wantedPosition
+      );
+      if (byNameAndPosition.length === 1) return byNameAndPosition[0];
+
+      const byNameOnly = allPlayers.filter(player =>
+        normalizeName(player.player_name) === wantedName
+      );
+      if (byNameOnly.length === 1) return byNameOnly[0];
+
+      return null;
+    }
+
+    function parseCsvLine(line) {
+      const result = [];
+      let current = "";
+      let inQuotes = false;
+
+      for (let i = 0; i < line.length; i++) {
+        const char = line[i];
+        const next = line[i + 1];
+
+        if (char === '"') {
+          if (inQuotes && next === '"') {
+            current += '"';
+            i++;
+          } else {
+            inQuotes = !inQuotes;
+          }
+        } else if (char === "," && !inQuotes) {
+          result.push(current);
+          current = "";
+        } else {
+          current += char;
+        }
+      }
+
+      result.push(current);
+      return result;
+    }
+
+    function parseCsv(text) {
+      const lines = text.replace(/\r/g, "").split("\n").filter(Boolean);
+      if (!lines.length) return [];
+
+      const headers = parseCsvLine(lines[0]).map(h => h.trim());
+
+      return lines.slice(1).map(line => {
+        const values = parseCsvLine(line);
+        const row = {};
+        headers.forEach((header, idx) => {
+          row[header] = (values[idx] || "").trim();
+        });
+        return row;
+      });
+    }
+
+    function kickoffToDate(value) {
+      if (!value) return null;
+      const normalized = String(value).trim().replace(" ", "T");
+      const date = new Date(normalized);
+      return Number.isNaN(date.getTime()) ? null : date;
+    }
+
+    function getNow() {
+      return new Date();
+    }
+
+    function getNextFixtureForTeam(teamId) {
+      if (!teamId || !fixtures.length) return null;
+
+      const now = getNow();
+      const relevantFixtures = fixtures
+        .filter(f => f.stage === "GROUP")
+        .filter(f => f.home === teamId || f.away === teamId)
+        .filter(f => f.kickoffDate >= now)
+        .sort((a, b) => a.kickoffDate - b.kickoffDate);
+
+      if (!relevantFixtures.length) return null;
+
+      const nextFixture = relevantFixtures[0];
+      const isHome = nextFixture.home === teamId;
+      const opponent = isHome ? nextFixture.away : nextFixture.home;
+
+      return { opponent, isHome };
+    }
+
+    function nextMatchText(teamId) {
+      const nextFixture = getNextFixtureForTeam(teamId);
+      if (!nextFixture) return "Næste kamp: ikke fundet";
+      return `Næste kamp: ${nextFixture.opponent}`;
+    }
+
+    function getCurrentSlots() {
+      const formation = FORMATIONS[currentFormation];
+      const slots = [];
+
+      slots.push({ key: "GK1", group: "GK", position: "Målmand", positionCode: "GK", x: 50, y: 13 });
+
+      if (formation.df === 3) {
+        slots.push(
+          { key: "DF1", group: "DF", position: "Forsvar", positionCode: "DEF", x: 25, y: 36 },
+          { key: "DF2", group: "DF", position: "Forsvar", positionCode: "DEF", x: 50, y: 36 },
+          { key: "DF3", group: "DF", position: "Forsvar", positionCode: "DEF", x: 75, y: 36 }
+        );
+      } else if (formation.df === 4) {
+        slots.push(
+          { key: "DF1", group: "DF", position: "Forsvar", positionCode: "DEF", x: 17, y: 36 },
+          { key: "DF2", group: "DF", position: "Forsvar", positionCode: "DEF", x: 39, y: 36 },
+          { key: "DF3", group: "DF", position: "Forsvar", positionCode: "DEF", x: 61, y: 36 },
+          { key: "DF4", group: "DF", position: "Forsvar", positionCode: "DEF", x: 83, y: 36 }
+        );
+      } else if (formation.df === 5) {
+        slots.push(
+          { key: "DF1", group: "DF", position: "Forsvar", positionCode: "DEF", x: 10, y: 36 },
+          { key: "DF2", group: "DF", position: "Forsvar", positionCode: "DEF", x: 30, y: 36 },
+          { key: "DF3", group: "DF", position: "Forsvar", positionCode: "DEF", x: 50, y: 36 },
+          { key: "DF4", group: "DF", position: "Forsvar", positionCode: "DEF", x: 70, y: 36 },
+          { key: "DF5", group: "DF", position: "Forsvar", positionCode: "DEF", x: 90, y: 36 }
+        );
+      }
+
+      if (formation.mf === 3) {
+        slots.push(
+          { key: "MF1", group: "MF", position: "Midtbane", positionCode: "MID", x: 25, y: 62 },
+          { key: "MF2", group: "MF", position: "Midtbane", positionCode: "MID", x: 50, y: 62 },
+          { key: "MF3", group: "MF", position: "Midtbane", positionCode: "MID", x: 75, y: 62 }
+        );
+      } else if (formation.mf === 4) {
+        slots.push(
+          { key: "MF1", group: "MF", position: "Midtbane", positionCode: "MID", x: 17, y: 62 },
+          { key: "MF2", group: "MF", position: "Midtbane", positionCode: "MID", x: 39, y: 62 },
+          { key: "MF3", group: "MF", position: "Midtbane", positionCode: "MID", x: 61, y: 62 },
+          { key: "MF4", group: "MF", position: "Midtbane", positionCode: "MID", x: 83, y: 62 }
+        );
+      } else if (formation.mf === 5) {
+        slots.push(
+          { key: "MF1", group: "MF", position: "Midtbane", positionCode: "MID", x: 10, y: 62 },
+          { key: "MF2", group: "MF", position: "Midtbane", positionCode: "MID", x: 30, y: 62 },
+          { key: "MF3", group: "MF", position: "Midtbane", positionCode: "MID", x: 50, y: 62 },
+          { key: "MF4", group: "MF", position: "Midtbane", positionCode: "MID", x: 70, y: 62 },
+          { key: "MF5", group: "MF", position: "Midtbane", positionCode: "MID", x: 90, y: 62 }
+        );
+      }
+
+      if (formation.fw === 1) {
+        slots.push({ key: "FW1", group: "FW", position: "Angriber", positionCode: "FWD", x: 50, y: 88 });
+      } else if (formation.fw === 2) {
+        slots.push(
+          { key: "FW1", group: "FW", position: "Angriber", positionCode: "FWD", x: 34, y: 88 },
+          { key: "FW2", group: "FW", position: "Angriber", positionCode: "FWD", x: 66, y: 88 }
+        );
+      } else if (formation.fw === 3) {
+        slots.push(
+          { key: "FW1", group: "FW", position: "Angriber", positionCode: "FWD", x: 18, y: 88 },
+          { key: "FW2", group: "FW", position: "Angriber", positionCode: "FWD", x: 50, y: 88 },
+          { key: "FW3", group: "FW", position: "Angriber", positionCode: "FWD", x: 82, y: 88 }
+        );
+      }
+
+      return slots;
+    }
+
+    function cleanSquadForCurrentFormation() {
+      const validSlotKeys = new Set(getCurrentSlots().map(slot => slot.key));
+      const cleanedSquad = {};
+
+      Object.entries(squad).forEach(([slotKey, playerId]) => {
+        if (validSlotKeys.has(slotKey)) cleanedSquad[slotKey] = playerId;
+      });
+
+      squad = cleanedSquad;
+    }
+
+    function clearSquad() {
+      pushHistory();
+      squad = {};
+      activeSlotKey = null;
+      activeSlotText.textContent = "Ingen valgt";
+      clearStatus();
+      saveState();
+      render();
+    }
+
+    function getSpentBudget() {
+      return Object.values(squad)
+        .map(playerId => getPlayerById(playerId))
+        .filter(Boolean)
+        .reduce((sum, player) => sum + getPlayerPrice(player), 0);
+    }
+
+    function getBankLeft() {
+      return BUDGET_TOTAL - getSpentBudget();
+    }
+
+    function getPlayerCount() {
+      return Object.values(squad).filter(Boolean).length;
+    }
+
+    function getCurrentTeamCounts(squadObj = squad) {
+      const counts = {};
+      Object.values(squadObj).forEach(playerId => {
+        if (!playerId) return;
+        const player = getPlayerById(playerId);
+        if (!player || !player.team_name) return;
+        counts[player.team_name] = (counts[player.team_name] || 0) + 1;
+      });
+      return counts;
+    }
+
+    function canAddMoreFromTeam(teamName, playerIdToIgnore = null) {
+      const counts = {};
+      Object.values(squad).forEach(playerId => {
+        if (!playerId) return;
+        if (playerIdToIgnore && String(playerId) === String(playerIdToIgnore)) return;
+        const player = getPlayerById(playerId);
+        if (!player || !player.team_name) return;
+        counts[player.team_name] = (counts[player.team_name] || 0) + 1;
+      });
+      return (counts[teamName] || 0) < MAX_PER_TEAM;
+    }
+
+    function buildTeamFilter() {
+      const teams = [...new Set(allPlayers.map(player => player.team_name).filter(Boolean))].sort((a, b) => a.localeCompare(b, "da"));
+      teamFilter.innerHTML = `<option value="">Alle lande</option>`;
+      teams.forEach(team => {
+        const option = document.createElement("option");
+        option.value = team;
+        option.textContent = team;
+        teamFilter.appendChild(option);
+      });
+    }
+
+    function findFirstEmptySlotByPosition(position) {
+      const slots = getCurrentSlots().filter(slot => slot.position === position);
+      for (const slot of slots) {
+        if (!squad[slot.key]) return slot.key;
+      }
+      return null;
+    }
+
+    function findFilledSlotByPlayerId(playerId) {
+      for (const [slotKey, id] of Object.entries(squad)) {
+        if (String(id) === String(playerId)) return slotKey;
+      }
+      return null;
+    }
+
+    function hasAvailableSlotForPosition(position) {
+      return !!findFirstEmptySlotByPosition(position);
+    }
+
+    function getDisabledReason(player) {
+      const price = getPlayerPrice(player);
+
+      if (activeSlotKey) {
+        const activeSlot = getCurrentSlots().find(slot => slot.key === activeSlotKey);
+        const currentPlayerInSlot = getPlayerById(squad[activeSlotKey]);
+        const ignoreId = currentPlayerInSlot ? currentPlayerInSlot.player_id : null;
+
+        if (!activeSlot || activeSlot.position !== player.position) return "Forkert position";
+        if (!canAddMoreFromTeam(player.team_name, ignoreId)) return "Maks fra land";
+
+        const existingSpent = getSpentBudget();
+        const currentPrice = currentPlayerInSlot ? getPlayerPrice(currentPlayerInSlot) : 0;
+        const projectedSpent = existingSpent - currentPrice + price;
+
+        if (projectedSpent > BUDGET_TOTAL) return "Ikke råd";
+        return "";
+      }
+
+      if (!canAddMoreFromTeam(player.team_name)) return "Maks fra land";
+      if (!hasAvailableSlotForPosition(player.position)) return "Ingen plads";
+      if (price > getBankLeft()) return "Ikke råd";
+      return "";
+    }
+
+    function setActiveSlot(slotKey) {
+      activeSlotKey = slotKey;
+      const slot = getCurrentSlots().find(s => s.key === slotKey);
+
+      if (slot) {
+        activeSlotText.textContent = `${slot.position} (${slot.key})`;
+        positionFilter.value = slot.position;
+      } else {
+        activeSlotText.textContent = "Ingen valgt";
+      }
+
+      render();
+    }
+
+    function addPlayerToBestSlot(playerId) {
+      const player = getPlayerById(playerId);
+      if (!player) return;
+
+      const currentSlotForPlayer = findFilledSlotByPlayerId(playerId);
+      if (currentSlotForPlayer) {
+        showStatus("Spilleren er allerede på holdet.", "error");
+        return;
+      }
+
+      if (!canAddMoreFromTeam(player.team_name)) {
+        showStatus(`Du kan maksimalt vælge ${MAX_PER_TEAM} spillere fra ${player.team_name}.`, "error");
+        return;
+      }
+
+      const firstEmpty = findFirstEmptySlotByPosition(player.position);
+      if (firstEmpty) {
+        addPlayerToSlot(playerId, firstEmpty);
+        return;
+      }
+
+      showStatus(`Ingen ledig plads i ${player.position.toLowerCase()}. Vælg en spiller på banen for at udskifte.`, "error");
+    }
+
+    function addPlayerToSlot(playerId, preferredSlotKey = null) {
+      const player = getPlayerById(playerId);
+      if (!player) return;
+
+      let slotKey = preferredSlotKey;
+      let slot = slotKey ? getCurrentSlots().find(s => s.key === slotKey) : null;
+
+      if (!slotKey || !slot || slot.position !== player.position) {
+        const firstEmpty = findFirstEmptySlotByPosition(player.position);
+        if (firstEmpty) {
+          slotKey = firstEmpty;
+          slot = getCurrentSlots().find(s => s.key === slotKey);
+        }
+      }
+
+      if (!slotKey || !slot || slot.position !== player.position) {
+        showStatus(`Ingen ledig plads i ${player.position.toLowerCase()}. Vælg en spiller på banen for at udskifte.`, "error");
+        return;
+      }
+
+      const currentPlayerInSlot = getPlayerById(squad[slotKey]);
+      const ignoreId = currentPlayerInSlot ? currentPlayerInSlot.player_id : null;
+
+      if (!canAddMoreFromTeam(player.team_name, ignoreId)) {
+        showStatus(`Du kan maksimalt vælge ${MAX_PER_TEAM} spillere fra ${player.team_name}.`, "error");
+        return;
+      }
+
+      const existingSpent = getSpentBudget();
+      const currentPrice = currentPlayerInSlot ? getPlayerPrice(currentPlayerInSlot) : 0;
+      const newPrice = getPlayerPrice(player);
+      const projectedSpent = existingSpent - currentPrice + newPrice;
+
+      if (projectedSpent > BUDGET_TOTAL) {
+        showStatus("Ikke nok i banken til dette køb.", "error");
+        return;
+      }
+
+      const alreadyInSquadSlot = findFilledSlotByPlayerId(playerId);
+      if (alreadyInSquadSlot && alreadyInSquadSlot !== slotKey) {
+        pushHistory();
+        delete squad[alreadyInSquadSlot];
+        squad[slotKey] = playerId;
+      } else {
+        pushHistory();
+        squad[slotKey] = playerId;
+      }
+
+      clearStatus();
+      saveState();
+      render();
+    }
+
+    function applyOptimalSquadForCurrentFormation() {
+      if (!optimalSquads.length) {
+        showStatus("Kunne ikke finde optimizer-data. Tjek at data/optimal_squads_by_formation.json findes.", "error");
+        return;
+      }
+
+      const rows = optimalSquads.filter(row => row.selected_formation === currentFormation);
+      if (!rows.length) {
+        showStatus(`Ingen optimizer-trup fundet for formation ${currentFormation}.`, "error");
+        return;
+      }
+
+      const slots = getCurrentSlots();
+      const byPosition = {
+        GK: rows.filter(row => normalizePositionLabel(row.position) === "GK"),
+        DEF: rows.filter(row => normalizePositionLabel(row.position) === "DEF"),
+        MID: rows.filter(row => normalizePositionLabel(row.position) === "MID"),
+        FWD: rows.filter(row => normalizePositionLabel(row.position) === "FWD")
+      };
+
+      const slotGroups = {
+        GK: slots.filter(slot => slot.positionCode === "GK"),
+        DEF: slots.filter(slot => slot.positionCode === "DEF"),
+        MID: slots.filter(slot => slot.positionCode === "MID"),
+        FWD: slots.filter(slot => slot.positionCode === "FWD")
+      };
+
+      const newSquad = {};
+      const missingPlayers = [];
+
+      ["GK", "DEF", "MID", "FWD"].forEach(positionCode => {
+        const targetRows = byPosition[positionCode];
+        const targetSlots = slotGroups[positionCode];
+
+        targetRows.forEach((row, index) => {
+          const slot = targetSlots[index];
+          if (!slot) return;
+
+          const appPlayer = findPlayerByOptimizerRow(row);
+          if (!appPlayer) {
+            missingPlayers.push(`${row.player_name} (${row.team_id})`);
+            return;
+          }
+
+          newSquad[slot.key] = appPlayer.player_id;
+        });
+      });
+
+      pushHistory();
+      squad = newSquad;
+      activeSlotKey = null;
+      activeSlotText.textContent = "Ingen valgt";
+      saveState();
       render();
 
-      setInterval(renderTradeList, 60000);
-    } catch (error) {
-      console.error(error);
-      showStatus("Kunne ikke indlæse spillerdata, startsandsynlighed, optimizer-data eller kampplan. Tjek at data/player_pool_v1.json, data/player_start_security_nt.csv, data/fixtures_group.csv samt data/optimal_squads_by_formation.json findes.", "error");
-      tradeList.innerHTML = `<div style="padding:14px;color:#cbd5e1;">Ingen data indlæst.</div>`;
+      if (missingPlayers.length) {
+        showStatus(`Optimizer-holdet kunne ikke udfyldes helt. Mangler i app-data: ${missingPlayers.slice(0, 4).join(", ")}${missingPlayers.length > 4 ? " ..." : ""}`, "error");
+      } else {
+        clearStatus();
+      }
     }
-  }
 
-  init();
-</script>
+    function getEmptySlots() {
+      return getCurrentSlots().filter(slot => !squad[slot.key]);
+    }
+
+    function getEligiblePlayersForSlot(slot, usedIdsSet, teamCounts, maxPriceForSinglePlayer = Infinity) {
+      return allPlayers
+        .filter(player => player.position === slot.position)
+        .filter(player => !usedIdsSet.has(String(player.player_id)))
+        .filter(player => (teamCounts[player.team_name] || 0) < MAX_PER_TEAM)
+        .filter(player => getPlayerPrice(player) <= maxPriceForSinglePlayer)
+        .sort((a, b) => {
+          const scoreDiff = getPlayerScore(b) - getPlayerScore(a);
+          if (scoreDiff !== 0) return scoreDiff;
+
+          const startDiff = getPlayerStart(b) - getPlayerStart(a);
+          if (startDiff !== 0) return startDiff;
+
+          return getPlayerPrice(a) - getPlayerPrice(b);
+        });
+    }
+
+    function getCheapestValidPlayerForSlot(slot, usedIdsSet, teamCounts) {
+      const candidates = allPlayers
+        .filter(player => player.position === slot.position)
+        .filter(player => !usedIdsSet.has(String(player.player_id)))
+        .filter(player => (teamCounts[player.team_name] || 0) < MAX_PER_TEAM)
+        .sort((a, b) => getPlayerPrice(a) - getPlayerPrice(b));
+
+      return candidates.length ? candidates[0] : null;
+    }
+
+    function solveMissingSlotsBacktracking(slotCandidates, bankLeft, usedIdsBase, teamCountsBase, mode = "best") {
+      let bestSolution = null;
+      let bestMetric = mode === "best" ? -Infinity : Infinity;
+
+      const optimisticTail = new Array(slotCandidates.length + 1).fill(0);
+      if (mode === "best") {
+        for (let i = slotCandidates.length - 1; i >= 0; i--) {
+          const bestCandidateScore = slotCandidates[i].candidates.length
+            ? getPlayerScore(slotCandidates[i].candidates[0])
+            : 0;
+          optimisticTail[i] = optimisticTail[i + 1] + bestCandidateScore;
+        }
+      }
+
+      function dfs(idx, localSquadAdds, usedIds, teamCounts, extraSpent, totalScore) {
+        if (idx >= slotCandidates.length) {
+          if (mode === "best") {
+            if (totalScore > bestMetric) {
+              bestMetric = totalScore;
+              bestSolution = { ...localSquadAdds };
+            }
+          } else {
+            if (extraSpent < bestMetric) {
+              bestMetric = extraSpent;
+              bestSolution = { ...localSquadAdds };
+            }
+          }
+          return;
+        }
+
+        if (mode === "best" && totalScore + optimisticTail[idx] < bestMetric) {
+          return;
+        }
+
+        const { slot, candidates } = slotCandidates[idx];
+
+        for (const player of candidates) {
+          const playerIdStr = String(player.player_id);
+          const price = getPlayerPrice(player);
+          const newSpent = extraSpent + price;
+
+          if (newSpent > bankLeft) continue;
+          if (usedIds.has(playerIdStr)) continue;
+
+          const teamName = player.team_name || "";
+          const currentCount = teamCounts[teamName] || 0;
+          if (currentCount >= MAX_PER_TEAM) continue;
+
+          localSquadAdds[slot.key] = player.player_id;
+          usedIds.add(playerIdStr);
+          teamCounts[teamName] = currentCount + 1;
+
+          dfs(
+            idx + 1,
+            localSquadAdds,
+            usedIds,
+            teamCounts,
+            newSpent,
+            totalScore + getPlayerScore(player)
+          );
+
+          delete localSquadAdds[slot.key];
+          usedIds.delete(playerIdStr);
+
+          if (currentCount === 0) {
+            delete teamCounts[teamName];
+          } else {
+            teamCounts[teamName] = currentCount;
+          }
+        }
+      }
+
+      dfs(
+        0,
+        {},
+        new Set(usedIdsBase),
+        { ...teamCountsBase },
+        0,
+        0
+      );
+
+      return bestSolution;
+    }
+
+    function fillPartiallyGreedy(emptySlots, usedIdsBase, teamCountsBase, bankLeft) {
+      const partialSolution = {};
+      const usedIds = new Set(usedIdsBase);
+      const teamCounts = { ...teamCountsBase };
+      let remainingBank = bankLeft;
+
+      const remainingSlots = [...emptySlots];
+
+      while (remainingSlots.length) {
+        let bestPick = null;
+        let bestSlotIndex = -1;
+
+        for (let i = 0; i < remainingSlots.length; i++) {
+          const slot = remainingSlots[i];
+          const candidates = getEligiblePlayersForSlot(slot, usedIds, teamCounts, remainingBank);
+
+          if (!candidates.length) continue;
+
+          const candidate = candidates[0];
+          if (!bestPick || getPlayerScore(candidate) > getPlayerScore(bestPick.player)) {
+            bestPick = { slot, player: candidate };
+            bestSlotIndex = i;
+          }
+        }
+
+        if (!bestPick) {
+          break;
+        }
+
+        partialSolution[bestPick.slot.key] = bestPick.player.player_id;
+        usedIds.add(String(bestPick.player.player_id));
+        teamCounts[bestPick.player.team_name] = (teamCounts[bestPick.player.team_name] || 0) + 1;
+        remainingBank -= getPlayerPrice(bestPick.player);
+
+        remainingSlots.splice(bestSlotIndex, 1);
+      }
+
+      return partialSolution;
+    }
+
+    function fillMissingSlotsOptimally() {
+      const emptySlots = getEmptySlots();
+
+      if (!emptySlots.length) {
+        showStatus("Der er ingen tomme pladser at udfylde.", "info");
+        return;
+      }
+
+      if (emptySlots.length === 11) {
+        applyOptimalSquadForCurrentFormation();
+        return;
+      }
+
+      const usedIdsBase = new Set(Object.values(squad).filter(Boolean).map(String));
+      const teamCountsBase = getCurrentTeamCounts();
+      const baseSpent = getSpentBudget();
+      const bankLeft = BUDGET_TOTAL - baseSpent;
+
+      const cheapestPlayers = emptySlots.map(slot => getCheapestValidPlayerForSlot(slot, usedIdsBase, teamCountsBase));
+      if (cheapestPlayers.some(x => !x)) {
+        showStatus("Mindst én tom plads har ingen gyldige kandidater i spillerpuljen.", "error");
+        return;
+      }
+
+      const minimumPossibleCost = cheapestPlayers.reduce((sum, player) => sum + getPlayerPrice(player), 0);
+      if (minimumPossibleCost > bankLeft) {
+        const partial = fillPartiallyGreedy(emptySlots, usedIdsBase, teamCountsBase, bankLeft);
+        const partialCount = Object.keys(partial).length;
+
+        if (partialCount > 0) {
+          pushHistory();
+          squad = { ...squad, ...partial };
+          activeSlotKey = null;
+          activeSlotText.textContent = "Ingen valgt";
+          saveState();
+          render();
+          showStatus(`Udfyldte ${partialCount} af ${emptySlots.length} tomme pladser. Resten kunne ikke udfyldes pga. budget eller holdloft. Billigste fulde udfyldning koster ca. ${formatMoney(minimumPossibleCost)}.`, "info");
+          return;
+        }
+
+        showStatus(`Ikke nok i banken til at udfylde manglerne. Billigste mulige fulde udfyldning koster ca. ${formatMoney(minimumPossibleCost)}.`, "error");
+        return;
+      }
+
+      const slotCandidates = emptySlots.map(slot => {
+        let candidates = getEligiblePlayersForSlot(slot, usedIdsBase, teamCountsBase, bankLeft);
+
+        const missingCount = emptySlots.length;
+        const candidateCap =
+          missingCount <= 2 ? 250 :
+          missingCount <= 4 ? 180 :
+          missingCount <= 6 ? 120 :
+          80;
+
+        candidates = candidates.slice(0, candidateCap);
+        return { slot, candidates };
+      });
+
+      const impossible = slotCandidates.find(x => !x.candidates.length);
+      if (impossible) {
+        const partial = fillPartiallyGreedy(emptySlots, usedIdsBase, teamCountsBase, bankLeft);
+        const partialCount = Object.keys(partial).length;
+
+        if (partialCount > 0) {
+          pushHistory();
+          squad = { ...squad, ...partial };
+          activeSlotKey = null;
+          activeSlotText.textContent = "Ingen valgt";
+          saveState();
+          render();
+          showStatus(`Udfyldte ${partialCount} af ${emptySlots.length} tomme pladser. Resten kunne ikke udfyldes under de nuværende constraints.`, "info");
+          return;
+        }
+
+        showStatus(`Ingen gyldige kandidater til ${impossible.slot.position} (${impossible.slot.key}).`, "error");
+        return;
+      }
+
+      slotCandidates.sort((a, b) => a.candidates.length - b.candidates.length);
+
+      let solution = solveMissingSlotsBacktracking(slotCandidates, bankLeft, usedIdsBase, teamCountsBase, "best");
+
+      if (!solution) {
+        const cheapFallbackCandidates = slotCandidates.map(entry => ({
+          slot: entry.slot,
+          candidates: [...entry.candidates].sort((a, b) => getPlayerPrice(a) - getPlayerPrice(b))
+        }));
+
+        solution = solveMissingSlotsBacktracking(cheapFallbackCandidates, bankLeft, usedIdsBase, teamCountsBase, "any");
+      }
+
+      if (!solution) {
+        const extraWideCandidates = emptySlots.map(slot => {
+          const candidates = getEligiblePlayersForSlot(slot, usedIdsBase, teamCountsBase, bankLeft).slice(0, 350);
+          return { slot, candidates };
+        }).sort((a, b) => a.candidates.length - b.candidates.length);
+
+        solution = solveMissingSlotsBacktracking(extraWideCandidates, bankLeft, usedIdsBase, teamCountsBase, "any");
+      }
+
+      if (!solution) {
+        const partial = fillPartiallyGreedy(emptySlots, usedIdsBase, teamCountsBase, bankLeft);
+        const partialCount = Object.keys(partial).length;
+
+        if (partialCount > 0) {
+          pushHistory();
+          squad = { ...squad, ...partial };
+          activeSlotKey = null;
+          activeSlotText.textContent = "Ingen valgt";
+          saveState();
+          render();
+          showStatus(`Udfyldte ${partialCount} af ${emptySlots.length} tomme pladser. Resten kunne ikke udfyldes pga. budget eller maks. ${MAX_PER_TEAM} fra samme land.`, "info");
+          return;
+        }
+
+        showStatus("Der findes ingen gyldig udfyldning af de tomme pladser under de nuværende constraints.", "error");
+        return;
+      }
+
+      pushHistory();
+      squad = {
+        ...squad,
+        ...solution
+      };
+
+      activeSlotKey = null;
+      activeSlotText.textContent = "Ingen valgt";
+      clearStatus();
+      saveState();
+      render();
+    }
+
+    function renderBudget() {
+      const spent = getSpentBudget();
+      const bank = getBankLeft();
+      const count = getPlayerCount();
+
+      spentValue.textContent = formatMoney(spent);
+      bankValue.textContent = formatMoney(bank);
+      playerCountValue.textContent = `${count} / 11`;
+
+      topbarInfo.textContent = `Formation ${currentFormation} · ${count}/11 spillere · Bank ${formatMoney(bank)}`;
+      updateUndoButton();
+    }
+
+    function renderPitch() {
+      const slots = getCurrentSlots();
+
+      const slotHtml = slots.map(slot => {
+        const player = getPlayerById(squad[slot.key]);
+        const flagUrl = player ? getFlagUrl(player.flag_code) : "";
+        const isActive = activeSlotKey === slot.key ? "active" : "";
+        const nextText = player ? nextMatchText(player.team_id) : "";
+        const startBadge = player ? getStartBadge(player) : null;
+
+        return `
+          <div class="slot ${isActive}" style="left:${slot.x}%; top:${slot.y}%;">
+            <div class="player-figure ${player ? "" : "empty"}">
+              ${player
+                ? (flagUrl
+                    ? `<img class="flag-img" src="${flagUrl}" alt="${player.team_name || ""}">`
+                    : (slot.position ? slot.position[0] : ""))
+                : ""}
+            </div>
+            <div class="player-name">${player ? player.player_name : slot.position}</div>
+            <div class="player-price">${player ? formatMoney(player.price_estimate) : "Tom plads"}</div>
+            ${player ? `<div class="player-next">${nextText}</div>` : ""}
+            ${player ? `<div class="player-start ${startBadge.className}">${startBadge.text}</div>` : ""}
+            <button class="slot-btn ${player ? "remove" : ""}" data-slot-key="${slot.key}" data-action="${player ? "remove" : "select"}">
+              ${player ? "Fjern" : "Vælg"}
+            </button>
+            ${player ? `<button class="slot-btn" style="margin-left:6px;" data-slot-key="${slot.key}" data-action="replace">Skift</button>` : ""}
+          </div>
+        `;
+      }).join("");
+
+      pitch.innerHTML = `
+        <div class="pitch-half"></div>
+        <div class="pitch-circle"></div>
+        <div class="pitch-penalty-top"></div>
+        <div class="pitch-penalty-bottom"></div>
+        <div class="pitch-goal-top"></div>
+        <div class="pitch-goal-bottom"></div>
+        ${slotHtml}
+      `;
+
+      document.querySelectorAll(".slot-btn").forEach(btn => {
+        const slotKey = btn.dataset.slotKey;
+        const action = btn.dataset.action;
+
+        btn.addEventListener("click", () => {
+          if (action === "remove") {
+            const playerId = squad[slotKey];
+            if (playerId) {
+              pushHistory();
+              delete squad[slotKey];
+              saveState();
+              render();
+              clearStatus();
+            }
+          } else if (action === "replace" || action === "select") {
+            setActiveSlot(slotKey);
+          }
+        });
+      });
+    }
+
+    function renderTradeList() {
+      let players = [...allPlayers];
+
+      const search = searchInput.value.trim().toLowerCase();
+      const team = teamFilter.value;
+      const position = positionFilter.value;
+      const sortValue = sortSelect.value;
+
+      if (search) {
+        players = players.filter(player =>
+          String(player.player_name || "").toLowerCase().includes(search)
+        );
+      }
+
+      if (team) {
+        players = players.filter(player => player.team_name === team);
+      }
+
+      if (position) {
+        players = players.filter(player => player.position === position);
+      }
+
+      const usedPlayerIds = new Set(Object.values(squad).filter(Boolean));
+
+      players = players.filter(player => {
+        const inSquad = usedPlayerIds.has(player.player_id);
+        const slotForPlayer = findFilledSlotByPlayerId(player.player_id);
+
+        if (!inSquad) return true;
+        if (activeSlotKey && slotForPlayer === activeSlotKey) return true;
+        return false;
+      });
+
+      if (sortValue === "score_desc") {
+        players.sort((a, b) => getPlayerScore(b) - getPlayerScore(a));
+      } else if (sortValue === "price_desc") {
+        players.sort((a, b) => getPlayerPrice(b) - getPlayerPrice(a));
+      } else if (sortValue === "price_asc") {
+        players.sort((a, b) => getPlayerPrice(a) - getPlayerPrice(b));
+      } else if (sortValue === "advance_desc") {
+        players.sort((a, b) => (Number(b.advance_pct) || 0) - (Number(a.advance_pct) || 0));
+      } else if (sortValue === "start_desc") {
+        players.sort((a, b) => (Number(b.start_probability_pct) || 0) - (Number(a.start_probability_pct) || 0));
+      } else if (sortValue === "name_asc") {
+        players.sort((a, b) => String(a.player_name || "").localeCompare(String(b.player_name || ""), "da"));
+      }
+
+      if (activeSlotKey) {
+        const activeSlot = getCurrentSlots().find(slot => slot.key === activeSlotKey);
+        if (activeSlot) {
+          players = players.filter(player => player.position === activeSlot.position);
+          tradeHelpText.textContent = `Vælg spiller til ${activeSlot.position}. Klikker du på en spiller, udskifter han den valgte plads.`;
+        }
+      } else {
+        tradeHelpText.textContent = "Klik på en spiller i listen for automatisk at fylde første ledige plads i den relevante kæde. Hvis kæden er fuld, vælg en spiller på banen for at udskifte.";
+      }
+
+      if (players.length === 0) {
+        tradeList.innerHTML = `<div style="padding:14px;color:#cbd5e1;">Ingen spillere matcher søgning og filtre.</div>`;
+        return;
+      }
+
+      tradeList.innerHTML = players.slice(0, 80).map(player => {
+        const disabledReason = getDisabledReason(player);
+        const isDisabled = !!disabledReason;
+        const rowClass = isDisabled ? "trade-row disabled" : "trade-row";
+
+        return `
+          <div class="${rowClass}">
+            <button class="plus-btn" data-player-id="${player.player_id}" ${isDisabled ? "disabled" : ""}>+</button>
+            <div>
+              <div class="trade-name">${player.player_name || "Ukendt spiller"}</div>
+              <div class="trade-meta">${player.team_name || "Ukendt land"}</div>
+              <div class="trade-next">${nextMatchText(player.team_id)}</div>
+              <div class="trade-meta">Viderechance: ${pctWhole(player.advance_pct)}</div>
+              ${disabledReason ? `<div class="trade-reason">${disabledReason}</div>` : ""}
+            </div>
+            <div class="trade-position-col">
+              <div class="trade-position-value">${positionShortLabel(player.position)}</div>
+              <div class="trade-position-label">Pos</div>
+            </div>
+            <div class="trade-start-col">
+              <div class="trade-start-value">${startPct(player.start_probability_pct)}</div>
+              <div class="trade-start-label">Start</div>
+            </div>
+            <div class="trade-score-col">
+              <div class="trade-score-value">${Number(player.display_score || 0)}</div>
+              <div class="trade-score-label">Score</div>
+            </div>
+            <div>
+              <div class="trade-price">${formatMoney(player.price_estimate)}</div>
+              <div class="trade-subprice">Pris</div>
+            </div>
+          </div>
+        `;
+      }).join("");
+
+      document.querySelectorAll(".plus-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const playerId = btn.dataset.playerId;
+          if (activeSlotKey) {
+            addPlayerToSlot(playerId, activeSlotKey);
+          } else {
+            addPlayerToBestSlot(playerId);
+          }
+        });
+      });
+    }
+
+    function render() {
+      cleanSquadForCurrentFormation();
+      renderBudget();
+      renderPitch();
+      renderTradeList();
+    }
+
+    async function loadFixtures() {
+      const response = await fetch(FIXTURES_URL);
+      if (!response.ok) throw new Error(`Kunde ikke hente fixtures: ${response.status}`);
+
+      const text = await response.text();
+      const rows = parseCsv(text);
+
+      fixtures = rows
+        .map(row => ({
+          match_id: row.match_id,
+          stage: row.stage,
+          group: row.group,
+          home: row.home,
+          away: row.away,
+          kickoff_dk: row.kickoff_dk,
+          kickoffDate: kickoffToDate(row.kickoff_dk)
+        }))
+        .filter(row => row.kickoffDate instanceof Date && !Number.isNaN(row.kickoffDate.getTime()))
+        .sort((a, b) => a.kickoffDate - b.kickoffDate);
+    }
+
+    async function loadStartSecurityMap() {
+      const response = await fetch(START_SECURITY_URL);
+      if (!response.ok) throw new Error(`Kunne ikke hente start-sandsynlighed: ${response.status}`);
+
+      const text = await response.text();
+      const rows = parseCsv(text);
+      const map = new Map();
+
+      rows.forEach(row => {
+        const playerName = row.player_name || "";
+        const teamId = row.team_id || "";
+        const mergeKey = buildMergeKey(playerName, teamId);
+        map.set(mergeKey, {
+          start_probability_pct: Number(row.start_probability_pct || 0),
+          start_security: Number(row.start_security || 0),
+          start_status: row.start_status || ""
+        });
+      });
+
+      return map;
+    }
+
+    async function loadOptimalSquads() {
+      const response = await fetch(OPTIMAL_SQUADS_URL);
+      if (!response.ok) throw new Error(`Kunde ikke hente optimizer-data: ${response.status}`);
+
+      const rows = await response.json();
+      if (!Array.isArray(rows)) {
+        throw new Error("Optimizer-filen indeholder ikke en gyldig liste.");
+      }
+
+      optimalSquads = rows;
+    }
+
+    function attachStartSecurity(players, startMap) {
+      return players.map(player => {
+        const mergeKey = buildMergeKey(player.player_name, player.team_id, player.team_name);
+        const startData = startMap.get(mergeKey);
+
+        return {
+          ...player,
+          start_probability_pct: startData ? startData.start_probability_pct : 0,
+          start_security: startData ? startData.start_security : 0,
+          start_status: startData ? startData.start_status : ""
+        };
+      });
+    }
+
+    function setupEvents() {
+      formationSelect.value = currentFormation;
+
+      formationSelect.addEventListener("change", () => {
+        currentFormation = formationSelect.value;
+        activeSlotKey = null;
+        activeSlotText.textContent = "Ingen valgt";
+        cleanSquadForCurrentFormation();
+        saveState();
+        render();
+      });
+
+      optimizeBtn.addEventListener("click", () => {
+        applyOptimalSquadForCurrentFormation();
+      });
+
+      fillMissingBtn.addEventListener("click", () => {
+        fillMissingSlotsOptimally();
+      });
+
+      undoBtn.addEventListener("click", () => {
+        undoLastAction();
+      });
+
+      clearTeamBtn.addEventListener("click", () => {
+        clearSquad();
+      });
+
+      [searchInput, teamFilter, positionFilter, sortSelect].forEach(el => {
+        el.addEventListener("input", renderTradeList);
+        el.addEventListener("change", renderTradeList);
+      });
+    }
+
+    async function init() {
+      try {
+        const playersResponsePromise = fetch(DATA_URL);
+        const startMapPromise = loadStartSecurityMap();
+        const fixturesPromise = loadFixtures();
+        const optimalSquadsPromise = loadOptimalSquads();
+
+        const [playersResponse, startMap] = await Promise.all([
+          playersResponsePromise,
+          startMapPromise,
+          fixturesPromise,
+          optimalSquadsPromise
+        ]);
+
+        if (!playersResponse.ok) {
+          throw new Error(`Kunne ikke hente datafil: ${playersResponse.status}`);
+        }
+
+        const rawPlayers = await playersResponse.json();
+
+        if (!Array.isArray(rawPlayers)) {
+          throw new Error("Datafilen indeholder ikke en gyldig spillerliste.");
+        }
+
+        allPlayers = attachStartSecurity(rawPlayers, startMap);
+
+        cleanSquadForCurrentFormation();
+        buildTeamFilter();
+        setupEvents();
+        render();
+
+        setInterval(renderTradeList, 60000);
+      } catch (error) {
+        console.error(error);
+        showStatus("Kunne ikke indlæse spillerdata, startsandsynlighed, optimizer-data eller kampplan. Tjek at data/player_pool_v1.json, data/player_start_security_nt.csv, data/fixtures_group.csv samt data/optimal_squads_by_formation.json findes.", "error");
+        tradeList.innerHTML = `<div style="padding:14px;color:#cbd5e1;">Ingen data indlæst.</div>`;
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>
