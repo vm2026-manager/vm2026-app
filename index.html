@@ -18,7 +18,7 @@
     }
 
     .topbar {
-      height: 56px;
+      min-height: 56px;
       box-sizing: border-box;
       background: #ec4899;
       color: white;
@@ -30,6 +30,50 @@
       align-items: center;
       gap: 12px;
       flex-wrap: wrap;
+    }
+
+    .topbar-left,
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .topbar-auth {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .topbar-btn {
+      background: rgba(255,255,255,0.92);
+      color: #111827;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 10px;
+      font-size: 13px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .topbar-btn.secondary {
+      background: #111827;
+      color: white;
+    }
+
+    .topbar-user {
+      background: rgba(255,255,255,0.16);
+      color: white;
+      padding: 7px 10px;
+      border-radius: 10px;
+      font-size: 12px;
+      font-weight: bold;
+      max-width: 280px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .page-wrap {
@@ -161,7 +205,8 @@
       color: #111827;
     }
 
-    .action-btn:disabled {
+    .action-btn:disabled,
+    .topbar-btn:disabled {
       opacity: 0.55;
       cursor: not-allowed;
     }
@@ -219,6 +264,8 @@
       border: 1px solid #d1d5db;
       padding: 5px 8px;
       font-size: 13px;
+      background: white;
+      color: #111827;
     }
 
     .pitch {
@@ -461,16 +508,6 @@
       font-size: 13px;
     }
 
-    .trade-info {
-      margin-bottom: 12px;
-      background: #2f3239;
-      border-radius: 10px;
-      padding: 10px 12px;
-      font-size: 12px;
-      line-height: 1.45;
-      flex: 0 0 auto;
-    }
-
     .trade-list {
       overflow-y: auto;
       min-height: 0;
@@ -482,7 +519,7 @@
 
     .trade-row {
       display: grid;
-      grid-template-columns: auto minmax(0, 1fr) 76px 58px 58px 86px;
+      grid-template-columns: auto minmax(0, 1fr) 90px 58px 58px 86px;
       gap: 10px;
       align-items: center;
       padding: 9px 8px;
@@ -528,12 +565,6 @@
       margin-top: 4px;
     }
 
-    .trade-reason {
-      font-size: 10px;
-      color: #fca5a5;
-      margin-top: 4px;
-    }
-
     .trade-position-col,
     .trade-score-col,
     .trade-start-col {
@@ -545,9 +576,9 @@
       font-weight: bold;
       font-size: 12px;
       line-height: 1.1;
+      white-space: nowrap;
     }
 
-    .trade-position-label,
     .trade-score-label,
     .trade-start-label {
       font-size: 10px;
@@ -578,6 +609,103 @@
 
     .muted {
       color: #cbd5e1;
+    }
+
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.55);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 16px;
+      box-sizing: border-box;
+    }
+
+    .modal-backdrop.show {
+      display: flex;
+    }
+
+    .modal {
+      width: 100%;
+      max-width: 420px;
+      background: #23252b;
+      color: white;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+      padding: 18px;
+      box-sizing: border-box;
+    }
+
+    .modal-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .modal-subtitle {
+      font-size: 13px;
+      color: #cbd5e1;
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+
+    .modal-grid {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .modal-input {
+      width: 100%;
+      background: #2f3239;
+      color: white;
+      border: 1px solid #3f4450;
+    }
+
+    .modal-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .modal-btn {
+      background: rgba(255,255,255,0.92);
+      color: #111827;
+      font-weight: bold;
+      padding: 9px 13px;
+      border-radius: 10px;
+      font-size: 13px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .modal-btn.secondary {
+      background: #111827;
+      color: white;
+      border: 1px solid #3f4450;
+    }
+
+    .modal-status {
+      margin-top: 12px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      font-size: 13px;
+      line-height: 1.4;
+      display: none;
+    }
+
+    .modal-status.error {
+      display: block;
+      background: #7f1d1d;
+      color: white;
+    }
+
+    .modal-status.info {
+      display: block;
+      background: rgba(255,255,255,0.92);
+      color: #111827;
     }
 
     @media (max-width: 1180px) {
@@ -617,8 +745,20 @@
 </head>
 <body>
   <div class="topbar">
-    <div>VM 2026 Manager</div>
-    <div id="topbarInfo">Pre-final prototype</div>
+    <div class="topbar-left">
+      <div>VM 2026 Manager</div>
+    </div>
+
+    <div class="topbar-right">
+      <div id="topbarInfo">Pre-final prototype</div>
+
+      <div class="topbar-auth">
+        <div id="topbarUser" class="topbar-user" style="display:none;"></div>
+        <button id="openLoginBtn" class="topbar-btn">Log ind</button>
+        <button id="openSignupBtn" class="topbar-btn secondary">Opret bruger</button>
+        <button id="logoutBtn" class="topbar-btn secondary" style="display:none;">Log ud</button>
+      </div>
+    </div>
   </div>
 
   <div class="page-wrap">
@@ -707,7 +847,7 @@
             </select>
           </div>
 
-          <div class="trade-info">
+          <div class="info-box">
             <div><strong>Handelspanel</strong></div>
             <div id="tradeHelpText" class="muted">Klik på en spiller i listen for automatisk at fylde første ledige plads i den relevante kæde. Hvis kæden er fuld, vælg en spiller på banen for at udskifte.</div>
           </div>
@@ -725,14 +865,41 @@
     </div>
   </div>
 
+  <div id="authModal" class="modal-backdrop">
+    <div class="modal">
+      <div id="authModalTitle" class="modal-title">Log ind</div>
+      <div id="authModalSubtitle" class="modal-subtitle">Log ind for automatisk at gemme dit hold på tværs af enheder.</div>
+
+      <div class="modal-grid">
+        <input id="authEmailInput" class="modal-input" type="email" placeholder="Email" />
+        <input id="authPasswordInput" class="modal-input" type="password" placeholder="Kodeord" />
+      </div>
+
+      <div class="modal-actions">
+        <button id="authPrimaryBtn" class="modal-btn">Log ind</button>
+        <button id="authCancelBtn" class="modal-btn secondary">Luk</button>
+      </div>
+
+      <div id="authModalStatus" class="modal-status"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script>
-  const DATA_URL = "data/player_pool_v1.json";
-  const FIXTURES_URL = "data/fixtures_group.csv";
-  const START_SECURITY_URL = "data/player_start_security_nt.csv";
-  const OPTIMAL_SQUADS_URL = "data/optimal_squads_by_formation.json";
-  const BUDGET_TOTAL = 50000000;
-  const MAX_PER_TEAM = 4;
-  const HISTORY_LIMIT = 30;
+    const DATA_URL = "data/player_pool_v1.json";
+    const FIXTURES_URL = "data/fixtures_group.csv";
+    const START_SECURITY_URL = "data/player_start_security_nt.csv";
+    const OPTIMAL_SQUADS_URL = "data/optimal_squads_by_formation.json";
+
+    const SUPABASE_URL = "https://jmxaadgcqueudfpjyqqa.supabase.co";
+    const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_ZYZ__-zXk1ZotGumRcINfg_MuDqe0ae";
+
+    const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+
+    const BUDGET_TOTAL = 50000000;
+    const MAX_PER_TEAM = 4;
+    const HISTORY_LIMIT = 30;
+    const AUTOSAVE_DEBOUNCE_MS = 700;
 
     const STORAGE_KEYS = {
       squad: "vm2026_squad_v2",
@@ -759,10 +926,14 @@
     let allPlayers = [];
     let fixtures = [];
     let optimalSquads = [];
+    let currentUser = null;
     let squad = JSON.parse(localStorage.getItem(STORAGE_KEYS.squad) || "{}");
     let currentFormation = localStorage.getItem(STORAGE_KEYS.formation) || "4-4-2";
     let activeSlotKey = null;
     let squadHistory = [];
+    let autosaveTimer = null;
+    let authMode = "login";
+    let isApplyingRemoteSquad = false;
 
     const formationSelect = document.getElementById("formationSelect");
     const pitch = document.getElementById("pitch");
@@ -783,6 +954,20 @@
     const undoBtn = document.getElementById("undoBtn");
     const clearTeamBtn = document.getElementById("clearTeamBtn");
 
+    const topbarUser = document.getElementById("topbarUser");
+    const openLoginBtn = document.getElementById("openLoginBtn");
+    const openSignupBtn = document.getElementById("openSignupBtn");
+    const logoutBtn = document.getElementById("logoutBtn");
+
+    const authModal = document.getElementById("authModal");
+    const authModalTitle = document.getElementById("authModalTitle");
+    const authModalSubtitle = document.getElementById("authModalSubtitle");
+    const authEmailInput = document.getElementById("authEmailInput");
+    const authPasswordInput = document.getElementById("authPasswordInput");
+    const authPrimaryBtn = document.getElementById("authPrimaryBtn");
+    const authCancelBtn = document.getElementById("authCancelBtn");
+    const authModalStatus = document.getElementById("authModalStatus");
+
     function formatMoney(value) {
       return Number(value || 0).toLocaleString("da-DK");
     }
@@ -799,7 +984,6 @@
 
     function getStartBadge(player) {
       const num = Number(player?.start_probability_pct || 0);
-
       if (!num) return { text: "Start: –", className: "unknown" };
       if (num >= 80) return { text: `Start: ${Math.round(num)}%`, className: "good" };
       if (num >= 60) return { text: `Start: ${Math.round(num)}%`, className: "medium" };
@@ -822,9 +1006,7 @@
 
     function pushHistory() {
       squadHistory.push(cloneSquadState(squad));
-      if (squadHistory.length > HISTORY_LIMIT) {
-        squadHistory.shift();
-      }
+      if (squadHistory.length > HISTORY_LIMIT) squadHistory.shift();
       updateUndoButton();
     }
 
@@ -840,6 +1022,7 @@
       saveState();
       render();
       showStatus("Sidste ændring er fortrudt.", "info");
+      scheduleAutosave();
     }
 
     function updateUndoButton() {
@@ -869,12 +1052,12 @@
       return POSITION_LABEL_TO_CODE[text] || text.toUpperCase();
     }
 
-    function positionShortLabel(value) {
+    function positionFullLabel(value) {
       const pos = normalizePositionLabel(value);
-      if (pos === "GK") return "Mål";
+      if (pos === "GK") return "Målmand";
       if (pos === "DEF") return "Forsvar";
-      if (pos === "MID") return "Midt";
-      if (pos === "FWD") return "Angreb";
+      if (pos === "MID") return "Midtbane";
+      if (pos === "FWD") return "Angriber";
       return pos || "–";
     }
 
@@ -891,6 +1074,39 @@
     function clearStatus() {
       statusBox.className = "status-box";
       statusBox.textContent = "";
+    }
+
+    function showAuthModalStatus(text, variant = "error") {
+      authModalStatus.className = `modal-status ${variant}`;
+      authModalStatus.textContent = text;
+    }
+
+    function clearAuthModalStatus() {
+      authModalStatus.className = "modal-status";
+      authModalStatus.textContent = "";
+    }
+
+    function openAuthModal(mode) {
+      authMode = mode;
+
+      if (mode === "signup") {
+        authModalTitle.textContent = "Opret bruger";
+        authModalSubtitle.textContent = "Opret dig for automatisk at gemme dit hold på tværs af enheder.";
+        authPrimaryBtn.textContent = "Opret bruger";
+      } else {
+        authModalTitle.textContent = "Log ind";
+        authModalSubtitle.textContent = "Log ind for automatisk at hente og gemme dit hold.";
+        authPrimaryBtn.textContent = "Log ind";
+      }
+
+      clearAuthModalStatus();
+      authModal.classList.add("show");
+      setTimeout(() => authEmailInput.focus(), 50);
+    }
+
+    function closeAuthModal() {
+      authModal.classList.remove("show");
+      clearAuthModalStatus();
     }
 
     function getPlayerById(playerId) {
@@ -1030,66 +1246,66 @@
       const formation = FORMATIONS[currentFormation];
       const slots = [];
 
-      slots.push({ key: "GK1", group: "GK", position: "Målmand", positionCode: "GK", x: 50, y: 13 });
+      slots.push({ key: "GK1", position: "Målmand", positionCode: "GK", x: 50, y: 13 });
 
       if (formation.df === 3) {
         slots.push(
-          { key: "DF1", group: "DF", position: "Forsvar", positionCode: "DEF", x: 25, y: 36 },
-          { key: "DF2", group: "DF", position: "Forsvar", positionCode: "DEF", x: 50, y: 36 },
-          { key: "DF3", group: "DF", position: "Forsvar", positionCode: "DEF", x: 75, y: 36 }
+          { key: "DF1", position: "Forsvar", positionCode: "DEF", x: 25, y: 36 },
+          { key: "DF2", position: "Forsvar", positionCode: "DEF", x: 50, y: 36 },
+          { key: "DF3", position: "Forsvar", positionCode: "DEF", x: 75, y: 36 }
         );
       } else if (formation.df === 4) {
         slots.push(
-          { key: "DF1", group: "DF", position: "Forsvar", positionCode: "DEF", x: 17, y: 36 },
-          { key: "DF2", group: "DF", position: "Forsvar", positionCode: "DEF", x: 39, y: 36 },
-          { key: "DF3", group: "DF", position: "Forsvar", positionCode: "DEF", x: 61, y: 36 },
-          { key: "DF4", group: "DF", position: "Forsvar", positionCode: "DEF", x: 83, y: 36 }
+          { key: "DF1", position: "Forsvar", positionCode: "DEF", x: 17, y: 36 },
+          { key: "DF2", position: "Forsvar", positionCode: "DEF", x: 39, y: 36 },
+          { key: "DF3", position: "Forsvar", positionCode: "DEF", x: 61, y: 36 },
+          { key: "DF4", position: "Forsvar", positionCode: "DEF", x: 83, y: 36 }
         );
       } else if (formation.df === 5) {
         slots.push(
-          { key: "DF1", group: "DF", position: "Forsvar", positionCode: "DEF", x: 10, y: 36 },
-          { key: "DF2", group: "DF", position: "Forsvar", positionCode: "DEF", x: 30, y: 36 },
-          { key: "DF3", group: "DF", position: "Forsvar", positionCode: "DEF", x: 50, y: 36 },
-          { key: "DF4", group: "DF", position: "Forsvar", positionCode: "DEF", x: 70, y: 36 },
-          { key: "DF5", group: "DF", position: "Forsvar", positionCode: "DEF", x: 90, y: 36 }
+          { key: "DF1", position: "Forsvar", positionCode: "DEF", x: 10, y: 36 },
+          { key: "DF2", position: "Forsvar", positionCode: "DEF", x: 30, y: 36 },
+          { key: "DF3", position: "Forsvar", positionCode: "DEF", x: 50, y: 36 },
+          { key: "DF4", position: "Forsvar", positionCode: "DEF", x: 70, y: 36 },
+          { key: "DF5", position: "Forsvar", positionCode: "DEF", x: 90, y: 36 }
         );
       }
 
       if (formation.mf === 3) {
         slots.push(
-          { key: "MF1", group: "MF", position: "Midtbane", positionCode: "MID", x: 25, y: 62 },
-          { key: "MF2", group: "MF", position: "Midtbane", positionCode: "MID", x: 50, y: 62 },
-          { key: "MF3", group: "MF", position: "Midtbane", positionCode: "MID", x: 75, y: 62 }
+          { key: "MF1", position: "Midtbane", positionCode: "MID", x: 25, y: 62 },
+          { key: "MF2", position: "Midtbane", positionCode: "MID", x: 50, y: 62 },
+          { key: "MF3", position: "Midtbane", positionCode: "MID", x: 75, y: 62 }
         );
       } else if (formation.mf === 4) {
         slots.push(
-          { key: "MF1", group: "MF", position: "Midtbane", positionCode: "MID", x: 17, y: 62 },
-          { key: "MF2", group: "MF", position: "Midtbane", positionCode: "MID", x: 39, y: 62 },
-          { key: "MF3", group: "MF", position: "Midtbane", positionCode: "MID", x: 61, y: 62 },
-          { key: "MF4", group: "MF", position: "Midtbane", positionCode: "MID", x: 83, y: 62 }
+          { key: "MF1", position: "Midtbane", positionCode: "MID", x: 17, y: 62 },
+          { key: "MF2", position: "Midtbane", positionCode: "MID", x: 39, y: 62 },
+          { key: "MF3", position: "Midtbane", positionCode: "MID", x: 61, y: 62 },
+          { key: "MF4", position: "Midtbane", positionCode: "MID", x: 83, y: 62 }
         );
       } else if (formation.mf === 5) {
         slots.push(
-          { key: "MF1", group: "MF", position: "Midtbane", positionCode: "MID", x: 10, y: 62 },
-          { key: "MF2", group: "MF", position: "Midtbane", positionCode: "MID", x: 30, y: 62 },
-          { key: "MF3", group: "MF", position: "Midtbane", positionCode: "MID", x: 50, y: 62 },
-          { key: "MF4", group: "MF", position: "Midtbane", positionCode: "MID", x: 70, y: 62 },
-          { key: "MF5", group: "MF", position: "Midtbane", positionCode: "MID", x: 90, y: 62 }
+          { key: "MF1", position: "Midtbane", positionCode: "MID", x: 10, y: 62 },
+          { key: "MF2", position: "Midtbane", positionCode: "MID", x: 30, y: 62 },
+          { key: "MF3", position: "Midtbane", positionCode: "MID", x: 50, y: 62 },
+          { key: "MF4", position: "Midtbane", positionCode: "MID", x: 70, y: 62 },
+          { key: "MF5", position: "Midtbane", positionCode: "MID", x: 90, y: 62 }
         );
       }
 
       if (formation.fw === 1) {
-        slots.push({ key: "FW1", group: "FW", position: "Angriber", positionCode: "FWD", x: 50, y: 88 });
+        slots.push({ key: "FW1", position: "Angriber", positionCode: "FWD", x: 50, y: 88 });
       } else if (formation.fw === 2) {
         slots.push(
-          { key: "FW1", group: "FW", position: "Angriber", positionCode: "FWD", x: 34, y: 88 },
-          { key: "FW2", group: "FW", position: "Angriber", positionCode: "FWD", x: 66, y: 88 }
+          { key: "FW1", position: "Angriber", positionCode: "FWD", x: 34, y: 88 },
+          { key: "FW2", position: "Angriber", positionCode: "FWD", x: 66, y: 88 }
         );
       } else if (formation.fw === 3) {
         slots.push(
-          { key: "FW1", group: "FW", position: "Angriber", positionCode: "FWD", x: 18, y: 88 },
-          { key: "FW2", group: "FW", position: "Angriber", positionCode: "FWD", x: 50, y: 88 },
-          { key: "FW3", group: "FW", position: "Angriber", positionCode: "FWD", x: 82, y: 88 }
+          { key: "FW1", position: "Angriber", positionCode: "FWD", x: 18, y: 88 },
+          { key: "FW2", position: "Angriber", positionCode: "FWD", x: 50, y: 88 },
+          { key: "FW3", position: "Angriber", positionCode: "FWD", x: 82, y: 88 }
         );
       }
 
@@ -1115,6 +1331,7 @@
       clearStatus();
       saveState();
       render();
+      scheduleAutosave();
     }
 
     function getSpentBudget() {
@@ -1299,6 +1516,7 @@
       clearStatus();
       saveState();
       render();
+      scheduleAutosave();
     }
 
     function applyOptimalSquadForCurrentFormation() {
@@ -1361,6 +1579,8 @@
       } else {
         clearStatus();
       }
+
+      scheduleAutosave();
     }
 
     function getEmptySlots() {
@@ -1424,9 +1644,7 @@
           return;
         }
 
-        if (mode === "best" && totalScore + optimisticTail[idx] < bestMetric) {
-          return;
-        }
+        if (mode === "best" && totalScore + optimisticTail[idx] < bestMetric) return;
 
         const { slot, candidates } = slotCandidates[idx];
 
@@ -1446,35 +1664,17 @@
           usedIds.add(playerIdStr);
           teamCounts[teamName] = currentCount + 1;
 
-          dfs(
-            idx + 1,
-            localSquadAdds,
-            usedIds,
-            teamCounts,
-            newSpent,
-            totalScore + getPlayerScore(player)
-          );
+          dfs(idx + 1, localSquadAdds, usedIds, teamCounts, newSpent, totalScore + getPlayerScore(player));
 
           delete localSquadAdds[slot.key];
           usedIds.delete(playerIdStr);
 
-          if (currentCount === 0) {
-            delete teamCounts[teamName];
-          } else {
-            teamCounts[teamName] = currentCount;
-          }
+          if (currentCount === 0) delete teamCounts[teamName];
+          else teamCounts[teamName] = currentCount;
         }
       }
 
-      dfs(
-        0,
-        {},
-        new Set(usedIdsBase),
-        { ...teamCountsBase },
-        0,
-        0
-      );
-
+      dfs(0, {}, new Set(usedIdsBase), { ...teamCountsBase }, 0, 0);
       return bestSolution;
     }
 
@@ -1493,7 +1693,6 @@
         for (let i = 0; i < remainingSlots.length; i++) {
           const slot = remainingSlots[i];
           const candidates = getEligiblePlayersForSlot(slot, usedIds, teamCounts, remainingBank);
-
           if (!candidates.length) continue;
 
           const candidate = candidates[0];
@@ -1503,9 +1702,7 @@
           }
         }
 
-        if (!bestPick) {
-          break;
-        }
+        if (!bestPick) break;
 
         partialSolution[bestPick.slot.key] = bestPick.player.player_id;
         usedIds.add(String(bestPick.player.player_id));
@@ -1555,6 +1752,7 @@
           saveState();
           render();
           showStatus(`Udfyldte ${partialCount} af ${emptySlots.length} tomme pladser. Resten kunne ikke udfyldes pga. budget eller holdloft. Billigste fulde udfyldning koster ca. ${formatMoney(minimumPossibleCost)}.`, "info");
+          scheduleAutosave();
           return;
         }
 
@@ -1589,6 +1787,7 @@
           saveState();
           render();
           showStatus(`Udfyldte ${partialCount} af ${emptySlots.length} tomme pladser. Resten kunne ikke udfyldes under de nuværende constraints.`, "info");
+          scheduleAutosave();
           return;
         }
 
@@ -1610,10 +1809,10 @@
       }
 
       if (!solution) {
-        const extraWideCandidates = emptySlots.map(slot => {
-          const candidates = getEligiblePlayersForSlot(slot, usedIdsBase, teamCountsBase, bankLeft).slice(0, 350);
-          return { slot, candidates };
-        }).sort((a, b) => a.candidates.length - b.candidates.length);
+        const extraWideCandidates = emptySlots.map(slot => ({
+          slot,
+          candidates: getEligiblePlayersForSlot(slot, usedIdsBase, teamCountsBase, bankLeft).slice(0, 350)
+        })).sort((a, b) => a.candidates.length - b.candidates.length);
 
         solution = solveMissingSlotsBacktracking(extraWideCandidates, bankLeft, usedIdsBase, teamCountsBase, "any");
       }
@@ -1630,6 +1829,7 @@
           saveState();
           render();
           showStatus(`Udfyldte ${partialCount} af ${emptySlots.length} tomme pladser. Resten kunne ikke udfyldes pga. budget eller maks. ${MAX_PER_TEAM} fra samme land.`, "info");
+          scheduleAutosave();
           return;
         }
 
@@ -1638,16 +1838,13 @@
       }
 
       pushHistory();
-      squad = {
-        ...squad,
-        ...solution
-      };
-
+      squad = { ...squad, ...solution };
       activeSlotKey = null;
       activeSlotText.textContent = "Ingen valgt";
       clearStatus();
       saveState();
       render();
+      scheduleAutosave();
     }
 
     function renderBudget() {
@@ -1717,6 +1914,7 @@
               saveState();
               render();
               clearStatus();
+              scheduleAutosave();
             }
           } else if (action === "replace" || action === "select") {
             setActiveSlot(slotKey);
@@ -1782,7 +1980,7 @@
         tradeHelpText.textContent = "Klik på en spiller i listen for automatisk at fylde første ledige plads i den relevante kæde. Hvis kæden er fuld, vælg en spiller på banen for at udskifte.";
       }
 
-      if (players.length === 0) {
+      if (!players.length) {
         tradeList.innerHTML = `<div style="padding:14px;color:#cbd5e1;">Ingen spillere matcher søgning og filtre.</div>`;
         return;
       }
@@ -1800,11 +1998,9 @@
               <div class="trade-meta">${player.team_name || "Ukendt land"}</div>
               <div class="trade-next">${nextMatchText(player.team_id)}</div>
               <div class="trade-meta">Viderechance: ${pctWhole(player.advance_pct)}</div>
-              ${disabledReason ? `<div class="trade-reason">${disabledReason}</div>` : ""}
             </div>
             <div class="trade-position-col">
-              <div class="trade-position-value">${positionShortLabel(player.position)}</div>
-              <div class="trade-position-label">Pos</div>
+              <div class="trade-position-value">${positionFullLabel(player.position)}</div>
             </div>
             <div class="trade-start-col">
               <div class="trade-start-value">${startPct(player.start_probability_pct)}</div>
@@ -1825,11 +2021,8 @@
       document.querySelectorAll(".plus-btn").forEach(btn => {
         btn.addEventListener("click", () => {
           const playerId = btn.dataset.playerId;
-          if (activeSlotKey) {
-            addPlayerToSlot(playerId, activeSlotKey);
-          } else {
-            addPlayerToBestSlot(playerId);
-          }
+          if (activeSlotKey) addPlayerToSlot(playerId, activeSlotKey);
+          else addPlayerToBestSlot(playerId);
         });
       });
     }
@@ -1843,7 +2036,7 @@
 
     async function loadFixtures() {
       const response = await fetch(FIXTURES_URL);
-      if (!response.ok) throw new Error(`Kunde ikke hente fixtures: ${response.status}`);
+      if (!response.ok) throw new Error(`Kunne ikke hente fixtures: ${response.status}`);
 
       const text = await response.text();
       const rows = parseCsv(text);
@@ -1886,12 +2079,10 @@
 
     async function loadOptimalSquads() {
       const response = await fetch(OPTIMAL_SQUADS_URL);
-      if (!response.ok) throw new Error(`Kunde ikke hente optimizer-data: ${response.status}`);
+      if (!response.ok) throw new Error(`Kunne ikke hente optimizer-data: ${response.status}`);
 
       const rows = await response.json();
-      if (!Array.isArray(rows)) {
-        throw new Error("Optimizer-filen indeholder ikke en gyldig liste.");
-      }
+      if (!Array.isArray(rows)) throw new Error("Optimizer-filen indeholder ikke en gyldig liste.");
 
       optimalSquads = rows;
     }
@@ -1910,6 +2101,142 @@
       });
     }
 
+    function setAuthUi() {
+      if (currentUser) {
+        topbarUser.style.display = "inline-block";
+        topbarUser.textContent = currentUser.email || "Logget ind";
+        openLoginBtn.style.display = "none";
+        openSignupBtn.style.display = "none";
+        logoutBtn.style.display = "inline-block";
+      } else {
+        topbarUser.style.display = "none";
+        topbarUser.textContent = "";
+        openLoginBtn.style.display = "inline-block";
+        openSignupBtn.style.display = "inline-block";
+        logoutBtn.style.display = "none";
+      }
+    }
+
+    async function upsertAutosaveSquad() {
+      if (!currentUser || isApplyingRemoteSquad) return;
+
+      const payload = {
+        user_id: currentUser.id,
+        squad_name: "Autosave",
+        formation: currentFormation,
+        squad_json: squad
+      };
+
+      const { error } = await supabaseClient
+        .from("saved_squads")
+        .upsert(payload, { onConflict: "user_id,squad_name" });
+
+      if (error) {
+        showStatus(`Automatisk gemning fejlede: ${error.message}`, "error");
+      }
+    }
+
+    function scheduleAutosave() {
+      if (!currentUser || isApplyingRemoteSquad) return;
+
+      if (autosaveTimer) {
+        clearTimeout(autosaveTimer);
+      }
+
+      autosaveTimer = setTimeout(async () => {
+        autosaveTimer = null;
+        await upsertAutosaveSquad();
+      }, AUTOSAVE_DEBOUNCE_MS);
+    }
+
+    async function loadAutosaveSquadForUser() {
+      if (!currentUser) return;
+
+      const { data, error } = await supabaseClient
+        .from("saved_squads")
+        .select("id, squad_name, formation, squad_json, updated_at")
+        .eq("squad_name", "Autosave")
+        .maybeSingle();
+
+      if (error) {
+        showStatus(`Kunne ikke hente gemt hold: ${error.message}`, "error");
+        return;
+      }
+
+      if (!data) {
+        await upsertAutosaveSquad();
+        return;
+      }
+
+      isApplyingRemoteSquad = true;
+      currentFormation = data.formation || "4-4-2";
+      formationSelect.value = currentFormation;
+      squad = typeof data.squad_json === "object" && data.squad_json ? data.squad_json : {};
+      activeSlotKey = null;
+      activeSlotText.textContent = "Ingen valgt";
+      saveState();
+      render();
+      isApplyingRemoteSquad = false;
+    }
+
+    async function handleLogin() {
+      const email = authEmailInput.value.trim();
+      const password = authPasswordInput.value;
+
+      if (!email || !password) {
+        showAuthModalStatus("Udfyld både email og kodeord.", "error");
+        return;
+      }
+
+      const { error } = await supabaseClient.auth.signInWithPassword({ email, password });
+
+      if (error) {
+        showAuthModalStatus(`Login fejlede: ${error.message}`, "error");
+        return;
+      }
+
+      authPasswordInput.value = "";
+      closeAuthModal();
+      clearStatus();
+      showStatus("Du er logget ind.", "info");
+    }
+
+    async function handleSignup() {
+      const email = authEmailInput.value.trim();
+      const password = authPasswordInput.value;
+
+      if (!email || !password) {
+        showAuthModalStatus("Udfyld både email og kodeord.", "error");
+        return;
+      }
+
+      const { data, error } = await supabaseClient.auth.signUp({ email, password });
+
+      if (error) {
+        showAuthModalStatus(`Oprettelse fejlede: ${error.message}`, "error");
+        return;
+      }
+
+      authPasswordInput.value = "";
+
+      if (data?.session) {
+        closeAuthModal();
+        clearStatus();
+        showStatus("Bruger oprettet og logget ind.", "info");
+      } else {
+        showAuthModalStatus("Bruger oprettet. Log ind bagefter, hvis du ikke blev logget ind automatisk.", "info");
+      }
+    }
+
+    async function handleLogout() {
+      const { error } = await supabaseClient.auth.signOut();
+      if (error) {
+        showStatus(`Logout fejlede: ${error.message}`, "error");
+        return;
+      }
+      showStatus("Du er logget ud.", "info");
+    }
+
     function setupEvents() {
       formationSelect.value = currentFormation;
 
@@ -1920,27 +2247,65 @@
         cleanSquadForCurrentFormation();
         saveState();
         render();
+        scheduleAutosave();
       });
 
-      optimizeBtn.addEventListener("click", () => {
-        applyOptimalSquadForCurrentFormation();
-      });
-
-      fillMissingBtn.addEventListener("click", () => {
-        fillMissingSlotsOptimally();
-      });
-
-      undoBtn.addEventListener("click", () => {
-        undoLastAction();
-      });
-
-      clearTeamBtn.addEventListener("click", () => {
-        clearSquad();
-      });
+      optimizeBtn.addEventListener("click", applyOptimalSquadForCurrentFormation);
+      fillMissingBtn.addEventListener("click", fillMissingSlotsOptimally);
+      undoBtn.addEventListener("click", undoLastAction);
+      clearTeamBtn.addEventListener("click", clearSquad);
 
       [searchInput, teamFilter, positionFilter, sortSelect].forEach(el => {
         el.addEventListener("input", renderTradeList);
         el.addEventListener("change", renderTradeList);
+      });
+
+      openLoginBtn.addEventListener("click", () => openAuthModal("login"));
+      openSignupBtn.addEventListener("click", () => openAuthModal("signup"));
+      logoutBtn.addEventListener("click", handleLogout);
+
+      authPrimaryBtn.addEventListener("click", async () => {
+        if (authMode === "signup") await handleSignup();
+        else await handleLogin();
+      });
+
+      authCancelBtn.addEventListener("click", closeAuthModal);
+
+      authModal.addEventListener("click", (event) => {
+        if (event.target === authModal) {
+          closeAuthModal();
+        }
+      });
+
+      authPasswordInput.addEventListener("keydown", async (event) => {
+        if (event.key === "Enter") {
+          if (authMode === "signup") await handleSignup();
+          else await handleLogin();
+        }
+      });
+    }
+
+    async function initAuth() {
+      const { data } = await supabaseClient.auth.getSession();
+      currentUser = data?.session?.user || null;
+      setAuthUi();
+
+      if (currentUser) {
+        await loadAutosaveSquadForUser();
+      }
+
+      supabaseClient.auth.onAuthStateChange(async (_event, session) => {
+        const previousUserId = currentUser?.id || null;
+        const nextUser = session?.user || null;
+        currentUser = nextUser;
+        setAuthUi();
+
+        if (currentUser) {
+          if (currentUser.id !== previousUserId) {
+            await loadAutosaveSquadForUser();
+            showStatus("Dit gemte hold er indlæst.", "info");
+          }
+        }
       });
     }
 
@@ -1958,21 +2323,17 @@
           optimalSquadsPromise
         ]);
 
-        if (!playersResponse.ok) {
-          throw new Error(`Kunne ikke hente datafil: ${playersResponse.status}`);
-        }
+        if (!playersResponse.ok) throw new Error(`Kunne ikke hente datafil: ${playersResponse.status}`);
 
         const rawPlayers = await playersResponse.json();
-
-        if (!Array.isArray(rawPlayers)) {
-          throw new Error("Datafilen indeholder ikke en gyldig spillerliste.");
-        }
+        if (!Array.isArray(rawPlayers)) throw new Error("Datafilen indeholder ikke en gyldig spillerliste.");
 
         allPlayers = attachStartSecurity(rawPlayers, startMap);
 
         cleanSquadForCurrentFormation();
         buildTeamFilter();
         setupEvents();
+        await initAuth();
         render();
 
         setInterval(renderTradeList, 60000);
