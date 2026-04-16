@@ -1,0 +1,45 @@
+VM 2026 MODEL STATUS SNAPSHOT
+
+Oprettet: 2026-04-16T20:17:52
+
+VURDERING
+- Formation: 5-4-1 vinder stadig i den nuværende model, men det vurderes ikke som afgørende endnu, fordi spillerfelt og priser stadig er foreløbige/proxy-baserede.
+- Hovedpointe: Det vigtigste lige nu er en nogenlunde sund EV-motor og en meningsfuld optimizer. Formationsfinjustering kan vente eller evt. håndteres med en midlertidig balanced-toggle senere.
+- Næste fokus: Flyt fokus væk fra mere formation-tuning og over på datagrundlag, workflow, rigtige priser og bedre spiller-/starterinput.
+
+EV-FIL
+- Rækker: 1296
+- Weighted EV sum: 2368.696
+- Weighted EV mean: 1.8277
+- Weighted EV median: 1.4331
+- Positioner: {'MID': 451, 'DEF': 437, 'FWD': 317, 'GK': 91}
+
+FORMATIONER
+- 3-4-3: status=Optimal, EV=19.794, pris=49.985
+- 3-5-2: status=Optimal, EV=21.526, pris=50.0
+- 4-3-3: status=Optimal, EV=21.437, pris=50.0
+- 4-4-2: status=Optimal, EV=22.843, pris=50.0
+- 4-5-1: status=Optimal, EV=24.154, pris=49.955
+- 5-3-2: status=Optimal, EV=24.405, pris=49.997
+- 5-4-1: status=Optimal, EV=25.402, pris=49.979
+
+BEDSTE HOLD
+- selected_formation: 5-4-1
+- solver_quality_profile: soft_penalty_v5_use_file_ev_directly
+- squad_total_price_m: 49.97899999999999
+- squad_total_ev: 25.60162841400151
+- squad_total_adj_ev: 25.401933151171576
+- squad_total_raw_ev: 26.9251166308
+
+SPILLERE
+- Seol Young-woo | KOR | DEF | pris=4.82 | EV=3.0211811269301947
+- Jan Paul van Hecke | NED | DEF | pris=3.934 | EV=2.3534665214446875
+- Kim Moonhwan | KOR | DEF | pris=3.834 | EV=2.266056130759841
+- Lee Myung-jae | KOR | DEF | pris=3.83 | EV=2.254826163415624
+- Lee Hanbeom | KOR | DEF | pris=3.821 | EV=2.234576022081819
+- Patrick Agyemang | USA | FWD | pris=8.9 | EV=4.710500178820372
+- Martin Jedlička | CZE | GK | pris=3.345 | EV=1.8370350178832784
+- Osama Rashid | IRQ | MID | pris=4.568 | EV=2.032836303718413
+- Zidane Iqbal | IRQ | MID | pris=4.468 | EV=1.859555126285363
+- Bashar Resan | IRQ | MID | pris=4.263 | EV=1.462788413137801
+- Marko Farji | IRQ | MID | pris=4.196 | EV=1.369112146694186
