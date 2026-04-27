@@ -1734,14 +1734,35 @@
     }
 
     function cleanSquadForCurrentFormation() {
-      const validSlotKeys = new Set(getCurrentSlots().map(slot => slot.key));
+      const slots = getCurrentSlots();
+      const slotMap = new Map(slots.map(slot => [slot.key, slot]));
       const cleanedSquad = {};
+      const usedPlayerIds = new Set();
+      const teamCounts = {};
 
       Object.entries(squad).forEach(([slotKey, playerId]) => {
-        if (validSlotKeys.has(slotKey)) cleanedSquad[slotKey] = playerId;
+        const slot = slotMap.get(slotKey);
+        if (!slot || !playerId) return;
+
+        const player = getPlayerById(playerId);
+        if (!player) return;
+
+        if (player.position !== slot.position) return;
+
+        const playerIdStr = String(playerId);
+        if (usedPlayerIds.has(playerIdStr)) return;
+
+        const teamName = player.team_name || "";
+        const currentTeamCount = teamCounts[teamName] || 0;
+        if (currentTeamCount >= MAX_PER_TEAM) return;
+
+        cleanedSquad[slotKey] = playerId;
+        usedPlayerIds.add(playerIdStr);
+        teamCounts[teamName] = currentTeamCount + 1;
       });
 
       squad = cleanedSquad;
+      saveState();
     }
 
     function getCurrentTeamCounts(squadObj = squad) {
