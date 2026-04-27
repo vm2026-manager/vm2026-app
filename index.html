@@ -2,7 +2,7 @@
 <html lang="da">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VM 2026 Manager</title>
   <style>
     html, body {
@@ -30,9 +30,6 @@
       align-items: center;
       gap: 12px;
       flex-wrap: wrap;
-      position: sticky;
-      top: 0;
-      z-index: 50;
     }
 
     .topbar-left,
@@ -145,7 +142,6 @@
       padding: 8px 11px;
       min-width: 120px;
       font-size: 12px;
-      flex: 1 1 120px;
     }
 
     .bank-box strong {
@@ -170,7 +166,6 @@
       border-radius: 10px;
       color: #111827;
       font-size: 13px;
-      flex-wrap: wrap;
     }
 
     .action-bar {
@@ -501,6 +496,14 @@
       color: white;
     }
 
+    .trade-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 10px;
+      flex: 0 0 auto;
+    }
+
     .trade-search {
       margin-bottom: 10px;
       flex: 0 0 auto;
@@ -513,14 +516,6 @@
       color: white;
       border: 1px solid #3f4450;
       font-size: 13px;
-    }
-
-    .trade-header {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 10px;
-      margin-bottom: 10px;
-      flex: 0 0 auto;
     }
 
     .trade-extra-filters {
@@ -564,10 +559,10 @@
 
     .trade-row {
       display: grid;
-      grid-template-columns: auto minmax(0, 1fr) auto;
+      grid-template-columns: auto minmax(0, 1fr) 90px 58px 58px 86px;
       gap: 10px;
       align-items: center;
-      padding: 10px 8px;
+      padding: 9px 8px;
       border-bottom: 1px solid #2f3239;
     }
 
@@ -578,24 +573,19 @@
     .plus-btn {
       background: #fde047;
       color: #111827;
-      width: 34px;
-      height: 34px;
+      width: 32px;
+      height: 32px;
       border-radius: 8px;
       font-size: 20px;
       line-height: 1;
       font-weight: bold;
       padding: 0;
-      flex: 0 0 auto;
     }
 
     .plus-btn:disabled {
       background: #6b7280;
       color: #d1d5db;
       cursor: not-allowed;
-    }
-
-    .trade-main {
-      min-width: 0;
     }
 
     .trade-name {
@@ -615,40 +605,46 @@
       margin-top: 4px;
     }
 
-    .trade-disabled {
-      font-size: 10px;
-      color: #fca5a5;
-      margin-top: 4px;
-    }
-
-    .trade-metrics {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      justify-content: flex-end;
-      flex-wrap: wrap;
-    }
-
-    .trade-metric {
+    .trade-position-col,
+    .trade-score-col,
+    .trade-start-col {
       text-align: right;
-      min-width: 48px;
+      min-width: 0;
     }
 
-    .trade-metric.value-wide {
-      min-width: 72px;
-    }
-
-    .trade-metric-value {
+    .trade-position-value {
       font-weight: bold;
-      font-size: 15px;
-      line-height: 1.05;
+      font-size: 12px;
+      line-height: 1.1;
       white-space: nowrap;
     }
 
-    .trade-metric-label {
+    .trade-score-label,
+    .trade-start-label {
       font-size: 10px;
       color: #cbd5e1;
       margin-top: 4px;
+    }
+
+    .trade-score-value,
+    .trade-start-value {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 1;
+    }
+
+    .trade-price {
+      text-align: right;
+      font-weight: bold;
+      min-width: 78px;
+      font-size: 13px;
+    }
+
+    .trade-subprice {
+      font-size: 10px;
+      color: #cbd5e1;
+      text-align: right;
+      margin-top: 3px;
     }
 
     .modal-backdrop {
@@ -790,221 +786,6 @@
 
       .trade-list {
         max-height: none;
-      }
-    }
-
-    @media (max-width: 900px) {
-      .page-wrap {
-        padding: 8px;
-      }
-
-      .left-panel,
-      .right-panel {
-        padding: 10px;
-      }
-
-      .team-title {
-        font-size: 20px;
-      }
-
-      .formation-bar {
-        flex-direction: column;
-        align-items: stretch;
-      }
-
-      .formation-select-wrap {
-        width: 100%;
-        justify-content: space-between;
-      }
-
-      .action-bar {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 8px;
-      }
-
-      .action-btn {
-        width: 100%;
-        min-height: 42px;
-      }
-
-      .trade-header {
-        grid-template-columns: 1fr;
-      }
-
-      .trade-search input,
-      .trade-header select {
-        min-height: 42px;
-      }
-
-      .info-box {
-        font-size: 11px;
-      }
-    }
-
-    @media (max-width: 700px) {
-      .topbar {
-        padding: 10px 12px;
-        gap: 8px;
-      }
-
-      .topbar-left,
-      .topbar-right,
-      .topbar-auth {
-        width: 100%;
-      }
-
-      .topbar-right {
-        justify-content: space-between;
-      }
-
-      .topbar-user {
-        max-width: 170px;
-      }
-
-      .page-wrap {
-        padding: 0;
-        height: auto;
-      }
-
-      .left-panel,
-      .right-panel {
-        border-radius: 0;
-      }
-
-      .right-panel {
-        border-left: none;
-        border-top: 1px solid rgba(255,255,255,0.08);
-      }
-
-      .bank-row {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 8px;
-      }
-
-      .bank-box:last-child {
-        grid-column: 1 / -1;
-      }
-
-      .pitch {
-        min-height: 560px;
-      }
-
-      .pitch-circle {
-        width: 86px;
-        height: 86px;
-        margin-left: -43px;
-        margin-top: -43px;
-      }
-
-      .pitch-penalty-top,
-      .pitch-penalty-bottom {
-        width: 142px;
-        margin-left: -71px;
-        height: 80px;
-      }
-
-      .pitch-goal-top,
-      .pitch-goal-bottom {
-        width: 56px;
-        margin-left: -28px;
-        height: 28px;
-      }
-
-      .slot {
-        width: 84px;
-      }
-
-      .player-figure {
-        width: 36px;
-        height: 36px;
-        margin-bottom: 4px;
-      }
-
-      .flag-img {
-        width: 18px;
-        height: 13px;
-      }
-
-      .player-name {
-        max-width: 82px;
-        font-size: 9px;
-        padding: 3px 5px;
-      }
-
-      .player-price,
-      .player-next,
-      .player-start {
-        max-width: 82px;
-        font-size: 8px;
-      }
-
-      .slot-btn {
-        font-size: 10px;
-        padding: 4px 6px;
-      }
-
-      .trade-row {
-        grid-template-columns: auto 1fr;
-        align-items: start;
-      }
-
-      .trade-metrics {
-        grid-column: 1 / -1;
-        width: 100%;
-        justify-content: space-between;
-        padding-left: 44px;
-        gap: 8px;
-      }
-
-      .trade-metric {
-        text-align: left;
-        min-width: 0;
-        flex: 1 1 0;
-      }
-
-      .trade-metric.value-wide {
-        min-width: 0;
-      }
-
-      .plus-btn {
-        width: 36px;
-        height: 36px;
-        margin-top: 2px;
-      }
-
-      .credit-box {
-        padding-bottom: calc(8px + env(safe-area-inset-bottom));
-      }
-    }
-
-    @media (max-width: 430px) {
-      .action-bar {
-        grid-template-columns: 1fr;
-      }
-
-      .bank-row {
-        grid-template-columns: 1fr;
-      }
-
-      .pitch {
-        min-height: 500px;
-      }
-
-      .slot {
-        width: 72px;
-      }
-
-      .player-name,
-      .player-price,
-      .player-next,
-      .player-start {
-        max-width: 70px;
-      }
-
-      .topbar-user {
-        max-width: 130px;
       }
     }
   </style>
@@ -1264,7 +1045,7 @@
 
     function pctWhole(value) {
       const num = Number(value);
-      if (!Number.isFinite(num) || num <= 0) return "–";
+      if (!Number.isFinite(num)) return "–";
       if (num <= 1) return Math.round(num * 100) + "%";
       return Math.round(num) + "%";
     }
@@ -1622,43 +1403,42 @@
       return num;
     }
 
-    function getNextMatchWinProb(teamId) {
-      const nextFixture = getNextFixtureForTeam(teamId);
-      if (!nextFixture) return null;
+function getNextMatchWinProb(teamId) {
+  const nextFixture = getNextFixtureForTeam(teamId);
+  if (!nextFixture) return null;
 
-      const row = findMatchOddsRow(nextFixture);
-      if (!row) return null;
+  const row = findMatchOddsRow(nextFixture);
+  if (!row) return null;
 
-      const isHome = normalizeTeamId(nextFixture.home) === normalizeTeamId(teamId);
+  const isHome = normalizeTeamId(nextFixture.home) === normalizeTeamId(teamId);
 
-      const homeProb = parseProbNumber(getRowValue(row, [
-        "home_win_prob_fair",
-        "home_win_prob",
-        "home_prob",
-        "prob_home_win",
-        "p_home_win",
-        "home_win_pct"
-      ]));
+  const homeProb = parseProbNumber(getRowValue(row, [
+    "home_win_prob_fair",
+    "home_win_prob",
+    "home_prob",
+    "prob_home_win",
+    "p_home_win",
+    "home_win_pct"
+  ]));
 
-      const awayProb = parseProbNumber(getRowValue(row, [
-        "away_win_prob_fair",
-        "away_win_prob",
-        "away_prob",
-        "prob_away_win",
-        "p_away_win",
-        "away_win_pct"
-      ]));
+  const awayProb = parseProbNumber(getRowValue(row, [
+    "away_win_prob_fair",
+    "away_win_prob",
+    "away_prob",
+    "prob_away_win",
+    "p_away_win",
+    "away_win_pct"
+  ]));
 
-      return isHome ? homeProb : awayProb;
-    }
+  return isHome ? homeProb : awayProb;
+}
 
     function nextMatchText(teamId) {
       const nextFixture = getNextFixtureForTeam(teamId);
       if (!nextFixture) return "Næste kamp: ikke fundet";
 
       const winProb = getNextMatchWinProb(teamId);
-      const hasValidProb = Number.isFinite(Number(winProb)) && Number(winProb) > 0;
-      const probText = hasValidProb ? ` (${pctWhole(winProb)})` : "";
+      const probText = winProb !== null ? ` (${pctWhole(winProb)})` : "";
 
       return `Næste kamp: ${nextFixture.opponent}${probText}`;
     }
@@ -2645,27 +2425,25 @@
         return `
           <div class="${rowClass}">
             <button class="plus-btn" data-player-id="${player.player_id}" ${isDisabled ? "disabled" : ""}>+</button>
-
-            <div class="trade-main">
+            <div>
               <div class="trade-name">${player.player_name || "Ukendt spiller"}</div>
-              <div class="trade-meta">${player.team_name || "Ukendt land"} · ${positionFullLabel(player.position)}</div>
+              <div class="trade-meta">${player.team_name || "Ukendt land"}</div>
               <div class="trade-next">${nextMatchText(player.team_id)}</div>
-              ${disabledReason ? `<div class="trade-disabled">${disabledReason}</div>` : ""}
             </div>
-
-            <div class="trade-metrics">
-              <div class="trade-metric">
-                <div class="trade-metric-value">${startPct(player.start_probability_pct)}</div>
-                <div class="trade-metric-label">Start</div>
-              </div>
-              <div class="trade-metric">
-                <div class="trade-metric-value">${Number(player.display_score || 0)}</div>
-                <div class="trade-metric-label">Score</div>
-              </div>
-              <div class="trade-metric value-wide">
-                <div class="trade-metric-value">${formatMoney(player.price_estimate)}</div>
-                <div class="trade-metric-label">Pris</div>
-              </div>
+            <div class="trade-position-col">
+              <div class="trade-position-value">${positionFullLabel(player.position)}</div>
+            </div>
+            <div class="trade-start-col">
+              <div class="trade-start-value">${startPct(player.start_probability_pct)}</div>
+              <div class="trade-start-label">Start</div>
+            </div>
+            <div class="trade-score-col">
+              <div class="trade-score-value">${Number(player.display_score || 0)}</div>
+              <div class="trade-score-label">Score</div>
+            </div>
+            <div>
+              <div class="trade-price">${formatMoney(player.price_estimate)}</div>
+              <div class="trade-subprice">Pris</div>
             </div>
           </div>
         `;
@@ -2737,40 +2515,39 @@
 
       return map;
     }
+async function loadOptimalSquads() {
+  const response = await fetch(OPTIMAL_SQUADS_URL);
+  if (!response.ok) throw new Error(`Kunne ikke hente optimizer-data: ${response.status}`);
 
-    async function loadOptimalSquads() {
-      const response = await fetch(OPTIMAL_SQUADS_URL);
-      if (!response.ok) throw new Error(`Kunne ikke hente optimizer-data: ${response.status}`);
+  const raw = await response.json();
 
-      const raw = await response.json();
+  if (Array.isArray(raw)) {
+    optimalSquads = raw;
+    return;
+  }
 
-      if (Array.isArray(raw)) {
-        optimalSquads = raw;
-        return;
-      }
+  if (raw && typeof raw === "object") {
+    const flattened = [];
 
-      if (raw && typeof raw === "object") {
-        const flattened = [];
-
-        Object.entries(raw).forEach(([formationKey, value]) => {
-          if (Array.isArray(value)) {
-            value.forEach(row => {
-              flattened.push({
-                ...row,
-                selected_formation: row.selected_formation || row.formation || formationKey
-              });
-            });
-          }
+    Object.entries(raw).forEach(([formationKey, value]) => {
+      if (Array.isArray(value)) {
+        value.forEach(row => {
+          flattened.push({
+            ...row,
+            selected_formation: row.selected_formation || row.formation || formationKey
+          });
         });
-
-        if (flattened.length) {
-          optimalSquads = flattened;
-          return;
-        }
       }
+    });
 
-      throw new Error("Optimizer-filen indeholder ikke en gyldig liste.");
+    if (flattened.length) {
+      optimalSquads = flattened;
+      return;
     }
+  }
+
+  throw new Error("Optimizer-filen indeholder ikke en gyldig liste.");
+}
 
     function attachStartSecurity(players, startMap) {
       return players.map(player => {
