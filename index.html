@@ -2,7 +2,7 @@
 <html lang="da">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>VM 2026 Manager</title>
   <style>
     html, body {
@@ -30,6 +30,9 @@
       align-items: center;
       gap: 12px;
       flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 50;
     }
 
     .topbar-left,
@@ -142,6 +145,7 @@
       padding: 8px 11px;
       min-width: 120px;
       font-size: 12px;
+      flex: 1 1 120px;
     }
 
     .bank-box strong {
@@ -166,6 +170,7 @@
       border-radius: 10px;
       color: #111827;
       font-size: 13px;
+      flex-wrap: wrap;
     }
 
     .action-bar {
@@ -218,6 +223,8 @@
       font-size: 13px;
       line-height: 1.4;
       display: none;
+      white-space: pre-wrap;
+      word-break: break-word;
     }
 
     .status-box.error {
@@ -494,14 +501,6 @@
       color: white;
     }
 
-    .trade-header {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 10px;
-      margin-bottom: 10px;
-      flex: 0 0 auto;
-    }
-
     .trade-search {
       margin-bottom: 10px;
       flex: 0 0 auto;
@@ -514,6 +513,14 @@
       color: white;
       border: 1px solid #3f4450;
       font-size: 13px;
+    }
+
+    .trade-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 10px;
+      flex: 0 0 auto;
     }
 
     .trade-extra-filters {
@@ -557,10 +564,10 @@
 
     .trade-row {
       display: grid;
-      grid-template-columns: auto minmax(0, 1fr) 90px 58px 58px 86px;
+      grid-template-columns: auto minmax(0, 1fr) auto;
       gap: 10px;
       align-items: center;
-      padding: 9px 8px;
+      padding: 10px 8px;
       border-bottom: 1px solid #2f3239;
     }
 
@@ -571,19 +578,24 @@
     .plus-btn {
       background: #fde047;
       color: #111827;
-      width: 32px;
-      height: 32px;
+      width: 34px;
+      height: 34px;
       border-radius: 8px;
       font-size: 20px;
       line-height: 1;
       font-weight: bold;
       padding: 0;
+      flex: 0 0 auto;
     }
 
     .plus-btn:disabled {
       background: #6b7280;
       color: #d1d5db;
       cursor: not-allowed;
+    }
+
+    .trade-main {
+      min-width: 0;
     }
 
     .trade-name {
@@ -603,46 +615,40 @@
       margin-top: 4px;
     }
 
-    .trade-position-col,
-    .trade-score-col,
-    .trade-start-col {
-      text-align: right;
-      min-width: 0;
-    }
-
-    .trade-position-value {
-      font-weight: bold;
-      font-size: 12px;
-      line-height: 1.1;
-      white-space: nowrap;
-    }
-
-    .trade-score-label,
-    .trade-start-label {
+    .trade-disabled {
       font-size: 10px;
-      color: #cbd5e1;
+      color: #fca5a5;
       margin-top: 4px;
     }
 
-    .trade-score-value,
-    .trade-start-value {
-      font-weight: bold;
-      font-size: 16px;
-      line-height: 1;
+    .trade-metrics {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      justify-content: flex-end;
+      flex-wrap: wrap;
     }
 
-    .trade-price {
+    .trade-metric {
       text-align: right;
-      font-weight: bold;
-      min-width: 78px;
-      font-size: 13px;
+      min-width: 48px;
     }
 
-    .trade-subprice {
+    .trade-metric.value-wide {
+      min-width: 72px;
+    }
+
+    .trade-metric-value {
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 1.05;
+      white-space: nowrap;
+    }
+
+    .trade-metric-label {
       font-size: 10px;
       color: #cbd5e1;
-      text-align: right;
-      margin-top: 3px;
+      margin-top: 4px;
     }
 
     .modal-backdrop {
@@ -786,6 +792,221 @@
         max-height: none;
       }
     }
+
+    @media (max-width: 900px) {
+      .page-wrap {
+        padding: 8px;
+      }
+
+      .left-panel,
+      .right-panel {
+        padding: 10px;
+      }
+
+      .team-title {
+        font-size: 20px;
+      }
+
+      .formation-bar {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .formation-select-wrap {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .action-bar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+      }
+
+      .action-btn {
+        width: 100%;
+        min-height: 42px;
+      }
+
+      .trade-header {
+        grid-template-columns: 1fr;
+      }
+
+      .trade-search input,
+      .trade-header select {
+        min-height: 42px;
+      }
+
+      .info-box {
+        font-size: 11px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .topbar {
+        padding: 10px 12px;
+        gap: 8px;
+      }
+
+      .topbar-left,
+      .topbar-right,
+      .topbar-auth {
+        width: 100%;
+      }
+
+      .topbar-right {
+        justify-content: space-between;
+      }
+
+      .topbar-user {
+        max-width: 170px;
+      }
+
+      .page-wrap {
+        padding: 0;
+        height: auto;
+      }
+
+      .left-panel,
+      .right-panel {
+        border-radius: 0;
+      }
+
+      .right-panel {
+        border-left: none;
+        border-top: 1px solid rgba(255,255,255,0.08);
+      }
+
+      .bank-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+      }
+
+      .bank-box:last-child {
+        grid-column: 1 / -1;
+      }
+
+      .pitch {
+        min-height: 560px;
+      }
+
+      .pitch-circle {
+        width: 86px;
+        height: 86px;
+        margin-left: -43px;
+        margin-top: -43px;
+      }
+
+      .pitch-penalty-top,
+      .pitch-penalty-bottom {
+        width: 142px;
+        margin-left: -71px;
+        height: 80px;
+      }
+
+      .pitch-goal-top,
+      .pitch-goal-bottom {
+        width: 56px;
+        margin-left: -28px;
+        height: 28px;
+      }
+
+      .slot {
+        width: 84px;
+      }
+
+      .player-figure {
+        width: 36px;
+        height: 36px;
+        margin-bottom: 4px;
+      }
+
+      .flag-img {
+        width: 18px;
+        height: 13px;
+      }
+
+      .player-name {
+        max-width: 82px;
+        font-size: 9px;
+        padding: 3px 5px;
+      }
+
+      .player-price,
+      .player-next,
+      .player-start {
+        max-width: 82px;
+        font-size: 8px;
+      }
+
+      .slot-btn {
+        font-size: 10px;
+        padding: 4px 6px;
+      }
+
+      .trade-row {
+        grid-template-columns: auto 1fr;
+        align-items: start;
+      }
+
+      .trade-metrics {
+        grid-column: 1 / -1;
+        width: 100%;
+        justify-content: space-between;
+        padding-left: 44px;
+        gap: 8px;
+      }
+
+      .trade-metric {
+        text-align: left;
+        min-width: 0;
+        flex: 1 1 0;
+      }
+
+      .trade-metric.value-wide {
+        min-width: 0;
+      }
+
+      .plus-btn {
+        width: 36px;
+        height: 36px;
+        margin-top: 2px;
+      }
+
+      .credit-box {
+        padding-bottom: calc(8px + env(safe-area-inset-bottom));
+      }
+    }
+
+    @media (max-width: 430px) {
+      .action-bar {
+        grid-template-columns: 1fr;
+      }
+
+      .bank-row {
+        grid-template-columns: 1fr;
+      }
+
+      .pitch {
+        min-height: 500px;
+      }
+
+      .slot {
+        width: 72px;
+      }
+
+      .player-name,
+      .player-price,
+      .player-next,
+      .player-start {
+        max-width: 70px;
+      }
+
+      .topbar-user {
+        max-width: 130px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -875,7 +1096,7 @@
           <div class="info-box">
             <div><strong>Score:</strong> Modelens samlede vurdering af spillerens fantasy-potentiale.</div>
             <div><strong>Start:</strong> Estimeret sandsynlighed for, at spilleren starter inde.</div>
-            <div><strong>Viderechance:</strong> Viser sandsynligheden for, at spillerens land går videre fra den aktuelle fase.</div>
+            <div><strong>Næste kamp:</strong> Parentesen viser holdets vinderchance i næste kamp.</div>
             <div><strong>Note:</strong> Bruges senere til fx mulig rotation eller allerede videre.</div>
           </div>
 
@@ -909,7 +1130,7 @@
               <option value="score_desc">Højeste modelscore</option>
               <option value="price_desc">Dyreste</option>
               <option value="price_asc">Billigste</option>
-              <option value="advance_desc">Højeste viderechance</option>
+              <option value="next_win_desc">Højeste vinderchance næste kamp</option>
               <option value="start_desc">Højeste startsandsynlighed</option>
               <option value="name_asc">Navn A-Å</option>
             </select>
@@ -955,6 +1176,7 @@
     const FIXTURES_URL = "data/fixtures_group.csv";
     const START_SECURITY_URL = "data/player_start_security_nt.csv";
     const OPTIMAL_SQUADS_URL = "data/optimal_squads_by_formation.json";
+    const MATCH_ODDS_PROBS_URL = "data/match_odds_probs.csv";
 
     const SUPABASE_URL = "https://jmxaadgcqueudfpjyqqa.supabase.co";
     const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_ZYZ__-zXk1ZotGumRcINfg_MuDqe0ae";
@@ -992,6 +1214,7 @@
     let allPlayers = [];
     let fixtures = [];
     let optimalSquads = [];
+    let matchOddsRows = [];
     let currentUser = null;
     let squad = JSON.parse(localStorage.getItem(STORAGE_KEYS.squad) || "{}");
     let currentFormation = localStorage.getItem(STORAGE_KEYS.formation) || "4-4-2";
@@ -1040,7 +1263,10 @@
     }
 
     function pctWhole(value) {
-      return Math.round(Number(value || 0) * 100) + "%";
+      const num = Number(value);
+      if (!Number.isFinite(num) || num <= 0) return "–";
+      if (num <= 1) return Math.round(num * 100) + "%";
+      return Math.round(num) + "%";
     }
 
     function startPct(value) {
@@ -1354,13 +1580,87 @@
       const isHome = nextFixture.home === teamId;
       const opponent = isHome ? nextFixture.away : nextFixture.home;
 
-      return { opponent, isHome };
+      return {
+        opponent,
+        isHome,
+        home: nextFixture.home,
+        away: nextFixture.away,
+        match_id: nextFixture.match_id
+      };
+    }
+
+    function getRowValue(row, keys) {
+      for (const key of keys) {
+        if (row[key] !== undefined && row[key] !== null && row[key] !== "") {
+          return row[key];
+        }
+      }
+      return "";
+    }
+
+    function findMatchOddsRow(nextFixture) {
+      if (!nextFixture) return null;
+
+      const exactByTeams = matchOddsRows.find(row =>
+        normalizeTeamId(getRowValue(row, ["home", "home_team", "team_home", "home_team_id"])) === normalizeTeamId(nextFixture.home) &&
+        normalizeTeamId(getRowValue(row, ["away", "away_team", "team_away", "away_team_id"])) === normalizeTeamId(nextFixture.away)
+      );
+      if (exactByTeams) return exactByTeams;
+
+      const byMatchId = matchOddsRows.find(row =>
+        String(getRowValue(row, ["match_id", "fixture_id", "id"])) === String(nextFixture.match_id)
+      );
+      if (byMatchId) return byMatchId;
+
+      return null;
+    }
+
+    function parseProbNumber(value) {
+      const num = Number(String(value || "").replace(",", "."));
+      if (!Number.isFinite(num)) return null;
+      if (num > 1) return num / 100;
+      return num;
+    }
+
+    function getNextMatchWinProb(teamId) {
+      const nextFixture = getNextFixtureForTeam(teamId);
+      if (!nextFixture) return null;
+
+      const row = findMatchOddsRow(nextFixture);
+      if (!row) return null;
+
+      const isHome = normalizeTeamId(nextFixture.home) === normalizeTeamId(teamId);
+
+      const homeProb = parseProbNumber(getRowValue(row, [
+        "home_win_prob_fair",
+        "home_win_prob",
+        "home_prob",
+        "prob_home_win",
+        "p_home_win",
+        "home_win_pct"
+      ]));
+
+      const awayProb = parseProbNumber(getRowValue(row, [
+        "away_win_prob_fair",
+        "away_win_prob",
+        "away_prob",
+        "prob_away_win",
+        "p_away_win",
+        "away_win_pct"
+      ]));
+
+      return isHome ? homeProb : awayProb;
     }
 
     function nextMatchText(teamId) {
       const nextFixture = getNextFixtureForTeam(teamId);
       if (!nextFixture) return "Næste kamp: ikke fundet";
-      return `Næste kamp: ${nextFixture.opponent}`;
+
+      const winProb = getNextMatchWinProb(teamId);
+      const hasValidProb = Number.isFinite(Number(winProb)) && Number(winProb) > 0;
+      const probText = hasValidProb ? ` (${pctWhole(winProb)})` : "";
+
+      return `Næste kamp: ${nextFixture.opponent}${probText}`;
     }
 
     function getCurrentSlots() {
@@ -2324,8 +2624,8 @@
         players.sort((a, b) => getPlayerPrice(b) - getPlayerPrice(a));
       } else if (sortValue === "price_asc") {
         players.sort((a, b) => getPlayerPrice(a) - getPlayerPrice(b));
-      } else if (sortValue === "advance_desc") {
-        players.sort((a, b) => (Number(b.advance_pct) || 0) - (Number(a.advance_pct) || 0));
+      } else if (sortValue === "next_win_desc") {
+        players.sort((a, b) => (getNextMatchWinProb(b.team_id) || 0) - (getNextMatchWinProb(a.team_id) || 0));
       } else if (sortValue === "start_desc") {
         players.sort((a, b) => (Number(b.start_probability_pct) || 0) - (Number(a.start_probability_pct) || 0));
       } else if (sortValue === "name_asc") {
@@ -2345,26 +2645,27 @@
         return `
           <div class="${rowClass}">
             <button class="plus-btn" data-player-id="${player.player_id}" ${isDisabled ? "disabled" : ""}>+</button>
-            <div>
+
+            <div class="trade-main">
               <div class="trade-name">${player.player_name || "Ukendt spiller"}</div>
-              <div class="trade-meta">${player.team_name || "Ukendt land"}</div>
+              <div class="trade-meta">${player.team_name || "Ukendt land"} · ${positionFullLabel(player.position)}</div>
               <div class="trade-next">${nextMatchText(player.team_id)}</div>
-              <div class="trade-meta">Viderechance: ${pctWhole(player.advance_pct)}</div>
+              ${disabledReason ? `<div class="trade-disabled">${disabledReason}</div>` : ""}
             </div>
-            <div class="trade-position-col">
-              <div class="trade-position-value">${positionFullLabel(player.position)}</div>
-            </div>
-            <div class="trade-start-col">
-              <div class="trade-start-value">${startPct(player.start_probability_pct)}</div>
-              <div class="trade-start-label">Start</div>
-            </div>
-            <div class="trade-score-col">
-              <div class="trade-score-value">${Number(player.display_score || 0)}</div>
-              <div class="trade-score-label">Score</div>
-            </div>
-            <div>
-              <div class="trade-price">${formatMoney(player.price_estimate)}</div>
-              <div class="trade-subprice">Pris</div>
+
+            <div class="trade-metrics">
+              <div class="trade-metric">
+                <div class="trade-metric-value">${startPct(player.start_probability_pct)}</div>
+                <div class="trade-metric-label">Start</div>
+              </div>
+              <div class="trade-metric">
+                <div class="trade-metric-value">${Number(player.display_score || 0)}</div>
+                <div class="trade-metric-label">Score</div>
+              </div>
+              <div class="trade-metric value-wide">
+                <div class="trade-metric-value">${formatMoney(player.price_estimate)}</div>
+                <div class="trade-metric-label">Pris</div>
+              </div>
             </div>
           </div>
         `;
@@ -2407,9 +2708,17 @@
         .sort((a, b) => a.kickoffDate - b.kickoffDate);
     }
 
+    async function loadMatchOddsProbs() {
+      const response = await fetch(MATCH_ODDS_PROBS_URL);
+      if (!response.ok) throw new Error(`Kunne ikke hente match odds probs: ${response.status}`);
+
+      const text = await response.text();
+      matchOddsRows = parseCsv(text);
+    }
+
     async function loadStartSecurityMap() {
       const response = await fetch(START_SECURITY_URL);
-      if (!response.ok) throw new Error(`Kunde ikke hente start-sandsynlighed: ${response.status}`);
+      if (!response.ok) throw new Error(`Kunne ikke hente start-sandsynlighed: ${response.status}`);
 
       const text = await response.text();
       const rows = parseCsv(text);
@@ -2431,12 +2740,36 @@
 
     async function loadOptimalSquads() {
       const response = await fetch(OPTIMAL_SQUADS_URL);
-      if (!response.ok) throw new Error(`Kunde ikke hente optimizer-data: ${response.status}`);
+      if (!response.ok) throw new Error(`Kunne ikke hente optimizer-data: ${response.status}`);
 
-      const rows = await response.json();
-      if (!Array.isArray(rows)) throw new Error("Optimizer-filen indeholder ikke en gyldig liste.");
+      const raw = await response.json();
 
-      optimalSquads = rows;
+      if (Array.isArray(raw)) {
+        optimalSquads = raw;
+        return;
+      }
+
+      if (raw && typeof raw === "object") {
+        const flattened = [];
+
+        Object.entries(raw).forEach(([formationKey, value]) => {
+          if (Array.isArray(value)) {
+            value.forEach(row => {
+              flattened.push({
+                ...row,
+                selected_formation: row.selected_formation || row.formation || formationKey
+              });
+            });
+          }
+        });
+
+        if (flattened.length) {
+          optimalSquads = flattened;
+          return;
+        }
+      }
+
+      throw new Error("Optimizer-filen indeholder ikke en gyldig liste.");
     }
 
     function attachStartSecurity(players, startMap) {
@@ -2671,19 +3004,18 @@
 
     async function init() {
       try {
-        const playersResponsePromise = fetch(DATA_URL);
-        const startMapPromise = loadStartSecurityMap();
-        const fixturesPromise = loadFixtures();
-        const optimalSquadsPromise = loadOptimalSquads();
-
-        const [playersResponse, startMap] = await Promise.all([
-          playersResponsePromise,
-          startMapPromise,
-          fixturesPromise,
-          optimalSquadsPromise
+        const [
+          playersResponse,
+          startMap
+        ] = await Promise.all([
+          fetch(DATA_URL),
+          loadStartSecurityMap(),
+          loadFixtures(),
+          loadOptimalSquads(),
+          loadMatchOddsProbs()
         ]);
 
-        if (!playersResponse.ok) throw new Error(`Kunde ikke hente datafil: ${playersResponse.status}`);
+        if (!playersResponse.ok) throw new Error(`Kunne ikke hente datafil: ${playersResponse.status}`);
 
         const rawPlayers = await playersResponse.json();
         if (!Array.isArray(rawPlayers)) throw new Error("Datafilen indeholder ikke en gyldig spillerliste.");
@@ -2705,9 +3037,20 @@
           renderTradeList();
         }, 60000);
       } catch (error) {
-        console.error(error);
-        showStatus("Kunne ikke indlæse spillerdata, startsandsynlighed, optimizer-data eller kampplan. Tjek at data/player_pool_v1.json, data/player_start_security_nt.csv, data/fixtures_group.csv samt data/optimal_squads_by_formation.json findes.", "error");
-        tradeList.innerHTML = `<div style="padding:14px;color:#cbd5e1;">Ingen data indlæst.</div>`;
+        console.error("INIT ERROR:", error);
+
+        const errorMessage =
+          error && error.message
+            ? error.message
+            : String(error);
+
+        showStatus(`Indlæsning fejlede: ${errorMessage}`, "error");
+        tradeList.innerHTML = `
+          <div style="padding:14px;color:#cbd5e1;">
+            Ingen data indlæst.<br><br>
+            <strong>Fejl:</strong> ${errorMessage}
+          </div>
+        `;
       }
     }
 
