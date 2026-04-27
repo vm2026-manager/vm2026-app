@@ -2381,108 +2381,143 @@
         return;
       }
 
-      const usedIds = new Set(Object.values(squad).filter(Boolean).map(String));
-      const teamCounts = getCurrentTeamCounts();
-      let remainingBank = BUDGET_TOTAL - getSpentBudget();
+      const baseUsedIds = new Set(Object.values(squad).filter(Boolean).map(String));
+      const baseTeamCounts = getCurrentTeamCounts();
+      const baseBankLeft = BUDGET_TOTAL - getSpentBudget();
+      const startedAt = performance.now();
+      const MAX_SEARCH_MS = 1800;
 
-      const positionRank = {
-        "Angriber": 1,
-        "Midtbane": 2,
-        "Forsvar": 3,
-        "Målmand": 4
-      };
-
-      const orderedSlots = [...emptySlots].sort((a, b) => {
-        return (positionRank[a.position] || 9) - (positionRank[b.position] || 9);
-      });
-
-      const additions = {};
-
-      for (let i = 0; i < orderedSlots.length; i++) {
-        const slot = orderedSlots[i];
-        const remainingSlotsAfterThis = orderedSlots.slice(i + 1);
-
-        let candidates = getEligiblePlayersForSlot(slot, usedIds, teamCounts, remainingBank);
-        candidates = candidates.slice(0, 80);
-
-        let chosen = null;
-
-        for (const player of candidates) {
-          const price = getPlayerPrice(player);
-          const playerIdStr = String(player.player_id);
-          const teamName = player.team_name || "";
-
-          const testUsedIds = new Set(usedIds);
-          const testTeamCounts = { ...teamCounts };
-
-          testUsedIds.add(playerIdStr);
-          testTeamCounts[teamName] = (testTeamCounts[teamName] || 0) + 1;
-
-          const minimumRestCost = getCheapestRemainingCostForSlots(
-            remainingSlotsAfterThis,
-            testUsedIds,
-            testTeamCounts
-          );
-
-          if (price + minimumRestCost <= remainingBank) {
-            chosen = player;
-            break;
-          }
-        }
-
-        if (!chosen) {
-          const cheapestCandidates = [...candidates].sort((a, b) => getPlayerPrice(a) - getPlayerPrice(b));
-
-          for (const player of cheapestCandidates) {
-            const price = getPlayerPrice(player);
-            const playerIdStr = String(player.player_id);
-            const teamName = player.team_name || "";
-
-            const testUsedIds = new Set(usedIds);
-            const testTeamCounts = { ...teamCounts };
-
-            testUsedIds.add(playerIdStr);
-            testTeamCounts[teamName] = (testTeamCounts[teamName] || 0) + 1;
-
-            const minimumRestCost = getCheapestRemainingCostForSlots(
-              remainingSlotsAfterThis,
-              testUsedIds,
-              testTeamCounts
-            );
-
-            if (price + minimumRestCost <= remainingBank) {
-              chosen = player;
-              break;
-            }
-          }
-        }
-
-        if (!chosen) continue;
-
-        additions[slot.key] = chosen.player_id;
-        usedIds.add(String(chosen.player_id));
-        teamCounts[chosen.team_name] = (teamCounts[chosen.team_name] || 0) + 1;
-        remainingBank -= getPlayerPrice(chosen);
+      function cloneCounts(counts) {
+        return { ...counts };
       }
 
-      const addedCount = Object.keys(additions).length;
+      function getCandidatePool(slot, usedIds, teamCounts, bankLeft, mode = "price") {
+        const baseCandidates = allPlayers
+          .filter(player => player.position === slot.position)
+          .filter(player => !usedIds.has(String(player.player_id)))
+          .filter(player => (teamCounts[player.team_name] || 0) < MAX_PER_TEAM)
+          .filter(player => getPlayerPrice(player) <= bankLeft);
 
-      if (!addedCount) {
+        const byPrice = [...baseCandidates]
+          .sort((a, b) => getPlayerPrice(a) - getPlayerPrice(b))
+          .slice(0, 180);
+
+        const byScore = [...baseCandidates]
+          .sort((a, b) => {
+            const scoreDiff = getPlayerScore(b) - getPlayerScore(a);
+            if (scoreDiff !== 0) return scoreDiff;
+
+            const startDiff = getPlayerStart(b) - getPlayerStart(a);
+            if (startDiff !== 0) return startDiff;
+
+            return getPlayerPrice(a) - getPlayerPrice(b);
+          })
+          .slice(0, 50);
+
+        const merged = new Map();
+        byPrice.forEach(player => merged.set(String(player.player_id), player));
+        byScore.forEach(player => merged.set(String(player.player_id), player));
+
+        const candidates = [...merged.values()];
+
+        if (mode === "score") {
+          return candidates.sort((a, b) => {
+            const scoreDiff = getPlayerScore(b) - getPlayerScore(a);
+            if (scoreDiff !== 0) return scoreDiff;
+
+            const startDiff = getPlayerStart(b) - getPlayerStart(a);
+            if (startDiff !== 0) return startDiff;
+
+            return getPlayerPrice(a) - getPlayerPrice(b);
+          });
+        }
+
+        return candidates.sort((a, b) => {
+          const priceDiff = getPlayerPrice(a) - getPlayerPrice(b);
+          if (priceDiff !== 0) return priceDiff;
+          return getPlayerScore(b) - getPlayerScore(a);
+        });
+      }
+
+      function chooseMostConstrainedSlot(slots, usedIds, teamCounts, bankLeft, mode) {
+        let best = null;
+
+        for (const slot of slots) {
+          const candidates = getCandidatePool(slot, usedIds, teamCounts, bankLeft, mode);
+          const item = { slot, candidates };
+
+          if (!best || item.candidates.length < best.candidates.length) {
+            best = item;
+          }
+        }
+
+        return best;
+      }
+
+      function solveAllMissing(slotsLeft, usedIds, teamCounts, bankLeft, additions, mode = "price") {
+        if (performance.now() - startedAt > MAX_SEARCH_MS) return null;
+
+        if (!slotsLeft.length) {
+          return { ...additions };
+        }
+
+        const chosenSlotData = chooseMostConstrainedSlot(slotsLeft, usedIds, teamCounts, bankLeft, mode);
+        if (!chosenSlotData || !chosenSlotData.candidates.length) return null;
+
+        const slot = chosenSlotData.slot;
+        const restSlots = slotsLeft.filter(item => item.key !== slot.key);
+
+        for (const player of chosenSlotData.candidates) {
+          const playerIdStr = String(player.player_id);
+          const teamName = player.team_name || "";
+          const price = getPlayerPrice(player);
+
+          if (price > bankLeft) continue;
+          if (usedIds.has(playerIdStr)) continue;
+          if ((teamCounts[teamName] || 0) >= MAX_PER_TEAM) continue;
+
+          const nextUsedIds = new Set(usedIds);
+          const nextTeamCounts = cloneCounts(teamCounts);
+          const nextAdditions = { ...additions };
+
+          nextUsedIds.add(playerIdStr);
+          nextTeamCounts[teamName] = (nextTeamCounts[teamName] || 0) + 1;
+          nextAdditions[slot.key] = player.player_id;
+
+          const nextBankLeft = bankLeft - price;
+          const minimumRestCost = getCheapestRemainingCostForSlots(restSlots, nextUsedIds, nextTeamCounts);
+
+          if (minimumRestCost > nextBankLeft) continue;
+
+          const solution = solveAllMissing(restSlots, nextUsedIds, nextTeamCounts, nextBankLeft, nextAdditions, mode);
+          if (solution) return solution;
+        }
+
+        return null;
+      }
+
+      let solution = solveAllMissing(emptySlots, baseUsedIds, baseTeamCounts, baseBankLeft, {}, "price");
+
+      if (!solution) {
+        solution = solveAllMissing(emptySlots, baseUsedIds, baseTeamCounts, baseBankLeft, {}, "score");
+      }
+
+      if (!solution) {
         const blockingReasons = getBlockingReasonSummaryForSlots(
           emptySlots,
-          new Set(Object.values(squad).filter(Boolean).map(String)),
-          getCurrentTeamCounts(),
-          BUDGET_TOTAL - getSpentBudget()
+          baseUsedIds,
+          baseTeamCounts,
+          baseBankLeft
         );
 
         showStatus(
-          `Kunne ikke udfylde de tomme pladser under de nuværende constraints. ${blockingReasons.join(" · ")}`,
+          `Kunne ikke udfylde alle ${emptySlots.length} tomme pladser under de nuværende constraints. ${blockingReasons.join(" · ")}`,
           "error"
         );
         return;
       }
 
-      const candidateSquad = { ...squad, ...additions };
+      const candidateSquad = { ...squad, ...solution };
       const issues = getSquadConstraintIssues(candidateSquad);
 
       if (issues.length) {
@@ -2497,15 +2532,7 @@
       saveState();
       render();
       scheduleAutosave();
-
-      if (addedCount === emptySlots.length) {
-        showStatus(`Udfyldte ${addedCount} tomme pladser med hurtig gyldig logik.`, "info");
-      } else {
-        showStatus(
-          `Udfyldte ${addedCount} af ${emptySlots.length} tomme pladser. De resterende pladser kunne ikke udfyldes uden at bryde budget, positioner eller maks. ${MAX_PER_TEAM} fra samme land.`,
-          "info"
-        );
-      }
+      showStatus(`Udfyldte alle ${emptySlots.length} tomme pladser med gyldig budget- og positionssøgning.`, "info");
     }
 
     function renderBudget() {
