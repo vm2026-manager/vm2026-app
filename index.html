@@ -2679,4 +2679,372 @@
 
     async function loadFixtures() {
       const response = await fetch(FIXTURES_URL);
-      if (!response.ok) throw new Error(`Kunne ikke h
+      if (!response.ok) throw new Error(`Kunne ikke hente fixtures: ${response.status}`);
+
+      const text = await response.text();
+      const rows = parseCsv(text);
+
+      fixtures = rows
+        .map(row => ({
+          match_id: row.match_id,
+          stage: row.stage,
+          group: row.group,
+          home: row.home,
+          away: row.away,
+          kickoff_dk: row.kickoff_dk,
+          kickoffDate: kickoffToDate(row.kickoff_dk)
+        }))
+        .filter(row => row.kickoffDate instanceof Date && !Number.isNaN(row.kickoffDate.getTime()))
+        .sort((a, b) => a.kickoffDate - b.kickoffDate);
+    }
+
+    async function loadMatchOddsProbs() {
+      const response = await fetch(MATCH_ODDS_PROBS_URL);
+      if (!response.ok) throw new Error(`Kunne ikke hente match odds probs: ${response.status}`);
+
+      const text = await response.text();
+      matchOddsRows = parseCsv(text);
+    }
+
+    async function loadStartSecurityMap() {
+      const response = await fetch(START_SECURITY_URL);
+      if (!response.ok) throw new Error(`Kunne ikke hente start-sandsynlighed: ${response.status}`);
+
+      const text = await response.text();
+      const rows = parseCsv(text);
+      const map = new Map();
+
+      rows.forEach(row => {
+        const playerName = row.player_name || "";
+        const teamId = row.team_id || "";
+        const mergeKey = buildMergeKey(playerName, teamId);
+        map.set(mergeKey, {
+          start_probability_pct: Number(row.start_probability_pct || 0),
+          start_security: Number(row.start_security || 0),
+          start_status: row.start_status || ""
+        });
+      });
+
+      return map;
+    }
+
+    async function loadOptimalSquads() {
+      const response = await fetch(OPTIMAL_SQUADS_URL);
+      if (!response.ok) throw new Error(`Kunne ikke hente optimizer-data: ${response.status}`);
+
+      const raw = await response.json();
+
+      if (Array.isArray(raw)) {
+        optimalSquads = raw;
+        return;
+      }
+
+      if (raw && typeof raw === "object") {
+        const flattened = [];
+
+        Object.entries(raw).forEach(([formationKey, value]) => {
+          if (Array.isArray(value)) {
+            value.forEach(row => {
+              flattened.push({
+                ...row,
+                selected_formation: row.selected_formation || row.formation || formationKey
+              });
+            });
+          }
+        });
+
+        if (flattened.length) {
+          optimalSquads = flattened;
+          return;
+        }
+      }
+
+      throw new Error("Optimizer-filen indeholder ikke en gyldig liste.");
+    }
+
+    function attachStartSecurity(players, startMap) {
+      return players.map(player => {
+        const mergeKey = buildMergeKey(player.player_name, player.team_id, player.team_name);
+        const startData = startMap.get(mergeKey);
+
+        return {
+          ...player,
+          start_probability_pct: startData ? startData.start_probability_pct : 0,
+          start_security: startData ? startData.start_security : 0,
+          start_status: startData ? startData.start_status : ""
+        };
+      });
+    }
+
+    function setAuthUi() {
+      if (currentUser) {
+        topbarUser.style.display = "inline-block";
+        topbarUser.textContent = currentUser.email || "Logget ind";
+        openLoginBtn.style.display = "none";
+        openSignupBtn.style.display = "none";
+        logoutBtn.style.display = "inline-block";
+      } else {
+        topbarUser.style.display = "none";
+        topbarUser.textContent = "";
+        openLoginBtn.style.display = "inline-block";
+        openSignupBtn.style.display = "inline-block";
+        logoutBtn.style.display = "none";
+      }
+    }
+
+    async function upsertAutosaveSquad() {
+      if (!currentUser || isApplyingRemoteSquad) return;
+
+      const payload = {
+        user_id: currentUser.id,
+        squad_name: "Autosave",
+        formation: currentFormation,
+        squad_json: squad
+      };
+
+      const { error } = await supabaseClient
+        .from("saved_squads")
+        .upsert(payload, { onConflict: "user_id,squad_name" });
+
+      if (error) {
+        showStatus(`Automatisk gemning fejlede: ${error.message}`, "error");
+      }
+    }
+
+    function scheduleAutosave() {
+      if (!currentUser || isApplyingRemoteSquad) return;
+
+      if (autosaveTimer) clearTimeout(autosaveTimer);
+
+      autosaveTimer = setTimeout(async () => {
+        autosaveTimer = null;
+        await upsertAutosaveSquad();
+      }, AUTOSAVE_DEBOUNCE_MS);
+    }
+
+    async function loadAutosaveSquadForUser() {
+      if (!currentUser) return;
+
+      const { data, error } = await supabaseClient
+        .from("saved_squads")
+        .select("id, squad_name, formation, squad_json, updated_at")
+        .eq("squad_name", "Autosave")
+        .maybeSingle();
+
+      if (error) {
+        showStatus(`Kunne ikke hente gemt hold: ${error.message}`, "error");
+        return;
+      }
+
+      if (!data) {
+        await upsertAutosaveSquad();
+        return;
+      }
+
+      isApplyingRemoteSquad = true;
+      currentFormation = data.formation || "4-4-2";
+      formationSelect.value = currentFormation;
+      squad = typeof data.squad_json === "object" && data.squad_json ? data.squad_json : {};
+      activeSlotKey = null;
+      activeSlotText.textContent = "Ingen valgt";
+      saveState();
+      render();
+      isApplyingRemoteSquad = false;
+    }
+
+    async function handleLogin() {
+      const email = authEmailInput.value.trim();
+      const password = authPasswordInput.value;
+
+      if (!email || !password) {
+        showAuthModalStatus("Udfyld både email og kodeord.", "error");
+        return;
+      }
+
+      const { error } = await supabaseClient.auth.signInWithPassword({ email, password });
+
+      if (error) {
+        showAuthModalStatus(`Login fejlede: ${error.message}`, "error");
+        return;
+      }
+
+      authPasswordInput.value = "";
+      closeAuthModal();
+      clearStatus();
+      showStatus("Du er logget ind.", "info");
+    }
+
+    async function handleSignup() {
+      const email = authEmailInput.value.trim();
+      const password = authPasswordInput.value;
+
+      if (!email || !password) {
+        showAuthModalStatus("Udfyld både email og kodeord.", "error");
+        return;
+      }
+
+      const { data, error } = await supabaseClient.auth.signUp({ email, password });
+
+      if (error) {
+        showAuthModalStatus(`Oprettelse fejlede: ${error.message}`, "error");
+        return;
+      }
+
+      authPasswordInput.value = "";
+
+      if (data?.session) {
+        closeAuthModal();
+        clearStatus();
+        showStatus("Bruger oprettet og logget ind.", "info");
+      } else {
+        showAuthModalStatus("Bruger oprettet. Log ind bagefter, hvis du ikke blev logget ind automatisk.", "info");
+      }
+    }
+
+    async function handleLogout() {
+      const { error } = await supabaseClient.auth.signOut();
+      if (error) {
+        showStatus(`Logout fejlede: ${error.message}`, "error");
+        return;
+      }
+      showStatus("Du er logget ud.", "info");
+    }
+
+    function setupEvents() {
+      formationSelect.value = currentFormation;
+      eligibleOnlyToggle.checked = eligibleOnly;
+
+      formationSelect.addEventListener("change", () => {
+        currentFormation = formationSelect.value;
+        activeSlotKey = null;
+        activeSlotText.textContent = "Ingen valgt";
+        cleanSquadForCurrentFormation();
+        saveState();
+        render();
+        scheduleAutosave();
+      });
+
+      optimizeBtn.addEventListener("click", applyOptimalSquadForCurrentFormation);
+      fillMissingBtn.addEventListener("click", fillMissingSlotsOptimally);
+      undoBtn.addEventListener("click", undoLastAction);
+      clearTeamBtn.addEventListener("click", clearSquad);
+
+      [searchInput, teamFilter, positionFilter, sortSelect].forEach(el => {
+        el.addEventListener("input", renderTradeList);
+        el.addEventListener("change", renderTradeList);
+      });
+
+      searchInput.addEventListener("focus", sanitizeSearchField);
+      searchInput.addEventListener("click", sanitizeSearchField);
+
+      eligibleOnlyToggle.addEventListener("change", () => {
+        eligibleOnly = eligibleOnlyToggle.checked;
+        saveState();
+        renderTradeList();
+      });
+
+      openLoginBtn.addEventListener("click", () => openAuthModal("login"));
+      openSignupBtn.addEventListener("click", () => openAuthModal("signup"));
+      logoutBtn.addEventListener("click", handleLogout);
+
+      authPrimaryBtn.addEventListener("click", async () => {
+        if (authMode === "signup") await handleSignup();
+        else await handleLogin();
+      });
+
+      authCancelBtn.addEventListener("click", closeAuthModal);
+
+      authModal.addEventListener("click", (event) => {
+        if (event.target === authModal) closeAuthModal();
+      });
+
+      authPasswordInput.addEventListener("keydown", async (event) => {
+        if (event.key === "Enter") {
+          if (authMode === "signup") await handleSignup();
+          else await handleLogin();
+        }
+      });
+    }
+
+    async function initAuth() {
+      const { data } = await supabaseClient.auth.getSession();
+      currentUser = data?.session?.user || null;
+      setAuthUi();
+
+      if (currentUser) {
+        await loadAutosaveSquadForUser();
+      }
+
+      sanitizeSearchField();
+
+      supabaseClient.auth.onAuthStateChange(async (_event, session) => {
+        const previousUserId = currentUser?.id || null;
+        const nextUser = session?.user || null;
+        currentUser = nextUser;
+        setAuthUi();
+
+        sanitizeSearchField();
+
+        if (currentUser && currentUser.id !== previousUserId) {
+          await loadAutosaveSquadForUser();
+          showStatus("Dit gemte hold er indlæst.", "info");
+        }
+      });
+    }
+
+    async function init() {
+      try {
+        const [
+          playersResponse,
+          startMap
+        ] = await Promise.all([
+          fetch(DATA_URL),
+          loadStartSecurityMap(),
+          loadFixtures(),
+          loadOptimalSquads(),
+          loadMatchOddsProbs()
+        ]);
+
+        if (!playersResponse.ok) throw new Error(`Kunne ikke hente datafil: ${playersResponse.status}`);
+
+        const rawPlayers = await playersResponse.json();
+        if (!Array.isArray(rawPlayers)) throw new Error("Datafilen indeholder ikke en gyldig spillerliste.");
+
+        allPlayers = attachStartSecurity(rawPlayers, startMap);
+
+        cleanSquadForCurrentFormation();
+        buildTeamFilter();
+        setupEvents();
+        await initAuth();
+
+        searchInput.value = "";
+        sanitizeSearchField();
+
+        render();
+
+        setInterval(() => {
+          sanitizeSearchField();
+          renderTradeList();
+        }, 60000);
+      } catch (error) {
+        console.error("INIT ERROR:", error);
+
+        const errorMessage =
+          error && error.message
+            ? error.message
+            : String(error);
+
+        showStatus(`Indlæsning fejlede: ${errorMessage}`, "error");
+        tradeList.innerHTML = `
+          <div style="padding:14px;color:#cbd5e1;">
+            Ingen data indlæst.<br><br>
+            <strong>Fejl:</strong> ${errorMessage}
+          </div>
+        `;
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>
