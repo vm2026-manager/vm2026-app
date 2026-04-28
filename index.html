@@ -2377,7 +2377,7 @@
       }
 
       if (emptySlots.length === getCurrentSlots().length) {
-        applyFastFullSquadFallback("Tomt hold blev udfyldt med hurtig gyldig fallback-logik.");
+        applyOptimalSquadForCurrentFormation();
         return;
       }
 
