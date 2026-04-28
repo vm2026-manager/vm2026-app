@@ -1478,6 +1478,11 @@
     function findPlayerByOptimizerRow(row) {
       if (!row) return null;
 
+      if (row.player_id !== undefined && row.player_id !== null && row.player_id !== "") {
+        const byId = allPlayers.find(player => String(player.player_id) === String(row.player_id));
+        if (byId) return byId;
+      }
+
       const wantedName = normalizeName(row.player_name);
       const wantedTeamId = normalizeTeamId(row.team_id);
       const wantedPosition = normalizePositionLabel(row.position);
@@ -2091,6 +2096,136 @@
       return localSquad;
     }
 
+    function buildBestFullSquadSearch() {
+      const slots = getCurrentSlots();
+      const startedAt = performance.now();
+      const MAX_SEARCH_MS = 2200;
+      let bestSquad = null;
+      let bestScore = -Infinity;
+
+      function getCandidates(slot, usedIds, teamCounts, bankLeft) {
+        const baseCandidates = allPlayers
+          .filter(player => player.position === slot.position)
+          .filter(player => !usedIds.has(String(player.player_id)))
+          .filter(player => (teamCounts[player.team_name] || 0) < MAX_PER_TEAM)
+          .filter(player => getPlayerPrice(player) <= bankLeft);
+
+        const byScore = [...baseCandidates]
+          .sort((a, b) => {
+            const scoreDiff = getPlayerScore(b) - getPlayerScore(a);
+            if (scoreDiff !== 0) return scoreDiff;
+            const startDiff = getPlayerStart(b) - getPlayerStart(a);
+            if (startDiff !== 0) return startDiff;
+            return getPlayerPrice(a) - getPlayerPrice(b);
+          })
+          .slice(0, 35);
+
+        const byValue = [...baseCandidates]
+          .sort((a, b) => {
+            const valueA = getPlayerScore(a) / Math.max(1, getPlayerPrice(a));
+            const valueB = getPlayerScore(b) / Math.max(1, getPlayerPrice(b));
+            if (valueB !== valueA) return valueB - valueA;
+            return getPlayerPrice(a) - getPlayerPrice(b);
+          })
+          .slice(0, 35);
+
+        const byPrice = [...baseCandidates]
+          .sort((a, b) => getPlayerPrice(a) - getPlayerPrice(b))
+          .slice(0, 120);
+
+        const merged = new Map();
+        byScore.forEach(player => merged.set(String(player.player_id), player));
+        byValue.forEach(player => merged.set(String(player.player_id), player));
+        byPrice.forEach(player => merged.set(String(player.player_id), player));
+
+        return [...merged.values()].sort((a, b) => {
+          const scoreDiff = getPlayerScore(b) - getPlayerScore(a);
+          if (scoreDiff !== 0) return scoreDiff;
+          return getPlayerPrice(a) - getPlayerPrice(b);
+        });
+      }
+
+      function chooseMostConstrainedSlot(slotsLeft, usedIds, teamCounts, bankLeft) {
+        let best = null;
+        for (const slot of slotsLeft) {
+          const candidates = getCandidates(slot, usedIds, teamCounts, bankLeft);
+          const item = { slot, candidates };
+          if (!best || item.candidates.length < best.candidates.length) best = item;
+        }
+        return best;
+      }
+
+      function dfs(slotsLeft, usedIds, teamCounts, bankLeft, localSquad, totalScore) {
+        if (performance.now() - startedAt > MAX_SEARCH_MS) return;
+
+        if (!slotsLeft.length) {
+          if (totalScore > bestScore) {
+            bestScore = totalScore;
+            bestSquad = { ...localSquad };
+          }
+          return;
+        }
+
+        const chosenSlotData = chooseMostConstrainedSlot(slotsLeft, usedIds, teamCounts, bankLeft);
+        if (!chosenSlotData || !chosenSlotData.candidates.length) return;
+
+        const slot = chosenSlotData.slot;
+        const restSlots = slotsLeft.filter(item => item.key !== slot.key);
+
+        for (const player of chosenSlotData.candidates) {
+          const price = getPlayerPrice(player);
+          const playerIdStr = String(player.player_id);
+          const teamName = player.team_name || "";
+
+          if (price > bankLeft) continue;
+          if (usedIds.has(playerIdStr)) continue;
+          if ((teamCounts[teamName] || 0) >= MAX_PER_TEAM) continue;
+
+          const nextUsedIds = new Set(usedIds);
+          const nextTeamCounts = { ...teamCounts };
+          const nextSquad = { ...localSquad };
+
+          nextUsedIds.add(playerIdStr);
+          nextTeamCounts[teamName] = (nextTeamCounts[teamName] || 0) + 1;
+          nextSquad[slot.key] = player.player_id;
+
+          const nextBankLeft = bankLeft - price;
+          const minimumRestCost = getCheapestRemainingCostForSlots(restSlots, nextUsedIds, nextTeamCounts);
+          if (minimumRestCost > nextBankLeft) continue;
+
+          dfs(restSlots, nextUsedIds, nextTeamCounts, nextBankLeft, nextSquad, totalScore + getPlayerScore(player));
+        }
+      }
+
+      dfs(slots, new Set(), {}, BUDGET_TOTAL, {}, 0);
+      return bestSquad || buildFullSquadGreedyFast();
+    }
+
+    function applyBestFullSquadFromPlayerPool(message = "Valgte bedste gyldige hold fra appens spillerpulje.") {
+      const bestSquad = buildBestFullSquadSearch();
+
+      if (!bestSquad) {
+        showStatus("Kunne ikke bygge et gyldigt hold fra appens spillerpulje.", "error");
+        return false;
+      }
+
+      const issues = getSquadConstraintIssues(bestSquad);
+      if (issues.length) {
+        showStatus(`Det bedste fundne hold blev ugyldigt: ${issues.join(" · ")}`, "error");
+        return false;
+      }
+
+      pushHistory();
+      squad = bestSquad;
+      activeSlotKey = null;
+      activeSlotText.textContent = "Ingen valgt";
+      saveState();
+      render();
+      scheduleAutosave();
+      showStatus(message, "info");
+      return true;
+    }
+
     function applyFastFullSquadFallback(reasonText = "") {
       const fallbackSquad = buildFullSquadGreedyFast();
 
@@ -2124,7 +2259,7 @@
 
     function applyOptimalSquadForCurrentFormation() {
       if (!optimalSquads.length) {
-        applyFastFullSquadFallback("Optimizer-data manglede.");
+        applyBestFullSquadFromPlayerPool("Optimizer-data manglede, så appen valgte bedste gyldige hold fra spillerpuljen.");
         return;
       }
 
@@ -2133,7 +2268,7 @@
       );
 
       if (!rows.length) {
-        applyFastFullSquadFallback(`Ingen optimizer-trup fundet for formation ${currentFormation}.`);
+        applyBestFullSquadFromPlayerPool(`Ingen optimizer-trup fundet for formation ${currentFormation}, så appen valgte bedste gyldige hold fra spillerpuljen.`);
         return;
       }
 
@@ -2154,6 +2289,7 @@
 
       const newSquad = {};
       const missingPlayers = [];
+      const positionMismatchPlayers = [];
 
       ["GK", "DEF", "MID", "FWD"].forEach(positionCode => {
         const targetRows = byPosition[positionCode];
@@ -2169,19 +2305,20 @@
             return;
           }
 
+          if (appPlayer.position !== slot.position) {
+            positionMismatchPlayers.push(`${appPlayer.player_name} (${appPlayer.position} i app-data)`);
+            return;
+          }
+
           newSquad[slot.key] = appPlayer.player_id;
         });
       });
 
       const issues = getSquadConstraintIssues(newSquad);
+      const isComplete = getPlayerCount(newSquad) === getCurrentSlots().length;
 
-      if (issues.length || missingPlayers.length) {
-        const reasonParts = [];
-        if (issues.length) reasonParts.push(issues.join(" · "));
-        if (missingPlayers.length) {
-          reasonParts.push(`manglende spillere i app-data: ${missingPlayers.slice(0, 4).join(", ")}${missingPlayers.length > 4 ? " ..." : ""}`);
-        }
-        applyFastFullSquadFallback(reasonParts.join(" · "));
+      if (issues.length || missingPlayers.length || positionMismatchPlayers.length || !isComplete) {
+        applyBestFullSquadFromPlayerPool("Optimizer-holdet matchede ikke appens nuværende budget/positioner, så appen valgte i stedet bedste gyldige hold fra spillerpuljen.");
         return;
       }
 
@@ -2191,7 +2328,7 @@
       activeSlotText.textContent = "Ingen valgt";
       saveState();
       render();
-      clearStatus();
+      showStatus("Valgte optimalt hold fra optimizer-filen.", "info");
       scheduleAutosave();
     }
 
