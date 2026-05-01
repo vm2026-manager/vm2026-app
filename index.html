@@ -104,62 +104,171 @@
     @media (max-width: 700px) { .topbar { padding: 10px 12px; gap: 8px; } .topbar-left, .topbar-right, .topbar-auth { width: 100%; } .topbar-right { justify-content: space-between; } .topbar-user { max-width: 170px; } .page-wrap { padding: 0; height: auto; } .left-panel, .right-panel { border-radius: 0; } .right-panel { border-left: none; border-top: 1px solid rgba(255,255,255,0.08); } .bank-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; } .bank-box:last-child { grid-column: 1 / -1; } .pitch { min-height: 560px; } .pitch-circle { width: 86px; height: 86px; margin-left: -43px; margin-top: -43px; } .pitch-penalty-top, .pitch-penalty-bottom { width: 142px; margin-left: -71px; height: 80px; } .pitch-goal-top, .pitch-goal-bottom { width: 56px; margin-left: -28px; height: 28px; } .slot { width: 84px; } .player-figure { width: 36px; height: 36px; margin-bottom: 4px; } .flag-img { width: 18px; height: 13px; } .player-name { max-width: 82px; font-size: 9px; padding: 3px 5px; } .player-price, .player-next, .player-start { max-width: 82px; font-size: 8px; } .slot-btn { font-size: 10px; padding: 4px 6px; } .trade-row { grid-template-columns: auto 1fr; align-items: start; } .trade-metrics { grid-column: 1 / -1; width: 100%; justify-content: space-between; padding-left: 44px; gap: 8px; } .trade-metric { text-align: left; min-width: 0; flex: 1 1 0; } .trade-metric.value-wide { min-width: 0; } .plus-btn { width: 36px; height: 36px; margin-top: 2px; } .credit-box { padding-bottom: calc(8px + env(safe-area-inset-bottom)); } }
     @media (max-width: 430px) { .action-bar { grid-template-columns: 1fr; } .bank-row { grid-template-columns: 1fr; } .pitch { min-height: 500px; } .slot { width: 72px; } .player-name, .player-price, .player-next, .player-start { max-width: 70px; } .topbar-user { max-width: 130px; } }
 
-    /* Mobilfix: banen får en fast minimumsbredde, så 5-mandskæder ikke mases sammen på telefon. */
+    /* Mobilfix v3: overbliksvisning som app på iPhone. */
     @media (max-width: 700px) {
       body {
         overflow-x: hidden;
       }
 
+      .topbar {
+        padding: 8px 12px;
+        gap: 6px;
+      }
+
+      .topbar-left {
+        display: none;
+      }
+
+      .topbar-right {
+        width: 100%;
+        gap: 8px;
+      }
+
+      .topbar-auth {
+        gap: 8px;
+      }
+
+      .topbar-user {
+        max-width: 165px;
+        font-size: 12px;
+        padding: 7px 10px;
+      }
+
+      .topbar-btn {
+        padding: 8px 12px;
+        font-size: 13px;
+      }
+
+      .page-wrap {
+        padding: 0;
+      }
+
       .left-panel {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
+        overflow-x: hidden;
+        padding: 8px 8px 10px;
+      }
+
+      .team-title {
+        display: none;
+      }
+
+      .bank-row,
+      .formation-bar,
+      .action-bar,
+      .status-box.info {
+        margin-bottom: 8px;
+      }
+
+      .bank-box {
+        padding: 6px 8px;
+        font-size: 11px;
+        min-width: 0;
+      }
+
+      .formation-select-wrap {
+        padding: 6px 8px;
+        font-size: 12px;
+      }
+
+      .action-btn {
+        min-height: 34px;
+        padding: 7px 8px;
+        font-size: 12px;
       }
 
       .pitch {
-        width: 760px;
-        min-width: 760px;
-        min-height: 720px;
+        width: 100%;
+        min-width: 0;
+        min-height: 500px;
+        border-width: 2px;
+        border-radius: 14px;
       }
 
       .slot {
-        width: 96px;
+        width: 58px;
+      }
+
+      .player-figure {
+        width: 28px;
+        height: 28px;
+        margin-bottom: 2px;
+        border-width: 2px;
+      }
+
+      .flag-img {
+        width: 16px;
+        height: 12px;
       }
 
       .player-name {
-        max-width: 92px;
-        font-size: 10px;
+        max-width: 58px;
+        font-size: 7px;
+        padding: 2px 3px;
+        border-radius: 6px;
       }
 
-      .player-price,
+      .player-price {
+        max-width: 58px;
+        font-size: 7px;
+        padding: 2px 3px;
+        border-radius: 6px;
+        margin-top: 2px;
+      }
+
       .player-next,
       .player-start {
-        max-width: 92px;
+        display: none;
+      }
+
+      .slot-btn.remove {
+        display: none;
       }
 
       .slot-btn {
-        font-size: 11px;
-        padding: 5px 8px;
+        font-size: 7px;
+        padding: 2px 5px;
+        border-radius: 7px;
+        margin-top: 2px;
+      }
+
+      .pitch-circle {
+        width: 62px;
+        height: 62px;
+        margin-left: -31px;
+        margin-top: -31px;
+      }
+
+      .pitch-penalty-top,
+      .pitch-penalty-bottom {
+        width: 118px;
+        margin-left: -59px;
+        height: 62px;
+      }
+
+      .pitch-goal-top,
+      .pitch-goal-bottom {
+        width: 48px;
+        margin-left: -24px;
+        height: 24px;
       }
     }
 
     @media (max-width: 430px) {
       .pitch {
-        width: 760px;
-        min-width: 760px;
-        min-height: 720px;
+        min-height: 470px;
       }
 
       .slot {
-        width: 96px;
+        width: 54px;
       }
 
       .player-name,
-      .player-price,
-      .player-next,
-      .player-start {
-        max-width: 92px;
+      .player-price {
+        max-width: 54px;
       }
     }
+
+
 
   </style>
 </head>
