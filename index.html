@@ -2162,27 +2162,20 @@
 
     function applyOptimalSquadForCurrentFormation() {
       if (!optimalSquads.length) {
-        applyBestFullSquadFromPlayerPool("Optimizer-data manglede, så appen valgte bedste gyldige hold fra spillerpuljen.");
+        showStatus("Optimizer-data er ikke indlæst. Tjek data/optimal_squads_by_formation.json.", "error");
         return;
       }
 
       const rows = optimalSquads.filter(row =>
-        (row.selected_formation || row.formation) === currentFormation
+        String(row.selected_formation || row.formation || "") === String(currentFormation)
       );
 
       if (!rows.length) {
-        applyBestFullSquadFromPlayerPool(`Ingen optimizer-trup fundet for formation ${currentFormation}, så appen valgte bedste gyldige hold fra spillerpuljen.`);
+        showStatus(`Ingen optimizer-trup fundet for formation ${currentFormation}.`, "error");
         return;
       }
 
       const slots = getCurrentSlots();
-      const byPosition = {
-        GK: rows.filter(row => normalizePositionLabel(row.position) === "GK"),
-        DEF: rows.filter(row => normalizePositionLabel(row.position) === "DEF"),
-        MID: rows.filter(row => normalizePositionLabel(row.position) === "MID"),
-        FWD: rows.filter(row => normalizePositionLabel(row.position) === "FWD")
-      };
-
       const slotGroups = {
         GK: slots.filter(slot => slot.positionCode === "GK"),
         DEF: slots.filter(slot => slot.positionCode === "DEF"),
@@ -2190,38 +2183,110 @@
         FWD: slots.filter(slot => slot.positionCode === "FWD")
       };
 
+      const rowsByPosition = {
+        GK: rows.filter(row => normalizePositionLabel(row.position) === "GK"),
+        DEF: rows.filter(row => normalizePositionLabel(row.position) === "DEF"),
+        MID: rows.filter(row => normalizePositionLabel(row.position) === "MID"),
+        FWD: rows.filter(row => normalizePositionLabel(row.position) === "FWD")
+      };
+
       const newSquad = {};
-      const missingPlayers = [];
-      const positionMismatchPlayers = [];
+      const debugIssues = [];
+      const debugMatched = [];
 
       ["GK", "DEF", "MID", "FWD"].forEach(positionCode => {
-        const targetRows = byPosition[positionCode];
-        const targetSlots = slotGroups[positionCode];
+        const targetSlots = slotGroups[positionCode] || [];
+        const targetRows = rowsByPosition[positionCode] || [];
 
-        targetRows.forEach((row, index) => {
-          const slot = targetSlots[index];
-          if (!slot) return;
+        if (targetRows.length < targetSlots.length) {
+          debugIssues.push(`${positionFullLabel(positionCode)}: optimizer har kun ${targetRows.length}, men formationen kræver ${targetSlots.length}`);
+        }
+
+        targetSlots.forEach((slot, index) => {
+          const row = targetRows[index];
+          if (!row) return;
 
           const appPlayer = findPlayerByOptimizerRow(row);
+
           if (!appPlayer) {
-            missingPlayers.push(`${row.player_name} (${row.team_id})`);
+            debugIssues.push(`Mangler i player_pool: ${row.player_name || "ukendt"} (${row.team_id || "ukendt"}, ${row.position || "ukendt"})`);
             return;
           }
 
-          if (appPlayer.position !== slot.position) {
-            positionMismatchPlayers.push(`${appPlayer.player_name} (${appPlayer.position} i app-data)`);
+          const appPositionCode = normalizePositionLabel(appPlayer.position);
+          if (appPositionCode !== positionCode) {
+            debugIssues.push(`Positionsmatch fejlede: ${appPlayer.player_name} er ${positionFullLabel(appPlayer.position)} i appen, men optimizer kræver ${positionFullLabel(positionCode)}`);
             return;
           }
 
           newSquad[slot.key] = appPlayer.player_id;
+          debugMatched.push(`${slot.key}: ${appPlayer.player_name}`);
         });
       });
 
-      const issues = getSquadConstraintIssues(newSquad);
-      const isComplete = getPlayerCount(newSquad) === getCurrentSlots().length;
+      const playerIds = Object.values(newSquad).filter(Boolean).map(String);
+      const uniqueIds = new Set(playerIds);
 
-      if (issues.length || missingPlayers.length || positionMismatchPlayers.length || !isComplete) {
-        applyBestFullSquadFromPlayerPool("Optimizer-holdet matchede ikke appens nuværende budget/positioner, så appen valgte i stedet bedste gyldige hold fra spillerpuljen.");
+      if (playerIds.length !== slots.length) {
+        debugIssues.push(`Kun ${playerIds.length}/${slots.length} pladser blev matchet fra optimizer-filen`);
+      }
+
+      if (uniqueIds.size !== playerIds.length) {
+        debugIssues.push("Optimizer-match gav dubletspiller");
+      }
+
+      const teamCounts = {};
+      let totalPrice = 0;
+
+      Object.entries(newSquad).forEach(([slotKey, playerId]) => {
+        const slot = slots.find(s => s.key === slotKey);
+        const player = getPlayerById(playerId);
+
+        if (!slot) {
+          debugIssues.push(`Ugyldig slot: ${slotKey}`);
+          return;
+        }
+
+        if (!player) {
+          debugIssues.push(`Ukendt player_id i nyt hold: ${playerId}`);
+          return;
+        }
+
+        const slotPositionCode = slot.positionCode;
+        const playerPositionCode = normalizePositionLabel(player.position);
+
+        if (slotPositionCode !== playerPositionCode) {
+          debugIssues.push(`Forkert position i ${slotKey}: ${player.player_name} er ${positionFullLabel(player.position)}, men slot kræver ${positionFullLabel(slotPositionCode)}`);
+        }
+
+        const teamName = player.team_name || player.team_id || "Ukendt land";
+        teamCounts[teamName] = (teamCounts[teamName] || 0) + 1;
+        totalPrice += getPlayerPrice(player);
+      });
+
+      Object.entries(teamCounts).forEach(([teamName, count]) => {
+        if (count > MAX_PER_TEAM) {
+          debugIssues.push(`For mange fra ${teamName}: ${count}/${MAX_PER_TEAM}`);
+        }
+      });
+
+      const budgetTolerance = 1000;
+      if (totalPrice > BUDGET_TOTAL + budgetTolerance) {
+        debugIssues.push(`Budget overskredet: ${formatMoney(totalPrice)} > ${formatMoney(BUDGET_TOTAL)}`);
+      }
+
+      if (debugIssues.length) {
+        const shownIssues = debugIssues.slice(0, 10).join("
+- ");
+        showStatus(
+          `Optimizer-holdet kunne ikke indlæses for ${currentFormation}.
+
+- ${shownIssues}${debugIssues.length > 10 ? "
+- ..." : ""}
+
+Matched: ${debugMatched.length}/${slots.length}.`,
+          "error"
+        );
         return;
       }
 
@@ -2231,8 +2296,8 @@
       activeSlotText.textContent = "Ingen valgt";
       saveState();
       render();
-      showStatus("Valgte optimalt hold fra optimizer-filen.", "info");
       scheduleAutosave();
+      showStatus(`Valgte optimizer-hold for ${currentFormation}. Pris: ${formatMoney(totalPrice)}.`, "info");
     }
 
     function getEmptySlots() {
@@ -2416,93 +2481,150 @@
         return;
       }
 
-      // Hvis holdet er helt tomt, bruges samme logik som “Vælg optimalt hold”:
-      // først optimizer-filen, ellers hurtig gyldig spillerpulje.
       if (emptySlots.length === getCurrentSlots().length) {
         applyOptimalSquadForCurrentFormation();
         return;
       }
 
-      const usedIds = new Set(Object.values(squad).filter(Boolean).map(String));
-      const teamCounts = getCurrentTeamCounts();
-      let remainingBank = BUDGET_TOTAL - getSpentBudget();
+      const baseSquad = { ...squad };
+      const baseUsedIds = new Set(Object.values(baseSquad).filter(Boolean).map(String));
+      const baseTeamCounts = getCurrentTeamCounts(baseSquad);
+      const baseBankLeft = BUDGET_TOTAL - getSpentBudget(baseSquad);
 
-      const orderedSlots = [...emptySlots].sort((a, b) => {
-        const rank = { "Målmand": 1, "Forsvar": 2, "Midtbane": 3, "Angriber": 4 };
-        return (rank[a.position] || 9) - (rank[b.position] || 9);
-      });
+      const startedAt = performance.now();
+      const MAX_SEARCH_MS = 1200;
 
-      const additions = {};
-
-      for (let i = 0; i < orderedSlots.length; i++) {
-        const slot = orderedSlots[i];
-        const remainingSlotsAfterThis = orderedSlots.slice(i + 1);
-        const bankNow = remainingBank;
-
-        const candidates = getEligiblePlayersForSlot(slot, usedIds, teamCounts, bankNow).slice(0, 120);
-        let chosen = null;
-
-        for (const player of candidates) {
-          const price = getPlayerPrice(player);
-          const teamName = player.team_name || "";
-          const testUsedIds = new Set(usedIds);
-          const testTeamCounts = { ...teamCounts };
-
-          testUsedIds.add(String(player.player_id));
-          testTeamCounts[teamName] = (testTeamCounts[teamName] || 0) + 1;
-
-          const minRestCost = getCheapestRemainingCostForSlots(
-            remainingSlotsAfterThis,
-            testUsedIds,
-            testTeamCounts
-          );
-
-          if (price + minRestCost <= bankNow) {
-            chosen = player;
-            break;
-          }
-        }
-
-        if (!chosen) {
-          const cheapCandidates = [...candidates].sort((a, b) => getPlayerPrice(a) - getPlayerPrice(b));
-
-          for (const player of cheapCandidates) {
-            const price = getPlayerPrice(player);
-            const teamName = player.team_name || "";
-            const testUsedIds = new Set(usedIds);
-            const testTeamCounts = { ...teamCounts };
-
-            testUsedIds.add(String(player.player_id));
-            testTeamCounts[teamName] = (testTeamCounts[teamName] || 0) + 1;
-
-            const minRestCost = getCheapestRemainingCostForSlots(
-              remainingSlotsAfterThis,
-              testUsedIds,
-              testTeamCounts
-            );
-
-            if (price + minRestCost <= bankNow) {
-              chosen = player;
-              break;
-            }
-          }
-        }
-
-        if (!chosen) {
-          showStatus(
-            `Kunne ikke udfylde alle tomme pladser hurtigt og sikkert. Prøv at frigøre lidt budget eller ryd holdet og vælg optimalt hold igen.`,
-            "error"
-          );
-          return;
-        }
-
-        additions[slot.key] = chosen.player_id;
-        usedIds.add(String(chosen.player_id));
-        teamCounts[chosen.team_name] = (teamCounts[chosen.team_name] || 0) + 1;
-        remainingBank -= getPlayerPrice(chosen);
+      function cloneCounts(counts) {
+        return { ...counts };
       }
 
-      const candidateSquad = { ...squad, ...additions };
+      function getCandidatePool(slot, usedIds, teamCounts, bankLeft) {
+        const baseCandidates = allPlayers
+          .filter(player => normalizePositionLabel(player.position) === slot.positionCode)
+          .filter(player => !usedIds.has(String(player.player_id)))
+          .filter(player => (teamCounts[player.team_name] || 0) < MAX_PER_TEAM)
+          .filter(player => getPlayerPrice(player) <= bankLeft);
+
+        const byScore = [...baseCandidates]
+          .sort((a, b) => {
+            const scoreDiff = getPlayerScore(b) - getPlayerScore(a);
+            if (scoreDiff !== 0) return scoreDiff;
+
+            const startDiff = getPlayerStart(b) - getPlayerStart(a);
+            if (startDiff !== 0) return startDiff;
+
+            return getPlayerPrice(a) - getPlayerPrice(b);
+          })
+          .slice(0, 120);
+
+        const byPrice = [...baseCandidates]
+          .sort((a, b) => {
+            const priceDiff = getPlayerPrice(a) - getPlayerPrice(b);
+            if (priceDiff !== 0) return priceDiff;
+            return getPlayerScore(b) - getPlayerScore(a);
+          })
+          .slice(0, 220);
+
+        const byValue = [...baseCandidates]
+          .sort((a, b) => {
+            const valueA = getPlayerScore(a) / Math.max(1, getPlayerPrice(a));
+            const valueB = getPlayerScore(b) / Math.max(1, getPlayerPrice(b));
+            if (valueB !== valueA) return valueB - valueA;
+            return getPlayerPrice(a) - getPlayerPrice(b);
+          })
+          .slice(0, 100);
+
+        const merged = new Map();
+
+        byScore.forEach(player => merged.set(String(player.player_id), player));
+        byValue.forEach(player => merged.set(String(player.player_id), player));
+        byPrice.forEach(player => merged.set(String(player.player_id), player));
+
+        return [...merged.values()].sort((a, b) => {
+          const scoreDiff = getPlayerScore(b) - getPlayerScore(a);
+          if (scoreDiff !== 0) return scoreDiff;
+
+          const startDiff = getPlayerStart(b) - getPlayerStart(a);
+          if (startDiff !== 0) return startDiff;
+
+          return getPlayerPrice(a) - getPlayerPrice(b);
+        });
+      }
+
+      function chooseMostConstrainedSlot(slotsLeft, usedIds, teamCounts, bankLeft) {
+        let best = null;
+
+        for (const slot of slotsLeft) {
+          const candidates = getCandidatePool(slot, usedIds, teamCounts, bankLeft);
+          const item = { slot, candidates };
+
+          if (!best || item.candidates.length < best.candidates.length) {
+            best = item;
+          }
+        }
+
+        return best;
+      }
+
+      function solveSlots(slotsLeft, usedIds, teamCounts, bankLeft, additions) {
+        if (performance.now() - startedAt > MAX_SEARCH_MS) return null;
+
+        if (!slotsLeft.length) {
+          return { ...additions };
+        }
+
+        const chosenSlotData = chooseMostConstrainedSlot(slotsLeft, usedIds, teamCounts, bankLeft);
+        if (!chosenSlotData || !chosenSlotData.candidates.length) return null;
+
+        const slot = chosenSlotData.slot;
+        const restSlots = slotsLeft.filter(item => item.key !== slot.key);
+
+        for (const player of chosenSlotData.candidates) {
+          const price = getPlayerPrice(player);
+          const playerIdStr = String(player.player_id);
+          const teamName = player.team_name || "";
+
+          if (price > bankLeft) continue;
+          if (usedIds.has(playerIdStr)) continue;
+          if ((teamCounts[teamName] || 0) >= MAX_PER_TEAM) continue;
+
+          const nextUsedIds = new Set(usedIds);
+          const nextTeamCounts = cloneCounts(teamCounts);
+          const nextAdditions = { ...additions };
+
+          nextUsedIds.add(playerIdStr);
+          nextTeamCounts[teamName] = (nextTeamCounts[teamName] || 0) + 1;
+          nextAdditions[slot.key] = player.player_id;
+
+          const nextBankLeft = bankLeft - price;
+          const minimumRestCost = getCheapestRemainingCostForSlots(restSlots, nextUsedIds, nextTeamCounts);
+
+          if (minimumRestCost > nextBankLeft) continue;
+
+          const solution = solveSlots(restSlots, nextUsedIds, nextTeamCounts, nextBankLeft, nextAdditions);
+          if (solution) return solution;
+        }
+
+        return null;
+      }
+
+      const solution = solveSlots(
+        emptySlots,
+        baseUsedIds,
+        baseTeamCounts,
+        baseBankLeft,
+        {}
+      );
+
+      if (!solution) {
+        showStatus(
+          `Kunne ikke finde en samlet gyldig udfyldning af de ${emptySlots.length} tomme pladser. Der er ${formatMoney(baseBankLeft)} i banken. Prøv evt. at fjerne én dyr spiller mere eller vælg optimalt hold på ny.`,
+          "error"
+        );
+        return;
+      }
+
+      const candidateSquad = { ...baseSquad, ...solution };
       const issues = getSquadConstraintIssues(candidateSquad);
 
       if (issues.length) {
@@ -2517,6 +2639,7 @@
       saveState();
       render();
       scheduleAutosave();
+
       showStatus(`Udfyldte alle ${emptySlots.length} tomme pladser.`, "info");
     }
 
