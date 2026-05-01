@@ -103,6 +103,64 @@
     @media (max-width: 900px) { .page-wrap { padding: 8px; } .left-panel, .right-panel { padding: 10px; } .team-title { font-size: 20px; } .formation-bar { flex-direction: column; align-items: stretch; } .formation-select-wrap { width: 100%; justify-content: space-between; } .action-bar { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; } .action-btn { width: 100%; min-height: 42px; } .trade-header { grid-template-columns: 1fr; } .trade-search input, .trade-header select { min-height: 42px; } .info-box { font-size: 11px; } }
     @media (max-width: 700px) { .topbar { padding: 10px 12px; gap: 8px; } .topbar-left, .topbar-right, .topbar-auth { width: 100%; } .topbar-right { justify-content: space-between; } .topbar-user { max-width: 170px; } .page-wrap { padding: 0; height: auto; } .left-panel, .right-panel { border-radius: 0; } .right-panel { border-left: none; border-top: 1px solid rgba(255,255,255,0.08); } .bank-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; } .bank-box:last-child { grid-column: 1 / -1; } .pitch { min-height: 560px; } .pitch-circle { width: 86px; height: 86px; margin-left: -43px; margin-top: -43px; } .pitch-penalty-top, .pitch-penalty-bottom { width: 142px; margin-left: -71px; height: 80px; } .pitch-goal-top, .pitch-goal-bottom { width: 56px; margin-left: -28px; height: 28px; } .slot { width: 84px; } .player-figure { width: 36px; height: 36px; margin-bottom: 4px; } .flag-img { width: 18px; height: 13px; } .player-name { max-width: 82px; font-size: 9px; padding: 3px 5px; } .player-price, .player-next, .player-start { max-width: 82px; font-size: 8px; } .slot-btn { font-size: 10px; padding: 4px 6px; } .trade-row { grid-template-columns: auto 1fr; align-items: start; } .trade-metrics { grid-column: 1 / -1; width: 100%; justify-content: space-between; padding-left: 44px; gap: 8px; } .trade-metric { text-align: left; min-width: 0; flex: 1 1 0; } .trade-metric.value-wide { min-width: 0; } .plus-btn { width: 36px; height: 36px; margin-top: 2px; } .credit-box { padding-bottom: calc(8px + env(safe-area-inset-bottom)); } }
     @media (max-width: 430px) { .action-bar { grid-template-columns: 1fr; } .bank-row { grid-template-columns: 1fr; } .pitch { min-height: 500px; } .slot { width: 72px; } .player-name, .player-price, .player-next, .player-start { max-width: 70px; } .topbar-user { max-width: 130px; } }
+
+    /* Mobilfix: banen får en fast minimumsbredde, så 5-mandskæder ikke mases sammen på telefon. */
+    @media (max-width: 700px) {
+      body {
+        overflow-x: hidden;
+      }
+
+      .left-panel {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .pitch {
+        width: 760px;
+        min-width: 760px;
+        min-height: 720px;
+      }
+
+      .slot {
+        width: 96px;
+      }
+
+      .player-name {
+        max-width: 92px;
+        font-size: 10px;
+      }
+
+      .player-price,
+      .player-next,
+      .player-start {
+        max-width: 92px;
+      }
+
+      .slot-btn {
+        font-size: 11px;
+        padding: 5px 8px;
+      }
+    }
+
+    @media (max-width: 430px) {
+      .pitch {
+        width: 760px;
+        min-width: 760px;
+        min-height: 720px;
+      }
+
+      .slot {
+        width: 96px;
+      }
+
+      .player-name,
+      .player-price,
+      .player-next,
+      .player-start {
+        max-width: 92px;
+      }
+    }
+
   </style>
 </head>
 <body>
