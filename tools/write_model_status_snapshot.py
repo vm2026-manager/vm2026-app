@@ -1,171 +1,338 @@
 from __future__ import annotations
 
+import json
 from datetime import datetime
 from pathlib import Path
-import json
+from typing import Any
+
 import pandas as pd
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = PROJECT_ROOT / "data"
 
-PLAYER_EV_CSV = DATA_DIR / "player_ev_group_stage_v1.csv"
-OPTIMAL_SQUAD_CSV = DATA_DIR / "optimal_squad_group_stage.csv"
-FORMATION_SUMMARY_CSV = DATA_DIR / "optimal_formations_summary.csv"
-OPTIMAL_BY_FORMATION_JSON = DATA_DIR / "optimal_squads_by_formation.json"
+EV_PATH = DATA_DIR / "player_ev_group_stage_v1.csv"
+OPTIMAL_PATH = DATA_DIR / "optimal_squads_by_formation.json"
+POOL_PATH = DATA_DIR / "player_pool_v1.json"
 
-OUTPUT_JSON = DATA_DIR / "model_status_snapshot.json"
-OUTPUT_TXT = DATA_DIR / "model_status_snapshot.txt"
-
-
-def read_if_exists_csv(path: Path) -> pd.DataFrame:
-    if path.exists():
-        return pd.read_csv(path)
-    return pd.DataFrame()
+OUT_JSON = DATA_DIR / "model_status_snapshot.json"
+OUT_TXT = DATA_DIR / "model_status_snapshot.txt"
 
 
-def load_snapshot() -> dict:
-    ev_df = read_if_exists_csv(PLAYER_EV_CSV)
-    best_df = read_if_exists_csv(OPTIMAL_SQUAD_CSV)
-    formation_df = read_if_exists_csv(FORMATION_SUMMARY_CSV)
+def load_json(path: Path) -> Any:
+    return json.loads(path.read_text(encoding="utf-8"))
 
-    snapshot: dict = {
-        "snapshot_created_at": datetime.now().isoformat(timespec="seconds"),
-        "files": {
-            "player_ev_csv": str(PLAYER_EV_CSV),
-            "optimal_squad_csv": str(OPTIMAL_SQUAD_CSV),
-            "formation_summary_csv": str(FORMATION_SUMMARY_CSV),
-            "optimal_by_formation_json": str(OPTIMAL_BY_FORMATION_JSON),
-        },
-        "current_assessment": {
-            "formation_conclusion": (
-                "5-4-1 vinder stadig i den nuværende model, men det vurderes ikke som afgørende endnu, "
-                "fordi spillerfelt og priser stadig er foreløbige/proxy-baserede."
-            ),
-            "main_takeaway": (
-                "Det vigtigste lige nu er en nogenlunde sund EV-motor og en meningsfuld optimizer. "
-                "Formationsfinjustering kan vente eller evt. håndteres med en midlertidig balanced-toggle senere."
-            ),
-            "next_recommended_focus": (
-                "Flyt fokus væk fra mere formation-tuning og over på datagrundlag, "
-                "workflow, rigtige priser og bedre spiller-/starterinput."
-            ),
-        },
+
+def load_player_pool(path: Path) -> list[dict[str, Any]]:
+    data = load_json(path)
+
+    if isinstance(data, list):
+        return data
+
+    if isinstance(data, dict):
+        for key in ("players", "items", "data"):
+            if isinstance(data.get(key), list):
+                return data[key]
+
+    raise ValueError(f"Kan ikke finde spillerliste i {path}")
+
+
+def load_optimal(path: Path) -> dict[str, Any]:
+    data = load_json(path)
+
+    if not isinstance(data, dict):
+        raise ValueError(f"Optimizerfilen er ikke et dict: {path}")
+
+    return data
+
+
+def get_squads(optimal: dict[str, Any]) -> dict[str, Any]:
+    if "formations" in optimal and isinstance(optimal["formations"], dict):
+        return optimal["formations"]
+
+    if "squads" in optimal and isinstance(optimal["squads"], dict):
+        return optimal["squads"]
+
+    return {
+        key: value
+        for key, value in optimal.items()
+        if isinstance(value, (dict, list)) and "-" in str(key)
     }
 
-    if not ev_df.empty:
-        pos_counts = ev_df["position"].astype(str).value_counts().to_dict() if "position" in ev_df.columns else {}
-        snapshot["ev_file"] = {
-            "rows": int(len(ev_df)),
-            "columns": list(ev_df.columns),
-            "position_counts": pos_counts,
-            "weighted_ev_sum": float(ev_df["weighted_group_stage_ev"].sum()) if "weighted_group_stage_ev" in ev_df.columns else None,
-            "weighted_ev_mean": float(ev_df["weighted_group_stage_ev"].mean()) if "weighted_group_stage_ev" in ev_df.columns else None,
-            "weighted_ev_median": float(ev_df["weighted_group_stage_ev"].median()) if "weighted_group_stage_ev" in ev_df.columns else None,
-        }
 
-    if not formation_df.empty:
-        snapshot["formations"] = formation_df.to_dict(orient="records")
+def get_players_from_entry(entry: Any) -> list[dict[str, Any]]:
+    if isinstance(entry, list):
+        return entry
 
-    if not best_df.empty:
-        best_meta = {}
-        for col in ["selected_formation", "solver_quality_profile", "squad_total_price_m", "squad_total_ev", "squad_total_adj_ev", "squad_total_raw_ev"]:
-            if col in best_df.columns:
-                value = best_df[col].iloc[0]
-                if pd.notna(value):
-                    if hasattr(value, "item"):
-                        value = value.item()
-                    best_meta[col] = value
+    if isinstance(entry, dict):
+        for key in ("players", "squad", "lineup", "selected_players"):
+            if isinstance(entry.get(key), list):
+                return entry[key]
 
-        keep_cols = [c for c in ["player_name", "team_id", "position", "price_m", "optimizer_ev", "optimizer_ev_adj", "start_prob"] if c in best_df.columns]
-
-        snapshot["best_squad"] = {
-            "meta": best_meta,
-            "players": best_df[keep_cols].to_dict(orient="records"),
-        }
-
-    if OPTIMAL_BY_FORMATION_JSON.exists():
-        try:
-            with OPTIMAL_BY_FORMATION_JSON.open("r", encoding="utf-8") as f:
-                by_formation = json.load(f)
-            snapshot["formations_available"] = list(by_formation.keys())
-        except Exception as e:
-            snapshot["formations_available_error"] = str(e)
-
-    return snapshot
+    return []
 
 
-def write_text_summary(snapshot: dict) -> str:
-    lines: list[str] = []
+def get_entry_status(entry: Any) -> str:
+    if isinstance(entry, dict):
+        return str(entry.get("status", "Optimal"))
+    return "Optimal"
 
-    lines.append("VM 2026 MODEL STATUS SNAPSHOT")
-    lines.append("")
-    lines.append(f"Oprettet: {snapshot.get('snapshot_created_at', '')}")
-    lines.append("")
 
-    assessment = snapshot.get("current_assessment", {})
-    lines.append("VURDERING")
-    lines.append(f"- Formation: {assessment.get('formation_conclusion', '')}")
-    lines.append(f"- Hovedpointe: {assessment.get('main_takeaway', '')}")
-    lines.append(f"- Næste fokus: {assessment.get('next_recommended_focus', '')}")
-    lines.append("")
+def first_numeric_from_entry_or_players(
+    entry: Any,
+    players: list[dict[str, Any]],
+    keys: list[str],
+    fallback: float | None = None,
+) -> float | None:
+    """
+    Brug først top-level felt.
+    Hvis feltet kun findes på spillerrækkerne som samme squad-total på alle rækker,
+    skal vi tage første værdi, IKKE summere.
+    """
+    if isinstance(entry, dict):
+        for key in keys:
+            value = entry.get(key)
+            if value is not None:
+                try:
+                    return float(value)
+                except Exception:
+                    pass
 
-    ev_info = snapshot.get("ev_file", {})
-    if ev_info:
-        lines.append("EV-FIL")
-        lines.append(f"- Rækker: {ev_info.get('rows')}")
-        lines.append(f"- Weighted EV sum: {round(ev_info.get('weighted_ev_sum', 0.0), 3) if ev_info.get('weighted_ev_sum') is not None else 'n/a'}")
-        lines.append(f"- Weighted EV mean: {round(ev_info.get('weighted_ev_mean', 0.0), 4) if ev_info.get('weighted_ev_mean') is not None else 'n/a'}")
-        lines.append(f"- Weighted EV median: {round(ev_info.get('weighted_ev_median', 0.0), 4) if ev_info.get('weighted_ev_median') is not None else 'n/a'}")
-        pos_counts = ev_info.get("position_counts", {})
-        if pos_counts:
-            lines.append(f"- Positioner: {pos_counts}")
-        lines.append("")
+    for p in players:
+        for key in keys:
+            value = p.get(key)
+            if value is not None:
+                try:
+                    return float(value)
+                except Exception:
+                    pass
 
-    formations = snapshot.get("formations", [])
-    if formations:
-        lines.append("FORMATIONER")
-        for row in formations:
-            formation = row.get("formation", "")
-            status = row.get("status", "")
-            ev = row.get("squad_total_adj_ev", row.get("squad_total_ev"))
-            price = row.get("squad_total_price_m")
-            lines.append(f"- {formation}: status={status}, EV={ev}, pris={price}")
-        lines.append("")
+    return fallback
 
-    best_squad = snapshot.get("best_squad", {})
-    if best_squad:
-        lines.append("BEDSTE HOLD")
-        meta = best_squad.get("meta", {})
-        for key, value in meta.items():
-            lines.append(f"- {key}: {value}")
-        lines.append("")
-        lines.append("SPILLERE")
-        for player in best_squad.get("players", []):
-            name = player.get("player_name", "")
-            team = player.get("team_id", "")
-            pos = player.get("position", "")
-            price = player.get("price_m", "")
-            ev = player.get("optimizer_ev_adj", player.get("optimizer_ev", ""))
-            lines.append(f"- {name} | {team} | {pos} | pris={price} | EV={ev}")
-        lines.append("")
 
-    return "\n".join(lines)
+def price_m_from_player(p: dict[str, Any]) -> float:
+    for key in ("price_m", "price_estimate_m", "price_mio"):
+        value = p.get(key)
+        if value is not None:
+            try:
+                return float(value)
+            except Exception:
+                pass
+
+    for key in ("price", "price_estimate", "holdet_price"):
+        value = p.get(key)
+        if value is not None:
+            try:
+                value_float = float(value)
+                return value_float / 1_000_000 if value_float > 1000 else value_float
+            except Exception:
+                pass
+
+    return 0.0
+
+
+def ev_from_player(p: dict[str, Any]) -> float:
+    for key in ("optimizer_ev_adj", "squad_player_ev", "weighted_group_stage_ev", "optimizer_ev"):
+        value = p.get(key)
+        if value is not None:
+            try:
+                return float(value)
+            except Exception:
+                pass
+
+    return 0.0
+
+
+def raw_ev_from_player(p: dict[str, Any]) -> float:
+    for key in ("optimizer_ev", "weighted_group_stage_ev", "optimizer_ev_base"):
+        value = p.get(key)
+        if value is not None:
+            try:
+                return float(value)
+            except Exception:
+                pass
+
+    return 0.0
+
+
+def summarize_formations(optimal: dict[str, Any]) -> tuple[list[dict[str, Any]], dict[str, Any] | None]:
+    squads = get_squads(optimal)
+    summaries: list[dict[str, Any]] = []
+
+    for formation, entry in squads.items():
+        players = get_players_from_entry(entry)
+        status = get_entry_status(entry)
+
+        price_m = first_numeric_from_entry_or_players(
+            entry,
+            players,
+            ["squad_total_price_m", "total_price_m", "price_m"],
+            fallback=sum(price_m_from_player(p) for p in players),
+        )
+
+        adj_ev = first_numeric_from_entry_or_players(
+            entry,
+            players,
+            ["squad_total_adj_ev", "total_adj_ev", "adj_ev"],
+            fallback=sum(ev_from_player(p) for p in players),
+        )
+
+        raw_ev = first_numeric_from_entry_or_players(
+            entry,
+            players,
+            ["squad_total_ev", "squad_total_raw_ev", "total_ev", "raw_ev"],
+            fallback=sum(raw_ev_from_player(p) for p in players),
+        )
+
+        summaries.append(
+            {
+                "formation": str(formation),
+                "status": status,
+                "price_m": round(float(price_m or 0.0), 3),
+                "adj_ev": round(float(adj_ev or 0.0), 3),
+                "raw_ev": round(float(raw_ev or 0.0), 3),
+                "players": players,
+            }
+        )
+
+    if not summaries:
+        return summaries, None
+
+    best = max(summaries, key=lambda x: x["adj_ev"])
+    return summaries, best
 
 
 def main() -> None:
-    snapshot = load_snapshot()
+    created_at = datetime.now().isoformat(timespec="seconds")
 
-    with OUTPUT_JSON.open("w", encoding="utf-8") as f:
-        json.dump(snapshot, f, ensure_ascii=False, indent=2)
+    ev = pd.read_csv(EV_PATH)
+    player_pool = load_player_pool(POOL_PATH)
+    optimal = load_optimal(OPTIMAL_PATH)
 
-    text_summary = write_text_summary(snapshot)
-    OUTPUT_TXT.write_text(text_summary, encoding="utf-8")
+    formation_summaries, best = summarize_formations(optimal)
+    best_players = best["players"] if best else []
 
-    print(f"Skrev: {OUTPUT_JSON}")
-    print(f"Skrev: {OUTPUT_TXT}")
+    ev_summary = {
+        "rows": int(len(ev)),
+        "weighted_ev_sum": float(ev["weighted_group_stage_ev"].sum()) if "weighted_group_stage_ev" in ev.columns else None,
+        "weighted_ev_mean": float(ev["weighted_group_stage_ev"].mean()) if "weighted_group_stage_ev" in ev.columns else None,
+        "weighted_ev_median": float(ev["weighted_group_stage_ev"].median()) if "weighted_group_stage_ev" in ev.columns else None,
+        "positions": ev["position"].value_counts().to_dict() if "position" in ev.columns else {},
+    }
+
+    pool_summary = {
+        "rows": len(player_pool),
+        "official_holdet_master": sum(1 for p in player_pool if p.get("official_holdet_master")),
+        "positions": pd.Series([p.get("position") for p in player_pool]).value_counts().to_dict(),
+        "teams": pd.Series([p.get("team_id") for p in player_pool]).nunique(),
+        "missing_price": sum(1 for p in player_pool if p.get("price_estimate") in (None, "")),
+    }
+
+    snapshot = {
+        "created_at": created_at,
+        "assessment": {
+            "best_formation": best["formation"] if best else None,
+            "message": (
+                "Modellen bruger nu Holdet.dk game 616 som officiel master-player-pool. "
+                "EV-filen er rebased til de officielle Holdet-spillere, og optimizer-holdene matcher appens player_pool."
+            ),
+            "caveat": (
+                "Spillerfelt, startvurderinger og odds er stadig foreløbige. "
+                "Kun første runde har bookmaker-odds pt.; resten bygger på modelinput."
+            ),
+        },
+        "player_pool": pool_summary,
+        "ev_file": ev_summary,
+        "formations": [
+            {
+                "formation": item["formation"],
+                "status": item["status"],
+                "adj_ev": item["adj_ev"],
+                "raw_ev": item["raw_ev"],
+                "price_m": item["price_m"],
+            }
+            for item in formation_summaries
+        ],
+        "best_squad": {
+            "selected_formation": best["formation"] if best else None,
+            "squad_total_price_m": best["price_m"] if best else None,
+            "squad_total_adj_ev": best["adj_ev"] if best else None,
+            "squad_total_raw_ev": best["raw_ev"] if best else None,
+            "players": [
+                {
+                    "player_id": p.get("player_id"),
+                    "player_name": p.get("player_name"),
+                    "team_id": p.get("team_id"),
+                    "position": p.get("position"),
+                    "price_m": price_m_from_player(p),
+                    "ev": ev_from_player(p),
+                }
+                for p in best_players
+            ],
+        },
+    }
+
+    OUT_JSON.write_text(
+        json.dumps(snapshot, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+
+    lines = []
+    lines.append("VM 2026 MODEL STATUS SNAPSHOT")
+    lines.append("")
+    lines.append(f"Oprettet: {created_at}")
+    lines.append("")
+    lines.append("VURDERING")
+    if best:
+        lines.append(f"- Bedste formation i seneste optimizer-kørsel: {best['formation']}.")
+    lines.append("- Modellen bruger nu Holdet.dk game 616 som officiel master-player-pool.")
+    lines.append("- EV-filen er rebased til de officielle Holdet-spillere.")
+    lines.append("- Optimizer-holdene matcher appens player_pool på player_id.")
+    lines.append("- Forbehold: Startvurderinger, odds og trupper er stadig foreløbige og skal opdateres løbende.")
+    lines.append("")
+    lines.append("PLAYER POOL")
+    lines.append(f"- Rækker: {pool_summary['rows']}")
+    lines.append(f"- Officiel Holdet-master: {pool_summary['official_holdet_master']}")
+    lines.append(f"- Hold: {pool_summary['teams']}")
+    lines.append(f"- Mangler pris: {pool_summary['missing_price']}")
+    lines.append(f"- Positioner: {pool_summary['positions']}")
+    lines.append("")
+    lines.append("EV-FIL")
+    lines.append(f"- Rækker: {ev_summary['rows']}")
+    lines.append(f"- Weighted EV sum: {ev_summary['weighted_ev_sum']:.3f}")
+    lines.append(f"- Weighted EV mean: {ev_summary['weighted_ev_mean']:.4f}")
+    lines.append(f"- Weighted EV median: {ev_summary['weighted_ev_median']:.4f}")
+    lines.append(f"- Positioner: {ev_summary['positions']}")
+    lines.append("")
+    lines.append("FORMATIONER")
+    for item in formation_summaries:
+        lines.append(
+            f"- {item['formation']}: status={item['status']}, "
+            f"adjEV={item['adj_ev']}, rawEV={item['raw_ev']}, pris={item['price_m']}"
+        )
+    lines.append("")
+    lines.append("BEDSTE HOLD")
+    if best:
+        lines.append(f"- selected_formation: {best['formation']}")
+        lines.append(f"- squad_total_price_m: {best['price_m']}")
+        lines.append(f"- squad_total_adj_ev: {best['adj_ev']}")
+        lines.append(f"- squad_total_raw_ev: {best['raw_ev']}")
+        lines.append("")
+        lines.append("SPILLERE")
+        for p in best_players:
+            lines.append(
+                f"- {p.get('player_name')} | {p.get('team_id')} | {p.get('position')} "
+                f"| pris={price_m_from_player(p):.1f} | EV={ev_from_player(p):.3f}"
+            )
+    else:
+        lines.append("- Ingen bedste formation fundet.")
+
+    OUT_TXT.write_text("\n".join(lines), encoding="utf-8")
+
+    print(f"Skrev: {OUT_JSON}")
+    print(f"Skrev: {OUT_TXT}")
     print("")
-    print(text_summary)
+    print("\n".join(lines))
 
 
 if __name__ == "__main__":
