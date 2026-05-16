@@ -1,0 +1,9 @@
+﻿formation,old_idx,old_player_id,old_player_name,old_team_id,old_position,old_price_m,old_ev,new_player_id,new_player_name,new_team_id,new_position,new_price_m,new_ev,price_delta_m,ev_delta,utility,new_total_price_m
+3-4-3,5,sadio_man__sen,Sadio Mane,SEN,FWD,5.0,3.4571415145441664,kylian_mbapp__fra,Kylian Mbappe,FRA,FWD,10.0,2.969889,5.0,-0.4872525145441666,2.2627474854558334,50.0
+3-5-2,4,sadio_man__sen,Sadio Mane,SEN,FWD,5.0,3.4571415145441664,kylian_mbapp__fra,Kylian Mbappe,FRA,FWD,10.0,2.969889,5.0,-0.4872525145441666,2.2627474854558334,50.0
+4-3-3,6,sadio_man__sen,Sadio Mane,SEN,FWD,5.0,3.4571415145441664,kylian_mbapp__fra,Kylian Mbappe,FRA,FWD,10.0,2.969889,5.0,-0.4872525145441666,2.2627474854558334,50.0
+4-4-2,4,brahim_d_az__mar,Brahim Diaz,MAR,FWD,4.5,3.4888165155066666,kylian_mbapp__fra,Kylian Mbappe,FRA,FWD,10.0,2.969889,5.5,-0.5189275155066668,2.5060724844933335,49.5
+4-5-1,4,brahim_d_az__mar,Brahim Diaz,MAR,FWD,4.5,3.4888165155066666,kylian_mbapp__fra,Kylian Mbappe,FRA,FWD,10.0,2.969889,5.5,-0.5189275155066668,2.5060724844933335,49.0
+5-3-2,5,brahim_d_az__mar,Brahim Diaz,MAR,FWD,4.5,3.4888165155066666,kylian_mbapp__fra,Kylian Mbappe,FRA,FWD,10.0,2.969889,5.5,-0.5189275155066668,2.5060724844933335,49.0
+5-4-1,5,brahim_d_az__mar,Brahim Diaz,MAR,FWD,4.5,3.4888165155066666,kylian_mbapp__fra,Kylian Mbappe,FRA,FWD,10.0,2.969889,5.5,-0.5189275155066668,2.5060724844933335,47.5
+5-4-1,9,scott_mctominay__sco,Scott McTominay,SCO,MID,4.5,3.0167373425664166,bruno_fernandes__por,Bruno Fernandes,POR,MID,7.0,2.589581,2.5,-0.42715634256641666,0.9478436574335833,50.0

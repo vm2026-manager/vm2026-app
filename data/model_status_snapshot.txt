@@ -1,6 +1,6 @@
 VM 2026 MODEL STATUS SNAPSHOT
 
-Oprettet: 2026-05-16T11:11:48
+Oprettet: 2026-05-16T12:42:20
 
 VURDERING
 - Bedste formation i seneste optimizer-kørsel: 3-4-3.
@@ -18,35 +18,35 @@ PLAYER POOL
 
 EV-FIL
 - Rækker: 1290
-- Weighted EV sum: 859.146
-- Weighted EV mean: 0.6660
-- Weighted EV median: 0.2360
+- Weighted EV sum: 1227.201
+- Weighted EV mean: 0.9513
+- Weighted EV median: 0.7916
 - Positioner: {'MID': 429, 'DEF': 422, 'FWD': 279, 'GK': 160}
 
 FORMATIONER
-- 3-4-3: status=Optimal, adjEV=39.194, rawEV=41.563, pris=39.0
-- 3-5-2: status=Optimal, adjEV=38.503, rawEV=41.093, pris=38.0
-- 4-3-3: status=Optimal, adjEV=38.718, rawEV=41.13, pris=37.5
-- 4-4-2: status=Optimal, adjEV=38.068, rawEV=40.394, pris=37.5
-- 4-5-1: status=Optimal, adjEV=36.957, rawEV=39.333, pris=38.0
-- 5-3-2: status=Optimal, adjEV=37.461, rawEV=39.788, pris=36.0
-- 5-4-1: status=Optimal, adjEV=36.391, rawEV=38.461, pris=37.5
+- 3-4-3: status=Optimal, adjEV=31.659, rawEV=31.659, pris=50.0
+- 3-5-2: status=Optimal, adjEV=31.162, rawEV=31.162, pris=50.0
+- 4-3-3: status=Optimal, adjEV=30.783, rawEV=30.783, pris=50.0
+- 4-4-2: status=Optimal, adjEV=30.307, rawEV=30.307, pris=49.5
+- 4-5-1: status=Optimal, adjEV=29.812, rawEV=29.812, pris=49.0
+- 5-3-2: status=Optimal, adjEV=29.408, rawEV=29.408, pris=49.0
+- 5-4-1: status=Optimal, adjEV=28.539, rawEV=28.539, pris=50.0
 
 BEDSTE HOLD
 - selected_formation: 3-4-3
-- squad_total_price_m: 39.0
-- squad_total_adj_ev: 39.194
-- squad_total_raw_ev: 41.563
+- squad_total_price_m: 50.0
+- squad_total_adj_ev: 31.659
+- squad_total_raw_ev: 31.659
 
 SPILLERE
-- Chris Richards | USA | DEF | pris=3.0 | EV=3.076
-- Nuno Mendes | POR | DEF | pris=4.5 | EV=2.932
-- Finn Surman | NZL | DEF | pris=2.0 | EV=2.903
-- Ismael Diaz | PAN | FWD | pris=2.5 | EV=4.579
-- Patrick Agyemang | USA | FWD | pris=3.0 | EV=4.390
-- Brahim Diaz | MAR | FWD | pris=4.5 | EV=3.970
-- Mike Maignan | FRA | GK | pris=5.0 | EV=3.142
-- Christoph Baumgartner | AUT | MID | pris=3.5 | EV=3.862
-- Malik Tillman | USA | MID | pris=4.0 | EV=3.516
-- Roberto Alvarado | MEX | MID | pris=2.5 | EV=3.502
-- Scott McTominay | SCO | MID | pris=4.5 | EV=3.321
+- Nuno Mendes | POR | DEF | pris=4.5 | EV=2.420
+- Chris Richards | USA | DEF | pris=3.0 | EV=2.317
+- Ali Abdi | TUN | DEF | pris=3.0 | EV=2.189
+- Brahim Diaz | MAR | FWD | pris=4.5 | EV=3.489
+- Raul Jimenez | MEX | FWD | pris=4.5 | EV=3.460
+- Kylian Mbappe | FRA | FWD | pris=10.0 | EV=2.970
+- Mike Maignan | FRA | GK | pris=5.0 | EV=2.484
+- Christoph Baumgartner | AUT | MID | pris=3.5 | EV=3.211
+- Malik Tillman | USA | MID | pris=4.0 | EV=3.088
+- Scott McTominay | SCO | MID | pris=4.5 | EV=3.017
+- Andreas Schjelderup | NOR | MID | pris=3.5 | EV=3.016

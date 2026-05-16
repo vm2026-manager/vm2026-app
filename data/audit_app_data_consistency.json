@@ -8,7 +8,7 @@
     "optimal_squads_by_formation.json": {
       "exists": true,
       "path": "C:\\Users\\Administrator\\Desktop\\vm2026_local_app\\data\\optimal_squads_by_formation.json",
-      "size_bytes": 63167
+      "size_bytes": 88594
     },
     "fixtures_group.csv": {
       "exists": true,
@@ -110,19 +110,19 @@
         "GK": 1,
         "MID": 4
       },
-      "pool_total_price": 39000000,
-      "optimizer_total_price": 39000000,
+      "pool_total_price": 50000000,
+      "optimizer_total_price": 50000000,
       "budget_total": 50000000,
       "team_counts": {
-        "USA": 3,
         "Portugal": 1,
-        "New Zealand": 1,
-        "Panama": 1,
+        "USA": 2,
+        "Tunisia": 1,
         "Morocco": 1,
-        "France": 1,
-        "Austria": 1,
         "Mexico": 1,
-        "Scotland": 1
+        "France": 2,
+        "Austria": 1,
+        "Scotland": 1,
+        "Norway": 1
       },
       "match_methods": {
         "player_id": 11
@@ -143,19 +143,19 @@
         "GK": 1,
         "MID": 5
       },
-      "pool_total_price": 38000000,
-      "optimizer_total_price": 38000000,
+      "pool_total_price": 50000000,
+      "optimizer_total_price": 50000000,
       "budget_total": 50000000,
       "team_counts": {
-        "USA": 3,
         "Portugal": 1,
-        "New Zealand": 1,
-        "Panama": 1,
-        "France": 1,
+        "USA": 2,
+        "Tunisia": 1,
+        "Morocco": 1,
+        "France": 2,
         "Austria": 1,
-        "Mexico": 1,
         "Scotland": 1,
-        "Norway": 1
+        "Norway": 1,
+        "Türkiye": 1
       },
       "match_methods": {
         "player_id": 11
@@ -176,19 +176,19 @@
         "GK": 1,
         "MID": 3
       },
-      "pool_total_price": 37500000,
-      "optimizer_total_price": 37500000,
+      "pool_total_price": 50000000,
+      "optimizer_total_price": 50000000,
       "budget_total": 50000000,
       "team_counts": {
-        "USA": 3,
         "Portugal": 1,
-        "New Zealand": 1,
+        "USA": 2,
         "Tunisia": 1,
-        "Panama": 1,
+        "Croatia": 1,
         "Morocco": 1,
-        "France": 1,
+        "Mexico": 1,
+        "France": 2,
         "Austria": 1,
-        "Mexico": 1
+        "Scotland": 1
       },
       "match_methods": {
         "player_id": 11
@@ -209,19 +209,19 @@
         "GK": 1,
         "MID": 4
       },
-      "pool_total_price": 37500000,
-      "optimizer_total_price": 37500000,
+      "pool_total_price": 49500000,
+      "optimizer_total_price": 49500000,
       "budget_total": 50000000,
       "team_counts": {
-        "USA": 3,
         "Portugal": 1,
-        "New Zealand": 1,
+        "USA": 2,
         "Tunisia": 1,
-        "Panama": 1,
-        "France": 1,
+        "Croatia": 1,
+        "France": 2,
+        "Senegal": 1,
         "Austria": 1,
-        "Mexico": 1,
-        "Scotland": 1
+        "Scotland": 1,
+        "Norway": 1
       },
       "match_methods": {
         "player_id": 11
@@ -242,20 +242,19 @@
         "GK": 1,
         "MID": 5
       },
-      "pool_total_price": 38000000,
-      "optimizer_total_price": 38000000,
+      "pool_total_price": 49000000,
+      "optimizer_total_price": 49000000,
       "budget_total": 50000000,
       "team_counts": {
-        "USA": 2,
         "Portugal": 1,
-        "New Zealand": 1,
+        "USA": 2,
         "Tunisia": 1,
-        "Panama": 1,
-        "France": 1,
+        "Croatia": 1,
+        "France": 2,
         "Austria": 1,
-        "Mexico": 1,
         "Scotland": 1,
-        "Norway": 1
+        "Norway": 1,
+        "Türkiye": 1
       },
       "match_methods": {
         "player_id": 11
@@ -276,18 +275,18 @@
         "GK": 1,
         "MID": 3
       },
-      "pool_total_price": 36000000,
-      "optimizer_total_price": 36000000,
+      "pool_total_price": 49000000,
+      "optimizer_total_price": 49000000,
       "budget_total": 50000000,
       "team_counts": {
-        "USA": 3,
         "Portugal": 1,
-        "New Zealand": 1,
+        "USA": 2,
         "Tunisia": 1,
+        "Croatia": 1,
         "Austria": 2,
-        "Panama": 1,
-        "France": 1,
-        "Mexico": 1
+        "France": 2,
+        "Senegal": 1,
+        "Scotland": 1
       },
       "match_methods": {
         "player_id": 11
@@ -308,19 +307,17 @@
         "GK": 1,
         "MID": 4
       },
-      "pool_total_price": 37500000,
-      "optimizer_total_price": 37500000,
+      "pool_total_price": 50000000,
+      "optimizer_total_price": 50000000,
       "budget_total": 50000000,
       "team_counts": {
+        "Portugal": 2,
         "USA": 2,
-        "Portugal": 1,
-        "New Zealand": 1,
         "Tunisia": 1,
+        "Croatia": 1,
         "Austria": 2,
-        "Panama": 1,
-        "France": 1,
-        "Mexico": 1,
-        "Scotland": 1
+        "France": 2,
+        "Norway": 1
       },
       "match_methods": {
         "player_id": 11

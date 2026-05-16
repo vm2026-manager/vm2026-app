@@ -1,5 +1,5 @@
 {
-  "created_at": "2026-05-16T11:11:48",
+  "created_at": "2026-05-16T12:42:20",
   "assessment": {
     "best_formation": "3-4-3",
     "message": "Modellen bruger nu Holdet.dk game 616 som officiel master-player-pool. EV-filen er rebased til de officielle Holdet-spillere, og optimizer-holdene matcher appens player_pool.",
@@ -19,9 +19,9 @@
   },
   "ev_file": {
     "rows": 1290,
-    "weighted_ev_sum": 859.1460000000001,
-    "weighted_ev_mean": 0.6660046511627907,
-    "weighted_ev_median": 0.236,
+    "weighted_ev_sum": 1227.2011389999998,
+    "weighted_ev_mean": 0.9513187124031006,
+    "weighted_ev_median": 0.791583,
     "positions": {
       "MID": 429,
       "DEF": 422,
@@ -33,98 +33,82 @@
     {
       "formation": "3-4-3",
       "status": "Optimal",
-      "adj_ev": 39.194,
-      "raw_ev": 41.563,
-      "price_m": 39.0
+      "adj_ev": 31.659,
+      "raw_ev": 31.659,
+      "price_m": 50.0
     },
     {
       "formation": "3-5-2",
       "status": "Optimal",
-      "adj_ev": 38.503,
-      "raw_ev": 41.093,
-      "price_m": 38.0
+      "adj_ev": 31.162,
+      "raw_ev": 31.162,
+      "price_m": 50.0
     },
     {
       "formation": "4-3-3",
       "status": "Optimal",
-      "adj_ev": 38.718,
-      "raw_ev": 41.13,
-      "price_m": 37.5
+      "adj_ev": 30.783,
+      "raw_ev": 30.783,
+      "price_m": 50.0
     },
     {
       "formation": "4-4-2",
       "status": "Optimal",
-      "adj_ev": 38.068,
-      "raw_ev": 40.394,
-      "price_m": 37.5
+      "adj_ev": 30.307,
+      "raw_ev": 30.307,
+      "price_m": 49.5
     },
     {
       "formation": "4-5-1",
       "status": "Optimal",
-      "adj_ev": 36.957,
-      "raw_ev": 39.333,
-      "price_m": 38.0
+      "adj_ev": 29.812,
+      "raw_ev": 29.812,
+      "price_m": 49.0
     },
     {
       "formation": "5-3-2",
       "status": "Optimal",
-      "adj_ev": 37.461,
-      "raw_ev": 39.788,
-      "price_m": 36.0
+      "adj_ev": 29.408,
+      "raw_ev": 29.408,
+      "price_m": 49.0
     },
     {
       "formation": "5-4-1",
       "status": "Optimal",
-      "adj_ev": 36.391,
-      "raw_ev": 38.461,
-      "price_m": 37.5
+      "adj_ev": 28.539,
+      "raw_ev": 28.539,
+      "price_m": 50.0
     }
   ],
   "best_squad": {
     "selected_formation": "3-4-3",
-    "squad_total_price_m": 39.0,
-    "squad_total_adj_ev": 39.194,
-    "squad_total_raw_ev": 41.563,
+    "squad_total_price_m": 50.0,
+    "squad_total_adj_ev": 31.659,
+    "squad_total_raw_ev": 31.659,
     "players": [
-      {
-        "player_id": "chris_richards__usa",
-        "player_name": "Chris Richards",
-        "team_id": "USA",
-        "position": "DEF",
-        "price_m": 3.0,
-        "ev": 3.0762610999999995
-      },
       {
         "player_id": "nuno_mendes__por",
         "player_name": "Nuno Mendes",
         "team_id": "POR",
         "position": "DEF",
         "price_m": 4.5,
-        "ev": 2.9322759499999997
+        "ev": 2.4201798112279165
       },
       {
-        "player_id": "finn_surman__nzl",
-        "player_name": "Finn Surman",
-        "team_id": "NZL",
-        "position": "DEF",
-        "price_m": 2.0,
-        "ev": 2.9032457786007053
-      },
-      {
-        "player_id": "ismael_d_az__pan",
-        "player_name": "Ismael Diaz",
-        "team_id": "PAN",
-        "position": "FWD",
-        "price_m": 2.5,
-        "ev": 4.5790066970538135
-      },
-      {
-        "player_id": "patrick_agyemang__usa",
-        "player_name": "Patrick Agyemang",
+        "player_id": "chris_richards__usa",
+        "player_name": "Chris Richards",
         "team_id": "USA",
-        "position": "FWD",
+        "position": "DEF",
         "price_m": 3.0,
-        "ev": 4.39002854738863
+        "ev": 2.3166883636841664
+      },
+      {
+        "player_id": "ali_abdi__tun",
+        "player_name": "Ali Abdi",
+        "team_id": "TUN",
+        "position": "DEF",
+        "price_m": 3.0,
+        "ev": 2.1892471145779164
       },
       {
         "player_id": "brahim_d_az__mar",
@@ -132,7 +116,23 @@
         "team_id": "MAR",
         "position": "FWD",
         "price_m": 4.5,
-        "ev": 3.9704656398811937
+        "ev": 3.4888165155066666
+      },
+      {
+        "player_id": "ra_l_jim_nez__mex",
+        "player_name": "Raul Jimenez",
+        "team_id": "MEX",
+        "position": "FWD",
+        "price_m": 4.5,
+        "ev": 3.4597562919441662
+      },
+      {
+        "player_id": "kylian_mbapp__fra",
+        "player_name": "Kylian Mbappe",
+        "team_id": "FRA",
+        "position": "FWD",
+        "price_m": 10.0,
+        "ev": 2.969889
       },
       {
         "player_id": "mike_maignan__fra",
@@ -140,7 +140,7 @@
         "team_id": "FRA",
         "position": "GK",
         "price_m": 5.0,
-        "ev": 3.1422770059166663
+        "ev": 2.4837942316249997
       },
       {
         "player_id": "christoph_baumgartner__aut",
@@ -148,7 +148,7 @@
         "team_id": "AUT",
         "position": "MID",
         "price_m": 3.5,
-        "ev": 3.861868974149061
+        "ev": 3.2105282791914163
       },
       {
         "player_id": "malik_tillman__usa",
@@ -156,15 +156,7 @@
         "team_id": "USA",
         "position": "MID",
         "price_m": 4.0,
-        "ev": 3.516255174149061
-      },
-      {
-        "player_id": "roberto_alvarado__mex",
-        "player_name": "Roberto Alvarado",
-        "team_id": "MEX",
-        "position": "MID",
-        "price_m": 2.5,
-        "ev": 3.501586548501851
+        "ev": 3.0875496721914164
       },
       {
         "player_id": "scott_mctominay__sco",
@@ -172,7 +164,15 @@
         "team_id": "SCO",
         "position": "MID",
         "price_m": 4.5,
-        "ev": 3.320511674149061
+        "ev": 3.0167373425664166
+      },
+      {
+        "player_id": "andreas_schjelderup__nor",
+        "player_name": "Andreas Schjelderup",
+        "team_id": "NOR",
+        "position": "MID",
+        "price_m": 3.5,
+        "ev": 3.0156222180039163
       }
     ]
   }

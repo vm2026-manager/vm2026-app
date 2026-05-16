@@ -4,7 +4,7 @@ VM 2026 APP DATA AUDIT
 1. Påkrævede app-filer
 ------------------------------------------------------------
 OK       player_pool_v1.json                 1457136
-OK       optimal_squads_by_formation.json    63167
+OK       optimal_squads_by_formation.json    88594
 OK       fixtures_group.csv                  2701
 OK       player_start_security_nt.csv        157435
 OK       match_odds_probs.csv                2391
@@ -28,13 +28,13 @@ Antal hold dækket: 48
 
 4. Optimizer vs app-data
 ------------------------------------------------------------
-OK    3-4-3 rækker=11 pris=39.000.000 pos={'DEF': 3, 'FWD': 3, 'GK': 1, 'MID': 4} match={'player_id': 11}
-OK    3-5-2 rækker=11 pris=38.000.000 pos={'DEF': 3, 'FWD': 2, 'GK': 1, 'MID': 5} match={'player_id': 11}
-OK    4-3-3 rækker=11 pris=37.500.000 pos={'DEF': 4, 'FWD': 3, 'GK': 1, 'MID': 3} match={'player_id': 11}
-OK    4-4-2 rækker=11 pris=37.500.000 pos={'DEF': 4, 'FWD': 2, 'GK': 1, 'MID': 4} match={'player_id': 11}
-OK    4-5-1 rækker=11 pris=38.000.000 pos={'DEF': 4, 'FWD': 1, 'GK': 1, 'MID': 5} match={'player_id': 11}
-OK    5-3-2 rækker=11 pris=36.000.000 pos={'DEF': 5, 'FWD': 2, 'GK': 1, 'MID': 3} match={'player_id': 11}
-OK    5-4-1 rækker=11 pris=37.500.000 pos={'DEF': 5, 'FWD': 1, 'GK': 1, 'MID': 4} match={'player_id': 11}
+OK    3-4-3 rækker=11 pris=50.000.000 pos={'DEF': 3, 'FWD': 3, 'GK': 1, 'MID': 4} match={'player_id': 11}
+OK    3-5-2 rækker=11 pris=50.000.000 pos={'DEF': 3, 'FWD': 2, 'GK': 1, 'MID': 5} match={'player_id': 11}
+OK    4-3-3 rækker=11 pris=50.000.000 pos={'DEF': 4, 'FWD': 3, 'GK': 1, 'MID': 3} match={'player_id': 11}
+OK    4-4-2 rækker=11 pris=49.500.000 pos={'DEF': 4, 'FWD': 2, 'GK': 1, 'MID': 4} match={'player_id': 11}
+OK    4-5-1 rækker=11 pris=49.000.000 pos={'DEF': 4, 'FWD': 1, 'GK': 1, 'MID': 5} match={'player_id': 11}
+OK    5-3-2 rækker=11 pris=49.000.000 pos={'DEF': 5, 'FWD': 2, 'GK': 1, 'MID': 3} match={'player_id': 11}
+OK    5-4-1 rækker=11 pris=50.000.000 pos={'DEF': 5, 'FWD': 1, 'GK': 1, 'MID': 4} match={'player_id': 11}
 
 5. Samlet vurdering
 ------------------------------------------------------------
