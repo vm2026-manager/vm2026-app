@@ -1,0 +1,335 @@
+{
+  "required_files": {
+    "player_pool_v1.json": {
+      "exists": true,
+      "path": "C:\\Users\\Administrator\\Desktop\\vm2026_local_app\\data\\player_pool_v1.json",
+      "size_bytes": 1457136
+    },
+    "optimal_squads_by_formation.json": {
+      "exists": true,
+      "path": "C:\\Users\\Administrator\\Desktop\\vm2026_local_app\\data\\optimal_squads_by_formation.json",
+      "size_bytes": 63167
+    },
+    "fixtures_group.csv": {
+      "exists": true,
+      "path": "C:\\Users\\Administrator\\Desktop\\vm2026_local_app\\data\\fixtures_group.csv",
+      "size_bytes": 2701
+    },
+    "player_start_security_nt.csv": {
+      "exists": true,
+      "path": "C:\\Users\\Administrator\\Desktop\\vm2026_local_app\\data\\player_start_security_nt.csv",
+      "size_bytes": 157435
+    },
+    "match_odds_probs.csv": {
+      "exists": true,
+      "path": "C:\\Users\\Administrator\\Desktop\\vm2026_local_app\\data\\match_odds_probs.csv",
+      "size_bytes": 2391
+    }
+  },
+  "player_pool": {
+    "player_count": 1290,
+    "unique_player_ids": 1290,
+    "duplicate_ids": [],
+    "position_counts": {
+      "DEF": 422,
+      "GK": 160,
+      "MID": 429,
+      "FWD": 279
+    },
+    "team_count": 48,
+    "missing_price_count": 0,
+    "missing_position_count": 0,
+    "missing_team_count": 0,
+    "sample_missing_price_ids": []
+  },
+  "match_odds_probs": {
+    "exists": true,
+    "row_count": 24,
+    "first_match_id": "1",
+    "last_match_id": "24",
+    "team_count": 48,
+    "teams": [
+      "ALG",
+      "ARG",
+      "AUS",
+      "AUT",
+      "BEL",
+      "BIH",
+      "BRA",
+      "CAN",
+      "CIV",
+      "COD",
+      "COL",
+      "CPV",
+      "CRO",
+      "CUW",
+      "CZE",
+      "ECU",
+      "EGY",
+      "ENG",
+      "ESP",
+      "FRA",
+      "GER",
+      "GHA",
+      "HAI",
+      "IRN",
+      "IRQ",
+      "JOR",
+      "JPN",
+      "KOR",
+      "KSA",
+      "MAR",
+      "MEX",
+      "NED",
+      "NOR",
+      "NZL",
+      "PAN",
+      "PAR",
+      "POR",
+      "QAT",
+      "RSA",
+      "SCO",
+      "SEN",
+      "SUI",
+      "SWE",
+      "TUN",
+      "TUR",
+      "URU",
+      "USA",
+      "UZB"
+    ]
+  },
+  "optimizer": {
+    "3-4-3": {
+      "row_count": 11,
+      "complete": true,
+      "valid": true,
+      "optimizer_position_counts": {
+        "DEF": 3,
+        "FWD": 3,
+        "GK": 1,
+        "MID": 4
+      },
+      "pool_total_price": 39000000,
+      "optimizer_total_price": 39000000,
+      "budget_total": 50000000,
+      "team_counts": {
+        "USA": 3,
+        "Portugal": 1,
+        "New Zealand": 1,
+        "Panama": 1,
+        "Morocco": 1,
+        "France": 1,
+        "Austria": 1,
+        "Mexico": 1,
+        "Scotland": 1
+      },
+      "match_methods": {
+        "player_id": 11
+      },
+      "issues": [],
+      "warnings": [],
+      "missing_players": [],
+      "position_mismatches": [],
+      "price_mismatches_sample": []
+    },
+    "3-5-2": {
+      "row_count": 11,
+      "complete": true,
+      "valid": true,
+      "optimizer_position_counts": {
+        "DEF": 3,
+        "FWD": 2,
+        "GK": 1,
+        "MID": 5
+      },
+      "pool_total_price": 38000000,
+      "optimizer_total_price": 38000000,
+      "budget_total": 50000000,
+      "team_counts": {
+        "USA": 3,
+        "Portugal": 1,
+        "New Zealand": 1,
+        "Panama": 1,
+        "France": 1,
+        "Austria": 1,
+        "Mexico": 1,
+        "Scotland": 1,
+        "Norway": 1
+      },
+      "match_methods": {
+        "player_id": 11
+      },
+      "issues": [],
+      "warnings": [],
+      "missing_players": [],
+      "position_mismatches": [],
+      "price_mismatches_sample": []
+    },
+    "4-3-3": {
+      "row_count": 11,
+      "complete": true,
+      "valid": true,
+      "optimizer_position_counts": {
+        "DEF": 4,
+        "FWD": 3,
+        "GK": 1,
+        "MID": 3
+      },
+      "pool_total_price": 37500000,
+      "optimizer_total_price": 37500000,
+      "budget_total": 50000000,
+      "team_counts": {
+        "USA": 3,
+        "Portugal": 1,
+        "New Zealand": 1,
+        "Tunisia": 1,
+        "Panama": 1,
+        "Morocco": 1,
+        "France": 1,
+        "Austria": 1,
+        "Mexico": 1
+      },
+      "match_methods": {
+        "player_id": 11
+      },
+      "issues": [],
+      "warnings": [],
+      "missing_players": [],
+      "position_mismatches": [],
+      "price_mismatches_sample": []
+    },
+    "4-4-2": {
+      "row_count": 11,
+      "complete": true,
+      "valid": true,
+      "optimizer_position_counts": {
+        "DEF": 4,
+        "FWD": 2,
+        "GK": 1,
+        "MID": 4
+      },
+      "pool_total_price": 37500000,
+      "optimizer_total_price": 37500000,
+      "budget_total": 50000000,
+      "team_counts": {
+        "USA": 3,
+        "Portugal": 1,
+        "New Zealand": 1,
+        "Tunisia": 1,
+        "Panama": 1,
+        "France": 1,
+        "Austria": 1,
+        "Mexico": 1,
+        "Scotland": 1
+      },
+      "match_methods": {
+        "player_id": 11
+      },
+      "issues": [],
+      "warnings": [],
+      "missing_players": [],
+      "position_mismatches": [],
+      "price_mismatches_sample": []
+    },
+    "4-5-1": {
+      "row_count": 11,
+      "complete": true,
+      "valid": true,
+      "optimizer_position_counts": {
+        "DEF": 4,
+        "FWD": 1,
+        "GK": 1,
+        "MID": 5
+      },
+      "pool_total_price": 38000000,
+      "optimizer_total_price": 38000000,
+      "budget_total": 50000000,
+      "team_counts": {
+        "USA": 2,
+        "Portugal": 1,
+        "New Zealand": 1,
+        "Tunisia": 1,
+        "Panama": 1,
+        "France": 1,
+        "Austria": 1,
+        "Mexico": 1,
+        "Scotland": 1,
+        "Norway": 1
+      },
+      "match_methods": {
+        "player_id": 11
+      },
+      "issues": [],
+      "warnings": [],
+      "missing_players": [],
+      "position_mismatches": [],
+      "price_mismatches_sample": []
+    },
+    "5-3-2": {
+      "row_count": 11,
+      "complete": true,
+      "valid": true,
+      "optimizer_position_counts": {
+        "DEF": 5,
+        "FWD": 2,
+        "GK": 1,
+        "MID": 3
+      },
+      "pool_total_price": 36000000,
+      "optimizer_total_price": 36000000,
+      "budget_total": 50000000,
+      "team_counts": {
+        "USA": 3,
+        "Portugal": 1,
+        "New Zealand": 1,
+        "Tunisia": 1,
+        "Austria": 2,
+        "Panama": 1,
+        "France": 1,
+        "Mexico": 1
+      },
+      "match_methods": {
+        "player_id": 11
+      },
+      "issues": [],
+      "warnings": [],
+      "missing_players": [],
+      "position_mismatches": [],
+      "price_mismatches_sample": []
+    },
+    "5-4-1": {
+      "row_count": 11,
+      "complete": true,
+      "valid": true,
+      "optimizer_position_counts": {
+        "DEF": 5,
+        "FWD": 1,
+        "GK": 1,
+        "MID": 4
+      },
+      "pool_total_price": 37500000,
+      "optimizer_total_price": 37500000,
+      "budget_total": 50000000,
+      "team_counts": {
+        "USA": 2,
+        "Portugal": 1,
+        "New Zealand": 1,
+        "Tunisia": 1,
+        "Austria": 2,
+        "Panama": 1,
+        "France": 1,
+        "Mexico": 1,
+        "Scotland": 1
+      },
+      "match_methods": {
+        "player_id": 11
+      },
+      "issues": [],
+      "warnings": [],
+      "missing_players": [],
+      "position_mismatches": [],
+      "price_mismatches_sample": []
+    }
+  }
+}
