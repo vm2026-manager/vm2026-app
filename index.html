@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="da">
 <head>
   <meta charset="UTF-8" />
@@ -368,6 +368,46 @@
     .slot.active .player-figure {
       outline: 3px solid #fde047;
       outline-offset: 3px;
+    }
+
+
+    .mini-player {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 46px;
+      flex: 0 0 auto;
+      overflow: visible;
+    }
+
+    .mini-player.pitch {
+      width: 42px;
+      height: 54px;
+      margin-bottom: 2px;
+    }
+
+    .mini-player.list {
+      width: 34px;
+      height: 44px;
+      margin-right: 8px;
+    }
+
+    .mini-player svg {
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      display: block;
+      filter: drop-shadow(5px 8px 1px rgba(0, 0, 0, 0.18));
+    }
+
+    .trade-player-visual {
+      width: 38px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 0 0 38px;
+      margin-right: 8px;
     }
 
     .flag-img {
@@ -826,6 +866,7 @@
       }
     }
   </style>
+
 </head>
 <body>
   <form class="autofill-trap" autocomplete="on" aria-hidden="true" tabindex="-1">
@@ -875,10 +916,11 @@
             <div class="formation-select-wrap">
               <strong>Formation</strong>
               <select id="formationSelect">
-                <option value="3-4-3">3-4-3</option>
+                
+                <option value="3-4-3" selected>3-4-3</option>
                 <option value="3-5-2">3-5-2</option>
                 <option value="4-3-3">4-3-3</option>
-                <option value="4-4-2" selected>4-4-2</option>
+                <option value="4-4-2">4-4-2</option>
                 <option value="4-5-1">4-5-1</option>
                 <option value="5-3-2">5-3-2</option>
                 <option value="5-4-1">5-4-1</option>
@@ -1049,7 +1091,7 @@
     let matchOddsRows = [];
     let currentUser = null;
     let squad = JSON.parse(localStorage.getItem(STORAGE_KEYS.squad) || "{}");
-    let currentFormation = localStorage.getItem(STORAGE_KEYS.formation) || "4-4-2";
+    let currentFormation = localStorage.getItem(STORAGE_KEYS.formation) || "3-4-3";
     let activeSlotKey = null;
     let squadHistory = [];
     let autosaveTimer = null;
@@ -1149,7 +1191,196 @@
       return `https://flagcdn.com/24x18/${flagCode}.png`;
     }
 
-    function saveState() {
+
+    const TEAM_ID_TO_FLAG_CODE = {
+      ARG: "ar",
+      AUS: "au",
+      AUT: "at",
+      BEL: "be",
+      BIH: "ba",
+      BRA: "br",
+      CAN: "ca",
+      CIV: "ci",
+      COL: "co",
+      COD: "cd",
+      CPV: "cv",
+      CRO: "hr",
+      CUW: "cw",
+      CZE: "cz",
+      DEN: "dk",
+      ECU: "ec",
+      EGY: "eg",
+      ENG: "gb-eng",
+      ESP: "es",
+      FRA: "fr",
+      GER: "de",
+      GHA: "gh",
+      HAI: "ht",
+      IRN: "ir",
+      IRQ: "iq",
+      ITA: "it",
+      JOR: "jo",
+      JPN: "jp",
+      KOR: "kr",
+      KSA: "sa",
+      MAR: "ma",
+      MEX: "mx",
+      NED: "nl",
+      NOR: "no",
+      NZL: "nz",
+      PAN: "pa",
+      PAR: "py",
+      POR: "pt",
+      QAT: "qa",
+      RSA: "za",
+      SCO: "gb-sct",
+      SEN: "sn",
+      SUI: "ch",
+      SWE: "se",
+      TUN: "tn",
+      TUR: "tr",
+      URU: "uy",
+      USA: "us",
+      UZB: "uz"
+    };
+
+    function getPlayerFlagCode(player) {
+      if (!player) return "";
+      if (player.flag_code) return String(player.flag_code).toLowerCase();
+
+      const teamId = normalizeTeamId(player.team_id || player.team_name || "");
+      return TEAM_ID_TO_FLAG_CODE[teamId] || "";
+    }
+
+
+    
+
+    const TEAM_VISUAL_COLORS = {
+      ARG: ["#75aadb", "#ffffff", "#111827"],
+      AUT: ["#ef4444", "#ffffff", "#ef4444"],
+      BEL: ["#ef4444", "#111827", "#facc15"],
+      BRA: ["#facc15", "#2563eb", "#16a34a"],
+      COL: ["#facc15", "#1d4ed8", "#dc2626"],
+      CRO: ["#ffffff", "#dc2626", "#1d4ed8"],
+      DEN: ["#dc2626", "#ffffff", "#dc2626"],
+      ENG: ["#ffffff", "#1f2937", "#dc2626"],
+      ESP: ["#dc2626", "#1e40af", "#facc15"],
+      FRA: ["#1d4ed8", "#ffffff", "#dc2626"],
+      GER: ["#ffffff", "#111827", "#dc2626"],
+      ITA: ["#2563eb", "#ffffff", "#dc2626"],
+      JPN: ["#ffffff", "#1f2937", "#dc2626"],
+      MAR: ["#dc2626", "#15803d", "#ffffff"],
+      MEX: ["#16a34a", "#ffffff", "#dc2626"],
+      NED: ["#f97316", "#111827", "#ffffff"],
+      NOR: ["#dc2626", "#1e40af", "#ffffff"],
+      POR: ["#dc2626", "#15803d", "#facc15"],
+      SUI: ["#dc2626", "#ffffff", "#dc2626"],
+      URU: ["#7dd3fc", "#111827", "#ffffff"],
+      USA: ["#ffffff", "#1e40af", "#dc2626"]
+    };
+
+    function sanitizeHexColor(value, fallback) {
+      const text = String(value || "").trim();
+      return /^#[0-9a-fA-F]{6}$/.test(text) ? text : fallback;
+    }
+
+    function getTeamVisualColors(player) {
+      const teamId = normalizeTeamId(player?.team_id || player?.team_name || "");
+      return TEAM_VISUAL_COLORS[teamId] || ["#6b7280", "#111827", "#ffffff"];
+    }
+
+    function renderPlayerVisual(player, variant = "list") {
+      if (!player) return "";
+
+      const appearance = player.holdet_appearance || {};
+      const [shirt, shorts, trim] = getTeamVisualColors(player);
+      const skin = sanitizeHexColor(appearance.skinColor, "#E9A58D");
+      const hair = sanitizeHexColor(appearance.hairColor, "#2b1a12");
+      const hairStyle = String(appearance.hairStyle || "").toLowerCase();
+
+      const isLongHair = hairStyle.includes("long");
+      const hairPath = isLongHair
+        ? `<path d="M24 7 C17 6 12 10 12 19 C12 25 15 29 19 30 L20 22 C17 20 17 14 21 12 C25 9 31 11 32 17 L35 29 C40 26 41 17 38 12 C35 8 30 7 24 7Z" fill="${hair}"/>`
+        : `<path d="M14 16 C15 8 21 5 29 7 C35 8 39 12 38 18 C32 14 27 14 20 17 C18 16 16 16 14 16Z" fill="${hair}"/>`;
+
+      const shirtPattern = `
+        <path d="M17 31 L31 55" stroke="rgba(0,0,0,0.16)" stroke-width="3"/>
+        <path d="M22 29 L36 53" stroke="rgba(255,255,255,0.16)" stroke-width="2"/>
+        <path d="M12 40 L29 30 L45 40" fill="none" stroke="rgba(0,0,0,0.13)" stroke-width="3"/>
+      `;
+
+      return `
+        <span class="mini-player ${variant}" title="${player.player_name || ""}">
+          <svg viewBox="0 0 54 78" role="img" aria-label="${player.player_name || "Spiller"}">
+            <ellipse cx="31" cy="72" rx="17" ry="4" fill="rgba(0,0,0,0.18)"/>
+
+            <!-- arms -->
+            <path d="M13 33 C8 39 7 47 10 52" fill="none" stroke="${skin}" stroke-width="7" stroke-linecap="round"/>
+            <path d="M42 33 C47 39 48 47 45 52" fill="none" stroke="${skin}" stroke-width="7" stroke-linecap="round"/>
+
+            <!-- legs -->
+            <path d="M22 54 L20 67" stroke="${skin}" stroke-width="7" stroke-linecap="round"/>
+            <path d="M34 54 L36 67" stroke="${skin}" stroke-width="7" stroke-linecap="round"/>
+
+            <!-- socks -->
+            <path d="M20 62 L18 70" stroke="${trim}" stroke-width="6" stroke-linecap="round"/>
+            <path d="M36 62 L38 70" stroke="${trim}" stroke-width="6" stroke-linecap="round"/>
+
+            <!-- boots -->
+            <path d="M14 72 C18 68 22 69 25 72 C22 76 16 76 14 72Z" fill="#1f2937"/>
+            <path d="M34 72 C38 69 43 69 46 72 C43 76 36 76 34 72Z" fill="#1f2937"/>
+
+            <!-- shorts -->
+            <path d="M18 50 L28 50 L26 61 L18 61Z" fill="${shorts}"/>
+            <path d="M29 50 L39 50 L40 61 L31 61Z" fill="${shorts}"/>
+
+            <!-- shirt body -->
+            <path d="M16 27
+                     C19 24 22 23 27 23
+                     C32 23 36 24 39 27
+                     L45 41
+                     L38 45
+                     L37 55
+                     L18 55
+                     L17 45
+                     L10 41
+                     Z"
+                  fill="${shirt}"/>
+            ${shirtPattern}
+
+            <!-- collar -->
+            <path d="M22 25 L27 32 L33 25" fill="none" stroke="${trim}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M23 24 L27 30 L32 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+            <!-- neck -->
+            <rect x="24" y="19" width="8" height="8" rx="3" fill="${skin}"/>
+
+            <!-- head -->
+            <ellipse cx="28" cy="15" rx="10" ry="11" fill="${skin}"/>
+            ${hairPath}
+
+            <!-- face -->
+            <circle cx="24" cy="16" r="1.2" fill="#111827"/>
+            <circle cx="32" cy="16" r="1.2" fill="#111827"/>
+            <path d="M25 21 C28 23 31 23 33 20" fill="none" stroke="rgba(0,0,0,0.45)" stroke-width="1.2" stroke-linecap="round"/>
+
+            <!-- subtle outline -->
+            <path d="M16 27
+                     C19 24 22 23 27 23
+                     C32 23 36 24 39 27
+                     L45 41
+                     L38 45
+                     L37 55
+                     L18 55
+                     L17 45
+                     L10 41
+                     Z"
+                  fill="none" stroke="rgba(0,0,0,0.22)" stroke-width="1.2"/>
+          </svg>
+        </span>
+      `;
+    }
+function saveState() {
       localStorage.setItem(STORAGE_KEYS.squad, JSON.stringify(squad));
       localStorage.setItem(STORAGE_KEYS.formation, currentFormation);
       localStorage.setItem(STORAGE_KEYS.eligibleOnly, eligibleOnly ? "1" : "0");
@@ -2187,7 +2418,7 @@
         const missingPositions = cheapestDetails
           .filter(x => !x.player)
           .map(x => `${x.position} (${x.slotKey})`);
-        showStatus(`Mindst én tom plads har ingen gyldige kandidater i spillerpuljen: ${missingPositions.join(", ")}.`, "error");
+        showStatus(`Mindst Ã©n tom plads har ingen gyldige kandidater i spillerpuljen: ${missingPositions.join(", ")}.`, "error");
         return;
       }
 
@@ -2325,7 +2556,7 @@
 
       const slotHtml = slots.map(slot => {
         const player = getPlayerById(squad[slot.key]);
-        const flagUrl = player ? getFlagUrl(player.flag_code) : "";
+        const flagUrl = player ? getFlagUrl(getPlayerFlagCode(player)) : "";
         const isActive = activeSlotKey === slot.key ? "active" : "";
         const nextText = player ? nextMatchText(player.team_id) : "";
         const startBadge = player ? getStartBadge(player) : null;
@@ -2739,7 +2970,7 @@
       }
 
       isApplyingRemoteSquad = true;
-      currentFormation = data.formation || "4-4-2";
+      currentFormation = FORMATIONS[data.formation] ? data.formation : "3-4-3";
       formationSelect.value = currentFormation;
       squad = typeof data.squad_json === "object" && data.squad_json ? data.squad_json : {};
       activeSlotKey = null;
@@ -2951,3 +3182,6 @@
   </script>
 </body>
 </html>
+
+
+
