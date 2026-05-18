@@ -3,12 +3,12 @@
     "player_pool_v1.json": {
       "exists": true,
       "path": "C:\\Users\\Administrator\\Desktop\\vm2026_local_app\\data\\player_pool_v1.json",
-      "size_bytes": 1457136
+      "size_bytes": 1685370
     },
     "optimal_squads_by_formation.json": {
       "exists": true,
       "path": "C:\\Users\\Administrator\\Desktop\\vm2026_local_app\\data\\optimal_squads_by_formation.json",
-      "size_bytes": 88594
+      "size_bytes": 370342
     },
     "fixtures_group.csv": {
       "exists": true,
@@ -105,24 +105,19 @@
       "complete": true,
       "valid": true,
       "optimizer_position_counts": {
-        "DEF": 3,
-        "FWD": 3,
         "GK": 1,
-        "MID": 4
+        "DEF": 3,
+        "MID": 4,
+        "FWD": 3
       },
       "pool_total_price": 50000000,
       "optimizer_total_price": 50000000,
       "budget_total": 50000000,
       "team_counts": {
-        "Portugal": 1,
-        "USA": 2,
-        "Tunisia": 1,
-        "Morocco": 1,
-        "Mexico": 1,
-        "France": 2,
-        "Austria": 1,
-        "Scotland": 1,
-        "Norway": 1
+        "France": 4,
+        "Spain": 4,
+        "Germany": 1,
+        "Brazil": 2
       },
       "match_methods": {
         "player_id": 11
@@ -138,24 +133,20 @@
       "complete": true,
       "valid": true,
       "optimizer_position_counts": {
-        "DEF": 3,
-        "FWD": 2,
         "GK": 1,
-        "MID": 5
+        "DEF": 3,
+        "MID": 5,
+        "FWD": 2
       },
       "pool_total_price": 50000000,
       "optimizer_total_price": 50000000,
       "budget_total": 50000000,
       "team_counts": {
-        "Portugal": 1,
-        "USA": 2,
-        "Tunisia": 1,
-        "Morocco": 1,
-        "France": 2,
-        "Austria": 1,
-        "Scotland": 1,
-        "Norway": 1,
-        "Türkiye": 1
+        "France": 4,
+        "Spain": 4,
+        "Argentina": 1,
+        "Germany": 1,
+        "Brazil": 1
       },
       "match_methods": {
         "player_id": 11
@@ -171,24 +162,20 @@
       "complete": true,
       "valid": true,
       "optimizer_position_counts": {
-        "DEF": 4,
-        "FWD": 3,
         "GK": 1,
-        "MID": 3
+        "DEF": 4,
+        "MID": 3,
+        "FWD": 3
       },
       "pool_total_price": 50000000,
       "optimizer_total_price": 50000000,
       "budget_total": 50000000,
       "team_counts": {
-        "Portugal": 1,
-        "USA": 2,
-        "Tunisia": 1,
-        "Croatia": 1,
-        "Morocco": 1,
-        "Mexico": 1,
-        "France": 2,
-        "Austria": 1,
-        "Scotland": 1
+        "France": 3,
+        "Spain": 4,
+        "Argentina": 1,
+        "Germany": 1,
+        "Brazil": 2
       },
       "match_methods": {
         "player_id": 11
@@ -204,24 +191,20 @@
       "complete": true,
       "valid": true,
       "optimizer_position_counts": {
-        "DEF": 4,
-        "FWD": 2,
         "GK": 1,
-        "MID": 4
+        "DEF": 4,
+        "MID": 4,
+        "FWD": 2
       },
-      "pool_total_price": 49500000,
-      "optimizer_total_price": 49500000,
+      "pool_total_price": 50000000,
+      "optimizer_total_price": 50000000,
       "budget_total": 50000000,
       "team_counts": {
-        "Portugal": 1,
-        "USA": 2,
-        "Tunisia": 1,
-        "Croatia": 1,
-        "France": 2,
-        "Senegal": 1,
-        "Austria": 1,
-        "Scotland": 1,
-        "Norway": 1
+        "France": 4,
+        "Spain": 4,
+        "Argentina": 1,
+        "Germany": 1,
+        "Brazil": 1
       },
       "match_methods": {
         "player_id": 11
@@ -237,24 +220,21 @@
       "complete": true,
       "valid": true,
       "optimizer_position_counts": {
-        "DEF": 4,
-        "FWD": 1,
         "GK": 1,
-        "MID": 5
+        "DEF": 4,
+        "MID": 5,
+        "FWD": 1
       },
-      "pool_total_price": 49000000,
-      "optimizer_total_price": 49000000,
+      "pool_total_price": 50000000,
+      "optimizer_total_price": 50000000,
       "budget_total": 50000000,
       "team_counts": {
-        "Portugal": 1,
-        "USA": 2,
-        "Tunisia": 1,
-        "Croatia": 1,
-        "France": 2,
-        "Austria": 1,
-        "Scotland": 1,
-        "Norway": 1,
-        "Türkiye": 1
+        "France": 3,
+        "Spain": 4,
+        "Argentina": 1,
+        "Germany": 1,
+        "Brazil": 1,
+        "England": 1
       },
       "match_methods": {
         "player_id": 11
@@ -270,23 +250,20 @@
       "complete": true,
       "valid": true,
       "optimizer_position_counts": {
-        "DEF": 5,
-        "FWD": 2,
         "GK": 1,
-        "MID": 3
+        "DEF": 5,
+        "MID": 3,
+        "FWD": 2
       },
-      "pool_total_price": 49000000,
-      "optimizer_total_price": 49000000,
+      "pool_total_price": 50000000,
+      "optimizer_total_price": 50000000,
       "budget_total": 50000000,
       "team_counts": {
-        "Portugal": 1,
-        "USA": 2,
-        "Tunisia": 1,
-        "Croatia": 1,
-        "Austria": 2,
-        "France": 2,
-        "Senegal": 1,
-        "Scotland": 1
+        "France": 4,
+        "Spain": 4,
+        "Argentina": 1,
+        "Germany": 1,
+        "Portugal": 1
       },
       "match_methods": {
         "player_id": 11
@@ -302,22 +279,21 @@
       "complete": true,
       "valid": true,
       "optimizer_position_counts": {
-        "DEF": 5,
-        "FWD": 1,
         "GK": 1,
-        "MID": 4
+        "DEF": 5,
+        "MID": 4,
+        "FWD": 1
       },
       "pool_total_price": 50000000,
       "optimizer_total_price": 50000000,
       "budget_total": 50000000,
       "team_counts": {
-        "Portugal": 2,
-        "USA": 2,
-        "Tunisia": 1,
-        "Croatia": 1,
-        "Austria": 2,
-        "France": 2,
-        "Norway": 1
+        "France": 3,
+        "Spain": 4,
+        "Argentina": 1,
+        "Germany": 1,
+        "Portugal": 1,
+        "Brazil": 1
       },
       "match_methods": {
         "player_id": 11

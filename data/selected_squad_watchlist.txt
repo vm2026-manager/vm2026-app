@@ -1,0 +1,17 @@
+SELECTED SQUAD WATCHLIST
+================================================================================
+Formation: 3-4-3
+Score: 171.414
+
+Spillere til manuel vurdering:
+
+- Daniel Vivian | ESP | DEF | start=59.4% | pris=3.5 | Middel/usikker startsandsynlighed; Billig spiller kan være proxy/value-pick
+- Lucas Digne | FRA | DEF | start=74.2% | pris=3.5 | Middel/usikker startsandsynlighed; Billig spiller kan være proxy/value-pick
+- Maximilian Mittelstädt | GER | DEF | start=71.5% | pris=3.5 | Middel/usikker startsandsynlighed; Billig spiller kan være proxy/value-pick
+- Aurelien Tchouameni | FRA | MID | start=73.8% | pris=3.5 | Middel/usikker startsandsynlighed; Billig spiller kan være proxy/value-pick
+- Manu Koné | FRA | MID | start=74.0% | pris=3.5 | Middel/usikker startsandsynlighed; Billig spiller kan være proxy/value-pick
+
+Note:
+- Denne fil ændrer ikke modellen.
+- Brug den kun som observationsliste frem mod de sidste testkampe før VM.
+- Startdata bør først justeres hårdt, når trupper og startellevere er mere sikre.
