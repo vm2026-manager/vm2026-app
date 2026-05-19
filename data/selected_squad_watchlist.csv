@@ -1,0 +1,12 @@
+﻿formation,player_name,team_id,position,price_m,start_probability_pct,team_market_score,winner_odds,optimizer_ev_adj,watch_flag,watch_reason,manual_note
+3-4-3,Mike Maignan,FRA,GK,5.0,98.0,0.7872569444444444,7.0,17.043603112599207,,,
+3-4-3,Daniel Vivian,ESP,DEF,3.5,59.4,0.9759615384615384,5.5,13.388251442307693,JA,Middel/usikker startsandsynlighed; Billig spiller kan være proxy/value-pick,
+3-4-3,Lucas Digne,FRA,DEF,3.5,74.2,0.7872569444444444,7.0,12.623153112599205,JA,Middel/usikker startsandsynlighed; Billig spiller kan være proxy/value-pick,
+3-4-3,Maximilian Mittelstädt,GER,DEF,3.5,71.5,0.6727273612463485,13.0,11.528438626359138,JA,Middel/usikker startsandsynlighed; Billig spiller kan være proxy/value-pick,
+3-4-3,Casemiro,BRA,MID,4.5,90.2,0.7698859126984127,9.0,15.626483891369048,,,
+3-4-3,Martin Zubimendi,ESP,MID,3.5,88.3,0.9759615384615384,5.5,14.739068750000001,,Billig spiller kan være proxy/value-pick,
+3-4-3,Aurelien Tchouameni,FRA,MID,3.5,73.8,0.7872569444444444,7.0,12.881478038194444,JA,Middel/usikker startsandsynlighed; Billig spiller kan være proxy/value-pick,
+3-4-3,Manu Koné,FRA,MID,3.5,74.0,0.7872569444444444,7.0,12.887878038194444,JA,Middel/usikker startsandsynlighed; Billig spiller kan være proxy/value-pick,
+3-4-3,Vinicius Junior,BRA,FWD,7.5,85.1,0.7698859126984127,9.0,21.610583891369046,,,
+3-4-3,Mikel Oyarzabal,ESP,FWD,7.5,77.9,0.9759615384615384,5.5,22.31116875,,,
+3-4-3,Nico Williams,ESP,FWD,4.5,80.2,0.9759615384615384,5.5,16.77426875,,,
