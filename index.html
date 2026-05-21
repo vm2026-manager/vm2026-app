@@ -2394,6 +2394,108 @@ function saveState() {
       return partialSolution;
     }
 
+
+    function improveFilledSolutionBudgetUse(solution, emptySlots, usedIdsBase, teamCountsBase, bankLeft) {
+      const maxAcceptableBankAfterFill = 500000;
+      const improved = { ...solution };
+      const slotByKey = Object.fromEntries(emptySlots.map(slot => [slot.key, slot]));
+
+      function buildState(currentSolution) {
+        const usedIds = new Set(usedIdsBase);
+        const teamCounts = { ...teamCountsBase };
+        let extraSpent = 0;
+
+        for (const [slotKey, playerId] of Object.entries(currentSolution)) {
+          const player = getPlayerById(playerId);
+          if (!player) continue;
+
+          usedIds.add(String(player.player_id));
+          const teamKey = player.team_id || player.team_name || "";
+          teamCounts[teamKey] = (teamCounts[teamKey] || 0) + 1;
+          extraSpent += getPlayerPrice(player);
+        }
+
+        return { usedIds, teamCounts, extraSpent };
+      }
+
+      for (let round = 0; round < 30; round++) {
+        const state = buildState(improved);
+        const remainingBank = bankLeft - state.extraSpent;
+
+        if (remainingBank <= maxAcceptableBankAfterFill) {
+          return improved;
+        }
+
+        let bestSwap = null;
+
+        for (const [slotKey, currentPlayerId] of Object.entries(improved)) {
+          const slot = slotByKey[slotKey];
+          const currentPlayer = getPlayerById(currentPlayerId);
+          if (!slot || !currentPlayer) continue;
+
+          const currentPrice = getPlayerPrice(currentPlayer);
+          const currentScore = getPlayerScore(currentPlayer);
+
+          const usedIdsWithoutCurrent = new Set(state.usedIds);
+          usedIdsWithoutCurrent.delete(String(currentPlayer.player_id));
+
+          const teamCountsWithoutCurrent = { ...state.teamCounts };
+          const currentTeamKey = currentPlayer.team_id || currentPlayer.team_name || "";
+          if (currentTeamKey) {
+            teamCountsWithoutCurrent[currentTeamKey] = (teamCountsWithoutCurrent[currentTeamKey] || 1) - 1;
+            if (teamCountsWithoutCurrent[currentTeamKey] <= 0) delete teamCountsWithoutCurrent[currentTeamKey];
+          }
+
+          const slotBank = remainingBank + currentPrice;
+          const candidates = getEligiblePlayersForSlot(slot, usedIdsWithoutCurrent, teamCountsWithoutCurrent, slotBank)
+            .slice(0, 450);
+
+          for (const candidate of candidates) {
+            if (String(candidate.player_id) === String(currentPlayer.player_id)) continue;
+
+            const candidatePrice = getPlayerPrice(candidate);
+            const extraCost = candidatePrice - currentPrice;
+            if (extraCost <= 0 || extraCost > remainingBank) continue;
+
+            const bankAfterSwap = remainingBank - extraCost;
+            const candidateScore = getPlayerScore(candidate);
+            const scoreDelta = candidateScore - currentScore;
+
+            // Prioritet:
+            // 1) Ram maks 1,5 mio. i bank, hvis muligt
+            // 2) Brug mere budget
+            // 3) Undgå for stort kvalitetstab
+            const hitsBudgetTarget = bankAfterSwap <= maxAcceptableBankAfterFill ? 1 : 0;
+            const qualityPenalty = Math.max(0, -scoreDelta);
+            const metric =
+              hitsBudgetTarget * 1000000000
+              + extraCost / 1000
+              + scoreDelta * 1000
+              - qualityPenalty * 3000;
+
+            if (!bestSwap || metric > bestSwap.metric) {
+              bestSwap = {
+                slotKey,
+                player: candidate,
+                metric,
+                bankAfterSwap,
+                extraCost,
+                scoreDelta
+              };
+            }
+          }
+        }
+
+        if (!bestSwap) {
+          return improved;
+        }
+
+        improved[bestSwap.slotKey] = bestSwap.player.player_id;
+      }
+
+      return improved;
+    }
+
     function fillMissingSlotsOptimally() {
       const emptySlots = getEmptySlots();
 
@@ -2522,10 +2624,24 @@ function saveState() {
         return;
       }
 
+      solution = improveFilledSolutionBudgetUse(solution, emptySlots, usedIdsBase, teamCountsBase, bankLeft);
+
       const candidateSquad = { ...squad, ...solution };
       const issues = getSquadConstraintIssues(candidateSquad);
       if (issues.length) {
         showStatus(`Udfyldningen blev stoppet, fordi resultatet ville være ugyldigt: ${issues.join(" · ")}`, "error");
+        return;
+      }
+
+      const spentAfterFill = getSpentBudget(candidateSquad);
+      const bankAfterFill = BUDGET_TOTAL - spentAfterFill;
+      const maxAcceptableBankAfterFill = 500000;
+
+      if (bankAfterFill > maxAcceptableBankAfterFill) {
+        showStatus(
+          `Der findes en gyldig fuld udfyldning, men appen kunne ikke finde en fornuftig løsning, der bruger budgettet nok. Den bedste fundne løsning efterlod ${formatMoney(bankAfterFill)} i banken. Justér evt. én af dine låste spillere manuelt.`,
+          "error"
+        );
         return;
       }
 

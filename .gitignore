@@ -1,11 +1,2 @@
-﻿tools/patch_*.py
-tools/apply_starter_sanity_to_squads.py
-tools/add_manual_start_overrides_to_optimizer.py
-tools/patch_player_visuals*.py
-tools/rollback_pitch_to_flags.py
-data/transfermarkt_national_team/
-__pycache__/
-tools/__pycache__/
-*.pyc
-*.backup*
-data/*.backup*
+
+tools/_archive_patch_files/
