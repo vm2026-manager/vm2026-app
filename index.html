@@ -3296,6 +3296,332 @@ function saveState() {
 
     init();
   </script>
+
+<!-- STRATEGY_LAYOUT_UI_PATCH_V1 -->
+<style id="strategy-layout-ui-patch">
+  .vm26-topbar-enhanced {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+
+  .vm26-topbar-title {
+    min-width: 180px;
+  }
+
+  .vm26-topbar-title h1,
+  .vm26-topbar-title h2,
+  .vm26-topbar-title h3 {
+    margin: 0;
+  }
+
+  .vm26-topbar-stats {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-left: auto;
+  }
+
+  .vm26-topbar-stats > * {
+    min-width: 110px;
+    max-width: 130px;
+  }
+
+  .vm26-topbar-stats > * * {
+    box-sizing: border-box;
+  }
+
+  .vm26-strategy-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 8px 0 12px;
+  }
+
+  .vm26-strategy-label {
+    font-size: 13px;
+    font-weight: 700;
+    opacity: 0.9;
+  }
+
+  .vm26-strategy-group {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .vm26-strategy-item {
+    position: relative;
+  }
+
+  .vm26-strategy-btn {
+    border: 1px solid rgba(15, 24, 49, 0.18);
+    background: #ffffff;
+    color: #0f1831;
+    border-radius: 999px;
+    padding: 7px 12px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+    transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+    white-space: nowrap;
+  }
+
+  .vm26-strategy-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(15, 24, 49, 0.10);
+  }
+
+  .vm26-strategy-btn.is-active {
+    background: #0f1831;
+    color: #ffffff;
+    border-color: #0f1831;
+  }
+
+  .vm26-strategy-tip {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    z-index: 50;
+    width: 250px;
+    background: #0f1831;
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 10px 12px;
+    font-size: 12px;
+    line-height: 1.35;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-4px);
+    transition: opacity 0.14s ease, transform 0.14s ease;
+  }
+
+  .vm26-strategy-item:hover .vm26-strategy-tip,
+  .vm26-strategy-item:focus-within .vm26-strategy-tip {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .vm26-strategy-tip strong {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+  }
+
+  @media (max-width: 900px) {
+    .vm26-topbar-enhanced {
+      align-items: stretch;
+    }
+
+    .vm26-topbar-stats {
+      width: 100%;
+      justify-content: flex-start;
+    }
+
+    .vm26-topbar-stats > * {
+      min-width: 96px;
+      max-width: none;
+    }
+
+    .vm26-strategy-tip {
+      width: 220px;
+    }
+  }
+</style>
+
+<script id="strategy-layout-ui-patch-script">
+(function () {
+  function normText(el) {
+    return (el?.textContent || "").replace(/\s+/g, " ").trim();
+  }
+
+  function isVisible(el) {
+    return !!(el && el.offsetParent !== null);
+  }
+
+  function findHeading() {
+    const nodes = Array.from(document.querySelectorAll("h1, h2, h3"));
+    return nodes.find(el => /mit hold/i.test(normText(el)));
+  }
+
+  function findCardByLabel(panel, label) {
+    const nodes = Array.from(panel.querySelectorAll("div, section, article"));
+    return nodes.find(el => {
+      const txt = normText(el);
+      if (!txt) return false;
+      if (!txt.startsWith(label)) return false;
+      if (!isVisible(el)) return false;
+      return true;
+    });
+  }
+
+  function tryHideEmptyParent(el, root) {
+    const parent = el && el.parentElement;
+    if (!parent || parent === root) return;
+    const hasElementChildren = parent.children.length > 0;
+    const ownText = parent.textContent.replace(/\s+/g, "").trim();
+    if (!hasElementChildren && ownText === "") {
+      parent.style.display = "none";
+    }
+  }
+
+  function findBestInsertAnchor(panel) {
+    const buttons = Array.from(panel.querySelectorAll("button"));
+    const fillBtn = buttons.find(btn => /fyld mangler optimalt/i.test(normText(btn)));
+    if (fillBtn && fillBtn.parentElement) return fillBtn.parentElement;
+
+    const chooseBtn = buttons.find(btn => /vælg optimalt hold/i.test(normText(btn)));
+    if (chooseBtn && chooseBtn.parentElement) return chooseBtn.parentElement;
+
+    const formationSelect = Array.from(panel.querySelectorAll("select")).find(sel => {
+      return Array.from(sel.options).some(o => /(3-4-3|4-4-2|4-3-3|3-5-2|5-4-1)/.test(o.textContent || ""));
+    });
+    if (formationSelect) {
+      return formationSelect.closest("div") || formationSelect.parentElement;
+    }
+
+    return null;
+  }
+
+  function buildStrategyRow() {
+    const wrap = document.createElement("div");
+    wrap.className = "vm26-strategy-row";
+    wrap.innerHTML = `
+      <div class="vm26-strategy-label">Strategi</div>
+      <div class="vm26-strategy-group">
+        <div class="vm26-strategy-item">
+          <button type="button" class="vm26-strategy-btn" data-strategy="longterm">Langsigtet</button>
+          <div class="vm26-strategy-tip">
+            <strong>Langsigtet</strong>
+            Prioriterer hold og spillere med god chance for at nå langt i turneringen.
+            Tænkt til færre tidlige udskiftninger.
+          </div>
+        </div>
+
+        <div class="vm26-strategy-item">
+          <button type="button" class="vm26-strategy-btn is-active" data-strategy="balanced">50/50</button>
+          <div class="vm26-strategy-tip">
+            <strong>50/50</strong>
+            Balancerer gode gruppekampe tidligt med sandsynligheden for at gå langt.
+            Bliver formentlig standardmodellen.
+          </div>
+        </div>
+
+        <div class="vm26-strategy-item">
+          <button type="button" class="vm26-strategy-btn" data-strategy="shortterm">Gruppefase</button>
+          <div class="vm26-strategy-tip">
+            <strong>Gruppefase</strong>
+            Skal senere vægte især de første 1-2 gruppekampe højere, hvor de største mismatch kan udnyttes.
+          </div>
+        </div>
+      </div>
+    `;
+
+    wrap.querySelectorAll(".vm26-strategy-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        wrap.querySelectorAll(".vm26-strategy-btn").forEach(x => x.classList.remove("is-active"));
+        btn.classList.add("is-active");
+        window.vm2026StrategyMode = btn.dataset.strategy;
+      });
+    });
+
+    return wrap;
+  }
+
+  function enhanceTeamPanel() {
+    if (document.getElementById("vm26-strategy-layout-marker")) return;
+
+    const heading = findHeading();
+    if (!heading) return;
+
+    const panel =
+      heading.closest("section") ||
+      heading.closest("article") ||
+      heading.closest(".card") ||
+      heading.parentElement;
+
+    if (!panel) return;
+
+    const headingParent = heading.parentElement;
+    const headingContainer = document.createElement("div");
+    headingContainer.className = "vm26-topbar-title";
+
+    const stats = [
+      findCardByLabel(panel, "Brugt"),
+      findCardByLabel(panel, "Bank"),
+      findCardByLabel(panel, "Spillere")
+    ].filter(Boolean);
+
+    if (stats.length >= 2) {
+      const topbar = document.createElement("div");
+      topbar.className = "vm26-topbar-enhanced";
+      topbar.id = "vm26-strategy-layout-marker";
+
+      const statsWrap = document.createElement("div");
+      statsWrap.className = "vm26-topbar-stats";
+
+      headingParent.insertBefore(topbar, heading);
+      topbar.appendChild(headingContainer);
+      headingContainer.appendChild(heading);
+      topbar.appendChild(statsWrap);
+
+      const originalParents = [];
+      stats.forEach(card => {
+        if (card.parentElement && !originalParents.includes(card.parentElement)) {
+          originalParents.push(card.parentElement);
+        }
+        statsWrap.appendChild(card);
+      });
+
+      originalParents.forEach(parent => {
+        if (parent !== panel && parent.children.length === 0) {
+          parent.style.display = "none";
+        }
+      });
+    } else {
+      const marker = document.createElement("div");
+      marker.id = "vm26-strategy-layout-marker";
+      headingParent.insertBefore(marker, heading);
+      marker.appendChild(heading);
+      marker.className = "vm26-topbar-enhanced";
+
+      const headingWrap = document.createElement("div");
+      headingWrap.className = "vm26-topbar-title";
+      marker.appendChild(headingWrap);
+      headingWrap.appendChild(heading);
+    }
+
+    const anchor = findBestInsertAnchor(panel);
+    if (anchor && !panel.querySelector(".vm26-strategy-row")) {
+      const strategyRow = buildStrategyRow();
+      anchor.parentElement.insertBefore(strategyRow, anchor.nextSibling);
+    }
+  }
+
+  function boot() {
+    enhanceTeamPanel();
+    setTimeout(enhanceTeamPanel, 400);
+    setTimeout(enhanceTeamPanel, 1200);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", boot);
+  } else {
+    boot();
+  }
+})();
+</script>
+<!-- /STRATEGY_LAYOUT_UI_PATCH_V1 -->
+
 </body>
 </html>
 
