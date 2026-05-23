@@ -1,6 +1,6 @@
 VM 2026 MODEL STATUS SNAPSHOT
 
-Oprettet: 2026-05-18T15:28:28
+Oprettet: 2026-05-23T13:41:27
 
 VURDERING
 - Bedste formation i seneste optimizer-kørsel: 3-4-3.
@@ -10,39 +10,39 @@ VURDERING
 - Forbehold: Startvurderinger, odds og trupper er stadig foreløbige og skal opdateres løbende.
 
 PLAYER POOL
-- Rækker: 1290
-- Officiel Holdet-master: 1290
+- Rækker: 1249
+- Officiel Holdet-master: 1249
 - Hold: 48
 - Mangler pris: 0
-- Positioner: {'MID': 429, 'DEF': 422, 'FWD': 279, 'GK': 160}
+- Positioner: {'MID': 413, 'DEF': 409, 'FWD': 275, 'GK': 152}
 
 EV-FIL
-- Rækker: 1290
-- Weighted EV sum: 1227.201
-- Weighted EV mean: 0.9513
+- Rækker: 1249
+- Weighted EV sum: 1154.046
+- Weighted EV mean: 0.9240
 - Weighted EV median: 0.7916
-- Positioner: {'MID': 429, 'DEF': 422, 'FWD': 279, 'GK': 160}
+- Positioner: {'MID': 413, 'DEF': 409, 'FWD': 275, 'GK': 152}
 
 FORMATIONER
-- 3-4-3: status=Optimal, adjEV=171.414, rawEV=19.373, pris=50.0
-- 3-5-2: status=Optimal, adjEV=167.211, rawEV=16.557, pris=50.0
-- 4-3-3: status=Optimal, adjEV=169.742, rawEV=18.362, pris=50.0
-- 4-4-2: status=Optimal, adjEV=167.153, rawEV=15.871, pris=50.0
-- 4-5-1: status=Optimal, adjEV=163.664, rawEV=15.392, pris=50.0
-- 5-3-2: status=Optimal, adjEV=160.222, rawEV=14.656, pris=50.0
-- 5-4-1: status=Optimal, adjEV=159.053, rawEV=16.036, pris=50.0
+- 3-4-3: status=Optimal, adjEV=171.095, rawEV=19.241, pris=50.0
+- 3-5-2: status=Optimal, adjEV=166.829, rawEV=16.497, pris=50.0
+- 4-3-3: status=Optimal, adjEV=169.36, rawEV=18.302, pris=50.0
+- 4-4-2: status=Optimal, adjEV=166.771, rawEV=15.811, pris=50.0
+- 4-5-1: status=Optimal, adjEV=163.281, rawEV=15.332, pris=50.0
+- 5-3-2: status=Optimal, adjEV=159.651, rawEV=16.197, pris=50.0
+- 5-4-1: status=Optimal, adjEV=158.671, rawEV=15.976, pris=50.0
 
 BEDSTE HOLD
 - selected_formation: 3-4-3
 - squad_total_price_m: 50.0
-- squad_total_adj_ev: 171.414
-- squad_total_raw_ev: 19.373
+- squad_total_adj_ev: 171.095
+- squad_total_raw_ev: 19.241
 
 SPILLERE
 - Mike Maignan | FRA | GK | pris=5.0 | EV=17.044
 - Daniel Vivian | ESP | DEF | pris=3.5 | EV=13.388
+- Gonzalo Montiel | ARG | DEF | pris=3.5 | EV=11.209
 - Lucas Digne | FRA | DEF | pris=3.5 | EV=12.623
-- Maximilian Mittelstädt | GER | DEF | pris=3.5 | EV=11.528
 - Aurelien Tchouameni | FRA | MID | pris=3.5 | EV=12.881
 - Casemiro | BRA | MID | pris=4.5 | EV=15.626
 - Manu Koné | FRA | MID | pris=3.5 | EV=12.888
