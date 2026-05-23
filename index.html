@@ -100,7 +100,7 @@
 
     .right-panel-header {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
       gap: 10px;
       flex-wrap: wrap;
@@ -944,8 +944,6 @@
 
         <div class="right-panel">
           <div class="right-panel-header">
-            <div id="topbarInfo">Pre-final prototype</div>
-
             <div class="topbar-auth">
               <div id="topbarUser" class="topbar-user" style="display:none;"></div>
               <button id="openLoginBtn" class="topbar-btn">Log ind</button>
@@ -1112,7 +1110,6 @@
     const bankValue = document.getElementById("bankValue");
     const playerCountValue = document.getElementById("playerCountValue");
     const statusBox = document.getElementById("statusBox");
-    const topbarInfo = document.getElementById("topbarInfo");
     const optimizeBtn = document.getElementById("optimizeBtn");
     const fillMissingBtn = document.getElementById("fillMissingBtn");
     const undoBtn = document.getElementById("undoBtn");
@@ -2749,7 +2746,6 @@ function saveState() {
       spentValue.textContent = formatMoney(spent);
       bankValue.textContent = formatMoney(bank);
       playerCountValue.textContent = `${count} / 11`;
-      topbarInfo.textContent = `Formation ${currentFormation} · ${count}/11 spillere · Bank ${formatMoney(bank)}`;
       updateUndoButton();
     }
 
