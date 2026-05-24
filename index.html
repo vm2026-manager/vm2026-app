@@ -503,6 +503,78 @@
       flex: 0 0 auto;
     }
 
+    .data-status {
+      margin-bottom: 12px;
+      background: #2f3239;
+      border: 1px solid #3f4450;
+      border-radius: 10px;
+      padding: 10px 12px;
+      color: white;
+      flex: 0 0 auto;
+    }
+
+    .data-status-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .data-status-date {
+      color: #cbd5e1;
+      font-size: 11px;
+      font-weight: normal;
+      white-space: nowrap;
+    }
+
+    .data-status-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7px;
+    }
+
+    .data-status-item {
+      min-width: 0;
+      border-radius: 8px;
+      background: #1c1e23;
+      border: 1px solid rgba(255,255,255,0.06);
+      padding: 7px 8px;
+      font-size: 11px;
+      line-height: 1.25;
+    }
+
+    .data-status-label {
+      color: #cbd5e1;
+      margin-bottom: 2px;
+    }
+
+    .data-status-value {
+      color: white;
+      font-weight: bold;
+    }
+
+    .data-status-item.ok .data-status-value {
+      color: #86efac;
+    }
+
+    .data-status-item.warn .data-status-value {
+      color: #fde047;
+    }
+
+    .data-status-item.error .data-status-value {
+      color: #fca5a5;
+    }
+
+    .data-status-note {
+      margin-top: 8px;
+      color: #cbd5e1;
+      font-size: 11px;
+      line-height: 1.35;
+    }
+
     .trade-search {
       margin-bottom: 10px;
       flex: 0 0 auto;
@@ -958,6 +1030,20 @@
             <div><strong>Note:</strong> Bruges senere til fx mulig rotation eller allerede videre.</div>
           </div>
 
+          <div class="data-status" id="dataStatusPanel">
+            <div class="data-status-title">
+              <span>Datastatus</span>
+              <span class="data-status-date" id="dataStatusDate">Indlæser...</span>
+            </div>
+            <div class="data-status-grid" id="dataStatusGrid">
+              <div class="data-status-item">
+                <div class="data-status-label">Status</div>
+                <div class="data-status-value">Indlæser</div>
+              </div>
+            </div>
+            <div class="data-status-note" id="dataStatusNote"></div>
+          </div>
+
           <div class="trade-search">
             <input
               id="searchInput"
@@ -1035,6 +1121,8 @@
     const START_SECURITY_URL = "data/player_start_security_nt.csv";
     const OPTIMAL_SQUADS_URL = "data/optimal_squads_by_formation.json";
     const MATCH_ODDS_PROBS_URL = "data/match_odds_probs.csv";
+    const MODEL_STATUS_URL = "data/model_status_snapshot.json";
+    const APP_AUDIT_URL = "data/audit_app_data_consistency.json";
 
     const SUPABASE_URL = "https://jmxaadgcqueudfpjyqqa.supabase.co";
     const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_ZYZ__-zXk1ZotGumRcINfg_MuDqe0ae";
@@ -1087,6 +1175,8 @@
     let fixtures = [];
     let optimalSquads = [];
     let matchOddsRows = [];
+    let modelStatus = null;
+    let appAudit = null;
     let currentUser = null;
     let squad = JSON.parse(localStorage.getItem(STORAGE_KEYS.squad) || "{}");
     let currentFormation = localStorage.getItem(STORAGE_KEYS.formation) || "3-4-3";
@@ -1110,6 +1200,9 @@
     const bankValue = document.getElementById("bankValue");
     const playerCountValue = document.getElementById("playerCountValue");
     const statusBox = document.getElementById("statusBox");
+    const dataStatusDate = document.getElementById("dataStatusDate");
+    const dataStatusGrid = document.getElementById("dataStatusGrid");
+    const dataStatusNote = document.getElementById("dataStatusNote");
     const optimizeBtn = document.getElementById("optimizeBtn");
     const fillMissingBtn = document.getElementById("fillMissingBtn");
     const undoBtn = document.getElementById("undoBtn");
@@ -1633,6 +1726,72 @@ function saveState() {
       return Number.isNaN(date.getTime()) ? null : date;
     }
 
+    function formatDataStatusDate(value) {
+      if (!value) return "Ukendt dato";
+
+      const date = new Date(value);
+      if (Number.isNaN(date.getTime())) return "Ukendt dato";
+
+      return date.toLocaleDateString("da-DK", {
+        day: "numeric",
+        month: "short",
+        hour: "2-digit",
+        minute: "2-digit"
+      });
+    }
+
+    function dataStatusItem(label, value, state = "ok") {
+      return `
+        <div class="data-status-item ${state}">
+          <div class="data-status-label">${label}</div>
+          <div class="data-status-value">${value}</div>
+        </div>
+      `;
+    }
+
+    function renderDataStatus() {
+      if (!dataStatusGrid) return;
+
+      if (!modelStatus && !appAudit) {
+        dataStatusDate.textContent = "Ikke indlæst";
+        dataStatusGrid.innerHTML = dataStatusItem("Status", "Mangler", "warn");
+        dataStatusNote.textContent = "Datastatus kunne ikke læses fra repoets statusfiler.";
+        return;
+      }
+
+      const playerPool = modelStatus?.player_pool || {};
+      const auditPool = appAudit?.player_pool || {};
+      const odds = appAudit?.match_odds_probs || {};
+      const optimizerRows = Object.values(appAudit?.optimizer || {});
+      const optimizerProblems = optimizerRows.reduce((sum, row) => {
+        const issueCount = Array.isArray(row.issues) ? row.issues.length : 0;
+        const warningCount = Array.isArray(row.warnings) ? row.warnings.length : 0;
+        return sum + issueCount + warningCount + (row.valid === false ? 1 : 0) + (row.complete === false ? 1 : 0);
+      }, 0);
+
+      const playerCount = playerPool.rows || auditPool.player_count || allPlayers.length || 0;
+      const teamCount = playerPool.teams || auditPool.team_count || 0;
+      const missingPrices = playerPool.missing_price ?? auditPool.missing_price_count ?? 0;
+      const oddsRows = odds.row_count || matchOddsRows.length || 0;
+      const oddsTeams = odds.team_count || 0;
+      const formationCount = modelStatus?.formations?.length || optimizerRows.length || 0;
+      const bestFormation = modelStatus?.assessment?.best_formation || modelStatus?.best_squad?.selected_formation || currentFormation;
+      const optimizerOk = optimizerProblems === 0 && formationCount === 7;
+      const auditOk = optimizerOk && missingPrices === 0;
+
+      dataStatusDate.textContent = formatDataStatusDate(modelStatus?.created_at);
+      dataStatusGrid.innerHTML = [
+        dataStatusItem("Spillere", `${formatMoney(playerCount)} / ${teamCount} lande`, playerCount ? "ok" : "warn"),
+        dataStatusItem("Priser", `${formatMoney(missingPrices)} mangler`, missingPrices ? "warn" : "ok"),
+        dataStatusItem("Odds", `${formatMoney(oddsRows)} kampe / ${oddsTeams} lande`, oddsRows ? "warn" : "error"),
+        dataStatusItem("Optimizer", `${formationCount}/7 OK · ${bestFormation}`, optimizerOk ? "ok" : "warn"),
+        dataStatusItem("Audit", auditOk ? "OK" : `${optimizerProblems} fejl/advarsler`, auditOk ? "ok" : "warn"),
+        dataStatusItem("Score", "Start-neutral", "ok")
+      ].join("");
+
+      dataStatusNote.textContent = "Foreløbig model: odds, startvurderinger og trupper skal fortsat opdateres frem mod turneringen.";
+    }
+
     function getNow() {
       return new Date();
     }
@@ -1739,9 +1898,9 @@ function saveState() {
 
       if (formation.df === 3) {
         slots.push(
-          { key: "DF1", position: "Forsvar", positionCode: "DEF", x: 25, y: 32 },
-          { key: "DF2", position: "Forsvar", positionCode: "DEF", x: 50, y: 32 },
-          { key: "DF3", position: "Forsvar", positionCode: "DEF", x: 75, y: 32 }
+          { key: "DF1", position: "Forsvar", positionCode: "DEF", x: 25, y: 35 },
+          { key: "DF2", position: "Forsvar", positionCode: "DEF", x: 50, y: 35 },
+          { key: "DF3", position: "Forsvar", positionCode: "DEF", x: 75, y: 35 }
         );
       } else if (formation.df === 4) {
         slots.push(
@@ -2959,6 +3118,27 @@ function saveState() {
       matchOddsRows = parseCsv(text);
     }
 
+    async function fetchOptionalJson(url) {
+      try {
+        const response = await fetch(url);
+        if (!response.ok) return null;
+        return await response.json();
+      } catch (_error) {
+        return null;
+      }
+    }
+
+    async function loadDataStatus() {
+      const [status, audit] = await Promise.all([
+        fetchOptionalJson(MODEL_STATUS_URL),
+        fetchOptionalJson(APP_AUDIT_URL)
+      ]);
+
+      modelStatus = status;
+      appAudit = audit;
+      renderDataStatus();
+    }
+
     async function loadStartSecurityMap() {
       const response = await fetch(START_SECURITY_URL);
       if (!response.ok) throw new Error(`Kunne ikke hente start-sandsynlighed: ${response.status}`);
@@ -3333,7 +3513,8 @@ function saveState() {
           loadStartSecurityMap(),
           loadFixtures(),
           loadOptimalSquads(),
-          loadMatchOddsProbs()
+          loadMatchOddsProbs(),
+          loadDataStatus()
         ]);
 
         if (!playersResponse.ok) throw new Error(`Kunne ikke hente datafil: ${playersResponse.status}`);
@@ -3358,6 +3539,7 @@ function saveState() {
         sanitizeSearchField();
 
         render();
+        renderDataStatus();
 
         setInterval(() => {
           sanitizeSearchField();
