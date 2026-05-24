@@ -503,6 +503,42 @@
       flex: 0 0 auto;
     }
 
+    .info-box-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 6px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .info-box-toggle {
+      background: #1c1e23;
+      color: white;
+      border: 1px solid #3f4450;
+      border-radius: 8px;
+      padding: 4px 7px;
+      font-size: 11px;
+      font-weight: bold;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .info-box-summary {
+      color: #cbd5e1;
+      font-size: 11px;
+      line-height: 1.35;
+    }
+
+    .info-box-details {
+      margin-top: 8px;
+    }
+
+    .info-box.collapsed .info-box-details {
+      display: none;
+    }
+
     .data-status {
       margin-bottom: 12px;
       background: #2f3239;
@@ -1047,10 +1083,17 @@
             </div>
           </div>
 
-          <div class="info-box">
-            <div><strong>Score:</strong> Modelens samlede vurdering af spillerens fantasy-potentiale.</div>
-            <div><strong>Næste kamp:</strong> Viser modstanderen i spillerens næste kamp.</div>
-            <div><strong>Note:</strong> Bruges senere til fx mulig rotation eller allerede videre.</div>
+          <div class="info-box collapsed" id="infoBox">
+            <div class="info-box-title">
+              <span>Forklaring</span>
+              <button id="infoBoxToggle" class="info-box-toggle" type="button" aria-expanded="false">Vis</button>
+            </div>
+            <div class="info-box-summary">Score · Næste kamp · Note</div>
+            <div class="info-box-details" id="infoBoxDetails">
+              <div><strong>Score:</strong> Modelens samlede vurdering af spillerens fantasy-potentiale.</div>
+              <div><strong>Næste kamp:</strong> Viser modstanderen i spillerens næste kamp.</div>
+              <div><strong>Note:</strong> Bruges senere til fx mulig rotation eller allerede videre.</div>
+            </div>
           </div>
 
           <div class="data-status collapsed" id="dataStatusPanel">
@@ -1225,6 +1268,8 @@
     const sortSelect = document.getElementById("sortSelect");
     const eligibleOnlyToggle = document.getElementById("eligibleOnlyToggle");
     const tradeList = document.getElementById("tradeList");
+    const infoBox = document.getElementById("infoBox");
+    const infoBoxToggle = document.getElementById("infoBoxToggle");
     const spentValue = document.getElementById("spentValue");
     const bankValue = document.getElementById("bankValue");
     const playerCountValue = document.getElementById("playerCountValue");
@@ -3458,6 +3503,12 @@ function saveState() {
     function setupEvents() {
       formationSelect.value = currentFormation;
       eligibleOnlyToggle.checked = eligibleOnly;
+
+      infoBoxToggle.addEventListener("click", () => {
+        const isCollapsed = infoBox.classList.toggle("collapsed");
+        infoBoxToggle.textContent = isCollapsed ? "Vis" : "Skjul";
+        infoBoxToggle.setAttribute("aria-expanded", String(!isCollapsed));
+      });
 
       dataStatusToggle.addEventListener("click", () => {
         const isCollapsed = dataStatusPanel.classList.toggle("collapsed");
