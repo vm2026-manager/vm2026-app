@@ -18,6 +18,10 @@
     }
 
     .topbar-auth {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      z-index: 5;
       display: flex;
       align-items: center;
       gap: 8px;
@@ -25,8 +29,8 @@
     }
 
     .topbar-btn {
-      background: rgba(255,255,255,0.92);
-      color: #111827;
+      background: #111827;
+      color: white;
       font-weight: bold;
       padding: 7px 10px;
       border-radius: 8px;
@@ -36,12 +40,12 @@
     }
 
     .topbar-btn.secondary {
-      background: #111827;
+      background: rgba(255,255,255,0.10);
       color: white;
     }
 
     .topbar-user {
-      background: rgba(255,255,255,0.10);
+      background: #2f3239;
       color: white;
       padding: 6px 9px;
       border-radius: 8px;
@@ -51,6 +55,7 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      border: 1px solid #3f4450;
     }
 
     .page-wrap {
@@ -86,6 +91,7 @@
     }
 
     .right-panel {
+      position: relative;
       background: #23252b;
       color: white;
       padding: 12px;
@@ -96,18 +102,6 @@
       box-sizing: border-box;
       overflow: hidden;
       border-left: 1px solid rgba(255,255,255,0.08);
-    }
-
-    .right-panel-header {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-bottom: 10px;
-      color: #cbd5e1;
-      font-size: 12px;
-      font-weight: bold;
     }
 
     .team-title {
@@ -505,9 +499,10 @@
 
     .info-box-title {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
       gap: 10px;
+      padding-right: 190px;
       margin-bottom: 6px;
       font-size: 13px;
       font-weight: bold;
@@ -1074,13 +1069,11 @@
         </div>
 
         <div class="right-panel">
-          <div class="right-panel-header">
-            <div class="topbar-auth">
-              <div id="topbarUser" class="topbar-user" style="display:none;"></div>
-              <button id="openLoginBtn" class="topbar-btn">Log ind</button>
-              <button id="openSignupBtn" class="topbar-btn secondary">Opret bruger</button>
-              <button id="logoutBtn" class="topbar-btn secondary" style="display:none;">Log ud</button>
-            </div>
+          <div class="topbar-auth">
+            <div id="topbarUser" class="topbar-user" style="display:none;"></div>
+            <button id="openLoginBtn" class="topbar-btn">Log ind</button>
+            <button id="openSignupBtn" class="topbar-btn secondary">Opret bruger</button>
+            <button id="logoutBtn" class="topbar-btn secondary" style="display:none;">Log ud</button>
           </div>
 
           <div class="info-box collapsed" id="infoBox">
