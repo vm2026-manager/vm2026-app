@@ -523,6 +523,18 @@
       font-weight: bold;
     }
 
+    .data-status-toggle {
+      background: #1c1e23;
+      color: white;
+      border: 1px solid #3f4450;
+      border-radius: 8px;
+      padding: 4px 7px;
+      font-size: 11px;
+      font-weight: bold;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
     .data-status-date {
       color: #cbd5e1;
       font-size: 11px;
@@ -530,10 +542,17 @@
       white-space: nowrap;
     }
 
+    .data-status-summary {
+      color: #cbd5e1;
+      font-size: 11px;
+      line-height: 1.35;
+    }
+
     .data-status-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 7px;
+      margin-top: 8px;
     }
 
     .data-status-item {
@@ -573,6 +592,10 @@
       color: #cbd5e1;
       font-size: 11px;
       line-height: 1.35;
+    }
+
+    .data-status.collapsed .data-status-details {
+      display: none;
     }
 
     .trade-search {
@@ -1030,18 +1053,24 @@
             <div><strong>Note:</strong> Bruges senere til fx mulig rotation eller allerede videre.</div>
           </div>
 
-          <div class="data-status" id="dataStatusPanel">
+          <div class="data-status collapsed" id="dataStatusPanel">
             <div class="data-status-title">
               <span>Datastatus</span>
-              <span class="data-status-date" id="dataStatusDate">Indlæser...</span>
+              <button id="dataStatusToggle" class="data-status-toggle" type="button" aria-expanded="false">Vis</button>
             </div>
-            <div class="data-status-grid" id="dataStatusGrid">
-              <div class="data-status-item">
-                <div class="data-status-label">Status</div>
-                <div class="data-status-value">Indlæser</div>
+            <div class="data-status-summary">
+              <span id="dataStatusSummary">Indlæser...</span>
+              <span class="data-status-date" id="dataStatusDate"></span>
+            </div>
+            <div class="data-status-details" id="dataStatusDetails">
+              <div class="data-status-grid" id="dataStatusGrid">
+                <div class="data-status-item">
+                  <div class="data-status-label">Status</div>
+                  <div class="data-status-value">Indlæser</div>
+                </div>
               </div>
+              <div class="data-status-note" id="dataStatusNote"></div>
             </div>
-            <div class="data-status-note" id="dataStatusNote"></div>
           </div>
 
           <div class="trade-search">
@@ -1200,6 +1229,9 @@
     const bankValue = document.getElementById("bankValue");
     const playerCountValue = document.getElementById("playerCountValue");
     const statusBox = document.getElementById("statusBox");
+    const dataStatusPanel = document.getElementById("dataStatusPanel");
+    const dataStatusToggle = document.getElementById("dataStatusToggle");
+    const dataStatusSummary = document.getElementById("dataStatusSummary");
     const dataStatusDate = document.getElementById("dataStatusDate");
     const dataStatusGrid = document.getElementById("dataStatusGrid");
     const dataStatusNote = document.getElementById("dataStatusNote");
@@ -1754,6 +1786,7 @@ function saveState() {
 
       if (!modelStatus && !appAudit) {
         dataStatusDate.textContent = "Ikke indlæst";
+        dataStatusSummary.textContent = "Status mangler";
         dataStatusGrid.innerHTML = dataStatusItem("Status", "Mangler", "warn");
         dataStatusNote.textContent = "Datastatus kunne ikke læses fra repoets statusfiler.";
         return;
@@ -1780,6 +1813,7 @@ function saveState() {
       const auditOk = optimizerOk && missingPrices === 0;
 
       dataStatusDate.textContent = formatDataStatusDate(modelStatus?.created_at);
+      dataStatusSummary.textContent = `${formatMoney(playerCount)} spillere · ${formatMoney(missingPrices)} manglende priser · ${formationCount}/7 optimizer`;
       dataStatusGrid.innerHTML = [
         dataStatusItem("Spillere", `${formatMoney(playerCount)} / ${teamCount} lande`, playerCount ? "ok" : "warn"),
         dataStatusItem("Priser", `${formatMoney(missingPrices)} mangler`, missingPrices ? "warn" : "ok"),
@@ -3424,6 +3458,12 @@ function saveState() {
     function setupEvents() {
       formationSelect.value = currentFormation;
       eligibleOnlyToggle.checked = eligibleOnly;
+
+      dataStatusToggle.addEventListener("click", () => {
+        const isCollapsed = dataStatusPanel.classList.toggle("collapsed");
+        dataStatusToggle.textContent = isCollapsed ? "Vis" : "Skjul";
+        dataStatusToggle.setAttribute("aria-expanded", String(!isCollapsed));
+      });
 
       formationSelect.addEventListener("change", () => {
         currentFormation = formationSelect.value;
