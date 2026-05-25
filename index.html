@@ -3084,6 +3084,13 @@ function saveState() {
       const team = teamFilter.value;
       const position = positionFilter.value;
       const sortValue = sortSelect.value;
+      const activeSlot = activeSlotKey
+        ? getCurrentSlots().find(slot => slot.key === activeSlotKey)
+        : null;
+
+      if (activeSlot && position && !samePosition(position, activeSlot.positionCode || activeSlot.position)) {
+        activeSlotKey = null;
+      }
 
       if (search) {
         players = players.filter(player =>
@@ -3111,9 +3118,9 @@ function saveState() {
       });
 
       if (activeSlotKey) {
-        const activeSlot = getCurrentSlots().find(slot => slot.key === activeSlotKey);
-        if (activeSlot) {
-          players = players.filter(player => samePosition(player.position, activeSlot.positionCode || activeSlot.position));
+        const selectedSlot = getCurrentSlots().find(slot => slot.key === activeSlotKey);
+        if (selectedSlot) {
+          players = players.filter(player => samePosition(player.position, selectedSlot.positionCode || selectedSlot.position));
         }
       }
 
