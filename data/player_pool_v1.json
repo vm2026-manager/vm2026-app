@@ -18461,15 +18461,21 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.34,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "cd",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 34,
+    "start_security": 0.34,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "matthieu_epolo__cod",
@@ -18497,15 +18503,21 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.33,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.400399,
     "optimizer_ev": 0.400399,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "cd",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 33,
+    "start_security": 0.33,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "lionel_mpasi_nzau__cod",
@@ -18533,15 +18545,21 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.33,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "cd",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 33,
+    "start_security": 0.33,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "johny_placide__hai",
@@ -18577,13 +18595,19 @@
     "old_player_id": "johny_placide__hai",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.825,
-    "start_prob_source": "name+team",
+    "start_prob": 0.82,
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.801828,
     "optimizer_ev": 0.801828,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.825,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 82,
+    "start_security": 0.82,
+    "start_status": "forventet f?rstekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "alexandre_pierre__hai",
@@ -18611,14 +18635,20 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.09,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 9,
+    "start_security": 0.09,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "josue_duverger__hai",
@@ -18646,14 +18676,20 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.09,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 9,
+    "start_security": 0.09,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "eloy_room__cuw",
@@ -18689,8 +18725,8 @@
     "old_player_id": "eloy_room__cuw",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.825,
-    "start_prob_source": "name+team",
+    "start_prob": 0.82,
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.785328,
     "optimizer_ev": 0.785328,
     "holdet_appearance": {
@@ -18699,7 +18735,13 @@
       "hairStyle": "VeryShort"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.825,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 82,
+    "start_security": 0.82,
+    "start_status": "forventet f?rstekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "sander_tangvik__nor",
@@ -18725,8 +18767,8 @@
     "old_player_id": null,
     "old_match_method": "new_from_latest_holdet_api",
     "old_match_score": 0,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.04,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0,
     "optimizer_ev": 0,
     "player_visual_source": "holdet_api_appearance",
@@ -18744,7 +18786,13 @@
       "skinColor": "#EFC6B6",
       "hairColor": "#78540F"
     },
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 4,
+    "start_security": 0.04,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "yazeed_abulaila__jor",
@@ -18780,13 +18828,19 @@
     "old_player_id": "yazeed_abulaila__jor",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.763,
-    "start_prob_source": "name+team",
+    "start_prob": 0.76,
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.571378,
     "optimizer_ev": 0.571378,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.763,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 76,
+    "start_security": 0.76,
+    "start_status": "forventet f?rstekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "egil_selvik__nor",
@@ -18822,8 +18876,8 @@
     "old_player_id": "egil_selvik__nor",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.39,
-    "start_prob_source": "team_minute_rank",
+    "start_prob": 0.06,
+    "start_prob_source": "team_minute_rank+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.600193,
     "optimizer_ev": 0.600193,
     "holdet_appearance": {
@@ -18832,7 +18886,13 @@
       "hairStyle": "Short"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.39,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 6,
+    "start_security": 0.06,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "tyrick_bodak__cuw",
@@ -18860,8 +18920,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.09,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {
@@ -18871,7 +18931,13 @@
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "cw",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 9,
+    "start_security": 0.09,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "trevor_doornbusch__cuw",
@@ -18899,8 +18965,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.09,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {
@@ -18911,7 +18977,13 @@
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "cw",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 9,
+    "start_security": 0.09,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "rjan_nyland__nor",
@@ -18947,8 +19019,8 @@
     "old_player_id": "rjan_nyland__nor",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.8969,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.9,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.805869,
     "optimizer_ev": 0.805869,
     "holdet_appearance": {
@@ -18971,8 +19043,8 @@
     "tm_weighted_competitive_start_score": 0.8507,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
     "start_probability_pct": 90,
-    "start_security": 0.8969,
-    "start_status": "sikker starter - Transfermarkt landshold",
+    "start_security": 0.9,
+    "start_status": "sikker f?rstekeeper - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 164,
     "transfermarkt_competitive_starts": 105,
     "transfermarkt_competition_weight_sum": 3.9,
@@ -18982,7 +19054,10 @@
     "transfermarkt_signal_confidence": 1.0,
     "transfermarkt_start_score": 0.8507,
     "transfermarkt_recency_start_score": 0.8507,
-    "transfermarkt_recent_start_rate_since_2025": 0.9167
+    "transfermarkt_recent_start_rate_since_2025": 0.9167,
+    "gk_start_prob_raw_before_normalization": 0.9,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "cj_dos_santos__cpv",
@@ -19008,8 +19083,8 @@
     "old_player_id": null,
     "old_match_method": "new_from_latest_holdet_api",
     "old_match_score": 0,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.34,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0,
     "optimizer_ev": 0,
     "player_visual_source": "holdet_api_appearance",
@@ -19024,7 +19099,13 @@
     "holdet_price": 2500000,
     "holdet_is_out": false,
     "holdet_appearance": {},
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 34,
+    "start_security": 0.34,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "marcio_rosa__cpv",
@@ -19052,14 +19133,20 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.33,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 33,
+    "start_security": 0.33,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "vozinha__cpv",
@@ -19087,14 +19174,20 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.33,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 33,
+    "start_security": 0.33,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "abdallah_al_fakhouri__jor",
@@ -19122,15 +19215,21 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.12,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "jo",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 12,
+    "start_security": 0.12,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "abdel_rahman_al_talalga__jor",
@@ -19158,15 +19257,21 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.12,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "jo",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 12,
+    "start_security": 0.12,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "utkir_yusupov__uzb",
@@ -19194,8 +19299,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.34,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {
@@ -19206,7 +19311,13 @@
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "uz",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 34,
+    "start_security": 0.34,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "abduvokhid_nematov__uzb",
@@ -19234,8 +19345,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.33,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {
@@ -19246,7 +19357,13 @@
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "uz",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 33,
+    "start_security": 0.33,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "botirali_ergashev__uzb",
@@ -19274,8 +19391,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.33,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {
@@ -19286,7 +19403,13 @@
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "uz",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 33,
+    "start_security": 0.33,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "dayne_st_clair__can",
@@ -19322,13 +19445,19 @@
     "old_player_id": "dayne_st_clair__can",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.731,
-    "start_prob_source": "name+team",
+    "start_prob": 0.73,
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.915343,
     "optimizer_ev": 0.915343,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.731,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 73,
+    "start_security": 0.73,
+    "start_status": "forventet f?rstekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "maxime_cr_peau__can",
@@ -19364,8 +19493,8 @@
     "old_player_id": "maxime_cr_peau__can",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.456,
-    "start_prob_source": "name+team",
+    "start_prob": 0.17,
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.464199,
     "optimizer_ev": 0.464199,
     "holdet_appearance": {
@@ -19373,7 +19502,13 @@
       "hairColor": "#5D491C"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.456,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 17,
+    "start_security": 0.17,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "owen_goodman__can",
@@ -19401,8 +19536,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.1,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {
@@ -19411,7 +19546,13 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 10,
+    "start_security": 0.1,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "angus_gunn__sco",
@@ -19447,8 +19588,8 @@
     "old_player_id": "angus_gunn__sco",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.508,
-    "start_prob_source": "name+team",
+    "start_prob": 0.5,
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.638693,
     "optimizer_ev": 0.638693,
     "holdet_appearance": {
@@ -19457,7 +19598,13 @@
       "hairStyle": "Short"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.508,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 50,
+    "start_security": 0.5,
+    "start_status": "?ben m?lmandskamp - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "craig_gordon__sco",
@@ -19484,7 +19631,7 @@
     "old_match_method": "new_from_latest_holdet_api",
     "old_match_score": 0,
     "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0,
     "optimizer_ev": 0,
     "player_visual_source": "holdet_api_appearance",
@@ -19503,7 +19650,13 @@
       "hairColor": "#5D491C",
       "hairStyle": "Short"
     },
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 25,
+    "start_security": 0.25,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "liam_kelly__sco",
@@ -19532,7 +19685,7 @@
     "old_match_method": "",
     "old_match_score": null,
     "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.400399,
     "optimizer_ev": 0.400399,
     "holdet_appearance": {
@@ -19542,7 +19695,13 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 25,
+    "start_security": 0.25,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "mahmoud_abunada__qat",
@@ -19571,13 +19730,19 @@
     "old_match_method": "",
     "old_match_score": null,
     "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 25,
+    "start_security": 0.25,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "shehab_ellethy__qat",
@@ -19606,13 +19771,19 @@
     "old_match_method": "",
     "old_match_score": null,
     "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 25,
+    "start_security": 0.25,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "meshaal_barsham__qat",
@@ -19648,13 +19819,19 @@
     "old_player_id": "meshaal_barsham__qat",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.488,
-    "start_prob_source": "name+team",
+    "start_prob": 0.5,
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.183078,
     "optimizer_ev": 0.183078,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.488,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 50,
+    "start_security": 0.5,
+    "start_status": "?ben m?lmandskamp - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "mohammed_al_rubaie_al_yami__ksa",
@@ -19682,15 +19859,21 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.01,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "sa",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 1,
+    "start_security": 0.01,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "abdulrahman_al_sanbi__ksa",
@@ -19718,15 +19901,21 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.01,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "sa",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 1,
+    "start_security": 0.01,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "nawaf_al_aqidi__ksa",
@@ -19763,7 +19952,7 @@
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
     "start_prob": 0.98,
-    "start_prob_source": "name+team",
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 1.540478,
     "optimizer_ev": 1.540478,
     "holdet_appearance": {
@@ -19772,7 +19961,13 @@
       "hairStyle": "Short"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.98,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 98,
+    "start_security": 0.98,
+    "start_status": "sikker f?rstekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "aymen_dahmen__tun",
@@ -19808,13 +20003,19 @@
     "old_player_id": "aymen_dahmen__tun",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.979,
-    "start_prob_source": "name+team",
+    "start_prob": 0.98,
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 1.901349,
     "optimizer_ev": 1.901349,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.979,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 98,
+    "start_security": 0.98,
+    "start_status": "sikker f?rstekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "abdelmouhib_chamakh__tun",
@@ -19842,14 +20043,20 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.01,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 1,
+    "start_security": 0.01,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "sabri_ben_hessen__tun",
@@ -19877,14 +20084,20 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.01,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 1,
+    "start_security": 0.01,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "edouard_mendy__sen",
@@ -19921,7 +20134,7 @@
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
     "start_prob": 0.98,
-    "start_prob_source": "name+team",
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 2.034043,
     "optimizer_ev": 2.034043,
     "holdet_appearance": {
@@ -19929,7 +20142,13 @@
       "hairColor": "#000000"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.98,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 98,
+    "start_security": 0.98,
+    "start_status": "sikker f?rstekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "mory_diaw__sen",
@@ -19957,8 +20176,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.01,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.400399,
     "optimizer_ev": 0.400399,
     "holdet_appearance": {
@@ -19969,7 +20188,13 @@
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "sn",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 1,
+    "start_security": 0.01,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "yehvann_diouf__sen",
@@ -19997,15 +20222,21 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.01,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.400399,
     "optimizer_ev": 0.400399,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "sn",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 1,
+    "start_security": 0.01,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "el_mehdi_al_harrar__mar",
@@ -20034,13 +20265,19 @@
     "old_match_method": "",
     "old_match_score": null,
     "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 25,
+    "start_security": 0.25,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "munir_el_kajoui__mar",
@@ -20069,7 +20306,7 @@
     "old_match_method": "",
     "old_match_score": null,
     "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.400399,
     "optimizer_ev": 0.400399,
     "holdet_appearance": {
@@ -20079,7 +20316,13 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 25,
+    "start_security": 0.25,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "yassine_bono_bounou__mar",
@@ -20108,7 +20351,7 @@
     "old_match_method": "",
     "old_match_score": null,
     "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.544643,
     "optimizer_ev": 0.544643,
     "holdet_appearance": {
@@ -20118,7 +20361,13 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 25,
+    "start_security": 0.25,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "el_mehdi_benabid__mar",
@@ -20147,13 +20396,19 @@
     "old_match_method": "",
     "old_match_score": null,
     "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.400399,
     "optimizer_ev": 0.400399,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 25,
+    "start_security": 0.25,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "el_mahdi_soliman__egy",
@@ -20179,8 +20434,8 @@
     "old_player_id": null,
     "old_match_method": "new_from_latest_holdet_api",
     "old_match_score": 0,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.05,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0,
     "optimizer_ev": 0,
     "player_visual_source": "holdet_api_appearance",
@@ -20195,7 +20450,13 @@
     "holdet_price": 2500000,
     "holdet_is_out": false,
     "holdet_appearance": {},
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 5,
+    "start_security": 0.05,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "mohamed_alaa__egy",
@@ -20223,14 +20484,20 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.05,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 5,
+    "start_security": 0.05,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "oufa_shobeir__egy",
@@ -20258,14 +20525,20 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.05,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0,
     "optimizer_ev": 0,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 5,
+    "start_security": 0.05,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "mohamed_el_shenawy__egy",
@@ -20301,8 +20574,8 @@
     "old_player_id": "mohamed_el_shenawy__egy",
     "old_match_method": "fuzzy_name_team",
     "old_match_score": 0.972972972972973,
-    "start_prob": 0.846,
-    "start_prob_source": "name+team",
+    "start_prob": 0.85,
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 1.245749,
     "optimizer_ev": 1.245749,
     "holdet_appearance": {
@@ -20310,7 +20583,13 @@
       "hairColor": "#78540F"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.846,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 85,
+    "start_security": 0.85,
+    "start_status": "sikker f?rstekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "luis_mejia__pan",
@@ -20338,8 +20617,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.01,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {
@@ -20348,7 +20627,13 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 1,
+    "start_security": 0.01,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "cesar_samudio__pan",
@@ -20376,8 +20661,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.01,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {
@@ -20387,7 +20672,13 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 1,
+    "start_security": 0.01,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "orlando_mosquera__pan",
@@ -20424,7 +20715,7 @@
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
     "start_prob": 0.98,
-    "start_prob_source": "name+team",
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 1.669728,
     "optimizer_ev": 1.669728,
     "holdet_appearance": {
@@ -20433,7 +20724,13 @@
       "hairStyle": "Short"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.98,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 98,
+    "start_security": 0.98,
+    "start_status": "sikker f?rstekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "ahmed_basil_fadhil__irq",
@@ -20461,15 +20758,21 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.34,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "iq",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 34,
+    "start_security": 0.34,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "kumel_al_rekabe__irq",
@@ -20497,15 +20800,21 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.33,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "iq",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 33,
+    "start_security": 0.33,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "fahad_talib__irq",
@@ -20533,15 +20842,21 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.33,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "iq",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 33,
+    "start_security": 0.33,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "mike_penders__bel",
@@ -20567,8 +20882,8 @@
     "old_player_id": null,
     "old_match_method": "new_from_latest_holdet_api",
     "old_match_score": 0,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.22,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0,
     "optimizer_ev": 0,
     "player_visual_source": "holdet_api_appearance",
@@ -20587,7 +20902,13 @@
       "hairColor": "#5D491C",
       "hairStyle": "Short"
     },
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 22,
+    "start_security": 0.22,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "senne_lammens__bel",
@@ -20615,8 +20936,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.3318,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.29,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.654069,
     "optimizer_ev": 0.654069,
     "holdet_appearance": {
@@ -20640,9 +20961,9 @@
     "flag_code": "be",
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 33,
-    "start_security": 0.3318,
-    "start_status": "rotation/backup - Transfermarkt landshold",
+    "start_probability_pct": 29,
+    "start_security": 0.29,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 15,
     "transfermarkt_competitive_starts": 5,
     "transfermarkt_competition_weight_sum": 3.05,
@@ -20652,7 +20973,10 @@
     "transfermarkt_signal_confidence": 1.0,
     "transfermarkt_start_score": 0.7172,
     "transfermarkt_recency_start_score": 0.7172,
-    "transfermarkt_recent_start_rate_since_2025": 0.1667
+    "transfermarkt_recent_start_rate_since_2025": 0.1667,
+    "gk_start_prob_raw_before_normalization": 0.33,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "alireza_beiranvand__irn",
@@ -20688,13 +21012,19 @@
     "old_player_id": "alireza_beiranvand__irn",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.488,
-    "start_prob_source": "name+team",
+    "start_prob": 0.4,
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.472449,
     "optimizer_ev": 0.472449,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.488,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 40,
+    "start_security": 0.4,
+    "start_status": "?ben m?lmandskamp - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "thibaut_courtois__bel",
@@ -20722,8 +21052,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.5667,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.49,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.728677,
     "optimizer_ev": 0.728677,
     "holdet_appearance": {
@@ -20747,9 +21077,9 @@
     "flag_code": "be",
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 57,
-    "start_security": 0.5667,
-    "start_status": "usikker starter - Transfermarkt landshold",
+    "start_probability_pct": 49,
+    "start_security": 0.49,
+    "start_status": "?ben m?lmandskamp - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 236,
     "transfermarkt_competitive_starts": 186,
     "transfermarkt_competition_weight_sum": 3.9,
@@ -20759,7 +21089,10 @@
     "transfermarkt_signal_confidence": 1.0,
     "transfermarkt_start_score": 0.9167,
     "transfermarkt_recency_start_score": 0.9167,
-    "transfermarkt_recent_start_rate_since_2025": 0.4167
+    "transfermarkt_recent_start_rate_since_2025": 0.4167,
+    "gk_start_prob_raw_before_normalization": 0.57,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "mohammad_khalife__irn",
@@ -20787,14 +21120,20 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.2,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 20,
+    "start_security": 0.2,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "payam_niazmand__irn",
@@ -20830,8 +21169,8 @@
     "old_player_id": "payam_niazmand__irn",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.488,
-    "start_prob_source": "name+team",
+    "start_prob": 0.4,
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.228728,
     "optimizer_ev": 0.228728,
     "holdet_appearance": {
@@ -20839,7 +21178,13 @@
       "hairColor": "#000000"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.488,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 40,
+    "start_security": 0.4,
+    "start_status": "?ben m?lmandskamp - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "martin_zlomisli__bih",
@@ -20876,12 +21221,18 @@
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
     "start_prob": 0.38,
-    "start_prob_source": "team_minute_rank",
+    "start_prob_source": "team_minute_rank+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.179778,
     "optimizer_ev": 0.179778,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.38,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 38,
+    "start_security": 0.38,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "osman_hadzikic__bih",
@@ -20910,14 +21261,20 @@
     "old_match_method": "",
     "old_match_score": null,
     "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "ba",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 25,
+    "start_security": 0.25,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "alvaro_montero__col",
@@ -20945,17 +21302,17 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.2949,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.24,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.654069,
     "optimizer_ev": 0.654069,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 29,
-    "start_security": 0.2949,
-    "start_status": "rotation/backup - Transfermarkt landshold",
+    "start_probability_pct": 24,
+    "start_security": 0.24,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 101,
     "transfermarkt_competitive_starts": 28,
     "transfermarkt_competition_weight_sum": 2.4,
@@ -20965,7 +21322,10 @@
     "transfermarkt_signal_confidence": 0.8,
     "transfermarkt_start_score": 0.4371,
     "transfermarkt_recency_start_score": 0.4371,
-    "transfermarkt_recent_start_rate_since_2025": 0.25
+    "transfermarkt_recent_start_rate_since_2025": 0.25,
+    "gk_start_prob_raw_before_normalization": 0.29,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "nikola_vasilj__bih",
@@ -21001,8 +21361,8 @@
     "old_player_id": "nikola_vasilj__bih",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.38,
-    "start_prob_source": "team_minute_rank",
+    "start_prob": 0.37,
+    "start_prob_source": "team_minute_rank+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.423499,
     "optimizer_ev": 0.423499,
     "holdet_appearance": {
@@ -21010,7 +21370,13 @@
       "hairColor": "#6E4A3A"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.38,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 37,
+    "start_security": 0.37,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "hern_n_gal_ndez__ecu",
@@ -21047,12 +21413,18 @@
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
     "start_prob": 0.98,
-    "start_prob_source": "name+team",
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 2.174843,
     "optimizer_ev": 2.174843,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.98,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 98,
+    "start_security": 0.98,
+    "start_status": "sikker f?rstekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "moises_ramirez__ecu",
@@ -21080,15 +21452,21 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.01,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "ec",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 1,
+    "start_security": 0.01,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "david_cabezas__ecu",
@@ -21116,15 +21494,21 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.01,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "ec",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 1,
+    "start_security": 0.01,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "gonzalo_valle__ecu",
@@ -21152,15 +21536,21 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.0,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.400399,
     "optimizer_ev": 0.400399,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "ec",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 0,
+    "start_security": 0.0,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "matt_turner__usa",
@@ -21188,8 +21578,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.01,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.400399,
     "optimizer_ev": 0.400399,
     "holdet_appearance": {
@@ -21199,7 +21589,13 @@
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "us",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 1,
+    "start_security": 0.01,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "david_ospina__col",
@@ -21235,8 +21631,8 @@
     "old_player_id": "david_ospina__col",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.456,
-    "start_prob_source": "name+team",
+    "start_prob": 0.38,
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.628243,
     "optimizer_ev": 0.628243,
     "holdet_appearance": {
@@ -21245,7 +21641,13 @@
       "hairStyle": "Short"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.456,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 38,
+    "start_security": 0.38,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "camilo_vargas__col",
@@ -21281,8 +21683,8 @@
     "old_player_id": "camilo_vargas__col",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.4571,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.38,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.737669,
     "optimizer_ev": 0.737669,
     "holdet_appearance": {
@@ -21292,9 +21694,9 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 46,
-    "start_security": 0.4571,
-    "start_status": "rotation/backup - Transfermarkt landshold",
+    "start_probability_pct": 38,
+    "start_security": 0.38,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 198,
     "transfermarkt_competitive_starts": 74,
     "transfermarkt_competition_weight_sum": 2.4,
@@ -21304,7 +21706,10 @@
     "transfermarkt_signal_confidence": 0.8,
     "transfermarkt_start_score": 0.5525,
     "transfermarkt_recency_start_score": 0.5525,
-    "transfermarkt_recent_start_rate_since_2025": 0.4167
+    "transfermarkt_recent_start_rate_since_2025": 0.4167,
+    "gk_start_prob_raw_before_normalization": 0.46,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "chris_brady__usa",
@@ -21332,8 +21737,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.01,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {
@@ -21343,7 +21748,13 @@
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "us",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 1,
+    "start_security": 0.01,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "patrick_schulte__usa",
@@ -21371,8 +21782,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.0,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {
@@ -21383,7 +21794,13 @@
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "us",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 0,
+    "start_security": 0.0,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "matt_freese__usa",
@@ -21420,7 +21837,7 @@
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
     "start_prob": 0.98,
-    "start_prob_source": "name+team",
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 2.245243,
     "optimizer_ev": 2.245243,
     "holdet_appearance": {
@@ -21429,7 +21846,13 @@
       "hairStyle": "Short"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.98,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 98,
+    "start_security": 0.98,
+    "start_status": "sikker f?rstekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "sergio_rochet__uru",
@@ -21457,8 +21880,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.5121,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.43,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.654069,
     "optimizer_ev": 0.654069,
     "holdet_appearance": {},
@@ -21478,9 +21901,9 @@
     "flag_code": "uy",
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 51,
-    "start_security": 0.5121,
-    "start_status": "usikker starter - Transfermarkt landshold",
+    "start_probability_pct": 43,
+    "start_security": 0.43,
+    "start_status": "?ben m?lmandskamp - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 77,
     "transfermarkt_competitive_starts": 49,
     "transfermarkt_competition_weight_sum": 2.4,
@@ -21490,7 +21913,10 @@
     "transfermarkt_signal_confidence": 0.8,
     "transfermarkt_start_score": 0.7589,
     "transfermarkt_recency_start_score": 0.7589,
-    "transfermarkt_recent_start_rate_since_2025": 0.5
+    "transfermarkt_recent_start_rate_since_2025": 0.5,
+    "gk_start_prob_raw_before_normalization": 0.51,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "orlando_gill__par",
@@ -21526,13 +21952,19 @@
     "old_player_id": "orlando_gill__par",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.731,
-    "start_prob_source": "name+team",
+    "start_prob": 0.73,
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.708949,
     "optimizer_ev": 0.708949,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.731,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 73,
+    "start_security": 0.73,
+    "start_status": "forventet f?rstekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "fernando_muslera__uru",
@@ -21560,8 +21992,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.3022,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.25,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.654069,
     "optimizer_ev": 0.654069,
     "holdet_appearance": {
@@ -21572,9 +22004,9 @@
     "flag_code": "uy",
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 30,
-    "start_security": 0.3022,
-    "start_status": "rotation/backup - Transfermarkt landshold",
+    "start_probability_pct": 25,
+    "start_security": 0.25,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 252,
     "transfermarkt_competitive_starts": 187,
     "transfermarkt_competition_weight_sum": 3.25,
@@ -21584,7 +22016,10 @@
     "transfermarkt_signal_confidence": 1.0,
     "transfermarkt_start_score": 0.8128,
     "transfermarkt_recency_start_score": 0.8128,
-    "transfermarkt_recent_start_rate_since_2025": 0.0833
+    "transfermarkt_recent_start_rate_since_2025": 0.0833,
+    "gk_start_prob_raw_before_normalization": 0.3,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "santiago_mele__uru",
@@ -21620,16 +22055,16 @@
     "old_player_id": "santiago_mele__uru",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.3883,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.32,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.622743,
     "optimizer_ev": 0.622743,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 39,
-    "start_security": 0.3883,
-    "start_status": "rotation/backup - Transfermarkt landshold",
+    "start_probability_pct": 32,
+    "start_security": 0.32,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 45,
     "transfermarkt_competitive_starts": 15,
     "transfermarkt_competition_weight_sum": 2.4,
@@ -21639,7 +22074,10 @@
     "transfermarkt_signal_confidence": 0.8,
     "transfermarkt_start_score": 0.4602,
     "transfermarkt_recency_start_score": 0.4602,
-    "transfermarkt_recent_start_rate_since_2025": 0.3333
+    "transfermarkt_recent_start_rate_since_2025": 0.3333,
+    "gk_start_prob_raw_before_normalization": 0.39,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "ricardo_goss__rsa",
@@ -21667,14 +22105,20 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.09,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 9,
+    "start_security": 0.09,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "ronwen_williams__rsa",
@@ -21710,13 +22154,19 @@
     "old_player_id": "ronwen_williams__rsa",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.826,
-    "start_prob_source": "team_minute_rank",
+    "start_prob": 0.82,
+    "start_prob_source": "team_minute_rank+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 1.117599,
     "optimizer_ev": 1.117599,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.826,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 82,
+    "start_security": 0.82,
+    "start_status": "forventet f?rstekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "sipho_chaine__rsa",
@@ -21744,14 +22194,20 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.09,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 9,
+    "start_security": 0.09,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "carlos_miguel_coronel__par",
@@ -21779,8 +22235,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.07,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {
@@ -21791,7 +22247,13 @@
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "py",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 7,
+    "start_security": 0.07,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "alex_paulsen__nzl",
@@ -21827,8 +22289,8 @@
     "old_player_id": "alex_paulsen__nzl",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.55,
-    "start_prob_source": "name+team",
+    "start_prob": 0.41,
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.212778,
     "optimizer_ev": 0.212778,
     "holdet_appearance": {
@@ -21836,7 +22298,13 @@
       "hairColor": "#000000"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.55,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 41,
+    "start_security": 0.41,
+    "start_status": "?ben m?lmandskamp - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "juan_espinola__par",
@@ -21864,15 +22332,21 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.07,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "py",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 7,
+    "start_security": 0.07,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "roberto_gatito_fernandez__par",
@@ -21900,15 +22374,21 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.07,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.400399,
     "optimizer_ev": 0.400399,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "py",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 7,
+    "start_security": 0.07,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "michael_woud__nzl",
@@ -21936,15 +22416,21 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.18,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "nz",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 18,
+    "start_security": 0.18,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "gaston_olveira__par",
@@ -21972,15 +22458,21 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.06,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.400399,
     "optimizer_ev": 0.400399,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "py",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 6,
+    "start_security": 0.06,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "raul_rangel__mex",
@@ -22008,8 +22500,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.3793,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.43,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.654069,
     "optimizer_ev": 0.654069,
     "holdet_appearance": {},
@@ -22029,9 +22521,9 @@
     "flag_code": "mx",
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 38,
-    "start_security": 0.3793,
-    "start_status": "rotation/backup - Transfermarkt landshold",
+    "start_probability_pct": 43,
+    "start_security": 0.43,
+    "start_status": "?ben m?lmandskamp - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 38,
     "transfermarkt_competitive_starts": 18,
     "transfermarkt_competition_weight_sum": 2.4,
@@ -22041,7 +22533,10 @@
     "transfermarkt_signal_confidence": 0.8,
     "transfermarkt_start_score": 0.3721,
     "transfermarkt_recency_start_score": 0.3721,
-    "transfermarkt_recent_start_rate_since_2025": 0.4286
+    "transfermarkt_recent_start_rate_since_2025": 0.4286,
+    "gk_start_prob_raw_before_normalization": 0.38,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "max_crocombe__nzl",
@@ -22077,13 +22572,19 @@
     "old_player_id": "max_crocombe__nzl",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.55,
-    "start_prob_source": "name+team",
+    "start_prob": 0.41,
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.212778,
     "optimizer_ev": 0.212778,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.55,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 41,
+    "start_security": 0.41,
+    "start_status": "?ben m?lmandskamp - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "guillermo_ochoa__mex",
@@ -22111,8 +22612,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.29,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.400399,
     "optimizer_ev": 0.400399,
     "holdet_appearance": {
@@ -22123,7 +22624,13 @@
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "mx",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 29,
+    "start_security": 0.29,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "carlos_acevedo__mex",
@@ -22151,15 +22658,21 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.28,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.544643,
     "optimizer_ev": 0.544643,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "mx",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 28,
+    "start_security": 0.28,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "kim_seung_gyu__kor",
@@ -22195,8 +22708,8 @@
     "old_player_id": "kim_seung_gyu__kor",
     "old_match_method": "token_name_team",
     "old_match_score": 1,
-    "start_prob": 0.679,
-    "start_prob_source": "team_minute_rank",
+    "start_prob": 0.66,
+    "start_prob_source": "team_minute_rank+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.507649,
     "optimizer_ev": 0.507649,
     "holdet_appearance": {
@@ -22205,7 +22718,13 @@
       "hairStyle": "Short"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.679,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 66,
+    "start_security": 0.66,
+    "start_status": "forventet f?rstekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "jo_hyeon_woo__kor",
@@ -22241,8 +22760,8 @@
     "old_player_id": "jo_hyeon_woo__kor",
     "old_match_method": "token_name_team",
     "old_match_score": 1,
-    "start_prob": 0.181,
-    "start_prob_source": "team_minute_rank",
+    "start_prob": 0.18,
+    "start_prob_source": "team_minute_rank+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.515493,
     "optimizer_ev": 0.515493,
     "holdet_appearance": {
@@ -22250,7 +22769,13 @@
       "hairColor": "#78540F"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.181,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 18,
+    "start_security": 0.18,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "bum_keun_song__kor",
@@ -22278,14 +22803,20 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.163,
-    "start_prob_source": "team_minute_rank",
+    "start_prob": 0.16,
+    "start_prob_source": "team_minute_rank+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.122578,
     "optimizer_ev": 0.122578,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.163,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 16,
+    "start_security": 0.16,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "tomoki_hayakawa__jpn",
@@ -22321,8 +22852,8 @@
     "old_player_id": "tomoki_hayakawa__jpn",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.425,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.27,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.604043,
     "optimizer_ev": 0.604043,
     "holdet_appearance": {
@@ -22332,9 +22863,9 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 42,
-    "start_security": 0.425,
-    "start_status": "rotation/backup - Transfermarkt landshold",
+    "start_probability_pct": 27,
+    "start_security": 0.27,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 13,
     "transfermarkt_competitive_starts": 4,
     "transfermarkt_competition_weight_sum": 1.4,
@@ -22344,7 +22875,10 @@
     "transfermarkt_signal_confidence": 0.4667,
     "transfermarkt_start_score": 0.4641,
     "transfermarkt_recency_start_score": 0.4641,
-    "transfermarkt_recent_start_rate_since_2025": 0.2727
+    "transfermarkt_recent_start_rate_since_2025": 0.2727,
+    "gk_start_prob_raw_before_normalization": 0.42,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "zion_suzuki__jpn",
@@ -22380,8 +22914,8 @@
     "old_player_id": "zion_suzuki__jpn",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.6666,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.44,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.748669,
     "optimizer_ev": 0.748669,
     "holdet_appearance": {
@@ -22403,9 +22937,9 @@
     "tm_recency_weighted_competitive_start_score": 0.8459,
     "tm_weighted_competitive_start_score": 0.8459,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 67,
-    "start_security": 0.6666,
-    "start_status": "usikker starter - Transfermarkt landshold",
+    "start_probability_pct": 44,
+    "start_security": 0.44,
+    "start_status": "?ben m?lmandskamp - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 61,
     "transfermarkt_competitive_starts": 43,
     "transfermarkt_competition_weight_sum": 2.4,
@@ -22415,7 +22949,10 @@
     "transfermarkt_signal_confidence": 0.8,
     "transfermarkt_start_score": 0.8459,
     "transfermarkt_recency_start_score": 0.8459,
-    "transfermarkt_recent_start_rate_since_2025": 0.6
+    "transfermarkt_recent_start_rate_since_2025": 0.6,
+    "gk_start_prob_raw_before_normalization": 0.67,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "keisuke_sako__jpn",
@@ -22451,13 +22988,19 @@
     "old_player_id": "keisuke_sako__jpn",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.446,
-    "start_prob_source": "name+team",
+    "start_prob": 0.29,
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.586993,
     "optimizer_ev": 0.586993,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.446,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 29,
+    "start_security": 0.29,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "lawrence_ati_zigi__gha",
@@ -22493,8 +23036,8 @@
     "old_player_id": "lawrence_ati_zigi__gha",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.834,
-    "start_prob_source": "name+team",
+    "start_prob": 0.84,
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 1.150599,
     "optimizer_ev": 1.150599,
     "holdet_appearance": {
@@ -22502,7 +23045,13 @@
       "hairColor": "#000000"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.834,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 84,
+    "start_security": 0.84,
+    "start_status": "forventet f?rstekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "joseph_anang__gha",
@@ -22530,8 +23079,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.08,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {
@@ -22542,7 +23091,13 @@
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "gh",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 8,
+    "start_security": 0.08,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "benjamin_asare__gha",
@@ -22570,15 +23125,21 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.08,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.400399,
     "optimizer_ev": 0.400399,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "gh",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 8,
+    "start_security": 0.08,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "dean_henderson__eng",
@@ -22614,8 +23175,8 @@
     "old_player_id": "dean_henderson__eng",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.3112,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.11,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.817227,
     "optimizer_ev": 0.817227,
     "holdet_appearance": {
@@ -22636,9 +23197,9 @@
     "tm_recency_weighted_competitive_start_score": 0.6484,
     "tm_weighted_competitive_start_score": 0.6484,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 31,
-    "start_security": 0.3112,
-    "start_status": "rotation/backup - Transfermarkt landshold",
+    "start_probability_pct": 11,
+    "start_security": 0.11,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 108,
     "transfermarkt_competitive_starts": 29,
     "transfermarkt_competition_weight_sum": 3.9,
@@ -22648,7 +23209,10 @@
     "transfermarkt_signal_confidence": 1.0,
     "transfermarkt_start_score": 0.6484,
     "transfermarkt_recency_start_score": 0.6484,
-    "transfermarkt_recent_start_rate_since_2025": 0.1667
+    "transfermarkt_recent_start_rate_since_2025": 0.1667,
+    "gk_start_prob_raw_before_normalization": 0.31,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "james_trafford__eng",
@@ -22676,8 +23240,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.2411,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.09,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.654069,
     "optimizer_ev": 0.654069,
     "holdet_appearance": {
@@ -22700,9 +23264,9 @@
     "tm_weighted_competitive_start_score": 0.6092,
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 24,
-    "start_security": 0.2411,
-    "start_status": "rotation/backup - Transfermarkt landshold",
+    "start_probability_pct": 9,
+    "start_security": 0.09,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 37,
     "transfermarkt_competitive_starts": 14,
     "transfermarkt_competition_weight_sum": 3.05,
@@ -22712,7 +23276,10 @@
     "transfermarkt_signal_confidence": 1.0,
     "transfermarkt_start_score": 0.6092,
     "transfermarkt_recency_start_score": 0.6092,
-    "transfermarkt_recent_start_rate_since_2025": 0.0833
+    "transfermarkt_recent_start_rate_since_2025": 0.0833,
+    "gk_start_prob_raw_before_normalization": 0.24,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "jordan_pickford__eng",
@@ -22748,8 +23315,8 @@
     "old_player_id": "jordan_pickford__eng",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.799,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.8,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.861992,
     "optimizer_ev": 0.861992,
     "holdet_appearance": {
@@ -22772,8 +23339,8 @@
     "tm_weighted_competitive_start_score": 0.9134,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
     "start_probability_pct": 80,
-    "start_security": 0.799,
-    "start_status": "forventet starter - Transfermarkt landshold",
+    "start_security": 0.8,
+    "start_status": "forventet f?rstekeeper - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 158,
     "transfermarkt_competitive_starts": 124,
     "transfermarkt_competition_weight_sum": 3.9,
@@ -22783,7 +23350,10 @@
     "transfermarkt_signal_confidence": 1.0,
     "transfermarkt_start_score": 0.9134,
     "transfermarkt_recency_start_score": 0.9134,
-    "transfermarkt_recent_start_rate_since_2025": 0.75
+    "transfermarkt_recent_start_rate_since_2025": 0.75,
+    "gk_start_prob_raw_before_normalization": 0.8,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "yahia_fofana__holdet_767",
@@ -22811,14 +23381,20 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.34,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.400399,
     "optimizer_ev": 0.400399,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 34,
+    "start_security": 0.34,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "mohamed_kone__holdet_767",
@@ -22846,14 +23422,20 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.33,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.400399,
     "optimizer_ev": 0.400399,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 33,
+    "start_security": 0.33,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "alban_lafont__holdet_767",
@@ -22881,8 +23463,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.33,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {
@@ -22892,7 +23474,13 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 33,
+    "start_security": 0.33,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "ederson_moraes__bra",
@@ -22920,8 +23508,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.2885,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.28,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.773442,
     "optimizer_ev": 0.773442,
     "holdet_appearance": {
@@ -22944,9 +23532,9 @@
     "tm_weighted_competitive_start_score": 0.6048,
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 29,
-    "start_security": 0.2885,
-    "start_status": "rotation/backup - Transfermarkt landshold",
+    "start_probability_pct": 28,
+    "start_security": 0.28,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 128,
     "transfermarkt_competitive_starts": 56,
     "transfermarkt_competition_weight_sum": 2.4,
@@ -22956,7 +23544,10 @@
     "transfermarkt_signal_confidence": 0.8,
     "transfermarkt_start_score": 0.6048,
     "transfermarkt_recency_start_score": 0.6048,
-    "transfermarkt_recent_start_rate_since_2025": 0.1667
+    "transfermarkt_recent_start_rate_since_2025": 0.1667,
+    "gk_start_prob_raw_before_normalization": 0.29,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "weverton__bra",
@@ -22982,8 +23573,8 @@
     "old_player_id": null,
     "old_match_method": "new_from_latest_holdet_api",
     "old_match_score": 0,
-    "start_prob": 0.2372,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.23,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0,
     "optimizer_ev": 0,
     "player_visual_source": "holdet_api_appearance",
@@ -23003,9 +23594,9 @@
       "hairStyle": "Short"
     },
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 24,
-    "start_security": 0.2372,
-    "start_status": "rotation/backup - Transfermarkt landshold",
+    "start_probability_pct": 23,
+    "start_security": 0.23,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 126,
     "transfermarkt_competitive_starts": 30,
     "transfermarkt_competition_weight_sum": 2.4,
@@ -23015,7 +23606,10 @@
     "transfermarkt_signal_confidence": 0.4,
     "transfermarkt_start_score": 0.4361,
     "transfermarkt_recency_start_score": 0.4361,
-    "transfermarkt_recent_start_rate_since_2025": 0.0
+    "transfermarkt_recent_start_rate_since_2025": 0.0,
+    "gk_start_prob_raw_before_normalization": 0.24,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "alisson_becker__bra",
@@ -23043,8 +23637,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.5169,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.49,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.773442,
     "optimizer_ev": 0.773442,
     "holdet_appearance": {
@@ -23066,9 +23660,9 @@
     "tm_weighted_competitive_start_score": 0.7789,
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 52,
-    "start_security": 0.5169,
-    "start_status": "usikker starter - Transfermarkt landshold",
+    "start_probability_pct": 49,
+    "start_security": 0.49,
+    "start_status": "?ben m?lmandskamp - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 153,
     "transfermarkt_competitive_starts": 102,
     "transfermarkt_competition_weight_sum": 2.4,
@@ -23078,7 +23672,10 @@
     "transfermarkt_signal_confidence": 0.8,
     "transfermarkt_start_score": 0.7789,
     "transfermarkt_recency_start_score": 0.7789,
-    "transfermarkt_recent_start_rate_since_2025": 0.5
+    "transfermarkt_recent_start_rate_since_2025": 0.5,
+    "gk_start_prob_raw_before_normalization": 0.52,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "patrick_beach__aus",
@@ -23114,13 +23711,19 @@
     "old_player_id": "patrick_beach__aus",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.456,
-    "start_prob_source": "name+team",
+    "start_prob": 0.31,
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.187478,
     "optimizer_ev": 0.187478,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.456,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 31,
+    "start_security": 0.31,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "mathew_ryan__aus",
@@ -23156,8 +23759,8 @@
     "old_player_id": "mathew_ryan__aus",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.456,
-    "start_prob_source": "name+team",
+    "start_prob": 0.31,
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.431199,
     "optimizer_ev": 0.431199,
     "holdet_appearance": {
@@ -23165,7 +23768,13 @@
       "hairColor": "#5D491C"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.456,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 31,
+    "start_security": 0.31,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "paul_izzo__aus",
@@ -23201,8 +23810,8 @@
     "old_player_id": "paul_izzo__aus",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.55,
-    "start_prob_source": "name+team",
+    "start_prob": 0.38,
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.210028,
     "optimizer_ev": 0.210028,
     "holdet_appearance": {
@@ -23211,7 +23820,13 @@
       "hairStyle": "Short"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.55,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 38,
+    "start_security": 0.38,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "walter_benitez__arg",
@@ -23239,8 +23854,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.1419,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.09,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.654069,
     "optimizer_ev": 0.654069,
     "holdet_appearance": {
@@ -23264,9 +23879,9 @@
     "flag_code": "ar",
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 14,
-    "start_security": 0.1419,
-    "start_status": "rotation/backup - Transfermarkt landshold",
+    "start_probability_pct": 9,
+    "start_security": 0.09,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 41,
     "transfermarkt_competitive_starts": 7,
     "transfermarkt_competition_weight_sum": 2.4,
@@ -23276,7 +23891,10 @@
     "transfermarkt_signal_confidence": 0.8,
     "transfermarkt_start_score": 0.383,
     "transfermarkt_recency_start_score": 0.383,
-    "transfermarkt_recent_start_rate_since_2025": 0.0
+    "transfermarkt_recent_start_rate_since_2025": 0.0,
+    "gk_start_prob_raw_before_normalization": 0.14,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "emiliano_mart_nez__arg",
@@ -23312,8 +23930,8 @@
     "old_player_id": "emiliano_mart_nez__arg",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.7618,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.76,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.898292,
     "optimizer_ev": 0.898292,
     "holdet_appearance": {
@@ -23336,8 +23954,8 @@
     "tm_weighted_competitive_start_score": 0.5846,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
     "start_probability_pct": 76,
-    "start_security": 0.7618,
-    "start_status": "forventet starter - Transfermarkt landshold",
+    "start_security": 0.76,
+    "start_status": "forventet f?rstekeeper - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 236,
     "transfermarkt_competitive_starts": 101,
     "transfermarkt_competition_weight_sum": 2.4,
@@ -23347,7 +23965,10 @@
     "transfermarkt_signal_confidence": 0.8,
     "transfermarkt_start_score": 0.5846,
     "transfermarkt_recency_start_score": 0.5846,
-    "transfermarkt_recent_start_rate_since_2025": 0.9091
+    "transfermarkt_recent_start_rate_since_2025": 0.9091,
+    "gk_start_prob_raw_before_normalization": 0.76,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "ger_nimo_rulli__arg",
@@ -23383,8 +24004,8 @@
     "old_player_id": "ger_nimo_rulli__arg",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.2321,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.15,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.818877,
     "optimizer_ev": 0.818877,
     "holdet_appearance": {
@@ -23406,9 +24027,9 @@
     "tm_recency_weighted_competitive_start_score": 0.3659,
     "tm_weighted_competitive_start_score": 0.3659,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 23,
-    "start_security": 0.2321,
-    "start_status": "rotation/backup - Transfermarkt landshold",
+    "start_probability_pct": 15,
+    "start_security": 0.15,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 167,
     "transfermarkt_competitive_starts": 33,
     "transfermarkt_competition_weight_sum": 2.4,
@@ -23418,7 +24039,10 @@
     "transfermarkt_signal_confidence": 0.8,
     "transfermarkt_start_score": 0.3659,
     "transfermarkt_recency_start_score": 0.3659,
-    "transfermarkt_recent_start_rate_since_2025": 0.0909
+    "transfermarkt_recent_start_rate_since_2025": 0.0909,
+    "gk_start_prob_raw_before_normalization": 0.23,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "luca_zidane__alg",
@@ -23454,8 +24078,8 @@
     "old_player_id": "luca_zidane__alg",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.886,
-    "start_prob_source": "name+team",
+    "start_prob": 0.89,
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 1.405249,
     "optimizer_ev": 1.405249,
     "holdet_appearance": {
@@ -23464,7 +24088,13 @@
       "hairStyle": "Short"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.886,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 89,
+    "start_security": 0.89,
+    "start_status": "sikker f?rstekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "anthony_mandrea__alg",
@@ -23500,13 +24130,19 @@
     "old_player_id": "anthony_mandrea__alg",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.448,
-    "start_prob_source": "name+team",
+    "start_prob": 0.07,
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.430099,
     "optimizer_ev": 0.430099,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.448,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 7,
+    "start_security": 0.07,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "alexis_guendouz__alg",
@@ -23534,14 +24170,20 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.04,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.400399,
     "optimizer_ev": 0.400399,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 4,
+    "start_security": 0.04,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "viktor_johansson__swe",
@@ -23577,16 +24219,16 @@
     "old_player_id": "viktor_johansson__swe",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.5118,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.47,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.665643,
     "optimizer_ev": 0.665643,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 51,
-    "start_security": 0.5118,
-    "start_status": "usikker starter - Transfermarkt landshold",
+    "start_probability_pct": 47,
+    "start_security": 0.47,
+    "start_status": "?ben m?lmandskamp - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 43,
     "transfermarkt_competitive_starts": 21,
     "transfermarkt_competition_weight_sum": 3.9,
@@ -23596,7 +24238,10 @@
     "transfermarkt_signal_confidence": 1.0,
     "transfermarkt_start_score": 0.7339,
     "transfermarkt_recency_start_score": 0.7339,
-    "transfermarkt_recent_start_rate_since_2025": 0.4167
+    "transfermarkt_recent_start_rate_since_2025": 0.4167,
+    "gk_start_prob_raw_before_normalization": 0.51,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "jacob_widell_zetterstrom__swe",
@@ -23624,8 +24269,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.23,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.544643,
     "optimizer_ev": 0.544643,
     "holdet_appearance": {
@@ -23634,7 +24279,13 @@
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "se",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 23,
+    "start_security": 0.23,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "alejandro_alex_remiro__esp",
@@ -23662,8 +24313,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.04,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.654069,
     "optimizer_ev": 0.654069,
     "holdet_appearance": {
@@ -23674,7 +24325,13 @@
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "es",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 4,
+    "start_security": 0.04,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "kristoffer_nordfeldt__swe",
@@ -23702,8 +24359,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.3177,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.3,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.654069,
     "optimizer_ev": 0.654069,
     "holdet_appearance": {
@@ -23727,9 +24384,9 @@
     "flag_code": "se",
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 32,
-    "start_security": 0.3177,
-    "start_status": "rotation/backup - Transfermarkt landshold",
+    "start_probability_pct": 30,
+    "start_security": 0.3,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 269,
     "transfermarkt_competitive_starts": 90,
     "transfermarkt_competition_weight_sum": 3.9,
@@ -23739,7 +24396,10 @@
     "transfermarkt_signal_confidence": 1.0,
     "transfermarkt_start_score": 0.6702,
     "transfermarkt_recency_start_score": 0.6702,
-    "transfermarkt_recent_start_rate_since_2025": 0.1667
+    "transfermarkt_recent_start_rate_since_2025": 0.1667,
+    "gk_start_prob_raw_before_normalization": 0.32,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "unai_sim_n__esp",
@@ -23775,8 +24435,8 @@
     "old_player_id": "unai_sim_n__esp",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.9163,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.92,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.960442,
     "optimizer_ev": 0.960442,
     "holdet_appearance": {
@@ -23799,8 +24459,8 @@
     "tm_weighted_competitive_start_score": 0.9156,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
     "start_probability_pct": 92,
-    "start_security": 0.9163,
-    "start_status": "sikker starter - Transfermarkt landshold",
+    "start_security": 0.92,
+    "start_status": "sikker f?rstekeeper - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 102,
     "transfermarkt_competitive_starts": 81,
     "transfermarkt_competition_weight_sum": 3.9,
@@ -23810,7 +24470,10 @@
     "transfermarkt_signal_confidence": 1.0,
     "transfermarkt_start_score": 0.9156,
     "transfermarkt_recency_start_score": 0.9156,
-    "transfermarkt_recent_start_rate_since_2025": 0.9167
+    "transfermarkt_recent_start_rate_since_2025": 0.9167,
+    "gk_start_prob_raw_before_normalization": 0.92,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "david_raya__esp",
@@ -23846,8 +24509,8 @@
     "old_player_id": "david_raya__esp",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.2581,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.04,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 1.224442,
     "optimizer_ev": 1.224442,
     "holdet_appearance": {
@@ -23868,9 +24531,9 @@
     "tm_recency_weighted_competitive_start_score": 0.6659,
     "tm_weighted_competitive_start_score": 0.6659,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 26,
-    "start_security": 0.2581,
-    "start_status": "rotation/backup - Transfermarkt landshold",
+    "start_probability_pct": 4,
+    "start_security": 0.04,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 65,
     "transfermarkt_competitive_starts": 25,
     "transfermarkt_competition_weight_sum": 3.9,
@@ -23880,7 +24543,10 @@
     "transfermarkt_signal_confidence": 1.0,
     "transfermarkt_start_score": 0.6659,
     "transfermarkt_recency_start_score": 0.6659,
-    "transfermarkt_recent_start_rate_since_2025": 0.0833
+    "transfermarkt_recent_start_rate_since_2025": 0.0833,
+    "gk_start_prob_raw_before_normalization": 0.26,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "bart_verbruggen__ned",
@@ -23916,8 +24582,8 @@
     "old_player_id": "bart_verbruggen__ned",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.8048,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.8,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 2.269777,
     "optimizer_ev": 2.269777,
     "holdet_appearance": {
@@ -23939,8 +24605,8 @@
     "tm_weighted_competitive_start_score": 0.9327,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
     "start_probability_pct": 80,
-    "start_security": 0.8048,
-    "start_status": "forventet starter - Transfermarkt landshold",
+    "start_security": 0.8,
+    "start_status": "forventet f?rstekeeper - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 46,
     "transfermarkt_competitive_starts": 38,
     "transfermarkt_competition_weight_sum": 3.9,
@@ -23950,7 +24616,10 @@
     "transfermarkt_signal_confidence": 1.0,
     "transfermarkt_start_score": 0.9327,
     "transfermarkt_recency_start_score": 0.9327,
-    "transfermarkt_recent_start_rate_since_2025": 0.75
+    "transfermarkt_recent_start_rate_since_2025": 0.75,
+    "gk_start_prob_raw_before_normalization": 0.8,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "justin_bijlow__ned",
@@ -23978,8 +24647,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.08,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.544643,
     "optimizer_ev": 0.544643,
     "holdet_appearance": {
@@ -23989,7 +24658,13 @@
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "nl",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 8,
+    "start_security": 0.08,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "mark_flekken__ned",
@@ -24025,8 +24700,8 @@
     "old_player_id": "mark_flekken__ned",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.3793,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.12,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.627669,
     "optimizer_ev": 0.627669,
     "holdet_appearance": {
@@ -24048,9 +24723,9 @@
     "tm_recency_weighted_competitive_start_score": 0.681,
     "tm_weighted_competitive_start_score": 0.681,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 38,
-    "start_security": 0.3793,
-    "start_status": "rotation/backup - Transfermarkt landshold",
+    "start_probability_pct": 12,
+    "start_security": 0.12,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 68,
     "transfermarkt_competitive_starts": 26,
     "transfermarkt_competition_weight_sum": 3.9,
@@ -24060,7 +24735,10 @@
     "transfermarkt_signal_confidence": 1.0,
     "transfermarkt_start_score": 0.681,
     "transfermarkt_recency_start_score": 0.681,
-    "transfermarkt_recent_start_rate_since_2025": 0.25
+    "transfermarkt_recent_start_rate_since_2025": 0.25,
+    "gk_start_prob_raw_before_normalization": 0.38,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "robin_risser__fra",
@@ -24086,8 +24764,8 @@
     "old_player_id": null,
     "old_match_method": "new_from_latest_holdet_api",
     "old_match_score": 0,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.09,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0,
     "optimizer_ev": 0,
     "player_visual_source": "holdet_api_appearance",
@@ -24102,7 +24780,13 @@
     "holdet_price": 4000000,
     "holdet_is_out": false,
     "holdet_appearance": {},
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 9,
+    "start_security": 0.09,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "brice_samba__fra",
@@ -24130,8 +24814,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.2404,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.09,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.728677,
     "optimizer_ev": 0.728677,
     "holdet_appearance": {
@@ -24155,9 +24839,9 @@
     "flag_code": "fr",
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 24,
-    "start_security": 0.2404,
-    "start_status": "rotation/backup - Transfermarkt landshold",
+    "start_probability_pct": 9,
+    "start_security": 0.09,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 49,
     "transfermarkt_competitive_starts": 15,
     "transfermarkt_competition_weight_sum": 3.9,
@@ -24167,7 +24851,10 @@
     "transfermarkt_signal_confidence": 1.0,
     "transfermarkt_start_score": 0.607,
     "transfermarkt_recency_start_score": 0.607,
-    "transfermarkt_recent_start_rate_since_2025": 0.0833
+    "transfermarkt_recent_start_rate_since_2025": 0.0833,
+    "gk_start_prob_raw_before_normalization": 0.24,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "mike_maignan__fra",
@@ -24203,8 +24890,8 @@
     "old_player_id": "mike_maignan__fra",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.8241,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.82,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 2.569192,
     "optimizer_ev": 2.569192,
     "holdet_appearance": {
@@ -24246,8 +24933,8 @@
     "tm_weighted_competitive_start_score": 0.8027,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
     "start_probability_pct": 82,
-    "start_security": 0.8241,
-    "start_status": "forventet starter - Transfermarkt landshold",
+    "start_security": 0.82,
+    "start_status": "forventet f?rstekeeper - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 113,
     "transfermarkt_competitive_starts": 65,
     "transfermarkt_competition_weight_sum": 3.9,
@@ -24257,7 +24944,10 @@
     "transfermarkt_signal_confidence": 1.0,
     "transfermarkt_start_score": 0.8027,
     "transfermarkt_recency_start_score": 0.8027,
-    "transfermarkt_recent_start_rate_since_2025": 0.8333
+    "transfermarkt_recent_start_rate_since_2025": 0.8333,
+    "gk_start_prob_raw_before_normalization": 0.82,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "dominik_livakovi__cro",
@@ -24293,8 +24983,8 @@
     "old_player_id": "dominik_livakovi__cro",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.879,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.88,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 1.886069,
     "optimizer_ev": 1.886069,
     "holdet_appearance": {
@@ -24305,8 +24995,8 @@
     "player_visual_source": "holdet_api_appearance",
     "display_score_source": "start_neutral_blended_nt_team_absolute",
     "start_probability_pct": 88,
-    "start_security": 0.879,
-    "start_status": "sikker starter - Transfermarkt landshold",
+    "start_security": 0.88,
+    "start_status": "sikker f?rstekeeper - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 165,
     "transfermarkt_competitive_starts": 116,
     "transfermarkt_competition_weight_sum": 3.9,
@@ -24316,7 +25006,10 @@
     "transfermarkt_signal_confidence": 1.0,
     "transfermarkt_start_score": 0.791,
     "transfermarkt_recency_start_score": 0.791,
-    "transfermarkt_recent_start_rate_since_2025": 0.9167
+    "transfermarkt_recent_start_rate_since_2025": 0.9167,
+    "gk_start_prob_raw_before_normalization": 0.88,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "oliver_baumann__ger",
@@ -24352,8 +25045,8 @@
     "old_player_id": "oliver_baumann__ger",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.1,
-    "start_prob_source": "manual_media_neuer_germany_no1_2026_05_25",
+    "start_prob": 0.02,
+    "start_prob_source": "manual_media_neuer_germany_no1_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 1.018742,
     "optimizer_ev": 1.018742,
     "holdet_appearance": {
@@ -24375,9 +25068,9 @@
     "tm_recency_weighted_competitive_start_score": 0.6782,
     "tm_weighted_competitive_start_score": 0.6782,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 10,
-    "start_security": 0.1,
-    "start_status": "backup efter Neuer-besked - manuel override 2026-05-25",
+    "start_probability_pct": 2,
+    "start_security": 0.02,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 93,
     "transfermarkt_competitive_starts": 38,
     "transfermarkt_competition_weight_sum": 3.05,
@@ -24388,7 +25081,10 @@
     "transfermarkt_start_score": 0.6782,
     "transfermarkt_recency_start_score": 0.6782,
     "transfermarkt_recent_start_rate_since_2025": 0.75,
-    "manual_start_note": "Oliver Baumann ventes med i truppen, men som backup efter Neuer er gjort til f?rstevalg."
+    "manual_start_note": "Oliver Baumann ventes med i truppen, men som backup efter Neuer er gjort til f?rstevalg.",
+    "gk_start_prob_raw_before_normalization": 0.1,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "manuel_neuer__ger",
@@ -24415,7 +25111,7 @@
     "old_match_method": "new_from_latest_holdet_api",
     "old_match_score": 0,
     "start_prob": 0.95,
-    "start_prob_source": "manual_media_neuer_germany_no1_2026_05_25",
+    "start_prob_source": "manual_media_neuer_germany_no1_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0,
     "optimizer_ev": 0,
     "player_visual_source": "holdet_api_appearance",
@@ -24448,7 +25144,10 @@
     "transfermarkt_start_score": 0.9324,
     "transfermarkt_recency_start_score": 0.9324,
     "transfermarkt_recent_start_rate_since_2025": null,
-    "manual_start_note": "Nagelsmann har if?lge flere medier/FIFA gjort Manuel Neuer til Tysklands f?rstevalg til VM 2026."
+    "manual_start_note": "Nagelsmann har if?lge flere medier/FIFA gjort Manuel Neuer til Tysklands f?rstevalg til VM 2026.",
+    "gk_start_prob_raw_before_normalization": 0.95,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "alexander_n_bel__ger",
@@ -24484,8 +25183,8 @@
     "old_player_id": "alexander_n_bel__ger",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.2141,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.03,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.836477,
     "optimizer_ev": 0.836477,
     "holdet_appearance": {
@@ -24507,9 +25206,9 @@
     "tm_recency_weighted_competitive_start_score": 0.5193,
     "tm_weighted_competitive_start_score": 0.5193,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 21,
-    "start_security": 0.2141,
-    "start_status": "rotation/backup - Transfermarkt landshold",
+    "start_probability_pct": 3,
+    "start_security": 0.03,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 31,
     "transfermarkt_competitive_starts": 9,
     "transfermarkt_competition_weight_sum": 3.05,
@@ -24519,7 +25218,10 @@
     "transfermarkt_signal_confidence": 1.0,
     "transfermarkt_start_score": 0.5193,
     "transfermarkt_recency_start_score": 0.5193,
-    "transfermarkt_recent_start_rate_since_2025": 0.0833
+    "transfermarkt_recent_start_rate_since_2025": 0.0833,
+    "gk_start_prob_raw_before_normalization": 0.21,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "dominik_kotarski__cro",
@@ -24555,8 +25257,8 @@
     "old_player_id": "dominik_kotarski__cro",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.44,
-    "start_prob_source": "name+team",
+    "start_prob": 0.08,
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.438349,
     "optimizer_ev": 0.438349,
     "holdet_appearance": {
@@ -24565,7 +25267,13 @@
       "hairStyle": "Short"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.44,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 8,
+    "start_security": 0.08,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "ivor_pandur__cro",
@@ -24593,14 +25301,20 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.04,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 4,
+    "start_security": 0.04,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "patrick_pentz__aut",
@@ -24636,8 +25350,8 @@
     "old_player_id": "patrick_pentz__aut",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.834,
-    "start_prob_source": "name+team",
+    "start_prob": 0.83,
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 1.262249,
     "optimizer_ev": 1.262249,
     "holdet_appearance": {
@@ -24646,7 +25360,13 @@
       "hairStyle": "Short"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.834,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 83,
+    "start_security": 0.83,
+    "start_status": "forventet f?rstekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "alexander_schlager__aut",
@@ -24682,8 +25402,8 @@
     "old_player_id": "alexander_schlager__aut",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.508,
-    "start_prob_source": "name+team",
+    "start_prob": 0.11,
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.632643,
     "optimizer_ev": 0.632643,
     "holdet_appearance": {
@@ -24691,7 +25411,13 @@
       "hairColor": "#F1DF79"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.508,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 11,
+    "start_security": 0.11,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "nikolas_polster__aut",
@@ -24719,14 +25445,20 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.06,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 6,
+    "start_security": 0.06,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "muhammed_sengezer__tur",
@@ -24754,8 +25486,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.08,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.400399,
     "optimizer_ev": 0.400399,
     "holdet_appearance": {
@@ -24764,7 +25496,13 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 8,
+    "start_security": 0.08,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "mert_gunok__tur",
@@ -24792,8 +25530,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.08,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.544643,
     "optimizer_ev": 0.544643,
     "holdet_appearance": {
@@ -24802,7 +25540,13 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 8,
+    "start_security": 0.08,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "altay_bayindir__tur",
@@ -24830,8 +25574,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.07,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.400399,
     "optimizer_ev": 0.400399,
     "holdet_appearance": {
@@ -24840,7 +25584,13 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 7,
+    "start_security": 0.07,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "ugurcan_cakir__tur",
@@ -24868,8 +25618,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.7722,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.77,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.654069,
     "optimizer_ev": 0.654069,
     "holdet_appearance": {
@@ -24892,8 +25642,8 @@
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
     "start_probability_pct": 77,
-    "start_security": 0.7722,
-    "start_status": "forventet starter - Transfermarkt landshold",
+    "start_security": 0.77,
+    "start_status": "forventet f?rstekeeper - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 111,
     "transfermarkt_competitive_starts": 66,
     "transfermarkt_competition_weight_sum": 3.9,
@@ -24903,7 +25653,10 @@
     "transfermarkt_signal_confidence": 1.0,
     "transfermarkt_start_score": 0.824,
     "transfermarkt_recency_start_score": 0.824,
-    "transfermarkt_recent_start_rate_since_2025": 0.75
+    "transfermarkt_recent_start_rate_since_2025": 0.75,
+    "gk_start_prob_raw_before_normalization": 0.77,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "ricardo_velho__por",
@@ -24931,8 +25684,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.2108,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.04,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.654069,
     "optimizer_ev": 0.654069,
     "holdet_appearance": {},
@@ -24952,9 +25705,9 @@
     "flag_code": "pt",
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 21,
-    "start_security": 0.2108,
-    "start_status": "rotation/backup - Transfermarkt landshold",
+    "start_probability_pct": 4,
+    "start_security": 0.04,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 20,
     "transfermarkt_competitive_starts": 5,
     "transfermarkt_competition_weight_sum": 3.05,
@@ -24964,7 +25717,10 @@
     "transfermarkt_signal_confidence": 1.0,
     "transfermarkt_start_score": 0.5081,
     "transfermarkt_recency_start_score": 0.5081,
-    "transfermarkt_recent_start_rate_since_2025": 0.0833
+    "transfermarkt_recent_start_rate_since_2025": 0.0833,
+    "gk_start_prob_raw_before_normalization": 0.21,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "rui_silva__por",
@@ -24992,8 +25748,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.2199,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.04,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.654069,
     "optimizer_ev": 0.654069,
     "holdet_appearance": {
@@ -25017,9 +25773,9 @@
     "flag_code": "pt",
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 22,
-    "start_security": 0.2199,
-    "start_status": "rotation/backup - Transfermarkt landshold",
+    "start_probability_pct": 4,
+    "start_security": 0.04,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 100,
     "transfermarkt_competitive_starts": 26,
     "transfermarkt_competition_weight_sum": 3.9,
@@ -25029,7 +25785,10 @@
     "transfermarkt_signal_confidence": 1.0,
     "transfermarkt_start_score": 0.5385,
     "transfermarkt_recency_start_score": 0.5385,
-    "transfermarkt_recent_start_rate_since_2025": 0.0833
+    "transfermarkt_recent_start_rate_since_2025": 0.0833,
+    "gk_start_prob_raw_before_normalization": 0.22,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "jos_s__por",
@@ -25065,8 +25824,8 @@
     "old_player_id": "jos_s__por",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.347,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.07,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.810077,
     "optimizer_ev": 0.810077,
     "holdet_appearance": {
@@ -25088,9 +25847,9 @@
     "tm_recency_weighted_competitive_start_score": 0.7978,
     "tm_weighted_competitive_start_score": 0.7943,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 35,
-    "start_security": 0.347,
-    "start_status": "rotation/backup - Transfermarkt landshold",
+    "start_probability_pct": 7,
+    "start_security": 0.07,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 36,
     "transfermarkt_competitive_starts": 14,
     "transfermarkt_competition_weight_sum": 3.25,
@@ -25100,7 +25859,10 @@
     "transfermarkt_signal_confidence": 1.0,
     "transfermarkt_start_score": 0.7943,
     "transfermarkt_recency_start_score": 0.7978,
-    "transfermarkt_recent_start_rate_since_2025": 0.1538
+    "transfermarkt_recent_start_rate_since_2025": 0.1538,
+    "gk_start_prob_raw_before_normalization": 0.35,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "diogo_costa__por",
@@ -25136,8 +25898,8 @@
     "old_player_id": "diogo_costa__por",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.8543,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.85,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 2.310142,
     "optimizer_ev": 2.310142,
     "holdet_appearance": {
@@ -25160,8 +25922,8 @@
     "tm_weighted_competitive_start_score": 0.9033,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
     "start_probability_pct": 85,
-    "start_security": 0.8543,
-    "start_status": "sikker starter - Transfermarkt landshold",
+    "start_security": 0.85,
+    "start_status": "sikker f?rstekeeper - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 75,
     "transfermarkt_competitive_starts": 58,
     "transfermarkt_competition_weight_sum": 3.9,
@@ -25171,7 +25933,10 @@
     "transfermarkt_signal_confidence": 1.0,
     "transfermarkt_start_score": 0.9033,
     "transfermarkt_recency_start_score": 0.9033,
-    "transfermarkt_recent_start_rate_since_2025": 0.8333
+    "transfermarkt_recent_start_rate_since_2025": 0.8333,
+    "gk_start_prob_raw_before_normalization": 0.85,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "matej_kovar__cze",
@@ -25199,8 +25964,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.169,
-    "start_prob_source": "team_minute_rank",
+    "start_prob": 0.15,
+    "start_prob_source": "team_minute_rank+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.372349,
     "optimizer_ev": 0.372349,
     "holdet_appearance": {
@@ -25209,7 +25974,13 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.169,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 15,
+    "start_security": 0.15,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "martin_jedlicka__cze",
@@ -25237,8 +26008,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.676,
-    "start_prob_source": "team_minute_rank",
+    "start_prob": 0.62,
+    "start_prob_source": "team_minute_rank+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.279878,
     "optimizer_ev": 0.279878,
     "holdet_appearance": {
@@ -25248,7 +26019,13 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.676,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 62,
+    "start_security": 0.62,
+    "start_status": "?ben m?lmandskamp - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "lukas_hornicek__cze",
@@ -25276,8 +26053,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.23,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.156678,
     "optimizer_ev": 0.156678,
     "holdet_appearance": {
@@ -25286,7 +26063,13 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 23,
+    "start_security": 0.23,
+    "start_status": "backup/konkurrent - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "marvin_keller__sui",
@@ -25314,8 +26097,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.07,
+    "start_prob_source": "holdet_official_unmatched_default+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.400399,
     "optimizer_ev": 0.400399,
     "holdet_appearance": {
@@ -25325,7 +26108,13 @@
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "ch",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.25,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 7,
+    "start_security": 0.07,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "gregor_kobel__sui",
@@ -25361,8 +26150,8 @@
     "old_player_id": "gregor_kobel__sui",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.8058,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.81,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 2.040619,
     "optimizer_ev": 2.040619,
     "holdet_appearance": {
@@ -25385,8 +26174,8 @@
     "tm_weighted_competitive_start_score": 0.7416,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
     "start_probability_pct": 81,
-    "start_security": 0.8058,
-    "start_status": "forventet starter - Transfermarkt landshold",
+    "start_security": 0.81,
+    "start_status": "forventet f?rstekeeper - m?lmandsprocenter normaliseret til 100%",
     "transfermarkt_competitive_rows": 141,
     "transfermarkt_competitive_starts": 64,
     "transfermarkt_competition_weight_sum": 3.9,
@@ -25396,7 +26185,10 @@
     "transfermarkt_signal_confidence": 1.0,
     "transfermarkt_start_score": 0.7416,
     "transfermarkt_recency_start_score": 0.7416,
-    "transfermarkt_recent_start_rate_since_2025": 0.8333
+    "transfermarkt_recent_start_rate_since_2025": 0.8333,
+    "gk_start_prob_raw_before_normalization": 0.81,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25"
   },
   {
     "player_id": "yvon_mvogo__sui",
@@ -25432,8 +26224,8 @@
     "old_player_id": "yvon_mvogo__sui",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.446,
-    "start_prob_source": "name+team",
+    "start_prob": 0.12,
+    "start_prob_source": "name+team+gk_slot_normalized_2026_05_25",
     "weighted_group_stage_ev": 0.484549,
     "optimizer_ev": 0.484549,
     "holdet_appearance": {
@@ -25442,7 +26234,13 @@
       "hairStyle": "VeryShort"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "gk_start_prob_raw_before_normalization": 0.446,
+    "gk_start_prob_normalized": true,
+    "gk_start_prob_normalized_at": "2026-05-25",
+    "start_probability_pct": 12,
+    "start_security": 0.12,
+    "start_status": "reservekeeper - m?lmandsprocenter normaliseret til 100%"
   },
   {
     "player_id": "denis_zakaria__sui",
