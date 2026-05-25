@@ -24352,8 +24352,8 @@
     "old_player_id": "oliver_baumann__ger",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.7285,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.1,
+    "start_prob_source": "manual_media_neuer_germany_no1_2026_05_25",
     "weighted_group_stage_ev": 1.018742,
     "optimizer_ev": 1.018742,
     "holdet_appearance": {
@@ -24375,9 +24375,9 @@
     "tm_recency_weighted_competitive_start_score": 0.6782,
     "tm_weighted_competitive_start_score": 0.6782,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 73,
-    "start_security": 0.7285,
-    "start_status": "forventet starter - Transfermarkt landshold",
+    "start_probability_pct": 10,
+    "start_security": 0.1,
+    "start_status": "backup efter Neuer-besked - manuel override 2026-05-25",
     "transfermarkt_competitive_rows": 93,
     "transfermarkt_competitive_starts": 38,
     "transfermarkt_competition_weight_sum": 3.05,
@@ -24387,7 +24387,8 @@
     "transfermarkt_signal_confidence": 1.0,
     "transfermarkt_start_score": 0.6782,
     "transfermarkt_recency_start_score": 0.6782,
-    "transfermarkt_recent_start_rate_since_2025": 0.75
+    "transfermarkt_recent_start_rate_since_2025": 0.75,
+    "manual_start_note": "Oliver Baumann ventes med i truppen, men som backup efter Neuer er gjort til f?rstevalg."
   },
   {
     "player_id": "manuel_neuer__ger",
@@ -24413,8 +24414,8 @@
     "old_player_id": null,
     "old_match_method": "new_from_latest_holdet_api",
     "old_match_score": 0,
-    "start_prob": 0.3182,
-    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_25",
+    "start_prob": 0.95,
+    "start_prob_source": "manual_media_neuer_germany_no1_2026_05_25",
     "weighted_group_stage_ev": 0,
     "optimizer_ev": 0,
     "player_visual_source": "holdet_api_appearance",
@@ -24434,9 +24435,9 @@
       "hairStyle": "Short"
     },
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 32,
-    "start_security": 0.3182,
-    "start_status": "gammelt Transfermarkt-signal - kr?ver manuel tjek",
+    "start_probability_pct": 95,
+    "start_security": 0.95,
+    "start_status": "sikker f?rstevalg if?lge aktuel VM-udtagelse - manuel override 2026-05-25",
     "transfermarkt_competitive_rows": 268,
     "transfermarkt_competitive_starts": 219,
     "transfermarkt_competition_weight_sum": 3.9,
@@ -24446,7 +24447,8 @@
     "transfermarkt_signal_confidence": 0.1,
     "transfermarkt_start_score": 0.9324,
     "transfermarkt_recency_start_score": 0.9324,
-    "transfermarkt_recent_start_rate_since_2025": null
+    "transfermarkt_recent_start_rate_since_2025": null,
+    "manual_start_note": "Nagelsmann har if?lge flere medier/FIFA gjort Manuel Neuer til Tysklands f?rstevalg til VM 2026."
   },
   {
     "player_id": "alexander_n_bel__ger",
