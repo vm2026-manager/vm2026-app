@@ -41072,8 +41072,8 @@
     "old_player_id": "antonio_nusa__nor",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.163,
-    "start_prob_source": "team_minute_rank",
+    "start_prob": 0.7,
+    "start_prob_source": "manual_transfermarkt_review_2026_05_25",
     "weighted_group_stage_ev": 1.282445,
     "optimizer_ev": 1.282445,
     "holdet_appearance": {
@@ -41081,7 +41081,10 @@
       "hairColor": "#000000"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "start_probability_pct": 70,
+    "start_status": "starterkandidat - manuel override 2026-05-25",
+    "start_security": 0.7
   },
   {
     "player_id": "fredrik_aursnes__nor",
@@ -43166,8 +43169,8 @@
     "old_player_id": "erling_haaland__nor",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.163,
-    "start_prob_source": "team_minute_rank",
+    "start_prob": 0.97,
+    "start_prob_source": "manual_transfermarkt_review_2026_05_25",
     "weighted_group_stage_ev": 1.761806,
     "optimizer_ev": 1.761806,
     "holdet_appearance": {
@@ -43188,7 +43191,10 @@
     },
     "tm_recency_weighted_competitive_start_score": 0.9302,
     "tm_weighted_competitive_start_score": 0.9302,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "start_probability_pct": 97,
+    "start_status": "sikker starter hvis fit - manuel override 2026-05-25",
+    "start_security": 0.97
   },
   {
     "player_id": "gilson_benchimol_tavares__cpv",
