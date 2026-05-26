@@ -1220,6 +1220,7 @@
     const MATCH_ODDS_PROBS_URL = "data/match_odds_probs.csv";
     const MODEL_STATUS_URL = "data/model_status_snapshot.json";
     const APP_AUDIT_URL = "data/audit_app_data_consistency.json";
+    const DATA_FRESHNESS_URL = "data/data_freshness.json";
 
     const SUPABASE_URL = "https://jmxaadgcqueudfpjyqqa.supabase.co";
     const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_ZYZ__-zXk1ZotGumRcINfg_MuDqe0ae";
@@ -1274,6 +1275,7 @@
     let matchOddsRows = [];
     let modelStatus = null;
     let appAudit = null;
+    let dataFreshness = null;
     let currentUser = null;
     let squad = JSON.parse(localStorage.getItem(STORAGE_KEYS.squad) || "{}");
     let currentFormation = localStorage.getItem(STORAGE_KEYS.formation) || "3-4-3";
@@ -1881,15 +1883,19 @@ function saveState() {
       const bestFormation = modelStatus?.assessment?.best_formation || modelStatus?.best_squad?.selected_formation || currentFormation;
       const optimizerOk = optimizerProblems === 0 && formationCount === 7;
       const auditOk = optimizerOk && missingPrices === 0;
+      const holdetApiDate = formatDataStatusDate(dataFreshness?.holdet_api_fetched_at);
+      const optimizerDate = formatDataStatusDate(dataFreshness?.optimizer_built_at || modelStatus?.created_at);
+      const transfermarktDate = formatDataStatusDate(dataFreshness?.transfermarkt_updated_at);
 
-      dataStatusDate.textContent = formatDataStatusDate(modelStatus?.created_at);
-      dataStatusSummary.textContent = `${formatMoney(playerCount)} spillere · ${formatMoney(missingPrices)} manglende priser · ${formationCount}/7 optimizer`;
+      dataStatusDate.textContent = `Priser ${holdetApiDate}`;
+      dataStatusSummary.textContent = `${formatMoney(playerCount)} spillere · ${formatMoney(missingPrices)} manglende priser · optimizer ${optimizerDate}`;
       dataStatusGrid.innerHTML = [
         dataStatusItem("Spillere", `${formatMoney(playerCount)} / ${teamCount} lande`, playerCount ? "ok" : "warn"),
-        dataStatusItem("Priser", `${formatMoney(missingPrices)} mangler`, missingPrices ? "warn" : "ok"),
+        dataStatusItem("Priser", `${formatMoney(missingPrices)} mangler · ${holdetApiDate}`, missingPrices ? "warn" : "ok"),
         dataStatusItem("Odds", `${formatMoney(oddsRows)} kampe / ${oddsTeams} lande`, oddsRows ? "warn" : "error"),
-        dataStatusItem("Optimizer", `${formationCount}/7 OK · ${bestFormation}`, optimizerOk ? "ok" : "warn"),
+        dataStatusItem("Optimizer", `${formationCount}/7 OK · ${bestFormation} · ${optimizerDate}`, optimizerOk ? "ok" : "warn"),
         dataStatusItem("Audit", auditOk ? "OK" : `${optimizerProblems} fejl/advarsler`, auditOk ? "ok" : "warn"),
+        dataStatusItem("Startdata", `Transfermarkt · ${transfermarktDate}`, "ok"),
         dataStatusItem("Score", "Start-neutral", "ok")
       ].join("");
 
@@ -3240,13 +3246,15 @@ function saveState() {
     }
 
     async function loadDataStatus() {
-      const [status, audit] = await Promise.all([
+      const [status, audit, freshness] = await Promise.all([
         fetchOptionalJson(MODEL_STATUS_URL),
-        fetchOptionalJson(APP_AUDIT_URL)
+        fetchOptionalJson(APP_AUDIT_URL),
+        fetchOptionalJson(DATA_FRESHNESS_URL)
       ]);
 
       modelStatus = status;
       appAudit = audit;
+      dataFreshness = freshness;
       renderDataStatus();
     }
 
