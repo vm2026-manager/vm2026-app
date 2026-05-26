@@ -3355,8 +3355,8 @@
     "old_player_id": "ibrahima_konat__fra",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.814,
-    "start_prob_source": "name+team",
+    "start_prob": 0.5853,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_26_partial18",
     "weighted_group_stage_ev": 1.294319,
     "optimizer_ev": 1.294319,
     "holdet_appearance": {
@@ -3365,7 +3365,28 @@
       "hairStyle": "Short"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "start_probability_pct": 59,
+    "start_security": 0.5853,
+    "start_status": "usikker starter - Transfermarkt landshold",
+    "transfermarkt_competitive_rows": 63,
+    "transfermarkt_competitive_starts": 40,
+    "transfermarkt_competition_weight_sum": 3.9,
+    "transfermarkt_recent_rows_since_2025": 12,
+    "transfermarkt_recent_starts_since_2025": 6,
+    "transfermarkt_latest_match_date": "2026-03-29",
+    "transfermarkt_signal_confidence": 1.0,
+    "transfermarkt_start_score": 0.7845,
+    "transfermarkt_recency_start_score": 0.7845,
+    "transfermarkt_recent_start_rate_since_2025": 0.5,
+    "transfermarkt_national_team": {
+      "source": "transfermarkt_national_team_output",
+      "transfermarkt_player_id": "357119.0",
+      "transfermarkt_national_url": "https://www.transfermarkt.com/ibrahima-konate/nationalmannschaft/spieler/357119/verein_id/3377",
+      "tm_competition_rows": 63,
+      "tm_competition_starts": 40,
+      "tm_recency_weighted_competitive_start_score": 0.7845
+    }
   },
   {
     "player_id": "lucas_hern_ndez__fra",
@@ -4028,8 +4049,8 @@
     "old_player_id": "jan_paul_van_hecke__ned",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.678,
-    "start_prob_source": "team_minute_rank",
+    "start_prob": 0.733,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_26_partial18",
     "weighted_group_stage_ev": 0.878519,
     "optimizer_ev": 0.878519,
     "holdet_appearance": {
@@ -4037,7 +4058,28 @@
       "hairColor": "#F1DF79"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "start_probability_pct": 73,
+    "start_security": 0.733,
+    "start_status": "forventet starter - Transfermarkt landshold",
+    "transfermarkt_competitive_rows": 22,
+    "transfermarkt_competitive_starts": 14,
+    "transfermarkt_competition_weight_sum": 3.05,
+    "transfermarkt_recent_rows_since_2025": 12,
+    "transfermarkt_recent_starts_since_2025": 8,
+    "transfermarkt_latest_match_date": "2026-03-31",
+    "transfermarkt_signal_confidence": 1.0,
+    "transfermarkt_start_score": 0.8877,
+    "transfermarkt_recency_start_score": 0.8877,
+    "transfermarkt_recent_start_rate_since_2025": 0.6667,
+    "transfermarkt_national_team": {
+      "source": "transfermarkt_national_team_output",
+      "transfermarkt_player_id": "576314.0",
+      "transfermarkt_national_url": "https://www.transfermarkt.com/jan-paul-van-hecke/nationalmannschaft/spieler/576314/verein_id/3379",
+      "tm_competition_rows": 22,
+      "tm_competition_starts": 14,
+      "tm_recency_weighted_competitive_start_score": 0.8877
+    }
   },
   {
     "player_id": "dean_donny_huijsen__esp",
@@ -8961,13 +9003,34 @@
     "old_player_id": "jes_s_gallardo__mex",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.809,
-    "start_prob_source": "name+team",
+    "start_prob": 0.7761,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_26_partial18",
     "weighted_group_stage_ev": 1.286069,
     "optimizer_ev": 1.286069,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "start_probability_pct": 78,
+    "start_security": 0.7761,
+    "start_status": "forventet starter - Transfermarkt landshold",
+    "transfermarkt_competitive_rows": 212,
+    "transfermarkt_competitive_starts": 153,
+    "transfermarkt_competition_weight_sum": 3.05,
+    "transfermarkt_recent_rows_since_2025": 12,
+    "transfermarkt_recent_starts_since_2025": 9,
+    "transfermarkt_latest_match_date": "2026-05-23",
+    "transfermarkt_signal_confidence": 1.0,
+    "transfermarkt_start_score": 0.8369,
+    "transfermarkt_recency_start_score": 0.8369,
+    "transfermarkt_recent_start_rate_since_2025": 0.75,
+    "transfermarkt_national_team": {
+      "source": "transfermarkt_national_team_output",
+      "transfermarkt_player_id": "344854.0",
+      "transfermarkt_national_url": "https://www.transfermarkt.com/jesus-gallardo/nationalmannschaft/spieler/344854/verein_id/6303",
+      "tm_competition_rows": 212,
+      "tm_competition_starts": 153,
+      "tm_recency_weighted_competitive_start_score": 0.8369
+    }
   },
   {
     "player_id": "israel_reyes__mex",
@@ -9003,13 +9066,34 @@
     "old_player_id": "israel_reyes__mex",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.473,
-    "start_prob_source": "name+team",
+    "start_prob": 0.5978,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_26_partial18",
     "weighted_group_stage_ev": 0.807019,
     "optimizer_ev": 0.807019,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "start_probability_pct": 60,
+    "start_security": 0.5978,
+    "start_status": "usikker starter - Transfermarkt landshold",
+    "transfermarkt_competitive_rows": 97,
+    "transfermarkt_competitive_starts": 47,
+    "transfermarkt_competition_weight_sum": 3.05,
+    "transfermarkt_recent_rows_since_2025": 12,
+    "transfermarkt_recent_starts_since_2025": 7,
+    "transfermarkt_latest_match_date": "2026-05-23",
+    "transfermarkt_signal_confidence": 1.0,
+    "transfermarkt_start_score": 0.6317,
+    "transfermarkt_recency_start_score": 0.6317,
+    "transfermarkt_recent_start_rate_since_2025": 0.5833,
+    "transfermarkt_national_team": {
+      "source": "transfermarkt_national_team_output",
+      "transfermarkt_player_id": "687558.0",
+      "transfermarkt_national_url": "https://www.transfermarkt.com/israel-reyes/nationalmannschaft/spieler/687558/verein_id/6303",
+      "tm_competition_rows": 97,
+      "tm_competition_starts": 47,
+      "tm_recency_weighted_competitive_start_score": 0.6317
+    }
   },
   {
     "player_id": "richard_ledezma__mex",
@@ -27722,8 +27806,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.3182,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_26_partial18",
     "weighted_group_stage_ev": 0.86493,
     "optimizer_ev": 0.86493,
     "holdet_appearance": {
@@ -27734,7 +27818,28 @@
     "player_visual_source": "holdet_api_appearance",
     "flag_code": "ch",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "start_probability_pct": 32,
+    "start_security": 0.3182,
+    "start_status": "rotation/b?nk risiko - Transfermarkt landshold",
+    "transfermarkt_competitive_rows": 13,
+    "transfermarkt_competitive_starts": 5,
+    "transfermarkt_competition_weight_sum": 2.4,
+    "transfermarkt_recent_rows_since_2025": 10,
+    "transfermarkt_recent_starts_since_2025": 2,
+    "transfermarkt_latest_match_date": "2026-03-31",
+    "transfermarkt_signal_confidence": 0.8,
+    "transfermarkt_start_score": 0.6511,
+    "transfermarkt_recency_start_score": 0.6511,
+    "transfermarkt_recent_start_rate_since_2025": 0.2,
+    "transfermarkt_national_team": {
+      "source": "transfermarkt_national_team_output",
+      "transfermarkt_player_id": "927353.0",
+      "transfermarkt_national_url": "https://www.transfermarkt.com/johan-manzambi/nationalmannschaft/spieler/927353/verein_id/3384",
+      "tm_competition_rows": 13,
+      "tm_competition_starts": 5,
+      "tm_recency_weighted_competitive_start_score": 0.6511
+    }
   },
   {
     "player_id": "ardon_jashari__sui",
@@ -30351,8 +30456,8 @@
     "old_player_id": null,
     "old_match_method": "new_from_latest_holdet_api",
     "old_match_score": 0,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.4786,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_26_partial18",
     "weighted_group_stage_ev": 0,
     "optimizer_ev": 0,
     "player_visual_source": "holdet_api_appearance",
@@ -30370,7 +30475,28 @@
       "skinColor": "#965B39",
       "hairColor": "#5D491C"
     },
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "start_probability_pct": 48,
+    "start_security": 0.4786,
+    "start_status": "usikker starter - Transfermarkt landshold",
+    "transfermarkt_competitive_rows": 20,
+    "transfermarkt_competitive_starts": 10,
+    "transfermarkt_competition_weight_sum": 3.05,
+    "transfermarkt_recent_rows_since_2025": 12,
+    "transfermarkt_recent_starts_since_2025": 5,
+    "transfermarkt_latest_match_date": "2026-03-30",
+    "transfermarkt_signal_confidence": 1.0,
+    "transfermarkt_start_score": 0.623,
+    "transfermarkt_recency_start_score": 0.623,
+    "transfermarkt_recent_start_rate_since_2025": 0.4167,
+    "transfermarkt_national_team": {
+      "source": "transfermarkt_national_team_output",
+      "transfermarkt_player_id": "518505.0",
+      "transfermarkt_national_url": "https://www.transfermarkt.com/jamie-leweling/nationalmannschaft/spieler/518505/verein_id/3262",
+      "tm_competition_rows": 20,
+      "tm_competition_starts": 10,
+      "tm_recency_weighted_competitive_start_score": 0.623
+    }
   },
   {
     "player_id": "aleksandar_pavlovic__ger",
@@ -32408,8 +32534,8 @@
     "old_player_id": "jesper_karlstr_m__swe",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.38,
-    "start_prob_source": "team_minute_rank",
+    "start_prob": 0.628,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_26_partial18",
     "weighted_group_stage_ev": 1.15698,
     "optimizer_ev": 1.15698,
     "holdet_appearance": {
@@ -32418,7 +32544,28 @@
       "hairStyle": "Short"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "start_probability_pct": 63,
+    "start_security": 0.628,
+    "start_status": "usikker starter - Transfermarkt landshold",
+    "transfermarkt_competitive_rows": 133,
+    "transfermarkt_competitive_starts": 52,
+    "transfermarkt_competition_weight_sum": 3.9,
+    "transfermarkt_recent_rows_since_2025": 12,
+    "transfermarkt_recent_starts_since_2025": 7,
+    "transfermarkt_latest_match_date": "2026-03-31",
+    "transfermarkt_signal_confidence": 1.0,
+    "transfermarkt_start_score": 0.7322,
+    "transfermarkt_recency_start_score": 0.7322,
+    "transfermarkt_recent_start_rate_since_2025": 0.5833,
+    "transfermarkt_national_team": {
+      "source": "transfermarkt_national_team_output",
+      "transfermarkt_player_id": "222855.0",
+      "transfermarkt_national_url": "https://www.transfermarkt.com/jesper-karlstrom/nationalmannschaft/spieler/222855/verein_id/3557",
+      "tm_competition_rows": 133,
+      "tm_competition_starts": 52,
+      "tm_recency_weighted_competitive_start_score": 0.7322
+    }
   },
   {
     "player_id": "mattias_svanberg__swe",
@@ -34418,8 +34565,8 @@
     "old_player_id": null,
     "old_match_method": "new_from_latest_holdet_api",
     "old_match_score": 0,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.6297,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_26_partial18",
     "weighted_group_stage_ev": 0,
     "optimizer_ev": 0,
     "player_visual_source": "holdet_api_appearance",
@@ -34437,7 +34584,28 @@
       "skinColor": "#6E4A3A",
       "hairColor": "#000000"
     },
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "start_probability_pct": 63,
+    "start_security": 0.6297,
+    "start_status": "usikker starter - Transfermarkt landshold",
+    "transfermarkt_competitive_rows": 183,
+    "transfermarkt_competitive_starts": 99,
+    "transfermarkt_competition_weight_sum": 2.4,
+    "transfermarkt_recent_rows_since_2025": 12,
+    "transfermarkt_recent_starts_since_2025": 9,
+    "transfermarkt_latest_match_date": "2026-03-31",
+    "transfermarkt_signal_confidence": 0.8,
+    "transfermarkt_start_score": 0.6654,
+    "transfermarkt_recency_start_score": 0.6654,
+    "transfermarkt_recent_start_rate_since_2025": 0.75,
+    "transfermarkt_national_team": {
+      "source": "transfermarkt_national_team_output",
+      "transfermarkt_player_id": "375885.0",
+      "transfermarkt_national_url": "https://www.transfermarkt.com/ibrahim-sangare/nationalmannschaft/spieler/375885/verein_id/3591",
+      "tm_competition_rows": 183,
+      "tm_competition_starts": 99,
+      "tm_recency_weighted_competitive_start_score": 0.6654
+    }
   },
   {
     "player_id": "seko_fofana__holdet_767",
@@ -38382,8 +38550,8 @@
     "old_player_id": "jefferson_lerma__col",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.563,
-    "start_prob_source": "name+team",
+    "start_prob": 0.7457,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_26_partial18",
     "weighted_group_stage_ev": 1.57003,
     "optimizer_ev": 1.57003,
     "holdet_appearance": {
@@ -38392,7 +38560,28 @@
       "hairStyle": "VeryShort"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "start_probability_pct": 75,
+    "start_security": 0.7457,
+    "start_status": "forventet starter - Transfermarkt landshold",
+    "transfermarkt_competitive_rows": 114,
+    "transfermarkt_competitive_starts": 76,
+    "transfermarkt_competition_weight_sum": 2.4,
+    "transfermarkt_recent_rows_since_2025": 12,
+    "transfermarkt_recent_starts_since_2025": 10,
+    "transfermarkt_latest_match_date": "2026-03-29",
+    "transfermarkt_signal_confidence": 0.8,
+    "transfermarkt_start_score": 0.6937,
+    "transfermarkt_recency_start_score": 0.6937,
+    "transfermarkt_recent_start_rate_since_2025": 0.8333,
+    "transfermarkt_national_team": {
+      "source": "transfermarkt_national_team_output",
+      "transfermarkt_player_id": "262980.0",
+      "transfermarkt_national_url": "https://www.transfermarkt.com/jefferson-lerma/nationalmannschaft/spieler/262980/verein_id/3816",
+      "tm_competition_rows": 114,
+      "tm_competition_starts": 76,
+      "tm_recency_weighted_competitive_start_score": 0.6937
+    }
   },
   {
     "player_id": "james_rodr_guez__col",
@@ -39196,8 +39385,8 @@
     "old_player_id": "jhon_arias__col",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.449,
-    "start_prob_source": "name+team",
+    "start_prob": 0.6303,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_26_partial18",
     "weighted_group_stage_ev": 1.25268,
     "optimizer_ev": 1.25268,
     "holdet_appearance": {
@@ -39206,7 +39395,28 @@
       "hairStyle": "Short"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "start_probability_pct": 63,
+    "start_security": 0.6303,
+    "start_status": "usikker starter - Transfermarkt landshold",
+    "transfermarkt_competitive_rows": 51,
+    "transfermarkt_competitive_starts": 39,
+    "transfermarkt_competition_weight_sum": 2.4,
+    "transfermarkt_recent_rows_since_2025": 12,
+    "transfermarkt_recent_starts_since_2025": 7,
+    "transfermarkt_latest_match_date": "2026-03-29",
+    "transfermarkt_signal_confidence": 0.8,
+    "transfermarkt_start_score": 0.8909,
+    "transfermarkt_recency_start_score": 0.8909,
+    "transfermarkt_recent_start_rate_since_2025": 0.5833,
+    "transfermarkt_national_team": {
+      "source": "transfermarkt_national_team_output",
+      "transfermarkt_player_id": "588989.0",
+      "transfermarkt_national_url": "https://www.transfermarkt.com/jhon-arias/nationalmannschaft/spieler/588989/verein_id/3816",
+      "tm_competition_rows": 51,
+      "tm_competition_starts": 39,
+      "tm_recency_weighted_competitive_start_score": 0.8909
+    }
   },
   {
     "player_id": "benjamin_tahirovic__bih",
@@ -39433,8 +39643,8 @@
     "old_player_id": "ivan_unji__bih",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.153,
-    "start_prob_source": "team_minute_rank",
+    "start_prob": 0.7984,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_26_partial18",
     "weighted_group_stage_ev": 0.94193,
     "optimizer_ev": 0.94193,
     "holdet_appearance": {
@@ -39442,7 +39652,28 @@
       "hairStyle": "Long"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "start_probability_pct": 80,
+    "start_security": 0.7984,
+    "start_status": "forventet starter - Transfermarkt landshold",
+    "transfermarkt_competitive_rows": 21,
+    "transfermarkt_competitive_starts": 18,
+    "transfermarkt_competition_weight_sum": 3.05,
+    "transfermarkt_recent_rows_since_2025": 12,
+    "transfermarkt_recent_starts_since_2025": 9,
+    "transfermarkt_latest_match_date": "2026-03-31",
+    "transfermarkt_signal_confidence": 1.0,
+    "transfermarkt_start_score": 0.9115,
+    "transfermarkt_recency_start_score": 0.9115,
+    "transfermarkt_recent_start_rate_since_2025": 0.75,
+    "transfermarkt_national_team": {
+      "source": "transfermarkt_national_team_output",
+      "transfermarkt_player_id": "226097.0",
+      "transfermarkt_national_url": "https://www.transfermarkt.com/ivan-sunjic/nationalmannschaft/spieler/226097/verein_id/3446",
+      "tm_competition_rows": 21,
+      "tm_competition_starts": 18,
+      "tm_recency_weighted_competitive_start_score": 0.9115
+    }
   },
   {
     "player_id": "d_enis_burni__bih",
@@ -42411,8 +42642,8 @@
     "old_player_id": "iliman_ndiaye__sen",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.83,
-    "start_prob_source": "name+team",
+    "start_prob": 0.7079,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_26_partial18",
     "weighted_group_stage_ev": 2.25258,
     "optimizer_ev": 2.25258,
     "holdet_appearance": {
@@ -42420,7 +42651,28 @@
       "hairColor": "#6E4A3A"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "start_probability_pct": 71,
+    "start_security": 0.7079,
+    "start_status": "usikker starter - Transfermarkt landshold",
+    "transfermarkt_competitive_rows": 82,
+    "transfermarkt_competitive_starts": 52,
+    "transfermarkt_competition_weight_sum": 2.4,
+    "transfermarkt_recent_rows_since_2025": 12,
+    "transfermarkt_recent_starts_since_2025": 8,
+    "transfermarkt_latest_match_date": "2026-03-31",
+    "transfermarkt_signal_confidence": 0.8,
+    "transfermarkt_start_score": 0.7026,
+    "transfermarkt_recency_start_score": 0.7026,
+    "transfermarkt_recent_start_rate_since_2025": 0.6667,
+    "transfermarkt_national_team": {
+      "source": "transfermarkt_national_team_output",
+      "transfermarkt_player_id": "623570.0",
+      "transfermarkt_national_url": "https://www.transfermarkt.com/iliman-ndiaye/nationalmannschaft/spieler/623570/verein_id/3499",
+      "tm_competition_rows": 82,
+      "tm_competition_starts": 52,
+      "tm_recency_weighted_competitive_start_score": 0.7026
+    }
   },
   {
     "player_id": "ismaila_sarr__sen",
@@ -42515,8 +42767,8 @@
     "old_player_id": "idrissa_gana_gueye__sen",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.98,
-    "start_prob_source": "name+team",
+    "start_prob": 0.8646,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_26_partial18",
     "weighted_group_stage_ev": 2.01608,
     "optimizer_ev": 2.01608,
     "holdet_appearance": {
@@ -42525,7 +42777,28 @@
       "hairStyle": "VeryShort"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "start_probability_pct": 86,
+    "start_security": 0.8646,
+    "start_status": "forventet starter - Transfermarkt landshold",
+    "transfermarkt_competitive_rows": 227,
+    "transfermarkt_competitive_starts": 180,
+    "transfermarkt_competition_weight_sum": 2.4,
+    "transfermarkt_recent_rows_since_2025": 12,
+    "transfermarkt_recent_starts_since_2025": 10,
+    "transfermarkt_latest_match_date": "2026-03-31",
+    "transfermarkt_signal_confidence": 0.8,
+    "transfermarkt_start_score": 0.8415,
+    "transfermarkt_recency_start_score": 0.8415,
+    "transfermarkt_recent_start_rate_since_2025": 0.8333,
+    "transfermarkt_national_team": {
+      "source": "transfermarkt_national_team_output",
+      "transfermarkt_player_id": "126665.0",
+      "transfermarkt_national_url": "https://www.transfermarkt.com/idrissa-gueye/nationalmannschaft/spieler/126665/verein_id/3499",
+      "tm_competition_rows": 227,
+      "tm_competition_starts": 180,
+      "tm_recency_weighted_competitive_start_score": 0.8415
+    }
   },
   {
     "player_id": "mortadha_ben_ouanes__tun",
@@ -43980,8 +44253,8 @@
     "old_player_id": "isma_l_kon__can",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.456,
-    "start_prob_source": "name+team",
+    "start_prob": 0.7164,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_26_partial18",
     "weighted_group_stage_ev": 1.34948,
     "optimizer_ev": 1.34948,
     "holdet_appearance": {
@@ -43990,7 +44263,28 @@
       "hairStyle": "Short"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "start_probability_pct": 72,
+    "start_security": 0.7164,
+    "start_status": "usikker starter - Transfermarkt landshold",
+    "transfermarkt_competitive_rows": 70,
+    "transfermarkt_competitive_starts": 48,
+    "transfermarkt_competition_weight_sum": 3.9,
+    "transfermarkt_recent_rows_since_2025": 12,
+    "transfermarkt_recent_starts_since_2025": 8,
+    "transfermarkt_latest_match_date": "2026-04-01",
+    "transfermarkt_signal_confidence": 1.0,
+    "transfermarkt_start_score": 0.8324,
+    "transfermarkt_recency_start_score": 0.8324,
+    "transfermarkt_recent_start_rate_since_2025": 0.6667,
+    "transfermarkt_national_team": {
+      "source": "transfermarkt_national_team_output",
+      "transfermarkt_player_id": "921655.0",
+      "transfermarkt_national_url": "https://www.transfermarkt.com/ismael-kone/nationalmannschaft/spieler/921655/verein_id/3510",
+      "tm_competition_rows": 70,
+      "tm_competition_starts": 48,
+      "tm_recency_weighted_competitive_start_score": 0.8324
+    }
   },
   {
     "player_id": "liam_millar__can",
@@ -46472,8 +46766,8 @@
     "old_player_id": null,
     "old_match_method": "",
     "old_match_score": null,
-    "start_prob": 0.25,
-    "start_prob_source": "holdet_official_unmatched_default",
+    "start_prob": 0.75,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_26_partial18",
     "weighted_group_stage_ev": 0.86493,
     "optimizer_ev": 0.86493,
     "holdet_appearance": {
@@ -46482,7 +46776,28 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "start_probability_pct": 75,
+    "start_security": 0.75,
+    "start_status": "forventet starter - Transfermarkt landshold",
+    "transfermarkt_competitive_rows": 10,
+    "transfermarkt_competitive_starts": 10,
+    "transfermarkt_competition_weight_sum": 2.4,
+    "transfermarkt_recent_rows_since_2025": 8,
+    "transfermarkt_recent_starts_since_2025": 8,
+    "transfermarkt_latest_match_date": "2026-03-31",
+    "transfermarkt_signal_confidence": 0.6667,
+    "transfermarkt_start_score": 1.0,
+    "transfermarkt_recency_start_score": 1.0,
+    "transfermarkt_recent_start_rate_since_2025": 1.0,
+    "transfermarkt_national_team": {
+      "source": "transfermarkt_national_team_output",
+      "transfermarkt_player_id": "450050.0",
+      "transfermarkt_national_url": "https://www.transfermarkt.com/jean-ricner-bellegarde/nationalmannschaft/spieler/450050/verein_id/14161",
+      "tm_competition_rows": 10,
+      "tm_competition_starts": 10,
+      "tm_recency_weighted_competitive_start_score": 1.0
+    }
   },
   {
     "player_id": "dominique_simon__hai",
@@ -48117,13 +48432,34 @@
     "old_player_id": "jearl_margaritha__cuw",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.667,
-    "start_prob_source": "name+team",
+    "start_prob": 0.6379,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_26_partial18",
     "weighted_group_stage_ev": 1.613283,
     "optimizer_ev": 1.613283,
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "start_probability_pct": 64,
+    "start_security": 0.6379,
+    "start_status": "usikker starter - Transfermarkt landshold",
+    "transfermarkt_competitive_rows": 51,
+    "transfermarkt_competitive_starts": 28,
+    "transfermarkt_competition_weight_sum": 3.05,
+    "transfermarkt_recent_rows_since_2025": 12,
+    "transfermarkt_recent_starts_since_2025": 7,
+    "transfermarkt_latest_match_date": "2026-03-31",
+    "transfermarkt_signal_confidence": 1.0,
+    "transfermarkt_start_score": 0.7651,
+    "transfermarkt_recency_start_score": 0.7651,
+    "transfermarkt_recent_start_rate_since_2025": 0.5833,
+    "transfermarkt_national_team": {
+      "source": "transfermarkt_national_team_output",
+      "transfermarkt_player_id": "538958.0",
+      "transfermarkt_national_url": "https://www.transfermarkt.com/jearl-margaritha/nationalmannschaft/spieler/538958/verein_id/32364",
+      "tm_competition_rows": 51,
+      "tm_competition_starts": 28,
+      "tm_recency_weighted_competitive_start_score": 0.7651
+    }
   },
   {
     "player_id": "j_rgen_strand_larsen__nor",
@@ -52587,8 +52923,8 @@
     "old_player_id": "jhon_c_rdoba__col",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.449,
-    "start_prob_source": "name+team",
+    "start_prob": 0.4724,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_26_partial18",
     "weighted_group_stage_ev": 1.449383,
     "optimizer_ev": 1.449383,
     "holdet_appearance": {
@@ -52597,7 +52933,28 @@
       "hairStyle": "VeryShort"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "start_probability_pct": 47,
+    "start_security": 0.4724,
+    "start_status": "usikker starter - Transfermarkt landshold",
+    "transfermarkt_competitive_rows": 82,
+    "transfermarkt_competitive_starts": 35,
+    "transfermarkt_competition_weight_sum": 2.4,
+    "transfermarkt_recent_rows_since_2025": 12,
+    "transfermarkt_recent_starts_since_2025": 5,
+    "transfermarkt_latest_match_date": "2026-03-29",
+    "transfermarkt_signal_confidence": 0.8,
+    "transfermarkt_start_score": 0.6221,
+    "transfermarkt_recency_start_score": 0.6221,
+    "transfermarkt_recent_start_rate_since_2025": 0.4167,
+    "transfermarkt_national_team": {
+      "source": "transfermarkt_national_team_output",
+      "transfermarkt_player_id": "185245.0",
+      "transfermarkt_national_url": "https://www.transfermarkt.com/jhon-cordoba/nationalmannschaft/spieler/185245/verein_id/3816",
+      "tm_competition_rows": 82,
+      "tm_competition_starts": 35,
+      "tm_recency_weighted_competitive_start_score": 0.6221
+    }
   },
   {
     "player_id": "luis_d_az__col",
@@ -54726,8 +55083,8 @@
     "old_player_id": "i_aki_williams__gha",
     "old_match_method": "exact_name_team",
     "old_match_score": 1,
-    "start_prob": 0.508,
-    "start_prob_source": "name+team",
+    "start_prob": 0.325,
+    "start_prob_source": "transfermarkt_competitive_recent_shrunk_2026_05_26_partial18",
     "weighted_group_stage_ev": 1.389983,
     "optimizer_ev": 1.389983,
     "holdet_appearance": {
@@ -54736,7 +55093,28 @@
       "hairStyle": "Short"
     },
     "player_visual_source": "holdet_api_appearance",
-    "display_score_source": "start_neutral_blended_nt_team_absolute"
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "start_probability_pct": 32,
+    "start_security": 0.325,
+    "start_status": "rotation/b?nk risiko - Transfermarkt landshold",
+    "transfermarkt_competitive_rows": 60,
+    "transfermarkt_competitive_starts": 37,
+    "transfermarkt_competition_weight_sum": 2.4,
+    "transfermarkt_recent_rows_since_2025": 12,
+    "transfermarkt_recent_starts_since_2025": 1,
+    "transfermarkt_latest_match_date": "2026-05-23",
+    "transfermarkt_signal_confidence": 0.8,
+    "transfermarkt_start_score": 0.7362,
+    "transfermarkt_recency_start_score": 0.7362,
+    "transfermarkt_recent_start_rate_since_2025": 0.0833,
+    "transfermarkt_national_team": {
+      "source": "transfermarkt_national_team_output",
+      "transfermarkt_player_id": "255508.0",
+      "transfermarkt_national_url": "https://www.transfermarkt.com/inaki-williams/nationalmannschaft/spieler/255508/verein_id/3441",
+      "tm_competition_rows": 60,
+      "tm_competition_starts": 37,
+      "tm_recency_weighted_competitive_start_score": 0.7362
+    }
   },
   {
     "player_id": "daniel_nana_agyei__gha",
