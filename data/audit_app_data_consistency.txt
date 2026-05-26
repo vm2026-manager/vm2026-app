@@ -3,7 +3,7 @@ VM 2026 APP DATA AUDIT
 
 1. PÃ¥krÃ¦vede app-filer
 ------------------------------------------------------------
-OK       player_pool_v1.json                 2084566
+OK       player_pool_v1.json                 2101676
 OK       optimal_squads_by_formation.json    370157
 OK       fixtures_group.csv                  2701
 OK       player_start_security_nt.csv        157435
