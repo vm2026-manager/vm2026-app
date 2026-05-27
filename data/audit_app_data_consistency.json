@@ -3,12 +3,12 @@
     "player_pool_v1.json": {
       "exists": true,
       "path": "C:\\Users\\Administrator\\Desktop\\vm2026_local_app\\data\\player_pool_v1.json",
-      "size_bytes": 2384460
+      "size_bytes": 2337739
     },
     "optimal_squads_by_formation.json": {
       "exists": true,
       "path": "C:\\Users\\Administrator\\Desktop\\vm2026_local_app\\data\\optimal_squads_by_formation.json",
-      "size_bytes": 370157
+      "size_bytes": 370182
     },
     "fixtures_group.csv": {
       "exists": true,
@@ -27,14 +27,14 @@
     }
   },
   "player_pool": {
-    "player_count": 1249,
-    "unique_player_ids": 1249,
+    "player_count": 1244,
+    "unique_player_ids": 1244,
     "duplicate_ids": [],
     "position_counts": {
-      "DEF": 409,
+      "DEF": 408,
       "GK": 152,
-      "MID": 413,
-      "FWD": 275
+      "MID": 410,
+      "FWD": 274
     },
     "team_count": 48,
     "missing_price_count": 0,
@@ -114,10 +114,11 @@
       "optimizer_total_price": 50000000,
       "budget_total": 50000000,
       "team_counts": {
-        "France": 4,
-        "Spain": 4,
+        "Frankrig": 3,
         "Argentina": 1,
-        "Brazil": 2
+        "Portugal": 1,
+        "Spanien": 4,
+        "Brasilien": 2
       },
       "match_methods": {
         "player_id": 11
@@ -142,11 +143,10 @@
       "optimizer_total_price": 50000000,
       "budget_total": 50000000,
       "team_counts": {
-        "France": 4,
-        "Spain": 4,
-        "Argentina": 1,
+        "Frankrig": 4,
+        "Argentina": 2,
         "Portugal": 1,
-        "Brazil": 1
+        "Spanien": 4
       },
       "match_methods": {
         "player_id": 11
@@ -171,11 +171,12 @@
       "optimizer_total_price": 50000000,
       "budget_total": 50000000,
       "team_counts": {
-        "France": 3,
-        "Spain": 4,
+        "Frankrig": 2,
         "Argentina": 1,
         "Portugal": 1,
-        "Brazil": 2
+        "Belgien": 1,
+        "Spanien": 4,
+        "Brasilien": 2
       },
       "match_methods": {
         "player_id": 11
@@ -200,11 +201,11 @@
       "optimizer_total_price": 50000000,
       "budget_total": 50000000,
       "team_counts": {
-        "France": 4,
-        "Spain": 4,
+        "Frankrig": 4,
         "Argentina": 1,
         "Portugal": 1,
-        "Brazil": 1
+        "Belgien": 1,
+        "Spanien": 4
       },
       "match_methods": {
         "player_id": 11
@@ -229,12 +230,11 @@
       "optimizer_total_price": 50000000,
       "budget_total": 50000000,
       "team_counts": {
-        "France": 3,
-        "Spain": 4,
+        "Frankrig": 3,
         "Argentina": 1,
-        "Portugal": 1,
-        "Brazil": 1,
-        "England": 1
+        "Portugal": 2,
+        "Spanien": 4,
+        "Brasilien": 1
       },
       "match_methods": {
         "player_id": 11
@@ -259,11 +259,11 @@
       "optimizer_total_price": 50000000,
       "budget_total": 50000000,
       "team_counts": {
-        "France": 4,
-        "Spain": 4,
+        "Frankrig": 3,
         "Argentina": 1,
-        "Portugal": 1,
-        "Belgium": 1
+        "Portugal": 2,
+        "Belgien": 1,
+        "Spanien": 4
       },
       "match_methods": {
         "player_id": 11
@@ -288,11 +288,12 @@
       "optimizer_total_price": 50000000,
       "budget_total": 50000000,
       "team_counts": {
-        "France": 3,
-        "Spain": 4,
+        "Frankrig": 3,
         "Argentina": 1,
-        "Portugal": 2,
-        "Brazil": 1
+        "Spanien": 4,
+        "Portugal": 1,
+        "Belgien": 1,
+        "Brasilien": 1
       },
       "match_methods": {
         "player_id": 11

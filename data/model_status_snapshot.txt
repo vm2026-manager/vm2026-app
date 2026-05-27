@@ -1,6 +1,6 @@
 VM 2026 MODEL STATUS SNAPSHOT
 
-Oprettet: 2026-05-23T13:41:27
+Oprettet: 2026-05-27T08:04:58
 
 VURDERING
 - Bedste formation i seneste optimizer-kørsel: 3-4-3.
@@ -10,40 +10,40 @@ VURDERING
 - Forbehold: Startvurderinger, odds og trupper er stadig foreløbige og skal opdateres løbende.
 
 PLAYER POOL
-- Rækker: 1249
-- Officiel Holdet-master: 1249
+- Rækker: 1244
+- Officiel Holdet-master: 1244
 - Hold: 48
 - Mangler pris: 0
-- Positioner: {'MID': 413, 'DEF': 409, 'FWD': 275, 'GK': 152}
+- Positioner: {'MID': 410, 'DEF': 408, 'FWD': 274, 'GK': 152}
 
 EV-FIL
-- Rækker: 1249
-- Weighted EV sum: 1154.046
-- Weighted EV mean: 0.9240
-- Weighted EV median: 0.7916
-- Positioner: {'MID': 413, 'DEF': 409, 'FWD': 275, 'GK': 152}
+- Rækker: 1244
+- Weighted EV sum: 1110.602
+- Weighted EV mean: 0.8928
+- Weighted EV median: 0.7589
+- Positioner: {'MID': 410, 'DEF': 408, 'FWD': 274, 'GK': 152}
 
 FORMATIONER
-- 3-4-3: status=Optimal, adjEV=171.095, rawEV=19.241, pris=50.0
-- 3-5-2: status=Optimal, adjEV=166.829, rawEV=16.497, pris=50.0
-- 4-3-3: status=Optimal, adjEV=169.36, rawEV=18.302, pris=50.0
-- 4-4-2: status=Optimal, adjEV=166.771, rawEV=15.811, pris=50.0
-- 4-5-1: status=Optimal, adjEV=163.281, rawEV=15.332, pris=50.0
-- 5-3-2: status=Optimal, adjEV=159.651, rawEV=16.197, pris=50.0
-- 5-4-1: status=Optimal, adjEV=158.671, rawEV=15.976, pris=50.0
+- 3-4-3: status=Optimal, adjEV=169.249, rawEV=18.587, pris=50.0
+- 3-5-2: status=Optimal, adjEV=166.121, rawEV=15.96, pris=50.0
+- 4-3-3: status=Optimal, adjEV=167.318, rawEV=19.241, pris=50.0
+- 4-4-2: status=Optimal, adjEV=165.04, rawEV=16.482, pris=50.0
+- 4-5-1: status=Optimal, adjEV=163.06, rawEV=16.261, pris=50.0
+- 5-3-2: status=Optimal, adjEV=158.92, rawEV=16.936, pris=50.0
+- 5-4-1: status=Optimal, adjEV=156.977, rawEV=16.096, pris=50.0
 
 BEDSTE HOLD
 - selected_formation: 3-4-3
 - squad_total_price_m: 50.0
-- squad_total_adj_ev: 171.095
-- squad_total_raw_ev: 19.241
+- squad_total_adj_ev: 169.249
+- squad_total_raw_ev: 18.587
 
 SPILLERE
 - Mike Maignan | FRA | GK | pris=5.0 | EV=17.044
-- Daniel Vivian | ESP | DEF | pris=3.5 | EV=13.388
 - Gonzalo Montiel | ARG | DEF | pris=3.5 | EV=11.209
 - Lucas Digne | FRA | DEF | pris=3.5 | EV=12.623
-- Aurelien Tchouameni | FRA | MID | pris=3.5 | EV=12.881
+- Renato Veiga | POR | DEF | pris=3.5 | EV=11.146
+- Alex Baena | ESP | MID | pris=3.5 | EV=13.278
 - Casemiro | BRA | MID | pris=4.5 | EV=15.626
 - Manu Koné | FRA | MID | pris=3.5 | EV=12.888
 - Martin Zubimendi | ESP | MID | pris=3.5 | EV=14.739
