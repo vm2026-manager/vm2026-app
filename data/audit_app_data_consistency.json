@@ -2,28 +2,28 @@
   "required_files": {
     "player_pool_v1.json": {
       "exists": true,
-      "path": "C:\\Users\\Administrator\\Desktop\\vm2026_local_app\\data\\player_pool_v1.json",
+      "path": "C:\\Users\\Administrator\\Documents\\GitHub\\vm2026-app\\data\\player_pool_v1.json",
       "size_bytes": 2337739
     },
     "optimal_squads_by_formation.json": {
       "exists": true,
-      "path": "C:\\Users\\Administrator\\Desktop\\vm2026_local_app\\data\\optimal_squads_by_formation.json",
+      "path": "C:\\Users\\Administrator\\Documents\\GitHub\\vm2026-app\\data\\optimal_squads_by_formation.json",
       "size_bytes": 370182
     },
     "fixtures_group.csv": {
       "exists": true,
-      "path": "C:\\Users\\Administrator\\Desktop\\vm2026_local_app\\data\\fixtures_group.csv",
+      "path": "C:\\Users\\Administrator\\Documents\\GitHub\\vm2026-app\\data\\fixtures_group.csv",
       "size_bytes": 2701
     },
     "player_start_security_nt.csv": {
       "exists": true,
-      "path": "C:\\Users\\Administrator\\Desktop\\vm2026_local_app\\data\\player_start_security_nt.csv",
+      "path": "C:\\Users\\Administrator\\Documents\\GitHub\\vm2026-app\\data\\player_start_security_nt.csv",
       "size_bytes": 157435
     },
     "match_odds_probs.csv": {
       "exists": true,
-      "path": "C:\\Users\\Administrator\\Desktop\\vm2026_local_app\\data\\match_odds_probs.csv",
-      "size_bytes": 2391
+      "path": "C:\\Users\\Administrator\\Documents\\GitHub\\vm2026-app\\data\\match_odds_probs.csv",
+      "size_bytes": 7314
     }
   },
   "player_pool": {
@@ -44,9 +44,9 @@
   },
   "match_odds_probs": {
     "exists": true,
-    "row_count": 24,
+    "row_count": 72,
     "first_match_id": "1",
-    "last_match_id": "24",
+    "last_match_id": "72",
     "team_count": 48,
     "teams": [
       "ALG",

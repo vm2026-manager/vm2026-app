@@ -7,7 +7,7 @@ OK       player_pool_v1.json                 2337739
 OK       optimal_squads_by_formation.json    370182
 OK       fixtures_group.csv                  2701
 OK       player_start_security_nt.csv        157435
-OK       match_odds_probs.csv                2391
+OK       match_odds_probs.csv                7314
 
 2. Player pool
 ------------------------------------------------------------
@@ -21,9 +21,9 @@ Mangler land/hold: 0
 
 3. Match odds probs
 ------------------------------------------------------------
-RÃ¦kker: 24
+RÃ¦kker: 72
 FÃ¸rste match_id: 1
-Sidste match_id: 24
+Sidste match_id: 72
 Antal hold dÃ¦kket: 48
 
 4. Optimizer vs app-data
