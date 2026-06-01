@@ -1,0 +1,208 @@
+﻿holdet_player_id,player_name,team_id,team_name,position,price,raw_price,status,reason,source_file
+49838,Serge Gnabry,GER,Tyskland,FWD,6000000,6000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49193,Hugo Ekitike,FRA,Frankrig,FWD,6000000,6000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49103,Fermin Lopez,ESP,Spanien,MID,5000000,5000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+48965,Cole Palmer,ENG,England,MID,5000000,5000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+48897,Bento Krepski,BRA,Brasilien,GK,5000000,5000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49782,Robin Le Normand,ESP,Spanien,DEF,4500000,4500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49750,Randal Kolo Muani,FRA,Frankrig,FWD,4500000,4500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49535,Matz Sels,BEL,Belgien,GK,4500000,4500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49290,João Palhinha,POR,Portugal,MID,4500000,4500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+48850,Anton Stach,GER,Tyskland,MID,4500000,4500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49874,Takumi Minamino,JPN,Japan,MID,4000000,4000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49783,Robin Olsen,SWE,Sverige,GK,4000000,4000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49742,Rafael Santos Borre,COL,Colombia,FWD,4000000,4000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49454,Lucas Chevalier,FRA,Frankrig,GK,4000000,4000000,possible_existing,closest_match_score=0.867,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49446,Lois Openda,BEL,Belgien,FWD,4000000,4000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50274,Juan Musso,ARG,Argentina,GK,4000000,4000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49292,João Pedro,BRA,Brasilien,FWD,4000000,4000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49310,Jonas Urbig,GER,Tyskland,GK,4000000,4000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50282,Giorgian De Arrascaeta,URU,Uruguay,MID,4000000,4000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49109,Finn Dahmen,GER,Tyskland,GK,4000000,4000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49001,Dean Donny Huijsen,ESP,Spanien,DEF,4000000,4000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+48768,Alejandro 'Alex' Remiro,ESP,Spanien,GK,4000000,4000000,possible_existing,closest_match_score=1.033,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49909,Trent Alexander-Arnold,ENG,England,DEF,3500000,3500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50288,Santiago Gimenez,MEX,Mexico,FWD,3500000,3500000,possible_existing,closest_match_score=0.828,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50309,Rodrigo Zalazar,URU,Uruguay,MID,3500000,3500000,possible_existing,closest_match_score=0.867,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50271,Robin Roefs,NED,Holland,GK,3500000,3500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49781,Robin Koch,GER,Tyskland,DEF,3500000,3500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49673,Nuno Tavares,POR,Portugal,DEF,3500000,3500000,possible_existing,closest_match_score=0.859,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49666,Noel Törnqvist,SWE,Sverige,GK,3500000,3500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49610,Mostafa Mohamed,EGY,Egypten,FWD,3500000,3500000,possible_existing,closest_match_score=0.867,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49574,Mohamed Ali Ben Romdhane,TUN,Tunesien,MID,3500000,3500000,possible_existing,closest_match_score=0.908,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49546,Melker Ellborg,SWE,Sverige,GK,3500000,3500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49541,Maximilian Mittelstädt,GER,Tyskland,DEF,3500000,3500000,possible_existing,closest_match_score=0.884,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49474,Maarten Vandevoordt,BEL,Belgien,GK,3500000,3500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49438,Lewis Hall,ENG,England,DEF,3500000,3500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49394,Kevin Schade,GER,Tyskland,MID,3500000,3500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49374,Kaoru Mitoma,JPN,Japan,MID,3500000,3500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49300,Johan Carbonero,COL,Colombia,FWD,3500000,3500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49287,Joao Carvalho,POR,Portugal,GK,3500000,3500000,possible_existing,closest_match_score=0.920,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49278,Jesus Rodriguez,ESP,Spanien,MID,3500000,3500000,possible_existing,closest_match_score=0.917,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+48985,Daniel Vivian,ESP,Spanien,DEF,3500000,3500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+48855,Antonio Silva,POR,Portugal,DEF,3500000,3500000,possible_existing,closest_match_score=0.836,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50252,Sergino Dest,USA,USA,DEF,3000000,3000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49819,Samuel Aghehowa,ESP,Spanien,FWD,3000000,3000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49795,Roony Bardghji,SWE,Sverige,MID,3000000,3000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50308,Rodrigo Bentancur,URU,Uruguay,MID,3000000,3000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50299,Promise David,CAN,Canada,FWD,3000000,3000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49738,Pierre Kalulu,FRA,Frankrig,DEF,3000000,3000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49726,Pedro 'Pote' Goncalves,POR,Portugal,MID,3000000,3000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49709,Pascal Loretz,SUI,Schweiz,GK,3000000,3000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49703,Pablo Fornals,ESP,Spanien,MID,3000000,3000000,possible_existing,closest_match_score=0.859,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49702,Pablo Barrios,ESP,Spanien,MID,3000000,3000000,possible_existing,closest_match_score=0.946,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49617,Munir Mohamedi El Kajoui,MAR,Marokko,GK,3000000,3000000,possible_existing,closest_match_score=1.019,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49508,Martial Godo,CIV,Elfenbenskysten,FWD,3000000,3000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50275,Lisandro Martinez,ARG,Argentina,DEF,3000000,3000000,possible_existing,closest_match_score=1.024,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49345,Juan Cabal,COL,Colombia,DEF,3000000,3000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49257,Jarrod Bowen,ENG,England,FWD,3000000,3000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49173,Harry Maguire,ENG,England,DEF,3000000,3000000,possible_existing,closest_match_score=0.896,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50266,Frenkie de Jong,NED,Holland,MID,3000000,3000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49102,Ferjani Sassi,TUN,Tunesien,MID,3000000,3000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49047,Eduardo Camavinga,FRA,Frankrig,MID,3000000,3000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50284,Edson Alvarez,MEX,Mexico,MID,3000000,3000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50265,Crysencio Summerville,NED,Holland,MID,3000000,3000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+48889,Bechir Ben Said,TUN,Tunesien,GK,3000000,3000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+48833,Andrey Santos,BRA,Brasilien,MID,3000000,3000000,possible_existing,closest_match_score=0.917,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+48766,Aleix Garcia,ESP,Spanien,MID,3000000,3000000,possible_existing,closest_match_score=0.983,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49979,Youssef Msakni,TUN,Tunesien,FWD,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49969,Yerson Mosquera,COL,Colombia,DEF,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49963,Yassine Meriah,TUN,Tunesien,DEF,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49947,Williot Swedberg,SWE,Sverige,FWD,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49932,Vitinho,BRA,Brasilien,MID,2500000,2500000,possible_existing,closest_match_score=0.907,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49928,Vincent Sierro,SUI,Schweiz,MID,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49927,Viljar Myhra,NOR,Norge,GK,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50276,Valentin Barco,ARG,Argentina,MID,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49904,Tommy Conway,SCO,Skotland,FWD,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50300,Stephen Eustaquio,CAN,Canada,MID,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50263,Soufiane Rahimi,MAR,Marokko,MID,2500000,2500000,possible_existing,closest_match_score=0.886,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49849,Shuto Machino,JPN,Japan,FWD,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50310,Sebastian Caceres,URU,Uruguay,DEF,2500000,2500000,possible_existing,closest_match_score=1.024,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49829,Scott Bain,SCO,Skotland,GK,2500000,2500000,possible_existing,closest_match_score=0.840,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50316,Sasa Kalajdzic,AUT,Østrig,FWD,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50315,Paul Wanner,AUT,Østrig,MID,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50321,Oussama Benbout,ALG,Algeriet,GK,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49669,Noureddine Farhati,TUN,Tunesien,GK,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49622,Naim Sliti,TUN,Tunesien,MID,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50320,Nabil Bentaleb,ALG,Algeriet,MID,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50298,Moïse Bombito,CAN,Canada,DEF,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50314,Michael Svoboda,AUT,Østrig,DEF,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50318,Melvin Feycal Mastil,ALG,Algeriet,GK,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50270,Mats Wieffer,NED,Holland,MID,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50287,Mateo Chavez,MEX,Mexico,DEF,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50269,Marten de Roon,NED,Holland,MID,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50286,Luis Romo,MEX,Mexico,MID,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49448,Lovro Majer,CRO,Kroatien,MID,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49445,Logan Rogerson,NZL,New Zealand,FWD,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49410,Kristian Arnstad,NOR,Norge,MID,2500000,2500000,possible_existing,closest_match_score=0.993,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50268,Justin Kluivert,NED,Holland,MID,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49297,Joel Monteiro,SUI,Schweiz,FWD,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50251,Joe Scally,USA,USA,DEF,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50295,Jindrich Stanek,CZE,Tjekkiet,GK,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50317,Jaouen Hadjam,ALG,Algeriet,DEF,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50294,Jan Kuchta,CZE,Tjekkiet,FWD,2500000,2500000,possible_existing,closest_match_score=0.821,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50304,Jackson Irvine,AUS,Australien,MID,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50278,Iqraam Rayners,RSA,Sydafrika,FWD,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49194,Hugo Larsson,SWE,Sverige,MID,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49181,Herman Johansson,SWE,Sverige,MID,2500000,2500000,possible_existing,closest_match_score=0.887,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49180,Heri Tavares,CPV,Kap Verde,DEF,2500000,2500000,possible_existing,closest_match_score=0.867,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50303,Harry Souttar,AUS,Australien,DEF,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50250,Haji Wright,USA,USA,FWD,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49162,Habib Diallo,SEN,Senegal,FWD,2500000,2500000,possible_existing,closest_match_score=0.950,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50267,Guus Til,NED,Holland,MID,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50272,Gilberto Mora,MEX,Mexico,MID,2500000,2500000,possible_existing,closest_match_score=0.843,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50043,Gedeon Kalulu,COD,Congo DR,DEF,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49128,Gabriel Sara,BRA,Brasilien,MID,2500000,2500000,possible_existing,closest_match_score=0.867,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50313,Florian Wiegele,AUT,Østrig,GK,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50273,Facundo Medina,ARG,Argentina,DEF,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49089,Fabinho,BRA,Brasilien,MID,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50312,David Affengruber,AUT,Østrig,DEF,2500000,2500000,possible_existing,closest_match_score=0.821,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50302,Cristian Volpato,AUS,Australien,MID,2500000,2500000,possible_existing,closest_match_score=0.824,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50283,Cesar Huerta,MEX,Mexico,MID,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50311,Carney Chukwuemeka,AUT,Østrig,MID,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+48922,Bruno Varela,CPV,Kap Verde,GK,2500000,2500000,possible_existing,closest_match_score=0.867,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+48893,Benie Traore,CIV,Elfenbenskysten,FWD,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50258,Ayoube Amaimouni-Echghouyab,MAR,Marokko,MID,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50249,Auston Trusty,USA,USA,DEF,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+48813,Alvyn Sanches,SUI,Schweiz,MID,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+48752,Ailson Tavares,CPV,Kap Verde,MID,2500000,2500000,possible_existing,closest_match_score=0.884,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50257,Ahmed Reda Tagnaouti,MAR,Marokko,GK,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50307,Agustin Canobbio,URU,Uruguay,MID,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50289,Adam Hlozek,CZE,Tjekkiet,FWD,2500000,2500000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49983,Yuki Soma,JPN,Japan,MID,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49980,Youssouf Sabaly,SEN,Senegal,DEF,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50264,Youssef Belammari,MAR,Marokko,DEF,2000000,2000000,possible_existing,closest_match_score=0.847,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49950,Woobens Pacius,HAI,Haiti,FWD,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49923,Victor Eriksson,SWE,Sverige,DEF,2000000,2000000,possible_existing,closest_match_score=0.850,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49906,Tomoya Ando,JPN,Japan,DEF,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50256,Tomas Rodriguez,PAN,Panama,FWD,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50306,Tete Yengi,AUS,Australien,FWD,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49854,Simon Sohm,SUI,Schweiz,MID,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49834,Sebastian Nanasi,SWE,Sverige,MID,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49828,Sayfallah Ltaief,TUN,Tunesien,MID,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50262,Samir El Mourabet,MAR,Marokko,MID,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50322,Samir Chergui,ALG,Algeriet,DEF,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49808,Ryunosuke Sato,JPN,Japan,MID,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49797,Ross McCrorie,SCO,Skotland,DEF,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49791,Romeo Vermant,BEL,Belgien,FWD,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50261,Redouane Halhal,MAR,Marokko,DEF,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49704,Pape Abou Cisse,SEN,Senegal,DEF,2000000,2000000,possible_existing,closest_match_score=0.840,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50280,Olwethu Makhanya,RSA,Sydafrika,DEF,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49678,Odin Bjørtuft,NOR,Norge,DEF,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49625,Nasser Mansy,EGY,Egypten,FWD,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49623,Nampalys Mendy,SEN,Senegal,MID,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50319,Mohamed Amine Tougai,ALG,Algeriet,DEF,2000000,2000000,possible_existing,closest_match_score=0.965,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50305,Mathew Leckie,AUS,Australien,MID,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49470,Lukas Kelly-Heald,NZL,New Zealand,DEF,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50285,Luis Chavez,MEX,Mexico,MID,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49453,Lucas Blondel,SUI,Schweiz,DEF,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49447,Louey Ben Farhat,TUN,Tunesien,FWD,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49429,Lennon Miller,SCO,Skotland,MID,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49405,Koki Saito,JPN,Japan,MID,2000000,2000000,possible_existing,closest_match_score=0.900,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49402,Kodai Sano,JPN,Japan,MID,2000000,2000000,possible_existing,closest_match_score=1.012,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49396,Khaled Sobhi,EGY,Egypten,DEF,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50046,Keeto Thermoncy,HAI,Haiti,DEF,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50279,Kamogelo Sebelebele,RSA,Sydafrika,DEF,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49344,Ju-sung Kim,KOR,Sydkorea,DEF,2000000,2000000,possible_existing,closest_match_score=0.927,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49296,Joel Chima Fujita,JPN,Japan,MID,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49247,James McGarry,NZL,New Zealand,DEF,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50297,Jacob Shaffelburg,CAN,Canada,MID,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49235,Ivan Smolcic,CRO,Kroatien,DEF,2000000,2000000,possible_existing,closest_match_score=0.867,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49222,Islam Issa,EGY,Egypten,MID,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49220,Isaac Schmidt,SUI,Schweiz,DEF,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49201,Hyun-seok Hong,KOR,Sydkorea,MID,2000000,2000000,possible_existing,closest_match_score=0.843,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49197,Hyeok-kyu Kwon,KOR,Sydkorea,MID,2000000,2000000,possible_existing,closest_match_score=0.892,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50293,Hugo Sochurek,CZE,Tjekkiet,MID,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49179,Henry Mochizuki,JPN,Japan,DEF,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49135,Ghaith Zaalouni,TUN,Tunesien,DEF,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50260,Gessime Yassine,MAR,Marokko,MID,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49107,Filip Ugrinic,SUI,Schweiz,MID,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49099,Felix Horn Myhre,NOR,Norge,MID,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50255,Edgardo Farina,PAN,Panama,DEF,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49005,Delentz Pierre,HAI,Haiti,DEF,2000000,2000000,possible_existing,closest_match_score=0.890,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50292,David Zima,CZE,Tjekkiet,DEF,2000000,2000000,possible_existing,closest_match_score=0.859,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50291,David Doudera,CZE,Tjekkiet,MID,2000000,2000000,possible_existing,closest_match_score=0.892,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+48973,Daiki Hashioka,JPN,Japan,DEF,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+48953,Cheikh Niasse,SEN,Senegal,MID,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+48951,Charles Vanhoutte,BEL,Belgien,MID,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+48942,Cedric Zesiger,SUI,Schweiz,DEF,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50301,Cameron Devlin,AUS,Australien,MID,2000000,2000000,possible_existing,closest_match_score=0.821,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50277,Bradley Cross,RSA,Sydafrika,DEF,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+48908,Boulaye Dia,SEN,Senegal,FWD,2000000,2000000,possible_existing,closest_match_score=0.840,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+48901,Bill Tuiloma,NZL,New Zealand,DEF,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+48890,Becir Omeragic,SUI,Schweiz,DEF,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50254,Azarias Londono,PAN,Panama,MID,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50259,Ayyoub Bouaddi,MAR,Marokko,MID,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+48832,Andrew Irving,SCO,Skotland,MID,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+48827,Andi Zeqiri,SUI,Schweiz,FWD,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+48825,Amor Layouni,TUN,Tunesien,MID,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+48799,Ali Maaloul,TUN,Tunesien,DEF,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50296,Alfie Jones,CAN,Canada,DEF,2000000,2000000,possible_existing,closest_match_score=0.821,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50290,Alexandr Sojka,CZE,Tjekkiet,MID,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50248,Alex Zendejas,USA,USA,MID,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50253,Alberto Quintero,PAN,Panama,MID,2000000,2000000,possible_existing,closest_match_score=0.829,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+48760,Alaa Ghram,TUN,Tunesien,DEF,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+48754,Aissa Laidouni,TUN,Tunesien,MID,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+48748,Ahmed Nabil Kouka,EGY,Egypten,DEF,2000000,2000000,possible_existing,closest_match_score=0.871,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+48739,Adrian Bajrami,SUI,Schweiz,DEF,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+48720,Abdou Diallo,SEN,Senegal,DEF,2000000,2000000,potential_new,no_name_team_match,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
