@@ -449,12 +449,32 @@ def add_strategy_scores(players: pd.DataFrame) -> pd.DataFrame:
     ).clip(lower=0.0)
 
     tournament_strength = (0.75 * work["team_long_run_score"] + 0.25 * work["team_market_score"]).clip(lower=0.0)
-    weak_team_penalty = 0.35 * (tournament_strength < 0.18).astype(float)
+    weak_team_penalty = (
+        2.20 * (tournament_strength < 0.18).astype(float)
+        + 1.25 * ((tournament_strength >= 0.18) & (tournament_strength < 0.28)).astype(float)
+        + 0.45 * ((tournament_strength >= 0.28) & (tournament_strength < 0.40)).astype(float)
+    )
+    manual_long_run_penalty = (
+        0.95 * work["manual_status"].str.lower().eq("check").astype(float)
+        + 0.95 * work["manual_start_status"].str.lower().eq("doubtful").astype(float)
+        + 0.30 * work["manual_captain_status"].str.lower().eq("avoid").astype(float)
+    )
+    mid_team_value_penalty = (
+        0.65
+        * (tournament_strength < 0.35).astype(float)
+        * (
+            (work["optimizer_ev"] < 4.60)
+            | (work["conditional_start_prob"] < 0.88)
+            | work["availability_risk"].eq("high_risk")
+        ).astype(float)
+    )
     work["score_long_run"] = (
-        1.20 * work["optimizer_ev"]
-        + 1.35 * tournament_strength
-        + 0.80 * start
+        0.95 * work["optimizer_ev"]
+        + 3.40 * tournament_strength
+        + 1.15 * start
         - weak_team_penalty
+        - manual_long_run_penalty
+        - mid_team_value_penalty
     ).clip(lower=0.0)
 
     return work
@@ -473,20 +493,30 @@ def solve_formation(players: pd.DataFrame, strategy: str, formation_name: str, f
     underuse = pulp.LpVariable(f"{strategy}_budget_underuse", lowBound=0, cat="Continuous")
 
     floor = 49.5 if strategy == "next_round" else 49.0
-    penalty = 1.10 if strategy == "next_round" else 0.55
+    penalty = 1.10 if strategy == "next_round" else (0.18 if strategy == "long_run" else 0.55)
     problem += score_expr + 0.025 * total_price_expr - penalty * underuse
     problem += underuse >= floor - total_price_expr
     problem += pulp.lpSum(variables[idx] for idx in players.index) == SQUAD_SIZE
     problem += total_price_expr <= BUDGET_M
+    high_risk_limit = 0 if strategy == "long_run" else (1 if strategy == "next_round" else 2)
+    avg_cond_floor = 0.84 if strategy in {"next_round", "long_run"} else 0.80
+    min_cond = 0.72 if strategy == "long_run" else (0.70 if strategy == "next_round" else 0.65)
+
     problem += pulp.lpSum(
         variables[idx] for idx in players.index if txt(players.loc[idx, "availability_risk"]) == "high_risk"
-    ) <= (1 if strategy == "next_round" else 2)
-    problem += pulp.lpSum(float(players.loc[idx, "conditional_start_prob"]) * variables[idx] for idx in players.index) >= (0.84 if strategy == "next_round" else 0.80) * SQUAD_SIZE
-    min_cond = 0.70 if strategy == "next_round" else 0.65
+    ) <= high_risk_limit
+    problem += pulp.lpSum(float(players.loc[idx, "conditional_start_prob"]) * variables[idx] for idx in players.index) >= avg_cond_floor * SQUAD_SIZE
     for idx in players.index[players["conditional_start_prob"] < min_cond].tolist():
         problem += variables[idx] == 0
     for idx in players.index[players["manual_avoid"]].tolist():
         problem += variables[idx] == 0
+
+    if strategy == "long_run":
+        tournament_strength = (0.75 * players["team_long_run_score"] + 0.25 * players["team_market_score"]).clip(lower=0.0)
+        strong_team_indices = players.index[tournament_strength >= 0.50].tolist()
+        weak_team_indices = players.index[tournament_strength < 0.35].tolist()
+        problem += pulp.lpSum(variables[idx] for idx in strong_team_indices) >= 7
+        problem += pulp.lpSum(variables[idx] for idx in weak_team_indices) <= 2
 
     for pos, count in formation.items():
         indices = players.index[players["position"] == pos].tolist()

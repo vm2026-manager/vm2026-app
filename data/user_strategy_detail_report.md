@@ -14,7 +14,7 @@ Ingen modeldata er ændret af denne rapport. Baumgartner-skadeinfo er kun marker
 | Næste runde (runde 1) | 3-4-3 | 49.5 | 42.438 | 90.126 | 0.8441 | 1 | Cristiano Ronaldo | 2 | rimelig starter-sikkerhed; 1 high_risk |
 | 1. + 2. runde | 3-4-3 | 49.0 | 43.676 | 107.522 | 0.8488 | 1 | Cristiano Ronaldo | 2 | rimelig starter-sikkerhed; 1 high_risk |
 | Gruppespil | 3-4-3 | 48.5 | 44.223 | 120.934 | 0.8412 | 2 | Cristiano Ronaldo | 2 | rimelig starter-sikkerhed; 2 high_risk; underudnytter budget lidt; inkluderer runde 3-rotation |
-| Lang sigt | 3-4-3 | 49.5 | 42.989 | 60.681 | 0.8635 | 0 | Cristiano Ronaldo | 2 | høj starter-sikkerhed; orienteret mod stærkere turneringsnationer |
+| Lang sigt | 3-5-2 | 50.0 | 34.264 | 65.949 | 0.878 | 0 | Mikel Oyarzabal | 1.348 | høj starter-sikkerhed; orienteret mod stærkere turneringsnationer |
 
 ## Kaptajn-tjek
 
@@ -86,17 +86,17 @@ TODO: Tilfoej national_goal_rate, recent_goal_rate og et egentligt set_piece_tak
 
 | Spiller | Hold | Pos | Pris | EV | Score | Start | Cond | Risk | Runder/modstandere | Win prob | CS prob | Goal/assist | Note |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Nuno Mendes | POR | DEF | 4500000 | 3.974216 | 5.655984 | 0.7657 | 0.8431 | medium_risk | R1:COD; R2:UZB; R3:COL | R1:0.734; R2:0.743; R3:0.436 | R1:0.5; R2:0.5; R3:0.355 |  | favoritkamp i relevant horisont; stærk clean sheet-profil; valgt i lang sigt-kontekst |
-| Ruben Dias | POR | DEF | 4000000 | 2.812349 | 4.541743 | 0.8077 | 0.8506 | low_risk | R1:COD; R2:UZB; R3:COL | R1:0.734; R2:0.743; R3:0.436 | R1:0.5; R2:0.5; R3:0.355 |  | favoritkamp i relevant horisont; stærk clean sheet-profil; valgt i lang sigt-kontekst |
-| Timothy Castagne | BEL | DEF | 3500000 | 3.049967 | 4.34023 | 0.7767 | 0.8194 | low_risk | R1:EGY; R2:IRN; R3:NZL | R1:0.566; R2:0.665; R3:0.735 | R1:0.392; R2:0.5; R3:0.513 |  | favoritkamp i relevant horisont; stærk clean sheet-profil; valgt i lang sigt-kontekst |
-| Vinicius Junior | BRA | FWD | 7500000 | 5.044969 | 7.067443 | 0.7444 | 0.8103 | medium_risk | R1:MAR; R2:HAI; R3:SCO | R1:0.586; R2:0.897; R3:0.669 |  | R1: goal 1.288 / assist 1.206; R2: goal 1.35 / assist 1.25; R3: goal 1.35 / assist 1.25 | høj EV; favoritkamp i relevant horisont; godt offensivt kampmiljø; valgt i lang sigt-kontekst |
-| Cristiano Ronaldo | POR | FWD | 7000000 | 4.947107 | 7.039453 | 0.908 | 0.97 | medium_risk | R1:COD; R2:UZB; R3:COL | R1:0.734; R2:0.743; R3:0.436 |  | R1: goal 1.35 / assist 1.25; R2: goal 1.35 / assist 1.25; R3: goal 1.115 / assist 1.082 | stærk startsikkerhed; høj EV; favoritkamp i relevant horisont; godt offensivt kampmiljø; valgt i lang sigt-kontekst |
-| Patrick Agyemang | USA | FWD | 3000000 | 4.112482 | 5.592055 | 0.7929 | 0.8571 | medium_risk | R1:PAR; R2:AUS; R3:TUR | R1:0.476; R2:0.545; R3:0.371 |  | R1: goal 1.155 / assist 1.111; R2: goal 1.237 / assist 1.169; R3: goal 1.01 / assist 1.007 | valgt i lang sigt-kontekst |
-| Diogo Costa | POR | GK | 5000000 | 3.560318 | 5.223306 | 0.7534 | 0.7925 | low_risk | R1:COD; R2:UZB; R3:COL | R1:0.734; R2:0.743; R3:0.436 | R1:0.5; R2:0.5; R3:0.355 |  | favoritkamp i relevant horisont; stærk clean sheet-profil; valgt i lang sigt-kontekst |
-| Joshua Kimmich | GER | MID | 5000000 | 3.719618 | 5.664139 | 0.9287 | 0.9504 | low_risk | R1:CUW; R2:CIV; R3:ECU | R1:0.918; R2:0.607; R3:0.571 |  | R1: goal 1.35 / assist 1.25; R2: goal 1.306 / assist 1.218; R3: goal 1.269 / assist 1.192 | stærk startsikkerhed; favoritkamp i relevant horisont; godt offensivt kampmiljø; valgt i lang sigt-kontekst |
-| Kerem Akturkoglu | TUR | MID | 4500000 | 4.077992 | 5.524409 | 0.8753 | 0.9107 | low_risk | R1:AUS; R2:PAR; R3:USA | R1:0.518; R2:0.422; R3:0.357 |  | R1: goal 1.211 / assist 1.151; R2: goal 1.102 / assist 1.073; R3: goal 0.99 / assist 0.993 | stærk startsikkerhed; valgt i lang sigt-kontekst |
-| Oscar Bobb | NOR | MID | 3000000 | 3.563792 | 5.098807 | 0.9101 | 0.97 | medium_risk | R1:IRQ; R2:SEN; R3:FRA | R1:0.758; R2:0.458; R3:0.197 |  | R1: goal 1.35 / assist 1.25; R2: goal 1.136 / assist 1.097; R3: goal 0.753 / assist 0.823 | stærk startsikkerhed; favoritkamp i relevant horisont; godt offensivt kampmiljø; valgt i lang sigt-kontekst |
-| Roberto Alvarado | MEX | MID | 2500000 | 4.125843 | 4.933902 | 0.6394 | 0.7246 | medium_risk | R1:RSA; R2:KOR; R3:CZE | R1:0.645; R2:0.529; R3:0.484 |  | R1: goal 1.35 / assist 1.25; R2: goal 1.228 / assist 1.163; R3: goal 1.172 / assist 1.123 | captain_avoid: maa ikke anbefales som kaptajn; manuel tjek: lav conditional start; godt offensivt kampmiljø; valgt i lang sigt-kontekst |
+| Nuno Mendes | POR | DEF | 4500000 | 3.974216 | 5.92276 | 0.7657 | 0.8431 | medium_risk | R1:COD; R2:UZB; R3:COL | R1:0.734; R2:0.743; R3:0.436 | R1:0.5; R2:0.5; R3:0.355 |  | favoritkamp i relevant horisont; stærk clean sheet-profil; valgt i lang sigt-kontekst |
+| Aymeric Laporte | ESP | DEF | 4500000 | 1.647224 | 5.247334 | 0.822 | 0.902 | medium_risk | R1:CPV; R2:KSA; R3:URU | R1:0.87; R2:0.848; R3:0.577 | R1:0.625; R2:0.663; R3:0.423 |  | stærk startsikkerhed; favoritkamp i relevant horisont; stærk clean sheet-profil; valgt i lang sigt-kontekst |
+| Ruben Dias | POR | DEF | 4000000 | 2.812349 | 5.221486 | 0.8077 | 0.8506 | low_risk | R1:COD; R2:UZB; R3:COL | R1:0.734; R2:0.743; R3:0.436 | R1:0.5; R2:0.5; R3:0.355 |  | favoritkamp i relevant horisont; stærk clean sheet-profil; valgt i lang sigt-kontekst |
+| Mikel Oyarzabal | ESP | FWD | 7500000 | 4.133042 | 7.608861 | 0.8478 | 0.9432 | medium_risk | R1:CPV; R2:KSA; R3:URU | R1:0.87; R2:0.848; R3:0.577 |  | R1: goal 1.35 / assist 1.25; R2: goal 1.35 / assist 1.25; R3: goal 1.273 / assist 1.195 | stærk startsikkerhed; favoritkamp i relevant horisont; godt offensivt kampmiljø; valgt i lang sigt-kontekst |
+| Nico Williams | ESP | FWD | 4500000 | 3.744479 | 7.239726 | 0.8158 | 0.9091 | medium_risk | R1:CPV; R2:KSA; R3:URU | R1:0.87; R2:0.848; R3:0.577 |  | R1: goal 1.35 / assist 1.25; R2: goal 1.35 / assist 1.25; R3: goal 1.273 / assist 1.195 | stærk startsikkerhed; favoritkamp i relevant horisont; godt offensivt kampmiljø; valgt i lang sigt-kontekst |
+| Diogo Costa | POR | GK | 5000000 | 3.560318 | 5.621557 | 0.7534 | 0.7925 | low_risk | R1:COD; R2:UZB; R3:COL | R1:0.734; R2:0.743; R3:0.436 | R1:0.5; R2:0.5; R3:0.355 |  | favoritkamp i relevant horisont; stærk clean sheet-profil; valgt i lang sigt-kontekst |
+| Declan Rice | ENG | MID | 4500000 | 2.764994 | 5.896083 | 0.8465 | 0.8706 | low_risk | R1:CRO; R2:GHA; R3:PAN | R1:0.543; R2:0.709; R3:0.763 |  | R1: goal 1.237 / assist 1.17; R2: goal 1.35 / assist 1.25; R3: goal 1.35 / assist 1.25 | favoritkamp i relevant horisont; godt offensivt kampmiljø; valgt i lang sigt-kontekst |
+| Giovani Lo Celso | ARG | MID | 4000000 | 3.082398 | 5.838152 | 0.7765 | 0.8553 | medium_risk | R1:ALG; R2:AUT; R3:JOR | R1:0.656; R2:0.571; R3:0.801 |  | R1: goal 1.35 / assist 1.25; R2: goal 1.276 / assist 1.197; R3: goal 1.35 / assist 1.25 | favoritkamp i relevant horisont; godt offensivt kampmiljø; valgt i lang sigt-kontekst |
+| Rodrigo de Paul | ARG | MID | 4500000 | 2.957481 | 5.811481 | 0.9318 | 0.9545 | low_risk | R1:ALG; R2:AUT; R3:JOR | R1:0.656; R2:0.571; R3:0.801 |  | R1: goal 1.35 / assist 1.25; R2: goal 1.276 / assist 1.197; R3: goal 1.35 / assist 1.25 | stærk startsikkerhed; favoritkamp i relevant horisont; godt offensivt kampmiljø; valgt i lang sigt-kontekst |
+| Manu Koné | FRA | MID | 3500000 | 2.799984 | 5.776565 | 0.7771 | 0.8571 | medium_risk | R1:SEN; R2:IRQ; R3:NOR | R1:0.652; R2:0.842; R3:0.55 |  | R1: goal 1.35 / assist 1.25; R2: goal 1.35 / assist 1.25; R3: goal 1.247 / assist 1.177 | favoritkamp i relevant horisont; godt offensivt kampmiljø; valgt i lang sigt-kontekst |
+| Aurelien Tchouameni | FRA | MID | 3500000 | 2.787585 | 5.764786 | 0.8272 | 0.88 | medium_risk | R1:SEN; R2:IRQ; R3:NOR | R1:0.652; R2:0.842; R3:0.55 |  | R1: goal 1.35 / assist 1.25; R2: goal 1.35 / assist 1.25; R3: goal 1.247 / assist 1.177 | favoritkamp i relevant horisont; godt offensivt kampmiljø; valgt i lang sigt-kontekst |
 
 ## Spillere Der Bør Tjekkes Manuelt
 
@@ -104,7 +104,6 @@ TODO: Tilfoej national_goal_rate, recent_goal_rate og et egentligt set_piece_tak
 - Roberto Alvarado (MEX, MID): captain_avoid: maa ikke anbefales som kaptajn; manuel tjek: lav conditional start; godt offensivt kampmiljø
 - Andreas Schjelderup (NOR, MID): manuel tjek: lav conditional start; favoritkamp i relevant horisont; godt offensivt kampmiljø
 - Chris Richards (USA, DEF): manuel tjek: high_risk
-- Roberto Alvarado (MEX, MID): captain_avoid: maa ikke anbefales som kaptajn; manuel tjek: lav conditional start; godt offensivt kampmiljø; valgt i lang sigt-kontekst
 
 ## Inputfiler
 

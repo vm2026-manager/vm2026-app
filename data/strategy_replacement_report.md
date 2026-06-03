@@ -2,8 +2,8 @@
 
 ## Kort Konklusion
 
-- Fragile picks: 17. Replace-kandidater med manuelle flags: 11 af 44 strategi-valg.
-- Robuste valg med klar replacement-margin: 9.
+- Fragile picks: 17. Replace-kandidater med manuelle flags: 10 af 44 strategi-valg.
+- Robuste valg med klar replacement-margin: 8.
 - Roberto Alvarado er fortsat valgt som spiller, men manual_captain_status=avoid blokerer ham som kaptajn.
 
 ## Robuste Kernevalg På Tværs Af Strategier
@@ -11,14 +11,12 @@
 | Spiller | Hold | Pos | Valgt i | Strategier |
 | --- | --- | --- | --- | --- |
 | Nuno Mendes | POR | DEF | 4 | next_round; round1_2; group_stage; long_run |
-| Cristiano Ronaldo | POR | FWD | 4 | next_round; round1_2; group_stage; long_run |
 | Diogo Costa | POR | GK | 4 | next_round; round1_2; group_stage; long_run |
-| Oscar Bobb | NOR | MID | 4 | next_round; round1_2; group_stage; long_run |
-| Roberto Alvarado | MEX | MID | 4 | next_round; round1_2; group_stage; long_run |
 | Ruben Dias | POR | DEF | 3 | next_round; round1_2; long_run |
-| Vinicius Junior | BRA | FWD | 3 | round1_2; group_stage; long_run |
+| Cristiano Ronaldo | POR | FWD | 3 | next_round; round1_2; group_stage |
 | Andreas Schjelderup | NOR | MID | 3 | next_round; round1_2; group_stage |
-| Kerem Akturkoglu | TUR | MID | 3 | round1_2; group_stage; long_run |
+| Oscar Bobb | NOR | MID | 3 | next_round; round1_2; group_stage |
+| Roberto Alvarado | MEX | MID | 3 | next_round; round1_2; group_stage |
 
 ## Fragile Picks
 
@@ -47,11 +45,10 @@
 | Gruppespil | Diogo Costa | POR | GK | 10.086241 | Mike Maignan | 11.71943 | -1.633189 | fragile_pick |  |
 | Gruppespil | Roberto Alvarado | MEX | MID | 13.0122 | Malik Tillman | 9.810876 | 3.201324 | replace_candidate | low_conditional_start; manual_status:check; manual_start_status:doubtful; manual_captain_status:avoid; manual_note:Lav conditional start og lav landsholds-maalrate; maa ikke anbefales som kaptajn uden bekraeftet start/rolle |
 | Gruppespil | Andreas Schjelderup | NOR | MID | 10.712564 | Malik Tillman | 9.810876 | 0.901688 | replace_candidate | low_conditional_start |
-| Lang sigt | Vinicius Junior | BRA | FWD | 7.067443 | Lautaro Martinez | 6.914008 | 0.153435 | fragile_pick |  |
-| Lang sigt | Diogo Costa | POR | GK | 5.223306 | Mike Maignan | 5.662455 | -0.439149 | fragile_pick |  |
-| Lang sigt | Kerem Akturkoglu | TUR | MID | 5.524409 | Casemiro | 5.284413 | 0.239995 | fragile_pick |  |
-| Lang sigt | Oscar Bobb | NOR | MID | 5.098807 | Andreas Schjelderup | 4.999152 | 0.099655 | fragile_pick |  |
-| Lang sigt | Roberto Alvarado | MEX | MID | 4.933902 | Fabian Rieder | 3.962972 | 0.970931 | replace_candidate | low_conditional_start; manual_status:check; manual_start_status:doubtful; manual_captain_status:avoid; manual_note:Lav conditional start og lav landsholds-maalrate; maa ikke anbefales som kaptajn uden bekraeftet start/rolle |
+| Lang sigt | Aymeric Laporte | ESP | DEF | 5.247334 | Marc Cucurella | 5.025435 | 0.221898 | fragile_pick |  |
+| Lang sigt | Diogo Costa | POR | GK | 5.621557 | Mike Maignan | 5.950781 | -0.329224 | fragile_pick |  |
+| Lang sigt | Declan Rice | ENG | MID | 5.896083 | Alexis Mac Allister | 5.729038 | 0.167045 | fragile_pick |  |
+| Lang sigt | Rodrigo de Paul | ARG | MID | 5.811481 | Alexis Mac Allister | 5.729038 | 0.082443 | fragile_pick |  |
 
 ## Manuelle Tjek Med Bedste Alternativer
 
@@ -67,7 +64,6 @@
 | Gruppespil | Raul Jimenez | MEX | FWD | 12.796656 | Patrick Agyemang | 12.998277 | -0.20162 | replace_candidate | high_risk |
 | Gruppespil | Roberto Alvarado | MEX | MID | 13.0122 | Malik Tillman | 9.810876 | 3.201324 | replace_candidate | low_conditional_start; manual_status:check; manual_start_status:doubtful; manual_captain_status:avoid; manual_note:Lav conditional start og lav landsholds-maalrate; maa ikke anbefales som kaptajn uden bekraeftet start/rolle |
 | Gruppespil | Andreas Schjelderup | NOR | MID | 10.712564 | Malik Tillman | 9.810876 | 0.901688 | replace_candidate | low_conditional_start |
-| Lang sigt | Roberto Alvarado | MEX | MID | 4.933902 | Fabian Rieder | 3.962972 | 0.970931 | replace_candidate | low_conditional_start; manual_status:check; manual_start_status:doubtful; manual_captain_status:avoid; manual_note:Lav conditional start og lav landsholds-maalrate; maa ikke anbefales som kaptajn uden bekraeftet start/rolle |
 
 ### Næste runde (runde 1) - Raul Jimenez
 
@@ -149,14 +145,6 @@
 - note: Manuelt flag + margin 0.902 mod Malik Tillman (9.811); bør tjekkes før lås.
 - top 5 alternativer: 1. Malik Tillman USA score 9.811 cond 0.786 risk high_risk; 2. Remo Freuler SUI score 9.33 cond 0.86 risk low_risk; 3. Marcel Sabitzer AUT score 9.005 cond 0.88 risk medium_risk; 4. Joshua Kimmich GER score 8.977 cond 0.95 risk low_risk; 5. Casemiro BRA score 8.91 cond 0.881 risk high_risk
 
-### Lang sigt - Roberto Alvarado
-
-- label: replace_candidate
-- margin: 0.970931
-- flag: low_conditional_start; manual_status:check; manual_start_status:doubtful; manual_captain_status:avoid; manual_note:Lav conditional start og lav landsholds-maalrate; maa ikke anbefales som kaptajn uden bekraeftet start/rolle
-- note: Manuelt flag + margin 0.971 mod Fabian Rieder (3.963); bør tjekkes før lås.
-- top 5 alternativer: 1. Fabian Rieder SUI score 3.963 cond 0.839 risk medium_risk; 2. Sebastian Berhalter USA score 3.744 cond 0.75 risk medium_risk; 3. Martin Baturina CRO score 3.598 cond 0.625 risk medium_risk; 4. Amar Memic BIH score 3.527 cond 0.889 risk medium_risk; 5. Konrad Laimer AUT score 3.525 cond 0.908 risk low_risk
-
 ## Kaptajn
 
 | Strategi | Kaptajn | Vækst | Flag | Top kaptajnalternativer blandt 11 |
@@ -164,7 +152,7 @@
 | Næste runde (runde 1) | Cristiano Ronaldo | 2 |  | Cristiano Ronaldo (score 2.38, vaekst 2); Oscar Bobb (score 2.188, vaekst 2.028); Scott McTominay (score 1.911, vaekst 1.891); Lautaro Martinez (score 1.839, vaekst 1.599); Stefan Posch (score 1.436, vaekst 2.026) |
 | 1. + 2. runde | Cristiano Ronaldo | 2 |  | Cristiano Ronaldo (score 2.38, vaekst 2); Oscar Bobb (score 2.188, vaekst 2.028); Jonathan David (score 2.082, vaekst 1.982); Kerem Akturkoglu (score 1.772, vaekst 1.672); Diogo Costa (score 1.399, vaekst 1.769) |
 | Gruppespil | Cristiano Ronaldo | 2 |  | Cristiano Ronaldo (score 2.38, vaekst 2); Oscar Bobb (score 2.188, vaekst 2.028); Kerem Akturkoglu (score 1.772, vaekst 1.672); Diogo Costa (score 1.399, vaekst 1.769); Andreas Schjelderup (score 1.381, vaekst 2.171) |
-| Lang sigt | Cristiano Ronaldo | 2 |  | Cristiano Ronaldo (score 2.38, vaekst 2); Oscar Bobb (score 2.188, vaekst 2.028); Patrick Agyemang (score 2.131, vaekst 2.151); Joshua Kimmich (score 1.825, vaekst 1.445); Kerem Akturkoglu (score 1.772, vaekst 1.672) |
+| Lang sigt | Mikel Oyarzabal | 1.348 |  | Mikel Oyarzabal (score 1.728, vaekst 1.348); Nico Williams (score 1.706, vaekst 1.326); Diogo Costa (score 1.399, vaekst 1.769); Nuno Mendes (score 1.341, vaekst 1.931); Ruben Dias (score 1.219, vaekst 1.139) |
 
 
 ## Alle Valgte Spillere Mod Bedste Replacement
@@ -204,14 +192,14 @@
 | Gruppespil | Kerem Akturkoglu | TUR | MID | 11.181498 | Malik Tillman | 9.810876 | 1.370622 | robust_pick |  |
 | Gruppespil | Andreas Schjelderup | NOR | MID | 10.712564 | Malik Tillman | 9.810876 | 0.901688 | replace_candidate | low_conditional_start |
 | Gruppespil | Oscar Bobb | NOR | MID | 10.624446 | Malik Tillman | 9.810876 | 0.81357 | watchlist |  |
-| Lang sigt | Nuno Mendes | POR | DEF | 5.655984 | William Saliba | 4.006859 | 1.649125 | robust_pick |  |
-| Lang sigt | Ruben Dias | POR | DEF | 4.541743 | William Saliba | 4.006859 | 0.534885 | watchlist |  |
-| Lang sigt | Timothy Castagne | BEL | DEF | 4.34023 | Josko Gvardiol | 3.957112 | 0.383118 | watchlist |  |
-| Lang sigt | Vinicius Junior | BRA | FWD | 7.067443 | Lautaro Martinez | 6.914008 | 0.153435 | fragile_pick |  |
-| Lang sigt | Cristiano Ronaldo | POR | FWD | 7.039453 | Mikel Oyarzabal | 6.54886 | 0.490594 | watchlist |  |
-| Lang sigt | Patrick Agyemang | USA | FWD | 5.592055 | Ayoub El Kaabi | 4.075001 | 1.517054 | robust_pick |  |
-| Lang sigt | Diogo Costa | POR | GK | 5.223306 | Mike Maignan | 5.662455 | -0.439149 | fragile_pick |  |
-| Lang sigt | Joshua Kimmich | GER | MID | 5.664139 | Casemiro | 5.284413 | 0.379726 | watchlist |  |
-| Lang sigt | Kerem Akturkoglu | TUR | MID | 5.524409 | Casemiro | 5.284413 | 0.239995 | fragile_pick |  |
-| Lang sigt | Oscar Bobb | NOR | MID | 5.098807 | Andreas Schjelderup | 4.999152 | 0.099655 | fragile_pick |  |
-| Lang sigt | Roberto Alvarado | MEX | MID | 4.933902 | Fabian Rieder | 3.962972 | 0.970931 | replace_candidate | low_conditional_start; manual_status:check; manual_start_status:doubtful; manual_captain_status:avoid; manual_note:Lav conditional start og lav landsholds-maalrate; maa ikke anbefales som kaptajn uden bekraeftet start/rolle |
+| Lang sigt | Nuno Mendes | POR | DEF | 5.92276 | Marc Cucurella | 5.025435 | 0.897324 | watchlist |  |
+| Lang sigt | Aymeric Laporte | ESP | DEF | 5.247334 | Marc Cucurella | 5.025435 | 0.221898 | fragile_pick |  |
+| Lang sigt | Ruben Dias | POR | DEF | 5.221486 | Cristian Romero | 4.405474 | 0.816012 | watchlist |  |
+| Lang sigt | Mikel Oyarzabal | ESP | FWD | 7.608861 | Vinicius Junior | 7.258708 | 0.350153 | watchlist |  |
+| Lang sigt | Nico Williams | ESP | FWD | 7.239726 | Matheus Cunha | 5.060902 | 2.178824 | robust_pick |  |
+| Lang sigt | Diogo Costa | POR | GK | 5.621557 | Mike Maignan | 5.950781 | -0.329224 | fragile_pick |  |
+| Lang sigt | Declan Rice | ENG | MID | 5.896083 | Alexis Mac Allister | 5.729038 | 0.167045 | fragile_pick |  |
+| Lang sigt | Giovani Lo Celso | ARG | MID | 5.838152 | Elliot Anderson | 5.464295 | 0.373858 | watchlist |  |
+| Lang sigt | Rodrigo de Paul | ARG | MID | 5.811481 | Alexis Mac Allister | 5.729038 | 0.082443 | fragile_pick |  |
+| Lang sigt | Manu Koné | FRA | MID | 5.776565 | Jordan Henderson | 4.956174 | 0.820392 | watchlist |  |
+| Lang sigt | Aurelien Tchouameni | FRA | MID | 5.764786 | Jordan Henderson | 4.956174 | 0.808613 | watchlist |  |
