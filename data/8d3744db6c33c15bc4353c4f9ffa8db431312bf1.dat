@@ -1,0 +1,234 @@
+defineDs('DanskeSpil/Domain/Feature.LoyaltyClub/Helpers/Api', ['Shared/Framework/Ensighten/Scripts/Ensighten', 'Shared/Framework/Mithril/Scripts/Helpers/ApiRequest', 'DanskeSpil/Framework/PlayerAccountManagement/Scripts/Helpers/Consent'], function (Ensighten, ApiRequest, Consent) {
+  // Variables:
+  var baseUrl = "".concat(DS.Config.CONTEXTPREFIX, "/scapi/danskespil/loyaltyclub/v1");
+
+  // Functions:
+  var startGame = (game, platform) => {
+    return ApiRequest({
+      method: 'GET',
+      url: "".concat(baseUrl, "/competitions/").concat(game.campaign_id, "/gamelauncher/").concat(platform)
+    });
+  };
+  var fetchContentHubUrl = (id, platform) => {
+    return ApiRequest({
+      method: 'GET',
+      url: "".concat(baseUrl, "/competitions/").concat(id, "/gamelauncher/").concat(platform)
+    });
+  };
+  var fetchGameData = gameId => {
+    return ApiRequest({
+      method: 'GET',
+      url: "".concat(baseUrl, "/competitions/").concat(gameId)
+    });
+  };
+  var fetchGamesData = isSubscriber => {
+    var url = isSubscriber ? "".concat(baseUrl, "/competitions") : "".concat(baseUrl, "/competitions/public");
+    return ApiRequest({
+      method: 'GET',
+      url: url
+    });
+  };
+  var fetchMembershipData = () => {
+    return ApiRequest({
+      method: 'GET',
+      url: "".concat(baseUrl, "/customers/subscriptions")
+    });
+  };
+  var fetchSubscriptionData = data => {
+    return ApiRequest({
+      method: 'POST',
+      url: "".concat(baseUrl, "/subscriptions"),
+      data: data
+    });
+  };
+  var fetchPlanData = () => {
+    return ApiRequest({
+      method: 'GET',
+      url: "".concat(baseUrl, "/plans")
+    });
+  };
+  var fetchOnePlanData = planId => {
+    return ApiRequest({
+      method: 'GET',
+      url: "".concat(baseUrl, "/plans/").concat(planId)
+    });
+  };
+  var fetchActivePaymentMethods = handle => {
+    return ApiRequest({
+      method: 'GET',
+      url: "".concat(baseUrl, "/subscriptions/").concat(handle, "/paymentMethods")
+    });
+  };
+  var fetchPaymentCardsData = () => {
+    return ApiRequest({
+      method: 'GET',
+      url: "".concat(baseUrl, "/customers/paymentMethods")
+    });
+  };
+  var fetchSubscriptionInvoiceData = handle => {
+    return ApiRequest({
+      method: 'GET',
+      url: "".concat(baseUrl, "/subscriptions/").concat(handle, "/invoices")
+    });
+  };
+  var fetchInvoiceData = () => {
+    return ApiRequest({
+      method: 'GET',
+      url: "".concat(baseUrl, "/customers/invoices")
+    });
+  };
+  var fetchOneInvoiceData = invoiceId => {
+    return ApiRequest({
+      method: 'GET',
+      url: "".concat(baseUrl, "/invoices/").concat(invoiceId)
+    });
+  };
+  var fetchConsentData = () => {
+    return Consent.getConsentByType('email').then(response => {
+      var modifiedResponse = {
+        data: {
+          EmailPermission: response.state === 'Accepted'
+        }
+      };
+      return modifiedResponse;
+    });
+  };
+  var setConsentData = data => {
+    return Consent.setConsentByType('email', data.EmailPermission, data.referenceId).then(() => {
+      Ensighten.pushGaEvent('newsletter_permission', 'click', 'accept');
+    });
+  };
+  var subscriptionCancel = handle => {
+    return ApiRequest({
+      method: 'POST',
+      url: "".concat(baseUrl, "/Subscriptions/").concat(handle, "/Cancel"),
+      data: {}
+    });
+  };
+  var subscriptionUncancel = handle => {
+    return ApiRequest({
+      method: 'POST',
+      url: "".concat(baseUrl, "/subscriptions/").concat(handle, "/uncancel"),
+      data: {},
+      unwrapSuccess: () => {
+        Ensighten.pushGaEvent('kluboddset_signup', 'resubscribing', '');
+      }
+    });
+  };
+  var subscriptionCancelReasons = cancelReason => {
+    return ApiRequest({
+      method: 'POST',
+      url: '/api/kluboddset/v1/unsubscriptions',
+      data: {
+        reason: cancelReason
+      }
+    });
+  };
+  var fetchPaymentMethods = () => {
+    return ApiRequest({
+      method: 'GET',
+      url: "".concat(baseUrl, "/paymentmethods/agreements")
+    });
+  };
+  var fetchCustomerpaymentMethods = () => {
+    return ApiRequest({
+      method: 'GET',
+      url: "".concat(baseUrl, "/customers/paymentMethods")
+    });
+  };
+  var addPaymentMethod = data => {
+    return ApiRequest({
+      method: 'POST',
+      url: "".concat(baseUrl, "/paymentmethod"),
+      data: data
+    });
+  };
+  var deletePaymentMethod = id => {
+    return ApiRequest({
+      method: 'DELETE',
+      url: "".concat(baseUrl, "/paymentmethods/").concat(id)
+    });
+  };
+  var changePaymentMethod = (handle, data) => {
+    return ApiRequest({
+      method: 'POST',
+      url: "".concat(baseUrl, "/subscriptions/").concat(handle, "/changepaymentmethod"),
+      data: data
+    });
+  };
+  var fetchDiscountData = () => {
+    return ApiRequest({
+      method: 'GET',
+      url: "".concat(baseUrl, "/discounts")
+    });
+  };
+  var setCoupon = (subscriptionId, couponCode) => {
+    return ApiRequest({
+      method: 'POST',
+      url: "".concat(baseUrl, "/subscriptions/").concat(subscriptionId, "/subscriptioncoupon"),
+      data: {
+        // eslint-disable-next-line camelcase
+        coupon_code: couponCode
+      }
+    });
+  };
+  var fetchAllCoupons = () => {
+    return ApiRequest({
+      method: 'GET',
+      url: "".concat(baseUrl, "/coupons")
+    });
+  };
+  var fetchCouponData = couponCode => {
+    return ApiRequest({
+      method: 'GET',
+      url: "".concat(baseUrl, "/coupons/").concat(couponCode)
+    });
+  };
+  var validateCoupon = function (couponCode, typeId) {
+    var type = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'customer';
+    return ApiRequest({
+      method: 'GET',
+      url: "".concat(baseUrl, "/coupons/").concat(couponCode, "/validatecouponcode?type=").concat(type, "&typeId=").concat(typeId)
+    });
+  };
+  var fetchVbfTickets = () => {
+    return ApiRequest({
+      method: 'GET',
+      url: "".concat(baseUrl, "/vbf/tickets")
+    });
+  };
+
+  // Public API:
+  return {
+    startGame,
+    fetchContentHubUrl,
+    fetchGameData,
+    fetchGamesData,
+    fetchMembershipData,
+    fetchSubscriptionData,
+    fetchPlanData,
+    fetchOnePlanData,
+    fetchPaymentMethods,
+    fetchCustomerpaymentMethods,
+    fetchActivePaymentMethods,
+    fetchPaymentCardsData,
+    fetchInvoiceData,
+    fetchOneInvoiceData,
+    fetchConsentData,
+    setConsentData,
+    subscriptionCancel,
+    subscriptionUncancel,
+    subscriptionCancelReasons,
+    addPaymentMethod,
+    deletePaymentMethod,
+    changePaymentMethod,
+    fetchDiscountData,
+    setCoupon,
+    fetchAllCoupons,
+    fetchCouponData,
+    validateCoupon,
+    fetchVbfTickets,
+    fetchSubscriptionInvoiceData
+  };
+});
+//# sourceMappingURL=Api.js.map

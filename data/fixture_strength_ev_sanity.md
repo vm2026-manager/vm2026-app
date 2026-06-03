@@ -15,215 +15,212 @@ Denne rapport er kun en sanity-check af fixture-strength impact. Den ændrer ikk
 
 | Felt | N | Mean | Median | Min | Max |
 | --- | --- | --- | --- | --- | --- |
-| ev_diff | 1244 | 0.033192 | 0 | -0.961618 | 0.943638 |
+| ev_diff | 1244 | 0.067216 | 0 | -0.519385 | 0.988106 |
 
 ## 3. EV Diff Pct Statistik
 
 | Felt | N | Mean | Median | Min | Max |
 | --- | --- | --- | --- | --- | --- |
-| ev_diff_pct | 1244 | 0.007501 | 0 | -1 | 0.770417 |
+| ev_diff_pct | 1244 | 0.018297 | 0 | -1 | 0.278407 |
 
 ## 4. Retning
 
 | Kategori | Antal |
 | --- | --- |
-| ev_diff > 0 | 383 |
-| ev_diff = 0 | 539 |
-| ev_diff < 0 | 322 |
+| ev_diff > 0 | 431 |
+| ev_diff = 0 | 576 |
+| ev_diff < 0 | 237 |
 | new_ev < 0 | 0 |
 
 ## 5. Top 30 EV-stigninger
 
 | Spiller | Hold | Pos | Pris | Old EV | New EV | Diff | Diff pct | Main reason |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Mike Maignan | FRA | GK | 5000000 | 2.569192 | 3.51283 | 0.943638 | 36.73% | match_1_clean_sheet_multiplier=1.450 |
-| Roberto Alvarado | MEX | MID | 2500000 | 2.556785 | 3.444965 | 0.88818 | 34.74% | match_1_clean_sheet_multiplier=1.450 |
-| Christoph Baumgartner | AUT | MID | 3500000 | 3.322945 | 4.080953 | 0.758008 | 22.81% | match_1_clean_sheet_multiplier=1.450 |
-| Nuno Mendes | POR | DEF | 4500000 | 2.573691 | 3.326338 | 0.752647 | 29.24% | match_1_clean_sheet_multiplier=1.450 |
-| Kerem Akturkoglu | TUR | MID | 4500000 | 3.007239 | 3.75827 | 0.751031 | 24.97% | match_1_clean_sheet_multiplier=1.332 |
-| Vinicius Junior | BRA | FWD | 7500000 | 3.306427 | 4.056863 | 0.750436 | 22.70% | match_1_clean_sheet_multiplier=1.450 |
-| Diogo Costa | POR | GK | 5000000 | 2.310142 | 3.039543 | 0.729401 | 31.57% | match_1_clean_sheet_multiplier=1.450 |
-| Lautaro Martinez | ARG | FWD | 8000000 | 3.034915 | 3.75313 | 0.718215 | 23.67% | match_1_clean_sheet_multiplier=1.450 |
-| Bart Verbruggen | NED | GK | 4500000 | 2.269777 | 2.961594 | 0.691817 | 30.48% | match_3_clean_sheet_multiplier=1.450 |
-| Cristiano Ronaldo | POR | FWD | 7000000 | 3.372238 | 4.054403 | 0.682165 | 20.23% | match_1_clean_sheet_multiplier=1.450 |
-| Raul Jimenez | MEX | FWD | 4500000 | 3.510416 | 4.164282 | 0.653866 | 18.63% | match_1_clean_sheet_multiplier=1.450 |
-| Lionel Messi | ARG | FWD | 8000000 | 2.790715 | 3.433214 | 0.642499 | 23.02% | match_1_clean_sheet_multiplier=1.450 |
-| Kylian Mbappe | FRA | FWD | 10000000 | 2.969889 | 3.605401 | 0.635512 | 21.40% | match_1_clean_sheet_multiplier=1.450 |
-| Ousmane Dembele | FRA | FWD | 5500000 | 2.893142 | 3.528337 | 0.635195 | 21.96% | match_1_clean_sheet_multiplier=1.450 |
-| Timothy Castagne | BEL | DEF | 3500000 | 1.916605 | 2.550533 | 0.633928 | 33.08% | match_2_clean_sheet_multiplier=1.450 |
-| Fabian Rieder | SUI | MID | 3000000 | 1.83623 | 2.470008 | 0.633778 | 34.52% | match_1_clean_sheet_multiplier=1.450 |
-| Gregor Kobel | SUI | GK | 4000000 | 2.040619 | 2.665576 | 0.624957 | 30.63% | match_1_clean_sheet_multiplier=1.450 |
-| Lamine Yamal | ESP | FWD | 9000000 | 2.809651 | 3.428285 | 0.618634 | 22.02% | match_1_clean_sheet_multiplier=1.450 |
-| Casemiro | BRA | MID | 4500000 | 2.495189 | 3.105383 | 0.610194 | 24.45% | match_1_clean_sheet_multiplier=1.450 |
-| Jeremy Doku | BEL | FWD | 6500000 | 2.802155 | 3.410427 | 0.608272 | 21.71% | match_2_clean_sheet_multiplier=1.450 |
-| Zeno Debast | BEL | DEF | 3500000 | 1.804955 | 2.40618 | 0.601225 | 33.31% | match_2_clean_sheet_multiplier=1.450 |
-| Leandro Trossard | BEL | FWD | 5500000 | 2.721542 | 3.319496 | 0.597954 | 21.97% | match_2_clean_sheet_multiplier=1.450 |
-| Mikel Oyarzabal | ESP | FWD | 7500000 | 2.744877 | 3.341914 | 0.597037 | 21.75% | match_1_clean_sheet_multiplier=1.450 |
-| Cesar Montes | MEX | DEF | 3000000 | 2.163869 | 2.755528 | 0.591659 | 27.34% | match_1_clean_sheet_multiplier=1.450 |
-| Jonathan Tah | GER | DEF | 4500000 | 1.816891 | 2.39536 | 0.578469 | 31.84% | match_1_clean_sheet_multiplier=1.450 |
-| Martin Baturina | CRO | MID | 3000000 | 2.32408 | 2.891106 | 0.567026 | 24.40% | match_2_clean_sheet_multiplier=1.450 |
-| Oscar Bobb | NOR | MID | 3000000 | 2.68048 | 3.237886 | 0.557406 | 20.79% | match_1_clean_sheet_multiplier=1.450 |
-| Andreas Schjelderup | NOR | MID | 3500000 | 3.061145 | 3.610009 | 0.548864 | 17.93% | match_1_clean_sheet_multiplier=1.450 |
-| Juan Manuel Sanabria | URU | MID | 3000000 | 1.84833 | 2.389704 | 0.541374 | 29.29% | match_1_clean_sheet_multiplier=1.450 |
-| Nico Williams | ESP | FWD | 4500000 | 2.502816 | 3.041058 | 0.538242 | 21.51% | match_1_clean_sheet_multiplier=1.450 |
+| Vinicius Junior | BRA | FWD | 7500000 | 4.056863 | 5.044969 | 0.988106 | 24.36% | match_2_clean_sheet_multiplier=1.437 |
+| Lautaro Martinez | ARG | FWD | 8000000 | 3.75313 | 4.692971 | 0.939841 | 25.04% | match_1_goal_multiplier=1.350 |
+| Cristiano Ronaldo | POR | FWD | 7000000 | 4.054403 | 4.947107 | 0.892704 | 22.02% | match_1_goal_multiplier=1.350 |
+| Kylian Mbappe | FRA | FWD | 10000000 | 3.605401 | 4.441727 | 0.836326 | 23.20% | match_2_clean_sheet_multiplier=1.450 |
+| Lionel Messi | ARG | FWD | 8000000 | 3.433214 | 4.265962 | 0.832748 | 24.26% | match_1_goal_multiplier=1.350 |
+| Raul Jimenez | MEX | FWD | 4500000 | 4.164282 | 4.992947 | 0.828665 | 19.90% | match_1_goal_multiplier=1.350 |
+| Ousmane Dembele | FRA | FWD | 5500000 | 3.528337 | 4.355447 | 0.82711 | 23.44% | match_2_clean_sheet_multiplier=1.450 |
+| Lamine Yamal | ESP | FWD | 9000000 | 3.428285 | 4.230405 | 0.80212 | 23.40% | match_2_clean_sheet_multiplier=1.450 |
+| Mike Maignan | FRA | GK | 5000000 | 3.51283 | 4.314948 | 0.802118 | 22.83% | match_2_clean_sheet_multiplier=1.450 |
+| Mikel Oyarzabal | ESP | FWD | 7500000 | 3.341914 | 4.133042 | 0.791128 | 23.67% | match_2_clean_sheet_multiplier=1.450 |
+| Jeremy Doku | BEL | FWD | 6500000 | 3.410427 | 4.200406 | 0.789979 | 23.16% | match_2_goal_multiplier=1.350 |
+| Casemiro | BRA | MID | 4500000 | 3.105383 | 3.892444 | 0.787061 | 25.35% | match_2_clean_sheet_multiplier=1.437 |
+| Leandro Trossard | BEL | FWD | 5500000 | 3.319496 | 4.099767 | 0.780271 | 23.51% | match_2_goal_multiplier=1.350 |
+| Matheus Cunha | BRA | FWD | 4500000 | 2.952107 | 3.663594 | 0.711487 | 24.10% | match_2_clean_sheet_multiplier=1.437 |
+| Nico Williams | ESP | FWD | 4500000 | 3.041058 | 3.744479 | 0.703421 | 23.13% | match_2_clean_sheet_multiplier=1.450 |
+| Alexis Mac Allister | ARG | MID | 4500000 | 2.602604 | 3.294383 | 0.691779 | 26.58% | match_1_goal_multiplier=1.350 |
+| Rafael Leão | POR | FWD | 5500000 | 3.246504 | 3.934193 | 0.687689 | 21.18% | match_1_goal_multiplier=1.350 |
+| Joshua Kimmich | GER | MID | 5000000 | 3.032026 | 3.719618 | 0.687592 | 22.68% | match_1_clean_sheet_multiplier=1.450 |
+| Roberto Alvarado | MEX | MID | 2500000 | 3.444965 | 4.125843 | 0.680878 | 19.76% | match_1_goal_multiplier=1.350 |
+| Bruno Fernandes | POR | MID | 7000000 | 3.116567 | 3.794886 | 0.678319 | 21.76% | match_1_goal_multiplier=1.350 |
+| Harry Kane | ENG | FWD | 9500000 | 2.806929 | 3.48523 | 0.678301 | 24.17% | match_2_goal_multiplier=1.350 |
+| Pedro Neto | POR | FWD | 5000000 | 3.183168 | 3.8554 | 0.672232 | 21.12% | match_1_goal_multiplier=1.350 |
+| Cody Gakpo | NED | FWD | 6500000 | 3.799432 | 4.462305 | 0.662873 | 17.45% | match_3_goal_multiplier=1.311 |
+| Nuno Mendes | POR | DEF | 4500000 | 3.326338 | 3.974216 | 0.647878 | 19.48% | match_1_goal_multiplier=1.350 |
+| Florian Wirtz | GER | MID | 7500000 | 2.785345 | 3.431015 | 0.64567 | 23.18% | match_1_clean_sheet_multiplier=1.450 |
+| Julian Alvarez | ARG | FWD | 6000000 | 2.677767 | 3.319539 | 0.641772 | 23.97% | match_1_goal_multiplier=1.350 |
+| Giovani Lo Celso | ARG | MID | 4000000 | 2.448174 | 3.082398 | 0.634224 | 25.91% | match_1_goal_multiplier=1.350 |
+| Breel Embolo | SUI | FWD | 5000000 | 3.332048 | 3.963865 | 0.631817 | 18.96% | match_1_goal_multiplier=1.350 |
+| Marcus Thuram | FRA | FWD | 5000000 | 2.642664 | 3.258079 | 0.615415 | 23.29% | match_2_clean_sheet_multiplier=1.450 |
+| Michael Olise | FRA | FWD | 7000000 | 2.564607 | 3.176348 | 0.611741 | 23.85% | match_2_clean_sheet_multiplier=1.450 |
 
 ## 6. Top 30 EV-fald
 
 | Spiller | Hold | Pos | Pris | Old EV | New EV | Diff | Diff pct | Main reason |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Hamdy Fathy | EGY | MID | 2500000 | 1.428735 | 0.467117 | -0.961618 | -67.31% | match_1_clean_sheet_multiplier=0.590 |
-| Krepin Diatta | SEN | FWD | 2500000 | 1.400327 | 0.456416 | -0.943911 | -67.41% | match_1_clean_sheet_multiplier=0.550 |
-| Micky van de Ven | NED | DEF | 4000000 | 0.849174 | 0 | -0.849174 | -100.00% | match_3_clean_sheet_multiplier=1.450 |
-| Niko Sigur | CAN | MID | 2500000 | 1.676235 | 1.017955 | -0.65828 | -39.27% | match_2_clean_sheet_multiplier=1.450 |
-| Akram Afif | QAT | FWD | 3500000 | 1.94504 | 1.323931 | -0.621109 | -31.93% | match_1_clean_sheet_multiplier=0.550 |
-| Ali Abdi | TUN | DEF | 3000000 | 2.265619 | 1.673985 | -0.591634 | -26.11% | match_3_clean_sheet_multiplier=0.550 |
-| Aymen Dahmen | TUN | GK | 3000000 | 1.901349 | 1.311814 | -0.589535 | -31.01% | match_3_clean_sheet_multiplier=0.550 |
-| Montassar Talbi | TUN | DEF | 3000000 | 2.118769 | 1.543979 | -0.57479 | -27.13% | match_3_clean_sheet_multiplier=0.550 |
-| Frantzdy Pierrot | HAI | FWD | 3000000 | 2.893683 | 2.331353 | -0.56233 | -19.43% | match_1_clean_sheet_multiplier=0.550 |
-| Ivan Perisic | CRO | FWD | 4500000 | 1.937416 | 1.3818 | -0.555616 | -28.68% | match_2_clean_sheet_multiplier=1.450 |
-| Orlando Mosquera | PAN | GK | 2500000 | 1.669728 | 1.127558 | -0.54217 | -32.47% | match_2_clean_sheet_multiplier=0.550 |
-| Ismael Diaz | PAN | FWD | 2500000 | 3.366027 | 2.824168 | -0.541859 | -16.10% | match_2_clean_sheet_multiplier=0.550 |
-| Finn Surman | NZL | DEF | 2000000 | 1.8252 | 1.298724 | -0.526476 | -28.84% | match_3_clean_sheet_multiplier=0.550 |
-| Alan Franco | ECU | MID | 2500000 | 1.102035 | 0.579431 | -0.522604 | -47.42% | match_2_clean_sheet_multiplier=1.450 |
-| Nestory Irankunda | AUS | FWD | 3500000 | 1.84769 | 1.332498 | -0.515192 | -27.88% | match_2_clean_sheet_multiplier=0.627 |
-| Jearl Margaritha | CUW | FWD | 3000000 | 1.613283 | 1.118505 | -0.494778 | -30.67% | match_1_clean_sheet_multiplier=0.550 |
-| Fidel Escobar | PAN | DEF | 2500000 | 1.721089 | 1.228796 | -0.492293 | -28.60% | match_2_clean_sheet_multiplier=0.550 |
-| Yan Valery | TUN | DEF | 2500000 | 1.588539 | 1.136814 | -0.451725 | -28.44% | match_3_clean_sheet_multiplier=0.550 |
-| Lyle Foster | RSA | FWD | 3500000 | 3.26504 | 2.815006 | -0.450034 | -13.78% | match_1_clean_sheet_multiplier=0.550 |
-| Hussein Ali | IRQ | DEF | 3000000 | 1.187069 | 0.744013 | -0.443056 | -37.32% | match_1_clean_sheet_multiplier=0.550 |
-| Jorge Gutierrez | PAN | DEF | 2500000 | 1.662789 | 1.237578 | -0.425211 | -25.57% | match_2_clean_sheet_multiplier=0.550 |
-| Saud Abdulhamid | KSA | DEF | 3000000 | 1.817369 | 1.398391 | -0.418978 | -23.05% | match_1_clean_sheet_multiplier=0.550 |
-| Duckens Nazon | HAI | FWD | 3500000 | 2.21124 | 1.800692 | -0.410548 | -18.57% | match_1_clean_sheet_multiplier=0.550 |
-| Dzenis Burnic | BIH | MID | 2500000 | 0.923835 | 0.515193 | -0.408642 | -44.23% | match_2_clean_sheet_multiplier=0.550 |
-| Kenji Gorre | CUW | FWD | 2500000 | 1.332677 | 0.924969 | -0.407708 | -30.59% | match_1_clean_sheet_multiplier=0.550 |
-| Jeremy Antonisse | CUW | FWD | 2000000 | 1.152861 | 0.749243 | -0.403618 | -35.01% | match_1_clean_sheet_multiplier=0.550 |
-| Nawaf Al-Aqidi | KSA | GK | 2500000 | 1.540478 | 1.147148 | -0.39333 | -25.53% | match_1_clean_sheet_multiplier=0.550 |
-| Danley Jean Jacques | HAI | MID | 3000000 | 1.88078 | 1.491445 | -0.389335 | -20.70% | match_1_clean_sheet_multiplier=0.550 |
-| Merchas Doski | IRQ | DEF | 2500000 | 0.971439 | 0.605149 | -0.36629 | -37.71% | match_1_clean_sheet_multiplier=0.550 |
-| Firas Al-Buraikan | KSA | FWD | 3500000 | 2.94714 | 2.585341 | -0.361799 | -12.28% | match_1_clean_sheet_multiplier=0.550 |
+| Nathan Ake | NED | DEF | 3500000 | 0.519385 | 0 | -0.519385 | -100.00% | match_3_goal_multiplier=1.311 |
+| Frantzdy Pierrot | HAI | FWD | 3000000 | 2.331353 | 1.905336 | -0.426017 | -18.27% | match_2_clean_sheet_multiplier=0.628 |
+| Ismael Diaz | PAN | FWD | 2500000 | 2.824168 | 2.401938 | -0.42223 | -14.95% | match_3_clean_sheet_multiplier=0.709 |
+| Elias Achouri | TUN | MID | 3500000 | 2.469108 | 2.079971 | -0.389137 | -15.76% | match_3_goal_multiplier=0.750 |
+| Lyle Foster | RSA | FWD | 3500000 | 2.815006 | 2.452528 | -0.362478 | -12.88% | match_1_goal_multiplier=0.750 |
+| Duckens Nazon | HAI | FWD | 3500000 | 1.800692 | 1.488241 | -0.312451 | -17.35% | match_2_clean_sheet_multiplier=0.628 |
+| Danley Jean Jacques | HAI | MID | 3000000 | 1.491445 | 1.187914 | -0.303531 | -20.35% | match_2_clean_sheet_multiplier=0.628 |
+| Oswin Appollis | RSA | FWD | 3500000 | 2.255149 | 1.962746 | -0.292403 | -12.97% | match_1_goal_multiplier=0.750 |
+| Livano Comenencia | CUW | DEF | 2500000 | 1.350071 | 1.059567 | -0.290504 | -21.52% | match_1_clean_sheet_multiplier=0.611 |
+| Hannibal Mejbri | TUN | MID | 3000000 | 1.865573 | 1.578473 | -0.2871 | -15.39% | match_3_goal_multiplier=0.750 |
+| Akram Afif | QAT | FWD | 3500000 | 1.323931 | 1.044611 | -0.27932 | -21.10% | match_1_clean_sheet_multiplier=0.709 |
+| Hazem Mastouri | TUN | FWD | 3500000 | 1.912805 | 1.636301 | -0.276504 | -14.46% | match_3_goal_multiplier=0.750 |
+| Firas Al-Buraikan | KSA | FWD | 3500000 | 2.585341 | 2.31824 | -0.267101 | -10.33% | match_2_clean_sheet_multiplier=0.665 |
+| Sarpreet Singh | NZL | MID | 2500000 | 1.513428 | 1.251183 | -0.262245 | -17.33% | match_3_clean_sheet_multiplier=0.709 |
+| Juninho Bacuna | CUW | MID | 3000000 | 1.21257 | 0.952393 | -0.260177 | -21.46% | match_1_clean_sheet_multiplier=0.611 |
+| Ellyes Skhiri | TUN | MID | 2500000 | 1.597664 | 1.341558 | -0.256106 | -16.03% | match_3_goal_multiplier=0.750 |
+| Teboho Mokoena | RSA | MID | 3500000 | 1.89809 | 1.646024 | -0.252066 | -13.28% | match_1_goal_multiplier=0.750 |
+| Ali Abdi | TUN | DEF | 3000000 | 1.673985 | 1.428574 | -0.245411 | -14.66% | match_3_goal_multiplier=0.750 |
+| Finn Surman | NZL | DEF | 2000000 | 1.298724 | 1.054848 | -0.243876 | -18.78% | match_3_clean_sheet_multiplier=0.709 |
+| Thalente Mbatha | RSA | MID | 3000000 | 0.616673 | 0.377633 | -0.23904 | -38.76% | match_1_goal_multiplier=0.750 |
+| Leverton Pierre | HAI | MID | 2500000 | 1.209537 | 0.974655 | -0.234882 | -19.42% | match_2_clean_sheet_multiplier=0.628 |
+| Anibal Godoy | PAN | MID | 2500000 | 1.458358 | 1.224906 | -0.233452 | -16.01% | match_3_clean_sheet_multiplier=0.709 |
+| Marko Stamenic | NZL | MID | 2500000 | 1.330574 | 1.100007 | -0.230567 | -17.33% | match_3_clean_sheet_multiplier=0.709 |
+| Jearl Margaritha | CUW | FWD | 3000000 | 1.118505 | 0.88842 | -0.230085 | -20.57% | match_1_clean_sheet_multiplier=0.611 |
+| Cristian Martinez | PAN | MID | 2500000 | 1.387274 | 1.160103 | -0.227171 | -16.38% | match_3_clean_sheet_multiplier=0.709 |
+| Amir Al Ammari | IRQ | MID | 3000000 | 1.157317 | 0.930982 | -0.226335 | -19.56% | match_2_clean_sheet_multiplier=0.652 |
+| Eldor Shomurodov | UZB | FWD | 3000000 | 1.775374 | 1.549788 | -0.225586 | -12.71% | match_2_clean_sheet_multiplier=0.695 |
+| Ali Jasim | IRQ | MID | 3000000 | 1.137157 | 0.912654 | -0.224503 | -19.74% | match_2_clean_sheet_multiplier=0.652 |
+| Montassar Talbi | TUN | DEF | 3000000 | 1.543979 | 1.319562 | -0.224417 | -14.54% | match_3_goal_multiplier=0.750 |
+| Carlos Harvey | PAN | MID | 2500000 | 1.413141 | 1.190545 | -0.222596 | -15.75% | match_3_clean_sheet_multiplier=0.709 |
 
 ## 7. Top 20 EV-stigninger, pris <= 3.0 mio.
 
 | Spiller | Hold | Pos | Pris | Old EV | New EV | Diff | Diff pct | Main reason |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Roberto Alvarado | MEX | MID | 2500000 | 2.556785 | 3.444965 | 0.88818 | 34.74% | match_1_clean_sheet_multiplier=1.450 |
-| Fabian Rieder | SUI | MID | 3000000 | 1.83623 | 2.470008 | 0.633778 | 34.52% | match_1_clean_sheet_multiplier=1.450 |
-| Cesar Montes | MEX | DEF | 3000000 | 2.163869 | 2.755528 | 0.591659 | 27.34% | match_1_clean_sheet_multiplier=1.450 |
-| Martin Baturina | CRO | MID | 3000000 | 2.32408 | 2.891106 | 0.567026 | 24.40% | match_2_clean_sheet_multiplier=1.450 |
-| Oscar Bobb | NOR | MID | 3000000 | 2.68048 | 3.237886 | 0.557406 | 20.79% | match_1_clean_sheet_multiplier=1.450 |
-| Juan Manuel Sanabria | URU | MID | 3000000 | 1.84833 | 2.389704 | 0.541374 | 29.29% | match_1_clean_sheet_multiplier=1.450 |
-| Arthur Theate | BEL | DEF | 3000000 | 1.562169 | 2.088237 | 0.526068 | 33.68% | match_2_clean_sheet_multiplier=1.450 |
-| Daniel Svensson | SWE | DEF | 3000000 | 0.646969 | 1.145405 | 0.498436 | 77.04% | match_2_clean_sheet_multiplier=0.587 |
-| Johan Vasquez | MEX | DEF | 3000000 | 1.782169 | 2.263573 | 0.481404 | 27.01% | match_1_clean_sheet_multiplier=1.450 |
-| John Yeboah | ECU | MID | 3000000 | 2.34058 | 2.811576 | 0.470996 | 20.12% | match_2_clean_sheet_multiplier=1.450 |
-| Alexis Vega | MEX | FWD | 2500000 | 2.565227 | 3.027265 | 0.462038 | 18.01% | match_1_clean_sheet_multiplier=1.450 |
-| Chris Richards | USA | DEF | 3000000 | 2.435569 | 2.845278 | 0.409709 | 16.82% | match_2_clean_sheet_multiplier=1.373 |
-| Ricardo Rodriguez | SUI | DEF | 3000000 | 1.490669 | 1.897863 | 0.407194 | 27.32% | match_1_clean_sheet_multiplier=1.450 |
-| Ibrahima Konate | FRA | DEF | 3000000 | 1.294319 | 1.669525 | 0.375206 | 28.99% | match_1_clean_sheet_multiplier=1.450 |
-| Nikola Vlasic | CRO | MID | 3000000 | 1.39788 | 1.768191 | 0.370311 | 26.49% | match_2_clean_sheet_multiplier=1.450 |
-| Jorge Carrascal | COL | MID | 2500000 | 1.093235 | 1.440715 | 0.34748 | 31.78% | match_1_clean_sheet_multiplier=1.450 |
-| Iliman Ndiaye | SEN | MID | 3000000 | 2.25258 | 2.594624 | 0.342044 | 15.18% | match_1_clean_sheet_multiplier=0.550 |
-| Amadou Onana | BEL | MID | 3000000 | 1.46278 | 1.802136 | 0.339356 | 23.20% | match_2_clean_sheet_multiplier=1.450 |
-| Patrick Agyemang | USA | FWD | 3000000 | 3.371633 | 3.709555 | 0.337922 | 10.02% | match_2_clean_sheet_multiplier=1.373 |
-| Luiz Henrique | BRA | FWD | 3000000 | 1.454883 | 1.788892 | 0.334009 | 22.96% | match_1_clean_sheet_multiplier=1.450 |
+| Roberto Alvarado | MEX | MID | 2500000 | 3.444965 | 4.125843 | 0.680878 | 19.76% | match_1_goal_multiplier=1.350 |
+| Alexis Vega | MEX | FWD | 2500000 | 3.027265 | 3.611238 | 0.583973 | 19.29% | match_1_goal_multiplier=1.350 |
+| Cesar Montes | MEX | DEF | 3000000 | 2.755528 | 3.324063 | 0.568535 | 20.63% | match_1_goal_multiplier=1.350 |
+| Fabian Rieder | SUI | MID | 3000000 | 2.470008 | 2.968334 | 0.498326 | 20.18% | match_1_goal_multiplier=1.350 |
+| Luiz Henrique | BRA | FWD | 3000000 | 1.788892 | 2.226198 | 0.437306 | 24.45% | match_2_clean_sheet_multiplier=1.437 |
+| Amadou Onana | BEL | MID | 3000000 | 1.802136 | 2.237847 | 0.435711 | 24.18% | match_2_goal_multiplier=1.350 |
+| Johan Vasquez | MEX | DEF | 3000000 | 2.263573 | 2.686858 | 0.423285 | 18.70% | match_1_goal_multiplier=1.350 |
+| Juan Manuel Sanabria | URU | MID | 3000000 | 2.389704 | 2.805928 | 0.416224 | 17.42% | match_2_goal_multiplier=1.350 |
+| N'Golo Kante | FRA | MID | 3000000 | 1.692853 | 2.106372 | 0.413519 | 24.43% | match_2_clean_sheet_multiplier=1.450 |
+| Patrick Agyemang | USA | FWD | 3000000 | 3.709555 | 4.112482 | 0.402927 | 10.86% | match_2_goal_multiplier=1.237 |
+| Arthur Theate | BEL | DEF | 3000000 | 2.088237 | 2.490073 | 0.401836 | 19.24% | match_2_goal_multiplier=1.350 |
+| Warren Zaire-Emery | FRA | MID | 3000000 | 1.523593 | 1.909363 | 0.38577 | 25.32% | match_2_clean_sheet_multiplier=1.450 |
+| Martin Baturina | CRO | MID | 3000000 | 2.891106 | 3.275011 | 0.383905 | 13.28% | match_2_goal_multiplier=1.329 |
+| Ibrahima Konate | FRA | DEF | 3000000 | 1.669525 | 2.044122 | 0.374597 | 22.44% | match_2_clean_sheet_multiplier=1.450 |
+| Jose Manuel Lopez | ARG | FWD | 2500000 | 1.454752 | 1.80328 | 0.348528 | 23.96% | match_1_goal_multiplier=1.350 |
+| Jefferson Lerma | COL | MID | 3000000 | 1.821683 | 2.169622 | 0.347939 | 19.10% | match_1_goal_multiplier=1.350 |
+| Felix Nmecha | GER | MID | 3000000 | 1.440595 | 1.788186 | 0.347591 | 24.13% | match_1_clean_sheet_multiplier=1.450 |
+| Julian Quinones | MEX | FWD | 3000000 | 1.77013 | 2.117636 | 0.347506 | 19.63% | match_1_goal_multiplier=1.350 |
+| Ricardo Rodriguez | SUI | DEF | 3000000 | 1.897863 | 2.230302 | 0.332439 | 17.52% | match_1_goal_multiplier=1.350 |
+| Quinten Timber | NED | MID | 3000000 | 1.202874 | 1.530903 | 0.328029 | 27.27% | match_3_goal_multiplier=1.311 |
 
 ## 8. Top 20 EV-fald, pris >= 4.0 mio.
 
 | Spiller | Hold | Pos | Pris | Old EV | New EV | Diff | Diff pct | Main reason |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Micky van de Ven | NED | DEF | 4000000 | 0.849174 | 0 | -0.849174 | -100.00% | match_3_clean_sheet_multiplier=1.450 |
-| Ivan Perisic | CRO | FWD | 4500000 | 1.937416 | 1.3818 | -0.555616 | -28.68% | match_2_clean_sheet_multiplier=1.450 |
-| Antoine Semenyo | GHA | FWD | 4000000 | 1.789876 | 1.501987 | -0.287889 | -16.08% | match_2_clean_sheet_multiplier=0.550 |
-| Alexander Isak | SWE | FWD | 5000000 | 1.952847 | 1.874739 | -0.078108 | -4.00% | match_2_clean_sheet_multiplier=0.587 |
-| Antonio Sanabria | PAR | FWD | 4000000 | 2.172676 | 2.106056 | -0.06662 | -3.07% | match_1_clean_sheet_multiplier=0.756 |
-| Heung-Min Son | KOR | FWD | 6000000 | 2.85439 | 2.794526 | -0.059864 | -2.10% | match_2_clean_sheet_multiplier=0.642 |
-| Riyad Mahrez | ALG | FWD | 4000000 | 2.321176 | 2.26175 | -0.059426 | -2.56% | match_1_clean_sheet_multiplier=0.550 |
-| Scott McTominay | SCO | MID | 4500000 | 3.048489 | 3.024042 | -0.024447 | -0.80% | match_1_clean_sheet_multiplier=1.450 |
-| Jose Sa | POR | GK | 4500000 | 0.810077 | 0.794018 | -0.016059 | -1.98% | match_1_clean_sheet_multiplier=1.450 |
-| Zion Suzuki | JPN | GK | 4000000 | 0.748669 | 0.744325 | -0.004344 | -0.58% | match_2_clean_sheet_multiplier=1.337 |
-| Ørjan Nyland | NOR | GK | 4000000 | 0.805869 | 0.802053 | -0.003816 | -0.47% | match_1_clean_sheet_multiplier=1.450 |
-| Emiliano Martinez | ARG | GK | 5000000 | 0.898292 | 0.894533 | -0.003759 | -0.42% | match_1_clean_sheet_multiplier=1.450 |
-| Alexander Nübel | GER | GK | 4500000 | 0.836477 | 0.833302 | -0.003175 | -0.38% | match_1_clean_sheet_multiplier=1.450 |
-| Alejandro 'Alex' Grimaldo | ESP | DEF | 4000000 | 0.853574 | 0.853574 | 0 | 0.00% | neutral |
-| Nico O'Reilly | ENG | DEF | 4000000 | 0.853574 | 0.853574 | 0 | 0.00% | neutral |
-| Alphonso Davies | CAN | DEF | 4000000 | 0.853574 | 0.853574 | 0 | 0.00% | neutral |
-| Senne Lammens | BEL | GK | 4000000 | 0.654069 | 0.654069 | 0 | 0.00% | neutral |
-| Thibaut Courtois | BEL | GK | 4500000 | 0.728677 | 0.728677 | 0 | 0.00% | neutral |
-| Alvaro Montero | COL | GK | 4000000 | 0.654069 | 0.654069 | 0 | 0.00% | neutral |
-| Sergio Rochet | URU | GK | 4000000 | 0.654069 | 0.654069 | 0 | 0.00% | neutral |
+| Antoine Semenyo | GHA | FWD | 4000000 | 1.501987 | 1.441094 | -0.060893 | -4.05% | match_2_clean_sheet_multiplier=0.727 |
+| Antonio Sanabria | PAR | FWD | 4000000 | 2.106056 | 2.066053 | -0.040003 | -1.90% | match_1_goal_multiplier=0.845 |
+| Kang-In Lee | KOR | MID | 5000000 | 3.04752 | 3.024448 | -0.023072 | -0.76% | match_2_goal_multiplier=0.772 |
+| Alexander Isak | SWE | FWD | 5000000 | 1.874739 | 1.854659 | -0.02008 | -1.07% | match_2_goal_multiplier=0.750 |
+| Heung-Min Son | KOR | FWD | 6000000 | 2.794526 | 2.774766 | -0.01976 | -0.71% | match_2_goal_multiplier=0.772 |
+| Jae-Sung Lee | KOR | MID | 4000000 | 1.817598 | 1.803417 | -0.014181 | -0.78% | match_2_goal_multiplier=0.772 |
+| Raphinha | BRA | FWD | 6500000 | 1.496455 | 1.496455 | 0 | 0.00% | neutral |
+| Darwin Nunez | URU | FWD | 6000000 | 1.46289 | 1.46289 | 0 | 0.00% | neutral |
+| Viktor Gyökeres | SWE | FWD | 6000000 | 1.46289 | 1.46289 | 0 | 0.00% | neutral |
+| Edin Dzeko | BIH | FWD | 4500000 | 1.292266 | 1.292266 | 0 | 0.00% | neutral |
+| Luis Suarez Charris | COL | FWD | 4500000 | 1.292266 | 1.292266 | 0 | 0.00% | neutral |
+| Federico Valverde | URU | MID | 5500000 | 1.261357 | 1.261357 | 0 | 0.00% | neutral |
+| Lennart Karl | GER | MID | 5000000 | 1.237331 | 1.237331 | 0 | 0.00% | neutral |
+| Rodri Hernandez | ESP | MID | 5000000 | 1.237331 | 1.237331 | 0 | 0.00% | neutral |
+| Nico Paz | ARG | MID | 5000000 | 1.237331 | 1.237331 | 0 | 0.00% | neutral |
+| Maxi Araujo | URU | MID | 5000000 | 1.237331 | 1.237331 | 0 | 0.00% | neutral |
+| Matheus Nunes | POR | MID | 4500000 | 1.198289 | 1.198289 | 0 | 0.00% | neutral |
+| Fabian Ruiz | ESP | MID | 4500000 | 1.198289 | 1.198289 | 0 | 0.00% | neutral |
+| Alexis Saelemaekers | BEL | FWD | 4000000 | 1.185976 | 1.185976 | 0 | 0.00% | neutral |
+| Christian Pulisic | USA | FWD | 4000000 | 1.185976 | 1.185976 | 0 | 0.00% | neutral |
 
 ## 9. Holdniveau: sum ev_diff pr. team_id
 
 | Team | Spillere | Sum ev_diff |
 | --- | --- | --- |
-| POR | 27 | 8.078583 |
-| FRA | 26 | 7.039038 |
-| ARG | 26 | 6.152519 |
-| ESP | 26 | 5.449831 |
-| SUI | 26 | 5.274206 |
-| BEL | 26 | 5.019273 |
-| GER | 26 | 4.871277 |
-| ENG | 26 | 4.765432 |
-| MEX | 26 | 4.296338 |
-| BRA | 26 | 3.514285 |
-| NED | 24 | 3.32739 |
-| CRO | 26 | 3.277699 |
-| USA | 25 | 3.163115 |
-| COL | 26 | 2.996979 |
-| AUT | 25 | 2.744982 |
-| NOR | 26 | 2.431878 |
-| URU | 26 | 2.244879 |
-| MAR | 29 | 2.04105 |
-| ECU | 28 | 1.897383 |
-| JPN | 26 | 1.883851 |
-| CAN | 28 | 1.831906 |
-| TUR | 27 | 1.529593 |
-| KOR | 26 | 0.268695 |
+| POR | 27 | 9.669976 |
+| FRA | 26 | 9.162932 |
+| ARG | 26 | 8.336412 |
+| ESP | 26 | 7.037324 |
+| ENG | 26 | 6.740571 |
+| GER | 26 | 6.555735 |
+| BEL | 26 | 6.062315 |
+| SUI | 26 | 5.586016 |
+| BRA | 26 | 4.578904 |
+| MEX | 26 | 4.465443 |
+| CRO | 26 | 4.357168 |
+| NED | 24 | 4.322504 |
+| COL | 26 | 4.268313 |
+| MAR | 29 | 3.641905 |
+| AUT | 25 | 3.544841 |
+| URU | 26 | 3.504804 |
+| CAN | 28 | 3.484388 |
+| ECU | 28 | 3.149524 |
+| USA | 25 | 2.687265 |
+| NOR | 26 | 2.36151 |
+| JPN | 26 | 1.688971 |
+| SEN | 28 | 1.368003 |
+| TUR | 27 | 1.271769 |
+| EGY | 27 | 0.971749 |
+| SCO | 26 | 0.760417 |
+| ALG | 30 | 0.204188 |
+| BIH | 26 | 0.193074 |
+| IRN | 23 | 0.177842 |
 | HOLDET_584 | 24 | 0 |
 | CIV | 26 | 0 |
-| SWE | 26 | -0.025126 |
-| BIH | 26 | -0.041229 |
-| SCO | 26 | -0.317348 |
-| SEN | 28 | -0.396651 |
-| EGY | 27 | -0.480728 |
-| ALG | 30 | -0.520587 |
-| PAR | 29 | -0.631156 |
-| IRN | 23 | -0.701621 |
-| GHA | 25 | -1.20594 |
-| CPV | 26 | -1.451099 |
-| UZB | 25 | -1.626721 |
-| KSA | 19 | -1.775689 |
-| JOR | 26 | -2.103777 |
-| QAT | 22 | -2.211423 |
-| AUS | 28 | -2.356622 |
-| COD | 27 | -2.644558 |
-| NZL | 26 | -3.077122 |
-| HAI | 25 | -3.163486 |
-| IRQ | 26 | -3.166229 |
-| PAN | 24 | -3.440612 |
-| RSA | 25 | -3.579271 |
-| CUW | 26 | -3.91435 |
-| TUN | 26 | -3.977594 |
+| KOR | 26 | -0.09978 |
+| SWE | 26 | -0.129099 |
+| PAR | 29 | -0.384031 |
+| GHA | 25 | -0.464052 |
+| KSA | 19 | -0.975652 |
+| CPV | 26 | -1.115454 |
+| UZB | 25 | -1.276821 |
+| QAT | 22 | -1.404298 |
+| JOR | 26 | -1.518918 |
+| AUS | 28 | -1.520536 |
+| COD | 27 | -1.722948 |
+| HAI | 25 | -2.035234 |
+| IRQ | 26 | -2.115618 |
+| PAN | 24 | -2.136391 |
+| NZL | 26 | -2.227355 |
+| RSA | 25 | -2.267533 |
+| CUW | 26 | -2.438495 |
+| TUN | 26 | -2.704978 |
 
 ## 10. Positionniveau: mean ev_diff pr. position
 
 | Position | Spillere | Mean ev_diff |
 | --- | --- | --- |
-| DEF | 408 | 0.021556 |
-| FWD | 274 | 0.039916 |
-| GK | 152 | 0.011115 |
-| MID | 410 | 0.048463 |
+| DEF | 408 | 0.045435 |
+| FWD | 274 | 0.114454 |
+| GK | 152 | 0.019267 |
+| MID | 410 | 0.075098 |
 
 ## 11. Potentielt mistænkelige outliers
 
 | Spiller | Hold | Pos | Pris | Old EV | New EV | Diff | Diff pct | Main reason | Outlier reason |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Micky van de Ven | NED | DEF | 4000000 | 0.849174 | 0 | -0.849174 | -100.00% | match_3_clean_sheet_multiplier=1.450 | høj pris og stort fald |
-| Ivan Perisic | CRO | FWD | 4500000 | 1.937416 | 1.3818 | -0.555616 | -28.68% | match_2_clean_sheet_multiplier=1.450 | høj pris og stort fald |
-| Daniel Svensson | SWE | DEF | 3000000 | 0.646969 | 1.145405 | 0.498436 | 77.04% | match_2_clean_sheet_multiplier=0.587 | ev_diff_pct > 50% |
 
 ## 12. Kort vurdering
 
-- Multipliers ser ud til at skubbe EV i den forventede retning: 23 hold har samlet positiv ændring, og 23 hold har samlet negativ ændring.
-- Gennemsnitlig ændring er 0.033192, medianen er 0, og der er 539 uændrede spillere. Det peger på en moderat samlet effekt snarere end en total omskalering.
-- Største absolutte spillerændring er 0.961618. Outlier-listen bør gennemgås, men totalbilledet ser rimeligt ud som første fixture-strength lag.
+- Multipliers ser ud til at skubbe EV i den forventede retning: 28 hold har samlet positiv ændring, og 18 hold har samlet negativ ændring.
+- Gennemsnitlig ændring er 0.067216, medianen er 0, og der er 576 uændrede spillere. Det peger på en moderat samlet effekt snarere end en total omskalering.
+- Største absolutte spillerændring er 0.988106. Outlier-listen bør gennemgås, men totalbilledet ser rimeligt ud som første fixture-strength lag.

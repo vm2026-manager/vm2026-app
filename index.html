@@ -181,6 +181,45 @@
       border-radius: 8px;
     }
 
+    .strategy-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 10px;
+      background: rgba(255,255,255,0.92);
+      color: #111827;
+      border-radius: 10px;
+      padding: 8px 10px;
+    }
+
+    .strategy-buttons {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .strategy-btn {
+      border: 1px solid #d1d5db;
+      background: #ffffff;
+      color: #111827;
+      border-radius: 8px;
+      padding: 7px 10px;
+      font-size: 12px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .strategy-btn.active {
+      background: #fde047;
+      border-color: #ca8a04;
+    }
+
+    .captain-summary {
+      font-size: 12px;
+      line-height: 1.35;
+      color: #374151;
+    }
+
     .action-bar {
       display: flex;
       gap: 10px;
@@ -461,6 +500,45 @@
       line-height: 1.15;
       max-width: 100px;
       word-break: break-word;
+    }
+
+    .player-badges {
+      margin-top: 3px;
+      display: flex;
+      justify-content: center;
+      gap: 3px;
+      flex-wrap: wrap;
+    }
+
+    .player-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 16px;
+      border-radius: 999px;
+      padding: 1px 5px;
+      font-size: 8px;
+      font-weight: bold;
+      line-height: 1.1;
+      white-space: nowrap;
+    }
+
+    .player-badge.captain {
+      background: #fde047;
+      color: #422006;
+      border: 1px solid rgba(120, 53, 15, 0.18);
+    }
+
+    .player-badge.warning {
+      background: #fed7aa;
+      color: #7c2d12;
+      border: 1px solid rgba(124, 45, 18, 0.2);
+    }
+
+    .player-badge.neutral {
+      background: rgba(17,24,39,0.82);
+      color: #e5e7eb;
+      border: 1px solid rgba(255,255,255,0.12);
     }
 
     .slot-actions {
@@ -1084,6 +1162,11 @@
             </div>
           </div>
 
+          <div class="strategy-panel">
+            <div class="strategy-buttons" id="strategyButtons"></div>
+            <div class="captain-summary" id="captainSummary">Anbefalet kaptajn: indlæser...</div>
+          </div>
+
           <div class="action-bar">
             <button id="optimizeBtn" class="action-btn primary">Vælg optimalt hold</button>
             <button id="fillMissingBtn" class="action-btn tertiary">Fyld mangler optimalt</button>
@@ -1217,6 +1300,10 @@
     const FIXTURES_URL = "data/fixtures_group.csv";
     const START_SECURITY_URL = "data/player_start_security_nt.csv";
     const OPTIMAL_SQUADS_URL = "data/optimal_squads_by_formation.json";
+    const STRATEGY_SQUADS_URL = "data/optimal_squads_by_strategy.json";
+    const STRATEGY_DISPLAY_NAMES_URL = "data/strategy_display_names.json";
+    const STRATEGY_CONTEXT_URL = "data/current_strategy_context.json";
+    const MANUAL_OVERRIDES_URL = "data/manual_player_overrides.csv";
     const MATCH_ODDS_PROBS_URL = "data/match_odds_probs.csv";
     const MODEL_STATUS_URL = "data/model_status_snapshot.json";
     const APP_AUDIT_URL = "data/audit_app_data_consistency.json";
@@ -1272,6 +1359,10 @@
     let allPlayers = [];
     let fixtures = [];
     let optimalSquads = [];
+    let strategySquads = {};
+    let strategyDisplayNames = {};
+    let strategyContext = {};
+    let manualOverrideMap = new Map();
     let matchOddsRows = [];
     let modelStatus = null;
     let appAudit = null;
@@ -1285,6 +1376,7 @@
     let authMode = "login";
     let isApplyingRemoteSquad = false;
     let eligibleOnly = localStorage.getItem(STORAGE_KEYS.eligibleOnly) === "1";
+    let activeStrategyKey = localStorage.getItem("vm2026_active_strategy") || "next_round";
 
     const formationSelect = document.getElementById("formationSelect");
     const pitch = document.getElementById("pitch");
@@ -1311,6 +1403,8 @@
     const fillMissingBtn = document.getElementById("fillMissingBtn");
     const undoBtn = document.getElementById("undoBtn");
     const clearTeamBtn = document.getElementById("clearTeamBtn");
+    const strategyButtons = document.getElementById("strategyButtons");
+    const captainSummary = document.getElementById("captainSummary");
 
     const topbarUser = document.getElementById("topbarUser");
     const openLoginBtn = document.getElementById("openLoginBtn");
@@ -1462,6 +1556,106 @@
         .replaceAll(">", "&gt;")
         .replaceAll('"', "&quot;")
         .replaceAll("'", "&#039;");
+    }
+
+    const USER_STRATEGIES = ["next_round", "round1_2", "group_stage", "long_run"];
+
+    function activeStrategyEntry() {
+      return strategySquads?.[activeStrategyKey] || null;
+    }
+
+    function activeStrategySummary() {
+      return activeStrategyEntry()?.best_summary || {};
+    }
+
+    function strategyDisplayName(strategyKey) {
+      if (strategyKey === "next_round" && strategyContext?.next_round_display_name) {
+        return strategyContext.next_round_display_name;
+      }
+      return strategyDisplayNames?.[strategyKey]
+        || strategySquads?.[strategyKey]?.best_summary?.display_name_da
+        || strategyKey;
+    }
+
+    function playerStrategyRow(player) {
+      if (!player) return null;
+      const squadRows = activeStrategyEntry()?.best_squad || [];
+      return squadRows.find(row => String(row.player_id) === String(player.player_id))
+        || squadRows.find(row =>
+          normalizeName(row.player_name) === normalizeName(player.player_name)
+          && canonicalTeamId(row.team_id) === canonicalTeamId(player.team_id)
+        )
+        || null;
+    }
+
+    function manualOverrideForPlayer(player, strategyRow = null) {
+      if (!player && !strategyRow) return {};
+      const fromStrategy = strategyRow || {};
+      const key = buildMergeKey(
+        fromStrategy.player_name || player?.player_name,
+        canonicalTeamId(fromStrategy.team_id || player?.team_id)
+      );
+      const fromMap = manualOverrideMap.get(key) || {};
+      return { ...fromMap, ...fromStrategy };
+    }
+
+    function captainNameForActiveStrategy() {
+      return activeStrategySummary().recommended_captain || "";
+    }
+
+    function isCaptainPlayer(player) {
+      const row = playerStrategyRow(player);
+      const manual = manualOverrideForPlayer(player, row);
+      if (String(manual.manual_captain_status || "").toLowerCase() === "avoid") return false;
+      return normalizeName(player?.player_name) === normalizeName(captainNameForActiveStrategy());
+    }
+
+    function playerBadges(player) {
+      if (!player) return "";
+      const row = playerStrategyRow(player);
+      const manual = manualOverrideForPlayer(player, row);
+      const badges = [];
+      const manualStatus = String(manual.manual_status || "").toLowerCase();
+      const manualStartStatus = String(manual.manual_start_status || "").toLowerCase();
+      const manualCaptainStatus = String(manual.manual_captain_status || "").toLowerCase();
+
+      if (isCaptainPlayer(player)) {
+        badges.push(`<span class="player-badge captain">C</span>`);
+      }
+      if (manualStatus === "check" || manualStartStatus === "doubtful") {
+        badges.push(`<span class="player-badge warning">Tjek start</span>`);
+      }
+      if (manualCaptainStatus === "avoid") {
+        badges.push(`<span class="player-badge neutral">Ikke kaptajn</span>`);
+      }
+
+      return badges.length ? `<div class="player-badges">${badges.join("")}</div>` : "";
+    }
+
+    function renderStrategyControls() {
+      if (!strategyButtons || !captainSummary) return;
+
+      strategyButtons.innerHTML = USER_STRATEGIES.map(strategyKey => `
+        <button
+          class="strategy-btn ${strategyKey === activeStrategyKey ? "active" : ""}"
+          type="button"
+          data-strategy-key="${escapeHtml(strategyKey)}"
+        >${escapeHtml(strategyDisplayName(strategyKey))}</button>
+      `).join("");
+
+      strategyButtons.querySelectorAll(".strategy-btn").forEach(button => {
+        button.addEventListener("click", () => {
+          activeStrategyKey = button.dataset.strategyKey || "next_round";
+          localStorage.setItem("vm2026_active_strategy", activeStrategyKey);
+          render();
+        });
+      });
+
+      const summary = activeStrategySummary();
+      const captain = summary.recommended_captain || "–";
+      const growth = Number(summary.captain_expected_growth);
+      const growthText = Number.isFinite(growth) ? ` · Vækst: ${growth.toFixed(3).replace(/\.?0+$/, "")}` : "";
+      captainSummary.textContent = `Anbefalet kaptajn: ${captain}${growthText}`;
     }
 
     function getFlagUrl(flagCode) {
@@ -2497,6 +2691,23 @@ function saveState() {
     }
 
     function applyOptimalSquadForCurrentFormation() {
+      const strategyEntry = activeStrategyEntry();
+      const strategyRows = strategyEntry?.best_squad || [];
+      const strategyFormation = strategyEntry?.best_summary?.formation;
+
+      if (strategyRows.length) {
+        if (strategyFormation && FORMATIONS[strategyFormation]) {
+          currentFormation = strategyFormation;
+          formationSelect.value = currentFormation;
+        }
+
+        applyOptimizerRowsToSquad(
+          strategyRows,
+          `Valgte ${strategyDisplayName(activeStrategyKey)}.`
+        );
+        return;
+      }
+
       if (!optimalSquads.length) {
         applyFastFullSquadFallback("Optimizer-data manglede.");
         return;
@@ -2511,6 +2722,10 @@ function saveState() {
         return;
       }
 
+      applyOptimizerRowsToSquad(rows, "Valgte optimalt hold fra optimizer-filen.");
+    }
+
+    function applyOptimizerRowsToSquad(rows, successText) {
       const slots = getCurrentSlots();
       const byPosition = {
         GK: rows.filter(row => normalizePositionLabel(row.position) === "GK"),
@@ -2566,7 +2781,7 @@ function saveState() {
       activeSlotText.textContent = "Ingen valgt";
       saveState();
       render();
-      showStatus("Valgte optimalt hold fra optimizer-filen.", "info");
+      showStatus(successText, "info");
       scheduleAutosave();
     }
 
@@ -3039,6 +3254,7 @@ function saveState() {
             <div class="player-name">${player ? player.player_name : slot.position}</div>
             <div class="player-price">${player ? formatMoney(getPlayerPrice(player)) : "Tom plads"}</div>
             ${player ? `<div class="player-next">${nextText}</div>` : ""}
+            ${player ? playerBadges(player) : ""}
             <div class="slot-actions">
               <button class="slot-btn ${player ? "remove" : ""}" data-slot-key="${slot.key}" data-action="${player ? "remove" : "select"}">
                 ${player ? "Fjern" : "Vælg"}
@@ -3202,6 +3418,7 @@ function saveState() {
     function render() {
       cleanSquadForCurrentFormation();
       renderBudget();
+      renderStrategyControls();
       renderPitch();
       renderTradeList();
     }
@@ -3331,6 +3548,39 @@ function saveState() {
       }
 
       throw new Error("Optimizer-filen indeholder ikke en gyldig liste.");
+    }
+
+    async function loadStrategyData() {
+      const [squads, displayNames, context] = await Promise.all([
+        fetchOptionalJson(STRATEGY_SQUADS_URL),
+        fetchOptionalJson(STRATEGY_DISPLAY_NAMES_URL),
+        fetchOptionalJson(STRATEGY_CONTEXT_URL)
+      ]);
+
+      strategySquads = squads && typeof squads === "object" ? squads : {};
+      strategyDisplayNames = displayNames && typeof displayNames === "object" ? displayNames : {};
+      strategyContext = context && typeof context === "object" ? context : {};
+
+      if (!USER_STRATEGIES.includes(activeStrategyKey) || !strategySquads[activeStrategyKey]) {
+        activeStrategyKey = USER_STRATEGIES.find(key => strategySquads[key]) || "next_round";
+        localStorage.setItem("vm2026_active_strategy", activeStrategyKey);
+      }
+    }
+
+    async function loadManualOverrides() {
+      try {
+        const response = await fetch(MANUAL_OVERRIDES_URL);
+        if (!response.ok) return;
+
+        const rows = parseCsv(await response.text());
+        manualOverrideMap = new Map();
+        rows.forEach(row => {
+          const key = buildMergeKey(row.player_name, canonicalTeamId(row.team_id));
+          manualOverrideMap.set(key, row);
+        });
+      } catch (_error) {
+        manualOverrideMap = new Map();
+      }
     }
 
     function attachStartSecurity(players, startMap) {
@@ -3644,6 +3894,8 @@ function saveState() {
           loadStartSecurityMap(),
           loadFixtures(),
           loadOptimalSquads(),
+          loadStrategyData(),
+          loadManualOverrides(),
           loadMatchOddsProbs(),
           loadDataStatus()
         ]);

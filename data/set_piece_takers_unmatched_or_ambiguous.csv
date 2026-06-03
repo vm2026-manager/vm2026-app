@@ -1,0 +1,22 @@
+﻿team_id,land,role,player_name,role_order,source_note,confidence,is_confirmed,match_status,candidate_count,candidate_names,candidate_player_ids
+ALG,Algeriet,penalty,Bentaleb,2,,medium,false,unmatched,0,,
+ECU,Ecuador,corner_indirect_fk,Caicedo,1,(1),medium,false,ambiguous,2,Moises Caicedo; Jordy Caicedo,mois_s_caicedo__ecu; jordy_caicedo__ecu
+CIV,Elfenbenskysten,corner_indirect_fk,Diomande,2,,medium,false,ambiguous,2,Ousmane Diomande; Yan Diomande,ousmane_diomande__civ; yan_diomande__civ
+HAI,Haiti,direct_fk,Deedson,1,,medium,false,unmatched,0,,
+HAI,Haiti,corner_indirect_fk,Deedson,1,,medium,false,unmatched,0,,
+JOR,Jordan,penalty,Olwan,1,,medium,false,unmatched,0,,
+CPV,Kap Verde,penalty,R. Mendes,1,,medium,false,unmatched,0,,
+MAR,Marokko,penalty,Rahimi,1,,medium,false,unmatched,0,,
+PAN,Panama,corner_indirect_fk,J. Rodriguez,2,,medium,false,unmatched,0,,
+KSA,Saudi-Arabien,penalty,S. Al-Dawsari,2,,medium,false,unmatched,0,,
+KSA,Saudi-Arabien,direct_fk,S. Al-Dawsari,1,,medium,false,unmatched,0,,
+KSA,Saudi-Arabien,corner_indirect_fk,S. Al-Dawsari,1,,medium,false,unmatched,0,,
+SEN,Senegal,corner_indirect_fk,Diouf,1,,medium,false,ambiguous,2,El Hadji Malick Diouf; Yehvann Diouf,el_hadji_malick_diouf__sen; yehvann_diouf__sen
+SEN,Senegal,corner_indirect_fk,Camara,2,,medium,false,ambiguous,2,Ilay Camara; Lamine Camara,ilay_camara__sen; lamine_camara__sen
+CZE,Tjekkiet,penalty,Schick,1,,medium,false,unmatched,0,,
+CZE,Tjekkiet,direct_fk,Coufal,1,,medium,false,unmatched,0,,
+CZE,Tjekkiet,direct_fk,Provod,2,,medium,false,unmatched,0,,
+CZE,Tjekkiet,corner_indirect_fk,Coufal,1,,medium,false,unmatched,0,,
+CZE,Tjekkiet,corner_indirect_fk,Provod,2,(1),medium,false,unmatched,0,,
+UZB,Uzbekistan,direct_fk,Fayzullaev,1,,medium,false,unmatched,0,,
+UZB,Uzbekistan,corner_indirect_fk,Fayzullaev,1,,medium,false,unmatched,0,,

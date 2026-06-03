@@ -1,0 +1,245 @@
+function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
+function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
+defineDs('DanskeSpil/Framework/PlayerAccountManagement/Scripts/Helpers/Consent', ['Shared/Framework/Ensighten/Scripts/Ensighten', 'Shared/Framework/Mithril/Scripts/Helpers/ApiRequest'], function (Ensighten, ApiRequest) {
+  var consentReference = {
+    DDK: 'DDK_PAM_MIGRATION'
+  };
+  var states = {
+    Accepted: 'Accepted',
+    Declined: 'Declined',
+    Unanswered: 'Unanswered'
+  };
+  var eloquaIds = {
+    dloTownMainConsentId: 1953,
+    dloTownEmailId: 402,
+    dloTownPushId: 1010,
+    dloTownCallId: 1013,
+    dloProdMainConsentId: 1953,
+    dloProdEmailId: 402,
+    dloProdPushId: 1457,
+    dloProdCallId: 1949,
+    dliTownMainConsentId: 1603,
+    dliTownEmailId: 711,
+    dliTownPushId: 1545,
+    dliProdMainConsentId: 4393,
+    dliProdEmailId: 711,
+    dliProdPushId: 3064,
+    dloTownSmsWinnerId: 507,
+    dloTownEmailWinnerId: 404,
+    dliTownSmsWinnerId: 719,
+    dliTownEmailWinnerId: 718,
+    dloProdSmsWinnerId: 507,
+    dloProdEmailWinnerId: 404,
+    dliProdSmsWinnerId: 719,
+    dliProdEmailWinnerId: 718
+  };
+  var getConsent = () => ApiRequest({
+    method: 'GET',
+    url: DS.Config.CONSENT_API_URL + '/v2/consent',
+    requireAuthCookie: true,
+    withCredentials: DS.Config.ENV === 'dev',
+    shouldPreAuthorize: true
+  });
+  var getRetailConsent = /*#__PURE__*/function () {
+    var _ref = _asyncToGenerator(function* () {
+      return ApiRequest({
+        method: 'GET',
+        url: DS.Config.CONSENT_API_URL + '/v2/consent/retailpermission',
+        requireAuthCookie: true,
+        shouldPreAuthorize: true
+      });
+    });
+    return function getRetailConsent() {
+      return _ref.apply(this, arguments);
+    };
+  }();
+  var setRetailConsent = /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator(function* (accepted, referenceId) {
+      var payload = {
+        permission: accepted,
+        reference: referenceId
+      };
+      return ApiRequest({
+        data: payload,
+        method: 'POST',
+        url: DS.Config.CONSENT_API_URL + '/v2/consent/retailpermission',
+        requireAuthCookie: true,
+        shouldPreAuthorize: true
+      });
+    });
+    return function setRetailConsent(_x, _x2) {
+      return _ref2.apply(this, arguments);
+    };
+  }();
+  var getConsentByType = type => {
+    var consentType = getConsentIdByType(type);
+    return ApiRequest({
+      method: 'GET',
+      url: DS.Config.CONSENT_API_URL + '/v1/consent',
+      requireAuthCookie: true,
+      shouldPreAuthorize: true,
+      unwrapSuccess: function (response) {
+        return response[0].subConsents.find(subConsent => subConsent.id === consentType);
+      }
+    });
+  };
+  var setWinnerConsent = payload => {
+    return ApiRequest({
+      data: payload,
+      method: 'POST',
+      url: DS.Config.CONSENT_API_URL + '/v2/consent',
+      requireAuthCookie: true,
+      shouldPreAuthorize: true,
+      unwrapSuccess: function () {
+        var category = 'Consent';
+        for (var {
+          id,
+          accepted
+        } of payload.consentItems) {
+          var action = accepted ? 'Accepted' : 'Declined';
+          var label = getConsentTypeById(id);
+          if (label) {
+            Ensighten.pushGaEvent(category, action, label);
+          }
+        }
+      }
+    });
+  };
+  var setConsent = payload => {
+    if (payload.consentItems) {
+      var mainConsentId = getConsentIdByType('MainConsent');
+      var hasMainConsentInPayload = payload.consentItems.find(consent => consent.id === mainConsentId);
+      var hasSetSubConsent = payload.consentItems.some(consent => consent.accepted === true);
+      if (!hasMainConsentInPayload && hasSetSubConsent) {
+        payload.consentItems.push({
+          id: mainConsentId,
+          accepted: true
+        });
+      }
+    }
+    return ApiRequest({
+      data: payload,
+      method: 'POST',
+      url: DS.Config.CONSENT_API_URL + '/v2/consent',
+      requireAuthCookie: true,
+      shouldPreAuthorize: true,
+      unwrapSuccess: function () {
+        var category = 'Consent';
+        for (var {
+          id,
+          accepted
+        } of payload.consentItems) {
+          var action = accepted ? 'Accepted' : 'Declined';
+          var label = getConsentTypeById(id);
+          if (label) {
+            Ensighten.pushGaEvent(category, action, label);
+          }
+        }
+      }
+    });
+  };
+  var setConsentByType = /*#__PURE__*/function () {
+    var _ref3 = _asyncToGenerator(function* (type, accepted, referenceId) {
+      var consentId = getConsentIdByType(type);
+      if (!consentId) {
+        console.warn("You do not have a valid consent id for type (".concat(type, ")"));
+        return;
+      }
+      var payload = {
+        reference: referenceId,
+        consentItems: [{
+          id: consentId,
+          accepted: accepted
+        }]
+      };
+      return yield setConsent(payload);
+    });
+    return function setConsentByType(_x3, _x4, _x5) {
+      return _ref3.apply(this, arguments);
+    };
+  }();
+  var getConsentIdByType = type => {
+    var env = DS.Config.ENV === 'Production' ? 'Prod' : 'Town';
+    var lookupKey = "".concat(window.DS.Config.CONTEXT.toLowerCase() + env + type.charAt(0).toUpperCase() + type.slice(1), "Id");
+    if (eloquaIds.hasOwnProperty(lookupKey)) {
+      return eloquaIds[lookupKey];
+    }
+    return null;
+  };
+  var getConsentTypeById = id => {
+    var env = DS.Config.ENV === 'Production' ? 'Prod' : 'Town';
+    var envKey = window.DS.Config.CONTEXT.toLowerCase() + env;
+    if (id === eloquaIds["".concat(envKey, "EmailId")]) {
+      return 'Email';
+    }
+    if (id === eloquaIds["".concat(envKey, "PUshId")]) {
+      return 'Push';
+    }
+    if (id === eloquaIds["".concat(envKey, "CallId")]) {
+      return 'Call';
+    }
+    if (id === eloquaIds["".concat(envKey, "MainConsent")]) {
+      return 'MainConsent';
+    }
+    return '';
+  };
+  var formatConsentText = (text, textActions) => {
+    var formattedText = text;
+    textActions.forEach(action => {
+      var _action$type;
+      var type = (_action$type = action.type) === null || _action$type === void 0 ? void 0 : _action$type.toLowerCase();
+      if (type === 'link') {
+        formattedText = formattedText.replaceAll(action.highlight, "<a href=\"".concat(action.content, "\">").concat(action.highlight, "</a>"));
+      }
+      if (type === 'popover') {
+        formattedText = formattedText.replace(action.highlight, "<span class=\"notifications-consents__tooltip\" data-label=\"".concat(action.content, "\">").concat(action.highlight, "</span>"));
+      }
+    });
+    return formattedText;
+  };
+  var getFormattedConsentText = consents => {
+    if (!(consents !== null && consents !== void 0 && consents.text)) {
+      return '';
+    }
+    if (Array.isArray(consents.textActions) && consents.textActions.length > 0) {
+      return formatConsentText(consents.text, consents.textActions);
+    }
+    return consents.text;
+  };
+  var collectConsentIds = consentData => {
+    var _consentData$mainCons, _consentData$subConse;
+    if (!consentData) {
+      return [];
+    }
+    var mainIds = ((_consentData$mainCons = consentData.mainConsents) === null || _consentData$mainCons === void 0 ? void 0 : _consentData$mainCons.map(_ref4 => {
+      var {
+        id
+      } = _ref4;
+      return id;
+    })) || [];
+    var subIds = ((_consentData$subConse = consentData.subConsents) === null || _consentData$subConse === void 0 ? void 0 : _consentData$subConse.map(_ref5 => {
+      var {
+        id
+      } = _ref5;
+      return id;
+    })) || [];
+    return [...mainIds, ...subIds];
+  };
+  return {
+    getConsentTypeById,
+    getConsentIdByType,
+    formatConsentText,
+    getFormattedConsentText,
+    collectConsentIds,
+    getConsent,
+    setConsent,
+    getConsentByType,
+    setConsentByType,
+    states,
+    getRetailConsent,
+    setRetailConsent,
+    setWinnerConsent,
+    consentReference
+  };
+});
+//# sourceMappingURL=Consent.js.map

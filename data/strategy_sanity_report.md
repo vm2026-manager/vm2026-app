@@ -1,163 +1,121 @@
-# Strategy Sanity Report
+# Strategi Sanity Report
 
-Denne rapport sammenligner strategi-presets uden at ændre optimizer, EV, player_pool eller UI.
+Rapporten viser de fire brugerrettede strategier efter strategirydningen.
 
-## 1. Bedste Hold Pr. Strategi
+## Aktuel Strategikontekst
 
-| Strategi | Formation | Pris | Total score | Total EV | High risk |
-| --- | --- | --- | --- | --- | --- |
-| balanced | 3-4-3 | 50,000,000 | 39.581 | 39.666 | 4 |
-| safe_starters | 3-4-3 | 49,500,000 | 39.535 | 38.893 | 1 |
-| fixture_attack | 3-4-3 | 48,500,000 | 47.479 | 39.610 | 3 |
-| clean_sheet_stack | 3-4-3 | 49,000,000 | 40.900 | 39.315 | 2 |
-| long_run_value | 3-4-3 | 49,000,000 | 41.819 | 39.405 | 2 |
+- current_time_dk: 2026-06-03T15:58:50+02:00
+- target_round: 1
+- next_round_display_name: Næste runde (runde 1)
+- remaining_matches_in_target_round: 24
 
-## 2. Spillerliste Pr. Strategi
+## Strategioversigt
 
-### balanced
+| Dansk navn | Teknisk strategi | Formation | Pris | Score | EV | Avg cond | High risk | Kaptajn | Kaptajn vækst |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Næste runde (runde 1) | next_round | 3-4-3 | 49,500,000 | 90.126 | 42.438 | 0.8441 | 1 | Cristiano Ronaldo | 2.000 |
+| 1. + 2. runde | round1_2 | 3-4-3 | 49,000,000 | 107.522 | 43.676 | 0.8488 | 1 | Cristiano Ronaldo | 2.000 |
+| Gruppespil | group_stage | 3-4-3 | 48,500,000 | 120.934 | 44.223 | 0.8412 | 2 | Cristiano Ronaldo | 2.000 |
+| Lang sigt | long_run | 3-4-3 | 49,500,000 | 60.681 | 42.989 | 0.8635 | 0 | Cristiano Ronaldo | 2.000 |
 
-| Spiller | Hold | Pos | Pris | EV | Strategy score | Start | Conditional | Risk |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Nuno Mendes | POR | DEF | 4500000 | 3.326 | 3.307 | 0.766 | 0.843 | medium_risk |
-| Chris Richards | USA | DEF | 3000000 | 2.845 | 2.822 | 0.671 | 0.780 | high_risk |
-| Cesar Montes | MEX | DEF | 3000000 | 2.756 | 2.723 | 0.642 | 0.744 | high_risk |
-| Raul Jimenez | MEX | FWD | 4500000 | 4.164 | 4.123 | 0.701 | 0.815 | high_risk |
-| Cristiano Ronaldo | POR | FWD | 7000000 | 4.054 | 4.031 | 0.908 | 0.970 | medium_risk |
-| Vinicius Junior | BRA | FWD | 7500000 | 4.057 | 4.013 | 0.744 | 0.810 | medium_risk |
-| Mike Maignan | FRA | GK | 5000000 | 3.513 | 3.468 | 0.484 | 0.513 | medium_risk |
-| Christoph Baumgartner | AUT | MID | 3500000 | 4.081 | 4.138 | 0.895 | 0.933 | low_risk |
-| Kerem Akturkoglu | TUR | MID | 4500000 | 3.758 | 3.759 | 0.875 | 0.911 | low_risk |
-| Andreas Schjelderup | NOR | MID | 3500000 | 3.610 | 3.645 | 0.661 | 0.714 | medium_risk |
-| Malik Tillman | USA | MID | 4000000 | 3.501 | 3.552 | 0.676 | 0.786 | high_risk |
+## Kaptajn
 
-### safe_starters
-
-| Spiller | Hold | Pos | Pris | EV | Strategy score | Start | Conditional | Risk |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Nuno Mendes | POR | DEF | 4500000 | 3.326 | 3.307 | 0.766 | 0.843 | medium_risk |
-| Josko Gvardiol | CRO | DEF | 3500000 | 2.508 | 2.679 | 0.856 | 0.922 | medium_risk |
-| Chris Richards | USA | DEF | 3000000 | 2.845 | 2.582 | 0.671 | 0.780 | high_risk |
-| Cristiano Ronaldo | POR | FWD | 7000000 | 4.054 | 4.211 | 0.908 | 0.970 | medium_risk |
-| Jonathan David | CAN | FWD | 4500000 | 3.903 | 4.064 | 0.900 | 0.970 | medium_risk |
-| Vinicius Junior | BRA | FWD | 7500000 | 4.057 | 4.013 | 0.744 | 0.810 | medium_risk |
-| Mike Maignan | FRA | GK | 5000000 | 3.513 | 3.288 | 0.484 | 0.513 | medium_risk |
-| Christoph Baumgartner | AUT | MID | 3500000 | 4.081 | 4.318 | 0.895 | 0.933 | low_risk |
-| Kerem Akturkoglu | TUR | MID | 4500000 | 3.758 | 3.939 | 0.875 | 0.911 | low_risk |
-| Andreas Schjelderup | NOR | MID | 3500000 | 3.610 | 3.645 | 0.661 | 0.714 | medium_risk |
-| Oscar Bobb | NOR | MID | 3000000 | 3.238 | 3.491 | 0.910 | 0.970 | medium_risk |
-
-### fixture_attack
-
-| Spiller | Hold | Pos | Pris | EV | Strategy score | Start | Conditional | Risk |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Nuno Mendes | POR | DEF | 4500000 | 3.326 | 3.834 | 0.766 | 0.843 | medium_risk |
-| Cesar Montes | MEX | DEF | 3000000 | 2.756 | 3.138 | 0.642 | 0.744 | high_risk |
-| Chris Richards | USA | DEF | 3000000 | 2.845 | 3.109 | 0.671 | 0.780 | high_risk |
-| Vinicius Junior | BRA | FWD | 7500000 | 4.057 | 4.979 | 0.744 | 0.810 | medium_risk |
-| Raul Jimenez | MEX | FWD | 4500000 | 4.164 | 4.900 | 0.701 | 0.815 | high_risk |
-| Cristiano Ronaldo | POR | FWD | 7000000 | 4.054 | 4.890 | 0.908 | 0.970 | medium_risk |
-| Mike Maignan | FRA | GK | 5000000 | 3.513 | 4.128 | 0.484 | 0.513 | medium_risk |
-| Christoph Baumgartner | AUT | MID | 3500000 | 4.081 | 5.021 | 0.895 | 0.933 | low_risk |
-| Kerem Akturkoglu | TUR | MID | 4500000 | 3.758 | 4.640 | 0.875 | 0.911 | low_risk |
-| Roberto Alvarado | MEX | MID | 2500000 | 3.445 | 4.537 | 0.639 | 0.725 | medium_risk |
-| Andreas Schjelderup | NOR | MID | 3500000 | 3.610 | 4.304 | 0.661 | 0.714 | medium_risk |
-
-### clean_sheet_stack
-
-| Spiller | Hold | Pos | Pris | EV | Strategy score | Start | Conditional | Risk |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Nuno Mendes | POR | DEF | 4500000 | 3.326 | 3.779 | 0.766 | 0.843 | medium_risk |
-| Timothy Castagne | BEL | DEF | 3500000 | 2.551 | 3.058 | 0.777 | 0.819 | low_risk |
-| Cesar Montes | MEX | DEF | 3000000 | 2.756 | 3.005 | 0.642 | 0.744 | high_risk |
-| Raul Jimenez | MEX | FWD | 4500000 | 4.164 | 4.123 | 0.701 | 0.815 | high_risk |
-| Cristiano Ronaldo | POR | FWD | 7000000 | 4.054 | 4.031 | 0.908 | 0.970 | medium_risk |
-| Vinicius Junior | BRA | FWD | 7500000 | 4.057 | 4.013 | 0.744 | 0.810 | medium_risk |
-| Mike Maignan | FRA | GK | 5000000 | 3.513 | 3.860 | 0.484 | 0.513 | medium_risk |
-| Christoph Baumgartner | AUT | MID | 3500000 | 4.081 | 4.138 | 0.895 | 0.933 | low_risk |
-| Kerem Akturkoglu | TUR | MID | 4500000 | 3.758 | 3.759 | 0.875 | 0.911 | low_risk |
-| Andreas Schjelderup | NOR | MID | 3500000 | 3.610 | 3.645 | 0.661 | 0.714 | medium_risk |
-| Roberto Alvarado | MEX | MID | 2500000 | 3.445 | 3.490 | 0.639 | 0.725 | medium_risk |
-
-### long_run_value
-
-| Spiller | Hold | Pos | Pris | EV | Strategy score | Start | Conditional | Risk |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Nuno Mendes | POR | DEF | 4500000 | 3.326 | 3.684 | 0.766 | 0.843 | medium_risk |
-| Chris Richards | USA | DEF | 3000000 | 2.845 | 2.830 | 0.671 | 0.780 | high_risk |
-| Timothy Castagne | BEL | DEF | 3500000 | 2.551 | 2.781 | 0.777 | 0.819 | low_risk |
-| Vinicius Junior | BRA | FWD | 7500000 | 4.057 | 4.451 | 0.744 | 0.810 | medium_risk |
-| Cristiano Ronaldo | POR | FWD | 7000000 | 4.054 | 4.408 | 0.908 | 0.970 | medium_risk |
-| Raul Jimenez | MEX | FWD | 4500000 | 4.164 | 4.091 | 0.701 | 0.815 | high_risk |
-| Mike Maignan | FRA | GK | 5000000 | 3.513 | 3.966 | 0.484 | 0.513 | medium_risk |
-| Christoph Baumgartner | AUT | MID | 3500000 | 4.081 | 4.215 | 0.895 | 0.933 | low_risk |
-| Andreas Schjelderup | NOR | MID | 3500000 | 3.610 | 3.889 | 0.661 | 0.714 | medium_risk |
-| Kerem Akturkoglu | TUR | MID | 4500000 | 3.758 | 3.885 | 0.875 | 0.911 | low_risk |
-| Roberto Alvarado | MEX | MID | 2500000 | 3.445 | 3.618 | 0.639 | 0.725 | medium_risk |
-
-## 3. Overlap Mod Balanced
-
-| Strategi | Overlap | Kun i strategi | Kun i balanced |
-| --- | --- | --- | --- |
-| balanced | 11 | - | - |
-| safe_starters | 8 | Jonathan David, Josko Gvardiol, Oscar Bobb | Cesar Montes, Malik Tillman, Raul Jimenez |
-| fixture_attack | 10 | Roberto Alvarado | Malik Tillman |
-| clean_sheet_stack | 9 | Roberto Alvarado, Timothy Castagne | Chris Richards, Malik Tillman |
-| long_run_value | 9 | Roberto Alvarado, Timothy Castagne | Cesar Montes, Malik Tillman |
-
-## 4. Spillere Kun Valgt I Én Strategi
-
-| Strategi | Spiller | Hold | Pos | Strategy score |
+| Strategi | Kaptajn | Runde | Forventet vækst | Årsag |
 | --- | --- | --- | --- | --- |
-| balanced | Malik Tillman | USA | MID | 3.552 |
-| safe_starters | Josko Gvardiol | CRO | DEF | 2.679 |
-| safe_starters | Jonathan David | CAN | FWD | 4.064 |
-| safe_starters | Oscar Bobb | NOR | MID | 3.491 |
+| Næste runde (runde 1) | Cristiano Ronaldo | 1 | 2.000 | kaptajnscore baseret paa runde 1-vaekst 2; ingen registreret straffe-/doedboldsrolle; hoej startsikkerhed; mild risk-straf; maalprofil-proxy: angriber |
+| 1. + 2. runde | Cristiano Ronaldo | 1 | 2.000 | kaptajnscore baseret paa runde 1-vaekst 2; ingen registreret straffe-/doedboldsrolle; hoej startsikkerhed; mild risk-straf; maalprofil-proxy: angriber |
+| Gruppespil | Cristiano Ronaldo | 1 | 2.000 | kaptajnscore baseret paa runde 1-vaekst 2; ingen registreret straffe-/doedboldsrolle; hoej startsikkerhed; mild risk-straf; maalprofil-proxy: angriber |
+| Lang sigt | Cristiano Ronaldo | 1 | 2.000 | kaptajnscore baseret paa runde 1-vaekst 2; ingen registreret straffe-/doedboldsrolle; hoej startsikkerhed; mild risk-straf; maalprofil-proxy: angriber |
 
-## 5. Hold-/Landefordeling
+## Spillerliste Pr. Strategi
+
+### Næste runde (runde 1)
+
+| Spiller | Hold | Pos | Pris | EV | Strategy score | Start | Conditional | Risk | P 6p efter 2 | R3 faktor |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Nuno Mendes | POR | DEF | 4500000 | 3.974 | 8.105 | 0.766 | 0.843 | medium_risk | 0.545 | 0.740 |
+| Stefan Posch | AUT | DEF | 3000000 | 2.656 | 7.216 | 0.704 | 0.759 | medium_risk | 0.125 | 1.000 |
+| Ruben Dias | POR | DEF | 4000000 | 2.812 | 5.760 | 0.808 | 0.851 | low_risk | 0.545 | 0.740 |
+| Cristiano Ronaldo | POR | FWD | 7000000 | 4.947 | 9.548 | 0.908 | 0.970 | medium_risk | 0.545 | 0.740 |
+| Raul Jimenez | MEX | FWD | 4500000 | 4.993 | 9.302 | 0.701 | 0.815 | high_risk | 0.341 | 0.860 |
+| Lautaro Martinez | ARG | FWD | 8000000 | 4.693 | 8.458 | 0.850 | 0.906 | medium_risk | 0.375 | 0.860 |
+| Diogo Costa | POR | GK | 5000000 | 3.560 | 7.490 | 0.753 | 0.792 | low_risk | 0.545 | 0.740 |
+| Roberto Alvarado | MEX | MID | 2500000 | 4.126 | 9.188 | 0.639 | 0.725 | medium_risk | 0.341 | 0.860 |
+| Oscar Bobb | NOR | MID | 3000000 | 3.564 | 8.657 | 0.910 | 0.970 | medium_risk | 0.347 | 0.860 |
+| Andreas Schjelderup | NOR | MID | 3500000 | 3.967 | 8.572 | 0.661 | 0.714 | medium_risk | 0.347 | 0.860 |
+| Scott McTominay | SCO | MID | 4500000 | 3.145 | 7.831 | 0.874 | 0.940 | medium_risk | 0.164 | 1.000 |
+
+### 1. + 2. runde
+
+| Spiller | Hold | Pos | Pris | EV | Strategy score | Start | Conditional | Risk | P 6p efter 2 | R3 faktor |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Nuno Mendes | POR | DEF | 4500000 | 3.974 | 10.192 | 0.766 | 0.843 | medium_risk | 0.545 | 0.740 |
+| Chris Richards | USA | DEF | 3000000 | 3.127 | 7.523 | 0.671 | 0.780 | high_risk | 0.259 | 0.860 |
+| Ruben Dias | POR | DEF | 4000000 | 2.812 | 6.867 | 0.808 | 0.851 | low_risk | 0.545 | 0.740 |
+| Jonathan David | CAN | FWD | 4500000 | 4.474 | 11.605 | 0.900 | 0.970 | medium_risk | 0.350 | 0.860 |
+| Cristiano Ronaldo | POR | FWD | 7000000 | 4.947 | 11.527 | 0.908 | 0.970 | medium_risk | 0.545 | 0.740 |
+| Vinicius Junior | BRA | FWD | 7500000 | 5.045 | 10.510 | 0.744 | 0.810 | medium_risk | 0.526 | 0.740 |
+| Diogo Costa | POR | GK | 5000000 | 3.560 | 9.422 | 0.753 | 0.792 | low_risk | 0.545 | 0.740 |
+| Roberto Alvarado | MEX | MID | 2500000 | 4.126 | 11.113 | 0.639 | 0.725 | medium_risk | 0.341 | 0.860 |
+| Oscar Bobb | NOR | MID | 3000000 | 3.564 | 9.781 | 0.910 | 0.970 | medium_risk | 0.347 | 0.860 |
+| Andreas Schjelderup | NOR | MID | 3500000 | 3.967 | 9.773 | 0.661 | 0.714 | medium_risk | 0.347 | 0.860 |
+| Kerem Akturkoglu | TUR | MID | 4500000 | 4.078 | 9.208 | 0.875 | 0.911 | low_risk | 0.219 | 1.000 |
+
+### Gruppespil
+
+| Spiller | Hold | Pos | Pris | EV | Strategy score | Start | Conditional | Risk | P 6p efter 2 | R3 faktor |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Nuno Mendes | POR | DEF | 4500000 | 3.974 | 10.955 | 0.766 | 0.843 | medium_risk | 0.545 | 0.740 |
+| Chris Richards | USA | DEF | 3000000 | 3.127 | 8.569 | 0.671 | 0.780 | high_risk | 0.259 | 0.860 |
+| Josko Gvardiol | CRO | DEF | 3500000 | 2.841 | 8.288 | 0.856 | 0.922 | medium_risk | 0.126 | 1.000 |
+| Raul Jimenez | MEX | FWD | 4500000 | 4.993 | 12.797 | 0.701 | 0.815 | high_risk | 0.341 | 0.860 |
+| Cristiano Ronaldo | POR | FWD | 7000000 | 4.947 | 12.471 | 0.908 | 0.970 | medium_risk | 0.545 | 0.740 |
+| Vinicius Junior | BRA | FWD | 7500000 | 5.045 | 12.237 | 0.744 | 0.810 | medium_risk | 0.526 | 0.740 |
+| Diogo Costa | POR | GK | 5000000 | 3.560 | 10.086 | 0.753 | 0.792 | low_risk | 0.545 | 0.740 |
+| Roberto Alvarado | MEX | MID | 2500000 | 4.126 | 13.012 | 0.639 | 0.725 | medium_risk | 0.341 | 0.860 |
+| Kerem Akturkoglu | TUR | MID | 4500000 | 4.078 | 11.181 | 0.875 | 0.911 | low_risk | 0.219 | 1.000 |
+| Andreas Schjelderup | NOR | MID | 3500000 | 3.967 | 10.713 | 0.661 | 0.714 | medium_risk | 0.347 | 0.860 |
+| Oscar Bobb | NOR | MID | 3000000 | 3.564 | 10.624 | 0.910 | 0.970 | medium_risk | 0.347 | 0.860 |
+
+### Lang sigt
+
+| Spiller | Hold | Pos | Pris | EV | Strategy score | Start | Conditional | Risk | P 6p efter 2 | R3 faktor |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Nuno Mendes | POR | DEF | 4500000 | 3.974 | 5.656 | 0.766 | 0.843 | medium_risk | 0.545 | 0.740 |
+| Ruben Dias | POR | DEF | 4000000 | 2.812 | 4.542 | 0.808 | 0.851 | low_risk | 0.545 | 0.740 |
+| Timothy Castagne | BEL | DEF | 3500000 | 3.050 | 4.340 | 0.777 | 0.819 | low_risk | 0.377 | 0.860 |
+| Vinicius Junior | BRA | FWD | 7500000 | 5.045 | 7.067 | 0.744 | 0.810 | medium_risk | 0.526 | 0.740 |
+| Cristiano Ronaldo | POR | FWD | 7000000 | 4.947 | 7.039 | 0.908 | 0.970 | medium_risk | 0.545 | 0.740 |
+| Patrick Agyemang | USA | FWD | 3000000 | 4.112 | 5.592 | 0.793 | 0.857 | medium_risk | 0.259 | 0.860 |
+| Diogo Costa | POR | GK | 5000000 | 3.560 | 5.223 | 0.753 | 0.792 | low_risk | 0.545 | 0.740 |
+| Joshua Kimmich | GER | MID | 5000000 | 3.720 | 5.664 | 0.929 | 0.950 | low_risk | 0.557 | 0.620 |
+| Kerem Akturkoglu | TUR | MID | 4500000 | 4.078 | 5.524 | 0.875 | 0.911 | low_risk | 0.219 | 1.000 |
+| Oscar Bobb | NOR | MID | 3000000 | 3.564 | 5.099 | 0.910 | 0.970 | medium_risk | 0.347 | 0.860 |
+| Roberto Alvarado | MEX | MID | 2500000 | 4.126 | 4.934 | 0.639 | 0.725 | medium_risk | 0.341 | 0.860 |
+
+## Landefordeling
 
 | Strategi | Fordeling |
 | --- | --- |
-| balanced | AUT:1; BRA:1; FRA:1; MEX:2; NOR:1; POR:2; TUR:1; USA:2 |
-| safe_starters | AUT:1; BRA:1; CAN:1; CRO:1; FRA:1; NOR:2; POR:2; TUR:1; USA:1 |
-| fixture_attack | AUT:1; BRA:1; FRA:1; MEX:3; NOR:1; POR:2; TUR:1; USA:1 |
-| clean_sheet_stack | AUT:1; BEL:1; BRA:1; FRA:1; MEX:3; NOR:1; POR:2; TUR:1 |
-| long_run_value | AUT:1; BEL:1; BRA:1; FRA:1; MEX:2; NOR:1; POR:2; TUR:1; USA:1 |
+| Næste runde (runde 1) | ARG:1; AUT:1; MEX:2; NOR:2; POR:4; SCO:1 |
+| 1. + 2. runde | BRA:1; CAN:1; MEX:1; NOR:2; POR:4; TUR:1; USA:1 |
+| Gruppespil | BRA:1; CRO:1; MEX:2; NOR:2; POR:3; TUR:1; USA:1 |
+| Lang sigt | BEL:1; BRA:1; GER:1; MEX:1; NOR:1; POR:4; TUR:1; USA:1 |
 
-## 6. Start Og Availability
+## Start Og Availability
 
 | Strategi | Avg start_prob | Avg conditional_start_prob | Availability risk |
 | --- | --- | --- | --- |
-| balanced | 0.7294 | 0.8019 | high_risk:4; low_risk:2; medium_risk:5 |
-| safe_starters | 0.7883 | 0.8488 | high_risk:1; low_risk:2; medium_risk:8 |
-| fixture_attack | 0.7261 | 0.7964 | high_risk:3; low_risk:2; medium_risk:6 |
-| clean_sheet_stack | 0.7357 | 0.7999 | high_risk:2; low_risk:3; medium_risk:6 |
-| long_run_value | 0.7384 | 0.8032 | high_risk:2; low_risk:3; medium_risk:6 |
+| Næste runde (runde 1) | 0.7795 | 0.8441 | high_risk:1; low_risk:2; medium_risk:8 |
+| 1. + 2. runde | 0.7851 | 0.8488 | high_risk:1; low_risk:3; medium_risk:7 |
+| Gruppespil | 0.7714 | 0.8412 | high_risk:2; low_risk:2; medium_risk:7 |
+| Lang sigt | 0.8093 | 0.8635 | low_risk:5; medium_risk:6 |
 
-## 7. Fixture Attack Ind Ift. Balanced
+## Strateginoter
 
-| Spiller | Hold | Pos | Pris | EV | Strategy score | Start | Conditional | Risk |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Roberto Alvarado | MEX | MID | 2500000 | 3.445 | 4.537 | 0.639 | 0.725 | medium_risk |
-
-## 8. Safe Starters Ind Ift. Balanced
-
-| Spiller | Hold | Pos | Pris | EV | Strategy score | Start | Conditional | Risk |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Jonathan David | CAN | FWD | 4500000 | 3.903 | 4.064 | 0.900 | 0.970 | medium_risk |
-| Josko Gvardiol | CRO | DEF | 3500000 | 2.508 | 2.679 | 0.856 | 0.922 | medium_risk |
-| Oscar Bobb | NOR | MID | 3000000 | 3.238 | 3.491 | 0.910 | 0.970 | medium_risk |
-
-## 9. Long Run Value Ind Ift. Balanced
-
-| Spiller | Hold | Pos | Pris | EV | Strategy score | Start | Conditional | Risk |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Roberto Alvarado | MEX | MID | 2500000 | 3.445 | 3.618 | 0.639 | 0.725 | medium_risk |
-| Timothy Castagne | BEL | DEF | 3500000 | 2.551 | 2.781 | 0.777 | 0.819 | low_risk |
-
-## 10. Kort Vurdering
-
-- Strategierne giver forskellige hold, men ikke radikalt forskellige: fixture_attack overlapper 10/11 med balanced, safe_starters overlapper 8/11.
-- safe_starters ser relevant ud som preset, fordi high_risk falder fra 4 til 1 og avg conditional_start_prob stiger.
-- fixture_attack bør vises med strategy score separat fra total_ev, fordi dens score indeholder fixture-boost og derfor ikke er direkte sammenlignelig med balanced total_ev.
-- clean_sheet_stack differentierer noget, men bør stadig vurderes mod balanced overlap og defensiv sammensætning.
+- Næste runde bruger dynamisk target_round og scorer hårdest på den kommende runde.
+- 1. + 2. runde vægter de to første runder og straffer spillere, der kun topper i én kamp.
+- Gruppespil reducerer runde 3-bidrag via p_6_points_after_2 og round3_rotation_factor.
+- Lang sigt bruger team_market/team_long_run som proxy for turneringsvinderstyrke.
+- safe_starters er ikke længere en separat brugerrettet hovedstrategi; starterfokus er indbygget i alle fire strategier.
 - Datagrundlag brugt til rapporten: 1244 EV-rækker og 1292 player_pool-rækker.

@@ -2,10 +2,11 @@ from __future__ import annotations
 
 import csv
 import json
-import re
-import unicodedata
+from collections import Counter
+from datetime import datetime
 from pathlib import Path
 from typing import Any
+from zoneinfo import ZoneInfo
 
 import pandas as pd
 import pulp
@@ -16,17 +17,26 @@ DATA_DIR = PROJECT_ROOT / "data"
 
 PLAYER_EV_PATH = DATA_DIR / "player_ev_group_stage_v1.csv"
 PLAYER_POOL_PATH = DATA_DIR / "player_pool_v1.json"
+FIXTURES_PATH = DATA_DIR / "fixtures_group.csv"
 FIXTURE_MULTIPLIERS_PATH = DATA_DIR / "fixture_strength_multipliers.csv"
-EV_IMPACT_PATH = DATA_DIR / "player_ev_fixture_strength_impact_report.csv"
+MATCH_ODDS_PATH = DATA_DIR / "match_odds_probs.csv"
 TEAM_MARKET_CSV_PATH = DATA_DIR / "team_market_odds_layer_v1.csv"
 TEAM_MARKET_JSON_PATH = DATA_DIR / "team_market_odds_layer_v1.json"
 
 OUT_STRATEGIES_JSON = DATA_DIR / "optimal_squads_by_strategy.json"
 OUT_COMPARISON_CSV = DATA_DIR / "strategy_comparison_report.csv"
+OUT_CONTEXT_JSON = DATA_DIR / "current_strategy_context.json"
+OUT_DISPLAY_NAMES_JSON = DATA_DIR / "strategy_display_names.json"
+OUT_CLEANUP_REPORT = DATA_DIR / "strategy_cleanup_report.md"
+CONFIRMED_LINEUPS_PATH = DATA_DIR / "confirmed_lineups.csv"
+CURRENT_SQUAD_PATH = DATA_DIR / "current_squad.csv"
+MANUAL_OVERRIDES_PATH = DATA_DIR / "manual_player_overrides.csv"
 
 BUDGET_M = 50.0
 SQUAD_SIZE = 11
 MAX_PER_TEAM = 4
+LOW_CONDITIONAL_THRESHOLD = 0.75
+DK_TZ = ZoneInfo("Europe/Copenhagen")
 
 FORMATIONS: dict[str, dict[str, int]] = {
     "3-4-3": {"GK": 1, "DEF": 3, "MID": 4, "FWD": 3},
@@ -38,13 +48,14 @@ FORMATIONS: dict[str, dict[str, int]] = {
     "5-4-1": {"GK": 1, "DEF": 5, "MID": 4, "FWD": 1},
 }
 
-STRATEGIES = [
-    "balanced",
-    "safe_starters",
-    "fixture_attack",
-    "clean_sheet_stack",
-    "long_run_value",
-]
+STRATEGIES = ["next_round", "round1_2", "group_stage", "long_run"]
+
+DISPLAY_NAMES_DA = {
+    "next_round": "Næste runde",
+    "round1_2": "1. + 2. runde",
+    "group_stage": "Gruppespil",
+    "long_run": "Lang sigt",
+}
 
 POSITION_MAP = {
     "GK": "GK",
@@ -65,13 +76,21 @@ def txt(value: Any) -> str:
 
 
 def to_float(value: Any, default: float = 0.0) -> float:
-    text = txt(value).replace(",", ".")
-    if not text:
+    raw = txt(value).replace(",", ".")
+    if not raw:
         return default
     try:
-        return float(text)
+        return float(raw)
     except ValueError:
         return default
+
+
+def fmt(value: float, digits: int = 6) -> str:
+    return f"{value:.{digits}f}".rstrip("0").rstrip(".")
+
+
+def standardize_position(value: Any) -> str:
+    return POSITION_MAP.get(txt(value).upper(), txt(value).upper())
 
 
 def normalize_price_to_millions(series: pd.Series) -> pd.Series:
@@ -79,22 +98,86 @@ def normalize_price_to_millions(series: pd.Series) -> pd.Series:
     non_null = values.dropna()
     if non_null.empty:
         return values
-    if float(non_null.median()) > 1000:
-        return values / 1_000_000
-    return values
+    return values / 1_000_000 if float(non_null.median()) > 1000 else values
 
 
-def standardize_position(value: Any) -> str:
-    raw = txt(value).upper()
-    return POSITION_MAP.get(raw, raw)
+def read_csv(path: Path) -> list[dict[str, str]]:
+    with path.open("r", encoding="utf-8-sig", newline="") as f:
+        return list(csv.DictReader(f))
 
 
-def slug(value: Any) -> str:
-    text = txt(value)
-    text = unicodedata.normalize("NFKD", text)
-    text = text.encode("ascii", "ignore").decode("ascii").lower()
-    text = re.sub(r"[^a-z0-9]+", "_", text)
-    return re.sub(r"_+", "_", text).strip("_")
+def write_csv(path: Path, fieldnames: list[str], rows: list[dict[str, Any]]) -> None:
+    with path.open("w", encoding="utf-8-sig", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(rows)
+
+
+def round_for_match_id(match_id: Any) -> int:
+    mid = int(txt(match_id) or "0")
+    if 1 <= mid <= 24:
+        return 1
+    if 25 <= mid <= 48:
+        return 2
+    if 49 <= mid <= 72:
+        return 3
+    return 0
+
+
+def parse_kickoff_dk(value: Any) -> datetime | None:
+    raw = txt(value)
+    if not raw:
+        return None
+    for fmt_str in ["%Y-%m-%d %H:%M", "%Y-%m-%dT%H:%M:%S"]:
+        try:
+            return datetime.strptime(raw, fmt_str).replace(tzinfo=DK_TZ)
+        except ValueError:
+            continue
+    return None
+
+
+def get_current_target_round(now: datetime | None = None) -> dict[str, Any]:
+    fixtures = read_csv(FIXTURES_PATH)
+    current = now.astimezone(DK_TZ) if now else datetime.now(DK_TZ)
+    by_round: dict[int, list[dict[str, Any]]] = {1: [], 2: [], 3: []}
+    for row in fixtures:
+        rnd = int(row.get("round") or round_for_match_id(row.get("match_id")))
+        kickoff = parse_kickoff_dk(row.get("kickoff_dk"))
+        if rnd in by_round and kickoff is not None:
+            by_round[rnd].append({"row": row, "kickoff": kickoff})
+
+    target_round: int | None = None
+    remaining: list[dict[str, Any]] = []
+    for rnd in [1, 2, 3]:
+        future = [item for item in by_round[rnd] if item["kickoff"] > current]
+        if future:
+            target_round = rnd
+            remaining = future
+            break
+
+    if target_round is None:
+        return {
+            "generated_at": datetime.now(DK_TZ).isoformat(timespec="seconds"),
+            "current_time_dk": current.isoformat(timespec="seconds"),
+            "target_round": "",
+            "target_round_label": "knockout_next",
+            "next_round_display_name": "Næste runde",
+            "remaining_matches_in_target_round": 0,
+            "first_kickoff_in_target_round": "",
+            "last_kickoff_in_target_round": "",
+        }
+
+    kickoffs = sorted(item["kickoff"] for item in remaining)
+    return {
+        "generated_at": datetime.now(DK_TZ).isoformat(timespec="seconds"),
+        "current_time_dk": current.isoformat(timespec="seconds"),
+        "target_round": target_round,
+        "target_round_label": f"runde {target_round}",
+        "next_round_display_name": f"Næste runde (runde {target_round})",
+        "remaining_matches_in_target_round": len(remaining),
+        "first_kickoff_in_target_round": kickoffs[0].isoformat(timespec="minutes"),
+        "last_kickoff_in_target_round": kickoffs[-1].isoformat(timespec="minutes"),
+    }
 
 
 def load_player_pool_layer() -> pd.DataFrame:
@@ -103,8 +186,7 @@ def load_player_pool_layer() -> pd.DataFrame:
     pool = pd.DataFrame(data)
     if pool.empty:
         return pd.DataFrame(columns=["player_id"])
-
-    keep_cols = [
+    keep = [
         "player_id",
         "conditional_start_prob",
         "availability_prob",
@@ -113,33 +195,18 @@ def load_player_pool_layer() -> pd.DataFrame:
         "start_status",
         "start_prob",
     ]
-    existing = [col for col in keep_cols if col in pool.columns]
-    out = pool[existing].copy()
-    out = out.drop_duplicates(subset=["player_id"], keep="first")
-    return out
-
-
-def load_ev_impact() -> pd.DataFrame:
-    if not EV_IMPACT_PATH.exists():
-        return pd.DataFrame(columns=["player_id", "ev_diff", "ev_diff_pct"])
-    impact = pd.read_csv(EV_IMPACT_PATH)
-    impact["ev_diff"] = pd.to_numeric(impact.get("ev_diff", 0.0), errors="coerce").fillna(0.0)
-    impact["ev_diff_pct"] = pd.to_numeric(impact.get("ev_diff_pct", 0.0), errors="coerce").fillna(0.0)
-    return impact[["player_id", "ev_diff", "ev_diff_pct"]].drop_duplicates(subset=["player_id"], keep="first")
+    existing = [col for col in keep if col in pool.columns]
+    return pool[existing].drop_duplicates(subset=["player_id"], keep="first")
 
 
 def load_team_market_scores() -> pd.DataFrame:
     rows: list[dict[str, Any]] = []
     if TEAM_MARKET_CSV_PATH.exists():
-        with TEAM_MARKET_CSV_PATH.open(encoding="utf-8-sig", newline="") as f:
-            rows = list(csv.DictReader(f))
+        rows = read_csv(TEAM_MARKET_CSV_PATH)
     elif TEAM_MARKET_JSON_PATH.exists():
-        with TEAM_MARKET_JSON_PATH.open(encoding="utf-8-sig") as f:
-            rows = json.load(f)
-
+        rows = json.loads(TEAM_MARKET_JSON_PATH.read_text(encoding="utf-8-sig"))
     if not rows:
-        return pd.DataFrame(columns=["team_id", "team_long_run_score", "team_market_score", "team_attack_score"])
-
+        return pd.DataFrame(columns=["team_id", "team_long_run_score", "team_market_score", "team_attack_score", "team_group_stage_score"])
     market = pd.DataFrame(rows)
     market["team_id"] = market["team_id"].astype(str).str.strip().str.upper()
     for col in ["team_long_run_score", "team_market_score", "team_attack_score", "team_group_stage_score"]:
@@ -149,40 +216,126 @@ def load_team_market_scores() -> pd.DataFrame:
     return market[["team_id", "team_long_run_score", "team_market_score", "team_attack_score", "team_group_stage_score"]]
 
 
-def load_clean_sheet_team_scores() -> pd.DataFrame:
-    if not FIXTURE_MULTIPLIERS_PATH.exists():
-        return pd.DataFrame(columns=["team_id", "avg_clean_sheet_multiplier", "max_clean_sheet_multiplier"])
+def load_manual_overrides() -> pd.DataFrame:
+    columns = [
+        "player_name",
+        "team_id",
+        "manual_status",
+        "manual_start_status",
+        "manual_captain_status",
+        "manual_role_note",
+        "manual_set_piece_role",
+        "manual_captain_note",
+        "manual_note",
+    ]
+    if not MANUAL_OVERRIDES_PATH.exists():
+        return pd.DataFrame(columns=columns)
+    overrides = pd.DataFrame(read_csv(MANUAL_OVERRIDES_PATH))
+    if overrides.empty:
+        return pd.DataFrame(columns=columns)
+    for col in columns:
+        if col not in overrides.columns:
+            overrides[col] = ""
+    overrides["player_name"] = overrides["player_name"].astype(str).str.strip()
+    overrides["team_id"] = overrides["team_id"].astype(str).str.strip().str.upper()
+    for col in ["manual_status", "manual_start_status", "manual_captain_status"]:
+        overrides[col] = overrides[col].astype(str).str.strip().str.lower()
+    return overrides[columns].drop_duplicates(subset=["player_name", "team_id"], keep="last")
 
-    rows = []
-    with FIXTURE_MULTIPLIERS_PATH.open(encoding="utf-8-sig", newline="") as f:
-        for row in csv.DictReader(f):
-            rows.append({"team_id": txt(row.get("home")).upper(), "cs_mult": to_float(row.get("home_clean_sheet_multiplier"), 1.0)})
-            rows.append({"team_id": txt(row.get("away")).upper(), "cs_mult": to_float(row.get("away_clean_sheet_multiplier"), 1.0)})
 
-    df = pd.DataFrame(rows)
-    if df.empty:
-        return pd.DataFrame(columns=["team_id", "avg_clean_sheet_multiplier", "max_clean_sheet_multiplier"])
-    grouped = df.groupby("team_id")["cs_mult"].agg(["mean", "max"]).reset_index()
-    grouped = grouped.rename(columns={"mean": "avg_clean_sheet_multiplier", "max": "max_clean_sheet_multiplier"})
-    return grouped
+def load_fixture_lookup() -> dict[tuple[str, str, str], dict[str, Any]]:
+    lookup: dict[tuple[str, str, str], dict[str, Any]] = {}
+    for row in read_csv(FIXTURE_MULTIPLIERS_PATH):
+        match_id = txt(row.get("match_id"))
+        rnd = round_for_match_id(match_id)
+        home = txt(row.get("home")).upper()
+        away = txt(row.get("away")).upper()
+        kickoff = txt(row.get("kickoff_dk"))
+        lookup[(home, away, kickoff)] = {
+            "match_id": match_id,
+            "round": rnd,
+            "opponent": away,
+            "win_prob": to_float(row.get("home_win_prob_fair")),
+            "goal_multiplier": to_float(row.get("home_goal_multiplier"), 1.0),
+            "assist_multiplier": to_float(row.get("home_assist_multiplier"), 1.0),
+            "clean_sheet_prob": to_float(row.get("home_clean_sheet_prob_fair")),
+            "clean_sheet_multiplier": to_float(row.get("home_clean_sheet_multiplier"), 1.0),
+        }
+        lookup[(away, home, kickoff)] = {
+            "match_id": match_id,
+            "round": rnd,
+            "opponent": home,
+            "win_prob": to_float(row.get("away_win_prob_fair")),
+            "goal_multiplier": to_float(row.get("away_goal_multiplier"), 1.0),
+            "assist_multiplier": to_float(row.get("away_assist_multiplier"), 1.0),
+            "clean_sheet_prob": to_float(row.get("away_clean_sheet_prob_fair")),
+            "clean_sheet_multiplier": to_float(row.get("away_clean_sheet_multiplier"), 1.0),
+        }
+    return lookup
 
 
-def apply_light_optimizer_adjustments(df: pd.DataFrame) -> pd.DataFrame:
-    work = df.copy()
-    work["base_ev"] = pd.to_numeric(work["optimizer_ev"], errors="coerce").fillna(0.0)
-    work["start_prob"] = pd.to_numeric(work["start_prob"], errors="coerce").fillna(0.48).clip(0.0, 1.0)
-    work["minute_share"] = pd.to_numeric(work.get("minute_share", 0.0), errors="coerce").fillna(0.0)
+def team_round_win_probs() -> dict[str, dict[int, float]]:
+    wins: dict[str, dict[int, float]] = {}
+    for row in read_csv(MATCH_ODDS_PATH):
+        match_id = txt(row.get("match_id"))
+        rnd = round_for_match_id(match_id)
+        home = txt(row.get("home")).upper()
+        away = txt(row.get("away")).upper()
+        wins.setdefault(home, {})[rnd] = to_float(row.get("home_win_prob_fair"))
+        wins.setdefault(away, {})[rnd] = to_float(row.get("away_win_prob_fair"))
+    return wins
 
-    reliability = 0.96 + 0.025 * work["start_prob"] + 0.015 * (work["minute_share"] / 0.09).clip(0.0, 1.0)
-    work["balanced_score"] = (work["base_ev"] * reliability).clip(lower=0.0)
 
-    mid_mask = (work["position"] == "MID") & (work["balanced_score"] >= 1.0) & (work["start_prob"] >= 0.45)
-    work.loc[mid_mask, "balanced_score"] = work.loc[mid_mask, "balanced_score"] + 0.08
+def add_player_round_context(players: pd.DataFrame) -> pd.DataFrame:
+    lookup = load_fixture_lookup()
+    win_probs = team_round_win_probs()
+    work = players.copy()
+    for rnd in [1, 2, 3]:
+        for col in [
+            "ev",
+            "captain_growth",
+            "win_prob",
+            "goal_multiplier",
+            "assist_multiplier",
+            "clean_sheet_prob",
+            "clean_sheet_multiplier",
+        ]:
+            work[f"round{rnd}_{col}"] = 0.0
+        work[f"round{rnd}_opponent"] = ""
+        work[f"round{rnd}_match_id"] = ""
 
-    team_total = work.groupby("team_id")["balanced_score"].transform("sum")
-    team_share = (work["balanced_score"] / team_total).fillna(0.0)
-    penalty = (1.0 - 0.8 * (team_share - 0.14).clip(lower=0.0)).clip(lower=0.88, upper=1.0)
-    work["balanced_score"] = work["balanced_score"] * penalty
+    for idx, row in work.iterrows():
+        team = txt(row.get("team_id")).upper()
+        for match_no in [1, 2, 3]:
+            opponent = txt(row.get(f"match_{match_no}_opponent_team")).upper()
+            kickoff = txt(row.get(f"match_{match_no}_kickoff"))
+            context = lookup.get((team, opponent, kickoff))
+            if not context:
+                continue
+            rnd = int(context["round"])
+            if rnd not in [1, 2, 3]:
+                continue
+            work.at[idx, f"round{rnd}_ev"] += to_float(row.get(f"match_{match_no}_weighted_match_ev"))
+            work.at[idx, f"round{rnd}_captain_growth"] += to_float(row.get(f"match_{match_no}_total_ev_next_match"))
+            work.at[idx, f"round{rnd}_opponent"] = txt(context["opponent"])
+            work.at[idx, f"round{rnd}_match_id"] = txt(context["match_id"])
+            work.at[idx, f"round{rnd}_win_prob"] = float(context["win_prob"])
+            work.at[idx, f"round{rnd}_goal_multiplier"] = float(context["goal_multiplier"])
+            work.at[idx, f"round{rnd}_assist_multiplier"] = float(context["assist_multiplier"])
+            work.at[idx, f"round{rnd}_clean_sheet_prob"] = float(context["clean_sheet_prob"])
+            work.at[idx, f"round{rnd}_clean_sheet_multiplier"] = float(context["clean_sheet_multiplier"])
+
+        p6 = win_probs.get(team, {}).get(1, 0.0) * win_probs.get(team, {}).get(2, 0.0)
+        work.at[idx, "p_6_points_after_2"] = p6
+        if p6 >= 0.55:
+            rotation_factor = 0.62
+        elif p6 >= 0.40:
+            rotation_factor = 0.74
+        elif p6 >= 0.25:
+            rotation_factor = 0.86
+        else:
+            rotation_factor = 1.0
+        work.at[idx, "round3_rotation_factor"] = rotation_factor
     return work
 
 
@@ -208,62 +361,102 @@ def load_players() -> pd.DataFrame:
     players["availability_prob"] = pd.to_numeric(players.get("availability_prob"), errors="coerce").fillna(1.0).clip(0.0, 1.0)
     players["availability_risk"] = players.get("availability_risk", "unknown").fillna("unknown").astype(str)
 
-    players = players.merge(load_ev_impact(), on="player_id", how="left")
-    players["ev_diff"] = pd.to_numeric(players.get("ev_diff"), errors="coerce").fillna(0.0)
-    players["ev_diff_pct"] = pd.to_numeric(players.get("ev_diff_pct"), errors="coerce").fillna(0.0)
-
-    players = players.merge(load_clean_sheet_team_scores(), on="team_id", how="left")
-    players["avg_clean_sheet_multiplier"] = pd.to_numeric(players.get("avg_clean_sheet_multiplier"), errors="coerce").fillna(1.0)
-    players["max_clean_sheet_multiplier"] = pd.to_numeric(players.get("max_clean_sheet_multiplier"), errors="coerce").fillna(1.0)
-
     players = players.merge(load_team_market_scores(), on="team_id", how="left")
     for col in ["team_long_run_score", "team_market_score", "team_attack_score", "team_group_stage_score"]:
         players[col] = pd.to_numeric(players.get(col), errors="coerce").fillna(0.0)
 
+    players = players.merge(load_manual_overrides(), on=["player_name", "team_id"], how="left")
+    for col in [
+        "manual_status",
+        "manual_start_status",
+        "manual_captain_status",
+        "manual_role_note",
+        "manual_set_piece_role",
+        "manual_captain_note",
+        "manual_note",
+    ]:
+        players[col] = players.get(col, "").fillna("").astype(str)
+    players["manual_avoid"] = (
+        players["manual_status"].str.lower().eq("avoid")
+        | players["manual_start_status"].str.lower().eq("avoid")
+    )
+
     players = players.dropna(subset=["player_id", "player_name", "team_id", "position", "price_m"]).copy()
     players = players[players["position"].isin(["GK", "DEF", "MID", "FWD"])].copy()
     players = players[players["price_m"] > 0].copy()
-    players = apply_light_optimizer_adjustments(players)
-    return players.reset_index(drop=True)
+    players = add_player_round_context(players)
+    return add_strategy_scores(players.reset_index(drop=True))
+
+
+def starter_component(work: pd.DataFrame) -> pd.Series:
+    return (
+        0.45 * (work["conditional_start_prob"] >= 0.85).astype(float)
+        + 0.18 * ((work["conditional_start_prob"] >= 0.75) & (work["conditional_start_prob"] < 0.85)).astype(float)
+        - 0.65 * (work["conditional_start_prob"] < 0.70).astype(float)
+        - 0.28 * ((work["conditional_start_prob"] >= 0.70) & (work["conditional_start_prob"] < 0.75)).astype(float)
+        - 0.85 * work["availability_risk"].eq("high_risk").astype(float)
+        - 0.08 * work["availability_risk"].eq("medium_risk").astype(float)
+    )
+
+
+def round_fixture_bonus(work: pd.DataFrame, rnd: int) -> pd.Series:
+    offensive = work["position"].isin(["MID", "FWD"]).astype(float)
+    defensive = work["position"].isin(["GK", "DEF"]).astype(float)
+    favorite = (
+        0.45 * (work[f"round{rnd}_win_prob"] >= 0.75).astype(float)
+        + 0.27 * ((work[f"round{rnd}_win_prob"] >= 0.65) & (work[f"round{rnd}_win_prob"] < 0.75)).astype(float)
+        + 0.10 * ((work[f"round{rnd}_win_prob"] >= 0.60) & (work[f"round{rnd}_win_prob"] < 0.65)).astype(float)
+        - 0.10 * (work[f"round{rnd}_win_prob"] < 0.50).astype(float)
+    )
+    attack = (
+        (work[f"round{rnd}_goal_multiplier"] - 1.0).clip(lower=0.0) * 0.90
+        + (work[f"round{rnd}_assist_multiplier"] - 1.0).clip(lower=0.0) * 0.55
+    ) * offensive
+    clean = (work[f"round{rnd}_clean_sheet_multiplier"] - 1.0).clip(lower=0.0) * 0.95 * defensive
+    return favorite + attack + clean
 
 
 def add_strategy_scores(players: pd.DataFrame) -> pd.DataFrame:
     work = players.copy()
-    base = work["balanced_score"]
+    start = starter_component(work)
+    target_round = int(get_current_target_round().get("target_round") or 1)
 
-    safe_bonus = 0.18 * ((work["conditional_start_prob"] >= 0.85) & work["availability_risk"].isin(["low_risk", "medium_risk"])).astype(float)
-    safe_penalty = 0.24 * (work["availability_risk"].eq("high_risk")).astype(float)
-    safe_penalty += 0.18 * (work["conditional_start_prob"] < 0.65).astype(float)
-    cheap_reserve_penalty = 0.08 * ((work["price_m"] <= 2.5) & (work["balanced_score"] < 1.0)).astype(float)
-    work["score_safe_starters"] = (base + safe_bonus - safe_penalty - cheap_reserve_penalty).clip(lower=0.0)
-
-    offensive = work["position"].isin(["MID", "FWD"]).astype(float)
-    attack_bonus = work["ev_diff"].clip(lower=0.0) * (0.70 + 0.45 * offensive)
-    attack_bonus += 0.12 * work["team_attack_score"] * offensive
-    attack_penalty = (-work["ev_diff"].clip(upper=0.0)) * (0.20 + 0.25 * offensive)
-    work["score_fixture_attack"] = (base + attack_bonus - attack_penalty).clip(lower=0.0)
-
-    defensive = work["position"].isin(["GK", "DEF"]).astype(float)
-    defensive_clean_sheet_bonus = (
-        (work["avg_clean_sheet_multiplier"] - 1.0).clip(lower=0.0) * 2.20
-        + (work["max_clean_sheet_multiplier"] - 1.0).clip(lower=0.0) * 0.70
-    )
-    cs_start_bonus = 0.10 * work["conditional_start_prob"]
-    cs_risk_penalty = (
-        0.18 * work["availability_risk"].eq("high_risk").astype(float)
-        + 0.10 * (work["conditional_start_prob"] < 0.65).astype(float)
-    )
-    weak_cs_penalty = (1.0 - work["avg_clean_sheet_multiplier"]).clip(lower=0.0) * 0.60
-    work["score_clean_sheet_stack"] = (
-        base
-        + defensive * (0.35 * defensive_clean_sheet_bonus + cs_start_bonus - cs_risk_penalty - weak_cs_penalty)
+    work["score_next_round"] = (
+        2.20 * work[f"round{target_round}_ev"]
+        + 0.82 * work["optimizer_ev"]
+        + round_fixture_bonus(work, target_round)
+        + start
     ).clip(lower=0.0)
 
-    long_bonus = 0.45 * work["team_long_run_score"] + 0.18 * work["team_market_score"]
-    risk_penalty = 0.16 * work["availability_risk"].eq("high_risk").astype(float)
-    work["score_long_run_value"] = (base + long_bonus - risk_penalty).clip(lower=0.0)
+    round12_value = 1.05 * work["round1_ev"] + 1.00 * work["round2_ev"]
+    one_round_spike_penalty = (work[["round1_ev", "round2_ev"]].max(axis=1) - work[["round1_ev", "round2_ev"]].min(axis=1)).clip(lower=0.0) * 0.22
+    work["score_round1_2"] = (
+        1.85 * round12_value
+        + 0.60 * work["optimizer_ev"]
+        + 0.55 * (round_fixture_bonus(work, 1) + round_fixture_bonus(work, 2))
+        + start
+        - one_round_spike_penalty
+    ).clip(lower=0.0)
 
-    work["score_balanced"] = base
+    group_value = work["round1_ev"] + work["round2_ev"] + work["round3_ev"] * work["round3_rotation_factor"]
+    rotation_note_penalty = (1.0 - work["round3_rotation_factor"]) * work["round3_ev"] * 0.30
+    work["score_group_stage"] = (
+        1.75 * group_value
+        + 0.70 * work["optimizer_ev"]
+        + 0.35 * (round_fixture_bonus(work, 1) + round_fixture_bonus(work, 2) + round_fixture_bonus(work, 3))
+        + start
+        - rotation_note_penalty
+    ).clip(lower=0.0)
+
+    tournament_strength = (0.75 * work["team_long_run_score"] + 0.25 * work["team_market_score"]).clip(lower=0.0)
+    weak_team_penalty = 0.35 * (tournament_strength < 0.18).astype(float)
+    work["score_long_run"] = (
+        1.20 * work["optimizer_ev"]
+        + 1.35 * tournament_strength
+        + 0.80 * start
+        - weak_team_penalty
+    ).clip(lower=0.0)
+
     return work
 
 
@@ -275,10 +468,25 @@ def solve_formation(players: pd.DataFrame, strategy: str, formation_name: str, f
     score_col = strategy_score_column(strategy)
     problem = pulp.LpProblem(f"{strategy}_{formation_name.replace('-', '_')}", pulp.LpMaximize)
     variables = {idx: pulp.LpVariable(f"pick_{idx}", lowBound=0, upBound=1, cat="Binary") for idx in players.index}
+    score_expr = pulp.lpSum(float(players.loc[idx, score_col]) * variables[idx] for idx in players.index)
+    total_price_expr = pulp.lpSum(float(players.loc[idx, "price_m"]) * variables[idx] for idx in players.index)
+    underuse = pulp.LpVariable(f"{strategy}_budget_underuse", lowBound=0, cat="Continuous")
 
-    problem += pulp.lpSum(float(players.loc[idx, score_col]) * variables[idx] for idx in players.index)
+    floor = 49.5 if strategy == "next_round" else 49.0
+    penalty = 1.10 if strategy == "next_round" else 0.55
+    problem += score_expr + 0.025 * total_price_expr - penalty * underuse
+    problem += underuse >= floor - total_price_expr
     problem += pulp.lpSum(variables[idx] for idx in players.index) == SQUAD_SIZE
-    problem += pulp.lpSum(float(players.loc[idx, "price_m"]) * variables[idx] for idx in players.index) <= BUDGET_M
+    problem += total_price_expr <= BUDGET_M
+    problem += pulp.lpSum(
+        variables[idx] for idx in players.index if txt(players.loc[idx, "availability_risk"]) == "high_risk"
+    ) <= (1 if strategy == "next_round" else 2)
+    problem += pulp.lpSum(float(players.loc[idx, "conditional_start_prob"]) * variables[idx] for idx in players.index) >= (0.84 if strategy == "next_round" else 0.80) * SQUAD_SIZE
+    min_cond = 0.70 if strategy == "next_round" else 0.65
+    for idx in players.index[players["conditional_start_prob"] < min_cond].tolist():
+        problem += variables[idx] == 0
+    for idx in players.index[players["manual_avoid"]].tolist():
+        problem += variables[idx] == 0
 
     for pos, count in formation.items():
         indices = players.index[players["position"] == pos].tolist()
@@ -287,8 +495,7 @@ def solve_formation(players: pd.DataFrame, strategy: str, formation_name: str, f
     for team_id, sub in players.groupby("team_id"):
         problem += pulp.lpSum(variables[idx] for idx in sub.index.tolist()) <= MAX_PER_TEAM
 
-    solver = pulp.PULP_CBC_CMD(msg=False)
-    problem.solve(solver)
+    problem.solve(pulp.PULP_CBC_CMD(msg=False))
     if pulp.LpStatus[problem.status] != "Optimal":
         return pd.DataFrame()
 
@@ -297,14 +504,133 @@ def solve_formation(players: pd.DataFrame, strategy: str, formation_name: str, f
     squad["strategy"] = strategy
     squad["selected_formation"] = formation_name
     squad["strategy_score"] = squad[score_col]
-    squad = squad.sort_values(["position", "strategy_score", "optimizer_ev"], ascending=[True, False, False]).reset_index(drop=True)
-    return squad
+    return squad.sort_values(["position", "strategy_score", "optimizer_ev"], ascending=[True, False, False]).reset_index(drop=True)
 
 
-def squad_summary(strategy: str, squad: pd.DataFrame) -> dict[str, Any]:
+def captain_score_reason_v2(player: pd.Series, target_round: int, growth_col: str) -> str:
+    bits = [f"kaptajnscore baseret paa runde {target_round}-vaekst {fmt(to_float(player.get(growth_col)), 3)}"]
+    cond = to_float(player.get("conditional_start_prob"))
+    risk = txt(player.get("availability_risk"))
+    role = txt(player.get("manual_set_piece_role")).lower()
+    position = txt(player.get("position")).upper()
+    if "penalty" in role or "straffe" in role:
+        bits.append("penalty/manual doedbold bonus")
+    elif role:
+        bits.append("manual doedbold/rolle bonus")
+    else:
+        bits.append("ingen registreret straffe-/doedboldsrolle")
+    if cond >= 0.90:
+        bits.append("hoej startsikkerhed")
+    elif cond < LOW_CONDITIONAL_THRESHOLD:
+        bits.append("straf for lav conditional start")
+    elif cond < 0.85:
+        bits.append("mild straf for usikker start")
+    if risk == "high_risk":
+        bits.append("straf for high_risk")
+    elif risk == "medium_risk":
+        bits.append("mild risk-straf")
+    if position == "FWD":
+        bits.append("maalprofil-proxy: angriber")
+    elif position == "MID":
+        bits.append("maalprofil-proxy: midtbane; TODO national_goal_rate/recent_goal_rate")
+    else:
+        bits.append("lavere maalprofil-proxy for position")
+    return "; ".join(bits)
+
+
+def add_captain_scores_v2(squad: pd.DataFrame, target_round: int) -> pd.DataFrame:
+    work = squad.copy()
+    growth_col = f"round{target_round}_captain_growth"
+    if growth_col not in work.columns:
+        growth_col = f"round{target_round}_ev"
+    growth = pd.to_numeric(work.get(growth_col, 0.0), errors="coerce").fillna(0.0)
+    cond = pd.to_numeric(work.get("conditional_start_prob", 0.0), errors="coerce").fillna(0.0).clip(0.0, 1.0)
+    win = pd.to_numeric(work.get(f"round{target_round}_win_prob", 0.0), errors="coerce").fillna(0.0).clip(0.0, 1.0)
+    risk = work.get("availability_risk", "").fillna("").astype(str)
+    role = work.get("manual_set_piece_role", "").fillna("").astype(str).str.lower()
+    position = work.get("position", "").fillna("").astype(str).str.upper()
+    start_penalty = (
+        1.55 * (cond < 0.70).astype(float)
+        + 0.95 * ((cond >= 0.70) & (cond < 0.75)).astype(float)
+        + 0.45 * ((cond >= 0.75) & (cond < 0.85)).astype(float)
+    )
+    risk_penalty = 1.15 * risk.eq("high_risk").astype(float) + 0.22 * risk.eq("medium_risk").astype(float)
+    set_piece_bonus = (
+        0.75 * role.str.contains("penalty|straffe", regex=True).astype(float)
+        + 0.28 * role.str.contains("direct_fk|corner|indirect|fk|free", regex=True).astype(float)
+    )
+    scorer_proxy = (
+        0.32 * position.eq("FWD").astype(float)
+        + 0.10 * position.eq("MID").astype(float)
+        - 0.20 * position.isin(["GK", "DEF"]).astype(float)
+    )
+    favorite_bonus = (
+        0.28 * (win >= 0.70).astype(float)
+        + 0.14 * ((win >= 0.60) & (win < 0.70)).astype(float)
+        - 0.12 * (win < 0.50).astype(float)
+    )
+    captain_blocked = (
+        work.get("manual_avoid", False).astype(bool)
+        | work.get("manual_status", "").fillna("").astype(str).str.lower().eq("avoid")
+        | work.get("manual_start_status", "").fillna("").astype(str).str.lower().eq("avoid")
+        | work.get("manual_captain_status", "").fillna("").astype(str).str.lower().eq("avoid")
+    )
+    work["captain_eligible"] = ~captain_blocked
+    work["captain_score"] = growth + set_piece_bonus + scorer_proxy + favorite_bonus - start_penalty - risk_penalty
+    work.loc[~work["captain_eligible"], "captain_score"] = -9999.0
+    work["captain_score_reason"] = work.apply(lambda row: captain_score_reason_v2(row, target_round, growth_col), axis=1)
+    return work
+
+
+def captain_for_squad_v2(squad: pd.DataFrame, target_round: int) -> tuple[dict[str, Any], pd.DataFrame]:
+    if squad.empty:
+        return {"recommended_captain": "", "captain_expected_growth": 0.0, "captain_round": target_round, "captain_reason": ""}, squad
+    squad = add_captain_scores_v2(squad, target_round)
+    candidates = squad[squad["captain_eligible"]].copy()
+    if candidates.empty:
+        return {"recommended_captain": "", "captain_expected_growth": 0.0, "captain_round": target_round, "captain_reason": "Ingen kaptajn efter manual captain-filter"}, squad
+    col = f"round{target_round}_captain_growth"
+    if col not in squad.columns:
+        col = f"round{target_round}_ev"
+    player = candidates.sort_values(["captain_score", col, "optimizer_ev"], ascending=[False, False, False]).iloc[0]
+    return {
+        "recommended_captain": txt(player.get("player_name")),
+        "captain_expected_growth": round(float(player.get(col, 0.0)), 6),
+        "captain_round": target_round,
+        "captain_reason": txt(player.get("captain_score_reason")),
+        "captain_score": round(float(player.get("captain_score", 0.0)), 6),
+    }, squad
+
+
+def captain_for_squad(squad: pd.DataFrame, target_round: int) -> dict[str, Any]:
+    if squad.empty:
+        return {"recommended_captain": "", "captain_expected_growth": 0.0, "captain_round": target_round, "captain_reason": ""}
+    squad = squad[~squad.get("manual_avoid", False).astype(bool)].copy()
+    if squad.empty:
+        return {"recommended_captain": "", "captain_expected_growth": 0.0, "captain_round": target_round, "captain_reason": "Ingen kaptajn efter manual avoid-filter"}
+    col = f"round{target_round}_captain_growth"
+    if col not in squad.columns:
+        col = f"round{target_round}_ev"
+    player = squad.sort_values([col, "optimizer_ev"], ascending=[False, False]).iloc[0]
+    return {
+        "recommended_captain": txt(player.get("player_name")),
+        "captain_expected_growth": round(float(player.get(col, 0.0)), 6),
+        "captain_round": target_round,
+        "captain_reason": f"Højeste forventede vækst i runde {target_round}",
+    }
+
+
+def squad_summary(strategy: str, squad: pd.DataFrame, context: dict[str, Any]) -> dict[str, Any]:
     teams = squad["team_id"].value_counts().sort_index()
+    target_round = int(context.get("target_round") or 1)
+    captain, scored_squad = captain_for_squad_v2(squad, target_round)
+    for col in ["captain_eligible", "captain_score", "captain_score_reason"]:
+        if col in scored_squad.columns:
+            squad[col] = scored_squad[col]
+    display_name = context["next_round_display_name"] if strategy == "next_round" else DISPLAY_NAMES_DA[strategy]
     return {
         "strategy": strategy,
+        "display_name_da": display_name,
         "formation": txt(squad["selected_formation"].iloc[0]) if not squad.empty else "",
         "total_score": round(float(squad["strategy_score"].sum()), 6) if not squad.empty else 0.0,
         "total_ev": round(float(squad["optimizer_ev"].sum()), 6) if not squad.empty else 0.0,
@@ -314,6 +640,7 @@ def squad_summary(strategy: str, squad: pd.DataFrame) -> dict[str, Any]:
         "high_risk_players": int((squad["availability_risk"] == "high_risk").sum()) if not squad.empty else 0,
         "teams_summary": "; ".join(f"{team}:{count}" for team, count in teams.items()),
         "player_names": "; ".join(squad["player_name"].astype(str).tolist()),
+        **captain,
     }
 
 
@@ -330,38 +657,124 @@ def squad_records(squad: pd.DataFrame) -> list[dict[str, Any]]:
         "conditional_start_prob",
         "availability_prob",
         "availability_risk",
+        "manual_status",
+        "manual_start_status",
+        "manual_captain_status",
+        "manual_role_note",
+        "manual_set_piece_role",
+        "manual_captain_note",
+        "manual_note",
+        "manual_avoid",
+        "captain_eligible",
+        "captain_score",
+        "captain_score_reason",
         "optimizer_ev",
         "weighted_group_stage_ev",
-        "ev_diff",
-        "avg_clean_sheet_multiplier",
-        "team_long_run_score",
         "strategy_score",
         "selected_formation",
+        "p_6_points_after_2",
+        "round3_rotation_factor",
     ]
+    for rnd in [1, 2, 3]:
+        keep.extend([
+            f"round{rnd}_ev",
+            f"round{rnd}_captain_growth",
+            f"round{rnd}_opponent",
+            f"round{rnd}_win_prob",
+            f"round{rnd}_goal_multiplier",
+            f"round{rnd}_assist_multiplier",
+            f"round{rnd}_clean_sheet_prob",
+            f"round{rnd}_clean_sheet_multiplier",
+        ])
     existing = [col for col in keep if col in squad.columns]
-    records = squad[existing].copy()
-    return json.loads(records.to_json(orient="records", force_ascii=False))
+    return json.loads(squad[existing].to_json(orient="records", force_ascii=False))
+
+
+def ensure_templates() -> None:
+    templates = [
+        (CONFIRMED_LINEUPS_PATH, ["round", "match_id", "team_id", "player_name", "lineup_status", "source", "note"]),
+        (CURRENT_SQUAD_PATH, ["player_id", "player_name", "team_id", "position", "current_value", "owned_since_round"]),
+        (MANUAL_OVERRIDES_PATH, ["player_name", "team_id", "manual_status", "manual_start_status", "manual_captain_status", "manual_role_note", "manual_set_piece_role", "manual_captain_note", "manual_note"]),
+    ]
+    for path, fields in templates:
+        if not path.exists():
+            write_csv(path, fields, [])
+
+
+def write_strategy_metadata(context: dict[str, Any]) -> None:
+    display = {
+        "next_round": context["next_round_display_name"],
+        "round1_2": DISPLAY_NAMES_DA["round1_2"],
+        "group_stage": DISPLAY_NAMES_DA["group_stage"],
+        "long_run": DISPLAY_NAMES_DA["long_run"],
+    }
+    OUT_CONTEXT_JSON.write_text(json.dumps(context, ensure_ascii=False, indent=2), encoding="utf-8")
+    OUT_DISPLAY_NAMES_JSON.write_text(json.dumps(display, ensure_ascii=False, indent=2), encoding="utf-8")
+    lines = [
+        "# Strategy Cleanup Report",
+        "",
+        "## Brugerrettede Strategier",
+        "",
+        f"- next_round: {display['next_round']}",
+        f"- round1_2: {display['round1_2']}",
+        f"- group_stage: {display['group_stage']}",
+        f"- long_run: {display['long_run']}",
+        "",
+        "## Mapping",
+        "",
+        "- round1_safe_favorite er erstattet af next_round.",
+        "- safe_starters er ikke længere en brugerrettet hovedstrategi; starter-sikkerhed indgår i alle strategier.",
+        "- fixture_attack og clean_sheet_stack indgår som komponenter via kamp-multipliers og clean sheet-data.",
+        "- balanced/debug-output er ikke længere primært strategi-output.",
+        "",
+        "## Dynamisk Næste Runde",
+        "",
+        f"- target_round: {context.get('target_round')}",
+        f"- display: {context.get('next_round_display_name')}",
+        "- target_round beregnes som laveste grupperunde med mindst én kamp, der endnu ikke er startet.",
+        "",
+        "## Kaptajn",
+        "",
+        "- Kaptajn vælges pr. strategi som spilleren med højeste forventede vækst i target_round.",
+        "- Kaptajn-output skrives i strategy_comparison_report.csv og optimal_squads_by_strategy.json.",
+        "",
+        "## Forberedte Inputlag",
+        "",
+        "- data/confirmed_lineups.csv er oprettet som struktur til bekræftede lineups.",
+        "- data/current_squad.csv er oprettet som struktur til transfergebyr efter runde 1.",
+        "- data/manual_player_overrides.csv er oprettet som struktur til manuelle locks/check/avoid.",
+        "",
+        "## TODO",
+        "",
+        "- UI-visning af strategiknapper og kaptajnmarkering er ikke ændret i denne opgave.",
+        "- Transfergebyroptimering fra aktuel trup er forberedt som data-struktur, men ikke fuldt implementeret.",
+        "- confirmed_lineups påvirker endnu ikke optimizer direkte; strukturen er klar til integration.",
+    ]
+    OUT_CLEANUP_REPORT.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def main() -> int:
-    players = add_strategy_scores(load_players())
+    context = get_current_target_round()
+    ensure_templates()
+    write_strategy_metadata(context)
+    players = load_players()
     all_results: dict[str, Any] = {}
     comparison_rows: list[dict[str, Any]] = []
 
     print(f"Optimizer-pool spillere: {len(players)}")
     print(f"Budget: {BUDGET_M:.1f} mio. | Maks pr. land: {MAX_PER_TEAM}")
+    print(f"Next round: {context['next_round_display_name']}")
 
     for strategy in STRATEGIES:
         best_squad = pd.DataFrame()
         best_summary: dict[str, Any] | None = None
         formation_records: dict[str, list[dict[str, Any]]] = {}
-
         for formation_name, formation in FORMATIONS.items():
             squad = solve_formation(players, strategy, formation_name, formation)
             formation_records[formation_name] = squad_records(squad) if not squad.empty else []
             if squad.empty:
                 continue
-            summary = squad_summary(strategy, squad)
+            summary = squad_summary(strategy, squad, context)
             if best_summary is None or float(summary["total_score"]) > float(best_summary["total_score"]):
                 best_summary = summary
                 best_squad = squad.copy()
@@ -369,6 +782,7 @@ def main() -> int:
         if best_summary is None:
             best_summary = {
                 "strategy": strategy,
+                "display_name_da": DISPLAY_NAMES_DA.get(strategy, strategy),
                 "formation": "",
                 "total_score": 0.0,
                 "total_ev": 0.0,
@@ -378,6 +792,11 @@ def main() -> int:
                 "high_risk_players": 0,
                 "teams_summary": "",
                 "player_names": "",
+                "recommended_captain": "",
+                "captain_expected_growth": 0.0,
+                "captain_round": int(context.get("target_round") or 1),
+                "captain_score": 0.0,
+                "captain_reason": "",
             }
 
         comparison_rows.append(best_summary)
@@ -386,35 +805,37 @@ def main() -> int:
             "best_squad": squad_records(best_squad) if not best_squad.empty else [],
             "formations": formation_records,
         }
-
         print(
-            f"{strategy}: formation={best_summary['formation']}, "
+            f"{strategy}: {best_summary['display_name_da']} | formation={best_summary['formation']}, "
             f"pris={best_summary['total_price']:,}, score={best_summary['total_score']:.3f}, "
-            f"EV={best_summary['total_ev']:.3f}, high_risk={best_summary['high_risk_players']}"
+            f"EV={best_summary['total_ev']:.3f}, high_risk={best_summary['high_risk_players']}, "
+            f"kaptajn={best_summary['recommended_captain']}"
         )
 
-    with OUT_STRATEGIES_JSON.open("w", encoding="utf-8") as f:
-        json.dump(all_results, f, ensure_ascii=False, indent=2)
-
-    with OUT_COMPARISON_CSV.open("w", encoding="utf-8-sig", newline="") as f:
-        fieldnames = [
-            "strategy",
-            "formation",
-            "total_score",
-            "total_ev",
-            "total_price",
-            "avg_start_prob",
-            "avg_conditional_start_prob",
-            "high_risk_players",
-            "teams_summary",
-            "player_names",
-        ]
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(comparison_rows)
-
+    OUT_STRATEGIES_JSON.write_text(json.dumps(all_results, ensure_ascii=False, indent=2), encoding="utf-8")
+    fieldnames = [
+        "strategy",
+        "display_name_da",
+        "formation",
+        "total_score",
+        "total_ev",
+        "total_price",
+        "avg_start_prob",
+        "avg_conditional_start_prob",
+        "high_risk_players",
+        "teams_summary",
+        "player_names",
+        "recommended_captain",
+        "captain_expected_growth",
+        "captain_round",
+        "captain_score",
+        "captain_reason",
+    ]
+    write_csv(OUT_COMPARISON_CSV, fieldnames, comparison_rows)
     print(f"Skrevet: {OUT_STRATEGIES_JSON.relative_to(PROJECT_ROOT)}")
     print(f"Skrevet: {OUT_COMPARISON_CSV.relative_to(PROJECT_ROOT)}")
+    print(f"Skrevet: {OUT_CONTEXT_JSON.relative_to(PROJECT_ROOT)}")
+    print(f"Skrevet: {OUT_CLEANUP_REPORT.relative_to(PROJECT_ROOT)}")
     return 0
 
 

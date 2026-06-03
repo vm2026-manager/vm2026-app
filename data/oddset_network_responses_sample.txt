@@ -1,0 +1,345 @@
+
+
+===== 200 https://danskespil.dk/dli/BuildArtifacts/Styles/DanskeSpil/region-oddset.4bcadbff43.css =====
+content-type: text/css
+
+@layer components {
+  .ds-rich-text h1,
+  .ds-rich-text h2,
+  .ds-rich-text h3,
+  .ds-rich-text h4,
+  .ds-rich-text h5,
+  .ds-rich-text h6 {
+    margin: 0;
+  }
+  .ds-rich-text p {
+    margin: 0;
+  }
+  .ds-rich-text a {
+    color: currentColor;
+    text-decoration: underline;
+  }
+  .ds-rich-text a:hover {
+    text-decoration: none;
+  }
+  .ds-rich-text ul,
+  .ds-rich-text ol {
+    margin-left: -1ch;
+  }
+  .ds-rich-text ul li,
+  .ds-rich-text ol li {
+    margin-bottom: 0.5em;
+  }
+  .ds-rich-text ul {
+    list-style: disc;
+    margin-left: 3ch;
+  }
+}
+
+
+
+.theme-oddset {
+--color-black: rgb(0, 0, 0);
+--color-white: rgb(255, 255, 255);
+--color-white-opacity-0: rgba(255, 255, 255, 0);
+--color-white-opacity-100: rgba(255, 255, 255, 0.05);
+--color-white-opacity-200: rgba(255, 255, 255, 0.1);
+--color-white-opacity-300: rgba(255, 255, 255, 0.2);
+--color-white-opacity-400: rgba(255, 255, 255, 0.3);
+--color-white-opacity-500: rgba(255, 255, 255, 0.4);
+--color-white-opacity-600: rgba(255, 255, 255, 0.5);
+--color-white-opacity-700: rgba(255, 255, 255, 0.6);
+--color-white-opacity-800: rgba(255, 255, 255, 0.7);
+--color-white-opacity-900: rgba(255, 255, 255, 0.8);
+--color-white-opacity-1000: rgba(255, 255, 255, 0.9);
+--color-black-opacity-0: rgba(0, 0, 0, 0);
+--color-black-opacity-100: rgba(0, 0, 0, 0.05);
+--color-black-opacity-200: rgba(0, 0, 0, 0.1);
+--color-black-opacity-300: rgba(0, 0, 0, 0.2);
+--color-black-opacity-400: rgba(0, 0, 0, 0.3);
+--color-black-opacity-500: rgba(0, 0, 0, 0.4);
+--color-black-opacity-600: rgba(0, 0, 0, 0.5);
+--color-black-opacity-700: rgba(0, 0, 0, 0.6);
+--color-black-opacity-800: rgba(0, 0, 0, 0.7);
+--color-black-opacity-900: rgba(0, 0, 0, 0.8);
+--color-black-opacity-1000: rgba(0, 0, 0, 0.9);
+--color-neutral-100: rgb(242, 242, 242);
+--color-neutral-200: rgb(228, 228, 228);
+--color-neutral-300: rgb(213, 213, 213);
+--color-neutral-400: rgb(198, 198, 198);
+--color-neutral-500: rgb(180, 180, 180);
+--color-neutral-600: rgb(161, 161, 161);
+--color-neutral-700: rgb(140, 140, 140);
+--color-neutral-800: rgb(114, 114, 114);
+--color-neutral-900: rgb(81, 81, 81);
+--color-neutral-1000: rgb(57, 57, 57);
+--color-primary-100: rgb(242, 243, 247);
+--color-primary-200: rgb(228, 231, 239);
+--color-primary-300: rgb(198, 204, 222);
+--color-primary-400: rgb(162, 173, 203);
+--color-primary-500: rgb(115, 135, 183);
+--color-primary-600: rgb(13, 80, 160);
+--color-primary-700: rgb(12, 72, 143);
+--color-primary-800: rgb(10, 62, 124);
+--color-primary-900: rgb(8, 51, 101);
+--color-primary-1000: rgb(6, 36, 72);
+--color-secondary-100: rgb(255, 245, 242);
+--color-secondary-200: rgb(255, 235, 228);
+--color-secondary-300: rgb(255, 213, 198);
+--color-secondary-400: rgb(255, 189, 162);
+--color-secondary-500: rgb(255, 162, 115);
+--color-secondary-600: rgb(255, 128, 16);
+--color-secondary-700: rgb(228, 114, 14);
+--color-secondary-800: rgb(198, 99, 12);
+--color-secondary-900: rgb(161, 81, 10);
+--color-secondary-1000: rgb(114, 57, 7);
+--color-cta: rgb(253, 185, 0);
+--color-cta-hover: rgb(240, 175, 0);
+--color-attention: rgb(229, 23, 23);
+--font-family-brand: Oddset;
+--font-family-text: Open Sans;
+--font-weight-brand-100: heavy italic;
+--font-weight-100: 400;
+--font-weight-200: 600;
+--font-weight-300: 700;
+--text-size-text-xsmall: 1.2rem;
+--text-size-text-small: 1.4rem;
+--text-size-text-medium: 1.6rem;
+--text-size-text-large: 1.8rem;
+--text-size-text-xlarge: 2rem;
+--text-size-text-xxlarge: 2.4rem;
+--text-size-headline-xxsmall: 2.4rem;
+--text-size-headline-xsmall: 2.8rem;
+--text-size-headline-small: 3.2rem;
+--text-size-headline-medium: 4.2rem;
+--text-size-headline-large: 5.2rem;
+--text-size-headline-xlarge: 6rem;
+--text-size-headline-xxlarge: 7.2rem;
+--text-size-headline-xxxlarge: 8rem;
+--leading-text-xsmall: 1.8rem;
+--leading-text-small: 2rem;
+--leading-text-medium: 2.2rem;
+--leading-text-large: 2.4rem;
+--leading-text-xlarge: 2.6rem;
+--leading-text-xxlarge: 3rem;
+--leading-headline-xxsmall: 2.4rem;
+--leading-headline-xsmall: 2.8rem;
+--leading-headline-small: 
+...[truncated]...
+
+
+===== 200 https://danskespil.dk/oddset/sports/event/9290632/fodbold/verden/vm/mexico-sydafrika =====
+content-type: text/html; charset=utf-8
+
+<!DOCTYPE html><!-- ResponsiveStandardPageNashville --><html class="mode-normal" xmlns="http://www.w3.org/1999/xhtml" id="printable" lang="da"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>Oddset</title><script type='text/javascript'>var DS = DS || {};DS.Config = {BASE_HOST: 'https://danskespil.dk',FEEDSERVER_URL: 'https://feed.danskespil.dk/',DSAPI_TESTENV: Boolean('false'),SSO_SERVER_URL: 'https://sso-dli.danskespil.dk',CONTEXT:'DLI',CONTEXTPREFIX:'/dli',PLAYERACCOUNTMANAGEMENTBASEURL:'/dli/scapi/danskespil/playeraccountmanagement',PRETTYPREFIX:'/blaa-konto',DSLOGINPREFIX:'/blaa-login',BOSSOCONTEXT:'',FEEDSERVER_TOKEN: 'd35b241487678e7e39cf2e4e42d8fb4c',CONSOLE_LOG_LEVEL: 1,RELEASE: '238-DS-363',PAYOUT_CONFIRM_ENABLED: Boolean(parseInt('1', 10)),RETURNURL_VALID_HOSTNAMES: 'danskespil.dk|everymatrix.com|klasselotteriet.dk'.split('|'),LOGOUT_MODE: 'new_background',RECAPTCHA_SITEKEY: '6Lcbo0gUAAAAAM1vsvo673gbhuOAMW2EGaPv8ivT',RECAPTCHA_URL: 'https://www.google.com/recaptcha/api.js?onload=reCaptchaReady&render=explicit',ENFORCE_HTTPS: true,ENV: 'Production',DICTIONARY_TTL: parseInt('120', 10),CONSOLE_DEBUG_MITHRIL_REDRAW: false,OPERATIONS_MESSENGER_API_URL: 'https://operationsmessengerservices.azurewebsites.net',SENTRY_ENABLED: Boolean(parseInt('1', 10)),SENTRY_ENDPOINT: 'https://a58e846e46ca4a388fc76b4c462058c2@o72670.ingest.sentry.io/1264783',SENTRY_ENV: 'production',SENTRY_LOG_MISSING_DICTIONARY_KEYS: Boolean(parseInt('1', 10)),SPILLEHJOERNET_GAMEJACKPOTS: 'https://feeds.dsservice.eu/danskespilfeeds/playcorner/v1/gamejackpots',SPILLEHJOERNET_JACKPOTMAXWON: 'https://feeds.dsservice.eu/danskespilfeeds/playcorner/v1/jackpotmaxwon?daysSince=30',SPILLEHJOERNET_JACKPOTTOTAL: 'https://feeds.dsservice.eu/danskespilfeeds/playcorner/v1/jackpottotal',LIVECASINO_APIURL: 'https://evolution-gaming-lobby-integration.dsservice.eu/api/v1',SPILLEHJOERNET_GVC_CLIENTURL: 'https://casinospil.danskespil.dk',SPILLEHJOERNET_PAYMENTURL: 'https://danskespil.dk/blaa-konto/indbetaling',JACKPOTWINNERS_BINGO: 'https://staging.feed-proxy.dsservice.eu/web/score/rest/v1/scores/scoreboard/bingo/jackpot/year/50/100/score',JACKPOTWINNERS_SPILLEHJOERNET: 'https://feeds.dsservice.eu/danskespilfeeds/playcorner/v1/jackpotwinners?count=100',TOURNAMENT_LEADERBOARD: 'https://feeds.dsservice.eu/danskespilfeeds/account/v1/tournament',SPORTECH_DANTOTO_URL: 'https://dantoto.danskespil.dk',YOUTUBE_API_URL: 'https://www.youtube.com/iframe_api',BINGO_GAMEINFO_URL: 'https://feed-proxy.danskespil.dk/danskespilfeeds/bingo/v2/games',ODDSET_EVENT_URL: '/oddset/sports/event',LEIA_HOST: '#{DanskeSpil.GameVendorLEIA.Host}',LEIA_HOSTKEY: '#{DanskeSpil.GameVendorLEIA.HostKey}',LEIA_LOTTERY_CODE: '#{DanskeSpil.GameVendorLEIA.HostKey}',BINGO_BONUS_ENABLE: 'false',CASINO_API_URL: 'https://danskespil.dk/dli/webapi/gateway',CASINO_VIEW_TRANSITION: true,CONSENT_API_URL: '/api/dli/userpermissions',CONSENT_VERSION: 'v2',BINGO_API_URL: 'https://danskespil.dk/dli/scapi/danskespil/gamevendorgvc',        KLUBLOTTO_API_URL: '#{DanskeSpil.KlubLotto.ApiUrl}',WEBAPI_GATEWAY_URL: '',};</script><script type="importmap">{"imports":{"AndroidFullscreen-WY77EVVT":"/dli/BuildArtifacts/esm/dli/AndroidFullscreen-WY77EVVT.js","AppLinkReplacer":"/dli/BuildArtifacts/esm/dli/AppLinkReplacer.entry.P5ZYS2WF.js","BingoGameGrid":"/dli/BuildArtifacts/esm/dli/BingoGameGrid.entry.57NJQ755.js","BingoMediumTileSlider":"/dli/BuildArtifacts/esm/dli/BingoMediumTileSlider.entry.JCX2SB45.js","BingoMegaTile":"/dli/BuildArtifacts/esm/dli/BingoMegaTile.entry.77CT6UL5.js","BingoWinnersList":"/dli/BuildArtifacts/esm/dli/BingoWinnersList.entry.Y6GA4W44.js","BlackJackSeatSelector":"/dli/BuildArtifacts/esm/dli/BlackJackSeatSelector.entry.J5HOK4DG.js","CategoryList":"/dli/BuildArtifacts/esm/dli/CategoryList.entry.67C3CVZB.js","Countdown":"/dli/BuildArtifacts/esm/dli/Countdown.e
+...[truncated]...
+
+
+===== 200 https://content.sb.danskespil.dk/content-service/api/v1/q/localisation?brand=sgd-b1&channel=I&groups=openbet-banner%2Copenbet-bet-editor%2Copenbet-bet-type-info%2Copenbet-betslip%2Copenbet-favourites%2Copenbet-filtered-event-list%2Copenbet-grouped-event-list%2Copenbet-hierarchy-menu%2Copenbet-ui-common%2Copenbet-webapp%2Csgd-app-common%2Csgd-app-promotions%2Csgd-app-scaffolding%2Csgd-app-sportsbook%2Csgd-popular-bets%2Csgd-promotions-ui-kit%2Csgd-sportsbook-ui-kit%2Csgd-stream-player%2Csgd-ui-kit&lang=da-DK&locale=da-DK =====
+content-type: application/json
+
+{"data":{"localisation":{"translations":{"version":"MjAyNi0wNi0wMlQxMzozNzozMy45OTBa","groups":[{"group":"sgd-sportsbook-ui-kit","codes":[{"code":"SPORTSBOOK_UI_KIT_OUTCOME_INFO_MISSING","value":"-"},{"code":"SPORTSBOOK_UI_KIT_BET_BOOST_VALUE","value":"{value}%"},{"code":"SPORTSBOOK_UI_KIT_BET_ON_SPORTS","value":"Oddset"},{"code":"SPORTSBOOK_UI_KIT_POOL_SUSPENDED","value":"Suspenderet"},{"code":"SPORTSBOOK_UI_KIT_BETTING_LINE_MULTIPLIER_SYMBOL","value":"x"},{"code":"SPORTSBOOK_UI_KIT_POOL_HDA_OUTCOME_LABEL","value":"{outcomeMinorCode, select, H{1} D{X} A{2} other{}}"},{"code":"SPORTSBOOK_UI_KIT_BETTING_POTENTIAL_PRICE","value":"@ {value}"},{"code":"SPORTSBOOK_UI_KIT_POOL_EVENT_STATUS_SIMULATE_RESULT","value":"Tendenslodtrækkes"},{"code":"SPORTSBOOK_UI_KIT_BETTING_TOTAL_STAKE","value":"Samlet indskud"},{"code":"SPORTSBOOK_UI_KIT_BETTING_BET_RETURN_LABEL_MIN_PCT","value":"Min %"},{"code":"SPORTSBOOK_UI_KIT_BETTING_BET_RETURN_LABEL","value":"{status, select, PLACED{{isTotalReturn, select, true{Total potentiel gevinst} other{Potentiel gevinst}}} OFFER_TIMEDOUT{{isTotalReturn, select, true{Total potentiel gevinst} other{Potentiel gevinst}}} NOT_PLACED{{isTotalReturn, select, true{Total potentiel gevinst} other{Potentiel gevinst}}} SETTLED{{isTotalReturn, select, true{Total gevinst} other{Gevinst}}} CASHED_OUT{Pengene er taget} CANCELLED{Gevinst} other{}}"},{"code":"SPORTSBOOK_UI_KIT_EVENT_LIST_HEADER_HDA_OUTCOME_LABEL","value":"{outcomeMinorCode, select, H{1} D{X} A{2} other{}}"},{"code":"SPORTSBOOK_UI_KIT_BETTING_CURRENCY_SYMBOL","value":"kr."},{"code":"SPORTSBOOK_UI_KIT_EVENT_CARD_SHORT_HOUR","value":"t"},{"code":"SPORTSBOOK_UI_KIT_BETTING_BET_RECEIPT_ID_LABEL","value":"Spil ID"},{"code":"SPORTSBOOK_UI_KIT_EVENT_CARD_SHORT_MINUTE","value":"m"},{"code":"SPORTSBOOK_UI_KIT_BETTING_FREEBET_LABEL","value":"Fritspil"},{"code":"SPORTSBOOK_UI_KIT_EVENT_CARD_SHORT_SECOND","value":"s"},{"code":"SPORTSBOOK_UI_KIT_BETTING_PARLAY_BOOST_INDICATOR","value":"(Inkl. {boostAmount} Boost)"},{"code":"SPORTSBOOK_UI_KIT_EVENT_STARTING","value":"Snart"},{"code":"SPORTSBOOK_UI_KIT_EVENT_LIST_HEADER_LABEL","value":"{marketMinorCode, select, MR{KAMPE} HH{KAMPE} CS{KAMPE} other{KAMPE}}"},{"code":"SPORTSBOOK_UI_KIT_EVENT_TIME_TODAY_PREFIX","value":"I dag"},{"code":"SPORTSBOOK_UI_KIT_EVENT_LIST_HEADER_RESULTS_LABEL","value":"RESULTATER"},{"code":"SPORTSBOOK_UI_KIT_EVENT_TIME_TOMORROW_PREFIX","value":"I morgen"},{"code":"SPORTSBOOK_UI_KIT_EVENT_LIST_SCORE","value":"{homeScore} - {awayScore}"},{"code":"SPORTSBOOK_UI_KIT_POOL_CLOSED","value":"Lukket"},{"code":"SPORTSBOOK_UI_KIT_EVENT_LIST_UNPRICED_OUTCOME_BUTTON","value":"-"},{"code":"SPORTSBOOK_UI_KIT_OUTCOME_POPULARITY","value":"{popularity}%"},{"code":"SPORTSBOOK_UI_KIT_OUTCOME_PROBABILITY","value":"{probability}%"},{"code":"SPORTSBOOK_UI_KIT_POPULARITY_LABEL","value":"Andre tippere"},{"code":"SPORTSBOOK_UI_KIT_POOL_PRIZE_POT","value":" "},{"code":"SPORTSBOOK_UI_KIT_PROBABILITY_LABEL","value":"Tendens"},{"code":"SPORTSBOOK_UI_KIT_SGL_BET_TYPE","value":"{numLines, plural, =1{Single} other{Singler}} (x{numLines})"},{"code":"SPORTSBOOK_UI_KIT_TEAM_NAMES_SEPARATOR","value":"-"},{"code":"SPORTSBOOK_UI_KIT_DBL_BET_TYPE","value":"{numLines, plural, =1{Double} other{Doubler}}  (x{numLines})"},{"code":"SPORTSBOOK_UI_KIT_TBL_BET_TYPE","value":"{numLines, plural, =1{Trippel} other{Tripler}} (x{numLines})"},{"code":"SPORTSBOOK_UI_KIT_ACCUMULATOR4_BET_TYPE","value":"{numLines, plural, =1{Accumulator (4)} other{4-ling}} (x{numLines})"},{"code":"SPORTSBOOK_UI_KIT_ACCUMULATOR5_BET_TYPE","value":"{numLines, plural, =1{Accumulator (5)} other{5-ling}} (x{numLines})"},{"code":"SPORTSBOOK_UI_KIT_ACCUMULATOR6_BET_TYPE","value":"{numLines, plural, =1{Accumulator (6)} other{6-ling}} (x{numLines})"},{"code":"SPORTSBOOK_UI_KIT_ACCUMULATOR7_BET_TYPE","value":"{numLines, plural, =1{Accumulator (7)} other{7-ling}} (x{numLines})"},{"code":"SPORTSBOOK_UI_KIT_ACCUMULATOR8_BET_TYPE","value":"{numLines, plural, =1{Accumulator (8)} other{8-li
+...[truncated]...
+
+
+===== 200 https://content.sb.danskespil.dk/content-service/api/v1/q/drilldown-tree?drilldownNodeIds=1&eventState=OPEN_EVENT&includeMarketGroupCodeCombis=true&lang=da-DK&channel=I =====
+content-type: application/json
+
+{"data":{"drilldownNodes":[{"id":"1","levelNumber":1,"name":"Sports","alternativeNames":[],"drilldownNodeIsDisplayed":true,"displayOrder":0,"channels":["I"],"refRecordType":"drilldownTag","refRecordId":"1","code":null,"drilldownNodes":[{"id":"12","levelNumber":2,"name":"Fodbold","alternativeNames":[],"drilldownNodeIsDisplayed":true,"displayOrder":-470,"channels":["I"],"refRecordType":"drilldownTag","refRecordId":"12","code":"soccer","marketGroupCodeCombis":[{"id":"1","name":"Kampvinder","displayOrder":1,"groupCodeCombis":[{"groupCodes":["MATCH_RESULT","MATCH_RESULT_EXTRA_TIME_ONLY","WINNER_OF_TIE","TO_WIN_THE_TROPHY","GOALSCORER_TEAM_NEXT","MATCH_WINNER_3_WAY"],"displayOrder":1}],"substituteGroupCodes":["GOALSCORER_TEAM_NEXT"]},{"id":"2","name":"Antal mål","displayOrder":2,"groupCodeCombis":[{"groupCodes":["TOTAL_GOALS_OVER/UNDER","TOTAL_GOALS_OVER/UNDER_EXTRA_TIME_ONLY"],"displayOrder":1}],"substituteGroupCodes":[]},{"id":"5","name":"Handicap","displayOrder":3,"groupCodeCombis":[{"groupCodes":["HANDICAP","HANDICAP_2_WAY_EXTRA_TIME","HANDICAP_3_WAY"],"displayOrder":1}],"substituteGroupCodes":[]},{"id":"3","name":"Begge hold scorer","displayOrder":4,"groupCodeCombis":[{"groupCodes":["BOTH_TEAMS_TO_SCORE","BOTH_TEAMS_TO_SCORE_EXTRA_TIME"],"displayOrder":1}],"substituteGroupCodes":[]},{"id":"4","name":"Dobbeltchance","displayOrder":5,"groupCodeCombis":[{"groupCodes":["DOUBLE_CHANCE","DOUBLE_RESULT_EXTRA_TIME"],"displayOrder":1}],"substituteGroupCodes":[]},{"id":"6","name":"Pengene tilbage ved uafgjort","displayOrder":6,"groupCodeCombis":[{"groupCodes":["NO_BET_DRAW","DRAW_NO_BET"],"displayOrder":1}],"substituteGroupCodes":[]}],"drilldownNodes":[{"id":"23870","levelNumber":3,"name":"Verden","alternativeNames":[],"drilldownNodeIsDisplayed":true,"displayOrder":-1250,"channels":["I"],"refRecordType":"drilldownTag","refRecordId":"23870","code":"soccer","marketGroupCodeCombis":[],"drilldownNodes":[{"id":"23907","levelNumber":4,"name":"Venskabskampe","alternativeNames":[],"drilldownNodeIsDisplayed":true,"displayOrder":-8500,"channels":["I"],"refRecordType":"drilldownTag","refRecordId":"23907","code":"soccer"},{"id":"25260","levelNumber":4,"name":"VM","alternativeNames":[],"drilldownNodeIsDisplayed":true,"displayOrder":-8400,"channels":["I"],"refRecordType":"drilldownTag","refRecordId":"25260","code":"soccer"},{"id":"27001","levelNumber":4,"name":"Tournoi Maurice Revello","alternativeNames":[],"drilldownNodeIsDisplayed":true,"displayOrder":-7250,"channels":["I"],"refRecordType":"drilldownTag","refRecordId":"27001","code":"soccer"},{"id":"23959","levelNumber":4,"name":"Venskabskampe (k)","alternativeNames":[],"drilldownNodeIsDisplayed":true,"displayOrder":-901,"channels":["I"],"refRecordType":"drilldownTag","refRecordId":"23959","code":"soccer"},{"id":"25912","levelNumber":4,"name":"Ballon d`Or","alternativeNames":[],"drilldownNodeIsDisplayed":true,"displayOrder":0,"channels":["I"],"refRecordType":"drilldownTag","refRecordId":"25912","code":"soccer"},{"id":"24027","levelNumber":4,"name":"Venskabskampe U21","alternativeNames":[],"drilldownNodeIsDisplayed":true,"displayOrder":0,"channels":["I"],"refRecordType":"drilldownTag","refRecordId":"24027","code":"soccer"}]},{"id":"70","levelNumber":3,"name":"Danmark","alternativeNames":[],"drilldownNodeIsDisplayed":true,"displayOrder":-1245,"channels":["I"],"refRecordType":"drilldownTag","refRecordId":"70","code":"soccer","marketGroupCodeCombis":[],"drilldownNodes":[{"id":"23746","levelNumber":4,"name":"Danmark Superligaen","alternativeNames":[],"drilldownNodeIsDisplayed":true,"displayOrder":-8300,"channels":["I"],"refRecordType":"drilldownTag","refRecordId":"23746","code":"soccer"},{"id":"16349","levelNumber":4,"name":"Danmark 1. division","alternativeNames":[],"drilldownNodeIsDisplayed":true,"displayOrder":-8275,"channels":["I"],"refRecordType":"drilldownTag","refRecordId":"16349","code":"soccer"}]},{"id":"176","levelNumber":3,"name":"England","alternativeNames":[],"drilldownNodeIsDisplayed":true,
+...[truncated]...
+
+
+===== 200 https://content.sb.danskespil.dk/content-service/api/v1/q/cms-content?appRef=sgd-web-app&brand=sgd-b1&channel=I&clientAttributes=anonymous&deviceBrowser=chrome&deviceOs=windows&eventId=9290632&formFactor=desktop&freetext=fodbold&freetext2=verden&freetext3=vm&freetext4=mexico-sydafrika&includeChildMarkets=true&lang=da-DK&language=da&route=Event =====
+content-type: application/json
+
+{"data":{"cmsContent":{"context":{"route":"Event","subRoute":null,"language":"da","multilingual":[{"languageId":"da","eventName":"Mexico - Sydafrika","meetingName":null,"competitionName":"VM","categoryName":"Verden","sportName":"Fodbold","pageSlug":null}],"formFactor":"desktop","appRef":["sgd-web-app"],"eventId":"9290632","eventName":"Mexico - Sydafrika","meetingId":null,"meetingName":null,"raceNumber":null,"eventBlurb":null,"competitionId":"25260","competitionName":"VM","competitionBlurb":null,"categoryId":"23870","categoryName":"Verden","categoryBlurb":null,"sportId":"12","sportName":"Fodbold","sportBlurb":null,"poolId":null,"poolName":null,"poolBlurb":null,"layoutVariant":null},"items":[{"location":"NavDrawer/Content","type":"Menu","data":{"isHighlighted":false,"uid":1619,"isPublished":true,"variant":"vertical1","isIconMenu":false,"clientAttributes":null,"title":"AKTUELT","isCollapsible":false,"items":[{"text":"Live","iconClass":"icon--in-play","notifyIconClass":null,"menuItemIdentifier":null,"clientAttributes":["anonymous","authenticated"],"navigation":{"route":"InPlay","newWindow":false,"urlContext":"internal"},"items":null},{"text":"Dagens kampe","iconClass":"icon--futures","notifyIconClass":null,"menuItemIdentifier":null,"clientAttributes":["anonymous","authenticated"],"navigation":{"route":"Dagenskampe","newWindow":false,"urlContext":"internal"},"items":null},{"text":"VM-kvalifikation Europa","iconClass":"icon--football","notifyIconClass":null,"menuItemIdentifier":null,"clientAttributes":["anonymous","authenticated"],"navigation":{"url":"https://danskespil.dk/oddset/sports/competition/26542/uefa-vm-kvalifikation/matches","newWindow":false,"urlContext":"external"},"items":null},{"text":"EM-kvalifikation U21","iconClass":"icon--football","notifyIconClass":null,"menuItemIdentifier":null,"clientAttributes":["anonymous","authenticated"],"navigation":{"url":"https://danskespil.dk/oddset/sports/competition/27007/u21-em-kvalifikation/matches","newWindow":false,"urlContext":"external"},"items":null},{"text":"VM-kvalifikation Afrika","iconClass":"icon--football","notifyIconClass":null,"menuItemIdentifier":null,"clientAttributes":["anonymous","authenticated"],"navigation":{"url":"https://danskespil.dk/oddset/sports/competition/26544/caf-vm-kvalifikation/matches","newWindow":false,"urlContext":"external"},"items":null},{"text":"NFL","iconClass":"icon--american-football","notifyIconClass":null,"menuItemIdentifier":null,"clientAttributes":["anonymous","authenticated"],"navigation":{"url":"https://danskespil.dk/oddset/sports/competition/20144/usa-nfl/matches","newWindow":false,"urlContext":"external"},"items":null}]}},{"location":"NavDrawer/Content","type":"Menu","data":{"isHighlighted":false,"uid":1620,"isPublished":true,"variant":null,"isIconMenu":false,"clientAttributes":null,"title":"GENVEJE","isCollapsible":false,"items":[{"text":"Alle kampe","iconClass":"ds-icon--all-sports","notifyIconClass":null,"menuItemIdentifier":null,"clientAttributes":["anonymous","authenticated"],"navigation":{"url":"https://danskespil.dk/oddset/sports/matches","newWindow":false,"urlContext":"external"},"items":null},{"text":"Stillinger","iconClass":"icon--statistics","notifyIconClass":null,"menuItemIdentifier":null,"clientAttributes":["anonymous","authenticated"],"navigation":{"url":"https://danskespil.dk/oddset/promo/livescore/two","newWindow":false,"urlContext":"external"},"items":null},{"text":"Streaming + TV","iconClass":"icon--event-live-stream","notifyIconClass":null,"menuItemIdentifier":null,"clientAttributes":["anonymous","authenticated"],"navigation":{"url":"https://danskespil.dk/oddset/sports/matches?preselectedFilters=event_list_show_live_stream","newWindow":false,"urlContext":"external"},"items":null},{"text":"Klub Oddset","iconClass":"icon--pool-tickets","notifyIconClass":null,"menuItemIdentifier":null,"clientAttributes":["anonymous","authenticated"],"navigation":{"url":"https://danskespil.dk/kluboddset","newWindow":false,"urlContext":"ext
+...[truncated]...
+
+
+===== 200 https://content.sb.danskespil.dk/content-service/api/v1/q/events-by-ids?eventIds=9290632&includeChildMarkets=false&includeCollections=false&includePriorityCollectionChildMarkets=false&includePriceHistory=false&includeCommentary=true&includeIncidents=true&includeRace=false&includeMedia=true&includePools=false&includeNonFixedOdds=false&lang=da-DK&channel=I =====
+content-type: application/json
+
+{"data":{"events":[{"id":"9290632","externalIds":[{"id":"13344521","provider":"betgenius"},{"id":"4667751","provider":"enetpulse"},{"id":"sr:match:66456904","provider":"betradar"},{"id":"17431444","provider":"lsports"}],"extKey":null,"retailCode":null,"name":"Mexico - Sydafrika","active":true,"displayed":true,"status":"ACTIVE","displayOrder":0,"popularityOrder":null,"channels":["R","S","I","M"],"sortCode":"MTCH","startTime":"2026-06-11T19:00:00Z","started":false,"liveNow":false,"liveBettingAvailable":false,"liveRcpBettingAvailable":false,"precannedSelectionCombisCount":0,"resulted":false,"settled":false,"cashoutAvailable":true,"sportId":"21","competitionDrilldownTagId":"25260","raceNumber":0,"venue":null,"isVoid":false,"blurb":null,"fixedOddsAvailable":true,"rcpAvailable":true,"statisticsAvailable":true,"neutralVenue":false,"meeting":null,"teams":[{"id":null,"side":"HOME","name":"Mexico","alternativeNames":[{"type":"FULL","value":"Mexico"}],"code":null,"externalId":null,"status":null},{"id":null,"side":"AWAY","name":"Sydafrika","alternativeNames":[{"type":"FULL","value":"Sydafrika"}],"code":null,"externalId":null,"status":null}],"mediaProviders":[],"type":{"id":"1069354","name":"VM","alternativeNames":[],"displayOrder":"-8400","fixedOddsAvailable":true},"class":{"id":"1005611","name":"Verden","displayOrder":"-1250"},"category":{"id":"21","name":"Fodbold","displayOrder":"-470","code":"FOOTBALL"},"marketCount":108,"marketCounts":{"total":108,"fixedOdds":108},"commentary":{"clock":null,"participants":[{"id":"7605265","name":"Mexico","type":"GROUP","role":"Home Team","roleCode":"HOME","active":true},{"id":"7605266","name":"South Africa","type":"GROUP","role":"Away Team","roleCode":"AWAY","active":true}],"facts":[],"periods":[]}}]},"extensions":{"eventCount":1},"errors":[]}
+
+
+===== 200 https://content.sb.danskespil.dk/content-service/api/v1/q/event-list?startTimeFrom=2026-06-01T22%3A00%3A00Z&startTimeTo=2026-12-29T22%3A59%3A59Z&maxEvents=6&orderEventsBy=displayOrder&excludeEventsWithNoMarkets=false&eventSortsIncluded=MTCH&prioritisePrimaryMarkets=true&includeCommentary=true&includeMedia=true&drilldownTagIds=25260&useMarketGroupCodeCombis=true&lang=da-DK&channel=I =====
+content-type: application/json
+
+{"data":{"events":[{"id":"9721765","externalIds":[{"id":"13345004","provider":"betgenius"},{"id":"4667755","provider":"enetpulse"},{"id":"sr:match:66456912","provider":"betradar"},{"id":"18657070","provider":"lsports"}],"extKey":null,"retailCode":null,"name":"Tjekkiet - Mexico","active":true,"displayed":true,"status":"ACTIVE","displayOrder":0,"popularityOrder":null,"channels":["R","S","I","M"],"sortCode":"MTCH","startTime":"2026-06-25T01:00:00Z","started":false,"liveNow":false,"liveBettingAvailable":false,"liveRcpBettingAvailable":false,"resulted":false,"settled":false,"cashoutAvailable":true,"sportId":"21","competitionDrilldownTagId":"25260","raceNumber":0,"venue":null,"isVoid":false,"blurb":null,"fixedOddsAvailable":true,"rcpAvailable":false,"statisticsAvailable":true,"neutralVenue":false,"meeting":null,"teams":[{"id":null,"side":"HOME","name":"Tjekkiet","alternativeNames":[{"type":"FULL","value":"Tjekkiet"}],"code":null,"externalId":null,"status":null},{"id":null,"side":"AWAY","name":"Mexico","alternativeNames":[{"type":"FULL","value":"Mexico"}],"code":null,"externalId":null,"status":null}],"mediaProviders":[],"type":{"id":"1069354","name":"VM","alternativeNames":[],"displayOrder":"-8400","fixedOddsAvailable":true},"class":{"id":"1005611","name":"Verden","displayOrder":"-1250"},"category":{"id":"21","name":"Fodbold","displayOrder":"-470","code":"FOOTBALL"},"marketCount":79,"marketCounts":{"total":79,"fixedOdds":79},"commentary":{"clock":null,"participants":[{"id":"8386775","name":"Czechia","type":"GROUP","role":"Home Team","roleCode":"HOME","active":true},{"id":"8386776","name":"Mexico","type":"GROUP","role":"Away Team","roleCode":"AWAY","active":true}],"facts":[],"periods":[]}},{"id":"9751180","externalIds":[{"id":"13345038","provider":"betgenius"},{"id":"4667773","provider":"enetpulse"},{"id":"sr:match:66456946","provider":"betradar"},{"id":"18494010","provider":"lsports"}],"extKey":null,"retailCode":null,"name":"Tyrkiet - Paraguay","active":true,"displayed":true,"status":"ACTIVE","displayOrder":0,"popularityOrder":null,"channels":["R","S","I","M"],"sortCode":"MTCH","startTime":"2026-06-20T03:00:00Z","started":false,"liveNow":false,"liveBettingAvailable":false,"liveRcpBettingAvailable":false,"resulted":false,"settled":false,"cashoutAvailable":true,"sportId":"21","competitionDrilldownTagId":"25260","raceNumber":0,"venue":null,"isVoid":false,"blurb":null,"fixedOddsAvailable":true,"rcpAvailable":false,"statisticsAvailable":true,"neutralVenue":false,"meeting":null,"teams":[{"id":null,"side":"HOME","name":"Tyrkiet","alternativeNames":[{"type":"FULL","value":"Tyrkiet"}],"code":null,"externalId":null,"status":null},{"id":null,"side":"AWAY","name":"Paraguay","alternativeNames":[{"type":"FULL","value":"Paraguay"}],"code":null,"externalId":null,"status":null}],"mediaProviders":[],"type":{"id":"1069354","name":"VM","alternativeNames":[],"displayOrder":"-8400","fixedOddsAvailable":true},"class":{"id":"1005611","name":"Verden","displayOrder":"-1250"},"category":{"id":"21","name":"Fodbold","displayOrder":"-470","code":"FOOTBALL"},"marketCount":68,"marketCounts":{"total":68,"fixedOdds":68},"commentary":{"clock":null,"participants":[{"id":"8440010","name":"Paraguay","type":"GROUP","role":"Away Team","roleCode":"AWAY","active":true},{"id":"8440009","name":"Turkiye","type":"GROUP","role":"Home Team","roleCode":"HOME","active":true}],"facts":[],"periods":[]}},{"id":"9751183","externalIds":[{"id":"13344924","provider":"betgenius"},{"id":"4667800","provider":"enetpulse"},{"id":"sr:match:66457000","provider":"betradar"},{"id":"18487383","provider":"lsports"}],"extKey":null,"retailCode":null,"name":"Uruguay - Kap Verde","active":true,"displayed":true,"status":"ACTIVE","displayOrder":0,"popularityOrder":null,"channels":["R","S","I","M"],"sortCode":"MTCH","startTime":"2026-06-21T22:00:00Z","started":false,"liveNow":false,"liveBettingAvailable":false,"liveRcpBettingAvailable":false,"resulted":false,"settled":false,"cashoutAvailable":true,"sportId"
+...[truncated]...
+
+
+===== 200 https://content.sb.danskespil.dk/content-service/api/v1/q/events-by-ids?eventIds=9290632&includeChildMarkets=true&includeCollections=true&includePriorityCollectionChildMarkets=true&includePriceHistory=false&includeCommentary=false&includeIncidents=false&includeRace=false&includeMedia=true&includePools=false&includeNonFixedOdds=false&includeGlobalParticipants=true&lang=da-DK&channel=I =====
+content-type: application/json
+
+{"data":{"events":[{"id":"9290632","externalIds":[{"id":"13344521","provider":"betgenius"},{"id":"4667751","provider":"enetpulse"},{"id":"sr:match:66456904","provider":"betradar"},{"id":"17431444","provider":"lsports"}],"extKey":null,"retailCode":null,"name":"Mexico - Sydafrika","active":true,"displayed":true,"status":"ACTIVE","displayOrder":0,"popularityOrder":null,"channels":["R","S","I","M"],"sortCode":"MTCH","startTime":"2026-06-11T19:00:00Z","started":false,"liveNow":false,"liveBettingAvailable":false,"liveRcpBettingAvailable":false,"precannedSelectionCombisCount":0,"resulted":false,"settled":false,"cashoutAvailable":true,"sportId":"21","competitionDrilldownTagId":"25260","raceNumber":0,"venue":null,"isVoid":false,"blurb":null,"fixedOddsAvailable":true,"rcpAvailable":true,"statisticsAvailable":true,"neutralVenue":false,"meeting":null,"teams":[{"id":null,"side":"HOME","name":"Mexico","alternativeNames":[{"type":"FULL","value":"Mexico"}],"code":null,"externalId":null,"status":null},{"id":null,"side":"AWAY","name":"Sydafrika","alternativeNames":[{"type":"FULL","value":"Sydafrika"}],"code":null,"externalId":null,"status":null}],"globalParticipants":null,"mediaProviders":[],"collections":[{"id":"1000266","name":"Handicap","displayOrder":5,"marketIdsBLDR":["245750098","245750101","246328099"],"marketIdsFixedOdds":["245750098","245750101","246328099"],"flags":[]},{"id":"37","name":"Mål","displayOrder":120,"marketIdsBLDR":[],"marketIdsFixedOdds":["245749909","245749911","284006522"],"flags":[]},{"id":"38","name":"Halvleg","displayOrder":90,"marketIdsBLDR":["245749965"],"marketIdsFixedOdds":["245749965","245750159"],"flags":[]},{"id":"45","name":"Spillere","displayOrder":40,"marketIdsBLDR":[],"marketIdsFixedOdds":["289067851","289067853","289067854"],"flags":[]},{"id":"46","name":"Populære","displayOrder":0,"marketIdsBLDR":["245749884","245749963","245750098","245750101","245750183","245750185","245750186","245750214","245750219","246328099","246328108"],"marketIdsFixedOdds":["245749884","245749887","245749963","245749995","245750098","245750101","245750183","245750185","245750186","245750214","245750219","246328099","246328108"],"flags":[]},{"id":"193","name":"Asian","displayOrder":130,"marketIdsBLDR":[],"marketIdsFixedOdds":["245750013","245750121","245750130","245750135","246325217","246325218","246325230","246325251","246325281","246325284","246325288","246325325","246325326","246325339","246325340","246325351","246325360","246326333","246326336","246328100","246328101","246328102","246328103","246328104","246328105","246328106","246328107","246328109","246328110","286589230","286589232","286589241","286589242","286589249","286589251","286589254","286589261","286589266","286589269","286589270","286589274","286589275","288459771"],"flags":[]},{"id":"40","name":"Resultat","displayOrder":100,"marketIdsBLDR":["245749916"],"marketIdsFixedOdds":["245749901","245749916","245750002"],"flags":[]},{"id":"41","name":"O/U Mål","displayOrder":53,"marketIdsBLDR":["245750137","245750139","245750140","245750141","245750142","245750143","245750144","245750145","245750150","245750151","245750183","245750185","245750186","245750214","245750216","245750219","246328108","273942711","273942719","273942727","273942728","273942731","273942732","273942733","284030648"],"marketIdsFixedOdds":["245750137","245750138","245750139","245750140","245750141","245750142","245750143","245750144","245750145","245750150","245750151","245750154","245750183","245750185","245750186","245750213","245750214","245750216","245750219","246328108","273942711","273942719","273942727","273942728","273942731","273942732","273942733","284030648"],"flags":[]},{"id":"43","name":"Hjørne","displayOrder":57,"marketIdsBLDR":[],"marketIdsFixedOdds":["284006490","284006493","284006502","284006506","284006507","284006509","284006510","284006511","284006513","288070810","288070811","288070815","288070818","288070819","288070820","288070825","288070830","288070833","288070848"],"flags":[
+...[truncated]...
+
+
+===== 200 https://danskespil.dk/dli/BuildArtifacts/Styles/DanskeSpil/region-oddset.4bcadbff43.css =====
+content-type: text/css
+
+@layer components {
+  .ds-rich-text h1,
+  .ds-rich-text h2,
+  .ds-rich-text h3,
+  .ds-rich-text h4,
+  .ds-rich-text h5,
+  .ds-rich-text h6 {
+    margin: 0;
+  }
+  .ds-rich-text p {
+    margin: 0;
+  }
+  .ds-rich-text a {
+    color: currentColor;
+    text-decoration: underline;
+  }
+  .ds-rich-text a:hover {
+    text-decoration: none;
+  }
+  .ds-rich-text ul,
+  .ds-rich-text ol {
+    margin-left: -1ch;
+  }
+  .ds-rich-text ul li,
+  .ds-rich-text ol li {
+    margin-bottom: 0.5em;
+  }
+  .ds-rich-text ul {
+    list-style: disc;
+    margin-left: 3ch;
+  }
+}
+
+
+
+.theme-oddset {
+--color-black: rgb(0, 0, 0);
+--color-white: rgb(255, 255, 255);
+--color-white-opacity-0: rgba(255, 255, 255, 0);
+--color-white-opacity-100: rgba(255, 255, 255, 0.05);
+--color-white-opacity-200: rgba(255, 255, 255, 0.1);
+--color-white-opacity-300: rgba(255, 255, 255, 0.2);
+--color-white-opacity-400: rgba(255, 255, 255, 0.3);
+--color-white-opacity-500: rgba(255, 255, 255, 0.4);
+--color-white-opacity-600: rgba(255, 255, 255, 0.5);
+--color-white-opacity-700: rgba(255, 255, 255, 0.6);
+--color-white-opacity-800: rgba(255, 255, 255, 0.7);
+--color-white-opacity-900: rgba(255, 255, 255, 0.8);
+--color-white-opacity-1000: rgba(255, 255, 255, 0.9);
+--color-black-opacity-0: rgba(0, 0, 0, 0);
+--color-black-opacity-100: rgba(0, 0, 0, 0.05);
+--color-black-opacity-200: rgba(0, 0, 0, 0.1);
+--color-black-opacity-300: rgba(0, 0, 0, 0.2);
+--color-black-opacity-400: rgba(0, 0, 0, 0.3);
+--color-black-opacity-500: rgba(0, 0, 0, 0.4);
+--color-black-opacity-600: rgba(0, 0, 0, 0.5);
+--color-black-opacity-700: rgba(0, 0, 0, 0.6);
+--color-black-opacity-800: rgba(0, 0, 0, 0.7);
+--color-black-opacity-900: rgba(0, 0, 0, 0.8);
+--color-black-opacity-1000: rgba(0, 0, 0, 0.9);
+--color-neutral-100: rgb(242, 242, 242);
+--color-neutral-200: rgb(228, 228, 228);
+--color-neutral-300: rgb(213, 213, 213);
+--color-neutral-400: rgb(198, 198, 198);
+--color-neutral-500: rgb(180, 180, 180);
+--color-neutral-600: rgb(161, 161, 161);
+--color-neutral-700: rgb(140, 140, 140);
+--color-neutral-800: rgb(114, 114, 114);
+--color-neutral-900: rgb(81, 81, 81);
+--color-neutral-1000: rgb(57, 57, 57);
+--color-primary-100: rgb(242, 243, 247);
+--color-primary-200: rgb(228, 231, 239);
+--color-primary-300: rgb(198, 204, 222);
+--color-primary-400: rgb(162, 173, 203);
+--color-primary-500: rgb(115, 135, 183);
+--color-primary-600: rgb(13, 80, 160);
+--color-primary-700: rgb(12, 72, 143);
+--color-primary-800: rgb(10, 62, 124);
+--color-primary-900: rgb(8, 51, 101);
+--color-primary-1000: rgb(6, 36, 72);
+--color-secondary-100: rgb(255, 245, 242);
+--color-secondary-200: rgb(255, 235, 228);
+--color-secondary-300: rgb(255, 213, 198);
+--color-secondary-400: rgb(255, 189, 162);
+--color-secondary-500: rgb(255, 162, 115);
+--color-secondary-600: rgb(255, 128, 16);
+--color-secondary-700: rgb(228, 114, 14);
+--color-secondary-800: rgb(198, 99, 12);
+--color-secondary-900: rgb(161, 81, 10);
+--color-secondary-1000: rgb(114, 57, 7);
+--color-cta: rgb(253, 185, 0);
+--color-cta-hover: rgb(240, 175, 0);
+--color-attention: rgb(229, 23, 23);
+--font-family-brand: Oddset;
+--font-family-text: Open Sans;
+--font-weight-brand-100: heavy italic;
+--font-weight-100: 400;
+--font-weight-200: 600;
+--font-weight-300: 700;
+--text-size-text-xsmall: 1.2rem;
+--text-size-text-small: 1.4rem;
+--text-size-text-medium: 1.6rem;
+--text-size-text-large: 1.8rem;
+--text-size-text-xlarge: 2rem;
+--text-size-text-xxlarge: 2.4rem;
+--text-size-headline-xxsmall: 2.4rem;
+--text-size-headline-xsmall: 2.8rem;
+--text-size-headline-small: 3.2rem;
+--text-size-headline-medium: 4.2rem;
+--text-size-headline-large: 5.2rem;
+--text-size-headline-xlarge: 6rem;
+--text-size-headline-xxlarge: 7.2rem;
+--text-size-headline-xxxlarge: 8rem;
+--leading-text-xsmall: 1.8rem;
+--leading-text-small: 2rem;
+--leading-text-medium: 2.2rem;
+--leading-text-large: 2.4rem;
+--leading-text-xlarge: 2.6rem;
+--leading-text-xxlarge: 3rem;
+--leading-headline-xxsmall: 2.4rem;
+--leading-headline-xsmall: 2.8rem;
+--leading-headline-small: 
+...[truncated]...
+
+
+===== 200 https://danskespil.dk/oddset/sports/event/9654758/fodbold/verden/vm/sydkorea-tjekkiet =====
+content-type: text/html; charset=utf-8
+
+<!DOCTYPE html><!-- ResponsiveStandardPageNashville --><html class="mode-normal" xmlns="http://www.w3.org/1999/xhtml" id="printable" lang="da"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>Oddset</title><script type='text/javascript'>var DS = DS || {};DS.Config = {BASE_HOST: 'https://danskespil.dk',FEEDSERVER_URL: 'https://feed.danskespil.dk/',DSAPI_TESTENV: Boolean('false'),SSO_SERVER_URL: 'https://sso-dli.danskespil.dk',CONTEXT:'DLI',CONTEXTPREFIX:'/dli',PLAYERACCOUNTMANAGEMENTBASEURL:'/dli/scapi/danskespil/playeraccountmanagement',PRETTYPREFIX:'/blaa-konto',DSLOGINPREFIX:'/blaa-login',BOSSOCONTEXT:'',FEEDSERVER_TOKEN: 'd35b241487678e7e39cf2e4e42d8fb4c',CONSOLE_LOG_LEVEL: 1,RELEASE: '238-DS-363',PAYOUT_CONFIRM_ENABLED: Boolean(parseInt('1', 10)),RETURNURL_VALID_HOSTNAMES: 'danskespil.dk|everymatrix.com|klasselotteriet.dk'.split('|'),LOGOUT_MODE: 'new_background',RECAPTCHA_SITEKEY: '6Lcbo0gUAAAAAM1vsvo673gbhuOAMW2EGaPv8ivT',RECAPTCHA_URL: 'https://www.google.com/recaptcha/api.js?onload=reCaptchaReady&render=explicit',ENFORCE_HTTPS: true,ENV: 'Production',DICTIONARY_TTL: parseInt('120', 10),CONSOLE_DEBUG_MITHRIL_REDRAW: false,OPERATIONS_MESSENGER_API_URL: 'https://operationsmessengerservices.azurewebsites.net',SENTRY_ENABLED: Boolean(parseInt('1', 10)),SENTRY_ENDPOINT: 'https://a58e846e46ca4a388fc76b4c462058c2@o72670.ingest.sentry.io/1264783',SENTRY_ENV: 'production',SENTRY_LOG_MISSING_DICTIONARY_KEYS: Boolean(parseInt('1', 10)),SPILLEHJOERNET_GAMEJACKPOTS: 'https://feeds.dsservice.eu/danskespilfeeds/playcorner/v1/gamejackpots',SPILLEHJOERNET_JACKPOTMAXWON: 'https://feeds.dsservice.eu/danskespilfeeds/playcorner/v1/jackpotmaxwon?daysSince=30',SPILLEHJOERNET_JACKPOTTOTAL: 'https://feeds.dsservice.eu/danskespilfeeds/playcorner/v1/jackpottotal',LIVECASINO_APIURL: 'https://evolution-gaming-lobby-integration.dsservice.eu/api/v1',SPILLEHJOERNET_GVC_CLIENTURL: 'https://casinospil.danskespil.dk',SPILLEHJOERNET_PAYMENTURL: 'https://danskespil.dk/blaa-konto/indbetaling',JACKPOTWINNERS_BINGO: 'https://staging.feed-proxy.dsservice.eu/web/score/rest/v1/scores/scoreboard/bingo/jackpot/year/50/100/score',JACKPOTWINNERS_SPILLEHJOERNET: 'https://feeds.dsservice.eu/danskespilfeeds/playcorner/v1/jackpotwinners?count=100',TOURNAMENT_LEADERBOARD: 'https://feeds.dsservice.eu/danskespilfeeds/account/v1/tournament',SPORTECH_DANTOTO_URL: 'https://dantoto.danskespil.dk',YOUTUBE_API_URL: 'https://www.youtube.com/iframe_api',BINGO_GAMEINFO_URL: 'https://feed-proxy.danskespil.dk/danskespilfeeds/bingo/v2/games',ODDSET_EVENT_URL: '/oddset/sports/event',LEIA_HOST: '#{DanskeSpil.GameVendorLEIA.Host}',LEIA_HOSTKEY: '#{DanskeSpil.GameVendorLEIA.HostKey}',LEIA_LOTTERY_CODE: '#{DanskeSpil.GameVendorLEIA.HostKey}',BINGO_BONUS_ENABLE: 'false',CASINO_API_URL: 'https://danskespil.dk/dli/webapi/gateway',CASINO_VIEW_TRANSITION: true,CONSENT_API_URL: '/api/dli/userpermissions',CONSENT_VERSION: 'v2',BINGO_API_URL: 'https://danskespil.dk/dli/scapi/danskespil/gamevendorgvc',        KLUBLOTTO_API_URL: '#{DanskeSpil.KlubLotto.ApiUrl}',WEBAPI_GATEWAY_URL: '',};</script><script type="importmap">{"imports":{"AndroidFullscreen-WY77EVVT":"/dli/BuildArtifacts/esm/dli/AndroidFullscreen-WY77EVVT.js","AppLinkReplacer":"/dli/BuildArtifacts/esm/dli/AppLinkReplacer.entry.P5ZYS2WF.js","BingoGameGrid":"/dli/BuildArtifacts/esm/dli/BingoGameGrid.entry.57NJQ755.js","BingoMediumTileSlider":"/dli/BuildArtifacts/esm/dli/BingoMediumTileSlider.entry.JCX2SB45.js","BingoMegaTile":"/dli/BuildArtifacts/esm/dli/BingoMegaTile.entry.77CT6UL5.js","BingoWinnersList":"/dli/BuildArtifacts/esm/dli/BingoWinnersList.entry.Y6GA4W44.js","BlackJackSeatSelector":"/dli/BuildArtifacts/esm/dli/BlackJackSeatSelector.entry.J5HOK4DG.js","CategoryList":"/dli/BuildArtifacts/esm/dli/CategoryList.entry.67C3CVZB.js","Countdown":"/dli/BuildArtifacts/esm/dli/Countdown.e
+...[truncated]...
+
+
+===== 200 https://content.sb.danskespil.dk/content-service/api/v1/q/drilldown-tree?drilldownNodeIds=1&eventState=OPEN_EVENT&includeMarketGroupCodeCombis=true&lang=da-DK&channel=I =====
+content-type: application/json
+
+{"data":{"drilldownNodes":[{"id":"1","levelNumber":1,"name":"Sports","alternativeNames":[],"drilldownNodeIsDisplayed":true,"displayOrder":0,"channels":["I"],"refRecordType":"drilldownTag","refRecordId":"1","code":null,"drilldownNodes":[{"id":"12","levelNumber":2,"name":"Fodbold","alternativeNames":[],"drilldownNodeIsDisplayed":true,"displayOrder":-470,"channels":["I"],"refRecordType":"drilldownTag","refRecordId":"12","code":"soccer","marketGroupCodeCombis":[{"id":"1","name":"Kampvinder","displayOrder":1,"groupCodeCombis":[{"groupCodes":["MATCH_RESULT","MATCH_RESULT_EXTRA_TIME_ONLY","WINNER_OF_TIE","TO_WIN_THE_TROPHY","GOALSCORER_TEAM_NEXT","MATCH_WINNER_3_WAY"],"displayOrder":1}],"substituteGroupCodes":["GOALSCORER_TEAM_NEXT"]},{"id":"2","name":"Antal mål","displayOrder":2,"groupCodeCombis":[{"groupCodes":["TOTAL_GOALS_OVER/UNDER","TOTAL_GOALS_OVER/UNDER_EXTRA_TIME_ONLY"],"displayOrder":1}],"substituteGroupCodes":[]},{"id":"5","name":"Handicap","displayOrder":3,"groupCodeCombis":[{"groupCodes":["HANDICAP","HANDICAP_2_WAY_EXTRA_TIME","HANDICAP_3_WAY"],"displayOrder":1}],"substituteGroupCodes":[]},{"id":"3","name":"Begge hold scorer","displayOrder":4,"groupCodeCombis":[{"groupCodes":["BOTH_TEAMS_TO_SCORE","BOTH_TEAMS_TO_SCORE_EXTRA_TIME"],"displayOrder":1}],"substituteGroupCodes":[]},{"id":"4","name":"Dobbeltchance","displayOrder":5,"groupCodeCombis":[{"groupCodes":["DOUBLE_CHANCE","DOUBLE_RESULT_EXTRA_TIME"],"displayOrder":1}],"substituteGroupCodes":[]},{"id":"6","name":"Pengene tilbage ved uafgjort","displayOrder":6,"groupCodeCombis":[{"groupCodes":["NO_BET_DRAW","DRAW_NO_BET"],"displayOrder":1}],"substituteGroupCodes":[]}],"drilldownNodes":[{"id":"23870","levelNumber":3,"name":"Verden","alternativeNames":[],"drilldownNodeIsDisplayed":true,"displayOrder":-1250,"channels":["I"],"refRecordType":"drilldownTag","refRecordId":"23870","code":"soccer","marketGroupCodeCombis":[],"drilldownNodes":[{"id":"23907","levelNumber":4,"name":"Venskabskampe","alternativeNames":[],"drilldownNodeIsDisplayed":true,"displayOrder":-8500,"channels":["I"],"refRecordType":"drilldownTag","refRecordId":"23907","code":"soccer"},{"id":"25260","levelNumber":4,"name":"VM","alternativeNames":[],"drilldownNodeIsDisplayed":true,"displayOrder":-8400,"channels":["I"],"refRecordType":"drilldownTag","refRecordId":"25260","code":"soccer"},{"id":"27001","levelNumber":4,"name":"Tournoi Maurice Revello","alternativeNames":[],"drilldownNodeIsDisplayed":true,"displayOrder":-7250,"channels":["I"],"refRecordType":"drilldownTag","refRecordId":"27001","code":"soccer"},{"id":"23959","levelNumber":4,"name":"Venskabskampe (k)","alternativeNames":[],"drilldownNodeIsDisplayed":true,"displayOrder":-901,"channels":["I"],"refRecordType":"drilldownTag","refRecordId":"23959","code":"soccer"},{"id":"25912","levelNumber":4,"name":"Ballon d`Or","alternativeNames":[],"drilldownNodeIsDisplayed":true,"displayOrder":0,"channels":["I"],"refRecordType":"drilldownTag","refRecordId":"25912","code":"soccer"},{"id":"24027","levelNumber":4,"name":"Venskabskampe U21","alternativeNames":[],"drilldownNodeIsDisplayed":true,"displayOrder":0,"channels":["I"],"refRecordType":"drilldownTag","refRecordId":"24027","code":"soccer"}]},{"id":"70","levelNumber":3,"name":"Danmark","alternativeNames":[],"drilldownNodeIsDisplayed":true,"displayOrder":-1245,"channels":["I"],"refRecordType":"drilldownTag","refRecordId":"70","code":"soccer","marketGroupCodeCombis":[],"drilldownNodes":[{"id":"23746","levelNumber":4,"name":"Danmark Superligaen","alternativeNames":[],"drilldownNodeIsDisplayed":true,"displayOrder":-8300,"channels":["I"],"refRecordType":"drilldownTag","refRecordId":"23746","code":"soccer"},{"id":"16349","levelNumber":4,"name":"Danmark 1. division","alternativeNames":[],"drilldownNodeIsDisplayed":true,"displayOrder":-8275,"channels":["I"],"refRecordType":"drilldownTag","refRecordId":"16349","code":"soccer"}]},{"id":"176","levelNumber":3,"name":"England","alternativeNames":[],"drilldownNodeIsDisplayed":true,
+...[truncated]...
+
+
+===== 200 https://content.sb.danskespil.dk/content-service/api/v1/q/cms-content?appRef=sgd-web-app&brand=sgd-b1&channel=I&clientAttributes=anonymous&deviceBrowser=chrome&deviceOs=windows&eventId=9654758&formFactor=desktop&freetext=fodbold&freetext2=verden&freetext3=vm&freetext4=sydkorea-tjekkiet&includeChildMarkets=true&lang=da-DK&language=da&route=Event =====
+content-type: application/json
+
+{"data":{"cmsContent":{"context":{"route":"Event","subRoute":null,"language":"da","multilingual":[{"languageId":"da","eventName":"Sydkorea - Tjekkiet","meetingName":null,"competitionName":"VM","categoryName":"Verden","sportName":"Fodbold","pageSlug":null}],"formFactor":"desktop","appRef":["sgd-web-app"],"eventId":"9654758","eventName":"Sydkorea - Tjekkiet","meetingId":null,"meetingName":null,"raceNumber":null,"eventBlurb":null,"competitionId":"25260","competitionName":"VM","competitionBlurb":null,"categoryId":"23870","categoryName":"Verden","categoryBlurb":null,"sportId":"12","sportName":"Fodbold","sportBlurb":null,"poolId":null,"poolName":null,"poolBlurb":null,"layoutVariant":null},"items":[{"location":"NavDrawer/Content","type":"Menu","data":{"isHighlighted":false,"uid":1619,"isPublished":true,"variant":"vertical1","isIconMenu":false,"clientAttributes":null,"title":"AKTUELT","isCollapsible":false,"items":[{"text":"Live","iconClass":"icon--in-play","notifyIconClass":null,"menuItemIdentifier":null,"clientAttributes":["anonymous","authenticated"],"navigation":{"route":"InPlay","newWindow":false,"urlContext":"internal"},"items":null},{"text":"Dagens kampe","iconClass":"icon--futures","notifyIconClass":null,"menuItemIdentifier":null,"clientAttributes":["anonymous","authenticated"],"navigation":{"route":"Dagenskampe","newWindow":false,"urlContext":"internal"},"items":null},{"text":"VM-kvalifikation Europa","iconClass":"icon--football","notifyIconClass":null,"menuItemIdentifier":null,"clientAttributes":["anonymous","authenticated"],"navigation":{"url":"https://danskespil.dk/oddset/sports/competition/26542/uefa-vm-kvalifikation/matches","newWindow":false,"urlContext":"external"},"items":null},{"text":"EM-kvalifikation U21","iconClass":"icon--football","notifyIconClass":null,"menuItemIdentifier":null,"clientAttributes":["anonymous","authenticated"],"navigation":{"url":"https://danskespil.dk/oddset/sports/competition/27007/u21-em-kvalifikation/matches","newWindow":false,"urlContext":"external"},"items":null},{"text":"VM-kvalifikation Afrika","iconClass":"icon--football","notifyIconClass":null,"menuItemIdentifier":null,"clientAttributes":["anonymous","authenticated"],"navigation":{"url":"https://danskespil.dk/oddset/sports/competition/26544/caf-vm-kvalifikation/matches","newWindow":false,"urlContext":"external"},"items":null},{"text":"NFL","iconClass":"icon--american-football","notifyIconClass":null,"menuItemIdentifier":null,"clientAttributes":["anonymous","authenticated"],"navigation":{"url":"https://danskespil.dk/oddset/sports/competition/20144/usa-nfl/matches","newWindow":false,"urlContext":"external"},"items":null}]}},{"location":"NavDrawer/Content","type":"Menu","data":{"isHighlighted":false,"uid":1620,"isPublished":true,"variant":null,"isIconMenu":false,"clientAttributes":null,"title":"GENVEJE","isCollapsible":false,"items":[{"text":"Alle kampe","iconClass":"ds-icon--all-sports","notifyIconClass":null,"menuItemIdentifier":null,"clientAttributes":["anonymous","authenticated"],"navigation":{"url":"https://danskespil.dk/oddset/sports/matches","newWindow":false,"urlContext":"external"},"items":null},{"text":"Stillinger","iconClass":"icon--statistics","notifyIconClass":null,"menuItemIdentifier":null,"clientAttributes":["anonymous","authenticated"],"navigation":{"url":"https://danskespil.dk/oddset/promo/livescore/two","newWindow":false,"urlContext":"external"},"items":null},{"text":"Streaming + TV","iconClass":"icon--event-live-stream","notifyIconClass":null,"menuItemIdentifier":null,"clientAttributes":["anonymous","authenticated"],"navigation":{"url":"https://danskespil.dk/oddset/sports/matches?preselectedFilters=event_list_show_live_stream","newWindow":false,"urlContext":"external"},"items":null},{"text":"Klub Oddset","iconClass":"icon--pool-tickets","notifyIconClass":null,"menuItemIdentifier":null,"clientAttributes":["anonymous","authenticated"],"navigation":{"url":"https://danskespil.dk/kluboddset","newWindow":false,"urlContext":"e
+...[truncated]...
+
+
+===== 200 https://content.sb.danskespil.dk/content-service/api/v1/q/events-by-ids?eventIds=9654758&includeChildMarkets=false&includeCollections=false&includePriorityCollectionChildMarkets=false&includePriceHistory=false&includeCommentary=true&includeIncidents=true&includeRace=false&includeMedia=true&includePools=false&includeNonFixedOdds=false&lang=da-DK&channel=I =====
+content-type: application/json
+
+{"data":{"events":[{"id":"9654758","externalIds":[{"id":"13345002","provider":"betgenius"},{"id":"4667752","provider":"enetpulse"},{"id":"sr:match:66456906","provider":"betradar"},{"id":"18464126","provider":"lsports"}],"extKey":null,"retailCode":null,"name":"Sydkorea - Tjekkiet","active":true,"displayed":true,"status":"ACTIVE","displayOrder":0,"popularityOrder":null,"channels":["R","S","I","M"],"sortCode":"MTCH","startTime":"2026-06-12T02:00:00Z","started":false,"liveNow":false,"liveBettingAvailable":false,"liveRcpBettingAvailable":false,"precannedSelectionCombisCount":0,"resulted":false,"settled":false,"cashoutAvailable":true,"sportId":"21","competitionDrilldownTagId":"25260","raceNumber":0,"venue":null,"isVoid":false,"blurb":null,"fixedOddsAvailable":true,"rcpAvailable":true,"statisticsAvailable":true,"neutralVenue":false,"meeting":null,"teams":[{"id":null,"side":"HOME","name":"Sydkorea","alternativeNames":[{"type":"FULL","value":"Sydkorea"}],"code":null,"externalId":null,"status":null},{"id":null,"side":"AWAY","name":"Tjekkiet","alternativeNames":[{"type":"FULL","value":"Tjekkiet"}],"code":null,"externalId":null,"status":null}],"mediaProviders":[],"type":{"id":"1069354","name":"VM","alternativeNames":[],"displayOrder":"-8400","fixedOddsAvailable":true},"class":{"id":"1005611","name":"Verden","displayOrder":"-1250"},"category":{"id":"21","name":"Fodbold","displayOrder":"-470","code":"FOOTBALL"},"marketCount":109,"marketCounts":{"total":109,"fixedOdds":109},"commentary":{"clock":null,"participants":[{"id":"8265022","name":"Czechia","type":"GROUP","role":"Away Team","roleCode":"AWAY","active":true},{"id":"8265021","name":"Korea Republic","type":"GROUP","role":"Home Team","roleCode":"HOME","active":true}],"facts":[],"periods":[]}}]},"extensions":{"eventCount":1},"errors":[]}
+
+
+===== 200 https://content.sb.danskespil.dk/content-service/api/v1/q/event-list?startTimeFrom=2026-06-01T22%3A00%3A00Z&startTimeTo=2026-12-29T22%3A59%3A59Z&maxEvents=6&orderEventsBy=displayOrder&excludeEventsWithNoMarkets=false&eventSortsIncluded=MTCH&prioritisePrimaryMarkets=true&includeCommentary=true&includeMedia=true&drilldownTagIds=25260&useMarketGroupCodeCombis=true&lang=da-DK&channel=I =====
+content-type: application/json
+
+{"data":{"events":[{"id":"9721765","externalIds":[{"id":"13345004","provider":"betgenius"},{"id":"4667755","provider":"enetpulse"},{"id":"sr:match:66456912","provider":"betradar"},{"id":"18657070","provider":"lsports"}],"extKey":null,"retailCode":null,"name":"Tjekkiet - Mexico","active":true,"displayed":true,"status":"ACTIVE","displayOrder":0,"popularityOrder":null,"channels":["R","S","I","M"],"sortCode":"MTCH","startTime":"2026-06-25T01:00:00Z","started":false,"liveNow":false,"liveBettingAvailable":false,"liveRcpBettingAvailable":false,"resulted":false,"settled":false,"cashoutAvailable":true,"sportId":"21","competitionDrilldownTagId":"25260","raceNumber":0,"venue":null,"isVoid":false,"blurb":null,"fixedOddsAvailable":true,"rcpAvailable":false,"statisticsAvailable":true,"neutralVenue":false,"meeting":null,"teams":[{"id":null,"side":"HOME","name":"Tjekkiet","alternativeNames":[{"type":"FULL","value":"Tjekkiet"}],"code":null,"externalId":null,"status":null},{"id":null,"side":"AWAY","name":"Mexico","alternativeNames":[{"type":"FULL","value":"Mexico"}],"code":null,"externalId":null,"status":null}],"mediaProviders":[],"type":{"id":"1069354","name":"VM","alternativeNames":[],"displayOrder":"-8400","fixedOddsAvailable":true},"class":{"id":"1005611","name":"Verden","displayOrder":"-1250"},"category":{"id":"21","name":"Fodbold","displayOrder":"-470","code":"FOOTBALL"},"marketCount":79,"marketCounts":{"total":79,"fixedOdds":79},"commentary":{"clock":null,"participants":[{"id":"8386775","name":"Czechia","type":"GROUP","role":"Home Team","roleCode":"HOME","active":true},{"id":"8386776","name":"Mexico","type":"GROUP","role":"Away Team","roleCode":"AWAY","active":true}],"facts":[],"periods":[]}},{"id":"9751180","externalIds":[{"id":"13345038","provider":"betgenius"},{"id":"4667773","provider":"enetpulse"},{"id":"sr:match:66456946","provider":"betradar"},{"id":"18494010","provider":"lsports"}],"extKey":null,"retailCode":null,"name":"Tyrkiet - Paraguay","active":true,"displayed":true,"status":"ACTIVE","displayOrder":0,"popularityOrder":null,"channels":["R","S","I","M"],"sortCode":"MTCH","startTime":"2026-06-20T03:00:00Z","started":false,"liveNow":false,"liveBettingAvailable":false,"liveRcpBettingAvailable":false,"resulted":false,"settled":false,"cashoutAvailable":true,"sportId":"21","competitionDrilldownTagId":"25260","raceNumber":0,"venue":null,"isVoid":false,"blurb":null,"fixedOddsAvailable":true,"rcpAvailable":false,"statisticsAvailable":true,"neutralVenue":false,"meeting":null,"teams":[{"id":null,"side":"HOME","name":"Tyrkiet","alternativeNames":[{"type":"FULL","value":"Tyrkiet"}],"code":null,"externalId":null,"status":null},{"id":null,"side":"AWAY","name":"Paraguay","alternativeNames":[{"type":"FULL","value":"Paraguay"}],"code":null,"externalId":null,"status":null}],"mediaProviders":[],"type":{"id":"1069354","name":"VM","alternativeNames":[],"displayOrder":"-8400","fixedOddsAvailable":true},"class":{"id":"1005611","name":"Verden","displayOrder":"-1250"},"category":{"id":"21","name":"Fodbold","displayOrder":"-470","code":"FOOTBALL"},"marketCount":68,"marketCounts":{"total":68,"fixedOdds":68},"commentary":{"clock":null,"participants":[{"id":"8440010","name":"Paraguay","type":"GROUP","role":"Away Team","roleCode":"AWAY","active":true},{"id":"8440009","name":"Turkiye","type":"GROUP","role":"Home Team","roleCode":"HOME","active":true}],"facts":[],"periods":[]}},{"id":"9751183","externalIds":[{"id":"13344924","provider":"betgenius"},{"id":"4667800","provider":"enetpulse"},{"id":"sr:match:66457000","provider":"betradar"},{"id":"18487383","provider":"lsports"}],"extKey":null,"retailCode":null,"name":"Uruguay - Kap Verde","active":true,"displayed":true,"status":"ACTIVE","displayOrder":0,"popularityOrder":null,"channels":["R","S","I","M"],"sortCode":"MTCH","startTime":"2026-06-21T22:00:00Z","started":false,"liveNow":false,"liveBettingAvailable":false,"liveRcpBettingAvailable":false,"resulted":false,"settled":false,"cashoutAvailable":true,"sportId"
+...[truncated]...
+
+
+===== 200 https://content.sb.danskespil.dk/content-service/api/v1/q/events-by-ids?eventIds=9654758&includeChildMarkets=true&includeCollections=true&includePriorityCollectionChildMarkets=true&includePriceHistory=false&includeCommentary=false&includeIncidents=false&includeRace=false&includeMedia=true&includePools=false&includeNonFixedOdds=false&includeGlobalParticipants=true&lang=da-DK&channel=I =====
+content-type: application/json
+
+{"data":{"events":[{"id":"9654758","externalIds":[{"id":"13345002","provider":"betgenius"},{"id":"4667752","provider":"enetpulse"},{"id":"sr:match:66456906","provider":"betradar"},{"id":"18464126","provider":"lsports"}],"extKey":null,"retailCode":null,"name":"Sydkorea - Tjekkiet","active":true,"displayed":true,"status":"ACTIVE","displayOrder":0,"popularityOrder":null,"channels":["R","S","I","M"],"sortCode":"MTCH","startTime":"2026-06-12T02:00:00Z","started":false,"liveNow":false,"liveBettingAvailable":false,"liveRcpBettingAvailable":false,"precannedSelectionCombisCount":0,"resulted":false,"settled":false,"cashoutAvailable":true,"sportId":"21","competitionDrilldownTagId":"25260","raceNumber":0,"venue":null,"isVoid":false,"blurb":null,"fixedOddsAvailable":true,"rcpAvailable":true,"statisticsAvailable":true,"neutralVenue":false,"meeting":null,"teams":[{"id":null,"side":"HOME","name":"Sydkorea","alternativeNames":[{"type":"FULL","value":"Sydkorea"}],"code":null,"externalId":null,"status":null},{"id":null,"side":"AWAY","name":"Tjekkiet","alternativeNames":[{"type":"FULL","value":"Tjekkiet"}],"code":null,"externalId":null,"status":null}],"globalParticipants":null,"mediaProviders":[],"collections":[{"id":"1000266","name":"Handicap","displayOrder":5,"marketIdsBLDR":["271789668","271789669","271789670"],"marketIdsFixedOdds":["271789668","271789669","271789670"],"flags":[]},{"id":"37","name":"Mål","displayOrder":120,"marketIdsBLDR":[],"marketIdsFixedOdds":["271808508","271808587","284006480"],"flags":[]},{"id":"38","name":"Halvleg","displayOrder":90,"marketIdsBLDR":["271789690"],"marketIdsFixedOdds":["271789690","271808547"],"flags":[]},{"id":"45","name":"Spillere","displayOrder":40,"marketIdsBLDR":[],"marketIdsFixedOdds":["289076879","289076880","289076899"],"flags":[]},{"id":"46","name":"Populære","displayOrder":0,"marketIdsBLDR":["271788750","271789668","271789669","271789670","271789715","271789716","271792164","271792167","271792168","271792169","271792171"],"marketIdsFixedOdds":["271788750","271789668","271789669","271789670","271789712","271789715","271789716","271792164","271792167","271792168","271792169","271792171","271808476"],"flags":[]},{"id":"193","name":"Asian","displayOrder":130,"marketIdsBLDR":[],"marketIdsFixedOdds":["271789679","271789680","271789681","271789683","271789684","271789686","271789689","271789705","271789706","271789707","271789708","271789710","271792163","271792165","271792170","271792172","271792173","271792174","271792175","271792176","271792177","271792178","271792179","271792180","271792181","271792182","271792186","271807952","271807953","271807954","271807956","271807957","271807958","271807964","271807965","271807966","271807967","271808447","271808451","271808604","271808605","284006514","284006518"],"flags":[]},{"id":"40","name":"Resultat","displayOrder":100,"marketIdsBLDR":["271788751"],"marketIdsFixedOdds":["271788751","271789719","271808425"],"flags":[]},{"id":"41","name":"O/U Mål","displayOrder":53,"marketIdsBLDR":["271789716","271792164","271792167","271792168","271792169","271792171","271808442","271808443","271808452","271808538","271808598","271808599","271808607","271808608","271808609","271808626","271808639","273943975","273943976","273943984","273943985","273943987","273943995","273943996","273944001"],"marketIdsFixedOdds":["271789716","271792164","271792167","271792168","271792169","271792171","271807945","271807946","271808442","271808443","271808452","271808538","271808573","271808598","271808599","271808607","271808608","271808609","271808626","271808639","273943975","273943976","273943984","273943985","273943987","273943995","273943996","273944001"],"flags":[]},{"id":"43","name":"Hjørne","displayOrder":57,"marketIdsBLDR":[],"marketIdsFixedOdds":["284006466","284006469","284006476","284006478","284006479","284006482","284006486","284006487","284006488","284006489","289288806","289288807","289288808","289288811","289288813","289288814","289288816","289288817","289288824","289289
+...[truncated]...

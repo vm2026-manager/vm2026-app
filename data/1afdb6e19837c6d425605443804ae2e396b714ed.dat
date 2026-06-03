@@ -1,0 +1,81 @@
+var _excluded = ["variant", "onClick", "classNames", "disabled", "icon", "loading"];
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var n = Object.getOwnPropertySymbols(e); for (r = 0; r < n.length; r++) o = n[r], -1 === t.indexOf(o) && {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (-1 !== e.indexOf(n)) continue; t[n] = r[n]; } return t; }
+defineDs('DanskeSpil/Domain/Feature.LoyaltyClub/Components/Button/Button', ['Shared/Framework/Mithril/Scripts/Core/Mithril', 'DanskeSpil/Domain/Feature.LoyaltyClub/Components/Svg/Svg'],
+// eslint-disable-next-line no-unused-vars
+function (m, Svg) {
+  var Button = {
+    controller: function () {
+      return {};
+    },
+    view: function (ignorectrl, _ref, children) {
+      var {
+          variant,
+          onClick = () => {},
+          classNames = '',
+          disabled = false,
+          icon,
+          loading = false
+        } = _ref,
+        attributes = _objectWithoutProperties(_ref, _excluded);
+      var styles = ['cursor-pointer text-nowrap'];
+      var variants = {
+        primary: 'hover:no-underline content-center flex-inline justify-center items-center transition-all duration-200 border-width-button rounded-button w-fit italic py-button-medium-y px-button-medium-x h-button-medium leading-button-medium text-size-button-medium font-family-button-medium font-button-medium bg-button-primary text-button-primary border-button-primary hover:bg-button-primary-hover hover:border-button-primary-hover focus:button-primary-focus',
+        secondary: 'hover:no-underline content-center flex-inline justify-center items-center transition-all duration-200 border-width-button rounded-button w-fit italic py-button-medium-y px-button-medium-x h-button-medium leading-button-medium text-size-button-medium font-family-button-medium font-button-medium bg-button-tertiary-inverted text-button-tertiary-inverted border-button-tertiary-inverted hover:bg-button-tertiary-hover-inverted hover:border-button-tertiary-hover-inverted',
+        mini: 'hover:no-underline content-center flex-inline justify-center items-center transition-all duration-200 border-width-button rounded-button w-fit italic py-button-small-y px-button-small-x h-button-small leading-button-small text-size-button-small font-family-button-small font-button-small bg-button-tertiary-inverted text-button-tertiary-inverted border-button-tertiary-inverted hover:bg-button-tertiary-hover-inverted hover:border-button-tertiary-hover-inverted',
+        plain: 'hover:no-underline px-32 flex justify-center text-white text-size-text-xsmall font-100',
+        icon: 'hover:no-underline w-24 h-24 bg-white bg-white-opacity-200 rounded-full',
+        media: 'hover:no-underline h-82 w-82'
+      };
+      var disabledVariant = '!bg-button-primary-disabled !text-button-primary-disabled !border-button-primary-disabled !cursor-not-allowed';
+      if (variant) {
+        if (!variants.hasOwnProperty(variant)) {
+          throw new Error("Invalid button variant \"".concat(variant, "\"."));
+        }
+        styles.push(variants[variant]);
+      }
+      if (classNames) {
+        styles.push(classNames);
+      }
+      if (disabled) {
+        styles.push(disabledVariant);
+      }
+      return m("button", _extends({
+        "aria-label": "".concat(variant, " button"),
+        onclick: !loading ? onClick : '',
+        className: styles.join(' ')
+      }, attributes), loading ? m("svg", {
+        "class": "animate-loader ".concat(variant === 'mini' ? 'h-12 w-12' : 'h-20 w-20', " text-white mx-auto"),
+        xmlns: 'http://www.w3.org/2000/svg',
+        fill: 'none',
+        viewBox: '0 0 24 24'
+      }, m("circle", {
+        "class": 'opacity-25',
+        cx: '12',
+        cy: '12',
+        r: '10',
+        stroke: 'currentColor',
+        "stroke-width": '4'
+      }), m("path", {
+        "class": 'opacity-75',
+        fill: 'currentColor',
+        d: 'M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z'
+      })) : variant !== 'icon' && variant !== 'media' ? m("div", {
+        className: 'flex justify-center items-center gap-10'
+      }, icon ? Svg("".concat(icon), {
+        class: 'mb-2 w-16 h-16'
+      }) : null, m("div", {
+        className: "".concat(variant !== 'plain' ? 'uppercase' : '', " ").concat(icon ? '' : 'mx-auto')
+      }, children)) : icon && (variant == 'icon' || variant == 'plain') ? Svg("".concat(icon), {
+        class: 'h-16 w-24'
+      }) : variant == 'media' ? m("div", {
+        className: 'h-82 w-82 flex justify-center items-center bg-primary-600 rounded-full'
+      }, Svg("".concat(icon), {
+        class: 'w-30 h-30'
+      })) : null);
+    }
+  };
+  return Button;
+});
+//# sourceMappingURL=Button.js.map

@@ -1,0 +1,215 @@
+﻿team_id,land,role,player_name,role_order,source_note,confidence,is_confirmed,matched_player_id,matched_player_name,matched_team_id,matched_position,match_method
+ALG,Algeriet,penalty,Mahrez,1,,medium,false,riyad_mahrez__alg,Riyad Mahrez,ALG,FWD,safe_alias
+ALG,Algeriet,direct_fk,Mahrez,1,,medium,false,riyad_mahrez__alg,Riyad Mahrez,ALG,FWD,safe_alias
+ALG,Algeriet,corner_indirect_fk,Chaibi,1,,medium,false,fares_cha_bi__alg,Fares Chaibi,ALG,MID,safe_alias
+ALG,Algeriet,corner_indirect_fk,Mahrez,2,,medium,false,riyad_mahrez__alg,Riyad Mahrez,ALG,FWD,safe_alias
+ARG,Argentina,penalty,Messi,1,,medium,false,lionel_messi__arg,Lionel Messi,ARG,FWD,safe_alias
+ARG,Argentina,direct_fk,Messi,1,(1),medium,false,lionel_messi__arg,Lionel Messi,ARG,FWD,safe_alias
+ARG,Argentina,corner_indirect_fk,Messi,1,,medium,false,lionel_messi__arg,Lionel Messi,ARG,FWD,safe_alias
+ARG,Argentina,corner_indirect_fk,De Paul,2,,medium,false,rodrigo_de_paul__arg,Rodrigo de Paul,ARG,MID,safe_alias
+AUS,Australien,penalty,Boyle,1,,medium,false,martin_boyle__aus,Martin Boyle,AUS,FWD,safe_alias
+AUS,Australien,direct_fk,Hrustic,1,,medium,false,ajdin_hrustic__aus,Ajdin Hrustic,AUS,MID,safe_alias
+AUS,Australien,direct_fk,Irankunda,2,,medium,false,nestory_irankunda__aus,Nestory Irankunda,AUS,FWD,safe_alias
+AUS,Australien,corner_indirect_fk,Hrustic,1,,medium,false,ajdin_hrustic__aus,Ajdin Hrustic,AUS,MID,safe_alias
+AUS,Australien,corner_indirect_fk,Boyle,2,,medium,false,martin_boyle__aus,Martin Boyle,AUS,FWD,safe_alias
+BEL,Belgien,penalty,Lukaku,1,,medium,false,romelu_lukaku__bel,Romelu Lukaku,BEL,FWD,safe_alias
+BEL,Belgien,penalty,de Bruyne,2,,medium,false,kevin_de_bruyne__bel,Kevin De Bruyne,BEL,MID,safe_alias
+BEL,Belgien,direct_fk,de Bruyne,1,,medium,false,kevin_de_bruyne__bel,Kevin De Bruyne,BEL,MID,safe_alias
+BEL,Belgien,direct_fk,de Cuyper,2,,medium,false,maxim_de_cuyper__bel,Maxim De Cuyper,BEL,DEF,safe_alias
+BEL,Belgien,corner_indirect_fk,de Bruyne,1,(1),medium,false,kevin_de_bruyne__bel,Kevin De Bruyne,BEL,MID,safe_alias
+BIH,Bosnien-Hercegovina,penalty,Dzeko,1,,medium,false,edin_dzeko__bih,Edin Dzeko,BIH,FWD,safe_alias
+BIH,Bosnien-Hercegovina,direct_fk,Tahirovic,1,,medium,false,benjamin_tahirovic__bih,Benjamin Tahirovic,BIH,MID,safe_alias
+BIH,Bosnien-Hercegovina,corner_indirect_fk,Alajbegovic,1,(1),medium,false,kerim_alajbegovi__bih,Kerim Alajbegovic,BIH,MID,safe_alias
+BIH,Bosnien-Hercegovina,corner_indirect_fk,Bajraktarevic,2,,medium,false,esmir_bajraktarevic__bih,Esmir Bajraktarevic,BIH,MID,safe_alias
+BRA,Brasilien,penalty,Raphinha,1,,medium,false,raphinha__bra,Raphinha,BRA,FWD,exact
+BRA,Brasilien,penalty,Neymar,2,,medium,false,neymar_jr__bra,Neymar Jr.,BRA,FWD,alias_name_exact
+BRA,Brasilien,direct_fk,Raphinha,1,(1),medium,false,raphinha__bra,Raphinha,BRA,FWD,exact
+BRA,Brasilien,direct_fk,Neymar,2,,medium,false,neymar_jr__bra,Neymar Jr.,BRA,FWD,alias_name_exact
+BRA,Brasilien,corner_indirect_fk,Raphinha,1,,medium,false,raphinha__bra,Raphinha,BRA,FWD,exact
+BRA,Brasilien,corner_indirect_fk,Neymar,2,(2),medium,false,neymar_jr__bra,Neymar Jr.,BRA,FWD,alias_name_exact
+CAN,Canada,penalty,J. David,1,,medium,false,jonathan_david__can,Jonathan David,CAN,FWD,safe_alias
+CAN,Canada,direct_fk,Choiniere,1,,medium,false,mathieu_choiniere__can,Mathieu Choiniere,CAN,MID,safe_alias
+CAN,Canada,direct_fk,Cornelius,2,,medium,false,derek_cornelius__can,Derek Cornelius,CAN,DEF,safe_alias
+CAN,Canada,corner_indirect_fk,Choiniere,1,,medium,false,mathieu_choiniere__can,Mathieu Choiniere,CAN,MID,safe_alias
+CAN,Canada,corner_indirect_fk,Ahmed,2,,medium,false,ali_ahmed__can,Ali Ahmed,CAN,MID,safe_alias
+COL,Colombia,penalty,J. Rodriguez,1,,medium,false,james_rodr_guez__col,James Rodriguez,COL,MID,safe_alias
+COL,Colombia,direct_fk,J. Rodriguez,1,,medium,false,james_rodr_guez__col,James Rodriguez,COL,MID,safe_alias
+COL,Colombia,corner_indirect_fk,J. Rodriguez,1,(2),medium,false,james_rodr_guez__col,James Rodriguez,COL,MID,safe_alias
+CUW,Curaçao,penalty,L. Bacuna,1,,medium,false,leandro_bacuna__cuw,Leandro Bacuna,CUW,MID,safe_alias
+CUW,Curaçao,direct_fk,L. Bacuna,1,,medium,false,leandro_bacuna__cuw,Leandro Bacuna,CUW,MID,safe_alias
+CUW,Curaçao,direct_fk,Martha,2,(1),medium,false,ar_jany_martha__cuw,Ar'jany Martha,CUW,FWD,safe_alias
+CUW,Curaçao,corner_indirect_fk,Antonisse,1,,medium,false,jeremy_antonisse__cuw,Jeremy Antonisse,CUW,FWD,safe_alias
+CUW,Curaçao,corner_indirect_fk,L. Bacuna,2,,medium,false,leandro_bacuna__cuw,Leandro Bacuna,CUW,MID,safe_alias
+COD,DR Congo,penalty,Wissa,1,,medium,false,yoane_wissa__cod,Yoane Wissa,COD,FWD,safe_alias
+COD,DR Congo,direct_fk,Bongonda,1,,medium,false,theo_bongonda__cod,Theo Bongonda,COD,MID,safe_alias
+COD,DR Congo,direct_fk,Masuaku,2,,medium,false,arthur_masuaku__cod,Arthur Masuaku,COD,DEF,safe_alias
+COD,DR Congo,corner_indirect_fk,Bongonda,1,,medium,false,theo_bongonda__cod,Theo Bongonda,COD,MID,safe_alias
+COD,DR Congo,corner_indirect_fk,Masuaku,2,,medium,false,arthur_masuaku__cod,Arthur Masuaku,COD,DEF,safe_alias
+ECU,Ecuador,penalty,E. Valencia,1,,medium,false,enner_valencia__ecu,Enner Valencia,ECU,FWD,safe_alias
+ECU,Ecuador,direct_fk,E. Valencia,1,,medium,false,enner_valencia__ecu,Enner Valencia,ECU,FWD,safe_alias
+ECU,Ecuador,direct_fk,Estupinan,2,,medium,false,pervis_estupi_n__ecu,Pervis Estupinan,ECU,DEF,safe_alias
+ECU,Ecuador,corner_indirect_fk,Plata,2,,medium,false,gonzalo_plata__ecu,Gonzalo Plata,ECU,MID,safe_alias
+EGY,Egypten,penalty,Salah,1,,medium,false,mohamed_salah__egy,Mohamed Salah,EGY,FWD,safe_alias
+EGY,Egypten,penalty,Marmoush,2,,medium,false,omar_marmoush__egy,Omar Marmoush,EGY,FWD,safe_alias
+EGY,Egypten,direct_fk,Salah,1,,medium,false,mohamed_salah__egy,Mohamed Salah,EGY,FWD,safe_alias
+EGY,Egypten,corner_indirect_fk,Salah,1,,medium,false,mohamed_salah__egy,Mohamed Salah,EGY,FWD,safe_alias
+CIV,Elfenbenskysten,penalty,Kessie,1,,medium,false,franck_kessie__civ,Franck Kessie,CIV,MID,safe_alias
+CIV,Elfenbenskysten,penalty,Sangare,2,,medium,false,ibrahim_sangare__civ,Ibrahim Sangare,CIV,MID,safe_alias
+CIV,Elfenbenskysten,direct_fk,Diallo,1,,medium,false,amad_diallo__civ,Amad Diallo,CIV,FWD,safe_alias
+CIV,Elfenbenskysten,corner_indirect_fk,Diallo,1,,medium,false,amad_diallo__civ,Amad Diallo,CIV,FWD,safe_alias
+ENG,England,penalty,Kane,1,,medium,false,harry_kane__eng,Harry Kane,ENG,FWD,safe_alias
+ENG,England,direct_fk,James,1,(1),medium,false,reece_james__eng,Reece James,ENG,DEF,safe_alias
+ENG,England,direct_fk,Kane,2,,medium,false,harry_kane__eng,Harry Kane,ENG,FWD,safe_alias
+ENG,England,corner_indirect_fk,Rice,1,(2),medium,false,declan_rice__eng,Declan Rice,ENG,MID,safe_alias
+FRA,Frankrig,penalty,Mbappe,1,,medium,false,kylian_mbapp__fra,Kylian Mbappe,FRA,FWD,safe_alias
+FRA,Frankrig,direct_fk,Olise,1,,medium,false,michael_olise__fra,Michael Olise,FRA,FWD,safe_alias
+FRA,Frankrig,direct_fk,Digne,2,,medium,false,lucas_digne__fra,Lucas Digne,FRA,DEF,safe_alias
+FRA,Frankrig,corner_indirect_fk,Olise,1,,medium,false,michael_olise__fra,Michael Olise,FRA,FWD,safe_alias
+GHA,Ghana,penalty,Ayew,1,,medium,false,jordan_ayew__gha,Jordan Ayew,GHA,FWD,safe_alias
+GHA,Ghana,direct_fk,Ayew,1,,medium,false,jordan_ayew__gha,Jordan Ayew,GHA,FWD,safe_alias
+GHA,Ghana,corner_indirect_fk,Ayew,1,,medium,false,jordan_ayew__gha,Jordan Ayew,GHA,FWD,safe_alias
+HAI,Haiti,penalty,Nazon,1,,medium,false,duckens_nazon__hai,Duckens Nazon,HAI,FWD,safe_alias
+HAI,Haiti,direct_fk,Bellegarde,2,,medium,false,jean_ricner_bellegarde__hai,Jean-Ricner Bellegarde,HAI,MID,safe_alias
+HAI,Haiti,corner_indirect_fk,Bellegarde,2,,medium,false,jean_ricner_bellegarde__hai,Jean-Ricner Bellegarde,HAI,MID,safe_alias
+NED,Holland,penalty,Depay,1,,medium,false,memphis_depay__ned,Memphis Depay,NED,FWD,safe_alias
+NED,Holland,penalty,Gakpo,2,,medium,false,cody_gakpo__ned,Cody Gakpo,NED,FWD,safe_alias
+NED,Holland,direct_fk,Depay,1,,medium,false,memphis_depay__ned,Memphis Depay,NED,FWD,safe_alias
+NED,Holland,corner_indirect_fk,Depay,1,(1),medium,false,memphis_depay__ned,Memphis Depay,NED,FWD,safe_alias
+NED,Holland,corner_indirect_fk,Gakpo,2,,medium,false,cody_gakpo__ned,Cody Gakpo,NED,FWD,safe_alias
+IRN,Iran,penalty,Taremi,1,,medium,false,mehdi_taremi__irn,Mehdi Taremi,IRN,FWD,safe_alias
+IRN,Iran,direct_fk,Ghoddos,1,,medium,false,saman_ghoddos__irn,Saman Ghoddos,IRN,MID,safe_alias
+IRN,Iran,corner_indirect_fk,Ghoddos,1,,medium,false,saman_ghoddos__irn,Saman Ghoddos,IRN,MID,safe_alias
+IRQ,Irak,penalty,Hussein,1,,medium,false,aymen_hussein__irq,Aymen Hussein,IRQ,FWD,safe_alias
+IRQ,Irak,penalty,Al Ammari,2,,medium,false,amir_al_ammari__irq,Amir Al Ammari,IRQ,MID,safe_alias
+IRQ,Irak,direct_fk,Al Ammari,1,,medium,false,amir_al_ammari__irq,Amir Al Ammari,IRQ,MID,safe_alias
+IRQ,Irak,corner_indirect_fk,Al Ammari,1,,medium,false,amir_al_ammari__irq,Amir Al Ammari,IRQ,MID,safe_alias
+IRQ,Irak,corner_indirect_fk,Jasim,2,,medium,false,ali_jasim__irq,Ali Jasim,IRQ,MID,safe_alias
+JPN,Japan,penalty,Ueda,1,,medium,false,ayase_ueda__jpn,Ayase Ueda,JPN,FWD,safe_alias
+JPN,Japan,direct_fk,J. Ito,1,,medium,false,junya_ito__jpn,Junya Ito,JPN,MID,safe_alias
+JPN,Japan,direct_fk,Kubo,2,,medium,false,takefusa_kubo__jpn,Takefusa Kubo,JPN,MID,safe_alias
+JPN,Japan,corner_indirect_fk,J. Ito,1,,medium,false,junya_ito__jpn,Junya Ito,JPN,MID,safe_alias
+JPN,Japan,corner_indirect_fk,Kamada,2,,medium,false,daichi_kamada__jpn,Daichi Kamada,JPN,MID,safe_alias
+JOR,Jordan,direct_fk,Al Mardi,1,,medium,false,mahmoud_al_mardi__jor,Mahmoud Al-Mardi,JOR,MID,safe_alias
+JOR,Jordan,direct_fk,Tamari,2,,medium,false,mousa_tamari__jor,Mousa Tamari,JOR,MID,safe_alias
+JOR,Jordan,corner_indirect_fk,Al Mardi,1,,medium,false,mahmoud_al_mardi__jor,Mahmoud Al-Mardi,JOR,MID,safe_alias
+JOR,Jordan,corner_indirect_fk,Tamaru,2,,medium,false,mousa_tamari__jor,Mousa Tamari,JOR,MID,alias_id
+CPV,Kap Verde,penalty,S. Cabral,2,,medium,false,sidny_lopes_cabral__cpv,Sidny Lopes Cabral,CPV,DEF,safe_alias
+CPV,Kap Verde,direct_fk,S. Cabral,1,,medium,false,sidny_lopes_cabral__cpv,Sidny Lopes Cabral,CPV,DEF,safe_alias
+CPV,Kap Verde,corner_indirect_fk,S. Cabral,1,,medium,false,sidny_lopes_cabral__cpv,Sidny Lopes Cabral,CPV,DEF,safe_alias
+CPV,Kap Verde,corner_indirect_fk,Monteiro,2,,medium,false,jamiro_monteiro__cpv,Jamiro Monteiro,CPV,MID,safe_alias
+CRO,Kroatien,penalty,Modric,1,,medium,false,luka_modri__cro,Luka Modric,CRO,MID,safe_alias
+CRO,Kroatien,direct_fk,Modric,1,,medium,false,luka_modri__cro,Luka Modric,CRO,MID,safe_alias
+CRO,Kroatien,corner_indirect_fk,Modric,1,,medium,false,luka_modri__cro,Luka Modric,CRO,MID,safe_alias
+CRO,Kroatien,corner_indirect_fk,Baturina,2,,medium,false,martin_baturina__cro,Martin Baturina,CRO,MID,safe_alias
+MAR,Marokko,penalty,Diaz,2,,medium,false,brahim_d_az__mar,Brahim Diaz,MAR,FWD,safe_alias
+MAR,Marokko,direct_fk,Hakimi,1,,medium,false,achraf_hakimi__mar,Achraf Hakimi,MAR,DEF,safe_alias
+MAR,Marokko,direct_fk,Diaz,2,,medium,false,brahim_d_az__mar,Brahim Diaz,MAR,FWD,safe_alias
+MAR,Marokko,corner_indirect_fk,Hakimi,1,,medium,false,achraf_hakimi__mar,Achraf Hakimi,MAR,DEF,safe_alias
+MAR,Marokko,corner_indirect_fk,Diaz,2,,medium,false,brahim_d_az__mar,Brahim Diaz,MAR,FWD,safe_alias
+MEX,Mexico,penalty,R. Jimenez,1,,medium,false,ra_l_jim_nez__mex,Raul Jimenez,MEX,FWD,safe_alias
+MEX,Mexico,direct_fk,E. Alvarez,1,,medium,false,edson_alvarez__mex,Edson Alvarez,MEX,MID,safe_alias
+MEX,Mexico,direct_fk,R. Jimenez,2,,medium,false,ra_l_jim_nez__mex,Raul Jimenez,MEX,FWD,safe_alias
+MEX,Mexico,corner_indirect_fk,B. Gutierrez,1,,medium,false,brian_gutierrez__mex,Brian Gutierrez,MEX,MID,safe_alias
+MEX,Mexico,corner_indirect_fk,Vega,2,,medium,false,alexis_vega__mex,Alexis Vega,MEX,FWD,safe_alias
+NZL,New Zealand,penalty,Wood,1,,medium,false,chris_wood__nzl,Chris Wood,NZL,FWD,safe_alias
+NZL,New Zealand,direct_fk,Randall,1,,medium,false,jesse_randall__nzl,Jesse Randall,NZL,FWD,safe_alias
+NZL,New Zealand,direct_fk,Singh,2,,medium,false,sarpreet_singh__nzl,Sarpreet Singh,NZL,MID,safe_alias
+NZL,New Zealand,corner_indirect_fk,Payne,1,,medium,false,tim_payne__nzl,Tim Payne,NZL,DEF,safe_alias
+NZL,New Zealand,corner_indirect_fk,Randall,2,,medium,false,jesse_randall__nzl,Jesse Randall,NZL,FWD,safe_alias
+NOR,Norge,penalty,Haaland,1,,medium,false,erling_haaland__nor,Erling Haaland,NOR,FWD,safe_alias
+NOR,Norge,direct_fk,Ødegaard,1,,medium,false,martin_degaard__nor,Martin Ødegaard,NOR,MID,safe_alias
+NOR,Norge,corner_indirect_fk,Ryerson,1,,medium,false,julian_ryerson__nor,Julian Ryerson,NOR,DEF,safe_alias
+NOR,Norge,corner_indirect_fk,Ødegaard,2,,medium,false,martin_degaard__nor,Martin Ødegaard,NOR,MID,safe_alias
+PAN,Panama,penalty,E. Davis,1,,medium,false,erick_davis__pan,Eric Davis,PAN,DEF,safe_alias
+PAN,Panama,penalty,I. Diaz,2,,medium,false,ismael_d_az__pan,Ismael Diaz,PAN,FWD,safe_alias
+PAN,Panama,direct_fk,E. Davis,1,,medium,false,erick_davis__pan,Eric Davis,PAN,DEF,safe_alias
+PAN,Panama,direct_fk,Murillo,2,,medium,false,michael_amir_murillo__pan,Michael Amir Murillo,PAN,DEF,safe_alias
+PAN,Panama,corner_indirect_fk,E. Davis,1,(1),medium,false,erick_davis__pan,Eric Davis,PAN,DEF,safe_alias
+PAR,Paraguay,penalty,Enciso,1,,medium,false,julio_enciso__par,Julio Enciso,PAR,FWD,safe_alias
+PAR,Paraguay,direct_fk,D. Gomez,1,,medium,false,diego_g_mez__par,Diego Gomez,PAR,MID,safe_alias
+PAR,Paraguay,direct_fk,Enciso,2,,medium,false,julio_enciso__par,Julio Enciso,PAR,FWD,safe_alias
+PAR,Paraguay,corner_indirect_fk,Almiron,1,,medium,false,miguel_almir_n__par,Miguel Almiron,PAR,MID,safe_alias
+PAR,Paraguay,corner_indirect_fk,D. Gomez,2,(2),medium,false,diego_g_mez__par,Diego Gomez,PAR,MID,safe_alias
+POR,Portugal,penalty,Ronaldo,1,,medium,false,cristiano_ronaldo__por,Cristiano Ronaldo,POR,FWD,safe_alias
+POR,Portugal,penalty,Fernandes,2,,medium,false,bruno_fernandes__por,Bruno Fernandes,POR,MID,safe_alias
+POR,Portugal,direct_fk,Ronaldo,1,,medium,false,cristiano_ronaldo__por,Cristiano Ronaldo,POR,FWD,safe_alias
+POR,Portugal,direct_fk,Fernandes,2,,medium,false,bruno_fernandes__por,Bruno Fernandes,POR,MID,safe_alias
+POR,Portugal,corner_indirect_fk,Fernandes,1,,medium,false,bruno_fernandes__por,Bruno Fernandes,POR,MID,safe_alias
+POR,Portugal,corner_indirect_fk,Mendes,2,,medium,false,nuno_mendes__por,Nuno Mendes,POR,DEF,safe_alias
+QAT,Qatar,penalty,Afif,1,,medium,false,akram_afif__qat,Akram Afif,QAT,FWD,safe_alias
+QAT,Qatar,penalty,A. Ali,2,,medium,false,almoez_ali__qat,Almoez Ali,QAT,FWD,safe_alias
+QAT,Qatar,direct_fk,Afif,1,,medium,false,akram_afif__qat,Akram Afif,QAT,FWD,safe_alias
+QAT,Qatar,direct_fk,Al Mannai,2,,medium,false,mohamed_al_mannai__qat,Mohamed Al-Mannai,QAT,MID,safe_alias
+QAT,Qatar,corner_indirect_fk,Afif,1,,medium,false,akram_afif__qat,Akram Afif,QAT,FWD,safe_alias
+QAT,Qatar,corner_indirect_fk,Al Mannai,2,,medium,false,mohamed_al_mannai__qat,Mohamed Al-Mannai,QAT,MID,safe_alias
+KSA,Saudi-Arabien,penalty,Al-Buraikan,1,,medium,false,firas_al_buraikan__ksa,Firas Al-Buraikan,KSA,FWD,safe_alias
+SUI,Schweiz,penalty,Xhaka,1,,medium,false,granit_xhaka__sui,Granit Xhaka,SUI,MID,safe_alias
+SUI,Schweiz,penalty,Embolo,2,,medium,false,breel_embolo__sui,Breel Embolo,SUI,FWD,safe_alias
+SUI,Schweiz,direct_fk,Xhaka,1,,medium,false,granit_xhaka__sui,Granit Xhaka,SUI,MID,safe_alias
+SUI,Schweiz,corner_indirect_fk,Vagas,1,(2),medium,false,ruben_vargas__sui,Ruben Vargas,SUI,FWD,alias_id
+SUI,Schweiz,corner_indirect_fk,Rieder,2,,medium,false,fabian_rieder__sui,Fabian Rieder,SUI,MID,safe_alias
+SCO,Skotland,penalty,McTominay,1,,medium,false,scott_mctominay__sco,Scott McTominay,SCO,MID,safe_alias
+SCO,Skotland,penalty,Christie,2,,medium,false,ryan_christie__sco,Ryan Christie,SCO,MID,safe_alias
+SCO,Skotland,direct_fk,McGinn,1,,medium,false,john_mcginn__sco,John McGinn,SCO,MID,safe_alias
+SCO,Skotland,direct_fk,McTominay,2,,medium,false,scott_mctominay__sco,Scott McTominay,SCO,MID,safe_alias
+SCO,Skotland,corner_indirect_fk,McGinn,1,,medium,false,john_mcginn__sco,John McGinn,SCO,MID,safe_alias
+SCO,Skotland,corner_indirect_fk,L. Ferguson,2,,medium,false,lewis_ferguson__sco,Lewis Ferguson,SCO,MID,safe_alias
+SEN,Senegal,penalty,Mane,1,,medium,false,sadio_man__sen,Sadio Mane,SEN,FWD,safe_alias
+SEN,Senegal,penalty,I. Sarr,2,,medium,false,ismaila_sarr__sen,Ismaila Sarr,SEN,MID,safe_alias
+SEN,Senegal,direct_fk,Mane,1,,medium,false,sadio_man__sen,Sadio Mane,SEN,FWD,safe_alias
+ESP,Spanien,penalty,Oyarzabal,1,,medium,false,mikel_oyarzabal__esp,Mikel Oyarzabal,ESP,FWD,safe_alias
+ESP,Spanien,direct_fk,Oyarzabal,1,(1),medium,false,mikel_oyarzabal__esp,Mikel Oyarzabal,ESP,FWD,safe_alias
+ESP,Spanien,corner_indirect_fk,Baena,1,,medium,false,alex_baena__esp,Alex Baena,ESP,MID,safe_alias
+ESP,Spanien,corner_indirect_fk,Yamal,2,,medium,false,lamine_yamal__esp,Lamine Yamal,ESP,FWD,safe_alias
+RSA,Sydafrika,penalty,Appollis,1,,medium,false,oswin_appollis__rsa,Oswin Appollis,RSA,FWD,safe_alias
+RSA,Sydafrika,direct_fk,Modiba,1,,medium,false,aubrey_modiba__rsa,Aubrey Modiba,RSA,DEF,safe_alias
+RSA,Sydafrika,direct_fk,Appolis,2,,medium,false,oswin_appollis__rsa,Oswin Appollis,RSA,FWD,alias_id
+RSA,Sydafrika,corner_indirect_fk,Appollis,1,,medium,false,oswin_appollis__rsa,Oswin Appollis,RSA,FWD,safe_alias
+RSA,Sydafrika,corner_indirect_fk,Modiba,2,,medium,false,aubrey_modiba__rsa,Aubrey Modiba,RSA,DEF,safe_alias
+KOR,Sydkorea,penalty,Son,1,,medium,false,son_heung_min__kor,Heung-Min Son,KOR,FWD,safe_alias
+KOR,Sydkorea,direct_fk,Son,1,,medium,false,son_heung_min__kor,Heung-Min Son,KOR,FWD,safe_alias
+KOR,Sydkorea,direct_fk,K. Lee,2,,medium,false,lee_kang_in__kor,Kang-In Lee,KOR,MID,safe_alias
+KOR,Sydkorea,corner_indirect_fk,Son,1,,medium,false,son_heung_min__kor,Heung-Min Son,KOR,FWD,safe_alias
+KOR,Sydkorea,corner_indirect_fk,K. Lee,2,,medium,false,lee_kang_in__kor,Kang-In Lee,KOR,MID,safe_alias
+SWE,Sverige,penalty,Gyökeres,1,,medium,false,viktor_gyokeres__swe,Viktor Gyökeres,SWE,FWD,safe_alias
+SWE,Sverige,penalty,Isak,2,,medium,false,alexander_isak__swe,Alexander Isak,SWE,FWD,safe_alias
+SWE,Sverige,direct_fk,Ayari,1,,medium,false,yasin_ayari__swe,Yasin Ayari,SWE,MID,safe_alias
+SWE,Sverige,direct_fk,Isak,2,,medium,false,alexander_isak__swe,Alexander Isak,SWE,FWD,safe_alias
+SWE,Sverige,corner_indirect_fk,Elanga,1,,medium,false,anthony_elanga__swe,Anthony Elanga,SWE,FWD,safe_alias
+SWE,Sverige,corner_indirect_fk,Svensson,2,,medium,false,daniel_svensson__swe,Daniel Svensson,SWE,DEF,safe_alias
+TUN,Tunesien,penalty,Gharbi,1,,medium,false,isma_l_gharbi__tun,Ismael Gharbi,TUN,MID,safe_alias
+TUN,Tunesien,penalty,Abdi,2,,medium,false,ali_abdi__tun,Ali Abdi,TUN,DEF,safe_alias
+TUN,Tunesien,direct_fk,Mejbri,1,,medium,false,hannibal_mejbri__tun,Hannibal Mejbri,TUN,MID,safe_alias
+TUN,Tunesien,direct_fk,Abdi,2,,medium,false,ali_abdi__tun,Ali Abdi,TUN,DEF,safe_alias
+TUN,Tunesien,corner_indirect_fk,Mejbri,1,,medium,false,hannibal_mejbri__tun,Hannibal Mejbri,TUN,MID,safe_alias
+TUN,Tunesien,corner_indirect_fk,Abdi,2,,medium,false,ali_abdi__tun,Ali Abdi,TUN,DEF,safe_alias
+TUR,Tyrkiet,penalty,Calhanoglu,1,,medium,false,hakan_calhanoglu__tur,Hakan Calhanoglu,TUR,MID,safe_alias
+TUR,Tyrkiet,direct_fk,Calhanoglu,1,,medium,false,hakan_calhanoglu__tur,Hakan Calhanoglu,TUR,MID,safe_alias
+TUR,Tyrkiet,direct_fk,Güler,2,,medium,false,arda_g_ler__tur,Arda Güler,TUR,MID,safe_alias
+TUR,Tyrkiet,corner_indirect_fk,Güler,1,(2),medium,false,arda_g_ler__tur,Arda Güler,TUR,MID,safe_alias
+TUR,Tyrkiet,corner_indirect_fk,Calhanoglu,2,(2),medium,false,hakan_calhanoglu__tur,Hakan Calhanoglu,TUR,MID,safe_alias
+GER,Tyskland,penalty,Havertz,1,,medium,false,kai_havertz__ger,Kai Havertz,GER,FWD,safe_alias
+GER,Tyskland,penalty,Kimmich,2,,medium,false,joshua_kimmich__ger,Joshua Kimmich,GER,MID,safe_alias
+GER,Tyskland,direct_fk,Raum,1,(1),medium,false,david_raum__ger,David Raum,GER,DEF,safe_alias
+GER,Tyskland,direct_fk,Wirtz,2,(1),medium,false,florian_wirtz__ger,Florian Wirtz,GER,MID,safe_alias
+GER,Tyskland,corner_indirect_fk,Raum,1,(1),medium,false,david_raum__ger,David Raum,GER,DEF,safe_alias
+GER,Tyskland,corner_indirect_fk,Kimmich,2,,medium,false,joshua_kimmich__ger,Joshua Kimmich,GER,MID,safe_alias
+URU,Uruguay,penalty,Valverde,1,,medium,false,federico_valverde__uru,Federico Valverde,URU,MID,safe_alias
+URU,Uruguay,penalty,Nunez,2,,medium,false,darwin_nunez__uru,Darwin Nunez,URU,FWD,safe_alias
+URU,Uruguay,direct_fk,Valverde,1,,medium,false,federico_valverde__uru,Federico Valverde,URU,MID,safe_alias
+URU,Uruguay,corner_indirect_fk,Arrascaeta,1,,medium,false,giorgian_de_arrascaeta__uru,Giorgian De Arrascaeta,URU,MID,safe_alias
+URU,Uruguay,corner_indirect_fk,Valverde,2,,medium,false,federico_valverde__uru,Federico Valverde,URU,MID,safe_alias
+USA,USA,penalty,Pulisic,1,,medium,false,christian_pulisic__usa,Christian Pulisic,USA,FWD,safe_alias
+USA,USA,direct_fk,Pulisic,1,,medium,false,christian_pulisic__usa,Christian Pulisic,USA,FWD,safe_alias
+USA,USA,corner_indirect_fk,Tillman,1,,medium,false,malik_tillman__usa,Malik Tillman,USA,MID,safe_alias
+USA,USA,corner_indirect_fk,Pulisic,2,,medium,false,christian_pulisic__usa,Christian Pulisic,USA,FWD,safe_alias
+UZB,Uzbekistan,penalty,Shomurodov,1,,medium,false,eldor_shomurodov__uzb,Eldor Shomurodov,UZB,FWD,safe_alias
+UZB,Uzbekistan,penalty,Shukurov,2,,medium,false,otabek_shukurov__uzb,Otabek Shukurov,UZB,MID,safe_alias
+UZB,Uzbekistan,direct_fk,Shukurov,2,,medium,false,otabek_shukurov__uzb,Otabek Shukurov,UZB,MID,safe_alias
+UZB,Uzbekistan,corner_indirect_fk,Shukurov,2,,medium,false,otabek_shukurov__uzb,Otabek Shukurov,UZB,MID,safe_alias
+AUT,Østrig,penalty,Arnautovic,1,,medium,false,marko_arnautovi__aut,Marko Arnautovic,AUT,FWD,safe_alias
+AUT,Østrig,penalty,Sabitzer,2,,medium,false,marcel_sabitzer__aut,Marcel Sabitzer,AUT,MID,safe_alias
+AUT,Østrig,direct_fk,Sabitzer,1,,medium,false,marcel_sabitzer__aut,Marcel Sabitzer,AUT,MID,safe_alias
+AUT,Østrig,direct_fk,Alaba,2,,medium,false,david_alaba__aut,David Alaba,AUT,DEF,safe_alias
+AUT,Østrig,corner_indirect_fk,Sabitzer,1,,medium,false,marcel_sabitzer__aut,Marcel Sabitzer,AUT,MID,safe_alias
+AUT,Østrig,corner_indirect_fk,Alaba,2,,medium,false,david_alaba__aut,David Alaba,AUT,DEF,safe_alias

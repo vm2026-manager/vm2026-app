@@ -11,6 +11,7 @@ DATA_DIR = PROJECT_ROOT / "data"
 FIXTURES_PATH = DATA_DIR / "fixtures_group.csv"
 ODDS_PATH = DATA_DIR / "match_odds_probs.csv"
 TEAM_POWER_PATH = DATA_DIR / "team_power.csv"
+CLEAN_SHEET_PROBS_PATH = DATA_DIR / "clean_sheet_probs_bet365.csv"
 OUT_PATH = DATA_DIR / "fixture_strength_multipliers.csv"
 
 OUT_FIELDS = [
@@ -27,6 +28,8 @@ OUT_FIELDS = [
     "away_goal_multiplier",
     "home_assist_multiplier",
     "away_assist_multiplier",
+    "home_clean_sheet_prob_fair",
+    "away_clean_sheet_prob_fair",
     "home_clean_sheet_multiplier",
     "away_clean_sheet_multiplier",
     "source",
@@ -95,6 +98,25 @@ def load_team_power() -> dict[str, float]:
     return powers
 
 
+def load_clean_sheet_probs() -> tuple[dict[tuple[str, str], float], float | None]:
+    if not CLEAN_SHEET_PROBS_PATH.exists():
+        return {}, None
+
+    probs: dict[tuple[str, str], float] = {}
+    values: list[float] = []
+    for row in read_csv(CLEAN_SHEET_PROBS_PATH):
+        match_id = txt(row.get("match_id"))
+        team = txt(row.get("team_id")).upper()
+        prob = to_float(row.get("clean_sheet_prob_fair"))
+        if match_id and team and prob is not None:
+            probs[(match_id, team)] = prob
+            values.append(prob)
+
+    if not values:
+        return probs, None
+    return probs, sum(values) / len(values)
+
+
 def advantage_from_power(home: str, away: str, team_power: dict[str, float]) -> tuple[float, float, str]:
     home_power = team_power.get(home)
     away_power = team_power.get(away)
@@ -114,11 +136,22 @@ def multipliers(advantage: float) -> tuple[float, float, float]:
     return goal, assist, clean_sheet
 
 
-def build_rows(fixtures: list[dict[str, str]], odds_by_match: dict[str, dict[str, str]], team_power: dict[str, float]) -> tuple[list[dict[str, str]], int, int, int]:
+def clean_sheet_multiplier_from_prob(prob: float, baseline_prob: float) -> float:
+    return clamp(1 + 1.35 * (prob - baseline_prob), 0.55, 1.45)
+
+
+def build_rows(
+    fixtures: list[dict[str, str]],
+    odds_by_match: dict[str, dict[str, str]],
+    team_power: dict[str, float],
+    clean_sheet_probs: dict[tuple[str, str], float],
+    clean_sheet_baseline_prob: float | None,
+) -> tuple[list[dict[str, str]], int, int, int, int]:
     out_rows: list[dict[str, str]] = []
     odds_count = 0
     fallback_count = 0
     neutral_count = 0
+    clean_sheet_count = 0
 
     for fixture in fixtures:
         match_id = txt(fixture.get("match_id"))
@@ -147,6 +180,19 @@ def build_rows(fixtures: list[dict[str, str]], odds_by_match: dict[str, dict[str
 
         home_goal, home_assist, home_clean_sheet = multipliers(home_advantage)
         away_goal, away_assist, away_clean_sheet = multipliers(away_advantage)
+        source_parts = [source]
+
+        home_clean_sheet_prob = clean_sheet_probs.get((match_id, home))
+        away_clean_sheet_prob = clean_sheet_probs.get((match_id, away))
+        if (
+            clean_sheet_baseline_prob is not None
+            and home_clean_sheet_prob is not None
+            and away_clean_sheet_prob is not None
+        ):
+            home_clean_sheet = clean_sheet_multiplier_from_prob(home_clean_sheet_prob, clean_sheet_baseline_prob)
+            away_clean_sheet = clean_sheet_multiplier_from_prob(away_clean_sheet_prob, clean_sheet_baseline_prob)
+            source_parts.append("bet365_clean_sheet")
+            clean_sheet_count += 1
 
         out_rows.append(
             {
@@ -163,13 +209,15 @@ def build_rows(fixtures: list[dict[str, str]], odds_by_match: dict[str, dict[str
                 "away_goal_multiplier": fmt(away_goal),
                 "home_assist_multiplier": fmt(home_assist),
                 "away_assist_multiplier": fmt(away_assist),
+                "home_clean_sheet_prob_fair": fmt(home_clean_sheet_prob),
+                "away_clean_sheet_prob_fair": fmt(away_clean_sheet_prob),
                 "home_clean_sheet_multiplier": fmt(home_clean_sheet),
                 "away_clean_sheet_multiplier": fmt(away_clean_sheet),
-                "source": source,
+                "source": "+".join(source_parts),
             }
         )
 
-    return out_rows, odds_count, fallback_count, neutral_count
+    return out_rows, odds_count, fallback_count, neutral_count, clean_sheet_count
 
 
 def main() -> int:
@@ -180,7 +228,14 @@ def main() -> int:
     fixtures = read_csv(FIXTURES_PATH)
     odds_by_match = load_odds()
     team_power = load_team_power()
-    rows, odds_count, fallback_count, neutral_count = build_rows(fixtures, odds_by_match, team_power)
+    clean_sheet_probs, clean_sheet_baseline_prob = load_clean_sheet_probs()
+    rows, odds_count, fallback_count, neutral_count, clean_sheet_count = build_rows(
+        fixtures,
+        odds_by_match,
+        team_power,
+        clean_sheet_probs,
+        clean_sheet_baseline_prob,
+    )
 
     with OUT_PATH.open("w", encoding="utf-8-sig", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=OUT_FIELDS)
@@ -192,6 +247,9 @@ def main() -> int:
     print(f"Antal med odds: {odds_count}")
     print(f"Antal med fallback: {fallback_count}")
     print(f"Antal neutral default: {neutral_count}")
+    print(f"Antal med bet365 clean sheet: {clean_sheet_count}")
+    if clean_sheet_baseline_prob is not None:
+        print(f"Bet365 clean sheet baseline: {clean_sheet_baseline_prob:.4f}")
 
     team_rows = []
     for row in rows:

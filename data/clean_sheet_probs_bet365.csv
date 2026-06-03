@@ -1,0 +1,145 @@
+﻿match_id,home,away,kickoff_dk,team_id,opponent_team_id,is_home,match_raw,team_raw,clean_sheet_yes_odds,clean_sheet_no_odds,clean_sheet_yes_implied,clean_sheet_no_implied,clean_sheet_prob_fair,source
+1,MEX,RSA,2026-06-11 21:00,MEX,RSA,1,Mexico v South Africa,Mexico,1.72,2,0.581395,0.5,0.537634,bet365 clean sheet yes/no 2026-06-02
+1,MEX,RSA,2026-06-11 21:00,RSA,MEX,0,Mexico v South Africa,South Africa,5.5,1.14,0.181818,0.877193,0.171687,bet365 clean sheet yes/no 2026-06-02
+2,KOR,CZE,2026-06-12 04:00,CZE,KOR,0,South Korea v Czechia,Czechia,3,1.36,0.333333,0.735294,0.311927,bet365 clean sheet yes/no 2026-06-02
+2,KOR,CZE,2026-06-12 04:00,KOR,CZE,1,South Korea v Czechia,South Korea,3,1.36,0.333333,0.735294,0.311927,bet365 clean sheet yes/no 2026-06-02
+3,CAN,BIH,2026-06-12 21:00,BIH,CAN,0,Canada v Bosnia-Herzegovina,Bosnia-Herzegovina,4,1.22,0.25,0.819672,0.233716,bet365 clean sheet yes/no 2026-06-02
+3,CAN,BIH,2026-06-12 21:00,CAN,BIH,1,Canada v Bosnia-Herzegovina,Canada,2.2,1.61,0.454545,0.621118,0.422572,bet365 clean sheet yes/no 2026-06-02
+4,USA,PAR,2026-06-13 03:00,PAR,USA,0,USA v Paraguay,Paraguay,3.75,1.25,0.266667,0.8,0.25,bet365 clean sheet yes/no 2026-06-02
+4,USA,PAR,2026-06-13 03:00,USA,PAR,1,USA v Paraguay,USA,2.25,1.57,0.444444,0.636943,0.410995,bet365 clean sheet yes/no 2026-06-02
+5,QAT,SUI,2026-06-13 21:00,QAT,SUI,1,Qatar v Switzerland,Qatar,9,1.071,0.111111,0.933707,0.106345,bet365 clean sheet yes/no 2026-06-02
+5,QAT,SUI,2026-06-13 21:00,SUI,QAT,0,Qatar v Switzerland,Switzerland,1.66,2.1,0.60241,0.47619,0.558511,bet365 clean sheet yes/no 2026-06-02
+6,BRA,MAR,2026-06-14 00:00,BRA,MAR,1,Brazil v Morocco,Brazil,2,1.72,0.5,0.581395,0.462366,bet365 clean sheet yes/no 2026-06-02
+6,BRA,MAR,2026-06-14 00:00,MAR,BRA,0,Brazil v Morocco,Morocco,5,1.16,0.2,0.862069,0.188312,bet365 clean sheet yes/no 2026-06-02
+7,HAI,SCO,2026-06-14 03:00,HAI,SCO,1,Haiti v Scotland,Haiti,6,1.12,0.166667,0.892857,0.157303,bet365 clean sheet yes/no 2026-06-02
+7,HAI,SCO,2026-06-14 03:00,SCO,HAI,0,Haiti v Scotland,Scotland,1.9,1.8,0.526316,0.555556,0.486486,bet365 clean sheet yes/no 2026-06-02
+8,AUS,TUR,2026-06-14 06:00,AUS,TUR,1,Australia v Türkiye,Australia,4.5,1.18,0.222222,0.847458,0.207746,bet365 clean sheet yes/no 2026-06-02
+8,AUS,TUR,2026-06-14 06:00,TUR,AUS,0,Australia v Türkiye,Türkiye,2.25,1.57,0.444444,0.636943,0.410995,bet365 clean sheet yes/no 2026-06-02
+9,GER,CUW,2026-06-14 19:00,CUW,GER,0,Germany v Curaçao,Curaçao,29,1.006,0.034483,0.994036,0.033527,bet365 clean sheet yes/no 2026-06-02
+9,GER,CUW,2026-06-14 19:00,GER,CUW,1,Germany v Curaçao,Germany,1.36,3,0.735294,0.333333,0.688073,bet365 clean sheet yes/no 2026-06-02
+10,NED,JPN,2026-06-14 22:00,JPN,NED,0,Netherlands v Japan,Japan,4.33,1.2,0.230947,0.833333,0.216998,bet365 clean sheet yes/no 2026-06-02
+10,NED,JPN,2026-06-14 22:00,NED,JPN,1,Netherlands v Japan,Netherlands,2.75,1.4,0.363636,0.714286,0.337349,bet365 clean sheet yes/no 2026-06-02
+11,CIV,ECU,2026-06-15 01:00,CIV,ECU,1,Ivory Coast v Ecuador,Ivory Coast,3,1.36,0.333333,0.735294,0.311927,bet365 clean sheet yes/no 2026-06-02
+11,CIV,ECU,2026-06-15 01:00,ECU,CIV,0,Ivory Coast v Ecuador,Ecuador,2.2,1.61,0.454545,0.621118,0.422572,bet365 clean sheet yes/no 2026-06-02
+12,SWE,TUN,2026-06-15 04:00,SWE,TUN,1,Sweden v Tunisia,Sweden,2.25,1.57,0.444444,0.636943,0.410995,bet365 clean sheet yes/no 2026-06-02
+12,SWE,TUN,2026-06-15 04:00,TUN,SWE,0,Sweden v Tunisia,Tunisia,3.75,1.25,0.266667,0.8,0.25,bet365 clean sheet yes/no 2026-06-02
+13,ESP,CPV,2026-06-15 18:00,CPV,ESP,0,Spain v Cape Verde,Cape Verde,19,1.02,0.052632,0.980392,0.050949,bet365 clean sheet yes/no 2026-06-02
+13,ESP,CPV,2026-06-15 18:00,ESP,CPV,1,Spain v Cape Verde,Spain,1.5,2.5,0.666667,0.4,0.625,bet365 clean sheet yes/no 2026-06-02
+14,BEL,EGY,2026-06-15 21:00,BEL,EGY,1,Belgium v Egypt,Belgium,2.37,1.53,0.421941,0.653595,0.392308,bet365 clean sheet yes/no 2026-06-02
+14,BEL,EGY,2026-06-15 21:00,EGY,BEL,0,Belgium v Egypt,Egypt,5.5,1.14,0.181818,0.877193,0.171687,bet365 clean sheet yes/no 2026-06-02
+15,KSA,URU,2026-06-16 00:00,KSA,URU,1,Saudi Arabia v Uruguay,Saudi Arabia,6,1.12,0.166667,0.892857,0.157303,bet365 clean sheet yes/no 2026-06-02
+15,KSA,URU,2026-06-16 00:00,URU,KSA,0,Saudi Arabia v Uruguay,Uruguay,1.9,1.8,0.526316,0.555556,0.486486,bet365 clean sheet yes/no 2026-06-02
+16,IRN,NZL,2026-06-16 03:00,IRN,NZL,1,Iran v New Zealand,Iran,2.25,1.57,0.444444,0.636943,0.410995,bet365 clean sheet yes/no 2026-06-02
+16,IRN,NZL,2026-06-16 03:00,NZL,IRN,0,Iran v New Zealand,New Zealand,3.75,1.25,0.266667,0.8,0.25,bet365 clean sheet yes/no 2026-06-02
+17,FRA,SEN,2026-06-16 21:00,FRA,SEN,1,France v Senegal,France,2,1.72,0.5,0.581395,0.462366,bet365 clean sheet yes/no 2026-06-02
+17,FRA,SEN,2026-06-16 21:00,SEN,FRA,0,France v Senegal,Senegal,6,1.12,0.166667,0.892857,0.157303,bet365 clean sheet yes/no 2026-06-02
+18,IRQ,NOR,2026-06-17 00:00,IRQ,NOR,1,Iraq v Norway,Iraq,10,1.062,0.1,0.94162,0.096004,bet365 clean sheet yes/no 2026-06-02
+18,IRQ,NOR,2026-06-17 00:00,NOR,IRQ,0,Iraq v Norway,Norway,1.66,2.1,0.60241,0.47619,0.558511,bet365 clean sheet yes/no 2026-06-02
+19,ARG,ALG,2026-06-17 03:00,ALG,ARG,0,Argentina v Algeria,Algeria,6,1.12,0.166667,0.892857,0.157303,bet365 clean sheet yes/no 2026-06-02
+19,ARG,ALG,2026-06-17 03:00,ARG,ALG,1,Argentina v Algeria,Argentina,1.8,1.9,0.555556,0.526316,0.513514,bet365 clean sheet yes/no 2026-06-02
+20,AUT,JOR,2026-06-17 06:00,AUT,JOR,1,Austria v Jordan,Austria,1.9,1.8,0.526316,0.555556,0.486486,bet365 clean sheet yes/no 2026-06-02
+20,AUT,JOR,2026-06-17 06:00,JOR,AUT,0,Austria v Jordan,Jordan,8,1.083,0.125,0.923361,0.119234,bet365 clean sheet yes/no 2026-06-02
+21,POR,COD,2026-06-17 19:00,COD,POR,0,Portugal v DR Congo,DR Congo,10,1.062,0.1,0.94162,0.096004,bet365 clean sheet yes/no 2026-06-02
+21,POR,COD,2026-06-17 19:00,POR,COD,1,Portugal v DR Congo,Portugal,1.83,1.83,0.546448,0.546448,0.5,bet365 clean sheet yes/no 2026-06-02
+22,ENG,CRO,2026-06-17 22:00,CRO,ENG,0,England v Croatia,Croatia,4.5,1.18,0.222222,0.847458,0.207746,bet365 clean sheet yes/no 2026-06-02
+22,ENG,CRO,2026-06-17 22:00,ENG,CRO,1,England v Croatia,England,2.3,1.61,0.434783,0.621118,0.411765,bet365 clean sheet yes/no 2026-06-02
+23,GHA,PAN,2026-06-18 01:00,GHA,PAN,1,Ghana v Panama,Ghana,2.5,1.5,0.4,0.666667,0.375,bet365 clean sheet yes/no 2026-06-02
+23,GHA,PAN,2026-06-18 01:00,PAN,GHA,0,Ghana v Panama,Panama,3.75,1.25,0.266667,0.8,0.25,bet365 clean sheet yes/no 2026-06-02
+24,UZB,COL,2026-06-18 04:00,COL,UZB,0,Uzbekistan v Colombia,Colombia,1.83,1.83,0.546448,0.546448,0.5,bet365 clean sheet yes/no 2026-06-02
+24,UZB,COL,2026-06-18 04:00,UZB,COL,1,Uzbekistan v Colombia,Uzbekistan,6,1.12,0.166667,0.892857,0.157303,bet365 clean sheet yes/no 2026-06-02
+25,CZE,RSA,2026-06-18 18:00,CZE,RSA,1,Czechia v South Africa,Czechia,2.25,1.57,0.444444,0.636943,0.410995,bet365 clean sheet yes/no 2026-06-02
+25,CZE,RSA,2026-06-18 18:00,RSA,CZE,0,Czechia v South Africa,South Africa,3.75,1.25,0.266667,0.8,0.25,bet365 clean sheet yes/no 2026-06-02
+26,SUI,BIH,2026-06-18 21:00,BIH,SUI,0,Switzerland v Bosnia-Herzegovina,Bosnia-Herzegovina,5,1.16,0.2,0.862069,0.188312,bet365 clean sheet yes/no 2026-06-02
+26,SUI,BIH,2026-06-18 21:00,SUI,BIH,1,Switzerland v Bosnia-Herzegovina,Switzerland,2,1.72,0.5,0.581395,0.462366,bet365 clean sheet yes/no 2026-06-02
+27,CAN,QAT,2026-06-19 00:00,CAN,QAT,1,Canada v Qatar,Canada,1.61,2.2,0.621118,0.454545,0.577428,bet365 clean sheet yes/no 2026-06-02
+27,CAN,QAT,2026-06-19 00:00,QAT,CAN,0,Canada v Qatar,Qatar,6.5,1.11,0.153846,0.900901,0.145861,bet365 clean sheet yes/no 2026-06-02
+28,MEX,KOR,2026-06-19 03:00,KOR,MEX,0,Mexico v South Korea,South Korea,4,1.22,0.25,0.819672,0.233716,bet365 clean sheet yes/no 2026-06-02
+28,MEX,KOR,2026-06-19 03:00,MEX,KOR,1,Mexico v South Korea,Mexico,2.1,1.66,0.47619,0.60241,0.441489,bet365 clean sheet yes/no 2026-06-02
+29,USA,AUS,2026-06-19 21:00,AUS,USA,0,USA v Australia,Australia,4.5,1.18,0.222222,0.847458,0.207746,bet365 clean sheet yes/no 2026-06-02
+29,USA,AUS,2026-06-19 21:00,USA,AUS,1,USA v Australia,USA,2.2,1.61,0.454545,0.621118,0.422572,bet365 clean sheet yes/no 2026-06-02
+30,SCO,MAR,2026-06-20 00:00,MAR,SCO,0,Scotland v Morocco,Morocco,2.25,1.57,0.444444,0.636943,0.410995,bet365 clean sheet yes/no 2026-06-02
+30,SCO,MAR,2026-06-20 00:00,SCO,MAR,1,Scotland v Morocco,Scotland,3.75,1.25,0.266667,0.8,0.25,bet365 clean sheet yes/no 2026-06-02
+31,BRA,HAI,2026-06-20 03:00,BRA,HAI,1,Brazil v Haiti,Brazil,1.44,2.62,0.694444,0.381679,0.64532,bet365 clean sheet yes/no 2026-06-02
+31,BRA,HAI,2026-06-20 03:00,HAI,BRA,0,Brazil v Haiti,Haiti,21,1.015,0.047619,0.985222,0.046105,bet365 clean sheet yes/no 2026-06-02
+32,TUR,PAR,2026-06-20 06:00,PAR,TUR,0,Türkiye v Paraguay,Paraguay,3.4,1.3,0.294118,0.769231,0.276596,bet365 clean sheet yes/no 2026-06-02
+32,TUR,PAR,2026-06-20 06:00,TUR,PAR,1,Türkiye v Paraguay,Türkiye,2.5,1.5,0.4,0.666667,0.375,bet365 clean sheet yes/no 2026-06-02
+33,NED,SWE,2026-06-20 19:00,NED,SWE,1,Netherlands v Sweden,Netherlands,2.2,1.61,0.454545,0.621118,0.422572,bet365 clean sheet yes/no 2026-06-02
+33,NED,SWE,2026-06-20 19:00,SWE,NED,0,Netherlands v Sweden,Sweden,5,1.16,0.2,0.862069,0.188312,bet365 clean sheet yes/no 2026-06-02
+34,GER,CIV,2026-06-20 22:00,CIV,GER,0,Germany v Ivory Coast,Ivory Coast,6,1.12,0.166667,0.892857,0.157303,bet365 clean sheet yes/no 2026-06-02
+34,GER,CIV,2026-06-20 22:00,GER,CIV,1,Germany v Ivory Coast,Germany,2.2,1.61,0.454545,0.621118,0.422572,bet365 clean sheet yes/no 2026-06-02
+35,ECU,CUW,2026-06-21 02:00,CUW,ECU,0,Ecuador v Curaçao,Curaçao,8,1.083,0.125,0.923361,0.119234,bet365 clean sheet yes/no 2026-06-02
+35,ECU,CUW,2026-06-21 02:00,ECU,CUW,1,Ecuador v Curaçao,Ecuador,1.66,2.1,0.60241,0.47619,0.558511,bet365 clean sheet yes/no 2026-06-02
+36,TUN,JPN,2026-06-21 06:00,JPN,TUN,0,Tunisia v Japan,Japan,2.1,1.66,0.47619,0.60241,0.441489,bet365 clean sheet yes/no 2026-06-02
+36,TUN,JPN,2026-06-21 06:00,TUN,JPN,1,Tunisia v Japan,Tunisia,4,1.22,0.25,0.819672,0.233716,bet365 clean sheet yes/no 2026-06-02
+37,ESP,KSA,2026-06-21 18:00,ESP,KSA,1,Spain v Saudi Arabia,Spain,1.4,2.75,0.714286,0.363636,0.662651,bet365 clean sheet yes/no 2026-06-02
+37,ESP,KSA,2026-06-21 18:00,KSA,ESP,0,Spain v Saudi Arabia,Saudi Arabia,13,1.04,0.076923,0.961538,0.074074,bet365 clean sheet yes/no 2026-06-02
+38,BEL,IRN,2026-06-21 21:00,BEL,IRN,1,Belgium v Iran,Belgium,1.83,1.83,0.546448,0.546448,0.5,bet365 clean sheet yes/no 2026-06-02
+38,BEL,IRN,2026-06-21 21:00,IRN,BEL,0,Belgium v Iran,Iran,6.5,1.11,0.153846,0.900901,0.145861,bet365 clean sheet yes/no 2026-06-02
+39,URU,CPV,2026-06-22 00:00,CPV,URU,0,Uruguay v Cape Verde,Cape Verde,6,1.12,0.166667,0.892857,0.157303,bet365 clean sheet yes/no 2026-06-02
+39,URU,CPV,2026-06-22 00:00,URU,CPV,1,Uruguay v Cape Verde,Uruguay,1.83,1.83,0.546448,0.546448,0.5,bet365 clean sheet yes/no 2026-06-02
+40,NZL,EGY,2026-06-22 03:00,EGY,NZL,0,New Zealand v Egypt,Egypt,2,1.72,0.5,0.581395,0.462366,bet365 clean sheet yes/no 2026-06-02
+40,NZL,EGY,2026-06-22 03:00,NZL,EGY,1,New Zealand v Egypt,New Zealand,4.33,1.2,0.230947,0.833333,0.216998,bet365 clean sheet yes/no 2026-06-02
+41,ARG,AUT,2026-06-22 19:00,ARG,AUT,1,Argentina v Austria,Argentina,2.2,1.61,0.454545,0.621118,0.422572,bet365 clean sheet yes/no 2026-06-02
+41,ARG,AUT,2026-06-22 19:00,AUT,ARG,0,Argentina v Austria,Austria,5,1.16,0.2,0.862069,0.188312,bet365 clean sheet yes/no 2026-06-02
+42,FRA,IRQ,2026-06-22 23:00,FRA,IRQ,1,France v Iraq,France,1.4,2.75,0.714286,0.363636,0.662651,bet365 clean sheet yes/no 2026-06-02
+42,FRA,IRQ,2026-06-22 23:00,IRQ,FRA,0,France v Iraq,Iraq,15,1.03,0.066667,0.970874,0.064255,bet365 clean sheet yes/no 2026-06-02
+43,NOR,SEN,2026-06-23 02:00,NOR,SEN,1,Norway v Senegal,Norway,2.75,1.4,0.363636,0.714286,0.337349,bet365 clean sheet yes/no 2026-06-02
+43,NOR,SEN,2026-06-23 02:00,SEN,NOR,0,Norway v Senegal,Senegal,4,1.22,0.25,0.819672,0.233716,bet365 clean sheet yes/no 2026-06-02
+44,JOR,ALG,2026-06-23 05:00,ALG,JOR,0,Jordan v Algeria,Algeria,2.2,1.61,0.454545,0.621118,0.422572,bet365 clean sheet yes/no 2026-06-02
+44,JOR,ALG,2026-06-23 05:00,JOR,ALG,1,Jordan v Algeria,Jordan,5,1.16,0.2,0.862069,0.188312,bet365 clean sheet yes/no 2026-06-02
+45,POR,UZB,2026-06-23 19:00,POR,UZB,1,Portugal v Uzbekistan,Portugal,1.83,1.83,0.546448,0.546448,0.5,bet365 clean sheet yes/no 2026-06-02
+45,POR,UZB,2026-06-23 19:00,UZB,POR,0,Portugal v Uzbekistan,Uzbekistan,10,1.062,0.1,0.94162,0.096004,bet365 clean sheet yes/no 2026-06-02
+46,ENG,GHA,2026-06-23 22:00,ENG,GHA,1,England v Ghana,England,1.83,1.83,0.546448,0.546448,0.5,bet365 clean sheet yes/no 2026-06-02
+46,ENG,GHA,2026-06-23 22:00,GHA,ENG,0,England v Ghana,Ghana,8,1.083,0.125,0.923361,0.119234,bet365 clean sheet yes/no 2026-06-02
+47,PAN,CRO,2026-06-24 01:00,CRO,PAN,0,Panama v Croatia,Croatia,1.9,1.8,0.526316,0.555556,0.486486,bet365 clean sheet yes/no 2026-06-02
+47,PAN,CRO,2026-06-24 01:00,PAN,CRO,1,Panama v Croatia,Panama,5.5,1.14,0.181818,0.877193,0.171687,bet365 clean sheet yes/no 2026-06-02
+48,COL,COD,2026-06-24 04:00,COD,COL,0,Colombia v DR Congo,DR Congo,5,1.16,0.2,0.862069,0.188312,bet365 clean sheet yes/no 2026-06-02
+48,COL,COD,2026-06-24 04:00,COL,COD,1,Colombia v DR Congo,Colombia,1.72,2,0.581395,0.5,0.537634,bet365 clean sheet yes/no 2026-06-02
+49,SUI,CAN,2026-06-24 21:00,CAN,SUI,0,Switzerland v Canada,Canada,3.75,1.25,0.266667,0.8,0.25,bet365 clean sheet yes/no 2026-06-02
+49,SUI,CAN,2026-06-24 21:00,SUI,CAN,1,Switzerland v Canada,Switzerland,2.62,1.44,0.381679,0.694444,0.35468,bet365 clean sheet yes/no 2026-06-02
+50,BIH,QAT,2026-06-24 21:00,BIH,QAT,1,Bosnia-Herzegovina v Qatar,Bosnia-Herzegovina,2,1.72,0.5,0.581395,0.462366,bet365 clean sheet yes/no 2026-06-02
+50,BIH,QAT,2026-06-24 21:00,QAT,BIH,0,Bosnia-Herzegovina v Qatar,Qatar,5,1.16,0.2,0.862069,0.188312,bet365 clean sheet yes/no 2026-06-02
+51,SCO,BRA,2026-06-25 00:00,BRA,SCO,0,Scotland v Brazil,Brazil,1.83,1.83,0.546448,0.546448,0.5,bet365 clean sheet yes/no 2026-06-02
+51,SCO,BRA,2026-06-25 00:00,SCO,BRA,1,Scotland v Brazil,Scotland,7,1.1,0.142857,0.909091,0.135802,bet365 clean sheet yes/no 2026-06-02
+52,MAR,HAI,2026-06-25 00:00,HAI,MAR,0,Morocco v Haiti,Haiti,10,1.062,0.1,0.94162,0.096004,bet365 clean sheet yes/no 2026-06-02
+52,MAR,HAI,2026-06-25 00:00,MAR,HAI,1,Morocco v Haiti,Morocco,1.66,2.1,0.60241,0.47619,0.558511,bet365 clean sheet yes/no 2026-06-02
+53,CZE,MEX,2026-06-25 03:00,CZE,MEX,1,Czechia v Mexico,Czechia,4.33,1.2,0.230947,0.833333,0.216998,bet365 clean sheet yes/no 2026-06-02
+53,CZE,MEX,2026-06-25 03:00,MEX,CZE,0,Czechia v Mexico,Mexico,2.25,1.57,0.444444,0.636943,0.410995,bet365 clean sheet yes/no 2026-06-02
+54,RSA,KOR,2026-06-25 03:00,KOR,RSA,0,South Africa v South Korea,South Korea,2.37,1.53,0.421941,0.653595,0.392308,bet365 clean sheet yes/no 2026-06-02
+54,RSA,KOR,2026-06-25 03:00,RSA,KOR,1,South Africa v South Korea,South Africa,4,1.22,0.25,0.819672,0.233716,bet365 clean sheet yes/no 2026-06-02
+55,CUW,CIV,2026-06-25 22:00,CIV,CUW,0,Curaçao v Ivory Coast,Ivory Coast,1.8,1.9,0.555556,0.526316,0.513514,bet365 clean sheet yes/no 2026-06-02
+55,CUW,CIV,2026-06-25 22:00,CUW,CIV,1,Curaçao v Ivory Coast,Curaçao,7,1.1,0.142857,0.909091,0.135802,bet365 clean sheet yes/no 2026-06-02
+56,ECU,GER,2026-06-25 22:00,ECU,GER,1,Ecuador v Germany,Ecuador,5.5,1.14,0.181818,0.877193,0.171687,bet365 clean sheet yes/no 2026-06-02
+56,ECU,GER,2026-06-25 22:00,GER,ECU,0,Ecuador v Germany,Germany,2.25,1.57,0.444444,0.636943,0.410995,bet365 clean sheet yes/no 2026-06-02
+57,TUN,NED,2026-06-26 01:00,NED,TUN,0,Tunisia v Netherlands,Netherlands,2,1.72,0.5,0.581395,0.462366,bet365 clean sheet yes/no 2026-06-02
+57,TUN,NED,2026-06-26 01:00,TUN,NED,1,Tunisia v Netherlands,Tunisia,5.5,1.14,0.181818,0.877193,0.171687,bet365 clean sheet yes/no 2026-06-02
+58,JPN,SWE,2026-06-26 01:00,JPN,SWE,1,Japan v Sweden,Japan,2.62,1.44,0.381679,0.694444,0.35468,bet365 clean sheet yes/no 2026-06-02
+58,JPN,SWE,2026-06-26 01:00,SWE,JPN,0,Japan v Sweden,Sweden,3.75,1.25,0.266667,0.8,0.25,bet365 clean sheet yes/no 2026-06-02
+59,TUR,USA,2026-06-26 04:00,TUR,USA,1,Türkiye v USA,Türkiye,3.4,1.3,0.294118,0.769231,0.276596,bet365 clean sheet yes/no 2026-06-02
+59,TUR,USA,2026-06-26 04:00,USA,TUR,0,Türkiye v USA,USA,3.4,1.3,0.294118,0.769231,0.276596,bet365 clean sheet yes/no 2026-06-02
+60,PAR,AUS,2026-06-26 04:00,AUS,PAR,0,Paraguay v Australia,Australia,3.5,1.28,0.285714,0.78125,0.267782,bet365 clean sheet yes/no 2026-06-02
+60,PAR,AUS,2026-06-26 04:00,PAR,AUS,1,Paraguay v Australia,Paraguay,2.5,1.5,0.4,0.666667,0.375,bet365 clean sheet yes/no 2026-06-02
+61,NOR,FRA,2026-06-26 21:00,FRA,NOR,0,Norway v France,France,2.5,1.5,0.4,0.666667,0.375,bet365 clean sheet yes/no 2026-06-02
+61,NOR,FRA,2026-06-26 21:00,NOR,FRA,1,Norway v France,Norway,4.5,1.18,0.222222,0.847458,0.207746,bet365 clean sheet yes/no 2026-06-02
+62,SEN,IRQ,2026-06-26 21:00,IRQ,SEN,0,Senegal v Iraq,Iraq,6,1.12,0.166667,0.892857,0.157303,bet365 clean sheet yes/no 2026-06-02
+62,SEN,IRQ,2026-06-26 21:00,SEN,IRQ,1,Senegal v Iraq,Senegal,1.83,1.83,0.546448,0.546448,0.5,bet365 clean sheet yes/no 2026-06-02
+63,CPV,KSA,2026-06-27 02:00,CPV,KSA,1,Cape Verde v Saudi Arabia,Cape Verde,2.75,1.4,0.363636,0.714286,0.337349,bet365 clean sheet yes/no 2026-06-02
+63,CPV,KSA,2026-06-27 02:00,KSA,CPV,0,Cape Verde v Saudi Arabia,Saudi Arabia,3,1.36,0.333333,0.735294,0.311927,bet365 clean sheet yes/no 2026-06-02
+64,URU,ESP,2026-06-27 02:00,ESP,URU,0,Uruguay v Spain,Spain,2.2,1.61,0.454545,0.621118,0.422572,bet365 clean sheet yes/no 2026-06-02
+64,URU,ESP,2026-06-27 02:00,URU,ESP,1,Uruguay v Spain,Uruguay,5.5,1.14,0.181818,0.877193,0.171687,bet365 clean sheet yes/no 2026-06-02
+65,NZL,BEL,2026-06-27 05:00,BEL,NZL,0,New Zealand v Belgium,Belgium,1.8,1.9,0.555556,0.526316,0.513514,bet365 clean sheet yes/no 2026-06-02
+65,NZL,BEL,2026-06-27 05:00,NZL,BEL,1,New Zealand v Belgium,New Zealand,9,1.071,0.111111,0.933707,0.106345,bet365 clean sheet yes/no 2026-06-02
+66,EGY,IRN,2026-06-27 05:00,EGY,IRN,1,Egypt v Iran,Egypt,2.25,1.57,0.444444,0.636943,0.410995,bet365 clean sheet yes/no 2026-06-02
+66,EGY,IRN,2026-06-27 05:00,IRN,EGY,0,Egypt v Iran,Iran,3.25,1.33,0.307692,0.75188,0.290393,bet365 clean sheet yes/no 2026-06-02
+67,CRO,GHA,2026-06-27 23:00,CRO,GHA,1,Croatia v Ghana,Croatia,2.1,1.66,0.47619,0.60241,0.441489,bet365 clean sheet yes/no 2026-06-02
+67,CRO,GHA,2026-06-27 23:00,GHA,CRO,0,Croatia v Ghana,Ghana,4.33,1.2,0.230947,0.833333,0.216998,bet365 clean sheet yes/no 2026-06-02
+68,PAN,ENG,2026-06-27 23:00,ENG,PAN,0,Panama v England,England,1.72,2,0.581395,0.5,0.537634,bet365 clean sheet yes/no 2026-06-02
+68,PAN,ENG,2026-06-27 23:00,PAN,ENG,1,Panama v England,Panama,9,1.071,0.111111,0.933707,0.106345,bet365 clean sheet yes/no 2026-06-02
+69,COD,UZB,2026-06-28 01:30,COD,UZB,1,DR Congo v Uzbekistan,DR Congo,2.75,1.4,0.363636,0.714286,0.337349,bet365 clean sheet yes/no 2026-06-02
+69,COD,UZB,2026-06-28 01:30,UZB,COD,0,DR Congo v Uzbekistan,Uzbekistan,3,1.36,0.333333,0.735294,0.311927,bet365 clean sheet yes/no 2026-06-02
+70,COL,POR,2026-06-28 01:30,COL,POR,1,Colombia v Portugal,Colombia,3.75,1.25,0.266667,0.8,0.25,bet365 clean sheet yes/no 2026-06-02
+70,COL,POR,2026-06-28 01:30,POR,COL,0,Colombia v Portugal,Portugal,2.62,1.44,0.381679,0.694444,0.35468,bet365 clean sheet yes/no 2026-06-02
+71,ALG,AUT,2026-06-28 04:00,ALG,AUT,1,Algeria v Austria,Algeria,3.4,1.3,0.294118,0.769231,0.276596,bet365 clean sheet yes/no 2026-06-02
+71,ALG,AUT,2026-06-28 04:00,AUT,ALG,0,Algeria v Austria,Austria,2.62,1.44,0.381679,0.694444,0.35468,bet365 clean sheet yes/no 2026-06-02
+72,JOR,ARG,2026-06-28 04:00,ARG,JOR,0,Jordan v Argentina,Argentina,1.61,2.2,0.621118,0.454545,0.577428,bet365 clean sheet yes/no 2026-06-02
+72,JOR,ARG,2026-06-28 04:00,JOR,ARG,1,Jordan v Argentina,Jordan,11,1.05,0.090909,0.952381,0.087137,bet365 clean sheet yes/no 2026-06-02

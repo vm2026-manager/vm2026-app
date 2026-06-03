@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import csv
 import json
-from collections import Counter, defaultdict
+from collections import Counter
 from pathlib import Path
 from typing import Any
 
@@ -12,6 +12,7 @@ DATA_DIR = PROJECT_ROOT / "data"
 
 STRATEGIES_JSON_PATH = DATA_DIR / "optimal_squads_by_strategy.json"
 COMPARISON_PATH = DATA_DIR / "strategy_comparison_report.csv"
+CONTEXT_PATH = DATA_DIR / "current_strategy_context.json"
 PLAYER_EV_PATH = DATA_DIR / "player_ev_group_stage_v1.csv"
 PLAYER_POOL_PATH = DATA_DIR / "player_pool_v1.json"
 OUT_PATH = DATA_DIR / "strategy_sanity_report.md"
@@ -64,120 +65,98 @@ def player_rows(squad: list[dict[str, Any]]) -> list[list[Any]]:
             fmt(player.get("start_prob"), 3),
             fmt(player.get("conditional_start_prob"), 3),
             player.get("availability_risk", ""),
+            fmt(player.get("p_6_points_after_2"), 3),
+            fmt(player.get("round3_rotation_factor"), 3),
         ]
         for player in squad
     ]
 
 
-def names(squad: list[dict[str, Any]]) -> set[str]:
-    return {txt(player.get("player_name")) for player in squad}
-
-
-def player_lookup(squad: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
-    return {txt(player.get("player_name")): player for player in squad}
-
-
 def main() -> int:
-    with STRATEGIES_JSON_PATH.open(encoding="utf-8") as f:
-        strategies = json.load(f)
-
-    with COMPARISON_PATH.open(encoding="utf-8-sig", newline="") as f:
-        comparison_rows = list(csv.DictReader(f))
-
-    with PLAYER_EV_PATH.open(encoding="utf-8-sig", newline="") as f:
-        ev_rows = list(csv.DictReader(f))
-
-    with PLAYER_POOL_PATH.open(encoding="utf-8-sig") as f:
-        player_pool = json.load(f)
-
-    balanced_squad = strategies["balanced"]["best_squad"]
-    balanced_names = names(balanced_squad)
-    all_name_counts: Counter[str] = Counter()
-    for item in strategies.values():
-        all_name_counts.update(names(item["best_squad"]))
+    strategies = json.loads(STRATEGIES_JSON_PATH.read_text(encoding="utf-8"))
+    comparison_rows = list(csv.DictReader(COMPARISON_PATH.open(encoding="utf-8-sig", newline="")))
+    context = json.loads(CONTEXT_PATH.read_text(encoding="utf-8")) if CONTEXT_PATH.exists() else {}
+    ev_rows = list(csv.DictReader(PLAYER_EV_PATH.open(encoding="utf-8-sig", newline="")))
+    player_pool = json.loads(PLAYER_POOL_PATH.read_text(encoding="utf-8-sig"))
 
     summary_rows = []
     for row in comparison_rows:
         summary_rows.append(
             [
+                row["display_name_da"],
                 row["strategy"],
                 row["formation"],
                 f"{int(float(row['total_price'])):,}",
                 fmt(row["total_score"], 3),
                 fmt(row["total_ev"], 3),
+                fmt(row["avg_conditional_start_prob"], 4),
                 row["high_risk_players"],
+                row["recommended_captain"],
+                fmt(row["captain_expected_growth"], 3),
             ]
         )
-
-    overlap_rows = []
-    for strategy, item in strategies.items():
-        strategy_names = names(item["best_squad"])
-        overlap = strategy_names & balanced_names
-        only_strategy = strategy_names - balanced_names
-        only_balanced = balanced_names - strategy_names
-        overlap_rows.append(
-            [
-                strategy,
-                len(overlap),
-                ", ".join(sorted(only_strategy)) or "-",
-                ", ".join(sorted(only_balanced)) or "-",
-            ]
-        )
-
-    unique_players = []
-    for strategy, item in strategies.items():
-        for player in item["best_squad"]:
-            name = txt(player.get("player_name"))
-            if all_name_counts[name] == 1:
-                unique_players.append([strategy, name, player.get("team_id", ""), player.get("position", ""), fmt(player.get("strategy_score"), 3)])
 
     availability_rows = []
-    for strategy, item in strategies.items():
+    team_rows = []
+    captain_rows = []
+    for row in comparison_rows:
+        item = strategies[row["strategy"]]
         squad = item["best_squad"]
-        summary = item["best_summary"]
         availability_rows.append(
             [
-                strategy,
-                fmt(summary.get("avg_start_prob"), 4),
-                fmt(summary.get("avg_conditional_start_prob"), 4),
+                row["display_name_da"],
+                fmt(row["avg_start_prob"], 4),
+                fmt(row["avg_conditional_start_prob"], 4),
                 risk_counts(squad),
             ]
         )
-
-    team_rows = [
-        [strategy, team_counts(item["best_squad"])]
-        for strategy, item in strategies.items()
-    ]
-
-    def pulled_in(strategy: str) -> list[list[Any]]:
-        squad = strategies[strategy]["best_squad"]
-        lookup = player_lookup(squad)
-        return player_rows([lookup[name] for name in sorted(names(squad) - balanced_names)])
-
-    clean_sheet_same_as_balanced = names(strategies["clean_sheet_stack"]["best_squad"]) == balanced_names
-    fixture_overlap = len(names(strategies["fixture_attack"]["best_squad"]) & balanced_names)
-    safe_overlap = len(names(strategies["safe_starters"]["best_squad"]) & balanced_names)
+        team_rows.append([row["display_name_da"], team_counts(squad)])
+        captain_rows.append(
+            [
+                row["display_name_da"],
+                row["recommended_captain"],
+                row["captain_round"],
+                fmt(row["captain_expected_growth"], 3),
+                row["captain_reason"],
+            ]
+        )
 
     lines = [
-        "# Strategy Sanity Report",
+        "# Strategi Sanity Report",
         "",
-        "Denne rapport sammenligner strategi-presets uden at ændre optimizer, EV, player_pool eller UI.",
+        "Rapporten viser de fire brugerrettede strategier efter strategirydningen.",
         "",
-        "## 1. Bedste Hold Pr. Strategi",
+        "## Aktuel Strategikontekst",
         "",
-        table(["Strategi", "Formation", "Pris", "Total score", "Total EV", "High risk"], summary_rows),
+        f"- current_time_dk: {context.get('current_time_dk', '')}",
+        f"- target_round: {context.get('target_round', '')}",
+        f"- next_round_display_name: {context.get('next_round_display_name', '')}",
+        f"- remaining_matches_in_target_round: {context.get('remaining_matches_in_target_round', '')}",
         "",
-        "## 2. Spillerliste Pr. Strategi",
+        "## Strategioversigt",
+        "",
+        table(
+            ["Dansk navn", "Teknisk strategi", "Formation", "Pris", "Score", "EV", "Avg cond", "High risk", "Kaptajn", "Kaptajn vækst"],
+            summary_rows,
+        ),
+        "",
+        "## Kaptajn",
+        "",
+        table(["Strategi", "Kaptajn", "Runde", "Forventet vækst", "Årsag"], captain_rows),
+        "",
+        "## Spillerliste Pr. Strategi",
         "",
     ]
 
-    for strategy, item in strategies.items():
+    for row in comparison_rows:
+        strategy = row["strategy"]
+        item = strategies[strategy]
         lines.extend(
             [
-                f"### {strategy}",
+                f"### {row['display_name_da']}",
                 "",
                 table(
-                    ["Spiller", "Hold", "Pos", "Pris", "EV", "Strategy score", "Start", "Conditional", "Risk"],
+                    ["Spiller", "Hold", "Pos", "Pris", "EV", "Strategy score", "Start", "Conditional", "Risk", "P 6p efter 2", "R3 faktor"],
                     player_rows(item["best_squad"]),
                 ),
                 "",
@@ -186,52 +165,32 @@ def main() -> int:
 
     lines.extend(
         [
-            "## 3. Overlap Mod Balanced",
-            "",
-            table(["Strategi", "Overlap", "Kun i strategi", "Kun i balanced"], overlap_rows),
-            "",
-            "## 4. Spillere Kun Valgt I Én Strategi",
-            "",
-            table(["Strategi", "Spiller", "Hold", "Pos", "Strategy score"], unique_players),
-            "",
-            "## 5. Hold-/Landefordeling",
+            "## Landefordeling",
             "",
             table(["Strategi", "Fordeling"], team_rows),
             "",
-            "## 6. Start Og Availability",
+            "## Start Og Availability",
             "",
             table(["Strategi", "Avg start_prob", "Avg conditional_start_prob", "Availability risk"], availability_rows),
             "",
-            "## 7. Fixture Attack Ind Ift. Balanced",
+            "## Strateginoter",
             "",
-            table(["Spiller", "Hold", "Pos", "Pris", "EV", "Strategy score", "Start", "Conditional", "Risk"], pulled_in("fixture_attack")),
-            "",
-            "## 8. Safe Starters Ind Ift. Balanced",
-            "",
-            table(["Spiller", "Hold", "Pos", "Pris", "EV", "Strategy score", "Start", "Conditional", "Risk"], pulled_in("safe_starters")),
-            "",
-            "## 9. Long Run Value Ind Ift. Balanced",
-            "",
-            table(["Spiller", "Hold", "Pos", "Pris", "EV", "Strategy score", "Start", "Conditional", "Risk"], pulled_in("long_run_value")),
-            "",
-            "## 10. Kort Vurdering",
-            "",
-            f"- Strategierne giver forskellige hold, men ikke radikalt forskellige: fixture_attack overlapper {fixture_overlap}/11 med balanced, safe_starters overlapper {safe_overlap}/11.",
-            "- safe_starters ser relevant ud som preset, fordi high_risk falder fra 4 til 1 og avg conditional_start_prob stiger.",
-            "- fixture_attack bør vises med strategy score separat fra total_ev, fordi dens score indeholder fixture-boost og derfor ikke er direkte sammenlignelig med balanced total_ev.",
-            "- clean_sheet_stack differentierer ikke nok lige nu." if clean_sheet_same_as_balanced else "- clean_sheet_stack differentierer noget, men bør stadig vurderes mod balanced overlap og defensiv sammensætning.",
+            "- Næste runde bruger dynamisk target_round og scorer hårdest på den kommende runde.",
+            "- 1. + 2. runde vægter de to første runder og straffer spillere, der kun topper i én kamp.",
+            "- Gruppespil reducerer runde 3-bidrag via p_6_points_after_2 og round3_rotation_factor.",
+            "- Lang sigt bruger team_market/team_long_run som proxy for turneringsvinderstyrke.",
+            "- safe_starters er ikke længere en separat brugerrettet hovedstrategi; starterfokus er indbygget i alle fire strategier.",
             f"- Datagrundlag brugt til rapporten: {len(ev_rows)} EV-rækker og {len(player_pool)} player_pool-rækker.",
             "",
         ]
     )
 
     OUT_PATH.write_text("\n".join(lines), encoding="utf-8")
-
     print(f"Skrevet: {OUT_PATH.relative_to(PROJECT_ROOT)}")
     print(f"Strategier: {len(strategies)}")
-    print(f"Clean_sheet_stack samme spillere som balanced: {clean_sheet_same_as_balanced}")
-    print(f"Fixture_attack overlap med balanced: {fixture_overlap}/11")
-    print(f"Safe_starters overlap med balanced: {safe_overlap}/11")
+    print(f"Target round: {context.get('next_round_display_name', '')}")
+    for row in comparison_rows:
+        print(f"- {row['display_name_da']}: {row['formation']} | kaptajn={row['recommended_captain']} | EV={fmt(row['total_ev'], 3)}")
     return 0
 
 

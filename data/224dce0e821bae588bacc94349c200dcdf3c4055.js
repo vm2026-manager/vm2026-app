@@ -1,0 +1,1 @@
+!function(n){"use strict";(self.webpackChunkPageComponent=self.webpackChunkPageComponent||[]).push([[5903],{88284:(n,e,t)=>{t.r(e),t.d(e,{default:()=>s});const s={engineCustomisation:{config:{},translations:{en:{}},datetime:{formats:{}}},wrapperCustomisations:{}}}}])}();

@@ -1,0 +1,236 @@
+team_id,land,role,player_name,role_order,source_note,confidence,is_confirmed
+ALG,Algeriet,penalty,Mahrez,1,,medium,false
+ALG,Algeriet,penalty,Bentaleb,2,,medium,false
+ALG,Algeriet,direct_fk,Mahrez,1,,medium,false
+ALG,Algeriet,corner_indirect_fk,Chaibi,1,,medium,false
+ALG,Algeriet,corner_indirect_fk,Mahrez,2,,medium,false
+ARG,Argentina,penalty,Messi,1,,medium,false
+ARG,Argentina,direct_fk,Messi,1,(1),medium,false
+ARG,Argentina,corner_indirect_fk,Messi,1,,medium,false
+ARG,Argentina,corner_indirect_fk,De Paul,2,,medium,false
+AUS,Australien,penalty,Boyle,1,,medium,false
+AUS,Australien,direct_fk,Hrustic,1,,medium,false
+AUS,Australien,direct_fk,Irankunda,2,,medium,false
+AUS,Australien,corner_indirect_fk,Hrustic,1,,medium,false
+AUS,Australien,corner_indirect_fk,Boyle,2,,medium,false
+BEL,Belgien,penalty,Lukaku,1,,medium,false
+BEL,Belgien,penalty,de Bruyne,2,,medium,false
+BEL,Belgien,direct_fk,de Bruyne,1,,medium,false
+BEL,Belgien,direct_fk,de Cuyper,2,,medium,false
+BEL,Belgien,corner_indirect_fk,de Bruyne,1,(1),medium,false
+BIH,Bosnien-Hercegovina,penalty,Dzeko,1,,medium,false
+BIH,Bosnien-Hercegovina,direct_fk,Tahirovic,1,,medium,false
+BIH,Bosnien-Hercegovina,corner_indirect_fk,Alajbegovic,1,(1),medium,false
+BIH,Bosnien-Hercegovina,corner_indirect_fk,Bajraktarevic,2,,medium,false
+BRA,Brasilien,penalty,Raphinha,1,,medium,false
+BRA,Brasilien,penalty,Neymar,2,,medium,false
+BRA,Brasilien,direct_fk,Raphinha,1,(1),medium,false
+BRA,Brasilien,direct_fk,Neymar,2,,medium,false
+BRA,Brasilien,corner_indirect_fk,Raphinha,1,,medium,false
+BRA,Brasilien,corner_indirect_fk,Neymar,2,(2),medium,false
+CAN,Canada,penalty,J. David,1,,medium,false
+CAN,Canada,direct_fk,Choiniere,1,,medium,false
+CAN,Canada,direct_fk,Cornelius,2,,medium,false
+CAN,Canada,corner_indirect_fk,Choiniere,1,,medium,false
+CAN,Canada,corner_indirect_fk,Ahmed,2,,medium,false
+COL,Colombia,penalty,J. Rodriguez,1,,medium,false
+COL,Colombia,direct_fk,J. Rodriguez,1,,medium,false
+COL,Colombia,corner_indirect_fk,J. Rodriguez,1,(2),medium,false
+CUW,Curaçao,penalty,L. Bacuna,1,,medium,false
+CUW,Curaçao,direct_fk,L. Bacuna,1,,medium,false
+CUW,Curaçao,direct_fk,Martha,2,(1),medium,false
+CUW,Curaçao,corner_indirect_fk,Antonisse,1,,medium,false
+CUW,Curaçao,corner_indirect_fk,L. Bacuna,2,,medium,false
+COD,DR Congo,penalty,Wissa,1,,medium,false
+COD,DR Congo,direct_fk,Bongonda,1,,medium,false
+COD,DR Congo,direct_fk,Masuaku,2,,medium,false
+COD,DR Congo,corner_indirect_fk,Bongonda,1,,medium,false
+COD,DR Congo,corner_indirect_fk,Masuaku,2,,medium,false
+ECU,Ecuador,penalty,E. Valencia,1,,medium,false
+ECU,Ecuador,direct_fk,E. Valencia,1,,medium,false
+ECU,Ecuador,direct_fk,Estupinan,2,,medium,false
+ECU,Ecuador,corner_indirect_fk,Caicedo,1,(1),medium,false
+ECU,Ecuador,corner_indirect_fk,Plata,2,,medium,false
+EGY,Egypten,penalty,Salah,1,,medium,false
+EGY,Egypten,penalty,Marmoush,2,,medium,false
+EGY,Egypten,direct_fk,Salah,1,,medium,false
+EGY,Egypten,corner_indirect_fk,Salah,1,,medium,false
+CIV,Elfenbenskysten,penalty,Kessie,1,,medium,false
+CIV,Elfenbenskysten,penalty,Sangare,2,,medium,false
+CIV,Elfenbenskysten,direct_fk,Diallo,1,,medium,false
+CIV,Elfenbenskysten,corner_indirect_fk,Diallo,1,,medium,false
+CIV,Elfenbenskysten,corner_indirect_fk,Diomande,2,,medium,false
+ENG,England,penalty,Kane,1,,medium,false
+ENG,England,direct_fk,James,1,(1),medium,false
+ENG,England,direct_fk,Kane,2,,medium,false
+ENG,England,corner_indirect_fk,Rice,1,(2),medium,false
+FRA,Frankrig,penalty,Mbappe,1,,medium,false
+FRA,Frankrig,direct_fk,Olise,1,,medium,false
+FRA,Frankrig,direct_fk,Digne,2,,medium,false
+FRA,Frankrig,corner_indirect_fk,Olise,1,,medium,false
+GHA,Ghana,penalty,Ayew,1,,medium,false
+GHA,Ghana,direct_fk,Ayew,1,,medium,false
+GHA,Ghana,corner_indirect_fk,Ayew,1,,medium,false
+HAI,Haiti,penalty,Nazon,1,,medium,false
+HAI,Haiti,direct_fk,Deedson,1,,medium,false
+HAI,Haiti,direct_fk,Bellegarde,2,,medium,false
+HAI,Haiti,corner_indirect_fk,Deedson,1,,medium,false
+HAI,Haiti,corner_indirect_fk,Bellegarde,2,,medium,false
+NED,Holland,penalty,Depay,1,,medium,false
+NED,Holland,penalty,Gakpo,2,,medium,false
+NED,Holland,direct_fk,Depay,1,,medium,false
+NED,Holland,corner_indirect_fk,Depay,1,(1),medium,false
+NED,Holland,corner_indirect_fk,Gakpo,2,,medium,false
+IRN,Iran,penalty,Taremi,1,,medium,false
+IRN,Iran,direct_fk,Ghoddos,1,,medium,false
+IRN,Iran,corner_indirect_fk,Ghoddos,1,,medium,false
+IRQ,Irak,penalty,Hussein,1,,medium,false
+IRQ,Irak,penalty,Al Ammari,2,,medium,false
+IRQ,Irak,direct_fk,Al Ammari,1,,medium,false
+IRQ,Irak,corner_indirect_fk,Al Ammari,1,,medium,false
+IRQ,Irak,corner_indirect_fk,Jasim,2,,medium,false
+JPN,Japan,penalty,Ueda,1,,medium,false
+JPN,Japan,direct_fk,J. Ito,1,,medium,false
+JPN,Japan,direct_fk,Kubo,2,,medium,false
+JPN,Japan,corner_indirect_fk,J. Ito,1,,medium,false
+JPN,Japan,corner_indirect_fk,Kamada,2,,medium,false
+JOR,Jordan,penalty,Olwan,1,,medium,false
+JOR,Jordan,direct_fk,Al Mardi,1,,medium,false
+JOR,Jordan,direct_fk,Tamari,2,,medium,false
+JOR,Jordan,corner_indirect_fk,Al Mardi,1,,medium,false
+JOR,Jordan,corner_indirect_fk,Tamaru,2,,medium,false
+CPV,Kap Verde,penalty,R. Mendes,1,,medium,false
+CPV,Kap Verde,penalty,S. Cabral,2,,medium,false
+CPV,Kap Verde,direct_fk,S. Cabral,1,,medium,false
+CPV,Kap Verde,corner_indirect_fk,S. Cabral,1,,medium,false
+CPV,Kap Verde,corner_indirect_fk,Monteiro,2,,medium,false
+CRO,Kroatien,penalty,Modric,1,,medium,false
+CRO,Kroatien,direct_fk,Modric,1,,medium,false
+CRO,Kroatien,corner_indirect_fk,Modric,1,,medium,false
+CRO,Kroatien,corner_indirect_fk,Baturina,2,,medium,false
+MAR,Marokko,penalty,Rahimi,1,,medium,false
+MAR,Marokko,penalty,Diaz,2,,medium,false
+MAR,Marokko,direct_fk,Hakimi,1,,medium,false
+MAR,Marokko,direct_fk,Diaz,2,,medium,false
+MAR,Marokko,corner_indirect_fk,Hakimi,1,,medium,false
+MAR,Marokko,corner_indirect_fk,Diaz,2,,medium,false
+MEX,Mexico,penalty,R. Jimenez,1,,medium,false
+MEX,Mexico,direct_fk,E. Alvarez,1,,medium,false
+MEX,Mexico,direct_fk,R. Jimenez,2,,medium,false
+MEX,Mexico,corner_indirect_fk,B. Gutierrez,1,,medium,false
+MEX,Mexico,corner_indirect_fk,Vega,2,,medium,false
+NZL,New Zealand,penalty,Wood,1,,medium,false
+NZL,New Zealand,direct_fk,Randall,1,,medium,false
+NZL,New Zealand,direct_fk,Singh,2,,medium,false
+NZL,New Zealand,corner_indirect_fk,Payne,1,,medium,false
+NZL,New Zealand,corner_indirect_fk,Randall,2,,medium,false
+NOR,Norge,penalty,Haaland,1,,medium,false
+NOR,Norge,direct_fk,Ødegaard,1,,medium,false
+NOR,Norge,corner_indirect_fk,Ryerson,1,,medium,false
+NOR,Norge,corner_indirect_fk,Ødegaard,2,,medium,false
+PAN,Panama,penalty,E. Davis,1,,medium,false
+PAN,Panama,penalty,I. Diaz,2,,medium,false
+PAN,Panama,direct_fk,E. Davis,1,,medium,false
+PAN,Panama,direct_fk,Murillo,2,,medium,false
+PAN,Panama,corner_indirect_fk,E. Davis,1,(1),medium,false
+PAN,Panama,corner_indirect_fk,J. Rodriguez,2,,medium,false
+PAR,Paraguay,penalty,Enciso,1,,medium,false
+PAR,Paraguay,direct_fk,D. Gomez,1,,medium,false
+PAR,Paraguay,direct_fk,Enciso,2,,medium,false
+PAR,Paraguay,corner_indirect_fk,Almiron,1,,medium,false
+PAR,Paraguay,corner_indirect_fk,D. Gomez,2,(2),medium,false
+POR,Portugal,penalty,Ronaldo,1,,medium,false
+POR,Portugal,penalty,Fernandes,2,,medium,false
+POR,Portugal,direct_fk,Ronaldo,1,,medium,false
+POR,Portugal,direct_fk,Fernandes,2,,medium,false
+POR,Portugal,corner_indirect_fk,Fernandes,1,,medium,false
+POR,Portugal,corner_indirect_fk,Mendes,2,,medium,false
+QAT,Qatar,penalty,Afif,1,,medium,false
+QAT,Qatar,penalty,A. Ali,2,,medium,false
+QAT,Qatar,direct_fk,Afif,1,,medium,false
+QAT,Qatar,direct_fk,Al Mannai,2,,medium,false
+QAT,Qatar,corner_indirect_fk,Afif,1,,medium,false
+QAT,Qatar,corner_indirect_fk,Al Mannai,2,,medium,false
+KSA,Saudi-Arabien,penalty,Al-Buraikan,1,,medium,false
+KSA,Saudi-Arabien,penalty,S. Al-Dawsari,2,,medium,false
+KSA,Saudi-Arabien,direct_fk,S. Al-Dawsari,1,,medium,false
+KSA,Saudi-Arabien,corner_indirect_fk,S. Al-Dawsari,1,,medium,false
+SUI,Schweiz,penalty,Xhaka,1,,medium,false
+SUI,Schweiz,penalty,Embolo,2,,medium,false
+SUI,Schweiz,direct_fk,Xhaka,1,,medium,false
+SUI,Schweiz,corner_indirect_fk,Vagas,1,(2),medium,false
+SUI,Schweiz,corner_indirect_fk,Rieder,2,,medium,false
+SCO,Skotland,penalty,McTominay,1,,medium,false
+SCO,Skotland,penalty,Christie,2,,medium,false
+SCO,Skotland,direct_fk,McGinn,1,,medium,false
+SCO,Skotland,direct_fk,McTominay,2,,medium,false
+SCO,Skotland,corner_indirect_fk,McGinn,1,,medium,false
+SCO,Skotland,corner_indirect_fk,L. Ferguson,2,,medium,false
+SEN,Senegal,penalty,Mane,1,,medium,false
+SEN,Senegal,penalty,I. Sarr,2,,medium,false
+SEN,Senegal,direct_fk,Mane,1,,medium,false
+SEN,Senegal,corner_indirect_fk,Diouf,1,,medium,false
+SEN,Senegal,corner_indirect_fk,Camara,2,,medium,false
+ESP,Spanien,penalty,Oyarzabal,1,,medium,false
+ESP,Spanien,direct_fk,Oyarzabal,1,(1),medium,false
+ESP,Spanien,corner_indirect_fk,Baena,1,,medium,false
+ESP,Spanien,corner_indirect_fk,Yamal,2,,medium,false
+RSA,Sydafrika,penalty,Appollis,1,,medium,false
+RSA,Sydafrika,direct_fk,Modiba,1,,medium,false
+RSA,Sydafrika,direct_fk,Appolis,2,,medium,false
+RSA,Sydafrika,corner_indirect_fk,Appollis,1,,medium,false
+RSA,Sydafrika,corner_indirect_fk,Modiba,2,,medium,false
+KOR,Sydkorea,penalty,Son,1,,medium,false
+KOR,Sydkorea,direct_fk,Son,1,,medium,false
+KOR,Sydkorea,direct_fk,K. Lee,2,,medium,false
+KOR,Sydkorea,corner_indirect_fk,Son,1,,medium,false
+KOR,Sydkorea,corner_indirect_fk,K. Lee,2,,medium,false
+SWE,Sverige,penalty,Gyökeres,1,,medium,false
+SWE,Sverige,penalty,Isak,2,,medium,false
+SWE,Sverige,direct_fk,Ayari,1,,medium,false
+SWE,Sverige,direct_fk,Isak,2,,medium,false
+SWE,Sverige,corner_indirect_fk,Elanga,1,,medium,false
+SWE,Sverige,corner_indirect_fk,Svensson,2,,medium,false
+CZE,Tjekkiet,penalty,Schick,1,,medium,false
+CZE,Tjekkiet,direct_fk,Coufal,1,,medium,false
+CZE,Tjekkiet,direct_fk,Provod,2,,medium,false
+CZE,Tjekkiet,corner_indirect_fk,Coufal,1,,medium,false
+CZE,Tjekkiet,corner_indirect_fk,Provod,2,(1),medium,false
+TUN,Tunesien,penalty,Gharbi,1,,medium,false
+TUN,Tunesien,penalty,Abdi,2,,medium,false
+TUN,Tunesien,direct_fk,Mejbri,1,,medium,false
+TUN,Tunesien,direct_fk,Abdi,2,,medium,false
+TUN,Tunesien,corner_indirect_fk,Mejbri,1,,medium,false
+TUN,Tunesien,corner_indirect_fk,Abdi,2,,medium,false
+TUR,Tyrkiet,penalty,Calhanoglu,1,,medium,false
+TUR,Tyrkiet,direct_fk,Calhanoglu,1,,medium,false
+TUR,Tyrkiet,direct_fk,Güler,2,,medium,false
+TUR,Tyrkiet,corner_indirect_fk,Güler,1,(2),medium,false
+TUR,Tyrkiet,corner_indirect_fk,Calhanoglu,2,(2),medium,false
+GER,Tyskland,penalty,Havertz,1,,medium,false
+GER,Tyskland,penalty,Kimmich,2,,medium,false
+GER,Tyskland,direct_fk,Raum,1,(1),medium,false
+GER,Tyskland,direct_fk,Wirtz,2,(1),medium,false
+GER,Tyskland,corner_indirect_fk,Raum,1,(1),medium,false
+GER,Tyskland,corner_indirect_fk,Kimmich,2,,medium,false
+URU,Uruguay,penalty,Valverde,1,,medium,false
+URU,Uruguay,penalty,Nunez,2,,medium,false
+URU,Uruguay,direct_fk,Valverde,1,,medium,false
+URU,Uruguay,corner_indirect_fk,Arrascaeta,1,,medium,false
+URU,Uruguay,corner_indirect_fk,Valverde,2,,medium,false
+USA,USA,penalty,Pulisic,1,,medium,false
+USA,USA,direct_fk,Pulisic,1,,medium,false
+USA,USA,corner_indirect_fk,Tillman,1,,medium,false
+USA,USA,corner_indirect_fk,Pulisic,2,,medium,false
+UZB,Uzbekistan,penalty,Shomurodov,1,,medium,false
+UZB,Uzbekistan,penalty,Shukurov,2,,medium,false
+UZB,Uzbekistan,direct_fk,Fayzullaev,1,,medium,false
+UZB,Uzbekistan,direct_fk,Shukurov,2,,medium,false
+UZB,Uzbekistan,corner_indirect_fk,Fayzullaev,1,,medium,false
+UZB,Uzbekistan,corner_indirect_fk,Shukurov,2,,medium,false
+AUT,Østrig,penalty,Arnautovic,1,,medium,false
+AUT,Østrig,penalty,Sabitzer,2,,medium,false
+AUT,Østrig,direct_fk,Sabitzer,1,,medium,false
+AUT,Østrig,direct_fk,Alaba,2,,medium,false
+AUT,Østrig,corner_indirect_fk,Sabitzer,1,,medium,false
+AUT,Østrig,corner_indirect_fk,Alaba,2,,medium,false

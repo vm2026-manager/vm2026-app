@@ -1,0 +1,12 @@
+﻿player_name,team_id,position,price,EV,strategy_score,start_prob,conditional_start_prob,availability_risk,round1_opponent,round1_win_prob,round1_goal_multiplier,round1_assist_multiplier,round1_clean_sheet_prob,round1_clean_sheet_multiplier,kort_note
+Nuno Mendes,POR,DEF,4500000,3.974216,6.231259,0.7657,0.8431,medium_risk,COD,0.7338,1.35,1.25,0.5,1.2405,klar runde 1-favorit; stærk clean sheet-profil
+Ruben Dias,POR,DEF,4000000,2.812349,4.809827,0.8077,0.8506,low_risk,COD,0.7338,1.35,1.25,0.5,1.2405,klar runde 1-favorit; stærk clean sheet-profil; lav EV
+Timothy Castagne,BEL,DEF,3500000,3.049967,4.471314,0.7767,0.8194,low_risk,EGY,0.566,1.2612,1.1865,0.3923,1.0951,ok
+Cristiano Ronaldo,POR,FWD,7000000,4.947107,8.0892,0.908,0.97,medium_risk,COD,0.7338,1.35,1.25,,,stærk startsikkerhed; klar runde 1-favorit; høj EV
+Vinicius Junior,BRA,FWD,7500000,5.044969,7.496124,0.7444,0.8103,medium_risk,MAR,0.5861,1.2885,1.2061,,,høj EV
+Raul Jimenez,MEX,FWD,4500000,4.992947,6.713726,0.7012,0.8154,high_risk,RSA,0.6447,1.35,1.25,,,manuel tjek: high_risk; høj EV
+Diogo Costa,POR,GK,5000000,3.560318,5.686151,0.7534,0.7925,low_risk,COD,0.7338,1.35,1.25,0.5,1.2405,klar runde 1-favorit; stærk clean sheet-profil
+Christoph Baumgartner,AUT,MID,3500000,4.57388,7.728353,0.8952,0.9333,low_risk,JOR,0.7083,1.35,1.25,,,stærk startsikkerhed; klar runde 1-favorit; høj EV
+Oscar Bobb,NOR,MID,3000000,3.563792,6.389384,0.9101,0.97,medium_risk,IRQ,0.7579,1.35,1.25,,,stærk startsikkerhed; klar runde 1-favorit
+Kerem Akturkoglu,TUR,MID,4500000,4.077992,6.362164,0.8753,0.9107,low_risk,AUS,0.5184,1.2113,1.1509,,,stærk startsikkerhed; ikke favorit i runde 1
+Roberto Alvarado,MEX,MID,2500000,4.125843,5.707561,0.6394,0.7246,medium_risk,RSA,0.6447,1.35,1.25,,,manuel tjek: lav conditional start

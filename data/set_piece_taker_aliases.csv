@@ -1,0 +1,5 @@
+team_id,source_name,resolved_player_name,resolved_player_id,note
+SUI,Vagas,Ruben Vargas,ruben_vargas__sui,source typo; safe unique player_pool match
+RSA,Appolis,Oswin Appollis,oswin_appollis__rsa,source typo; safe unique player_pool match
+JOR,Tamaru,Mousa Tamari,mousa_tamari__jor,source typo; safe unique player_pool match
+BRA,Neymar,Neymar Jr.,neymar_jr___bra,safe player_pool match

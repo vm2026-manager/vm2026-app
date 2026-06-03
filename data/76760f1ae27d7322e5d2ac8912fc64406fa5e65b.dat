@@ -1,0 +1,37 @@
+defineDs('DanskeSpil/Domain/Feature.LoyaltyClub/Components/Modal/Modal', ['Shared/Framework/Mithril/Scripts/Core/Mithril', 'DanskeSpil/Domain/Feature.LoyaltyClub/Components/Svg/Svg', 'DanskeSpil/Domain/Feature.LoyaltyClub/Components/Confetti/Confetti'],
+// eslint-disable-next-line no-unused-vars
+function (m, Svg, Confetti) {
+  var Modal = {
+    controller: function () {
+      return {};
+    },
+    view: function (ignorectrl, _ref, children) {
+      var {
+        open,
+        inline = false,
+        icon,
+        confetti = false,
+        classNames = ''
+      } = _ref;
+      var modalClasses = "inset-0 flex items-center justify-center z-20 ".concat(inline ? 'initial flex-col mt-20' : 'absolute flex-col mt-40 h-screen');
+      var config = function () {
+        document.body.style.overflow = open ? 'hidden' : 'auto';
+      };
+      return m("div", {
+        config: config
+      }, open && !inline ? m("div", {
+        className: 'z-10 h-full w-full absolute inset-0 bg-black bg-opacity-50 bg-scroll'
+      }) : '', open || inline ? m("div", {
+        className: modalClasses
+      }, confetti ? m("div", {
+        className: 'z-20 relative flex justify-center -mt-40 mb-40'
+      }, m(Confetti, null)) : '', m("div", {
+        className: "bg-white px-40 py-30 rounded-12 shadow relative w-[320px] ".concat(classNames)
+      }, icon ? Svg("".concat(icon), {
+        class: 'z-20 absolute -top-15 left-1/2 -translate-x-1/2 h-32 w-32'
+      }) : '', children)) : '');
+    }
+  };
+  return Modal;
+});
+//# sourceMappingURL=Modal.js.map

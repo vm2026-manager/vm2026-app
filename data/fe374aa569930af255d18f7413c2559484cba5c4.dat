@@ -1,0 +1,76 @@
+defineDs('DanskeSpil/Domain/Feature.LoyaltyClub/Components/SubscriptionFlow/NewsletterPromotion', ['Shared/Framework/Mithril/Scripts/Core/Mithril', 'DanskeSpil/Domain/Feature.LoyaltyClub/Helpers/Api', 'DanskeSpil/Domain/Feature.LoyaltyClub/Components/Button/Button'], function (m, Api, Button) {
+  var NewsletterPromotion = {
+    controller: function (args) {
+      var loading = m.prop(false);
+      var handleReject = () => {
+        window.location.href = args.settings.no.url + args.settings.no.query;
+      };
+      var handleAccept = () => {
+        setConsentData().then(() => {
+          window.location.href = args.settings.yes.url + args.settings.yes.query;
+        });
+      };
+      var setConsentData = function () {
+        var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
+        loading(true);
+        var settings = {
+          EmailPermission: state,
+          referenceId: 'KLUBODDSET_SIGNUP_RECEIPT'
+        };
+        return Api.setConsentData(settings).catch(error => {
+          console.error('An error occurred:', error);
+          loading(false);
+        });
+      };
+      return {
+        handleReject,
+        handleAccept,
+        setConsentData,
+        loading
+      };
+    },
+    view: function (ctrl, _ref) {
+      var {
+        settings
+      } = _ref;
+      return m("div", null, m("div", {
+        className: 'absolute h-screen w-full overflow-hidden z-0'
+      }, m("img", {
+        src: settings.imageClouds.src,
+        alt: 'Clouds',
+        className: 'relative opacity-40 h-880 max-w-880 -bottom-100 rotate-180 left-1/2 -translate-x-1/2'
+      })), m("div", {
+        className: 'h-full p-16 flex flex-col max-w-[400px] mx-auto relative'
+      }, m("div", {
+        className: 'px-20'
+      }, m("p", {
+        className: 'text-center uppercase text-white font-family-brand-100 font-family-brand italic text-size-headline-xxsmall'
+      }, settings.receiptTitle), m("p", {
+        className: 'mt-20 text-center text-white text-size-text-medium font-light font-family-text'
+      }, settings.receiptDescription)), m("div", {
+        className: 'mt-40'
+      }, m("img", {
+        src: settings.imagePlane.src,
+        alt: 'Plane',
+        className: 'mx-auto h-260'
+      }), m("p", {
+        className: 'mt-10 text-white text-[10px] font-100 font-family-text'
+      }, m.trust(settings.conditions))), m("div", {
+        className: 'items-center mt-30 gap-20 flex'
+      }, m(Button, {
+        "data-uitest-id": 'decline-button',
+        variant: 'secondary',
+        classNames: 'font-family-brand-100 text-size-text-small italic grow',
+        onclick: () => ctrl.handleReject()
+      }, settings.no.text), m(Button, {
+        "data-uitest-id": 'accept-button',
+        variant: 'primary',
+        classNames: 'font-family-brand-100 text-size-text-small italic grow',
+        onClick: () => ctrl.handleAccept(),
+        loading: ctrl.loading()
+      }, settings.yes.text))));
+    }
+  };
+  return NewsletterPromotion;
+});
+//# sourceMappingURL=NewsletterPromotion.js.map

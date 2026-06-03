@@ -1,7 +1,7 @@
 ﻿holdet_player_id,holdet_player_name,holdet_team_id,holdet_position,closest_pool_player_id,closest_pool_player_name,closest_pool_team_id,closest_pool_position,reason,source_file
 50292,David Zima,CZE,DEF,david_jurasek__holdet_584,David Jurasek,CZE,DEF,similar_name+same_team+same_position; score=0.859,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
-49673,Nuno Tavares,POR,DEF,nuno_mendes__por,Nuno Mendes,POR,DEF,similar_name+same_team+same_position; score=0.859,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 48855,Antonio Silva,POR,DEF,rui_silva__por,Rui Silva,POR,GK,similar_name+same_team; score=0.836,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49673,Nuno Tavares,POR,DEF,nuno_mendes__por,Nuno Mendes,POR,DEF,similar_name+same_team+same_position; score=0.859,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 50312,David Affengruber,AUT,DEF,david_alaba__aut,David Alaba,AUT,DEF,similar_name+same_team+same_position; score=0.821,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 49235,Ivan Smolcic,CRO,DEF,ivan_peri_i__cro,Ivan Perisic,CRO,FWD,similar_name+same_team; score=0.867,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 49541,Maximilian Mittelstädt,GER,DEF,maximilian_beier__ger,Maximilian Beier,GER,FWD,similar_name+same_team; score=0.884,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
@@ -11,6 +11,7 @@
 49173,Harry Maguire,ENG,DEF,harry_kane__eng,Harry Kane,ENG,FWD,similar_name+same_team; score=0.896,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 49344,Ju-sung Kim,KOR,DEF,ji_sung_eom__kor,Ji-sung Eom,KOR,MID,similar_name+same_team; score=0.927,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 50310,Sebastian Caceres,URU,DEF,martin_caceres__uru,Martin Caceres,URU,DEF,similar_name+same_team+same_position; score=1.024,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50369,Daniyal Eiri,IRN,DEF,danial_esmaeilifar__irn,Danial Esmaeilifar,IRN,DEF,similar_name+same_team+same_position; score=0.917,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 48748,Ahmed Nabil Kouka,EGY,DEF,ahmed_fatouh__egy,Ahmed Fatouh,EGY,DEF,similar_name+same_team+same_position; score=0.871,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 50264,Youssef Belammari,MAR,DEF,youssef_en_nesyri__mar,Youssef En-Nesyri,MAR,FWD,similar_name+same_team; score=0.847,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 49704,Pape Abou Cisse,SEN,DEF,path_ciss__sen,Pathe Ciss,SEN,MID,similar_name+same_team; score=0.840,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
@@ -20,12 +21,14 @@
 48922,Bruno Varela,CPV,GK,h_lio_varela__cpv,Helio Varela,CPV,FWD,similar_name+same_team; score=0.867,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 49829,Scott Bain,SCO,GK,scott_mctominay__sco,Scott McTominay,SCO,MID,similar_name+same_team; score=0.840,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 49617,Munir Mohamedi El Kajoui,MAR,GK,munir_el_kajoui__mar,Munir El Kajoui,MAR,GK,similar_name+same_team+same_position; score=1.019,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50377,Jalal Hassan,IRQ,GK,ali_al_hamadi__irq,Ali Al-Hamadi,IRQ,FWD,similar_name+same_team; score=0.840,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 48768,Alejandro 'Alex' Remiro,ESP,GK,alejandro_alex_grimaldo__esp,Alejandro 'Alex' Grimaldo,ESP,DEF,similar_name+same_team; score=1.033,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 49454,Lucas Chevalier,FRA,GK,lucas_hern_ndez__fra,Lucas Hernandez,FRA,DEF,similar_name+same_team; score=0.867,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 49287,Joao Carvalho,POR,GK,jo_o_cancelo__por,João Cancelo,POR,DEF,similar_name+same_team; score=0.920,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 50291,David Doudera,CZE,MID,david_jurasek__holdet_584,David Jurasek,CZE,DEF,similar_name+same_team; score=0.892,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
-49702,Pablo Barrios,ESP,MID,pablo_gavi__esp,Pablo Gavi,ESP,MID,similar_name+same_team+same_position; score=0.946,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50269,Marten de Roon,NED,MID,frenkie_de_jong__ned,Frenkie de Jong,NED,MID,similar_name+same_team+same_position; score=0.871,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 49278,Jesus Rodriguez,ESP,MID,james_rodr_guez__col,James Rodriguez,COL,MID,similar_name+same_position; score=0.917,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49702,Pablo Barrios,ESP,MID,pablo_gavi__esp,Pablo Gavi,ESP,MID,similar_name+same_team+same_position; score=0.946,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 48766,Aleix Garcia,ESP,MID,eric_garcia__esp,Eric Garcia,ESP,DEF,similar_name+same_team; score=0.983,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 49703,Pablo Fornals,ESP,MID,pablo_gavi__esp,Pablo Gavi,ESP,MID,similar_name+same_team+same_position; score=0.859,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 49181,Herman Johansson,SWE,MID,viktor_johansson__swe,Viktor Johansson,SWE,GK,similar_name+same_team; score=0.887,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
@@ -39,14 +42,19 @@
 49197,Hyeok-kyu Kwon,KOR,MID,oh_hyeon_gyu__kor,Hyeon-Gyu Oh,KOR,FWD,similar_name+same_team; score=0.892,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 49201,Hyun-seok Hong,KOR,MID,hyun_jun_yang__kor,Hyun-Jun Yang,KOR,MID,similar_name+same_team+same_position; score=0.843,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 50272,Gilberto Mora,MEX,MID,guillermo_ochoa__mex,Guillermo Ochoa,MEX,GK,similar_name+same_team; score=0.843,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
-50309,Rodrigo Zalazar,URU,MID,rodrigo_aguirre__uru,Rodrigo Aguirre,URU,FWD,similar_name+same_team; score=0.867,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50309,Rodrigo Zalazar,URU,MID,rodrigo_bentancur__uru,Rodrigo Bentancur,URU,MID,similar_name+same_team+same_position; score=0.875,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50373,Mehdi Torabi,IRN,MID,mehdi_taremi__irn,Mehdi Taremi,IRN,FWD,similar_name+same_team; score=0.950,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50375,Amir Mohammad Razzaghinia,IRN,MID,mohammed_ghorbani__irn,Mohammad Ghorbani,IRN,MID,similar_name+same_team+same_position; score=0.869,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50380,Ahmed Qasem,IRQ,MID,ahmed_hasan_maknzi__irq,Ahmed Hasan Maknzi,IRQ,DEF,similar_name+same_team; score=0.821,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 50253,Alberto Quintero,PAN,MID,adalberto_carrasquilla__pan,Adalberto Carrasquilla,PAN,MID,similar_name+same_team+same_position; score=0.829,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 50263,Soufiane Rahimi,MAR,MID,souffian_el_karouani__mar,Souffian El Karouani,MAR,DEF,similar_name+same_team; score=0.886,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 49574,Mohamed Ali Ben Romdhane,TUN,MID,mohamed_amine_ben_hamida__tun,Mohamed Amine Ben Hamida,TUN,DEF,similar_name+same_team; score=0.908,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50384,Sherzod Esanov,UZB,MID,sherzod_nasrullayev__uzb,Sherzod Nasrullaev,UZB,DEF,similar_name+same_team; score=0.825,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 48752,Ailson Tavares,CPV,MID,gilson_benchimol_tavares__cpv,Gilson Benchimol Tavares,CPV,FWD,similar_name+same_team; score=0.884,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 49410,Kristian Arnstad,NOR,MID,kristian_thorstvedt__nor,Kristian Thorstvedt,NOR,MID,similar_name+same_team+same_position; score=0.993,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
-49162,Habib Diallo,SEN,FWD,habib_diarra__sen,Habib Diarra,SEN,MID,similar_name+same_team; score=0.950,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+50383,Azizbek Amanov,UZB,FWD,aziz_g_aniyev__uzb,Aziz Ganiev,UZB,MID,similar_name+same_team; score=0.840,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 48908,Boulaye Dia,SEN,FWD,abdoulaye_seck__sen,Abdoulaye Seck,SEN,DEF,similar_name+same_team; score=0.840,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
+49162,Habib Diallo,SEN,FWD,habib_diarra__sen,Habib Diarra,SEN,MID,similar_name+same_team; score=0.950,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 49610,Mostafa Mohamed,EGY,FWD,mostafa_ziko__egy,Mostafa Ziko,EGY,MID,similar_name+same_team; score=0.867,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 50288,Santiago Gimenez,MEX,FWD,santiago_mele__uru,Santiago Mele,URU,GK,similar_name; score=0.828,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
 50294,Jan Kuchta,CZE,FWD,jan_kliment__holdet_584,Jan Kliment,CZE,FWD,similar_name+same_team+same_position; score=0.821,C:\Users\Administrator\Desktop\vm2026_local_app\data\holdet_players_game_616_flat.csv
