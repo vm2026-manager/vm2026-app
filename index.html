@@ -184,23 +184,23 @@
     .strategy-panel {
       display: flex;
       align-items: stretch;
-      gap: 8px;
-      margin-bottom: 10px;
+      gap: 6px;
+      margin-bottom: 7px;
       background: rgba(255,255,255,0.92);
       color: #111827;
       border-radius: 10px;
-      padding: 8px 10px;
+      padding: 6px 8px;
     }
 
     .strategy-topline {
       display: flex;
       align-items: center;
-      gap: 7px;
+      gap: 5px;
       flex-wrap: wrap;
     }
 
     .strategy-label {
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 800;
     }
 
@@ -208,13 +208,13 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 18px;
-      height: 18px;
+      width: 15px;
+      height: 15px;
       border-radius: 50%;
       border: 1px solid #d1d5db;
       background: #ffffff;
       color: #374151;
-      font-size: 12px;
+      font-size: 10px;
       font-weight: 800;
       cursor: help;
     }
@@ -223,13 +223,13 @@
       display: flex;
       align-items: stretch;
       justify-content: space-between;
-      gap: 10px;
+      gap: 7px;
       flex-wrap: wrap;
     }
 
     .strategy-buttons {
       display: flex;
-      gap: 8px;
+      gap: 5px;
       flex-wrap: wrap;
       flex: 1 1 360px;
     }
@@ -239,10 +239,11 @@
       background: #ffffff;
       color: #111827;
       border-radius: 8px;
-      padding: 7px 10px;
-      font-size: 12px;
+      padding: 5px 8px;
+      font-size: 11px;
       font-weight: bold;
       cursor: pointer;
+      line-height: 1.15;
     }
 
     .strategy-btn.active {
@@ -251,18 +252,18 @@
     }
 
     .captain-summary {
-      min-width: 190px;
-      max-width: 270px;
-      padding: 8px 10px;
+      min-width: 150px;
+      max-width: 210px;
+      padding: 6px 8px;
       border-radius: 10px;
       border: 1px solid #f59e0b;
       background: #fef3c7;
-      box-shadow: 0 6px 16px rgba(146, 64, 14, 0.15);
+      box-shadow: 0 4px 10px rgba(146, 64, 14, 0.13);
       color: #422006;
     }
 
     .captain-summary-label {
-      font-size: 10px;
+      font-size: 9px;
       font-weight: 800;
       text-transform: uppercase;
       letter-spacing: 0.04em;
@@ -270,12 +271,13 @@
 
     .captain-summary-name {
       margin-top: 2px;
-      font-size: 14px;
+      font-size: 13px;
       line-height: 1.2;
       font-weight: 900;
     }
 
     .captain-summary-score {
+      display: none;
       margin-top: 2px;
       font-size: 11px;
       line-height: 1.25;
@@ -455,14 +457,14 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 3px;
-      padding: 3px 7px;
+      margin-bottom: 2px;
+      padding: 2px 6px;
       border-radius: 999px;
       border: 1px solid #b45309;
       background: #facc15;
       color: #422006;
-      box-shadow: 0 5px 12px rgba(120, 53, 15, 0.26);
-      font-size: 9px;
+      box-shadow: 0 4px 9px rgba(120, 53, 15, 0.22);
+      font-size: 8px;
       line-height: 1;
       font-weight: 900;
       text-transform: uppercase;
@@ -583,10 +585,10 @@
     }
 
     .player-badges {
-      margin-top: 3px;
+      margin-top: 2px;
       display: flex;
       justify-content: center;
-      gap: 3px;
+      gap: 2px;
       flex-wrap: wrap;
     }
 
@@ -594,9 +596,9 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 16px;
+      min-height: 12px;
       border-radius: 999px;
-      padding: 1px 5px;
+      padding: 1px 4px;
       font-size: 8px;
       font-weight: bold;
       line-height: 1.1;
@@ -615,6 +617,14 @@
       background: #fed7aa;
       color: #7c2d12;
       border: 1px solid rgba(124, 45, 18, 0.2);
+    }
+
+    .player-badge.pitch-warning {
+      width: 18px;
+      max-width: 18px;
+      padding: 1px 0;
+      overflow: hidden;
+      font-size: 9px;
     }
 
     .player-badge.neutral {
@@ -888,6 +898,66 @@
       padding: 4px;
     }
 
+    .alternatives-panel {
+      margin: 4px 4px 8px;
+      padding: 9px;
+      border-radius: 10px;
+      background: #111827;
+      border: 1px solid rgba(253, 224, 71, 0.24);
+    }
+
+    .alternatives-title {
+      font-size: 13px;
+      font-weight: 900;
+      color: #f9fafb;
+      line-height: 1.2;
+    }
+
+    .alternatives-subtitle {
+      margin-top: 3px;
+      font-size: 11px;
+      color: #cbd5e1;
+      line-height: 1.25;
+    }
+
+    .alternative-rank {
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #fde047;
+      color: #111827;
+      font-size: 11px;
+      font-weight: 900;
+    }
+
+    .trade-row.alternative {
+      grid-template-columns: 30px minmax(0, 1fr) 58px 58px 76px 64px;
+      background: rgba(255,255,255,0.025);
+    }
+
+    .alternative-score-value {
+      font-weight: 900;
+      font-size: 14px;
+      line-height: 1;
+      text-align: right;
+    }
+
+    .manual-mini-warning {
+      display: inline-block;
+      margin-left: 4px;
+      padding: 1px 4px;
+      border-radius: 999px;
+      background: #fed7aa;
+      color: #7c2d12;
+      font-size: 9px;
+      font-weight: 900;
+      line-height: 1.1;
+      vertical-align: middle;
+    }
+
     .trade-row {
       display: grid;
       grid-template-columns: auto minmax(0, 1fr) 90px 58px 58px 86px;
@@ -919,6 +989,13 @@
       background: #6b7280;
       color: #d1d5db;
       cursor: not-allowed;
+    }
+
+    .choose-alt-btn {
+      width: auto;
+      min-width: 54px;
+      padding: 0 8px;
+      font-size: 11px;
     }
 
     .trade-name {
@@ -1469,6 +1546,7 @@
     let isApplyingRemoteSquad = false;
     let eligibleOnly = localStorage.getItem(STORAGE_KEYS.eligibleOnly) === "1";
     let activeStrategyKey = localStorage.getItem("vm2026_active_strategy") || "next_round";
+    let frontendCaptainOverride = null;
 
     const formationSelect = document.getElementById("formationSelect");
     const pitch = document.getElementById("pitch");
@@ -1698,7 +1776,7 @@
     }
 
     function captainNameForActiveStrategy() {
-      return activeStrategySummary().recommended_captain || "";
+      return frontendCaptainOverride || activeStrategySummary().recommended_captain || "";
     }
 
     function isCaptainPlayer(player) {
@@ -1718,10 +1796,7 @@
       const manualCaptainStatus = String(manual.manual_captain_status || "").toLowerCase();
 
       if (manualStatus === "check" || manualStartStatus === "doubtful") {
-        badges.push(`<span class="player-badge warning">Tjek start</span>`);
-      }
-      if (manualCaptainStatus === "avoid") {
-        badges.push(`<span class="player-badge neutral">Ikke kaptajn</span>`);
+        badges.push(`<span class="player-badge warning pitch-warning" title="Tjek start">!</span>`);
       }
 
       return badges.length ? `<div class="player-badges">${badges.join("")}</div>` : "";
@@ -1742,19 +1817,17 @@
       strategyButtons.querySelectorAll(".strategy-btn").forEach(button => {
         button.addEventListener("click", () => {
           activeStrategyKey = button.dataset.strategyKey || "next_round";
+          frontendCaptainOverride = null;
           localStorage.setItem("vm2026_active_strategy", activeStrategyKey);
           render();
         });
       });
 
       const summary = activeStrategySummary();
-      const captain = summary.recommended_captain || "–";
-      const growth = Number(summary.captain_expected_growth);
-      const growthText = Number.isFinite(growth) ? growth.toFixed(1).replace(".", ",") : "–";
+      const captain = captainNameForActiveStrategy() || summary.recommended_captain || "–";
       captainSummary.innerHTML = `
         <div class="captain-summary-label">Anbefalet kaptajn</div>
         <div class="captain-summary-name">${escapeHtml(captain)}</div>
-        <div class="captain-summary-score">Forventet rundevækst: ${escapeHtml(growthText)}</div>
       `;
     }
 
@@ -1997,6 +2070,7 @@ function saveState() {
       pushHistory();
       squad = {};
       activeSlotKey = null;
+      frontendCaptainOverride = null;
       activeSlotText.textContent = "Ingen valgt";
       clearStatus();
       saveState();
@@ -2021,6 +2095,44 @@ function saveState() {
         if (Number.isFinite(num)) return num;
       }
       return 0;
+    }
+
+    function getStrategyRowForPlayer(player, strategyKey = activeStrategyKey) {
+      if (!player) return null;
+      const rows = strategySquads?.[strategyKey]?.best_squad || [];
+      return rows.find(row => String(row.player_id) === String(player.player_id))
+        || rows.find(row =>
+          normalizeName(row.player_name) === normalizeName(player.player_name)
+          && canonicalTeamId(row.team_id) === canonicalTeamId(player.team_id)
+        )
+        || null;
+    }
+
+    function getStrategyRelevantScore(player) {
+      const strategyRow = getStrategyRowForPlayer(player);
+      const strategyScore = Number(strategyRow?.strategy_score);
+      if (Number.isFinite(strategyScore) && strategyScore > 0) return strategyScore;
+
+      const ev = Number(player?.optimizer_ev ?? player?.weighted_group_stage_ev);
+      const start = getPlayerStart(player) / 100;
+      const price = getPlayerPrice(player) / 1000000;
+      if (Number.isFinite(ev) && ev > 0) {
+        return ev + (Number.isFinite(start) ? start * 0.65 : 0) + (price ? Math.min(0.35, 1 / Math.max(price, 1)) : 0);
+      }
+      return getPlayerScore(player);
+    }
+
+    function hasManualCheck(player) {
+      const manual = manualOverrideForPlayer(player, getStrategyRowForPlayer(player));
+      const manualStatus = String(manual.manual_status || "").toLowerCase();
+      const manualStartStatus = String(manual.manual_start_status || "").toLowerCase();
+      return manualStatus === "check" || manualStartStatus === "doubtful";
+    }
+
+    function isManualAvoidPlayer(player) {
+      const manual = manualOverrideForPlayer(player, getStrategyRowForPlayer(player));
+      return String(manual.manual_status || "").toLowerCase() === "avoid"
+        || String(manual.manual_start_status || "").toLowerCase() === "avoid";
     }
 
     function getPlayerPrice(player) {
@@ -2527,6 +2639,85 @@ function saveState() {
       return getDisabledReason(player) === "";
     }
 
+    function getBestAlternativesForActiveSlot(activeSlot, currentPlayer) {
+      if (!activeSlot || !currentPlayer) return [];
+      const usedPlayerIds = new Set(Object.values(squad).filter(Boolean).map(String));
+      const slotPosition = activeSlot.positionCode || activeSlot.position;
+
+      return allPlayers
+        .filter(player => !usedPlayerIds.has(String(player.player_id)))
+        .filter(player => samePosition(player.position, slotPosition))
+        .filter(player => !isManualAvoidPlayer(player))
+        .filter(player => {
+          const previousActiveSlot = activeSlotKey;
+          activeSlotKey = activeSlot.key;
+          const disabledReason = getDisabledReason(player);
+          activeSlotKey = previousActiveSlot;
+          return disabledReason === "";
+        })
+        .sort((a, b) => {
+          const scoreDiff = getStrategyRelevantScore(b) - getStrategyRelevantScore(a);
+          if (Math.abs(scoreDiff) > 0.0001) return scoreDiff;
+          const evDiff = Number(b.optimizer_ev || 0) - Number(a.optimizer_ev || 0);
+          if (Math.abs(evDiff) > 0.0001) return evDiff;
+          return getPlayerStart(b) - getPlayerStart(a);
+        })
+        .slice(0, 8);
+    }
+
+    function renderAlternativePanel(activeSlot, currentPlayer) {
+      const alternatives = getBestAlternativesForActiveSlot(activeSlot, currentPlayer);
+      const titleName = currentPlayer?.player_name || activeSlot?.position || "plads";
+      const strategyName = strategyDisplayName(activeStrategyKey);
+
+      if (!alternatives.length) {
+        return `
+          <div class="alternatives-panel">
+            <div class="alternatives-title">Bedste alternativer til ${escapeHtml(titleName)}</div>
+            <div class="alternatives-subtitle">Strategi: ${escapeHtml(strategyName)} · Ingen gyldige alternativer inden for position, budget og landeloft.</div>
+          </div>
+        `;
+      }
+
+      const rows = alternatives.map((player, index) => {
+        const score = getStrategyRelevantScore(player);
+        const warning = hasManualCheck(player)
+          ? `<span class="manual-mini-warning" title="Tjek start">Tjek start</span>`
+          : "";
+        return `
+          <div class="trade-row alternative">
+            <span class="alternative-rank">${index + 1}</span>
+            <div>
+              <div class="trade-name">${escapeHtml(player.player_name || "Ukendt spiller")}${warning}</div>
+              <div class="trade-meta">${escapeHtml(teamDisplayName(player.team_id, player.team_name))} · ${escapeHtml(positionFullLabel(player.position))}</div>
+              <div class="trade-next">${escapeHtml(nextMatchText(player.team_id))}</div>
+            </div>
+            <div class="trade-start-col">
+              <div class="trade-start-value">${startPct(getPlayerStart(player))}</div>
+              <div class="trade-start-label">Start</div>
+            </div>
+            <div class="trade-score-col">
+              <div class="alternative-score-value">${Number.isFinite(score) ? score.toFixed(1).replace(".", ",") : "–"}</div>
+              <div class="trade-score-label">Score</div>
+            </div>
+            <div>
+              <div class="trade-price">${formatMoney(getPlayerPrice(player))}</div>
+              <div class="trade-subprice">Pris</div>
+            </div>
+            <button class="plus-btn choose-alt-btn" data-player-id="${escapeHtml(player.player_id)}" title="Vælg ${escapeHtml(player.player_name || "")}">Vælg</button>
+          </div>
+        `;
+      }).join("");
+
+      return `
+        <div class="alternatives-panel">
+          <div class="alternatives-title">Bedste alternativer til ${escapeHtml(titleName)}</div>
+          <div class="alternatives-subtitle">Strategi: ${escapeHtml(strategyName)} · samme position · budget og max 4 pr. land respekteres</div>
+        </div>
+        ${rows}
+      `;
+    }
+
     function setActiveSlot(slotKey) {
       activeSlotKey = slotKey;
       const slot = getCurrentSlots().find(s => s.key === slotKey);
@@ -2563,6 +2754,29 @@ function saveState() {
       }
 
       showStatus(`Ingen ledig plads i ${positionFullLabel(player.position).toLowerCase()}. Vælg en spiller på banen for at udskifte.`, "error");
+    }
+
+    function pickFrontendCaptainFromSquad(nextSquad) {
+      const players = Object.values(nextSquad)
+        .map(playerId => getPlayerById(playerId))
+        .filter(Boolean)
+        .filter(player => {
+          const manual = manualOverrideForPlayer(player, getStrategyRowForPlayer(player));
+          return String(manual.manual_captain_status || "").toLowerCase() !== "avoid"
+            && !isManualAvoidPlayer(player);
+        });
+
+      if (!players.length) return null;
+
+      // TODO: Full captain re-calculation should use backend/model captain_score for manual UI swaps.
+      return players.sort((a, b) => {
+        const positionBonus = position => position === "FWD" ? 0.7 : (position === "MID" ? 0.35 : 0);
+        return (
+          getStrategyRelevantScore(b) + positionBonus(b.position) + getPlayerStart(b) / 150
+        ) - (
+          getStrategyRelevantScore(a) + positionBonus(a.position) + getPlayerStart(a) / 150
+        );
+      })[0]?.player_name || null;
     }
 
     function addPlayerToSlot(playerId, preferredSlotKey = null) {
@@ -2611,7 +2825,11 @@ function saveState() {
         delete squad[alreadyInSquadSlot];
       }
 
+      const removedCaptain = currentPlayerInSlot && normalizeName(currentPlayerInSlot.player_name) === normalizeName(captainNameForActiveStrategy());
       squad[slotKey] = playerId;
+      if (removedCaptain) {
+        frontendCaptainOverride = pickFrontendCaptainFromSquad(squad);
+      }
 
       clearStatus();
       saveState();
@@ -2878,6 +3096,7 @@ function saveState() {
       pushHistory();
       squad = newSquad;
       activeSlotKey = null;
+      frontendCaptainOverride = null;
       activeSlotText.textContent = "Ingen valgt";
       saveState();
       render();
@@ -3315,6 +3534,7 @@ function saveState() {
       pushHistory();
       squad = candidateSquad;
       activeSlotKey = null;
+      frontendCaptainOverride = null;
       activeSlotText.textContent = "Ingen valgt";
       clearStatus();
       saveState();
@@ -3416,6 +3636,15 @@ function saveState() {
 
       if (activeSlot && position && !samePosition(position, activeSlot.positionCode || activeSlot.position)) {
         activeSlotKey = null;
+      }
+
+      const currentPlayerForActiveSlot = activeSlot ? getPlayerById(squad[activeSlot.key]) : null;
+      if (activeSlotKey && activeSlot && currentPlayerForActiveSlot && !search && !team && (!position || samePosition(position, activeSlot.positionCode || activeSlot.position))) {
+        tradeList.innerHTML = renderAlternativePanel(activeSlot, currentPlayerForActiveSlot);
+        tradeList.querySelectorAll(".plus-btn").forEach(btn => {
+          btn.addEventListener("click", () => addPlayerToSlot(btn.dataset.playerId, activeSlot.key));
+        });
+        return;
       }
 
       if (search) {
