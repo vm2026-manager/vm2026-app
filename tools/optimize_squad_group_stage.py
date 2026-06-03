@@ -25,6 +25,7 @@ TEAM_MARKET_JSON_PATH = DATA_DIR / "team_market_odds_layer_v1.json"
 
 OUT_STRATEGIES_JSON = DATA_DIR / "optimal_squads_by_strategy.json"
 OUT_COMPARISON_CSV = DATA_DIR / "strategy_comparison_report.csv"
+OUT_FORMATION_COMPARISON_CSV = DATA_DIR / "strategy_formation_comparison_report.csv"
 OUT_CONTEXT_JSON = DATA_DIR / "current_strategy_context.json"
 OUT_DISPLAY_NAMES_JSON = DATA_DIR / "strategy_display_names.json"
 OUT_CLEANUP_REPORT = DATA_DIR / "strategy_cleanup_report.md"
@@ -790,6 +791,8 @@ def main() -> int:
     players = load_players()
     all_results: dict[str, Any] = {}
     comparison_rows: list[dict[str, Any]] = []
+    formation_comparison_rows: list[dict[str, Any]] = []
+    missing_formations: list[tuple[str, str]] = []
 
     print(f"Optimizer-pool spillere: {len(players)}")
     print(f"Budget: {BUDGET_M:.1f} mio. | Maks pr. land: {MAX_PER_TEAM}")
@@ -799,12 +802,44 @@ def main() -> int:
         best_squad = pd.DataFrame()
         best_summary: dict[str, Any] | None = None
         formation_records: dict[str, list[dict[str, Any]]] = {}
+        squads_by_formation: dict[str, dict[str, Any]] = {}
         for formation_name, formation in FORMATIONS.items():
             squad = solve_formation(players, strategy, formation_name, formation)
-            formation_records[formation_name] = squad_records(squad) if not squad.empty else []
             if squad.empty:
+                formation_records[formation_name] = []
+                squads_by_formation[formation_name] = {
+                    "summary": {
+                        "strategy": strategy,
+                        "display_name_da": context["next_round_display_name"] if strategy == "next_round" else DISPLAY_NAMES_DA.get(strategy, strategy),
+                        "formation": formation_name,
+                        "total_score": 0.0,
+                        "total_ev": 0.0,
+                        "total_price": 0,
+                        "avg_start_prob": 0.0,
+                        "avg_conditional_start_prob": 0.0,
+                        "high_risk_players": 0,
+                        "teams_summary": "",
+                        "player_names": "",
+                        "recommended_captain": "",
+                        "captain_expected_growth": 0.0,
+                        "captain_round": int(context.get("target_round") or 1),
+                        "captain_score": 0.0,
+                        "captain_reason": "Ingen gyldig optimizer-løsning for formationen",
+                    },
+                    "squad": [],
+                    "status": "no_valid_solution",
+                }
+                missing_formations.append((strategy, formation_name))
                 continue
             summary = squad_summary(strategy, squad, context)
+            records = squad_records(squad)
+            formation_records[formation_name] = records
+            squads_by_formation[formation_name] = {
+                "summary": summary,
+                "squad": records,
+                "status": "ok",
+            }
+            formation_comparison_rows.append(summary)
             if best_summary is None or float(summary["total_score"]) > float(best_summary["total_score"]):
                 best_summary = summary
                 best_squad = squad.copy()
@@ -833,6 +868,7 @@ def main() -> int:
         all_results[strategy] = {
             "best_summary": best_summary,
             "best_squad": squad_records(best_squad) if not best_squad.empty else [],
+            "squads_by_formation": squads_by_formation,
             "formations": formation_records,
         }
         print(
@@ -862,10 +898,33 @@ def main() -> int:
         "captain_reason",
     ]
     write_csv(OUT_COMPARISON_CSV, fieldnames, comparison_rows)
+    formation_fieldnames = [
+        "strategy",
+        "display_name_da",
+        "formation",
+        "total_price",
+        "total_ev",
+        "total_score",
+        "avg_conditional_start_prob",
+        "high_risk_players",
+        "recommended_captain",
+        "player_names",
+    ]
+    write_csv(
+        OUT_FORMATION_COMPARISON_CSV,
+        formation_fieldnames,
+        [{key: row.get(key, "") for key in formation_fieldnames} for row in formation_comparison_rows],
+    )
     print(f"Skrevet: {OUT_STRATEGIES_JSON.relative_to(PROJECT_ROOT)}")
     print(f"Skrevet: {OUT_COMPARISON_CSV.relative_to(PROJECT_ROOT)}")
+    print(f"Skrevet: {OUT_FORMATION_COMPARISON_CSV.relative_to(PROJECT_ROOT)}")
     print(f"Skrevet: {OUT_CONTEXT_JSON.relative_to(PROJECT_ROOT)}")
     print(f"Skrevet: {OUT_CLEANUP_REPORT.relative_to(PROJECT_ROOT)}")
+    if missing_formations:
+        missing_text = "; ".join(f"{strategy}/{formation}" for strategy, formation in missing_formations)
+        print(f"Manglende gyldige formationer: {missing_text}")
+    else:
+        print(f"Strategi x formation genereret: {len(STRATEGIES)} x {len(FORMATIONS)} = {len(formation_comparison_rows)}")
     return 0
 
 

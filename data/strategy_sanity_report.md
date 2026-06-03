@@ -4,7 +4,7 @@ Rapporten viser de fire brugerrettede strategier efter strategirydningen.
 
 ## Aktuel Strategikontekst
 
-- current_time_dk: 2026-06-03T17:40:54+02:00
+- current_time_dk: 2026-06-03T20:41:43+02:00
 - target_round: 1
 - next_round_display_name: Næste runde (runde 1)
 - remaining_matches_in_target_round: 24

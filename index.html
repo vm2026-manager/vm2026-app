@@ -2099,7 +2099,9 @@ function saveState() {
 
     function getStrategyRowForPlayer(player, strategyKey = activeStrategyKey) {
       if (!player) return null;
-      const rows = strategySquads?.[strategyKey]?.best_squad || [];
+      const formationEntry = strategySquads?.[strategyKey]?.squads_by_formation?.[currentFormation];
+      const formationRows = formationEntry?.squad || [];
+      const rows = formationRows.length ? formationRows : (strategySquads?.[strategyKey]?.best_squad || []);
       return rows.find(row => String(row.player_id) === String(player.player_id))
         || rows.find(row =>
           normalizeName(row.player_name) === normalizeName(player.player_name)
@@ -3008,39 +3010,82 @@ function saveState() {
       return null;
     }
 
+    function rowsMatchFormation(rows, formationName) {
+      const formation = FORMATIONS[formationName];
+      if (!formation || !Array.isArray(rows) || rows.length !== 11) return false;
+
+      const counts = { GK: 0, DEF: 0, MID: 0, FWD: 0 };
+      rows.forEach(row => {
+        const position = normalizePositionLabel(row.position);
+        if (counts[position] !== undefined) counts[position] += 1;
+      });
+
+      return counts.GK === 1
+        && counts.DEF === formation.df
+        && counts.MID === formation.mf
+        && counts.FWD === formation.fw;
+    }
+
+    function rowsFormationLabel(rows) {
+      const counts = { DEF: 0, MID: 0, FWD: 0 };
+      rows.forEach(row => {
+        const position = normalizePositionLabel(row.position);
+        if (counts[position] !== undefined) counts[position] += 1;
+      });
+      return `${counts.DEF}-${counts.MID}-${counts.FWD}`;
+    }
+
     function applyOptimalSquadForCurrentFormation() {
       const strategyEntry = activeStrategyEntry();
+      const formationEntry = strategyEntry?.squads_by_formation?.[currentFormation];
+      const formationRows = formationEntry?.squad || [];
       const strategyRows = strategyEntry?.best_squad || [];
-      const strategyFormation = strategyEntry?.best_summary?.formation;
+      const selectedFormation = currentFormation;
 
-      if (strategyRows.length) {
-        if (strategyFormation && FORMATIONS[strategyFormation]) {
-          currentFormation = strategyFormation;
-          formationSelect.value = currentFormation;
-        }
+      if (formationRows.length && rowsMatchFormation(formationRows, selectedFormation)) {
+        applyOptimizerRowsToSquad(
+          formationRows,
+          `Valgte ${strategyDisplayName(activeStrategyKey)} i formation ${selectedFormation}.`
+        );
+        return;
+      }
 
+      if (strategyRows.length && rowsMatchFormation(strategyRows, selectedFormation)) {
         applyOptimizerRowsToSquad(
           strategyRows,
-          `Valgte ${strategyDisplayName(activeStrategyKey)}.`
+          `Valgte ${strategyDisplayName(activeStrategyKey)} i formation ${selectedFormation}.`
         );
         return;
       }
 
       if (!optimalSquads.length) {
+        if (strategyRows.length) {
+          showStatus(
+            `Der findes ikke et optimeret ${strategyDisplayName(activeStrategyKey)}-hold for formation ${selectedFormation} endnu.`,
+            "error"
+          );
+          return;
+        }
         applyFastFullSquadFallback("Optimizer-data manglede.");
         return;
       }
 
       const rows = optimalSquads.filter(row =>
-        (row.selected_formation || row.formation) === currentFormation
+        (row.selected_formation || row.formation) === selectedFormation
       );
 
       if (!rows.length) {
-        applyFastFullSquadFallback(`Ingen optimizer-trup fundet for formation ${currentFormation}.`);
+        showStatus(
+          `Der findes ikke et optimeret hold for formation ${selectedFormation} endnu.`,
+          "error"
+        );
         return;
       }
 
-      applyOptimizerRowsToSquad(rows, "Valgte optimalt hold fra optimizer-filen.");
+      const fallbackText = strategyRows.length
+        ? `Der findes ikke et precomputed ${strategyDisplayName(activeStrategyKey)}-hold for ${selectedFormation}; bruger sidste nød-fallback fra generisk formationsoutput.`
+        : `Valgte optimalt hold fra optimizer-filen i formation ${selectedFormation}.`;
+      applyOptimizerRowsToSquad(rows, fallbackText);
     }
 
     function applyOptimizerRowsToSquad(rows, successText) {
