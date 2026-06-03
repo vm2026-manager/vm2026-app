@@ -183,7 +183,7 @@
 
     .strategy-panel {
       display: flex;
-      flex-direction: column;
+      align-items: stretch;
       gap: 8px;
       margin-bottom: 10px;
       background: rgba(255,255,255,0.92);
@@ -192,10 +192,46 @@
       padding: 8px 10px;
     }
 
+    .strategy-topline {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      flex-wrap: wrap;
+    }
+
+    .strategy-label {
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .info-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      border: 1px solid #d1d5db;
+      background: #ffffff;
+      color: #374151;
+      font-size: 12px;
+      font-weight: 800;
+      cursor: help;
+    }
+
+    .strategy-content {
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
     .strategy-buttons {
       display: flex;
       gap: 8px;
       flex-wrap: wrap;
+      flex: 1 1 360px;
     }
 
     .strategy-btn {
@@ -215,9 +251,35 @@
     }
 
     .captain-summary {
-      font-size: 12px;
-      line-height: 1.35;
-      color: #374151;
+      min-width: 190px;
+      max-width: 270px;
+      padding: 8px 10px;
+      border-radius: 10px;
+      border: 1px solid #f59e0b;
+      background: #fef3c7;
+      box-shadow: 0 6px 16px rgba(146, 64, 14, 0.15);
+      color: #422006;
+    }
+
+    .captain-summary-label {
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .captain-summary-name {
+      margin-top: 2px;
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 900;
+    }
+
+    .captain-summary-score {
+      margin-top: 2px;
+      font-size: 11px;
+      line-height: 1.25;
+      color: #78350f;
     }
 
     .action-bar {
@@ -389,6 +451,24 @@
       text-align: center;
     }
 
+    .slot-captain-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 3px;
+      padding: 3px 7px;
+      border-radius: 999px;
+      border: 1px solid #b45309;
+      background: #facc15;
+      color: #422006;
+      box-shadow: 0 5px 12px rgba(120, 53, 15, 0.26);
+      font-size: 9px;
+      line-height: 1;
+      font-weight: 900;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
     .player-figure {
       width: 36px;
       height: 36px;
@@ -524,9 +604,11 @@
     }
 
     .player-badge.captain {
-      background: #fde047;
+      background: #facc15;
       color: #422006;
-      border: 1px solid rgba(120, 53, 15, 0.18);
+      border: 1px solid #b45309;
+      box-shadow: 0 4px 10px rgba(120, 53, 15, 0.22);
+      font-weight: 900;
     }
 
     .player-badge.warning {
@@ -1163,8 +1245,18 @@
           </div>
 
           <div class="strategy-panel">
-            <div class="strategy-buttons" id="strategyButtons"></div>
-            <div class="captain-summary" id="captainSummary">Anbefalet kaptajn: indlæser...</div>
+            <div class="strategy-topline">
+              <span class="strategy-label">Vælg strategi</span>
+              <span
+                class="info-icon"
+                title="Alle strategier prioriterer sandsynlige startere. Forskellen er tidshorisont og risikoprofil."
+                aria-label="Alle strategier prioriterer sandsynlige startere. Forskellen er tidshorisont og risikoprofil."
+              >i</span>
+            </div>
+            <div class="strategy-content">
+              <div class="strategy-buttons" id="strategyButtons"></div>
+              <div class="captain-summary" id="captainSummary">Anbefalet kaptajn: indlæser...</div>
+            </div>
           </div>
 
           <div class="action-bar">
@@ -1559,6 +1651,12 @@
     }
 
     const USER_STRATEGIES = ["next_round", "round1_2", "group_stage", "long_run"];
+    const STRATEGY_TOOLTIPS = {
+      next_round: "Optimerer til kommende runde med odds, starterfokus og kaptajn.",
+      round1_2: "Ser på samlet værdi i de to første runder.",
+      group_stage: "Ser på alle tre gruppekampe og justerer for mulig rotation i runde 3.",
+      long_run: "Prioriterer spillere fra store nationer ud fra vinderodds."
+    };
 
     function activeStrategyEntry() {
       return strategySquads?.[activeStrategyKey] || null;
@@ -1619,9 +1717,6 @@
       const manualStartStatus = String(manual.manual_start_status || "").toLowerCase();
       const manualCaptainStatus = String(manual.manual_captain_status || "").toLowerCase();
 
-      if (isCaptainPlayer(player)) {
-        badges.push(`<span class="player-badge captain">C</span>`);
-      }
       if (manualStatus === "check" || manualStartStatus === "doubtful") {
         badges.push(`<span class="player-badge warning">Tjek start</span>`);
       }
@@ -1640,6 +1735,7 @@
           class="strategy-btn ${strategyKey === activeStrategyKey ? "active" : ""}"
           type="button"
           data-strategy-key="${escapeHtml(strategyKey)}"
+          title="${escapeHtml(STRATEGY_TOOLTIPS[strategyKey] || "")}"
         >${escapeHtml(strategyDisplayName(strategyKey))}</button>
       `).join("");
 
@@ -1654,8 +1750,12 @@
       const summary = activeStrategySummary();
       const captain = summary.recommended_captain || "–";
       const growth = Number(summary.captain_expected_growth);
-      const growthText = Number.isFinite(growth) ? ` · Vækst: ${growth.toFixed(3).replace(/\.?0+$/, "")}` : "";
-      captainSummary.textContent = `Anbefalet kaptajn: ${captain}${growthText}`;
+      const growthText = Number.isFinite(growth) ? growth.toFixed(1).replace(".", ",") : "–";
+      captainSummary.innerHTML = `
+        <div class="captain-summary-label">Anbefalet kaptajn</div>
+        <div class="captain-summary-name">${escapeHtml(captain)}</div>
+        <div class="captain-summary-score">Forventet rundevækst: ${escapeHtml(growthText)}</div>
+      `;
     }
 
     function getFlagUrl(flagCode) {
@@ -3241,9 +3341,13 @@ function saveState() {
         const flagUrl = player ? getFlagUrl(getPlayerFlagCode(player)) : "";
         const isActive = activeSlotKey === slot.key ? "active" : "";
         const nextText = player ? nextMatchText(player.team_id) : "";
+        const captainBadge = player && isCaptainPlayer(player)
+          ? `<div class="slot-captain-badge">Kaptajn</div>`
+          : "";
 
         return `
           <div class="slot ${isActive}" style="left:${slot.x}%; top:${slot.y}%;">
+            ${captainBadge}
             <div class="player-figure ${player ? "" : "empty"}">
               ${player
                 ? (flagUrl
