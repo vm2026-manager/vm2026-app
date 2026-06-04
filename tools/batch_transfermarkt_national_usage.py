@@ -10,7 +10,7 @@ from datetime import datetime
 from io import StringIO
 from pathlib import Path
 from typing import Any
-from urllib.parse import quote_plus, urljoin
+from urllib.parse import quote_plus, urljoin, urlparse
 
 import pandas as pd
 import requests
@@ -356,6 +356,7 @@ def choose_players_to_process(
     manual_only: bool = False,
     refresh: bool = False,
     limit: int = MAX_PLAYERS_PER_RUN,
+    manual_names: list[str] | None = None,
 ) -> list[dict[str, Any]]:
     done_statuses = {"ok", "no_match", "ok_manual_url", "manual_url"}
 
@@ -397,6 +398,8 @@ def choose_players_to_process(
 
     selected_ids = get_selected_player_ids()
 
+    wanted_manual_names = {norm_text(name) for name in (manual_names or []) if norm_text(name)}
+
     candidates = []
     for player in players:
         pid = get_player_id(player)
@@ -409,6 +412,15 @@ def choose_players_to_process(
 
         if manual_only and pid not in manual_urls:
             continue
+
+        if wanted_manual_names:
+            manual = manual_urls.get(pid, {})
+            names = {
+                norm_text(name),
+                norm_text(manual.get("manual_player_name")),
+            }
+            if not names.intersection(wanted_manual_names):
+                continue
 
         if not refresh and (pid in done_ids or pair in done_pairs):
             continue
@@ -481,8 +493,59 @@ def base_url_for(url: str) -> str:
     return BASE_URL
 
 
+def ceapi_base_for(url: str) -> str:
+    parsed = urlparse(str(url))
+    if parsed.scheme and parsed.netloc:
+        return f"{parsed.scheme}://{parsed.netloc}"
+    return BASE_URL
+
+
+def find_caps_goals_national_url(html: str, profile_url: str, tm_player_id: str) -> str | None:
+    soup = BeautifulSoup(html, "html.parser")
+
+    def preferred_href_from_scope(scope: Any) -> str | None:
+        links = []
+        for a in scope.select("a[href]") if hasattr(scope, "select") else []:
+            href = str(a.get("href") or "")
+            if "/nationalmannschaft/spieler/" not in href:
+                continue
+            if f"/spieler/{tm_player_id}" not in href:
+                continue
+            links.append(href)
+        if not links:
+            return None
+        links.sort(key=lambda href: ("/verein_id/" in href, href), reverse=True)
+        return urljoin(ceapi_base_for(profile_url), links[0].replace("&amp;", "&"))
+
+    for text_node in soup.find_all(string=re.compile(r"Caps/Goals", re.IGNORECASE)):
+        for parent in [text_node.parent, *(list(text_node.parents)[:6] if text_node.parent else [])]:
+            if parent is None:
+                continue
+            href = preferred_href_from_scope(parent)
+            if href:
+                return href
+
+    caps_index = html.lower().find("caps/goals")
+    if caps_index >= 0:
+        snippet = html[max(0, caps_index - 2500) : caps_index + 2500]
+        pattern = re.compile(
+            rf'href="([^"]*/nationalmannschaft/spieler/{re.escape(tm_player_id)}(?:/verein_id/\d+)?)"',
+            re.IGNORECASE,
+        )
+        matches = [m.group(1) for m in pattern.finditer(snippet)]
+        if matches:
+            matches.sort(key=lambda href: ("/verein_id/" in href, href), reverse=True)
+            return urljoin(ceapi_base_for(profile_url), matches[0].replace("&amp;", "&"))
+
+    return None
+
+
 def find_national_url(profile_url: str, tm_player_id: str) -> str:
     html = fetch_html(profile_url)
+
+    caps_goals_url = find_caps_goals_national_url(html, profile_url, tm_player_id)
+    if caps_goals_url:
+        return caps_goals_url
 
     # Ofte findes nationalmannschaft-linket direkte i profil-HTML.
     pattern = re.compile(
@@ -492,10 +555,10 @@ def find_national_url(profile_url: str, tm_player_id: str) -> str:
 
     match = pattern.search(html)
     if match:
-        return urljoin(base_url_for(profile_url), match.group(1).replace("&amp;", "&"))
+        return urljoin(ceapi_base_for(profile_url), match.group(1).replace("&amp;", "&"))
 
     # Fallback: konstrueret national-page uden verein_id.
-    return profile_url.replace("/profil/spieler/", "/nationalmannschaft/spieler/")
+    return f"{ceapi_base_for(profile_url)}/x/nationalmannschaft/spieler/{tm_player_id}"
 
 
 def find_national_url_from_html(html: str, current_url: str, tm_player_id: str) -> str | None:
@@ -506,7 +569,114 @@ def find_national_url_from_html(html: str, current_url: str, tm_player_id: str) 
     match = pattern.search(html)
     if not match:
         return None
-    return urljoin(base_url_for(current_url), match.group(1).replace("&amp;", "&"))
+    return urljoin(ceapi_base_for(current_url), match.group(1).replace("&amp;", "&"))
+
+
+def fetch_ceapi_performance(tm_player_id: str, source_url: str) -> list[dict[str, Any]]:
+    api_url = f"{ceapi_base_for(source_url)}/ceapi/performance-game/{tm_player_id}"
+    response = requests.get(api_url, headers={**HEADERS, "Accept": "application/json,text/plain,*/*"}, timeout=30)
+    response.raise_for_status()
+    payload = response.json()
+    data = payload.get("data") if isinstance(payload, dict) else {}
+    performance = data.get("performance") if isinstance(data, dict) else []
+    if not isinstance(performance, list):
+        return []
+    return performance
+
+
+def matches_from_ceapi(
+    performance: list[dict[str, Any]],
+    player: dict[str, Any],
+    tm_player_id: str,
+    national_url: str,
+) -> pd.DataFrame:
+    verein_match = re.search(r"/verein_id/(\d+)", national_url)
+    verein_id = verein_match.group(1) if verein_match else ""
+
+    rows = []
+    for item in performance:
+        game = item.get("gameInformation") or {}
+        if not game.get("isNationalGame"):
+            continue
+
+        clubs = item.get("clubsInformation") or {}
+        club = clubs.get("club") or {}
+        opponent = clubs.get("opponent") or {}
+        if verein_id and str(club.get("clubId") or "") != verein_id:
+            continue
+
+        stats = item.get("statistics") or {}
+        general = stats.get("generalStatistics") or {}
+        playing_time = stats.get("playingTimeStatistics") or {}
+        goals = stats.get("goalStatistics") or {}
+        cards = stats.get("cardStatistics") or {}
+
+        date_utc = ((game.get("date") or {}).get("dateTimeUTC") or "").strip()
+        date_value = ""
+        if date_utc:
+            parsed = pd.to_datetime(date_utc, errors="coerce", utc=True)
+            if pd.notna(parsed):
+                date_value = parsed.strftime("%d/%m/%y")
+
+        participation = str(general.get("participationState") or "").strip()
+        played_minutes = playing_time.get("playedMinutes")
+        is_starting = bool(playing_time.get("isStarting"))
+        was_not_in_squad = participation in {"not in squad", "injured", "suspended", "absent"}
+        was_on_bench = participation == "on the bench"
+        has_position = participation == "played" or is_starting or played_minutes not in (None, "")
+        minutes_estimate = None
+        if played_minutes not in (None, ""):
+            try:
+                minutes_estimate = int(played_minutes)
+            except (TypeError, ValueError):
+                minutes_estimate = None
+
+        club_goals = club.get("goalsTotal")
+        opponent_goals = opponent.get("goalsTotal")
+        result = ""
+        if club_goals is not None and opponent_goals is not None:
+            result = f"{club_goals}:{opponent_goals}"
+
+        row_text_parts = [
+            date_value,
+            str(game.get("competitionId") or ""),
+            f"club:{club.get('clubId') or ''}",
+            f"opponent:{opponent.get('clubId') or ''}",
+            result,
+            participation,
+            f"{minutes_estimate}'" if minutes_estimate is not None else "",
+        ]
+
+        rows.append(
+            {
+                "date": date_value,
+                "matchday": game.get("gameDay") or "",
+                "venue": club.get("venue") or "",
+                "for_team": club.get("clubId") or "",
+                "opponent": opponent.get("clubId") or "",
+                "result": result,
+                "position": general.get("positionId") or "",
+                "competition": game.get("competitionId") or "",
+                "participation_state": participation,
+                "goals": goals.get("goalsScoredTotal") or 0,
+                "assists": goals.get("assists") or 0,
+                "yellow_cards": cards.get("yellowCardNet") or 0,
+                "row_text": " | ".join(clean_cell(x) for x in row_text_parts if clean_cell(x)),
+                "was_not_in_squad": was_not_in_squad,
+                "was_on_bench": was_on_bench,
+                "has_position": has_position,
+                "minutes_estimate": minutes_estimate,
+                "started_estimate": is_starting or (minutes_estimate is not None and minutes_estimate >= 60),
+                "player_id": get_player_id(player),
+                "player_name": player.get("player_name") or player.get("name"),
+                "team_id": player.get("team_id"),
+                "position_model": get_position(player),
+                "transfermarkt_player_id": tm_player_id,
+                "source_url": national_url,
+            }
+        )
+
+    return pd.DataFrame(rows)
 
 
 def flatten_columns(df: pd.DataFrame) -> pd.DataFrame:
@@ -525,7 +695,10 @@ def flatten_columns(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def read_tables(html: str) -> list[pd.DataFrame]:
-    tables = pd.read_html(StringIO(html))
+    try:
+        tables = pd.read_html(StringIO(html))
+    except ValueError:
+        return []
     cleaned = []
 
     for table in tables:
@@ -662,6 +835,10 @@ def build_summary(
     national_url: str,
     html: str,
     matches: pd.DataFrame,
+    *,
+    profile_url: str = "",
+    caps_goals_link_found: bool = False,
+    table_source: str = "html_table",
 ) -> dict[str, Any]:
     caps, goals = extract_caps_goals(html)
 
@@ -704,7 +881,10 @@ def build_summary(
         "position": get_position(player),
         "price_m": get_price_m(player),
         "transfermarkt_player_id": tm_player_id,
+        "transfermarkt_profile_url": profile_url,
         "transfermarkt_national_url": national_url,
+        "transfermarkt_caps_goals_link_found": caps_goals_link_found,
+        "transfermarkt_table_source": table_source,
         "tm_caps": caps,
         "tm_goals": goals,
         "tm_rows_total": total,
@@ -729,11 +909,27 @@ def scrape_player_from_transfermarkt_url(
     profile_url: str,
     national_url: str,
 ) -> tuple[dict[str, Any], pd.DataFrame]:
+    profile_html = ""
+    caps_goals_link_found = False
+
+    if profile_url:
+        profile_html = fetch_html(profile_url)
+        time.sleep(REQUEST_SLEEP_SECONDS)
+        caps_url = find_caps_goals_national_url(profile_html, profile_url, tm_player_id)
+        if caps_url:
+            national_url = caps_url
+            caps_goals_link_found = True
+
+    if not national_url:
+        base_url = ceapi_base_for(profile_url) if profile_url else BASE_URL
+        national_url = f"{base_url}/x/nationalmannschaft/spieler/{tm_player_id}"
+
     html = fetch_html(national_url)
     time.sleep(REQUEST_SLEEP_SECONDS)
 
     tables = read_tables(html)
     match_table = select_best_match_table(tables)
+    table_source = "html_table"
 
     if match_table is None:
         enriched_url = find_national_url_from_html(html, national_url, tm_player_id)
@@ -744,11 +940,26 @@ def scrape_player_from_transfermarkt_url(
             tables = read_tables(html)
             match_table = select_best_match_table(tables)
 
-    if match_table is None:
+    if match_table is not None:
+        matches = normalize_match_table(match_table, player, tm_player_id, national_url)
+    else:
+        performance = fetch_ceapi_performance(tm_player_id, national_url)
+        matches = matches_from_ceapi(performance, player, tm_player_id, national_url)
+        table_source = "ceapi_performance_game"
+
+    if matches.empty:
         raise RuntimeError("Ingen kampoversigtstabel fundet")
 
-    matches = normalize_match_table(match_table, player, tm_player_id, national_url)
-    summary = build_summary(player, tm_player_id, national_url, html, matches)
+    summary = build_summary(
+        player,
+        tm_player_id,
+        national_url,
+        profile_html or html,
+        matches,
+        profile_url=profile_url,
+        caps_goals_link_found=caps_goals_link_found,
+        table_source=table_source,
+    )
 
     return summary, matches
 
@@ -896,6 +1107,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--manual-only", action="store_true", help="Process only players matched from tools/transfermarkt_manual_urls.csv.")
     parser.add_argument("--refresh", action="store_true", help="Refresh known manual/cache URLs instead of treating them as done.")
     parser.add_argument("--limit", type=int, default=MAX_PLAYERS_PER_RUN, help="Maximum players to process in this run.")
+    parser.add_argument("--manual-name", action="append", default=[], help="Process a matched manual player by manual/player-pool name. Can be repeated.")
     return parser.parse_args()
 
 
@@ -914,6 +1126,7 @@ def main() -> None:
         manual_only=args.manual_only,
         refresh=args.refresh,
         limit=args.limit,
+        manual_names=args.manual_name,
     )
 
     print("TRANSFERMARKT NATIONAL USAGE BATCH")
@@ -923,6 +1136,8 @@ def main() -> None:
     print(f"Manual URL rows: {len(manual_audit_rows)}")
     print(f"Manual URL matched: {sum(1 for row in manual_audit_rows if row.get('matched_player_id'))}")
     print(f"Manual-only: {args.manual_only}")
+    if args.manual_name:
+        print(f"Manual names: {', '.join(args.manual_name)}")
     print(f"Refresh: {args.refresh}")
     print(f"Max this run: {args.limit}")
     print(f"Selected for run: {len(todo)}")
@@ -1005,9 +1220,13 @@ def main() -> None:
             ok += 1
             print(
                 f"  OK: caps={summary.get('tm_caps')} "
+                f"caps_link={summary.get('transfermarkt_caps_goals_link_found')} "
+                f"source={summary.get('transfermarkt_table_source')} "
+                f"latest={summary.get('last_national_row_date')} "
                 f"recent20_start={summary.get('recent_20_start_share')} "
                 f"usage={summary.get('national_team_usage_score')}"
             )
+            print(f"  National URL: {national_url}")
 
         except Exception as exc:
             if manual_urls.get(pid):
@@ -1015,16 +1234,10 @@ def main() -> None:
                 cache_row["tm_player_id"] = str(manual.get("tm_player_id") or "")
                 cache_row["tm_profile_url"] = str(manual.get("tm_profile_url") or "")
                 cache_row["tm_national_url"] = str(manual.get("tm_national_url") or "")
-                if "Ingen kampoversigtstabel fundet" in str(exc):
-                    ok += 1
-                    cache_row["status"] = "ok_manual_url"
-                    cache_row["error"] = ""
-                    print("  OK manual URL: URL registreret; ingen kampoversigtstabel i HTML")
-                else:
-                    failed += 1
-                    cache_row["status"] = "error_manual_url"
-                    cache_row["error"] = str(exc)[:300]
-                    print(f"  FEJL: {exc}")
+                failed += 1
+                cache_row["status"] = "error_manual_url"
+                cache_row["error"] = str(exc)[:300]
+                print(f"  FEJL: {exc}")
             else:
                 failed += 1
                 cache_row["status"] = "error"
