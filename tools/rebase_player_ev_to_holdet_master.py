@@ -63,6 +63,8 @@ TEAM_CODE_ALIASES = {
     "CRO": "croatia",
     "CUW": "curacao",
     "CZE": "czechia",
+    "HOLDET_584": "czechia",
+    "HOLDET_767": "cote divoire",
     "DEN": "denmark",
     "ECU": "ecuador",
     "EGY": "egypt",
@@ -259,6 +261,55 @@ def safe_numeric(value: Any, default: float) -> float:
         return default
 
 
+TOP_PRIORITY_START_SOURCE_MARKERS = [
+    "confirmed_lineup",
+    "expected_lineup",
+    "manual",
+    "start_vs_appearance_context_override",
+    "context_override",
+]
+
+HIGH_PRIORITY_START_SOURCE_MARKERS = [
+    "transfermarkt_availability_split",
+]
+
+LOW_PRIORITY_START_SOURCE_MARKERS = [
+    "team_minute_rank",
+    "holdet_official_unmatched_default",
+    "name+team",
+    "legacy",
+    "fallback",
+]
+
+
+def start_source_priority(source: Any) -> int:
+    text = str(source or "").strip().lower()
+    if any(marker in text for marker in TOP_PRIORITY_START_SOURCE_MARKERS):
+        return 100
+    if any(marker in text for marker in HIGH_PRIORITY_START_SOURCE_MARKERS):
+        return 90
+    if any(marker in text for marker in LOW_PRIORITY_START_SOURCE_MARKERS):
+        return 10
+    if text:
+        return 50
+    return 0
+
+
+def choose_start_signal(ev_row: dict[str, Any], pool_row: pd.Series) -> tuple[float, str]:
+    ev_start = safe_numeric(ev_row.get("start_prob"), -1.0)
+    ev_source = ev_row.get("start_prob_source", "")
+    pool_start = safe_numeric(pool_row.get("pool_start_prob"), -1.0)
+    pool_source = pool_row.get("pool_start_prob_source", "")
+
+    if pool_start >= 0 and start_source_priority(pool_source) > start_source_priority(ev_source):
+        return pool_start, pool_source
+    if ev_start >= 0:
+        return ev_start, ev_source or pool_source or "unknown"
+    if pool_start >= 0:
+        return pool_start, pool_source or "player_pool_fallback"
+    return 0.25, "holdet_official_unmatched_default"
+
+
 def match_ev_row(pool_row: pd.Series, ev_df: pd.DataFrame, used_ev_indices: set[int]) -> tuple[pd.Series | None, str, float]:
     available = ev_df.loc[~ev_df.index.isin(used_ev_indices)]
 
@@ -346,10 +397,7 @@ def main() -> None:
         else:
             row = {}
 
-        start_prob = safe_numeric(
-            row.get("start_prob"),
-            safe_numeric(pool_row.get("pool_start_prob"), 0.25),
-        )
+        start_prob, start_prob_source = choose_start_signal(row, pool_row)
 
         weighted_ev = safe_numeric(
             row.get("weighted_group_stage_ev"),
@@ -380,10 +428,7 @@ def main() -> None:
                 "ev_match_method": match_method,
                 "ev_match_score": match_score,
                 "start_prob": start_prob,
-                "start_prob_source": row.get(
-                    "start_prob_source",
-                    pool_row.get("pool_start_prob_source", "holdet_official_unmatched_default"),
-                ),
+                "start_prob_source": start_prob_source,
                 "minute_share": minute_share,
                 "weighted_group_stage_ev": weighted_ev,
                 "optimizer_ev": safe_numeric(row.get("optimizer_ev"), weighted_ev),

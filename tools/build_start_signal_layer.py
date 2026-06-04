@@ -9,6 +9,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = PROJECT_ROOT / "data"
 
 INPUT_CSV = DATA_DIR / "player_ev_group_stage_v1.csv"
+PLAYER_POOL_PATH = DATA_DIR / "player_pool_v1.json"
 OUTPUT_CSV = DATA_DIR / "player_start_signal_layer_v1.csv"
 OUTPUT_JSON = DATA_DIR / "player_start_signal_layer_v1.json"
 
@@ -49,19 +50,64 @@ def safe_divide(a: pd.Series, b: pd.Series) -> pd.Series:
     return out.fillna(0.0)
 
 
+def load_pool_context() -> pd.DataFrame:
+    if not PLAYER_POOL_PATH.exists():
+        return pd.DataFrame()
+    with PLAYER_POOL_PATH.open("r", encoding="utf-8-sig") as f:
+        players = json.load(f)
+    rows = []
+    for player in players:
+        rows.append(
+            {
+                "player_id": str(player.get("player_id", "")).strip(),
+                "conditional_start_prob_pool": player.get("conditional_start_prob"),
+                "appearance_prob_pool": player.get("appearance_prob"),
+                "availability_prob_pool": player.get("availability_prob"),
+                "availability_risk_pool": player.get("availability_risk"),
+                "round_specific_rotation_risk_pool": player.get("round_specific_rotation_risk"),
+                "start_prob_source_pool": player.get("start_prob_source"),
+            }
+        )
+    return pd.DataFrame(rows)
+
+
 def load_data() -> pd.DataFrame:
     if not INPUT_CSV.exists():
         raise FileNotFoundError(f"Mangler inputfil: {INPUT_CSV}")
 
     df = pd.read_csv(INPUT_CSV).copy()
     df["team_id"] = df["team_id"].astype(str).str.strip()
+    df["player_id"] = df["player_id"].astype(str).str.strip()
     df["position"] = standardize_positions(df["position"])
+
+    pool_context = load_pool_context()
+    if not pool_context.empty:
+        df = df.merge(pool_context, on="player_id", how="left")
+        for col in [
+            "conditional_start_prob",
+            "appearance_prob",
+            "availability_prob",
+            "availability_risk",
+            "round_specific_rotation_risk",
+            "start_prob_source",
+        ]:
+            pool_col = f"{col}_pool"
+            if pool_col not in df.columns:
+                continue
+            if col in df.columns:
+                df[col] = df[col].where(df[col].notna() & (df[col].astype(str).str.strip() != ""), df[pool_col])
+            else:
+                df[col] = df[pool_col]
+            df = df.drop(columns=[pool_col])
 
     numeric_cols = [
         "start_prob",
         "minute_share",
         "weighted_group_stage_ev",
         "total_ev_group_stage",
+        "conditional_start_prob",
+        "appearance_prob",
+        "availability_prob",
     ]
     for col in numeric_cols:
         if col in df.columns:
@@ -151,6 +197,12 @@ def build_output(df: pd.DataFrame) -> pd.DataFrame:
         "team_id",
         "position",
         "start_prob",
+        "conditional_start_prob",
+        "appearance_prob",
+        "availability_prob",
+        "availability_risk",
+        "round_specific_rotation_risk",
+        "start_prob_source",
         "minute_share",
         "weighted_group_stage_ev",
         "total_ev_group_stage",

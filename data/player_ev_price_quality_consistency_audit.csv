@@ -1,0 +1,1245 @@
+﻿player_id,player_name,team_id,position,component_weighted_sum,base_ev_before_price_quality,price_quality_ev,expected_final_ev,actual_final_ev,formula_diff,component_source,base_ev_source,repair_status
+lautaro_mart_nez__arg,Lautaro Martinez,ARG,FWD,5.89453,5.89453,4.557505,5.292869,5.292869,0,complete_components,component_weighted_sum,component_base_rebuilt
+lionel_messi__arg,Lionel Messi,ARG,FWD,5.533354,5.533354,4.557505,5.094222,5.094222,0,complete_components,component_weighted_sum,component_base_rebuilt
+jonathan_david__can,Jonathan David,CAN,FWD,5.869533,5.869533,3.847531,4.959632,4.959632,-0,complete_components,component_weighted_sum,component_base_rebuilt
+kerem_akt_rko_lu__tur,Kerem Akturkoglu,TUR,MID,6.380548,6.380548,3.222169,4.959277,4.959277,-0,complete_components,component_weighted_sum,component_base_rebuilt
+cristiano_ronaldo__por,Cristiano Ronaldo,POR,FWD,5.227561,5.227561,4.490684,4.895966,4.895966,-0,complete_components,component_weighted_sum,component_base_rebuilt
+kylian_mbapp__fra,Kylian Mbappe,FRA,FWD,4.791598,4.791598,4.632679,4.720084,4.720084,-0,complete_components,component_weighted_sum,component_base_rebuilt
+vinicius_j_nior__bra,Vinicius Junior,BRA,FWD,4.385279,4.385279,4.524094,4.447746,4.447746,0,complete_components,component_weighted_sum,component_base_rebuilt
+cody_gakpo__ned,Cody Gakpo,NED,FWD,4.27308,4.27308,4.440568,4.34845,4.34845,0,complete_components,component_weighted_sum,component_base_rebuilt
+harry_kane__eng,Harry Kane,ENG,FWD,4.066753,4.066753,4.615973,4.313902,4.313902,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ra_l_jim_nez__mex,Raul Jimenez,MEX,FWD,4.504312,4.504312,3.847531,4.208761,4.208761,0,complete_components,component_weighted_sum,component_base_rebuilt
+lamine_yamal__esp,Lamine Yamal,ESP,FWD,3.835317,3.835317,4.599268,4.179095,4.179095,0,complete_components,component_weighted_sum,component_base_rebuilt
+brahim_d_az__mar,Brahim Diaz,MAR,FWD,4.450173,4.450173,3.847531,4.178984,4.178984,-0,complete_components,component_weighted_sum,component_base_rebuilt
+mikel_oyarzabal__esp,Mikel Oyarzabal,ESP,FWD,3.795957,3.795957,4.524094,4.123619,4.123619,0,complete_components,component_weighted_sum,component_base_rebuilt
+marko_arnautovi__aut,Marko Arnautovic,AUT,FWD,4.306573,4.306573,3.847531,4.100004,4.100004,-0,complete_components,component_weighted_sum,component_base_rebuilt
+rafael_le_o__por,Rafael Leão,POR,FWD,3.887494,3.887494,4.215047,4.034893,4.034893,0,complete_components,component_weighted_sum,component_base_rebuilt
+breel_embolo__sui,Breel Embolo,SUI,FWD,3.96066,3.96066,4.047994,3.99996,3.99996,-0,complete_components,component_weighted_sum,component_base_rebuilt
+juli_n_lvarez__arg,Julian Alvarez,ARG,FWD,3.669806,3.669806,4.357042,3.979062,3.979062,-0,complete_components,component_weighted_sum,component_base_rebuilt
+andrej_kramari__cro,Andrej Kramaric,CRO,FWD,3.762345,3.762345,4.215047,3.966061,3.966061,0,complete_components,component_weighted_sum,component_base_rebuilt
+mohamed_salah__egy,Mohamed Salah,EGY,FWD,3.880753,3.880753,4.047994,3.956011,3.956012,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+sadio_man__sen,Sadio Mane,SEN,FWD,3.865817,3.865817,4.047994,3.947797,3.947797,0,complete_components,component_weighted_sum,component_base_rebuilt
+ousmane_demb_l__fra,Ousmane Dembele,FRA,FWD,3.675256,3.675256,4.215047,3.918162,3.918162,0,complete_components,component_weighted_sum,component_base_rebuilt
+erling_haaland__nor,Erling Haaland,NOR,FWD,3.373354,3.373354,4.582563,3.917498,3.917498,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jeremy_doku__bel,Jeremy Doku,BEL,FWD,3.387983,3.387983,4.440568,3.861646,3.861646,-0,complete_components,component_weighted_sum,component_base_rebuilt
+leandro_trossard__bel,Leandro Trossard,BEL,FWD,3.489978,3.489978,4.215047,3.816259,3.816259,-0,complete_components,component_weighted_sum,component_base_rebuilt
+nick_woltemade__ger,Nick Woltemade,GER,FWD,3.229748,3.229748,4.357042,3.73703,3.73703,-0,complete_components,component_weighted_sum,component_base_rebuilt
+patrick_agyemang__usa,Patrick Agyemang,USA,FWD,4.802784,4.802784,2.410878,3.726426,3.726426,-0,complete_components,component_weighted_sum,component_base_rebuilt
+aymeric_laporte__esp,Aymeric Laporte,ESP,DEF,3.926401,3.926401,3.414594,3.696088,3.696088,0,complete_components,component_weighted_sum,component_base_rebuilt
+omar_marmoush__egy,Omar Marmoush,EGY,FWD,3.349512,3.349512,4.047994,3.663829,3.663829,0,complete_components,component_weighted_sum,component_base_rebuilt
+matheus_cunha__bra,Matheus Cunha,BRA,FWD,3.49405,3.49405,3.847531,3.653116,3.653117,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+nico_williams__esp,Nico Williams,ESP,FWD,3.491935,3.491935,3.847531,3.651953,3.651953,-0,complete_components,component_weighted_sum,component_base_rebuilt
+arda_g_ler__tur,Arda Güler,TUR,MID,4.000407,4.000407,3.222169,3.6502,3.6502,0,complete_components,component_weighted_sum,component_base_rebuilt
+enner_valencia__ecu,Enner Valencia,ECU,FWD,3.647005,3.647005,3.546836,3.601929,3.601929,0,complete_components,component_weighted_sum,component_base_rebuilt
+unai_sim_n__esp,Unai Simon,ESP,GK,4.164353,4.164353,2.896965,3.594028,3.594028,-0,complete_components,component_weighted_sum,component_base_rebuilt
+nuno_mendes__por,Nuno Mendes,POR,DEF,3.700847,3.700847,3.414594,3.572033,3.572033,-0,complete_components,component_weighted_sum,component_base_rebuilt
+federico_vi_as__uru,Federico Vinas,URU,FWD,3.572304,3.572304,3.546836,3.560843,3.560844,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+nahuel_molina__arg,Nahuel Molina,ARG,DEF,3.778393,3.778393,3.290007,3.558619,3.558619,-0,complete_components,component_weighted_sum,component_base_rebuilt
+marcus_rashford__eng,Marcus Rashford,ENG,FWD,3.001099,3.001099,4.215047,3.547376,3.547376,0,complete_components,component_weighted_sum,component_base_rebuilt
+bukayo_saka__eng,Bukayo Saka,ENG,FWD,2.782272,2.782272,4.440568,3.528505,3.528505,-0,complete_components,component_weighted_sum,component_base_rebuilt
+mike_maignan__fra,Mike Maignan,FRA,GK,4.015626,4.015626,2.896965,3.512229,3.512228,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+cristian_romero__arg,Cristian Romero,ARG,DEF,3.685343,3.685343,3.290007,3.507442,3.507442,0,complete_components,component_weighted_sum,component_base_rebuilt
+tajon_buchanan__can,Tajon Buchanan,CAN,MID,4.027992,4.027992,2.865204,3.504737,3.504737,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ferr_n_torres__esp,Ferran Torres,ESP,FWD,2.999406,2.999406,4.047994,3.471271,3.471271,0,complete_components,component_weighted_sum,component_base_rebuilt
+luis_d_az__col,Luis Diaz,COL,FWD,2.829099,2.829099,4.215047,3.452776,3.452776,0,complete_components,component_weighted_sum,component_base_rebuilt
+denzel_dumfries__ned,Denzel Dumfries,NED,DEF,3.421873,3.421873,3.476887,3.446629,3.446629,-0,complete_components,component_weighted_sum,component_base_rebuilt
+oscar_bobb__nor,Oscar Bobb,NOR,MID,4.309063,4.309063,2.344116,3.424837,3.424837,0,complete_components,component_weighted_sum,component_base_rebuilt
+pedro_neto__por,Pedro Neto,POR,FWD,2.911707,2.911707,4.047994,3.423036,3.423036,-0,complete_components,component_weighted_sum,component_base_rebuilt
+marquinhos__bra,Marquinhos,BRA,DEF,3.357613,3.357613,3.476887,3.411286,3.411286,-0,complete_components,component_weighted_sum,component_base_rebuilt
+son_heung_min__kor,Heung-Min Son,KOR,FWD,2.592957,2.592957,4.357042,3.386795,3.386795,-0,complete_components,component_weighted_sum,component_base_rebuilt
+joshua_kimmich__ger,Joshua Kimmich,GER,MID,3.391249,3.391249,3.316539,3.35763,3.35763,0,complete_components,component_weighted_sum,component_base_rebuilt
+antonio_r_diger__ger,Antonio Rüdiger,GER,DEF,3.304803,3.304803,3.414594,3.354209,3.354209,0,complete_components,component_weighted_sum,component_base_rebuilt
+ayoub_el_kaabi__mar,Ayoub El Kaabi,MAR,FWD,3.547601,3.547601,3.087442,3.340529,3.340529,-0,complete_components,component_weighted_sum,component_base_rebuilt
+nicol_s_otamendi__arg,Nicolas Otamendi,ARG,DEF,3.273185,3.273185,3.414594,3.336819,3.336819,-0,complete_components,component_weighted_sum,component_base_rebuilt
+bruno_fernandes__por,Bruno Fernandes,POR,MID,3.222135,3.222135,3.443734,3.321855,3.321854,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+michael_olise__fra,Michael Olise,FRA,FWD,2.337679,2.337679,4.490684,3.306531,3.306531,-0,complete_components,component_weighted_sum,component_base_rebuilt
+morgan_rogers__eng,Morgan Rogers,ENG,MID,3.239439,3.239439,3.378085,3.30183,3.30183,0,complete_components,component_weighted_sum,component_base_rebuilt
+r_ben_dias__por,Ruben Dias,POR,DEF,3.289067,3.289067,3.290007,3.28949,3.28949,-0,complete_components,component_weighted_sum,component_base_rebuilt
+manuel_akanji__sui,Manuel Akanji,SUI,DEF,3.414628,3.414628,3.112963,3.278879,3.278879,0,complete_components,component_weighted_sum,component_base_rebuilt
+marc_cucurella__esp,Marc Cucurella,ESP,DEF,3.152785,3.152785,3.414594,3.270599,3.270599,-0,complete_components,component_weighted_sum,component_base_rebuilt
+timothy_castagne__bel,Timothy Castagne,BEL,DEF,3.39511,3.39511,3.112963,3.268144,3.268144,0,complete_components,component_weighted_sum,component_base_rebuilt
+virgil_van_dijk__ned,Virgil van Dijk,NED,DEF,3.092637,3.092637,3.476887,3.26555,3.265549,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+marc_gu_hi__eng,Marc Guehi,ENG,DEF,3.133486,3.133486,3.414594,3.259985,3.259984,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+dan_ndoye__sui,Dan Ndoye,SUI,FWD,3.022619,3.022619,3.546836,3.258517,3.258517,0,complete_components,component_weighted_sum,component_base_rebuilt
+manuel_neuer__ger,Manuel Neuer,GER,GK,3.554182,3.554182,2.896965,3.258434,3.258434,-0,complete_components,component_weighted_sum,component_base_rebuilt
+antonio_nusa__nor,Antonio Nusa,NOR,MID,3.572754,3.572754,2.865204,3.254357,3.254356,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+maxim_de_cuyper__bel,Maxim De Cuyper,BEL,DEF,3.214931,3.214931,3.290007,3.248715,3.248715,-0,complete_components,component_weighted_sum,component_base_rebuilt
+gonzalo_plata__ecu,Gonzalo Plata,ECU,MID,3.560733,3.560733,2.865204,3.247745,3.247745,0,complete_components,component_weighted_sum,component_base_rebuilt
+marcus_thuram__fra,Marcus Thuram,FRA,FWD,2.591956,2.591956,4.047994,3.247173,3.247173,-0,complete_components,component_weighted_sum,component_base_rebuilt
+tijjani_reijnders__ned,Tijjani Reijnders,NED,MID,3.107386,3.107386,3.415012,3.245818,3.245818,0,complete_components,component_weighted_sum,component_base_rebuilt
+alexis_mac_allister__arg,Alexis Mac Allister,ARG,MID,3.252509,3.252509,3.222169,3.238856,3.238856,0,complete_components,component_weighted_sum,component_base_rebuilt
+nicol_s_tagliafico__arg,Nicolas Tagliafico,ARG,DEF,3.171941,3.171941,3.290007,3.225071,3.225071,0,complete_components,component_weighted_sum,component_base_rebuilt
+jo_o_f_lix__por,João Felix,POR,FWD,2.708458,2.708458,3.847531,3.221041,3.221041,0,complete_components,component_weighted_sum,component_base_rebuilt
+donyell_malen__ned,Donyell Malen,NED,FWD,2.694472,2.694472,3.847531,3.213349,3.213349,0,complete_components,component_weighted_sum,component_base_rebuilt
+richie_laryea__can,Richie Laryea,CAN,DEF,3.600935,3.600935,2.729367,3.208729,3.208729,-0,complete_components,component_weighted_sum,component_base_rebuilt
+rodrigo_de_paul__arg,Rodrigo de Paul,ARG,MID,3.192296,3.192296,3.222169,3.205739,3.205739,0,complete_components,component_weighted_sum,component_base_rebuilt
+marcel_sabitzer__aut,Marcel Sabitzer,AUT,MID,3.182845,3.182845,3.222169,3.200541,3.200541,0,complete_components,component_weighted_sum,component_base_rebuilt
+theo_hern_ndez__fra,Theo Hernandez,FRA,DEF,3.020246,3.020246,3.414594,3.197703,3.197702,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+scott_mctominay__sco,Scott McTominay,SCO,MID,3.174431,3.174431,3.222169,3.195913,3.195913,-0,complete_components,component_weighted_sum,component_base_rebuilt
+mehdi_taremi__irn,Mehdi Taremi,IRN,FWD,3.283762,3.283762,3.087442,3.195418,3.195418,0,complete_components,component_weighted_sum,component_base_rebuilt
+c_sar_montes__mex,Cesar Montes,MEX,DEF,3.544474,3.544474,2.729367,3.177676,3.177676,0,complete_components,component_weighted_sum,component_base_rebuilt
+casemiro__bra,Casemiro,BRA,MID,3.138656,3.138656,3.222169,3.176237,3.176237,0,complete_components,component_weighted_sum,component_base_rebuilt
+florian_wirtz__ger,Florian Wirtz,GER,MID,2.926142,2.926142,3.456043,3.164597,3.164597,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ricardo_rodr_guez__sui,Ricardo Rodriguez,SUI,DEF,3.516019,3.516019,2.729367,3.162026,3.162026,0,complete_components,component_weighted_sum,component_base_rebuilt
+malik_tillman__usa,Malik Tillman,USA,MID,3.21936,3.21936,3.082665,3.157847,3.157847,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jo_ko_gvardiol__cro,Josko Gvardiol,CRO,DEF,3.187923,3.187923,3.112963,3.154191,3.154191,0,complete_components,component_weighted_sum,component_base_rebuilt
+jordan_pickford__eng,Jordan Pickford,ENG,GK,3.358754,3.358754,2.896965,3.150949,3.150949,0,complete_components,component_weighted_sum,component_base_rebuilt
+kevin_de_bruyne__bel,Kevin De Bruyne,BEL,MID,2.908994,2.908994,3.443734,3.149627,3.149627,0,complete_components,component_weighted_sum,component_base_rebuilt
+william_saliba__fra,William Saliba,FRA,DEF,2.924702,2.924702,3.414594,3.145153,3.145153,-0,complete_components,component_weighted_sum,component_base_rebuilt
+alexander_isak__swe,Alexander Isak,SWE,FWD,2.40217,2.40217,4.047994,3.142791,3.142791,0,complete_components,component_weighted_sum,component_base_rebuilt
+michael_gregoritsch__aut,Michael Gregoritsch,AUT,FWD,3.177616,3.177616,3.087442,3.137038,3.137037,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+james_rodr_guez__col,James Rodriguez,COL,MID,3.172815,3.172815,3.082665,3.132248,3.132248,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+gabriel_martinelli__bra,Gabriel Martinelli,BRA,FWD,2.785993,2.785993,3.546836,3.128372,3.128373,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+francisco_concei_o__por,Francisco Conceicao,POR,FWD,2.234632,2.234632,4.215047,3.125819,3.125819,0,complete_components,component_weighted_sum,component_base_rebuilt
+alexander_s_rloth__nor,Alexander Sørloth,NOR,FWD,2.526252,2.526252,3.847531,3.120828,3.120828,0,complete_components,component_weighted_sum,component_base_rebuilt
+emiliano_mart_nez__arg,Emiliano Martinez,ARG,GK,3.29951,3.29951,2.896965,3.118365,3.118365,0,complete_components,component_weighted_sum,component_base_rebuilt
+max_arfsten__usa,Max Arfsten,USA,DEF,3.430177,3.430177,2.729367,3.114813,3.114813,0,complete_components,component_weighted_sum,component_base_rebuilt
+john_stones__eng,John Stones,ENG,DEF,2.970561,2.970561,3.290007,3.114312,3.114312,0,complete_components,component_weighted_sum,component_base_rebuilt
+riyad_mahrez__alg,Riyad Mahrez,ALG,FWD,2.753755,2.753755,3.546836,3.110641,3.110642,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+leo_pereira__bra,Leo Pereira,BRA,DEF,3.409475,3.409475,2.729367,3.103426,3.103426,-0,complete_components,component_weighted_sum,component_base_rebuilt
+remo_freuler__sui,Remo Freuler,SUI,MID,3.284851,3.284851,2.865204,3.09601,3.09601,0,complete_components,component_weighted_sum,component_base_rebuilt
+gon_alo_ramos__por,Goncalo Ramos,POR,FWD,2.289858,2.289858,4.047994,3.081019,3.081019,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jo_o_cancelo__por,João Cancelo,POR,DEF,2.75188,2.75188,3.476887,3.078133,3.078133,-0,complete_components,component_weighted_sum,component_base_rebuilt
+firas_al_buraikan__ksa,Firas Al-Buraikan,KSA,FWD,3.054508,3.054508,3.087442,3.069328,3.069328,-0,complete_components,component_weighted_sum,component_base_rebuilt
+silvan_widmer__sui,Silvan Widmer,SUI,DEF,3.329938,3.329938,2.729367,3.059681,3.059681,-0,complete_components,component_weighted_sum,component_base_rebuilt
+amar_memi__bih,Amar Memic,BIH,MID,3.643752,3.643752,2.344116,3.058916,3.058916,0,complete_components,component_weighted_sum,component_base_rebuilt
+david_raum__ger,David Raum,GER,DEF,2.766692,2.766692,3.414594,3.058248,3.058248,0,complete_components,component_weighted_sum,component_base_rebuilt
+giovani_lo_celso__arg,Giovani Lo Celso,ARG,MID,3.023802,3.023802,3.082665,3.05029,3.050291,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+ezri_konsa__eng,Ezri Konsa,ENG,DEF,2.720191,2.720191,3.414594,3.032672,3.032672,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jos_mar_a_gim_nez__uru,Jose Maria Gimenez,URU,DEF,2.716684,2.716684,3.414594,3.030744,3.030743,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+ruben_vargas__sui,Ruben Vargas,SUI,FWD,2.976428,2.976428,3.087442,3.026384,3.026384,-0,complete_components,component_weighted_sum,component_base_rebuilt
+maxence_lacroix__fra,Maxence Lacroix,FRA,DEF,3.266332,3.266332,2.729367,3.024698,3.024698,0,complete_components,component_weighted_sum,component_base_rebuilt
+math_as_olivera__uru,Mathias Olivera,URU,DEF,2.803804,2.803804,3.290007,3.022595,3.022595,-0,complete_components,component_weighted_sum,component_base_rebuilt
+dayot_upamecano__fra,Dayot Upamecano,FRA,DEF,2.774369,2.774369,3.290007,3.006406,3.006406,-0,complete_components,component_weighted_sum,component_base_rebuilt
+alistair_johnston__can,Alistair Johnston,CAN,DEF,3.229357,3.229357,2.729367,3.004361,3.004362,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+lyle_foster__rsa,Lyle Foster,RSA,FWD,2.930712,2.930712,3.087442,3.001241,3.00124,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+piero_hincapi__ecu,Piero Hincapie,ECU,DEF,2.907833,2.907833,3.112963,3.000142,3.000141,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+thomas_meunier__bel,Thomas Meunier,BEL,DEF,2.888915,2.888915,3.112963,2.989737,2.989737,0,complete_components,component_weighted_sum,component_base_rebuilt
+alphonso_davies__can,Alphonso Davies,CAN,DEF,2.741508,2.741508,3.290007,2.988333,2.988333,0,complete_components,component_weighted_sum,component_base_rebuilt
+pedro_porro__esp,Pedro Porro,ESP,DEF,2.638547,2.638547,3.414594,2.987768,2.987768,-0,complete_components,component_weighted_sum,component_base_rebuilt
+fabian_rieder__sui,Fabian Rieder,SUI,MID,3.509727,3.509727,2.344116,2.985202,2.985202,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jes_s_gallardo__mex,Jesus Gallardo,MEX,DEF,3.190061,3.190061,2.729367,2.982749,2.982749,0,complete_components,component_weighted_sum,component_base_rebuilt
+luiz_henrique__bra,Luiz Henrique,BRA,FWD,3.439202,3.439202,2.410878,2.976456,2.976456,-0,complete_components,component_weighted_sum,component_base_rebuilt
+pau_cubars__esp,Pau Cubarsi,ESP,DEF,2.71565,2.71565,3.290007,2.974111,2.974111,0,complete_components,component_weighted_sum,component_base_rebuilt
+noni_madueke__eng,Noni Madueke,ENG,FWD,2.87927,2.87927,3.087442,2.972947,2.972947,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jules_kounde__fra,Jules Kounde,FRA,DEF,2.848916,2.848916,3.112963,2.967737,2.967737,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ayase_ueda__jpn,Ayase Ueda,JPN,FWD,1.942956,1.942956,4.215047,2.965397,2.965397,0,complete_components,component_weighted_sum,component_base_rebuilt
+malo_gusto__fra,Malo Gusto,FRA,DEF,2.694964,2.694964,3.290007,2.962733,2.962733,-0,complete_components,component_weighted_sum,component_base_rebuilt
+davinson_s_nchez__col,Davinson Sanchez,COL,DEF,2.836651,2.836651,3.112963,2.960991,2.960991,-0,complete_components,component_weighted_sum,component_base_rebuilt
+achraf_hakimi__mar,Achraf Hakimi,MAR,DEF,2.687312,2.687312,3.290007,2.958525,2.958525,0,complete_components,component_weighted_sum,component_base_rebuilt
+pervis_estupi_n__ecu,Pervis Estupinan,ECU,DEF,2.82638,2.82638,3.112963,2.955342,2.955342,-0,complete_components,component_weighted_sum,component_base_rebuilt
+kai_havertz__ger,Kai Havertz,GER,FWD,1.91196,1.91196,4.215047,2.948349,2.948349,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jamal_musiala__ger,Jamal Musiala,GER,MID,2.551727,2.551727,3.431425,2.947591,2.947591,-0,complete_components,component_weighted_sum,component_base_rebuilt
+daniel_mu_oz__col,Daniel Muñoz,COL,DEF,2.651173,2.651173,3.290007,2.938648,2.938648,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ollie_watkins__eng,Ollie Watkins,ENG,FWD,2.439023,2.439023,3.546836,2.937539,2.937539,0,complete_components,component_weighted_sum,component_base_rebuilt
+lee_kang_in__kor,Kang-In Lee,KOR,MID,2.620561,2.620561,3.316539,2.933751,2.933751,-0,complete_components,component_weighted_sum,component_base_rebuilt
+enzo_fern_ndez__arg,Enzo Fernandez,ARG,MID,2.61295,2.61295,3.316539,2.929565,2.929565,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jonathan_tah__ger,Jonathan Tah,GER,DEF,2.513598,2.513598,3.414594,2.919046,2.919046,-0,complete_components,component_weighted_sum,component_base_rebuilt
+nico_schlotterbeck__ger,Nico Schlotterbeck,GER,DEF,2.613993,2.613993,3.290007,2.918199,2.918199,-0,complete_components,component_weighted_sum,component_base_rebuilt
+declan_rice__eng,Declan Rice,ENG,MID,2.656657,2.656657,3.222169,2.911137,2.911137,-0,complete_components,component_weighted_sum,component_base_rebuilt
+bernardo_silva__por,Bernardo Silva,POR,MID,2.528491,2.528491,3.378085,2.910808,2.910808,-0,complete_components,component_weighted_sum,component_base_rebuilt
+nicolas_jackson__sen,Nicolas Jackson,SEN,FWD,2.143631,2.143631,3.847531,2.910386,2.910386,-0,complete_components,component_weighted_sum,component_base_rebuilt
+leroy_san__ger,Leroy Sane,GER,FWD,1.835621,1.835621,4.215047,2.906363,2.906363,0,complete_components,component_weighted_sum,component_base_rebuilt
+luka_modri__cro,Luka Modric,CRO,MID,2.760494,2.760494,3.082665,2.905471,2.905471,0,complete_components,component_weighted_sum,component_base_rebuilt
+roberto_alvarado__mex,Roberto Alvarado,MEX,MID,4.143887,4.143887,1.367591,2.894554,2.894554,0,complete_components,component_weighted_sum,component_base_rebuilt
+zeno_debast__bel,Zeno Debast,BEL,DEF,2.69196,2.69196,3.112963,2.881411,2.881411,-0,complete_components,component_weighted_sum,component_base_rebuilt
+chris_richards__usa,Chris Richards,USA,DEF,2.988061,2.988061,2.729367,2.871649,2.871649,0,complete_components,component_weighted_sum,component_base_rebuilt
+alexis_vega__mex,Alexis Vega,MEX,FWD,4.011515,4.011515,1.458678,2.862738,2.862738,-0,complete_components,component_weighted_sum,component_base_rebuilt
+john_yeboah__ecu,John Yeboah,ECU,MID,3.273168,3.273168,2.344116,2.855095,2.855095,0,complete_components,component_weighted_sum,component_base_rebuilt
+noussair_mazraoui__mar,Noussair Mazraoui,MAR,DEF,2.618245,2.618245,3.112963,2.840868,2.840868,-0,complete_components,component_weighted_sum,component_base_rebuilt
+pedri__esp,Pedri,ESP,MID,2.357398,2.357398,3.415012,2.833324,2.833324,-0,complete_components,component_weighted_sum,component_base_rebuilt
+vitinha__por,Vitinha,POR,MID,2.38041,2.38041,3.378085,2.829364,2.829364,0,complete_components,component_weighted_sum,component_base_rebuilt
+leonardo_balerdi__arg,Leonardo Balerdi,ARG,DEF,2.435958,2.435958,3.290007,2.82028,2.82028,-0,complete_components,component_weighted_sum,component_base_rebuilt
+abde_ezzalzouli__mar,Abde Ezzalzouli,MAR,FWD,3.149748,3.149748,2.410878,2.817257,2.817257,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+micky_van_de_ven__ned,Micky van de Ven,NED,DEF,2.426258,2.426258,3.290007,2.814945,2.814945,-0,complete_components,component_weighted_sum,component_base_rebuilt
+der_milit_o__bra,Eder Militão,BRA,DEF,2.874073,2.874073,2.729367,2.808955,2.808955,-0,complete_components,component_weighted_sum,component_base_rebuilt
+santiago_arias__col,Santiago Arias,COL,DEF,2.556068,2.556068,3.112963,2.806671,2.806671,0,complete_components,component_weighted_sum,component_base_rebuilt
+mario_pa_ali__cro,Mario Pasalic,CRO,MID,2.740511,2.740511,2.865204,2.796623,2.796623,0,complete_components,component_weighted_sum,component_base_rebuilt
+ibrahim_mbaye__sen,Ibrahim Mbaye,SEN,MID,2.561645,2.561645,3.082665,2.796104,2.796104,0,complete_components,component_weighted_sum,component_base_rebuilt
+antonio_sanabria__par,Antonio Sanabria,PAR,FWD,2.177878,2.177878,3.546836,2.793909,2.793909,-0,complete_components,component_weighted_sum,component_base_rebuilt
+tani_oluwaseyi__can,Tani Oluwaseyi,CAN,FWD,3.869195,3.869195,1.458678,2.784462,2.784462,-0,complete_components,component_weighted_sum,component_base_rebuilt
+kerim_alajbegovi__bih,Kerim Alajbegovic,BIH,MID,2.714846,2.714846,2.865204,2.782507,2.782507,-0,complete_components,component_weighted_sum,component_base_rebuilt
+diogo_costa__por,Diogo Costa,POR,GK,2.686974,2.686974,2.896965,2.78147,2.78147,0,complete_components,component_weighted_sum,component_base_rebuilt
+gonzalo_montiel__arg,Gonzalo Montiel,ARG,DEF,2.507885,2.507885,3.112963,2.78017,2.78017,-0,complete_components,component_weighted_sum,component_base_rebuilt
+lucas_hern_ndez__fra,Lucas Hernandez,FRA,DEF,2.813235,2.813235,2.729367,2.775494,2.775494,-0,complete_components,component_weighted_sum,component_base_rebuilt
+granit_xhaka__sui,Granit Xhaka,SUI,MID,2.523571,2.523571,3.082665,2.775163,2.775163,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ritsu_doan__jpn,Ritsu Doan,JPN,MID,2.52287,2.52287,3.082665,2.774778,2.774778,0,complete_components,component_weighted_sum,component_base_rebuilt
+david_m_ller_wolfe__nor,David Møller Wolfe,NOR,DEF,2.810873,2.810873,2.729367,2.774195,2.774195,-0,complete_components,component_weighted_sum,component_base_rebuilt
+mat_as_vi_a__uru,Matias Viña,URU,DEF,2.351965,2.351965,3.290007,2.774084,2.774084,0,complete_components,component_weighted_sum,component_base_rebuilt
+rodrigo_aguirre__uru,Rodrigo Aguirre,URU,FWD,3.070719,3.070719,2.410878,2.773791,2.773791,0,complete_components,component_weighted_sum,component_base_rebuilt
+diogo_dalot__por,Diogo Dalot,POR,DEF,2.350677,2.350677,3.290007,2.773376,2.773375,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+youssef_en_nesyri__mar,Youssef En-Nesyri,MAR,FWD,2.512695,2.512695,3.087442,2.771331,2.771331,-0,complete_components,component_weighted_sum,component_base_rebuilt
+gabriel_magalh_es__bra,Gabriel Magalhaes,BRA,DEF,2.232883,2.232883,3.414594,2.764653,2.764653,0,complete_components,component_weighted_sum,component_base_rebuilt
+julio_soler__arg,Julio Soler,ARG,DEF,2.788977,2.788977,2.729367,2.762153,2.762153,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+francisco_trinc_o__por,Francisco Trincao,POR,FWD,2.10707,2.10707,3.546836,2.754965,2.754965,0,complete_components,component_weighted_sum,component_base_rebuilt
+ferdi_kadioglu__tur,Ferdi Kadioglu,TUR,DEF,2.455348,2.455348,3.112963,2.751275,2.751275,0,complete_components,component_weighted_sum,component_base_rebuilt
+merih_demiral__tur,Merih Demiral,TUR,DEF,2.762469,2.762469,2.729367,2.747573,2.747573,-0,complete_components,component_weighted_sum,component_base_rebuilt
+alisson_becker__bra,Alisson Becker,BRA,GK,2.625287,2.625287,2.896965,2.747542,2.747542,-0,complete_components,component_weighted_sum,component_base_rebuilt
+armin_gigovic__bih,Armin Gigovic,BIH,MID,3.055758,3.055758,2.344116,2.735519,2.735519,-0,complete_components,component_weighted_sum,component_base_rebuilt
+gon_alo_in_cio__por,Goncalo Inacio,POR,DEF,2.280101,2.280101,3.290007,2.734559,2.734559,0,complete_components,component_weighted_sum,component_base_rebuilt
+elias_achouri__tun,Elias Achouri,TUN,MID,2.621389,2.621389,2.865204,2.731106,2.731106,0,complete_components,component_weighted_sum,component_base_rebuilt
+willian_pacho__ecu,Willian Pacho,ECU,DEF,2.730643,2.730643,2.729367,2.730069,2.730069,0,complete_components,component_weighted_sum,component_base_rebuilt
+wesley_franca__bra,Wesley Franca,BRA,DEF,2.409797,2.409797,3.112963,2.726222,2.726222,0,complete_components,component_weighted_sum,component_base_rebuilt
+johan_v_squez__mex,Johan Vasquez,MEX,DEF,2.722836,2.722836,2.729367,2.725775,2.725775,0,complete_components,component_weighted_sum,component_base_rebuilt
+giuliano_simeone__arg,Giuliano Simeone,ARG,FWD,2.036415,2.036415,3.546836,2.716104,2.716105,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+charles_de_ketelaere__bel,Charles De Ketelaere,BEL,FWD,1.372987,1.372987,4.357042,2.715812,2.715812,0,complete_components,component_weighted_sum,component_base_rebuilt
+stefan_posch__aut,Stefan Posch,AUT,DEF,2.694152,2.694152,2.729367,2.709999,2.709999,0,complete_components,component_weighted_sum,component_base_rebuilt
+konrad_laimer__aut,Konrad Laimer,AUT,MID,2.99842,2.99842,2.344116,2.703983,2.703983,-0,complete_components,component_weighted_sum,component_base_rebuilt
+johan_mojica__col,Johan Mojica,COL,DEF,2.364089,2.364089,3.112963,2.701082,2.701082,-0,complete_components,component_weighted_sum,component_base_rebuilt
+elliot_anderson__eng,Elliot Anderson,ENG,MID,2.387767,2.387767,3.082665,2.700471,2.700471,-0,complete_components,component_weighted_sum,component_base_rebuilt
+philipp_lienhart__aut,Philipp Lienhart,AUT,DEF,2.675404,2.675404,2.729367,2.699687,2.699687,-0,complete_components,component_weighted_sum,component_base_rebuilt
+john_mcginn__sco,John McGinn,SCO,MID,2.559743,2.559743,2.865204,2.6972,2.6972,-0,complete_components,component_weighted_sum,component_base_rebuilt
+romano_schmid__aut,Romano Schmid,AUT,MID,2.953674,2.953674,2.344116,2.679373,2.679373,0,complete_components,component_weighted_sum,component_base_rebuilt
+c_dric_bakambu__cod,Cedric Bakambu,COD,FWD,2.334962,2.334962,3.087442,2.673578,2.673578,0,complete_components,component_weighted_sum,component_base_rebuilt
+youri_tielemans__bel,Youri Tielemans,BEL,MID,2.516224,2.516224,2.865204,2.673265,2.673265,0,complete_components,component_weighted_sum,component_base_rebuilt
+bart_verbruggen__ned,Bart Verbruggen,NED,GK,2.61187,2.61187,2.735619,2.667557,2.667557,-0,complete_components,component_weighted_sum,component_base_rebuilt
+julian_ryerson__nor,Julian Ryerson,NOR,DEF,2.298992,2.298992,3.112963,2.665279,2.665279,0,complete_components,component_weighted_sum,component_base_rebuilt
+arthur_theate__bel,Arthur Theate,BEL,DEF,2.60833,2.60833,2.729367,2.662797,2.662797,0,complete_components,component_weighted_sum,component_base_rebuilt
+juan_manuel_sanabria__uru,Juan Manuel Sanabria,URU,MID,2.91661,2.91661,2.344116,2.658988,2.658988,0,complete_components,component_weighted_sum,component_base_rebuilt
+ronald_ara_jo__uru,Ronald Araujo,URU,DEF,2.023543,2.023543,3.414594,2.649516,2.649516,0,complete_components,component_weighted_sum,component_base_rebuilt
+che_adams__sco,Che Adams,SCO,FWD,2.840463,2.840463,2.410878,2.64715,2.64715,0,complete_components,component_weighted_sum,component_base_rebuilt
+julio_enciso__par,Julio Enciso,PAR,FWD,2.285729,2.285729,3.087442,2.6465,2.6465,0,complete_components,component_weighted_sum,component_base_rebuilt
+kristoffer_ajer__nor,Kristoffer Ajer,NOR,DEF,2.572664,2.572664,2.729367,2.64318,2.64318,-0,complete_components,component_weighted_sum,component_base_rebuilt
+aur_lien_tchouam_ni__fra,Aurelien Tchouameni,FRA,MID,2.455817,2.455817,2.865204,2.640041,2.640041,-0,complete_components,component_weighted_sum,component_base_rebuilt
+n_lson_semedo__por,Nelson Semedo,POR,DEF,2.107485,2.107485,3.290007,2.63962,2.63962,0,complete_components,component_weighted_sum,component_base_rebuilt
+nayef_aguerd__mar,Nayef Aguerd,MAR,DEF,2.555573,2.555573,2.729367,2.63378,2.63378,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jhon_lucum__col,Jhon Lucumi,COL,DEF,2.238819,2.238819,3.112963,2.632184,2.632184,0,complete_components,component_weighted_sum,component_base_rebuilt
+kim_min_jae__kor,Min-jae Kim,KOR,DEF,2.233496,2.233496,3.112963,2.629256,2.629256,-0,complete_components,component_weighted_sum,component_base_rebuilt
+mohamed_amoura__alg,Mohamed Amoura,ALG,FWD,2.253871,2.253871,3.087442,2.628978,2.628978,0,complete_components,component_weighted_sum,component_base_rebuilt
+iliman_ndiaye__sen,Iliman Ndiaye,SEN,MID,2.859908,2.859908,2.344116,2.627802,2.627802,0,complete_components,component_weighted_sum,component_base_rebuilt
+ibrahima_konat__fra,Ibrahima Konate,FRA,DEF,2.541899,2.541899,2.729367,2.62626,2.62626,0,complete_components,component_weighted_sum,component_base_rebuilt
+ibrahim_maza__alg,Ibrahim Maza,ALG,MID,2.840032,2.840032,2.344116,2.61687,2.61687,0,complete_components,component_weighted_sum,component_base_rebuilt
+david_alaba__aut,David Alaba,AUT,DEF,2.498191,2.498191,2.729367,2.60222,2.60222,-0,complete_components,component_weighted_sum,component_base_rebuilt
+renato_veiga__por,Renato Veiga,POR,DEF,2.160564,2.160564,3.112963,2.589144,2.589143,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+anthony_gordon__eng,Anthony Gordon,ENG,FWD,1.799554,1.799554,3.546836,2.585831,2.585831,0,complete_components,component_weighted_sum,component_base_rebuilt
+alex_freeman__usa,Alex Freeman,USA,DEF,3.06825,3.06825,1.962176,2.570517,2.570517,0,complete_components,component_weighted_sum,component_base_rebuilt
+martin_baturina__cro,Martin Baturina,CRO,MID,2.754023,2.754023,2.344116,2.569565,2.569565,0,complete_components,component_weighted_sum,component_base_rebuilt
+emil_holm__swe,Emil Holm,SWE,DEF,3.063242,3.063242,1.962176,2.567762,2.567762,-0,complete_components,component_weighted_sum,component_base_rebuilt
+lucas_digne__fra,Lucas Digne,FRA,DEF,2.117765,2.117765,3.112963,2.565604,2.565604,-0,complete_components,component_weighted_sum,component_base_rebuilt
+rayan_cherki__fra,Rayan Cherki,FRA,FWD,1.75138,1.75138,3.546836,2.559335,2.559335,-0,complete_components,component_weighted_sum,component_base_rebuilt
+oswin_appollis__rsa,Oswin Appollis,RSA,FWD,2.123237,2.123237,3.087442,2.557129,2.557129,-0,complete_components,component_weighted_sum,component_base_rebuilt
+juli_n_qui_ones__mex,Julian Quinones,MEX,FWD,2.670781,2.670781,2.410878,2.553825,2.553825,0,complete_components,component_weighted_sum,component_base_rebuilt
+leandro_paredes__arg,Leandro Paredes,ARG,MID,2.112017,2.112017,3.082665,2.548809,2.548809,0,complete_components,component_weighted_sum,component_base_rebuilt
+jefferson_lerma__col,Jefferson Lerma,COL,MID,2.713813,2.713813,2.344116,2.547449,2.54745,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+lee_jae_sung__kor,Jae-Sung Lee,KOR,MID,2.109232,2.109232,3.082665,2.547277,2.547277,0,complete_components,component_weighted_sum,component_base_rebuilt
+dominik_livakovi__cro,Dominik Livakovic,CRO,GK,2.596297,2.596297,2.479365,2.543678,2.543678,0,complete_components,component_weighted_sum,component_base_rebuilt
+reece_james__eng,Reece James,ENG,DEF,2.07712,2.07712,3.112963,2.543249,2.543249,-0,complete_components,component_weighted_sum,component_base_rebuilt
+brian_rodr_guez__uru,Brian Rodriguez,URU,FWD,2.090805,2.090805,3.087442,2.539292,2.539291,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+duckens_nazon__hai,Duckens Nazon,HAI,FWD,2.089843,2.089843,3.087442,2.538763,2.538762,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+leon_goretzka__ger,Leon Goretzka,GER,MID,1.974169,1.974169,3.222169,2.535769,2.535769,0,complete_components,component_weighted_sum,component_base_rebuilt
+jude_bellingham__eng,Jude Bellingham,ENG,MID,1.814659,1.814659,3.415012,2.534818,2.534818,0,complete_components,component_weighted_sum,component_base_rebuilt
+nathan_ak__ned,Nathan Ake,NED,DEF,2.060029,2.060029,3.112963,2.533849,2.533849,-0,complete_components,component_weighted_sum,component_base_rebuilt
+hazem_mastouri__tun,Hazem Mastouri,TUN,FWD,2.074118,2.074118,3.087442,2.530114,2.530114,0,complete_components,component_weighted_sum,component_base_rebuilt
+adrien_rabiot__fra,Adrien Rabiot,FRA,MID,2.070573,2.070573,3.082665,2.526014,2.526015,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+josip_stani_i__cro,Josip Stanisic,CRO,DEF,2.044867,2.044867,3.112963,2.52551,2.52551,-0,complete_components,component_weighted_sum,component_base_rebuilt
+nikola_vla_i__cro,Nikola Vlasic,CRO,MID,2.663852,2.663852,2.344116,2.519971,2.519971,0,complete_components,component_weighted_sum,component_base_rebuilt
+d_sir_dou__fra,Desire Doue,FRA,FWD,1.67807,1.67807,3.546836,2.519015,2.519015,0,complete_components,component_weighted_sum,component_base_rebuilt
+frantzdy_pierrot__hai,Frantzdy Pierrot,HAI,FWD,2.604592,2.604592,2.410878,2.517421,2.517421,0,complete_components,component_weighted_sum,component_base_rebuilt
+nico_o_reilly__eng,Nico O'Reilly,ENG,DEF,1.884759,1.884759,3.290007,2.517121,2.517121,0,complete_components,component_weighted_sum,component_base_rebuilt
+mikel_merino__esp,Mikel Merino,ESP,MID,1.938698,1.938698,3.222169,2.51626,2.51626,0,complete_components,component_weighted_sum,component_base_rebuilt
+richard_r_os__col,Richard Rios,COL,MID,2.22458,2.22458,2.865204,2.512861,2.512861,0,complete_components,component_weighted_sum,component_base_rebuilt
+nico_elvedi__sui,Nico Elvedi,SUI,DEF,2.325208,2.325208,2.729367,2.50708,2.50708,0,complete_components,component_weighted_sum,component_base_rebuilt
+wout_weghorst__ned,Wout Weghorst,NED,FWD,2.569336,2.569336,2.410878,2.49803,2.49803,0,complete_components,component_weighted_sum,component_base_rebuilt
+thibaut_courtois__bel,Thibaut Courtois,BEL,GK,2.29503,2.29503,2.735619,2.493295,2.493295,-0,complete_components,component_weighted_sum,component_base_rebuilt
+tom_s_ara_jo__por,Tomas Araujo,POR,DEF,1.977832,1.977832,3.112963,2.488641,2.488641,0,complete_components,component_weighted_sum,component_base_rebuilt
+ngelo_preciado__ecu,Angelo Preciado,ECU,DEF,2.291001,2.291001,2.729367,2.488266,2.488266,0,complete_components,component_weighted_sum,component_base_rebuilt
+thiago_almada__arg,Thiago Almada,ARG,MID,1.759306,1.759306,3.378085,2.487757,2.487757,0,complete_components,component_weighted_sum,component_base_rebuilt
+anthony_elanga__swe,Anthony Elanga,SWE,FWD,1.993175,1.993175,3.087442,2.485595,2.485595,-0,complete_components,component_weighted_sum,component_base_rebuilt
+junya_ito__jpn,Junya Ito,JPN,MID,2.169216,2.169216,2.865204,2.482411,2.48241,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+miguel_almir_n__par,Miguel Almiron,PAR,MID,2.155214,2.155214,2.865204,2.474709,2.474709,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+dani_olmo__esp,Dani Olmo,ESP,MID,1.78573,1.78573,3.316539,2.474594,2.474594,-0,complete_components,component_weighted_sum,component_base_rebuilt
+martin_caceres__uru,Martin Caceres,URU,DEF,2.26312,2.26312,2.729367,2.472931,2.472931,-0,complete_components,component_weighted_sum,component_base_rebuilt
+tarik_muharemovic__bih,Tarik Muharemovic,BIH,DEF,2.236051,2.236051,2.729367,2.458043,2.458043,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jhon_c_rdoba__col,Jhon Cordoba,COL,FWD,2.496304,2.496304,2.410878,2.457862,2.457862,-0,complete_components,component_weighted_sum,component_base_rebuilt
+stefan_de_vrij__ned,Stefan de Vrij,NED,DEF,2.227288,2.227288,2.729367,2.453224,2.453224,0,complete_components,component_weighted_sum,component_base_rebuilt
+lyndon_dykes__sco,Lyndon Dykes,SCO,FWD,3.261197,3.261197,1.458678,2.450063,2.450063,-0,complete_components,component_weighted_sum,component_base_rebuilt
+david_ospina__col,David Ospina,COL,GK,2.724693,2.724693,2.109221,2.447731,2.44773,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+billy_gilmour__sco,Billy Gilmour,SCO,MID,2.531457,2.531457,2.344116,2.447154,2.447154,0,complete_components,component_weighted_sum,component_base_rebuilt
+mert_m_ld_r__tur,Mert Müldür,TUR,DEF,2.210596,2.210596,2.729367,2.444043,2.444043,0,complete_components,component_weighted_sum,component_base_rebuilt
+eric_garcia__esp,Eric Garcia,ESP,DEF,2.209763,2.209763,2.729367,2.443585,2.443585,0,complete_components,component_weighted_sum,component_base_rebuilt
+josip_utalo__cro,Josip Sutalo,CRO,DEF,2.1948,2.1948,2.729367,2.435355,2.435355,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ante_budimir__cro,Ante Budimir,CRO,FWD,1.901314,1.901314,3.087442,2.435072,2.435071,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+j_rgen_strand_larsen__nor,Jørgen Strand Larsen,NOR,FWD,2.446194,2.446194,2.410878,2.430302,2.430302,0,complete_components,component_weighted_sum,component_base_rebuilt
+tyler_adams__usa,Tyler Adams,USA,MID,2.493315,2.493315,2.344116,2.426175,2.426176,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+waldemar_anton__ger,Waldemar Anton,GER,DEF,1.85603,1.85603,3.112963,2.42165,2.42165,0,complete_components,component_weighted_sum,component_base_rebuilt
+rjan_nyland__nor,Ørjan Nyland,NOR,GK,2.338687,2.338687,2.479365,2.401992,2.401992,-0,complete_components,component_weighted_sum,component_base_rebuilt
+el_hadji_malick_diouf__sen,El Hadji Malick Diouf,SEN,DEF,1.816041,1.816041,3.112963,2.399656,2.399656,0,complete_components,component_weighted_sum,component_base_rebuilt
+ismael_saibari__mar,Ismael Saibari,MAR,MID,2.016958,2.016958,2.865204,2.398669,2.398669,0,complete_components,component_weighted_sum,component_base_rebuilt
+alexander_schlager__aut,Alexander Schlager,AUT,GK,2.634172,2.634172,2.109221,2.397944,2.397944,-0,complete_components,component_weighted_sum,component_base_rebuilt
+andy_robertson__sco,Andy Robertson,SCO,DEF,2.118919,2.118919,2.729367,2.393621,2.393621,0,complete_components,component_weighted_sum,component_base_rebuilt
+ivan_peri_i__cro,Ivan Perisic,CRO,FWD,1.185856,1.185856,3.847531,2.38361,2.38361,0,complete_components,component_weighted_sum,component_base_rebuilt
+r_ben_neves__por,Ruben Neves,POR,MID,1.810072,1.810072,3.082665,2.382739,2.382739,0,complete_components,component_weighted_sum,component_base_rebuilt
+kevin_rodr_guez__ecu,Kevin Rodriguez,ECU,FWD,2.35382,2.35382,2.410878,2.379496,2.379496,-0,complete_components,component_weighted_sum,component_base_rebuilt
+martin_degaard__nor,Martin Ødegaard,NOR,MID,1.686029,1.686029,3.222169,2.377292,2.377292,0,complete_components,component_weighted_sum,component_base_rebuilt
+eldor_shomurodov__uzb,Eldor Shomurodov,UZB,FWD,2.348824,2.348824,2.410878,2.376748,2.376748,-0,complete_components,component_weighted_sum,component_base_rebuilt
+sebastian_berhalter__usa,Sebastian Berhalter,USA,MID,2.401589,2.401589,2.344116,2.375726,2.375726,-0,complete_components,component_weighted_sum,component_base_rebuilt
+koki_ogawa__jpn,Koki Ogawa,JPN,FWD,1.413101,1.413101,3.546836,2.373282,2.373282,0,complete_components,component_weighted_sum,component_base_rebuilt
+jan_paul_van_hecke__ned,Jan Paul van Hecke,NED,DEF,2.075292,2.075292,2.729367,2.369626,2.369626,0,complete_components,component_weighted_sum,component_base_rebuilt
+amar_dedi__bih,Amar Dedic,BIH,DEF,2.048007,2.048007,2.729367,2.354619,2.354619,-0,complete_components,component_weighted_sum,component_base_rebuilt
+israel_reyes__mex,Israel Reyes,MEX,DEF,2.047184,2.047184,2.729367,2.354166,2.354166,-0,complete_components,component_weighted_sum,component_base_rebuilt
+seol_young_woo__kor,Young-woo Seol,KOR,DEF,2.043264,2.043264,2.729367,2.35201,2.35201,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jeremie_frimpong__ned,Jeremie Frimpong,NED,DEF,1.582308,1.582308,3.290007,2.350773,2.350773,0,complete_components,component_weighted_sum,component_base_rebuilt
+alejandro_alex_grimaldo__esp,Alejandro 'Alex' Grimaldo,ESP,DEF,1.578961,1.578961,3.290007,2.348932,2.348932,0,complete_components,component_weighted_sum,component_base_rebuilt
+alan_minda__ecu,Alan Minda,ECU,MID,2.352445,2.352445,2.344116,2.348697,2.348697,0,complete_components,component_weighted_sum,component_base_rebuilt
+nicolas_seiwald__aut,Nicolas Seiwald,AUT,MID,3.1454,3.1454,1.367591,2.345386,2.345386,0,complete_components,component_weighted_sum,component_base_rebuilt
+gregor_kobel__sui,Gregor Kobel,SUI,GK,2.222928,2.222928,2.479365,2.338325,2.338325,0,complete_components,component_weighted_sum,component_base_rebuilt
+a_ssa_mandi__alg,Aissa Mandi,ALG,DEF,2.000172,2.000172,2.729367,2.32831,2.32831,0,complete_components,component_weighted_sum,component_base_rebuilt
+yerry_mina__col,Yerry Mina,COL,DEF,1.995766,1.995766,2.729367,2.325886,2.325887,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+andreas_schjelderup__nor,Andreas Schjelderup,NOR,MID,1.882812,1.882812,2.865204,2.324888,2.324888,-0,complete_components,component_weighted_sum,component_base_rebuilt
+neil_el_aynaoui__mar,Neil El Aynaoui,MAR,MID,2.303588,2.303588,2.344116,2.321826,2.321826,0,complete_components,component_weighted_sum,component_base_rebuilt
+gustavo_g_mez__par,Gustavo Gomez,PAR,DEF,1.954086,1.954086,2.729367,2.302962,2.302963,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+mohammad_mohebi__irn,Mohammad Mohebi,IRN,FWD,2.212681,2.212681,2.410878,2.30187,2.30187,0,complete_components,component_weighted_sum,component_base_rebuilt
+benjamin_nygren__swe,Benjamin Nygren,SWE,FWD,2.199499,2.199499,2.410878,2.29462,2.29462,0,complete_components,component_weighted_sum,component_base_rebuilt
+chris_wood__nzl,Chris Wood,NZL,FWD,1.634355,1.634355,3.087442,2.288244,2.288244,-0,complete_components,component_weighted_sum,component_base_rebuilt
+mart_n_zubimendi__esp,Martin Zubimendi,ESP,MID,1.81467,1.81467,2.865204,2.28741,2.28741,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jordan_henderson__eng,Jordan Henderson,ENG,MID,1.813601,1.813601,2.865204,2.286822,2.286822,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ladislav_krejci__cze,Ladislav Krejci,CZE,DEF,1.923314,1.923314,2.729367,2.286038,2.286038,0,complete_components,component_weighted_sum,component_base_rebuilt
+zion_suzuki__jpn,Zion Suzuki,JPN,GK,2.122535,2.122535,2.479365,2.283108,2.283109,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+petar_sucic__cro,Petar Sucic,CRO,MID,2.229336,2.229336,2.344116,2.280987,2.280987,0,complete_components,component_weighted_sum,component_base_rebuilt
+yasin_ayari__swe,Yasin Ayari,SWE,MID,1.799316,1.799316,2.865204,2.278966,2.278965,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+jordan_ayew__gha,Jordan Ayew,GHA,FWD,2.17085,2.17085,2.410878,2.278863,2.278863,0,complete_components,component_weighted_sum,component_base_rebuilt
+yukinari_sugawara__jpn,Yukinari Sugawara,JPN,DEF,1.59639,1.59639,3.112963,2.278848,2.278848,0,complete_components,component_weighted_sum,component_base_rebuilt
+montassar_talbi__tun,Montassar Talbi,TUN,DEF,1.907236,1.907236,2.729367,2.277195,2.277195,0,complete_components,component_weighted_sum,component_base_rebuilt
+ramy_bensebaini__alg,Ramy Bensebaini,ALG,DEF,1.906733,1.906733,2.729367,2.276918,2.276918,-0,complete_components,component_weighted_sum,component_base_rebuilt
+dan_burn__eng,Dan Burn,ENG,DEF,1.586489,1.586489,3.112963,2.273402,2.273402,-0,complete_components,component_weighted_sum,component_base_rebuilt
+abdulkerim_bardakci__tur,Abdulkerim Bardakci,TUR,DEF,1.891833,1.891833,2.729367,2.268723,2.268723,-0,complete_components,component_weighted_sum,component_base_rebuilt
+raphinha__bra,Raphinha,BRA,FWD,0.485569,0.485569,4.440568,2.265319,2.265319,0,complete_components,component_weighted_sum,component_base_rebuilt
+nikola_kati__bih,Nikola Katic,BIH,DEF,1.882826,1.882826,2.729367,2.263769,2.26377,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+isma_l_kon__can,Ismael Kone,CAN,MID,2.189383,2.189383,2.344116,2.259013,2.259013,0,complete_components,component_weighted_sum,component_base_rebuilt
+amadou_onana__bel,Amadou Onana,BEL,MID,2.187878,2.187878,2.344116,2.258185,2.258185,-0,complete_components,component_weighted_sum,component_base_rebuilt
+baghdad_bounedjah__alg,Baghdad Bounedjah,ALG,FWD,2.119708,2.119708,2.410878,2.250735,2.250735,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+nathan_saliba__can,Nathan Saliba,CAN,MID,2.168584,2.168584,2.344116,2.247573,2.247574,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+rayan_a_t_nouri__alg,Rayan Ait-Nouri,ALG,DEF,1.850426,1.850426,2.729367,2.245949,2.24595,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+duje_aleta_car__cro,Duje Caleta-Car,CRO,DEF,1.839153,1.839153,2.729367,2.239749,2.239749,-0,complete_components,component_weighted_sum,component_base_rebuilt
+guillermo_varela__uru,Guillermo Varela,URU,DEF,1.836454,1.836454,2.729367,2.238265,2.238265,0,complete_components,component_weighted_sum,component_base_rebuilt
+ali_ahmed__can,Ali Ahmed,CAN,MID,2.142869,2.142869,2.344116,2.23343,2.23343,-0,complete_components,component_weighted_sum,component_base_rebuilt
+danilo_luiz_da_silva__bra,Danilo Luiz da Silva,BRA,DEF,2.452517,2.452517,1.962176,2.231864,2.231864,0,complete_components,component_weighted_sum,component_base_rebuilt
+victor_lindel_f__swe,Victor Lindelöf,SWE,DEF,1.82279,1.82279,2.729367,2.23075,2.23075,0,complete_components,component_weighted_sum,component_base_rebuilt
+rami_rabia__egy,Rami Rabia,EGY,DEF,1.821404,1.821404,2.729367,2.229987,2.229987,-0,complete_components,component_weighted_sum,component_base_rebuilt
+felix_feliz_torres__ecu,Felix 'Feliz' Torres,ECU,DEF,1.810519,1.810519,2.729367,2.224001,2.224001,0,complete_components,component_weighted_sum,component_base_rebuilt
+jhon_arias__col,Jhon Arias,COL,MID,2.118823,2.118823,2.344116,2.220205,2.220205,0,complete_components,component_weighted_sum,component_base_rebuilt
+agust_n_lvarez__uru,Agustin Alvarez,URU,FWD,2.061553,2.061553,2.410878,2.218749,2.218749,-0,complete_components,component_weighted_sum,component_base_rebuilt
+omar_alderete__par,Omar Alderete,PAR,DEF,1.482246,1.482246,3.112963,2.216069,2.216069,0,complete_components,component_weighted_sum,component_base_rebuilt
+mois_s_caicedo__ecu,Moises Caicedo,ECU,MID,2.110491,2.110491,2.344116,2.215622,2.215622,-0,complete_components,component_weighted_sum,component_base_rebuilt
+aleksandar_pavlovic__ger,Aleksandar Pavlovic,GER,MID,1.671656,1.671656,2.865204,2.208753,2.208752,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+antoine_semenyo__gha,Antoine Semenyo,GHA,FWD,1.105127,1.105127,3.546836,2.203896,2.203896,-0,complete_components,component_weighted_sum,component_base_rebuilt
+alireza_jahanbakhsh__irn,Alireza Jahanbakhsh,IRN,FWD,2.810095,2.810095,1.458678,2.201957,2.201957,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ismael_d_az__pan,Ismael Diaz,PAN,FWD,2.803053,2.803053,1.458678,2.198084,2.198084,-0,complete_components,component_weighted_sum,component_base_rebuilt
+caleb_yirenkyi__gha,Caleb Yirenkyi,GHA,DEF,1.762302,1.762302,2.729367,2.197481,2.197481,-0,complete_components,component_weighted_sum,component_base_rebuilt
+orkun_k_k__tur,Orkun Kökcü,TUR,MID,2.068905,2.068905,2.344116,2.19275,2.19275,0,complete_components,component_weighted_sum,component_base_rebuilt
+issa_diop__mar,Issa Diop,MAR,DEF,2.380426,2.380426,1.962176,2.192213,2.192213,-0,complete_components,component_weighted_sum,component_base_rebuilt
+nathan_ngoy__bel,Nathan Ngoy,BEL,DEF,3.018774,3.018774,1.18187,2.192167,2.192167,-0,complete_components,component_weighted_sum,component_base_rebuilt
+fernando_muslera__uru,Fernando Muslera,URU,GK,1.948318,1.948318,2.479365,2.187289,2.187289,-0,complete_components,component_weighted_sum,component_base_rebuilt
+j_nior_alonso__par,Junior Alonso,PAR,DEF,1.738368,1.738368,2.729367,2.184318,2.184318,0,complete_components,component_weighted_sum,component_base_rebuilt
+abdelhamid_ait_boudlal__mar,Abdelhamid Ait Boudlal,MAR,DEF,2.356874,2.356874,1.962176,2.17926,2.17926,0,complete_components,component_weighted_sum,component_base_rebuilt
+edouard_mendy__sen,Edouard Mendy,SEN,GK,2.234923,2.234923,2.109221,2.178357,2.178357,-0,complete_components,component_weighted_sum,component_base_rebuilt
+moussa_niakhate__sen,Moussa Niakhate,SEN,DEF,1.726598,1.726598,2.729367,2.177844,2.177844,-0,complete_components,component_weighted_sum,component_base_rebuilt
+manuel_ugarte__uru,Manuel Ugarte,URU,MID,1.615013,1.615013,2.865204,2.177599,2.177599,0,complete_components,component_weighted_sum,component_base_rebuilt
+alex_sandro__bra,Alex Sandro,BRA,DEF,2.34629,2.34629,1.962176,2.173439,2.173439,0,complete_components,component_weighted_sum,component_base_rebuilt
+darwin_nunez__uru,Darwin Nunez,URU,FWD,0.384524,0.384524,4.357042,2.172157,2.172157,-0,complete_components,component_weighted_sum,component_base_rebuilt
+viktor_gyokeres__swe,Viktor Gyökeres,SWE,FWD,0.382566,0.382566,4.357042,2.17108,2.17108,-0,complete_components,component_weighted_sum,component_base_rebuilt
+neymar_jr__bra,Neymar Jr.,BRA,FWD,0.493195,0.493195,4.215047,2.168028,2.168028,-0,complete_components,component_weighted_sum,component_base_rebuilt
+mohamed_el_shenawy__egy,Mohamed El-Shennawy,EGY,GK,2.631193,2.631193,1.596713,2.165677,2.165677,0,complete_components,component_weighted_sum,component_base_rebuilt
+gabriel_gudmundsson__swe,Gabriel Gudmundsson,SWE,DEF,1.703513,1.703513,2.729367,2.165147,2.165147,-0,complete_components,component_weighted_sum,component_base_rebuilt
+akram_afif__qat,Akram Afif,QAT,FWD,1.394682,1.394682,3.087442,2.156424,2.156424,0,complete_components,component_weighted_sum,component_base_rebuilt
+guela_doue__civ,Guela Doue,CIV,DEF,1.678673,1.678673,2.729367,2.151485,2.151485,-0,complete_components,component_weighted_sum,component_base_rebuilt
+n_golo_kant__fra,N'Golo Kante,FRA,MID,1.992069,1.992069,2.344116,2.15049,2.15049,-0,complete_components,component_weighted_sum,component_base_rebuilt
+alexander_djiku__gha,Alexander Djiku,GHA,DEF,1.675333,1.675333,2.729367,2.149648,2.149648,-0,complete_components,component_weighted_sum,component_base_rebuilt
+idrissa_gana_gueye__sen,Idrissa Gana Gueye,SEN,MID,1.989941,1.989941,2.344116,2.14932,2.14932,0,complete_components,component_weighted_sum,component_base_rebuilt
+oh_hyeon_gyu__kor,Hyeon-Gyu Oh,KOR,FWD,1.380649,1.380649,3.087442,2.148706,2.148706,0,complete_components,component_weighted_sum,component_base_rebuilt
+vladimir_coufal__cze,Vladimir Coufal,CZE,DEF,1.66063,1.66063,2.729367,2.141562,2.141562,0,complete_components,component_weighted_sum,component_base_rebuilt
+maxime_cr_peau__can,Maxime Crepeau,CAN,GK,2.584253,2.584253,1.596713,2.13986,2.13986,0,complete_components,component_weighted_sum,component_base_rebuilt
+valentino_livramento__eng,Valentino Livramento,ENG,DEF,1.652356,1.652356,2.729367,2.137011,2.137011,0,complete_components,component_weighted_sum,component_base_rebuilt
+sander_berge__nor,Sander Berge,NOR,MID,1.967404,1.967404,2.344116,2.136924,2.136925,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+kamal_miller__can,Kamal Miller,CAN,DEF,2.262065,2.262065,1.962176,2.127115,2.127115,0,complete_components,component_weighted_sum,component_base_rebuilt
+deiver_machado__col,Deiver Machado,COL,DEF,1.631052,1.631052,2.729367,2.125294,2.125294,0,complete_components,component_weighted_sum,component_base_rebuilt
+brenden_aaronson__usa,Brenden Aaronson,USA,MID,1.945423,1.945423,2.344116,2.124835,2.124835,0,complete_components,component_weighted_sum,component_base_rebuilt
+benjamin_tahirovic__bih,Benjamin Tahirovic,BIH,MID,1.936296,1.936296,2.344116,2.119815,2.119815,0,complete_components,component_weighted_sum,component_base_rebuilt
+leo_ostigard__nor,Leo Østigård,NOR,DEF,2.239709,2.239709,1.962176,2.114819,2.114819,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ali_abdi__tun,Ali Abdi,TUN,DEF,1.61015,1.61015,2.729367,2.113798,2.113798,0,complete_components,component_weighted_sum,component_base_rebuilt
+khuliso_mudau__rsa,Khuliso Mudau,RSA,DEF,1.604387,1.604387,2.729367,2.110628,2.110628,0,complete_components,component_weighted_sum,component_base_rebuilt
+haris_tabakovic__bih,Haris Tabakovic,BIH,FWD,1.851472,1.851472,2.410878,2.103205,2.103205,0,complete_components,component_weighted_sum,component_base_rebuilt
+juan_jose_caceres__par,Juan Jose Caceres,PAR,DEF,1.582282,1.582282,2.729367,2.09847,2.09847,-0,complete_components,component_weighted_sum,component_base_rebuilt
+deniz_undav__ger,Deniz Undav,GER,FWD,1.284838,1.284838,3.087442,2.09601,2.09601,0,complete_components,component_weighted_sum,component_base_rebuilt
+ryan_gravenberch__ned,Ryan Gravenberch,NED,MID,1.464249,1.464249,2.865204,2.094679,2.094679,0,complete_components,component_weighted_sum,component_base_rebuilt
+phillipp_mwene__aut,Phillipp Mwene,AUT,DEF,2.19928,2.19928,1.962176,2.092583,2.092583,-0,complete_components,component_weighted_sum,component_base_rebuilt
+dodi_lukebakio__bel,Dodi Lukebakio,BEL,FWD,1.264051,1.264051,3.087442,2.084577,2.084577,0,complete_components,component_weighted_sum,component_base_rebuilt
+zeki_elik__tur,Zeki Celik,TUR,DEF,2.184686,2.184686,1.962176,2.084557,2.084556,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+jorge_sanchez__mex,Jorge Sanchez,MEX,DEF,2.183369,2.183369,1.962176,2.083832,2.083832,-0,complete_components,component_weighted_sum,component_base_rebuilt
+koni_de_winter__bel,Koni de Winter,BEL,DEF,1.547528,1.547528,2.729367,2.079356,2.079356,0,complete_components,component_weighted_sum,component_base_rebuilt
+mohamed_abdelmonem__egy,Mohamed Abdelmonem,EGY,DEF,2.165966,2.165966,1.962176,2.074261,2.07426,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+kevin_danso__aut,Kevin Danso,AUT,DEF,2.165154,2.165154,1.962176,2.073814,2.073814,0,complete_components,component_weighted_sum,component_base_rebuilt
+azzedine_ounahi__mar,Azzedine Ounahi,MAR,MID,1.851506,1.851506,2.344116,2.073181,2.073181,0,complete_components,component_weighted_sum,component_base_rebuilt
+willy_semedo__cpv,Willy Semedo,CPV,FWD,1.227304,1.227304,3.087442,2.064366,2.064366,-0,complete_components,component_weighted_sum,component_base_rebuilt
+facundo_torres__uru,Facundo Torres,URU,FWD,1.221149,1.221149,3.087442,2.060981,2.060981,0,complete_components,component_weighted_sum,component_base_rebuilt
+ralph_priso__can,Ralph Priso,CAN,DEF,2.779667,2.779667,1.18187,2.060658,2.060659,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+teboho_mokoena__rsa,Teboho Mokoena,RSA,MID,1.395025,1.395025,2.865204,2.056606,2.056605,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+sherzod_nasrullayev__uzb,Sherzod Nasrullaev,UZB,DEF,2.133707,2.133707,1.962176,2.056518,2.056518,-0,complete_components,component_weighted_sum,component_base_rebuilt
+derek_cornelius__can,Derek Cornelius,CAN,DEF,2.132002,2.132002,1.962176,2.05558,2.05558,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jurri_n_timber__ned,Jurrien Timber,NED,DEF,2.131067,2.131067,1.962176,2.055066,2.055066,-0,complete_components,component_weighted_sum,component_base_rebuilt
+santiago_bueno__uru,Santiago Bueno,URU,DEF,1.184393,1.184393,3.112963,2.05225,2.052249,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+i_aki_williams__gha,Iñaki Williams,GHA,FWD,1.753106,1.753106,2.410878,2.049103,2.049104,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+livano_comenencia__cuw,Livano Comenencia,CUW,DEF,2.117708,2.117708,1.962176,2.047719,2.047719,0,complete_components,component_weighted_sum,component_base_rebuilt
+kalidou_koulibaly__sen,Kalidou Koulibaly,SEN,DEF,2.117225,2.117225,1.962176,2.047453,2.047453,0,complete_components,component_weighted_sum,component_base_rebuilt
+bremer__bra,Bremer,BRA,DEF,1.488643,1.488643,2.729367,2.046969,2.046969,0,complete_components,component_weighted_sum,component_base_rebuilt
+mohamed_hany__egy,Mohamed Hany,EGY,DEF,2.115013,2.115013,1.962176,2.046236,2.046236,-0,complete_components,component_weighted_sum,component_base_rebuilt
+daniel_svensson__swe,Daniel Svensson,SWE,DEF,1.481779,1.481779,2.729367,2.043194,2.043194,0,complete_components,component_weighted_sum,component_base_rebuilt
+torbjorn_heggem__nor,Torbjørn Heggem,NOR,DEF,2.107415,2.107415,1.962176,2.042057,2.042057,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jordan_bos__aus,Jordan Bos,AUS,DEF,1.475831,1.475831,2.729367,2.039922,2.039922,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jorge_carrascal__col,Jorge Carrascal,COL,MID,2.573817,2.573817,1.367591,2.031015,2.031015,-0,complete_components,component_weighted_sum,component_base_rebuilt
+shogo_taniguchi__jpn,Shogo Taniguchi,JPN,DEF,1.447932,1.447932,2.729367,2.024578,2.024578,0,complete_components,component_weighted_sum,component_base_rebuilt
+teun_koopmeiners__ned,Teun Koopmeiners,NED,MID,1.335762,1.335762,2.865204,2.024011,2.024011,0,complete_components,component_weighted_sum,component_base_rebuilt
+isak_hien__swe,Isak Hien,SWE,DEF,2.073913,2.073913,1.962176,2.023631,2.023631,-0,complete_components,component_weighted_sum,component_base_rebuilt
+takefusa_kubo__jpn,Takefusa Kubo,JPN,MID,1.156464,1.156464,3.082665,2.023254,2.023255,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+tim_ream__usa,Tim Ream,USA,DEF,2.065067,2.065067,1.962176,2.018766,2.018766,-0,complete_components,component_weighted_sum,component_base_rebuilt
+sergio_rochet__uru,Sergio Rochet,URU,GK,1.63662,1.63662,2.479365,2.015855,2.015855,-0,complete_components,component_weighted_sum,component_base_rebuilt
+rafik_belghali__alg,Rafik Belghali,ALG,DEF,2.055016,2.055016,1.962176,2.013238,2.013238,-0,complete_components,component_weighted_sum,component_base_rebuilt
+cameron_burgess__aus,Cameron Burgess,AUS,DEF,1.424126,1.424126,2.729367,2.011484,2.011485,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+tsuyoshi_watanabe__jpn,Tsuyoshi Watanabe,JPN,DEF,1.418081,1.418081,2.729367,2.00816,2.00816,0,complete_components,component_weighted_sum,component_base_rebuilt
+aaron_wan_bissaka__cod,Aaron Wan-Bissaka,COD,DEF,1.412636,1.412636,2.729367,2.005165,2.005165,0,complete_components,component_weighted_sum,component_base_rebuilt
+anthony_ralston__sco,Anthony Ralston,SCO,DEF,2.025951,2.025951,1.962176,1.997252,1.997252,-0,complete_components,component_weighted_sum,component_base_rebuilt
+alexander_prass__aut,Alexander Prass,AUT,DEF,2.016573,2.016573,1.962176,1.992094,1.992094,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jos_s__por,Jose Sa,POR,GK,1.382833,1.382833,2.735619,1.991587,1.991587,0,complete_components,component_weighted_sum,component_base_rebuilt
+kristijan_jaki__cro,Kristijan Jakic,CRO,DEF,1.064356,1.064356,3.112963,1.986229,1.986229,-0,complete_components,component_weighted_sum,component_base_rebuilt
+igor_matanovic__cro,Igor Matanovic,CRO,FWD,2.416882,2.416882,1.458678,1.98569,1.98569,-0,complete_components,component_weighted_sum,component_base_rebuilt
+gideon_mensah__gha,Gideon Mensah,GHA,DEF,1.367937,1.367937,2.729367,1.980581,1.980581,0,complete_components,component_weighted_sum,component_base_rebuilt
+romelu_lukaku__bel,Romelu Lukaku,BEL,FWD,0.437155,0.437155,3.847531,1.971824,1.971824,-0,complete_components,component_weighted_sum,component_base_rebuilt
+grant_hanley__sco,Grant Hanley,SCO,DEF,1.978245,1.978245,1.962176,1.971014,1.971014,0,complete_components,component_weighted_sum,component_base_rebuilt
+fiston_mayele__cod,Fiston Mayele,COD,FWD,1.610114,1.610114,2.410878,1.970458,1.970458,0,complete_components,component_weighted_sum,component_base_rebuilt
+alex_baena__esp,Alex Baena,ESP,MID,1.230273,1.230273,2.865204,1.965992,1.965992,0,complete_components,component_weighted_sum,component_base_rebuilt
+orbel_n_pineda__mex,Orbelin Pineda,MEX,MID,1.656557,1.656557,2.344116,1.965959,1.965959,0,complete_components,component_weighted_sum,component_base_rebuilt
+jorge_guti_rrez__pan,Jorge Gutierrez,PAN,DEF,1.968438,1.968438,1.962176,1.96562,1.96562,-0,complete_components,component_weighted_sum,component_base_rebuilt
+diego_g_mez__par,Diego Gomez,PAR,MID,1.653996,1.653996,2.344116,1.96455,1.96455,0,complete_components,component_weighted_sum,component_base_rebuilt
+kieran_tierney__sco,Kieran Tierney,SCO,DEF,1.96631,1.96631,1.962176,1.96445,1.96445,0,complete_components,component_weighted_sum,component_base_rebuilt
+amirhossein_hosseinzadeh__irn,Amirhossein Hosseinzadeh,IRN,FWD,1.59853,1.59853,2.410878,1.964087,1.964087,0,complete_components,component_weighted_sum,component_base_rebuilt
+junnosuke_suzuki__jpn,Junnosuke Suzuki,JPN,DEF,1.958102,1.958102,1.962176,1.959935,1.959935,-0,complete_components,component_weighted_sum,component_base_rebuilt
+i_smail_y_ksek__tur,Ismail Yüksek,TUR,MID,2.444411,2.444411,1.367591,1.959842,1.959842,-0,complete_components,component_weighted_sum,component_base_rebuilt
+manu_kon__fra,Manu Koné,FRA,MID,1.210039,1.210039,2.865204,1.954863,1.954863,-0,complete_components,component_weighted_sum,component_base_rebuilt
+maximilian_w_ber__aut,Maximilian Wöber,AUT,DEF,1.942158,1.942158,1.962176,1.951166,1.951166,-0,complete_components,component_weighted_sum,component_base_rebuilt
+edin_dzeko__bih,Edin Dzeko,BIH,FWD,0.396025,0.396025,3.847531,1.949203,1.949203,0,complete_components,component_weighted_sum,component_base_rebuilt
+jorrel_hato__ned,Jorrel Hato,NED,DEF,1.936738,1.936738,1.962176,1.948185,1.948185,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ryan_christie__sco,Ryan Christie,SCO,MID,2.423204,2.423204,1.367591,1.948178,1.948178,-0,complete_components,component_weighted_sum,component_base_rebuilt
+daichi_kamada__jpn,Daichi Kamada,JPN,MID,1.189213,1.189213,2.865204,1.943409,1.943409,0,complete_components,component_weighted_sum,component_base_rebuilt
+yahia_fofana__civ,Yahia Fofana,CIV,GK,2.222914,2.222914,1.596713,1.941124,1.941123,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+aubrey_modiba__rsa,Aubrey Modiba,RSA,DEF,1.287937,1.287937,2.729367,1.936581,1.936581,0,complete_components,component_weighted_sum,component_base_rebuilt
+dailon_livramento__cpv,Dailon Livramento,CPV,FWD,1.531122,1.531122,2.410878,1.927012,1.927012,-0,complete_components,component_weighted_sum,component_base_rebuilt
+abdukodir_khusanov__uzb,Abdukodir Khusanov,UZB,DEF,1.265142,1.265142,2.729367,1.924043,1.924043,-0,complete_components,component_weighted_sum,component_base_rebuilt
+shoja_khalilzadeh__irn,Shojae Khalilzadeh,IRN,DEF,1.888557,1.888557,1.962176,1.921686,1.921686,0,complete_components,component_weighted_sum,component_base_rebuilt
+ozan_kabak__tur,Ozan Kabak,TUR,DEF,1.878529,1.878529,1.962176,1.91617,1.91617,-0,complete_components,component_weighted_sum,component_base_rebuilt
+nestory_irankunda__aus,Nestory Irankunda,AUS,FWD,0.955719,0.955719,3.087442,1.914994,1.914994,-0,complete_components,component_weighted_sum,component_base_rebuilt
+hiroki_ito__jpn,Hiroki Ito,JPN,DEF,1.868801,1.868801,1.962176,1.91082,1.91082,0,complete_components,component_weighted_sum,component_base_rebuilt
+esmir_bajraktarevic__bih,Esmir Bajraktarevic,BIH,MID,1.554983,1.554983,2.344116,1.910093,1.910093,0,complete_components,component_weighted_sum,component_base_rebuilt
+luis_suarez_charris__col,Luis Suarez Charris,COL,FWD,0.321226,0.321226,3.847531,1.908063,1.908063,-0,complete_components,component_weighted_sum,component_base_rebuilt
+aaron_hickey__sco,Aaron Hickey,SCO,DEF,1.862929,1.862929,1.962176,1.90759,1.90759,-0,complete_components,component_weighted_sum,component_base_rebuilt
+david_raya__esp,David Raya,ESP,GK,1.091049,1.091049,2.896965,1.903711,1.903711,-0,complete_components,component_weighted_sum,component_base_rebuilt
+axel_tuanzebe__cod,Axel Tuanzebe,COD,DEF,1.219393,1.219393,2.729367,1.898881,1.898881,-0,complete_components,component_weighted_sum,component_base_rebuilt
+saman_ghoddos__irn,Saman Ghoddos,IRN,MID,2.332323,2.332323,1.367591,1.898194,1.898193,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+robin_hranac__cze,Robin Hranac,CZE,DEF,1.844366,1.844366,1.962176,1.897381,1.89738,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+sead_kolasinac__bih,Sead Kolasinac,BIH,DEF,1.843862,1.843862,1.962176,1.897103,1.897103,-0,complete_components,component_weighted_sum,component_base_rebuilt
+mustafa_eskihella__tur,Mustafa Eskihellac,TUR,DEF,2.468823,2.468823,1.18187,1.889694,1.889694,-0,complete_components,component_weighted_sum,component_base_rebuilt
+gustaf_lagerbielke__swe,Gustaf Lagerbielke,SWE,DEF,1.20161,1.20161,2.729367,1.889101,1.889101,0,complete_components,component_weighted_sum,component_base_rebuilt
+malick_thiaw__ger,Malick Thiaw,GER,DEF,1.199961,1.199961,2.729367,1.888194,1.888194,0,complete_components,component_weighted_sum,component_base_rebuilt
+tae_seok_lee__kor,Tae-Seok Lee,KOR,DEF,1.818506,1.818506,1.962176,1.883157,1.883157,-0,complete_components,component_weighted_sum,component_base_rebuilt
+kevin_casta_o__col,Kevin Castano,COL,MID,1.504058,1.504058,2.344116,1.882084,1.882084,-0,complete_components,component_weighted_sum,component_base_rebuilt
+matt_turner__usa,Matt Turner,USA,GK,2.114546,2.114546,1.596713,1.881521,1.881521,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ugurcan_cakir__tur,Ugurcan Cakir,TUR,GK,1.390654,1.390654,2.479365,1.880574,1.880574,0,complete_components,component_weighted_sum,component_base_rebuilt
+djed_spence__eng,Djed Spence,ENG,DEF,1.80879,1.80879,1.962176,1.877814,1.877814,0,complete_components,component_weighted_sum,component_base_rebuilt
+ismaila_sarr__sen,Ismaila Sarr,SEN,MID,1.066499,1.066499,2.865204,1.875916,1.875916,-0,complete_components,component_weighted_sum,component_base_rebuilt
+oliver_baumann__ger,Oliver Baumann,GER,GK,1.039913,1.039913,2.896965,1.875586,1.875586,-0,complete_components,component_weighted_sum,component_base_rebuilt
+douglas_santos__bra,Douglas Santos,BRA,DEF,1.802587,1.802587,1.962176,1.874402,1.874402,-0,complete_components,component_weighted_sum,component_base_rebuilt
+theo_bongonda__cod,Theo Bongonda,COD,MID,1.48272,1.48272,2.344116,1.870348,1.870348,-0,complete_components,component_weighted_sum,component_base_rebuilt
+noah_okafor__sui,Noah Okafor,SUI,MID,1.467522,1.467522,2.344116,1.861989,1.86199,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+yassine_bono_bounou__mar,Yassine 'Bono' Bounou,MAR,GK,1.659459,1.659459,2.109221,1.861852,1.861852,0,complete_components,component_weighted_sum,component_base_rebuilt
+igor_thiago__bra,Igor Thiago,BRA,FWD,0.479725,0.479725,3.546836,1.859925,1.859925,0,complete_components,component_weighted_sum,component_base_rebuilt
+joel_ord_ez__ecu,Joel Ordonez,ECU,DEF,1.772426,1.772426,1.962176,1.857814,1.857813,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+hannibal_mejbri__tun,Hannibal Mejbri,TUN,MID,1.444519,1.444519,2.344116,1.849338,1.849338,0,complete_components,component_weighted_sum,component_base_rebuilt
+evan_n_dicka__civ,Evan N'Dicka,CIV,DEF,1.750249,1.750249,1.962176,1.845616,1.845616,-0,complete_components,component_weighted_sum,component_base_rebuilt
+everardo_lopez__mex,Everardo Lopez,MEX,DEF,1.749325,1.749325,1.962176,1.845108,1.845108,0,complete_components,component_weighted_sum,component_base_rebuilt
+ivan_unji__bih,Ivan Sunjic,BIH,MID,1.435857,1.435857,2.344116,1.844574,1.844574,0,complete_components,component_weighted_sum,component_base_rebuilt
+jawad_el_yamiq__mar,Jawad El Yamiq,MAR,DEF,1.747373,1.747373,1.962176,1.844034,1.844034,-0,complete_components,component_weighted_sum,component_base_rebuilt
+folarin_balogun__usa,Folarin Balogun,USA,FWD,0.446045,0.446045,3.546836,1.841401,1.841401,0,complete_components,component_weighted_sum,component_base_rebuilt
+ramin_rezaeian__irn,Ramin Rezaeian,IRN,DEF,1.740902,1.740902,1.962176,1.840475,1.840475,-0,complete_components,component_weighted_sum,component_base_rebuilt
+erick_davis__pan,Eric Davis,PAN,DEF,1.107925,1.107925,2.729367,1.837574,1.837574,0,complete_components,component_weighted_sum,component_base_rebuilt
+christian_pulisic__usa,Christian Pulisic,USA,FWD,0.433914,0.433914,3.546836,1.834729,1.834729,0,complete_components,component_weighted_sum,component_base_rebuilt
+patrik_schick__cze,Patrik Schick,CZE,FWD,0.187607,0.187607,3.847531,1.834573,1.834573,0,complete_components,component_weighted_sum,component_base_rebuilt
+nathaniel_brown__ger,Nathaniel Brown,GER,DEF,1.728749,1.728749,1.962176,1.833791,1.833791,-0,complete_components,component_weighted_sum,component_base_rebuilt
+deniz_g_l__tur,Deniz Gül,TUR,FWD,2.126688,2.126688,1.458678,1.826084,1.826084,0,complete_components,component_weighted_sum,component_base_rebuilt
+memphis_depay__ned,Memphis Depay,NED,FWD,0.418132,0.418132,3.546836,1.826049,1.826049,0,complete_components,component_weighted_sum,component_base_rebuilt
+ederson_moraes__bra,Ederson Moraes,BRA,GK,0.947435,0.947435,2.896965,1.824724,1.824723,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+yasser_ibrahim__egy,Yasser Ibrahim,EGY,DEF,1.711853,1.711853,1.962176,1.824498,1.824498,-0,complete_components,component_weighted_sum,component_base_rebuilt
+guillermo_ochoa__mex,Guillermo Ochoa,MEX,GK,2.00691,2.00691,1.596713,1.822321,1.822321,-0,complete_components,component_weighted_sum,component_base_rebuilt
+lennart_karl__ger,Lennart Karl,GER,MID,0.597274,0.597274,3.316539,1.820943,1.820943,-0,complete_components,component_weighted_sum,component_base_rebuilt
+denis_zakaria__sui,Denis Zakaria,SUI,MID,1.388296,1.388296,2.344116,1.818415,1.818415,-0,complete_components,component_weighted_sum,component_base_rebuilt
+milad_mohammadi__irn,Milad Mohammadi,IRN,DEF,1.700566,1.700566,1.962176,1.818291,1.81829,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+ghislain_konan__civ,Ghislain Konan,CIV,DEF,1.689348,1.689348,1.962176,1.812121,1.812121,0,complete_components,component_weighted_sum,component_base_rebuilt
+jo_o_neves__por,João Neves,POR,MID,0.579303,0.579303,3.316539,1.811059,1.811059,-0,complete_components,component_weighted_sum,component_base_rebuilt
+saud_abdulhamid__ksa,Saud Abdulhamid,KSA,DEF,1.058912,1.058912,2.729367,1.810617,1.810617,0,complete_components,component_weighted_sum,component_base_rebuilt
+hern_n_gal_ndez__ecu,Hernan Galindez,ECU,GK,1.565263,1.565263,2.109221,1.810044,1.810044,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ali_alipour__irn,Ali Alipour,IRN,FWD,2.084039,2.084039,1.458678,1.802627,1.802627,0,complete_components,component_weighted_sum,component_base_rebuilt
+samuel_moutoussamy__cod,Samuel Moutoussamy,COD,MID,1.352123,1.352123,2.344116,1.79852,1.79852,0,complete_components,component_weighted_sum,component_base_rebuilt
+nico_gonzalez__arg,Nico Gonzalez,ARG,FWD,0.361919,0.361919,3.546836,1.795132,1.795132,0,complete_components,component_weighted_sum,component_base_rebuilt
+hossein_kanaani__irn,Hossein Kanaani,IRN,DEF,1.652435,1.652435,1.962176,1.791818,1.791818,-0,complete_components,component_weighted_sum,component_base_rebuilt
+wilfried_stephane_singo__civ,Wilfried Stephane Singo,CIV,DEF,1.648345,1.648345,1.962176,1.789569,1.789569,0,complete_components,component_weighted_sum,component_base_rebuilt
+scott_mckenna__sco,Scott McKenna,SCO,DEF,1.645,1.645,1.962176,1.787729,1.787729,-0,complete_components,component_weighted_sum,component_base_rebuilt
+kendry_p_ez__ecu,Kendry Paez,ECU,MID,1.330982,1.330982,2.344116,1.786892,1.786893,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+ahmed_fatouh__egy,Ahmed Fatouh,EGY,DEF,1.642027,1.642027,1.962176,1.786094,1.786094,-0,complete_components,component_weighted_sum,component_base_rebuilt
+federico_valverde__uru,Federico Valverde,URU,MID,0.481955,0.481955,3.378085,1.785214,1.785213,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+bilal_el_khannouss__mar,Bilal El Khannouss,MAR,MID,1.323967,1.323967,2.344116,1.783034,1.783034,-0,complete_components,component_weighted_sum,component_base_rebuilt
+dennis_hadzikadunic__bih,Dennis Hadzikadunic,BIH,DEF,1.635262,1.635262,1.962176,1.782373,1.782373,-0,complete_components,component_weighted_sum,component_base_rebuilt
+lamine_camara__sen,Lamine Camara,SEN,MID,1.321202,1.321202,2.344116,1.781513,1.781514,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+raul_rangel__mex,Raul Rangel,MEX,GK,1.206014,1.206014,2.479365,1.779022,1.779022,0,complete_components,component_weighted_sum,component_base_rebuilt
+quinten_timber__ned,Quinten Timber,NED,MID,1.306013,1.306013,2.344116,1.773159,1.77316,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+michael_amir_murillo__pan,Michael Amir Murillo,PAN,DEF,1.614746,1.614746,1.962176,1.771089,1.771089,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+rodri_hernandez__esp,Rodri Hernandez,ESP,MID,0.502882,0.502882,3.316539,1.769028,1.769028,0,complete_components,component_weighted_sum,component_base_rebuilt
+marc_pubill__esp,Marc Pubill,ESP,DEF,0.979119,0.979119,2.729367,1.766731,1.766731,0,complete_components,component_weighted_sum,component_base_rebuilt
+danley_jean_jacques__hai,Danley Jean Jacques,HAI,MID,1.287242,1.287242,2.344116,1.762835,1.762836,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+ismail_jakobs__sen,Ismail Jakobs,SEN,DEF,1.597249,1.597249,1.962176,1.761466,1.761466,-0,complete_components,component_weighted_sum,component_base_rebuilt
+john_souttar__sco,John Souttar,SCO,DEF,1.596763,1.596763,1.962176,1.761199,1.761199,0,complete_components,component_weighted_sum,component_base_rebuilt
+maxi_araujo__uru,Maxi Araujo,URU,MID,0.485573,0.485573,3.316539,1.759508,1.759508,0,complete_components,component_weighted_sum,component_base_rebuilt
+eliesse_ben_seghir__mar,Eliesse Ben Seghir,MAR,MID,1.278491,1.278491,2.344116,1.758022,1.758022,-0,complete_components,component_weighted_sum,component_base_rebuilt
+juninho_bacuna__cuw,Juninho Bacuna,CUW,MID,1.275453,1.275453,2.344116,1.756351,1.756352,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+youcef_atal__alg,Youcef Atal,ALG,DEF,1.58751,1.58751,1.962176,1.75611,1.75611,0,complete_components,component_weighted_sum,component_base_rebuilt
+lucas_paqueta__bra,Lucas Paqueta,BRA,MID,0.418357,0.418357,3.378085,1.750235,1.750235,0,complete_components,component_weighted_sum,component_base_rebuilt
+angus_gunn__sco,Angus Gunn,SCO,GK,1.454151,1.454151,2.109221,1.748933,1.748932,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+alexis_saelemaekers__bel,Alexis Saelemaekers,BEL,FWD,0.262494,0.262494,3.546836,1.740448,1.740448,0,complete_components,component_weighted_sum,component_base_rebuilt
+meschak_elia__cod,Meschack Elia,COD,MID,1.241756,1.241756,2.344116,1.737818,1.737818,0,complete_components,component_weighted_sum,component_base_rebuilt
+ram_n_sosa__par,Ramon Sosa,PAR,MID,1.240017,1.240017,2.344116,1.736862,1.736862,0,complete_components,component_weighted_sum,component_base_rebuilt
+saeid_ezatolahi__irn,Saeid Ezatolahi,IRN,MID,2.033237,2.033237,1.367591,1.733696,1.733696,-0,complete_components,component_weighted_sum,component_base_rebuilt
+chancel_mbemba__cod,Chancel Mbemba,COD,DEF,1.526273,1.526273,1.962176,1.722429,1.722429,-0,complete_components,component_weighted_sum,component_base_rebuilt
+pedro_vite__ecu,Pedro Vite,ECU,MID,2.011989,2.011989,1.367591,1.72201,1.72201,0,complete_components,component_weighted_sum,component_base_rebuilt
+joaquin_seys__bel,Joaquin Seys,BEL,DEF,1.523789,1.523789,1.962176,1.721063,1.721063,-0,complete_components,component_weighted_sum,component_base_rebuilt
+antonee_robinson__usa,Antonee Robinson,USA,DEF,2.15682,2.15682,1.18187,1.718093,1.718093,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+keito_nakamura__jpn,Keito Nakamura,JPN,MID,1.20285,1.20285,2.344116,1.71642,1.71642,0,complete_components,component_weighted_sum,component_base_rebuilt
+martin_erlic__cro,Martin Erlic,CRO,DEF,0.883447,0.883447,2.729367,1.714111,1.714111,0,complete_components,component_weighted_sum,component_base_rebuilt
+hossam_abdelmaguid__egy,Hossam Abdelmaguid,EGY,DEF,1.510696,1.510696,1.962176,1.713862,1.713862,-0,complete_components,component_weighted_sum,component_base_rebuilt
+connor_metcalfe__aus,Connor Metcalfe,AUS,MID,1.187949,1.187949,2.344116,1.708224,1.708224,-0,complete_components,component_weighted_sum,component_base_rebuilt
+mohamed_zeki_amdouni__sui,Mohamed Zeki Amdouni,SUI,FWD,0.570322,0.570322,3.087442,1.703026,1.703026,0,complete_components,component_weighted_sum,component_base_rebuilt
+ayumu_seko__jpn,Ayumu Seko,JPN,DEF,1.488731,1.488731,1.962176,1.701781,1.701781,-0,complete_components,component_weighted_sum,component_base_rebuilt
+fabian_ruiz__esp,Fabian Ruiz,ESP,MID,0.457683,0.457683,3.222169,1.701702,1.701702,0,complete_components,component_weighted_sum,component_base_rebuilt
+anass_salah_eddine__mar,Anass Salah-Eddine,MAR,DEF,1.479547,1.479547,1.962176,1.69673,1.69673,-0,complete_components,component_weighted_sum,component_base_rebuilt
+alireza_beiranvand__irn,Alireza Beiranvand,IRN,GK,1.777092,1.777092,1.596713,1.695921,1.695921,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jarell_quansah__eng,Jarell Quansah,ENG,DEF,1.476839,1.476839,1.962176,1.695241,1.695241,0,complete_components,component_weighted_sum,component_base_rebuilt
+kenny_mclean__sco,Kenny McLean,SCO,MID,1.961718,1.961718,1.367591,1.694361,1.694361,0,complete_components,component_weighted_sum,component_base_rebuilt
+cho_gue_sung__kor,Gue-sung Cho,KOR,FWD,1.886015,1.886015,1.458678,1.693713,1.693713,-0,complete_components,component_weighted_sum,component_base_rebuilt
+fidel_escobar__pan,Fidel Escobar,PAN,DEF,1.469052,1.469052,1.962176,1.690958,1.690958,0,complete_components,component_weighted_sum,component_base_rebuilt
+matt_freese__usa,Matt Freese,USA,GK,1.337768,1.337768,2.109221,1.684922,1.684922,0,complete_components,component_weighted_sum,component_base_rebuilt
+mike_penders__bel,Mike Penders,BEL,GK,1.332568,1.332568,2.109221,1.682062,1.682062,0,complete_components,component_weighted_sum,component_base_rebuilt
+abdoulaye_seck__sen,Abdoulaye Seck,SEN,DEF,0.819636,0.819636,2.729367,1.679015,1.679015,0,complete_components,component_weighted_sum,component_base_rebuilt
+bruno_guimaraes__bra,Bruno Guimaraes,BRA,MID,0.409806,0.409806,3.222169,1.675369,1.675369,-0,complete_components,component_weighted_sum,component_base_rebuilt
+nikola_vasilj__bih,Nikola Vasilj,BIH,GK,1.737257,1.737257,1.596713,1.674012,1.674012,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jesus_angulo__mex,Jesus Angulo,MEX,DEF,2.07559,2.07559,1.18187,1.673416,1.673416,0,complete_components,component_weighted_sum,component_base_rebuilt
+matej_kovar__cze,Matej Kovar,CZE,GK,1.732269,1.732269,1.596713,1.671269,1.671269,0,complete_components,component_weighted_sum,component_base_rebuilt
+roger_ibanez__bra,Roger Ibanez,BRA,DEF,1.428833,1.428833,1.962176,1.668837,1.668837,-0,complete_components,component_weighted_sum,component_base_rebuilt
+facundo_pellistri__uru,Facundo Pellistri,URU,FWD,0.482948,0.482948,3.087442,1.65497,1.65497,-0,complete_components,component_weighted_sum,component_base_rebuilt
+odilon_kossounou__civ,Odilon Kossounou,CIV,DEF,1.390187,1.390187,1.962176,1.647582,1.647582,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ibrahim_adel__egy,Ibrahim Adel,EGY,MID,1.073086,1.073086,2.344116,1.64505,1.64505,0,complete_components,component_weighted_sum,component_base_rebuilt
+jaroslav_zeleny__cze,Jaroslav Zeleny,CZE,DEF,1.384071,1.384071,1.962176,1.644218,1.644218,-0,complete_components,component_weighted_sum,component_base_rebuilt
+hossein_abarghouei__irn,Hossein Abarghouei,IRN,DEF,2.004441,2.004441,1.18187,1.634284,1.634284,-0,complete_components,component_weighted_sum,component_base_rebuilt
+alan_ben_tez__par,Alan Benitez,PAR,DEF,1.363501,1.363501,1.962176,1.632905,1.632905,0,complete_components,component_weighted_sum,component_base_rebuilt
+maghnes_akliouche__fra,Maghnes Akliouche,FRA,FWD,0.44149,0.44149,3.087442,1.632168,1.632168,-0,complete_components,component_weighted_sum,component_base_rebuilt
+kenan_yildiz__tur,Kenan Yildiz,TUR,MID,0.444547,0.444547,3.082665,1.6317,1.6317,-0,complete_components,component_weighted_sum,component_base_rebuilt
+benjamin_asare__gha,Benjamin Asare,GHA,GK,1.653163,1.653163,1.596713,1.62776,1.62776,-0,complete_components,component_weighted_sum,component_base_rebuilt
+luka_vuskovic__cro,Luka Vuskovic,CRO,DEF,1.992084,1.992084,1.18187,1.627488,1.627488,0,complete_components,component_weighted_sum,component_base_rebuilt
+hussein_ali__irq,Hussein Ali,IRQ,DEF,0.725893,0.725893,2.729367,1.627456,1.627456,-0,complete_components,component_weighted_sum,component_base_rebuilt
+mbekezeli_mbokazi__rsa,Mbekezeli Mbokazi,RSA,DEF,1.351286,1.351286,1.962176,1.626186,1.626186,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+bradley_barcola__fra,Bradley Barcola,FRA,MID,0.433739,0.433739,3.082665,1.625756,1.625756,0,complete_components,component_weighted_sum,component_base_rebuilt
+jos_luis_rodr_guez_bebanz__uru,Jose Luis Rodriguez Bebanz,URU,DEF,0.717174,0.717174,2.729367,1.622661,1.622661,0,complete_components,component_weighted_sum,component_base_rebuilt
+juan_cucho_hernandez__col,Juan 'Cucho' Hernandez,COL,FWD,0.04622,0.04622,3.546836,1.621497,1.621497,-0,complete_components,component_weighted_sum,component_base_rebuilt
+hakan_calhanoglu__tur,Hakan Calhanoglu,TUR,MID,0.423497,0.423497,3.082665,1.620123,1.620123,0,complete_components,component_weighted_sum,component_base_rebuilt
+arthur_masuaku__cod,Arthur Masuaku,COD,DEF,1.338141,1.338141,1.962176,1.618957,1.618957,0,complete_components,component_weighted_sum,component_base_rebuilt
+dylan_bronn__tun,Dylan Bronn,TUN,DEF,1.33541,1.33541,1.962176,1.617455,1.617455,0,complete_components,component_weighted_sum,component_base_rebuilt
+camilo_vargas__col,Camilo Vargas,COL,GK,0.90521,0.90521,2.479365,1.61358,1.61358,0,complete_components,component_weighted_sum,component_base_rebuilt
+richard_ledezma__mex,Richard Ledezma,MEX,DEF,1.961599,1.961599,1.18187,1.610721,1.610721,0,complete_components,component_weighted_sum,component_base_rebuilt
+mathieu_choiniere__can,Mathieu Choiniere,CAN,MID,1.807905,1.807905,1.367591,1.609764,1.609764,0,complete_components,component_weighted_sum,component_base_rebuilt
+yuto_nagatomo__jpn,Yuto Nagatomo,JPN,DEF,1.959367,1.959367,1.18187,1.609493,1.609494,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+tyler_bindon__nzl,Tyler Bindon,NZL,DEF,1.316577,1.316577,1.962176,1.607097,1.607097,0,complete_components,component_weighted_sum,component_base_rebuilt
+liberato_cacace__nzl,Liberato Cacace,NZL,DEF,1.31264,1.31264,1.962176,1.604931,1.604931,-0,complete_components,component_weighted_sum,component_base_rebuilt
+hwang_hee_chan__kor,Hee-Chan Hwang,KOR,MID,0.999838,0.999838,2.344116,1.604763,1.604763,-0,complete_components,component_weighted_sum,component_base_rebuilt
+nico_paz__arg,Nico Paz,ARG,MID,0.184887,0.184887,3.316539,1.59413,1.59413,-0,complete_components,component_weighted_sum,component_base_rebuilt
+thomas_partey__gha,Thomas Partey,GHA,MID,0.976033,0.976033,2.344116,1.59167,1.591671,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+sidny_lopes_cabral__cpv,Sidny Lopes Cabral,CPV,DEF,0.660362,0.660362,2.729367,1.591414,1.591414,-0,complete_components,component_weighted_sum,component_base_rebuilt
+brian_brobbey__ned,Brian Brobbey,NED,FWD,1.699997,1.699997,1.458678,1.591403,1.591403,-0,complete_components,component_weighted_sum,component_base_rebuilt
+fredrik_andr_bj_rkan__nor,Fredrik Andre Bjørkan,NOR,DEF,1.287628,1.287628,1.962176,1.591175,1.591175,0,complete_components,component_weighted_sum,component_base_rebuilt
+h_lio_varela__cpv,Helio Varela,CPV,FWD,1.697645,1.697645,1.458678,1.59011,1.59011,0,complete_components,component_weighted_sum,component_base_rebuilt
+ali_nemati__irn,Ali Nemati,IRN,DEF,1.283729,1.283729,1.962176,1.58903,1.58903,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jos_manuel_l_pez__arg,Jose Manuel Lopez,ARG,FWD,1.694953,1.694953,1.458678,1.588629,1.588629,-0,complete_components,component_weighted_sum,component_base_rebuilt
+matheus_nunes__por,Matheus Nunes,POR,MID,0.250598,0.250598,3.222169,1.587805,1.587805,0,complete_components,component_weighted_sum,component_base_rebuilt
+warren_za_re_emery__fra,Warren Zaire-Emery,FRA,MID,0.965164,0.965164,2.344116,1.585692,1.585693,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+mateo_kovacic__cro,Mateo Kovacic,CRO,MID,0.354786,0.354786,3.082665,1.582332,1.582332,0,complete_components,component_weighted_sum,component_base_rebuilt
+alessandro_circati__aus,Alessandro Circati,AUS,DEF,1.264499,1.264499,1.962176,1.578454,1.578454,0,complete_components,component_weighted_sum,component_base_rebuilt
+felix_nmecha__ger,Felix Nmecha,GER,MID,0.951246,0.951246,2.344116,1.578038,1.578038,0,complete_components,component_weighted_sum,component_base_rebuilt
+alex_arce__par,Alex Arce,PAR,FWD,1.672617,1.672617,1.458678,1.576344,1.576344,-0,complete_components,component_weighted_sum,component_base_rebuilt
+chadi_riad__mar,Chadi Riad,MAR,DEF,1.892214,1.892214,1.18187,1.572559,1.572559,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jos_cordoba__pan,Jose Cordoba,PAN,DEF,1.241923,1.241923,1.962176,1.566037,1.566037,0,complete_components,component_weighted_sum,component_base_rebuilt
+evidence_makgopa__rsa,Evidence Makgopa,RSA,FWD,1.653015,1.653015,1.458678,1.565563,1.565563,-0,complete_components,component_weighted_sum,component_base_rebuilt
+andres_andrade__pan,Andres Andrade,PAN,DEF,1.238222,1.238222,1.962176,1.564001,1.564001,-0,complete_components,component_weighted_sum,component_base_rebuilt
+diney_borges__cpv,Diney Borges,CPV,DEF,0.606972,0.606972,2.729367,1.56205,1.56205,0,complete_components,component_weighted_sum,component_base_rebuilt
+samet_akaydin__tur,Samet Akaydin,TUR,DEF,1.233767,1.233767,1.962176,1.561551,1.561551,-0,complete_components,component_weighted_sum,component_base_rebuilt
+tim_payne__nzl,Tim Payne,NZL,DEF,1.232599,1.232599,1.962176,1.560909,1.560909,0,complete_components,component_weighted_sum,component_base_rebuilt
+kosta_barbarouses__nzl,Kosta Barbarouses,NZL,FWD,1.641918,1.641918,1.458678,1.55946,1.55946,0,complete_components,component_weighted_sum,component_base_rebuilt
+aziz_behich__aus,Aziz Behich,AUS,DEF,1.228929,1.228929,1.962176,1.55889,1.55889,-0,complete_components,component_weighted_sum,component_base_rebuilt
+moon_hwan_kim__kor,Moon-Hwan Kim,KOR,DEF,1.223877,1.223877,1.962176,1.556112,1.556112,0,complete_components,component_weighted_sum,component_base_rebuilt
+jean_philippe_mateta__fra,Jean-Philippe Mateta,FRA,FWD,0.301514,0.301514,3.087442,1.555182,1.555181,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+takehiro_tomiyasu__jpn,Takehiro Tomiyasu,JPN,DEF,1.849668,1.849668,1.18187,1.549159,1.549159,0,complete_components,component_weighted_sum,component_base_rebuilt
+ellyes_skhiri__tun,Ellyes Skhiri,TUN,MID,1.69589,1.69589,1.367591,1.548155,1.548155,-0,complete_components,component_weighted_sum,component_base_rebuilt
+noa_lang__ned,Noa Lang,NED,FWD,0.839761,0.839761,2.410878,1.546764,1.546764,0,complete_components,component_weighted_sum,component_base_rebuilt
+miro_muheim__sui,Miro Muheim,SUI,DEF,1.206261,1.206261,1.962176,1.546423,1.546423,0,complete_components,component_weighted_sum,component_base_rebuilt
+kye_rowles__aus,Kye Rowles,AUS,DEF,1.20474,1.20474,1.962176,1.545586,1.545586,-0,complete_components,component_weighted_sum,component_base_rebuilt
+marin_pongra_i__cro,Marin Pongracic,CRO,DEF,1.198013,1.198013,1.962176,1.541886,1.541886,-0,complete_components,component_weighted_sum,component_base_rebuilt
+milo_degenek__aus,Milos Degenek,AUS,DEF,1.194372,1.194372,1.962176,1.539884,1.539884,0,complete_components,component_weighted_sum,component_base_rebuilt
+yoane_wissa__cod,Yoane Wissa,COD,FWD,0.273576,0.273576,3.087442,1.539816,1.539815,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+yan_valery__tun,Yan Valery,TUN,DEF,1.193916,1.193916,1.962176,1.539633,1.539633,0,complete_components,component_weighted_sum,component_base_rebuilt
+ali_majrashi__ksa,Ali Majrashi,KSA,DEF,1.183899,1.183899,1.962176,1.534124,1.534124,0,complete_components,component_weighted_sum,component_base_rebuilt
+joan_garcia__esp,Joan Garcia,ESP,GK,0.760741,0.760741,2.479365,1.534122,1.534122,0,complete_components,component_weighted_sum,component_base_rebuilt
+dean_henderson__eng,Dean Henderson,ENG,GK,0.549679,0.549679,2.735619,1.533352,1.533352,0,complete_components,component_weighted_sum,component_base_rebuilt
+weston_mckennie__usa,Weston McKennie,USA,MID,0.437087,0.437087,2.865204,1.52974,1.52974,0,complete_components,component_weighted_sum,component_base_rebuilt
+florian_grillitsch__aut,Florian Grillitsch,AUT,MID,1.662369,1.662369,1.367591,1.529719,1.529719,0,complete_components,component_weighted_sum,component_base_rebuilt
+borja_iglesias__esp,Borja Iglesias,ESP,FWD,0.250209,0.250209,3.087442,1.526964,1.526964,0,complete_components,component_weighted_sum,component_base_rebuilt
+nathan_patterson__sco,Nathan Patterson,SCO,DEF,1.807225,1.807225,1.18187,1.525815,1.525815,-0,complete_components,component_weighted_sum,component_base_rebuilt
+marcus_holmgren_pedersen__nor,Marcus Holmgren Pedersen,NOR,DEF,1.806887,1.806887,1.18187,1.525629,1.52563,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+abdulelah_al_amri__ksa,Abdulelah Al-Amri,KSA,DEF,1.164972,1.164972,1.962176,1.523714,1.523714,0,complete_components,component_weighted_sum,component_base_rebuilt
+mathew_ryan__aus,Mathew Ryan,AUS,GK,1.462812,1.462812,1.596713,1.523067,1.523067,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ronwen_williams__rsa,Ronwen Williams,RSA,GK,1.458748,1.458748,1.596713,1.520832,1.520832,-0,complete_components,component_weighted_sum,component_base_rebuilt
+kim_seung_gyu__kor,Seung-Gyu Kim,KOR,GK,1.454913,1.454913,1.596713,1.518723,1.518723,0,complete_components,component_weighted_sum,component_base_rebuilt
+jearl_margaritha__cuw,Jearl Margaritha,CUW,FWD,0.78753,0.78753,2.410878,1.518037,1.518037,0,complete_components,component_weighted_sum,component_base_rebuilt
+jo_hyeon_woo__kor,Hyeon-Woo Jo,KOR,GK,1.025163,1.025163,2.109221,1.512989,1.512989,-0,complete_components,component_weighted_sum,component_base_rebuilt
+dayne_st_clair__can,Dayne St. Clair,CAN,GK,1.024192,1.024192,2.109221,1.512455,1.512455,-0,complete_components,component_weighted_sum,component_base_rebuilt
+yeremy_pino__esp,Yeremy Pino,ESP,MID,0.404036,0.404036,2.865204,1.511562,1.511561,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+dami_n_bobadilla__par,Damian Bobadilla,PAR,MID,1.628668,1.628668,1.367591,1.511183,1.511183,-0,complete_components,component_weighted_sum,component_base_rebuilt
+joel_waterman__can,Joel Waterman,CAN,DEF,1.136791,1.136791,1.962176,1.508214,1.508214,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jesper_karlstr_m__swe,Jesper Karlström,SWE,MID,0.812113,0.812113,2.344116,1.501514,1.501515,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+khozhiakbar_alizhonov__uzb,Khozhiakbar Alizhonov,UZB,DEF,1.122644,1.122644,1.962176,1.500433,1.500433,-0,complete_components,component_weighted_sum,component_base_rebuilt
+pavel_sulc__cze,Pavel Sulc,CZE,MID,0.199967,0.199967,3.082665,1.497181,1.497181,-0,complete_components,component_weighted_sum,component_base_rebuilt
+aymen_hussein__irq,Aymen Hussein,IRQ,FWD,0.192276,0.192276,3.087442,1.495101,1.4951,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+aurele_amenda__sui,Aurele Amenda,SUI,DEF,1.108997,1.108997,1.962176,1.492928,1.492928,0,complete_components,component_weighted_sum,component_base_rebuilt
+marcos_llorente__esp,Marcos Llorente,ESP,MID,0.367559,0.367559,2.865204,1.491499,1.491499,-0,complete_components,component_weighted_sum,component_base_rebuilt
+an_bal_godoy__pan,Anibal Godoy,PAN,MID,1.592271,1.592271,1.367591,1.491165,1.491165,0,complete_components,component_weighted_sum,component_base_rebuilt
+omid_noorafkan__irn,Omid Noorafkan,IRN,MID,1.58721,1.58721,1.367591,1.488381,1.488381,-0,complete_components,component_weighted_sum,component_base_rebuilt
+alexander_n_bel__ger,Alexander Nübel,GER,GK,0.46437,0.46437,2.735619,1.486432,1.486432,-0,complete_components,component_weighted_sum,component_base_rebuilt
+aziz_g_aniyev__uzb,Aziz Ganiev,UZB,MID,1.583484,1.583484,1.367591,1.486332,1.486332,-0,complete_components,component_weighted_sum,component_base_rebuilt
+logan_costa__cpv,Logan Costa,CPV,DEF,1.095563,1.095563,1.962176,1.485539,1.485539,0,complete_components,component_weighted_sum,component_base_rebuilt
+nawaf_al_boushal__ksa,Nawaf Al-Boushal,KSA,DEF,1.090795,1.090795,1.962176,1.482916,1.482916,-0,complete_components,component_weighted_sum,component_base_rebuilt
+hans_vanaken__bel,Hans Vanaken,BEL,MID,0.171743,0.171743,3.082665,1.481658,1.481658,0,complete_components,component_weighted_sum,component_base_rebuilt
+tomas_holes__cze,Tomas Holes,CZE,DEF,1.725223,1.725223,1.18187,1.480714,1.480714,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ben_waine__nzl,Ben Waine,NZL,FWD,1.496291,1.496291,1.458678,1.479365,1.479365,-0,complete_components,component_weighted_sum,component_base_rebuilt
+nathanael_mbuku__cod,Nathanael Mbuku,COD,MID,1.567058,1.567058,1.367591,1.477298,1.477298,0,complete_components,component_weighted_sum,component_base_rebuilt
+rustam_ashurmatov__uzb,Rustam Ashurmatov,UZB,DEF,1.080311,1.080311,1.962176,1.47715,1.47715,-0,complete_components,component_weighted_sum,component_base_rebuilt
+zineddine_belaid__alg,Zineddine Belaid,ALG,DEF,1.078672,1.078672,1.962176,1.476249,1.476249,0,complete_components,component_weighted_sum,component_base_rebuilt
+patrick_berg__nor,Patrick Berg,NOR,MID,1.558833,1.558833,1.367591,1.472774,1.472774,-0,complete_components,component_weighted_sum,component_base_rebuilt
+umar_eshmurodov__uzb,Umar Eshmurodov,UZB,DEF,1.070308,1.070308,1.962176,1.471649,1.471649,0,complete_components,component_weighted_sum,component_base_rebuilt
+cristian_mart_nez__pan,Cristian Martinez,PAN,MID,1.554489,1.554489,1.367591,1.470385,1.470385,0,complete_components,component_weighted_sum,component_base_rebuilt
+evren_eren_elmali__tur,Evren Eren Elmali,TUR,DEF,1.702447,1.702447,1.18187,1.468187,1.468188,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+amad_diallo__civ,Amad Diallo,CIV,FWD,0.136973,0.136973,3.087442,1.464684,1.464684,-0,complete_components,component_weighted_sum,component_base_rebuilt
+erik_lira__mex,Erik Lira,MEX,MID,1.541768,1.541768,1.367591,1.463388,1.463388,-0,complete_components,component_weighted_sum,component_base_rebuilt
+mamadou_sarr__sen,Mamadou Sarr,SEN,DEF,1.05461,1.05461,1.962176,1.463015,1.463015,0,complete_components,component_weighted_sum,component_base_rebuilt
+yuito_suzuki__jpn,Yuito Suzuki,JPN,FWD,1.461138,1.461138,1.458678,1.460031,1.460031,0,complete_components,component_weighted_sum,component_base_rebuilt
+boualem_khoukhi__qat,Boualem Khoukhi,QAT,DEF,1.048633,1.048633,1.962176,1.459727,1.459727,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ger_nimo_rulli__arg,Geronimo Rulli,ARG,GK,0.413969,0.413969,2.735619,1.458711,1.458712,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+mohamed_amine_ben_hamida__tun,Mohamed Amine Ben Hamida,TUN,DEF,1.045844,1.045844,1.962176,1.458193,1.458193,-0,complete_components,component_weighted_sum,component_base_rebuilt
+franco_mastantuono__arg,Franco Mastantuono,ARG,MID,0.305864,0.305864,2.865204,1.457567,1.457567,0,complete_components,component_weighted_sum,component_base_rebuilt
+keisuke_goto__jpn,Keisuke Goto,JPN,FWD,1.452034,1.452034,1.458678,1.455024,1.455024,0,complete_components,component_weighted_sum,component_base_rebuilt
+ehsan_hajsafi__irn,Ehsan Hajsafi,IRN,DEF,1.676792,1.676792,1.18187,1.454077,1.454077,-0,complete_components,component_weighted_sum,component_base_rebuilt
+lucas_mendes__qat,Lucas Mendes,QAT,DEF,1.038,1.038,1.962176,1.453879,1.453879,-0,complete_components,component_weighted_sum,component_base_rebuilt
+mert_gunok__tur,Mert Günok,TUR,GK,0.917087,0.917087,2.109221,1.453547,1.453547,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ali_jasim__irq,Ali Jasim,IRQ,MID,0.724327,0.724327,2.344116,1.453232,1.453232,-0,complete_components,component_weighted_sum,component_base_rebuilt
+adil_boulbina__alg,Adil Boulbina,ALG,FWD,1.448017,1.448017,1.458678,1.452814,1.452814,-0,complete_components,component_weighted_sum,component_base_rebuilt
+martin_vitik__cze,Martin Vitik,CZE,DEF,1.034068,1.034068,1.962176,1.451717,1.451717,0,complete_components,component_weighted_sum,component_base_rebuilt
+joris_kayembe__cod,Joris Kayembe,COD,DEF,1.032956,1.032956,1.962176,1.451105,1.451105,0,complete_components,component_weighted_sum,component_base_rebuilt
+ivan_toney__eng,Ivan Toney,ENG,FWD,0.107587,0.107587,3.087442,1.448522,1.448522,0,complete_components,component_weighted_sum,component_base_rebuilt
+carl_starfelt__swe,Carl Starfelt,SWE,DEF,1.024278,1.024278,1.962176,1.446332,1.446332,-0,complete_components,component_weighted_sum,component_base_rebuilt
+nihad_mujaki__bih,Nihad Mujakic,BIH,DEF,1.014887,1.014887,1.962176,1.441167,1.441167,-0,complete_components,component_weighted_sum,component_base_rebuilt
+pedro_ro_ro_miguel_correia__qat,Pedro 'Ro-Ro' Miguel Correia,QAT,DEF,1.011519,1.011519,1.962176,1.439315,1.439315,0,complete_components,component_weighted_sum,component_base_rebuilt
+willer_ditta__col,Willer Ditta,COL,DEF,1.007565,1.007565,1.962176,1.43714,1.43714,0,complete_components,component_weighted_sum,component_base_rebuilt
+exequiel_palacios__arg,Exequiel Palacios,ARG,MID,0.266039,0.266039,2.865204,1.435663,1.435663,-0,complete_components,component_weighted_sum,component_base_rebuilt
+victor_munoz__esp,Victor Munoz,ESP,FWD,0.634199,0.634199,2.410878,1.433705,1.433705,0,complete_components,component_weighted_sum,component_base_rebuilt
+daniel_jebbison__can,Daniel Jebbison,CAN,FWD,1.412495,1.412495,1.458678,1.433277,1.433277,-0,complete_components,component_weighted_sum,component_base_rebuilt
+pablo_gavi__esp,Pablo Gavi,ESP,MID,0.079921,0.079921,3.082665,1.431156,1.431156,0,complete_components,component_weighted_sum,component_base_rebuilt
+egil_selvik__nor,Egil Selvik,NOR,GK,0.876085,0.876085,2.109221,1.430996,1.430996,-0,complete_components,component_weighted_sum,component_base_rebuilt
+sarpreet_singh__nzl,Sarpreet Singh,NZL,MID,1.480645,1.480645,1.367591,1.429771,1.429771,0,complete_components,component_weighted_sum,component_base_rebuilt
+carlos_acevedo__mex,Carlos Acevedo,MEX,GK,0.871151,0.871151,2.109221,1.428282,1.428282,-0,complete_components,component_weighted_sum,component_base_rebuilt
+amir_al_ammari__irq,Amir Al Ammari,IRQ,MID,0.673258,0.673258,2.344116,1.425144,1.425144,-0,complete_components,component_weighted_sum,component_base_rebuilt
+tomas_soucek__cze,Tomas Soucek,CZE,MID,0.24243,0.24243,2.865204,1.422678,1.422678,-0,complete_components,component_weighted_sum,component_base_rebuilt
+danial_esmaeilifar__irn,Danial Esmaeilifar,IRN,DEF,0.977235,0.977235,1.962176,1.420458,1.420458,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jason_geria__aus,Jason Geria,AUS,DEF,0.9753,0.9753,1.962176,1.419394,1.419394,-0,complete_components,component_weighted_sum,component_base_rebuilt
+emam_ashour__egy,Emam Ashour,EGY,MID,1.460613,1.460613,1.367591,1.418753,1.418753,-0,complete_components,component_weighted_sum,component_base_rebuilt
+miles_robinson__usa,Miles Robinson,USA,DEF,1.604906,1.604906,1.18187,1.41454,1.41454,0,complete_components,component_weighted_sum,component_base_rebuilt
+aiden_o_neill__aus,Aiden O'Neill,AUS,MID,1.44818,1.44818,1.367591,1.411915,1.411915,0,complete_components,component_weighted_sum,component_base_rebuilt
+fares_cha_bi__alg,Fares Chaibi,ALG,MID,1.447832,1.447832,1.367591,1.411724,1.411723,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+tarek_salman__qat,Tarek Salman,QAT,DEF,0.957272,0.957272,1.962176,1.409479,1.409479,0,complete_components,component_weighted_sum,component_base_rebuilt
+thalente_mbatha__rsa,Thalente Mbatha,RSA,MID,0.64131,0.64131,2.344116,1.407573,1.407573,0,complete_components,component_weighted_sum,component_base_rebuilt
+ko_itakura__jpn,Ko Itakura,JPN,DEF,1.586329,1.586329,1.18187,1.404322,1.404323,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+homam_al_amin__qat,Homam Al-Amin,QAT,DEF,0.943548,0.943548,1.962176,1.401931,1.401931,0,complete_components,component_weighted_sum,component_base_rebuilt
+ayoub_al_oui__qat,Ayoub Al-Oui,QAT,DEF,0.941226,0.941226,1.962176,1.400653,1.400653,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+lucas_herrington__aus,Lucas Herrington,AUS,DEF,1.575451,1.575451,1.18187,1.39834,1.39834,0,complete_components,component_weighted_sum,component_base_rebuilt
+mark_flekken__ned,Mark Flekken,NED,GK,0.50875,0.50875,2.479365,1.395527,1.395527,0,complete_components,component_weighted_sum,component_base_rebuilt
+ousmane_diomande__civ,Ousmane Diomande,CIV,DEF,0.929191,0.929191,1.962176,1.394034,1.394034,-0,complete_components,component_weighted_sum,component_base_rebuilt
+abdallah_nasib__jor,Abdallah Nasib,JOR,DEF,0.924223,0.924223,1.962176,1.391302,1.391302,0,complete_components,component_weighted_sum,component_base_rebuilt
+francis_de_vries__nzl,Francis de Vries,NZL,DEF,0.922338,0.922338,1.962176,1.390265,1.390265,-0,complete_components,component_weighted_sum,component_base_rebuilt
+brice_samba__fra,Brice Samba,FRA,GK,0.289458,0.289458,2.735619,1.39023,1.390231,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+luca_jaquez__sui,Luca Jaquez,SUI,DEF,1.559023,1.559023,1.18187,1.389304,1.389304,-0,complete_components,component_weighted_sum,component_base_rebuilt
+gustavo_vel_squez__par,Gustavo Velazquez,PAR,DEF,0.910913,0.910913,1.962176,1.383981,1.383981,-0,complete_components,component_weighted_sum,component_base_rebuilt
+kaan_ayhan__tur,Kaan Ayhan,TUR,MID,2.08824,2.08824,0.522363,1.383595,1.383595,-0,complete_components,component_weighted_sum,component_base_rebuilt
+sherel_floranus__cuw,Sherel Floranus,CUW,DEF,0.907556,0.907556,1.962176,1.382135,1.382135,0,complete_components,component_weighted_sum,component_base_rebuilt
+james_trafford__eng,James Trafford,ENG,GK,0.483348,0.483348,2.479365,1.381556,1.381556,0,complete_components,component_weighted_sum,component_base_rebuilt
+emmanuel_agbadou__civ,Emmanuel Agbadou,CIV,DEF,0.900805,0.900805,1.962176,1.378422,1.378422,0,complete_components,component_weighted_sum,component_base_rebuilt
+isma_l_gharbi__tun,Ismael Gharbi,TUN,MID,1.386732,1.386732,1.367591,1.378119,1.378118,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+finn_surman__nzl,Finn Surman,NZL,DEF,1.53721,1.53721,1.18187,1.377307,1.377307,0,complete_components,component_weighted_sum,component_base_rebuilt
+johan_manzambi__sui,Johan Manzambi,SUI,MID,0.584139,0.584139,2.344116,1.376129,1.376129,0,complete_components,component_weighted_sum,component_base_rebuilt
+elias_saad__tun,Elias Saad,TUN,MID,1.379342,1.379342,1.367591,1.374054,1.374054,-0,complete_components,component_weighted_sum,component_base_rebuilt
+yvon_mvogo__sui,Yvon Mvogo,SUI,GK,1.188812,1.188812,1.596713,1.372367,1.372367,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jovane_cabral__cpv,Jovane Cabral,CPV,FWD,1.297611,1.297611,1.458678,1.370091,1.370091,-0,complete_components,component_weighted_sum,component_base_rebuilt
+niko_sigur__can,Niko Sigur,CAN,MID,1.371559,1.371559,1.367591,1.369773,1.369773,-0,complete_components,component_weighted_sum,component_base_rebuilt
+juri_n_gaari__cuw,Jurien Gaari,CUW,DEF,0.884315,0.884315,1.962176,1.369352,1.369352,-0,complete_components,component_weighted_sum,component_base_rebuilt
+yu_min_cho__kor,Yu-Min Cho,KOR,DEF,0.883803,0.883803,1.962176,1.369071,1.369071,0,complete_components,component_weighted_sum,component_base_rebuilt
+sofyan_amrabat__mar,Sofyan Amrabat,MAR,MID,1.370203,1.370203,1.367591,1.369028,1.369027,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+carlos_harvey__pan,Carlos Harvey,PAN,MID,1.365255,1.365255,1.367591,1.366306,1.366306,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ime_okon__rsa,Ime Okon,RSA,DEF,1.515356,1.515356,1.18187,1.365287,1.365287,-0,complete_components,component_weighted_sum,component_base_rebuilt
+senne_lammens__bel,Senne Lammens,BEL,GK,0.442546,0.442546,2.479365,1.359115,1.359115,0,complete_components,component_weighted_sum,component_base_rebuilt
+stepan_chaloupek__cze,Stepan Chaloupek,CZE,DEF,1.494838,1.494838,1.18187,1.354002,1.354003,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+farrukh_sayfiev__uzb,Farrukh Sayfiev,UZB,DEF,0.855644,0.855644,1.962176,1.353583,1.353583,-0,complete_components,component_weighted_sum,component_base_rebuilt
+patrick_wimmer__aut,Patrick Wimmer,AUT,MID,0.542816,0.542816,2.344116,1.353401,1.353401,0,complete_components,component_weighted_sum,component_base_rebuilt
+stopira__cpv,Stopira,CPV,DEF,0.852332,0.852332,1.962176,1.351762,1.351762,0,complete_components,component_weighted_sum,component_base_rebuilt
+yazan_al_arab__jor,Yazan Al-Arab,JOR,DEF,0.84626,0.84626,1.962176,1.348422,1.348422,-0,complete_components,component_weighted_sum,component_base_rebuilt
+otabek_shukurov__uzb,Otabek Shukurov,UZB,MID,1.330993,1.330993,1.367591,1.347462,1.347462,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jean_kevin_duverne__hai,Jean-Kevin Duverne,HAI,DEF,0.842683,0.842683,1.962176,1.346455,1.346455,0,complete_components,component_weighted_sum,component_base_rebuilt
+marko_stamenic__nzl,Marko Stamenic,NZL,MID,1.316928,1.316928,1.367591,1.339726,1.339726,-0,complete_components,component_weighted_sum,component_base_rebuilt
+viktor_johansson__swe,Viktor Johansson,SWE,GK,0.70926,0.70926,2.109221,1.339242,1.339242,-0,complete_components,component_weighted_sum,component_base_rebuilt
+luca_zidane__alg,Luca Zidane,ALG,GK,1.128127,1.128127,1.596713,1.338991,1.33899,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+leandro_bacuna__cuw,Leandro Bacuna,CUW,MID,1.302569,1.302569,1.367591,1.331829,1.331829,0,complete_components,component_weighted_sum,component_base_rebuilt
+noah_sadiki__cod,Noah Sadiki,COD,MID,1.2999,1.2999,1.367591,1.330361,1.330361,0,complete_components,component_weighted_sum,component_base_rebuilt
+baris_alper_yilmaz__tur,Baris Alper Yilmaz,TUR,FWD,0.442449,0.442449,2.410878,1.328242,1.328242,-0,complete_components,component_weighted_sum,component_base_rebuilt
+david_cabezas__ecu,David Cabezas,ECU,GK,1.803128,1.803128,0.733041,1.321589,1.321589,0,complete_components,component_weighted_sum,component_base_rebuilt
+cyle_christopher_larin__can,Cyle Christopher Larin,CAN,FWD,0.425116,0.425116,2.410878,1.318709,1.318709,0,complete_components,component_weighted_sum,component_base_rebuilt
+ben_doak__sco,Ben Doak,SCO,MID,0.47953,0.47953,2.344116,1.318594,1.318594,0,complete_components,component_weighted_sum,component_base_rebuilt
+ricardo_ad__hai,Ricardo Ade,HAI,DEF,0.788529,0.788529,1.962176,1.31667,1.31667,-0,complete_components,component_weighted_sum,component_base_rebuilt
+gervane_kastaneer__cuw,Gervane Kastaneer,CUW,FWD,1.199515,1.199515,1.458678,1.316138,1.316138,-0,complete_components,component_weighted_sum,component_base_rebuilt
+alvaro_montero__col,Alvaro Montero,COL,GK,0.362349,0.362349,2.479365,1.315006,1.315006,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ramiz_zerrouki__alg,Ramiz Zerrouki,ALG,MID,1.270162,1.270162,1.367591,1.314005,1.314005,-0,complete_components,component_weighted_sum,component_base_rebuilt
+timothy_weah__usa,Timothy Weah,USA,FWD,0.41197,0.41197,2.410878,1.311479,1.311479,0,complete_components,component_weighted_sum,component_base_rebuilt
+ziyad_al_johani__ksa,Ziyad Al-Johani,KSA,MID,1.261674,1.261674,1.367591,1.309337,1.309337,0,complete_components,component_weighted_sum,component_base_rebuilt
+axel_witsel__bel,Axel Witsel,BEL,MID,0.458841,0.458841,2.344116,1.307215,1.307215,0,complete_components,component_weighted_sum,component_base_rebuilt
+keisuke_sako__jpn,Keisuke Osako,JPN,GK,0.644422,0.644422,2.109221,1.303582,1.303581,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+stjepan_radeljic__bih,Stjepan Radeljic,BIH,DEF,0.755994,0.755994,1.962176,1.298776,1.298776,0,complete_components,component_weighted_sum,component_base_rebuilt
+michel_aebischer__sui,Michel Aebischer,SUI,MID,1.239654,1.239654,1.367591,1.297226,1.297226,0,complete_components,component_weighted_sum,component_base_rebuilt
+merchas_doski__irq,Merchas Doski,IRQ,DEF,0.731715,0.731715,1.962176,1.285422,1.285422,-0,complete_components,component_weighted_sum,component_base_rebuilt
+giovanni_reyna__usa,Giovanni Reyna,USA,MID,0.418742,0.418742,2.344116,1.28516,1.285161,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+justin_bijlow__ned,Justin Bijlow,NED,GK,0.608016,0.608016,2.109221,1.283558,1.283558,-0,complete_components,component_weighted_sum,component_base_rebuilt
+rani_khedira__tun,Rani Khedira,TUN,MID,0.408935,0.408935,2.344116,1.279766,1.279767,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+rayan__bra,Rayan,BRA,FWD,0.351645,0.351645,2.410878,1.2783,1.2783,0,complete_components,component_weighted_sum,component_base_rebuilt
+aymen_dahmen__tun,Aymen Dahmen,TUN,GK,1.017676,1.017676,1.596713,1.278243,1.278242,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+david_jurasek__cze,David Jurasek,CZE,DEF,1.353448,1.353448,1.18187,1.276238,1.276238,0,complete_components,component_weighted_sum,component_base_rebuilt
+mohammad_abualnadi__jor,Mohammad Abualnadi,JOR,DEF,0.713132,0.713132,1.962176,1.275202,1.275202,0,complete_components,component_weighted_sum,component_base_rebuilt
+ermedin_demirovic__bih,Ermedin Demirovic,BIH,FWD,0.344886,0.344886,2.410878,1.274582,1.274583,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+firas_chaouat__tun,Firas Chaouat,TUN,FWD,1.123601,1.123601,1.458678,1.274386,1.274386,0,complete_components,component_weighted_sum,component_base_rebuilt
+djibril_sow__sui,Djibril Sow,SUI,MID,0.396698,0.396698,2.344116,1.273036,1.273036,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jerome_opoku__gha,Jerome Opoku,GHA,DEF,0.707718,0.707718,1.962176,1.272224,1.272224,-0,complete_components,component_weighted_sum,component_base_rebuilt
+fredrik_aursnes__nor,Fredrik Aursnes,NOR,MID,0.390683,0.390683,2.344116,1.269728,1.269728,0,complete_components,component_weighted_sum,component_base_rebuilt
+nidal_celik__bih,Nidal Celik,BIH,DEF,1.33959,1.33959,1.18187,1.268616,1.268616,-0,complete_components,component_weighted_sum,component_base_rebuilt
+c_sar_blackman__pan,Cesar Blackman,PAN,DEF,0.700767,0.700767,1.962176,1.268401,1.268401,-0,complete_components,component_weighted_sum,component_base_rebuilt
+wagner_pina__cpv,Wagner Pina,CPV,DEF,0.694757,0.694757,1.962176,1.265096,1.265096,0,complete_components,component_weighted_sum,component_base_rebuilt
+nicolas_de_la_cruz__uru,Nicolas de la Cruz,URU,MID,0.376223,0.376223,2.344116,1.261775,1.261775,0,complete_components,component_weighted_sum,component_base_rebuilt
+jonathan_osorio__can,Jonathan Osorio,CAN,MID,0.373654,0.373654,2.344116,1.260362,1.260362,0,complete_components,component_weighted_sum,component_base_rebuilt
+leverton_pierre__hai,Leverton Pierre,HAI,MID,1.172465,1.172465,1.367591,1.260272,1.260272,0,complete_components,component_weighted_sum,component_base_rebuilt
+jose_fajardo__pan,Jose Fajardo,PAN,FWD,0.317512,0.317512,2.410878,1.259527,1.259527,0,complete_components,component_weighted_sum,component_base_rebuilt
+tshepang_moremi__rsa,Tshepang Moremi,RSA,FWD,1.093151,1.093151,1.458678,1.257638,1.257638,-0,complete_components,component_weighted_sum,component_base_rebuilt
+luc_de_fougerolles__can,Luc De Fougerolles,CAN,DEF,1.316703,1.316703,1.18187,1.256028,1.256028,-0,complete_components,component_weighted_sum,component_base_rebuilt
+amine_gouiri__alg,Amine Gouiri,ALG,FWD,0.308833,0.308833,2.410878,1.254753,1.254753,-0,complete_components,component_weighted_sum,component_base_rebuilt
+joshua_brenet__cuw,Joshua Brenet,CUW,DEF,0.673213,0.673213,1.962176,1.253246,1.253246,-0,complete_components,component_weighted_sum,component_base_rebuilt
+mohammed_ghorbani__irn,Mohammad Ghorbani,IRN,MID,1.155687,1.155687,1.367591,1.251044,1.251044,0,complete_components,component_weighted_sum,component_base_rebuilt
+pascal_gross__ger,Pascal Gross,GER,MID,0.350767,0.350767,2.344116,1.247774,1.247774,-0,complete_components,component_weighted_sum,component_base_rebuilt
+derrick_kohn__gha,Derrick Köhn,GHA,DEF,1.298742,1.298742,1.18187,1.24615,1.24615,0,complete_components,component_weighted_sum,component_base_rebuilt
+kojo_peprah_oppong__gha,Kojo Peprah Oppong,GHA,DEF,1.298742,1.298742,1.18187,1.24615,1.24615,0,complete_components,component_weighted_sum,component_base_rebuilt
+hannes_delcroix__hai,Hannes Delcroix,HAI,DEF,0.660139,0.660139,1.962176,1.246056,1.246056,0,complete_components,component_weighted_sum,component_base_rebuilt
+mehdi_ghayedi__irn,Mehdi Ghayedi,IRN,MID,0.347489,0.347489,2.344116,1.245971,1.245971,-0,complete_components,component_weighted_sum,component_base_rebuilt
+kamaldeen_sulemana__gha,Kamaldeen Sulemana,GHA,FWD,0.292098,0.292098,2.410878,1.245549,1.245549,0,complete_components,component_weighted_sum,component_base_rebuilt
+jacob_italiano__aus,Jacob Italiano,AUS,DEF,1.296,1.296,1.18187,1.244642,1.244642,0,complete_components,component_weighted_sum,component_base_rebuilt
+mahmoud_trezeguet__egy,Mahmoud Trezeguet,EGY,MID,0.340461,0.340461,2.344116,1.242106,1.242106,0,complete_components,component_weighted_sum,component_base_rebuilt
+erick_sanchez__mex,Erick Sanchez,MEX,MID,0.340406,0.340406,2.344116,1.242076,1.242076,0,complete_components,component_weighted_sum,component_base_rebuilt
+elijah_just__nzl,Elijah Just,NZL,MID,0.340115,0.340115,2.344116,1.241915,1.241916,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+jack_hendry__sco,Jack Hendry,SCO,DEF,1.29084,1.29084,1.18187,1.241804,1.241804,0,complete_components,component_weighted_sum,component_base_rebuilt
+jose_hurtado__ecu,Jose Hurtado,ECU,DEF,0.649477,0.649477,1.962176,1.240192,1.240192,0,complete_components,component_weighted_sum,component_base_rebuilt
+german_berterame__mex,German Berterame,MEX,FWD,0.281879,0.281879,2.410878,1.239929,1.239929,0,complete_components,component_weighted_sum,component_base_rebuilt
+orlando_gill__par,Orlando Gill,PAR,GK,0.947053,0.947053,1.596713,1.2394,1.2394,0,complete_components,component_weighted_sum,component_base_rebuilt
+ivan_ba_i__bih,Ivan Basic,BIH,MID,1.134275,1.134275,1.367591,1.239267,1.239267,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ngal_ayel_mukau__cod,Ngal'ayel Mukau,COD,MID,1.130275,1.130275,1.367591,1.237067,1.237067,-0,complete_components,component_weighted_sum,component_base_rebuilt
+roshon_van_eijma__cuw,Roshon van Eijma,CUW,DEF,0.630482,0.630482,1.962176,1.229744,1.229744,-0,complete_components,component_weighted_sum,component_base_rebuilt
+marwan_ateya__egy,Marwan Ateya,EGY,MID,0.31602,0.31602,2.344116,1.228663,1.228663,-0,complete_components,component_weighted_sum,component_base_rebuilt
+wilson_isidor__hai,Wilson Isidor,HAI,FWD,0.256387,0.256387,2.410878,1.225908,1.225908,0,complete_components,component_weighted_sum,component_base_rebuilt
+zizo__egy,Ahmed Zizo,EGY,MID,0.307722,0.307722,2.344116,1.224099,1.2241,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+salem_al_dawsari__ksa,Salem Al-Dawsari,KSA,MID,0.306831,0.306831,2.344116,1.223609,1.223609,-0,complete_components,component_weighted_sum,component_base_rebuilt
+thapelo_morena__rsa,Thapelo Morena,RSA,FWD,0.25033,0.25033,2.410878,1.222577,1.222577,0,complete_components,component_weighted_sum,component_base_rebuilt
+jamie_leweling__ger,Jamie Leweling,GER,MID,0.302382,0.302382,2.344116,1.221162,1.221163,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+ricardo_velho__por,Ricardo Velho,POR,GK,0.190856,0.190856,2.479365,1.220685,1.220685,-0,complete_components,component_weighted_sum,component_base_rebuilt
+kristoffer_nordfeldt__swe,Kristoffer Nordfeldt,SWE,GK,0.19008,0.19008,2.479365,1.220258,1.220258,-0,complete_components,component_weighted_sum,component_base_rebuilt
+nkosinathi_sibisi__rsa,Nkosinathi Sibisi,RSA,DEF,0.608176,0.608176,1.962176,1.217476,1.217476,0,complete_components,component_weighted_sum,component_base_rebuilt
+isma_l_bennacer__alg,Ismael Bennacer,ALG,MID,1.094034,1.094034,1.367591,1.217135,1.217135,0,complete_components,component_weighted_sum,component_base_rebuilt
+weverton__bra,Weverton,BRA,GK,0.181679,0.181679,2.479365,1.215638,1.215638,0,complete_components,component_weighted_sum,component_base_rebuilt
+edmilson_junior__qat,Edmilson Junior,QAT,FWD,1.013295,1.013295,1.458678,1.213717,1.213717,-0,complete_components,component_weighted_sum,component_base_rebuilt
+andr_s_cubas__par,Andres Cubas,PAR,MID,1.087014,1.087014,1.367591,1.213274,1.213274,0,complete_components,component_weighted_sum,component_base_rebuilt
+matthieu_epolo__cod,Matthieu Epolo,COD,GK,0.89787,0.89787,1.596713,1.212349,1.212349,-0,complete_components,component_weighted_sum,component_base_rebuilt
+almoez_ali__qat,Almoez Ali,QAT,FWD,0.23086,0.23086,2.410878,1.211868,1.211868,-0,complete_components,component_weighted_sum,component_base_rebuilt
+marco_friedl__aut,Marco Friedl,AUT,DEF,1.232768,1.232768,1.18187,1.209864,1.209864,0,complete_components,component_weighted_sum,component_base_rebuilt
+mark_mckenzie__usa,Mark McKenzie,USA,DEF,1.230084,1.230084,1.18187,1.208388,1.208388,0,complete_components,component_weighted_sum,component_base_rebuilt
+eray_c_mert__sui,Eray Cömert,SUI,DEF,1.230003,1.230003,1.18187,1.208343,1.208343,-0,complete_components,component_weighted_sum,component_base_rebuilt
+dylan_batubinsika__cod,Dylan Batubinsika,COD,DEF,0.591204,0.591204,1.962176,1.208141,1.208141,-0,complete_components,component_weighted_sum,component_base_rebuilt
+mohamed_toure__aus,Mohamed Toure,AUS,FWD,0.223711,0.223711,2.410878,1.207936,1.207936,-0,complete_components,component_weighted_sum,component_base_rebuilt
+zaid_tahseen__irq,Zaid Tahseen,IRQ,DEF,0.589959,0.589959,1.962176,1.207457,1.207457,0,complete_components,component_weighted_sum,component_base_rebuilt
+sphephelo_yaya_sithole__rsa,Sphephelo Yaya Sithole,RSA,MID,0.276797,0.276797,2.344116,1.207091,1.207091,0,complete_components,component_weighted_sum,component_base_rebuilt
+ryan_mendes_da_graca__cpv,Ryan Mendes Da Graça,CPV,FWD,0.221749,0.221749,2.410878,1.206857,1.206857,-0,complete_components,component_weighted_sum,component_base_rebuilt
+mohamed_kanno__ksa,Mohamed Kanno,KSA,MID,0.275279,0.275279,2.344116,1.206256,1.206256,0,complete_components,component_weighted_sum,component_base_rebuilt
+jean_ricner_bellegarde__hai,Jean-Ricner Bellegarde,HAI,MID,0.273255,0.273255,2.344116,1.205142,1.205143,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+mohanad_ali__irq,Mohanad Ali,IRQ,FWD,0.218167,0.218167,2.410878,1.204887,1.204887,0,complete_components,component_weighted_sum,component_base_rebuilt
+mousa_tamari__jor,Mousa Tamari,JOR,MID,0.268333,0.268333,2.344116,1.202435,1.202436,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+jakhongir_urozov__uzb,Jakhongir Urozov,UZB,DEF,0.580135,0.580135,1.962176,1.202053,1.202053,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ahmad_assaf__jor,Ahmad Assaf,JOR,DEF,0.574243,0.574243,1.962176,1.198813,1.198813,0,complete_components,component_weighted_sum,component_base_rebuilt
+blas_riveros__par,Blas Riveros,PAR,DEF,1.210992,1.210992,1.18187,1.197887,1.197887,-0,complete_components,component_weighted_sum,component_base_rebuilt
+yan_diomande__civ,Yan Diomande,CIV,FWD,0.205322,0.205322,2.410878,1.197822,1.197822,-0,complete_components,component_weighted_sum,component_base_rebuilt
+pape_alassane_gueye__sen,Pape Alassane Gueye,SEN,MID,0.259685,0.259685,2.344116,1.197679,1.197679,0,complete_components,component_weighted_sum,component_base_rebuilt
+robin_risser__fra,Robin Risser,FRA,GK,0.147939,0.147939,2.479365,1.197081,1.197081,0,complete_components,component_weighted_sum,component_base_rebuilt
+morten_thorsby__nor,Morten Thorsby,NOR,MID,1.051121,1.051121,1.367591,1.193533,1.193532,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+lukas_provod__cze,Lukas Provod,CZE,MID,0.251616,0.251616,2.344116,1.193241,1.193241,0,complete_components,component_weighted_sum,component_base_rebuilt
+anthony_mandrea__alg,Anthony Mandrea,ALG,GK,0.861824,0.861824,1.596713,1.192524,1.192524,-0,complete_components,component_weighted_sum,component_base_rebuilt
+santiago_mele__uru,Santiago Mele,URU,GK,0.439919,0.439919,2.109221,1.191105,1.191105,0,complete_components,component_weighted_sum,component_base_rebuilt
+ruben_providence__hai,Ruben Providence,HAI,FWD,0.9705,0.9705,1.458678,1.19018,1.19018,-0,complete_components,component_weighted_sum,component_base_rebuilt
+relebohile_mofokeng__rsa,Relebohile Mofokeng,RSA,FWD,0.969787,0.969787,1.458678,1.189788,1.189788,0,complete_components,component_weighted_sum,component_base_rebuilt
+tomas_chory__cze,Tomas Chory,CZE,FWD,0.18936,0.18936,2.410878,1.189043,1.189043,-0,complete_components,component_weighted_sum,component_base_rebuilt
+hicham_boudaoui__alg,Hicham Boudaoui,ALG,MID,1.037974,1.037974,1.367591,1.186302,1.186302,0,complete_components,component_weighted_sum,component_base_rebuilt
+karim_boudiaf__qat,Karim Boudiaf,QAT,MID,1.035723,1.035723,1.367591,1.185064,1.185063,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+jaminton_campaz__col,Jaminton Campaz,COL,MID,1.031038,1.031038,1.367591,1.182487,1.182487,0,complete_components,component_weighted_sum,component_base_rebuilt
+ji_sung_eom__kor,Ji-sung Eom,KOR,MID,1.716625,1.716625,0.522363,1.179207,1.179207,-0,complete_components,component_weighted_sum,component_base_rebuilt
+evann_guessand__civ,Evann Guessand,CIV,FWD,0.17099,0.17099,2.410878,1.17894,1.17894,0,complete_components,component_weighted_sum,component_base_rebuilt
+gustaf_nilsson__swe,Gustaf Nilsson,SWE,FWD,1.674004,1.674004,0.573299,1.178687,1.178687,0,complete_components,component_weighted_sum,component_base_rebuilt
+danilo_dos_santos__bra,Danilo dos Santos,BRA,MID,0.224563,0.224563,2.344116,1.178362,1.178362,0,complete_components,component_weighted_sum,component_base_rebuilt
+ken_sema__swe,Ken Sema,SWE,MID,1.022756,1.022756,1.367591,1.177932,1.177932,0,complete_components,component_weighted_sum,component_base_rebuilt
+walter_benitez__arg,Walter Benitez,ARG,GK,0.112132,0.112132,2.479365,1.177387,1.177387,0,complete_components,component_weighted_sum,component_base_rebuilt
+charles_pickel__cod,Charles Pickel,COD,MID,1.021211,1.021211,1.367591,1.177082,1.177082,-0,complete_components,component_weighted_sum,component_base_rebuilt
+eberechi_eze__eng,Eberechi Eze,ENG,MID,0.221506,0.221506,2.344116,1.176681,1.176681,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+alexis_guendouz__alg,Alexis Guendouz,ALG,GK,0.827128,0.827128,1.596713,1.173441,1.173441,-0,complete_components,component_weighted_sum,component_base_rebuilt
+christian_fassnacht__sui,Christian Fassnacht,SUI,FWD,0.157645,0.157645,2.410878,1.1716,1.1716,0,complete_components,component_weighted_sum,component_base_rebuilt
+tomoki_hayakawa__jpn,Tomoki Hayakawa,JPN,GK,0.401356,0.401356,2.109221,1.169895,1.169895,-0,complete_components,component_weighted_sum,component_base_rebuilt
+hjalmar_ekdal__swe,Hjalmar Ekdal,SWE,DEF,1.157173,1.157173,1.18187,1.168287,1.168287,0,complete_components,component_weighted_sum,component_base_rebuilt
+don_deedson_louicius__hai,Don Deedson Louicius,HAI,FWD,0.150478,0.150478,2.410878,1.167658,1.167658,0,complete_components,component_weighted_sum,component_base_rebuilt
+kaishu_sano__jpn,Kaishu Sano,JPN,MID,1.003465,1.003465,1.367591,1.167322,1.167322,0,complete_components,component_weighted_sum,component_base_rebuilt
+lukas_cerv__cze,Lukas Cerv,CZE,MID,0.20339,0.20339,2.344116,1.166717,1.166717,0,complete_components,component_weighted_sum,component_base_rebuilt
+antoine_mendy__sen,Antoine Mendy,SEN,DEF,0.515743,0.515743,1.962176,1.166638,1.166638,0,complete_components,component_weighted_sum,component_base_rebuilt
+saleem_obaid__jor,Saleem Obaid,JOR,DEF,0.512378,0.512378,1.962176,1.164787,1.164787,-0,complete_components,component_weighted_sum,component_base_rebuilt
+liam_millar__can,Liam Millar,CAN,MID,0.193273,0.193273,2.344116,1.161152,1.161153,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+franck_kessie__civ,Franck Kessie,CIV,MID,0.192102,0.192102,2.344116,1.160508,1.160509,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+brandon_mechele__bel,Brandon Mechele,BEL,DEF,0.504364,0.504364,1.962176,1.160379,1.160379,-0,complete_components,component_weighted_sum,component_base_rebuilt
+steven_moreira__cpv,Steven Moreira,CPV,DEF,1.132102,1.132102,1.18187,1.154498,1.154498,0,complete_components,component_weighted_sum,component_base_rebuilt
+ryan_thomas__nzl,Ryan Thomas,NZL,MID,0.979327,0.979327,1.367591,1.154046,1.154046,0,complete_components,component_weighted_sum,component_base_rebuilt
+rui_silva__por,Rui Silva,POR,GK,0.064443,0.064443,2.479365,1.151158,1.151158,0,complete_components,component_weighted_sum,component_base_rebuilt
+han_beom_lee__kor,Han-beom Lee,KOR,DEF,1.11963,1.11963,1.18187,1.147638,1.147638,0,complete_components,component_weighted_sum,component_base_rebuilt
+mohammed_muntari__qat,Mohammed Muntari,QAT,FWD,1.606929,1.606929,0.573299,1.141796,1.141795,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+roberto_lopes__cpv,Roberto Lopes,CPV,DEF,1.103931,1.103931,1.18187,1.139004,1.139004,0,complete_components,component_weighted_sum,component_base_rebuilt
+pape_cherif_ndiaye__sen,Pape Cherif Ndiaye,SEN,FWD,0.094218,0.094218,2.410878,1.136715,1.136715,0,complete_components,component_weighted_sum,component_base_rebuilt
+gaston_olveira__par,Gaston Olveira,PAR,GK,0.759645,0.759645,1.596713,1.136326,1.136325,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+edo_kayembe__cod,Edo Kayembe,COD,MID,0.934164,0.934164,1.367591,1.129206,1.129206,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ibrahim_sangare__civ,Ibrahim Sangare,CIV,MID,0.135157,0.135157,2.344116,1.129189,1.129189,0,complete_components,component_weighted_sum,component_base_rebuilt
+toni_fruk__cro,Toni Fruk,CRO,MID,0.12914,0.12914,2.344116,1.125879,1.125879,-0,complete_components,component_weighted_sum,component_base_rebuilt
+duke_lacroix__hai,Duke Lacroix,HAI,DEF,0.43895,0.43895,1.962176,1.124402,1.124402,0,complete_components,component_weighted_sum,component_base_rebuilt
+liam_kelly__sco,Liam Kelly,SCO,GK,0.732315,0.732315,1.596713,1.121294,1.121294,-0,complete_components,component_weighted_sum,component_base_rebuilt
+patrick_pentz__aut,Patrick Pentz,AUT,GK,0.731649,0.731649,1.596713,1.120928,1.120928,0,complete_components,component_weighted_sum,component_base_rebuilt
+youssef_amyn__irq,Youssef Amyn,IRQ,MID,0.918001,0.918001,1.367591,1.120316,1.120316,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ao_tanaka__jpn,Ao Tanaka,JPN,MID,0.916843,0.916843,1.367591,1.11968,1.119679,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+michael_boxall__nzl,Michael Boxall,NZL,DEF,1.059357,1.059357,1.18187,1.114488,1.114488,0,complete_components,component_weighted_sum,component_base_rebuilt
+joe_bell__nzl,Joe Bell,NZL,MID,0.905585,0.905585,1.367591,1.113488,1.113488,0,complete_components,component_weighted_sum,component_base_rebuilt
+kenji_gorr__cuw,Kenji Gorre,CUW,FWD,0.829542,0.829542,1.458678,1.112653,1.112653,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ahmed_alaaeldin_abdelmotaal__qat,Ahmed Alaaeldin Abdelmotaal,QAT,FWD,0.050003,0.050003,2.410878,1.112397,1.112397,0,complete_components,component_weighted_sum,component_base_rebuilt
+munir_el_kajoui__mar,Munir El Kajoui,MAR,GK,0.714218,0.714218,1.596713,1.111341,1.111341,0,complete_components,component_weighted_sum,component_base_rebuilt
+gustavo_puerta__col,Gustavo Puerta,COL,MID,0.886897,0.886897,1.367591,1.103209,1.103209,-0,complete_components,component_weighted_sum,component_base_rebuilt
+himad_abdelli__alg,Himad Abdelli,ALG,MID,0.886025,0.886025,1.367591,1.10273,1.10273,0,complete_components,component_weighted_sum,component_base_rebuilt
+ibrahim_sulemana__gha,Ibrahim Sulemana,GHA,MID,0.88438,0.88438,1.367591,1.101825,1.101825,0,complete_components,component_weighted_sum,component_base_rebuilt
+ngel_romero__par,Angel Romero,PAR,FWD,1.529105,1.529105,0.573299,1.098992,1.098992,-0,complete_components,component_weighted_sum,component_base_rebuilt
+martin_boyle__aus,Martin Boyle,AUS,FWD,0.804359,0.804359,1.458678,1.098803,1.098803,0,complete_components,component_weighted_sum,component_base_rebuilt
+wataru_endo__jpn,Wataru Endo,JPN,MID,0.872647,0.872647,1.367591,1.095372,1.095372,0,complete_components,component_weighted_sum,component_base_rebuilt
+vozinha__cpv,Vozinha,CPV,GK,1.388689,1.388689,0.733041,1.093647,1.093648,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+marvin_keller__sui,Marvin Keller,SUI,GK,0.679214,0.679214,1.596713,1.092089,1.092088,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+ahmed_fathi__qat,Ahmed Fathi,QAT,MID,0.865806,0.865806,1.367591,1.091609,1.091609,-0,complete_components,component_weighted_sum,component_base_rebuilt
+mukhammadkodir_khamraliev__uzb,Mukhammadkodir Khamraliev,UZB,DEF,0.36336,0.36336,1.962176,1.082827,1.082827,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jeremy_antonisse__cuw,Jeremy Antonisse,CUW,FWD,1.486251,1.486251,0.573299,1.075423,1.075423,0,complete_components,component_weighted_sum,component_base_rebuilt
+callum_mccowatt__nzl,Callum McCowatt,NZL,MID,0.829583,0.829583,1.367591,1.071687,1.071686,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+oston_urunov__uzb,Oston Urunov,UZB,MID,0.81014,0.81014,1.367591,1.060993,1.060993,0,complete_components,component_weighted_sum,component_base_rebuilt
+elisha_owusu__gha,Elisha Owusu,GHA,MID,0.799607,0.799607,1.367591,1.0552,1.0552,0,complete_components,component_weighted_sum,component_base_rebuilt
+nando_pijnaker__nzl,Nando Pijnaker,NZL,DEF,0.945908,0.945908,1.18187,1.052091,1.052091,0,complete_components,component_weighted_sum,component_base_rebuilt
+callan_elliot__nzl,Callan Elliot,NZL,DEF,0.9445,0.9445,1.18187,1.051316,1.051317,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+jamiro_monteiro__cpv,Jamiro Monteiro,CPV,MID,0.787535,0.787535,1.367591,1.04856,1.04856,-0,complete_components,component_weighted_sum,component_base_rebuilt
+lawrence_ati_zigi__gha,Lawrence Ati Zigi,GHA,GK,0.59629,0.59629,1.596713,1.04648,1.04648,-0,complete_components,component_weighted_sum,component_base_rebuilt
+pape_matar_sarr__sen,Pape Matar Sarr,SEN,MID,0.782886,0.782886,1.367591,1.046003,1.046003,-0,complete_components,component_weighted_sum,component_base_rebuilt
+leopold_querfeld__aut,Leopold Querfeld,AUT,DEF,0.934822,0.934822,1.18187,1.045994,1.045994,0,complete_components,component_weighted_sum,component_base_rebuilt
+achref_abada__alg,Achref Abada,ALG,DEF,0.932045,0.932045,1.18187,1.044466,1.044466,-0,complete_components,component_weighted_sum,component_base_rebuilt
+brandley_kuwas__cuw,Brandley Kuwas,CUW,FWD,1.424045,1.424045,0.573299,1.041209,1.041209,-0,complete_components,component_weighted_sum,component_base_rebuilt
+mahmoud_saber__egy,Mahmoud Saber,EGY,MID,0.77319,0.77319,1.367591,1.04067,1.04067,-0,complete_components,component_weighted_sum,component_base_rebuilt
+akmal_mozgovoy__uzb,Akmal Mozgovoy,UZB,MID,0.77259,0.77259,1.367591,1.04034,1.04034,-0,complete_components,component_weighted_sum,component_base_rebuilt
+daizen_maeda__jpn,Daizen Maeda,JPN,FWD,0.696053,0.696053,1.458678,1.039234,1.039234,-0,complete_components,component_weighted_sum,component_base_rebuilt
+sultan_al_brake__qat,Sultan Al-Brake,QAT,DEF,0.275914,0.275914,1.962176,1.034732,1.034732,0,complete_components,component_weighted_sum,component_base_rebuilt
+brandon_thomas_asante__gha,Brandon Thomas-Asante,GHA,FWD,0.687599,0.687599,1.458678,1.034585,1.034585,0,complete_components,component_weighted_sum,component_base_rebuilt
+mohanad_lasheen__egy,Mohanad Lasheen,EGY,MID,0.759486,0.759486,1.367591,1.033133,1.033133,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jacob_widell_zetterstrom__swe,Jacob Widell Zetterström,SWE,GK,0.151868,0.151868,2.109221,1.032677,1.032677,0,complete_components,component_weighted_sum,component_base_rebuilt
+nicolas_fonseca__uru,Nicolas Fonseca,URU,MID,0.75786,0.75786,1.367591,1.032239,1.032239,0,complete_components,component_weighted_sum,component_base_rebuilt
+riley_mcgree__aus,Riley McGree,AUS,MID,0.75078,0.75078,1.367591,1.028345,1.028345,0,complete_components,component_weighted_sum,component_base_rebuilt
+ibrahim_sa_deh__jor,Ibrahim Saadeh,JOR,MID,0.738324,0.738324,1.367591,1.021494,1.021494,-0,complete_components,component_weighted_sum,component_base_rebuilt
+mohau_nkota__rsa,Mohau Nkota,RSA,FWD,0.659896,0.659896,1.458678,1.019348,1.019348,0,complete_components,component_weighted_sum,component_base_rebuilt
+igor_sergeev__uzb,Igor Sergeev,UZB,FWD,1.378121,1.378121,0.573299,1.015951,1.015951,-0,complete_components,component_weighted_sum,component_base_rebuilt
+anis_hadj_moussa__alg,Anis Hadj Moussa,ALG,FWD,0.653469,0.653469,1.458678,1.015813,1.015813,-0,complete_components,component_weighted_sum,component_base_rebuilt
+abdul_fatawu_issahaku__gha,Issahaku Abdul Fatawu,GHA,FWD,0.652971,0.652971,1.458678,1.015539,1.015539,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jackson_porozo__ecu,Jackson Porozo,ECU,DEF,0.879152,0.879152,1.18187,1.015375,1.015375,-0,complete_components,component_weighted_sum,component_base_rebuilt
+samukele_kabini__rsa,Samukele Kabini,RSA,DEF,0.877885,0.877885,1.18187,1.014678,1.014678,-0,complete_components,component_weighted_sum,component_base_rebuilt
+joao_paulo__cpv,Joao Paulo,CPV,DEF,0.237788,0.237788,1.962176,1.013763,1.013763,0,complete_components,component_weighted_sum,component_base_rebuilt
+noor_al_rawabdeh__jor,Noor Al-Rawabdeh,JOR,MID,0.694878,0.694878,1.367591,0.997599,0.997599,0,complete_components,component_weighted_sum,component_base_rebuilt
+karim_hafez__egy,Karim Hafez,EGY,DEF,0.846141,0.846141,1.18187,0.997219,0.997219,-0,complete_components,component_weighted_sum,component_base_rebuilt
+path_ciss__sen,Pathe Ciss,SEN,MID,0.688066,0.688066,1.367591,0.993852,0.993852,-0,complete_components,component_weighted_sum,component_base_rebuilt
+deroy_duarte__cpv,Deroy Duarte,CPV,MID,0.682859,0.682859,1.367591,0.990988,0.990988,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ronaldo_mart_nez__par,Ronaldo Martinez,PAR,FWD,1.329653,1.329653,0.573299,0.989294,0.989294,0,complete_components,component_weighted_sum,component_base_rebuilt
+carlens_arcus__hai,Carlens Arcus,HAI,DEF,0.825524,0.825524,1.18187,0.98588,0.98588,0,complete_components,component_weighted_sum,component_base_rebuilt
+ben_old__nzl,Ben Old,NZL,MID,1.364591,1.364591,0.522363,0.985588,0.985588,-0,complete_components,component_weighted_sum,component_base_rebuilt
+muhammed_sengezer__tur,Muhammed Sengezer,TUR,GK,0.483114,0.483114,1.596713,0.984234,0.984233,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+amer_jamous__jor,Amer Jamous,JOR,MID,0.665926,0.665926,1.367591,0.981675,0.981675,-0,complete_components,component_weighted_sum,component_base_rebuilt
+kr_pin_diatta__sen,Krepin Diatta,SEN,FWD,0.589695,0.589695,1.458678,0.980737,0.980737,-0,complete_components,component_weighted_sum,component_base_rebuilt
+orlando_mosquera__pan,Orlando Mosquera,PAN,GK,1.178283,1.178283,0.733041,0.977924,0.977924,-0,complete_components,component_weighted_sum,component_base_rebuilt
+derrick_luckassen__gha,Derrick Luckassen,GHA,DEF,0.803688,0.803688,1.18187,0.97387,0.97387,0,complete_components,component_weighted_sum,component_base_rebuilt
+kai_trewin__aus,Kai Trewin,AUS,DEF,0.802626,0.802626,1.18187,0.973286,0.973286,0,complete_components,component_weighted_sum,component_base_rebuilt
+nawaf_al_aqidi__ksa,Nawaf Al-Aqidi,KSA,GK,1.163571,1.163571,0.733041,0.969833,0.969833,0,complete_components,component_weighted_sum,component_base_rebuilt
+ibrahim_sabra__jor,Ibrahim Sabra,JOR,FWD,0.561343,0.561343,1.458678,0.965144,0.965144,0,complete_components,component_weighted_sum,component_base_rebuilt
+telmo_arcanjo__cpv,Telmo Arcanjo,CPV,MID,0.632854,0.632854,1.367591,0.963486,0.963486,0,complete_components,component_weighted_sum,component_base_rebuilt
+assim_madibo__qat,Assim Madibo,QAT,MID,0.628239,0.628239,1.367591,0.960947,0.960947,-0,complete_components,component_weighted_sum,component_base_rebuilt
+laros_duarte__cpv,Laros Duarte,CPV,MID,0.626102,0.626102,1.367591,0.959772,0.959772,-0,complete_components,component_weighted_sum,component_base_rebuilt
+abolfazl_jalali__irn,Abolfazl Jalali,IRN,DEF,0.773843,0.773843,1.18187,0.957455,0.957455,-0,complete_components,component_weighted_sum,component_base_rebuilt
+altay_bayindir__tur,Altay Bayindir,TUR,GK,0.430255,0.430255,1.596713,0.955161,0.955161,-0,complete_components,component_weighted_sum,component_base_rebuilt
+souffian_el_karouani__mar,Souffian El Karouani,MAR,DEF,0.76738,0.76738,1.18187,0.953901,0.953901,0,complete_components,component_weighted_sum,component_base_rebuilt
+mahmoud_al_mardi__jor,Mahmoud Al-Mardi,JOR,MID,1.306157,1.306157,0.522363,0.95345,0.953449,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+ibrahim_bayesh__irq,Ibrahim Bayesh,IRQ,MID,0.601828,0.601828,1.367591,0.946421,0.946421,-0,complete_components,component_weighted_sum,component_base_rebuilt
+roberto_gatito_fernandez__par,Roberto 'Gatito' Fernandez,PAR,GK,0.408961,0.408961,1.596713,0.943449,0.943449,-0,complete_components,component_weighted_sum,component_base_rebuilt
+dominik_kotarski__cro,Dominik Kotarski,CRO,GK,0.40026,0.40026,1.596713,0.938664,0.938664,0,complete_components,component_weighted_sum,component_base_rebuilt
+hamdy_fathy__egy,Hamdy Fathy,EGY,MID,0.58734,0.58734,1.367591,0.938453,0.938453,0,complete_components,component_weighted_sum,component_base_rebuilt
+roderick_miller__pan,Roderick Miller,PAN,DEF,0.73877,0.73877,1.18187,0.938165,0.938165,0,complete_components,component_weighted_sum,component_base_rebuilt
+armando_obispo__cuw,Armando Obispo,CUW,DEF,0.736294,0.736294,1.18187,0.936803,0.936803,-0,complete_components,component_weighted_sum,component_base_rebuilt
+martin_krug__pan,Martin Krug,PAN,DEF,0.728366,0.728366,1.18187,0.932443,0.932443,0,complete_components,component_weighted_sum,component_base_rebuilt
+ali_al_hamadi__irq,Ali Al-Hamadi,IRQ,FWD,0.500164,0.500164,1.458678,0.931495,0.931495,-0,complete_components,component_weighted_sum,component_base_rebuilt
+gonzalo_agustin_sandez__par,Gonzalo Agustin Sandez,PAR,DEF,0.725173,0.725173,1.18187,0.930687,0.930687,0,complete_components,component_weighted_sum,component_base_rebuilt
+joaqu_n_piquerez__uru,Joaquin Piquerez,URU,MID,0.556582,0.556582,1.367591,0.921536,0.921536,-0,complete_components,component_weighted_sum,component_base_rebuilt
+utkir_yusupov__uzb,Utkir Yusupov,UZB,GK,1.067594,1.067594,0.733041,0.917045,0.917045,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jahkeele_rutty__can,Jahkeele Rutty,CAN,DEF,0.694318,0.694318,1.18187,0.913716,0.913717,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+el_mehdi_benabid__mar,El Mehdi Benabid,MAR,GK,0.343022,0.343022,1.596713,0.907183,0.907183,0,complete_components,component_weighted_sum,component_base_rebuilt
+craig_gordon__sco,Craig Gordon,SCO,GK,1.043034,1.043034,0.733041,0.903537,0.903537,-0,complete_components,component_weighted_sum,component_base_rebuilt
+alex_rufer__nzl,Alex Rufer,NZL,MID,0.519891,0.519891,1.367591,0.901356,0.901356,0,complete_components,component_weighted_sum,component_base_rebuilt
+d_enis_burni__bih,Dzenis Burnic,BIH,MID,0.517021,0.517021,1.367591,0.899778,0.899777,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+luka_su_i__cro,Luka Sucic,CRO,MID,1.207483,1.207483,0.522363,0.899179,0.899179,-0,complete_components,component_weighted_sum,component_base_rebuilt
+omar_rekik__tun,Omar Rekik,TUN,DEF,0.664135,0.664135,1.18187,0.897116,0.897116,0,complete_components,component_weighted_sum,component_base_rebuilt
+meshaal_barsham__qat,Meshaal Barsham,QAT,GK,1.022939,1.022939,0.733041,0.892485,0.892485,0,complete_components,component_weighted_sum,component_base_rebuilt
+alvaro_fidalgo__mex,Alvaro Fidalgo,MEX,MID,0.491904,0.491904,1.367591,0.885963,0.885963,-0,complete_components,component_weighted_sum,component_base_rebuilt
+clement_akpa__civ,Clement Akpa,CIV,DEF,0.637552,0.637552,1.18187,0.882495,0.882495,-0,complete_components,component_weighted_sum,component_base_rebuilt
+nicolas_raskin__bel,Nicolas Raskin,BEL,MID,0.478853,0.478853,1.367591,0.878785,0.878785,-0,complete_components,component_weighted_sum,component_base_rebuilt
+xaver_schlager__aut,Xaver Schlager,AUT,MID,0.471818,0.471818,1.367591,0.874916,0.874916,0,complete_components,component_weighted_sum,component_base_rebuilt
+alan_franco__ecu,Alan Franco,ECU,MID,0.465003,0.465003,1.367591,0.871168,0.871167,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+goncalo_guedes__por,Goncalo Guedes,POR,FWD,0.389561,0.389561,1.458678,0.870664,0.870664,0,complete_components,component_weighted_sum,component_base_rebuilt
+shurandy_sambo__cuw,Shurandy Sambo,CUW,DEF,0.596858,0.596858,1.18187,0.860113,0.860114,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+ilay_camara__sen,Ilay Camara,SEN,DEF,0.595612,0.595612,1.18187,0.859428,0.859428,-0,complete_components,component_weighted_sum,component_base_rebuilt
+endrick__bra,Endrick,BRA,FWD,0.361908,0.361908,1.458678,0.855455,0.855455,0,complete_components,component_weighted_sum,component_base_rebuilt
+alexander_bernhardsson__swe,Alexander Bernhardsson,SWE,MID,1.123462,1.123462,0.522363,0.852967,0.852967,-0,complete_components,component_weighted_sum,component_base_rebuilt
+o_uz_ayd_n__tur,Oguz Aydin,TUR,MID,1.121007,1.121007,0.522363,0.851617,0.851617,-0,complete_components,component_weighted_sum,component_base_rebuilt
+tanner_tessmann__usa,Tanner Tessmann,USA,MID,0.426362,0.426362,1.367591,0.849915,0.849915,-0,complete_components,component_weighted_sum,component_base_rebuilt
+martin_exp_rience__hai,Martin Experience,HAI,DEF,0.576657,0.576657,1.18187,0.849003,0.849003,0,complete_components,component_weighted_sum,component_base_rebuilt
+kwasi_sibo__gha,Kwasi Sibo,GHA,MID,0.422517,0.422517,1.367591,0.8478,0.8478,-0,complete_components,component_weighted_sum,component_base_rebuilt
+brian_gutierrez__mex,Brian Gutierrez,MEX,MID,0.421845,0.421845,1.367591,0.847431,0.847431,0,complete_components,component_weighted_sum,component_base_rebuilt
+rebin_sulaka__irq,Rebin Sulaka,IRQ,DEF,0.57235,0.57235,1.18187,0.846634,0.846634,0,complete_components,component_weighted_sum,component_base_rebuilt
+gonzalo_valle__ecu,Gonzalo Valle,ECU,GK,0.226531,0.226531,1.596713,0.843113,0.843113,0,complete_components,component_weighted_sum,component_base_rebuilt
+tae_hyeon_kim__kor,Tae-Hyeon Kim,KOR,DEF,0.547016,0.547016,1.18187,0.8327,0.8327,-0,complete_components,component_weighted_sum,component_base_rebuilt
+adalberto_carrasquilla__pan,Adalberto Carrasquilla,PAN,MID,0.394952,0.394952,1.367591,0.83264,0.832639,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+kobbie_mainoo__eng,Kobbie Mainoo,ENG,MID,0.393368,0.393368,1.367591,0.831768,0.831768,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jiovany_ramos__pan,Jiovany Ramos,PAN,DEF,0.542482,0.542482,1.18187,0.830207,0.830207,0,complete_components,component_weighted_sum,component_base_rebuilt
+jesse_randall__nzl,Jesse Randall,NZL,FWD,1.040245,1.040245,0.573299,0.830119,0.830119,-0,complete_components,component_weighted_sum,component_base_rebuilt
+paul_okon_engstler__aus,Paul Okon-Engstler,AUS,MID,1.081249,1.081249,0.522363,0.82975,0.82975,-0,complete_components,component_weighted_sum,component_base_rebuilt
+abdelmouhib_chamakh__tun,Abdelmouhib Chamakh,TUN,GK,0.908388,0.908388,0.733041,0.829482,0.829482,0,complete_components,component_weighted_sum,component_base_rebuilt
+deni_juric__aus,Deni Juric,AUS,FWD,0.313362,0.313362,1.458678,0.828754,0.828754,-0,complete_components,component_weighted_sum,component_base_rebuilt
+armando_gonzalez__mex,Armando Gonzalez,MEX,FWD,0.308976,0.308976,1.458678,0.826342,0.826342,0,complete_components,component_weighted_sum,component_base_rebuilt
+aidan_morris__usa,Aidan Morris,USA,MID,0.383326,0.383326,1.367591,0.826245,0.826245,-0,complete_components,component_weighted_sum,component_base_rebuilt
+in_beom_hwang__kor,In-beom Hwang,KOR,MID,0.37683,0.37683,1.367591,0.822672,0.822672,-0,complete_components,component_weighted_sum,component_base_rebuilt
+nadiem_amiri__ger,Nadiem Amiri,GER,MID,0.37195,0.37195,1.367591,0.819988,0.819988,-0,complete_components,component_weighted_sum,component_base_rebuilt
+maximilian_beier__ger,Maximilian Beier,GER,FWD,0.29628,0.29628,1.458678,0.819359,0.819359,-0,complete_components,component_weighted_sum,component_base_rebuilt
+moutaz_neffati__tun,Moutaz Neffati,TUN,DEF,0.520818,0.520818,1.18187,0.818291,0.818292,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+ricardo_pepi__usa,Ricardo Pepi,USA,FWD,0.290903,0.290903,1.458678,0.816402,0.816402,0,complete_components,component_weighted_sum,component_base_rebuilt
+obed_vargas__mex,Obed Vargas,MEX,MID,0.362216,0.362216,1.367591,0.814635,0.814635,0,complete_components,component_weighted_sum,component_base_rebuilt
+samed_ba_dar__bih,Samed Bazdar,BIH,FWD,1.009502,1.009502,0.573299,0.813211,0.813211,0,complete_components,component_weighted_sum,component_base_rebuilt
+samu_costa__por,Samu Costa,POR,MID,0.357918,0.357918,1.367591,0.812271,0.812271,0,complete_components,component_weighted_sum,component_base_rebuilt
+nikola_moro__cro,Nikola Moro,CRO,MID,0.355998,0.355998,1.367591,0.811215,0.811215,0,complete_components,component_weighted_sum,component_base_rebuilt
+jose_luis_rodriguez_francis__pan,Jose Luis Rodriguez Francis,PAN,MID,0.34573,0.34573,1.367591,0.805567,0.805567,-0,complete_components,component_weighted_sum,component_base_rebuilt
+assane_diao_diaoune__sen,Assane Diao Diaoune,SEN,FWD,0.271053,0.271053,1.458678,0.805484,0.805484,-0,complete_components,component_weighted_sum,component_base_rebuilt
+musab_al_juwayr__ksa,Musab Al-Juwayr,KSA,MID,0.345362,0.345362,1.367591,0.805365,0.805365,-0,complete_components,component_weighted_sum,component_base_rebuilt
+tarek_alaa__egy,Tarek Alaa,EGY,DEF,0.492295,0.492295,1.18187,0.802604,0.802604,0,complete_components,component_weighted_sum,component_base_rebuilt
+yunus_akgun__tur,Yunus Akgün,TUR,FWD,0.262916,0.262916,1.458678,0.801009,0.801009,0,complete_components,component_weighted_sum,component_base_rebuilt
+matthew_garbett__nzl,Matthew Garbett,NZL,MID,0.337171,0.337171,1.367591,0.80086,0.80086,-0,complete_components,component_weighted_sum,component_base_rebuilt
+josue_casimir__hai,Josue Casimir,HAI,FWD,0.261088,0.261088,1.458678,0.800003,0.800004,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+sander_tangvik__nor,Sander Tangvik,NOR,GK,0.147917,0.147917,1.596713,0.799875,0.799875,-0,complete_components,component_weighted_sum,component_base_rebuilt
+aimar_sher__irq,Aimar Sher,IRQ,MID,0.322247,0.322247,1.367591,0.792652,0.792652,0,complete_components,component_weighted_sum,component_base_rebuilt
+hakim_ziyech__mar,Hakim Ziyech,MAR,MID,0.320318,0.320318,1.367591,0.791591,0.791591,0,complete_components,component_weighted_sum,component_base_rebuilt
+mattias_svanberg__swe,Mattias Svanberg,SWE,MID,0.318185,0.318185,1.367591,0.790418,0.790418,0,complete_components,component_weighted_sum,component_base_rebuilt
+oussama_targhalline__mar,Oussama Targhalline,MAR,MID,0.31561,0.31561,1.367591,0.789001,0.789001,-0,complete_components,component_weighted_sum,component_base_rebuilt
+zidane_iqbal__irq,Zidane Iqbal,IRQ,MID,0.310427,0.310427,1.367591,0.786151,0.786151,0,complete_components,component_weighted_sum,component_base_rebuilt
+manaf_younis__irq,Manaf Younis,IRQ,DEF,0.457201,0.457201,1.18187,0.783302,0.783302,-0,complete_components,component_weighted_sum,component_base_rebuilt
+husam_abu_dahab__jor,Husam Abu Dahab,JOR,DEF,0.455403,0.455403,1.18187,0.782313,0.782313,-0,complete_components,component_weighted_sum,component_base_rebuilt
+baha_a_faisal__jor,Baha'a Faisal,JOR,FWD,0.227852,0.227852,1.458678,0.781724,0.781724,0,complete_components,component_weighted_sum,component_base_rebuilt
+lawrence_shankland__sco,Lawrence Shankland,SCO,FWD,0.220625,0.220625,1.458678,0.777749,0.777749,0,complete_components,component_weighted_sum,component_base_rebuilt
+angelo_stiller__ger,Angelo Stiller,GER,MID,0.294161,0.294161,1.367591,0.777205,0.777204,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+petar_musa__cro,Petar Musa,CRO,FWD,0.219468,0.219468,1.458678,0.777112,0.777113,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+mory_diaw__sen,Mory Diaw,SEN,GK,0.105702,0.105702,1.596713,0.776657,0.776657,0,complete_components,component_weighted_sum,component_base_rebuilt
+mohamed_kone__civ,Mohamed Kone,CIV,GK,0.100796,0.100796,1.596713,0.773959,0.773958,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+nizar_al_rashdan__jor,Nizar Al-Rashdan,JOR,MID,0.979433,0.979433,0.522363,0.773752,0.773751,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+anis_ben_slimane__tun,Anis Ben Slimane,TUN,MID,0.278499,0.278499,1.367591,0.76859,0.76859,-0,complete_components,component_weighted_sum,component_base_rebuilt
+chemsdine_talbi__mar,Chemsdine Talbi,MAR,FWD,0.201051,0.201051,1.458678,0.766983,0.766983,-0,complete_components,component_weighted_sum,component_base_rebuilt
+mohammed_sulaiman__ksa,Mohammed Sulaiman,KSA,DEF,0.427249,0.427249,1.18187,0.766828,0.766829,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+mojmir_chytil__cze,Mojmir Chytil,CZE,FWD,0.20005,0.20005,1.458678,0.766433,0.766433,0,complete_components,component_weighted_sum,component_base_rebuilt
+saleh_al_shamat__ksa,Saleh Al-Shamat,KSA,MID,0.274078,0.274078,1.367591,0.766159,0.766159,0,complete_components,component_weighted_sum,component_base_rebuilt
+alessandro_schopf__aut,Alessandro Schöpf,AUT,MID,0.272807,0.272807,1.367591,0.76546,0.76546,0,complete_components,component_weighted_sum,component_base_rebuilt
+jin_gyu_kim__kor,Jin-gyu Kim,KOR,MID,0.272443,0.272443,1.367591,0.76526,0.765259,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+george_hirst__sco,George Hirst,SCO,FWD,0.196631,0.196631,1.458678,0.764552,0.764552,-0,complete_components,component_weighted_sum,component_base_rebuilt
+akam_hashem__irq,Akam Hashem,IRQ,DEF,0.417467,0.417467,1.18187,0.761448,0.761449,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+mohamed_al_mannai__qat,Mohamed Al-Mannai,QAT,MID,0.264762,0.264762,1.367591,0.761035,0.761035,-0,complete_components,component_weighted_sum,component_base_rebuilt
+amine_adli__mar,Amine Adli,MAR,FWD,0.189118,0.189118,1.458678,0.76042,0.76042,0,complete_components,component_weighted_sum,component_base_rebuilt
+lucas_bergvall__swe,Lucas Bergvall,SWE,MID,0.262533,0.262533,1.367591,0.759809,0.759809,-0,complete_components,component_weighted_sum,component_base_rebuilt
+odildzhon_khamrobekov__uzb,Odildzhon Khamrobekov,UZB,MID,0.26242,0.26242,1.367591,0.759747,0.759747,0,complete_components,component_weighted_sum,component_base_rebuilt
+juan_quintero__col,Juan Quintero,COL,MID,0.260821,0.260821,1.367591,0.758868,0.758867,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+eloy_room__cuw,Eloy Room,CUW,GK,0.77743,0.77743,0.733041,0.757455,0.757455,0,complete_components,component_weighted_sum,component_base_rebuilt
+abdullah_al_hamdan__ksa,Abdullah Al-Hamdan,KSA,FWD,0.182959,0.182959,1.458678,0.757033,0.757033,0,complete_components,component_weighted_sum,component_base_rebuilt
+habib_diarra__sen,Habib Diarra,SEN,MID,0.253779,0.253779,1.367591,0.754994,0.754994,-0,complete_components,component_weighted_sum,component_base_rebuilt
+yehvann_diouf__sen,Yehvann Diouf,SEN,GK,0.063589,0.063589,1.596713,0.753495,0.753495,0,complete_components,component_weighted_sum,component_base_rebuilt
+callum_elder__aus,Callum Elder,AUS,DEF,0.397772,0.397772,1.18187,0.750616,0.750616,-0,complete_components,component_weighted_sum,component_base_rebuilt
+max_crocombe__nzl,Max Crocombe,NZL,GK,0.762038,0.762038,0.733041,0.748989,0.74899,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+garry_mendes_rodrigues__cpv,Garry Mendes Rodrigues,CPV,FWD,0.166754,0.166754,1.458678,0.74812,0.74812,0,complete_components,component_weighted_sum,component_base_rebuilt
+jordy_alcivar__ecu,Jordy Alcivar,ECU,MID,0.928487,0.928487,0.522363,0.745731,0.745731,-0,complete_components,component_weighted_sum,component_base_rebuilt
+yousef_abu_al_jazar__jor,Yousef Abu Al-Jazar,JOR,DEF,0.38543,0.38543,1.18187,0.743828,0.743828,0,complete_components,component_weighted_sum,component_base_rebuilt
+simon_adingra__civ,Simon Adingra,CIV,FWD,0.158559,0.158559,1.458678,0.743613,0.743613,0,complete_components,component_weighted_sum,component_base_rebuilt
+houssem_aouar__alg,Houssem Aouar,ALG,MID,0.232542,0.232542,1.367591,0.743314,0.743314,-0,complete_components,component_weighted_sum,component_base_rebuilt
+riechedly_bazoer__cuw,Riechedly Bazoer,CUW,DEF,0.381336,0.381336,1.18187,0.741576,0.741576,-0,complete_components,component_weighted_sum,component_base_rebuilt
+nasser_al_dawsari__ksa,Nasser Al-Dawsari,KSA,MID,0.224869,0.224869,1.367591,0.739094,0.739094,0,complete_components,component_weighted_sum,component_base_rebuilt
+nishan_velupillay__aus,Nishan Velupillay,AUS,FWD,0.144967,0.144967,1.458678,0.736137,0.736137,0,complete_components,component_weighted_sum,component_base_rebuilt
+ayman_yahya_salem__ksa,Ayman Yahya Salem,KSA,MID,0.218,0.218,1.367591,0.735316,0.735316,0,complete_components,component_weighted_sum,component_base_rebuilt
+themba_zwane__rsa,Themba Zwane,RSA,MID,0.216656,0.216656,1.367591,0.734577,0.734577,0,complete_components,component_weighted_sum,component_base_rebuilt
+mohannad_abu_taha__jor,Mohannad Abu Taha,JOR,MID,0.211284,0.211284,1.367591,0.731622,0.731622,-0,complete_components,component_weighted_sum,component_base_rebuilt
+marko_farji__irq,Marko Farji,IRQ,MID,0.209479,0.209479,1.367591,0.730629,0.730629,-0,complete_components,component_weighted_sum,component_base_rebuilt
+oumar_diakite__civ,Oumar Diakite,CIV,FWD,0.132395,0.132395,1.458678,0.729222,0.729222,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jun_ho_bae__kor,Jun-ho Bae,KOR,MID,0.206731,0.206731,1.367591,0.729118,0.729118,0,complete_components,component_weighted_sum,component_base_rebuilt
+michal_sadilek__cze,Michal Sadilek,CZE,MID,0.206439,0.206439,1.367591,0.728957,0.728957,-0,complete_components,component_weighted_sum,component_base_rebuilt
+dominic_hyam__sco,Dominic Hyam,SCO,DEF,0.357821,0.357821,1.18187,0.728643,0.728643,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ahmed_hasan_maknzi__irq,Ahmed Hasan Maknzi,IRQ,DEF,0.357644,0.357644,1.18187,0.728546,0.728546,0,complete_components,component_weighted_sum,component_base_rebuilt
+kento_shiogai__jpn,Kento Shiogai,JPN,FWD,0.124328,0.124328,1.458678,0.724785,0.724786,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+mohammad_abu_hasheesh__jor,Mohammad Abu Hasheesh,JOR,MID,0.198351,0.198351,1.367591,0.724509,0.724509,-0,complete_components,component_weighted_sum,component_base_rebuilt
+adam_karabec__cze,Adam Karabec,CZE,MID,0.19554,0.19554,1.367591,0.722963,0.722963,0,complete_components,component_weighted_sum,component_base_rebuilt
+gi_hyuk_lee__kor,Gi-hyuk Lee,KOR,DEF,0.346105,0.346105,1.18187,0.722199,0.722199,-0,complete_components,component_weighted_sum,component_base_rebuilt
+timothy_fayulu__cod,Timothy Fayulu,COD,GK,0.711451,0.711451,0.733041,0.721167,0.721167,0,complete_components,component_weighted_sum,component_base_rebuilt
+braian_ojeda__par,Braian Ojeda,PAR,MID,0.8833,0.8833,0.522363,0.720878,0.720878,-0,complete_components,component_weighted_sum,component_base_rebuilt
+cristian_roldan__usa,Cristian Roldan,USA,MID,0.190649,0.190649,1.367591,0.720273,0.720273,0,complete_components,component_weighted_sum,component_base_rebuilt
+frans_dhia_putros__irq,Frans Dhia Putros,IRQ,DEF,0.340067,0.340067,1.18187,0.718878,0.718879,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+nicolas_pepe__civ,Nicolas Pepe,CIV,FWD,0.110415,0.110415,1.458678,0.717133,0.717133,-0,complete_components,component_weighted_sum,component_base_rebuilt
+juan_portilla__col,Juan Portilla,COL,MID,0.182099,0.182099,1.367591,0.71557,0.71557,-0,complete_components,component_weighted_sum,component_base_rebuilt
+christopher_bonsu_baah__gha,Christopher Bonsu Baah,GHA,FWD,0.107164,0.107164,1.458678,0.715345,0.715345,-0,complete_components,component_weighted_sum,component_base_rebuilt
+alex_paulsen__nzl,Alex Paulsen,NZL,GK,0.696172,0.696172,0.733041,0.712763,0.712763,-0,complete_components,component_weighted_sum,component_base_rebuilt
+gael_kakuta__cod,Gaël Kakuta,COD,MID,0.176466,0.176466,1.367591,0.712472,0.712472,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jordy_caicedo__ecu,Jordy Caicedo,ECU,FWD,0.101934,0.101934,1.458678,0.712469,0.712469,0,complete_components,component_weighted_sum,component_base_rebuilt
+alexis_duarte__par,Alexis Duarte,PAR,DEF,0.328098,0.328098,1.18187,0.712295,0.712296,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+zaid_ismail__irq,Zaid Ismail,IRQ,MID,0.171708,0.171708,1.367591,0.709855,0.709855,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jens_castrop__kor,Jens Castrop,KOR,MID,0.171125,0.171125,1.367591,0.709535,0.709535,0,complete_components,component_weighted_sum,component_base_rebuilt
+luciano_valente__ned,Luciano Valente,NED,MID,0.168415,0.168415,1.367591,0.708044,0.708044,-0,complete_components,component_weighted_sum,component_base_rebuilt
+mehdi_dorval__alg,Mehdi Dorval,ALG,DEF,0.320129,0.320129,1.18187,0.707912,0.707913,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+martin_jedlicka__cze,Martin Jedlicka,CZE,GK,0.682563,0.682563,0.733041,0.705278,0.705278,-0,complete_components,component_weighted_sum,component_base_rebuilt
+dilshod_komilov__uzb,Dilshod Komilov,UZB,DEF,0.314771,0.314771,1.18187,0.704966,0.704966,0,complete_components,component_weighted_sum,component_base_rebuilt
+abdel_rahman_al_talalga__jor,Abdel Rahman Al-Talalga,JOR,GK,0.680137,0.680137,0.733041,0.703944,0.703944,0,complete_components,component_weighted_sum,component_base_rebuilt
+zakaria_el_ouahdi__mar,Zakaria El Ouahdi,MAR,DEF,0.31244,0.31244,1.18187,0.703684,0.703684,0,complete_components,component_weighted_sum,component_base_rebuilt
+abdullah_al_khaibari__ksa,Abdullah Al-Khaibari,KSA,MID,0.157946,0.157946,1.367591,0.702286,0.702286,-0,complete_components,component_weighted_sum,component_base_rebuilt
+gilson_benchimol_tavares__cpv,Gilson Benchimol Tavares,CPV,FWD,0.0809,0.0809,1.458678,0.7009,0.7009,-0,complete_components,component_weighted_sum,component_base_rebuilt
+brian_cipenga__cod,Brian Cipenga,COD,MID,0.84537,0.84537,0.522363,0.700017,0.700017,0,complete_components,component_weighted_sum,component_base_rebuilt
+deveron_fonville__cuw,Deveron Fonville,CUW,DEF,0.299952,0.299952,1.18187,0.696815,0.696815,-0,complete_components,component_weighted_sum,component_base_rebuilt
+simon_banza__cod,Simon Banza,COD,FWD,0.070176,0.070176,1.458678,0.695002,0.695002,0,complete_components,component_weighted_sum,component_base_rebuilt
+besfort_zeneli__swe,Besfort Zeneli,SWE,MID,0.835243,0.835243,0.522363,0.694447,0.694447,0,complete_components,component_weighted_sum,component_base_rebuilt
+emiliano_martinez_toranza__uru,Emiliano Martinez Toranza,URU,MID,0.137723,0.137723,1.367591,0.691164,0.691163,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+seko_fofana__civ,Seko Fofana,CIV,MID,0.134368,0.134368,1.367591,0.689318,0.689318,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jassem_gaber__qat,Jassem Gaber,QAT,MID,0.13096,0.13096,1.367591,0.687444,0.687444,0,complete_components,component_weighted_sum,component_base_rebuilt
+khulumani_ndamane__rsa,Khulumani Ndamane,RSA,DEF,0.281624,0.281624,1.18187,0.686735,0.686735,0,complete_components,component_weighted_sum,component_base_rebuilt
+mohammad_khalife__irn,Mohammad Khalife,IRN,GK,0.646078,0.646078,0.733041,0.685211,0.685212,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+carlos_miguel_coronel__par,Carlos Miguel Coronel,PAR,GK,0.639757,0.639757,0.733041,0.681735,0.681735,0,complete_components,component_weighted_sum,component_base_rebuilt
+jean_michael_seri__civ,Jean Michael Seri,CIV,MID,0.120517,0.120517,1.367591,0.6817,0.6817,-0,complete_components,component_weighted_sum,component_base_rebuilt
+matias_fernandez_pardo__bel,Matias Fernandez-Pardo,BEL,FWD,0.039437,0.039437,1.458678,0.678095,0.678095,-0,complete_components,component_weighted_sum,component_base_rebuilt
+elye_wahi__civ,Elye Wahi,CIV,FWD,0.035081,0.035081,1.458678,0.6757,0.6757,0,complete_components,component_weighted_sum,component_base_rebuilt
+mohammed_waad__qat,Mohammed Waad,QAT,MID,0.107343,0.107343,1.367591,0.674455,0.674454,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+yazeed_abulaila__jor,Yazeed Abulaila,JOR,GK,0.618504,0.618504,0.733041,0.670046,0.670046,0,complete_components,component_weighted_sum,component_base_rebuilt
+sebastian_tounekti__tun,Sebastian Tounekti,TUN,MID,0.787221,0.787221,0.522363,0.668035,0.668035,0,complete_components,component_weighted_sum,component_base_rebuilt
+hyun_jun_yang__kor,Hyun-Jun Yang,KOR,MID,0.091808,0.091808,1.367591,0.66591,0.66591,-0,complete_components,component_weighted_sum,component_base_rebuilt
+nuno_da_costa__cpv,Nuno da Costa,CPV,FWD,0.01683,0.01683,1.458678,0.665662,0.665662,0,complete_components,component_weighted_sum,component_base_rebuilt
+martin_zlomisli__bih,Martin Zlomislic,BIH,GK,0.606259,0.606259,0.733041,0.663311,0.663311,0,complete_components,component_weighted_sum,component_base_rebuilt
+godfried_roemeratoe__cuw,Godfried Roemeratoe,CUW,MID,0.7777,0.7777,0.522363,0.662798,0.662798,-0,complete_components,component_weighted_sum,component_base_rebuilt
+matias_galarza_fonda__par,Matias Galarza Fonda,PAR,MID,0.084016,0.084016,1.367591,0.661625,0.661625,0,complete_components,component_weighted_sum,component_base_rebuilt
+wilguens_paugain__hai,Wilguens Paugain,HAI,DEF,0.234819,0.234819,1.18187,0.660992,0.660992,0,complete_components,component_weighted_sum,component_base_rebuilt
+rocky_bushiri__cod,Rocky Bushiri,COD,DEF,0.225003,0.225003,1.18187,0.655593,0.655593,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ajdin_hrustic__aus,Ajdin Hrustic,AUS,MID,0.753716,0.753716,0.522363,0.649607,0.649607,-0,complete_components,component_weighted_sum,component_base_rebuilt
+el_mehdi_al_harrar__mar,El Mehdi Al Harrar,MAR,GK,0.565795,0.565795,0.733041,0.641056,0.641056,0,complete_components,component_weighted_sum,component_base_rebuilt
+jens_petter_hauge__nor,Jens Petter Hauge,NOR,MID,0.042584,0.042584,1.367591,0.638837,0.638837,-0,complete_components,component_weighted_sum,component_base_rebuilt
+carlos_rodriguez__mex,Carlos Rodriguez,MEX,MID,0.041085,0.041085,1.367591,0.638013,0.638013,0,complete_components,component_weighted_sum,component_base_rebuilt
+david_hoilett__can,David 'Junior' Hoilett,CAN,MID,0.036447,0.036447,1.367591,0.635462,0.635462,0,complete_components,component_weighted_sum,component_base_rebuilt
+sondre_langas__nor,Sondre Langås,NOR,DEF,0.18405,0.18405,1.18187,0.633069,0.633069,0,complete_components,component_weighted_sum,component_base_rebuilt
+johny_placide__hai,Johny Placide,HAI,GK,0.55054,0.55054,0.733041,0.632665,0.632666,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+steve_kapuadi__cod,Steve Kapuadi,COD,DEF,0.179712,0.179712,1.18187,0.630683,0.630683,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jin_seob_park__kor,Jin-seob Park,KOR,MID,0.026846,0.026846,1.367591,0.630181,0.630181,-0,complete_components,component_weighted_sum,component_base_rebuilt
+adem_arous__tun,Adem Arous,TUN,DEF,0.161619,0.161619,1.18187,0.620732,0.620732,0,complete_components,component_weighted_sum,component_base_rebuilt
+grady_diangana__cod,Grady Diangana,COD,MID,0.003091,0.003091,1.367591,0.617116,0.617116,0,complete_components,component_weighted_sum,component_base_rebuilt
+paik_seung_ho__kor,Seung-Ho Paik,KOR,MID,0.672779,0.672779,0.522363,0.605092,0.605092,0,complete_components,component_weighted_sum,component_base_rebuilt
+kelvin_pires__cpv,Kelvin Pires,CPV,DEF,0.13298,0.13298,1.18187,0.60498,0.604981,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+thabang_matuludi__rsa,Thabang Matuludi,RSA,DEF,0.076537,0.076537,1.18187,0.573937,0.573937,0,complete_components,component_weighted_sum,component_base_rebuilt
+abduvokhid_nematov__uzb,Abduvokhid Nematov,UZB,GK,0.443489,0.443489,0.733041,0.573787,0.573788,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+luis_mejia__pan,Luis Mejia,PAN,GK,0.441229,0.441229,0.733041,0.572544,0.572545,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+c_sar_yanis__pan,Cesar Yanis,PAN,MID,0.603944,0.603944,0.522363,0.567233,0.567232,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+ahmed_basil_fadhil__irq,Ahmed Basil Fadhil,IRQ,GK,0.41566,0.41566,0.733041,0.558481,0.558482,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+paul_izzo__aus,Paul Izzo,AUS,GK,0.414563,0.414563,0.733041,0.557878,0.557878,-0,complete_components,component_weighted_sum,component_base_rebuilt
+alexandre_pierre__hai,Alexandre Pierre,HAI,GK,0.407388,0.407388,0.733041,0.553932,0.553932,0,complete_components,component_weighted_sum,component_base_rebuilt
+payam_niazmand__irn,Payam Niazmand,IRN,GK,0.390072,0.390072,0.733041,0.544408,0.544408,-0,complete_components,component_weighted_sum,component_base_rebuilt
+hugo_cuenca__par,Hugo Cuenca,PAR,MID,0.554255,0.554255,0.522363,0.539904,0.539903,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+alban_lafont__civ,Alban Lafont,CIV,GK,0.330784,0.330784,0.733041,0.5118,0.5118,0,complete_components,component_weighted_sum,component_base_rebuilt
+patrick_beach__aus,Patrick Beach,AUS,GK,0.31464,0.31464,0.733041,0.50292,0.502921,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+mohamed_haj_mahmoud__tun,Mohamed 'Hadj' Mahmoud,TUN,MID,0.482725,0.482725,0.522363,0.500562,0.500562,-0,complete_components,component_weighted_sum,component_base_rebuilt
+marcelo_flores__can,Marcelo Flores,CAN,MID,0.477011,0.477011,0.522363,0.497419,0.497419,-0,complete_components,component_weighted_sum,component_base_rebuilt
+michael_woud__nzl,Michael Woud,NZL,GK,0.296475,0.296475,0.733041,0.49293,0.49293,0,complete_components,component_weighted_sum,component_base_rebuilt
+john_mercado__ecu,John Mercado,ECU,FWD,0.427045,0.427045,0.573299,0.492859,0.492859,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ivor_pandur__cro,Ivor Pandur,CRO,GK,0.280764,0.280764,0.733041,0.484289,0.484289,0,complete_components,component_weighted_sum,component_base_rebuilt
+prince_adu__gha,Prince Adu,GHA,FWD,0.408984,0.408984,0.573299,0.482926,0.482926,0,complete_components,component_weighted_sum,component_base_rebuilt
+rayan_elloumi__tun,Rayan Elloumi,TUN,FWD,0.404198,0.404198,0.573299,0.480293,0.480293,-0,complete_components,component_weighted_sum,component_base_rebuilt
+moises_ramirez__ecu,Moises Ramirez,ECU,GK,0.272076,0.272076,0.733041,0.47951,0.47951,-0,complete_components,component_weighted_sum,component_base_rebuilt
+fahad_talib__irq,Fahad Talib,IRQ,GK,0.2553,0.2553,0.733041,0.470283,0.470284,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+sipho_chaine__rsa,Sipho Chaine,RSA,GK,0.237305,0.237305,0.733041,0.460386,0.460386,-0,complete_components,component_weighted_sum,component_base_rebuilt
+yoel_barcenas__pan,Yoel Barcenas,PAN,MID,0.394952,0.394952,0.522363,0.452287,0.452287,0,complete_components,component_weighted_sum,component_base_rebuilt
+hamza_abdelkarim__egy,Hamza Abdelkarim,EGY,FWD,0.352882,0.352882,0.573299,0.45207,0.45207,0,complete_components,component_weighted_sum,component_base_rebuilt
+anthony_valencia__ecu,Anthony Valencia,ECU,FWD,0.351412,0.351412,0.573299,0.451261,0.451261,-0,complete_components,component_weighted_sum,component_base_rebuilt
+abdallah_al_fakhouri__jor,Abdallah Al-Fakhouri,JOR,GK,0.214759,0.214759,0.733041,0.447986,0.447986,0,complete_components,component_weighted_sum,component_base_rebuilt
+bum_keun_song__kor,Bum-Keun Song,KOR,GK,0.210398,0.210398,0.733041,0.445587,0.445588,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+lukas_hornicek__cze,Lukas Hornicek,CZE,GK,0.207747,0.207747,0.733041,0.444129,0.444129,-0,complete_components,component_weighted_sum,component_base_rebuilt
+kristian_thorstvedt__nor,Kristian Thorstvedt,NOR,MID,0.376071,0.376071,0.522363,0.441902,0.441902,-0,complete_components,component_weighted_sum,component_base_rebuilt
+kumel_al_rekabe__irq,Kumel Al-Rekabe,IRQ,GK,0.196879,0.196879,0.733041,0.438152,0.438152,0,complete_components,component_weighted_sum,component_base_rebuilt
+cecilio_waterman__pan,Cecilio Waterman,PAN,FWD,0.324083,0.324083,0.573299,0.43623,0.43623,-0,complete_components,component_weighted_sum,component_base_rebuilt
+patrick_schulte__usa,Patrick Schulte,USA,GK,0.188344,0.188344,0.733041,0.433458,0.433458,0,complete_components,component_weighted_sum,component_base_rebuilt
+ahmed_nadhir_benbouali__alg,Ahmed Nadhir Benbouali,ALG,FWD,0.318334,0.318334,0.573299,0.433068,0.433068,-0,complete_components,component_weighted_sum,component_base_rebuilt
+haissem_hassan__egy,Haissem Hassan,EGY,MID,0.357173,0.357173,0.522363,0.431509,0.431508,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+mohammed_al_rubaie_al_yami__ksa,Mohammed Al-Rubaie Al-Yami,KSA,GK,0.184074,0.184074,0.733041,0.431109,0.431109,-0,complete_components,component_weighted_sum,component_base_rebuilt
+gabriel_avalos__par,Gabriel Avalos,PAR,FWD,0.312931,0.312931,0.573299,0.430097,0.430097,0,complete_components,component_weighted_sum,component_base_rebuilt
+osman_hadzikic__bih,Osman Hadzikic,BIH,GK,0.181153,0.181153,0.733041,0.429503,0.429503,0,complete_components,component_weighted_sum,component_base_rebuilt
+mostafa_ziko__egy,Mostafa Ziko,EGY,MID,0.352882,0.352882,0.522363,0.429148,0.429148,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jovo_lukic__bih,Jovo Lukic,BIH,FWD,0.303571,0.303571,0.573299,0.424949,0.424949,0,complete_components,component_weighted_sum,component_base_rebuilt
+owen_goodman__can,Owen Goodman,CAN,GK,0.168875,0.168875,0.733041,0.42275,0.42275,0,complete_components,component_weighted_sum,component_base_rebuilt
+kadir_barria__pan,Kadir Barria,PAN,FWD,0.298439,0.298439,0.573299,0.422126,0.422126,-0,complete_components,component_weighted_sum,component_base_rebuilt
+salih_ozcan__tur,Salih Özcan,TUR,MID,0.337667,0.337667,0.522363,0.42078,0.42078,-0,complete_components,component_weighted_sum,component_base_rebuilt
+patrick_yazbek__aus,Patrick Yazbek,AUS,MID,0.331391,0.331391,0.522363,0.417328,0.417328,-0,complete_components,component_weighted_sum,component_base_rebuilt
+mohamed_rabie_hrimat__mar,Mohamed Rabie Hrimat,MAR,MID,0.329252,0.329252,0.522363,0.416152,0.416152,0,complete_components,component_weighted_sum,component_base_rebuilt
+lachlan_bayliss__nzl,Lachlan Bayliss,NZL,MID,0.329109,0.329109,0.522363,0.416073,0.416073,-0,complete_components,component_weighted_sum,component_base_rebuilt
+lionel_mpasi_nzau__cod,Lionel Mpasi Nzau,COD,GK,0.153554,0.153554,0.733041,0.414323,0.414323,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jeremy_ar_valo__ecu,Jeremy Arevalo,ECU,FWD,0.28353,0.28353,0.573299,0.413926,0.413926,-0,complete_components,component_weighted_sum,component_base_rebuilt
+bongokuhle_hlongwane__rsa,Bongokuhle Hlongwane,RSA,FWD,0.280032,0.280032,0.573299,0.412002,0.412002,-0,complete_components,component_weighted_sum,component_base_rebuilt
+abdulrahman_al_sanbi__ksa,Abdulrahman Al-Sanbi,KSA,GK,0.147461,0.147461,0.733041,0.410972,0.410972,-0,complete_components,component_weighted_sum,component_base_rebuilt
+amir_hadziahmetovic__bih,Amir Hadziahmetovic,BIH,MID,0.314644,0.314644,0.522363,0.408118,0.408117,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+cedric_itten__sui,Cedric Itten,SUI,FWD,0.271926,0.271926,0.573299,0.407544,0.407544,0,complete_components,component_weighted_sum,component_base_rebuilt
+irfan_can_kahveci__tur,Irfan Can Kahveci,TUR,MID,0.307177,0.307177,0.522363,0.404011,0.40401,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+joseph_anang__gha,Joseph Anang,GHA,GK,0.130849,0.130849,0.733041,0.401835,0.401836,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+mahmoud_abunada__qat,Mahmoud Abunada,QAT,GK,0.128411,0.128411,0.733041,0.400495,0.400495,0,complete_components,component_weighted_sum,component_base_rebuilt
+shahriar_moghanlou__irn,Shahriar Moghanlou,IRN,FWD,0.257818,0.257818,0.573299,0.399784,0.399784,-0,complete_components,component_weighted_sum,component_base_rebuilt
+marcio_rosa__cpv,Marcio Rosa,CPV,GK,0.114228,0.114228,0.733041,0.392694,0.392694,0,complete_components,component_weighted_sum,component_base_rebuilt
+diego_moreira__bel,Diego Moreira,BEL,MID,0.280468,0.280468,0.522363,0.389321,0.389321,0,complete_components,component_weighted_sum,component_base_rebuilt
+awer_mabil__aus,Awer Mabil,AUS,FWD,0.23185,0.23185,0.573299,0.385502,0.385502,-0,complete_components,component_weighted_sum,component_base_rebuilt
+cesar_samudio__pan,Cesar Samudio,PAN,GK,0.100594,0.100594,0.733041,0.385195,0.385195,-0,complete_components,component_weighted_sum,component_base_rebuilt
+sabri_ben_hessen__tun,Sabri Ben Hessen,TUN,GK,0.100162,0.100162,0.733041,0.384958,0.384958,0,complete_components,component_weighted_sum,component_base_rebuilt
+bamba_dieng__sen,Bamba Dieng,SEN,FWD,0.228943,0.228943,0.573299,0.383903,0.383903,-0,complete_components,component_weighted_sum,component_base_rebuilt
+ricardo_goss__rsa,Ricardo Goss,RSA,GK,0.095811,0.095811,0.733041,0.382565,0.382565,0,complete_components,component_weighted_sum,component_base_rebuilt
+mohamed_alaa__egy,Mohamed Alaa,EGY,GK,0.092473,0.092473,0.733041,0.380729,0.380729,0,complete_components,component_weighted_sum,component_base_rebuilt
+ardon_jashari__sui,Ardon Jashari,SUI,MID,0.261854,0.261854,0.522363,0.379083,0.379083,-0,complete_components,component_weighted_sum,component_base_rebuilt
+tahith_chong__cuw,Tahith Chong,CUW,MID,0.241003,0.241003,0.522363,0.367615,0.367615,0,complete_components,component_weighted_sum,component_base_rebuilt
+botirali_ergashev__uzb,Botirali Ergashev,UZB,GK,0.068289,0.068289,0.733041,0.367427,0.367428,0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+ross_stewart__sco,Ross Stewart,SCO,FWD,0.190211,0.190211,0.573299,0.362601,0.362601,0,complete_components,component_weighted_sum,component_base_rebuilt
+el_mahdi_soliman__egy,El Mahdi Soliman,EGY,GK,0.051648,0.051648,0.733041,0.358275,0.358275,0,complete_components,component_weighted_sum,component_base_rebuilt
+derrick_etienne__hai,Derrick Etienne Jr.,HAI,FWD,0.179512,0.179512,0.573299,0.356716,0.356716,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jan_kliment__cze,Jan Kliment,CZE,FWD,0.179423,0.179423,0.573299,0.356667,0.356667,-0,complete_components,component_weighted_sum,component_base_rebuilt
+guillermo_martinez__mex,Guillermo Martínez,MEX,FWD,0.179142,0.179142,0.573299,0.356513,0.356513,0,complete_components,component_weighted_sum,component_base_rebuilt
+lewis_ferguson__sco,Lewis Ferguson,SCO,MID,0.218947,0.218947,0.522363,0.355484,0.355484,-0,complete_components,component_weighted_sum,component_base_rebuilt
+oufa_shobeir__egy,Mostafa Oufa Shobeir,EGY,GK,0.042064,0.042064,0.733041,0.353004,0.353004,0,complete_components,component_weighted_sum,component_base_rebuilt
+kevin_yakob__irq,Kevin Yakob,IRQ,MID,0.211376,0.211376,0.522363,0.35132,0.35132,-0,complete_components,component_weighted_sum,component_base_rebuilt
+yaimar_medina__ecu,Yaimar Medina,ECU,MID,0.208887,0.208887,0.522363,0.349951,0.349951,-0,complete_components,component_weighted_sum,component_base_rebuilt
+nikolas_polster__aut,Nikolas Polster,AUT,GK,0.035793,0.035793,0.733041,0.349555,0.349555,0,complete_components,component_weighted_sum,component_base_rebuilt
+jurgen_locadia__cuw,Jürgen Locadia,CUW,FWD,0.165114,0.165114,0.573299,0.348797,0.348797,-0,complete_components,component_weighted_sum,component_base_rebuilt
+vladimir_darida__cze,Vladimir Darida,CZE,MID,0.195958,0.195958,0.522363,0.34284,0.34284,-0,complete_components,component_weighted_sum,component_base_rebuilt
+josue_duverger__hai,Josue Duverger,HAI,GK,0.019655,0.019655,0.733041,0.340679,0.340679,0,complete_components,component_weighted_sum,component_base_rebuilt
+carlos_andres_gomez__col,Carlos Andres Gomez,COL,MID,0.190933,0.190933,0.522363,0.340077,0.340076,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+thelo_aasgaard__nor,Thelo Aasgaard,NOR,MID,0.190233,0.190233,0.522363,0.339692,0.339691,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+mohammad_al_dawoud__jor,Mohammad Al-Dawoud,JOR,MID,0.185546,0.185546,0.522363,0.337114,0.337113,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+christ_inao_oulai__civ,Christ Inao Oulaï,CIV,MID,0.18488,0.18488,0.522363,0.336747,0.336747,-0,complete_components,component_weighted_sum,component_base_rebuilt
+shehab_ellethy__qat,Shehab Ellethy,QAT,GK,0.006752,0.006752,0.733041,0.333582,0.333582,-0,complete_components,component_weighted_sum,component_base_rebuilt
+alex_kral__cze,Alex Kral,CZE,MID,0.171281,0.171281,0.522363,0.329268,0.329268,0,complete_components,component_weighted_sum,component_base_rebuilt
+kees_smit__ned,Kees Smit,NED,MID,0.164191,0.164191,0.522363,0.325368,0.325368,-0,complete_components,component_weighted_sum,component_base_rebuilt
+sontje_hansen__cuw,Sontje Hansen,CUW,FWD,0.119914,0.119914,0.573299,0.323937,0.323937,-0,complete_components,component_weighted_sum,component_base_rebuilt
+yassin_fortune__hai,Yassin Fortune,HAI,FWD,0.119461,0.119461,0.573299,0.323688,0.323688,-0,complete_components,component_weighted_sum,component_base_rebuilt
+dostonbek_khamdamov__uzb,Dostonbek Khamdamov,UZB,MID,0.155563,0.155563,0.522363,0.320623,0.320623,0,complete_components,component_weighted_sum,component_base_rebuilt
+alisher_odilov__uzb,Alisher Odilov,UZB,MID,0.155045,0.155045,0.522363,0.320338,0.320338,-0,complete_components,component_weighted_sum,component_base_rebuilt
+fares_ghedjemis__alg,Fares Ghedjemis,ALG,FWD,0.106093,0.106093,0.573299,0.316336,0.316336,0,complete_components,component_weighted_sum,component_base_rebuilt
+yassine_titraoui__alg,Yassine Titraoui,ALG,MID,0.142,0.142,0.522363,0.313163,0.313163,-0,complete_components,component_weighted_sum,component_base_rebuilt
+mortadha_ben_ouanes__tun,Mortadha Ben Ouanes,TUN,MID,0.140924,0.140924,0.522363,0.312572,0.312571,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+dong_gyeong_lee__kor,Dong-gyeong Lee,KOR,MID,0.12423,0.12423,0.522363,0.30339,0.30339,0,complete_components,component_weighted_sum,component_base_rebuilt
+ermin_mahmic__bih,Ermin Mahmic,BIH,MID,0.11795,0.11795,0.522363,0.299936,0.299936,0,complete_components,component_weighted_sum,component_base_rebuilt
+ali_yousif__irq,Ali Yousif,IRQ,FWD,0.075743,0.075743,0.573299,0.299643,0.299643,-0,complete_components,component_weighted_sum,component_base_rebuilt
+peter_gwargis__irq,Peter Gwargis,IRQ,MID,0.114366,0.114366,0.522363,0.297965,0.297964,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+hasan_abdulkareem__irq,Hasan Abdulkareem,IRQ,MID,0.112934,0.112934,0.522363,0.297177,0.297177,-0,complete_components,component_weighted_sum,component_base_rebuilt
+janner_corozo__ecu,Janner Corozo,ECU,FWD,0.067066,0.067066,0.573299,0.294871,0.294871,0,complete_components,component_weighted_sum,component_base_rebuilt
+adil_aouchiche__alg,Adil Aouchiche,ALG,MID,0.106093,0.106093,0.522363,0.293415,0.293414,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+khalil_ayari__tun,Khalil Ayari,TUN,MID,0.101445,0.101445,0.522363,0.290858,0.290858,-0,complete_components,component_weighted_sum,component_base_rebuilt
+yannick_semedo__cpv,Yannick Semedo,CPV,MID,0.094021,0.094021,0.522363,0.286775,0.286775,0,complete_components,component_weighted_sum,component_base_rebuilt
+bazoumana_toure__civ,Bazoumana Toure,CIV,FWD,0.021822,0.021822,0.573299,0.269987,0.269987,0,complete_components,component_weighted_sum,component_base_rebuilt
+daniel_nana_agyei__gha,Daniel Nana Agyei,GHA,FWD,0.011985,0.011985,0.573299,0.264576,0.264576,-0,complete_components,component_weighted_sum,component_base_rebuilt
+jacen_russell_rowe__can,Jacen Russell-Rowe,CAN,FWD,0.011394,0.011394,0.573299,0.264251,0.264251,-0,complete_components,component_weighted_sum,component_base_rebuilt
+carl_sainte__hai,Carl Sainte,HAI,MID,0.05139,0.05139,0.522363,0.263328,0.263328,0,complete_components,component_weighted_sum,component_base_rebuilt
+denzell_garcia__mex,Denzell Garcia,MEX,MID,0.046594,0.046594,0.522363,0.26069,0.26069,-0,complete_components,component_weighted_sum,component_base_rebuilt
+marco_grull__aut,Marco Grüll,AUT,FWD,0.000646,0.000646,0.573299,0.25834,0.25834,0,complete_components,component_weighted_sum,component_base_rebuilt
+jamshid_iskanderov__uzb,Jamshid Iskanderov,UZB,MID,0.038517,0.038517,0.522363,0.256248,0.256247,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+parfait_guiagon__civ,Parfait Guiagon,CIV,MID,0.024426,0.024426,0.522363,0.248498,0.248497,-0.000001,complete_components,component_weighted_sum,component_base_rebuilt
+taha_abdi_ali__swe,Taha Abdi Ali,SWE,MID,0.022787,0.022787,0.522363,0.247596,0.247596,-0,complete_components,component_weighted_sum,component_base_rebuilt
+lucas_ramon_romero__par,Lucas Ramon Romero,PAR,MID,0.012432,0.012432,0.522363,0.241901,0.241901,0,complete_components,component_weighted_sum,component_base_rebuilt
+nabil_dunga_emad__egy,Nabil 'Dunga' Emad,EGY,MID,0.000592,0.000592,0.522363,0.235389,0.235389,0,complete_components,component_weighted_sum,component_base_rebuilt
+cj_dos_santos__cpv,CJ Dos Santos,CPV,GK,-0.003946,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+chris_brady__usa,Chris Brady,USA,GK,-0.034652,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+marco_pasalic__cro,Marco Pasalic,CRO,FWD,-0.010445,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+amin_chiakha__alg,Amin Chiakha,ALG,FWD,-0.071072,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+abdulaziz_hatim_mohammed__qat,Abdulaziz Hatim Mohammed,QAT,MID,-0.029181,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+mohammad_abu_shararh_zrayq__jor,Mohammad Abu 'Shararh' Zrayq,JOR,MID,-0.019083,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+alan_varela__arg,Alan Varela,ARG,MID,-0.111466,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+abdulrahman_al_obood__ksa,Abdulrahman Al-Obood,KSA,MID,-0.006257,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+ar_jany_martha__cuw,Ar'jany Martha,CUW,FWD,-0.085476,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+aribim_pepple__can,Aribim Pepple,CAN,FWD,-0.11029,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+findlay_curtis__sco,Findlay Curtis,SCO,FWD,-0.109972,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+thapelo_maseko__rsa,Thapelo Maseko,RSA,FWD,-0.008076,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+ante_suto__aus,Ante Suto,AUS,FWD,-0.118984,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+raul_florucz__aut,Raul Florucz,AUT,FWD,-0.017002,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+jeremy_ngakia__cod,Jeremy Ngakia,COD,DEF,-0.063496,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+denis_visinsky__cze,Denis Visinsky,CZE,MID,-0.123711,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+atakan_karazor__tur,Atakan Karazor,TUR,MID,-0.001919,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+alexander_alex_robertson__aus,Alexander 'Alex' Robertson,AUS,MID,-0.009489,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+jayden_adams__rsa,Jayden Adams,RSA,MID,-0.105071,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+umarali_rakhmonaliyev__uzb,Umarali Rakhmonaliyev,UZB,MID,-0.02456,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+ibrokhim_ibrokhimov__uzb,Ibrokhim Ibrokhimov,UZB,MID,-0.121271,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+yousef_qashi__jor,Yousef Qashi,JOR,MID,-0.120284,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+mohammad_taha__jor,Mohammad Taha,JOR,MID,-0.019083,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+odeh_al_fakhouri__jor,Odeh Al-Fakhouri,JOR,MID,-0.019083,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+ali_azaizeh__jor,Ali Azaizeh,JOR,MID,-0.122113,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+kevin_felida__cuw,Kevin Felida,CUW,MID,-0.062555,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+tyrese_noslin__cuw,Tyrese Noslin,CUW,MID,-0.123165,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+woodensky_pierre__hai,Woodensky Pierre,HAI,MID,-0.121947,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+eric_smith__swe,Eric Smith,SWE,DEF,-0.035863,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+sohaib_nair__alg,Sohaib Nair,ALG,DEF,-0.052587,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+elliot_stroud__swe,Elliot Stroud,SWE,DEF,-0.033916,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+patric_pfeiffer__gha,Patric Pfeiffer,GHA,DEF,-0.048674,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+marvin_senaya__gha,Marvin Senaya,GHA,DEF,-0.048674,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+mukhammadrasul_abdumazhidov__uzb,Mukhammadrasul Abdumazhidov,UZB,DEF,-0.068882,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+henrik_falchener__nor,Henrik Falchener,NOR,DEF,-0.004321,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+tyrick_bodak__cuw,Tyrick Bodak,CUW,GK,-0.028757,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+trevor_doornbusch__cuw,Trevor Doornbusch,CUW,GK,-0.00669,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+juan_espinola__par,Juan Espinola,PAR,GK,-0.013775,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+christoph_baumgartner__aut,Christoph Baumgartner,AUT,MID,0,0,0,0,0,0,out_of_tournament,out_of_tournament_manual,out_of_tournament_zeroed
+tommy_smith__nzl,Tommy Smith,NZL,DEF,-0.065459,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+raed_chikhaoui__tun,Raed Chikhaoui,TUN,DEF,-0.05205,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+moustapha_mbow__sen,Moustapha Mbow,SEN,DEF,-0.048392,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+bara_sapoko_ndiaye__sen,Bara Sapoko Ndiaye,SEN,MID,-0.00452,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+kevin_lenini__cpv,Kevin Lenini Pina,CPV,MID,-0.03936,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+dominique_simon__hai,Dominique Simon,HAI,MID,-0.027282,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+lenny_joseph__hai,Lenny Joseph,HAI,FWD,-0.027282,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+aqtay_abdallah__egy,Aqtay Abdallah,EGY,FWD,-0.116973,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed
+ange_yoan_bonny__civ,Ange-Yoan Bonny,CIV,FWD,-0.043844,0,0,0,0,0,no_ev_source,no_ev_source,no_ev_source_zeroed

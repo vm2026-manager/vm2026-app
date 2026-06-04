@@ -1,0 +1,1245 @@
+﻿player_id,player_name,team_id,position,start_prob,minute_share,match_1_start_minutes_ev,match_1_goal_ev,match_1_assist_ev,match_1_shots_on_target_ev,match_1_weighted_match_ev,weighted_group_stage_ev,component_source,component_recomputed,suspected_issue
+kerem_akt_rko_lu__tur,Kerem Akturkoglu,TUR,MID,0.8753,0.079573,59.034608,0.347939,0.091614,0.251253,2.397868,6.380548,existing_components,yes,ok
+lautaro_mart_nez__arg,Lautaro Martinez,ARG,FWD,0.8498,0.077255,57.126955,0.366854,0.128374,0.210876,2.234646,5.89453,existing_components,yes,ok
+jonathan_david__can,Jonathan David,CAN,FWD,0.9,0.081818,60.6294,0.356855,0.136109,0.285908,2.249151,5.869533,existing_components,yes,ok
+cristiano_ronaldo__por,Cristiano Ronaldo,POR,FWD,0.908,0.082545,61.055736,0.345778,0.110156,0.194911,2.106346,5.227561,existing_components,yes,ok
+lionel_messi__arg,Lionel Messi,ARG,FWD,0.8949,0.081355,60.011994,0.318081,0.144798,0.213143,2.102642,5.094222,existing_components,no,ok
+patrick_agyemang__usa,Patrick Agyemang,USA,FWD,0.7929,0.072082,53.540573,0.283846,0.082093,0.283327,1.79433,4.802784,existing_components,yes,ok
+kylian_mbapp__fra,Kylian Mbappe,FRA,FWD,0.902,0.082,60.332074,0.278098,0.101092,0.208745,1.80586,4.791598,existing_components,yes,ok
+ra_l_jim_nez__mex,Raul Jimenez,MEX,FWD,0.7012,0.063745,47.227222,0.321936,0.092403,0.178949,1.898889,4.504312,existing_components,yes,ok
+brahim_d_az__mar,Brahim Diaz,MAR,FWD,0.8254,0.075036,55.618754,0.104124,0.032622,0.186004,0.721338,4.450173,existing_components,yes,ok
+vinicius_j_nior__bra,Vinicius Junior,BRA,FWD,0.7444,0.067673,50.188937,0.228085,0.099287,0.157508,1.507805,4.385279,existing_components,yes,ok
+oscar_bobb__nor,Oscar Bobb,NOR,MID,0.9101,0.082736,61.555524,0.263641,0.097297,0.180105,1.97236,4.309063,existing_components,yes,ok
+marko_arnautovi__aut,Marko Arnautovic,AUT,FWD,0.8911,0.081009,59.568253,0.386016,0.12894,0.247565,2.367722,4.306573,existing_components,yes,ok
+cody_gakpo__ned,Cody Gakpo,NED,FWD,0.8713,0.079209,58.583598,0.211283,0.079383,0.187559,1.395935,4.27308,existing_components,yes,ok
+unai_sim_n__esp,Unai Simon,ESP,GK,0.7984,0.072582,63.648448,0,0,0,1.630442,4.164353,existing_components,yes,ok
+roberto_alvarado__mex,Roberto Alvarado,MEX,MID,0.6394,0.058127,43.158221,0.233671,0.086603,0.168282,1.748175,4.143887,existing_components,yes,ok
+harry_kane__eng,Harry Kane,ENG,FWD,0.8702,0.079109,57.891795,0.213065,0.0678,0.142966,1.343987,4.066753,existing_components,yes,ok
+tajon_buchanan__can,Tajon Buchanan,CAN,MID,0.9066,0.082418,64.491898,0.198495,0.119005,0.094227,1.54053,4.027992,existing_components,yes,ok
+mike_maignan__fra,Mike Maignan,FRA,GK,0.8865,0.080591,71.485587,0,0,0,1.348641,4.015626,existing_components,yes,ok
+alexis_vega__mex,Alexis Vega,MEX,FWD,0.6639,0.060355,44.732918,0.262978,0.106499,0.167498,1.689472,4.011515,existing_components,yes,ok
+breel_embolo__sui,Breel Embolo,SUI,FWD,0.8813,0.080118,59.225123,0.198682,0.105068,0.138562,1.430703,3.96066,existing_components,yes,ok
+aymeric_laporte__esp,Aymeric Laporte,ESP,DEF,0.822,0.074727,61.462584,0.026516,0.019236,0.006715,1.548002,3.926401,existing_components,yes,ok
+rafael_le_o__por,Rafael Leão,POR,FWD,0.8615,0.078318,57.653303,0.236918,0.096395,0.148724,1.570825,3.887494,existing_components,yes,ok
+mohamed_salah__egy,Mohamed Salah,EGY,FWD,0.8489,0.077173,57.232838,0.095324,0.039834,0.179651,0.70613,3.880753,existing_components,yes,ok
+tani_oluwaseyi__can,Tani Oluwaseyi,CAN,FWD,0.6748,0.061345,45.250738,0.228368,0.095578,0.199458,1.482362,3.869195,existing_components,yes,ok
+sadio_man__sen,Sadio Mane,SEN,FWD,0.9164,0.083309,61.950473,0.086815,0.058667,0.176788,0.710995,3.865817,existing_components,yes,ok
+lamine_yamal__esp,Lamine Yamal,ESP,FWD,0.8685,0.078955,58.219898,0.223623,0.088358,0.137638,1.532569,3.835317,existing_components,yes,ok
+mikel_oyarzabal__esp,Mikel Oyarzabal,ESP,FWD,0.8478,0.077073,56.76021,0.22022,0.093551,0.128454,1.517663,3.795957,existing_components,yes,ok
+nahuel_molina__arg,Nahuel Molina,ARG,DEF,0.891,0.081,66.501567,0.027877,0.0239,0.007648,1.406504,3.778393,existing_components,yes,ok
+andrej_kramari__cro,Andrej Kramaric,CRO,FWD,0.8826,0.080236,59.338081,0.080503,0.039017,0.16672,0.636206,3.762345,existing_components,yes,ok
+nuno_mendes__por,Nuno Mendes,POR,DEF,0.7657,0.069609,57.898406,0.038499,0.077014,0.011736,1.479693,3.700847,existing_components,yes,ok
+cristian_romero__arg,Cristian Romero,ARG,DEF,0.8499,0.077264,63.819841,0.028791,0.026927,0.007181,1.365552,3.685343,existing_components,yes,ok
+ousmane_demb_l__fra,Ousmane Dembele,FRA,FWD,0.698,0.063455,46.72761,0.21955,0.07197,0.151469,1.389918,3.675256,existing_components,yes,ok
+juli_n_lvarez__arg,Julian Alvarez,ARG,FWD,0.7993,0.072664,53.126274,0.216236,0.070883,0.162268,1.397284,3.669806,existing_components,yes,ok
+arda_g_ler__tur,Arda Güler,TUR,MID,0.8467,0.076973,60.654201,0.207975,0.107998,0.065228,1.526277,3.650199,existing_components,no,ok
+amar_memi__bih,Amar Memic,BIH,MID,0.8296,0.075418,55.703492,0.095992,0.050983,0.169705,0.852158,3.643752,existing_components,yes,ok
+enner_valencia__ecu,Enner Valencia,ECU,FWD,0.8568,0.077891,57.439872,0.171525,0.059295,0.144372,1.107029,3.601929,existing_components,no,ok
+richie_laryea__can,Richie Laryea,CAN,DEF,0.8983,0.081664,67.47311,0.031498,0.056934,0.00809,1.301701,3.600935,existing_components,yes,ok
+antonio_nusa__nor,Antonio Nusa,NOR,MID,0.8157,0.074155,54.169821,0.237187,0.062569,0.120133,1.650005,3.572754,existing_components,yes,ok
+federico_vi_as__uru,Federico Vinas,URU,FWD,0.7883,0.071664,52.677359,0.186584,0.12774,0.137595,1.394627,3.572304,existing_components,yes,ok
+manuel_neuer__ger,Manuel Neuer,GER,GK,0.7293,0.0663,,,,,1.682251,3.554182,existing_components,yes,ok
+ayoub_el_kaabi__mar,Ayoub El Kaabi,MAR,FWD,0.7445,0.067682,49.97084,0.078584,0.033388,0.142357,0.571548,3.547601,existing_components,yes,ok
+c_sar_montes__mex,Cesar Montes,MEX,DEF,0.6417,0.058336,48.345036,0.084867,0.024253,0.013405,1.481335,3.544474,existing_components,yes,ok
+ricardo_rodr_guez__sui,Ricardo Rodriguez,SUI,DEF,0.8884,0.080764,66.821006,0.022371,0.020779,0.005115,1.448878,3.516019,existing_components,yes,ok
+fabian_rieder__sui,Fabian Rieder,SUI,MID,0.7887,0.0717,52.776649,0.16502,0.058796,0.111713,1.270885,3.509727,existing_components,yes,ok
+matheus_cunha__bra,Matheus Cunha,BRA,FWD,0.6946,0.063145,46.545146,0.176904,0.083959,0.132082,1.205227,3.49405,existing_components,yes,ok
+nico_williams__esp,Nico Williams,ESP,FWD,0.8158,0.074164,54.653705,0.200344,0.08111,0.131303,1.393402,3.491935,existing_components,yes,ok
+leandro_trossard__bel,Leandro Trossard,BEL,FWD,0.6774,0.061582,45.33635,0.176539,0.080817,0.13108,1.191625,3.489978,existing_components,yes,ok
+luiz_henrique__bra,Luiz Henrique,BRA,FWD,0.8148,0.074073,54.12472,0.177221,0.067288,0.13343,1.186418,3.439202,existing_components,yes,ok
+max_arfsten__usa,Max Arfsten,USA,DEF,0.8217,0.0747,61.881405,0.04508,0.05521,0.028303,1.307492,3.430177,existing_components,yes,ok
+denzel_dumfries__ned,Denzel Dumfries,NED,DEF,0.8258,0.075073,61.878846,0.042864,0.026111,0.014269,1.050032,3.421873,existing_components,yes,ok
+manuel_akanji__sui,Manuel Akanji,SUI,DEF,0.8685,0.078955,65.222613,0.02089,0.019537,0.004168,1.406322,3.414628,existing_components,yes,ok
+leo_pereira__bra,Leo Pereira,BRA,DEF,0.873,0.079364,,,,,1.089804,3.409475,existing_components,yes,ok
+timothy_castagne__bel,Timothy Castagne,BEL,DEF,0.7767,0.070609,58.501821,0.021878,0.049619,0.005158,1.076326,3.39511,existing_components,yes,ok
+jeremy_doku__bel,Jeremy Doku,BEL,FWD,0.7134,0.064855,47.79994,0.163232,0.086681,0.121279,1.157734,3.387983,existing_components,yes,ok
+erling_haaland__nor,Erling Haaland,NOR,FWD,0.8883,0.080755,58.991115,0.258297,0.068138,0.130825,1.543012,3.373354,existing_components,yes,ok
+joshua_kimmich__ger,Joshua Kimmich,GER,MID,0.9287,0.084427,66.421553,0.138562,0.14586,0.062555,1.428146,3.357629,existing_components,no,ok
+marquinhos__bra,Marquinhos,BRA,DEF,0.7639,0.069445,57.154234,0.020752,0.020205,0.005556,1.074153,3.357613,existing_components,yes,ok
+antonio_r_diger__ger,Antonio Rüdiger,GER,DEF,0.7723,0.070209,57.761862,0.020867,0.022768,0.007286,1.554223,3.354206,existing_components,no,ok
+omar_marmoush__egy,Omar Marmoush,EGY,FWD,0.8626,0.078418,57.928766,0.080955,0.031747,0.17148,0.613425,3.349512,existing_components,yes,ok
+nicol_s_otamendi__arg,Nicolas Otamendi,ARG,DEF,0.7821,0.0711,58.156956,0.022433,0.019233,0.005275,1.209986,3.336816,existing_components,no,ok
+silvan_widmer__sui,Silvan Widmer,SUI,DEF,0.632,0.057455,44.46752,0.048267,0.047916,0.022303,1.327229,3.329938,existing_components,yes,ok
+emiliano_mart_nez__arg,Emiliano Martinez,ARG,GK,0.7332,0.066655,58.656733,0,0,0,1.21398,3.29951,existing_components,yes,ok
+r_ben_dias__por,Ruben Dias,POR,DEF,0.8077,0.073427,60.844041,0.025024,0.037186,0.005492,1.312586,3.289067,existing_components,yes,ok
+remo_freuler__sui,Remo Freuler,SUI,MID,0.8331,0.075736,59.664956,0.123944,0.124858,0.044205,1.19884,3.284851,existing_components,yes,ok
+mehdi_taremi__irn,Mehdi Taremi,IRN,FWD,0.9079,0.082536,60.66497,0.272724,0.094657,0.255145,1.79433,3.283762,existing_components,yes,ok
+maxence_lacroix__fra,Maxence Lacroix,FRA,DEF,0.873,0.079364,,,,,1.106988,3.266332,existing_components,yes,ok
+virgil_van_dijk__ned,Virgil van Dijk,NED,DEF,0.8829,0.080264,66.411738,0.019586,0.020777,0.006387,0.937917,3.265547,existing_components,no,ok
+lyndon_dykes__sco,Lyndon Dykes,SCO,FWD,0.8595,0.078136,57.550401,0.268817,0.09403,0.185258,1.703392,3.261197,existing_components,yes,ok
+gonzalo_plata__ecu,Gonzalo Plata,ECU,MID,0.7964,0.0724,53.05139,0.119894,0.093177,0.119102,1.085646,3.247744,existing_components,no,ok
+morgan_rogers__eng,Morgan Rogers,ENG,MID,0.8928,0.081164,63.31559,0.127294,0.089005,0.041568,1.06471,3.239439,existing_components,yes,ok
+alexis_mac_allister__arg,Alexis Mac Allister,ARG,MID,0.7538,0.068527,53.620809,0.160305,0.092277,0.047749,1.245872,3.238855,existing_components,no,ok
+nick_woltemade__ger,Nick Woltemade,GER,FWD,0.9083,0.082573,60.274788,0.195411,0.061213,0.140212,1.359532,3.229748,existing_components,yes,ok
+alistair_johnston__can,Alistair Johnston,CAN,DEF,0.8759,0.079627,65.490167,0.026397,0.026026,0.008218,1.15527,3.229357,existing_components,yes,ok
+bruno_fernandes__por,Bruno Fernandes,POR,MID,0.8419,0.076536,60.179854,0.135156,0.137071,0.063307,1.314757,3.222135,existing_components,yes,ok
+malik_tillman__usa,Malik Tillman,USA,MID,0.6757,0.061427,48.404445,0.144458,0.105512,0.069639,1.204858,3.21936,existing_components,yes,ok
+maxim_de_cuyper__bel,Maxim De Cuyper,BEL,DEF,0.7162,0.065109,53.551706,0.041126,0.016545,0.007052,1.014772,3.214931,existing_components,yes,ok
+donyell_malen__ned,Donyell Malen,NED,FWD,0.7099,0.064536,47.220418,0.122677,0.061677,0.120569,0.88817,3.213349,existing_components,no,ok
+rodrigo_de_paul__arg,Rodrigo de Paul,ARG,MID,0.9318,0.084709,66.316206,0.13119,0.114866,0.059731,1.219733,3.192296,existing_components,yes,ok
+jes_s_gallardo__mex,Jesus Gallardo,MEX,DEF,0.7889,0.071718,59.214834,0.028432,0.028946,0.00585,1.322215,3.190061,existing_components,yes,ok
+jo_ko_gvardiol__cro,Josko Gvardiol,CRO,DEF,0.8562,0.077836,64.741563,0.016768,0.012049,0.0166,0.554039,3.187923,existing_components,yes,ok
+marcel_sabitzer__aut,Marcel Sabitzer,AUT,MID,0.8181,0.074373,58.382888,0.203354,0.171554,0.091942,1.778972,3.182845,existing_components,yes,ok
+michael_gregoritsch__aut,Michael Gregoritsch,AUT,FWD,0.7668,0.069709,50.887915,0.28847,0.085188,0.182905,1.748035,3.177616,existing_components,yes,ok
+casemiro__bra,Casemiro,BRA,MID,0.7578,0.068891,54.179669,0.114363,0.117312,0.042002,1.086602,3.176236,existing_components,no,ok
+scott_mctominay__sco,Scott McTominay,SCO,MID,0.8738,0.079436,62.556216,0.214501,0.128173,0.106996,1.711519,3.174431,existing_components,yes,ok
+james_rodr_guez__col,James Rodriguez,COL,MID,0.8875,0.080682,63.201537,0.135811,0.133614,0.050086,1.273594,3.172815,existing_components,yes,ok
+nicol_s_tagliafico__arg,Nicolas Tagliafico,ARG,DEF,0.7459,0.067809,55.807492,0.023729,0.020343,0.005787,1.172271,3.171941,existing_components,yes,ok
+marc_cucurella__esp,Marc Cucurella,ESP,DEF,0.6634,0.060309,49.836598,0.017507,0.017511,0.003202,1.250391,3.152785,existing_components,yes,ok
+abde_ezzalzouli__mar,Abde Ezzalzouli,MAR,FWD,0.7489,0.068082,50.345551,0.063362,0.034902,0.152874,0.525832,3.149748,existing_components,yes,ok
+nicolas_seiwald__aut,Nicolas Seiwald,AUT,MID,0.947,0.086091,67.839292,0.184919,0.190246,0.083104,1.754849,3.1454,existing_components,yes,ok
+marc_gu_hi__eng,Marc Guehi,ENG,DEF,0.6708,0.060982,50.188585,0.016855,0.065882,0.004128,0.990066,3.133486,existing_components,yes,ok
+jordan_pickford__eng,Jordan Pickford,ENG,GK,0.78,0.070909,62.25882,0.0,0.0,0.0,1.044689,3.131927,existing_components,no,ok
+tijjani_reijnders__ned,Tijjani Reijnders,NED,MID,0.884,0.080364,63.045996,0.112876,0.094181,0.070447,1.014191,3.107386,existing_components,yes,ok
+rodrigo_aguirre__uru,Rodrigo Aguirre,URU,FWD,0.8234,0.074855,54.852438,0.184069,0.063999,0.135814,1.199421,3.070719,existing_components,yes,ok
+alex_freeman__usa,Alex Freeman,USA,DEF,0.8632,0.078473,65.281226,0.029386,0.026089,0.028186,1.174357,3.06825,existing_components,yes,ok
+emil_holm__swe,Emil Holm,SWE,DEF,0.7883,0.071664,55.951169,0.094765,0.071031,0.048277,1.632341,3.063242,existing_components,yes,ok
+david_raum__ger,David Raum,GER,DEF,0.6701,0.060918,49.913069,0.015255,0.013079,0.003587,1.303053,3.058245,existing_components,no,ok
+armin_gigovic__bih,Armin Gigovic,BIH,MID,0.8312,0.075564,55.523329,0.074292,0.04612,0.155841,0.715042,3.055758,existing_components,yes,ok
+firas_al_buraikan__ksa,Firas Al-Buraikan,KSA,FWD,0.8388,0.076255,56.478082,0.134249,0.04999,0.252769,0.96902,3.054508,existing_components,yes,ok
+ruben_vargas__sui,Ruben Vargas,SUI,FWD,0.8607,0.078245,57.164251,0.157098,0.054446,0.110041,1.079312,3.026384,existing_components,no,ok
+giovani_lo_celso__arg,Giovani Lo Celso,ARG,MID,0.7765,0.070591,55.263505,0.140161,0.096526,0.049169,1.163659,3.023802,existing_components,yes,ok
+dan_ndoye__sui,Dan Ndoye,SUI,FWD,0.8479,0.077082,56.422658,0.16154,0.057488,0.108705,1.101365,3.022619,existing_components,yes,ok
+theo_hern_ndez__fra,Theo Hernandez,FRA,DEF,0.703,0.063909,52.615332,0.020762,0.026701,0.004747,1.039088,3.020246,existing_components,yes,ok
+nathan_ngoy__bel,Nathan Ngoy,BEL,DEF,0.8655,0.078682,,,,,0.942471,3.018774,existing_components,yes,ok
+marcus_rashford__eng,Marcus Rashford,ENG,FWD,0.7499,0.068173,49.800109,0.147526,0.057197,0.118165,0.999462,3.001099,existing_components,yes,ok
+ferr_n_torres__esp,Ferran Torres,ESP,FWD,0.8416,0.076509,55.848576,0.166478,0.071363,0.100962,1.207645,2.999406,existing_components,yes,ok
+konrad_laimer__aut,Konrad Laimer,AUT,MID,0.8698,0.079073,62.177653,0.194515,0.14966,0.09031,1.676064,2.99842,existing_components,yes,ok
+chris_richards__usa,Chris Richards,USA,DEF,0.6712,0.061018,50.758829,0.057582,0.020286,0.026026,1.138139,2.988061,existing_components,yes,ok
+pau_cubars__esp,Pau Cubarsi,ESP,DEF,0.6024,0.054764,44.794464,0.012216,0.012567,0.002681,1.071396,2.974108,existing_components,no,ok
+john_stones__eng,John Stones,ENG,DEF,0.7454,0.067764,55.694797,0.016805,0.01716,0.004704,0.927698,2.970561,existing_components,yes,ok
+malo_gusto__fra,Malo Gusto,FRA,DEF,0.6615,0.060136,49.18914,0.017202,0.014748,0.004719,0.923803,2.962731,existing_components,no,ok
+romano_schmid__aut,Romano Schmid,AUT,MID,0.8195,0.0745,58.495091,0.179905,0.172303,0.078259,1.652403,2.953674,existing_components,yes,ok
+lyle_foster__rsa,Lyle Foster,RSA,FWD,0.7768,0.070618,52.476724,0.100139,0.06121,0.191282,0.78105,2.930712,existing_components,yes,ok
+enzo_fern_ndez__arg,Enzo Fernandez,ARG,MID,0.9015,0.081955,63.525099,0.107594,0.092244,0.047229,1.016359,2.929564,existing_components,no,ok
+florian_wirtz__ger,Florian Wirtz,GER,MID,0.8582,0.078018,60.981976,0.132949,0.102584,0.055233,1.234773,2.926142,existing_components,yes,ok
+william_saliba__fra,William Saliba,FRA,DEF,0.6775,0.061591,50.922932,0.021979,0.018843,0.004824,1.009745,2.924702,existing_components,yes,ok
+jonathan_tah__ger,Jonathan Tah,GER,DEF,0.5671,0.051555,42.661799,0.016537,0.014178,0.006481,1.185585,2.919043,existing_components,no,ok
+juan_manuel_sanabria__uru,Juan Manuel Sanabria,URU,MID,0.5812,0.052836,38.838109,0.165833,0.047089,0.101446,1.152728,2.91661,existing_components,yes,ok
+pedro_neto__por,Pedro Neto,POR,FWD,0.6389,0.058082,42.744966,0.175562,0.072042,0.112797,1.179888,2.911707,existing_components,yes,ok
+kevin_de_bruyne__bel,Kevin De Bruyne,BEL,MID,0.8443,0.076755,59.561144,0.121559,0.074842,0.044857,0.993558,2.908994,existing_components,yes,ok
+piero_hincapi__ecu,Piero Hincapie,ECU,DEF,0.8766,0.079691,65.586335,0.015586,0.01659,0.004782,1.037407,2.907833,existing_components,yes,ok
+thomas_meunier__bel,Thomas Meunier,BEL,DEF,0.7556,0.068691,56.186416,0.016408,0.016943,0.003438,0.90727,2.888915,existing_components,yes,ok
+noni_madueke__eng,Noni Madueke,ENG,FWD,0.7302,0.066382,48.456072,0.140441,0.053441,0.113802,0.95084,2.87927,existing_components,yes,ok
+der_milit_o__bra,Eder Militão,BRA,DEF,0.6505,0.059136,48.844093,0.017945,0.018581,0.004913,0.914634,2.874073,existing_components,yes,ok
+iliman_ndiaye__sen,Iliman Ndiaye,SEN,MID,0.7625,0.069318,51.150025,0.05998,0.027651,0.121339,0.507231,2.859908,existing_components,yes,ok
+john_yeboah__ecu,John Yeboah,ECU,MID,0.6657,0.060518,44.767659,0.117567,0.071065,0.118445,0.995632,2.855094,existing_components,no,ok
+jules_kounde__fra,Jules Kounde,FRA,DEF,0.7661,0.069645,,,,,0.965314,2.848916,existing_components,yes,ok
+che_adams__sco,Che Adams,SCO,FWD,0.8708,0.079164,57.786288,0.230426,0.080256,0.154091,1.480102,2.840463,existing_components,yes,ok
+ibrahim_maza__alg,Ibrahim Maza,ALG,MID,0.7371,0.067009,49.460884,0.064384,0.032087,0.121084,0.534578,2.840032,existing_components,yes,ok
+davinson_s_nchez__col,Davinson Sanchez,COL,DEF,0.7666,0.069691,57.356245,0.022863,0.0196,0.005575,1.164411,2.836651,existing_components,yes,ok
+luis_d_az__col,Luis Diaz,COL,FWD,0.9001,0.081827,64.139326,0.161703,0.097419,0.051557,1.137106,2.829099,existing_components,yes,ok
+pervis_estupi_n__ecu,Pervis Estupinan,ECU,DEF,0.8713,0.079209,64.789868,0.014462,0.01368,0.003943,1.015334,2.82638,existing_components,yes,ok
+leonardo_balerdi__arg,Leonardo Balerdi,ARG,DEF,0.5864,0.053309,43.7601,0.018218,0.015619,0.004998,0.907782,2.820277,existing_components,no,ok
+lucas_hern_ndez__fra,Lucas Hernandez,FRA,DEF,0.6898,0.062709,51.293528,0.017727,0.015198,0.004863,0.964273,2.813235,existing_components,yes,ok
+david_m_ller_wolfe__nor,David Møller Wolfe,NOR,DEF,0.8444,0.076764,63.766555,0.026855,0.025902,0.005526,1.425786,2.810873,existing_components,yes,ok
+alireza_jahanbakhsh__irn,Alireza Jahanbakhsh,IRN,FWD,0.825,0.075,54.944175,0.231786,0.081532,0.217952,1.534368,2.810095,existing_components,yes,ok
+math_as_olivera__uru,Mathias Olivera,URU,DEF,0.8379,0.076173,62.69503,0.021734,0.018728,0.00457,1.200706,2.803804,existing_components,yes,ok
+ismael_d_az__pan,Ismael Diaz,PAN,FWD,0.6337,0.057609,42.76271,0.15409,0.041453,0.221672,1.006602,2.803053,existing_components,yes,ok
+julio_soler__arg,Julio Soler,ARG,DEF,0.7502,0.0682,,,,,1.031487,2.788977,existing_components,yes,ok
+gabriel_martinelli__bra,Gabriel Martinelli,BRA,FWD,0.6448,0.058618,42.788928,0.149587,0.052848,0.103179,0.962568,2.785993,existing_components,yes,ok
+bukayo_saka__eng,Bukayo Saka,ENG,FWD,0.8152,0.074109,58.094413,0.127391,0.090267,0.041599,0.927545,2.782272,existing_components,yes,ok
+ralph_priso__can,Ralph Priso,CAN,DEF,0.873,0.079364,,,,,0.979494,2.779667,existing_components,yes,ok
+dayot_upamecano__fra,Dayot Upamecano,FRA,DEF,0.6745,0.061318,50.323096,0.018275,0.015667,0.004457,0.949317,2.774369,existing_components,yes,ok
+mat_as_vi_a__uru,Matias Viña,URU,DEF,0.7228,0.065709,53.747408,0.017488,0.015071,0.003269,1.017383,2.774081,existing_components,no,ok
+merih_demiral__tur,Merih Demiral,TUR,DEF,0.8407,0.076427,63.587185,0.027412,0.026396,0.008718,1.111168,2.762469,existing_components,yes,ok
+luka_modri__cro,Luka Modric,CRO,MID,0.9158,0.083255,65.482447,0.043454,0.050203,0.049813,0.421741,2.760494,existing_components,yes,ok
+martin_baturina__cro,Martin Baturina,CRO,MID,0.5703,0.051845,38.192991,0.048455,0.031203,0.09122,0.446292,2.754023,existing_components,yes,ok
+riyad_mahrez__alg,Riyad Mahrez,ALG,FWD,0.858,0.078,57.406206,0.075791,0.029302,0.130814,0.52191,2.753755,existing_components,yes,ok
+jo_o_cancelo__por,João Cancelo,POR,DEF,0.732,0.066545,54.43152,0.017013,0.019448,0.003112,1.096317,2.75188,existing_components,yes,ok
+alphonso_davies__can,Alphonso Davies,CAN,DEF,0.8616,0.078327,,,,,0.96605,2.741508,existing_components,yes,ok
+mario_pa_ali__cro,Mario Pasalic,CRO,MID,0.7032,0.063927,46.866874,0.049719,0.026714,0.100189,0.443966,2.740511,existing_components,yes,ok
+willian_pacho__ecu,Willian Pacho,ECU,DEF,0.7838,0.071255,59.283497,0.01662,0.018499,0.005599,0.970095,2.730643,existing_components,yes,ok
+david_ospina__col,David Ospina,COL,GK,0.6871,0.062464,54.561924,0.0,0.0,0.0,1.112489,2.724693,existing_components,yes,ok
+johan_v_squez__mex,Johan Vasquez,MEX,DEF,0.6207,0.056427,46.749883,0.023802,0.040813,0.007561,1.130898,2.722836,existing_components,yes,ok
+ezri_konsa__eng,Ezri Konsa,ENG,DEF,0.629,0.057182,47.061151,0.015804,0.038831,0.003871,0.856414,2.720191,existing_components,yes,ok
+jos_mar_a_gim_nez__uru,Jose Maria Gimenez,URU,DEF,0.8283,0.0753,61.63546,0.019426,0.01674,0.005447,1.169914,2.716684,existing_components,yes,ok
+kerim_alajbegovi__bih,Kerim Alajbegovic,BIH,MID,0.873,0.079364,57.93228,0.070398,0.03164,0.143505,0.647227,2.714846,existing_components,yes,ok
+jefferson_lerma__col,Jefferson Lerma,COL,MID,0.8225,0.074773,58.311137,0.135766,0.079881,0.042359,1.090017,2.713813,existing_components,yes,ok
+jo_o_f_lix__por,João Felix,POR,FWD,0.7051,0.0641,46.790436,0.167414,0.061134,0.107169,1.104009,2.708458,existing_components,yes,ok
+stefan_posch__aut,Stefan Posch,AUT,DEF,0.7042,0.064018,53.205831,0.057918,0.046269,0.016612,1.410596,2.694152,existing_components,yes,ok
+zeno_debast__bel,Zeno Debast,BEL,DEF,0.6566,0.059691,49.447889,0.017406,0.01746,0.009484,0.846469,2.69196,existing_components,yes,ok
+achraf_hakimi__mar,Achraf Hakimi,MAR,DEF,0.8167,0.074245,61.301502,0.007216,0.015051,0.013897,0.429025,2.687312,existing_components,yes,ok
+diogo_costa__por,Diogo Costa,POR,GK,0.6165,0.056045,49.61777,0.0,0.0,0.0,1.068206,2.686974,existing_components,yes,ok
+philipp_lienhart__aut,Philipp Lienhart,AUT,DEF,0.6814,0.061945,51.35303,0.071815,0.029042,0.01487,1.408012,2.675404,existing_components,yes,ok
+c_dric_bakambu__cod,Cedric Bakambu,COD,FWD,0.7818,0.071073,52.372782,0.076936,0.028675,0.172147,0.550927,2.673578,existing_components,no,ok
+juli_n_qui_ones__mex,Julian Quinones,MEX,FWD,0.6223,0.056573,41.295828,0.170667,0.077594,0.109252,1.13004,2.670781,existing_components,yes,ok
+nikola_vla_i__cro,Nikola Vlasic,CRO,MID,0.732,0.066545,48.57552,0.047879,0.025917,0.094857,0.429667,2.663852,existing_components,yes,ok
+declan_rice__eng,Declan Rice,ENG,MID,0.8465,0.076955,60.317357,0.089154,0.093948,0.043296,0.882298,2.656657,existing_components,yes,ok
+daniel_mu_oz__col,Daniel Muñoz,COL,DEF,0.7378,0.067073,54.89896,0.017685,0.015162,0.004852,1.081505,2.651173,existing_components,yes,ok
+pedro_porro__esp,Pedro Porro,ESP,DEF,0.5375,0.048864,40.240475,0.013403,0.024131,0.002942,1.046893,2.638547,existing_components,yes,ok
+alexander_schlager__aut,Alexander Schlager,AUT,GK,0.789,0.071727,62.761005,0,0,0,1.293483,2.634172,existing_components,yes,ok
+mohamed_el_shenawy__egy,Mohamed El-Shennawy,EGY,GK,0.8557,0.077791,68.592494,0.0,0.0,0.0,0.455002,2.631193,existing_components,yes,ok
+alisson_becker__bra,Alisson Becker,BRA,GK,0.5323,0.048391,,,,,0.839115,2.625287,existing_components,yes,ok
+elias_achouri__tun,Elias Achouri,TUN,MID,0.8269,0.075173,55.550315,0.105236,0.041122,0.159261,0.845219,2.621389,existing_components,yes,ok
+lee_kang_in__kor,Kang-In Lee,KOR,MID,0.7678,0.0698,51.607677,0.119956,0.08072,0.149248,1.077882,2.620561,existing_components,yes,ok
+noussair_mazraoui__mar,Noussair Mazraoui,MAR,DEF,0.7704,0.070036,58.150562,0.00773,0.015521,0.008084,0.416334,2.618245,existing_components,yes,ok
+nico_schlotterbeck__ger,Nico Schlotterbeck,GER,DEF,0.6026,0.054782,45.111841,0.016183,0.017658,0.004843,1.232439,2.613993,existing_components,yes,ok
+bart_verbruggen__ned,Bart Verbruggen,NED,GK,0.686,0.062364,55.184584,0,0,0,0.794573,2.61187,existing_components,yes,ok
+arthur_theate__bel,Arthur Theate,BEL,DEF,0.6402,0.0582,48.168648,0.017387,0.017441,0.004372,0.82327,2.60833,existing_components,yes,ok
+frantzdy_pierrot__hai,Frantzdy Pierrot,HAI,FWD,0.8145,0.074045,55.063458,0.151027,0.047878,0.27874,1.036972,2.604592,existing_components,yes,ok
+dominik_livakovi__cro,Dominik Livakovic,CRO,GK,0.7817,0.071064,62.862751,0.0,0.0,0.0,0.495798,2.596297,existing_components,yes,ok
+son_heung_min__kor,Heung-Min Son,KOR,FWD,0.8464,0.076945,56.765509,0.157363,0.064105,0.15878,1.065183,2.592957,existing_components,yes,ok
+marcus_thuram__fra,Marcus Thuram,FRA,FWD,0.6205,0.056409,41.23781,0.152819,0.049574,0.112179,0.981577,2.591956,existing_components,yes,ok
+maxime_cr_peau__can,Maxime Crepeau,CAN,GK,0.6834,0.062127,54.271528,0.0,0.0,0.0,0.911213,2.584253,existing_components,yes,ok
+jorge_carrascal__col,Jorge Carrascal,COL,MID,0.5975,0.054318,39.6501,0.137441,0.043054,0.102968,1.02104,2.573817,existing_components,yes,ok
+kristoffer_ajer__nor,Kristoffer Ajer,NOR,DEF,0.8028,0.072982,60.064693,0.022215,0.020634,0.005079,1.312009,2.572664,existing_components,yes,ok
+wout_weghorst__ned,Wout Weghorst,NED,FWD,0.7055,0.064136,46.81698,0.127662,0.046369,0.10981,0.847323,2.569336,existing_components,yes,ok
+ibrahim_mbaye__sen,Ibrahim Mbaye,SEN,MID,0.8137,0.073973,54.054091,0.053331,0.024272,0.106662,0.447657,2.561645,existing_components,yes,ok
+john_mcginn__sco,John McGinn,SCO,MID,0.867,0.078818,61.459029,0.176629,0.108458,0.058935,1.400649,2.559743,existing_components,yes,ok
+santiago_arias__col,Santiago Arias,COL,DEF,0.6674,0.060673,49.934201,0.019905,0.030337,0.004854,1.047086,2.556068,existing_components,yes,ok
+nayef_aguerd__mar,Nayef Aguerd,MAR,DEF,0.7453,0.067755,56.371511,0.007327,0.016183,0.005364,0.40419,2.555573,existing_components,yes,ok
+jamal_musiala__ger,Jamal Musiala,GER,MID,0.8355,0.075955,59.139197,0.113251,0.091798,0.041803,1.084437,2.551727,existing_components,yes,ok
+ibrahima_konat__fra,Ibrahima Konate,FRA,DEF,0.5889,0.053536,44.185756,0.018448,0.015816,0.004338,0.879808,2.541899,existing_components,yes,ok
+leon_goretzka__ger,Leon Goretzka,GER,MID,0.7892,0.071745,55.682795,0.084676,0.066547,0.038718,0.848714,2.535768,existing_components,no,ok
+nathan_ak__ned,Nathan Ake,NED,DEF,0.6366,0.057873,47.337576,0.01021,0.009476,0.003884,0.6202,2.533847,existing_components,no,ok
+billy_gilmour__sco,Billy Gilmour,SCO,MID,0.7931,0.0721,56.783581,0.162242,0.116335,0.063934,1.364852,2.531457,existing_components,yes,ok
+bernardo_silva__por,Bernardo Silva,POR,MID,0.8322,0.075655,58.956,0.10935,0.101562,0.039,1.039679,2.528491,existing_components,yes,ok
+alexander_s_rloth__nor,Alexander Sørloth,NOR,FWD,0.8078,0.073436,53.64519,0.171648,0.061963,0.118969,1.145683,2.526252,existing_components,yes,ok
+granit_xhaka__sui,Granit Xhaka,SUI,MID,0.9256,0.084145,65.964735,0.091544,0.086661,0.040812,0.91997,2.523571,existing_components,yes,ok
+ritsu_doan__jpn,Ritsu Doan,JPN,MID,0.8106,0.073691,54.594,0.06412,0.02726,0.1,0.548405,2.52287,existing_components,yes,ok
+d_sir_dou__fra,Desire Doue,FRA,FWD,0.7192,0.065382,50.602912,0.076318,0.06543,0.038386,0.650409,2.519015,existing_components,no,ok
+youri_tielemans__bel,Youri Tielemans,BEL,MID,0.7474,0.067945,53.001124,0.099845,0.073391,0.043621,0.860114,2.516224,existing_components,yes,ok
+youssef_en_nesyri__mar,Youssef En-Nesyri,MAR,FWD,0.7808,0.070982,51.813888,0.052712,0.023405,0.116569,0.408562,2.512695,existing_components,yes,ok
+gonzalo_montiel__arg,Gonzalo Montiel,ARG,DEF,0.5485,0.049864,40.795236,0.033322,0.013332,0.003657,0.939202,2.507885,existing_components,yes,ok
+david_alaba__aut,David Alaba,AUT,DEF,0.9111,0.082827,,,,,1.217605,2.498191,existing_components,yes,ok
+jhon_c_rdoba__col,Jhon Cordoba,COL,FWD,0.6658,0.060527,44.182488,0.151236,0.048624,0.114102,0.98382,2.496304,existing_components,yes,ok
+tyler_adams__usa,Tyler Adams,USA,MID,0.8298,0.075436,59.439,0.101421,0.091324,0.06,0.930379,2.493315,existing_components,yes,ok
+ngelo_preciado__ecu,Angelo Preciado,ECU,DEF,0.7096,0.064509,52.887198,0.010953,0.01209,0.00448,0.817965,2.488264,existing_components,no,ok
+mustafa_eskihella__tur,Mustafa Eskihellac,TUR,DEF,0.8002,0.072745,59.650909,0.020184,0.01822,0.005895,0.997425,2.468823,existing_components,yes,ok
+aur_lien_tchouam_ni__fra,Aurelien Tchouameni,FRA,MID,0.8272,0.0752,58.548389,0.098119,0.092884,0.0415,0.94376,2.455817,existing_components,yes,ok
+ferdi_kadioglu__tur,Ferdi Kadioglu,TUR,DEF,0.8985,0.081682,,,,,0.997143,2.455348,existing_components,yes,ok
+danilo_luiz_da_silva__bra,Danilo Luiz da Silva,BRA,DEF,0.6378,0.057982,,,,,0.782725,2.452517,existing_components,yes,ok
+j_rgen_strand_larsen__nor,Jørgen Strand Larsen,NOR,FWD,0.7453,0.067755,49.616112,0.171852,0.060271,0.111439,1.116104,2.446194,existing_components,yes,ok
+i_smail_y_ksek__tur,Ismail Yüksek,TUR,MID,0.7936,0.072145,56.641613,0.099022,0.094652,0.058226,0.925796,2.444411,existing_components,yes,ok
+ollie_watkins__eng,Ollie Watkins,ENG,FWD,0.5529,0.050264,36.717536,0.129809,0.042019,0.087235,0.807462,2.439023,existing_components,yes,ok
+micky_van_de_ven__ned,Micky van de Ven,NED,DEF,0.7361,0.066918,54.761423,0.011099,0.015452,0.004222,0.73769,2.426258,existing_components,yes,ok
+ryan_christie__sco,Ryan Christie,SCO,MID,0.8264,0.075127,58.859514,0.155091,0.112282,0.067133,1.310374,2.423204,existing_components,yes,ok
+waldemar_anton__ger,Waldemar Anton,GER,DEF,0.4632,0.042109,34.443552,0.010137,0.00869,0.002225,0.881731,2.421647,existing_components,no,ok
+igor_matanovic__cro,Igor Matanovic,CRO,FWD,0.6651,0.060464,44.320269,0.05169,0.025414,0.10514,0.399087,2.416882,existing_components,yes,ok
+wesley_franca__bra,Wesley Franca,BRA,DEF,0.6273,0.057027,,,,,0.769015,2.409797,existing_components,yes,ok
+alexander_isak__swe,Alexander Isak,SWE,FWD,0.8206,0.0746,54.719249,0.189814,0.072365,0.178522,1.278285,2.40217,existing_components,yes,ok
+sebastian_berhalter__usa,Sebastian Berhalter,USA,MID,0.6894,0.062673,49.198342,0.08934,0.100256,0.057168,0.896428,2.401589,existing_components,yes,ok
+elliot_anderson__eng,Elliot Anderson,ENG,MID,0.8807,0.080064,62.192392,0.078251,0.082856,0.037855,0.795985,2.387767,existing_components,yes,ok
+issa_diop__mar,Issa Diop,MAR,DEF,0.8568,0.077891,,,,,0.416945,2.380426,existing_components,yes,ok
+vitinha__por,Vitinha,POR,MID,0.7497,0.068155,53.311917,0.089993,0.120183,0.034185,0.980707,2.38041,existing_components,yes,ok
+kevin_rodr_guez__ecu,Kevin Rodriguez,ECU,FWD,0.6968,0.063345,46.372737,0.103003,0.042526,0.102652,0.712591,2.379496,existing_components,no,ok
+johan_mojica__col,Johan Mojica,COL,DEF,0.645,0.058636,48.258255,0.019236,0.016491,0.004691,0.971776,2.364089,existing_components,yes,ok
+pedri__esp,Pedri,ESP,MID,0.8417,0.076518,59.579735,0.085223,0.099796,0.033075,0.955574,2.357398,existing_components,yes,ok
+abdelhamid_ait_boudlal__mar,Abdelhamid Ait Boudlal,MAR,DEF,0.8488,0.077164,,,,,0.412586,2.356874,existing_components,yes,ok
+alan_minda__ecu,Alan Minda,ECU,MID,0.6476,0.058873,42.974736,0.089304,0.037177,0.090593,0.711063,2.352445,existing_components,yes,ok
+diogo_dalot__por,Diogo Dalot,POR,DEF,0.577,0.052455,43.131327,0.02308,0.016078,0.005541,0.943731,2.350677,existing_components,yes,ok
+eldor_shomurodov__uzb,Eldor Shomurodov,UZB,FWD,0.8976,0.0816,60.457848,0.108911,0.043538,0.19362,0.76978,2.348824,existing_components,yes,ok
+alex_sandro__bra,Alex Sandro,BRA,DEF,0.5519,0.050173,41.064119,0.014071,0.014092,0.003632,0.754894,2.34629,existing_components,yes,ok
+rjan_nyland__nor,Ørjan Nyland,NOR,GK,0.6777,0.061609,54.093336,0.0,0.0,0.0,1.196197,2.338687,existing_components,yes,ok
+michael_olise__fra,Michael Olise,FRA,FWD,0.7944,0.072218,56.169641,0.115338,0.08674,0.043301,0.890728,2.337679,existing_components,yes,ok
+saman_ghoddos__irn,Saman Ghoddos,IRN,MID,0.8236,0.074873,58.707855,0.118797,0.178492,0.067052,1.311835,2.332323,existing_components,yes,ok
+nico_elvedi__sui,Nico Elvedi,SUI,DEF,0.6095,0.055409,45.533307,0.013523,0.01325,0.00318,0.964383,2.325208,existing_components,yes,ok
+neil_el_aynaoui__mar,Neil El Aynaoui,MAR,MID,0.8671,0.078827,62.115576,0.034097,0.041648,0.048137,0.337331,2.303588,existing_components,yes,ok
+julian_ryerson__nor,Julian Ryerson,NOR,DEF,0.7228,0.065709,54.079173,0.019652,0.018534,0.004313,1.173774,2.298992,existing_components,yes,ok
+thibaut_courtois__bel,Thibaut Courtois,BEL,GK,0.493,0.044818,,,,,0.726302,2.29503,existing_components,yes,ok
+gon_alo_ramos__por,Goncalo Ramos,POR,FWD,0.6042,0.054927,40.094712,0.143793,0.051778,0.088366,0.933975,2.289858,existing_components,yes,ok
+chris_wood__nzl,Chris Wood,NZL,FWD,0.8404,0.0764,55.768944,0.065298,0.027719,0.139187,0.502927,2.288244,existing_components,no,ok
+mart_n_zubimendi__esp,Martin Zubimendi,ESP,MID,0.5578,0.050709,39.787874,0.071412,0.062212,0.025912,0.741473,2.287409,existing_components,no,ok
+ladislav_krejci__cze,Ladislav Krejci,CZE,DEF,0.8635,0.0785,,,,,0.711366,2.286036,existing_components,no,ok
+julio_enciso__par,Julio Enciso,PAR,FWD,0.807,0.073364,53.687289,0.072614,0.039509,0.1428,0.594672,2.285729,existing_components,yes,ok
+gon_alo_in_cio__por,Goncalo Inacio,POR,DEF,0.5955,0.054136,44.446334,0.015944,0.016403,0.003499,0.915985,2.280101,existing_components,yes,ok
+yukinari_sugawara__jpn,Yukinari Sugawara,JPN,DEF,0.4631,0.0421,32.583716,0.01214,0.015028,0.012497,0.340203,2.278845,existing_components,no,ok
+dan_burn__eng,Dan Burn,ENG,DEF,0.462,0.042,,,,,0.496562,2.2734,existing_components,no,ok
+martin_caceres__uru,Martin Caceres,URU,DEF,0.7601,0.0691,,,,,0.974741,2.26312,existing_components,yes,ok
+kamal_miller__can,Kamal Miller,CAN,DEF,0.6332,0.057564,47.199994,0.018355,0.018432,0.005587,0.814639,2.262065,existing_components,yes,ok
+mohamed_amoura__alg,Mohamed Amoura,ALG,FWD,0.72,0.065455,48.4236,0.053156,0.032607,0.119974,0.429996,2.253871,existing_components,yes,ok
+leo_ostigard__nor,Leo Østigård,NOR,DEF,0.7689,0.0699,,,,,1.126893,2.239709,existing_components,yes,ok
+jhon_lucum__col,Jhon Lucumi,COL,DEF,0.5164,0.046945,38.952568,0.031095,0.014811,0.004423,0.914587,2.238819,existing_components,yes,ok
+tarik_muharemovic__bih,Tarik Muharemovic,BIH,DEF,0.7755,0.0705,58.022134,0.019148,0.010215,0.0047,0.568003,2.236051,existing_components,yes,ok
+edouard_mendy__sen,Edouard Mendy,SEN,GK,0.848,0.077091,68.384416,0.0,0.0,0.0,0.400073,2.234923,existing_components,yes,ok
+francisco_concei_o__por,Francisco Conceicao,POR,FWD,0.585,0.053182,38.846925,0.139796,0.051113,0.086858,0.909338,2.234632,existing_components,yes,ok
+kim_min_jae__kor,Min-jae Kim,KOR,DEF,0.8652,0.078655,65.36759,0.015757,0.017523,0.006375,0.815429,2.233496,existing_components,yes,ok
+gabriel_magalh_es__bra,Gabriel Magalhaes,BRA,DEF,0.5221,0.047464,38.998259,0.013526,0.013332,0.003055,0.712082,2.232883,existing_components,yes,ok
+petar_sucic__cro,Petar Sucic,CRO,MID,0.8125,0.073864,57.52175,0.0325,0.048358,0.032873,0.337142,2.229336,existing_components,yes,ok
+stefan_de_vrij__ned,Stefan de Vrij,NED,DEF,0.6634,0.060309,49.461777,0.013577,0.012604,0.006887,0.678626,2.227288,existing_components,yes,ok
+richard_r_os__col,Richard Rios,COL,MID,0.8685,0.078955,61.387317,0.093072,0.079794,0.042557,0.88718,2.22458,existing_components,yes,ok
+gregor_kobel__sui,Gregor Kobel,SUI,GK,0.5051,0.045918,40.596402,0,0,0,0.931573,2.222928,existing_components,yes,ok
+jhon_arias__col,Jhon Arias,COL,MID,0.8946,0.081327,62.944056,0.08709,0.074666,0.039822,0.844356,2.220204,existing_components,no,ok
+mois_s_caicedo__ecu,Moises Caicedo,ECU,MID,0.9079,0.082536,64.29657,0.062552,0.070635,0.037967,0.638117,2.215622,existing_components,no,ok
+mohammad_mohebi__irn,Mohammad Mohebi,IRN,FWD,0.8342,0.075836,59.418398,0.185234,0.112099,0.066736,1.261001,2.212681,existing_components,yes,ok
+mert_m_ld_r__tur,Mert Müldür,TUR,DEF,0.7084,0.0644,53.00178,0.01919,0.019248,0.005813,0.894711,2.210596,existing_components,yes,ok
+eric_garcia__esp,Eric Garcia,ESP,DEF,0.5243,0.047664,,,,,0.870237,2.209763,existing_components,yes,ok
+aleksandar_pavlovic__ger,Aleksandar Pavlovic,GER,MID,0.7126,0.064782,50.1478,0.071449,0.056544,0.028649,0.719441,2.208752,existing_components,no,ok
+benjamin_nygren__swe,Benjamin Nygren,SWE,FWD,0.6555,0.059591,44.046322,0.185556,0.05341,0.16301,1.174838,2.199499,existing_components,yes,ok
+phillipp_mwene__aut,Phillipp Mwene,AUT,DEF,0.6568,0.059709,49.305319,0.029411,0.037823,0.009683,1.135069,2.19928,existing_components,yes,ok
+josip_utalo__cro,Josip Sutalo,CRO,DEF,0.6646,0.060418,50.276325,0.006704,0.009353,0.006103,0.387621,2.1948,existing_components,yes,ok
+isma_l_kon__can,Ismael Kone,CAN,MID,0.7892,0.071745,55.617292,0.090965,0.08678,0.046728,0.841333,2.189383,existing_components,yes,ok
+amadou_onana__bel,Amadou Onana,BEL,MID,0.8044,0.073127,56.966804,0.076269,0.076383,0.034069,0.753326,2.187878,existing_components,yes,ok
+zeki_elik__tur,Zeki Celik,TUR,DEF,0.7006,0.063691,52.418191,0.018979,0.019036,0.005749,0.884312,2.184686,existing_components,yes,ok
+jorge_sanchez__mex,Jorge Sanchez,MEX,DEF,0.6366,0.057873,,,,,0.895209,2.183369,existing_components,yes,ok
+antonio_sanabria__par,Antonio Sanabria,PAR,FWD,0.6911,0.062827,46.218695,0.079128,0.027267,0.134278,0.561573,2.177878,existing_components,yes,ok
+jordan_ayew__gha,Jordan Ayew,GHA,FWD,0.8417,0.076518,56.313097,0.188265,0.053006,0.157482,1.191553,2.17085,existing_components,yes,ok
+junya_ito__jpn,Junya Ito,JPN,MID,0.7491,0.0681,49.982948,0.049926,0.034755,0.083902,0.475249,2.169216,existing_components,yes,ok
+nathan_saliba__can,Nathan Saliba,CAN,MID,0.5648,0.051345,40.183,0.106579,0.069934,0.05,0.835103,2.168584,existing_components,yes,ok
+mohamed_abdelmonem__egy,Mohamed Abdelmonem,EGY,DEF,0.8455,0.076864,,,,,0.38484,2.165966,existing_components,yes,ok
+kevin_danso__aut,Kevin Danso,AUT,DEF,0.7136,0.064873,53.063296,0.026251,0.022504,0.006401,1.115031,2.165154,existing_components,yes,ok
+renato_veiga__por,Renato Veiga,POR,DEF,0.5625,0.051136,42.00075,0.015149,0.015586,0.003325,0.868694,2.160564,existing_components,yes,ok
+antonee_robinson__usa,Antonee Robinson,USA,DEF,0.7562,0.068745,,,,,0.826407,2.15682,existing_components,yes,ok
+miguel_almir_n__par,Miguel Almiron,PAR,MID,0.8699,0.079082,62.095202,0.057993,0.059229,0.049599,0.535653,2.155214,existing_components,yes,ok
+guela_doue__civ,Guela Doue,CIV,DEF,0.7506,0.068236,,,,,0.594618,2.151483,existing_components,no,ok
+nicolas_jackson__sen,Nicolas Jackson,SEN,FWD,0.6272,0.057018,41.99104,0.050943,0.026439,0.098509,0.381741,2.143631,existing_components,yes,ok
+ali_ahmed__can,Ali Ahmed,CAN,MID,0.717,0.065182,50.533443,0.081221,0.098573,0.049273,0.818029,2.142869,existing_components,yes,ok
+vladimir_coufal__cze,Vladimir Coufal,CZE,DEF,0.7537,0.068518,,,,,0.614552,2.141559,existing_components,no,ok
+sherzod_nasrullayev__uzb,Sherzod Nasrullaev,UZB,DEF,0.8135,0.073955,58.054614,0.034651,0.04549,0.046201,0.647993,2.133707,existing_components,yes,ok
+derek_cornelius__can,Derek Cornelius,CAN,DEF,0.5919,0.053809,44.197765,0.018872,0.017057,0.0047,0.767753,2.132002,existing_components,yes,ok
+jurri_n_timber__ned,Jurrien Timber,NED,DEF,0.6497,0.059064,48.311692,0.010153,0.014134,0.003862,0.647101,2.131067,existing_components,yes,ok
+oswin_appollis__rsa,Oswin Appollis,RSA,FWD,0.6643,0.060391,44.746584,0.081558,0.028457,0.151759,0.560215,2.123237,existing_components,yes,ok
+zion_suzuki__jpn,Zion Suzuki,JPN,GK,0.6949,0.063173,55.466223,0.0,0.0,0.0,0.484351,2.122535,existing_components,yes,ok
+baghdad_bounedjah__alg,Baghdad Bounedjah,ALG,FWD,0.7665,0.069682,51.206032,0.050586,0.030833,0.110808,0.399929,2.119708,existing_components,yes,ok
+andy_robertson__sco,Andy Robertson,SCO,DEF,0.8728,0.079345,,,,,1.143728,2.118919,existing_components,yes,ok
+lucas_digne__fra,Lucas Digne,FRA,DEF,0.4613,0.041936,34.503395,0.013587,0.026211,0.004349,0.735793,2.117765,existing_components,yes,ok
+livano_comenencia__cuw,Livano Comenencia,CUW,DEF,0.9215,0.083773,65.974792,0.045958,0.049343,0.06329,0.47011,2.117708,existing_components,yes,ok
+kalidou_koulibaly__sen,Kalidou Koulibaly,SEN,DEF,0.8707,0.079155,65.21543,0.006961,0.008639,0.0045,0.352289,2.117225,existing_components,yes,ok
+mohamed_hany__egy,Mohamed Hany,EGY,DEF,0.6987,0.063518,52.617001,0.006134,0.012887,0.00701,0.346295,2.115013,existing_components,yes,ok
+leandro_paredes__arg,Leandro Paredes,ARG,MID,0.7571,0.068827,53.28167,0.085856,0.076235,0.038696,0.817202,2.112017,existing_components,yes,ok
+lee_jae_sung__kor,Jae-Sung Lee,KOR,MID,0.7731,0.070282,51.480729,0.102502,0.050995,0.126909,0.865851,2.109232,existing_components,yes,ok
+n_lson_semedo__por,Nelson Semedo,POR,DEF,0.5609,0.050991,41.884086,0.015091,0.016173,0.003105,0.84515,2.107485,existing_components,yes,ok
+torbjorn_heggem__nor,Torbjørn Heggem,NOR,DEF,0.7262,0.066018,,,,,1.061535,2.107415,existing_components,yes,ok
+francisco_trinc_o__por,Francisco Trincao,POR,FWD,0.5447,0.049518,36.146292,0.135588,0.047744,0.079711,0.864692,2.10707,existing_components,yes,ok
+brian_rodr_guez__uru,Brian Rodriguez,URU,FWD,0.583,0.053,38.79282,0.128436,0.043477,0.093886,0.820476,2.090805,existing_components,yes,ok
+duckens_nazon__hai,Duckens Nazon,HAI,FWD,0.8543,0.077664,57.400417,0.104552,0.046162,0.25245,0.823347,2.089843,existing_components,yes,ok
+kaan_ayhan__tur,Kaan Ayhan,TUR,MID,0.7528,0.068436,53.393846,0.084775,0.080561,0.048656,0.795491,2.08824,existing_components,yes,ok
+dodi_lukebakio__bel,Dodi Lukebakio,BEL,FWD,0.5114,0.046491,36.223996,0.048163,0.049356,0.025498,0.440633,2.084577,existing_components,no,ok
+ali_alipour__irn,Ali Alipour,IRN,FWD,0.6615,0.060136,43.89714,0.172792,0.061113,0.162559,1.142755,2.084039,existing_components,yes,ok
+koni_de_winter__bel,Koni de Winter,BEL,DEF,0.4627,0.042064,,,,,0.480578,2.079353,existing_components,no,ok
+reece_james__eng,Reece James,ENG,DEF,0.5931,0.053918,,,,,0.651658,2.07712,existing_components,yes,ok
+jesus_angulo__mex,Jesus Angulo,MEX,DEF,0.6071,0.055191,,,,,0.851409,2.07559,existing_components,yes,ok
+jan_paul_van_hecke__ned,Jan Paul van Hecke,NED,DEF,0.6122,0.055655,45.764399,0.01186,0.01211,0.00361,0.626745,2.075292,existing_components,yes,ok
+hazem_mastouri__tun,Hazem Mastouri,TUN,FWD,0.849,0.077182,56.98488,0.085798,0.041669,0.148081,0.654839,2.074118,existing_components,yes,ok
+isak_hien__swe,Isak Hien,SWE,DEF,0.8197,0.074518,61.961943,0.023712,0.020674,0.007766,1.064922,2.073913,existing_components,yes,ok
+adrien_rabiot__fra,Adrien Rabiot,FRA,MID,0.6584,0.059855,46.498183,0.09351,0.063531,0.035819,0.794705,2.070573,existing_components,yes,ok
+orkun_k_k__tur,Orkun Kökcü,TUR,MID,0.7587,0.068973,53.75086,0.084006,0.079936,0.049517,0.792563,2.068905,existing_components,yes,ok
+tim_ream__usa,Tim Ream,USA,DEF,0.5761,0.052373,43.5739,0.019612,0.017412,0.006466,0.790095,2.065067,existing_components,yes,ok
+agust_n_lvarez__uru,Agustin Alvarez,URU,FWD,0.602,0.054727,39.94872,0.124616,0.043407,0.092181,0.806917,2.061553,existing_components,yes,ok
+rafik_belghali__alg,Rafik Belghali,ALG,DEF,0.8614,0.078309,64.844469,0.007188,0.009438,0.004916,0.348211,2.055016,existing_components,yes,ok
+amar_dedi__bih,Amar Dedic,BIH,DEF,0.8054,0.073218,60.588631,0.009103,0.011181,0.006354,0.536278,2.048007,existing_components,yes,ok
+israel_reyes__mex,Israel Reyes,MEX,DEF,0.5345,0.048591,39.780162,0.016469,0.015884,0.003389,0.849417,2.047184,existing_components,yes,ok
+josip_stani_i__cro,Josip Stanisic,CRO,DEF,0.6785,0.061682,50.523145,0.004847,0.006704,0.002778,0.354003,2.044867,existing_components,yes,ok
+seol_young_woo__kor,Young-woo Seol,KOR,DEF,0.8234,0.074855,61.628196,0.012557,0.013535,0.005141,0.741588,2.043264,existing_components,yes,ok
+giuliano_simeone__arg,Giuliano Simeone,ARG,FWD,0.7893,0.071755,55.65749,0.093369,0.082718,0.042693,0.792195,2.036415,existing_components,yes,ok
+saeid_ezatolahi__irn,Saeid Ezatolahi,IRN,MID,0.8138,0.073982,58.200535,0.123752,0.115641,0.069718,1.148254,2.033237,existing_components,yes,ok
+anthony_ralston__sco,Anthony Ralston,SCO,DEF,0.6311,0.057373,47.701062,0.024647,0.05333,0.005152,1.118129,2.025951,existing_components,yes,ok
+ronald_ara_jo__uru,Ronald Araujo,URU,DEF,0.6275,0.057045,46.69353,0.014716,0.012682,0.004126,0.874174,2.023543,existing_components,yes,ok
+ismael_saibari__mar,Ismael Saibari,MAR,MID,0.6814,0.061945,48.645146,0.032338,0.031605,0.044223,0.294477,2.016958,existing_components,yes,ok
+alexander_prass__aut,Alexander Prass,AUT,DEF,0.6185,0.056227,46.443784,0.027048,0.024349,0.009647,1.038013,2.016573,existing_components,yes,ok
+pedro_vite__ecu,Pedro Vite,ECU,MID,0.7525,0.068409,53.760105,0.059986,0.067902,0.035929,0.605067,2.011989,existing_components,yes,ok
+guillermo_ochoa__mex,Guillermo Ochoa,MEX,GK,0.4772,0.043382,,,,,0.823155,2.00691,existing_components,yes,ok
+aaron_wan_bissaka__cod,Aaron Wan-Bissaka,COD,DEF,0.7988,0.072618,60.277,0.007875,0.00896,0.006,0.209891,2.005163,existing_components,no,ok
+hossein_abarghouei__irn,Hossein Abarghouei,IRN,DEF,0.7913,0.071936,59.204275,0.025633,0.02327,0.008116,1.058038,2.004441,existing_components,yes,ok
+a_ssa_mandi__alg,Aissa Mandi,ALG,DEF,0.8309,0.075536,62.678942,0.006798,0.009519,0.004648,0.336343,2.000172,existing_components,yes,ok
+yerry_mina__col,Yerry Mina,COL,DEF,0.6156,0.055964,,,,,0.814838,1.995766,existing_components,yes,ok
+anthony_elanga__swe,Anthony Elanga,SWE,FWD,0.6961,0.063282,46.479989,0.165076,0.050939,0.155351,1.065381,1.993175,existing_components,yes,ok
+luka_vuskovic__cro,Luka Vuskovic,CRO,DEF,0.7259,0.065991,,,,,0.386063,1.992084,existing_components,yes,ok
+n_golo_kant__fra,N'Golo Kante,FRA,MID,0.7285,0.066227,51.322825,0.078707,0.073805,0.035089,0.762353,1.992069,existing_components,yes,ok
+idrissa_gana_gueye__sen,Idrissa Gana Gueye,SEN,MID,0.8656,0.078691,62.013315,0.030804,0.04918,0.04063,0.322396,1.989941,existing_components,yes,ok
+grant_hanley__sco,Grant Hanley,SCO,DEF,0.6836,0.062145,51.611116,0.025996,0.024516,0.005706,1.098637,1.978245,existing_components,yes,ok
+tom_s_ara_jo__por,Tomas Araujo,POR,DEF,0.536,0.048727,39.85696,0.013455,0.013459,0.002461,0.793333,1.977832,existing_components,yes,ok
+fiston_mayele__cod,Fiston Mayele,COD,FWD,0.6741,0.061282,44.920002,0.051675,0.022798,0.114367,0.369609,1.970458,existing_components,no,ok
+jorge_guti_rrez__pan,Jorge Gutierrez,PAN,DEF,0.914,0.085,69.066,0.017209,0.04899,0.025,0.80707,1.968438,existing_components,yes,ok
+sander_berge__nor,Sander Berge,NOR,MID,0.8794,0.079945,62.278229,0.093249,0.090195,0.036734,0.912978,1.967404,existing_components,yes,ok
+kieran_tierney__sco,Kieran Tierney,SCO,DEF,0.8139,0.073991,,,,,1.06317,1.96631,existing_components,yes,ok
+amirhossein_hosseinzadeh__irn,Amirhossein Hosseinzadeh,IRN,FWD,0.5235,0.047591,37.278435,0.15311,0.069493,0.042097,0.924982,1.964087,existing_components,no,ok
+kenny_mclean__sco,Kenny McLean,SCO,MID,0.6629,0.060264,47.364868,0.101158,0.126248,0.040048,1.050587,1.961718,existing_components,yes,ok
+richard_ledezma__mex,Richard Ledezma,MEX,DEF,0.5759,0.052355,,,,,0.805085,1.961599,existing_components,yes,ok
+yuto_nagatomo__jpn,Yuto Nagatomo,JPN,DEF,0.7557,0.0687,56.193852,0.005009,0.005513,0.003438,0.426638,1.959367,existing_components,yes,ok
+junnosuke_suzuki__jpn,Junnosuke Suzuki,JPN,DEF,0.7446,0.067691,55.710227,0.005957,0.006555,0.003504,0.428324,1.958102,existing_components,yes,ok
+manu_kon__fra,Manu Koné,FRA,MID,0.38,0.052,26.95644,0.046782,0.040108,0.019508,0.470622,1.954862,existing_components,no,ok
+gustavo_g_mez__par,Gustavo Gomez,PAR,DEF,0.7834,0.071218,58.933615,0.009177,0.010163,0.006428,0.53752,1.954086,existing_components,yes,ok
+edin_dzeko__bih,Edin Dzeko,BIH,FWD,0.9046,0.082236,,,,,0.105934,1.949203,existing_components,no,ok
+fernando_muslera__uru,Fernando Muslera,URU,GK,0.4844,0.044036,,,,,0.835838,1.948318,existing_components,yes,ok
+brenden_aaronson__usa,Brenden Aaronson,USA,MID,0.6836,0.062145,48.139796,0.082224,0.070188,0.044236,0.731621,1.945423,existing_components,yes,ok
+ayase_ueda__jpn,Ayase Ueda,JPN,FWD,0.7167,0.065155,47.874843,0.056825,0.026666,0.082576,0.424303,1.942956,existing_components,yes,ok
+maximilian_w_ber__aut,Maximilian Wöber,AUT,DEF,0.6391,0.0581,47.64171,0.025212,0.021615,0.00503,1.007502,1.942158,existing_components,yes,ok
+mikel_merino__esp,Mikel Merino,ESP,MID,0.74,0.067273,52.24622,0.078047,0.068824,0.026918,0.791327,1.938698,existing_components,yes,ok
+jorrel_hato__ned,Jorrel Hato,NED,DEF,0.5733,0.052118,42.781366,0.011252,0.011489,0.003425,0.590018,1.936738,existing_components,yes,ok
+benjamin_tahirovic__bih,Benjamin Tahirovic,BIH,MID,0.8591,0.0781,60.840603,0.04732,0.043383,0.041653,0.432298,1.936296,existing_components,yes,ok
+yahia_fofana__civ,Yahia Fofana,CIV,GK,0.7892,0.071745,,,,,0.781275,1.935518,existing_components,no,ok
+nestory_irankunda__aus,Nestory Irankunda,AUS,FWD,0.5879,0.053445,41.713857,0.052687,0.033108,0.040819,0.34167,1.914994,existing_components,no,ok
+kai_havertz__ger,Kai Havertz,GER,FWD,0.8043,0.073118,56.738539,0.093916,0.071813,0.041782,0.824468,1.91196,existing_components,yes,ok
+montassar_talbi__tun,Montassar Talbi,TUN,DEF,0.8218,0.074709,62.157665,0.023006,0.012912,0.014269,0.663001,1.907236,existing_components,yes,ok
+ramy_bensebaini__alg,Ramy Bensebaini,ALG,DEF,0.7952,0.072291,59.902416,0.006566,0.00862,0.00449,0.320535,1.906733,existing_components,yes,ok
+ante_budimir__cro,Ante Budimir,CRO,FWD,0.5553,0.050482,36.915789,0.041546,0.020329,0.078243,0.306908,1.901314,existing_components,yes,ok
+axel_tuanzebe__cod,Axel Tuanzebe,COD,DEF,0.6757,0.061427,50.851831,0.006472,0.007854,0.004602,0.178521,1.898879,existing_components,no,ok
+robin_hranac__cze,Robin Hranac,CZE,DEF,0.8305,0.0755,,,,,0.682269,1.897379,existing_components,no,ok
+chadi_riad__mar,Chadi Riad,MAR,DEF,0.691,0.062818,,,,,0.326587,1.892214,existing_components,yes,ok
+abdulkerim_bardakci__tur,Abdulkerim Bardakci,TUR,DEF,0.7036,0.063964,,,,,0.770001,1.891833,existing_components,yes,ok
+shoja_khalilzadeh__irn,Shojae Khalilzadeh,IRN,DEF,0.7167,0.065155,54.208321,0.028963,0.026291,0.008494,1.004601,1.888557,existing_components,yes,ok
+cho_gue_sung__kor,Gue-sung Cho,KOR,FWD,0.8209,0.074627,54.474924,0.108993,0.04338,0.128516,0.775649,1.886015,existing_components,yes,ok
+nico_o_reilly__eng,Nico O'Reilly,ENG,DEF,0.5417,0.049245,,,,,0.590849,1.884759,existing_components,yes,ok
+nikola_kati__bih,Nikola Katic,BIH,DEF,0.7847,0.071336,58.424838,0.006313,0.0073,0.005038,0.488033,1.882826,existing_components,yes,ok
+andreas_schjelderup__nor,Andreas Schjelderup,NOR,MID,0.3333,0.072,22.42809,0.090939,0.077388,0.060986,0.86021,1.882812,existing_components,yes,ok
+kevin_casta_o__col,Kevin Castano,COL,MID,0.6173,0.056118,43.562244,0.064629,0.055409,0.028642,0.603018,1.882083,existing_components,no,ok
+ozan_kabak__tur,Ozan Kabak,TUR,DEF,0.699,0.063545,,,,,0.764639,1.878529,existing_components,yes,ok
+matt_turner__usa,Matt Turner,USA,GK,0.5989,0.054445,,,,,0.81151,1.875915,existing_components,no,ok
+douglas_santos__bra,Douglas Santos,BRA,DEF,0.43,0.039091,31.9748,0.00958,0.009794,0.002885,0.570977,1.8744,existing_components,no,ok
+theo_bongonda__cod,Theo Bongonda,COD,MID,0.7669,0.069718,54.493613,0.040069,0.033089,0.058595,0.316394,1.870348,existing_components,no,ok
+hiroki_ito__jpn,Hiroki Ito,JPN,DEF,0.7462,0.067836,,,,,0.432351,1.868801,existing_components,yes,ok
+aaron_hickey__sco,Aaron Hickey,SCO,DEF,0.774,0.070364,,,,,1.0086,1.862929,existing_components,yes,ok
+azzedine_ounahi__mar,Azzedine Ounahi,MAR,MID,0.8135,0.073955,57.375341,0.024819,0.040895,0.03195,0.265092,1.851506,existing_components,yes,ok
+haris_tabakovic__bih,Haris Tabakovic,BIH,FWD,0.5459,0.049627,36.476492,0.058063,0.023971,0.102562,0.434885,1.851472,existing_components,yes,ok
+yassine_bono_bounou__mar,Yassine 'Bono' Bounou,MAR,GK,0.4858,0.044164,,,,,0.282649,1.850958,existing_components,no,ok
+rayan_a_t_nouri__alg,Rayan Ait-Nouri,ALG,DEF,0.775,0.070455,58.28465,0.006113,0.008115,0.007246,0.31121,1.850426,existing_components,yes,ok
+takehiro_tomiyasu__jpn,Takehiro Tomiyasu,JPN,DEF,0.7391,0.067191,,,,,0.427763,1.849668,existing_components,yes,ok
+evan_n_dicka__civ,Evan N'Dicka,CIV,DEF,0.7801,0.070918,,,,,0.619953,1.845614,existing_components,no,ok
+sead_kolasinac__bih,Sead Kolasinac,BIH,DEF,0.8213,0.074664,,,,,0.513839,1.843862,existing_components,yes,ok
+duje_aleta_car__cro,Duje Caleta-Car,CRO,DEF,0.5612,0.051018,42.287542,0.005224,0.007521,0.008341,0.324036,1.839153,existing_components,yes,ok
+guillermo_varela__uru,Guillermo Varela,URU,DEF,0.5733,0.052118,42.6604,0.013445,0.011587,0.00377,0.794349,1.836454,existing_components,yes,ok
+leroy_san__ger,Leroy Sane,GER,FWD,0.8215,0.074682,57.974898,0.088633,0.067774,0.038117,0.792869,1.835621,existing_components,yes,ok
+patrik_schick__cze,Patrik Schick,CZE,FWD,0.7906,0.071873,,,,,0.104594,1.834573,existing_components,no,ok
+deniz_g_l__tur,Deniz Gül,TUR,FWD,0.5475,0.049773,36.3321,0.120951,0.043675,0.117945,0.7979,1.826083,existing_components,no,ok
+victor_lindel_f__swe,Victor Lindelöf,SWE,DEF,0.7669,0.069718,57.064262,0.018834,0.017281,0.004568,0.950681,1.82279,existing_components,yes,ok
+rami_rabia__egy,Rami Rabia,EGY,DEF,0.7193,0.065391,,,,,0.319937,1.821404,existing_components,yes,ok
+tae_seok_lee__kor,Tae-Seok Lee,KOR,DEF,0.775,0.070455,,,,,0.64593,1.818506,existing_components,yes,ok
+el_hadji_malick_diouf__sen,El Hadji Malick Diouf,SEN,DEF,0.7414,0.0674,55.624276,0.005928,0.007971,0.005748,0.297494,1.816041,existing_components,yes,ok
+jude_bellingham__eng,Jude Bellingham,ENG,MID,0.7202,0.065473,50.673272,0.061562,0.061876,0.028479,0.609481,1.814659,existing_components,yes,ok
+jordan_henderson__eng,Jordan Henderson,ENG,MID,0.7192,0.065382,50.602912,0.061548,0.061861,0.028473,0.609097,1.813601,existing_components,yes,ok
+ghislain_konan__civ,Ghislain Konan,CIV,DEF,0.755,0.068636,,,,,0.598398,1.812119,existing_components,no,ok
+felix_feliz_torres__ecu,Felix 'Feliz' Torres,ECU,DEF,0.6165,0.056045,,,,,0.662186,1.810519,existing_components,yes,ok
+r_ben_neves__por,Ruben Neves,POR,MID,0.7206,0.065509,50.852021,0.073793,0.076357,0.027925,0.747681,1.810072,existing_components,yes,ok
+djed_spence__eng,Djed Spence,ENG,DEF,0.5214,0.0474,,,,,0.566835,1.80879,existing_components,yes,ok
+mathieu_choiniere__can,Mathieu Choiniere,CAN,MID,0.4739,0.043082,33.806604,0.067558,0.081411,0.040103,0.68865,1.807905,existing_components,yes,ok
+marcus_holmgren_pedersen__nor,Marcus Holmgren Pedersen,NOR,DEF,0.6292,0.0572,,,,,0.913064,1.806887,existing_components,yes,ok
+david_cabezas__ecu,David Cabezas,ECU,GK,0.4287,0.038973,,,,,0.647292,1.803128,existing_components,yes,ok
+anthony_gordon__eng,Anthony Gordon,ENG,FWD,0.6409,0.058264,45.719242,0.070238,0.071717,0.033858,0.601836,1.799554,existing_components,yes,ok
+yasin_ayari__swe,Yasin Ayari,SWE,MID,0.871,0.079182,62.130172,0.113174,0.085756,0.058422,0.989432,1.799316,existing_components,yes,ok
+hern_n_gal_ndez__ecu,Hernan Galindez,ECU,GK,0.3955,0.035955,31.891538,0.0,0.0,0.0,0.565126,1.79915,existing_components,no,ok
+samuel_moutoussamy__cod,Samuel Moutoussamy,COD,MID,0.8421,0.076555,59.968467,0.032649,0.037823,0.043269,0.279327,1.798519,existing_components,no,ok
+wilfried_stephane_singo__civ,Wilfried Stephane Singo,CIV,DEF,0.7381,0.0671,,,,,0.583883,1.789567,existing_components,no,ok
+dani_olmo__esp,Dani Olmo,ESP,MID,0.739,0.067182,52.09211,0.062442,0.074124,0.025037,0.727312,1.78573,existing_components,yes,ok
+federico_valverde__uru,Federico Valverde,URU,MID,0.88,0.08,,,,,0.194521,1.785212,existing_components,no,ok
+joel_ord_ez__ecu,Joel Ordonez,ECU,DEF,0.4914,0.044673,37.16753,0.01042,0.011598,0.00351,0.624596,1.772426,existing_components,yes,ok
+marc_pubill__esp,Marc Pubill,ESP,DEF,0.25,0.0227272727272727,,,,,0.388792,1.766728,existing_components,no,ok
+caleb_yirenkyi__gha,Caleb Yirenkyi,GHA,DEF,0.8892,0.080836,,,,,0.911874,1.762302,existing_components,yes,ok
+thiago_almada__arg,Thiago Almada,ARG,MID,0.6347,0.0577,44.690496,0.07405,0.063486,0.033626,0.687652,1.759306,existing_components,yes,ok
+i_aki_williams__gha,Iñaki Williams,GHA,FWD,0.8226,0.074782,54.754724,0.135459,0.048616,0.140741,0.94755,1.753106,existing_components,yes,ok
+rayan_cherki__fra,Rayan Cherki,FRA,FWD,0.6933,0.063027,48.780588,0.082162,0.070441,0.033812,0.677762,1.75138,existing_components,yes,ok
+everardo_lopez__mex,Everardo Lopez,MEX,DEF,0.5178,0.047073,,,,,0.718818,1.749325,existing_components,yes,ok
+jawad_el_yamiq__mar,Jawad El Yamiq,MAR,DEF,0.5826,0.052964,43.380979,0.004737,0.005389,0.004211,0.268592,1.747373,existing_components,yes,ok
+ramin_rezaeian__irn,Ramin Rezaeian,IRN,DEF,0.7,0.063636,52.2382,0.021571,0.019582,0.00601,0.919664,1.740902,existing_components,yes,ok
+alexis_saelemaekers__bel,Alexis Saelemaekers,BEL,FWD,0.5565,0.050591,,,,,0.107847,1.740448,existing_components,no,ok
+j_nior_alonso__par,Junior Alonso,PAR,DEF,0.6931,0.063009,52.168944,0.008612,0.008805,0.005569,0.477824,1.738368,existing_components,yes,ok
+meschak_elia__cod,Meschack Elia,COD,MID,0.8113,0.073755,57.560924,0.029028,0.0346,0.046691,0.254752,1.737817,existing_components,no,ok
+nathaniel_brown__ger,Nathaniel Brown,GER,DEF,0.4611,0.041918,,,,,0.826443,1.728749,existing_components,yes,ok
+moussa_niakhate__sen,Moussa Niakhate,SEN,DEF,0.6809,0.0619,51.351435,0.005843,0.008073,0.00371,0.282662,1.726598,existing_components,yes,ok
+joaquin_seys__bel,Joaquin Seys,BEL,DEF,0.4562,0.041473,,,,,0.473125,1.721061,existing_components,no,ok
+ji_sung_eom__kor,Ji-sung Eom,KOR,MID,0.6689,0.060809,44.388204,0.088598,0.033584,0.103643,0.705887,1.716625,existing_components,yes,ok
+yasser_ibrahim__egy,Yasser Ibrahim,EGY,DEF,0.5221,0.047464,39.319351,0.008919,0.00565,0.009758,0.277213,1.711853,existing_components,yes,ok
+gabriel_gudmundsson__swe,Gabriel Gudmundsson,SWE,DEF,0.6853,0.0623,51.553748,0.018318,0.016813,0.005833,0.877492,1.703513,existing_components,yes,ok
+evren_eren_elmali__tur,Evren Eren Elmali,TUR,DEF,0.6381,0.058009,,,,,0.693665,1.702447,existing_components,yes,ok
+ayumu_seko__jpn,Ayumu Seko,JPN,DEF,0.559,0.050818,41.899286,0.004135,0.005201,0.002433,0.321602,1.701779,existing_components,no,ok
+milad_mohammadi__irn,Milad Mohammadi,IRN,DEF,0.6793,0.061755,50.824547,0.022005,0.019976,0.006967,0.901206,1.700566,existing_components,yes,ok
+h_lio_varela__cpv,Helio Varela,CPV,FWD,0.7167,0.065155,48.055452,0.044543,0.05068,0.095808,0.382368,1.697645,existing_components,yes,ok
+ellyes_skhiri__tun,Ellyes Skhiri,TUN,MID,0.8676,0.078873,62.151394,0.05647,0.055204,0.062028,0.526675,1.69589,existing_components,yes,ok
+jos_manuel_l_pez__arg,Jose Manuel Lopez,ARG,FWD,0.3671,0.033373,24.379845,0.098952,0.037986,0.072933,0.652441,1.694953,existing_components,yes,ok
+alireza_beiranvand__irn,Alireza Beiranvand,IRN,GK,0.6657,0.060518,53.135508,0.0,0.0,0.0,0.900538,1.690315,existing_components,no,ok
+martin_degaard__nor,Martin Ødegaard,NOR,MID,0.8375,0.076136,58.967538,0.07493,0.0803,0.030835,0.777292,1.686029,existing_components,yes,ok
+alexander_djiku__gha,Alexander Djiku,GHA,DEF,0.8325,0.075682,62.058713,0.014773,0.013785,0.004914,0.916647,1.675333,existing_components,yes,ok
+matt_freese__usa,Matt Freese,USA,GK,0.3173,0.028845,25.585803,0.0,0.0,0.0,0.5094,1.674028,existing_components,no,ok
+gustaf_nilsson__swe,Gustaf Nilsson,SWE,FWD,0.6789,0.061718,45.051804,0.130808,0.045736,0.135999,0.888806,1.674004,existing_components,yes,ok
+alex_arce__par,Alex Arce,PAR,FWD,0.601,0.054636,39.925632,0.060679,0.021003,0.10362,0.428542,1.672617,existing_components,yes,ok
+nikola_vasilj__bih,Nikola Vasilj,BIH,GK,0.6617,0.060155,52.816232,0.0,0.0,0.0,0.479638,1.668406,existing_components,no,ok
+matej_kovar__cze,Matej Kovar,CZE,GK,0.599,0.054455,,,,,0.646034,1.665663,existing_components,no,ok
+florian_grillitsch__aut,Florian Grillitsch,AUT,MID,0.7044,0.064036,49.561584,0.100678,0.091547,0.04185,0.935724,1.662369,existing_components,yes,ok
+orbel_n_pineda__mex,Orbelin Pineda,MEX,MID,0.5947,0.054064,41.843092,0.071336,0.084358,0.026995,0.715094,1.656557,existing_components,yes,ok
+diego_g_mez__par,Diego Gomez,PAR,MID,0.7703,0.070027,54.775263,0.047648,0.038217,0.041439,0.405419,1.653996,existing_components,yes,ok
+benjamin_asare__gha,Benjamin Asare,GHA,GK,0.696,0.063273,,,,,0.867237,1.653163,existing_components,yes,ok
+evidence_makgopa__rsa,Evidence Makgopa,RSA,FWD,0.7167,0.065155,47.560212,0.060086,0.023244,0.115365,0.425889,1.653015,existing_components,yes,ok
+hossein_kanaani__irn,Hossein Kanaani,IRN,DEF,0.7369,0.066991,,,,,0.828047,1.652435,existing_components,yes,ok
+valentino_livramento__eng,Valentino Livramento,ENG,DEF,0.4796,0.0436,,,,,0.517383,1.652356,existing_components,yes,ok
+odilon_kossounou__civ,Odilon Kossounou,CIV,DEF,0.6317,0.057427,,,,,0.492506,1.64758,existing_components,no,ok
+scott_mckenna__sco,Scott McKenna,SCO,DEF,0.6233,0.056664,46.549291,0.019393,0.018473,0.004729,0.926971,1.645,existing_components,yes,ok
+jaroslav_zeleny__cze,Jaroslav Zeleny,CZE,DEF,0.6381,0.058009,,,,,0.512625,1.644216,existing_components,no,ok
+ahmed_fatouh__egy,Ahmed Fatouh,EGY,DEF,0.6536,0.059418,,,,,0.286147,1.642027,existing_components,yes,ok
+kosta_barbarouses__nzl,Kosta Barbarouses,NZL,FWD,0.8303,0.075482,55.169283,0.065886,0.02697,0.140915,0.504575,1.641918,existing_components,yes,ok
+sergio_rochet__uru,Sergio Rochet,URU,GK,0.4263,0.038755,,,,,0.705732,1.63662,existing_components,yes,ok
+dennis_hadzikadunic__bih,Dennis Hadzikadunic,BIH,DEF,0.6747,0.061336,50.480379,0.006408,0.008888,0.004089,0.426169,1.635262,existing_components,yes,ok
+deiver_machado__col,Deiver Machado,COL,DEF,0.5106,0.046418,,,,,0.667327,1.631052,existing_components,yes,ok
+dami_n_bobadilla__par,Damian Bobadilla,PAR,MID,0.6848,0.062255,48.776934,0.044115,0.04516,0.037462,0.401959,1.628668,existing_components,yes,ok
+juan_cucho_hernandez__col,Juan 'Cucho' Hernandez,COL,FWD,0.25,0.0227272727272727,,,,,0.026217,1.621497,existing_components,no,ok
+arthur_masuaku__cod,Arthur Masuaku,COD,DEF,0.6914,0.062855,51.566686,0.005462,0.022377,0.003885,0.210938,1.618955,existing_components,no,ok
+manuel_ugarte__uru,Manuel Ugarte,URU,MID,0.7396,0.067236,52.076715,0.066494,0.062279,0.029182,0.640771,1.615013,existing_components,yes,ok
+michael_amir_murillo__pan,Michael Amir Murillo,PAN,DEF,0.7665,0.069682,57.662262,0.013334,0.03766,0.0304,0.661579,1.614746,existing_components,yes,ok
+ali_abdi__tun,Ali Abdi,TUN,DEF,0.6291,0.057191,47.582608,0.017612,0.024215,0.010923,0.554126,1.61015,existing_components,yes,ok
+mohammed_muntari__qat,Mohammed Muntari,QAT,FWD,0.66,0.06,44.10054,0.085293,0.030326,0.166524,0.588519,1.606929,existing_components,yes,ok
+miles_robinson__usa,Miles Robinson,USA,DEF,0.5132,0.046655,38.161552,0.012452,0.011516,0.004666,0.616715,1.604906,existing_components,yes,ok
+khuliso_mudau__rsa,Khuliso Mudau,RSA,DEF,0.8279,0.075264,62.619044,0.009255,0.011115,0.011883,0.398871,1.604387,existing_components,yes,ok
+ismail_jakobs__sen,Ismail Jakobs,SEN,DEF,0.6515,0.059227,48.611021,0.004521,0.010286,0.003444,0.258343,1.597249,existing_components,yes,ok
+john_souttar__sco,John Souttar,SCO,DEF,0.516,0.046909,38.746956,0.018052,0.037725,0.003714,0.884771,1.596763,existing_components,yes,ok
+an_bal_godoy__pan,Anibal Godoy,PAN,MID,0.8093,0.073573,57.818011,0.058531,0.060792,0.061261,0.557488,1.592271,existing_components,yes,ok
+brian_brobbey__ned,Brian Brobbey,NED,FWD,0.43,0.039091,28.62467,0.079762,0.033081,0.071021,0.561383,1.591403,existing_components,no,ok
+ali_nemati__irn,Ali Nemati,IRN,DEF,0.514,0.064,38.662,0.018664,0.016942,0.006,0.689028,1.589028,existing_components,no,ok
+youcef_atal__alg,Youcef Atal,ALG,DEF,0.7066,0.064236,52.542776,0.004933,0.005614,0.003508,0.264413,1.58751,existing_components,yes,ok
+omid_noorafkan__irn,Omid Noorafkan,IRN,MID,0.7415,0.067409,52.512289,0.096084,0.089203,0.053236,0.900444,1.58721,existing_components,yes,ok
+warren_za_re_emery__fra,Warren Zaire-Emery,FRA,MID,0.3875,0.035227,27.2645,0.040917,0.035079,0.017961,0.377509,1.585692,existing_components,no,ok
+aziz_g_aniyev__uzb,Aziz Ganiev,UZB,MID,0.6876,0.062509,45.994252,0.0598,0.029327,0.131973,0.514261,1.583484,existing_components,yes,ok
+jeremie_frimpong__ned,Jeremie Frimpong,NED,DEF,0.4459,0.040536,33.296691,0.008708,0.012933,0.00265,0.48393,1.582308,existing_components,yes,ok
+juan_jose_caceres__par,Juan Jose Caceres,PAR,DEF,0.7023,0.063845,,,,,0.452831,1.582282,existing_components,yes,ok
+alejandro_alex_grimaldo__esp,Alejandro 'Alex' Grimaldo,ESP,DEF,0.3837,0.034882,,,,,0.623457,1.578961,existing_components,yes,ok
+felix_nmecha__ger,Felix Nmecha,GER,MID,0.43,0.039091,30.2548,0.044092,0.034515,0.017882,0.421459,1.578037,existing_components,no,ok
+lucas_herrington__aus,Lucas Herrington,AUS,DEF,0.8795,0.079955,,,,,0.489216,1.575451,existing_components,yes,ok
+aziz_behich__aus,Aziz Behich,AUS,DEF,0.7021,0.063827,,,,,0.380453,1.558888,existing_components,no,ok
+patrick_berg__nor,Patrick Berg,NOR,MID,0.698,0.063455,49.431662,0.072432,0.071758,0.029145,0.722314,1.558833,existing_components,yes,ok
+esmir_bajraktarevic__bih,Esmir Bajraktarevic,BIH,MID,0.8519,0.077445,60.17566,0.031805,0.040442,0.040594,0.346754,1.554983,existing_components,yes,ok
+cristian_mart_nez__pan,Cristian Martinez,PAN,MID,0.709,0.066,50.485,0.058362,0.06287,0.061,0.550192,1.554489,existing_components,yes,ok
+noa_lang__ned,Noa Lang,NED,FWD,0.4448,0.040436,31.296128,0.031453,0.035681,0.018613,0.27506,1.546764,existing_components,no,ok
+miro_muheim__sui,Miro Muheim,SUI,DEF,0.3111,0.028282,23.133396,0.006358,0.00545,0.001395,0.501125,1.546421,existing_components,no,ok
+erik_lira__mex,Erik Lira,MEX,MID,0.5644,0.051309,39.817856,0.070732,0.071035,0.027721,0.666178,1.541768,existing_components,yes,ok
+yoane_wissa__cod,Yoane Wissa,COD,FWD,0.8342,0.075836,,,,,0.031391,1.539815,existing_components,no,ok
+finn_surman__nzl,Finn Surman,NZL,DEF,0.6455,0.058682,48.823038,0.030489,0.008251,0.005269,0.569855,1.53721,existing_components,yes,ok
+dailon_livramento__cpv,Dailon Livramento,CPV,FWD,0.8309,0.075536,55.570592,0.049759,0.024263,0.106152,0.334777,1.531122,existing_components,yes,ok
+weston_mckennie__usa,Weston McKennie,USA,MID,0.8215,0.074682,,,,,0.159287,1.529739,existing_components,no,ok
+ngel_romero__par,Angel Romero,PAR,FWD,0.6098,0.055436,40.466328,0.052565,0.020873,0.102837,0.394967,1.529105,existing_components,yes,ok
+chancel_mbemba__cod,Chancel Mbemba,COD,DEF,0.8316,0.0756,62.898898,0.008863,0.010084,0.006128,0.231367,1.526273,existing_components,yes,ok
+nathan_patterson__sco,Nathan Patterson,SCO,DEF,0.7525,0.068409,,,,,0.979194,1.525814,existing_components,no,ok
+ime_okon__rsa,Ime Okon,RSA,DEF,0.8795,0.079955,,,,,0.388699,1.515356,existing_components,yes,ok
+hossam_abdelmaguid__egy,Hossam Abdelmaguid,EGY,DEF,0.6055,0.055045,,,,,0.261408,1.510696,existing_components,yes,ok
+jo_hyeon_woo__kor,Hyeon-Woo Jo,KOR,GK,0.3858,0.035073,30.688461,0.0,0.0,0.0,0.364022,1.502095,existing_components,no,ok
+pavel_sulc__cze,Pavel Sulc,CZE,MID,0.8202,0.074564,,,,,0.110382,1.49718,existing_components,no,ok
+ben_waine__nzl,Ben Waine,NZL,FWD,0.6886,0.0626,46.063897,0.062108,0.026132,0.132072,0.46574,1.496291,existing_components,yes,ok
+aurele_amenda__sui,Aurele Amenda,SUI,DEF,0.2809,0.025536,20.887724,0.005741,0.004921,0.00126,0.46039,1.492926,existing_components,no,ok
+bremer__bra,Bremer,BRA,DEF,0.4009,0.036445,,,,,0.473422,1.488643,existing_components,yes,ok
+jeremy_antonisse__cuw,Jeremy Antonisse,CUW,FWD,0.7223,0.065664,51.17351,0.077012,0.032738,0.063188,0.392068,1.486251,existing_components,yes,ok
+omar_alderete__par,Omar Alderete,PAR,DEF,0.6182,0.0562,46.22405,0.006588,0.007298,0.004616,0.406725,1.482246,existing_components,yes,ok
+daniel_svensson__swe,Daniel Svensson,SWE,DEF,0.6394,0.058127,47.658318,0.014945,0.013712,0.003625,0.776446,1.481779,existing_components,yes,ok
+tomas_holes__cze,Tomas Holes,CZE,DEF,0.7807,0.070973,,,,,0.638358,1.480713,existing_components,no,ok
+sarpreet_singh__nzl,Sarpreet Singh,NZL,MID,0.8456,0.076873,60.575402,0.03883,0.069938,0.050909,0.452062,1.480645,existing_components,yes,ok
+anass_salah_eddine__mar,Anass Salah-Eddine,MAR,DEF,0.4835,0.043955,36.038156,0.003811,0.007433,0.002903,0.223697,1.479547,existing_components,yes,ok
+nathanael_mbuku__cod,Nathanael Mbuku,COD,MID,0.8471,0.077009,60.093274,0.042667,0.035695,0.049081,0.32853,1.477297,existing_components,no,ok
+jarell_quansah__eng,Jarell Quansah,ENG,DEF,0.4327,0.039336,,,,,0.461899,1.476839,existing_components,yes,ok
+zineddine_belaid__alg,Zineddine Belaid,ALG,DEF,0.4472,0.040655,33.353518,0.006276,0.003895,0.004057,0.169886,1.476247,existing_components,no,ok
+jordan_bos__aus,Jordan Bos,AUS,DEF,0.8285,0.075318,,,,,0.457948,1.475831,existing_components,yes,ok
+fidel_escobar__pan,Fidel Escobar,PAN,DEF,0.7661,0.069645,57.94474,0.014623,0.014681,0.014853,0.600321,1.469052,existing_components,yes,ok
+noah_okafor__sui,Noah Okafor,SUI,MID,0.6741,0.061282,47.429676,0.052607,0.049851,0.022789,0.540329,1.467522,existing_components,yes,ok
+amad_diallo__civ,Amad Diallo,CIV,FWD,0.7082,0.064382,,,,,0.072252,1.464684,existing_components,no,ok
+ryan_gravenberch__ned,Ryan Gravenberch,NED,MID,0.5323,0.048391,37.781057,0.045591,0.051901,0.026836,0.483061,1.464249,existing_components,yes,ok
+mathew_ryan__aus,Mathew Ryan,AUS,GK,0.6917,0.062882,54.927205,0.0,0.0,0.0,0.453216,1.462812,existing_components,yes,ok
+yuito_suzuki__jpn,Yuito Suzuki,JPN,FWD,0.6857,0.062336,45.503052,0.040786,0.018699,0.069969,0.319338,1.461138,existing_components,yes,ok
+emam_ashour__egy,Emam Ashour,EGY,MID,0.6622,0.0602,46.996334,0.021668,0.035688,0.030816,0.237657,1.460613,existing_components,yes,ok
+ronwen_williams__rsa,Ronwen Williams,RSA,GK,0.7261,0.066009,58.5498,0.0,0.0,0.0,0.371763,1.458748,existing_components,yes,ok
+franco_mastantuono__arg,Franco Mastantuono,ARG,MID,0.5967,0.054245,,,,,0.136109,1.457566,existing_components,no,ok
+kim_seung_gyu__kor,Seung-Gyu Kim,KOR,GK,0.5092,0.046291,40.643835,0.0,0.0,0.0,0.517005,1.454913,existing_components,yes,ok
+angus_gunn__sco,Angus Gunn,SCO,GK,0.4484,0.040764,35.667978,0.0,0.0,0.0,0.780511,1.454151,existing_components,yes,ok
+ehsan_hajsafi__irn,Ehsan Hajsafi,IRN,DEF,0.7469,0.0679,,,,,0.839962,1.454076,existing_components,no,ok
+keisuke_goto__jpn,Keisuke Goto,JPN,FWD,0.6844,0.062218,45.416784,0.040329,0.018274,0.070002,0.315996,1.452034,existing_components,yes,ok
+martin_vitik__cze,Martin Vitik,CZE,DEF,0.4918,0.044709,,,,,0.383629,1.451715,existing_components,no,ok
+joris_kayembe__cod,Joris Kayembe,COD,DEF,0.6001,0.054555,45.039305,0.005565,0.006331,0.004497,0.145849,1.451103,existing_components,no,ok
+adil_boulbina__alg,Adil Boulbina,ALG,FWD,0.5847,0.053155,38.800692,0.038195,0.017005,0.07676,0.265434,1.448017,existing_components,yes,ok
+shogo_taniguchi__jpn,Shogo Taniguchi,JPN,DEF,0.5529,0.050264,41.367425,0.004423,0.004867,0.002602,0.31391,1.447932,existing_components,yes,ok
+fares_cha_bi__alg,Fares Chaibi,ALG,MID,0.7047,0.064064,50.15068,0.028289,0.02946,0.036654,0.239335,1.447832,existing_components,yes,ok
+hannibal_mejbri__tun,Hannibal Mejbri,TUN,MID,0.7134,0.064855,50.979564,0.033773,0.071668,0.047745,0.445934,1.444519,existing_components,yes,ok
+nihad_mujaki__bih,Nihad Mujakic,BIH,DEF,0.4396,0.039964,32.849989,0.004753,0.005496,0.002528,0.263935,1.441165,existing_components,no,ok
+ivan_unji__bih,Ivan Sunjic,BIH,MID,0.8426,0.0766,59.326623,0.03114,0.035998,0.038642,0.325817,1.435857,existing_components,yes,ok
+pablo_gavi__esp,Pablo Gavi,ESP,MID,0.25,0.0227272727272727,,,,,0.045042,1.431155,existing_components,no,ok
+roger_ibanez__bra,Roger Ibanez,BRA,DEF,0.3862,0.035109,,,,,0.45423,1.428833,existing_components,yes,ok
+cameron_burgess__aus,Cameron Burgess,AUS,DEF,0.7355,0.066864,55.487591,0.010587,0.011625,0.008062,0.452912,1.424126,existing_components,yes,ok
+brandley_kuwas__cuw,Brandley Kuwas,CUW,FWD,0.6808,0.061891,45.177888,0.057704,0.02288,0.132117,0.379572,1.424045,existing_components,yes,ok
+tomas_soucek__cze,Tomas Soucek,CZE,MID,0.9219,0.083809,,,,,0.130268,1.422677,existing_components,no,ok
+danial_esmaeilifar__irn,Danial Esmaeilifar,IRN,DEF,0.3862,0.035109,28.968862,0.013273,0.012048,0.003852,0.524651,1.420457,existing_components,no,ok
+jason_geria__aus,Jason Geria,AUS,DEF,0.5529,0.050264,41.244128,0.006326,0.007332,0.00452,0.307123,1.419392,existing_components,no,ok
+tsuyoshi_watanabe__jpn,Tsuyoshi Watanabe,JPN,DEF,0.516,0.046909,38.746956,0.004059,0.004963,0.002476,0.308739,1.418081,existing_components,yes,ok
+carlos_acevedo__mex,Carlos Acevedo,MEX,GK,0.2278,0.020709,,,,,0.361711,1.417389,existing_components,no,ok
+koki_ogawa__jpn,Koki Ogawa,JPN,FWD,0.6143,0.055845,40.976267,0.040409,0.018811,0.068256,0.308153,1.413101,existing_components,yes,ok
+daniel_jebbison__can,Daniel Jebbison,CAN,FWD,0.3358,0.030527,22.283688,0.086208,0.030488,0.072739,0.540557,1.412495,existing_components,yes,ok
+aiden_o_neill__aus,Aiden O'Neill,AUS,MID,0.8854,0.080491,63.374276,0.051028,0.058479,0.070972,0.517151,1.411914,existing_components,no,ok
+ko_itakura__jpn,Ko Itakura,JPN,DEF,0.6414,0.058309,,,,,0.364609,1.404321,existing_components,no,ok
+teboho_mokoena__rsa,Teboho Mokoena,RSA,MID,0.7948,0.072255,56.936293,0.034059,0.04156,0.062305,0.340633,1.395025,existing_components,yes,ok
+akram_afif__qat,Akram Afif,QAT,FWD,0.8984,0.081673,64.153846,0.072514,0.055003,0.06816,0.495003,1.394682,existing_components,yes,ok
+ousmane_diomande__civ,Ousmane Diomande,CIV,DEF,0.4417,0.040155,,,,,0.329333,1.394032,existing_components,no,ok
+abdallah_nasib__jor,Abdallah Nasib,JOR,DEF,0.8045,0.073136,60.197517,0.00576,0.006553,0.004388,0.240031,1.3913,existing_components,no,ok
+ugurcan_cakir__tur,Ugurcan Cakir,TUR,GK,0.4293,0.039027,,,,,0.568203,1.390654,existing_components,yes,ok
+luca_jaquez__sui,Luca Jaquez,SUI,DEF,0.4562,0.041473,,,,,0.654468,1.389303,existing_components,no,ok
+vozinha__cpv,Vozinha,CPV,GK,0.8397,0.076336,,,,,0.119968,1.388689,existing_components,yes,ok
+denis_zakaria__sui,Denis Zakaria,SUI,MID,0.645,0.058636,45.3822,0.05019,0.047561,0.020292,0.512348,1.388296,existing_components,yes,ok
+isma_l_gharbi__tun,Ismael Gharbi,TUN,MID,0.8814,0.080127,62.367864,0.045749,0.046339,0.042336,0.421752,1.386732,existing_components,yes,ok
+jos_s__por,Jose Sa,POR,GK,0.2869,0.026082,22.768384,0.0,0.0,0.0,0.558603,1.382833,existing_components,yes,ok
+oh_hyeon_gyu__kor,Hyeon-Gyu Oh,KOR,FWD,0.5007,0.045518,33.419222,0.080881,0.034599,0.086161,0.566371,1.380649,existing_components,yes,ok
+elias_saad__tun,Elias Saad,TUN,MID,0.5733,0.052118,38.090625,0.048208,0.032465,0.086979,0.435875,1.379342,existing_components,yes,ok
+emmanuel_agbadou__civ,Emmanuel Agbadou,CIV,DEF,0.43,0.039091,,,,,0.319285,1.37842,existing_components,no,ok
+igor_sergeev__uzb,Igor Sergeev,UZB,FWD,0.7642,0.069473,50.712312,0.057816,0.027774,0.125622,0.442476,1.378121,existing_components,yes,ok
+johan_manzambi__sui,Johan Manzambi,SUI,MID,0.873,0.079364,,,,,0.225437,1.376128,existing_components,no,ok
+charles_de_ketelaere__bel,Charles De Ketelaere,BEL,FWD,0.6079,0.055264,42.914093,0.054736,0.055127,0.026106,0.480646,1.372987,existing_components,yes,ok
+brice_samba__fra,Brice Samba,FRA,GK,0.0885,0.008045,,,,,0.096093,1.372874,existing_components,no,ok
+niko_sigur__can,Niko Sigur,CAN,MID,0.7463,0.067845,56.321022,0.053065,0.051385,0.016442,0.522966,1.371559,existing_components,yes,ok
+sofyan_amrabat__mar,Sofyan Amrabat,MAR,MID,0.6942,0.063109,48.914026,0.020741,0.025414,0.026945,0.188081,1.370203,existing_components,yes,ok
+gideon_mensah__gha,Gideon Mensah,GHA,DEF,0.6819,0.061991,51.019076,0.013779,0.012858,0.004279,0.756469,1.367937,existing_components,yes,ok
+james_trafford__eng,James Trafford,ENG,GK,0.1189,0.010809,,,,,0.151709,1.366843,existing_components,no,ok
+carlos_harvey__pan,Carlos Harvey,PAN,MID,0.6757,0.061427,48.253764,0.048698,0.050415,0.061746,0.473883,1.365255,existing_components,yes,ok
+ben_old__nzl,Ben Old,NZL,MID,0.8147,0.074064,57.754898,0.056859,0.035256,0.040597,0.418822,1.364591,existing_components,yes,ok
+alan_ben_tez__par,Alan Benitez,PAR,DEF,0.5733,0.052118,42.893733,0.005951,0.006592,0.00417,0.372172,1.363501,existing_components,yes,ok
+stepan_chaloupek__cze,Stepan Chaloupek,CZE,DEF,0.6844,0.062218,,,,,0.553449,1.354001,existing_components,no,ok
+mbekezeli_mbokazi__rsa,Mbekezeli Mbokazi,RSA,DEF,0.6885,0.062591,52.075386,0.007338,0.009277,0.010146,0.331337,1.351286,existing_components,yes,ok
+nidal_celik__bih,Nidal Celik,BIH,DEF,0.6128,0.055709,,,,,0.370697,1.33959,existing_components,yes,ok
+teun_koopmeiners__ned,Teun Koopmeiners,NED,MID,0.5958,0.054164,41.920488,0.04644,0.043108,0.024736,0.435227,1.335762,existing_components,yes,ok
+dylan_bronn__tun,Dylan Bronn,TUN,DEF,0.6829,0.062082,51.339739,0.007646,0.010013,0.010229,0.466506,1.33541,existing_components,yes,ok
+mike_penders__bel,Mike Penders,BEL,GK,0.2781,0.025282,,,,,0.42691,1.332568,existing_components,yes,ok
+otabek_shukurov__uzb,Otabek Shukurov,UZB,MID,0.8579,0.077991,61.043017,0.034436,0.072647,0.045914,0.414329,1.330993,existing_components,yes,ok
+kendry_p_ez__ecu,Kendry Paez,ECU,MID,0.6298,0.057255,44.434909,0.03926,0.045218,0.02374,0.393245,1.330982,existing_components,yes,ok
+noah_sadiki__cod,Noah Sadiki,COD,MID,0.8171,0.074282,58.108884,0.030803,0.035825,0.048676,0.269309,1.33036,existing_components,no,ok
+ronaldo_mart_nez__par,Ronaldo Martinez,PAR,FWD,0.5337,0.048518,35.416332,0.045881,0.018822,0.089288,0.340478,1.329653,existing_components,yes,ok
+bilal_el_khannouss__mar,Bilal El Khannouss,MAR,MID,0.5995,0.0545,42.467981,0.0199,0.024186,0.02573,0.184156,1.323967,existing_components,yes,ok
+lamine_camara__sen,Lamine Camara,SEN,MID,0.7731,0.070282,54.587045,0.022036,0.028929,0.031641,0.201801,1.321202,existing_components,yes,ok
+marko_stamenic__nzl,Marko Stamenic,NZL,MID,0.8985,0.081682,64.364946,0.04126,0.045939,0.054094,0.394858,1.316928,existing_components,yes,ok
+luc_de_fougerolles__can,Luc De Fougerolles,CAN,DEF,0.3375,0.030682,25.329038,0.011665,0.010543,0.003196,0.473136,1.316703,existing_components,yes,ok
+tyler_bindon__nzl,Tyler Bindon,NZL,DEF,0.8205,0.074591,61.071456,0.006995,0.008018,0.005441,0.515619,1.316577,existing_components,yes,ok
+liberato_cacace__nzl,Liberato Cacace,NZL,DEF,0.8273,0.075209,,,,,0.515912,1.31264,existing_components,yes,ok
+quinten_timber__ned,Quinten Timber,NED,MID,0.6143,0.055845,43.231977,0.041965,0.043278,0.024834,0.414326,1.306013,existing_components,yes,ok
+leandro_bacuna__cuw,Leandro Bacuna,CUW,MID,0.9141,0.0831,64.813346,0.039156,0.041291,0.081496,0.316665,1.302569,existing_components,yes,ok
+alvaro_montero__col,Alvaro Montero,COL,GK,0.1021,0.009282,,,,,0.154159,1.300293,existing_components,no,ok
+stjepan_radeljic__bih,Stjepan Radeljic,BIH,DEF,0.3715,0.033773,,,,,0.205043,1.298774,existing_components,no,ok
+derrick_kohn__gha,Derrick Köhn,GHA,DEF,0.6728,0.061164,,,,,0.677787,1.298742,existing_components,yes,ok
+kojo_peprah_oppong__gha,Kojo Peprah Oppong,GHA,DEF,0.6728,0.061164,,,,,0.677787,1.298742,existing_components,yes,ok
+jovane_cabral__cpv,Jovane Cabral,CPV,FWD,0.7525,0.068409,50.171432,0.042268,0.020611,0.091245,0.278307,1.297611,existing_components,yes,ok
+jacob_italiano__aus,Jacob Italiano,AUS,DEF,0.7116,0.064691,53.088918,0.008118,0.00941,0.005801,0.40956,1.296,existing_components,yes,ok
+jack_hendry__sco,Jack Hendry,SCO,DEF,0.5532,0.050291,,,,,0.706612,1.29084,existing_components,yes,ok
+aubrey_modiba__rsa,Aubrey Modiba,RSA,DEF,0.6318,0.057436,47.609289,0.006724,0.018246,0.008277,0.318808,1.287937,existing_components,yes,ok
+fredrik_andr_bj_rkan__nor,Fredrik Andre Bjørkan,NOR,DEF,0.4313,0.039209,32.071468,0.010945,0.009383,0.003003,0.670945,1.287628,existing_components,yes,ok
+danley_jean_jacques__hai,Danley Jean Jacques,HAI,MID,0.8896,0.080873,63.753184,0.051557,0.06142,0.067933,0.495417,1.287242,existing_components,yes,ok
+giovanni_reyna__usa,Giovanni Reyna,USA,MID,0.7955,0.072318,,,,,0.152663,1.28516,existing_components,no,ok
+deniz_undav__ger,Deniz Undav,GER,FWD,0.3287,0.029882,21.812532,0.079058,0.024051,0.050375,0.546732,1.284838,existing_components,yes,ok
+eliesse_ben_seghir__mar,Eliesse Ben Seghir,MAR,MID,0.6689,0.060809,47.063804,0.019138,0.023952,0.027218,0.174369,1.278491,existing_components,yes,ok
+david_jurasek__cze,David Jurasek,CZE,DEF,0.6253,0.056845,,,,,0.501339,1.276237,existing_components,no,ok
+juninho_bacuna__cuw,Juninho Bacuna,CUW,MID,0.9144,0.083127,65.00561,0.040848,0.04351,0.055624,0.306923,1.275453,existing_components,yes,ok
+mohammad_abualnadi__jor,Mohammad Abualnadi,JOR,DEF,0.6453,0.058664,48.285218,0.00462,0.005256,0.00352,0.182637,1.2752,existing_components,no,ok
+ermedin_demirovic__bih,Ermedin Demirovic,BIH,FWD,0.8187,0.074427,,,,,0.091126,1.274582,existing_components,no,ok
+ramiz_zerrouki__alg,Ramiz Zerrouki,ALG,MID,0.7823,0.071118,55.202999,0.021046,0.033923,0.026502,0.202632,1.270162,existing_components,yes,ok
+abdukodir_khusanov__uzb,Abdukodir Khusanov,UZB,DEF,0.8604,0.078218,,,,,0.350315,1.265142,existing_components,yes,ok
+alessandro_circati__aus,Alessandro Circati,AUS,DEF,0.6894,0.062673,51.580219,0.008577,0.009038,0.006267,0.399851,1.264499,existing_components,yes,ok
+ziyad_al_johani__ksa,Ziyad Al-Johani,KSA,MID,0.6287,0.057155,45.037553,0.034282,0.046806,0.056455,0.377218,1.261674,existing_components,yes,ok
+mohammed_ghorbani__irn,Mohammad Ghorbani,IRN,MID,0.6168,0.056073,43.398048,0.070112,0.065572,0.039956,0.661189,1.251043,existing_components,no,ok
+jos_cordoba__pan,Jose Cordoba,PAN,DEF,0.7297,0.066336,54.378703,0.010881,0.010555,0.006463,0.519262,1.241923,existing_components,yes,ok
+jose_hurtado__ecu,Jose Hurtado,ECU,DEF,0.25,0.0227272727272727,,,,,0.238802,1.24019,existing_components,no,ok
+ram_n_sosa__par,Ramon Sosa,PAR,MID,0.8064,0.073309,56.803622,0.030477,0.033758,0.035587,0.303696,1.240017,existing_components,yes,ok
+michel_aebischer__sui,Michel Aebischer,SUI,MID,0.5181,0.0471,36.65143,0.044675,0.042406,0.017509,0.453253,1.239654,existing_components,yes,ok
+andres_andrade__pan,Andres Andrade,PAN,DEF,0.7829,0.071173,,,,,0.513955,1.238222,existing_components,yes,ok
+ngal_ayel_mukau__cod,Ngal'ayel Mukau,COD,MID,0.724,0.065818,51.487984,0.027271,0.031615,0.036591,0.228795,1.237066,existing_components,no,ok
+samet_akaydin__tur,Samet Akaydin,TUR,DEF,0.476,0.043273,,,,,0.504748,1.233767,existing_components,yes,ok
+marco_friedl__aut,Marco Friedl,AUT,DEF,0.4745,0.043136,,,,,0.610167,1.232768,existing_components,yes,ok
+tim_payne__nzl,Tim Payne,NZL,DEF,0.7626,0.069327,57.011976,0.00736,0.008436,0.005724,0.483878,1.232599,existing_components,yes,ok
+alex_baena__esp,Alex Baena,ESP,MID,0.5347,0.048609,37.621492,0.047638,0.046169,0.018183,0.502698,1.230273,existing_components,yes,ok
+mark_mckenzie__usa,Mark McKenzie,USA,DEF,0.3942,0.035836,29.312712,0.009805,0.009068,0.003674,0.474048,1.230084,existing_components,yes,ok
+eray_c_mert__sui,Eray Cömert,SUI,DEF,0.3067,0.027882,22.864178,0.006599,0.005658,0.001207,0.508184,1.230003,existing_components,yes,ok
+willy_semedo__cpv,Willy Semedo,CPV,FWD,0.771,0.070091,51.16356,0.040047,0.020004,0.085087,0.261527,1.227304,existing_components,yes,ok
+moon_hwan_kim__kor,Moon-Hwan Kim,KOR,DEF,0.54,0.049091,,,,,0.434904,1.223877,existing_components,yes,ok
+jamie_leweling__ger,Jamie Leweling,GER,MID,0.525,0.047727,,,,,0.153147,1.221162,existing_components,no,ok
+facundo_torres__uru,Facundo Torres,URU,FWD,0.4573,0.041573,32.423485,0.069515,0.043676,0.021115,0.490036,1.221149,existing_components,yes,ok
+blas_riveros__par,Blas Riveros,PAR,DEF,0.5235,0.047591,38.953111,0.004914,0.005443,0.003443,0.330465,1.210992,existing_components,yes,ok
+dylan_batubinsika__cod,Dylan Batubinsika,COD,DEF,0.4142,0.037655,,,,,0.077892,1.20814,existing_components,no,ok
+luka_su_i__cro,Luka Sucic,CRO,MID,0.597,0.054273,42.102828,0.017503,0.025734,0.024077,0.172866,1.207483,existing_components,yes,ok
+ryan_mendes_da_graca__cpv,Ryan Mendes Da Graça,CPV,FWD,0.8829,0.080264,,,,,0.00288,1.206857,existing_components,no,ok
+raul_rangel__mex,Raul Rangel,MEX,GK,0.2951,0.026827,,,,,0.497906,1.206014,existing_components,yes,ok
+kye_rowles__aus,Kye Rowles,AUS,DEF,0.6668,0.060618,49.694604,0.007867,0.008106,0.005621,0.381147,1.20474,existing_components,yes,ok
+keito_nakamura__jpn,Keito Nakamura,JPN,MID,0.6696,0.060873,47.364826,0.027206,0.027214,0.019235,0.242373,1.20285,existing_components,yes,ok
+gustaf_lagerbielke__swe,Gustaf Lagerbielke,SWE,DEF,0.5292,0.048109,39.351312,0.010099,0.009268,0.003675,0.615721,1.20161,existing_components,yes,ok
+weverton__bra,Weverton,BRA,GK,0.0498,0.004527,,,,,0.059574,1.200925,existing_components,no,ok
+malick_thiaw__ger,Malick Thiaw,GER,DEF,0.3308,0.030073,,,,,0.578772,1.199961,existing_components,yes,ok
+gervane_kastaneer__cuw,Gervane Kastaneer,CUW,FWD,0.5432,0.049382,36.160281,0.048853,0.019269,0.119272,0.321626,1.199515,existing_components,yes,ok
+marin_pongra_i__cro,Marin Pongracic,CRO,DEF,0.4152,0.037745,30.874272,0.002762,0.004585,0.0019,0.199938,1.198013,existing_components,yes,ok
+yan_diomande__civ,Yan Diomande,CIV,FWD,0.8814,0.080127,,,,,0.102151,1.197822,existing_components,no,ok
+milo_degenek__aus,Milos Degenek,AUS,DEF,0.6269,0.056991,47.160433,0.008533,0.009272,0.006859,0.377489,1.194372,existing_components,yes,ok
+yan_valery__tun,Yan Valery,TUN,DEF,0.5733,0.052118,43.338614,0.006866,0.009067,0.004126,0.406424,1.193916,existing_components,yes,ok
+lukas_provod__cze,Lukas Provod,CZE,MID,0.9439,0.085809,,,,,0.13457,1.19324,existing_components,no,ok
+daichi_kamada__jpn,Daichi Kamada,JPN,MID,0.7254,0.065945,51.398217,0.026021,0.026842,0.02232,0.243056,1.189213,existing_components,yes,ok
+tomas_chory__cze,Tomas Chory,CZE,FWD,0.7948,0.072255,,,,,0.105415,1.189043,existing_components,no,ok
+yvon_mvogo__sui,Yvon Mvogo,SUI,GK,0.2688,0.024436,21.331968,0,0,0,0.49984,1.188812,existing_components,yes,ok
+connor_metcalfe__aus,Connor Metcalfe,AUS,MID,0.7886,0.071691,56.216928,0.04255,0.048569,0.059075,0.422273,1.187949,existing_components,yes,ok
+ivan_peri_i__cro,Ivan Perisic,CRO,FWD,0.9251,0.0841,69.304792,0.015213,0.031978,0.009513,0.172023,1.185856,existing_components,yes,ok
+santiago_bueno__uru,Santiago Bueno,URU,DEF,0.3621,0.032918,27.018816,0.00852,0.008565,0.002389,0.511496,1.184393,existing_components,yes,ok
+ali_majrashi__ksa,Ali Majrashi,KSA,DEF,0.7167,0.065155,53.843521,0.008867,0.012106,0.006305,0.338766,1.183899,existing_components,yes,ok
+evann_guessand__civ,Evann Guessand,CIV,FWD,0.7944,0.072218,,,,,0.087133,1.17894,existing_components,no,ok
+danilo_dos_santos__bra,Danilo dos Santos,BRA,MID,0.515,0.046818,,,,,0.098494,1.178361,existing_components,no,ok
+orlando_mosquera__pan,Orlando Mosquera,PAN,GK,0.6527,0.059336,52.631117,0.0,0.0,0.0,0.505986,1.178283,existing_components,yes,ok
+charles_pickel__cod,Charles Pickel,COD,MID,0.7895,0.071773,55.54922,0.025273,0.028755,0.033697,0.205962,1.177081,existing_components,no,ok
+eberechi_eze__eng,Eberechi Eze,ENG,MID,0.5007,0.045518,,,,,0.088731,1.17668,existing_components,no,ok
+leverton_pierre__hai,Leverton Pierre,HAI,MID,0.7773,0.070664,55.671781,0.044771,0.053425,0.087359,0.4538,1.172465,existing_components,yes,ok
+lukas_cerv__cze,Lukas Cerv,CZE,MID,0.8284,0.075309,,,,,0.111985,1.166716,existing_components,no,ok
+abdulelah_al_amri__ksa,Abdulelah Al-Amri,KSA,DEF,0.6689,0.060809,50.477201,0.009002,0.012192,0.006096,0.333796,1.164972,existing_components,yes,ok
+nawaf_al_aqidi__ksa,Nawaf Al-Aqidi,KSA,GK,0.6868,0.062436,55.380805,0.0,0.0,0.0,0.33634,1.163571,existing_components,yes,ok
+franck_kessie__civ,Franck Kessie,CIV,MID,0.8479,0.077082,,,,,0.096368,1.160508,existing_components,no,ok
+brandon_mechele__bel,Brandon Mechele,BEL,DEF,0.1771,0.0161,,,,,0.15308,1.160378,existing_components,no,ok
+hjalmar_ekdal__swe,Hjalmar Ekdal,SWE,DEF,0.4505,0.040955,33.705959,0.011,0.017669,0.003336,0.597308,1.157173,existing_components,yes,ok
+takefusa_kubo__jpn,Takefusa Kubo,JPN,MID,0.7208,0.065527,51.028315,0.021089,0.033415,0.021997,0.236991,1.156464,existing_components,yes,ok
+steven_moreira__cpv,Steven Moreira,CPV,DEF,0.8138,0.073982,61.001634,0.005668,0.007165,0.003359,0.08044,1.154496,existing_components,no,ok
+han_beom_lee__kor,Han-beom Lee,KOR,DEF,0.4988,0.045345,,,,,0.397909,1.147637,existing_components,no,ok
+joel_waterman__can,Joel Waterman,CAN,DEF,0.2867,0.026064,21.4982,0.00939,0.009139,0.005442,0.406554,1.136791,existing_components,yes,ok
+rui_silva__por,Rui Silva,POR,GK,0.0471,0.004282,,,,,0.031271,1.136445,existing_components,no,ok
+ivan_ba_i__bih,Ivan Basic,BIH,MID,0.4913,0.044664,35.15055,0.02269,0.029227,0.028444,0.25602,1.134275,existing_components,yes,ok
+edo_kayembe__cod,Edo Kayembe,COD,MID,0.688,0.062545,48.515696,0.022993,0.026158,0.036331,0.187859,1.129205,existing_components,no,ok
+ibrahim_sangare__civ,Ibrahim Sangare,CIV,MID,0.7036,0.063964,,,,,0.071458,1.129188,existing_components,no,ok
+luca_zidane__alg,Luca Zidane,ALG,GK,0.399,0.036273,32.05167,0.0,0.0,0.0,0.194491,1.128127,existing_components,yes,ok
+firas_chaouat__tun,Firas Chaouat,TUN,FWD,0.5292,0.048109,35.140468,0.050165,0.021656,0.080245,0.352093,1.123601,existing_components,yes,ok
+alexander_bernhardsson__swe,Alexander Bernhardsson,SWE,MID,0.6928,0.062982,48.867341,0.060699,0.067315,0.036812,0.615645,1.123462,existing_components,yes,ok
+khozhiakbar_alizhonov__uzb,Khozhiakbar Alizhonov,UZB,DEF,0.7733,0.0703,,,,,0.30979,1.122644,existing_components,yes,ok
+o_uz_ayd_n__tur,Oguz Aydin,TUR,MID,0.462,0.033,32.592,0.046952,0.045036,0.028,0.428559,1.121007,existing_components,yes,ok
+erick_davis__pan,Eric Davis,PAN,DEF,0.633,0.057545,47.06988,0.009005,0.017195,0.004513,0.463455,1.107925,existing_components,yes,ok
+munir_el_kajoui__mar,Munir El Kajoui,MAR,GK,0.2166,0.019691,,,,,0.110635,1.105735,existing_components,no,ok
+antoine_semenyo__gha,Antoine Semenyo,GHA,FWD,0.8635,0.0785,61.298138,0.069719,0.065058,0.042605,0.613493,1.105127,existing_components,yes,ok
+roberto_lopes__cpv,Roberto Lopes,CPV,DEF,0.8194,0.074491,,,,,0.090832,1.103931,existing_components,yes,ok
+martin_boyle__aus,Martin Boyle,AUS,FWD,0.7263,0.066027,51.187445,0.032013,0.035946,0.043424,0.280005,1.098802,existing_components,no,ok
+logan_costa__cpv,Logan Costa,CPV,DEF,0.8139,0.073991,,,,,0.089889,1.095563,existing_components,yes,ok
+isma_l_bennacer__alg,Ismael Bennacer,ALG,MID,0.7025,0.063864,49.68361,0.019645,0.026344,0.024947,0.168461,1.094034,existing_components,yes,ok
+tshepang_moremi__rsa,Tshepang Moremi,RSA,FWD,0.649,0.059,46.040709,0.033217,0.039684,0.038384,0.263443,1.093151,existing_components,yes,ok
+david_raya__esp,David Raya,ESP,GK,0.1725,0.015682,13.76067,0,0,0,0.442575,1.091049,existing_components,yes,ok
+nawaf_al_boushal__ksa,Nawaf Al-Boushal,KSA,DEF,0.7414,0.0674,,,,,0.315002,1.090795,existing_components,yes,ok
+andr_s_cubas__par,Andres Cubas,PAR,MID,0.7229,0.065718,50.895775,0.027165,0.028835,0.03172,0.262182,1.087014,existing_components,yes,ok
+paul_okon_engstler__aus,Paul Okon-Engstler,AUS,MID,0.873,0.079364,61.467057,0.038092,0.042771,0.051669,0.382132,1.081249,existing_components,yes,ok
+rustam_ashurmatov__uzb,Rustam Ashurmatov,UZB,DEF,0.6628,0.060255,50.131541,0.007457,0.009823,0.005581,0.29737,1.080311,existing_components,yes,ok
+ibrahim_adel__egy,Ibrahim Adel,EGY,MID,0.6285,0.057136,44.294795,0.017847,0.022679,0.025384,0.163909,1.073086,existing_components,yes,ok
+umar_eshmurodov__uzb,Umar Eshmurodov,UZB,DEF,0.7074,0.064309,53.068441,0.007195,0.008868,0.00533,0.295608,1.070308,existing_components,yes,ok
+utkir_yusupov__uzb,Utkir Yusupov,UZB,GK,0.6033,0.054845,,,,,0.295597,1.067594,existing_components,yes,ok
+ismaila_sarr__sen,Ismaila Sarr,SEN,MID,0.6015,0.037,42.506,0.016875,0.02688,0.026,0.158641,1.066499,existing_components,yes,ok
+kristijan_jaki__cro,Kristijan Jakic,CRO,DEF,0.3298,0.029982,24.579664,0.002324,0.007346,0.001332,0.177802,1.064356,existing_components,yes,ok
+michael_boxall__nzl,Michael Boxall,NZL,DEF,0.6833,0.062118,,,,,0.417409,1.059357,existing_components,yes,ok
+saud_abdulhamid__ksa,Saud Abdulhamid,KSA,DEF,0.586,0.053273,44.322696,0.008072,0.011098,0.005382,0.301363,1.058912,existing_components,yes,ok
+mamadou_sarr__sen,Mamadou Sarr,SEN,DEF,0.4682,0.042564,34.882773,0.00313,0.004275,0.002226,0.161092,1.05461,existing_components,yes,ok
+morten_thorsby__nor,Morten Thorsby,NOR,MID,0.5467,0.0497,38.4926,0.048913,0.052418,0.020129,0.490039,1.051121,existing_components,yes,ok
+boualem_khoukhi__qat,Boualem Khoukhi,QAT,DEF,0.8339,0.075809,62.391564,0.009622,0.010948,0.006842,0.26541,1.048633,existing_components,yes,ok
+jamiro_monteiro__cpv,Jamiro Monteiro,CPV,MID,0.7679,0.069809,54.445646,0.020121,0.025847,0.025385,0.132599,1.048559,existing_components,no,ok
+mohamed_amine_ben_hamida__tun,Mohamed Amine Ben Hamida,TUN,DEF,0.5912,0.053745,,,,,0.367847,1.045844,existing_components,yes,ok
+craig_gordon__sco,Craig Gordon,SCO,GK,0.3209,0.029173,,,,,0.560514,1.043034,existing_components,yes,ok
+jesse_randall__nzl,Jesse Randall,NZL,FWD,0.5613,0.051027,37.247868,0.043797,0.017717,0.093507,0.317698,1.040245,existing_components,yes,ok
+oliver_baumann__ger,Oliver Baumann,GER,GK,0.1776,0.016145,14.146728,0,0,0,0.50215,1.039913,existing_components,yes,ok
+daizen_maeda__jpn,Daizen Maeda,JPN,FWD,0.5912,0.053745,41.677826,0.015767,0.019276,0.015628,0.135954,1.039234,existing_components,no,ok
+lucas_mendes__qat,Lucas Mendes,QAT,DEF,0.8649,0.078627,,,,,0.248836,1.038,existing_components,yes,ok
+hicham_boudaoui__alg,Hicham Boudaoui,ALG,MID,0.5192,0.0472,37.002865,0.01659,0.026803,0.020645,0.164796,1.037974,existing_components,yes,ok
+karim_boudiaf__qat,Karim Boudiaf,QAT,MID,0.811,0.073727,57.640203,0.038714,0.046096,0.056019,0.358004,1.035723,existing_components,yes,ok
+nicolas_fonseca__uru,Nicolas Fonseca,URU,MID,0.344,0.031273,24.2262,0.032182,0.028885,0.013535,0.306258,1.032238,existing_components,no,ok
+jaminton_campaz__col,Jaminton Campaz,COL,MID,0.4631,0.0421,32.583716,0.045245,0.03879,0.020688,0.414127,1.031038,existing_components,yes,ok
+riley_mcgree__aus,Riley McGree,AUS,MID,0.6307,0.057336,44.441645,0.027561,0.030946,0.038769,0.263899,1.028344,existing_components,no,ok
+carl_starfelt__swe,Carl Starfelt,SWE,DEF,0.4553,0.041391,33.878418,0.011182,0.01026,0.002712,0.544097,1.024278,existing_components,yes,ok
+dayne_st_clair__can,Dayne St. Clair,CAN,GK,0.24,0.021818,19.25808,0.0,0.0,0.0,0.360459,1.024192,existing_components,yes,ok
+meshaal_barsham__qat,Meshaal Barsham,QAT,GK,0.758,0.068909,60.502802,0.0,0.0,0.0,0.240031,1.022939,existing_components,yes,ok
+ken_sema__swe,Ken Sema,SWE,MID,0.3948,0.035891,28.151214,0.069477,0.038501,0.026236,0.565665,1.022756,existing_components,yes,ok
+aymen_dahmen__tun,Aymen Dahmen,TUN,GK,0.4267,0.038791,34.407381,0,0,0,0.347536,1.017676,existing_components,yes,ok
+anis_hadj_moussa__alg,Anis Hadj Moussa,ALG,FWD,0.4409,0.040082,31.139003,0.012228,0.022134,0.018775,0.095074,1.015813,existing_components,no,ok
+jackson_porozo__ecu,Jackson Porozo,ECU,DEF,0.3225,0.029318,,,,,0.322556,1.015374,existing_components,no,ok
+joao_paulo__cpv,Joao Paulo,CPV,DEF,0.25,0.0227272727272727,,,,,-0.007031,1.013761,existing_components,no,ok
+edmilson_junior__qat,Edmilson Junior,QAT,FWD,0.8529,0.077536,60.719657,0.04222,0.049018,0.061273,0.348909,1.013295,existing_components,yes,ok
+pedro_ro_ro_miguel_correia__qat,Pedro 'Ro-Ro' Miguel Correia,QAT,DEF,0.8455,0.076864,,,,,0.242132,1.011519,existing_components,yes,ok
+samed_ba_dar__bih,Samed Bazdar,BIH,FWD,0.5293,0.048118,37.494024,0.020809,0.033873,0.025747,0.229178,1.009502,existing_components,yes,ok
+willer_ditta__col,Willer Ditta,COL,DEF,0.3311,0.0301,,,,,0.415153,1.007565,existing_components,yes,ok
+kaishu_sano__jpn,Kaishu Sano,JPN,MID,0.5733,0.052118,40.791442,0.01845,0.026337,0.018478,0.20936,1.003465,existing_components,yes,ok
+hwang_hee_chan__kor,Hee-Chan Hwang,KOR,MID,0.7563,0.068755,53.213268,0.041875,0.046296,0.032004,0.426437,0.999838,existing_components,yes,ok
+amer_jamous__jor,Amer Jamous,JOR,MID,0.6012,0.054655,42.51987,0.02403,0.019951,0.024246,0.16786,0.981674,existing_components,no,ok
+nizar_al_rashdan__jor,Nizar Al-Rashdan,JOR,MID,0.8165,0.074227,57.826979,0.033469,0.027608,0.032725,0.25054,0.979433,existing_components,yes,ok
+ryan_thomas__nzl,Ryan Thomas,NZL,MID,0.8342,0.075836,58.962924,0.030482,0.034939,0.039241,0.286347,0.979327,existing_components,yes,ok
+thomas_partey__gha,Thomas Partey,GHA,MID,0.778,0.070727,54.88401,0.055219,0.051527,0.03368,0.546733,0.976033,existing_components,yes,ok
+ruben_providence__hai,Ruben Providence,HAI,FWD,0.8296,0.075418,59.023551,0.043671,0.051462,0.056841,0.369269,0.9705,existing_components,yes,ok
+relebohile_mofokeng__rsa,Relebohile Mofokeng,RSA,FWD,0.4693,0.042664,31.178415,0.035129,0.01564,0.076028,0.245842,0.969787,existing_components,yes,ok
+ibrahim_sabra__jor,Ibrahim Sabra,JOR,FWD,0.3742,0.034018,24.831912,0.021798,0.009705,0.051387,0.146056,0.965144,existing_components,no,ok
+tarek_salman__qat,Tarek Salman,QAT,DEF,0.7434,0.067582,56.065741,0.009627,0.011736,0.007335,0.244812,0.957272,existing_components,yes,ok
+souffian_el_karouani__mar,Souffian El Karouani,MAR,DEF,0.309,0.028091,,,,,0.118402,0.953899,existing_components,no,ok
+mahmoud_al_mardi__jor,Mahmoud Al-Mardi,JOR,MID,0.731,0.066455,48.50916,0.042694,0.018505,0.099393,0.36015,0.953449,existing_components,no,ok
+altay_bayindir__tur,Altay Bayindir,TUR,GK,0.1547,0.014064,,,,,0.180851,0.949555,existing_components,no,ok
+ederson_moraes__bra,Ederson Moraes,BRA,GK,0.189,0.017182,,,,,0.309057,0.947435,existing_components,yes,ok
+orlando_gill__par,Orlando Gill,PAR,GK,0.3157,0.0287,25.32798,0.0,0.0,0.0,0.265166,0.947053,existing_components,yes,ok
+nando_pijnaker__nzl,Nando Pijnaker,NZL,DEF,0.6188,0.056255,,,,,0.373287,0.945908,existing_components,yes,ok
+callan_elliot__nzl,Callan Elliot,NZL,DEF,0.618,0.056182,,,,,0.37274,0.9445,existing_components,yes,ok
+homam_al_amin__qat,Homam Al-Amin,QAT,DEF,0.7957,0.072336,,,,,0.224926,0.943548,existing_components,yes,ok
+ayoub_al_oui__qat,Ayoub Al-Oui,QAT,DEF,0.794,0.072182,,,,,0.224337,0.941226,existing_components,yes,ok
+leopold_querfeld__aut,Leopold Querfeld,AUT,DEF,0.3116,0.028327,23.170576,0.011054,0.010661,0.002274,0.490028,0.934822,existing_components,yes,ok
+achref_abada__alg,Achref Abada,ALG,DEF,0.4613,0.041936,,,,,0.160445,0.932045,existing_components,yes,ok
+jordy_alcivar__ecu,Jordy Alcivar,ECU,MID,0.309,0.028091,21.902538,0.031037,0.024257,0.013248,0.276295,0.928487,existing_components,yes,ok
+francis_de_vries__nzl,Francis de Vries,NZL,DEF,0.6054,0.055036,,,,,0.364121,0.922338,existing_components,yes,ok
+youssef_amyn__irq,Youssef Amyn,IRQ,MID,0.7231,0.065736,48.297295,0.039495,0.016768,0.092222,0.340486,0.918001,existing_components,yes,ok
+mert_gunok__tur,Mert Günok,TUR,GK,0.2754,0.025036,,,,,0.376883,0.917087,existing_components,yes,ok
+ao_tanaka__jpn,Ao Tanaka,JPN,MID,0.6829,0.062082,48.136255,0.018283,0.022352,0.018121,0.183464,0.916843,existing_components,yes,ok
+gustavo_vel_squez__par,Gustavo Velazquez,PAR,DEF,0.3942,0.035836,29.332028,0.0037,0.004098,0.002592,0.246194,0.910913,existing_components,yes,ok
+abdelmouhib_chamakh__tun,Abdelmouhib Chamakh,TUN,GK,0.437,0.039727,,,,,0.326451,0.908388,existing_components,yes,ok
+sherel_floranus__cuw,Sherel Floranus,CUW,DEF,0.8872,0.080655,67.104259,0.011494,0.0117,0.008603,0.097831,0.907556,existing_components,yes,ok
+joe_bell__nzl,Joe Bell,NZL,MID,0.8244,0.074945,58.04518,0.027882,0.031959,0.036143,0.26146,0.905585,existing_components,yes,ok
+camilo_vargas__col,Camilo Vargas,COL,GK,0.2108,0.019164,16.739417,0.0,0.0,0.0,0.374523,0.90521,existing_components,yes,ok
+el_mehdi_benabid__mar,El Mehdi Benabid,MAR,GK,0.1218,0.011073,,,,,0.041201,0.901577,existing_components,no,ok
+alex_rufer__nzl,Alex Rufer,NZL,MID,0.5288,0.048073,37.208483,0.018079,0.019857,0.022263,0.147415,0.901355,existing_components,no,ok
+matthieu_epolo__cod,Matthieu Epolo,COD,GK,0.4911,0.044645,,,,,0.129924,0.89787,existing_components,yes,ok
+gustavo_puerta__col,Gustavo Puerta,COL,MID,0.3363,0.030573,23.671148,0.040572,0.028987,0.014841,0.360292,0.886897,existing_components,yes,ok
+himad_abdelli__alg,Himad Abdelli,ALG,MID,0.6008,0.054618,42.414077,0.016007,0.02168,0.020325,0.130085,0.886025,existing_components,yes,ok
+ibrahim_sulemana__gha,Ibrahim Sulemana,GHA,MID,0.6239,0.056718,44.291909,0.050274,0.046912,0.030722,0.496884,0.88438,existing_components,yes,ok
+juri_n_gaari__cuw,Jurien Gaari,CUW,DEF,0.8262,0.075109,62.445848,0.010497,0.01128,0.023846,0.103052,0.884315,existing_components,yes,ok
+yu_min_cho__kor,Yu-Min Cho,KOR,DEF,0.4056,0.036873,,,,,0.314218,0.883803,existing_components,yes,ok
+martin_erlic__cro,Martin Erlic,CRO,DEF,0.2946,0.026782,21.906456,0.001954,0.003244,0.001344,0.145547,0.883447,existing_components,yes,ok
+braian_ojeda__par,Braian Ojeda,PAR,MID,0.5324,0.0484,37.749822,0.022849,0.024563,0.027307,0.211701,0.8833,existing_components,yes,ok
+clement_akpa__civ,Clement Akpa,CIV,DEF,0.3215,0.029227,,,,,0.226106,0.882494,existing_components,no,ok
+samukele_kabini__rsa,Samukele Kabini,RSA,DEF,0.3475,0.031591,24.4501,0.011543,0.013133,0.01539,0.216601,0.877885,existing_components,yes,ok
+egil_selvik__nor,Egil Selvik,NOR,GK,0.2446,0.022236,19.523727,0.0,0.0,0.0,0.449064,0.876085,existing_components,yes,ok
+wataru_endo__jpn,Wataru Endo,JPN,MID,0.6471,0.058827,45.64967,0.017628,0.021438,0.017826,0.173621,0.872647,existing_components,yes,ok
+ahmed_fathi__qat,Ahmed Fathi,QAT,MID,0.7167,0.065155,50.833381,0.033682,0.039235,0.048474,0.301881,0.865806,existing_components,yes,ok
+anthony_mandrea__alg,Anthony Mandrea,ALG,GK,0.3123,0.028391,24.784128,0.0,0.0,0.0,0.143364,0.861824,existing_components,yes,ok
+farrukh_sayfiev__uzb,Farrukh Sayfiev,UZB,DEF,0.6101,0.055464,,,,,0.23386,0.855644,existing_components,yes,ok
+stopira__cpv,Stopira,CPV,DEF,0.654,0.059455,,,,,0.062407,0.852332,existing_components,yes,ok
+yazan_al_arab__jor,Yazan Al-Arab,JOR,DEF,0.7457,0.067791,55.797748,0.005339,0.006074,0.004067,0.218833,0.84626,existing_components,yes,ok
+karim_hafez__egy,Karim Hafez,EGY,DEF,0.3621,0.032918,,,,,0.136229,0.846141,existing_components,yes,ok
+jean_kevin_duverne__hai,Jean-Kevin Duverne,HAI,DEF,0.8502,0.077291,63.586458,0.010408,0.011841,0.006728,0.386346,0.842683,existing_components,yes,ok
+gonzalo_valle__ecu,Gonzalo Valle,ECU,GK,0.0722,0.006564,,,,,0.080193,0.837507,existing_components,no,ok
+besfort_zeneli__swe,Besfort Zeneli,SWE,MID,0.5818,0.052891,40.935448,0.049756,0.045664,0.028968,0.467131,0.835243,existing_components,yes,ok
+kobbie_mainoo__eng,Kobbie Mainoo,ENG,MID,0.7371,0.067009,,,,,0.154231,0.831768,existing_components,no,ok
+callum_mccowatt__nzl,Callum McCowatt,NZL,MID,0.7572,0.068836,53.362156,0.025898,0.029685,0.033571,0.238152,0.829583,existing_components,yes,ok
+kenji_gorr__cuw,Kenji Gorre,CUW,FWD,0.6469,0.058809,46.165372,0.030903,0.033374,0.041903,0.192184,0.829542,existing_components,yes,ok
+alexis_guendouz__alg,Alexis Guendouz,ALG,GK,0.2887,0.026245,,,,,0.140302,0.827128,existing_components,yes,ok
+aidan_morris__usa,Aidan Morris,USA,MID,0.7453,0.067755,,,,,0.139875,0.826244,existing_components,no,ok
+carlens_arcus__hai,Carlens Arcus,HAI,DEF,0.772,0.070182,58.299124,0.011012,0.013188,0.020606,0.376621,0.825524,existing_components,yes,ok
+nadiem_amiri__ger,Nadiem Amiri,GER,MID,0.6071,0.055191,,,,,0.184914,0.819988,existing_components,no,ok
+abdoulaye_seck__sen,Abdoulaye Seck,SEN,DEF,0.3202,0.029109,23.872831,0.003584,0.002854,0.003185,0.121676,0.819636,existing_components,yes,ok
+maximilian_beier__ger,Maximilian Beier,GER,FWD,0.5178,0.047073,,,,,0.15036,0.819359,existing_components,no,ok
+jesper_karlstr_m__swe,Jesper Karlström,SWE,MID,0.5447,0.049518,38.450373,0.04924,0.043386,0.030102,0.45248,0.812113,existing_components,yes,ok
+oston_urunov__uzb,Oston Urunov,UZB,MID,0.7918,0.071982,55.711048,0.026259,0.03414,0.03334,0.244762,0.81014,existing_components,yes,ok
+derrick_luckassen__gha,Derrick Luckassen,GHA,DEF,0.4417,0.040155,,,,,0.427798,0.803688,existing_components,yes,ok
+kai_trewin__aus,Kai Trewin,AUS,DEF,0.4417,0.040155,33.047552,0.005496,0.00579,0.004015,0.251034,0.802626,existing_components,yes,ok
+matthew_garbett__nzl,Matthew Garbett,NZL,MID,0.8803,0.080027,,,,,0.068,0.800859,existing_components,no,ok
+elisha_owusu__gha,Elisha Owusu,GHA,MID,0.5235,0.047591,37.234984,0.043499,0.04059,0.026888,0.444365,0.799607,existing_components,yes,ok
+sander_tangvik__nor,Sander Tangvik,NOR,GK,0.0777,0.007064,,,,,0.094965,0.794269,existing_components,no,ok
+ricardo_ad__hai,Ricardo Ade,HAI,DEF,0.7464,0.067855,56.476356,0.011196,0.012738,0.008142,0.359325,0.788529,existing_components,yes,ok
+jearl_margaritha__cuw,Jearl Margaritha,CUW,FWD,0.6291,0.057191,44.849168,0.029175,0.031384,0.040551,0.179049,0.78753,existing_components,yes,ok
+sebastian_tounekti__tun,Sebastian Tounekti,TUN,MID,0.3511,0.031918,23.314093,0.029406,0.014402,0.050715,0.242408,0.787221,existing_components,yes,ok
+pape_matar_sarr__sen,Pape Matar Sarr,SEN,MID,0.5274,0.047945,37.107864,0.013485,0.018411,0.016781,0.104938,0.782886,existing_components,yes,ok
+baha_a_faisal__jor,Baha'a Faisal,JOR,FWD,0.7502,0.0682,,,,,0.031816,0.781724,existing_components,no,ok
+godfried_roemeratoe__cuw,Godfried Roemeratoe,CUW,MID,0.6387,0.058064,45.204631,0.026456,0.028381,0.036282,0.180271,0.7777,existing_components,yes,ok
+eloy_room__cuw,Eloy Room,CUW,GK,0.7886,0.071691,63.58955,0.0,0.0,0.0,0.047768,0.77743,existing_components,yes,ok
+angelo_stiller__ger,Angelo Stiller,GER,MID,0.5153,0.046845,,,,,0.149393,0.777204,existing_components,no,ok
+abolfazl_jalali__irn,Abolfazl Jalali,IRN,DEF,0.3762,0.0342,,,,,0.398258,0.773843,existing_components,yes,ok
+mahmoud_saber__egy,Mahmoud Saber,EGY,MID,0.4889,0.044445,34.399004,0.013769,0.016936,0.017803,0.111939,0.77319,existing_components,yes,ok
+akmal_mozgovoy__uzb,Akmal Mozgovoy,UZB,MID,0.5432,0.049382,38.888231,0.024166,0.031727,0.032388,0.232652,0.77259,existing_components,yes,ok
+mory_diaw__sen,Mory Diaw,SEN,GK,0.0859,0.007809,,,,,-0.001945,0.771051,existing_components,no,ok
+mohamed_kone__civ,Mohamed Kone,CIV,GK,0.0721,0.006555,,,,,0.037841,0.768353,existing_components,no,ok
+mojmir_chytil__cze,Mojmir Chytil,CZE,FWD,0.8204,0.074582,,,,,0.110421,0.766432,existing_components,no,ok
+joan_garcia__esp,Joan Garcia,ESP,GK,0.0291,0.002645,,,,,0.329963,0.760741,existing_components,yes,ok
+gaston_olveira__par,Gaston Olveira,PAR,GK,0.2683,0.024391,,,,,0.212499,0.759645,existing_components,yes,ok
+mohanad_lasheen__egy,Mohanad Lasheen,EGY,MID,0.4745,0.043136,33.733,0.0135,0.016545,0.018,0.109001,0.759486,existing_components,yes,ok
+juan_quintero__col,Juan Quintero,COL,MID,0.0446,0.004055,3.138457,0.004499,0.004628,0.001975,0.112537,0.758867,existing_components,no,ok
+callum_elder__aus,Callum Elder,AUS,DEF,0.2207,0.020064,16.411252,0.002477,0.002461,0.001707,0.119435,0.750615,existing_components,no,ok
+max_crocombe__nzl,Max Crocombe,NZL,GK,0.4221,0.038373,33.6916,0.0,0.0,0.0,0.304109,0.748122,existing_components,no,ok
+yehvann_diouf__sen,Yehvann Diouf,SEN,GK,0.0661,0.006009,,,,,-0.009855,0.747889,existing_components,no,ok
+simon_adingra__civ,Simon Adingra,CIV,FWD,0.7629,0.069355,,,,,0.081695,0.743612,existing_components,no,ok
+houssem_aouar__alg,Houssem Aouar,ALG,MID,0.6789,0.061718,,,,,0.024777,0.743313,existing_components,no,ok
+roderick_miller__pan,Roderick Miller,PAN,DEF,0.4997,0.045427,,,,,0.309955,0.73877,existing_components,yes,ok
+ibrahim_sa_deh__jor,Ibrahim Saadeh,JOR,MID,0.6552,0.059564,46.73345,0.021203,0.025221,0.029984,0.182407,0.738324,existing_components,yes,ok
+armando_obispo__cuw,Armando Obispo,CUW,DEF,0.8628,0.078436,,,,,0.056359,0.736294,existing_components,yes,ok
+liam_kelly__sco,Liam Kelly,SCO,GK,0.2307,0.020973,,,,,0.398091,0.732315,existing_components,yes,ok
+merchas_doski__irq,Merchas Doski,IRQ,DEF,0.8342,0.075836,62.762705,0.005363,0.006102,0.003814,0.215021,0.731715,existing_components,yes,ok
+patrick_pentz__aut,Patrick Pentz,AUT,GK,0.1599,0.014536,12.806551,0.0,0.0,0.0,0.35883,0.731649,existing_components,yes,ok
+mohannad_abu_taha__jor,Mohannad Abu Taha,JOR,MID,0.7598,0.069073,56.637012,0.00539,0.006132,0.003194,0.019125,0.731621,existing_components,no,ok
+oumar_diakite__civ,Oumar Diakite,CIV,FWD,0.6966,0.063327,,,,,0.07025,0.729222,existing_components,no,ok
+michal_sadilek__cze,Michal Sadilek,CZE,MID,0.8357,0.075973,,,,,0.113413,0.728957,existing_components,no,ok
+dominic_hyam__sco,Dominic Hyam,SCO,DEF,0.1931,0.017555,,,,,0.214103,0.728642,existing_components,no,ok
+martin_krug__pan,Martin Krug,PAN,DEF,0.4938,0.044891,,,,,0.305705,0.728366,existing_components,yes,ok
+hussein_ali__irq,Hussein Ali,IRQ,DEF,0.8097,0.073609,60.874056,0.00637,0.005436,0.005662,0.214929,0.725893,existing_components,yes,ok
+gonzalo_agustin_sandez__par,Gonzalo Agustin Sandez,PAR,DEF,0.3533,0.032118,,,,,0.202955,0.725173,existing_components,yes,ok
+kento_shiogai__jpn,Kento Shiogai,JPN,FWD,0.45,0.040909,,,,,0.026055,0.724785,existing_components,no,ok
+ali_jasim__irq,Ali Jasim,IRQ,MID,0.9352,0.085018,66.632065,0.027051,0.034198,0.036335,0.257052,0.724327,existing_components,yes,ok
+adam_karabec__cze,Adam Karabec,CZE,MID,0.8096,0.0736,,,,,0.108309,0.722962,existing_components,no,ok
+gi_hyuk_lee__kor,Gi-hyuk Lee,KOR,DEF,0.1931,0.017555,,,,,0.123399,0.722198,existing_components,no,ok
+jos_luis_rodr_guez_bebanz__uru,Jose Luis Rodriguez Bebanz,URU,DEF,0.1955,0.017773,14.587624,0.004958,0.004272,0.001192,0.31077,0.717174,existing_components,yes,ok
+nicolas_pepe__civ,Nicolas Pepe,CIV,FWD,0.6409,0.058264,,,,,0.060635,0.717133,existing_components,no,ok
+juan_portilla__col,Juan Portilla,COL,MID,0.43,0.039091,,,,,0.081095,0.71557,existing_components,no,ok
+gael_kakuta__cod,Gaël Kakuta,COD,MID,0.6395,0.058136,,,,,0.012395,0.712471,existing_components,no,ok
+jordy_caicedo__ecu,Jordy Caicedo,ECU,FWD,0.3344,0.0304,,,,,0.025404,0.712469,existing_components,no,ok
+alex_paulsen__nzl,Alex Paulsen,NZL,GK,0.3948,0.035891,31.512541,0.0,0.0,0.0,0.279394,0.711896,existing_components,no,ok
+timothy_fayulu__cod,Timothy Fayulu,COD,GK,0.4031,0.036645,,,,,0.097685,0.711451,existing_components,yes,ok
+viktor_johansson__swe,Viktor Johansson,SWE,GK,0.2228,0.020255,17.783673,0,0,0,0.348164,0.70926,existing_components,yes,ok
+luciano_valente__ned,Luciano Valente,NED,MID,0.4562,0.041473,,,,,0.063658,0.708043,existing_components,no,ok
+jerome_opoku__gha,Jerome Opoku,GHA,DEF,0.3969,0.036082,,,,,0.379337,0.707718,existing_components,yes,ok
+martin_jedlicka__cze,Martin Jedlicka,CZE,GK,0.2815,0.025591,,,,,0.250885,0.704411,existing_components,no,ok
+zakaria_el_ouahdi__mar,Zakaria El Ouahdi,MAR,DEF,0.1545,0.014045,,,,,0.0342,0.703682,existing_components,no,ok
+gilson_benchimol_tavares__cpv,Gilson Benchimol Tavares,CPV,FWD,0.5415,0.049227,,,,,-0.017567,0.7009,existing_components,no,ok
+c_sar_blackman__pan,Cesar Blackman,PAN,DEF,0.443,0.040273,32.963187,0.006539,0.006343,0.003884,0.296764,0.700767,existing_components,yes,ok
+brian_cipenga__cod,Brian Cipenga,COD,MID,0.6555,0.059591,46.12098,0.02163,0.024607,0.027463,0.168464,0.700016,existing_components,no,ok
+noor_al_rawabdeh__jor,Noor Al-Rawabdeh,JOR,MID,0.7836,0.071236,55.134096,0.01977,0.023618,0.028117,0.166502,0.694878,existing_components,yes,ok
+wagner_pina__cpv,Wagner Pina,CPV,DEF,0.5432,0.049382,40.559658,0.003495,0.004639,0.002071,0.03476,0.694757,existing_components,yes,ok
+jahkeele_rutty__can,Jahkeele Rutty,CAN,DEF,0.25,0.0227272727272727,,,,,0.244815,0.694318,existing_components,yes,ok
+seko_fofana__civ,Seko Fofana,CIV,MID,0.7016,0.063782,,,,,0.071113,0.689318,existing_components,no,ok
+path_ciss__sen,Pathe Ciss,SEN,MID,0.4717,0.042882,33.188812,0.012174,0.01616,0.016834,0.089903,0.688066,existing_components,yes,ok
+brandon_thomas_asante__gha,Brandon Thomas-Asante,GHA,FWD,0.3589,0.032627,23.816604,0.056173,0.019153,0.05786,0.380328,0.687599,existing_components,yes,ok
+khulumani_ndamane__rsa,Khulumani Ndamane,RSA,DEF,0.225,0.020455,,,,,0.062233,0.686734,existing_components,no,ok
+mohammad_khalife__irn,Mohammad Khalife,IRN,GK,0.2223,0.020209,,,,,0.330959,0.684344,existing_components,no,ok
+deroy_duarte__cpv,Deroy Duarte,CPV,MID,0.7054,0.064127,49.912693,0.01776,0.023202,0.022219,0.112063,0.682859,existing_components,yes,ok
+jean_michael_seri__civ,Jean Michael Seri,CIV,MID,0.6665,0.060591,,,,,0.065054,0.681699,existing_components,no,ok
+abdel_rahman_al_talalga__jor,Abdel Rahman Al-Talalga,JOR,GK,0.4403,0.040027,,,,,0.176154,0.680137,existing_components,yes,ok
+marvin_keller__sui,Marvin Keller,SUI,GK,0.1706,0.015509,,,,,0.289793,0.679214,existing_components,yes,ok
+elye_wahi__civ,Elye Wahi,CIV,FWD,0.45,0.040909,,,,,0.027681,0.6757,existing_components,no,ok
+amir_al_ammari__irq,Amir Al Ammari,IRQ,MID,0.8671,0.078827,61.845908,0.025468,0.030211,0.035644,0.236108,0.673258,existing_components,yes,ok
+joshua_brenet__cuw,Joshua Brenet,CUW,DEF,0.7129,0.064809,53.532374,0.008131,0.008481,0.006023,0.059104,0.673213,existing_components,yes,ok
+paik_seung_ho__kor,Seung-Ho Paik,KOR,MID,0.5235,0.047591,36.90675,0.029966,0.032799,0.020612,0.285544,0.672779,existing_components,yes,ok
+omar_rekik__tun,Omar Rekik,TUN,DEF,0.4013,0.036482,,,,,0.23363,0.664135,existing_components,yes,ok
+sidny_lopes_cabral__cpv,Sidny Lopes Cabral,CPV,DEF,0.5278,0.047982,,,,,0.040715,0.660362,existing_components,yes,ok
+hannes_delcroix__hai,Hannes Delcroix,HAI,DEF,0.7341,0.066736,,,,,0.297354,0.660139,existing_components,yes,ok
+mohau_nkota__rsa,Mohau Nkota,RSA,FWD,0.6085,0.055318,42.81406,0.020302,0.023099,0.027069,0.147104,0.659896,existing_components,yes,ok
+rocky_bushiri__cod,Rocky Bushiri,COD,DEF,0.1959,0.017809,14.57065,0.001549,0.001763,0.001377,0.009921,0.655592,existing_components,no,ok
+abdul_fatawu_issahaku__gha,Issahaku Abdul Fatawu,GHA,FWD,0.5565,0.050591,39.37961,0.042559,0.039714,0.025696,0.36948,0.652971,existing_components,yes,ok
+ajdin_hrustic__aus,Ajdin Hrustic,AUS,MID,0.645,0.058636,45.3822,0.027775,0.031083,0.038493,0.265906,0.649606,existing_components,no,ok
+keisuke_sako__jpn,Keisuke Osako,JPN,GK,0.2016,0.018327,15.998976,0.0,0.0,0.0,0.142012,0.644422,existing_components,yes,ok
+thalente_mbatha__rsa,Thalente Mbatha,RSA,MID,0.5547,0.050427,39.028692,0.016578,0.021554,0.021049,0.139449,0.64131,existing_components,yes,ok
+carlos_miguel_coronel__par,Carlos Miguel Coronel,PAR,GK,0.2412,0.021927,,,,,0.177828,0.639757,existing_components,yes,ok
+victor_munoz__esp,Victor Munoz,ESP,FWD,0.873,0.079364,,,,,0.281889,0.634199,existing_components,yes,ok
+telmo_arcanjo__cpv,Telmo Arcanjo,CPV,MID,0.7304,0.0664,51.390944,0.01618,0.020863,0.021093,0.095048,0.632854,existing_components,yes,ok
+steve_kapuadi__cod,Steve Kapuadi,COD,DEF,0.1819,0.016536,,,,,0.006164,0.630682,existing_components,no,ok
+roshon_van_eijma__cuw,Roshon van Eijma,CUW,DEF,0.5747,0.052245,43.468009,0.007445,0.007579,0.017415,0.063866,0.630482,existing_components,yes,ok
+assim_madibo__qat,Assim Madibo,QAT,MID,0.5778,0.052527,40.86086,0.025296,0.029559,0.036462,0.216301,0.628239,existing_components,yes,ok
+laros_duarte__cpv,Laros Duarte,CPV,MID,0.652,0.059273,46.150516,0.016638,0.021635,0.021128,0.102285,0.626102,existing_components,yes,ok
+yazeed_abulaila__jor,Yazeed Abulaila,JOR,GK,0.4054,0.036855,32.562944,0.0,0.0,0.0,0.155081,0.618504,existing_components,yes,ok
+grady_diangana__cod,Grady Diangana,COD,MID,0.2919,0.026536,,,,,-0.02152,0.617115,existing_components,no,ok
+nkosinathi_sibisi__rsa,Nkosinathi Sibisi,RSA,DEF,0.3857,0.035064,28.685666,0.003176,0.003614,0.002259,0.142921,0.608176,existing_components,yes,ok
+justin_bijlow__ned,Justin Bijlow,NED,GK,0.1442,0.013109,,,,,0.190082,0.608016,existing_components,yes,ok
+diney_borges__cpv,Diney Borges,CPV,DEF,0.4927,0.044791,,,,,0.034682,0.606972,existing_components,yes,ok
+martin_zlomisli__bih,Martin Zlomislic,BIH,GK,0.2273,0.020664,18.142859,0.0,0.0,0.0,0.161773,0.606259,existing_components,yes,ok
+kelvin_pires__cpv,Kelvin Pires,CPV,DEF,0.1811,0.016464,,,,,-0.018873,0.604979,existing_components,no,ok
+c_sar_yanis__pan,Cesar Yanis,PAN,MID,0.4369,0.039718,30.740284,0.023778,0.025052,0.025203,0.206414,0.603944,existing_components,yes,ok
+ibrahim_bayesh__irq,Ibrahim Bayesh,IRQ,MID,0.8054,0.073218,57.369447,0.022821,0.025965,0.034116,0.208425,0.601828,existing_components,yes,ok
+lennart_karl__ger,Lennart Karl,GER,MID,0.873,0.079364,,,,,0.287803,0.597274,existing_components,yes,ok
+shurandy_sambo__cuw,Shurandy Sambo,CUW,DEF,0.7259,0.065991,,,,,0.039484,0.596858,existing_components,yes,ok
+lawrence_ati_zigi__gha,Lawrence Ati Zigi,GHA,GK,0.1969,0.0179,15.769918,0.0,0.0,0.0,0.303066,0.59629,existing_components,yes,ok
+ilay_camara__sen,Ilay Camara,SEN,DEF,0.3106,0.028236,,,,,0.093438,0.595612,existing_components,yes,ok
+zaid_tahseen__irq,Zaid Tahseen,IRQ,DEF,0.676,0.061455,50.6493,0.004872,0.004434,0.002598,0.171178,0.589959,existing_components,yes,ok
+kr_pin_diatta__sen,Krepin Diatta,SEN,FWD,0.873,0.079364,65.774439,0.007563,0.015981,0.004802,0.062895,0.589695,existing_components,yes,ok
+hamdy_fathy__egy,Hamdy Fathy,EGY,MID,0.865,0.078636,65.249545,0.007966,0.009997,0.005665,0.074153,0.58734,existing_components,yes,ok
+jakhongir_urozov__uzb,Jakhongir Urozov,UZB,DEF,0.4417,0.040155,,,,,0.155508,0.580135,existing_components,yes,ok
+jo_o_neves__por,João Neves,POR,MID,0.6325,0.0575,47.22498,0.016397,0.01687,0.003599,0.252606,0.579303,existing_components,yes,ok
+martin_exp_rience__hai,Martin Experience,HAI,DEF,0.5324,0.0484,40.284046,0.007986,0.009086,0.005808,0.257154,0.576657,existing_components,yes,ok
+ahmad_assaf__jor,Ahmad Assaf,JOR,DEF,0.5422,0.049291,,,,,0.151318,0.574243,existing_components,yes,ok
+thabang_matuludi__rsa,Thabang Matuludi,RSA,DEF,0.1162,0.010564,,,,,0.007962,0.573936,existing_components,no,ok
+rebin_sulaka__irq,Rebin Sulaka,IRQ,DEF,0.6381,0.058009,47.947472,0.003819,0.005793,0.003017,0.165229,0.57235,existing_components,yes,ok
+mohamed_zeki_amdouni__sui,Mohamed Zeki Amdouni,SUI,FWD,0.8564,0.077855,,,,,0.220199,0.570322,existing_components,yes,ok
+el_mehdi_al_harrar__mar,El Mehdi Al Harrar,MAR,GK,0.1758,0.015982,,,,,0.083371,0.565795,existing_components,yes,ok
+paul_izzo__aus,Paul Izzo,AUS,GK,0.1789,0.016264,14.279619,0.0,0.0,0.0,0.121761,0.557011,existing_components,no,ok
+joaqu_n_piquerez__uru,Joaquin Piquerez,URU,MID,0.7167,0.065155,53.478004,0.016863,0.016953,0.004729,0.229154,0.556582,existing_components,yes,ok
+hugo_cuenca__par,Hugo Cuenca,PAR,MID,0.3974,0.036127,27.961064,0.014551,0.016117,0.017729,0.128325,0.554255,existing_components,yes,ok
+johny_placide__hai,Johny Placide,HAI,GK,0.4375,0.039773,35.290938,0.0,0.0,0.0,0.234206,0.55054,existing_components,yes,ok
+dean_henderson__eng,Dean Henderson,ENG,GK,0.1011,0.009191,8.069701,0.0,0.0,0.0,0.182734,0.549679,existing_components,yes,ok
+tae_hyeon_kim__kor,Tae-Hyeon Kim,KOR,DEF,0.2725,0.024773,,,,,0.194698,0.547016,existing_components,yes,ok
+patrick_wimmer__aut,Patrick Wimmer,AUT,MID,0.5787,0.04,43.236,0.023693,0.03125,0.013,0.312972,0.542816,existing_components,yes,ok
+jiovany_ramos__pan,Jiovany Ramos,PAN,DEF,0.3884,0.035309,,,,,0.229781,0.542482,existing_components,yes,ok
+moutaz_neffati__tun,Moutaz Neffati,TUN,DEF,0.33,0.03,,,,,0.183237,0.520818,existing_components,yes,ok
+d_enis_burni__bih,Dzenis Burnic,BIH,MID,0.8428,0.076618,63.133305,0.008737,0.010877,0.005361,0.107259,0.517021,existing_components,yes,ok
+antoine_mendy__sen,Antoine Mendy,SEN,DEF,0.2118,0.019255,15.749448,0.001355,0.001851,0.000964,0.070214,0.515743,existing_components,yes,ok
+saleem_obaid__jor,Saleem Obaid,JOR,DEF,0.4778,0.043436,35.732273,0.003506,0.003988,0.002671,0.127677,0.512378,existing_components,yes,ok
+alban_lafont__civ,Alban Lafont,CIV,GK,0.1387,0.012609,,,,,0.121278,0.510932,existing_components,no,ok
+mark_flekken__ned,Mark Flekken,NED,GK,0.1525,0.013864,12.1024,0,0,0,0.151978,0.50875,existing_components,yes,ok
+rodri_hernandez__esp,Rodri Hernandez,ESP,MID,0.7254,0.065945,,,,,0.225776,0.502882,existing_components,yes,ok
+ali_al_hamadi__irq,Ali Al-Hamadi,IRQ,FWD,0.5375,0.048864,35.6685,0.026452,0.010534,0.058781,0.183547,0.500164,existing_components,yes,ok
+neymar_jr__bra,Neymar Jr.,BRA,FWD,0.8919,0.081082,,,,,0.207168,0.493195,existing_components,yes,ok
+john_mercado__ecu,John Mercado,ECU,FWD,0.0987,0.008973,6.549732,0.013772,0.005701,0.013849,0.12483,0.492859,existing_components,no,ok
+tarek_alaa__egy,Tarek Alaa,EGY,DEF,0.2325,0.021136,,,,,0.069574,0.492295,existing_components,yes,ok
+michael_woud__nzl,Michael Woud,NZL,GK,0.183,0.016636,,,,,0.116531,0.492062,existing_components,no,ok
+alvaro_fidalgo__mex,Alvaro Fidalgo,MEX,MID,0.8639,0.078536,,,,,0.210949,0.491904,existing_components,yes,ok
+maxi_araujo__uru,Maxi Araujo,URU,MID,0.8851,0.080464,,,,,0.195938,0.485573,existing_components,yes,ok
+raphinha__bra,Raphinha,BRA,FWD,0.8812,0.080109,,,,,0.204083,0.485569,existing_components,yes,ok
+ivor_pandur__cro,Ivor Pandur,CRO,GK,0.1182,0.010745,,,,,0.035734,0.483421,existing_components,no,ok
+muhammed_sengezer__tur,Muhammed Sengezer,TUR,GK,0.1406,0.012782,,,,,0.201669,0.483114,existing_components,yes,ok
+facundo_pellistri__uru,Facundo Pellistri,URU,FWD,0.8814,0.080127,,,,,0.19491,0.482948,existing_components,yes,ok
+mohamed_haj_mahmoud__tun,Mohamed 'Hadj' Mahmoud,TUN,MID,0.442,0.02,31.092,0.01576,0.020766,0.016,0.138394,0.482725,existing_components,yes,ok
+igor_thiago__bra,Igor Thiago,BRA,FWD,0.873,0.079364,,,,,0.201719,0.479725,existing_components,yes,ok
+ben_doak__sco,Ben Doak,SCO,MID,0.8529,0.077536,,,,,0.203652,0.47953,existing_components,yes,ok
+nicolas_raskin__bel,Nicolas Raskin,BEL,MID,0.8538,0.077618,,,,,0.192174,0.478853,existing_components,yes,ok
+moises_ramirez__ecu,Moises Ramirez,ECU,GK,0.1035,0.009409,,,,,0.101332,0.478643,existing_components,no,ok
+marcelo_flores__can,Marcelo Flores,CAN,MID,0.8655,0.078682,,,,,0.165977,0.477011,existing_components,yes,ok
+xaver_schlager__aut,Xaver Schlager,AUT,MID,0.839,0.076273,,,,,0.219311,0.471818,existing_components,yes,ok
+fahad_talib__irq,Fahad Talib,IRQ,GK,0.3071,0.027918,,,,,0.070014,0.469416,existing_components,no,ok
+alan_franco__ecu,Alan Franco,ECU,MID,0.45,0.040909,33.9156,0.008829,0.009638,0.002778,0.131079,0.465003,existing_components,yes,ok
+alexander_n_bel__ger,Alexander Nübel,GER,GK,0.0596,0.005418,4.729856,0,0,0,0.231222,0.46437,existing_components,yes,ok
+sipho_chaine__rsa,Sipho Chaine,RSA,GK,0.1683,0.0153,,,,,0.051287,0.459519,existing_components,no,ok
+axel_witsel__bel,Axel Witsel,BEL,MID,0.8263,0.075118,,,,,0.184374,0.458841,existing_components,yes,ok
+fabian_ruiz__esp,Fabian Ruiz,ESP,MID,0.6746,0.061327,,,,,0.206462,0.457683,existing_components,yes,ok
+manaf_younis__irq,Manaf Younis,IRQ,DEF,0.5373,0.048845,,,,,0.129025,0.457201,existing_components,yes,ok
+husam_abu_dahab__jor,Husam Abu Dahab,JOR,DEF,0.4523,0.041118,,,,,0.117939,0.455403,existing_components,yes,ok
+folarin_balogun__usa,Folarin Balogun,USA,FWD,0.8342,0.075836,,,,,0.162522,0.446045,existing_components,yes,ok
+bum_keun_song__kor,Bum-Keun Song,KOR,GK,0.105,0.009545,8.3328,0.0,0.0,0.0,0.075511,0.44472,existing_components,no,ok
+kenan_yildiz__tur,Kenan Yildiz,TUR,MID,0.8953,0.081391,,,,,0.183884,0.444547,existing_components,yes,ok
+abduvokhid_nematov__uzb,Abduvokhid Nematov,UZB,GK,0.2889,0.026264,,,,,0.117142,0.443489,existing_components,yes,ok
+lukas_hornicek__cze,Lukas Hornicek,CZE,GK,0.1195,0.010864,,,,,0.077729,0.443262,existing_components,no,ok
+senne_lammens__bel,Senne Lammens,BEL,GK,0.114,0.010364,,,,,0.13785,0.442546,existing_components,yes,ok
+baris_alper_yilmaz__tur,Baris Alper Yilmaz,TUR,FWD,0.8921,0.0811,,,,,0.183048,0.442449,existing_components,yes,ok
+maghnes_akliouche__fra,Maghnes Akliouche,FRA,FWD,0.7685,0.069864,,,,,0.186714,0.44149,existing_components,yes,ok
+luis_mejia__pan,Luis Mejia,PAN,GK,0.2298,0.020891,,,,,0.178639,0.441229,existing_components,yes,ok
+santiago_mele__uru,Santiago Mele,URU,GK,0.0893,0.008118,7.091492,0.0,0.0,0.0,0.190707,0.439919,existing_components,yes,ok
+duke_lacroix__hai,Duke Lacroix,HAI,DEF,0.5318,0.048345,,,,,0.201631,0.43895,existing_components,yes,ok
+kumel_al_rekabe__irq,Kumel Al-Rekabe,IRQ,GK,0.262,0.023818,,,,,0.052388,0.437285,existing_components,no,ok
+romelu_lukaku__bel,Romelu Lukaku,BEL,FWD,0.7965,0.072409,,,,,0.175922,0.437155,existing_components,yes,ok
+christian_pulisic__usa,Christian Pulisic,USA,FWD,0.817,0.074273,,,,,0.158141,0.433914,existing_components,yes,ok
+bradley_barcola__fra,Bradley Barcola,FRA,MID,0.7583,0.068936,,,,,0.183573,0.433739,existing_components,yes,ok
+patrick_schulte__usa,Patrick Schulte,USA,GK,0.0576,0.005236,,,,,0.07394,0.43259,existing_components,no,ok
+mohammed_al_rubaie_al_yami__ksa,Mohammed Al-Rubaie Al-Yami,KSA,GK,0.1659,0.015082,,,,,0.047333,0.430242,existing_components,no,ok
+osman_hadzikic__bih,Osman Hadzikic,BIH,GK,0.111,0.010091,,,,,0.041769,0.428635,existing_components,no,ok
+mohammed_sulaiman__ksa,Mohammed Sulaiman,KSA,DEF,0.2808,0.025527,20.880288,0.002687,0.003931,0.002047,0.114043,0.427249,existing_components,yes,ok
+tanner_tessmann__usa,Tanner Tessmann,USA,MID,0.8063,0.0733,,,,,0.155414,0.426362,existing_components,yes,ok
+cyle_christopher_larin__can,Cyle Christopher Larin,CAN,FWD,0.793,0.072091,,,,,0.147885,0.425116,existing_components,yes,ok
+jovo_lukic__bih,Jovo Lukic,BIH,FWD,0.7493,0.068118,,,,,0.079163,0.424948,existing_components,no,ok
+hakan_calhanoglu__tur,Hakan Calhanoglu,TUR,MID,0.8632,0.078473,,,,,0.175498,0.423497,existing_components,yes,ok
+kwasi_sibo__gha,Kwasi Sibo,GHA,MID,0.8851,0.080464,,,,,0.177231,0.422517,existing_components,yes,ok
+owen_goodman__can,Owen Goodman,CAN,GK,0.0766,0.006964,,,,,0.059754,0.421882,existing_components,no,ok
+brian_gutierrez__mex,Brian Gutierrez,MEX,MID,0.7685,0.069864,,,,,0.182133,0.421845,existing_components,yes,ok
+lucas_paqueta__bra,Lucas Paqueta,BRA,MID,0.7869,0.071536,,,,,0.176894,0.418357,existing_components,yes,ok
+memphis_depay__ned,Memphis Depay,NED,FWD,0.8226,0.074782,,,,,0.154944,0.418132,existing_components,yes,ok
+akam_hashem__irq,Akam Hashem,IRQ,DEF,0.5017,0.045609,,,,,0.117163,0.417467,existing_components,yes,ok
+patrick_yazbek__aus,Patrick Yazbek,AUS,MID,0.3071,0.027918,21.607556,0.013138,0.014664,0.017991,0.113087,0.417328,existing_components,no,ok
+ahmed_basil_fadhil__irq,Ahmed Basil Fadhil,IRQ,GK,0.4309,0.039173,,,,,0.118392,0.41566,existing_components,yes,ok
+ger_nimo_rulli__arg,Geronimo Rulli,ARG,GK,0.0597,0.005427,4.748837,0,0,0,0.167557,0.413969,existing_components,yes,ok
+timothy_weah__usa,Timothy Weah,USA,FWD,0.7859,0.071445,,,,,0.150218,0.41197,existing_components,yes,ok
+abdulrahman_al_sanbi__ksa,Abdulrahman Al-Sanbi,KSA,GK,0.1473,0.013391,,,,,0.03642,0.410105,existing_components,no,ok
+bruno_guimaraes__bra,Bruno Guimaraes,BRA,MID,0.7749,0.070445,,,,,0.173434,0.409806,existing_components,yes,ok
+prince_adu__gha,Prince Adu,GHA,FWD,0.8639,0.078536,,,,,0.171789,0.408984,existing_components,yes,ok
+roberto_gatito_fernandez__par,Roberto 'Gatito' Fernandez,PAR,GK,0.1313,0.011936,,,,,0.109645,0.408961,existing_components,yes,ok
+rani_khedira__tun,Rani Khedira,TUN,MID,0.873,0.079364,,,,,0.086867,0.408935,existing_components,yes,ok
+cedric_itten__sui,Cedric Itten,SUI,FWD,0.4979,0.045264,,,,,0.107091,0.407544,existing_components,no,ok
+alexandre_pierre__hai,Alexandre Pierre,HAI,GK,0.4344,0.039491,,,,,0.196543,0.407388,existing_components,yes,ok
+rayan_elloumi__tun,Rayan Elloumi,TUN,FWD,0.8655,0.078682,,,,,0.085692,0.404198,existing_components,yes,ok
+yeremy_pino__esp,Yeremy Pino,ESP,MID,0.6143,0.055845,,,,,0.183538,0.404036,existing_components,yes,ok
+tomoki_hayakawa__jpn,Tomoki Hayakawa,JPN,GK,0.1035,0.009409,8.232907,0.0,0.0,0.0,0.088468,0.401356,existing_components,yes,ok
+joseph_anang__gha,Joseph Anang,GHA,GK,0.1071,0.009736,,,,,0.089952,0.400968,existing_components,no,ok
+dominik_kotarski__cro,Dominik Kotarski,CRO,GK,0.1001,0.0091,7.943936,0.0,0.0,0.0,0.066475,0.40026,existing_components,yes,ok
+djibril_sow__sui,Djibril Sow,SUI,MID,0.6478,0.058891,,,,,0.154386,0.396698,existing_components,yes,ok
+adalberto_carrasquilla__pan,Adalberto Carrasquilla,PAN,MID,0.8342,0.075836,,,,,0.092098,0.394952,existing_components,yes,ok
+yoel_barcenas__pan,Yoel Barcenas,PAN,MID,0.8342,0.075836,,,,,0.092098,0.394952,existing_components,yes,ok
+fredrik_aursnes__nor,Fredrik Aursnes,NOR,MID,0.7078,0.064345,,,,,0.163697,0.390683,existing_components,yes,ok
+payam_niazmand__irn,Payam Niazmand,IRN,GK,0.1121,0.010191,8.94771,0.0,0.0,0.0,0.202362,0.390072,existing_components,yes,ok
+goncalo_guedes__por,Goncalo Guedes,POR,FWD,0.6911,0.062827,,,,,0.174947,0.389561,existing_components,yes,ok
+diego_moreira__bel,Diego Moreira,BEL,MID,0.5812,0.052836,,,,,0.114853,0.38932,existing_components,no,ok
+awer_mabil__aus,Awer Mabil,AUS,FWD,0.7036,0.063964,,,,,0.059871,0.385502,existing_components,no,ok
+yousef_abu_al_jazar__jor,Yousef Abu Al-Jazar,JOR,DEF,0.3784,0.0344,28.163177,0.002326,0.002647,0.001654,0.090552,0.38543,existing_components,yes,ok
+darwin_nunez__uru,Darwin Nunez,URU,FWD,0.7427,0.067518,,,,,0.15637,0.384524,existing_components,yes,ok
+cesar_samudio__pan,Cesar Samudio,PAN,GK,0.1175,0.010682,,,,,0.052266,0.384328,existing_components,no,ok
+viktor_gyokeres__swe,Viktor Gyökeres,SWE,FWD,0.818,0.074364,,,,,0.165233,0.382566,existing_components,yes,ok
+ricardo_goss__rsa,Ricardo Goss,RSA,GK,0.1056,0.0096,,,,,0.013554,0.381697,existing_components,no,ok
+riechedly_bazoer__cuw,Riechedly Bazoer,CUW,DEF,0.5143,0.046755,,,,,0.013398,0.381336,existing_components,yes,ok
+mohamed_alaa__egy,Mohamed Alaa,EGY,GK,0.0708,0.006436,,,,,-0.006294,0.379861,existing_components,no,ok
+ardon_jashari__sui,Ardon Jashari,SUI,MID,0.4858,0.044164,,,,,0.103274,0.379082,existing_components,no,ok
+in_beom_hwang__kor,In-beom Hwang,KOR,MID,0.897,0.081545,,,,,0.139977,0.37683,existing_components,yes,ok
+nicolas_de_la_cruz__uru,Nicolas de la Cruz,URU,MID,0.731,0.066455,,,,,0.153119,0.376223,existing_components,yes,ok
+kristian_thorstvedt__nor,Kristian Thorstvedt,NOR,MID,0.6884,0.062582,,,,,0.15784,0.376071,existing_components,yes,ok
+jonathan_osorio__can,Jonathan Osorio,CAN,MID,0.7211,0.065555,,,,,0.129943,0.373654,existing_components,yes,ok
+marcos_llorente__esp,Marcos Llorente,ESP,MID,0.5733,0.052118,,,,,0.167951,0.367559,existing_components,yes,ok
+botirali_ergashev__uzb,Botirali Ergashev,UZB,GK,0.1079,0.009809,,,,,0.010387,0.36656,existing_components,no,ok
+mukhammadkodir_khamraliev__uzb,Mukhammadkodir Khamraliev,UZB,DEF,0.3092,0.028109,,,,,0.093859,0.36336,existing_components,yes,ok
+obed_vargas__mex,Obed Vargas,MEX,MID,0.6873,0.062482,,,,,0.157605,0.362216,existing_components,yes,ok
+nico_gonzalez__arg,Nico Gonzalez,ARG,FWD,0.6713,0.061027,,,,,0.159376,0.361919,existing_components,yes,ok
+endrick__bra,Endrick,BRA,FWD,0.7077,0.064336,,,,,0.154057,0.361908,existing_components,yes,ok
+samu_costa__por,Samu Costa,POR,MID,0.65,0.059091,,,,,0.161569,0.357918,existing_components,yes,ok
+ahmed_hasan_maknzi__irq,Ahmed Hasan Maknzi,IRQ,DEF,0.4481,0.040736,,,,,0.099305,0.357644,existing_components,yes,ok
+el_mahdi_soliman__egy,El Mahdi Soliman,EGY,GK,0.0585,0.005318,,,,,-0.013888,0.357407,existing_components,no,ok
+haissem_hassan__egy,Haissem Hassan,EGY,MID,0.873,0.079364,,,,,0.069217,0.357173,existing_components,yes,ok
+jan_kliment__cze,Jan Kliment,CZE,FWD,0.771,0.070091,,,,,0.100761,0.356667,existing_components,no,ok
+nikola_moro__cro,Nikola Moro,CRO,MID,0.1638,0.014891,11.524968,0.004605,0.00661,0.005418,0.042514,0.355998,existing_components,yes,ok
+mateo_kovacic__cro,Mateo Kovacic,CRO,MID,0.839,0.076273,,,,,0.070634,0.354786,existing_components,yes,ok
+hamza_abdelkarim__egy,Hamza Abdelkarim,EGY,FWD,0.8655,0.078682,,,,,0.068193,0.352882,existing_components,yes,ok
+mostafa_ziko__egy,Mostafa Ziko,EGY,MID,0.8655,0.078682,,,,,0.068193,0.352882,existing_components,yes,ok
+rayan__bra,Rayan,BRA,FWD,0.6933,0.063027,,,,,0.149905,0.351645,existing_components,yes,ok
+anthony_valencia__ecu,Anthony Valencia,ECU,FWD,0.6757,0.061427,,,,,0.102363,0.351412,existing_components,yes,ok
+pascal_gross__ger,Pascal Gross,GER,MID,0.5821,0.052918,,,,,0.17524,0.350767,existing_components,yes,ok
+nikolas_polster__aut,Nikolas Polster,AUT,GK,0.0511,0.004645,,,,,0.03601,0.348687,existing_components,no,ok
+mehdi_ghayedi__irn,Mehdi Ghayedi,IRN,MID,0.7519,0.068355,,,,,0.166051,0.347489,existing_components,yes,ok
+jose_luis_rodriguez_francis__pan,Jose Luis Rodriguez Francis,PAN,MID,0.7578,0.068891,,,,,0.079085,0.34573,existing_components,yes,ok
+musab_al_juwayr__ksa,Musab Al-Juwayr,KSA,MID,0.8952,0.081382,,,,,0.080928,0.345362,existing_components,yes,ok
+vladimir_darida__cze,Vladimir Darida,CZE,MID,0.8106,0.073691,,,,,0.108505,0.342839,existing_components,no,ok
+mahmoud_trezeguet__egy,Mahmoud Trezeguet,EGY,MID,0.8438,0.076709,,,,,0.065229,0.340461,existing_components,yes,ok
+erick_sanchez__mex,Erick Sanchez,MEX,MID,0.6576,0.059782,,,,,0.148635,0.340406,existing_components,yes,ok
+elijah_just__nzl,Elijah Just,NZL,MID,0.8857,0.080518,,,,,0.068725,0.340115,existing_components,yes,ok
+frans_dhia_putros__irq,Frans Dhia Putros,IRQ,DEF,0.4806,0.043691,35.737416,0.002514,0.002861,0.002235,0.095809,0.340067,existing_components,yes,ok
+josue_duverger__hai,Josue Duverger,HAI,GK,0.1281,0.011645,,,,,0.022702,0.339811,existing_components,no,ok
+salih_ozcan__tur,Salih Özcan,TUR,MID,0.7323,0.066573,,,,,0.141302,0.337667,existing_components,yes,ok
+christ_inao_oulai__civ,Christ Inao Oulaï,CIV,MID,0.8296,0.075418,,,,,0.093209,0.336747,existing_components,no,ok
+shehab_ellethy__qat,Shehab Ellethy,QAT,GK,0.0925,0.008409,,,,,-0.01214,0.332715,existing_components,no,ok
+alex_kral__cze,Alex Kral,CZE,MID,0.7515,0.068318,,,,,0.096948,0.329267,existing_components,no,ok
+mohamed_rabie_hrimat__mar,Mohamed Rabie Hrimat,MAR,MID,0.8342,0.075836,,,,,0.059054,0.329252,existing_components,yes,ok
+lachlan_bayliss__nzl,Lachlan Bayliss,NZL,MID,0.8655,0.078682,,,,,0.066017,0.329109,existing_components,yes,ok
+alexis_duarte__par,Alexis Duarte,PAR,DEF,0.1104,0.010036,8.214754,0.001036,0.001148,0.000726,0.082741,0.328098,existing_components,yes,ok
+cecilio_waterman__pan,Cecilio Waterman,PAN,FWD,0.7242,0.065836,,,,,0.073362,0.324083,existing_components,yes,ok
+aimar_sher__irq,Aimar Sher,IRQ,MID,0.6783,0.061664,47.725188,0.013183,0.015,0.017923,0.103682,0.322247,existing_components,yes,ok
+luis_suarez_charris__col,Luis Suarez Charris,COL,FWD,0.6143,0.055845,,,,,0.137283,0.321226,existing_components,yes,ok
+hakim_ziyech__mar,Hakim Ziyech,MAR,MID,0.8184,0.0744,,,,,0.056988,0.320318,existing_components,yes,ok
+mehdi_dorval__alg,Mehdi Dorval,ALG,DEF,0.1241,0.011282,9.228076,0.000866,0.000986,0.000616,0.036877,0.320129,existing_components,yes,ok
+ahmed_nadhir_benbouali__alg,Ahmed Nadhir Benbouali,ALG,FWD,0.8342,0.075836,,,,,0.041882,0.318334,existing_components,yes,ok
+mattias_svanberg__swe,Mattias Svanberg,SWE,MID,0.7177,0.065245,,,,,0.138843,0.318185,existing_components,yes,ok
+jose_fajardo__pan,Jose Fajardo,PAN,FWD,0.714,0.064909,,,,,0.071624,0.317512,existing_components,yes,ok
+marwan_ateya__egy,Marwan Ateya,EGY,MID,0.8011,0.072827,,,,,0.059399,0.31602,existing_components,yes,ok
+oussama_targhalline__mar,Oussama Targhalline,MAR,MID,0.1518,0.0138,10.680648,0.004426,0.0053,0.005797,0.032341,0.31561,existing_components,yes,ok
+dilshod_komilov__uzb,Dilshod Komilov,UZB,DEF,0.2795,0.025409,,,,,0.080041,0.314771,existing_components,yes,ok
+amir_hadziahmetovic__bih,Amir Hadziahmetovic,BIH,MID,0.7679,0.069809,,,,,0.082369,0.314644,existing_components,yes,ok
+patrick_beach__aus,Patrick Beach,AUS,GK,0.1294,0.011764,10.275525,0.0,0.0,0.0,0.090167,0.31464,existing_components,yes,ok
+deni_juric__aus,Deni Juric,AUS,FWD,0.8568,0.077891,,,,,0.083794,0.313362,existing_components,yes,ok
+gabriel_avalos__par,Gabriel Avalos,PAR,FWD,0.7781,0.070736,,,,,0.079147,0.312931,existing_components,yes,ok
+zidane_iqbal__irq,Zidane Iqbal,IRQ,MID,0.5733,0.052118,40.464087,0.013752,0.01333,0.018111,0.101821,0.310427,existing_components,yes,ok
+armando_gonzalez__mex,Armando Gonzalez,MEX,FWD,0.6148,0.055891,,,,,0.135706,0.308976,existing_components,yes,ok
+amine_gouiri__alg,Amine Gouiri,ALG,FWD,0.817,0.074273,,,,,0.039988,0.308833,existing_components,yes,ok
+zizo__egy,Ahmed Zizo,EGY,MID,0.7866,0.071509,,,,,0.057418,0.307722,existing_components,yes,ok
+irfan_can_kahveci__tur,Irfan Can Kahveci,TUR,MID,0.6858,0.062345,,,,,0.129156,0.307177,existing_components,yes,ok
+salem_al_dawsari__ksa,Salem Al-Dawsari,KSA,MID,0.8245,0.074955,,,,,0.070587,0.306831,existing_components,yes,ok
+jean_philippe_mateta__fra,Jean-Philippe Mateta,FRA,FWD,0.5843,0.053118,,,,,0.129977,0.301514,existing_components,yes,ok
+deveron_fonville__cuw,Deveron Fonville,CUW,DEF,0.4344,0.039491,,,,,0.003548,0.299952,existing_components,yes,ok
+kadir_barria__pan,Kadir Barria,PAN,FWD,0.6844,0.062218,,,,,0.066581,0.298439,existing_components,yes,ok
+hasan_abdulkareem__irq,Hasan Abdulkareem,IRQ,MID,0.3168,0.0288,22.290048,0.00654,0.007441,0.009135,0.034208,0.297176,existing_components,no,ok
+janner_corozo__ecu,Janner Corozo,ECU,FWD,0.2867,0.026064,,,,,0.014647,0.294871,existing_components,no,ok
+kamaldeen_sulemana__gha,Kamaldeen Sulemana,GHA,FWD,0.6808,0.061891,,,,,0.124781,0.292098,existing_components,yes,ok
+ricardo_pepi__usa,Ricardo Pepi,USA,FWD,0.6143,0.055845,,,,,0.1065,0.290903,existing_components,yes,ok
+jeremy_ar_valo__ecu,Jeremy Arevalo,ECU,FWD,0.0446,0.004055,2.959656,0.006181,0.002573,0.00627,0.08091,0.28353,existing_components,yes,ok
+german_berterame__mex,German Berterame,MEX,FWD,0.5779,0.052536,,,,,0.124561,0.281879,existing_components,yes,ok
+bongokuhle_hlongwane__rsa,Bongokuhle Hlongwane,RSA,FWD,0.8094,0.073582,,,,,0.04799,0.280032,existing_components,yes,ok
+anis_ben_slimane__tun,Anis Ben Slimane,TUN,MID,0.6665,0.060591,,,,,0.054492,0.278499,existing_components,yes,ok
+sphephelo_yaya_sithole__rsa,Sphephelo Yaya Sithole,RSA,MID,0.8032,0.073018,,,,,0.04724,0.276797,existing_components,yes,ok
+sultan_al_brake__qat,Sultan Al-Brake,QAT,DEF,0.2426,0.022055,18.039736,0.00229,0.002977,0.001744,0.057901,0.275914,existing_components,yes,ok
+mohamed_kanno__ksa,Mohamed Kanno,KSA,MID,0.7666,0.069691,,,,,0.062119,0.275279,existing_components,yes,ok
+saleh_al_shamat__ksa,Saleh Al-Shamat,KSA,MID,0.7644,0.069491,,,,,0.061797,0.274078,existing_components,yes,ok
+jean_ricner_bellegarde__hai,Jean-Ricner Bellegarde,HAI,MID,0.9021,0.082009,,,,,0.064665,0.273255,existing_components,yes,ok
+alessandro_schopf__aut,Alessandro Schöpf,AUT,MID,0.5672,0.051564,,,,,0.132067,0.272807,existing_components,yes,ok
+jin_gyu_kim__kor,Jin-gyu Kim,KOR,MID,0.7167,0.065155,,,,,0.101792,0.272443,existing_components,yes,ok
+assane_diao_diaoune__sen,Assane Diao Diaoune,SEN,FWD,0.7493,0.068118,,,,,0.036734,0.271053,existing_components,yes,ok
+bazoumana_toure__civ,Bazoumana Toure,CIV,FWD,0.4164,0.037855,,,,,0.021881,0.269986,existing_components,no,ok
+mousa_tamari__jor,Mousa Tamari,JOR,MID,0.8322,0.075655,,,,,0.040759,0.268333,existing_components,yes,ok
+exequiel_palacios__arg,Exequiel Palacios,ARG,MID,0.5437,0.049427,,,,,0.119578,0.266039,existing_components,yes,ok
+mohamed_al_mannai__qat,Mohamed Al-Mannai,QAT,MID,0.8985,0.081682,,,,,0.05032,0.264762,existing_components,yes,ok
+yunus_akgun__tur,Yunus Akgün,TUR,FWD,0.6183,0.056209,,,,,0.111521,0.262916,existing_components,yes,ok
+lucas_bergvall__swe,Lucas Bergvall,SWE,MID,0.631,0.057364,,,,,0.11603,0.262533,existing_components,yes,ok
+odildzhon_khamrobekov__uzb,Odildzhon Khamrobekov,UZB,MID,0.8583,0.078027,,,,,0.052314,0.26242,existing_components,yes,ok
+josue_casimir__hai,Josue Casimir,HAI,FWD,0.8757,0.079609,,,,,0.06131,0.261088,existing_components,yes,ok
+pape_alassane_gueye__sen,Pape Alassane Gueye,SEN,MID,0.7287,0.066245,,,,,0.03435,0.259685,existing_components,yes,ok
+shahriar_moghanlou__irn,Shahriar Moghanlou,IRN,FWD,0.6143,0.055845,,,,,0.126514,0.257818,existing_components,yes,ok
+wilson_isidor__hai,Wilson Isidor,HAI,FWD,0.8655,0.078682,,,,,0.060013,0.256387,existing_components,yes,ok
+habib_diarra__sen,Habib Diarra,SEN,MID,0.718,0.065273,,,,,0.033111,0.253779,existing_components,yes,ok
+matheus_nunes__por,Matheus Nunes,POR,MID,0.5106,0.046418,,,,,0.116196,0.250598,existing_components,yes,ok
+thapelo_morena__rsa,Thapelo Morena,RSA,FWD,0.7525,0.068409,,,,,0.041102,0.25033,existing_components,yes,ok
+borja_iglesias__esp,Borja Iglesias,ESP,FWD,0.4414,0.040127,,,,,0.117807,0.250209,existing_components,yes,ok
+parfait_guiagon__civ,Parfait Guiagon,CIV,MID,0.423,0.038455,,,,,0.02302,0.248497,existing_components,no,ok
+taha_abdi_ali__swe,Taha Abdi Ali,SWE,MID,0.2575,0.023409,,,,,0.017755,0.247595,existing_components,no,ok
+tahith_chong__cuw,Tahith Chong,CUW,MID,0.8985,0.081682,,,,,-0.00546,0.241003,existing_components,yes,ok
+wilguens_paugain__hai,Wilguens Paugain,HAI,DEF,0.2778,0.025255,20.657208,0.002962,0.00337,0.001975,0.106612,0.234819,existing_components,yes,ok
+almoez_ali__qat,Almoez Ali,QAT,FWD,0.8237,0.074882,,,,,0.04197,0.23086,existing_components,yes,ok
+bamba_dieng__sen,Bamba Dieng,SEN,FWD,0.673,0.061182,,,,,0.027903,0.228943,existing_components,yes,ok
+nasser_al_dawsari__ksa,Nasser Al-Dawsari,KSA,MID,0.6741,0.061282,,,,,0.04859,0.224869,existing_components,yes,ok
+mohamed_toure__aus,Mohamed Toure,AUS,FWD,0.6883,0.062573,,,,,0.057481,0.223711,existing_components,yes,ok
+lawrence_shankland__sco,Lawrence Shankland,SCO,FWD,0.4979,0.045264,,,,,0.098076,0.220625,existing_components,yes,ok
+petar_musa__cro,Petar Musa,CRO,FWD,0.6107,0.055518,,,,,0.037807,0.219468,existing_components,yes,ok
+lewis_ferguson__sco,Lewis Ferguson,SCO,MID,0.4956,0.045055,,,,,0.097391,0.218947,existing_components,yes,ok
+mohanad_ali__irq,Mohanad Ali,IRQ,FWD,0.7856,0.071418,,,,,0.045837,0.218167,existing_components,yes,ok
+ayman_yahya_salem__ksa,Ayman Yahya Salem,KSA,MID,0.6615,0.060136,,,,,0.046747,0.218,existing_components,yes,ok
+themba_zwane__rsa,Themba Zwane,RSA,MID,0.688,0.062545,,,,,0.033292,0.216656,existing_components,yes,ok
+abdallah_al_fakhouri__jor,Abdallah Al-Fakhouri,JOR,GK,0.1543,0.014027,,,,,0.044491,0.214759,existing_components,yes,ok
+kevin_yakob__irq,Kevin Yakob,IRQ,MID,0.515,0.046818,36.2354,0.010078,0.011466,0.014332,0.067755,0.211376,existing_components,yes,ok
+marko_farji__irq,Marko Farji,IRQ,MID,0.5092,0.046291,35.827312,0.009908,0.011274,0.014507,0.066467,0.209479,existing_components,yes,ok
+yaimar_medina__ecu,Yaimar Medina,ECU,MID,0.1614,0.014673,12.037373,0.002605,0.002875,0.00071,0.056156,0.208887,existing_components,yes,ok
+jun_ho_bae__kor,Jun-ho Bae,KOR,MID,0.6032,0.054836,,,,,0.077753,0.206731,existing_components,yes,ok
+chemsdine_talbi__mar,Chemsdine Talbi,MAR,FWD,0.0792,0.0072,5.572512,0.002284,0.002835,0.002953,0.018436,0.201051,existing_components,yes,ok
+mohammad_abu_hasheesh__jor,Mohammad Abu Hasheesh,JOR,MID,0.7021,0.063827,52.689797,0.005302,0.006032,0.004713,0.016979,0.198351,existing_components,yes,ok
+george_hirst__sco,George Hirst,SCO,FWD,0.465,0.042273,,,,,0.088292,0.196631,existing_components,yes,ok
+liam_millar__can,Liam Millar,CAN,MID,0.4691,0.042645,,,,,0.067059,0.193273,existing_components,yes,ok
+aymen_hussein__irq,Aymen Hussein,IRQ,FWD,0.7292,0.066291,,,,,0.038957,0.192276,existing_components,yes,ok
+carlos_andres_gomez__col,Carlos Andres Gomez,COL,MID,0.4417,0.040155,,,,,0.084662,0.190933,existing_components,yes,ok
+ricardo_velho__por,Ricardo Velho,POR,GK,0.0495,0.0045,,,,,0.084398,0.190856,existing_components,yes,ok
+cristian_roldan__usa,Cristian Roldan,USA,MID,0.4722,0.042927,,,,,0.070299,0.190649,existing_components,yes,ok
+thelo_aasgaard__nor,Thelo Aasgaard,NOR,MID,0.4417,0.040155,,,,,0.083357,0.190233,existing_components,yes,ok
+ross_stewart__sco,Ross Stewart,SCO,FWD,0.4562,0.041473,,,,,0.085674,0.190211,existing_components,yes,ok
+kristoffer_nordfeldt__swe,Kristoffer Nordfeldt,SWE,GK,0.103,0.009364,,,,,0.108526,0.19008,existing_components,yes,ok
+amine_adli__mar,Amine Adli,MAR,FWD,0.5864,0.053309,,,,,0.026659,0.189118,existing_components,yes,ok
+mohammad_al_dawoud__jor,Mohammad Al-Dawoud,JOR,MID,0.6645,0.060409,,,,,0.02247,0.185546,existing_components,yes,ok
+nico_paz__arg,Nico Paz,ARG,MID,0.4357,0.039609,,,,,0.085893,0.184887,existing_components,yes,ok
+sondre_langas__nor,Sondre Langås,NOR,DEF,0.1054,0.009582,,,,,0.111327,0.18405,existing_components,yes,ok
+abdullah_al_hamdan__ksa,Abdullah Al-Hamdan,KSA,FWD,0.5972,0.054291,,,,,0.037344,0.182959,existing_components,yes,ok
+derrick_etienne__hai,Derrick Etienne Jr.,HAI,FWD,0.6987,0.063518,,,,,0.038811,0.179512,existing_components,yes,ok
+guillermo_martinez__mex,Guillermo Martínez,MEX,FWD,0.438,0.039818,,,,,0.082302,0.179142,existing_components,yes,ok
+hans_vanaken__bel,Hans Vanaken,BEL,MID,0.4318,0.039255,,,,,0.072476,0.171743,existing_components,yes,ok
+zaid_ismail__irq,Zaid Ismail,IRQ,MID,0.6844,0.062218,,,,,0.033492,0.171708,existing_components,yes,ok
+jens_castrop__kor,Jens Castrop,KOR,MID,0.5417,0.049245,,,,,0.064728,0.171125,existing_components,yes,ok
+garry_mendes_rodrigues__cpv,Garry Mendes Rodrigues,CPV,FWD,0.7496,0.068145,,,,,-0.005104,0.166754,existing_components,yes,ok
+jurgen_locadia__cuw,Jürgen Locadia,CUW,FWD,0.7207,0.065518,,,,,-0.014274,0.165114,existing_components,yes,ok
+kees_smit__ned,Kees Smit,NED,MID,0.45,0.040909,,,,,0.062114,0.164191,existing_components,yes,ok
+adem_arous__tun,Adem Arous,TUN,DEF,0.1513,0.013755,,,,,0.056935,0.161619,existing_components,yes,ok
+abdullah_al_khaibari__ksa,Abdullah Al-Khaibari,KSA,MID,0.5513,0.050118,,,,,0.03063,0.157946,existing_components,yes,ok
+christian_fassnacht__sui,Christian Fassnacht,SUI,FWD,0.3606,0.032782,,,,,0.063772,0.157645,existing_components,yes,ok
+dostonbek_khamdamov__uzb,Dostonbek Khamdamov,UZB,MID,0.6318,0.057436,,,,,0.025314,0.155563,existing_components,yes,ok
+alisher_odilov__uzb,Alisher Odilov,UZB,MID,0.6307,0.057336,,,,,0.025184,0.155045,existing_components,yes,ok
+lionel_mpasi_nzau__cod,Lionel Mpasi Nzau,COD,GK,0.1058,0.009618,,,,,0.002832,0.153554,existing_components,yes,ok
+jacob_widell_zetterstrom__swe,Jacob Widell Zetterström,SWE,GK,0.0887,0.008064,,,,,0.089782,0.151868,existing_components,yes,ok
+don_deedson_louicius__hai,Don Deedson Louicius,HAI,FWD,0.6357,0.057791,,,,,0.030803,0.150478,existing_components,yes,ok
+robin_risser__fra,Robin Risser,FRA,GK,0.0251,0.002282,,,,,0.059502,0.147939,existing_components,yes,ok
+nishan_velupillay__aus,Nishan Velupillay,AUS,FWD,0.5403,0.049118,,,,,0.034371,0.144967,existing_components,yes,ok
+yassine_titraoui__alg,Yassine Titraoui,ALG,MID,0.515,0.046818,,,,,0.006725,0.142,existing_components,yes,ok
+mortadha_ben_ouanes__tun,Mortadha Ben Ouanes,TUN,MID,0.4487,0.040791,,,,,0.020346,0.140924,existing_components,yes,ok
+emiliano_martinez_toranza__uru,Emiliano Martinez Toranza,URU,MID,0.3949,0.0359,,,,,0.059728,0.137723,existing_components,yes,ok
+jassem_gaber__qat,Jassem Gaber,QAT,MID,0.6033,0.054845,,,,,0.017362,0.13096,existing_components,yes,ok
+toni_fruk__cro,Toni Fruk,CRO,MID,0.4583,0.041664,,,,,0.015896,0.12914,existing_components,yes,ok
+mahmoud_abunada__qat,Mahmoud Abunada,QAT,GK,0.1495,0.013591,,,,,0.018503,0.128411,existing_components,yes,ok
+dong_gyeong_lee__kor,Dong-gyeong Lee,KOR,MID,0.4607,0.041882,,,,,0.047573,0.12423,existing_components,yes,ok
+sontje_hansen__cuw,Sontje Hansen,CUW,FWD,0.6148,0.055891,,,,,-0.019523,0.119914,existing_components,yes,ok
+yassin_fortune__hai,Yassin Fortune,HAI,FWD,0.5684,0.051673,,,,,0.022249,0.119461,existing_components,yes,ok
+ermin_mahmic__bih,Ermin Mahmic,BIH,MID,0.4375,0.039773,,,,,0.025415,0.11795,existing_components,yes,ok
+peter_gwargis__irq,Peter Gwargis,IRQ,MID,0.2625,0.023864,18.4695,0.005127,0.005833,0.007899,0.030616,0.114366,existing_components,yes,ok
+marcio_rosa__cpv,Marcio Rosa,CPV,GK,0.1352,0.012291,,,,,-0.021153,0.114228,existing_components,yes,ok
+walter_benitez__arg,Walter Benitez,ARG,GK,0.0534,0.004855,,,,,0.043434,0.112132,existing_components,yes,ok
+ivan_toney__eng,Ivan Toney,ENG,FWD,0.344,0.031273,,,,,0.045313,0.107587,existing_components,yes,ok
+mohammed_waad__qat,Mohammed Waad,QAT,MID,0.5512,0.050109,,,,,0.011544,0.107343,existing_components,yes,ok
+christopher_bonsu_baah__gha,Christopher Bonsu Baah,GHA,FWD,0.3911,0.035555,,,,,0.050406,0.107164,existing_components,yes,ok
+fares_ghedjemis__alg,Fares Ghedjemis,ALG,FWD,0.45,0.040909,,,,,-0.000435,0.106093,existing_components,yes,ok
+adil_aouchiche__alg,Adil Aouchiche,ALG,MID,0.45,0.040909,,,,,-0.000435,0.106093,existing_components,yes,ok
+khalil_ayari__tun,Khalil Ayari,TUN,MID,0.3862,0.035109,,,,,0.010548,0.101445,existing_components,yes,ok
+sabri_ben_hessen__tun,Sabri Ben Hessen,TUN,GK,0.0976,0.008873,,,,,0.036052,0.100162,existing_components,yes,ok
+pape_cherif_ndiaye__sen,Pape Cherif Ndiaye,SEN,FWD,0.4289,0.038991,,,,,-0.000354,0.094218,existing_components,yes,ok
+yannick_semedo__cpv,Yannick Semedo,CPV,MID,0.5733,0.052118,,,,,-0.015663,0.094021,existing_components,yes,ok
+hyun_jun_yang__kor,Hyun-Jun Yang,KOR,MID,0.4047,0.036791,,,,,0.035713,0.091808,existing_components,yes,ok
+matias_galarza_fonda__par,Matias Galarza Fonda,PAR,MID,0.387,0.035182,,,,,0.014234,0.084016,existing_components,yes,ok
+ali_yousif__irq,Ali Yousif,IRQ,FWD,0.0386,0.003509,2.561496,0.001768,0.00071,0.004068,0.012066,0.075743,existing_components,yes,ok
+simon_banza__cod,Simon Banza,COD,FWD,0.4264,0.038764,,,,,-0.008397,0.070176,existing_components,yes,ok
+carl_sainte__hai,Carl Sainte,HAI,MID,0.4207,0.038245,,,,,0.003475,0.05139,existing_components,yes,ok
+ahmed_alaaeldin_abdelmotaal__qat,Ahmed Alaaeldin Abdelmotaal,QAT,FWD,0.4247,0.038609,,,,,-0.002581,0.050003,existing_components,yes,ok
+denzell_garcia__mex,Denzell Garcia,MEX,MID,0.2575,0.023409,,,,,0.02778,0.046594,existing_components,yes,ok
+jens_petter_hauge__nor,Jens Petter Hauge,NOR,MID,0.2457,0.022336,,,,,0.024181,0.042584,existing_components,yes,ok
+oufa_shobeir__egy,Mostafa Oufa Shobeir,EGY,GK,0.0151,0.001373,,,,,-0.0086,0.042064,existing_components,yes,ok
+carlos_rodriguez__mex,Carlos Rodriguez,MEX,MID,0.25,0.0227272727272727,,,,,0.025514,0.041085,existing_components,yes,ok
+matias_fernandez_pardo__bel,Matias Fernandez-Pardo,BEL,FWD,0.25,0.0227272727272727,,,,,0.02091,0.039437,existing_components,yes,ok
+jamshid_iskanderov__uzb,Jamshid Iskanderov,UZB,MID,0.3837,0.034882,,,,,-0.004261,0.038517,existing_components,yes,ok
+david_hoilett__can,David 'Junior' Hoilett,CAN,MID,0.25,0.0227272727272727,,,,,0.012385,0.036447,existing_components,yes,ok
+jin_seob_park__kor,Jin-seob Park,KOR,MID,0.2925,0.026591,,,,,0.011949,0.026846,existing_components,yes,ok
+nuno_da_costa__cpv,Nuno da Costa,CPV,FWD,0.3862,0.035109,,,,,-0.026869,0.01683,existing_components,yes,ok
+lucas_ramon_romero__par,Lucas Ramon Romero,PAR,MID,0.2647,0.024064,,,,,-0.006066,0.012432,existing_components,yes,ok
+daniel_nana_agyei__gha,Daniel Nana Agyei,GHA,FWD,0.242,0.022,,,,,0.012129,0.011985,existing_components,yes,ok
+jacen_russell_rowe__can,Jacen Russell-Rowe,CAN,FWD,0.215,0.019545,,,,,0.003651,0.011394,existing_components,yes,ok
+marco_grull__aut,Marco Grüll,AUT,FWD,0.1955,0.017773,,,,,0.012754,0.000646,existing_components,yes,ok
+nabil_dunga_emad__egy,Nabil 'Dunga' Emad,EGY,MID,0.25,0.0227272727272727,,,,,-0.01586,0.000592,existing_components,yes,ok
+cj_dos_santos__cpv,CJ Dos Santos,CPV,GK,0.0251,0.002282,,,,,-0.031448,0,existing_components,yes,ok
+chris_brady__usa,Chris Brady,USA,GK,0.0262,0.002382,,,,,-0.009023,0.0,existing_components,no,ok
+marco_pasalic__cro,Marco Pasalic,CRO,FWD,0.2228,0.020255,,,,,-0.017966,0,existing_components,yes,ok
+amin_chiakha__alg,Amin Chiakha,ALG,FWD,0.1293,0.011755,,,,,-0.035758,0.0,existing_components,no,ok
+abdulaziz_hatim_mohammed__qat,Abdulaziz Hatim Mohammed,QAT,MID,0.25,0.0227272727272727,,,,,-0.022086,0,existing_components,yes,ok
+mohammad_abu_shararh_zrayq__jor,Mohammad Abu 'Shararh' Zrayq,JOR,MID,0.25,0.0227272727272727,,,,,-0.022735,0.0,existing_components,no,ok
+alan_varela__arg,Alan Varela,ARG,MID,0.0413,0.003755,,,,,-0.037118,0.0,existing_components,no,ok
+abdulrahman_al_obood__ksa,Abdulrahman Al-Obood,KSA,MID,0.25,0.0227272727272727,,,,,-0.013436,0,existing_components,yes,ok
+ar_jany_martha__cuw,Ar'jany Martha,CUW,FWD,0.1336,0.012145,,,,,-0.043377,0,existing_components,yes,ok
+aribim_pepple__can,Aribim Pepple,CAN,FWD,0.045,0.004091,,,,,-0.03877,0.0,existing_components,no,ok
+findlay_curtis__sco,Findlay Curtis,SCO,FWD,0.0446,0.004055,,,,,-0.036736,0.0,existing_components,no,ok
+thapelo_maseko__rsa,Thapelo Maseko,RSA,FWD,0.2575,0.023409,,,,,-0.018826,0,existing_components,yes,ok
+ante_suto__aus,Ante Suto,AUS,FWD,0.0442,0.004018,,,,,-0.043098,0.0,existing_components,no,ok
+raul_florucz__aut,Raul Florucz,AUT,FWD,0.1714,0.015582,,,,,0.005017,0,existing_components,yes,ok
+jeremy_ngakia__cod,Jeremy Ngakia,COD,DEF,0.0446,0.004055,,,,,-0.036229,0.0,existing_components,no,ok
+denis_visinsky__cze,Denis Visinsky,CZE,MID,0.045,0.004091,,,,,-0.041201,0.0,existing_components,no,ok
+atakan_karazor__tur,Atakan Karazor,TUR,MID,0.2144,0.019491,,,,,0.006009,0.0,existing_components,no,ok
+alexander_alex_robertson__aus,Alexander 'Alex' Robertson,AUS,MID,0.25,0.0227272727272727,,,,,-0.010961,0.0,existing_components,no,ok
+jayden_adams__rsa,Jayden Adams,RSA,MID,0.0717,0.006518,,,,,-0.04132,0.0,existing_components,no,ok
+umarali_rakhmonaliyev__uzb,Umarali Rakhmonaliyev,UZB,MID,0.25,0.0227272727272727,,,,,-0.020199,0,existing_components,yes,ok
+ibrokhim_ibrokhimov__uzb,Ibrokhim Ibrokhimov,UZB,MID,0.045,0.004091,,,,,-0.044636,0.0,existing_components,no,ok
+yousef_qashi__jor,Yousef Qashi,JOR,MID,0.045,0.004091,,,,,-0.045092,0.0,existing_components,no,ok
+mohammad_taha__jor,Mohammad Taha,JOR,MID,0.25,0.0227272727272727,,,,,-0.022735,0.0,existing_components,no,ok
+odeh_al_fakhouri__jor,Odeh Al-Fakhouri,JOR,MID,0.25,0.0227272727272727,,,,,-0.022735,0.0,existing_components,no,ok
+ali_azaizeh__jor,Ali Azaizeh,JOR,MID,0.0413,0.003755,,,,,-0.045496,0.0,existing_components,no,ok
+kevin_felida__cuw,Kevin Felida,CUW,MID,0.1873,0.017027,,,,,-0.040715,0,existing_components,yes,ok
+tyrese_noslin__cuw,Tyrese Noslin,CUW,MID,0.0453,0.004118,,,,,-0.047755,0.0,existing_components,no,ok
+woodensky_pierre__hai,Woodensky Pierre,HAI,MID,0.0446,0.004055,,,,,-0.044331,0.0,existing_components,no,ok
+eric_smith__swe,Eric Smith,SWE,DEF,0.0438,0.003982,,,,,0.001129,0.0,existing_components,no,ok
+sohaib_nair__alg,Sohaib Nair,ALG,DEF,0.0386,0.003509,,,,,-0.032391,0.0,existing_components,no,ok
+elliot_stroud__swe,Elliot Stroud,SWE,DEF,0.0446,0.004055,,,,,0.002063,0.0,existing_components,no,ok
+patric_pfeiffer__gha,Patric Pfeiffer,GHA,DEF,0.0438,0.003982,,,,,-0.002621,0.0,existing_components,no,ok
+marvin_senaya__gha,Marvin Senaya,GHA,DEF,0.0438,0.003982,,,,,-0.002621,0.0,existing_components,no,ok
+mukhammadrasul_abdumazhidov__uzb,Mukhammadrasul Abdumazhidov,UZB,DEF,0.045,0.004091,,,,,-0.029064,0.0,existing_components,no,ok
+henrik_falchener__nor,Henrik Falchener,NOR,DEF,0.0446,0.004055,,,,,0.018265,0.0,existing_components,no,ok
+tyrick_bodak__cuw,Tyrick Bodak,CUW,GK,0.0964,0.008764,,,,,-0.03618,0.0,existing_components,no,ok
+trevor_doornbusch__cuw,Trevor Doornbusch,CUW,GK,0.1151,0.010464,,,,,-0.033497,0.0,existing_components,no,ok
+juan_espinola__par,Juan Espinola,PAR,GK,0.0434,0.003945,,,,,-0.012417,0.0,existing_components,no,ok
+christoph_baumgartner__aut,Christoph Baumgartner,AUT,MID,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,missing_ev_source,no,no_player_ev_source
+tommy_smith__nzl,Tommy Smith,NZL,DEF,0.0438,0.003982,,,,,-0.020038,0.0,existing_components,no,ok
+raed_chikhaoui__tun,Raed Chikhaoui,TUN,DEF,0.045,0.004091,,,,,-0.018195,0.0,existing_components,no,ok
+moustapha_mbow__sen,Moustapha Mbow,SEN,DEF,0.0396,0.0036,,,,,-0.031712,0.0,existing_components,no,ok
+bara_sapoko_ndiaye__sen,Bara Sapoko Ndiaye,SEN,MID,0.25,0.0227272727272727,,,,,-0.021062,0,existing_components,yes,ok
+kevin_lenini__cpv,Kevin Lenini Pina,CPV,MID,0.25,0.0227272727272727,,,,,-0.035026,0.0,existing_components,no,ok
+dominique_simon__hai,Dominique Simon,HAI,MID,0.25,0.0227272727272727,,,,,-0.018223,0,existing_components,yes,ok
+lenny_joseph__hai,Lenny Joseph,HAI,FWD,0.25,0.0227272727272727,,,,,-0.018223,0,existing_components,yes,ok
+aqtay_abdallah__egy,Aqtay Abdallah,EGY,FWD,0.0446,0.004055,,,,,-0.043909,0.0,existing_components,no,ok
+ange_yoan_bonny__civ,Ange-Yoan Bonny,CIV,FWD,0.25,0.0227272727272727,,,,,-0.006844,0.0,existing_components,no,ok

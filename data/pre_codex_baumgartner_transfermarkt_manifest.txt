@@ -1,0 +1,138 @@
+PRE-CODEX BAUMGARTNER + TRANSFERMARKT MANIFEST
+================================================================================
+
+## Christoph Baumgartner i player_pool_v1.json
+[
+  {
+    "player_id": "christoph_baumgartner__aut",
+    "player_name": "Christoph Baumgartner",
+    "team_id": "AUT",
+    "team_name": "Østrig",
+    "flag_code": "at",
+    "position": "MID",
+    "advance_pct": 0.902,
+    "avg_points": 5.46,
+    "nt_ev_score": 0.6271,
+    "blended_ev_score": 4.106,
+    "display_score": 88,
+    "price_estimate": 3500000,
+    "value_score": 0.4613,
+    "display_value": 46,
+    "price": 3500000,
+    "price_source": "holdet_vm_2026_official",
+    "position_source": "holdet_vm_2026_official",
+    "holdet_game_id": 616,
+    "holdet_player_id": 48961,
+    "holdet_person_id": 37314,
+    "holdet_team_id": 587,
+    "holdet_team_name": "Østrig",
+    "holdet_position_id": 295,
+    "holdet_position": "MID",
+    "holdet_start_price": 3500000,
+    "holdet_price": 3500000,
+    "holdet_is_out": false,
+    "has_holdet_vm_match": true,
+    "official_holdet_master": true,
+    "copied_from_old_player_pool": true,
+    "old_player_id": "christoph_baumgartner__aut",
+    "old_match_method": "exact_name_team",
+    "old_match_score": 1.0,
+    "start_prob": 0.8952,
+    "start_prob_source": "transfermarkt_availability_split_2026_06_01",
+    "weighted_group_stage_ev": 3.322945,
+    "optimizer_ev": 3.322945,
+    "holdet_appearance": {
+      "hairColor": "#78540F"
+    },
+    "player_visual_source": "holdet_api_appearance",
+    "display_score_source": "start_neutral_blended_nt_team_absolute",
+    "start_probability_pct": 90,
+    "start_security": 0.8952,
+    "start_status": "sikker starter - Transfermarkt landshold",
+    "transfermarkt_competitive_rows": 92.0,
+    "transfermarkt_competitive_starts": 78.0,
+    "transfermarkt_competition_weight_sum": 3.9,
+    "transfermarkt_recent_rows_since_2025": 12,
+    "transfermarkt_recent_starts_since_2025": 11,
+    "transfermarkt_latest_match_date": "2026-03-31",
+    "transfermarkt_signal_confidence": 1.0,
+    "transfermarkt_start_score": 0.9539,
+    "transfermarkt_recency_start_score": 0.9539,
+    "transfermarkt_recent_start_rate_since_2025": 0.9167,
+    "conditional_start_prob": 0.9333,
+    "availability_prob": 0.8831,
+    "availability_risk": "low_risk",
+    "availability_status": "low_risk",
+    "transfermarkt_available_rows": 60,
+    "transfermarkt_absence_rows": 5,
+    "transfermarkt_available_weight": 15.0,
+    "transfermarkt_absence_weight": 1.25,
+    "transfermarkt_start_weight": 14.0
+  }
+]
+
+## Christoph Baumgartner i player_ev_group_stage_v1.csv
+                 player_id           player_name team_id position  start_prob                           start_prob_source  minute_share  weighted_group_stage_ev_before_price_quality  price_quality_ev  weighted_group_stage_ev  optimizer_ev
+christoph_baumgartner__aut Christoph Baumgartner     AUT      MID      0.8952 transfermarkt_availability_split_2026_06_01      0.081382                                         4.106          2.365878                  4.57388       4.57388
+
+## Datafiler der indeholder Baumgartner
+data\bubble_player_audit.csv
+data\bubble_player_audit.md
+data\holdet_existing_players_match_report.csv
+data\manual_player_overrides.csv
+data\player_ev_component_dependency_audit.csv
+data\player_ev_fixture_data_gaps.csv
+data\player_ev_fixture_strength_impact_report.csv
+data\player_ev_group_stage_v1.backup_before_component_rebuild_20260604_163551.csv
+data\player_ev_group_stage_v1.backup_before_fixture_gap_repair_20260604_150955.csv
+data\player_ev_group_stage_v1.backup_before_start_prob_source_repair_20260604_162307.csv
+data\player_ev_group_stage_v1.csv
+data\player_pool_v1.backup_before_fixture_gap_repair_20260604_150955.json
+data\player_pool_v1.backup_before_holdet_new_players_import_20260601_204144.json
+data\player_pool_v1.json
+data\player_pool_vs_ev_start_prob_audit.csv
+data\player_start_security_nt.csv
+data\player_start_signal_layer_v1.csv
+data\player_start_signal_layer_v1.json
+data\pre_codex_ev_consistency_snapshot.csv
+data\price_quality_ev_diagnostics.csv
+data\round1_safe_favorite_detail_report.csv
+data\round1_safe_favorite_detail_report.md
+data\start_probability_availability_split_report.csv
+data\user_strategy_detail_report.md
+
+## Transfermarkt-scripts i gammel Desktop-mappe
+apply_transfermarkt_nt_merge_fix.py
+audit_transfermarkt_event_fields.py
+batch_transfermarkt_national_usage.backup_before_alias_search.py
+batch_transfermarkt_national_usage.backup_before_batch75.py
+batch_transfermarkt_national_usage.py
+classify_transfermarkt_national_matches.py
+diagnose_transfermarkt_nt_gaps.py
+list_missing_transfermarkt_nt.py
+merge_transfermarkt_competitive_summary_to_player_pool.py
+patch_transfermarkt_absence_not_starter.py
+patch_transfermarkt_alias_search.py
+scrape_manual_transfermarkt_urls.py
+scrape_transfermarkt_national_player.py
+write_selected_squad_watchlist.py
+write_transfermarkt_start_watchlist.py
+
+## Transfermarkt-scripts i GitHub-repo
+merge_transfermarkt_competitive_summary_to_player_pool.py
+write_selected_squad_watchlist.py
+
+## Transfermarkt-scripts der kun findes i gammel Desktop-mappe
+apply_transfermarkt_nt_merge_fix.py
+audit_transfermarkt_event_fields.py
+batch_transfermarkt_national_usage.backup_before_alias_search.py
+batch_transfermarkt_national_usage.backup_before_batch75.py
+batch_transfermarkt_national_usage.py
+classify_transfermarkt_national_matches.py
+diagnose_transfermarkt_nt_gaps.py
+list_missing_transfermarkt_nt.py
+patch_transfermarkt_absence_not_starter.py
+patch_transfermarkt_alias_search.py
+scrape_manual_transfermarkt_urls.py
+scrape_transfermarkt_national_player.py
+write_transfermarkt_start_watchlist.py

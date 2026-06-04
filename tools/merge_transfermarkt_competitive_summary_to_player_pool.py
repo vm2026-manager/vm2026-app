@@ -15,12 +15,17 @@ ROOT = Path(__file__).resolve().parents[1]
 PLAYER_POOL_PATH = ROOT / "data" / "player_pool_v1.json"
 TM_SUMMARY_PATH = ROOT / "data" / "transfermarkt_national_team" / "player_national_team_usage_competitive_summary.csv"
 TM_MATCHES_PATH = ROOT / "data" / "transfermarkt_national_team" / "player_national_team_matches_classified.csv"
+START_CONTEXT_OVERRIDES_PATH = ROOT / "data" / "start_signal_context_overrides.csv"
 
 BACKUP_PATH = ROOT / "data" / f"player_pool_v1.backup_before_tm_competitive_merge_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
 OUT_REPORT = ROOT / "data" / "transfermarkt_competitive_summary_merge_report.csv"
 OUT_SPLIT_REPORT = ROOT / "data" / "start_probability_availability_split_report.csv"
+GK_AUDIT_CSV = ROOT / "data" / "goalkeeper_hierarchy_audit.csv"
+GK_AUDIT_MD = ROOT / "data" / "goalkeeper_hierarchy_audit.md"
 
 SOURCE_TAG = f"transfermarkt_availability_split_{datetime.now().strftime('%Y_%m_%d')}"
+GK_SOURCE_TAG = f"{SOURCE_TAG}+gk_hierarchy_normalized"
+GK_SANITY_TEAMS = {"ESP", "AUT", "GER", "FRA", "SUI", "ALG", "ARG"}
 
 
 def txt(value: Any) -> str:
@@ -66,6 +71,78 @@ def as_int_pct(prob: float | None) -> int | None:
     return int(round(prob * 100))
 
 
+def fmt(value: Any, digits: int = 4) -> str:
+    number = as_float(value)
+    if number is None:
+        return ""
+    return f"{number:.{digits}f}".rstrip("0").rstrip(".")
+
+
+def load_start_context_overrides() -> dict[str, dict[str, str]]:
+    if not START_CONTEXT_OVERRIDES_PATH.exists():
+        return {}
+
+    with START_CONTEXT_OVERRIDES_PATH.open("r", encoding="utf-8-sig", newline="") as f:
+        rows = list(csv.DictReader(f))
+
+    overrides: dict[str, dict[str, str]] = {}
+    for row in rows:
+        player_id = txt(row.get("player_id"))
+        if player_id:
+            overrides[f"id::{player_id}"] = row
+        overrides[key(row.get("player_name"), row.get("team_id"))] = row
+    return overrides
+
+
+def apply_start_context_override(player: dict[str, Any], override: dict[str, str]) -> None:
+    numeric_fields = [
+        "start_prob",
+        "conditional_start_prob",
+        "appearance_prob",
+        "availability_prob",
+    ]
+    for field in numeric_fields:
+        value = as_float(override.get(field))
+        if value is not None:
+            player[field] = round(max(0.0, min(1.0, value)), 4)
+
+    if txt(override.get("availability_risk")):
+        player["availability_risk"] = txt(override.get("availability_risk"))
+        player["availability_status"] = txt(override.get("availability_risk"))
+    if txt(override.get("round_specific_rotation_risk")):
+        player["round_specific_rotation_risk"] = txt(override.get("round_specific_rotation_risk"))
+
+    start_prob = as_float(player.get("start_prob"))
+    conditional_prob = as_float(player.get("conditional_start_prob"))
+    availability_prob = as_float(player.get("availability_prob"))
+    player["start_security"] = round(start_prob, 4) if start_prob is not None else None
+    player["start_probability_pct"] = as_int_pct(start_prob)
+    player["start_status"] = classify_start_status(conditional_prob, availability_prob)
+    player["start_prob_source"] = f"{SOURCE_TAG}+context_override"
+    player["start_signal_context_note"] = txt(override.get("source_note"))
+
+
+def has_valid_start_context_override(override: dict[str, str] | None) -> bool:
+    if not override:
+        return False
+    for field in [
+        "start_prob",
+        "conditional_start_prob",
+        "appearance_prob",
+        "availability_prob",
+    ]:
+        if as_float(override.get(field)) is not None:
+            return True
+    return any(
+        txt(override.get(field))
+        for field in [
+            "availability_risk",
+            "round_specific_rotation_risk",
+            "source_note",
+        ]
+    )
+
+
 def classify_start_status(conditional_prob: float | None, availability_prob: float | None) -> str:
     if conditional_prob is None:
         return "ukendt - Transfermarkt landshold"
@@ -104,8 +181,22 @@ def classify_availability_risk(
     return "medium_risk"
 
 
+def classify_pool_start_status(start_prob: float) -> str:
+    if start_prob >= 0.88:
+        return "sikker starter - GK hierarchy"
+    if start_prob >= 0.65:
+        return "sandsynlig starter - GK hierarchy"
+    if start_prob >= 0.25:
+        return "rotation/usikker - GK hierarchy"
+    return "reservekeeper - GK hierarchy"
+
+
 def is_true(value: Any) -> bool:
     return txt(value).lower() == "true"
+
+
+def is_out(player: dict[str, Any]) -> bool:
+    return txt(player.get("holdet_is_out")).lower() in {"true", "1", "yes", "ja"}
 
 
 def should_ignore_match(row: dict[str, str]) -> bool:
@@ -221,6 +312,247 @@ def build_availability_splits(match_rows: list[dict[str, str]]) -> dict[str, dic
     return splits
 
 
+def gk_raw_score(player: dict[str, Any]) -> float:
+    start = as_float(player.get("start_prob")) or 0.0
+    conditional = as_float(player.get("conditional_start_prob"))
+    availability = as_float(player.get("availability_prob"))
+    recency = as_float(player.get("transfermarkt_recency_start_score"))
+    competitive = as_float(player.get("transfermarkt_start_score"))
+    recent_rate = as_float(player.get("transfermarkt_recent_start_rate_since_2025"))
+
+    signal_parts = []
+    for weight, value in [
+        (0.40, recency),
+        (0.22, competitive),
+        (0.18, conditional),
+        (0.12, start),
+        (0.08, recent_rate),
+    ]:
+        if value is not None:
+            signal_parts.append((weight, max(0.0, min(1.0, value))))
+
+    if signal_parts:
+        weight_sum = sum(weight for weight, _ in signal_parts)
+        base = sum(weight * value for weight, value in signal_parts) / weight_sum
+    else:
+        base = start
+
+    availability_factor = 0.65 + 0.35 * max(0.0, min(1.0, availability if availability is not None else 0.75))
+    if txt(player.get("start_prob_source")).endswith("+context_override") or "+context_override" in txt(player.get("start_prob_source")):
+        if start < 0.35:
+            base = min(base, start)
+        else:
+            base = max(base, start)
+    return max(0.001, min(1.0, base * availability_factor))
+
+
+def gk_team_metrics(players: list[dict[str, Any]]) -> dict[str, float]:
+    by_team: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for player in players:
+        if txt(player.get("position")).upper() == "GK":
+            by_team[canonical_team(player.get("team_id"))].append(player)
+
+    sums = []
+    multi_60 = 0
+    multi_tier = 0
+    for team_players in by_team.values():
+        active = [p for p in team_players if not is_out(p)]
+        total = sum(as_float(p.get("start_prob")) or 0.0 for p in active)
+        sums.append(total)
+        if sum(1 for p in active if (as_float(p.get("start_prob")) or 0.0) >= 0.60) >= 2:
+            multi_60 += 1
+        if sum(1 for p in active if (as_float(p.get("start_prob")) or 0.0) >= 0.65) >= 2:
+            multi_tier += 1
+    return {
+        "teams_sum_gt_1_10": sum(1 for value in sums if value > 1.10),
+        "teams_multi_gk_ge_0_60": multi_60,
+        "teams_multi_probable_or_clear": multi_tier,
+        "max_team_sum": max(sums) if sums else 0.0,
+    }
+
+
+def normalize_goalkeeper_hierarchy(players: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    before_by_id = {txt(player.get("player_id")): dict(player) for player in players if txt(player.get("position")).upper() == "GK"}
+    by_team: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for player in players:
+        if txt(player.get("position")).upper() == "GK":
+            by_team[canonical_team(player.get("team_id"))].append(player)
+
+    audit_rows: list[dict[str, Any]] = []
+    for team_id, team_players in sorted(by_team.items()):
+        active = [player for player in team_players if not is_out(player)]
+        if not active:
+            for player in team_players:
+                player["start_prob"] = 0.0
+                player["start_security"] = 0.0
+                player["start_probability_pct"] = 0
+            continue
+
+        raw_scores = {txt(player.get("player_id")): gk_raw_score(player) for player in active}
+        override_ids = {
+            txt(player.get("player_id"))
+            for player in active
+            if "+context_override" in txt(player.get("start_prob_source"))
+        }
+        max_raw = max(raw_scores.values()) if raw_scores else 1.0
+        weighted: dict[str, float] = {}
+        for player in active:
+            player_id = txt(player.get("player_id"))
+            relative = raw_scores[player_id] / max(max_raw, 0.001)
+            # Cubic sharpening enforces one active GK slot while preserving uncertainty
+            # when the raw signals are genuinely close.
+            weighted[player_id] = max(0.0001, relative**3.0)
+            if player_id in override_ids and (as_float(player.get("start_prob")) or 0.0) >= 0.35:
+                weighted[player_id] *= 1.75
+
+        floor = 0.025 if len(active) <= 3 else 0.015
+        raw_total = sum(weighted.values()) or 1.0
+        floor_total = floor * max(len(active) - 1, 0)
+        primary_id = max(weighted, key=weighted.get)
+        normalized: dict[str, float] = {}
+        for player in active:
+            player_id = txt(player.get("player_id"))
+            if player_id == primary_id:
+                continue
+            normalized[player_id] = floor + (1.0 - floor_total) * (weighted[player_id] / raw_total)
+        normalized[primary_id] = max(0.0, 1.0 - sum(normalized.values()))
+
+        # If the model is very uncertain, keep a real challenger but prevent two
+        # "probable starter" goalkeepers.
+        ordered = sorted(normalized.items(), key=lambda item: item[1], reverse=True)
+        if len(ordered) > 1 and ordered[1][1] >= 0.60:
+            excess = ordered[1][1] - 0.55
+            normalized[ordered[1][0]] -= excess
+            normalized[ordered[0][0]] += excess
+
+        team_sum = sum(normalized.values())
+        if team_sum > 0:
+            normalized = {player_id: value / team_sum for player_id, value in normalized.items()}
+
+        ranked = sorted(active, key=lambda player: normalized.get(txt(player.get("player_id")), 0.0), reverse=True)
+        for rank, player in enumerate(ranked, start=1):
+            player_id = txt(player.get("player_id"))
+            raw = before_by_id.get(player_id, {})
+            new_prob = round(max(0.0, min(1.0, normalized.get(player_id, 0.0))), 4)
+            player["gk_start_prob_raw_before_normalization"] = raw.get("start_prob")
+            player["gk_hierarchy_raw_score"] = round(raw_scores.get(player_id, 0.0), 6)
+            player["gk_start_prob_normalized"] = new_prob
+            player["gk_start_prob_normalized_at"] = datetime.now().strftime("%Y-%m-%d")
+            player["gk_team_rank"] = rank
+            player["start_prob"] = new_prob
+            player["start_security"] = new_prob
+            player["start_probability_pct"] = as_int_pct(new_prob)
+            player["conditional_start_prob"] = new_prob
+            player["start_status"] = classify_pool_start_status(new_prob)
+            player["start_prob_source"] = GK_SOURCE_TAG
+
+        for player in team_players:
+            player_id = txt(player.get("player_id"))
+            raw = before_by_id.get(player_id, {})
+            if is_out(player):
+                player["start_prob"] = 0.0
+                player["start_security"] = 0.0
+                player["start_probability_pct"] = 0
+                player["conditional_start_prob"] = 0.0
+                player["start_status"] = "ude - GK hierarchy"
+                normalized_prob = 0.0
+                rank = ""
+                reason = "holdet_is_out_zeroed"
+            else:
+                normalized_prob = as_float(player.get("start_prob")) or 0.0
+                rank = player.get("gk_team_rank", "")
+                reason = "team_gk_exclusive_normalization"
+
+            audit_rows.append(
+                {
+                    "team_id": team_id,
+                    "player_id": player_id,
+                    "player_name": txt(player.get("player_name")),
+                    "raw_start_prob": raw.get("start_prob", ""),
+                    "raw_start_prob_source": raw.get("start_prob_source", ""),
+                    "competitive_starts": player.get("transfermarkt_competitive_starts", ""),
+                    "recent_starts": player.get("transfermarkt_recent_starts_since_2025", ""),
+                    "availability_prob": player.get("availability_prob", ""),
+                    "context_override": "yes" if "+context_override" in txt(raw.get("start_prob_source")) else "",
+                    "team_gk_rank": rank,
+                    "normalized_gk_start_prob": normalized_prob,
+                    "normalized_prob_sum_team": round(sum(as_float(p.get("start_prob")) or 0.0 for p in team_players if not is_out(p)), 4),
+                    "repair_reason": reason,
+                }
+            )
+
+    return audit_rows
+
+
+def write_gk_audit(audit_rows: list[dict[str, Any]], before_metrics: dict[str, float], after_metrics: dict[str, float]) -> None:
+    fields = [
+        "team_id",
+        "player_id",
+        "player_name",
+        "raw_start_prob",
+        "raw_start_prob_source",
+        "competitive_starts",
+        "recent_starts",
+        "availability_prob",
+        "context_override",
+        "team_gk_rank",
+        "normalized_gk_start_prob",
+        "normalized_prob_sum_team",
+        "repair_reason",
+    ]
+    with GK_AUDIT_CSV.open("w", encoding="utf-8-sig", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
+        writer.writeheader()
+        writer.writerows(audit_rows)
+
+    def table(rows: list[dict[str, Any]], fields: list[str]) -> list[str]:
+        lines = ["| " + " | ".join(fields) + " |", "| " + " | ".join(["---"] * len(fields)) + " |"]
+        for row in rows:
+            lines.append("| " + " | ".join(txt(row.get(field)) for field in fields) + " |")
+        return lines
+
+    sanity = [row for row in audit_rows if row["team_id"] in GK_SANITY_TEAMS]
+    sanity.sort(key=lambda row: (row["team_id"], as_float(row.get("team_gk_rank")) or 99))
+    lines = [
+        "# Goalkeeper Hierarchy Audit",
+        "",
+        "GK-startchancer normaliseres pr. land efter alle individuelle Transfermarkt-signaler og context-overrides. Kun aktive keepere indgaar i sum-normaliseringen; `holdet_is_out=True` nulstilles.",
+        "",
+        "Metode: raw score = recency-weighted competitive start score, competitive start score, conditional start probability, existing start_prob, recent start rate og availability. Scores skarpes kubisk og normaliseres til cirka 1.00 pr. land med en lille reservefloor. Context-overrides loeftes som prioriteret input foer normalisering.",
+        "",
+        "## Foer/efter",
+        "",
+        f"- Lande hvor GK start_prob-sum > 1.10 foer: {int(before_metrics['teams_sum_gt_1_10'])}",
+        f"- Lande hvor GK start_prob-sum > 1.10 efter: {int(after_metrics['teams_sum_gt_1_10'])}",
+        f"- Lande med mindst to GK start_prob >= 0.60 foer: {int(before_metrics['teams_multi_gk_ge_0_60'])}",
+        f"- Lande med mindst to GK start_prob >= 0.60 efter: {int(after_metrics['teams_multi_gk_ge_0_60'])}",
+        f"- Lande med mindst to GK Sandsynlig/Klar starter foer: {int(before_metrics['teams_multi_probable_or_clear'])}",
+        f"- Lande med mindst to GK Sandsynlig/Klar starter efter: {int(after_metrics['teams_multi_probable_or_clear'])}",
+        f"- Maksimal GK start_prob-sum foer: {before_metrics['max_team_sum']:.4f}",
+        f"- Maksimal GK start_prob-sum efter: {after_metrics['max_team_sum']:.4f}",
+        "",
+        "## Sanity-hold",
+        "",
+        *table(
+            sanity,
+            [
+                "team_id",
+                "team_gk_rank",
+                "player_name",
+                "raw_start_prob",
+                "raw_start_prob_source",
+                "competitive_starts",
+                "recent_starts",
+                "availability_prob",
+                "context_override",
+                "normalized_gk_start_prob",
+                "normalized_prob_sum_team",
+            ],
+        ),
+    ]
+    GK_AUDIT_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
 def main() -> None:
     if not PLAYER_POOL_PATH.exists():
         raise FileNotFoundError(PLAYER_POOL_PATH)
@@ -244,17 +576,21 @@ def main() -> None:
         tm_by_key.setdefault(row_key, row)
 
     availability_splits = build_availability_splits(match_rows)
+    start_context_overrides = load_start_context_overrides()
     shutil.copy2(PLAYER_POOL_PATH, BACKUP_PATH)
 
     applied = []
     skipped_no_match = 0
+    before_gk_metrics = gk_team_metrics(players)
 
     for player in players:
         player_key = key(player.get("player_name"), player.get("team_id"))
+        override = start_context_overrides.get(f"id::{txt(player.get('player_id'))}") or start_context_overrides.get(player_key)
+        has_override = has_valid_start_context_override(override)
         row = tm_by_key.get(player_key)
         split = availability_splits.get(txt(player.get("player_id")))
 
-        if not row and not split:
+        if not row and not split and not has_override:
             skipped_no_match += 1
             continue
 
@@ -273,23 +609,27 @@ def main() -> None:
         start_score = split.get("start_prob") if split else summary_score
 
         if start_score is None or conditional_prob is None:
-            skipped_no_match += 1
-            continue
+            if not has_override:
+                skipped_no_match += 1
+                continue
+        else:
+            start_score = max(0.0, min(1.0, start_score))
+            conditional_prob = max(0.05, min(0.97, float(conditional_prob)))
+            if availability_prob is not None:
+                availability_prob = max(0.0, min(1.0, float(availability_prob)))
 
-        start_score = max(0.0, min(1.0, start_score))
-        conditional_prob = max(0.05, min(0.97, float(conditional_prob)))
-        if availability_prob is not None:
-            availability_prob = max(0.0, min(1.0, float(availability_prob)))
+            player["start_prob"] = round(start_score, 4)
+            player["start_security"] = round(start_score, 4)
+            player["start_probability_pct"] = as_int_pct(start_score)
+            player["start_status"] = classify_start_status(conditional_prob, availability_prob)
+            player["start_prob_source"] = SOURCE_TAG
+            player["conditional_start_prob"] = round(conditional_prob, 4)
+            player["availability_prob"] = round(availability_prob, 4) if availability_prob is not None else None
+            player["availability_risk"] = split.get("availability_risk") if split else classify_availability_risk(availability_prob, conditional_prob)
+            player["availability_status"] = split.get("availability_status") if split else classify_availability_risk(availability_prob, conditional_prob)
 
-        player["start_prob"] = round(start_score, 4)
-        player["start_security"] = round(start_score, 4)
-        player["start_probability_pct"] = as_int_pct(start_score)
-        player["start_status"] = classify_start_status(conditional_prob, availability_prob)
-        player["start_prob_source"] = SOURCE_TAG
-        player["conditional_start_prob"] = round(conditional_prob, 4)
-        player["availability_prob"] = round(availability_prob, 4) if availability_prob is not None else None
-        player["availability_risk"] = split.get("availability_risk") if split else classify_availability_risk(availability_prob, conditional_prob)
-        player["availability_status"] = split.get("availability_status") if split else classify_availability_risk(availability_prob, conditional_prob)
+        if has_override and override:
+            apply_start_context_override(player, override)
 
         if row:
             player["transfermarkt_competitive_rows"] = as_float(row.get("tm_competition_rows"))
@@ -312,16 +652,23 @@ def main() -> None:
                 "player_name": txt(player.get("player_name")),
                 "team_id": canonical_team(player.get("team_id")),
                 "old_start_prob_source": old_source,
-                "new_start_prob_source": SOURCE_TAG,
+                "new_start_prob_source": player.get("start_prob_source"),
                 "old_start_prob": old_prob,
                 "new_start_prob": player.get("start_prob"),
                 "conditional_start_prob": player.get("conditional_start_prob"),
                 "availability_prob": player.get("availability_prob"),
                 "availability_risk": player.get("availability_risk"),
+                "appearance_prob": player.get("appearance_prob"),
+                "round_specific_rotation_risk": player.get("round_specific_rotation_risk"),
+                "start_signal_context_note": player.get("start_signal_context_note"),
                 "tm_competition_rows": row.get("tm_competition_rows") if row else "",
                 "tm_competition_starts": row.get("tm_competition_starts") if row else "",
             }
         )
+
+    gk_audit_rows = normalize_goalkeeper_hierarchy(players)
+    after_gk_metrics = gk_team_metrics(players)
+    write_gk_audit(gk_audit_rows, before_gk_metrics, after_gk_metrics)
 
     with PLAYER_POOL_PATH.open("w", encoding="utf-8") as f:
         json.dump(players, f, ensure_ascii=False, indent=2)
@@ -335,6 +682,9 @@ def main() -> None:
             "conditional_start_prob",
             "availability_prob",
             "availability_risk",
+            "appearance_prob",
+            "round_specific_rotation_risk",
+            "start_signal_context_note",
             "old_start_prob_source",
             "new_start_prob_source",
         ]
@@ -347,10 +697,19 @@ def main() -> None:
     print(f"TM summary rows: {len(tm_rows)}")
     print(f"TM classified match rows: {len(match_rows)}")
     print(f"Availability splits: {len(availability_splits)}")
+    print(f"Context overrides: {len(start_context_overrides)}")
     print(f"Opdaterede spillere: {len(applied)}")
     print(f"Ingen sikkert match: {skipped_no_match}")
+    print(f"GK teams sum > 1.10 before: {int(before_gk_metrics['teams_sum_gt_1_10'])}")
+    print(f"GK teams sum > 1.10 after: {int(after_gk_metrics['teams_sum_gt_1_10'])}")
+    print(f"GK teams with >=2 keepers >=0.60 before: {int(before_gk_metrics['teams_multi_gk_ge_0_60'])}")
+    print(f"GK teams with >=2 keepers >=0.60 after: {int(after_gk_metrics['teams_multi_gk_ge_0_60'])}")
+    print(f"Max GK team start_prob sum before: {before_gk_metrics['max_team_sum']:.4f}")
+    print(f"Max GK team start_prob sum after: {after_gk_metrics['max_team_sum']:.4f}")
     print(f"Backup: {BACKUP_PATH.relative_to(ROOT)}")
     print(f"Availability split report: {OUT_SPLIT_REPORT.relative_to(ROOT)}")
+    print(f"GK hierarchy audit: {GK_AUDIT_CSV.relative_to(ROOT)}")
+    print(f"GK hierarchy report: {GK_AUDIT_MD.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

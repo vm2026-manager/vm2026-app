@@ -1,0 +1,1245 @@
+﻿player_id,player_name,team,position,price,has_valid_team,has_fixture,has_round_context,has_optimizer_ev,has_fixture_ev,has_round_ev,suspected_root_cause
+vinicius_j_nior__bra,Vinicius Junior,BRA,FWD,7500000,yes,yes,yes,yes,yes,yes,ok
+ra_l_jim_nez__mex,Raul Jimenez,MEX,FWD,4500000,yes,yes,yes,yes,yes,yes,ok
+cristiano_ronaldo__por,Cristiano Ronaldo,POR,FWD,7000000,yes,yes,yes,yes,yes,yes,ok
+lautaro_mart_nez__arg,Lautaro Martinez,ARG,FWD,8000000,yes,yes,yes,yes,yes,yes,ok
+christoph_baumgartner__aut,Christoph Baumgartner,AUT,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+jonathan_david__can,Jonathan David,CAN,FWD,4500000,yes,yes,yes,yes,yes,yes,ok
+cody_gakpo__ned,Cody Gakpo,NED,FWD,6500000,yes,yes,yes,yes,yes,yes,ok
+kylian_mbapp__fra,Kylian Mbappe,FRA,FWD,10000000,yes,yes,yes,yes,yes,yes,ok
+ousmane_demb_l__fra,Ousmane Dembele,FRA,FWD,5500000,yes,yes,yes,yes,yes,yes,ok
+mike_maignan__fra,Mike Maignan,FRA,GK,5000000,yes,yes,yes,yes,yes,yes,ok
+lionel_messi__arg,Lionel Messi,ARG,FWD,8000000,yes,yes,yes,yes,yes,yes,ok
+brahim_d_az__mar,Brahim Diaz,MAR,FWD,4500000,yes,yes,yes,yes,yes,yes,ok
+lamine_yamal__esp,Lamine Yamal,ESP,FWD,9000000,yes,yes,yes,yes,yes,yes,ok
+jeremy_doku__bel,Jeremy Doku,BEL,FWD,6500000,yes,yes,yes,yes,yes,yes,ok
+mikel_oyarzabal__esp,Mikel Oyarzabal,ESP,FWD,7500000,yes,yes,yes,yes,yes,yes,ok
+roberto_alvarado__mex,Roberto Alvarado,MEX,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+patrick_agyemang__usa,Patrick Agyemang,USA,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+leandro_trossard__bel,Leandro Trossard,BEL,FWD,5500000,yes,yes,yes,yes,yes,yes,ok
+kerem_akt_rko_lu__tur,Kerem Akturkoglu,TUR,MID,4500000,yes,yes,yes,yes,yes,yes,ok
+nuno_mendes__por,Nuno Mendes,POR,DEF,4500000,yes,yes,yes,yes,yes,yes,ok
+andreas_schjelderup__nor,Andreas Schjelderup,NOR,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+breel_embolo__sui,Breel Embolo,SUI,FWD,5000000,yes,yes,yes,yes,yes,yes,ok
+rafael_le_o__por,Rafael Leão,POR,FWD,5500000,yes,yes,yes,yes,yes,yes,ok
+malik_tillman__usa,Malik Tillman,USA,MID,4000000,yes,yes,yes,yes,yes,yes,ok
+casemiro__bra,Casemiro,BRA,MID,4500000,yes,yes,yes,yes,yes,yes,ok
+pedro_neto__por,Pedro Neto,POR,FWD,5000000,yes,yes,yes,yes,yes,yes,ok
+bruno_fernandes__por,Bruno Fernandes,POR,MID,7000000,yes,yes,yes,yes,yes,yes,ok
+mohamed_salah__egy,Mohamed Salah,EGY,FWD,5000000,yes,yes,yes,yes,yes,yes,ok
+nico_williams__esp,Nico Williams,ESP,FWD,4500000,yes,yes,yes,yes,yes,yes,ok
+andrej_kramari__cro,Andrej Kramaric,CRO,FWD,5500000,yes,yes,yes,yes,yes,yes,ok
+joshua_kimmich__ger,Joshua Kimmich,GER,MID,5000000,yes,yes,yes,yes,yes,yes,ok
+sadio_man__sen,Sadio Mane,SEN,FWD,5000000,yes,yes,yes,yes,yes,yes,ok
+matheus_cunha__bra,Matheus Cunha,BRA,FWD,4500000,yes,yes,yes,yes,yes,yes,ok
+alexis_vega__mex,Alexis Vega,MEX,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+oscar_bobb__nor,Oscar Bobb,NOR,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+diogo_costa__por,Diogo Costa,POR,GK,5000000,yes,yes,yes,yes,yes,yes,ok
+remo_freuler__sui,Remo Freuler,SUI,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+tijjani_reijnders__ned,Tijjani Reijnders,NED,MID,6000000,yes,yes,yes,yes,yes,yes,ok
+harry_kane__eng,Harry Kane,ENG,FWD,9500000,yes,yes,yes,yes,yes,yes,ok
+florian_wirtz__ger,Florian Wirtz,GER,MID,7500000,yes,yes,yes,yes,yes,yes,ok
+ayoub_el_kaabi__mar,Ayoub El Kaabi,MAR,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+marcel_sabitzer__aut,Marcel Sabitzer,AUT,MID,4500000,yes,yes,yes,yes,yes,yes,ok
+c_sar_montes__mex,Cesar Montes,MEX,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+juli_n_lvarez__arg,Julian Alvarez,ARG,FWD,6000000,yes,yes,yes,yes,yes,yes,ok
+alexis_mac_allister__arg,Alexis Mac Allister,ARG,MID,4500000,yes,yes,yes,yes,yes,yes,ok
+martin_baturina__cro,Martin Baturina,CRO,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+bart_verbruggen__ned,Bart Verbruggen,NED,GK,4500000,yes,yes,yes,yes,yes,yes,ok
+marcus_thuram__fra,Marcus Thuram,FRA,FWD,5000000,yes,yes,yes,yes,yes,yes,ok
+omar_marmoush__egy,Omar Marmoush,EGY,FWD,5000000,yes,yes,yes,yes,yes,yes,ok
+marko_arnautovi__aut,Marko Arnautovic,AUT,FWD,4500000,yes,yes,yes,yes,yes,yes,ok
+bernardo_silva__por,Bernardo Silva,POR,MID,5500000,yes,yes,yes,yes,yes,yes,ok
+vitinha__por,Vitinha,POR,MID,5500000,yes,yes,yes,yes,yes,yes,ok
+michael_olise__fra,Michael Olise,FRA,FWD,7000000,yes,yes,yes,yes,yes,yes,ok
+arda_g_ler__tur,Arda Güler,TUR,MID,4500000,yes,yes,yes,yes,yes,yes,ok
+scott_mctominay__sco,Scott McTominay,SCO,MID,4500000,yes,yes,yes,yes,yes,yes,ok
+chris_richards__usa,Chris Richards,USA,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+jamal_musiala__ger,Jamal Musiala,GER,MID,6500000,yes,yes,yes,yes,yes,yes,ok
+francisco_concei_o__por,Francisco Conceicao,POR,FWD,5500000,yes,yes,yes,yes,yes,yes,ok
+gregor_kobel__sui,Gregor Kobel,SUI,GK,4000000,yes,yes,yes,yes,yes,yes,ok
+john_yeboah__ecu,John Yeboah,ECU,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+giovani_lo_celso__arg,Giovani Lo Celso,ARG,MID,4000000,yes,yes,yes,yes,yes,yes,ok
+mart_n_zubimendi__esp,Martin Zubimendi,ESP,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+bukayo_saka__eng,Bukayo Saka,ENG,FWD,6500000,yes,yes,yes,yes,yes,yes,ok
+timothy_castagne__bel,Timothy Castagne,BEL,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+lee_kang_in__kor,Kang-In Lee,KOR,MID,5000000,yes,yes,yes,yes,yes,yes,ok
+tajon_buchanan__can,Tajon Buchanan,CAN,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+pedri__esp,Pedri,ESP,MID,6000000,yes,yes,yes,yes,yes,yes,ok
+marcus_rashford__eng,Marcus Rashford,ENG,FWD,5500000,yes,yes,yes,yes,yes,yes,ok
+luka_modri__cro,Luka Modric,CRO,MID,4000000,yes,yes,yes,yes,yes,yes,ok
+fabian_rieder__sui,Fabian Rieder,SUI,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+rodrigo_de_paul__arg,Rodrigo de Paul,ARG,MID,4500000,yes,yes,yes,yes,yes,yes,ok
+nick_woltemade__ger,Nick Woltemade,GER,FWD,6000000,yes,yes,yes,yes,yes,yes,ok
+luis_d_az__col,Luis Diaz,COL,FWD,5500000,yes,yes,yes,yes,yes,yes,ok
+james_rodr_guez__col,James Rodriguez,COL,MID,4000000,yes,yes,yes,yes,yes,yes,ok
+jonathan_tah__ger,Jonathan Tah,GER,DEF,4500000,yes,yes,yes,yes,yes,yes,ok
+kevin_de_bruyne__bel,Kevin De Bruyne,BEL,MID,7000000,yes,yes,yes,yes,yes,yes,ok
+adrien_rabiot__fra,Adrien Rabiot,FRA,MID,4000000,yes,yes,yes,yes,yes,yes,ok
+youri_tielemans__bel,Youri Tielemans,BEL,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+morgan_rogers__eng,Morgan Rogers,ENG,MID,5500000,yes,yes,yes,yes,yes,yes,ok
+matt_freese__usa,Matt Freese,USA,GK,3500000,yes,yes,yes,yes,yes,yes,ok
+granit_xhaka__sui,Granit Xhaka,SUI,MID,4000000,yes,yes,yes,yes,yes,yes,ok
+amar_memi__bih,Amar Memic,BIH,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+zeno_debast__bel,Zeno Debast,BEL,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+ollie_watkins__eng,Ollie Watkins,ENG,FWD,4000000,yes,yes,yes,yes,yes,yes,ok
+abde_ezzalzouli__mar,Abde Ezzalzouli,MAR,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+federico_vi_as__uru,Federico Vinas,URU,FWD,4000000,yes,yes,yes,yes,yes,yes,ok
+ritsu_doan__jpn,Ritsu Doan,JPN,MID,4000000,yes,yes,yes,yes,yes,yes,ok
+gabriel_martinelli__bra,Gabriel Martinelli,BRA,FWD,4000000,yes,yes,yes,yes,yes,yes,ok
+jo_ko_gvardiol__cro,Josko Gvardiol,CRO,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+romano_schmid__aut,Romano Schmid,AUT,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+r_ben_dias__por,Ruben Dias,POR,DEF,4000000,yes,yes,yes,yes,yes,yes,ok
+enner_valencia__ecu,Enner Valencia,ECU,FWD,4000000,yes,yes,yes,yes,yes,yes,ok
+nicolas_jackson__sen,Nicolas Jackson,SEN,FWD,4500000,yes,yes,yes,yes,yes,yes,ok
+juan_manuel_sanabria__uru,Juan Manuel Sanabria,URU,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+manu_kon__fra,Manu Koné,FRA,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+konrad_laimer__aut,Konrad Laimer,AUT,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+aur_lien_tchouam_ni__fra,Aurelien Tchouameni,FRA,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+son_heung_min__kor,Heung-Min Son,KOR,FWD,6000000,yes,yes,yes,yes,yes,yes,ok
+declan_rice__eng,Declan Rice,ENG,MID,4500000,yes,yes,yes,yes,yes,yes,ok
+gon_alo_ramos__por,Goncalo Ramos,POR,FWD,5000000,yes,yes,yes,yes,yes,yes,ok
+sebastian_berhalter__usa,Sebastian Berhalter,USA,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+ismael_saibari__mar,Ismael Saibari,MAR,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+iliman_ndiaye__sen,Iliman Ndiaye,SEN,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+jo_o_f_lix__por,João Felix,POR,FWD,4500000,yes,yes,yes,yes,yes,yes,ok
+hern_n_gal_ndez__ecu,Hernan Galindez,ECU,GK,3500000,yes,yes,yes,yes,yes,yes,ok
+ferr_n_torres__esp,Ferran Torres,ESP,FWD,5000000,yes,yes,yes,yes,yes,yes,ok
+william_saliba__fra,William Saliba,FRA,DEF,4500000,yes,yes,yes,yes,yes,yes,ok
+johan_v_squez__mex,Johan Vasquez,MEX,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+marc_cucurella__esp,Marc Cucurella,ESP,DEF,4500000,yes,yes,yes,yes,yes,yes,ok
+stefan_posch__aut,Stefan Posch,AUT,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+mikel_merino__esp,Mikel Merino,ESP,MID,4500000,yes,yes,yes,yes,yes,yes,ok
+ryan_gravenberch__ned,Ryan Gravenberch,NED,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+thiago_almada__arg,Thiago Almada,ARG,MID,5500000,yes,yes,yes,yes,yes,yes,ok
+charles_de_ketelaere__bel,Charles De Ketelaere,BEL,FWD,6000000,yes,yes,yes,yes,yes,yes,ok
+enzo_fern_ndez__arg,Enzo Fernandez,ARG,MID,5000000,yes,yes,yes,yes,yes,yes,ok
+ibrahim_maza__alg,Ibrahim Maza,ALG,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+mario_pa_ali__cro,Mario Pasalic,CRO,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+dan_ndoye__sui,Dan Ndoye,SUI,FWD,4000000,yes,yes,yes,yes,yes,yes,ok
+francisco_trinc_o__por,Francisco Trincao,POR,FWD,4000000,yes,yes,yes,yes,yes,yes,ok
+leon_goretzka__ger,Leon Goretzka,GER,MID,4500000,yes,yes,yes,yes,yes,yes,ok
+tani_oluwaseyi__can,Tani Oluwaseyi,CAN,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+leroy_san__ger,Leroy Sane,GER,FWD,5500000,yes,yes,yes,yes,yes,yes,ok
+kai_havertz__ger,Kai Havertz,GER,FWD,5500000,yes,yes,yes,yes,yes,yes,ok
+billy_gilmour__sco,Billy Gilmour,SCO,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+dani_olmo__esp,Dani Olmo,ESP,MID,5000000,yes,yes,yes,yes,yes,yes,ok
+jude_bellingham__eng,Jude Bellingham,ENG,MID,6000000,yes,yes,yes,yes,yes,yes,ok
+max_arfsten__usa,Max Arfsten,USA,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+ayase_ueda__jpn,Ayase Ueda,JPN,FWD,5500000,yes,yes,yes,yes,yes,yes,ok
+noussair_mazraoui__mar,Noussair Mazraoui,MAR,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+anthony_gordon__eng,Anthony Gordon,ENG,FWD,4000000,yes,yes,yes,yes,yes,yes,ok
+arthur_theate__bel,Arthur Theate,BEL,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+mohamed_amoura__alg,Mohamed Amoura,ALG,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+deniz_undav__ger,Deniz Undav,GER,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+gonzalo_plata__ecu,Gonzalo Plata,ECU,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+lyle_foster__rsa,Lyle Foster,RSA,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+nayef_aguerd__mar,Nayef Aguerd,MAR,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+dominik_livakovi__cro,Dominik Livakovic,CRO,GK,4000000,yes,yes,yes,yes,yes,yes,ok
+neil_el_aynaoui__mar,Neil El Aynaoui,MAR,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+willian_pacho__ecu,Willian Pacho,ECU,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+leandro_paredes__arg,Leandro Paredes,ARG,MID,4000000,yes,yes,yes,yes,yes,yes,ok
+josip_utalo__cro,Josip Sutalo,CRO,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+noni_madueke__eng,Noni Madueke,ENG,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+denzel_dumfries__ned,Denzel Dumfries,NED,DEF,5000000,yes,yes,yes,yes,yes,yes,ok
+philipp_lienhart__aut,Philipp Lienhart,AUT,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+elliot_anderson__eng,Elliot Anderson,ENG,MID,4000000,yes,yes,yes,yes,yes,yes,ok
+ismael_d_az__pan,Ismael Diaz,PAN,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+tyler_adams__usa,Tyler Adams,USA,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+r_ben_neves__por,Ruben Neves,POR,MID,4000000,yes,yes,yes,yes,yes,yes,ok
+alex_freeman__usa,Alex Freeman,USA,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+nicolas_seiwald__aut,Nicolas Seiwald,AUT,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+firas_al_buraikan__ksa,Firas Al-Buraikan,KSA,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+tim_ream__usa,Tim Ream,USA,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+nathan_saliba__can,Nathan Saliba,CAN,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+riyad_mahrez__alg,Riyad Mahrez,ALG,FWD,4000000,yes,yes,yes,yes,yes,yes,ok
+virgil_van_dijk__ned,Virgil van Dijk,NED,DEF,5000000,yes,yes,yes,yes,yes,yes,ok
+ruben_vargas__sui,Ruben Vargas,SUI,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+amadou_onana__bel,Amadou Onana,BEL,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+giuliano_simeone__arg,Giuliano Simeone,ARG,FWD,4000000,yes,yes,yes,yes,yes,yes,ok
+ricardo_rodr_guez__sui,Ricardo Rodriguez,SUI,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+luiz_henrique__bra,Luiz Henrique,BRA,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+benjamin_nygren__swe,Benjamin Nygren,SWE,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+dodi_lukebakio__bel,Dodi Lukebakio,BEL,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+jhon_lucum__col,Jhon Lucumi,COL,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+donyell_malen__ned,Donyell Malen,NED,FWD,4500000,yes,yes,yes,yes,yes,yes,ok
+jordan_henderson__eng,Jordan Henderson,ENG,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+rayan_cherki__fra,Rayan Cherki,FRA,FWD,4000000,yes,yes,yes,yes,yes,yes,ok
+brian_rodr_guez__uru,Brian Rodriguez,URU,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+alex_baena__esp,Alex Baena,ESP,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+junya_ito__jpn,Junya Ito,JPN,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+jefferson_lerma__col,Jefferson Lerma,COL,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+michael_gregoritsch__aut,Michael Gregoritsch,AUT,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+manuel_akanji__sui,Manuel Akanji,SUI,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+ante_budimir__cro,Ante Budimir,CRO,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+petar_sucic__cro,Petar Sucic,CRO,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+erling_haaland__nor,Erling Haaland,NOR,FWD,8500000,yes,yes,yes,yes,yes,yes,ok
+mathieu_choiniere__can,Mathieu Choiniere,CAN,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+aleksandar_pavlovic__ger,Aleksandar Pavlovic,GER,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+john_mcginn__sco,John McGinn,SCO,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+joel_ord_ez__ecu,Joel Ordonez,ECU,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+d_sir_dou__fra,Desire Doue,FRA,FWD,4000000,yes,yes,yes,yes,yes,yes,ok
+idrissa_gana_gueye__sen,Idrissa Gana Gueye,SEN,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+juli_n_qui_ones__mex,Julian Quinones,MEX,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+edouard_mendy__sen,Edouard Mendy,SEN,GK,3500000,yes,yes,yes,yes,yes,yes,ok
+richard_r_os__col,Richard Rios,COL,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+n_golo_kant__fra,N'Golo Kante,FRA,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+miguel_almir_n__par,Miguel Almiron,PAR,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+elias_achouri__tun,Elias Achouri,TUN,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+antonio_sanabria__par,Antonio Sanabria,PAR,FWD,4000000,yes,yes,yes,yes,yes,yes,ok
+ibrahima_konat__fra,Ibrahima Konate,FRA,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+koki_ogawa__jpn,Koki Ogawa,JPN,FWD,4000000,yes,yes,yes,yes,yes,yes,ok
+yasin_ayari__swe,Yasin Ayari,SWE,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+nikola_vla_i__cro,Nikola Vlasic,CRO,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+david_m_ller_wolfe__nor,David Møller Wolfe,NOR,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+anthony_elanga__swe,Anthony Elanga,SWE,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+brian_brobbey__ned,Brian Brobbey,NED,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+alan_minda__ecu,Alan Minda,ECU,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+oh_hyeon_gyu__kor,Hyeon-Gyu Oh,KOR,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+facundo_torres__uru,Facundo Torres,URU,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+kenny_mclean__sco,Kenny McLean,SCO,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+haris_tabakovic__bih,Haris Tabakovic,BIH,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+oswin_appollis__rsa,Oswin Appollis,RSA,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+mehdi_taremi__irn,Mehdi Taremi,IRN,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+ibrahim_mbaye__sen,Ibrahim Mbaye,SEN,MID,4000000,yes,yes,yes,yes,yes,yes,ok
+lyndon_dykes__sco,Lyndon Dykes,SCO,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+jhon_c_rdoba__col,Jhon Cordoba,COL,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+bilal_el_khannouss__mar,Bilal El Khannouss,MAR,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+warren_za_re_emery__fra,Warren Zaire-Emery,FRA,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+frantzdy_pierrot__hai,Frantzdy Pierrot,HAI,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+rodrigo_aguirre__uru,Rodrigo Aguirre,URU,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+manuel_ugarte__uru,Manuel Ugarte,URU,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+c_dric_bakambu__cod,Cedric Bakambu,COD,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+jes_s_gallardo__mex,Jesus Gallardo,MEX,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+orbel_n_pineda__mex,Orbelin Pineda,MEX,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+antonio_nusa__nor,Antonio Nusa,NOR,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+anthony_ralston__sco,Anthony Ralston,SCO,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+ryan_christie__sco,Ryan Christie,SCO,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+duje_aleta_car__cro,Duje Caleta-Car,CRO,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+alexander_isak__swe,Alexander Isak,SWE,FWD,5000000,yes,yes,yes,yes,yes,yes,ok
+jo_o_neves__por,João Neves,POR,MID,5000000,yes,yes,yes,yes,yes,yes,ok
+teun_koopmeiners__ned,Teun Koopmeiners,NED,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+david_raya__esp,David Raya,ESP,GK,5000000,yes,yes,yes,yes,yes,yes,ok
+takefusa_kubo__jpn,Takefusa Kubo,JPN,MID,4000000,yes,yes,yes,yes,yes,yes,ok
+ali_ahmed__can,Ali Ahmed,CAN,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+lee_jae_sung__kor,Jae-Sung Lee,KOR,MID,4000000,yes,yes,yes,yes,yes,yes,ok
+jos_manuel_l_pez__arg,Jose Manuel Lopez,ARG,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+felix_nmecha__ger,Felix Nmecha,GER,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+youssef_en_nesyri__mar,Youssef En-Nesyri,MAR,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+sander_berge__nor,Sander Berge,NOR,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+maxim_de_cuyper__bel,Maxim De Cuyper,BEL,DEF,4000000,yes,yes,yes,yes,yes,yes,ok
+pedro_vite__ecu,Pedro Vite,ECU,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+isma_l_kon__can,Ismael Kone,CAN,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+daichi_kamada__jpn,Daichi Kamada,JPN,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+alexander_s_rloth__nor,Alexander Sørloth,NOR,FWD,4500000,yes,yes,yes,yes,yes,yes,ok
+kim_min_jae__kor,Min-jae Kim,KOR,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+igor_matanovic__cro,Igor Matanovic,CRO,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+theo_hern_ndez__fra,Theo Hernandez,FRA,DEF,4500000,yes,yes,yes,yes,yes,yes,ok
+kevin_casta_o__col,Kevin Castano,COL,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+agust_n_lvarez__uru,Agustin Alvarez,URU,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+marc_gu_hi__eng,Marc Guehi,ENG,DEF,4500000,yes,yes,yes,yes,yes,yes,ok
+noah_okafor__sui,Noah Okafor,SUI,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+brenden_aaronson__usa,Brenden Aaronson,USA,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+orkun_k_k__tur,Orkun Kökcü,TUR,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+denis_zakaria__sui,Denis Zakaria,SUI,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+kevin_rodr_guez__ecu,Kevin Rodriguez,ECU,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+jhon_arias__col,Jhon Arias,COL,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+jorge_carrascal__col,Jorge Carrascal,COL,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+lucas_digne__fra,Lucas Digne,FRA,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+ismaila_sarr__sen,Ismaila Sarr,SEN,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+azzedine_ounahi__mar,Azzedine Ounahi,MAR,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+armin_gigovic__bih,Armin Gigovic,BIH,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+antonio_r_diger__ger,Antonio Rüdiger,GER,DEF,4500000,yes,yes,yes,yes,yes,yes,ok
+nico_schlotterbeck__ger,Nico Schlotterbeck,GER,DEF,4000000,yes,yes,yes,yes,yes,yes,ok
+mois_s_caicedo__ecu,Moises Caicedo,ECU,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+pedro_porro__esp,Pedro Porro,ESP,DEF,4500000,yes,yes,yes,yes,yes,yes,ok
+moussa_niakhate__sen,Moussa Niakhate,SEN,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+aymeric_laporte__esp,Aymeric Laporte,ESP,DEF,4500000,yes,yes,yes,yes,yes,yes,ok
+teboho_mokoena__rsa,Teboho Mokoena,RSA,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+martin_degaard__nor,Martin Ødegaard,NOR,MID,4500000,yes,yes,yes,yes,yes,yes,ok
+grant_hanley__sco,Grant Hanley,SCO,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+ezri_konsa__eng,Ezri Konsa,ENG,DEF,4500000,yes,yes,yes,yes,yes,yes,ok
+hazem_mastouri__tun,Hazem Mastouri,TUN,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+julio_enciso__par,Julio Enciso,PAR,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+marquinhos__bra,Marquinhos,BRA,DEF,5000000,yes,yes,yes,yes,yes,yes,ok
+benjamin_tahirovic__bih,Benjamin Tahirovic,BIH,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+diogo_dalot__por,Diogo Dalot,POR,DEF,4000000,yes,yes,yes,yes,yes,yes,ok
+jordan_ayew__gha,Jordan Ayew,GHA,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+ivan_ba_i__bih,Ivan Basic,BIH,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+amirhossein_hosseinzadeh__irn,Amirhossein Hosseinzadeh,IRN,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+diego_g_mez__par,Diego Gomez,PAR,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+hannibal_mejbri__tun,Hannibal Mejbri,TUN,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+cristian_romero__arg,Cristian Romero,ARG,DEF,4000000,yes,yes,yes,yes,yes,yes,ok
+silvan_widmer__sui,Silvan Widmer,SUI,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+i_smail_y_ksek__tur,Ismail Yüksek,TUR,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+gabriel_magalh_es__bra,Gabriel Magalhaes,BRA,DEF,4500000,yes,yes,yes,yes,yes,yes,ok
+eldor_shomurodov__uzb,Eldor Shomurodov,UZB,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+ken_sema__swe,Ken Sema,SWE,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+keito_nakamura__jpn,Keito Nakamura,JPN,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+ivan_peri_i__cro,Ivan Perisic,CRO,FWD,4500000,yes,yes,yes,yes,yes,yes,ok
+gonzalo_montiel__arg,Gonzalo Montiel,ARG,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+che_adams__sco,Che Adams,SCO,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+nicol_s_otamendi__arg,Nicolas Otamendi,ARG,DEF,4500000,yes,yes,yes,yes,yes,yes,ok
+achraf_hakimi__mar,Achraf Hakimi,MAR,DEF,4000000,yes,yes,yes,yes,yes,yes,ok
+quinten_timber__ned,Quinten Timber,NED,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+patrick_pentz__aut,Patrick Pentz,AUT,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+nicol_s_tagliafico__arg,Nicolas Tagliafico,ARG,DEF,4000000,yes,yes,yes,yes,yes,yes,ok
+raphinha__bra,Raphinha,BRA,FWD,6500000,yes,yes,yes,yes,yes,yes,ok
+patrick_berg__nor,Patrick Berg,NOR,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+kendry_p_ez__ecu,Kendry Paez,ECU,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+duckens_nazon__hai,Duckens Nazon,HAI,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+dayot_upamecano__fra,Dayot Upamecano,FRA,DEF,4000000,yes,yes,yes,yes,yes,yes,ok
+mohamed_hany__egy,Mohamed Hany,EGY,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+gon_alo_in_cio__por,Goncalo Inacio,POR,DEF,4000000,yes,yes,yes,yes,yes,yes,ok
+mohammad_mohebi__irn,Mohammad Mohebi,IRN,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+leonardo_balerdi__arg,Leonardo Balerdi,ARG,DEF,4000000,yes,yes,yes,yes,yes,yes,ok
+nahuel_molina__arg,Nahuel Molina,ARG,DEF,4000000,yes,yes,yes,yes,yes,yes,ok
+darwin_nunez__uru,Darwin Nunez,URU,FWD,6000000,yes,yes,yes,yes,yes,yes,ok
+viktor_gyokeres__swe,Viktor Gyökeres,SWE,FWD,6000000,yes,yes,yes,yes,yes,yes,ok
+daniel_jebbison__can,Daniel Jebbison,CAN,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+jo_o_cancelo__por,João Cancelo,POR,DEF,5000000,yes,yes,yes,yes,yes,yes,ok
+baghdad_bounedjah__alg,Baghdad Bounedjah,ALG,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+erik_lira__mex,Erik Lira,MEX,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+emam_ashour__egy,Emam Ashour,EGY,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+john_stones__eng,John Stones,ENG,DEF,4000000,yes,yes,yes,yes,yes,yes,ok
+antoine_semenyo__gha,Antoine Semenyo,GHA,FWD,4000000,yes,yes,yes,yes,yes,yes,ok
+amar_dedi__bih,Amar Dedic,BIH,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+jeremie_frimpong__ned,Jeremie Frimpong,NED,DEF,4000000,yes,yes,yes,yes,yes,yes,ok
+michel_aebischer__sui,Michel Aebischer,SUI,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+ali_abdi__tun,Ali Abdi,TUN,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+david_raum__ger,David Raum,GER,DEF,4500000,yes,yes,yes,yes,yes,yes,ok
+eliesse_ben_seghir__mar,Eliesse Ben Seghir,MAR,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+deniz_g_l__tur,Deniz Gül,TUR,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+wout_weghorst__ned,Wout Weghorst,NED,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+malo_gusto__fra,Malo Gusto,FRA,DEF,4000000,yes,yes,yes,yes,yes,yes,ok
+n_lson_semedo__por,Nelson Semedo,POR,DEF,4000000,yes,yes,yes,yes,yes,yes,ok
+mohamed_el_shenawy__egy,Mohamed El-Shennawy,EGY,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+a_ssa_mandi__alg,Aissa Mandi,ALG,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+dami_n_bobadilla__par,Damian Bobadilla,PAR,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+ziyad_al_johani__ksa,Ziyad Al-Johani,KSA,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+yasser_ibrahim__egy,Yasser Ibrahim,EGY,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+hicham_boudaoui__alg,Hicham Boudaoui,ALG,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+kerim_alajbegovi__bih,Kerim Alajbegovic,BIH,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+fares_cha_bi__alg,Fares Chaibi,ALG,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+isak_hien__swe,Isak Hien,SWE,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+ibrahim_adel__egy,Ibrahim Adel,EGY,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+samuel_moutoussamy__cod,Samuel Moutoussamy,COD,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+theo_bongonda__cod,Theo Bongonda,COD,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+renato_veiga__por,Renato Veiga,POR,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+ramy_bensebaini__alg,Ramy Bensebaini,ALG,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+tsuyoshi_watanabe__jpn,Tsuyoshi Watanabe,JPN,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+lamine_camara__sen,Lamine Camara,SEN,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+saman_ghoddos__irn,Saman Ghoddos,IRN,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+thomas_meunier__bel,Thomas Meunier,BEL,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+alexander_prass__aut,Alexander Prass,AUT,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+luca_zidane__alg,Luca Zidane,ALG,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+saeid_ezatolahi__irn,Saeid Ezatolahi,IRN,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+pau_cubars__esp,Pau Cubarsi,ESP,DEF,4000000,yes,yes,yes,yes,yes,yes,ok
+ellyes_skhiri__tun,Ellyes Skhiri,TUN,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+santiago_arias__col,Santiago Arias,COL,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+kristoffer_ajer__nor,Kristoffer Ajer,NOR,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+yukinari_sugawara__jpn,Yukinari Sugawara,JPN,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+der_milit_o__bra,Eder Militão,BRA,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+montassar_talbi__tun,Montassar Talbi,TUN,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+kaishu_sano__jpn,Kaishu Sano,JPN,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+h_lio_varela__cpv,Helio Varela,CPV,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+math_as_olivera__uru,Mathias Olivera,URU,DEF,4000000,yes,yes,yes,yes,yes,yes,ok
+phillipp_mwene__aut,Phillipp Mwene,AUT,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+jos_mar_a_gim_nez__uru,Jose Maria Gimenez,URU,DEF,4500000,yes,yes,yes,yes,yes,yes,ok
+ronald_ara_jo__uru,Ronald Araujo,URU,DEF,4500000,yes,yes,yes,yes,yes,yes,ok
+edin_dzeko__bih,Edin Dzeko,BIH,FWD,4500000,yes,yes,yes,yes,yes,yes,ok
+luis_suarez_charris__col,Luis Suarez Charris,COL,FWD,4500000,yes,yes,yes,yes,yes,yes,ok
+gustavo_puerta__col,Gustavo Puerta,COL,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+davinson_s_nchez__col,Davinson Sanchez,COL,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+johan_mojica__col,Johan Mojica,COL,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+richie_laryea__can,Richie Laryea,CAN,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+tom_s_ara_jo__por,Tomas Araujo,POR,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+dailon_livramento__cpv,Dailon Livramento,CPV,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+daniel_mu_oz__col,Daniel Muñoz,COL,DEF,4000000,yes,yes,yes,yes,yes,yes,ok
+rayan_a_t_nouri__alg,Rayan Ait-Nouri,ALG,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+federico_valverde__uru,Federico Valverde,URU,MID,5500000,yes,yes,yes,yes,yes,yes,ok
+i_aki_williams__gha,Iñaki Williams,GHA,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+sarpreet_singh__nzl,Sarpreet Singh,NZL,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+juan_quintero__col,Juan Quintero,COL,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+mat_as_vi_a__uru,Matias Viña,URU,DEF,4000000,yes,yes,yes,yes,yes,yes,ok
+connor_metcalfe__aus,Connor Metcalfe,AUS,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+lennart_karl__ger,Lennart Karl,GER,MID,5000000,yes,yes,yes,yes,yes,yes,ok
+rodri_hernandez__esp,Rodri Hernandez,ESP,MID,5000000,yes,yes,yes,yes,yes,yes,ok
+nico_paz__arg,Nico Paz,ARG,MID,5000000,yes,yes,yes,yes,yes,yes,ok
+maxi_araujo__uru,Maxi Araujo,URU,MID,5000000,yes,yes,yes,yes,yes,yes,ok
+an_bal_godoy__pan,Anibal Godoy,PAN,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+john_souttar__sco,John Souttar,SCO,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+waldemar_anton__ger,Waldemar Anton,GER,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+meschak_elia__cod,Meschack Elia,COD,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+saud_abdulhamid__ksa,Saud Abdulhamid,KSA,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+el_hadji_malick_diouf__sen,El Hadji Malick Diouf,SEN,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+noa_lang__ned,Noa Lang,NED,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+patrick_wimmer__aut,Patrick Wimmer,AUT,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+aiden_o_neill__aus,Aiden O'Neill,AUS,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+jaminton_campaz__col,Jaminton Campaz,COL,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+j_rgen_strand_larsen__nor,Jørgen Strand Larsen,NOR,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+matheus_nunes__por,Matheus Nunes,POR,MID,4500000,yes,yes,yes,yes,yes,yes,ok
+fabian_ruiz__esp,Fabian Ruiz,ESP,MID,4500000,yes,yes,yes,yes,yes,yes,ok
+carlos_harvey__pan,Carlos Harvey,PAN,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+danley_jean_jacques__hai,Danley Jean Jacques,HAI,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+alexis_saelemaekers__bel,Alexis Saelemaekers,BEL,FWD,4000000,yes,yes,yes,yes,yes,yes,ok
+christian_pulisic__usa,Christian Pulisic,USA,FWD,4000000,yes,yes,yes,yes,yes,yes,ok
+folarin_balogun__usa,Folarin Balogun,USA,FWD,4000000,yes,yes,yes,yes,yes,yes,ok
+igor_thiago__bra,Igor Thiago,BRA,FWD,4000000,yes,yes,yes,yes,yes,yes,ok
+nico_gonzalez__arg,Nico Gonzalez,ARG,FWD,4000000,yes,yes,yes,yes,yes,yes,ok
+memphis_depay__ned,Memphis Depay,NED,FWD,4000000,yes,yes,yes,yes,yes,yes,ok
+emil_holm__swe,Emil Holm,SWE,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+santiago_bueno__uru,Santiago Bueno,URU,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+oliver_baumann__ger,Oliver Baumann,GER,GK,5000000,yes,yes,yes,yes,yes,yes,ok
+nicolas_fonseca__uru,Nicolas Fonseca,URU,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+alireza_jahanbakhsh__irn,Alireza Jahanbakhsh,IRN,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+aymen_dahmen__tun,Aymen Dahmen,TUN,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+gabriel_gudmundsson__swe,Gabriel Gudmundsson,SWE,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+niko_sigur__can,Niko Sigur,CAN,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+dayne_st_clair__can,Dayne St. Clair,CAN,GK,3500000,yes,yes,yes,yes,yes,yes,ok
+cristian_mart_nez__pan,Cristian Martinez,PAN,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+julian_ryerson__nor,Julian Ryerson,NOR,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+kristijan_jaki__cro,Kristijan Jakic,CRO,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+ali_alipour__irn,Ali Alipour,IRN,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+kenan_yildiz__tur,Kenan Yildiz,TUR,MID,4000000,yes,yes,yes,yes,yes,yes,ok
+hakan_calhanoglu__tur,Hakan Calhanoglu,TUR,MID,4000000,yes,yes,yes,yes,yes,yes,ok
+hans_vanaken__bel,Hans Vanaken,BEL,MID,4000000,yes,yes,yes,yes,yes,yes,ok
+josip_stani_i__cro,Josip Stanisic,CRO,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+ram_n_sosa__par,Ramon Sosa,PAR,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+chris_wood__nzl,Chris Wood,NZL,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+jan_paul_van_hecke__ned,Jan Paul van Hecke,NED,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+daniel_svensson__swe,Daniel Svensson,SWE,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+willy_semedo__cpv,Willy Semedo,CPV,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+israel_reyes__mex,Israel Reyes,MEX,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+lucas_hern_ndez__fra,Lucas Hernandez,FRA,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+nestory_irankunda__aus,Nestory Irankunda,AUS,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+piero_hincapi__ecu,Piero Hincapie,ECU,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+nico_elvedi__sui,Nico Elvedi,SUI,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+merih_demiral__tur,Merih Demiral,TUR,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+sofyan_amrabat__mar,Sofyan Amrabat,MAR,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+rafik_belghali__alg,Rafik Belghali,ALG,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+marko_stamenic__nzl,Marko Stamenic,NZL,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+florian_grillitsch__aut,Florian Grillitsch,AUT,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+jesper_karlstr_m__swe,Jesper Karlström,SWE,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+alex_arce__par,Alex Arce,PAR,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+alistair_johnston__can,Alistair Johnston,CAN,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+elisha_owusu__gha,Elisha Owusu,GHA,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+thomas_partey__gha,Thomas Partey,GHA,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+yeremy_pino__esp,Yeremy Pino,ESP,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+marcos_llorente__esp,Marcos Llorente,ESP,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+exequiel_palacios__arg,Exequiel Palacios,ARG,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+franco_mastantuono__arg,Franco Mastantuono,ARG,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+weston_mckennie__usa,Weston McKennie,USA,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+fiston_mayele__cod,Fiston Mayele,COD,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+stefan_de_vrij__ned,Stefan de Vrij,NED,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+ngal_ayel_mukau__cod,Ngal'ayel Mukau,COD,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+livano_comenencia__cuw,Livano Comenencia,CUW,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+seol_young_woo__kor,Young-woo Seol,KOR,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+finn_surman__nzl,Finn Surman,NZL,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+pervis_estupi_n__ecu,Pervis Estupinan,ECU,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+akram_afif__qat,Akram Afif,QAT,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+khuliso_mudau__rsa,Khuliso Mudau,RSA,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+jorge_guti_rrez__pan,Jorge Gutierrez,PAN,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+chancel_mbemba__cod,Chancel Mbemba,COD,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+omid_noorafkan__irn,Omid Noorafkan,IRN,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+fidel_escobar__pan,Fidel Escobar,PAN,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+axel_tuanzebe__cod,Axel Tuanzebe,COD,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+yoane_wissa__cod,Yoane Wissa,COD,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+aymen_hussein__irq,Aymen Hussein,IRQ,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+facundo_pellistri__uru,Facundo Pellistri,URU,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+borja_iglesias__esp,Borja Iglesias,ESP,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+maghnes_akliouche__fra,Maghnes Akliouche,FRA,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+mohamed_zeki_amdouni__sui,Mohamed Zeki Amdouni,SUI,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+jos_luis_rodr_guez_bebanz__uru,Jose Luis Rodriguez Bebanz,URU,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+nikola_moro__cro,Nikola Moro,CRO,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+nawaf_al_aqidi__ksa,Nawaf Al-Aqidi,KSA,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+yuito_suzuki__jpn,Yuito Suzuki,JPN,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+tarik_muharemovic__bih,Tarik Muharemovic,BIH,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+guillermo_varela__uru,Guillermo Varela,URU,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+ibrahim_sulemana__gha,Ibrahim Sulemana,GHA,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+yan_valery__tun,Yan Valery,TUN,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+akmal_mozgovoy__uzb,Akmal Mozgovoy,UZB,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+lawrence_ati_zigi__gha,Lawrence Ati Zigi,GHA,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+jordy_alcivar__ecu,Jordy Alcivar,ECU,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+leverton_pierre__hai,Leverton Pierre,HAI,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+mbekezeli_mbokazi__rsa,Mbekezeli Mbokazi,RSA,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+ben_waine__nzl,Ben Waine,NZL,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+unai_sim_n__esp,Unai Simon,ESP,GK,5000000,yes,yes,yes,yes,yes,yes,ok
+mert_m_ld_r__tur,Mert Müldür,TUR,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+noah_sadiki__cod,Noah Sadiki,COD,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+orlando_mosquera__pan,Orlando Mosquera,PAN,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+keisuke_goto__jpn,Keisuke Goto,JPN,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+adil_boulbina__alg,Adil Boulbina,ALG,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+juninho_bacuna__cuw,Juninho Bacuna,CUW,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+martin_erlic__cro,Martin Erlic,CRO,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+elias_saad__tun,Elias Saad,TUN,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+mohanad_lasheen__egy,Mohanad Lasheen,EGY,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+oussama_targhalline__mar,Oussama Targhalline,MAR,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+esmir_bajraktarevic__bih,Esmir Bajraktarevic,BIH,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+isma_l_bennacer__alg,Ismael Bennacer,ALG,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+amir_al_ammari__irq,Amir Al Ammari,IRQ,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+j_nior_alonso__par,Junior Alonso,PAR,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+ali_jasim__irq,Ali Jasim,IRQ,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+mahmoud_saber__egy,Mahmoud Saber,EGY,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+wataru_endo__jpn,Wataru Endo,JPN,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+otabek_shukurov__uzb,Otabek Shukurov,UZB,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+ngelo_preciado__ecu,Angelo Preciado,ECU,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+ivan_unji__bih,Ivan Sunjic,BIH,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+tshepang_moremi__rsa,Tshepang Moremi,RSA,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+emiliano_mart_nez__arg,Emiliano Martinez,ARG,GK,5000000,yes,yes,yes,yes,yes,yes,ok
+ramiz_zerrouki__alg,Ramiz Zerrouki,ALG,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+ao_tanaka__jpn,Ao Tanaka,JPN,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+shogo_taniguchi__jpn,Shogo Taniguchi,JPN,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+jearl_margaritha__cuw,Jearl Margaritha,CUW,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+mohammed_ghorbani__irn,Mohammad Ghorbani,IRN,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+hwang_hee_chan__kor,Hee-Chan Hwang,KOR,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+samed_ba_dar__bih,Samed Bazdar,BIH,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+kaan_ayhan__tur,Kaan Ayhan,TUR,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+omar_alderete__par,Omar Alderete,PAR,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+jeremy_ar_valo__ecu,Jeremy Arevalo,ECU,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+jordan_pickford__eng,Jordan Pickford,ENG,GK,5000000,yes,yes,yes,yes,yes,yes,ok
+jovane_cabral__cpv,Jovane Cabral,CPV,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+djibril_sow__sui,Djibril Sow,SUI,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+johan_manzambi__sui,Johan Manzambi,SUI,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+toni_fruk__cro,Toni Fruk,CRO,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+pascal_gross__ger,Pascal Gross,GER,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+danilo_dos_santos__bra,Danilo dos Santos,BRA,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+erick_sanchez__mex,Erick Sanchez,MEX,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+elijah_just__nzl,Elijah Just,NZL,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+sphephelo_yaya_sithole__rsa,Sphephelo Yaya Sithole,RSA,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+nicolas_de_la_cruz__uru,Nicolas de la Cruz,URU,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+giovanni_reyna__usa,Giovanni Reyna,USA,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+axel_witsel__bel,Axel Witsel,BEL,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+marwan_ateya__egy,Marwan Ateya,EGY,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+mahmoud_trezeguet__egy,Mahmoud Trezeguet,EGY,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+rani_khedira__tun,Rani Khedira,TUN,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+salem_al_dawsari__ksa,Salem Al-Dawsari,KSA,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+mohamed_kanno__ksa,Mohamed Kanno,KSA,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+liam_millar__can,Liam Millar,CAN,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+jonathan_osorio__can,Jonathan Osorio,CAN,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+mousa_tamari__jor,Mousa Tamari,JOR,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+jean_ricner_bellegarde__hai,Jean-Ricner Bellegarde,HAI,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+abdoulaye_seck__sen,Abdoulaye Seck,SEN,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+pape_matar_sarr__sen,Pape Matar Sarr,SEN,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+gervane_kastaneer__cuw,Gervane Kastaneer,CUW,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+chemsdine_talbi__mar,Chemsdine Talbi,MAR,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+gustavo_g_mez__par,Gustavo Gomez,PAR,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+aziz_g_aniyev__uzb,Aziz Ganiev,UZB,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+alejandro_alex_grimaldo__esp,Alejandro 'Alex' Grimaldo,ESP,DEF,4000000,yes,yes,yes,yes,yes,yes,ok
+nico_o_reilly__eng,Nico O'Reilly,ENG,DEF,4000000,yes,yes,yes,yes,yes,yes,ok
+alphonso_davies__can,Alphonso Davies,CAN,DEF,4000000,yes,yes,yes,yes,yes,yes,ok
+youssef_amyn__irq,Youssef Amyn,IRQ,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+sherzod_nasrullayev__uzb,Sherzod Nasrullaev,UZB,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+rustam_ashurmatov__uzb,Rustam Ashurmatov,UZB,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+aaron_wan_bissaka__cod,Aaron Wan-Bissaka,COD,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+john_mercado__ecu,John Mercado,ECU,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+alexander_n_bel__ger,Alexander Nübel,GER,GK,4500000,yes,yes,yes,yes,yes,yes,ok
+cameron_burgess__aus,Cameron Burgess,AUS,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+brandon_thomas_asante__gha,Brandon Thomas-Asante,GHA,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+dean_henderson__eng,Dean Henderson,ENG,GK,4500000,yes,yes,yes,yes,yes,yes,ok
+joel_waterman__can,Joel Waterman,CAN,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+ger_nimo_rulli__arg,Geronimo Rulli,ARG,GK,4500000,yes,yes,yes,yes,yes,yes,ok
+himad_abdelli__alg,Himad Abdelli,ALG,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+alex_sandro__bra,Alex Sandro,BRA,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+path_ciss__sen,Pathe Ciss,SEN,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+abdulelah_al_amri__ksa,Abdulelah Al-Amri,KSA,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+jorrel_hato__ned,Jorrel Hato,NED,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+andr_s_cubas__par,Andres Cubas,PAR,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+rjan_nyland__nor,Ørjan Nyland,NOR,GK,4000000,yes,yes,yes,yes,yes,yes,ok
+douglas_santos__bra,Douglas Santos,BRA,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+jos_s__por,Jose Sa,POR,GK,4500000,yes,yes,yes,yes,yes,yes,ok
+kalidou_koulibaly__sen,Kalidou Koulibaly,SEN,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+wilson_isidor__hai,Wilson Isidor,HAI,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+don_deedson_louicius__hai,Don Deedson Louicius,HAI,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+ryan_mendes_da_graca__cpv,Ryan Mendes Da Graça,CPV,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+cyle_christopher_larin__can,Cyle Christopher Larin,CAN,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+ahmed_alaaeldin_abdelmotaal__qat,Ahmed Alaaeldin Abdelmotaal,QAT,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+almoez_ali__qat,Almoez Ali,QAT,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+pape_cherif_ndiaye__sen,Pape Cherif Ndiaye,SEN,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+jose_fajardo__pan,Jose Fajardo,PAN,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+mohanad_ali__irq,Mohanad Ali,IRQ,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+ermedin_demirovic__bih,Ermedin Demirovic,BIH,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+timothy_weah__usa,Timothy Weah,USA,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+thapelo_morena__rsa,Thapelo Morena,RSA,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+german_berterame__mex,German Berterame,MEX,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+kamaldeen_sulemana__gha,Kamaldeen Sulemana,GHA,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+rayan__bra,Rayan,BRA,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+mohamed_toure__aus,Mohamed Toure,AUS,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+amine_gouiri__alg,Amine Gouiri,ALG,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+marco_pasalic__cro,Marco Pasalic,CRO,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+baris_alper_yilmaz__tur,Baris Alper Yilmaz,TUR,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+christian_fassnacht__sui,Christian Fassnacht,SUI,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+ferdi_kadioglu__tur,Ferdi Kadioglu,TUR,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+wesley_franca__bra,Wesley Franca,BRA,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+reece_james__eng,Reece James,ENG,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+dan_burn__eng,Dan Burn,ENG,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+ibrahim_sa_deh__jor,Ibrahim Saadeh,JOR,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+ederson_moraes__bra,Ederson Moraes,BRA,GK,5000000,yes,yes,yes,yes,yes,yes,ok
+alisson_becker__bra,Alisson Becker,BRA,GK,5000000,yes,yes,yes,yes,yes,yes,ok
+nikola_kati__bih,Nikola Katic,BIH,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+o_uz_ayd_n__tur,Oguz Aydin,TUR,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+kosta_barbarouses__nzl,Kosta Barbarouses,NZL,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+anis_hadj_moussa__alg,Anis Hadj Moussa,ALG,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+daizen_maeda__jpn,Daizen Maeda,JPN,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+derek_cornelius__can,Derek Cornelius,CAN,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+ronwen_williams__rsa,Ronwen Williams,RSA,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+isma_l_gharbi__tun,Ismael Gharbi,TUN,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+morten_thorsby__nor,Morten Thorsby,NOR,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+zion_suzuki__jpn,Zion Suzuki,JPN,GK,4000000,yes,yes,yes,yes,yes,yes,ok
+gideon_mensah__gha,Gideon Mensah,GHA,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+joaqu_n_piquerez__uru,Joaquin Piquerez,URU,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+jamiro_monteiro__cpv,Jamiro Monteiro,CPV,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+camilo_vargas__col,Camilo Vargas,COL,GK,4000000,yes,yes,yes,yes,yes,yes,ok
+kenji_gorr__cuw,Kenji Gorre,CUW,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+thibaut_courtois__bel,Thibaut Courtois,BEL,GK,4500000,yes,yes,yes,yes,yes,yes,ok
+brice_samba__fra,Brice Samba,FRA,GK,4500000,yes,yes,yes,yes,yes,yes,ok
+aubrey_modiba__rsa,Aubrey Modiba,RSA,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+abdul_fatawu_issahaku__gha,Issahaku Abdul Fatawu,GHA,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+nathanael_mbuku__cod,Nathanael Mbuku,COD,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+mohammed_muntari__qat,Mohammed Muntari,QAT,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+firas_chaouat__tun,Firas Chaouat,TUN,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+ronaldo_mart_nez__par,Ronaldo Martinez,PAR,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+evidence_makgopa__rsa,Evidence Makgopa,RSA,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+aurele_amenda__sui,Aurele Amenda,SUI,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+miro_muheim__sui,Miro Muheim,SUI,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+shoja_khalilzadeh__irn,Shojae Khalilzadeh,IRN,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+relebohile_mofokeng__rsa,Relebohile Mofokeng,RSA,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+kamal_miller__can,Kamal Miller,CAN,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+leandro_bacuna__cuw,Leandro Bacuna,CUW,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+ngel_romero__par,Angel Romero,PAR,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+luka_su_i__cro,Luka Sucic,CRO,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+laros_duarte__cpv,Laros Duarte,CPV,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+gustaf_lagerbielke__swe,Gustaf Lagerbielke,SWE,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+maximilian_w_ber__aut,Maximilian Wöber,AUT,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+deroy_duarte__cpv,Deroy Duarte,CPV,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+orlando_gill__par,Orlando Gill,PAR,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+zeki_elik__tur,Zeki Celik,TUR,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+alexander_djiku__gha,Alexander Djiku,GHA,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+ibrahim_bayesh__irq,Ibrahim Bayesh,IRQ,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+viktor_johansson__swe,Viktor Johansson,SWE,GK,3500000,yes,yes,yes,yes,yes,yes,ok
+ibrahim_sabra__jor,Ibrahim Sabra,JOR,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+anass_salah_eddine__mar,Anass Salah-Eddine,MAR,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+senne_lammens__bel,Senne Lammens,BEL,GK,4000000,yes,yes,yes,yes,yes,yes,ok
+alvaro_montero__col,Alvaro Montero,COL,GK,4000000,yes,yes,yes,yes,yes,yes,ok
+sergio_rochet__uru,Sergio Rochet,URU,GK,4000000,yes,yes,yes,yes,yes,yes,ok
+fernando_muslera__uru,Fernando Muslera,URU,GK,4000000,yes,yes,yes,yes,yes,yes,ok
+raul_rangel__mex,Raul Rangel,MEX,GK,4000000,yes,yes,yes,yes,yes,yes,ok
+james_trafford__eng,James Trafford,ENG,GK,4000000,yes,yes,yes,yes,yes,yes,ok
+walter_benitez__arg,Walter Benitez,ARG,GK,4000000,yes,yes,yes,yes,yes,yes,ok
+kristoffer_nordfeldt__swe,Kristoffer Nordfeldt,SWE,GK,4000000,yes,yes,yes,yes,yes,yes,ok
+ugurcan_cakir__tur,Ugurcan Cakir,TUR,GK,4000000,yes,yes,yes,yes,yes,yes,ok
+ricardo_velho__por,Ricardo Velho,POR,GK,4000000,yes,yes,yes,yes,yes,yes,ok
+rui_silva__por,Rui Silva,POR,GK,4000000,yes,yes,yes,yes,yes,yes,ok
+abdulkerim_bardakci__tur,Abdulkerim Bardakci,TUR,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+david_alaba__aut,David Alaba,AUT,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+malick_thiaw__ger,Malick Thiaw,GER,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+julio_soler__arg,Julio Soler,ARG,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+jordan_bos__aus,Jordan Bos,AUS,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+bremer__bra,Bremer,BRA,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+leo_pereira__bra,Leo Pereira,BRA,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+valentino_livramento__eng,Valentino Livramento,ENG,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+caleb_yirenkyi__gha,Caleb Yirenkyi,GHA,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+juan_jose_caceres__par,Juan Jose Caceres,PAR,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+martin_caceres__uru,Martin Caceres,URU,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+deiver_machado__col,Deiver Machado,COL,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+felix_feliz_torres__ecu,Felix 'Feliz' Torres,ECU,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+koni_de_winter__bel,Koni de Winter,BEL,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+rami_rabia__egy,Rami Rabia,EGY,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+andy_robertson__sco,Andy Robertson,SCO,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+abdukodir_khusanov__uzb,Abdukodir Khusanov,UZB,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+diney_borges__cpv,Diney Borges,CPV,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+sidny_lopes_cabral__cpv,Sidny Lopes Cabral,CPV,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+michael_amir_murillo__pan,Michael Amir Murillo,PAN,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+kevin_danso__aut,Kevin Danso,AUT,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+alexander_schlager__aut,Alexander Schlager,AUT,GK,3500000,yes,yes,yes,yes,yes,yes,ok
+mark_flekken__ned,Mark Flekken,NED,GK,4000000,yes,yes,yes,yes,yes,yes,ok
+victor_lindel_f__swe,Victor Lindelöf,SWE,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+angus_gunn__sco,Angus Gunn,SCO,GK,3500000,yes,yes,yes,yes,yes,yes,ok
+karim_boudiaf__qat,Karim Boudiaf,QAT,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+ayumu_seko__jpn,Ayumu Seko,JPN,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+jawad_el_yamiq__mar,Jawad El Yamiq,MAR,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+david_ospina__col,David Ospina,COL,GK,3500000,yes,yes,yes,yes,yes,yes,ok
+santiago_mele__uru,Santiago Mele,URU,GK,3500000,yes,yes,yes,yes,yes,yes,ok
+alan_franco__ecu,Alan Franco,ECU,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+braian_ojeda__par,Braian Ojeda,PAR,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+marin_pongra_i__cro,Marin Pongracic,CRO,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+tomoki_hayakawa__jpn,Tomoki Hayakawa,JPN,GK,3500000,yes,yes,yes,yes,yes,yes,ok
+sebastian_tounekti__tun,Sebastian Tounekti,TUN,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+riley_mcgree__aus,Riley McGree,AUS,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+nihad_mujaki__bih,Nihad Mujakic,BIH,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+ahmed_fathi__qat,Ahmed Fathi,QAT,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+ruben_providence__hai,Ruben Providence,HAI,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+ryan_thomas__nzl,Ryan Thomas,NZL,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+junnosuke_suzuki__jpn,Junnosuke Suzuki,JPN,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+scott_mckenna__sco,Scott McKenna,SCO,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+egil_selvik__nor,Egil Selvik,NOR,GK,3500000,yes,yes,yes,yes,yes,yes,ok
+ismail_jakobs__sen,Ismail Jakobs,SEN,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+amer_jamous__jor,Amer Jamous,JOR,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+ali_nemati__irn,Ali Nemati,IRN,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+keisuke_sako__jpn,Keisuke Osako,JPN,GK,3500000,yes,yes,yes,yes,yes,yes,ok
+edmilson_junior__qat,Edmilson Junior,QAT,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+dennis_hadzikadunic__bih,Dennis Hadzikadunic,BIH,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+jeremy_antonisse__cuw,Jeremy Antonisse,CUW,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+danial_esmaeilifar__irn,Danial Esmaeilifar,IRN,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+assim_madibo__qat,Assim Madibo,QAT,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+ben_old__nzl,Ben Old,NZL,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+cho_gue_sung__kor,Gue-sung Cho,KOR,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+brandley_kuwas__cuw,Brandley Kuwas,CUW,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+milad_mohammadi__irn,Milad Mohammadi,IRN,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+hussein_ali__irq,Hussein Ali,IRQ,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+joe_bell__nzl,Joe Bell,NZL,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+callum_mccowatt__nzl,Callum McCowatt,NZL,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+yassine_bono_bounou__mar,Yassine 'Bono' Bounou,MAR,GK,3500000,yes,yes,yes,yes,yes,yes,ok
+carlos_acevedo__mex,Carlos Acevedo,MEX,GK,3500000,yes,yes,yes,yes,yes,yes,ok
+jacob_widell_zetterstrom__swe,Jacob Widell Zetterström,SWE,GK,3500000,yes,yes,yes,yes,yes,yes,ok
+justin_bijlow__ned,Justin Bijlow,NED,GK,3500000,yes,yes,yes,yes,yes,yes,ok
+mert_gunok__tur,Mert Günok,TUR,GK,3500000,yes,yes,yes,yes,yes,yes,ok
+zineddine_belaid__alg,Zineddine Belaid,ALG,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+ramin_rezaeian__irn,Ramin Rezaeian,IRN,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+alex_rufer__nzl,Alex Rufer,NZL,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+roshon_van_eijma__cuw,Roshon van Eijma,CUW,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+martin_boyle__aus,Martin Boyle,AUS,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+antoine_mendy__sen,Antoine Mendy,SEN,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+erick_davis__pan,Eric Davis,PAN,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+ali_al_hamadi__irq,Ali Al-Hamadi,IRQ,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+d_enis_burni__bih,Dzenis Burnic,BIH,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+alan_ben_tez__par,Alan Benitez,PAR,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+jo_hyeon_woo__kor,Hyeon-Woo Jo,KOR,GK,3500000,yes,yes,yes,yes,yes,yes,ok
+mamadou_sarr__sen,Mamadou Sarr,SEN,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+kim_seung_gyu__kor,Seung-Gyu Kim,KOR,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+ricardo_ad__hai,Ricardo Ade,HAI,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+juri_n_gaari__cuw,Jurien Gaari,CUW,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+alessandro_schopf__aut,Alessandro Schöpf,AUT,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+xaver_schlager__aut,Xaver Schlager,AUT,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+luciano_valente__ned,Luciano Valente,NED,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+mattias_svanberg__swe,Mattias Svanberg,SWE,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+lucas_bergvall__swe,Lucas Bergvall,SWE,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+houssem_aouar__alg,Houssem Aouar,ALG,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+alan_varela__arg,Alan Varela,ARG,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+kwasi_sibo__gha,Kwasi Sibo,GHA,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+hyun_jun_yang__kor,Hyun-Jun Yang,KOR,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+jun_ho_bae__kor,Jun-ho Bae,KOR,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+jin_gyu_kim__kor,Jin-gyu Kim,KOR,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+jin_seob_park__kor,Jin-seob Park,KOR,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+brian_gutierrez__mex,Brian Gutierrez,MEX,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+alvaro_fidalgo__mex,Alvaro Fidalgo,MEX,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+obed_vargas__mex,Obed Vargas,MEX,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+carlos_rodriguez__mex,Carlos Rodriguez,MEX,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+matias_galarza_fonda__par,Matias Galarza Fonda,PAR,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+themba_zwane__rsa,Themba Zwane,RSA,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+cristian_roldan__usa,Cristian Roldan,USA,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+tanner_tessmann__usa,Tanner Tessmann,USA,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+emiliano_martinez_toranza__uru,Emiliano Martinez Toranza,URU,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+aidan_morris__usa,Aidan Morris,USA,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+juan_portilla__col,Juan Portilla,COL,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+nicolas_raskin__bel,Nicolas Raskin,BEL,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+zaid_ismail__irq,Zaid Ismail,IRQ,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+adalberto_carrasquilla__pan,Adalberto Carrasquilla,PAN,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+jose_luis_rodriguez_francis__pan,Jose Luis Rodriguez Francis,PAN,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+hakim_ziyech__mar,Hakim Ziyech,MAR,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+anis_ben_slimane__tun,Anis Ben Slimane,TUN,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+nasser_al_dawsari__ksa,Nasser Al-Dawsari,KSA,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+abdulrahman_al_obood__ksa,Abdulrahman Al-Obood,KSA,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+ayman_yahya_salem__ksa,Ayman Yahya Salem,KSA,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+saleh_al_shamat__ksa,Saleh Al-Shamat,KSA,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+musab_al_juwayr__ksa,Musab Al-Juwayr,KSA,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+abdullah_al_khaibari__ksa,Abdullah Al-Khaibari,KSA,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+abdulaziz_hatim_mohammed__qat,Abdulaziz Hatim Mohammed,QAT,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+mohamed_al_mannai__qat,Mohamed Al-Mannai,QAT,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+jassem_gaber__qat,Jassem Gaber,QAT,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+mohammed_waad__qat,Mohammed Waad,QAT,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+david_hoilett__can,David 'Junior' Hoilett,CAN,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+odildzhon_khamrobekov__uzb,Odildzhon Khamrobekov,UZB,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+mohammad_abu_shararh_zrayq__jor,Mohammad Abu 'Shararh' Zrayq,JOR,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+jens_petter_hauge__nor,Jens Petter Hauge,NOR,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+grady_diangana__cod,Grady Diangana,COD,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+dylan_bronn__tun,Dylan Bronn,TUN,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+telmo_arcanjo__cpv,Telmo Arcanjo,CPV,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+sherel_floranus__cuw,Sherel Floranus,CUW,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+luc_de_fougerolles__can,Luc De Fougerolles,CAN,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+hamdy_fathy__egy,Hamdy Fathy,EGY,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+jesse_randall__nzl,Jesse Randall,NZL,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+ali_majrashi__ksa,Ali Majrashi,KSA,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+noor_al_rawabdeh__jor,Noor Al-Rawabdeh,JOR,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+zidane_iqbal__irq,Zidane Iqbal,IRQ,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+yvon_mvogo__sui,Yvon Mvogo,SUI,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+alireza_beiranvand__irn,Alireza Beiranvand,IRN,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+kr_pin_diatta__sen,Krepin Diatta,SEN,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+gustavo_vel_squez__par,Gustavo Velazquez,PAR,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+milo_degenek__aus,Milos Degenek,AUS,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+joris_kayembe__cod,Joris Kayembe,COD,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+maxime_cr_peau__can,Maxime Crepeau,CAN,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+mahmoud_al_mardi__jor,Mahmoud Al-Mardi,JOR,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+simon_banza__cod,Simon Banza,COD,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+josue_casimir__hai,Josue Casimir,HAI,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+garry_mendes_rodrigues__cpv,Garry Mendes Rodrigues,CPV,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+nuno_da_costa__cpv,Nuno da Costa,CPV,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+baha_a_faisal__jor,Baha'a Faisal,JOR,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+george_hirst__sco,George Hirst,SCO,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+abdullah_al_hamdan__ksa,Abdullah Al-Hamdan,KSA,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+amine_adli__mar,Amine Adli,MAR,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+jordy_caicedo__ecu,Jordy Caicedo,ECU,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+ricardo_pepi__usa,Ricardo Pepi,USA,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+armando_gonzalez__mex,Armando Gonzalez,MEX,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+kento_shiogai__jpn,Kento Shiogai,JPN,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+christopher_bonsu_baah__gha,Christopher Bonsu Baah,GHA,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+endrick__bra,Endrick,BRA,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+deni_juric__aus,Deni Juric,AUS,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+nishan_velupillay__aus,Nishan Velupillay,AUS,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+amin_chiakha__alg,Amin Chiakha,ALG,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+petar_musa__cro,Petar Musa,CRO,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+yunus_akgun__tur,Yunus Akgün,TUR,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+hugo_cuenca__par,Hugo Cuenca,PAR,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+merchas_doski__irq,Merchas Doski,IRQ,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+youcef_atal__alg,Youcef Atal,ALG,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+dominik_kotarski__cro,Dominik Kotarski,CRO,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+mathew_ryan__aus,Mathew Ryan,AUS,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+anthony_mandrea__alg,Anthony Mandrea,ALG,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+nikola_vasilj__bih,Nikola Vasilj,BIH,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+alexander_bernhardsson__swe,Alexander Bernhardsson,SWE,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+nizar_al_rashdan__jor,Nizar Al-Rashdan,JOR,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+umar_eshmurodov__uzb,Umar Eshmurodov,UZB,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+samet_akaydin__tur,Samet Akaydin,TUR,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+ozan_kabak__tur,Ozan Kabak,TUR,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+aziz_behich__aus,Aziz Behich,AUS,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+danilo_luiz_da_silva__bra,Danilo Luiz da Silva,BRA,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+roger_ibanez__bra,Roger Ibanez,BRA,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+jerome_opoku__gha,Jerome Opoku,GHA,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+hiroki_ito__jpn,Hiroki Ito,JPN,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+moon_hwan_kim__kor,Moon-Hwan Kim,KOR,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+yu_min_cho__kor,Yu-Min Cho,KOR,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+tae_seok_lee__kor,Tae-Seok Lee,KOR,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+everardo_lopez__mex,Everardo Lopez,MEX,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+jorge_sanchez__mex,Jorge Sanchez,MEX,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+liberato_cacace__nzl,Liberato Cacace,NZL,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+jose_hurtado__ecu,Jose Hurtado,ECU,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+sead_kolasinac__bih,Sead Kolasinac,BIH,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+stjepan_radeljic__bih,Stjepan Radeljic,BIH,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+hossein_kanaani__irn,Hossein Kanaani,IRN,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+brandon_mechele__bel,Brandon Mechele,BEL,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+joaquin_seys__bel,Joaquin Seys,BEL,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+hossam_abdelmaguid__egy,Hossam Abdelmaguid,EGY,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+andres_andrade__pan,Andres Andrade,PAN,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+mohamed_abdelmonem__egy,Mohamed Abdelmonem,EGY,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+ahmed_fatouh__egy,Ahmed Fatouh,EGY,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+abdelhamid_ait_boudlal__mar,Abdelhamid Ait Boudlal,MAR,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+mohamed_amine_ben_hamida__tun,Mohamed Amine Ben Hamida,TUN,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+nawaf_al_boushal__ksa,Nawaf Al-Boushal,KSA,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+pedro_ro_ro_miguel_correia__qat,Pedro 'Ro-Ro' Miguel Correia,QAT,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+lucas_mendes__qat,Lucas Mendes,QAT,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+homam_al_amin__qat,Homam Al-Amin,QAT,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+ayoub_al_oui__qat,Ayoub Al-Oui,QAT,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+kieran_tierney__sco,Kieran Tierney,SCO,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+farrukh_sayfiev__uzb,Farrukh Sayfiev,UZB,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+khozhiakbar_alizhonov__uzb,Khozhiakbar Alizhonov,UZB,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+jakhongir_urozov__uzb,Jakhongir Urozov,UZB,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+mukhammadkodir_khamraliev__uzb,Mukhammadkodir Khamraliev,UZB,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+ahmad_assaf__jor,Ahmad Assaf,JOR,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+joao_paulo__cpv,Joao Paulo,CPV,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+stopira__cpv,Stopira,CPV,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+leo_ostigard__nor,Leo Østigård,NOR,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+torbjorn_heggem__nor,Torbjørn Heggem,NOR,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+hannes_delcroix__hai,Hannes Delcroix,HAI,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+duke_lacroix__hai,Duke Lacroix,HAI,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+dylan_batubinsika__cod,Dylan Batubinsika,COD,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+jeremy_ngakia__cod,Jeremy Ngakia,COD,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+matthieu_epolo__cod,Matthieu Epolo,COD,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+liam_kelly__sco,Liam Kelly,SCO,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+mory_diaw__sen,Mory Diaw,SEN,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+yehvann_diouf__sen,Yehvann Diouf,SEN,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+munir_el_kajoui__mar,Munir El Kajoui,MAR,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+el_mehdi_benabid__mar,El Mehdi Benabid,MAR,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+gonzalo_valle__ecu,Gonzalo Valle,ECU,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+matt_turner__usa,Matt Turner,USA,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+roberto_gatito_fernandez__par,Roberto 'Gatito' Fernandez,PAR,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+gaston_olveira__par,Gaston Olveira,PAR,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+guillermo_ochoa__mex,Guillermo Ochoa,MEX,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+benjamin_asare__gha,Benjamin Asare,GHA,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+alexis_guendouz__alg,Alexis Guendouz,ALG,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+altay_bayindir__tur,Altay Bayindir,TUR,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+muhammed_sengezer__tur,Muhammed Sengezer,TUR,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+marvin_keller__sui,Marvin Keller,SUI,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+carl_starfelt__swe,Carl Starfelt,SWE,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+marko_farji__irq,Marko Farji,IRQ,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+aimar_sher__irq,Aimar Sher,IRQ,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+arthur_masuaku__cod,Arthur Masuaku,COD,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+johny_placide__hai,Johny Placide,HAI,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+alessandro_circati__aus,Alessandro Circati,AUS,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+igor_sergeev__uzb,Igor Sergeev,UZB,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+thalente_mbatha__rsa,Thalente Mbatha,RSA,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+godfried_roemeratoe__cuw,Godfried Roemeratoe,CUW,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+edo_kayembe__cod,Edo Kayembe,COD,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+eray_c_mert__sui,Eray Cömert,SUI,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+jos_cordoba__pan,Jose Cordoba,PAN,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+c_sar_yanis__pan,Cesar Yanis,PAN,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+c_sar_blackman__pan,Cesar Blackman,PAN,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+eloy_room__cuw,Eloy Room,CUW,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+paul_okon_engstler__aus,Paul Okon-Engstler,AUS,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+mohammad_abu_hasheesh__jor,Mohammad Abu Hasheesh,JOR,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+tarek_salman__qat,Tarek Salman,QAT,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+martin_exp_rience__hai,Martin Experience,HAI,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+hjalmar_ekdal__swe,Hjalmar Ekdal,SWE,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+jason_geria__aus,Jason Geria,AUS,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+kye_rowles__aus,Kye Rowles,AUS,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+zaid_tahseen__irq,Zaid Tahseen,IRQ,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+tim_payne__nzl,Tim Payne,NZL,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+mohamed_haj_mahmoud__tun,Mohamed 'Hadj' Mahmoud,TUN,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+ajdin_hrustic__aus,Ajdin Hrustic,AUS,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+joshua_brenet__cuw,Joshua Brenet,CUW,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+charles_pickel__cod,Charles Pickel,COD,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+yazeed_abulaila__jor,Yazeed Abulaila,JOR,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+ji_sung_eom__kor,Ji-sung Eom,KOR,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+miles_robinson__usa,Miles Robinson,USA,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+mark_mckenzie__usa,Mark McKenzie,USA,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+yazan_al_arab__jor,Yazan Al-Arab,JOR,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+abdallah_nasib__jor,Abdallah Nasib,JOR,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+mohammad_abualnadi__jor,Mohammad Abualnadi,JOR,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+patrick_yazbek__aus,Patrick Yazbek,AUS,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+wagner_pina__cpv,Wagner Pina,CPV,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+saleem_obaid__jor,Saleem Obaid,JOR,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+mustafa_eskihella__tur,Mustafa Eskihellac,TUR,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+tyler_bindon__nzl,Tyler Bindon,NZL,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+leopold_querfeld__aut,Leopold Querfeld,AUT,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+mohannad_abu_taha__jor,Mohannad Abu Taha,JOR,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+rebin_sulaka__irq,Rebin Sulaka,IRQ,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+hossein_abarghouei__irn,Hossein Abarghouei,IRN,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+jean_kevin_duverne__hai,Jean-Kevin Duverne,HAI,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+yaimar_medina__ecu,Yaimar Medina,ECU,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+boualem_khoukhi__qat,Boualem Khoukhi,QAT,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+ali_yousif__irq,Ali Yousif,IRQ,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+carlens_arcus__hai,Carlens Arcus,HAI,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+gustaf_nilsson__swe,Gustaf Nilsson,SWE,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+fredrik_andr_bj_rkan__nor,Fredrik Andre Bjørkan,NOR,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+nkosinathi_sibisi__rsa,Nkosinathi Sibisi,RSA,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+payam_niazmand__irn,Payam Niazmand,IRN,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+sultan_al_brake__qat,Sultan Al-Brake,QAT,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+yuto_nagatomo__jpn,Yuto Nagatomo,JPN,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+alexis_duarte__par,Alexis Duarte,PAR,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+blas_riveros__par,Blas Riveros,PAR,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+alex_paulsen__nzl,Alex Paulsen,NZL,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+max_crocombe__nzl,Max Crocombe,NZL,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+paul_izzo__aus,Paul Izzo,AUS,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+steven_moreira__cpv,Steven Moreira,CPV,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+paik_seung_ho__kor,Seung-Ho Paik,KOR,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+besfort_zeneli__swe,Besfort Zeneli,SWE,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+meshaal_barsham__qat,Meshaal Barsham,QAT,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+kai_trewin__aus,Kai Trewin,AUS,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+patrick_beach__aus,Patrick Beach,AUS,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+mehdi_dorval__alg,Mehdi Dorval,ALG,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+martin_zlomisli__bih,Martin Zlomislic,BIH,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+jacob_italiano__aus,Jacob Italiano,AUS,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+peter_gwargis__irq,Peter Gwargis,IRQ,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+kevin_yakob__irq,Kevin Yakob,IRQ,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+timothy_fayulu__cod,Timothy Fayulu,COD,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+alexandre_pierre__hai,Alexandre Pierre,HAI,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+josue_duverger__hai,Josue Duverger,HAI,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+tyrick_bodak__cuw,Tyrick Bodak,CUW,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+trevor_doornbusch__cuw,Trevor Doornbusch,CUW,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+marcio_rosa__cpv,Marcio Rosa,CPV,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+vozinha__cpv,Vozinha,CPV,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+abdallah_al_fakhouri__jor,Abdallah Al-Fakhouri,JOR,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+lionel_mpasi_nzau__cod,Lionel Mpasi Nzau,COD,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+abdel_rahman_al_talalga__jor,Abdel Rahman Al-Talalga,JOR,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+utkir_yusupov__uzb,Utkir Yusupov,UZB,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+abduvokhid_nematov__uzb,Abduvokhid Nematov,UZB,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+botirali_ergashev__uzb,Botirali Ergashev,UZB,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+owen_goodman__can,Owen Goodman,CAN,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+mahmoud_abunada__qat,Mahmoud Abunada,QAT,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+shehab_ellethy__qat,Shehab Ellethy,QAT,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+mohammed_al_rubaie_al_yami__ksa,Mohammed Al-Rubaie Al-Yami,KSA,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+abdulrahman_al_sanbi__ksa,Abdulrahman Al-Sanbi,KSA,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+abdelmouhib_chamakh__tun,Abdelmouhib Chamakh,TUN,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+sabri_ben_hessen__tun,Sabri Ben Hessen,TUN,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+el_mehdi_al_harrar__mar,El Mehdi Al Harrar,MAR,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+mohamed_alaa__egy,Mohamed Alaa,EGY,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+luis_mejia__pan,Luis Mejia,PAN,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+cesar_samudio__pan,Cesar Samudio,PAN,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+fahad_talib__irq,Fahad Talib,IRQ,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+kumel_al_rekabe__irq,Kumel Al-Rekabe,IRQ,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+ahmed_basil_fadhil__irq,Ahmed Basil Fadhil,IRQ,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+mohammad_khalife__irn,Mohammad Khalife,IRN,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+osman_hadzikic__bih,Osman Hadzikic,BIH,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+moises_ramirez__ecu,Moises Ramirez,ECU,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+david_cabezas__ecu,David Cabezas,ECU,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+chris_brady__usa,Chris Brady,USA,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+patrick_schulte__usa,Patrick Schulte,USA,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+juan_espinola__par,Juan Espinola,PAR,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+ricardo_goss__rsa,Ricardo Goss,RSA,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+sipho_chaine__rsa,Sipho Chaine,RSA,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+carlos_miguel_coronel__par,Carlos Miguel Coronel,PAR,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+michael_woud__nzl,Michael Woud,NZL,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+joseph_anang__gha,Joseph Anang,GHA,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+ivor_pandur__cro,Ivor Pandur,CRO,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+nikolas_polster__aut,Nikolas Polster,AUT,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+mohau_nkota__rsa,Mohau Nkota,RSA,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+mohammed_sulaiman__ksa,Mohammed Sulaiman,KSA,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+hasan_abdulkareem__irq,Hasan Abdulkareem,IRQ,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+ardon_jashari__sui,Ardon Jashari,SUI,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+irfan_can_kahveci__tur,Irfan Can Kahveci,TUR,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+atakan_karazor__tur,Atakan Karazor,TUR,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+salih_ozcan__tur,Salih Özcan,TUR,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+kees_smit__ned,Kees Smit,NED,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+taha_abdi_ali__swe,Taha Abdi Ali,SWE,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+yassine_titraoui__alg,Yassine Titraoui,ALG,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+adil_aouchiche__alg,Adil Aouchiche,ALG,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+alexander_alex_robertson__aus,Alexander 'Alex' Robertson,AUS,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+denzell_garcia__mex,Denzell Garcia,MEX,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+lucas_ramon_romero__par,Lucas Ramon Romero,PAR,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+jayden_adams__rsa,Jayden Adams,RSA,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+amir_hadziahmetovic__bih,Amir Hadziahmetovic,BIH,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+ermin_mahmic__bih,Ermin Mahmic,BIH,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+diego_moreira__bel,Diego Moreira,BEL,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+yoel_barcenas__pan,Yoel Barcenas,PAN,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+haissem_hassan__egy,Haissem Hassan,EGY,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+mohamed_rabie_hrimat__mar,Mohamed Rabie Hrimat,MAR,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+mortadha_ben_ouanes__tun,Mortadha Ben Ouanes,TUN,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+khalil_ayari__tun,Khalil Ayari,TUN,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+lewis_ferguson__sco,Lewis Ferguson,SCO,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+marcelo_flores__can,Marcelo Flores,CAN,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+jamshid_iskanderov__uzb,Jamshid Iskanderov,UZB,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+alisher_odilov__uzb,Alisher Odilov,UZB,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+umarali_rakhmonaliyev__uzb,Umarali Rakhmonaliyev,UZB,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+ibrokhim_ibrokhimov__uzb,Ibrokhim Ibrokhimov,UZB,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+dostonbek_khamdamov__uzb,Dostonbek Khamdamov,UZB,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+mohammad_al_dawoud__jor,Mohammad Al-Dawoud,JOR,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+yousef_qashi__jor,Yousef Qashi,JOR,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+mohammad_taha__jor,Mohammad Taha,JOR,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+yannick_semedo__cpv,Yannick Semedo,CPV,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+odeh_al_fakhouri__jor,Odeh Al-Fakhouri,JOR,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+ali_azaizeh__jor,Ali Azaizeh,JOR,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+kristian_thorstvedt__nor,Kristian Thorstvedt,NOR,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+tahith_chong__cuw,Tahith Chong,CUW,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+kevin_felida__cuw,Kevin Felida,CUW,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+tyrese_noslin__cuw,Tyrese Noslin,CUW,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+woodensky_pierre__hai,Woodensky Pierre,HAI,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+carl_sainte__hai,Carl Sainte,HAI,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+derrick_etienne__hai,Derrick Etienne Jr.,HAI,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+yassin_fortune__hai,Yassin Fortune,HAI,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+ar_jany_martha__cuw,Ar'jany Martha,CUW,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+sontje_hansen__cuw,Sontje Hansen,CUW,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+aribim_pepple__can,Aribim Pepple,CAN,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+findlay_curtis__sco,Findlay Curtis,SCO,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+jacen_russell_rowe__can,Jacen Russell-Rowe,CAN,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+rayan_elloumi__tun,Rayan Elloumi,TUN,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+cecilio_waterman__pan,Cecilio Waterman,PAN,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+kadir_barria__pan,Kadir Barria,PAN,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+anthony_valencia__ecu,Anthony Valencia,ECU,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+shahriar_moghanlou__irn,Shahriar Moghanlou,IRN,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+jovo_lukic__bih,Jovo Lukic,BIH,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+janner_corozo__ecu,Janner Corozo,ECU,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+bongokuhle_hlongwane__rsa,Bongokuhle Hlongwane,RSA,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+thapelo_maseko__rsa,Thapelo Maseko,RSA,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+gabriel_avalos__par,Gabriel Avalos,PAR,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+guillermo_martinez__mex,Guillermo Martínez,MEX,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+prince_adu__gha,Prince Adu,GHA,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+daniel_nana_agyei__gha,Daniel Nana Agyei,GHA,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+awer_mabil__aus,Awer Mabil,AUS,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+ante_suto__aus,Ante Suto,AUS,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+ahmed_nadhir_benbouali__alg,Ahmed Nadhir Benbouali,ALG,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+fares_ghedjemis__alg,Fares Ghedjemis,ALG,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+marco_grull__aut,Marco Grüll,AUT,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+raul_florucz__aut,Raul Florucz,AUT,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+cedric_itten__sui,Cedric Itten,SUI,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+rocky_bushiri__cod,Rocky Bushiri,COD,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+luca_jaquez__sui,Luca Jaquez,SUI,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+evren_eren_elmali__tur,Evren Eren Elmali,TUR,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+marco_friedl__aut,Marco Friedl,AUT,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+luka_vuskovic__cro,Luka Vuskovic,CRO,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+eric_smith__swe,Eric Smith,SWE,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+achref_abada__alg,Achref Abada,ALG,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+sohaib_nair__alg,Sohaib Nair,ALG,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+elliot_stroud__swe,Elliot Stroud,SWE,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+lucas_herrington__aus,Lucas Herrington,AUS,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+derrick_kohn__gha,Derrick Köhn,GHA,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+patric_pfeiffer__gha,Patric Pfeiffer,GHA,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+kojo_peprah_oppong__gha,Kojo Peprah Oppong,GHA,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+derrick_luckassen__gha,Derrick Luckassen,GHA,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+marvin_senaya__gha,Marvin Senaya,GHA,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+han_beom_lee__kor,Han-beom Lee,KOR,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+tae_hyeon_kim__kor,Tae-Hyeon Kim,KOR,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+jesus_angulo__mex,Jesus Angulo,MEX,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+richard_ledezma__mex,Richard Ledezma,MEX,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+callan_elliot__nzl,Callan Elliot,NZL,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+gonzalo_agustin_sandez__par,Gonzalo Agustin Sandez,PAR,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+thabang_matuludi__rsa,Thabang Matuludi,RSA,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+ime_okon__rsa,Ime Okon,RSA,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+khulumani_ndamane__rsa,Khulumani Ndamane,RSA,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+antonee_robinson__usa,Antonee Robinson,USA,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+jackson_porozo__ecu,Jackson Porozo,ECU,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+nidal_celik__bih,Nidal Celik,BIH,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+abolfazl_jalali__irn,Abolfazl Jalali,IRN,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+ehsan_hajsafi__irn,Ehsan Hajsafi,IRN,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+nathan_ngoy__bel,Nathan Ngoy,BEL,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+akam_hashem__irq,Akam Hashem,IRQ,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+manaf_younis__irq,Manaf Younis,IRQ,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+ahmed_hasan_maknzi__irq,Ahmed Hasan Maknzi,IRQ,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+roderick_miller__pan,Roderick Miller,PAN,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+jiovany_ramos__pan,Jiovany Ramos,PAN,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+martin_krug__pan,Martin Krug,PAN,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+tarek_alaa__egy,Tarek Alaa,EGY,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+zakaria_el_ouahdi__mar,Zakaria El Ouahdi,MAR,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+souffian_el_karouani__mar,Souffian El Karouani,MAR,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+chadi_riad__mar,Chadi Riad,MAR,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+ilay_camara__sen,Ilay Camara,SEN,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+adem_arous__tun,Adem Arous,TUN,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+omar_rekik__tun,Omar Rekik,TUN,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+moutaz_neffati__tun,Moutaz Neffati,TUN,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+nathan_patterson__sco,Nathan Patterson,SCO,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+jack_hendry__sco,Jack Hendry,SCO,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+dominic_hyam__sco,Dominic Hyam,SCO,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+ralph_priso__can,Ralph Priso,CAN,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+jahkeele_rutty__can,Jahkeele Rutty,CAN,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+dilshod_komilov__uzb,Dilshod Komilov,UZB,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+mukhammadrasul_abdumazhidov__uzb,Mukhammadrasul Abdumazhidov,UZB,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+husam_abu_dahab__jor,Husam Abu Dahab,JOR,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+roberto_lopes__cpv,Roberto Lopes,CPV,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+kelvin_pires__cpv,Kelvin Pires,CPV,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+henrik_falchener__nor,Henrik Falchener,NOR,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+marcus_holmgren_pedersen__nor,Marcus Holmgren Pedersen,NOR,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+shurandy_sambo__cuw,Shurandy Sambo,CUW,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+riechedly_bazoer__cuw,Riechedly Bazoer,CUW,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+callum_elder__aus,Callum Elder,AUS,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+bum_keun_song__kor,Bum-Keun Song,KOR,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+samukele_kabini__rsa,Samukele Kabini,RSA,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+yousef_abu_al_jazar__jor,Yousef Abu Al-Jazar,JOR,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+brian_cipenga__cod,Brian Cipenga,COD,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+wilguens_paugain__hai,Wilguens Paugain,HAI,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+frans_dhia_putros__irq,Frans Dhia Putros,IRQ,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+micky_van_de_ven__ned,Micky van de Ven,NED,DEF,4000000,yes,yes,yes,yes,yes,yes,ok
+nathan_ak__ned,Nathan Ake,NED,DEF,3500000,yes,yes,yes,yes,yes,yes,ok
+oston_urunov__uzb,Oston Urunov,UZB,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+jurri_n_timber__ned,Jurrien Timber,NED,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+stepan_chaloupek__cze,Stepan Chaloupek,CZE,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+martin_vitik__cze,Martin Vitik,CZE,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+robin_hranac__cze,Robin Hranac,CZE,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+ladislav_krejci__cze,Ladislav Krejci,CZE,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+david_jurasek__cze,David Jurasek,CZE,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+jaroslav_zeleny__cze,Jaroslav Zeleny,CZE,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+tomas_holes__cze,Tomas Holes,CZE,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+vladimir_coufal__cze,Vladimir Coufal,CZE,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+nathaniel_brown__ger,Nathaniel Brown,GER,DEF,2500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+maxence_lacroix__fra,Maxence Lacroix,FRA,DEF,3000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+jules_kounde__fra,Jules Kounde,FRA,DEF,3500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+marc_pubill__esp,Marc Pubill,ESP,DEF,3000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+eric_garcia__esp,Eric Garcia,ESP,DEF,3000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+clement_akpa__civ,Clement Akpa,CIV,DEF,2000000,yes,yes,yes,yes,yes,yes,ok
+wilfried_stephane_singo__civ,Wilfried Stephane Singo,CIV,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+ousmane_diomande__civ,Ousmane Diomande,CIV,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+emmanuel_agbadou__civ,Emmanuel Agbadou,CIV,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+ghislain_konan__civ,Ghislain Konan,CIV,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+guela_doue__civ,Guela Doue,CIV,DEF,3000000,yes,yes,yes,yes,yes,yes,ok
+odilon_kossounou__civ,Odilon Kossounou,CIV,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+evan_n_dicka__civ,Evan N'Dicka,CIV,DEF,2500000,yes,yes,yes,yes,yes,yes,ok
+djed_spence__eng,Djed Spence,ENG,DEF,2500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+jarell_quansah__eng,Jarell Quansah,ENG,DEF,2500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+ko_itakura__jpn,Ko Itakura,JPN,DEF,2000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+takehiro_tomiyasu__jpn,Takehiro Tomiyasu,JPN,DEF,2000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+gi_hyuk_lee__kor,Gi-hyuk Lee,KOR,DEF,2000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+francis_de_vries__nzl,Francis de Vries,NZL,DEF,2500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+michael_boxall__nzl,Michael Boxall,NZL,DEF,2000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+tommy_smith__nzl,Tommy Smith,NZL,DEF,2000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+nando_pijnaker__nzl,Nando Pijnaker,NZL,DEF,2000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+yerry_mina__col,Yerry Mina,COL,DEF,3000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+willer_ditta__col,Willer Ditta,COL,DEF,2500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+karim_hafez__egy,Karim Hafez,EGY,DEF,2000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+issa_diop__mar,Issa Diop,MAR,DEF,2500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+raed_chikhaoui__tun,Raed Chikhaoui,TUN,DEF,2000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+moustapha_mbow__sen,Moustapha Mbow,SEN,DEF,2000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+aaron_hickey__sco,Aaron Hickey,SCO,DEF,2500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+logan_costa__cpv,Logan Costa,CPV,DEF,2500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+sondre_langas__nor,Sondre Langås,NOR,DEF,2000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+armando_obispo__cuw,Armando Obispo,CUW,DEF,2000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+deveron_fonville__cuw,Deveron Fonville,CUW,DEF,2000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+steve_kapuadi__cod,Steve Kapuadi,COD,DEF,2000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+sander_tangvik__nor,Sander Tangvik,NOR,GK,3000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+cj_dos_santos__cpv,CJ Dos Santos,CPV,GK,2500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+craig_gordon__sco,Craig Gordon,SCO,GK,2500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+el_mahdi_soliman__egy,El Mahdi Soliman,EGY,GK,2500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+oufa_shobeir__egy,Mostafa Oufa Shobeir,EGY,GK,2500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+mike_penders__bel,Mike Penders,BEL,GK,3500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+yahia_fofana__civ,Yahia Fofana,CIV,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+mohamed_kone__civ,Mohamed Kone,CIV,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+alban_lafont__civ,Alban Lafont,CIV,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+weverton__bra,Weverton,BRA,GK,4000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+joan_garcia__esp,Joan Garcia,ESP,GK,4000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+robin_risser__fra,Robin Risser,FRA,GK,4000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+manuel_neuer__ger,Manuel Neuer,GER,GK,5000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+lukas_hornicek__cze,Lukas Hornicek,CZE,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+martin_jedlicka__cze,Martin Jedlicka,CZE,GK,2500000,yes,yes,yes,yes,yes,yes,ok
+matej_kovar__cze,Matej Kovar,CZE,GK,3000000,yes,yes,yes,yes,yes,yes,ok
+michal_sadilek__cze,Michal Sadilek,CZE,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+alex_kral__cze,Alex Kral,CZE,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+tomas_soucek__cze,Tomas Soucek,CZE,MID,3500000,yes,yes,yes,yes,yes,yes,ok
+pavel_sulc__cze,Pavel Sulc,CZE,MID,4000000,yes,yes,yes,yes,yes,yes,ok
+adam_karabec__cze,Adam Karabec,CZE,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+lukas_cerv__cze,Lukas Cerv,CZE,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+denis_visinsky__cze,Denis Visinsky,CZE,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+vladimir_darida__cze,Vladimir Darida,CZE,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+lukas_provod__cze,Lukas Provod,CZE,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+samu_costa__por,Samu Costa,POR,MID,2500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+mateo_kovacic__cro,Mateo Kovacic,CRO,MID,4000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+nadiem_amiri__ger,Nadiem Amiri,GER,MID,2500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+jamie_leweling__ger,Jamie Leweling,GER,MID,3000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+bradley_barcola__fra,Bradley Barcola,FRA,MID,4000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+angelo_stiller__ger,Angelo Stiller,GER,MID,2500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+pablo_gavi__esp,Pablo Gavi,ESP,MID,4000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+bruno_guimaraes__bra,Bruno Guimaraes,BRA,MID,4500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+lucas_paqueta__bra,Lucas Paqueta,BRA,MID,5500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+christ_inao_oulai__civ,Christ Inao Oulaï,CIV,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+parfait_guiagon__civ,Parfait Guiagon,CIV,MID,2000000,yes,yes,yes,yes,yes,yes,ok
+ibrahim_sangare__civ,Ibrahim Sangare,CIV,MID,3000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+jean_michael_seri__civ,Jean Michael Seri,CIV,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+franck_kessie__civ,Franck Kessie,CIV,MID,3000000,yes,yes,yes,yes,yes,yes,ok
+seko_fofana__civ,Seko Fofana,CIV,MID,2500000,yes,yes,yes,yes,yes,yes,ok
+eberechi_eze__eng,Eberechi Eze,ENG,MID,3000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+kobbie_mainoo__eng,Kobbie Mainoo,ENG,MID,2500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+jens_castrop__kor,Jens Castrop,KOR,MID,2500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+in_beom_hwang__kor,In-beom Hwang,KOR,MID,2500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+dong_gyeong_lee__kor,Dong-gyeong Lee,KOR,MID,2000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+matthew_garbett__nzl,Matthew Garbett,NZL,MID,2500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+lachlan_bayliss__nzl,Lachlan Bayliss,NZL,MID,2000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+carlos_andres_gomez__col,Carlos Andres Gomez,COL,MID,2000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+mehdi_ghayedi__irn,Mehdi Ghayedi,IRN,MID,3000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+zizo__egy,Ahmed Zizo,EGY,MID,3000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+nabil_dunga_emad__egy,Nabil 'Dunga' Emad,EGY,MID,2000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+mostafa_ziko__egy,Mostafa Ziko,EGY,MID,2000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+bara_sapoko_ndiaye__sen,Bara Sapoko Ndiaye,SEN,MID,2000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+habib_diarra__sen,Habib Diarra,SEN,MID,2500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+pape_alassane_gueye__sen,Pape Alassane Gueye,SEN,MID,3000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+ben_doak__sco,Ben Doak,SCO,MID,3000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+kevin_lenini__cpv,Kevin Lenini Pina,CPV,MID,2000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+fredrik_aursnes__nor,Fredrik Aursnes,NOR,MID,3000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+thelo_aasgaard__nor,Thelo Aasgaard,NOR,MID,2000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+dominique_simon__hai,Dominique Simon,HAI,MID,2000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+gael_kakuta__cod,Gaël Kakuta,COD,MID,2500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+lenny_joseph__hai,Lenny Joseph,HAI,FWD,2000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+jurgen_locadia__cuw,Jürgen Locadia,CUW,FWD,2000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+gilson_benchimol_tavares__cpv,Gilson Benchimol Tavares,CPV,FWD,2500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+ross_stewart__sco,Ross Stewart,SCO,FWD,2000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+lawrence_shankland__sco,Lawrence Shankland,SCO,FWD,2500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+assane_diao_diaoune__sen,Assane Diao Diaoune,SEN,FWD,2500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+bamba_dieng__sen,Bamba Dieng,SEN,FWD,2000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+aqtay_abdallah__egy,Aqtay Abdallah,EGY,FWD,2000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+hamza_abdelkarim__egy,Hamza Abdelkarim,EGY,FWD,2000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+matias_fernandez_pardo__bel,Matias Fernandez-Pardo,BEL,FWD,2500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+romelu_lukaku__bel,Romelu Lukaku,BEL,FWD,4500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+juan_cucho_hernandez__col,Juan 'Cucho' Hernandez,COL,FWD,4000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+ivan_toney__eng,Ivan Toney,ENG,FWD,3500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+oumar_diakite__civ,Oumar Diakite,CIV,FWD,2500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+amad_diallo__civ,Amad Diallo,CIV,FWD,3500000,yes,yes,yes,yes,yes,yes,ok
+simon_adingra__civ,Simon Adingra,CIV,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+nicolas_pepe__civ,Nicolas Pepe,CIV,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+bazoumana_toure__civ,Bazoumana Toure,CIV,FWD,2000000,yes,yes,yes,yes,yes,yes,ok
+ange_yoan_bonny__civ,Ange-Yoan Bonny,CIV,FWD,2500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+yan_diomande__civ,Yan Diomande,CIV,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+evann_guessand__civ,Evann Guessand,CIV,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+elye_wahi__civ,Elye Wahi,CIV,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+neymar_jr__bra,Neymar Jr.,BRA,FWD,5500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+victor_munoz__esp,Victor Munoz,ESP,FWD,3000000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+jean_philippe_mateta__fra,Jean-Philippe Mateta,FRA,FWD,3500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+maximilian_beier__ger,Maximilian Beier,GER,FWD,2500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+goncalo_guedes__por,Goncalo Guedes,POR,FWD,2500000,yes,yes,yes,no,no,no,no_ev_source_for_valid_fixture_team
+mojmir_chytil__cze,Mojmir Chytil,CZE,FWD,2500000,yes,yes,yes,yes,yes,yes,ok
+tomas_chory__cze,Tomas Chory,CZE,FWD,3000000,yes,yes,yes,yes,yes,yes,ok
+patrik_schick__cze,Patrik Schick,CZE,FWD,4500000,yes,yes,yes,yes,yes,yes,ok
+jan_kliment__cze,Jan Kliment,CZE,FWD,2000000,yes,yes,yes,yes,yes,yes,ok

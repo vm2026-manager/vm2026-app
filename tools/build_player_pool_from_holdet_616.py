@@ -127,6 +127,7 @@ TEAM_ALIASES = {
     "wales": "wales",
     "czechia": "czechia",
     "czech republic": "czechia",
+    "tjekkiet": "czechia",
 }
 
 TEAM_CODE_ALIASES = {
@@ -355,6 +356,7 @@ def build_team_code_map(old_df: pd.DataFrame) -> dict[str, str]:
         mapping.setdefault(canon, code)
 
     # Hard guarantees for countries where Holdet team ids may collide with old numeric/proxy ids.
+    mapping["czechia"] = "CZE"
     mapping["croatia"] = "CRO"
     mapping["cote divoire"] = "CIV"
     mapping["congo dr"] = "COD"
@@ -441,7 +443,7 @@ def build_new_pool(
         price = int(h["price"])
         start_price = int(h["start_price"])
 
-        if copied_from_old and old_player_id:
+        if copied_from_old and old_player_id and "__holdet_" not in str(old_player_id).lower():
             player_id = str(old_player_id)
         else:
             player_id = make_player_id(player_name, team_id, h["holdet_player_id"])
