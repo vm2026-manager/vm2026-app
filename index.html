@@ -152,6 +152,15 @@
       color: white;
     }
 
+    .bank-box.rule-ok {
+      background: rgba(34, 197, 94, 0.25);
+    }
+
+    .bank-box.rule-warn {
+      background: rgba(180, 83, 9, 0.34);
+      border-color: rgba(251, 191, 36, 0.38);
+    }
+
     .formation-bar {
       display: flex;
       justify-content: space-between;
@@ -249,39 +258,6 @@
     .strategy-btn.active {
       background: #fde047;
       border-color: #ca8a04;
-    }
-
-    .captain-summary {
-      min-width: 150px;
-      max-width: 210px;
-      padding: 6px 8px;
-      border-radius: 10px;
-      border: 1px solid #f59e0b;
-      background: #fef3c7;
-      box-shadow: 0 4px 10px rgba(146, 64, 14, 0.13);
-      color: #422006;
-    }
-
-    .captain-summary-label {
-      font-size: 9px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-    }
-
-    .captain-summary-name {
-      margin-top: 2px;
-      font-size: 13px;
-      line-height: 1.2;
-      font-weight: 900;
-    }
-
-    .captain-summary-score {
-      display: none;
-      margin-top: 2px;
-      font-size: 11px;
-      line-height: 1.25;
-      color: #78350f;
     }
 
     .action-bar {
@@ -449,26 +425,8 @@
     .slot {
       position: absolute;
       transform: translate(-50%, -50%);
-      width: 104px;
+      width: 112px;
       text-align: center;
-    }
-
-    .slot-captain-badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 2px;
-      padding: 2px 6px;
-      border-radius: 999px;
-      border: 1px solid #b45309;
-      background: #facc15;
-      color: #422006;
-      box-shadow: 0 4px 9px rgba(120, 53, 15, 0.22);
-      font-size: 8px;
-      line-height: 1;
-      font-weight: 900;
-      text-transform: uppercase;
-      white-space: nowrap;
     }
 
     .player-figure {
@@ -492,7 +450,74 @@
       background: rgba(255,255,255,0.08);
     }
 
-    .slot.active .player-figure {
+    .pitch-player-card {
+      position: relative;
+      width: 104px;
+      height: 58px;
+      margin: 0 auto;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.94);
+      color: #111827;
+      border: 1px solid rgba(17,24,39,0.16);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+      padding: 14px 6px 5px;
+      box-sizing: border-box;
+      overflow: visible;
+    }
+
+    .pitch-flag-row {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      height: 24px;
+      pointer-events: none;
+    }
+
+    .pitch-captain-armband {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 18px;
+      height: 14px;
+      border-radius: 999px;
+      border: 1px solid #b45309;
+      background: #facc15;
+      color: #422006;
+      box-shadow: 0 3px 7px rgba(120, 53, 15, 0.22);
+      font-size: 9px;
+      line-height: 1;
+      font-weight: 900;
+    }
+
+    .pitch-player-flag {
+      width: 34px;
+      height: 24px;
+      border-radius: 6px;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.22);
+      border: 1px solid rgba(17,24,39,0.18);
+      overflow: hidden;
+      font-size: 10px;
+      font-weight: 900;
+    }
+
+    .pitch-player-flag .flag-img {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: 0;
+    }
+
+    .slot.active .player-figure,
+    .slot.active .pitch-player-card {
       outline: 2px solid #fde047;
       outline-offset: 2px;
     }
@@ -547,14 +572,14 @@
     }
 
     .player-name {
-      display: inline-block;
-      background: white;
+      display: block;
+      background: transparent;
       color: #111827;
-      border-radius: 8px;
-      padding: 3px 7px;
+      border-radius: 0;
+      padding: 0;
       font-size: 10px;
       font-weight: bold;
-      max-width: 100px;
+      max-width: 92px;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -563,16 +588,30 @@
 
     .player-price {
       margin-top: 3px;
-      display: inline-block;
-      background: rgba(255,255,255,0.92);
+      display: block;
+      background: transparent;
       color: #111827;
-      border-radius: 8px;
-      padding: 2px 6px;
-      font-size: 10px;
+      border-radius: 0;
+      padding: 0;
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    .player-opponent {
+      margin-top: 2px;
+      display: block;
+      color: #4b5563;
+      font-size: 8px;
+      font-weight: 700;
+      line-height: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .player-next {
-      margin-top: 3px;
+      margin-top: 4px;
       display: inline-block;
       background: rgba(17,24,39,0.82);
       color: #fde68a;
@@ -585,7 +624,10 @@
     }
 
     .player-badges {
-      margin-top: 2px;
+      position: absolute;
+      top: -8px;
+      right: -7px;
+      margin-top: 0;
       display: flex;
       justify-content: center;
       gap: 2px;
@@ -838,6 +880,49 @@
       flex: 0 0 auto;
     }
 
+    .right-modebar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+      flex: 0 0 auto;
+    }
+
+    .right-mode-title {
+      color: #f9fafb;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .right-mode-actions {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .right-mode-btn {
+      border: 1px solid #3f4450;
+      background: #2f3239;
+      color: white;
+      border-radius: 8px;
+      padding: 6px 9px;
+      font-size: 12px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .right-mode-btn.active {
+      background: #fde047;
+      border-color: #ca8a04;
+      color: #111827;
+    }
+
+    .right-panel.alternative-mode .trade-search,
+    .right-panel.alternative-mode .trade-header {
+      display: none;
+    }
+
     .toggle-chip {
       display: inline-flex;
       align-items: center;
@@ -899,25 +984,53 @@
     }
 
     .alternatives-panel {
-      margin: 4px 4px 8px;
-      padding: 9px;
+      margin: 0 4px 8px;
+      padding: 10px;
       border-radius: 10px;
       background: #111827;
       border: 1px solid rgba(253, 224, 71, 0.24);
     }
 
     .alternatives-title {
-      font-size: 13px;
+      font-size: 16px;
       font-weight: 900;
       color: #f9fafb;
       line-height: 1.2;
     }
 
     .alternatives-subtitle {
-      margin-top: 3px;
+      margin-top: 5px;
       font-size: 11px;
       color: #cbd5e1;
       line-height: 1.25;
+    }
+
+    .alternative-chips {
+      display: flex;
+      gap: 7px;
+      flex-wrap: wrap;
+      margin-top: 9px;
+    }
+
+    .alternative-chip {
+      padding: 4px 7px;
+      border-radius: 7px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid #3f4450;
+      color: #e5e7eb;
+      font-size: 11px;
+      line-height: 1.1;
+    }
+
+    .alternative-captain-warning {
+      margin-top: 9px;
+      padding: 8px 9px;
+      border-radius: 8px;
+      border: 1px solid rgba(250,204,21,0.55);
+      background: rgba(250,204,21,0.13);
+      color: #fde68a;
+      font-size: 11px;
+      line-height: 1.35;
     }
 
     .alternative-rank {
@@ -934,15 +1047,18 @@
     }
 
     .trade-row.alternative {
-      grid-template-columns: 30px minmax(0, 1fr) 58px 58px 76px 64px;
+      grid-template-columns: 30px minmax(0, 1fr) 64px 104px 72px;
       background: rgba(255,255,255,0.025);
     }
 
-    .alternative-score-value {
-      font-weight: 900;
-      font-size: 14px;
-      line-height: 1;
-      text-align: right;
+    .trade-row.alternative .trade-price {
+      min-width: 0;
+      white-space: nowrap;
+    }
+
+    .trade-row.alternative .choose-alt-btn {
+      justify-self: end;
+      width: 68px;
     }
 
     .manual-mini-warning {
@@ -1068,6 +1184,41 @@
       color: #cbd5e1;
       text-align: right;
       margin-top: 3px;
+    }
+
+    .trade-diff {
+      margin-top: 2px;
+      font-size: 10px;
+      font-weight: 800;
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    .trade-diff.positive {
+      color: #86efac;
+    }
+
+    .trade-diff.negative {
+      color: #fecaca;
+    }
+
+    .trade-transfer-note {
+      margin-top: 4px;
+      font-size: 10px;
+      line-height: 1.25;
+      color: #cbd5e1;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .trade-transfer-note .positive {
+      color: #86efac;
+      font-weight: 800;
+    }
+
+    .trade-transfer-note .negative {
+      color: #fecaca;
+      font-weight: 800;
     }
 
     .credit-box {
@@ -1258,6 +1409,10 @@
         gap: 8px;
       }
 
+      .trade-row.alternative {
+        grid-template-columns: 30px minmax(0, 1fr) 104px 72px;
+      }
+
       .trade-position-col,
       .trade-start-col,
       .trade-score-col {
@@ -1296,6 +1451,18 @@
                 <div><strong>Spillere</strong></div>
                 <div id="playerCountValue">0 / 11</div>
               </div>
+              <div class="bank-box">
+                <div><strong>Gns. start</strong></div>
+                <div id="avgStartValue">–</div>
+              </div>
+              <div class="bank-box">
+                <div><strong>High risk</strong></div>
+                <div id="highRiskValue">0</div>
+              </div>
+              <div class="bank-box rule-ok" id="ruleStatusBox">
+                <div><strong>Regler</strong></div>
+                <div id="ruleStatusValue">OK</div>
+              </div>
             </div>
           </div>
 
@@ -1332,7 +1499,6 @@
             </div>
             <div class="strategy-content">
               <div class="strategy-buttons" id="strategyButtons"></div>
-              <div class="captain-summary" id="captainSummary">Anbefalet kaptajn: indlæser...</div>
             </div>
           </div>
 
@@ -1355,7 +1521,7 @@
           </div>
         </div>
 
-        <div class="right-panel">
+        <div class="right-panel" id="rightPanel">
           <div class="topbar-auth">
             <div id="topbarUser" class="topbar-user" style="display:none;"></div>
             <button id="openLoginBtn" class="topbar-btn">Log ind</button>
@@ -1393,6 +1559,13 @@
                 </div>
               </div>
               <div class="data-status-note" id="dataStatusNote"></div>
+            </div>
+          </div>
+
+          <div class="right-modebar">
+            <div class="right-mode-title" id="rightModeTitle">Spillerliste</div>
+            <div class="right-mode-actions">
+              <button id="showPlayerListBtn" class="right-mode-btn active" type="button">Se spillerliste</button>
             </div>
           </div>
 
@@ -1472,6 +1645,7 @@
     const STRATEGY_SQUADS_URL = "data/optimal_squads_by_strategy.json";
     const STRATEGY_DISPLAY_NAMES_URL = "data/strategy_display_names.json";
     const STRATEGY_CONTEXT_URL = "data/current_strategy_context.json";
+    const CURRENT_SQUAD_URL = "data/current_squad.csv";
     const MANUAL_OVERRIDES_URL = "data/manual_player_overrides.csv";
     const MATCH_ODDS_PROBS_URL = "data/match_odds_probs.csv";
     const MODEL_STATUS_URL = "data/model_status_snapshot.json";
@@ -1531,6 +1705,7 @@
     let strategySquads = {};
     let strategyDisplayNames = {};
     let strategyContext = {};
+    let currentSquadOwnership = new Map();
     let manualOverrideMap = new Map();
     let matchOddsRows = [];
     let modelStatus = null;
@@ -1557,11 +1732,18 @@
     const sortSelect = document.getElementById("sortSelect");
     const eligibleOnlyToggle = document.getElementById("eligibleOnlyToggle");
     const tradeList = document.getElementById("tradeList");
+    const rightPanel = document.getElementById("rightPanel");
+    const rightModeTitle = document.getElementById("rightModeTitle");
+    const showPlayerListBtn = document.getElementById("showPlayerListBtn");
     const infoBox = document.getElementById("infoBox");
     const infoBoxToggle = document.getElementById("infoBoxToggle");
     const spentValue = document.getElementById("spentValue");
     const bankValue = document.getElementById("bankValue");
     const playerCountValue = document.getElementById("playerCountValue");
+    const avgStartValue = document.getElementById("avgStartValue");
+    const highRiskValue = document.getElementById("highRiskValue");
+    const ruleStatusBox = document.getElementById("ruleStatusBox");
+    const ruleStatusValue = document.getElementById("ruleStatusValue");
     const statusBox = document.getElementById("statusBox");
     const dataStatusPanel = document.getElementById("dataStatusPanel");
     const dataStatusToggle = document.getElementById("dataStatusToggle");
@@ -1574,7 +1756,6 @@
     const undoBtn = document.getElementById("undoBtn");
     const clearTeamBtn = document.getElementById("clearTeamBtn");
     const strategyButtons = document.getElementById("strategyButtons");
-    const captainSummary = document.getElementById("captainSummary");
 
     const topbarUser = document.getElementById("topbarUser");
     const openLoginBtn = document.getElementById("openLoginBtn");
@@ -1803,7 +1984,7 @@
     }
 
     function renderStrategyControls() {
-      if (!strategyButtons || !captainSummary) return;
+      if (!strategyButtons) return;
 
       strategyButtons.innerHTML = USER_STRATEGIES.map(strategyKey => `
         <button
@@ -1822,18 +2003,11 @@
           render();
         });
       });
-
-      const summary = activeStrategySummary();
-      const captain = captainNameForActiveStrategy() || summary.recommended_captain || "–";
-      captainSummary.innerHTML = `
-        <div class="captain-summary-label">Anbefalet kaptajn</div>
-        <div class="captain-summary-name">${escapeHtml(captain)}</div>
-      `;
     }
 
     function getFlagUrl(flagCode) {
       if (!flagCode) return "";
-      return `https://flagcdn.com/24x18/${flagCode}.png`;
+      return `https://flagcdn.com/80x60/${flagCode}.png`;
     }
 
 
@@ -2110,6 +2284,28 @@ function saveState() {
         || null;
     }
 
+    function getBestKnownStrategyRowForPlayer(player, strategyKey = activeStrategyKey) {
+      if (!player) return null;
+      const currentFormationRow = getStrategyRowForPlayer(player, strategyKey);
+      if (currentFormationRow) return currentFormationRow;
+
+      const formations = strategySquads?.[strategyKey]?.squads_by_formation || {};
+      const allRows = Object.values(formations).flatMap(entry => entry?.squad || []);
+      const matches = allRows.filter(row =>
+        String(row.player_id) === String(player.player_id)
+        || (
+          normalizeName(row.player_name) === normalizeName(player.player_name)
+          && canonicalTeamId(row.team_id) === canonicalTeamId(player.team_id)
+        )
+      );
+
+      return matches.sort((a, b) => {
+        const scoreDiff = Number(b.strategy_score || 0) - Number(a.strategy_score || 0);
+        if (Math.abs(scoreDiff) > 0.0001) return scoreDiff;
+        return Number(b.optimizer_ev || 0) - Number(a.optimizer_ev || 0);
+      })[0] || null;
+    }
+
     function getStrategyRelevantScore(player) {
       const strategyRow = getStrategyRowForPlayer(player);
       const strategyScore = Number(strategyRow?.strategy_score);
@@ -2122,6 +2318,188 @@ function saveState() {
         return ev + (Number.isFinite(start) ? start * 0.65 : 0) + (price ? Math.min(0.35, 1 / Math.max(price, 1)) : 0);
       }
       return getPlayerScore(player);
+    }
+
+    function firstPositiveNumber(values) {
+      for (const value of values) {
+        const num = Number(value);
+        if (Number.isFinite(num) && num > 0) return num;
+      }
+      return null;
+    }
+
+    function normalizeModelScore(value) {
+      const num = Number(value);
+      if (!Number.isFinite(num) || num <= 0) return null;
+      return num > 20 ? num / 10 : num;
+    }
+
+    function firstNormalizedModelScore(values) {
+      for (const value of values) {
+        const num = normalizeModelScore(value);
+        if (num !== null) return num;
+      }
+      return null;
+    }
+
+    function getAlternativeRankParts(player) {
+      // TODO: Backend should export replacement_score per strategy/formation for every pool candidate.
+      const strategyRow = getBestKnownStrategyRowForPlayer(player);
+      return {
+        formationScore: firstNormalizedModelScore([
+          strategyRow?.strategy_score,
+          strategyRow?.total_score,
+          strategyRow?.score
+        ]),
+        ev: firstPositiveNumber([
+          strategyRow?.optimizer_ev,
+          strategyRow?.weighted_group_stage_ev,
+          player?.optimizer_ev,
+          player?.weighted_group_stage_ev,
+          player?.group_stage_ev,
+          player?.ev
+        ]),
+        modelScore: firstNormalizedModelScore([
+          player?.strategy_score,
+          player?.holdet_proxy_score_filled,
+          player?.display_score,
+          player?.score
+        ]),
+        start: getPlayerStart(player) / 10,
+        price: getPlayerPrice(player)
+      };
+    }
+
+    function getAlternativeComparableScore(player) {
+      const rank = getAlternativeRankParts(player);
+      return rank.formationScore ?? rank.ev ?? rank.modelScore ?? null;
+    }
+
+    function getTargetRoundNumber() {
+      const target = Number(strategyContext?.target_round || 1);
+      return Number.isFinite(target) && target > 0 ? target : 1;
+    }
+
+    function transferFeesEnabled() {
+      return getTargetRoundNumber() > 1;
+    }
+
+    function currentSquadKeysForPlayer(player) {
+      const keys = [];
+      if (!player) return keys;
+      const playerId = String(player.player_id || "").trim();
+      if (playerId) keys.push(`id:${playerId}`);
+      keys.push(`name:${buildMergeKey(player.player_name, canonicalTeamId(player.team_id || player.team_name))}`);
+      return keys;
+    }
+
+    function currentSquadOwnershipForPlayer(player) {
+      for (const key of currentSquadKeysForPlayer(player)) {
+        if (currentSquadOwnership.has(key)) return currentSquadOwnership.get(key);
+      }
+      return null;
+    }
+
+    function isOwnedCurrentSquadPlayer(player) {
+      return !!currentSquadOwnershipForPlayer(player);
+    }
+
+    function getTransferCurrentValue(player) {
+      const owned = currentSquadOwnershipForPlayer(player);
+      const currentValue = Number(owned?.current_value);
+      return Number.isFinite(currentValue) && currentValue > 0 ? currentValue : getPlayerPrice(player);
+    }
+
+    function getIncomingTransferFee(player) {
+      if (!transferFeesEnabled()) return 0;
+      if (isOwnedCurrentSquadPlayer(player)) return 0;
+      return Math.round(getTransferCurrentValue(player) * 0.01);
+    }
+
+    function getTransferExpectedGrowth(player) {
+      const target = getTargetRoundNumber();
+      const strategyRow = getBestKnownStrategyRowForPlayer(player);
+      const rowGrowth = Number(strategyRow?.[`round${target}_ev`] ?? strategyRow?.[`round${target}_captain_growth`]);
+      if (Number.isFinite(rowGrowth) && rowGrowth > 0) return rowGrowth;
+      const comparable = getAlternativeComparableScore(player);
+      return Number.isFinite(comparable) ? comparable : 0;
+    }
+
+    function getTransferNetGain(incomingPlayer, outgoingPlayer) {
+      if (!transferFeesEnabled()) return null;
+      const incomingGrowth = getTransferExpectedGrowth(incomingPlayer);
+      const outgoingGrowth = getTransferExpectedGrowth(outgoingPlayer);
+      return incomingGrowth - outgoingGrowth - (getIncomingTransferFee(incomingPlayer) / 1_000_000);
+    }
+
+    function compareReplacementPlayers(a, b, outgoingPlayer) {
+      if (!transferFeesEnabled() || !outgoingPlayer) {
+        return compareAlternativePlayers(a, b);
+      }
+      const netDiff = getTransferNetGain(b, outgoingPlayer) - getTransferNetGain(a, outgoingPlayer);
+      if (Math.abs(netDiff) > 0.0001) return netDiff;
+      return compareAlternativePlayers(a, b);
+    }
+
+    function transferInfoHtml(incomingPlayer, outgoingPlayer) {
+      if (!transferFeesEnabled()) return "";
+      const fee = getIncomingTransferFee(incomingPlayer);
+      const netGain = getTransferNetGain(incomingPlayer, outgoingPlayer);
+      if (!Number.isFinite(netGain)) return fee ? `<div class="trade-transfer-note">Gebyr: ${formatMoney(fee)}</div>` : "";
+      if (netGain <= 0) {
+        return `<div class="trade-transfer-note">Gebyr: ${formatMoney(fee)}<br><span class="negative">Behold nuværende spiller</span></div>`;
+      }
+      return `<div class="trade-transfer-note">Gebyr: ${formatMoney(fee)}<br><span class="positive">Est. netto (proxy): +${formatMoney(Math.round(netGain * 1_000_000))}</span></div>`;
+    }
+
+    function compareAlternativePlayers(a, b) {
+      const aRank = getAlternativeRankParts(a);
+      const bRank = getAlternativeRankParts(b);
+
+      for (const key of ["formationScore", "ev", "modelScore", "start"]) {
+        const aValue = aRank[key];
+        const bValue = bRank[key];
+        if (aValue !== null && bValue !== null && Math.abs(bValue - aValue) > 0.0001) {
+          return bValue - aValue;
+        }
+        if (aValue !== null && bValue === null) return -1;
+        if (aValue === null && bValue !== null) return 1;
+      }
+
+      return aRank.price - bRank.price;
+    }
+
+    function formatSignedScoreDiff(value) {
+      if (!Number.isFinite(value) || Math.abs(value) < 0.05) return "0";
+      const sign = value > 0 ? "+" : "";
+      return `${sign}${value.toFixed(1).replace(".", ",")}`;
+    }
+
+    function formatSignedMoneyDiff(value) {
+      if (!Number.isFinite(value) || Math.abs(value) < 1) return "0";
+      const sign = value > 0 ? "+" : "";
+      return `${sign}${formatMoney(value)}`;
+    }
+
+    function diffClass(value) {
+      if (!Number.isFinite(value) || Math.abs(value) < 0.05) return "";
+      return value > 0 ? "positive" : "negative";
+    }
+
+    function getAvailableForReplacement(currentPlayer) {
+      return getBankLeft() + getPlayerPrice(currentPlayer);
+    }
+
+    function isEliteReplacementContext(currentPlayer) {
+      return getPlayerPrice(currentPlayer) >= 7000000
+        || getAlternativeComparableScore(currentPlayer) >= 8;
+    }
+
+    function isSameTierReplacementCandidate(player, currentPlayer) {
+      if (!isEliteReplacementContext(currentPlayer)) return false;
+      const outgoingPrice = getPlayerPrice(currentPlayer);
+      const sameTierFloor = Math.max(4500000, outgoingPrice * 0.65);
+      return getPlayerPrice(player) >= sameTierFloor;
     }
 
     function hasManualCheck(player) {
@@ -2283,10 +2661,8 @@ function saveState() {
       }, 0);
 
       const playerCount = playerPool.rows || auditPool.player_count || allPlayers.length || 0;
-      const teamCount = playerPool.teams || auditPool.team_count || 0;
       const missingPrices = playerPool.missing_price ?? auditPool.missing_price_count ?? 0;
       const oddsRows = odds.row_count || matchOddsRows.length || 0;
-      const oddsTeams = odds.team_count || 0;
       const formationCount = modelStatus?.formations?.length || optimizerRows.length || 0;
       const bestFormation = modelStatus?.assessment?.best_formation || modelStatus?.best_squad?.selected_formation || currentFormation;
       const optimizerOk = optimizerProblems === 0 && formationCount === 7;
@@ -2298,9 +2674,9 @@ function saveState() {
       dataStatusDate.textContent = `Priser ${holdetApiDate}`;
       dataStatusSummary.textContent = `${formatMoney(playerCount)} spillere · ${formatMoney(missingPrices)} manglende priser · optimizer ${optimizerDate}`;
       dataStatusGrid.innerHTML = [
-        dataStatusItem("Spillere", `${formatMoney(playerCount)} / ${teamCount} lande`, playerCount ? "ok" : "warn"),
+        dataStatusItem("Spillere", `${formatMoney(playerCount)} i poolen`, playerCount ? "ok" : "warn"),
         dataStatusItem("Priser", `${formatMoney(missingPrices)} mangler · ${holdetApiDate}`, missingPrices ? "warn" : "ok"),
-        dataStatusItem("Odds", `${formatMoney(oddsRows)} kampe / ${oddsTeams} lande`, oddsRows ? "warn" : "error"),
+        dataStatusItem("Odds", `${formatMoney(oddsRows)} kampe`, oddsRows ? "warn" : "error"),
         dataStatusItem("Optimizer", `${formationCount}/7 OK · ${bestFormation} · ${optimizerDate}`, optimizerOk ? "ok" : "warn"),
         dataStatusItem("Audit", auditOk ? "OK" : `${optimizerProblems} fejl/advarsler`, auditOk ? "ok" : "warn"),
         dataStatusItem("Startdata", `Transfermarkt · ${transfermarktDate}`, "ok"),
@@ -2406,6 +2782,13 @@ function saveState() {
       if (!nextFixture) return "Næste kamp: ikke fundet";
 
       return `Næste kamp: ${teamDisplayName(nextFixture.opponent)}`;
+    }
+
+    function nextOpponentText(teamId) {
+      const nextFixture = getNextFixtureForTeam(teamId);
+      if (!nextFixture) return "";
+
+      return teamDisplayName(nextFixture.opponent);
     }
 
     function getCurrentSlots() {
@@ -2646,7 +3029,7 @@ function saveState() {
       const usedPlayerIds = new Set(Object.values(squad).filter(Boolean).map(String));
       const slotPosition = activeSlot.positionCode || activeSlot.position;
 
-      return allPlayers
+      const candidates = allPlayers
         .filter(player => !usedPlayerIds.has(String(player.player_id)))
         .filter(player => samePosition(player.position, slotPosition))
         .filter(player => !isManualAvoidPlayer(player))
@@ -2657,35 +3040,67 @@ function saveState() {
           activeSlotKey = previousActiveSlot;
           return disabledReason === "";
         })
-        .sort((a, b) => {
-          const scoreDiff = getStrategyRelevantScore(b) - getStrategyRelevantScore(a);
-          if (Math.abs(scoreDiff) > 0.0001) return scoreDiff;
-          const evDiff = Number(b.optimizer_ev || 0) - Number(a.optimizer_ev || 0);
-          if (Math.abs(evDiff) > 0.0001) return evDiff;
-          return getPlayerStart(b) - getPlayerStart(a);
+        .sort((a, b) => compareReplacementPlayers(a, b, currentPlayer));
+
+      if (!isEliteReplacementContext(currentPlayer)) {
+        return candidates.slice(0, 8);
+      }
+
+      const currentScore = getAlternativeComparableScore(currentPlayer);
+      const highScoreCandidates = candidates
+        .filter(player => {
+          const score = getAlternativeComparableScore(player);
+          return Number.isFinite(score) && Number.isFinite(currentScore) && score >= currentScore - 1.5;
         })
-        .slice(0, 8);
+        .sort((a, b) => compareReplacementPlayers(a, b, currentPlayer));
+      const highScoreIds = new Set(highScoreCandidates.map(player => String(player.player_id)));
+      const sameTierCandidates = candidates
+        .filter(player => isSameTierReplacementCandidate(player, currentPlayer))
+        .filter(player => !highScoreIds.has(String(player.player_id)))
+        .sort((a, b) => compareReplacementPlayers(a, b, currentPlayer))
+        .slice(0, 5);
+      const prioritizedIds = new Set([
+        ...highScoreCandidates.map(player => String(player.player_id)),
+        ...sameTierCandidates.map(player => String(player.player_id))
+      ]);
+      const remainingCandidates = candidates.filter(player => !prioritizedIds.has(String(player.player_id)));
+
+      return [...highScoreCandidates, ...sameTierCandidates, ...remainingCandidates].slice(0, 8);
     }
 
     function renderAlternativePanel(activeSlot, currentPlayer) {
       const alternatives = getBestAlternativesForActiveSlot(activeSlot, currentPlayer);
       const titleName = currentPlayer?.player_name || activeSlot?.position || "plads";
       const strategyName = strategyDisplayName(activeStrategyKey);
+      const positionLabel = normalizePositionLabel(currentPlayer?.position || activeSlot?.positionCode || activeSlot?.position);
+      const availableForReplacement = getAvailableForReplacement(currentPlayer);
+      const currentPrice = getPlayerPrice(currentPlayer);
+      const captainWarning = currentPlayer && isCaptainPlayer(currentPlayer)
+        ? `
+          <div class="alternative-captain-warning">
+            <strong>Du skifter den anbefalede kaptajn.</strong><br>
+            Ny kaptajn vælges efter skift ud fra bedste lokale kandidat.
+          </div>
+        `
+        : "";
 
       if (!alternatives.length) {
         return `
           <div class="alternatives-panel">
-            <div class="alternatives-title">Bedste alternativer til ${escapeHtml(titleName)}</div>
-            <div class="alternatives-subtitle">Strategi: ${escapeHtml(strategyName)} · Ingen gyldige alternativer inden for position, budget og landeloft.</div>
+            <div class="alternatives-title">Bedste alternativer til ${escapeHtml(titleName)} (${escapeHtml(positionLabel)})</div>
+            <div class="alternatives-subtitle">Strategi: ${escapeHtml(strategyName)} · Til rådighed ved skift: ${formatMoney(availableForReplacement)} · Ingen gyldige alternativer inden for position, budget og landeloft.</div>
+            ${captainWarning}
           </div>
         `;
       }
 
       const rows = alternatives.map((player, index) => {
-        const score = getStrategyRelevantScore(player);
+        const priceDiff = getPlayerPrice(player) - currentPrice;
         const warning = hasManualCheck(player)
           ? `<span class="manual-mini-warning" title="Tjek start">Tjek start</span>`
           : "";
+        const priceDiffHtml = `<div class="trade-diff ${diffClass(priceDiff)}">${formatSignedMoneyDiff(priceDiff)}</div>`;
+        const transferHtml = transferInfoHtml(player, currentPlayer);
         return `
           <div class="trade-row alternative">
             <span class="alternative-rank">${index + 1}</span>
@@ -2698,13 +3113,11 @@ function saveState() {
               <div class="trade-start-value">${startPct(getPlayerStart(player))}</div>
               <div class="trade-start-label">Start</div>
             </div>
-            <div class="trade-score-col">
-              <div class="alternative-score-value">${Number.isFinite(score) ? score.toFixed(1).replace(".", ",") : "–"}</div>
-              <div class="trade-score-label">Score</div>
-            </div>
             <div>
               <div class="trade-price">${formatMoney(getPlayerPrice(player))}</div>
               <div class="trade-subprice">Pris</div>
+              ${priceDiffHtml}
+              ${transferHtml}
             </div>
             <button class="plus-btn choose-alt-btn" data-player-id="${escapeHtml(player.player_id)}" title="Vælg ${escapeHtml(player.player_name || "")}">Vælg</button>
           </div>
@@ -2713,8 +3126,15 @@ function saveState() {
 
       return `
         <div class="alternatives-panel">
-          <div class="alternatives-title">Bedste alternativer til ${escapeHtml(titleName)}</div>
-          <div class="alternatives-subtitle">Strategi: ${escapeHtml(strategyName)} · samme position · budget og max 4 pr. land respekteres</div>
+          <div class="alternatives-title">Bedste alternativer til ${escapeHtml(titleName)} (${escapeHtml(positionLabel)})</div>
+          <div class="alternatives-subtitle">Strategi: ${escapeHtml(strategyName)}</div>
+          <div class="alternative-chips">
+            <span class="alternative-chip">Position: ${escapeHtml(positionLabel)}</span>
+            <span class="alternative-chip">Til rådighed ved skift: ${formatMoney(availableForReplacement)}</span>
+            <span class="alternative-chip">Max 4 pr. land</span>
+            <span class="alternative-chip">Viser: ${alternatives.length}</span>
+          </div>
+          ${captainWarning}
         </div>
         ${rows}
       `;
@@ -3591,10 +4011,23 @@ function saveState() {
       const spent = getSpentBudget();
       const bank = getBankLeft();
       const count = getPlayerCount();
+      const selectedPlayers = Object.values(squad)
+        .map(playerId => getPlayerById(playerId))
+        .filter(Boolean);
+      const avgStart = selectedPlayers.length
+        ? selectedPlayers.reduce((sum, player) => sum + getPlayerStart(player), 0) / selectedPlayers.length
+        : 0;
+      const highRiskCount = selectedPlayers.filter(player => String(player.availability_risk || "").toLowerCase() === "high_risk").length;
+      const ruleIssues = getSquadConstraintIssues(squad);
 
       spentValue.textContent = formatMoney(spent);
       bankValue.textContent = formatMoney(bank);
       playerCountValue.textContent = `${count} / 11`;
+      avgStartValue.textContent = selectedPlayers.length ? `${Math.round(avgStart)}%` : "–";
+      highRiskValue.textContent = String(highRiskCount);
+      ruleStatusValue.textContent = ruleIssues.length ? "Tjek regler" : "OK";
+      ruleStatusBox.classList.toggle("rule-warn", ruleIssues.length > 0);
+      ruleStatusBox.classList.toggle("rule-ok", ruleIssues.length === 0);
       updateUndoButton();
     }
 
@@ -3605,25 +4038,33 @@ function saveState() {
         const player = getPlayerById(squad[slot.key]);
         const flagUrl = player ? getFlagUrl(getPlayerFlagCode(player)) : "";
         const isActive = activeSlotKey === slot.key ? "active" : "";
-        const nextText = player ? nextMatchText(player.team_id) : "";
-        const captainBadge = player && isCaptainPlayer(player)
-          ? `<div class="slot-captain-badge">Kaptajn</div>`
+        const opponentText = player ? nextOpponentText(player.team_id) : "";
+        const captainArmband = player && isCaptainPlayer(player)
+          ? `<span class="pitch-captain-armband" title="Kaptajn" aria-label="Kaptajn">C</span>`
           : "";
 
         return `
           <div class="slot ${isActive}" style="left:${slot.x}%; top:${slot.y}%;">
-            ${captainBadge}
-            <div class="player-figure ${player ? "" : "empty"}">
-              ${player
-                ? (flagUrl
-                    ? `<img class="flag-img" src="${flagUrl}" alt="${teamDisplayName(player.team_id, player.team_name)}">`
-                    : (teamShortLabel(player.team_id, slot.positionCode) || ""))
-                : ""}
-            </div>
-            <div class="player-name">${player ? player.player_name : slot.position}</div>
-            <div class="player-price">${player ? formatMoney(getPlayerPrice(player)) : "Tom plads"}</div>
-            ${player ? `<div class="player-next">${nextText}</div>` : ""}
-            ${player ? playerBadges(player) : ""}
+            ${player ? `
+              <div class="pitch-player-card">
+                <div class="pitch-flag-row">
+                  ${captainArmband}
+                  <div class="pitch-player-flag">
+                    ${flagUrl
+                      ? `<img class="flag-img" src="${flagUrl}" alt="${escapeHtml(teamDisplayName(player.team_id, player.team_name))}">`
+                      : escapeHtml(teamShortLabel(player.team_id, slot.positionCode) || "")}
+                  </div>
+                </div>
+                ${playerBadges(player)}
+                <div class="player-name">${escapeHtml(player.player_name)}</div>
+                <div class="player-price">${formatMoney(getPlayerPrice(player))}</div>
+                ${opponentText ? `<div class="player-opponent">${escapeHtml(opponentText)}</div>` : ""}
+              </div>
+            ` : `
+              <div class="player-figure empty"></div>
+              <div class="player-name">${slot.position}</div>
+              <div class="player-price">Tom plads</div>
+            `}
             <div class="slot-actions">
               <button class="slot-btn ${player ? "remove" : ""}" data-slot-key="${slot.key}" data-action="${player ? "remove" : "select"}">
                 ${player ? "Fjern" : "Vælg"}
@@ -3685,12 +4126,19 @@ function saveState() {
 
       const currentPlayerForActiveSlot = activeSlot ? getPlayerById(squad[activeSlot.key]) : null;
       if (activeSlotKey && activeSlot && currentPlayerForActiveSlot && !search && !team && (!position || samePosition(position, activeSlot.positionCode || activeSlot.position))) {
+        rightPanel?.classList.add("alternative-mode");
+        if (rightModeTitle) rightModeTitle.textContent = "Alternativer";
+        showPlayerListBtn?.classList.remove("active");
         tradeList.innerHTML = renderAlternativePanel(activeSlot, currentPlayerForActiveSlot);
         tradeList.querySelectorAll(".plus-btn").forEach(btn => {
           btn.addEventListener("click", () => addPlayerToSlot(btn.dataset.playerId, activeSlot.key));
         });
         return;
       }
+
+      rightPanel?.classList.remove("alternative-mode");
+      if (rightModeTitle) rightModeTitle.textContent = "Spillerliste";
+      showPlayerListBtn?.classList.add("active");
 
       if (search) {
         players = players.filter(player =>
@@ -3961,6 +4409,34 @@ function saveState() {
       }
     }
 
+    async function loadCurrentSquadOwnership() {
+      try {
+        const response = await fetch(CURRENT_SQUAD_URL);
+        if (!response.ok) return;
+
+        const rows = parseCsv(await response.text());
+        currentSquadOwnership = new Map();
+        rows.forEach(row => {
+          const entry = {
+            player_id: String(row.player_id || "").trim(),
+            player_name: String(row.player_name || "").trim(),
+            team_id: canonicalTeamId(row.team_id),
+            position: normalizePositionLabel(row.position || ""),
+            current_value: Number(row.current_value || 0),
+            owned_since_round: Number(row.owned_since_round || 0)
+          };
+          if (entry.player_id) {
+            currentSquadOwnership.set(`id:${entry.player_id}`, entry);
+          }
+          if (entry.player_name && entry.team_id) {
+            currentSquadOwnership.set(`name:${buildMergeKey(entry.player_name, entry.team_id)}`, entry);
+          }
+        });
+      } catch (_error) {
+        currentSquadOwnership = new Map();
+      }
+    }
+
     function attachStartSecurity(players, startMap) {
       return players.map(player => {
         const mergeKey = buildMergeKey(player.player_name, player.team_id, player.team_name);
@@ -4184,6 +4660,16 @@ function saveState() {
         dataStatusToggle.setAttribute("aria-expanded", String(!isCollapsed));
       });
 
+      showPlayerListBtn.addEventListener("click", () => {
+        activeSlotKey = null;
+        activeSlotText.textContent = "Ingen valgt";
+        rightPanel?.classList.remove("alternative-mode");
+        searchInput.value = "";
+        teamFilter.value = "";
+        positionFilter.value = "";
+        render();
+      });
+
       formationSelect.addEventListener("change", () => {
         currentFormation = formationSelect.value;
         activeSlotKey = null;
@@ -4274,6 +4760,7 @@ function saveState() {
           loadOptimalSquads(),
           loadStrategyData(),
           loadManualOverrides(),
+          loadCurrentSquadOwnership(),
           loadMatchOddsProbs(),
           loadDataStatus()
         ]);

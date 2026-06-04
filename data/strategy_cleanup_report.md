@@ -34,5 +34,5 @@
 ## TODO
 
 - UI-visning af strategiknapper og kaptajnmarkering er ikke ændret i denne opgave.
-- Transfergebyroptimering fra aktuel trup er forberedt som data-struktur, men ikke fuldt implementeret.
+- Transfergebyr efter runde 1 indgår i next_round, når data/current_squad.csv indeholder brugerens nuværende hold.
 - confirmed_lineups påvirker endnu ikke optimizer direkte; strukturen er klar til integration.

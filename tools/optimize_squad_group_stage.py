@@ -37,6 +37,7 @@ BUDGET_M = 50.0
 SQUAD_SIZE = 11
 MAX_PER_TEAM = 4
 LOW_CONDITIONAL_THRESHOLD = 0.75
+TRANSFER_FEE_RATE = 0.01
 DK_TZ = ZoneInfo("Europe/Copenhagen")
 
 FORMATIONS: dict[str, dict[str, int]] = {
@@ -244,6 +245,74 @@ def load_manual_overrides() -> pd.DataFrame:
     return overrides[columns].drop_duplicates(subset=["player_name", "team_id"], keep="last")
 
 
+def load_current_squad() -> pd.DataFrame:
+    columns = ["player_id", "player_name", "team_id", "position", "current_value", "owned_since_round"]
+    if not CURRENT_SQUAD_PATH.exists():
+        return pd.DataFrame(columns=columns)
+    squad = pd.DataFrame(read_csv(CURRENT_SQUAD_PATH))
+    if squad.empty:
+        return pd.DataFrame(columns=columns)
+    for col in columns:
+        if col not in squad.columns:
+            squad[col] = ""
+    squad["player_id"] = squad["player_id"].astype(str).str.strip()
+    squad["player_name"] = squad["player_name"].astype(str).str.strip()
+    squad["team_id"] = squad["team_id"].astype(str).str.strip().str.upper()
+    squad["position"] = squad["position"].map(standardize_position)
+    squad["current_value"] = pd.to_numeric(squad["current_value"], errors="coerce")
+    squad["owned_since_round"] = pd.to_numeric(squad["owned_since_round"], errors="coerce")
+    squad = squad[(squad["player_id"] != "") | ((squad["player_name"] != "") & (squad["team_id"] != ""))].copy()
+    return squad[columns].drop_duplicates(subset=["player_id", "player_name", "team_id"], keep="last")
+
+
+def attach_current_squad_layer(players: pd.DataFrame) -> pd.DataFrame:
+    current = load_current_squad()
+    work = players.copy()
+    work["current_squad_current_value"] = pd.NA
+    work["owned_since_round"] = pd.NA
+    work["is_current_squad_player"] = False
+    if current.empty:
+        return work
+
+    with_ids = current[current["player_id"] != ""].copy()
+    if not with_ids.empty:
+        id_layer = with_ids[["player_id", "current_value", "owned_since_round"]].rename(
+            columns={
+                "current_value": "current_squad_current_value_by_id",
+                "owned_since_round": "owned_since_round_by_id",
+            }
+        )
+        work = work.merge(id_layer, on="player_id", how="left")
+        matched = work["current_squad_current_value_by_id"].notna() | work["owned_since_round_by_id"].notna()
+        work.loc[matched, "current_squad_current_value"] = work.loc[matched, "current_squad_current_value_by_id"]
+        work.loc[matched, "owned_since_round"] = work.loc[matched, "owned_since_round_by_id"]
+        work.loc[matched, "is_current_squad_player"] = True
+        work = work.drop(columns=["current_squad_current_value_by_id", "owned_since_round_by_id"])
+
+    by_name = current[(current["player_name"] != "") & (current["team_id"] != "")].copy()
+    if not by_name.empty:
+        by_name["current_squad_key"] = by_name["player_name"].str.casefold() + "|" + by_name["team_id"]
+        work["current_squad_key"] = work["player_name"].astype(str).str.casefold() + "|" + work["team_id"].astype(str)
+        name_layer = by_name[["current_squad_key", "current_value", "owned_since_round"]].rename(
+            columns={
+                "current_value": "current_squad_current_value_by_name",
+                "owned_since_round": "owned_since_round_by_name",
+            }
+        )
+        work = work.merge(name_layer, on="current_squad_key", how="left")
+        unmatched = ~work["is_current_squad_player"].astype(bool)
+        matched = unmatched & (
+            work["current_squad_current_value_by_name"].notna()
+            | work["owned_since_round_by_name"].notna()
+        )
+        work.loc[matched, "current_squad_current_value"] = work.loc[matched, "current_squad_current_value_by_name"]
+        work.loc[matched, "owned_since_round"] = work.loc[matched, "owned_since_round_by_name"]
+        work.loc[matched, "is_current_squad_player"] = True
+        work = work.drop(columns=["current_squad_key", "current_squad_current_value_by_name", "owned_since_round_by_name"])
+
+    return work
+
+
 def load_fixture_lookup() -> dict[tuple[str, str, str], dict[str, Any]]:
     lookup: dict[tuple[str, str, str], dict[str, Any]] = {}
     for row in read_csv(FIXTURE_MULTIPLIERS_PATH):
@@ -385,6 +454,7 @@ def load_players() -> pd.DataFrame:
     players = players.dropna(subset=["player_id", "player_name", "team_id", "position", "price_m"]).copy()
     players = players[players["position"].isin(["GK", "DEF", "MID", "FWD"])].copy()
     players = players[players["price_m"] > 0].copy()
+    players = attach_current_squad_layer(players)
     players = add_player_round_context(players)
     return add_strategy_scores(players.reset_index(drop=True))
 
@@ -421,12 +491,21 @@ def add_strategy_scores(players: pd.DataFrame) -> pd.DataFrame:
     work = players.copy()
     start = starter_component(work)
     target_round = int(get_current_target_round().get("target_round") or 1)
+    current_value = pd.to_numeric(work.get("current_squad_current_value"), errors="coerce").fillna(work["price_m"] * 1_000_000)
+    owned = work.get("is_current_squad_player", False).fillna(False).astype(bool)
+    transfer_fee = pd.Series(0.0, index=work.index)
+    if target_round > 1:
+        transfer_fee = current_value.fillna(work["price_m"] * 1_000_000) * TRANSFER_FEE_RATE
+        transfer_fee.loc[owned] = 0.0
+    work["transfer_fee"] = transfer_fee.round(0).astype(int)
+    work["transfer_fee_m"] = transfer_fee / 1_000_000.0
 
     work["score_next_round"] = (
         2.20 * work[f"round{target_round}_ev"]
         + 0.82 * work["optimizer_ev"]
         + round_fixture_bonus(work, target_round)
         + start
+        - work["transfer_fee_m"]
     ).clip(lower=0.0)
 
     round12_value = 1.05 * work["round1_ev"] + 1.00 * work["round2_ev"]
@@ -696,6 +775,11 @@ def squad_records(squad: pd.DataFrame) -> list[dict[str, Any]]:
         "manual_captain_note",
         "manual_note",
         "manual_avoid",
+        "is_current_squad_player",
+        "current_squad_current_value",
+        "owned_since_round",
+        "transfer_fee",
+        "transfer_fee_m",
         "captain_eligible",
         "captain_score",
         "captain_score_reason",
@@ -778,7 +862,7 @@ def write_strategy_metadata(context: dict[str, Any]) -> None:
         "## TODO",
         "",
         "- UI-visning af strategiknapper og kaptajnmarkering er ikke ændret i denne opgave.",
-        "- Transfergebyroptimering fra aktuel trup er forberedt som data-struktur, men ikke fuldt implementeret.",
+        "- Transfergebyr efter runde 1 indgår i next_round, når data/current_squad.csv indeholder brugerens nuværende hold.",
         "- confirmed_lineups påvirker endnu ikke optimizer direkte; strukturen er klar til integration.",
     ]
     OUT_CLEANUP_REPORT.write_text("\n".join(lines) + "\n", encoding="utf-8")
