@@ -10,3 +10,11 @@ leo_pereira__bra,Leo Pereira,BRA,0.7,0.76,0.9,0.97,medium_risk,medium,,,,,,,,,"M
 noni_madueke__eng,Noni Madueke,ENG,0.38,0.45,0.72,0.97,medium_risk,high,,,,,,,,,Manual context review: recent national-team usage indicates rotation/substitute role rather than expected first-choice starter.
 raul_jimenez__mex,Raul Jimenez,MEX,,,,,medium_risk,,,,,,,,,,Manual context review: currently available and selected as a likely starter. Previous high-risk availability flag appears stale; retain medium caution.
 harry_kane__eng,Harry Kane,ENG,0.97,0.99,0.99,0.98,low_risk,low,,,,,,,,,"Manual context review: nailed-on England starter whenever available. Any uncertainty should be represented as availability risk, not competition for the starting role."
+gregor_kobel__sui,Gregor Kobel,SUI,0.92,0.96,0.98,0.97,low_risk,low,,,,,,,,,Manual context review: established Switzerland first-choice goalkeeper. Recent friendly benches assessed as rotation.
+arthur_theate__bel,Arthur Theate,BEL,0.86,0.91,0.96,0.95,low_risk,low,,,,,,,,,Manual context review: regular Belgium starter. Recent friendly rotation should not outweigh qualification usage.
+silvan_widmer__sui,Silvan Widmer,SUI,0.84,0.89,0.96,0.94,medium_risk,medium,,,,,,,,,Manual context review: expected Switzerland right-back. Recent reduced friendly minutes assessed mainly as managed minutes.
+raphinha__bra,Raphinha,BRA,0.86,0.96,0.96,0.9,medium_risk,low,,,,,,,,,Manual context review: important Brazil starter when available. Remaining uncertainty represented as availability risk.
+mahmoud_trezeguet__egy,Mahmoud Trezeguet,EGY,0.92,0.96,0.98,0.96,low_risk,low,,,,,,,,,Manual context review: expected Egypt starter with an advanced attacking role despite Holdet midfield classification.
+antonio_nusa__nor,Antonio Nusa,NOR,0.82,0.88,0.96,0.93,medium_risk,medium,,,,,,,,,"Manual context review: likely Norway starter based on recent starts, minutes and expected-lineup assessment."
+cesar_montes__mex,Cesar Montes,MEX,0.72,0.82,0.94,0.9,medium_risk,medium,,,,,,,,,"Manual context review: included in expected Mexico starting lineup, but recent mixed usage warrants continued caution."
+phillipp_mwene__aut,Phillipp Mwene,AUT,0.76,0.82,0.95,0.93,medium_risk,medium,,,,,,,,,"Manual context review: frequent Austria starter with substantial recent minutes, but defensive role competition remains."

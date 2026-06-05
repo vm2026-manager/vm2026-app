@@ -40,7 +40,7 @@ Metode: raw score = recency-weighted competitive start score, competitive start 
 | GER | 3 | Alexander Nübel | 0.2719 | transfermarkt_availability_split_2026_06_05 | 3.0 | 1 | 0.9359 |  | 0.0554 | 1.0001 |
 | GER | 4 | Finn Dahmen | 0.048 | transfermarkt_availability_split_2026_06_05 | 0.0 |  | 0.8879 |  | 0.0151 | 1.0001 |
 | GER | 5 | Jonas Urbig | 0.0456 | transfermarkt_availability_split_2026_06_05 | 0.0 |  | 0.75 |  | 0.0151 | 1.0001 |
-| SUI | 1 | Yvon Mvogo | 0.4983 | transfermarkt_availability_split_2026_06_05 | 12.0 | 2 | 0.8504 |  | 0.4893 | 0.9999 |
-| SUI | 2 | Gregor Kobel | 0.3683 | transfermarkt_availability_split_2026_06_05 | 20.0 | 10 | 0.8709 |  | 0.4806 | 0.9999 |
-| SUI | 3 | Marvin Keller | 0.0485 | transfermarkt_availability_split_2026_06_05 | 0.0 | 0 | 0.915 |  | 0.015 | 0.9999 |
-| SUI | 4 | Pascal Loretz | 0.0442 | transfermarkt_availability_split_2026_06_05 | 0.0 |  | 0.6704 |  | 0.015 | 0.9999 |
+| SUI | 1 | Gregor Kobel | 0.92 | transfermarkt_availability_split_2026_06_05+context_override | 20.0 | 10 | 0.97 | yes | 0.9174 | 1.0 |
+| SUI | 2 | Yvon Mvogo | 0.4983 | transfermarkt_availability_split_2026_06_05 | 12.0 | 2 | 0.8504 |  | 0.0524 | 1.0 |
+| SUI | 3 | Marvin Keller | 0.0485 | transfermarkt_availability_split_2026_06_05 | 0.0 | 0 | 0.915 |  | 0.0151 | 1.0 |
+| SUI | 4 | Pascal Loretz | 0.0442 | transfermarkt_availability_split_2026_06_05 | 0.0 |  | 0.6704 |  | 0.0151 | 1.0 |
