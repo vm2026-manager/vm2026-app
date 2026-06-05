@@ -313,7 +313,7 @@
       justify-content: center;
       padding: 20px;
       background: rgba(17, 24, 39, 0.54);
-      backdrop-filter: blur(2px);
+      pointer-events: none;
     }
 
     .optimizer-loading-overlay[hidden] {
@@ -332,6 +332,29 @@
       box-shadow: 0 12px 30px rgba(17, 24, 39, 0.28);
       font-size: 14px;
       font-weight: bold;
+      pointer-events: auto;
+    }
+
+    .optimizer-loading-copy {
+      display: grid;
+      gap: 3px;
+    }
+
+    .optimizer-loading-detail {
+      color: #4b5563;
+      font-size: 12px;
+      font-weight: normal;
+    }
+
+    .optimizer-cancel-btn {
+      margin-left: 8px;
+      padding: 7px 10px;
+      border: 0;
+      border-radius: 6px;
+      background: #111827;
+      color: #ffffff;
+      font-weight: bold;
+      cursor: pointer;
     }
 
     .optimizer-loading-spinner {
@@ -1578,7 +1601,11 @@
           >
             <div class="optimizer-loading-status">
               <span class="optimizer-loading-spinner" aria-hidden="true"></span>
-              <span>Finder den bedste kombination…</span>
+              <span class="optimizer-loading-copy">
+                <span>Finder den bedste kombination…</span>
+                <span class="optimizer-loading-detail">Du kan fortsat bruge og scrolle siden.</span>
+              </span>
+              <button id="cancelOptimizerBtn" class="optimizer-cancel-btn" type="button">Annullér</button>
             </div>
           </div>
         </div>
@@ -1819,8 +1846,14 @@
     const clearTeamBtn = document.getElementById("clearTeamBtn");
     const strategyButtons = document.getElementById("strategyButtons");
     const optimizerLoadingOverlay = document.getElementById("optimizerLoadingOverlay");
+    const cancelOptimizerBtn = document.getElementById("cancelOptimizerBtn");
     const fillMissingButtonText = fillMissingBtn.textContent;
     let optimizerIsBusy = false;
+    let activeAutofillWorker = null;
+    let activeAutofillCancel = null;
+    const AUTOFILL_TIMEOUT_MS = 20000;
+    const AUTOFILL_MIN_LOADING_MS = 750;
+    let optimizerBusyStartedAt = 0;
 
     const topbarUser = document.getElementById("topbarUser");
     const openLoginBtn = document.getElementById("openLoginBtn");
@@ -1967,6 +2000,7 @@
 
     function setOptimizerBusy(isBusy) {
       optimizerIsBusy = isBusy;
+      if (isBusy) optimizerBusyStartedAt = performance.now();
       optimizerLoadingOverlay.hidden = !isBusy;
       fillMissingBtn.textContent = isBusy ? "Beregner…" : fillMissingButtonText;
 
@@ -1979,6 +2013,80 @@
       return new Promise(resolve => {
         requestAnimationFrame(() => requestAnimationFrame(resolve));
       });
+    }
+
+    async function waitForMinimumOptimizerLoadingTime() {
+      const remaining = AUTOFILL_MIN_LOADING_MS - (performance.now() - optimizerBusyStartedAt);
+      if (remaining > 0) {
+        await new Promise(resolve => setTimeout(resolve, remaining));
+      }
+    }
+
+    function cancelActiveAutofill(message = "Beregningen blev afbrudt.") {
+      if (activeAutofillCancel) activeAutofillCancel(message);
+    }
+
+    function runAutofillWorker(payload, options = {}) {
+      return new Promise((resolve, reject) => {
+        const worker = new Worker("./autofill-optimizer-worker.js", { type: "module" });
+        const requestId = `${Date.now()}-${Math.random().toString(16).slice(2)}`;
+        let settled = false;
+
+        activeAutofillWorker = worker;
+
+        const finish = callback => value => {
+          if (settled) return;
+          settled = true;
+          clearTimeout(timeoutId);
+          worker.terminate();
+          if (activeAutofillWorker === worker) activeAutofillWorker = null;
+          if (activeAutofillCancel === cancel) activeAutofillCancel = null;
+          callback(value);
+        };
+        const succeed = finish(resolve);
+        const fail = finish(reject);
+        const cancel = message => fail(new Error(message || "Beregningen blev afbrudt."));
+        activeAutofillCancel = cancel;
+        const timeoutId = setTimeout(
+          () => fail(new Error(`Beregningen blev afbrudt efter ${AUTOFILL_TIMEOUT_MS / 1000} sekunder.`)),
+          AUTOFILL_TIMEOUT_MS
+        );
+
+        worker.onmessage = event => {
+          if (event.data?.requestId !== requestId) return;
+          if (!event.data.ok) {
+            fail(new Error(event.data.error || "Worker-beregningen fejlede."));
+            return;
+          }
+          succeed(event.data);
+        };
+        worker.onerror = event => {
+          fail(new Error(event.message || "Worker-beregningen fejlede."));
+        };
+        worker.postMessage({ requestId, payload, forceError: options.forceError === true });
+      });
+    }
+
+    function buildAutofillWorkerPayload(emptySlots, bankLeft, usedIdsBase, teamCountsBase) {
+      return {
+        slots: emptySlots.map(slot => ({
+          key: slot.key,
+          position: normalizePositionLabel(slot.positionCode || slot.position)
+        })),
+        players: allPlayers.map(player => ({
+          id: String(player.player_id),
+          position: normalizePositionLabel(player.position),
+          team: playerTeamKey(player),
+          price: getPlayerPrice(player),
+          score: getPlayerScore(player),
+          start: getPlayerStart(player)
+        })),
+        bankLeft,
+        usedIds: [...usedIdsBase],
+        teamCounts: teamCountsBase,
+        maxPerTeam: MAX_PER_TEAM,
+        maxDurationMs: AUTOFILL_TIMEOUT_MS - 1000
+      };
     }
 
     function escapeHtml(value) {
@@ -3724,70 +3832,6 @@ function saveState() {
       return parts;
     }
 
-    function solveMissingSlotsBacktracking(slotCandidates, bankLeft, usedIdsBase, teamCountsBase, mode = "best") {
-      let bestSolution = null;
-      let bestMetric = mode === "best" ? -Infinity : Infinity;
-
-      const optimisticTail = new Array(slotCandidates.length + 1).fill(0);
-      if (mode === "best") {
-        for (let i = slotCandidates.length - 1; i >= 0; i--) {
-          const bestCandidateScore = slotCandidates[i].candidates.length
-            ? getPlayerScore(slotCandidates[i].candidates[0])
-            : 0;
-          optimisticTail[i] = optimisticTail[i + 1] + bestCandidateScore;
-        }
-      }
-
-      function dfs(idx, localSquadAdds, usedIds, teamCounts, extraSpent, totalScore) {
-        if (idx >= slotCandidates.length) {
-          if (mode === "best") {
-            if (totalScore > bestMetric) {
-              bestMetric = totalScore;
-              bestSolution = { ...localSquadAdds };
-            }
-          } else {
-            if (extraSpent < bestMetric) {
-              bestMetric = extraSpent;
-              bestSolution = { ...localSquadAdds };
-            }
-          }
-          return;
-        }
-
-        if (mode === "best" && totalScore + optimisticTail[idx] < bestMetric) return;
-
-        const { slot, candidates } = slotCandidates[idx];
-
-        for (const player of candidates) {
-          const playerIdStr = String(player.player_id);
-          const price = getPlayerPrice(player);
-          const newSpent = extraSpent + price;
-
-          if (newSpent > bankLeft) continue;
-          if (usedIds.has(playerIdStr)) continue;
-
-          const teamKey = playerTeamKey(player);
-          const currentCount = teamCounts[teamKey] || 0;
-          if (currentCount >= MAX_PER_TEAM) continue;
-
-          localSquadAdds[slot.key] = player.player_id;
-          usedIds.add(playerIdStr);
-          teamCounts[teamKey] = currentCount + 1;
-
-          dfs(idx + 1, localSquadAdds, usedIds, teamCounts, newSpent, totalScore + getPlayerScore(player));
-
-          delete localSquadAdds[slot.key];
-          usedIds.delete(playerIdStr);
-
-          if (currentCount === 0) delete teamCounts[teamKey];
-          else teamCounts[teamKey] = currentCount;
-        }
-      }
-
-      dfs(0, {}, new Set(usedIdsBase), { ...teamCountsBase }, 0, 0);
-      return bestSolution;
-    }
-
     function fillPartiallyGreedy(emptySlots, usedIdsBase, teamCountsBase, bankLeft) {
       const partialSolution = {};
       const usedIds = new Set(usedIdsBase);
@@ -3826,107 +3870,6 @@ function saveState() {
       return partialSolution;
     }
 
-
-    function improveFilledSolutionBudgetUse(solution, emptySlots, usedIdsBase, teamCountsBase, bankLeft) {
-      const maxAcceptableBankAfterFill = 500000;
-      const improved = { ...solution };
-      const slotByKey = Object.fromEntries(emptySlots.map(slot => [slot.key, slot]));
-
-      function buildState(currentSolution) {
-        const usedIds = new Set(usedIdsBase);
-        const teamCounts = { ...teamCountsBase };
-        let extraSpent = 0;
-
-        for (const [slotKey, playerId] of Object.entries(currentSolution)) {
-          const player = getPlayerById(playerId);
-          if (!player) continue;
-
-          usedIds.add(String(player.player_id));
-          const teamKey = playerTeamKey(player);
-          teamCounts[teamKey] = (teamCounts[teamKey] || 0) + 1;
-          extraSpent += getPlayerPrice(player);
-        }
-
-        return { usedIds, teamCounts, extraSpent };
-      }
-
-      for (let round = 0; round < 30; round++) {
-        const state = buildState(improved);
-        const remainingBank = bankLeft - state.extraSpent;
-
-        if (remainingBank <= maxAcceptableBankAfterFill) {
-          return improved;
-        }
-
-        let bestSwap = null;
-
-        for (const [slotKey, currentPlayerId] of Object.entries(improved)) {
-          const slot = slotByKey[slotKey];
-          const currentPlayer = getPlayerById(currentPlayerId);
-          if (!slot || !currentPlayer) continue;
-
-          const currentPrice = getPlayerPrice(currentPlayer);
-          const currentScore = getPlayerScore(currentPlayer);
-
-          const usedIdsWithoutCurrent = new Set(state.usedIds);
-          usedIdsWithoutCurrent.delete(String(currentPlayer.player_id));
-
-          const teamCountsWithoutCurrent = { ...state.teamCounts };
-          const currentTeamKey = playerTeamKey(currentPlayer);
-          if (currentTeamKey) {
-            teamCountsWithoutCurrent[currentTeamKey] = (teamCountsWithoutCurrent[currentTeamKey] || 1) - 1;
-            if (teamCountsWithoutCurrent[currentTeamKey] <= 0) delete teamCountsWithoutCurrent[currentTeamKey];
-          }
-
-          const slotBank = remainingBank + currentPrice;
-          const candidates = getEligiblePlayersForSlot(slot, usedIdsWithoutCurrent, teamCountsWithoutCurrent, slotBank)
-            .slice(0, 450);
-
-          for (const candidate of candidates) {
-            if (String(candidate.player_id) === String(currentPlayer.player_id)) continue;
-
-            const candidatePrice = getPlayerPrice(candidate);
-            const extraCost = candidatePrice - currentPrice;
-            if (extraCost <= 0 || extraCost > remainingBank) continue;
-
-            const bankAfterSwap = remainingBank - extraCost;
-            const candidateScore = getPlayerScore(candidate);
-            const scoreDelta = candidateScore - currentScore;
-
-            // Prioritet:
-            // 1) Ram maks 1,5 mio. i bank, hvis muligt
-            // 2) Brug mere budget
-            // 3) Undgå for stort kvalitetstab
-            const hitsBudgetTarget = bankAfterSwap <= maxAcceptableBankAfterFill ? 1 : 0;
-            const qualityPenalty = Math.max(0, -scoreDelta);
-            const metric =
-              hitsBudgetTarget * 1000000000
-              + extraCost / 1000
-              + scoreDelta * 1000
-              - qualityPenalty * 3000;
-
-            if (!bestSwap || metric > bestSwap.metric) {
-              bestSwap = {
-                slotKey,
-                player: candidate,
-                metric,
-                bankAfterSwap,
-                extraCost,
-                scoreDelta
-              };
-            }
-          }
-        }
-
-        if (!bestSwap) {
-          return improved;
-        }
-
-        improved[bestSwap.slotKey] = bestSwap.player.player_id;
-      }
-
-      return improved;
-    }
 
     async function fillMissingSlotsOptimally() {
       if (optimizerIsBusy) return;
@@ -3983,63 +3926,10 @@ function saveState() {
         return;
       }
 
-      const slotCandidates = emptySlots.map(slot => {
-        let candidates = getEligiblePlayersForSlot(slot, usedIdsBase, teamCountsBase, bankLeft);
-
-        const missingCount = emptySlots.length;
-        const candidateCap =
-          missingCount <= 2 ? 250 :
-          missingCount <= 4 ? 180 :
-          missingCount <= 6 ? 120 :
-          80;
-
-        candidates = candidates.slice(0, candidateCap);
-        return { slot, candidates };
-      });
-
-      const impossible = slotCandidates.find(x => !x.candidates.length);
-      if (impossible) {
-        const partial = fillPartiallyGreedy(emptySlots, usedIdsBase, teamCountsBase, bankLeft);
-        const partialCount = Object.keys(partial).length;
-        const blockingReasons = getBlockingReasonSummaryForSlots(emptySlots, usedIdsBase, teamCountsBase, bankLeft);
-
-        if (partialCount > 0) {
-          pushHistory();
-          squad = { ...squad, ...partial };
-          activeSlotKey = null;
-          activeSlotText.textContent = "Ingen valgt";
-          saveState();
-          render();
-          showStatus(`Udfyldte ${partialCount} af ${emptySlots.length} tomme pladser. Resterende blokering: ${blockingReasons.join(" · ")}`, "info");
-          scheduleAutosave();
-          return;
-        }
-
-        showStatus(`Kunne ikke udfylde pladserne. ${blockingReasons.join(" · ")}`, "error");
-        return;
-      }
-
-      slotCandidates.sort((a, b) => a.candidates.length - b.candidates.length);
-
-      let solution = solveMissingSlotsBacktracking(slotCandidates, bankLeft, usedIdsBase, teamCountsBase, "best");
-
-      if (!solution) {
-        const cheapFallbackCandidates = slotCandidates.map(entry => ({
-          slot: entry.slot,
-          candidates: [...entry.candidates].sort((a, b) => getPlayerPrice(a) - getPlayerPrice(b))
-        }));
-
-        solution = solveMissingSlotsBacktracking(cheapFallbackCandidates, bankLeft, usedIdsBase, teamCountsBase, "any");
-      }
-
-      if (!solution) {
-        const extraWideCandidates = emptySlots.map(slot => ({
-          slot,
-          candidates: getEligiblePlayersForSlot(slot, usedIdsBase, teamCountsBase, bankLeft).slice(0, 350)
-        })).sort((a, b) => a.candidates.length - b.candidates.length);
-
-        solution = solveMissingSlotsBacktracking(extraWideCandidates, bankLeft, usedIdsBase, teamCountsBase, "any");
-      }
+      const workerResult = await runAutofillWorker(
+        buildAutofillWorkerPayload(emptySlots, bankLeft, usedIdsBase, teamCountsBase)
+      );
+      let solution = workerResult.solution;
 
       if (!solution) {
         const partial = fillPartiallyGreedy(emptySlots, usedIdsBase, teamCountsBase, bankLeft);
@@ -4061,8 +3951,6 @@ function saveState() {
         showStatus(`Der findes ingen gyldig fuld udfyldning under de nuværende constraints. ${blockingReasons.join(" · ")}`, "error");
         return;
       }
-
-      solution = improveFilledSolutionBudgetUse(solution, emptySlots, usedIdsBase, teamCountsBase, bankLeft);
 
       const candidateSquad = { ...squad, ...solution };
       const issues = getSquadConstraintIssues(candidateSquad);
@@ -4091,12 +3979,18 @@ function saveState() {
         clearStatus();
         saveState();
         render();
+        showStatus(
+          `Holdet blev udfyldt på ${(workerResult.stats.durationMs / 1000).toFixed(2)} sek. `
+          + `(${formatMoney(workerResult.stats.evaluatedCombinations)} fulde kombinationer vurderet).`,
+          "info"
+        );
         scheduleAutosave();
       } catch (error) {
         console.error("FILL MISSING ERROR:", error);
         const errorMessage = error && error.message ? error.message : String(error);
         showStatus(`Udfyldning fejlede: ${errorMessage}`, "error");
       } finally {
+        await waitForMinimumOptimizerLoadingTime();
         setOptimizerBusy(false);
       }
     }
@@ -4776,6 +4670,7 @@ function saveState() {
 
       optimizeBtn.addEventListener("click", applyOptimalSquadForCurrentFormation);
       fillMissingBtn.addEventListener("click", fillMissingSlotsOptimally);
+      cancelOptimizerBtn.addEventListener("click", () => cancelActiveAutofill());
       undoBtn.addEventListener("click", undoLastAction);
       clearTeamBtn.addEventListener("click", clearSquad);
 
