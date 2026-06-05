@@ -338,6 +338,7 @@
     .optimizer-loading-copy {
       display: grid;
       gap: 3px;
+      min-width: 0;
     }
 
     .optimizer-loading-detail {
@@ -1447,6 +1448,20 @@
     }
 
     @media (max-width: 700px) {
+      .optimizer-loading-status {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .optimizer-loading-copy {
+        flex: 1 1 220px;
+      }
+
+      .optimizer-cancel-btn {
+        margin-left: 0;
+      }
+
       .page-wrap {
         padding: 8px;
       }
@@ -1603,7 +1618,7 @@
               <span class="optimizer-loading-spinner" aria-hidden="true"></span>
               <span class="optimizer-loading-copy">
                 <span>Finder den bedste kombination…</span>
-                <span class="optimizer-loading-detail">Du kan fortsat bruge og scrolle siden.</span>
+                <span id="optimizerLoadingDetail" class="optimizer-loading-detail">Søger efter en gyldig kombination…</span>
               </span>
               <button id="cancelOptimizerBtn" class="optimizer-cancel-btn" type="button">Annullér</button>
             </div>
@@ -1846,6 +1861,7 @@
     const clearTeamBtn = document.getElementById("clearTeamBtn");
     const strategyButtons = document.getElementById("strategyButtons");
     const optimizerLoadingOverlay = document.getElementById("optimizerLoadingOverlay");
+    const optimizerLoadingDetail = document.getElementById("optimizerLoadingDetail");
     const cancelOptimizerBtn = document.getElementById("cancelOptimizerBtn");
     const fillMissingButtonText = fillMissingBtn.textContent;
     let optimizerIsBusy = false;
@@ -2003,6 +2019,7 @@
       if (isBusy) optimizerBusyStartedAt = performance.now();
       optimizerLoadingOverlay.hidden = !isBusy;
       fillMissingBtn.textContent = isBusy ? "Beregner…" : fillMissingButtonText;
+      if (isBusy) optimizerLoadingDetail.textContent = "Søger efter en gyldig kombination…";
 
       [optimizeBtn, fillMissingBtn, formationSelect, ...strategyButtons.querySelectorAll("button")].forEach(button => {
         button.disabled = isBusy;
@@ -2028,7 +2045,7 @@
 
     function runAutofillWorker(payload, options = {}) {
       return new Promise((resolve, reject) => {
-        const worker = new Worker("./autofill-optimizer-worker.js", { type: "module" });
+        const worker = new Worker("./autofill-optimizer-worker.js?v=20260605-exact-bounds", { type: "module" });
         const requestId = `${Date.now()}-${Math.random().toString(16).slice(2)}`;
         let settled = false;
 
@@ -2054,6 +2071,14 @@
 
         worker.onmessage = event => {
           if (event.data?.requestId !== requestId) return;
+          if (event.data.progress) {
+            const progress = event.data.progress;
+            const elapsed = Math.max(0, Number(progress.elapsedMs || 0) / 1000).toFixed(1);
+            optimizerLoadingDetail.textContent = progress.hasSolution
+              ? `Gyldigt hold fundet – undersøger bedre kombinationer… ${formatMoney(progress.visitedNodes)} noder · ${elapsed} sek.`
+              : `Søger efter en gyldig kombination… ${formatMoney(progress.visitedNodes)} noder · ${elapsed} sek.`;
+            return;
+          }
           if (!event.data.ok) {
             fail(new Error(event.data.error || "Worker-beregningen fejlede."));
             return;

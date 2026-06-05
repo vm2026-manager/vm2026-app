@@ -1,4 +1,17 @@
 const MAX_ACCEPTABLE_BANK = 500000;
+const SCORE_PRICE_LAMBDAS = [
+  0,
+  0.000002,
+  0.000004,
+  0.000006,
+  0.000008,
+  0.000010,
+  0.000012,
+  0.000015,
+  0.000020,
+  0.000030,
+  0.000040
+];
 
 function playerSort(a, b) {
   const scoreDiff = b.score - a.score;
@@ -38,6 +51,60 @@ function greedyIncumbent(slots, candidatesByPosition, bankLeft, usedIdsBase, tea
     score += candidate.score;
   }
   return { solution, score, spent };
+}
+
+function cheapestFeasibleIncumbent(
+  slots,
+  cheapestByPosition,
+  bankLeft,
+  usedIdsBase,
+  teamCountsBase,
+  maxPerTeam,
+  deadline
+) {
+  const solution = {};
+  const usedIds = new Set(usedIdsBase);
+  const teamCounts = { ...teamCountsBase };
+  const lastIndexByPosition = {};
+  let visitedNodes = 0;
+
+  function dfs(index, spent, score) {
+    visitedNodes++;
+    if (visitedNodes % 5000 === 0 && performance.now() > deadline) return null;
+    if (index === slots.length) {
+      return { solution: { ...solution }, score, spent, visitedNodes };
+    }
+    const slot = slots[index];
+    const candidates = cheapestByPosition[slot.position];
+    const startIndex = lastIndexByPosition[slot.position] ?? 0;
+    for (let candidateIndex = startIndex; candidateIndex < candidates.length; candidateIndex++) {
+      const player = candidates[candidateIndex];
+      const nextSpent = spent + player.price;
+      if (nextSpent > bankLeft) break;
+      if (usedIds.has(player.id)) continue;
+      const currentTeamCount = teamCounts[player.team] || 0;
+      if (currentTeamCount >= maxPerTeam) continue;
+
+      solution[slot.key] = player.id;
+      usedIds.add(player.id);
+      teamCounts[player.team] = currentTeamCount + 1;
+      const previousPositionIndex = lastIndexByPosition[slot.position];
+      lastIndexByPosition[slot.position] = candidateIndex + 1;
+      const result = dfs(index + 1, nextSpent, score + player.score);
+      if (result) return result;
+
+      if (previousPositionIndex === undefined) delete lastIndexByPosition[slot.position];
+      else lastIndexByPosition[slot.position] = previousPositionIndex;
+      if (currentTeamCount === 0) delete teamCounts[player.team];
+      else teamCounts[player.team] = currentTeamCount;
+      usedIds.delete(player.id);
+      delete solution[slot.key];
+    }
+    return null;
+  }
+
+  const result = dfs(0, 0, 0);
+  return result || { solution: null, score: -Infinity, spent: Infinity, visitedNodes };
 }
 
 function improveBudgetUse(solution, slots, playersById, candidatesByPosition, bankLeft, usedIdsBase, teamCountsBase, maxPerTeam) {
@@ -107,7 +174,7 @@ function improveBudgetUse(solution, slots, playersById, candidatesByPosition, ba
   return improved;
 }
 
-export function solveAutofill(payload) {
+export function solveAutofill(payload, hooks = {}) {
   const startedAt = performance.now();
   const deadline = startedAt + Math.max(1000, Number(payload.maxDurationMs || 18000));
   const {
@@ -144,10 +211,13 @@ export function solveAutofill(payload) {
     teamCountsBase,
     maxPerTeam
   );
-  let bestSolution = greedy?.solution || null;
-  let bestScore = greedy?.score ?? -Infinity;
   let visitedNodes = 0;
   let evaluatedCombinations = greedy ? 1 : 0;
+  let budgetPrunes = 0;
+  let scorePrunes = 0;
+  let teamPrunes = 0;
+  let symmetryPrunes = 0;
+  let firstIncumbentMs = greedy ? performance.now() - startedAt : null;
 
   const cheapestByPosition = Object.fromEntries(
     positions.map(position => [
@@ -155,7 +225,76 @@ export function solveAutofill(payload) {
       [...candidatesByPosition[position]].sort((a, b) => a.price - b.price)
     ])
   );
+  const feasibility = greedy || cheapestFeasibleIncumbent(
+    orderedSlots,
+    cheapestByPosition,
+    bankLeft,
+    usedIdsBase,
+    teamCountsBase,
+    maxPerTeam,
+    deadline
+  );
+  let bestSolution = feasibility?.solution || null;
+  let bestScore = feasibility?.score ?? -Infinity;
+  if (bestSolution && firstIncumbentMs === null) {
+    firstIncumbentMs = performance.now() - startedAt;
+    evaluatedCombinations++;
+  }
+  hooks.onProgress?.({
+    visitedNodes,
+    bestScore: Number.isFinite(bestScore) ? bestScore : null,
+    hasSolution: Boolean(bestSolution),
+    elapsedMs: performance.now() - startedAt
+  });
 
+  const maxNeededByPosition = {};
+  for (const slot of orderedSlots) {
+    maxNeededByPosition[slot.position] = (maxNeededByPosition[slot.position] || 0) + 1;
+  }
+
+  function buildSuffixBestTables(values, maxCount, preferHigher) {
+    const tables = Array.from({ length: values.length + 1 }, () =>
+      Array(maxCount + 1).fill(preferHigher ? -Infinity : Infinity)
+    );
+    tables[values.length][0] = 0;
+    for (let start = values.length - 1; start >= 0; start--) {
+      tables[start][0] = 0;
+      for (let count = 1; count <= maxCount; count++) {
+        const skip = tables[start + 1][count];
+        const tail = tables[start + 1][count - 1];
+        const take = Number.isFinite(tail) ? values[start] + tail : tail;
+        tables[start][count] = preferHigher
+          ? Math.max(skip, take)
+          : Math.min(skip, take);
+      }
+    }
+    return tables;
+  }
+
+  const scoreSuffixBounds = {};
+  const costSuffixBounds = {};
+  const lagrangeSuffixBounds = {};
+  for (const position of positions) {
+    const candidates = candidatesByPosition[position];
+    const maxCount = maxNeededByPosition[position];
+    scoreSuffixBounds[position] = buildSuffixBestTables(
+      candidates.map(player => player.score),
+      maxCount,
+      true
+    );
+    costSuffixBounds[position] = buildSuffixBestTables(
+      candidates.map(player => player.price),
+      maxCount,
+      false
+    );
+    lagrangeSuffixBounds[position] = SCORE_PRICE_LAMBDAS.map(lambda =>
+      buildSuffixBestTables(
+        candidates.map(player => player.score - lambda * player.price),
+        maxCount,
+        true
+      )
+    );
+  }
   function remainingPositionCounts(fromIndex) {
     const counts = {};
     for (let index = fromIndex; index < orderedSlots.length; index++) {
@@ -165,36 +304,59 @@ export function solveAutofill(payload) {
     return counts;
   }
 
-  function optimisticScore(fromIndex, usedIds, lastIndexByPosition) {
+  function optimisticScore(fromIndex, lastIndexByPosition) {
     let total = 0;
     for (const [position, count] of Object.entries(remainingPositionCounts(fromIndex))) {
       const startIndex = lastIndexByPosition[position] ?? 0;
-      const available = candidatesByPosition[position]
-        .slice(startIndex)
-        .filter(player => !usedIds.has(player.id));
-      if (available.length < count) return -Infinity;
-      for (let index = 0; index < count; index++) total += available[index].score;
+      const bound = scoreSuffixBounds[position][startIndex]?.[count] ?? -Infinity;
+      if (!Number.isFinite(bound)) return -Infinity;
+      total += bound;
     }
     return total;
   }
 
-  function minimumRemainingCost(fromIndex, usedIds, lastIndexByPosition) {
+  function budgetAwareOptimisticScore(fromIndex, lastIndexByPosition, remainingBudget) {
+    const remainingCounts = remainingPositionCounts(fromIndex);
+    let bestUpperBound = Infinity;
+    for (let lambdaIndex = 0; lambdaIndex < SCORE_PRICE_LAMBDAS.length; lambdaIndex++) {
+      const lambda = SCORE_PRICE_LAMBDAS[lambdaIndex];
+      let adjustedTotal = lambda * remainingBudget;
+      let feasibleRelaxation = true;
+      for (const [position, count] of Object.entries(remainingCounts)) {
+        const startIndex = lastIndexByPosition[position] ?? 0;
+        const bound = lagrangeSuffixBounds[position][lambdaIndex][startIndex]?.[count] ?? -Infinity;
+        if (!Number.isFinite(bound)) {
+          feasibleRelaxation = false;
+          break;
+        }
+        adjustedTotal += bound;
+      }
+      if (feasibleRelaxation) bestUpperBound = Math.min(bestUpperBound, adjustedTotal);
+    }
+    return bestUpperBound;
+  }
+
+  function minimumRemainingCost(fromIndex, lastIndexByPosition) {
     let total = 0;
     for (const [position, count] of Object.entries(remainingPositionCounts(fromIndex))) {
       const startIndex = lastIndexByPosition[position] ?? 0;
-      const allowedIds = new Set(
-        candidatesByPosition[position].slice(startIndex).map(player => player.id)
-      );
-      const available = cheapestByPosition[position]
-        .filter(player => allowedIds.has(player.id) && !usedIds.has(player.id));
-      if (available.length < count) return Infinity;
-      for (let index = 0; index < count; index++) total += available[index].price;
+      const bound = costSuffixBounds[position][startIndex]?.[count] ?? Infinity;
+      if (!Number.isFinite(bound)) return Infinity;
+      total += bound;
     }
     return total;
   }
 
   function dfs(index, solution, usedIds, teamCounts, spent, score, lastIndexByPosition) {
     visitedNodes++;
+    if (visitedNodes % 2000 === 0) {
+      hooks.onProgress?.({
+        visitedNodes,
+        bestScore: Number.isFinite(bestScore) ? bestScore : null,
+        hasSolution: Boolean(bestSolution),
+        elapsedMs: performance.now() - startedAt
+      });
+    }
     if (visitedNodes % 5000 === 0 && performance.now() > deadline) {
       throw new Error("Worker-beregningen overskred tidsgrænsen.");
     }
@@ -203,21 +365,43 @@ export function solveAutofill(payload) {
       if (score > bestScore) {
         bestScore = score;
         bestSolution = { ...solution };
+        if (firstIncumbentMs === null) firstIncumbentMs = performance.now() - startedAt;
       }
       return;
     }
-    if (score + optimisticScore(index, usedIds, lastIndexByPosition) <= bestScore) return;
-    if (spent + minimumRemainingCost(index, usedIds, lastIndexByPosition) > bankLeft) return;
+    const relaxedScoreBound = Math.min(
+      optimisticScore(index, lastIndexByPosition),
+      budgetAwareOptimisticScore(
+        index,
+        lastIndexByPosition,
+        bankLeft - spent
+      )
+    );
+    if (score + relaxedScoreBound <= bestScore) {
+      scorePrunes++;
+      return;
+    }
+    if (spent + minimumRemainingCost(index, lastIndexByPosition) > bankLeft) {
+      budgetPrunes++;
+      return;
+    }
 
     const slot = orderedSlots[index];
     const candidates = candidatesByPosition[slot.position];
     const startIndex = lastIndexByPosition[slot.position] ?? 0;
+    symmetryPrunes += startIndex;
     for (let candidateIndex = startIndex; candidateIndex < candidates.length; candidateIndex++) {
       const player = candidates[candidateIndex];
-      if (spent + player.price > bankLeft) continue;
+      if (spent + player.price > bankLeft) {
+        budgetPrunes++;
+        continue;
+      }
       if (usedIds.has(player.id)) continue;
       const currentTeamCount = teamCounts[player.team] || 0;
-      if (currentTeamCount >= maxPerTeam) continue;
+      if (currentTeamCount >= maxPerTeam) {
+        teamPrunes++;
+        continue;
+      }
 
       solution[slot.key] = player.id;
       usedIds.add(player.id);
@@ -262,7 +446,16 @@ export function solveAutofill(payload) {
     stats: {
       evaluatedCombinations,
       visitedNodes,
-      durationMs: performance.now() - startedAt
+      durationMs: performance.now() - startedAt,
+      firstIncumbentMs,
+      bestScore: Number.isFinite(bestScore) ? bestScore : null,
+      budgetPrunes,
+      scorePrunes,
+      teamPrunes,
+      symmetryPrunes,
+      memoizationHits: 0,
+      greedyIncumbentFound: Boolean(greedy),
+      feasibilityNodes: greedy ? 0 : feasibility.visitedNodes
     }
   };
 }
@@ -272,7 +465,16 @@ if (typeof self !== "undefined" && typeof self.postMessage === "function") {
     const { requestId, payload, forceError } = event.data || {};
     try {
       if (forceError) throw new Error("Kontrolleret worker-fejl");
-      self.postMessage({ requestId, ok: true, ...solveAutofill(payload) });
+      let lastProgressAt = -Infinity;
+      const result = solveAutofill(payload, {
+        onProgress(progress) {
+          const now = performance.now();
+          if (now - lastProgressAt < 350) return;
+          lastProgressAt = now;
+          self.postMessage({ requestId, ok: true, progress });
+        }
+      });
+      self.postMessage({ requestId, ok: true, ...result });
     } catch (error) {
       self.postMessage({
         requestId,
