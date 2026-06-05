@@ -22,10 +22,13 @@ OUT_REPORT = ROOT / "data" / "transfermarkt_competitive_summary_merge_report.csv
 OUT_SPLIT_REPORT = ROOT / "data" / "start_probability_availability_split_report.csv"
 GK_AUDIT_CSV = ROOT / "data" / "goalkeeper_hierarchy_audit.csv"
 GK_AUDIT_MD = ROOT / "data" / "goalkeeper_hierarchy_audit.md"
+RECENT_NONSTARTER_AUDIT_CSV = ROOT / "data" / "recent_nonstarter_start_prob_audit.csv"
+RECENT_NONSTARTER_AUDIT_MD = ROOT / "data" / "recent_nonstarter_start_prob_audit.md"
 
 SOURCE_TAG = f"transfermarkt_availability_split_{datetime.now().strftime('%Y_%m_%d')}"
 GK_SOURCE_TAG = f"{SOURCE_TAG}+gk_hierarchy_normalized"
 GK_SANITY_TEAMS = {"ESP", "AUT", "GER", "FRA", "SUI", "ALG", "ARG"}
+RECENT_AVAILABLE_WEIGHT = 0.70
 
 
 def txt(value: Any) -> str:
@@ -229,6 +232,7 @@ def build_availability_splits(match_rows: list[dict[str, str]]) -> dict[str, dic
         available_weight = 0.0
         absence_weight = 0.0
         start_weight = 0.0
+        neutral_unavailable_rows = 0
 
         for row in rows:
             started = is_true(row.get("started_estimate_clean")) or is_true(row.get("started_estimate"))
@@ -237,20 +241,32 @@ def build_availability_splits(match_rows: list[dict[str, str]]) -> dict[str, dic
             has_position = is_true(row.get("has_position"))
             minutes = as_float(row.get("minutes_estimate"))
             absence_reason = txt(row.get("absence_reason")).lower()
+            participation_state = txt(row.get("participation_state")).lower()
             position_text = txt(row.get("position")).lower()
             weight = as_float(row.get("recency_weight")) or 0.25
+            injury_or_suspension = (
+                is_true(row.get("injury_or_suspension"))
+                or participation_state in {"injured", "suspended"}
+                or absence_reason in {"injury", "injury_or_fitness", "suspension"}
+                or "injur" in position_text
+                or "suspend" in position_text
+            )
+
+            if injury_or_suspension:
+                neutral_unavailable_rows += 1
+                continue
 
             absent = (
                 not_in_squad
-                or absence_reason in {"injury", "suspension", "absence", "not_selected_or_unknown"}
+                or absence_reason in {"absence", "not_selected_or_unknown"}
                 or "not in squad" in position_text
-                or "injur" in position_text
-                or "suspend" in position_text
             )
 
             available = (
                 started
                 or on_bench
+                or participation_state == "in squad"
+                or is_true(row.get("selection_observation"))
                 or (minutes is not None and minutes > 0)
                 or (has_position and not absent)
             )
@@ -269,7 +285,31 @@ def build_availability_splits(match_rows: list[dict[str, str]]) -> dict[str, dic
         if not available_rows and not absence_rows:
             continue
 
-        conditional_raw = start_weight / available_weight if available_weight > 0 else None
+        historical_start_rate = start_weight / available_weight if available_weight > 0 else None
+        recent_available_rows = sorted(
+            available_rows,
+            key=lambda row: txt(row.get("date_parsed")),
+            reverse=True,
+        )[:3]
+        recent_start_rate = (
+            sum(
+                1.0
+                for row in recent_available_rows
+                if is_true(row.get("started_estimate_clean")) or is_true(row.get("started_estimate"))
+            )
+            / len(recent_available_rows)
+            if recent_available_rows
+            else None
+        )
+        if historical_start_rate is None:
+            conditional_raw = recent_start_rate
+        elif recent_start_rate is None:
+            conditional_raw = historical_start_rate
+        else:
+            conditional_raw = (
+                RECENT_AVAILABLE_WEIGHT * recent_start_rate
+                + (1.0 - RECENT_AVAILABLE_WEIGHT) * historical_start_rate
+            )
         conditional_prob = None if conditional_raw is None else max(0.05, min(0.97, conditional_raw))
 
         availability_raw = (available_weight + 2.0) / (available_weight + absence_weight + 3.0)
@@ -307,6 +347,10 @@ def build_availability_splits(match_rows: list[dict[str, str]]) -> dict[str, dic
             "available_weight": available_weight,
             "absence_weight": absence_weight,
             "start_weight": start_weight,
+            "historical_start_rate": historical_start_rate,
+            "recent_available_rows": len(recent_available_rows),
+            "recent_available_start_rate": recent_start_rate,
+            "neutral_unavailable_rows": neutral_unavailable_rows,
         }
 
     return splits
@@ -553,6 +597,125 @@ def write_gk_audit(audit_rows: list[dict[str, Any]], before_metrics: dict[str, f
     GK_AUDIT_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
+def write_recent_nonstarter_audit(
+    before_players: list[dict[str, Any]],
+    after_players: list[dict[str, Any]],
+    splits: dict[str, dict[str, Any]],
+    match_rows: list[dict[str, str]],
+) -> None:
+    before_by_id = {txt(player.get("player_id")): player for player in before_players}
+    rows_by_id: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for row in match_rows:
+        if txt(row.get("player_id")) and not should_ignore_match(row):
+            rows_by_id[txt(row.get("player_id"))].append(row)
+
+    audit_rows = []
+    for player in after_players:
+        player_id = txt(player.get("player_id"))
+        split = splits.get(player_id)
+        if not split or split.get("recent_available_start_rate") is None:
+            continue
+        old = before_by_id.get(player_id, {})
+        recent_rows = []
+        for row in sorted(rows_by_id.get(player_id, []), key=lambda item: txt(item.get("date_parsed")), reverse=True):
+            state = txt(row.get("participation_state")).lower()
+            neutral = is_true(row.get("injury_or_suspension")) or state in {"injured", "suspended"}
+            available = (
+                state == "in squad"
+                or is_true(row.get("started_estimate_clean"))
+                or is_true(row.get("started_estimate"))
+                or (as_float(row.get("minutes_estimate")) or 0.0) > 0
+                or is_true(row.get("was_on_bench_clean"))
+                or is_true(row.get("was_on_bench"))
+                or is_true(row.get("has_position"))
+            )
+            if neutral or not available:
+                continue
+            recent_rows.append(
+                f"{txt(row.get('date_parsed'))}:{state}:start={1 if is_true(row.get('started_estimate_clean')) or is_true(row.get('started_estimate')) else 0}"
+            )
+            if len(recent_rows) == 3:
+                break
+
+        audit_rows.append(
+            {
+                "player_id": player_id,
+                "player_name": txt(player.get("player_name")),
+                "team_id": canonical_team(player.get("team_id")),
+                "position": txt(player.get("position")),
+                "recent_available_observations": "; ".join(recent_rows),
+                "recent_available_start_rate": fmt(split.get("recent_available_start_rate")),
+                "historical_weighted_start_rate": fmt(split.get("historical_start_rate")),
+                "neutral_injury_or_suspension_rows": split.get("neutral_unavailable_rows", 0),
+                "old_conditional_start_prob": fmt(old.get("conditional_start_prob")),
+                "new_conditional_start_prob": fmt(player.get("conditional_start_prob")),
+                "old_start_prob": fmt(old.get("start_prob")),
+                "new_start_prob": fmt(player.get("start_prob")),
+                "old_start_prob_source": txt(old.get("start_prob_source")),
+                "new_start_prob_source": txt(player.get("start_prob_source")),
+                "context_override": "yes" if "+context_override" in txt(player.get("start_prob_source")) else "",
+            }
+        )
+
+    audit_rows.sort(
+        key=lambda row: (
+            as_float(row.get("recent_available_start_rate")) or 0.0,
+            -(as_float(row.get("old_start_prob")) or 0.0),
+        )
+    )
+    fields = list(audit_rows[0]) if audit_rows else []
+    with RECENT_NONSTARTER_AUDIT_CSV.open("w", encoding="utf-8-sig", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=fields)
+        writer.writeheader()
+        writer.writerows(audit_rows)
+
+    rudiger = [row for row in audit_rows if row["player_id"] == "antonio_r_diger__ger"]
+    recent_nonstarters = [
+        row
+        for row in audit_rows
+        if (as_float(row.get("recent_available_start_rate")) or 0.0) <= 1 / 3
+    ]
+    sanity = rudiger + [row for row in recent_nonstarters if row["player_id"] != "antonio_r_diger__ger"][:5]
+    lines = [
+        "# Recent non-starter start probability audit",
+        "",
+        "## Modelændring",
+        "",
+        "- `in squad` uden minutter tæller som en tilgængelig ikke-start.",
+        "- Skade og suspension er neutral utilgængelighed og indgår ikke i start-rate-nævneren.",
+        f"- Conditional start-rate vægter de tre seneste tilgængelige observationer {RECENT_AVAILABLE_WEIGHT:.0%} og recency-vægtet historik {1 - RECENT_AVAILABLE_WEIGHT:.0%}.",
+        "- Context-overrides anvendes bagefter og beholder højeste prioritet.",
+        "",
+        f"- Spillere med nyere start-rate højst 1/3: {len(recent_nonstarters)}",
+        "",
+        "## Rüdiger og fem øvrige sanity-spillere",
+        "",
+        "| player_name | team_id | recent_available_observations | recent_available_start_rate | historical_weighted_start_rate | old_start_prob | new_start_prob | old_conditional_start_prob | new_conditional_start_prob | context_override |",
+        "| --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |",
+    ]
+    for row in sanity:
+        lines.append(
+            "| "
+            + " | ".join(
+                txt(row.get(field))
+                for field in [
+                    "player_name",
+                    "team_id",
+                    "recent_available_observations",
+                    "recent_available_start_rate",
+                    "historical_weighted_start_rate",
+                    "old_start_prob",
+                    "new_start_prob",
+                    "old_conditional_start_prob",
+                    "new_conditional_start_prob",
+                    "context_override",
+                ]
+            )
+            + " |"
+        )
+    RECENT_NONSTARTER_AUDIT_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
 def main() -> None:
     if not PLAYER_POOL_PATH.exists():
         raise FileNotFoundError(PLAYER_POOL_PATH)
@@ -563,6 +726,7 @@ def main() -> None:
 
     with PLAYER_POOL_PATH.open("r", encoding="utf-8-sig") as f:
         players = json.load(f)
+    before_players = json.loads(json.dumps(players))
 
     with TM_SUMMARY_PATH.open("r", encoding="utf-8-sig", newline="") as f:
         tm_rows = list(csv.DictReader(f))
@@ -645,6 +809,8 @@ def main() -> None:
             player["transfermarkt_available_weight"] = round(split["available_weight"], 4)
             player["transfermarkt_absence_weight"] = round(split["absence_weight"], 4)
             player["transfermarkt_start_weight"] = round(split["start_weight"], 4)
+            player["transfermarkt_recent_3_available_start_score"] = round(split["recent_available_start_rate"], 4)
+            player["transfermarkt_history_available_start_score"] = round(split["historical_start_rate"], 4)
 
         applied.append(
             {
@@ -669,6 +835,7 @@ def main() -> None:
     gk_audit_rows = normalize_goalkeeper_hierarchy(players)
     after_gk_metrics = gk_team_metrics(players)
     write_gk_audit(gk_audit_rows, before_gk_metrics, after_gk_metrics)
+    write_recent_nonstarter_audit(before_players, players, availability_splits, match_rows)
 
     with PLAYER_POOL_PATH.open("w", encoding="utf-8") as f:
         json.dump(players, f, ensure_ascii=False, indent=2)
@@ -710,6 +877,8 @@ def main() -> None:
     print(f"Availability split report: {OUT_SPLIT_REPORT.relative_to(ROOT)}")
     print(f"GK hierarchy audit: {GK_AUDIT_CSV.relative_to(ROOT)}")
     print(f"GK hierarchy report: {GK_AUDIT_MD.relative_to(ROOT)}")
+    print(f"Recent non-starter audit: {RECENT_NONSTARTER_AUDIT_CSV.relative_to(ROOT)}")
+    print(f"Recent non-starter report: {RECENT_NONSTARTER_AUDIT_MD.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,2 @@
+﻿date,matchday,venue,for_team,opponent,result,position,competition,participation_state,goals,assists,yellow_cards,row_text,was_not_in_squad,was_on_bench,has_position,minutes_estimate,started_estimate,player_id,player_name,team_id,position_model,transfermarkt_player_id,source_url
+04/06/26,6,away,3591,3377,2:1,,FS,played,0,0,0,04/06/26 | FS | club:3591 | opponent:3377 | 2:1 | played | 22',False,False,True,22,False,ange_yoan_bonny__civ,Ange-Yoan Bonny,CIV,FWD,827734,https://www.transfermarkt.de/ange-yoan-bonny/nationalmannschaft/spieler/827734/verein_id/3591

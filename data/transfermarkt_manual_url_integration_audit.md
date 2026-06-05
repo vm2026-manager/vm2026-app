@@ -16,14 +16,14 @@ Manual URL-prioritet: `tools/transfermarkt_manual_urls.csv` -> eksisterende cach
 
 | manual_player_name | matched_player_id | matched_player_name | team_id | previous_status | test_status | match_status | duplicate_warning |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Cucho Hernández | juan_cucho_hernandez__col | Juan 'Cucho' Hernandez | COL | error_manual_url | ok_manual_url | manual_alias |  |
-| Alex Robertson | alexander_alex_robertson__aus | Alexander 'Alex' Robertson | AUS | error_manual_url | ok_manual_url | manual_alias |  |
-| Matías Fernández-Pardo | matias_fernandez_pardo__bel | Matias Fernandez-Pardo | BEL | error_manual_url | ok_manual_url | exact_name |  |
-| Marc Pubill | marc_pubill__esp | Marc Pubill | ESP | error_manual_url | ok_manual_url | exact_name |  |
-| Bento Krepski | bento_krepski__bra | Bento Krepski | BRA | error_manual_url | ok_manual_url | exact_name |  |
-| Ederson Moraes | ederson_moraes__bra | Ederson Moraes | BRA | error_manual_url | ok_manual_url | exact_name |  |
-| Luis Suárez Charris | luis_suarez_charris__col | Luis Suarez Charris | COL | error_manual_url | ok_manual_url | exact_name |  |
-| Pablo Gavi | pablo_gavi__esp | Pablo Gavi | ESP | error_manual_url | ok_manual_url | exact_name |  |
+| Cucho Hernández | juan_cucho_hernandez__col | Juan 'Cucho' Hernandez | COL | ok_manual_url | ok_manual_url | manual_alias |  |
+| Alex Robertson | alexander_alex_robertson__aus | Alexander 'Alex' Robertson | AUS | ok_manual_url | ok_manual_url | manual_alias |  |
+| Matías Fernández-Pardo | matias_fernandez_pardo__bel | Matias Fernandez-Pardo | BEL | ok_manual_url | ok_manual_url | exact_name |  |
+| Marc Pubill | marc_pubill__esp | Marc Pubill | ESP | ok_manual_url | ok_manual_url | exact_name |  |
+| Bento Krepski | bento_krepski__bra | Bento Krepski | BRA | ok_manual_url | ok_manual_url | exact_name |  |
+| Ederson Moraes | ederson_moraes__bra | Ederson Moraes | BRA | ok_manual_url | ok_manual_url | exact_name |  |
+| Luis Suárez Charris | luis_suarez_charris__col | Luis Suarez Charris | COL | ok_manual_url | ok_manual_url | exact_name |  |
+| Pablo Gavi | pablo_gavi__esp | Pablo Gavi | ESP | ok_manual_url | ok_manual_url | exact_name |  |
 
 ## Uden match eller tvetydige
 

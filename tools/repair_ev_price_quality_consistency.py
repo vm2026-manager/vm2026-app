@@ -16,10 +16,14 @@ PLAYER_POOL_PATH = DATA / "player_pool_v1.json"
 OUT_CSV = DATA / "player_ev_price_quality_consistency_audit.csv"
 OUT_MD = DATA / "player_ev_price_quality_consistency_audit.md"
 PRICE_DIAG_PATH = DATA / "price_quality_ev_diagnostics.csv"
+RESERVE_AUDIT_CSV = DATA / "reserve_price_quality_audit.csv"
+RESERVE_AUDIT_MD = DATA / "reserve_price_quality_audit.md"
 
 PRICE_QUALITY_WEIGHT = 0.45
 PRICE_QUALITY_SPREAD_MULTIPLIER = 1.35
 FORMULA_TOLERANCE = 0.001
+PRICE_QUALITY_BASE_CAP_MULTIPLIER = 1.50
+PRICE_QUALITY_BASE_CAP_FLOOR = 0.15
 
 BAUMGARTNER_ID = "christoph_baumgartner__aut"
 
@@ -66,6 +70,14 @@ AUDIT_FIELDS = [
 
 SANITY_NAMES = {
     "Erling Haaland",
+    "Antonio Rüdiger",
+    "Joan Garcia",
+    "Unai Simon",
+    "Alexander Schlager",
+    "Mike Maignan",
+    "Victor Munoz",
+    "Igor Thiago",
+    "Yousef Qashi",
     "Harry Kane",
     "Antonio Nusa",
     "Alexander Sørloth",
@@ -92,6 +104,10 @@ def to_float(value: Any, default: float = 0.0) -> float:
         return float(raw)
     except ValueError:
         return default
+
+
+def clamp(value: float, low: float = 0.0, high: float = 1.0) -> float:
+    return max(low, min(high, value))
 
 
 def fmt(value: float) -> str:
@@ -180,6 +196,22 @@ def classify_and_base(row: dict[str, Any]) -> tuple[float, str, str, str]:
 
 def formula_expected(base: float, price_quality: float) -> float:
     return (1.0 - PRICE_QUALITY_WEIGHT) * base + PRICE_QUALITY_WEIGHT * price_quality
+
+
+def appearance_scaled_price_quality(raw_price_quality: float, start_prob: float) -> float:
+    return raw_price_quality * clamp(start_prob / 0.70)
+
+
+def base_capped_price_quality(raw_price_quality: float, base: float) -> float:
+    cap = max(PRICE_QUALITY_BASE_CAP_FLOOR, PRICE_QUALITY_BASE_CAP_MULTIPLIER * max(base, 0.0))
+    return min(raw_price_quality, cap)
+
+
+def reserve_safe_price_quality(raw_price_quality: float, base: float, start_prob: float) -> float:
+    appearance_scaled = appearance_scaled_price_quality(raw_price_quality, start_prob)
+    if start_prob >= 0.70:
+        return appearance_scaled
+    return base_capped_price_quality(appearance_scaled, base)
 
 
 def formula_diff(row: dict[str, Any]) -> float:
@@ -300,27 +332,43 @@ def apply_price_quality_consistency(rows: list[dict[str, Any]]) -> list[dict[str
         for idx in indices:
             row = work[idx]
             pct = price_ranks[idx]
-            price_quality = ev_p20 + pct * spread
+            raw_price_quality = ev_p20 + pct * spread
             base = meta[idx]["base"]
+            start_prob = to_float(row.get("start_prob"))
+            appearance_price_quality = appearance_scaled_price_quality(raw_price_quality, start_prob)
+            capped_price_quality = base_capped_price_quality(raw_price_quality, base)
+            price_quality = reserve_safe_price_quality(raw_price_quality, base, start_prob)
             final = formula_expected(base, price_quality)
             row["price_rank_pct_position"] = fmt(pct)
+            row["price_quality_raw_ev"] = fmt(raw_price_quality)
+            row["price_quality_appearance_scaled_ev"] = fmt(appearance_price_quality)
+            row["price_quality_base_capped_ev"] = fmt(capped_price_quality)
             row["price_quality_ev"] = fmt(price_quality)
             row["weighted_group_stage_ev"] = fmt(final)
             row["optimizer_ev"] = fmt(final)
             row["price_quality_weight"] = fmt(PRICE_QUALITY_WEIGHT)
             row["price_quality_spread_multiplier"] = fmt(PRICE_QUALITY_SPREAD_MULTIPLIER)
             row["price_quality_applied"] = "True"
+            row["price_quality_method"] = (
+                "raw_for_likely_starter"
+                if start_prob >= 0.70
+                else "appearance_scaled_then_base_capped"
+            )
 
     for idx, row in enumerate(work):
         if meta[idx]["eligible"]:
             continue
         row["price_rank_pct_position"] = txt(row.get("price_rank_pct_position")) or "0"
+        row["price_quality_raw_ev"] = "0"
+        row["price_quality_appearance_scaled_ev"] = "0"
+        row["price_quality_base_capped_ev"] = "0"
         row["price_quality_ev"] = "0"
         row["weighted_group_stage_ev"] = "0"
         row["optimizer_ev"] = "0"
         row["price_quality_weight"] = fmt(PRICE_QUALITY_WEIGHT)
         row["price_quality_spread_multiplier"] = fmt(PRICE_QUALITY_SPREAD_MULTIPLIER)
         row["price_quality_applied"] = "False"
+        row["price_quality_method"] = "not_applied"
 
     return work
 
@@ -332,6 +380,9 @@ def ensure_fields(fields: list[str], rows: list[dict[str, Any]]) -> list[str]:
         "repair_status",
         "price_m",
         "price_rank_pct_position",
+        "price_quality_raw_ev",
+        "price_quality_appearance_scaled_ev",
+        "price_quality_base_capped_ev",
         "model_ev_before_price_quality",
         "weighted_group_stage_ev_before_price_quality",
         "optimizer_ev_before_price_quality",
@@ -339,6 +390,7 @@ def ensure_fields(fields: list[str], rows: list[dict[str, Any]]) -> list[str]:
         "price_quality_weight",
         "price_quality_spread_multiplier",
         "price_quality_applied",
+        "price_quality_method",
     ]
     out = list(fields)
     for col in wanted:
@@ -422,6 +474,130 @@ def md_table(rows: list[dict[str, Any]], fields: list[str], limit: int | None = 
     for row in subset:
         lines.append("| " + " | ".join(txt(row.get(field)) for field in fields) + " |")
     return lines
+
+
+def cohort_name(row: dict[str, Any]) -> str:
+    start_prob = to_float(row.get("start_prob"))
+    price = get_price_m(row)
+    if start_prob < 0.10:
+        return "reserve_start_lt_0_10"
+    if start_prob >= 0.70 and price <= 3.0:
+        return "cheap_real_starter"
+    if price >= 6.0:
+        return "premium"
+    if start_prob >= 0.70:
+        return "likely_starter"
+    return "other"
+
+
+def reserve_experiment_rows(before: list[dict[str, Any]], after: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    before_by_id = {txt(row.get("player_id")): row for row in before}
+    out = []
+    for row in after:
+        old = before_by_id.get(txt(row.get("player_id")), {})
+        base = to_float(row.get("model_ev_before_price_quality"))
+        raw = to_float(row.get("price_quality_raw_ev"))
+        appearance = to_float(row.get("price_quality_appearance_scaled_ev"))
+        capped = to_float(row.get("price_quality_base_capped_ev"))
+        selected = to_float(row.get("price_quality_ev"))
+        out.append(
+            {
+                "player_id": txt(row.get("player_id")),
+                "player_name": txt(row.get("player_name")),
+                "team_id": txt(row.get("team_id")),
+                "position": txt(row.get("position")),
+                "price_m": fmt(get_price_m(row)),
+                "start_prob": fmt(to_float(row.get("start_prob"))),
+                "cohort": cohort_name(row),
+                "base_ev": fmt(base),
+                "old_price_quality_ev": fmt(to_float(old.get("price_quality_ev"))),
+                "raw_price_quality_ev": fmt(raw),
+                "appearance_scaled_price_quality_ev": fmt(appearance),
+                "base_capped_price_quality_ev": fmt(capped),
+                "selected_price_quality_ev": fmt(selected),
+                "old_optimizer_ev": fmt(to_float(old.get("optimizer_ev"))),
+                "raw_optimizer_ev": fmt(formula_expected(base, raw)),
+                "appearance_scaled_optimizer_ev": fmt(formula_expected(base, appearance)),
+                "base_capped_optimizer_ev": fmt(formula_expected(base, capped)),
+                "selected_optimizer_ev": fmt(formula_expected(base, selected)),
+                "selected_method": txt(row.get("price_quality_method")),
+            }
+        )
+    return out
+
+
+def grouped_summary(rows: list[dict[str, Any]], field: str) -> list[dict[str, Any]]:
+    grouped: dict[str, list[dict[str, Any]]] = {}
+    for row in rows:
+        grouped.setdefault(txt(row.get(field)), []).append(row)
+    out = []
+    for name, group in sorted(grouped.items()):
+        raw_total = sum(to_float(row["raw_optimizer_ev"]) for row in group)
+        selected_total = sum(to_float(row["selected_optimizer_ev"]) for row in group)
+        out.append(
+            {
+                field: name,
+                "players": len(group),
+                "mean_raw_final": fmt(raw_total / len(group)),
+                "mean_appearance_final": fmt(sum(to_float(row["appearance_scaled_optimizer_ev"]) for row in group) / len(group)),
+                "mean_base_cap_final": fmt(sum(to_float(row["base_capped_optimizer_ev"]) for row in group) / len(group)),
+                "mean_selected_final": fmt(selected_total / len(group)),
+                "selected_vs_raw_pct": fmt(100 * (selected_total / max(raw_total, 1e-9) - 1)),
+            }
+        )
+    return out
+
+
+def reserve_counts(rows: list[dict[str, Any]], final_field: str) -> tuple[int, int, int]:
+    reserves = [row for row in rows if to_float(row.get("start_prob")) < 0.10]
+    return (
+        len(reserves),
+        sum(to_float(row.get(final_field)) > 1.0 for row in reserves),
+        sum(to_float(row.get("base_ev")) > 0.50 for row in reserves),
+    )
+
+
+def write_reserve_audit(rows: list[dict[str, Any]]) -> None:
+    write_csv(RESERVE_AUDIT_CSV, list(rows[0]) if rows else [], rows)
+    raw_counts = reserve_counts(rows, "raw_optimizer_ev")
+    appearance_counts = reserve_counts(rows, "appearance_scaled_optimizer_ev")
+    cap_counts = reserve_counts(rows, "base_capped_optimizer_ev")
+    selected_counts = reserve_counts(rows, "selected_optimizer_ev")
+    cohorts = grouped_summary(rows, "cohort")
+    positions = grouped_summary(rows, "position")
+    sanity = [row for row in rows if row["player_name"] in SANITY_NAMES]
+    lines = [
+        "# Reserve-safe price-quality audit",
+        "",
+        "## Metode",
+        "",
+        "- Rå variant: eksisterende pris-/positionsbaserede price-quality-signal.",
+        "- Variant 1: rå price-quality skaleres med `min(1, start_prob / 0.70)`.",
+        f"- Variant 2: rå price-quality cappes ved `max({PRICE_QUALITY_BASE_CAP_FLOOR:.2f}, {PRICE_QUALITY_BASE_CAP_MULTIPLIER:.2f} * base_ev)`.",
+        "- Valgt metode: sandsynlige startere (`start_prob >= 0.70`) beholder rå value; øvrige appearance-skaleres og base-cappes. 55/45-formlen er uændret.",
+        "",
+        "## Reserver med start_prob < 0.10",
+        "",
+        "| Variant | Antal | optimizer_ev > 1.00 | base_ev > 0.50 |",
+        "| --- | ---: | ---: | ---: |",
+        f"| Rå | {raw_counts[0]} | {raw_counts[1]} | {raw_counts[2]} |",
+        f"| Appearance-skaleret | {appearance_counts[0]} | {appearance_counts[1]} | {appearance_counts[2]} |",
+        f"| Base-cappet | {cap_counts[0]} | {cap_counts[1]} | {cap_counts[2]} |",
+        f"| Valgt hybrid | {selected_counts[0]} | {selected_counts[1]} | {selected_counts[2]} |",
+        "",
+        "## Kohorter",
+        "",
+        *md_table(cohorts, ["cohort", "players", "mean_raw_final", "mean_appearance_final", "mean_base_cap_final", "mean_selected_final", "selected_vs_raw_pct"]),
+        "",
+        "## Positioner",
+        "",
+        *md_table(positions, ["position", "players", "mean_raw_final", "mean_appearance_final", "mean_base_cap_final", "mean_selected_final", "selected_vs_raw_pct"]),
+        "",
+        "## Sanity",
+        "",
+        *md_table(sanity, ["player_name", "position", "price_m", "start_prob", "base_ev", "raw_optimizer_ev", "appearance_scaled_optimizer_ev", "base_capped_optimizer_ev", "selected_optimizer_ev"]),
+    ]
+    RESERVE_AUDIT_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def write_md(
@@ -526,6 +702,7 @@ def main() -> int:
     after_audit = audit_rows(repaired)
     write_csv(OUT_CSV, AUDIT_FIELDS, after_audit)
     write_md(before_audit, after_audit, before_rows, repaired, ev_backup, pool_backup, baum_before, baum_after)
+    write_reserve_audit(reserve_experiment_rows(before_rows, repaired))
 
     diag_cols = [
         "player_id",
@@ -536,11 +713,15 @@ def main() -> int:
         "price_m",
         "price_rank_pct_position",
         "model_ev_before_price_quality",
+        "price_quality_raw_ev",
+        "price_quality_appearance_scaled_ev",
+        "price_quality_base_capped_ev",
         "price_quality_ev",
         "weighted_group_stage_ev",
         "price_quality_weight",
         "price_quality_spread_multiplier",
         "price_quality_applied",
+        "price_quality_method",
         "component_source",
         "base_ev_source",
         "repair_status",
@@ -563,6 +744,8 @@ def main() -> int:
     print(f"Pool backup: {pool_backup.relative_to(ROOT)}")
     print(f"Wrote: {OUT_CSV.relative_to(ROOT)}")
     print(f"Wrote: {OUT_MD.relative_to(ROOT)}")
+    print(f"Wrote: {RESERVE_AUDIT_CSV.relative_to(ROOT)}")
+    print(f"Wrote: {RESERVE_AUDIT_MD.relative_to(ROOT)}")
     return 0
 
 

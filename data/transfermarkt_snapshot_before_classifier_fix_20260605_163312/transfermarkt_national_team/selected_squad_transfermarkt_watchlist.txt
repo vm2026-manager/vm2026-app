@@ -1,0 +1,24 @@
+SELECTED SQUAD TRANSFERMARKT WATCHLIST
+==========================================================================================
+Formation: 3-4-3
+Optimizer score: 169.249
+
+Spillere til manuel vurdering:
+
+- Mike Maignan | FRA | GK | model-start=98.0% | TM usage=0.851 | recent20_start=0.9 | recency_comp=0.4369 | slutrunde_recency=0.0 | kval_recency=0.0 | Model-start høj, men recency-vægtet konkurrencesignal er lavt
+- Gonzalo Montiel | ARG | DEF | model-start=45.0% | TM usage=0.367 | recent20_start=0.3 | recency_comp=0.292 | slutrunde_recency=0.0 | kval_recency=0.0 | Ofte ikke i trup seneste 20; Flere fravær uden skade-/karantæneforklaring og svagt nyere usage-signal
+- Lucas Digne | FRA | DEF | model-start=74.2% | TM usage=0.5725 | recent20_start=0.45 | recency_comp=0.25 | slutrunde_recency=0.0 | kval_recency=0.0 | Model-start høj, men nyere landsholdsbrug er usikker/lav; Model-start høj, men recency-vægtet konkurrencesignal er lavt
+- Renato Veiga | POR | DEF | model-start=67.7% | TM usage=0.333 | recent20_start=0.389 | recency_comp=0.3889 | slutrunde_recency=0.0 | kval_recency=0.0 | Relativt få landskampe ift. høj model-start
+- Casemiro | BRA | MID | model-start=90.2% | TM usage=0.7 | recent20_start=0.5 | recency_comp=0.398 | slutrunde_recency=0.0 | kval_recency=0.0 | Model-start høj, men recency-vægtet konkurrencesignal er lavt; Ofte ikke i trup seneste 20
+- Alex Baena | ESP | MID | model-start=47.0% | TM usage=0.329 | recent20_start=0.3 | recency_comp=0.1889 | slutrunde_recency=0.0 | kval_recency=0.0 | Ofte ikke i trup seneste 20; Flere fravær uden skade-/karantæneforklaring og svagt nyere usage-signal
+- Martin Zubimendi | ESP | MID | model-start=88.3% | TM usage=0.5825 | recent20_start=0.65 | recency_comp=0.25 | slutrunde_recency=0.0 | kval_recency=0.0 | Model-start høj, men recency-vægtet konkurrencesignal er lavt; Ofte ikke i trup seneste 20
+- Manu Koné | FRA | MID | model-start=74.0% | TM usage=0.4127 | recent20_start=0.474 | recency_comp=0.474 | slutrunde_recency=0.0 | kval_recency=0.0 | Model-start høj, men samlet Transfermarkt-usage lav; Model-start høj, men nyere landsholdsbrug er usikker/lav; Model-start høj, men recency-vægtet konkurrencesignal er lavt; Ofte ikke i trup seneste 20; Relativt få landskampe ift. høj model-start
+- Mikel Oyarzabal | ESP | FWD | model-start=77.9% | TM usage=0.7325 | recent20_start=0.65 | recency_comp=0.2049 | slutrunde_recency=0.0 | kval_recency=0.0 | Model-start høj, men recency-vægtet konkurrencesignal er lavt; Ofte ikke i trup seneste 20
+- Nico Williams | ESP | FWD | model-start=80.2% | TM usage=0.4175 | recent20_start=0.45 | recency_comp=0.4169 | slutrunde_recency=0.0 | kval_recency=0.0 | Model-start høj, men samlet Transfermarkt-usage lav; Model-start høj, men nyere landsholdsbrug er usikker/lav; Model-start høj, men recency-vægtet konkurrencesignal er lavt; Ofte ikke i trup seneste 20; Flere fravær uden skade-/karantæneforklaring og svagt nyere usage-signal
+
+Note:
+- Watchlisten ændrer ikke modellen.
+- Brug den som beslutningsstøtte indtil trupper og sidste testkampe er kendt.
+- Recency vægter nyere landsholdskampe højere end ældre kampe.
+- Slutrunde/kvalkampe vægter fagligt højere end venskabskampe.
+- Fravær pga. skade/karantæne bør tolkes anderledes end ukendt fravær/vragning.

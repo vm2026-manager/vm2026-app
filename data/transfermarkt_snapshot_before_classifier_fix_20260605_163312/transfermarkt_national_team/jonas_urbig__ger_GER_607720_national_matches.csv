@@ -1,0 +1,2 @@
+﻿date,matchday,venue,for_team,opponent,result,position,competition,participation_state,goals,assists,yellow_cards,row_text,was_not_in_squad,was_on_bench,has_position,minutes_estimate,started_estimate,player_id,player_name,team_id,position_model,transfermarkt_player_id,source_url
+31/05/26,2,home,3262,3443,4:0,,FS,in squad,0,0,0,31/05/26 | FS | club:3262 | opponent:3443 | 4:0 | in squad,False,False,False,,False,jonas_urbig__ger,Jonas Urbig,GER,GK,607720,https://www.transfermarkt.de/jonas-urbig/nationalmannschaft/spieler/607720/verein_id/3262

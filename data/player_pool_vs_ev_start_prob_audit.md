@@ -1,42 +1,55 @@
 # Player Pool vs EV Start Probability Audit
 
-Audit og målrettet repair af EV-filens startfelter. Goal EV, weighted match EV og strategi-output er ikke genberegnet.
+Initial read-only baseline before the first synchronization: 1031 start_prob mismatches over 0.001 and 1066 start_prob_source mismatches. The final synchronization below followed the upstream recency rebuild.
+
+Autoritativ synkronisering af EV-filens startfelter fra player pool ved exact `player_id`. Komponenter genbygges i næste pipeline-trin.
 
 ## Rodårsag
 
-`tools/rebase_player_ev_to_holdet_master.py` brugte EV-rækkens eksisterende `start_prob` som førstevalg og player-pool signalet som fallback. Dermed kunne legacy/fallback-kilder som `team_minute_rank`, `name+team` og `holdet_official_unmatched_default` overskrive nyere dokumenterede Transfermarkt-/manual-/lineup-signaler.
+Repairen anvendte `source_priority()` og opdaterede kun, når poolkilden havde højere prioritet end EV-kilden. Nye og gamle Transfermarkt-kilder lå i samme bucket, fald blev ofte afvist, og `count_serious()` talte kun store positive differencer. Derfor kunne scriptet rapportere 0 alvorlige mismatches, selv om over 1.000 exact-ID-rækker var ude af sync.
 
 ## Kildeprioritet efter rettelse
 
-1. confirmed_lineup / expected_lineup / manual / transfermarkt_availability_split / context_override
-2. andre dokumenterede ikke-fallback-kilder
-3. team_minute_rank / name+team / holdet_official_unmatched_default / legacy / fallback
+1. Player pool er autoritativ for alle exact-player_id matches.
+2. Context-overrides bevares, fordi de allerede er indarbejdet i player pool før sync.
+3. Rækker uden exact player_id-match blokeres og rapporteres; der bruges ikke fuzzy overskrivning.
 
 ## Mismatch counts
 
-- Alvorlige mismatches før: 1
-- Alvorlige mismatches efter: 0
+- Start_prob mismatches > 0.001 før: 1147
+- Start_prob mismatches > 0.001 efter: 0
+- Start_prob_source mismatches før: 1
+- Start_prob_source mismatches efter: 0
+- Blokerede identitetsmatches: 0
 - team_minute_rank før/efter: 0 / 0
 - holdet_official_unmatched_default før/efter: 0 / 0
 - name+team før/efter: 0 / 0
-- Rækker påvirket: 32
-- Backup: `data\player_ev_group_stage_v1.backup_before_start_prob_source_repair_20260604_223321.csv`
+- Rækker påvirket: 1244
+- Backup: `data\player_ev_group_stage_v1.backup_before_start_prob_source_repair_20260605_173312.csv`
 
 ## Sanity-spillere
 
 | player_name | team_id | old_start_prob | new_start_prob | old_source | new_source | minute_share | goal_ev_changed | round_ev_changed |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Harry Kane | ENG | 0.8702 | 0.8702 | transfermarkt_availability_split_2026_06_01 | transfermarkt_availability_split_2026_06_01 | 0.079109 | no | no |
-| Erling Haaland | NOR | 0.8883 | 0.8883 | transfermarkt_availability_split_2026_06_01 | transfermarkt_availability_split_2026_06_01 | 0.080755 | no | no |
-| Antonio Nusa | NOR | 0.8157 | 0.8157 | transfermarkt_availability_split_2026_06_01 | transfermarkt_availability_split_2026_06_01 | 0.074155 | no | no |
-| Alexander Sørloth | NOR | 0.8078 | 0.8078 | transfermarkt_availability_split_2026_06_01 | transfermarkt_availability_split_2026_06_01 | 0.073436 | no | no |
-| Jules Kounde | FRA | 0.7661 | 0.7661 | transfermarkt_availability_split_2026_06_01 | transfermarkt_availability_split_2026_06_01 | 0.069645 | no | no |
-| Manuel Neuer | GER | 0.5761 | 0.7293 | transfermarkt_availability_split_2026_06_04+gk_hierarchy_normalized | transfermarkt_availability_split_2026_06_04+gk_hierarchy_normalized | 0.0663 | no | no |
-| Martin Ødegaard | NOR | 0.8375 | 0.8375 | transfermarkt_availability_split_2026_06_01 | transfermarkt_availability_split_2026_06_01 | 0.076136 | no | no |
-| Thibaut Courtois | BEL | 0.4432 | 0.493 | transfermarkt_availability_split_2026_06_04+gk_hierarchy_normalized | transfermarkt_availability_split_2026_06_04+gk_hierarchy_normalized | 0.044818 | no | no |
-| Ladislav Krejci | CZE | 0.8635 | 0.8635 | transfermarkt_availability_split_2026_06_01 | transfermarkt_availability_split_2026_06_01 | 0.0785 | no | no |
-| Raphinha | BRA | 0.8812 | 0.8812 | transfermarkt_availability_split_2026_06_01 | transfermarkt_availability_split_2026_06_01 | 0.080109 | no | no |
-| Vladimir Coufal | CZE | 0.7537 | 0.7537 | transfermarkt_availability_split_2026_06_01 | transfermarkt_availability_split_2026_06_01 | 0.068518 | no | no |
+| Harry Kane | ENG | 0.8501 | 0.92 | transfermarkt_availability_split_2026_06_05 | transfermarkt_availability_split_2026_06_05 | 0.083636 | no | no |
+| Unai Simon | ESP | 0.7747 | 0.8605 | transfermarkt_availability_split_2026_06_05+gk_hierarchy_normalized | transfermarkt_availability_split_2026_06_05+gk_hierarchy_normalized | 0.078227 | no | no |
+| Mike Maignan | FRA | 0.8924 | 0.9407 | transfermarkt_availability_split_2026_06_05+gk_hierarchy_normalized | transfermarkt_availability_split_2026_06_05+gk_hierarchy_normalized | 0.085518 | no | no |
+| Antonio Rüdiger | GER | 0.8096 | 0.2165 | transfermarkt_availability_split_2026_06_05 | transfermarkt_availability_split_2026_06_05 | 0.019682 | no | no |
+| Erling Haaland | NOR | 0.8857 | 0.9058 | transfermarkt_availability_split_2026_06_05 | transfermarkt_availability_split_2026_06_05 | 0.082345 | no | no |
+| Jules Kounde | FRA | 0.8404 | 0.6814 | transfermarkt_availability_split_2026_06_05 | transfermarkt_availability_split_2026_06_05 | 0.061945 | no | no |
+| Antonio Nusa | NOR | 0.6924 | 0.6563 | transfermarkt_availability_split_2026_06_05 | transfermarkt_availability_split_2026_06_05 | 0.059664 | no | no |
+| Alexander Sørloth | NOR | 0.7524 | 0.8805 | transfermarkt_availability_split_2026_06_05 | transfermarkt_availability_split_2026_06_05 | 0.080045 | no | no |
+| Alexander Schlager | AUT | 0.8395 | 0.921 | transfermarkt_availability_split_2026_06_05+gk_hierarchy_normalized | transfermarkt_availability_split_2026_06_05+gk_hierarchy_normalized | 0.083727 | no | no |
+| Thibaut Courtois | BEL | 0.5655 | 0.8305 | transfermarkt_availability_split_2026_06_05+gk_hierarchy_normalized | transfermarkt_availability_split_2026_06_05+gk_hierarchy_normalized | 0.0755 | no | no |
+| Vladimir Coufal | CZE | 0.8954 | 0.9098 | transfermarkt_availability_split_2026_06_05 | transfermarkt_availability_split_2026_06_05 | 0.082709 | no | no |
+| Ladislav Krejci | CZE | 0.8666 | 0.9051 | transfermarkt_availability_split_2026_06_05 | transfermarkt_availability_split_2026_06_05 | 0.082282 | no | no |
+| Martin Ødegaard | NOR | 0.8257 | 0.8841 | transfermarkt_availability_split_2026_06_05 | transfermarkt_availability_split_2026_06_05 | 0.080373 | no | no |
+| Manuel Neuer | GER | 0.2376 | 0.3702 | transfermarkt_availability_split_2026_06_05+gk_hierarchy_normalized | transfermarkt_availability_split_2026_06_05+gk_hierarchy_normalized | 0.033655 | no | no |
+| Victor Munoz | ESP | 0.0424 | 0.0424 | transfermarkt_availability_split_2026_06_05 | transfermarkt_availability_split_2026_06_05 | 0.003855 | no | no |
+| Raphinha | BRA | 0.7752 | 0.6781 | transfermarkt_availability_split_2026_06_05 | transfermarkt_availability_split_2026_06_05 | 0.061645 | no | no |
+| Igor Thiago | BRA | 0.047 | 0.047 | transfermarkt_availability_split_2026_06_05 | transfermarkt_availability_split_2026_06_05 | 0.004273 | no | no |
+| Yousef Qashi | JOR | 0.8559 | 0.8559 | transfermarkt_availability_split_2026_06_05 | transfermarkt_availability_split_2026_06_05 | 0.077809 | no | no |
+| Joan Garcia | ESP | 0.0331 | 0.0403 | transfermarkt_availability_split_2026_06_05+gk_hierarchy_normalized | transfermarkt_availability_split_2026_06_05+gk_hierarchy_normalized | 0.003664 | no | no |
 
 ## Noter
 

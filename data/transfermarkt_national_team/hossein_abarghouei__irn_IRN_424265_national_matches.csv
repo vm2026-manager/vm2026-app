@@ -1,0 +1,2 @@
+﻿date,matchday,venue,for_team,opponent,result,position,competition,participation_state,goals,assists,yellow_cards,row_text,was_not_in_squad,was_on_bench,has_position,minutes_estimate,started_estimate,player_id,player_name,team_id,position_model,transfermarkt_player_id,source_url
+10/10/25,6,away,3582,3448,1:2,3,FS,played,0,0,0,10/10/25 | FS | club:3582 | opponent:3448 | 1:2 | played | 90',False,False,True,90,True,hossein_abarghouei__irn,Hossein Abarghouei,IRN,DEF,424265,https://www.transfermarkt.de/hossein-abarghouei/nationalmannschaft/spieler/424265/verein_id/3582

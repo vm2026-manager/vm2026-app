@@ -2,6 +2,7 @@
 
 import json
 import re
+import sys
 import time
 import unicodedata
 import argparse
@@ -66,6 +67,12 @@ def clean_cell(value: Any) -> str:
 
 def clean_col(value: Any) -> str:
     return clean_cell(value)
+
+
+def console_text(value: Any) -> str:
+    text = str(value)
+    encoding = sys.stdout.encoding or "utf-8"
+    return text.encode(encoding, errors="replace").decode(encoding, errors="replace")
 
 
 def fetch_html(url: str) -> str:
@@ -540,6 +547,18 @@ def find_caps_goals_national_url(html: str, profile_url: str, tm_player_id: str)
     return None
 
 
+def find_any_profile_national_url(html: str, profile_url: str, tm_player_id: str) -> str | None:
+    pattern = re.compile(
+        rf'href="([^"]*/nationalmannschaft/spieler/{re.escape(tm_player_id)}(?:/verein_id/\d+)?)"',
+        re.IGNORECASE,
+    )
+    matches = [match.group(1) for match in pattern.finditer(html)]
+    if not matches:
+        return None
+    matches.sort(key=lambda href: ("/verein_id/" in href, href), reverse=True)
+    return urljoin(ceapi_base_for(profile_url), matches[0].replace("&amp;", "&"))
+
+
 def find_national_url(profile_url: str, tm_player_id: str) -> str:
     html = fetch_html(profile_url)
 
@@ -547,15 +566,9 @@ def find_national_url(profile_url: str, tm_player_id: str) -> str:
     if caps_goals_url:
         return caps_goals_url
 
-    # Ofte findes nationalmannschaft-linket direkte i profil-HTML.
-    pattern = re.compile(
-        rf'href="([^"]*/nationalmannschaft/spieler/{re.escape(tm_player_id)}(?:/verein_id/\d+)?)"',
-        re.IGNORECASE,
-    )
-
-    match = pattern.search(html)
-    if match:
-        return urljoin(ceapi_base_for(profile_url), match.group(1).replace("&amp;", "&"))
+    profile_national_url = find_any_profile_national_url(html, profile_url, tm_player_id)
+    if profile_national_url:
+        return profile_national_url
 
     # Fallback: konstrueret national-page uden verein_id.
     return f"{ceapi_base_for(profile_url)}/x/nationalmannschaft/spieler/{tm_player_id}"
@@ -919,6 +932,10 @@ def scrape_player_from_transfermarkt_url(
         if caps_url:
             national_url = caps_url
             caps_goals_link_found = True
+        else:
+            profile_national_url = find_any_profile_national_url(profile_html, profile_url, tm_player_id)
+            if profile_national_url:
+                national_url = profile_national_url
 
     if not national_url:
         base_url = ceapi_base_for(profile_url) if profile_url else BASE_URL
@@ -1137,7 +1154,7 @@ def main() -> None:
     print(f"Manual URL matched: {sum(1 for row in manual_audit_rows if row.get('matched_player_id'))}")
     print(f"Manual-only: {args.manual_only}")
     if args.manual_name:
-        print(f"Manual names: {', '.join(args.manual_name)}")
+        print(console_text(f"Manual names: {', '.join(args.manual_name)}"))
     print(f"Refresh: {args.refresh}")
     print(f"Max this run: {args.limit}")
     print(f"Selected for run: {len(todo)}")

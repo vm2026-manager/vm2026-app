@@ -1,0 +1,2 @@
+﻿date,matchday,venue,for_team,opponent,result,position,competition,participation_state,goals,assists,yellow_cards,row_text,was_not_in_squad,was_on_bench,has_position,minutes_estimate,started_estimate,player_id,player_name,team_id,position_model,transfermarkt_player_id,source_url
+03/06/26,18,away,14161,9171,4:0,6,FS,played,0,0,0,03/06/26 | FS | club:14161 | opponent:9171 | 4:0 | played | 65',False,False,True,65,True,dominique_simon__hai,Dominique Simon,HAI,MID,988188,https://www.transfermarkt.de/dominique-simon/nationalmannschaft/spieler/988188/verein_id/14161

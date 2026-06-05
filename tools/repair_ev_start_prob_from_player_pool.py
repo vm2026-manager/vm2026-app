@@ -57,7 +57,31 @@ SANITY_NAMES = {
     "Ladislav Krejci",
     "Vladimír Coufal",
     "Vladimir Coufal",
+    "Antonio Rüdiger",
+    "Joan Garcia",
+    "Unai Simon",
+    "Alexander Schlager",
+    "Mike Maignan",
+    "Victor Munoz",
+    "Igor Thiago",
+    "Yousef Qashi",
+    "Erling Haaland",
 }
+
+SYNC_FIELDS = [
+    "start_prob",
+    "start_prob_source",
+    "conditional_start_prob",
+    "appearance_prob",
+    "availability_prob",
+    "availability_risk",
+    "availability_status",
+    "round_specific_rotation_risk",
+    "start_security",
+    "start_probability_pct",
+    "start_status",
+    "minute_share",
+]
 
 
 def txt(value: Any) -> str:
@@ -115,19 +139,29 @@ def load_pool_by_id() -> dict[str, dict[str, Any]]:
 
 
 def should_promote_pool_signal(pool: dict[str, Any], ev_row: pd.Series) -> bool:
-    pool_start = to_float(pool.get("start_prob"), -1.0)
-    ev_start = to_float(ev_row.get("start_prob"), -1.0)
-    if pool_start < 0:
+    if to_float(pool.get("start_prob"), -1.0) < 0:
         return False
-    pool_source = pool.get("start_prob_source")
-    ev_source = ev_row.get("start_prob_source")
-    if "gk_hierarchy_normalized" in txt(pool_source).lower() and abs(pool_start - ev_start) >= 0.0001:
+    for field in SYNC_FIELDS:
+        pool_value = pool.get(field)
+        ev_value = ev_row.get(field)
+        pool_missing = pool_value is None or txt(pool_value).lower() in {"", "nan", "none"}
+        ev_missing = ev_value is None or txt(ev_value).lower() in {"", "nan", "none"}
+        if pool_missing and ev_missing:
+            continue
+        if field in {
+            "start_prob",
+            "conditional_start_prob",
+            "appearance_prob",
+            "availability_prob",
+            "start_security",
+            "minute_share",
+        }:
+            if abs(to_float(pool_value) - to_float(ev_value)) <= 0.0001:
+                continue
+        elif txt(pool_value) == txt(ev_value):
+            continue
         return True
-    if source_priority(pool_source) <= source_priority(ev_source):
-        return False
-    if abs(pool_start - ev_start) >= 0.01:
-        return True
-    return txt(pool_source) != txt(ev_source)
+    return False
 
 
 def issue_for(pool: dict[str, Any] | None, ev_row: pd.Series) -> tuple[str, str]:
@@ -140,13 +174,8 @@ def issue_for(pool: dict[str, Any] | None, ev_row: pd.Series) -> tuple[str, str]
     ev_source = ev_row.get("start_prob_source")
     if should_promote_pool_signal(pool, ev_row):
         return (
-            "better_player_pool_start_signal_should_override_legacy_ev_source",
-            "Promote player_pool start_prob/source into EV start fields; keep EV components unchanged.",
-        )
-    if diff >= 0.20:
-        return (
-            "large_start_prob_mismatch_but_source_priority_not_higher",
-            "Manual review; do not overwrite without better source priority.",
+            "player_pool_authoritative_start_fields_out_of_sync",
+            "Synchronize all player-pool start fields by exact player_id; rebuild components afterwards.",
         )
     return "ok", "No action."
 
@@ -170,6 +199,7 @@ def build_audit_rows(ev_df: pd.DataFrame, pool_by_id: dict[str, dict[str, Any]])
                 "ev_start_prob": fmt(ev_start),
                 "ev_start_prob_source": txt(ev_row.get("start_prob_source")),
                 "start_prob_diff": fmt(pool_start - ev_start),
+                "identity_match_status": "exact_player_id" if pool else "blocked_no_exact_player_id",
                 "minute_share": fmt(ev_row.get("minute_share"), 6),
                 "suspected_issue": issue,
                 "recommended_action": action,
@@ -182,8 +212,8 @@ def count_serious(rows: list[dict[str, Any]]) -> int:
     return sum(
         1
         for row in rows
-        if row["suspected_issue"] == "better_player_pool_start_signal_should_override_legacy_ev_source"
-        and to_float(row["start_prob_diff"]) >= 0.20
+        if row["identity_match_status"] == "exact_player_id"
+        and abs(to_float(row["start_prob_diff"])) > 0.001
     )
 
 
@@ -191,8 +221,8 @@ def low_source_counts(rows: list[dict[str, Any]]) -> Counter[str]:
     counter: Counter[str] = Counter()
     for row in rows:
         if (
-            row["suspected_issue"] == "better_player_pool_start_signal_should_override_legacy_ev_source"
-            and to_float(row["start_prob_diff"]) >= 0.20
+            row["identity_match_status"] == "exact_player_id"
+            and abs(to_float(row["start_prob_diff"])) > 0.001
         ):
             counter[source_bucket(row["ev_start_prob_source"])] += 1
     return counter
@@ -201,10 +231,10 @@ def low_source_counts(rows: list[dict[str, Any]]) -> Counter[str]:
 def repair_ev_df(ev_df: pd.DataFrame, pool_by_id: dict[str, dict[str, Any]]) -> tuple[pd.DataFrame, list[dict[str, Any]]]:
     work = ev_df.copy()
     changed: list[dict[str, Any]] = []
-    if "minute_share" not in work.columns:
-        work["minute_share"] = ""
-    if "start_prob_source" not in work.columns:
-        work["start_prob_source"] = ""
+    for field in SYNC_FIELDS:
+        if field not in work.columns:
+            work[field] = ""
+        work[field] = work[field].astype(object)
 
     for idx, ev_row in work.iterrows():
         player_id = txt(ev_row.get("player_id"))
@@ -216,11 +246,22 @@ def repair_ev_df(ev_df: pd.DataFrame, pool_by_id: dict[str, dict[str, Any]]) -> 
         old_minute = to_float(ev_row.get("minute_share"))
         new_start = to_float(pool.get("start_prob"))
         new_source = txt(pool.get("start_prob_source"))
-        new_minute = new_start / 11.0 if new_start > 0 else old_minute
+        pool_minute = to_float(pool.get("minute_share"), -1.0)
+        new_minute = pool_minute if pool_minute >= 0 else (new_start / 11.0 if new_start > 0 else 0.0)
 
-        work.at[idx, "start_prob"] = round(new_start, 4)
-        work.at[idx, "start_prob_source"] = new_source
-        work.at[idx, "minute_share"] = round(new_minute, 6)
+        for field in SYNC_FIELDS:
+            value = pool.get(field)
+            if field == "minute_share":
+                value = round(new_minute, 6)
+            elif field in {
+                "start_prob",
+                "conditional_start_prob",
+                "appearance_prob",
+                "availability_prob",
+                "start_security",
+            } and value not in (None, ""):
+                value = round(to_float(value), 4)
+            work.at[idx, field] = value
 
         changed.append(
             {
@@ -251,6 +292,7 @@ def write_audit_csv(rows: list[dict[str, Any]]) -> None:
         "ev_start_prob",
         "ev_start_prob_source",
         "start_prob_diff",
+        "identity_match_status",
         "minute_share",
         "suspected_issue",
         "recommended_action",
@@ -293,22 +335,25 @@ def write_audit_md(before_rows: list[dict[str, Any]], after_rows: list[dict[str,
     lines = [
         "# Player Pool vs EV Start Probability Audit",
         "",
-        "Audit og målrettet repair af EV-filens startfelter. Goal EV, weighted match EV og strategi-output er ikke genberegnet.",
+        "Autoritativ synkronisering af EV-filens startfelter fra player pool ved exact `player_id`. Komponenter genbygges i næste pipeline-trin.",
         "",
         "## Rodårsag",
         "",
-        "`tools/rebase_player_ev_to_holdet_master.py` brugte EV-rækkens eksisterende `start_prob` som førstevalg og player-pool signalet som fallback. Dermed kunne legacy/fallback-kilder som `team_minute_rank`, `name+team` og `holdet_official_unmatched_default` overskrive nyere dokumenterede Transfermarkt-/manual-/lineup-signaler.",
+        "Repairen anvendte `source_priority()` og opdaterede kun, når poolkilden havde højere prioritet end EV-kilden. Nye og gamle Transfermarkt-kilder lå i samme bucket, fald blev ofte afvist, og `count_serious()` talte kun store positive differencer. Derfor kunne scriptet rapportere 0 alvorlige mismatches, selv om over 1.000 exact-ID-rækker var ude af sync.",
         "",
         "## Kildeprioritet efter rettelse",
         "",
-        "1. confirmed_lineup / expected_lineup / manual / transfermarkt_availability_split / context_override",
-        "2. andre dokumenterede ikke-fallback-kilder",
-        "3. team_minute_rank / name+team / holdet_official_unmatched_default / legacy / fallback",
+        "1. Player pool er autoritativ for alle exact-player_id matches.",
+        "2. Context-overrides bevares, fordi de allerede er indarbejdet i player pool før sync.",
+        "3. Rækker uden exact player_id-match blokeres og rapporteres; der bruges ikke fuzzy overskrivning.",
         "",
         "## Mismatch counts",
         "",
-        f"- Alvorlige mismatches før: {count_serious(before_rows)}",
-        f"- Alvorlige mismatches efter: {count_serious(after_rows)}",
+        f"- Start_prob mismatches > 0.001 før: {count_serious(before_rows)}",
+        f"- Start_prob mismatches > 0.001 efter: {count_serious(after_rows)}",
+        f"- Start_prob_source mismatches før: {sum(1 for row in before_rows if row['pool_start_prob_source'] != row['ev_start_prob_source'])}",
+        f"- Start_prob_source mismatches efter: {sum(1 for row in after_rows if row['pool_start_prob_source'] != row['ev_start_prob_source'])}",
+        f"- Blokerede identitetsmatches: {sum(1 for row in after_rows if row['identity_match_status'] != 'exact_player_id')}",
         f"- team_minute_rank før/efter: {before_counts.get('team_minute_rank', 0)} / {after_counts.get('team_minute_rank', 0)}",
         f"- holdet_official_unmatched_default før/efter: {before_counts.get('holdet_official_unmatched_default', 0)} / {after_counts.get('holdet_official_unmatched_default', 0)}",
         f"- name+team før/efter: {before_counts.get('name+team', 0)} / {after_counts.get('name+team', 0)}",
