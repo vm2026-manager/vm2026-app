@@ -40,8 +40,8 @@ High-start betyder `start_prob >= 0.70`. Spreads er beregnet pr. hold/kamp/kompo
 
 | player_name | start_prob | match_1_result_ev | match_1_team_scores_ev | match_1_opponent_scores_ev | match_1_on_pitch_ev |
 | --- | --- | --- | --- | --- | --- |
-| Erling Haaland | 0.9058 | 0.153239 | 0.068479 | -0.056937 | 0.058696 |
-| Martin Ødegaard | 0.8841 | 0.149568 | 0.066839 | -0.055573 | 0.056092 |
+| Erling Haaland | 0.9058 | 0.153239 | 0.06848 | -0.056938 | 0.058696 |
+| Martin Ødegaard | 0.8841 | 0.149568 | 0.066839 | -0.055574 | 0.056092 |
 | Alexander Sørloth | 0.8805 | 0.148959 | 0.066567 | -0.055347 | 0.05566 |
-| Antonio Nusa | 0.6563 | 0.137996 | 0.061667 | -0.051273 | 0.047884 |
-| Oscar Bobb | 0.6439 | 0.156927 | 0.070127 | -0.058307 | 0.061312 |
+| Antonio Nusa | 0.6563 | 0.137996 | 0.061668 | -0.051274 | 0.047884 |
+| Oscar Bobb | 0.6439 | 0.156927 | 0.070128 | -0.058308 | 0.061312 |

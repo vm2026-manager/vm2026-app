@@ -82,6 +82,7 @@
     }
 
     .left-panel {
+      position: relative;
       background: linear-gradient(180deg, #88c23f 0%, #6faa31 100%);
       padding: 14px 16px 16px;
       height: 100%;
@@ -301,6 +302,53 @@
     .topbar-btn:disabled {
       opacity: 0.55;
       cursor: not-allowed;
+    }
+
+    .optimizer-loading-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background: rgba(17, 24, 39, 0.54);
+      backdrop-filter: blur(2px);
+    }
+
+    .optimizer-loading-overlay[hidden] {
+      display: none;
+    }
+
+    .optimizer-loading-status {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      max-width: calc(100% - 24px);
+      padding: 14px 18px;
+      border-radius: 8px;
+      background: #ffffff;
+      color: #111827;
+      box-shadow: 0 12px 30px rgba(17, 24, 39, 0.28);
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .optimizer-loading-spinner {
+      width: 22px;
+      height: 22px;
+      flex: 0 0 22px;
+      box-sizing: border-box;
+      border: 3px solid #d1d5db;
+      border-top-color: #15803d;
+      border-radius: 50%;
+      animation: optimizer-spin 0.75s linear infinite;
+    }
+
+    @keyframes optimizer-spin {
+      to {
+        transform: rotate(360deg);
+      }
     }
 
     .status-box {
@@ -1519,6 +1567,20 @@
             <div class="pitch-goal-top"></div>
             <div class="pitch-goal-bottom"></div>
           </div>
+
+          <div
+            id="optimizerLoadingOverlay"
+            class="optimizer-loading-overlay"
+            role="status"
+            aria-live="polite"
+            aria-label="Finder den bedste kombination"
+            hidden
+          >
+            <div class="optimizer-loading-status">
+              <span class="optimizer-loading-spinner" aria-hidden="true"></span>
+              <span>Finder den bedste kombination…</span>
+            </div>
+          </div>
         </div>
 
         <div class="right-panel" id="rightPanel">
@@ -1756,6 +1818,9 @@
     const undoBtn = document.getElementById("undoBtn");
     const clearTeamBtn = document.getElementById("clearTeamBtn");
     const strategyButtons = document.getElementById("strategyButtons");
+    const optimizerLoadingOverlay = document.getElementById("optimizerLoadingOverlay");
+    const fillMissingButtonText = fillMissingBtn.textContent;
+    let optimizerIsBusy = false;
 
     const topbarUser = document.getElementById("topbarUser");
     const openLoginBtn = document.getElementById("openLoginBtn");
@@ -1898,6 +1963,22 @@
     function clearStatus() {
       statusBox.className = "status-box";
       statusBox.textContent = "";
+    }
+
+    function setOptimizerBusy(isBusy) {
+      optimizerIsBusy = isBusy;
+      optimizerLoadingOverlay.hidden = !isBusy;
+      fillMissingBtn.textContent = isBusy ? "Beregner…" : fillMissingButtonText;
+
+      [optimizeBtn, fillMissingBtn, formationSelect, ...strategyButtons.querySelectorAll("button")].forEach(button => {
+        button.disabled = isBusy;
+      });
+    }
+
+    function waitForOptimizerLoaderPaint() {
+      return new Promise(resolve => {
+        requestAnimationFrame(() => requestAnimationFrame(resolve));
+      });
     }
 
     function escapeHtml(value) {
@@ -3847,18 +3928,24 @@ function saveState() {
       return improved;
     }
 
-    function fillMissingSlotsOptimally() {
-      const emptySlots = getEmptySlots();
+    async function fillMissingSlotsOptimally() {
+      if (optimizerIsBusy) return;
 
-      if (!emptySlots.length) {
-        showStatus("Der er ingen tomme pladser at udfylde.", "info");
-        return;
-      }
+      setOptimizerBusy(true);
+      await waitForOptimizerLoaderPaint();
 
-      if (emptySlots.length === getCurrentSlots().length) {
-        applyOptimalSquadForCurrentFormation();
-        return;
-      }
+      try {
+        const emptySlots = getEmptySlots();
+
+        if (!emptySlots.length) {
+          showStatus("Der er ingen tomme pladser at udfylde.", "info");
+          return;
+        }
+
+        if (emptySlots.length === getCurrentSlots().length) {
+          applyOptimalSquadForCurrentFormation();
+          return;
+        }
 
       const usedIdsBase = new Set(Object.values(squad).filter(Boolean).map(String));
       const teamCountsBase = getCurrentTeamCounts();
@@ -3996,15 +4083,22 @@ function saveState() {
         return;
       }
 
-      pushHistory();
-      squad = candidateSquad;
-      activeSlotKey = null;
-      frontendCaptainOverride = null;
-      activeSlotText.textContent = "Ingen valgt";
-      clearStatus();
-      saveState();
-      render();
-      scheduleAutosave();
+        pushHistory();
+        squad = candidateSquad;
+        activeSlotKey = null;
+        frontendCaptainOverride = null;
+        activeSlotText.textContent = "Ingen valgt";
+        clearStatus();
+        saveState();
+        render();
+        scheduleAutosave();
+      } catch (error) {
+        console.error("FILL MISSING ERROR:", error);
+        const errorMessage = error && error.message ? error.message : String(error);
+        showStatus(`Udfyldning fejlede: ${errorMessage}`, "error");
+      } finally {
+        setOptimizerBusy(false);
+      }
     }
 
     function renderBudget() {

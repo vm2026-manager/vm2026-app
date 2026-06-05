@@ -212,8 +212,6 @@ def pool_to_df(players: list[dict[str, Any]]) -> pd.DataFrame:
                 "official_holdet_master": p.get("official_holdet_master", True),
                 "copied_from_old_player_pool": p.get("copied_from_old_player_pool", False),
                 "old_player_id": p.get("old_player_id"),
-                "pool_weighted_group_stage_ev": p.get("weighted_group_stage_ev", 0.0),
-                "pool_optimizer_ev": p.get("optimizer_ev", p.get("weighted_group_stage_ev", 0.0)),
                 "pool_start_prob": p.get("start_prob", 0.25),
                 "pool_start_prob_source": p.get("start_prob_source", "holdet_official_unmatched_default"),
             }
@@ -399,10 +397,9 @@ def main() -> None:
 
         start_prob, start_prob_source = choose_start_signal(row, pool_row)
 
-        weighted_ev = safe_numeric(
-            row.get("weighted_group_stage_ev"),
-            safe_numeric(pool_row.get("pool_weighted_group_stage_ev"), 0.0),
-        )
+        # Player pool is authoritative for Holdet identity/master data, never as
+        # an upstream EV source. Final EV is synchronized back to the pool later.
+        weighted_ev = safe_numeric(row.get("weighted_group_stage_ev"), 0.0)
 
         minute_share = safe_numeric(row.get("minute_share"), start_prob / 11.0 if start_prob > 0 else 0.0)
 

@@ -3,17 +3,17 @@ VM 2026 APP DATA AUDIT
 
 1. PÃ¥krÃ¦vede app-filer
 ------------------------------------------------------------
-OK       player_pool_v1.json                 2337739
+OK       player_pool_v1.json                 4019482
 OK       optimal_squads_by_formation.json    370182
 OK       fixtures_group.csv                  2701
-OK       player_start_security_nt.csv        157435
+OK       player_start_security_nt.csv        421451
 OK       match_odds_probs.csv                7314
 
 2. Player pool
 ------------------------------------------------------------
-Spillere: 1244
-Unikke player_id: 1244
-Positioner: {'DEF': 408, 'GK': 152, 'MID': 410, 'FWD': 274}
+Spillere: 1292
+Unikke player_id: 1292
+Positioner: {'DEF': 417, 'GK': 164, 'MID': 426, 'FWD': 285}
 Lande/hold: 48
 Mangler pris: 0
 Mangler position: 0

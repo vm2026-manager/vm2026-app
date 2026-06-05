@@ -8,6 +8,11 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+try:
+    from sync_final_ev_to_player_pool import sync_final_ev_to_pool
+except ImportError:
+    from tools.sync_final_ev_to_player_pool import sync_final_ev_to_pool
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -727,6 +732,7 @@ def main() -> int:
         "repair_status",
     ]
     write_csv(PRICE_DIAG_PATH, [col for col in diag_cols if col in final_fields], repaired)
+    final_sync = sync_final_ev_to_pool()
 
     before_stats = audit_stats(before_audit)
     after_stats = audit_stats(after_audit)
@@ -746,6 +752,10 @@ def main() -> int:
     print(f"Wrote: {OUT_MD.relative_to(ROOT)}")
     print(f"Wrote: {RESERVE_AUDIT_CSV.relative_to(ROOT)}")
     print(f"Wrote: {RESERVE_AUDIT_MD.relative_to(ROOT)}")
+    print(
+        "Final EV -> pool optimizer mismatches > 0.001: "
+        f"{final_sync['before_thresholds'][0]} -> {final_sync['after_thresholds'][0]}"
+    )
     return 0
 
 
