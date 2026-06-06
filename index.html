@@ -18,14 +18,13 @@
     }
 
     .topbar-auth {
-      position: absolute;
-      top: 12px;
-      right: 12px;
-      z-index: 5;
       display: flex;
       align-items: center;
+      justify-content: flex-end;
       gap: 8px;
       flex-wrap: wrap;
+      flex: 0 0 auto;
+      margin-bottom: 10px;
     }
 
     .topbar-btn {
@@ -153,24 +152,6 @@
       color: white;
     }
 
-    .bank-box.rule-ok {
-      background: rgba(34, 197, 94, 0.25);
-    }
-
-    .bank-box.rule-warn {
-      background: rgba(180, 83, 9, 0.34);
-      border-color: rgba(251, 191, 36, 0.38);
-    }
-
-    .formation-bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 10px;
-      flex-wrap: wrap;
-    }
-
     .formation-select-wrap {
       display: flex;
       align-items: center;
@@ -263,9 +244,28 @@
 
     .action-bar {
       display: flex;
+      align-items: center;
       gap: 10px;
       flex-wrap: wrap;
-      margin-bottom: 12px;
+      margin-bottom: 8px;
+    }
+
+    .active-slot-badge {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-left: auto;
+      padding: 6px 9px;
+      border-radius: 9px;
+      background: rgba(17,24,39,0.82);
+      color: white;
+      font-size: 11px;
+      line-height: 1.15;
+      white-space: nowrap;
+    }
+
+    .active-slot-badge strong {
+      color: #fde047;
     }
 
     .action-btn {
@@ -771,10 +771,10 @@
     }
 
     .info-box {
-      margin-bottom: 12px;
+      margin-bottom: 8px;
       background: #2f3239;
       border-radius: 10px;
-      padding: 10px 12px;
+      padding: 8px 10px;
       font-size: 12px;
       line-height: 1.45;
       color: white;
@@ -782,14 +782,14 @@
     }
 
     .info-box-title {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      gap: 10px;
-      padding-right: 190px;
-      margin-bottom: 6px;
       font-size: 13px;
       font-weight: bold;
+    }
+
+    .info-box-actions {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 4px;
     }
 
     .info-box-toggle {
@@ -810,44 +810,16 @@
       line-height: 1.35;
     }
 
+    .info-box-summary + .info-box-summary {
+      margin-top: 3px;
+    }
+
     .info-box-details {
       margin-top: 8px;
     }
 
     .info-box.collapsed .info-box-details {
       display: none;
-    }
-
-    .data-status {
-      margin-bottom: 12px;
-      background: #2f3239;
-      border: 1px solid #3f4450;
-      border-radius: 10px;
-      padding: 10px 12px;
-      color: white;
-      flex: 0 0 auto;
-    }
-
-    .data-status-title {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 8px;
-      font-size: 13px;
-      font-weight: bold;
-    }
-
-    .data-status-toggle {
-      background: #1c1e23;
-      color: white;
-      border: 1px solid #3f4450;
-      border-radius: 8px;
-      padding: 4px 7px;
-      font-size: 11px;
-      font-weight: bold;
-      cursor: pointer;
-      white-space: nowrap;
     }
 
     .data-status-date {
@@ -909,10 +881,6 @@
       line-height: 1.35;
     }
 
-    .data-status.collapsed .data-status-details {
-      display: none;
-    }
-
     .trade-search {
       display: grid;
       grid-template-columns: minmax(0, 1fr) auto;
@@ -969,8 +937,27 @@
 
     .right-mode-actions {
       display: flex;
+      align-items: center;
       gap: 6px;
       flex-wrap: wrap;
+    }
+
+    .position-filter-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      border: 1px solid rgba(253, 224, 71, 0.55);
+      background: rgba(253, 224, 71, 0.12);
+      color: #fde047;
+      border-radius: 999px;
+      padding: 5px 8px;
+      font-size: 11px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .position-filter-chip[hidden] {
+      display: none;
     }
 
     .right-mode-btn {
@@ -988,6 +975,11 @@
       background: #fde047;
       border-color: #ca8a04;
       color: #111827;
+    }
+
+    .right-mode-btn:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
     }
 
     .right-panel.alternative-mode .trade-search,
@@ -1077,6 +1069,21 @@
       line-height: 1.25;
     }
 
+    .alternative-section-title {
+      margin: 12px 4px 5px;
+      padding: 7px 9px;
+      border-radius: 8px;
+      background: rgba(253, 224, 71, 0.1);
+      border-left: 3px solid #fde047;
+      color: #f9fafb;
+      font-size: 12px;
+      line-height: 1.25;
+    }
+
+    .alternative-section-title:first-child {
+      margin-top: 8px;
+    }
+
     .alternative-chips {
       display: flex;
       gap: 7px;
@@ -1140,6 +1147,20 @@
       border-radius: 999px;
       background: #fed7aa;
       color: #7c2d12;
+      font-size: 9px;
+      font-weight: 900;
+      line-height: 1.1;
+      vertical-align: middle;
+    }
+
+    .previous-player-label {
+      display: inline-block;
+      margin-left: 4px;
+      padding: 1px 5px;
+      border-radius: 999px;
+      background: rgba(134, 239, 172, 0.16);
+      border: 1px solid rgba(134, 239, 172, 0.38);
+      color: #86efac;
       font-size: 9px;
       font-weight: 900;
       line-height: 1.1;
@@ -1545,32 +1566,6 @@
                 <div><strong>High risk</strong></div>
                 <div id="highRiskValue">0</div>
               </div>
-              <div class="bank-box rule-ok" id="ruleStatusBox">
-                <div><strong>Regler</strong></div>
-                <div id="ruleStatusValue">OK</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="formation-bar">
-            <div class="formation-select-wrap">
-              <strong>Formation</strong>
-              <select id="formationSelect">
-                
-                <option value="3-4-3" selected>3-4-3</option>
-                <option value="3-5-2">3-5-2</option>
-                <option value="4-3-3">4-3-3</option>
-                <option value="4-4-2">4-4-2</option>
-                <option value="4-5-1">4-5-1</option>
-                <option value="5-3-2">5-3-2</option>
-                <option value="5-4-1">5-4-1</option>
-              </select>
-            </div>
-
-            <!-- Strategi kommer tilbage senere: Gruppefase, 50/50, Langsigtet. -->
-            <div class="formation-select-wrap">
-              <strong>Valgt plads</strong>
-              <span id="activeSlotText">Ingen valgt</span>
             </div>
           </div>
 
@@ -1586,9 +1581,25 @@
             <div class="strategy-content">
               <div class="strategy-buttons" id="strategyButtons"></div>
             </div>
+            <div class="active-slot-badge">
+              <strong>Valgt plads</strong>
+              <span id="activeSlotText">Ingen valgt</span>
+            </div>
           </div>
 
           <div class="action-bar">
+            <div class="formation-select-wrap">
+              <strong>Formation</strong>
+              <select id="formationSelect">
+                <option value="3-4-3" selected>3-4-3</option>
+                <option value="3-5-2">3-5-2</option>
+                <option value="4-3-3">4-3-3</option>
+                <option value="4-4-2">4-4-2</option>
+                <option value="4-5-1">4-5-1</option>
+                <option value="5-3-2">5-3-2</option>
+                <option value="5-4-1">5-4-1</option>
+              </select>
+            </div>
             <button id="optimizeBtn" class="action-btn primary">Vælg optimalt hold</button>
             <button id="fillMissingBtn" class="action-btn tertiary">Fyld mangler optimalt</button>
             <button id="undoBtn" class="action-btn undo">Fortryd</button>
@@ -1635,40 +1646,35 @@
 
           <div class="info-box collapsed" id="infoBox">
             <div class="info-box-title">
-              <span>Forklaring</span>
-              <button id="infoBoxToggle" class="info-box-toggle" type="button" aria-expanded="false">Vis</button>
+              <span>Forklaring og datastatus</span>
             </div>
-            <div class="info-box-summary">Score · Næste kamp · Note</div>
             <div class="info-box-details" id="infoBoxDetails">
+              <div class="info-box-summary">Score · Næste kamp</div>
+              <div class="info-box-summary">
+                <span id="dataStatusSummary">Indlæser...</span>
+                <span class="data-status-date" id="dataStatusDate"></span>
+              </div>
               <div><strong>Score:</strong> Modelens samlede vurdering af spillerens fantasy-potentiale.</div>
               <div><strong>Næste kamp:</strong> Viser modstanderen i spillerens næste kamp.</div>
-              <div><strong>Note:</strong> Bruges senere til fx mulig rotation eller allerede videre.</div>
-            </div>
-          </div>
-
-          <div class="data-status collapsed" id="dataStatusPanel">
-            <div class="data-status-title">
-              <span>Datastatus</span>
-              <button id="dataStatusToggle" class="data-status-toggle" type="button" aria-expanded="false">Vis</button>
-            </div>
-            <div class="data-status-summary">
-              <span id="dataStatusSummary">Indlæser...</span>
-              <span class="data-status-date" id="dataStatusDate"></span>
-            </div>
-            <div class="data-status-details" id="dataStatusDetails">
-              <div class="data-status-grid" id="dataStatusGrid">
-                <div class="data-status-item">
-                  <div class="data-status-label">Status</div>
-                  <div class="data-status-value">Indlæser</div>
+              <div class="data-status-details" id="dataStatusDetails">
+                <div class="data-status-grid" id="dataStatusGrid">
+                  <div class="data-status-item">
+                    <div class="data-status-label">Status</div>
+                    <div class="data-status-value">Indlæser</div>
+                  </div>
                 </div>
+                <div class="data-status-note" id="dataStatusNote"></div>
               </div>
-              <div class="data-status-note" id="dataStatusNote"></div>
+            </div>
+            <div class="info-box-actions">
+              <button id="infoBoxToggle" class="info-box-toggle" type="button" aria-expanded="false">Vis</button>
             </div>
           </div>
 
           <div class="right-modebar">
             <div class="right-mode-title" id="rightModeTitle">Spillerliste</div>
             <div class="right-mode-actions">
+              <button id="activePositionChip" class="position-filter-chip" type="button" hidden></button>
               <button id="showPlayerListBtn" class="right-mode-btn active" type="button">Se spillerliste</button>
             </div>
           </div>
@@ -1819,6 +1825,9 @@
     let squad = JSON.parse(localStorage.getItem(STORAGE_KEYS.squad) || "{}");
     let currentFormation = localStorage.getItem(STORAGE_KEYS.formation) || "3-4-3";
     let activeSlotKey = null;
+    let forcePlayerListForActiveSlot = false;
+    let previousReplacementBySlot = new Map();
+    let modelChoiceBySlot = new Map();
     let squadHistory = [];
     let autosaveTimer = null;
     let authMode = "login";
@@ -1839,6 +1848,7 @@
     const rightPanel = document.getElementById("rightPanel");
     const rightModeTitle = document.getElementById("rightModeTitle");
     const showPlayerListBtn = document.getElementById("showPlayerListBtn");
+    const activePositionChip = document.getElementById("activePositionChip");
     const infoBox = document.getElementById("infoBox");
     const infoBoxToggle = document.getElementById("infoBoxToggle");
     const spentValue = document.getElementById("spentValue");
@@ -1846,11 +1856,7 @@
     const playerCountValue = document.getElementById("playerCountValue");
     const avgStartValue = document.getElementById("avgStartValue");
     const highRiskValue = document.getElementById("highRiskValue");
-    const ruleStatusBox = document.getElementById("ruleStatusBox");
-    const ruleStatusValue = document.getElementById("ruleStatusValue");
     const statusBox = document.getElementById("statusBox");
-    const dataStatusPanel = document.getElementById("dataStatusPanel");
-    const dataStatusToggle = document.getElementById("dataStatusToggle");
     const dataStatusSummary = document.getElementById("dataStatusSummary");
     const dataStatusDate = document.getElementById("dataStatusDate");
     const dataStatusGrid = document.getElementById("dataStatusGrid");
@@ -2442,6 +2448,7 @@ function saveState() {
 
       squad = squadHistory.pop();
       activeSlotKey = null;
+      previousReplacementBySlot.clear();
       activeSlotText.textContent = "Ingen valgt";
       saveState();
       render();
@@ -2458,6 +2465,8 @@ function saveState() {
       pushHistory();
       squad = {};
       activeSlotKey = null;
+      previousReplacementBySlot.clear();
+      modelChoiceBySlot.clear();
       frontendCaptainOverride = null;
       activeSlotText.textContent = "Ingen valgt";
       clearStatus();
@@ -3268,36 +3277,119 @@ function saveState() {
       return [...highScoreCandidates, ...sameTierCandidates, ...remainingCandidates];
     }
 
+    function modelRowsForCurrentStrategyAndFormation() {
+      const strategyEntry = activeStrategyEntry();
+      const formationRows = strategyEntry?.squads_by_formation?.[currentFormation]?.squad || [];
+      const strategyRows = strategyEntry?.best_squad || [];
+
+      if (rowsMatchFormation(formationRows, currentFormation)) return formationRows;
+      if (rowsMatchFormation(strategyRows, currentFormation)) return strategyRows;
+
+      return optimalSquads.filter(row =>
+        (row.selected_formation || row.formation) === currentFormation
+      );
+    }
+
+    function getModelChoiceForSlot(activeSlot) {
+      if (!activeSlot) return null;
+
+      const appliedModelChoice = modelChoiceBySlot.get(activeSlot.key);
+      if (
+        appliedModelChoice
+        && appliedModelChoice.strategyKey === activeStrategyKey
+        && appliedModelChoice.formation === currentFormation
+      ) {
+        const appliedPlayer = getPlayerById(appliedModelChoice.playerId);
+        if (appliedPlayer) return appliedPlayer;
+      }
+
+      const positionCode = normalizePositionLabel(activeSlot.positionCode || activeSlot.position);
+      const positionSlots = getCurrentSlots()
+        .filter(slot => normalizePositionLabel(slot.positionCode || slot.position) === positionCode);
+      const slotIndex = positionSlots.findIndex(slot => slot.key === activeSlot.key);
+      if (slotIndex < 0) return null;
+
+      const modelRows = modelRowsForCurrentStrategyAndFormation()
+        .filter(row => normalizePositionLabel(row.position) === positionCode);
+      return findPlayerByOptimizerRow(modelRows[slotIndex]);
+    }
+
+    function canReplaceWith(candidate, currentPlayer, activeSlot, { ignoreStartRequirement = false } = {}) {
+      if (!candidate || !currentPlayer || !activeSlot) return false;
+      if (!samePosition(candidate.position, activeSlot.positionCode || activeSlot.position)) return false;
+      if (isManualAvoidPlayer(candidate)) return false;
+      if (!ignoreStartRequirement && getPlayerStart(candidate) < 60) return false;
+
+      const candidateId = String(candidate.player_id);
+      const currentPlayerId = String(currentPlayer.player_id);
+      if (candidateId === currentPlayerId) return false;
+
+      const isAlreadyInSquad = Object.values(squad)
+        .filter(Boolean)
+        .some(playerId => String(playerId) === candidateId);
+
+      if (isAlreadyInSquad) return false;
+      if (getPlayerPrice(candidate) > getAvailableForReplacement(currentPlayer)) return false;
+      return canAddMoreFromTeam(candidate, currentPlayer.player_id);
+    }
+
+    function prioritizeReplacementCandidates(players, activeSlot, currentPlayer, modelChoice) {
+      const previous = previousReplacementBySlot.get(activeSlot?.key);
+      const priorityIds = [];
+
+      if (previous && String(previous.newPlayerId) === String(currentPlayer?.player_id)) {
+        priorityIds.push(String(previous.oldPlayerId));
+      }
+
+      if (modelChoice) {
+        priorityIds.push(String(modelChoice.player_id));
+      }
+
+      const uniquePriorityIds = [...new Set(priorityIds)];
+      return [
+        ...uniquePriorityIds
+          .map(playerId => players.find(player => String(player.player_id) === playerId))
+          .filter(Boolean),
+        ...players.filter(player => !uniquePriorityIds.includes(String(player.player_id)))
+      ];
+    }
+
     function getAlternativeGroupsForActiveSlot(activeSlot, currentPlayer) {
       if (!activeSlot || !currentPlayer) {
         return { samePrice: [], withBank: [] };
       }
 
-      const usedPlayerIds = new Set(Object.values(squad).filter(Boolean).map(String));
-      const slotPosition = activeSlot.positionCode || activeSlot.position;
       const currentPrice = getPlayerPrice(currentPlayer);
-      const availableForReplacement = getAvailableForReplacement(currentPlayer);
+      const modelChoice = getModelChoiceForSlot(activeSlot);
+      const modelChoiceId = modelChoice ? String(modelChoice.player_id) : null;
+      const baseCandidates = allPlayers.filter(player =>
+        canReplaceWith(player, currentPlayer, activeSlot, {
+          ignoreStartRequirement: modelChoiceId === String(player.player_id)
+        })
+      );
 
-      const baseCandidates = allPlayers
-        .filter(player => !usedPlayerIds.has(String(player.player_id)))
-        .filter(player => samePosition(player.position, slotPosition))
-        .filter(player => !isManualAvoidPlayer(player))
-        .filter(player => getPlayerPrice(player) <= availableForReplacement)
-        .filter(player => wouldRespectTeamLimitAfterReplacement(player, currentPlayer))
-        .filter(player => getPlayerStart(player) >= 60);
-
-      const samePrice = rankReplacementCandidates(
-        baseCandidates.filter(player => getPlayerPrice(player) <= currentPrice),
-        currentPlayer
+      const samePrice = prioritizeReplacementCandidates(
+        rankReplacementCandidates(
+          baseCandidates.filter(player => getPlayerPrice(player) <= currentPrice),
+          currentPlayer
+        ),
+        activeSlot,
+        currentPlayer,
+        modelChoice
       ).slice(0, 6);
 
       const samePriceIds = new Set(samePrice.map(player => String(player.player_id)));
 
-      const withBank = rankReplacementCandidates(
-        baseCandidates
-          .filter(player => getPlayerPrice(player) > currentPrice)
-          .filter(player => !samePriceIds.has(String(player.player_id))),
-        currentPlayer
+      const withBank = prioritizeReplacementCandidates(
+        rankReplacementCandidates(
+          baseCandidates
+            .filter(player => getPlayerPrice(player) > currentPrice)
+            .filter(player => !samePriceIds.has(String(player.player_id))),
+          currentPlayer
+        ),
+        activeSlot,
+        currentPlayer,
+        modelChoice
       ).slice(0, 8);
 
       return { samePrice, withBank };
@@ -3313,9 +3405,16 @@ function saveState() {
       const alternatives = [...alternativeGroups.samePrice, ...alternativeGroups.withBank];
       const titleName = currentPlayer?.player_name || activeSlot?.position || "plads";
       const strategyName = strategyDisplayName(activeStrategyKey);
-      const positionLabel = normalizePositionLabel(currentPlayer?.position || activeSlot?.positionCode || activeSlot?.position);
+      const positionLabel = positionFullLabel(currentPlayer?.position || activeSlot?.positionCode || activeSlot?.position);
       const availableForReplacement = getAvailableForReplacement(currentPlayer);
       const currentPrice = getPlayerPrice(currentPlayer);
+      const previousReplacement = previousReplacementBySlot.get(activeSlot?.key);
+      const previousPlayerId = previousReplacement
+        && String(previousReplacement.newPlayerId) === String(currentPlayer?.player_id)
+          ? String(previousReplacement.oldPlayerId)
+          : null;
+      const modelChoice = getModelChoiceForSlot(activeSlot);
+      const modelChoiceId = modelChoice ? String(modelChoice.player_id) : null;
       const captainWarning = currentPlayer && isCaptainPlayer(currentPlayer)
         ? `
           <div class="alternative-captain-warning">
@@ -3325,30 +3424,27 @@ function saveState() {
         `
         : "";
 
-      if (!alternatives.length) {
-        return `
-          <div class="alternatives-panel">
-            <div class="alternatives-title">Bedste alternativer til ${escapeHtml(titleName)} (${escapeHtml(positionLabel)})</div>
-            <div class="alternatives-subtitle">Strategi: ${escapeHtml(strategyName)} · Til rådighed ved skift: ${formatMoney(availableForReplacement)} · Ingen gyldige alternativer inden for position, budget og landeloft.</div>
-            ${captainWarning}
-          </div>
-        `;
-      }
-
-      function alternativeRows(players, startIndex = 0) {
+      function alternativeRows(players) {
         return players.map((player, index) => {
           const priceDiff = getPlayerPrice(player) - currentPrice;
-          const warning = hasManualCheck(player)
+          const isModelChoice = modelChoiceId === String(player.player_id);
+          const warning = hasManualCheck(player) || (isModelChoice && getPlayerStart(player) < 60)
             ? `<span class="manual-mini-warning" title="Tjek start">Tjek start</span>`
+            : "";
+          const previousLabel = previousPlayerId === String(player.player_id)
+            ? `<span class="previous-player-label">Forrige spiller</span>`
+            : "";
+          const modelLabel = isModelChoice
+            ? `<span class="previous-player-label">Modelvalg</span>`
             : "";
           const priceDiffHtml = `<div class="trade-diff ${diffClass(priceDiff)}">${formatSignedMoneyDiff(priceDiff)}</div>`;
           const transferHtml = transferInfoHtml(player, currentPlayer);
           return `
             <div class="trade-row alternative">
-              <span class="alternative-rank">${startIndex + index + 1}</span>
+              <span class="alternative-rank">${index + 1}</span>
               <div>
-                <div class="trade-name">${escapeHtml(player.player_name || "Ukendt spiller")}${warning}</div>
-                <div class="trade-meta">${escapeHtml(teamDisplayName(player.team_id, player.team_name))} ? ${escapeHtml(positionFullLabel(player.position))}</div>
+                <div class="trade-name">${escapeHtml(player.player_name || "Ukendt spiller")}${warning}${previousLabel}${modelLabel}</div>
+                <div class="trade-meta">${escapeHtml(teamDisplayName(player.team_id, player.team_name))} &middot; ${escapeHtml(positionFullLabel(player.position))}</div>
                 <div class="trade-next">${escapeHtml(nextMatchText(player.team_id))}</div>
               </div>
               <div class="trade-start-col">
@@ -3360,22 +3456,25 @@ function saveState() {
                 ${priceDiffHtml}
                 ${transferHtml}
               </div>
-              <button class="plus-btn choose-alt-btn" data-player-id="${escapeHtml(player.player_id)}">V?lg</button>
+              <button class="plus-btn choose-alt-btn" data-player-id="${escapeHtml(player.player_id)}">V\u00e6lg</button>
             </div>
           `;
         }).join("");
       }
 
-      const samePriceRows = alternativeRows(alternativeGroups.samePrice, 0);
-      const withBankRows = alternativeRows(alternativeGroups.withBank, alternativeGroups.samePrice.length);
+      const withBankRows = alternativeRows(alternativeGroups.withBank);
+      const samePriceRows = alternativeRows(alternativeGroups.samePrice);
       const rows = `
+        ${alternativeGroups.withBank.length ? `
+          <div class="alternative-section-title"><strong>Med bank</strong> &middot; Op til ${formatMoney(availableForReplacement)}</div>
+          ${withBankRows}
+        ` : ""}
         ${alternativeGroups.samePrice.length ? `
-          <div class="alternatives-subtitle"><strong>Samme prisniveau</strong> &middot; Op til ${formatMoney(currentPrice)}</div>
+          <div class="alternative-section-title"><strong>Samme prisniveau</strong> &middot; Op til ${formatMoney(currentPrice)}</div>
           ${samePriceRows}
         ` : ""}
-        ${alternativeGroups.withBank.length ? `
-          <div class="alternatives-subtitle"><strong>Med bank</strong> &middot; Op til ${formatMoney(availableForReplacement)}</div>
-          ${withBankRows}
+        ${!alternatives.length ? `
+          <div class="alternatives-subtitle">Ingen gyldige alternativer inden for position, budget og landeloft.</div>
         ` : ""}
       `;
 
@@ -3388,8 +3487,6 @@ function saveState() {
             <span class="alternative-chip">Position: ${escapeHtml(positionLabel)}</span>
             <span class="alternative-chip">Nuv\u00e6rende pris: ${formatMoney(currentPrice)}</span>
             <span class="alternative-chip">Med bank: ${formatMoney(availableForReplacement)}</span>
-            <span class="alternative-chip">Max 4 pr. land</span>
-            <span class="alternative-chip">Viser: ${alternatives.length}</span>
           </div>
           ${captainWarning}
         </div>
@@ -3398,17 +3495,32 @@ function saveState() {
     }
 
     function setActiveSlot(slotKey) {
+      forcePlayerListForActiveSlot = false;
       activeSlotKey = slotKey;
       const slot = getCurrentSlots().find(s => s.key === slotKey);
 
       if (slot) {
-        activeSlotText.textContent = `${slot.position} (${slot.key})`;
         positionFilter.value = slot.position;
-      } else {
-        activeSlotText.textContent = "Ingen valgt";
       }
 
       render();
+    }
+
+    function renderActiveSlotBadge() {
+      if (!activeSlotKey) {
+        activeSlotText.textContent = "Ingen valgt";
+        return;
+      }
+
+      const slot = getCurrentSlots().find(item => item.key === activeSlotKey);
+      if (!slot) {
+        activeSlotText.textContent = "Ingen valgt";
+        return;
+      }
+
+      const player = getPlayerById(squad[slot.key]);
+      activeSlotText.textContent = player?.player_name
+        || positionFullLabel(slot.positionCode || slot.position);
     }
 
     function addPlayerToBestSlot(playerId) {
@@ -3505,6 +3617,15 @@ function saveState() {
       }
 
       const removedCaptain = currentPlayerInSlot && normalizeName(currentPlayerInSlot.player_name) === normalizeName(captainNameForActiveStrategy());
+      if (currentPlayerInSlot && String(currentPlayerInSlot.player_id) !== String(playerId)) {
+        previousReplacementBySlot.set(slotKey, {
+          oldPlayerId: currentPlayerInSlot.player_id,
+          newPlayerId: playerId
+        });
+      } else if (!currentPlayerInSlot) {
+        previousReplacementBySlot.delete(slotKey);
+      }
+
       squad[slotKey] = playerId;
       if (removedCaptain) {
         frontendCaptainOverride = pickFrontendCaptainFromSquad(squad);
@@ -3633,6 +3754,17 @@ function saveState() {
 
       pushHistory();
       squad = fallbackSquad;
+      previousReplacementBySlot.clear();
+      modelChoiceBySlot = new Map(
+        Object.entries(fallbackSquad).map(([slotKey, playerId]) => [
+          slotKey,
+          {
+            playerId,
+            strategyKey: activeStrategyKey,
+            formation: currentFormation
+          }
+        ])
+      );
       activeSlotKey = null;
       activeSlotText.textContent = "Ingen valgt";
       saveState();
@@ -3817,6 +3949,17 @@ function saveState() {
 
       pushHistory();
       squad = newSquad;
+      previousReplacementBySlot.clear();
+      modelChoiceBySlot = new Map(
+        Object.entries(newSquad).map(([slotKey, playerId]) => [
+          slotKey,
+          {
+            playerId,
+            strategyKey: activeStrategyKey,
+            formation: currentFormation
+          }
+        ])
+      );
       activeSlotKey = null;
       frontendCaptainOverride = null;
       activeSlotText.textContent = "Ingen valgt";
@@ -3981,6 +4124,7 @@ function saveState() {
         if (partialCount > 0) {
           pushHistory();
           squad = { ...squad, ...partial };
+          previousReplacementBySlot.clear();
           activeSlotKey = null;
           activeSlotText.textContent = "Ingen valgt";
           saveState();
@@ -4007,6 +4151,7 @@ function saveState() {
         if (partialCount > 0) {
           pushHistory();
           squad = { ...squad, ...partial };
+          previousReplacementBySlot.clear();
           activeSlotKey = null;
           activeSlotText.textContent = "Ingen valgt";
           saveState();
@@ -4041,6 +4186,7 @@ function saveState() {
 
         pushHistory();
         squad = candidateSquad;
+        previousReplacementBySlot.clear();
         activeSlotKey = null;
         frontendCaptainOverride = null;
         activeSlotText.textContent = "Ingen valgt";
@@ -4074,16 +4220,11 @@ function saveState() {
         ? selectedPlayers.reduce((sum, player) => sum + getPlayerStart(player), 0) / selectedPlayers.length
         : 0;
       const highRiskCount = selectedPlayers.filter(player => String(player.availability_risk || "").toLowerCase() === "high_risk").length;
-      const ruleIssues = getSquadConstraintIssues(squad);
-
       spentValue.textContent = formatMoney(spent);
       bankValue.textContent = formatMoney(bank);
       playerCountValue.textContent = `${count} / 11`;
       avgStartValue.textContent = selectedPlayers.length ? `${Math.round(avgStart)}%` : "–";
       highRiskValue.textContent = String(highRiskCount);
-      ruleStatusValue.textContent = ruleIssues.length ? "Tjek regler" : "OK";
-      ruleStatusBox.classList.toggle("rule-warn", ruleIssues.length > 0);
-      ruleStatusBox.classList.toggle("rule-ok", ruleIssues.length === 0);
       updateUndoButton();
     }
 
@@ -4151,6 +4292,7 @@ function saveState() {
             if (playerId) {
               pushHistory();
               delete squad[slotKey];
+              previousReplacementBySlot.delete(slotKey);
               saveState();
               render();
               clearStatus();
@@ -4176,17 +4318,18 @@ function saveState() {
         ? getCurrentSlots().find(slot => slot.key === activeSlotKey)
         : null;
 
-      if (activeSlot && position && !samePosition(position, activeSlot.positionCode || activeSlot.position)) {
-        activeSlotKey = null;
-      }
-
       const currentPlayerForActiveSlot = activeSlot ? getPlayerById(squad[activeSlot.key]) : null;
-      if (activeSlotKey && activeSlot && currentPlayerForActiveSlot && !search && !team && (!position || samePosition(position, activeSlot.positionCode || activeSlot.position))) {
+      if (activeSlotKey && activeSlot && currentPlayerForActiveSlot && !forcePlayerListForActiveSlot) {
         rightPanel?.classList.add("alternative-mode");
+        activePositionChip.hidden = true;
         if (rightModeTitle) rightModeTitle.textContent = "Alternativer";
+        if (showPlayerListBtn) {
+          showPlayerListBtn.textContent = "Se spillerliste";
+          showPlayerListBtn.disabled = false;
+        }
         showPlayerListBtn?.classList.remove("active");
         tradeList.innerHTML = renderAlternativePanel(activeSlot, currentPlayerForActiveSlot);
-        tradeList.querySelectorAll(".plus-btn").forEach(btn => {
+        tradeList.querySelectorAll(".plus-btn, .choose-alt-btn").forEach(btn => {
           btn.addEventListener("click", () => addPlayerToSlot(btn.dataset.playerId, activeSlot.key));
         });
         return;
@@ -4194,7 +4337,23 @@ function saveState() {
 
       rightPanel?.classList.remove("alternative-mode");
       if (rightModeTitle) rightModeTitle.textContent = "Spillerliste";
+      if (showPlayerListBtn) {
+        const canShowAlternatives = !!(activeSlot && currentPlayerForActiveSlot);
+        showPlayerListBtn.textContent = "Se alternativer";
+        showPlayerListBtn.disabled = !canShowAlternatives;
+      }
       showPlayerListBtn?.classList.add("active");
+
+      const showPositionChip = !!(
+        activeSlot
+        && currentPlayerForActiveSlot
+        && forcePlayerListForActiveSlot
+        && position
+      );
+      activePositionChip.hidden = !showPositionChip;
+      activePositionChip.textContent = showPositionChip
+        ? `${positionFullLabel(position)} \u00d7`
+        : "";
 
       if (search) {
         players = players.filter(player =>
@@ -4220,13 +4379,6 @@ function saveState() {
         if (activeSlotKey && slotForPlayer === activeSlotKey) return true;
         return false;
       });
-
-      if (activeSlotKey) {
-        const selectedSlot = getCurrentSlots().find(slot => slot.key === activeSlotKey);
-        if (selectedSlot) {
-          players = players.filter(player => samePosition(player.position, selectedSlot.positionCode || selectedSlot.position));
-        }
-      }
 
       if (eligibleOnly) {
         players = players.filter(player => isEligibleNow(player));
@@ -4301,6 +4453,7 @@ function saveState() {
       cleanSquadForCurrentFormation();
       renderBudget();
       renderStrategyControls();
+      renderActiveSlotBadge();
       renderPitch();
       renderTradeList();
     }
@@ -4635,6 +4788,8 @@ function saveState() {
       currentFormation = FORMATIONS[data.formation] ? data.formation : "3-4-3";
       formationSelect.value = currentFormation;
       squad = typeof data.squad_json === "object" && data.squad_json ? data.squad_json : {};
+      previousReplacementBySlot.clear();
+      modelChoiceBySlot.clear();
       activeSlotKey = null;
       activeSlotText.textContent = "Ingen valgt";
       saveState();
@@ -4710,25 +4865,31 @@ function saveState() {
         infoBoxToggle.setAttribute("aria-expanded", String(!isCollapsed));
       });
 
-      dataStatusToggle.addEventListener("click", () => {
-        const isCollapsed = dataStatusPanel.classList.toggle("collapsed");
-        dataStatusToggle.textContent = isCollapsed ? "Vis" : "Skjul";
-        dataStatusToggle.setAttribute("aria-expanded", String(!isCollapsed));
+      showPlayerListBtn.addEventListener("click", () => {
+        const activeSlot = activeSlotKey
+          ? getCurrentSlots().find(slot => slot.key === activeSlotKey)
+          : null;
+        const activePlayer = activeSlot ? getPlayerById(squad[activeSlot.key]) : null;
+
+        if (activeSlotKey && activePlayer) {
+          forcePlayerListForActiveSlot = !forcePlayerListForActiveSlot;
+          render();
+          return;
+        }
+
+        showStatus("Vælg først en plads på banen.", "info");
       });
 
-      showPlayerListBtn.addEventListener("click", () => {
-        activeSlotKey = null;
-        activeSlotText.textContent = "Ingen valgt";
-        rightPanel?.classList.remove("alternative-mode");
-        searchInput.value = "";
-        teamFilter.value = "";
+      activePositionChip.addEventListener("click", () => {
         positionFilter.value = "";
-        render();
+        renderTradeList();
       });
 
       formationSelect.addEventListener("change", () => {
         currentFormation = formationSelect.value;
         activeSlotKey = null;
+        previousReplacementBySlot.clear();
+        modelChoiceBySlot.clear();
         activeSlotText.textContent = "Ingen valgt";
         cleanSquadForCurrentFormation();
         saveState();
