@@ -2598,6 +2598,47 @@ function saveState() {
       return rank.formationScore ?? rank.ev ?? rank.modelScore ?? null;
     }
 
+    function getNextRoundAlternativeScore(player) {
+      const strategyRow = getBestKnownStrategyRowForPlayer(player);
+      const candidates = [
+        strategyRow?.round1_ev,
+        strategyRow?.match_1_weighted_match_ev,
+        player?.round1_ev,
+        player?.match_1_weighted_match_ev
+      ];
+
+      for (const value of candidates) {
+        const numberValue = Number(value);
+        if (Number.isFinite(numberValue)) return numberValue;
+      }
+
+      const comparable = getAlternativeComparableScore(player);
+      return Number.isFinite(comparable) ? comparable : 0;
+    }
+
+    function getNextRoundAlternativePenalty(player) {
+      if (activeStrategyKey !== "next_round") return 0;
+
+      const position = String(player?.position || "").toUpperCase();
+      const nextScore = getNextRoundAlternativeScore(player);
+
+      if (!Number.isFinite(nextScore)) return 0;
+
+      // I N?ste runde skal offensive spillere med sv?r n?ste kamp ikke flyde op
+      // pga. senere gruppespilskampe. Eksempel: Senegal MID/FWD mod Frankrig.
+      if (["MID", "FWD"].includes(position) && nextScore < 0.75) {
+        return 1.25 + ((0.75 - nextScore) * 2.0);
+      }
+
+      // Mildere straf til defensive spillere med meget lav n?ste-runde-v?rdi.
+      if (["GK", "DEF"].includes(position) && nextScore < 0.55) {
+        return 0.45 + ((0.55 - nextScore) * 1.0);
+      }
+
+      return 0;
+    }
+
+
     function getTargetRoundNumber() {
       const target = Number(strategyContext?.target_round || 1);
       return Number.isFinite(target) && target > 0 ? target : 1;
@@ -2675,7 +2716,20 @@ function saveState() {
       return `<div class="trade-transfer-note">Gebyr: ${formatMoney(fee)}<br><span class="positive">Est. netto (proxy): +${formatMoney(Math.round(netGain * 1_000_000))}</span></div>`;
     }
 
-    function compareAlternativePlayers(a, b) {
+        function compareAlternativePlayers(a, b) {
+      if (activeStrategyKey === "next_round") {
+        const aNext = getNextRoundAlternativeScore(a);
+        const bNext = getNextRoundAlternativeScore(b);
+        const aAdjusted = aNext - getNextRoundAlternativePenalty(a);
+        const bAdjusted = bNext - getNextRoundAlternativePenalty(b);
+
+        if (Number.isFinite(aAdjusted) && Number.isFinite(bAdjusted) && Math.abs(bAdjusted - aAdjusted) > 0.0001) {
+          return bAdjusted - aAdjusted;
+        }
+        if (Number.isFinite(aAdjusted) && !Number.isFinite(bAdjusted)) return -1;
+        if (!Number.isFinite(aAdjusted) && Number.isFinite(bAdjusted)) return 1;
+      }
+
       const aRank = getAlternativeRankParts(a);
       const bRank = getAlternativeRankParts(b);
 
@@ -2689,7 +2743,7 @@ function saveState() {
         if (aValue === null && bValue !== null) return 1;
       }
 
-      return aRank.price - bRank.price;
+      return (aRank.price || 0) - (bRank.price || 0);
     }
 
     function formatSignedScoreDiff(value) {
