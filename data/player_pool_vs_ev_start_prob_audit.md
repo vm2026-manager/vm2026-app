@@ -14,16 +14,16 @@ Repairen anvendte `source_priority()` og opdaterede kun, når poolkilden havde h
 
 ## Mismatch counts
 
-- Start_prob mismatches > 0.001 før: 3
+- Start_prob mismatches > 0.001 før: 1
 - Start_prob mismatches > 0.001 efter: 0
-- Start_prob_source mismatches før: 2
+- Start_prob_source mismatches før: 1
 - Start_prob_source mismatches efter: 0
 - Blokerede identitetsmatches: 0
 - team_minute_rank før/efter: 0 / 0
 - holdet_official_unmatched_default før/efter: 0 / 0
 - name+team før/efter: 0 / 0
 - Rækker påvirket: 1244
-- Backup: `data\player_ev_group_stage_v1.backup_before_start_prob_source_repair_20260606_110806.csv`
+- Backup: `data\player_ev_group_stage_v1.backup_before_start_prob_source_repair_20260606_120528.csv`
 
 ## Sanity-spillere
 
@@ -36,13 +36,13 @@ Repairen anvendte `source_priority()` og opdaterede kun, når poolkilden havde h
 | Thibaut Courtois | BEL | 0.8305 | 0.8305 | transfermarkt_availability_split_2026_06_06+gk_hierarchy_normalized | transfermarkt_availability_split_2026_06_06+gk_hierarchy_normalized | 0.0755 | no | no |
 | Antonio Nusa | NOR | 0.82 | 0.82 | transfermarkt_availability_split_2026_06_06+context_override | transfermarkt_availability_split_2026_06_06+context_override | 0.074545 | no | no |
 | Alexander Sørloth | NOR | 0.8805 | 0.8805 | transfermarkt_availability_split_2026_06_06 | transfermarkt_availability_split_2026_06_06 | 0.080045 | no | no |
-| Raphinha | BRA | 0.86 | 0.86 | transfermarkt_availability_split_2026_06_06+context_override | transfermarkt_availability_split_2026_06_06+context_override | 0.078182 | no | no |
 | Alexander Schlager | AUT | 0.921 | 0.921 | transfermarkt_availability_split_2026_06_06+gk_hierarchy_normalized | transfermarkt_availability_split_2026_06_06+gk_hierarchy_normalized | 0.083727 | no | no |
 | Jules Kounde | FRA | 0.6814 | 0.6814 | transfermarkt_availability_split_2026_06_06 | transfermarkt_availability_split_2026_06_06 | 0.061945 | no | no |
 | Vladimir Coufal | CZE | 0.9098 | 0.9098 | transfermarkt_availability_split_2026_06_06 | transfermarkt_availability_split_2026_06_06 | 0.082709 | no | no |
 | Ladislav Krejci | CZE | 0.9051 | 0.9051 | transfermarkt_availability_split_2026_06_06 | transfermarkt_availability_split_2026_06_06 | 0.082282 | no | no |
 | Martin Ødegaard | NOR | 0.8841 | 0.8841 | transfermarkt_availability_split_2026_06_06 | transfermarkt_availability_split_2026_06_06 | 0.080373 | no | no |
 | Manuel Neuer | GER | 0.3702 | 0.3702 | transfermarkt_availability_split_2026_06_06+gk_hierarchy_normalized | transfermarkt_availability_split_2026_06_06+gk_hierarchy_normalized | 0.033655 | no | no |
+| Raphinha | BRA | 0.86 | 0.86 | transfermarkt_availability_split_2026_06_06+context_override | transfermarkt_availability_split_2026_06_06+context_override | 0.078182 | no | no |
 | Antonio Rüdiger | GER | 0.2165 | 0.2165 | transfermarkt_availability_split_2026_06_06 | transfermarkt_availability_split_2026_06_06 | 0.019682 | no | no |
 | Victor Munoz | ESP | 0.0424 | 0.0424 | transfermarkt_availability_split_2026_06_06 | transfermarkt_availability_split_2026_06_06 | 0.003855 | no | no |
 | Yousef Qashi | JOR | 0.8559 | 0.8559 | transfermarkt_availability_split_2026_06_06 | transfermarkt_availability_split_2026_06_06 | 0.077809 | no | no |

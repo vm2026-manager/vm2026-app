@@ -55,7 +55,7 @@ ECU,gonzalo_valle__ecu,Gonzalo Valle,0.2927,transfermarkt_availability_split_202
 EGY,el_mahdi_soliman__egy,El Mahdi Soliman,0.0455,transfermarkt_availability_split_2026_06_06,0.0,,0.7448,,3,0.015,0.9999,team_gk_exclusive_normalization
 EGY,mohamed_alaa__egy,Mohamed Alaa,0.047,transfermarkt_availability_split_2026_06_06,0.0,,0.8288,,4,0.015,0.9999,team_gk_exclusive_normalization
 EGY,oufa_shobeir__egy,Mostafa Oufa Shobeir,0.7426,transfermarkt_availability_split_2026_06_06,6.0,,0.8586,,1,0.4956,0.9999,team_gk_exclusive_normalization
-EGY,mohamed_el_shenawy__egy,Mohamed El-Shennawy,0.4744,transfermarkt_availability_split_2026_06_06+gk_hierarchy_normalized,114.0,12,0.6618,,2,0.4743,0.9999,team_gk_exclusive_normalization
+EGY,mohamed_el_shenawy__egy,Mohamed El-Shennawy,0.4743,transfermarkt_availability_split_2026_06_06+gk_hierarchy_normalized,114.0,12,0.6618,,2,0.4743,0.9999,team_gk_exclusive_normalization
 ENG,dean_henderson__eng,Dean Henderson,0.2412,transfermarkt_availability_split_2026_06_06,3.0,2,0.7317,,2,0.0718,1.0,team_gk_exclusive_normalization
 ENG,jordan_pickford__eng,Jordan Pickford,0.4557,transfermarkt_availability_split_2026_06_06,82.0,9,0.9414,,1,0.8648,1.0,team_gk_exclusive_normalization
 ENG,james_trafford__eng,James Trafford,0.2529,transfermarkt_availability_split_2026_06_06,1.0,1,0.9258,,3,0.0634,1.0,team_gk_exclusive_normalization

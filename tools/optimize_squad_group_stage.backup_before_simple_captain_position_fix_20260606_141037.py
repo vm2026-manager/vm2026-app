@@ -686,38 +686,7 @@ def add_captain_scores_v2(squad: pd.DataFrame, target_round: int) -> pd.DataFram
         | work.get("manual_captain_status", "").fillna("").astype(str).str.lower().eq("avoid")
     )
     work["captain_eligible"] = ~captain_blocked
-    position_for_captain = work["position"].fillna("").astype(str).str.upper() if "position" in work.columns else pd.Series("", index=work.index)
-    price_m_for_captain = pd.to_numeric(work.get("price", 0.0), errors="coerce").fillna(0.0) / 1_000_000
-    role_for_captain = work.get("manual_set_piece_role", "").fillna("").astype(str).str.lower()
-
-    offensive_mid_for_captain = (
-        position_for_captain.eq("MID")
-        & (
-            (price_m_for_captain >= 6.0)
-            | role_for_captain.str.contains("penalty|straffe|wing|kant|forward|angriber|10|offensive", regex=True)
-        )
-    )
-
-    captain_position_multiplier = pd.Series(0.65, index=work.index, dtype=float)
-    captain_position_multiplier.loc[position_for_captain.eq("FWD")] = 1.25
-    captain_position_multiplier.loc[offensive_mid_for_captain] = 1.05
-    captain_position_multiplier.loc[position_for_captain.eq("DEF")] = 0.35
-    captain_position_multiplier.loc[position_for_captain.eq("GK")] = 0.25
-
-    central_mid_extra_penalty = (
-        position_for_captain.eq("MID")
-        & ~offensive_mid_for_captain
-        & (price_m_for_captain < 6.0)
-    ).astype(float) * 0.18
-
-    captain_base_score = growth + set_piece_bonus + scorer_proxy + favorite_bonus
-    work["captain_position_multiplier"] = captain_position_multiplier
-    work["captain_score"] = (
-        captain_base_score * captain_position_multiplier
-        - start_penalty
-        - risk_penalty
-        - central_mid_extra_penalty
-    )
+    work["captain_score"] = growth + set_piece_bonus + scorer_proxy + favorite_bonus - start_penalty - risk_penalty
     work.loc[~work["captain_eligible"], "captain_score"] = -9999.0
     work["captain_score_reason"] = work.apply(lambda row: captain_score_reason_v2(row, target_round, growth_col), axis=1)
     return work

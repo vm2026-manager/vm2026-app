@@ -125,7 +125,7 @@ Kai Trewin,AUS,0.3258,0.3258,0.3382,0.895,medium_risk,,,,transfermarkt_availabil
 Gabriel Magalhaes,BRA,0.6041,0.6041,0.6443,0.8215,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Roger Ibanez,BRA,0.2619,0.2619,0.3045,0.6,high_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Bremer,BRA,0.4947,0.4947,0.5511,0.7078,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
-Leo Pereira,BRA,0.7,0.45,0.55,0.85,medium_risk,0.85,high,Manual context review: not in Bold expected Brazil XI. Recent full friendly starts may reflect rotation/rest for first-choice centre-backs rather than secure starting role. Downgraded to rotation/uncertain starter.,transfermarkt_availability_split_2026_06_06+context_override,transfermarkt_availability_split_2026_06_06+context_override
+Leo Pereira,BRA,0.45,0.45,0.55,0.85,medium_risk,0.85,high,Manual context review: not in Bold expected Brazil XI. Recent full friendly starts may reflect rotation/rest for first-choice centre-backs rather than secure starting role. Downgraded to rotation/uncertain starter.,transfermarkt_availability_split_2026_06_06+context_override,transfermarkt_availability_split_2026_06_06+context_override
 Clement Akpa,CIV,0.4955,0.4955,0.5661,0.6439,high_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Wilfried Stephane Singo,CIV,0.5946,0.5946,0.6532,0.7434,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Ousmane Diomande,CIV,0.3111,0.3111,0.341,0.7492,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
@@ -440,7 +440,7 @@ Munir El Kajoui,MAR,0.1633,0.4882,0.5457,0.6991,medium_risk,,,,transfermarkt_ava
 El Mahdi Soliman,EGY,0.015,0.0455,0.05,0.7448,medium_risk,,,,transfermarkt_availability_split_2026_06_06+gk_hierarchy_normalized,transfermarkt_availability_split_2026_06_06
 El Mehdi Benabid,MAR,0.0226,0.2849,0.3313,0.6,high_risk,,,,transfermarkt_availability_split_2026_06_06+gk_hierarchy_normalized,transfermarkt_availability_split_2026_06_06
 Mohamed Alaa,EGY,0.015,0.047,0.05,0.8288,medium_risk,,,,transfermarkt_availability_split_2026_06_06+gk_hierarchy_normalized,transfermarkt_availability_split_2026_06_06
-Mostafa Oufa Shobeir,EGY,0.4955,0.7426,0.7813,0.8586,low_risk,,,,transfermarkt_availability_split_2026_06_06+gk_hierarchy_normalized,transfermarkt_availability_split_2026_06_06
+Mostafa Oufa Shobeir,EGY,0.4956,0.7426,0.7813,0.8586,low_risk,,,,transfermarkt_availability_split_2026_06_06+gk_hierarchy_normalized,transfermarkt_availability_split_2026_06_06
 Luis Mejia,PAN,0.1003,0.3014,0.345,0.6394,high_risk,,,,transfermarkt_availability_split_2026_06_06+gk_hierarchy_normalized,transfermarkt_availability_split_2026_06_06
 Cesar Samudio,PAN,0.0491,0.2284,0.2548,0.7035,medium_risk,,,,transfermarkt_availability_split_2026_06_06+gk_hierarchy_normalized,transfermarkt_availability_split_2026_06_06
 Orlando Mosquera,PAN,0.8506,0.6273,0.6573,0.8696,medium_risk,,,,transfermarkt_availability_split_2026_06_06+gk_hierarchy_normalized,transfermarkt_availability_split_2026_06_06
@@ -630,7 +630,7 @@ Dani Olmo,ESP,0.5814,0.5814,0.6133,0.8516,medium_risk,,,,transfermarkt_availabil
 Mikel Merino,ESP,0.5559,0.5559,0.6029,0.7773,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Rodri Hernandez,ESP,0.382,0.382,0.4179,0.7546,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Marcos Llorente,ESP,0.2905,0.2905,0.3378,0.6,high_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
-Fabian Ruiz,ESP,0.8178,0.58,0.72,0.8,medium_risk,0.85,high,"Manual context review: included in expected Spain XI, but recent national-team record includes several injury/frav?r rows close to the tournament. Downgraded from likely starter to uncertain starter.",transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06+context_override
+Fabian Ruiz,ESP,0.58,0.58,0.72,0.8,medium_risk,0.85,high,"Manual context review: included in expected Spain XI, but recent national-team record includes several injury/frav?r rows close to the tournament. Downgraded from likely starter to uncertain starter.",transfermarkt_availability_split_2026_06_06+context_override,transfermarkt_availability_split_2026_06_06+context_override
 Jesper Karlström,SWE,0.5097,0.5097,0.5927,0.6,high_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Mattias Svanberg,SWE,0.3301,0.3301,0.375,0.6582,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Ken Sema,SWE,0.3107,0.3107,0.3508,0.6731,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
@@ -1196,7 +1196,7 @@ Yunus Akgün,TUR,0.3377,0.3377,0.3688,0.7587,medium_risk,,,,transfermarkt_availa
 Baris Alper Yilmaz,TUR,0.3506,0.3506,0.3784,0.79,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Deniz Gül,TUR,0.2772,0.2772,0.2973,0.8072,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Francisco Conceicao,POR,0.3018,0.3018,0.3146,0.8844,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
-Goncalo Ramos,POR,0.7482,0.7482,0.7898,0.8497,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
+Goncalo Ramos,POR,0.35,0.35,0.45,0.9,medium_risk,0.75,high,"Manual context review: recent Portugal usage suggests clear reserve/rotation role behind Cristiano Ronaldo. Mostly bench or short substitute appearances in competitive matches, with only limited starts. Downgraded from likely starter to rotation forward.",transfermarkt_availability_split_2026_06_06+context_override,transfermarkt_availability_split_2026_06_06+context_override
 Rafael Leão,POR,0.3852,0.3852,0.4015,0.8837,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 João Felix,POR,0.334,0.334,0.3465,0.8965,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Pedro Neto,POR,0.5894,0.5894,0.6369,0.7868,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06

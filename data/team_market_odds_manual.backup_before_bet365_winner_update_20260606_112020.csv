@@ -1,0 +1,49 @@
+﻿team_id,team_name,winner_odds,reach_qf_odds,reach_sf_odds,reach_final_odds,group_win_odds,highest_scoring_team_odds,lowest_scoring_team_odds,source,snapshot_date
+ESP,Spain,5.5,1.22,6.5,,1.2,5.5,,unibet/bet365/manual,2026-05-16
+ENG,England,6.5,1.8,6.0,,1.28,11.0,,unibet/bet365/manual,2026-05-16
+FRA,France,7.0,1.8,6.0,,1.4,8.0,,unibet/bet365/manual,2026-05-16
+ARG,Argentina,9.0,2.0,5.5,,1.33,9.5,,unibet/bet365/manual,2026-05-16
+BRA,Brazil,9.0,2.0,7.0,,1.2,6.0,,unibet/bet365/manual,2026-05-16
+POR,Portugal,12.0,2.25,7.0,,1.4,9.0,,unibet/bet365/manual,2026-05-16
+GER,Germany,13.0,2.37,6.0,,1.28,7.5,,unibet/bet365/manual,2026-05-16
+NED,Netherlands,21.0,2.75,9.5,,1.72,17.0,,unibet/bet365/manual,2026-05-16
+NOR,Norway,26.0,2.75,9.0,,3.75,26.0,,unibet/bet365/manual,2026-05-16
+BEL,Belgium,34.0,3.0,9.0,,1.36,15.0,,unibet/bet365/manual,2026-05-16
+SUI,Switzerland,41.0,5.5,17.0,,1.9,29.0,,unibet/bet365/manual,2026-05-16
+USA,USA,41.0,4.5,13.0,,2.37,67.0,,unibet/bet365/manual,2026-05-16
+COL,Colombia,51.0,3.25,13.0,,3.75,51.0,,unibet/bet365/manual,2026-05-16
+MAR,Morocco,51.0,4.5,15.0,,6.0,51.0,,unibet/bet365/manual,2026-05-16
+JPN,Japan,67.0,4.5,17.0,,4.5,81.0,,unibet/bet365/manual,2026-05-16
+CAN,Canada,81.0,7.0,26.0,,3.5,51.0,,unibet/bet365/manual,2026-05-16
+MEX,Mexico,81.0,5.5,19.0,,2.0,41.0,,unibet/bet365/manual,2026-05-16
+URU,Uruguay,81.0,4.5,15.0,,5.0,41.0,,unibet/bet365/manual,2026-05-16
+ECU,Ecuador,101.0,6.0,21.0,,5.0,51.0,,unibet/bet365/manual,2026-05-16
+CRO,Croatia,101.0,5.5,17.0,,4.5,51.0,,unibet/bet365/manual,2026-05-16
+SEN,Senegal,101.0,8.0,29.0,,9.0,81.0,,unibet/bet365/manual,2026-05-16
+TUR,Turkey,101.0,5.0,17.0,,2.75,67.0,,unibet/bet365/manual,2026-05-16
+SWE,Sweden,126.0,8.0,29.0,,5.5,101.0,,unibet/bet365/manual,2026-05-16
+PAR,Paraguay,151.0,8.0,29.0,,4.75,151.0,,unibet/bet365/manual,2026-05-16
+AUT,Austria,151.0,8.0,29.0,,5.5,67.0,,unibet/bet365/manual,2026-05-16
+SCO,Scotland,251.0,10.0,34.0,,13.0,101.0,,unibet/bet365/manual,2026-05-16
+BIH,Bosnia and Herzegovina,301.0,10.0,34.0,,3.6,201.0,,unibet/bet365/manual,2026-05-16
+EGY,Egypt,301.0,10.0,34.0,,5.5,101.0,,unibet/bet365/manual,2026-05-16
+CIV,Ivory Coast,301.0,10.0,34.0,,8.0,67.0,,unibet/bet365/manual,2026-05-16
+CZE,Czech Republic,301.0,10.0,34.0,,3.25,101.0,,unibet/bet365/manual,2026-05-16
+ALG,Algeria,401.0,10.0,34.0,,6.5,101.0,,unibet/bet365/manual,2026-05-16
+GHA,Ghana,401.0,10.0,34.0,,11.0,251.0,,unibet/bet365/manual,2026-05-16
+AUS,Australia,501.0,13.0,51.0,,8.0,501.0,,unibet/bet365/manual,2026-05-16
+IRN,Iran,501.0,11.0,41.0,,7.0,151.0,,unibet/bet365/manual,2026-05-16
+KOR,South Korea,501.0,11.0,41.0,,4.33,101.0,,unibet/bet365/manual,2026-05-16
+TUN,Tunisia,501.0,11.0,41.0,,8.0,301.0,,unibet/bet365/manual,2026-05-16
+COD,DR Congo,751.0,13.0,51.0,,9.0,201.0,,unibet/bet365/manual,2026-05-16
+QAT,Qatar,1001.0,15.0,51.0,,34.0,501.0,,unibet/bet365/manual,2026-05-16
+KSA,Saudi Arabia,1001.0,15.0,51.0,,17.0,251.0,,unibet/bet365/manual,2026-05-16
+RSA,South Africa,1001.0,15.0,51.0,,13.0,251.0,,unibet/bet365/manual,2026-05-16
+IRQ,Iraq,1501.0,21.0,81.0,,41.0,1501.0,,unibet/bet365/manual,2026-05-16
+NZL,New Zealand,1501.0,21.0,67.0,,21.0,1001.0,,unibet/bet365/manual,2026-05-16
+PAN,Panama,1501.0,21.0,67.0,,51.0,1001.0,,unibet/bet365/manual,2026-05-16
+CUW,Curacao,2001.0,41.0,126.0,,101.0,4501.0,,unibet/bet365/manual,2026-05-16
+CPV,Cape Verde,2001.0,41.0,126.0,,51.0,2501.0,,unibet/bet365/manual,2026-05-16
+UZB,Uzbekistan,2001.0,41.0,101.0,,41.0,1501.0,,unibet/bet365/manual,2026-05-16
+HAI,Haiti,2501.0,101.0,401.0,,101.0,4501.0,,unibet/bet365/manual,2026-05-16
+JOR,Jordan,2501.0,51.0,101.0,,41.0,4501.0,,unibet/bet365/manual,2026-05-16
