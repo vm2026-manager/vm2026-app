@@ -50,13 +50,12 @@ FORMATIONS: dict[str, dict[str, int]] = {
     "5-4-1": {"GK": 1, "DEF": 5, "MID": 4, "FWD": 1},
 }
 
-STRATEGIES = ["next_round", "round1_2", "group_stage", "practical_start", "long_run"]
+STRATEGIES = ["next_round", "round1_2", "group_stage", "long_run"]
 
 DISPLAY_NAMES_DA = {
     "next_round": "Næste runde",
     "round1_2": "1. + 2. runde",
     "group_stage": "Gruppespil",
-    "practical_start": "1. + 2. runde",
     "long_run": "Lang sigt",
 }
 
@@ -529,57 +528,6 @@ def add_strategy_scores(players: pd.DataFrame) -> pd.DataFrame:
         - rotation_note_penalty
     ).clip(lower=0.0)
 
-    # Praktisk startstrategi:
-    # Kig prim?rt 1-2 kampe frem, nedton runde 3, prioriter offensive profiler
-    # og billige sikre GK/DEF-startere.
-    practical_value = (
-        1.25 * work["round1_ev"]
-        + 0.85 * work["round2_ev"]
-        + 0.20 * work["round3_ev"] * work["round3_rotation_factor"]
-    )
-
-    position = work["position"].fillna("").astype(str).str.upper()
-    price_m = pd.to_numeric(work["price_m"], errors="coerce").fillna(0.0)
-
-    offensive_profile_bonus = (
-        0.70 * position.eq("FWD").astype(float)
-        + 0.34 * ((position.eq("MID")) & (work["optimizer_ev"] >= 3.0)).astype(float)
-        + 0.25 * ((position.eq("MID")) & (work["team_attack_score"] >= 0.45)).astype(float)
-        + 0.18 * ((position.isin(["MID", "FWD"])) & (price_m >= 5.5)).astype(float)
-    )
-
-    cheap_defensive_starter_bonus = (
-        0.46
-        * position.isin(["GK", "DEF"]).astype(float)
-        * (price_m <= 4.0).astype(float)
-        * (work["conditional_start_prob"] >= 0.82).astype(float)
-    )
-
-    expensive_defensive_penalty = (
-        0.24
-        * position.isin(["GK", "DEF"]).astype(float)
-        * (price_m >= 4.5).astype(float)
-        * (work["optimizer_ev"] < 4.0).astype(float)
-    )
-
-    practical_market_bonus = (
-        0.32 * work["team_group_stage_score"]
-        + 0.22 * work["team_attack_score"]
-        + 0.12 * work["team_long_run_score"]
-    )
-
-    work["score_practical_start"] = (
-        1.95 * practical_value
-        + 0.42 * work["optimizer_ev"]
-        + 0.70 * (round_fixture_bonus(work, 1) + 0.65 * round_fixture_bonus(work, 2))
-        + 1.05 * start
-        + practical_market_bonus
-        + offensive_profile_bonus
-        + cheap_defensive_starter_bonus
-        - expensive_defensive_penalty
-        - 0.55 * work["transfer_fee_m"]
-    ).clip(lower=0.0)
-
     tournament_strength = (0.75 * work["team_long_run_score"] + 0.25 * work["team_market_score"]).clip(lower=0.0)
     weak_team_penalty = (
         2.20 * (tournament_strength < 0.18).astype(float)
@@ -624,15 +572,15 @@ def solve_formation(players: pd.DataFrame, strategy: str, formation_name: str, f
     total_price_expr = pulp.lpSum(float(players.loc[idx, "price_m"]) * variables[idx] for idx in players.index)
     underuse = pulp.LpVariable(f"{strategy}_budget_underuse", lowBound=0, cat="Continuous")
 
-    floor = 49.5 if strategy in {"next_round", "practical_start"} else 49.0
-    penalty = 1.10 if strategy == "next_round" else (0.75 if strategy == "practical_start" else (0.18 if strategy == "long_run" else 0.55))
+    floor = 49.5 if strategy == "next_round" else 49.0
+    penalty = 1.10 if strategy == "next_round" else (0.18 if strategy == "long_run" else 0.55)
     problem += score_expr + 0.025 * total_price_expr - penalty * underuse
     problem += underuse >= floor - total_price_expr
     problem += pulp.lpSum(variables[idx] for idx in players.index) == SQUAD_SIZE
     problem += total_price_expr <= BUDGET_M
-    high_risk_limit = 0 if strategy == "long_run" else (1 if strategy in {"next_round", "practical_start"} else 2)
-    avg_cond_floor = 0.84 if strategy in {"next_round", "long_run", "practical_start"} else 0.80
-    min_cond = 0.72 if strategy == "long_run" else (0.70 if strategy in {"next_round", "practical_start"} else 0.65)
+    high_risk_limit = 0 if strategy == "long_run" else (1 if strategy == "next_round" else 2)
+    avg_cond_floor = 0.84 if strategy in {"next_round", "long_run"} else 0.80
+    min_cond = 0.72 if strategy == "long_run" else (0.70 if strategy == "next_round" else 0.65)
 
     problem += pulp.lpSum(
         variables[idx] for idx in players.index if txt(players.loc[idx, "availability_risk"]) == "high_risk"
@@ -904,7 +852,6 @@ def write_strategy_metadata(context: dict[str, Any]) -> None:
         "next_round": context["next_round_display_name"],
         "round1_2": DISPLAY_NAMES_DA["round1_2"],
         "group_stage": DISPLAY_NAMES_DA["group_stage"],
-        "practical_start": DISPLAY_NAMES_DA["practical_start"],
         "long_run": DISPLAY_NAMES_DA["long_run"],
     }
     OUT_CONTEXT_JSON.write_text(json.dumps(context, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -917,7 +864,6 @@ def write_strategy_metadata(context: dict[str, Any]) -> None:
         f"- next_round: {display['next_round']}",
         f"- round1_2: {display['round1_2']}",
         f"- group_stage: {display['group_stage']}",
-        f"- practical_start: {display['practical_start']}",
         f"- long_run: {display['long_run']}",
         "",
         "## Mapping",

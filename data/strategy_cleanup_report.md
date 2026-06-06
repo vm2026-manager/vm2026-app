@@ -5,6 +5,7 @@
 - next_round: Næste runde (runde 1)
 - round1_2: 1. + 2. runde
 - group_stage: Gruppespil
+- practical_start: 1. + 2. runde
 - long_run: Lang sigt
 
 ## Mapping

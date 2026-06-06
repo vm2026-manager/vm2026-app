@@ -56,7 +56,7 @@ DISPLAY_NAMES_DA = {
     "next_round": "Næste runde",
     "round1_2": "1. + 2. runde",
     "group_stage": "Gruppespil",
-    "practical_start": "1. + 2. runde",
+    "practical_start": "Praktisk start",
     "long_run": "Lang sigt",
 }
 

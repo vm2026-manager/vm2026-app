@@ -2123,12 +2123,12 @@
         .replaceAll("'", "&#039;");
     }
 
-    const USER_STRATEGIES = ["next_round", "round1_2", "group_stage", "long_run"];
+    const USER_STRATEGIES = ["next_round", "practical_start", "group_stage", "long_run"];
     const STRATEGY_TOOLTIPS = {
-      next_round: "Optimerer til kommende runde med odds, starterfokus og kaptajn.",
-      round1_2: "Ser på samlet værdi i de to første runder.",
-      group_stage: "Ser på alle tre gruppekampe og justerer for mulig rotation i runde 3.",
-      long_run: "Prioriterer spillere fra store nationer ud fra vinderodds."
+      next_round: "Fokus p\u00e5 den kommende runde. Kan derfor v\u00e6lge spillere, som med fordel skiftes ud igen til runden efter.",
+      practical_start: "Fokus p\u00e5 runde 1-2 med offensive profiler, kampodds og sikre value-startere.",
+      group_stage: "Fokus p\u00e5 samlet gruppespilsv\u00e6rdi p\u00e5 tv\u00e6rs af alle tre gruppekampe.",
+      long_run: "Fokus p\u00e5 spillere fra st\u00e6rke nationer med god vej videre i turneringen."
     };
 
     function activeStrategyEntry() {
@@ -3238,52 +3238,79 @@ function saveState() {
       return getDisabledReason(player) === "";
     }
 
-    function getBestAlternativesForActiveSlot(activeSlot, currentPlayer) {
-      if (!activeSlot || !currentPlayer) return [];
-      const usedPlayerIds = new Set(Object.values(squad).filter(Boolean).map(String));
-      const slotPosition = activeSlot.positionCode || activeSlot.position;
-
-      const candidates = allPlayers
-        .filter(player => !usedPlayerIds.has(String(player.player_id)))
-        .filter(player => samePosition(player.position, slotPosition))
-        .filter(player => !isManualAvoidPlayer(player))
-        .filter(player => {
-          const previousActiveSlot = activeSlotKey;
-          activeSlotKey = activeSlot.key;
-          const disabledReason = getDisabledReason(player);
-          activeSlotKey = previousActiveSlot;
-          return disabledReason === "";
-        })
-        .sort((a, b) => compareReplacementPlayers(a, b, currentPlayer));
+    function rankReplacementCandidates(candidates, currentPlayer) {
+      const sorted = [...candidates].sort((a, b) => compareReplacementPlayers(a, b, currentPlayer));
 
       if (!isEliteReplacementContext(currentPlayer)) {
-        return candidates.slice(0, 8);
+        return sorted;
       }
 
       const currentScore = getAlternativeComparableScore(currentPlayer);
-      const highScoreCandidates = candidates
+      const highScoreCandidates = sorted
         .filter(player => {
           const score = getAlternativeComparableScore(player);
           return Number.isFinite(score) && Number.isFinite(currentScore) && score >= currentScore - 1.5;
         })
         .sort((a, b) => compareReplacementPlayers(a, b, currentPlayer));
+
       const highScoreIds = new Set(highScoreCandidates.map(player => String(player.player_id)));
-      const sameTierCandidates = candidates
+      const sameTierCandidates = sorted
         .filter(player => isSameTierReplacementCandidate(player, currentPlayer))
         .filter(player => !highScoreIds.has(String(player.player_id)))
         .sort((a, b) => compareReplacementPlayers(a, b, currentPlayer))
-        .slice(0, 5);
-      const prioritizedIds = new Set([
-        ...highScoreCandidates.map(player => String(player.player_id)),
-        ...sameTierCandidates.map(player => String(player.player_id))
-      ]);
-      const remainingCandidates = candidates.filter(player => !prioritizedIds.has(String(player.player_id)));
+        .slice(0, 4);
 
-      return [...highScoreCandidates, ...sameTierCandidates, ...remainingCandidates].slice(0, 8);
+      const sameTierIds = new Set(sameTierCandidates.map(player => String(player.player_id)));
+      const remainingCandidates = sorted
+        .filter(player => !highScoreIds.has(String(player.player_id)))
+        .filter(player => !sameTierIds.has(String(player.player_id)));
+
+      return [...highScoreCandidates, ...sameTierCandidates, ...remainingCandidates];
+    }
+
+    function getAlternativeGroupsForActiveSlot(activeSlot, currentPlayer) {
+      if (!activeSlot || !currentPlayer) {
+        return { samePrice: [], withBank: [] };
+      }
+
+      const usedPlayerIds = new Set(Object.values(squad).filter(Boolean).map(String));
+      const slotPosition = activeSlot.positionCode || activeSlot.position;
+      const currentPrice = getPlayerPrice(currentPlayer);
+      const availableForReplacement = getAvailableForReplacement(currentPlayer);
+
+      const baseCandidates = allPlayers
+        .filter(player => !usedPlayerIds.has(String(player.player_id)))
+        .filter(player => samePosition(player.position, slotPosition))
+        .filter(player => !isManualAvoidPlayer(player))
+        .filter(player => getPlayerPrice(player) <= availableForReplacement)
+        .filter(player => wouldRespectTeamLimitAfterReplacement(player, currentPlayer))
+        .filter(player => getPlayerStart(player) >= 60);
+
+      const samePrice = rankReplacementCandidates(
+        baseCandidates.filter(player => getPlayerPrice(player) <= currentPrice),
+        currentPlayer
+      ).slice(0, 6);
+
+      const samePriceIds = new Set(samePrice.map(player => String(player.player_id)));
+
+      const withBank = rankReplacementCandidates(
+        baseCandidates
+          .filter(player => getPlayerPrice(player) > currentPrice)
+          .filter(player => !samePriceIds.has(String(player.player_id))),
+        currentPlayer
+      ).slice(0, 8);
+
+      return { samePrice, withBank };
+    }
+
+    function getBestAlternativesForActiveSlot(activeSlot, currentPlayer) {
+      const groups = getAlternativeGroupsForActiveSlot(activeSlot, currentPlayer);
+      return [...groups.samePrice, ...groups.withBank].slice(0, 8);
     }
 
     function renderAlternativePanel(activeSlot, currentPlayer) {
-      const alternatives = getBestAlternativesForActiveSlot(activeSlot, currentPlayer);
+      const alternativeGroups = getAlternativeGroupsForActiveSlot(activeSlot, currentPlayer);
+      const alternatives = [...alternativeGroups.samePrice, ...alternativeGroups.withBank];
       const titleName = currentPlayer?.player_name || activeSlot?.position || "plads";
       const strategyName = strategyDisplayName(activeStrategyKey);
       const positionLabel = normalizePositionLabel(currentPlayer?.position || activeSlot?.positionCode || activeSlot?.position);
@@ -3308,35 +3335,50 @@ function saveState() {
         `;
       }
 
-      const rows = alternatives.map((player, index) => {
-        const priceDiff = getPlayerPrice(player) - currentPrice;
-        const warning = hasManualCheck(player)
-          ? `<span class="manual-mini-warning" title="Tjek start">Tjek start</span>`
-          : "";
-        const priceDiffHtml = `<div class="trade-diff ${diffClass(priceDiff)}">${formatSignedMoneyDiff(priceDiff)}</div>`;
-        const transferHtml = transferInfoHtml(player, currentPlayer);
-        return `
-          <div class="trade-row alternative">
-            <span class="alternative-rank">${index + 1}</span>
-            <div>
-              <div class="trade-name">${escapeHtml(player.player_name || "Ukendt spiller")}${warning}</div>
-              <div class="trade-meta">${escapeHtml(teamDisplayName(player.team_id, player.team_name))} · ${escapeHtml(positionFullLabel(player.position))}</div>
-              <div class="trade-next">${escapeHtml(nextMatchText(player.team_id))}</div>
+      function alternativeRows(players, startIndex = 0) {
+        return players.map((player, index) => {
+          const priceDiff = getPlayerPrice(player) - currentPrice;
+          const warning = hasManualCheck(player)
+            ? `<span class="manual-mini-warning" title="Tjek start">Tjek start</span>`
+            : "";
+          const priceDiffHtml = `<div class="trade-diff ${diffClass(priceDiff)}">${formatSignedMoneyDiff(priceDiff)}</div>`;
+          const transferHtml = transferInfoHtml(player, currentPlayer);
+          return `
+            <div class="trade-row alternative">
+              <span class="alternative-rank">${startIndex + index + 1}</span>
+              <div>
+                <div class="trade-name">${escapeHtml(player.player_name || "Ukendt spiller")}${warning}</div>
+                <div class="trade-meta">${escapeHtml(teamDisplayName(player.team_id, player.team_name))} ? ${escapeHtml(positionFullLabel(player.position))}</div>
+                <div class="trade-next">${escapeHtml(nextMatchText(player.team_id))}</div>
+              </div>
+              <div class="trade-start-col">
+                <div class="trade-start-value">${startPct(getPlayerStart(player))}</div>
+                <div class="trade-start-label">Start</div>
+              </div>
+              <div class="trade-price">
+                ${formatMoney(getPlayerPrice(player))}
+                ${priceDiffHtml}
+                ${transferHtml}
+              </div>
+              <button class="plus-btn choose-alt-btn" data-player-id="${escapeHtml(player.player_id)}">V?lg</button>
             </div>
-            <div class="trade-start-col">
-              <div class="trade-start-value">${startPct(getPlayerStart(player))}</div>
-              <div class="trade-start-label">Start</div>
-            </div>
-            <div>
-              <div class="trade-price">${formatMoney(getPlayerPrice(player))}</div>
-              <div class="trade-subprice">Pris</div>
-              ${priceDiffHtml}
-              ${transferHtml}
-            </div>
-            <button class="plus-btn choose-alt-btn" data-player-id="${escapeHtml(player.player_id)}" title="Vælg ${escapeHtml(player.player_name || "")}">Vælg</button>
-          </div>
-        `;
-      }).join("");
+          `;
+        }).join("");
+      }
+
+      const samePriceRows = alternativeRows(alternativeGroups.samePrice, 0);
+      const withBankRows = alternativeRows(alternativeGroups.withBank, alternativeGroups.samePrice.length);
+      const rows = `
+        ${alternativeGroups.samePrice.length ? `
+          <div class="alternatives-subtitle"><strong>Samme prisniveau</strong> &middot; Op til ${formatMoney(currentPrice)}</div>
+          ${samePriceRows}
+        ` : ""}
+        ${alternativeGroups.withBank.length ? `
+          <div class="alternatives-subtitle"><strong>Med bank</strong> &middot; Op til ${formatMoney(availableForReplacement)}</div>
+          ${withBankRows}
+        ` : ""}
+      `;
+
 
       return `
         <div class="alternatives-panel">
@@ -3344,7 +3386,8 @@ function saveState() {
           <div class="alternatives-subtitle">Strategi: ${escapeHtml(strategyName)}</div>
           <div class="alternative-chips">
             <span class="alternative-chip">Position: ${escapeHtml(positionLabel)}</span>
-            <span class="alternative-chip">Til rådighed ved skift: ${formatMoney(availableForReplacement)}</span>
+            <span class="alternative-chip">Nuv\u00e6rende pris: ${formatMoney(currentPrice)}</span>
+            <span class="alternative-chip">Med bank: ${formatMoney(availableForReplacement)}</span>
             <span class="alternative-chip">Max 4 pr. land</span>
             <span class="alternative-chip">Viser: ${alternatives.length}</span>
           </div>
