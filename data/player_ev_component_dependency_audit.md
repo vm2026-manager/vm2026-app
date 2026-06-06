@@ -17,9 +17,9 @@ Audit og maalrettet rebuild efter start_prob-repair. Optimizer, strategi-output 
 
 ## Counts
 
-- Stale komponenter foer: 2
+- Stale komponenter foer: 0
 - Stale komponenter efter: 0
-- Rækker genberegnet: 798
+- Rækker genberegnet: 849
 - Team/match/on_pitch high-start spreads > 0.05 foer: 3
 - Team/match/on_pitch high-start spreads > 0.05 efter: 0
 - Negative on_pitch_ev for start_prob >= 0.70 foer: 0
@@ -28,28 +28,28 @@ Audit og maalrettet rebuild efter start_prob-repair. Optimizer, strategi-output 
 - Stoerste high-start on_pitch spread efter: 0.027252
 - Samlet EV men manglende basekomponenter efter: 0
 - Uden EV-kilde efter: 0
-- Backup: `data\player_ev_group_stage_v1.backup_before_component_rebuild_20260606_105809.csv`
+- Backup: `data\player_ev_group_stage_v1.backup_before_component_rebuild_20260606_110807.csv`
 
 ## Sanity-spillere
 
 | player_name | team_id | start_prob_before | start_prob_after | match_1_goal_ev_before | match_1_goal_ev_after | match_1_start_minutes_ev_before | match_1_start_minutes_ev_after | match_1_weighted_match_ev_before | match_1_weighted_match_ev_after | weighted_group_stage_ev_before | weighted_group_stage_ev_after | issue_after |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Harry Kane | ENG | 0.97 | 0.97 | 0.237501 | 0.237501 | 64.53119 | 64.53119 | 1.51232 | 1.51232 | 4.342809 | 4.59947 | ok |
-| Mike Maignan | FRA | 0.9407 | 0.9407 | 0.0 | 0.0 | 75.856167 | 75.856167 | 1.442054 | 1.442054 | 4.16187 | 4.344694 | ok |
-| Gregor Kobel | SUI | 0.9174 | 0.9174 | 0.0 | 0.0 | 73.73419 | 73.73419 | 1.668806 | 1.668806 | 3.678117 | 3.984932 | ok |
-| Erling Haaland | NOR | 0.9058 | 0.9058 | 0.263386 | 0.263386 | 60.153272 | 60.153272 | 1.574396 | 1.574396 | 3.693655 | 3.442622 | ok |
+| Harry Kane | ENG | 0.97 | 0.97 | 0.237501 | 0.237501 | 64.53119 | 64.53119 | 1.51232 | 1.51232 | 4.342521 | 4.59947 | ok |
+| Mike Maignan | FRA | 0.9407 | 0.9407 | 0.0 | 0.0 | 75.856167 | 75.856167 | 1.442054 | 1.442054 | 4.161869 | 4.344695 | ok |
+| Gregor Kobel | SUI | 0.9174 | 0.9174 | 0.0 | 0.0 | 73.73419 | 73.73419 | 1.668806 | 1.668806 | 3.678117 | 3.984935 | ok |
+| Erling Haaland | NOR | 0.9058 | 0.9058 | 0.263386 | 0.263386 | 60.153272 | 60.153272 | 1.574396 | 1.574396 | 3.693369 | 3.442623 | ok |
 | Antonio Nusa | NOR | 0.82 | 0.82 | 0.238437 | 0.238437 | 54.45538 | 54.45538 | 1.701233 | 1.701233 | 3.161444 | 3.161444 | ok |
-| Alexander Schlager | AUT | 0.921 | 0.921 | 0.0 | 0.0 | 73.260945 | 73.260945 | 1.4956 | 1.4956 | 2.910432 | 3.047049 | ok |
-| Alexander Sørloth | NOR | 0.8805 | 0.8805 | 0.187096 | 0.187096 | 58.473125 | 58.473125 | 1.25329 | 1.25329 | 3.038232 | 2.766437 | ok |
-| Jules Kounde | FRA | 0.6814 | 0.6814 |  |  |  |  | 0.907738 | 0.907738 | 2.88363 | 2.702045 | ok |
-| Philipp Lienhart | AUT | 0.6578 | 0.6578 | 0.069328 | 0.069328 | 49.574439 | 49.574439 | 1.377354 | 1.377354 | 2.608975 | 2.623064 | ok |
-| Stefan Posch | AUT | 0.636 | 0.636 | 0.052309 | 0.052309 | 48.05298 | 48.05298 | 1.294632 | 1.294632 | 2.490306 | 2.477578 | ok |
-| Raphinha | BRA | 0.86 | 0.86 |  |  |  |  | 1.08021 | 1.08021 | 3.419943 | 2.198878 | ok |
-| Manuel Neuer | GER | 0.3702 | 0.3702 |  |  |  |  | 0.990382 | 0.990382 | 2.084986 | 2.084986 | ok |
-| Martin Ødegaard | NOR | 0.8841 | 0.8841 | 0.079099 | 0.079099 | 62.248597 | 62.248597 | 0.823323 | 0.823323 | 2.247221 | 1.787772 | ok |
-| Maximilian Wöber | AUT | 0.5612 | 0.5612 | 0.022139 | 0.022139 | 41.834654 | 41.834654 | 0.903613 | 0.903613 | 1.642891 | 1.642891 | ok |
-| Kevin Danso | AUT | 0.3362 | 0.3362 | 0.012368 | 0.012368 | 24.999832 | 24.999832 | 0.620027 | 0.620027 | 1.080795 | 1.080795 | ok |
-| Patrick Pentz | AUT | 0.054 | 0.054 | 0.0 | 0.0 | 4.324914 | 4.324914 | 0.217369 | 0.217369 | 0.314146 | 0.447662 | ok |
+| Alexander Schlager | AUT | 0.921 | 0.921 | 0.0 | 0.0 | 73.260945 | 73.260945 | 1.4956 | 1.495599 | 2.910433 | 3.047048 | ok |
+| Alexander Sørloth | NOR | 0.8805 | 0.8805 | 0.187096 | 0.187096 | 58.473125 | 58.473125 | 1.25329 | 1.25329 | 3.037995 | 2.766439 | ok |
+| Jules Kounde | FRA | 0.6814 | 0.6814 |  |  |  |  | 0.907738 | 0.907738 | 2.883631 | 2.702047 | ok |
+| Philipp Lienhart | AUT | 0.6578 | 0.6578 | 0.069328 | 0.069328 | 49.574439 | 49.574439 | 1.377354 | 1.377353 | 2.608976 | 2.623063 | ok |
+| Stefan Posch | AUT | 0.636 | 0.636 | 0.052309 | 0.052309 | 48.05298 | 48.05298 | 1.294632 | 1.29463 | 2.490307 | 2.477576 | ok |
+| Manuel Neuer | GER | 0.3702 | 0.3702 |  |  |  |  | 0.990382 | 0.990382 | 2.084986 | 2.086726 | ok |
+| Martin Ødegaard | NOR | 0.8841 | 0.8841 | 0.079099 | 0.079099 | 62.248597 | 62.248597 | 0.823323 | 0.823323 | 2.247223 | 1.787772 | ok |
+| Maximilian Wöber | AUT | 0.5612 | 0.5612 | 0.022139 | 0.022139 | 41.834654 | 41.834654 | 0.903613 | 0.903612 | 1.642892 | 1.745107 | ok |
+| Kevin Danso | AUT | 0.3362 | 0.3362 | 0.012368 | 0.012368 | 24.999832 | 24.999832 | 0.620027 | 0.620026 | 1.080795 | 1.221051 | ok |
+| Raphinha | BRA | 0.86 | 0.86 |  |  |  |  | 1.08021 | 0.228093 | 2.954548 | 0.557184 | ok |
+| Patrick Pentz | AUT | 0.054 | 0.054 | 0.0 | 0.0 | 4.324914 | 4.324914 | 0.217369 | 0.217368 | 0.314147 | 0.447661 | ok |
 
 ## NOR vs IRQ efter
 

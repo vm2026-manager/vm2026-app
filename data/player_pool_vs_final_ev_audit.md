@@ -8,27 +8,27 @@
 
 ## Før/efter
 
-- `optimizer_ev` forskel > 0.001: 24 -> 0
-- `optimizer_ev` forskel > 0.10: 23 -> 0
+- `optimizer_ev` forskel > 0.001: 346 -> 0
+- `optimizer_ev` forskel > 0.10: 24 -> 0
 - Dublerede player_id i pool: 0
 - Dublerede player_id i EV: 0
 - Pool-rækker uden exact EV-match: 48
 - EV-rækker uden exact pool-match: 0
-- Backup: `data\player_pool_v1.backup_before_final_ev_sync_20260606_105810.json`
+- Backup: `data\player_pool_v1.backup_before_final_ev_sync_20260606_110808.json`
 
 ## Feltmismatches
 
 | Felt | Før | Efter |
 | --- | ---: | ---: |
-| optimizer_ev | 671 | 0 |
-| weighted_group_stage_ev | 671 | 0 |
-| weighted_group_stage_ev_before_price_quality | 586 | 0 |
-| price_quality_ev | 619 | 0 |
-| model_ev_before_price_quality | 586 | 0 |
-| optimizer_ev_before_price_quality | 586 | 0 |
-| price_quality_raw_ev | 794 | 0 |
-| price_quality_appearance_scaled_ev | 648 | 0 |
-| price_quality_base_capped_ev | 642 | 0 |
+| optimizer_ev | 933 | 0 |
+| weighted_group_stage_ev | 933 | 0 |
+| weighted_group_stage_ev_before_price_quality | 662 | 0 |
+| price_quality_ev | 903 | 0 |
+| model_ev_before_price_quality | 662 | 0 |
+| optimizer_ev_before_price_quality | 662 | 0 |
+| price_quality_raw_ev | 1050 | 0 |
+| price_quality_appearance_scaled_ev | 968 | 0 |
+| price_quality_base_capped_ev | 797 | 0 |
 | price_quality_weight | 0 | 0 |
 | price_quality_spread_multiplier | 0 | 0 |
 | price_quality_applied | 0 | 0 |
@@ -39,9 +39,9 @@
 
 | Spiller | Hold | Pool før | EV | Pool efter | Status |
 | --- | --- | ---: | ---: | ---: | --- |
-| Jules Kounde | FRA | 2.88363 | 2.883631 | 2.883631 | updated |
-| Leo Pereira | BRA | 2.809037 | 2.809039 | 2.809039 | updated |
-| Unai Simon | ESP | 4.511835 | 4.511834 | 4.511834 | updated |
+| Jules Kounde | FRA | 2.883631 | 2.876427 | 2.876427 | updated |
+| Leo Pereira | BRA | 2.809039 | 1.886863 | 1.886863 | updated |
+| Unai Simon | ESP | 4.511834 | 4.511834 | 4.511834 | already_equal |
 | Joan Garcia | ESP | 0.308375 | 0.308375 | 0.308375 | already_equal |
-| Patrick Agyemang | USA | 0.930268 | 0.930238 | 0.930238 | updated |
-| Noni Madueke | ENG | 1.600831 | 1.600729 | 1.600729 | updated |
+| Patrick Agyemang | USA | 0.930238 | 0.930238 | 0.930238 | already_equal |
+| Noni Madueke | ENG | 1.600729 | 1.600729 | 1.600729 | already_equal |

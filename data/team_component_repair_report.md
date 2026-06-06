@@ -1,11 +1,12 @@
 # Team Component Repair Report
 
-- Repair rows: 1183
-- Backup: `data\player_ev_group_stage_v1.backup_before_component_rebuild_20260606_105809.csv`
+- Repair rows: 1305
+- Backup: `data\player_ev_group_stage_v1.backup_before_component_rebuild_20260606_110807.csv`
 
 ## Sanity-spillere match 1
 
 | player_name | team_id | opponent | start_prob | appearance_prob_used | old_on_pitch_ev | new_on_pitch_ev | old_result_ev | new_result_ev | old_team_scores_ev | new_team_scores_ev | old_opponent_scores_ev | new_opponent_scores_ev | old_weighted_match_ev | new_weighted_match_ev |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Erling Haaland | NOR | IRQ | 0.9058 | 0.9058 | 0.058696 | 0.058696 | 0.153239 | 0.153239 | 0.06848 | 0.068481 | -0.056938 | -0.056939 | 1.574396 | 1.574396 |
-| Alexander Sørloth | NOR | IRQ | 0.8805 | 0.8805 | 0.05566 | 0.05566 | 0.148959 | 0.148959 | 0.066567 | 0.066568 | -0.055348 | -0.055349 | 1.25329 | 1.25329 |
+| Jonathan David | CAN | BIH | 0.9198 | 0.9198 | 0.060376 | 0.060376 | 0.095303 | 0.095303 | 0.081098 | 0.081099 | -0.057251 | -0.057252 | 2.29973 | 2.29973 |
+| Harry Kane | ENG | CRO | 0.97 | 0.99 | 0.0688 | 0.0688 | 0.135229 | 0.135229 | 0.081854 | 0.081855 | -0.058662 | -0.058663 | 1.51232 | 1.51232 |
+| Marko Arnautovic | AUT | JOR | 0.6508 | 0.8911 | 0.056932 | 0.056932 | 0.1506 | 0.1506 | 0.080595 | 0.080596 | -0.052091 | -0.052094 | 1.792876 | 1.792874 |
