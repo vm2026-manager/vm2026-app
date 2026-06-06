@@ -11,14 +11,14 @@ MID/FWD holdes paa 0, fordi den eksplicitte Holdet clean sheet-regel her kun bru
 - GK/DEF med NaN clean_sheet_ev trods clean_sheet_prob foer: 0
 - GK/DEF med NaN clean_sheet_ev trods clean_sheet_prob efter: 0
 - Clean sheet repair rows: 0
-- Backup: `data\player_ev_group_stage_v1.backup_before_component_rebuild_20260606_120529.csv`
+- Backup: `data\player_ev_group_stage_v1.backup_before_component_rebuild_20260606_144928.csv`
 
 ## Sanity-spillere
 
 | player_name | team_id | position | start_prob | match_1_opponent | match_1_clean_sheet_prob | match_1_clean_sheet_ev_before | match_1_clean_sheet_ev_after | match_1_weighted_before | match_1_weighted_after |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Mike Maignan | FRA | GK | 0.9407 | SEN | 0.4624 | 0.43498 | 0.43498 | 1.442054 | 1.442054 |
-| Gregor Kobel | SUI | GK | 0.9174 | QAT | 0.5585 | 0.512368 | 0.512368 | 1.668806 | 1.668805 |
+| Mike Maignan | FRA | GK | 0.9407 | SEN | 0.4624 | 0.43498 | 0.43498 | 1.442054 | 1.442053 |
+| Gregor Kobel | SUI | GK | 0.9174 | QAT | 0.5585 | 0.512368 | 0.512368 | 1.668805 | 1.668806 |
 | Alexander Schlager | AUT | GK | 0.921 | JOR | 0.4865 | 0.448067 | 0.448067 | 1.495599 | 1.495599 |
 | Jules Kounde | FRA | DEF | 0.6814 | SEN | 0.4624 | 0.315079 | 0.315079 | 0.907738 | 0.907738 |
 | Philipp Lienhart | AUT | DEF | 0.6578 | JOR | 0.4865 | 0.32002 | 0.32002 | 1.377353 | 1.377353 |

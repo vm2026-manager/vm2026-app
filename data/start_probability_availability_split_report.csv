@@ -335,7 +335,7 @@ Derek Cornelius,CAN,0.4001,0.4001,0.4357,0.7665,medium_risk,,,,transfermarkt_ava
 Joel Waterman,CAN,0.5212,0.5212,0.5625,0.7901,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Alistair Johnston,CAN,0.9095,0.9095,0.9683,0.8264,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Kamal Miller,CAN,0.8008,0.8008,0.8598,0.804,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
-Luc De Fougerolles,CAN,0.096,0.096,0.1065,0.7184,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
+Luc De Fougerolles,CAN,0.68,0.68,0.76,0.95,low_risk,0.82,medium,"Manual context review from recent Canada usage screenshot and BetXpert comment: started recent matches and reportedly expected to get renewed trust. Raised from data-model reserve level, but kept below nailed-on due to thin sample.",transfermarkt_availability_split_2026_06_06+context_override,transfermarkt_availability_split_2026_06_06+context_override
 Abdukodir Khusanov,UZB,0.8477,0.8477,0.9582,0.6703,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Umar Eshmurodov,UZB,0.3831,0.3831,0.4108,0.8079,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Rustam Ashurmatov,UZB,0.8433,0.8433,0.9124,0.7838,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
@@ -418,8 +418,8 @@ Utkir Yusupov,UZB,0.4945,0.4372,0.4597,0.8597,medium_risk,,,,transfermarkt_avail
 Abduvokhid Nematov,UZB,0.4804,0.5188,0.5623,0.7791,medium_risk,,,,transfermarkt_availability_split_2026_06_06+gk_hierarchy_normalized,transfermarkt_availability_split_2026_06_06
 Botirali Ergashev,UZB,0.0251,0.0443,0.05,0.6724,medium_risk,,,,transfermarkt_availability_split_2026_06_06+gk_hierarchy_normalized,transfermarkt_availability_split_2026_06_06
 Owen Goodman,CAN,0.0251,0.046,0.05,0.7702,medium_risk,,,,transfermarkt_availability_split_2026_06_06+gk_hierarchy_normalized,transfermarkt_availability_split_2026_06_06
-Dayne St. Clair,CAN,0.2395,0.3332,0.3462,0.893,medium_risk,,,,transfermarkt_availability_split_2026_06_06+gk_hierarchy_normalized,transfermarkt_availability_split_2026_06_06
-Maxime Crepeau,CAN,0.7355,0.5751,0.6057,0.8555,medium_risk,,,,transfermarkt_availability_split_2026_06_06+gk_hierarchy_normalized,transfermarkt_availability_split_2026_06_06
+Dayne St. Clair,CAN,0.0611,0.3332,0.3462,0.893,medium_risk,,,,transfermarkt_availability_split_2026_06_06+gk_hierarchy_normalized,transfermarkt_availability_split_2026_06_06
+Maxime Crepeau,CAN,0.9138,0.8,0.88,0.95,low_risk,0.9,medium,Manual context review from Canada GK usage screenshot and BetXpert comment: Crepeau reportedly named/treated as Canada R1 starter. Raised to likely starter.,transfermarkt_availability_split_2026_06_06+gk_hierarchy_normalized,transfermarkt_availability_split_2026_06_06+context_override
 Angus Gunn,SCO,0.1653,0.4252,0.4684,0.7368,medium_risk,,,,transfermarkt_availability_split_2026_06_06+gk_hierarchy_normalized,transfermarkt_availability_split_2026_06_06
 Craig Gordon,SCO,0.6638,0.8354,0.9011,0.7917,medium_risk,,,,transfermarkt_availability_split_2026_06_06+gk_hierarchy_normalized,transfermarkt_availability_split_2026_06_06
 Liam Kelly,SCO,0.1709,0.4453,0.5,0.6875,unknown,,,,transfermarkt_availability_split_2026_06_06+gk_hierarchy_normalized,transfermarkt_availability_split_2026_06_06
@@ -603,7 +603,7 @@ Leon Goretzka,GER,0.3722,0.3722,0.4283,0.6255,high_risk,,,,transfermarkt_availab
 Pascal Gross,GER,0.3313,0.3313,0.3532,0.8232,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Joshua Kimmich,GER,0.9521,0.9521,0.97,0.9473,low_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Jamie Leweling,GER,0.0566,0.0566,0.0617,0.764,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
-Aleksandar Pavlovic,GER,0.8153,0.8153,0.8839,0.7781,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
+Aleksandar Pavlovic,GER,0.8153,0.68,0.76,0.86,medium_risk,0.82,medium,"Manual context review: Pavlovic is in Germany's start-picture but not a nailed-on starter. Recent usage includes starts and 90-minute matches, but also bench/non-squad/injury context. Downgraded from likely starter to borderline/possible starter.",transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06+context_override
 Bradley Barcola,FRA,0.3263,0.3263,0.3436,0.8564,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Jamal Musiala,GER,0.8928,0.8928,0.9265,0.8962,low_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Angelo Stiller,GER,0.5523,0.5523,0.5904,0.8156,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
@@ -751,7 +751,7 @@ Emiliano Martinez Toranza,URU,0.0473,0.0473,0.0518,0.7547,medium_risk,,,,transfe
 Aidan Morris,USA,0.5477,0.5477,0.6368,0.6,high_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Sebastian Berhalter,USA,0.6315,0.6315,0.6674,0.8464,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Jefferson Lerma,COL,0.6382,0.6382,0.6935,0.7721,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
-James Rodriguez,COL,0.6752,0.6752,0.7174,0.8321,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
+James Rodriguez,COL,0.82,0.82,0.9,0.92,low_risk,0.92,medium,"Manual context review from recent Colombia usage screenshot and expert article: strong recurring starter/attacking role, with set-piece/penalty relevance. Raised to likely starter.",transfermarkt_availability_split_2026_06_06+context_override,transfermarkt_availability_split_2026_06_06+context_override
 Juan Quintero,COL,0.0444,0.0444,0.05,0.6774,unknown,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Weston McKennie,USA,0.6238,0.6238,0.7254,0.6,high_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Malik Tillman,USA,0.572,0.572,0.6294,0.7392,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
@@ -1142,7 +1142,7 @@ Giuliano Simeone,ARG,0.2962,0.2962,0.3298,0.7089,medium_risk,,,,transfermarkt_av
 Julian Alvarez,ARG,0.6367,0.6367,0.6718,0.8511,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Nico Gonzalez,ARG,0.5303,0.5303,0.6167,0.6,high_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Lautaro Martinez,ARG,0.623,0.623,0.6434,0.9092,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
-Lionel Messi,ARG,0.6783,0.6783,0.7202,0.8338,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
+Lionel Messi,ARG,0.84,0.84,0.92,0.91,medium_risk,0.92,medium,Manual context review: Messi had injury context but should be treated as Argentina starter whenever fit. Uncertainty should mainly be availability/load management rather than competition for role.,transfermarkt_availability_split_2026_06_06+context_override,transfermarkt_availability_split_2026_06_06+context_override
 Riyad Mahrez,ALG,0.6319,0.6319,0.711,0.6823,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Baghdad Bounedjah,ALG,0.1526,0.1526,0.1775,0.6,high_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Amine Gouiri,ALG,0.8025,0.8025,0.9222,0.6291,high_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
@@ -1158,7 +1158,7 @@ Alexander Isak,SWE,0.395,0.395,0.434,0.7434,medium_risk,,,,transfermarkt_availab
 Viktor Gyökeres,SWE,0.8141,0.8141,0.9427,0.6104,high_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Borja Iglesias,ESP,0.2425,0.2425,0.282,0.6,high_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Gustaf Nilsson,SWE,0.2655,0.2655,0.3087,0.6,high_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
-Mikel Oyarzabal,ESP,0.5637,0.5637,0.633,0.6872,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
+Mikel Oyarzabal,ESP,0.82,0.82,0.9,0.92,low_risk,0.92,medium,"Manual context review from recent national-team usage screenshot and expert article: Oyarzabal appears to be a central Spain attacking starter with strong R1 value. Raised from model watch level to likely starter, while keeping some substitution/rotation risk.",transfermarkt_availability_split_2026_06_06+context_override,transfermarkt_availability_split_2026_06_06+context_override
 Ferran Torres,ESP,0.5692,0.5692,0.6113,0.8031,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Victor Munoz,ESP,0.0424,0.0424,0.05,0.568,high_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06
 Nico Williams,ESP,0.838,0.838,0.912,0.7682,medium_risk,,,,transfermarkt_availability_split_2026_06_06,transfermarkt_availability_split_2026_06_06

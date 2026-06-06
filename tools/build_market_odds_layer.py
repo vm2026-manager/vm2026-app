@@ -125,22 +125,31 @@ def build_team_market_layer() -> pd.DataFrame:
     # Langsigtet turneringsscore:
     # To-reach-markederne er bedre end kun vinderodds, men winner bruges som fallback.
     long_run_components = {
-        "winner_score": 0.30,
-        "reach_qf_score": 0.25,
+        # Fantasy long-run should care more about reaching useful future rounds
+        # than pure tournament winner odds.
+        "winner_score": 0.15,
+        "reach_qf_score": 0.35,
         "reach_sf_score": 0.25,
         "reach_final_score": 0.20,
+        "group_win_score": 0.05,
     }
 
     group_stage_components = {
+        # Group-stage value should be driven mainly by group strength/path,
+        # with reach-QF as a better practical signal than pure winner odds.
         "group_win_score": 0.55,
-        "winner_score": 0.25,
-        "highest_scoring_team_score": 0.20,
+        "reach_qf_score": 0.25,
+        "highest_scoring_team_score": 0.15,
+        "winner_score": 0.05,
     }
 
     attack_components = {
-        "highest_scoring_team_score": 0.55,
-        "winner_score": 0.25,
-        "group_win_score": 0.20,
+        # Attacking environment should be based on scoring market first,
+        # then group path and broad team strength.
+        "highest_scoring_team_score": 0.50,
+        "group_win_score": 0.25,
+        "reach_qf_score": 0.15,
+        "winner_score": 0.10,
     }
 
     def weighted_available(row: pd.Series, components: dict[str, float]) -> float:

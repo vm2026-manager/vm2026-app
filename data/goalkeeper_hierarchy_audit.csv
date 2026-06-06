@@ -24,9 +24,9 @@ BRA,ederson_moraes__bra,Ederson Moraes,0.3409,transfermarkt_availability_split_2
 BRA,weverton__bra,Weverton,0.043,transfermarkt_availability_split_2026_06_06,9.0,0,0.6,,4,0.0151,1.0001,team_gk_exclusive_normalization
 BRA,alisson_becker__bra,Alisson Becker,0.9054,transfermarkt_availability_split_2026_06_06,77.0,6,0.9213,,1,0.7986,1.0001,team_gk_exclusive_normalization
 BRA,bento_krepski__bra,Bento Krepski,0.5232,transfermarkt_availability_split_2026_06_06,6.0,,0.9453,,2,0.1321,1.0001,team_gk_exclusive_normalization
-CAN,owen_goodman__can,Owen Goodman,0.046,transfermarkt_availability_split_2026_06_06,0.0,0,0.7702,,3,0.0251,1.0001,team_gk_exclusive_normalization
-CAN,dayne_st_clair__can,Dayne St. Clair,0.3332,transfermarkt_availability_split_2026_06_06,19.0,10,0.893,,2,0.2395,1.0001,team_gk_exclusive_normalization
-CAN,maxime_cr_peau__can,Maxime Crepeau,0.5751,transfermarkt_availability_split_2026_06_06,30.0,7,0.8555,,1,0.7355,1.0001,team_gk_exclusive_normalization
+CAN,owen_goodman__can,Owen Goodman,0.046,transfermarkt_availability_split_2026_06_06,0.0,0,0.7702,,3,0.0251,1.0,team_gk_exclusive_normalization
+CAN,dayne_st_clair__can,Dayne St. Clair,0.3332,transfermarkt_availability_split_2026_06_06,19.0,10,0.893,,2,0.0611,1.0,team_gk_exclusive_normalization
+CAN,maxime_cr_peau__can,Maxime Crepeau,0.8,transfermarkt_availability_split_2026_06_06+context_override,30.0,7,0.95,yes,1,0.9138,1.0,team_gk_exclusive_normalization
 CIV,yahia_fofana__civ,Yahia Fofana,0.695,transfermarkt_availability_split_2026_06_06,34.0,,0.9597,,1,0.892,1.0,team_gk_exclusive_normalization
 CIV,mohamed_kone__civ,Mohamed Kone,0.0492,transfermarkt_availability_split_2026_06_06,0.0,,0.9529,,3,0.0251,1.0,team_gk_exclusive_normalization
 CIV,alban_lafont__civ,Alban Lafont,0.3096,transfermarkt_availability_split_2026_06_06,4.0,,0.9294,,2,0.0829,1.0,team_gk_exclusive_normalization

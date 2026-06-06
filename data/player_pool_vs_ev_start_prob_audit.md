@@ -14,16 +14,16 @@ Repairen anvendte `source_priority()` og opdaterede kun, når poolkilden havde h
 
 ## Mismatch counts
 
-- Start_prob mismatches > 0.001 før: 1
+- Start_prob mismatches > 0.001 før: 2
 - Start_prob mismatches > 0.001 efter: 0
-- Start_prob_source mismatches før: 1
+- Start_prob_source mismatches før: 2
 - Start_prob_source mismatches efter: 0
 - Blokerede identitetsmatches: 0
 - team_minute_rank før/efter: 0 / 0
 - holdet_official_unmatched_default før/efter: 0 / 0
 - name+team før/efter: 0 / 0
 - Rækker påvirket: 1244
-- Backup: `data\player_ev_group_stage_v1.backup_before_start_prob_source_repair_20260606_120528.csv`
+- Backup: `data\player_ev_group_stage_v1.backup_before_start_prob_source_repair_20260606_144926.csv`
 
 ## Sanity-spillere
 
