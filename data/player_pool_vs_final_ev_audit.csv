@@ -8765,10 +8765,10 @@ mathew_ryan__aus,Mathew Ryan,AUS,GK,exact_player_id,price_quality_method,raw_for
 mathew_ryan__aus,Mathew Ryan,AUS,GK,exact_player_id,base_ev_source,component_weighted_sum,component_weighted_sum,component_weighted_sum,0.000000,0.000000,already_equal
 alisson_becker__bra,Alisson Becker,BRA,GK,exact_player_id,optimizer_ev,2.9992859110169494,2.9992859110169494,2.9992859110169494,0.000000,0.000000,already_equal
 alisson_becker__bra,Alisson Becker,BRA,GK,exact_player_id,weighted_group_stage_ev,2.9992859110169494,2.9992859110169494,2.9992859110169494,0.000000,0.000000,already_equal
-alisson_becker__bra,Alisson Becker,BRA,GK,exact_player_id,weighted_group_stage_ev_before_price_quality,4.577567,3.151926430084746,3.151926430084746,1.425641,0.000000,updated
-alisson_becker__bra,Alisson Becker,BRA,GK,exact_player_id,price_quality_ev,4.084942,2.812724894067797,2.812724894067797,1.272217,0.000000,updated
-alisson_becker__bra,Alisson Becker,BRA,GK,exact_player_id,model_ev_before_price_quality,4.577567,3.151926430084746,3.151926430084746,1.425641,0.000000,updated
-alisson_becker__bra,Alisson Becker,BRA,GK,exact_player_id,optimizer_ev_before_price_quality,4.577567,3.151926430084746,3.151926430084746,1.425641,0.000000,updated
+alisson_becker__bra,Alisson Becker,BRA,GK,exact_player_id,weighted_group_stage_ev_before_price_quality,3.151926430084746,3.151926430084746,3.151926430084746,0.000000,0.000000,already_equal
+alisson_becker__bra,Alisson Becker,BRA,GK,exact_player_id,price_quality_ev,2.812724894067797,2.812724894067797,2.812724894067797,0.000000,0.000000,already_equal
+alisson_becker__bra,Alisson Becker,BRA,GK,exact_player_id,model_ev_before_price_quality,3.151926430084746,3.151926430084746,3.151926430084746,0.000000,0.000000,already_equal
+alisson_becker__bra,Alisson Becker,BRA,GK,exact_player_id,optimizer_ev_before_price_quality,3.151926430084746,3.151926430084746,3.151926430084746,0.000000,0.000000,already_equal
 alisson_becker__bra,Alisson Becker,BRA,GK,exact_player_id,price_quality_raw_ev,4.084942,4.084942,4.084942,0.000000,0.000000,already_equal
 alisson_becker__bra,Alisson Becker,BRA,GK,exact_player_id,price_quality_appearance_scaled_ev,4.084942,4.084942,4.084942,0.000000,0.000000,already_equal
 alisson_becker__bra,Alisson Becker,BRA,GK,exact_player_id,price_quality_base_capped_ev,4.084942,4.084942,4.084942,0.000000,0.000000,already_equal
@@ -8779,10 +8779,10 @@ alisson_becker__bra,Alisson Becker,BRA,GK,exact_player_id,price_quality_method,r
 alisson_becker__bra,Alisson Becker,BRA,GK,exact_player_id,base_ev_source,component_weighted_sum,component_weighted_sum,component_weighted_sum,0.000000,0.000000,already_equal
 ederson_moraes__bra,Ederson Moraes,BRA,GK,exact_player_id,optimizer_ev,2.272635483870968,2.272635483870968,2.272635483870968,0.000000,0.000000,already_equal
 ederson_moraes__bra,Ederson Moraes,BRA,GK,exact_player_id,weighted_group_stage_ev,2.272635483870968,2.272635483870968,2.272635483870968,0.000000,0.000000,already_equal
-ederson_moraes__bra,Ederson Moraes,BRA,GK,exact_player_id,weighted_group_stage_ev_before_price_quality,0.278967,2.6996806451612905,2.6996806451612905,2.420714,0.000000,updated
-ederson_moraes__bra,Ederson Moraes,BRA,GK,exact_player_id,price_quality_ev,0.180905,1.750693548387097,1.750693548387097,1.569789,0.000000,updated
-ederson_moraes__bra,Ederson Moraes,BRA,GK,exact_player_id,model_ev_before_price_quality,0.278967,2.6996806451612905,2.6996806451612905,2.420714,0.000000,updated
-ederson_moraes__bra,Ederson Moraes,BRA,GK,exact_player_id,optimizer_ev_before_price_quality,0.278967,2.6996806451612905,2.6996806451612905,2.420714,0.000000,updated
+ederson_moraes__bra,Ederson Moraes,BRA,GK,exact_player_id,weighted_group_stage_ev_before_price_quality,2.6996806451612905,2.6996806451612905,2.6996806451612905,0.000000,0.000000,already_equal
+ederson_moraes__bra,Ederson Moraes,BRA,GK,exact_player_id,price_quality_ev,1.750693548387097,1.750693548387097,1.750693548387097,0.000000,0.000000,already_equal
+ederson_moraes__bra,Ederson Moraes,BRA,GK,exact_player_id,model_ev_before_price_quality,2.6996806451612905,2.6996806451612905,2.6996806451612905,0.000000,0.000000,already_equal
+ederson_moraes__bra,Ederson Moraes,BRA,GK,exact_player_id,optimizer_ev_before_price_quality,2.6996806451612905,2.6996806451612905,2.6996806451612905,0.000000,0.000000,already_equal
 ederson_moraes__bra,Ederson Moraes,BRA,GK,exact_player_id,price_quality_raw_ev,4.084942,4.084942,4.084942,0.000000,0.000000,already_equal
 ederson_moraes__bra,Ederson Moraes,BRA,GK,exact_player_id,price_quality_appearance_scaled_ev,0.180905,0.180905,0.180905,0.000000,0.000000,already_equal
 ederson_moraes__bra,Ederson Moraes,BRA,GK,exact_player_id,price_quality_base_capped_ev,0.418451,0.418451,0.418451,0.000000,0.000000,already_equal
@@ -9967,12 +9967,12 @@ vladimir_darida__cze,Vladimir Darida,CZE,MID,exact_player_id,price_quality_sprea
 vladimir_darida__cze,Vladimir Darida,CZE,MID,exact_player_id,price_quality_applied,True,True,True,0.000000,0.000000,already_equal
 vladimir_darida__cze,Vladimir Darida,CZE,MID,exact_player_id,price_quality_method,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,0.000000,0.000000,already_equal
 vladimir_darida__cze,Vladimir Darida,CZE,MID,exact_player_id,base_ev_source,component_weighted_sum,component_weighted_sum,component_weighted_sum,0.000000,0.000000,already_equal
-bruno_fernandes__por,Bruno Fernandes,POR,MID,exact_player_id,optimizer_ev,3.955143,3.955143,3.955143,0.000000,0.000000,already_equal
-bruno_fernandes__por,Bruno Fernandes,POR,MID,exact_player_id,weighted_group_stage_ev,3.955143,3.955143,3.955143,0.000000,0.000000,already_equal
-bruno_fernandes__por,Bruno Fernandes,POR,MID,exact_player_id,weighted_group_stage_ev_before_price_quality,4.301598,4.301598,4.301598,0.000000,0.000000,already_equal
-bruno_fernandes__por,Bruno Fernandes,POR,MID,exact_player_id,price_quality_ev,3.531697,3.531697,3.531697,0.000000,0.000000,already_equal
-bruno_fernandes__por,Bruno Fernandes,POR,MID,exact_player_id,model_ev_before_price_quality,4.301598,4.301598,4.301598,0.000000,0.000000,already_equal
-bruno_fernandes__por,Bruno Fernandes,POR,MID,exact_player_id,optimizer_ev_before_price_quality,4.301598,4.301598,4.301598,0.000000,0.000000,already_equal
+bruno_fernandes__por,Bruno Fernandes,POR,MID,exact_player_id,optimizer_ev,3.9782424724205065,3.9782424724205065,3.9782424724205065,0.000000,0.000000,already_equal
+bruno_fernandes__por,Bruno Fernandes,POR,MID,exact_player_id,weighted_group_stage_ev,3.9782424724205065,3.9782424724205065,3.9782424724205065,0.000000,0.000000,already_equal
+bruno_fernandes__por,Bruno Fernandes,POR,MID,exact_player_id,weighted_group_stage_ev_before_price_quality,4.301598,4.326720895522389,4.326720895522389,0.025123,0.000000,updated
+bruno_fernandes__por,Bruno Fernandes,POR,MID,exact_player_id,price_quality_ev,3.531697,3.552323393900065,3.552323393900065,0.020626,0.000000,updated
+bruno_fernandes__por,Bruno Fernandes,POR,MID,exact_player_id,model_ev_before_price_quality,4.301598,4.326720895522389,4.326720895522389,0.025123,0.000000,updated
+bruno_fernandes__por,Bruno Fernandes,POR,MID,exact_player_id,optimizer_ev_before_price_quality,4.301598,4.326720895522389,4.326720895522389,0.025123,0.000000,updated
 bruno_fernandes__por,Bruno Fernandes,POR,MID,exact_player_id,price_quality_raw_ev,3.531697,3.531697,3.531697,0.000000,0.000000,already_equal
 bruno_fernandes__por,Bruno Fernandes,POR,MID,exact_player_id,price_quality_appearance_scaled_ev,3.531697,3.531697,3.531697,0.000000,0.000000,already_equal
 bruno_fernandes__por,Bruno Fernandes,POR,MID,exact_player_id,price_quality_base_capped_ev,3.531697,3.531697,3.531697,0.000000,0.000000,already_equal
@@ -10667,12 +10667,12 @@ assan_ouedraogo__ger,Assan Ouedraogo,GER,MID,exact_player_id,price_quality_sprea
 assan_ouedraogo__ger,Assan Ouedraogo,GER,MID,exact_player_id,price_quality_applied,False,False,False,0.000000,0.000000,already_equal
 assan_ouedraogo__ger,Assan Ouedraogo,GER,MID,exact_player_id,price_quality_method,not_applied,not_applied,not_applied,0.000000,0.000000,already_equal
 assan_ouedraogo__ger,Assan Ouedraogo,GER,MID,exact_player_id,base_ev_source,no_ev_source,no_ev_source,no_ev_source,0.000000,0.000000,already_equal
-florian_wirtz__ger,Florian Wirtz,GER,MID,exact_player_id,optimizer_ev,3.73694,3.73694,3.73694,0.000000,0.000000,already_equal
-florian_wirtz__ger,Florian Wirtz,GER,MID,exact_player_id,weighted_group_stage_ev,3.73694,3.73694,3.73694,0.000000,0.000000,already_equal
-florian_wirtz__ger,Florian Wirtz,GER,MID,exact_player_id,weighted_group_stage_ev_before_price_quality,3.894675,3.894675,3.894675,0.000000,0.000000,already_equal
-florian_wirtz__ger,Florian Wirtz,GER,MID,exact_player_id,price_quality_ev,3.544152,3.544152,3.544152,0.000000,0.000000,already_equal
-florian_wirtz__ger,Florian Wirtz,GER,MID,exact_player_id,model_ev_before_price_quality,3.894675,3.894675,3.894675,0.000000,0.000000,already_equal
-florian_wirtz__ger,Florian Wirtz,GER,MID,exact_player_id,optimizer_ev_before_price_quality,3.894675,3.894675,3.894675,0.000000,0.000000,already_equal
+florian_wirtz__ger,Florian Wirtz,GER,MID,exact_player_id,optimizer_ev,3.8016489177489174,3.8016489177489174,3.8016489177489174,0.000000,0.000000,already_equal
+florian_wirtz__ger,Florian Wirtz,GER,MID,exact_player_id,weighted_group_stage_ev,3.8016489177489174,3.8016489177489174,3.8016489177489174,0.000000,0.000000,already_equal
+florian_wirtz__ger,Florian Wirtz,GER,MID,exact_player_id,weighted_group_stage_ev_before_price_quality,3.894675,3.962115259740259,3.962115259740259,0.067440,0.000000,updated
+florian_wirtz__ger,Florian Wirtz,GER,MID,exact_player_id,price_quality_ev,3.544152,3.605522597402597,3.605522597402597,0.061371,0.000000,updated
+florian_wirtz__ger,Florian Wirtz,GER,MID,exact_player_id,model_ev_before_price_quality,3.894675,3.962115259740259,3.962115259740259,0.067440,0.000000,updated
+florian_wirtz__ger,Florian Wirtz,GER,MID,exact_player_id,optimizer_ev_before_price_quality,3.894675,3.962115259740259,3.962115259740259,0.067440,0.000000,updated
 florian_wirtz__ger,Florian Wirtz,GER,MID,exact_player_id,price_quality_raw_ev,3.544152,3.544152,3.544152,0.000000,0.000000,already_equal
 florian_wirtz__ger,Florian Wirtz,GER,MID,exact_player_id,price_quality_appearance_scaled_ev,3.544152,3.544152,3.544152,0.000000,0.000000,already_equal
 florian_wirtz__ger,Florian Wirtz,GER,MID,exact_player_id,price_quality_base_capped_ev,3.544152,3.544152,3.544152,0.000000,0.000000,already_equal
@@ -10681,12 +10681,12 @@ florian_wirtz__ger,Florian Wirtz,GER,MID,exact_player_id,price_quality_spread_mu
 florian_wirtz__ger,Florian Wirtz,GER,MID,exact_player_id,price_quality_applied,True,True,True,0.000000,0.000000,already_equal
 florian_wirtz__ger,Florian Wirtz,GER,MID,exact_player_id,price_quality_method,raw_for_likely_starter,raw_for_likely_starter,raw_for_likely_starter,0.000000,0.000000,already_equal
 florian_wirtz__ger,Florian Wirtz,GER,MID,exact_player_id,base_ev_source,component_weighted_sum,component_weighted_sum,component_weighted_sum,0.000000,0.000000,already_equal
-jamal_musiala__ger,Jamal Musiala,GER,MID,exact_player_id,optimizer_ev,3.43956,3.43956,3.43956,0.000000,0.000000,already_equal
-jamal_musiala__ger,Jamal Musiala,GER,MID,exact_player_id,weighted_group_stage_ev,3.43956,3.43956,3.43956,0.000000,0.000000,already_equal
-jamal_musiala__ger,Jamal Musiala,GER,MID,exact_player_id,weighted_group_stage_ev_before_price_quality,3.374365,3.374365,3.374365,0.000000,0.000000,already_equal
-jamal_musiala__ger,Jamal Musiala,GER,MID,exact_player_id,price_quality_ev,3.519243,3.519243,3.519243,0.000000,0.000000,already_equal
-jamal_musiala__ger,Jamal Musiala,GER,MID,exact_player_id,model_ev_before_price_quality,3.374365,3.374365,3.374365,0.000000,0.000000,already_equal
-jamal_musiala__ger,Jamal Musiala,GER,MID,exact_player_id,optimizer_ev_before_price_quality,3.374365,3.374365,3.374365,0.000000,0.000000,already_equal
+jamal_musiala__ger,Jamal Musiala,GER,MID,exact_player_id,optimizer_ev,3.445685663401603,3.445685663401603,3.445685663401603,0.000000,0.000000,already_equal
+jamal_musiala__ger,Jamal Musiala,GER,MID,exact_player_id,weighted_group_stage_ev,3.445685663401603,3.445685663401603,3.445685663401603,0.000000,0.000000,already_equal
+jamal_musiala__ger,Jamal Musiala,GER,MID,exact_player_id,weighted_group_stage_ev_before_price_quality,3.374365,3.380374554764025,3.380374554764025,0.006010,0.000000,updated
+jamal_musiala__ger,Jamal Musiala,GER,MID,exact_player_id,price_quality_ev,3.519243,3.5255105743544077,3.5255105743544077,0.006268,0.000000,updated
+jamal_musiala__ger,Jamal Musiala,GER,MID,exact_player_id,model_ev_before_price_quality,3.374365,3.380374554764025,3.380374554764025,0.006010,0.000000,updated
+jamal_musiala__ger,Jamal Musiala,GER,MID,exact_player_id,optimizer_ev_before_price_quality,3.374365,3.380374554764025,3.380374554764025,0.006010,0.000000,updated
 jamal_musiala__ger,Jamal Musiala,GER,MID,exact_player_id,price_quality_raw_ev,3.519243,3.519243,3.519243,0.000000,0.000000,already_equal
 jamal_musiala__ger,Jamal Musiala,GER,MID,exact_player_id,price_quality_appearance_scaled_ev,3.519243,3.519243,3.519243,0.000000,0.000000,already_equal
 jamal_musiala__ger,Jamal Musiala,GER,MID,exact_player_id,price_quality_base_capped_ev,3.519243,3.519243,3.519243,0.000000,0.000000,already_equal
@@ -12123,12 +12123,12 @@ kobbie_mainoo__eng,Kobbie Mainoo,ENG,MID,exact_player_id,price_quality_spread_mu
 kobbie_mainoo__eng,Kobbie Mainoo,ENG,MID,exact_player_id,price_quality_applied,True,True,True,0.000000,0.000000,already_equal
 kobbie_mainoo__eng,Kobbie Mainoo,ENG,MID,exact_player_id,price_quality_method,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,0.000000,0.000000,already_equal
 kobbie_mainoo__eng,Kobbie Mainoo,ENG,MID,exact_player_id,base_ev_source,component_weighted_sum,component_weighted_sum,component_weighted_sum,0.000000,0.000000,already_equal
-jude_bellingham__eng,Jude Bellingham,ENG,MID,exact_player_id,optimizer_ev,1.685269,1.685269,1.685269,0.000000,0.000000,already_equal
-jude_bellingham__eng,Jude Bellingham,ENG,MID,exact_player_id,weighted_group_stage_ev,1.685269,1.685269,1.685269,0.000000,0.000000,already_equal
-jude_bellingham__eng,Jude Bellingham,ENG,MID,exact_player_id,weighted_group_stage_ev_before_price_quality,1.437173,1.437173,1.437173,0.000000,0.000000,already_equal
-jude_bellingham__eng,Jude Bellingham,ENG,MID,exact_player_id,price_quality_ev,1.988497,1.988497,1.988497,0.000000,0.000000,already_equal
-jude_bellingham__eng,Jude Bellingham,ENG,MID,exact_player_id,model_ev_before_price_quality,1.437173,1.437173,1.437173,0.000000,0.000000,already_equal
-jude_bellingham__eng,Jude Bellingham,ENG,MID,exact_player_id,optimizer_ev_before_price_quality,1.437173,1.437173,1.437173,0.000000,0.000000,already_equal
+jude_bellingham__eng,Jude Bellingham,ENG,MID,exact_player_id,optimizer_ev,3.943885681932562,3.943885681932562,3.943885681932562,0.000000,0.000000,already_equal
+jude_bellingham__eng,Jude Bellingham,ENG,MID,exact_player_id,weighted_group_stage_ev,3.943885681932562,3.943885681932562,3.943885681932562,0.000000,0.000000,already_equal
+jude_bellingham__eng,Jude Bellingham,ENG,MID,exact_player_id,weighted_group_stage_ev_before_price_quality,1.437173,3.363288600905889,3.363288600905889,1.926116,0.000000,updated
+jude_bellingham__eng,Jude Bellingham,ENG,MID,exact_player_id,price_quality_ev,1.988497,4.653503296426774,4.653503296426774,2.665006,0.000000,updated
+jude_bellingham__eng,Jude Bellingham,ENG,MID,exact_player_id,model_ev_before_price_quality,1.437173,3.363288600905889,3.363288600905889,1.926116,0.000000,updated
+jude_bellingham__eng,Jude Bellingham,ENG,MID,exact_player_id,optimizer_ev_before_price_quality,1.437173,3.363288600905889,3.363288600905889,1.926116,0.000000,updated
 jude_bellingham__eng,Jude Bellingham,ENG,MID,exact_player_id,price_quality_raw_ev,3.502636,3.502636,3.502636,0.000000,0.000000,already_equal
 jude_bellingham__eng,Jude Bellingham,ENG,MID,exact_player_id,price_quality_appearance_scaled_ev,1.988497,1.988497,1.988497,0.000000,0.000000,already_equal
 jude_bellingham__eng,Jude Bellingham,ENG,MID,exact_player_id,price_quality_base_capped_ev,2.15576,2.15576,2.15576,0.000000,0.000000,already_equal
@@ -14097,12 +14097,12 @@ axel_witsel__bel,Axel Witsel,BEL,MID,exact_player_id,price_quality_spread_multip
 axel_witsel__bel,Axel Witsel,BEL,MID,exact_player_id,price_quality_applied,True,True,True,0.000000,0.000000,already_equal
 axel_witsel__bel,Axel Witsel,BEL,MID,exact_player_id,price_quality_method,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,0.000000,0.000000,already_equal
 axel_witsel__bel,Axel Witsel,BEL,MID,exact_player_id,base_ev_source,component_weighted_sum,component_weighted_sum,component_weighted_sum,0.000000,0.000000,already_equal
-kevin_de_bruyne__bel,Kevin De Bruyne,BEL,MID,exact_player_id,optimizer_ev,3.767868,3.767868,3.767868,0.000000,0.000000,already_equal
-kevin_de_bruyne__bel,Kevin De Bruyne,BEL,MID,exact_player_id,weighted_group_stage_ev,3.767868,3.767868,3.767868,0.000000,0.000000,already_equal
-kevin_de_bruyne__bel,Kevin De Bruyne,BEL,MID,exact_player_id,weighted_group_stage_ev_before_price_quality,3.961098,3.961098,3.961098,0.000000,0.000000,already_equal
-kevin_de_bruyne__bel,Kevin De Bruyne,BEL,MID,exact_player_id,price_quality_ev,3.531697,3.531697,3.531697,0.000000,0.000000,already_equal
-kevin_de_bruyne__bel,Kevin De Bruyne,BEL,MID,exact_player_id,model_ev_before_price_quality,3.961098,3.961098,3.961098,0.000000,0.000000,already_equal
-kevin_de_bruyne__bel,Kevin De Bruyne,BEL,MID,exact_player_id,optimizer_ev_before_price_quality,3.961098,3.961098,3.961098,0.000000,0.000000,already_equal
+kevin_de_bruyne__bel,Kevin De Bruyne,BEL,MID,exact_player_id,optimizer_ev,3.7534317241379314,3.7534317241379314,3.7534317241379314,0.000000,0.000000,already_equal
+kevin_de_bruyne__bel,Kevin De Bruyne,BEL,MID,exact_player_id,weighted_group_stage_ev,3.7534317241379314,3.7534317241379314,3.7534317241379314,0.000000,0.000000,already_equal
+kevin_de_bruyne__bel,Kevin De Bruyne,BEL,MID,exact_player_id,weighted_group_stage_ev_before_price_quality,3.961098,3.945921379310345,3.945921379310345,0.015177,0.000000,updated
+kevin_de_bruyne__bel,Kevin De Bruyne,BEL,MID,exact_player_id,price_quality_ev,3.531697,3.518165593869732,3.518165593869732,0.013531,0.000000,updated
+kevin_de_bruyne__bel,Kevin De Bruyne,BEL,MID,exact_player_id,model_ev_before_price_quality,3.961098,3.945921379310345,3.945921379310345,0.015177,0.000000,updated
+kevin_de_bruyne__bel,Kevin De Bruyne,BEL,MID,exact_player_id,optimizer_ev_before_price_quality,3.961098,3.945921379310345,3.945921379310345,0.015177,0.000000,updated
 kevin_de_bruyne__bel,Kevin De Bruyne,BEL,MID,exact_player_id,price_quality_raw_ev,3.531697,3.531697,3.531697,0.000000,0.000000,already_equal
 kevin_de_bruyne__bel,Kevin De Bruyne,BEL,MID,exact_player_id,price_quality_appearance_scaled_ev,3.531697,3.531697,3.531697,0.000000,0.000000,already_equal
 kevin_de_bruyne__bel,Kevin De Bruyne,BEL,MID,exact_player_id,price_quality_base_capped_ev,3.531697,3.531697,3.531697,0.000000,0.000000,already_equal
@@ -17135,12 +17135,12 @@ j_rgen_strand_larsen__nor,Jørgen Strand Larsen,NOR,FWD,exact_player_id,price_qu
 j_rgen_strand_larsen__nor,Jørgen Strand Larsen,NOR,FWD,exact_player_id,price_quality_applied,True,True,True,0.000000,0.000000,already_equal
 j_rgen_strand_larsen__nor,Jørgen Strand Larsen,NOR,FWD,exact_player_id,price_quality_method,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,0.000000,0.000000,already_equal
 j_rgen_strand_larsen__nor,Jørgen Strand Larsen,NOR,FWD,exact_player_id,base_ev_source,component_weighted_sum,component_weighted_sum,component_weighted_sum,0.000000,0.000000,already_equal
-erling_haaland__nor,Erling Haaland,NOR,FWD,exact_player_id,optimizer_ev,4.241624,4.241624,4.241624,0.000000,0.000000,already_equal
-erling_haaland__nor,Erling Haaland,NOR,FWD,exact_player_id,weighted_group_stage_ev,4.241624,4.241624,4.241624,0.000000,0.000000,already_equal
-erling_haaland__nor,Erling Haaland,NOR,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,3.89343,3.89343,3.89343,0.000000,0.000000,already_equal
-erling_haaland__nor,Erling Haaland,NOR,FWD,exact_player_id,price_quality_ev,4.667194,4.667194,4.667194,0.000000,0.000000,already_equal
-erling_haaland__nor,Erling Haaland,NOR,FWD,exact_player_id,model_ev_before_price_quality,3.89343,3.89343,3.89343,0.000000,0.000000,already_equal
-erling_haaland__nor,Erling Haaland,NOR,FWD,exact_player_id,optimizer_ev_before_price_quality,3.89343,3.89343,3.89343,0.000000,0.000000,already_equal
+erling_haaland__nor,Erling Haaland,NOR,FWD,exact_player_id,optimizer_ev,4.354946257451975,4.354946257451975,4.354946257451975,0.000000,0.000000,already_equal
+erling_haaland__nor,Erling Haaland,NOR,FWD,exact_player_id,weighted_group_stage_ev,4.354946257451975,4.354946257451975,4.354946257451975,0.000000,0.000000,already_equal
+erling_haaland__nor,Erling Haaland,NOR,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,3.89343,3.9974496577610945,3.9974496577610945,0.104020,0.000000,updated
+erling_haaland__nor,Erling Haaland,NOR,FWD,exact_player_id,price_quality_ev,4.667194,4.791886089644513,4.791886089644513,0.124692,0.000000,updated
+erling_haaland__nor,Erling Haaland,NOR,FWD,exact_player_id,model_ev_before_price_quality,3.89343,3.9974496577610945,3.9974496577610945,0.104020,0.000000,updated
+erling_haaland__nor,Erling Haaland,NOR,FWD,exact_player_id,optimizer_ev_before_price_quality,3.89343,3.9974496577610945,3.9974496577610945,0.104020,0.000000,updated
 erling_haaland__nor,Erling Haaland,NOR,FWD,exact_player_id,price_quality_raw_ev,4.667194,4.667194,4.667194,0.000000,0.000000,already_equal
 erling_haaland__nor,Erling Haaland,NOR,FWD,exact_player_id,price_quality_appearance_scaled_ev,4.667194,4.667194,4.667194,0.000000,0.000000,already_equal
 erling_haaland__nor,Erling Haaland,NOR,FWD,exact_player_id,price_quality_base_capped_ev,4.667194,4.667194,4.667194,0.000000,0.000000,already_equal
@@ -18255,12 +18255,12 @@ romelu_lukaku__bel,Romelu Lukaku,BEL,FWD,exact_player_id,price_quality_spread_mu
 romelu_lukaku__bel,Romelu Lukaku,BEL,FWD,exact_player_id,price_quality_applied,True,True,True,0.000000,0.000000,already_equal
 romelu_lukaku__bel,Romelu Lukaku,BEL,FWD,exact_player_id,price_quality_method,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,0.000000,0.000000,already_equal
 romelu_lukaku__bel,Romelu Lukaku,BEL,FWD,exact_player_id,base_ev_source,component_weighted_sum,component_weighted_sum,component_weighted_sum,0.000000,0.000000,already_equal
-charles_de_ketelaere__bel,Charles De Ketelaere,BEL,FWD,exact_player_id,optimizer_ev,1.934602,1.934602,1.934602,0.000000,0.000000,already_equal
-charles_de_ketelaere__bel,Charles De Ketelaere,BEL,FWD,exact_player_id,weighted_group_stage_ev,1.934602,1.934602,1.934602,0.000000,0.000000,already_equal
-charles_de_ketelaere__bel,Charles De Ketelaere,BEL,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,1.579267,1.579267,1.579267,0.000000,0.000000,already_equal
-charles_de_ketelaere__bel,Charles De Ketelaere,BEL,FWD,exact_player_id,price_quality_ev,2.368901,2.368901,2.368901,0.000000,0.000000,already_equal
-charles_de_ketelaere__bel,Charles De Ketelaere,BEL,FWD,exact_player_id,model_ev_before_price_quality,1.579267,1.579267,1.579267,0.000000,0.000000,already_equal
-charles_de_ketelaere__bel,Charles De Ketelaere,BEL,FWD,exact_player_id,optimizer_ev_before_price_quality,1.579267,1.579267,1.579267,0.000000,0.000000,already_equal
+charles_de_ketelaere__bel,Charles De Ketelaere,BEL,FWD,exact_player_id,optimizer_ev,2.848578990842162,2.848578990842162,2.848578990842162,0.000000,0.000000,already_equal
+charles_de_ketelaere__bel,Charles De Ketelaere,BEL,FWD,exact_player_id,weighted_group_stage_ev,2.848578990842162,2.848578990842162,2.848578990842162,0.000000,0.000000,already_equal
+charles_de_ketelaere__bel,Charles De Ketelaere,BEL,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,1.579267,2.325370694918298,2.325370694918298,0.746104,0.000000,updated
+charles_de_ketelaere__bel,Charles De Ketelaere,BEL,FWD,exact_player_id,price_quality_ev,2.368901,3.4880567785957983,3.4880567785957983,1.119156,0.000000,updated
+charles_de_ketelaere__bel,Charles De Ketelaere,BEL,FWD,exact_player_id,model_ev_before_price_quality,1.579267,2.325370694918298,2.325370694918298,0.746104,0.000000,updated
+charles_de_ketelaere__bel,Charles De Ketelaere,BEL,FWD,exact_player_id,optimizer_ev_before_price_quality,1.579267,2.325370694918298,2.325370694918298,0.746104,0.000000,updated
 charles_de_ketelaere__bel,Charles De Ketelaere,BEL,FWD,exact_player_id,price_quality_raw_ev,4.426588,4.426588,4.426588,0.000000,0.000000,already_equal
 charles_de_ketelaere__bel,Charles De Ketelaere,BEL,FWD,exact_player_id,price_quality_appearance_scaled_ev,3.521667,3.521667,3.521667,0.000000,0.000000,already_equal
 charles_de_ketelaere__bel,Charles De Ketelaere,BEL,FWD,exact_player_id,price_quality_base_capped_ev,2.368901,2.368901,2.368901,0.000000,0.000000,already_equal
@@ -18269,12 +18269,12 @@ charles_de_ketelaere__bel,Charles De Ketelaere,BEL,FWD,exact_player_id,price_qua
 charles_de_ketelaere__bel,Charles De Ketelaere,BEL,FWD,exact_player_id,price_quality_applied,True,True,True,0.000000,0.000000,already_equal
 charles_de_ketelaere__bel,Charles De Ketelaere,BEL,FWD,exact_player_id,price_quality_method,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,0.000000,0.000000,already_equal
 charles_de_ketelaere__bel,Charles De Ketelaere,BEL,FWD,exact_player_id,base_ev_source,component_weighted_sum,component_weighted_sum,component_weighted_sum,0.000000,0.000000,already_equal
-jeremy_doku__bel,Jeremy Doku,BEL,FWD,exact_player_id,optimizer_ev,4.036909,4.036909,4.036909,0.000000,0.000000,already_equal
-jeremy_doku__bel,Jeremy Doku,BEL,FWD,exact_player_id,weighted_group_stage_ev,4.036909,4.036909,4.036909,0.000000,0.000000,already_equal
-jeremy_doku__bel,Jeremy Doku,BEL,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,3.87899,3.87899,3.87899,0.000000,0.000000,already_equal
-jeremy_doku__bel,Jeremy Doku,BEL,FWD,exact_player_id,price_quality_ev,4.229922,4.229922,4.229922,0.000000,0.000000,already_equal
-jeremy_doku__bel,Jeremy Doku,BEL,FWD,exact_player_id,model_ev_before_price_quality,3.87899,3.87899,3.87899,0.000000,0.000000,already_equal
-jeremy_doku__bel,Jeremy Doku,BEL,FWD,exact_player_id,optimizer_ev_before_price_quality,3.87899,3.87899,3.87899,0.000000,0.000000,already_equal
+jeremy_doku__bel,Jeremy Doku,BEL,FWD,exact_player_id,optimizer_ev,5.294710599359463,5.294710599359463,5.294710599359463,0.000000,0.000000,already_equal
+jeremy_doku__bel,Jeremy Doku,BEL,FWD,exact_player_id,weighted_group_stage_ev,5.294710599359463,5.294710599359463,5.294710599359463,0.000000,0.000000,already_equal
+jeremy_doku__bel,Jeremy Doku,BEL,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,3.87899,5.0875879213054755,5.0875879213054755,1.208598,0.000000,updated
+jeremy_doku__bel,Jeremy Doku,BEL,FWD,exact_player_id,price_quality_ev,4.229922,5.547861705048041,5.547861705048041,1.317940,0.000000,updated
+jeremy_doku__bel,Jeremy Doku,BEL,FWD,exact_player_id,model_ev_before_price_quality,3.87899,5.0875879213054755,5.0875879213054755,1.208598,0.000000,updated
+jeremy_doku__bel,Jeremy Doku,BEL,FWD,exact_player_id,optimizer_ev_before_price_quality,3.87899,5.0875879213054755,5.0875879213054755,1.208598,0.000000,updated
 jeremy_doku__bel,Jeremy Doku,BEL,FWD,exact_player_id,price_quality_raw_ev,4.515701,4.515701,4.515701,0.000000,0.000000,already_equal
 jeremy_doku__bel,Jeremy Doku,BEL,FWD,exact_player_id,price_quality_appearance_scaled_ev,4.229922,4.229922,4.229922,0.000000,0.000000,already_equal
 jeremy_doku__bel,Jeremy Doku,BEL,FWD,exact_player_id,price_quality_base_capped_ev,4.515701,4.515701,4.515701,0.000000,0.000000,already_equal
@@ -18745,12 +18745,12 @@ folarin_balogun__usa,Folarin Balogun,USA,FWD,exact_player_id,price_quality_sprea
 folarin_balogun__usa,Folarin Balogun,USA,FWD,exact_player_id,price_quality_applied,True,True,True,0.000000,0.000000,already_equal
 folarin_balogun__usa,Folarin Balogun,USA,FWD,exact_player_id,price_quality_method,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,0.000000,0.000000,already_equal
 folarin_balogun__usa,Folarin Balogun,USA,FWD,exact_player_id,base_ev_source,component_weighted_sum,component_weighted_sum,component_weighted_sum,0.000000,0.000000,already_equal
-darwin_nunez__uru,Darwin Nunez,URU,FWD,exact_player_id,optimizer_ev,0.471063,0.471063,0.471063,0.000000,0.000000,already_equal
-darwin_nunez__uru,Darwin Nunez,URU,FWD,exact_player_id,weighted_group_stage_ev,0.471063,0.471063,0.471063,0.000000,0.000000,already_equal
-darwin_nunez__uru,Darwin Nunez,URU,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,0.384541,0.384541,0.384541,0.000000,0.000000,already_equal
-darwin_nunez__uru,Darwin Nunez,URU,FWD,exact_player_id,price_quality_ev,0.576812,0.576812,0.576812,0.000000,0.000000,already_equal
-darwin_nunez__uru,Darwin Nunez,URU,FWD,exact_player_id,model_ev_before_price_quality,0.384541,0.384541,0.384541,0.000000,0.000000,already_equal
-darwin_nunez__uru,Darwin Nunez,URU,FWD,exact_player_id,optimizer_ev_before_price_quality,0.384541,0.384541,0.384541,0.000000,0.000000,already_equal
+darwin_nunez__uru,Darwin Nunez,URU,FWD,exact_player_id,optimizer_ev,1.049191192103265,1.049191192103265,1.049191192103265,0.000000,0.000000,already_equal
+darwin_nunez__uru,Darwin Nunez,URU,FWD,exact_player_id,weighted_group_stage_ev,1.049191192103265,1.049191192103265,1.049191192103265,0.000000,0.000000,already_equal
+darwin_nunez__uru,Darwin Nunez,URU,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,0.384541,0.856482105796001,0.856482105796001,0.471941,0.000000,updated
+darwin_nunez__uru,Darwin Nunez,URU,FWD,exact_player_id,price_quality_ev,0.576812,1.2847242723361174,1.2847242723361174,0.707912,0.000000,updated
+darwin_nunez__uru,Darwin Nunez,URU,FWD,exact_player_id,model_ev_before_price_quality,0.384541,0.856482105796001,0.856482105796001,0.471941,0.000000,updated
+darwin_nunez__uru,Darwin Nunez,URU,FWD,exact_player_id,optimizer_ev_before_price_quality,0.384541,0.856482105796001,0.856482105796001,0.471941,0.000000,updated
 darwin_nunez__uru,Darwin Nunez,URU,FWD,exact_player_id,price_quality_raw_ev,4.426588,4.426588,4.426588,0.000000,0.000000,already_equal
 darwin_nunez__uru,Darwin Nunez,URU,FWD,exact_player_id,price_quality_appearance_scaled_ev,2.498493,2.498493,2.498493,0.000000,0.000000,already_equal
 darwin_nunez__uru,Darwin Nunez,URU,FWD,exact_player_id,price_quality_base_capped_ev,0.576812,0.576812,0.576812,0.000000,0.000000,already_equal
@@ -19263,12 +19263,12 @@ cho_gue_sung__kor,Gue-sung Cho,KOR,FWD,exact_player_id,price_quality_spread_mult
 cho_gue_sung__kor,Gue-sung Cho,KOR,FWD,exact_player_id,price_quality_applied,True,True,True,0.000000,0.000000,already_equal
 cho_gue_sung__kor,Gue-sung Cho,KOR,FWD,exact_player_id,price_quality_method,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,0.000000,0.000000,already_equal
 cho_gue_sung__kor,Gue-sung Cho,KOR,FWD,exact_player_id,base_ev_source,component_weighted_sum,component_weighted_sum,component_weighted_sum,0.000000,0.000000,already_equal
-son_heung_min__kor,Heung-Min Son,KOR,FWD,exact_player_id,optimizer_ev,2.555545,2.555545,2.555545,0.000000,0.000000,already_equal
-son_heung_min__kor,Heung-Min Son,KOR,FWD,exact_player_id,weighted_group_stage_ev,2.555545,2.555545,2.555545,0.000000,0.000000,already_equal
-son_heung_min__kor,Heung-Min Son,KOR,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,2.086159,2.086159,2.086159,0.000000,0.000000,already_equal
-son_heung_min__kor,Heung-Min Son,KOR,FWD,exact_player_id,price_quality_ev,3.129238,3.129238,3.129238,0.000000,0.000000,already_equal
-son_heung_min__kor,Heung-Min Son,KOR,FWD,exact_player_id,model_ev_before_price_quality,2.086159,2.086159,2.086159,0.000000,0.000000,already_equal
-son_heung_min__kor,Heung-Min Son,KOR,FWD,exact_player_id,optimizer_ev_before_price_quality,2.086159,2.086159,2.086159,0.000000,0.000000,already_equal
+son_heung_min__kor,Heung-Min Son,KOR,FWD,exact_player_id,optimizer_ev,3.6043253104399815,3.6043253104399815,3.6043253104399815,0.000000,0.000000,already_equal
+son_heung_min__kor,Heung-Min Son,KOR,FWD,exact_player_id,weighted_group_stage_ev,3.6043253104399815,3.6043253104399815,3.6043253104399815,0.000000,0.000000,already_equal
+son_heung_min__kor,Heung-Min Son,KOR,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,2.086159,2.942306116817415,2.942306116817415,0.856147,0.000000,updated
+son_heung_min__kor,Heung-Min Son,KOR,FWD,exact_player_id,price_quality_ev,3.129238,4.413458470029128,4.413458470029128,1.284220,0.000000,updated
+son_heung_min__kor,Heung-Min Son,KOR,FWD,exact_player_id,model_ev_before_price_quality,2.086159,2.942306116817415,2.942306116817415,0.856147,0.000000,updated
+son_heung_min__kor,Heung-Min Son,KOR,FWD,exact_player_id,optimizer_ev_before_price_quality,2.086159,2.942306116817415,2.942306116817415,0.856147,0.000000,updated
 son_heung_min__kor,Heung-Min Son,KOR,FWD,exact_player_id,price_quality_raw_ev,4.426588,4.426588,4.426588,0.000000,0.000000,already_equal
 son_heung_min__kor,Heung-Min Son,KOR,FWD,exact_player_id,price_quality_appearance_scaled_ev,4.124947,4.124947,4.124947,0.000000,0.000000,already_equal
 son_heung_min__kor,Heung-Min Son,KOR,FWD,exact_player_id,price_quality_base_capped_ev,3.129238,3.129238,3.129238,0.000000,0.000000,already_equal
@@ -19585,12 +19585,12 @@ jarrod_bowen__eng,Jarrod Bowen,ENG,FWD,exact_player_id,price_quality_spread_mult
 jarrod_bowen__eng,Jarrod Bowen,ENG,FWD,exact_player_id,price_quality_applied,False,False,False,0.000000,0.000000,already_equal
 jarrod_bowen__eng,Jarrod Bowen,ENG,FWD,exact_player_id,price_quality_method,not_applied,not_applied,not_applied,0.000000,0.000000,already_equal
 jarrod_bowen__eng,Jarrod Bowen,ENG,FWD,exact_player_id,base_ev_source,out_of_tournament_manual,out_of_tournament_manual,out_of_tournament_manual,0.000000,0.000000,already_equal
-bukayo_saka__eng,Bukayo Saka,ENG,FWD,exact_player_id,optimizer_ev,3.419006,3.419006,3.419006,0.000000,0.000000,already_equal
-bukayo_saka__eng,Bukayo Saka,ENG,FWD,exact_player_id,weighted_group_stage_ev,3.419006,3.419006,3.419006,0.000000,0.000000,already_equal
-bukayo_saka__eng,Bukayo Saka,ENG,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,2.843673,2.843673,2.843673,0.000000,0.000000,already_equal
-bukayo_saka__eng,Bukayo Saka,ENG,FWD,exact_player_id,price_quality_ev,4.12219,4.12219,4.12219,0.000000,0.000000,already_equal
-bukayo_saka__eng,Bukayo Saka,ENG,FWD,exact_player_id,model_ev_before_price_quality,2.843673,2.843673,2.843673,0.000000,0.000000,already_equal
-bukayo_saka__eng,Bukayo Saka,ENG,FWD,exact_player_id,optimizer_ev_before_price_quality,2.843673,2.843673,2.843673,0.000000,0.000000,already_equal
+bukayo_saka__eng,Bukayo Saka,ENG,FWD,exact_player_id,optimizer_ev,4.815501408450704,4.815501408450704,4.815501408450704,0.000000,0.000000,already_equal
+bukayo_saka__eng,Bukayo Saka,ENG,FWD,exact_player_id,weighted_group_stage_ev,4.815501408450704,4.815501408450704,4.815501408450704,0.000000,0.000000,already_equal
+bukayo_saka__eng,Bukayo Saka,ENG,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,2.843673,4.005173239436619,4.005173239436619,1.161500,0.000000,updated
+bukayo_saka__eng,Bukayo Saka,ENG,FWD,exact_player_id,price_quality_ev,4.12219,5.805901408450704,5.805901408450704,1.683711,0.000000,updated
+bukayo_saka__eng,Bukayo Saka,ENG,FWD,exact_player_id,model_ev_before_price_quality,2.843673,4.005173239436619,4.005173239436619,1.161500,0.000000,updated
+bukayo_saka__eng,Bukayo Saka,ENG,FWD,exact_player_id,optimizer_ev_before_price_quality,2.843673,4.005173239436619,4.005173239436619,1.161500,0.000000,updated
 bukayo_saka__eng,Bukayo Saka,ENG,FWD,exact_player_id,price_quality_raw_ev,4.515701,4.515701,4.515701,0.000000,0.000000,already_equal
 bukayo_saka__eng,Bukayo Saka,ENG,FWD,exact_player_id,price_quality_appearance_scaled_ev,4.12219,4.12219,4.12219,0.000000,0.000000,already_equal
 bukayo_saka__eng,Bukayo Saka,ENG,FWD,exact_player_id,price_quality_base_capped_ev,4.26551,4.26551,4.26551,0.000000,0.000000,already_equal
@@ -19865,12 +19865,12 @@ joao_pedro__bra,João Pedro,BRA,FWD,exact_player_id,price_quality_spread_multipl
 joao_pedro__bra,João Pedro,BRA,FWD,exact_player_id,price_quality_applied,False,False,False,0.000000,0.000000,already_equal
 joao_pedro__bra,João Pedro,BRA,FWD,exact_player_id,price_quality_method,not_applied,not_applied,not_applied,0.000000,0.000000,already_equal
 joao_pedro__bra,João Pedro,BRA,FWD,exact_player_id,base_ev_source,out_of_tournament_manual,out_of_tournament_manual,out_of_tournament_manual,0.000000,0.000000,already_equal
-raphinha__bra,Raphinha,BRA,FWD,exact_player_id,optimizer_ev,2.338525,2.338525,2.338525,0.000000,0.000000,already_equal
-raphinha__bra,Raphinha,BRA,FWD,exact_player_id,weighted_group_stage_ev,2.338525,2.338525,2.338525,0.000000,0.000000,already_equal
-raphinha__bra,Raphinha,BRA,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,0.557199,0.557199,0.557199,0.000000,0.000000,already_equal
-raphinha__bra,Raphinha,BRA,FWD,exact_player_id,price_quality_ev,4.515701,4.515701,4.515701,0.000000,0.000000,already_equal
-raphinha__bra,Raphinha,BRA,FWD,exact_player_id,model_ev_before_price_quality,0.557199,0.557199,0.557199,0.000000,0.000000,already_equal
-raphinha__bra,Raphinha,BRA,FWD,exact_player_id,optimizer_ev_before_price_quality,0.557199,0.557199,0.557199,0.000000,0.000000,already_equal
+raphinha__bra,Raphinha,BRA,FWD,exact_player_id,optimizer_ev,2.392909302325582,2.392909302325582,2.392909302325582,0.000000,0.000000,already_equal
+raphinha__bra,Raphinha,BRA,FWD,exact_player_id,weighted_group_stage_ev,2.392909302325582,2.392909302325582,2.392909302325582,0.000000,0.000000,already_equal
+raphinha__bra,Raphinha,BRA,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,0.557199,0.5701571162790698,0.5701571162790698,0.012958,0.000000,updated
+raphinha__bra,Raphinha,BRA,FWD,exact_player_id,price_quality_ev,4.515701,4.620717302325581,4.620717302325581,0.105016,0.000000,updated
+raphinha__bra,Raphinha,BRA,FWD,exact_player_id,model_ev_before_price_quality,0.557199,0.5701571162790698,0.5701571162790698,0.012958,0.000000,updated
+raphinha__bra,Raphinha,BRA,FWD,exact_player_id,optimizer_ev_before_price_quality,0.557199,0.5701571162790698,0.5701571162790698,0.012958,0.000000,updated
 raphinha__bra,Raphinha,BRA,FWD,exact_player_id,price_quality_raw_ev,4.515701,4.515701,4.515701,0.000000,0.000000,already_equal
 raphinha__bra,Raphinha,BRA,FWD,exact_player_id,price_quality_appearance_scaled_ev,4.515701,4.515701,4.515701,0.000000,0.000000,already_equal
 raphinha__bra,Raphinha,BRA,FWD,exact_player_id,price_quality_base_capped_ev,0.835798,0.835798,0.835798,0.000000,0.000000,already_equal
@@ -19879,12 +19879,12 @@ raphinha__bra,Raphinha,BRA,FWD,exact_player_id,price_quality_spread_multiplier,1
 raphinha__bra,Raphinha,BRA,FWD,exact_player_id,price_quality_applied,True,True,True,0.000000,0.000000,already_equal
 raphinha__bra,Raphinha,BRA,FWD,exact_player_id,price_quality_method,raw_for_likely_starter,raw_for_likely_starter,raw_for_likely_starter,0.000000,0.000000,already_equal
 raphinha__bra,Raphinha,BRA,FWD,exact_player_id,base_ev_source,component_weighted_sum,component_weighted_sum,component_weighted_sum,0.000000,0.000000,already_equal
-neymar_jr__bra,Neymar Jr.,BRA,FWD,exact_player_id,optimizer_ev,0.12349775759614307,0.123497757596143,0.123497757596143,0.000000,0.000000,already_equal
-neymar_jr__bra,Neymar Jr.,BRA,FWD,exact_player_id,weighted_group_stage_ev,0.12349775759614307,0.123497757596143,0.123497757596143,0.000000,0.000000,already_equal
-neymar_jr__bra,Neymar Jr.,BRA,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,0.02845408678102926,0.0284540867810292,0.0284540867810292,0.000000,0.000000,already_equal
-neymar_jr__bra,Neymar Jr.,BRA,FWD,exact_player_id,price_quality_ev,0.23966223791904923,0.2396622379190492,0.2396622379190492,0.000000,0.000000,already_equal
-neymar_jr__bra,Neymar Jr.,BRA,FWD,exact_player_id,model_ev_before_price_quality,0.02845408678102926,0.0284540867810292,0.0284540867810292,0.000000,0.000000,already_equal
-neymar_jr__bra,Neymar Jr.,BRA,FWD,exact_player_id,optimizer_ev_before_price_quality,0.02845408678102926,0.0284540867810292,0.0284540867810292,0.000000,0.000000,already_equal
+neymar_jr__bra,Neymar Jr.,BRA,FWD,exact_player_id,optimizer_ev,0.123497757596143,0.123497757596143,0.123497757596143,0.000000,0.000000,already_equal
+neymar_jr__bra,Neymar Jr.,BRA,FWD,exact_player_id,weighted_group_stage_ev,0.123497757596143,0.123497757596143,0.123497757596143,0.000000,0.000000,already_equal
+neymar_jr__bra,Neymar Jr.,BRA,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,0.0284540867810292,0.0284540867810292,0.0284540867810292,0.000000,0.000000,already_equal
+neymar_jr__bra,Neymar Jr.,BRA,FWD,exact_player_id,price_quality_ev,0.2396622379190492,0.2396622379190492,0.2396622379190492,0.000000,0.000000,already_equal
+neymar_jr__bra,Neymar Jr.,BRA,FWD,exact_player_id,model_ev_before_price_quality,0.0284540867810292,0.0284540867810292,0.0284540867810292,0.000000,0.000000,already_equal
+neymar_jr__bra,Neymar Jr.,BRA,FWD,exact_player_id,optimizer_ev_before_price_quality,0.0284540867810292,0.0284540867810292,0.0284540867810292,0.000000,0.000000,already_equal
 neymar_jr__bra,Neymar Jr.,BRA,FWD,exact_player_id,price_quality_raw_ev,4.275095,4.275095,4.275095,0.000000,0.000000,already_equal
 neymar_jr__bra,Neymar Jr.,BRA,FWD,exact_player_id,price_quality_appearance_scaled_ev,4.275095,4.275095,4.275095,0.000000,0.000000,already_equal
 neymar_jr__bra,Neymar Jr.,BRA,FWD,exact_player_id,price_quality_base_capped_ev,0.761346,0.761346,0.761346,0.000000,0.000000,already_equal
@@ -19907,12 +19907,12 @@ gabriel_martinelli__bra,Gabriel Martinelli,BRA,FWD,exact_player_id,price_quality
 gabriel_martinelli__bra,Gabriel Martinelli,BRA,FWD,exact_player_id,price_quality_applied,True,True,True,0.000000,0.000000,already_equal
 gabriel_martinelli__bra,Gabriel Martinelli,BRA,FWD,exact_player_id,price_quality_method,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,0.000000,0.000000,already_equal
 gabriel_martinelli__bra,Gabriel Martinelli,BRA,FWD,exact_player_id,base_ev_source,component_weighted_sum,component_weighted_sum,component_weighted_sum,0.000000,0.000000,already_equal
-vinicius_j_nior__bra,Vinicius Junior,BRA,FWD,exact_player_id,optimizer_ev,5.675734,5.675734,5.675734,0.000000,0.000000,already_equal
-vinicius_j_nior__bra,Vinicius Junior,BRA,FWD,exact_player_id,weighted_group_stage_ev,5.675734,5.675734,5.675734,0.000000,0.000000,already_equal
-vinicius_j_nior__bra,Vinicius Junior,BRA,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,6.551941,6.551941,6.551941,0.000000,0.000000,already_equal
-vinicius_j_nior__bra,Vinicius Junior,BRA,FWD,exact_player_id,price_quality_ev,4.604815,4.604815,4.604815,0.000000,0.000000,already_equal
-vinicius_j_nior__bra,Vinicius Junior,BRA,FWD,exact_player_id,model_ev_before_price_quality,6.551941,6.551941,6.551941,0.000000,0.000000,already_equal
-vinicius_j_nior__bra,Vinicius Junior,BRA,FWD,exact_player_id,optimizer_ev_before_price_quality,6.551941,6.551941,6.551941,0.000000,0.000000,already_equal
+vinicius_j_nior__bra,Vinicius Junior,BRA,FWD,exact_player_id,optimizer_ev,5.856522296994169,5.856522296994169,5.856522296994169,0.000000,0.000000,already_equal
+vinicius_j_nior__bra,Vinicius Junior,BRA,FWD,exact_player_id,weighted_group_stage_ev,5.856522296994169,5.856522296994169,5.856522296994169,0.000000,0.000000,already_equal
+vinicius_j_nior__bra,Vinicius Junior,BRA,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,6.551941,6.760638986092419,6.760638986092419,0.208698,0.000000,updated
+vinicius_j_nior__bra,Vinicius Junior,BRA,FWD,exact_player_id,price_quality_ev,4.604815,4.751491475998207,4.751491475998207,0.146676,0.000000,updated
+vinicius_j_nior__bra,Vinicius Junior,BRA,FWD,exact_player_id,model_ev_before_price_quality,6.551941,6.760638986092419,6.760638986092419,0.208698,0.000000,updated
+vinicius_j_nior__bra,Vinicius Junior,BRA,FWD,exact_player_id,optimizer_ev_before_price_quality,6.551941,6.760638986092419,6.760638986092419,0.208698,0.000000,updated
 vinicius_j_nior__bra,Vinicius Junior,BRA,FWD,exact_player_id,price_quality_raw_ev,4.604815,4.604815,4.604815,0.000000,0.000000,already_equal
 vinicius_j_nior__bra,Vinicius Junior,BRA,FWD,exact_player_id,price_quality_appearance_scaled_ev,4.604815,4.604815,4.604815,0.000000,0.000000,already_equal
 vinicius_j_nior__bra,Vinicius Junior,BRA,FWD,exact_player_id,price_quality_base_capped_ev,4.604815,4.604815,4.604815,0.000000,0.000000,already_equal
@@ -20117,12 +20117,12 @@ nico_gonzalez__arg,Nico Gonzalez,ARG,FWD,exact_player_id,price_quality_spread_mu
 nico_gonzalez__arg,Nico Gonzalez,ARG,FWD,exact_player_id,price_quality_applied,True,True,True,0.000000,0.000000,already_equal
 nico_gonzalez__arg,Nico Gonzalez,ARG,FWD,exact_player_id,price_quality_method,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,0.000000,0.000000,already_equal
 nico_gonzalez__arg,Nico Gonzalez,ARG,FWD,exact_player_id,base_ev_source,component_weighted_sum,component_weighted_sum,component_weighted_sum,0.000000,0.000000,already_equal
-lautaro_mart_nez__arg,Lautaro Martinez,ARG,FWD,exact_player_id,optimizer_ev,4.935886,4.935886,4.935886,0.000000,0.000000,already_equal
-lautaro_mart_nez__arg,Lautaro Martinez,ARG,FWD,exact_player_id,weighted_group_stage_ev,4.935886,4.935886,4.935886,0.000000,0.000000,already_equal
-lautaro_mart_nez__arg,Lautaro Martinez,ARG,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,5.567035,5.567035,5.567035,0.000000,0.000000,already_equal
-lautaro_mart_nez__arg,Lautaro Martinez,ARG,FWD,exact_player_id,price_quality_ev,4.164482,4.164482,4.164482,0.000000,0.000000,already_equal
-lautaro_mart_nez__arg,Lautaro Martinez,ARG,FWD,exact_player_id,model_ev_before_price_quality,5.567035,5.567035,5.567035,0.000000,0.000000,already_equal
-lautaro_mart_nez__arg,Lautaro Martinez,ARG,FWD,exact_player_id,optimizer_ev_before_price_quality,5.567035,5.567035,5.567035,0.000000,0.000000,already_equal
+lautaro_mart_nez__arg,Lautaro Martinez,ARG,FWD,exact_player_id,optimizer_ev,6.914326138172557,6.914326138172557,6.914326138172557,0.000000,0.000000,already_equal
+lautaro_mart_nez__arg,Lautaro Martinez,ARG,FWD,exact_player_id,weighted_group_stage_ev,6.914326138172557,6.914326138172557,6.914326138172557,0.000000,0.000000,already_equal
+lautaro_mart_nez__arg,Lautaro Martinez,ARG,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,5.567035,7.79845717924228,7.79845717924228,2.231422,0.000000,updated
+lautaro_mart_nez__arg,Lautaro Martinez,ARG,FWD,exact_player_id,price_quality_ev,4.164482,5.83372199936326,5.83372199936326,1.669240,0.000000,updated
+lautaro_mart_nez__arg,Lautaro Martinez,ARG,FWD,exact_player_id,model_ev_before_price_quality,5.567035,7.79845717924228,7.79845717924228,2.231422,0.000000,updated
+lautaro_mart_nez__arg,Lautaro Martinez,ARG,FWD,exact_player_id,optimizer_ev_before_price_quality,5.567035,7.79845717924228,7.79845717924228,2.231422,0.000000,updated
 lautaro_mart_nez__arg,Lautaro Martinez,ARG,FWD,exact_player_id,price_quality_raw_ev,4.64046,4.64046,4.64046,0.000000,0.000000,already_equal
 lautaro_mart_nez__arg,Lautaro Martinez,ARG,FWD,exact_player_id,price_quality_appearance_scaled_ev,4.164482,4.164482,4.164482,0.000000,0.000000,already_equal
 lautaro_mart_nez__arg,Lautaro Martinez,ARG,FWD,exact_player_id,price_quality_base_capped_ev,4.64046,4.64046,4.64046,0.000000,0.000000,already_equal
@@ -20131,12 +20131,12 @@ lautaro_mart_nez__arg,Lautaro Martinez,ARG,FWD,exact_player_id,price_quality_spr
 lautaro_mart_nez__arg,Lautaro Martinez,ARG,FWD,exact_player_id,price_quality_applied,True,True,True,0.000000,0.000000,already_equal
 lautaro_mart_nez__arg,Lautaro Martinez,ARG,FWD,exact_player_id,price_quality_method,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,0.000000,0.000000,already_equal
 lautaro_mart_nez__arg,Lautaro Martinez,ARG,FWD,exact_player_id,base_ev_source,component_weighted_sum,component_weighted_sum,component_weighted_sum,0.000000,0.000000,already_equal
-lionel_messi__arg,Lionel Messi,ARG,FWD,exact_player_id,optimizer_ev,5.684437,5.684437,5.684437,0.000000,0.000000,already_equal
-lionel_messi__arg,Lionel Messi,ARG,FWD,exact_player_id,weighted_group_stage_ev,5.684437,5.684437,5.684437,0.000000,0.000000,already_equal
-lionel_messi__arg,Lionel Messi,ARG,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,6.538599,6.538599,6.538599,0.000000,0.000000,already_equal
-lionel_messi__arg,Lionel Messi,ARG,FWD,exact_player_id,price_quality_ev,4.64046,4.64046,4.64046,0.000000,0.000000,already_equal
-lionel_messi__arg,Lionel Messi,ARG,FWD,exact_player_id,model_ev_before_price_quality,6.538599,6.538599,6.538599,0.000000,0.000000,already_equal
-lionel_messi__arg,Lionel Messi,ARG,FWD,exact_player_id,optimizer_ev_before_price_quality,6.538599,6.538599,6.538599,0.000000,0.000000,already_equal
+lionel_messi__arg,Lionel Messi,ARG,FWD,exact_player_id,optimizer_ev,6.2934838214285715,6.2934838214285715,6.2934838214285715,0.000000,0.000000,already_equal
+lionel_messi__arg,Lionel Messi,ARG,FWD,exact_player_id,weighted_group_stage_ev,6.2934838214285715,6.2934838214285715,6.2934838214285715,0.000000,0.000000,already_equal
+lionel_messi__arg,Lionel Messi,ARG,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,6.538599,7.239163178571428,7.239163178571428,0.700564,0.000000,updated
+lionel_messi__arg,Lionel Messi,ARG,FWD,exact_player_id,price_quality_ev,4.64046,5.137652142857143,5.137652142857143,0.497192,0.000000,updated
+lionel_messi__arg,Lionel Messi,ARG,FWD,exact_player_id,model_ev_before_price_quality,6.538599,7.239163178571428,7.239163178571428,0.700564,0.000000,updated
+lionel_messi__arg,Lionel Messi,ARG,FWD,exact_player_id,optimizer_ev_before_price_quality,6.538599,7.239163178571428,7.239163178571428,0.700564,0.000000,updated
 lionel_messi__arg,Lionel Messi,ARG,FWD,exact_player_id,price_quality_raw_ev,4.64046,4.64046,4.64046,0.000000,0.000000,already_equal
 lionel_messi__arg,Lionel Messi,ARG,FWD,exact_player_id,price_quality_appearance_scaled_ev,4.64046,4.64046,4.64046,0.000000,0.000000,already_equal
 lionel_messi__arg,Lionel Messi,ARG,FWD,exact_player_id,price_quality_base_capped_ev,4.64046,4.64046,4.64046,0.000000,0.000000,already_equal
@@ -20355,12 +20355,12 @@ borja_iglesias__esp,Borja Iglesias,ESP,FWD,exact_player_id,price_quality_spread_
 borja_iglesias__esp,Borja Iglesias,ESP,FWD,exact_player_id,price_quality_applied,True,True,True,0.000000,0.000000,already_equal
 borja_iglesias__esp,Borja Iglesias,ESP,FWD,exact_player_id,price_quality_method,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,0.000000,0.000000,already_equal
 borja_iglesias__esp,Borja Iglesias,ESP,FWD,exact_player_id,base_ev_source,component_weighted_sum,component_weighted_sum,component_weighted_sum,0.000000,0.000000,already_equal
-mikel_oyarzabal__esp,Mikel Oyarzabal,ESP,FWD,exact_player_id,optimizer_ev,4.909533,4.909533,4.909533,0.000000,0.000000,already_equal
-mikel_oyarzabal__esp,Mikel Oyarzabal,ESP,FWD,exact_player_id,weighted_group_stage_ev,4.909533,4.909533,4.909533,0.000000,0.000000,already_equal
-mikel_oyarzabal__esp,Mikel Oyarzabal,ESP,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,5.158848,5.158848,5.158848,0.000000,0.000000,already_equal
-mikel_oyarzabal__esp,Mikel Oyarzabal,ESP,FWD,exact_player_id,price_quality_ev,4.604815,4.604815,4.604815,0.000000,0.000000,already_equal
-mikel_oyarzabal__esp,Mikel Oyarzabal,ESP,FWD,exact_player_id,model_ev_before_price_quality,5.158848,5.158848,5.158848,0.000000,0.000000,already_equal
-mikel_oyarzabal__esp,Mikel Oyarzabal,ESP,FWD,exact_player_id,optimizer_ev_before_price_quality,5.158848,5.158848,5.158848,0.000000,0.000000,already_equal
+mikel_oyarzabal__esp,Mikel Oyarzabal,ESP,FWD,exact_player_id,optimizer_ev,5.268767121951219,5.268767121951219,5.268767121951219,0.000000,0.000000,already_equal
+mikel_oyarzabal__esp,Mikel Oyarzabal,ESP,FWD,exact_player_id,weighted_group_stage_ev,5.268767121951219,5.268767121951219,5.268767121951219,0.000000,0.000000,already_equal
+mikel_oyarzabal__esp,Mikel Oyarzabal,ESP,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,5.158848,5.536324682926829,5.536324682926829,0.377477,0.000000,updated
+mikel_oyarzabal__esp,Mikel Oyarzabal,ESP,FWD,exact_player_id,price_quality_ev,4.604815,4.94175268292683,4.94175268292683,0.336938,0.000000,updated
+mikel_oyarzabal__esp,Mikel Oyarzabal,ESP,FWD,exact_player_id,model_ev_before_price_quality,5.158848,5.536324682926829,5.536324682926829,0.377477,0.000000,updated
+mikel_oyarzabal__esp,Mikel Oyarzabal,ESP,FWD,exact_player_id,optimizer_ev_before_price_quality,5.158848,5.536324682926829,5.536324682926829,0.377477,0.000000,updated
 mikel_oyarzabal__esp,Mikel Oyarzabal,ESP,FWD,exact_player_id,price_quality_raw_ev,4.604815,4.604815,4.604815,0.000000,0.000000,already_equal
 mikel_oyarzabal__esp,Mikel Oyarzabal,ESP,FWD,exact_player_id,price_quality_appearance_scaled_ev,4.604815,4.604815,4.604815,0.000000,0.000000,already_equal
 mikel_oyarzabal__esp,Mikel Oyarzabal,ESP,FWD,exact_player_id,price_quality_base_capped_ev,4.604815,4.604815,4.604815,0.000000,0.000000,already_equal
@@ -20453,12 +20453,12 @@ noa_lang__ned,Noa Lang,NED,FWD,exact_player_id,price_quality_spread_multiplier,1
 noa_lang__ned,Noa Lang,NED,FWD,exact_player_id,price_quality_applied,True,True,True,0.000000,0.000000,already_equal
 noa_lang__ned,Noa Lang,NED,FWD,exact_player_id,price_quality_method,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,0.000000,0.000000,already_equal
 noa_lang__ned,Noa Lang,NED,FWD,exact_player_id,base_ev_source,component_weighted_sum,component_weighted_sum,component_weighted_sum,0.000000,0.000000,already_equal
-cody_gakpo__ned,Cody Gakpo,NED,FWD,exact_player_id,optimizer_ev,4.998909,4.998909,4.998909,0.000000,0.000000,already_equal
-cody_gakpo__ned,Cody Gakpo,NED,FWD,exact_player_id,weighted_group_stage_ev,4.998909,4.998909,4.998909,0.000000,0.000000,already_equal
-cody_gakpo__ned,Cody Gakpo,NED,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,5.39426,5.39426,5.39426,0.000000,0.000000,already_equal
-cody_gakpo__ned,Cody Gakpo,NED,FWD,exact_player_id,price_quality_ev,4.515701,4.515701,4.515701,0.000000,0.000000,already_equal
-cody_gakpo__ned,Cody Gakpo,NED,FWD,exact_player_id,model_ev_before_price_quality,5.39426,5.39426,5.39426,0.000000,0.000000,already_equal
-cody_gakpo__ned,Cody Gakpo,NED,FWD,exact_player_id,optimizer_ev_before_price_quality,5.39426,5.39426,5.39426,0.000000,0.000000,already_equal
+cody_gakpo__ned,Cody Gakpo,NED,FWD,exact_player_id,optimizer_ev,4.887201536312849,4.887201536312849,4.887201536312849,0.000000,0.000000,already_equal
+cody_gakpo__ned,Cody Gakpo,NED,FWD,exact_player_id,weighted_group_stage_ev,4.887201536312849,4.887201536312849,4.887201536312849,0.000000,0.000000,already_equal
+cody_gakpo__ned,Cody Gakpo,NED,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,5.39426,5.273717877094972,5.273717877094972,0.120542,0.000000,updated
+cody_gakpo__ned,Cody Gakpo,NED,FWD,exact_player_id,price_quality_ev,4.515701,4.414791480446928,4.414791480446928,0.100910,0.000000,updated
+cody_gakpo__ned,Cody Gakpo,NED,FWD,exact_player_id,model_ev_before_price_quality,5.39426,5.273717877094972,5.273717877094972,0.120542,0.000000,updated
+cody_gakpo__ned,Cody Gakpo,NED,FWD,exact_player_id,optimizer_ev_before_price_quality,5.39426,5.273717877094972,5.273717877094972,0.120542,0.000000,updated
 cody_gakpo__ned,Cody Gakpo,NED,FWD,exact_player_id,price_quality_raw_ev,4.515701,4.515701,4.515701,0.000000,0.000000,already_equal
 cody_gakpo__ned,Cody Gakpo,NED,FWD,exact_player_id,price_quality_appearance_scaled_ev,4.515701,4.515701,4.515701,0.000000,0.000000,already_equal
 cody_gakpo__ned,Cody Gakpo,NED,FWD,exact_player_id,price_quality_base_capped_ev,4.515701,4.515701,4.515701,0.000000,0.000000,already_equal
@@ -20537,12 +20537,12 @@ ousmane_demb_l__fra,Ousmane Dembele,FRA,FWD,exact_player_id,price_quality_spread
 ousmane_demb_l__fra,Ousmane Dembele,FRA,FWD,exact_player_id,price_quality_applied,True,True,True,0.000000,0.000000,already_equal
 ousmane_demb_l__fra,Ousmane Dembele,FRA,FWD,exact_player_id,price_quality_method,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,0.000000,0.000000,already_equal
 ousmane_demb_l__fra,Ousmane Dembele,FRA,FWD,exact_player_id,base_ev_source,component_weighted_sum,component_weighted_sum,component_weighted_sum,0.000000,0.000000,already_equal
-michael_olise__fra,Michael Olise,FRA,FWD,exact_player_id,optimizer_ev,3.076907,3.076907,3.076907,0.000000,0.000000,already_equal
-michael_olise__fra,Michael Olise,FRA,FWD,exact_player_id,weighted_group_stage_ev,3.076907,3.076907,3.076907,0.000000,0.000000,already_equal
-michael_olise__fra,Michael Olise,FRA,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,2.511761,2.511761,2.511761,0.000000,0.000000,already_equal
-michael_olise__fra,Michael Olise,FRA,FWD,exact_player_id,price_quality_ev,3.767641,3.767641,3.767641,0.000000,0.000000,already_equal
-michael_olise__fra,Michael Olise,FRA,FWD,exact_player_id,model_ev_before_price_quality,2.511761,2.511761,2.511761,0.000000,0.000000,already_equal
-michael_olise__fra,Michael Olise,FRA,FWD,exact_player_id,optimizer_ev_before_price_quality,2.511761,2.511761,2.511761,0.000000,0.000000,already_equal
+michael_olise__fra,Michael Olise,FRA,FWD,exact_player_id,optimizer_ev,4.099364864446166,4.099364864446166,4.099364864446166,0.000000,0.000000,already_equal
+michael_olise__fra,Michael Olise,FRA,FWD,exact_player_id,weighted_group_stage_ev,4.099364864446166,4.099364864446166,4.099364864446166,0.000000,0.000000,already_equal
+michael_olise__fra,Michael Olise,FRA,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,2.511761,3.3464205422153372,3.3464205422153372,0.834660,0.000000,updated
+michael_olise__fra,Michael Olise,FRA,FWD,exact_player_id,price_quality_ev,3.767641,5.019630147172735,5.019630147172735,1.251989,0.000000,updated
+michael_olise__fra,Michael Olise,FRA,FWD,exact_player_id,model_ev_before_price_quality,2.511761,3.3464205422153372,3.3464205422153372,0.834660,0.000000,updated
+michael_olise__fra,Michael Olise,FRA,FWD,exact_player_id,optimizer_ev_before_price_quality,2.511761,3.3464205422153372,3.3464205422153372,0.834660,0.000000,updated
 michael_olise__fra,Michael Olise,FRA,FWD,exact_player_id,price_quality_raw_ev,4.569169,4.569169,4.569169,0.000000,0.000000,already_equal
 michael_olise__fra,Michael Olise,FRA,FWD,exact_player_id,price_quality_appearance_scaled_ev,4.213427,4.213427,4.213427,0.000000,0.000000,already_equal
 michael_olise__fra,Michael Olise,FRA,FWD,exact_player_id,price_quality_base_capped_ev,3.767641,3.767641,3.767641,0.000000,0.000000,already_equal
@@ -20635,12 +20635,12 @@ jean_philippe_mateta__fra,Jean-Philippe Mateta,FRA,FWD,exact_player_id,price_qua
 jean_philippe_mateta__fra,Jean-Philippe Mateta,FRA,FWD,exact_player_id,price_quality_applied,True,True,True,0.000000,0.000000,already_equal
 jean_philippe_mateta__fra,Jean-Philippe Mateta,FRA,FWD,exact_player_id,price_quality_method,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,0.000000,0.000000,already_equal
 jean_philippe_mateta__fra,Jean-Philippe Mateta,FRA,FWD,exact_player_id,base_ev_source,component_weighted_sum,component_weighted_sum,component_weighted_sum,0.000000,0.000000,already_equal
-kylian_mbapp__fra,Kylian Mbappe,FRA,FWD,exact_player_id,optimizer_ev,4.616483,4.616483,4.616483,0.000000,0.000000,already_equal
-kylian_mbapp__fra,Kylian Mbappe,FRA,FWD,exact_player_id,weighted_group_stage_ev,4.616483,4.616483,4.616483,0.000000,0.000000,already_equal
-kylian_mbapp__fra,Kylian Mbappe,FRA,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,4.664221,4.664221,4.664221,0.000000,0.000000,already_equal
-kylian_mbapp__fra,Kylian Mbappe,FRA,FWD,exact_player_id,price_quality_ev,4.558137,4.558137,4.558137,0.000000,0.000000,already_equal
-kylian_mbapp__fra,Kylian Mbappe,FRA,FWD,exact_player_id,model_ev_before_price_quality,4.664221,4.664221,4.664221,0.000000,0.000000,already_equal
-kylian_mbapp__fra,Kylian Mbappe,FRA,FWD,exact_player_id,optimizer_ev_before_price_quality,4.664221,4.664221,4.664221,0.000000,0.000000,already_equal
+kylian_mbapp__fra,Kylian Mbappe,FRA,FWD,exact_player_id,optimizer_ev,6.488620875869211,6.488620875869211,6.488620875869211,0.000000,0.000000,already_equal
+kylian_mbapp__fra,Kylian Mbappe,FRA,FWD,exact_player_id,weighted_group_stage_ev,6.488620875869211,6.488620875869211,6.488620875869211,0.000000,0.000000,already_equal
+kylian_mbapp__fra,Kylian Mbappe,FRA,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,4.664221,6.5557182275484545,6.5557182275484545,1.891497,0.000000,updated
+kylian_mbapp__fra,Kylian Mbappe,FRA,FWD,exact_player_id,price_quality_ev,4.558137,6.4066136262760764,6.4066136262760764,1.848477,0.000000,updated
+kylian_mbapp__fra,Kylian Mbappe,FRA,FWD,exact_player_id,model_ev_before_price_quality,4.664221,6.5557182275484545,6.5557182275484545,1.891497,0.000000,updated
+kylian_mbapp__fra,Kylian Mbappe,FRA,FWD,exact_player_id,optimizer_ev_before_price_quality,4.664221,6.5557182275484545,6.5557182275484545,1.891497,0.000000,updated
 kylian_mbapp__fra,Kylian Mbappe,FRA,FWD,exact_player_id,price_quality_raw_ev,4.720662,4.720662,4.720662,0.000000,0.000000,already_equal
 kylian_mbapp__fra,Kylian Mbappe,FRA,FWD,exact_player_id,price_quality_appearance_scaled_ev,4.558137,4.558137,4.558137,0.000000,0.000000,already_equal
 kylian_mbapp__fra,Kylian Mbappe,FRA,FWD,exact_player_id,price_quality_base_capped_ev,4.720662,4.720662,4.720662,0.000000,0.000000,already_equal
@@ -21055,12 +21055,12 @@ goncalo_guedes__por,Goncalo Guedes,POR,FWD,exact_player_id,price_quality_spread_
 goncalo_guedes__por,Goncalo Guedes,POR,FWD,exact_player_id,price_quality_applied,True,True,True,0.000000,0.000000,already_equal
 goncalo_guedes__por,Goncalo Guedes,POR,FWD,exact_player_id,price_quality_method,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,0.000000,0.000000,already_equal
 goncalo_guedes__por,Goncalo Guedes,POR,FWD,exact_player_id,base_ev_source,component_weighted_sum,component_weighted_sum,component_weighted_sum,0.000000,0.000000,already_equal
-cristiano_ronaldo__por,Cristiano Ronaldo,POR,FWD,exact_player_id,optimizer_ev,5.636815,5.636815,5.636815,0.000000,0.000000,already_equal
-cristiano_ronaldo__por,Cristiano Ronaldo,POR,FWD,exact_player_id,weighted_group_stage_ev,5.636815,5.636815,5.636815,0.000000,0.000000,already_equal
-cristiano_ronaldo__por,Cristiano Ronaldo,POR,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,6.510343,6.510343,6.510343,0.000000,0.000000,already_equal
-cristiano_ronaldo__por,Cristiano Ronaldo,POR,FWD,exact_player_id,price_quality_ev,4.569169,4.569169,4.569169,0.000000,0.000000,already_equal
-cristiano_ronaldo__por,Cristiano Ronaldo,POR,FWD,exact_player_id,model_ev_before_price_quality,6.510343,6.510343,6.510343,0.000000,0.000000,already_equal
-cristiano_ronaldo__por,Cristiano Ronaldo,POR,FWD,exact_player_id,optimizer_ev_before_price_quality,6.510343,6.510343,6.510343,0.000000,0.000000,already_equal
+cristiano_ronaldo__por,Cristiano Ronaldo,POR,FWD,exact_player_id,optimizer_ev,5.6460204681546005,5.6460204681546005,5.6460204681546005,0.000000,0.000000,already_equal
+cristiano_ronaldo__por,Cristiano Ronaldo,POR,FWD,exact_player_id,weighted_group_stage_ev,5.6460204681546005,5.6460204681546005,5.6460204681546005,0.000000,0.000000,already_equal
+cristiano_ronaldo__por,Cristiano Ronaldo,POR,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,6.510343,6.520975024496462,6.520975024496462,0.010632,0.000000,updated
+cristiano_ronaldo__por,Cristiano Ronaldo,POR,FWD,exact_player_id,price_quality_ev,4.569169,4.576630898203592,4.576630898203592,0.007462,0.000000,updated
+cristiano_ronaldo__por,Cristiano Ronaldo,POR,FWD,exact_player_id,model_ev_before_price_quality,6.510343,6.520975024496462,6.520975024496462,0.010632,0.000000,updated
+cristiano_ronaldo__por,Cristiano Ronaldo,POR,FWD,exact_player_id,optimizer_ev_before_price_quality,6.510343,6.520975024496462,6.520975024496462,0.010632,0.000000,updated
 cristiano_ronaldo__por,Cristiano Ronaldo,POR,FWD,exact_player_id,price_quality_raw_ev,4.569169,4.569169,4.569169,0.000000,0.000000,already_equal
 cristiano_ronaldo__por,Cristiano Ronaldo,POR,FWD,exact_player_id,price_quality_appearance_scaled_ev,4.569169,4.569169,4.569169,0.000000,0.000000,already_equal
 cristiano_ronaldo__por,Cristiano Ronaldo,POR,FWD,exact_player_id,price_quality_base_capped_ev,4.569169,4.569169,4.569169,0.000000,0.000000,already_equal
