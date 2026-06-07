@@ -58,6 +58,14 @@ def norm_text(value: Any) -> str:
     return " ".join(text.replace("-", " ").split())
 
 
+
+def clean_tm_player_id(value: Any) -> str:
+    text = "" if value is None else str(value).strip()
+    if text.endswith(".0"):
+        text = text[:-2]
+    return text
+
+
 def clean_cell(value: Any) -> str:
     if pd.isna(value):
         return ""
@@ -97,6 +105,33 @@ def load_player_pool() -> list[dict[str, Any]]:
                 return raw[key]
 
     raise ValueError(f"Kan ikke finde spillerliste i {PLAYER_POOL_PATH}")
+
+def load_team_filter(path_value: str | None) -> set[str]:
+    if not path_value:
+        return set()
+
+    path = Path(path_value)
+    if not path.is_absolute():
+        path = PROJECT_ROOT / path
+
+    if not path.exists():
+        raise FileNotFoundError(path)
+
+    return {
+        line.strip().upper()
+        for line in path.read_text(encoding="utf-8-sig").splitlines()
+        if line.strip()
+    }
+
+
+def filter_players_by_team(players: list[dict[str, Any]], team_filter: set[str]) -> list[dict[str, Any]]:
+    if not team_filter:
+        return players
+
+    return [
+        player for player in players
+        if str(player.get("team_id") or "").strip().upper() in team_filter
+    ]
 
 
 def read_csv_if_exists(path: Path) -> pd.DataFrame:
@@ -586,6 +621,7 @@ def find_national_url_from_html(html: str, current_url: str, tm_player_id: str) 
 
 
 def fetch_ceapi_performance(tm_player_id: str, source_url: str) -> list[dict[str, Any]]:
+    tm_player_id = clean_tm_player_id(tm_player_id)
     api_url = f"{ceapi_base_for(source_url)}/ceapi/performance-game/{tm_player_id}"
     response = requests.get(api_url, headers={**HEADERS, "Accept": "application/json,text/plain,*/*"}, timeout=30)
     response.raise_for_status()
@@ -1125,12 +1161,18 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--refresh", action="store_true", help="Refresh known manual/cache URLs instead of treating them as done.")
     parser.add_argument("--limit", type=int, default=MAX_PLAYERS_PER_RUN, help="Maximum players to process in this run.")
     parser.add_argument("--manual-name", action="append", default=[], help="Process a matched manual player by manual/player-pool name. Can be repeated.")
+    parser.add_argument("--team-file", default="", help="Optional text file with team_id values to process, one per line.")
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
     players = load_player_pool()
+    team_filter = load_team_filter(args.team_file)
+    if team_filter:
+        before_count = len(players)
+        players = filter_players_by_team(players, team_filter)
+        print(f"Team filter: {len(team_filter)} teams | players {before_count} -> {len(players)}")
     cache = load_existing_cache()
     cache_before = cache.copy()
     summary_df = load_existing_summary()
@@ -1201,13 +1243,13 @@ def main() -> None:
 
             if manual:
                 scrape_source = "manual_url"
-                tm_id = str(manual.get("tm_player_id") or "")
+                tm_id = clean_tm_player_id(manual.get("tm_player_id"))
                 profile_url = str(manual.get("tm_profile_url") or "")
                 national_url = str(manual.get("tm_national_url") or "")
                 summary, matches = scrape_player_from_transfermarkt_url(player, tm_id, profile_url, national_url)
             elif has_usable_cache_url(cached):
                 scrape_source = "cache_url"
-                tm_id = str(cached.get("tm_player_id") or "")
+                tm_id = clean_tm_player_id(cached.get("tm_player_id"))
                 profile_url = str(cached.get("tm_profile_url") or "")
                 national_url = str(cached.get("tm_national_url") or "")
                 summary, matches = scrape_player_from_transfermarkt_url(player, tm_id, profile_url, national_url)

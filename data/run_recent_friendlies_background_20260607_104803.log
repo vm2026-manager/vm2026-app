@@ -1,0 +1,419 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260607104803
+Username: DESKTOP-7JDPP22\Administrator
+RunAs User: DESKTOP-7JDPP22\Administrator
+Configuration Name: 
+Machine: DESKTOP-7JDPP22 (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 14232
+PSVersion: 5.1.19041.6456
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.6456
+BuildVersion: 10.0.19041.6456
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is data\run_recent_friendlies_background_20260607_104803.log
+Team filter: 21 teams | players 1292 -> 564
+TRANSFERMARKT NATIONAL USAGE BATCH
+================================================================================
+Player pool: 564
+Cache rows: 1292
+Manual URL rows: 28
+Manual URL matched: 10
+Manual-only: False
+Refresh: False
+Max this run: 120
+Selected for run: 20
+
+[1/20] Neymar Jr. | BRA | FWD | 5.5 mio.
+  FEJL: Ingen Transfermarkt-profil fundet
+[2/20] Kenan Yildiz | TUR | MID | 4.0 mio.
+  FEJL: Ingen kampoversigtstabel fundet
+[3/20] Wesley Franca | BRA | DEF | 3.5 mio.
+  FEJL: Ingen Transfermarkt-profil fundet
+[4/20] Roberto 'Gatito' Fernandez | PAR | GK | 3.0 mio.
+  FEJL: 500 Server Error: Internal Server Error for url: https://www.transfermarkt.com/schnellsuche/ergebnis/schnellsuch
+e?query=Roberto+%27Gatito%27+Fernandez
+[5/20] Pedro 'Pote' Goncalves | POR | MID | 3.0 mio.
+  FEJL: 500 Server Error: Internal Server Error for url: https://www.transfermarkt.com/schnellsuche/ergebnis/schnellsuch
+e?query=Pedro+%27Pote%27+Goncalves
+[6/20] Mohamed El-Shennawy | EGY | GK | 3.0 mio.
+  FEJL: Ingen Transfermarkt-profil fundet
+[7/20] Mahmoud Trezeguet | EGY | MID | 3.0 mio.
+  FEJL: Ingen Transfermarkt-profil fundet
+[8/20] Danilo dos Santos | BRA | MID | 3.0 mio.
+  FEJL: Ingen kampoversigtstabel fundet
+[9/20] Andy Robertson | SCO | DEF | 3.0 mio.
+  FEJL: Ingen kampoversigtstabel fundet
+[10/20] Ahmed Zizo | EGY | MID | 3.0 mio.
+  FEJL: Ingen Transfermarkt-profil fundet
+[11/20] Ahmed Alaaeldin Abdelmotaal | QAT | FWD | 3.0 mio.
+  FEJL: Ingen Transfermarkt-profil fundet
+[12/20] Yasser Ibrahim | EGY | DEF | 2.5 mio.
+  FEJL: Ingen kampoversigtstabel fundet
+[13/20] Saleh Al-Shamat | KSA | MID | 2.5 mio.
+  FEJL: Ingen Transfermarkt-profil fundet
+[14/20] Pedro 'Ro-Ro' Miguel Correia | QAT | DEF | 2.5 mio.
+  FEJL: 500 Server Error: Internal Server Error for url: https://www.transfermarkt.com/schnellsuche/ergebnis/schnellsuch
+e?query=Pedro+%27Ro-Ro%27+Miguel+Correia
+[15/20] Jorge Gutierrez | PAN | DEF | 2.5 mio.
+  FEJL: Ingen kampoversigtstabel fundet
+[16/20] David 'Junior' Hoilett | CAN | MID | 2.5 mio.
+  FEJL: 500 Server Error: Internal Server Error for url: https://www.transfermarkt.com/schnellsuche/ergebnis/schnellsuch
+e?query=David+%27Junior%27+Hoilett
+[17/20] Cristian Martinez | PAN | MID | 2.5 mio.
+  FEJL: Ingen kampoversigtstabel fundet
+[18/20] Abdulrahman Al-Obood | KSA | MID | 2.5 mio.
+  FEJL: Ingen Transfermarkt-profil fundet
+[19/20] Mohamed 'Hadj' Mahmoud | TUN | MID | 2.0 mio.
+  FEJL: 500 Server Error: Internal Server Error for url: https://www.transfermarkt.com/schnellsuche/ergebnis/schnellsuch
+e?query=Mohamed+%27Hadj%27+Mahmoud
+[20/20] Jahkeele Rutty | CAN | DEF | 2.0 mio.
+  FEJL: Ingen Transfermarkt-profil fundet
+
+================================================================================
+FÃ¦rdig. OK=0, fejl=20
+Skrev cache: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_national_team\transfermarkt_player_ur
+l_cache.csv
+Skrev summary: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_national_team\player_national_team_
+usage_transfermarkt.csv
+Skrev manual audit: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_manual_url_integration_audit.c
+sv
+Skrev manual audit: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_manual_url_integration_audit.m
+d
+
+KÃ¸r scriptet igen for nÃ¦ste batch.
+TRANSFERMARKT COMPETITION CLASSIFIER
+================================================================================
+Match-rækker læst: 82308
+
+Kategorier:
+competition_category_label
+Kvalifikation               29267
+Venskabskamp                27357
+Slutrunde                   17446
+Nations League               6491
+Nations League-slutrunde     1604
+Ungdomsslutrunde               94
+Øvrig turnering                30
+Ungdomskvalifikation           19
+
+Top preview:
+             player_name team_id competition_category_label  rows  starts start_share weighted_start_signal
+            Aaron Hickey     SCO                  Slutrunde     3       0           0                   0.0
+            Aaron Hickey     SCO              Kvalifikation    15      11       0.917                0.8253
+            Aaron Hickey     SCO             Nations League    14       3         0.5                  0.39
+            Aaron Hickey     SCO               Venskabskamp    14       2       0.286                0.1487
+       Aaron Wan-Bissaka     COD                  Slutrunde     4       3        0.75                  0.75
+       Aaron Wan-Bissaka     COD              Kvalifikation     7       7         1.0                   0.9
+       Aaron Wan-Bissaka     COD               Venskabskamp     3       0         0.0                   0.0
+    Abdallah Al-Fakhouri     JOR                  Slutrunde    24       0         0.0                   0.0
+    Abdallah Al-Fakhouri     JOR              Kvalifikation    29       0         0.0                   0.0
+    Abdallah Al-Fakhouri     JOR               Venskabskamp    56       7       0.132                0.0686
+          Abdallah Nasib     JOR                  Slutrunde    17      15       0.882                 0.882
+          Abdallah Nasib     JOR              Kvalifikation    19      17       0.895                0.8055
+          Abdallah Nasib     JOR               Venskabskamp    30      18         0.6                 0.312
+         Abde Ezzalzouli     MAR                  Slutrunde    31       7       0.292                 0.292
+         Abde Ezzalzouli     MAR              Kvalifikation    17       8       0.533                0.4797
+         Abde Ezzalzouli     MAR               Venskabskamp    20       6       0.333                0.1732
+ Abdel Rahman Al-Talalga     JOR               Venskabskamp     4       0         0.0                   0.0
+ Abdel Rahman Al-Talalga     JOR           Ungdomsslutrunde     7       4       0.571                0.1998
+ Abdel Rahman Al-Talalga     JOR       Ungdomskvalifikation     3       3         1.0                   0.3
+  Abdelhamid Ait Boudlal     MAR               Venskabskamp     2       1         0.5                  0.26
+     Abdelmouhib Chamakh     TUN               Venskabskamp     3       2       0.667                0.3468
+          Abdoulaye Seck     SEN                  Slutrunde    34       3       0.111                 0.111
+          Abdoulaye Seck     SEN              Kvalifikation    32       8       0.258                0.2322
+          Abdoulaye Seck     SEN               Venskabskamp    16       5       0.312                0.1622
+      Abdukodir Khusanov     UZB                  Slutrunde    13       5       0.385                 0.385
+      Abdukodir Khusanov     UZB              Kvalifikation    16      12        0.75                 0.675
+      Abdukodir Khusanov     UZB               Venskabskamp    12       5         0.5                  0.26
+Abdulaziz Hatim Mohammed     QAT                  Slutrunde    74      38       0.514                 0.514
+Abdulaziz Hatim Mohammed     QAT              Kvalifikation    66      12       0.182                0.1638
+Abdulaziz Hatim Mohammed     QAT               Venskabskamp    93      45       0.484                0.2517
+       Abdulelah Al-Amri     KSA                  Slutrunde    31       9       0.333                 0.333
+       Abdulelah Al-Amri     KSA              Kvalifikation    32      11       0.393                0.3537
+       Abdulelah Al-Amri     KSA               Venskabskamp    23      10       0.455                0.2366
+     Abdulkerim Bardakci     TUR                  Slutrunde     8       4         0.5                   0.5
+     Abdulkerim Bardakci     TUR              Kvalifikation    19      12       0.667                0.6003
+     Abdulkerim Bardakci     TUR             Nations League     8       7       0.875                0.6825
+     Abdulkerim Bardakci     TUR               Venskabskamp    12       3       0.273                 0.142
+      Abdullah Al-Hamdan     KSA                  Slutrunde    32       8        0.25                  0.25
+      Abdullah Al-Hamdan     KSA              Kvalifikation    36       5       0.139                0.1251
+      Abdullah Al-Hamdan     KSA               Venskabskamp    26       9       0.346                0.1799
+
+Skrev: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_national_team\player_national_team_matches_
+classified.csv
+Skrev: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_national_team\player_national_team_usage_by
+_competition.csv
+Skrev: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_national_team\player_national_team_usage_co
+mpetitive_summary.csv
+Skrev: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_national_team\competition_classifier_audit.
+csv
+Skrev: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_national_team\competition_classifier_audit.
+md
+SELECTED SQUAD TRANSFERMARKT WATCHLIST
+==========================================================================================
+Formation: 3-4-3
+Optimizer score: 169.249
+
+Spillere til manuel vurdering:
+
+- Gonzalo Montiel | ARG | DEF | model-start=45.0% | TM usage=0.367 | recent20_start=0.3 | recency_comp=0.6133 | slutrund
+e_recency=0.346 | kval_recency=0.327 | Lav recency-vægtet slutrunde-startandel; Lav recency-vægtet kval-startandel; Lav
+historisk slutrunde-startandel; Lav historisk kval-startandel; Ofte ikke i trup seneste 20; Flere fravær uden skade-/kar
+antæneforklaring og svagt nyere usage-signal
+- Lucas Digne | FRA | DEF | model-start=74.2% | TM usage=0.5725 | recent20_start=0.45 | recency_comp=0.3089 | slutrunde_
+recency=0.46 | kval_recency=0.348 | Model-start høj, men nyere landsholdsbrug er usikker/lav; Model-start høj, men recen
+cy-vægtet konkurrencesignal er lavt; Lav recency-vægtet slutrunde-startandel; Lav recency-vægtet kval-startandel; Lav hi
+storisk slutrunde-startandel; Lav historisk kval-startandel
+- Renato Veiga | POR | DEF | model-start=67.7% | TM usage=0.3795 | recent20_start=0.421 | recency_comp=0.5944 | slutrund
+e_recency=0.226 | kval_recency=0.333 | Lav recency-vægtet slutrunde-startandel; Lav recency-vægtet kval-startandel; Lav
+historisk slutrunde-startandel; Lav historisk kval-startandel; Relativt få landskampe ift. høj model-start
+- Alex Baena | ESP | MID | model-start=47.0% | TM usage=0.329 | recent20_start=0.3 | recency_comp=0.5375 | slutrunde_rec
+ency=0.0 | kval_recency=0.293 | Lav recency-vægtet kval-startandel; Lav historisk kval-startandel; Ofte ikke i trup sene
+ste 20; Flere fravær uden skade-/karantæneforklaring og svagt nyere usage-signal
+- Martin Zubimendi | ESP | MID | model-start=88.3% | TM usage=0.5825 | recent20_start=0.65 | recency_comp=0.1045 | slutr
+unde_recency=0.671 | kval_recency=0.503 | Model-start høj, men recency-vægtet konkurrencesignal er lavt; Lav historisk k
+val-startandel; Ofte ikke i trup seneste 20
+- Manu Koné | FRA | MID | model-start=74.0% | TM usage=0.4127 | recent20_start=0.474 | recency_comp=0.4048 | slutrunde_r
+ecency=0.453 | kval_recency=0.667 | Model-start høj, men samlet Transfermarkt-usage lav; Model-start høj, men nyere land
+sholdsbrug er usikker/lav; Model-start høj, men recency-vægtet konkurrencesignal er lavt; Lav recency-vægtet slutrunde-s
+tartandel; Ofte ikke i trup seneste 20; Relativt få landskampe ift. høj model-start
+- Mikel Oyarzabal | ESP | FWD | model-start=77.9% | TM usage=0.7325 | recent20_start=0.65 | recency_comp=0.3443 | slutru
+nde_recency=0.646 | kval_recency=0.581 | Model-start høj, men recency-vægtet konkurrencesignal er lavt; Lav historisk kv
+al-startandel; Ofte ikke i trup seneste 20
+- Nico Williams | ESP | FWD | model-start=80.2% | TM usage=0.4175 | recent20_start=0.45 | recency_comp=0.173 | slutrunde
+_recency=1.0 | kval_recency=0.347 | Model-start høj, men nyere landsholdsbrug er usikker/lav; Model-start høj, men recen
+cy-vægtet konkurrencesignal er lavt; Lav recency-vægtet kval-startandel; Flere fravær uden skade-/karantæneforklaring og
+ svagt nyere usage-signal
+
+Note:
+- Watchlisten ændrer ikke modellen.
+- Brug den som beslutningsstøtte indtil trupper og sidste testkampe er kendt.
+- Recency vægter nyere landsholdskampe højere end ældre kampe.
+- Slutrunde/kvalkampe vægter fagligt højere end venskabskampe.
+- Fravær pga. skade/karantæne bør tolkes anderledes end ukendt fravær/vragning.
+
+Skrev: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_national_team\selected_squad_transfermarkt_
+watchlist.csv
+Skrev: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_national_team\selected_squad_transfermarkt_
+watchlist.txt
+Transfermarkt competitive summary merge
+--------------------------------------
+TM summary rows: 1260
+TM classified match rows: 82308
+Availability splits: 1260
+Context overrides: 58
+Opdaterede spillere: 1261
+Ingen sikkert match: 31
+GK teams sum > 1.10 before: 0
+GK teams sum > 1.10 after: 0
+GK teams with >=2 keepers >=0.60 before: 0
+GK teams with >=2 keepers >=0.60 after: 0
+Max GK team start_prob sum before: 1.0001
+Max GK team start_prob sum after: 1.0001
+Backup: data\player_pool_v1.backup_before_tm_competitive_merge_20260607_105014.json
+Availability split report: data\start_probability_availability_split_report.csv
+GK hierarchy audit: data\goalkeeper_hierarchy_audit.csv
+GK hierarchy report: data\goalkeeper_hierarchy_audit.md
+Recent non-starter audit: data\recent_nonstarter_start_prob_audit.csv
+Recent non-starter report: data\recent_nonstarter_start_prob_audit.md
+Manual start overrides
+----------------------
+Backup: data\player_pool_v1.backup_before_manual_start_overrides_20260607_105017.json
+
+CHANGED
+Julian Ryerson           NOR DEF start 0.6549 -> 0.88 | cond 0.6758 -> 0.93 | risk medium_risk -> low_risk
+Konrad Laimer            AUT MID start 0.7107 -> 0.86 | cond 0.7282 -> 0.91 | risk low_risk -> low_risk
+John McGinn              SCO MID start 0.462 -> 0.88 | cond 0.4827 -> 0.93 | risk medium_risk -> low_risk
+Marko Arnautovic         AUT FWD start 0.6502 -> 0.82 | cond 0.6745 -> 0.88 | risk medium_risk -> low_risk
+Philipp Lienhart         AUT DEF start 0.6592 -> 0.84 | cond 0.6932 -> 0.9 | risk medium_risk -> low_risk
+Stefan Posch             AUT DEF start 0.6351 -> 0.84 | cond 0.6597 -> 0.9 | risk medium_risk -> low_risk
+Arda Güler               TUR MID start 0.6766 -> 0.88 | cond 0.6971 -> 0.93 | risk medium_risk -> low_risk
+Nuno Mendes              POR DEF start 0.6728 -> 0.88 | cond 0.6985 -> 0.93 | risk medium_risk -> low_risk
+
+Wrote: data\player_pool_v1.json
+EV start probability source repair
+----------------------------------
+Serious mismatches before: 3
+Serious mismatches after: 0
+Rows changed: 1244
+Backup: data\player_ev_group_stage_v1.backup_before_start_prob_source_repair_20260607_105019.csv
+Wrote: data\player_pool_vs_ev_start_prob_audit.csv
+Wrote: data\player_pool_vs_ev_start_prob_audit.md
+EV component dependency repair
+------------------------------
+Stale components before: 0
+Stale components after: 0
+Rows recomputed: 823
+Team repair rows: 1253
+Clean sheet audit rows: 3732
+Clean sheet high-start zero before: 0
+Clean sheet high-start zero after: 0
+Clean sheet NaN before: 0
+Clean sheet NaN after: 0
+On-pitch high-start spreads > 0.05 before: 3
+On-pitch high-start spreads > 0.05 after: 0
+Negative on_pitch_ev for start_prob >= 0.70 before: 0
+Negative on_pitch_ev for start_prob >= 0.70 after: 0
+Max high-start on_pitch spread before: 0.067600
+Max high-start on_pitch spread after: 0.027252
+Aggregate EV missing components after: 0
+No EV source after: 0
+Backup: data\player_ev_group_stage_v1.backup_before_component_rebuild_20260607_105020.csv
+Wrote: data\player_ev_component_dependency_audit.csv
+Wrote: data\player_ev_component_dependency_audit.md
+Wrote: data\team_match_component_consistency_audit.csv
+Wrote: data\team_match_component_consistency_audit.md
+Wrote: data\team_component_repair_report.csv
+Wrote: data\team_component_repair_report.md
+Wrote: data\clean_sheet_component_repair_audit.csv
+Wrote: data\clean_sheet_component_repair_audit.md
+EV price-quality consistency repair
+-----------------------------------
+Formula mismatches before: 813
+Formula mismatches after: 0
+Max formula diff before: 1.495219
+Max formula diff after: 0.000001
+Base EV total before: 1443.887
+Base EV total after: 1443.357
+Final EV total before: 1445.294
+Final EV total after: 1458.244
+EV backup: data\player_ev_group_stage_v1.backup_before_price_quality_consistency_20260607_105021.csv
+Pool backup: data\player_pool_v1.backup_before_baumgartner_out_20260607_105021.json
+Wrote: data\player_ev_price_quality_consistency_audit.csv
+Wrote: data\player_ev_price_quality_consistency_audit.md
+Wrote: data\reserve_price_quality_audit.csv
+Wrote: data\reserve_price_quality_audit.md
+Final EV -> pool optimizer mismatches > 0.001: 2 -> 0
+Skrev: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\player_start_signal_layer_v1.csv
+Skrev: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\player_start_signal_layer_v1.json
+
+Top 25 spillere efter start_signal_rank_adjusted:
+       player_name team_id position  start_prob  minute_share  team_position_rank  start_signal_rank_adjusted start_sign
+al_tier  weighted_group_stage_ev
+  Eldor Shomurodov     UZB      FWD      0.9205      0.083682                   1                    0.975999      Klar
+starter                 2.285547
+         Eloy Room     CUW       GK      0.9495      0.086318                   1                    0.962333      Klar
+starter                 0.861486
+ Emiliano Martinez     ARG       GK      0.9526      0.086600                   1                    0.962284      Klar
+starter                 4.152724
+         Luis Diaz     COL      FWD      0.9323      0.084755                   1                    0.962156      Klar
+starter                 3.273460
+ Dominik Livakovic     CRO       GK      0.9486      0.086236                   1                    0.959179      Klar
+starter                 3.236396
+      Ørjan Nyland     NOR       GK      0.9496      0.086327                   1                    0.958852      Klar
+starter                 3.320533
+    Nawaf Al-Aqidi     KSA       GK      0.9447      0.085882                   1                    0.958445      Klar
+starter                 1.268517
+        Harry Kane     ENG      FWD      0.9700      0.088182                   1                    0.956367      Klar
+starter                 4.343463
+       Mathew Ryan     AUS       GK      0.9463      0.086027                   1                    0.953215      Klar
+starter                 1.981791
+    Jonathan David     CAN      FWD      0.9223      0.083845                   1                    0.953114      Klar
+starter                 4.818744
+ Lionel Mpasi Nzau     COD       GK      0.9494      0.086309                   1                    0.951180      Klar
+starter                 1.391200
+      Mike Maignan     FRA       GK      0.9407      0.085518                   1                    0.950711      Klar
+starter                 4.162266
+       Zion Suzuki     JPN       GK      0.9433      0.085755                   1                    0.950128      Klar
+starter                 3.064834
+Alireza Beiranvand     IRN       GK      0.9438      0.085800                   1                    0.949209      Klar
+starter                 2.279950
+       Raul Rangel     MEX       GK      0.9397      0.085427                   1                    0.947618      Klar
+starter                 3.708149
+           Vozinha     CPV       GK      0.9285      0.084409                   1                    0.945297      Klar
+starter                 1.216212
+    Juninho Bacuna     CUW      MID      0.9344      0.084945                   1                    0.943919      Klar
+starter                 1.677495
+   Ronwen Williams     RSA       GK      0.9200      0.083636                   1                    0.937284      Klar
+starter                 1.905913
+        Cody Gakpo     NED      FWD      0.9308      0.084618                   1                    0.937147      Klar
+starter                 4.255653
+      Yan Diomande     CIV      FWD      0.9123      0.082936                   1                    0.934678      Klar
+starter                 1.765405
+Alexander Schlager     AUT       GK      0.9212      0.083745                   1                    0.929839      Klar
+starter                 2.911009
+      Mehdi Taremi     IRN      FWD      0.9302      0.084564                   1                    0.929756      Klar
+starter                 3.076180
+        Akram Afif     QAT      FWD      0.9074      0.082491                   1                    0.929375      Klar
+starter                 1.999482
+       Matej Kovar     CZE       GK      0.9123      0.082936                   1                    0.928327      Klar
+starter                 2.273071
+    Joshua Kimmich     GER      MID      0.9525      0.086591                   1                    0.928151      Klar
+starter                 3.250061
+
+Fordeling på tiers:
+start_signal_tier
+Langt fra start       608
+Tvivlsom starter      224
+Klar starter          175
+Bænk/rotation         125
+Sandsynlig starter    112
+
+Eksempel: top 3 pr. hold/position efter startsignal
+team_id position  team_position_rank         player_name  start_signal_rank_adjusted  start_signal_tier
+    ALG      DEF                   1     Rayan Ait-Nouri                    0.795078 Sandsynlig starter
+    ALG      DEF                   2    Zineddine Belaid                    0.679101   Tvivlsom starter
+    ALG      DEF                   3         Aissa Mandi                    0.638178   Tvivlsom starter
+    ALG      FWD                   1        Amine Gouiri                    0.789616 Sandsynlig starter
+    ALG      FWD                   2        Riyad Mahrez                    0.657883   Tvivlsom starter
+    ALG      FWD                   3      Mohamed Amoura                    0.547095   Tvivlsom starter
+    ALG       GK                   1         Luca Zidane                    0.831416       Klar starter
+    ALG       GK                   2     Alexis Guendouz                    0.132868    Langt fra start
+    ALG       GK                   3     Anthony Mandrea                    0.000000    Langt fra start
+    ALG      MID                   1       Houssem Aouar                    0.754938 Sandsynlig starter
+    ALG      MID                   2     Ismael Bennacer                    0.606324   Tvivlsom starter
+    ALG      MID                   3      Ramiz Zerrouki                    0.585596   Tvivlsom starter
+    ARG      DEF                   1         Julio Soler                    0.772132 Sandsynlig starter
+    ARG      DEF                   2     Cristian Romero                    0.650742   Tvivlsom starter
+    ARG      DEF                   3       Nahuel Molina                    0.635680   Tvivlsom starter
+    ARG      FWD                   1        Lionel Messi                    0.842485       Klar starter
+    ARG      FWD                   2    Lautaro Martinez                    0.647500   Tvivlsom starter
+    ARG      FWD                   3      Julian Alvarez                    0.592272   Tvivlsom starter
+    ARG       GK                   1   Emiliano Martinez                    0.962284       Klar starter
+    ARG       GK                   2      Geronimo Rulli                    0.018910    Langt fra start
+    ARG       GK                   3      Walter Benitez                    0.000000    Langt fra start
+    ARG      MID                   1      Enzo Fernandez                    0.871073       Klar starter
+    ARG      MID                   2       Thiago Almada                    0.756345 Sandsynlig starter
+    ARG      MID                   3 Alexis Mac Allister                    0.640503   Tvivlsom starter
+    AUS      DEF                   1    Lucas Herrington                    0.843896       Klar starter
+    AUS      DEF                   2  Alessandro Circati                    0.796008 Sandsynlig starter
+    AUS      DEF                   3      Jacob Italiano                    0.632548   Tvivlsom starter
+    AUS      FWD                   1          Deni Juric                    0.841480       Klar starter
+    AUS      FWD                   2       Mohamed Toure                    0.762580 Sandsynlig starter
+    AUS      FWD                   3        Martin Boyle                    0.376569      Bænk/rotation
+    AUS       GK                   1         Mathew Ryan                    0.953215       Klar starter
+    AUS       GK                   2           Paul Izzo                    0.027941    Langt fra start
+    AUS       GK                   3       Patrick Beach                    0.000000    Langt fra start
+    AUS      MID                   1     Connor Metcalfe                    0.882475       Klar starter
+    AUS      MID                   2       Aiden O'Neill                    0.869581       Klar starter
+    AUS      MID                   3        Riley McGree                    0.568336   Tvivlsom starter
+    AUT      DEF                   1    Philipp Lienhart                    0.791725 Sandsynlig starter
+    AUT      DEF                   2        Stefan Posch                    0.791287 Sandsynlig starter
+    AUT      DEF                   3      Phillipp Mwene                    0.717460 Sandsynlig starter
+    AUT      FWD                   1    Marko Arnautovic                    0.852428       Klar starter
+    AUT      FWD                   2 Michael Gregoritsch                    0.636864   Tvivlsom starter
+    AUT      FWD                   3        Raul Florucz                    0.042618    Langt fra start
+    AUT       GK                   1  Alexander Schlager                    0.929839       Klar starter
+    AUT       GK                   2       Patrick Pentz                    0.056037    Langt fra start
+    AUT       GK                   3     Nikolas Polster                    0.000000    Langt fra start
+    AUT      MID                   1     Marcel Sabitzer                    0.889436       Klar starter
+    AUT      MID                   2       Konrad Laimer                    0.845689       Klar starter
+    AUT      MID                   3     Nicolas Seiwald                    0.727094 Sandsynlig starter
+    BEL      DEF                   1       Arthur Theate                    0.806403 Sandsynlig starter
+    BEL      DEF                   2     Maxim De Cuyper                    0.621170   Tvivlsom starter
+    BEL      DEF                   3         Zeno Debast                    0.612974   Tvivlsom starter
+    BEL      FWD                   1         Jeremy Doku                    0.677263   Tvivlsom starter
+    BEL      FWD                   2       Romelu Lukaku                    0.624600   Tvivlsom starter
+    BEL      FWD                   3    Leandro Trossard                    0.562123   Tvivlsom starter
+    BEL       GK                   1    Thibaut Courtois                    0.850734       Klar starter
+    BEL       GK                   2       Senne Lammens                    0.060042    Langt fra start
+    BEL       GK                   3        Mike Penders                    0.000000    Langt fra start
+    BEL      MID                   1     Kevin De Bruyne                    0.906930       Klar starter
+    BEL      MID                   2     Youri Tielemans                    0.867146       Klar starter
+    BEL      MID                   3        Amadou Onana                    0.647914   Tvivlsom starter

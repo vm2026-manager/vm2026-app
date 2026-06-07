@@ -4,11 +4,11 @@ High-start betyder `start_prob >= 0.70`. Spreads er beregnet pr. hold/kamp/kompo
 
 ## Foer/efter
 
-- Team/match/on_pitch high-start spreads > 0.05 foer: 0
+- Team/match/on_pitch high-start spreads > 0.05 foer: 6
 - Team/match/on_pitch high-start spreads > 0.05 efter: 0
 - Negative on_pitch_ev for start_prob >= 0.70 foer: 0
 - Negative on_pitch_ev for start_prob >= 0.70 efter: 0
-- Stoerste high-start on_pitch spread foer: 0.027252
+- Stoerste high-start on_pitch spread foer: 0.067600
 - Stoerste high-start on_pitch spread efter: 0.027252
 
 ## Stoerste resterende high-start on_pitch spreads
@@ -18,30 +18,30 @@ High-start betyder `start_prob >= 0.70`. Spreads er beregnet pr. hold/kamp/kompo
 | 1 | IRN | NZL | 7 | 0.036004 | 0.063256 | 0.027252 | 0 |
 | 2 | IRN | BEL | 7 | 0.036004 | 0.063256 | 0.027252 | 0 |
 | 3 | IRN | EGY | 7 | 0.036004 | 0.063256 | 0.027252 | 0 |
+| 1 | CAN | BIH | 9 | 0.03724 | 0.062428 | 0.025188 | 0 |
+| 2 | CAN | QAT | 9 | 0.03724 | 0.062428 | 0.025188 | 0 |
+| 3 | CAN | SUI | 9 | 0.03724 | 0.062428 | 0.025188 | 0 |
 | 1 | PAN | GHA | 3 | 0.03508 | 0.06 | 0.02492 | 0 |
 | 2 | PAN | CRO | 3 | 0.03508 | 0.06 | 0.02492 | 0 |
 | 3 | PAN | ENG | 3 | 0.03508 | 0.06 | 0.02492 | 0 |
-| 1 | BRA | MAR | 8 | 0.040336 | 0.0652 | 0.024864 | 0 |
-| 2 | BRA | HAI | 8 | 0.040336 | 0.0652 | 0.024864 | 0 |
-| 3 | BRA | SCO | 8 | 0.040336 | 0.0652 | 0.024864 | 0 |
 | 1 | UZB | COL | 8 | 0.038212 | 0.06268 | 0.024468 | 0 |
 | 2 | UZB | POR | 8 | 0.038212 | 0.06268 | 0.024468 | 0 |
 | 3 | UZB | COD | 8 | 0.038212 | 0.06268 | 0.024468 | 0 |
-| 1 | ARG | ALG | 7 | 0.040672 | 0.064312 | 0.02364 | 0 |
-| 2 | ARG | AUT | 7 | 0.040672 | 0.064312 | 0.02364 | 0 |
-| 3 | ARG | JOR | 7 | 0.040672 | 0.064312 | 0.02364 | 0 |
-| 1 | EGY | BEL | 8 | 0.04408 | 0.0676 | 0.02352 | 0 |
-| 2 | EGY | NZL | 8 | 0.04408 | 0.0676 | 0.02352 | 0 |
-| 3 | EGY | IRN | 8 | 0.04408 | 0.0676 | 0.02352 | 0 |
-| 1 | AUS | TUR | 7 | 0.04024 | 0.063556 | 0.023316 | 0 |
-| 2 | AUS | USA | 7 | 0.04024 | 0.063556 | 0.023316 | 0 |
+| 1 | EGY | BEL | 6 | 0.044392 | 0.0676 | 0.023208 | 0 |
+| 2 | EGY | NZL | 6 | 0.044392 | 0.0676 | 0.023208 | 0 |
+| 3 | EGY | IRN | 6 | 0.044392 | 0.0676 | 0.023208 | 0 |
+| 1 | NED | JPN | 6 | 0.040612 | 0.063256 | 0.022644 | 0 |
+| 2 | NED | SWE | 6 | 0.040612 | 0.063256 | 0.022644 | 0 |
+| 3 | NED | TUN | 6 | 0.040612 | 0.063256 | 0.022644 | 0 |
+| 1 | ARG | ALG | 5 | 0.0418 | 0.064312 | 0.022512 | 0 |
+| 2 | ARG | AUT | 5 | 0.0418 | 0.064312 | 0.022512 | 0 |
 
 ## NOR vs IRQ sanity
 
 | player_name | start_prob | match_1_result_ev | match_1_team_scores_ev | match_1_opponent_scores_ev | match_1_on_pitch_ev |
 | --- | --- | --- | --- | --- | --- |
-| Erling Haaland | 0.9058 | 0.153239 | 0.068483 | -0.056941 | 0.058696 |
-| Martin Ødegaard | 0.8841 | 0.149568 | 0.066842 | -0.055576 | 0.056092 |
-| Alexander Sørloth | 0.8805 | 0.148959 | 0.06657 | -0.05535 | 0.05566 |
-| Antonio Nusa | 0.82 | 0.162408 | 0.072581 | -0.060348 | 0.0652 |
-| Oscar Bobb | 0.6439 | 0.156927 | 0.070131 | -0.058311 | 0.061312 |
+| Erling Haaland | 0.9058 | 0.153239 | 0.068484 | -0.056942 | 0.058696 |
+| Martin Ødegaard | 0.8841 | 0.149568 | 0.066844 | -0.055579 | 0.056092 |
+| Alexander Sørloth | 0.8805 | 0.148959 | 0.066572 | -0.055352 | 0.05566 |
+| Antonio Nusa | 0.82 | 0.162408 | 0.072582 | -0.06035 | 0.0652 |
+| Oscar Bobb | 0.6439 | 0.156927 | 0.070133 | -0.058313 | 0.061312 |

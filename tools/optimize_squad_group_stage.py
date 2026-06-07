@@ -501,8 +501,39 @@ def add_strategy_scores(players: pd.DataFrame) -> pd.DataFrame:
     work["transfer_fee"] = transfer_fee.round(0).astype(int)
     work["transfer_fee_m"] = transfer_fee / 1_000_000.0
 
+    # Runde 1 kampmilj?-bonus:
+    # L?fter kun sikre/relevante startere fra de st?rste favoritkampe.
+    # Skal f? N?ste runde til at l?ne sig mere mod GER/ESP/NOR/SUI/AUT/POR
+    # uden at tvinge svage picks ind.
+    round1_ev_for_favorite_bonus = pd.to_numeric(
+        work.get("round1_ev", work.get("match_1_weighted_match_ev", 0.0)),
+        errors="coerce",
+    ).fillna(0.0)
+
+    next_round_favorite_tier = work["team_id"].fillna("").astype(str).map({
+        "GER": 1.05,
+        "ESP": 1.05,
+        "NOR": 0.85,
+        "SUI": 0.85,
+        "AUT": 0.85,
+        "POR": 0.85,
+        "ARG": 0.25,
+        "FRA": 0.25,
+        "BRA": 0.25,
+        "MEX": 0.20,
+        "CAN": 0.20,
+        "BEL": 0.20,
+    }).fillna(0.0)
+
+    next_round_favorite_bonus = (
+        next_round_favorite_tier
+        * (start >= 0.75).astype(float)
+        * (round1_ev_for_favorite_bonus >= 1.00).astype(float)
+    )
+
     work["score_next_round"] = (
-        2.20 * work[f"round{target_round}_ev"]
+        next_round_favorite_bonus
+        +         2.20 * work[f"round{target_round}_ev"]
         + 0.82 * work["optimizer_ev"]
         + round_fixture_bonus(work, target_round)
         + start

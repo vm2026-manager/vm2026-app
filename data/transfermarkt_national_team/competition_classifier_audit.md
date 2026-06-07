@@ -13,21 +13,21 @@ Derudover blev historiske to-cifrede årstal som `62` fortolket som 2062. Det sk
 | Kvalifikation | 0 | 29267 |
 | Nations League | 0 | 6491 |
 | Nations League-slutrunde | 0 | 1604 |
-| Slutrunde | 0 | 17446 |
+| Slutrunde | 0 | 17445 |
 | Ukendt | 82245 | 0 |
 | Ungdomskvalifikation | 0 | 19 |
 | Ungdomsslutrunde | 0 | 94 |
-| Venskabskamp | 0 | 27294 |
+| Venskabskamp | 0 | 27766 |
 | Øvrig turnering | 0 | 30 |
 
-- Ukendt før: 82245/82245 (100.00%)
-- Ukendt efter: 0/82245 (0.00%)
+- Ukendt før: 82245/82716 (99.43%)
+- Ukendt efter: 0/82716 (0.00%)
 
 ## Konkurrencekoder
 
 | kode | rækker | kategori | mapping |
 | --- | --- | --- | --- |
-| FS | 27294 | Venskabskamp | International friendly |
+| FS | 27766 | Venskabskamp | International friendly |
 | WMQ6 | 5764 | Kvalifikation | World Cup qualification, UEFA |
 | WMQ1 | 5211 | Kvalifikation | World Cup qualification, AFC |
 | WMQ4 | 4620 | Kvalifikation | World Cup qualification, CONMEBOL |
@@ -64,7 +64,7 @@ Derudover blev historiske to-cifrede årstal som `62` fortolket som 2062. Det sk
 | OFCN | 96 | Slutrunde | OFC Nations Cup |
 | CNLQ | 76 | Nations League | CONCACAF Nations League qualification |
 | POEM | 71 | Kvalifikation | European qualification play-off |
-| AFT | 65 | Slutrunde | Regional senior national-team tournament |
+| AFT | 64 | Slutrunde | Regional senior national-team tournament |
 | CARQ | 43 | Kvalifikation | Caribbean / CONCACAF qualification |
 | GCQU | 35 | Kvalifikation | Gold Cup qualification |
 | TRIN | 30 | Øvrig turnering | Tri-nation / invitational tournament |
@@ -91,14 +91,15 @@ Derudover blev historiske to-cifrede årstal som `62` fortolket som 2062. Det sk
 ## Antonio Rüdiger
 
 - Recency/startsignal før: 0.5
-- Recency/startsignal efter: 0.2054
-- Fuld recency-historik efter: 0.6846
+- Recency/startsignal efter: 0.2008
+- Fuld recency-historik efter: 0.6695
 - Tre seneste tilgængelige observationer: 0.0
 - Endeligt recency/startsignal = 70% seneste tre tilgængelige observationer + 30% fuld recency-/konkurrencehistorik.
 - `injured` er udelukket fra udvælgelsesnævneren. `in squad` uden minutter er en tilgængelig nul-start-observation.
 
 | date | competition_raw | competition_category_label | participation_state | minutes_estimate | started_estimate_clean | recency_weight |
 | --- | --- | --- | --- | --- | --- | --- |
+| 06/06/26 | FS | Venskabskamp | in squad |  | False | 1 |
 | 31/05/26 | FS | Venskabskamp | in squad |  | False | 1 |
 | 30/03/26 | FS | Venskabskamp | played | 45 | False | 0.92 |
 | 27/03/26 | FS | Venskabskamp | in squad |  | False | 0.92 |
@@ -108,14 +109,13 @@ Derudover blev historiske to-cifrede årstal som `62` fortolket som 2062. Det sk
 | 10/10/25 | WMQ6 | Kvalifikation | injured | 0 | False | 0.68 |
 | 07/09/25 | WMQ6 | Kvalifikation | played | 82 | True | 0.68 |
 | 04/09/25 | WMQ6 | Kvalifikation | played | 90 | True | 0.68 |
-| 08/06/25 | UNFI | Nations League-slutrunde | injured | 0 | False | 0.68 |
 
 ## Juni 2026 sanity
 
 | spiller | dato | kode | kategori | status | start | recency_score |
 | --- | --- | --- | --- | --- | --- | --- |
-| Patrik Schick | 05/06/26 | FS | Venskabskamp | played | True | 0.6967 |
-| Raul Rangel | 05/06/26 | FS | Venskabskamp | played | True | 0.8131 |
-| Vladimir Darida | 05/06/26 | FS | Venskabskamp | played | False | 0.3952 |
-| Vladimir Coufal | 05/06/26 | FS | Venskabskamp | played | True | 0.7476 |
-| Cesar Montes | 05/06/26 | FS | Venskabskamp | played | True | 0.3975 |
+| Giovani Lo Celso | 07/06/26 | FS | Venskabskamp | played | True | 0.8387 |
+| Juan Musso | 07/06/26 | FS | Venskabskamp | played | True | 0.256 |
+| Geronimo Rulli | 07/06/26 | FS | Venskabskamp | in squad | False | 0.021 |
+| Julian Alvarez | 07/06/26 | FS | Venskabskamp | not in squad | False | 0.6269 |
+| Nicolas Otamendi | 07/06/26 | FS | Venskabskamp | played | True | 0.6617 |

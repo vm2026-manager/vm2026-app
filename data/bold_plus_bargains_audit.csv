@@ -1,0 +1,15 @@
+﻿wanted_name,wanted_team,status,player_id,player_name,team_id,position,price_m,start_prob,conditional_start_prob,availability_risk,match_1_opponent_team,match_1_weighted_match_ev,weighted_group_stage_ev,optimizer_ev,source_note,issue
+Cesar Montes,MEX,FOUND,c_sar_montes__mex,Cesar Montes,MEX,DEF,3.0,0.72,0.82,medium_risk,RSA,1.693344,3.47645,3.47645,,ok
+Jordan Ayew,GHA,FOUND,jordan_ayew__gha,Jordan Ayew,GHA,FWD,3.0,0.8638,0.9467,medium_risk,PAN,1.22416,2.185751,2.185751,,ok
+Nico Elvedi,SUI,FOUND,nico_elvedi__sui,Nico Elvedi,SUI,DEF,3.0,0.8748,0.9092,low_risk,QAT,1.414061,3.127364,3.127364,,ok
+Jhon Arias,COL,FOUND,jhon_arias__col,Jhon Arias,COL,MID,3.0,0.6681,0.7082,medium_risk,UZB,0.686971,1.838811,1.838811,,low_round1_ev
+Maxime Crepeau,CAN,FOUND,maxime_cr_peau__can,Maxime Crepeau,CAN,GK,3.0,0.9138,0.9138,low_risk,BIH,1.231831,2.823608,2.823608,,ok
+Johan Manzambi,SUI,FOUND,johan_manzambi__sui,Johan Manzambi,SUI,MID,3.0,0.3089,0.3188,medium_risk,QAT,0.225437,0.71559,0.71559,,low_start;low_round1_ev
+Antonee Robinson,USA,FOUND,antonee_robinson__usa,Antonee Robinson,USA,DEF,2.0,0.8279,0.9626,high_risk,PAR,0.909505,1.757094,1.757094,,ok
+Roberto Alvarado,MEX,FOUND,roberto_alvarado__mex,Roberto Alvarado,MEX,MID,2.5,0.5756,0.6356,medium_risk,RSA,1.592211,2.534724,2.534724,,low_start
+Torbj?rn Heggem,NOR,NOT_FOUND,,,,,,,,,,,,,,not_found
+Torbjorn Heggem,NOR,NOT_FOUND,,,,,,,,,,,,,,not_found
+Nathaniel Brown,GER,FOUND,nathaniel_brown__ger,Nathaniel Brown,GER,DEF,2.5,0.5469,0.5703,medium_risk,CUW,0.991773,1.813104,1.813104,,low_start
+Julian Quinones,MEX,FOUND,juli_n_qui_ones__mex,Julian Quinones,MEX,FWD,3.0,0.5348,0.6023,medium_risk,RSA,0.990545,2.018901,2.018901,,low_start
+Johan Vasquez,MEX,FOUND,johan_v_squez__mex,Johan Vasquez,MEX,DEF,3.0,0.8335,0.9415,medium_risk,RSA,1.481585,3.211513,3.211513,,ok
+Felix Nmecha,GER,FOUND,felix_nmecha__ger,Felix Nmecha,GER,MID,3.0,0.2546,0.296,high_risk,CUW,0.297015,0.700355,0.700355,,low_start;low_round1_ev

@@ -1,0 +1,6 @@
+﻿player_id,player_name,team_id,position,price,start_prob,conditional_start_prob,availability_risk,round_specific_rotation_risk,team_position_rank,start_signal_tier,start_signal_rank_adjusted,minute_share,match_1_opponent_team,match_1_weighted_match_ev,weighted_group_stage_ev,optimizer_ev,source_note
+nathaniel_brown__ger,Nathaniel Brown,GER,DEF,2500000,0.5469,0.5703,medium_risk,,3,Tvivlsom starter,0.5331314906405515,0.049718,CUW,0.991773,1.813104,1.813104,
+johan_manzambi__sui,Johan Manzambi,SUI,MID,3000000,0.3089,0.3188,medium_risk,,6,Langt fra start,0.203606081540996,0.028082,QAT,0.225437,0.71559,0.71559,
+felix_nmecha__ger,Felix Nmecha,GER,MID,3000000,0.2546,0.296,high_risk,,9,Langt fra start,0.1536300211631236,0.023145,CUW,0.297015,0.700355,0.700355,
+roberto_alvarado__mex,Roberto Alvarado,MEX,MID,2500000,0.5756,0.6356,medium_risk,,3,Tvivlsom starter,0.6069754050471775,0.052327,RSA,1.592211,2.534724,2.534724,
+juli_n_qui_ones__mex,Julian Quinones,MEX,FWD,3000000,0.5348,0.6023,medium_risk,,3,Bænk/rotation,0.5041879094594044,0.048618,RSA,0.990545,2.018901,2.018901,
