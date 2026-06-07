@@ -1526,7 +1526,89 @@
         display: none;
       }
     }
-  </style>
+  
+  /* PATCH_UI_DISABLED_ONLY_PLUS_BUTTON */
+  .trade-row.disabled,
+  .trade-row.unavailable,
+  .trade-row.not-affordable,
+  .trade-row.cannot-add,
+  .player-row.disabled,
+  .player-row.unavailable,
+  .player-row.not-affordable,
+  .player-row.cannot-add,
+  .list-row.disabled,
+  .list-row.unavailable,
+  .list-row.not-affordable,
+  .list-row.cannot-add {
+    opacity: 1 !important;
+    filter: none !important;
+  }
+
+  .trade-row.disabled > *:not(.plus-btn),
+  .trade-row.unavailable > *:not(.plus-btn),
+  .trade-row.not-affordable > *:not(.plus-btn),
+  .trade-row.cannot-add > *:not(.plus-btn),
+  .player-row.disabled > *:not(.plus-btn),
+  .player-row.unavailable > *:not(.plus-btn),
+  .player-row.not-affordable > *:not(.plus-btn),
+  .player-row.cannot-add > *:not(.plus-btn),
+  .list-row.disabled > *:not(.plus-btn),
+  .list-row.unavailable > *:not(.plus-btn),
+  .list-row.not-affordable > *:not(.plus-btn),
+  .list-row.cannot-add > *:not(.plus-btn) {
+    opacity: 1 !important;
+    filter: none !important;
+  }
+
+  .trade-row.disabled .trade-name,
+  .trade-row.disabled .trade-meta,
+  .trade-row.disabled .trade-next,
+  .trade-row.disabled .trade-price,
+  .trade-row.disabled .trade-start-col,
+  .trade-row.disabled .trade-score-col,
+  .trade-row.unavailable .trade-name,
+  .trade-row.unavailable .trade-meta,
+  .trade-row.unavailable .trade-next,
+  .trade-row.unavailable .trade-price,
+  .trade-row.unavailable .trade-start-col,
+  .trade-row.unavailable .trade-score-col,
+  .trade-row.not-affordable .trade-name,
+  .trade-row.not-affordable .trade-meta,
+  .trade-row.not-affordable .trade-next,
+  .trade-row.not-affordable .trade-price,
+  .trade-row.not-affordable .trade-start-col,
+  .trade-row.not-affordable .trade-score-col,
+  .trade-row.cannot-add .trade-name,
+  .trade-row.cannot-add .trade-meta,
+  .trade-row.cannot-add .trade-next,
+  .trade-row.cannot-add .trade-price,
+  .trade-row.cannot-add .trade-start-col,
+  .trade-row.cannot-add .trade-score-col {
+    opacity: 1 !important;
+    filter: none !important;
+    color: inherit;
+  }
+
+  .trade-row.disabled .plus-btn,
+  .trade-row.unavailable .plus-btn,
+  .trade-row.not-affordable .plus-btn,
+  .trade-row.cannot-add .plus-btn,
+  .player-row.disabled .plus-btn,
+  .player-row.unavailable .plus-btn,
+  .player-row.not-affordable .plus-btn,
+  .player-row.cannot-add .plus-btn,
+  .list-row.disabled .plus-btn,
+  .list-row.unavailable .plus-btn,
+  .list-row.not-affordable .plus-btn,
+  .list-row.cannot-add .plus-btn,
+  .plus-btn.disabled,
+  .plus-btn[disabled] {
+    opacity: 0.38 !important;
+    filter: grayscale(1) brightness(0.65) !important;
+    cursor: not-allowed !important;
+  }
+
+</style>
 
 </head>
 <body>
@@ -2136,6 +2218,35 @@
       group_stage: "Fokus p\u00e5 samlet gruppespilsv\u00e6rdi p\u00e5 tv\u00e6rs af alle tre gruppekampe.",
       long_run: "Fokus p\u00e5 spillere fra st\u00e6rke nationer med god vej videre i turneringen."
     };
+
+
+    // PATCH_SEARCH_NORMALIZE_TEXT
+    function normalizeSearchText(value) {
+      return String(value || "")
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/[??]/g, "o")
+        .replace(/[??]/g, "ae")
+        .replace(/[??]/g, "a")
+        .replace(/[??]/g, "u")
+        .replace(/[??]/g, "o")
+        .replace(/[??]/g, "a")
+        .replace(/[??]/g, "n")
+        .replace(/[??]/g, "c")
+        .toLowerCase()
+        .trim();
+    }
+
+    function playerSearchText(player) {
+      return normalizeSearchText([
+        player?.player_name,
+        player?.team_name,
+        player?.team_id,
+        teamDisplayName(player?.team_id, player?.team_name),
+        positionFullLabel(player?.position),
+        normalizePositionLabel(player?.position)
+      ].filter(Boolean).join(" "));
+    }
 
     function activeStrategyEntry() {
       return strategySquads?.[activeStrategyKey] || null;
@@ -4364,7 +4475,7 @@ function saveState() {
 
       let players = [...allPlayers];
 
-      const search = searchInput.value.trim().toLowerCase();
+      const search = normalizeSearchText(searchInput.value);
       const team = teamFilter.value;
       const position = positionFilter.value;
       const sortValue = sortSelect.value;
@@ -4411,7 +4522,7 @@ function saveState() {
 
       if (search) {
         players = players.filter(player =>
-          String(player.player_name || "").toLowerCase().includes(search)
+          playerSearchText(player).includes(search)
         );
       }
 
