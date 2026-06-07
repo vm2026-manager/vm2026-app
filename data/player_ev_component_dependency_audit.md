@@ -17,49 +17,49 @@ Audit og maalrettet rebuild efter start_prob-repair. Optimizer, strategi-output 
 
 ## Counts
 
-- Stale komponenter foer: 87
-- Stale komponenter efter: 0
-- Rækker genberegnet: 904
-- Team/match/on_pitch high-start spreads > 0.05 foer: 6
+- Stale komponenter foer: 35
+- Stale komponenter efter: 34
+- Rækker genberegnet: 1177
+- Team/match/on_pitch high-start spreads > 0.05 foer: 0
 - Team/match/on_pitch high-start spreads > 0.05 efter: 0
 - Negative on_pitch_ev for start_prob >= 0.70 foer: 0
 - Negative on_pitch_ev for start_prob >= 0.70 efter: 0
-- Stoerste high-start on_pitch spread foer: 0.067600
+- Stoerste high-start on_pitch spread foer: 0.027252
 - Stoerste high-start on_pitch spread efter: 0.027252
 - Samlet EV men manglende basekomponenter efter: 0
-- Uden EV-kilde efter: 0
-- Backup: `data\player_ev_group_stage_v1.backup_before_component_rebuild_20260607_123003.csv`
+- Uden EV-kilde efter: 20
+- Backup: `data\player_ev_group_stage_v1.backup_before_component_rebuild_20260607_165336.csv`
 
 ## Sanity-spillere
 
 | player_name | team_id | start_prob_before | start_prob_after | match_1_goal_ev_before | match_1_goal_ev_after | match_1_start_minutes_ev_before | match_1_start_minutes_ev_after | match_1_weighted_match_ev_before | match_1_weighted_match_ev_after | weighted_group_stage_ev_before | weighted_group_stage_ev_after | issue_after |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Harry Kane | ENG | 0.97 | 0.97 | 0.237501 | 0.237501 | 64.53119 | 64.53119 | 1.51232 | 1.512321 | 4.343463 | 4.599483 | ok |
-| Mike Maignan | FRA | 0.9407 | 0.9407 | 0.0 | 0.0 | 75.856167 | 75.856167 | 1.442053 | 1.442053 | 4.162266 | 4.344702 | ok |
-| Gregor Kobel | SUI | 0.9192 | 0.9192 | 0.0 | 0.0 | 73.73419 | 73.73419 | 1.669274 | 1.671619 | 3.679057 | 3.991579 | ok |
-| Antonio Nusa | NOR | 0.82 | 0.82 | 0.238437 | 0.238437 | 54.45538 | 54.45538 | 1.701233 | 1.701233 | 3.199014 | 3.697816 | ok |
-| Erling Haaland | NOR | 0.9058 | 0.9058 | 0.263386 | 0.263386 | 60.153272 | 60.153272 | 1.574396 | 1.574396 | 3.694285 | 3.442635 | ok |
-| Philipp Lienhart | AUT | 0.84 | 0.84 | 0.088531 | 0.088531 | 63.30576 | 63.30576 | 1.705033 | 1.705033 | 3.02023 | 3.02023 | ok |
-| Stefan Posch | AUT | 0.84 | 0.84 | 0.069087 | 0.069087 | 63.4662 | 63.4662 | 1.647953 | 1.647953 | 2.968204 | 2.968204 | ok |
-| Alexander Schlager | AUT | 0.9212 | 0.9212 | 0.0 | 0.0 | 73.260945 | 73.260945 | 1.49587 | 1.49587 | 2.911009 | 2.911009 | ok |
-| Alexander Sørloth | NOR | 0.8805 | 0.8805 | 0.187096 | 0.187096 | 58.473125 | 58.473125 | 1.25329 | 1.253291 | 3.0383 | 2.76645 | ok |
-| Jules Kounde | FRA | 0.6814 | 0.6814 |  |  |  |  | 0.907738 | 0.907738 | 2.88355 | 2.702052 | ok |
-| Martin Ødegaard | NOR | 0.8841 | 0.8841 | 0.079099 | 0.079099 | 62.248597 | 62.248597 | 0.823323 | 0.823323 | 2.289866 | 1.787782 | ok |
-| Manuel Neuer | GER | 0.2645 | 0.2645 |  |  |  |  | 0.988455 | 0.786729 | 2.080418 | 1.654787 | ok |
-| Maximilian Wöber | AUT | 0.559 | 0.559 | 0.022139 | 0.022139 | 41.834654 | 41.834654 | 0.901258 | 0.901258 | 1.6378 | 1.6378 | ok |
-| Kevin Danso | AUT | 0.3346 | 0.3346 | 0.012368 | 0.012368 | 24.999832 | 24.999832 | 0.618315 | 0.618315 | 1.077068 | 1.217594 | ok |
-| Raphinha | BRA | 0.86 | 0.86 |  |  |  |  | 0.228093 | 0.228093 | 2.052412 | 0.557194 | ok |
-| Patrick Pentz | AUT | 0.0538 | 0.0538 | 0.0 | 0.0 | 4.324914 | 4.324914 | 0.217097 | 0.217097 | 0.31361 | 0.447118 | ok |
+| Mike Maignan | FRA | 0.9407 | 0.9407 | 0.0 | 0.0 | 75.856167 | 75.856167 | 1.442053 | 1.432882 | 4.227811 | 17.250604 | ok |
+| Manuel Neuer | GER | 0.2771 | 0.2771 | 0.0 | 0.0 |  |  | 0.811008 | 0.800258 | 1.666128 | 16.33198 | ok |
+| Raphinha | BRA | 0.86 | 0.86 | 0.0 | 0.0 |  |  | 0.228093 | 0.228316 | 2.338525 | 14.236737 | ok |
+| Jules Kounde | FRA | 0.6814 | 0.6814 | 0.0 | 0.0 |  |  | 0.907738 | 0.899625 | 2.94753 | 14.11902 | ok |
+| Alexander Schlager | AUT | 0.9212 | 0.9212 | 0.0 | 0.0 | 73.260945 | 73.260945 | 1.495869 | 1.484124 | 2.909014 | 13.732106 | ok |
+| Harry Kane | ENG | 0.97 | 0.97 | 0.293884 | 0.293884 | 64.53119 | 64.53119 | 1.776307 | 1.772914 | 5.248523 | 13.020765 | ok |
+| Philipp Lienhart | AUT | 0.84 | 0.84 | 0.119517 | 0.119517 | 63.30576 | 63.30576 | 1.917802 | 1.907734 | 3.196748 | 12.606667 | ok |
+| Stefan Posch | AUT | 0.84 | 0.84 | 0.093267 | 0.093267 | 63.4662 | 63.4662 | 1.834427 | 1.824359 | 3.12944 | 12.484289 | ok |
+| Gregor Kobel | SUI | 0.9145 | 0.9145 | 0.0 | 0.0 | 73.73419 | 73.73419 | 1.664269 | 1.667305 | 3.698663 | 9.71441 | ok |
+| Kevin Danso | AUT | 0.3346 | 0.3346 | 0.016697 | 0.016697 | 24.999832 | 24.999832 | 0.652242 | 0.643689 | 1.112871 | 9.031111 | ok |
+| Antonio Nusa | NOR | 0.82 | 0.82 | 0.32189 | 0.32189 | 54.45538 | 54.45538 | 2.165674 | 2.172641 | 3.63366 | 8.685508 | ok |
+| Erling Haaland | NOR | 0.9058 | 0.9058 | 0.355571 | 0.355571 | 60.153272 | 60.153272 | 1.995246 | 2.00182 | 4.241624 | 8.129447 | ok |
+| Alexander Sørloth | NOR | 0.8805 | 0.8805 | 0.25258 | 0.25258 | 58.473125 | 58.473125 | 1.565882 | 1.572272 | 3.452912 | 7.218725 | ok |
+| Patrick Pentz | AUT | 0.0538 | 0.0538 | 0.0 | 0.0 | 4.324914 | 4.324914 | 0.217096 | 0.209807 | 0.313331 | 7.078323 | ok |
+| Martin Ødegaard | NOR | 0.8841 | 0.8841 | 0.106784 | 0.106784 | 62.248597 | 62.248597 | 1.025325 | 1.031741 | 2.593366 | 6.136805 | ok |
+| Maximilian Wöber | AUT | 0.0 | 0.0 | 0.029888 | 0.029888 | 41.834654 | 41.834654 | 0.961987 | 0.961987 | 0.0 | 0.0 | stale_start_dependent_components |
 
 ## NOR vs IRQ efter
 
 | player_name | start_prob | match_1_result_ev | match_1_team_scores_ev | match_1_opponent_scores_ev | match_1_on_pitch_ev |
 | --- | --- | --- | --- | --- | --- |
-| Erling Haaland | 0.9058 | 0.153239 | 0.068484 | -0.056942 | 0.058696 |
-| Martin Ødegaard | 0.8841 | 0.149568 | 0.066844 | -0.055579 | 0.056092 |
-| Alexander Sørloth | 0.8805 | 0.148959 | 0.066572 | -0.055352 | 0.05566 |
-| Antonio Nusa | 0.82 | 0.162408 | 0.072582 | -0.06035 | 0.0652 |
-| Oscar Bobb | 0.6439 | 0.156927 | 0.070133 | -0.058313 | 0.061312 |
+| Erling Haaland | 0.9058 | 0.153239 | 0.09058 | -0.072464 | 0.058696 |
+| Martin Ødegaard | 0.8841 | 0.149568 | 0.08841 | -0.070728 | 0.056092 |
+| Alexander Sørloth | 0.8805 | 0.148959 | 0.08805 | -0.07044 | 0.05566 |
+| Antonio Nusa | 0.82 | 0.162408 | 0.096 | -0.0768 | 0.0652 |
+| Oscar Bobb | 0.58 | 0.156927 | 0.09276 | -0.074208 | 0.061312 |
 
 ## Saerlige rodarsager
 
@@ -78,3 +78,15 @@ Audit og maalrettet rebuild efter start_prob-repair. Optimizer, strategi-output 
 
 | player_name | team_id | position | weighted_group_stage_ev | suspected_issue |
 | --- | --- | --- | --- | --- |
+| Christoph Baumgartner | AUT | MID | 0.0 | no_player_ev_source |
+| Viljar Myhra | NOR | GK | 0.0 | no_player_ev_source |
+| Bruno Varela | CPV | GK | 0.0 | no_player_ev_source |
+| Scott Bain | SCO | GK | 0.0 | no_player_ev_source |
+| Noureddine Farhati | TUN | GK | 0.0 | no_player_ev_source |
+| Bechir Ben Said | TUN | GK | 0.0 | no_player_ev_source |
+| Maarten Vandevoordt | BEL | GK | 0.0 | no_player_ev_source |
+| Matz Sels | BEL | GK | 0.0 | no_player_ev_source |
+| Solomon Agbasi | GHA | GK | 0.0 | no_player_ev_source |
+| Paul Reverson | GHA | GK | 0.0 | no_player_ev_source |
+| Bento Krepski | BRA | GK | 0.0 | no_player_ev_source |
+| Melker Ellborg | SWE | GK | 0.0 | no_player_ev_source |

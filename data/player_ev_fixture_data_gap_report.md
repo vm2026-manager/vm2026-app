@@ -4,46 +4,46 @@ Repairen canonicaliserer kun sikre Holdet-team aliases og fordeler eksisterende 
 
 ## Counts
 
-- Gaps foer: 539
-- Gaps efter: 87
-- Placeholder IDs/teams foer: 24
+- Gaps foer: 280
+- Gaps efter: 280
+- Placeholder IDs/teams foer: 0
 - Placeholder IDs/teams efter: 0
-- Missing round context for existing EV foer: 405
+- Missing round context for existing EV foer: 0
 - Missing round context for existing EV efter: 0
-- Player-pool identity changes: 24
-- EV identity changes: 24
-- EV restored from existing price-quality diagnostics: 51
-- Pool EV restored from existing price-quality diagnostics: 86
-- Round contexts filled from existing optimizer EV: 539
+- Player-pool identity changes: 0
+- EV identity changes: 0
+- EV restored from existing price-quality diagnostics: 1
+- Pool EV restored from existing price-quality diagnostics: 0
+- Round contexts filled from existing optimizer EV: 279
 
 ## Remaining no-EV-source examples
 
-- Nathaniel Brown | GER | DEF | 2500000
-- Maxence Lacroix | FRA | DEF | 3000000
-- Jules Kounde | FRA | DEF | 3500000
-- Marc Pubill | ESP | DEF | 3000000
-- Eric Garcia | ESP | DEF | 3000000
-- Djed Spence | ENG | DEF | 2500000
-- Jarell Quansah | ENG | DEF | 2500000
-- Ko Itakura | JPN | DEF | 2000000
-- Takehiro Tomiyasu | JPN | DEF | 2000000
-- Gi-hyuk Lee | KOR | DEF | 2000000
-- Francis de Vries | NZL | DEF | 2500000
-- Michael Boxall | NZL | DEF | 2000000
-- Tommy Smith | NZL | DEF | 2000000
-- Nando Pijnaker | NZL | DEF | 2000000
-- Yerry Mina | COL | DEF | 3000000
-- Willer Ditta | COL | DEF | 2500000
-- Karim Hafez | EGY | DEF | 2000000
-- Issa Diop | MAR | DEF | 2500000
-- Raed Chikhaoui | TUN | DEF | 2000000
-- Moustapha Mbow | SEN | DEF | 2000000
-- Aaron Hickey | SCO | DEF | 2500000
-- Logan Costa | CPV | DEF | 2500000
-- Sondre Langås | NOR | DEF | 2000000
-- Armando Obispo | CUW | DEF | 2000000
-- Deveron Fonville | CUW | DEF | 2000000
-- ... plus 62 flere i CSV.
+- Christoph Baumgartner | AUT | MID | 3500000
+- Becir Omeragic | SUI | DEF | 2000000
+- Cedric Zesiger | SUI | DEF | 2000000
+- Isaac Schmidt | SUI | DEF | 2000000
+- Adrian Bajrami | SUI | DEF | 2000000
+- Lucas Blondel | SUI | DEF | 2000000
+- David Zima | CZE | DEF | 2000000
+- Nuno Tavares | POR | DEF | 3500000
+- Antonio Silva | POR | DEF | 3500000
+- Caglar Soyuncu | TUR | DEF | 2500000
+- David Affengruber | AUT | DEF | 2500000
+- Michael Svoboda | AUT | DEF | 2500000
+- Ivan Smolcic | CRO | DEF | 2000000
+- Maximilian Mittelstädt | GER | DEF | 3500000
+- Robin Koch | GER | DEF | 3500000
+- Pierre Kalulu | FRA | DEF | 3000000
+- Dean Donny Huijsen | ESP | DEF | 4000000
+- Robin Le Normand | ESP | DEF | 4500000
+- Daniel Vivian | ESP | DEF | 3500000
+- Victor Eriksson | SWE | DEF | 2000000
+- Mohamed Amine Tougai | ALG | DEF | 2000000
+- Jaouen Hadjam | ALG | DEF | 2500000
+- Samir Chergui | ALG | DEF | 2000000
+- Lisandro Martinez | ARG | DEF | 3000000
+- Facundo Medina | ARG | DEF | 2500000
+- ... plus 255 flere i CSV.
 
 ## Remaining round-context examples
 

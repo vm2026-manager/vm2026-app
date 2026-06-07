@@ -1,0 +1,1126 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260607152753
+Username: DESKTOP-7JDPP22\Administrator
+RunAs User: DESKTOP-7JDPP22\Administrator
+Configuration Name: 
+Machine: DESKTOP-7JDPP22 (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File .\tools\run_holdet_master_new_players_pipeline.ps1
+Process ID: 32976
+PSVersion: 5.1.19041.6456
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.6456
+BuildVersion: 10.0.19041.6456
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is data\holdet_master_new_players_pipeline_20260607_152753.log
+=== HOLDET MASTER PIPELINE ===
+Backup dir: data\backup_before_holdet_master_pipeline_20260607_152751
+New active Holdet players to Transfermarkt refresh: 140
+=== 1/12 Build player_pool from Holdet 616 master ===
+
+BUILD OFFICIAL PLAYER POOL FROM HOLDET 616
+Officielle Holdet-spillere: 1519
+Kopieret med gamle model-/EV-felter: 1289 / 1519
+Nye officielle spillere uden gammelt match: 230 / 1519
+
+Positioner:
+MID    514
+DEF    502
+FWD    318
+GK     185
+
+Hold:
+48 unikke team_id
+
+Team-id check, Kroatien:
+(ingen Croatia-rækker fundet)
+
+Pris:
+Min:    2.000.000
+Median: 2.500.000
+Max:    10.000.000
+
+Matchmetode:
+old_match_method
+exact_name_team    1288
+unmatched           230
+fuzzy_name_team       1
+
+Laveste fuzzy-matchscore:
+holdet_player_name holdet_team_name position   old_player_name old_team_name  old_match_score
+   Firas Al Brikan    Saudi-Arabien      FWD Firas Al-Buraikan Saudi-Arabien           0.9375
+
+Første 30 officielle spillere uden gammelt match:
+    holdet_player_name holdet_team_name team_id position   price
+        Becir Omeragic          Schweiz     SUI      DEF 2000000
+        Cedric Zesiger          Schweiz     SUI      DEF 2000000
+         Isaac Schmidt          Schweiz     SUI      DEF 2000000
+        Adrian Bajrami          Schweiz     SUI      DEF 2000000
+         Lucas Blondel          Schweiz     SUI      DEF 2000000
+            David Zima         Tjekkiet     CZE      DEF 2000000
+          Nuno Tavares         Portugal     POR      DEF 3500000
+         Antonio Silva         Portugal     POR      DEF 3500000
+        Caglar Soyuncu          Tyrkiet     TUR      DEF 2500000
+     David Affengruber           Østrig     AUT      DEF 2500000
+       Michael Svoboda           Østrig     AUT      DEF 2500000
+          Ivan Smolcic         Kroatien     CRO      DEF 2000000
+Maximilian Mittelstädt         Tyskland     GER      DEF 3500000
+       Victor Eriksson          Sverige     SWE      DEF 2000000
+  Mohamed Amine Tougai         Algeriet     ALG      DEF 2000000
+         Jaouen Hadjam         Algeriet     ALG      DEF 2500000
+         Samir Chergui         Algeriet     ALG      DEF 2000000
+     Lisandro Martinez        Argentina     ARG      DEF 3000000
+        Facundo Medina        Argentina     ARG      DEF 2500000
+         Harry Souttar       Australien     AUS      DEF 2500000
+     Christopher Operi  Elfenbenskysten     CIV      DEF 2000000
+         Harry Maguire          England     ENG      DEF 3000000
+           Alidu Seidu            Ghana     GHA      DEF 2500000
+     Abdul Rahman Baba            Ghana     GHA      DEF 2500000
+           Abdul Mumin            Ghana     GHA      DEF 2000000
+         Jonas Adjetey            Ghana     GHA      DEF 2500000
+           Tomoya Ando            Japan     JPN      DEF 2000000
+       Henry Mochizuki            Japan     JPN      DEF 2000000
+        Daiki Hashioka            Japan     JPN      DEF 2000000
+           Ju-sung Kim         Sydkorea     KOR      DEF 2000000
+
+Filer skrevet:
+Preview:   C:\Users\Administrator\Documents\GitHub\vm2026-app\data\player_pool_v1_from_holdet_616_PREVIEW.json
+Diagnose:  C:\Users\Administrator\Documents\GitHub\vm2026-app\data\build_player_pool_from_holdet_616_diagnostics.csv
+Unmatched: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\build_player_pool_from_holdet_616_unmatched_holdet.cs
+v
+
+SKREV ÆNDRINGER
+Backup:    C:\Users\Administrator\Documents\GitHub\vm2026-app\data\player_pool_v1.backup_before_official_holdet_master_2
+0260607_152800.json
+Opdateret: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\player_pool_v1.json
+=== 2/12 Rebase EV to Holdet master ===
+
+REBASERET PLAYER EV TIL HOLDET-MASTER
+Officielle spillere i player_pool: 1519
+Rækker skrevet til EV-fil: 1519
+
+Matchmetode:
+ev_match_method
+name_team_position    1288
+unmatched              231
+
+Positioner:
+position
+MID    514
+DEF    502
+FWD    318
+GK     185
+
+EV:
+Sum:    1448.029
+Mean:   0.9533
+Median: 0.5603
+
+Backup:
+C:\Users\Administrator\Documents\GitHub\vm2026-app\data\player_ev_group_stage_v1.backup_before_holdet_rebase_20260607_15
+2801.csv
+
+Skrev:
+C:\Users\Administrator\Documents\GitHub\vm2026-app\data\player_ev_group_stage_v1.csv
+C:\Users\Administrator\Documents\GitHub\vm2026-app\data\rebase_player_ev_to_holdet_master_diagnostics.csv
+C:\Users\Administrator\Documents\GitHub\vm2026-app\data\rebase_player_ev_to_holdet_master_unmatched.csv
+
+Første 25 uden EV-match:
+                  player_id            player_name team_id position   price ev_match_method  ev_match_score  weighted_gr
+oup_stage_ev  start_prob
+        becir_omeragic__sui         Becir Omeragic     SUI      DEF 2000000       unmatched        0.521739
+         0.0        0.25
+        cedric_zesiger__sui         Cedric Zesiger     SUI      DEF 2000000       unmatched        0.615385
+         0.0        0.25
+         isaac_schmidt__sui          Isaac Schmidt     SUI      DEF 2000000       unmatched        0.466667
+         0.0        0.25
+        adrian_bajrami__sui         Adrian Bajrami     SUI      DEF 2000000       unmatched        0.518519
+         0.0        0.25
+         lucas_blondel__sui          Lucas Blondel     SUI      DEF 2000000       unmatched        0.461538
+         0.0        0.25
+            david_zima__cze             David Zima     CZE      DEF 2000000       unmatched        0.560000
+         0.0        0.25
+          nuno_tavares__por           Nuno Tavares     POR      DEF 3500000       unmatched        0.608696
+         0.0        0.25
+         antonio_silva__por          Antonio Silva     POR      DEF 3500000       unmatched        0.636364
+         0.0        0.25
+        caglar_soyuncu__tur         Caglar Soyuncu     TUR      DEF 2500000       unmatched        0.560000
+         0.0        0.25
+     david_affengruber__aut      David Affengruber     AUT      DEF 2500000       unmatched        0.451613
+         0.0        0.25
+       michael_svoboda__aut        Michael Svoboda     AUT      DEF 2500000       unmatched        0.529412
+         0.0        0.25
+          ivan_smolcic__cro           Ivan Smolcic     CRO      DEF 2000000       unmatched        0.666667
+         0.0        0.25
+maximilian_mittelstadt__ger Maximilian Mittelstädt     GER      DEF 3500000       unmatched        0.684211
+         0.0        0.25
+       victor_eriksson__swe        Victor Eriksson     SWE      DEF 2000000       unmatched        0.645161
+         0.0        0.25
+  mohamed_amine_tougai__alg   Mohamed Amine Tougai     ALG      DEF 2000000       unmatched        0.774194
+         0.0        0.25
+         jaouen_hadjam__alg          Jaouen Hadjam     ALG      DEF 2500000       unmatched        0.551724
+         0.0        0.25
+         samir_chergui__alg          Samir Chergui     ALG      DEF 2000000       unmatched        0.608696
+         0.0        0.25
+     lisandro_martinez__arg      Lisandro Martinez     ARG      DEF 3000000       unmatched        0.823529
+         0.0        0.25
+        facundo_medina__arg         Facundo Medina     ARG      DEF 2500000       unmatched        0.518519
+         0.0        0.25
+         harry_souttar__aus          Harry Souttar     AUS      DEF 2500000       unmatched        0.461538
+         0.0        0.25
+     christopher_operi__civ      Christopher Operi     CIV      DEF 2000000       unmatched        0.588235
+         0.0        0.25
+         harry_maguire__eng          Harry Maguire     ENG      DEF 3000000       unmatched        0.695652
+         0.0        0.25
+           alidu_seidu__gha            Alidu Seidu     GHA      DEF 2500000       unmatched        0.476190
+         0.0        0.25
+     abdul_rahman_baba__gha      Abdul Rahman Baba     GHA      DEF 2500000       unmatched        0.631579
+         0.0        0.25
+           abdul_mumin__gha            Abdul Mumin     GHA      DEF 2000000       unmatched        0.571429
+         0.0        0.25
+=== 3/12 Transfermarkt refresh for new active Holdet players ===
+Transfermarkt chunk 1: 25 players
+TRANSFERMARKT NATIONAL USAGE BATCH
+================================================================================
+Player pool: 1519
+Cache rows: 1292
+Manual URL rows: 28
+Manual URL matched: 23
+Manual-only: False
+Manual names: Aaron Tshibola, Abbosbek Fayzullaev, Abdul Mumin, Abdul Rahman Baba, Abdulla Abdullaev, Adam Hlozek, Agust
+in Canobbio, Ahmed Al-Ganehi, Ahmed Al-Kassar, Ahmed Qasem, Ahmed Reda Tagnaouti, Ahmed Yahya, Al-Hashmi Al-Hussain, Ala
+a Hejji, Alberto Quintero, Alejandro Romero Gamarra, Alex Zendejas, Alexandr Sojka, Alexandro Maidana, Alfie Jones, Ali
+Lajami, Ali Olwan, Alidu Seidu, Amir Mohammad Razzaghinia, Anas Badawi
+Refresh: True
+Max this run: 25
+Selected for run: 25
+
+[1/25] Ali Olwan | JOR | FWD | 3.5 mio.
+  OK: caps=58 caps_link=True source=ceapi_performance_game latest=2026-05-31 recent20_start=0.55 usage=0.6525
+  National URL: https://www.transfermarkt.de/ali-olwan/nationalmannschaft/spieler/664057/verein_id/15737
+[2/25] Alejandro Romero Gamarra | PAR | MID | 3.0 mio.
+  FEJL: Ingen Transfermarkt-profil fundet
+[3/25] Alidu Seidu | GHA | DEF | 2.5 mio.
+  OK: caps=24 caps_link=True source=ceapi_performance_game latest=2026-06-02 recent20_start=0.35 usage=0.3385
+  National URL: https://www.transfermarkt.de/alidu-seidu/nationalmannschaft/spieler/798404/verein_id/3441
+[4/25] Ahmed Reda Tagnaouti | MAR | GK | 2.5 mio.
+  OK: caps=3 caps_link=True source=ceapi_performance_game latest=2026-06-02 recent20_start=0.0 usage=0.012
+  National URL: https://www.transfermarkt.de/ahmed-reda-tagnaouti/nationalmannschaft/spieler/238997/verein_id/3575
+[5/25] Ahmed Al-Kassar | KSA | GK | 2.5 mio.
+  OK: caps=9 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.05 usage=0.0885
+  National URL: https://www.transfermarkt.de/ahmed-al-kassar/nationalmannschaft/spieler/177956/verein_id/3807
+[6/25] Agustin Canobbio | URU | MID | 2.5 mio.
+  OK: caps=14 caps_link=True source=ceapi_performance_game latest=2026-03-31 recent20_start=0.1 usage=0.161
+  National URL: https://www.transfermarkt.de/agustin-canobbio/nationalmannschaft/spieler/457533/verein_id/3449
+[7/25] Adam Hlozek | CZE | FWD | 2.5 mio.
+  OK: caps=43 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.15 usage=0.2795
+  National URL: https://www.transfermarkt.de/adam-hlozek/nationalmannschaft/spieler/552057/verein_id/3445
+[8/25] Abdul Rahman Baba | GHA | DEF | 2.5 mio.
+  OK: caps=51 caps_link=True source=ceapi_performance_game latest=2026-06-02 recent20_start=0.0 usage=0.2
+  National URL: https://www.transfermarkt.de/abdul-rahman-baba/nationalmannschaft/spieler/224884/verein_id/3441
+[9/25] Abbosbek Fayzullaev | UZB | MID | 2.5 mio.
+  OK: caps=31 caps_link=True source=ceapi_performance_game latest=2026-06-02 recent20_start=0.6 usage=0.554
+  National URL: https://www.transfermarkt.de/abbosbek-fayzullaev/nationalmannschaft/spieler/754037/verein_id/3563
+[10/25] Anas Badawi | JOR | DEF | 2.0 mio.
+  OK: caps=1 caps_link=True source=ceapi_performance_game latest=2026-05-31 recent20_start=0.0 usage=0.004
+  National URL: https://www.transfermarkt.de/anas-badawi/nationalmannschaft/spieler/1378902/verein_id/15737
+[11/25] Amir Mohammad Razzaghinia | IRN | MID | 2.0 mio.
+  OK: caps=4 caps_link=True source=ceapi_performance_game latest=2026-06-04 recent20_start=0.214 usage=0.1837
+  National URL: https://www.transfermarkt.de/amirmohammad-razzaghinia/nationalmannschaft/spieler/1051591/verein_id/3582
+[12/25] Ali Lajami | KSA | DEF | 2.0 mio.
+  OK: caps=21 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.1 usage=0.189
+  National URL: https://www.transfermarkt.de/ali-lajami/nationalmannschaft/spieler/264909/verein_id/3807
+[13/25] Alfie Jones | CAN | DEF | 2.0 mio.
+  OK: caps=2 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.167 usage=0.1416
+  National URL: https://www.transfermarkt.de/alfie-jones/nationalmannschaft/spieler/340990/verein_id/3510
+[14/25] Alexandro Maidana | PAR | DEF | 2.0 mio.
+  OK: caps=2 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.0 usage=0.008
+  National URL: https://www.transfermarkt.de/alexandro-maidana/nationalmannschaft/spieler/1371519/verein_id/3581
+[15/25] Alexandr Sojka | CZE | MID | 2.0 mio.
+  OK: caps=2 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.5 usage=0.408
+  National URL: https://www.transfermarkt.de/alexandr-sojka/nationalmannschaft/spieler/826103/verein_id/3445
+[16/25] Alex Zendejas | USA | MID | 2.0 mio.
+  OK: caps=14 caps_link=True source=ceapi_performance_game latest=2026-06-06 recent20_start=0.05 usage=0.1085
+  National URL: https://www.transfermarkt.de/alex-zendejas/nationalmannschaft/spieler/351505/verein_id/3505
+[17/25] Alberto Quintero | PAN | MID | 2.0 mio.
+  FEJL: Ingen kampoversigtstabel fundet
+[18/25] Alaa Hejji | KSA | MID | 2.0 mio.
+  OK: caps=2 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.0 usage=0.008
+  National URL: https://www.transfermarkt.de/alaa-hejji/nationalmannschaft/spieler/443937/verein_id/3807
+[19/25] Al-Hashmi Al-Hussain | QAT | DEF | 2.0 mio.
+  OK: caps=9 caps_link=True source=ceapi_performance_game latest=2026-06-06 recent20_start=0.3 usage=0.301
+  National URL: https://www.transfermarkt.de/al-hashmi-al-hussain/nationalmannschaft/spieler/943150/verein_id/14162
+[20/25] Ahmed Yahya | IRQ | DEF | 2.0 mio.
+  OK: caps=19 caps_link=True source=ceapi_performance_game latest=2026-06-04 recent20_start=0.25 usage=0.2885
+  National URL: https://www.transfermarkt.de/ahmed-yahya/nationalmannschaft/spieler/949320/verein_id/3560
+[21/25] Ahmed Qasem | IRQ | MID | 2.0 mio.
+  OK: caps=2 caps_link=True source=ceapi_performance_game latest=2026-06-04 recent20_start=0.5 usage=0.408
+  National URL: https://www.transfermarkt.de/ahmed-qasem/nationalmannschaft/spieler/833817/verein_id/3560
+[22/25] Ahmed Al-Ganehi | QAT | MID | 2.0 mio.
+  OK: caps=13 caps_link=True source=ceapi_performance_game latest=2026-06-06 recent20_start=0.25 usage=0.2145
+  National URL: https://www.transfermarkt.de/ahmed-al-ganehi/nationalmannschaft/spieler/670659/verein_id/14162
+[23/25] Abdulla Abdullaev | UZB | DEF | 2.0 mio.
+  FEJL: Ingen kampoversigtstabel fundet
+[24/25] Abdul Mumin | GHA | DEF | 2.0 mio.
+  OK: caps=5 caps_link=True source=ceapi_performance_game latest=2026-06-02 recent20_start=0.1 usage=0.075
+  National URL: https://www.transfermarkt.de/abdul-mumin/nationalmannschaft/spieler/451801/verein_id/3441
+[25/25] Aaron Tshibola | COD | DEF | 2.0 mio.
+  OK: caps=16 caps_link=True source=ceapi_performance_game latest=2026-06-03 recent20_start=0.0 usage=0.064
+  National URL: https://www.transfermarkt.de/aaron-tshibola/nationalmannschaft/spieler/243633/verein_id/3854
+
+================================================================================
+FÃ¦rdig. OK=22, fejl=3
+Skrev cache: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_national_team\transfermarkt_player_ur
+l_cache.csv
+Skrev summary: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_national_team\player_national_team_
+usage_transfermarkt.csv
+Skrev manual audit: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_manual_url_integration_audit.c
+sv
+Skrev manual audit: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_manual_url_integration_audit.m
+d
+
+KÃ¸r scriptet igen for nÃ¦ste batch.
+Transfermarkt chunk 2: 25 players
+TRANSFERMARKT NATIONAL USAGE BATCH
+================================================================================
+Player pool: 1519
+Cache rows: 1317
+Manual URL rows: 28
+Manual URL matched: 23
+Manual-only: False
+Manual names: Arya Yousefi, Assan Ouedraogo, Augustine Boakye, Auston Trusty, Avazbek Ulmasaliyev, Ayoube Amaimouni-Echg
+houyab, Ayyoub Bouaddi, Azarias Londono, Azizbek Amanov, Behruzjon Karimov, Bradley Cross, Caglar Soyuncu, Cameron Devli
+n, Can Uzun, Carney Chukwuemeka, Cesar Huerta, Christopher Operi, Cristian Volpato, Daniyal Eiri, David Affengruber, Dav
+id Doudera, David Zima, Denil Castillo, Dennis 'Dargahi' Eckert Ayensa, Edgardo Farina
+Refresh: True
+Max this run: 25
+Selected for run: 25
+
+[1/25] Can Uzun | TUR | FWD | 3.5 mio.
+  OK: caps=6 caps_link=True source=ceapi_performance_game latest=2026-06-06 recent20_start=0.05 usage=0.0765
+  National URL: https://www.transfermarkt.de/can-uzun/nationalmannschaft/spieler/816585/verein_id/3381
+[2/25] Assan Ouedraogo | GER | MID | 3.0 mio.
+  OK: caps=1 caps_link=True source=ceapi_performance_game latest=2026-06-06 recent20_start=0.0 usage=0.004
+  National URL: https://www.transfermarkt.de/assan-ouedraogo/nationalmannschaft/spieler/897424/verein_id/3262
+[3/25] Denil Castillo | ECU | MID | 2.5 mio.
+  OK: caps=5 caps_link=True source=ceapi_performance_game latest=2026-05-31 recent20_start=0.05 usage=0.0725
+  National URL: https://www.transfermarkt.de/denil-castillo/nationalmannschaft/spieler/941418/verein_id/5750
+[4/25] David Affengruber | AUT | DEF | 2.5 mio.
+  OK: caps=1 caps_link=True source=ceapi_performance_game latest=2026-06-01 recent20_start=0.0 usage=0.004
+  National URL: https://www.transfermarkt.de/david-affengruber/nationalmannschaft/spieler/452483/verein_id/3383
+[5/25] Cristian Volpato | AUS | MID | 2.5 mio.
+  OK: caps=1 caps_link=True source=ceapi_performance_game latest=2026-06-06 recent20_start=1.0 usage=0.804
+  National URL: https://www.transfermarkt.de/cristian-volpato/nationalmannschaft/spieler/746891/verein_id/3433
+[6/25] Cesar Huerta | MEX | MID | 2.5 mio.
+  OK: caps=26 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.0 usage=0.104
+  National URL: https://www.transfermarkt.de/cesar-huerta/nationalmannschaft/spieler/540315/verein_id/6303
+[7/25] Carney Chukwuemeka | AUT | MID | 2.5 mio.
+  OK: caps=3 caps_link=True source=ceapi_performance_game latest=2026-06-01 recent20_start=0.0 usage=0.012
+  National URL: https://www.transfermarkt.de/carney-chukwuemeka/nationalmannschaft/spieler/659459/verein_id/3383
+[8/25] Caglar Soyuncu | TUR | DEF | 2.5 mio.
+  OK: caps=60 caps_link=True source=ceapi_performance_game latest=2026-06-06 recent20_start=0.25 usage=0.3875
+  National URL: https://www.transfermarkt.de/caglar-soyuncu/nationalmannschaft/spieler/320141/verein_id/3381
+[9/25] Ayoube Amaimouni-Echghouyab | MAR | MID | 2.5 mio.
+  OK: caps=1 caps_link=True source=ceapi_performance_game latest=2026-06-02 recent20_start=0.5 usage=0.404
+  National URL: https://www.transfermarkt.de/ayoube-amaimouni-echghouyab/nationalmannschaft/spieler/799993/verein_id/357
+5
+[10/25] Auston Trusty | USA | DEF | 2.5 mio.
+  OK: caps=8 caps_link=True source=ceapi_performance_game latest=2026-06-06 recent20_start=0.1 usage=0.137
+  National URL: https://www.transfermarkt.de/auston-trusty/nationalmannschaft/spieler/389253/verein_id/3505
+[11/25] Edgardo Farina | PAN | DEF | 2.0 mio.
+  OK: caps=18 caps_link=True source=ceapi_performance_game latest=2026-06-06 recent20_start=0.15 usage=0.2045
+  National URL: https://www.transfermarkt.de/edgardo-farina/nationalmannschaft/spieler/923177/verein_id/3577
+[12/25] Dennis 'Dargahi' Eckert Ayensa | IRN | FWD | 2.0 mio.
+  FEJL: 500 Server Error: Internal Server Error for url: https://www.transfermarkt.com/schnellsuche/ergebnis/schnellsuch
+e?query=Dennis+%27Dargahi%27+Eckert+Ayensa
+[13/25] David Zima | CZE | DEF | 2.0 mio.
+  OK: caps=25 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.15 usage=0.1825
+  National URL: https://www.transfermarkt.de/david-zima/nationalmannschaft/spieler/544149/verein_id/3445
+[14/25] David Doudera | CZE | MID | 2.0 mio.
+  OK: caps=17 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.15 usage=0.2255
+  National URL: https://www.transfermarkt.de/david-doudera/nationalmannschaft/spieler/493758/verein_id/3445
+[15/25] Daniyal Eiri | IRN | DEF | 2.0 mio.
+  FEJL: Ingen Transfermarkt-profil fundet
+[16/25] Christopher Operi | CIV | DEF | 2.0 mio.
+  OK: caps=12 caps_link=True source=ceapi_performance_game latest=2026-06-04 recent20_start=0.25 usage=0.2105
+  National URL: https://www.transfermarkt.de/christopher-operi/nationalmannschaft/spieler/469976/verein_id/3591
+[17/25] Cameron Devlin | AUS | MID | 2.0 mio.
+  OK: caps=5 caps_link=True source=ceapi_performance_game latest=2026-06-06 recent20_start=0.0 usage=0.02
+  National URL: https://www.transfermarkt.de/cammy-devlin/nationalmannschaft/spieler/399162/verein_id/3433
+[18/25] Bradley Cross | RSA | DEF | 2.0 mio.
+  OK: caps=1 caps_link=True source=ceapi_performance_game latest=2026-05-29 recent20_start=0.0 usage=0.004
+  National URL: https://www.transfermarkt.de/bradley-cross/nationalmannschaft/spieler/555209/verein_id/3806
+[19/25] Behruzjon Karimov | UZB | DEF | 2.0 mio.
+  FEJL: Ingen Transfermarkt-profil fundet
+[20/25] Azizbek Amanov | UZB | FWD | 2.0 mio.
+  OK: caps=12 caps_link=True source=ceapi_performance_game latest=2026-06-02 recent20_start=0.0 usage=0.048
+  National URL: https://www.transfermarkt.de/azizbek-amanov/nationalmannschaft/spieler/517918/verein_id/3563
+[21/25] Azarias Londono | PAN | MID | 2.0 mio.
+  OK: caps=12 caps_link=True source=ceapi_performance_game latest=2026-06-06 recent20_start=0.2 usage=0.208
+  National URL: https://www.transfermarkt.de/azarias-londono/nationalmannschaft/spieler/860998/verein_id/3577
+[22/25] Ayyoub Bouaddi | MAR | MID | 2.0 mio.
+  OK: caps=2 caps_link=True source=ceapi_performance_game latest=2026-06-02 recent20_start=1.0 usage=0.808
+  National URL: https://www.transfermarkt.de/ayyoub-bouaddi/nationalmannschaft/spieler/1097139/verein_id/3575
+[23/25] Avazbek Ulmasaliyev | UZB | DEF | 2.0 mio.
+  FEJL: Ingen Transfermarkt-profil fundet
+[24/25] Augustine Boakye | GHA | MID | 2.0 mio.
+  OK: caps=0 caps_link=True source=ceapi_performance_game latest=2026-06-02 recent20_start=0.0 usage=0.0
+  National URL: https://www.transfermarkt.de/augustine-boakye/nationalmannschaft/spieler/579263/verein_id/3441
+[25/25] Arya Yousefi | IRN | DEF | 2.0 mio.
+  OK: caps=12 caps_link=True source=ceapi_performance_game latest=2026-06-04 recent20_start=0.4 usage=0.393
+  National URL: https://www.transfermarkt.de/arya-yousefi/nationalmannschaft/spieler/932724/verein_id/3582
+
+================================================================================
+FÃ¦rdig. OK=21, fejl=4
+Skrev cache: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_national_team\transfermarkt_player_ur
+l_cache.csv
+Skrev summary: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_national_team\player_national_team_
+usage_transfermarkt.csv
+Skrev manual audit: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_manual_url_integration_audit.c
+sv
+Skrev manual audit: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_manual_url_integration_audit.m
+d
+
+KÃ¸r scriptet igen for nÃ¦ste batch.
+Transfermarkt chunk 3: 25 players
+TRANSFERMARKT NATIONAL USAGE BATCH
+================================================================================
+Player pool: 1519
+Cache rows: 1342
+Manual URL rows: 28
+Manual URL matched: 23
+Manual-only: False
+Manual names: Ehsan Haddad, Ernest Nuamah, Fabian Balbuena, Fabinho, Facundo Medina, Firas Al Brikan, Florian Wiegele, G
+edeon Kalulu, Gessime Yassine, Gilberto Mora, Gustavo Caballero, Guus Til, Haji Wright, Harry Souttar, Hassan Al Tambakt
+i, Hassan Al-Haydos, Hassan Kadesh, Herman Johansson, Homam Al-Amin Ahmed, Hugo Sochurek, Iqraam Rayners, Isidro Pitta,
+Jackson Irvine, Jacob Shaffelburg, Jalal Hassan
+Refresh: True
+Max this run: 25
+Selected for run: 25
+
+[1/25] Firas Al Brikan | KSA | FWD | 3.5 mio.
+  OK: caps=70 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.8 usage=0.815
+  National URL: https://www.transfermarkt.de/firas-al-buraikan/nationalmannschaft/spieler/631922/verein_id/3807
+[2/25] Jalal Hassan | IRQ | GK | 2.5 mio.
+  OK: caps=97 caps_link=True source=ceapi_performance_game latest=2026-06-04 recent20_start=0.5 usage=0.55
+  National URL: https://www.transfermarkt.de/jalal-hassan/nationalmannschaft/spieler/206782/verein_id/3560
+[3/25] Jackson Irvine | AUS | MID | 2.5 mio.
+  OK: caps=82 caps_link=True source=ceapi_performance_game latest=2026-06-06 recent20_start=0.5 usage=0.525
+  National URL: https://www.transfermarkt.de/jackson-irvine/nationalmannschaft/spieler/192557/verein_id/3433
+[4/25] Iqraam Rayners | RSA | FWD | 2.5 mio.
+  OK: caps=14 caps_link=True source=ceapi_performance_game latest=2026-05-29 recent20_start=0.0 usage=0.056
+  National URL: https://www.transfermarkt.de/iqraam-rayners/nationalmannschaft/spieler/337884/verein_id/3806
+[5/25] Homam Al-Amin Ahmed | QAT | DEF | 2.5 mio.
+  FEJL: Ingen Transfermarkt-profil fundet
+[6/25] Herman Johansson | SWE | MID | 2.5 mio.
+  OK: caps=3 caps_link=True source=ceapi_performance_game latest=2026-06-04 recent20_start=0.4 usage=0.332
+  National URL: https://www.transfermarkt.de/herman-johansson/nationalmannschaft/spieler/744853/verein_id/3557
+[7/25] Hassan Al-Haydos | QAT | MID | 2.5 mio.
+  FEJL: Ingen Transfermarkt-profil fundet
+[8/25] Harry Souttar | AUS | DEF | 2.5 mio.
+  OK: caps=38 caps_link=True source=ceapi_performance_game latest=2026-06-06 recent20_start=0.4 usage=0.422
+  National URL: https://www.transfermarkt.de/harry-souttar/nationalmannschaft/spieler/298091/verein_id/3433
+[9/25] Haji Wright | USA | FWD | 2.5 mio.
+  OK: caps=20 caps_link=True source=ceapi_performance_game latest=2026-06-06 recent20_start=0.1 usage=0.185
+  National URL: https://www.transfermarkt.de/haji-wright/nationalmannschaft/spieler/315291/verein_id/3505
+[10/25] Guus Til | NED | MID | 2.5 mio.
+  OK: caps=6 caps_link=True source=ceapi_performance_game latest=2026-06-03 recent20_start=0.0 usage=0.024
+  National URL: https://www.transfermarkt.de/guus-til/nationalmannschaft/spieler/372267/verein_id/3379
+[11/25] Gilberto Mora | MEX | MID | 2.5 mio.
+  OK: caps=8 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.25 usage=0.2195
+  National URL: https://www.transfermarkt.de/gilberto-mora/nationalmannschaft/spieler/1155723/verein_id/6303
+[12/25] Gedeon Kalulu | COD | DEF | 2.5 mio.
+  OK: caps=28 caps_link=True source=ceapi_performance_game latest=2026-06-03 recent20_start=0.2 usage=0.297
+  National URL: https://www.transfermarkt.de/gedeon-kalulu/nationalmannschaft/spieler/395685/verein_id/3854
+[13/25] Florian Wiegele | AUT | GK | 2.5 mio.
+  OK: caps=1 caps_link=True source=ceapi_performance_game latest=2026-06-01 recent20_start=0.0 usage=0.004
+  National URL: https://www.transfermarkt.de/florian-wiegele/nationalmannschaft/spieler/393999/verein_id/3383
+[14/25] Facundo Medina | ARG | DEF | 2.5 mio.
+  OK: caps=8 caps_link=True source=ceapi_performance_game latest=2026-06-07 recent20_start=0.05 usage=0.0845
+  National URL: https://www.transfermarkt.de/facundo-medina/nationalmannschaft/spieler/474800/verein_id/3437
+[15/25] Fabinho | BRA | MID | 2.5 mio.
+  OK: caps=33 caps_link=True source=ceapi_performance_game latest=2026-06-06 recent20_start=0.0 usage=0.132
+  National URL: https://www.transfermarkt.de/fabinho/nationalmannschaft/spieler/225693/verein_id/3439
+[16/25] Fabian Balbuena | PAR | DEF | 2.5 mio.
+  OK: caps=47 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.3 usage=0.353
+  National URL: https://www.transfermarkt.de/fabian-balbuena/nationalmannschaft/spieler/285548/verein_id/3581
+[17/25] Ernest Nuamah | GHA | FWD | 2.5 mio.
+  OK: caps=19 caps_link=True source=ceapi_performance_game latest=2026-06-02 recent20_start=0.2 usage=0.186
+  National URL: https://www.transfermarkt.de/ernest-nuamah/nationalmannschaft/spieler/955070/verein_id/3441
+[18/25] Ehsan Haddad | JOR | DEF | 2.5 mio.
+  OK: caps=75 caps_link=True source=ceapi_performance_game latest=2026-05-31 recent20_start=0.2 usage=0.335
+  National URL: https://www.transfermarkt.de/ehsan-haddad/nationalmannschaft/spieler/310943/verein_id/15737
+[19/25] Jacob Shaffelburg | CAN | MID | 2.0 mio.
+  OK: caps=31 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.25 usage=0.2615
+  National URL: https://www.transfermarkt.de/jacob-shaffelburg/nationalmannschaft/spieler/637632/verein_id/3510
+[20/25] Isidro Pitta | PAR | FWD | 2.0 mio.
+  OK: caps=5 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.158 usage=0.1069
+  National URL: https://www.transfermarkt.de/isidro-pitta/nationalmannschaft/spieler/675178/verein_id/3581
+[21/25] Hugo Sochurek | CZE | MID | 2.0 mio.
+  OK: caps=1 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.0 usage=0.004
+  National URL: https://www.transfermarkt.de/hugo-sochurek/nationalmannschaft/spieler/1206877/verein_id/3445
+[22/25] Hassan Kadesh | KSA | DEF | 2.0 mio.
+  OK: caps=19 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.15 usage=0.2085
+  National URL: https://www.transfermarkt.de/hassan-kadesh/nationalmannschaft/spieler/260859/verein_id/3807
+[23/25] Hassan Al Tambakti | KSA | DEF | 2.0 mio.
+  FEJL: Ingen Transfermarkt-profil fundet
+[24/25] Gustavo Caballero | PAR | MID | 2.0 mio.
+  OK: caps=2 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.0 usage=0.008
+  National URL: https://www.transfermarkt.de/gustavo-caballero/nationalmannschaft/spieler/891672/verein_id/3581
+[25/25] Gessime Yassine | MAR | MID | 2.0 mio.
+  OK: caps=4 caps_link=True source=ceapi_performance_game latest=2026-06-02 recent20_start=0.25 usage=0.216
+  National URL: https://www.transfermarkt.de/gessime-yassine/nationalmannschaft/spieler/1151929/verein_id/3575
+
+================================================================================
+FÃ¦rdig. OK=22, fejl=3
+Skrev cache: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_national_team\transfermarkt_player_ur
+l_cache.csv
+Skrev summary: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_national_team\player_national_team_
+usage_transfermarkt.csv
+Skrev manual audit: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_manual_url_integration_audit.c
+sv
+Skrev manual audit: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_manual_url_integration_audit.m
+d
+
+KÃ¸r scriptet igen for nÃ¦ste batch.
+Transfermarkt chunk 4: 25 players
+TRANSFERMARKT NATIONAL USAGE BATCH
+================================================================================
+Player pool: 1519
+Cache rows: 1366
+Manual URL rows: 28
+Manual URL matched: 23
+Manual-only: False
+Manual names: Jaloliddin Masharipov, Jan Kuchta, Jaouen Hadjam, Jehad Thakri, Jindrich Stanek, Joe Scally, Jonas Adjetey
+, Jose Canale, Justin Kluivert, Kamogelo Sebelebele, Keeto Thermoncy, Khalid Al-Ghannam, Lisandro Martinez, Luis Chavez,
+ Luis Romo, Marten de Roon, Mateo Chavez, Mathew Leckie, Mats Wieffer, Mauricio Magalhaes Prado, Mehdi Torabi, Melvin Fe
+ycal Mastil, Michael Svoboda, Mladen Jurkas, Mohamed Amine Tougai
+Refresh: True
+Max this run: 25
+Selected for run: 25
+
+[1/25] Lisandro Martinez | ARG | DEF | 3.0 mio.
+  OK: caps=27 caps_link=True source=ceapi_performance_game latest=2026-06-07 recent20_start=0.2 usage=0.243
+  National URL: https://www.transfermarkt.de/lisandro-martinez/nationalmannschaft/spieler/480762/verein_id/3437
+[2/25] Mladen Jurkas | BIH | GK | 2.5 mio.
+  OK: caps=0 caps_link=True source=ceapi_performance_game latest=2026-06-06 recent20_start=0.0 usage=0.0
+  National URL: https://www.transfermarkt.de/mladen-jurkas/nationalmannschaft/spieler/952692/verein_id/3446
+[3/25] Michael Svoboda | AUT | DEF | 2.5 mio.
+  OK: caps=4 caps_link=True source=ceapi_performance_game latest=2026-06-01 recent20_start=0.0 usage=0.016
+  National URL: https://www.transfermarkt.de/michael-svoboda/nationalmannschaft/spieler/438961/verein_id/3383
+[4/25] Melvin Feycal Mastil | ALG | GK | 2.5 mio.
+  OK: caps=1 caps_link=True source=ceapi_performance_game latest=2026-06-03 recent20_start=0.333 usage=0.2704
+  National URL: https://www.transfermarkt.de/melvin-mastil/nationalmannschaft/spieler/534398/verein_id/3614
+[5/25] Mats Wieffer | NED | MID | 2.5 mio.
+  OK: caps=15 caps_link=True source=ceapi_performance_game latest=2026-06-03 recent20_start=0.1 usage=0.14
+  National URL: https://www.transfermarkt.de/mats-wieffer/nationalmannschaft/spieler/415381/verein_id/3379
+[6/25] Mateo Chavez | MEX | DEF | 2.5 mio.
+  OK: caps=10 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.3 usage=0.255
+  National URL: https://www.transfermarkt.de/mateo-chavez/nationalmannschaft/spieler/1066953/verein_id/6303
+[7/25] Marten de Roon | NED | MID | 2.5 mio.
+  OK: caps=43 caps_link=True source=ceapi_performance_game latest=2026-06-03 recent20_start=0.0 usage=0.172
+  National URL: https://www.transfermarkt.de/marten-de-roon/nationalmannschaft/spieler/133179/verein_id/3379
+[8/25] Luis Romo | MEX | MID | 2.5 mio.
+  OK: caps=63 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.2 usage=0.385
+  National URL: https://www.transfermarkt.de/luis-romo/nationalmannschaft/spieler/532938/verein_id/6303
+[9/25] Khalid Al-Ghannam | KSA | MID | 2.5 mio.
+  OK: caps=6 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.1 usage=0.129
+  National URL: https://www.transfermarkt.de/khalid-al-ghannam/nationalmannschaft/spieler/631923/verein_id/3807
+[10/25] Justin Kluivert | NED | MID | 2.5 mio.
+  OK: caps=12 caps_link=True source=ceapi_performance_game latest=2026-06-03 recent20_start=0.3 usage=0.288
+  National URL: https://www.transfermarkt.de/justin-kluivert/nationalmannschaft/spieler/330659/verein_id/3379
+[11/25] Jonas Adjetey | GHA | DEF | 2.5 mio.
+  OK: caps=10 caps_link=True source=ceapi_performance_game latest=2026-06-02 recent20_start=0.4 usage=0.46
+  National URL: https://www.transfermarkt.de/jonas-adjetey/nationalmannschaft/spieler/734676/verein_id/3441
+[12/25] Joe Scally | USA | DEF | 2.5 mio.
+  OK: caps=26 caps_link=True source=ceapi_performance_game latest=2026-06-06 recent20_start=0.15 usage=0.2115
+  National URL: https://www.transfermarkt.de/joe-scally/nationalmannschaft/spieler/504153/verein_id/3505
+[13/25] Jindrich Stanek | CZE | GK | 2.5 mio.
+  OK: caps=14 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.05 usage=0.1085
+  National URL: https://www.transfermarkt.de/jindrich-stanek/nationalmannschaft/spieler/242089/verein_id/3445
+[14/25] Jaouen Hadjam | ALG | DEF | 2.5 mio.
+  OK: caps=17 caps_link=True source=ceapi_performance_game latest=2026-06-03 recent20_start=0.25 usage=0.2305
+  National URL: https://www.transfermarkt.de/jaouen-hadjam/nationalmannschaft/spieler/750903/verein_id/3614
+[15/25] Jan Kuchta | CZE | FWD | 2.5 mio.
+  OK: caps=31 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.05 usage=0.1765
+  National URL: https://www.transfermarkt.de/jan-kuchta/nationalmannschaft/spieler/334802/verein_id/3445
+[16/25] Jaloliddin Masharipov | UZB | MID | 2.5 mio.
+  OK: caps=74 caps_link=True source=ceapi_performance_game latest=2026-06-02 recent20_start=0.4 usage=0.42
+  National URL: https://www.transfermarkt.de/jaloliddin-masharipov/nationalmannschaft/spieler/274536/verein_id/3563
+[17/25] Mohamed Amine Tougai | ALG | DEF | 2.0 mio.
+  OK: caps=29 caps_link=True source=ceapi_performance_game latest=2026-06-03 recent20_start=0.2 usage=0.276
+  National URL: https://www.transfermarkt.de/mohamed-amine-tougai/nationalmannschaft/spieler/592396/verein_id/3614
+[18/25] Mehdi Torabi | IRN | MID | 2.0 mio.
+  OK: caps=51 caps_link=True source=ceapi_performance_game latest=2026-06-04 recent20_start=0.0 usage=0.2
+  National URL: https://www.transfermarkt.de/mehdi-torabi/nationalmannschaft/spieler/283833/verein_id/3582
+[19/25] Mauricio Magalhaes Prado | PAR | MID | 2.0 mio.
+  OK: caps=3 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.333 usage=0.2784
+  National URL: https://www.transfermarkt.de/mauricio/nationalmannschaft/spieler/678439/verein_id/3581
+[20/25] Mathew Leckie | AUS | MID | 2.0 mio.
+  OK: caps=81 caps_link=True source=ceapi_performance_game latest=2026-06-06 recent20_start=0.05 usage=0.2525
+  National URL: https://www.transfermarkt.de/mathew-leckie/nationalmannschaft/spieler/126214/verein_id/3433
+[21/25] Luis Chavez | MEX | MID | 2.0 mio.
+  OK: caps=45 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.1 usage=0.26
+  National URL: https://www.transfermarkt.de/luis-chavez/nationalmannschaft/spieler/331059/verein_id/6303
+[22/25] Keeto Thermoncy | HAI | DEF | 2.0 mio.
+  OK: caps=1 caps_link=True source=ceapi_performance_game latest=2026-06-06 recent20_start=0.0 usage=0.004
+  National URL: https://www.transfermarkt.de/keeto-thermoncy/nationalmannschaft/spieler/1061046/verein_id/14161
+[23/25] Kamogelo Sebelebele | RSA | DEF | 2.0 mio.
+  OK: caps=3 caps_link=True source=ceapi_performance_game latest=2026-05-29 recent20_start=0.083 usage=0.0827
+  National URL: https://www.transfermarkt.de/kamogelo-sebelebele/nationalmannschaft/spieler/994370/verein_id/3806
+[24/25] Jose Canale | PAR | DEF | 2.0 mio.
+  OK: caps=2 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.0 usage=0.008
+  National URL: https://www.transfermarkt.de/jose-canale/nationalmannschaft/spieler/402627/verein_id/3581
+[25/25] Jehad Thakri | KSA | DEF | 2.0 mio.
+  OK: caps=7 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.25 usage=0.1905
+  National URL: https://www.transfermarkt.de/jehad-thakri/nationalmannschaft/spieler/901334/verein_id/3807
+
+================================================================================
+FÃ¦rdig. OK=25, fejl=0
+Skrev cache: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_national_team\transfermarkt_player_ur
+l_cache.csv
+Skrev summary: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_national_team\player_national_team_
+usage_transfermarkt.csv
+Skrev manual audit: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_manual_url_integration_audit.c
+sv
+Skrev manual audit: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_manual_url_integration_audit.m
+d
+
+KÃ¸r scriptet igen for nÃ¦ste batch.
+Transfermarkt chunk 5: 25 players
+TRANSFERMARKT NATIONAL USAGE BATCH
+================================================================================
+Player pool: 1519
+Cache rows: 1391
+Manual URL rows: 28
+Manual URL matched: 23
+Manual-only: False
+Manual names: Mohammed Abu Al-Shamat, Mohammed Al-Owais, Moteb Al-Harbi, MoÃ¯se Bombito, Munir Mohamedi El Kajoui, Musta
+fa Saadoon, Nabil Bentaleb, Nawaf Bu Washl, Nilson Angulo, Noureddin Bani Attiah, Olwethu Makhanya, Oussama Benbout, Pau
+l Wanner, Rajaei Ayed, Redouane Halhal, Rodrigo Zalazar, Roozbeh Cheshmi, Saed Al-Rosan, Salah Zakaria, Saleh Al-Shehri,
+ Saleh Hardani, Samir Chergui, Samir El Mourabet, Santiago Gimenez, Sasa Kalajdzic
+Refresh: True
+Max this run: 25
+Selected for run: 24
+
+[1/24] Santiago Gimenez | MEX | FWD | 3.5 mio.
+  OK: caps=47 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.1 usage=0.243
+  National URL: https://www.transfermarkt.de/santiago-gimenez/nationalmannschaft/spieler/552955/verein_id/6303
+[2/24] Rodrigo Zalazar | URU | MID | 3.5 mio.
+  OK: caps=7 caps_link=True source=ceapi_performance_game latest=2026-03-31 recent20_start=0.15 usage=0.1855
+  National URL: https://www.transfermarkt.de/rodrigo-zalazar/nationalmannschaft/spieler/606752/verein_id/3449
+[3/24] Munir Mohamedi El Kajoui | MAR | GK | 3.0 mio.
+  FEJL: Ingen Transfermarkt-profil fundet
+[4/24] Mohammed Al-Owais | KSA | GK | 3.0 mio.
+  OK: caps=60 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.1 usage=0.305
+  National URL: https://www.transfermarkt.de/mohammed-al-owais/nationalmannschaft/spieler/262845/verein_id/3807
+[5/24] Sasa Kalajdzic | AUT | FWD | 2.5 mio.
+  OK: caps=22 caps_link=True source=ceapi_performance_game latest=2026-06-01 recent20_start=0.0 usage=0.088
+  National URL: https://www.transfermarkt.de/sasa-kalajdzic/nationalmannschaft/spieler/369567/verein_id/3383
+[6/24] Saleh Hardani | IRN | DEF | 2.5 mio.
+  OK: caps=18 caps_link=True source=ceapi_performance_game latest=2026-06-04 recent20_start=0.35 usage=0.3145
+  National URL: https://www.transfermarkt.de/saleh-hardani/nationalmannschaft/spieler/697155/verein_id/3582
+[7/24] Saleh Al-Shehri | KSA | FWD | 2.5 mio.
+  OK: caps=54 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.25 usage=0.3875
+  National URL: https://www.transfermarkt.de/saleh-al-shehri/nationalmannschaft/spieler/242267/verein_id/3807
+[8/24] Salah Zakaria | QAT | GK | 2.5 mio.
+  OK: caps=8 caps_link=True source=ceapi_performance_game latest=2026-06-06 recent20_start=0.15 usage=0.1395
+  National URL: https://www.transfermarkt.de/salah-zakaria/nationalmannschaft/spieler/632912/verein_id/14162
+[9/24] Rajaei Ayed | JOR | MID | 2.5 mio.
+  OK: caps=57 caps_link=True source=ceapi_performance_game latest=2026-05-31 recent20_start=0.15 usage=0.3575
+  National URL: https://www.transfermarkt.de/rajaei-ayed/nationalmannschaft/spieler/261842/verein_id/15737
+[10/24] Paul Wanner | AUT | MID | 2.5 mio.
+  OK: caps=3 caps_link=True source=ceapi_performance_game latest=2026-06-01 recent20_start=0.333 usage=0.2784
+  National URL: https://www.transfermarkt.de/paul-wanner/nationalmannschaft/spieler/900909/verein_id/3383
+[11/24] Oussama Benbout | ALG | GK | 2.5 mio.
+  OK: caps=2 caps_link=True source=ceapi_performance_game latest=2026-06-03 recent20_start=0.05 usage=0.0355
+  National URL: https://www.transfermarkt.de/oussama-benbout/nationalmannschaft/spieler/437982/verein_id/3614
+[12/24] Noureddin Bani Attiah | JOR | GK | 2.5 mio.
+  OK: caps=2 caps_link=True source=ceapi_performance_game latest=2026-05-31 recent20_start=0.1 usage=0.088
+  National URL: https://www.transfermarkt.de/noor-bane-ataya/nationalmannschaft/spieler/261837/verein_id/15737
+[13/24] Nawaf Bu Washl | KSA | DEF | 2.5 mio.
+  FEJL: Ingen Transfermarkt-profil fundet
+[14/24] Nabil Bentaleb | ALG | MID | 2.5 mio.
+  OK: caps=58 caps_link=True source=ceapi_performance_game latest=2026-06-03 recent20_start=0.15 usage=0.3075
+  National URL: https://www.transfermarkt.de/nabil-bentaleb/nationalmannschaft/spieler/245537/verein_id/3614
+[15/24] Mohammed Abu Al-Shamat | KSA | DEF | 2.5 mio.
+  OK: caps=6 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.1 usage=0.129
+  National URL: https://www.transfermarkt.de/mohammed-abu-al-shamat/nationalmannschaft/spieler/1181852/verein_id/3807
+[16/24] Samir El Mourabet | MAR | MID | 2.0 mio.
+  OK: caps=3 caps_link=True source=ceapi_performance_game latest=2026-06-02 recent20_start=0.25 usage=0.212
+  National URL: https://www.transfermarkt.de/samir-el-mourabet/nationalmannschaft/spieler/1130514/verein_id/3575
+[17/24] Samir Chergui | ALG | DEF | 2.0 mio.
+  OK: caps=4 caps_link=True source=ceapi_performance_game latest=2026-06-03 recent20_start=0.188 usage=0.1444
+  National URL: https://www.transfermarkt.de/samir-chergui/nationalmannschaft/spieler/668167/verein_id/3614
+[18/24] Saed Al-Rosan | JOR | DEF | 2.0 mio.
+  FEJL: Ingen Transfermarkt-profil fundet
+[19/24] Roozbeh Cheshmi | IRN | MID | 2.0 mio.
+  OK: caps=39 caps_link=True source=ceapi_performance_game latest=2026-06-04 recent20_start=0.2 usage=0.291
+  National URL: https://www.transfermarkt.de/roozbeh-cheshmi/nationalmannschaft/spieler/273879/verein_id/3582
+[20/24] Redouane Halhal | MAR | DEF | 2.0 mio.
+  OK: caps=2 caps_link=True source=ceapi_performance_game latest=2026-06-02 recent20_start=0.5 usage=0.408
+  National URL: https://www.transfermarkt.de/redouane-halhal/nationalmannschaft/spieler/913660/verein_id/3575
+[21/24] Olwethu Makhanya | RSA | DEF | 2.0 mio.
+  OK: caps=1 caps_link=True source=ceapi_performance_game latest=2026-05-29 recent20_start=1.0 usage=0.804
+  National URL: https://www.transfermarkt.de/olwethu-makhanya/nationalmannschaft/spieler/1069801/verein_id/3806
+[22/24] Nilson Angulo | ECU | FWD | 2.0 mio.
+  OK: caps=13 caps_link=True source=ceapi_performance_game latest=2026-05-31 recent20_start=0.35 usage=0.3945
+  National URL: https://www.transfermarkt.de/nilson-angulo/nationalmannschaft/spieler/903611/verein_id/5750
+[23/24] Mustafa Saadoon | IRQ | DEF | 2.0 mio.
+  OK: caps=16 caps_link=True source=ceapi_performance_game latest=2026-06-04 recent20_start=0.3 usage=0.304
+  National URL: https://www.transfermarkt.de/mustafa-saadoon/nationalmannschaft/spieler/952341/verein_id/3560
+[24/24] Moteb Al-Harbi | KSA | DEF | 2.0 mio.
+  OK: caps=12 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.2 usage=0.183
+  National URL: https://www.transfermarkt.de/moteb-al-harbi/nationalmannschaft/spieler/869509/verein_id/3807
+
+================================================================================
+FÃ¦rdig. OK=21, fejl=3
+Skrev cache: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_national_team\transfermarkt_player_ur
+l_cache.csv
+Skrev summary: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_national_team\player_national_team_
+usage_transfermarkt.csv
+Skrev manual audit: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_manual_url_integration_audit.c
+sv
+Skrev manual audit: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_manual_url_integration_audit.m
+d
+
+KÃ¸r scriptet igen for nÃ¦ste batch.
+Transfermarkt chunk 6: 15 players
+TRANSFERMARKT NATIONAL USAGE BATCH
+================================================================================
+Player pool: 1519
+Cache rows: 1415
+Manual URL rows: 28
+Manual URL matched: 23
+Manual-only: False
+Manual names: Sebastian Caceres, Seydinaissa Laye, Seyed Hossein Hosseini, Sherzod Esanov, Soufiane Rahimi, Stephen Eust
+aquio, Sultan Mandash, Tahsin Jamshid, Tete Yengi, Tomas Rodriguez, Tyler Fletcher, Valentin Barco, Wi-je Cho, Youssef B
+elammari, Yusuf Abdurisag
+Refresh: True
+Max this run: 15
+Selected for run: 15
+
+[1/15] Valentin Barco | ARG | MID | 2.5 mio.
+  OK: caps=3 caps_link=True source=ceapi_performance_game latest=2026-06-07 recent20_start=0.05 usage=0.0645
+  National URL: https://www.transfermarkt.de/valentin-barco/nationalmannschaft/spieler/849410/verein_id/3437
+[2/15] Sultan Mandash | KSA | FWD | 2.5 mio.
+  OK: caps=6 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.1 usage=0.104
+  National URL: https://www.transfermarkt.de/sultan-mandash/nationalmannschaft/spieler/210349/verein_id/3807
+[3/15] Stephen Eustaquio | CAN | MID | 2.5 mio.
+  OK: caps=56 caps_link=True source=ceapi_performance_game latest=2026-06-05 recent20_start=0.45 usage=0.5725
+  National URL: https://www.transfermarkt.de/stephen-eustaquio/nationalmannschaft/spieler/512913/verein_id/3510
+[4/15] Soufiane Rahimi | MAR | MID | 2.5 mio.
+  OK: caps=36 caps_link=True source=ceapi_performance_game latest=2026-06-02 recent20_start=0.1 usage=0.224
+  National URL: https://www.transfermarkt.de/soufiane-rahimi/nationalmannschaft/spieler/598506/verein_id/3575
+[5/15] Seyed Hossein Hosseini | IRN | GK | 2.5 mio.
+  OK: caps=13 caps_link=True source=ceapi_performance_game latest=2026-06-04 recent20_start=0.1 usage=0.132
+  National URL: https://www.transfermarkt.de/seyed-hossein-hosseini/nationalmannschaft/spieler/132561/verein_id/3582
+[6/15] Sebastian Caceres | URU | DEF | 2.5 mio.
+  OK: caps=23 caps_link=True source=ceapi_performance_game latest=2026-03-31 recent20_start=0.3 usage=0.307
+  National URL: https://www.transfermarkt.de/sebastian-caceres/nationalmannschaft/spieler/532389/verein_id/3449
+[7/15] Yusuf Abdurisag | QAT | FWD | 2.0 mio.
+  OK: caps=39 caps_link=True source=ceapi_performance_game latest=2026-06-06 recent20_start=0.2 usage=0.316
+  National URL: https://www.transfermarkt.de/yusuf-abdurisag/nationalmannschaft/spieler/589099/verein_id/14162
+[8/15] Youssef Belammari | MAR | DEF | 2.0 mio.
+  OK: caps=17 caps_link=True source=ceapi_performance_game latest=2026-06-02 recent20_start=0.05 usage=0.1205
+  National URL: https://www.transfermarkt.de/youssef-belammari/nationalmannschaft/spieler/518804/verein_id/3575
+[9/15] Wi-je Cho | KOR | DEF | 2.0 mio.
+  OK: caps=1 caps_link=True source=ceapi_performance_game latest=2026-06-04 recent20_start=0.0 usage=0.004
+  National URL: https://www.transfermarkt.de/wi-je-cho/nationalmannschaft/spieler/550978/verein_id/3589
+[10/15] Tyler Fletcher | SCO | MID | 2.0 mio.
+  OK: caps=2 caps_link=True source=ceapi_performance_game latest=2026-06-06 recent20_start=0.0 usage=0.008
+  National URL: https://www.transfermarkt.de/tyler-fletcher/nationalmannschaft/spieler/1049911/verein_id/3380
+[11/15] Tomas Rodriguez | PAN | FWD | 2.0 mio.
+  OK: caps=13 caps_link=True source=ceapi_performance_game latest=2026-06-06 recent20_start=0.25 usage=0.2145
+  National URL: https://www.transfermarkt.de/tomas-rodriguez/nationalmannschaft/spieler/569205/verein_id/3577
+[12/15] Tete Yengi | AUS | FWD | 2.0 mio.
+  OK: caps=1 caps_link=True source=ceapi_performance_game latest=2026-06-06 recent20_start=1.0 usage=0.804
+  National URL: https://www.transfermarkt.de/tete-yengi/nationalmannschaft/spieler/849429/verein_id/3433
+[13/15] Tahsin Jamshid | QAT | MID | 2.0 mio.
+  FEJL: Ingen Transfermarkt-profil fundet
+[14/15] Sherzod Esanov | UZB | MID | 2.0 mio.
+  OK: caps=1 caps_link=True source=ceapi_performance_game latest=2026-06-02 recent20_start=0.0 usage=0.004
+  National URL: https://www.transfermarkt.de/sherzod-esanov/nationalmannschaft/spieler/989068/verein_id/3563
+[15/15] Seydinaissa Laye | QAT | DEF | 2.0 mio.
+  OK: caps=4 caps_link=True source=ceapi_performance_game latest=2026-06-06 recent20_start=0.6 usage=0.496
+  National URL: https://www.transfermarkt.de/issa-laye/nationalmannschaft/spieler/1264176/verein_id/14162
+
+================================================================================
+FÃ¦rdig. OK=14, fejl=1
+Skrev cache: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_national_team\transfermarkt_player_ur
+l_cache.csv
+Skrev summary: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_national_team\player_national_team_
+usage_transfermarkt.csv
+Skrev manual audit: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_manual_url_integration_audit.c
+sv
+Skrev manual audit: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_manual_url_integration_audit.m
+d
+
+KÃ¸r scriptet igen for nÃ¦ste batch.
+=== 4/12 Classify Transfermarkt national matches ===
+TRANSFERMARKT COMPETITION CLASSIFIER
+================================================================================
+Match-rækker læst: 89140
+
+Kategorier:
+competition_category_label
+Kvalifikation               31447
+Venskabskamp                30024
+Slutrunde                   19031
+Nations League               6739
+Nations League-slutrunde     1756
+Ungdomsslutrunde               94
+Øvrig turnering                30
+Ungdomskvalifikation           19
+
+Top preview:
+             player_name team_id competition_category_label  rows  starts start_share weighted_start_signal
+            Aaron Hickey     SCO                  Slutrunde     3       0           0                   0.0
+            Aaron Hickey     SCO              Kvalifikation    15      11       0.917                0.8253
+            Aaron Hickey     SCO             Nations League    14       3         0.5                  0.39
+            Aaron Hickey     SCO               Venskabskamp    15       3       0.375                 0.195
+          Aaron Tshibola     COD                  Slutrunde    26       1       0.038                 0.038
+          Aaron Tshibola     COD              Kvalifikation    44       4       0.091                0.0819
+          Aaron Tshibola     COD               Venskabskamp    26       2        0.08                0.0416
+       Aaron Wan-Bissaka     COD                  Slutrunde     4       3        0.75                  0.75
+       Aaron Wan-Bissaka     COD              Kvalifikation     7       7         1.0                   0.9
+       Aaron Wan-Bissaka     COD               Venskabskamp     3       0         0.0                   0.0
+     Abbosbek Fayzullaev     UZB                  Slutrunde    13       6       0.462                 0.462
+     Abbosbek Fayzullaev     UZB              Kvalifikation    16       9       0.562                0.5058
+     Abbosbek Fayzullaev     UZB               Venskabskamp    12       3       0.333                0.1732
+    Abdallah Al-Fakhouri     JOR                  Slutrunde    24       0         0.0                   0.0
+    Abdallah Al-Fakhouri     JOR              Kvalifikation    29       0         0.0                   0.0
+    Abdallah Al-Fakhouri     JOR               Venskabskamp    56       7       0.132                0.0686
+          Abdallah Nasib     JOR                  Slutrunde    17      15       0.882                 0.882
+          Abdallah Nasib     JOR              Kvalifikation    19      17       0.895                0.8055
+          Abdallah Nasib     JOR               Venskabskamp    30      18         0.6                 0.312
+         Abde Ezzalzouli     MAR                  Slutrunde    31       7       0.292                 0.292
+         Abde Ezzalzouli     MAR              Kvalifikation    17       8       0.533                0.4797
+         Abde Ezzalzouli     MAR               Venskabskamp    20       6       0.333                0.1732
+ Abdel Rahman Al-Talalga     JOR               Venskabskamp     4       0         0.0                   0.0
+ Abdel Rahman Al-Talalga     JOR           Ungdomsslutrunde     7       4       0.571                0.1998
+ Abdel Rahman Al-Talalga     JOR       Ungdomskvalifikation     3       3         1.0                   0.3
+  Abdelhamid Ait Boudlal     MAR               Venskabskamp     2       1         0.5                  0.26
+     Abdelmouhib Chamakh     TUN               Venskabskamp     4       3        0.75                  0.39
+          Abdoulaye Seck     SEN                  Slutrunde    34       3       0.111                 0.111
+          Abdoulaye Seck     SEN              Kvalifikation    32       8       0.258                0.2322
+          Abdoulaye Seck     SEN               Venskabskamp    16       5       0.312                0.1622
+      Abdukodir Khusanov     UZB                  Slutrunde    13       5       0.385                 0.385
+      Abdukodir Khusanov     UZB              Kvalifikation    16      12        0.75                 0.675
+      Abdukodir Khusanov     UZB               Venskabskamp    12       5         0.5                  0.26
+             Abdul Mumin     GHA                  Slutrunde     3       0         0.0                   0.0
+             Abdul Mumin     GHA              Kvalifikation    17       2       0.182                0.1638
+             Abdul Mumin     GHA               Venskabskamp     9       0         0.0                   0.0
+       Abdul Rahman Baba     GHA                  Slutrunde    28      15       0.652                 0.652
+       Abdul Rahman Baba     GHA              Kvalifikation    63      26        0.52                 0.468
+       Abdul Rahman Baba     GHA               Venskabskamp    38       8       0.235                0.1222
+Abdulaziz Hatim Mohammed     QAT                  Slutrunde    74      38       0.514                 0.514
+
+Skrev: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_national_team\player_national_team_matches_
+classified.csv
+Skrev: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_national_team\player_national_team_usage_by
+_competition.csv
+Skrev: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_national_team\player_national_team_usage_co
+mpetitive_summary.csv
+Skrev: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_national_team\competition_classifier_audit.
+csv
+Skrev: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_national_team\competition_classifier_audit.
+md
+=== 5/12 Write Transfermarkt start watchlist ===
+SELECTED SQUAD TRANSFERMARKT WATCHLIST
+==========================================================================================
+Formation: 3-4-3
+Optimizer score: 169.249
+
+Spillere til manuel vurdering:
+
+- Gonzalo Montiel | ARG | DEF | model-start=45.0% | TM usage=0.3395 | recent20_start=0.25 | recency_comp=0.6133 | slutru
+nde_recency=0.346 | kval_recency=0.327 | Lav recency-vægtet slutrunde-startandel; Lav recency-vægtet kval-startandel; La
+v historisk slutrunde-startandel; Lav historisk kval-startandel; Ofte ikke i trup seneste 20; Flere fravær uden skade-/k
+arantæneforklaring og svagt nyere usage-signal
+- Lucas Digne | FRA | DEF | model-start=74.2% | TM usage=0.5725 | recent20_start=0.45 | recency_comp=0.3089 | slutrunde_
+recency=0.46 | kval_recency=0.348 | Model-start høj, men nyere landsholdsbrug er usikker/lav; Model-start høj, men recen
+cy-vægtet konkurrencesignal er lavt; Lav recency-vægtet slutrunde-startandel; Lav recency-vægtet kval-startandel; Lav hi
+storisk slutrunde-startandel; Lav historisk kval-startandel
+- Renato Veiga | POR | DEF | model-start=67.7% | TM usage=0.3795 | recent20_start=0.421 | recency_comp=0.5944 | slutrund
+e_recency=0.226 | kval_recency=0.333 | Lav recency-vægtet slutrunde-startandel; Lav recency-vægtet kval-startandel; Lav
+historisk slutrunde-startandel; Lav historisk kval-startandel; Relativt få landskampe ift. høj model-start
+- Alex Baena | ESP | MID | model-start=47.0% | TM usage=0.329 | recent20_start=0.3 | recency_comp=0.5375 | slutrunde_rec
+ency=0.0 | kval_recency=0.293 | Lav recency-vægtet kval-startandel; Lav historisk kval-startandel; Ofte ikke i trup sene
+ste 20; Flere fravær uden skade-/karantæneforklaring og svagt nyere usage-signal
+- Martin Zubimendi | ESP | MID | model-start=88.3% | TM usage=0.5825 | recent20_start=0.65 | recency_comp=0.1045 | slutr
+unde_recency=0.671 | kval_recency=0.503 | Model-start høj, men recency-vægtet konkurrencesignal er lavt; Lav historisk k
+val-startandel; Ofte ikke i trup seneste 20
+- Manu Koné | FRA | MID | model-start=74.0% | TM usage=0.4127 | recent20_start=0.474 | recency_comp=0.4048 | slutrunde_r
+ecency=0.453 | kval_recency=0.667 | Model-start høj, men samlet Transfermarkt-usage lav; Model-start høj, men nyere land
+sholdsbrug er usikker/lav; Model-start høj, men recency-vægtet konkurrencesignal er lavt; Lav recency-vægtet slutrunde-s
+tartandel; Ofte ikke i trup seneste 20; Relativt få landskampe ift. høj model-start
+- Mikel Oyarzabal | ESP | FWD | model-start=77.9% | TM usage=0.7325 | recent20_start=0.65 | recency_comp=0.3443 | slutru
+nde_recency=0.646 | kval_recency=0.581 | Model-start høj, men recency-vægtet konkurrencesignal er lavt; Lav historisk kv
+al-startandel; Ofte ikke i trup seneste 20
+- Nico Williams | ESP | FWD | model-start=80.2% | TM usage=0.4175 | recent20_start=0.45 | recency_comp=0.173 | slutrunde
+_recency=1.0 | kval_recency=0.347 | Model-start høj, men nyere landsholdsbrug er usikker/lav; Model-start høj, men recen
+cy-vægtet konkurrencesignal er lavt; Lav recency-vægtet kval-startandel; Flere fravær uden skade-/karantæneforklaring og
+ svagt nyere usage-signal
+
+Note:
+- Watchlisten ændrer ikke modellen.
+- Brug den som beslutningsstøtte indtil trupper og sidste testkampe er kendt.
+- Recency vægter nyere landsholdskampe højere end ældre kampe.
+- Slutrunde/kvalkampe vægter fagligt højere end venskabskampe.
+- Fravær pga. skade/karantæne bør tolkes anderledes end ukendt fravær/vragning.
+
+Skrev: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_national_team\selected_squad_transfermarkt_
+watchlist.csv
+Skrev: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\transfermarkt_national_team\selected_squad_transfermarkt_
+watchlist.txt
+=== 6/12 Merge Transfermarkt summary to player_pool ===
+Transfermarkt competitive summary merge
+--------------------------------------
+TM summary rows: 1384
+TM classified match rows: 89140
+Availability splits: 1384
+Context overrides: 58
+Opdaterede spillere: 1382
+Ingen sikkert match: 137
+GK teams sum > 1.10 before: 9
+GK teams sum > 1.10 after: 0
+GK teams with >=2 keepers >=0.60 before: 0
+GK teams with >=2 keepers >=0.60 after: 0
+Max GK team start_prob sum before: 1.4463
+Max GK team start_prob sum after: 1.0001
+Backup: data\player_pool_v1.backup_before_tm_competitive_merge_20260607_161622.json
+Availability split report: data\start_probability_availability_split_report.csv
+GK hierarchy audit: data\goalkeeper_hierarchy_audit.csv
+GK hierarchy report: data\goalkeeper_hierarchy_audit.md
+Recent non-starter audit: data\recent_nonstarter_start_prob_audit.csv
+Recent non-starter report: data\recent_nonstarter_start_prob_audit.md
+=== 7/12 Re-apply manual start overrides ===
+Manual start overrides
+----------------------
+Backup: data\player_pool_v1.backup_before_manual_start_overrides_20260607_161626.json
+
+CHANGED
+Julian Ryerson           NOR DEF start 0.6549 -> 0.88 | cond 0.6758 -> 0.93 | risk medium_risk -> low_risk
+Konrad Laimer            AUT MID start 0.7107 -> 0.86 | cond 0.7282 -> 0.91 | risk low_risk -> low_risk
+John McGinn              SCO MID start 0.462 -> 0.88 | cond 0.4827 -> 0.93 | risk medium_risk -> low_risk
+Marko Arnautovic         AUT FWD start 0.6502 -> 0.82 | cond 0.6745 -> 0.88 | risk medium_risk -> low_risk
+Philipp Lienhart         AUT DEF start 0.6592 -> 0.84 | cond 0.6932 -> 0.9 | risk medium_risk -> low_risk
+Stefan Posch             AUT DEF start 0.6351 -> 0.84 | cond 0.6597 -> 0.9 | risk medium_risk -> low_risk
+Arda Güler               TUR MID start 0.6766 -> 0.88 | cond 0.6971 -> 0.93 | risk medium_risk -> low_risk
+Nuno Mendes              POR DEF start 0.6728 -> 0.88 | cond 0.6985 -> 0.93 | risk medium_risk -> low_risk
+
+Wrote: data\player_pool_v1.json
+=== 8/12 Repair EV start_prob from player_pool ===
+EV start probability source repair
+----------------------------------
+Serious mismatches before: 212
+Serious mismatches after: 0
+Rows changed: 1519
+Backup: data\player_ev_group_stage_v1.backup_before_start_prob_source_repair_20260607_161628.csv
+Wrote: data\player_pool_vs_ev_start_prob_audit.csv
+Wrote: data\player_pool_vs_ev_start_prob_audit.md
+=== 9/12 Repair EV components ===
+EV component dependency repair
+------------------------------
+Stale components before: 4
+Stale components after: 0
+Rows recomputed: 850
+Team repair rows: 1311
+Clean sheet audit rows: 3657
+Clean sheet high-start zero before: 0
+Clean sheet high-start zero after: 0
+Clean sheet NaN before: 0
+Clean sheet NaN after: 0
+On-pitch high-start spreads > 0.05 before: 3
+On-pitch high-start spreads > 0.05 after: 0
+Negative on_pitch_ev for start_prob >= 0.70 before: 0
+Negative on_pitch_ev for start_prob >= 0.70 after: 0
+Max high-start on_pitch spread before: 0.067600
+Max high-start on_pitch spread after: 0.027252
+Aggregate EV missing components after: 0
+No EV source after: 279
+Backup: data\player_ev_group_stage_v1.backup_before_component_rebuild_20260607_161629.csv
+Wrote: data\player_ev_component_dependency_audit.csv
+Wrote: data\player_ev_component_dependency_audit.md
+Wrote: data\team_match_component_consistency_audit.csv
+Wrote: data\team_match_component_consistency_audit.md
+Wrote: data\team_component_repair_report.csv
+Wrote: data\team_component_repair_report.md
+Wrote: data\clean_sheet_component_repair_audit.csv
+Wrote: data\clean_sheet_component_repair_audit.md
+=== 10/12 Repair EV price-quality consistency ===
+EV price-quality consistency repair
+-----------------------------------
+Formula mismatches before: 833
+Formula mismatches after: 0
+Max formula diff before: 1.415005
+Max formula diff after: 0.000001
+Base EV total before: 1440.361
+Base EV total after: 1364.076
+Final EV total before: 1447.620
+Final EV total after: 1381.648
+EV backup: data\player_ev_group_stage_v1.backup_before_price_quality_consistency_20260607_161630.csv
+Pool backup: data\player_pool_v1.backup_before_baumgartner_out_20260607_161630.json
+Wrote: data\player_ev_price_quality_consistency_audit.csv
+Wrote: data\player_ev_price_quality_consistency_audit.md
+Wrote: data\reserve_price_quality_audit.csv
+Wrote: data\reserve_price_quality_audit.md
+Final EV -> pool optimizer mismatches > 0.001: 901 -> 0
+=== 11/12 Build start signal layer ===
+Skrev: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\player_start_signal_layer_v1.csv
+Skrev: C:\Users\Administrator\Documents\GitHub\vm2026-app\data\player_start_signal_layer_v1.json
+
+Top 25 spillere efter start_signal_rank_adjusted:
+       player_name team_id position  start_prob  minute_share  team_position_rank  start_signal_rank_adjusted start_sign
+al_tier  weighted_group_stage_ev
+  Eldor Shomurodov     UZB      FWD      0.9205      0.083682                   1                    0.976469      Klar
+starter                 2.252362
+         Eloy Room     CUW       GK      0.9495      0.086318                   1                    0.962350      Klar
+starter                 0.861834
+         Luis Diaz     COL      FWD      0.9323      0.084755                   1                    0.962307      Klar
+starter                 3.281433
+   Yazeed Abulaila     JOR       GK      0.9498      0.086345                   1                    0.959602      Klar
+starter                 1.054874
+ Dominik Livakovic     CRO       GK      0.9486      0.086236                   1                    0.959219      Klar
+starter                 3.240260
+      Ørjan Nyland     NOR       GK      0.9496      0.086327                   1                    0.958887      Klar
+starter                 3.324398
+    Jonathan David     CAN      FWD      0.9223      0.083845                   1                    0.957354      Klar
+starter                 4.810338
+  Thibaut Courtois     BEL       GK      0.9486      0.086236                   1                    0.954807      Klar
+starter                 3.928332
+    Alisson Becker     BRA       GK      0.9440      0.085818                   1                    0.952794      Klar
+starter                 4.334666
+        Harry Kane     ENG      FWD      0.9700      0.088182                   1                    0.952584      Klar
+starter                 4.369299
+    Maxime Crepeau     CAN       GK      0.9448      0.085891                   1                    0.951380      Klar
+starter                 2.830679
+ Lionel Mpasi Nzau     COD       GK      0.9494      0.086309                   1                    0.951333      Klar
+starter                 1.391541
+      Mike Maignan     FRA       GK      0.9407      0.085518                   1                    0.950792      Klar
+starter                 4.206592
+       Zion Suzuki     JPN       GK      0.9433      0.085755                   1                    0.950204      Klar
+starter                 3.068698
+ Emiliano Martinez     ARG       GK      0.9380      0.085273                   1                    0.949246      Klar
+starter                 4.165199
+       Raul Rangel     MEX       GK      0.9397      0.085427                   1                    0.948396      Klar
+starter                 3.712013
+           Vozinha     CPV       GK      0.9285      0.084409                   1                    0.945316      Klar
+starter                 1.216554
+    Juninho Bacuna     CUW      MID      0.9344      0.084945                   1                    0.944035      Klar
+starter                 1.669343
+        Cody Gakpo     NED      FWD      0.9308      0.084618                   1                    0.937827      Klar
+starter                 4.273673
+   Ronwen Williams     RSA       GK      0.9200      0.083636                   1                    0.937436      Klar
+starter                 1.878439
+   Jordan Pickford     ENG       GK      0.9287      0.084427                   1                    0.936387      Klar
+starter                 4.049721
+      Yan Diomande     CIV      FWD      0.9123      0.082936                   1                    0.934450      Klar
+starter                 1.732218
+Alireza Beiranvand     IRN       GK      0.9189      0.083536                   1                    0.932954      Klar
+starter                 2.222421
+        Akram Afif     QAT      FWD      0.9100      0.082727                   1                    0.932946      Klar
+starter                 1.968408
+      Mehdi Taremi     IRN      FWD      0.9302      0.084564                   1                    0.930786      Klar
+starter                 3.044709
+
+Fordeling på tiers:
+start_signal_tier
+Langt fra start       852
+Tvivlsom starter      214
+Klar starter          195
+Bænk/rotation         136
+Sandsynlig starter    122
+
+Eksempel: top 3 pr. hold/position efter startsignal
+team_id position  team_position_rank          player_name  start_signal_rank_adjusted  start_signal_tier
+    ALG      DEF                   1      Rayan Ait-Nouri                    0.797110 Sandsynlig starter
+    ALG      DEF                   2     Zineddine Belaid                    0.680550 Sandsynlig starter
+    ALG      DEF                   3          Aissa Mandi                    0.639934   Tvivlsom starter
+    ALG      FWD                   1         Amine Gouiri                    0.791189 Sandsynlig starter
+    ALG      FWD                   2         Riyad Mahrez                    0.662266   Tvivlsom starter
+    ALG      FWD                   3       Mohamed Amoura                    0.550551   Tvivlsom starter
+    ALG       GK                   1          Luca Zidane                    0.821051       Klar starter
+    ALG       GK                   2 Melvin Feycal Mastil                    0.164490    Langt fra start
+    ALG       GK                   3      Oussama Benbout                    0.000000    Langt fra start
+    ALG      MID                   1        Houssem Aouar                    0.759394 Sandsynlig starter
+    ALG      MID                   2       Ramiz Zerrouki                    0.592113   Tvivlsom starter
+    ALG      MID                   3      Ismael Bennacer                    0.588294   Tvivlsom starter
+    ARG      DEF                   1   Nicolas Tagliafico                    0.815367 Sandsynlig starter
+    ARG      DEF                   2          Julio Soler                    0.753755 Sandsynlig starter
+    ARG      DEF                   3      Cristian Romero                    0.652315   Tvivlsom starter
+    ARG      FWD                   1         Lionel Messi                    0.842612       Klar starter
+    ARG      FWD                   2     Lautaro Martinez                    0.647616   Tvivlsom starter
+    ARG      FWD                   3       Julian Alvarez                    0.592333   Tvivlsom starter
+    ARG       GK                   1    Emiliano Martinez                    0.949246       Klar starter
+    ARG       GK                   2           Juan Musso                    0.031379    Langt fra start
+    ARG       GK                   3       Geronimo Rulli                    0.000000    Langt fra start
+    ARG      MID                   1        Thiago Almada                    0.758481 Sandsynlig starter
+    ARG      MID                   2       Enzo Fernandez                    0.663610   Tvivlsom starter
+    ARG      MID                   3  Alexis Mac Allister                    0.642750   Tvivlsom starter
+    AUS      DEF                   1        Harry Souttar                    0.859579       Klar starter
+    AUS      DEF                   2     Lucas Herrington                    0.855317       Klar starter
+    AUS      DEF                   3   Alessandro Circati                    0.809916 Sandsynlig starter
+    AUS      FWD                   1           Tete Yengi                    0.842488       Klar starter
+    AUS      FWD                   2           Deni Juric                    0.814372 Sandsynlig starter
+    AUS      FWD                   3        Mohamed Toure                    0.500328      Bænk/rotation
+    AUS       GK                   1          Mathew Ryan                    0.905494       Klar starter
+    AUS       GK                   2        Patrick Beach                    0.076576    Langt fra start
+    AUS       GK                   3            Paul Izzo                    0.000000    Langt fra start
+    AUS      MID                   1        Aiden O'Neill                    0.886305       Klar starter
+    AUS      MID                   2     Cristian Volpato                    0.842488       Klar starter
+    AUS      MID                   3      Connor Metcalfe                    0.679637   Tvivlsom starter
+    AUT      DEF                   1     Philipp Lienhart                    0.795113 Sandsynlig starter
+    AUT      DEF                   2         Stefan Posch                    0.794617 Sandsynlig starter
+    AUT      DEF                   3       Phillipp Mwene                    0.719921 Sandsynlig starter
+    AUT      FWD                   1     Marko Arnautovic                    0.853098       Klar starter
+    AUT      FWD                   2  Michael Gregoritsch                    0.636910   Tvivlsom starter
+    AUT      FWD                   3       Sasa Kalajdzic                    0.057392    Langt fra start
+    AUT       GK                   1   Alexander Schlager                    0.930018       Klar starter
+    AUT       GK                   2        Patrick Pentz                    0.056072    Langt fra start
+    AUT       GK                   3      Florian Wiegele                    0.000000    Langt fra start
+    AUT      MID                   1      Marcel Sabitzer                    0.889953       Klar starter
+    AUT      MID                   2        Konrad Laimer                    0.845850       Klar starter
+    AUT      MID                   3      Nicolas Seiwald                    0.727126 Sandsynlig starter
+    BEL      DEF                   1          Nathan Ngoy                    0.815287 Sandsynlig starter
+    BEL      DEF                   2        Arthur Theate                    0.804624 Sandsynlig starter
+    BEL      DEF                   3     Timothy Castagne                    0.642027   Tvivlsom starter
+    BEL      FWD                   1          Jeremy Doku                    0.677117   Tvivlsom starter
+    BEL      FWD                   2     Leandro Trossard                    0.619134   Tvivlsom starter
+    BEL      FWD                   3 Charles De Ketelaere                    0.517253      Bænk/rotation
+    BEL       GK                   1     Thibaut Courtois                    0.954807       Klar starter
+    BEL       GK                   2         Mike Penders                    0.027712    Langt fra start
+    BEL       GK                   3        Senne Lammens                    0.000000    Langt fra start
+    BEL      MID                   1      Kevin De Bruyne                    0.906929       Klar starter
+    BEL      MID                   2      Youri Tielemans                    0.866919       Klar starter
+    BEL      MID                   3         Amadou Onana                    0.654194   Tvivlsom starter
+=== 12/12 Optimize squads ===
+Optimizer-pool spillere: 1519
+Budget: 50.0 mio. | Maks pr. land: 4
+Next round: Næste runde (runde 1)
+next_round: Næste runde (runde 1) | formation=4-3-3, pris=49,500,000, score=92.380, EV=42.776, high_risk=0, kaptajn=Jona
+than David
+round1_2: 1. + 2. runde | formation=4-3-3, pris=49,500,000, score=110.238, EV=44.017, high_risk=0, kaptajn=Jonathan Davi
+d
+group_stage: Gruppespil | formation=3-4-3, pris=50,000,000, score=123.626, EV=44.121, high_risk=0, kaptajn=Jonathan Davi
+d
+practical_start: 1. + 2. runde | formation=4-3-3, pris=50,000,000, score=120.713, EV=43.443, high_risk=0, kaptajn=Jonath
+an David
+long_run: Lang sigt | formation=5-3-2, pris=50,000,000, score=71.228, EV=39.988, high_risk=0, kaptajn=Mikel Oyarzabal
+Skrevet: data\optimal_squads_by_strategy.json
+Skrevet: data\strategy_comparison_report.csv
+Skrevet: data\strategy_formation_comparison_report.csv
+Skrevet: data\current_strategy_context.json
+Skrevet: data\strategy_cleanup_report.md
+Strategi x formation genereret: 5 x 7 = 35
+=== DONE ===
+Logfil: data\holdet_master_new_players_pipeline_20260607_152753.log
+**********************
+Windows PowerShell transcript end
+End time: 20260607161654
+**********************

@@ -3,9 +3,15 @@ aaron_hickey__sco,Aaron Hickey,SCO,DEF,slutrunde,Slutrunde,3,0,0,0,3,0,0,0,0.0,1
 aaron_hickey__sco,Aaron Hickey,SCO,DEF,kvalifikation,Kvalifikation,15,11,0,0,3,0,0,0,12.0,6.6000000000000005,4.752000000000001,4.140000000000001,4.6000000000000005,0.0,0.0,0.917,0.0,0.0,0.871,0.0,0.0,0.9,0.8253,0.7839
 aaron_hickey__sco,Aaron Hickey,SCO,DEF,nations_league,Nations League,14,3,0,0,8,0,0,2,6.0,5.04,0.9360000000000002,0.4680000000000001,0.6000000000000001,0.0,0.0,0.5,0.0,0.0,0.5,0.0,0.0,0.78,0.39,0.39
 aaron_hickey__sco,Aaron Hickey,SCO,DEF,venskabskamp,Venskabskamp,15,3,0,3,7,0,3,0,8.0,7.88,2.2880000000000003,1.2064000000000001,2.32,0.0,1.6800000000000002,0.375,0.0,0.2,0.527,0.0,0.213,0.52,0.195,0.274
+aaron_tshibola__cod,Aaron Tshibola,COD,DEF,slutrunde,Slutrunde,26,1,0,19,0,0,19,1,26.0,9.76,9.76,0.32,0.32,0.0,7.5200000000000005,0.038,0.0,0.731,0.033,0.0,0.77,1.0,0.038,0.033
+aaron_tshibola__cod,Aaron Tshibola,COD,DEF,kvalifikation,Kvalifikation,44,4,0,35,0,0,35,3,44.0,14.58,13.122000000000002,0.9360000000000002,1.04,0.0,10.9,0.091,0.0,0.795,0.071,0.0,0.748,0.9,0.0819,0.0639
+aaron_tshibola__cod,Aaron Tshibola,COD,DEF,venskabskamp,Venskabskamp,26,2,0,19,1,0,19,2,25.0,7.8500000000000005,3.64,0.21840000000000004,0.42000000000000004,0.0,4.84,0.08,0.0,0.731,0.06,0.0,0.617,0.52,0.0416,0.0312
 aaron_wan_bissaka__cod,Aaron Wan-Bissaka,COD,DEF,slutrunde,Slutrunde,4,3,0,0,0,0,0,1,4.0,3.4,3.4,2.55,2.55,0.0,0.0,0.75,0.0,0.0,0.75,0.0,0.0,1.0,0.75,0.75
 aaron_wan_bissaka__cod,Aaron Wan-Bissaka,COD,DEF,kvalifikation,Kvalifikation,7,7,0,0,0,0,0,0,7.0,5.0,4.500000000000001,4.500000000000001,5.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.9,0.9,0.9
 aaron_wan_bissaka__cod,Aaron Wan-Bissaka,COD,DEF,venskabskamp,Venskabskamp,3,0,0,1,0,0,1,1,3.0,2.77,1.4404000000000001,0.0,0.0,0.0,0.92,0.0,0.0,0.333,0.0,0.0,0.332,0.52,0.0,0.0
+abbosbek_fayzullaev__uzb,Abbosbek Fayzullaev,UZB,MID,slutrunde,Slutrunde,13,6,0,2,0,0,2,1,13.0,5.6000000000000005,5.6000000000000005,2.64,2.64,0.0,1.36,0.462,0.0,0.154,0.471,0.0,0.243,1.0,0.462,0.471
+abbosbek_fayzullaev__uzb,Abbosbek Fayzullaev,UZB,MID,kvalifikation,Kvalifikation,16,9,0,0,0,0,0,0,16.0,7.24,6.516,3.924,4.36,0.0,0.0,0.562,0.0,0.0,0.602,0.0,0.0,0.9,0.5058,0.5418
+abbosbek_fayzullaev__uzb,Abbosbek Fayzullaev,UZB,MID,venskabskamp,Venskabskamp,12,3,0,4,3,0,4,0,9.0,7.16,2.4128000000000003,1.04,2.0,0.0,2.0,0.333,0.0,0.333,0.431,0.0,0.279,0.52,0.1732,0.2241
 abdallah_al_fakhouri__jor,Abdallah Al-Fakhouri,JOR,GK,slutrunde,Slutrunde,24,0,0,13,4,0,13,7,20.0,8.67,7.87,0.0,0.0,0.0,5.63,0.0,0.0,0.542,0.0,0.0,0.649,1.0,0.0,0.0
 abdallah_al_fakhouri__jor,Abdallah Al-Fakhouri,JOR,GK,kvalifikation,Kvalifikation,29,0,0,14,0,0,14,14,29.0,9.24,8.316,0.0,0.0,0.0,3.0,0.0,0.0,0.483,0.0,0.0,0.325,0.9,0.0,0.0
 abdallah_al_fakhouri__jor,Abdallah Al-Fakhouri,JOR,GK,venskabskamp,Venskabskamp,56,7,0,38,3,0,38,6,53.0,14.9,7.436000000000001,0.5824,1.12,0.0,9.32,0.132,0.0,0.679,0.078,0.0,0.626,0.52,0.0686,0.0406
@@ -26,6 +32,12 @@ abdoulaye_seck__sen,Abdoulaye Seck,SEN,DEF,venskabskamp,Venskabskamp,16,5,0,2,0,
 abdukodir_khusanov__uzb,Abdukodir Khusanov,UZB,DEF,slutrunde,Slutrunde,13,5,0,6,0,0,4,1,13.0,5.6000000000000005,5.6000000000000005,1.6,1.6,0.0,3.3600000000000003,0.385,0.0,0.462,0.286,0.0,0.6,1.0,0.385,0.286
 abdukodir_khusanov__uzb,Abdukodir Khusanov,UZB,DEF,kvalifikation,Kvalifikation,16,12,0,2,0,0,2,0,16.0,7.24,6.516,4.932,5.4799999999999995,0.0,0.96,0.75,0.0,0.125,0.757,0.0,0.133,0.9,0.675,0.6813
 abdukodir_khusanov__uzb,Abdukodir Khusanov,UZB,DEF,venskabskamp,Venskabskamp,12,5,0,4,2,0,4,0,10.0,7.16,3.0160000000000005,1.872,3.6,0.0,1.8800000000000001,0.5,0.0,0.333,0.621,0.0,0.263,0.52,0.26,0.3229
+abdul_mumin__gha,Abdul Mumin,GHA,DEF,slutrunde,Slutrunde,3,0,0,0,0,0,0,3,3.0,0.6000000000000001,0.6000000000000001,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0
+abdul_mumin__gha,Abdul Mumin,GHA,DEF,kvalifikation,Kvalifikation,17,2,0,4,6,0,4,3,11.0,8.12,3.996,0.864,0.96,0.0,1.64,0.182,0.0,0.235,0.216,0.0,0.202,0.9,0.1638,0.1944
+abdul_mumin__gha,Abdul Mumin,GHA,DEF,venskabskamp,Venskabskamp,9,0,0,3,4,0,3,1,5.0,6.36,2.1008,0.0,0.0,0.0,2.84,0.0,0.0,0.333,0.0,0.0,0.447,0.52,0.0,0.0
+abdul_rahman_baba__gha,Abdul Rahman Baba,GHA,DEF,slutrunde,Slutrunde,28,15,0,6,5,0,6,1,23.0,4.36,3.8600000000000003,2.0,2.0,0.0,1.56,0.652,0.0,0.214,0.518,0.0,0.358,1.0,0.652,0.518
+abdul_rahman_baba__gha,Abdul Rahman Baba,GHA,DEF,kvalifikation,Kvalifikation,63,26,0,21,13,0,21,3,50.0,14.5,11.124,3.0780000000000003,3.4200000000000004,0.0,8.64,0.52,0.0,0.333,0.277,0.0,0.596,0.9,0.468,0.2493
+abdul_rahman_baba__gha,Abdul Rahman Baba,GHA,DEF,venskabskamp,Venskabskamp,38,8,0,21,4,0,21,4,34.0,11.280000000000001,5.6576,0.6240000000000001,1.2000000000000002,0.0,7.88,0.235,0.0,0.553,0.11,0.0,0.699,0.52,0.1222,0.0572
 abdulaziz_hatim_mohammed__qat,Abdulaziz Hatim Mohammed,QAT,MID,slutrunde,Slutrunde,74,38,0,22,0,0,22,4,74.0,14.67,14.67,6.12,6.12,0.0,4.62,0.514,0.0,0.297,0.417,0.0,0.315,1.0,0.514,0.417
 abdulaziz_hatim_mohammed__qat,Abdulaziz Hatim Mohammed,QAT,MID,kvalifikation,Kvalifikation,66,12,0,30,0,0,30,18,66.0,13.5,12.15,2.718,3.02,0.0,4.640000000000001,0.182,0.0,0.455,0.224,0.0,0.344,0.9,0.1638,0.2016
 abdulaziz_hatim_mohammed__qat,Abdulaziz Hatim Mohammed,QAT,MID,venskabskamp,Venskabskamp,93,45,0,35,0,0,35,3,93.0,15.32,7.966400000000001,3.5464,6.82,0.0,5.4,0.484,0.0,0.376,0.445,0.0,0.352,0.52,0.2517,0.2314
@@ -62,6 +74,10 @@ adalberto_carrasquilla__pan,Adalberto Carrasquilla,PAN,MID,nations_league_finals
 adalberto_carrasquilla__pan,Adalberto Carrasquilla,PAN,MID,kvalifikation,Kvalifikation,30,21,0,6,0,0,6,0,30.0,10.200000000000001,9.180000000000001,6.534000000000001,7.260000000000001,0.0,2.16,0.7,0.0,0.2,0.712,0.0,0.212,0.9,0.63,0.6408
 adalberto_carrasquilla__pan,Adalberto Carrasquilla,PAN,MID,nations_league,Nations League,12,9,0,1,0,0,1,0,12.0,2.48,1.9344000000000001,1.6224000000000003,2.08,0.0,0.1,0.75,0.0,0.083,0.839,0.0,0.04,0.78,0.585,0.6544
 adalberto_carrasquilla__pan,Adalberto Carrasquilla,PAN,MID,venskabskamp,Venskabskamp,42,9,0,23,3,0,23,0,39.0,13.0,5.2,1.248,2.4,0.0,5.5,0.231,0.0,0.548,0.24,0.0,0.423,0.52,0.1201,0.1248
+adam_hlozek__cze,Adam Hlozek,CZE,FWD,slutrunde,Slutrunde,8,2,0,1,0,0,1,1,8.0,2.44,2.44,0.96,0.96,0.0,0.2,0.25,0.0,0.125,0.393,0.0,0.082,1.0,0.25,0.393
+adam_hlozek__cze,Adam Hlozek,CZE,FWD,kvalifikation,Kvalifikation,27,11,0,3,10,0,3,0,17.0,10.700000000000001,3.8700000000000006,2.736,3.04,0.0,0.30000000000000004,0.647,0.0,0.111,0.707,0.0,0.028,0.9,0.5823,0.6363
+adam_hlozek__cze,Adam Hlozek,CZE,FWD,nations_league,Nations League,18,5,0,0,5,0,0,1,13.0,4.68,3.2604,0.9204000000000001,1.18,0.0,0.0,0.385,0.0,0.0,0.282,0.0,0.0,0.78,0.3003,0.22
+adam_hlozek__cze,Adam Hlozek,CZE,FWD,venskabskamp,Venskabskamp,19,4,0,3,4,0,3,1,15.0,7.1000000000000005,2.8288,1.1024,2.12,0.0,0.5,0.267,0.0,0.158,0.39,0.0,0.07,0.52,0.1388,0.2028
 adam_karabec__cze,Adam Karabec,CZE,MID,kvalifikation,Kvalifikation,5,1,0,0,0,0,0,2,5.0,3.8800000000000003,3.4920000000000004,0.6120000000000001,0.68,0.0,0.0,0.2,0.0,0.0,0.175,0.0,0.0,0.9,0.18,0.1575
 adam_karabec__cze,Adam Karabec,CZE,MID,nations_league,Nations League,1,0,0,0,0,0,0,1,1.0,0.1,0.07800000000000001,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.78,0.0,0.0
 adam_karabec__cze,Adam Karabec,CZE,MID,venskabskamp,Venskabskamp,2,1,0,0,0,0,0,0,2.0,1.36,0.7072,0.3536,0.68,0.0,0.0,0.5,0.0,0.0,0.5,0.0,0.0,0.52,0.26,0.26
@@ -79,9 +95,18 @@ adrien_rabiot__fra,Adrien Rabiot,FRA,MID,venskabskamp,Venskabskamp,29,10,0,8,0,0
 agust_n_lvarez__uru,Agustin Alvarez,URU,FWD,slutrunde,Slutrunde,9,0,0,9,0,0,9,0,9.0,3.48,3.48,0.0,0.0,0.0,3.48,0.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0
 agust_n_lvarez__uru,Agustin Alvarez,URU,FWD,kvalifikation,Kvalifikation,30,3,0,13,7,0,13,5,23.0,10.68,7.704000000000001,0.54,0.6000000000000001,0.0,5.52,0.13,0.0,0.433,0.07,0.0,0.517,0.9,0.117,0.063
 agust_n_lvarez__uru,Agustin Alvarez,URU,FWD,venskabskamp,Venskabskamp,19,0,0,13,4,0,13,1,15.0,8.200000000000001,3.224,0.0,0.0,0.0,4.6000000000000005,0.0,0.0,0.684,0.0,0.0,0.561,0.52,0.0,0.0
+agustin_canobbio__uru,Agustin Canobbio,URU,MID,slutrunde,Slutrunde,9,0,0,0,0,0,0,7,9.0,3.48,3.48,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0
+agustin_canobbio__uru,Agustin Canobbio,URU,MID,kvalifikation,Kvalifikation,22,1,0,8,6,0,8,3,16.0,9.08,5.904000000000001,0.28800000000000003,0.32,0.0,4.24,0.062,0.0,0.364,0.049,0.0,0.467,0.9,0.0558,0.0441
+agustin_canobbio__uru,Agustin Canobbio,URU,MID,venskabskamp,Venskabskamp,19,4,0,10,1,0,8,1,18.0,8.200000000000001,4.16,1.2272,2.3600000000000003,0.0,4.720000000000001,0.222,0.0,0.526,0.295,0.0,0.576,0.52,0.1154,0.1534
 ahmad_assaf__jor,Ahmad Assaf,JOR,DEF,slutrunde,Slutrunde,6,0,0,6,0,0,6,0,6.0,4.93,4.93,0.0,0.0,0.0,4.93,0.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0
 ahmad_assaf__jor,Ahmad Assaf,JOR,DEF,kvalifikation,Kvalifikation,4,2,0,0,0,0,0,2,4.0,2.12,1.9080000000000001,1.044,1.1600000000000001,0.0,0.0,0.5,0.0,0.0,0.547,0.0,0.0,0.9,0.45,0.4923
 ahmad_assaf__jor,Ahmad Assaf,JOR,DEF,venskabskamp,Venskabskamp,8,2,0,6,0,0,6,0,8.0,5.92,3.0784000000000002,0.9568000000000001,1.84,0.0,4.08,0.25,0.0,0.75,0.311,0.0,0.689,0.52,0.13,0.1617
+ahmed_al_ganehi__qat,Ahmed Al-Ganehi,QAT,MID,slutrunde,Slutrunde,13,0,0,4,3,0,4,3,10.0,5.89,3.68,0.0,0.0,0.0,1.76,0.0,0.0,0.308,0.0,0.0,0.299,1.0,0.0,0.0
+ahmed_al_ganehi__qat,Ahmed Al-Ganehi,QAT,MID,kvalifikation,Kvalifikation,16,6,0,3,0,0,3,3,16.0,7.96,7.164000000000001,2.952,3.2800000000000002,0.0,1.44,0.375,0.0,0.188,0.412,0.0,0.181,0.9,0.3375,0.3708
+ahmed_al_ganehi__qat,Ahmed Al-Ganehi,QAT,MID,venskabskamp,Venskabskamp,5,0,0,0,3,0,0,2,2.0,4.04,1.04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.52,0.0,0.0
+ahmed_al_kassar__ksa,Ahmed Al-Kassar,KSA,GK,slutrunde,Slutrunde,22,3,0,6,0,0,6,13,22.0,11.25,11.25,0.96,0.96,0.0,4.93,0.136,0.0,0.273,0.085,0.0,0.438,1.0,0.136,0.085
+ahmed_al_kassar__ksa,Ahmed Al-Kassar,KSA,GK,kvalifikation,Kvalifikation,19,4,0,1,2,0,1,11,17.0,8.26,6.21,1.728,1.92,0.0,0.68,0.235,0.0,0.053,0.278,0.0,0.082,0.9,0.2115,0.2502
+ahmed_al_kassar__ksa,Ahmed Al-Kassar,KSA,GK,venskabskamp,Venskabskamp,8,1,0,0,4,0,0,3,4.0,6.5600000000000005,1.9968000000000001,0.52,1.0,0.0,0.0,0.25,0.0,0.0,0.26,0.0,0.0,0.52,0.13,0.1352
 ahmed_basil_fadhil__irq,Ahmed Basil Fadhil,IRQ,GK,slutrunde,Slutrunde,19,5,0,3,0,0,3,11,19.0,7.55,7.55,2.9,2.9,0.0,1.44,0.263,0.0,0.158,0.384,0.0,0.191,1.0,0.263,0.384
 ahmed_basil_fadhil__irq,Ahmed Basil Fadhil,IRQ,GK,kvalifikation,Kvalifikation,30,5,0,6,0,0,6,19,30.0,12.68,11.412,2.556,2.84,0.0,2.88,0.167,0.0,0.2,0.224,0.0,0.227,0.9,0.1503,0.2016
 ahmed_basil_fadhil__irq,Ahmed Basil Fadhil,IRQ,GK,venskabskamp,Venskabskamp,14,4,0,3,0,0,3,7,14.0,5.78,3.0056000000000003,1.2064000000000001,2.3200000000000003,0.0,1.2,0.286,0.0,0.214,0.401,0.0,0.208,0.52,0.1487,0.2085
@@ -95,6 +120,13 @@ ahmed_hasan_maknzi__irq,Ahmed Hasan Maknzi,IRQ,DEF,slutrunde,Slutrunde,7,5,0,0,0
 ahmed_hasan_maknzi__irq,Ahmed Hasan Maknzi,IRQ,DEF,kvalifikation,Kvalifikation,11,0,0,9,0,0,9,2,11.0,6.720000000000001,6.048000000000001,0.0,0.0,0.0,5.76,0.0,0.0,0.818,0.0,0.0,0.857,0.9,0.0,0.0
 ahmed_hasan_maknzi__irq,Ahmed Hasan Maknzi,IRQ,DEF,venskabskamp,Venskabskamp,3,0,0,2,0,0,2,0,3.0,2.3600000000000003,1.2272,0.0,0.0,0.0,1.36,0.0,0.0,0.667,0.0,0.0,0.576,0.52,0.0,0.0
 ahmed_nadhir_benbouali__alg,Ahmed Nadhir Benbouali,ALG,FWD,venskabskamp,Venskabskamp,3,0,0,0,0,0,0,0,3.0,2.84,1.4768000000000001,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.52,0.0,0.0
+ahmed_qasem__irq,Ahmed Qasem,IRQ,MID,venskabskamp,Venskabskamp,2,1,0,0,0,0,0,0,2.0,2.0,1.04,0.52,1.0,0.0,0.0,0.5,0.0,0.0,0.5,0.0,0.0,0.52,0.26,0.26
+ahmed_reda_tagnaouti__mar,Ahmed Reda Tagnaouti,MAR,GK,slutrunde,Slutrunde,59,0,0,35,0,0,35,24,59.0,22.02,22.02,0.0,0.0,0.0,18.42,0.0,0.0,0.593,0.0,0.0,0.837,1.0,0.0,0.0
+ahmed_reda_tagnaouti__mar,Ahmed Reda Tagnaouti,MAR,GK,kvalifikation,Kvalifikation,40,0,0,31,1,0,31,8,39.0,11.42,9.99,0.0,0.0,0.0,9.9,0.0,0.0,0.775,0.0,0.0,0.867,0.9,0.0,0.0
+ahmed_reda_tagnaouti__mar,Ahmed Reda Tagnaouti,MAR,GK,venskabskamp,Venskabskamp,41,0,0,21,3,0,21,14,38.0,12.56,6.0944,0.0,0.0,0.0,8.72,0.0,0.0,0.512,0.0,0.0,0.694,0.52,0.0,0.0
+ahmed_yahya__irq,Ahmed Yahya,IRQ,DEF,slutrunde,Slutrunde,11,4,0,3,0,0,3,2,11.0,5.95,5.95,2.17,2.17,0.0,1.44,0.364,0.0,0.273,0.365,0.0,0.242,1.0,0.364,0.365
+ahmed_yahya__irq,Ahmed Yahya,IRQ,DEF,kvalifikation,Kvalifikation,21,5,0,1,2,0,1,11,19.0,10.88,9.216000000000001,2.16,2.4,0.0,0.92,0.263,0.0,0.048,0.234,0.0,0.085,0.9,0.2367,0.2106
+ahmed_yahya__irq,Ahmed Yahya,IRQ,DEF,venskabskamp,Venskabskamp,10,4,0,0,0,0,0,4,10.0,5.28,2.7456,1.2064000000000001,2.3200000000000003,0.0,0.0,0.4,0.0,0.0,0.439,0.0,0.0,0.52,0.208,0.2283
 aidan_morris__usa,Aidan Morris,USA,MID,slutrunde,Slutrunde,14,1,0,12,0,0,12,0,14.0,7.12,7.12,0.32,0.32,0.0,6.48,0.071,0.0,0.857,0.045,0.0,0.91,1.0,0.071,0.045
 aidan_morris__usa,Aidan Morris,USA,MID,nations_league_finals,Nations League-slutrunde,10,0,0,8,2,0,8,0,8.0,3.84,2.7359999999999998,0.0,0.0,0.0,2.88,0.0,0.0,0.8,0.0,0.0,0.75,0.95,0.0,0.0
 aidan_morris__usa,Aidan Morris,USA,MID,nations_league,Nations League,2,0,0,2,0,0,2,0,2.0,0.4,0.31200000000000006,0.0,0.0,0.0,0.4,0.0,0.0,1.0,0.0,0.0,1.0,0.78,0.0,0.0
@@ -120,6 +152,10 @@ akmal_mozgovoy__uzb,Akmal Mozgovoy,UZB,MID,venskabskamp,Venskabskamp,32,5,0,10,0
 akram_afif__qat,Akram Afif,QAT,FWD,slutrunde,Slutrunde,52,42,0,8,0,0,8,0,52.0,12.47,12.47,9.870000000000001,9.870000000000001,0.0,2.08,0.808,0.0,0.154,0.791,0.0,0.167,1.0,0.808,0.791
 akram_afif__qat,Akram Afif,QAT,FWD,kvalifikation,Kvalifikation,43,28,0,4,0,0,4,2,43.0,11.2,10.08,7.956,8.84,0.0,1.16,0.651,0.0,0.093,0.789,0.0,0.104,0.9,0.5859,0.7101
 akram_afif__qat,Akram Afif,QAT,FWD,venskabskamp,Venskabskamp,62,37,0,15,0,0,15,0,62.0,12.22,6.354400000000001,4.316000000000001,8.3,0.0,2.62,0.597,0.0,0.242,0.679,0.0,0.214,0.52,0.3104,0.3531
+al_hashmi_al_hussain__qat,Al-Hashmi Al-Hussain,QAT,DEF,slutrunde,Slutrunde,6,5,0,0,0,0,0,1,6.0,3.65,3.65,3.17,3.17,0.0,0.0,0.833,0.0,0.0,0.868,0.0,0.0,1.0,0.833,0.868
+al_hashmi_al_hussain__qat,Al-Hashmi Al-Hussain,QAT,DEF,kvalifikation,Kvalifikation,14,1,0,12,0,0,12,1,14.0,7.32,6.588,0.432,0.48,0.0,6.36,0.071,0.0,0.857,0.066,0.0,0.869,0.9,0.0639,0.0594
+al_hashmi_al_hussain__qat,Al-Hashmi Al-Hussain,QAT,DEF,venskabskamp,Venskabskamp,5,1,0,2,0,0,2,0,5.0,4.04,2.1008,0.3536,0.68,0.0,1.36,0.2,0.0,0.4,0.168,0.0,0.337,0.52,0.104,0.0874
+alaa_hejji__ksa,Alaa Hejji,KSA,MID,venskabskamp,Venskabskamp,2,0,0,0,0,0,0,0,2.0,2.0,1.04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.52,0.0,0.0
 alan_ben_tez__par,Alan Benitez,PAR,DEF,slutrunde,Slutrunde,12,0,0,12,0,0,12,0,12.0,2.84,2.84,0.0,0.0,0.0,2.84,0.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0
 alan_ben_tez__par,Alan Benitez,PAR,DEF,kvalifikation,Kvalifikation,40,0,0,38,0,0,38,0,40.0,11.78,10.602,0.0,0.0,0.0,11.38,0.0,0.0,0.95,0.0,0.0,0.966,0.9,0.0,0.0
 alan_ben_tez__par,Alan Benitez,PAR,DEF,venskabskamp,Venskabskamp,32,6,0,22,0,0,22,4,32.0,9.32,4.8464,1.3936000000000002,2.68,0.0,4.16,0.188,0.0,0.688,0.288,0.0,0.446,0.52,0.0978,0.1498
@@ -131,6 +167,9 @@ alan_varela__arg,Alan Varela,ARG,MID,kvalifikation,Kvalifikation,1,0,0,0,0,0,0,1
 alban_lafont__civ,Alban Lafont,CIV,GK,slutrunde,Slutrunde,5,1,0,0,0,0,0,4,5.0,4.25,4.25,0.85,0.85,0.0,0.0,0.2,0.0,0.0,0.2,0.0,0.0,1.0,0.2,0.2
 alban_lafont__civ,Alban Lafont,CIV,GK,kvalifikation,Kvalifikation,4,1,0,0,0,0,0,3,4.0,2.72,2.4480000000000004,0.6120000000000001,0.68,0.0,0.0,0.25,0.0,0.0,0.25,0.0,0.0,0.9,0.225,0.225
 alban_lafont__civ,Alban Lafont,CIV,GK,venskabskamp,Venskabskamp,5,2,0,0,0,0,0,3,5.0,4.2,2.184,0.8320000000000001,1.6,0.0,0.0,0.4,0.0,0.0,0.381,0.0,0.0,0.52,0.208,0.1981
+alejandro_romero_gamarra__par,Alejandro Romero Gamarra,PAR,MID,slutrunde,Slutrunde,12,2,0,4,0,0,4,4,12.0,2.84,2.84,0.4,0.4,0.0,0.4,0.167,0.0,0.333,0.141,0.0,0.141,1.0,0.167,0.141
+alejandro_romero_gamarra__par,Alejandro Romero Gamarra,PAR,MID,kvalifikation,Kvalifikation,36,4,0,2,4,0,2,12,32.0,11.38,9.522,0.8280000000000001,0.92,0.0,0.30000000000000004,0.125,0.0,0.056,0.087,0.0,0.026,0.9,0.1125,0.0783
+alejandro_romero_gamarra__par,Alejandro Romero Gamarra,PAR,MID,venskabskamp,Venskabskamp,31,4,0,11,2,0,11,6,29.0,10.120000000000001,5.0544,0.8736,1.68,0.0,3.24,0.138,0.0,0.355,0.173,0.0,0.32,0.52,0.0718,0.09
 aleksandar_pavlovic__ger,Aleksandar Pavlovic,GER,MID,slutrunde,Slutrunde,5,0,0,1,4,0,1,0,1.0,2.4,0.48,0.0,0.0,0.0,0.48,0.0,0.0,0.2,0.0,0.0,0.2,1.0,0.0,0.0
 aleksandar_pavlovic__ger,Aleksandar Pavlovic,GER,MID,nations_league_finals,Nations League-slutrunde,4,1,0,0,2,0,0,1,2.0,2.12,1.1019999999999999,0.45599999999999996,0.48,0.0,0.0,0.5,0.0,0.0,0.414,0.0,0.0,0.95,0.475,0.3933
 aleksandar_pavlovic__ger,Aleksandar Pavlovic,GER,MID,kvalifikation,Kvalifikation,6,4,0,2,0,0,2,0,6.0,4.08,3.6720000000000006,2.4480000000000004,2.72,0.0,1.36,0.667,0.0,0.333,0.667,0.0,0.333,0.9,0.6003,0.6003
@@ -167,6 +206,10 @@ alex_rufer__nzl,Alex Rufer,NZL,MID,venskabskamp,Venskabskamp,43,7,0,13,4,0,13,10
 alex_sandro__bra,Alex Sandro,BRA,DEF,slutrunde,Slutrunde,46,6,0,29,2,0,29,5,44.0,7.32,6.92,1.0,1.0,0.0,4.5200000000000005,0.136,0.0,0.63,0.145,0.0,0.617,1.0,0.136,0.145
 alex_sandro__bra,Alex Sandro,BRA,DEF,kvalifikation,Kvalifikation,53,13,0,22,12,0,22,5,41.0,12.98,7.848000000000001,2.7540000000000004,3.06,0.0,4.2,0.317,0.0,0.415,0.351,0.0,0.324,0.9,0.2853,0.3159
 alex_sandro__bra,Alex Sandro,BRA,DEF,venskabskamp,Venskabskamp,89,14,0,43,11,0,43,14,78.0,16.8,7.155200000000001,1.5496,2.98,0.0,7.2,0.179,0.0,0.483,0.217,0.0,0.429,0.52,0.0931,0.1128
+alex_zendejas__usa,Alex Zendejas,USA,MID,slutrunde,Slutrunde,14,4,0,9,0,0,9,1,14.0,7.12,7.12,1.28,1.28,0.0,5.5200000000000005,0.286,0.0,0.643,0.18,0.0,0.775,1.0,0.286,0.18
+alex_zendejas__usa,Alex Zendejas,USA,MID,nations_league_finals,Nations League-slutrunde,10,0,0,4,0,0,4,4,10.0,3.84,3.6479999999999997,0.0,0.0,0.0,1.6,0.0,0.0,0.4,0.0,0.0,0.417,0.95,0.0,0.0
+alex_zendejas__usa,Alex Zendejas,USA,MID,nations_league,Nations League,2,1,0,0,0,0,0,0,2.0,0.4,0.31200000000000006,0.15600000000000003,0.2,0.0,0.0,0.5,0.0,0.0,0.5,0.0,0.0,0.78,0.39,0.39
+alex_zendejas__usa,Alex Zendejas,USA,MID,venskabskamp,Venskabskamp,28,2,0,19,0,0,19,3,28.0,15.32,7.9664,0.4576,0.8800000000000001,0.0,10.16,0.071,0.0,0.679,0.057,0.0,0.663,0.52,0.0369,0.0296
 alexander_alex_robertson__aus,Alexander 'Alex' Robertson,AUS,MID,slutrunde,Slutrunde,5,0,0,0,5,0,0,0,0.0,1.6,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.0,0.0,1.0,0.0,0.0
 alexander_alex_robertson__aus,Alexander 'Alex' Robertson,AUS,MID,kvalifikation,Kvalifikation,16,0,0,14,2,0,14,0,14.0,7.24,5.94,0.0,0.0,0.0,6.6,0.0,0.0,0.875,0.0,0.0,0.912,0.9,0.0,0.0
 alexander_alex_robertson__aus,Alexander 'Alex' Robertson,AUS,MID,venskabskamp,Venskabskamp,15,0,0,8,2,0,8,2,13.0,7.920000000000001,3.4112000000000005,0.0,0.0,0.0,4.0,0.0,0.0,0.533,0.0,0.0,0.505,0.52,0.0,0.0
@@ -195,10 +238,12 @@ alexander_schlager__aut,Alexander Schlager,AUT,GK,venskabskamp,Venskabskamp,16,5
 alexander_s_rloth__nor,Alexander Sørloth,NOR,FWD,kvalifikation,Kvalifikation,47,25,0,7,3,0,7,4,44.0,11.16,9.396,7.110000000000001,7.9,0.0,1.02,0.568,0.0,0.149,0.757,0.0,0.091,0.9,0.5112,0.6813
 alexander_s_rloth__nor,Alexander Sørloth,NOR,FWD,nations_league,Nations League,24,12,0,2,0,0,2,3,24.0,5.28,4.1184,3.0264,3.88,0.0,0.2,0.5,0.0,0.083,0.735,0.0,0.038,0.78,0.39,0.5733
 alexander_s_rloth__nor,Alexander Sørloth,NOR,FWD,venskabskamp,Venskabskamp,28,10,0,7,2,0,7,0,26.0,8.64,4.2224,2.1736,4.18,0.0,2.2600000000000002,0.385,0.0,0.25,0.515,0.0,0.262,0.52,0.2002,0.2678
+alexandr_sojka__cze,Alexandr Sojka,CZE,MID,venskabskamp,Venskabskamp,2,1,0,0,0,0,0,0,2.0,2.0,1.04,0.52,1.0,0.0,0.0,0.5,0.0,0.0,0.5,0.0,0.0,0.52,0.26,0.26
 alexandre_pierre__hai,Alexandre Pierre,HAI,GK,slutrunde,Slutrunde,6,3,0,0,0,0,0,3,6.0,3.0,3.0,0.96,0.96,0.0,0.0,0.5,0.0,0.0,0.32,0.0,0.0,1.0,0.5,0.32
 alexandre_pierre__hai,Alexandre Pierre,HAI,GK,kvalifikation,Kvalifikation,10,1,0,3,0,0,3,6,10.0,6.4,5.760000000000001,0.6120000000000001,0.68,0.0,2.04,0.1,0.0,0.3,0.106,0.0,0.319,0.9,0.09,0.0954
 alexandre_pierre__hai,Alexandre Pierre,HAI,GK,nations_league,Nations League,16,4,0,2,0,0,2,9,16.0,5.36,4.1808000000000005,1.0608,1.3599999999999999,0.0,0.96,0.25,0.0,0.125,0.254,0.0,0.179,0.78,0.195,0.1981
 alexandre_pierre__hai,Alexandre Pierre,HAI,GK,venskabskamp,Venskabskamp,7,5,0,0,0,0,0,1,7.0,4.96,2.5792,1.5392000000000001,2.96,0.0,0.0,0.714,0.0,0.0,0.597,0.0,0.0,0.52,0.3713,0.3104
+alexandro_maidana__par,Alexandro Maidana,PAR,DEF,venskabskamp,Venskabskamp,3,0,0,0,0,0,0,1,3.0,2.84,1.4768000000000001,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.52,0.0,0.0
 alexis_duarte__par,Alexis Duarte,PAR,DEF,kvalifikation,Kvalifikation,3,0,0,0,0,0,0,3,3.0,1.56,1.4040000000000001,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.9,0.0,0.0
 alexis_duarte__par,Alexis Duarte,PAR,DEF,venskabskamp,Venskabskamp,4,1,0,0,0,0,0,3,4.0,2.72,1.4144,0.3536,0.68,0.0,0.0,0.25,0.0,0.0,0.25,0.0,0.0,0.52,0.13,0.13
 alexis_guendouz__alg,Alexis Guendouz,ALG,GK,slutrunde,Slutrunde,14,5,0,9,0,0,9,0,14.0,5.5600000000000005,5.5600000000000005,1.0,1.0,0.0,4.5600000000000005,0.357,0.0,0.643,0.18,0.0,0.82,1.0,0.357,0.18
@@ -217,6 +262,7 @@ alexis_vega__mex,Alexis Vega,MEX,FWD,nations_league_finals,Nations League-slutru
 alexis_vega__mex,Alexis Vega,MEX,FWD,kvalifikation,Kvalifikation,14,6,0,3,1,0,3,1,13.0,2.8000000000000003,2.3400000000000003,1.08,1.2000000000000002,0.0,0.6000000000000001,0.462,0.0,0.214,0.462,0.0,0.214,0.9,0.4158,0.4158
 alexis_vega__mex,Alexis Vega,MEX,FWD,nations_league,Nations League,8,0,0,8,0,0,8,0,8.0,1.2000000000000002,0.9360000000000002,0.0,0.0,0.0,1.2000000000000002,0.0,0.0,1.0,0.0,0.0,1.0,0.78,0.0,0.0
 alexis_vega__mex,Alexis Vega,MEX,FWD,venskabskamp,Venskabskamp,59,14,0,21,6,0,20,5,53.0,22.29,9.505600000000001,3.0992,5.96,0.0,4.78,0.264,0.0,0.356,0.326,0.0,0.214,0.52,0.1373,0.1695
+alfie_jones__can,Alfie Jones,CAN,DEF,venskabskamp,Venskabskamp,6,1,0,0,3,0,0,1,3.0,5.37,1.3936000000000002,0.3536,0.68,0.0,0.0,0.333,0.0,0.0,0.254,0.0,0.0,0.52,0.1732,0.1321
 ali_abdi__tun,Ali Abdi,TUN,DEF,slutrunde,Slutrunde,24,9,0,10,1,0,10,3,23.0,9.370000000000001,9.17,4.64,4.64,0.0,3.6100000000000003,0.391,0.0,0.417,0.506,0.0,0.385,1.0,0.391,0.506
 ali_abdi__tun,Ali Abdi,TUN,DEF,kvalifikation,Kvalifikation,32,17,0,3,2,0,3,9,30.0,11.4,9.036000000000001,6.282,6.98,0.0,0.88,0.567,0.0,0.094,0.695,0.0,0.077,0.9,0.5103,0.6255
 ali_abdi__tun,Ali Abdi,TUN,DEF,venskabskamp,Venskabskamp,28,16,0,2,2,0,2,6,26.0,12.73,6.411600000000001,3.5880000000000005,6.9,0.0,1.36,0.615,0.0,0.071,0.56,0.0,0.107,0.52,0.3198,0.2912
@@ -234,12 +280,21 @@ ali_azaizeh__jor,Ali Azaizeh,JOR,MID,venskabskamp,Venskabskamp,7,0,0,0,0,0,0,4,7
 ali_jasim__irq,Ali Jasim,IRQ,MID,slutrunde,Slutrunde,11,7,0,0,0,0,0,0,11.0,5.95,5.95,3.45,3.45,0.0,0.0,0.636,0.0,0.0,0.58,0.0,0.0,1.0,0.636,0.58
 ali_jasim__irq,Ali Jasim,IRQ,MID,kvalifikation,Kvalifikation,21,15,0,0,0,0,0,0,21.0,10.88,9.792,6.444000000000001,7.16,0.0,0.0,0.714,0.0,0.0,0.658,0.0,0.0,0.9,0.6426,0.5922
 ali_jasim__irq,Ali Jasim,IRQ,MID,venskabskamp,Venskabskamp,7,4,0,3,0,0,3,0,7.0,4.32,2.2464,1.0192,1.96,0.0,2.3600000000000003,0.571,0.0,0.429,0.454,0.0,0.546,0.52,0.2969,0.2361
+ali_lajami__ksa,Ali Lajami,KSA,DEF,slutrunde,Slutrunde,32,4,0,24,0,0,24,4,32.0,13.15,13.15,1.44,1.44,0.0,9.950000000000001,0.125,0.0,0.75,0.11,0.0,0.757,1.0,0.125,0.11
+ali_lajami__ksa,Ali Lajami,KSA,DEF,kvalifikation,Kvalifikation,35,9,0,21,0,0,21,4,35.0,11.5,10.350000000000001,3.6,4.0,0.0,5.48,0.257,0.0,0.6,0.348,0.0,0.477,0.9,0.2313,0.3132
+ali_lajami__ksa,Ali Lajami,KSA,DEF,venskabskamp,Venskabskamp,26,4,0,16,3,0,16,0,23.0,10.24,4.139200000000001,1.2688000000000001,2.44,0.0,4.220000000000001,0.174,0.0,0.615,0.307,0.0,0.412,0.52,0.0905,0.1596
 ali_majrashi__ksa,Ali Majrashi,KSA,DEF,slutrunde,Slutrunde,27,10,0,15,0,0,15,1,27.0,12.65,12.65,6.04,6.04,0.0,5.08,0.37,0.0,0.556,0.477,0.0,0.402,1.0,0.37,0.477
 ali_majrashi__ksa,Ali Majrashi,KSA,DEF,kvalifikation,Kvalifikation,22,2,0,15,2,0,15,2,20.0,9.4,7.596,1.044,1.1600000000000001,0.0,5.64,0.1,0.0,0.682,0.137,0.0,0.6,0.9,0.09,0.1233
 ali_majrashi__ksa,Ali Majrashi,KSA,DEF,venskabskamp,Venskabskamp,22,1,0,12,2,0,12,1,20.0,9.84,4.9088,0.3536,0.68,0.0,2.88,0.05,0.0,0.545,0.072,0.0,0.293,0.52,0.026,0.0374
+ali_olwan__jor,Ali Olwan,JOR,FWD,slutrunde,Slutrunde,17,15,0,1,0,0,0,0,17.0,7.97,7.97,6.8,6.8,0.0,0.32,0.882,0.0,0.059,0.853,0.0,0.04,1.0,0.882,0.853
+ali_olwan__jor,Ali Olwan,JOR,FWD,kvalifikation,Kvalifikation,23,17,0,2,2,0,2,1,21.0,8.64,6.912,5.94,6.6,0.0,0.6799999999999999,0.81,0.0,0.087,0.859,0.0,0.079,0.9,0.729,0.7731
+ali_olwan__jor,Ali Olwan,JOR,FWD,venskabskamp,Venskabskamp,38,17,0,10,2,0,10,2,36.0,13.100000000000001,5.855200000000001,3.2760000000000002,6.3,0.0,2.8400000000000003,0.472,0.0,0.263,0.56,0.0,0.217,0.52,0.2454,0.2912
 ali_yousif__irq,Ali Yousif,IRQ,FWD,slutrunde,Slutrunde,19,0,0,14,0,0,14,3,19.0,7.55,7.55,0.0,0.0,0.0,5.99,0.0,0.0,0.737,0.0,0.0,0.793,1.0,0.0,0.0
 ali_yousif__irq,Ali Yousif,IRQ,FWD,kvalifikation,Kvalifikation,25,0,0,22,0,0,22,1,25.0,11.68,10.512,0.0,0.0,0.0,9.8,0.0,0.0,0.88,0.0,0.0,0.839,0.9,0.0,0.0
 ali_yousif__irq,Ali Yousif,IRQ,FWD,venskabskamp,Venskabskamp,17,1,0,14,0,0,14,1,17.0,6.680000000000001,3.4736000000000002,0.52,1.0,0.0,4.48,0.059,0.0,0.824,0.15,0.0,0.671,0.52,0.0307,0.078
+alidu_seidu__gha,Alidu Seidu,GHA,DEF,slutrunde,Slutrunde,9,2,0,3,0,0,3,3,9.0,2.16,2.16,0.4,0.4,0.0,0.6000000000000001,0.222,0.0,0.333,0.185,0.0,0.278,1.0,0.222,0.185
+alidu_seidu__gha,Alidu Seidu,GHA,DEF,kvalifikation,Kvalifikation,22,10,0,4,3,0,4,5,19.0,9.6,7.596000000000001,4.212,4.68,0.0,2.04,0.526,0.0,0.182,0.555,0.0,0.213,0.9,0.4734,0.4995
+alidu_seidu__gha,Alidu Seidu,GHA,DEF,venskabskamp,Venskabskamp,19,7,0,3,2,0,3,3,17.0,9.08,4.2224,1.1648,2.24,0.0,2.84,0.412,0.0,0.158,0.276,0.0,0.313,0.52,0.2142,0.1435
 alireza_beiranvand__irn,Alireza Beiranvand,IRN,GK,slutrunde,Slutrunde,29,19,0,4,1,0,0,5,28.0,7.5,7.300000000000001,3.8600000000000003,3.8600000000000003,0.0,2.72,0.679,0.0,0.138,0.529,0.0,0.363,1.0,0.679,0.529
 alireza_beiranvand__irn,Alireza Beiranvand,IRN,GK,kvalifikation,Kvalifikation,52,38,0,4,0,0,4,10,52.0,12.14,10.926,8.154,9.06,0.0,0.6000000000000001,0.731,0.0,0.077,0.746,0.0,0.049,0.9,0.6579,0.6714
 alireza_beiranvand__irn,Alireza Beiranvand,IRN,GK,venskabskamp,Venskabskamp,49,29,0,4,1,0,4,15,48.0,12.24,6.1984,4.3264000000000005,8.32,0.0,0.5,0.604,0.0,0.082,0.698,0.0,0.041,0.52,0.3141,0.363
@@ -299,9 +354,13 @@ amine_gouiri__alg,Amine Gouiri,ALG,FWD,venskabskamp,Venskabskamp,13,7,0,3,3,0,3,
 amir_hadziahmetovic__bih,Amir Hadziahmetovic,BIH,MID,kvalifikation,Kvalifikation,30,12,0,7,1,0,7,2,29.0,11.66,10.206000000000001,2.3040000000000003,2.56,0.0,3.8800000000000003,0.414,0.0,0.233,0.226,0.0,0.333,0.9,0.3726,0.2034
 amir_hadziahmetovic__bih,Amir Hadziahmetovic,BIH,MID,nations_league,Nations League,18,6,0,7,2,0,7,0,16.0,4.68,3.4944,0.7020000000000002,0.9,0.0,3.08,0.375,0.0,0.389,0.201,0.0,0.658,0.78,0.2925,0.1568
 amir_hadziahmetovic__bih,Amir Hadziahmetovic,BIH,MID,venskabskamp,Venskabskamp,14,4,0,3,3,0,3,1,11.0,5.46,2.3712,0.31200000000000006,0.6000000000000001,0.0,1.56,0.364,0.0,0.214,0.132,0.0,0.286,0.52,0.1893,0.0686
+amir_mohammad_razzaghinia__irn,Amir Mohammad Razzaghinia,IRN,MID,slutrunde,Slutrunde,4,0,0,4,0,0,4,0,4.0,2.72,2.72,0.0,0.0,0.0,2.72,0.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0
+amir_mohammad_razzaghinia__irn,Amir Mohammad Razzaghinia,IRN,MID,kvalifikation,Kvalifikation,2,1,0,0,0,0,0,1,2.0,1.1600000000000001,1.044,0.6120000000000001,0.68,0.0,0.0,0.5,0.0,0.0,0.586,0.0,0.0,0.9,0.45,0.5274
+amir_mohammad_razzaghinia__irn,Amir Mohammad Razzaghinia,IRN,MID,venskabskamp,Venskabskamp,8,2,0,4,0,0,4,1,8.0,6.5600000000000005,3.4112,0.9984000000000001,1.92,0.0,2.72,0.25,0.0,0.5,0.293,0.0,0.415,0.52,0.13,0.1524
 amirhossein_hosseinzadeh__irn,Amirhossein Hosseinzadeh,IRN,FWD,slutrunde,Slutrunde,16,3,0,9,0,0,9,4,16.0,6.2,6.2,2.04,2.04,0.0,2.52,0.188,0.0,0.562,0.329,0.0,0.406,1.0,0.188,0.329
 amirhossein_hosseinzadeh__irn,Amirhossein Hosseinzadeh,IRN,FWD,kvalifikation,Kvalifikation,18,1,0,8,0,0,8,4,18.0,7.64,6.876,0.432,0.48,0.0,3.2,0.056,0.0,0.444,0.063,0.0,0.419,0.9,0.0504,0.0567
 amirhossein_hosseinzadeh__irn,Amirhossein Hosseinzadeh,IRN,FWD,venskabskamp,Venskabskamp,19,6,0,8,1,0,8,1,18.0,9.24,4.7008,2.4128000000000003,4.640000000000001,0.0,2.08,0.333,0.0,0.421,0.513,0.0,0.225,0.52,0.1732,0.2668
+anas_badawi__jor,Anas Badawi,JOR,DEF,venskabskamp,Venskabskamp,1,0,0,0,0,0,0,0,1.0,1.0,0.52,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.52,0.0,0.0
 anass_salah_eddine__mar,Anass Salah-Eddine,MAR,DEF,slutrunde,Slutrunde,13,2,0,6,0,0,4,3,13.0,10.879999999999999,10.879999999999999,1.7,1.7,0.0,4.93,0.154,0.0,0.462,0.156,0.0,0.453,1.0,0.154,0.156
 anass_salah_eddine__mar,Anass Salah-Eddine,MAR,DEF,venskabskamp,Venskabskamp,6,4,0,0,0,0,0,1,6.0,5.2,2.704,1.7056,3.2800000000000002,0.0,0.0,0.667,0.0,0.0,0.631,0.0,0.0,0.52,0.3468,0.3281
 andreas_schjelderup__nor,Andreas Schjelderup,NOR,MID,kvalifikation,Kvalifikation,8,2,0,0,0,0,0,3,8.0,5.04,4.5360000000000005,0.864,0.96,0.0,0.0,0.25,0.0,0.0,0.19,0.0,0.0,0.9,0.225,0.171
@@ -425,6 +484,11 @@ arthur_theate__bel,Arthur Theate,BEL,DEF,nations_league_finals,Nations League-sl
 arthur_theate__bel,Arthur Theate,BEL,DEF,kvalifikation,Kvalifikation,18,15,0,0,0,0,0,1,18.0,8.280000000000001,7.452000000000001,6.048000000000001,6.720000000000001,0.0,0.0,0.833,0.0,0.0,0.812,0.0,0.0,0.9,0.7497,0.7308
 arthur_theate__bel,Arthur Theate,BEL,DEF,nations_league,Nations League,14,6,0,0,3,0,0,5,11.0,5.04,2.8080000000000003,2.028,2.6,0.0,0.0,0.545,0.0,0.0,0.722,0.0,0.0,0.78,0.4251,0.5632
 arthur_theate__bel,Arthur Theate,BEL,DEF,venskabskamp,Venskabskamp,13,6,0,0,2,0,0,4,11.0,6.5600000000000005,2.9120000000000004,1.1648,2.24,0.0,0.0,0.545,0.0,0.0,0.4,0.0,0.0,0.52,0.2834,0.208
+arya_yousefi__irn,Arya Yousefi,IRN,DEF,slutrunde,Slutrunde,7,3,0,0,0,0,0,3,7.0,3.68,3.68,2.04,2.04,0.0,0.0,0.429,0.0,0.0,0.554,0.0,0.0,1.0,0.429,0.554
+arya_yousefi__irn,Arya Yousefi,IRN,DEF,kvalifikation,Kvalifikation,12,4,0,0,0,0,0,7,12.0,5.96,5.364,1.9080000000000001,2.12,0.0,0.0,0.333,0.0,0.0,0.356,0.0,0.0,0.9,0.2997,0.3204
+arya_yousefi__irn,Arya Yousefi,IRN,DEF,venskabskamp,Venskabskamp,8,3,0,1,2,0,1,2,6.0,6.5600000000000005,2.704,1.5184000000000002,2.92,0.0,0.92,0.5,0.0,0.125,0.562,0.0,0.14,0.52,0.26,0.2922
+assan_ouedraogo__ger,Assan Ouedraogo,GER,MID,kvalifikation,Kvalifikation,2,0,0,0,0,0,0,1,2.0,1.36,1.2240000000000002,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.9,0.0,0.0
+assan_ouedraogo__ger,Assan Ouedraogo,GER,MID,venskabskamp,Venskabskamp,4,0,0,2,2,0,2,0,2.0,3.84,1.04,0.0,0.0,0.0,2.0,0.0,0.0,0.5,0.0,0.0,0.521,0.52,0.0,0.0
 assane_diao_diaoune__sen,Assane Diao Diaoune,SEN,FWD,slutrunde,Slutrunde,13,0,0,3,10,0,3,0,3.0,10.03,2.04,0.0,0.0,0.0,2.04,0.0,0.0,0.231,0.0,0.0,0.203,1.0,0.0,0.0
 assane_diao_diaoune__sen,Assane Diao Diaoune,SEN,FWD,kvalifikation,Kvalifikation,6,1,0,0,4,0,0,0,2.0,3.68,0.864,0.432,0.48,0.0,0.0,0.5,0.0,0.0,0.5,0.0,0.0,0.9,0.45,0.45
 assane_diao_diaoune__sen,Assane Diao Diaoune,SEN,FWD,venskabskamp,Venskabskamp,7,1,0,0,4,0,0,0,3.0,5.5600000000000005,1.4768000000000001,0.47840000000000005,0.92,0.0,0.0,0.333,0.0,0.0,0.324,0.0,0.0,0.52,0.1732,0.1685
@@ -437,6 +501,7 @@ atakan_karazor__tur,Atakan Karazor,TUR,MID,venskabskamp,Venskabskamp,3,0,0,3,0,0
 aubrey_modiba__rsa,Aubrey Modiba,RSA,DEF,slutrunde,Slutrunde,20,10,0,9,0,0,9,0,20.0,8.86,8.86,4.79,4.79,0.0,3.22,0.5,0.0,0.45,0.541,0.0,0.363,1.0,0.5,0.541
 aubrey_modiba__rsa,Aubrey Modiba,RSA,DEF,kvalifikation,Kvalifikation,46,15,0,21,0,0,21,8,46.0,12.280000000000001,11.052000000000001,5.796,6.44,0.0,3.56,0.326,0.0,0.457,0.524,0.0,0.29,0.9,0.2934,0.4716
 aubrey_modiba__rsa,Aubrey Modiba,RSA,DEF,venskabskamp,Venskabskamp,31,9,0,12,0,0,12,6,31.0,9.4,4.888000000000001,1.8200000000000003,3.5,0.0,2.56,0.29,0.0,0.387,0.372,0.0,0.272,0.52,0.1508,0.1934
+augustine_boakye__gha,Augustine Boakye,GHA,MID,venskabskamp,Venskabskamp,1,0,0,0,0,0,0,1,1.0,1.0,0.52,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.52,0.0,0.0
 aurele_amenda__sui,Aurele Amenda,SUI,DEF,kvalifikation,Kvalifikation,6,0,0,0,0,0,0,6,6.0,4.08,3.6720000000000006,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.9,0.0,0.0
 aurele_amenda__sui,Aurele Amenda,SUI,DEF,nations_league,Nations League,2,1,0,0,1,0,0,0,1.0,0.96,0.3744,0.3744,0.48,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.78,0.78,0.78
 aurele_amenda__sui,Aurele Amenda,SUI,DEF,venskabskamp,Venskabskamp,8,1,0,0,0,0,0,2,8.0,6.16,3.2032000000000003,0.3536,0.68,0.0,0.0,0.125,0.0,0.0,0.11,0.0,0.0,0.52,0.065,0.0572
@@ -445,6 +510,10 @@ aur_lien_tchouam_ni__fra,Aurelien Tchouameni,FRA,MID,nations_league_finals,Natio
 aur_lien_tchouam_ni__fra,Aurelien Tchouameni,FRA,MID,kvalifikation,Kvalifikation,19,9,0,2,4,0,2,0,15.0,7.4,4.86,2.9160000000000004,3.24,0.0,1.36,0.6,0.0,0.105,0.6,0.0,0.184,0.9,0.54,0.54
 aur_lien_tchouam_ni__fra,Aurelien Tchouameni,FRA,MID,nations_league,Nations League,12,7,0,0,4,0,0,0,8.0,4.08,1.6848,1.5288000000000002,1.96,0.0,0.0,0.875,0.0,0.0,0.907,0.0,0.0,0.78,0.6825,0.7075
 aur_lien_tchouam_ni__fra,Aurelien Tchouameni,FRA,MID,venskabskamp,Venskabskamp,11,7,0,0,0,0,0,4,11.0,5.48,2.8496,1.7680000000000002,3.4,0.0,0.0,0.636,0.0,0.0,0.62,0.0,0.0,0.52,0.3307,0.3224
+auston_trusty__usa,Auston Trusty,USA,DEF,slutrunde,Slutrunde,14,0,0,14,0,0,14,0,14.0,7.12,7.12,0.0,0.0,0.0,7.12,0.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0
+auston_trusty__usa,Auston Trusty,USA,DEF,nations_league_finals,Nations League-slutrunde,10,0,0,6,0,0,6,2,10.0,3.84,3.6479999999999997,0.0,0.0,0.0,2.24,0.0,0.0,0.6,0.0,0.0,0.583,0.95,0.0,0.0
+auston_trusty__usa,Auston Trusty,USA,DEF,nations_league,Nations League,2,1,0,0,0,0,0,1,2.0,0.4,0.31200000000000006,0.15600000000000003,0.2,0.0,0.0,0.5,0.0,0.0,0.5,0.0,0.0,0.78,0.39,0.39
+auston_trusty__usa,Auston Trusty,USA,DEF,venskabskamp,Venskabskamp,29,2,0,16,0,0,16,8,29.0,15.32,7.9664,0.8320000000000001,1.6,0.0,7.800000000000001,0.069,0.0,0.552,0.104,0.0,0.509,0.52,0.0359,0.0541
 awer_mabil__aus,Awer Mabil,AUS,FWD,slutrunde,Slutrunde,14,4,0,0,5,0,0,2,9.0,2.9,1.3,0.4,0.4,0.0,0.0,0.444,0.0,0.0,0.308,0.0,0.0,1.0,0.444,0.308
 awer_mabil__aus,Awer Mabil,AUS,FWD,kvalifikation,Kvalifikation,38,9,0,13,4,0,13,2,34.0,10.94,8.694,1.35,1.5,0.0,5.6,0.265,0.0,0.342,0.155,0.0,0.512,0.9,0.2385,0.1395
 awer_mabil__aus,Awer Mabil,AUS,FWD,venskabskamp,Venskabskamp,25,7,0,9,1,0,9,3,24.0,11.020000000000001,5.564,0.9464000000000001,1.82,0.0,4.92,0.292,0.0,0.36,0.17,0.0,0.446,0.52,0.1518,0.0884
@@ -479,15 +548,25 @@ ayoub_al_oui__qat,Ayoub Al-Oui,QAT,DEF,venskabskamp,Venskabskamp,3,3,0,0,0,0,0,0
 ayoub_el_kaabi__mar,Ayoub El Kaabi,MAR,FWD,slutrunde,Slutrunde,59,22,0,29,1,0,27,1,58.0,22.02,21.82,7.22,7.22,0.0,12.49,0.379,0.0,0.492,0.331,0.0,0.567,1.0,0.379,0.331
 ayoub_el_kaabi__mar,Ayoub El Kaabi,MAR,FWD,kvalifikation,Kvalifikation,38,13,0,9,2,0,9,2,36.0,11.22,9.234,3.798,4.22,0.0,1.44,0.361,0.0,0.237,0.411,0.0,0.128,0.9,0.3249,0.3699
 ayoub_el_kaabi__mar,Ayoub El Kaabi,MAR,FWD,venskabskamp,Venskabskamp,40,8,0,17,0,0,15,6,40.0,12.46,6.4792000000000005,1.9552,3.7600000000000002,0.0,2.42,0.2,0.0,0.425,0.302,0.0,0.194,0.52,0.104,0.157
+ayoube_amaimouni_echghouyab__mar,Ayoube Amaimouni-Echghouyab,MAR,MID,venskabskamp,Venskabskamp,2,1,0,0,0,0,0,1,2.0,2.0,1.04,0.52,1.0,0.0,0.0,0.5,0.0,0.0,0.5,0.0,0.0,0.52,0.26,0.26
 ayumu_seko__jpn,Ayumu Seko,JPN,DEF,slutrunde,Slutrunde,8,0,0,8,0,0,8,0,8.0,3.64,3.64,0.0,0.0,0.0,3.64,0.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0
 ayumu_seko__jpn,Ayumu Seko,JPN,DEF,kvalifikation,Kvalifikation,16,3,0,8,0,0,8,4,16.0,7.24,6.516,1.476,1.6400000000000001,0.0,3.2,0.188,0.0,0.5,0.227,0.0,0.442,0.9,0.1692,0.2043
 ayumu_seko__jpn,Ayumu Seko,JPN,DEF,venskabskamp,Venskabskamp,18,5,0,5,0,0,5,3,18.0,9.56,4.9712000000000005,1.6432000000000002,3.16,0.0,1.6,0.278,0.0,0.278,0.331,0.0,0.167,0.52,0.1446,0.1721
+ayyoub_bouaddi__mar,Ayyoub Bouaddi,MAR,MID,venskabskamp,Venskabskamp,2,2,0,0,0,0,0,0,2.0,2.0,1.04,1.04,2.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.52,0.52,0.52
+azarias_londono__pan,Azarias Londono,PAN,MID,slutrunde,Slutrunde,14,1,0,4,0,0,4,7,14.0,6.5600000000000005,6.5600000000000005,0.68,0.68,0.0,1.92,0.071,0.0,0.286,0.104,0.0,0.293,1.0,0.071,0.104
+azarias_londono__pan,Azarias Londono,PAN,MID,nations_league_finals,Nations League-slutrunde,10,0,0,6,2,0,6,1,8.0,3.84,3.04,0.0,0.0,0.0,2.56,0.0,0.0,0.6,0.0,0.0,0.667,0.95,0.0,0.0
+azarias_londono__pan,Azarias Londono,PAN,MID,kvalifikation,Kvalifikation,10,3,0,4,0,0,4,2,10.0,6.4,5.760000000000001,1.8360000000000003,2.04,0.0,2.3200000000000003,0.3,0.0,0.4,0.319,0.0,0.363,0.9,0.27,0.2871
+azarias_londono__pan,Azarias Londono,PAN,MID,nations_league,Nations League,8,0,0,5,0,0,5,3,8.0,2.08,1.6224000000000003,0.0,0.0,0.0,1.48,0.0,0.0,0.625,0.0,0.0,0.712,0.78,0.0,0.0
+azarias_londono__pan,Azarias Londono,PAN,MID,venskabskamp,Venskabskamp,21,2,0,17,0,0,17,0,21.0,10.7,5.564,0.20800000000000002,0.4,0.0,8.98,0.095,0.0,0.81,0.037,0.0,0.839,0.52,0.0494,0.0192
 aziz_behich__aus,Aziz Behich,AUS,DEF,slutrunde,Slutrunde,36,24,0,6,0,0,6,5,36.0,5.1000000000000005,5.1000000000000005,3.9000000000000004,3.9000000000000004,0.0,0.6000000000000001,0.667,0.0,0.167,0.765,0.0,0.118,1.0,0.667,0.765
 aziz_behich__aus,Aziz Behich,AUS,DEF,kvalifikation,Kvalifikation,62,28,0,19,0,0,19,9,62.0,13.34,12.006,6.966,7.74,0.0,2.44,0.452,0.0,0.306,0.58,0.0,0.183,0.9,0.4068,0.522
 aziz_behich__aus,Aziz Behich,AUS,DEF,venskabskamp,Venskabskamp,49,19,0,18,2,0,18,4,47.0,13.42,6.2712,2.1528,4.140000000000001,0.0,4.44,0.404,0.0,0.367,0.343,0.0,0.331,0.52,0.2101,0.1784
 aziz_g_aniyev__uzb,Aziz Ganiev,UZB,MID,slutrunde,Slutrunde,17,0,0,10,4,0,10,2,13.0,6.0,5.6000000000000005,0.0,0.0,0.0,3.56,0.0,0.0,0.588,0.0,0.0,0.593,1.0,0.0,0.0
 aziz_g_aniyev__uzb,Aziz Ganiev,UZB,MID,kvalifikation,Kvalifikation,29,0,0,21,3,0,21,4,26.0,9.14,7.686,0.0,0.0,0.0,7.6,0.0,0.0,0.724,0.0,0.0,0.832,0.9,0.0,0.0
 aziz_g_aniyev__uzb,Aziz Ganiev,UZB,MID,venskabskamp,Venskabskamp,53,15,0,15,11,0,15,6,42.0,12.56,5.9072000000000005,3.224,6.2,0.0,2.3200000000000003,0.357,0.0,0.283,0.546,0.0,0.185,0.52,0.1856,0.2839
+azizbek_amanov__uzb,Azizbek Amanov,UZB,FWD,slutrunde,Slutrunde,13,0,0,10,0,0,10,3,13.0,5.6000000000000005,5.6000000000000005,0.0,0.0,0.0,4.640000000000001,0.0,0.0,0.769,0.0,0.0,0.829,1.0,0.0,0.0
+azizbek_amanov__uzb,Azizbek Amanov,UZB,FWD,kvalifikation,Kvalifikation,19,2,0,8,0,0,8,6,19.0,7.84,7.056,0.36000000000000004,0.4,0.0,3.7199999999999998,0.105,0.0,0.421,0.051,0.0,0.474,0.9,0.0945,0.0459
+azizbek_amanov__uzb,Azizbek Amanov,UZB,FWD,venskabskamp,Venskabskamp,25,1,0,18,0,0,18,0,25.0,9.76,5.075200000000001,0.10400000000000001,0.2,0.0,7.44,0.04,0.0,0.72,0.02,0.0,0.762,0.52,0.0208,0.0104
 azzedine_ounahi__mar,Azzedine Ounahi,MAR,MID,slutrunde,Slutrunde,36,15,0,13,4,0,11,2,32.0,19.32,15.92,5.43,5.43,0.0,9.69,0.469,0.0,0.361,0.341,0.0,0.502,1.0,0.469,0.341
 azzedine_ounahi__mar,Azzedine Ounahi,MAR,MID,kvalifikation,Kvalifikation,21,11,0,4,0,0,4,2,21.0,8.92,8.028,4.104,4.56,0.0,1.6400000000000001,0.524,0.0,0.19,0.511,0.0,0.184,0.9,0.4716,0.4599
 azzedine_ounahi__mar,Azzedine Ounahi,MAR,MID,venskabskamp,Venskabskamp,21,14,0,2,2,0,2,1,19.0,10.360000000000001,5.1168000000000005,3.0784000000000002,5.92,0.0,1.6800000000000002,0.737,0.0,0.095,0.602,0.0,0.162,0.52,0.3832,0.313
@@ -571,6 +650,8 @@ bradley_barcola__fra,Bradley Barcola,FRA,MID,nations_league_finals,Nations Leagu
 bradley_barcola__fra,Bradley Barcola,FRA,MID,kvalifikation,Kvalifikation,6,3,0,2,0,0,2,0,6.0,4.08,3.6720000000000006,1.8360000000000003,2.04,0.0,1.36,0.5,0.0,0.333,0.5,0.0,0.333,0.9,0.45,0.45
 bradley_barcola__fra,Bradley Barcola,FRA,MID,nations_league,Nations League,6,3,0,0,0,0,0,0,6.0,2.88,2.2464,1.1232,1.44,0.0,0.0,0.5,0.0,0.0,0.5,0.0,0.0,0.78,0.39,0.39
 bradley_barcola__fra,Bradley Barcola,FRA,MID,venskabskamp,Venskabskamp,5,0,0,0,2,0,0,0,3.0,3.8,1.0192,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.52,0.0,0.0
+bradley_cross__rsa,Bradley Cross,RSA,DEF,kvalifikation,Kvalifikation,2,0,0,0,0,0,0,2,2.0,0.64,0.5760000000000001,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.9,0.0,0.0
+bradley_cross__rsa,Bradley Cross,RSA,DEF,venskabskamp,Venskabskamp,1,0,0,0,0,0,0,0,1.0,1.0,0.52,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.52,0.0,0.0
 brahim_d_az__mar,Brahim Diaz,MAR,FWD,slutrunde,Slutrunde,20,7,0,13,0,0,11,0,20.0,15.64,15.64,5.95,5.95,0.0,9.69,0.35,0.0,0.65,0.38,0.0,0.62,1.0,0.35,0.38
 brahim_d_az__mar,Brahim Diaz,MAR,FWD,kvalifikation,Kvalifikation,13,9,0,0,2,0,0,1,11.0,6.84,5.292,4.248,4.72,0.0,0.0,0.818,0.0,0.0,0.803,0.0,0.0,0.9,0.7362,0.7227
 brahim_d_az__mar,Brahim Diaz,MAR,FWD,venskabskamp,Venskabskamp,11,6,0,2,1,0,2,0,10.0,7.880000000000001,3.744,1.872,3.6,0.0,1.6800000000000002,0.6,0.0,0.182,0.5,0.0,0.213,0.52,0.312,0.26
@@ -634,6 +715,10 @@ bum_keun_song__kor,Bum-Keun Song,KOR,GK,slutrunde,Slutrunde,16,1,0,3,0,0,3,12,16
 bum_keun_song__kor,Bum-Keun Song,KOR,GK,kvalifikation,Kvalifikation,23,0,0,12,0,0,12,11,23.0,8.64,7.776000000000001,0.0,0.0,0.0,4.96,0.0,0.0,0.522,0.0,0.0,0.574,0.9,0.0,0.0
 bum_keun_song__kor,Bum-Keun Song,KOR,GK,venskabskamp,Venskabskamp,30,1,0,2,4,0,2,22,26.0,12.56,5.865600000000001,0.3536,0.68,0.0,0.4,0.038,0.0,0.067,0.06,0.0,0.032,0.52,0.0198,0.0312
 cj_dos_santos__cpv,CJ Dos Santos,CPV,GK,venskabskamp,Venskabskamp,1,0,0,0,0,0,0,0,1.0,1.0,0.52,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.52,0.0,0.0
+caglar_soyuncu__tur,Caglar Soyuncu,TUR,DEF,slutrunde,Slutrunde,11,3,0,3,5,0,3,0,6.0,3.3,0.9,0.6000000000000001,0.6000000000000001,0.0,0.30000000000000004,0.5,0.0,0.273,0.667,0.0,0.091,1.0,0.5,0.667
+caglar_soyuncu__tur,Caglar Soyuncu,TUR,DEF,kvalifikation,Kvalifikation,47,20,0,5,5,0,4,15,42.0,12.14,9.684000000000001,3.24,3.6,0.0,2.3400000000000003,0.476,0.0,0.106,0.335,0.0,0.193,0.9,0.4284,0.3015
+caglar_soyuncu__tur,Caglar Soyuncu,TUR,DEF,nations_league,Nations League,24,11,0,0,11,0,0,2,13.0,6.04,1.7004000000000001,1.4664000000000001,1.8800000000000001,0.0,0.0,0.846,0.0,0.0,0.862,0.0,0.0,0.78,0.6599,0.6724
+caglar_soyuncu__tur,Caglar Soyuncu,TUR,DEF,venskabskamp,Venskabskamp,38,23,0,2,6,0,2,6,32.0,8.540000000000001,3.588,2.5376000000000003,4.88,0.0,0.2,0.719,0.0,0.053,0.707,0.0,0.023,0.52,0.3739,0.3676
 caleb_yirenkyi__gha,Caleb Yirenkyi,GHA,DEF,kvalifikation,Kvalifikation,4,3,0,0,0,0,0,0,4.0,2.72,2.4480000000000004,1.8360000000000003,2.04,0.0,0.0,0.75,0.0,0.0,0.75,0.0,0.0,0.9,0.675,0.675
 caleb_yirenkyi__gha,Caleb Yirenkyi,GHA,DEF,venskabskamp,Venskabskamp,8,5,0,1,0,0,1,0,8.0,6.16,3.2032000000000003,1.9136000000000002,3.68,0.0,1.0,0.625,0.0,0.125,0.597,0.0,0.162,0.52,0.325,0.3104
 callan_elliot__nzl,Callan Elliot,NZL,DEF,slutrunde,Slutrunde,4,0,0,4,0,0,4,0,4.0,1.92,1.92,0.0,0.0,0.0,1.92,0.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0
@@ -648,9 +733,16 @@ callum_mccowatt__nzl,Callum McCowatt,NZL,MID,venskabskamp,Venskabskamp,35,18,0,4
 cameron_burgess__aus,Cameron Burgess,AUS,DEF,slutrunde,Slutrunde,5,1,0,0,0,0,0,3,5.0,1.6,1.6,0.32,0.32,0.0,0.0,0.2,0.0,0.0,0.2,0.0,0.0,1.0,0.2,0.2
 cameron_burgess__aus,Cameron Burgess,AUS,DEF,kvalifikation,Kvalifikation,16,12,0,0,0,0,0,4,16.0,7.24,6.516,4.932,5.4799999999999995,0.0,0.0,0.75,0.0,0.0,0.757,0.0,0.0,0.9,0.675,0.6813
 cameron_burgess__aus,Cameron Burgess,AUS,DEF,venskabskamp,Venskabskamp,14,8,0,0,0,0,0,1,14.0,9.200000000000001,4.784000000000001,2.2672000000000003,4.36,0.0,0.0,0.571,0.0,0.0,0.474,0.0,0.0,0.52,0.2969,0.2465
+cameron_devlin__aus,Cameron Devlin,AUS,MID,slutrunde,Slutrunde,9,0,0,0,5,0,0,4,4.0,2.4,0.8,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0
+cameron_devlin__aus,Cameron Devlin,AUS,MID,kvalifikation,Kvalifikation,16,0,0,11,1,0,11,2,15.0,7.24,6.0840000000000005,0.0,0.0,0.0,4.84,0.0,0.0,0.688,0.0,0.0,0.669,0.9,0.0,0.0
+cameron_devlin__aus,Cameron Devlin,AUS,MID,venskabskamp,Venskabskamp,19,1,0,6,1,0,6,9,18.0,10.32,5.2,0.10400000000000001,0.2,0.0,3.8400000000000003,0.056,0.0,0.316,0.02,0.0,0.372,0.52,0.0291,0.0104
 camilo_vargas__col,Camilo Vargas,COL,GK,slutrunde,Slutrunde,36,7,0,6,0,0,6,23,36.0,6.58,6.58,3.08,3.08,0.0,0.6000000000000001,0.194,0.0,0.167,0.468,0.0,0.091,1.0,0.194,0.468
 camilo_vargas__col,Camilo Vargas,COL,GK,kvalifikation,Kvalifikation,65,18,0,5,0,0,5,42,65.0,14.48,13.032000000000002,5.958,6.62,0.0,0.72,0.277,0.0,0.077,0.457,0.0,0.05,0.9,0.2493,0.4113
 camilo_vargas__col,Camilo Vargas,COL,GK,venskabskamp,Venskabskamp,64,15,0,23,0,0,23,25,64.0,14.14,7.3528,2.8184,5.42,0.0,4.3,0.234,0.0,0.359,0.383,0.0,0.304,0.52,0.1217,0.1992
+can_uzun__tur,Can Uzun,TUR,FWD,slutrunde,Slutrunde,5,0,0,5,0,0,5,0,5.0,2.4,2.4,0.0,0.0,0.0,2.4,0.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0
+can_uzun__tur,Can Uzun,TUR,FWD,kvalifikation,Kvalifikation,8,0,0,3,2,0,3,2,6.0,5.92,4.104000000000001,0.0,0.0,0.0,2.52,0.0,0.0,0.375,0.0,0.0,0.426,0.9,0.0,0.0
+can_uzun__tur,Can Uzun,TUR,FWD,nations_league,Nations League,8,0,0,4,0,0,4,3,8.0,3.84,2.9952,0.0,0.0,0.0,1.92,0.0,0.0,0.5,0.0,0.0,0.5,0.78,0.0,0.0
+can_uzun__tur,Can Uzun,TUR,FWD,venskabskamp,Venskabskamp,8,1,0,1,0,0,1,3,8.0,4.8,2.496,0.52,1.0,0.0,0.48,0.125,0.0,0.125,0.208,0.0,0.1,0.52,0.065,0.1082
 carl_sainte__hai,Carl Sainte,HAI,MID,slutrunde,Slutrunde,6,3,0,0,0,0,0,2,6.0,3.0,3.0,0.96,0.96,0.0,0.0,0.5,0.0,0.0,0.32,0.0,0.0,1.0,0.5,0.32
 carl_sainte__hai,Carl Sainte,HAI,MID,kvalifikation,Kvalifikation,10,2,0,2,0,0,2,3,10.0,6.4,5.760000000000001,1.044,1.1600000000000001,0.0,1.36,0.2,0.0,0.2,0.181,0.0,0.212,0.9,0.18,0.1629
 carl_sainte__hai,Carl Sainte,HAI,MID,nations_league,Nations League,16,5,0,2,0,0,2,1,16.0,5.36,4.1808000000000005,1.1544,1.48,0.0,0.96,0.312,0.0,0.125,0.276,0.0,0.179,0.78,0.2434,0.2153
@@ -684,6 +776,7 @@ carlos_rodriguez__mex,Carlos Rodriguez,MEX,MID,nations_league_finals,Nations Lea
 carlos_rodriguez__mex,Carlos Rodriguez,MEX,MID,kvalifikation,Kvalifikation,14,9,0,0,0,0,0,2,14.0,2.8000000000000003,2.5200000000000005,1.62,1.8,0.0,0.0,0.643,0.0,0.0,0.643,0.0,0.0,0.9,0.5787,0.5787
 carlos_rodriguez__mex,Carlos Rodriguez,MEX,MID,nations_league,Nations League,8,4,0,2,0,0,2,2,8.0,1.2000000000000002,0.9360000000000002,0.39000000000000007,0.5,0.0,0.4,0.5,0.0,0.25,0.417,0.0,0.333,0.78,0.39,0.3253
 carlos_rodriguez__mex,Carlos Rodriguez,MEX,MID,venskabskamp,Venskabskamp,56,19,0,14,4,0,14,7,52.0,19.29,9.6148,2.47,4.75,0.0,3.74,0.365,0.0,0.25,0.257,0.0,0.194,0.52,0.1898,0.1336
+carney_chukwuemeka__aut,Carney Chukwuemeka,AUT,MID,venskabskamp,Venskabskamp,3,0,0,0,0,0,0,0,3.0,2.84,1.4768000000000001,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.52,0.0,0.0
 casemiro__bra,Casemiro,BRA,MID,slutrunde,Slutrunde,46,20,0,19,0,0,16,6,46.0,7.32,7.32,2.9000000000000004,2.9000000000000004,0.0,3.42,0.435,0.0,0.413,0.396,0.0,0.467,1.0,0.435,0.396
 casemiro__bra,Casemiro,BRA,MID,kvalifikation,Kvalifikation,53,23,0,16,11,0,16,3,42.0,12.98,10.026000000000002,4.788,5.32,0.0,5.32,0.548,0.0,0.302,0.478,0.0,0.41,0.9,0.4932,0.4302
 casemiro__bra,Casemiro,BRA,MID,venskabskamp,Venskabskamp,93,34,0,44,4,0,44,3,89.0,17.2,8.736,5.137600000000001,9.88,0.0,5.6000000000000005,0.382,0.0,0.473,0.588,0.0,0.326,0.52,0.1986,0.3058
@@ -704,6 +797,9 @@ c_sar_blackman__pan,Cesar Blackman,PAN,DEF,nations_league_finals,Nations League-
 c_sar_blackman__pan,Cesar Blackman,PAN,DEF,kvalifikation,Kvalifikation,30,4,0,0,4,0,0,17,26.0,10.200000000000001,8.46,1.9260000000000004,2.14,0.0,0.0,0.154,0.0,0.0,0.228,0.0,0.0,0.9,0.1386,0.2052
 c_sar_blackman__pan,Cesar Blackman,PAN,DEF,nations_league,Nations League,12,4,0,2,0,0,2,5,12.0,2.48,1.9344000000000001,0.8112000000000001,1.04,0.0,0.2,0.333,0.0,0.167,0.419,0.0,0.081,0.78,0.2597,0.3268
 c_sar_blackman__pan,Cesar Blackman,PAN,DEF,venskabskamp,Venskabskamp,33,6,0,18,3,0,18,1,30.0,12.1,6.0840000000000005,2.0384,3.92,0.0,4.7,0.2,0.0,0.545,0.335,0.0,0.388,0.52,0.104,0.1742
+cesar_huerta__mex,Cesar Huerta,MEX,MID,slutrunde,Slutrunde,9,1,0,0,0,0,0,2,9.0,5.5200000000000005,5.5200000000000005,0.48,0.48,0.0,0.0,0.111,0.0,0.0,0.087,0.0,0.0,1.0,0.111,0.087
+cesar_huerta__mex,Cesar Huerta,MEX,MID,nations_league_finals,Nations League-slutrunde,8,3,0,2,0,0,2,1,8.0,3.2,3.04,1.216,1.28,0.0,0.64,0.375,0.0,0.25,0.4,0.0,0.2,0.95,0.3562,0.38
+cesar_huerta__mex,Cesar Huerta,MEX,MID,venskabskamp,Venskabskamp,27,6,0,3,8,0,3,2,19.0,17.15,5.408,1.4352,2.76,0.0,1.6800000000000002,0.316,0.0,0.111,0.265,0.0,0.098,0.52,0.1643,0.1378
 c_sar_montes__mex,Cesar Montes,MEX,DEF,slutrunde,Slutrunde,41,16,0,16,0,0,16,7,41.0,10.940000000000001,10.940000000000001,6.6000000000000005,6.6000000000000005,0.0,3.4400000000000004,0.39,0.0,0.39,0.603,0.0,0.314,1.0,0.39,0.603
 c_sar_montes__mex,Cesar Montes,MEX,DEF,nations_league_finals,Nations League-slutrunde,12,8,0,4,0,0,3,0,12.0,4.14,3.933,2.888,3.04,0.0,1.1,0.667,0.0,0.333,0.734,0.0,0.266,0.95,0.6337,0.6973
 c_sar_montes__mex,Cesar Montes,MEX,DEF,kvalifikation,Kvalifikation,18,10,0,6,0,0,6,0,18.0,3.2,2.8800000000000003,1.8000000000000003,2.0,0.0,1.0,0.556,0.0,0.333,0.625,0.0,0.312,0.9,0.5004,0.5625
@@ -769,6 +865,9 @@ christoph_baumgartner__aut,Christoph Baumgartner,AUT,MID,nations_league,Nations 
 christoph_baumgartner__aut,Christoph Baumgartner,AUT,MID,venskabskamp,Venskabskamp,16,11,0,1,1,0,1,0,15.0,6.0200000000000005,3.0784000000000002,2.236,4.3,0.0,1.0,0.733,0.0,0.062,0.726,0.0,0.166,0.52,0.3812,0.3775
 christopher_bonsu_baah__gha,Christopher Bonsu Baah,GHA,FWD,kvalifikation,Kvalifikation,6,0,0,0,0,0,0,4,6.0,3.68,3.3120000000000003,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.9,0.0,0.0
 christopher_bonsu_baah__gha,Christopher Bonsu Baah,GHA,FWD,venskabskamp,Venskabskamp,8,3,0,1,0,0,1,0,8.0,6.16,3.2032000000000003,0.8528,1.6400000000000001,0.0,1.0,0.375,0.0,0.125,0.266,0.0,0.162,0.52,0.195,0.1383
+christopher_operi__civ,Christopher Operi,CIV,DEF,slutrunde,Slutrunde,5,1,0,0,0,0,0,4,5.0,4.25,4.25,0.85,0.85,0.0,0.0,0.2,0.0,0.0,0.2,0.0,0.0,1.0,0.2,0.2
+christopher_operi__civ,Christopher Operi,CIV,DEF,kvalifikation,Kvalifikation,14,7,0,2,0,0,2,3,14.0,7.52,6.768000000000001,3.204,3.56,0.0,0.96,0.5,0.0,0.143,0.473,0.0,0.128,0.9,0.45,0.4257
+christopher_operi__civ,Christopher Operi,CIV,DEF,venskabskamp,Venskabskamp,7,1,0,1,3,0,1,1,4.0,5.5600000000000005,1.7056,0.3536,0.68,0.0,0.92,0.25,0.0,0.143,0.207,0.0,0.165,0.52,0.13,0.1076
 clement_akpa__civ,Clement Akpa,CIV,DEF,slutrunde,Slutrunde,5,0,0,3,2,0,3,0,3.0,4.25,2.55,0.0,0.0,0.0,2.55,0.0,0.0,0.6,0.0,0.0,0.6,1.0,0.0,0.0
 clement_akpa__civ,Clement Akpa,CIV,DEF,kvalifikation,Kvalifikation,6,0,0,2,0,0,2,2,6.0,3.68,3.3120000000000003,0.0,0.0,0.0,1.36,0.0,0.0,0.333,0.0,0.0,0.37,0.9,0.0,0.0
 clement_akpa__civ,Clement Akpa,CIV,DEF,venskabskamp,Venskabskamp,6,3,0,0,0,0,0,3,6.0,4.5600000000000005,2.3712,1.1856,2.2800000000000002,0.0,0.0,0.5,0.0,0.0,0.5,0.0,0.0,0.52,0.26,0.26
@@ -796,6 +895,7 @@ cristian_roldan__usa,Cristian Roldan,USA,MID,venskabskamp,Venskabskamp,63,11,0,3
 cristian_romero__arg,Cristian Romero,ARG,DEF,slutrunde,Slutrunde,22,15,0,1,4,0,1,1,18.0,6.8,6.0,4.4,4.4,0.0,0.92,0.833,0.0,0.045,0.733,0.0,0.135,1.0,0.833,0.733
 cristian_romero__arg,Cristian Romero,ARG,DEF,kvalifikation,Kvalifikation,31,22,0,6,3,0,3,0,28.0,10.98,9.342,7.3260000000000005,8.14,0.0,2.24,0.786,0.0,0.194,0.784,0.0,0.204,0.9,0.7074,0.7056
 cristian_romero__arg,Cristian Romero,ARG,DEF,venskabskamp,Venskabskamp,18,11,0,2,1,0,2,3,17.0,8.32,4.2224,2.7872000000000003,5.36,0.0,0.4,0.647,0.0,0.111,0.66,0.0,0.048,0.52,0.3364,0.3432
+cristian_volpato__aus,Cristian Volpato,AUS,MID,venskabskamp,Venskabskamp,1,1,0,0,0,0,0,0,1.0,1.0,0.52,0.52,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.52,0.52,0.52
 cristiano_ronaldo__por,Cristiano Ronaldo,POR,FWD,slutrunde,Slutrunde,59,52,0,1,0,0,0,2,59.0,8.700000000000001,8.700000000000001,7.8,7.8,0.0,0.1,0.881,0.0,0.017,0.897,0.0,0.011,1.0,0.881,0.897
 cristiano_ronaldo__por,Cristiano Ronaldo,POR,FWD,nations_league_finals,Nations League-slutrunde,6,6,0,0,0,0,0,0,6.0,2.32,2.2039999999999997,2.2039999999999997,2.32,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.95,0.95,0.95
 cristiano_ronaldo__por,Cristiano Ronaldo,POR,FWD,kvalifikation,Kvalifikation,112,95,0,7,9,0,1,0,103.0,17.34,14.796000000000001,13.266000000000002,14.74,0.0,1.6,0.922,0.0,0.062,0.897,0.0,0.092,0.9,0.8298,0.8073
@@ -859,12 +959,17 @@ danley_jean_jacques__hai,Danley Jean Jacques,HAI,MID,venskabskamp,Venskabskamp,7
 darwin_nunez__uru,Darwin Nunez,URU,FWD,slutrunde,Slutrunde,14,9,0,0,5,0,0,0,9.0,4.48,3.48,3.48,3.48,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,1.0,1.0
 darwin_nunez__uru,Darwin Nunez,URU,FWD,kvalifikation,Kvalifikation,36,15,0,9,3,0,4,3,33.0,11.38,9.792000000000002,4.95,5.5,0.0,3.6,0.455,0.0,0.25,0.506,0.0,0.316,0.9,0.4095,0.4554
 darwin_nunez__uru,Darwin Nunez,URU,FWD,venskabskamp,Venskabskamp,25,4,0,8,6,0,8,3,19.0,8.8,3.3904,0.5616,1.08,0.0,3.0,0.211,0.0,0.32,0.166,0.0,0.341,0.52,0.1097,0.0863
+david_affengruber__aut,David Affengruber,AUT,DEF,venskabskamp,Venskabskamp,3,0,0,0,0,0,0,2,3.0,2.84,1.4768000000000001,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.52,0.0,0.0
 david_alaba__aut,David Alaba,AUT,DEF,slutrunde,Slutrunde,11,7,0,0,4,0,0,0,7.0,3.02,1.1,1.1,1.1,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,1.0,1.0
 david_alaba__aut,David Alaba,AUT,DEF,kvalifikation,Kvalifikation,78,53,0,7,13,0,6,1,65.0,14.760000000000002,10.674000000000001,8.190000000000001,9.1,0.0,1.48,0.815,0.0,0.09,0.767,0.0,0.1,0.9,0.7335,0.6903
 david_alaba__aut,David Alaba,AUT,DEF,nations_league,Nations League,24,12,0,2,8,0,2,1,16.0,6.04,2.2308000000000003,1.5444000000000002,1.98,0.0,0.2,0.75,0.0,0.083,0.692,0.0,0.033,0.78,0.585,0.5398
 david_alaba__aut,David Alaba,AUT,DEF,venskabskamp,Venskabskamp,53,28,0,6,10,0,5,1,43.0,9.72,3.9936000000000003,2.1424000000000003,4.12,0.0,0.7000000000000001,0.651,0.0,0.113,0.536,0.0,0.072,0.52,0.3385,0.2787
 david_cabezas__ecu,David Cabezas,ECU,GK,venskabskamp,Venskabskamp,2,2,0,0,0,0,0,0,2.0,0.2,0.10400000000000001,0.10400000000000001,0.2,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.52,0.52,0.52
 david_cabezas__ecu,David Cabezas,ECU,GK,ungdom_slutrunde,Ungdomsslutrunde,13,6,0,6,0,0,6,1,13.0,1.3,0.45499999999999996,0.20999999999999996,0.6000000000000001,0.0,0.6000000000000001,0.462,0.0,0.462,0.462,0.0,0.462,0.35,0.1617,0.1617
+david_doudera__cze,David Doudera,CZE,MID,slutrunde,Slutrunde,3,1,0,0,0,0,0,2,3.0,1.44,1.44,0.48,0.48,0.0,0.0,0.333,0.0,0.0,0.333,0.0,0.0,1.0,0.333,0.333
+david_doudera__cze,David Doudera,CZE,MID,kvalifikation,Kvalifikation,18,5,0,2,3,0,2,4,15.0,9.200000000000001,6.228000000000001,2.088,2.3200000000000003,0.0,1.24,0.333,0.0,0.111,0.335,0.0,0.135,0.9,0.2997,0.3015
+david_doudera__cze,David Doudera,CZE,MID,nations_league,Nations League,6,0,0,6,0,0,6,0,6.0,2.88,2.2464,0.0,0.0,0.0,2.88,0.0,0.0,1.0,0.0,0.0,1.0,0.78,0.0,0.0
+david_doudera__cze,David Doudera,CZE,MID,venskabskamp,Venskabskamp,10,4,0,2,0,0,2,1,10.0,5.6,2.912,1.1024,2.12,0.0,1.0,0.4,0.0,0.2,0.379,0.0,0.179,0.52,0.208,0.1971
 david_jurasek__cze,David Jurasek,CZE,DEF,slutrunde,Slutrunde,3,2,0,0,0,0,0,1,3.0,1.44,1.44,0.96,0.96,0.0,0.0,0.667,0.0,0.0,0.667,0.0,0.0,1.0,0.667,0.667
 david_jurasek__cze,David Jurasek,CZE,DEF,kvalifikation,Kvalifikation,18,7,0,2,1,0,2,7,17.0,9.200000000000001,7.992000000000001,2.664,2.96,0.0,1.36,0.412,0.0,0.111,0.333,0.0,0.148,0.9,0.3708,0.2997
 david_jurasek__cze,David Jurasek,CZE,DEF,nations_league,Nations League,6,0,0,4,2,0,4,0,4.0,2.88,1.4976,0.0,0.0,0.0,1.92,0.0,0.0,0.667,0.0,0.0,0.667,0.78,0.0,0.0
@@ -885,6 +990,10 @@ david_raya__esp,David Raya,ESP,GK,nations_league_finals,Nations League-slutrunde
 david_raya__esp,David Raya,ESP,GK,kvalifikation,Kvalifikation,14,1,0,0,0,0,0,13,14.0,6.4,5.760000000000001,0.28800000000000003,0.32,0.0,0.0,0.071,0.0,0.0,0.05,0.0,0.0,0.9,0.0639,0.045
 david_raya__esp,David Raya,ESP,GK,nations_league,Nations League,12,5,0,0,0,0,0,7,12.0,4.08,3.1824000000000003,1.872,2.4,0.0,0.0,0.417,0.0,0.0,0.588,0.0,0.0,0.78,0.3253,0.4586
 david_raya__esp,David Raya,ESP,GK,venskabskamp,Venskabskamp,10,4,0,1,0,0,1,4,10.0,5.04,2.6208,0.9984000000000001,1.92,0.0,1.0,0.4,0.0,0.1,0.381,0.0,0.198,0.52,0.208,0.1981
+david_zima__cze,David Zima,CZE,DEF,slutrunde,Slutrunde,8,0,0,2,0,0,2,6,8.0,2.44,2.44,0.0,0.0,0.0,0.4,0.0,0.0,0.25,0.0,0.0,0.164,1.0,0.0,0.0
+david_zima__cze,David Zima,CZE,DEF,kvalifikation,Kvalifikation,27,7,0,6,5,0,6,8,22.0,10.700000000000001,7.002000000000001,1.9800000000000002,2.2,0.0,2.4000000000000004,0.318,0.0,0.222,0.283,0.0,0.224,0.9,0.2862,0.2547
+david_zima__cze,David Zima,CZE,DEF,nations_league,Nations League,13,7,0,0,4,0,0,2,9.0,4.18,1.7628000000000001,1.3104000000000002,1.6800000000000002,0.0,0.0,0.778,0.0,0.0,0.743,0.0,0.0,0.78,0.6068,0.5795
+david_zima__cze,David Zima,CZE,DEF,venskabskamp,Venskabskamp,17,8,0,2,2,0,2,3,15.0,6.9,2.7144000000000004,1.1648,2.24,0.0,0.8800000000000001,0.533,0.0,0.118,0.429,0.0,0.128,0.52,0.2772,0.2231
 davinson_s_nchez__col,Davinson Sanchez,COL,DEF,slutrunde,Slutrunde,21,18,0,0,0,0,0,1,21.0,5.08,5.08,4.58,4.58,0.0,0.0,0.857,0.0,0.0,0.902,0.0,0.0,1.0,0.857,0.902
 davinson_s_nchez__col,Davinson Sanchez,COL,DEF,kvalifikation,Kvalifikation,48,28,0,8,2,0,8,10,46.0,12.780000000000001,10.89,7.488,8.32,0.0,1.78,0.609,0.0,0.167,0.688,0.0,0.139,0.9,0.5481,0.6192
 davinson_s_nchez__col,Davinson Sanchez,COL,DEF,venskabskamp,Venskabskamp,45,29,0,7,1,0,7,7,44.0,12.24,6.1984,3.9520000000000004,7.6000000000000005,0.0,1.56,0.659,0.0,0.156,0.638,0.0,0.127,0.52,0.3427,0.3318
@@ -915,6 +1024,9 @@ deiver_machado__col,Deiver Machado,COL,DEF,slutrunde,Slutrunde,17,1,0,11,0,0,11,
 deiver_machado__col,Deiver Machado,COL,DEF,kvalifikation,Kvalifikation,36,5,0,22,7,0,22,2,29.0,11.58,8.190000000000001,1.7640000000000002,1.96,0.0,6.14,0.172,0.0,0.611,0.215,0.0,0.53,0.9,0.1548,0.1935
 deiver_machado__col,Deiver Machado,COL,DEF,venskabskamp,Venskabskamp,37,6,0,16,6,0,16,6,31.0,11.440000000000001,4.8256000000000006,0.676,1.3,0.0,3.8400000000000003,0.194,0.0,0.432,0.14,0.0,0.336,0.52,0.1009,0.0728
 deni_juric__aus,Deni Juric,AUS,FWD,venskabskamp,Venskabskamp,3,2,0,1,0,0,1,0,3.0,2.84,1.4768000000000001,0.9568000000000001,1.84,0.0,1.0,0.667,0.0,0.333,0.648,0.0,0.352,0.52,0.3468,0.337
+denil_castillo__ecu,Denil Castillo,ECU,MID,slutrunde,Slutrunde,4,0,0,4,0,0,4,0,4.0,1.92,1.92,0.0,0.0,0.0,1.92,0.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0
+denil_castillo__ecu,Denil Castillo,ECU,MID,kvalifikation,Kvalifikation,12,0,0,7,0,0,7,4,12.0,6.36,5.724,0.0,0.0,0.0,3.36,0.0,0.0,0.583,0.0,0.0,0.528,0.9,0.0,0.0
+denil_castillo__ecu,Denil Castillo,ECU,MID,venskabskamp,Venskabskamp,10,1,0,2,2,0,2,2,8.0,7.0,2.6832000000000003,0.52,1.0,0.0,0.96,0.125,0.0,0.2,0.194,0.0,0.137,0.52,0.065,0.1009
 denis_visinsky__cze,Denis Visinsky,CZE,MID,kvalifikation,Kvalifikation,2,0,0,0,0,0,0,2,2.0,1.84,1.6560000000000001,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.9,0.0,0.0
 denis_visinsky__cze,Denis Visinsky,CZE,MID,venskabskamp,Venskabskamp,2,0,0,0,0,0,0,0,2.0,2.0,1.04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.52,0.0,0.0
 denis_zakaria__sui,Denis Zakaria,SUI,MID,slutrunde,Slutrunde,22,1,0,0,2,0,0,13,20.0,5.0,4.04,0.2,0.2,0.0,0.0,0.05,0.0,0.0,0.05,0.0,0.0,1.0,0.05,0.05
@@ -1058,6 +1170,11 @@ der_milit_o__bra,Eder Militão,BRA,DEF,venskabskamp,Venskabskamp,31,14,0,3,2,0,3
 ederson_moraes__bra,Ederson Moraes,BRA,GK,slutrunde,Slutrunde,27,5,0,1,4,0,1,17,23.0,5.42,3.5,1.0,1.0,0.0,0.1,0.217,0.0,0.037,0.286,0.0,0.018,1.0,0.217,0.286
 ederson_moraes__bra,Ederson Moraes,BRA,GK,kvalifikation,Kvalifikation,41,14,0,10,2,0,10,15,39.0,11.78,9.738000000000001,3.6900000000000004,4.1,0.0,3.96,0.359,0.0,0.244,0.379,0.0,0.336,0.9,0.3231,0.3411
 ederson_moraes__bra,Ederson Moraes,BRA,GK,venskabskamp,Venskabskamp,43,12,0,4,8,0,4,18,35.0,12.200000000000001,4.7008,1.5808000000000002,3.04,0.0,0.6000000000000001,0.343,0.0,0.093,0.336,0.0,0.049,0.52,0.1784,0.1747
+edgardo_farina__pan,Edgardo Farina,PAN,DEF,slutrunde,Slutrunde,14,4,0,6,0,0,6,2,14.0,6.5600000000000005,6.5600000000000005,1.92,1.92,0.0,1.92,0.286,0.0,0.429,0.293,0.0,0.293,1.0,0.286,0.293
+edgardo_farina__pan,Edgardo Farina,PAN,DEF,nations_league_finals,Nations League-slutrunde,10,4,0,4,0,0,4,2,10.0,3.84,3.6479999999999997,1.8239999999999998,1.92,0.0,1.28,0.4,0.0,0.4,0.5,0.0,0.333,0.95,0.38,0.475
+edgardo_farina__pan,Edgardo Farina,PAN,DEF,kvalifikation,Kvalifikation,10,1,0,1,4,0,1,3,6.0,6.4,3.3120000000000003,0.432,0.48,0.0,0.68,0.167,0.0,0.1,0.13,0.0,0.106,0.9,0.1503,0.117
+edgardo_farina__pan,Edgardo Farina,PAN,DEF,nations_league,Nations League,5,0,0,2,0,0,2,3,5.0,1.48,1.1544,0.0,0.0,0.0,0.52,0.0,0.0,0.4,0.0,0.0,0.351,0.78,0.0,0.0
+edgardo_farina__pan,Edgardo Farina,PAN,DEF,venskabskamp,Venskabskamp,15,5,0,7,0,0,7,2,15.0,9.5,4.94,1.4976,2.88,0.0,4.66,0.333,0.0,0.467,0.303,0.0,0.491,0.52,0.1732,0.1576
 edin_dzeko__bih,Edin Dzeko,BIH,FWD,slutrunde,Slutrunde,3,3,0,0,0,0,0,0,3.0,0.30000000000000004,0.30000000000000004,0.30000000000000004,0.30000000000000004,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,1.0,1.0
 edin_dzeko__bih,Edin Dzeko,BIH,FWD,kvalifikation,Kvalifikation,103,84,0,4,5,0,4,4,98.0,18.96,16.434,13.734000000000002,15.260000000000002,0.0,0.8400000000000001,0.857,0.0,0.039,0.836,0.0,0.044,0.9,0.7713,0.7524
 edin_dzeko__bih,Edin Dzeko,BIH,FWD,nations_league,Nations League,22,16,0,0,2,0,0,1,20.0,5.08,3.8064000000000004,3.12,4.0,0.0,0.0,0.8,0.0,0.0,0.82,0.0,0.0,0.78,0.624,0.6396
@@ -1084,6 +1201,9 @@ eduardo_camavinga__fra,Eduardo Camavinga,FRA,MID,venskabskamp,Venskabskamp,14,5,
 egil_selvik__nor,Egil Selvik,NOR,GK,kvalifikation,Kvalifikation,16,1,0,2,0,0,2,13,16.0,7.36,6.6240000000000006,0.28800000000000003,0.32,0.0,1.36,0.062,0.0,0.125,0.043,0.0,0.185,0.9,0.0558,0.0387
 egil_selvik__nor,Egil Selvik,NOR,GK,nations_league,Nations League,6,2,0,0,0,0,0,4,6.0,2.88,2.2464,0.7488,0.96,0.0,0.0,0.333,0.0,0.0,0.333,0.0,0.0,0.78,0.2597,0.2597
 egil_selvik__nor,Egil Selvik,NOR,GK,venskabskamp,Venskabskamp,13,1,0,0,0,0,0,10,13.0,6.84,3.5568000000000004,0.3536,0.68,0.0,0.0,0.077,0.0,0.0,0.099,0.0,0.0,0.52,0.04,0.0515
+ehsan_haddad__jor,Ehsan Haddad,JOR,DEF,slutrunde,Slutrunde,25,11,0,3,6,0,3,4,19.0,8.77,3.8400000000000003,2.62,2.62,0.0,0.5,0.579,0.0,0.12,0.682,0.0,0.057,1.0,0.579,0.682
+ehsan_haddad__jor,Ehsan Haddad,JOR,DEF,kvalifikation,Kvalifikation,42,24,0,5,2,0,5,11,40.0,10.540000000000001,8.442,6.57,7.3,0.0,0.6000000000000001,0.6,0.0,0.119,0.778,0.0,0.057,0.9,0.54,0.7002
+ehsan_haddad__jor,Ehsan Haddad,JOR,DEF,venskabskamp,Venskabskamp,74,31,0,25,7,0,25,3,67.0,16.7,6.0840000000000005,3.12,6.0,0.0,4.28,0.463,0.0,0.338,0.513,0.0,0.256,0.52,0.2408,0.2668
 ehsan_hajsafi__irn,Ehsan Hajsafi,IRN,DEF,slutrunde,Slutrunde,47,33,0,6,0,0,6,5,47.0,9.3,9.3,4.92,4.92,0.0,2.9200000000000004,0.702,0.0,0.128,0.529,0.0,0.314,1.0,0.702,0.529
 ehsan_hajsafi__irn,Ehsan Hajsafi,IRN,DEF,kvalifikation,Kvalifikation,92,31,0,34,2,0,32,16,90.0,16.14,14.166,3.3480000000000003,3.72,0.0,8.9,0.344,0.0,0.37,0.236,0.0,0.551,0.9,0.3096,0.2124
 ehsan_hajsafi__irn,Ehsan Hajsafi,IRN,DEF,venskabskamp,Venskabskamp,91,54,0,17,0,0,17,7,91.0,16.44,8.5488,3.8168,7.340000000000001,0.0,4.12,0.593,0.0,0.187,0.446,0.0,0.251,0.52,0.3084,0.2319
@@ -1186,6 +1306,9 @@ ermedin_demirovic__bih,Ermedin Demirovic,BIH,FWD,kvalifikation,Kvalifikation,29,
 ermedin_demirovic__bih,Ermedin Demirovic,BIH,FWD,nations_league,Nations League,15,7,0,4,0,0,3,3,15.0,4.38,3.4164000000000003,2.184,2.8,0.0,0.88,0.467,0.0,0.267,0.639,0.0,0.201,0.78,0.3643,0.4984
 ermedin_demirovic__bih,Ermedin Demirovic,BIH,FWD,venskabskamp,Venskabskamp,15,8,0,2,1,0,2,3,14.0,5.5600000000000005,2.5376000000000003,1.352,2.6,0.0,0.8800000000000001,0.571,0.0,0.133,0.533,0.0,0.158,0.52,0.2969,0.2772
 ermin_mahmic__bih,Ermin Mahmic,BIH,MID,venskabskamp,Venskabskamp,2,0,0,0,0,0,0,0,2.0,2.0,1.04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.52,0.0,0.0
+ernest_nuamah__gha,Ernest Nuamah,GHA,FWD,slutrunde,Slutrunde,3,0,0,0,0,0,0,2,3.0,0.96,0.96,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0
+ernest_nuamah__gha,Ernest Nuamah,GHA,FWD,kvalifikation,Kvalifikation,18,5,0,0,6,0,0,1,12.0,8.8,4.6080000000000005,2.16,2.4,0.0,0.0,0.417,0.0,0.0,0.469,0.0,0.0,0.9,0.3753,0.4221
+ernest_nuamah__gha,Ernest Nuamah,GHA,FWD,venskabskamp,Venskabskamp,14,3,0,1,6,0,1,0,8.0,8.08,2.0384,0.4992000000000001,0.96,0.0,1.0,0.375,0.0,0.071,0.245,0.0,0.124,0.52,0.195,0.1274
 esmir_bajraktarevic__bih,Esmir Bajraktarevic,BIH,MID,kvalifikation,Kvalifikation,10,4,0,3,0,0,3,0,10.0,6.880000000000001,6.192000000000001,2.8800000000000003,3.2,0.0,1.6400000000000001,0.4,0.0,0.3,0.465,0.0,0.238,0.9,0.36,0.4185
 esmir_bajraktarevic__bih,Esmir Bajraktarevic,BIH,MID,nations_league,Nations League,6,1,0,0,0,0,0,0,6.0,2.88,2.2464,0.3744,0.48,0.0,0.0,0.167,0.0,0.0,0.167,0.0,0.0,0.78,0.1303,0.1303
 esmir_bajraktarevic__bih,Esmir Bajraktarevic,BIH,MID,venskabskamp,Venskabskamp,4,3,0,1,0,0,1,0,4.0,3.3600000000000003,1.7472,1.3936000000000002,2.68,0.0,0.68,0.75,0.0,0.25,0.798,0.0,0.202,0.52,0.39,0.415
@@ -1211,6 +1334,9 @@ ezri_konsa__eng,Ezri Konsa,ENG,DEF,slutrunde,Slutrunde,7,1,0,0,0,0,0,4,7.0,3.36,
 ezri_konsa__eng,Ezri Konsa,ENG,DEF,kvalifikation,Kvalifikation,10,6,0,1,0,0,1,2,10.0,5.680000000000001,5.112000000000001,3.3120000000000003,3.68,0.0,0.68,0.6,0.0,0.1,0.648,0.0,0.12,0.9,0.54,0.5832
 ezri_konsa__eng,Ezri Konsa,ENG,DEF,nations_league,Nations League,6,2,0,3,0,0,3,1,6.0,2.88,2.2464,0.7488,0.96,0.0,1.44,0.333,0.0,0.5,0.333,0.0,0.5,0.78,0.2597,0.2597
 ezri_konsa__eng,Ezri Konsa,ENG,DEF,venskabskamp,Venskabskamp,9,5,0,1,0,0,1,1,9.0,5.640000000000001,2.9328000000000003,1.3312000000000002,2.56,0.0,0.92,0.556,0.0,0.111,0.454,0.0,0.163,0.52,0.2891,0.2361
+fabian_balbuena__par,Fabian Balbuena,PAR,DEF,slutrunde,Slutrunde,21,6,0,2,0,0,2,13,21.0,3.74,3.74,1.74,1.74,0.0,0.4,0.286,0.0,0.095,0.465,0.0,0.107,1.0,0.286,0.465
+fabian_balbuena__par,Fabian Balbuena,PAR,DEF,kvalifikation,Kvalifikation,54,19,0,14,2,0,14,16,52.0,13.18,10.638,4.644,5.16,0.0,1.5,0.365,0.0,0.259,0.437,0.0,0.114,0.9,0.3285,0.3933
+fabian_balbuena__par,Fabian Balbuena,PAR,DEF,venskabskamp,Venskabskamp,40,17,0,7,4,0,7,10,36.0,11.02,4.316,1.6536000000000002,3.18,0.0,1.0,0.472,0.0,0.175,0.383,0.0,0.091,0.52,0.2454,0.1992
 fabian_rieder__sui,Fabian Rieder,SUI,MID,slutrunde,Slutrunde,9,4,0,0,0,0,0,2,9.0,3.2,3.2,1.64,1.64,0.0,0.0,0.444,0.0,0.0,0.512,0.0,0.0,1.0,0.444,0.512
 fabian_rieder__sui,Fabian Rieder,SUI,MID,kvalifikation,Kvalifikation,16,4,0,8,0,0,8,0,16.0,7.04,6.336000000000001,2.4480000000000004,2.72,0.0,2.56,0.25,0.0,0.5,0.386,0.0,0.364,0.9,0.225,0.3474
 fabian_rieder__sui,Fabian Rieder,SUI,MID,nations_league,Nations League,6,3,0,0,0,0,0,0,6.0,2.88,2.2464,1.1232,1.44,0.0,0.0,0.5,0.0,0.0,0.5,0.0,0.0,0.78,0.39,0.39
@@ -1220,6 +1346,12 @@ fabian_ruiz__esp,Fabian Ruiz,ESP,MID,nations_league_finals,Nations League-slutru
 fabian_ruiz__esp,Fabian Ruiz,ESP,MID,kvalifikation,Kvalifikation,30,11,0,5,4,0,5,7,26.0,8.5,5.202000000000001,2.6280000000000006,2.92,0.0,1.0,0.423,0.0,0.167,0.505,0.0,0.118,0.9,0.3807,0.4545
 fabian_ruiz__esp,Fabian Ruiz,ESP,MID,nations_league,Nations League,18,8,0,8,0,0,8,1,18.0,4.68,3.6504000000000003,2.106,2.6999999999999997,0.0,1.4000000000000001,0.444,0.0,0.444,0.577,0.0,0.299,0.78,0.3463,0.4501
 fabian_ruiz__esp,Fabian Ruiz,ESP,MID,venskabskamp,Venskabskamp,14,3,0,6,2,0,6,3,12.0,5.54,1.9240000000000002,0.468,0.9,0.0,1.9000000000000001,0.25,0.0,0.429,0.243,0.0,0.343,0.52,0.13,0.1264
+fabinho__bra,Fabinho,BRA,MID,slutrunde,Slutrunde,34,3,0,15,0,0,0,14,34.0,6.12,6.12,0.6000000000000001,0.6000000000000001,0.0,3.02,0.088,0.0,0.441,0.098,0.0,0.493,1.0,0.088,0.098
+fabinho__bra,Fabinho,BRA,MID,kvalifikation,Kvalifikation,53,6,0,37,2,0,0,5,51.0,12.98,11.502,1.08,1.2000000000000002,0.0,10.48,0.118,0.0,0.698,0.094,0.0,0.807,0.9,0.1062,0.0846
+fabinho__bra,Fabinho,BRA,MID,venskabskamp,Venskabskamp,56,5,0,22,2,0,0,13,54.0,13.5,6.687200000000001,0.26,0.5,0.0,4.66,0.093,0.0,0.393,0.039,0.0,0.345,0.52,0.0484,0.0203
+facundo_medina__arg,Facundo Medina,ARG,DEF,slutrunde,Slutrunde,22,0,0,22,0,0,22,0,22.0,6.8,6.8,0.0,0.0,0.0,6.8,0.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0
+facundo_medina__arg,Facundo Medina,ARG,DEF,kvalifikation,Kvalifikation,34,1,0,22,0,0,22,6,34.0,11.280000000000001,10.152000000000001,0.6120000000000001,0.68,0.0,6.86,0.029,0.0,0.647,0.06,0.0,0.608,0.9,0.0261,0.054
+facundo_medina__arg,Facundo Medina,ARG,DEF,venskabskamp,Venskabskamp,18,1,0,10,3,0,10,3,15.0,8.32,3.2656,0.16640000000000002,0.32,0.0,4.24,0.067,0.0,0.556,0.051,0.0,0.51,0.52,0.0348,0.0265
 facundo_pellistri__uru,Facundo Pellistri,URU,FWD,slutrunde,Slutrunde,9,8,0,0,0,0,0,0,9.0,3.48,3.48,3.28,3.28,0.0,0.0,0.889,0.0,0.0,0.943,0.0,0.0,1.0,0.889,0.943
 facundo_pellistri__uru,Facundo Pellistri,URU,FWD,kvalifikation,Kvalifikation,22,17,0,1,1,0,0,0,21.0,9.08,7.5600000000000005,6.228000000000001,6.92,0.0,0.2,0.81,0.0,0.045,0.824,0.0,0.022,0.9,0.729,0.7416
 facundo_pellistri__uru,Facundo Pellistri,URU,FWD,venskabskamp,Venskabskamp,19,7,0,5,2,0,5,2,17.0,8.200000000000001,3.5568000000000004,0.9984000000000001,1.92,0.0,2.48,0.412,0.0,0.263,0.281,0.0,0.302,0.52,0.2142,0.1461
@@ -1278,9 +1410,9 @@ finn_dahmen__ger,Finn Dahmen,GER,GK,venskabskamp,Venskabskamp,2,0,0,0,0,0,0,2,2.
 finn_surman__nzl,Finn Surman,NZL,DEF,slutrunde,Slutrunde,4,4,0,0,0,0,0,0,4.0,1.92,1.92,1.92,1.92,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,1.0,1.0
 finn_surman__nzl,Finn Surman,NZL,DEF,kvalifikation,Kvalifikation,5,1,0,3,0,0,3,1,5.0,2.4,2.16,0.432,0.48,0.0,1.44,0.2,0.0,0.6,0.2,0.0,0.6,0.9,0.18,0.18
 finn_surman__nzl,Finn Surman,NZL,DEF,venskabskamp,Venskabskamp,21,12,0,1,1,0,1,5,20.0,12.64,6.4064000000000005,4.7216000000000005,9.08,0.0,0.48,0.6,0.0,0.048,0.737,0.0,0.038,0.52,0.312,0.3832
-firas_al_buraikan__ksa,Firas Al-Buraikan,KSA,FWD,slutrunde,Slutrunde,39,18,0,13,3,0,13,2,36.0,13.85,12.41,7.84,7.84,0.0,2.3000000000000003,0.5,0.0,0.333,0.632,0.0,0.166,1.0,0.5,0.632
-firas_al_buraikan__ksa,Firas Al-Buraikan,KSA,FWD,kvalifikation,Kvalifikation,36,19,0,6,0,0,6,3,36.0,11.6,10.440000000000001,7.2540000000000004,8.06,0.0,1.34,0.528,0.0,0.167,0.695,0.0,0.116,0.9,0.4752,0.6255
-firas_al_buraikan__ksa,Firas Al-Buraikan,KSA,FWD,venskabskamp,Venskabskamp,32,17,0,8,0,0,8,2,32.0,10.84,5.6368,3.6296000000000004,6.98,0.0,1.8,0.531,0.0,0.25,0.644,0.0,0.166,0.52,0.2761,0.3349
+firas_al_buraikan__ksa,Firas Al Brikan,KSA,FWD,slutrunde,Slutrunde,39,18,0,13,3,0,13,2,36.0,13.85,12.41,7.84,7.84,0.0,2.3000000000000003,0.5,0.0,0.333,0.632,0.0,0.166,1.0,0.5,0.632
+firas_al_buraikan__ksa,Firas Al Brikan,KSA,FWD,kvalifikation,Kvalifikation,36,19,0,6,0,0,6,3,36.0,11.6,10.440000000000001,7.2540000000000004,8.06,0.0,1.34,0.528,0.0,0.167,0.695,0.0,0.116,0.9,0.4752,0.6255
+firas_al_buraikan__ksa,Firas Al Brikan,KSA,FWD,venskabskamp,Venskabskamp,32,17,0,8,0,0,8,2,32.0,10.84,5.6368,3.6296000000000004,6.98,0.0,1.8,0.531,0.0,0.25,0.644,0.0,0.166,0.52,0.2761,0.3349
 firas_chaouat__tun,Firas Chaouat,TUN,FWD,slutrunde,Slutrunde,31,3,0,17,0,0,17,6,31.0,10.07,10.07,2.21,2.21,0.0,3.7600000000000002,0.097,0.0,0.548,0.219,0.0,0.373,1.0,0.097,0.219
 firas_chaouat__tun,Firas Chaouat,TUN,FWD,kvalifikation,Kvalifikation,39,3,0,29,0,0,29,2,39.0,12.1,10.89,0.7920000000000001,0.8800000000000001,0.0,8.4,0.077,0.0,0.744,0.073,0.0,0.694,0.9,0.0693,0.0657
 firas_chaouat__tun,Firas Chaouat,TUN,FWD,venskabskamp,Venskabskamp,39,5,0,23,0,0,23,2,39.0,13.83,7.1916,1.5288000000000002,2.94,0.0,5.34,0.128,0.0,0.59,0.213,0.0,0.386,0.52,0.0666,0.1108
@@ -1291,6 +1423,7 @@ florian_grillitsch__aut,Florian Grillitsch,AUT,MID,slutrunde,Slutrunde,8,5,0,0,0
 florian_grillitsch__aut,Florian Grillitsch,AUT,MID,kvalifikation,Kvalifikation,42,16,0,7,2,0,6,8,40.0,11.16,9.864,2.466,2.74,0.0,1.22,0.4,0.0,0.167,0.25,0.0,0.109,0.9,0.36,0.225
 florian_grillitsch__aut,Florian Grillitsch,AUT,MID,nations_league,Nations League,24,4,0,8,4,0,8,4,20.0,6.04,4.3992,0.9048,1.16,0.0,1.78,0.2,0.0,0.333,0.206,0.0,0.295,0.78,0.156,0.1607
 florian_grillitsch__aut,Florian Grillitsch,AUT,MID,venskabskamp,Venskabskamp,25,11,0,2,1,0,2,3,24.0,6.92,3.5464,1.4456000000000002,2.7800000000000002,0.0,0.30000000000000004,0.458,0.0,0.08,0.408,0.0,0.043,0.52,0.2382,0.2122
+florian_wiegele__aut,Florian Wiegele,AUT,GK,venskabskamp,Venskabskamp,3,0,0,0,0,0,0,2,3.0,2.84,1.4768000000000001,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.52,0.0,0.0
 florian_wirtz__ger,Florian Wirtz,GER,MID,slutrunde,Slutrunde,12,4,0,4,3,0,4,0,9.0,3.8,3.2,1.92,1.92,0.0,0.8,0.444,0.0,0.333,0.6,0.0,0.211,1.0,0.444,0.6
 florian_wirtz__ger,Florian Wirtz,GER,MID,nations_league_finals,Nations League-slutrunde,4,2,0,0,2,0,0,0,2.0,2.12,1.1019999999999999,1.1019999999999999,1.1600000000000001,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.95,0.95,0.95
 florian_wirtz__ger,Florian Wirtz,GER,MID,kvalifikation,Kvalifikation,16,6,0,0,2,0,0,4,14.0,5.78,4.8420000000000005,3.6720000000000006,4.08,0.0,0.0,0.429,0.0,0.0,0.758,0.0,0.0,0.9,0.3861,0.6822
@@ -1355,6 +1488,9 @@ gaston_olveira__par,Gaston Olveira,PAR,GK,venskabskamp,Venskabskamp,3,1,0,0,0,0,
 gael_kakuta__cod,Gaël Kakuta,COD,MID,slutrunde,Slutrunde,26,5,0,17,1,0,15,2,25.0,9.76,9.44,2.13,2.13,0.0,4.760000000000001,0.2,0.0,0.654,0.226,0.0,0.488,1.0,0.2,0.226
 gael_kakuta__cod,Gaël Kakuta,COD,MID,kvalifikation,Kvalifikation,49,14,0,20,5,0,20,7,44.0,15.08,12.258000000000001,3.1500000000000004,3.5,0.0,7.46,0.318,0.0,0.408,0.257,0.0,0.495,0.9,0.2862,0.2313
 gael_kakuta__cod,Gaël Kakuta,COD,MID,venskabskamp,Venskabskamp,27,6,0,15,3,0,15,2,24.0,7.95,3.6972,0.5408000000000001,1.04,0.0,4.43,0.25,0.0,0.556,0.146,0.0,0.557,0.52,0.13,0.0759
+gedeon_kalulu__cod,Gedeon Kalulu,COD,DEF,slutrunde,Slutrunde,22,7,0,11,0,0,11,4,22.0,9.36,9.36,2.77,2.77,0.0,3.72,0.318,0.0,0.5,0.296,0.0,0.397,1.0,0.318,0.296
+gedeon_kalulu__cod,Gedeon Kalulu,COD,DEF,kvalifikation,Kvalifikation,37,7,0,15,5,0,15,7,32.0,13.88,10.440000000000001,2.592,2.88,0.0,2.72,0.219,0.0,0.405,0.248,0.0,0.196,0.9,0.1971,0.2232
+gedeon_kalulu__cod,Gedeon Kalulu,COD,DEF,venskabskamp,Venskabskamp,19,9,0,5,1,0,5,2,18.0,7.15,3.2396000000000003,2.0852,4.01,0.0,1.24,0.5,0.0,0.263,0.644,0.0,0.173,0.52,0.26,0.3349
 george_hirst__sco,George Hirst,SCO,FWD,kvalifikation,Kvalifikation,6,0,0,0,0,0,0,4,6.0,4.08,3.6720000000000006,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.9,0.0,0.0
 george_hirst__sco,George Hirst,SCO,FWD,nations_league,Nations League,2,0,0,0,0,0,0,0,2.0,0.96,0.7488,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.78,0.0,0.0
 george_hirst__sco,George Hirst,SCO,FWD,venskabskamp,Venskabskamp,6,4,0,0,0,0,0,0,6.0,5.2,2.704,1.7056,3.2800000000000002,0.0,0.0,0.667,0.0,0.0,0.631,0.0,0.0,0.52,0.3468,0.3281
@@ -1368,6 +1504,7 @@ gervane_kastaneer__cuw,Gervane Kastaneer,CUW,FWD,slutrunde,Slutrunde,7,1,0,4,0,0
 gervane_kastaneer__cuw,Gervane Kastaneer,CUW,FWD,kvalifikation,Kvalifikation,17,4,0,3,1,0,2,4,16.0,7.62,6.246,2.4480000000000004,2.72,0.0,0.8800000000000001,0.25,0.0,0.176,0.392,0.0,0.115,0.9,0.225,0.3528
 gervane_kastaneer__cuw,Gervane Kastaneer,CUW,FWD,nations_league,Nations League,21,5,0,9,1,0,9,1,20.0,5.66,4.3368,1.3572000000000002,1.74,0.0,1.8800000000000001,0.25,0.0,0.429,0.313,0.0,0.332,0.78,0.195,0.2441
 gervane_kastaneer__cuw,Gervane Kastaneer,CUW,FWD,venskabskamp,Venskabskamp,17,0,0,9,0,0,9,2,17.0,5.8,3.0160000000000005,0.0,0.0,0.0,2.04,0.0,0.0,0.529,0.0,0.0,0.352,0.52,0.0,0.0
+gessime_yassine__mar,Gessime Yassine,MAR,MID,venskabskamp,Venskabskamp,4,1,0,0,0,0,0,0,4.0,3.84,1.9968000000000001,0.47840000000000005,0.92,0.0,0.0,0.25,0.0,0.0,0.24,0.0,0.0,0.52,0.13,0.1248
 ghislain_konan__civ,Ghislain Konan,CIV,DEF,slutrunde,Slutrunde,28,15,0,12,0,0,12,1,28.0,8.89,8.89,6.44,6.44,0.0,1.6,0.536,0.0,0.429,0.724,0.0,0.18,1.0,0.536,0.724
 ghislain_konan__civ,Ghislain Konan,CIV,DEF,kvalifikation,Kvalifikation,44,16,0,21,1,0,21,4,43.0,12.4,11.07,4.338,4.82,0.0,5.66,0.372,0.0,0.477,0.392,0.0,0.456,0.9,0.3348,0.3528
 ghislain_konan__civ,Ghislain Konan,CIV,DEF,venskabskamp,Venskabskamp,31,15,0,6,2,0,6,3,29.0,9.540000000000001,4.856800000000001,3.0784000000000002,5.92,0.0,0.7000000000000001,0.517,0.0,0.194,0.634,0.0,0.073,0.52,0.2688,0.3297
@@ -1377,6 +1514,8 @@ gi_hyuk_lee__kor,Gi-hyuk Lee,KOR,DEF,venskabskamp,Venskabskamp,22,2,0,20,0,0,20,
 gideon_mensah__gha,Gideon Mensah,GHA,DEF,slutrunde,Slutrunde,12,4,0,1,2,0,1,5,10.0,2.7600000000000002,2.3600000000000003,1.1600000000000001,1.1600000000000001,0.0,0.2,0.4,0.0,0.083,0.492,0.0,0.072,1.0,0.4,0.492
 gideon_mensah__gha,Gideon Mensah,GHA,DEF,kvalifikation,Kvalifikation,36,21,0,8,2,0,8,4,34.0,11.8,9.756,6.876,7.640000000000001,0.0,1.6,0.618,0.0,0.222,0.705,0.0,0.136,0.9,0.5562,0.6345
 gideon_mensah__gha,Gideon Mensah,GHA,DEF,venskabskamp,Venskabskamp,24,12,0,6,0,0,6,4,24.0,9.88,5.1376,2.2880000000000003,4.4,0.0,2.36,0.5,0.0,0.25,0.445,0.0,0.239,0.52,0.26,0.2314
+gilberto_mora__mex,Gilberto Mora,MEX,MID,slutrunde,Slutrunde,6,3,0,1,0,0,1,2,6.0,4.08,4.08,2.04,2.04,0.0,0.68,0.5,0.0,0.167,0.5,0.0,0.167,1.0,0.5,0.5
+gilberto_mora__mex,Gilberto Mora,MEX,MID,venskabskamp,Venskabskamp,16,2,0,8,0,0,8,3,16.0,12.83,6.671600000000001,0.8736,1.6800000000000002,0.0,6.26,0.125,0.0,0.5,0.131,0.0,0.488,0.52,0.065,0.0681
 gilson_benchimol_tavares__cpv,Gilson Benchimol Tavares,CPV,FWD,slutrunde,Slutrunde,9,1,0,0,2,0,0,2,7.0,2.4,2.0,0.32,0.32,0.0,0.0,0.143,0.0,0.0,0.16,0.0,0.0,1.0,0.143,0.16
 gilson_benchimol_tavares__cpv,Gilson Benchimol Tavares,CPV,FWD,kvalifikation,Kvalifikation,32,5,0,13,4,0,13,4,28.0,11.2,7.992000000000001,1.764,1.96,0.0,4.0600000000000005,0.179,0.0,0.406,0.221,0.0,0.363,0.9,0.1611,0.1989
 gilson_benchimol_tavares__cpv,Gilson Benchimol Tavares,CPV,FWD,venskabskamp,Venskabskamp,21,1,0,12,0,0,12,4,21.0,8.780000000000001,4.565600000000001,0.10400000000000001,0.2,0.0,5.44,0.048,0.0,0.571,0.023,0.0,0.62,0.52,0.025,0.012
@@ -1463,6 +1602,7 @@ gustaf_nilsson__swe,Gustaf Nilsson,SWE,FWD,slutrunde,Slutrunde,9,0,0,9,0,0,9,0,9
 gustaf_nilsson__swe,Gustaf Nilsson,SWE,FWD,kvalifikation,Kvalifikation,36,0,0,29,5,0,29,2,31.0,11.040000000000001,8.82,0.0,0.0,0.0,7.960000000000001,0.0,0.0,0.806,0.0,0.0,0.721,0.9,0.0,0.0
 gustaf_nilsson__swe,Gustaf Nilsson,SWE,FWD,nations_league,Nations League,22,0,0,13,7,0,13,1,15.0,5.08,2.1528,0.0,0.0,0.0,1.8,0.0,0.0,0.591,0.0,0.0,0.354,0.78,0.0,0.0
 gustaf_nilsson__swe,Gustaf Nilsson,SWE,FWD,venskabskamp,Venskabskamp,35,4,0,23,2,0,23,1,33.0,9.58,4.8776,0.988,1.9,0.0,4.62,0.121,0.0,0.657,0.203,0.0,0.482,0.52,0.0629,0.1056
+gustavo_caballero__par,Gustavo Caballero,PAR,MID,venskabskamp,Venskabskamp,3,0,0,0,0,0,0,1,3.0,2.84,1.4768000000000001,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.52,0.0,0.0
 gustavo_g_mez__par,Gustavo Gomez,PAR,DEF,slutrunde,Slutrunde,21,10,0,7,0,0,6,4,21.0,3.74,3.74,1.4000000000000001,1.4000000000000001,0.0,0.7000000000000001,0.476,0.0,0.333,0.374,0.0,0.187,1.0,0.476,0.374
 gustavo_g_mez__par,Gustavo Gomez,PAR,DEF,kvalifikation,Kvalifikation,59,43,0,7,3,0,1,6,56.0,13.68,11.358,9.486,10.540000000000001,0.0,1.48,0.768,0.0,0.119,0.835,0.0,0.108,0.9,0.6912,0.7515
 gustavo_g_mez__par,Gustavo Gomez,PAR,DEF,venskabskamp,Venskabskamp,50,33,0,7,0,0,7,7,50.0,12.020000000000001,6.250400000000001,4.565600000000001,8.780000000000001,0.0,0.9,0.66,0.0,0.14,0.73,0.0,0.075,0.52,0.3432,0.3796
@@ -1472,10 +1612,19 @@ gustavo_puerta__col,Gustavo Puerta,COL,MID,venskabskamp,Venskabskamp,9,2,0,2,0,0
 gustavo_vel_squez__par,Gustavo Velazquez,PAR,DEF,slutrunde,Slutrunde,3,3,0,0,0,0,0,0,3.0,1.44,1.44,1.44,1.44,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,1.0,1.0
 gustavo_vel_squez__par,Gustavo Velazquez,PAR,DEF,kvalifikation,Kvalifikation,12,3,0,0,0,0,0,7,12.0,6.36,5.724,1.476,1.6400000000000001,0.0,0.0,0.25,0.0,0.0,0.258,0.0,0.0,0.9,0.225,0.2322
 gustavo_vel_squez__par,Gustavo Velazquez,PAR,DEF,venskabskamp,Venskabskamp,11,3,0,0,0,0,0,6,11.0,7.1000000000000005,3.692,0.8528,1.6400000000000001,0.0,0.0,0.273,0.0,0.0,0.231,0.0,0.0,0.52,0.142,0.1201
+guus_til__ned,Guus Til,NED,MID,slutrunde,Slutrunde,15,0,0,15,0,0,15,0,15.0,4.68,4.68,0.0,0.0,0.0,4.68,0.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0
+guus_til__ned,Guus Til,NED,MID,nations_league_finals,Nations League-slutrunde,6,0,0,6,0,0,6,0,6.0,1.8,1.71,0.0,0.0,0.0,1.8,0.0,0.0,1.0,0.0,0.0,1.0,0.95,0.0,0.0
+guus_til__ned,Guus Til,NED,MID,kvalifikation,Kvalifikation,34,1,0,27,0,0,27,4,34.0,10.26,9.234000000000002,0.18000000000000002,0.2,0.0,8.860000000000001,0.029,0.0,0.794,0.019,0.0,0.864,0.9,0.0261,0.0171
+guus_til__ned,Guus Til,NED,MID,nations_league,Nations League,22,0,0,12,4,0,12,4,18.0,5.08,3.6504000000000003,0.0,0.0,0.0,2.92,0.0,0.0,0.545,0.0,0.0,0.575,0.78,0.0,0.0
+guus_til__ned,Guus Til,NED,MID,venskabskamp,Venskabskamp,19,0,0,15,1,0,15,2,18.0,5.94,3.0368000000000004,0.0,0.0,0.0,4.640000000000001,0.0,0.0,0.789,0.0,0.0,0.781,0.52,0.0,0.0
 habib_diarra__sen,Habib Diarra,SEN,MID,slutrunde,Slutrunde,13,3,0,7,0,0,6,2,13.0,10.03,10.03,2.55,2.55,0.0,4.930000000000001,0.231,0.0,0.538,0.254,0.0,0.492,1.0,0.231,0.254
 habib_diarra__sen,Habib Diarra,SEN,MID,kvalifikation,Kvalifikation,14,6,0,0,4,0,0,1,10.0,7.52,4.68,2.7720000000000002,3.08,0.0,0.0,0.6,0.0,0.0,0.592,0.0,0.0,0.9,0.54,0.5328
 habib_diarra__sen,Habib Diarra,SEN,MID,venskabskamp,Venskabskamp,9,5,0,0,2,0,0,0,7.0,6.2,2.5168000000000004,1.872,3.6,0.0,0.0,0.714,0.0,0.0,0.744,0.0,0.0,0.52,0.3713,0.3869
 haissem_hassan__egy,Haissem Hassan,EGY,MID,venskabskamp,Venskabskamp,4,1,0,0,0,0,0,0,4.0,3.84,1.9968000000000001,0.52,1.0,0.0,0.0,0.25,0.0,0.0,0.26,0.0,0.0,0.52,0.13,0.1352
+haji_wright__usa,Haji Wright,USA,FWD,slutrunde,Slutrunde,18,1,0,5,5,0,5,2,13.0,7.92,4.5200000000000005,0.2,0.2,0.0,1.6,0.077,0.0,0.278,0.044,0.0,0.202,1.0,0.077,0.044
+haji_wright__usa,Haji Wright,USA,FWD,nations_league_finals,Nations League-slutrunde,10,1,0,6,2,0,6,0,8.0,3.84,2.7359999999999998,0.304,0.32,0.0,2.24,0.125,0.0,0.6,0.111,0.0,0.583,0.95,0.1187,0.1055
+haji_wright__usa,Haji Wright,USA,FWD,nations_league,Nations League,4,1,0,2,0,0,2,1,4.0,0.8,0.6240000000000001,0.15600000000000003,0.2,0.0,0.4,0.25,0.0,0.5,0.25,0.0,0.5,0.78,0.195,0.195
+haji_wright__usa,Haji Wright,USA,FWD,venskabskamp,Venskabskamp,32,3,0,10,6,0,10,5,26.0,16.12,6.7184,0.9568000000000001,1.84,0.0,3.56,0.115,0.0,0.312,0.142,0.0,0.221,0.52,0.0598,0.0738
 hakan_calhanoglu__tur,Hakan Calhanoglu,TUR,MID,slutrunde,Slutrunde,11,9,0,1,0,0,0,1,11.0,3.3,3.3,2.7199999999999998,2.7199999999999998,0.0,0.48,0.818,0.0,0.091,0.824,0.0,0.145,1.0,0.818,0.824
 hakan_calhanoglu__tur,Hakan Calhanoglu,TUR,MID,kvalifikation,Kvalifikation,61,43,0,5,3,0,3,4,58.0,13.540000000000001,11.196000000000002,9.756000000000002,10.84,0.0,0.5,0.741,0.0,0.082,0.871,0.0,0.037,0.9,0.6669,0.7839
 hakan_calhanoglu__tur,Hakan Calhanoglu,TUR,MID,nations_league,Nations League,24,19,0,0,3,0,0,1,21.0,6.04,4.0248,3.5724000000000005,4.58,0.0,0.0,0.905,0.0,0.0,0.888,0.0,0.0,0.78,0.7059,0.6926
@@ -1508,9 +1657,15 @@ harry_kane__eng,Harry Kane,ENG,FWD,nations_league_finals,Nations League-slutrund
 harry_kane__eng,Harry Kane,ENG,FWD,kvalifikation,Kvalifikation,50,38,0,1,3,0,1,3,47.0,11.46,10.044,8.856000000000002,9.84,0.0,0.1,0.809,0.0,0.02,0.882,0.0,0.009,0.9,0.7281,0.7938
 harry_kane__eng,Harry Kane,ENG,FWD,nations_league,Nations League,22,18,0,1,0,0,1,0,22.0,5.08,3.9624000000000006,2.9796000000000005,3.82,0.0,0.48,0.818,0.0,0.045,0.752,0.0,0.094,0.78,0.638,0.5866
 harry_kane__eng,Harry Kane,ENG,FWD,venskabskamp,Venskabskamp,37,14,0,5,7,0,5,7,30.0,9.18,3.7544000000000004,1.8616000000000001,3.58,0.0,1.32,0.467,0.0,0.135,0.496,0.0,0.144,0.52,0.2428,0.2579
+harry_souttar__aus,Harry Souttar,AUS,DEF,slutrunde,Slutrunde,9,9,0,0,0,0,0,0,9.0,2.4,2.4,2.4,2.4,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,1.0,1.0
+harry_souttar__aus,Harry Souttar,AUS,DEF,kvalifikation,Kvalifikation,36,21,0,0,11,0,0,4,25.0,10.74,6.498,5.796,6.44,0.0,0.0,0.84,0.0,0.0,0.892,0.0,0.0,0.9,0.756,0.8028
+harry_souttar__aus,Harry Souttar,AUS,DEF,venskabskamp,Venskabskamp,21,8,0,0,12,0,0,1,9.0,10.620000000000001,2.028,1.9760000000000002,3.8,0.0,0.0,0.889,0.0,0.0,0.974,0.0,0.0,0.52,0.4623,0.5065
 hasan_abdulkareem__irq,Hasan Abdulkareem,IRQ,MID,slutrunde,Slutrunde,19,5,0,7,0,0,7,2,19.0,7.55,7.55,2.13,2.13,0.0,2.7199999999999998,0.263,0.0,0.368,0.282,0.0,0.36,1.0,0.263,0.282
 hasan_abdulkareem__irq,Hasan Abdulkareem,IRQ,MID,kvalifikation,Kvalifikation,26,1,0,11,0,0,11,8,26.0,11.88,10.692,0.18000000000000002,0.2,0.0,5.12,0.038,0.0,0.423,0.017,0.0,0.431,0.9,0.0342,0.0153
 hasan_abdulkareem__irq,Hasan Abdulkareem,IRQ,MID,venskabskamp,Venskabskamp,15,1,0,9,0,0,9,2,15.0,4.680000000000001,2.4336,0.10400000000000001,0.2,0.0,3.48,0.067,0.0,0.6,0.043,0.0,0.744,0.52,0.0348,0.0224
+hassan_kadesh__ksa,Hassan Kadesh,KSA,DEF,slutrunde,Slutrunde,18,2,0,10,3,0,10,2,15.0,10.85,8.81,1.0,1.0,0.0,6.85,0.133,0.0,0.556,0.114,0.0,0.631,1.0,0.133,0.114
+hassan_kadesh__ksa,Hassan Kadesh,KSA,DEF,kvalifikation,Kvalifikation,22,9,0,5,1,0,5,5,21.0,9.0,7.668,3.7800000000000002,4.2,0.0,2.42,0.429,0.0,0.227,0.493,0.0,0.269,0.9,0.3861,0.4437
+hassan_kadesh__ksa,Hassan Kadesh,KSA,DEF,venskabskamp,Venskabskamp,8,2,0,3,0,0,3,0,8.0,6.5600000000000005,3.4112,0.9984000000000001,1.92,0.0,2.2800000000000002,0.25,0.0,0.375,0.293,0.0,0.348,0.52,0.13,0.1524
 hazem_mastouri__tun,Hazem Mastouri,TUN,FWD,slutrunde,Slutrunde,7,4,0,3,0,0,3,0,7.0,5.61,5.61,3.4,3.4,0.0,2.21,0.571,0.0,0.429,0.606,0.0,0.394,1.0,0.571,0.606
 hazem_mastouri__tun,Hazem Mastouri,TUN,FWD,kvalifikation,Kvalifikation,8,7,0,0,0,0,0,0,8.0,4.640000000000001,4.176,3.564,3.96,0.0,0.0,0.875,0.0,0.0,0.853,0.0,0.0,0.9,0.7875,0.7677
 hazem_mastouri__tun,Hazem Mastouri,TUN,FWD,venskabskamp,Venskabskamp,11,4,0,3,0,0,3,1,11.0,8.57,4.4564,1.6692,3.21,0.0,2.3600000000000003,0.364,0.0,0.273,0.375,0.0,0.275,0.52,0.1893,0.195
@@ -1521,6 +1676,8 @@ h_lio_varela__cpv,Helio Varela,CPV,FWD,slutrunde,Slutrunde,5,0,0,5,0,0,5,0,5.0,1
 h_lio_varela__cpv,Helio Varela,CPV,FWD,kvalifikation,Kvalifikation,16,3,0,1,0,0,1,1,16.0,8.16,7.344,1.296,1.44,0.0,0.68,0.188,0.0,0.062,0.176,0.0,0.083,0.9,0.1692,0.1584
 h_lio_varela__cpv,Helio Varela,CPV,FWD,venskabskamp,Venskabskamp,12,2,0,4,1,0,4,1,11.0,6.96,3.3696,0.52,1.0,0.0,2.8400000000000003,0.182,0.0,0.333,0.154,0.0,0.408,0.52,0.0946,0.0801
 henrik_falchener__nor,Henrik Falchener,NOR,DEF,venskabskamp,Venskabskamp,3,0,0,0,0,0,0,2,3.0,2.84,1.4768000000000001,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.52,0.0,0.0
+herman_johansson__swe,Herman Johansson,SWE,MID,kvalifikation,Kvalifikation,3,1,0,1,0,0,1,0,3.0,2.52,2.2680000000000002,0.8280000000000001,0.92,0.0,0.92,0.333,0.0,0.333,0.365,0.0,0.365,0.9,0.2997,0.3285
+herman_johansson__swe,Herman Johansson,SWE,MID,venskabskamp,Venskabskamp,2,1,0,0,0,0,0,1,2.0,2.0,1.04,0.52,1.0,0.0,0.0,0.5,0.0,0.0,0.5,0.0,0.0,0.52,0.26,0.26
 hern_n_gal_ndez__ecu,Hernan Galindez,ECU,GK,slutrunde,Slutrunde,12,6,0,0,0,0,0,6,12.0,3.52,3.52,1.2000000000000002,1.2000000000000002,0.0,0.0,0.5,0.0,0.0,0.341,0.0,0.0,1.0,0.5,0.341
 hern_n_gal_ndez__ecu,Hernan Galindez,ECU,GK,kvalifikation,Kvalifikation,36,18,0,0,4,0,0,14,32.0,11.38,9.522,6.336,7.04,0.0,0.0,0.562,0.0,0.0,0.665,0.0,0.0,0.9,0.5058,0.5985
 hern_n_gal_ndez__ecu,Hernan Galindez,ECU,GK,venskabskamp,Venskabskamp,25,10,0,2,0,0,2,13,25.0,10.38,5.397600000000001,2.5584000000000002,4.92,0.0,1.2,0.4,0.0,0.08,0.474,0.0,0.116,0.52,0.208,0.2465
@@ -1556,6 +1713,7 @@ hugo_cuenca__par,Hugo Cuenca,PAR,MID,kvalifikation,Kvalifikation,12,0,0,5,4,0,5,
 hugo_cuenca__par,Hugo Cuenca,PAR,MID,venskabskamp,Venskabskamp,2,1,0,0,0,0,0,0,2.0,1.36,0.7072,0.3536,0.68,0.0,0.0,0.5,0.0,0.0,0.5,0.0,0.0,0.52,0.26,0.26
 hugo_ekitike__fra,Hugo Ekitike,FRA,FWD,kvalifikation,Kvalifikation,6,2,0,0,0,0,0,0,6.0,4.08,3.6720000000000006,1.2240000000000002,1.36,0.0,0.0,0.333,0.0,0.0,0.333,0.0,0.0,0.9,0.2997,0.2997
 hugo_ekitike__fra,Hugo Ekitike,FRA,FWD,venskabskamp,Venskabskamp,2,1,0,0,0,0,0,0,2.0,1.84,0.9568000000000001,0.47840000000000005,0.92,0.0,0.0,0.5,0.0,0.0,0.5,0.0,0.0,0.52,0.26,0.26
+hugo_sochurek__cze,Hugo Sochurek,CZE,MID,venskabskamp,Venskabskamp,2,0,0,0,0,0,0,1,2.0,2.0,1.04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.52,0.0,0.0
 husam_abu_dahab__jor,Husam Abu Dahab,JOR,DEF,slutrunde,Slutrunde,6,4,0,0,0,0,0,0,6.0,4.93,4.93,3.4,3.4,0.0,0.0,0.667,0.0,0.0,0.69,0.0,0.0,1.0,0.667,0.69
 husam_abu_dahab__jor,Husam Abu Dahab,JOR,DEF,kvalifikation,Kvalifikation,10,3,0,3,0,0,3,4,10.0,5.0,4.5,1.296,1.44,0.0,1.44,0.3,0.0,0.3,0.288,0.0,0.288,0.9,0.27,0.2592
 husam_abu_dahab__jor,Husam Abu Dahab,JOR,DEF,venskabskamp,Venskabskamp,9,1,0,2,0,0,2,4,9.0,6.92,3.5984000000000003,0.47840000000000005,0.92,0.0,1.36,0.111,0.0,0.222,0.133,0.0,0.197,0.52,0.0577,0.0692
@@ -1620,6 +1778,9 @@ ime_okon__rsa,Ime Okon,RSA,DEF,venskabskamp,Venskabskamp,3,3,0,0,0,0,0,0,3.0,2.8
 in_beom_hwang__kor,In-beom Hwang,KOR,MID,slutrunde,Slutrunde,24,18,0,5,0,0,5,0,24.0,6.16,6.16,3.62,3.62,0.0,2.4400000000000004,0.75,0.0,0.208,0.588,0.0,0.396,1.0,0.75,0.588
 in_beom_hwang__kor,In-beom Hwang,KOR,MID,kvalifikation,Kvalifikation,33,26,0,5,2,0,5,0,31.0,10.14,8.766,7.7940000000000005,8.66,0.0,1.08,0.839,0.0,0.152,0.889,0.0,0.107,0.9,0.7551,0.8001
 in_beom_hwang__kor,In-beom Hwang,KOR,MID,venskabskamp,Venskabskamp,44,23,0,5,9,0,5,2,35.0,13.96,4.732,3.2032000000000003,6.16,0.0,0.9,0.657,0.0,0.114,0.677,0.0,0.064,0.52,0.3416,0.352
+iqraam_rayners__rsa,Iqraam Rayners,RSA,FWD,slutrunde,Slutrunde,8,0,0,8,0,0,8,0,8.0,6.12,6.12,0.0,0.0,0.0,6.12,0.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0
+iqraam_rayners__rsa,Iqraam Rayners,RSA,FWD,kvalifikation,Kvalifikation,14,4,0,1,2,0,1,0,12.0,7.52,5.5440000000000005,1.728,1.92,0.0,0.48,0.333,0.0,0.071,0.312,0.0,0.064,0.9,0.2997,0.2808
+iqraam_rayners__rsa,Iqraam Rayners,RSA,FWD,venskabskamp,Venskabskamp,8,1,0,5,0,0,5,0,8.0,5.5200000000000005,2.8704,0.16640000000000002,0.32,0.0,3.8800000000000003,0.125,0.0,0.625,0.058,0.0,0.703,0.52,0.065,0.0302
 irfan_can_kahveci__tur,Irfan Can Kahveci,TUR,MID,slutrunde,Slutrunde,8,1,0,0,2,0,0,2,6.0,3.0,2.04,0.2,0.2,0.0,0.0,0.167,0.0,0.0,0.098,0.0,0.0,1.0,0.167,0.098
 irfan_can_kahveci__tur,Irfan Can Kahveci,TUR,MID,kvalifikation,Kvalifikation,37,7,0,4,13,0,4,6,24.0,11.14,7.884000000000001,1.35,1.5,0.0,1.28,0.292,0.0,0.108,0.171,0.0,0.115,0.9,0.2628,0.1539
 irfan_can_kahveci__tur,Irfan Can Kahveci,TUR,MID,nations_league,Nations League,24,4,0,8,3,0,8,1,21.0,6.04,3.8844000000000003,0.9828000000000001,1.26,0.0,1.2000000000000002,0.19,0.0,0.333,0.253,0.0,0.199,0.78,0.1482,0.1973
@@ -1627,6 +1788,8 @@ irfan_can_kahveci__tur,Irfan Can Kahveci,TUR,MID,venskabskamp,Venskabskamp,28,12
 isak_hien__swe,Isak Hien,SWE,DEF,kvalifikation,Kvalifikation,16,9,0,0,3,0,0,3,13.0,8.24,6.120000000000001,4.752000000000001,5.28,0.0,0.0,0.692,0.0,0.0,0.776,0.0,0.0,0.9,0.6228,0.6984
 isak_hien__swe,Isak Hien,SWE,DEF,nations_league,Nations League,8,7,0,1,0,0,0,0,8.0,3.28,2.5584000000000002,2.184,2.8,0.0,0.48,0.875,0.0,0.125,0.854,0.0,0.146,0.78,0.6825,0.6661
 isak_hien__swe,Isak Hien,SWE,DEF,venskabskamp,Venskabskamp,17,11,0,4,1,0,4,0,16.0,7.68,3.8272000000000004,3.12,6.0,0.0,1.04,0.688,0.0,0.235,0.815,0.0,0.135,0.52,0.3578,0.4238
+isidro_pitta__par,Isidro Pitta,PAR,FWD,kvalifikation,Kvalifikation,12,3,0,1,2,0,1,4,10.0,6.36,4.5,1.296,1.44,0.0,0.48,0.3,0.0,0.083,0.288,0.0,0.075,0.9,0.27,0.2592
+isidro_pitta__par,Isidro Pitta,PAR,FWD,venskabskamp,Venskabskamp,7,0,0,4,2,0,4,1,5.0,5.5600000000000005,2.184,0.0,0.0,0.0,3.2,0.0,0.0,0.571,0.0,0.0,0.576,0.52,0.0,0.0
 isma_l_bennacer__alg,Ismael Bennacer,ALG,MID,slutrunde,Slutrunde,41,13,0,19,5,0,18,4,36.0,14.99,13.75,3.97,3.97,0.0,8.63,0.361,0.0,0.463,0.289,0.0,0.576,1.0,0.361,0.289
 isma_l_bennacer__alg,Ismael Bennacer,ALG,MID,kvalifikation,Kvalifikation,49,21,0,10,11,0,10,5,38.0,13.1,7.614000000000001,3.6540000000000004,4.0600000000000005,0.0,3.3200000000000003,0.553,0.0,0.204,0.48,0.0,0.253,0.9,0.4977,0.432
 isma_l_bennacer__alg,Ismael Bennacer,ALG,MID,venskabskamp,Venskabskamp,41,14,0,8,9,0,8,4,32.0,9.24,3.5464,1.9552,3.7600000000000002,0.0,1.86,0.438,0.0,0.195,0.551,0.0,0.201,0.52,0.2278,0.2865
@@ -1692,10 +1855,18 @@ jack_hendry__sco,Jack Hendry,SCO,DEF,slutrunde,Slutrunde,6,4,0,1,0,0,1,1,6.0,2.0
 jack_hendry__sco,Jack Hendry,SCO,DEF,kvalifikation,Kvalifikation,37,13,0,13,2,0,13,8,35.0,9.5,8.190000000000001,3.1320000000000006,3.48,0.0,1.4000000000000001,0.371,0.0,0.351,0.382,0.0,0.147,0.9,0.3339,0.3438
 jack_hendry__sco,Jack Hendry,SCO,DEF,nations_league,Nations League,24,6,0,11,1,0,11,6,23.0,6.04,4.6332,0.9360000000000002,1.2000000000000002,0.0,3.0,0.261,0.0,0.458,0.202,0.0,0.497,0.78,0.2036,0.1576
 jack_hendry__sco,Jack Hendry,SCO,DEF,venskabskamp,Venskabskamp,23,14,0,0,1,0,0,8,22.0,8.780000000000001,4.5136,2.6832000000000003,5.16,0.0,0.0,0.636,0.0,0.0,0.594,0.0,0.0,0.52,0.3307,0.3089
+jackson_irvine__aus,Jackson Irvine,AUS,MID,slutrunde,Slutrunde,29,14,0,9,0,0,9,1,29.0,4.4,4.4,2.9,2.9,0.0,0.9,0.483,0.0,0.31,0.659,0.0,0.205,1.0,0.483,0.659
+jackson_irvine__aus,Jackson Irvine,AUS,MID,kvalifikation,Kvalifikation,58,36,0,5,5,0,5,8,53.0,12.94,10.152000000000001,8.532,9.48,0.0,0.5,0.679,0.0,0.086,0.84,0.0,0.039,0.9,0.6111,0.756
+jackson_irvine__aus,Jackson Irvine,AUS,MID,venskabskamp,Venskabskamp,46,11,0,14,6,0,14,3,40.0,13.120000000000001,4.7632,1.8408000000000002,3.54,0.0,2.3200000000000003,0.275,0.0,0.304,0.386,0.0,0.177,0.52,0.143,0.2007
 jackson_porozo__ecu,Jackson Porozo,ECU,DEF,slutrunde,Slutrunde,12,1,0,5,0,0,5,5,12.0,3.52,3.52,0.2,0.2,0.0,1.0,0.083,0.0,0.417,0.057,0.0,0.284,1.0,0.083,0.057
 jackson_porozo__ecu,Jackson Porozo,ECU,DEF,kvalifikation,Kvalifikation,36,0,0,31,3,0,31,2,33.0,11.38,9.486,0.0,0.0,0.0,9.86,0.0,0.0,0.861,0.0,0.0,0.866,0.9,0.0,0.0
 jackson_porozo__ecu,Jackson Porozo,ECU,DEF,venskabskamp,Venskabskamp,32,5,0,16,1,0,16,8,31.0,11.08,5.6576,1.0816000000000001,2.08,0.0,5.4,0.161,0.0,0.5,0.191,0.0,0.487,0.52,0.0837,0.0993
 jacob_italiano__aus,Jacob Italiano,AUS,DEF,venskabskamp,Venskabskamp,8,4,0,0,2,0,0,1,6.0,6.5600000000000005,2.704,1.7056,3.2800000000000002,0.0,0.0,0.667,0.0,0.0,0.631,0.0,0.0,0.52,0.3468,0.3281
+jacob_shaffelburg__can,Jacob Shaffelburg,CAN,MID,slutrunde,Slutrunde,22,7,0,8,0,0,8,1,22.0,8.48,8.48,3.96,3.96,0.0,1.6,0.318,0.0,0.364,0.467,0.0,0.189,1.0,0.318,0.467
+jacob_shaffelburg__can,Jacob Shaffelburg,CAN,MID,nations_league_finals,Nations League-slutrunde,9,2,0,4,0,0,4,0,9.0,3.52,3.344,0.9119999999999999,0.96,0.0,1.28,0.222,0.0,0.444,0.273,0.0,0.364,0.95,0.2109,0.2594
+jacob_shaffelburg__can,Jacob Shaffelburg,CAN,MID,kvalifikation,Kvalifikation,20,0,0,15,2,0,15,1,18.0,3.8000000000000003,3.0600000000000005,0.0,0.0,0.0,2.8000000000000003,0.0,0.0,0.75,0.0,0.0,0.737,0.9,0.0,0.0
+jacob_shaffelburg__can,Jacob Shaffelburg,CAN,MID,nations_league,Nations League,4,0,0,4,0,0,4,0,4.0,0.8,0.6240000000000001,0.0,0.0,0.0,0.8,0.0,0.0,1.0,0.0,0.0,1.0,0.78,0.0,0.0
+jacob_shaffelburg__can,Jacob Shaffelburg,CAN,MID,venskabskamp,Venskabskamp,26,3,0,9,3,0,9,3,23.0,13.950000000000001,5.8552,0.8528,1.6400000000000001,0.0,4.76,0.13,0.0,0.346,0.146,0.0,0.341,0.52,0.0676,0.0759
 jacob_widell_zetterstrom__swe,Jacob Widell Zetterström,SWE,GK,kvalifikation,Kvalifikation,16,1,0,12,2,0,12,1,14.0,8.24,5.760000000000001,0.6120000000000001,0.68,0.0,5.04,0.071,0.0,0.75,0.106,0.0,0.612,0.9,0.0639,0.0954
 jacob_widell_zetterstrom__swe,Jacob Widell Zetterström,SWE,GK,nations_league,Nations League,6,0,0,0,0,0,0,6,6.0,2.88,2.2464,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.78,0.0,0.0
 jacob_widell_zetterstrom__swe,Jacob Widell Zetterström,SWE,GK,venskabskamp,Venskabskamp,15,2,0,9,0,0,9,4,15.0,7.28,3.7856,0.624,1.2,0.0,4.24,0.133,0.0,0.6,0.165,0.0,0.582,0.52,0.0692,0.0858
@@ -1703,6 +1874,12 @@ lee_jae_sung__kor,Jae-Sung Lee,KOR,MID,slutrunde,Slutrunde,33,17,0,9,0,0,9,5,33.
 lee_jae_sung__kor,Jae-Sung Lee,KOR,MID,kvalifikation,Kvalifikation,51,34,0,3,0,0,3,5,51.0,11.94,10.746,7.974,8.86,0.0,0.30000000000000004,0.667,0.0,0.059,0.742,0.0,0.025,0.9,0.6003,0.6678
 lee_jae_sung__kor,Jae-Sung Lee,KOR,MID,venskabskamp,Venskabskamp,66,34,0,10,7,0,10,6,59.0,16.16,7.5296,4.524,8.700000000000001,0.0,1.3,0.576,0.0,0.152,0.601,0.0,0.08,0.52,0.2995,0.3125
 jakhongir_urozov__uzb,Jakhongir Urozov,UZB,DEF,venskabskamp,Venskabskamp,7,2,0,2,0,0,2,2,7.0,5.5600000000000005,2.8912000000000004,0.9568000000000001,1.84,0.0,1.36,0.286,0.0,0.286,0.331,0.0,0.245,0.52,0.1487,0.1721
+jalal_hassan__irq,Jalal Hassan,IRQ,GK,slutrunde,Slutrunde,61,37,0,8,0,0,8,16,61.0,11.75,11.75,5.9,5.9,0.0,1.1,0.607,0.0,0.131,0.502,0.0,0.094,1.0,0.607,0.502
+jalal_hassan__irq,Jalal Hassan,IRQ,GK,kvalifikation,Kvalifikation,77,23,0,29,0,0,29,24,77.0,17.78,16.002000000000002,8.316,9.24,0.0,5.28,0.299,0.0,0.377,0.52,0.0,0.297,0.9,0.2691,0.468
+jalal_hassan__irq,Jalal Hassan,IRQ,GK,venskabskamp,Venskabskamp,75,31,0,25,1,0,25,13,74.0,12.48,6.437600000000001,2.5168000000000004,4.84,0.0,3.8200000000000003,0.419,0.0,0.333,0.391,0.0,0.306,0.52,0.2179,0.2033
+jaloliddin_masharipov__uzb,Jaloliddin Masharipov,UZB,MID,slutrunde,Slutrunde,17,10,0,1,4,0,1,1,13.0,6.0,3.2800000000000002,2.54,2.54,0.0,0.32,0.769,0.0,0.059,0.774,0.0,0.053,1.0,0.769,0.774
+jaloliddin_masharipov__uzb,Jaloliddin Masharipov,UZB,MID,kvalifikation,Kvalifikation,37,26,0,4,0,0,3,3,37.0,9.94,8.946,7.416,8.24,0.0,1.0,0.703,0.0,0.108,0.829,0.0,0.101,0.9,0.6327,0.7461
+jaloliddin_masharipov__uzb,Jaloliddin Masharipov,UZB,MID,venskabskamp,Venskabskamp,57,25,0,17,7,0,17,0,50.0,12.96,4.264,2.1736000000000004,4.180000000000001,0.0,3.0,0.5,0.0,0.298,0.51,0.0,0.231,0.52,0.26,0.2652
 jamal_musiala__ger,Jamal Musiala,GER,MID,slutrunde,Slutrunde,12,8,0,1,1,0,1,0,11.0,3.8,3.6,3.0,3.0,0.0,0.2,0.727,0.0,0.083,0.833,0.0,0.053,1.0,0.727,0.833
 jamal_musiala__ger,Jamal Musiala,GER,MID,nations_league_finals,Nations League-slutrunde,4,2,0,0,2,0,0,0,2.0,2.12,0.9119999999999999,0.9119999999999999,0.96,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.95,0.95,0.95
 jamal_musiala__ger,Jamal Musiala,GER,MID,kvalifikation,Kvalifikation,16,1,0,0,8,0,0,2,8.0,5.78,1.1700000000000002,0.18000000000000002,0.2,0.0,0.0,0.125,0.0,0.0,0.154,0.0,0.0,0.9,0.1125,0.1386
@@ -1731,6 +1908,10 @@ jan_kliment__cze,Jan Kliment,CZE,FWD,slutrunde,Slutrunde,8,0,0,8,0,0,8,0,8.0,2.4
 jan_kliment__cze,Jan Kliment,CZE,FWD,kvalifikation,Kvalifikation,39,0,0,22,9,0,22,2,30.0,11.9,6.768000000000001,0.0,0.0,0.0,4.32,0.0,0.0,0.564,0.0,0.0,0.363,0.9,0.0,0.0
 jan_kliment__cze,Jan Kliment,CZE,FWD,nations_league,Nations League,22,1,0,12,6,0,12,1,16.0,5.08,3.3384,0.3744,0.48,0.0,2.36,0.062,0.0,0.545,0.112,0.0,0.465,0.78,0.0484,0.0874
 jan_kliment__cze,Jan Kliment,CZE,FWD,venskabskamp,Venskabskamp,27,1,0,16,9,0,16,1,18.0,6.1000000000000005,1.9968000000000001,0.052000000000000005,0.1,0.0,3.64,0.056,0.0,0.593,0.026,0.0,0.597,0.52,0.0291,0.0135
+jan_kuchta__cze,Jan Kuchta,CZE,FWD,slutrunde,Slutrunde,3,1,0,0,0,0,0,1,3.0,1.44,1.44,0.48,0.48,0.0,0.0,0.333,0.0,0.0,0.333,0.0,0.0,1.0,0.333,0.333
+jan_kuchta__cze,Jan Kuchta,CZE,FWD,kvalifikation,Kvalifikation,22,7,0,8,0,0,7,1,22.0,10.0,9.000000000000002,1.6920000000000002,1.8800000000000001,0.0,5.5600000000000005,0.318,0.0,0.364,0.188,0.0,0.556,0.9,0.2862,0.1692
+jan_kuchta__cze,Jan Kuchta,CZE,FWD,nations_league,Nations League,12,4,0,2,0,0,2,0,12.0,4.08,3.1824000000000003,0.6240000000000001,0.8,0.0,0.96,0.333,0.0,0.167,0.196,0.0,0.235,0.78,0.2597,0.1529
+jan_kuchta__cze,Jan Kuchta,CZE,FWD,venskabskamp,Venskabskamp,14,3,0,6,0,0,6,2,14.0,6.4,3.3280000000000003,0.8736,1.68,0.0,2.04,0.214,0.0,0.429,0.263,0.0,0.319,0.52,0.1113,0.1368
 jan_paul_van_hecke__ned,Jan Paul van Hecke,NED,DEF,nations_league_finals,Nations League-slutrunde,2,2,0,0,0,0,0,0,2.0,0.96,0.9119999999999999,0.9119999999999999,0.96,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.95,0.95,0.95
 jan_paul_van_hecke__ned,Jan Paul van Hecke,NED,DEF,kvalifikation,Kvalifikation,8,2,0,1,0,0,0,3,8.0,5.44,4.896000000000001,1.2240000000000002,1.36,0.0,0.68,0.25,0.0,0.125,0.25,0.0,0.125,0.9,0.225,0.225
 jan_paul_van_hecke__ned,Jan Paul van Hecke,NED,DEF,nations_league,Nations League,6,1,0,0,2,0,0,2,4.0,2.88,1.4976,0.3744,0.48,0.0,0.0,0.25,0.0,0.0,0.25,0.0,0.0,0.78,0.195,0.195
@@ -1738,6 +1919,9 @@ jan_paul_van_hecke__ned,Jan Paul van Hecke,NED,DEF,venskabskamp,Venskabskamp,3,2
 janner_corozo__ecu,Janner Corozo,ECU,FWD,slutrunde,Slutrunde,7,0,0,3,0,0,3,3,7.0,2.52,2.52,0.0,0.0,0.0,0.6000000000000001,0.0,0.0,0.429,0.0,0.0,0.238,1.0,0.0,0.0
 janner_corozo__ecu,Janner Corozo,ECU,FWD,kvalifikation,Kvalifikation,24,1,0,19,0,0,19,2,24.0,9.48,8.532,0.432,0.48,0.0,7.640000000000001,0.042,0.0,0.792,0.051,0.0,0.806,0.9,0.0378,0.0459
 janner_corozo__ecu,Janner Corozo,ECU,FWD,venskabskamp,Venskabskamp,23,3,0,17,0,0,17,3,23.0,9.280000000000001,4.8256000000000006,0.4576,0.88,0.0,6.5200000000000005,0.13,0.0,0.739,0.095,0.0,0.703,0.52,0.0676,0.0494
+jaouen_hadjam__alg,Jaouen Hadjam,ALG,DEF,slutrunde,Slutrunde,17,1,0,12,3,0,12,0,14.0,11.84,9.290000000000001,0.85,0.85,0.0,7.59,0.071,0.0,0.706,0.091,0.0,0.641,1.0,0.071,0.091
+jaouen_hadjam__alg,Jaouen Hadjam,ALG,DEF,kvalifikation,Kvalifikation,20,9,0,6,0,0,6,4,20.0,9.2,8.280000000000001,4.032,4.48,0.0,2.6,0.45,0.0,0.3,0.487,0.0,0.283,0.9,0.405,0.4383
+jaouen_hadjam__alg,Jaouen Hadjam,ALG,DEF,venskabskamp,Venskabskamp,15,2,0,5,2,0,5,3,13.0,8.280000000000001,3.3488,0.6032,1.1600000000000001,0.0,1.96,0.154,0.0,0.333,0.18,0.0,0.237,0.52,0.0801,0.0936
 jarell_quansah__eng,Jarell Quansah,ENG,DEF,kvalifikation,Kvalifikation,8,1,0,3,1,0,3,3,7.0,5.04,3.9240000000000004,0.6120000000000001,0.68,0.0,1.84,0.143,0.0,0.375,0.156,0.0,0.365,0.9,0.1287,0.1404
 jarell_quansah__eng,Jarell Quansah,ENG,DEF,nations_league,Nations League,2,0,0,0,0,0,0,2,2.0,0.96,0.7488,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.78,0.0,0.0
 jarell_quansah__eng,Jarell Quansah,ENG,DEF,venskabskamp,Venskabskamp,7,1,0,1,2,0,1,3,5.0,5.0,1.6432,0.52,1.0,0.0,0.68,0.2,0.0,0.143,0.316,0.0,0.136,0.52,0.104,0.1643
@@ -1779,6 +1963,9 @@ jearl_margaritha__cuw,Jearl Margaritha,CUW,FWD,venskabskamp,Venskabskamp,5,0,0,0
 jefferson_lerma__col,Jefferson Lerma,COL,MID,slutrunde,Slutrunde,21,8,0,8,0,0,8,2,21.0,5.08,5.08,2.6999999999999997,2.6999999999999997,0.0,1.8800000000000001,0.381,0.0,0.381,0.531,0.0,0.37,1.0,0.381,0.531
 jefferson_lerma__col,Jefferson Lerma,COL,MID,kvalifikation,Kvalifikation,36,21,0,8,2,0,8,1,34.0,11.58,9.846,6.732,7.48,0.0,2.06,0.618,0.0,0.222,0.684,0.0,0.178,0.9,0.5562,0.6156
 jefferson_lerma__col,Jefferson Lerma,COL,MID,venskabskamp,Venskabskamp,42,18,0,11,0,0,11,3,42.0,11.940000000000001,6.2088,3.3488,6.44,0.0,2.04,0.429,0.0,0.262,0.539,0.0,0.171,0.52,0.2231,0.2803
+jehad_thakri__ksa,Jehad Thakri,KSA,DEF,slutrunde,Slutrunde,10,0,0,8,0,0,8,1,10.0,7.65,7.65,0.0,0.0,0.0,6.12,0.0,0.0,0.8,0.0,0.0,0.8,1.0,0.0,0.0
+jehad_thakri__ksa,Jehad Thakri,KSA,DEF,kvalifikation,Kvalifikation,6,3,0,2,0,0,2,1,6.0,3.48,3.132,1.6560000000000001,1.84,0.0,1.1600000000000001,0.5,0.0,0.333,0.529,0.0,0.333,0.9,0.45,0.4761
+jehad_thakri__ksa,Jehad Thakri,KSA,DEF,venskabskamp,Venskabskamp,8,3,0,2,0,0,2,3,8.0,6.5600000000000005,3.4112,1.2272,2.3600000000000003,0.0,1.84,0.375,0.0,0.25,0.36,0.0,0.28,0.52,0.195,0.1872
 jens_castrop__kor,Jens Castrop,KOR,MID,venskabskamp,Venskabskamp,10,3,0,0,1,0,0,2,9.0,7.92,3.64,1.2272,2.3600000000000003,0.0,0.0,0.333,0.0,0.0,0.337,0.0,0.0,0.52,0.1732,0.1752
 jens_petter_hauge__nor,Jens Petter Hauge,NOR,MID,kvalifikation,Kvalifikation,27,3,0,14,0,0,14,5,27.0,9.16,8.244000000000002,0.54,0.6000000000000001,0.0,6.4,0.111,0.0,0.519,0.066,0.0,0.699,0.9,0.0999,0.0594
 jens_petter_hauge__nor,Jens Petter Hauge,NOR,MID,nations_league,Nations League,16,0,0,6,0,0,6,6,16.0,4.48,3.4944,0.0,0.0,0.0,1.56,0.0,0.0,0.375,0.0,0.0,0.348,0.78,0.0,0.0
@@ -1837,6 +2024,10 @@ jin_gyu_kim__kor,Jin-gyu Kim,KOR,MID,venskabskamp,Venskabskamp,28,8,0,12,0,0,12,
 jin_seob_park__kor,Jin-seob Park,KOR,MID,slutrunde,Slutrunde,9,2,0,0,0,0,0,3,9.0,3.96,3.96,1.36,1.36,0.0,0.0,0.222,0.0,0.0,0.343,0.0,0.0,1.0,0.222,0.343
 jin_seob_park__kor,Jin-seob Park,KOR,MID,kvalifikation,Kvalifikation,16,0,0,8,2,0,8,4,14.0,7.24,5.652,0.0,0.0,0.0,3.84,0.0,0.0,0.5,0.0,0.0,0.53,0.9,0.0,0.0
 jin_seob_park__kor,Jin-seob Park,KOR,MID,venskabskamp,Venskabskamp,11,3,0,0,0,0,0,5,11.0,8.24,4.284800000000001,1.1856,2.2800000000000002,0.0,0.0,0.273,0.0,0.0,0.277,0.0,0.0,0.52,0.142,0.144
+jindrich_stanek__cze,Jindrich Stanek,CZE,GK,slutrunde,Slutrunde,3,3,0,0,0,0,0,0,3.0,1.44,1.44,1.44,1.44,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,1.0,1.0
+jindrich_stanek__cze,Jindrich Stanek,CZE,GK,kvalifikation,Kvalifikation,24,4,0,3,6,0,3,11,18.0,10.4,5.904000000000001,1.368,1.52,0.0,1.2000000000000002,0.222,0.0,0.125,0.232,0.0,0.115,0.9,0.1998,0.2088
+jindrich_stanek__cze,Jindrich Stanek,CZE,GK,nations_league,Nations League,12,1,0,0,6,0,0,4,6.0,4.08,0.9360000000000002,0.15600000000000003,0.2,0.0,0.0,0.167,0.0,0.0,0.167,0.0,0.0,0.78,0.1303,0.1303
+jindrich_stanek__cze,Jindrich Stanek,CZE,GK,venskabskamp,Venskabskamp,15,5,0,5,0,0,5,5,15.0,6.6000000000000005,3.4320000000000004,0.7904,1.52,0.0,1.6,0.333,0.0,0.333,0.23,0.0,0.242,0.52,0.1732,0.1196
 jiovany_ramos__pan,Jiovany Ramos,PAN,DEF,slutrunde,Slutrunde,17,0,0,13,4,0,13,0,13.0,7.16,5.24,0.0,0.0,0.0,5.24,0.0,0.0,0.765,0.0,0.0,0.732,1.0,0.0,0.0
 jiovany_ramos__pan,Jiovany Ramos,PAN,DEF,nations_league_finals,Nations League-slutrunde,10,1,0,4,0,0,4,2,10.0,3.84,3.6479999999999997,0.304,0.32,0.0,1.6,0.1,0.0,0.4,0.083,0.0,0.417,0.95,0.095,0.0789
 jiovany_ramos__pan,Jiovany Ramos,PAN,DEF,kvalifikation,Kvalifikation,30,2,0,17,2,0,17,8,28.0,10.200000000000001,8.316,1.2240000000000002,1.36,0.0,5.6000000000000005,0.071,0.0,0.567,0.147,0.0,0.549,0.9,0.0639,0.1323
@@ -1854,6 +2045,11 @@ joaquin_seys__bel,Joaquin Seys,BEL,DEF,venskabskamp,Venskabskamp,4,0,0,0,0,0,0,1
 joe_bell__nzl,Joe Bell,NZL,MID,slutrunde,Slutrunde,4,0,0,4,0,0,4,0,4.0,1.92,1.92,0.0,0.0,0.0,1.92,0.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0
 joe_bell__nzl,Joe Bell,NZL,MID,kvalifikation,Kvalifikation,11,6,0,3,0,0,3,0,11.0,3.6,3.24,1.836,2.04,0.0,0.88,0.545,0.0,0.273,0.567,0.0,0.244,0.9,0.4905,0.5103
 joe_bell__nzl,Joe Bell,NZL,MID,venskabskamp,Venskabskamp,35,21,0,9,0,0,9,2,35.0,15.48,8.0496,4.711200000000001,9.06,0.0,3.84,0.6,0.0,0.257,0.585,0.0,0.248,0.52,0.312,0.3042
+joe_scally__usa,Joe Scally,USA,DEF,slutrunde,Slutrunde,18,3,0,11,0,0,11,4,18.0,7.92,7.92,1.44,1.44,0.0,5.680000000000001,0.167,0.0,0.611,0.182,0.0,0.717,1.0,0.167,0.182
+joe_scally__usa,Joe Scally,USA,DEF,nations_league_finals,Nations League-slutrunde,10,6,0,0,0,0,0,2,10.0,3.84,3.6479999999999997,2.432,2.56,0.0,0.0,0.6,0.0,0.0,0.667,0.0,0.0,0.95,0.57,0.6337
+joe_scally__usa,Joe Scally,USA,DEF,kvalifikation,Kvalifikation,1,0,0,0,0,0,0,1,1.0,0.2,0.18000000000000002,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.9,0.0,0.0
+joe_scally__usa,Joe Scally,USA,DEF,nations_league,Nations League,4,1,0,0,0,0,0,3,4.0,0.8,0.6240000000000001,0.15600000000000003,0.2,0.0,0.0,0.25,0.0,0.0,0.25,0.0,0.0,0.78,0.195,0.195
+joe_scally__usa,Joe Scally,USA,DEF,venskabskamp,Venskabskamp,32,8,0,13,0,0,13,5,32.0,16.12,8.3824,1.8719999999999999,3.6,0.0,6.28,0.25,0.0,0.406,0.223,0.0,0.39,0.52,0.13,0.116
 joel_ord_ez__ecu,Joel Ordonez,ECU,DEF,slutrunde,Slutrunde,4,0,0,0,0,0,0,4,4.0,1.92,1.92,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0
 joel_ord_ez__ecu,Joel Ordonez,ECU,DEF,kvalifikation,Kvalifikation,18,8,0,5,0,0,5,5,18.0,8.28,7.452000000000001,3.9960000000000004,4.44,0.0,1.76,0.444,0.0,0.278,0.536,0.0,0.213,0.9,0.3996,0.4824
 joel_ord_ez__ecu,Joel Ordonez,ECU,DEF,venskabskamp,Venskabskamp,14,8,0,1,0,0,1,5,14.0,8.040000000000001,4.1808000000000005,2.7872000000000003,5.36,0.0,1.0,0.571,0.0,0.071,0.667,0.0,0.124,0.52,0.2969,0.3468
@@ -1896,6 +2092,8 @@ johny_placide__hai,Johny Placide,HAI,GK,kvalifikation,Kvalifikation,43,28,0,14,0
 johny_placide__hai,Johny Placide,HAI,GK,nations_league,Nations League,24,19,0,3,0,0,3,2,24.0,6.16,4.8048,3.588,4.6,0.0,0.88,0.792,0.0,0.125,0.747,0.0,0.143,0.78,0.6178,0.5827
 johny_placide__hai,Johny Placide,HAI,GK,venskabskamp,Venskabskamp,28,13,0,13,2,0,13,0,26.0,7.36,2.8704,1.612,3.1,0.0,2.42,0.5,0.0,0.464,0.562,0.0,0.329,0.52,0.26,0.2922
 johny_placide__hai,Johny Placide,HAI,GK,ungdom_slutrunde,Ungdomsslutrunde,9,6,0,1,0,0,1,2,9.0,0.9,0.31499999999999995,0.20999999999999996,0.6000000000000001,0.0,0.1,0.667,0.0,0.111,0.667,0.0,0.111,0.35,0.2334,0.2334
+jonas_adjetey__gha,Jonas Adjetey,GHA,DEF,kvalifikation,Kvalifikation,12,3,0,3,0,0,3,4,12.0,6.5600000000000005,5.904,1.8360000000000003,2.04,0.0,1.44,0.25,0.0,0.25,0.311,0.0,0.22,0.9,0.225,0.2799
+jonas_adjetey__gha,Jonas Adjetey,GHA,DEF,venskabskamp,Venskabskamp,8,5,0,3,0,0,3,0,8.0,6.16,3.2032000000000003,2.184,4.2,0.0,1.96,0.625,0.0,0.375,0.682,0.0,0.318,0.52,0.325,0.3546
 jonas_urbig__ger,Jonas Urbig,GER,GK,venskabskamp,Venskabskamp,1,0,0,0,0,0,0,1,1.0,1.0,0.52,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.52,0.0,0.0
 jonathan_david__can,Jonathan David,CAN,FWD,slutrunde,Slutrunde,26,14,0,9,0,0,9,0,26.0,8.88,8.88,5.82,5.82,0.0,2.2800000000000002,0.538,0.0,0.346,0.655,0.0,0.257,1.0,0.538,0.655
 jonathan_david__can,Jonathan David,CAN,FWD,nations_league_finals,Nations League-slutrunde,9,9,0,0,0,0,0,0,9.0,3.52,3.344,3.344,3.52,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.95,0.95,0.95
@@ -1950,6 +2148,7 @@ jorrel_hato__ned,Jorrel Hato,NED,DEF,nations_league_finals,Nations League-slutru
 jorrel_hato__ned,Jorrel Hato,NED,DEF,kvalifikation,Kvalifikation,10,0,0,7,0,0,7,2,10.0,6.08,5.472000000000001,0.0,0.0,0.0,4.760000000000001,0.0,0.0,0.7,0.0,0.0,0.783,0.9,0.0,0.0
 jorrel_hato__ned,Jorrel Hato,NED,DEF,nations_league,Nations League,6,2,0,0,0,0,0,2,6.0,2.88,2.2464,0.7488,0.96,0.0,0.0,0.333,0.0,0.0,0.333,0.0,0.0,0.78,0.2597,0.2597
 jorrel_hato__ned,Jorrel Hato,NED,DEF,venskabskamp,Venskabskamp,7,0,0,4,0,0,4,1,7.0,4.44,2.3088,0.0,0.0,0.0,1.6,0.0,0.0,0.571,0.0,0.0,0.36,0.52,0.0,0.0
+jose_canale__par,Jose Canale,PAR,DEF,venskabskamp,Venskabskamp,3,0,0,0,0,0,0,1,3.0,2.84,1.4768000000000001,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.52,0.0,0.0
 jos_cordoba__pan,Jose Cordoba,PAN,DEF,slutrunde,Slutrunde,14,5,0,6,0,0,6,1,14.0,6.5600000000000005,6.5600000000000005,2.6,2.6,0.0,1.92,0.357,0.0,0.429,0.396,0.0,0.293,1.0,0.357,0.396
 jos_cordoba__pan,Jose Cordoba,PAN,DEF,nations_league_finals,Nations League-slutrunde,10,8,0,2,0,0,2,0,10.0,3.84,3.6479999999999997,3.04,3.2,0.0,0.64,0.8,0.0,0.2,0.833,0.0,0.167,0.95,0.76,0.7913
 jos_cordoba__pan,Jose Cordoba,PAN,DEF,kvalifikation,Kvalifikation,13,5,0,1,3,0,0,4,10.0,7.0,4.464,2.2680000000000002,2.52,0.0,0.68,0.5,0.0,0.077,0.508,0.0,0.097,0.9,0.45,0.4572
@@ -2113,6 +2312,11 @@ justin_bijlow__ned,Justin Bijlow,NED,GK,nations_league_finals,Nations League-slu
 justin_bijlow__ned,Justin Bijlow,NED,GK,kvalifikation,Kvalifikation,23,6,0,7,8,0,7,2,15.0,9.16,5.292000000000001,1.08,1.2000000000000002,0.0,4.04,0.4,0.0,0.304,0.204,0.0,0.441,0.9,0.36,0.1836
 justin_bijlow__ned,Justin Bijlow,NED,GK,nations_league,Nations League,12,0,0,6,6,0,6,0,6.0,4.08,1.8096,0.0,0.0,0.0,2.32,0.0,0.0,0.5,0.0,0.0,0.569,0.78,0.0,0.0
 justin_bijlow__ned,Justin Bijlow,NED,GK,venskabskamp,Venskabskamp,8,0,0,0,4,0,0,4,4.0,3.84,1.456,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.52,0.0,0.0
+justin_kluivert__ned,Justin Kluivert,NED,MID,slutrunde,Slutrunde,15,0,0,15,0,0,15,0,15.0,4.68,4.68,0.0,0.0,0.0,4.68,0.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0
+justin_kluivert__ned,Justin Kluivert,NED,MID,nations_league_finals,Nations League-slutrunde,6,2,0,4,0,0,4,0,6.0,1.8,1.71,0.9119999999999999,0.96,0.0,0.8400000000000001,0.333,0.0,0.667,0.533,0.0,0.467,0.95,0.3164,0.5063
+justin_kluivert__ned,Justin Kluivert,NED,MID,kvalifikation,Kvalifikation,34,3,0,20,6,0,20,2,28.0,10.26,7.722000000000001,1.8360000000000003,2.04,0.0,4.3,0.107,0.0,0.588,0.238,0.0,0.419,0.9,0.0963,0.2142
+justin_kluivert__ned,Justin Kluivert,NED,MID,nations_league,Nations League,22,1,0,16,0,0,16,5,22.0,5.08,3.9624000000000006,0.3744,0.48,0.0,2.58,0.045,0.0,0.727,0.094,0.0,0.508,0.78,0.0351,0.0733
+justin_kluivert__ned,Justin Kluivert,NED,MID,venskabskamp,Venskabskamp,19,0,0,13,2,0,13,1,17.0,5.94,2.132,0.0,0.0,0.0,2.8,0.0,0.0,0.684,0.0,0.0,0.471,0.52,0.0,0.0
 j_rgen_strand_larsen__nor,Jørgen Strand Larsen,NOR,FWD,kvalifikation,Kvalifikation,26,2,0,9,4,0,9,4,22.0,9.06,7.272000000000001,0.5760000000000001,0.64,0.0,2.36,0.091,0.0,0.346,0.079,0.0,0.26,0.9,0.0819,0.0711
 j_rgen_strand_larsen__nor,Jørgen Strand Larsen,NOR,FWD,nations_league,Nations League,13,1,0,4,0,0,4,1,13.0,4.18,3.2604,0.07800000000000001,0.1,0.0,0.8,0.077,0.0,0.308,0.024,0.0,0.191,0.78,0.0601,0.0187
 j_rgen_strand_larsen__nor,Jørgen Strand Larsen,NOR,FWD,venskabskamp,Venskabskamp,17,7,0,5,1,0,5,1,16.0,7.54,3.5672,2.0384,3.92,0.0,0.9,0.438,0.0,0.294,0.571,0.0,0.119,0.52,0.2278,0.2969
@@ -2146,6 +2350,9 @@ kamal_miller__can,Kamal Miller,CAN,DEF,venskabskamp,Venskabskamp,24,11,0,5,0,0,4
 kamaldeen_sulemana__gha,Kamaldeen Sulemana,GHA,FWD,slutrunde,Slutrunde,12,3,0,3,3,0,3,1,9.0,2.7600000000000002,1.8,0.6000000000000001,0.6000000000000001,0.0,0.6000000000000001,0.333,0.0,0.25,0.333,0.0,0.217,1.0,0.333,0.333
 kamaldeen_sulemana__gha,Kamaldeen Sulemana,GHA,FWD,kvalifikation,Kvalifikation,34,9,0,10,6,0,10,4,28.0,11.6,8.352,1.9800000000000002,2.2,0.0,2.52,0.321,0.0,0.294,0.237,0.0,0.217,0.9,0.2889,0.2133
 kamaldeen_sulemana__gha,Kamaldeen Sulemana,GHA,FWD,venskabskamp,Venskabskamp,24,4,0,14,1,0,14,0,23.0,9.88,4.9712000000000005,1.3312000000000002,2.56,0.0,4.76,0.174,0.0,0.583,0.268,0.0,0.482,0.52,0.0905,0.1394
+kamogelo_sebelebele__rsa,Kamogelo Sebelebele,RSA,DEF,slutrunde,Slutrunde,4,0,0,4,0,0,4,0,4.0,3.4,3.4,0.0,0.0,0.0,3.4,0.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0
+kamogelo_sebelebele__rsa,Kamogelo Sebelebele,RSA,DEF,kvalifikation,Kvalifikation,4,0,0,2,0,0,2,0,4.0,2.72,2.4480000000000004,0.0,0.0,0.0,1.36,0.0,0.0,0.5,0.0,0.0,0.5,0.9,0.0,0.0
+kamogelo_sebelebele__rsa,Kamogelo Sebelebele,RSA,DEF,venskabskamp,Venskabskamp,4,1,0,3,0,0,3,0,4.0,3.52,1.8304,0.52,1.0,0.0,2.52,0.25,0.0,0.75,0.284,0.0,0.716,0.52,0.13,0.1477
 lee_kang_in__kor,Kang-In Lee,KOR,MID,slutrunde,Slutrunde,19,7,0,6,3,0,6,0,16.0,5.66,5.36,2.12,2.12,0.0,2.64,0.438,0.0,0.316,0.396,0.0,0.466,1.0,0.438,0.396
 lee_kang_in__kor,Kang-In Lee,KOR,MID,kvalifikation,Kvalifikation,33,14,0,13,1,0,10,2,32.0,10.14,8.694,5.454,6.06,0.0,2.5,0.438,0.0,0.394,0.627,0.0,0.247,0.9,0.3942,0.5643
 lee_kang_in__kor,Kang-In Lee,KOR,MID,venskabskamp,Venskabskamp,35,12,0,8,2,0,8,5,33.0,13.06,6.4584,2.7664000000000004,5.32,0.0,2.4,0.364,0.0,0.229,0.428,0.0,0.184,0.52,0.1893,0.2226
@@ -2159,6 +2366,8 @@ karim_hafez__egy,Karim Hafez,EGY,DEF,slutrunde,Slutrunde,40,1,0,34,0,0,34,5,40.0
 karim_hafez__egy,Karim Hafez,EGY,DEF,kvalifikation,Kvalifikation,55,2,0,46,3,0,46,4,52.0,13.700000000000001,11.88,0.18000000000000002,0.2,0.0,12.4,0.038,0.0,0.836,0.015,0.0,0.905,0.9,0.0342,0.0135
 karim_hafez__egy,Karim Hafez,EGY,DEF,venskabskamp,Venskabskamp,39,4,0,28,3,0,28,2,36.0,11.290000000000001,5.7148,0.676,1.3,0.0,8.290000000000001,0.111,0.0,0.718,0.118,0.0,0.734,0.52,0.0577,0.0614
 kees_smit__ned,Kees Smit,NED,MID,venskabskamp,Venskabskamp,2,1,0,0,0,0,0,1,2.0,1.84,0.9568000000000001,0.47840000000000005,0.92,0.0,0.0,0.5,0.0,0.0,0.5,0.0,0.0,0.52,0.26,0.26
+keeto_thermoncy__hai,Keeto Thermoncy,HAI,DEF,kvalifikation,Kvalifikation,6,0,0,0,0,0,0,5,6.0,4.08,3.6720000000000006,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.9,0.0,0.0
+keeto_thermoncy__hai,Keeto Thermoncy,HAI,DEF,venskabskamp,Venskabskamp,4,0,0,2,0,0,2,2,4.0,3.84,1.9968000000000001,0.0,0.0,0.0,1.84,0.0,0.0,0.5,0.0,0.0,0.479,0.52,0.0,0.0
 keisuke_goto__jpn,Keisuke Goto,JPN,FWD,venskabskamp,Venskabskamp,5,1,0,0,0,0,0,1,5.0,4.2,2.184,0.47840000000000005,0.92,0.0,0.0,0.2,0.0,0.0,0.219,0.0,0.0,0.52,0.104,0.1139
 keisuke_sako__jpn,Keisuke Osako,JPN,GK,slutrunde,Slutrunde,21,4,0,4,5,0,4,8,16.0,5.640000000000001,4.04,1.08,1.08,0.0,0.8,0.25,0.0,0.19,0.267,0.0,0.142,1.0,0.25,0.267
 keisuke_sako__jpn,Keisuke Osako,JPN,GK,kvalifikation,Kvalifikation,34,3,0,19,0,0,18,12,34.0,10.24,9.216000000000001,1.332,1.48,0.0,3.3200000000000003,0.088,0.0,0.559,0.145,0.0,0.324,0.9,0.0792,0.1305
@@ -2221,6 +2430,9 @@ kevin_schade__ger,Kevin Schade,GER,MID,venskabskamp,Venskabskamp,17,0,0,5,6,0,5,
 kevin_yakob__irq,Kevin Yakob,IRQ,MID,slutrunde,Slutrunde,11,0,0,7,4,0,7,0,7.0,5.95,4.67,0.0,0.0,0.0,4.67,0.0,0.0,0.636,0.0,0.0,0.785,1.0,0.0,0.0
 kevin_yakob__irq,Kevin Yakob,IRQ,MID,kvalifikation,Kvalifikation,21,2,0,10,6,0,10,2,15.0,10.88,7.776000000000001,1.2240000000000002,1.36,0.0,5.0,0.133,0.0,0.476,0.157,0.0,0.46,0.9,0.1197,0.1413
 kevin_yakob__irq,Kevin Yakob,IRQ,MID,venskabskamp,Venskabskamp,10,2,0,0,5,0,0,0,5.0,5.28,1.9136000000000002,0.52,1.0,0.0,0.0,0.4,0.0,0.0,0.272,0.0,0.0,0.52,0.208,0.1414
+khalid_al_ghannam__ksa,Khalid Al-Ghannam,KSA,MID,slutrunde,Slutrunde,24,0,0,24,0,0,24,0,24.0,12.05,12.05,0.0,0.0,0.0,12.05,0.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0
+khalid_al_ghannam__ksa,Khalid Al-Ghannam,KSA,MID,kvalifikation,Kvalifikation,22,0,0,16,0,0,16,4,22.0,9.4,8.46,0.0,0.0,0.0,7.96,0.0,0.0,0.727,0.0,0.0,0.847,0.9,0.0,0.0
+khalid_al_ghannam__ksa,Khalid Al-Ghannam,KSA,MID,venskabskamp,Venskabskamp,22,3,0,16,0,0,16,2,22.0,9.84,5.1168000000000005,1.1024,2.12,0.0,5.6000000000000005,0.136,0.0,0.727,0.215,0.0,0.569,0.52,0.0707,0.1118
 khalil_ayari__tun,Khalil Ayari,TUN,MID,venskabskamp,Venskabskamp,5,2,0,0,0,0,0,1,5.0,4.32,2.2464,0.9984000000000001,1.92,0.0,0.0,0.4,0.0,0.0,0.444,0.0,0.0,0.52,0.208,0.2309
 khozhiakbar_alizhonov__uzb,Khozhiakbar Alizhonov,UZB,DEF,slutrunde,Slutrunde,13,6,0,0,3,0,0,1,10.0,5.6000000000000005,4.640000000000001,3.0,3.0,0.0,0.0,0.6,0.0,0.0,0.647,0.0,0.0,1.0,0.6,0.647
 khozhiakbar_alizhonov__uzb,Khozhiakbar Alizhonov,UZB,DEF,kvalifikation,Kvalifikation,27,18,0,0,4,0,0,2,23.0,8.94,6.606,5.292,5.88,0.0,0.0,0.783,0.0,0.0,0.801,0.0,0.0,0.9,0.7047,0.7209
@@ -2379,6 +2591,9 @@ lionel_messi__arg,Lionel Messi,ARG,FWD,venskabskamp,Venskabskamp,110,52,0,33,13,
 lionel_mpasi_nzau__cod,Lionel Mpasi Nzau,COD,GK,slutrunde,Slutrunde,18,10,0,7,0,0,7,1,18.0,8.96,8.96,5.32,5.32,0.0,3.3200000000000003,0.556,0.0,0.389,0.594,0.0,0.371,1.0,0.556,0.594
 lionel_mpasi_nzau__cod,Lionel Mpasi Nzau,COD,GK,kvalifikation,Kvalifikation,30,10,0,2,0,0,2,18,30.0,12.88,11.592,4.86,5.4,0.0,0.96,0.333,0.0,0.067,0.419,0.0,0.075,0.9,0.2997,0.3771
 lionel_mpasi_nzau__cod,Lionel Mpasi Nzau,COD,GK,venskabskamp,Venskabskamp,15,6,0,3,0,0,3,5,15.0,6.65,3.458,1.2896,2.48,0.0,1.44,0.4,0.0,0.2,0.373,0.0,0.217,0.52,0.208,0.194
+lisandro_martinez__arg,Lisandro Martinez,ARG,DEF,slutrunde,Slutrunde,28,8,0,6,2,0,6,9,26.0,7.4,6.38,3.0,3.0,0.0,0.7000000000000001,0.308,0.0,0.214,0.47,0.0,0.095,1.0,0.308,0.47
+lisandro_martinez__arg,Lisandro Martinez,ARG,DEF,kvalifikation,Kvalifikation,35,4,0,11,12,0,11,5,23.0,11.38,5.418,1.224,1.3599999999999999,0.0,2.6,0.174,0.0,0.314,0.226,0.0,0.228,0.9,0.1566,0.2034
+lisandro_martinez__arg,Lisandro Martinez,ARG,DEF,venskabskamp,Venskabskamp,27,7,0,8,9,0,8,1,18.0,9.22,2.1112,1.3832,2.66,0.0,0.8,0.389,0.0,0.296,0.655,0.0,0.087,0.52,0.2023,0.3406
 livano_comenencia__cuw,Livano Comenencia,CUW,DEF,slutrunde,Slutrunde,3,3,0,0,0,0,0,0,3.0,2.04,2.04,2.04,2.04,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,1.0,1.0
 livano_comenencia__cuw,Livano Comenencia,CUW,DEF,kvalifikation,Kvalifikation,8,7,0,0,0,0,0,0,8.0,5.44,4.896000000000001,4.284000000000001,4.760000000000001,0.0,0.0,0.875,0.0,0.0,0.875,0.0,0.0,0.9,0.7875,0.7875
 livano_comenencia__cuw,Livano Comenencia,CUW,DEF,nations_league,Nations League,4,3,0,0,0,0,0,0,4.0,1.92,1.4976,1.1232,1.44,0.0,0.0,0.75,0.0,0.0,0.75,0.0,0.0,0.78,0.585,0.585
@@ -2422,6 +2637,10 @@ lucas_ramon_romero__par,Lucas Ramon Romero,PAR,MID,kvalifikation,Kvalifikation,1
 lucas_ramon_romero__par,Lucas Ramon Romero,PAR,MID,venskabskamp,Venskabskamp,6,1,0,0,0,0,0,4,6.0,4.5600000000000005,2.3712,0.47840000000000005,0.92,0.0,0.0,0.167,0.0,0.0,0.202,0.0,0.0,0.52,0.0868,0.105
 luciano_valente__ned,Luciano Valente,NED,MID,kvalifikation,Kvalifikation,2,0,0,0,0,0,0,1,2.0,1.36,1.2240000000000002,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.9,0.0,0.0
 luciano_valente__ned,Luciano Valente,NED,MID,venskabskamp,Venskabskamp,2,0,0,0,0,0,0,1,2.0,1.84,0.9568000000000001,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.52,0.0,0.0
+luis_chavez__mex,Luis Chavez,MEX,MID,slutrunde,Slutrunde,18,13,0,1,3,0,1,0,15.0,8.040000000000001,6.0,4.64,4.64,0.0,0.68,0.867,0.0,0.056,0.773,0.0,0.085,1.0,0.867,0.773
+luis_chavez__mex,Luis Chavez,MEX,MID,nations_league_finals,Nations League-slutrunde,10,6,0,0,0,0,0,0,10.0,3.84,3.6479999999999997,1.976,2.08,0.0,0.0,0.6,0.0,0.0,0.542,0.0,0.0,0.95,0.57,0.5149
+luis_chavez__mex,Luis Chavez,MEX,MID,nations_league,Nations League,4,3,0,1,0,0,1,0,4.0,0.8,0.6240000000000001,0.4680000000000001,0.6000000000000001,0.0,0.2,0.75,0.0,0.25,0.75,0.0,0.25,0.78,0.585,0.585
+luis_chavez__mex,Luis Chavez,MEX,MID,venskabskamp,Venskabskamp,40,11,0,9,10,0,9,3,30.0,19.89,6.541600000000001,1.976,3.8,0.0,4.0,0.367,0.0,0.225,0.302,0.0,0.201,0.52,0.1908,0.157
 luis_d_az__col,Luis Diaz,COL,FWD,slutrunde,Slutrunde,17,11,0,1,0,0,0,2,17.0,4.68,4.68,3.78,3.78,0.0,0.2,0.647,0.0,0.059,0.808,0.0,0.043,1.0,0.647,0.808
 luis_d_az__col,Luis Diaz,COL,FWD,kvalifikation,Kvalifikation,36,31,0,3,0,0,3,0,36.0,11.58,10.422,9.360000000000001,10.4,0.0,0.8800000000000001,0.861,0.0,0.083,0.898,0.0,0.076,0.9,0.7749,0.8082
 luis_d_az__col,Luis Diaz,COL,FWD,venskabskamp,Venskabskamp,37,19,0,6,4,0,6,1,33.0,11.440000000000001,5.532800000000001,4.472,8.6,0.0,1.24,0.576,0.0,0.162,0.808,0.0,0.108,0.52,0.2995,0.4202
@@ -2430,6 +2649,11 @@ luis_mejia__pan,Luis Mejia,PAN,GK,nations_league_finals,Nations League-slutrunde
 luis_mejia__pan,Luis Mejia,PAN,GK,kvalifikation,Kvalifikation,67,23,0,18,0,0,18,26,67.0,13.9,12.510000000000002,5.328,5.92,0.0,1.8,0.343,0.0,0.269,0.426,0.0,0.129,0.9,0.3087,0.3834
 luis_mejia__pan,Luis Mejia,PAN,GK,nations_league,Nations League,12,4,0,1,2,0,1,5,10.0,2.48,1.7784000000000002,0.6396000000000001,0.8200000000000001,0.0,0.1,0.4,0.0,0.083,0.36,0.0,0.04,0.78,0.312,0.2808
 luis_mejia__pan,Luis Mejia,PAN,GK,venskabskamp,Venskabskamp,99,19,0,62,8,0,62,9,91.0,18.7,7.477600000000001,1.5288000000000002,2.94,0.0,9.96,0.209,0.0,0.626,0.204,0.0,0.533,0.52,0.1087,0.1061
+luis_romo__mex,Luis Romo,MEX,MID,slutrunde,Slutrunde,24,9,0,12,0,0,12,3,24.0,9.24,9.24,3.36,3.36,0.0,5.28,0.375,0.0,0.5,0.364,0.0,0.571,1.0,0.375,0.364
+luis_romo__mex,Luis Romo,MEX,MID,nations_league_finals,Nations League-slutrunde,12,4,0,0,0,0,0,1,12.0,4.14,3.933,1.52,1.6,0.0,0.0,0.333,0.0,0.0,0.386,0.0,0.0,0.95,0.3164,0.3667
+luis_romo__mex,Luis Romo,MEX,MID,kvalifikation,Kvalifikation,14,4,0,0,0,0,0,4,14.0,2.8000000000000003,2.5200000000000005,0.7200000000000001,0.8,0.0,0.0,0.286,0.0,0.0,0.286,0.0,0.0,0.9,0.2574,0.2574
+luis_romo__mex,Luis Romo,MEX,MID,nations_league,Nations League,8,4,0,1,0,0,1,3,8.0,1.2000000000000002,0.9360000000000002,0.546,0.7000000000000001,0.0,0.2,0.5,0.0,0.125,0.583,0.0,0.167,0.78,0.39,0.4547
+luis_romo__mex,Luis Romo,MEX,MID,venskabskamp,Venskabskamp,53,19,0,18,1,0,18,5,52.0,21.69,10.8368,3.9572000000000003,7.61,0.0,8.06,0.365,0.0,0.34,0.365,0.0,0.372,0.52,0.1898,0.1898
 luis_suarez_charris__col,Luis Suarez Charris,COL,FWD,slutrunde,Slutrunde,13,0,0,13,0,0,13,0,13.0,4.28,4.28,0.0,0.0,0.0,4.28,0.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0
 luis_suarez_charris__col,Luis Suarez Charris,COL,FWD,kvalifikation,Kvalifikation,34,1,0,21,4,0,21,4,30.0,11.38,9.09,0.6120000000000001,0.68,0.0,6.58,0.033,0.0,0.618,0.067,0.0,0.578,0.9,0.0297,0.0603
 luis_suarez_charris__col,Luis Suarez Charris,COL,FWD,venskabskamp,Venskabskamp,23,5,0,13,2,0,13,2,21.0,10.040000000000001,4.888,1.7680000000000002,3.4000000000000004,0.0,3.64,0.238,0.0,0.565,0.362,0.0,0.363,0.52,0.1238,0.1882
@@ -2596,6 +2820,11 @@ marko_stamenic__nzl,Marko Stamenic,NZL,MID,venskabskamp,Venskabskamp,33,30,0,2,0
 marquinhos__bra,Marquinhos,BRA,DEF,slutrunde,Slutrunde,41,22,0,7,0,0,7,9,41.0,6.82,6.82,4.72,4.72,0.0,0.7000000000000001,0.537,0.0,0.171,0.692,0.0,0.103,1.0,0.537,0.692
 marquinhos__bra,Marquinhos,BRA,DEF,kvalifikation,Kvalifikation,53,44,0,1,2,0,0,4,51.0,12.98,11.502,10.08,11.2,0.0,0.2,0.863,0.0,0.019,0.876,0.0,0.015,0.9,0.7767,0.7884
 marquinhos__bra,Marquinhos,BRA,DEF,venskabskamp,Venskabskamp,62,28,0,9,8,0,9,11,54.0,14.100000000000001,6.0840000000000005,3.588,6.9,0.0,2.72,0.519,0.0,0.145,0.59,0.0,0.193,0.52,0.2699,0.3068
+marten_de_roon__ned,Marten de Roon,NED,MID,slutrunde,Slutrunde,15,6,0,1,6,0,1,0,9.0,4.68,1.8,1.2000000000000002,1.2000000000000002,0.0,0.2,0.667,0.0,0.067,0.667,0.0,0.043,1.0,0.667,0.667
+marten_de_roon__ned,Marten de Roon,NED,MID,nations_league_finals,Nations League-slutrunde,6,2,0,2,0,0,2,1,6.0,1.8,1.71,0.19,0.2,0.0,0.96,0.333,0.0,0.333,0.111,0.0,0.533,0.95,0.3164,0.1055
+marten_de_roon__ned,Marten de Roon,NED,MID,kvalifikation,Kvalifikation,41,9,0,17,0,0,17,9,41.0,10.96,9.864,1.2960000000000003,1.44,0.0,6.54,0.22,0.0,0.415,0.131,0.0,0.597,0.9,0.198,0.1179
+marten_de_roon__ned,Marten de Roon,NED,MID,nations_league,Nations League,22,7,0,13,0,0,13,1,22.0,5.08,3.9624000000000006,0.6240000000000001,0.8,0.0,3.98,0.318,0.0,0.591,0.157,0.0,0.783,0.78,0.248,0.1225
+marten_de_roon__ned,Marten de Roon,NED,MID,venskabskamp,Venskabskamp,24,3,0,5,3,0,5,7,21.0,6.44,2.7976,0.20800000000000002,0.4,0.0,2.14,0.143,0.0,0.208,0.074,0.0,0.332,0.52,0.0744,0.0385
 martial_godo__civ,Martial Godo,CIV,FWD,venskabskamp,Venskabskamp,2,1,0,0,0,0,0,1,2.0,1.84,0.9568000000000001,0.47840000000000005,0.92,0.0,0.0,0.5,0.0,0.0,0.5,0.0,0.0,0.52,0.26,0.26
 martin_baturina__cro,Martin Baturina,CRO,MID,slutrunde,Slutrunde,3,0,0,0,0,0,0,2,3.0,1.44,1.44,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0
 martin_baturina__cro,Martin Baturina,CRO,MID,nations_league_finals,Nations League-slutrunde,2,1,0,0,0,0,0,0,2.0,0.96,0.9119999999999999,0.45599999999999996,0.48,0.0,0.0,0.5,0.0,0.0,0.5,0.0,0.0,0.95,0.475,0.475
@@ -2649,6 +2878,8 @@ matej_kovar__cze,Matej Kovar,CZE,GK,slutrunde,Slutrunde,3,0,0,0,0,0,0,2,3.0,1.44
 matej_kovar__cze,Matej Kovar,CZE,GK,kvalifikation,Kvalifikation,14,9,0,0,0,0,0,5,14.0,8.16,7.344000000000001,5.580000000000001,6.2,0.0,0.0,0.643,0.0,0.0,0.76,0.0,0.0,0.9,0.5787,0.684
 matej_kovar__cze,Matej Kovar,CZE,GK,nations_league,Nations League,6,6,0,0,0,0,0,0,6.0,2.88,2.2464,2.2464,2.88,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.78,0.78,0.78
 matej_kovar__cze,Matej Kovar,CZE,GK,venskabskamp,Venskabskamp,9,4,0,0,0,0,0,5,9.0,5.16,2.6832000000000003,1.2896,2.48,0.0,0.0,0.444,0.0,0.0,0.481,0.0,0.0,0.52,0.2309,0.2501
+mateo_chavez__mex,Mateo Chavez,MEX,DEF,slutrunde,Slutrunde,6,2,0,0,0,0,0,3,6.0,4.08,4.08,1.36,1.36,0.0,0.0,0.333,0.0,0.0,0.333,0.0,0.0,1.0,0.333,0.333
+mateo_chavez__mex,Mateo Chavez,MEX,DEF,venskabskamp,Venskabskamp,16,5,0,5,0,0,5,4,16.0,12.83,6.671600000000001,1.9344000000000001,3.72,0.0,4.39,0.312,0.0,0.312,0.29,0.0,0.342,0.52,0.1622,0.1508
 mateo_kovacic__cro,Mateo Kovacic,CRO,MID,slutrunde,Slutrunde,28,16,0,0,0,0,0,4,28.0,5.04,5.04,3.84,3.84,0.0,0.0,0.571,0.0,0.0,0.762,0.0,0.0,1.0,0.571,0.762
 mateo_kovacic__cro,Mateo Kovacic,CRO,MID,nations_league_finals,Nations League-slutrunde,4,4,0,0,0,0,0,0,4.0,1.6,1.52,1.52,1.6,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.95,0.95,0.95
 mateo_kovacic__cro,Mateo Kovacic,CRO,MID,kvalifikation,Kvalifikation,64,30,0,4,16,0,3,6,48.0,13.260000000000002,6.7860000000000005,4.158,4.62,0.0,0.5,0.625,0.0,0.062,0.613,0.0,0.038,0.9,0.5625,0.5517
@@ -2662,6 +2893,9 @@ matheus_nunes__por,Matheus Nunes,POR,MID,nations_league_finals,Nations League-sl
 matheus_nunes__por,Matheus Nunes,POR,MID,kvalifikation,Kvalifikation,21,1,0,10,2,0,10,4,19.0,8.040000000000001,6.660000000000001,0.18000000000000002,0.2,0.0,3.68,0.053,0.0,0.476,0.027,0.0,0.458,0.9,0.0477,0.0243
 matheus_nunes__por,Matheus Nunes,POR,MID,nations_league,Nations League,12,0,0,5,2,0,5,1,10.0,4.08,2.4336,0.0,0.0,0.0,2.12,0.0,0.0,0.417,0.0,0.0,0.52,0.78,0.0,0.0
 matheus_nunes__por,Matheus Nunes,POR,MID,venskabskamp,Venskabskamp,10,3,0,2,0,0,2,2,10.0,5.16,2.6832000000000003,0.7488000000000001,1.44,0.0,1.32,0.3,0.0,0.2,0.279,0.0,0.256,0.52,0.156,0.1451
+mathew_leckie__aus,Mathew Leckie,AUS,MID,slutrunde,Slutrunde,36,17,0,8,5,0,8,2,31.0,5.1000000000000005,3.72,2.1,2.1,0.0,1.02,0.548,0.0,0.222,0.565,0.0,0.2,1.0,0.548,0.565
+mathew_leckie__aus,Mathew Leckie,AUS,MID,kvalifikation,Kvalifikation,63,29,0,23,6,0,23,4,57.0,13.44,10.386000000000001,3.5820000000000003,3.98,0.0,6.58,0.509,0.0,0.365,0.345,0.0,0.49,0.9,0.4581,0.3105
+mathew_leckie__aus,Mathew Leckie,AUS,MID,venskabskamp,Venskabskamp,49,21,0,7,12,0,7,0,37.0,13.42,4.035200000000001,1.7264000000000002,3.3200000000000003,0.0,2.54,0.568,0.0,0.143,0.428,0.0,0.189,0.52,0.2954,0.2226
 mathew_ryan__aus,Mathew Ryan,AUS,GK,slutrunde,Slutrunde,36,31,0,3,0,0,3,2,36.0,5.1000000000000005,5.1000000000000005,4.6000000000000005,4.6000000000000005,0.0,0.30000000000000004,0.861,0.0,0.083,0.902,0.0,0.059,1.0,0.861,0.902
 mathew_ryan__aus,Mathew Ryan,AUS,GK,kvalifikation,Kvalifikation,67,45,0,10,3,0,10,9,64.0,13.84,12.186000000000002,8.586,9.540000000000001,0.0,1.86,0.703,0.0,0.149,0.705,0.0,0.134,0.9,0.6327,0.6345
 mathew_ryan__aus,Mathew Ryan,AUS,GK,venskabskamp,Venskabskamp,51,27,0,10,1,0,10,12,50.0,12.72,6.5624,3.64,7.0,0.0,2.58,0.54,0.0,0.196,0.555,0.0,0.203,0.52,0.2808,0.2886
@@ -2678,6 +2912,11 @@ matias_galarza_fonda__par,Matias Galarza Fonda,PAR,MID,venskabskamp,Venskabskamp
 mat_as_vi_a__uru,Matias Viña,URU,DEF,slutrunde,Slutrunde,14,10,0,0,0,0,0,2,14.0,4.48,4.48,3.4,3.4,0.0,0.0,0.714,0.0,0.0,0.759,0.0,0.0,1.0,0.714,0.759
 mat_as_vi_a__uru,Matias Viña,URU,DEF,kvalifikation,Kvalifikation,36,15,0,3,12,0,3,4,24.0,11.38,6.156000000000001,3.2040000000000006,3.56,0.0,1.48,0.625,0.0,0.083,0.52,0.0,0.13,0.9,0.5625,0.468
 mat_as_vi_a__uru,Matias Viña,URU,DEF,venskabskamp,Venskabskamp,25,8,0,5,1,0,5,5,24.0,8.8,4.3264000000000005,0.9984000000000001,1.9200000000000002,0.0,2.48,0.333,0.0,0.2,0.231,0.0,0.282,0.52,0.1732,0.1201
+mats_wieffer__ned,Mats Wieffer,NED,MID,slutrunde,Slutrunde,6,0,0,5,1,0,5,0,5.0,2.88,2.4,0.0,0.0,0.0,2.4,0.0,0.0,0.833,0.0,0.0,0.833,1.0,0.0,0.0
+mats_wieffer__ned,Mats Wieffer,NED,MID,nations_league_finals,Nations League-slutrunde,4,2,0,0,0,0,0,1,4.0,1.6,1.52,0.608,0.64,0.0,0.0,0.5,0.0,0.0,0.4,0.0,0.0,0.95,0.475,0.38
+mats_wieffer__ned,Mats Wieffer,NED,MID,kvalifikation,Kvalifikation,16,4,0,4,2,0,4,4,14.0,7.760000000000001,5.760000000000001,1.044,1.1600000000000001,0.0,2.72,0.286,0.0,0.25,0.181,0.0,0.351,0.9,0.2574,0.1629
+mats_wieffer__ned,Mats Wieffer,NED,MID,nations_league,Nations League,6,1,0,0,2,0,0,1,4.0,2.88,1.4976,0.3744,0.48,0.0,0.0,0.25,0.0,0.0,0.25,0.0,0.0,0.78,0.195,0.195
+mats_wieffer__ned,Mats Wieffer,NED,MID,venskabskamp,Venskabskamp,7,2,0,2,2,0,2,0,5.0,4.44,1.8096,0.6864,1.32,0.0,1.84,0.4,0.0,0.286,0.379,0.0,0.414,0.52,0.208,0.1971
 matt_freese__usa,Matt Freese,USA,GK,slutrunde,Slutrunde,6,6,0,0,0,0,0,0,6.0,4.08,4.08,4.08,4.08,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,1.0,1.0
 matt_freese__usa,Matt Freese,USA,GK,nations_league_finals,Nations League-slutrunde,2,0,0,2,0,0,2,0,2.0,0.96,0.9119999999999999,0.0,0.0,0.0,0.96,0.0,0.0,1.0,0.0,0.0,1.0,0.95,0.0,0.0
 matt_freese__usa,Matt Freese,USA,GK,venskabskamp,Venskabskamp,15,9,0,0,0,0,0,6,15.0,10.34,5.3768,3.4736000000000002,6.680000000000001,0.0,0.0,0.6,0.0,0.0,0.646,0.0,0.0,0.52,0.312,0.3359
@@ -2701,6 +2940,7 @@ matz_sels__bel,Matz Sels,BEL,GK,nations_league_finals,Nations League-slutrunde,2
 matz_sels__bel,Matz Sels,BEL,GK,kvalifikation,Kvalifikation,38,6,0,3,0,0,3,29,38.0,10.58,9.522000000000002,2.7,3.0,0.0,0.4,0.158,0.0,0.079,0.284,0.0,0.038,0.9,0.1422,0.2556
 matz_sels__bel,Matz Sels,BEL,GK,nations_league,Nations League,18,1,0,5,2,0,5,10,16.0,5.4399999999999995,3.4944,0.3744,0.48,0.0,0.7000000000000001,0.062,0.0,0.278,0.107,0.0,0.129,0.78,0.0484,0.0835
 matz_sels__bel,Matz Sels,BEL,GK,venskabskamp,Venskabskamp,21,5,0,2,0,0,2,13,21.0,5.66,2.9432,1.0816000000000001,2.08,0.0,0.30000000000000004,0.238,0.0,0.095,0.367,0.0,0.053,0.52,0.1238,0.1908
+mauricio_magalhaes_prado__par,Mauricio Magalhaes Prado,PAR,MID,venskabskamp,Venskabskamp,3,1,0,0,0,0,0,0,3.0,2.84,1.4768000000000001,0.52,1.0,0.0,0.0,0.333,0.0,0.0,0.352,0.0,0.0,0.52,0.1732,0.183
 max_arfsten__usa,Max Arfsten,USA,DEF,slutrunde,Slutrunde,6,5,0,0,0,0,0,1,6.0,4.08,4.08,3.4000000000000004,3.4000000000000004,0.0,0.0,0.833,0.0,0.0,0.833,0.0,0.0,1.0,0.833,0.833
 max_arfsten__usa,Max Arfsten,USA,DEF,nations_league_finals,Nations League-slutrunde,2,1,0,0,0,0,0,1,2.0,0.96,0.9119999999999999,0.45599999999999996,0.48,0.0,0.0,0.5,0.0,0.0,0.5,0.0,0.0,0.95,0.475,0.475
 max_arfsten__usa,Max Arfsten,USA,DEF,venskabskamp,Venskabskamp,14,7,0,0,0,0,0,0,14.0,10.24,5.324800000000001,2.3712,4.5600000000000005,0.0,0.0,0.5,0.0,0.0,0.445,0.0,0.0,0.52,0.26,0.2314
@@ -2742,7 +2982,11 @@ mehdi_ghayedi__irn,Mehdi Ghayedi,IRN,MID,venskabskamp,Venskabskamp,22,1,0,14,3,0
 mehdi_taremi__irn,Mehdi Taremi,IRN,FWD,slutrunde,Slutrunde,25,18,0,2,0,0,0,0,25.0,7.1000000000000005,7.1000000000000005,4.44,4.44,0.0,0.42000000000000004,0.72,0.0,0.08,0.625,0.0,0.059,1.0,0.72,0.625
 mehdi_taremi__irn,Mehdi Taremi,IRN,FWD,kvalifikation,Kvalifikation,52,40,0,4,2,0,4,2,50.0,12.14,10.656,9.144,10.16,0.0,0.7000000000000001,0.8,0.0,0.077,0.858,0.0,0.058,0.9,0.72,0.7722
 mehdi_taremi__irn,Mehdi Taremi,IRN,FWD,venskabskamp,Venskabskamp,46,33,0,5,1,0,5,3,45.0,11.940000000000001,5.855200000000001,5.1272,9.860000000000001,0.0,0.6000000000000001,0.733,0.0,0.109,0.876,0.0,0.05,0.52,0.3812,0.4555
+mehdi_torabi__irn,Mehdi Torabi,IRN,MID,slutrunde,Slutrunde,25,2,0,6,0,0,6,8,25.0,7.1000000000000005,7.1000000000000005,0.42000000000000004,0.42000000000000004,0.0,3.3600000000000003,0.08,0.0,0.24,0.059,0.0,0.473,1.0,0.08,0.059
+mehdi_torabi__irn,Mehdi Torabi,IRN,MID,kvalifikation,Kvalifikation,52,6,0,12,3,0,12,21,49.0,12.14,9.918000000000001,1.08,1.2,0.0,4.16,0.122,0.0,0.231,0.109,0.0,0.343,0.9,0.1098,0.0981
+mehdi_torabi__irn,Mehdi Torabi,IRN,MID,venskabskamp,Venskabskamp,46,12,0,14,3,0,14,5,43.0,11.940000000000001,5.772,0.8424,1.62,0.0,6.36,0.279,0.0,0.304,0.146,0.0,0.533,0.52,0.1451,0.0759
 melker_ellborg__swe,Melker Ellborg,SWE,GK,kvalifikation,Kvalifikation,2,0,0,0,0,0,0,2,2.0,1.84,1.6560000000000001,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.9,0.0,0.0
+melvin_feycal_mastil__alg,Melvin Feycal Mastil,ALG,GK,venskabskamp,Venskabskamp,3,1,0,0,0,0,0,2,3.0,2.84,1.4768000000000001,0.47840000000000005,0.92,0.0,0.0,0.333,0.0,0.0,0.324,0.0,0.0,0.52,0.1732,0.1685
 memphis_depay__ned,Memphis Depay,NED,FWD,slutrunde,Slutrunde,22,14,0,0,0,0,0,3,22.0,5.38,5.38,4.38,4.38,0.0,0.0,0.636,0.0,0.0,0.814,0.0,0.0,1.0,0.636,0.814
 memphis_depay__ned,Memphis Depay,NED,FWD,nations_league_finals,Nations League-slutrunde,6,4,0,0,2,0,0,0,4.0,1.8,1.1019999999999999,1.1019999999999999,1.16,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.95,0.95,0.95
 memphis_depay__ned,Memphis Depay,NED,FWD,kvalifikation,Kvalifikation,56,34,0,4,7,0,4,6,49.0,12.46,9.792000000000002,7.524000000000001,8.360000000000001,0.0,0.8400000000000001,0.694,0.0,0.071,0.768,0.0,0.067,0.9,0.6246,0.6912
@@ -2786,6 +3030,9 @@ michael_olise__fra,Michael Olise,FRA,FWD,nations_league_finals,Nations League-sl
 michael_olise__fra,Michael Olise,FRA,FWD,kvalifikation,Kvalifikation,6,5,0,0,0,0,0,1,6.0,4.08,3.6720000000000006,3.0600000000000005,3.4000000000000004,0.0,0.0,0.833,0.0,0.0,0.833,0.0,0.0,0.9,0.7497,0.7497
 michael_olise__fra,Michael Olise,FRA,FWD,nations_league,Nations League,6,3,0,0,0,0,0,2,6.0,2.88,2.2464,1.1232,1.44,0.0,0.0,0.5,0.0,0.0,0.5,0.0,0.0,0.78,0.39,0.39
 michael_olise__fra,Michael Olise,FRA,FWD,venskabskamp,Venskabskamp,3,2,0,0,0,0,0,0,3.0,2.84,1.4768000000000001,0.9984000000000001,1.92,0.0,0.0,0.667,0.0,0.0,0.676,0.0,0.0,0.52,0.3468,0.3515
+michael_svoboda__aut,Michael Svoboda,AUT,DEF,kvalifikation,Kvalifikation,8,0,0,4,4,0,4,0,4.0,5.44,2.4480000000000004,0.0,0.0,0.0,2.72,0.0,0.0,0.5,0.0,0.0,0.5,0.9,0.0,0.0
+michael_svoboda__aut,Michael Svoboda,AUT,DEF,nations_league,Nations League,6,0,0,0,2,0,0,2,4.0,2.88,1.4976,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.78,0.0,0.0
+michael_svoboda__aut,Michael Svoboda,AUT,DEF,venskabskamp,Venskabskamp,3,0,0,0,0,0,0,1,3.0,2.84,1.4768000000000001,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.52,0.0,0.0
 michael_woud__nzl,Michael Woud,NZL,GK,slutrunde,Slutrunde,4,0,0,4,0,0,4,0,4.0,1.92,1.92,0.0,0.0,0.0,1.92,0.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0
 michael_woud__nzl,Michael Woud,NZL,GK,kvalifikation,Kvalifikation,13,0,0,13,0,0,13,0,13.0,3.8,3.42,0.0,0.0,0.0,3.8,0.0,0.0,1.0,0.0,0.0,1.0,0.9,0.0,0.0
 michael_woud__nzl,Michael Woud,NZL,GK,oevrig_turnering,Øvrig turnering,3,1,0,0,0,0,0,2,3.0,0.30000000000000004,0.186,0.062,0.1,0.0,0.0,0.333,0.0,0.0,0.333,0.0,0.0,0.62,0.2065,0.2065
@@ -2840,6 +3087,7 @@ kim_min_jae__kor,Min-jae Kim,KOR,DEF,venskabskamp,Venskabskamp,57,30,0,11,9,0,9,
 miro_muheim__sui,Miro Muheim,SUI,DEF,kvalifikation,Kvalifikation,6,0,0,0,0,0,0,3,6.0,4.08,3.6720000000000006,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.9,0.0,0.0
 miro_muheim__sui,Miro Muheim,SUI,DEF,nations_league,Nations League,2,1,0,0,0,0,0,1,2.0,0.96,0.7488,0.3744,0.48,0.0,0.0,0.5,0.0,0.0,0.5,0.0,0.0,0.78,0.39,0.39
 miro_muheim__sui,Miro Muheim,SUI,DEF,venskabskamp,Venskabskamp,8,1,0,0,0,0,0,2,8.0,6.16,3.2032000000000003,0.2496,0.48,0.0,0.0,0.125,0.0,0.0,0.078,0.0,0.0,0.52,0.065,0.0406
+mladen_jurkas__bih,Mladen Jurkas,BIH,GK,venskabskamp,Venskabskamp,1,0,0,0,0,0,0,1,1.0,1.0,0.52,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.52,0.0,0.0
 mohamed_abdelmonem__egy,Mohamed Abdelmonem,EGY,DEF,slutrunde,Slutrunde,27,11,0,0,10,0,0,4,17.0,12.21,3.8800000000000003,2.68,2.68,0.0,0.0,0.647,0.0,0.0,0.691,0.0,0.0,1.0,0.647,0.691
 mohamed_abdelmonem__egy,Mohamed Abdelmonem,EGY,DEF,kvalifikation,Kvalifikation,24,13,0,5,5,0,5,1,19.0,10.0,6.372,4.284,4.76,0.0,2.12,0.684,0.0,0.208,0.672,0.0,0.212,0.9,0.6156,0.6048
 mohamed_abdelmonem__egy,Mohamed Abdelmonem,EGY,DEF,venskabskamp,Venskabskamp,18,7,0,3,4,0,3,1,14.0,9.09,3.4736000000000002,1.4560000000000002,2.8,0.0,0.8400000000000001,0.5,0.0,0.167,0.419,0.0,0.092,0.52,0.26,0.2179
@@ -2850,6 +3098,9 @@ mohamed_alaa__egy,Mohamed Alaa,EGY,GK,venskabskamp,Venskabskamp,4,0,0,0,0,0,0,4,
 mohamed_amine_ben_hamida__tun,Mohamed Amine Ben Hamida,TUN,DEF,slutrunde,Slutrunde,24,6,0,13,2,0,13,2,22.0,9.370000000000001,8.97,1.2000000000000002,1.2000000000000002,0.0,6.04,0.273,0.0,0.542,0.134,0.0,0.645,1.0,0.273,0.134
 mohamed_amine_ben_hamida__tun,Mohamed Amine Ben Hamida,TUN,DEF,kvalifikation,Kvalifikation,24,2,0,20,0,0,20,2,24.0,10.0,9.0,0.864,0.96,0.0,7.68,0.083,0.0,0.833,0.096,0.0,0.768,0.9,0.0747,0.0864
 mohamed_amine_ben_hamida__tun,Mohamed Amine Ben Hamida,TUN,DEF,venskabskamp,Venskabskamp,24,2,0,18,0,0,18,2,24.0,12.13,6.307600000000001,0.9984000000000001,1.92,0.0,6.930000000000001,0.083,0.0,0.75,0.158,0.0,0.571,0.52,0.0432,0.0822
+mohamed_amine_tougai__alg,Mohamed Amine Tougai,ALG,DEF,slutrunde,Slutrunde,32,6,0,14,0,0,14,10,32.0,14.84,14.84,2.62,2.62,0.0,6.5,0.188,0.0,0.438,0.177,0.0,0.438,1.0,0.188,0.177
+mohamed_amine_tougai__alg,Mohamed Amine Tougai,ALG,DEF,kvalifikation,Kvalifikation,24,13,0,5,2,0,5,4,22.0,10.0,7.776000000000001,5.292000000000001,5.88,0.0,1.8399999999999999,0.591,0.0,0.208,0.681,0.0,0.184,0.9,0.5319,0.6129
+mohamed_amine_tougai__alg,Mohamed Amine Tougai,ALG,DEF,venskabskamp,Venskabskamp,22,6,0,5,2,0,5,7,20.0,9.68,4.3264000000000005,0.8944000000000001,1.72,0.0,3.4000000000000004,0.3,0.0,0.227,0.207,0.0,0.351,0.52,0.156,0.1076
 mohamed_amoura__alg,Mohamed Amoura,ALG,FWD,slutrunde,Slutrunde,32,5,0,20,2,0,19,4,30.0,14.84,13.48,3.7199999999999998,3.7199999999999998,0.0,7.99,0.167,0.0,0.625,0.276,0.0,0.538,1.0,0.167,0.276
 mohamed_amoura__alg,Mohamed Amoura,ALG,FWD,kvalifikation,Kvalifikation,28,11,0,3,1,0,3,2,27.0,10.8,9.288,5.184,5.76,0.0,0.88,0.407,0.0,0.107,0.558,0.0,0.081,0.9,0.3663,0.5022
 mohamed_amoura__alg,Mohamed Amoura,ALG,FWD,venskabskamp,Venskabskamp,22,5,0,1,3,0,1,1,19.0,9.68,3.9728000000000003,1.6848,3.24,0.0,0.2,0.263,0.0,0.045,0.424,0.0,0.021,0.52,0.1368,0.2205
@@ -2894,6 +3145,12 @@ mohammad_khalife__irn,Mohammad Khalife,IRN,GK,venskabskamp,Venskabskamp,7,0,0,5,
 mohammad_mohebi__irn,Mohammad Mohebi,IRN,FWD,slutrunde,Slutrunde,16,5,0,4,0,0,4,1,16.0,6.2,6.2,2.3200000000000003,2.3200000000000003,0.0,1.28,0.312,0.0,0.25,0.374,0.0,0.206,1.0,0.312,0.374
 mohammad_mohebi__irn,Mohammad Mohebi,IRN,FWD,kvalifikation,Kvalifikation,33,12,0,17,4,0,16,0,29.0,10.24,7.488,3.5820000000000003,3.98,0.0,4.34,0.414,0.0,0.515,0.478,0.0,0.424,0.9,0.3726,0.4302
 mohammad_mohebi__irn,Mohammad Mohebi,IRN,FWD,venskabskamp,Venskabskamp,22,11,0,9,1,0,9,0,21.0,9.540000000000001,4.607200000000001,3.2448,6.24,0.0,2.3000000000000003,0.524,0.0,0.409,0.704,0.0,0.241,0.52,0.2725,0.3661
+mohammed_abu_al_shamat__ksa,Mohammed Abu Al-Shamat,KSA,DEF,slutrunde,Slutrunde,19,2,0,12,0,0,12,3,19.0,11.05,11.05,1.05,1.05,0.0,5.92,0.105,0.0,0.632,0.095,0.0,0.536,1.0,0.105,0.095
+mohammed_abu_al_shamat__ksa,Mohammed Abu Al-Shamat,KSA,DEF,kvalifikation,Kvalifikation,18,0,0,18,0,0,18,0,18.0,8.6,7.74,0.0,0.0,0.0,8.6,0.0,0.0,1.0,0.0,0.0,1.0,0.9,0.0,0.0
+mohammed_abu_al_shamat__ksa,Mohammed Abu Al-Shamat,KSA,DEF,venskabskamp,Venskabskamp,14,1,0,12,0,0,12,0,14.0,8.24,4.284800000000001,0.52,1.0,0.0,6.24,0.071,0.0,0.857,0.121,0.0,0.757,0.52,0.0369,0.0629
+mohammed_al_owais__ksa,Mohammed Al-Owais,KSA,GK,slutrunde,Slutrunde,58,13,0,35,5,0,35,5,53.0,15.75,15.25,2.74,2.74,0.0,11.63,0.245,0.0,0.603,0.18,0.0,0.738,1.0,0.245,0.18
+mohammed_al_owais__ksa,Mohammed Al-Owais,KSA,GK,kvalifikation,Kvalifikation,55,24,0,27,0,0,27,4,55.0,13.5,12.15,5.220000000000001,5.8,0.0,7.3,0.436,0.0,0.491,0.43,0.0,0.541,0.9,0.3924,0.387
+mohammed_al_owais__ksa,Mohammed Al-Owais,KSA,GK,venskabskamp,Venskabskamp,53,22,0,24,0,0,24,6,53.0,12.940000000000001,6.728800000000001,2.7976,5.38,0.0,6.640000000000001,0.415,0.0,0.453,0.416,0.0,0.513,0.52,0.2158,0.2163
 mohammed_al_rubaie_al_yami__ksa,Mohammed Al-Rubaie Al-Yami,KSA,GK,slutrunde,Slutrunde,39,1,0,20,0,0,20,18,39.0,13.85,13.85,0.2,0.2,0.0,10.47,0.026,0.0,0.513,0.014,0.0,0.756,1.0,0.026,0.014
 mohammed_al_rubaie_al_yami__ksa,Mohammed Al-Rubaie Al-Yami,KSA,GK,kvalifikation,Kvalifikation,36,2,0,18,0,0,18,16,36.0,11.6,10.440000000000001,0.36000000000000004,0.4,0.0,5.7,0.056,0.0,0.5,0.034,0.0,0.491,0.9,0.0504,0.0306
 mohammed_al_rubaie_al_yami__ksa,Mohammed Al-Rubaie Al-Yami,KSA,GK,venskabskamp,Venskabskamp,32,3,0,6,0,0,6,23,32.0,9.040000000000001,4.7008,0.20800000000000002,0.4,0.0,0.7000000000000001,0.094,0.0,0.188,0.044,0.0,0.077,0.52,0.0489,0.0229
@@ -2950,6 +3207,9 @@ oufa_shobeir__egy,Mostafa Oufa Shobeir,EGY,GK,slutrunde,Slutrunde,10,2,0,3,0,0,2
 oufa_shobeir__egy,Mostafa Oufa Shobeir,EGY,GK,kvalifikation,Kvalifikation,14,1,0,0,0,0,0,12,14.0,7.52,6.768000000000001,0.432,0.48,0.0,0.0,0.071,0.0,0.0,0.064,0.0,0.0,0.9,0.0639,0.0576
 oufa_shobeir__egy,Mostafa Oufa Shobeir,EGY,GK,venskabskamp,Venskabskamp,7,4,0,0,0,0,0,1,7.0,6.05,3.1460000000000004,1.9968000000000001,3.84,0.0,0.0,0.571,0.0,0.0,0.635,0.0,0.0,0.52,0.2969,0.3302
 mostafa_ziko__egy,Mostafa Ziko,EGY,MID,venskabskamp,Venskabskamp,2,1,0,0,0,0,0,0,2.0,2.0,1.04,0.52,1.0,0.0,0.0,0.5,0.0,0.0,0.5,0.0,0.0,0.52,0.26,0.26
+moteb_al_harbi__ksa,Moteb Al-Harbi,KSA,DEF,slutrunde,Slutrunde,27,2,0,18,6,0,18,0,21.0,12.65,7.720000000000001,0.4,0.4,0.0,7.12,0.095,0.0,0.667,0.052,0.0,0.563,1.0,0.095,0.052
+moteb_al_harbi__ksa,Moteb Al-Harbi,KSA,DEF,kvalifikation,Kvalifikation,22,3,0,11,3,0,11,4,19.0,9.4,7.452,1.476,1.6400000000000001,0.0,4.4,0.158,0.0,0.5,0.198,0.0,0.468,0.9,0.1422,0.1782
+moteb_al_harbi__ksa,Moteb Al-Harbi,KSA,DEF,venskabskamp,Venskabskamp,22,4,0,11,5,0,11,1,17.0,9.84,3.5984000000000003,1.3312000000000002,2.56,0.0,3.16,0.235,0.0,0.5,0.37,0.0,0.321,0.52,0.1222,0.1924
 mousa_tamari__jor,Mousa Tamari,JOR,MID,slutrunde,Slutrunde,24,9,0,14,0,0,13,1,24.0,8.67,8.67,2.22,2.22,0.0,6.13,0.375,0.0,0.583,0.256,0.0,0.707,1.0,0.375,0.256
 mousa_tamari__jor,Mousa Tamari,JOR,MID,kvalifikation,Kvalifikation,34,22,0,4,3,0,4,1,31.0,9.74,7.470000000000001,6.048,6.72,0.0,0.5,0.71,0.0,0.118,0.81,0.0,0.051,0.9,0.639,0.729
 mousa_tamari__jor,Mousa Tamari,JOR,MID,venskabskamp,Venskabskamp,68,32,0,25,0,0,25,2,68.0,16.1,8.372,5.1272,9.860000000000001,0.0,3.66,0.471,0.0,0.368,0.612,0.0,0.227,0.52,0.2449,0.3182
@@ -2976,6 +3236,9 @@ musab_al_juwayr__ksa,Musab Al-Juwayr,KSA,MID,kvalifikation,Kvalifikation,18,11,0
 musab_al_juwayr__ksa,Musab Al-Juwayr,KSA,MID,venskabskamp,Venskabskamp,14,5,0,6,0,0,6,0,14.0,8.24,4.284800000000001,2.0592,3.96,0.0,1.6800000000000002,0.357,0.0,0.429,0.481,0.0,0.204,0.52,0.1856,0.2501
 mustafa_eskihella__tur,Mustafa Eskihellac,TUR,DEF,kvalifikation,Kvalifikation,8,0,0,7,0,0,7,0,8.0,5.92,5.328000000000001,0.0,0.0,0.0,5.24,0.0,0.0,0.875,0.0,0.0,0.885,0.9,0.0,0.0
 mustafa_eskihella__tur,Mustafa Eskihellac,TUR,DEF,venskabskamp,Venskabskamp,3,0,0,0,1,0,0,0,2.0,2.3600000000000003,0.7072,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.52,0.0,0.0
+mustafa_saadoon__irq,Mustafa Saadoon,IRQ,DEF,slutrunde,Slutrunde,11,5,0,5,0,0,4,0,11.0,5.95,5.95,2.9699999999999998,2.9699999999999998,0.0,2.13,0.455,0.0,0.455,0.499,0.0,0.358,1.0,0.455,0.499
+mustafa_saadoon__irq,Mustafa Saadoon,IRQ,DEF,kvalifikation,Kvalifikation,21,3,0,7,0,0,6,7,21.0,10.88,9.792,1.296,1.44,0.0,4.2,0.143,0.0,0.333,0.132,0.0,0.386,0.9,0.1287,0.1188
+mustafa_saadoon__irq,Mustafa Saadoon,IRQ,DEF,venskabskamp,Venskabskamp,7,2,0,3,0,0,3,1,7.0,4.32,2.2464,0.6864,1.32,0.0,1.6800000000000002,0.286,0.0,0.429,0.306,0.0,0.389,0.52,0.1487,0.1591
 n_golo_kant__fra,N'Golo Kante,FRA,MID,slutrunde,Slutrunde,31,20,0,1,7,0,0,2,24.0,6.48,5.08,4.68,4.68,0.0,0.1,0.833,0.0,0.032,0.921,0.0,0.015,1.0,0.833,0.921
 n_golo_kant__fra,N'Golo Kante,FRA,MID,nations_league_finals,Nations League-slutrunde,6,0,0,4,2,0,4,0,4.0,2.52,2.014,0.0,0.0,0.0,2.12,0.0,0.0,0.667,0.0,0.0,0.841,0.95,0.0,0.0
 n_golo_kant__fra,N'Golo Kante,FRA,MID,kvalifikation,Kvalifikation,42,11,0,12,10,0,12,7,32.0,9.700000000000001,7.650000000000001,1.6020000000000003,1.78,0.0,5.04,0.344,0.0,0.286,0.209,0.0,0.52,0.9,0.3096,0.1881
@@ -2984,6 +3247,9 @@ n_golo_kant__fra,N'Golo Kante,FRA,MID,venskabskamp,Venskabskamp,34,16,0,8,0,0,8,
 nabil_dunga_emad__egy,Nabil 'Dunga' Emad,EGY,MID,slutrunde,Slutrunde,31,1,0,24,3,0,24,2,28.0,12.61,10.23,0.1,0.1,0.0,9.83,0.036,0.0,0.774,0.01,0.0,0.78,1.0,0.036,0.01
 nabil_dunga_emad__egy,Nabil 'Dunga' Emad,EGY,MID,kvalifikation,Kvalifikation,37,2,0,28,0,0,28,4,37.0,11.9,10.71,0.522,0.58,0.0,8.120000000000001,0.054,0.0,0.757,0.049,0.0,0.682,0.9,0.0486,0.0441
 nabil_dunga_emad__egy,Nabil 'Dunga' Emad,EGY,MID,venskabskamp,Venskabskamp,23,2,0,13,3,0,13,2,20.0,9.69,4.726800000000001,0.4056,0.78,0.0,5.43,0.1,0.0,0.565,0.086,0.0,0.56,0.52,0.052,0.0447
+nabil_bentaleb__alg,Nabil Bentaleb,ALG,MID,slutrunde,Slutrunde,50,12,0,36,0,0,36,1,50.0,16.64,16.64,1.6400000000000001,1.6400000000000001,0.0,14.58,0.24,0.0,0.72,0.099,0.0,0.876,1.0,0.24,0.099
+nabil_bentaleb__alg,Nabil Bentaleb,ALG,MID,kvalifikation,Kvalifikation,62,18,0,19,17,0,19,3,45.0,14.4,9.180000000000001,3.6360000000000006,4.04,0.0,3.66,0.4,0.0,0.306,0.396,0.0,0.254,0.9,0.36,0.3564
+nabil_bentaleb__alg,Nabil Bentaleb,ALG,MID,venskabskamp,Venskabskamp,52,18,0,18,12,0,18,0,40.0,12.88,5.855200000000001,2.1632000000000002,4.16,0.0,5.92,0.45,0.0,0.346,0.369,0.0,0.46,0.52,0.234,0.1919
 nadiem_amiri__ger,Nadiem Amiri,GER,MID,slutrunde,Slutrunde,12,0,0,12,0,0,12,0,12.0,3.8,3.8,0.0,0.0,0.0,3.8,0.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0
 nadiem_amiri__ger,Nadiem Amiri,GER,MID,nations_league_finals,Nations League-slutrunde,4,1,0,0,2,0,0,0,2.0,2.12,0.9119999999999999,0.45599999999999996,0.48,0.0,0.0,0.5,0.0,0.0,0.5,0.0,0.0,0.95,0.475,0.475
 nadiem_amiri__ger,Nadiem Amiri,GER,MID,kvalifikation,Kvalifikation,19,0,0,10,2,0,10,3,17.0,6.08,4.248,0.0,0.0,0.0,1.7000000000000002,0.0,0.0,0.526,0.0,0.0,0.28,0.9,0.0,0.0
@@ -3115,6 +3381,9 @@ nikola_vla_i__cro,Nikola Vlasic,CRO,MID,kvalifikation,Kvalifikation,41,11,0,14,0
 nikola_vla_i__cro,Nikola Vlasic,CRO,MID,nations_league,Nations League,22,8,0,4,2,0,4,1,20.0,5.08,3.2136000000000005,0.7020000000000002,0.9,0.0,1.16,0.4,0.0,0.182,0.218,0.0,0.228,0.78,0.312,0.17
 nikola_vla_i__cro,Nikola Vlasic,CRO,MID,venskabskamp,Venskabskamp,23,6,0,7,0,0,7,4,23.0,6.28,3.2656,0.9568000000000001,1.84,0.0,0.7000000000000001,0.261,0.0,0.304,0.293,0.0,0.111,0.52,0.1357,0.1524
 nikolas_polster__aut,Nikolas Polster,AUT,GK,kvalifikation,Kvalifikation,7,0,0,0,2,0,0,5,5.0,4.760000000000001,3.0600000000000005,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.9,0.0,0.0
+nilson_angulo__ecu,Nilson Angulo,ECU,FWD,slutrunde,Slutrunde,7,0,0,7,0,0,7,0,7.0,2.52,2.52,0.0,0.0,0.0,2.52,0.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0
+nilson_angulo__ecu,Nilson Angulo,ECU,FWD,kvalifikation,Kvalifikation,24,4,0,20,0,0,20,0,24.0,9.48,8.532,2.2680000000000002,2.52,0.0,6.96,0.167,0.0,0.833,0.266,0.0,0.734,0.9,0.1503,0.2394
+nilson_angulo__ecu,Nilson Angulo,ECU,FWD,venskabskamp,Venskabskamp,24,4,0,12,2,0,12,1,22.0,10.280000000000001,4.3888,1.3312000000000002,2.56,0.0,3.16,0.182,0.0,0.5,0.303,0.0,0.307,0.52,0.0946,0.1576
 nishan_velupillay__aus,Nishan Velupillay,AUS,FWD,kvalifikation,Kvalifikation,8,2,0,0,3,0,0,0,5.0,4.04,2.16,0.864,0.96,0.0,0.0,0.4,0.0,0.0,0.4,0.0,0.0,0.9,0.36,0.36
 nishan_velupillay__aus,Nishan Velupillay,AUS,FWD,venskabskamp,Venskabskamp,10,0,0,2,4,0,2,2,6.0,7.92,2.704,0.0,0.0,0.0,1.36,0.0,0.0,0.2,0.0,0.0,0.172,0.52,0.0,0.0
 nizar_al_rashdan__jor,Nizar Al-Rashdan,JOR,MID,slutrunde,Slutrunde,17,10,0,5,0,0,5,2,17.0,7.97,7.97,5.68,5.68,0.0,1.12,0.588,0.0,0.294,0.713,0.0,0.141,1.0,0.588,0.713
@@ -3143,6 +3412,9 @@ noni_madueke__eng,Noni Madueke,ENG,FWD,venskabskamp,Venskabskamp,5,1,0,2,1,0,2,0
 noor_al_rawabdeh__jor,Noor Al-Rawabdeh,JOR,MID,slutrunde,Slutrunde,20,9,0,6,3,0,6,1,17.0,8.27,7.31,2.18,2.18,0.0,4.93,0.529,0.0,0.3,0.298,0.0,0.596,1.0,0.529,0.298
 noor_al_rawabdeh__jor,Noor Al-Rawabdeh,JOR,MID,kvalifikation,Kvalifikation,29,15,0,1,4,0,1,5,25.0,9.24,6.588,4.554,5.06,0.0,0.2,0.6,0.0,0.034,0.691,0.0,0.022,0.9,0.54,0.6219
 noor_al_rawabdeh__jor,Noor Al-Rawabdeh,JOR,MID,venskabskamp,Venskabskamp,41,25,0,11,0,0,11,2,41.0,13.4,6.968000000000001,4.0456,7.78,0.0,3.64,0.61,0.0,0.268,0.581,0.0,0.272,0.52,0.3172,0.3021
+noureddin_bani_attiah__jor,Noureddin Bani Attiah,JOR,GK,slutrunde,Slutrunde,6,1,0,0,0,0,0,5,6.0,4.93,4.93,0.85,0.85,0.0,0.0,0.167,0.0,0.0,0.172,0.0,0.0,1.0,0.167,0.172
+noureddin_bani_attiah__jor,Noureddin Bani Attiah,JOR,GK,kvalifikation,Kvalifikation,13,0,0,4,0,0,4,9,13.0,6.28,5.652,0.0,0.0,0.0,1.92,0.0,0.0,0.308,0.0,0.0,0.306,0.9,0.0,0.0
+noureddin_bani_attiah__jor,Noureddin Bani Attiah,JOR,GK,venskabskamp,Venskabskamp,13,1,0,4,0,0,4,8,13.0,8.08,4.2016,0.3536,0.68,0.0,2.8,0.077,0.0,0.308,0.084,0.0,0.347,0.52,0.04,0.0437
 noussair_mazraoui__mar,Noussair Mazraoui,MAR,DEF,slutrunde,Slutrunde,53,14,0,21,15,0,19,1,38.0,21.42,15.48,7.37,7.37,0.0,7.8100000000000005,0.368,0.0,0.396,0.476,0.0,0.365,1.0,0.368,0.476
 noussair_mazraoui__mar,Noussair Mazraoui,MAR,DEF,kvalifikation,Kvalifikation,38,11,0,17,8,0,17,1,30.0,11.22,7.974,3.096,3.44,0.0,4.84,0.367,0.0,0.447,0.388,0.0,0.431,0.9,0.3303,0.3492
 noussair_mazraoui__mar,Noussair Mazraoui,MAR,DEF,venskabskamp,Venskabskamp,38,14,0,15,4,0,15,3,34.0,12.26,5.751200000000001,2.7768,5.34,0.0,4.3,0.412,0.0,0.395,0.483,0.0,0.351,0.52,0.2142,0.2512
@@ -3176,6 +3448,7 @@ ollie_watkins__eng,Ollie Watkins,ENG,FWD,slutrunde,Slutrunde,19,0,0,12,0,0,12,4,
 ollie_watkins__eng,Ollie Watkins,ENG,FWD,kvalifikation,Kvalifikation,26,1,0,14,2,0,14,5,24.0,9.06,7.290000000000001,0.28800000000000003,0.32,0.0,5.08,0.042,0.0,0.538,0.04,0.0,0.561,0.9,0.0378,0.036
 ollie_watkins__eng,Ollie Watkins,ENG,FWD,nations_league,Nations League,12,1,0,6,2,0,6,1,10.0,4.08,2.4336,0.3744,0.48,0.0,1.2000000000000002,0.1,0.0,0.5,0.154,0.0,0.294,0.78,0.078,0.1201
 ollie_watkins__eng,Ollie Watkins,ENG,FWD,venskabskamp,Venskabskamp,15,6,0,4,0,0,4,1,15.0,6.98,3.6296000000000004,1.4768000000000001,2.84,0.0,2.8400000000000003,0.4,0.0,0.267,0.407,0.0,0.407,0.52,0.208,0.2116
+olwethu_makhanya__rsa,Olwethu Makhanya,RSA,DEF,venskabskamp,Venskabskamp,1,1,0,0,0,0,0,0,1.0,1.0,0.52,0.52,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.52,0.52,0.52
 omar_alderete__par,Omar Alderete,PAR,DEF,slutrunde,Slutrunde,12,4,0,5,0,0,5,2,12.0,2.84,2.84,1.64,1.64,0.0,0.6000000000000001,0.333,0.0,0.417,0.577,0.0,0.211,1.0,0.333,0.577
 omar_alderete__par,Omar Alderete,PAR,DEF,kvalifikation,Kvalifikation,36,20,0,3,2,0,2,9,34.0,11.38,9.882000000000001,7.146000000000001,7.94,0.0,0.88,0.588,0.0,0.083,0.723,0.0,0.077,0.9,0.5292,0.6507
 omar_alderete__par,Omar Alderete,PAR,DEF,venskabskamp,Venskabskamp,30,9,0,16,2,0,16,3,28.0,10.02,5.002400000000001,2.8392,5.46,0.0,3.08,0.321,0.0,0.533,0.568,0.0,0.307,0.52,0.1669,0.2954
@@ -3230,6 +3503,9 @@ ousmane_demb_l__fra,Ousmane Dembele,FRA,FWD,venskabskamp,Venskabskamp,30,10,0,4,
 ousmane_diomande__civ,Ousmane Diomande,CIV,DEF,slutrunde,Slutrunde,12,3,0,3,0,0,3,5,12.0,6.49,6.49,1.49,1.49,0.0,0.96,0.25,0.0,0.25,0.23,0.0,0.148,1.0,0.25,0.23
 ousmane_diomande__civ,Ousmane Diomande,CIV,DEF,kvalifikation,Kvalifikation,17,3,0,4,4,0,4,6,13.0,8.48,5.5440000000000005,1.1520000000000001,1.28,0.0,2.3200000000000003,0.231,0.0,0.235,0.208,0.0,0.274,0.9,0.2079,0.1872
 ousmane_diomande__civ,Ousmane Diomande,CIV,DEF,venskabskamp,Venskabskamp,11,5,0,2,0,0,2,2,11.0,6.84,3.5568000000000004,1.3312000000000002,2.56,0.0,1.36,0.455,0.0,0.182,0.374,0.0,0.199,0.52,0.2366,0.1945
+oussama_benbout__alg,Oussama Benbout,ALG,GK,slutrunde,Slutrunde,17,0,0,12,0,0,12,5,17.0,11.84,11.84,0.0,0.0,0.0,7.59,0.0,0.0,0.706,0.0,0.0,0.641,1.0,0.0,0.0
+oussama_benbout__alg,Oussama Benbout,ALG,GK,kvalifikation,Kvalifikation,18,0,0,5,0,0,5,13,18.0,8.8,7.920000000000001,0.0,0.0,0.0,2.2399999999999998,0.0,0.0,0.278,0.0,0.0,0.255,0.9,0.0,0.0
+oussama_benbout__alg,Oussama Benbout,ALG,GK,venskabskamp,Venskabskamp,15,2,0,4,0,0,4,9,15.0,8.280000000000001,4.3056,0.6032,1.1600000000000001,0.0,2.8400000000000003,0.133,0.0,0.267,0.14,0.0,0.343,0.52,0.0692,0.0728
 oussama_targhalline__mar,Oussama Targhalline,MAR,MID,slutrunde,Slutrunde,20,0,0,13,0,0,11,3,20.0,15.64,15.64,0.0,0.0,0.0,9.69,0.0,0.0,0.65,0.0,0.0,0.62,1.0,0.0,0.0
 oussama_targhalline__mar,Oussama Targhalline,MAR,MID,kvalifikation,Kvalifikation,13,1,0,2,0,0,2,7,13.0,6.84,6.156000000000001,0.432,0.48,0.0,1.36,0.077,0.0,0.154,0.07,0.0,0.199,0.9,0.0693,0.063
 oussama_targhalline__mar,Oussama Targhalline,MAR,MID,venskabskamp,Venskabskamp,8,0,0,0,0,0,0,5,8.0,6.24,3.2448,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.52,0.0,0.0
@@ -3299,6 +3575,7 @@ pau_cubars__esp,Pau Cubarsi,ESP,DEF,venskabskamp,Venskabskamp,7,2,0,1,0,0,1,2,7.
 paul_izzo__aus,Paul Izzo,AUS,GK,kvalifikation,Kvalifikation,12,0,0,0,0,0,0,12,12.0,5.96,5.364,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.9,0.0,0.0
 paul_izzo__aus,Paul Izzo,AUS,GK,venskabskamp,Venskabskamp,10,4,0,0,0,0,0,6,10.0,7.92,4.1184,1.4144,2.72,0.0,0.0,0.4,0.0,0.0,0.343,0.0,0.0,0.52,0.208,0.1784
 paul_okon_engstler__aus,Paul Okon-Engstler,AUS,MID,venskabskamp,Venskabskamp,6,2,0,0,0,0,0,0,6.0,5.2,2.704,0.8736,1.6800000000000002,0.0,0.0,0.333,0.0,0.0,0.323,0.0,0.0,0.52,0.1732,0.168
+paul_wanner__aut,Paul Wanner,AUT,MID,venskabskamp,Venskabskamp,3,1,0,0,0,0,0,0,3.0,2.84,1.4768000000000001,0.47840000000000005,0.92,0.0,0.0,0.333,0.0,0.0,0.324,0.0,0.0,0.52,0.1732,0.1685
 pavel_sulc__cze,Pavel Sulc,CZE,MID,slutrunde,Slutrunde,3,1,0,0,0,0,0,2,3.0,1.44,1.44,0.48,0.48,0.0,0.0,0.333,0.0,0.0,0.333,0.0,0.0,1.0,0.333,0.333
 pavel_sulc__cze,Pavel Sulc,CZE,MID,kvalifikation,Kvalifikation,10,9,0,0,1,0,0,0,9.0,6.880000000000001,5.580000000000001,5.580000000000001,6.2,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.9,0.9,0.9
 pavel_sulc__cze,Pavel Sulc,CZE,MID,nations_league,Nations League,6,5,0,0,0,0,0,0,6.0,2.88,2.2464,1.872,2.4,0.0,0.0,0.833,0.0,0.0,0.833,0.0,0.0,0.78,0.6497,0.6497
@@ -3374,6 +3651,9 @@ rafael_santos_borre__col,Rafael Santos Borre,COL,FWD,venskabskamp,Venskabskamp,3
 rafik_belghali__alg,Rafik Belghali,ALG,DEF,slutrunde,Slutrunde,9,4,0,4,0,0,4,0,9.0,7.4799999999999995,7.4799999999999995,3.4,3.4,0.0,3.23,0.444,0.0,0.444,0.455,0.0,0.432,1.0,0.444,0.455
 rafik_belghali__alg,Rafik Belghali,ALG,DEF,kvalifikation,Kvalifikation,2,2,0,0,0,0,0,0,2.0,1.36,1.2240000000000002,1.2240000000000002,1.36,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.9,0.9,0.9
 rafik_belghali__alg,Rafik Belghali,ALG,DEF,venskabskamp,Venskabskamp,5,2,0,0,0,0,0,0,5.0,4.2,2.184,0.8320000000000001,1.6,0.0,0.0,0.4,0.0,0.0,0.381,0.0,0.0,0.52,0.208,0.1981
+rajaei_ayed__jor,Rajaei Ayed,JOR,MID,slutrunde,Slutrunde,28,8,0,7,0,0,7,5,28.0,9.07,9.07,3.28,3.28,0.0,0.7000000000000001,0.286,0.0,0.25,0.362,0.0,0.077,1.0,0.286,0.362
+rajaei_ayed__jor,Rajaei Ayed,JOR,MID,kvalifikation,Kvalifikation,45,14,0,14,0,0,14,12,45.0,10.84,9.756,1.9980000000000002,2.22,0.0,2.7600000000000002,0.311,0.0,0.311,0.205,0.0,0.255,0.9,0.2799,0.1845
+rajaei_ayed__jor,Rajaei Ayed,JOR,MID,venskabskamp,Venskabskamp,82,12,0,50,0,0,50,10,82.0,17.5,9.100000000000001,1.1960000000000002,2.3000000000000003,0.0,9.4,0.146,0.0,0.61,0.131,0.0,0.537,0.52,0.0759,0.0681
 ralph_priso__can,Ralph Priso,CAN,DEF,venskabskamp,Venskabskamp,5,2,0,0,0,0,0,1,5.0,4.69,2.4388,0.9204000000000001,1.77,0.0,0.0,0.4,0.0,0.0,0.377,0.0,0.0,0.52,0.208,0.196
 rami_rabia__egy,Rami Rabia,EGY,DEF,slutrunde,Slutrunde,40,5,0,33,0,0,33,2,40.0,13.51,13.51,4.25,4.25,0.0,7.5600000000000005,0.125,0.0,0.825,0.315,0.0,0.56,1.0,0.125,0.315
 rami_rabia__egy,Rami Rabia,EGY,DEF,kvalifikation,Kvalifikation,67,23,0,33,6,0,32,5,61.0,14.9,12.528,6.984000000000001,7.76,0.0,5.44,0.377,0.0,0.493,0.557,0.0,0.365,0.9,0.3393,0.5013
@@ -3422,6 +3702,7 @@ rayan_elloumi__tun,Rayan Elloumi,TUN,FWD,venskabskamp,Venskabskamp,4,1,0,0,0,0,0
 rebin_sulaka__irq,Rebin Sulaka,IRQ,DEF,slutrunde,Slutrunde,36,8,0,20,0,0,20,6,36.0,9.25,9.25,2.04,2.04,0.0,6.09,0.222,0.0,0.556,0.221,0.0,0.658,1.0,0.222,0.221
 rebin_sulaka__irq,Rebin Sulaka,IRQ,DEF,kvalifikation,Kvalifikation,55,23,0,25,0,0,24,6,55.0,15.58,14.022000000000002,6.984,7.76,0.0,5.720000000000001,0.418,0.0,0.455,0.498,0.0,0.367,0.9,0.3762,0.4482
 rebin_sulaka__irq,Rebin Sulaka,IRQ,DEF,venskabskamp,Venskabskamp,51,16,0,27,1,0,27,4,50.0,10.08,5.1896,1.4768000000000001,2.8400000000000003,0.0,4.5200000000000005,0.32,0.0,0.529,0.285,0.0,0.448,0.52,0.1664,0.1482
+redouane_halhal__mar,Redouane Halhal,MAR,DEF,venskabskamp,Venskabskamp,4,2,0,1,0,0,1,1,4.0,3.84,1.9968000000000001,0.9984000000000001,1.92,0.0,1.0,0.5,0.0,0.25,0.5,0.0,0.26,0.52,0.26,0.26
 reece_james__eng,Reece James,ENG,DEF,slutrunde,Slutrunde,19,1,0,8,5,0,8,5,14.0,5.76,4.76,0.2,0.2,0.0,3.56,0.071,0.0,0.421,0.042,0.0,0.618,1.0,0.071,0.042
 reece_james__eng,Reece James,ENG,DEF,kvalifikation,Kvalifikation,26,8,0,8,2,0,8,4,24.0,9.06,7.686000000000001,3.3300000000000005,3.7,0.0,2.68,0.333,0.0,0.308,0.433,0.0,0.296,0.9,0.2997,0.3897
 reece_james__eng,Reece James,ENG,DEF,nations_league,Nations League,16,5,0,4,4,0,4,1,12.0,4.48,1.9968000000000004,0.7020000000000002,0.9,0.0,1.16,0.417,0.0,0.25,0.352,0.0,0.259,0.78,0.3253,0.2746
@@ -3524,6 +3805,9 @@ rodrigo_aguirre__uru,Rodrigo Aguirre,URU,FWD,venskabskamp,Venskabskamp,6,2,0,3,0
 rodrigo_bentancur__uru,Rodrigo Bentancur,URU,MID,slutrunde,Slutrunde,23,17,0,0,0,0,0,1,23.0,5.38,5.38,3.06,3.06,0.0,0.0,0.739,0.0,0.0,0.569,0.0,0.0,1.0,0.739,0.569
 rodrigo_bentancur__uru,Rodrigo Bentancur,URU,MID,kvalifikation,Kvalifikation,38,25,0,7,4,0,0,0,34.0,11.58,9.270000000000001,6.372000000000001,7.08,0.0,2.8,0.735,0.0,0.184,0.687,0.0,0.242,0.9,0.6615,0.6183
 rodrigo_bentancur__uru,Rodrigo Bentancur,URU,MID,venskabskamp,Venskabskamp,38,21,0,4,9,0,4,1,29.0,10.1,3.4424,1.9968000000000001,3.8400000000000003,0.0,2.16,0.724,0.0,0.105,0.58,0.0,0.214,0.52,0.3765,0.3016
+rodrigo_zalazar__uru,Rodrigo Zalazar,URU,MID,slutrunde,Slutrunde,6,0,0,6,0,0,6,0,6.0,2.88,2.88,0.0,0.0,0.0,2.88,0.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0
+rodrigo_zalazar__uru,Rodrigo Zalazar,URU,MID,kvalifikation,Kvalifikation,18,0,0,10,4,0,10,2,14.0,8.28,5.724,0.0,0.0,0.0,3.84,0.0,0.0,0.556,0.0,0.0,0.464,0.9,0.0,0.0
+rodrigo_zalazar__uru,Rodrigo Zalazar,URU,MID,venskabskamp,Venskabskamp,12,4,0,4,3,0,4,0,9.0,6.800000000000001,2.3296,1.2272,2.3600000000000003,0.0,1.44,0.444,0.0,0.333,0.527,0.0,0.212,0.52,0.2309,0.274
 rodrigo_de_paul__arg,Rodrigo de Paul,ARG,MID,slutrunde,Slutrunde,28,23,0,1,0,0,1,2,28.0,7.4,7.4,5.5,5.5,0.0,0.92,0.821,0.0,0.036,0.743,0.0,0.124,1.0,0.821,0.743
 rodrigo_de_paul__arg,Rodrigo de Paul,ARG,MID,kvalifikation,Kvalifikation,35,33,0,1,0,0,0,1,35.0,11.38,10.242,9.63,10.700000000000001,0.0,0.2,0.943,0.0,0.029,0.94,0.0,0.018,0.9,0.8487,0.846
 rodrigo_de_paul__arg,Rodrigo de Paul,ARG,MID,venskabskamp,Venskabskamp,31,18,0,2,0,0,2,1,31.0,9.620000000000001,5.002400000000001,2.1736,4.180000000000001,0.0,0.2,0.581,0.0,0.065,0.435,0.0,0.021,0.52,0.3021,0.2262
@@ -3548,6 +3832,9 @@ ronwen_williams__rsa,Ronwen Williams,RSA,GK,slutrunde,Slutrunde,26,15,0,10,0,0,1
 ronwen_williams__rsa,Ronwen Williams,RSA,GK,kvalifikation,Kvalifikation,59,30,0,21,0,0,21,8,59.0,13.58,12.222000000000001,8.586,9.540000000000001,0.0,3.24,0.508,0.0,0.356,0.703,0.0,0.239,0.9,0.4572,0.6327
 ronwen_williams__rsa,Ronwen Williams,RSA,GK,venskabskamp,Venskabskamp,48,15,0,21,3,0,21,7,45.0,11.1,5.6160000000000005,2.4232,4.66,0.0,4.0200000000000005,0.333,0.0,0.438,0.431,0.0,0.362,0.52,0.1732,0.2241
 roony_bardghji__swe,Roony Bardghji,SWE,MID,kvalifikation,Kvalifikation,5,1,0,0,0,0,0,2,5.0,3.64,3.2760000000000007,0.6120000000000001,0.68,0.0,0.0,0.2,0.0,0.0,0.187,0.0,0.0,0.9,0.18,0.1683
+roozbeh_cheshmi__irn,Roozbeh Cheshmi,IRN,MID,slutrunde,Slutrunde,25,10,0,2,1,0,2,8,24.0,7.1000000000000005,7.0,3.72,3.72,0.0,0.78,0.417,0.0,0.08,0.531,0.0,0.11,1.0,0.417,0.531
+roozbeh_cheshmi__irn,Roozbeh Cheshmi,IRN,MID,kvalifikation,Kvalifikation,36,1,0,24,3,0,24,3,33.0,10.540000000000001,8.190000000000001,0.432,0.48,0.0,5.66,0.03,0.0,0.667,0.053,0.0,0.537,0.9,0.027,0.0477
+roozbeh_cheshmi__irn,Roozbeh Cheshmi,IRN,MID,venskabskamp,Venskabskamp,40,14,0,11,4,0,11,6,36.0,11.34,4.316000000000001,0.9984000000000001,1.9200000000000002,0.0,4.5200000000000005,0.389,0.0,0.275,0.231,0.0,0.399,0.52,0.2023,0.1201
 roshon_van_eijma__cuw,Roshon van Eijma,CUW,DEF,slutrunde,Slutrunde,3,3,0,0,0,0,0,0,3.0,2.04,2.04,2.04,2.04,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,1.0,1.0
 roshon_van_eijma__cuw,Roshon van Eijma,CUW,DEF,kvalifikation,Kvalifikation,17,6,0,3,0,0,3,6,17.0,7.62,6.8580000000000005,3.6720000000000006,4.08,0.0,1.28,0.353,0.0,0.176,0.535,0.0,0.168,0.9,0.3177,0.4815
 roshon_van_eijma__cuw,Roshon van Eijma,CUW,DEF,nations_league,Nations League,18,9,0,3,1,0,3,4,17.0,5.36,4.1028,2.6832000000000003,3.44,0.0,0.8400000000000001,0.529,0.0,0.167,0.654,0.0,0.157,0.78,0.4126,0.5101
@@ -3600,9 +3887,18 @@ sabri_ben_hessen__tun,Sabri Ben Hessen,TUN,GK,venskabskamp,Venskabskamp,8,1,0,1,
 sadio_man__sen,Sadio Mane,SEN,FWD,slutrunde,Slutrunde,51,32,0,8,10,0,7,1,41.0,16.41,14.41,10.03,10.03,0.0,4.28,0.78,0.0,0.157,0.696,0.0,0.261,1.0,0.78,0.696
 sadio_man__sen,Sadio Mane,SEN,FWD,kvalifikation,Kvalifikation,73,62,0,3,4,0,3,0,69.0,15.5,12.906,11.988000000000001,13.32,0.0,0.62,0.899,0.0,0.041,0.929,0.0,0.04,0.9,0.8091,0.8361
 sadio_man__sen,Sadio Mane,SEN,FWD,venskabskamp,Venskabskamp,41,22,0,9,2,0,9,3,39.0,10.360000000000001,5.283200000000001,2.8288,5.44,0.0,3.7,0.564,0.0,0.22,0.535,0.0,0.357,0.52,0.2933,0.2782
+salah_zakaria__qat,Salah Zakaria,QAT,GK,slutrunde,Slutrunde,24,2,0,7,3,0,7,11,21.0,8.57,6.36,0.8,0.8,0.0,1.4000000000000001,0.095,0.0,0.292,0.126,0.0,0.163,1.0,0.095,0.126
+salah_zakaria__qat,Salah Zakaria,QAT,GK,kvalifikation,Kvalifikation,18,1,0,4,2,0,4,10,16.0,8.6,6.516,0.6120000000000001,0.68,0.0,1.76,0.062,0.0,0.222,0.094,0.0,0.205,0.9,0.0558,0.0846
+salah_zakaria__qat,Salah Zakaria,QAT,GK,venskabskamp,Venskabskamp,19,3,0,4,1,0,4,11,18.0,7.0200000000000005,3.2968,0.6240000000000001,1.2000000000000002,0.0,0.8,0.167,0.0,0.211,0.189,0.0,0.114,0.52,0.0868,0.0983
 saleem_obaid__jor,Saleem Obaid,JOR,DEF,slutrunde,Slutrunde,20,2,0,15,0,0,15,3,20.0,8.27,8.27,1.53,1.53,0.0,4.19,0.1,0.0,0.75,0.185,0.0,0.507,1.0,0.1,0.185
 saleem_obaid__jor,Saleem Obaid,JOR,DEF,kvalifikation,Kvalifikation,28,1,0,26,0,0,26,0,28.0,9.14,8.226,0.6120000000000001,0.68,0.0,7.9799999999999995,0.036,0.0,0.929,0.074,0.0,0.873,0.9,0.0324,0.0666
 saleem_obaid__jor,Saleem Obaid,JOR,DEF,venskabskamp,Venskabskamp,45,3,0,33,0,0,33,6,45.0,13.8,7.176,0.7592000000000001,1.4600000000000002,0.0,6.96,0.067,0.0,0.733,0.106,0.0,0.504,0.52,0.0348,0.0551
+saleh_al_shehri__ksa,Saleh Al-Shehri,KSA,FWD,slutrunde,Slutrunde,27,10,0,6,3,0,6,1,24.0,12.65,11.21,4.98,4.98,0.0,1.2000000000000002,0.417,0.0,0.222,0.444,0.0,0.095,1.0,0.417,0.444
+saleh_al_shehri__ksa,Saleh Al-Shehri,KSA,FWD,kvalifikation,Kvalifikation,32,13,0,6,0,0,6,3,32.0,11.2,10.08,2.736,3.04,0.0,2.6,0.406,0.0,0.188,0.271,0.0,0.232,0.9,0.3654,0.2439
+saleh_al_shehri__ksa,Saleh Al-Shehri,KSA,FWD,venskabskamp,Venskabskamp,25,5,0,6,4,0,6,1,21.0,10.14,4.856800000000001,0.47840000000000005,0.92,0.0,2.24,0.238,0.0,0.24,0.099,0.0,0.221,0.52,0.1238,0.0515
+saleh_hardani__irn,Saleh Hardani,IRN,DEF,slutrunde,Slutrunde,16,0,0,16,0,0,16,0,16.0,6.2,6.2,0.0,0.0,0.0,6.2,0.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0
+saleh_hardani__irn,Saleh Hardani,IRN,DEF,kvalifikation,Kvalifikation,26,8,0,6,0,0,4,7,26.0,9.24,8.316,3.312,3.6799999999999997,0.0,2.0,0.308,0.0,0.231,0.398,0.0,0.216,0.9,0.2772,0.3582
+saleh_hardani__irn,Saleh Hardani,IRN,DEF,venskabskamp,Venskabskamp,19,2,0,5,2,0,5,7,17.0,9.24,4.0976,0.8736,1.6800000000000002,0.0,1.12,0.118,0.0,0.263,0.213,0.0,0.121,0.52,0.0614,0.1108
 salem_al_dawsari__ksa,Salem Al-Dawsari,KSA,MID,slutrunde,Slutrunde,65,33,0,21,5,0,21,2,60.0,16.45,13.63,9.2,9.2,0.0,2.7,0.55,0.0,0.323,0.675,0.0,0.164,1.0,0.55,0.675
 salem_al_dawsari__ksa,Salem Al-Dawsari,KSA,MID,kvalifikation,Kvalifikation,61,33,0,17,8,0,14,1,53.0,14.1,10.71,8.82,9.8,0.0,1.8,0.623,0.0,0.279,0.824,0.0,0.128,0.9,0.5607,0.7416
 salem_al_dawsari__ksa,Salem Al-Dawsari,KSA,MID,venskabskamp,Venskabskamp,59,29,0,15,9,0,15,1,50.0,13.540000000000001,5.2624,3.2864000000000004,6.32,0.0,1.5,0.58,0.0,0.254,0.625,0.0,0.111,0.52,0.3016,0.325
@@ -3620,6 +3916,10 @@ samet_akaydin__tur,Samet Akaydin,TUR,DEF,slutrunde,Slutrunde,5,4,0,1,0,0,0,0,5.0
 samet_akaydin__tur,Samet Akaydin,TUR,DEF,kvalifikation,Kvalifikation,16,5,0,1,0,0,1,8,16.0,8.24,7.416000000000001,2.3040000000000003,2.56,0.0,0.32,0.312,0.0,0.062,0.311,0.0,0.039,0.9,0.2808,0.2799
 samet_akaydin__tur,Samet Akaydin,TUR,DEF,nations_league,Nations League,8,2,0,0,0,0,0,4,8.0,3.84,2.9952,0.7488,0.96,0.0,0.0,0.25,0.0,0.0,0.25,0.0,0.0,0.78,0.195,0.195
 samet_akaydin__tur,Samet Akaydin,TUR,DEF,venskabskamp,Venskabskamp,12,3,0,1,0,0,1,7,12.0,5.84,3.0368000000000004,0.52,1.0,0.0,0.32,0.25,0.0,0.083,0.171,0.0,0.055,0.52,0.13,0.0889
+samir_chergui__alg,Samir Chergui,ALG,DEF,slutrunde,Slutrunde,9,1,0,1,7,0,1,0,2.0,7.4799999999999995,1.7,0.85,0.85,0.0,0.85,0.5,0.0,0.111,0.5,0.0,0.114,1.0,0.5,0.5
+samir_chergui__alg,Samir Chergui,ALG,DEF,kvalifikation,Kvalifikation,2,0,0,0,0,0,0,1,2.0,1.36,1.2240000000000002,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.9,0.0,0.0
+samir_chergui__alg,Samir Chergui,ALG,DEF,venskabskamp,Venskabskamp,5,2,0,2,0,0,2,1,5.0,4.2,2.184,0.7072,1.36,0.0,1.84,0.4,0.0,0.4,0.324,0.0,0.438,0.52,0.208,0.1685
+samir_el_mourabet__mar,Samir El Mourabet,MAR,MID,venskabskamp,Venskabskamp,4,1,0,0,0,0,0,1,4.0,3.84,1.9968000000000001,0.47840000000000005,0.92,0.0,0.0,0.25,0.0,0.0,0.24,0.0,0.0,0.52,0.13,0.1248
 samu_costa__por,Samu Costa,POR,MID,nations_league_finals,Nations League-slutrunde,4,0,0,4,0,0,4,0,4.0,2.12,2.014,0.0,0.0,0.0,2.12,0.0,0.0,1.0,0.0,0.0,1.0,0.95,0.0,0.0
 samu_costa__por,Samu Costa,POR,MID,kvalifikation,Kvalifikation,6,0,0,6,0,0,6,0,6.0,4.08,3.6720000000000006,0.0,0.0,0.0,4.08,0.0,0.0,1.0,0.0,0.0,1.0,0.9,0.0,0.0
 samu_costa__por,Samu Costa,POR,MID,nations_league,Nations League,4,0,0,1,0,0,1,1,4.0,1.92,1.4976,0.0,0.0,0.0,0.48,0.0,0.0,0.25,0.0,0.0,0.25,0.78,0.0,0.0
@@ -3644,6 +3944,11 @@ santiago_arias__col,Santiago Arias,COL,DEF,venskabskamp,Venskabskamp,60,22,0,18,
 santiago_bueno__uru,Santiago Bueno,URU,DEF,slutrunde,Slutrunde,6,0,0,6,0,0,6,0,6.0,2.88,2.88,0.0,0.0,0.0,2.88,0.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0
 santiago_bueno__uru,Santiago Bueno,URU,DEF,kvalifikation,Kvalifikation,18,3,0,3,2,0,3,9,16.0,8.28,6.588,1.296,1.44,0.0,1.12,0.188,0.0,0.167,0.197,0.0,0.135,0.9,0.1692,0.1773
 santiago_bueno__uru,Santiago Bueno,URU,DEF,venskabskamp,Venskabskamp,14,3,0,6,2,0,6,2,12.0,7.2,3.4112,0.5616000000000001,1.08,0.0,3.2,0.25,0.0,0.429,0.165,0.0,0.444,0.52,0.13,0.0858
+santiago_gimenez__mex,Santiago Gimenez,MEX,FWD,slutrunde,Slutrunde,24,5,0,9,0,0,9,0,24.0,9.24,9.24,2.44,2.44,0.0,1.8,0.208,0.0,0.375,0.264,0.0,0.195,1.0,0.208,0.264
+santiago_gimenez__mex,Santiago Gimenez,MEX,FWD,nations_league_finals,Nations League-slutrunde,12,4,0,2,2,0,2,1,10.0,4.14,3.021,1.52,1.6,0.0,0.30000000000000004,0.4,0.0,0.167,0.503,0.0,0.072,0.95,0.38,0.4778
+santiago_gimenez__mex,Santiago Gimenez,MEX,FWD,kvalifikation,Kvalifikation,14,0,0,13,0,0,13,1,14.0,2.8000000000000003,2.5200000000000005,0.0,0.0,0.0,2.6,0.0,0.0,0.929,0.0,0.0,0.929,0.9,0.0,0.0
+santiago_gimenez__mex,Santiago Gimenez,MEX,FWD,nations_league,Nations League,4,2,0,0,0,0,0,1,4.0,0.8,0.6240000000000001,0.31200000000000006,0.4,0.0,0.0,0.5,0.0,0.0,0.5,0.0,0.0,0.78,0.39,0.39
+santiago_gimenez__mex,Santiago Gimenez,MEX,FWD,venskabskamp,Venskabskamp,52,11,0,21,6,0,21,3,46.0,21.59,8.944,2.2048,4.24,0.0,6.220000000000001,0.239,0.0,0.404,0.247,0.0,0.288,0.52,0.1243,0.1284
 santiago_mele__uru,Santiago Mele,URU,GK,slutrunde,Slutrunde,6,0,0,0,0,0,0,6,6.0,2.88,2.88,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0
 santiago_mele__uru,Santiago Mele,URU,GK,kvalifikation,Kvalifikation,18,4,0,0,0,0,0,14,18.0,8.28,7.452000000000001,1.9440000000000002,2.16,0.0,0.0,0.222,0.0,0.0,0.261,0.0,0.0,0.9,0.1998,0.2349
 santiago_mele__uru,Santiago Mele,URU,GK,venskabskamp,Venskabskamp,14,3,0,4,0,0,4,6,14.0,7.2,3.744,0.6240000000000001,1.2000000000000002,0.0,2.16,0.214,0.0,0.286,0.167,0.0,0.3,0.52,0.1113,0.0868
@@ -3651,6 +3956,10 @@ sarpreet_singh__nzl,Sarpreet Singh,NZL,MID,slutrunde,Slutrunde,4,0,0,4,0,0,4,0,4
 sarpreet_singh__nzl,Sarpreet Singh,NZL,MID,kvalifikation,Kvalifikation,11,3,0,5,2,0,5,0,9.0,3.6,2.88,1.296,1.44,0.0,1.28,0.333,0.0,0.455,0.45,0.0,0.356,0.9,0.2997,0.405
 sarpreet_singh__nzl,Sarpreet Singh,NZL,MID,oevrig_turnering,Øvrig turnering,3,3,0,0,0,0,0,0,3.0,0.30000000000000004,0.186,0.186,0.30000000000000004,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.62,0.62,0.62
 sarpreet_singh__nzl,Sarpreet Singh,NZL,MID,venskabskamp,Venskabskamp,36,19,0,8,6,0,8,1,30.0,15.58,6.728800000000001,5.0648,9.74,0.0,2.8,0.633,0.0,0.222,0.753,0.0,0.18,0.52,0.3292,0.3916
+sasa_kalajdzic__aut,Sasa Kalajdzic,AUT,FWD,slutrunde,Slutrunde,8,1,0,0,4,0,0,0,4.0,2.7199999999999998,0.8,0.2,0.2,0.0,0.0,0.25,0.0,0.0,0.25,0.0,0.0,1.0,0.25,0.25
+sasa_kalajdzic__aut,Sasa Kalajdzic,AUT,FWD,kvalifikation,Kvalifikation,27,4,0,9,11,0,9,0,16.0,9.66,5.8500000000000005,0.558,0.62,0.0,5.04,0.25,0.0,0.333,0.095,0.0,0.522,0.9,0.225,0.0855
+sasa_kalajdzic__aut,Sasa Kalajdzic,AUT,FWD,nations_league,Nations League,18,2,0,0,10,0,0,5,8.0,5.4399999999999995,0.9360000000000002,0.31200000000000006,0.4,0.0,0.0,0.25,0.0,0.0,0.333,0.0,0.0,0.78,0.195,0.2597
+sasa_kalajdzic__aut,Sasa Kalajdzic,AUT,FWD,venskabskamp,Venskabskamp,16,4,0,1,6,0,1,1,10.0,6.0200000000000005,2.1736,0.31200000000000006,0.6000000000000001,0.0,0.32,0.4,0.0,0.062,0.144,0.0,0.053,0.52,0.208,0.0749
 saud_abdulhamid__ksa,Saud Abdulhamid,KSA,DEF,slutrunde,Slutrunde,32,14,0,13,0,0,13,4,32.0,13.15,13.15,4.98,4.98,0.0,7.45,0.438,0.0,0.406,0.379,0.0,0.567,1.0,0.438,0.379
 saud_abdulhamid__ksa,Saud Abdulhamid,KSA,DEF,kvalifikation,Kvalifikation,36,11,0,2,1,0,2,12,35.0,11.6,10.008000000000001,4.248,4.72,0.0,0.8,0.314,0.0,0.056,0.424,0.0,0.069,0.9,0.2826,0.3816
 saud_abdulhamid__ksa,Saud Abdulhamid,KSA,DEF,venskabskamp,Venskabskamp,27,12,0,8,0,0,8,4,27.0,10.34,5.3768,2.7352000000000003,5.26,0.0,3.16,0.444,0.0,0.296,0.509,0.0,0.306,0.52,0.2309,0.2647
@@ -3668,6 +3977,9 @@ sead_kolasinac__bih,Sead Kolasinac,BIH,DEF,nations_league,Nations League,22,9,0,
 sead_kolasinac__bih,Sead Kolasinac,BIH,DEF,venskabskamp,Venskabskamp,34,12,0,14,5,0,14,2,29.0,7.46,2.964,1.1960000000000002,2.3000000000000003,0.0,2.2,0.414,0.0,0.412,0.404,0.0,0.295,0.52,0.2153,0.2101
 sebastian_berhalter__usa,Sebastian Berhalter,USA,MID,slutrunde,Slutrunde,6,5,0,0,0,0,0,1,6.0,4.08,4.08,3.4000000000000004,3.4000000000000004,0.0,0.0,0.833,0.0,0.0,0.833,0.0,0.0,1.0,0.833,0.833
 sebastian_berhalter__usa,Sebastian Berhalter,USA,MID,venskabskamp,Venskabskamp,12,5,0,2,0,0,2,2,12.0,9.280000000000001,4.8256000000000006,2.0592,3.96,0.0,1.36,0.417,0.0,0.167,0.427,0.0,0.147,0.52,0.2168,0.222
+sebastian_caceres__uru,Sebastian Caceres,URU,DEF,slutrunde,Slutrunde,9,2,0,3,0,0,3,1,9.0,3.48,3.48,0.96,0.96,0.0,0.6000000000000001,0.222,0.0,0.333,0.276,0.0,0.172,1.0,0.222,0.276
+sebastian_caceres__uru,Sebastian Caceres,URU,DEF,kvalifikation,Kvalifikation,18,11,0,5,0,0,5,1,18.0,8.28,7.452000000000001,4.248,4.72,0.0,2.4,0.611,0.0,0.278,0.57,0.0,0.29,0.9,0.5499,0.513
+sebastian_caceres__uru,Sebastian Caceres,URU,DEF,venskabskamp,Venskabskamp,16,4,0,7,0,0,7,3,16.0,7.6000000000000005,3.9520000000000004,0.5408000000000001,1.04,0.0,3.8400000000000003,0.25,0.0,0.438,0.137,0.0,0.505,0.52,0.13,0.0712
 sebastian_tounekti__tun,Sebastian Tounekti,TUN,MID,slutrunde,Slutrunde,24,1,0,20,0,0,20,1,24.0,9.370000000000001,9.370000000000001,0.85,0.85,0.0,5.970000000000001,0.042,0.0,0.833,0.091,0.0,0.637,1.0,0.042,0.091
 sebastian_tounekti__tun,Sebastian Tounekti,TUN,MID,kvalifikation,Kvalifikation,31,1,0,24,0,0,24,4,31.0,11.3,10.17,0.6120000000000001,0.68,0.0,9.04,0.032,0.0,0.774,0.06,0.0,0.8,0.9,0.0288,0.054
 sebastian_tounekti__tun,Sebastian Tounekti,TUN,MID,venskabskamp,Venskabskamp,27,1,0,20,0,0,20,1,27.0,12.63,6.5676000000000005,0.47840000000000005,0.92,0.0,7.16,0.037,0.0,0.741,0.073,0.0,0.567,0.52,0.0192,0.038
@@ -3696,6 +4008,11 @@ kim_seung_gyu__kor,Seung-Gyu Kim,KOR,GK,venskabskamp,Venskabskamp,85,43,0,10,0,0
 paik_seung_ho__kor,Seung-Ho Paik,KOR,MID,slutrunde,Slutrunde,19,1,0,12,0,0,12,4,19.0,5.66,5.66,0.2,0.2,0.0,4.26,0.053,0.0,0.632,0.035,0.0,0.753,1.0,0.053,0.035
 paik_seung_ho__kor,Seung-Ho Paik,KOR,MID,kvalifikation,Kvalifikation,33,5,0,13,4,0,9,7,29.0,10.14,7.470000000000001,1.278,1.42,0.0,3.76,0.172,0.0,0.394,0.171,0.0,0.371,0.9,0.1548,0.1539
 paik_seung_ho__kor,Seung-Ho Paik,KOR,MID,venskabskamp,Venskabskamp,36,12,0,13,0,0,13,8,36.0,13.16,6.8432,2.4336,4.680000000000001,0.0,4.0,0.333,0.0,0.361,0.356,0.0,0.304,0.52,0.1732,0.1851
+seydinaissa_laye__qat,Seydinaissa Laye,QAT,DEF,slutrunde,Slutrunde,3,1,0,0,0,0,0,1,3.0,2.21,2.21,0.68,0.68,0.0,0.0,0.333,0.0,0.0,0.308,0.0,0.0,1.0,0.333,0.308
+seydinaissa_laye__qat,Seydinaissa Laye,QAT,DEF,venskabskamp,Venskabskamp,2,2,0,0,0,0,0,0,2.0,2.0,1.04,1.04,2.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.52,0.52,0.52
+seyed_hossein_hosseini__irn,Seyed Hossein Hosseini,IRN,GK,slutrunde,Slutrunde,25,2,0,12,4,0,12,7,21.0,7.1000000000000005,4.38,0.4,0.4,0.0,1.86,0.095,0.0,0.48,0.091,0.0,0.262,1.0,0.095,0.091
+seyed_hossein_hosseini__irn,Seyed Hossein Hosseini,IRN,GK,kvalifikation,Kvalifikation,34,2,0,18,0,0,18,14,34.0,10.34,9.306000000000001,0.9000000000000001,1.0,0.0,4.04,0.059,0.0,0.529,0.097,0.0,0.391,0.9,0.0531,0.0873
+seyed_hossein_hosseini__irn,Seyed Hossein Hosseini,IRN,GK,venskabskamp,Venskabskamp,36,3,0,12,0,0,12,15,36.0,10.940000000000001,5.6888000000000005,0.6344000000000001,1.22,0.0,2.9000000000000004,0.083,0.0,0.333,0.112,0.0,0.265,0.52,0.0432,0.0582
 shahriar_moghanlou__irn,Shahriar Moghanlou,IRN,FWD,slutrunde,Slutrunde,13,3,0,5,0,0,5,4,13.0,5.6000000000000005,5.6000000000000005,1.6800000000000002,1.6800000000000002,0.0,2.3200000000000003,0.231,0.0,0.385,0.3,0.0,0.414,1.0,0.231,0.3
 shahriar_moghanlou__irn,Shahriar Moghanlou,IRN,FWD,kvalifikation,Kvalifikation,16,0,0,6,0,0,6,2,16.0,7.24,6.516,0.0,0.0,0.0,2.24,0.0,0.0,0.375,0.0,0.0,0.309,0.9,0.0,0.0
 shahriar_moghanlou__irn,Shahriar Moghanlou,IRN,FWD,venskabskamp,Venskabskamp,14,3,0,5,2,0,5,0,12.0,8.24,3.9520000000000004,0.728,1.4,0.0,3.64,0.25,0.0,0.357,0.184,0.0,0.442,0.52,0.13,0.0957
@@ -3706,6 +4023,7 @@ sherel_floranus__cuw,Sherel Floranus,CUW,DEF,slutrunde,Slutrunde,3,3,0,0,0,0,0,0
 sherel_floranus__cuw,Sherel Floranus,CUW,DEF,kvalifikation,Kvalifikation,11,10,0,1,0,0,1,0,11.0,6.720000000000001,6.048000000000001,5.436000000000001,6.04,0.0,0.68,0.909,0.0,0.091,0.899,0.0,0.101,0.9,0.8181,0.8091
 sherel_floranus__cuw,Sherel Floranus,CUW,DEF,nations_league,Nations League,11,8,0,2,1,0,2,0,10.0,4.36,3.1512000000000002,2.5272,3.2399999999999998,0.0,0.8,0.8,0.0,0.182,0.802,0.0,0.183,0.78,0.624,0.6256
 sherel_floranus__cuw,Sherel Floranus,CUW,DEF,venskabskamp,Venskabskamp,7,5,0,2,0,0,2,0,7.0,4.0,2.08,1.7472,3.3600000000000003,0.0,0.64,0.714,0.0,0.286,0.84,0.0,0.16,0.52,0.3713,0.4368
+sherzod_esanov__uzb,Sherzod Esanov,UZB,MID,venskabskamp,Venskabskamp,1,0,0,0,0,0,0,0,1.0,1.0,0.52,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.52,0.0,0.0
 sherzod_nasrullayev__uzb,Sherzod Nasrullaev,UZB,DEF,slutrunde,Slutrunde,13,6,0,3,0,0,3,2,13.0,5.6000000000000005,5.6000000000000005,2.64,2.64,0.0,1.32,0.462,0.0,0.231,0.471,0.0,0.236,1.0,0.462,0.471
 sherzod_nasrullayev__uzb,Sherzod Nasrullaev,UZB,DEF,kvalifikation,Kvalifikation,19,9,0,4,3,0,4,1,16.0,7.84,6.516,4.068,4.52,0.0,1.6,0.562,0.0,0.211,0.624,0.0,0.204,0.9,0.5058,0.5616
 sherzod_nasrullayev__uzb,Sherzod Nasrullaev,UZB,DEF,venskabskamp,Venskabskamp,21,15,0,0,0,0,0,2,21.0,8.96,4.6592,3.8480000000000003,7.4,0.0,0.0,0.714,0.0,0.0,0.826,0.0,0.0,0.52,0.3713,0.4295
@@ -3744,6 +4062,9 @@ sontje_hansen__cuw,Sontje Hansen,CUW,FWD,venskabskamp,Venskabskamp,3,1,0,0,0,0,0
 souffian_el_karouani__mar,Souffian El Karouani,MAR,DEF,slutrunde,Slutrunde,40,0,0,39,0,0,39,1,40.0,20.12,20.12,0.0,0.0,0.0,19.92,0.0,0.0,0.975,0.0,0.0,0.99,1.0,0.0,0.0
 souffian_el_karouani__mar,Souffian El Karouani,MAR,DEF,kvalifikation,Kvalifikation,27,3,0,19,0,0,19,3,27.0,10.120000000000001,9.108,0.9720000000000002,1.08,0.0,7.56,0.111,0.0,0.704,0.107,0.0,0.747,0.9,0.0999,0.0963
 souffian_el_karouani__mar,Souffian El Karouani,MAR,DEF,venskabskamp,Venskabskamp,19,0,0,16,0,0,16,2,19.0,8.360000000000001,4.347200000000001,0.0,0.0,0.0,5.84,0.0,0.0,0.842,0.0,0.0,0.699,0.52,0.0,0.0
+soufiane_rahimi__mar,Soufiane Rahimi,MAR,MID,slutrunde,Slutrunde,46,8,0,26,0,0,24,5,46.0,20.72,20.72,1.65,1.65,0.0,12.77,0.174,0.0,0.565,0.08,0.0,0.616,1.0,0.174,0.08
+soufiane_rahimi__mar,Soufiane Rahimi,MAR,MID,kvalifikation,Kvalifikation,31,5,0,15,0,0,15,5,31.0,10.52,9.468,2.16,2.4,0.0,5.2,0.161,0.0,0.484,0.228,0.0,0.494,0.9,0.1449,0.2052
+soufiane_rahimi__mar,Soufiane Rahimi,MAR,MID,venskabskamp,Venskabskamp,23,4,0,11,0,0,11,2,23.0,10.76,5.5952,1.1024,2.12,0.0,3.96,0.174,0.0,0.478,0.197,0.0,0.368,0.52,0.0905,0.1024
 stefan_posch__aut,Stefan Posch,AUT,DEF,slutrunde,Slutrunde,8,4,0,2,0,0,2,2,8.0,2.7199999999999998,2.7199999999999998,1.92,1.92,0.0,0.4,0.5,0.0,0.25,0.706,0.0,0.147,1.0,0.5,0.706
 stefan_posch__aut,Stefan Posch,AUT,DEF,kvalifikation,Kvalifikation,37,15,0,3,2,0,2,9,35.0,10.66,9.018,4.500000000000001,5.0,0.0,0.8800000000000001,0.429,0.0,0.081,0.499,0.0,0.083,0.9,0.3861,0.4491
 stefan_posch__aut,Stefan Posch,AUT,DEF,nations_league,Nations League,20,10,0,3,3,0,3,2,17.0,5.64,3.5724000000000005,2.7144000000000004,3.48,0.0,0.5,0.588,0.0,0.15,0.76,0.0,0.089,0.78,0.4586,0.5928
@@ -3755,6 +4076,11 @@ stefan_de_vrij__ned,Stefan de Vrij,NED,DEF,nations_league,Nations League,22,9,0,
 stefan_de_vrij__ned,Stefan de Vrij,NED,DEF,venskabskamp,Venskabskamp,47,17,0,8,12,0,8,4,35.0,7.84,3.12,1.56,3.0,0.0,0.8,0.486,0.0,0.17,0.5,0.0,0.102,0.52,0.2527,0.26
 stepan_chaloupek__cze,Stepan Chaloupek,CZE,DEF,kvalifikation,Kvalifikation,3,2,0,0,0,0,0,0,3.0,2.52,2.2680000000000002,1.6560000000000001,1.84,0.0,0.0,0.667,0.0,0.0,0.73,0.0,0.0,0.9,0.6003,0.657
 stepan_chaloupek__cze,Stepan Chaloupek,CZE,DEF,venskabskamp,Venskabskamp,3,2,0,0,0,0,0,1,3.0,2.68,1.3936000000000002,1.04,2.0,0.0,0.0,0.667,0.0,0.0,0.746,0.0,0.0,0.52,0.3468,0.3879
+stephen_eustaquio__can,Stephen Eustaquio,CAN,MID,slutrunde,Slutrunde,22,11,0,5,5,0,5,1,17.0,8.48,7.0,3.6,3.6,0.0,2.9200000000000004,0.647,0.0,0.227,0.514,0.0,0.344,1.0,0.647,0.514
+stephen_eustaquio__can,Stephen Eustaquio,CAN,MID,nations_league_finals,Nations League-slutrunde,9,8,0,0,0,0,0,0,9.0,3.52,3.344,2.888,3.04,0.0,0.0,0.889,0.0,0.0,0.864,0.0,0.0,0.95,0.8446,0.8208
+stephen_eustaquio__can,Stephen Eustaquio,CAN,MID,kvalifikation,Kvalifikation,20,15,0,1,0,0,1,2,20.0,3.8000000000000003,3.4200000000000004,2.6100000000000003,2.9000000000000004,0.0,0.2,0.75,0.0,0.05,0.763,0.0,0.053,0.9,0.675,0.6867
+stephen_eustaquio__can,Stephen Eustaquio,CAN,MID,nations_league,Nations League,6,4,0,0,0,0,0,1,6.0,1.0,0.7800000000000001,0.6240000000000001,0.8,0.0,0.0,0.667,0.0,0.0,0.8,0.0,0.0,0.78,0.5203,0.624
+stephen_eustaquio__can,Stephen Eustaquio,CAN,MID,venskabskamp,Venskabskamp,26,14,0,5,4,0,5,3,22.0,13.950000000000001,6.026800000000001,4.264,8.2,0.0,1.83,0.636,0.0,0.192,0.708,0.0,0.131,0.52,0.3307,0.3682
 steve_kapuadi__cod,Steve Kapuadi,COD,DEF,slutrunde,Slutrunde,8,0,0,4,0,0,4,4,8.0,6.12,6.12,0.0,0.0,0.0,2.72,0.0,0.0,0.5,0.0,0.0,0.444,1.0,0.0,0.0
 steve_kapuadi__cod,Steve Kapuadi,COD,DEF,kvalifikation,Kvalifikation,7,0,0,0,0,0,0,7,7.0,5.0,4.500000000000001,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.9,0.0,0.0
 steve_kapuadi__cod,Steve Kapuadi,COD,DEF,venskabskamp,Venskabskamp,5,2,0,1,0,0,1,1,5.0,3.93,2.0436,0.8736,1.6800000000000002,0.0,0.92,0.4,0.0,0.2,0.427,0.0,0.234,0.52,0.208,0.222
@@ -3770,6 +4096,9 @@ stopira__cpv,Stopira,CPV,DEF,venskabskamp,Venskabskamp,41,10,0,22,2,0,22,3,39.0,
 sultan_al_brake__qat,Sultan Al-Brake,QAT,DEF,slutrunde,Slutrunde,52,4,0,40,1,0,40,4,51.0,12.47,11.99,2.33,2.33,0.0,6.9,0.078,0.0,0.769,0.194,0.0,0.553,1.0,0.078,0.194
 sultan_al_brake__qat,Sultan Al-Brake,QAT,DEF,kvalifikation,Kvalifikation,26,2,0,14,2,0,14,8,24.0,9.5,7.686000000000001,1.2240000000000002,1.36,0.0,4.32,0.083,0.0,0.538,0.159,0.0,0.455,0.9,0.0747,0.1431
 sultan_al_brake__qat,Sultan Al-Brake,QAT,DEF,venskabskamp,Venskabskamp,49,2,0,23,0,0,23,17,49.0,10.92,5.678400000000001,0.21840000000000004,0.42000000000000004,0.0,3.54,0.041,0.0,0.469,0.038,0.0,0.324,0.52,0.0213,0.0198
+sultan_mandash__ksa,Sultan Mandash,KSA,FWD,slutrunde,Slutrunde,35,0,0,35,0,0,35,0,35.0,13.450000000000001,13.450000000000001,0.0,0.0,0.0,13.450000000000001,0.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0
+sultan_mandash__ksa,Sultan Mandash,KSA,FWD,kvalifikation,Kvalifikation,36,0,0,36,0,0,36,0,36.0,11.6,10.440000000000001,0.0,0.0,0.0,11.6,0.0,0.0,1.0,0.0,0.0,1.0,0.9,0.0,0.0
+sultan_mandash__ksa,Sultan Mandash,KSA,FWD,venskabskamp,Venskabskamp,29,3,0,21,1,0,21,1,28.0,10.540000000000001,5.002400000000001,0.9256000000000001,1.78,0.0,5.140000000000001,0.107,0.0,0.724,0.185,0.0,0.488,0.52,0.0556,0.0962
 tae_hyeon_kim__kor,Tae-Hyeon Kim,KOR,DEF,slutrunde,Slutrunde,3,1,0,0,0,0,0,2,3.0,2.04,2.04,0.68,0.68,0.0,0.0,0.333,0.0,0.0,0.333,0.0,0.0,1.0,0.333,0.333
 tae_hyeon_kim__kor,Tae-Hyeon Kim,KOR,DEF,venskabskamp,Venskabskamp,10,4,0,2,0,0,2,2,10.0,7.92,4.1184,1.6640000000000001,3.2,0.0,1.36,0.4,0.0,0.2,0.404,0.0,0.172,0.52,0.208,0.2101
 tae_seok_lee__kor,Tae-Seok Lee,KOR,DEF,slutrunde,Slutrunde,3,2,0,0,0,0,0,1,3.0,2.04,2.04,1.36,1.36,0.0,0.0,0.667,0.0,0.0,0.667,0.0,0.0,1.0,0.667,0.667
@@ -3816,6 +4145,7 @@ teboho_mokoena__rsa,Teboho Mokoena,RSA,MID,venskabskamp,Venskabskamp,25,13,0,6,0
 telmo_arcanjo__cpv,Telmo Arcanjo,CPV,MID,slutrunde,Slutrunde,9,0,0,4,5,0,4,0,4.0,2.4,0.8,0.0,0.0,0.0,0.8,0.0,0.0,0.444,0.0,0.0,0.333,1.0,0.0,0.0
 telmo_arcanjo__cpv,Telmo Arcanjo,CPV,MID,kvalifikation,Kvalifikation,28,5,0,8,6,0,8,5,22.0,10.8,7.704000000000001,2.2680000000000002,2.52,0.0,2.16,0.227,0.0,0.286,0.294,0.0,0.2,0.9,0.2043,0.2646
 telmo_arcanjo__cpv,Telmo Arcanjo,CPV,MID,venskabskamp,Venskabskamp,20,4,0,7,6,0,7,1,14.0,8.68,3.5152,1.4560000000000002,2.8000000000000003,0.0,2.16,0.286,0.0,0.35,0.414,0.0,0.249,0.52,0.1487,0.2153
+tete_yengi__aus,Tete Yengi,AUS,FWD,venskabskamp,Venskabskamp,1,1,0,0,0,0,0,0,1.0,1.0,0.52,0.52,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.52,0.52,0.52
 teun_koopmeiners__ned,Teun Koopmeiners,NED,MID,slutrunde,Slutrunde,15,2,0,2,6,0,2,2,9.0,4.68,1.8,0.4,0.4,0.0,0.4,0.222,0.0,0.133,0.222,0.0,0.085,1.0,0.222,0.222
 teun_koopmeiners__ned,Teun Koopmeiners,NED,MID,nations_league_finals,Nations League-slutrunde,4,1,0,0,0,0,0,0,4.0,1.6,1.52,0.304,0.32,0.0,0.0,0.25,0.0,0.0,0.2,0.0,0.0,0.95,0.2375,0.19
 teun_koopmeiners__ned,Teun Koopmeiners,NED,MID,kvalifikation,Kvalifikation,26,1,0,8,4,0,8,9,22.0,9.46,7.578000000000001,0.28800000000000003,0.32,0.0,3.7,0.045,0.0,0.308,0.038,0.0,0.391,0.9,0.0405,0.0342
@@ -3901,6 +4231,11 @@ tomas_holes__cze,Tomas Holes,CZE,DEF,slutrunde,Slutrunde,8,7,0,0,0,0,0,0,8.0,2.4
 tomas_holes__cze,Tomas Holes,CZE,DEF,kvalifikation,Kvalifikation,27,18,0,2,5,0,2,1,22.0,10.700000000000001,7.614000000000001,5.904000000000001,6.5600000000000005,0.0,0.8800000000000001,0.818,0.0,0.074,0.775,0.0,0.082,0.9,0.7362,0.6975
 tomas_holes__cze,Tomas Holes,CZE,DEF,nations_league,Nations League,17,4,0,3,7,0,3,2,10.0,4.58,2.5584000000000002,1.2012,1.54,0.0,1.44,0.4,0.0,0.176,0.47,0.0,0.314,0.78,0.312,0.3666
 tomas_holes__cze,Tomas Holes,CZE,DEF,venskabskamp,Venskabskamp,19,5,0,4,2,0,4,4,17.0,7.1000000000000005,3.484,0.624,1.2,0.0,1.3,0.294,0.0,0.211,0.179,0.0,0.183,0.52,0.1529,0.0931
+tomas_rodriguez__pan,Tomas Rodriguez,PAN,FWD,slutrunde,Slutrunde,14,3,0,10,0,0,10,0,14.0,6.5600000000000005,6.5600000000000005,2.04,2.04,0.0,3.84,0.214,0.0,0.714,0.311,0.0,0.585,1.0,0.214,0.311
+tomas_rodriguez__pan,Tomas Rodriguez,PAN,FWD,nations_league_finals,Nations League-slutrunde,10,0,0,6,0,0,6,4,10.0,3.84,3.6479999999999997,0.0,0.0,0.0,1.92,0.0,0.0,0.6,0.0,0.0,0.5,0.95,0.0,0.0
+tomas_rodriguez__pan,Tomas Rodriguez,PAN,FWD,kvalifikation,Kvalifikation,10,1,0,2,0,0,2,5,10.0,6.4,5.760000000000001,0.6120000000000001,0.68,0.0,0.96,0.1,0.0,0.2,0.106,0.0,0.15,0.9,0.09,0.0954
+tomas_rodriguez__pan,Tomas Rodriguez,PAN,FWD,nations_league,Nations League,8,0,0,6,2,0,6,0,6.0,2.08,1.1232000000000002,0.0,0.0,0.0,1.44,0.0,0.0,0.75,0.0,0.0,0.692,0.78,0.0,0.0
+tomas_rodriguez__pan,Tomas Rodriguez,PAN,FWD,venskabskamp,Venskabskamp,21,3,0,12,1,0,12,2,20.0,10.7,5.397600000000001,0.7904,1.52,0.0,5.7,0.15,0.0,0.571,0.146,0.0,0.533,0.52,0.078,0.0759
 tomas_soucek__cze,Tomas Soucek,CZE,MID,slutrunde,Slutrunde,8,8,0,0,0,0,0,0,8.0,2.44,2.44,2.44,2.44,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,1.0,1.0
 tomas_soucek__cze,Tomas Soucek,CZE,MID,kvalifikation,Kvalifikation,41,37,0,1,0,0,1,2,41.0,12.100000000000001,10.89,10.440000000000001,11.600000000000001,0.0,0.1,0.902,0.0,0.024,0.959,0.0,0.008,0.9,0.8118,0.8631
 tomas_soucek__cze,Tomas Soucek,CZE,MID,nations_league,Nations League,22,18,0,2,2,0,0,0,20.0,5.08,3.8064000000000004,3.354,4.3,0.0,0.58,0.9,0.0,0.091,0.881,0.0,0.114,0.78,0.702,0.6872
@@ -3938,6 +4273,7 @@ tyler_adams__usa,Tyler Adams,USA,MID,venskabskamp,Venskabskamp,62,20,0,26,12,0,2
 tyler_bindon__nzl,Tyler Bindon,NZL,DEF,slutrunde,Slutrunde,4,4,0,0,0,0,0,0,4.0,1.92,1.92,1.92,1.92,0.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,1.0,1.0
 tyler_bindon__nzl,Tyler Bindon,NZL,DEF,kvalifikation,Kvalifikation,5,4,0,0,0,0,0,1,5.0,2.4,2.16,1.728,1.92,0.0,0.0,0.8,0.0,0.0,0.8,0.0,0.0,0.9,0.72,0.72
 tyler_bindon__nzl,Tyler Bindon,NZL,DEF,venskabskamp,Venskabskamp,21,11,0,1,1,0,1,2,20.0,12.64,6.323200000000001,3.8272000000000004,7.36,0.0,0.48,0.55,0.0,0.048,0.605,0.0,0.038,0.52,0.286,0.3146
+tyler_fletcher__sco,Tyler Fletcher,SCO,MID,venskabskamp,Venskabskamp,2,0,0,0,0,0,0,0,2.0,2.0,1.04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.52,0.0,0.0
 tyrese_noslin__cuw,Tyrese Noslin,CUW,MID,kvalifikation,Kvalifikation,6,0,0,0,0,0,0,3,6.0,4.08,3.6720000000000006,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.9,0.0,0.0
 tyrese_noslin__cuw,Tyrese Noslin,CUW,MID,venskabskamp,Venskabskamp,3,0,0,0,0,0,0,0,3.0,2.84,1.4768000000000001,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.52,0.0,0.0
 tyrick_bodak__cuw,Tyrick Bodak,CUW,GK,slutrunde,Slutrunde,3,0,0,2,0,0,2,1,3.0,2.04,2.04,0.0,0.0,0.0,1.36,0.0,0.0,0.667,0.0,0.0,0.667,1.0,0.0,0.0
@@ -3960,6 +4296,9 @@ unai_sim_n__esp,Unai Simon,ESP,GK,venskabskamp,Venskabskamp,14,6,0,1,0,0,1,7,14.
 utkir_yusupov__uzb,Utkir Yusupov,UZB,GK,slutrunde,Slutrunde,17,9,0,0,0,0,0,8,17.0,6.0,6.0,3.6,3.6,0.0,0.0,0.529,0.0,0.0,0.6,0.0,0.0,1.0,0.529,0.6
 utkir_yusupov__uzb,Utkir Yusupov,UZB,GK,kvalifikation,Kvalifikation,27,19,0,8,0,0,8,0,27.0,8.94,8.046000000000001,7.056,7.84,0.0,1.1,0.704,0.0,0.296,0.877,0.0,0.123,0.9,0.6336,0.7893
 utkir_yusupov__uzb,Utkir Yusupov,UZB,GK,venskabskamp,Venskabskamp,44,16,0,16,4,0,16,8,40.0,11.66,4.6488000000000005,2.2984000000000004,4.42,0.0,1.7000000000000002,0.4,0.0,0.364,0.494,0.0,0.146,0.52,0.208,0.2569
+valentin_barco__arg,Valentin Barco,ARG,MID,slutrunde,Slutrunde,7,0,0,7,0,0,7,0,7.0,3.8,3.8,0.0,0.0,0.0,3.8,0.0,0.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0
+valentin_barco__arg,Valentin Barco,ARG,MID,kvalifikation,Kvalifikation,12,0,0,10,0,0,10,2,12.0,6.5600000000000005,5.904,0.0,0.0,0.0,5.2,0.0,0.0,0.833,0.0,0.0,0.793,0.9,0.0,0.0
+valentin_barco__arg,Valentin Barco,ARG,MID,venskabskamp,Venskabskamp,10,1,0,2,0,0,2,5,10.0,6.48,3.3696,0.52,1.0,0.0,1.36,0.1,0.0,0.2,0.154,0.0,0.21,0.52,0.052,0.0801
 valentino_livramento__eng,Valentino Livramento,ENG,DEF,kvalifikation,Kvalifikation,8,1,0,2,3,0,2,1,5.0,5.04,2.7,0.6120000000000001,0.68,0.0,1.1600000000000001,0.2,0.0,0.25,0.227,0.0,0.23,0.9,0.18,0.2043
 valentino_livramento__eng,Valentino Livramento,ENG,DEF,nations_league,Nations League,6,1,0,0,0,0,0,5,6.0,2.88,2.2464,0.3744,0.48,0.0,0.0,0.167,0.0,0.0,0.167,0.0,0.0,0.78,0.1303,0.1303
 valentino_livramento__eng,Valentino Livramento,ENG,DEF,venskabskamp,Venskabskamp,5,1,0,1,1,0,1,0,4.0,4.2,1.8304,0.47840000000000005,0.92,0.0,0.68,0.25,0.0,0.2,0.261,0.0,0.162,0.52,0.13,0.1357
@@ -4026,6 +4365,7 @@ weston_mckennie__usa,Weston McKennie,USA,MID,venskabskamp,Venskabskamp,62,26,0,2
 weverton__bra,Weverton,BRA,GK,slutrunde,Slutrunde,27,1,0,15,0,0,15,10,27.0,5.42,5.42,0.2,0.2,0.0,3.02,0.037,0.0,0.556,0.037,0.0,0.557,1.0,0.037,0.037
 weverton__bra,Weverton,BRA,GK,kvalifikation,Kvalifikation,47,4,0,20,0,0,20,23,47.0,12.38,11.142000000000001,0.54,0.6000000000000001,0.0,6.88,0.085,0.0,0.426,0.048,0.0,0.556,0.9,0.0765,0.0432
 weverton__bra,Weverton,BRA,GK,venskabskamp,Venskabskamp,44,4,0,24,2,0,24,13,42.0,12.3,5.6888000000000005,0.31200000000000006,0.6000000000000001,0.0,6.4,0.095,0.0,0.545,0.055,0.0,0.52,0.52,0.0494,0.0286
+wi_je_cho__kor,Wi-je Cho,KOR,DEF,venskabskamp,Venskabskamp,2,0,0,0,0,0,0,1,2.0,2.0,1.04,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.52,0.0,0.0
 wilfried_stephane_singo__civ,Wilfried Stephane Singo,CIV,DEF,slutrunde,Slutrunde,20,4,0,8,5,0,8,0,15.0,8.09,3.8400000000000003,1.28,1.28,0.0,1.6,0.267,0.0,0.4,0.333,0.0,0.198,1.0,0.267,0.333
 wilfried_stephane_singo__civ,Wilfried Stephane Singo,CIV,DEF,kvalifikation,Kvalifikation,28,9,0,7,4,0,7,4,24.0,10.8,8.136000000000001,3.636,4.04,0.0,1.8800000000000001,0.375,0.0,0.25,0.447,0.0,0.174,0.9,0.3375,0.4023
 wilfried_stephane_singo__civ,Wilfried Stephane Singo,CIV,DEF,venskabskamp,Venskabskamp,19,11,0,4,0,0,4,2,19.0,8.34,4.3368,2.3816,4.58,0.0,1.7600000000000002,0.579,0.0,0.211,0.549,0.0,0.211,0.52,0.3011,0.2855
@@ -4123,6 +4463,9 @@ yousef_qashi__jor,Yousef Qashi,JOR,MID,ungdom_slutrunde,Ungdomsslutrunde,4,3,0,1
 youssef_amyn__irq,Youssef Amyn,IRQ,MID,slutrunde,Slutrunde,11,3,0,4,0,0,4,1,11.0,5.95,5.95,1.12,1.12,0.0,3.23,0.273,0.0,0.364,0.188,0.0,0.543,1.0,0.273,0.188
 youssef_amyn__irq,Youssef Amyn,IRQ,MID,kvalifikation,Kvalifikation,21,9,0,3,0,0,3,1,21.0,10.88,9.792,4.464,4.96,0.0,2.04,0.429,0.0,0.143,0.456,0.0,0.188,0.9,0.3861,0.4104
 youssef_amyn__irq,Youssef Amyn,IRQ,MID,venskabskamp,Venskabskamp,5,1,0,0,1,0,0,1,4.0,3.68,1.3936000000000002,0.3536,0.68,0.0,0.0,0.25,0.0,0.0,0.254,0.0,0.0,0.52,0.13,0.1321
+youssef_belammari__mar,Youssef Belammari,MAR,DEF,slutrunde,Slutrunde,20,7,0,7,0,0,4,6,20.0,15.64,15.64,4.760000000000001,4.760000000000001,0.0,5.78,0.35,0.0,0.35,0.304,0.0,0.37,1.0,0.35,0.304
+youssef_belammari__mar,Youssef Belammari,MAR,DEF,kvalifikation,Kvalifikation,9,5,0,2,2,0,2,0,7.0,4.92,3.564,2.52,2.8,0.0,1.1600000000000001,0.714,0.0,0.222,0.707,0.0,0.236,0.9,0.6426,0.6363
+youssef_belammari__mar,Youssef Belammari,MAR,DEF,venskabskamp,Venskabskamp,9,4,0,2,0,0,2,2,9.0,7.24,3.7648,1.5808,3.04,0.0,1.84,0.444,0.0,0.222,0.42,0.0,0.254,0.52,0.2309,0.2184
 youssef_en_nesyri__mar,Youssef En-Nesyri,MAR,FWD,slutrunde,Slutrunde,63,19,0,25,5,0,25,3,58.0,22.42,21.42,3.56,3.56,0.0,10.89,0.328,0.0,0.397,0.166,0.0,0.486,1.0,0.328,0.166
 youssef_en_nesyri__mar,Youssef En-Nesyri,MAR,FWD,kvalifikation,Kvalifikation,46,20,0,9,3,0,9,3,43.0,12.02,10.368,4.446000000000001,4.94,0.0,1.4200000000000002,0.465,0.0,0.196,0.429,0.0,0.118,0.9,0.4185,0.3861
 youssef_en_nesyri__mar,Youssef En-Nesyri,MAR,FWD,venskabskamp,Venskabskamp,46,19,0,9,1,0,9,5,45.0,9.620000000000001,4.9504,1.9448,3.74,0.0,0.9,0.422,0.0,0.196,0.393,0.0,0.094,0.52,0.2194,0.2044
@@ -4139,6 +4482,9 @@ yunus_akgun__tur,Yunus Akgün,TUR,FWD,slutrunde,Slutrunde,5,1,0,0,0,0,0,4,5.0,2.
 yunus_akgun__tur,Yunus Akgün,TUR,FWD,kvalifikation,Kvalifikation,16,4,0,5,3,0,5,3,13.0,8.24,5.904000000000001,2.1240000000000006,2.3600000000000003,0.0,1.36,0.308,0.0,0.312,0.36,0.0,0.165,0.9,0.2772,0.324
 yunus_akgun__tur,Yunus Akgün,TUR,FWD,nations_league,Nations League,14,4,0,2,2,0,2,1,12.0,5.04,3.1824000000000003,1.2792000000000001,1.64,0.0,0.96,0.333,0.0,0.143,0.402,0.0,0.19,0.78,0.2597,0.3136
 yunus_akgun__tur,Yunus Akgün,TUR,FWD,venskabskamp,Venskabskamp,12,2,0,4,3,0,4,1,9.0,5.84,2.3504,0.6864,1.32,0.0,1.4000000000000001,0.222,0.0,0.333,0.292,0.0,0.24,0.52,0.1154,0.1518
+yusuf_abdurisag__qat,Yusuf Abdurisag,QAT,FWD,slutrunde,Slutrunde,39,10,0,16,0,0,16,10,39.0,11.17,11.17,3.18,3.18,0.0,5.45,0.256,0.0,0.41,0.285,0.0,0.488,1.0,0.256,0.285
+yusuf_abdurisag__qat,Yusuf Abdurisag,QAT,FWD,kvalifikation,Kvalifikation,26,7,0,7,0,0,7,6,26.0,9.5,8.55,0.8280000000000001,0.92,0.0,3.8000000000000003,0.269,0.0,0.269,0.097,0.0,0.4,0.9,0.2421,0.0873
+yusuf_abdurisag__qat,Yusuf Abdurisag,QAT,FWD,venskabskamp,Venskabskamp,32,6,0,11,0,0,11,8,32.0,9.22,4.7944,1.7056,3.2800000000000002,0.0,1.7000000000000002,0.188,0.0,0.344,0.356,0.0,0.184,0.52,0.0978,0.1851
 yuto_nagatomo__jpn,Yuto Nagatomo,JPN,DEF,slutrunde,Slutrunde,64,37,0,24,0,0,24,3,64.0,9.940000000000001,9.940000000000001,4.680000000000001,4.680000000000001,0.0,3.8000000000000003,0.578,0.0,0.375,0.471,0.0,0.382,1.0,0.578,0.471
 yuto_nagatomo__jpn,Yuto Nagatomo,JPN,DEF,kvalifikation,Kvalifikation,84,45,0,25,7,0,25,7,77.0,15.24,13.086,4.86,5.4,0.0,7.92,0.584,0.0,0.298,0.371,0.0,0.52,0.9,0.5256,0.3339
 yuto_nagatomo__jpn,Yuto Nagatomo,JPN,DEF,venskabskamp,Venskabskamp,111,57,0,21,12,0,21,15,99.0,19.66,8.746400000000001,3.4736000000000002,6.680000000000001,0.0,5.0,0.576,0.0,0.189,0.397,0.0,0.254,0.52,0.2995,0.2064

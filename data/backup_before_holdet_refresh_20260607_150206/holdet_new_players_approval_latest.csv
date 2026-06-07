@@ -1,0 +1,205 @@
+﻿holdet_player_id,player_name,team_id,position,price,priority_bucket,suggested_action,approval,note
+50396,Ali Olwan,JOR,FWD,3500000,likely_relevant,add_to_player_pool_review,,Likely relevant; prioriter til manuel godkendelse.
+50389,Can Uzun,TUR,FWD,3500000,likely_relevant,add_to_player_pool_review,,Likely relevant; prioriter til manuel godkendelse.
+50421,Alejandro Romero Gamarra,PAR,MID,3000000,likely_relevant,add_to_player_pool_review,,Likely relevant; prioriter til manuel godkendelse.
+50382,Abbosbek Fayzullaev,UZB,MID,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50364,Abdul Rahman Baba,GHA,DEF,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50289,Adam Hlozek,CZE,FWD,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50307,Agustin Canobbio,URU,MID,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50257,Ahmed Reda Tagnaouti,MAR,GK,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50366,Alidu Seidu,GHA,DEF,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+48813,Alvyn Sanches,SUI,MID,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50249,Auston Trusty,USA,DEF,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50258,Ayoube Amaimouni-Echghouyab,MAR,MID,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+48893,Benie Traore,CIV,FWD,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50390,Caglar Soyuncu,TUR,DEF,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50311,Carney Chukwuemeka,AUT,MID,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50283,Cesar Huerta,MEX,MID,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50356,Denil Castillo,ECU,MID,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50394,Ehsan Haddad,JOR,DEF,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50368,Ernest Nuamah,GHA,FWD,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50418,Fabian Balbuena,PAR,DEF,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49089,Fabinho,BRA,MID,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50273,Facundo Medina,ARG,DEF,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50313,Florian Wiegele,AUT,GK,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50043,Gedeon Kalulu,COD,DEF,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50267,Guus Til,NED,MID,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50250,Haji Wright,USA,FWD,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50303,Harry Souttar,AUS,DEF,2500000,depth_or_watchlist,add_to_player_pool_review,,Manuelt prioriteret review-navn.
+50399,Hassan Al-Haydos,QAT,MID,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49194,Hugo Larsson,SWE,MID,2500000,depth_or_watchlist,add_to_player_pool_review,,Manuelt prioriteret review-navn.
+50278,Iqraam Rayners,RSA,FWD,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50304,Jackson Irvine,AUS,MID,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50381,Jaloliddin Masharipov,UZB,MID,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50317,Jaouen Hadjam,ALG,DEF,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50295,Jindrich Stanek,CZE,GK,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50251,Joe Scally,USA,DEF,2500000,depth_or_watchlist,add_to_player_pool_review,,Manuelt prioriteret review-navn.
+49297,Joel Monteiro,SUI,FWD,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50363,Jonas Adjetey,GHA,DEF,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50268,Justin Kluivert,NED,MID,2500000,depth_or_watchlist,add_to_player_pool_review,,Manuelt prioriteret review-navn.
+50411,Khalid Al-Ghannam,KSA,MID,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49445,Logan Rogerson,NZL,FWD,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49448,Lovro Majer,CRO,MID,2500000,depth_or_watchlist,add_to_player_pool_review,,Manuelt prioriteret review-navn.
+50286,Luis Romo,MEX,MID,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50287,Mateo Chavez,MEX,DEF,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50270,Mats Wieffer,NED,MID,2500000,depth_or_watchlist,add_to_player_pool_review,,Manuelt prioriteret review-navn.
+50318,Melvin Feycal Mastil,ALG,GK,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50314,Michael Svoboda,AUT,DEF,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50388,Mladen Jurkas,BIH,GK,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50298,Moïse Bombito,CAN,DEF,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50320,Nabil Bentaleb,ALG,MID,2500000,depth_or_watchlist,add_to_player_pool_review,,Manuelt prioriteret review-navn.
+49622,Naim Sliti,TUN,MID,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50393,Noureddin Bani Attiah,JOR,GK,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49669,Noureddine Farhati,TUN,GK,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50321,Oussama Benbout,ALG,GK,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50362,Paul Reverson,GHA,GK,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50315,Paul Wanner,AUT,MID,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50392,Rajaei Ayed,JOR,MID,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50400,Salah Zakaria,QAT,GK,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50370,Saleh Hardani,IRN,DEF,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50316,Sasa Kalajdzic,AUT,FWD,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49849,Shuto Machino,JPN,FWD,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50361,Solomon Agbasi,GHA,GK,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50300,Stephen Eustaquio,CAN,MID,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50416,Sultan Mandash,KSA,FWD,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49904,Tommy Conway,SCO,FWD,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50276,Valentin Barco,ARG,MID,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49927,Viljar Myhra,NOR,GK,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49928,Vincent Sierro,SUI,MID,2500000,depth_or_watchlist,add_to_player_pool_review,,Manuelt prioriteret review-navn.
+49947,Williot Swedberg,SWE,FWD,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49963,Yassine Meriah,TUN,DEF,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49969,Yerson Mosquera,COL,DEF,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49979,Youssef Msakni,TUN,FWD,2500000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50358,Aaron Tshibola,COD,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+48720,Abdou Diallo,SEN,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50365,Abdul Mumin,GHA,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50385,Abdulla Abdullaev,UZB,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+48739,Adrian Bajrami,SUI,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50379,Ahmed Yahya,IRQ,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+48754,Aissa Laidouni,TUN,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50398,Al-Hashmi Al-Hussain,QAT,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+48760,Alaa Ghram,TUN,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50406,Alaa Hejji,KSA,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50248,Alex Zendejas,USA,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50290,Alexandr Sojka,CZE,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50423,Alexandro Maidana,PAR,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+48799,Ali Maaloul,TUN,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+48825,Amor Layouni,TUN,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50395,Anas Badawi,JOR,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+48827,Andi Zeqiri,SUI,FWD,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+48832,Andrew Irving,SCO,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50374,Arya Yousefi,IRN,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50367,Augustine Boakye,GHA,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50387,Avazbek Ulmasaliyev,UZB,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50259,Ayyoub Bouaddi,MAR,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50254,Azarias Londono,PAN,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+48890,Becir Omeragic,SUI,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50386,Behruzjon Karimov,UZB,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+48901,Bill Tuiloma,NZL,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50277,Bradley Cross,RSA,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+48942,Cedric Zesiger,SUI,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+48951,Charles Vanhoutte,BEL,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+48953,Cheikh Niasse,SEN,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50360,Christopher Operi,CIV,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+48973,Daiki Hashioka,JPN,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50376,Dennis 'Dargahi' Eckert Ayensa,IRN,FWD,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50255,Edgardo Farina,PAN,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49099,Felix Horn Myhre,NOR,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49107,Filip Ugrinic,SUI,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50260,Gessime Yassine,MAR,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49135,Ghaith Zaalouni,TUN,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50417,Gustavo Caballero,PAR,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50408,Hassan Al Tambakti,KSA,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50409,Hassan Kadesh,KSA,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49179,Henry Mochizuki,JPN,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50293,Hugo Sochurek,CZE,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49220,Isaac Schmidt,SUI,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50422,Isidro Pitta,PAR,FWD,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49222,Islam Issa,EGY,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50297,Jacob Shaffelburg,CAN,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49247,James McGarry,NZL,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50410,Jehad Thakri,KSA,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49296,Joel Chima Fujita,JPN,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50279,Kamogelo Sebelebele,RSA,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50046,Keeto Thermoncy,HAI,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49396,Khaled Sobhi,EGY,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49429,Lennon Miller,SCO,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49447,Louey Ben Farhat,TUN,FWD,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49453,Lucas Blondel,SUI,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50285,Luis Chavez,MEX,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49470,Lukas Kelly-Heald,NZL,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50305,Mathew Leckie,AUS,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50420,Mauricio Magalhaes Prado,PAR,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50414,Moteb Al-Harbi,KSA,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50378,Mustafa Saadoon,IRQ,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49623,Nampalys Mendy,SEN,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49625,Nasser Mansy,EGY,FWD,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50357,Nilson Angulo,ECU,FWD,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49678,Odin Bjørtuft,NOR,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50280,Olwethu Makhanya,RSA,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50261,Redouane Halhal,MAR,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49791,Romeo Vermant,BEL,FWD,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50372,Roozbeh Cheshmi,IRN,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49797,Ross McCrorie,SCO,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49808,Ryunosuke Sato,JPN,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50322,Samir Chergui,ALG,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50262,Samir El Mourabet,MAR,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49828,Sayfallah Ltaief,TUN,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49834,Sebastian Nanasi,SWE,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50401,Seydinaissa Laye,QAT,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49854,Simon Sohm,SUI,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50402,Tahsin Jamshid,QAT,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50306,Tete Yengi,AUS,FWD,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50256,Tomas Rodriguez,PAN,FWD,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49906,Tomoya Ando,JPN,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50424,Tyler Fletcher,SCO,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50425,Wi-je Cho,KOR,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49950,Woobens Pacius,HAI,FWD,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49980,Youssouf Sabaly,SEN,DEF,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+49983,Yuki Soma,JPN,MID,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+50403,Yusuf Abdurisag,QAT,FWD,2000000,depth_or_watchlist,add_to_player_pool_review,,no_name_team_match
+48855,Antonio Silva,POR,DEF,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+49235,Ivan Smolcic,CRO,DEF,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+49541,Maximilian Mittelstädt,GER,DEF,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+50319,Mohamed Amine Tougai,ALG,DEF,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+50275,Lisandro Martinez,ARG,DEF,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+49173,Harry Maguire,ENG,DEF,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+49344,Ju-sung Kim,KOR,DEF,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+50264,Youssef Belammari,MAR,DEF,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+49704,Pape Abou Cisse,SEN,DEF,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+50412,Mohammed Abu Al-Shamat,KSA,DEF,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+50391,Saed Al-Rosan,JOR,DEF,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+49180,Heri Tavares,CPV,DEF,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+49005,Delentz Pierre,HAI,DEF,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+48922,Bruno Varela,CPV,GK,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+49829,Scott Bain,SCO,GK,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+50405,Ahmed Al-Kassar,KSA,GK,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+50413,Mohammed Al-Owais,KSA,GK,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+50377,Jalal Hassan,IRQ,GK,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+50404,Seyed Hossein Hosseini,IRN,GK,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+48768,Alejandro 'Alex' Remiro,ESP,GK,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+49454,Lucas Chevalier,FRA,GK,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+49287,Joao Carvalho,POR,GK,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+50291,David Doudera,CZE,MID,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+48766,Aleix Garcia,ESP,MID,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+49278,Jesus Rodriguez,ESP,MID,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+49181,Herman Johansson,SWE,MID,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+50302,Cristian Volpato,AUS,MID,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+50301,Cameron Devlin,AUS,MID,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+49128,Gabriel Sara,BRA,MID,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+49932,Vitinho,BRA,MID,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+49405,Koki Saito,JPN,MID,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+49197,Hyeok-kyu Kwon,KOR,MID,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+50272,Gilberto Mora,MEX,MID,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+50373,Mehdi Torabi,IRN,MID,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+50380,Ahmed Qasem,IRQ,MID,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+50263,Soufiane Rahimi,MAR,MID,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+49574,Mohamed Ali Ben Romdhane,TUN,MID,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+50384,Sherzod Esanov,UZB,MID,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+48752,Ailson Tavares,CPV,MID,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+50383,Azizbek Amanov,UZB,FWD,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+50415,Saleh Al-Shehri,KSA,FWD,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+48908,Boulaye Dia,SEN,FWD,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+49162,Habib Diallo,SEN,FWD,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+49610,Mostafa Mohamed,EGY,FWD,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.
+50288,Santiago Gimenez,MEX,FWD,,mismatch_likely_new_player,manual_approve_before_import,,Closest match ligner en anden spiller; behandles som mulig ny spiller efter manuel godkendelse.

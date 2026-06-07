@@ -1,0 +1,232 @@
+﻿player_id,player_name,team_id,position,price,ev_match_method,ev_match_score,weighted_group_stage_ev,start_prob
+becir_omeragic__sui,Becir Omeragic,SUI,DEF,2000000,unmatched,0.5217391304347826,0.0,0.25
+cedric_zesiger__sui,Cedric Zesiger,SUI,DEF,2000000,unmatched,0.6153846153846154,0.0,0.25
+isaac_schmidt__sui,Isaac Schmidt,SUI,DEF,2000000,unmatched,0.4666666666666667,0.0,0.25
+adrian_bajrami__sui,Adrian Bajrami,SUI,DEF,2000000,unmatched,0.5185185185185185,0.0,0.25
+lucas_blondel__sui,Lucas Blondel,SUI,DEF,2000000,unmatched,0.46153846153846156,0.0,0.25
+david_zima__cze,David Zima,CZE,DEF,2000000,unmatched,0.56,0.0,0.25
+nuno_tavares__por,Nuno Tavares,POR,DEF,3500000,unmatched,0.6086956521739131,0.0,0.25
+antonio_silva__por,Antonio Silva,POR,DEF,3500000,unmatched,0.6363636363636364,0.0,0.25
+caglar_soyuncu__tur,Caglar Soyuncu,TUR,DEF,2500000,unmatched,0.56,0.0,0.25
+david_affengruber__aut,David Affengruber,AUT,DEF,2500000,unmatched,0.45161290322580644,0.0,0.25
+michael_svoboda__aut,Michael Svoboda,AUT,DEF,2500000,unmatched,0.5294117647058824,0.0,0.25
+ivan_smolcic__cro,Ivan Smolcic,CRO,DEF,2000000,unmatched,0.6666666666666666,0.0,0.25
+maximilian_mittelstadt__ger,Maximilian Mittelstädt,GER,DEF,3500000,unmatched,0.6842105263157895,0.0,0.25
+victor_eriksson__swe,Victor Eriksson,SWE,DEF,2000000,unmatched,0.6451612903225806,0.0,0.25
+mohamed_amine_tougai__alg,Mohamed Amine Tougai,ALG,DEF,2000000,unmatched,0.7741935483870968,0.0,0.25
+jaouen_hadjam__alg,Jaouen Hadjam,ALG,DEF,2500000,unmatched,0.5517241379310345,0.0,0.25
+samir_chergui__alg,Samir Chergui,ALG,DEF,2000000,unmatched,0.6086956521739131,0.0,0.25
+lisandro_martinez__arg,Lisandro Martinez,ARG,DEF,3000000,unmatched,0.8235294117647058,0.0,0.25
+facundo_medina__arg,Facundo Medina,ARG,DEF,2500000,unmatched,0.5185185185185185,0.0,0.25
+harry_souttar__aus,Harry Souttar,AUS,DEF,2500000,unmatched,0.46153846153846156,0.0,0.25
+christopher_operi__civ,Christopher Operi,CIV,DEF,2000000,unmatched,0.5882352941176471,0.0,0.25
+harry_maguire__eng,Harry Maguire,ENG,DEF,3000000,unmatched,0.6956521739130435,0.0,0.25
+alidu_seidu__gha,Alidu Seidu,GHA,DEF,2500000,unmatched,0.47619047619047616,0.0,0.25
+abdul_rahman_baba__gha,Abdul Rahman Baba,GHA,DEF,2500000,unmatched,0.631578947368421,0.0,0.25
+abdul_mumin__gha,Abdul Mumin,GHA,DEF,2000000,unmatched,0.5714285714285714,0.0,0.25
+jonas_adjetey__gha,Jonas Adjetey,GHA,DEF,2500000,unmatched,0.6153846153846154,0.0,0.25
+tomoya_ando__jpn,Tomoya Ando,JPN,DEF,2000000,unmatched,0.6086956521739131,0.0,0.25
+henry_mochizuki__jpn,Henry Mochizuki,JPN,DEF,2000000,unmatched,0.48,0.0,0.25
+daiki_hashioka__jpn,Daiki Hashioka,JPN,DEF,2000000,unmatched,0.56,0.0,0.25
+ju_sung_kim__kor,Ju-sung Kim,KOR,DEF,2000000,unmatched,0.8333333333333334,0.0,0.25
+wi_je_cho__kor,Wi-je Cho,KOR,DEF,2000000,unmatched,0.5714285714285714,0.0,0.25
+mateo_chavez__mex,Mateo Chavez,MEX,DEF,2500000,unmatched,0.56,0.0,0.25
+lukas_kelly_heald__nzl,Lukas Kelly-Heald,NZL,DEF,2000000,unmatched,0.41379310344827586,0.0,0.25
+james_mcgarry__nzl,James McGarry,NZL,DEF,2000000,unmatched,0.43478260869565216,0.0,0.25
+bill_tuiloma__nzl,Bill Tuiloma,NZL,DEF,2000000,unmatched,0.5,0.0,0.25
+jose_canale__par,Jose Canale,PAR,DEF,2000000,unmatched,0.5714285714285714,0.0,0.25
+fabian_balbuena__par,Fabian Balbuena,PAR,DEF,2500000,unmatched,0.5806451612903226,0.0,0.25
+alexandro_maidana__par,Alexandro Maidana,PAR,DEF,2000000,unmatched,0.5454545454545454,0.0,0.25
+olwethu_makhanya__rsa,Olwethu Makhanya,RSA,DEF,2000000,unmatched,0.4666666666666667,0.0,0.25
+bradley_cross__rsa,Bradley Cross,RSA,DEF,2000000,unmatched,0.56,0.0,0.25
+kamogelo_sebelebele__rsa,Kamogelo Sebelebele,RSA,DEF,2000000,unmatched,0.5263157894736842,0.0,0.25
+sebastian_caceres__uru,Sebastian Caceres,URU,DEF,2500000,unmatched,0.5625,0.0,0.25
+auston_trusty__usa,Auston Trusty,USA,DEF,2500000,unmatched,0.4827586206896552,0.0,0.25
+joe_scally__usa,Joe Scally,USA,DEF,2500000,unmatched,0.36363636363636365,0.0,0.25
+yerson_mosquera__col,Yerson Mosquera,COL,DEF,2500000,unmatched,0.6,0.0,0.25
+saleh_hardani__irn,Saleh Hardani,IRN,DEF,2500000,unmatched,0.5384615384615384,0.0,0.25
+daniyal_eiri__irn,Daniyal Eiri,IRN,DEF,2000000,unmatched,0.43478260869565216,0.0,0.25
+arya_yousefi__irn,Arya Yousefi,IRN,DEF,2000000,unmatched,0.4444444444444444,0.0,0.25
+mustafa_saadoon__irq,Mustafa Saadoon,IRQ,DEF,2000000,unmatched,0.4,0.0,0.25
+ahmed_yahya__irq,Ahmed Yahya,IRQ,DEF,2000000,unmatched,0.5517241379310345,0.0,0.25
+edgardo_farina__pan,Edgardo Farina,PAN,DEF,2000000,unmatched,0.5,0.0,0.25
+khaled_sobhi__egy,Khaled Sobhi,EGY,DEF,2000000,unmatched,0.56,0.0,0.25
+ahmed_nabil_kouka__egy,Ahmed Nabil Kouka,EGY,DEF,2000000,unmatched,0.6206896551724138,0.0,0.25
+redouane_halhal__mar,Redouane Halhal,MAR,DEF,2000000,unmatched,0.4827586206896552,0.0,0.25
+youssef_belammari__mar,Youssef Belammari,MAR,DEF,2000000,unmatched,0.6470588235294118,0.0,0.25
+youssouf_sabaly__sen,Youssouf Sabaly,SEN,DEF,2000000,unmatched,0.5333333333333333,0.0,0.25
+pape_abou_cisse__sen,Pape Abou Cisse,SEN,DEF,2000000,unmatched,0.64,0.0,0.25
+abdou_diallo__sen,Abdou Diallo,SEN,DEF,2000000,unmatched,0.5,0.0,0.25
+ghaith_zaalouni__tun,Ghaith Zaalouni,TUN,DEF,2000000,unmatched,0.5217391304347826,0.0,0.25
+ali_maaloul__tun,Ali Maaloul,TUN,DEF,2000000,unmatched,0.5454545454545454,0.0,0.25
+yassine_meriah__tun,Yassine Meriah,TUN,DEF,2500000,unmatched,0.5925925925925926,0.0,0.25
+alaa_ghram__tun,Alaa Ghram,TUN,DEF,2000000,unmatched,0.5217391304347826,0.0,0.25
+nawaf_bu_washl__ksa,Nawaf Bu Washl,KSA,DEF,2500000,unmatched,0.7692307692307693,0.0,0.25
+moteb_al_harbi__ksa,Moteb Al-Harbi,KSA,DEF,2000000,unmatched,0.5517241379310345,0.0,0.25
+jehad_thakri__ksa,Jehad Thakri,KSA,DEF,2000000,unmatched,0.4827586206896552,0.0,0.25
+hassan_al_tambakti__ksa,Hassan Al Tambakti,KSA,DEF,2000000,unmatched,0.6060606060606061,0.0,0.25
+ali_lajami__ksa,Ali Lajami,KSA,DEF,2000000,unmatched,0.5,0.0,0.25
+hassan_kadesh__ksa,Hassan Kadesh,KSA,DEF,2000000,unmatched,0.4666666666666667,0.0,0.25
+mohammed_abu_al_shamat__ksa,Mohammed Abu Al-Shamat,KSA,DEF,2500000,unmatched,0.7083333333333334,0.0,0.25
+al_hashmi_al_hussain__qat,Al-Hashmi Al-Hussain,QAT,DEF,2000000,unmatched,0.5454545454545454,0.0,0.25
+seydinaissa_laye__qat,Seydinaissa Laye,QAT,DEF,2000000,unmatched,0.4,0.0,0.25
+homam_al_amin_ahmed__qat,Homam Al-Amin Ahmed,QAT,DEF,2500000,unmatched,0.8148148148148148,0.0,0.25
+ross_mccrorie__sco,Ross McCrorie,SCO,DEF,2000000,unmatched,0.48,0.0,0.25
+moise_bombito__can,Moïse Bombito,CAN,DEF,2500000,unmatched,0.46153846153846156,0.0,0.25
+alfie_jones__can,Alfie Jones,CAN,DEF,2000000,unmatched,0.5714285714285714,0.0,0.25
+abdulla_abdullaev__uzb,Abdulla Abdullaev,UZB,DEF,2000000,unmatched,0.5,0.0,0.25
+behruzjon_karimov__uzb,Behruzjon Karimov,UZB,DEF,2000000,unmatched,0.5294117647058824,0.0,0.25
+avazbek_ulmasaliyev__uzb,Avazbek Ulmasaliyev,UZB,DEF,2000000,unmatched,0.47368421052631576,0.0,0.25
+anas_badawi__jor,Anas Badawi,JOR,DEF,2000000,unmatched,0.5,0.0,0.25
+ehsan_haddad__jor,Ehsan Haddad,JOR,DEF,2500000,unmatched,0.4666666666666667,0.0,0.25
+saed_al_rosan__jor,Saed Al-Rosan,JOR,DEF,2000000,unmatched,0.6206896551724138,0.0,0.25
+heri_tavares__cpv,Heri Tavares,CPV,DEF,2500000,unmatched,0.6666666666666666,0.0,0.25
+odin_bjortuft__nor,Odin Bjørtuft,NOR,DEF,2000000,unmatched,0.4375,0.0,0.25
+keeto_thermoncy__hai,Keeto Thermoncy,HAI,DEF,2000000,unmatched,0.4666666666666667,0.0,0.25
+delentz_pierre__hai,Delentz Pierre,HAI,DEF,2000000,unmatched,0.6896551724137931,0.0,0.25
+aaron_tshibola__cod,Aaron Tshibola,COD,DEF,2000000,unmatched,0.5161290322580645,0.0,0.25
+gedeon_kalulu__cod,Gedeon Kalulu,COD,DEF,2500000,unmatched,0.5,0.0,0.25
+viljar_myhra__nor,Viljar Myhra,NOR,GK,2500000,unmatched,0.3448275862068966,0.0,0.25
+bruno_varela__cpv,Bruno Varela,CPV,GK,2500000,unmatched,0.6666666666666666,0.0,0.25
+noureddin_bani_attiah__jor,Noureddin Bani Attiah,JOR,GK,2500000,unmatched,0.4878048780487805,0.0,0.25
+scott_bain__sco,Scott Bain,SCO,GK,2500000,unmatched,0.64,0.0,0.25
+salah_zakaria__qat,Salah Zakaria,QAT,GK,2500000,unmatched,0.5,0.0,0.25
+ahmed_al_kassar__ksa,Ahmed Al-Kassar,KSA,GK,2500000,unmatched,0.6451612903225806,0.0,0.25
+mohammed_al_owais__ksa,Mohammed Al-Owais,KSA,GK,3000000,unmatched,0.6666666666666666,0.0,0.25
+noureddine_farhati__tun,Noureddine Farhati,TUN,GK,2500000,unmatched,0.45161290322580644,0.0,0.25
+ahmed_reda_tagnaouti__mar,Ahmed Reda Tagnaouti,MAR,GK,2500000,unmatched,0.45714285714285713,0.0,0.25
+munir_mohamedi_el_kajoui__mar,Munir Mohamedi El Kajoui,MAR,GK,3000000,unmatched,0.7692307692307693,0.0,0.25
+jalal_hassan__irq,Jalal Hassan,IRQ,GK,2500000,unmatched,0.64,0.0,0.25
+seyed_hossein_hosseini__irn,Seyed Hossein Hosseini,IRN,GK,2500000,unmatched,0.6956521739130435,0.0,0.25
+mladen_jurkas__bih,Mladen Jurkas,BIH,GK,2500000,unmatched,0.46153846153846156,0.0,0.25
+solomon_agbasi__gha,Solomon Agbasi,GHA,GK,2500000,unmatched,0.5,0.0,0.25
+paul_reverson__gha,Paul Reverson,GHA,GK,2500000,unmatched,0.37037037037037035,0.0,0.25
+oussama_benbout__alg,Oussama Benbout,ALG,GK,2500000,unmatched,0.6153846153846154,0.0,0.25
+melvin_feycal_mastil__alg,Melvin Feycal Mastil,ALG,GK,2500000,unmatched,0.4375,0.0,0.25
+alejandro_alex_remiro__esp,Alejandro 'Alex' Remiro,ESP,GK,4000000,unmatched,0.4444444444444444,0.0,0.25
+lucas_chevalier__fra,Lucas Chevalier,FRA,GK,4000000,unmatched,0.46153846153846156,0.0,0.25
+florian_wiegele__aut,Florian Wiegele,AUT,GK,2500000,unmatched,0.6060606060606061,0.0,0.25
+joao_carvalho__por,Joao Carvalho,POR,GK,3500000,unmatched,0.6153846153846154,0.0,0.25
+jindrich_stanek__cze,Jindrich Stanek,CZE,GK,2500000,unmatched,0.5517241379310345,0.0,0.25
+vincent_sierro__sui,Vincent Sierro,SUI,MID,2500000,unmatched,0.4666666666666667,0.0,0.25
+simon_sohm__sui,Simon Sohm,SUI,MID,2000000,unmatched,0.43478260869565216,0.0,0.25
+alvyn_sanches__sui,Alvyn Sanches,SUI,MID,2500000,unmatched,0.45454545454545453,0.0,0.25
+filip_ugrinic__sui,Filip Ugrinic,SUI,MID,2000000,unmatched,0.38461538461538464,0.0,0.25
+david_doudera__cze,David Doudera,CZE,MID,2000000,unmatched,0.5,0.0,0.25
+hugo_sochurek__cze,Hugo Sochurek,CZE,MID,2000000,unmatched,0.56,0.0,0.25
+alexandr_sojka__cze,Alexandr Sojka,CZE,MID,2000000,unmatched,0.47619047619047616,0.0,0.25
+carney_chukwuemeka__aut,Carney Chukwuemeka,AUT,MID,2500000,unmatched,0.3870967741935484,0.0,0.25
+paul_wanner__aut,Paul Wanner,AUT,MID,2500000,unmatched,0.45454545454545453,0.0,0.25
+lovro_majer__cro,Lovro Majer,CRO,MID,2500000,unmatched,0.5,0.0,0.25
+assan_ouedraogo__ger,Assan Ouedraogo,GER,MID,3000000,unmatched,0.3870967741935484,0.0,0.25
+marten_de_roon__ned,Marten de Roon,NED,MID,2500000,unmatched,0.6206896551724138,0.0,0.25
+justin_kluivert__ned,Justin Kluivert,NED,MID,2500000,unmatched,0.45161290322580644,0.0,0.25
+guus_til__ned,Guus Til,NED,MID,2500000,unmatched,0.32,0.0,0.25
+mats_wieffer__ned,Mats Wieffer,NED,MID,2500000,unmatched,0.4,0.0,0.25
+pablo_barrios__esp,Pablo Barrios,ESP,MID,3000000,unmatched,0.45454545454545453,0.0,0.25
+aleix_garcia__esp,Aleix Garcia,ESP,MID,3000000,unmatched,0.4444444444444444,0.0,0.25
+pablo_fornals__esp,Pablo Fornals,ESP,MID,3000000,unmatched,0.48,0.0,0.25
+jesus_rodriguez__esp,Jesus Rodriguez,ESP,MID,3500000,unmatched,0.2962962962962963,0.0,0.25
+sebastian_nanasi__swe,Sebastian Nanasi,SWE,MID,2000000,unmatched,0.45161290322580644,0.0,0.25
+hugo_larsson__swe,Hugo Larsson,SWE,MID,2500000,unmatched,0.5384615384615384,0.0,0.25
+herman_johansson__swe,Herman Johansson,SWE,MID,2500000,unmatched,0.42857142857142855,0.0,0.25
+nabil_bentaleb__alg,Nabil Bentaleb,ALG,MID,2500000,unmatched,0.5185185185185185,0.0,0.25
+valentin_barco__arg,Valentin Barco,ARG,MID,2500000,unmatched,0.5333333333333333,0.0,0.25
+cristian_volpato__aus,Cristian Volpato,AUS,MID,2500000,unmatched,0.5454545454545454,0.0,0.25
+cameron_devlin__aus,Cameron Devlin,AUS,MID,2000000,unmatched,0.5,0.0,0.25
+fabinho__bra,Fabinho,BRA,MID,2500000,unmatched,0.5333333333333333,0.0,0.25
+jackson_irvine__aus,Jackson Irvine,AUS,MID,2500000,unmatched,0.43478260869565216,0.0,0.25
+mathew_leckie__aus,Mathew Leckie,AUS,MID,2000000,unmatched,0.48,0.0,0.25
+gabriel_sara__bra,Gabriel Sara,BRA,MID,2500000,unmatched,0.6666666666666666,0.0,0.25
+andrey_santos__bra,Andrey Santos,BRA,MID,3000000,unmatched,0.4444444444444444,0.0,0.25
+vitinho__bra,Vitinho,BRA,MID,2500000,unmatched,0.47058823529411764,0.0,0.25
+augustine_boakye__gha,Augustine Boakye,GHA,MID,2000000,unmatched,0.46153846153846156,0.0,0.25
+kodai_sano__jpn,Kodai Sano,JPN,MID,2000000,unmatched,0.7619047619047619,0.0,0.25
+ryunosuke_sato__jpn,Ryunosuke Sato,JPN,MID,2000000,unmatched,0.5384615384615384,0.0,0.25
+koki_saito__jpn,Koki Saito,JPN,MID,2000000,unmatched,0.6,0.0,0.25
+joel_chima_fujita__jpn,Joel Chima Fujita,JPN,MID,2000000,unmatched,0.41379310344827586,0.0,0.25
+hyeok_kyu_kwon__kor,Hyeok-kyu Kwon,KOR,MID,2000000,unmatched,0.6923076923076923,0.0,0.25
+yuki_soma__jpn,Yuki Soma,JPN,MID,2000000,unmatched,0.5263157894736842,0.0,0.25
+hyun_seok_hong__kor,Hyun-seok Hong,KOR,MID,2000000,unmatched,0.5925925925925926,0.0,0.25
+gilberto_mora__mex,Gilberto Mora,MEX,MID,2500000,unmatched,0.5806451612903226,0.0,0.25
+cesar_huerta__mex,Cesar Huerta,MEX,MID,2500000,unmatched,0.5,0.0,0.25
+luis_chavez__mex,Luis Chavez,MEX,MID,2000000,unmatched,0.5454545454545454,0.0,0.25
+luis_romo__mex,Luis Romo,MEX,MID,2500000,unmatched,0.4,0.0,0.25
+alejandro_romero_gamarra__par,Alejandro Romero Gamarra,PAR,MID,3000000,unmatched,0.5555555555555556,0.0,0.25
+mauricio_magalhaes_prado__par,Mauricio Magalhaes Prado,PAR,MID,2000000,unmatched,0.55,0.0,0.25
+gustavo_caballero__par,Gustavo Caballero,PAR,MID,2000000,unmatched,0.4375,0.0,0.25
+rodrigo_zalazar__uru,Rodrigo Zalazar,URU,MID,3500000,unmatched,0.6666666666666666,0.0,0.25
+agustin_canobbio__uru,Agustin Canobbio,URU,MID,2500000,unmatched,0.5806451612903226,0.0,0.25
+alex_zendejas__usa,Alex Zendejas,USA,MID,2000000,unmatched,0.4375,0.0,0.25
+denil_castillo__ecu,Denil Castillo,ECU,MID,2500000,unmatched,0.4444444444444444,0.0,0.25
+amir_mohammad_razzaghinia__irn,Amir Mohammad Razzaghinia,IRN,MID,2000000,unmatched,0.55,0.0,0.25
+roozbeh_cheshmi__irn,Roozbeh Cheshmi,IRN,MID,2000000,unmatched,0.4444444444444444,0.0,0.25
+mehdi_torabi__irn,Mehdi Torabi,IRN,MID,2000000,unmatched,0.75,0.0,0.25
+ahmed_qasem__irq,Ahmed Qasem,IRQ,MID,2000000,unmatched,0.5,0.0,0.25
+charles_vanhoutte__bel,Charles Vanhoutte,BEL,MID,2000000,unmatched,0.5405405405405406,0.0,0.25
+alberto_quintero__pan,Alberto Quintero,PAN,MID,2000000,unmatched,0.3870967741935484,0.0,0.25
+azarias_londono__pan,Azarias Londono,PAN,MID,2000000,unmatched,0.4444444444444444,0.0,0.25
+islam_issa__egy,Islam Issa,EGY,MID,2000000,unmatched,0.45454545454545453,0.0,0.25
+ayoube_amaimouni_echghouyab__mar,Ayoube Amaimouni-Echghouyab,MAR,MID,2500000,unmatched,0.4864864864864865,0.0,0.25
+samir_el_mourabet__mar,Samir El Mourabet,MAR,MID,2000000,unmatched,0.5625,0.0,0.25
+soufiane_rahimi__mar,Soufiane Rahimi,MAR,MID,2500000,unmatched,0.6153846153846154,0.0,0.25
+gessime_yassine__mar,Gessime Yassine,MAR,MID,2000000,unmatched,0.5,0.0,0.25
+ayyoub_bouaddi__mar,Ayyoub Bouaddi,MAR,MID,2000000,unmatched,0.5714285714285714,0.0,0.25
+cheikh_niasse__sen,Cheikh Niasse,SEN,MID,2000000,unmatched,0.5806451612903226,0.0,0.25
+nampalys_mendy__sen,Nampalys Mendy,SEN,MID,2000000,unmatched,0.48,0.0,0.25
+aissa_laidouni__tun,Aissa Laidouni,TUN,MID,2000000,unmatched,0.5454545454545454,0.0,0.25
+amor_layouni__tun,Amor Layouni,TUN,MID,2000000,unmatched,0.5384615384615384,0.0,0.25
+naim_sliti__tun,Naim Sliti,TUN,MID,2500000,unmatched,0.4166666666666667,0.0,0.25
+mohamed_ali_ben_romdhane__tun,Mohamed Ali Ben Romdhane,TUN,MID,3500000,unmatched,0.46153846153846156,0.0,0.25
+sayfallah_ltaief__tun,Sayfallah Ltaief,TUN,MID,2000000,unmatched,0.4444444444444444,0.0,0.25
+alaa_hejji__ksa,Alaa Hejji,KSA,MID,2000000,unmatched,0.4444444444444444,0.0,0.25
+khalid_al_ghannam__ksa,Khalid Al-Ghannam,KSA,MID,2500000,unmatched,0.45714285714285713,0.0,0.25
+hassan_al_haydos__qat,Hassan Al-Haydos,QAT,MID,2500000,unmatched,0.5517241379310345,0.0,0.25
+lennon_miller__sco,Lennon Miller,SCO,MID,2000000,unmatched,0.56,0.0,0.25
+andrew_irving__sco,Andrew Irving,SCO,MID,2000000,unmatched,0.4,0.0,0.25
+ahmed_al_ganehi__qat,Ahmed Al-Ganehi,QAT,MID,2000000,unmatched,0.6875,0.0,0.25
+tahsin_jamshid__qat,Tahsin Jamshid,QAT,MID,2000000,unmatched,0.4666666666666667,0.0,0.25
+tyler_fletcher__sco,Tyler Fletcher,SCO,MID,2000000,unmatched,0.3333333333333333,0.0,0.25
+rajaei_ayed__jor,Rajaei Ayed,JOR,MID,2500000,unmatched,0.45454545454545453,0.0,0.25
+abbosbek_fayzullaev__uzb,Abbosbek Fayzullaev,UZB,MID,2500000,unmatched,0.4117647058823529,0.0,0.25
+jaloliddin_masharipov__uzb,Jaloliddin Masharipov,UZB,MID,2500000,unmatched,0.43243243243243246,0.0,0.25
+stephen_eustaquio__can,Stephen Eustaquio,CAN,MID,2500000,unmatched,0.4666666666666667,0.0,0.25
+sherzod_esanov__uzb,Sherzod Esanov,UZB,MID,2000000,unmatched,0.5333333333333333,0.0,0.25
+jacob_shaffelburg__can,Jacob Shaffelburg,CAN,MID,2000000,unmatched,0.45714285714285713,0.0,0.25
+ailson_tavares__cpv,Ailson Tavares,CPV,MID,2500000,unmatched,0.6857142857142857,0.0,0.25
+felix_horn_myhre__nor,Felix Horn Myhre,NOR,MID,2000000,unmatched,0.4,0.0,0.25
+kristian_arnstad__nor,Kristian Arnstad,NOR,MID,2500000,unmatched,0.5,0.0,0.25
+woobens_pacius__hai,Woobens Pacius,HAI,FWD,2000000,unmatched,0.3333333333333333,0.0,0.25
+ali_olwan__jor,Ali Olwan,JOR,FWD,3500000,unmatched,0.36363636363636365,0.0,0.25
+azizbek_amanov__uzb,Azizbek Amanov,UZB,FWD,2000000,unmatched,0.25,0.0,0.25
+tommy_conway__sco,Tommy Conway,SCO,FWD,2500000,unmatched,0.0,0.0,0.25
+yusuf_abdurisag__qat,Yusuf Abdurisag,QAT,FWD,2000000,unmatched,0.24,0.0,0.25
+sultan_mandash__ksa,Sultan Mandash,KSA,FWD,2500000,unmatched,0.3333333333333333,0.0,0.25
+firas_al_buraikan__ksa,Firas Al Brikan,KSA,FWD,3500000,unmatched,0.9375,0.0,0.6584
+saleh_al_shehri__ksa,Saleh Al-Shehri,KSA,FWD,2500000,unmatched,0.48484848484848486,0.0,0.25
+youssef_msakni__tun,Youssef Msakni,TUN,FWD,2500000,unmatched,0.4,0.0,0.25
+louey_ben_farhat__tun,Louey Ben Farhat,TUN,FWD,2000000,unmatched,0.3448275862068966,0.0,0.25
+boulaye_dia__sen,Boulaye Dia,SEN,FWD,2000000,unmatched,0.47619047619047616,0.0,0.25
+habib_diallo__sen,Habib Diallo,SEN,FWD,2500000,unmatched,0.4,0.0,0.25
+mostafa_mohamed__egy,Mostafa Mohamed,EGY,FWD,3500000,unmatched,0.7857142857142857,0.0,0.25
+nasser_mansy__egy,Nasser Mansy,EGY,FWD,2000000,unmatched,0.48,0.0,0.25
+tomas_rodriguez__pan,Tomas Rodriguez,PAN,FWD,2000000,unmatched,0.0,0.0,0.25
+romeo_vermant__bel,Romeo Vermant,BEL,FWD,2000000,unmatched,0.46153846153846156,0.0,0.25
+dennis_dargahi_eckert_ayensa__irn,Dennis 'Dargahi' Eckert Ayensa,IRN,FWD,2000000,unmatched,0.3,0.0,0.25
+nilson_angulo__ecu,Nilson Angulo,ECU,FWD,2000000,unmatched,0.41379310344827586,0.0,0.25
+haji_wright__usa,Haji Wright,USA,FWD,2500000,unmatched,0.34782608695652173,0.0,0.25
+iqraam_rayners__rsa,Iqraam Rayners,RSA,FWD,2500000,unmatched,0.0,0.0,0.25
+isidro_pitta__par,Isidro Pitta,PAR,FWD,2000000,unmatched,0.0,0.0,0.25
+logan_rogerson__nzl,Logan Rogerson,NZL,FWD,2500000,unmatched,0.45161290322580644,0.0,0.25
+santiago_gimenez__mex,Santiago Gimenez,MEX,FWD,3500000,unmatched,0.5714285714285714,0.0,0.25
+shuto_machino__jpn,Shuto Machino,JPN,FWD,2500000,unmatched,0.46153846153846156,0.0,0.25
+ernest_nuamah__gha,Ernest Nuamah,GHA,FWD,2500000,unmatched,0.0,0.0,0.25
+benie_traore__civ,Benie Traore,CIV,FWD,2500000,unmatched,0.5185185185185185,0.0,0.25
+tete_yengi__aus,Tete Yengi,AUS,FWD,2000000,unmatched,0.35294117647058826,0.0,0.25
+williot_swedberg__swe,Williot Swedberg,SWE,FWD,2500000,unmatched,0.4,0.0,0.25
+sasa_kalajdzic__aut,Sasa Kalajdzic,AUT,FWD,2500000,unmatched,0.4,0.0,0.25
+can_uzun__tur,Can Uzun,TUR,FWD,3500000,unmatched,0.35294117647058826,0.0,0.25
+jan_kuchta__cze,Jan Kuchta,CZE,FWD,2500000,unmatched,0.0,0.0,0.25
+adam_hlozek__cze,Adam Hlozek,CZE,FWD,2500000,unmatched,0.0,0.0,0.25
+joel_monteiro__sui,Joel Monteiro,SUI,FWD,2500000,unmatched,0.48,0.0,0.25
+andi_zeqiri__sui,Andi Zeqiri,SUI,FWD,2000000,unmatched,0.2857142857142857,0.0,0.25

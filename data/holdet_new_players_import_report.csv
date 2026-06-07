@@ -1,49 +1,49 @@
 ﻿action,holdet_player_id,player_name,team_id,position,price,reason
-imported,49193,Hugo Ekitike,FRA,FWD,6000000,approved_for_player_pool=JA
-imported,49838,Serge Gnabry,GER,FWD,6000000,approved_for_player_pool=JA
-imported,48897,Bento Krepski,BRA,GK,5000000,approved_for_player_pool=JA
-imported,48965,Cole Palmer,ENG,MID,5000000,approved_for_player_pool=JA
-imported,49103,Fermin Lopez,ESP,MID,5000000,approved_for_player_pool=JA
-imported,48850,Anton Stach,GER,MID,4500000,approved_for_player_pool=JA
-imported,49290,João Palhinha,POR,MID,4500000,approved_for_player_pool=JA
-imported,49535,Matz Sels,BEL,GK,4500000,approved_for_player_pool=JA
-imported,49750,Randal Kolo Muani,FRA,FWD,4500000,approved_for_player_pool=JA
-imported,49782,Robin Le Normand,ESP,DEF,4500000,approved_for_player_pool=JA
-imported,49001,Dean Donny Huijsen,ESP,DEF,4000000,approved_for_player_pool=JA
-imported,49109,Finn Dahmen,GER,GK,4000000,approved_for_player_pool=JA
-imported,50282,Giorgian De Arrascaeta,URU,MID,4000000,approved_for_player_pool=JA
-imported,49310,Jonas Urbig,GER,GK,4000000,approved_for_player_pool=JA
-imported,49292,João Pedro,BRA,FWD,4000000,approved_for_player_pool=JA
-imported,50274,Juan Musso,ARG,GK,4000000,approved_for_player_pool=JA
-imported,49446,Lois Openda,BEL,FWD,4000000,approved_for_player_pool=JA
-imported,49742,Rafael Santos Borre,COL,FWD,4000000,approved_for_player_pool=JA
-imported,49783,Robin Olsen,SWE,GK,4000000,approved_for_player_pool=JA
-imported,49874,Takumi Minamino,JPN,MID,4000000,approved_for_player_pool=JA
-imported,48985,Daniel Vivian,ESP,DEF,3500000,approved_for_player_pool=JA
-imported,49300,Johan Carbonero,COL,FWD,3500000,approved_for_player_pool=JA
-imported,49374,Kaoru Mitoma,JPN,MID,3500000,approved_for_player_pool=JA
-imported,49394,Kevin Schade,GER,MID,3500000,approved_for_player_pool=JA
-imported,49438,Lewis Hall,ENG,DEF,3500000,approved_for_player_pool=JA
-imported,49474,Maarten Vandevoordt,BEL,GK,3500000,approved_for_player_pool=JA
-imported,49546,Melker Ellborg,SWE,GK,3500000,approved_for_player_pool=JA
-imported,49666,Noel Törnqvist,SWE,GK,3500000,approved_for_player_pool=JA
-imported,49781,Robin Koch,GER,DEF,3500000,approved_for_player_pool=JA
-imported,50271,Robin Roefs,NED,GK,3500000,approved_for_player_pool=JA
-imported,49909,Trent Alexander-Arnold,ENG,DEF,3500000,approved_for_player_pool=JA
-imported,48889,Bechir Ben Said,TUN,GK,3000000,approved_for_player_pool=JA
-imported,50265,Crysencio Summerville,NED,MID,3000000,approved_for_player_pool=JA
-imported,50284,Edson Alvarez,MEX,MID,3000000,approved_for_player_pool=JA
-imported,49047,Eduardo Camavinga,FRA,MID,3000000,approved_for_player_pool=JA
-imported,49102,Ferjani Sassi,TUN,MID,3000000,approved_for_player_pool=JA
-imported,50266,Frenkie de Jong,NED,MID,3000000,approved_for_player_pool=JA
-imported,49257,Jarrod Bowen,ENG,FWD,3000000,approved_for_player_pool=JA
-imported,49345,Juan Cabal,COL,DEF,3000000,approved_for_player_pool=JA
-imported,49508,Martial Godo,CIV,FWD,3000000,approved_for_player_pool=JA
-imported,49709,Pascal Loretz,SUI,GK,3000000,approved_for_player_pool=JA
-imported,49726,Pedro 'Pote' Goncalves,POR,MID,3000000,approved_for_player_pool=JA
-imported,49738,Pierre Kalulu,FRA,DEF,3000000,approved_for_player_pool=JA
-imported,50299,Promise David,CAN,FWD,3000000,approved_for_player_pool=JA
-imported,50308,Rodrigo Bentancur,URU,MID,3000000,approved_for_player_pool=JA
-imported,49795,Roony Bardghji,SWE,MID,3000000,approved_for_player_pool=JA
-imported,49819,Samuel Aghehowa,ESP,FWD,3000000,approved_for_player_pool=JA
-imported,50252,Sergino Dest,USA,DEF,3000000,approved_for_player_pool=JA
+skipped_duplicate,49193,Hugo Ekitike,FRA,FWD,6000000,duplicate_holdet_player_id
+skipped_duplicate,49838,Serge Gnabry,GER,FWD,6000000,duplicate_holdet_player_id
+skipped_duplicate,48897,Bento Krepski,BRA,GK,5000000,duplicate_holdet_player_id
+skipped_duplicate,48965,Cole Palmer,ENG,MID,5000000,duplicate_holdet_player_id
+skipped_duplicate,49103,Fermin Lopez,ESP,MID,5000000,duplicate_holdet_player_id
+skipped_duplicate,48850,Anton Stach,GER,MID,4500000,duplicate_holdet_player_id
+skipped_duplicate,49290,João Palhinha,POR,MID,4500000,duplicate_holdet_player_id
+skipped_duplicate,49535,Matz Sels,BEL,GK,4500000,duplicate_holdet_player_id
+skipped_duplicate,49750,Randal Kolo Muani,FRA,FWD,4500000,duplicate_holdet_player_id
+skipped_duplicate,49782,Robin Le Normand,ESP,DEF,4500000,duplicate_holdet_player_id
+skipped_duplicate,49001,Dean Donny Huijsen,ESP,DEF,4000000,duplicate_holdet_player_id
+skipped_duplicate,49109,Finn Dahmen,GER,GK,4000000,duplicate_holdet_player_id
+skipped_duplicate,50282,Giorgian De Arrascaeta,URU,MID,4000000,duplicate_holdet_player_id
+skipped_duplicate,49310,Jonas Urbig,GER,GK,4000000,duplicate_holdet_player_id
+skipped_duplicate,49292,João Pedro,BRA,FWD,4000000,duplicate_holdet_player_id
+skipped_duplicate,50274,Juan Musso,ARG,GK,4000000,duplicate_holdet_player_id
+skipped_duplicate,49446,Lois Openda,BEL,FWD,4000000,duplicate_holdet_player_id
+skipped_duplicate,49742,Rafael Santos Borre,COL,FWD,4000000,duplicate_holdet_player_id
+skipped_duplicate,49783,Robin Olsen,SWE,GK,4000000,duplicate_holdet_player_id
+skipped_duplicate,49874,Takumi Minamino,JPN,MID,4000000,duplicate_holdet_player_id
+skipped_duplicate,48985,Daniel Vivian,ESP,DEF,3500000,duplicate_holdet_player_id
+skipped_duplicate,49300,Johan Carbonero,COL,FWD,3500000,duplicate_holdet_player_id
+skipped_duplicate,49374,Kaoru Mitoma,JPN,MID,3500000,duplicate_holdet_player_id
+skipped_duplicate,49394,Kevin Schade,GER,MID,3500000,duplicate_holdet_player_id
+skipped_duplicate,49438,Lewis Hall,ENG,DEF,3500000,duplicate_holdet_player_id
+skipped_duplicate,49474,Maarten Vandevoordt,BEL,GK,3500000,duplicate_holdet_player_id
+skipped_duplicate,49546,Melker Ellborg,SWE,GK,3500000,duplicate_holdet_player_id
+skipped_duplicate,49666,Noel Törnqvist,SWE,GK,3500000,duplicate_holdet_player_id
+skipped_duplicate,49781,Robin Koch,GER,DEF,3500000,duplicate_holdet_player_id
+skipped_duplicate,50271,Robin Roefs,NED,GK,3500000,duplicate_holdet_player_id
+skipped_duplicate,49909,Trent Alexander-Arnold,ENG,DEF,3500000,duplicate_holdet_player_id
+skipped_duplicate,48889,Bechir Ben Said,TUN,GK,3000000,duplicate_holdet_player_id
+skipped_duplicate,50265,Crysencio Summerville,NED,MID,3000000,duplicate_holdet_player_id
+skipped_duplicate,50284,Edson Alvarez,MEX,MID,3000000,duplicate_holdet_player_id
+skipped_duplicate,49047,Eduardo Camavinga,FRA,MID,3000000,duplicate_holdet_player_id
+skipped_duplicate,49102,Ferjani Sassi,TUN,MID,3000000,duplicate_holdet_player_id
+skipped_duplicate,50266,Frenkie de Jong,NED,MID,3000000,duplicate_holdet_player_id
+skipped_duplicate,49257,Jarrod Bowen,ENG,FWD,3000000,duplicate_holdet_player_id
+skipped_duplicate,49345,Juan Cabal,COL,DEF,3000000,duplicate_holdet_player_id
+skipped_duplicate,49508,Martial Godo,CIV,FWD,3000000,duplicate_holdet_player_id
+skipped_duplicate,49709,Pascal Loretz,SUI,GK,3000000,duplicate_holdet_player_id
+skipped_duplicate,49726,Pedro 'Pote' Goncalves,POR,MID,3000000,duplicate_holdet_player_id
+skipped_duplicate,49738,Pierre Kalulu,FRA,DEF,3000000,duplicate_holdet_player_id
+skipped_duplicate,50299,Promise David,CAN,FWD,3000000,duplicate_holdet_player_id
+skipped_duplicate,50308,Rodrigo Bentancur,URU,MID,3000000,duplicate_holdet_player_id
+skipped_duplicate,49795,Roony Bardghji,SWE,MID,3000000,duplicate_holdet_player_id
+skipped_duplicate,49819,Samuel Aghehowa,ESP,FWD,3000000,duplicate_holdet_player_id
+skipped_duplicate,50252,Sergino Dest,USA,DEF,3000000,duplicate_holdet_player_id

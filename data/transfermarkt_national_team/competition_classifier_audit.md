@@ -10,61 +10,61 @@ Derudover blev historiske to-cifrede årstal som `62` fortolket som 2062. Det sk
 
 | kategori | før | efter |
 | --- | --- | --- |
-| Kvalifikation | 0 | 29267 |
-| Nations League | 0 | 6491 |
-| Nations League-slutrunde | 0 | 1604 |
-| Slutrunde | 0 | 17445 |
+| Kvalifikation | 0 | 31483 |
+| Nations League | 0 | 6739 |
+| Nations League-slutrunde | 0 | 1756 |
+| Slutrunde | 0 | 19043 |
 | Ukendt | 82245 | 0 |
 | Ungdomskvalifikation | 0 | 19 |
 | Ungdomsslutrunde | 0 | 94 |
-| Venskabskamp | 0 | 27766 |
+| Venskabskamp | 0 | 30055 |
 | Øvrig turnering | 0 | 30 |
 
-- Ukendt før: 82245/82716 (99.43%)
-- Ukendt efter: 0/82716 (0.00%)
+- Ukendt før: 82245/89219 (92.18%)
+- Ukendt efter: 0/89219 (0.00%)
 
 ## Konkurrencekoder
 
 | kode | rækker | kategori | mapping |
 | --- | --- | --- | --- |
-| FS | 27766 | Venskabskamp | International friendly |
-| WMQ6 | 5764 | Kvalifikation | World Cup qualification, UEFA |
-| WMQ1 | 5211 | Kvalifikation | World Cup qualification, AFC |
-| WMQ4 | 4620 | Kvalifikation | World Cup qualification, CONMEBOL |
-| EMQ | 4095 | Kvalifikation | European Championship qualification |
-| UNLA | 3402 | Nations League | UEFA Nations League A |
-| WMQ2 | 3175 | Kvalifikation | World Cup qualification, CAF |
-| AFCQ | 2985 | Kvalifikation | Africa Cup of Nations qualification |
-| FIWC | 2748 | Slutrunde | FIFA World Cup |
-| AFCN | 2700 | Slutrunde | Africa Cup of Nations |
-| EURO | 2435 | Slutrunde | UEFA European Championship |
-| WMQ3 | 2213 | Kvalifikation | World Cup qualification, CONCACAF |
-| GOCU | 2040 | Slutrunde | CONCACAF Gold Cup |
-| COPA | 1926 | Slutrunde | Copa America |
-| UNLB | 1466 | Nations League | UEFA Nations League B |
-| AFAC | 1344 | Slutrunde | AFC Asian Cup |
-| ARCP | 1218 | Slutrunde | FIFA Arab Cup |
-| CHAN | 1094 | Slutrunde | African Nations Championship |
-| CNNF | 820 | Nations League-slutrunde | CONCACAF Nations League finals |
-| UNFI | 784 | Nations League-slutrunde | UEFA Nations League finals |
-| CNLA | 764 | Nations League | CONCACAF Nations League A |
-| AGUC | 537 | Slutrunde | Regional senior Gold Cup |
-| POWM | 511 | Kvalifikation | World Cup qualification play-off |
-| EAFC | 419 | Slutrunde | EAFF Championship |
+| FS | 30055 | Venskabskamp | International friendly |
+| WMQ1 | 6149 | Kvalifikation | World Cup qualification, AFC |
+| WMQ6 | 5958 | Kvalifikation | World Cup qualification, UEFA |
+| WMQ4 | 4950 | Kvalifikation | World Cup qualification, CONMEBOL |
+| EMQ | 4217 | Kvalifikation | European Championship qualification |
+| UNLA | 3504 | Nations League | UEFA Nations League A |
+| WMQ2 | 3403 | Kvalifikation | World Cup qualification, CAF |
+| AFCQ | 3208 | Kvalifikation | Africa Cup of Nations qualification |
+| FIWC | 2922 | Slutrunde | FIFA World Cup |
+| AFCN | 2870 | Slutrunde | Africa Cup of Nations |
+| EURO | 2520 | Slutrunde | UEFA European Championship |
+| WMQ3 | 2318 | Kvalifikation | World Cup qualification, CONCACAF |
+| GOCU | 2259 | Slutrunde | CONCACAF Gold Cup |
+| COPA | 2089 | Slutrunde | Copa America |
+| AFAC | 1568 | Slutrunde | AFC Asian Cup |
+| UNLB | 1539 | Nations League | UEFA Nations League B |
+| ARCP | 1432 | Slutrunde | FIFA Arab Cup |
+| CHAN | 1197 | Slutrunde | African Nations Championship |
+| CNNF | 950 | Nations League-slutrunde | CONCACAF Nations League finals |
+| CNLA | 823 | Nations League | CONCACAF Nations League A |
+| UNFI | 806 | Nations League-slutrunde | UEFA Nations League finals |
+| AGUC | 669 | Slutrunde | Regional senior Gold Cup |
+| POWM | 545 | Kvalifikation | World Cup qualification play-off |
+| EAFC | 426 | Slutrunde | EAFF Championship |
+| CAFA | 339 | Slutrunde | CAFA Nations Cup |
 | WMQ5 | 331 | Kvalifikation | World Cup qualification, OFC |
-| UNLC | 315 | Nations League | UEFA Nations League C |
-| CAFA | 279 | Slutrunde | CAFA Nations Cup |
+| UNLC | 321 | Nations League | UEFA Nations League C |
 | CNLB | 276 | Nations League | CONCACAF Nations League B |
-| UNPO | 192 | Nations League | UEFA Nations League play-off |
-| ACQU | 176 | Kvalifikation | Asian Cup qualification |
-| CONC | 168 | Slutrunde | FIFA Confederations Cup |
-| CA16 | 163 | Slutrunde | Copa America Centenario |
-| WAF1 | 110 | Slutrunde | WAFF Championship |
+| ACQU | 215 | Kvalifikation | Asian Cup qualification |
+| UNPO | 200 | Nations League | UEFA Nations League play-off |
+| CONC | 174 | Slutrunde | FIFA Confederations Cup |
+| CA16 | 169 | Slutrunde | Copa America Centenario |
+| WAF1 | 140 | Slutrunde | WAFF Championship |
 | CENC | 104 | Slutrunde | Central American Championship |
 | OFCN | 96 | Slutrunde | OFC Nations Cup |
 | CNLQ | 76 | Nations League | CONCACAF Nations League qualification |
 | POEM | 71 | Kvalifikation | European qualification play-off |
-| AFT | 64 | Slutrunde | Regional senior national-team tournament |
+| AFT | 69 | Slutrunde | Regional senior national-team tournament |
 | CARQ | 43 | Kvalifikation | Caribbean / CONCACAF qualification |
 | GCQU | 35 | Kvalifikation | Gold Cup qualification |
 | TRIN | 30 | Øvrig turnering | Tri-nation / invitational tournament |
@@ -72,7 +72,7 @@ Derudover blev historiske to-cifrede årstal som `62` fortolket som 2062. Det sk
 | 2SAM | 21 | Ungdomsslutrunde | South American U20 Championship |
 | CA17 | 18 | Ungdomsslutrunde | U17 continental championship |
 | U21Q | 16 | Ungdomskvalifikation | UEFA U21 qualification |
-| FARQ | 12 | Kvalifikation | Regional championship qualification |
+| FARQ | 15 | Kvalifikation | Regional championship qualification |
 | GCQ5 | 12 | Kvalifikation | Gold Cup qualification |
 | C220 | 11 | Ungdomsslutrunde | U20 continental championship |
 | CACP | 10 | Kvalifikation | Copa America Centenario qualification play-off |
@@ -114,8 +114,8 @@ Derudover blev historiske to-cifrede årstal som `62` fortolket som 2062. Det sk
 
 | spiller | dato | kode | kategori | status | start | recency_score |
 | --- | --- | --- | --- | --- | --- | --- |
-| Giovani Lo Celso | 07/06/26 | FS | Venskabskamp | played | True | 0.8387 |
-| Juan Musso | 07/06/26 | FS | Venskabskamp | played | True | 0.256 |
-| Geronimo Rulli | 07/06/26 | FS | Venskabskamp | in squad | False | 0.021 |
-| Julian Alvarez | 07/06/26 | FS | Venskabskamp | not in squad | False | 0.6269 |
+| Cristian Romero | 07/06/26 | FS | Venskabskamp | played | False | 0.6761 |
 | Nicolas Otamendi | 07/06/26 | FS | Venskabskamp | played | True | 0.6617 |
+| Thiago Almada | 07/06/26 | FS | Venskabskamp | played | True | 0.7891 |
+| Nicolas Tagliafico | 07/06/26 | FS | Venskabskamp | played | True | 0.6659 |
+| Alexis Mac Allister | 07/06/26 | FS | Venskabskamp | played | False | 0.6268 |

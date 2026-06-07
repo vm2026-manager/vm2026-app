@@ -1,29 +1,33 @@
 ﻿team_id,player_id,player_name,raw_start_prob,raw_start_prob_source,competitive_starts,recent_starts,availability_prob,context_override,team_gk_rank,normalized_gk_start_prob,normalized_prob_sum_team,repair_reason
-ALG,luca_zidane__alg,Luca Zidane,0.6036,transfermarkt_availability_split_2026_06_07,7.0,6,0.6803,,1,0.8226,1.0,team_gk_exclusive_normalization
-ALG,alexis_guendouz__alg,Alexis Guendouz,0.3573,transfermarkt_availability_split_2026_06_07,14.0,1,0.6,,2,0.1358,1.0,team_gk_exclusive_normalization
-ALG,anthony_mandrea__alg,Anthony Mandrea,0.1367,transfermarkt_availability_split_2026_06_07,21.0,1,0.6,,3,0.0416,1.0,team_gk_exclusive_normalization
-ARG,walter_benitez__arg,Walter Benitez,0.0439,transfermarkt_availability_split_2026_06_07,1.0,0,0.6524,,4,0.0151,1.0,team_gk_exclusive_normalization
-ARG,emiliano_mart_nez__arg,Emiliano Martinez,0.9059,transfermarkt_availability_split_2026_06_07,59.0,10,0.8113,,1,0.9429,1.0,team_gk_exclusive_normalization
-ARG,ger_nimo_rulli__arg,Geronimo Rulli,0.0452,transfermarkt_availability_split_2026_06_07,7.0,1,0.723,,3,0.0151,1.0,team_gk_exclusive_normalization
-ARG,juan_musso__arg,Juan Musso,0.2356,transfermarkt_availability_split_2026_06_07,2.0,,0.6,,2,0.0269,1.0,team_gk_exclusive_normalization
+ALG,oussama_benbout__alg,Oussama Benbout,0.043,transfermarkt_availability_split_2026_06_07,2.0,,0.6,,3,0.0251,1.0,team_gk_exclusive_normalization
+ALG,alexis_guendouz__alg,Alexis Guendouz,0.3573,transfermarkt_availability_split_2026_06_07,14.0,1,0.6,,,0.0,1.0,holdet_is_out_zeroed
+ALG,luca_zidane__alg,Luca Zidane,0.6036,transfermarkt_availability_split_2026_06_07,7.0,6,0.6803,,1,0.782,1.0,team_gk_exclusive_normalization
+ALG,anthony_mandrea__alg,Anthony Mandrea,0.1367,transfermarkt_availability_split_2026_06_07,21.0,1,0.6,,,0.0,1.0,holdet_is_out_zeroed
+ALG,melvin_feycal_mastil__alg,Melvin Feycal Mastil,0.3107,transfermarkt_availability_split_2026_06_07,1.0,,0.8288,,2,0.1929,1.0,team_gk_exclusive_normalization
+ARG,juan_musso__arg,Juan Musso,0.2356,transfermarkt_availability_split_2026_06_07,2.0,,0.6,,2,0.0368,0.9999,team_gk_exclusive_normalization
+ARG,walter_benitez__arg,Walter Benitez,0.0439,transfermarkt_availability_split_2026_06_07,1.0,0,0.6524,,,0.0,0.9999,holdet_is_out_zeroed
+ARG,emiliano_mart_nez__arg,Emiliano Martinez,0.9059,transfermarkt_availability_split_2026_06_07,59.0,10,0.8113,,1,0.938,0.9999,team_gk_exclusive_normalization
+ARG,ger_nimo_rulli__arg,Geronimo Rulli,0.0452,transfermarkt_availability_split_2026_06_07,7.0,1,0.723,,3,0.0251,0.9999,team_gk_exclusive_normalization
 AUS,mathew_ryan__aus,Mathew Ryan,0.8841,transfermarkt_availability_split_2026_06_07,103.0,7,0.8325,,1,0.8931,1.0,team_gk_exclusive_normalization
 AUS,paul_izzo__aus,Paul Izzo,0.0576,transfermarkt_availability_split_2026_06_07,4.0,4,0.9408,,3,0.0268,1.0,team_gk_exclusive_normalization
 AUS,patrick_beach__aus,Patrick Beach,0.3162,transfermarkt_availability_split_2026_06_07,2.0,1,0.878,,2,0.0801,1.0,team_gk_exclusive_normalization
+AUT,nikolas_polster__aut,Nikolas Polster,0.0473,transfermarkt_availability_split_2026_06_07,0.0,,0.8438,,,0.0,1.0001,holdet_is_out_zeroed
 AUT,patrick_pentz__aut,Patrick Pentz,0.3448,transfermarkt_availability_split_2026_06_07,17.0,4,0.901,,2,0.0538,1.0001,team_gk_exclusive_normalization
+AUT,florian_wiegele__aut,Florian Wiegele,0.047,transfermarkt_availability_split_2026_06_07,0.0,,0.8288,,3,0.0251,1.0001,team_gk_exclusive_normalization
 AUT,alexander_schlager__aut,Alexander Schlager,0.9,transfermarkt_availability_split_2026_06_07+context_override,26.0,8,0.95,yes,1,0.9212,1.0001,team_gk_exclusive_normalization
-AUT,nikolas_polster__aut,Nikolas Polster,0.0473,transfermarkt_availability_split_2026_06_07,0.0,,0.8438,,3,0.0251,1.0001,team_gk_exclusive_normalization
-BEL,mike_penders__bel,Mike Penders,0.0469,transfermarkt_availability_split_2026_06_07,0.0,,0.8239,,4,0.0151,1.0001,team_gk_exclusive_normalization
-BEL,senne_lammens__bel,Senne Lammens,0.0564,transfermarkt_availability_split_2026_06_07,2.0,2,0.7341,,3,0.0162,1.0001,team_gk_exclusive_normalization
-BEL,thibaut_courtois__bel,Thibaut Courtois,0.8746,transfermarkt_availability_split_2026_06_07,109.0,5,0.7191,,1,0.8951,1.0001,team_gk_exclusive_normalization
-BEL,matz_sels__bel,Matz Sels,0.2951,transfermarkt_availability_split_2026_06_07,12.0,,0.877,,2,0.0586,1.0001,team_gk_exclusive_normalization
-BEL,maarten_vandevoordt__bel,Maarten Vandevoordt,0.047,transfermarkt_availability_split_2026_06_07,0.0,,0.8269,,5,0.0151,1.0001,team_gk_exclusive_normalization
+BEL,mike_penders__bel,Mike Penders,0.0469,transfermarkt_availability_split_2026_06_07,0.0,,0.8239,,3,0.0251,1.0,team_gk_exclusive_normalization
+BEL,senne_lammens__bel,Senne Lammens,0.0564,transfermarkt_availability_split_2026_06_07,2.0,2,0.7341,,2,0.0263,1.0,team_gk_exclusive_normalization
+BEL,maarten_vandevoordt__bel,Maarten Vandevoordt,0.047,transfermarkt_availability_split_2026_06_07,0.0,,0.8269,,,0.0,1.0,holdet_is_out_zeroed
+BEL,thibaut_courtois__bel,Thibaut Courtois,0.8746,transfermarkt_availability_split_2026_06_07,109.0,5,0.7191,,1,0.9486,1.0,team_gk_exclusive_normalization
+BEL,matz_sels__bel,Matz Sels,0.2951,transfermarkt_availability_split_2026_06_07,12.0,,0.877,,,0.0,1.0,holdet_is_out_zeroed
 BIH,nikola_vasilj__bih,Nikola Vasilj,0.6381,transfermarkt_availability_split_2026_06_07,25.0,11,0.93,,1,0.9097,1.0,team_gk_exclusive_normalization
+BIH,mladen_jurkas__bih,Mladen Jurkas,0.0456,transfermarkt_availability_split_2026_06_07,0.0,,0.75,,3,0.0251,1.0,team_gk_exclusive_normalization
 BIH,martin_zlomisli__bih,Martin Zlomislic,0.2774,transfermarkt_availability_split_2026_06_07,3.0,,0.8443,,2,0.0652,1.0,team_gk_exclusive_normalization
-BIH,osman_hadzikic__bih,Osman Hadzikic,0.0489,transfermarkt_availability_split_2026_06_07,0.0,0,0.9372,,3,0.0251,1.0,team_gk_exclusive_normalization
-BRA,ederson_moraes__bra,Ederson Moraes,0.1208,transfermarkt_availability_split_2026_06_07,31.0,2,0.7853,,3,0.0202,1.0,team_gk_exclusive_normalization
-BRA,weverton__bra,Weverton,0.043,transfermarkt_availability_split_2026_06_07,9.0,0,0.6,,4,0.0151,1.0,team_gk_exclusive_normalization
-BRA,alisson_becker__bra,Alisson Becker,0.9082,transfermarkt_availability_split_2026_06_07,78.0,6,0.9234,,1,0.8288,1.0,team_gk_exclusive_normalization
-BRA,bento_krepski__bra,Bento Krepski,0.524,transfermarkt_availability_split_2026_06_07,6.0,,0.9447,,2,0.1359,1.0,team_gk_exclusive_normalization
+BIH,osman_hadzikic__bih,Osman Hadzikic,0.0489,transfermarkt_availability_split_2026_06_07,0.0,0,0.9372,,,0.0,1.0,holdet_is_out_zeroed
+BRA,bento_krepski__bra,Bento Krepski,0.524,transfermarkt_availability_split_2026_06_07,6.0,,0.9447,,,0.0,1.0001,holdet_is_out_zeroed
+BRA,alisson_becker__bra,Alisson Becker,0.9082,transfermarkt_availability_split_2026_06_07,78.0,6,0.9234,,1,0.944,1.0001,team_gk_exclusive_normalization
+BRA,ederson_moraes__bra,Ederson Moraes,0.1208,transfermarkt_availability_split_2026_06_07,31.0,2,0.7853,,2,0.031,1.0001,team_gk_exclusive_normalization
+BRA,weverton__bra,Weverton,0.043,transfermarkt_availability_split_2026_06_07,9.0,0,0.6,,3,0.0251,1.0001,team_gk_exclusive_normalization
 CAN,owen_goodman__can,Owen Goodman,0.0464,transfermarkt_availability_split_2026_06_07,0.0,0,0.7956,,3,0.0251,1.0,team_gk_exclusive_normalization
 CAN,dayne_st_clair__can,Dayne St. Clair,0.1048,transfermarkt_availability_split_2026_06_07,19.0,10,0.8962,,2,0.0301,1.0,team_gk_exclusive_normalization
 CAN,maxime_cr_peau__can,Maxime Crepeau,0.8,transfermarkt_availability_split_2026_06_07+context_override,31.0,7,0.95,yes,1,0.9448,1.0,team_gk_exclusive_normalization
@@ -33,133 +37,150 @@ CIV,alban_lafont__civ,Alban Lafont,0.3096,transfermarkt_availability_split_2026_
 COD,timothy_fayulu__cod,Timothy Fayulu,0.0461,transfermarkt_availability_split_2026_06_07,2.0,3,0.7788,,2,0.0255,1.0,team_gk_exclusive_normalization
 COD,matthieu_epolo__cod,Matthieu Epolo,0.0471,transfermarkt_availability_split_2026_06_07,0.0,2,0.8323,,3,0.0251,1.0,team_gk_exclusive_normalization
 COD,lionel_mpasi_nzau__cod,Lionel Mpasi Nzau,0.8086,transfermarkt_availability_split_2026_06_07,26.0,,0.7866,,1,0.9494,1.0,team_gk_exclusive_normalization
+COL,camilo_vargas__col,Camilo Vargas,0.5824,transfermarkt_availability_split_2026_06_07,40.0,5,0.8267,,1,0.7899,1.0001,team_gk_exclusive_normalization
 COL,alvaro_montero__col,Alvaro Montero,0.2605,transfermarkt_availability_split_2026_06_07,9.0,3,0.7436,,3,0.089,1.0001,team_gk_exclusive_normalization
 COL,david_ospina__col,David Ospina,0.143,transfermarkt_availability_split_2026_06_07,128.0,1,0.8866,,2,0.1212,1.0001,team_gk_exclusive_normalization
-COL,camilo_vargas__col,Camilo Vargas,0.5824,transfermarkt_availability_split_2026_06_07,40.0,5,0.8267,,1,0.7899,1.0001,team_gk_exclusive_normalization
 CPV,cj_dos_santos__cpv,CJ Dos Santos,0.0456,transfermarkt_availability_split_2026_06_07,0.0,,0.75,,3,0.0251,1.0,team_gk_exclusive_normalization
+CPV,bruno_varela__cpv,Bruno Varela,0.0,holdet_official_unmatched_default,,,,,,0.0,1.0,holdet_is_out_zeroed
 CPV,marcio_rosa__cpv,Marcio Rosa,0.2449,transfermarkt_availability_split_2026_06_07,7.0,,0.7641,,2,0.0464,1.0,team_gk_exclusive_normalization
 CPV,vozinha__cpv,Vozinha,0.6776,transfermarkt_availability_split_2026_06_07,87.0,10,0.8701,,1,0.9285,1.0,team_gk_exclusive_normalization
 CRO,dominik_livakovi__cro,Dominik Livakovic,0.9249,transfermarkt_availability_split_2026_06_07,74.0,11,0.9471,,1,0.9486,1.0,team_gk_exclusive_normalization
 CRO,dominik_kotarski__cro,Dominik Kotarski,0.2355,transfermarkt_availability_split_2026_06_07,2.0,1,0.6,,2,0.0263,1.0,team_gk_exclusive_normalization
 CRO,ivor_pandur__cro,Ivor Pandur,0.0476,transfermarkt_availability_split_2026_06_07,0.0,,0.8611,,3,0.0251,1.0,team_gk_exclusive_normalization
-CUW,eloy_room__cuw,Eloy Room,0.9124,transfermarkt_availability_split_2026_06_07,68.0,,0.8302,,1,0.9495,1.0,team_gk_exclusive_normalization
 CUW,tyrick_bodak__cuw,Tyrick Bodak,0.0434,transfermarkt_availability_split_2026_06_07,4.0,0,0.6254,,3,0.0251,1.0,team_gk_exclusive_normalization
 CUW,trevor_doornbusch__cuw,Trevor Doornbusch,0.048,transfermarkt_availability_split_2026_06_07,6.0,0,0.8867,,2,0.0254,1.0,team_gk_exclusive_normalization
-CZE,lukas_hornicek__cze,Lukas Hornicek,0.2786,transfermarkt_availability_split_2026_06_07,1.0,,0.878,,2,0.0626,1.0,team_gk_exclusive_normalization
-CZE,martin_jedlicka__cze,Martin Jedlicka,0.0469,transfermarkt_availability_split_2026_06_07,1.0,,0.8207,,3,0.0251,1.0,team_gk_exclusive_normalization
-CZE,matej_kovar__cze,Matej Kovar,0.652,transfermarkt_availability_split_2026_06_07,19.0,,0.9516,,1,0.9123,1.0,team_gk_exclusive_normalization
-ECU,hern_n_gal_ndez__ecu,Hernan Galindez,0.6184,transfermarkt_availability_split_2026_06_07,34.0,9,0.9199,,2,0.2521,1.0001,team_gk_exclusive_normalization
-ECU,moises_ramirez__ecu,Moises Ramirez,0.2561,transfermarkt_availability_split_2026_06_07,7.0,,0.8414,,4,0.0356,1.0001,team_gk_exclusive_normalization
-ECU,david_cabezas__ecu,David Cabezas,0.8464,transfermarkt_availability_split_2026_06_07,8.0,,0.6444,,1,0.6667,1.0001,team_gk_exclusive_normalization
-ECU,gonzalo_valle__ecu,Gonzalo Valle,0.2876,transfermarkt_availability_split_2026_06_07,3.0,3,0.8469,,3,0.0457,1.0001,team_gk_exclusive_normalization
+CUW,eloy_room__cuw,Eloy Room,0.9124,transfermarkt_availability_split_2026_06_07,68.0,,0.8302,,1,0.9495,1.0,team_gk_exclusive_normalization
+CZE,jindrich_stanek__cze,Jindrich Stanek,0.1004,transfermarkt_availability_split_2026_06_07,13.0,,0.7979,,3,0.0338,0.9999,team_gk_exclusive_normalization
+CZE,matej_kovar__cze,Matej Kovar,0.652,transfermarkt_availability_split_2026_06_07,19.0,,0.9516,,1,0.9039,0.9999,team_gk_exclusive_normalization
+CZE,martin_jedlicka__cze,Martin Jedlicka,0.0469,transfermarkt_availability_split_2026_06_07,1.0,,0.8207,,,0.0,0.9999,holdet_is_out_zeroed
+CZE,lukas_hornicek__cze,Lukas Hornicek,0.2786,transfermarkt_availability_split_2026_06_07,1.0,,0.878,,2,0.0622,0.9999,team_gk_exclusive_normalization
+ECU,david_cabezas__ecu,David Cabezas,0.8464,transfermarkt_availability_split_2026_06_07,8.0,,0.6444,,,0.0,1.0001,holdet_is_out_zeroed
+ECU,gonzalo_valle__ecu,Gonzalo Valle,0.2876,transfermarkt_availability_split_2026_06_07,3.0,3,0.8469,,2,0.1261,1.0001,team_gk_exclusive_normalization
+ECU,hern_n_gal_ndez__ecu,Hernan Galindez,0.6184,transfermarkt_availability_split_2026_06_07,34.0,9,0.9199,,1,0.7812,1.0001,team_gk_exclusive_normalization
+ECU,moises_ramirez__ecu,Moises Ramirez,0.2561,transfermarkt_availability_split_2026_06_07,7.0,,0.8414,,3,0.0928,1.0001,team_gk_exclusive_normalization
 EGY,el_mahdi_soliman__egy,El Mahdi Soliman,0.046,transfermarkt_availability_split_2026_06_07,0.0,,0.7689,,3,0.0151,1.0001,team_gk_exclusive_normalization
 EGY,mohamed_alaa__egy,Mohamed Alaa,0.0474,transfermarkt_availability_split_2026_06_07,0.0,,0.8538,,4,0.0151,1.0001,team_gk_exclusive_normalization
-EGY,oufa_shobeir__egy,Mostafa Oufa Shobeir,0.7549,transfermarkt_availability_split_2026_06_07,7.0,,0.8643,,1,0.5186,1.0001,team_gk_exclusive_normalization
-EGY,mohamed_el_shenawy__egy,Mohamed El-Shennawy,0.453,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,114.0,12,0.6618,,2,0.4513,1.0001,team_gk_exclusive_normalization
+EGY,oufa_shobeir__egy,Mostafa Oufa Shobeir,0.7549,transfermarkt_availability_split_2026_06_07,7.0,,0.8643,,1,0.5193,1.0001,team_gk_exclusive_normalization
+EGY,mohamed_el_shenawy__egy,Mohamed El-Shennawy,0.4508,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,114.0,12,0.6618,,2,0.4506,1.0001,team_gk_exclusive_normalization
 ENG,dean_henderson__eng,Dean Henderson,0.2405,transfermarkt_availability_split_2026_06_07,3.0,2,0.7402,,3,0.0276,1.0,team_gk_exclusive_normalization
-ENG,jordan_pickford__eng,Jordan Pickford,0.6865,transfermarkt_availability_split_2026_06_07,83.0,9,0.9429,,1,0.9287,1.0,team_gk_exclusive_normalization
 ENG,james_trafford__eng,James Trafford,0.2514,transfermarkt_availability_split_2026_06_07,1.0,1,0.9302,,2,0.0437,1.0,team_gk_exclusive_normalization
-ESP,david_raya__esp,David Raya,0.2932,transfermarkt_availability_split_2026_06_07,11.0,1,0.8892,,2,0.0996,1.0,team_gk_exclusive_normalization
+ENG,jordan_pickford__eng,Jordan Pickford,0.6865,transfermarkt_availability_split_2026_06_07,83.0,9,0.9429,,1,0.9287,1.0,team_gk_exclusive_normalization
+ESP,alejandro_alex_remiro__esp,Alejandro 'Alex' Remiro,0.0,holdet_official_unmatched_default,,,,,,0.0,1.0,holdet_is_out_zeroed
 ESP,unai_sim_n__esp,Unai Simon,0.4599,transfermarkt_availability_split_2026_06_07,57.0,11,0.9057,,1,0.86,1.0,team_gk_exclusive_normalization
+ESP,david_raya__esp,David Raya,0.2932,transfermarkt_availability_split_2026_06_07,11.0,1,0.8892,,2,0.0996,1.0,team_gk_exclusive_normalization
 ESP,joan_garcia__esp,Joan Garcia,0.15,transfermarkt_availability_split_2026_06_07+context_override,1.0,,0.9,yes,3,0.0404,1.0,team_gk_exclusive_normalization
 FRA,robin_risser__fra,Robin Risser,0.0456,transfermarkt_availability_split_2026_06_07,0.0,,0.75,,3,0.0251,1.0001,team_gk_exclusive_normalization
 FRA,brice_samba__fra,Brice Samba,0.2584,transfermarkt_availability_split_2026_06_07,4.0,1,0.9553,,2,0.0343,1.0001,team_gk_exclusive_normalization
 FRA,mike_maignan__fra,Mike Maignan,0.82,transfermarkt_availability_split_2026_06_07+context_override,38.0,10,0.9,yes,1,0.9407,1.0001,team_gk_exclusive_normalization
-GER,oliver_baumann__ger,Oliver Baumann,0.5908,transfermarkt_availability_split_2026_06_07,13.0,9,0.9567,,1,0.6484,1.0001,team_gk_exclusive_normalization
-GER,manuel_neuer__ger,Manuel Neuer,0.6251,transfermarkt_availability_split_2026_06_07,123.0,0,0.6164,,2,0.2645,1.0001,team_gk_exclusive_normalization
-GER,alexander_n_bel__ger,Alexander Nübel,0.27,transfermarkt_availability_split_2026_06_07,3.0,1,0.9384,,3,0.057,1.0001,team_gk_exclusive_normalization
-GER,finn_dahmen__ger,Finn Dahmen,0.048,transfermarkt_availability_split_2026_06_07,0.0,,0.8879,,4,0.0151,1.0001,team_gk_exclusive_normalization
-GER,jonas_urbig__ger,Jonas Urbig,0.0456,transfermarkt_availability_split_2026_06_07,0.0,,0.75,,5,0.0151,1.0001,team_gk_exclusive_normalization
+FRA,lucas_chevalier__fra,Lucas Chevalier,0.0,holdet_official_unmatched_default,,,,,,0.0,1.0001,holdet_is_out_zeroed
+GER,jonas_urbig__ger,Jonas Urbig,0.0456,transfermarkt_availability_split_2026_06_07,0.0,,0.75,,,0.0,1.0,holdet_is_out_zeroed
+GER,finn_dahmen__ger,Finn Dahmen,0.048,transfermarkt_availability_split_2026_06_07,0.0,,0.8879,,,0.0,1.0,holdet_is_out_zeroed
+GER,oliver_baumann__ger,Oliver Baumann,0.5908,transfermarkt_availability_split_2026_06_07,13.0,9,0.9567,,1,0.6554,1.0,team_gk_exclusive_normalization
+GER,manuel_neuer__ger,Manuel Neuer,0.6251,transfermarkt_availability_split_2026_06_07,123.0,0,0.6164,,2,0.2771,1.0,team_gk_exclusive_normalization
+GER,alexander_n_bel__ger,Alexander Nübel,0.27,transfermarkt_availability_split_2026_06_07,3.0,1,0.9384,,3,0.0675,1.0,team_gk_exclusive_normalization
+GHA,solomon_agbasi__gha,Solomon Agbasi,0.0,holdet_official_unmatched_default,,,,,,0.0,1.0,holdet_is_out_zeroed
+GHA,benjamin_asare__gha,Benjamin Asare,0.6544,transfermarkt_availability_split_2026_06_07,10.0,9,0.9221,,1,0.8194,1.0,team_gk_exclusive_normalization
+GHA,paul_reverson__gha,Paul Reverson,0.0,holdet_official_unmatched_default,,,,,,0.0,1.0,holdet_is_out_zeroed
 GHA,joseph_anang__gha,Joseph Anang,0.0471,transfermarkt_availability_split_2026_06_07,1.0,,0.8316,,3,0.0252,1.0,team_gk_exclusive_normalization
 GHA,lawrence_ati_zigi__gha,Lawrence Ati Zigi,0.5527,transfermarkt_availability_split_2026_06_07,26.0,2,0.8549,,2,0.1554,1.0,team_gk_exclusive_normalization
-GHA,benjamin_asare__gha,Benjamin Asare,0.6544,transfermarkt_availability_split_2026_06_07,10.0,9,0.9221,,1,0.8194,1.0,team_gk_exclusive_normalization
 HAI,johny_placide__hai,Johny Placide,0.8697,transfermarkt_availability_split_2026_06_07,81.0,,0.7047,,1,0.8957,1.0,team_gk_exclusive_normalization
 HAI,alexandre_pierre__hai,Alexandre Pierre,0.3193,transfermarkt_availability_split_2026_06_07,13.0,,0.8239,,2,0.0792,1.0,team_gk_exclusive_normalization
 HAI,josue_duverger__hai,Josue Duverger,0.043,transfermarkt_availability_split_2026_06_07,5.0,,0.6,,3,0.0251,1.0,team_gk_exclusive_normalization
-IRN,alireza_beiranvand__irn,Alireza Beiranvand,0.6638,transfermarkt_availability_split_2026_06_07,86.0,5,0.8597,,1,0.9438,1.0,team_gk_exclusive_normalization
-IRN,mohammad_khalife__irn,Mohammad Khalife,0.04,transfermarkt_availability_split_2026_06_07,0.0,,0.4299,,3,0.0251,1.0,team_gk_exclusive_normalization
-IRN,payam_niazmand__irn,Payam Niazmand,0.0628,transfermarkt_availability_split_2026_06_07,12.0,6,0.9387,,2,0.0311,1.0,team_gk_exclusive_normalization
-IRQ,fahad_talib__irq,Fahad Talib,0.2672,transfermarkt_availability_split_2026_06_07,20.0,,0.7051,,2,0.082,1.0,team_gk_exclusive_normalization
-IRQ,kumel_al_rekabe__irq,Kumel Al-Rekabe,0.043,transfermarkt_availability_split_2026_06_07,0.0,,0.6,,3,0.0251,1.0,team_gk_exclusive_normalization
-IRQ,ahmed_basil_fadhil__irq,Ahmed Basil Fadhil,0.7537,transfermarkt_availability_split_2026_06_07,14.0,,0.7752,,1,0.8929,1.0,team_gk_exclusive_normalization
+IRN,alireza_beiranvand__irn,Alireza Beiranvand,0.6638,transfermarkt_availability_split_2026_06_07,86.0,5,0.8597,,1,0.9189,1.0,team_gk_exclusive_normalization
+IRN,seyed_hossein_hosseini__irn,Seyed Hossein Hosseini,0.2464,transfermarkt_availability_split_2026_06_07,7.0,,0.6581,,2,0.0501,1.0,team_gk_exclusive_normalization
+IRN,mohammad_khalife__irn,Mohammad Khalife,0.04,transfermarkt_availability_split_2026_06_07,0.0,,0.4299,,,0.0,1.0,holdet_is_out_zeroed
+IRN,payam_niazmand__irn,Payam Niazmand,0.0628,transfermarkt_availability_split_2026_06_07,12.0,6,0.9387,,3,0.031,1.0,team_gk_exclusive_normalization
+IRQ,kumel_al_rekabe__irq,Kumel Al-Rekabe,0.043,transfermarkt_availability_split_2026_06_07,0.0,,0.6,,,0.0,1.0,holdet_is_out_zeroed
+IRQ,fahad_talib__irq,Fahad Talib,0.2672,transfermarkt_availability_split_2026_06_07,20.0,,0.7051,,2,0.079,1.0,team_gk_exclusive_normalization
+IRQ,jalal_hassan__irq,Jalal Hassan,0.1725,transfermarkt_availability_split_2026_06_07,91.0,,0.7506,,3,0.076,1.0,team_gk_exclusive_normalization
+IRQ,ahmed_basil_fadhil__irq,Ahmed Basil Fadhil,0.7537,transfermarkt_availability_split_2026_06_07,14.0,,0.7752,,1,0.845,1.0,team_gk_exclusive_normalization
+JOR,yazeed_abulaila__jor,Yazeed Abulaila,0.8946,transfermarkt_availability_split_2026_06_07,59.0,10,0.8149,,1,0.9498,1.0,team_gk_exclusive_normalization
+JOR,noureddin_bani_attiah__jor,Noureddin Bani Attiah,0.0455,transfermarkt_availability_split_2026_06_07,2.0,,0.7434,,2,0.0251,1.0,team_gk_exclusive_normalization
 JOR,abdallah_al_fakhouri__jor,Abdallah Al-Fakhouri,0.043,transfermarkt_availability_split_2026_06_07,7.0,,0.6,,3,0.0251,1.0,team_gk_exclusive_normalization
-JOR,yazeed_abulaila__jor,Yazeed Abulaila,0.8946,transfermarkt_availability_split_2026_06_07,59.0,10,0.8149,,1,0.7627,1.0,team_gk_exclusive_normalization
-JOR,abdel_rahman_al_talalga__jor,Abdel Rahman Al-Talalga,0.829,transfermarkt_availability_split_2026_06_07,7.0,,0.6702,,2,0.2122,1.0,team_gk_exclusive_normalization
-JPN,tomoki_hayakawa__jpn,Tomoki Hayakawa,0.0663,transfermarkt_availability_split_2026_06_07,3.0,3,0.9164,,2,0.0304,1.0,team_gk_exclusive_normalization
+JOR,abdel_rahman_al_talalga__jor,Abdel Rahman Al-Talalga,0.829,transfermarkt_availability_split_2026_06_07,7.0,,0.6702,,,0.0,1.0,holdet_is_out_zeroed
 JPN,zion_suzuki__jpn,Zion Suzuki,0.8399,transfermarkt_availability_split_2026_06_07,24.0,9,0.6927,,1,0.9433,1.0,team_gk_exclusive_normalization
 JPN,keisuke_sako__jpn,Keisuke Osako,0.0613,transfermarkt_availability_split_2026_06_07,11.0,3,0.7043,,3,0.0263,1.0,team_gk_exclusive_normalization
-KOR,jo_hyeon_woo__kor,Hyeon-Woo Jo,0.3742,transfermarkt_availability_split_2026_06_07,48.0,8,0.9458,,2,0.272,1.0,team_gk_exclusive_normalization
-KOR,kim_seung_gyu__kor,Seung-Gyu Kim,0.6105,transfermarkt_availability_split_2026_06_07,85.0,8,0.8226,,1,0.7029,1.0,team_gk_exclusive_normalization
+JPN,tomoki_hayakawa__jpn,Tomoki Hayakawa,0.0663,transfermarkt_availability_split_2026_06_07,3.0,3,0.9164,,2,0.0304,1.0,team_gk_exclusive_normalization
 KOR,bum_keun_song__kor,Bum-Keun Song,0.0448,transfermarkt_availability_split_2026_06_07,2.0,,0.703,,3,0.0251,1.0,team_gk_exclusive_normalization
-KSA,mohammed_al_rubaie_al_yami__ksa,Mohammed Al-Rubaie Al-Yami,0.043,transfermarkt_availability_split_2026_06_07,6.0,,0.6,,3,0.0256,1.0,team_gk_exclusive_normalization
-KSA,abdulrahman_al_sanbi__ksa,Abdulrahman Al-Sanbi,0.0449,transfermarkt_availability_split_2026_06_07,3.0,,0.709,,2,0.0281,1.0,team_gk_exclusive_normalization
-KSA,nawaf_al_aqidi__ksa,Nawaf Al-Aqidi,0.3811,transfermarkt_availability_split_2026_06_07,22.0,,0.6983,,1,0.9463,1.0,team_gk_exclusive_normalization
-MAR,el_mehdi_al_harrar__mar,El Mehdi Al Harrar,0.0779,transfermarkt_availability_split_2026_06_07,7.0,,0.6909,,4,0.0185,1.0,team_gk_exclusive_normalization
-MAR,munir_el_kajoui__mar,Munir El Kajoui,0.4882,transfermarkt_availability_split_2026_06_07,49.0,1,0.6991,,2,0.1633,1.0,team_gk_exclusive_normalization
-MAR,yassine_bono_bounou__mar,Yassine 'Bono' Bounou,0.7956,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,162.0,18,0.6512,,1,0.7956,1.0,team_gk_exclusive_normalization
-MAR,el_mehdi_benabid__mar,El Mehdi Benabid,0.2849,transfermarkt_availability_split_2026_06_07,5.0,3,0.6,,3,0.0226,1.0,team_gk_exclusive_normalization
+KOR,kim_seung_gyu__kor,Seung-Gyu Kim,0.6105,transfermarkt_availability_split_2026_06_07,85.0,8,0.8226,,1,0.7029,1.0,team_gk_exclusive_normalization
+KOR,jo_hyeon_woo__kor,Hyeon-Woo Jo,0.3742,transfermarkt_availability_split_2026_06_07,48.0,8,0.9458,,2,0.272,1.0,team_gk_exclusive_normalization
+KSA,ahmed_al_kassar__ksa,Ahmed Al-Kassar,0.2762,transfermarkt_availability_split_2026_06_07,8.0,,0.7355,,3,0.0914,1.0,team_gk_exclusive_normalization
+KSA,mohammed_al_owais__ksa,Mohammed Al-Owais,0.8248,transfermarkt_availability_split_2026_06_07,59.0,,0.6,,1,0.7314,1.0,team_gk_exclusive_normalization
+KSA,nawaf_al_aqidi__ksa,Nawaf Al-Aqidi,0.3811,transfermarkt_availability_split_2026_06_07,22.0,,0.6983,,2,0.1772,1.0,team_gk_exclusive_normalization
+KSA,abdulrahman_al_sanbi__ksa,Abdulrahman Al-Sanbi,0.0449,transfermarkt_availability_split_2026_06_07,3.0,,0.709,,,0.0,1.0,holdet_is_out_zeroed
+KSA,mohammed_al_rubaie_al_yami__ksa,Mohammed Al-Rubaie Al-Yami,0.043,transfermarkt_availability_split_2026_06_07,6.0,,0.6,,,0.0,1.0,holdet_is_out_zeroed
+MAR,el_mehdi_al_harrar__mar,El Mehdi Al Harrar,0.0779,transfermarkt_availability_split_2026_06_07,7.0,,0.6909,,,0.0,1.0,holdet_is_out_zeroed
+MAR,ahmed_reda_tagnaouti__mar,Ahmed Reda Tagnaouti,0.043,transfermarkt_availability_split_2026_06_07,0.0,,0.6,,3,0.0251,1.0,team_gk_exclusive_normalization
+MAR,el_mehdi_benabid__mar,El Mehdi Benabid,0.2849,transfermarkt_availability_split_2026_06_07,5.0,3,0.6,,,0.0,1.0,holdet_is_out_zeroed
+MAR,yassine_bono_bounou__mar,Yassine 'Bono' Bounou,0.9042,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,162.0,18,0.6512,,1,0.949,1.0,team_gk_exclusive_normalization
+MAR,munir_mohamedi_el_kajoui__mar,Munir Mohamedi El Kajoui,0.0707,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,,,,,2,0.0259,1.0,team_gk_exclusive_normalization
 MEX,raul_rangel__mex,Raul Rangel,0.835,transfermarkt_availability_split_2026_06_07,14.0,9,0.961,,1,0.9397,1.0,team_gk_exclusive_normalization
-MEX,carlos_acevedo__mex,Carlos Acevedo,0.043,transfermarkt_availability_split_2026_06_07,6.0,0,0.6,,3,0.0251,1.0,team_gk_exclusive_normalization
 MEX,guillermo_ochoa__mex,Guillermo Ochoa,0.1371,transfermarkt_availability_split_2026_06_07,148.0,0,0.62,,2,0.0352,1.0,team_gk_exclusive_normalization
-NED,bart_verbruggen__ned,Bart Verbruggen,0.6885,transfermarkt_availability_split_2026_06_07,28.0,9,0.8658,,1,0.9051,1.0,team_gk_exclusive_normalization
-NED,justin_bijlow__ned,Justin Bijlow,0.0519,transfermarkt_availability_split_2026_06_07,8.0,0,0.6026,,3,0.0159,1.0,team_gk_exclusive_normalization
-NED,mark_flekken__ned,Mark Flekken,0.2887,transfermarkt_availability_split_2026_06_07,11.0,3,0.921,,2,0.0639,1.0,team_gk_exclusive_normalization
-NED,robin_roefs__ned,Robin Roefs,0.0478,transfermarkt_availability_split_2026_06_07,0.0,,0.8762,,4,0.0151,1.0,team_gk_exclusive_normalization
+MEX,carlos_acevedo__mex,Carlos Acevedo,0.043,transfermarkt_availability_split_2026_06_07,6.0,0,0.6,,3,0.0251,1.0,team_gk_exclusive_normalization
+NED,bart_verbruggen__ned,Bart Verbruggen,0.6885,transfermarkt_availability_split_2026_06_07,28.0,9,0.8658,,1,0.9012,1.0,team_gk_exclusive_normalization
+NED,robin_roefs__ned,Robin Roefs,0.0478,transfermarkt_availability_split_2026_06_07,0.0,,0.8762,,3,0.0251,1.0,team_gk_exclusive_normalization
+NED,justin_bijlow__ned,Justin Bijlow,0.0519,transfermarkt_availability_split_2026_06_07,8.0,0,0.6026,,,0.0,1.0,holdet_is_out_zeroed
+NED,mark_flekken__ned,Mark Flekken,0.2887,transfermarkt_availability_split_2026_06_07,11.0,3,0.921,,2,0.0737,1.0,team_gk_exclusive_normalization
 NOR,egil_selvik__nor,Egil Selvik,0.0479,transfermarkt_availability_split_2026_06_07,4.0,1,0.8825,,2,0.0253,1.0,team_gk_exclusive_normalization
 NOR,sander_tangvik__nor,Sander Tangvik,0.0467,transfermarkt_availability_split_2026_06_07,0.0,0,0.8134,,3,0.0251,1.0,team_gk_exclusive_normalization
 NOR,rjan_nyland__nor,Ørjan Nyland,0.9225,transfermarkt_availability_split_2026_06_07,69.0,11,0.9293,,1,0.9496,1.0,team_gk_exclusive_normalization
+NOR,viljar_myhra__nor,Viljar Myhra,0.0,holdet_official_unmatched_default,,,,,,0.0,1.0,holdet_is_out_zeroed
 NZL,michael_woud__nzl,Michael Woud,0.0469,transfermarkt_availability_split_2026_06_07,6.0,,0.6,,3,0.0255,0.9999,team_gk_exclusive_normalization
-NZL,alex_paulsen__nzl,Alex Paulsen,0.5278,transfermarkt_availability_split_2026_06_07,7.0,,0.8052,,1,0.5912,0.9999,team_gk_exclusive_normalization
 NZL,max_crocombe__nzl,Max Crocombe,0.3953,transfermarkt_availability_split_2026_06_07,23.0,,0.8142,,2,0.3832,0.9999,team_gk_exclusive_normalization
+NZL,alex_paulsen__nzl,Alex Paulsen,0.5278,transfermarkt_availability_split_2026_06_07,7.0,,0.8052,,1,0.5912,0.9999,team_gk_exclusive_normalization
 PAN,luis_mejia__pan,Luis Mejia,0.3014,transfermarkt_availability_split_2026_06_07,55.0,,0.6394,,2,0.0982,1.0,team_gk_exclusive_normalization
 PAN,cesar_samudio__pan,Cesar Samudio,0.2283,transfermarkt_availability_split_2026_06_07,3.0,,0.7122,,3,0.0476,1.0,team_gk_exclusive_normalization
 PAN,orlando_mosquera__pan,Orlando Mosquera,0.6313,transfermarkt_availability_split_2026_06_07,46.0,10,0.8729,,1,0.8542,1.0,team_gk_exclusive_normalization
-PAR,juan_espinola__par,Juan Espinola,0.0437,transfermarkt_availability_split_2026_06_07,1.0,,0.6401,,5,0.0151,1.0001,team_gk_exclusive_normalization
-PAR,orlando_gill__par,Orlando Gill,0.3568,transfermarkt_availability_split_2026_06_07,5.0,5,0.9097,,1,0.3687,1.0001,team_gk_exclusive_normalization
-PAR,carlos_miguel_coronel__par,Carlos Miguel Coronel,0.0922,transfermarkt_availability_split_2026_06_07,9.0,,0.8814,,4,0.0371,1.0001,team_gk_exclusive_normalization
-PAR,roberto_gatito_fernandez__par,Roberto 'Gatito' Fernandez,0.1584,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,61.0,6,0.6,,2,0.3411,1.0001,team_gk_exclusive_normalization
-PAR,gaston_olveira__par,Gaston Olveira,0.3107,transfermarkt_availability_split_2026_06_07,1.0,1,0.8288,,3,0.2381,1.0001,team_gk_exclusive_normalization
-POR,ricardo_velho__por,Ricardo Velho,0.0474,transfermarkt_availability_split_2026_06_07,0.0,1,0.8529,,4,0.0151,1.0001,team_gk_exclusive_normalization
-POR,jos_s__por,Jose Sa,0.6134,transfermarkt_availability_split_2026_06_07,13.0,4,0.6607,,2,0.3363,1.0001,team_gk_exclusive_normalization
-POR,diogo_costa__por,Diogo Costa,0.6917,transfermarkt_availability_split_2026_06_07,42.0,10,0.9031,,1,0.6244,1.0001,team_gk_exclusive_normalization
-POR,rui_silva__por,Rui Silva,0.22,transfermarkt_availability_split_2026_06_07,2.0,1,0.6,,3,0.0243,1.0001,team_gk_exclusive_normalization
-QAT,mahmoud_abunada__qat,Mahmoud Abunada,0.5775,transfermarkt_availability_split_2026_06_07,5.0,,0.9201,,2,0.3828,1.0,team_gk_exclusive_normalization
-QAT,shehab_ellethy__qat,Shehab Ellethy,0.043,transfermarkt_availability_split_2026_06_07,1.0,0,0.6,,3,0.0251,1.0,team_gk_exclusive_normalization
-QAT,meshaal_barsham__qat,Meshaal Barsham,0.6321,transfermarkt_availability_split_2026_06_07,53.0,,0.8375,,1,0.5921,1.0,team_gk_exclusive_normalization
+PAR,orlando_gill__par,Orlando Gill,0.3568,transfermarkt_availability_split_2026_06_07,5.0,5,0.9097,,2,0.3331,1.0,team_gk_exclusive_normalization
+PAR,juan_espinola__par,Juan Espinola,0.0437,transfermarkt_availability_split_2026_06_07,1.0,,0.6401,,,0.0,1.0,holdet_is_out_zeroed
+PAR,roberto_gatito_fernandez__par,Roberto 'Gatito' Fernandez,0.4208,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,61.0,6,0.6,,1,0.4555,1.0,team_gk_exclusive_normalization
+PAR,carlos_miguel_coronel__par,Carlos Miguel Coronel,0.0922,transfermarkt_availability_split_2026_06_07,9.0,,0.8814,,,0.0,1.0,holdet_is_out_zeroed
+PAR,gaston_olveira__par,Gaston Olveira,0.3107,transfermarkt_availability_split_2026_06_07,1.0,1,0.8288,,3,0.2114,1.0,team_gk_exclusive_normalization
+POR,joao_carvalho__por,Joao Carvalho,0.0,holdet_official_unmatched_default,,,,,,0.0,1.0,holdet_is_out_zeroed
+POR,ricardo_velho__por,Ricardo Velho,0.0474,transfermarkt_availability_split_2026_06_07,0.0,1,0.8529,,,0.0,1.0,holdet_is_out_zeroed
+POR,rui_silva__por,Rui Silva,0.22,transfermarkt_availability_split_2026_06_07,2.0,1,0.6,,3,0.0342,1.0,team_gk_exclusive_normalization
+POR,jos_s__por,Jose Sa,0.6134,transfermarkt_availability_split_2026_06_07,13.0,4,0.6607,,2,0.3446,1.0,team_gk_exclusive_normalization
+POR,diogo_costa__por,Diogo Costa,0.6917,transfermarkt_availability_split_2026_06_07,42.0,10,0.9031,,1,0.6212,1.0,team_gk_exclusive_normalization
+QAT,salah_zakaria__qat,Salah Zakaria,0.0465,transfermarkt_availability_split_2026_06_07,6.0,,0.7838,,3,0.0256,1.0,team_gk_exclusive_normalization
+QAT,mahmoud_abunada__qat,Mahmoud Abunada,0.5775,transfermarkt_availability_split_2026_06_07,5.0,,0.9201,,2,0.3826,1.0,team_gk_exclusive_normalization
+QAT,shehab_ellethy__qat,Shehab Ellethy,0.043,transfermarkt_availability_split_2026_06_07,1.0,0,0.6,,,0.0,1.0,holdet_is_out_zeroed
+QAT,meshaal_barsham__qat,Meshaal Barsham,0.6321,transfermarkt_availability_split_2026_06_07,53.0,,0.8375,,1,0.5918,1.0,team_gk_exclusive_normalization
 RSA,ricardo_goss__rsa,Ricardo Goss,0.241,transfermarkt_availability_split_2026_06_07,4.0,0,0.7059,,2,0.0547,0.9999,team_gk_exclusive_normalization
 RSA,ronwen_williams__rsa,Ronwen Williams,0.6477,transfermarkt_availability_split_2026_06_07,60.0,12,0.6857,,1,0.92,0.9999,team_gk_exclusive_normalization
 RSA,sipho_chaine__rsa,Sipho Chaine,0.0449,transfermarkt_availability_split_2026_06_07,2.0,0,0.7062,,3,0.0252,0.9999,team_gk_exclusive_normalization
 SCO,angus_gunn__sco,Angus Gunn,0.434,transfermarkt_availability_split_2026_06_07,22.0,6,0.7476,,2,0.2623,0.9999,team_gk_exclusive_normalization
 SCO,craig_gordon__sco,Craig Gordon,0.6132,transfermarkt_availability_split_2026_06_07,79.0,,0.7976,,1,0.4868,0.9999,team_gk_exclusive_normalization
+SCO,scott_bain__sco,Scott Bain,0.0,holdet_official_unmatched_default,,,,,,0.0,0.9999,holdet_is_out_zeroed
 SCO,liam_kelly__sco,Liam Kelly,0.4453,transfermarkt_availability_split_2026_06_07,1.0,0,0.6875,,3,0.2508,0.9999,team_gk_exclusive_normalization
+SEN,yehvann_diouf__sen,Yehvann Diouf,0.2416,transfermarkt_availability_split_2026_06_07,2.0,2,0.727,,3,0.0615,1.0,team_gk_exclusive_normalization
 SEN,mory_diaw__sen,Mory Diaw,0.4626,transfermarkt_availability_split_2026_06_07,5.0,2,0.7327,,2,0.2679,1.0,team_gk_exclusive_normalization
 SEN,edouard_mendy__sen,Edouard Mendy,0.8541,transfermarkt_availability_split_2026_06_07,56.0,15,0.6587,,1,0.6706,1.0,team_gk_exclusive_normalization
-SEN,yehvann_diouf__sen,Yehvann Diouf,0.2416,transfermarkt_availability_split_2026_06_07,2.0,2,0.727,,3,0.0615,1.0,team_gk_exclusive_normalization
-SUI,marvin_keller__sui,Marvin Keller,0.0486,transfermarkt_availability_split_2026_06_07,0.0,0,0.9206,,3,0.0151,1.0001,team_gk_exclusive_normalization
-SUI,gregor_kobel__sui,Gregor Kobel,0.92,transfermarkt_availability_split_2026_06_07+context_override,21.0,10,0.97,yes,1,0.9192,1.0001,team_gk_exclusive_normalization
-SUI,yvon_mvogo__sui,Yvon Mvogo,0.4953,transfermarkt_availability_split_2026_06_07,12.0,2,0.8544,,2,0.0507,1.0001,team_gk_exclusive_normalization
-SUI,pascal_loretz__sui,Pascal Loretz,0.0441,transfermarkt_availability_split_2026_06_07,0.0,,0.6629,,4,0.0151,1.0001,team_gk_exclusive_normalization
-SWE,viktor_johansson__swe,Viktor Johansson,0.3407,transfermarkt_availability_split_2026_06_07,11.0,5,0.8956,,4,0.0562,1.0001,team_gk_exclusive_normalization
-SWE,jacob_widell_zetterstrom__swe,Jacob Widell Zetterström,0.468,transfermarkt_availability_split_2026_06_07,3.0,1,0.6,,3,0.1098,1.0001,team_gk_exclusive_normalization
-SWE,kristoffer_nordfeldt__swe,Kristoffer Nordfeldt,0.4793,transfermarkt_availability_split_2026_06_07,18.0,2,0.7842,,2,0.1497,1.0001,team_gk_exclusive_normalization
-SWE,robin_olsen__swe,Robin Olsen,0.6424,transfermarkt_availability_split_2026_06_07,78.0,,0.7663,,1,0.6542,1.0001,team_gk_exclusive_normalization
-SWE,melker_ellborg__swe,Melker Ellborg,0.0464,transfermarkt_availability_split_2026_06_07,0.0,,0.7934,,5,0.0151,1.0001,team_gk_exclusive_normalization
-SWE,noel_tornqvist__swe,Noel Törnqvist,0.0461,transfermarkt_availability_split_2026_06_07,0.0,,0.7778,,6,0.0151,1.0001,team_gk_exclusive_normalization
-TUN,aymen_dahmen__tun,Aymen Dahmen,0.1655,transfermarkt_availability_split_2026_06_07,34.0,10,0.8329,,2,0.04,1.0001,team_gk_exclusive_normalization
-TUN,abdelmouhib_chamakh__tun,Abdelmouhib Chamakh,0.8806,transfermarkt_availability_split_2026_06_07,3.0,,0.8538,,1,0.9273,1.0001,team_gk_exclusive_normalization
-TUN,sabri_ben_hessen__tun,Sabri Ben Hessen,0.2357,transfermarkt_availability_split_2026_06_07,1.0,1,0.6,,4,0.0161,1.0001,team_gk_exclusive_normalization
-TUN,bechir_ben_said__tun,Bechir Ben Said,0.0696,transfermarkt_availability_split_2026_06_07,21.0,,0.7603,,3,0.0167,1.0001,team_gk_exclusive_normalization
-TUR,mert_gunok__tur,Mert Günok,0.0986,transfermarkt_availability_split_2026_06_07,35.0,,0.7031,,3,0.0193,1.0,team_gk_exclusive_normalization
-TUR,altay_bayindir__tur,Altay Bayindir,0.2791,transfermarkt_availability_split_2026_06_07,10.0,1,0.9565,,2,0.0486,1.0,team_gk_exclusive_normalization
-TUR,muhammed_sengezer__tur,Muhammed Sengezer,0.0463,transfermarkt_availability_split_2026_06_07,0.0,0,0.787,,4,0.0151,1.0,team_gk_exclusive_normalization
-TUR,ugurcan_cakir__tur,Ugurcan Cakir,0.837,transfermarkt_availability_split_2026_06_07,39.0,9,0.9001,,1,0.917,1.0,team_gk_exclusive_normalization
+SUI,marvin_keller__sui,Marvin Keller,0.0486,transfermarkt_availability_split_2026_06_07,0.0,0,0.9206,,3,0.0251,1.0001,team_gk_exclusive_normalization
+SUI,pascal_loretz__sui,Pascal Loretz,0.0441,transfermarkt_availability_split_2026_06_07,0.0,,0.6629,,,0.0,1.0001,holdet_is_out_zeroed
+SUI,gregor_kobel__sui,Gregor Kobel,0.92,transfermarkt_availability_split_2026_06_07+context_override,21.0,10,0.97,yes,1,0.9145,1.0001,team_gk_exclusive_normalization
+SUI,yvon_mvogo__sui,Yvon Mvogo,0.4953,transfermarkt_availability_split_2026_06_07,12.0,2,0.8544,,2,0.0605,1.0001,team_gk_exclusive_normalization
+SWE,viktor_johansson__swe,Viktor Johansson,0.3407,transfermarkt_availability_split_2026_06_07,11.0,5,0.8956,,3,0.1696,0.9999,team_gk_exclusive_normalization
+SWE,melker_ellborg__swe,Melker Ellborg,0.0464,transfermarkt_availability_split_2026_06_07,0.0,,0.7934,,,0.0,0.9999,holdet_is_out_zeroed
+SWE,noel_tornqvist__swe,Noel Törnqvist,0.0461,transfermarkt_availability_split_2026_06_07,0.0,,0.7778,,,0.0,0.9999,holdet_is_out_zeroed
+SWE,robin_olsen__swe,Robin Olsen,0.6424,transfermarkt_availability_split_2026_06_07,78.0,,0.7663,,,0.0,0.9999,holdet_is_out_zeroed
+SWE,jacob_widell_zetterstrom__swe,Jacob Widell Zetterström,0.468,transfermarkt_availability_split_2026_06_07,3.0,1,0.6,,2,0.3576,0.9999,team_gk_exclusive_normalization
+SWE,kristoffer_nordfeldt__swe,Kristoffer Nordfeldt,0.4793,transfermarkt_availability_split_2026_06_07,18.0,2,0.7842,,1,0.4727,0.9999,team_gk_exclusive_normalization
+TUN,noureddine_farhati__tun,Noureddine Farhati,0.0,holdet_official_unmatched_default,,,,,,0.0,1.0,holdet_is_out_zeroed
+TUN,abdelmouhib_chamakh__tun,Abdelmouhib Chamakh,0.8806,transfermarkt_availability_split_2026_06_07,3.0,,0.8538,,1,0.924,1.0,team_gk_exclusive_normalization
+TUN,aymen_dahmen__tun,Aymen Dahmen,0.1655,transfermarkt_availability_split_2026_06_07,34.0,10,0.8329,,2,0.0499,1.0,team_gk_exclusive_normalization
+TUN,bechir_ben_said__tun,Bechir Ben Said,0.0696,transfermarkt_availability_split_2026_06_07,21.0,,0.7603,,,0.0,1.0,holdet_is_out_zeroed
+TUN,sabri_ben_hessen__tun,Sabri Ben Hessen,0.2357,transfermarkt_availability_split_2026_06_07,1.0,1,0.6,,3,0.0261,1.0,team_gk_exclusive_normalization
+TUR,mert_gunok__tur,Mert Günok,0.0986,transfermarkt_availability_split_2026_06_07,35.0,,0.7031,,3,0.0293,1.0,team_gk_exclusive_normalization
+TUR,muhammed_sengezer__tur,Muhammed Sengezer,0.0463,transfermarkt_availability_split_2026_06_07,0.0,0,0.787,,,0.0,1.0,holdet_is_out_zeroed
+TUR,ugurcan_cakir__tur,Ugurcan Cakir,0.837,transfermarkt_availability_split_2026_06_07,39.0,9,0.9001,,1,0.9123,1.0,team_gk_exclusive_normalization
+TUR,altay_bayindir__tur,Altay Bayindir,0.2791,transfermarkt_availability_split_2026_06_07,10.0,1,0.9565,,2,0.0584,1.0,team_gk_exclusive_normalization
 URU,sergio_rochet__uru,Sergio Rochet,0.4355,transfermarkt_availability_split_2026_06_07,35.0,6,0.891,,1,0.5955,1.0,team_gk_exclusive_normalization
 URU,fernando_muslera__uru,Fernando Muslera,0.4101,transfermarkt_availability_split_2026_06_07,133.0,1,0.6,,2,0.3731,1.0,team_gk_exclusive_normalization
 URU,santiago_mele__uru,Santiago Mele,0.059,transfermarkt_availability_split_2026_06_07,7.0,4,0.8521,,3,0.0314,1.0,team_gk_exclusive_normalization
-USA,chris_brady__usa,Chris Brady,0.0441,transfermarkt_availability_split_2026_06_07,0.0,,0.6613,,4,0.0151,1.0,team_gk_exclusive_normalization
-USA,patrick_schulte__usa,Patrick Schulte,0.0445,transfermarkt_availability_split_2026_06_07,3.0,0,0.6838,,3,0.0152,1.0,team_gk_exclusive_normalization
-USA,matt_freese__usa,Matt Freese,0.6647,transfermarkt_availability_split_2026_06_07,15.0,,0.8934,,1,0.7668,1.0,team_gk_exclusive_normalization
-USA,matt_turner__usa,Matt Turner,0.3975,transfermarkt_availability_split_2026_06_07,54.0,4,0.8098,,2,0.2029,1.0,team_gk_exclusive_normalization
+USA,chris_brady__usa,Chris Brady,0.0441,transfermarkt_availability_split_2026_06_07,0.0,,0.6613,,3,0.0251,1.0,team_gk_exclusive_normalization
+USA,patrick_schulte__usa,Patrick Schulte,0.0445,transfermarkt_availability_split_2026_06_07,3.0,0,0.6838,,,0.0,1.0,holdet_is_out_zeroed
+USA,matt_freese__usa,Matt Freese,0.6647,transfermarkt_availability_split_2026_06_07,15.0,,0.8934,,1,0.7629,1.0,team_gk_exclusive_normalization
+USA,matt_turner__usa,Matt Turner,0.3975,transfermarkt_availability_split_2026_06_07,54.0,4,0.8098,,2,0.212,1.0,team_gk_exclusive_normalization
 UZB,utkir_yusupov__uzb,Utkir Yusupov,0.4363,transfermarkt_availability_split_2026_06_07,44.0,5,0.8586,,1,0.4928,0.9999,team_gk_exclusive_normalization
 UZB,abduvokhid_nematov__uzb,Abduvokhid Nematov,0.5194,transfermarkt_availability_split_2026_06_07,14.0,,0.7775,,2,0.482,0.9999,team_gk_exclusive_normalization
 UZB,botirali_ergashev__uzb,Botirali Ergashev,0.0442,transfermarkt_availability_split_2026_06_07,3.0,,0.6702,,3,0.0251,0.9999,team_gk_exclusive_normalization

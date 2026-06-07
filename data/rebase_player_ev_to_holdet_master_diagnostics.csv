@@ -1,0 +1,1520 @@
+﻿player_id,player_name,team_id,position,price,ev_match_method,ev_match_score,weighted_group_stage_ev,start_prob
+nico_elvedi__sui,Nico Elvedi,SUI,DEF,3000000,name_team_position,1.0,3.152138,0.8785
+silvan_widmer__sui,Silvan Widmer,SUI,DEF,3000000,name_team_position,1.0,3.779752,0.84
+ricardo_rodr_guez__sui,Ricardo Rodriguez,SUI,DEF,3000000,name_team_position,1.0,2.08501,0.4831
+eray_c_mert__sui,Eray Cömert,SUI,DEF,2000000,name_team_position,1.0,0.272691,0.0563
+manuel_akanji__sui,Manuel Akanji,SUI,DEF,3500000,name_team_position,1.0,3.503895,0.9398
+becir_omeragic__sui,Becir Omeragic,SUI,DEF,2000000,unmatched,0.5217391304347826,0.0,0.25
+cedric_zesiger__sui,Cedric Zesiger,SUI,DEF,2000000,unmatched,0.6153846153846154,0.0,0.25
+aurele_amenda__sui,Aurele Amenda,SUI,DEF,2500000,name_team_position,1.0,0.266654,0.0487
+luca_jaquez__sui,Luca Jaquez,SUI,DEF,2000000,name_team_position,1.0,0.237509,0.0479
+isaac_schmidt__sui,Isaac Schmidt,SUI,DEF,2000000,unmatched,0.4666666666666667,0.0,0.25
+miro_muheim__sui,Miro Muheim,SUI,DEF,2500000,name_team_position,1.0,0.267984,0.0488
+adrian_bajrami__sui,Adrian Bajrami,SUI,DEF,2000000,unmatched,0.5185185185185185,0.0,0.25
+lucas_blondel__sui,Lucas Blondel,SUI,DEF,2000000,unmatched,0.46153846153846156,0.0,0.25
+robin_hranac__cze,Robin Hranac,CZE,DEF,2500000,name_team_position,1.0,1.871363,0.8244
+ladislav_krejci__cze,Ladislav Krejci,CZE,DEF,3000000,name_team_position,1.0,2.377345,0.9051
+stepan_chaloupek__cze,Stepan Chaloupek,CZE,DEF,2000000,name_team_position,1.0,1.531103,0.8822
+martin_vitik__cze,Martin Vitik,CZE,DEF,2500000,name_team_position,1.0,0.875733,0.3287
+david_jurasek__cze,David Jurasek,CZE,DEF,2000000,name_team_position,1.0,0.688023,0.3556
+david_zima__cze,David Zima,CZE,DEF,2000000,unmatched,0.56,0.0,0.25
+jaroslav_zeleny__cze,Jaroslav Zeleny,CZE,DEF,2500000,name_team_position,1.0,0.928636,0.3657
+tomas_holes__cze,Tomas Holes,CZE,DEF,2000000,name_team_position,1.0,0.423882,0.187
+vladimir_coufal__cze,Vladimir Coufal,CZE,DEF,3000000,name_team_position,1.0,2.383311,0.9096
+jo_o_cancelo__por,João Cancelo,POR,DEF,5000000,name_team_position,1.0,2.933691,0.6523
+n_lson_semedo__por,Nelson Semedo,POR,DEF,4000000,name_team_position,1.0,2.236732,0.5183
+diogo_dalot__por,Diogo Dalot,POR,DEF,4000000,name_team_position,1.0,1.760034,0.37
+nuno_tavares__por,Nuno Tavares,POR,DEF,3500000,unmatched,0.6086956521739131,0.0,0.25
+r_ben_dias__por,Ruben Dias,POR,DEF,4000000,name_team_position,1.0,3.669975,0.9454
+nuno_mendes__por,Nuno Mendes,POR,DEF,4500000,name_team_position,1.0,3.931415,0.88
+gon_alo_in_cio__por,Goncalo Inacio,POR,DEF,4000000,name_team_position,1.0,1.680874,0.3606
+tom_s_ara_jo__por,Tomas Araujo,POR,DEF,3500000,name_team_position,1.0,1.285761,0.2957
+antonio_silva__por,Antonio Silva,POR,DEF,3500000,unmatched,0.6363636363636364,0.0,0.25
+renato_veiga__por,Renato Veiga,POR,DEF,3500000,name_team_position,1.0,2.441712,0.5821
+mustafa_eskihella__tur,Mustafa Eskihellac,TUR,DEF,2000000,name_team_position,1.0,0.291976,0.0394
+mert_m_ld_r__tur,Mert Müldür,TUR,DEF,3000000,name_team_position,1.0,1.452636,0.3893
+ferdi_kadioglu__tur,Ferdi Kadioglu,TUR,DEF,3500000,name_team_position,1.0,2.846844,0.918
+samet_akaydin__tur,Samet Akaydin,TUR,DEF,2500000,name_team_position,1.0,0.386808,0.0974
+abdulkerim_bardakci__tur,Abdulkerim Bardakci,TUR,DEF,3000000,name_team_position,1.0,2.596246,0.8864
+evren_eren_elmali__tur,Evren Eren Elmali,TUR,DEF,2000000,name_team_position,1.0,1.196831,0.5587
+zeki_elik__tur,Zeki Celik,TUR,DEF,2500000,name_team_position,1.0,2.346439,0.8552
+merih_demiral__tur,Merih Demiral,TUR,DEF,3000000,name_team_position,1.0,1.680289,0.4349
+ozan_kabak__tur,Ozan Kabak,TUR,DEF,2500000,name_team_position,1.0,2.033866,0.7852
+caglar_soyuncu__tur,Caglar Soyuncu,TUR,DEF,2500000,unmatched,0.56,0.0,0.25
+david_alaba__aut,David Alaba,AUT,DEF,3000000,name_team_position,1.0,1.620052,0.4441
+marco_friedl__aut,Marco Friedl,AUT,DEF,2000000,name_team_position,1.0,0.990883,0.4784
+philipp_lienhart__aut,Philipp Lienhart,AUT,DEF,3000000,name_team_position,1.0,3.043875,0.84
+kevin_danso__aut,Kevin Danso,AUT,DEF,2500000,name_team_position,1.0,1.082472,0.3346
+stefan_posch__aut,Stefan Posch,AUT,DEF,3000000,name_team_position,1.0,2.99185,0.84
+phillipp_mwene__aut,Phillipp Mwene,AUT,DEF,2500000,name_team_position,1.0,2.313594,0.76
+maximilian_w_ber__aut,Maximilian Wöber,AUT,DEF,2500000,name_team_position,1.0,1.646827,0.559
+leopold_querfeld__aut,Leopold Querfeld,AUT,DEF,2000000,name_team_position,1.0,0.180449,0.0465
+david_affengruber__aut,David Affengruber,AUT,DEF,2500000,unmatched,0.45161290322580644,0.0,0.25
+alexander_prass__aut,Alexander Prass,AUT,DEF,2500000,name_team_position,1.0,0.432716,0.0816
+michael_svoboda__aut,Michael Svoboda,AUT,DEF,2500000,unmatched,0.5294117647058824,0.0,0.25
+josip_utalo__cro,Josip Sutalo,CRO,DEF,3000000,name_team_position,1.0,2.444445,0.6651
+kristijan_jaki__cro,Kristijan Jakic,CRO,DEF,3500000,name_team_position,1.0,0.33945,0.0729
+martin_erlic__cro,Martin Erlic,CRO,DEF,3000000,name_team_position,1.0,1.120417,0.2891
+josip_stani_i__cro,Josip Stanisic,CRO,DEF,3500000,name_team_position,1.0,2.337555,0.6248
+luka_vuskovic__cro,Luka Vuskovic,CRO,DEF,2000000,name_team_position,1.0,1.643478,0.7872
+ivan_smolcic__cro,Ivan Smolcic,CRO,DEF,2000000,unmatched,0.6666666666666666,0.0,0.25
+jo_ko_gvardiol__cro,Josko Gvardiol,CRO,DEF,3500000,name_team_position,1.0,3.314403,0.9101
+marin_pongra_i__cro,Marin Pongracic,CRO,DEF,2500000,name_team_position,1.0,0.921103,0.3085
+duje_aleta_car__cro,Duje Caleta-Car,CRO,DEF,3000000,name_team_position,1.0,1.369445,0.3591
+antonio_r_diger__ger,Antonio Rüdiger,GER,DEF,4500000,name_team_position,1.0,1.194964,0.208
+jonathan_tah__ger,Jonathan Tah,GER,DEF,4500000,name_team_position,1.0,3.614922,0.8434
+maximilian_mittelstadt__ger,Maximilian Mittelstädt,GER,DEF,3500000,unmatched,0.6842105263157895,0.0,0.25
+waldemar_anton__ger,Waldemar Anton,GER,DEF,3500000,name_team_position,1.0,0.330316,0.0482
+robin_koch__ger,Robin Koch,GER,DEF,3500000,name_team_position,1.0,0.0,0.2705
+nico_schlotterbeck__ger,Nico Schlotterbeck,GER,DEF,4000000,name_team_position,1.0,3.516868,0.831
+malick_thiaw__ger,Malick Thiaw,GER,DEF,3000000,name_team_position,1.0,0.229434,0.043
+david_raum__ger,David Raum,GER,DEF,4500000,name_team_position,1.0,0.874565,0.1476
+nathaniel_brown__ger,Nathaniel Brown,GER,DEF,2500000,name_team_position,1.0,2.577539,0.803
+malo_gusto__fra,Malo Gusto,FRA,DEF,4000000,name_team_position,1.0,1.425895,0.2882
+pierre_kalulu__fra,Pierre Kalulu,FRA,DEF,3000000,name_team_position,1.0,0.0,0.3075
+maxence_lacroix__fra,Maxence Lacroix,FRA,DEF,3000000,name_team_position,1.0,1.4213,0.3107
+jules_kounde__fra,Jules Kounde,FRA,DEF,3500000,name_team_position,1.0,2.912575,0.6814
+william_saliba__fra,William Saliba,FRA,DEF,4500000,name_team_position,1.0,2.070002,0.4145
+dayot_upamecano__fra,Dayot Upamecano,FRA,DEF,4000000,name_team_position,1.0,3.032875,0.6508
+ibrahima_konat__fra,Ibrahima Konate,FRA,DEF,3000000,name_team_position,1.0,2.666228,0.6158
+theo_hern_ndez__fra,Theo Hernandez,FRA,DEF,4500000,name_team_position,1.0,3.253647,0.6642
+lucas_hern_ndez__fra,Lucas Hernandez,FRA,DEF,3000000,name_team_position,1.0,1.535586,0.3464
+lucas_digne__fra,Lucas Digne,FRA,DEF,3500000,name_team_position,1.0,1.558019,0.3174
+stefan_de_vrij__ned,Stefan de Vrij,NED,DEF,3000000,name_team_position,1.0,1.490332,0.3851
+nathan_ak__ned,Nathan Ake,NED,DEF,3500000,name_team_position,1.0,1.580781,0.3831
+virgil_van_dijk__ned,Virgil van Dijk,NED,DEF,5000000,name_team_position,1.0,3.479387,0.9438
+denzel_dumfries__ned,Denzel Dumfries,NED,DEF,5000000,name_team_position,1.0,3.771568,0.9243
+jurri_n_timber__ned,Jurrien Timber,NED,DEF,2500000,name_team_position,1.0,2.238547,0.7551
+jeremie_frimpong__ned,Jeremie Frimpong,NED,DEF,4000000,name_team_position,1.0,0.468452,0.0846
+jorrel_hato__ned,Jorrel Hato,NED,DEF,2500000,name_team_position,1.0,0.297163,0.0494
+jan_paul_van_hecke__ned,Jan Paul van Hecke,NED,DEF,3000000,name_team_position,1.0,2.127152,0.5768
+micky_van_de_ven__ned,Micky van de Ven,NED,DEF,4000000,name_team_position,1.0,2.395178,0.5829
+marc_pubill__esp,Marc Pubill,ESP,DEF,3000000,name_team_position,1.0,0.293933,0.0456
+dean_donny_huijsen__esp,Dean Donny Huijsen,ESP,DEF,4000000,name_team_position,1.0,0.0,0.6377
+pau_cubars__esp,Pau Cubarsi,ESP,DEF,4000000,name_team_position,1.0,1.749228,0.3084
+eric_garcia__esp,Eric Garcia,ESP,DEF,3000000,name_team_position,1.0,0.77333,0.1055
+robin_le_normand__esp,Robin Le Normand,ESP,DEF,4500000,name_team_position,1.0,0.0,0.9392
+pedro_porro__esp,Pedro Porro,ESP,DEF,4500000,name_team_position,1.0,3.137205,0.5708
+marc_cucurella__esp,Marc Cucurella,ESP,DEF,4500000,name_team_position,1.0,3.24361,0.5911
+daniel_vivian__esp,Daniel Vivian,ESP,DEF,3500000,name_team_position,1.0,0.0,0.0801
+alejandro_alex_grimaldo__esp,Alejandro 'Alex' Grimaldo,ESP,DEF,4000000,name_team_position,1.0,1.841176,0.3837
+aymeric_laporte__esp,Aymeric Laporte,ESP,DEF,4500000,name_team_position,1.0,3.569658,0.6506
+victor_lindel_f__swe,Victor Lindelöf,SWE,DEF,3000000,name_team_position,1.0,1.918485,0.6257
+eric_smith__swe,Eric Smith,SWE,DEF,2000000,name_team_position,1.0,0.592548,0.3162
+carl_starfelt__swe,Carl Starfelt,SWE,DEF,2500000,name_team_position,1.0,0.746479,0.29
+gabriel_gudmundsson__swe,Gabriel Gudmundsson,SWE,DEF,3000000,name_team_position,1.0,2.412655,0.8488
+emil_holm__swe,Emil Holm,SWE,DEF,2500000,name_team_position,1.0,1.090552,0.2857
+hjalmar_ekdal__swe,Hjalmar Ekdal,SWE,DEF,2000000,name_team_position,1.0,0.308661,0.1014
+daniel_svensson__swe,Daniel Svensson,SWE,DEF,3000000,name_team_position,1.0,2.377515,0.8525
+isak_hien__swe,Isak Hien,SWE,DEF,2500000,name_team_position,1.0,2.136181,0.9237
+victor_eriksson__swe,Victor Eriksson,SWE,DEF,2000000,unmatched,0.6451612903225806,0.0,0.25
+gustaf_lagerbielke__swe,Gustaf Lagerbielke,SWE,DEF,3000000,name_team_position,1.0,2.273804,0.7784
+elliot_stroud__swe,Elliot Stroud,SWE,DEF,2000000,name_team_position,1.0,0.0,0.0441
+achref_abada__alg,Achref Abada,ALG,DEF,2000000,name_team_position,1.0,1.017162,0.5495
+sohaib_nair__alg,Sohaib Nair,ALG,DEF,2000000,name_team_position,1.0,0.0,0.047
+mohamed_amine_tougai__alg,Mohamed Amine Tougai,ALG,DEF,2000000,unmatched,0.7741935483870968,0.0,0.25
+youcef_atal__alg,Youcef Atal,ALG,DEF,2500000,name_team_position,1.0,0.478712,0.1504
+jaouen_hadjam__alg,Jaouen Hadjam,ALG,DEF,2500000,unmatched,0.5517241379310345,0.0,0.25
+samir_chergui__alg,Samir Chergui,ALG,DEF,2000000,unmatched,0.6086956521739131,0.0,0.25
+zineddine_belaid__alg,Zineddine Belaid,ALG,DEF,2500000,name_team_position,1.0,1.857422,0.7139
+mehdi_dorval__alg,Mehdi Dorval,ALG,DEF,2000000,name_team_position,1.0,0.120915,0.0441
+rayan_a_t_nouri__alg,Rayan Ait-Nouri,ALG,DEF,3000000,name_team_position,1.0,2.365633,0.8435
+ramy_bensebaini__alg,Ramy Bensebaini,ALG,DEF,3000000,name_team_position,1.0,1.953037,0.6387
+rafik_belghali__alg,Rafik Belghali,ALG,DEF,2500000,name_team_position,1.0,1.090101,0.3883
+a_ssa_mandi__alg,Aissa Mandi,ALG,DEF,3000000,name_team_position,1.0,2.048076,0.6633
+nicol_s_otamendi__arg,Nicolas Otamendi,ARG,DEF,4500000,name_team_position,1.0,3.036801,0.6444
+nicol_s_tagliafico__arg,Nicolas Tagliafico,ARG,DEF,4000000,name_team_position,1.0,3.604126,0.8693
+leonardo_balerdi__arg,Leonardo Balerdi,ARG,DEF,4000000,name_team_position,1.0,2.190097,0.4789
+lisandro_martinez__arg,Lisandro Martinez,ARG,DEF,3000000,unmatched,0.8235294117647058,0.0,0.25
+cristian_romero__arg,Cristian Romero,ARG,DEF,4000000,name_team_position,1.0,3.219844,0.6811
+julio_soler__arg,Julio Soler,ARG,DEF,3000000,name_team_position,1.0,2.96038,0.8253
+facundo_medina__arg,Facundo Medina,ARG,DEF,2500000,unmatched,0.5185185185185185,0.0,0.25
+lucas_herrington__aus,Lucas Herrington,AUS,DEF,2000000,name_team_position,1.0,1.359122,0.9204
+gonzalo_montiel__arg,Gonzalo Montiel,ARG,DEF,3500000,name_team_position,1.0,2.536059,0.5505
+nahuel_molina__arg,Nahuel Molina,ARG,DEF,4000000,name_team_position,1.0,3.071686,0.6568
+jacob_italiano__aus,Jacob Italiano,AUS,DEF,2000000,name_team_position,1.0,0.765425,0.4045
+jason_geria__aus,Jason Geria,AUS,DEF,2500000,name_team_position,1.0,0.343444,0.1245
+kai_trewin__aus,Kai Trewin,AUS,DEF,2000000,name_team_position,1.0,0.945679,0.5807
+kye_rowles__aus,Kye Rowles,AUS,DEF,2500000,name_team_position,1.0,1.391596,0.599
+cameron_burgess__aus,Cameron Burgess,AUS,DEF,3000000,name_team_position,1.0,0.593591,0.1661
+alessandro_circati__aus,Alessandro Circati,AUS,DEF,2500000,name_team_position,1.0,1.751069,0.8608
+jordan_bos__aus,Jordan Bos,AUS,DEF,3000000,name_team_position,1.0,1.017116,0.3743
+callum_elder__aus,Callum Elder,AUS,DEF,2000000,name_team_position,1.0,0.095507,0.0386
+harry_souttar__aus,Harry Souttar,AUS,DEF,2500000,unmatched,0.46153846153846156,0.0,0.25
+aziz_behich__aus,Aziz Behich,AUS,DEF,2500000,name_team_position,1.0,1.349802,0.6127
+milo_degenek__aus,Milos Degenek,AUS,DEF,2500000,name_team_position,1.0,0.408076,0.1367
+douglas_santos__bra,Douglas Santos,BRA,DEF,2500000,name_team_position,1.0,2.008079,0.55
+marquinhos__bra,Marquinhos,BRA,DEF,5000000,name_team_position,1.0,3.859505,0.9027
+alex_sandro__bra,Alex Sandro,BRA,DEF,2500000,name_team_position,1.0,1.3253,0.3354
+danilo_luiz_da_silva__bra,Danilo Luiz da Silva,BRA,DEF,2500000,name_team_position,1.0,1.324973,0.3677
+der_milit_o__bra,Eder Militão,BRA,DEF,3000000,name_team_position,1.0,2.728328,0.6273
+gabriel_magalh_es__bra,Gabriel Magalhaes,BRA,DEF,4500000,name_team_position,1.0,1.902513,0.3742
+roger_ibanez__bra,Roger Ibanez,BRA,DEF,2500000,name_team_position,1.0,1.651355,0.497
+wesley_franca__bra,Wesley Franca,BRA,DEF,3500000,name_team_position,1.0,2.644138,0.6273
+bremer__bra,Bremer,BRA,DEF,3000000,name_team_position,1.0,1.213244,0.2797
+leo_pereira__bra,Leo Pereira,BRA,DEF,3000000,name_team_position,1.0,1.906037,0.45
+clement_akpa__civ,Clement Akpa,CIV,DEF,2000000,name_team_position,1.0,0.924258,0.4955
+christopher_operi__civ,Christopher Operi,CIV,DEF,2000000,unmatched,0.5882352941176471,0.0,0.25
+ghislain_konan__civ,Ghislain Konan,CIV,DEF,2500000,name_team_position,1.0,1.577048,0.63
+guela_doue__civ,Guela Doue,CIV,DEF,3000000,name_team_position,1.0,1.681565,0.6
+wilfried_stephane_singo__civ,Wilfried Stephane Singo,CIV,DEF,2500000,name_team_position,1.0,1.477682,0.5937
+ousmane_diomande__civ,Ousmane Diomande,CIV,DEF,2500000,name_team_position,1.0,0.775882,0.3111
+emmanuel_agbadou__civ,Emmanuel Agbadou,CIV,DEF,2500000,name_team_position,1.0,1.326553,0.537
+odilon_kossounou__civ,Odilon Kossounou,CIV,DEF,2500000,name_team_position,1.0,0.928271,0.3665
+evan_n_dicka__civ,Evan N'Dicka,CIV,DEF,2500000,name_team_position,1.0,1.654626,0.6561
+trent_alexander_arnold__eng,Trent Alexander-Arnold,ENG,DEF,3500000,name_team_position,1.0,0.0,0.35
+john_stones__eng,John Stones,ENG,DEF,4000000,name_team_position,1.0,2.969654,0.6587
+dan_burn__eng,Dan Burn,ENG,DEF,3500000,name_team_position,1.0,1.306352,0.3064
+harry_maguire__eng,Harry Maguire,ENG,DEF,3000000,unmatched,0.6956521739130435,0.0,0.25
+marc_gu_hi__eng,Marc Guehi,ENG,DEF,4500000,name_team_position,1.0,3.182466,0.6351
+reece_james__eng,Reece James,ENG,DEF,3500000,name_team_position,1.0,1.414615,0.3229
+ezri_konsa__eng,Ezri Konsa,ENG,DEF,4500000,name_team_position,1.0,2.836156,0.5823
+nico_o_reilly__eng,Nico O'Reilly,ENG,DEF,4000000,name_team_position,1.0,2.482519,0.5659
+djed_spence__eng,Djed Spence,ENG,DEF,2500000,name_team_position,1.0,1.92465,0.5874
+jarell_quansah__eng,Jarell Quansah,ENG,DEF,2500000,name_team_position,1.0,1.659222,0.4921
+lewis_hall__eng,Lewis Hall,ENG,DEF,3500000,name_team_position,1.0,0.0,0.2412
+valentino_livramento__eng,Valentino Livramento,ENG,DEF,3000000,name_team_position,1.0,1.143782,0.2906
+jerome_opoku__gha,Jerome Opoku,GHA,DEF,2500000,name_team_position,1.0,0.709015,0.2972
+patric_pfeiffer__gha,Patric Pfeiffer,GHA,DEF,2000000,name_team_position,1.0,0.0,0.0464
+kojo_peprah_oppong__gha,Kojo Peprah Oppong,GHA,DEF,2000000,name_team_position,1.0,0.670034,0.3441
+alexander_djiku__gha,Alexander Djiku,GHA,DEF,3000000,name_team_position,1.0,2.202084,0.8457
+alidu_seidu__gha,Alidu Seidu,GHA,DEF,2500000,unmatched,0.47619047619047616,0.0,0.25
+derrick_kohn__gha,Derrick Köhn,GHA,DEF,2000000,name_team_position,1.0,1.214224,0.6632
+caleb_yirenkyi__gha,Caleb Yirenkyi,GHA,DEF,3000000,name_team_position,1.0,1.70735,0.6441
+gideon_mensah__gha,Gideon Mensah,GHA,DEF,3000000,name_team_position,1.0,1.237984,0.412
+derrick_luckassen__gha,Derrick Luckassen,GHA,DEF,2000000,name_team_position,1.0,0.142629,0.0449
+abdul_rahman_baba__gha,Abdul Rahman Baba,GHA,DEF,2500000,unmatched,0.631578947368421,0.0,0.25
+abdul_mumin__gha,Abdul Mumin,GHA,DEF,2000000,unmatched,0.5714285714285714,0.0,0.25
+jonas_adjetey__gha,Jonas Adjetey,GHA,DEF,2500000,unmatched,0.6153846153846154,0.0,0.25
+marvin_senaya__gha,Marvin Senaya,GHA,DEF,2000000,name_team_position,1.0,0.529587,0.3043
+yuto_nagatomo__jpn,Yuto Nagatomo,JPN,DEF,2000000,name_team_position,1.0,0.502136,0.1759
+ko_itakura__jpn,Ko Itakura,JPN,DEF,2000000,name_team_position,1.0,1.289237,0.6165
+takehiro_tomiyasu__jpn,Takehiro Tomiyasu,JPN,DEF,2000000,name_team_position,1.0,1.558656,0.8016
+ayumu_seko__jpn,Ayumu Seko,JPN,DEF,2500000,name_team_position,1.0,0.879377,0.3039
+tomoya_ando__jpn,Tomoya Ando,JPN,DEF,2000000,unmatched,0.6086956521739131,0.0,0.25
+henry_mochizuki__jpn,Henry Mochizuki,JPN,DEF,2000000,unmatched,0.48,0.0,0.25
+tsuyoshi_watanabe__jpn,Tsuyoshi Watanabe,JPN,DEF,3000000,name_team_position,1.0,1.783089,0.5392
+yukinari_sugawara__jpn,Yukinari Sugawara,JPN,DEF,3500000,name_team_position,1.0,1.204623,0.2932
+daiki_hashioka__jpn,Daiki Hashioka,JPN,DEF,2000000,unmatched,0.56,0.0,0.25
+junnosuke_suzuki__jpn,Junnosuke Suzuki,JPN,DEF,2500000,name_team_position,1.0,0.461044,0.1206
+shogo_taniguchi__jpn,Shogo Taniguchi,JPN,DEF,3000000,name_team_position,1.0,1.171749,0.3434
+hiroki_ito__jpn,Hiroki Ito,JPN,DEF,2500000,name_team_position,1.0,2.050361,0.8534
+kim_min_jae__kor,Min-jae Kim,KOR,DEF,3500000,name_team_position,1.0,2.260321,0.6839
+moon_hwan_kim__kor,Moon-Hwan Kim,KOR,DEF,2500000,name_team_position,1.0,0.920129,0.3313
+yu_min_cho__kor,Yu-Min Cho,KOR,DEF,2500000,name_team_position,1.0,1.444636,0.5575
+han_beom_lee__kor,Han-beom Lee,KOR,DEF,2000000,name_team_position,1.0,1.510931,0.8196
+tae_seok_lee__kor,Tae-Seok Lee,KOR,DEF,2500000,name_team_position,1.0,1.607029,0.6236
+tae_hyeon_kim__kor,Tae-Hyeon Kim,KOR,DEF,2000000,name_team_position,1.0,0.728861,0.3452
+ju_sung_kim__kor,Ju-sung Kim,KOR,DEF,2000000,unmatched,0.8333333333333334,0.0,0.25
+seol_young_woo__kor,Young-woo Seol,KOR,DEF,3000000,name_team_position,1.0,2.106254,0.6673
+gi_hyuk_lee__kor,Gi-hyuk Lee,KOR,DEF,2000000,name_team_position,1.0,1.164079,0.5856
+wi_je_cho__kor,Wi-je Cho,KOR,DEF,2000000,unmatched,0.5714285714285714,0.0,0.25
+jesus_angulo__mex,Jesus Angulo,MEX,DEF,2000000,name_team_position,1.0,0.377785,0.0939
+everardo_lopez__mex,Everardo Lopez,MEX,DEF,2500000,name_team_position,1.0,2.366261,0.7841
+c_sar_montes__mex,Cesar Montes,MEX,DEF,3000000,name_team_position,1.0,3.495328,0.72
+jes_s_gallardo__mex,Jesus Gallardo,MEX,DEF,3000000,name_team_position,1.0,2.634622,0.6424
+israel_reyes__mex,Israel Reyes,MEX,DEF,3000000,name_team_position,1.0,1.438381,0.3471
+mateo_chavez__mex,Mateo Chavez,MEX,DEF,2500000,unmatched,0.56,0.0,0.25
+richard_ledezma__mex,Richard Ledezma,MEX,DEF,2000000,name_team_position,1.0,0.975442,0.3597
+jorge_sanchez__mex,Jorge Sanchez,MEX,DEF,2500000,name_team_position,1.0,1.911017,0.5918
+johan_v_squez__mex,Johan Vasquez,MEX,DEF,3000000,name_team_position,1.0,3.231595,0.8341
+francis_de_vries__nzl,Francis de Vries,NZL,DEF,2500000,name_team_position,1.0,0.736824,0.3411
+finn_surman__nzl,Finn Surman,NZL,DEF,2000000,name_team_position,1.0,1.575275,0.8854
+michael_boxall__nzl,Michael Boxall,NZL,DEF,2000000,name_team_position,1.0,0.648666,0.3955
+lukas_kelly_heald__nzl,Lukas Kelly-Heald,NZL,DEF,2000000,unmatched,0.41379310344827586,0.0,0.25
+james_mcgarry__nzl,James McGarry,NZL,DEF,2000000,unmatched,0.43478260869565216,0.0,0.25
+tim_payne__nzl,Tim Payne,NZL,DEF,2500000,name_team_position,1.0,1.631186,0.853
+callan_elliot__nzl,Callan Elliot,NZL,DEF,2000000,name_team_position,1.0,0.163115,0.043
+liberato_cacace__nzl,Liberato Cacace,NZL,DEF,2500000,name_team_position,1.0,1.612734,0.8554
+tyler_bindon__nzl,Tyler Bindon,NZL,DEF,2500000,name_team_position,1.0,1.420157,0.6587
+tommy_smith__nzl,Tommy Smith,NZL,DEF,2000000,name_team_position,1.0,0.755402,0.4417
+nando_pijnaker__nzl,Nando Pijnaker,NZL,DEF,2000000,name_team_position,1.0,0.258103,0.1154
+bill_tuiloma__nzl,Bill Tuiloma,NZL,DEF,2000000,unmatched,0.5,0.0,0.25
+jose_canale__par,Jose Canale,PAR,DEF,2000000,unmatched,0.5714285714285714,0.0,0.25
+blas_riveros__par,Blas Riveros,PAR,DEF,2000000,name_team_position,1.0,0.639878,0.3023
+omar_alderete__par,Omar Alderete,PAR,DEF,3500000,name_team_position,1.0,2.646453,0.8699
+j_nior_alonso__par,Junior Alonso,PAR,DEF,3000000,name_team_position,1.0,2.480016,0.8733
+fabian_balbuena__par,Fabian Balbuena,PAR,DEF,2500000,unmatched,0.5806451612903226,0.0,0.25
+alexis_duarte__par,Alexis Duarte,PAR,DEF,2000000,name_team_position,1.0,0.669914,0.2675
+gustavo_vel_squez__par,Gustavo Velazquez,PAR,DEF,2500000,name_team_position,1.0,0.360977,0.0932
+gonzalo_agustin_sandez__par,Gonzalo Agustin Sandez,PAR,DEF,2000000,name_team_position,1.0,1.017171,0.5259
+juan_jose_caceres__par,Juan Jose Caceres,PAR,DEF,3000000,name_team_position,1.0,1.863841,0.6453
+alan_ben_tez__par,Alan Benitez,PAR,DEF,2500000,name_team_position,1.0,1.401378,0.5257
+alexandro_maidana__par,Alexandro Maidana,PAR,DEF,2000000,unmatched,0.5454545454545454,0.0,0.25
+gustavo_g_mez__par,Gustavo Gomez,PAR,DEF,3000000,name_team_position,1.0,2.515658,0.9027
+khuliso_mudau__rsa,Khuliso Mudau,RSA,DEF,3000000,name_team_position,1.0,1.628423,0.652
+samukele_kabini__rsa,Samukele Kabini,RSA,DEF,2000000,name_team_position,1.0,0.741368,0.313
+mbekezeli_mbokazi__rsa,Mbekezeli Mbokazi,RSA,DEF,2500000,name_team_position,1.0,1.039227,0.4156
+nkosinathi_sibisi__rsa,Nkosinathi Sibisi,RSA,DEF,2500000,name_team_position,1.0,0.271711,0.0863
+aubrey_modiba__rsa,Aubrey Modiba,RSA,DEF,3000000,name_team_position,1.0,1.579773,0.6023
+olwethu_makhanya__rsa,Olwethu Makhanya,RSA,DEF,2000000,unmatched,0.4666666666666667,0.0,0.25
+bradley_cross__rsa,Bradley Cross,RSA,DEF,2000000,unmatched,0.56,0.0,0.25
+kamogelo_sebelebele__rsa,Kamogelo Sebelebele,RSA,DEF,2000000,unmatched,0.5263157894736842,0.0,0.25
+ime_okon__rsa,Ime Okon,RSA,DEF,2000000,name_team_position,1.0,1.31573,0.9119
+khulumani_ndamane__rsa,Khulumani Ndamane,RSA,DEF,2000000,name_team_position,1.0,0.455387,0.2725
+thabang_matuludi__rsa,Thabang Matuludi,RSA,DEF,2000000,name_team_position,1.0,0.388391,0.2612
+math_as_olivera__uru,Mathias Olivera,URU,DEF,4000000,name_team_position,1.0,3.171743,0.8746
+jos_mar_a_gim_nez__uru,Jose Maria Gimenez,URU,DEF,4500000,name_team_position,1.0,2.799483,0.6709
+martin_caceres__uru,Martin Caceres,URU,DEF,3000000,name_team_position,1.0,1.510708,0.4085
+guillermo_varela__uru,Guillermo Varela,URU,DEF,3000000,name_team_position,1.0,1.914775,0.5293
+ronald_ara_jo__uru,Ronald Araujo,URU,DEF,4500000,name_team_position,1.0,3.144669,0.8422
+sebastian_caceres__uru,Sebastian Caceres,URU,DEF,2500000,unmatched,0.5625,0.0,0.25
+jos_luis_rodr_guez_bebanz__uru,Jose Luis Rodriguez Bebanz,URU,DEF,3000000,name_team_position,1.0,0.314843,0.0459
+santiago_bueno__uru,Santiago Bueno,URU,DEF,3500000,name_team_position,1.0,1.124978,0.2687
+mat_as_vi_a__uru,Matias Viña,URU,DEF,4000000,name_team_position,1.0,1.593553,0.3723
+auston_trusty__usa,Auston Trusty,USA,DEF,2500000,unmatched,0.4827586206896552,0.0,0.25
+mark_mckenzie__usa,Mark McKenzie,USA,DEF,2000000,name_team_position,1.0,0.757994,0.2945
+miles_robinson__usa,Miles Robinson,USA,DEF,2000000,name_team_position,1.0,0.942644,0.3543
+sergino_dest__usa,Sergino Dest,USA,DEF,3000000,name_team_position,1.0,0.0,0.8263
+joe_scally__usa,Joe Scally,USA,DEF,2500000,unmatched,0.36363636363636365,0.0,0.25
+antonee_robinson__usa,Antonee Robinson,USA,DEF,2000000,name_team_position,1.0,1.757852,0.8297
+chris_richards__usa,Chris Richards,USA,DEF,3000000,name_team_position,1.0,3.228455,0.8175
+tim_ream__usa,Tim Ream,USA,DEF,2500000,name_team_position,1.0,1.901459,0.5896
+max_arfsten__usa,Max Arfsten,USA,DEF,3000000,name_team_position,1.0,0.870917,0.1625
+alex_freeman__usa,Alex Freeman,USA,DEF,2500000,name_team_position,1.0,2.608988,0.8986
+willer_ditta__col,Willer Ditta,COL,DEF,2500000,name_team_position,1.0,1.635565,0.5257
+deiver_machado__col,Deiver Machado,COL,DEF,3000000,name_team_position,1.0,0.415951,0.0855
+yerry_mina__col,Yerry Mina,COL,DEF,3000000,name_team_position,1.0,1.303292,0.3375
+davinson_s_nchez__col,Davinson Sanchez,COL,DEF,3500000,name_team_position,1.0,3.304216,0.8943
+johan_mojica__col,Johan Mojica,COL,DEF,3500000,name_team_position,1.0,3.123111,0.8105
+juan_cabal__col,Juan Cabal,COL,DEF,3000000,name_team_position,1.0,0.0,0.2697
+yerson_mosquera__col,Yerson Mosquera,COL,DEF,2500000,unmatched,0.6,0.0,0.25
+daniel_mu_oz__col,Daniel Muñoz,COL,DEF,4000000,name_team_position,1.0,2.797494,0.6497
+jhon_lucum__col,Jhon Lucumi,COL,DEF,3500000,name_team_position,1.0,1.822854,0.3877
+santiago_arias__col,Santiago Arias,COL,DEF,3500000,name_team_position,1.0,1.489149,0.3307
+piero_hincapi__ecu,Piero Hincapie,ECU,DEF,3500000,name_team_position,1.0,3.133887,0.9126
+joel_ord_ez__ecu,Joel Ordonez,ECU,DEF,2500000,name_team_position,1.0,2.453622,0.8348
+ngelo_preciado__ecu,Angelo Preciado,ECU,DEF,3000000,name_team_position,1.0,0.746516,0.164
+felix_feliz_torres__ecu,Felix 'Feliz' Torres,ECU,DEF,3000000,name_team_position,1.0,2.109705,0.6165
+jackson_porozo__ecu,Jackson Porozo,ECU,DEF,2000000,name_team_position,1.0,0.717622,0.2684
+jose_hurtado__ecu,Jose Hurtado,ECU,DEF,2500000,name_team_position,1.0,0.665639,0.25
+willian_pacho__ecu,Willian Pacho,ECU,DEF,3000000,name_team_position,1.0,3.031988,0.9359
+pervis_estupi_n__ecu,Pervis Estupinan,ECU,DEF,3500000,name_team_position,1.0,2.77668,0.706
+nihad_mujaki__bih,Nihad Mujakic,BIH,DEF,2500000,name_team_position,1.0,0.892353,0.321
+nidal_celik__bih,Nidal Celik,BIH,DEF,2000000,name_team_position,1.0,0.200848,0.0478
+dennis_hadzikadunic__bih,Dennis Hadzikadunic,BIH,DEF,2500000,name_team_position,1.0,0.938224,0.3378
+sead_kolasinac__bih,Sead Kolasinac,BIH,DEF,2500000,name_team_position,1.0,1.650075,0.6526
+nikola_kati__bih,Nikola Katic,BIH,DEF,3000000,name_team_position,1.0,2.429408,0.8761
+stjepan_radeljic__bih,Stjepan Radeljic,BIH,DEF,2500000,name_team_position,1.0,0.879358,0.3061
+tarik_muharemovic__bih,Tarik Muharemovic,BIH,DEF,3000000,name_team_position,1.0,2.102263,0.6085
+amar_dedi__bih,Amar Dedic,BIH,DEF,3000000,name_team_position,1.0,2.518653,0.8997
+ali_nemati__irn,Ali Nemati,IRN,DEF,2500000,name_team_position,1.0,1.340177,0.514
+hossein_abarghouei__irn,Hossein Abarghouei,IRN,DEF,2000000,name_team_position,1.0,1.68006,0.8777
+danial_esmaeilifar__irn,Danial Esmaeilifar,IRN,DEF,2500000,name_team_position,1.0,0.839269,0.3084
+hossein_kanaani__irn,Hossein Kanaani,IRN,DEF,2500000,name_team_position,1.0,1.572874,0.6257
+saleh_hardani__irn,Saleh Hardani,IRN,DEF,2500000,unmatched,0.5384615384615384,0.0,0.25
+shoja_khalilzadeh__irn,Shojae Khalilzadeh,IRN,DEF,2500000,name_team_position,1.0,1.902304,0.7167
+abolfazl_jalali__irn,Abolfazl Jalali,IRN,DEF,2000000,name_team_position,1.0,0.126222,0.043
+milad_mohammadi__irn,Milad Mohammadi,IRN,DEF,2500000,name_team_position,1.0,1.633573,0.6091
+ramin_rezaeian__irn,Ramin Rezaeian,IRN,DEF,2500000,name_team_position,1.0,0.487605,0.1338
+ehsan_hajsafi__irn,Ehsan Hajsafi,IRN,DEF,2000000,name_team_position,1.0,0.781288,0.3649
+daniyal_eiri__irn,Daniyal Eiri,IRN,DEF,2000000,unmatched,0.43478260869565216,0.0,0.25
+arya_yousefi__irn,Arya Yousefi,IRN,DEF,2000000,unmatched,0.4444444444444444,0.0,0.25
+nathan_ngoy__bel,Nathan Ngoy,BEL,DEF,2000000,name_team_position,1.0,2.139346,0.8806
+thomas_meunier__bel,Thomas Meunier,BEL,DEF,3500000,name_team_position,1.0,1.74885,0.391
+brandon_mechele__bel,Brandon Mechele,BEL,DEF,2500000,name_team_position,1.0,0.872722,0.2666
+timothy_castagne__bel,Timothy Castagne,BEL,DEF,3500000,name_team_position,1.0,3.050044,0.6704
+maxim_de_cuyper__bel,Maxim De Cuyper,BEL,DEF,4000000,name_team_position,1.0,3.109101,0.6436
+koni_de_winter__bel,Koni de Winter,BEL,DEF,3000000,name_team_position,1.0,1.099441,0.2902
+zeno_debast__bel,Zeno Debast,BEL,DEF,3500000,name_team_position,1.0,2.775938,0.6368
+arthur_theate__bel,Arthur Theate,BEL,DEF,3000000,name_team_position,1.0,3.199442,0.86
+joaquin_seys__bel,Joaquin Seys,BEL,DEF,2500000,name_team_position,1.0,0.24123,0.0482
+rebin_sulaka__irq,Rebin Sulaka,IRQ,DEF,2000000,name_team_position,1.0,0.472453,0.3771
+hussein_ali__irq,Hussein Ali,IRQ,DEF,3000000,name_team_position,1.0,1.669838,0.8273
+frans_dhia_putros__irq,Frans Dhia Putros,IRQ,DEF,2000000,name_team_position,1.0,0.117115,0.0788
+zaid_tahseen__irq,Zaid Tahseen,IRQ,DEF,2500000,name_team_position,1.0,1.25388,0.8161
+ahmed_hasan_maknzi__irq,Ahmed Hasan Maknzi,IRQ,DEF,2000000,name_team_position,1.0,0.629793,0.5379
+merchas_doski__irq,Merchas Doski,IRQ,DEF,2500000,name_team_position,1.0,1.267088,0.8375
+akam_hashem__irq,Akam Hashem,IRQ,DEF,2000000,name_team_position,1.0,0.836545,0.7592
+manaf_younis__irq,Manaf Younis,IRQ,DEF,2000000,name_team_position,1.0,0.424723,0.352
+mustafa_saadoon__irq,Mustafa Saadoon,IRQ,DEF,2000000,unmatched,0.4,0.0,0.25
+ahmed_yahya__irq,Ahmed Yahya,IRQ,DEF,2000000,unmatched,0.5517241379310345,0.0,0.25
+roderick_miller__pan,Roderick Miller,PAN,DEF,2000000,name_team_position,1.0,0.566043,0.3295
+jorge_guti_rrez__pan,Jorge Gutierrez,PAN,DEF,2500000,name_team_position,1.0,1.946239,0.914
+jos_cordoba__pan,Jose Cordoba,PAN,DEF,2500000,name_team_position,1.0,0.935299,0.3927
+jiovany_ramos__pan,Jiovany Ramos,PAN,DEF,2000000,name_team_position,1.0,0.765295,0.5157
+edgardo_farina__pan,Edgardo Farina,PAN,DEF,2000000,unmatched,0.5,0.0,0.25
+erick_davis__pan,Eric Davis,PAN,DEF,3000000,name_team_position,1.0,0.564513,0.162
+fidel_escobar__pan,Fidel Escobar,PAN,DEF,2500000,name_team_position,1.0,1.106978,0.4419
+michael_amir_murillo__pan,Michael Amir Murillo,PAN,DEF,2500000,name_team_position,1.0,1.595592,0.654
+andres_andrade__pan,Andres Andrade,PAN,DEF,2500000,name_team_position,1.0,1.315689,0.6362
+c_sar_blackman__pan,Cesar Blackman,PAN,DEF,2500000,name_team_position,1.0,1.15403,0.5629
+martin_krug__pan,Martin Krug,PAN,DEF,2000000,name_team_position,1.0,0.444549,0.273
+karim_hafez__egy,Karim Hafez,EGY,DEF,2000000,name_team_position,1.0,0.701255,0.3013
+mohamed_abdelmonem__egy,Mohamed Abdelmonem,EGY,DEF,2500000,name_team_position,1.0,1.187255,0.4129
+hossam_abdelmaguid__egy,Hossam Abdelmaguid,EGY,DEF,2500000,name_team_position,1.0,0.288465,0.0728
+yasser_ibrahim__egy,Yasser Ibrahim,EGY,DEF,2500000,name_team_position,1.0,1.585647,0.5221
+khaled_sobhi__egy,Khaled Sobhi,EGY,DEF,2000000,unmatched,0.56,0.0,0.25
+mohamed_hany__egy,Mohamed Hany,EGY,DEF,2500000,name_team_position,1.0,2.25158,0.8454
+rami_rabia__egy,Rami Rabia,EGY,DEF,3000000,name_team_position,1.0,0.680674,0.1739
+ahmed_nabil_kouka__egy,Ahmed Nabil Kouka,EGY,DEF,2000000,unmatched,0.6206896551724138,0.0,0.25
+tarek_alaa__egy,Tarek Alaa,EGY,DEF,2000000,name_team_position,1.0,0.322219,0.0693
+ahmed_fatouh__egy,Ahmed Fatouh,EGY,DEF,2500000,name_team_position,1.0,1.542929,0.5746
+redouane_halhal__mar,Redouane Halhal,MAR,DEF,2000000,unmatched,0.4827586206896552,0.0,0.25
+abdelhamid_ait_boudlal__mar,Abdelhamid Ait Boudlal,MAR,DEF,2500000,name_team_position,1.0,2.142213,0.8353
+zakaria_el_ouahdi__mar,Zakaria El Ouahdi,MAR,DEF,2000000,name_team_position,1.0,0.49707,0.2428
+jawad_el_yamiq__mar,Jawad El Yamiq,MAR,DEF,2500000,name_team_position,1.0,0.503842,0.135
+nayef_aguerd__mar,Nayef Aguerd,MAR,DEF,3000000,name_team_position,1.0,2.816037,0.8342
+achraf_hakimi__mar,Achraf Hakimi,MAR,DEF,4000000,name_team_position,1.0,3.101554,0.8511
+chadi_riad__mar,Chadi Riad,MAR,DEF,2000000,name_team_position,1.0,0.711063,0.2947
+souffian_el_karouani__mar,Souffian El Karouani,MAR,DEF,2000000,name_team_position,1.0,0.51173,0.2534
+youssef_belammari__mar,Youssef Belammari,MAR,DEF,2000000,unmatched,0.6470588235294118,0.0,0.25
+anass_salah_eddine__mar,Anass Salah-Eddine,MAR,DEF,2500000,name_team_position,1.0,1.575052,0.5353
+issa_diop__mar,Issa Diop,MAR,DEF,2500000,name_team_position,1.0,2.195348,0.8707
+noussair_mazraoui__mar,Noussair Mazraoui,MAR,DEF,3500000,name_team_position,1.0,2.519806,0.6272
+mamadou_sarr__sen,Mamadou Sarr,SEN,DEF,2500000,name_team_position,1.0,1.954062,0.8315
+el_hadji_malick_diouf__sen,El Hadji Malick Diouf,SEN,DEF,3500000,name_team_position,1.0,1.30384,0.3793
+abdoulaye_seck__sen,Abdoulaye Seck,SEN,DEF,3000000,name_team_position,1.0,1.677054,0.5232
+moussa_niakhate__sen,Moussa Niakhate,SEN,DEF,3000000,name_team_position,1.0,1.403235,0.4165
+ismail_jakobs__sen,Ismail Jakobs,SEN,DEF,2500000,name_team_position,1.0,1.493657,0.5661
+youssouf_sabaly__sen,Youssouf Sabaly,SEN,DEF,2000000,unmatched,0.5333333333333333,0.0,0.25
+kalidou_koulibaly__sen,Kalidou Koulibaly,SEN,DEF,2500000,name_team_position,1.0,2.037311,0.8777
+pape_abou_cisse__sen,Pape Abou Cisse,SEN,DEF,2000000,unmatched,0.64,0.0,0.25
+abdou_diallo__sen,Abdou Diallo,SEN,DEF,2000000,unmatched,0.5,0.0,0.25
+ilay_camara__sen,Ilay Camara,SEN,DEF,2000000,name_team_position,1.0,0.504581,0.2646
+antoine_mendy__sen,Antoine Mendy,SEN,DEF,2500000,name_team_position,1.0,0.70457,0.2625
+moustapha_mbow__sen,Moustapha Mbow,SEN,DEF,2000000,name_team_position,1.0,0.0,0.0456
+mohamed_amine_ben_hamida__tun,Mohamed Amine Ben Hamida,TUN,DEF,2500000,name_team_position,1.0,0.727354,0.3014
+adem_arous__tun,Adem Arous,TUN,DEF,2000000,name_team_position,1.0,0.625039,0.2946
+ghaith_zaalouni__tun,Ghaith Zaalouni,TUN,DEF,2000000,unmatched,0.5217391304347826,0.0,0.25
+raed_chikhaoui__tun,Raed Chikhaoui,TUN,DEF,2000000,name_team_position,1.0,0.0,0.0474
+omar_rekik__tun,Omar Rekik,TUN,DEF,2000000,name_team_position,1.0,1.190834,0.7422
+ali_maaloul__tun,Ali Maaloul,TUN,DEF,2000000,unmatched,0.5454545454545454,0.0,0.25
+dylan_bronn__tun,Dylan Bronn,TUN,DEF,2500000,name_team_position,1.0,0.98663,0.3759
+yassine_meriah__tun,Yassine Meriah,TUN,DEF,2500000,unmatched,0.5925925925925926,0.0,0.25
+yan_valery__tun,Yan Valery,TUN,DEF,2500000,name_team_position,1.0,1.713919,0.7887
+ali_abdi__tun,Ali Abdi,TUN,DEF,3000000,name_team_position,1.0,2.052527,0.6355
+montassar_talbi__tun,Montassar Talbi,TUN,DEF,3000000,name_team_position,1.0,2.398724,0.9019
+alaa_ghram__tun,Alaa Ghram,TUN,DEF,2000000,unmatched,0.5217391304347826,0.0,0.25
+moutaz_neffati__tun,Moutaz Neffati,TUN,DEF,2000000,name_team_position,1.0,0.391829,0.2517
+ali_majrashi__ksa,Ali Majrashi,KSA,DEF,2500000,name_team_position,1.0,0.370864,0.1201
+nawaf_bu_washl__ksa,Nawaf Bu Washl,KSA,DEF,2500000,unmatched,0.7692307692307693,0.0,0.25
+moteb_al_harbi__ksa,Moteb Al-Harbi,KSA,DEF,2000000,unmatched,0.5517241379310345,0.0,0.25
+mohammed_sulaiman__ksa,Mohammed Sulaiman,KSA,DEF,2000000,name_team_position,1.0,0.514573,0.3038
+jehad_thakri__ksa,Jehad Thakri,KSA,DEF,2000000,unmatched,0.4827586206896552,0.0,0.25
+abdulelah_al_amri__ksa,Abdulelah Al-Amri,KSA,DEF,2500000,name_team_position,1.0,1.294943,0.5781
+hassan_al_tambakti__ksa,Hassan Al Tambakti,KSA,DEF,2000000,unmatched,0.6060606060606061,0.0,0.25
+saud_abdulhamid__ksa,Saud Abdulhamid,KSA,DEF,3000000,name_team_position,1.0,2.009046,0.7903
+ali_lajami__ksa,Ali Lajami,KSA,DEF,2000000,unmatched,0.5,0.0,0.25
+hassan_kadesh__ksa,Hassan Kadesh,KSA,DEF,2000000,unmatched,0.4666666666666667,0.0,0.25
+mohammed_abu_al_shamat__ksa,Mohammed Abu Al-Shamat,KSA,DEF,2500000,unmatched,0.7083333333333334,0.0,0.25
+al_hashmi_al_hussain__qat,Al-Hashmi Al-Hussain,QAT,DEF,2000000,unmatched,0.5454545454545454,0.0,0.25
+seydinaissa_laye__qat,Seydinaissa Laye,QAT,DEF,2000000,unmatched,0.4,0.0,0.25
+lucas_mendes__qat,Lucas Mendes,QAT,DEF,2500000,name_team_position,1.0,0.751171,0.3989
+boualem_khoukhi__qat,Boualem Khoukhi,QAT,DEF,2500000,name_team_position,1.0,1.43503,0.8243
+pedro_ro_ro_miguel_correia__qat,Pedro 'Ro-Ro' Miguel Correia,QAT,DEF,2500000,name_team_position,1.0,1.419933,0.8455
+sultan_al_brake__qat,Sultan Al-Brake,QAT,DEF,2500000,name_team_position,1.0,0.39265,0.2642
+tarek_salman__qat,Tarek Salman,QAT,DEF,2500000,name_team_position,1.0,0.742631,0.4011
+homam_al_amin_ahmed__qat,Homam Al-Amin Ahmed,QAT,DEF,2500000,unmatched,0.8148148148148148,0.0,0.25
+ayoub_al_oui__qat,Ayoub Al-Oui,QAT,DEF,2500000,name_team_position,1.0,1.48397,0.9308
+ross_mccrorie__sco,Ross McCrorie,SCO,DEF,2000000,unmatched,0.48,0.0,0.25
+john_souttar__sco,John Souttar,SCO,DEF,2500000,name_team_position,1.0,1.669008,0.5702
+jack_hendry__sco,Jack Hendry,SCO,DEF,2000000,name_team_position,1.0,0.880504,0.3691
+scott_mckenna__sco,Scott McKenna,SCO,DEF,2500000,name_team_position,1.0,1.031242,0.3567
+nathan_patterson__sco,Nathan Patterson,SCO,DEF,2000000,name_team_position,1.0,0.381639,0.095
+aaron_hickey__sco,Aaron Hickey,SCO,DEF,2500000,name_team_position,1.0,2.041113,0.8813
+andy_robertson__sco,Andy Robertson,SCO,DEF,3000000,name_team_position,1.0,2.430195,0.8728
+grant_hanley__sco,Grant Hanley,SCO,DEF,2500000,name_team_position,1.0,1.273377,0.4174
+anthony_ralston__sco,Anthony Ralston,SCO,DEF,2500000,name_team_position,1.0,0.562166,0.1245
+kieran_tierney__sco,Kieran Tierney,SCO,DEF,2500000,name_team_position,1.0,1.118417,0.3855
+dominic_hyam__sco,Dominic Hyam,SCO,DEF,2000000,name_team_position,1.0,0.469623,0.2527
+moise_bombito__can,Moïse Bombito,CAN,DEF,2500000,unmatched,0.46153846153846156,0.0,0.25
+ralph_priso__can,Ralph Priso,CAN,DEF,2000000,name_team_position,1.0,0.956129,0.3308
+alphonso_davies__can,Alphonso Davies,CAN,DEF,4000000,name_team_position,1.0,3.121779,0.892
+alfie_jones__can,Alfie Jones,CAN,DEF,2000000,unmatched,0.5714285714285714,0.0,0.25
+richie_laryea__can,Richie Laryea,CAN,DEF,3000000,name_team_position,1.0,3.332795,0.9369
+derek_cornelius__can,Derek Cornelius,CAN,DEF,2500000,name_team_position,1.0,2.052465,0.6199
+joel_waterman__can,Joel Waterman,CAN,DEF,2500000,name_team_position,1.0,1.042385,0.3015
+alistair_johnston__can,Alistair Johnston,CAN,DEF,3000000,name_team_position,1.0,3.119265,0.9134
+kamal_miller__can,Kamal Miller,CAN,DEF,2500000,name_team_position,1.0,2.45779,0.8008
+luc_de_fougerolles__can,Luc De Fougerolles,CAN,DEF,2000000,name_team_position,1.0,1.875294,0.68
+jahkeele_rutty__can,Jahkeele Rutty,CAN,DEF,2000000,name_team_position,1.0,0.542121,0.25
+abdukodir_khusanov__uzb,Abdukodir Khusanov,UZB,DEF,3000000,name_team_position,1.0,1.951399,0.846
+umar_eshmurodov__uzb,Umar Eshmurodov,UZB,DEF,2500000,name_team_position,1.0,0.868313,0.3846
+rustam_ashurmatov__uzb,Rustam Ashurmatov,UZB,DEF,2500000,name_team_position,1.0,1.598504,0.842
+abdulla_abdullaev__uzb,Abdulla Abdullaev,UZB,DEF,2000000,unmatched,0.5,0.0,0.25
+farrukh_sayfiev__uzb,Farrukh Sayfiev,UZB,DEF,2500000,name_team_position,1.0,0.731309,0.3624
+khozhiakbar_alizhonov__uzb,Khozhiakbar Alizhonov,UZB,DEF,2500000,name_team_position,1.0,1.196119,0.6477
+sherzod_nasrullayev__uzb,Sherzod Nasrullaev,UZB,DEF,2500000,name_team_position,1.0,2.138016,0.8798
+dilshod_komilov__uzb,Dilshod Komilov,UZB,DEF,2000000,name_team_position,1.0,0.85437,0.5473
+behruzjon_karimov__uzb,Behruzjon Karimov,UZB,DEF,2000000,unmatched,0.5294117647058824,0.0,0.25
+avazbek_ulmasaliyev__uzb,Avazbek Ulmasaliyev,UZB,DEF,2000000,unmatched,0.47368421052631576,0.0,0.25
+jakhongir_urozov__uzb,Jakhongir Urozov,UZB,DEF,2500000,name_team_position,1.0,0.927672,0.5404
+mukhammadrasul_abdumazhidov__uzb,Mukhammadrasul Abdumazhidov,UZB,DEF,2000000,name_team_position,1.0,0.0,0.0464
+mukhammadkodir_khamraliev__uzb,Mukhammadkodir Khamraliev,UZB,DEF,2500000,name_team_position,1.0,0.687821,0.2992
+anas_badawi__jor,Anas Badawi,JOR,DEF,2000000,unmatched,0.5,0.0,0.25
+ehsan_haddad__jor,Ehsan Haddad,JOR,DEF,2500000,unmatched,0.4666666666666667,0.0,0.25
+yazan_al_arab__jor,Yazan Al-Arab,JOR,DEF,2500000,name_team_position,1.0,1.42246,0.8738
+abdallah_nasib__jor,Abdallah Nasib,JOR,DEF,2500000,name_team_position,1.0,1.449555,0.9105
+saed_al_rosan__jor,Saed Al-Rosan,JOR,DEF,2000000,unmatched,0.6206896551724138,0.0,0.25
+yousef_abu_al_jazar__jor,Yousef Abu Al-Jazar,JOR,DEF,2000000,name_team_position,1.0,0.090757,0.043
+mohammad_abualnadi__jor,Mohammad Abualnadi,JOR,DEF,2500000,name_team_position,1.0,0.919607,0.5929
+saleem_obaid__jor,Saleem Obaid,JOR,DEF,2500000,name_team_position,1.0,0.195597,0.0784
+husam_abu_dahab__jor,Husam Abu Dahab,JOR,DEF,2000000,name_team_position,1.0,0.44139,0.3324
+ahmad_assaf__jor,Ahmad Assaf,JOR,DEF,2500000,name_team_position,1.0,1.375012,0.7975
+diney_borges__cpv,Diney Borges,CPV,DEF,3000000,name_team_position,1.0,1.848364,0.7912
+roberto_lopes__cpv,Roberto Lopes,CPV,DEF,2000000,name_team_position,1.0,1.119433,0.8954
+wagner_pina__cpv,Wagner Pina,CPV,DEF,2500000,name_team_position,1.0,0.970846,0.5877
+steven_moreira__cpv,Steven Moreira,CPV,DEF,2000000,name_team_position,1.0,0.6383,0.4171
+sidny_lopes_cabral__cpv,Sidny Lopes Cabral,CPV,DEF,3000000,name_team_position,1.0,0.794022,0.5168
+heri_tavares__cpv,Heri Tavares,CPV,DEF,2500000,unmatched,0.6666666666666666,0.0,0.25
+joao_paulo__cpv,Joao Paulo,CPV,DEF,2500000,name_team_position,1.0,0.737536,0.4119
+logan_costa__cpv,Logan Costa,CPV,DEF,2500000,name_team_position,1.0,1.125214,0.6542
+stopira__cpv,Stopira,CPV,DEF,2500000,name_team_position,1.0,0.609343,0.3309
+kelvin_pires__cpv,Kelvin Pires,CPV,DEF,2000000,name_team_position,1.0,0.37152,0.2557
+henrik_falchener__nor,Henrik Falchener,NOR,DEF,2000000,name_team_position,1.0,0.031838,0.047
+sondre_langas__nor,Sondre Langås,NOR,DEF,2000000,name_team_position,1.0,0.056422,0.0472
+kristoffer_ajer__nor,Kristoffer Ajer,NOR,DEF,3000000,name_team_position,1.0,2.874517,0.9075
+julian_ryerson__nor,Julian Ryerson,NOR,DEF,3500000,name_team_position,1.0,3.021883,0.88
+leo_ostigard__nor,Leo Østigård,NOR,DEF,2500000,name_team_position,1.0,1.285892,0.4144
+fredrik_andr_bj_rkan__nor,Fredrik Andre Bjørkan,NOR,DEF,2500000,name_team_position,1.0,0.832989,0.2772
+marcus_holmgren_pedersen__nor,Marcus Holmgren Pedersen,NOR,DEF,2000000,name_team_position,1.0,0.848975,0.3453
+torbjorn_heggem__nor,Torbjørn Heggem,NOR,DEF,2500000,name_team_position,1.0,1.831423,0.6376
+david_m_ller_wolfe__nor,David Møller Wolfe,NOR,DEF,3000000,name_team_position,1.0,2.547621,0.6856
+odin_bjortuft__nor,Odin Bjørtuft,NOR,DEF,2000000,unmatched,0.4375,0.0,0.25
+shurandy_sambo__cuw,Shurandy Sambo,CUW,DEF,2000000,name_team_position,1.0,0.559008,0.4342
+armando_obispo__cuw,Armando Obispo,CUW,DEF,2000000,name_team_position,1.0,0.85189,0.8574
+riechedly_bazoer__cuw,Riechedly Bazoer,CUW,DEF,2000000,name_team_position,1.0,0.721283,0.6173
+roshon_van_eijma__cuw,Roshon van Eijma,CUW,DEF,2500000,name_team_position,1.0,0.64369,0.4064
+juri_n_gaari__cuw,Jurien Gaari,CUW,DEF,2500000,name_team_position,1.0,1.410641,0.9148
+sherel_floranus__cuw,Sherel Floranus,CUW,DEF,2500000,name_team_position,1.0,1.381417,0.9165
+joshua_brenet__cuw,Joshua Brenet,CUW,DEF,2500000,name_team_position,1.0,0.558569,0.3934
+livano_comenencia__cuw,Livano Comenencia,CUW,DEF,2500000,name_team_position,1.0,2.063678,0.9477
+deveron_fonville__cuw,Deveron Fonville,CUW,DEF,2000000,name_team_position,1.0,0.60199,0.489
+keeto_thermoncy__hai,Keeto Thermoncy,HAI,DEF,2000000,unmatched,0.4666666666666667,0.0,0.25
+wilguens_paugain__hai,Wilguens Paugain,HAI,DEF,2000000,name_team_position,1.0,0.073954,0.0452
+delentz_pierre__hai,Delentz Pierre,HAI,DEF,2000000,unmatched,0.6896551724137931,0.0,0.25
+jean_kevin_duverne__hai,Jean-Kevin Duverne,HAI,DEF,2500000,name_team_position,1.0,0.921009,0.6885
+ricardo_ad__hai,Ricardo Ade,HAI,DEF,2500000,name_team_position,1.0,1.406401,0.9239
+carlens_arcus__hai,Carlens Arcus,HAI,DEF,2000000,name_team_position,1.0,0.997235,0.9094
+martin_exp_rience__hai,Martin Experience,HAI,DEF,2000000,name_team_position,1.0,0.899691,0.7871
+duke_lacroix__hai,Duke Lacroix,HAI,DEF,2500000,name_team_position,1.0,0.332582,0.1367
+rocky_bushiri__cod,Rocky Bushiri,COD,DEF,2000000,name_team_position,1.0,0.536844,0.2763
+hannes_delcroix__hai,Hannes Delcroix,HAI,DEF,2500000,name_team_position,1.0,0.731597,0.6346
+dylan_batubinsika__cod,Dylan Batubinsika,COD,DEF,2500000,name_team_position,1.0,0.305733,0.0889
+jeremy_ngakia__cod,Jeremy Ngakia,COD,DEF,2500000,name_team_position,1.0,0.0,0.045
+axel_tuanzebe__cod,Axel Tuanzebe,COD,DEF,3000000,name_team_position,1.0,2.084787,0.8415
+chancel_mbemba__cod,Chancel Mbemba,COD,DEF,2500000,name_team_position,1.0,1.755631,0.8938
+arthur_masuaku__cod,Arthur Masuaku,COD,DEF,2500000,name_team_position,1.0,1.804978,0.8657
+aaron_tshibola__cod,Aaron Tshibola,COD,DEF,2000000,unmatched,0.5161290322580645,0.0,0.25
+aaron_wan_bissaka__cod,Aaron Wan-Bissaka,COD,DEF,3000000,name_team_position,1.0,1.496886,0.655
+gedeon_kalulu__cod,Gedeon Kalulu,COD,DEF,2500000,unmatched,0.5,0.0,0.25
+joris_kayembe__cod,Joris Kayembe,COD,DEF,2500000,name_team_position,1.0,0.730127,0.3135
+steve_kapuadi__cod,Steve Kapuadi,COD,DEF,2000000,name_team_position,1.0,0.410106,0.2525
+timothy_fayulu__cod,Timothy Fayulu,COD,GK,2500000,name_team_position,1.0,0.068216,0.0255
+matthieu_epolo__cod,Matthieu Epolo,COD,GK,3000000,name_team_position,1.0,0.110474,0.0251
+lionel_mpasi_nzau__cod,Lionel Mpasi Nzau,COD,GK,2500000,name_team_position,1.0,1.392527,0.9494
+johny_placide__hai,Johny Placide,HAI,GK,2500000,name_team_position,1.0,0.872493,0.8957
+alexandre_pierre__hai,Alexandre Pierre,HAI,GK,2500000,name_team_position,1.0,0.108068,0.0792
+josue_duverger__hai,Josue Duverger,HAI,GK,2500000,name_team_position,1.0,0.0,0.0251
+tyrick_bodak__cuw,Tyrick Bodak,CUW,GK,2500000,name_team_position,1.0,0.0,0.0251
+trevor_doornbusch__cuw,Trevor Doornbusch,CUW,GK,2500000,name_team_position,1.0,0.0,0.0254
+egil_selvik__nor,Egil Selvik,NOR,GK,3500000,name_team_position,1.0,0.175584,0.0253
+eloy_room__cuw,Eloy Room,CUW,GK,2500000,name_team_position,1.0,0.862814,0.9495
+sander_tangvik__nor,Sander Tangvik,NOR,GK,3000000,name_team_position,1.0,0.0,0.0251
+rjan_nyland__nor,Ørjan Nyland,NOR,GK,4000000,name_team_position,1.0,3.329543,0.9496
+viljar_myhra__nor,Viljar Myhra,NOR,GK,2500000,unmatched,0.3448275862068966,0.0,0.25
+cj_dos_santos__cpv,CJ Dos Santos,CPV,GK,2500000,name_team_position,1.0,0.0,0.0251
+bruno_varela__cpv,Bruno Varela,CPV,GK,2500000,unmatched,0.6666666666666666,0.0,0.25
+yazeed_abulaila__jor,Yazeed Abulaila,JOR,GK,2500000,name_team_position,1.0,0.904589,0.7627
+noureddin_bani_attiah__jor,Noureddin Bani Attiah,JOR,GK,2500000,unmatched,0.4878048780487805,0.0,0.25
+marcio_rosa__cpv,Marcio Rosa,CPV,GK,2500000,name_team_position,1.0,0.0,0.0464
+vozinha__cpv,Vozinha,CPV,GK,2500000,name_team_position,1.0,1.217539,0.9285
+abdallah_al_fakhouri__jor,Abdallah Al-Fakhouri,JOR,GK,2500000,name_team_position,1.0,0.05629,0.0251
+abdel_rahman_al_talalga__jor,Abdel Rahman Al-Talalga,JOR,GK,2500000,name_team_position,1.0,0.352392,0.2122
+utkir_yusupov__uzb,Utkir Yusupov,UZB,GK,2500000,name_team_position,1.0,0.753869,0.4928
+abduvokhid_nematov__uzb,Abduvokhid Nematov,UZB,GK,2500000,name_team_position,1.0,0.690633,0.482
+botirali_ergashev__uzb,Botirali Ergashev,UZB,GK,2500000,name_team_position,1.0,0.0,0.0251
+owen_goodman__can,Owen Goodman,CAN,GK,2500000,name_team_position,1.0,0.01696,0.0251
+dayne_st_clair__can,Dayne St. Clair,CAN,GK,3500000,name_team_position,1.0,0.239081,0.0301
+maxime_cr_peau__can,Maxime Crepeau,CAN,GK,3000000,name_team_position,1.0,2.863019,0.9448
+angus_gunn__sco,Angus Gunn,SCO,GK,3500000,name_team_position,1.0,1.030165,0.2623
+craig_gordon__sco,Craig Gordon,SCO,GK,2500000,name_team_position,1.0,1.075895,0.4868
+scott_bain__sco,Scott Bain,SCO,GK,2500000,unmatched,0.64,0.0,0.25
+salah_zakaria__qat,Salah Zakaria,QAT,GK,2500000,unmatched,0.5,0.0,0.25
+liam_kelly__sco,Liam Kelly,SCO,GK,3000000,name_team_position,1.0,0.746288,0.2508
+mahmoud_abunada__qat,Mahmoud Abunada,QAT,GK,2500000,name_team_position,1.0,0.460774,0.3828
+shehab_ellethy__qat,Shehab Ellethy,QAT,GK,2500000,name_team_position,1.0,0.0,0.0251
+meshaal_barsham__qat,Meshaal Barsham,QAT,GK,2500000,name_team_position,1.0,0.804526,0.5921
+ahmed_al_kassar__ksa,Ahmed Al-Kassar,KSA,GK,2500000,unmatched,0.6451612903225806,0.0,0.25
+mohammed_al_owais__ksa,Mohammed Al-Owais,KSA,GK,3000000,unmatched,0.6666666666666666,0.0,0.25
+noureddine_farhati__tun,Noureddine Farhati,TUN,GK,2500000,unmatched,0.45161290322580644,0.0,0.25
+nawaf_al_aqidi__ksa,Nawaf Al-Aqidi,KSA,GK,2500000,name_team_position,1.0,1.271579,0.9463
+abdulrahman_al_sanbi__ksa,Abdulrahman Al-Sanbi,KSA,GK,2500000,name_team_position,1.0,0.016055,0.0281
+mohammed_al_rubaie_al_yami__ksa,Mohammed Al-Rubaie Al-Yami,KSA,GK,2500000,name_team_position,1.0,0.0,0.0256
+yehvann_diouf__sen,Yehvann Diouf,SEN,GK,3000000,name_team_position,1.0,0.113963,0.0615
+abdelmouhib_chamakh__tun,Abdelmouhib Chamakh,TUN,GK,2500000,name_team_position,1.0,1.503211,0.9273
+aymen_dahmen__tun,Aymen Dahmen,TUN,GK,3000000,name_team_position,1.0,0.253318,0.04
+bechir_ben_said__tun,Bechir Ben Said,TUN,GK,3000000,name_team_position,1.0,0.0,0.0167
+sabri_ben_hessen__tun,Sabri Ben Hessen,TUN,GK,2500000,name_team_position,1.0,0.0,0.0161
+mory_diaw__sen,Mory Diaw,SEN,GK,3000000,name_team_position,1.0,0.721756,0.2679
+edouard_mendy__sen,Edouard Mendy,SEN,GK,3500000,name_team_position,1.0,2.199997,0.6706
+el_mehdi_al_harrar__mar,El Mehdi Al Harrar,MAR,GK,2500000,name_team_position,1.0,0.058869,0.0185
+ahmed_reda_tagnaouti__mar,Ahmed Reda Tagnaouti,MAR,GK,2500000,unmatched,0.45714285714285713,0.0,0.25
+el_mahdi_soliman__egy,El Mahdi Soliman,EGY,GK,2500000,name_team_position,1.0,0.0,0.0151
+el_mehdi_benabid__mar,El Mehdi Benabid,MAR,GK,3000000,name_team_position,1.0,0.052057,0.0226
+yassine_bono_bounou__mar,Yassine 'Bono' Bounou,MAR,GK,3500000,name_team_position,1.0,2.736162,0.7956
+munir_mohamedi_el_kajoui__mar,Munir Mohamedi El Kajoui,MAR,GK,3000000,unmatched,0.7692307692307693,0.0,0.25
+mohamed_alaa__egy,Mohamed Alaa,EGY,GK,2500000,name_team_position,1.0,0.0,0.0151
+oufa_shobeir__egy,Mostafa Oufa Shobeir,EGY,GK,2500000,name_team_position,1.0,1.13845,0.5186
+mohamed_el_shenawy__egy,Mohamed El-Shennawy,EGY,GK,3000000,name_team_position,1.0,1.424432,0.4513
+luis_mejia__pan,Luis Mejia,PAN,GK,2500000,name_team_position,1.0,0.190729,0.0982
+cesar_samudio__pan,Cesar Samudio,PAN,GK,2500000,name_team_position,1.0,0.025358,0.0476
+orlando_mosquera__pan,Orlando Mosquera,PAN,GK,2500000,name_team_position,1.0,1.222926,0.8542
+kumel_al_rekabe__irq,Kumel Al-Rekabe,IRQ,GK,2500000,name_team_position,1.0,0.0,0.0251
+fahad_talib__irq,Fahad Talib,IRQ,GK,2500000,name_team_position,1.0,0.07961,0.082
+jalal_hassan__irq,Jalal Hassan,IRQ,GK,2500000,unmatched,0.64,0.0,0.25
+ahmed_basil_fadhil__irq,Ahmed Basil Fadhil,IRQ,GK,2500000,name_team_position,1.0,0.922584,0.8929
+mike_penders__bel,Mike Penders,BEL,GK,3500000,name_team_position,1.0,0.221259,0.0151
+senne_lammens__bel,Senne Lammens,BEL,GK,4000000,name_team_position,1.0,0.077787,0.0162
+maarten_vandevoordt__bel,Maarten Vandevoordt,BEL,GK,3500000,name_team_position,1.0,0.0,0.0151
+thibaut_courtois__bel,Thibaut Courtois,BEL,GK,4500000,name_team_position,1.0,3.779608,0.8951
+matz_sels__bel,Matz Sels,BEL,GK,4500000,name_team_position,1.0,0.0,0.0586
+alireza_beiranvand__irn,Alireza Beiranvand,IRN,GK,3000000,name_team_position,1.0,2.284816,0.9438
+seyed_hossein_hosseini__irn,Seyed Hossein Hosseini,IRN,GK,2500000,unmatched,0.6956521739130435,0.0,0.25
+nikola_vasilj__bih,Nikola Vasilj,BIH,GK,3000000,name_team_position,1.0,2.229963,0.9097
+mohammad_khalife__irn,Mohammad Khalife,IRN,GK,2500000,name_team_position,1.0,0.122143,0.0251
+payam_niazmand__irn,Payam Niazmand,IRN,GK,2500000,name_team_position,1.0,0.132972,0.0311
+mladen_jurkas__bih,Mladen Jurkas,BIH,GK,2500000,unmatched,0.46153846153846156,0.0,0.25
+david_cabezas__ecu,David Cabezas,ECU,GK,2500000,name_team_position,1.0,1.745065,0.6667
+gonzalo_valle__ecu,Gonzalo Valle,ECU,GK,3000000,name_team_position,1.0,0.137209,0.0457
+martin_zlomisli__bih,Martin Zlomislic,BIH,GK,2500000,name_team_position,1.0,0.167216,0.0652
+osman_hadzikic__bih,Osman Hadzikic,BIH,GK,2500000,name_team_position,1.0,0.0,0.0251
+hern_n_gal_ndez__ecu,Hernan Galindez,ECU,GK,3500000,name_team_position,1.0,1.069658,0.2521
+moises_ramirez__ecu,Moises Ramirez,ECU,GK,2500000,name_team_position,1.0,0.052363,0.0356
+camilo_vargas__col,Camilo Vargas,COL,GK,4000000,name_team_position,1.0,3.215964,0.7899
+alvaro_montero__col,Alvaro Montero,COL,GK,4000000,name_team_position,1.0,0.364537,0.089
+david_ospina__col,David Ospina,COL,GK,3500000,name_team_position,1.0,0.660054,0.1212
+chris_brady__usa,Chris Brady,USA,GK,2500000,name_team_position,1.0,0.0,0.0151
+patrick_schulte__usa,Patrick Schulte,USA,GK,2500000,name_team_position,1.0,0.042204,0.0152
+matt_freese__usa,Matt Freese,USA,GK,3500000,name_team_position,1.0,2.693939,0.7668
+matt_turner__usa,Matt Turner,USA,GK,3000000,name_team_position,1.0,0.772431,0.2029
+sergio_rochet__uru,Sergio Rochet,URU,GK,4000000,name_team_position,1.0,2.463397,0.5955
+fernando_muslera__uru,Fernando Muslera,URU,GK,4000000,name_team_position,1.0,1.677522,0.3731
+michael_woud__nzl,Michael Woud,NZL,GK,2500000,name_team_position,1.0,0.042504,0.0255
+santiago_mele__uru,Santiago Mele,URU,GK,3500000,name_team_position,1.0,0.200554,0.0314
+ricardo_goss__rsa,Ricardo Goss,RSA,GK,2500000,name_team_position,1.0,0.037485,0.0547
+ronwen_williams__rsa,Ronwen Williams,RSA,GK,3000000,name_team_position,1.0,1.910779,0.92
+sipho_chaine__rsa,Sipho Chaine,RSA,GK,2500000,name_team_position,1.0,0.0,0.0252
+orlando_gill__par,Orlando Gill,PAR,GK,3000000,name_team_position,1.0,1.054504,0.3687
+juan_espinola__par,Juan Espinola,PAR,GK,2500000,name_team_position,1.0,0.0,0.0151
+roberto_gatito_fernandez__par,Roberto 'Gatito' Fernandez,PAR,GK,3000000,name_team_position,1.0,0.931215,0.3411
+carlos_miguel_coronel__par,Carlos Miguel Coronel,PAR,GK,2500000,name_team_position,1.0,0.103948,0.0371
+gaston_olveira__par,Gaston Olveira,PAR,GK,3000000,name_team_position,1.0,0.679516,0.2381
+max_crocombe__nzl,Max Crocombe,NZL,GK,2500000,name_team_position,1.0,0.587373,0.3832
+bum_keun_song__kor,Bum-Keun Song,KOR,GK,2500000,name_team_position,1.0,0.022739,0.0251
+alex_paulsen__nzl,Alex Paulsen,NZL,GK,2500000,name_team_position,1.0,0.894707,0.5912
+raul_rangel__mex,Raul Rangel,MEX,GK,4000000,name_team_position,1.0,3.717157,0.9397
+guillermo_ochoa__mex,Guillermo Ochoa,MEX,GK,3000000,name_team_position,1.0,0.245131,0.0352
+kim_seung_gyu__kor,Seung-Gyu Kim,KOR,GK,3000000,name_team_position,1.0,1.962045,0.7029
+carlos_acevedo__mex,Carlos Acevedo,MEX,GK,3500000,name_team_position,1.0,0.109463,0.0251
+jo_hyeon_woo__kor,Hyeon-Woo Jo,KOR,GK,3500000,name_team_position,1.0,0.908584,0.272
+zion_suzuki__jpn,Zion Suzuki,JPN,GK,4000000,name_team_position,1.0,3.073843,0.9433
+keisuke_sako__jpn,Keisuke Osako,JPN,GK,3500000,name_team_position,1.0,0.150507,0.0263
+tomoki_hayakawa__jpn,Tomoki Hayakawa,JPN,GK,3500000,name_team_position,1.0,0.170044,0.0304
+solomon_agbasi__gha,Solomon Agbasi,GHA,GK,2500000,unmatched,0.5,0.0,0.25
+benjamin_asare__gha,Benjamin Asare,GHA,GK,3000000,name_team_position,1.0,1.957532,0.8194
+paul_reverson__gha,Paul Reverson,GHA,GK,2500000,unmatched,0.37037037037037035,0.0,0.25
+joseph_anang__gha,Joseph Anang,GHA,GK,2500000,name_team_position,1.0,0.0,0.0252
+lawrence_ati_zigi__gha,Lawrence Ati Zigi,GHA,GK,3000000,name_team_position,1.0,0.482618,0.1554
+dean_henderson__eng,Dean Henderson,ENG,GK,4500000,name_team_position,1.0,0.224433,0.0276
+james_trafford__eng,James Trafford,ENG,GK,4000000,name_team_position,1.0,0.20508,0.0437
+jordan_pickford__eng,Jordan Pickford,ENG,GK,5000000,name_team_position,1.0,4.016359,0.9287
+yahia_fofana__civ,Yahia Fofana,CIV,GK,3000000,name_team_position,1.0,2.269461,0.892
+mohamed_kone__civ,Mohamed Kone,CIV,GK,3000000,name_team_position,1.0,0.0,0.0251
+alban_lafont__civ,Alban Lafont,CIV,GK,2500000,name_team_position,1.0,0.145764,0.0829
+bento_krepski__bra,Bento Krepski,BRA,GK,5000000,name_team_position,1.0,0.0,0.1359
+mathew_ryan__aus,Mathew Ryan,AUS,GK,3000000,name_team_position,1.0,1.93592,0.8931
+alisson_becker__bra,Alisson Becker,BRA,GK,5000000,name_team_position,1.0,3.9845,0.8288
+ederson_moraes__bra,Ederson Moraes,BRA,GK,5000000,name_team_position,1.0,0.179532,0.0202
+weverton__bra,Weverton,BRA,GK,4000000,name_team_position,1.0,0.052058,0.0151
+paul_izzo__aus,Paul Izzo,AUS,GK,2500000,name_team_position,1.0,0.097152,0.0268
+juan_musso__arg,Juan Musso,ARG,GK,4000000,name_team_position,1.0,0.0,0.0269
+patrick_beach__aus,Patrick Beach,AUS,GK,2500000,name_team_position,1.0,0.167771,0.0801
+walter_benitez__arg,Walter Benitez,ARG,GK,4000000,name_team_position,1.0,0.0,0.0151
+emiliano_mart_nez__arg,Emiliano Martinez,ARG,GK,5000000,name_team_position,1.0,4.142663,0.9429
+ger_nimo_rulli__arg,Geronimo Rulli,ARG,GK,4500000,name_team_position,1.0,0.16691,0.0151
+oussama_benbout__alg,Oussama Benbout,ALG,GK,2500000,unmatched,0.6153846153846154,0.0,0.25
+alexis_guendouz__alg,Alexis Guendouz,ALG,GK,3000000,name_team_position,1.0,0.436557,0.1358
+luca_zidane__alg,Luca Zidane,ALG,GK,3000000,name_team_position,1.0,2.045506,0.8226
+viktor_johansson__swe,Viktor Johansson,SWE,GK,3500000,name_team_position,1.0,0.287718,0.0562
+anthony_mandrea__alg,Anthony Mandrea,ALG,GK,3000000,name_team_position,1.0,0.201282,0.0416
+melvin_feycal_mastil__alg,Melvin Feycal Mastil,ALG,GK,2500000,unmatched,0.4375,0.0,0.25
+melker_ellborg__swe,Melker Ellborg,SWE,GK,3500000,name_team_position,1.0,0.0,0.0151
+noel_tornqvist__swe,Noel Törnqvist,SWE,GK,3500000,name_team_position,1.0,0.0,0.0151
+robin_olsen__swe,Robin Olsen,SWE,GK,4000000,name_team_position,1.0,0.0,0.6542
+jacob_widell_zetterstrom__swe,Jacob Widell Zetterström,SWE,GK,3500000,name_team_position,1.0,0.245016,0.1098
+kristoffer_nordfeldt__swe,Kristoffer Nordfeldt,SWE,GK,4000000,name_team_position,1.0,0.376516,0.1497
+alejandro_alex_remiro__esp,Alejandro 'Alex' Remiro,ESP,GK,4000000,unmatched,0.4444444444444444,0.0,0.25
+unai_sim_n__esp,Unai Simon,ESP,GK,5000000,name_team_position,1.0,4.521933,0.86
+bart_verbruggen__ned,Bart Verbruggen,NED,GK,4500000,name_team_position,1.0,3.500488,0.9051
+david_raya__esp,David Raya,ESP,GK,5000000,name_team_position,1.0,0.832533,0.0996
+joan_garcia__esp,Joan Garcia,ESP,GK,4000000,name_team_position,1.0,0.309377,0.0404
+robin_roefs__ned,Robin Roefs,NED,GK,3500000,name_team_position,1.0,0.0,0.0151
+justin_bijlow__ned,Justin Bijlow,NED,GK,3500000,name_team_position,1.0,0.134432,0.0159
+mark_flekken__ned,Mark Flekken,NED,GK,4000000,name_team_position,1.0,0.262218,0.0639
+robin_risser__fra,Robin Risser,FRA,GK,4000000,name_team_position,1.0,0.145315,0.0251
+brice_samba__fra,Brice Samba,FRA,GK,4500000,name_team_position,1.0,0.111608,0.0343
+mike_maignan__fra,Mike Maignan,FRA,GK,5000000,name_team_position,1.0,4.173231,0.9407
+lucas_chevalier__fra,Lucas Chevalier,FRA,GK,4000000,unmatched,0.46153846153846156,0.0,0.25
+dominik_livakovi__cro,Dominik Livakovic,CRO,GK,4000000,name_team_position,1.0,3.245405,0.9486
+jonas_urbig__ger,Jonas Urbig,GER,GK,4000000,name_team_position,1.0,0.0,0.0151
+finn_dahmen__ger,Finn Dahmen,GER,GK,4000000,name_team_position,1.0,0.0,0.0151
+oliver_baumann__ger,Oliver Baumann,GER,GK,5000000,name_team_position,1.0,3.305744,0.6484
+manuel_neuer__ger,Manuel Neuer,GER,GK,5000000,name_team_position,1.0,1.584096,0.2645
+alexander_n_bel__ger,Alexander Nübel,GER,GK,4500000,name_team_position,1.0,0.385425,0.057
+dominik_kotarski__cro,Dominik Kotarski,CRO,GK,3000000,name_team_position,1.0,0.135285,0.0263
+ivor_pandur__cro,Ivor Pandur,CRO,GK,2500000,name_team_position,1.0,0.014487,0.0251
+nikolas_polster__aut,Nikolas Polster,AUT,GK,2500000,name_team_position,1.0,0.0,0.0251
+patrick_pentz__aut,Patrick Pentz,AUT,GK,3000000,name_team_position,1.0,0.313984,0.0538
+florian_wiegele__aut,Florian Wiegele,AUT,GK,2500000,unmatched,0.6060606060606061,0.0,0.25
+alexander_schlager__aut,Alexander Schlager,AUT,GK,3500000,name_team_position,1.0,2.918295,0.9212
+mert_gunok__tur,Mert Günok,TUR,GK,3500000,name_team_position,1.0,0.13787,0.0193
+muhammed_sengezer__tur,Muhammed Sengezer,TUR,GK,3000000,name_team_position,1.0,0.088422,0.0151
+ugurcan_cakir__tur,Ugurcan Cakir,TUR,GK,4000000,name_team_position,1.0,3.183121,0.917
+altay_bayindir__tur,Altay Bayindir,TUR,GK,3000000,name_team_position,1.0,0.132094,0.0486
+joao_carvalho__por,Joao Carvalho,POR,GK,3500000,unmatched,0.6153846153846154,0.0,0.25
+ricardo_velho__por,Ricardo Velho,POR,GK,4000000,name_team_position,1.0,0.068675,0.0151
+rui_silva__por,Rui Silva,POR,GK,4000000,name_team_position,1.0,0.0,0.0243
+jos_s__por,Jose Sa,POR,GK,4500000,name_team_position,1.0,1.657822,0.3363
+diogo_costa__por,Diogo Costa,POR,GK,5000000,name_team_position,1.0,3.084249,0.6244
+jindrich_stanek__cze,Jindrich Stanek,CZE,GK,2500000,unmatched,0.5517241379310345,0.0,0.25
+matej_kovar__cze,Matej Kovar,CZE,GK,3000000,name_team_position,1.0,2.277936,0.9123
+martin_jedlicka__cze,Martin Jedlicka,CZE,GK,2500000,name_team_position,1.0,0.034046,0.0251
+lukas_hornicek__cze,Lukas Hornicek,CZE,GK,2500000,name_team_position,1.0,0.076579,0.0626
+marvin_keller__sui,Marvin Keller,SUI,GK,3000000,name_team_position,1.0,0.07729,0.0151
+pascal_loretz__sui,Pascal Loretz,SUI,GK,3000000,name_team_position,1.0,0.0,0.0151
+gregor_kobel__sui,Gregor Kobel,SUI,GK,4000000,name_team_position,1.0,3.691109,0.9192
+yvon_mvogo__sui,Yvon Mvogo,SUI,GK,3000000,name_team_position,1.0,0.310466,0.0507
+denis_zakaria__sui,Denis Zakaria,SUI,MID,3000000,name_team_position,1.0,1.452036,0.5608
+djibril_sow__sui,Djibril Sow,SUI,MID,3000000,name_team_position,1.0,0.329615,0.0827
+granit_xhaka__sui,Granit Xhaka,SUI,MID,4000000,name_team_position,1.0,2.620238,0.9302
+vincent_sierro__sui,Vincent Sierro,SUI,MID,2500000,unmatched,0.4666666666666667,0.0,0.25
+noah_okafor__sui,Noah Okafor,SUI,MID,3000000,name_team_position,1.0,0.360878,0.0593
+remo_freuler__sui,Remo Freuler,SUI,MID,3500000,name_team_position,1.0,3.15289,0.9381
+michel_aebischer__sui,Michel Aebischer,SUI,MID,2500000,name_team_position,1.0,1.622016,0.8008
+simon_sohm__sui,Simon Sohm,SUI,MID,2000000,unmatched,0.43478260869565216,0.0,0.25
+johan_manzambi__sui,Johan Manzambi,SUI,MID,3000000,name_team_position,1.0,0.715594,0.5589
+alvyn_sanches__sui,Alvyn Sanches,SUI,MID,2500000,unmatched,0.45454545454545453,0.0,0.25
+filip_ugrinic__sui,Filip Ugrinic,SUI,MID,2000000,unmatched,0.38461538461538464,0.0,0.25
+ardon_jashari__sui,Ardon Jashari,SUI,MID,2000000,name_team_position,1.0,0.22166,0.2409
+fabian_rieder__sui,Fabian Rieder,SUI,MID,3000000,name_team_position,1.0,1.494721,0.3527
+lukas_cerv__cze,Lukas Cerv,CZE,MID,3000000,name_team_position,1.0,0.249153,0.6096
+adam_karabec__cze,Adam Karabec,CZE,MID,2500000,name_team_position,1.0,0.239536,0.2967
+david_doudera__cze,David Doudera,CZE,MID,2000000,unmatched,0.5,0.0,0.25
+pavel_sulc__cze,Pavel Sulc,CZE,MID,4000000,name_team_position,1.0,2.045896,0.8997
+denis_visinsky__cze,Denis Visinsky,CZE,MID,2000000,name_team_position,1.0,0.0,0.0474
+hugo_sochurek__cze,Hugo Sochurek,CZE,MID,2000000,unmatched,0.56,0.0,0.25
+alexandr_sojka__cze,Alexandr Sojka,CZE,MID,2000000,unmatched,0.47619047619047616,0.0,0.25
+alex_kral__cze,Alex Kral,CZE,MID,2000000,name_team_position,1.0,0.197039,0.3191
+tomas_soucek__cze,Tomas Soucek,CZE,MID,3500000,name_team_position,1.0,1.970525,0.9394
+lukas_provod__cze,Lukas Provod,CZE,MID,3000000,name_team_position,1.0,1.769026,0.8588
+michal_sadilek__cze,Michal Sadilek,CZE,MID,2500000,name_team_position,1.0,0.252888,0.3527
+vladimir_darida__cze,Vladimir Darida,CZE,MID,2000000,name_team_position,1.0,0.240049,0.5939
+bruno_fernandes__por,Bruno Fernandes,POR,MID,7000000,name_team_position,1.0,3.297362,0.9246
+bernardo_silva__por,Bernardo Silva,POR,MID,5500000,name_team_position,1.0,2.842132,0.8941
+r_ben_neves__por,Ruben Neves,POR,MID,4000000,name_team_position,1.0,1.1517,0.3275
+vitinha__por,Vitinha,POR,MID,5500000,name_team_position,1.0,2.33139,0.6243
+samu_costa__por,Samu Costa,POR,MID,2500000,name_team_position,1.0,0.811071,0.7732
+matheus_nunes__por,Matheus Nunes,POR,MID,4500000,name_team_position,1.0,0.307,0.2404
+pedro_pote_goncalves__por,Pedro 'Pote' Goncalves,POR,MID,3000000,name_team_position,1.0,0.0,0.48
+joao_palhinha__por,João Palhinha,POR,MID,4500000,name_team_position,1.0,0.0,0.0998
+jo_o_neves__por,João Neves,POR,MID,5000000,name_team_position,1.0,0.597864,0.3506
+kenan_yildiz__tur,Kenan Yildiz,TUR,MID,4000000,name_team_position,1.0,1.474668,0.8953
+arda_g_ler__tur,Arda Güler,TUR,MID,4500000,name_team_position,1.0,3.574219,0.88
+kerem_akt_rko_lu__tur,Kerem Akturkoglu,TUR,MID,4500000,name_team_position,1.0,3.967057,0.6674
+orkun_k_k__tur,Orkun Kökcü,TUR,MID,3000000,name_team_position,1.0,2.227411,0.85
+i_smail_y_ksek__tur,Ismail Yüksek,TUR,MID,2500000,name_team_position,1.0,1.607915,0.6264
+o_uz_ayd_n__tur,Oguz Aydin,TUR,MID,2000000,name_team_position,1.0,0.590819,0.311
+atakan_karazor__tur,Atakan Karazor,TUR,MID,2000000,name_team_position,1.0,0.0,0.043
+irfan_can_kahveci__tur,Irfan Can Kahveci,TUR,MID,2000000,name_team_position,1.0,0.271081,0.3169
+kaan_ayhan__tur,Kaan Ayhan,TUR,MID,2000000,name_team_position,1.0,0.395227,0.127
+hakan_calhanoglu__tur,Hakan Calhanoglu,TUR,MID,4000000,name_team_position,1.0,0.518807,0.4675
+salih_ozcan__tur,Salih Özcan,TUR,MID,2000000,name_team_position,1.0,0.287561,0.316
+nicolas_seiwald__aut,Nicolas Seiwald,AUT,MID,2500000,name_team_position,1.0,1.97337,0.7343
+carney_chukwuemeka__aut,Carney Chukwuemeka,AUT,MID,2500000,unmatched,0.3870967741935484,0.0,0.25
+christoph_baumgartner__aut,Christoph Baumgartner,AUT,MID,3500000,name_team_position,1.0,0.0,0.0
+xaver_schlager__aut,Xaver Schlager,AUT,MID,2500000,name_team_position,1.0,0.577994,0.6421
+romano_schmid__aut,Romano Schmid,AUT,MID,3000000,name_team_position,1.0,2.18058,0.6361
+konrad_laimer__aut,Konrad Laimer,AUT,MID,3000000,name_team_position,1.0,2.576908,0.86
+florian_grillitsch__aut,Florian Grillitsch,AUT,MID,2500000,name_team_position,1.0,0.799122,0.3274
+alessandro_schopf__aut,Alessandro Schöpf,AUT,MID,2500000,name_team_position,1.0,0.184573,0.043
+marcel_sabitzer__aut,Marcel Sabitzer,AUT,MID,4500000,name_team_position,1.0,3.199643,0.9019
+patrick_wimmer__aut,Patrick Wimmer,AUT,MID,3000000,name_team_position,1.0,0.871084,0.5787
+paul_wanner__aut,Paul Wanner,AUT,MID,2500000,unmatched,0.45454545454545453,0.0,0.25
+toni_fruk__cro,Toni Fruk,CRO,MID,3000000,name_team_position,1.0,0.135167,0.0476
+martin_baturina__cro,Martin Baturina,CRO,MID,3000000,name_team_position,1.0,2.291527,0.5712
+nikola_vla_i__cro,Nikola Vlasic,CRO,MID,3000000,name_team_position,1.0,1.058911,0.2874
+nikola_moro__cro,Nikola Moro,CRO,MID,2500000,name_team_position,1.0,0.472276,0.2509
+mario_pa_ali__cro,Mario Pasalic,CRO,MID,3500000,name_team_position,1.0,1.402815,0.3515
+luka_modri__cro,Luka Modric,CRO,MID,4000000,name_team_position,1.0,2.422671,0.6936
+lovro_majer__cro,Lovro Majer,CRO,MID,2500000,unmatched,0.5,0.0,0.25
+luka_su_i__cro,Luka Sucic,CRO,MID,2000000,name_team_position,1.0,0.178002,0.0498
+petar_sucic__cro,Petar Sucic,CRO,MID,3000000,name_team_position,1.0,2.303351,0.896
+nadiem_amiri__ger,Nadiem Amiri,GER,MID,2500000,name_team_position,1.0,0.239106,0.043
+mateo_kovacic__cro,Mateo Kovacic,CRO,MID,4000000,name_team_position,1.0,0.434637,0.653
+leon_goretzka__ger,Leon Goretzka,GER,MID,4500000,name_team_position,1.0,0.746468,0.1607
+pascal_gross__ger,Pascal Gross,GER,MID,3000000,name_team_position,1.0,0.460954,0.3246
+joshua_kimmich__ger,Joshua Kimmich,GER,MID,5000000,name_team_position,1.0,3.22715,0.9525
+anton_stach__ger,Anton Stach,GER,MID,4500000,name_team_position,1.0,0.0,0.0386
+jamie_leweling__ger,Jamie Leweling,GER,MID,3000000,name_team_position,1.0,0.231931,0.0487
+aleksandar_pavlovic__ger,Aleksandar Pavlovic,GER,MID,3500000,name_team_position,1.0,2.051941,0.68
+lennart_karl__ger,Lennart Karl,GER,MID,5000000,name_team_position,1.0,0.731683,0.3187
+assan_ouedraogo__ger,Assan Ouedraogo,GER,MID,3000000,unmatched,0.3870967741935484,0.0,0.25
+florian_wirtz__ger,Florian Wirtz,GER,MID,7500000,name_team_position,1.0,3.110607,0.924
+jamal_musiala__ger,Jamal Musiala,GER,MID,6500000,name_team_position,1.0,2.873389,0.8984
+angelo_stiller__ger,Angelo Stiller,GER,MID,2500000,name_team_position,1.0,0.495388,0.3233
+kevin_schade__ger,Kevin Schade,GER,MID,3500000,name_team_position,1.0,0.0,0.043
+felix_nmecha__ger,Felix Nmecha,GER,MID,3000000,name_team_position,1.0,1.246723,0.4825
+manu_kon__fra,Manu Koné,FRA,MID,3500000,name_team_position,1.0,1.250206,0.38
+eduardo_camavinga__fra,Eduardo Camavinga,FRA,MID,3000000,name_team_position,1.0,0.0,0.3005
+bradley_barcola__fra,Bradley Barcola,FRA,MID,4000000,name_team_position,1.0,0.601012,0.3279
+warren_za_re_emery__fra,Warren Zaire-Emery,FRA,MID,3000000,name_team_position,1.0,0.791064,0.2738
+aur_lien_tchouam_ni__fra,Aurelien Tchouameni,FRA,MID,3500000,name_team_position,1.0,2.284686,0.6726
+adrien_rabiot__fra,Adrien Rabiot,FRA,MID,4000000,name_team_position,1.0,2.177534,0.6037
+n_golo_kant__fra,N'Golo Kante,FRA,MID,3000000,name_team_position,1.0,1.238412,0.3869
+kees_smit__ned,Kees Smit,NED,MID,2000000,name_team_position,1.0,0.402239,0.4638
+luciano_valente__ned,Luciano Valente,NED,MID,2500000,name_team_position,1.0,0.130532,0.0472
+marten_de_roon__ned,Marten de Roon,NED,MID,2500000,unmatched,0.6206896551724138,0.0,0.25
+justin_kluivert__ned,Justin Kluivert,NED,MID,2500000,unmatched,0.45161290322580644,0.0,0.25
+crysencio_summerville__ned,Crysencio Summerville,NED,MID,3000000,name_team_position,1.0,0.0,0.8851
+teun_koopmeiners__ned,Teun Koopmeiners,NED,MID,3500000,name_team_position,1.0,0.873271,0.2773
+quinten_timber__ned,Quinten Timber,NED,MID,3000000,name_team_position,1.0,0.835437,0.3012
+ryan_gravenberch__ned,Ryan Gravenberch,NED,MID,3500000,name_team_position,1.0,1.783228,0.566
+guus_til__ned,Guus Til,NED,MID,2500000,unmatched,0.32,0.0,0.25
+frenkie_de_jong__ned,Frenkie de Jong,NED,MID,3000000,name_team_position,1.0,0.0,0.9368
+pablo_gavi__esp,Pablo Gavi,ESP,MID,4000000,name_team_position,1.0,1.073922,0.4073
+tijjani_reijnders__ned,Tijjani Reijnders,NED,MID,6000000,name_team_position,1.0,2.68338,0.6768
+mats_wieffer__ned,Mats Wieffer,NED,MID,2500000,unmatched,0.4,0.0,0.25
+fermin_lopez__esp,Fermin Lopez,ESP,MID,5000000,name_team_position,1.0,0.0,0.2387
+mart_n_zubimendi__esp,Martin Zubimendi,ESP,MID,3500000,name_team_position,1.0,1.488655,0.3386
+yeremy_pino__esp,Yeremy Pino,ESP,MID,3500000,name_team_position,1.0,0.510386,0.0599
+alex_baena__esp,Alex Baena,ESP,MID,3500000,name_team_position,1.0,1.679153,0.5201
+pedri__esp,Pedri,ESP,MID,6000000,name_team_position,1.0,2.582907,0.6444
+pablo_barrios__esp,Pablo Barrios,ESP,MID,3000000,unmatched,0.45454545454545453,0.0,0.25
+dani_olmo__esp,Dani Olmo,ESP,MID,5000000,name_team_position,1.0,2.162262,0.5831
+mikel_merino__esp,Mikel Merino,ESP,MID,4500000,name_team_position,1.0,2.118041,0.5545
+rodri_hernandez__esp,Rodri Hernandez,ESP,MID,5000000,name_team_position,1.0,1.116089,0.3836
+aleix_garcia__esp,Aleix Garcia,ESP,MID,3000000,unmatched,0.4444444444444444,0.0,0.25
+fabian_ruiz__esp,Fabian Ruiz,ESP,MID,4500000,name_team_position,1.0,1.337783,0.58
+marcos_llorente__esp,Marcos Llorente,ESP,MID,3500000,name_team_position,1.0,0.845468,0.289
+pablo_fornals__esp,Pablo Fornals,ESP,MID,3000000,unmatched,0.48,0.0,0.25
+mattias_svanberg__swe,Mattias Svanberg,SWE,MID,2500000,name_team_position,1.0,0.389797,0.3308
+ken_sema__swe,Ken Sema,SWE,MID,2500000,name_team_position,1.0,0.72177,0.3111
+alexander_bernhardsson__swe,Alexander Bernhardsson,SWE,MID,2000000,name_team_position,1.0,0.53098,0.3744
+jesus_rodriguez__esp,Jesus Rodriguez,ESP,MID,3500000,unmatched,0.2962962962962963,0.0,0.25
+jesper_karlstr_m__swe,Jesper Karlström,SWE,MID,3000000,name_team_position,1.0,0.947236,0.51
+taha_abdi_ali__swe,Taha Abdi Ali,SWE,MID,2000000,name_team_position,1.0,0.026394,0.043
+yasin_ayari__swe,Yasin Ayari,SWE,MID,3500000,name_team_position,1.0,2.135281,0.8753
+sebastian_nanasi__swe,Sebastian Nanasi,SWE,MID,2000000,unmatched,0.45161290322580644,0.0,0.25
+lucas_bergvall__swe,Lucas Bergvall,SWE,MID,2500000,name_team_position,1.0,0.321621,0.2777
+hugo_larsson__swe,Hugo Larsson,SWE,MID,2500000,unmatched,0.5384615384615384,0.0,0.25
+besfort_zeneli__swe,Besfort Zeneli,SWE,MID,2000000,name_team_position,1.0,0.167329,0.0451
+roony_bardghji__swe,Roony Bardghji,SWE,MID,3000000,name_team_position,1.0,0.0,0.2741
+ibrahim_maza__alg,Ibrahim Maza,ALG,MID,3000000,name_team_position,1.0,1.21287,0.324
+ramiz_zerrouki__alg,Ramiz Zerrouki,ALG,MID,2500000,name_team_position,1.0,1.021352,0.5785
+fares_cha_bi__alg,Fares Chaibi,ALG,MID,2500000,name_team_position,1.0,0.747594,0.3472
+himad_abdelli__alg,Himad Abdelli,ALG,MID,2500000,name_team_position,1.0,0.8366,0.5084
+yassine_titraoui__alg,Yassine Titraoui,ALG,MID,2000000,name_team_position,1.0,0.158061,0.2481
+herman_johansson__swe,Herman Johansson,SWE,MID,2500000,unmatched,0.42857142857142855,0.0,0.25
+hicham_boudaoui__alg,Hicham Boudaoui,ALG,MID,2500000,name_team_position,1.0,1.039395,0.5497
+adil_aouchiche__alg,Adil Aouchiche,ALG,MID,2000000,name_team_position,1.0,0.073311,0.0464
+houssem_aouar__alg,Houssem Aouar,ALG,MID,2500000,name_team_position,1.0,0.71866,0.7734
+rodrigo_de_paul__arg,Rodrigo de Paul,ARG,MID,4500000,name_team_position,1.0,1.052168,0.2199
+leandro_paredes__arg,Leandro Paredes,ARG,MID,4000000,name_team_position,1.0,1.327089,0.3664
+giovani_lo_celso__arg,Giovani Lo Celso,ARG,MID,4000000,name_team_position,1.0,2.245659,0.55
+franco_mastantuono__arg,Franco Mastantuono,ARG,MID,3500000,name_team_position,1.0,0.243515,0.046
+alexis_mac_allister__arg,Alexis Mac Allister,ARG,MID,4500000,name_team_position,1.0,2.746127,0.6336
+exequiel_palacios__arg,Exequiel Palacios,ARG,MID,3500000,name_team_position,1.0,0.325909,0.2648
+isma_l_bennacer__alg,Ismael Bennacer,ALG,MID,2500000,name_team_position,1.0,1.044587,0.6012
+nabil_bentaleb__alg,Nabil Bentaleb,ALG,MID,2500000,unmatched,0.5185185185185185,0.0,0.25
+alan_varela__arg,Alan Varela,ARG,MID,2500000,name_team_position,1.0,0.0,0.0452
+nico_paz__arg,Nico Paz,ARG,MID,5000000,name_team_position,1.0,0.226495,0.2902
+valentin_barco__arg,Valentin Barco,ARG,MID,2500000,unmatched,0.5333333333333333,0.0,0.25
+thiago_almada__arg,Thiago Almada,ARG,MID,5500000,name_team_position,1.0,2.527328,0.765
+enzo_fern_ndez__arg,Enzo Fernandez,ARG,MID,5000000,name_team_position,1.0,2.378404,0.6606
+paul_okon_engstler__aus,Paul Okon-Engstler,AUS,MID,2000000,name_team_position,1.0,0.430247,0.3162
+cristian_volpato__aus,Cristian Volpato,AUS,MID,2500000,unmatched,0.5454545454545454,0.0,0.25
+cameron_devlin__aus,Cameron Devlin,AUS,MID,2000000,unmatched,0.5,0.0,0.25
+connor_metcalfe__aus,Connor Metcalfe,AUS,MID,3000000,name_team_position,1.0,1.324607,0.6532
+riley_mcgree__aus,Riley McGree,AUS,MID,2500000,name_team_position,1.0,0.821231,0.5551
+patrick_yazbek__aus,Patrick Yazbek,AUS,MID,2000000,name_team_position,1.0,0.07231,0.0435
+ajdin_hrustic__aus,Ajdin Hrustic,AUS,MID,2000000,name_team_position,1.0,0.350281,0.3022
+alexander_alex_robertson__aus,Alexander 'Alex' Robertson,AUS,MID,2000000,name_team_position,1.0,0.0,0.0386
+casemiro__bra,Casemiro,BRA,MID,4500000,name_team_position,1.0,3.148405,0.8252
+fabinho__bra,Fabinho,BRA,MID,2500000,unmatched,0.5333333333333333,0.0,0.25
+jackson_irvine__aus,Jackson Irvine,AUS,MID,2500000,unmatched,0.43478260869565216,0.0,0.25
+aiden_o_neill__aus,Aiden O'Neill,AUS,MID,2500000,name_team_position,1.0,1.353201,0.8832
+mathew_leckie__aus,Mathew Leckie,AUS,MID,2000000,unmatched,0.48,0.0,0.25
+gabriel_sara__bra,Gabriel Sara,BRA,MID,2500000,unmatched,0.6666666666666666,0.0,0.25
+lucas_paqueta__bra,Lucas Paqueta,BRA,MID,5500000,name_team_position,1.0,0.528012,0.3797
+bruno_guimaraes__bra,Bruno Guimaraes,BRA,MID,4500000,name_team_position,1.0,1.559402,0.8816
+danilo_dos_santos__bra,Danilo dos Santos,BRA,MID,3000000,name_team_position,1.0,0.285249,0.515
+andrey_santos__bra,Andrey Santos,BRA,MID,3000000,unmatched,0.4444444444444444,0.0,0.25
+vitinho__bra,Vitinho,BRA,MID,2500000,unmatched,0.47058823529411764,0.0,0.25
+ibrahim_sangare__civ,Ibrahim Sangare,CIV,MID,3000000,name_team_position,1.0,0.165567,0.1728
+christ_inao_oulai__civ,Christ Inao Oulaï,CIV,MID,2000000,name_team_position,1.0,0.2206,0.369
+parfait_guiagon__civ,Parfait Guiagon,CIV,MID,2000000,name_team_position,1.0,0.106047,0.2891
+seko_fofana__civ,Seko Fofana,CIV,MID,2500000,name_team_position,1.0,0.164601,0.5514
+jean_michael_seri__civ,Jean Michael Seri,CIV,MID,2500000,name_team_position,1.0,0.183066,0.3754
+franck_kessie__civ,Franck Kessie,CIV,MID,3000000,name_team_position,1.0,0.247314,0.6903
+declan_rice__eng,Declan Rice,ENG,MID,4500000,name_team_position,1.0,2.89383,0.9095
+elliot_anderson__eng,Elliot Anderson,ENG,MID,4000000,name_team_position,1.0,1.521709,0.4189
+eberechi_eze__eng,Eberechi Eze,ENG,MID,3000000,name_team_position,1.0,0.293302,0.2661
+cole_palmer__eng,Cole Palmer,ENG,MID,5000000,name_team_position,1.0,0.0,0.3184
+jordan_henderson__eng,Jordan Henderson,ENG,MID,3500000,name_team_position,1.0,1.657204,0.5247
+morgan_rogers__eng,Morgan Rogers,ENG,MID,5500000,name_team_position,1.0,2.534491,0.6209
+kobbie_mainoo__eng,Kobbie Mainoo,ENG,MID,2500000,name_team_position,1.0,0.5142,0.5609
+jude_bellingham__eng,Jude Bellingham,ENG,MID,6000000,name_team_position,1.0,1.431974,0.3974
+ibrahim_sulemana__gha,Ibrahim Sulemana,GHA,MID,2500000,name_team_position,1.0,0.307967,0.1084
+elisha_owusu__gha,Elisha Owusu,GHA,MID,2500000,name_team_position,1.0,0.562834,0.3014
+thomas_partey__gha,Thomas Partey,GHA,MID,3000000,name_team_position,1.0,1.54149,0.8558
+augustine_boakye__gha,Augustine Boakye,GHA,MID,2000000,unmatched,0.46153846153846156,0.0,0.25
+kodai_sano__jpn,Kodai Sano,JPN,MID,2000000,unmatched,0.7619047619047619,0.0,0.25
+ryunosuke_sato__jpn,Ryunosuke Sato,JPN,MID,2000000,unmatched,0.5384615384615384,0.0,0.25
+wataru_endo__jpn,Wataru Endo,JPN,MID,2500000,name_team_position,1.0,0.999607,0.6163
+takumi_minamino__jpn,Takumi Minamino,JPN,MID,4000000,name_team_position,1.0,0.0,0.8022
+daichi_kamada__jpn,Daichi Kamada,JPN,MID,3500000,name_team_position,1.0,1.215182,0.565
+takefusa_kubo__jpn,Takefusa Kubo,JPN,MID,4000000,name_team_position,1.0,1.950534,0.8066
+keito_nakamura__jpn,Keito Nakamura,JPN,MID,3000000,name_team_position,1.0,1.281288,0.56
+koki_saito__jpn,Koki Saito,JPN,MID,2000000,unmatched,0.6,0.0,0.25
+junya_ito__jpn,Junya Ito,JPN,MID,3500000,name_team_position,1.0,1.846831,0.5593
+ritsu_doan__jpn,Ritsu Doan,JPN,MID,4000000,name_team_position,1.0,2.108855,0.595
+joel_chima_fujita__jpn,Joel Chima Fujita,JPN,MID,2000000,unmatched,0.41379310344827586,0.0,0.25
+kwasi_sibo__gha,Kwasi Sibo,GHA,MID,2500000,name_team_position,1.0,0.517614,0.6695
+ao_tanaka__jpn,Ao Tanaka,JPN,MID,2500000,name_team_position,1.0,0.887079,0.5589
+hyeok_kyu_kwon__kor,Hyeok-kyu Kwon,KOR,MID,2000000,unmatched,0.6923076923076923,0.0,0.25
+hyun_jun_yang__kor,Hyun-Jun Yang,KOR,MID,2500000,name_team_position,1.0,0.085022,0.043
+kaoru_mitoma__jpn,Kaoru Mitoma,JPN,MID,3500000,name_team_position,1.0,0.0,0.3602
+jens_castrop__kor,Jens Castrop,KOR,MID,2500000,name_team_position,1.0,0.209638,0.3228
+kaishu_sano__jpn,Kaishu Sano,JPN,MID,2500000,name_team_position,1.0,0.641466,0.3248
+yuki_soma__jpn,Yuki Soma,JPN,MID,2000000,unmatched,0.5263157894736842,0.0,0.25
+lee_jae_sung__kor,Jae-Sung Lee,KOR,MID,4000000,name_team_position,1.0,2.129493,0.6446
+hyun_seok_hong__kor,Hyun-seok Hong,KOR,MID,2000000,unmatched,0.5925925925925926,0.0,0.25
+ji_sung_eom__kor,Ji-sung Eom,KOR,MID,2000000,name_team_position,1.0,0.200525,0.043
+lee_kang_in__kor,Kang-In Lee,KOR,MID,5000000,name_team_position,1.0,1.575397,0.394
+paik_seung_ho__kor,Seung-Ho Paik,KOR,MID,2000000,name_team_position,1.0,0.526263,0.509
+jun_ho_bae__kor,Jun-ho Bae,KOR,MID,2500000,name_team_position,1.0,0.253255,0.5051
+jin_gyu_kim__kor,Jin-gyu Kim,KOR,MID,2500000,name_team_position,1.0,0.333757,0.5377
+jin_seob_park__kor,Jin-seob Park,KOR,MID,2500000,name_team_position,1.0,0.099638,0.0687
+in_beom_hwang__kor,In-beom Hwang,KOR,MID,2500000,name_team_position,1.0,0.461634,0.6856
+brian_gutierrez__mex,Brian Gutierrez,MEX,MID,2500000,name_team_position,1.0,0.576334,0.6683
+denzell_garcia__mex,Denzell Garcia,MEX,MID,2000000,name_team_position,1.0,0.039487,0.043
+alvaro_fidalgo__mex,Alvaro Fidalgo,MEX,MID,2500000,name_team_position,1.0,0.840469,0.8834
+obed_vargas__mex,Obed Vargas,MEX,MID,2500000,name_team_position,1.0,0.248927,0.0619
+hwang_hee_chan__kor,Hee-Chan Hwang,KOR,MID,3000000,name_team_position,1.0,0.79441,0.3786
+dong_gyeong_lee__kor,Dong-gyeong Lee,KOR,MID,2000000,name_team_position,1.0,0.37674,0.7208
+edson_alvarez__mex,Edson Alvarez,MEX,MID,3000000,name_team_position,1.0,0.0,0.4344
+joe_bell__nzl,Joe Bell,NZL,MID,2500000,name_team_position,1.0,0.915066,0.6207
+elijah_just__nzl,Elijah Just,NZL,MID,3000000,name_team_position,1.0,1.130779,0.8876
+orbel_n_pineda__mex,Orbelin Pineda,MEX,MID,3000000,name_team_position,1.0,1.042187,0.3378
+erik_lira__mex,Erik Lira,MEX,MID,2500000,name_team_position,1.0,1.270642,0.5447
+gilberto_mora__mex,Gilberto Mora,MEX,MID,2500000,unmatched,0.5806451612903226,0.0,0.25
+cesar_huerta__mex,Cesar Huerta,MEX,MID,2500000,unmatched,0.5,0.0,0.25
+erick_sanchez__mex,Erick Sanchez,MEX,MID,3000000,name_team_position,1.0,0.311995,0.0926
+luis_chavez__mex,Luis Chavez,MEX,MID,2000000,unmatched,0.5454545454545454,0.0,0.25
+luis_romo__mex,Luis Romo,MEX,MID,2500000,unmatched,0.4,0.0,0.25
+roberto_alvarado__mex,Roberto Alvarado,MEX,MID,2500000,name_team_position,1.0,2.537759,0.576
+carlos_rodriguez__mex,Carlos Rodriguez,MEX,MID,2500000,name_team_position,1.0,0.150538,0.0864
+callum_mccowatt__nzl,Callum McCowatt,NZL,MID,2500000,name_team_position,1.0,0.610393,0.3819
+ryan_thomas__nzl,Ryan Thomas,NZL,MID,2500000,name_team_position,1.0,0.940467,0.6186
+marko_stamenic__nzl,Marko Stamenic,NZL,MID,2500000,name_team_position,1.0,1.286357,0.9032
+sarpreet_singh__nzl,Sarpreet Singh,NZL,MID,2500000,name_team_position,1.0,1.382059,0.8587
+matthew_garbett__nzl,Matthew Garbett,NZL,MID,2500000,name_team_position,1.0,0.413059,0.4267
+alex_rufer__nzl,Alex Rufer,NZL,MID,2500000,name_team_position,1.0,0.45204,0.3156
+ben_old__nzl,Ben Old,NZL,MID,2000000,name_team_position,1.0,0.55153,0.3709
+lachlan_bayliss__nzl,Lachlan Bayliss,NZL,MID,2000000,name_team_position,1.0,0.196294,0.0474
+miguel_almir_n__par,Miguel Almiron,PAR,MID,3500000,name_team_position,1.0,2.392261,0.9133
+alejandro_romero_gamarra__par,Alejandro Romero Gamarra,PAR,MID,3000000,unmatched,0.5555555555555556,0.0,0.25
+mauricio_magalhaes_prado__par,Mauricio Magalhaes Prado,PAR,MID,2000000,unmatched,0.55,0.0,0.25
+gustavo_caballero__par,Gustavo Caballero,PAR,MID,2000000,unmatched,0.4375,0.0,0.25
+sphephelo_yaya_sithole__rsa,Sphephelo Yaya Sithole,RSA,MID,3000000,name_team_position,1.0,1.095391,0.8032
+teboho_mokoena__rsa,Teboho Mokoena,RSA,MID,3500000,name_team_position,1.0,1.51171,0.6667
+andr_s_cubas__par,Andres Cubas,PAR,MID,2500000,name_team_position,1.0,1.087455,0.6302
+lucas_ramon_romero__par,Lucas Ramon Romero,PAR,MID,2000000,name_team_position,1.0,0.180904,0.2739
+dami_n_bobadilla__par,Damian Bobadilla,PAR,MID,2500000,name_team_position,1.0,1.294206,0.6047
+matias_galarza_fonda__par,Matias Galarza Fonda,PAR,MID,2500000,name_team_position,1.0,0.085876,0.0494
+ram_n_sosa__par,Ramon Sosa,PAR,MID,3000000,name_team_position,1.0,0.396961,0.1096
+diego_g_mez__par,Diego Gomez,PAR,MID,3000000,name_team_position,1.0,2.014763,0.9002
+hugo_cuenca__par,Hugo Cuenca,PAR,MID,2000000,name_team_position,1.0,0.302706,0.2575
+braian_ojeda__par,Braian Ojeda,PAR,MID,2000000,name_team_position,1.0,0.397286,0.2834
+joaqu_n_piquerez__uru,Joaquin Piquerez,URU,MID,2500000,name_team_position,1.0,0.61948,0.528
+federico_valverde__uru,Federico Valverde,URU,MID,5500000,name_team_position,1.0,1.613718,0.8894
+rodrigo_bentancur__uru,Rodrigo Bentancur,URU,MID,3000000,name_team_position,1.0,0.0,0.8642
+themba_zwane__rsa,Themba Zwane,RSA,MID,2500000,name_team_position,1.0,0.305276,0.6009
+nicolas_fonseca__uru,Nicolas Fonseca,URU,MID,2500000,name_team_position,1.0,0.171048,0.043
+jayden_adams__rsa,Jayden Adams,RSA,MID,2000000,name_team_position,1.0,0.0,0.2299
+thalente_mbatha__rsa,Thalente Mbatha,RSA,MID,3000000,name_team_position,1.0,0.509926,0.3021
+giorgian_de_arrascaeta__uru,Giorgian De Arrascaeta,URU,MID,4000000,name_team_position,1.0,0.0,0.7878
+rodrigo_zalazar__uru,Rodrigo Zalazar,URU,MID,3500000,unmatched,0.6666666666666666,0.0,0.25
+maxi_araujo__uru,Maxi Araujo,URU,MID,5000000,name_team_position,1.0,1.597606,0.9087
+juan_manuel_sanabria__uru,Juan Manuel Sanabria,URU,MID,3000000,name_team_position,1.0,0.530961,0.0993
+agustin_canobbio__uru,Agustin Canobbio,URU,MID,2500000,unmatched,0.5806451612903226,0.0,0.25
+nicolas_de_la_cruz__uru,Nicolas de la Cruz,URU,MID,3000000,name_team_position,1.0,0.393536,0.1385
+emiliano_martinez_toranza__uru,Emiliano Martinez Toranza,URU,MID,2500000,name_team_position,1.0,0.114291,0.048
+tanner_tessmann__usa,Tanner Tessmann,USA,MID,2500000,name_team_position,1.0,0.489832,0.318
+brenden_aaronson__usa,Brenden Aaronson,USA,MID,3000000,name_team_position,1.0,0.393279,0.0782
+malik_tillman__usa,Malik Tillman,USA,MID,4000000,name_team_position,1.0,2.575245,0.5807
+giovanni_reyna__usa,Giovanni Reyna,USA,MID,3000000,name_team_position,1.0,0.512976,0.3506
+cristian_roldan__usa,Cristian Roldan,USA,MID,2500000,name_team_position,1.0,0.150866,0.0573
+weston_mckennie__usa,Weston McKennie,USA,MID,3500000,name_team_position,1.0,0.535449,0.6257
+tyler_adams__usa,Tyler Adams,USA,MID,3000000,name_team_position,1.0,2.278777,0.8123
+carlos_andres_gomez__col,Carlos Andres Gomez,COL,MID,2000000,name_team_position,1.0,0.186713,0.2535
+jefferson_lerma__col,Jefferson Lerma,COL,MID,3000000,name_team_position,1.0,2.077796,0.6388
+aidan_morris__usa,Aidan Morris,USA,MID,2500000,name_team_position,1.0,0.46959,0.5477
+alex_zendejas__usa,Alex Zendejas,USA,MID,2000000,unmatched,0.4375,0.0,0.25
+sebastian_berhalter__usa,Sebastian Berhalter,USA,MID,3000000,name_team_position,1.0,2.039896,0.6178
+manuel_ugarte__uru,Manuel Ugarte,URU,MID,3500000,name_team_position,1.0,2.182515,0.852
+james_rodr_guez__col,James Rodriguez,COL,MID,4000000,name_team_position,1.0,2.878055,0.82
+juan_quintero__col,Juan Quintero,COL,MID,2500000,name_team_position,1.0,0.179106,0.0444
+jhon_arias__col,Jhon Arias,COL,MID,3000000,name_team_position,1.0,1.844668,0.6681
+richard_r_os__col,Richard Rios,COL,MID,3500000,name_team_position,1.0,2.408601,0.8948
+kevin_casta_o__col,Kevin Castano,COL,MID,3000000,name_team_position,1.0,0.360027,0.0759
+juan_portilla__col,Juan Portilla,COL,MID,2500000,name_team_position,1.0,0.223084,0.2666
+jaminton_campaz__col,Jaminton Campaz,COL,MID,2500000,name_team_position,1.0,0.190506,0.043
+jorge_carrascal__col,Jorge Carrascal,COL,MID,2500000,name_team_position,1.0,0.915123,0.2581
+denil_castillo__ecu,Denil Castillo,ECU,MID,2500000,unmatched,0.4444444444444444,0.0,0.25
+gustavo_puerta__col,Gustavo Puerta,COL,MID,2500000,name_team_position,1.0,0.630262,0.2706
+kendry_p_ez__ecu,Kendry Paez,ECU,MID,3000000,name_team_position,1.0,0.450938,0.1237
+gonzalo_plata__ecu,Gonzalo Plata,ECU,MID,3500000,name_team_position,1.0,3.072375,0.7824
+alan_franco__ecu,Alan Franco,ECU,MID,2500000,name_team_position,1.0,0.220172,0.0445
+mois_s_caicedo__ecu,Moises Caicedo,ECU,MID,3000000,name_team_position,1.0,2.093422,0.9013
+john_yeboah__ecu,John Yeboah,ECU,MID,3000000,name_team_position,1.0,3.280563,0.8633
+jordy_alcivar__ecu,Jordy Alcivar,ECU,MID,2000000,name_team_position,1.0,0.232775,0.0708
+alan_minda__ecu,Alan Minda,ECU,MID,3000000,name_team_position,1.0,1.187308,0.3264
+pedro_vite__ecu,Pedro Vite,ECU,MID,2500000,name_team_position,1.0,1.755284,0.8211
+yaimar_medina__ecu,Yaimar Medina,ECU,MID,2000000,name_team_position,1.0,0.115572,0.046
+amir_hadziahmetovic__bih,Amir Hadziahmetovic,BIH,MID,2000000,name_team_position,1.0,0.201518,0.0883
+ivan_ba_i__bih,Ivan Basic,BIH,MID,2500000,name_team_position,1.0,1.13059,0.5547
+ermin_mahmic__bih,Ermin Mahmic,BIH,MID,2000000,name_team_position,1.0,0.079862,0.0465
+amar_memi__bih,Amar Memic,BIH,MID,3000000,name_team_position,1.0,1.591174,0.396
+esmir_bajraktarevic__bih,Esmir Bajraktarevic,BIH,MID,3000000,name_team_position,1.0,1.768872,0.8135
+d_enis_burni__bih,Dzenis Burnic,BIH,MID,2500000,name_team_position,1.0,0.299045,0.112
+mohammed_ghorbani__irn,Mohammad Ghorbani,IRN,MID,2500000,name_team_position,1.0,0.284569,0.0887
+armin_gigovic__bih,Armin Gigovic,BIH,MID,3000000,name_team_position,1.0,1.431956,0.3948
+benjamin_tahirovic__bih,Benjamin Tahirovic,BIH,MID,3000000,name_team_position,1.0,2.060023,0.9018
+kerim_alajbegovi__bih,Kerim Alajbegovic,BIH,MID,3500000,name_team_position,1.0,2.582121,0.8345
+saman_ghoddos__irn,Saman Ghoddos,IRN,MID,2500000,name_team_position,1.0,1.907171,0.8625
+saeid_ezatolahi__irn,Saeid Ezatolahi,IRN,MID,2500000,name_team_position,1.0,1.680325,0.8138
+amir_mohammad_razzaghinia__irn,Amir Mohammad Razzaghinia,IRN,MID,2000000,unmatched,0.55,0.0,0.25
+mehdi_ghayedi__irn,Mehdi Ghayedi,IRN,MID,3000000,name_team_position,1.0,0.425689,0.3305
+roozbeh_cheshmi__irn,Roozbeh Cheshmi,IRN,MID,2000000,unmatched,0.4444444444444444,0.0,0.25
+omid_noorafkan__irn,Omid Noorafkan,IRN,MID,2500000,name_team_position,1.0,0.399809,0.1236
+ivan_unji__bih,Ivan Sunjic,BIH,MID,3000000,name_team_position,1.0,1.526242,0.6652
+mehdi_torabi__irn,Mehdi Torabi,IRN,MID,2000000,unmatched,0.75,0.0,0.25
+nicolas_raskin__bel,Nicolas Raskin,BEL,MID,2500000,name_team_position,1.0,0.586616,0.412
+hans_vanaken__bel,Hans Vanaken,BEL,MID,4000000,name_team_position,1.0,0.280199,0.3017
+youri_tielemans__bel,Youri Tielemans,BEL,MID,3500000,name_team_position,1.0,2.776679,0.8737
+axel_witsel__bel,Axel Witsel,BEL,MID,3000000,name_team_position,1.0,0.562097,0.3763
+kevin_de_bruyne__bel,Kevin De Bruyne,BEL,MID,7000000,name_team_position,1.0,3.105134,0.9135
+ali_jasim__irq,Ali Jasim,IRQ,MID,3000000,name_team_position,1.0,0.715243,0.6349
+amir_al_ammari__irq,Amir Al Ammari,IRQ,MID,3000000,name_team_position,1.0,1.313441,0.8671
+ahmed_qasem__irq,Ahmed Qasem,IRQ,MID,2000000,unmatched,0.5,0.0,0.25
+aimar_sher__irq,Aimar Sher,IRQ,MID,2500000,name_team_position,1.0,0.394174,0.563
+peter_gwargis__irq,Peter Gwargis,IRQ,MID,2000000,name_team_position,1.0,0.048746,0.043
+kevin_yakob__irq,Kevin Yakob,IRQ,MID,2000000,name_team_position,1.0,0.088916,0.0832
+charles_vanhoutte__bel,Charles Vanhoutte,BEL,MID,2000000,unmatched,0.5405405405405406,0.0,0.25
+diego_moreira__bel,Diego Moreira,BEL,MID,2000000,name_team_position,1.0,0.169024,0.0458
+amadou_onana__bel,Amadou Onana,BEL,MID,3000000,name_team_position,1.0,1.89134,0.6486
+ibrahim_bayesh__irq,Ibrahim Bayesh,IRQ,MID,2500000,name_team_position,1.0,0.918448,0.8738
+zaid_ismail__irq,Zaid Ismail,IRQ,MID,2500000,name_team_position,1.0,0.210363,0.383
+hasan_abdulkareem__irq,Hasan Abdulkareem,IRQ,MID,2000000,name_team_position,1.0,0.043089,0.051
+marko_farji__irq,Marko Farji,IRQ,MID,2500000,name_team_position,1.0,0.308967,0.5495
+carlos_harvey__pan,Carlos Harvey,PAN,MID,2500000,name_team_position,1.0,1.099857,0.5605
+adalberto_carrasquilla__pan,Adalberto Carrasquilla,PAN,MID,2500000,name_team_position,1.0,0.483835,0.6309
+alberto_quintero__pan,Alberto Quintero,PAN,MID,2000000,unmatched,0.3870967741935484,0.0,0.25
+an_bal_godoy__pan,Anibal Godoy,PAN,MID,2500000,name_team_position,1.0,1.238991,0.6321
+cristian_mart_nez__pan,Cristian Martinez,PAN,MID,2500000,name_team_position,1.0,1.417014,0.709
+yoel_barcenas__pan,Yoel Barcenas,PAN,MID,2000000,name_team_position,1.0,0.420387,0.6304
+c_sar_yanis__pan,Cesar Yanis,PAN,MID,2000000,name_team_position,1.0,0.329628,0.2778
+azarias_londono__pan,Azarias Londono,PAN,MID,2000000,unmatched,0.4444444444444444,0.0,0.25
+zidane_iqbal__irq,Zidane Iqbal,IRQ,MID,2500000,name_team_position,1.0,0.280466,0.3015
+youssef_amyn__irq,Youssef Amyn,IRQ,MID,2500000,name_team_position,1.0,0.850909,0.5497
+jose_luis_rodriguez_francis__pan,Jose Luis Rodriguez Francis,PAN,MID,2500000,name_team_position,1.0,0.423534,0.6182
+mahmoud_trezeguet__egy,Mahmoud Trezeguet,EGY,MID,3000000,name_team_position,1.0,1.173286,0.92
+haissem_hassan__egy,Haissem Hassan,EGY,MID,2000000,name_team_position,1.0,0.291691,0.2955
+emam_ashour__egy,Emam Ashour,EGY,MID,2500000,name_team_position,1.0,1.19476,0.5732
+islam_issa__egy,Islam Issa,EGY,MID,2000000,unmatched,0.45454545454545453,0.0,0.25
+marwan_ateya__egy,Marwan Ateya,EGY,MID,3000000,name_team_position,1.0,1.143411,0.8851
+mohanad_lasheen__egy,Mohanad Lasheen,EGY,MID,2500000,name_team_position,1.0,1.194002,0.6911
+hamdy_fathy__egy,Hamdy Fathy,EGY,MID,2500000,name_team_position,1.0,0.883562,0.8588
+mahmoud_saber__egy,Mahmoud Saber,EGY,MID,2500000,name_team_position,1.0,0.157527,0.054
+ibrahim_adel__egy,Ibrahim Adel,EGY,MID,3000000,name_team_position,1.0,0.231434,0.0534
+zizo__egy,Ahmed Zizo,EGY,MID,3000000,name_team_position,1.0,1.112399,0.7866
+mohamed_rabie_hrimat__mar,Mohamed Rabie Hrimat,MAR,MID,2000000,name_team_position,1.0,0.386929,0.6387
+ayoube_amaimouni_echghouyab__mar,Ayoube Amaimouni-Echghouyab,MAR,MID,2500000,unmatched,0.4864864864864865,0.0,0.25
+samir_el_mourabet__mar,Samir El Mourabet,MAR,MID,2000000,unmatched,0.5625,0.0,0.25
+soufiane_rahimi__mar,Soufiane Rahimi,MAR,MID,2500000,unmatched,0.6153846153846154,0.0,0.25
+gessime_yassine__mar,Gessime Yassine,MAR,MID,2000000,unmatched,0.5,0.0,0.25
+nabil_dunga_emad__egy,Nabil 'Dunga' Emad,EGY,MID,2000000,name_team_position,1.0,0.092071,0.2487
+mostafa_ziko__egy,Mostafa Ziko,EGY,MID,2000000,name_team_position,1.0,0.343954,0.465
+sofyan_amrabat__mar,Sofyan Amrabat,MAR,MID,2500000,name_team_position,1.0,0.824073,0.3921
+hakim_ziyech__mar,Hakim Ziyech,MAR,MID,2500000,name_team_position,1.0,0.39241,0.6195
+ayyoub_bouaddi__mar,Ayyoub Bouaddi,MAR,MID,2000000,unmatched,0.5714285714285714,0.0,0.25
+eliesse_ben_seghir__mar,Eliesse Ben Seghir,MAR,MID,3000000,name_team_position,1.0,0.384107,0.1154
+azzedine_ounahi__mar,Azzedine Ounahi,MAR,MID,3000000,name_team_position,1.0,1.11556,0.3946
+ismaila_sarr__sen,Ismaila Sarr,SEN,MID,3500000,name_team_position,1.0,1.419051,0.6015
+iliman_ndiaye__sen,Iliman Ndiaye,SEN,MID,3000000,name_team_position,1.0,2.639879,0.8253
+pape_alassane_gueye__sen,Pape Alassane Gueye,SEN,MID,3000000,name_team_position,1.0,0.318133,0.3786
+cheikh_niasse__sen,Cheikh Niasse,SEN,MID,2000000,unmatched,0.5806451612903226,0.0,0.25
+nampalys_mendy__sen,Nampalys Mendy,SEN,MID,2000000,unmatched,0.48,0.0,0.25
+idrissa_gana_gueye__sen,Idrissa Gana Gueye,SEN,MID,3000000,name_team_position,1.0,1.753492,0.6524
+bara_sapoko_ndiaye__sen,Bara Sapoko Ndiaye,SEN,MID,2000000,name_team_position,1.0,0.415897,0.8851
+path_ciss__sen,Pathe Ciss,SEN,MID,2500000,name_team_position,1.0,0.441159,0.2564
+lamine_camara__sen,Lamine Camara,SEN,MID,3000000,name_team_position,1.0,1.249765,0.5487
+ibrahim_mbaye__sen,Ibrahim Mbaye,SEN,MID,4000000,name_team_position,1.0,1.056642,0.2706
+pape_matar_sarr__sen,Pape Matar Sarr,SEN,MID,2500000,name_team_position,1.0,0.238497,0.1062
+habib_diarra__sen,Habib Diarra,SEN,MID,2500000,name_team_position,1.0,0.310896,0.5911
+bilal_el_khannouss__mar,Bilal El Khannouss,MAR,MID,3000000,name_team_position,1.0,1.34419,0.5176
+oussama_targhalline__mar,Oussama Targhalline,MAR,MID,2500000,name_team_position,1.0,0.116456,0.0434
+ismael_saibari__mar,Ismael Saibari,MAR,MID,3500000,name_team_position,1.0,2.403805,0.7891
+neil_el_aynaoui__mar,Neil El Aynaoui,MAR,MID,3000000,name_team_position,1.0,2.184916,0.8465
+mortadha_ben_ouanes__tun,Mortadha Ben Ouanes,TUN,MID,2000000,name_team_position,1.0,0.11161,0.0698
+khalil_ayari__tun,Khalil Ayari,TUN,MID,2000000,name_team_position,1.0,0.12428,0.3491
+rani_khedira__tun,Rani Khedira,TUN,MID,3000000,name_team_position,1.0,0.531068,0.6533
+anis_ben_slimane__tun,Anis Ben Slimane,TUN,MID,2500000,name_team_position,1.0,0.341175,0.5407
+aissa_laidouni__tun,Aissa Laidouni,TUN,MID,2000000,unmatched,0.5454545454545454,0.0,0.25
+amor_layouni__tun,Amor Layouni,TUN,MID,2000000,unmatched,0.5384615384615384,0.0,0.25
+elias_achouri__tun,Elias Achouri,TUN,MID,3500000,name_team_position,1.0,2.093592,0.6026
+ellyes_skhiri__tun,Ellyes Skhiri,TUN,MID,2500000,name_team_position,1.0,1.495825,0.8734
+ferjani_sassi__tun,Ferjani Sassi,TUN,MID,3000000,name_team_position,1.0,0.0,0.5954
+naim_sliti__tun,Naim Sliti,TUN,MID,2500000,unmatched,0.4166666666666667,0.0,0.25
+mohamed_ali_ben_romdhane__tun,Mohamed Ali Ben Romdhane,TUN,MID,3500000,unmatched,0.46153846153846156,0.0,0.25
+elias_saad__tun,Elias Saad,TUN,MID,2500000,name_team_position,1.0,0.761913,0.3347
+sebastian_tounekti__tun,Sebastian Tounekti,TUN,MID,2000000,name_team_position,1.0,0.15157,0.0568
+hannibal_mejbri__tun,Hannibal Mejbri,TUN,MID,3000000,name_team_position,1.0,1.49724,0.5947
+isma_l_gharbi__tun,Ismael Gharbi,TUN,MID,2500000,name_team_position,1.0,1.096957,0.6165
+sayfallah_ltaief__tun,Sayfallah Ltaief,TUN,MID,2000000,unmatched,0.4444444444444444,0.0,0.25
+mohamed_haj_mahmoud__tun,Mohamed 'Hadj' Mahmoud,TUN,MID,2000000,name_team_position,1.0,0.407945,0.442
+ayman_yahya_salem__ksa,Ayman Yahya Salem,KSA,MID,2500000,name_team_position,1.0,0.267065,0.3317
+saleh_al_shamat__ksa,Saleh Al-Shamat,KSA,MID,2500000,name_team_position,1.0,0.843662,0.7644
+musab_al_juwayr__ksa,Musab Al-Juwayr,KSA,MID,2500000,name_team_position,1.0,0.423084,0.4036
+ziyad_al_johani__ksa,Ziyad Al-Johani,KSA,MID,2500000,name_team_position,1.0,1.088209,0.5621
+nasser_al_dawsari__ksa,Nasser Al-Dawsari,KSA,MID,2500000,name_team_position,1.0,0.275476,0.5757
+abdullah_al_khaibari__ksa,Abdullah Al-Khaibari,KSA,MID,2500000,name_team_position,1.0,0.27701,0.3544
+mohamed_kanno__ksa,Mohamed Kanno,KSA,MID,3000000,name_team_position,1.0,1.118947,0.848
+salem_al_dawsari__ksa,Salem Al-Dawsari,KSA,MID,3000000,name_team_position,1.0,0.869884,0.677
+alaa_hejji__ksa,Alaa Hejji,KSA,MID,2000000,unmatched,0.4444444444444444,0.0,0.25
+khalid_al_ghannam__ksa,Khalid Al-Ghannam,KSA,MID,2500000,unmatched,0.45714285714285713,0.0,0.25
+abdulrahman_al_obood__ksa,Abdulrahman Al-Obood,KSA,MID,2500000,name_team_position,1.0,0.0,0.25
+ahmed_fathi__qat,Ahmed Fathi,QAT,MID,2500000,name_team_position,1.0,0.668454,0.4166
+abdulaziz_hatim_mohammed__qat,Abdulaziz Hatim Mohammed,QAT,MID,2500000,name_team_position,1.0,0.176151,0.1465
+assim_madibo__qat,Assim Madibo,QAT,MID,2500000,name_team_position,1.0,0.487583,0.3276
+hassan_al_haydos__qat,Hassan Al-Haydos,QAT,MID,2500000,unmatched,0.5517241379310345,0.0,0.25
+karim_boudiaf__qat,Karim Boudiaf,QAT,MID,2500000,name_team_position,1.0,0.631872,0.3756
+jassem_gaber__qat,Jassem Gaber,QAT,MID,2500000,name_team_position,1.0,0.176432,0.5685
+mohammed_waad__qat,Mohammed Waad,QAT,MID,2500000,name_team_position,1.0,0.146612,0.5564
+lennon_miller__sco,Lennon Miller,SCO,MID,2000000,unmatched,0.56,0.0,0.25
+andrew_irving__sco,Andrew Irving,SCO,MID,2000000,unmatched,0.4,0.0,0.25
+ahmed_al_ganehi__qat,Ahmed Al-Ganehi,QAT,MID,2000000,unmatched,0.6875,0.0,0.25
+tahsin_jamshid__qat,Tahsin Jamshid,QAT,MID,2000000,unmatched,0.4666666666666667,0.0,0.25
+mohamed_al_mannai__qat,Mohamed Al-Mannai,QAT,MID,2500000,name_team_position,1.0,0.324357,0.3513
+ben_doak__sco,Ben Doak,SCO,MID,3000000,name_team_position,1.0,1.207084,0.8534
+lewis_ferguson__sco,Lewis Ferguson,SCO,MID,2000000,name_team_position,1.0,0.339022,0.577
+john_mcginn__sco,John McGinn,SCO,MID,3500000,name_team_position,1.0,2.575788,0.88
+kenny_mclean__sco,Kenny McLean,SCO,MID,2500000,name_team_position,1.0,0.941067,0.3397
+ryan_christie__sco,Ryan Christie,SCO,MID,2500000,name_team_position,1.0,1.948251,0.8635
+scott_mctominay__sco,Scott McTominay,SCO,MID,4500000,name_team_position,1.0,3.133037,0.934
+tyler_fletcher__sco,Tyler Fletcher,SCO,MID,2000000,unmatched,0.3333333333333333,0.0,0.25
+marcelo_flores__can,Marcelo Flores,CAN,MID,2000000,name_team_position,1.0,0.411838,0.4638
+tajon_buchanan__can,Tajon Buchanan,CAN,MID,3500000,name_team_position,1.0,3.288421,0.8774
+billy_gilmour__sco,Billy Gilmour,SCO,MID,3000000,name_team_position,1.0,2.128305,0.6722
+david_hoilett__can,David 'Junior' Hoilett,CAN,MID,2500000,name_team_position,1.0,0.087549,0.25
+jonathan_osorio__can,Jonathan Osorio,CAN,MID,3000000,name_team_position,1.0,0.365046,0.1184
+isma_l_kon__can,Ismael Kone,CAN,MID,3000000,name_team_position,1.0,2.264166,0.8655
+liam_millar__can,Liam Millar,CAN,MID,3000000,name_team_position,1.0,1.150982,0.727
+ibrokhim_ibrokhimov__uzb,Ibrokhim Ibrokhimov,UZB,MID,2000000,name_team_position,1.0,0.0,0.0464
+dostonbek_khamdamov__uzb,Dostonbek Khamdamov,UZB,MID,2000000,name_team_position,1.0,0.107189,0.0671
+aziz_g_aniyev__uzb,Aziz Ganiev,UZB,MID,2500000,name_team_position,1.0,1.498538,0.7351
+mohammad_abu_shararh_zrayq__jor,Mohammad Abu 'Shararh' Zrayq,JOR,MID,2500000,name_team_position,1.0,0.0,0.0483
+alisher_odilov__uzb,Alisher Odilov,UZB,MID,2000000,name_team_position,1.0,0.164461,0.2457
+umarali_rakhmonaliyev__uzb,Umarali Rakhmonaliyev,UZB,MID,2000000,name_team_position,1.0,0.0,0.044
+rajaei_ayed__jor,Rajaei Ayed,JOR,MID,2500000,unmatched,0.45454545454545453,0.0,0.25
+odildzhon_khamrobekov__uzb,Odildzhon Khamrobekov,UZB,MID,2500000,name_team_position,1.0,0.727315,0.9386
+akmal_mozgovoy__uzb,Akmal Mozgovoy,UZB,MID,2500000,name_team_position,1.0,0.200265,0.0717
+jamshid_iskanderov__uzb,Jamshid Iskanderov,UZB,MID,2000000,name_team_position,1.0,0.035721,0.0451
+abbosbek_fayzullaev__uzb,Abbosbek Fayzullaev,UZB,MID,2500000,unmatched,0.4117647058823529,0.0,0.25
+oston_urunov__uzb,Oston Urunov,UZB,MID,2500000,name_team_position,1.0,1.033694,0.8296
+jaloliddin_masharipov__uzb,Jaloliddin Masharipov,UZB,MID,2500000,unmatched,0.43243243243243246,0.0,0.25
+stephen_eustaquio__can,Stephen Eustaquio,CAN,MID,2500000,unmatched,0.4666666666666667,0.0,0.25
+sherzod_esanov__uzb,Sherzod Esanov,UZB,MID,2000000,unmatched,0.5333333333333333,0.0,0.25
+mathieu_choiniere__can,Mathieu Choiniere,CAN,MID,2500000,name_team_position,1.0,0.409028,0.0938
+ali_ahmed__can,Ali Ahmed,CAN,MID,3000000,name_team_position,1.0,1.269707,0.3913
+jacob_shaffelburg__can,Jacob Shaffelburg,CAN,MID,2000000,unmatched,0.45714285714285713,0.0,0.25
+nathan_saliba__can,Nathan Saliba,CAN,MID,3000000,name_team_position,1.0,1.187581,0.3262
+niko_sigur__can,Niko Sigur,CAN,MID,2500000,name_team_position,1.0,0.850635,0.4104
+otabek_shukurov__uzb,Otabek Shukurov,UZB,MID,2500000,name_team_position,1.0,1.344063,0.9103
+telmo_arcanjo__cpv,Telmo Arcanjo,CPV,MID,2500000,name_team_position,1.0,0.62645,0.5432
+kevin_lenini__cpv,Kevin Lenini Pina,CPV,MID,2000000,name_team_position,1.0,0.245942,0.6738
+laros_duarte__cpv,Laros Duarte,CPV,MID,2500000,name_team_position,1.0,0.429539,0.294
+ailson_tavares__cpv,Ailson Tavares,CPV,MID,2500000,unmatched,0.6857142857142857,0.0,0.25
+deroy_duarte__cpv,Deroy Duarte,CPV,MID,2500000,name_team_position,1.0,0.525667,0.3704
+jamiro_monteiro__cpv,Jamiro Monteiro,CPV,MID,2500000,name_team_position,1.0,0.832096,0.6323
+yannick_semedo__cpv,Yannick Semedo,CPV,MID,2000000,name_team_position,1.0,0.18155,0.3444
+mohammad_al_dawoud__jor,Mohammad Al-Dawoud,JOR,MID,2000000,name_team_position,1.0,0.115914,0.043
+yousef_qashi__jor,Yousef Qashi,JOR,MID,2000000,name_team_position,1.0,0.379613,0.8559
+mohammad_taha__jor,Mohammad Taha,JOR,MID,2000000,name_team_position,1.0,0.0,0.25
+mahmoud_al_mardi__jor,Mahmoud Al-Mardi,JOR,MID,2000000,name_team_position,1.0,0.801436,0.5985
+mohannad_abu_taha__jor,Mohannad Abu Taha,JOR,MID,2500000,name_team_position,1.0,0.263446,0.6235
+odeh_al_fakhouri__jor,Odeh Al-Fakhouri,JOR,MID,2000000,name_team_position,1.0,0.0,0.25
+mousa_tamari__jor,Mousa Tamari,JOR,MID,3000000,name_team_position,1.0,1.09388,0.8438
+ali_azaizeh__jor,Ali Azaizeh,JOR,MID,2000000,name_team_position,1.0,0.0,0.043
+mohammad_abu_hasheesh__jor,Mohammad Abu Hasheesh,JOR,MID,2500000,name_team_position,1.0,0.246578,0.347
+nizar_al_rashdan__jor,Nizar Al-Rashdan,JOR,MID,2000000,name_team_position,1.0,0.667139,0.6498
+noor_al_rawabdeh__jor,Noor Al-Rawabdeh,JOR,MID,2500000,name_team_position,1.0,0.971236,0.831
+ibrahim_sa_deh__jor,Ibrahim Saadeh,JOR,MID,2500000,name_team_position,1.0,0.52097,0.324
+amer_jamous__jor,Amer Jamous,JOR,MID,2500000,name_team_position,1.0,0.511219,0.3349
+martin_degaard__nor,Martin Ødegaard,NOR,MID,4500000,name_team_position,1.0,2.267654,0.8841
+morten_thorsby__nor,Morten Thorsby,NOR,MID,2500000,name_team_position,1.0,0.647529,0.3142
+patrick_berg__nor,Patrick Berg,NOR,MID,2500000,name_team_position,1.0,0.836195,0.3558
+felix_horn_myhre__nor,Felix Horn Myhre,NOR,MID,2000000,unmatched,0.4,0.0,0.25
+kristian_thorstvedt__nor,Kristian Thorstvedt,NOR,MID,2000000,name_team_position,1.0,0.303748,0.3007
+antonio_nusa__nor,Antonio Nusa,NOR,MID,3500000,name_team_position,1.0,3.179445,0.82
+jens_petter_hauge__nor,Jens Petter Hauge,NOR,MID,2500000,name_team_position,1.0,0.057949,0.043
+fredrik_aursnes__nor,Fredrik Aursnes,NOR,MID,3000000,name_team_position,1.0,1.187353,0.7786
+kristian_arnstad__nor,Kristian Arnstad,NOR,MID,2500000,unmatched,0.5,0.0,0.25
+thelo_aasgaard__nor,Thelo Aasgaard,NOR,MID,2000000,name_team_position,1.0,0.187259,0.2564
+oscar_bobb__nor,Oscar Bobb,NOR,MID,3000000,name_team_position,1.0,2.633818,0.6439
+sander_berge__nor,Sander Berge,NOR,MID,3000000,name_team_position,1.0,2.097268,0.934
+andreas_schjelderup__nor,Andreas Schjelderup,NOR,MID,3500000,name_team_position,1.0,1.638213,0.3333
+tahith_chong__cuw,Tahith Chong,CUW,MID,2000000,name_team_position,1.0,0.295248,0.6207
+juninho_bacuna__cuw,Juninho Bacuna,CUW,MID,3000000,name_team_position,1.0,1.661787,0.9344
+kevin_felida__cuw,Kevin Felida,CUW,MID,2000000,name_team_position,1.0,0.0,0.0479
+tyrese_noslin__cuw,Tyrese Noslin,CUW,MID,2000000,name_team_position,1.0,0.0,0.0482
+woodensky_pierre__hai,Woodensky Pierre,HAI,MID,2000000,name_team_position,1.0,0.0,0.0449
+dominique_simon__hai,Dominique Simon,HAI,MID,2000000,name_team_position,1.0,0.295843,0.465
+leandro_bacuna__cuw,Leandro Bacuna,CUW,MID,2500000,name_team_position,1.0,1.27874,0.9151
+godfried_roemeratoe__cuw,Godfried Roemeratoe,CUW,MID,2000000,name_team_position,1.0,0.137825,0.0753
+danley_jean_jacques__hai,Danley Jean Jacques,HAI,MID,3000000,name_team_position,1.0,1.67179,0.9149
+leverton_pierre__hai,Leverton Pierre,HAI,MID,2500000,name_team_position,1.0,0.714678,0.4018
+carl_sainte__hai,Carl Sainte,HAI,MID,2000000,name_team_position,1.0,0.050054,0.0676
+jean_ricner_bellegarde__hai,Jean-Ricner Bellegarde,HAI,MID,3000000,name_team_position,1.0,1.093436,0.7054
+gael_kakuta__cod,Gaël Kakuta,COD,MID,2500000,name_team_position,1.0,0.241075,0.3279
+grady_diangana__cod,Grady Diangana,COD,MID,2500000,name_team_position,1.0,0.037678,0.0448
+noah_sadiki__cod,Noah Sadiki,COD,MID,2500000,name_team_position,1.0,1.023256,0.5842
+ngal_ayel_mukau__cod,Ngal'ayel Mukau,COD,MID,2500000,name_team_position,1.0,0.958248,0.5595
+nathanael_mbuku__cod,Nathanael Mbuku,COD,MID,2500000,name_team_position,1.0,0.716431,0.3441
+meschak_elia__cod,Meschack Elia,COD,MID,3000000,name_team_position,1.0,1.154075,0.5622
+edo_kayembe__cod,Edo Kayembe,COD,MID,2500000,name_team_position,1.0,0.589828,0.3446
+charles_pickel__cod,Charles Pickel,COD,MID,2500000,name_team_position,1.0,0.345329,0.1552
+theo_bongonda__cod,Theo Bongonda,COD,MID,3000000,name_team_position,1.0,1.522668,0.6207
+samuel_moutoussamy__cod,Samuel Moutoussamy,COD,MID,3000000,name_team_position,1.0,1.72926,0.8872
+brian_cipenga__cod,Brian Cipenga,COD,MID,2000000,name_team_position,1.0,0.143025,0.0474
+fiston_mayele__cod,Fiston Mayele,COD,FWD,3000000,name_team_position,1.0,0.220023,0.0452
+c_dric_bakambu__cod,Cedric Bakambu,COD,FWD,3500000,name_team_position,1.0,2.55622,0.8167
+simon_banza__cod,Simon Banza,COD,FWD,2500000,name_team_position,1.0,0.100909,0.0629
+wilson_isidor__hai,Wilson Isidor,HAI,FWD,3000000,name_team_position,1.0,1.094846,0.8806
+don_deedson_louicius__hai,Don Deedson Louicius,HAI,FWD,3000000,name_team_position,1.0,0.184349,0.6012
+frantzdy_pierrot__hai,Frantzdy Pierrot,HAI,FWD,3000000,name_team_position,1.0,1.479204,0.4591
+ruben_providence__hai,Ruben Providence,HAI,FWD,2500000,name_team_position,1.0,1.13667,0.8572
+yoane_wissa__cod,Yoane Wissa,COD,FWD,3500000,name_team_position,1.0,1.362508,0.8342
+duckens_nazon__hai,Duckens Nazon,HAI,FWD,3500000,name_team_position,1.0,1.985075,0.6362
+woobens_pacius__hai,Woobens Pacius,HAI,FWD,2000000,unmatched,0.3333333333333333,0.0,0.25
+derrick_etienne__hai,Derrick Etienne Jr.,HAI,FWD,2000000,name_team_position,1.0,0.135379,0.1052
+lenny_joseph__hai,Lenny Joseph,HAI,FWD,2000000,name_team_position,1.0,0.0,0.0465
+josue_casimir__hai,Josue Casimir,HAI,FWD,2500000,name_team_position,1.0,0.33013,0.6633
+yassin_fortune__hai,Yassin Fortune,HAI,FWD,2000000,name_team_position,1.0,0.094026,0.0813
+ar_jany_martha__cuw,Ar'jany Martha,CUW,FWD,2000000,name_team_position,1.0,0.0,0.0484
+sontje_hansen__cuw,Sontje Hansen,CUW,FWD,2000000,name_team_position,1.0,0.204058,0.377
+jurgen_locadia__cuw,Jürgen Locadia,CUW,FWD,2000000,name_team_position,1.0,0.202278,0.5505
+brandley_kuwas__cuw,Brandley Kuwas,CUW,FWD,2000000,name_team_position,1.0,0.816031,0.5325
+gervane_kastaneer__cuw,Gervane Kastaneer,CUW,FWD,2500000,name_team_position,1.0,0.224926,0.0902
+jeremy_antonisse__cuw,Jeremy Antonisse,CUW,FWD,2000000,name_team_position,1.0,0.517363,0.3151
+jearl_margaritha__cuw,Jearl Margaritha,CUW,FWD,3000000,name_team_position,1.0,0.430746,0.1755
+kenji_gorr__cuw,Kenji Gorre,CUW,FWD,2500000,name_team_position,1.0,0.717764,0.4289
+j_rgen_strand_larsen__nor,Jørgen Strand Larsen,NOR,FWD,3000000,name_team_position,1.0,1.698946,0.5147
+erling_haaland__nor,Erling Haaland,NOR,FWD,8500000,name_team_position,1.0,3.677456,0.9058
+alexander_s_rloth__nor,Alexander Sørloth,NOR,FWD,4500000,name_team_position,1.0,3.024355,0.8805
+garry_mendes_rodrigues__cpv,Garry Mendes Rodrigues,CPV,FWD,2500000,name_team_position,1.0,0.204293,0.3371
+gilson_benchimol_tavares__cpv,Gilson Benchimol Tavares,CPV,FWD,2500000,name_team_position,1.0,0.096929,0.063
+ryan_mendes_da_graca__cpv,Ryan Mendes Da Graça,CPV,FWD,3000000,name_team_position,1.0,1.071968,0.8829
+jovane_cabral__cpv,Jovane Cabral,CPV,FWD,2500000,name_team_position,1.0,1.062714,0.5853
+nuno_da_costa__cpv,Nuno da Costa,CPV,FWD,2500000,name_team_position,1.0,0.076761,0.2764
+ali_olwan__jor,Ali Olwan,JOR,FWD,3500000,unmatched,0.36363636363636365,0.0,0.25
+ibrahim_sabra__jor,Ibrahim Sabra,JOR,FWD,2500000,name_team_position,1.0,0.445394,0.2619
+baha_a_faisal__jor,Baha'a Faisal,JOR,FWD,2500000,name_team_position,1.0,0.279137,0.5573
+dailon_livramento__cpv,Dailon Livramento,CPV,FWD,3000000,name_team_position,1.0,0.977197,0.3874
+h_lio_varela__cpv,Helio Varela,CPV,FWD,2500000,name_team_position,1.0,0.622049,0.2659
+willy_semedo__cpv,Willy Semedo,CPV,FWD,3500000,name_team_position,1.0,0.796459,0.3479
+eldor_shomurodov__uzb,Eldor Shomurodov,UZB,FWD,3000000,name_team_position,1.0,2.277272,0.9205
+azizbek_amanov__uzb,Azizbek Amanov,UZB,FWD,2000000,unmatched,0.25,0.0,0.25
+igor_sergeev__uzb,Igor Sergeev,UZB,FWD,2000000,name_team_position,1.0,0.218999,0.0843
+promise_david__can,Promise David,CAN,FWD,3000000,name_team_position,1.0,0.0,0.0478
+aribim_pepple__can,Aribim Pepple,CAN,FWD,2000000,name_team_position,1.0,0.0,0.0464
+tani_oluwaseyi__can,Tani Oluwaseyi,CAN,FWD,2500000,name_team_position,1.0,1.467377,0.3452
+findlay_curtis__sco,Findlay Curtis,SCO,FWD,2000000,name_team_position,1.0,0.0,0.0474
+daniel_jebbison__can,Daniel Jebbison,CAN,FWD,2500000,name_team_position,1.0,0.202617,0.043
+jonathan_david__can,Jonathan David,CAN,FWD,4500000,name_team_position,1.0,4.804797,0.9223
+jacen_russell_rowe__can,Jacen Russell-Rowe,CAN,FWD,2000000,name_team_position,1.0,0.077982,0.2257
+cyle_christopher_larin__can,Cyle Christopher Larin,CAN,FWD,3000000,name_team_position,1.0,0.520801,0.6285
+george_hirst__sco,George Hirst,SCO,FWD,2500000,name_team_position,1.0,0.322892,0.5479
+che_adams__sco,Che Adams,SCO,FWD,3000000,name_team_position,1.0,2.081185,0.6374
+lyndon_dykes__sco,Lyndon Dykes,SCO,FWD,2500000,name_team_position,1.0,0.645236,0.1452
+lawrence_shankland__sco,Lawrence Shankland,SCO,FWD,2500000,name_team_position,1.0,0.270271,0.4793
+edmilson_junior__qat,Edmilson Junior,QAT,FWD,2500000,name_team_position,1.0,0.95482,0.6178
+ross_stewart__sco,Ross Stewart,SCO,FWD,2000000,name_team_position,1.0,0.118063,0.0386
+tommy_conway__sco,Tommy Conway,SCO,FWD,2500000,unmatched,0.0,0.0,0.25
+mohammed_muntari__qat,Mohammed Muntari,QAT,FWD,2000000,name_team_position,1.0,0.175998,0.0577
+yusuf_abdurisag__qat,Yusuf Abdurisag,QAT,FWD,2000000,unmatched,0.24,0.0,0.25
+ahmed_alaaeldin_abdelmotaal__qat,Ahmed Alaaeldin Abdelmotaal,QAT,FWD,3000000,name_team_position,1.0,0.095006,0.4247
+almoez_ali__qat,Almoez Ali,QAT,FWD,3000000,name_team_position,1.0,0.282823,0.4513
+akram_afif__qat,Akram Afif,QAT,FWD,3500000,name_team_position,1.0,1.988917,0.91
+sultan_mandash__ksa,Sultan Mandash,KSA,FWD,2500000,unmatched,0.3333333333333333,0.0,0.25
+firas_al_buraikan__ksa,Firas Al Brikan,KSA,FWD,3500000,unmatched,0.9375,0.0,0.6584
+saleh_al_shehri__ksa,Saleh Al-Shehri,KSA,FWD,2500000,unmatched,0.48484848484848486,0.0,0.25
+abdullah_al_hamdan__ksa,Abdullah Al-Hamdan,KSA,FWD,2500000,name_team_position,1.0,0.224138,0.4927
+hazem_mastouri__tun,Hazem Mastouri,TUN,FWD,3500000,name_team_position,1.0,1.387176,0.4151
+firas_chaouat__tun,Firas Chaouat,TUN,FWD,2500000,name_team_position,1.0,0.618294,0.2848
+youssef_msakni__tun,Youssef Msakni,TUN,FWD,2500000,unmatched,0.4,0.0,0.25
+louey_ben_farhat__tun,Louey Ben Farhat,TUN,FWD,2000000,unmatched,0.3448275862068966,0.0,0.25
+rayan_elloumi__tun,Rayan Elloumi,TUN,FWD,2000000,name_team_position,1.0,0.246071,0.0682
+pape_cherif_ndiaye__sen,Pape Cherif Ndiaye,SEN,FWD,3000000,name_team_position,1.0,0.119325,0.238
+assane_diao_diaoune__sen,Assane Diao Diaoune,SEN,FWD,2500000,name_team_position,1.0,0.33206,0.3025
+nicolas_jackson__sen,Nicolas Jackson,SEN,FWD,4500000,name_team_position,1.0,2.427333,0.6014
+boulaye_dia__sen,Boulaye Dia,SEN,FWD,2000000,unmatched,0.47619047619047616,0.0,0.25
+bamba_dieng__sen,Bamba Dieng,SEN,FWD,2000000,name_team_position,1.0,0.140903,0.043
+habib_diallo__sen,Habib Diallo,SEN,FWD,2500000,unmatched,0.4,0.0,0.25
+sadio_man__sen,Sadio Mane,SEN,FWD,5000000,name_team_position,1.0,3.655495,0.8922
+kr_pin_diatta__sen,Krepin Diatta,SEN,FWD,2500000,name_team_position,1.0,0.90481,0.8592
+abde_ezzalzouli__mar,Abde Ezzalzouli,MAR,FWD,3000000,name_team_position,1.0,2.170763,0.5823
+amine_adli__mar,Amine Adli,MAR,FWD,2500000,name_team_position,1.0,0.139805,0.043
+chemsdine_talbi__mar,Chemsdine Talbi,MAR,FWD,2500000,name_team_position,1.0,0.413618,0.2297
+youssef_en_nesyri__mar,Youssef En-Nesyri,MAR,FWD,3500000,name_team_position,1.0,0.532397,0.1118
+ayoub_el_kaabi__mar,Ayoub El Kaabi,MAR,FWD,3500000,name_team_position,1.0,1.590092,0.3446
+aqtay_abdallah__egy,Aqtay Abdallah,EGY,FWD,2000000,name_team_position,1.0,0.0,0.0456
+hamza_abdelkarim__egy,Hamza Abdelkarim,EGY,FWD,2000000,name_team_position,1.0,0.210296,0.0465
+brahim_d_az__mar,Brahim Diaz,MAR,FWD,4500000,name_team_position,1.0,2.215393,0.4146
+mostafa_mohamed__egy,Mostafa Mohamed,EGY,FWD,3500000,unmatched,0.7857142857142857,0.0,0.25
+nasser_mansy__egy,Nasser Mansy,EGY,FWD,2000000,unmatched,0.48,0.0,0.25
+omar_marmoush__egy,Omar Marmoush,EGY,FWD,5000000,name_team_position,1.0,3.411425,0.8621
+mohamed_salah__egy,Mohamed Salah,EGY,FWD,5000000,name_team_position,1.0,3.163861,0.6536
+ismael_d_az__pan,Ismael Diaz,PAN,FWD,2500000,name_team_position,1.0,1.201172,0.3414
+jose_fajardo__pan,Jose Fajardo,PAN,FWD,3000000,name_team_position,1.0,0.388966,0.3472
+kadir_barria__pan,Kadir Barria,PAN,FWD,2000000,name_team_position,1.0,0.20448,0.1158
+cecilio_waterman__pan,Cecilio Waterman,PAN,FWD,2000000,name_team_position,1.0,0.361,0.5247
+tomas_rodriguez__pan,Tomas Rodriguez,PAN,FWD,2000000,unmatched,0.0,0.0,0.25
+ali_yousif__irq,Ali Yousif,IRQ,FWD,2000000,name_team_position,1.0,0.207279,0.2464
+aymen_hussein__irq,Aymen Hussein,IRQ,FWD,3500000,name_team_position,1.0,0.23556,0.3985
+mohanad_ali__irq,Mohanad Ali,IRQ,FWD,3000000,name_team_position,1.0,0.267278,0.3417
+alexis_saelemaekers__bel,Alexis Saelemaekers,BEL,FWD,4000000,name_team_position,1.0,0.321565,0.2956
+matias_fernandez_pardo__bel,Matias Fernandez-Pardo,BEL,FWD,2500000,name_team_position,1.0,0.06039,0.0465
+romeo_vermant__bel,Romeo Vermant,BEL,FWD,2000000,unmatched,0.46153846153846156,0.0,0.25
+ali_al_hamadi__irq,Ali Al-Hamadi,IRQ,FWD,2500000,name_team_position,1.0,0.612184,0.5283
+lois_openda__bel,Lois Openda,BEL,FWD,4000000,name_team_position,1.0,0.0,0.3271
+leandro_trossard__bel,Leandro Trossard,BEL,FWD,5500000,name_team_position,1.0,3.103829,0.5943
+romelu_lukaku__bel,Romelu Lukaku,BEL,FWD,4500000,name_team_position,1.0,0.535531,0.4126
+charles_de_ketelaere__bel,Charles De Ketelaere,BEL,FWD,6000000,name_team_position,1.0,1.571637,0.5569
+jeremy_doku__bel,Jeremy Doku,BEL,FWD,6500000,name_team_position,1.0,3.345308,0.6557
+dodi_lukebakio__bel,Dodi Lukebakio,BEL,FWD,3500000,name_team_position,1.0,0.928398,0.2757
+alireza_jahanbakhsh__irn,Alireza Jahanbakhsh,IRN,FWD,2500000,name_team_position,1.0,0.585038,0.1507
+shahriar_moghanlou__irn,Shahriar Moghanlou,IRN,FWD,2000000,name_team_position,1.0,0.234591,0.2664
+dennis_dargahi_eckert_ayensa__irn,Dennis 'Dargahi' Eckert Ayensa,IRN,FWD,2000000,unmatched,0.3,0.0,0.25
+samed_ba_dar__bih,Samed Bazdar,BIH,FWD,2000000,name_team_position,1.0,0.487512,0.307
+mohammad_mohebi__irn,Mohammad Mohebi,IRN,FWD,3000000,name_team_position,1.0,2.162079,0.8317
+ali_alipour__irn,Ali Alipour,IRN,FWD,2500000,name_team_position,1.0,0.258697,0.043
+amirhossein_hosseinzadeh__irn,Amirhossein Hosseinzadeh,IRN,FWD,3000000,name_team_position,1.0,1.630068,0.5366
+mehdi_taremi__irn,Mehdi Taremi,IRN,FWD,3500000,name_team_position,1.0,3.065217,0.9302
+edin_dzeko__bih,Edin Dzeko,BIH,FWD,4500000,name_team_position,1.0,0.485149,0.4471
+haris_tabakovic__bih,Haris Tabakovic,BIH,FWD,3000000,name_team_position,1.0,0.907982,0.2622
+jovo_lukic__bih,Jovo Lukic,BIH,FWD,2000000,name_team_position,1.0,0.410773,0.7493
+ermedin_demirovic__bih,Ermedin Demirovic,BIH,FWD,3000000,name_team_position,1.0,0.422503,0.6756
+jordy_caicedo__ecu,Jordy Caicedo,ECU,FWD,2500000,name_team_position,1.0,0.124878,0.2493
+john_mercado__ecu,John Mercado,ECU,FWD,2000000,name_team_position,1.0,0.173416,0.0461
+janner_corozo__ecu,Janner Corozo,ECU,FWD,2000000,name_team_position,1.0,0.177875,0.2545
+jeremy_ar_valo__ecu,Jeremy Arevalo,ECU,FWD,2000000,name_team_position,1.0,0.176948,0.0476
+enner_valencia__ecu,Enner Valencia,ECU,FWD,4000000,name_team_position,1.0,3.457366,0.8826
+kevin_rodr_guez__ecu,Kevin Rodriguez,ECU,FWD,3000000,name_team_position,1.0,0.403332,0.0689
+nilson_angulo__ecu,Nilson Angulo,ECU,FWD,2000000,unmatched,0.41379310344827586,0.0,0.25
+luis_d_az__col,Luis Diaz,COL,FWD,5500000,name_team_position,1.0,3.258074,0.9323
+juan_cucho_hernandez__col,Juan 'Cucho' Hernandez,COL,FWD,4000000,name_team_position,1.0,0.451223,0.5405
+luis_suarez_charris__col,Luis Suarez Charris,COL,FWD,4500000,name_team_position,1.0,0.393519,0.5148
+anthony_valencia__ecu,Anthony Valencia,ECU,FWD,2000000,name_team_position,1.0,0.300417,0.3076
+jhon_c_rdoba__col,Jhon Cordoba,COL,FWD,3000000,name_team_position,1.0,0.60671,0.1309
+rafael_santos_borre__col,Rafael Santos Borre,COL,FWD,4000000,name_team_position,1.0,0.0,0.0901
+johan_carbonero__col,Johan Carbonero,COL,FWD,3500000,name_team_position,1.0,0.0,0.0477
+patrick_agyemang__usa,Patrick Agyemang,USA,FWD,3000000,name_team_position,1.0,0.92823,0.1535
+haji_wright__usa,Haji Wright,USA,FWD,2500000,unmatched,0.34782608695652173,0.0,0.25
+christian_pulisic__usa,Christian Pulisic,USA,FWD,4000000,name_team_position,1.0,1.632174,0.8318
+timothy_weah__usa,Timothy Weah,USA,FWD,3000000,name_team_position,1.0,0.50468,0.402
+ricardo_pepi__usa,Ricardo Pepi,USA,FWD,2500000,name_team_position,1.0,0.356368,0.288
+folarin_balogun__usa,Folarin Balogun,USA,FWD,4000000,name_team_position,1.0,0.546425,0.4033
+darwin_nunez__uru,Darwin Nunez,URU,FWD,6000000,name_team_position,1.0,0.471058,0.3951
+agust_n_lvarez__uru,Agustin Alvarez,URU,FWD,3000000,name_team_position,1.0,0.284746,0.043
+facundo_torres__uru,Facundo Torres,URU,FWD,3500000,name_team_position,1.0,0.25788,0.0433
+federico_vi_as__uru,Federico Vinas,URU,FWD,4000000,name_team_position,1.0,2.489954,0.5403
+facundo_pellistri__uru,Facundo Pellistri,URU,FWD,3500000,name_team_position,1.0,0.59163,0.4327
+bongokuhle_hlongwane__rsa,Bongokuhle Hlongwane,RSA,FWD,2000000,name_team_position,1.0,0.343077,0.5585
+relebohile_mofokeng__rsa,Relebohile Mofokeng,RSA,FWD,2500000,name_team_position,1.0,0.553839,0.2691
+thapelo_maseko__rsa,Thapelo Maseko,RSA,FWD,2000000,name_team_position,1.0,0.0,0.043
+thapelo_morena__rsa,Thapelo Morena,RSA,FWD,3000000,name_team_position,1.0,0.306686,0.5424
+brian_rodr_guez__uru,Brian Rodriguez,URU,FWD,3500000,name_team_position,1.0,0.487417,0.0981
+rodrigo_aguirre__uru,Rodrigo Aguirre,URU,FWD,3000000,name_team_position,1.0,2.11645,0.5997
+julio_enciso__par,Julio Enciso,PAR,FWD,3500000,name_team_position,1.0,2.551106,0.8565
+lyle_foster__rsa,Lyle Foster,RSA,FWD,3500000,name_team_position,1.0,2.930497,0.8284
+evidence_makgopa__rsa,Evidence Makgopa,RSA,FWD,2500000,name_team_position,1.0,0.295674,0.0875
+mohau_nkota__rsa,Mohau Nkota,RSA,FWD,2500000,name_team_position,1.0,0.247387,0.1189
+tshepang_moremi__rsa,Tshepang Moremi,RSA,FWD,2500000,name_team_position,1.0,1.329075,0.7896
+oswin_appollis__rsa,Oswin Appollis,RSA,FWD,3500000,name_team_position,1.0,1.449417,0.4007
+alex_arce__par,Alex Arce,PAR,FWD,2500000,name_team_position,1.0,0.271223,0.0719
+ronaldo_mart_nez__par,Ronaldo Martinez,PAR,FWD,2000000,name_team_position,1.0,0.710745,0.3644
+gabriel_avalos__par,Gabriel Avalos,PAR,FWD,2000000,name_team_position,1.0,0.274238,0.2932
+ngel_romero__par,Angel Romero,PAR,FWD,2000000,name_team_position,1.0,0.560294,0.2889
+antonio_sanabria__par,Antonio Sanabria,PAR,FWD,4000000,name_team_position,1.0,2.067488,0.5484
+iqraam_rayners__rsa,Iqraam Rayners,RSA,FWD,2500000,unmatched,0.0,0.0,0.25
+isidro_pitta__par,Isidro Pitta,PAR,FWD,2000000,unmatched,0.0,0.0,0.25
+chris_wood__nzl,Chris Wood,NZL,FWD,3500000,name_team_position,1.0,2.115811,0.8446
+ben_waine__nzl,Ben Waine,NZL,FWD,2500000,name_team_position,1.0,0.303855,0.0955
+logan_rogerson__nzl,Logan Rogerson,NZL,FWD,2500000,unmatched,0.45161290322580644,0.0,0.25
+kosta_barbarouses__nzl,Kosta Barbarouses,NZL,FWD,2500000,name_team_position,1.0,0.745682,0.3355
+jesse_randall__nzl,Jesse Randall,NZL,FWD,2000000,name_team_position,1.0,0.647415,0.4601
+santiago_gimenez__mex,Santiago Gimenez,MEX,FWD,3500000,unmatched,0.5714285714285714,0.0,0.25
+juli_n_qui_ones__mex,Julian Quinones,MEX,FWD,3000000,name_team_position,1.0,2.012509,0.5348
+alexis_vega__mex,Alexis Vega,MEX,FWD,2500000,name_team_position,1.0,2.323357,0.5496
+ra_l_jim_nez__mex,Raul Jimenez,MEX,FWD,4500000,name_team_position,1.0,4.258121,0.7885
+armando_gonzalez__mex,Armando Gonzalez,MEX,FWD,2500000,name_team_position,1.0,0.378512,0.3162
+guillermo_martinez__mex,Guillermo Martínez,MEX,FWD,2000000,name_team_position,1.0,0.184074,0.2456
+german_berterame__mex,German Berterame,MEX,FWD,3000000,name_team_position,1.0,0.250583,0.0704
+cho_gue_sung__kor,Gue-sung Cho,KOR,FWD,2500000,name_team_position,1.0,0.84227,0.352
+son_heung_min__kor,Heung-Min Son,KOR,FWD,6000000,name_team_position,1.0,2.543657,0.6523
+yuito_suzuki__jpn,Yuito Suzuki,JPN,FWD,2500000,name_team_position,1.0,0.669694,0.2926
+oh_hyeon_gyu__kor,Hyeon-Gyu Oh,KOR,FWD,3500000,name_team_position,1.0,0.927398,0.2693
+shuto_machino__jpn,Shuto Machino,JPN,FWD,2500000,unmatched,0.46153846153846156,0.0,0.25
+koki_ogawa__jpn,Koki Ogawa,JPN,FWD,4000000,name_team_position,1.0,0.369561,0.0812
+ayase_ueda__jpn,Ayase Ueda,JPN,FWD,5500000,name_team_position,1.0,1.960379,0.5698
+daizen_maeda__jpn,Daizen Maeda,JPN,FWD,2500000,name_team_position,1.0,0.461648,0.2701
+kento_shiogai__jpn,Kento Shiogai,JPN,FWD,2500000,name_team_position,1.0,0.107498,0.047
+keisuke_goto__jpn,Keisuke Goto,JPN,FWD,2500000,name_team_position,1.0,0.653365,0.2845
+prince_adu__gha,Prince Adu,GHA,FWD,2000000,name_team_position,1.0,0.470969,0.8702
+christopher_bonsu_baah__gha,Christopher Bonsu Baah,GHA,FWD,2500000,name_team_position,1.0,0.102719,0.0526
+brandon_thomas_asante__gha,Brandon Thomas-Asante,GHA,FWD,2500000,name_team_position,1.0,0.451264,0.2254
+i_aki_williams__gha,Iñaki Williams,GHA,FWD,3000000,name_team_position,1.0,0.975245,0.3364
+jordan_ayew__gha,Jordan Ayew,GHA,FWD,3000000,name_team_position,1.0,2.177386,0.8638
+daniel_nana_agyei__gha,Daniel Nana Agyei,GHA,FWD,2000000,name_team_position,1.0,0.074134,0.043
+antoine_semenyo__gha,Antoine Semenyo,GHA,FWD,4000000,name_team_position,1.0,1.121745,0.6286
+kamaldeen_sulemana__gha,Kamaldeen Sulemana,GHA,FWD,3000000,name_team_position,1.0,0.357848,0.3121
+abdul_fatawu_issahaku__gha,Issahaku Abdul Fatawu,GHA,FWD,2500000,name_team_position,1.0,0.779153,0.5339
+ernest_nuamah__gha,Ernest Nuamah,GHA,FWD,2500000,unmatched,0.0,0.0,0.25
+anthony_gordon__eng,Anthony Gordon,ENG,FWD,4000000,name_team_position,1.0,2.065341,0.55
+noni_madueke__eng,Noni Madueke,ENG,FWD,3500000,name_team_position,1.0,1.594603,0.38
+ollie_watkins__eng,Ollie Watkins,ENG,FWD,4000000,name_team_position,1.0,2.132627,0.4768
+jarrod_bowen__eng,Jarrod Bowen,ENG,FWD,3000000,name_team_position,1.0,0.0,0.2552
+bukayo_saka__eng,Bukayo Saka,ENG,FWD,6500000,name_team_position,1.0,2.826539,0.639
+ange_yoan_bonny__civ,Ange-Yoan Bonny,CIV,FWD,2500000,name_team_position,1.0,0.0,0.0456
+evann_guessand__civ,Evann Guessand,CIV,FWD,3000000,name_team_position,1.0,0.209463,0.3765
+nicolas_pepe__civ,Nicolas Pepe,CIV,FWD,2500000,name_team_position,1.0,0.135258,0.3299
+amad_diallo__civ,Amad Diallo,CIV,FWD,3500000,name_team_position,1.0,0.167792,0.1346
+simon_adingra__civ,Simon Adingra,CIV,FWD,2500000,name_team_position,1.0,0.194235,0.5614
+benie_traore__civ,Benie Traore,CIV,FWD,2500000,unmatched,0.5185185185185185,0.0,0.25
+marcus_rashford__eng,Marcus Rashford,ENG,FWD,5500000,name_team_position,1.0,2.439119,0.5179
+ivan_toney__eng,Ivan Toney,ENG,FWD,3500000,name_team_position,1.0,0.140398,0.043
+harry_kane__eng,Harry Kane,ENG,FWD,9500000,name_team_position,1.0,4.326504,0.97
+oumar_diakite__civ,Oumar Diakite,CIV,FWD,2500000,name_team_position,1.0,0.162184,0.3193
+elye_wahi__civ,Elye Wahi,CIV,FWD,2500000,name_team_position,1.0,0.260994,0.6294
+bazoumana_toure__civ,Bazoumana Toure,CIV,FWD,2000000,name_team_position,1.0,0.079502,0.2658
+yan_diomande__civ,Yan Diomande,CIV,FWD,3000000,name_team_position,1.0,1.757129,0.9123
+martial_godo__civ,Martial Godo,CIV,FWD,3000000,name_team_position,1.0,0.0,0.4638
+luiz_henrique__bra,Luiz Henrique,BRA,FWD,3000000,name_team_position,1.0,2.058103,0.5319
+rayan__bra,Rayan,BRA,FWD,3000000,name_team_position,1.0,0.444443,0.595
+igor_thiago__bra,Igor Thiago,BRA,FWD,4000000,name_team_position,1.0,0.604884,0.2955
+endrick__bra,Endrick,BRA,FWD,2500000,name_team_position,1.0,0.243014,0.0453
+joao_pedro__bra,João Pedro,BRA,FWD,4000000,name_team_position,1.0,0.0,0.2876
+raphinha__bra,Raphinha,BRA,FWD,6500000,name_team_position,1.0,2.036141,0.86
+neymar_jr__bra,Neymar Jr.,BRA,FWD,5500000,name_team_position,1.0,1.922565,0.8919
+gabriel_martinelli__bra,Gabriel Martinelli,BRA,FWD,4000000,name_team_position,1.0,1.375161,0.2923
+vinicius_j_nior__bra,Vinicius Junior,BRA,FWD,7500000,name_team_position,1.0,4.636261,0.8916
+matheus_cunha__bra,Matheus Cunha,BRA,FWD,4500000,name_team_position,1.0,2.73723,0.5422
+awer_mabil__aus,Awer Mabil,AUS,FWD,2000000,name_team_position,1.0,0.227412,0.2868
+nestory_irankunda__aus,Nestory Irankunda,AUS,FWD,3500000,name_team_position,1.0,0.739038,0.3241
+martin_boyle__aus,Martin Boyle,AUS,FWD,2500000,name_team_position,1.0,0.631478,0.3953
+mohamed_toure__aus,Mohamed Toure,AUS,FWD,3000000,name_team_position,1.0,0.315575,0.531
+tete_yengi__aus,Tete Yengi,AUS,FWD,2000000,unmatched,0.35294117647058826,0.0,0.25
+deni_juric__aus,Deni Juric,AUS,FWD,2500000,name_team_position,1.0,0.754874,0.8537
+nishan_velupillay__aus,Nishan Velupillay,AUS,FWD,2500000,name_team_position,1.0,0.118099,0.0461
+ante_suto__aus,Ante Suto,AUS,FWD,2000000,name_team_position,1.0,0.0,0.0464
+jos_manuel_l_pez__arg,Jose Manuel Lopez,ARG,FWD,2500000,name_team_position,1.0,0.248473,0.0465
+giuliano_simeone__arg,Giuliano Simeone,ARG,FWD,4000000,name_team_position,1.0,1.233691,0.3193
+juli_n_lvarez__arg,Julian Alvarez,ARG,FWD,6000000,name_team_position,1.0,3.18847,0.6306
+riyad_mahrez__alg,Riyad Mahrez,ALG,FWD,4000000,name_team_position,1.0,2.416263,0.6319
+nico_gonzalez__arg,Nico Gonzalez,ARG,FWD,4000000,name_team_position,1.0,0.443363,0.5303
+lautaro_mart_nez__arg,Lautaro Martinez,ARG,FWD,8000000,name_team_position,1.0,4.041981,0.6282
+lionel_messi__arg,Lionel Messi,ARG,FWD,8000000,name_team_position,1.0,4.659326,0.84
+amine_gouiri__alg,Amine Gouiri,ALG,FWD,3000000,name_team_position,1.0,1.119867,0.8042
+baghdad_bounedjah__alg,Baghdad Bounedjah,ALG,FWD,3000000,name_team_position,1.0,0.561877,0.1518
+anis_hadj_moussa__alg,Anis Hadj Moussa,ALG,FWD,2500000,name_team_position,1.0,0.123395,0.043
+ahmed_nadhir_benbouali__alg,Ahmed Nadhir Benbouali,ALG,FWD,2000000,name_team_position,1.0,0.191466,0.047
+adil_boulbina__alg,Adil Boulbina,ALG,FWD,2500000,name_team_position,1.0,0.284934,0.0917
+fares_ghedjemis__alg,Fares Ghedjemis,ALG,FWD,2000000,name_team_position,1.0,0.074727,0.047
+amin_chiakha__alg,Amin Chiakha,ALG,FWD,2500000,name_team_position,1.0,0.0,0.043
+mohamed_amoura__alg,Mohamed Amoura,ALG,FWD,3500000,name_team_position,1.0,2.006117,0.572
+anthony_elanga__swe,Anthony Elanga,SWE,FWD,3500000,name_team_position,1.0,1.916145,0.5704
+williot_swedberg__swe,Williot Swedberg,SWE,FWD,2500000,unmatched,0.4,0.0,0.25
+viktor_gyokeres__swe,Viktor Gyökeres,SWE,FWD,6000000,name_team_position,1.0,2.173334,0.8149
+benjamin_nygren__swe,Benjamin Nygren,SWE,FWD,3000000,name_team_position,1.0,1.958027,0.6072
+alexander_isak__swe,Alexander Isak,SWE,FWD,5000000,name_team_position,1.0,1.635513,0.3944
+gustaf_nilsson__swe,Gustaf Nilsson,SWE,FWD,2000000,name_team_position,1.0,0.550761,0.2655
+borja_iglesias__esp,Borja Iglesias,ESP,FWD,3500000,name_team_position,1.0,0.610787,0.2425
+mikel_oyarzabal__esp,Mikel Oyarzabal,ESP,FWD,7500000,name_team_position,1.0,4.112074,0.82
+ferr_n_torres__esp,Ferran Torres,ESP,FWD,5000000,name_team_position,1.0,2.769394,0.5696
+nico_williams__esp,Nico Williams,ESP,FWD,4500000,name_team_position,1.0,3.737129,0.8361
+samuel_aghehowa__esp,Samuel Aghehowa,ESP,FWD,3000000,name_team_position,1.0,0.0,0.2446
+lamine_yamal__esp,Lamine Yamal,ESP,FWD,9000000,name_team_position,1.0,4.264513,0.9012
+victor_munoz__esp,Victor Munoz,ESP,FWD,3000000,name_team_position,1.0,0.676553,0.0424
+noa_lang__ned,Noa Lang,NED,FWD,3000000,name_team_position,1.0,0.186339,0.0446
+cody_gakpo__ned,Cody Gakpo,NED,FWD,6500000,name_team_position,1.0,4.239381,0.9308
+donyell_malen__ned,Donyell Malen,NED,FWD,4500000,name_team_position,1.0,3.176441,0.7971
+brian_brobbey__ned,Brian Brobbey,NED,FWD,2500000,name_team_position,1.0,0.85788,0.268
+wout_weghorst__ned,Wout Weghorst,NED,FWD,3000000,name_team_position,1.0,0.340286,0.0498
+memphis_depay__ned,Memphis Depay,NED,FWD,4000000,name_team_position,1.0,0.512231,0.6669
+ousmane_demb_l__fra,Ousmane Dembele,FRA,FWD,5500000,name_team_position,1.0,2.049579,0.3627
+michael_olise__fra,Michael Olise,FRA,FWD,7000000,name_team_position,1.0,2.511286,0.6455
+randal_kolo_muani__fra,Randal Kolo Muani,FRA,FWD,4500000,name_team_position,1.0,0.0,0.3564
+d_sir_dou__fra,Desire Doue,FRA,FWD,4000000,name_team_position,1.0,1.227644,0.33
+maghnes_akliouche__fra,Maghnes Akliouche,FRA,FWD,3500000,name_team_position,1.0,0.611444,0.292
+hugo_ekitike__fra,Hugo Ekitike,FRA,FWD,6000000,name_team_position,1.0,0.0,0.5594
+rayan_cherki__fra,Rayan Cherki,FRA,FWD,4000000,name_team_position,1.0,1.959882,0.595
+jean_philippe_mateta__fra,Jean-Philippe Mateta,FRA,FWD,3500000,name_team_position,1.0,0.423045,0.3032
+kylian_mbapp__fra,Kylian Mbappe,FRA,FWD,10000000,name_team_position,1.0,3.829499,0.6759
+marcus_thuram__fra,Marcus Thuram,FRA,FWD,5000000,name_team_position,1.0,2.583747,0.5582
+maximilian_beier__ger,Maximilian Beier,GER,FWD,2500000,name_team_position,1.0,0.198743,0.043
+nick_woltemade__ger,Nick Woltemade,GER,FWD,6000000,name_team_position,1.0,2.042296,0.4242
+deniz_undav__ger,Deniz Undav,GER,FWD,3500000,name_team_position,1.0,1.048087,0.2623
+kai_havertz__ger,Kai Havertz,GER,FWD,5500000,name_team_position,1.0,2.803172,0.8813
+andrej_kramari__cro,Andrej Kramaric,CRO,FWD,5500000,name_team_position,1.0,2.097346,0.4235
+serge_gnabry__ger,Serge Gnabry,GER,FWD,6000000,name_team_position,1.0,0.0,0.8609
+leroy_san__ger,Leroy Sane,GER,FWD,5500000,name_team_position,1.0,1.405609,0.3805
+petar_musa__cro,Petar Musa,CRO,FWD,2500000,name_team_position,1.0,0.268867,0.2925
+ante_budimir__cro,Ante Budimir,CRO,FWD,3500000,name_team_position,1.0,1.214601,0.3246
+ivan_peri_i__cro,Ivan Perisic,CRO,FWD,4500000,name_team_position,1.0,2.148037,0.9095
+igor_matanovic__cro,Igor Matanovic,CRO,FWD,2500000,name_team_position,1.0,1.03959,0.3436
+marco_pasalic__cro,Marco Pasalic,CRO,FWD,3000000,name_team_position,1.0,0.076396,0.2677
+raul_florucz__aut,Raul Florucz,AUT,FWD,2000000,name_team_position,1.0,0.0,0.0476
+marco_grull__aut,Marco Grüll,AUT,FWD,2000000,name_team_position,1.0,0.015542,0.0436
+sasa_kalajdzic__aut,Sasa Kalajdzic,AUT,FWD,2500000,unmatched,0.4,0.0,0.25
+michael_gregoritsch__aut,Michael Gregoritsch,AUT,FWD,3500000,name_team_position,1.0,2.471807,0.6046
+marko_arnautovi__aut,Marko Arnautovic,AUT,FWD,4500000,name_team_position,1.0,3.704822,0.82
+yunus_akgun__tur,Yunus Akgün,TUR,FWD,2500000,name_team_position,1.0,0.34442,0.3302
+baris_alper_yilmaz__tur,Baris Alper Yilmaz,TUR,FWD,3000000,name_team_position,1.0,0.54202,0.3583
+can_uzun__tur,Can Uzun,TUR,FWD,3500000,unmatched,0.35294117647058826,0.0,0.25
+deniz_g_l__tur,Deniz Gül,TUR,FWD,2500000,name_team_position,1.0,1.55625,0.5224
+rafael_le_o__por,Rafael Leão,POR,FWD,5500000,name_team_position,1.0,3.064296,0.6177
+gon_alo_ramos__por,Goncalo Ramos,POR,FWD,5000000,name_team_position,1.0,1.655714,0.35
+francisco_trinc_o__por,Francisco Trincao,POR,FWD,4000000,name_team_position,1.0,1.041351,0.2321
+francisco_concei_o__por,Francisco Conceicao,POR,FWD,5500000,name_team_position,1.0,2.417808,0.5406
+jo_o_f_lix__por,João Felix,POR,FWD,4500000,name_team_position,1.0,1.524371,0.3304
+pedro_neto__por,Pedro Neto,POR,FWD,5000000,name_team_position,1.0,1.828794,0.3638
+goncalo_guedes__por,Goncalo Guedes,POR,FWD,2500000,name_team_position,1.0,0.265114,0.0611
+cristiano_ronaldo__por,Cristiano Ronaldo,POR,FWD,7000000,name_team_position,1.0,4.653091,0.9185
+tomas_chory__cze,Tomas Chory,CZE,FWD,3000000,name_team_position,1.0,0.231966,0.3391
+patrik_schick__cze,Patrik Schick,CZE,FWD,4500000,name_team_position,1.0,1.620827,0.8552
+jan_kliment__cze,Jan Kliment,CZE,FWD,2000000,name_team_position,1.0,0.113659,0.043
+mojmir_chytil__cze,Mojmir Chytil,CZE,FWD,2500000,name_team_position,1.0,0.245061,0.2882
+jan_kuchta__cze,Jan Kuchta,CZE,FWD,2500000,unmatched,0.0,0.0,0.25
+adam_hlozek__cze,Adam Hlozek,CZE,FWD,2500000,unmatched,0.0,0.0,0.25
+joel_monteiro__sui,Joel Monteiro,SUI,FWD,2500000,unmatched,0.48,0.0,0.25
+dan_ndoye__sui,Dan Ndoye,SUI,FWD,4000000,name_team_position,1.0,3.163126,0.906
+mohamed_zeki_amdouni__sui,Mohamed Zeki Amdouni,SUI,FWD,3500000,name_team_position,1.0,0.698668,0.3483
+christian_fassnacht__sui,Christian Fassnacht,SUI,FWD,3000000,name_team_position,1.0,0.145065,0.043
+ruben_vargas__sui,Ruben Vargas,SUI,FWD,3500000,name_team_position,1.0,2.961899,0.9149
+andi_zeqiri__sui,Andi Zeqiri,SUI,FWD,2000000,unmatched,0.2857142857142857,0.0,0.25
+cedric_itten__sui,Cedric Itten,SUI,FWD,2000000,name_team_position,1.0,0.164542,0.043
+breel_embolo__sui,Breel Embolo,SUI,FWD,5000000,name_team_position,1.0,3.838515,0.9109

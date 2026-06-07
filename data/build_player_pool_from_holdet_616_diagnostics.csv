@@ -1,0 +1,1520 @@
+﻿holdet_player_id,holdet_player_name,holdet_team_name,team_id,position,price,copied_from_old_player_pool,old_player_id,old_player_name,old_team_id,old_team_name,old_match_method,old_match_score
+49639,Nico Elvedi,Schweiz,SUI,DEF,3000000,True,nico_elvedi__sui,Nico Elvedi,SUI,Schweiz,exact_name_team,1.0
+49851,Silvan Widmer,Schweiz,SUI,DEF,3000000,True,silvan_widmer__sui,Silvan Widmer,SUI,Schweiz,exact_name_team,1.0
+49768,Ricardo Rodriguez,Schweiz,SUI,DEF,3000000,True,ricardo_rodr_guez__sui,Ricardo Rodriguez,SUI,Schweiz,exact_name_team,1.0
+49071,Eray Cömert,Schweiz,SUI,DEF,2000000,True,eray_c_mert__sui,Eray Cömert,SUI,Schweiz,exact_name_team,1.0
+49486,Manuel Akanji,Schweiz,SUI,DEF,3500000,True,manuel_akanji__sui,Manuel Akanji,SUI,Schweiz,exact_name_team,1.0
+48890,Becir Omeragic,Schweiz,SUI,DEF,2000000,False,,,,,,0.5217391304347826
+48942,Cedric Zesiger,Schweiz,SUI,DEF,2000000,False,,,,,,0.6153846153846154
+48868,Aurele Amenda,Schweiz,SUI,DEF,2500000,True,aurele_amenda__sui,Aurele Amenda,SUI,Schweiz,exact_name_team,1.0
+49450,Luca Jaquez,Schweiz,SUI,DEF,2000000,True,luca_jaquez__sui,Luca Jaquez,SUI,Schweiz,exact_name_team,1.0
+49220,Isaac Schmidt,Schweiz,SUI,DEF,2000000,False,,,,,,0.4666666666666667
+49569,Miro Muheim,Schweiz,SUI,DEF,2500000,True,miro_muheim__sui,Miro Muheim,SUI,Schweiz,exact_name_team,1.0
+48739,Adrian Bajrami,Schweiz,SUI,DEF,2000000,False,,,,,,0.5185185185185185
+49453,Lucas Blondel,Schweiz,SUI,DEF,2000000,False,,,,,,0.46153846153846156
+49780,Robin Hranac,Tjekkiet,CZE,DEF,2500000,True,robin_hranac__cze,Robin Hranac,CZE,Tjekkiet,exact_name_team,1.0
+49419,Ladislav Krejci,Tjekkiet,CZE,DEF,3000000,True,ladislav_krejci__cze,Ladislav Krejci,CZE,Tjekkiet,exact_name_team,1.0
+49863,Stepan Chaloupek,Tjekkiet,CZE,DEF,2000000,True,stepan_chaloupek__cze,Stepan Chaloupek,CZE,Tjekkiet,exact_name_team,1.0
+49517,Martin Vitik,Tjekkiet,CZE,DEF,2500000,True,martin_vitik__cze,Martin Vitik,CZE,Tjekkiet,exact_name_team,1.0
+48993,David Jurasek,Tjekkiet,CZE,DEF,2000000,True,david_jurasek__cze,David Jurasek,CZE,Tjekkiet,exact_name_team,1.0
+50292,David Zima,Tjekkiet,CZE,DEF,2000000,False,,,,,,0.56
+49256,Jaroslav Zeleny,Tjekkiet,CZE,DEF,2500000,True,jaroslav_zeleny__cze,Jaroslav Zeleny,CZE,Tjekkiet,exact_name_team,1.0
+49902,Tomas Holes,Tjekkiet,CZE,DEF,2000000,True,tomas_holes__cze,Tomas Holes,CZE,Tjekkiet,exact_name_team,1.0
+49933,Vladimir Coufal,Tjekkiet,CZE,DEF,3000000,True,vladimir_coufal__cze,Vladimir Coufal,CZE,Tjekkiet,exact_name_team,1.0
+49286,João Cancelo,Portugal,POR,DEF,5000000,True,jo_o_cancelo__por,João Cancelo,POR,Portugal,exact_name_team,1.0
+49635,Nelson Semedo,Portugal,POR,DEF,4000000,True,n_lson_semedo__por,Nelson Semedo,POR,Portugal,exact_name_team,1.0
+49025,Diogo Dalot,Portugal,POR,DEF,4000000,True,diogo_dalot__por,Diogo Dalot,POR,Portugal,exact_name_team,1.0
+49673,Nuno Tavares,Portugal,POR,DEF,3500000,False,,,,,,0.6086956521739131
+49798,Ruben Dias,Portugal,POR,DEF,4000000,True,r_ben_dias__por,Ruben Dias,POR,Portugal,exact_name_team,1.0
+49672,Nuno Mendes,Portugal,POR,DEF,4500000,True,nuno_mendes__por,Nuno Mendes,POR,Portugal,exact_name_team,1.0
+49142,Goncalo Inacio,Portugal,POR,DEF,4000000,True,gon_alo_in_cio__por,Goncalo Inacio,POR,Portugal,exact_name_team,1.0
+49900,Tomas Araujo,Portugal,POR,DEF,3500000,True,tom_s_ara_jo__por,Tomas Araujo,POR,Portugal,exact_name_team,1.0
+48855,Antonio Silva,Portugal,POR,DEF,3500000,False,,,,,,0.6363636363636364
+49764,Renato Veiga,Portugal,POR,DEF,3500000,True,renato_veiga__por,Renato Veiga,POR,Portugal,exact_name_team,1.0
+49619,Mustafa Eskihellac,Tyrkiet,TUR,DEF,2000000,True,mustafa_eskihella__tur,Mustafa Eskihellac,TUR,Tyrkiet,exact_name_team,1.0
+49551,Mert Müldür,Tyrkiet,TUR,DEF,3000000,True,mert_m_ld_r__tur,Mert Müldür,TUR,Tyrkiet,exact_name_team,1.0
+49101,Ferdi Kadioglu,Tyrkiet,TUR,DEF,3500000,True,ferdi_kadioglu__tur,Ferdi Kadioglu,TUR,Tyrkiet,exact_name_team,1.0
+49818,Samet Akaydin,Tyrkiet,TUR,DEF,2500000,True,samet_akaydin__tur,Samet Akaydin,TUR,Tyrkiet,exact_name_team,1.0
+48725,Abdulkerim Bardakci,Tyrkiet,TUR,DEF,3000000,True,abdulkerim_bardakci__tur,Abdulkerim Bardakci,TUR,Tyrkiet,exact_name_team,1.0
+49084,Evren Eren Elmali,Tyrkiet,TUR,DEF,2000000,True,evren_eren_elmali__tur,Evren Eren Elmali,TUR,Tyrkiet,exact_name_team,1.0
+49991,Zeki Celik,Tyrkiet,TUR,DEF,2500000,True,zeki_elik__tur,Zeki Celik,TUR,Tyrkiet,exact_name_team,1.0
+49549,Merih Demiral,Tyrkiet,TUR,DEF,3000000,True,merih_demiral__tur,Merih Demiral,TUR,Tyrkiet,exact_name_team,1.0
+49701,Ozan Kabak,Tyrkiet,TUR,DEF,2500000,True,ozan_kabak__tur,Ozan Kabak,TUR,Tyrkiet,exact_name_team,1.0
+50390,Caglar Soyuncu,Tyrkiet,TUR,DEF,2500000,False,,,,,,0.56
+48991,David Alaba,Østrig,AUT,DEF,3000000,True,david_alaba__aut,David Alaba,AUT,Østrig,exact_name_team,1.0
+49493,Marco Friedl,Østrig,AUT,DEF,2000000,True,marco_friedl__aut,Marco Friedl,AUT,Østrig,exact_name_team,1.0
+49735,Philipp Lienhart,Østrig,AUT,DEF,3000000,True,philipp_lienhart__aut,Philipp Lienhart,AUT,Østrig,exact_name_team,1.0
+49389,Kevin Danso,Østrig,AUT,DEF,2500000,True,kevin_danso__aut,Kevin Danso,AUT,Østrig,exact_name_team,1.0
+49862,Stefan Posch,Østrig,AUT,DEF,3000000,True,stefan_posch__aut,Stefan Posch,AUT,Østrig,exact_name_team,1.0
+49736,Phillipp Mwene,Østrig,AUT,DEF,2500000,True,phillipp_mwene__aut,Phillipp Mwene,AUT,Østrig,exact_name_team,1.0
+49542,Maximilian Wöber,Østrig,AUT,DEF,2500000,True,maximilian_w_ber__aut,Maximilian Wöber,AUT,Østrig,exact_name_team,1.0
+49434,Leopold Querfeld,Østrig,AUT,DEF,2000000,True,leopold_querfeld__aut,Leopold Querfeld,AUT,Østrig,exact_name_team,1.0
+50312,David Affengruber,Østrig,AUT,DEF,2500000,False,,,,,,0.45161290322580644
+48784,Alexander Prass,Østrig,AUT,DEF,2500000,True,alexander_prass__aut,Alexander Prass,AUT,Østrig,exact_name_team,1.0
+50314,Michael Svoboda,Østrig,AUT,DEF,2500000,False,,,,,,0.5294117647058824
+49338,Josip Sutalo,Kroatien,CRO,DEF,3000000,True,josip_utalo__cro,Josip Sutalo,CRO,Kroatien,exact_name_team,1.0
+49412,Kristijan Jakic,Kroatien,CRO,DEF,3500000,True,kristijan_jaki__cro,Kristijan Jakic,CRO,Kroatien,exact_name_team,1.0
+49512,Martin Erlic,Kroatien,CRO,DEF,3000000,True,martin_erlic__cro,Martin Erlic,CRO,Kroatien,exact_name_team,1.0
+49337,Josip Stanisic,Kroatien,CRO,DEF,3500000,True,josip_stani_i__cro,Josip Stanisic,CRO,Kroatien,exact_name_team,1.0
+49467,Luka Vuskovic,Kroatien,CRO,DEF,2000000,True,luka_vuskovic__cro,Luka Vuskovic,CRO,Kroatien,exact_name_team,1.0
+49235,Ivan Smolcic,Kroatien,CRO,DEF,2000000,False,,,,,,0.6666666666666666
+49339,Josko Gvardiol,Kroatien,CRO,DEF,3500000,True,jo_ko_gvardiol__cro,Josko Gvardiol,CRO,Kroatien,exact_name_team,1.0
+49500,Marin Pongracic,Kroatien,CRO,DEF,2500000,True,marin_pongra_i__cro,Marin Pongracic,CRO,Kroatien,exact_name_team,1.0
+49036,Duje Caleta-Car,Kroatien,CRO,DEF,3000000,True,duje_aleta_car__cro,Duje Caleta-Car,CRO,Kroatien,exact_name_team,1.0
+48853,Antonio Rüdiger,Tyskland,GER,DEF,4500000,True,antonio_r_diger__ger,Antonio Rüdiger,GER,Tyskland,exact_name_team,1.0
+49313,Jonathan Tah,Tyskland,GER,DEF,4500000,True,jonathan_tah__ger,Jonathan Tah,GER,Tyskland,exact_name_team,1.0
+49541,Maximilian Mittelstädt,Tyskland,GER,DEF,3500000,False,,,,,,0.6842105263157895
+49937,Waldemar Anton,Tyskland,GER,DEF,3500000,True,waldemar_anton__ger,Waldemar Anton,GER,Tyskland,exact_name_team,1.0
+49781,Robin Koch,Tyskland,GER,DEF,3500000,True,robin_koch__ger,Robin Koch,GER,Tyskland,exact_name_team,1.0
+49643,Nico Schlotterbeck,Tyskland,GER,DEF,4000000,True,nico_schlotterbeck__ger,Nico Schlotterbeck,GER,Tyskland,exact_name_team,1.0
+49480,Malick Thiaw,Tyskland,GER,DEF,3000000,True,malick_thiaw__ger,Malick Thiaw,GER,Tyskland,exact_name_team,1.0
+48996,David Raum,Tyskland,GER,DEF,4500000,True,david_raum__ger,David Raum,GER,Tyskland,exact_name_team,1.0
+50084,Nathaniel Brown,Tyskland,GER,DEF,2500000,True,nathaniel_brown__ger,Nathaniel Brown,GER,Tyskland,exact_name_team,1.0
+49482,Malo Gusto,Frankrig,FRA,DEF,4000000,True,malo_gusto__fra,Malo Gusto,FRA,Frankrig,exact_name_team,1.0
+49738,Pierre Kalulu,Frankrig,FRA,DEF,3000000,True,pierre_kalulu__fra,Pierre Kalulu,FRA,Frankrig,exact_name_team,1.0
+50026,Maxence Lacroix,Frankrig,FRA,DEF,3000000,True,maxence_lacroix__fra,Maxence Lacroix,FRA,Frankrig,exact_name_team,1.0
+50025,Jules Kounde,Frankrig,FRA,DEF,3500000,True,jules_kounde__fra,Jules Kounde,FRA,Frankrig,exact_name_team,1.0
+49945,William Saliba,Frankrig,FRA,DEF,4500000,True,william_saliba__fra,William Saliba,FRA,Frankrig,exact_name_team,1.0
+49000,Dayot Upamecano,Frankrig,FRA,DEF,4000000,True,dayot_upamecano__fra,Dayot Upamecano,FRA,Frankrig,exact_name_team,1.0
+49209,Ibrahima Konate,Frankrig,FRA,DEF,3000000,True,ibrahima_konat__fra,Ibrahima Konate,FRA,Frankrig,exact_name_team,1.0
+49889,Theo Hernandez,Frankrig,FRA,DEF,4500000,True,theo_hern_ndez__fra,Theo Hernandez,FRA,Frankrig,exact_name_team,1.0
+49456,Lucas Hernandez,Frankrig,FRA,DEF,3000000,True,lucas_hern_ndez__fra,Lucas Hernandez,FRA,Frankrig,exact_name_team,1.0
+49455,Lucas Digne,Frankrig,FRA,DEF,3500000,True,lucas_digne__fra,Lucas Digne,FRA,Frankrig,exact_name_team,1.0
+49861,Stefan de Vrij,Holland,NED,DEF,3000000,True,stefan_de_vrij__ned,Stefan de Vrij,NED,Holland,exact_name_team,1.0
+49626,Nathan Ake,Holland,NED,DEF,3500000,True,nathan_ak__ned,Nathan Ake,NED,Holland,exact_name_team,1.0
+49930,Virgil van Dijk,Holland,NED,DEF,5000000,True,virgil_van_dijk__ned,Virgil van Dijk,NED,Holland,exact_name_team,1.0
+49012,Denzel Dumfries,Holland,NED,DEF,5000000,True,denzel_dumfries__ned,Denzel Dumfries,NED,Holland,exact_name_team,1.0
+49363,Jurrien Timber,Holland,NED,DEF,2500000,True,jurri_n_timber__ned,Jurrien Timber,NED,Holland,exact_name_team,1.0
+49268,Jeremie Frimpong,Holland,NED,DEF,4000000,True,jeremie_frimpong__ned,Jeremie Frimpong,NED,Holland,exact_name_team,1.0
+49325,Jorrel Hato,Holland,NED,DEF,2500000,True,jorrel_hato__ned,Jorrel Hato,NED,Holland,exact_name_team,1.0
+49254,Jan Paul van Hecke,Holland,NED,DEF,3000000,True,jan_paul_van_hecke__ned,Jan Paul van Hecke,NED,Holland,exact_name_team,1.0
+49560,Micky van de Ven,Holland,NED,DEF,4000000,True,micky_van_de_ven__ned,Micky van de Ven,NED,Holland,exact_name_team,1.0
+50110,Marc Pubill,Spanien,ESP,DEF,3000000,True,marc_pubill__esp,Marc Pubill,ESP,Spanien,exact_name_team,1.0
+49001,Dean Donny Huijsen,Spanien,ESP,DEF,4000000,True,dean_donny_huijsen__esp,Dean Donny Huijsen,ESP,Spanien,exact_name_team,1.0
+49720,Pau Cubarsi,Spanien,ESP,DEF,4000000,True,pau_cubars__esp,Pau Cubarsi,ESP,Spanien,exact_name_team,1.0
+50111,Eric Garcia,Spanien,ESP,DEF,3000000,True,eric_garcia__esp,Eric Garcia,ESP,Spanien,exact_name_team,1.0
+49782,Robin Le Normand,Spanien,ESP,DEF,4500000,True,robin_le_normand__esp,Robin Le Normand,ESP,Spanien,exact_name_team,1.0
+49729,Pedro Porro,Spanien,ESP,DEF,4500000,True,pedro_porro__esp,Pedro Porro,ESP,Spanien,exact_name_team,1.0
+49488,Marc Cucurella,Spanien,ESP,DEF,4500000,True,marc_cucurella__esp,Marc Cucurella,ESP,Spanien,exact_name_team,1.0
+48985,Daniel Vivian,Spanien,ESP,DEF,3500000,True,daniel_vivian__esp,Daniel Vivian,ESP,Spanien,exact_name_team,1.0
+48767,Alejandro 'Alex' Grimaldo,Spanien,ESP,DEF,4000000,True,alejandro_alex_grimaldo__esp,Alejandro 'Alex' Grimaldo,ESP,Spanien,exact_name_team,1.0
+48877,Aymeric Laporte,Spanien,ESP,DEF,4500000,True,aymeric_laporte__esp,Aymeric Laporte,ESP,Spanien,exact_name_team,1.0
+49924,Victor Lindelöf,Sverige,SWE,DEF,3000000,True,victor_lindel_f__swe,Victor Lindelöf,SWE,Sverige,exact_name_team,1.0
+49073,Eric Smith,Sverige,SWE,DEF,2000000,True,eric_smith__swe,Eric Smith,SWE,Sverige,exact_name_team,1.0
+48932,Carl Starfelt,Sverige,SWE,DEF,2500000,True,carl_starfelt__swe,Carl Starfelt,SWE,Sverige,exact_name_team,1.0
+49125,Gabriel Gudmundsson,Sverige,SWE,DEF,3000000,True,gabriel_gudmundsson__swe,Gabriel Gudmundsson,SWE,Sverige,exact_name_team,1.0
+49998,Emil Holm,Sverige,SWE,DEF,2500000,True,emil_holm__swe,Emil Holm,SWE,Sverige,exact_name_team,1.0
+49999,Hjalmar Ekdal,Sverige,SWE,DEF,2000000,True,hjalmar_ekdal__swe,Hjalmar Ekdal,SWE,Sverige,exact_name_team,1.0
+48984,Daniel Svensson,Sverige,SWE,DEF,3000000,True,daniel_svensson__swe,Daniel Svensson,SWE,Sverige,exact_name_team,1.0
+49221,Isak Hien,Sverige,SWE,DEF,2500000,True,isak_hien__swe,Isak Hien,SWE,Sverige,exact_name_team,1.0
+49923,Victor Eriksson,Sverige,SWE,DEF,2000000,False,,,,,,0.6451612903225806
+49157,Gustaf Lagerbielke,Sverige,SWE,DEF,3000000,True,gustaf_lagerbielke__swe,Gustaf Lagerbielke,SWE,Sverige,exact_name_team,1.0
+49060,Elliot Stroud,Sverige,SWE,DEF,2000000,True,elliot_stroud__swe,Elliot Stroud,SWE,Sverige,exact_name_team,1.0
+48733,Achref Abada,Algeriet,ALG,DEF,2000000,True,achref_abada__alg,Achref Abada,ALG,Algeriet,exact_name_team,1.0
+49857,Sohaib Nair,Algeriet,ALG,DEF,2000000,True,sohaib_nair__alg,Sohaib Nair,ALG,Algeriet,exact_name_team,1.0
+50319,Mohamed Amine Tougai,Algeriet,ALG,DEF,2000000,False,,,,,,0.7741935483870968
+49972,Youcef Atal,Algeriet,ALG,DEF,2500000,True,youcef_atal__alg,Youcef Atal,ALG,Algeriet,exact_name_team,1.0
+50317,Jaouen Hadjam,Algeriet,ALG,DEF,2500000,False,,,,,,0.5517241379310345
+50322,Samir Chergui,Algeriet,ALG,DEF,2000000,False,,,,,,0.6086956521739131
+49994,Zineddine Belaid,Algeriet,ALG,DEF,2500000,True,zineddine_belaid__alg,Zineddine Belaid,ALG,Algeriet,exact_name_team,1.0
+49544,Mehdi Dorval,Algeriet,ALG,DEF,2000000,True,mehdi_dorval__alg,Mehdi Dorval,ALG,Algeriet,exact_name_team,1.0
+49757,Rayan Ait-Nouri,Algeriet,ALG,DEF,3000000,True,rayan_a_t_nouri__alg,Rayan Ait-Nouri,ALG,Algeriet,exact_name_team,1.0
+49749,Ramy Bensebaini,Algeriet,ALG,DEF,3000000,True,ramy_bensebaini__alg,Ramy Bensebaini,ALG,Algeriet,exact_name_team,1.0
+49743,Rafik Belghali,Algeriet,ALG,DEF,2500000,True,rafik_belghali__alg,Rafik Belghali,ALG,Algeriet,exact_name_team,1.0
+48755,Aissa Mandi,Algeriet,ALG,DEF,3000000,True,a_ssa_mandi__alg,Aissa Mandi,ALG,Algeriet,exact_name_team,1.0
+49647,Nicolas Otamendi,Argentina,ARG,DEF,4500000,True,nicol_s_otamendi__arg,Nicolas Otamendi,ARG,Argentina,exact_name_team,1.0
+49651,Nicolas Tagliafico,Argentina,ARG,DEF,4000000,True,nicol_s_tagliafico__arg,Nicolas Tagliafico,ARG,Argentina,exact_name_team,1.0
+49433,Leonardo Balerdi,Argentina,ARG,DEF,4000000,True,leonardo_balerdi__arg,Leonardo Balerdi,ARG,Argentina,exact_name_team,1.0
+50275,Lisandro Martinez,Argentina,ARG,DEF,3000000,False,,,,,,0.8235294117647058
+48969,Cristian Romero,Argentina,ARG,DEF,4000000,True,cristian_romero__arg,Cristian Romero,ARG,Argentina,exact_name_team,1.0
+49356,Julio Soler,Argentina,ARG,DEF,3000000,True,julio_soler__arg,Julio Soler,ARG,Argentina,exact_name_team,1.0
+50273,Facundo Medina,Argentina,ARG,DEF,2500000,False,,,,,,0.5185185185185185
+49457,Lucas Herrington,Australien,AUS,DEF,2000000,True,lucas_herrington__aus,Lucas Herrington,AUS,Australien,exact_name_team,1.0
+49145,Gonzalo Montiel,Argentina,ARG,DEF,3500000,True,gonzalo_montiel__arg,Gonzalo Montiel,ARG,Argentina,exact_name_team,1.0
+49621,Nahuel Molina,Argentina,ARG,DEF,4000000,True,nahuel_molina__arg,Nahuel Molina,ARG,Argentina,exact_name_team,1.0
+49241,Jacob Italiano,Australien,AUS,DEF,2000000,True,jacob_italiano__aus,Jacob Italiano,AUS,Australien,exact_name_team,1.0
+49258,Jason Geria,Australien,AUS,DEF,2500000,True,jason_geria__aus,Jason Geria,AUS,Australien,exact_name_team,1.0
+49368,Kai Trewin,Australien,AUS,DEF,2000000,True,kai_trewin__aus,Kai Trewin,AUS,Australien,exact_name_team,1.0
+49417,Kye Rowles,Australien,AUS,DEF,2500000,True,kye_rowles__aus,Kye Rowles,AUS,Australien,exact_name_team,1.0
+48929,Cameron Burgess,Australien,AUS,DEF,3000000,True,cameron_burgess__aus,Cameron Burgess,AUS,Australien,exact_name_team,1.0
+48770,Alessandro Circati,Australien,AUS,DEF,2500000,True,alessandro_circati__aus,Alessandro Circati,AUS,Australien,exact_name_team,1.0
+49315,Jordan Bos,Australien,AUS,DEF,3000000,True,jordan_bos__aus,Jordan Bos,AUS,Australien,exact_name_team,1.0
+48927,Callum Elder,Australien,AUS,DEF,2000000,True,callum_elder__aus,Callum Elder,AUS,Australien,exact_name_team,1.0
+50303,Harry Souttar,Australien,AUS,DEF,2500000,False,,,,,,0.46153846153846156
+48881,Aziz Behich,Australien,AUS,DEF,2500000,True,aziz_behich__aus,Aziz Behich,AUS,Australien,exact_name_team,1.0
+49567,Milos Degenek,Australien,AUS,DEF,2500000,True,milo_degenek__aus,Milos Degenek,AUS,Australien,exact_name_team,1.0
+49034,Douglas Santos,Brasilien,BRA,DEF,2500000,True,douglas_santos__bra,Douglas Santos,BRA,Brasilien,exact_name_team,1.0
+49507,Marquinhos,Brasilien,BRA,DEF,5000000,True,marquinhos__bra,Marquinhos,BRA,Brasilien,exact_name_team,1.0
+48778,Alex Sandro,Brasilien,BRA,DEF,2500000,True,alex_sandro__bra,Alex Sandro,BRA,Brasilien,exact_name_team,1.0
+48987,Danilo Luiz da Silva,Brasilien,BRA,DEF,2500000,True,danilo_luiz_da_silva__bra,Danilo Luiz da Silva,BRA,Brasilien,exact_name_team,1.0
+49041,Eder Militão,Brasilien,BRA,DEF,3000000,True,der_milit_o__bra,Eder Militão,BRA,Brasilien,exact_name_team,1.0
+49126,Gabriel Magalhaes,Brasilien,BRA,DEF,4500000,True,gabriel_magalh_es__bra,Gabriel Magalhaes,BRA,Brasilien,exact_name_team,1.0
+49789,Roger Ibanez,Brasilien,BRA,DEF,2500000,True,roger_ibanez__bra,Roger Ibanez,BRA,Brasilien,exact_name_team,1.0
+49941,Wesley Franca,Brasilien,BRA,DEF,3500000,True,wesley_franca__bra,Wesley Franca,BRA,Brasilien,exact_name_team,1.0
+48914,Bremer,Brasilien,BRA,DEF,3000000,True,bremer__bra,Bremer,BRA,Brasilien,exact_name_team,1.0
+49431,Leo Pereira,Brasilien,BRA,DEF,3000000,True,leo_pereira__bra,Leo Pereira,BRA,Brasilien,exact_name_team,1.0
+48963,Clement Akpa,Elfenbenskysten,CIV,DEF,2000000,True,clement_akpa__civ,Clement Akpa,CIV,Elfenbenskysten,exact_name_team,1.0
+50360,Christopher Operi,Elfenbenskysten,CIV,DEF,2000000,False,,,,,,0.5882352941176471
+49136,Ghislain Konan,Elfenbenskysten,CIV,DEF,2500000,True,ghislain_konan__civ,Ghislain Konan,CIV,Elfenbenskysten,exact_name_team,1.0
+49153,Guela Doue,Elfenbenskysten,CIV,DEF,3000000,True,guela_doue__civ,Guela Doue,CIV,Elfenbenskysten,exact_name_team,1.0
+49943,Wilfried Stephane Singo,Elfenbenskysten,CIV,DEF,2500000,True,wilfried_stephane_singo__civ,Wilfried Stephane Singo,CIV,Elfenbenskysten,exact_name_team,1.0
+49698,Ousmane Diomande,Elfenbenskysten,CIV,DEF,2500000,True,ousmane_diomande__civ,Ousmane Diomande,CIV,Elfenbenskysten,exact_name_team,1.0
+49067,Emmanuel Agbadou,Elfenbenskysten,CIV,DEF,2500000,True,emmanuel_agbadou__civ,Emmanuel Agbadou,CIV,Elfenbenskysten,exact_name_team,1.0
+49677,Odilon Kossounou,Elfenbenskysten,CIV,DEF,2500000,True,odilon_kossounou__civ,Odilon Kossounou,CIV,Elfenbenskysten,exact_name_team,1.0
+49080,Evan N'Dicka,Elfenbenskysten,CIV,DEF,2500000,True,evan_n_dicka__civ,Evan N'Dicka,CIV,Elfenbenskysten,exact_name_team,1.0
+49909,Trent Alexander-Arnold,England,ENG,DEF,3500000,True,trent_alexander_arnold__eng,Trent Alexander-Arnold,ENG,England,exact_name_team,1.0
+49307,John Stones,England,ENG,DEF,4000000,True,john_stones__eng,John Stones,ENG,England,exact_name_team,1.0
+48977,Dan Burn,England,ENG,DEF,3500000,True,dan_burn__eng,Dan Burn,ENG,England,exact_name_team,1.0
+49173,Harry Maguire,England,ENG,DEF,3000000,False,,,,,,0.6956521739130435
+49489,Marc Guehi,England,ENG,DEF,4500000,True,marc_gu_hi__eng,Marc Guehi,ENG,England,exact_name_team,1.0
+49761,Reece James,England,ENG,DEF,3500000,True,reece_james__eng,Reece James,ENG,England,exact_name_team,1.0
+49086,Ezri Konsa,England,ENG,DEF,4500000,True,ezri_konsa__eng,Ezri Konsa,ENG,England,exact_name_team,1.0
+49641,Nico O'Reilly,England,ENG,DEF,4000000,True,nico_o_reilly__eng,Nico O'Reilly,ENG,England,exact_name_team,1.0
+50074,Djed Spence,England,ENG,DEF,2500000,True,djed_spence__eng,Djed Spence,ENG,England,exact_name_team,1.0
+50077,Jarell Quansah,England,ENG,DEF,2500000,True,jarell_quansah__eng,Jarell Quansah,ENG,England,exact_name_team,1.0
+49438,Lewis Hall,England,ENG,DEF,3500000,True,lewis_hall__eng,Lewis Hall,ENG,England,exact_name_team,1.0
+49922,Valentino Livramento,England,ENG,DEF,3000000,True,valentino_livramento__eng,Valentino Livramento,ENG,England,exact_name_team,1.0
+49273,Jerome Opoku,Ghana,GHA,DEF,2500000,True,jerome_opoku__gha,Jerome Opoku,GHA,Ghana,exact_name_team,1.0
+49711,Patric Pfeiffer,Ghana,GHA,DEF,2000000,True,patric_pfeiffer__gha,Patric Pfeiffer,GHA,Ghana,exact_name_team,1.0
+49403,Kojo Peprah Oppong,Ghana,GHA,DEF,2000000,True,kojo_peprah_oppong__gha,Kojo Peprah Oppong,GHA,Ghana,exact_name_team,1.0
+48781,Alexander Djiku,Ghana,GHA,DEF,3000000,True,alexander_djiku__gha,Alexander Djiku,GHA,Ghana,exact_name_team,1.0
+50366,Alidu Seidu,Ghana,GHA,DEF,2500000,False,,,,,,0.47619047619047616
+49017,Derrick Köhn,Ghana,GHA,DEF,2000000,True,derrick_kohn__gha,Derrick Köhn,GHA,Ghana,exact_name_team,1.0
+48925,Caleb Yirenkyi,Ghana,GHA,DEF,3000000,True,caleb_yirenkyi__gha,Caleb Yirenkyi,GHA,Ghana,exact_name_team,1.0
+49137,Gideon Mensah,Ghana,GHA,DEF,3000000,True,gideon_mensah__gha,Gideon Mensah,GHA,Ghana,exact_name_team,1.0
+49018,Derrick Luckassen,Ghana,GHA,DEF,2000000,True,derrick_luckassen__gha,Derrick Luckassen,GHA,Ghana,exact_name_team,1.0
+50364,Abdul Rahman Baba,Ghana,GHA,DEF,2500000,False,,,,,,0.631578947368421
+50365,Abdul Mumin,Ghana,GHA,DEF,2000000,False,,,,,,0.5714285714285714
+50363,Jonas Adjetey,Ghana,GHA,DEF,2500000,False,,,,,,0.6153846153846154
+49521,Marvin Senaya,Ghana,GHA,DEF,2000000,True,marvin_senaya__gha,Marvin Senaya,GHA,Ghana,exact_name_team,1.0
+49986,Yuto Nagatomo,Japan,JPN,DEF,2000000,True,yuto_nagatomo__jpn,Yuto Nagatomo,JPN,Japan,exact_name_team,1.0
+50027,Ko Itakura,Japan,JPN,DEF,2000000,True,ko_itakura__jpn,Ko Itakura,JPN,Japan,exact_name_team,1.0
+50028,Takehiro Tomiyasu,Japan,JPN,DEF,2000000,True,takehiro_tomiyasu__jpn,Takehiro Tomiyasu,JPN,Japan,exact_name_team,1.0
+48880,Ayumu Seko,Japan,JPN,DEF,2500000,True,ayumu_seko__jpn,Ayumu Seko,JPN,Japan,exact_name_team,1.0
+49906,Tomoya Ando,Japan,JPN,DEF,2000000,False,,,,,,0.6086956521739131
+49179,Henry Mochizuki,Japan,JPN,DEF,2000000,False,,,,,,0.48
+49912,Tsuyoshi Watanabe,Japan,JPN,DEF,3000000,True,tsuyoshi_watanabe__jpn,Tsuyoshi Watanabe,JPN,Japan,exact_name_team,1.0
+49984,Yukinari Sugawara,Japan,JPN,DEF,3500000,True,yukinari_sugawara__jpn,Yukinari Sugawara,JPN,Japan,exact_name_team,1.0
+48973,Daiki Hashioka,Japan,JPN,DEF,2000000,False,,,,,,0.56
+49360,Junnosuke Suzuki,Japan,JPN,DEF,2500000,True,junnosuke_suzuki__jpn,Junnosuke Suzuki,JPN,Japan,exact_name_team,1.0
+49846,Shogo Taniguchi,Japan,JPN,DEF,3000000,True,shogo_taniguchi__jpn,Shogo Taniguchi,JPN,Japan,exact_name_team,1.0
+49186,Hiroki Ito,Japan,JPN,DEF,2500000,True,hiroki_ito__jpn,Hiroki Ito,JPN,Japan,exact_name_team,1.0
+49568,Min-jae Kim,Sydkorea,KOR,DEF,3500000,True,kim_min_jae__kor,Min-jae Kim,KOR,Sydkorea,exact_name_team,1.0
+49605,Moon-Hwan Kim,Sydkorea,KOR,DEF,2500000,True,moon_hwan_kim__kor,Moon-Hwan Kim,KOR,Sydkorea,exact_name_team,1.0
+49981,Yu-Min Cho,Sydkorea,KOR,DEF,2500000,True,yu_min_cho__kor,Yu-Min Cho,KOR,Sydkorea,exact_name_team,1.0
+49167,Han-beom Lee,Sydkorea,KOR,DEF,2000000,True,han_beom_lee__kor,Han-beom Lee,KOR,Sydkorea,exact_name_team,1.0
+49869,Tae-Seok Lee,Sydkorea,KOR,DEF,2500000,True,tae_seok_lee__kor,Tae-Seok Lee,KOR,Sydkorea,exact_name_team,1.0
+49868,Tae-Hyeon Kim,Sydkorea,KOR,DEF,2000000,True,tae_hyeon_kim__kor,Tae-Hyeon Kim,KOR,Sydkorea,exact_name_team,1.0
+49344,Ju-sung Kim,Sydkorea,KOR,DEF,2000000,False,,,,,,0.8333333333333334
+49973,Young-woo Seol,Sydkorea,KOR,DEF,3000000,True,seol_young_woo__kor,Young-woo Seol,KOR,Sydkorea,exact_name_team,1.0
+50030,Gi-hyuk Lee,Sydkorea,KOR,DEF,2000000,True,gi_hyuk_lee__kor,Gi-hyuk Lee,KOR,Sydkorea,exact_name_team,1.0
+50425,Wi-je Cho,Sydkorea,KOR,DEF,2000000,False,,,,,,0.5714285714285714
+49276,Jesus Angulo,Mexico,MEX,DEF,2000000,True,jesus_angulo__mex,Jesus Angulo,MEX,Mexico,exact_name_team,1.0
+49082,Everardo Lopez,Mexico,MEX,DEF,2500000,True,everardo_lopez__mex,Everardo Lopez,MEX,Mexico,exact_name_team,1.0
+48944,Cesar Montes,Mexico,MEX,DEF,3000000,True,c_sar_montes__mex,Cesar Montes,MEX,Mexico,exact_name_team,1.0
+49277,Jesus Gallardo,Mexico,MEX,DEF,3000000,True,jes_s_gallardo__mex,Jesus Gallardo,MEX,Mexico,exact_name_team,1.0
+49231,Israel Reyes,Mexico,MEX,DEF,3000000,True,israel_reyes__mex,Israel Reyes,MEX,Mexico,exact_name_team,1.0
+50287,Mateo Chavez,Mexico,MEX,DEF,2500000,False,,,,,,0.56
+49770,Richard Ledezma,Mexico,MEX,DEF,2000000,True,richard_ledezma__mex,Richard Ledezma,MEX,Mexico,exact_name_team,1.0
+49322,Jorge Sanchez,Mexico,MEX,DEF,2500000,True,jorge_sanchez__mex,Jorge Sanchez,MEX,Mexico,exact_name_team,1.0
+49303,Johan Vasquez,Mexico,MEX,DEF,3000000,True,johan_v_squez__mex,Johan Vasquez,MEX,Mexico,exact_name_team,1.0
+50052,Francis de Vries,New Zealand,NZL,DEF,2500000,True,francis_de_vries__nzl,Francis de Vries,NZL,New Zealand,exact_name_team,1.0
+49110,Finn Surman,New Zealand,NZL,DEF,2000000,True,finn_surman__nzl,Finn Surman,NZL,New Zealand,exact_name_team,1.0
+50055,Michael Boxall,New Zealand,NZL,DEF,2000000,True,michael_boxall__nzl,Michael Boxall,NZL,New Zealand,exact_name_team,1.0
+49470,Lukas Kelly-Heald,New Zealand,NZL,DEF,2000000,False,,,,,,0.41379310344827586
+49247,James McGarry,New Zealand,NZL,DEF,2000000,False,,,,,,0.43478260869565216
+49895,Tim Payne,New Zealand,NZL,DEF,2500000,True,tim_payne__nzl,Tim Payne,NZL,New Zealand,exact_name_team,1.0
+48926,Callan Elliot,New Zealand,NZL,DEF,2000000,True,callan_elliot__nzl,Callan Elliot,NZL,New Zealand,exact_name_team,1.0
+49441,Liberato Cacace,New Zealand,NZL,DEF,2500000,True,liberato_cacace__nzl,Liberato Cacace,NZL,New Zealand,exact_name_team,1.0
+49914,Tyler Bindon,New Zealand,NZL,DEF,2500000,True,tyler_bindon__nzl,Tyler Bindon,NZL,New Zealand,exact_name_team,1.0
+50057,Tommy Smith,New Zealand,NZL,DEF,2000000,True,tommy_smith__nzl,Tommy Smith,NZL,New Zealand,exact_name_team,1.0
+50056,Nando Pijnaker,New Zealand,NZL,DEF,2000000,True,nando_pijnaker__nzl,Nando Pijnaker,NZL,New Zealand,exact_name_team,1.0
+48901,Bill Tuiloma,New Zealand,NZL,DEF,2000000,False,,,,,,0.5
+50419,Jose Canale,Paraguay,PAR,DEF,2000000,False,,,,,,0.5714285714285714
+48903,Blas Riveros,Paraguay,PAR,DEF,2000000,True,blas_riveros__par,Blas Riveros,PAR,Paraguay,exact_name_team,1.0
+49682,Omar Alderete,Paraguay,PAR,DEF,3500000,True,omar_alderete__par,Omar Alderete,PAR,Paraguay,exact_name_team,1.0
+49359,Junior Alonso,Paraguay,PAR,DEF,3000000,True,j_nior_alonso__par,Junior Alonso,PAR,Paraguay,exact_name_team,1.0
+50418,Fabian Balbuena,Paraguay,PAR,DEF,2500000,False,,,,,,0.5806451612903226
+48788,Alexis Duarte,Paraguay,PAR,DEF,2000000,True,alexis_duarte__par,Alexis Duarte,PAR,Paraguay,exact_name_team,1.0
+49161,Gustavo Velazquez,Paraguay,PAR,DEF,2500000,True,gustavo_vel_squez__par,Gustavo Velazquez,PAR,Paraguay,exact_name_team,1.0
+49144,Gonzalo Agustin Sandez,Paraguay,PAR,DEF,2000000,True,gonzalo_agustin_sandez__par,Gonzalo Agustin Sandez,PAR,Paraguay,exact_name_team,1.0
+49347,Juan Jose Caceres,Paraguay,PAR,DEF,3000000,True,juan_jose_caceres__par,Juan Jose Caceres,PAR,Paraguay,exact_name_team,1.0
+48761,Alan Benitez,Paraguay,PAR,DEF,2500000,True,alan_ben_tez__par,Alan Benitez,PAR,Paraguay,exact_name_team,1.0
+50423,Alexandro Maidana,Paraguay,PAR,DEF,2000000,False,,,,,,0.5454545454545454
+49159,Gustavo Gomez,Paraguay,PAR,DEF,3000000,True,gustavo_g_mez__par,Gustavo Gomez,PAR,Paraguay,exact_name_team,1.0
+49399,Khuliso Mudau,Sydafrika,RSA,DEF,3000000,True,khuliso_mudau__rsa,Khuliso Mudau,RSA,Sydafrika,exact_name_team,1.0
+49821,Samukele Kabini,Sydafrika,RSA,DEF,2000000,True,samukele_kabini__rsa,Samukele Kabini,RSA,Sydafrika,exact_name_team,1.0
+49543,Mbekezeli Mbokazi,Sydafrika,RSA,DEF,2500000,True,mbekezeli_mbokazi__rsa,Mbekezeli Mbokazi,RSA,Sydafrika,exact_name_team,1.0
+49662,Nkosinathi Sibisi,Sydafrika,RSA,DEF,2500000,True,nkosinathi_sibisi__rsa,Nkosinathi Sibisi,RSA,Sydafrika,exact_name_team,1.0
+48867,Aubrey Modiba,Sydafrika,RSA,DEF,3000000,True,aubrey_modiba__rsa,Aubrey Modiba,RSA,Sydafrika,exact_name_team,1.0
+50280,Olwethu Makhanya,Sydafrika,RSA,DEF,2000000,False,,,,,,0.4666666666666667
+50277,Bradley Cross,Sydafrika,RSA,DEF,2000000,False,,,,,,0.56
+50279,Kamogelo Sebelebele,Sydafrika,RSA,DEF,2000000,False,,,,,,0.5263157894736842
+49217,Ime Okon,Sydafrika,RSA,DEF,2000000,True,ime_okon__rsa,Ime Okon,RSA,Sydafrika,exact_name_team,1.0
+49400,Khulumani Ndamane,Sydafrika,RSA,DEF,2000000,True,khulumani_ndamane__rsa,Khulumani Ndamane,RSA,Sydafrika,exact_name_team,1.0
+49883,Thabang Matuludi,Sydafrika,RSA,DEF,2000000,True,thabang_matuludi__rsa,Thabang Matuludi,RSA,Sydafrika,exact_name_team,1.0
+49527,Mathias Olivera,Uruguay,URU,DEF,4000000,True,math_as_olivera__uru,Mathias Olivera,URU,Uruguay,exact_name_team,1.0
+49332,Jose Maria Gimenez,Uruguay,URU,DEF,4500000,True,jos_mar_a_gim_nez__uru,Jose Maria Gimenez,URU,Uruguay,exact_name_team,1.0
+49511,Martin Caceres,Uruguay,URU,DEF,3000000,True,martin_caceres__uru,Martin Caceres,URU,Uruguay,exact_name_team,1.0
+49156,Guillermo Varela,Uruguay,URU,DEF,3000000,True,guillermo_varela__uru,Guillermo Varela,URU,Uruguay,exact_name_team,1.0
+49792,Ronald Araujo,Uruguay,URU,DEF,4500000,True,ronald_ara_jo__uru,Ronald Araujo,URU,Uruguay,exact_name_team,1.0
+50310,Sebastian Caceres,Uruguay,URU,DEF,2500000,False,,,,,,0.5625
+49330,Jose Luis Rodriguez Bebanz,Uruguay,URU,DEF,3000000,True,jos_luis_rodr_guez_bebanz__uru,Jose Luis Rodriguez Bebanz,URU,Uruguay,exact_name_team,1.0
+49824,Santiago Bueno,Uruguay,URU,DEF,3500000,True,santiago_bueno__uru,Santiago Bueno,URU,Uruguay,exact_name_team,1.0
+49530,Matias Viña,Uruguay,URU,DEF,4000000,True,mat_as_vi_a__uru,Matias Viña,URU,Uruguay,exact_name_team,1.0
+50249,Auston Trusty,USA,USA,DEF,2500000,False,,,,,,0.4827586206896552
+49503,Mark McKenzie,USA,USA,DEF,2000000,True,mark_mckenzie__usa,Mark McKenzie,USA,USA,exact_name_team,1.0
+49566,Miles Robinson,USA,USA,DEF,2000000,True,miles_robinson__usa,Miles Robinson,USA,USA,exact_name_team,1.0
+50252,Sergino Dest,USA,USA,DEF,3000000,True,sergino_dest__usa,Sergino Dest,USA,USA,exact_name_team,1.0
+50251,Joe Scally,USA,USA,DEF,2500000,False,,,,,,0.36363636363636365
+48851,Antonee Robinson,USA,USA,DEF,2000000,True,antonee_robinson__usa,Antonee Robinson,USA,USA,exact_name_team,1.0
+48956,Chris Richards,USA,USA,DEF,3000000,True,chris_richards__usa,Chris Richards,USA,USA,exact_name_team,1.0
+49896,Tim Ream,USA,USA,DEF,2500000,True,tim_ream__usa,Tim Ream,USA,USA,exact_name_team,1.0
+49536,Max Arfsten,USA,USA,DEF,3000000,True,max_arfsten__usa,Max Arfsten,USA,USA,exact_name_team,1.0
+48774,Alex Freeman,USA,USA,DEF,2500000,True,alex_freeman__usa,Alex Freeman,USA,USA,exact_name_team,1.0
+50246,Willer Ditta,Colombia,COL,DEF,2500000,True,willer_ditta__col,Willer Ditta,COL,Colombia,exact_name_team,1.0
+49004,Deiver Machado,Colombia,COL,DEF,3000000,True,deiver_machado__col,Deiver Machado,COL,Colombia,exact_name_team,1.0
+50247,Yerry Mina,Colombia,COL,DEF,3000000,True,yerry_mina__col,Yerry Mina,COL,Colombia,exact_name_team,1.0
+48998,Davinson Sanchez,Colombia,COL,DEF,3500000,True,davinson_s_nchez__col,Davinson Sanchez,COL,Colombia,exact_name_team,1.0
+49302,Johan Mojica,Colombia,COL,DEF,3500000,True,johan_mojica__col,Johan Mojica,COL,Colombia,exact_name_team,1.0
+49345,Juan Cabal,Colombia,COL,DEF,3000000,True,juan_cabal__col,Juan Cabal,COL,Colombia,exact_name_team,1.0
+49969,Yerson Mosquera,Colombia,COL,DEF,2500000,False,,,,,,0.6
+48982,Daniel Muñoz,Colombia,COL,DEF,4000000,True,daniel_mu_oz__col,Daniel Muñoz,COL,Colombia,exact_name_team,1.0
+49281,Jhon Lucumi,Colombia,COL,DEF,3500000,True,jhon_lucum__col,Jhon Lucumi,COL,Colombia,exact_name_team,1.0
+49823,Santiago Arias,Colombia,COL,DEF,3500000,True,santiago_arias__col,Santiago Arias,COL,Colombia,exact_name_team,1.0
+49737,Piero Hincapie,Ecuador,ECU,DEF,3500000,True,piero_hincapi__ecu,Piero Hincapie,ECU,Ecuador,exact_name_team,1.0
+49298,Joel Ordonez,Ecuador,ECU,DEF,2500000,True,joel_ord_ez__ecu,Joel Ordonez,ECU,Ecuador,exact_name_team,1.0
+48836,Angelo Preciado,Ecuador,ECU,DEF,3000000,True,ngelo_preciado__ecu,Angelo Preciado,ECU,Ecuador,exact_name_team,1.0
+49098,Felix 'Feliz' Torres,Ecuador,ECU,DEF,3000000,True,felix_feliz_torres__ecu,Felix 'Feliz' Torres,ECU,Ecuador,exact_name_team,1.0
+49240,Jackson Porozo,Ecuador,ECU,DEF,2000000,True,jackson_porozo__ecu,Jackson Porozo,ECU,Ecuador,exact_name_team,1.0
+49328,Jose Hurtado,Ecuador,ECU,DEF,2500000,True,jose_hurtado__ecu,Jose Hurtado,ECU,Ecuador,exact_name_team,1.0
+49946,Willian Pacho,Ecuador,ECU,DEF,3000000,True,willian_pacho__ecu,Willian Pacho,ECU,Ecuador,exact_name_team,1.0
+49731,Pervis Estupinan,Ecuador,ECU,DEF,3500000,True,pervis_estupi_n__ecu,Pervis Estupinan,ECU,Ecuador,exact_name_team,1.0
+49653,Nihad Mujakic,Bosnien-Hercegovina,BIH,DEF,2500000,True,nihad_mujaki__bih,Nihad Mujakic,BIH,Bosnien-Hercegovina,exact_name_team,1.0
+49652,Nidal Celik,Bosnien-Hercegovina,BIH,DEF,2000000,True,nidal_celik__bih,Nidal Celik,BIH,Bosnien-Hercegovina,exact_name_team,1.0
+49011,Dennis Hadzikadunic,Bosnien-Hercegovina,BIH,DEF,2500000,True,dennis_hadzikadunic__bih,Dennis Hadzikadunic,BIH,Bosnien-Hercegovina,exact_name_team,1.0
+49832,Sead Kolasinac,Bosnien-Hercegovina,BIH,DEF,2500000,True,sead_kolasinac__bih,Sead Kolasinac,BIH,Bosnien-Hercegovina,exact_name_team,1.0
+49655,Nikola Katic,Bosnien-Hercegovina,BIH,DEF,3000000,True,nikola_kati__bih,Nikola Katic,BIH,Bosnien-Hercegovina,exact_name_team,1.0
+49865,Stjepan Radeljic,Bosnien-Hercegovina,BIH,DEF,2500000,True,stjepan_radeljic__bih,Stjepan Radeljic,BIH,Bosnien-Hercegovina,exact_name_team,1.0
+49879,Tarik Muharemovic,Bosnien-Hercegovina,BIH,DEF,3000000,True,tarik_muharemovic__bih,Tarik Muharemovic,BIH,Bosnien-Hercegovina,exact_name_team,1.0
+48816,Amar Dedic,Bosnien-Hercegovina,BIH,DEF,3000000,True,amar_dedi__bih,Amar Dedic,BIH,Bosnien-Hercegovina,exact_name_team,1.0
+48801,Ali Nemati,Iran,IRN,DEF,2500000,True,ali_nemati__irn,Ali Nemati,IRN,Iran,exact_name_team,1.0
+49189,Hossein Abarghouei,Iran,IRN,DEF,2000000,True,hossein_abarghouei__irn,Hossein Abarghouei,IRN,Iran,exact_name_team,1.0
+48980,Danial Esmaeilifar,Iran,IRN,DEF,2500000,True,danial_esmaeilifar__irn,Danial Esmaeilifar,IRN,Iran,exact_name_team,1.0
+49190,Hossein Kanaani,Iran,IRN,DEF,2500000,True,hossein_kanaani__irn,Hossein Kanaani,IRN,Iran,exact_name_team,1.0
+50370,Saleh Hardani,Iran,IRN,DEF,2500000,False,,,,,,0.5384615384615384
+49847,Shojae Khalilzadeh,Iran,IRN,DEF,2500000,True,shoja_khalilzadeh__irn,Shojae Khalilzadeh,IRN,Iran,exact_name_team,1.0
+48731,Abolfazl Jalali,Iran,IRN,DEF,2000000,True,abolfazl_jalali__irn,Abolfazl Jalali,IRN,Iran,exact_name_team,1.0
+49565,Milad Mohammadi,Iran,IRN,DEF,2500000,True,milad_mohammadi__irn,Milad Mohammadi,IRN,Iran,exact_name_team,1.0
+49746,Ramin Rezaeian,Iran,IRN,DEF,2500000,True,ramin_rezaeian__irn,Ramin Rezaeian,IRN,Iran,exact_name_team,1.0
+49049,Ehsan Hajsafi,Iran,IRN,DEF,2000000,True,ehsan_hajsafi__irn,Ehsan Hajsafi,IRN,Iran,exact_name_team,1.0
+50369,Daniyal Eiri,Iran,IRN,DEF,2000000,False,,,,,,0.43478260869565216
+50374,Arya Yousefi,Iran,IRN,DEF,2000000,False,,,,,,0.4444444444444444
+49627,Nathan Ngoy,Belgien,BEL,DEF,2000000,True,nathan_ngoy__bel,Nathan Ngoy,BEL,Belgien,exact_name_team,1.0
+49892,Thomas Meunier,Belgien,BEL,DEF,3500000,True,thomas_meunier__bel,Thomas Meunier,BEL,Belgien,exact_name_team,1.0
+48911,Brandon Mechele,Belgien,BEL,DEF,2500000,True,brandon_mechele__bel,Brandon Mechele,BEL,Belgien,exact_name_team,1.0
+49897,Timothy Castagne,Belgien,BEL,DEF,3500000,True,timothy_castagne__bel,Timothy Castagne,BEL,Belgien,exact_name_team,1.0
+49539,Maxim De Cuyper,Belgien,BEL,DEF,4000000,True,maxim_de_cuyper__bel,Maxim De Cuyper,BEL,Belgien,exact_name_team,1.0
+49406,Koni de Winter,Belgien,BEL,DEF,3000000,True,koni_de_winter__bel,Koni de Winter,BEL,Belgien,exact_name_team,1.0
+49992,Zeno Debast,Belgien,BEL,DEF,3500000,True,zeno_debast__bel,Zeno Debast,BEL,Belgien,exact_name_team,1.0
+48864,Arthur Theate,Belgien,BEL,DEF,3000000,True,arthur_theate__bel,Arthur Theate,BEL,Belgien,exact_name_team,1.0
+49294,Joaquin Seys,Belgien,BEL,DEF,2500000,True,joaquin_seys__bel,Joaquin Seys,BEL,Belgien,exact_name_team,1.0
+49760,Rebin Sulaka,Irak,IRQ,DEF,2000000,True,rebin_sulaka__irq,Rebin Sulaka,IRQ,Irak,exact_name_team,1.0
+49196,Hussein Ali,Irak,IRQ,DEF,3000000,True,hussein_ali__irq,Hussein Ali,IRQ,Irak,exact_name_team,1.0
+49121,Frans Dhia Putros,Irak,IRQ,DEF,2000000,True,frans_dhia_putros__irq,Frans Dhia Putros,IRQ,Irak,exact_name_team,1.0
+49989,Zaid Tahseen,Irak,IRQ,DEF,2500000,True,zaid_tahseen__irq,Zaid Tahseen,IRQ,Irak,exact_name_team,1.0
+48747,Ahmed Hasan Maknzi,Irak,IRQ,DEF,2000000,True,ahmed_hasan_maknzi__irq,Ahmed Hasan Maknzi,IRQ,Irak,exact_name_team,1.0
+49548,Merchas Doski,Irak,IRQ,DEF,2500000,True,merchas_doski__irq,Merchas Doski,IRQ,Irak,exact_name_team,1.0
+48757,Akam Hashem,Irak,IRQ,DEF,2000000,True,akam_hashem__irq,Akam Hashem,IRQ,Irak,exact_name_team,1.0
+49484,Manaf Younis,Irak,IRQ,DEF,2000000,True,manaf_younis__irq,Manaf Younis,IRQ,Irak,exact_name_team,1.0
+50378,Mustafa Saadoon,Irak,IRQ,DEF,2000000,False,,,,,,0.4
+50379,Ahmed Yahya,Irak,IRQ,DEF,2000000,False,,,,,,0.5517241379310345
+49785,Roderick Miller,Panama,PAN,DEF,2000000,True,roderick_miller__pan,Roderick Miller,PAN,Panama,exact_name_team,1.0
+49321,Jorge Gutierrez,Panama,PAN,DEF,2500000,True,jorge_guti_rrez__pan,Jorge Gutierrez,PAN,Panama,exact_name_team,1.0
+49326,Jose Cordoba,Panama,PAN,DEF,2500000,True,jos_cordoba__pan,Jose Cordoba,PAN,Panama,exact_name_team,1.0
+49285,Jiovany Ramos,Panama,PAN,DEF,2000000,True,jiovany_ramos__pan,Jiovany Ramos,PAN,Panama,exact_name_team,1.0
+50255,Edgardo Farina,Panama,PAN,DEF,2000000,False,,,,,,0.5
+49072,Eric Davis,Panama,PAN,DEF,3000000,True,erick_davis__pan,Eric Davis,PAN,Panama,exact_name_team,1.0
+49106,Fidel Escobar,Panama,PAN,DEF,2500000,True,fidel_escobar__pan,Fidel Escobar,PAN,Panama,exact_name_team,1.0
+49554,Michael Amir Murillo,Panama,PAN,DEF,2500000,True,michael_amir_murillo__pan,Michael Amir Murillo,PAN,Panama,exact_name_team,1.0
+48830,Andres Andrade,Panama,PAN,DEF,2500000,True,andres_andrade__pan,Andres Andrade,PAN,Panama,exact_name_team,1.0
+48943,Cesar Blackman,Panama,PAN,DEF,2500000,True,c_sar_blackman__pan,Cesar Blackman,PAN,Panama,exact_name_team,1.0
+49515,Martin Krug,Panama,PAN,DEF,2000000,True,martin_krug__pan,Martin Krug,PAN,Panama,exact_name_team,1.0
+50071,Karim Hafez,Egypten,EGY,DEF,2000000,True,karim_hafez__egy,Karim Hafez,EGY,Egypten,exact_name_team,1.0
+49571,Mohamed Abdelmonem,Egypten,EGY,DEF,2500000,True,mohamed_abdelmonem__egy,Mohamed Abdelmonem,EGY,Egypten,exact_name_team,1.0
+49188,Hossam Abdelmaguid,Egypten,EGY,DEF,2500000,True,hossam_abdelmaguid__egy,Hossam Abdelmaguid,EGY,Egypten,exact_name_team,1.0
+49960,Yasser Ibrahim,Egypten,EGY,DEF,2500000,True,yasser_ibrahim__egy,Yasser Ibrahim,EGY,Egypten,exact_name_team,1.0
+49396,Khaled Sobhi,Egypten,EGY,DEF,2000000,False,,,,,,0.56
+49578,Mohamed Hany,Egypten,EGY,DEF,2500000,True,mohamed_hany__egy,Mohamed Hany,EGY,Egypten,exact_name_team,1.0
+49745,Rami Rabia,Egypten,EGY,DEF,3000000,True,rami_rabia__egy,Rami Rabia,EGY,Egypten,exact_name_team,1.0
+48748,Ahmed Nabil Kouka,Egypten,EGY,DEF,2000000,False,,,,,,0.6206896551724138
+49877,Tarek Alaa,Egypten,EGY,DEF,2000000,True,tarek_alaa__egy,Tarek Alaa,EGY,Egypten,exact_name_team,1.0
+48746,Ahmed Fatouh,Egypten,EGY,DEF,2500000,True,ahmed_fatouh__egy,Ahmed Fatouh,EGY,Egypten,exact_name_team,1.0
+50261,Redouane Halhal,Marokko,MAR,DEF,2000000,False,,,,,,0.4827586206896552
+48718,Abdelhamid Ait Boudlal,Marokko,MAR,DEF,2500000,True,abdelhamid_ait_boudlal__mar,Abdelhamid Ait Boudlal,MAR,Marokko,exact_name_team,1.0
+49990,Zakaria El Ouahdi,Marokko,MAR,DEF,2000000,True,zakaria_el_ouahdi__mar,Zakaria El Ouahdi,MAR,Marokko,exact_name_team,1.0
+49260,Jawad El Yamiq,Marokko,MAR,DEF,2500000,True,jawad_el_yamiq__mar,Jawad El Yamiq,MAR,Marokko,exact_name_team,1.0
+49633,Nayef Aguerd,Marokko,MAR,DEF,3000000,True,nayef_aguerd__mar,Nayef Aguerd,MAR,Marokko,exact_name_team,1.0
+48732,Achraf Hakimi,Marokko,MAR,DEF,4000000,True,achraf_hakimi__mar,Achraf Hakimi,MAR,Marokko,exact_name_team,1.0
+48947,Chadi Riad,Marokko,MAR,DEF,2000000,True,chadi_riad__mar,Chadi Riad,MAR,Marokko,exact_name_team,1.0
+49859,Souffian El Karouani,Marokko,MAR,DEF,2000000,True,souffian_el_karouani__mar,Souffian El Karouani,MAR,Marokko,exact_name_team,1.0
+50264,Youssef Belammari,Marokko,MAR,DEF,2000000,False,,,,,,0.6470588235294118
+48826,Anass Salah-Eddine,Marokko,MAR,DEF,2500000,True,anass_salah_eddine__mar,Anass Salah-Eddine,MAR,Marokko,exact_name_team,1.0
+50067,Issa Diop,Marokko,MAR,DEF,2500000,True,issa_diop__mar,Issa Diop,MAR,Marokko,exact_name_team,1.0
+49670,Noussair Mazraoui,Marokko,MAR,DEF,3500000,True,noussair_mazraoui__mar,Noussair Mazraoui,MAR,Marokko,exact_name_team,1.0
+49483,Mamadou Sarr,Senegal,SEN,DEF,2500000,True,mamadou_sarr__sen,Mamadou Sarr,SEN,Senegal,exact_name_team,1.0
+49050,El Hadji Malick Diouf,Senegal,SEN,DEF,3500000,True,el_hadji_malick_diouf__sen,El Hadji Malick Diouf,SEN,Senegal,exact_name_team,1.0
+48721,Abdoulaye Seck,Senegal,SEN,DEF,3000000,True,abdoulaye_seck__sen,Abdoulaye Seck,SEN,Senegal,exact_name_team,1.0
+49612,Moussa Niakhate,Senegal,SEN,DEF,3000000,True,moussa_niakhate__sen,Moussa Niakhate,SEN,Senegal,exact_name_team,1.0
+49228,Ismail Jakobs,Senegal,SEN,DEF,2500000,True,ismail_jakobs__sen,Ismail Jakobs,SEN,Senegal,exact_name_team,1.0
+49980,Youssouf Sabaly,Senegal,SEN,DEF,2000000,False,,,,,,0.5333333333333333
+49370,Kalidou Koulibaly,Senegal,SEN,DEF,2500000,True,kalidou_koulibaly__sen,Kalidou Koulibaly,SEN,Senegal,exact_name_team,1.0
+49704,Pape Abou Cisse,Senegal,SEN,DEF,2000000,False,,,,,,0.64
+48720,Abdou Diallo,Senegal,SEN,DEF,2000000,False,,,,,,0.5
+49215,Ilay Camara,Senegal,SEN,DEF,2000000,True,ilay_camara__sen,Ilay Camara,SEN,Senegal,exact_name_team,1.0
+48848,Antoine Mendy,Senegal,SEN,DEF,2500000,True,antoine_mendy__sen,Antoine Mendy,SEN,Senegal,exact_name_team,1.0
+50093,Moustapha Mbow,Senegal,SEN,DEF,2000000,True,moustapha_mbow__sen,Moustapha Mbow,SEN,Senegal,exact_name_team,1.0
+49575,Mohamed Amine Ben Hamida,Tunesien,TUN,DEF,2500000,True,mohamed_amine_ben_hamida__tun,Mohamed Amine Ben Hamida,TUN,Tunesien,exact_name_team,1.0
+48736,Adem Arous,Tunesien,TUN,DEF,2000000,True,adem_arous__tun,Adem Arous,TUN,Tunesien,exact_name_team,1.0
+49135,Ghaith Zaalouni,Tunesien,TUN,DEF,2000000,False,,,,,,0.5217391304347826
+50065,Raed Chikhaoui,Tunesien,TUN,DEF,2000000,True,raed_chikhaoui__tun,Raed Chikhaoui,TUN,Tunesien,exact_name_team,1.0
+49684,Omar Rekik,Tunesien,TUN,DEF,2000000,True,omar_rekik__tun,Omar Rekik,TUN,Tunesien,exact_name_team,1.0
+48799,Ali Maaloul,Tunesien,TUN,DEF,2000000,False,,,,,,0.5454545454545454
+49039,Dylan Bronn,Tunesien,TUN,DEF,2500000,True,dylan_bronn__tun,Dylan Bronn,TUN,Tunesien,exact_name_team,1.0
+49963,Yassine Meriah,Tunesien,TUN,DEF,2500000,False,,,,,,0.5925925925925926
+49957,Yan Valery,Tunesien,TUN,DEF,2500000,True,yan_valery__tun,Yan Valery,TUN,Tunesien,exact_name_team,1.0
+48793,Ali Abdi,Tunesien,TUN,DEF,3000000,True,ali_abdi__tun,Ali Abdi,TUN,Tunesien,exact_name_team,1.0
+49604,Montassar Talbi,Tunesien,TUN,DEF,3000000,True,montassar_talbi__tun,Montassar Talbi,TUN,Tunesien,exact_name_team,1.0
+48760,Alaa Ghram,Tunesien,TUN,DEF,2000000,False,,,,,,0.5217391304347826
+49613,Moutaz Neffati,Tunesien,TUN,DEF,2000000,True,moutaz_neffati__tun,Moutaz Neffati,TUN,Tunesien,exact_name_team,1.0
+48800,Ali Majrashi,Saudi-Arabien,KSA,DEF,2500000,True,ali_majrashi__ksa,Ali Majrashi,KSA,Saudi-Arabien,exact_name_team,1.0
+49632,Nawaf Bu Washl,Saudi-Arabien,KSA,DEF,2500000,False,,,,,,0.7692307692307693
+50414,Moteb Al-Harbi,Saudi-Arabien,KSA,DEF,2000000,False,,,,,,0.5517241379310345
+49595,Mohammed Sulaiman,Saudi-Arabien,KSA,DEF,2000000,True,mohammed_sulaiman__ksa,Mohammed Sulaiman,KSA,Saudi-Arabien,exact_name_team,1.0
+50410,Jehad Thakri,Saudi-Arabien,KSA,DEF,2000000,False,,,,,,0.4827586206896552
+48724,Abdulelah Al-Amri,Saudi-Arabien,KSA,DEF,2500000,True,abdulelah_al_amri__ksa,Abdulelah Al-Amri,KSA,Saudi-Arabien,exact_name_team,1.0
+50408,Hassan Al Tambakti,Saudi-Arabien,KSA,DEF,2000000,False,,,,,,0.6060606060606061
+49827,Saud Abdulhamid,Saudi-Arabien,KSA,DEF,3000000,True,saud_abdulhamid__ksa,Saud Abdulhamid,KSA,Saudi-Arabien,exact_name_team,1.0
+50407,Ali Lajami,Saudi-Arabien,KSA,DEF,2000000,False,,,,,,0.5
+50409,Hassan Kadesh,Saudi-Arabien,KSA,DEF,2000000,False,,,,,,0.4666666666666667
+50412,Mohammed Abu Al-Shamat,Saudi-Arabien,KSA,DEF,2500000,False,,,,,,0.7083333333333334
+50398,Al-Hashmi Al-Hussain,Qatar,QAT,DEF,2000000,False,,,,,,0.5454545454545454
+50401,Seydinaissa Laye,Qatar,QAT,DEF,2000000,False,,,,,,0.4
+49458,Lucas Mendes,Qatar,QAT,DEF,2500000,True,lucas_mendes__qat,Lucas Mendes,QAT,Qatar,exact_name_team,1.0
+48907,Boualem Khoukhi,Qatar,QAT,DEF,2500000,True,boualem_khoukhi__qat,Boualem Khoukhi,QAT,Qatar,exact_name_team,1.0
+49727,Pedro 'Ro-Ro' Miguel Correia,Qatar,QAT,DEF,2500000,True,pedro_ro_ro_miguel_correia__qat,Pedro 'Ro-Ro' Miguel Correia,QAT,Qatar,exact_name_team,1.0
+49867,Sultan Al-Brake,Qatar,QAT,DEF,2500000,True,sultan_al_brake__qat,Sultan Al-Brake,QAT,Qatar,exact_name_team,1.0
+49878,Tarek Salman,Qatar,QAT,DEF,2500000,True,tarek_salman__qat,Tarek Salman,QAT,Qatar,exact_name_team,1.0
+49187,Homam Al-Amin Ahmed,Qatar,QAT,DEF,2500000,False,,,,,,0.8148148148148148
+48878,Ayoub Al-Oui,Qatar,QAT,DEF,2500000,True,ayoub_al_oui__qat,Ayoub Al-Oui,QAT,Qatar,exact_name_team,1.0
+49797,Ross McCrorie,Skotland,SCO,DEF,2000000,False,,,,,,0.48
+49306,John Souttar,Skotland,SCO,DEF,2500000,True,john_souttar__sco,John Souttar,SCO,Skotland,exact_name_team,1.0
+49239,Jack Hendry,Skotland,SCO,DEF,2000000,True,jack_hendry__sco,Jack Hendry,SCO,Skotland,exact_name_team,1.0
+49830,Scott McKenna,Skotland,SCO,DEF,2500000,True,scott_mckenna__sco,Scott McKenna,SCO,Skotland,exact_name_team,1.0
+49628,Nathan Patterson,Skotland,SCO,DEF,2000000,True,nathan_patterson__sco,Nathan Patterson,SCO,Skotland,exact_name_team,1.0
+50061,Aaron Hickey,Skotland,SCO,DEF,2500000,True,aaron_hickey__sco,Aaron Hickey,SCO,Skotland,exact_name_team,1.0
+48834,Andy Robertson,Skotland,SCO,DEF,3000000,True,andy_robertson__sco,Andy Robertson,SCO,Skotland,exact_name_team,1.0
+49150,Grant Hanley,Skotland,SCO,DEF,2500000,True,grant_hanley__sco,Grant Hanley,SCO,Skotland,exact_name_team,1.0
+48846,Anthony Ralston,Skotland,SCO,DEF,2500000,True,anthony_ralston__sco,Anthony Ralston,SCO,Skotland,exact_name_team,1.0
+49401,Kieran Tierney,Skotland,SCO,DEF,2500000,True,kieran_tierney__sco,Kieran Tierney,SCO,Skotland,exact_name_team,1.0
+49028,Dominic Hyam,Skotland,SCO,DEF,2000000,True,dominic_hyam__sco,Dominic Hyam,SCO,Skotland,exact_name_team,1.0
+50298,Moïse Bombito,Canada,CAN,DEF,2500000,False,,,,,,0.46153846153846156
+49744,Ralph Priso,Canada,CAN,DEF,2000000,True,ralph_priso__can,Ralph Priso,CAN,Canada,exact_name_team,1.0
+48809,Alphonso Davies,Canada,CAN,DEF,4000000,True,alphonso_davies__can,Alphonso Davies,CAN,Canada,exact_name_team,1.0
+50296,Alfie Jones,Canada,CAN,DEF,2000000,False,,,,,,0.5714285714285714
+49772,Richie Laryea,Canada,CAN,DEF,3000000,True,richie_laryea__can,Richie Laryea,CAN,Canada,exact_name_team,1.0
+49014,Derek Cornelius,Canada,CAN,DEF,2500000,True,derek_cornelius__can,Derek Cornelius,CAN,Canada,exact_name_team,1.0
+49299,Joel Waterman,Canada,CAN,DEF,2500000,True,joel_waterman__can,Joel Waterman,CAN,Canada,exact_name_team,1.0
+48807,Alistair Johnston,Canada,CAN,DEF,3000000,True,alistair_johnston__can,Alistair Johnston,CAN,Canada,exact_name_team,1.0
+49371,Kamal Miller,Canada,CAN,DEF,2500000,True,kamal_miller__can,Kamal Miller,CAN,Canada,exact_name_team,1.0
+49449,Luc De Fougerolles,Canada,CAN,DEF,2000000,True,luc_de_fougerolles__can,Luc De Fougerolles,CAN,Canada,exact_name_team,1.0
+49244,Jahkeele Rutty,Canada,CAN,DEF,2000000,True,jahkeele_rutty__can,Jahkeele Rutty,CAN,Canada,exact_name_team,1.0
+48722,Abdukodir Khusanov,Usbekistan,UZB,DEF,3000000,True,abdukodir_khusanov__uzb,Abdukodir Khusanov,UZB,Usbekistan,exact_name_team,1.0
+49918,Umar Eshmurodov,Usbekistan,UZB,DEF,2500000,True,umar_eshmurodov__uzb,Umar Eshmurodov,UZB,Usbekistan,exact_name_team,1.0
+49803,Rustam Ashurmatov,Usbekistan,UZB,DEF,2500000,True,rustam_ashurmatov__uzb,Rustam Ashurmatov,UZB,Usbekistan,exact_name_team,1.0
+50385,Abdulla Abdullaev,Usbekistan,UZB,DEF,2000000,False,,,,,,0.5
+49095,Farrukh Sayfiev,Usbekistan,UZB,DEF,2500000,True,farrukh_sayfiev__uzb,Farrukh Sayfiev,UZB,Usbekistan,exact_name_team,1.0
+49398,Khozhiakbar Alizhonov,Usbekistan,UZB,DEF,2500000,True,khozhiakbar_alizhonov__uzb,Khozhiakbar Alizhonov,UZB,Usbekistan,exact_name_team,1.0
+49845,Sherzod Nasrullaev,Usbekistan,UZB,DEF,2500000,True,sherzod_nasrullayev__uzb,Sherzod Nasrullaev,UZB,Usbekistan,exact_name_team,1.0
+49022,Dilshod Komilov,Usbekistan,UZB,DEF,2000000,True,dilshod_komilov__uzb,Dilshod Komilov,UZB,Usbekistan,exact_name_team,1.0
+50386,Behruzjon Karimov,Usbekistan,UZB,DEF,2000000,False,,,,,,0.5294117647058824
+50387,Avazbek Ulmasaliyev,Usbekistan,UZB,DEF,2000000,False,,,,,,0.47368421052631576
+49245,Jakhongir Urozov,Usbekistan,UZB,DEF,2500000,True,jakhongir_urozov__uzb,Jakhongir Urozov,UZB,Usbekistan,exact_name_team,1.0
+49616,Mukhammadrasul Abdumazhidov,Usbekistan,UZB,DEF,2000000,True,mukhammadrasul_abdumazhidov__uzb,Mukhammadrasul Abdumazhidov,UZB,Usbekistan,exact_name_team,1.0
+49615,Mukhammadkodir Khamraliev,Usbekistan,UZB,DEF,2500000,True,mukhammadkodir_khamraliev__uzb,Mukhammadkodir Khamraliev,UZB,Usbekistan,exact_name_team,1.0
+50395,Anas Badawi,Jordan,JOR,DEF,2000000,False,,,,,,0.5
+50394,Ehsan Haddad,Jordan,JOR,DEF,2500000,False,,,,,,0.4666666666666667
+49965,Yazan Al-Arab,Jordan,JOR,DEF,2500000,True,yazan_al_arab__jor,Yazan Al-Arab,JOR,Jordan,exact_name_team,1.0
+48715,Abdallah Nasib,Jordan,JOR,DEF,2500000,True,abdallah_nasib__jor,Abdallah Nasib,JOR,Jordan,exact_name_team,1.0
+50391,Saed Al-Rosan,Jordan,JOR,DEF,2000000,False,,,,,,0.6206896551724138
+49975,Yousef Abu Al-Jazar,Jordan,JOR,DEF,2000000,True,yousef_abu_al_jazar__jor,Yousef Abu Al-Jazar,JOR,Jordan,exact_name_team,1.0
+49587,Mohammad Abualnadi,Jordan,JOR,DEF,2500000,True,mohammad_abualnadi__jor,Mohammad Abualnadi,JOR,Jordan,exact_name_team,1.0
+49812,Saleem Obaid,Jordan,JOR,DEF,2500000,True,saleem_obaid__jor,Saleem Obaid,JOR,Jordan,exact_name_team,1.0
+49195,Husam Abu Dahab,Jordan,JOR,DEF,2000000,True,husam_abu_dahab__jor,Husam Abu Dahab,JOR,Jordan,exact_name_team,1.0
+48742,Ahmad Assaf,Jordan,JOR,DEF,2500000,True,ahmad_assaf__jor,Ahmad Assaf,JOR,Jordan,exact_name_team,1.0
+49023,Diney Borges,Kap Verde,CPV,DEF,3000000,True,diney_borges__cpv,Diney Borges,CPV,Kap Verde,exact_name_team,1.0
+49779,Roberto Lopes,Kap Verde,CPV,DEF,2000000,True,roberto_lopes__cpv,Roberto Lopes,CPV,Kap Verde,exact_name_team,1.0
+49936,Wagner Pina,Kap Verde,CPV,DEF,2500000,True,wagner_pina__cpv,Wagner Pina,CPV,Kap Verde,exact_name_team,1.0
+49864,Steven Moreira,Kap Verde,CPV,DEF,2000000,True,steven_moreira__cpv,Steven Moreira,CPV,Kap Verde,exact_name_team,1.0
+49850,Sidny Lopes Cabral,Kap Verde,CPV,DEF,3000000,True,sidny_lopes_cabral__cpv,Sidny Lopes Cabral,CPV,Kap Verde,exact_name_team,1.0
+49180,Heri Tavares,Kap Verde,CPV,DEF,2500000,False,,,,,,0.6666666666666666
+49291,Joao Paulo,Kap Verde,CPV,DEF,2500000,True,joao_paulo__cpv,Joao Paulo,CPV,Kap Verde,exact_name_team,1.0
+50037,Logan Costa,Kap Verde,CPV,DEF,2500000,True,logan_costa__cpv,Logan Costa,CPV,Kap Verde,exact_name_team,1.0
+49866,Stopira,Kap Verde,CPV,DEF,2500000,True,stopira__cpv,Stopira,CPV,Kap Verde,exact_name_team,1.0
+49380,Kelvin Pires,Kap Verde,CPV,DEF,2000000,True,kelvin_pires__cpv,Kelvin Pires,CPV,Kap Verde,exact_name_team,1.0
+49178,Henrik Falchener,Norge,NOR,DEF,2000000,True,henrik_falchener__nor,Henrik Falchener,NOR,Norge,exact_name_team,1.0
+50087,Sondre Langås,Norge,NOR,DEF,2000000,True,sondre_langas__nor,Sondre Langås,NOR,Norge,exact_name_team,1.0
+49413,Kristoffer Ajer,Norge,NOR,DEF,3000000,True,kristoffer_ajer__nor,Kristoffer Ajer,NOR,Norge,exact_name_team,1.0
+49354,Julian Ryerson,Norge,NOR,DEF,3500000,True,julian_ryerson__nor,Julian Ryerson,NOR,Norge,exact_name_team,1.0
+49430,Leo Østigård,Norge,NOR,DEF,2500000,True,leo_ostigard__nor,Leo Østigård,NOR,Norge,exact_name_team,1.0
+49123,Fredrik Andre Bjørkan,Norge,NOR,DEF,2500000,True,fredrik_andr_bj_rkan__nor,Fredrik Andre Bjørkan,NOR,Norge,exact_name_team,1.0
+49497,Marcus Holmgren Pedersen,Norge,NOR,DEF,2000000,True,marcus_holmgren_pedersen__nor,Marcus Holmgren Pedersen,NOR,Norge,exact_name_team,1.0
+49908,Torbjørn Heggem,Norge,NOR,DEF,2500000,True,torbjorn_heggem__nor,Torbjørn Heggem,NOR,Norge,exact_name_team,1.0
+48994,David Møller Wolfe,Norge,NOR,DEF,3000000,True,david_m_ller_wolfe__nor,David Møller Wolfe,NOR,Norge,exact_name_team,1.0
+49678,Odin Bjørtuft,Norge,NOR,DEF,2000000,False,,,,,,0.4375
+49848,Shurandy Sambo,Curaçao,CUW,DEF,2000000,True,shurandy_sambo__cuw,Shurandy Sambo,CUW,Curaçao,exact_name_team,1.0
+50041,Armando Obispo,Curaçao,CUW,DEF,2000000,True,armando_obispo__cuw,Armando Obispo,CUW,Curaçao,exact_name_team,1.0
+49773,Riechedly Bazoer,Curaçao,CUW,DEF,2000000,True,riechedly_bazoer__cuw,Riechedly Bazoer,CUW,Curaçao,exact_name_team,1.0
+49796,Roshon van Eijma,Curaçao,CUW,DEF,2500000,True,roshon_van_eijma__cuw,Roshon van Eijma,CUW,Curaçao,exact_name_team,1.0
+49362,Jurien Gaari,Curaçao,CUW,DEF,2500000,True,juri_n_gaari__cuw,Jurien Gaari,CUW,Curaçao,exact_name_team,1.0
+49844,Sherel Floranus,Curaçao,CUW,DEF,2500000,True,sherel_floranus__cuw,Sherel Floranus,CUW,Curaçao,exact_name_team,1.0
+49335,Joshua Brenet,Curaçao,CUW,DEF,2500000,True,joshua_brenet__cuw,Joshua Brenet,CUW,Curaçao,exact_name_team,1.0
+49444,Livano Comenencia,Curaçao,CUW,DEF,2500000,True,livano_comenencia__cuw,Livano Comenencia,CUW,Curaçao,exact_name_team,1.0
+50040,Deveron Fonville,Curaçao,CUW,DEF,2000000,True,deveron_fonville__cuw,Deveron Fonville,CUW,Curaçao,exact_name_team,1.0
+50046,Keeto Thermoncy,Haiti,HAI,DEF,2000000,False,,,,,,0.4666666666666667
+49944,Wilguens Paugain,Haiti,HAI,DEF,2000000,True,wilguens_paugain__hai,Wilguens Paugain,HAI,Haiti,exact_name_team,1.0
+49005,Delentz Pierre,Haiti,HAI,DEF,2000000,False,,,,,,0.6896551724137931
+49263,Jean-Kevin Duverne,Haiti,HAI,DEF,2500000,True,jean_kevin_duverne__hai,Jean-Kevin Duverne,HAI,Haiti,exact_name_team,1.0
+49765,Ricardo Ade,Haiti,HAI,DEF,2500000,True,ricardo_ad__hai,Ricardo Ade,HAI,Haiti,exact_name_team,1.0
+48933,Carlens Arcus,Haiti,HAI,DEF,2000000,True,carlens_arcus__hai,Carlens Arcus,HAI,Haiti,exact_name_team,1.0
+49513,Martin Experience,Haiti,HAI,DEF,2000000,True,martin_exp_rience__hai,Martin Experience,HAI,Haiti,exact_name_team,1.0
+49037,Duke Lacroix,Haiti,HAI,DEF,2500000,True,duke_lacroix__hai,Duke Lacroix,HAI,Haiti,exact_name_team,1.0
+49784,Rocky Bushiri,Congo DR,COD,DEF,2000000,True,rocky_bushiri__cod,Rocky Bushiri,COD,Congo DR,exact_name_team,1.0
+49168,Hannes Delcroix,Haiti,HAI,DEF,2500000,True,hannes_delcroix__hai,Hannes Delcroix,HAI,Haiti,exact_name_team,1.0
+49038,Dylan Batubinsika,Congo DR,COD,DEF,2500000,True,dylan_batubinsika__cod,Dylan Batubinsika,COD,Congo DR,exact_name_team,1.0
+49272,Jeremy Ngakia,Congo DR,COD,DEF,2500000,True,jeremy_ngakia__cod,Jeremy Ngakia,COD,Congo DR,exact_name_team,1.0
+48871,Axel Tuanzebe,Congo DR,COD,DEF,3000000,True,axel_tuanzebe__cod,Axel Tuanzebe,COD,Congo DR,exact_name_team,1.0
+48948,Chancel Mbemba,Congo DR,COD,DEF,2500000,True,chancel_mbemba__cod,Chancel Mbemba,COD,Congo DR,exact_name_team,1.0
+48863,Arthur Masuaku,Congo DR,COD,DEF,2500000,True,arthur_masuaku__cod,Arthur Masuaku,COD,Congo DR,exact_name_team,1.0
+50358,Aaron Tshibola,Congo DR,COD,DEF,2000000,False,,,,,,0.5161290322580645
+48713,Aaron Wan-Bissaka,Congo DR,COD,DEF,3000000,True,aaron_wan_bissaka__cod,Aaron Wan-Bissaka,COD,Congo DR,exact_name_team,1.0
+50043,Gedeon Kalulu,Congo DR,COD,DEF,2500000,False,,,,,,0.5
+49324,Joris Kayembe,Congo DR,COD,DEF,2500000,True,joris_kayembe__cod,Joris Kayembe,COD,Congo DR,exact_name_team,1.0
+50044,Steve Kapuadi,Congo DR,COD,DEF,2000000,True,steve_kapuadi__cod,Steve Kapuadi,COD,Congo DR,exact_name_team,1.0
+49898,Timothy Fayulu,Congo DR,COD,GK,2500000,True,timothy_fayulu__cod,Timothy Fayulu,COD,Congo DR,exact_name_team,1.0
+49533,Matthieu Epolo,Congo DR,COD,GK,3000000,True,matthieu_epolo__cod,Matthieu Epolo,COD,Congo DR,exact_name_team,1.0
+49443,Lionel Mpasi Nzau,Congo DR,COD,GK,2500000,True,lionel_mpasi_nzau__cod,Lionel Mpasi Nzau,COD,Congo DR,exact_name_team,1.0
+49309,Johny Placide,Haiti,HAI,GK,2500000,True,johny_placide__hai,Johny Placide,HAI,Haiti,exact_name_team,1.0
+48787,Alexandre Pierre,Haiti,HAI,GK,2500000,True,alexandre_pierre__hai,Alexandre Pierre,HAI,Haiti,exact_name_team,1.0
+49341,Josue Duverger,Haiti,HAI,GK,2500000,True,josue_duverger__hai,Josue Duverger,HAI,Haiti,exact_name_team,1.0
+49916,Tyrick Bodak,Curaçao,CUW,GK,2500000,True,tyrick_bodak__cuw,Tyrick Bodak,CUW,Curaçao,exact_name_team,1.0
+49910,Trevor Doornbusch,Curaçao,CUW,GK,2500000,True,trevor_doornbusch__cuw,Trevor Doornbusch,CUW,Curaçao,exact_name_team,1.0
+49048,Egil Selvik,Norge,NOR,GK,3500000,True,egil_selvik__nor,Egil Selvik,NOR,Norge,exact_name_team,1.0
+49062,Eloy Room,Curaçao,CUW,GK,2500000,True,eloy_room__cuw,Eloy Room,CUW,Curaçao,exact_name_team,1.0
+50086,Sander Tangvik,Norge,NOR,GK,3000000,True,sander_tangvik__nor,Sander Tangvik,NOR,Norge,exact_name_team,1.0
+49687,Ørjan Nyland,Norge,NOR,GK,4000000,True,rjan_nyland__nor,Ørjan Nyland,NOR,Norge,exact_name_team,1.0
+49927,Viljar Myhra,Norge,NOR,GK,2500000,False,,,,,,0.3448275862068966
+50036,CJ Dos Santos,Kap Verde,CPV,GK,2500000,True,cj_dos_santos__cpv,CJ Dos Santos,CPV,Kap Verde,exact_name_team,1.0
+48922,Bruno Varela,Kap Verde,CPV,GK,2500000,False,,,,,,0.6666666666666666
+49966,Yazeed Abulaila,Jordan,JOR,GK,2500000,True,yazeed_abulaila__jor,Yazeed Abulaila,JOR,Jordan,exact_name_team,1.0
+50393,Noureddin Bani Attiah,Jordan,JOR,GK,2500000,False,,,,,,0.4878048780487805
+49492,Marcio Rosa,Kap Verde,CPV,GK,2500000,True,marcio_rosa__cpv,Marcio Rosa,CPV,Kap Verde,exact_name_team,1.0
+49935,Vozinha,Kap Verde,CPV,GK,2500000,True,vozinha__cpv,Vozinha,CPV,Kap Verde,exact_name_team,1.0
+48714,Abdallah Al-Fakhouri,Jordan,JOR,GK,2500000,True,abdallah_al_fakhouri__jor,Abdallah Al-Fakhouri,JOR,Jordan,exact_name_team,1.0
+48717,Abdel Rahman Al-Talalga,Jordan,JOR,GK,2500000,True,abdel_rahman_al_talalga__jor,Abdel Rahman Al-Talalga,JOR,Jordan,exact_name_team,1.0
+49921,Utkir Yusupov,Usbekistan,UZB,GK,2500000,True,utkir_yusupov__uzb,Utkir Yusupov,UZB,Usbekistan,exact_name_team,1.0
+48730,Abduvokhid Nematov,Usbekistan,UZB,GK,2500000,True,abduvokhid_nematov__uzb,Abduvokhid Nematov,UZB,Usbekistan,exact_name_team,1.0
+48906,Botirali Ergashev,Usbekistan,UZB,GK,2500000,True,botirali_ergashev__uzb,Botirali Ergashev,UZB,Usbekistan,exact_name_team,1.0
+49700,Owen Goodman,Canada,CAN,GK,2500000,True,owen_goodman__can,Owen Goodman,CAN,Canada,exact_name_team,1.0
+48999,Dayne St. Clair,Canada,CAN,GK,3500000,True,dayne_st_clair__can,Dayne St. Clair,CAN,Canada,exact_name_team,1.0
+49540,Maxime Crepeau,Canada,CAN,GK,3000000,True,maxime_cr_peau__can,Maxime Crepeau,CAN,Canada,exact_name_team,1.0
+48837,Angus Gunn,Skotland,SCO,GK,3500000,True,angus_gunn__sco,Angus Gunn,SCO,Skotland,exact_name_team,1.0
+50060,Craig Gordon,Skotland,SCO,GK,2500000,True,craig_gordon__sco,Craig Gordon,SCO,Skotland,exact_name_team,1.0
+49829,Scott Bain,Skotland,SCO,GK,2500000,False,,,,,,0.64
+50400,Salah Zakaria,Qatar,QAT,GK,2500000,False,,,,,,0.5
+49439,Liam Kelly,Skotland,SCO,GK,3000000,True,liam_kelly__sco,Liam Kelly,SCO,Skotland,exact_name_team,1.0
+49476,Mahmoud Abunada,Qatar,QAT,GK,2500000,True,mahmoud_abunada__qat,Mahmoud Abunada,QAT,Qatar,exact_name_team,1.0
+49843,Shehab Ellethy,Qatar,QAT,GK,2500000,True,shehab_ellethy__qat,Shehab Ellethy,QAT,Qatar,exact_name_team,1.0
+49553,Meshaal Barsham,Qatar,QAT,GK,2500000,True,meshaal_barsham__qat,Meshaal Barsham,QAT,Qatar,exact_name_team,1.0
+50405,Ahmed Al-Kassar,Saudi-Arabien,KSA,GK,2500000,False,,,,,,0.6451612903225806
+50413,Mohammed Al-Owais,Saudi-Arabien,KSA,GK,3000000,False,,,,,,0.6666666666666666
+49669,Noureddine Farhati,Tunesien,TUN,GK,2500000,False,,,,,,0.45161290322580644
+49631,Nawaf Al-Aqidi,Saudi-Arabien,KSA,GK,2500000,True,nawaf_al_aqidi__ksa,Nawaf Al-Aqidi,KSA,Saudi-Arabien,exact_name_team,1.0
+48729,Abdulrahman Al-Sanbi,Saudi-Arabien,KSA,GK,2500000,True,abdulrahman_al_sanbi__ksa,Abdulrahman Al-Sanbi,KSA,Saudi-Arabien,exact_name_team,1.0
+49593,Mohammed Al-Rubaie Al-Yami,Saudi-Arabien,KSA,GK,2500000,True,mohammed_al_rubaie_al_yami__ksa,Mohammed Al-Rubaie Al-Yami,KSA,Saudi-Arabien,exact_name_team,1.0
+49967,Yehvann Diouf,Senegal,SEN,GK,3000000,True,yehvann_diouf__sen,Yehvann Diouf,SEN,Senegal,exact_name_team,1.0
+48719,Abdelmouhib Chamakh,Tunesien,TUN,GK,2500000,True,abdelmouhib_chamakh__tun,Abdelmouhib Chamakh,TUN,Tunesien,exact_name_team,1.0
+48875,Aymen Dahmen,Tunesien,TUN,GK,3000000,True,aymen_dahmen__tun,Aymen Dahmen,TUN,Tunesien,exact_name_team,1.0
+48889,Bechir Ben Said,Tunesien,TUN,GK,3000000,True,bechir_ben_said__tun,Bechir Ben Said,TUN,Tunesien,exact_name_team,1.0
+49809,Sabri Ben Hessen,Tunesien,TUN,GK,2500000,True,sabri_ben_hessen__tun,Sabri Ben Hessen,TUN,Tunesien,exact_name_team,1.0
+49609,Mory Diaw,Senegal,SEN,GK,3000000,True,mory_diaw__sen,Mory Diaw,SEN,Senegal,exact_name_team,1.0
+49046,Edouard Mendy,Senegal,SEN,GK,3500000,True,edouard_mendy__sen,Edouard Mendy,SEN,Senegal,exact_name_team,1.0
+49051,El Mehdi Al Harrar,Marokko,MAR,GK,2500000,True,el_mehdi_al_harrar__mar,El Mehdi Al Harrar,MAR,Marokko,exact_name_team,1.0
+50257,Ahmed Reda Tagnaouti,Marokko,MAR,GK,2500000,False,,,,,,0.45714285714285713
+50069,El Mahdi Soliman,Egypten,EGY,GK,2500000,True,el_mahdi_soliman__egy,El Mahdi Soliman,EGY,Egypten,exact_name_team,1.0
+49052,El Mehdi Benabid,Marokko,MAR,GK,3000000,True,el_mehdi_benabid__mar,El Mehdi Benabid,MAR,Marokko,exact_name_team,1.0
+49962,Yassine 'Bono' Bounou,Marokko,MAR,GK,3500000,True,yassine_bono_bounou__mar,Yassine 'Bono' Bounou,MAR,Marokko,exact_name_team,1.0
+49617,Munir Mohamedi El Kajoui,Marokko,MAR,GK,3000000,False,,,,,,0.7692307692307693
+49573,Mohamed Alaa,Egypten,EGY,GK,2500000,True,mohamed_alaa__egy,Mohamed Alaa,EGY,Egypten,exact_name_team,1.0
+49696,Mostafa Oufa Shobeir,Egypten,EGY,GK,2500000,True,oufa_shobeir__egy,Mostafa Oufa Shobeir,EGY,Egypten,exact_name_team,1.0
+49577,Mohamed El-Shennawy,Egypten,EGY,GK,3000000,True,mohamed_el_shenawy__egy,Mohamed El-Shennawy,EGY,Egypten,exact_name_team,1.0
+49462,Luis Mejia,Panama,PAN,GK,2500000,True,luis_mejia__pan,Luis Mejia,PAN,Panama,exact_name_team,1.0
+48945,Cesar Samudio,Panama,PAN,GK,2500000,True,cesar_samudio__pan,Cesar Samudio,PAN,Panama,exact_name_team,1.0
+49690,Orlando Mosquera,Panama,PAN,GK,2500000,True,orlando_mosquera__pan,Orlando Mosquera,PAN,Panama,exact_name_team,1.0
+49415,Kumel Al-Rekabe,Irak,IRQ,GK,2500000,True,kumel_al_rekabe__irq,Kumel Al-Rekabe,IRQ,Irak,exact_name_team,1.0
+49092,Fahad Talib,Irak,IRQ,GK,2500000,True,fahad_talib__irq,Fahad Talib,IRQ,Irak,exact_name_team,1.0
+50377,Jalal Hassan,Irak,IRQ,GK,2500000,False,,,,,,0.64
+48744,Ahmed Basil Fadhil,Irak,IRQ,GK,2500000,True,ahmed_basil_fadhil__irq,Ahmed Basil Fadhil,IRQ,Irak,exact_name_team,1.0
+50018,Mike Penders,Belgien,BEL,GK,3500000,True,mike_penders__bel,Mike Penders,BEL,Belgien,exact_name_team,1.0
+49837,Senne Lammens,Belgien,BEL,GK,4000000,True,senne_lammens__bel,Senne Lammens,BEL,Belgien,exact_name_team,1.0
+49474,Maarten Vandevoordt,Belgien,BEL,GK,3500000,True,maarten_vandevoordt__bel,Maarten Vandevoordt,BEL,Belgien,exact_name_team,1.0
+49891,Thibaut Courtois,Belgien,BEL,GK,4500000,True,thibaut_courtois__bel,Thibaut Courtois,BEL,Belgien,exact_name_team,1.0
+49535,Matz Sels,Belgien,BEL,GK,4500000,True,matz_sels__bel,Matz Sels,BEL,Belgien,exact_name_team,1.0
+48803,Alireza Beiranvand,Iran,IRN,GK,3000000,True,alireza_beiranvand__irn,Alireza Beiranvand,IRN,Iran,exact_name_team,1.0
+50404,Seyed Hossein Hosseini,Iran,IRN,GK,2500000,False,,,,,,0.6956521739130435
+49657,Nikola Vasilj,Bosnien-Hercegovina,BIH,GK,3000000,True,nikola_vasilj__bih,Nikola Vasilj,BIH,Bosnien-Hercegovina,exact_name_team,1.0
+49590,Mohammad Khalife,Iran,IRN,GK,2500000,True,mohammad_khalife__irn,Mohammad Khalife,IRN,Iran,exact_name_team,1.0
+49724,Payam Niazmand,Iran,IRN,GK,2500000,True,payam_niazmand__irn,Payam Niazmand,IRN,Iran,exact_name_team,1.0
+50388,Mladen Jurkas,Bosnien-Hercegovina,BIH,GK,2500000,False,,,,,,0.46153846153846156
+48992,David Cabezas,Ecuador,ECU,GK,2500000,True,david_cabezas__ecu,David Cabezas,ECU,Ecuador,exact_name_team,1.0
+49147,Gonzalo Valle,Ecuador,ECU,GK,3000000,True,gonzalo_valle__ecu,Gonzalo Valle,ECU,Ecuador,exact_name_team,1.0
+49518,Martin Zlomislic,Bosnien-Hercegovina,BIH,GK,2500000,True,martin_zlomisli__bih,Martin Zlomislic,BIH,Bosnien-Hercegovina,exact_name_team,1.0
+49692,Osman Hadzikic,Bosnien-Hercegovina,BIH,GK,2500000,True,osman_hadzikic__bih,Osman Hadzikic,BIH,Bosnien-Hercegovina,exact_name_team,1.0
+49182,Hernan Galindez,Ecuador,ECU,GK,3500000,True,hern_n_gal_ndez__ecu,Hernan Galindez,ECU,Ecuador,exact_name_team,1.0
+49602,Moises Ramirez,Ecuador,ECU,GK,2500000,True,moises_ramirez__ecu,Moises Ramirez,ECU,Ecuador,exact_name_team,1.0
+48930,Camilo Vargas,Colombia,COL,GK,4000000,True,camilo_vargas__col,Camilo Vargas,COL,Colombia,exact_name_team,1.0
+48812,Alvaro Montero,Colombia,COL,GK,4000000,True,alvaro_montero__col,Alvaro Montero,COL,Colombia,exact_name_team,1.0
+48995,David Ospina,Colombia,COL,GK,3500000,True,david_ospina__col,David Ospina,COL,Colombia,exact_name_team,1.0
+48955,Chris Brady,USA,USA,GK,2500000,True,chris_brady__usa,Chris Brady,USA,USA,exact_name_team,1.0
+49716,Patrick Schulte,USA,USA,GK,2500000,True,patrick_schulte__usa,Patrick Schulte,USA,USA,exact_name_team,1.0
+49531,Matt Freese,USA,USA,GK,3500000,True,matt_freese__usa,Matt Freese,USA,USA,exact_name_team,1.0
+49532,Matt Turner,USA,USA,GK,3000000,True,matt_turner__usa,Matt Turner,USA,USA,exact_name_team,1.0
+49839,Sergio Rochet,Uruguay,URU,GK,4000000,True,sergio_rochet__uru,Sergio Rochet,URU,Uruguay,exact_name_team,1.0
+49104,Fernando Muslera,Uruguay,URU,GK,4000000,True,fernando_muslera__uru,Fernando Muslera,URU,Uruguay,exact_name_team,1.0
+49557,Michael Woud,New Zealand,NZL,GK,2500000,True,michael_woud__nzl,Michael Woud,NZL,New Zealand,exact_name_team,1.0
+49825,Santiago Mele,Uruguay,URU,GK,3500000,True,santiago_mele__uru,Santiago Mele,URU,Uruguay,exact_name_team,1.0
+49766,Ricardo Goss,Sydafrika,RSA,GK,2500000,True,ricardo_goss__rsa,Ricardo Goss,RSA,Sydafrika,exact_name_team,1.0
+49794,Ronwen Williams,Sydafrika,RSA,GK,3000000,True,ronwen_williams__rsa,Ronwen Williams,RSA,Sydafrika,exact_name_team,1.0
+49855,Sipho Chaine,Sydafrika,RSA,GK,2500000,True,sipho_chaine__rsa,Sipho Chaine,RSA,Sydafrika,exact_name_team,1.0
+49689,Orlando Gill,Paraguay,PAR,GK,3000000,True,orlando_gill__par,Orlando Gill,PAR,Paraguay,exact_name_team,1.0
+49346,Juan Espinola,Paraguay,PAR,GK,2500000,True,juan_espinola__par,Juan Espinola,PAR,Paraguay,exact_name_team,1.0
+49777,Roberto 'Gatito' Fernandez,Paraguay,PAR,GK,3000000,True,roberto_gatito_fernandez__par,Roberto 'Gatito' Fernandez,PAR,Paraguay,exact_name_team,1.0
+48936,Carlos Miguel Coronel,Paraguay,PAR,GK,2500000,True,carlos_miguel_coronel__par,Carlos Miguel Coronel,PAR,Paraguay,exact_name_team,1.0
+49130,Gaston Olveira,Paraguay,PAR,GK,3000000,True,gaston_olveira__par,Gaston Olveira,PAR,Paraguay,exact_name_team,1.0
+49537,Max Crocombe,New Zealand,NZL,GK,2500000,True,max_crocombe__nzl,Max Crocombe,NZL,New Zealand,exact_name_team,1.0
+48924,Bum-Keun Song,Sydkorea,KOR,GK,2500000,True,bum_keun_song__kor,Bum-Keun Song,KOR,Sydkorea,exact_name_team,1.0
+48776,Alex Paulsen,New Zealand,NZL,GK,2500000,True,alex_paulsen__nzl,Alex Paulsen,NZL,New Zealand,exact_name_team,1.0
+49755,Raul Rangel,Mexico,MEX,GK,4000000,True,raul_rangel__mex,Raul Rangel,MEX,Mexico,exact_name_team,1.0
+49155,Guillermo Ochoa,Mexico,MEX,GK,3000000,True,guillermo_ochoa__mex,Guillermo Ochoa,MEX,Mexico,exact_name_team,1.0
+49840,Seung-Gyu Kim,Sydkorea,KOR,GK,3000000,True,kim_seung_gyu__kor,Seung-Gyu Kim,KOR,Sydkorea,exact_name_team,1.0
+48934,Carlos Acevedo,Mexico,MEX,GK,3500000,True,carlos_acevedo__mex,Carlos Acevedo,MEX,Mexico,exact_name_team,1.0
+49199,Hyeon-Woo Jo,Sydkorea,KOR,GK,3500000,True,jo_hyeon_woo__kor,Hyeon-Woo Jo,KOR,Sydkorea,exact_name_team,1.0
+49995,Zion Suzuki,Japan,JPN,GK,4000000,True,zion_suzuki__jpn,Zion Suzuki,JPN,Japan,exact_name_team,1.0
+49378,Keisuke Osako,Japan,JPN,GK,3500000,True,keisuke_sako__jpn,Keisuke Osako,JPN,Japan,exact_name_team,1.0
+49905,Tomoki Hayakawa,Japan,JPN,GK,3500000,True,tomoki_hayakawa__jpn,Tomoki Hayakawa,JPN,Japan,exact_name_team,1.0
+50361,Solomon Agbasi,Ghana,GHA,GK,2500000,False,,,,,,0.5
+48894,Benjamin Asare,Ghana,GHA,GK,3000000,True,benjamin_asare__gha,Benjamin Asare,GHA,Ghana,exact_name_team,1.0
+50362,Paul Reverson,Ghana,GHA,GK,2500000,False,,,,,,0.37037037037037035
+49334,Joseph Anang,Ghana,GHA,GK,2500000,True,joseph_anang__gha,Joseph Anang,GHA,Ghana,exact_name_team,1.0
+49424,Lawrence Ati Zigi,Ghana,GHA,GK,3000000,True,lawrence_ati_zigi__gha,Lawrence Ati Zigi,GHA,Ghana,exact_name_team,1.0
+49002,Dean Henderson,England,ENG,GK,4500000,True,dean_henderson__eng,Dean Henderson,ENG,England,exact_name_team,1.0
+49249,James Trafford,England,ENG,GK,4000000,True,james_trafford__eng,James Trafford,ENG,England,exact_name_team,1.0
+49317,Jordan Pickford,England,ENG,GK,5000000,True,jordan_pickford__eng,Jordan Pickford,ENG,England,exact_name_team,1.0
+49954,Yahia Fofana,Elfenbenskysten,CIV,GK,3000000,True,yahia_fofana__civ,Yahia Fofana,CIV,Elfenbenskysten,exact_name_team,1.0
+49580,Mohamed Kone,Elfenbenskysten,CIV,GK,3000000,True,mohamed_kone__civ,Mohamed Kone,CIV,Elfenbenskysten,exact_name_team,1.0
+48765,Alban Lafont,Elfenbenskysten,CIV,GK,2500000,True,alban_lafont__civ,Alban Lafont,CIV,Elfenbenskysten,exact_name_team,1.0
+48897,Bento Krepski,Brasilien,BRA,GK,5000000,True,bento_krepski__bra,Bento Krepski,BRA,Brasilien,exact_name_team,1.0
+49526,Mathew Ryan,Australien,AUS,GK,3000000,True,mathew_ryan__aus,Mathew Ryan,AUS,Australien,exact_name_team,1.0
+48806,Alisson Becker,Brasilien,BRA,GK,5000000,True,alisson_becker__bra,Alisson Becker,BRA,Brasilien,exact_name_team,1.0
+49042,Ederson Moraes,Brasilien,BRA,GK,5000000,True,ederson_moraes__bra,Ederson Moraes,BRA,Brasilien,exact_name_team,1.0
+50033,Weverton,Brasilien,BRA,GK,4000000,True,weverton__bra,Weverton,BRA,Brasilien,exact_name_team,1.0
+49721,Paul Izzo,Australien,AUS,GK,2500000,True,paul_izzo__aus,Paul Izzo,AUS,Australien,exact_name_team,1.0
+50274,Juan Musso,Argentina,ARG,GK,4000000,True,juan_musso__arg,Juan Musso,ARG,Argentina,exact_name_team,1.0
+49713,Patrick Beach,Australien,AUS,GK,2500000,True,patrick_beach__aus,Patrick Beach,AUS,Australien,exact_name_team,1.0
+49938,Walter Benitez,Argentina,ARG,GK,4000000,True,walter_benitez__arg,Walter Benitez,ARG,Argentina,exact_name_team,1.0
+49065,Emiliano Martinez,Argentina,ARG,GK,5000000,True,emiliano_mart_nez__arg,Emiliano Martinez,ARG,Argentina,exact_name_team,1.0
+49133,Geronimo Rulli,Argentina,ARG,GK,4500000,True,ger_nimo_rulli__arg,Geronimo Rulli,ARG,Argentina,exact_name_team,1.0
+50321,Oussama Benbout,Algeriet,ALG,GK,2500000,False,,,,,,0.6153846153846154
+48789,Alexis Guendouz,Algeriet,ALG,GK,3000000,True,alexis_guendouz__alg,Alexis Guendouz,ALG,Algeriet,exact_name_team,1.0
+49451,Luca Zidane,Algeriet,ALG,GK,3000000,True,luca_zidane__alg,Luca Zidane,ALG,Algeriet,exact_name_team,1.0
+49926,Viktor Johansson,Sverige,SWE,GK,3500000,True,viktor_johansson__swe,Viktor Johansson,SWE,Sverige,exact_name_team,1.0
+48845,Anthony Mandrea,Algeriet,ALG,GK,3000000,True,anthony_mandrea__alg,Anthony Mandrea,ALG,Algeriet,exact_name_team,1.0
+50318,Melvin Feycal Mastil,Algeriet,ALG,GK,2500000,False,,,,,,0.4375
+49546,Melker Ellborg,Sverige,SWE,GK,3500000,True,melker_ellborg__swe,Melker Ellborg,SWE,Sverige,exact_name_team,1.0
+49666,Noel Törnqvist,Sverige,SWE,GK,3500000,True,noel_tornqvist__swe,Noel Törnqvist,SWE,Sverige,exact_name_team,1.0
+49783,Robin Olsen,Sverige,SWE,GK,4000000,True,robin_olsen__swe,Robin Olsen,SWE,Sverige,exact_name_team,1.0
+49242,Jacob Widell Zetterström,Sverige,SWE,GK,3500000,True,jacob_widell_zetterstrom__swe,Jacob Widell Zetterström,SWE,Sverige,exact_name_team,1.0
+49414,Kristoffer Nordfeldt,Sverige,SWE,GK,4000000,True,kristoffer_nordfeldt__swe,Kristoffer Nordfeldt,SWE,Sverige,exact_name_team,1.0
+48768,Alejandro 'Alex' Remiro,Spanien,ESP,GK,4000000,False,,,,,,0.4444444444444444
+49920,Unai Simon,Spanien,ESP,GK,5000000,True,unai_sim_n__esp,Unai Simon,ESP,Spanien,exact_name_team,1.0
+48887,Bart Verbruggen,Holland,NED,GK,4500000,True,bart_verbruggen__ned,Bart Verbruggen,NED,Holland,exact_name_team,1.0
+48997,David Raya,Spanien,ESP,GK,5000000,True,david_raya__esp,David Raya,ESP,Spanien,exact_name_team,1.0
+50109,Joan Garcia,Spanien,ESP,GK,4000000,True,joan_garcia__esp,Joan Garcia,ESP,Spanien,exact_name_team,1.0
+50271,Robin Roefs,Holland,NED,GK,3500000,True,robin_roefs__ned,Robin Roefs,NED,Holland,exact_name_team,1.0
+49364,Justin Bijlow,Holland,NED,GK,3500000,True,justin_bijlow__ned,Justin Bijlow,NED,Holland,exact_name_team,1.0
+49502,Mark Flekken,Holland,NED,GK,4000000,True,mark_flekken__ned,Mark Flekken,NED,Holland,exact_name_team,1.0
+50022,Robin Risser,Frankrig,FRA,GK,4000000,True,robin_risser__fra,Robin Risser,FRA,Frankrig,exact_name_team,1.0
+48920,Brice Samba,Frankrig,FRA,GK,4500000,True,brice_samba__fra,Brice Samba,FRA,Frankrig,exact_name_team,1.0
+49562,Mike Maignan,Frankrig,FRA,GK,5000000,True,mike_maignan__fra,Mike Maignan,FRA,Frankrig,exact_name_team,1.0
+49454,Lucas Chevalier,Frankrig,FRA,GK,4000000,False,,,,,,0.46153846153846156
+49030,Dominik Livakovic,Kroatien,CRO,GK,4000000,True,dominik_livakovi__cro,Dominik Livakovic,CRO,Kroatien,exact_name_team,1.0
+49310,Jonas Urbig,Tyskland,GER,GK,4000000,True,jonas_urbig__ger,Jonas Urbig,GER,Tyskland,exact_name_team,1.0
+49109,Finn Dahmen,Tyskland,GER,GK,4000000,True,finn_dahmen__ger,Finn Dahmen,GER,Tyskland,exact_name_team,1.0
+49680,Oliver Baumann,Tyskland,GER,GK,5000000,True,oliver_baumann__ger,Oliver Baumann,GER,Tyskland,exact_name_team,1.0
+50081,Manuel Neuer,Tyskland,GER,GK,5000000,True,manuel_neuer__ger,Manuel Neuer,GER,Tyskland,exact_name_team,1.0
+48783,Alexander Nübel,Tyskland,GER,GK,4500000,True,alexander_n_bel__ger,Alexander Nübel,GER,Tyskland,exact_name_team,1.0
+49029,Dominik Kotarski,Kroatien,CRO,GK,3000000,True,dominik_kotarski__cro,Dominik Kotarski,CRO,Kroatien,exact_name_team,1.0
+49237,Ivor Pandur,Kroatien,CRO,GK,2500000,True,ivor_pandur__cro,Ivor Pandur,CRO,Kroatien,exact_name_team,1.0
+49659,Nikolas Polster,Østrig,AUT,GK,2500000,True,nikolas_polster__aut,Nikolas Polster,AUT,Østrig,exact_name_team,1.0
+49715,Patrick Pentz,Østrig,AUT,GK,3000000,True,patrick_pentz__aut,Patrick Pentz,AUT,Østrig,exact_name_team,1.0
+50313,Florian Wiegele,Østrig,AUT,GK,2500000,False,,,,,,0.6060606060606061
+48785,Alexander Schlager,Østrig,AUT,GK,3500000,True,alexander_schlager__aut,Alexander Schlager,AUT,Østrig,exact_name_team,1.0
+49550,Mert Günok,Tyrkiet,TUR,GK,3500000,True,mert_gunok__tur,Mert Günok,TUR,Tyrkiet,exact_name_team,1.0
+49614,Muhammed Sengezer,Tyrkiet,TUR,GK,3000000,True,muhammed_sengezer__tur,Muhammed Sengezer,TUR,Tyrkiet,exact_name_team,1.0
+49917,Ugurcan Cakir,Tyrkiet,TUR,GK,4000000,True,ugurcan_cakir__tur,Ugurcan Cakir,TUR,Tyrkiet,exact_name_team,1.0
+48810,Altay Bayindir,Tyrkiet,TUR,GK,3000000,True,altay_bayindir__tur,Altay Bayindir,TUR,Tyrkiet,exact_name_team,1.0
+49287,Joao Carvalho,Portugal,POR,GK,3500000,False,,,,,,0.6153846153846154
+49769,Ricardo Velho,Portugal,POR,GK,4000000,True,ricardo_velho__por,Ricardo Velho,POR,Portugal,exact_name_team,1.0
+49802,Rui Silva,Portugal,POR,GK,4000000,True,rui_silva__por,Rui Silva,POR,Portugal,exact_name_team,1.0
+49333,Jose Sa,Portugal,POR,GK,4500000,True,jos_s__por,Jose Sa,POR,Portugal,exact_name_team,1.0
+49024,Diogo Costa,Portugal,POR,GK,5000000,True,diogo_costa__por,Diogo Costa,POR,Portugal,exact_name_team,1.0
+50295,Jindrich Stanek,Tjekkiet,CZE,GK,2500000,False,,,,,,0.5517241379310345
+49523,Matej Kovar,Tjekkiet,CZE,GK,3000000,True,matej_kovar__cze,Matej Kovar,CZE,Tjekkiet,exact_name_team,1.0
+49514,Martin Jedlicka,Tjekkiet,CZE,GK,2500000,True,martin_jedlicka__cze,Martin Jedlicka,CZE,Tjekkiet,exact_name_team,1.0
+49469,Lukas Hornicek,Tjekkiet,CZE,GK,2500000,True,lukas_hornicek__cze,Lukas Hornicek,CZE,Tjekkiet,exact_name_team,1.0
+49520,Marvin Keller,Schweiz,SUI,GK,3000000,True,marvin_keller__sui,Marvin Keller,SUI,Schweiz,exact_name_team,1.0
+49709,Pascal Loretz,Schweiz,SUI,GK,3000000,True,pascal_loretz__sui,Pascal Loretz,SUI,Schweiz,exact_name_team,1.0
+49151,Gregor Kobel,Schweiz,SUI,GK,4000000,True,gregor_kobel__sui,Gregor Kobel,SUI,Schweiz,exact_name_team,1.0
+49987,Yvon Mvogo,Schweiz,SUI,GK,3000000,True,yvon_mvogo__sui,Yvon Mvogo,SUI,Schweiz,exact_name_team,1.0
+49008,Denis Zakaria,Schweiz,SUI,MID,3000000,True,denis_zakaria__sui,Denis Zakaria,SUI,Schweiz,exact_name_team,1.0
+49026,Djibril Sow,Schweiz,SUI,MID,3000000,True,djibril_sow__sui,Djibril Sow,SUI,Schweiz,exact_name_team,1.0
+49149,Granit Xhaka,Schweiz,SUI,MID,4000000,True,granit_xhaka__sui,Granit Xhaka,SUI,Schweiz,exact_name_team,1.0
+49928,Vincent Sierro,Schweiz,SUI,MID,2500000,False,,,,,,0.4666666666666667
+49664,Noah Okafor,Schweiz,SUI,MID,3000000,True,noah_okafor__sui,Noah Okafor,SUI,Schweiz,exact_name_team,1.0
+49763,Remo Freuler,Schweiz,SUI,MID,3500000,True,remo_freuler__sui,Remo Freuler,SUI,Schweiz,exact_name_team,1.0
+49559,Michel Aebischer,Schweiz,SUI,MID,2500000,True,michel_aebischer__sui,Michel Aebischer,SUI,Schweiz,exact_name_team,1.0
+49854,Simon Sohm,Schweiz,SUI,MID,2000000,False,,,,,,0.43478260869565216
+49301,Johan Manzambi,Schweiz,SUI,MID,3000000,True,johan_manzambi__sui,Johan Manzambi,SUI,Schweiz,exact_name_team,1.0
+48813,Alvyn Sanches,Schweiz,SUI,MID,2500000,False,,,,,,0.45454545454545453
+49107,Filip Ugrinic,Schweiz,SUI,MID,2000000,False,,,,,,0.38461538461538464
+48859,Ardon Jashari,Schweiz,SUI,MID,2000000,True,ardon_jashari__sui,Ardon Jashari,SUI,Schweiz,exact_name_team,1.0
+49087,Fabian Rieder,Schweiz,SUI,MID,3000000,True,fabian_rieder__sui,Fabian Rieder,SUI,Schweiz,exact_name_team,1.0
+49468,Lukas Cerv,Tjekkiet,CZE,MID,3000000,True,lukas_cerv__cze,Lukas Cerv,CZE,Tjekkiet,exact_name_team,1.0
+48735,Adam Karabec,Tjekkiet,CZE,MID,2500000,True,adam_karabec__cze,Adam Karabec,CZE,Tjekkiet,exact_name_team,1.0
+50291,David Doudera,Tjekkiet,CZE,MID,2000000,False,,,,,,0.5
+49723,Pavel Sulc,Tjekkiet,CZE,MID,4000000,True,pavel_sulc__cze,Pavel Sulc,CZE,Tjekkiet,exact_name_team,1.0
+49007,Denis Visinsky,Tjekkiet,CZE,MID,2000000,True,denis_visinsky__cze,Denis Visinsky,CZE,Tjekkiet,exact_name_team,1.0
+50293,Hugo Sochurek,Tjekkiet,CZE,MID,2000000,False,,,,,,0.56
+50290,Alexandr Sojka,Tjekkiet,CZE,MID,2000000,False,,,,,,0.47619047619047616
+48775,Alex Kral,Tjekkiet,CZE,MID,2000000,True,alex_kral__cze,Alex Kral,CZE,Tjekkiet,exact_name_team,1.0
+49903,Tomas Soucek,Tjekkiet,CZE,MID,3500000,True,tomas_soucek__cze,Tomas Soucek,CZE,Tjekkiet,exact_name_team,1.0
+49471,Lukas Provod,Tjekkiet,CZE,MID,3000000,True,lukas_provod__cze,Lukas Provod,CZE,Tjekkiet,exact_name_team,1.0
+49558,Michal Sadilek,Tjekkiet,CZE,MID,2500000,True,michal_sadilek__cze,Michal Sadilek,CZE,Tjekkiet,exact_name_team,1.0
+49934,Vladimir Darida,Tjekkiet,CZE,MID,2000000,True,vladimir_darida__cze,Vladimir Darida,CZE,Tjekkiet,exact_name_team,1.0
+48921,Bruno Fernandes,Portugal,POR,MID,7000000,True,bruno_fernandes__por,Bruno Fernandes,POR,Portugal,exact_name_team,1.0
+48898,Bernardo Silva,Portugal,POR,MID,5500000,True,bernardo_silva__por,Bernardo Silva,POR,Portugal,exact_name_team,1.0
+49799,Ruben Neves,Portugal,POR,MID,4000000,True,r_ben_neves__por,Ruben Neves,POR,Portugal,exact_name_team,1.0
+49931,Vitinha,Portugal,POR,MID,5500000,True,vitinha__por,Vitinha,POR,Portugal,exact_name_team,1.0
+50058,Samu Costa,Portugal,POR,MID,2500000,True,samu_costa__por,Samu Costa,POR,Portugal,exact_name_team,1.0
+49525,Matheus Nunes,Portugal,POR,MID,4500000,True,matheus_nunes__por,Matheus Nunes,POR,Portugal,exact_name_team,1.0
+49726,Pedro 'Pote' Goncalves,Portugal,POR,MID,3000000,True,pedro_pote_goncalves__por,Pedro 'Pote' Goncalves,POR,Portugal,exact_name_team,1.0
+49290,João Palhinha,Portugal,POR,MID,4500000,True,joao_palhinha__por,João Palhinha,POR,Portugal,exact_name_team,1.0
+49289,João Neves,Portugal,POR,MID,5000000,True,jo_o_neves__por,João Neves,POR,Portugal,exact_name_team,1.0
+49381,Kenan Yildiz,Tyrkiet,TUR,MID,4000000,True,kenan_yildiz__tur,Kenan Yildiz,TUR,Tyrkiet,exact_name_team,1.0
+48858,Arda Güler,Tyrkiet,TUR,MID,4500000,True,arda_g_ler__tur,Arda Güler,TUR,Tyrkiet,exact_name_team,1.0
+49386,Kerem Akturkoglu,Tyrkiet,TUR,MID,4500000,True,kerem_akt_rko_lu__tur,Kerem Akturkoglu,TUR,Tyrkiet,exact_name_team,1.0
+49688,Orkun Kökcü,Tyrkiet,TUR,MID,3000000,True,orkun_k_k__tur,Orkun Kökcü,TUR,Tyrkiet,exact_name_team,1.0
+49229,Ismail Yüksek,Tyrkiet,TUR,MID,2500000,True,i_smail_y_ksek__tur,Ismail Yüksek,TUR,Tyrkiet,exact_name_team,1.0
+49679,Oguz Aydin,Tyrkiet,TUR,MID,2000000,True,o_uz_ayd_n__tur,Oguz Aydin,TUR,Tyrkiet,exact_name_team,1.0
+48866,Atakan Karazor,Tyrkiet,TUR,MID,2000000,True,atakan_karazor__tur,Atakan Karazor,TUR,Tyrkiet,exact_name_team,1.0
+49219,Irfan Can Kahveci,Tyrkiet,TUR,MID,2000000,True,irfan_can_kahveci__tur,Irfan Can Kahveci,TUR,Tyrkiet,exact_name_team,1.0
+49365,Kaan Ayhan,Tyrkiet,TUR,MID,2000000,True,kaan_ayhan__tur,Kaan Ayhan,TUR,Tyrkiet,exact_name_team,1.0
+49164,Hakan Calhanoglu,Tyrkiet,TUR,MID,4000000,True,hakan_calhanoglu__tur,Hakan Calhanoglu,TUR,Tyrkiet,exact_name_team,1.0
+49815,Salih Özcan,Tyrkiet,TUR,MID,2000000,True,salih_ozcan__tur,Salih Özcan,TUR,Tyrkiet,exact_name_team,1.0
+49650,Nicolas Seiwald,Østrig,AUT,MID,2500000,True,nicolas_seiwald__aut,Nicolas Seiwald,AUT,Østrig,exact_name_team,1.0
+50311,Carney Chukwuemeka,Østrig,AUT,MID,2500000,False,,,,,,0.3870967741935484
+48961,Christoph Baumgartner,Østrig,AUT,MID,3500000,True,christoph_baumgartner__aut,Christoph Baumgartner,AUT,Østrig,exact_name_team,1.0
+49953,Xaver Schlager,Østrig,AUT,MID,2500000,True,xaver_schlager__aut,Xaver Schlager,AUT,Østrig,exact_name_team,1.0
+49790,Romano Schmid,Østrig,AUT,MID,3000000,True,romano_schmid__aut,Romano Schmid,AUT,Østrig,exact_name_team,1.0
+49407,Konrad Laimer,Østrig,AUT,MID,3000000,True,konrad_laimer__aut,Konrad Laimer,AUT,Østrig,exact_name_team,1.0
+49114,Florian Grillitsch,Østrig,AUT,MID,2500000,True,florian_grillitsch__aut,Florian Grillitsch,AUT,Østrig,exact_name_team,1.0
+48771,Alessandro Schöpf,Østrig,AUT,MID,2500000,True,alessandro_schopf__aut,Alessandro Schöpf,AUT,Østrig,exact_name_team,1.0
+49490,Marcel Sabitzer,Østrig,AUT,MID,4500000,True,marcel_sabitzer__aut,Marcel Sabitzer,AUT,Østrig,exact_name_team,1.0
+49717,Patrick Wimmer,Østrig,AUT,MID,3000000,True,patrick_wimmer__aut,Patrick Wimmer,AUT,Østrig,exact_name_team,1.0
+50315,Paul Wanner,Østrig,AUT,MID,2500000,False,,,,,,0.45454545454545453
+49907,Toni Fruk,Kroatien,CRO,MID,3000000,True,toni_fruk__cro,Toni Fruk,CRO,Kroatien,exact_name_team,1.0
+49509,Martin Baturina,Kroatien,CRO,MID,3000000,True,martin_baturina__cro,Martin Baturina,CRO,Kroatien,exact_name_team,1.0
+49658,Nikola Vlasic,Kroatien,CRO,MID,3000000,True,nikola_vla_i__cro,Nikola Vlasic,CRO,Kroatien,exact_name_team,1.0
+49656,Nikola Moro,Kroatien,CRO,MID,2500000,True,nikola_moro__cro,Nikola Moro,CRO,Kroatien,exact_name_team,1.0
+49501,Mario Pasalic,Kroatien,CRO,MID,3500000,True,mario_pa_ali__cro,Mario Pasalic,CRO,Kroatien,exact_name_team,1.0
+49465,Luka Modric,Kroatien,CRO,MID,4000000,True,luka_modri__cro,Luka Modric,CRO,Kroatien,exact_name_team,1.0
+49448,Lovro Majer,Kroatien,CRO,MID,2500000,False,,,,,,0.5
+49466,Luka Sucic,Kroatien,CRO,MID,2000000,True,luka_su_i__cro,Luka Sucic,CRO,Kroatien,exact_name_team,1.0
+49733,Petar Sucic,Kroatien,CRO,MID,3000000,True,petar_sucic__cro,Petar Sucic,CRO,Kroatien,exact_name_team,1.0
+50083,Nadiem Amiri,Tyskland,GER,MID,2500000,True,nadiem_amiri__ger,Nadiem Amiri,GER,Tyskland,exact_name_team,1.0
+50039,Mateo Kovacic,Kroatien,CRO,MID,4000000,True,mateo_kovacic__cro,Mateo Kovacic,CRO,Kroatien,exact_name_team,1.0
+49432,Leon Goretzka,Tyskland,GER,MID,4500000,True,leon_goretzka__ger,Leon Goretzka,GER,Tyskland,exact_name_team,1.0
+49708,Pascal Gross,Tyskland,GER,MID,3000000,True,pascal_gross__ger,Pascal Gross,GER,Tyskland,exact_name_team,1.0
+49336,Joshua Kimmich,Tyskland,GER,MID,5000000,True,joshua_kimmich__ger,Joshua Kimmich,GER,Tyskland,exact_name_team,1.0
+48850,Anton Stach,Tyskland,GER,MID,4500000,True,anton_stach__ger,Anton Stach,GER,Tyskland,exact_name_team,1.0
+50080,Jamie Leweling,Tyskland,GER,MID,3000000,True,jamie_leweling__ger,Jamie Leweling,GER,Tyskland,exact_name_team,1.0
+48769,Aleksandar Pavlovic,Tyskland,GER,MID,3500000,True,aleksandar_pavlovic__ger,Aleksandar Pavlovic,GER,Tyskland,exact_name_team,1.0
+49428,Lennart Karl,Tyskland,GER,MID,5000000,True,lennart_karl__ger,Lennart Karl,GER,Tyskland,exact_name_team,1.0
+50514,Assan Ouedraogo,Tyskland,GER,MID,3000000,False,,,,,,0.3870967741935484
+49115,Florian Wirtz,Tyskland,GER,MID,7500000,True,florian_wirtz__ger,Florian Wirtz,GER,Tyskland,exact_name_team,1.0
+49246,Jamal Musiala,Tyskland,GER,MID,6500000,True,jamal_musiala__ger,Jamal Musiala,GER,Tyskland,exact_name_team,1.0
+50079,Angelo Stiller,Tyskland,GER,MID,2500000,True,angelo_stiller__ger,Angelo Stiller,GER,Tyskland,exact_name_team,1.0
+49394,Kevin Schade,Tyskland,GER,MID,3500000,True,kevin_schade__ger,Kevin Schade,GER,Tyskland,exact_name_team,1.0
+49100,Felix Nmecha,Tyskland,GER,MID,3000000,True,felix_nmecha__ger,Felix Nmecha,GER,Tyskland,exact_name_team,1.0
+49485,Manu Koné,Frankrig,FRA,MID,3500000,True,manu_kon__fra,Manu Koné,FRA,Frankrig,exact_name_team,1.0
+49047,Eduardo Camavinga,Frankrig,FRA,MID,3000000,True,eduardo_camavinga__fra,Eduardo Camavinga,FRA,Frankrig,exact_name_team,1.0
+50023,Bradley Barcola,Frankrig,FRA,MID,4000000,True,bradley_barcola__fra,Bradley Barcola,FRA,Frankrig,exact_name_team,1.0
+49939,Warren Zaire-Emery,Frankrig,FRA,MID,3000000,True,warren_za_re_emery__fra,Warren Zaire-Emery,FRA,Frankrig,exact_name_team,1.0
+48869,Aurelien Tchouameni,Frankrig,FRA,MID,3500000,True,aur_lien_tchouam_ni__fra,Aurelien Tchouameni,FRA,Frankrig,exact_name_team,1.0
+48740,Adrien Rabiot,Frankrig,FRA,MID,4000000,True,adrien_rabiot__fra,Adrien Rabiot,FRA,Frankrig,exact_name_team,1.0
+49620,N'Golo Kante,Frankrig,FRA,MID,3000000,True,n_golo_kant__fra,N'Golo Kante,FRA,Frankrig,exact_name_team,1.0
+49376,Kees Smit,Holland,NED,MID,2000000,True,kees_smit__ned,Kees Smit,NED,Holland,exact_name_team,1.0
+49460,Luciano Valente,Holland,NED,MID,2500000,True,luciano_valente__ned,Luciano Valente,NED,Holland,exact_name_team,1.0
+50269,Marten de Roon,Holland,NED,MID,2500000,False,,,,,,0.6206896551724138
+50268,Justin Kluivert,Holland,NED,MID,2500000,False,,,,,,0.45161290322580644
+50265,Crysencio Summerville,Holland,NED,MID,3000000,True,crysencio_summerville__ned,Crysencio Summerville,NED,Holland,exact_name_team,1.0
+49882,Teun Koopmeiners,Holland,NED,MID,3500000,True,teun_koopmeiners__ned,Teun Koopmeiners,NED,Holland,exact_name_team,1.0
+49740,Quinten Timber,Holland,NED,MID,3000000,True,quinten_timber__ned,Quinten Timber,NED,Holland,exact_name_team,1.0
+49805,Ryan Gravenberch,Holland,NED,MID,3500000,True,ryan_gravenberch__ned,Ryan Gravenberch,NED,Holland,exact_name_team,1.0
+50267,Guus Til,Holland,NED,MID,2500000,False,,,,,,0.32
+50266,Frenkie de Jong,Holland,NED,MID,3000000,True,frenkie_de_jong__ned,Frenkie de Jong,NED,Holland,exact_name_team,1.0
+50112,Pablo Gavi,Spanien,ESP,MID,4000000,True,pablo_gavi__esp,Pablo Gavi,ESP,Spanien,exact_name_team,1.0
+49894,Tijjani Reijnders,Holland,NED,MID,6000000,True,tijjani_reijnders__ned,Tijjani Reijnders,NED,Holland,exact_name_team,1.0
+50270,Mats Wieffer,Holland,NED,MID,2500000,False,,,,,,0.4
+49103,Fermin Lopez,Spanien,ESP,MID,5000000,True,fermin_lopez__esp,Fermin Lopez,ESP,Spanien,exact_name_team,1.0
+49519,Martin Zubimendi,Spanien,ESP,MID,3500000,True,mart_n_zubimendi__esp,Martin Zubimendi,ESP,Spanien,exact_name_team,1.0
+49968,Yeremy Pino,Spanien,ESP,MID,3500000,True,yeremy_pino__esp,Yeremy Pino,ESP,Spanien,exact_name_team,1.0
+48773,Alex Baena,Spanien,ESP,MID,3500000,True,alex_baena__esp,Alex Baena,ESP,Spanien,exact_name_team,1.0
+49725,Pedri,Spanien,ESP,MID,6000000,True,pedri__esp,Pedri,ESP,Spanien,exact_name_team,1.0
+49702,Pablo Barrios,Spanien,ESP,MID,3000000,False,,,,,,0.45454545454545453
+48979,Dani Olmo,Spanien,ESP,MID,5000000,True,dani_olmo__esp,Dani Olmo,ESP,Spanien,exact_name_team,1.0
+49563,Mikel Merino,Spanien,ESP,MID,4500000,True,mikel_merino__esp,Mikel Merino,ESP,Spanien,exact_name_team,1.0
+49786,Rodri Hernandez,Spanien,ESP,MID,5000000,True,rodri_hernandez__esp,Rodri Hernandez,ESP,Spanien,exact_name_team,1.0
+48766,Aleix Garcia,Spanien,ESP,MID,3000000,False,,,,,,0.4444444444444444
+49088,Fabian Ruiz,Spanien,ESP,MID,4500000,True,fabian_ruiz__esp,Fabian Ruiz,ESP,Spanien,exact_name_team,1.0
+49496,Marcos Llorente,Spanien,ESP,MID,3500000,True,marcos_llorente__esp,Marcos Llorente,ESP,Spanien,exact_name_team,1.0
+49703,Pablo Fornals,Spanien,ESP,MID,3000000,False,,,,,,0.48
+49534,Mattias Svanberg,Sverige,SWE,MID,2500000,True,mattias_svanberg__swe,Mattias Svanberg,SWE,Sverige,exact_name_team,1.0
+50000,Ken Sema,Sverige,SWE,MID,2500000,True,ken_sema__swe,Ken Sema,SWE,Sverige,exact_name_team,1.0
+48780,Alexander Bernhardsson,Sverige,SWE,MID,2000000,True,alexander_bernhardsson__swe,Alexander Bernhardsson,SWE,Sverige,exact_name_team,1.0
+49278,Jesus Rodriguez,Spanien,ESP,MID,3500000,False,,,,,,0.2962962962962963
+49274,Jesper Karlström,Sverige,SWE,MID,3000000,True,jesper_karlstr_m__swe,Jesper Karlström,SWE,Sverige,exact_name_team,1.0
+49870,Taha Abdi Ali,Sverige,SWE,MID,2000000,True,taha_abdi_ali__swe,Taha Abdi Ali,SWE,Sverige,exact_name_team,1.0
+49959,Yasin Ayari,Sverige,SWE,MID,3500000,True,yasin_ayari__swe,Yasin Ayari,SWE,Sverige,exact_name_team,1.0
+49834,Sebastian Nanasi,Sverige,SWE,MID,2000000,False,,,,,,0.45161290322580644
+49452,Lucas Bergvall,Sverige,SWE,MID,2500000,True,lucas_bergvall__swe,Lucas Bergvall,SWE,Sverige,exact_name_team,1.0
+49194,Hugo Larsson,Sverige,SWE,MID,2500000,False,,,,,,0.5384615384615384
+48899,Besfort Zeneli,Sverige,SWE,MID,2000000,True,besfort_zeneli__swe,Besfort Zeneli,SWE,Sverige,exact_name_team,1.0
+49795,Roony Bardghji,Sverige,SWE,MID,3000000,True,roony_bardghji__swe,Roony Bardghji,SWE,Sverige,exact_name_team,1.0
+49204,Ibrahim Maza,Algeriet,ALG,MID,3000000,True,ibrahim_maza__alg,Ibrahim Maza,ALG,Algeriet,exact_name_team,1.0
+49747,Ramiz Zerrouki,Algeriet,ALG,MID,2500000,True,ramiz_zerrouki__alg,Ramiz Zerrouki,ALG,Algeriet,exact_name_team,1.0
+49093,Fares Chaibi,Algeriet,ALG,MID,2500000,True,fares_cha_bi__alg,Fares Chaibi,ALG,Algeriet,exact_name_team,1.0
+49185,Himad Abdelli,Algeriet,ALG,MID,2500000,True,himad_abdelli__alg,Himad Abdelli,ALG,Algeriet,exact_name_team,1.0
+49964,Yassine Titraoui,Algeriet,ALG,MID,2000000,True,yassine_titraoui__alg,Yassine Titraoui,ALG,Algeriet,exact_name_team,1.0
+49181,Herman Johansson,Sverige,SWE,MID,2500000,False,,,,,,0.42857142857142855
+49184,Hicham Boudaoui,Algeriet,ALG,MID,2500000,True,hicham_boudaoui__alg,Hicham Boudaoui,ALG,Algeriet,exact_name_team,1.0
+48737,Adil Aouchiche,Algeriet,ALG,MID,2000000,True,adil_aouchiche__alg,Adil Aouchiche,ALG,Algeriet,exact_name_team,1.0
+49191,Houssem Aouar,Algeriet,ALG,MID,2500000,True,houssem_aouar__alg,Houssem Aouar,ALG,Algeriet,exact_name_team,1.0
+49788,Rodrigo de Paul,Argentina,ARG,MID,4500000,True,rodrigo_de_paul__arg,Rodrigo de Paul,ARG,Argentina,exact_name_team,1.0
+49426,Leandro Paredes,Argentina,ARG,MID,4000000,True,leandro_paredes__arg,Leandro Paredes,ARG,Argentina,exact_name_team,1.0
+49138,Giovani Lo Celso,Argentina,ARG,MID,4000000,True,giovani_lo_celso__arg,Giovani Lo Celso,ARG,Argentina,exact_name_team,1.0
+49120,Franco Mastantuono,Argentina,ARG,MID,3500000,True,franco_mastantuono__arg,Franco Mastantuono,ARG,Argentina,exact_name_team,1.0
+48790,Alexis Mac Allister,Argentina,ARG,MID,4500000,True,alexis_mac_allister__arg,Alexis Mac Allister,ARG,Argentina,exact_name_team,1.0
+49085,Exequiel Palacios,Argentina,ARG,MID,3500000,True,exequiel_palacios__arg,Exequiel Palacios,ARG,Argentina,exact_name_team,1.0
+49223,Ismael Bennacer,Algeriet,ALG,MID,2500000,True,isma_l_bennacer__alg,Ismael Bennacer,ALG,Algeriet,exact_name_team,1.0
+50320,Nabil Bentaleb,Algeriet,ALG,MID,2500000,False,,,,,,0.5185185185185185
+48764,Alan Varela,Argentina,ARG,MID,2500000,True,alan_varela__arg,Alan Varela,ARG,Argentina,exact_name_team,1.0
+49642,Nico Paz,Argentina,ARG,MID,5000000,True,nico_paz__arg,Nico Paz,ARG,Argentina,exact_name_team,1.0
+50276,Valentin Barco,Argentina,ARG,MID,2500000,False,,,,,,0.5333333333333333
+49890,Thiago Almada,Argentina,ARG,MID,5500000,True,thiago_almada__arg,Thiago Almada,ARG,Argentina,exact_name_team,1.0
+49070,Enzo Fernandez,Argentina,ARG,MID,5000000,True,enzo_fern_ndez__arg,Enzo Fernandez,ARG,Argentina,exact_name_team,1.0
+49722,Paul Okon-Engstler,Australien,AUS,MID,2000000,True,paul_okon_engstler__aus,Paul Okon-Engstler,AUS,Australien,exact_name_team,1.0
+50302,Cristian Volpato,Australien,AUS,MID,2500000,False,,,,,,0.5454545454545454
+50301,Cameron Devlin,Australien,AUS,MID,2000000,False,,,,,,0.5
+48966,Connor Metcalfe,Australien,AUS,MID,3000000,True,connor_metcalfe__aus,Connor Metcalfe,AUS,Australien,exact_name_team,1.0
+49774,Riley McGree,Australien,AUS,MID,2500000,True,riley_mcgree__aus,Riley McGree,AUS,Australien,exact_name_team,1.0
+49718,Patrick Yazbek,Australien,AUS,MID,2000000,True,patrick_yazbek__aus,Patrick Yazbek,AUS,Australien,exact_name_team,1.0
+48756,Ajdin Hrustic,Australien,AUS,MID,2000000,True,ajdin_hrustic__aus,Ajdin Hrustic,AUS,Australien,exact_name_team,1.0
+48779,Alexander 'Alex' Robertson,Australien,AUS,MID,2000000,True,alexander_alex_robertson__aus,Alexander 'Alex' Robertson,AUS,Australien,exact_name_team,1.0
+48938,Casemiro,Brasilien,BRA,MID,4500000,True,casemiro__bra,Casemiro,BRA,Brasilien,exact_name_team,1.0
+49089,Fabinho,Brasilien,BRA,MID,2500000,False,,,,,,0.5333333333333333
+50304,Jackson Irvine,Australien,AUS,MID,2500000,False,,,,,,0.43478260869565216
+48751,Aiden O'Neill,Australien,AUS,MID,2500000,True,aiden_o_neill__aus,Aiden O'Neill,AUS,Australien,exact_name_team,1.0
+50305,Mathew Leckie,Australien,AUS,MID,2000000,False,,,,,,0.48
+49128,Gabriel Sara,Brasilien,BRA,MID,2500000,False,,,,,,0.6666666666666666
+50034,Lucas Paqueta,Brasilien,BRA,MID,5500000,True,lucas_paqueta__bra,Lucas Paqueta,BRA,Brasilien,exact_name_team,1.0
+50021,Bruno Guimaraes,Brasilien,BRA,MID,4500000,True,bruno_guimaraes__bra,Bruno Guimaraes,BRA,Brasilien,exact_name_team,1.0
+48986,Danilo dos Santos,Brasilien,BRA,MID,3000000,True,danilo_dos_santos__bra,Danilo dos Santos,BRA,Brasilien,exact_name_team,1.0
+48833,Andrey Santos,Brasilien,BRA,MID,3000000,False,,,,,,0.4444444444444444
+49932,Vitinho,Brasilien,BRA,MID,2500000,False,,,,,,0.47058823529411764
+50049,Ibrahim Sangare,Elfenbenskysten,CIV,MID,3000000,True,ibrahim_sangare__civ,Ibrahim Sangare,CIV,Elfenbenskysten,exact_name_team,1.0
+48958,Christ Inao Oulaï,Elfenbenskysten,CIV,MID,2000000,True,christ_inao_oulai__civ,Christ Inao Oulaï,CIV,Elfenbenskysten,exact_name_team,1.0
+49707,Parfait Guiagon,Elfenbenskysten,CIV,MID,2000000,True,parfait_guiagon__civ,Parfait Guiagon,CIV,Elfenbenskysten,exact_name_team,1.0
+49836,Seko Fofana,Elfenbenskysten,CIV,MID,2500000,True,seko_fofana__civ,Seko Fofana,CIV,Elfenbenskysten,exact_name_team,1.0
+49262,Jean Michael Seri,Elfenbenskysten,CIV,MID,2500000,True,jean_michael_seri__civ,Jean Michael Seri,CIV,Elfenbenskysten,exact_name_team,1.0
+49119,Franck Kessie,Elfenbenskysten,CIV,MID,3000000,True,franck_kessie__civ,Franck Kessie,CIV,Elfenbenskysten,exact_name_team,1.0
+49003,Declan Rice,England,ENG,MID,4500000,True,declan_rice__eng,Declan Rice,ENG,England,exact_name_team,1.0
+49059,Elliot Anderson,England,ENG,MID,4000000,True,elliot_anderson__eng,Elliot Anderson,ENG,England,exact_name_team,1.0
+50075,Eberechi Eze,England,ENG,MID,3000000,True,eberechi_eze__eng,Eberechi Eze,ENG,England,exact_name_team,1.0
+48965,Cole Palmer,England,ENG,MID,5000000,True,cole_palmer__eng,Cole Palmer,ENG,England,exact_name_team,1.0
+49316,Jordan Henderson,England,ENG,MID,3500000,True,jordan_henderson__eng,Jordan Henderson,ENG,England,exact_name_team,1.0
+49606,Morgan Rogers,England,ENG,MID,5500000,True,morgan_rogers__eng,Morgan Rogers,ENG,England,exact_name_team,1.0
+50078,Kobbie Mainoo,England,ENG,MID,2500000,True,kobbie_mainoo__eng,Kobbie Mainoo,ENG,England,exact_name_team,1.0
+49351,Jude Bellingham,England,ENG,MID,6000000,True,jude_bellingham__eng,Jude Bellingham,ENG,England,exact_name_team,1.0
+49208,Ibrahim Sulemana,Ghana,GHA,MID,2500000,True,ibrahim_sulemana__gha,Ibrahim Sulemana,GHA,Ghana,exact_name_team,1.0
+49058,Elisha Owusu,Ghana,GHA,MID,2500000,True,elisha_owusu__gha,Elisha Owusu,GHA,Ghana,exact_name_team,1.0
+49893,Thomas Partey,Ghana,GHA,MID,3000000,True,thomas_partey__gha,Thomas Partey,GHA,Ghana,exact_name_team,1.0
+50367,Augustine Boakye,Ghana,GHA,MID,2000000,False,,,,,,0.46153846153846156
+49402,Kodai Sano,Japan,JPN,MID,2000000,False,,,,,,0.7619047619047619
+49808,Ryunosuke Sato,Japan,JPN,MID,2000000,False,,,,,,0.5384615384615384
+49940,Wataru Endo,Japan,JPN,MID,2500000,True,wataru_endo__jpn,Wataru Endo,JPN,Japan,exact_name_team,1.0
+49874,Takumi Minamino,Japan,JPN,MID,4000000,True,takumi_minamino__jpn,Takumi Minamino,JPN,Japan,exact_name_team,1.0
+48972,Daichi Kamada,Japan,JPN,MID,3500000,True,daichi_kamada__jpn,Daichi Kamada,JPN,Japan,exact_name_team,1.0
+49873,Takefusa Kubo,Japan,JPN,MID,4000000,True,takefusa_kubo__jpn,Takefusa Kubo,JPN,Japan,exact_name_team,1.0
+49379,Keito Nakamura,Japan,JPN,MID,3000000,True,keito_nakamura__jpn,Keito Nakamura,JPN,Japan,exact_name_team,1.0
+49405,Koki Saito,Japan,JPN,MID,2000000,False,,,,,,0.6
+49361,Junya Ito,Japan,JPN,MID,3500000,True,junya_ito__jpn,Junya Ito,JPN,Japan,exact_name_team,1.0
+49775,Ritsu Doan,Japan,JPN,MID,4000000,True,ritsu_doan__jpn,Ritsu Doan,JPN,Japan,exact_name_team,1.0
+49296,Joel Chima Fujita,Japan,JPN,MID,2000000,False,,,,,,0.41379310344827586
+49416,Kwasi Sibo,Ghana,GHA,MID,2500000,True,kwasi_sibo__gha,Kwasi Sibo,GHA,Ghana,exact_name_team,1.0
+48856,Ao Tanaka,Japan,JPN,MID,2500000,True,ao_tanaka__jpn,Ao Tanaka,JPN,Japan,exact_name_team,1.0
+49197,Hyeok-kyu Kwon,Sydkorea,KOR,MID,2000000,False,,,,,,0.6923076923076923
+49200,Hyun-Jun Yang,Sydkorea,KOR,MID,2500000,True,hyun_jun_yang__kor,Hyun-Jun Yang,KOR,Sydkorea,exact_name_team,1.0
+49374,Kaoru Mitoma,Japan,JPN,MID,3500000,True,kaoru_mitoma__jpn,Kaoru Mitoma,JPN,Japan,exact_name_team,1.0
+50032,Jens Castrop,Sydkorea,KOR,MID,2500000,True,jens_castrop__kor,Jens Castrop,KOR,Sydkorea,exact_name_team,1.0
+49369,Kaishu Sano,Japan,JPN,MID,2500000,True,kaishu_sano__jpn,Kaishu Sano,JPN,Japan,exact_name_team,1.0
+49983,Yuki Soma,Japan,JPN,MID,2000000,False,,,,,,0.5263157894736842
+49243,Jae-Sung Lee,Sydkorea,KOR,MID,4000000,True,lee_jae_sung__kor,Jae-Sung Lee,KOR,Sydkorea,exact_name_team,1.0
+49201,Hyun-seok Hong,Sydkorea,KOR,MID,2000000,False,,,,,,0.5925925925925926
+49282,Ji-sung Eom,Sydkorea,KOR,MID,2000000,True,ji_sung_eom__kor,Ji-sung Eom,KOR,Sydkorea,exact_name_team,1.0
+49373,Kang-In Lee,Sydkorea,KOR,MID,5000000,True,lee_kang_in__kor,Kang-In Lee,KOR,Sydkorea,exact_name_team,1.0
+49841,Seung-Ho Paik,Sydkorea,KOR,MID,2000000,True,paik_seung_ho__kor,Seung-Ho Paik,KOR,Sydkorea,exact_name_team,1.0
+49357,Jun-ho Bae,Sydkorea,KOR,MID,2500000,True,jun_ho_bae__kor,Jun-ho Bae,KOR,Sydkorea,exact_name_team,1.0
+49283,Jin-gyu Kim,Sydkorea,KOR,MID,2500000,True,jin_gyu_kim__kor,Jin-gyu Kim,KOR,Sydkorea,exact_name_team,1.0
+49284,Jin-seob Park,Sydkorea,KOR,MID,2500000,True,jin_seob_park__kor,Jin-seob Park,KOR,Sydkorea,exact_name_team,1.0
+50031,In-beom Hwang,Sydkorea,KOR,MID,2500000,True,in_beom_hwang__kor,In-beom Hwang,KOR,Sydkorea,exact_name_team,1.0
+48918,Brian Gutierrez,Mexico,MEX,MID,2500000,True,brian_gutierrez__mex,Brian Gutierrez,MEX,Mexico,exact_name_team,1.0
+49013,Denzell Garcia,Mexico,MEX,MID,2000000,True,denzell_garcia__mex,Denzell Garcia,MEX,Mexico,exact_name_team,1.0
+48811,Alvaro Fidalgo,Mexico,MEX,MID,2500000,True,alvaro_fidalgo__mex,Alvaro Fidalgo,MEX,Mexico,exact_name_team,1.0
+49674,Obed Vargas,Mexico,MEX,MID,2500000,True,obed_vargas__mex,Obed Vargas,MEX,Mexico,exact_name_team,1.0
+49176,Hee-Chan Hwang,Sydkorea,KOR,MID,3000000,True,hwang_hee_chan__kor,Hee-Chan Hwang,KOR,Sydkorea,exact_name_team,1.0
+50029,Dong-gyeong Lee,Sydkorea,KOR,MID,2000000,True,dong_gyeong_lee__kor,Dong-gyeong Lee,KOR,Sydkorea,exact_name_team,1.0
+50284,Edson Alvarez,Mexico,MEX,MID,3000000,True,edson_alvarez__mex,Edson Alvarez,MEX,Mexico,exact_name_team,1.0
+49295,Joe Bell,New Zealand,NZL,MID,2500000,True,joe_bell__nzl,Joe Bell,NZL,New Zealand,exact_name_team,1.0
+49057,Elijah Just,New Zealand,NZL,MID,3000000,True,elijah_just__nzl,Elijah Just,NZL,New Zealand,exact_name_team,1.0
+49686,Orbelin Pineda,Mexico,MEX,MID,3000000,True,orbel_n_pineda__mex,Orbelin Pineda,MEX,Mexico,exact_name_team,1.0
+49075,Erik Lira,Mexico,MEX,MID,2500000,True,erik_lira__mex,Erik Lira,MEX,Mexico,exact_name_team,1.0
+50272,Gilberto Mora,Mexico,MEX,MID,2500000,False,,,,,,0.5806451612903226
+50283,Cesar Huerta,Mexico,MEX,MID,2500000,False,,,,,,0.5
+49074,Erick Sanchez,Mexico,MEX,MID,3000000,True,erick_sanchez__mex,Erick Sanchez,MEX,Mexico,exact_name_team,1.0
+50285,Luis Chavez,Mexico,MEX,MID,2000000,False,,,,,,0.5454545454545454
+50286,Luis Romo,Mexico,MEX,MID,2500000,False,,,,,,0.4
+49778,Roberto Alvarado,Mexico,MEX,MID,2500000,True,roberto_alvarado__mex,Roberto Alvarado,MEX,Mexico,exact_name_team,1.0
+48937,Carlos Rodriguez,Mexico,MEX,MID,2500000,True,carlos_rodriguez__mex,Carlos Rodriguez,MEX,Mexico,exact_name_team,1.0
+48928,Callum McCowatt,New Zealand,NZL,MID,2500000,True,callum_mccowatt__nzl,Callum McCowatt,NZL,New Zealand,exact_name_team,1.0
+49807,Ryan Thomas,New Zealand,NZL,MID,2500000,True,ryan_thomas__nzl,Ryan Thomas,NZL,New Zealand,exact_name_team,1.0
+49506,Marko Stamenic,New Zealand,NZL,MID,2500000,True,marko_stamenic__nzl,Marko Stamenic,NZL,New Zealand,exact_name_team,1.0
+49826,Sarpreet Singh,New Zealand,NZL,MID,2500000,True,sarpreet_singh__nzl,Sarpreet Singh,NZL,New Zealand,exact_name_team,1.0
+50054,Matthew Garbett,New Zealand,NZL,MID,2500000,True,matthew_garbett__nzl,Matthew Garbett,NZL,New Zealand,exact_name_team,1.0
+48777,Alex Rufer,New Zealand,NZL,MID,2500000,True,alex_rufer__nzl,Alex Rufer,NZL,New Zealand,exact_name_team,1.0
+48891,Ben Old,New Zealand,NZL,MID,2000000,True,ben_old__nzl,Ben Old,NZL,New Zealand,exact_name_team,1.0
+50053,Lachlan Bayliss,New Zealand,NZL,MID,2000000,True,lachlan_bayliss__nzl,Lachlan Bayliss,NZL,New Zealand,exact_name_team,1.0
+49561,Miguel Almiron,Paraguay,PAR,MID,3500000,True,miguel_almir_n__par,Miguel Almiron,PAR,Paraguay,exact_name_team,1.0
+50421,Alejandro Romero Gamarra,Paraguay,PAR,MID,3000000,False,,,,,,0.5555555555555556
+50420,Mauricio Magalhaes Prado,Paraguay,PAR,MID,2000000,False,,,,,,0.55
+50417,Gustavo Caballero,Paraguay,PAR,MID,2000000,False,,,,,,0.4375
+49860,Sphephelo Yaya Sithole,Sydafrika,RSA,MID,3000000,True,sphephelo_yaya_sithole__rsa,Sphephelo Yaya Sithole,RSA,Sydafrika,exact_name_team,1.0
+49880,Teboho Mokoena,Sydafrika,RSA,MID,3500000,True,teboho_mokoena__rsa,Teboho Mokoena,RSA,Sydafrika,exact_name_team,1.0
+48831,Andres Cubas,Paraguay,PAR,MID,2500000,True,andr_s_cubas__par,Andres Cubas,PAR,Paraguay,exact_name_team,1.0
+49459,Lucas Ramon Romero,Paraguay,PAR,MID,2000000,True,lucas_ramon_romero__par,Lucas Ramon Romero,PAR,Paraguay,exact_name_team,1.0
+48976,Damian Bobadilla,Paraguay,PAR,MID,2500000,True,dami_n_bobadilla__par,Damian Bobadilla,PAR,Paraguay,exact_name_team,1.0
+49529,Matias Galarza Fonda,Paraguay,PAR,MID,2500000,True,matias_galarza_fonda__par,Matias Galarza Fonda,PAR,Paraguay,exact_name_team,1.0
+49748,Ramon Sosa,Paraguay,PAR,MID,3000000,True,ram_n_sosa__par,Ramon Sosa,PAR,Paraguay,exact_name_team,1.0
+49020,Diego Gomez,Paraguay,PAR,MID,3000000,True,diego_g_mez__par,Diego Gomez,PAR,Paraguay,exact_name_team,1.0
+49192,Hugo Cuenca,Paraguay,PAR,MID,2000000,True,hugo_cuenca__par,Hugo Cuenca,PAR,Paraguay,exact_name_team,1.0
+48909,Braian Ojeda,Paraguay,PAR,MID,2000000,True,braian_ojeda__par,Braian Ojeda,PAR,Paraguay,exact_name_team,1.0
+49293,Joaquin Piquerez,Uruguay,URU,MID,2500000,True,joaqu_n_piquerez__uru,Joaquin Piquerez,URU,Uruguay,exact_name_team,1.0
+49096,Federico Valverde,Uruguay,URU,MID,5500000,True,federico_valverde__uru,Federico Valverde,URU,Uruguay,exact_name_team,1.0
+50308,Rodrigo Bentancur,Uruguay,URU,MID,3000000,True,rodrigo_bentancur__uru,Rodrigo Bentancur,URU,Uruguay,exact_name_team,1.0
+49887,Themba Zwane,Sydafrika,RSA,MID,2500000,True,themba_zwane__rsa,Themba Zwane,RSA,Sydafrika,exact_name_team,1.0
+49645,Nicolas Fonseca,Uruguay,URU,MID,2500000,True,nicolas_fonseca__uru,Nicolas Fonseca,URU,Uruguay,exact_name_team,1.0
+49261,Jayden Adams,Sydafrika,RSA,MID,2000000,True,jayden_adams__rsa,Jayden Adams,RSA,Sydafrika,exact_name_team,1.0
+49884,Thalente Mbatha,Sydafrika,RSA,MID,3000000,True,thalente_mbatha__rsa,Thalente Mbatha,RSA,Sydafrika,exact_name_team,1.0
+50282,Giorgian De Arrascaeta,Uruguay,URU,MID,4000000,True,giorgian_de_arrascaeta__uru,Giorgian De Arrascaeta,URU,Uruguay,exact_name_team,1.0
+50309,Rodrigo Zalazar,Uruguay,URU,MID,3500000,False,,,,,,0.6666666666666666
+49538,Maxi Araujo,Uruguay,URU,MID,5000000,True,maxi_araujo__uru,Maxi Araujo,URU,Uruguay,exact_name_team,1.0
+49348,Juan Manuel Sanabria,Uruguay,URU,MID,3000000,True,juan_manuel_sanabria__uru,Juan Manuel Sanabria,URU,Uruguay,exact_name_team,1.0
+50307,Agustin Canobbio,Uruguay,URU,MID,2500000,False,,,,,,0.5806451612903226
+49644,Nicolas de la Cruz,Uruguay,URU,MID,3000000,True,nicolas_de_la_cruz__uru,Nicolas de la Cruz,URU,Uruguay,exact_name_team,1.0
+49066,Emiliano Martinez Toranza,Uruguay,URU,MID,2500000,True,emiliano_martinez_toranza__uru,Emiliano Martinez Toranza,URU,Uruguay,exact_name_team,1.0
+49876,Tanner Tessmann,USA,USA,MID,2500000,True,tanner_tessmann__usa,Tanner Tessmann,USA,USA,exact_name_team,1.0
+48915,Brenden Aaronson,USA,USA,MID,3000000,True,brenden_aaronson__usa,Brenden Aaronson,USA,USA,exact_name_team,1.0
+49481,Malik Tillman,USA,USA,MID,4000000,True,malik_tillman__usa,Malik Tillman,USA,USA,exact_name_team,1.0
+49139,Giovanni Reyna,USA,USA,MID,3000000,True,giovanni_reyna__usa,Giovanni Reyna,USA,USA,exact_name_team,1.0
+48968,Cristian Roldan,USA,USA,MID,2500000,True,cristian_roldan__usa,Cristian Roldan,USA,USA,exact_name_team,1.0
+49942,Weston McKennie,USA,USA,MID,3500000,True,weston_mckennie__usa,Weston McKennie,USA,USA,exact_name_team,1.0
+49913,Tyler Adams,USA,USA,MID,3000000,True,tyler_adams__usa,Tyler Adams,USA,USA,exact_name_team,1.0
+50244,Carlos Andres Gomez,Colombia,COL,MID,2000000,True,carlos_andres_gomez__col,Carlos Andres Gomez,COL,Colombia,exact_name_team,1.0
+49266,Jefferson Lerma,Colombia,COL,MID,3000000,True,jefferson_lerma__col,Jefferson Lerma,COL,Colombia,exact_name_team,1.0
+48750,Aidan Morris,USA,USA,MID,2500000,True,aidan_morris__usa,Aidan Morris,USA,USA,exact_name_team,1.0
+50248,Alex Zendejas,USA,USA,MID,2000000,False,,,,,,0.4375
+49833,Sebastian Berhalter,USA,USA,MID,3000000,True,sebastian_berhalter__usa,Sebastian Berhalter,USA,USA,exact_name_team,1.0
+49487,Manuel Ugarte,Uruguay,URU,MID,3500000,True,manuel_ugarte__uru,Manuel Ugarte,URU,Uruguay,exact_name_team,1.0
+49248,James Rodriguez,Colombia,COL,MID,4000000,True,james_rodr_guez__col,James Rodriguez,COL,Colombia,exact_name_team,1.0
+49350,Juan Quintero,Colombia,COL,MID,2500000,True,juan_quintero__col,Juan Quintero,COL,Colombia,exact_name_team,1.0
+49279,Jhon Arias,Colombia,COL,MID,3000000,True,jhon_arias__col,Jhon Arias,COL,Colombia,exact_name_team,1.0
+49771,Richard Rios,Colombia,COL,MID,3500000,True,richard_r_os__col,Richard Rios,COL,Colombia,exact_name_team,1.0
+49388,Kevin Castano,Colombia,COL,MID,3000000,True,kevin_casta_o__col,Kevin Castano,COL,Colombia,exact_name_team,1.0
+49349,Juan Portilla,Colombia,COL,MID,2500000,True,juan_portilla__col,Juan Portilla,COL,Colombia,exact_name_team,1.0
+49250,Jaminton Campaz,Colombia,COL,MID,2500000,True,jaminton_campaz__col,Jaminton Campaz,COL,Colombia,exact_name_team,1.0
+49320,Jorge Carrascal,Colombia,COL,MID,2500000,True,jorge_carrascal__col,Jorge Carrascal,COL,Colombia,exact_name_team,1.0
+50356,Denil Castillo,Ecuador,ECU,MID,2500000,False,,,,,,0.4444444444444444
+49160,Gustavo Puerta,Colombia,COL,MID,2500000,True,gustavo_puerta__col,Gustavo Puerta,COL,Colombia,exact_name_team,1.0
+49382,Kendry Paez,Ecuador,ECU,MID,3000000,True,kendry_p_ez__ecu,Kendry Paez,ECU,Ecuador,exact_name_team,1.0
+49146,Gonzalo Plata,Ecuador,ECU,MID,3500000,True,gonzalo_plata__ecu,Gonzalo Plata,ECU,Ecuador,exact_name_team,1.0
+48762,Alan Franco,Ecuador,ECU,MID,2500000,True,alan_franco__ecu,Alan Franco,ECU,Ecuador,exact_name_team,1.0
+49601,Moises Caicedo,Ecuador,ECU,MID,3000000,True,mois_s_caicedo__ecu,Moises Caicedo,ECU,Ecuador,exact_name_team,1.0
+49308,John Yeboah,Ecuador,ECU,MID,3000000,True,john_yeboah__ecu,John Yeboah,ECU,Ecuador,exact_name_team,1.0
+49318,Jordy Alcivar,Ecuador,ECU,MID,2000000,True,jordy_alcivar__ecu,Jordy Alcivar,ECU,Ecuador,exact_name_team,1.0
+48763,Alan Minda,Ecuador,ECU,MID,3000000,True,alan_minda__ecu,Alan Minda,ECU,Ecuador,exact_name_team,1.0
+49730,Pedro Vite,Ecuador,ECU,MID,2500000,True,pedro_vite__ecu,Pedro Vite,ECU,Ecuador,exact_name_team,1.0
+49955,Yaimar Medina,Ecuador,ECU,MID,2000000,True,yaimar_medina__ecu,Yaimar Medina,ECU,Ecuador,exact_name_team,1.0
+48823,Amir Hadziahmetovic,Bosnien-Hercegovina,BIH,MID,2000000,True,amir_hadziahmetovic__bih,Amir Hadziahmetovic,BIH,Bosnien-Hercegovina,exact_name_team,1.0
+49233,Ivan Basic,Bosnien-Hercegovina,BIH,MID,2500000,True,ivan_ba_i__bih,Ivan Basic,BIH,Bosnien-Hercegovina,exact_name_team,1.0
+49078,Ermin Mahmic,Bosnien-Hercegovina,BIH,MID,2000000,True,ermin_mahmic__bih,Ermin Mahmic,BIH,Bosnien-Hercegovina,exact_name_team,1.0
+48817,Amar Memic,Bosnien-Hercegovina,BIH,MID,3000000,True,amar_memi__bih,Amar Memic,BIH,Bosnien-Hercegovina,exact_name_team,1.0
+49079,Esmir Bajraktarevic,Bosnien-Hercegovina,BIH,MID,3000000,True,esmir_bajraktarevic__bih,Esmir Bajraktarevic,BIH,Bosnien-Hercegovina,exact_name_team,1.0
+49040,Dzenis Burnic,Bosnien-Hercegovina,BIH,MID,2500000,True,d_enis_burni__bih,Dzenis Burnic,BIH,Bosnien-Hercegovina,exact_name_team,1.0
+49589,Mohammad Ghorbani,Iran,IRN,MID,2500000,True,mohammed_ghorbani__irn,Mohammad Ghorbani,IRN,Iran,exact_name_team,1.0
+48862,Armin Gigovic,Bosnien-Hercegovina,BIH,MID,3000000,True,armin_gigovic__bih,Armin Gigovic,BIH,Bosnien-Hercegovina,exact_name_team,1.0
+48896,Benjamin Tahirovic,Bosnien-Hercegovina,BIH,MID,3000000,True,benjamin_tahirovic__bih,Benjamin Tahirovic,BIH,Bosnien-Hercegovina,exact_name_team,1.0
+49387,Kerim Alajbegovic,Bosnien-Hercegovina,BIH,MID,3500000,True,kerim_alajbegovi__bih,Kerim Alajbegovic,BIH,Bosnien-Hercegovina,exact_name_team,1.0
+49816,Saman Ghoddos,Iran,IRN,MID,2500000,True,saman_ghoddos__irn,Saman Ghoddos,IRN,Iran,exact_name_team,1.0
+49811,Saeid Ezatolahi,Iran,IRN,MID,2500000,True,saeid_ezatolahi__irn,Saeid Ezatolahi,IRN,Iran,exact_name_team,1.0
+50375,Amir Mohammad Razzaghinia,Iran,IRN,MID,2000000,False,,,,,,0.55
+50066,Mehdi Ghayedi,Iran,IRN,MID,3000000,True,mehdi_ghayedi__irn,Mehdi Ghayedi,IRN,Iran,exact_name_team,1.0
+50372,Roozbeh Cheshmi,Iran,IRN,MID,2000000,False,,,,,,0.4444444444444444
+49685,Omid Noorafkan,Iran,IRN,MID,2500000,True,omid_noorafkan__irn,Omid Noorafkan,IRN,Iran,exact_name_team,1.0
+49236,Ivan Sunjic,Bosnien-Hercegovina,BIH,MID,3000000,True,ivan_unji__bih,Ivan Sunjic,BIH,Bosnien-Hercegovina,exact_name_team,1.0
+50373,Mehdi Torabi,Iran,IRN,MID,2000000,False,,,,,,0.75
+49649,Nicolas Raskin,Belgien,BEL,MID,2500000,True,nicolas_raskin__bel,Nicolas Raskin,BEL,Belgien,exact_name_team,1.0
+49170,Hans Vanaken,Belgien,BEL,MID,4000000,True,hans_vanaken__bel,Hans Vanaken,BEL,Belgien,exact_name_team,1.0
+49974,Youri Tielemans,Belgien,BEL,MID,3500000,True,youri_tielemans__bel,Youri Tielemans,BEL,Belgien,exact_name_team,1.0
+48872,Axel Witsel,Belgien,BEL,MID,3000000,True,axel_witsel__bel,Axel Witsel,BEL,Belgien,exact_name_team,1.0
+49390,Kevin De Bruyne,Belgien,BEL,MID,7000000,True,kevin_de_bruyne__bel,Kevin De Bruyne,BEL,Belgien,exact_name_team,1.0
+48798,Ali Jasim,Irak,IRQ,MID,3000000,True,ali_jasim__irq,Ali Jasim,IRQ,Irak,exact_name_team,1.0
+48822,Amir Al Ammari,Irak,IRQ,MID,3000000,True,amir_al_ammari__irq,Amir Al Ammari,IRQ,Irak,exact_name_team,1.0
+50380,Ahmed Qasem,Irak,IRQ,MID,2000000,False,,,,,,0.5
+48753,Aimar Sher,Irak,IRQ,MID,2500000,True,aimar_sher__irq,Aimar Sher,IRQ,Irak,exact_name_team,1.0
+49734,Peter Gwargis,Irak,IRQ,MID,2000000,True,peter_gwargis__irq,Peter Gwargis,IRQ,Irak,exact_name_team,1.0
+49395,Kevin Yakob,Irak,IRQ,MID,2000000,True,kevin_yakob__irq,Kevin Yakob,IRQ,Irak,exact_name_team,1.0
+48951,Charles Vanhoutte,Belgien,BEL,MID,2000000,False,,,,,,0.5405405405405406
+49021,Diego Moreira,Belgien,BEL,MID,2000000,True,diego_moreira__bel,Diego Moreira,BEL,Belgien,exact_name_team,1.0
+48815,Amadou Onana,Belgien,BEL,MID,3000000,True,amadou_onana__bel,Amadou Onana,BEL,Belgien,exact_name_team,1.0
+49203,Ibrahim Bayesh,Irak,IRQ,MID,2500000,True,ibrahim_bayesh__irq,Ibrahim Bayesh,IRQ,Irak,exact_name_team,1.0
+49988,Zaid Ismail,Irak,IRQ,MID,2500000,True,zaid_ismail__irq,Zaid Ismail,IRQ,Irak,exact_name_team,1.0
+49174,Hasan Abdulkareem,Irak,IRQ,MID,2000000,True,hasan_abdulkareem__irq,Hasan Abdulkareem,IRQ,Irak,exact_name_team,1.0
+49505,Marko Farji,Irak,IRQ,MID,2500000,True,marko_farji__irq,Marko Farji,IRQ,Irak,exact_name_team,1.0
+48935,Carlos Harvey,Panama,PAN,MID,2500000,True,carlos_harvey__pan,Carlos Harvey,PAN,Panama,exact_name_team,1.0
+48734,Adalberto Carrasquilla,Panama,PAN,MID,2500000,True,adalberto_carrasquilla__pan,Adalberto Carrasquilla,PAN,Panama,exact_name_team,1.0
+50253,Alberto Quintero,Panama,PAN,MID,2000000,False,,,,,,0.3870967741935484
+48838,Anibal Godoy,Panama,PAN,MID,2500000,True,an_bal_godoy__pan,Anibal Godoy,PAN,Panama,exact_name_team,1.0
+48967,Cristian Martinez,Panama,PAN,MID,2500000,True,cristian_mart_nez__pan,Cristian Martinez,PAN,Panama,exact_name_team,1.0
+49971,Yoel Barcenas,Panama,PAN,MID,2000000,True,yoel_barcenas__pan,Yoel Barcenas,PAN,Panama,exact_name_team,1.0
+48946,Cesar Yanis,Panama,PAN,MID,2000000,True,c_sar_yanis__pan,Cesar Yanis,PAN,Panama,exact_name_team,1.0
+50254,Azarias Londono,Panama,PAN,MID,2000000,False,,,,,,0.4444444444444444
+49993,Zidane Iqbal,Irak,IRQ,MID,2500000,True,zidane_iqbal__irq,Zidane Iqbal,IRQ,Irak,exact_name_team,1.0
+49977,Youssef Amyn,Irak,IRQ,MID,2500000,True,youssef_amyn__irq,Youssef Amyn,IRQ,Irak,exact_name_team,1.0
+49329,Jose Luis Rodriguez Francis,Panama,PAN,MID,2500000,True,jose_luis_rodriguez_francis__pan,Jose Luis Rodriguez Francis,PAN,Panama,exact_name_team,1.0
+49479,Mahmoud Trezeguet,Egypten,EGY,MID,3000000,True,mahmoud_trezeguet__egy,Mahmoud Trezeguet,EGY,Egypten,exact_name_team,1.0
+49163,Haissem Hassan,Egypten,EGY,MID,2000000,True,haissem_hassan__egy,Haissem Hassan,EGY,Egypten,exact_name_team,1.0
+49064,Emam Ashour,Egypten,EGY,MID,2500000,True,emam_ashour__egy,Emam Ashour,EGY,Egypten,exact_name_team,1.0
+49222,Islam Issa,Egypten,EGY,MID,2000000,False,,,,,,0.45454545454545453
+49522,Marwan Ateya,Egypten,EGY,MID,3000000,True,marwan_ateya__egy,Marwan Ateya,EGY,Egypten,exact_name_team,1.0
+49598,Mohanad Lasheen,Egypten,EGY,MID,2500000,True,mohanad_lasheen__egy,Mohanad Lasheen,EGY,Egypten,exact_name_team,1.0
+49166,Hamdy Fathy,Egypten,EGY,MID,2500000,True,hamdy_fathy__egy,Hamdy Fathy,EGY,Egypten,exact_name_team,1.0
+49478,Mahmoud Saber,Egypten,EGY,MID,2500000,True,mahmoud_saber__egy,Mahmoud Saber,EGY,Egypten,exact_name_team,1.0
+49202,Ibrahim Adel,Egypten,EGY,MID,3000000,True,ibrahim_adel__egy,Ibrahim Adel,EGY,Egypten,exact_name_team,1.0
+49997,Ahmed Zizo,Egypten,EGY,MID,3000000,True,zizo__egy,Ahmed Zizo,EGY,Egypten,exact_name_team,1.0
+49581,Mohamed Rabie Hrimat,Marokko,MAR,MID,2000000,True,mohamed_rabie_hrimat__mar,Mohamed Rabie Hrimat,MAR,Marokko,exact_name_team,1.0
+50258,Ayoube Amaimouni-Echghouyab,Marokko,MAR,MID,2500000,False,,,,,,0.4864864864864865
+50262,Samir El Mourabet,Marokko,MAR,MID,2000000,False,,,,,,0.5625
+50263,Soufiane Rahimi,Marokko,MAR,MID,2500000,False,,,,,,0.6153846153846154
+50260,Gessime Yassine,Marokko,MAR,MID,2000000,False,,,,,,0.5
+50073,Nabil 'Dunga' Emad,Egypten,EGY,MID,2000000,True,nabil_dunga_emad__egy,Nabil 'Dunga' Emad,EGY,Egypten,exact_name_team,1.0
+50072,Mostafa Ziko,Egypten,EGY,MID,2000000,True,mostafa_ziko__egy,Mostafa Ziko,EGY,Egypten,exact_name_team,1.0
+49856,Sofyan Amrabat,Marokko,MAR,MID,2500000,True,sofyan_amrabat__mar,Sofyan Amrabat,MAR,Marokko,exact_name_team,1.0
+49165,Hakim Ziyech,Marokko,MAR,MID,2500000,True,hakim_ziyech__mar,Hakim Ziyech,MAR,Marokko,exact_name_team,1.0
+50259,Ayyoub Bouaddi,Marokko,MAR,MID,2000000,False,,,,,,0.5714285714285714
+49056,Eliesse Ben Seghir,Marokko,MAR,MID,3000000,True,eliesse_ben_seghir__mar,Eliesse Ben Seghir,MAR,Marokko,exact_name_team,1.0
+48883,Azzedine Ounahi,Marokko,MAR,MID,3000000,True,azzedine_ounahi__mar,Azzedine Ounahi,MAR,Marokko,exact_name_team,1.0
+49230,Ismaila Sarr,Senegal,SEN,MID,3500000,True,ismaila_sarr__sen,Ismaila Sarr,SEN,Senegal,exact_name_team,1.0
+49216,Iliman Ndiaye,Senegal,SEN,MID,3000000,True,iliman_ndiaye__sen,Iliman Ndiaye,SEN,Senegal,exact_name_team,1.0
+50094,Pape Alassane Gueye,Senegal,SEN,MID,3000000,True,pape_alassane_gueye__sen,Pape Alassane Gueye,SEN,Senegal,exact_name_team,1.0
+48953,Cheikh Niasse,Senegal,SEN,MID,2000000,False,,,,,,0.5806451612903226
+49623,Nampalys Mendy,Senegal,SEN,MID,2000000,False,,,,,,0.48
+49211,Idrissa Gana Gueye,Senegal,SEN,MID,3000000,True,idrissa_gana_gueye__sen,Idrissa Gana Gueye,SEN,Senegal,exact_name_team,1.0
+50091,Bara Sapoko Ndiaye,Senegal,SEN,MID,2000000,True,bara_sapoko_ndiaye__sen,Bara Sapoko Ndiaye,SEN,Senegal,exact_name_team,1.0
+49710,Pathe Ciss,Senegal,SEN,MID,2500000,True,path_ciss__sen,Pathe Ciss,SEN,Senegal,exact_name_team,1.0
+49420,Lamine Camara,Senegal,SEN,MID,3000000,True,lamine_camara__sen,Lamine Camara,SEN,Senegal,exact_name_team,1.0
+49205,Ibrahim Mbaye,Senegal,SEN,MID,4000000,True,ibrahim_mbaye__sen,Ibrahim Mbaye,SEN,Senegal,exact_name_team,1.0
+49706,Pape Matar Sarr,Senegal,SEN,MID,2500000,True,pape_matar_sarr__sen,Pape Matar Sarr,SEN,Senegal,exact_name_team,1.0
+50092,Habib Diarra,Senegal,SEN,MID,2500000,True,habib_diarra__sen,Habib Diarra,SEN,Senegal,exact_name_team,1.0
+48900,Bilal El Khannouss,Marokko,MAR,MID,3000000,True,bilal_el_khannouss__mar,Bilal El Khannouss,MAR,Marokko,exact_name_team,1.0
+49699,Oussama Targhalline,Marokko,MAR,MID,2500000,True,oussama_targhalline__mar,Oussama Targhalline,MAR,Marokko,exact_name_team,1.0
+49227,Ismael Saibari,Marokko,MAR,MID,3500000,True,ismael_saibari__mar,Ismael Saibari,MAR,Marokko,exact_name_team,1.0
+49634,Neil El Aynaoui,Marokko,MAR,MID,3000000,True,neil_el_aynaoui__mar,Neil El Aynaoui,MAR,Marokko,exact_name_team,1.0
+49607,Mortadha Ben Ouanes,Tunesien,TUN,MID,2000000,True,mortadha_ben_ouanes__tun,Mortadha Ben Ouanes,TUN,Tunesien,exact_name_team,1.0
+49397,Khalil Ayari,Tunesien,TUN,MID,2000000,True,khalil_ayari__tun,Khalil Ayari,TUN,Tunesien,exact_name_team,1.0
+49751,Rani Khedira,Tunesien,TUN,MID,3000000,True,rani_khedira__tun,Rani Khedira,TUN,Tunesien,exact_name_team,1.0
+48839,Anis Ben Slimane,Tunesien,TUN,MID,2500000,True,anis_ben_slimane__tun,Anis Ben Slimane,TUN,Tunesien,exact_name_team,1.0
+48754,Aissa Laidouni,Tunesien,TUN,MID,2000000,False,,,,,,0.5454545454545454
+48825,Amor Layouni,Tunesien,TUN,MID,2000000,False,,,,,,0.5384615384615384
+49054,Elias Achouri,Tunesien,TUN,MID,3500000,True,elias_achouri__tun,Elias Achouri,TUN,Tunesien,exact_name_team,1.0
+49061,Ellyes Skhiri,Tunesien,TUN,MID,2500000,True,ellyes_skhiri__tun,Ellyes Skhiri,TUN,Tunesien,exact_name_team,1.0
+49102,Ferjani Sassi,Tunesien,TUN,MID,3000000,True,ferjani_sassi__tun,Ferjani Sassi,TUN,Tunesien,exact_name_team,1.0
+49622,Naim Sliti,Tunesien,TUN,MID,2500000,False,,,,,,0.4166666666666667
+49574,Mohamed Ali Ben Romdhane,Tunesien,TUN,MID,3500000,False,,,,,,0.46153846153846156
+49055,Elias Saad,Tunesien,TUN,MID,2500000,True,elias_saad__tun,Elias Saad,TUN,Tunesien,exact_name_team,1.0
+49835,Sebastian Tounekti,Tunesien,TUN,MID,2000000,True,sebastian_tounekti__tun,Sebastian Tounekti,TUN,Tunesien,exact_name_team,1.0
+49169,Hannibal Mejbri,Tunesien,TUN,MID,3000000,True,hannibal_mejbri__tun,Hannibal Mejbri,TUN,Tunesien,exact_name_team,1.0
+49225,Ismael Gharbi,Tunesien,TUN,MID,2500000,True,isma_l_gharbi__tun,Ismael Gharbi,TUN,Tunesien,exact_name_team,1.0
+49828,Sayfallah Ltaief,Tunesien,TUN,MID,2000000,False,,,,,,0.4444444444444444
+49570,Mohamed 'Hadj' Mahmoud,Tunesien,TUN,MID,2000000,True,mohamed_haj_mahmoud__tun,Mohamed 'Hadj' Mahmoud,TUN,Tunesien,exact_name_team,1.0
+48874,Ayman Yahya Salem,Saudi-Arabien,KSA,MID,2500000,True,ayman_yahya_salem__ksa,Ayman Yahya Salem,KSA,Saudi-Arabien,exact_name_team,1.0
+49813,Saleh Al-Shamat,Saudi-Arabien,KSA,MID,2500000,True,saleh_al_shamat__ksa,Saleh Al-Shamat,KSA,Saudi-Arabien,exact_name_team,1.0
+49618,Musab Al-Juwayr,Saudi-Arabien,KSA,MID,2500000,True,musab_al_juwayr__ksa,Musab Al-Juwayr,KSA,Saudi-Arabien,exact_name_team,1.0
+49996,Ziyad Al-Johani,Saudi-Arabien,KSA,MID,2500000,True,ziyad_al_johani__ksa,Ziyad Al-Johani,KSA,Saudi-Arabien,exact_name_team,1.0
+49624,Nasser Al-Dawsari,Saudi-Arabien,KSA,MID,2500000,True,nasser_al_dawsari__ksa,Nasser Al-Dawsari,KSA,Saudi-Arabien,exact_name_team,1.0
+48727,Abdullah Al-Khaibari,Saudi-Arabien,KSA,MID,2500000,True,abdullah_al_khaibari__ksa,Abdullah Al-Khaibari,KSA,Saudi-Arabien,exact_name_team,1.0
+49579,Mohamed Kanno,Saudi-Arabien,KSA,MID,3000000,True,mohamed_kanno__ksa,Mohamed Kanno,KSA,Saudi-Arabien,exact_name_team,1.0
+49814,Salem Al-Dawsari,Saudi-Arabien,KSA,MID,3000000,True,salem_al_dawsari__ksa,Salem Al-Dawsari,KSA,Saudi-Arabien,exact_name_team,1.0
+50406,Alaa Hejji,Saudi-Arabien,KSA,MID,2000000,False,,,,,,0.4444444444444444
+50411,Khalid Al-Ghannam,Saudi-Arabien,KSA,MID,2500000,False,,,,,,0.45714285714285713
+48728,Abdulrahman Al-Obood,Saudi-Arabien,KSA,MID,2500000,True,abdulrahman_al_obood__ksa,Abdulrahman Al-Obood,KSA,Saudi-Arabien,exact_name_team,1.0
+48745,Ahmed Fathi,Qatar,QAT,MID,2500000,True,ahmed_fathi__qat,Ahmed Fathi,QAT,Qatar,exact_name_team,1.0
+48723,Abdulaziz Hatim Mohammed,Qatar,QAT,MID,2500000,True,abdulaziz_hatim_mohammed__qat,Abdulaziz Hatim Mohammed,QAT,Qatar,exact_name_team,1.0
+48865,Assim Madibo,Qatar,QAT,MID,2500000,True,assim_madibo__qat,Assim Madibo,QAT,Qatar,exact_name_team,1.0
+50399,Hassan Al-Haydos,Qatar,QAT,MID,2500000,False,,,,,,0.5517241379310345
+49375,Karim Boudiaf,Qatar,QAT,MID,2500000,True,karim_boudiaf__qat,Karim Boudiaf,QAT,Qatar,exact_name_team,1.0
+49259,Jassem Gaber,Qatar,QAT,MID,2500000,True,jassem_gaber__qat,Jassem Gaber,QAT,Qatar,exact_name_team,1.0
+49596,Mohammed Waad,Qatar,QAT,MID,2500000,True,mohammed_waad__qat,Mohammed Waad,QAT,Qatar,exact_name_team,1.0
+49429,Lennon Miller,Skotland,SCO,MID,2000000,False,,,,,,0.56
+48832,Andrew Irving,Skotland,SCO,MID,2000000,False,,,,,,0.4
+50397,Ahmed Al-Ganehi,Qatar,QAT,MID,2000000,False,,,,,,0.6875
+50402,Tahsin Jamshid,Qatar,QAT,MID,2000000,False,,,,,,0.4666666666666667
+49572,Mohamed Al-Mannai,Qatar,QAT,MID,2500000,True,mohamed_al_mannai__qat,Mohamed Al-Mannai,QAT,Qatar,exact_name_team,1.0
+50062,Ben Doak,Skotland,SCO,MID,3000000,True,ben_doak__sco,Ben Doak,SCO,Skotland,exact_name_team,1.0
+49437,Lewis Ferguson,Skotland,SCO,MID,2000000,True,lewis_ferguson__sco,Lewis Ferguson,SCO,Skotland,exact_name_team,1.0
+49304,John McGinn,Skotland,SCO,MID,3500000,True,john_mcginn__sco,John McGinn,SCO,Skotland,exact_name_team,1.0
+49384,Kenny McLean,Skotland,SCO,MID,2500000,True,kenny_mclean__sco,Kenny McLean,SCO,Skotland,exact_name_team,1.0
+49804,Ryan Christie,Skotland,SCO,MID,2500000,True,ryan_christie__sco,Ryan Christie,SCO,Skotland,exact_name_team,1.0
+49831,Scott McTominay,Skotland,SCO,MID,4500000,True,scott_mctominay__sco,Scott McTominay,SCO,Skotland,exact_name_team,1.0
+50424,Tyler Fletcher,Skotland,SCO,MID,2000000,False,,,,,,0.3333333333333333
+49491,Marcelo Flores,Canada,CAN,MID,2000000,True,marcelo_flores__can,Marcelo Flores,CAN,Canada,exact_name_team,1.0
+49872,Tajon Buchanan,Canada,CAN,MID,3500000,True,tajon_buchanan__can,Tajon Buchanan,CAN,Canada,exact_name_team,1.0
+48902,Billy Gilmour,Skotland,SCO,MID,3000000,True,billy_gilmour__sco,Billy Gilmour,SCO,Skotland,exact_name_team,1.0
+48990,David 'Junior' Hoilett,Canada,CAN,MID,2500000,True,david_hoilett__can,David 'Junior' Hoilett,CAN,Canada,exact_name_team,1.0
+49312,Jonathan Osorio,Canada,CAN,MID,3000000,True,jonathan_osorio__can,Jonathan Osorio,CAN,Canada,exact_name_team,1.0
+49226,Ismael Kone,Canada,CAN,MID,3000000,True,isma_l_kon__can,Ismael Kone,CAN,Canada,exact_name_team,1.0
+49440,Liam Millar,Canada,CAN,MID,3000000,True,liam_millar__can,Liam Millar,CAN,Canada,exact_name_team,1.0
+49210,Ibrokhim Ibrokhimov,Usbekistan,UZB,MID,2000000,True,ibrokhim_ibrokhimov__uzb,Ibrokhim Ibrokhimov,UZB,Usbekistan,exact_name_team,1.0
+49033,Dostonbek Khamdamov,Usbekistan,UZB,MID,2000000,True,dostonbek_khamdamov__uzb,Dostonbek Khamdamov,UZB,Usbekistan,exact_name_team,1.0
+48882,Aziz Ganiev,Usbekistan,UZB,MID,2500000,True,aziz_g_aniyev__uzb,Aziz Ganiev,UZB,Usbekistan,exact_name_team,1.0
+49585,Mohammad Abu 'Shararh' Zrayq,Jordan,JOR,MID,2500000,True,mohammad_abu_shararh_zrayq__jor,Mohammad Abu 'Shararh' Zrayq,JOR,Jordan,exact_name_team,1.0
+48805,Alisher Odilov,Usbekistan,UZB,MID,2000000,True,alisher_odilov__uzb,Alisher Odilov,UZB,Usbekistan,exact_name_team,1.0
+49919,Umarali Rakhmonaliyev,Usbekistan,UZB,MID,2000000,True,umarali_rakhmonaliyev__uzb,Umarali Rakhmonaliyev,UZB,Usbekistan,exact_name_team,1.0
+50392,Rajaei Ayed,Jordan,JOR,MID,2500000,False,,,,,,0.45454545454545453
+49676,Odildzhon Khamrobekov,Usbekistan,UZB,MID,2500000,True,odildzhon_khamrobekov__uzb,Odildzhon Khamrobekov,UZB,Usbekistan,exact_name_team,1.0
+48758,Akmal Mozgovoy,Usbekistan,UZB,MID,2500000,True,akmal_mozgovoy__uzb,Akmal Mozgovoy,UZB,Usbekistan,exact_name_team,1.0
+49252,Jamshid Iskanderov,Usbekistan,UZB,MID,2000000,True,jamshid_iskanderov__uzb,Jamshid Iskanderov,UZB,Usbekistan,exact_name_team,1.0
+50382,Abbosbek Fayzullaev,Usbekistan,UZB,MID,2500000,False,,,,,,0.4117647058823529
+49693,Oston Urunov,Usbekistan,UZB,MID,2500000,True,oston_urunov__uzb,Oston Urunov,UZB,Usbekistan,exact_name_team,1.0
+50381,Jaloliddin Masharipov,Usbekistan,UZB,MID,2500000,False,,,,,,0.43243243243243246
+50300,Stephen Eustaquio,Canada,CAN,MID,2500000,False,,,,,,0.4666666666666667
+50384,Sherzod Esanov,Usbekistan,UZB,MID,2000000,False,,,,,,0.5333333333333333
+49528,Mathieu Choiniere,Canada,CAN,MID,2500000,True,mathieu_choiniere__can,Mathieu Choiniere,CAN,Canada,exact_name_team,1.0
+48794,Ali Ahmed,Canada,CAN,MID,3000000,True,ali_ahmed__can,Ali Ahmed,CAN,Canada,exact_name_team,1.0
+50297,Jacob Shaffelburg,Canada,CAN,MID,2000000,False,,,,,,0.45714285714285713
+49629,Nathan Saliba,Canada,CAN,MID,3000000,True,nathan_saliba__can,Nathan Saliba,CAN,Canada,exact_name_team,1.0
+49654,Niko Sigur,Canada,CAN,MID,2500000,True,niko_sigur__can,Niko Sigur,CAN,Canada,exact_name_team,1.0
+49695,Otabek Shukurov,Usbekistan,UZB,MID,2500000,True,otabek_shukurov__uzb,Otabek Shukurov,UZB,Usbekistan,exact_name_team,1.0
+49881,Telmo Arcanjo,Kap Verde,CPV,MID,2500000,True,telmo_arcanjo__cpv,Telmo Arcanjo,CPV,Kap Verde,exact_name_team,1.0
+49392,Kevin Lenini Pina,Kap Verde,CPV,MID,2000000,True,kevin_lenini__cpv,Kevin Lenini Pina,CPV,Kap Verde,exact_name_team,1.0
+49422,Laros Duarte,Kap Verde,CPV,MID,2500000,True,laros_duarte__cpv,Laros Duarte,CPV,Kap Verde,exact_name_team,1.0
+48752,Ailson Tavares,Kap Verde,CPV,MID,2500000,False,,,,,,0.6857142857142857
+49015,Deroy Duarte,Kap Verde,CPV,MID,2500000,True,deroy_duarte__cpv,Deroy Duarte,CPV,Kap Verde,exact_name_team,1.0
+49251,Jamiro Monteiro,Kap Verde,CPV,MID,2500000,True,jamiro_monteiro__cpv,Jamiro Monteiro,CPV,Kap Verde,exact_name_team,1.0
+49958,Yannick Semedo,Kap Verde,CPV,MID,2000000,True,yannick_semedo__cpv,Yannick Semedo,CPV,Kap Verde,exact_name_team,1.0
+49588,Mohammad Al-Dawoud,Jordan,JOR,MID,2000000,True,mohammad_al_dawoud__jor,Mohammad Al-Dawoud,JOR,Jordan,exact_name_team,1.0
+49976,Yousef Qashi,Jordan,JOR,MID,2000000,True,yousef_qashi__jor,Yousef Qashi,JOR,Jordan,exact_name_team,1.0
+49592,Mohammad Taha,Jordan,JOR,MID,2000000,True,mohammad_taha__jor,Mohammad Taha,JOR,Jordan,exact_name_team,1.0
+49477,Mahmoud Al-Mardi,Jordan,JOR,MID,2000000,True,mahmoud_al_mardi__jor,Mahmoud Al-Mardi,JOR,Jordan,exact_name_team,1.0
+49599,Mohannad Abu Taha,Jordan,JOR,MID,2500000,True,mohannad_abu_taha__jor,Mohannad Abu Taha,JOR,Jordan,exact_name_team,1.0
+49675,Odeh Al-Fakhouri,Jordan,JOR,MID,2000000,True,odeh_al_fakhouri__jor,Odeh Al-Fakhouri,JOR,Jordan,exact_name_team,1.0
+49611,Mousa Tamari,Jordan,JOR,MID,3000000,True,mousa_tamari__jor,Mousa Tamari,JOR,Jordan,exact_name_team,1.0
+48797,Ali Azaizeh,Jordan,JOR,MID,2000000,True,ali_azaizeh__jor,Ali Azaizeh,JOR,Jordan,exact_name_team,1.0
+49586,Mohammad Abu Hasheesh,Jordan,JOR,MID,2500000,True,mohammad_abu_hasheesh__jor,Mohammad Abu Hasheesh,JOR,Jordan,exact_name_team,1.0
+49661,Nizar Al-Rashdan,Jordan,JOR,MID,2000000,True,nizar_al_rashdan__jor,Nizar Al-Rashdan,JOR,Jordan,exact_name_team,1.0
+49668,Noor Al-Rawabdeh,Jordan,JOR,MID,2500000,True,noor_al_rawabdeh__jor,Noor Al-Rawabdeh,JOR,Jordan,exact_name_team,1.0
+49206,Ibrahim Saadeh,Jordan,JOR,MID,2500000,True,ibrahim_sa_deh__jor,Ibrahim Saadeh,JOR,Jordan,exact_name_team,1.0
+48818,Amer Jamous,Jordan,JOR,MID,2500000,True,amer_jamous__jor,Amer Jamous,JOR,Jordan,exact_name_team,1.0
+49516,Martin Ødegaard,Norge,NOR,MID,4500000,True,martin_degaard__nor,Martin Ødegaard,NOR,Norge,exact_name_team,1.0
+49608,Morten Thorsby,Norge,NOR,MID,2500000,True,morten_thorsby__nor,Morten Thorsby,NOR,Norge,exact_name_team,1.0
+49714,Patrick Berg,Norge,NOR,MID,2500000,True,patrick_berg__nor,Patrick Berg,NOR,Norge,exact_name_team,1.0
+49099,Felix Horn Myhre,Norge,NOR,MID,2000000,False,,,,,,0.4
+49411,Kristian Thorstvedt,Norge,NOR,MID,2000000,True,kristian_thorstvedt__nor,Kristian Thorstvedt,NOR,Norge,exact_name_team,1.0
+48852,Antonio Nusa,Norge,NOR,MID,3500000,True,antonio_nusa__nor,Antonio Nusa,NOR,Norge,exact_name_team,1.0
+49267,Jens Petter Hauge,Norge,NOR,MID,2500000,True,jens_petter_hauge__nor,Jens Petter Hauge,NOR,Norge,exact_name_team,1.0
+50085,Fredrik Aursnes,Norge,NOR,MID,3000000,True,fredrik_aursnes__nor,Fredrik Aursnes,NOR,Norge,exact_name_team,1.0
+49410,Kristian Arnstad,Norge,NOR,MID,2500000,False,,,,,,0.5
+50088,Thelo Aasgaard,Norge,NOR,MID,2000000,True,thelo_aasgaard__nor,Thelo Aasgaard,NOR,Norge,exact_name_team,1.0
+49691,Oscar Bobb,Norge,NOR,MID,3000000,True,oscar_bobb__nor,Oscar Bobb,NOR,Norge,exact_name_team,1.0
+49822,Sander Berge,Norge,NOR,MID,3000000,True,sander_berge__nor,Sander Berge,NOR,Norge,exact_name_team,1.0
+48828,Andreas Schjelderup,Norge,NOR,MID,3500000,True,andreas_schjelderup__nor,Andreas Schjelderup,NOR,Norge,exact_name_team,1.0
+49871,Tahith Chong,Curaçao,CUW,MID,2000000,True,tahith_chong__cuw,Tahith Chong,CUW,Curaçao,exact_name_team,1.0
+49358,Juninho Bacuna,Curaçao,CUW,MID,3000000,True,juninho_bacuna__cuw,Juninho Bacuna,CUW,Curaçao,exact_name_team,1.0
+49391,Kevin Felida,Curaçao,CUW,MID,2000000,True,kevin_felida__cuw,Kevin Felida,CUW,Curaçao,exact_name_team,1.0
+49915,Tyrese Noslin,Curaçao,CUW,MID,2000000,True,tyrese_noslin__cuw,Tyrese Noslin,CUW,Curaçao,exact_name_team,1.0
+49951,Woodensky Pierre,Haiti,HAI,MID,2000000,True,woodensky_pierre__hai,Woodensky Pierre,HAI,Haiti,exact_name_team,1.0
+50047,Dominique Simon,Haiti,HAI,MID,2000000,True,dominique_simon__hai,Dominique Simon,HAI,Haiti,exact_name_team,1.0
+49425,Leandro Bacuna,Curaçao,CUW,MID,2500000,True,leandro_bacuna__cuw,Leandro Bacuna,CUW,Curaçao,exact_name_team,1.0
+49141,Godfried Roemeratoe,Curaçao,CUW,MID,2000000,True,godfried_roemeratoe__cuw,Godfried Roemeratoe,CUW,Curaçao,exact_name_team,1.0
+48988,Danley Jean Jacques,Haiti,HAI,MID,3000000,True,danley_jean_jacques__hai,Danley Jean Jacques,HAI,Haiti,exact_name_team,1.0
+49436,Leverton Pierre,Haiti,HAI,MID,2500000,True,leverton_pierre__hai,Leverton Pierre,HAI,Haiti,exact_name_team,1.0
+48931,Carl Sainte,Haiti,HAI,MID,2000000,True,carl_sainte__hai,Carl Sainte,HAI,Haiti,exact_name_team,1.0
+49264,Jean-Ricner Bellegarde,Haiti,HAI,MID,3000000,True,jean_ricner_bellegarde__hai,Jean-Ricner Bellegarde,HAI,Haiti,exact_name_team,1.0
+50045,Gaël Kakuta,Congo DR,COD,MID,2500000,True,gael_kakuta__cod,Gaël Kakuta,COD,Congo DR,exact_name_team,1.0
+49148,Grady Diangana,Congo DR,COD,MID,2500000,True,grady_diangana__cod,Grady Diangana,COD,Congo DR,exact_name_team,1.0
+49665,Noah Sadiki,Congo DR,COD,MID,2500000,True,noah_sadiki__cod,Noah Sadiki,COD,Congo DR,exact_name_team,1.0
+49637,Ngal'ayel Mukau,Congo DR,COD,MID,2500000,True,ngal_ayel_mukau__cod,Ngal'ayel Mukau,COD,Congo DR,exact_name_team,1.0
+49630,Nathanael Mbuku,Congo DR,COD,MID,2500000,True,nathanael_mbuku__cod,Nathanael Mbuku,COD,Congo DR,exact_name_team,1.0
+49552,Meschack Elia,Congo DR,COD,MID,3000000,True,meschak_elia__cod,Meschack Elia,COD,Congo DR,exact_name_team,1.0
+49045,Edo Kayembe,Congo DR,COD,MID,2500000,True,edo_kayembe__cod,Edo Kayembe,COD,Congo DR,exact_name_team,1.0
+48950,Charles Pickel,Congo DR,COD,MID,2500000,True,charles_pickel__cod,Charles Pickel,COD,Congo DR,exact_name_team,1.0
+49888,Theo Bongonda,Congo DR,COD,MID,3000000,True,theo_bongonda__cod,Theo Bongonda,COD,Congo DR,exact_name_team,1.0
+49820,Samuel Moutoussamy,Congo DR,COD,MID,3000000,True,samuel_moutoussamy__cod,Samuel Moutoussamy,COD,Congo DR,exact_name_team,1.0
+48917,Brian Cipenga,Congo DR,COD,MID,2000000,True,brian_cipenga__cod,Brian Cipenga,COD,Congo DR,exact_name_team,1.0
+49113,Fiston Mayele,Congo DR,COD,FWD,3000000,True,fiston_mayele__cod,Fiston Mayele,COD,Congo DR,exact_name_team,1.0
+48940,Cedric Bakambu,Congo DR,COD,FWD,3500000,True,c_dric_bakambu__cod,Cedric Bakambu,COD,Congo DR,exact_name_team,1.0
+49853,Simon Banza,Congo DR,COD,FWD,2500000,True,simon_banza__cod,Simon Banza,COD,Congo DR,exact_name_team,1.0
+49949,Wilson Isidor,Haiti,HAI,FWD,3000000,True,wilson_isidor__hai,Wilson Isidor,HAI,Haiti,exact_name_team,1.0
+49031,Don Deedson Louicius,Haiti,HAI,FWD,3000000,True,don_deedson_louicius__hai,Don Deedson Louicius,HAI,Haiti,exact_name_team,1.0
+49122,Frantzdy Pierrot,Haiti,HAI,FWD,3000000,True,frantzdy_pierrot__hai,Frantzdy Pierrot,HAI,Haiti,exact_name_team,1.0
+49800,Ruben Providence,Haiti,HAI,FWD,2500000,True,ruben_providence__hai,Ruben Providence,HAI,Haiti,exact_name_team,1.0
+49970,Yoane Wissa,Congo DR,COD,FWD,3500000,True,yoane_wissa__cod,Yoane Wissa,COD,Congo DR,exact_name_team,1.0
+49035,Duckens Nazon,Haiti,HAI,FWD,3500000,True,duckens_nazon__hai,Duckens Nazon,HAI,Haiti,exact_name_team,1.0
+49950,Woobens Pacius,Haiti,HAI,FWD,2000000,False,,,,,,0.3333333333333333
+49016,Derrick Etienne Jr.,Haiti,HAI,FWD,2000000,True,derrick_etienne__hai,Derrick Etienne Jr.,HAI,Haiti,exact_name_team,1.0
+50048,Lenny Joseph,Haiti,HAI,FWD,2000000,True,lenny_joseph__hai,Lenny Joseph,HAI,Haiti,exact_name_team,1.0
+49340,Josue Casimir,Haiti,HAI,FWD,2500000,True,josue_casimir__hai,Josue Casimir,HAI,Haiti,exact_name_team,1.0
+49961,Yassin Fortune,Haiti,HAI,FWD,2000000,True,yassin_fortune__hai,Yassin Fortune,HAI,Haiti,exact_name_team,1.0
+48857,Ar'jany Martha,Curaçao,CUW,FWD,2000000,True,ar_jany_martha__cuw,Ar'jany Martha,CUW,Curaçao,exact_name_team,1.0
+49858,Sontje Hansen,Curaçao,CUW,FWD,2000000,True,sontje_hansen__cuw,Sontje Hansen,CUW,Curaçao,exact_name_team,1.0
+50042,Jürgen Locadia,Curaçao,CUW,FWD,2000000,True,jurgen_locadia__cuw,Jürgen Locadia,CUW,Curaçao,exact_name_team,1.0
+48910,Brandley Kuwas,Curaçao,CUW,FWD,2000000,True,brandley_kuwas__cuw,Brandley Kuwas,CUW,Curaçao,exact_name_team,1.0
+49134,Gervane Kastaneer,Curaçao,CUW,FWD,2500000,True,gervane_kastaneer__cuw,Gervane Kastaneer,CUW,Curaçao,exact_name_team,1.0
+49269,Jeremy Antonisse,Curaçao,CUW,FWD,2000000,True,jeremy_antonisse__cuw,Jeremy Antonisse,CUW,Curaçao,exact_name_team,1.0
+49265,Jearl Margaritha,Curaçao,CUW,FWD,3000000,True,jearl_margaritha__cuw,Jearl Margaritha,CUW,Curaçao,exact_name_team,1.0
+49383,Kenji Gorre,Curaçao,CUW,FWD,2500000,True,kenji_gorr__cuw,Kenji Gorre,CUW,Curaçao,exact_name_team,1.0
+49323,Jørgen Strand Larsen,Norge,NOR,FWD,3000000,True,j_rgen_strand_larsen__nor,Jørgen Strand Larsen,NOR,Norge,exact_name_team,1.0
+49076,Erling Haaland,Norge,NOR,FWD,8500000,True,erling_haaland__nor,Erling Haaland,NOR,Norge,exact_name_team,1.0
+48786,Alexander Sørloth,Norge,NOR,FWD,4500000,True,alexander_s_rloth__nor,Alexander Sørloth,NOR,Norge,exact_name_team,1.0
+49129,Garry Mendes Rodrigues,Kap Verde,CPV,FWD,2500000,True,garry_mendes_rodrigues__cpv,Garry Mendes Rodrigues,CPV,Kap Verde,exact_name_team,1.0
+50038,Gilson Benchimol Tavares,Kap Verde,CPV,FWD,2500000,True,gilson_benchimol_tavares__cpv,Gilson Benchimol Tavares,CPV,Kap Verde,exact_name_team,1.0
+49806,Ryan Mendes Da Graça,Kap Verde,CPV,FWD,3000000,True,ryan_mendes_da_graca__cpv,Ryan Mendes Da Graça,CPV,Kap Verde,exact_name_team,1.0
+49342,Jovane Cabral,Kap Verde,CPV,FWD,2500000,True,jovane_cabral__cpv,Jovane Cabral,CPV,Kap Verde,exact_name_team,1.0
+49671,Nuno da Costa,Kap Verde,CPV,FWD,2500000,True,nuno_da_costa__cpv,Nuno da Costa,CPV,Kap Verde,exact_name_team,1.0
+50396,Ali Olwan,Jordan,JOR,FWD,3500000,False,,,,,,0.36363636363636365
+49207,Ibrahim Sabra,Jordan,JOR,FWD,2500000,True,ibrahim_sabra__jor,Ibrahim Sabra,JOR,Jordan,exact_name_team,1.0
+48885,Baha'a Faisal,Jordan,JOR,FWD,2500000,True,baha_a_faisal__jor,Baha'a Faisal,JOR,Jordan,exact_name_team,1.0
+48974,Dailon Livramento,Kap Verde,CPV,FWD,3000000,True,dailon_livramento__cpv,Dailon Livramento,CPV,Kap Verde,exact_name_team,1.0
+49177,Helio Varela,Kap Verde,CPV,FWD,2500000,True,h_lio_varela__cpv,Helio Varela,CPV,Kap Verde,exact_name_team,1.0
+49948,Willy Semedo,Kap Verde,CPV,FWD,3500000,True,willy_semedo__cpv,Willy Semedo,CPV,Kap Verde,exact_name_team,1.0
+49053,Eldor Shomurodov,Usbekistan,UZB,FWD,3000000,True,eldor_shomurodov__uzb,Eldor Shomurodov,UZB,Usbekistan,exact_name_team,1.0
+50383,Azizbek Amanov,Usbekistan,UZB,FWD,2000000,False,,,,,,0.25
+49213,Igor Sergeev,Usbekistan,UZB,FWD,2000000,True,igor_sergeev__uzb,Igor Sergeev,UZB,Usbekistan,exact_name_team,1.0
+50299,Promise David,Canada,CAN,FWD,3000000,True,promise_david__can,Promise David,CAN,Canada,exact_name_team,1.0
+48860,Aribim Pepple,Canada,CAN,FWD,2000000,True,aribim_pepple__can,Aribim Pepple,CAN,Canada,exact_name_team,1.0
+49875,Tani Oluwaseyi,Canada,CAN,FWD,2500000,True,tani_oluwaseyi__can,Tani Oluwaseyi,CAN,Canada,exact_name_team,1.0
+49108,Findlay Curtis,Skotland,SCO,FWD,2000000,True,findlay_curtis__sco,Findlay Curtis,SCO,Skotland,exact_name_team,1.0
+48981,Daniel Jebbison,Canada,CAN,FWD,2500000,True,daniel_jebbison__can,Daniel Jebbison,CAN,Canada,exact_name_team,1.0
+49311,Jonathan David,Canada,CAN,FWD,4500000,True,jonathan_david__can,Jonathan David,CAN,Canada,exact_name_team,1.0
+49238,Jacen Russell-Rowe,Canada,CAN,FWD,2000000,True,jacen_russell_rowe__can,Jacen Russell-Rowe,CAN,Canada,exact_name_team,1.0
+48971,Cyle Christopher Larin,Canada,CAN,FWD,3000000,True,cyle_christopher_larin__can,Cyle Christopher Larin,CAN,Canada,exact_name_team,1.0
+49131,George Hirst,Skotland,SCO,FWD,2500000,True,george_hirst__sco,George Hirst,SCO,Skotland,exact_name_team,1.0
+48952,Che Adams,Skotland,SCO,FWD,3000000,True,che_adams__sco,Che Adams,SCO,Skotland,exact_name_team,1.0
+49473,Lyndon Dykes,Skotland,SCO,FWD,2500000,True,lyndon_dykes__sco,Lyndon Dykes,SCO,Skotland,exact_name_team,1.0
+50063,Lawrence Shankland,Skotland,SCO,FWD,2500000,True,lawrence_shankland__sco,Lawrence Shankland,SCO,Skotland,exact_name_team,1.0
+49044,Edmilson Junior,Qatar,QAT,FWD,2500000,True,edmilson_junior__qat,Edmilson Junior,QAT,Qatar,exact_name_team,1.0
+50064,Ross Stewart,Skotland,SCO,FWD,2000000,True,ross_stewart__sco,Ross Stewart,SCO,Skotland,exact_name_team,1.0
+49904,Tommy Conway,Skotland,SCO,FWD,2500000,False,,,,,,0.0
+49594,Mohammed Muntari,Qatar,QAT,FWD,2000000,True,mohammed_muntari__qat,Mohammed Muntari,QAT,Qatar,exact_name_team,1.0
+50403,Yusuf Abdurisag,Qatar,QAT,FWD,2000000,False,,,,,,0.24
+48743,Ahmed Alaaeldin Abdelmotaal,Qatar,QAT,FWD,3000000,True,ahmed_alaaeldin_abdelmotaal__qat,Ahmed Alaaeldin Abdelmotaal,QAT,Qatar,exact_name_team,1.0
+48808,Almoez Ali,Qatar,QAT,FWD,3000000,True,almoez_ali__qat,Almoez Ali,QAT,Qatar,exact_name_team,1.0
+48759,Akram Afif,Qatar,QAT,FWD,3500000,True,akram_afif__qat,Akram Afif,QAT,Qatar,exact_name_team,1.0
+50416,Sultan Mandash,Saudi-Arabien,KSA,FWD,2500000,False,,,,,,0.3333333333333333
+49111,Firas Al Brikan,Saudi-Arabien,KSA,FWD,3500000,True,firas_al_buraikan__ksa,Firas Al-Buraikan,KSA,Saudi-Arabien,fuzzy_name_team,0.9375
+50415,Saleh Al-Shehri,Saudi-Arabien,KSA,FWD,2500000,False,,,,,,0.48484848484848486
+48726,Abdullah Al-Hamdan,Saudi-Arabien,KSA,FWD,2500000,True,abdullah_al_hamdan__ksa,Abdullah Al-Hamdan,KSA,Saudi-Arabien,exact_name_team,1.0
+49175,Hazem Mastouri,Tunesien,TUN,FWD,3500000,True,hazem_mastouri__tun,Hazem Mastouri,TUN,Tunesien,exact_name_team,1.0
+49112,Firas Chaouat,Tunesien,TUN,FWD,2500000,True,firas_chaouat__tun,Firas Chaouat,TUN,Tunesien,exact_name_team,1.0
+49979,Youssef Msakni,Tunesien,TUN,FWD,2500000,False,,,,,,0.4
+49447,Louey Ben Farhat,Tunesien,TUN,FWD,2000000,False,,,,,,0.3448275862068966
+49759,Rayan Elloumi,Tunesien,TUN,FWD,2000000,True,rayan_elloumi__tun,Rayan Elloumi,TUN,Tunesien,exact_name_team,1.0
+49705,Pape Cherif Ndiaye,Senegal,SEN,FWD,3000000,True,pape_cherif_ndiaye__sen,Pape Cherif Ndiaye,SEN,Senegal,exact_name_team,1.0
+50089,Assane Diao Diaoune,Senegal,SEN,FWD,2500000,True,assane_diao_diaoune__sen,Assane Diao Diaoune,SEN,Senegal,exact_name_team,1.0
+49646,Nicolas Jackson,Senegal,SEN,FWD,4500000,True,nicolas_jackson__sen,Nicolas Jackson,SEN,Senegal,exact_name_team,1.0
+48908,Boulaye Dia,Senegal,SEN,FWD,2000000,False,,,,,,0.47619047619047616
+50090,Bamba Dieng,Senegal,SEN,FWD,2000000,True,bamba_dieng__sen,Bamba Dieng,SEN,Senegal,exact_name_team,1.0
+49162,Habib Diallo,Senegal,SEN,FWD,2500000,False,,,,,,0.4
+49810,Sadio Mane,Senegal,SEN,FWD,5000000,True,sadio_man__sen,Sadio Mane,SEN,Senegal,exact_name_team,1.0
+49409,Krepin Diatta,Senegal,SEN,FWD,2500000,True,kr_pin_diatta__sen,Krepin Diatta,SEN,Senegal,exact_name_team,1.0
+48716,Abde Ezzalzouli,Marokko,MAR,FWD,3000000,True,abde_ezzalzouli__mar,Abde Ezzalzouli,MAR,Marokko,exact_name_team,1.0
+48820,Amine Adli,Marokko,MAR,FWD,2500000,True,amine_adli__mar,Amine Adli,MAR,Marokko,exact_name_team,1.0
+48954,Chemsdine Talbi,Marokko,MAR,FWD,2500000,True,chemsdine_talbi__mar,Chemsdine Talbi,MAR,Marokko,exact_name_team,1.0
+49978,Youssef En-Nesyri,Marokko,MAR,FWD,3500000,True,youssef_en_nesyri__mar,Youssef En-Nesyri,MAR,Marokko,exact_name_team,1.0
+48879,Ayoub El Kaabi,Marokko,MAR,FWD,3500000,True,ayoub_el_kaabi__mar,Ayoub El Kaabi,MAR,Marokko,exact_name_team,1.0
+50068,Aqtay Abdallah,Egypten,EGY,FWD,2000000,True,aqtay_abdallah__egy,Aqtay Abdallah,EGY,Egypten,exact_name_team,1.0
+50070,Hamza Abdelkarim,Egypten,EGY,FWD,2000000,True,hamza_abdelkarim__egy,Hamza Abdelkarim,EGY,Egypten,exact_name_team,1.0
+50001,Brahim Diaz,Marokko,MAR,FWD,4500000,True,brahim_d_az__mar,Brahim Diaz,MAR,Marokko,exact_name_team,1.0
+49610,Mostafa Mohamed,Egypten,EGY,FWD,3500000,False,,,,,,0.7857142857142857
+49625,Nasser Mansy,Egypten,EGY,FWD,2000000,False,,,,,,0.48
+49683,Omar Marmoush,Egypten,EGY,FWD,5000000,True,omar_marmoush__egy,Omar Marmoush,EGY,Egypten,exact_name_team,1.0
+49582,Mohamed Salah,Egypten,EGY,FWD,5000000,True,mohamed_salah__egy,Mohamed Salah,EGY,Egypten,exact_name_team,1.0
+49224,Ismael Diaz,Panama,PAN,FWD,2500000,True,ismael_d_az__pan,Ismael Diaz,PAN,Panama,exact_name_team,1.0
+49327,Jose Fajardo,Panama,PAN,FWD,3000000,True,jose_fajardo__pan,Jose Fajardo,PAN,Panama,exact_name_team,1.0
+49366,Kadir Barria,Panama,PAN,FWD,2000000,True,kadir_barria__pan,Kadir Barria,PAN,Panama,exact_name_team,1.0
+48939,Cecilio Waterman,Panama,PAN,FWD,2000000,True,cecilio_waterman__pan,Cecilio Waterman,PAN,Panama,exact_name_team,1.0
+50256,Tomas Rodriguez,Panama,PAN,FWD,2000000,False,,,,,,0.0
+48802,Ali Yousif,Irak,IRQ,FWD,2000000,True,ali_yousif__irq,Ali Yousif,IRQ,Irak,exact_name_team,1.0
+48876,Aymen Hussein,Irak,IRQ,FWD,3500000,True,aymen_hussein__irq,Aymen Hussein,IRQ,Irak,exact_name_team,1.0
+49597,Mohanad Ali,Irak,IRQ,FWD,3000000,True,mohanad_ali__irq,Mohanad Ali,IRQ,Irak,exact_name_team,1.0
+48791,Alexis Saelemaekers,Belgien,BEL,FWD,4000000,True,alexis_saelemaekers__bel,Alexis Saelemaekers,BEL,Belgien,exact_name_team,1.0
+50019,Matias Fernandez-Pardo,Belgien,BEL,FWD,2500000,True,matias_fernandez_pardo__bel,Matias Fernandez-Pardo,BEL,Belgien,exact_name_team,1.0
+49791,Romeo Vermant,Belgien,BEL,FWD,2000000,False,,,,,,0.46153846153846156
+48795,Ali Al-Hamadi,Irak,IRQ,FWD,2500000,True,ali_al_hamadi__irq,Ali Al-Hamadi,IRQ,Irak,exact_name_team,1.0
+49446,Lois Openda,Belgien,BEL,FWD,4000000,True,lois_openda__bel,Lois Openda,BEL,Belgien,exact_name_team,1.0
+49427,Leandro Trossard,Belgien,BEL,FWD,5500000,True,leandro_trossard__bel,Leandro Trossard,BEL,Belgien,exact_name_team,1.0
+50020,Romelu Lukaku,Belgien,BEL,FWD,4500000,True,romelu_lukaku__bel,Romelu Lukaku,BEL,Belgien,exact_name_team,1.0
+48949,Charles De Ketelaere,Belgien,BEL,FWD,6000000,True,charles_de_ketelaere__bel,Charles De Ketelaere,BEL,Belgien,exact_name_team,1.0
+49271,Jeremy Doku,Belgien,BEL,FWD,6500000,True,jeremy_doku__bel,Jeremy Doku,BEL,Belgien,exact_name_team,1.0
+49027,Dodi Lukebakio,Belgien,BEL,FWD,3500000,True,dodi_lukebakio__bel,Dodi Lukebakio,BEL,Belgien,exact_name_team,1.0
+48804,Alireza Jahanbakhsh,Iran,IRN,FWD,2500000,True,alireza_jahanbakhsh__irn,Alireza Jahanbakhsh,IRN,Iran,exact_name_team,1.0
+49842,Shahriar Moghanlou,Iran,IRN,FWD,2000000,True,shahriar_moghanlou__irn,Shahriar Moghanlou,IRN,Iran,exact_name_team,1.0
+50376,Dennis 'Dargahi' Eckert Ayensa,Iran,IRN,FWD,2000000,False,,,,,,0.3
+49817,Samed Bazdar,Bosnien-Hercegovina,BIH,FWD,2000000,True,samed_ba_dar__bih,Samed Bazdar,BIH,Bosnien-Hercegovina,exact_name_team,1.0
+49591,Mohammad Mohebi,Iran,IRN,FWD,3000000,True,mohammad_mohebi__irn,Mohammad Mohebi,IRN,Iran,exact_name_team,1.0
+48796,Ali Alipour,Iran,IRN,FWD,2500000,True,ali_alipour__irn,Ali Alipour,IRN,Iran,exact_name_team,1.0
+48824,Amirhossein Hosseinzadeh,Iran,IRN,FWD,3000000,True,amirhossein_hosseinzadeh__irn,Amirhossein Hosseinzadeh,IRN,Iran,exact_name_team,1.0
+49545,Mehdi Taremi,Iran,IRN,FWD,3500000,True,mehdi_taremi__irn,Mehdi Taremi,IRN,Iran,exact_name_team,1.0
+49043,Edin Dzeko,Bosnien-Hercegovina,BIH,FWD,4500000,True,edin_dzeko__bih,Edin Dzeko,BIH,Bosnien-Hercegovina,exact_name_team,1.0
+49171,Haris Tabakovic,Bosnien-Hercegovina,BIH,FWD,3000000,True,haris_tabakovic__bih,Haris Tabakovic,BIH,Bosnien-Hercegovina,exact_name_team,1.0
+49343,Jovo Lukic,Bosnien-Hercegovina,BIH,FWD,2000000,True,jovo_lukic__bih,Jovo Lukic,BIH,Bosnien-Hercegovina,exact_name_team,1.0
+49077,Ermedin Demirovic,Bosnien-Hercegovina,BIH,FWD,3000000,True,ermedin_demirovic__bih,Ermedin Demirovic,BIH,Bosnien-Hercegovina,exact_name_team,1.0
+49319,Jordy Caicedo,Ecuador,ECU,FWD,2500000,True,jordy_caicedo__ecu,Jordy Caicedo,ECU,Ecuador,exact_name_team,1.0
+49305,John Mercado,Ecuador,ECU,FWD,2000000,True,john_mercado__ecu,John Mercado,ECU,Ecuador,exact_name_team,1.0
+49255,Janner Corozo,Ecuador,ECU,FWD,2000000,True,janner_corozo__ecu,Janner Corozo,ECU,Ecuador,exact_name_team,1.0
+49270,Jeremy Arevalo,Ecuador,ECU,FWD,2000000,True,jeremy_ar_valo__ecu,Jeremy Arevalo,ECU,Ecuador,exact_name_team,1.0
+49069,Enner Valencia,Ecuador,ECU,FWD,4000000,True,enner_valencia__ecu,Enner Valencia,ECU,Ecuador,exact_name_team,1.0
+49393,Kevin Rodriguez,Ecuador,ECU,FWD,3000000,True,kevin_rodr_guez__ecu,Kevin Rodriguez,ECU,Ecuador,exact_name_team,1.0
+50357,Nilson Angulo,Ecuador,ECU,FWD,2000000,False,,,,,,0.41379310344827586
+49461,Luis Diaz,Colombia,COL,FWD,5500000,True,luis_d_az__col,Luis Diaz,COL,Colombia,exact_name_team,1.0
+50245,Juan 'Cucho' Hernandez,Colombia,COL,FWD,4000000,True,juan_cucho_hernandez__col,Juan 'Cucho' Hernandez,COL,Colombia,exact_name_team,1.0
+49463,Luis Suarez Charris,Colombia,COL,FWD,4500000,True,luis_suarez_charris__col,Luis Suarez Charris,COL,Colombia,exact_name_team,1.0
+48847,Anthony Valencia,Ecuador,ECU,FWD,2000000,True,anthony_valencia__ecu,Anthony Valencia,ECU,Ecuador,exact_name_team,1.0
+49280,Jhon Cordoba,Colombia,COL,FWD,3000000,True,jhon_c_rdoba__col,Jhon Cordoba,COL,Colombia,exact_name_team,1.0
+49742,Rafael Santos Borre,Colombia,COL,FWD,4000000,True,rafael_santos_borre__col,Rafael Santos Borre,COL,Colombia,exact_name_team,1.0
+49300,Johan Carbonero,Colombia,COL,FWD,3500000,True,johan_carbonero__col,Johan Carbonero,COL,Colombia,exact_name_team,1.0
+49712,Patrick Agyemang,USA,USA,FWD,3000000,True,patrick_agyemang__usa,Patrick Agyemang,USA,USA,exact_name_team,1.0
+50250,Haji Wright,USA,USA,FWD,2500000,False,,,,,,0.34782608695652173
+48960,Christian Pulisic,USA,USA,FWD,4000000,True,christian_pulisic__usa,Christian Pulisic,USA,USA,exact_name_team,1.0
+49899,Timothy Weah,USA,USA,FWD,3000000,True,timothy_weah__usa,Timothy Weah,USA,USA,exact_name_team,1.0
+49767,Ricardo Pepi,USA,USA,FWD,2500000,True,ricardo_pepi__usa,Ricardo Pepi,USA,USA,exact_name_team,1.0
+49116,Folarin Balogun,USA,USA,FWD,4000000,True,folarin_balogun__usa,Folarin Balogun,USA,USA,exact_name_team,1.0
+48989,Darwin Nunez,Uruguay,URU,FWD,6000000,True,darwin_nunez__uru,Darwin Nunez,URU,Uruguay,exact_name_team,1.0
+48741,Agustin Alvarez,Uruguay,URU,FWD,3000000,True,agust_n_lvarez__uru,Agustin Alvarez,URU,Uruguay,exact_name_team,1.0
+49091,Facundo Torres,Uruguay,URU,FWD,3500000,True,facundo_torres__uru,Facundo Torres,URU,Uruguay,exact_name_team,1.0
+49097,Federico Vinas,Uruguay,URU,FWD,4000000,True,federico_vi_as__uru,Federico Vinas,URU,Uruguay,exact_name_team,1.0
+49090,Facundo Pellistri,Uruguay,URU,FWD,3500000,True,facundo_pellistri__uru,Facundo Pellistri,URU,Uruguay,exact_name_team,1.0
+48904,Bongokuhle Hlongwane,Sydafrika,RSA,FWD,2000000,True,bongokuhle_hlongwane__rsa,Bongokuhle Hlongwane,RSA,Sydafrika,exact_name_team,1.0
+49762,Relebohile Mofokeng,Sydafrika,RSA,FWD,2500000,True,relebohile_mofokeng__rsa,Relebohile Mofokeng,RSA,Sydafrika,exact_name_team,1.0
+49885,Thapelo Maseko,Sydafrika,RSA,FWD,2000000,True,thapelo_maseko__rsa,Thapelo Maseko,RSA,Sydafrika,exact_name_team,1.0
+49886,Thapelo Morena,Sydafrika,RSA,FWD,3000000,True,thapelo_morena__rsa,Thapelo Morena,RSA,Sydafrika,exact_name_team,1.0
+48919,Brian Rodriguez,Uruguay,URU,FWD,3500000,True,brian_rodr_guez__uru,Brian Rodriguez,URU,Uruguay,exact_name_team,1.0
+49787,Rodrigo Aguirre,Uruguay,URU,FWD,3000000,True,rodrigo_aguirre__uru,Rodrigo Aguirre,URU,Uruguay,exact_name_team,1.0
+49355,Julio Enciso,Paraguay,PAR,FWD,3500000,True,julio_enciso__par,Julio Enciso,PAR,Paraguay,exact_name_team,1.0
+49472,Lyle Foster,Sydafrika,RSA,FWD,3500000,True,lyle_foster__rsa,Lyle Foster,RSA,Sydafrika,exact_name_team,1.0
+49083,Evidence Makgopa,Sydafrika,RSA,FWD,2500000,True,evidence_makgopa__rsa,Evidence Makgopa,RSA,Sydafrika,exact_name_team,1.0
+49600,Mohau Nkota,Sydafrika,RSA,FWD,2500000,True,mohau_nkota__rsa,Mohau Nkota,RSA,Sydafrika,exact_name_team,1.0
+49911,Tshepang Moremi,Sydafrika,RSA,FWD,2500000,True,tshepang_moremi__rsa,Tshepang Moremi,RSA,Sydafrika,exact_name_team,1.0
+49694,Oswin Appollis,Sydafrika,RSA,FWD,3500000,True,oswin_appollis__rsa,Oswin Appollis,RSA,Sydafrika,exact_name_team,1.0
+48772,Alex Arce,Paraguay,PAR,FWD,2500000,True,alex_arce__par,Alex Arce,PAR,Paraguay,exact_name_team,1.0
+49793,Ronaldo Martinez,Paraguay,PAR,FWD,2000000,True,ronaldo_mart_nez__par,Ronaldo Martinez,PAR,Paraguay,exact_name_team,1.0
+49124,Gabriel Avalos,Paraguay,PAR,FWD,2000000,True,gabriel_avalos__par,Gabriel Avalos,PAR,Paraguay,exact_name_team,1.0
+48835,Angel Romero,Paraguay,PAR,FWD,2000000,True,ngel_romero__par,Angel Romero,PAR,Paraguay,exact_name_team,1.0
+48854,Antonio Sanabria,Paraguay,PAR,FWD,4000000,True,antonio_sanabria__par,Antonio Sanabria,PAR,Paraguay,exact_name_team,1.0
+50278,Iqraam Rayners,Sydafrika,RSA,FWD,2500000,False,,,,,,0.0
+50422,Isidro Pitta,Paraguay,PAR,FWD,2000000,False,,,,,,0.0
+48957,Chris Wood,New Zealand,NZL,FWD,3500000,True,chris_wood__nzl,Chris Wood,NZL,New Zealand,exact_name_team,1.0
+48892,Ben Waine,New Zealand,NZL,FWD,2500000,True,ben_waine__nzl,Ben Waine,NZL,New Zealand,exact_name_team,1.0
+49445,Logan Rogerson,New Zealand,NZL,FWD,2500000,False,,,,,,0.45161290322580644
+49408,Kosta Barbarouses,New Zealand,NZL,FWD,2500000,True,kosta_barbarouses__nzl,Kosta Barbarouses,NZL,New Zealand,exact_name_team,1.0
+49275,Jesse Randall,New Zealand,NZL,FWD,2000000,True,jesse_randall__nzl,Jesse Randall,NZL,New Zealand,exact_name_team,1.0
+50288,Santiago Gimenez,Mexico,MEX,FWD,3500000,False,,,,,,0.5714285714285714
+49353,Julian Quinones,Mexico,MEX,FWD,3000000,True,juli_n_qui_ones__mex,Julian Quinones,MEX,Mexico,exact_name_team,1.0
+48792,Alexis Vega,Mexico,MEX,FWD,2500000,True,alexis_vega__mex,Alexis Vega,MEX,Mexico,exact_name_team,1.0
+49754,Raul Jimenez,Mexico,MEX,FWD,4500000,True,ra_l_jim_nez__mex,Raul Jimenez,MEX,Mexico,exact_name_team,1.0
+48861,Armando Gonzalez,Mexico,MEX,FWD,2500000,True,armando_gonzalez__mex,Armando Gonzalez,MEX,Mexico,exact_name_team,1.0
+49154,Guillermo Martínez,Mexico,MEX,FWD,2000000,True,guillermo_martinez__mex,Guillermo Martínez,MEX,Mexico,exact_name_team,1.0
+49132,German Berterame,Mexico,MEX,FWD,3000000,True,german_berterame__mex,German Berterame,MEX,Mexico,exact_name_team,1.0
+49152,Gue-sung Cho,Sydkorea,KOR,FWD,2500000,True,cho_gue_sung__kor,Gue-sung Cho,KOR,Sydkorea,exact_name_team,1.0
+49183,Heung-Min Son,Sydkorea,KOR,FWD,6000000,True,son_heung_min__kor,Heung-Min Son,KOR,Sydkorea,exact_name_team,1.0
+49982,Yuito Suzuki,Japan,JPN,FWD,2500000,True,yuito_suzuki__jpn,Yuito Suzuki,JPN,Japan,exact_name_team,1.0
+49198,Hyeon-Gyu Oh,Sydkorea,KOR,FWD,3500000,True,oh_hyeon_gyu__kor,Hyeon-Gyu Oh,KOR,Sydkorea,exact_name_team,1.0
+49849,Shuto Machino,Japan,JPN,FWD,2500000,False,,,,,,0.46153846153846156
+49404,Koki Ogawa,Japan,JPN,FWD,4000000,True,koki_ogawa__jpn,Koki Ogawa,JPN,Japan,exact_name_team,1.0
+48873,Ayase Ueda,Japan,JPN,FWD,5500000,True,ayase_ueda__jpn,Ayase Ueda,JPN,Japan,exact_name_team,1.0
+48975,Daizen Maeda,Japan,JPN,FWD,2500000,True,daizen_maeda__jpn,Daizen Maeda,JPN,Japan,exact_name_team,1.0
+49385,Kento Shiogai,Japan,JPN,FWD,2500000,True,kento_shiogai__jpn,Kento Shiogai,JPN,Japan,exact_name_team,1.0
+49377,Keisuke Goto,Japan,JPN,FWD,2500000,True,keisuke_goto__jpn,Keisuke Goto,JPN,Japan,exact_name_team,1.0
+49739,Prince Adu,Ghana,GHA,FWD,2000000,True,prince_adu__gha,Prince Adu,GHA,Ghana,exact_name_team,1.0
+48962,Christopher Bonsu Baah,Ghana,GHA,FWD,2500000,True,christopher_bonsu_baah__gha,Christopher Bonsu Baah,GHA,Ghana,exact_name_team,1.0
+48912,Brandon Thomas-Asante,Ghana,GHA,FWD,2500000,True,brandon_thomas_asante__gha,Brandon Thomas-Asante,GHA,Ghana,exact_name_team,1.0
+49218,Iñaki Williams,Ghana,GHA,FWD,3000000,True,i_aki_williams__gha,Iñaki Williams,GHA,Ghana,exact_name_team,1.0
+49314,Jordan Ayew,Ghana,GHA,FWD,3000000,True,jordan_ayew__gha,Jordan Ayew,GHA,Ghana,exact_name_team,1.0
+48983,Daniel Nana Agyei,Ghana,GHA,FWD,2000000,True,daniel_nana_agyei__gha,Daniel Nana Agyei,GHA,Ghana,exact_name_team,1.0
+48849,Antoine Semenyo,Ghana,GHA,FWD,4000000,True,antoine_semenyo__gha,Antoine Semenyo,GHA,Ghana,exact_name_team,1.0
+49372,Kamaldeen Sulemana,Ghana,GHA,FWD,3000000,True,kamaldeen_sulemana__gha,Kamaldeen Sulemana,GHA,Ghana,exact_name_team,1.0
+49232,Issahaku Abdul Fatawu,Ghana,GHA,FWD,2500000,True,abdul_fatawu_issahaku__gha,Issahaku Abdul Fatawu,GHA,Ghana,exact_name_team,1.0
+50368,Ernest Nuamah,Ghana,GHA,FWD,2500000,False,,,,,,0.0
+48844,Anthony Gordon,England,ENG,FWD,4000000,True,anthony_gordon__eng,Anthony Gordon,ENG,England,exact_name_team,1.0
+49667,Noni Madueke,England,ENG,FWD,3500000,True,noni_madueke__eng,Noni Madueke,ENG,England,exact_name_team,1.0
+49681,Ollie Watkins,England,ENG,FWD,4000000,True,ollie_watkins__eng,Ollie Watkins,ENG,England,exact_name_team,1.0
+49257,Jarrod Bowen,England,ENG,FWD,3000000,True,jarrod_bowen__eng,Jarrod Bowen,ENG,England,exact_name_team,1.0
+48923,Bukayo Saka,England,ENG,FWD,6500000,True,bukayo_saka__eng,Bukayo Saka,ENG,England,exact_name_team,1.0
+50050,Ange-Yoan Bonny,Elfenbenskysten,CIV,FWD,2500000,True,ange_yoan_bonny__civ,Ange-Yoan Bonny,CIV,Elfenbenskysten,exact_name_team,1.0
+49081,Evann Guessand,Elfenbenskysten,CIV,FWD,3000000,True,evann_guessand__civ,Evann Guessand,CIV,Elfenbenskysten,exact_name_team,1.0
+49648,Nicolas Pepe,Elfenbenskysten,CIV,FWD,2500000,True,nicolas_pepe__civ,Nicolas Pepe,CIV,Elfenbenskysten,exact_name_team,1.0
+48814,Amad Diallo,Elfenbenskysten,CIV,FWD,3500000,True,amad_diallo__civ,Amad Diallo,CIV,Elfenbenskysten,exact_name_team,1.0
+49852,Simon Adingra,Elfenbenskysten,CIV,FWD,2500000,True,simon_adingra__civ,Simon Adingra,CIV,Elfenbenskysten,exact_name_team,1.0
+48893,Benie Traore,Elfenbenskysten,CIV,FWD,2500000,False,,,,,,0.5185185185185185
+49498,Marcus Rashford,England,ENG,FWD,5500000,True,marcus_rashford__eng,Marcus Rashford,ENG,England,exact_name_team,1.0
+50076,Ivan Toney,England,ENG,FWD,3500000,True,ivan_toney__eng,Ivan Toney,ENG,England,exact_name_team,1.0
+49172,Harry Kane,England,ENG,FWD,9500000,True,harry_kane__eng,Harry Kane,ENG,England,exact_name_team,1.0
+50051,Oumar Diakite,Elfenbenskysten,CIV,FWD,2500000,True,oumar_diakite__civ,Oumar Diakite,CIV,Elfenbenskysten,exact_name_team,1.0
+49063,Elye Wahi,Elfenbenskysten,CIV,FWD,2500000,True,elye_wahi__civ,Elye Wahi,CIV,Elfenbenskysten,exact_name_team,1.0
+48888,Bazoumana Toure,Elfenbenskysten,CIV,FWD,2000000,True,bazoumana_toure__civ,Bazoumana Toure,CIV,Elfenbenskysten,exact_name_team,1.0
+49956,Yan Diomande,Elfenbenskysten,CIV,FWD,3000000,True,yan_diomande__civ,Yan Diomande,CIV,Elfenbenskysten,exact_name_team,1.0
+49508,Martial Godo,Elfenbenskysten,CIV,FWD,3000000,True,martial_godo__civ,Martial Godo,CIV,Elfenbenskysten,exact_name_team,1.0
+49464,Luiz Henrique,Brasilien,BRA,FWD,3000000,True,luiz_henrique__bra,Luiz Henrique,BRA,Brasilien,exact_name_team,1.0
+49756,Rayan,Brasilien,BRA,FWD,3000000,True,rayan__bra,Rayan,BRA,Brasilien,exact_name_team,1.0
+49214,Igor Thiago,Brasilien,BRA,FWD,4000000,True,igor_thiago__bra,Igor Thiago,BRA,Brasilien,exact_name_team,1.0
+49068,Endrick,Brasilien,BRA,FWD,2500000,True,endrick__bra,Endrick,BRA,Brasilien,exact_name_team,1.0
+49292,João Pedro,Brasilien,BRA,FWD,4000000,True,joao_pedro__bra,João Pedro,BRA,Brasilien,exact_name_team,1.0
+49752,Raphinha,Brasilien,BRA,FWD,6500000,True,raphinha__bra,Raphinha,BRA,Brasilien,exact_name_team,1.0
+50035,Neymar Jr.,Brasilien,BRA,FWD,5500000,True,neymar_jr__bra,Neymar Jr.,BRA,Brasilien,exact_name_team,1.0
+49127,Gabriel Martinelli,Brasilien,BRA,FWD,4000000,True,gabriel_martinelli__bra,Gabriel Martinelli,BRA,Brasilien,exact_name_team,1.0
+49929,Vinicius Junior,Brasilien,BRA,FWD,7500000,True,vinicius_j_nior__bra,Vinicius Junior,BRA,Brasilien,exact_name_team,1.0
+49524,Matheus Cunha,Brasilien,BRA,FWD,4500000,True,matheus_cunha__bra,Matheus Cunha,BRA,Brasilien,exact_name_team,1.0
+48870,Awer Mabil,Australien,AUS,FWD,2000000,True,awer_mabil__aus,Awer Mabil,AUS,Australien,exact_name_team,1.0
+49636,Nestory Irankunda,Australien,AUS,FWD,3500000,True,nestory_irankunda__aus,Nestory Irankunda,AUS,Australien,exact_name_team,1.0
+49510,Martin Boyle,Australien,AUS,FWD,2500000,True,martin_boyle__aus,Martin Boyle,AUS,Australien,exact_name_team,1.0
+49583,Mohamed Toure,Australien,AUS,FWD,3000000,True,mohamed_toure__aus,Mohamed Toure,AUS,Australien,exact_name_team,1.0
+50306,Tete Yengi,Australien,AUS,FWD,2000000,False,,,,,,0.35294117647058826
+49006,Deni Juric,Australien,AUS,FWD,2500000,True,deni_juric__aus,Deni Juric,AUS,Australien,exact_name_team,1.0
+49660,Nishan Velupillay,Australien,AUS,FWD,2500000,True,nishan_velupillay__aus,Nishan Velupillay,AUS,Australien,exact_name_team,1.0
+48842,Ante Suto,Australien,AUS,FWD,2000000,True,ante_suto__aus,Ante Suto,AUS,Australien,exact_name_team,1.0
+49331,Jose Manuel Lopez,Argentina,ARG,FWD,2500000,True,jos_manuel_l_pez__arg,Jose Manuel Lopez,ARG,Argentina,exact_name_team,1.0
+49140,Giuliano Simeone,Argentina,ARG,FWD,4000000,True,giuliano_simeone__arg,Giuliano Simeone,ARG,Argentina,exact_name_team,1.0
+49352,Julian Alvarez,Argentina,ARG,FWD,6000000,True,juli_n_lvarez__arg,Julian Alvarez,ARG,Argentina,exact_name_team,1.0
+49776,Riyad Mahrez,Algeriet,ALG,FWD,4000000,True,riyad_mahrez__alg,Riyad Mahrez,ALG,Algeriet,exact_name_team,1.0
+49640,Nico Gonzalez,Argentina,ARG,FWD,4000000,True,nico_gonzalez__arg,Nico Gonzalez,ARG,Argentina,exact_name_team,1.0
+49423,Lautaro Martinez,Argentina,ARG,FWD,8000000,True,lautaro_mart_nez__arg,Lautaro Martinez,ARG,Argentina,exact_name_team,1.0
+49442,Lionel Messi,Argentina,ARG,FWD,8000000,True,lionel_messi__arg,Lionel Messi,ARG,Argentina,exact_name_team,1.0
+48821,Amine Gouiri,Algeriet,ALG,FWD,3000000,True,amine_gouiri__alg,Amine Gouiri,ALG,Algeriet,exact_name_team,1.0
+48884,Baghdad Bounedjah,Algeriet,ALG,FWD,3000000,True,baghdad_bounedjah__alg,Baghdad Bounedjah,ALG,Algeriet,exact_name_team,1.0
+48840,Anis Hadj Moussa,Algeriet,ALG,FWD,2500000,True,anis_hadj_moussa__alg,Anis Hadj Moussa,ALG,Algeriet,exact_name_team,1.0
+48749,Ahmed Nadhir Benbouali,Algeriet,ALG,FWD,2000000,True,ahmed_nadhir_benbouali__alg,Ahmed Nadhir Benbouali,ALG,Algeriet,exact_name_team,1.0
+48738,Adil Boulbina,Algeriet,ALG,FWD,2500000,True,adil_boulbina__alg,Adil Boulbina,ALG,Algeriet,exact_name_team,1.0
+49094,Fares Ghedjemis,Algeriet,ALG,FWD,2000000,True,fares_ghedjemis__alg,Fares Ghedjemis,ALG,Algeriet,exact_name_team,1.0
+48819,Amin Chiakha,Algeriet,ALG,FWD,2500000,True,amin_chiakha__alg,Amin Chiakha,ALG,Algeriet,exact_name_team,1.0
+49576,Mohamed Amoura,Algeriet,ALG,FWD,3500000,True,mohamed_amoura__alg,Mohamed Amoura,ALG,Algeriet,exact_name_team,1.0
+48843,Anthony Elanga,Sverige,SWE,FWD,3500000,True,anthony_elanga__swe,Anthony Elanga,SWE,Sverige,exact_name_team,1.0
+49947,Williot Swedberg,Sverige,SWE,FWD,2500000,False,,,,,,0.4
+49925,Viktor Gyökeres,Sverige,SWE,FWD,6000000,True,viktor_gyokeres__swe,Viktor Gyökeres,SWE,Sverige,exact_name_team,1.0
+48895,Benjamin Nygren,Sverige,SWE,FWD,3000000,True,benjamin_nygren__swe,Benjamin Nygren,SWE,Sverige,exact_name_team,1.0
+48782,Alexander Isak,Sverige,SWE,FWD,5000000,True,alexander_isak__swe,Alexander Isak,SWE,Sverige,exact_name_team,1.0
+49158,Gustaf Nilsson,Sverige,SWE,FWD,2000000,True,gustaf_nilsson__swe,Gustaf Nilsson,SWE,Sverige,exact_name_team,1.0
+48905,Borja Iglesias,Spanien,ESP,FWD,3500000,True,borja_iglesias__esp,Borja Iglesias,ESP,Spanien,exact_name_team,1.0
+49564,Mikel Oyarzabal,Spanien,ESP,FWD,7500000,True,mikel_oyarzabal__esp,Mikel Oyarzabal,ESP,Spanien,exact_name_team,1.0
+49105,Ferran Torres,Spanien,ESP,FWD,5000000,True,ferr_n_torres__esp,Ferran Torres,ESP,Spanien,exact_name_team,1.0
+50002,Nico Williams,Spanien,ESP,FWD,4500000,True,nico_williams__esp,Nico Williams,ESP,Spanien,exact_name_team,1.0
+49819,Samuel Aghehowa,Spanien,ESP,FWD,3000000,True,samuel_aghehowa__esp,Samuel Aghehowa,ESP,Spanien,exact_name_team,1.0
+49421,Lamine Yamal,Spanien,ESP,FWD,9000000,True,lamine_yamal__esp,Lamine Yamal,ESP,Spanien,exact_name_team,1.0
+50113,Victor Munoz,Spanien,ESP,FWD,3000000,True,victor_munoz__esp,Victor Munoz,ESP,Spanien,exact_name_team,1.0
+49663,Noa Lang,Holland,NED,FWD,3000000,True,noa_lang__ned,Noa Lang,NED,Holland,exact_name_team,1.0
+48964,Cody Gakpo,Holland,NED,FWD,6500000,True,cody_gakpo__ned,Cody Gakpo,NED,Holland,exact_name_team,1.0
+49032,Donyell Malen,Holland,NED,FWD,4500000,True,donyell_malen__ned,Donyell Malen,NED,Holland,exact_name_team,1.0
+48916,Brian Brobbey,Holland,NED,FWD,2500000,True,brian_brobbey__ned,Brian Brobbey,NED,Holland,exact_name_team,1.0
+49952,Wout Weghorst,Holland,NED,FWD,3000000,True,wout_weghorst__ned,Wout Weghorst,NED,Holland,exact_name_team,1.0
+49547,Memphis Depay,Holland,NED,FWD,4000000,True,memphis_depay__ned,Memphis Depay,NED,Holland,exact_name_team,1.0
+49697,Ousmane Dembele,Frankrig,FRA,FWD,5500000,True,ousmane_demb_l__fra,Ousmane Dembele,FRA,Frankrig,exact_name_team,1.0
+49556,Michael Olise,Frankrig,FRA,FWD,7000000,True,michael_olise__fra,Michael Olise,FRA,Frankrig,exact_name_team,1.0
+49750,Randal Kolo Muani,Frankrig,FRA,FWD,4500000,True,randal_kolo_muani__fra,Randal Kolo Muani,FRA,Frankrig,exact_name_team,1.0
+49019,Desire Doue,Frankrig,FRA,FWD,4000000,True,d_sir_dou__fra,Desire Doue,FRA,Frankrig,exact_name_team,1.0
+49475,Maghnes Akliouche,Frankrig,FRA,FWD,3500000,True,maghnes_akliouche__fra,Maghnes Akliouche,FRA,Frankrig,exact_name_team,1.0
+49193,Hugo Ekitike,Frankrig,FRA,FWD,6000000,True,hugo_ekitike__fra,Hugo Ekitike,FRA,Frankrig,exact_name_team,1.0
+49758,Rayan Cherki,Frankrig,FRA,FWD,4000000,True,rayan_cherki__fra,Rayan Cherki,FRA,Frankrig,exact_name_team,1.0
+50024,Jean-Philippe Mateta,Frankrig,FRA,FWD,3500000,True,jean_philippe_mateta__fra,Jean-Philippe Mateta,FRA,Frankrig,exact_name_team,1.0
+49418,Kylian Mbappe,Frankrig,FRA,FWD,10000000,True,kylian_mbapp__fra,Kylian Mbappe,FRA,Frankrig,exact_name_team,1.0
+49499,Marcus Thuram,Frankrig,FRA,FWD,5000000,True,marcus_thuram__fra,Marcus Thuram,FRA,Frankrig,exact_name_team,1.0
+50082,Maximilian Beier,Tyskland,GER,FWD,2500000,True,maximilian_beier__ger,Maximilian Beier,GER,Tyskland,exact_name_team,1.0
+49638,Nick Woltemade,Tyskland,GER,FWD,6000000,True,nick_woltemade__ger,Nick Woltemade,GER,Tyskland,exact_name_team,1.0
+49010,Deniz Undav,Tyskland,GER,FWD,3500000,True,deniz_undav__ger,Deniz Undav,GER,Tyskland,exact_name_team,1.0
+49367,Kai Havertz,Tyskland,GER,FWD,5500000,True,kai_havertz__ger,Kai Havertz,GER,Tyskland,exact_name_team,1.0
+48829,Andrej Kramaric,Kroatien,CRO,FWD,5500000,True,andrej_kramari__cro,Andrej Kramaric,CRO,Kroatien,exact_name_team,1.0
+49838,Serge Gnabry,Tyskland,GER,FWD,6000000,True,serge_gnabry__ger,Serge Gnabry,GER,Tyskland,exact_name_team,1.0
+49435,Leroy Sane,Tyskland,GER,FWD,5500000,True,leroy_san__ger,Leroy Sane,GER,Tyskland,exact_name_team,1.0
+49732,Petar Musa,Kroatien,CRO,FWD,2500000,True,petar_musa__cro,Petar Musa,CRO,Kroatien,exact_name_team,1.0
+48841,Ante Budimir,Kroatien,CRO,FWD,3500000,True,ante_budimir__cro,Ante Budimir,CRO,Kroatien,exact_name_team,1.0
+49234,Ivan Perisic,Kroatien,CRO,FWD,4500000,True,ivan_peri_i__cro,Ivan Perisic,CRO,Kroatien,exact_name_team,1.0
+49212,Igor Matanovic,Kroatien,CRO,FWD,2500000,True,igor_matanovic__cro,Igor Matanovic,CRO,Kroatien,exact_name_team,1.0
+49495,Marco Pasalic,Kroatien,CRO,FWD,3000000,True,marco_pasalic__cro,Marco Pasalic,CRO,Kroatien,exact_name_team,1.0
+49753,Raul Florucz,Østrig,AUT,FWD,2000000,True,raul_florucz__aut,Raul Florucz,AUT,Østrig,exact_name_team,1.0
+49494,Marco Grüll,Østrig,AUT,FWD,2000000,True,marco_grull__aut,Marco Grüll,AUT,Østrig,exact_name_team,1.0
+50316,Sasa Kalajdzic,Østrig,AUT,FWD,2500000,False,,,,,,0.4
+49555,Michael Gregoritsch,Østrig,AUT,FWD,3500000,True,michael_gregoritsch__aut,Michael Gregoritsch,AUT,Østrig,exact_name_team,1.0
+49504,Marko Arnautovic,Østrig,AUT,FWD,4500000,True,marko_arnautovi__aut,Marko Arnautovic,AUT,Østrig,exact_name_team,1.0
+49985,Yunus Akgün,Tyrkiet,TUR,FWD,2500000,True,yunus_akgun__tur,Yunus Akgün,TUR,Tyrkiet,exact_name_team,1.0
+48886,Baris Alper Yilmaz,Tyrkiet,TUR,FWD,3000000,True,baris_alper_yilmaz__tur,Baris Alper Yilmaz,TUR,Tyrkiet,exact_name_team,1.0
+50389,Can Uzun,Tyrkiet,TUR,FWD,3500000,False,,,,,,0.35294117647058826
+49009,Deniz Gül,Tyrkiet,TUR,FWD,2500000,True,deniz_g_l__tur,Deniz Gül,TUR,Tyrkiet,exact_name_team,1.0
+49741,Rafael Leão,Portugal,POR,FWD,5500000,True,rafael_le_o__por,Rafael Leão,POR,Portugal,exact_name_team,1.0
+49143,Goncalo Ramos,Portugal,POR,FWD,5000000,True,gon_alo_ramos__por,Goncalo Ramos,POR,Portugal,exact_name_team,1.0
+49118,Francisco Trincao,Portugal,POR,FWD,4000000,True,francisco_trinc_o__por,Francisco Trincao,POR,Portugal,exact_name_team,1.0
+49117,Francisco Conceicao,Portugal,POR,FWD,5500000,True,francisco_concei_o__por,Francisco Conceicao,POR,Portugal,exact_name_team,1.0
+49288,João Felix,Portugal,POR,FWD,4500000,True,jo_o_f_lix__por,João Felix,POR,Portugal,exact_name_team,1.0
+49728,Pedro Neto,Portugal,POR,FWD,5000000,True,pedro_neto__por,Pedro Neto,POR,Portugal,exact_name_team,1.0
+50059,Goncalo Guedes,Portugal,POR,FWD,2500000,True,goncalo_guedes__por,Goncalo Guedes,POR,Portugal,exact_name_team,1.0
+48970,Cristiano Ronaldo,Portugal,POR,FWD,7000000,True,cristiano_ronaldo__por,Cristiano Ronaldo,POR,Portugal,exact_name_team,1.0
+49901,Tomas Chory,Tjekkiet,CZE,FWD,3000000,True,tomas_chory__cze,Tomas Chory,CZE,Tjekkiet,exact_name_team,1.0
+49719,Patrik Schick,Tjekkiet,CZE,FWD,4500000,True,patrik_schick__cze,Patrik Schick,CZE,Tjekkiet,exact_name_team,1.0
+49253,Jan Kliment,Tjekkiet,CZE,FWD,2000000,True,jan_kliment__cze,Jan Kliment,CZE,Tjekkiet,exact_name_team,1.0
+49603,Mojmir Chytil,Tjekkiet,CZE,FWD,2500000,True,mojmir_chytil__cze,Mojmir Chytil,CZE,Tjekkiet,exact_name_team,1.0
+50294,Jan Kuchta,Tjekkiet,CZE,FWD,2500000,False,,,,,,0.0
+50289,Adam Hlozek,Tjekkiet,CZE,FWD,2500000,False,,,,,,0.0
+49297,Joel Monteiro,Schweiz,SUI,FWD,2500000,False,,,,,,0.48
+48978,Dan Ndoye,Schweiz,SUI,FWD,4000000,True,dan_ndoye__sui,Dan Ndoye,SUI,Schweiz,exact_name_team,1.0
+49584,Mohamed Zeki Amdouni,Schweiz,SUI,FWD,3500000,True,mohamed_zeki_amdouni__sui,Mohamed Zeki Amdouni,SUI,Schweiz,exact_name_team,1.0
+48959,Christian Fassnacht,Schweiz,SUI,FWD,3000000,True,christian_fassnacht__sui,Christian Fassnacht,SUI,Schweiz,exact_name_team,1.0
+49801,Ruben Vargas,Schweiz,SUI,FWD,3500000,True,ruben_vargas__sui,Ruben Vargas,SUI,Schweiz,exact_name_team,1.0
+48827,Andi Zeqiri,Schweiz,SUI,FWD,2000000,False,,,,,,0.2857142857142857
+48941,Cedric Itten,Schweiz,SUI,FWD,2000000,True,cedric_itten__sui,Cedric Itten,SUI,Schweiz,exact_name_team,1.0
+48913,Breel Embolo,Schweiz,SUI,FWD,5000000,True,breel_embolo__sui,Breel Embolo,SUI,Schweiz,exact_name_team,1.0
