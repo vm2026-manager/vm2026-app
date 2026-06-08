@@ -1881,6 +1881,33 @@
 }
 /* PLAYER_LIST_POSITION_TOP_LINE_PATCH_END */
 
+
+/* HIDE_STATUS_BOX_PATCH_START */
+.info-panel,
+.explanation-panel,
+.status-panel,
+.data-status-panel {
+  display: none !important;
+}
+
+/* Fallback: hide the card containing "Forklaring og datastatus" if it uses a generic class */
+.side-panel .card:has(.info-title),
+.side-panel .card:has(.status-title),
+.side-panel .card:has(button),
+.sidebar .card:has(.info-title),
+.sidebar .card:has(.status-title) {
+  display: none !important;
+}
+/* HIDE_STATUS_BOX_PATCH_END */
+
+
+/* HIDE_FIRST_RIGHT_INFO_CARD_PATCH_START */
+.right-panel > div:nth-child(2),
+.sidebar > div:nth-child(2) {
+  display: none !important;
+}
+/* HIDE_FIRST_RIGHT_INFO_CARD_PATCH_END */
+
 </style>
 
 </head>
@@ -2101,7 +2128,36 @@
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
+/* REMOVE_DATA_STATUS_BOX_PATCH_START */
+function removeDataStatusBox() {
+  const matches = Array.from(document.querySelectorAll("body *"))
+    .filter(el => (el.textContent || "").trim() === "Forklaring og datastatus");
+
+  for (const title of matches) {
+    let box = title;
+    for (let i = 0; i < 5 && box && box.parentElement; i += 1) {
+      box = box.parentElement;
+      const txt = box.textContent || "";
+      if (
+        txt.includes("Forklaring og datastatus") &&
+        txt.includes("Vis") &&
+        !txt.includes("Spillerliste")
+      ) {
+        box.style.display = "none";
+        box.style.margin = "0";
+        box.style.padding = "0";
+        break;
+      }
+    }
+  }
+}
+
+document.addEventListener("DOMContentLoaded", removeDataStatusBox);
+setTimeout(removeDataStatusBox, 250);
+/* REMOVE_DATA_STATUS_BOX_PATCH_END */
+
+</script>
   <script>
     const DATA_URL = "data/player_pool_v1.json";
     const FIXTURES_URL = "data/fixtures_group.csv";
@@ -3719,6 +3775,10 @@ function getPlayerScore(player) {
     }
 
     function getDisabledReason(player) {
+
+      const selectedSlotKey = findFilledSlotByPlayerId(player.player_id);
+      if (selectedSlotKey) return "Allerede valgt";
+
       if (isPlayerUnavailable(player)) return "Ikke tilgængelig";
 
       const price = getPlayerPrice(player);
@@ -4962,14 +5022,8 @@ function renderTradeList() {
 
       const usedPlayerIds = new Set(Object.values(squad).filter(Boolean).map(String));
 
-      players = players.filter(player => {
-        const inSquad = usedPlayerIds.has(String(player.player_id));
-        const slotForPlayer = findFilledSlotByPlayerId(player.player_id);
-
-        if (!inSquad) return true;
-        if (activeSlotKey && slotForPlayer === activeSlotKey) return true;
-        return false;
-      });
+      // Keep already-selected players visible in the list/search.
+      // Addability is handled by getDisabledReason()/button disabled state.
 
       if (eligibleOnly) {
         players = players.filter(player => isEligibleNow(player));
