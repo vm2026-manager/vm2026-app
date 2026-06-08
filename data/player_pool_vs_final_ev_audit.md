@@ -8,31 +8,31 @@
 
 ## Før/efter
 
-- `optimizer_ev` forskel > 0.001: 0 -> 0
-- `optimizer_ev` forskel > 0.10: 0 -> 0
+- `optimizer_ev` forskel > 0.001: 1 -> 0
+- `optimizer_ev` forskel > 0.10: 1 -> 0
 - Dublerede player_id i pool: 0
 - Dublerede player_id i EV: 0
 - Pool-rækker uden exact EV-match: 0
 - EV-rækker uden exact pool-match: 0
-- Backup: `data\player_pool_v1.backup_before_final_ev_sync_20260608_192309.json`
+- Backup: `data\player_pool_v1.backup_before_final_ev_sync_20260608_193716.json`
 
 ## Feltmismatches
 
 | Felt | Før | Efter |
 | --- | ---: | ---: |
-| optimizer_ev | 0 | 0 |
-| weighted_group_stage_ev | 0 | 0 |
-| weighted_group_stage_ev_before_price_quality | 0 | 0 |
-| price_quality_ev | 0 | 0 |
-| model_ev_before_price_quality | 0 | 0 |
-| optimizer_ev_before_price_quality | 0 | 0 |
+| optimizer_ev | 1 | 0 |
+| weighted_group_stage_ev | 1 | 0 |
+| weighted_group_stage_ev_before_price_quality | 1 | 0 |
+| price_quality_ev | 1 | 0 |
+| model_ev_before_price_quality | 1 | 0 |
+| optimizer_ev_before_price_quality | 1 | 0 |
 | price_quality_raw_ev | 0 | 0 |
-| price_quality_appearance_scaled_ev | 0 | 0 |
+| price_quality_appearance_scaled_ev | 1 | 0 |
 | price_quality_base_capped_ev | 0 | 0 |
 | price_quality_weight | 0 | 0 |
 | price_quality_spread_multiplier | 0 | 0 |
 | price_quality_applied | 0 | 0 |
-| price_quality_method | 0 | 0 |
+| price_quality_method | 1 | 0 |
 | base_ev_source | 0 | 0 |
 
 ## Sanity

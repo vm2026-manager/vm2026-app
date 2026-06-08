@@ -1283,7 +1283,7 @@ youssef_en_nesyri__mar,Youssef En-Nesyri,MAR,FWD,0,0.0,0.0,transfermarkt_availab
 ayoub_el_kaabi__mar,Ayoub El Kaabi,MAR,FWD,34,0.3446,0.3446,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7445,,,,ayoub el kaabi||mar,,,0.3951,0.635,high_risk,high_risk,
 aqtay_abdallah__egy,Aqtay Abdallah,EGY,FWD,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.0446,,,,aqtay abdallah||egy,,,0.0,0.75,out,out_of_tournament,0.0
 hamza_abdelkarim__egy,Hamza Abdelkarim,EGY,FWD,5,0.0465,0.0465,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.8655,,,,hamza abdelkarim||egy,,,0.05,0.8,unknown,unknown,
-brahim_d_az__mar,Brahim Diaz,MAR,FWD,41,0.4146,0.4146,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.8254,,,,brahim diaz||mar,,,0.4801,0.61,high_risk,high_risk,
+brahim_d_az__mar,Brahim Diaz,MAR,FWD,72.0,0.72,0.72,manual_context_override_safe,sandsynlig starter - Transfermarkt landshold,,,,,,0.8254,,,,brahim diaz||mar,,,0.85,0.95,low_risk,high_risk,0.95
 mostafa_mohamed__egy,Mostafa Mohamed,EGY,FWD,0,0.0,0.0,holdet_official_unmatched_default,,,,,,,,,,,,,,0.0,,out,out_of_tournament,0.0
 nasser_mansy__egy,Nasser Mansy,EGY,FWD,0,0.0,0.0,holdet_official_unmatched_default,,,,,,,,,,,,,,0.0,,out,out_of_tournament,0.0
 omar_marmoush__egy,Omar Marmoush,EGY,FWD,86,0.8621,0.8621,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.8626,,,,omar marmoush||egy,,,0.9493,0.7376,medium_risk,medium_risk,
@@ -1332,7 +1332,7 @@ anthony_valencia__ecu,Anthony Valencia,ECU,FWD,31,0.3076,0.3076,transfermarkt_av
 jhon_c_rdoba__col,Jhon Cordoba,COL,FWD,13,0.1309,0.1309,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6658,,,,jhon cordoba||col,,,0.1434,0.7514,medium_risk,medium_risk,
 rafael_santos_borre__col,Rafael Santos Borre,COL,FWD,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.0,0.8408,out,out_of_tournament,0.0
 johan_carbonero__col,Johan Carbonero,COL,FWD,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.0,0.8677,out,out_of_tournament,0.0
-patrick_agyemang__usa,Patrick Agyemang,USA,FWD,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7929,,,,patrick agyemang||usa,,,0.0,0.8418,out,out_of_tournament,0.0
+patrick_agyemang__usa,Patrick Agyemang,USA,FWD,0,0,0,manual_unavailable_override,ude af VM,,,,,,0.7929,,,,patrick agyemang||usa,,,0,0,out,out_of_tournament,0.0
 haji_wright__usa,Haji Wright,USA,FWD,25,0.2538,0.2538,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.291,0.6352,high_risk,high_risk,
 christian_pulisic__usa,Christian Pulisic,USA,FWD,83,0.8318,0.8318,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.817,,,,christian pulisic||usa,,,0.9606,0.6169,high_risk,high_risk,
 timothy_weah__usa,Timothy Weah,USA,FWD,40,0.402,0.402,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7859,,,,timothy weah||usa,,,0.4675,0.6,high_risk,high_risk,
