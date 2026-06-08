@@ -132,9 +132,9 @@
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 84.0,
+    "start_probability_pct": 84,
     "start_security": 0.84,
-    "start_status": "sandsynlig starter - Transfermarkt landshold",
+    "start_status": "sikker starter - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 137.0,
     "transfermarkt_competitive_starts": 45.0,
     "transfermarkt_competition_weight_sum": 23.138400000000004,
@@ -182,7 +182,7 @@
     "round3_ev": 1.178717,
     "source_note": "Manual context review: expected Switzerland right-back. Recent reduced friendly minutes assessed mainly as managed minutes.",
     "manual_start_override": true,
-    "start_pct": 84.0
+    "start_pct": 84
   },
   {
     "player_id": "ricardo_rodr_guez__sui",
@@ -1144,8 +1144,8 @@
     "weighted_group_stage_ev": 0.6082069258671503,
     "optimizer_ev": 0.6082069258671503,
     "start_security": 0.35,
-    "start_probability_pct": 35.0,
-    "start_status": "rotation/usikker - Transfermarkt landshold",
+    "start_probability_pct": 35,
+    "start_status": "sikker starter - Transfermarkt landshold",
     "conditional_start_prob": 0.45,
     "availability_prob": 0.878,
     "availability_risk": "medium_risk",
@@ -1190,7 +1190,7 @@
     "start_signal_context_note": "Manual low-priority nation audit vs Bold+ XI: Chaloupek not in expected XI; recent usage likely overpromoted him.",
     "source_note": "Manual low-priority nation audit vs Bold+ XI: Chaloupek not in expected XI; recent usage likely overpromoted him.",
     "manual_start_override": true,
-    "start_pct": 35.0
+    "start_pct": 35
   },
   {
     "player_id": "martin_vitik__cze",
@@ -3887,7 +3887,7 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 76.0,
+    "start_probability_pct": 76,
     "start_security": 0.76,
     "start_status": "sandsynlig starter - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 54.0,
@@ -3945,7 +3945,7 @@
     "round3_ev": 0.809076,
     "source_note": "Manual context review: frequent Austria starter with substantial recent minutes, but defensive role competition remains.",
     "manual_start_override": true,
-    "start_pct": 76.0
+    "start_pct": 76
   },
   {
     "player_id": "maximilian_w_ber__aut",
@@ -6152,9 +6152,9 @@
       "hairStyle": "VeryShort"
     },
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 25.0,
+    "start_probability_pct": 25,
     "start_security": 0.25,
-    "start_status": "rotation/usikker - Transfermarkt landshold",
+    "start_status": "sjældent startende - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 3.0,
     "transfermarkt_competitive_starts": 1.0,
     "transfermarkt_competition_weight_sum": 1.4768000000000001,
@@ -6201,7 +6201,7 @@
     "start_signal_context_note": "Manual context review: France defensive role not secure. Recent test-match usage should not over-promote him to likely starter.",
     "source_note": "Manual context review: France defensive role not secure. Recent test-match usage should not over-promote him to likely starter.",
     "manual_start_override": true,
-    "start_pct": 25.0
+    "start_pct": 25
   },
   {
     "player_id": "jules_kounde__fra",
@@ -12314,7 +12314,7 @@
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
     "start_security": 0.4,
-    "start_probability_pct": 40.0,
+    "start_probability_pct": 40,
     "start_status": "rotation/usikker - Transfermarkt landshold",
     "conditional_start_prob": 0.5,
     "availability_prob": 0.7469,
@@ -12358,7 +12358,7 @@
     "start_signal_context_note": "Manual low-priority nation audit vs Bold+ XI: Behich not in expected XI; reduce from likely-starter range.",
     "source_note": "Manual low-priority nation audit vs Bold+ XI: Behich not in expected XI; reduce from likely-starter range.",
     "manual_start_override": true,
-    "start_pct": 40.0
+    "start_pct": 40
   },
   {
     "player_id": "milo_degenek__aus",
@@ -13126,17 +13126,17 @@
     "holdet_position": "DEF",
     "holdet_start_price": 3500000,
     "holdet_price": 3500000,
-    "holdet_is_out": true,
+    "holdet_is_out": false,
     "has_holdet_vm_match": true,
     "official_holdet_master": true,
     "copied_from_old_player_pool": true,
     "old_player_id": "wesley_franca__bra",
     "old_match_method": "exact_name_team",
     "old_match_score": 1.0,
-    "start_prob": 0,
-    "start_prob_source": "manual_unavailable_override",
-    "weighted_group_stage_ev": 0.0,
-    "optimizer_ev": 0.0,
+    "start_prob": 0.6273,
+    "start_prob_source": "transfermarkt_availability_split_2026_06_04",
+    "weighted_group_stage_ev": 2.676318,
+    "optimizer_ev": 2.676318,
     "holdet_appearance": {
       "skinColor": "#C3886A",
       "hairColor": "#CCCCCC",
@@ -13145,9 +13145,9 @@
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 0,
-    "start_security": 0,
-    "start_status": "ude af VM",
+    "start_probability_pct": 63,
+    "start_security": 0.6273,
+    "start_status": "rotation/usikker - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 14.0,
     "transfermarkt_competitive_starts": 7.0,
     "transfermarkt_competition_weight_sum": 2.4,
@@ -13158,39 +13158,37 @@
     "transfermarkt_start_score": 0.7499,
     "transfermarkt_recency_start_score": 0.7499,
     "transfermarkt_recent_start_rate_since_2025": 0.4167,
-    "conditional_start_prob": 0,
-    "availability_prob": 0,
-    "availability_risk": "out",
-    "availability_status": "out_of_tournament",
+    "conditional_start_prob": 0.7143,
+    "availability_prob": 0.6522,
+    "availability_risk": "medium_risk",
+    "availability_status": "medium_risk",
     "transfermarkt_available_rows": 7,
     "transfermarkt_absence_rows": 4,
     "transfermarkt_available_weight": 1.75,
     "transfermarkt_absence_weight": 1.0,
     "transfermarkt_start_weight": 1.25,
-    "weighted_group_stage_ev_before_price_quality": 0.0,
-    "price_quality_ev": 0.0,
-    "model_ev_before_price_quality": 0.0,
-    "optimizer_ev_before_price_quality": 0.0,
-    "price_quality_raw_ev": 0.0,
-    "price_quality_appearance_scaled_ev": 0.0,
-    "price_quality_base_capped_ev": 0.0,
+    "weighted_group_stage_ev_before_price_quality": 2.419902,
+    "price_quality_ev": 2.989716,
+    "model_ev_before_price_quality": 2.419902,
+    "optimizer_ev_before_price_quality": 2.419902,
+    "price_quality_raw_ev": 3.336204,
+    "price_quality_appearance_scaled_ev": 2.989716,
+    "price_quality_base_capped_ev": 3.336204,
     "price_quality_weight": 0.45,
     "price_quality_spread_multiplier": 1.35,
-    "price_quality_applied": false,
-    "price_quality_method": "not_applied",
-    "base_ev_source": "out_of_tournament_manual",
+    "price_quality_applied": true,
+    "price_quality_method": "appearance_scaled_then_base_capped",
+    "base_ev_source": "component_weighted_sum",
     "match_1_opponent_team": "MAR",
     "match_1_weighted_match_ev": 0.769857,
     "match_2_opponent_team": "HAI",
     "match_2_weighted_match_ev": 0.953698,
     "match_3_opponent_team": "SCO",
     "match_3_weighted_match_ev": 0.696342,
-    "round1_ev": 0,
-    "round2_ev": 0,
-    "round3_ev": 0,
-    "start_pct": 0,
-    "is_out": true,
-    "source_note": "Confirmed unavailable override: exclude from selection and recommendations."
+    "round1_ev": 0.769857,
+    "round2_ev": 0.953698,
+    "round3_ev": 0.696342,
+    "start_pct": 63
   },
   {
     "player_id": "bremer__bra",
@@ -13319,7 +13317,7 @@
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 45.0,
+    "start_probability_pct": 45,
     "start_security": 0.45,
     "start_status": "rotation/usikker - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 4.0,
@@ -13369,7 +13367,7 @@
     "round3_ev": 0.563528,
     "source_note": "Manual context review: not in Bold expected Brazil XI. Recent full friendly starts may reflect rotation/rest for first-choice centre-backs rather than secure starting role. Downgraded to rotation/uncertain starter.",
     "manual_start_override": true,
-    "start_pct": 45.0
+    "start_pct": 45
   },
   {
     "player_id": "clement_akpa__civ",
@@ -25154,7 +25152,7 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 40.0,
+    "start_probability_pct": 40,
     "start_security": 0.4,
     "start_status": "rotation/usikker - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 22.0,
@@ -25203,7 +25201,7 @@
     "start_signal_context_note": "Manual low-priority nation audit vs Bold+ XI: not in expected XI; keep as rotation/tvivlsom starter.",
     "source_note": "Manual low-priority nation audit vs Bold+ XI: not in expected XI; keep as rotation/tvivlsom starter.",
     "manual_start_override": true,
-    "start_pct": 40.0
+    "start_pct": 40
   },
   {
     "player_id": "amar_dedi__bih",
@@ -26895,9 +26893,9 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 86.0,
+    "start_probability_pct": 86,
     "start_security": 0.86,
-    "start_status": "sandsynlig starter - Transfermarkt landshold",
+    "start_status": "sikker starter - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 54.0,
     "transfermarkt_competitive_starts": 30.0,
     "transfermarkt_competition_weight_sum": 16.072,
@@ -26953,7 +26951,7 @@
     "round3_ev": 1.165167,
     "source_note": "Manual context review: regular Belgium starter. Recent friendly rotation should not outweigh qualification usage.",
     "manual_start_override": true,
-    "start_pct": 86.0
+    "start_pct": 86
   },
   {
     "player_id": "joaquin_seys__bel",
@@ -35541,8 +35539,8 @@
     "player_visual_source": "holdet_api_appearance",
     "display_score_source": "start_neutral_blended_nt_team_absolute",
     "start_security": 0.68,
-    "start_probability_pct": 68.0,
-    "start_status": "rotation/usikker - Transfermarkt landshold",
+    "start_probability_pct": 68,
+    "start_status": "sandsynlig starter - Transfermarkt landshold",
     "conditional_start_prob": 0.76,
     "availability_prob": 0.95,
     "availability_risk": "low_risk",
@@ -35586,7 +35584,7 @@
     "round3_ev": 0.487303,
     "source_note": "Manual context review from recent Canada usage screenshot and BetXpert comment: started recent matches and reportedly expected to get renewed trust. Raised from data-model reserve level, but kept below nailed-on due to thin sample.",
     "manual_start_override": true,
-    "start_pct": 68.0
+    "start_pct": 68
   },
   {
     "player_id": "jahkeele_rutty__can",
@@ -43846,9 +43844,9 @@
     "gk_start_prob_raw_before_normalization": 0.8,
     "gk_start_prob_normalized": 0.9448,
     "gk_start_prob_normalized_at": "2026-06-07",
-    "start_probability_pct": 80.0,
+    "start_probability_pct": 80,
     "start_security": 0.8,
-    "start_status": "sandsynlig starter",
+    "start_status": "sikker starter - GK hierarchy",
     "transfermarkt_competitive_rows": 118.0,
     "transfermarkt_competitive_starts": 31.0,
     "transfermarkt_competition_weight_sum": 22.4004,
@@ -43898,7 +43896,7 @@
     "round3_ev": 0.687424,
     "source_note": "Manual context review from Canada GK usage screenshot and BetXpert comment: Crepeau reportedly named/treated as Canada R1 starter. Raised to likely starter.",
     "manual_start_override": true,
-    "start_pct": 80.0
+    "start_pct": 80
   },
   {
     "player_id": "angus_gunn__sco",
@@ -52269,13 +52267,13 @@
     "start_price": 5000000,
     "start_prob": 0.05,
     "start_security": 0.05,
-    "start_probability_pct": 5.0,
+    "start_probability_pct": 5,
     "conditional_start_prob": 0.08,
     "availability_prob": 0.9447,
     "availability_risk": "medium_risk",
     "availability_status": "out_of_tournament",
     "start_prob_source": "manual_context_override_safe",
-    "start_status": "rotation/usikker",
+    "start_status": "ude - GK hierarchy",
     "display_score": 0,
     "display_score_source": "holdet_new_player_import_2026_06_01",
     "display_value": 0,
@@ -52323,7 +52321,7 @@
     "base_ev_source": "out_of_tournament_manual",
     "appearance_prob": 0.0,
     "minute_share": 0.0,
-    "start_pct": 5.0,
+    "start_pct": 5,
     "round_specific_rotation_risk": "high",
     "manual_start_override": true,
     "source_note": "Manual context review: Brazil GK hierarchy uncertain but Bento treated as outside option."
@@ -52473,9 +52471,9 @@
     "tm_weighted_competitive_start_score": 0.7789,
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 65.0,
+    "start_probability_pct": 65,
     "start_security": 0.65,
-    "start_status": "rotation/usikker",
+    "start_status": "sikker starter - GK hierarchy",
     "transfermarkt_competitive_rows": 130.0,
     "transfermarkt_competitive_starts": 78.0,
     "transfermarkt_competition_weight_sum": 18.701999999999998,
@@ -52523,7 +52521,7 @@
     "round1_ev": 1.215303,
     "round2_ev": 1.520842,
     "round3_ev": 1.114406,
-    "start_pct": 65.0,
+    "start_pct": 65,
     "round_specific_rotation_risk": "medium",
     "manual_start_override": true,
     "source_note": "Manual context review: Brazil GK hierarchy uncertain. Alisson likely but not locked starter over Ederson/Bento."
@@ -52578,9 +52576,9 @@
     "tm_weighted_competitive_start_score": 0.6048,
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 30.0,
+    "start_probability_pct": 30,
     "start_security": 0.3,
-    "start_status": "rotation/usikker",
+    "start_status": "reservekeeper - GK hierarchy",
     "transfermarkt_competitive_rows": 111.0,
     "transfermarkt_competitive_starts": 31.0,
     "transfermarkt_competition_weight_sum": 17.938800000000004,
@@ -52628,7 +52626,7 @@
     "round1_ev": 0.135189,
     "round2_ev": 0.143811,
     "round3_ev": 0.099485,
-    "start_pct": 30.0,
+    "start_pct": 30,
     "round_specific_rotation_risk": "medium",
     "manual_start_override": true,
     "source_note": "Manual context review: Brazil GK hierarchy uncertain. Ederson remains plausible starter, not near-zero."
@@ -54714,8 +54712,8 @@
     "weighted_group_stage_ev": 1.1523378712871288,
     "optimizer_ev": 1.1523378712871288,
     "start_security": 0.15,
-    "start_probability_pct": 15.0,
-    "start_status": "rotation/usikker",
+    "start_probability_pct": 15,
+    "start_status": "reservekeeper - GK hierarchy",
     "conditional_start_prob": 0.2,
     "availability_prob": 0.9,
     "availability_risk": "low_risk",
@@ -54764,7 +54762,7 @@
     "round3_ev": 0.114291,
     "source_note": "Manuel kontekstjustering: Joan Garcia vurderes ikke som sandsynlig Spanien-starter trods modelens høje start_prob. Nedjusteret for at undgå, at han vælges som value-GK på fejlagtig starterantagelse.",
     "manual_start_override": true,
-    "start_pct": 15.0
+    "start_pct": 15
   },
   {
     "player_id": "robin_roefs__ned",
@@ -55314,9 +55312,9 @@
     "tm_recency_weighted_competitive_start_score": 0.8027,
     "tm_weighted_competitive_start_score": 0.8027,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 82.0,
+    "start_probability_pct": 82,
     "start_security": 0.82,
-    "start_status": "sandsynlig starter",
+    "start_status": "sikker starter - GK hierarchy",
     "transfermarkt_competitive_rows": 87.0,
     "transfermarkt_competitive_starts": 38.0,
     "transfermarkt_competition_weight_sum": 20.02,
@@ -55369,7 +55367,7 @@
     "round3_ev": 1.035773,
     "source_note": "Existing raw country start-security row is 0.98 and previous canonical start_prob was 0.82; noted bench games are rotation after qualification/friendly, not loss of starting role.",
     "manual_start_override": true,
-    "start_pct": 82.0
+    "start_pct": 82
   },
   {
     "player_id": "lucas_chevalier__fra",
@@ -56487,9 +56485,9 @@
     "gk_start_prob_raw_before_normalization": 0.9,
     "gk_start_prob_normalized": 0.9212,
     "gk_start_prob_normalized_at": "2026-06-07",
-    "start_probability_pct": 90.0,
+    "start_probability_pct": 90,
     "start_security": 0.9,
-    "start_status": "sikker starter",
+    "start_status": "sikker starter - GK hierarchy",
     "transfermarkt_competitive_rows": 77.0,
     "transfermarkt_competitive_starts": 26.0,
     "transfermarkt_competition_weight_sum": 14.995600000000001,
@@ -56539,7 +56537,7 @@
     "round3_ev": 0.960068,
     "source_note": "Seneste kamp vægtes højest: startede og spillede 90 minutter mod Tunesien 1. juni 2026. Bænken mod Sydkorea vurderes som rotation i en tæt serie af tre testkampe, ikke som tab af førsterollen.",
     "manual_start_override": true,
-    "start_pct": 90.0
+    "start_pct": 90
   },
   {
     "player_id": "mert_gunok__tur",
@@ -57930,9 +57928,9 @@
     "tm_recency_weighted_competitive_start_score": 0.7416,
     "tm_weighted_competitive_start_score": 0.7416,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 92.0,
+    "start_probability_pct": 92,
     "start_security": 0.92,
-    "start_status": "sikker starter",
+    "start_status": "sikker starter - GK hierarchy",
     "transfermarkt_competitive_rows": 70.0,
     "transfermarkt_competitive_starts": 21.0,
     "transfermarkt_competition_weight_sum": 17.7884,
@@ -57985,7 +57983,7 @@
     "round3_ev": 0.994708,
     "source_note": "Manual context review: established Switzerland first-choice goalkeeper. Recent friendly benches assessed as rotation.",
     "manual_start_override": true,
-    "start_pct": 92.0
+    "start_pct": 92
   },
   {
     "player_id": "yvon_mvogo__sui",
@@ -60059,7 +60057,7 @@
     "tm_recency_weighted_competitive_start_score": 0.9472,
     "tm_weighted_competitive_start_score": 0.9472,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 93.0,
+    "start_probability_pct": 93,
     "start_security": 0.93,
     "start_status": "sikker starter - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 108.0,
@@ -60104,7 +60102,7 @@
     "round1_ev": 1.426883,
     "round2_ev": 1.34475,
     "round3_ev": 0.728477,
-    "start_pct": 93.0,
+    "start_pct": 93,
     "appearance_prob": 0.98,
     "round_specific_rotation_risk": "low",
     "manual_start_override": true,
@@ -62007,13 +62005,13 @@
     "flag_code": "at",
     "position": "MID",
     "advance_pct": 0.902,
-    "avg_points": 0,
-    "nt_ev_score": 0,
-    "blended_ev_score": 0,
-    "display_score": 0,
+    "avg_points": 5.46,
+    "nt_ev_score": 0.6271,
+    "blended_ev_score": 4.106,
+    "display_score": 88,
     "price_estimate": 3500000,
-    "value_score": 0,
-    "display_value": 0,
+    "value_score": 0.4613,
+    "display_value": 46,
     "price": 3500000,
     "price_source": "holdet_vm_2026_official",
     "position_source": "holdet_vm_2026_official",
@@ -62033,8 +62031,8 @@
     "old_player_id": "christoph_baumgartner__aut",
     "old_match_method": "exact_name_team",
     "old_match_score": 1.0,
-    "start_prob": 0,
-    "start_prob_source": "manual_unavailable_override",
+    "start_prob": 0.0,
+    "start_prob_source": "manual_out_baumgartner_2026_06_04",
     "weighted_group_stage_ev": 0.0,
     "optimizer_ev": 0.0,
     "holdet_appearance": {
@@ -62043,7 +62041,7 @@
     "player_visual_source": "holdet_api_appearance",
     "display_score_source": "start_neutral_blended_nt_team_absolute",
     "start_probability_pct": 0,
-    "start_security": 0,
+    "start_security": 0.0,
     "start_status": "ude af VM",
     "transfermarkt_competitive_rows": 71.0,
     "transfermarkt_competitive_starts": 50.0,
@@ -62055,8 +62053,8 @@
     "transfermarkt_start_score": 0.7692,
     "transfermarkt_recency_start_score": 0.6904,
     "transfermarkt_recent_start_rate_since_2025": 0.9167,
-    "conditional_start_prob": 0,
-    "availability_prob": 0,
+    "conditional_start_prob": 0.0,
+    "availability_prob": 0.0,
     "availability_risk": "out",
     "availability_status": "out_of_tournament",
     "transfermarkt_available_rows": 62,
@@ -62085,14 +62083,12 @@
     "match_2_weighted_match_ev": 0.0,
     "match_3_opponent_team": "ALG",
     "match_3_weighted_match_ev": 0.0,
-    "round1_ev": 0,
-    "round2_ev": 0,
-    "round3_ev": 0,
+    "round1_ev": 0.0,
+    "round2_ev": 0.0,
+    "round3_ev": 0.0,
     "appearance_prob": 0.0,
     "minute_share": 0.0,
-    "start_pct": 0,
-    "is_out": true,
-    "source_note": "Existing out marker retained; stale display and value fields must remain zero."
+    "start_pct": 0
   },
   {
     "player_id": "xaver_schlager__aut",
@@ -62686,7 +62682,7 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 57.9,
+    "start_probability_pct": 58,
     "start_security": 0.5787,
     "start_status": "rotation/usikker - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 43.0,
@@ -62736,7 +62732,7 @@
     "round3_ev": 0.193234,
     "source_note": "Existing raw country start-security row is 0.5787 with base_start_score 0.6477; canonical availability split over-promoted him to secure starter.",
     "manual_start_override": true,
-    "start_pct": 57.9
+    "start_pct": 58
   },
   {
     "player_id": "paul_wanner__aut",
@@ -64268,9 +64264,9 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 68.0,
+    "start_probability_pct": 68,
     "start_security": 0.68,
-    "start_status": "rotation/usikker - Transfermarkt landshold",
+    "start_status": "sandsynlig starter - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 27.0,
     "transfermarkt_competitive_starts": 8.0,
     "transfermarkt_competition_weight_sum": 8.2076,
@@ -64318,7 +64314,7 @@
     "round3_ev": 0.414172,
     "source_note": "Manual context review: Pavlovic is in Germany's start-picture but not a nailed-on starter. Recent usage includes starts and 90-minute matches, but also bench/non-squad/injury context. Downgraded from likely starter to borderline/possible starter.",
     "manual_start_override": true,
-    "start_pct": 68.0
+    "start_pct": 68
   },
   {
     "player_id": "lennart_karl__ger",
@@ -64346,8 +64342,8 @@
     "old_player_id": "lennart_karl__ger",
     "old_match_method": "exact_name_team",
     "old_match_score": 1.0,
-    "start_prob": 0,
-    "start_prob_source": "manual_unavailable_override",
+    "start_prob": 0.0,
+    "start_prob_source": "transfermarkt_availability_split_2026_06_07",
     "weighted_group_stage_ev": 0.0,
     "optimizer_ev": 0.0,
     "holdet_appearance": {
@@ -64372,8 +64368,8 @@
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
     "start_probability_pct": 0,
-    "start_security": 0,
-    "start_status": "ude af VM",
+    "start_security": 0.0,
+    "start_status": "sjældent startende - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 3.0,
     "transfermarkt_competitive_starts": 1.0,
     "transfermarkt_competition_weight_sum": 1.4768000000000001,
@@ -64384,8 +64380,8 @@
     "transfermarkt_start_score": 0.3333,
     "transfermarkt_recency_start_score": 0.3521,
     "transfermarkt_recent_start_rate_since_2025": 1.0,
-    "conditional_start_prob": 0,
-    "availability_prob": 0,
+    "conditional_start_prob": 0.0,
+    "availability_prob": 0.8288,
     "availability_risk": "out",
     "availability_status": "out_of_tournament",
     "transfermarkt_available_rows": 3,
@@ -64413,14 +64409,12 @@
     "match_2_weighted_match_ev": 0.17441,
     "match_3_opponent_team": "ECU",
     "match_3_weighted_match_ev": 0.135076,
-    "round1_ev": 0,
-    "round2_ev": 0,
-    "round3_ev": 0,
+    "round1_ev": 0.287804,
+    "round2_ev": 0.17441,
+    "round3_ev": 0.135076,
     "appearance_prob": 0.0,
     "minute_share": 0.0,
-    "start_pct": 0,
-    "is_out": true,
-    "source_note": "Existing out marker retained; all useful model values must remain zero."
+    "start_pct": 0
   },
   {
     "player_id": "assan_ouedraogo__ger",
@@ -64539,7 +64533,7 @@
     "tm_recency_weighted_competitive_start_score": 0.8642,
     "tm_weighted_competitive_start_score": 0.8642,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 94.0,
+    "start_probability_pct": 94,
     "start_security": 0.94,
     "start_status": "sikker starter - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 68.0,
@@ -64584,7 +64578,7 @@
     "round1_ev": 1.329836,
     "round2_ev": 1.039918,
     "round3_ev": 0.783463,
-    "start_pct": 94.0,
+    "start_pct": 94,
     "appearance_prob": 0.98,
     "round_specific_rotation_risk": "low",
     "manual_start_override": true,
@@ -64647,7 +64641,7 @@
     "tm_recency_weighted_competitive_start_score": 0.8826,
     "tm_weighted_competitive_start_score": 0.8826,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 90.0,
+    "start_probability_pct": 90,
     "start_security": 0.9,
     "start_status": "sikker starter - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 68.0,
@@ -64692,7 +64686,7 @@
     "round1_ev": 1.16224,
     "round2_ev": 0.89394,
     "round3_ev": 0.680333,
-    "start_pct": 90.0,
+    "start_pct": 90,
     "appearance_prob": 0.98,
     "round_specific_rotation_risk": "low",
     "manual_start_override": true,
@@ -65038,7 +65032,7 @@
     "tm_recency_weighted_competitive_start_score": 0.8361,
     "tm_weighted_competitive_start_score": 0.8361,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 38.0,
+    "start_probability_pct": 38,
     "start_security": 0.38,
     "start_status": "rotation/usikker - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 19.0,
@@ -65088,7 +65082,7 @@
     "round3_ev": 0.279237,
     "source_note": "Latest France context supplied for audit: missed last three national matches, two with muscle injury; injury absence must not be treated as rotation.",
     "manual_start_override": true,
-    "start_pct": 38.0
+    "start_pct": 38
   },
   {
     "player_id": "eduardo_camavinga__fra",
@@ -65212,9 +65206,9 @@
       "hairColor": "#000000"
     },
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 30.0,
+    "start_probability_pct": 30,
     "start_security": 0.3,
-    "start_status": "rotation/usikker - Transfermarkt landshold",
+    "start_status": "sjældent startende - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 27.0,
     "transfermarkt_competitive_starts": 8.0,
     "transfermarkt_competition_weight_sum": 11.185599999999999,
@@ -65261,7 +65255,7 @@
     "start_signal_context_note": "Manual context review: France attacking roles are competitive. Barcola should be treated as rotation/possible starter rather than secure starter.",
     "source_note": "Manual context review: France attacking roles are competitive. Barcola should be treated as rotation/possible starter rather than secure starter.",
     "manual_start_override": true,
-    "start_pct": 30.0
+    "start_pct": 30
   },
   {
     "player_id": "warren_za_re_emery__fra",
@@ -67612,7 +67606,7 @@
     "flag_code": "es",
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 58.0,
+    "start_probability_pct": 58,
     "start_security": 0.58,
     "start_status": "rotation/usikker - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 88.0,
@@ -67662,7 +67656,7 @@
     "round3_ev": 0.350668,
     "source_note": "Manual context review: included in expected Spain XI, but recent national-team record includes several injury/frav?r rows close to the tournament. Downgraded from likely starter to uncertain starter.",
     "manual_start_override": true,
-    "start_pct": 58.0
+    "start_pct": 58
   },
   {
     "player_id": "marcos_llorente__esp",
@@ -69436,8 +69430,8 @@
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
     "start_security": 0.45,
-    "start_probability_pct": 45.0,
-    "start_status": "rotation/usikker - Transfermarkt landshold",
+    "start_probability_pct": 45,
+    "start_status": "sandsynlig starter - Transfermarkt landshold",
     "conditional_start_prob": 0.55,
     "availability_prob": 0.6,
     "availability_risk": "medium_risk",
@@ -69480,7 +69474,7 @@
     "start_signal_context_note": "Manual low-priority nation audit vs Bold+ XI: Aouar not in expected XI; reduce test-match/Transfermarkt overpromotion.",
     "source_note": "Manual low-priority nation audit vs Bold+ XI: Aouar not in expected XI; reduce test-match/Transfermarkt overpromotion.",
     "manual_start_override": true,
-    "start_pct": 45.0
+    "start_pct": 45
   },
   {
     "player_id": "rodrigo_de_paul__arg",
@@ -69735,7 +69729,7 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 55.0,
+    "start_probability_pct": 55,
     "start_security": 0.55,
     "start_status": "rotation/usikker - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 105.0,
@@ -69785,7 +69779,7 @@
     "round3_ev": 0.696731,
     "source_note": "Manual context review: not in Bold expected Argentina starting XI; recent national-team usage includes mixed starts, bench appearances and injury/absence context. Downgraded from likely starter to uncertain rotation option.",
     "manual_start_override": true,
-    "start_pct": 55.0
+    "start_pct": 55
   },
   {
     "player_id": "franco_mastantuono__arg",
@@ -70784,8 +70778,8 @@
     "weighted_group_stage_ev": 0.322379222686702,
     "optimizer_ev": 0.322379222686702,
     "start_security": 0.35,
-    "start_probability_pct": 35.0,
-    "start_status": "rotation/usikker - Transfermarkt landshold",
+    "start_probability_pct": 35,
+    "start_status": "sandsynlig starter - Transfermarkt landshold",
     "conditional_start_prob": 0.45,
     "availability_prob": 0.75,
     "availability_risk": "medium_risk",
@@ -70819,7 +70813,7 @@
     "start_signal_context_note": "Manual low-priority nation audit vs Bold+ XI: Volpato not in expected XI; recent usage likely overpromoted him.",
     "source_note": "Manual low-priority nation audit vs Bold+ XI: Volpato not in expected XI; recent usage likely overpromoted him.",
     "manual_start_override": true,
-    "start_pct": 35.0
+    "start_pct": 35
   },
   {
     "player_id": "cameron_devlin__aus",
@@ -71557,7 +71551,7 @@
     "weighted_group_stage_ev": 0.1727663035138867,
     "optimizer_ev": 0.1727663035138867,
     "start_security": 0.45,
-    "start_probability_pct": 45.0,
+    "start_probability_pct": 45,
     "start_status": "rotation/usikker - Transfermarkt landshold",
     "conditional_start_prob": 0.55,
     "availability_prob": 0.8305,
@@ -71592,7 +71586,7 @@
     "start_signal_context_note": "Manual low-priority nation audit vs Bold+ XI: not treated as secure starter in expert XI; reduce elevated model signal.",
     "source_note": "Manual low-priority nation audit vs Bold+ XI: not treated as secure starter in expert XI; reduce elevated model signal.",
     "manual_start_override": true,
-    "start_pct": 45.0
+    "start_pct": 45
   },
   {
     "player_id": "aiden_o_neill__aus",
@@ -72765,9 +72759,9 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 35.0,
+    "start_probability_pct": 35,
     "start_security": 0.35,
-    "start_status": "rotation/usikker - Transfermarkt landshold",
+    "start_status": "sjældent startende - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 9.0,
     "transfermarkt_competitive_starts": 6.0,
     "transfermarkt_competition_weight_sum": 4.890400000000001,
@@ -72814,7 +72808,7 @@
     "start_signal_context_note": "Manual context review: England role is competitive. Recent test-match minutes should not imply near-secure starter status.",
     "source_note": "Manual context review: England role is competitive. Recent test-match minutes should not imply near-secure starter status.",
     "manual_start_override": true,
-    "start_pct": 35.0
+    "start_pct": 35
   },
   {
     "player_id": "eberechi_eze__eng",
@@ -73141,7 +73135,7 @@
     "tm_recency_weighted_competitive_start_score": 0.8672,
     "tm_weighted_competitive_start_score": 0.8672,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 45.0,
+    "start_probability_pct": 45,
     "start_security": 0.45,
     "start_status": "rotation/usikker - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 15.0,
@@ -73190,7 +73184,7 @@
     "start_signal_context_note": "Manual context review: England midfield/attack role is competitive. Recent test-match minutes should not imply near-secure starter status.",
     "source_note": "Manual context review: England midfield/attack role is competitive. Recent test-match minutes should not imply near-secure starter status.",
     "manual_start_override": true,
-    "start_pct": 45.0
+    "start_pct": 45
   },
   {
     "player_id": "kobbie_mainoo__eng",
@@ -73337,9 +73331,9 @@
     "tm_recency_weighted_competitive_start_score": 0.8656,
     "tm_weighted_competitive_start_score": 0.8656,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 93.0,
+    "start_probability_pct": 93,
     "start_security": 0.93,
-    "start_status": "sikker starter - Transfermarkt landshold",
+    "start_status": "sjældent startende - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 75.0,
     "transfermarkt_competitive_starts": 36.0,
     "transfermarkt_competition_weight_sum": 18.3852,
@@ -73382,7 +73376,7 @@
     "round1_ev": 0.411519,
     "round2_ev": 0.455731,
     "round3_ev": 0.349159,
-    "start_pct": 93.0,
+    "start_pct": 93,
     "appearance_prob": 0.98,
     "round_specific_rotation_risk": "low",
     "manual_start_override": true,
@@ -81564,9 +81558,9 @@
     "tm_recency_weighted_competitive_start_score": 0.8613,
     "tm_weighted_competitive_start_score": 0.8613,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 82.0,
+    "start_probability_pct": 82,
     "start_security": 0.82,
-    "start_status": "sandsynlig starter - Transfermarkt landshold",
+    "start_status": "sikker starter - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 171.0,
     "transfermarkt_competitive_starts": 110.0,
     "transfermarkt_competition_weight_sum": 25.946800000000007,
@@ -81614,7 +81608,7 @@
     "round3_ev": 0.573438,
     "source_note": "Manual context review from recent Colombia usage screenshot and expert article: strong recurring starter/attacking role, with set-piece/penalty relevance. Raised to likely starter.",
     "manual_start_override": true,
-    "start_pct": 82.0
+    "start_pct": 82
   },
   {
     "player_id": "juan_quintero__col",
@@ -82687,9 +82681,9 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 55.0,
+    "start_probability_pct": 55,
     "start_security": 0.55,
-    "start_status": "rotation/usikker - Transfermarkt landshold",
+    "start_status": "sandsynlig starter - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 73.0,
     "transfermarkt_competitive_starts": 58.0,
     "transfermarkt_competition_weight_sum": 19.1596,
@@ -82735,7 +82729,7 @@
     "round_specific_rotation_risk": "medium",
     "manual_start_override": true,
     "source_note": "Manual low-priority nation audit vs Bold+ XI: model start_prob looks high relative to expected XI; reduce but do not zero because player quality/hierarchy remains plausible.",
-    "start_pct": 55.0
+    "start_pct": 55
   },
   {
     "player_id": "john_yeboah__ecu",
@@ -84035,9 +84029,9 @@
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 40.0,
+    "start_probability_pct": 40,
     "start_security": 0.4,
-    "start_status": "rotation/usikker - Transfermarkt landshold",
+    "start_status": "sandsynlig starter - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 10.0,
     "transfermarkt_competitive_starts": 5.0,
     "transfermarkt_competition_weight_sum": 6.1096,
@@ -84083,7 +84077,7 @@
     "round_specific_rotation_risk": "high",
     "manual_start_override": true,
     "source_note": "Manual low-priority nation audit vs Bold+ XI: Alajbegovic not in expected XI; reduce recent-match overpromotion.",
-    "start_pct": 40.0
+    "start_pct": 40
   },
   {
     "player_id": "saman_ghoddos__irn",
@@ -85183,7 +85177,7 @@
     "tm_recency_weighted_competitive_start_score": 0.9018,
     "tm_weighted_competitive_start_score": 0.9018,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 91.0,
+    "start_probability_pct": 91,
     "start_security": 0.91,
     "start_status": "sikker starter - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 188.0,
@@ -85228,7 +85222,7 @@
     "round1_ev": 1.076865,
     "round2_ev": 1.125136,
     "round3_ev": 0.950601,
-    "start_pct": 91.0,
+    "start_pct": 91,
     "appearance_prob": 0.98,
     "round_specific_rotation_risk": "low",
     "manual_start_override": true,
@@ -87237,7 +87231,7 @@
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 92.0,
+    "start_probability_pct": 92,
     "start_security": 0.92,
     "start_status": "sikker starter - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 187.0,
@@ -87293,7 +87287,7 @@
     "round3_ev": 0.171362,
     "source_note": "Manual context review: expected Egypt starter with an advanced attacking role despite Holdet midfield classification.",
     "manual_start_override": true,
-    "start_pct": 92.0
+    "start_pct": 92
   },
   {
     "player_id": "haissem_hassan__egy",
@@ -87547,9 +87541,9 @@
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 45.0,
+    "start_probability_pct": 45,
     "start_security": 0.45,
-    "start_status": "rotation/usikker - Transfermarkt landshold",
+    "start_status": "sandsynlig starter - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 48.0,
     "transfermarkt_competitive_starts": 31.0,
     "transfermarkt_competition_weight_sum": 22.2008,
@@ -87596,7 +87590,7 @@
     "start_signal_context_note": "Manual low-priority nation audit vs Bold+ XI: Ateya not clearly in expected XI; reduce elevated model signal.",
     "source_note": "Manual low-priority nation audit vs Bold+ XI: Ateya not clearly in expected XI; reduce elevated model signal.",
     "manual_start_override": true,
-    "start_pct": 45.0
+    "start_pct": 45
   },
   {
     "player_id": "mohanad_lasheen__egy",
@@ -87980,9 +87974,9 @@
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 40.0,
+    "start_probability_pct": 40,
     "start_security": 0.4,
-    "start_status": "rotation/usikker - Transfermarkt landshold",
+    "start_status": "sandsynlig starter - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 105.0,
     "transfermarkt_competitive_starts": 72.0,
     "transfermarkt_competition_weight_sum": 2.4,
@@ -88034,7 +88028,7 @@
     "round_specific_rotation_risk": "high",
     "manual_start_override": true,
     "source_note": "Manual low-priority nation audit vs Bold+ XI: Zizo not in expected XI; reduce elevated model signal.",
-    "start_pct": 40.0
+    "start_pct": 40
   },
   {
     "player_id": "mohamed_rabie_hrimat__mar",
@@ -88753,8 +88747,8 @@
     "weighted_group_stage_ev": 0.1688392085134685,
     "optimizer_ev": 0.1688392085134685,
     "start_security": 0.35,
-    "start_probability_pct": 35.0,
-    "start_status": "rotation/usikker - Transfermarkt landshold",
+    "start_probability_pct": 35,
+    "start_status": "sikker starter - Transfermarkt landshold",
     "conditional_start_prob": 0.45,
     "availability_prob": 0.8,
     "availability_risk": "medium_risk",
@@ -88788,7 +88782,7 @@
     "start_signal_context_note": "Manual low-priority nation audit vs Bold+ XI: Bouaddi not in expected XI; clear recent-match overpromotion.",
     "source_note": "Manual low-priority nation audit vs Bold+ XI: Bouaddi not in expected XI; clear recent-match overpromotion.",
     "manual_start_override": true,
-    "start_pct": 35.0
+    "start_pct": 35
   },
   {
     "player_id": "eliesse_ben_seghir__mar",
@@ -89036,7 +89030,7 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 60.2,
+    "start_probability_pct": 60,
     "start_security": 0.6015,
     "start_status": "rotation/usikker - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 127.0,
@@ -89086,7 +89080,7 @@
     "round3_ev": 0.675061,
     "source_note": "Existing raw country start-security row is 0.6015 with base_start_score 0.6526; canonical availability split over-promoted him to probable starter.",
     "manual_start_override": true,
-    "start_pct": 60.2
+    "start_pct": 60
   },
   {
     "player_id": "iliman_ndiaye__sen",
@@ -90386,9 +90380,9 @@
     "holdet_appearance": {},
     "player_visual_source": "holdet_api_appearance",
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 45.0,
+    "start_probability_pct": 45,
     "start_security": 0.45,
-    "start_status": "rotation/usikker - Transfermarkt landshold",
+    "start_status": "sandsynlig starter - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 23.0,
     "transfermarkt_competitive_starts": 15.0,
     "transfermarkt_competition_weight_sum": 15.7736,
@@ -90435,7 +90429,7 @@
     "start_signal_context_note": "Manual low-priority nation audit vs Bold+ XI: not treated as secure starter; reduce elevated model signal.",
     "source_note": "Manual low-priority nation audit vs Bold+ XI: not treated as secure starter; reduce elevated model signal.",
     "manual_start_override": true,
-    "start_pct": 45.0
+    "start_pct": 45
   },
   {
     "player_id": "mortadha_ben_ouanes__tun",
@@ -98315,8 +98309,8 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 82.0,
-    "start_status": "sandsynlig starter - Transfermarkt landshold",
+    "start_probability_pct": 82,
+    "start_status": "sikker starter - Transfermarkt landshold",
     "start_security": 0.82,
     "conditional_start_prob": 0.88,
     "availability_prob": 0.93,
@@ -98361,7 +98355,7 @@
     "round3_ev": 0.679646,
     "source_note": "Manual context review: likely Norway starter based on recent starts, minutes and expected-lineup assessment.",
     "manual_start_override": true,
-    "start_pct": 82.0
+    "start_pct": 82
   },
   {
     "player_id": "jens_petter_hauge__nor",
@@ -98726,7 +98720,7 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 58.0,
+    "start_probability_pct": 58,
     "start_security": 0.58,
     "start_status": "rotation/usikker - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 27.0,
@@ -98775,7 +98769,7 @@
     "manual_start_override": true,
     "source_note": "Manual context review: Norway attacking hierarchy. Recent friendly minutes should not make Bobb a safer starter than Haaland/Odegaard/Nusa. Treat as rotation/possible starter.",
     "start_signal_context_note": "Manual context review: Norway attacking hierarchy. Recent friendly minutes should not make Bobb a safer starter than Haaland/Odegaard/Nusa. Treat as rotation/possible starter.",
-    "start_pct": 58.0
+    "start_pct": 58
   },
   {
     "player_id": "sander_berge__nor",
@@ -98913,9 +98907,9 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 33.3,
+    "start_probability_pct": 33,
     "start_security": 0.3333,
-    "start_status": "rotation/usikker - Transfermarkt landshold",
+    "start_status": "sjældent startende - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 21.0,
     "transfermarkt_competitive_starts": 5.0,
     "transfermarkt_competition_weight_sum": 9.465599999999998,
@@ -98963,7 +98957,7 @@
     "round3_ev": 0.385405,
     "source_note": "Transfermarkt usage supplied for audit: squad 15, starts 5, substitutions on 6, unused bench 4; appearance is high but start rate is not.",
     "manual_start_override": true,
-    "start_pct": 33.3
+    "start_pct": 33
   },
   {
     "player_id": "tahith_chong__cuw",
@@ -102866,7 +102860,7 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 38.0,
+    "start_probability_pct": 38,
     "start_security": 0.38,
     "start_status": "rotation/usikker - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 56.0,
@@ -102915,7 +102909,7 @@
     "manual_start_override": true,
     "source_note": "Manual context review: Norway attacking hierarchy. Strand Larsen treated as rotation/bench, not 50%+ starter.",
     "start_signal_context_note": "Manual context review: Norway attacking hierarchy. Strand Larsen treated as rotation/bench, not 50%+ starter.",
-    "start_pct": 38.0
+    "start_pct": 38
   },
   {
     "player_id": "erling_haaland__nor",
@@ -102974,7 +102968,7 @@
     "tm_recency_weighted_competitive_start_score": 0.9302,
     "tm_weighted_competitive_start_score": 0.9302,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 93.0,
+    "start_probability_pct": 93,
     "start_status": "sikker starter - Transfermarkt landshold",
     "start_security": 0.93,
     "conditional_start_prob": 0.97,
@@ -103015,7 +103009,7 @@
     "round1_ev": 1.574396,
     "round2_ev": 1.22524,
     "round3_ev": 0.642993,
-    "start_pct": 93.0,
+    "start_pct": 93,
     "appearance_prob": 0.98,
     "round_specific_rotation_risk": "low",
     "manual_start_override": true,
@@ -109599,9 +109593,9 @@
     "tm_recency_weighted_competitive_start_score": 0.8118,
     "tm_weighted_competitive_start_score": 0.8118,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 82.0,
+    "start_probability_pct": 82,
     "start_security": 0.82,
-    "start_status": "sandsynlig starter - Transfermarkt landshold",
+    "start_status": "rotation/usikker - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 70.0,
     "transfermarkt_competitive_starts": 14.0,
     "transfermarkt_competition_weight_sum": 17.7204,
@@ -109644,7 +109638,7 @@
     "round1_ev": 0.444346,
     "round2_ev": 0.445145,
     "round3_ev": 0.374764,
-    "start_pct": 82.0,
+    "start_pct": 82,
     "appearance_prob": 0.98,
     "round_specific_rotation_risk": "low",
     "manual_start_override": true,
@@ -109706,9 +109700,9 @@
     "tm_recency_weighted_competitive_start_score": 0.8446,
     "tm_weighted_competitive_start_score": 0.8446,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 86.0,
+    "start_probability_pct": 86,
     "start_security": 0.86,
-    "start_status": "sandsynlig starter - Transfermarkt landshold",
+    "start_status": "rotation/usikker - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 75.0,
     "transfermarkt_competitive_starts": 33.0,
     "transfermarkt_competition_weight_sum": 18.735600000000005,
@@ -109751,7 +109745,7 @@
     "round1_ev": 1.074514,
     "round2_ev": 1.110076,
     "round3_ev": 0.95193,
-    "start_pct": 86.0,
+    "start_pct": 86,
     "appearance_prob": 0.98,
     "round_specific_rotation_risk": "low",
     "manual_start_override": true,
@@ -110726,8 +110720,8 @@
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
     "start_security": 0.35,
-    "start_probability_pct": 35.0,
-    "start_status": "rotation/usikker - Transfermarkt landshold",
+    "start_probability_pct": 35,
+    "start_status": "sandsynlig starter - Transfermarkt landshold",
     "conditional_start_prob": 0.45,
     "availability_prob": 0.35,
     "availability_risk": "medium_risk",
@@ -110770,7 +110764,7 @@
     "start_signal_context_note": "Manual low-priority nation audit vs Bold+ XI: Lukic not in expected XI; reduce recent-match overpromotion.",
     "source_note": "Manual low-priority nation audit vs Bold+ XI: Lukic not in expected XI; reduce recent-match overpromotion.",
     "manual_start_override": true,
-    "start_pct": 35.0
+    "start_pct": 35
   },
   {
     "player_id": "ermedin_demirovic__bih",
@@ -111410,8 +111404,8 @@
     "weighted_group_stage_ev": 0.2774542207792208,
     "optimizer_ev": 0.2774542207792208,
     "start_security": 0.45,
-    "start_probability_pct": 45.0,
-    "start_status": "rotation/usikker - Transfermarkt landshold",
+    "start_probability_pct": 45,
+    "start_status": "sandsynlig starter - Transfermarkt landshold",
     "conditional_start_prob": 0.55,
     "availability_prob": 0.6,
     "availability_risk": "medium_risk",
@@ -111445,7 +111439,7 @@
     "start_signal_context_note": "Manual low-priority nation audit vs Bold+ XI: Angulo not treated as secure starter; reduce test-match overpromotion.",
     "source_note": "Manual low-priority nation audit vs Bold+ XI: Angulo not treated as secure starter; reduce test-match overpromotion.",
     "manual_start_override": true,
-    "start_pct": 45.0
+    "start_pct": 45
   },
   {
     "player_id": "luis_d_az__col",
@@ -112615,9 +112609,9 @@
     "flag_code": "uy",
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 88.0,
+    "start_probability_pct": 88,
     "start_security": 0.88,
-    "start_status": "sandsynlig starter - Transfermarkt landshold",
+    "start_status": "sjældent startende - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 75.0,
     "transfermarkt_competitive_starts": 28.0,
     "transfermarkt_competition_weight_sum": 16.6624,
@@ -112660,7 +112654,7 @@
     "round1_ev": 0.15637,
     "round2_ev": 0.128352,
     "round3_ev": 0.099814,
-    "start_pct": 88.0,
+    "start_pct": 88,
     "appearance_prob": 0.98,
     "round_specific_rotation_risk": "low",
     "manual_start_override": true,
@@ -115765,9 +115759,9 @@
     "tm_recency_weighted_competitive_start_score": 0.8046,
     "tm_weighted_competitive_start_score": 0.8046,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 92.0,
+    "start_probability_pct": 92,
     "start_security": 0.92,
-    "start_status": "sikker starter - Transfermarkt landshold",
+    "start_status": "rotation/usikker - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 213.0,
     "transfermarkt_competitive_starts": 121.0,
     "transfermarkt_competition_weight_sum": 28.791200000000003,
@@ -115810,7 +115804,7 @@
     "round1_ev": 0.849891,
     "round2_ev": 0.458323,
     "round3_ev": 0.768238,
-    "start_pct": 92.0,
+    "start_pct": 92,
     "appearance_prob": 0.98,
     "round_specific_rotation_risk": "low",
     "manual_start_override": true,
@@ -117400,7 +117394,7 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 55.0,
+    "start_probability_pct": 55,
     "start_security": 0.55,
     "start_status": "rotation/usikker - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 30.0,
@@ -117450,7 +117444,7 @@
     "round3_ev": 0.514325,
     "source_note": "Manual context review: Bold marks him as a red/on-the-bubble starter; England attacking roles are highly competitive. Downgraded to uncertain starter.",
     "manual_start_override": true,
-    "start_pct": 55.0
+    "start_pct": 55
   },
   {
     "player_id": "noni_madueke__eng",
@@ -117497,8 +117491,8 @@
     "player_visual_source": "holdet_api_appearance",
     "display_score_source": "start_neutral_blended_nt_team_absolute",
     "start_security": 0.38,
-    "start_probability_pct": 38.0,
-    "start_status": "rotation/usikker - Transfermarkt landshold",
+    "start_probability_pct": 38,
+    "start_status": "sjældent startende - Transfermarkt landshold",
     "conditional_start_prob": 0.45,
     "availability_prob": 0.97,
     "availability_risk": "medium_risk",
@@ -117542,7 +117536,7 @@
     "round3_ev": 0.495292,
     "source_note": "Manual context review: recent national-team usage indicates rotation/substitute role rather than expected first-choice starter.",
     "manual_start_override": true,
-    "start_pct": 38.0
+    "start_pct": 38
   },
   {
     "player_id": "ollie_watkins__eng",
@@ -117782,9 +117776,9 @@
     "tm_recency_weighted_competitive_start_score": 0.8842,
     "tm_weighted_competitive_start_score": 0.8842,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 90.0,
+    "start_probability_pct": 90,
     "start_security": 0.9,
-    "start_status": "sikker starter - Transfermarkt landshold",
+    "start_status": "rotation/usikker - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 78.0,
     "transfermarkt_competitive_starts": 37.0,
     "transfermarkt_competition_weight_sum": 16.735599999999998,
@@ -117827,7 +117821,7 @@
     "round1_ev": 0.774025,
     "round2_ev": 0.875365,
     "round3_ev": 0.6783,
-    "start_pct": 90.0,
+    "start_pct": 90,
     "appearance_prob": 0.98,
     "round_specific_rotation_risk": "low",
     "manual_start_override": true,
@@ -118510,7 +118504,7 @@
     "tm_recency_weighted_competitive_start_score": 0.9355,
     "tm_weighted_competitive_start_score": 0.9355,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 97.0,
+    "start_probability_pct": 97,
     "start_security": 0.97,
     "start_status": "sikker starter - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 141.0,
@@ -118560,7 +118554,7 @@
     "round3_ev": 1.359649,
     "source_note": "Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.",
     "manual_start_override": true,
-    "start_pct": 97.0
+    "start_pct": 97
   },
   {
     "player_id": "oumar_diakite__civ",
@@ -118666,7 +118660,7 @@
     "weighted_group_stage_ev": 0.1451348903717826,
     "optimizer_ev": 0.1451348903717826,
     "start_security": 0.35,
-    "start_probability_pct": 35.0,
+    "start_probability_pct": 35,
     "start_status": "rotation/usikker - Transfermarkt landshold",
     "conditional_start_prob": 0.45,
     "availability_prob": 0.8288,
@@ -118712,7 +118706,7 @@
     "start_signal_context_note": "Manual low-priority nation audit vs Bold+ XI: Wahi not in expected XI; reduce from likely-starter range.",
     "source_note": "Manual low-priority nation audit vs Bold+ XI: Wahi not in expected XI; reduce from likely-starter range.",
     "manual_start_override": true,
-    "start_pct": 35.0
+    "start_pct": 35
   },
   {
     "player_id": "bazoumana_toure__civ",
@@ -118987,7 +118981,7 @@
     },
     "player_visual_source": "holdet_api_appearance",
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 45.0,
+    "start_probability_pct": 45,
     "start_security": 0.45,
     "start_status": "rotation/usikker - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 20.0,
@@ -119036,7 +119030,7 @@
     "start_signal_context_note": "Manual context review: Brazil forward/right-side attacking roles are competitive. Do not allow recent test-match usage to make him a near-locked starter.",
     "source_note": "Manual context review: Brazil forward/right-side attacking roles are competitive. Do not allow recent test-match usage to make him a near-locked starter.",
     "manual_start_override": true,
-    "start_pct": 45.0
+    "start_pct": 45
   },
   {
     "player_id": "rayan__bra",
@@ -119173,9 +119167,9 @@
     "tm_weighted_competitive_start_score": 1,
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 25.0,
+    "start_probability_pct": 25,
     "start_security": 0.25,
-    "start_status": "rotation/usikker - Transfermarkt landshold",
+    "start_status": "sjældent startende - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 4.0,
     "transfermarkt_competitive_starts": 1.0,
     "transfermarkt_competition_weight_sum": 1.9968000000000004,
@@ -119222,7 +119216,7 @@
     "start_signal_context_note": "Manual context review: Brazil forward hierarchy. Igor Thiago should not be treated as near-secure starter from recent test-match usage.",
     "source_note": "Manual context review: Brazil forward hierarchy. Igor Thiago should not be treated as near-secure starter from recent test-match usage.",
     "manual_start_override": true,
-    "start_pct": 25.0
+    "start_pct": 25
   },
   {
     "player_id": "endrick__bra",
@@ -119263,8 +119257,8 @@
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
     "start_security": 0.2,
-    "start_probability_pct": 20.0,
-    "start_status": "rotation/usikker - Transfermarkt landshold",
+    "start_probability_pct": 20,
+    "start_status": "sjældent startende - Transfermarkt landshold",
     "conditional_start_prob": 0.3,
     "availability_prob": 0.7335,
     "availability_risk": "medium_risk",
@@ -119307,7 +119301,7 @@
     "start_signal_context_note": "Manual context review: Brazil forward hierarchy. Treat as rotation/sub option unless later expected-XI evidence says otherwise.",
     "source_note": "Manual context review: Brazil forward hierarchy. Treat as rotation/sub option unless later expected-XI evidence says otherwise.",
     "manual_start_override": true,
-    "start_pct": 20.0
+    "start_pct": 20
   },
   {
     "player_id": "joao_pedro__bra",
@@ -119437,9 +119431,9 @@
     "tm_weighted_competitive_start_score": 0.8731,
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 88.0,
+    "start_probability_pct": 88,
     "start_security": 0.88,
-    "start_status": "sandsynlig starter - Transfermarkt landshold",
+    "start_status": "sikker starter - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 55.0,
     "transfermarkt_competitive_starts": 34.0,
     "transfermarkt_competition_weight_sum": 14.2592,
@@ -119487,7 +119481,7 @@
     "round3_ev": 0.139126,
     "source_note": "Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.",
     "manual_start_override": true,
-    "start_pct": 88.0
+    "start_pct": 88
   },
   {
     "player_id": "neymar_jr__bra",
@@ -119534,9 +119528,9 @@
       "hairStyle": "VeryShort"
     },
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 5.0,
+    "start_probability_pct": 5,
     "start_security": 0.05,
-    "start_status": "rotation/usikker - Transfermarkt landshold",
+    "start_status": "sandsynlig starter - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 205.0,
     "transfermarkt_competitive_starts": 164.0,
     "transfermarkt_competition_weight_sum": 2.4,
@@ -119581,7 +119575,7 @@
     "start_signal_context_note": "Manual context review: recent injury/absence context. Neymar should not be treated as Brazil starter from recent test-match data.",
     "source_note": "Manual context review: Neymar has extended recent Brazil absence/injury/not-in-squad history. Treat as unlikely starter until clear expected-XI evidence says otherwise.",
     "manual_start_override": true,
-    "start_pct": 5.0,
+    "start_pct": 5,
     "appearance_prob": 0.2,
     "start_signal_rank_adjusted": 0.05,
     "start_signal_tier": "Langt fra start"
@@ -119754,7 +119748,7 @@
     "tm_recency_weighted_competitive_start_score": 0.7618,
     "tm_weighted_competitive_start_score": 0.7618,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 92.0,
+    "start_probability_pct": 92,
     "start_security": 0.92,
     "start_status": "sikker starter - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 76.0,
@@ -119799,7 +119793,7 @@
     "round1_ev": 1.78974,
     "round2_ev": 1.959154,
     "round3_ev": 1.474335,
-    "start_pct": 92.0,
+    "start_pct": 92,
     "appearance_prob": 0.98,
     "round_specific_rotation_risk": "low",
     "manual_start_override": true,
@@ -121094,9 +121088,9 @@
     "tm_recency_weighted_competitive_start_score": 0.8683,
     "tm_weighted_competitive_start_score": 0.8683,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 88.0,
+    "start_probability_pct": 88,
     "start_security": 0.88,
-    "start_status": "sandsynlig starter - Transfermarkt landshold",
+    "start_status": "rotation/usikker - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 103.0,
     "transfermarkt_competitive_starts": 54.0,
     "transfermarkt_competition_weight_sum": 19.91960000000001,
@@ -121139,7 +121133,7 @@
     "round1_ev": 1.695642,
     "round2_ev": 1.406037,
     "round3_ev": 1.352072,
-    "start_pct": 88.0,
+    "start_pct": 88,
     "appearance_prob": 0.98,
     "round_specific_rotation_risk": "low",
     "manual_start_override": true,
@@ -121202,7 +121196,7 @@
     "tm_recency_weighted_competitive_start_score": 0.8923,
     "tm_weighted_competitive_start_score": 0.8923,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 93.0,
+    "start_probability_pct": 93,
     "start_security": 0.93,
     "start_status": "sikker starter - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 271.0,
@@ -121252,7 +121246,7 @@
     "round3_ev": 1.598269,
     "source_note": "Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.",
     "manual_start_override": true,
-    "start_pct": 93.0
+    "start_pct": 93
   },
   {
     "player_id": "amine_gouiri__alg",
@@ -121288,9 +121282,9 @@
     "player_visual_source": "holdet_api_appearance",
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 45.0,
+    "start_probability_pct": 45,
     "start_security": 0.45,
-    "start_status": "rotation/usikker - Transfermarkt landshold",
+    "start_status": "sandsynlig starter - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 46.0,
     "transfermarkt_competitive_starts": 17.0,
     "transfermarkt_competition_weight_sum": 16.3932,
@@ -121345,7 +121339,7 @@
     "start_signal_context_note": "Manual low-priority nation audit vs Bold+ XI: Gouiri not in expected XI; reduce test-match/Transfermarkt overpromotion.",
     "source_note": "Manual low-priority nation audit vs Bold+ XI: Gouiri not in expected XI; reduce test-match/Transfermarkt overpromotion.",
     "manual_start_override": true,
-    "start_pct": 45.0
+    "start_pct": 45
   },
   {
     "player_id": "baghdad_bounedjah__alg",
@@ -122639,9 +122633,9 @@
     "tm_recency_weighted_competitive_start_score": 0.8919,
     "tm_weighted_competitive_start_score": 0.8919,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 88.0,
+    "start_probability_pct": 88,
     "start_security": 0.88,
-    "start_status": "sandsynlig starter - Transfermarkt landshold",
+    "start_status": "sikker starter - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 127.0,
     "transfermarkt_competitive_starts": 26.0,
     "transfermarkt_competition_weight_sum": 23.583200000000005,
@@ -122689,7 +122683,7 @@
     "round3_ev": 1.148471,
     "source_note": "Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.",
     "manual_start_override": true,
-    "start_pct": 88.0
+    "start_pct": 88
   },
   {
     "player_id": "ferr_n_torres__esp",
@@ -123318,7 +123312,7 @@
     "tm_recency_weighted_competitive_start_score": 0.9301,
     "tm_weighted_competitive_start_score": 0.9301,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 91.0,
+    "start_probability_pct": 91,
     "start_security": 0.91,
     "start_status": "sikker starter - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 63.0,
@@ -123363,7 +123357,7 @@
     "round1_ev": 1.490455,
     "round2_ev": 1.655727,
     "round3_ev": 1.416901,
-    "start_pct": 91.0,
+    "start_pct": 91,
     "appearance_prob": 0.98,
     "round_specific_rotation_risk": "low",
     "manual_start_override": true,
@@ -123911,9 +123905,9 @@
     "tm_recency_weighted_competitive_start_score": 0.9508,
     "tm_weighted_competitive_start_score": 0.9508,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 86.0,
+    "start_probability_pct": 86,
     "start_security": 0.86,
-    "start_status": "sandsynlig starter - Transfermarkt landshold",
+    "start_status": "rotation/usikker - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 19.0,
     "transfermarkt_competitive_starts": 12.0,
     "transfermarkt_competition_weight_sum": 9.4092,
@@ -123956,7 +123950,7 @@
     "round1_ev": 0.767319,
     "round2_ev": 0.769132,
     "round3_ev": 0.513575,
-    "start_pct": 86.0,
+    "start_pct": 86,
     "appearance_prob": 0.98,
     "round_specific_rotation_risk": "low",
     "manual_start_override": true,
@@ -124172,8 +124166,8 @@
     "display_score": 0,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
     "start_security": 0.25,
-    "start_probability_pct": 25.0,
-    "start_status": "rotation/usikker - Transfermarkt landshold",
+    "start_probability_pct": 25,
+    "start_status": "sjældent startende - Transfermarkt landshold",
     "conditional_start_prob": 0.35,
     "availability_prob": 0.8992,
     "availability_risk": "medium_risk",
@@ -124216,7 +124210,7 @@
     "start_signal_context_note": "Manual context review: France attacking roles are competitive. Recent test-match usage should not over-promote him to likely starter.",
     "source_note": "Manual context review: France attacking roles are competitive. Recent test-match usage should not over-promote him to likely starter.",
     "manual_start_override": true,
-    "start_pct": 25.0
+    "start_pct": 25
   },
   {
     "player_id": "hugo_ekitike__fra",
@@ -124549,9 +124543,9 @@
     "tm_recency_weighted_competitive_start_score": 0.9527,
     "tm_weighted_competitive_start_score": 0.9527,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 95.0,
+    "start_probability_pct": 95,
     "start_security": 0.95,
-    "start_status": "sikker starter - Transfermarkt landshold",
+    "start_status": "rotation/usikker - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 118.0,
     "transfermarkt_competitive_starts": 82.0,
     "transfermarkt_competition_weight_sum": 23.364,
@@ -124594,7 +124588,7 @@
     "round1_ev": 1.417473,
     "round2_ev": 1.414187,
     "round3_ev": 0.965429,
-    "start_pct": 95.0,
+    "start_pct": 95,
     "appearance_prob": 0.98,
     "round_specific_rotation_risk": "low",
     "manual_start_override": true,
@@ -126747,9 +126741,9 @@
     "tm_recency_weighted_competitive_start_score": 0.7908,
     "tm_weighted_competitive_start_score": 0.7908,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 35.0,
+    "start_probability_pct": 35,
     "start_security": 0.35,
-    "start_status": "rotation/usikker - Transfermarkt landshold",
+    "start_status": "sjældent startende - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 47.0,
     "transfermarkt_competitive_starts": 10.0,
     "transfermarkt_competition_weight_sum": 14.934,
@@ -126797,7 +126791,7 @@
     "round3_ev": 0.337266,
     "source_note": "Manual context review: recent Portugal usage suggests clear reserve/rotation role behind Cristiano Ronaldo. Mostly bench or short substitute appearances in competitive matches, with only limited starts. Downgraded from likely starter to rotation forward.",
     "manual_start_override": true,
-    "start_pct": 35.0
+    "start_pct": 35
   },
   {
     "player_id": "francisco_trinc_o__por",
@@ -127344,7 +127338,7 @@
     "tm_recency_weighted_competitive_start_score": 0.9234,
     "tm_weighted_competitive_start_score": 0.9234,
     "display_score_source": "start_neutral_blended_nt_team_absolute",
-    "start_probability_pct": 92.0,
+    "start_probability_pct": 92,
     "start_security": 0.92,
     "start_status": "sikker starter - Transfermarkt landshold",
     "transfermarkt_competitive_rows": 290.0,
@@ -127389,7 +127383,7 @@
     "round1_ev": 2.127,
     "round2_ev": 2.031791,
     "round3_ev": 1.120246,
-    "start_pct": 92.0,
+    "start_pct": 92,
     "appearance_prob": 0.98,
     "round_specific_rotation_risk": "low",
     "manual_start_override": true,

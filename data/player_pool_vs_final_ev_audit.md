@@ -14,7 +14,7 @@
 - Dublerede player_id i EV: 0
 - Pool-rækker uden exact EV-match: 0
 - EV-rækker uden exact pool-match: 0
-- Backup: `data\player_pool_v1.backup_before_final_ev_sync_20260607_213459.json`
+- Backup: `data\player_pool_v1.backup_before_final_ev_sync_20260608_185627.json`
 
 ## Feltmismatches
 
@@ -22,10 +22,10 @@
 | --- | ---: | ---: |
 | optimizer_ev | 0 | 0 |
 | weighted_group_stage_ev | 0 | 0 |
-| weighted_group_stage_ev_before_price_quality | 20 | 0 |
-| price_quality_ev | 20 | 0 |
-| model_ev_before_price_quality | 20 | 0 |
-| optimizer_ev_before_price_quality | 20 | 0 |
+| weighted_group_stage_ev_before_price_quality | 0 | 0 |
+| price_quality_ev | 0 | 0 |
+| model_ev_before_price_quality | 0 | 0 |
+| optimizer_ev_before_price_quality | 0 | 0 |
 | price_quality_raw_ev | 0 | 0 |
 | price_quality_appearance_scaled_ev | 0 | 0 |
 | price_quality_base_capped_ev | 0 | 0 |

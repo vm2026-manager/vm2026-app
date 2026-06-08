@@ -1,0 +1,4 @@
+﻿player_id,player_name,holdet_is_out,is_out,start_prob,conditional_start_prob,weighted_group_stage_ev,optimizer_ev,display_score,display_value,value_score,nt_ev_score,blended_ev_score,optimizer_eligible,frontend_selectable,check_status
+wesley_franca__bra,Wesley Franca,True,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no,no,ok
+christoph_baumgartner__aut,Christoph Baumgartner,True,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no,no,ok
+lennart_karl__ger,Lennart Karl,True,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no,no,ok

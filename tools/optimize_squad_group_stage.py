@@ -191,6 +191,8 @@ def load_player_pool_layer() -> pd.DataFrame:
         return pd.DataFrame(columns=["player_id"])
     keep = [
         "player_id",
+        "holdet_is_out",
+        "is_out",
         "conditional_start_prob",
         "availability_prob",
         "availability_risk",
@@ -431,6 +433,11 @@ def load_players() -> pd.DataFrame:
     players["conditional_start_prob"] = pd.to_numeric(players.get("conditional_start_prob"), errors="coerce").fillna(players["start_prob"]).clip(0.0, 1.0)
     players["availability_prob"] = pd.to_numeric(players.get("availability_prob"), errors="coerce").fillna(1.0).clip(0.0, 1.0)
     players["availability_risk"] = players.get("availability_risk", "unknown").fillna("unknown").astype(str)
+    out_flag = pd.Series(False, index=players.index)
+    for field in ["holdet_is_out", "is_out", "holdet_is_out_pool", "is_out_pool"]:
+        if field in players.columns:
+            out_flag |= players[field].astype(str).str.strip().str.lower().isin({"true", "1", "yes", "ja"})
+    players = players[~out_flag].copy()
 
     players = players.merge(load_team_market_scores(), on="team_id", how="left")
     for col in ["team_long_run_score", "team_market_score", "team_attack_score", "team_group_stage_score"]:

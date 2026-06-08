@@ -2920,6 +2920,12 @@ function saveState() {
       return 0;
     }
 
+    function isPlayerUnavailable(player) {
+      const isTrue = value => value === true
+        || ["true", "1", "yes", "ja"].includes(String(value || "").trim().toLowerCase());
+      return isTrue(player?.holdet_is_out) || isTrue(player?.is_out);
+    }
+
     function startPct(value) {
       const num = Number(value);
       if (Number.isNaN(num) || num <= 0) return "–";
@@ -3380,6 +3386,8 @@ function saveState() {
     }
 
     function getDisabledReason(player) {
+      if (isPlayerUnavailable(player)) return "Ikke tilgængelig";
+
       const price = getPlayerPrice(player);
 
       if (activeSlotKey) {
@@ -3481,6 +3489,7 @@ function saveState() {
 
     function canReplaceWith(candidate, currentPlayer, activeSlot, { ignoreStartRequirement = false } = {}) {
       if (!candidate || !currentPlayer || !activeSlot) return false;
+      if (isPlayerUnavailable(candidate)) return false;
       if (!samePosition(candidate.position, activeSlot.positionCode || activeSlot.position)) return false;
       if (isManualAvoidPlayer(candidate)) return false;
       if (!ignoreStartRequirement && getPlayerStart(candidate) < 60) return false;
@@ -3691,6 +3700,10 @@ function saveState() {
     function addPlayerToBestSlot(playerId) {
       const player = getPlayerById(playerId);
       if (!player) return;
+      if (isPlayerUnavailable(player)) {
+        showStatus("Spilleren er ikke tilgængelig.", "error");
+        return;
+      }
 
       const currentSlotForPlayer = findFilledSlotByPlayerId(playerId);
       if (currentSlotForPlayer) {
@@ -3738,6 +3751,10 @@ function saveState() {
     function addPlayerToSlot(playerId, preferredSlotKey = null) {
       const player = getPlayerById(playerId);
       if (!player) return;
+      if (isPlayerUnavailable(player)) {
+        showStatus("Spilleren er ikke tilgængelig.", "error");
+        return;
+      }
 
       let slotKey = preferredSlotKey;
       let slot = slotKey ? getCurrentSlots().find(s => s.key === slotKey) : null;

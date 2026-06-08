@@ -1,0 +1,4 @@
+player_id,player_name,team_id,holdet_is_out,is_out,reason,source_note
+wesley_franca__bra,Wesley Franca,BRA,True,True,out_of_world_cup,Confirmed unavailable override: exclude from selection and recommendations.
+christoph_baumgartner__aut,Christoph Baumgartner,AUT,True,True,out_of_world_cup,Existing out marker retained; stale display and value fields must remain zero.
+lennart_karl__ger,Lennart Karl,GER,True,True,out_of_world_cup,Existing out marker retained; all useful model values must remain zero.
