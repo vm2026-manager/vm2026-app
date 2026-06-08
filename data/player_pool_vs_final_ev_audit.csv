@@ -11787,12 +11787,12 @@ alexander_alex_robertson__aus,Alexander 'Alex' Robertson,AUS,MID,exact_player_id
 alexander_alex_robertson__aus,Alexander 'Alex' Robertson,AUS,MID,exact_player_id,price_quality_applied,False,False,False,0.000000,0.000000,already_equal
 alexander_alex_robertson__aus,Alexander 'Alex' Robertson,AUS,MID,exact_player_id,price_quality_method,not_applied,not_applied,not_applied,0.000000,0.000000,already_equal
 alexander_alex_robertson__aus,Alexander 'Alex' Robertson,AUS,MID,exact_player_id,base_ev_source,out_of_tournament_manual,out_of_tournament_manual,out_of_tournament_manual,0.000000,0.000000,already_equal
-casemiro__bra,Casemiro,BRA,MID,exact_player_id,optimizer_ev,3.842248,3.842248,3.842248,0.000000,0.000000,already_equal
-casemiro__bra,Casemiro,BRA,MID,exact_player_id,weighted_group_stage_ev,3.842248,3.842248,3.842248,0.000000,0.000000,already_equal
-casemiro__bra,Casemiro,BRA,MID,exact_player_id,weighted_group_stage_ev_before_price_quality,4.272965,4.272965,4.272965,0.000000,0.000000,already_equal
+casemiro__bra,Casemiro,BRA,MID,exact_player_id,optimizer_ev,3.842248,3.855918124019,3.855918124019,0.013670,0.000000,updated
+casemiro__bra,Casemiro,BRA,MID,exact_player_id,weighted_group_stage_ev,3.842248,3.855918124019,3.855918124019,0.013670,0.000000,updated
+casemiro__bra,Casemiro,BRA,MID,exact_player_id,weighted_group_stage_ev_before_price_quality,4.272965,4.297819861852,4.297819861852,0.024855,0.000000,updated
 casemiro__bra,Casemiro,BRA,MID,exact_player_id,price_quality_ev,3.315816,3.315816,3.315816,0.000000,0.000000,already_equal
-casemiro__bra,Casemiro,BRA,MID,exact_player_id,model_ev_before_price_quality,4.272965,4.272965,4.272965,0.000000,0.000000,already_equal
-casemiro__bra,Casemiro,BRA,MID,exact_player_id,optimizer_ev_before_price_quality,4.272965,4.272965,4.272965,0.000000,0.000000,already_equal
+casemiro__bra,Casemiro,BRA,MID,exact_player_id,model_ev_before_price_quality,4.272965,4.297819861852,4.297819861852,0.024855,0.000000,updated
+casemiro__bra,Casemiro,BRA,MID,exact_player_id,optimizer_ev_before_price_quality,4.272965,4.297819861852,4.297819861852,0.024855,0.000000,updated
 casemiro__bra,Casemiro,BRA,MID,exact_player_id,price_quality_raw_ev,3.315816,3.315816,3.315816,0.000000,0.000000,already_equal
 casemiro__bra,Casemiro,BRA,MID,exact_player_id,price_quality_appearance_scaled_ev,3.315816,3.315816,3.315816,0.000000,0.000000,already_equal
 casemiro__bra,Casemiro,BRA,MID,exact_player_id,price_quality_base_capped_ev,3.315816,3.315816,3.315816,0.000000,0.000000,already_equal
@@ -17975,19 +17975,19 @@ hamza_abdelkarim__egy,Hamza Abdelkarim,EGY,FWD,exact_player_id,price_quality_spr
 hamza_abdelkarim__egy,Hamza Abdelkarim,EGY,FWD,exact_player_id,price_quality_applied,True,True,True,0.000000,0.000000,already_equal
 hamza_abdelkarim__egy,Hamza Abdelkarim,EGY,FWD,exact_player_id,price_quality_method,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,0.000000,0.000000,already_equal
 hamza_abdelkarim__egy,Hamza Abdelkarim,EGY,FWD,exact_player_id,base_ev_source,component_weighted_sum,component_weighted_sum,component_weighted_sum,0.000000,0.000000,already_equal
-brahim_d_az__mar,Brahim Diaz,MAR,FWD,exact_player_id,optimizer_ev,2.549186,4.0187328,4.0187328,1.469547,0.000000,updated
-brahim_d_az__mar,Brahim Diaz,MAR,FWD,exact_player_id,weighted_group_stage_ev,2.549186,4.0187328,4.0187328,1.469547,0.000000,updated
-brahim_d_az__mar,Brahim Diaz,MAR,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,2.753194,4.129791,4.129791,1.376597,0.000000,updated
-brahim_d_az__mar,Brahim Diaz,MAR,FWD,exact_player_id,price_quality_ev,2.299843,3.882995,3.882995,1.583152,0.000000,updated
-brahim_d_az__mar,Brahim Diaz,MAR,FWD,exact_player_id,model_ev_before_price_quality,2.753194,4.129791,4.129791,1.376597,0.000000,updated
-brahim_d_az__mar,Brahim Diaz,MAR,FWD,exact_player_id,optimizer_ev_before_price_quality,2.753194,4.129791,4.129791,1.376597,0.000000,updated
+brahim_d_az__mar,Brahim Diaz,MAR,FWD,exact_player_id,optimizer_ev,4.0187328,4.0187328,4.0187328,0.000000,0.000000,already_equal
+brahim_d_az__mar,Brahim Diaz,MAR,FWD,exact_player_id,weighted_group_stage_ev,4.0187328,4.0187328,4.0187328,0.000000,0.000000,already_equal
+brahim_d_az__mar,Brahim Diaz,MAR,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,4.129791,4.129791,4.129791,0.000000,0.000000,already_equal
+brahim_d_az__mar,Brahim Diaz,MAR,FWD,exact_player_id,price_quality_ev,3.882995,3.882995,3.882995,0.000000,0.000000,already_equal
+brahim_d_az__mar,Brahim Diaz,MAR,FWD,exact_player_id,model_ev_before_price_quality,4.129791,4.129791,4.129791,0.000000,0.000000,already_equal
+brahim_d_az__mar,Brahim Diaz,MAR,FWD,exact_player_id,optimizer_ev_before_price_quality,4.129791,4.129791,4.129791,0.000000,0.000000,already_equal
 brahim_d_az__mar,Brahim Diaz,MAR,FWD,exact_player_id,price_quality_raw_ev,3.882995,3.882995,3.882995,0.000000,0.000000,already_equal
-brahim_d_az__mar,Brahim Diaz,MAR,FWD,exact_player_id,price_quality_appearance_scaled_ev,2.299843,3.882995,3.882995,1.583152,0.000000,updated
+brahim_d_az__mar,Brahim Diaz,MAR,FWD,exact_player_id,price_quality_appearance_scaled_ev,3.882995,3.882995,3.882995,0.000000,0.000000,already_equal
 brahim_d_az__mar,Brahim Diaz,MAR,FWD,exact_player_id,price_quality_base_capped_ev,3.882995,3.882995,3.882995,0.000000,0.000000,already_equal
 brahim_d_az__mar,Brahim Diaz,MAR,FWD,exact_player_id,price_quality_weight,0.45,0.45,0.45,0.000000,0.000000,already_equal
 brahim_d_az__mar,Brahim Diaz,MAR,FWD,exact_player_id,price_quality_spread_multiplier,1.35,1.35,1.35,0.000000,0.000000,already_equal
 brahim_d_az__mar,Brahim Diaz,MAR,FWD,exact_player_id,price_quality_applied,True,True,True,0.000000,0.000000,already_equal
-brahim_d_az__mar,Brahim Diaz,MAR,FWD,exact_player_id,price_quality_method,appearance_scaled_then_base_capped,raw_for_likely_starter,raw_for_likely_starter,1.000000,0.000000,updated
+brahim_d_az__mar,Brahim Diaz,MAR,FWD,exact_player_id,price_quality_method,raw_for_likely_starter,raw_for_likely_starter,raw_for_likely_starter,0.000000,0.000000,already_equal
 brahim_d_az__mar,Brahim Diaz,MAR,FWD,exact_player_id,base_ev_source,component_weighted_sum,component_weighted_sum,component_weighted_sum,0.000000,0.000000,already_equal
 mostafa_mohamed__egy,Mostafa Mohamed,EGY,FWD,exact_player_id,optimizer_ev,0.0,0.0,0.0,0.000000,0.000000,already_equal
 mostafa_mohamed__egy,Mostafa Mohamed,EGY,FWD,exact_player_id,weighted_group_stage_ev,0.0,0.0,0.0,0.000000,0.000000,already_equal
@@ -18045,14 +18045,14 @@ mohamed_salah__egy,Mohamed Salah,EGY,FWD,exact_player_id,price_quality_spread_mu
 mohamed_salah__egy,Mohamed Salah,EGY,FWD,exact_player_id,price_quality_applied,True,True,True,0.000000,0.000000,already_equal
 mohamed_salah__egy,Mohamed Salah,EGY,FWD,exact_player_id,price_quality_method,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,appearance_scaled_then_base_capped,0.000000,0.000000,already_equal
 mohamed_salah__egy,Mohamed Salah,EGY,FWD,exact_player_id,base_ev_source,component_weighted_sum,component_weighted_sum,component_weighted_sum,0.000000,0.000000,already_equal
-ismael_d_az__pan,Ismael Diaz,PAN,FWD,exact_player_id,optimizer_ev,1.119495,1.119495,1.119495,0.000000,0.000000,already_equal
-ismael_d_az__pan,Ismael Diaz,PAN,FWD,exact_player_id,weighted_group_stage_ev,1.119495,1.119495,1.119495,0.000000,0.000000,already_equal
-ismael_d_az__pan,Ismael Diaz,PAN,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,1.467428,1.467428,1.467428,0.000000,0.000000,already_equal
-ismael_d_az__pan,Ismael Diaz,PAN,FWD,exact_player_id,price_quality_ev,0.694243,0.694243,0.694243,0.000000,0.000000,already_equal
-ismael_d_az__pan,Ismael Diaz,PAN,FWD,exact_player_id,model_ev_before_price_quality,1.467428,1.467428,1.467428,0.000000,0.000000,already_equal
-ismael_d_az__pan,Ismael Diaz,PAN,FWD,exact_player_id,optimizer_ev_before_price_quality,1.467428,1.467428,1.467428,0.000000,0.000000,already_equal
+ismael_d_az__pan,Ismael Diaz,PAN,FWD,exact_player_id,optimizer_ev,1.686471445714,1.686471445714,1.686471445714,0.000000,0.000000,already_equal
+ismael_d_az__pan,Ismael Diaz,PAN,FWD,exact_player_id,weighted_group_stage_ev,1.686471445714,1.686471445714,1.686471445714,0.000000,0.000000,already_equal
+ismael_d_az__pan,Ismael Diaz,PAN,FWD,exact_player_id,weighted_group_stage_ev_before_price_quality,2.201142,2.201142,2.201142,0.000000,0.000000,already_equal
+ismael_d_az__pan,Ismael Diaz,PAN,FWD,exact_player_id,price_quality_ev,1.057429657143,1.057429657143,1.057429657143,0.000000,0.000000,already_equal
+ismael_d_az__pan,Ismael Diaz,PAN,FWD,exact_player_id,model_ev_before_price_quality,2.201142,2.201142,2.201142,0.000000,0.000000,already_equal
+ismael_d_az__pan,Ismael Diaz,PAN,FWD,exact_player_id,optimizer_ev_before_price_quality,2.201142,2.201142,2.201142,0.000000,0.000000,already_equal
 ismael_d_az__pan,Ismael Diaz,PAN,FWD,exact_player_id,price_quality_raw_ev,1.423463,1.423463,1.423463,0.000000,0.000000,already_equal
-ismael_d_az__pan,Ismael Diaz,PAN,FWD,exact_player_id,price_quality_appearance_scaled_ev,0.694243,0.694243,0.694243,0.000000,0.000000,already_equal
+ismael_d_az__pan,Ismael Diaz,PAN,FWD,exact_player_id,price_quality_appearance_scaled_ev,1.057429657143,1.057429657143,1.057429657143,0.000000,0.000000,already_equal
 ismael_d_az__pan,Ismael Diaz,PAN,FWD,exact_player_id,price_quality_base_capped_ev,1.423463,1.423463,1.423463,0.000000,0.000000,already_equal
 ismael_d_az__pan,Ismael Diaz,PAN,FWD,exact_player_id,price_quality_weight,0.45,0.45,0.45,0.000000,0.000000,already_equal
 ismael_d_az__pan,Ismael Diaz,PAN,FWD,exact_player_id,price_quality_spread_multiplier,1.35,1.35,1.35,0.000000,0.000000,already_equal

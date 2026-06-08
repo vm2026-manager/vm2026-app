@@ -497,7 +497,7 @@
     .slot {
       position: absolute;
       transform: translate(-50%, -50%);
-      width: 112px;
+      width: 102px;
       text-align: center;
     }
 
@@ -524,15 +524,15 @@
 
     .pitch-player-card {
       position: relative;
-      width: 104px;
-      height: 58px;
+      width: 96px;
+      height: 56px;
       margin: 0 auto;
       border-radius: 8px;
       background: rgba(255,255,255,0.94);
       color: #111827;
       border: 1px solid rgba(17,24,39,0.16);
       box-shadow: 0 8px 18px rgba(0,0,0,0.2);
-      padding: 14px 6px 5px;
+      padding: 13px 5px 4px;
       box-sizing: border-box;
       overflow: visible;
     }
@@ -651,7 +651,7 @@
       padding: 0;
       font-size: 10px;
       font-weight: bold;
-      max-width: 92px;
+      max-width: 86px;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -750,15 +750,15 @@
     .slot-actions {
       display: flex;
       justify-content: center;
-      gap: 5px;
-      margin-top: 4px;
+      gap: 4px;
+      margin-top: 3px;
     }
 
     .slot-btn {
       background: #fde047;
       color: #111827;
       font-weight: bold;
-      padding: 4px 6px;
+      padding: 3px 6px;
       border-radius: 8px;
       font-size: 11px;
       border: none;
@@ -1044,7 +1044,7 @@
       flex: 1 1 auto;
       border-radius: 10px;
       background: #1c1e23;
-      padding: 4px;
+      padding: 3px;
     }
 
     .alternatives-panel {
@@ -1169,10 +1169,10 @@
 
     .trade-row {
       display: grid;
-      grid-template-columns: auto minmax(0, 1fr) 90px 58px 58px 86px;
-      gap: 10px;
+      grid-template-columns: minmax(0, 1fr) 76px 50px 50px 78px auto;
+      gap: 7px;
       align-items: center;
-      padding: 9px 8px;
+      padding: 6px 7px;
       border-bottom: 1px solid #2f3239;
     }
 
@@ -1183,10 +1183,10 @@
     .plus-btn {
       background: #fde047;
       color: #111827;
-      width: 32px;
-      height: 32px;
+      width: 28px;
+      height: 28px;
       border-radius: 8px;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 1;
       font-weight: bold;
       padding: 0;
@@ -1209,19 +1209,42 @@
 
     .trade-name {
       font-weight: bold;
-      margin-bottom: 2px;
-      font-size: 13px;
+      font-size: 12px;
+      line-height: 1.15;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
-    .trade-meta {
-      font-size: 11px;
-      color: #cbd5e1;
+    .trade-player-main {
+      min-width: 0;
+    }
+
+    .trade-name-line {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      min-width: 0;
+    }
+
+    .trade-list-flag {
+      width: 18px;
+      height: 13px;
+      flex: 0 0 18px;
+      object-fit: cover;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 2px;
+      background: white;
     }
 
     .trade-next {
-      font-size: 11px;
+      font-size: 10px;
       color: #fde68a;
-      margin-top: 4px;
+      margin-top: 2px;
+      line-height: 1.1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .trade-tm-warning {
@@ -1246,22 +1269,22 @@
 
     .trade-position-value {
       font-weight: bold;
-      font-size: 12px;
+      font-size: 11px;
       line-height: 1.1;
       white-space: nowrap;
     }
 
     .trade-score-label,
     .trade-start-label {
-      font-size: 10px;
+      font-size: 9px;
       color: #cbd5e1;
-      margin-top: 4px;
+      margin-top: 2px;
     }
 
     .trade-score-value,
     .trade-start-value {
       font-weight: bold;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 1;
     }
 
@@ -1512,7 +1535,7 @@
       }
 
       .trade-row {
-        grid-template-columns: auto minmax(0, 1fr) 72px;
+        grid-template-columns: minmax(0, 1fr) 72px auto;
         gap: 8px;
       }
 
@@ -1607,6 +1630,256 @@
     filter: grayscale(1) brightness(0.65) !important;
     cursor: not-allowed !important;
   }
+
+
+
+
+
+
+/* PLAYER_LIST_DENSITY_LINES_PATCH_START */
+.trade-list {
+  row-gap: 0 !important;
+}
+
+.trade-row {
+  min-height: 48px !important;
+  padding: 6px 7px 6px 9px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10) !important;
+  column-gap: 8px !important;
+}
+
+.trade-row:last-child {
+  border-bottom: 0 !important;
+}
+
+.trade-player-main {
+  display: grid !important;
+  grid-template-columns: 24px minmax(0, 1fr) !important;
+  grid-template-rows: auto auto !important;
+  column-gap: 7px !important;
+  align-items: center !important;
+  min-width: 0 !important;
+}
+
+.trade-name-line {
+  display: contents !important;
+}
+
+.trade-list-flag {
+  grid-column: 1 !important;
+  grid-row: 1 / span 2 !important;
+  width: 23px !important;
+  height: 17px !important;
+  border-radius: 3px !important;
+  flex: 0 0 23px !important;
+  align-self: center !important;
+}
+
+.trade-name {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  min-width: 0 !important;
+  font-size: 13px !important;
+  line-height: 1.08 !important;
+  font-weight: 800 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.trade-next {
+  grid-column: 2 !important;
+  grid-row: 2 !important;
+  min-width: 0 !important;
+  font-size: 10.5px !important;
+  line-height: 1.05 !important;
+  margin-top: 2px !important;
+  opacity: 0.92 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.trade-position-value,
+.trade-start-value,
+.trade-score-value {
+  font-size: 13px !important;
+  line-height: 1.05 !important;
+}
+
+.trade-start-label,
+.trade-score-label {
+  font-size: 9px !important;
+  line-height: 1.05 !important;
+}
+
+.plus-btn {
+  width: 28px !important;
+  height: 28px !important;
+  min-width: 28px !important;
+  font-size: 17px !important;
+}
+/* PLAYER_LIST_DENSITY_LINES_PATCH_END */
+
+
+
+
+/* PLAYER_LIST_COMPACT_POSITION_PATCH_START */
+.trade-row {
+  grid-template-columns: minmax(150px, 1fr) 38px 42px 34px 78px 30px !important;
+  column-gap: 6px !important;
+}
+
+.trade-position-value {
+  font-size: 12.5px !important;
+  white-space: nowrap !important;
+  text-align: left !important;
+}
+
+.trade-name {
+  max-width: none !important;
+}
+
+.trade-start-value,
+.trade-score-value {
+  font-size: 13px !important;
+}
+
+.trade-price-value,
+.trade-price,
+.trade-price-cell {
+  white-space: nowrap !important;
+  text-align: right !important;
+}
+
+.plus-btn {
+  width: 28px !important;
+  height: 28px !important;
+  min-width: 28px !important;
+}
+/* PLAYER_LIST_COMPACT_POSITION_PATCH_END */
+
+
+
+
+/* PLAYER_LIST_POSITION_ALIGN_PATCH_START */
+.trade-row {
+  align-items: start !important;
+}
+
+.trade-player-main {
+  align-self: start !important;
+}
+
+.trade-position-value {
+  align-self: start !important;
+  justify-self: start !important;
+  display: block !important;
+  padding-top: 0 !important;
+  margin-top: 1px !important;
+  line-height: 1.08 !important;
+}
+
+.trade-start-value,
+.trade-score-value {
+  align-self: start !important;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+.plus-btn {
+  align-self: center !important;
+  justify-self: end !important;
+}
+/* PLAYER_LIST_POSITION_ALIGN_PATCH_END */
+
+
+/* PLAYER_LIST_PLUS_TOP_ALIGN_PATCH_START */
+.plus-btn {
+  align-self: start !important;
+  justify-self: end !important;
+  margin-top: 0 !important;
+}
+
+.trade-list-flag {
+  cursor: help !important;
+}
+/* PLAYER_LIST_PLUS_TOP_ALIGN_PATCH_END */
+
+
+
+
+/* PLAYER_LIST_METRIC_ALIGNMENT_PATCH_START */
+.trade-row {
+  align-items: center !important;
+}
+
+.trade-player-main {
+  align-self: center !important;
+}
+
+.trade-position-value {
+  align-self: center !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  line-height: 1.05 !important;
+}
+
+.trade-start-value,
+.trade-score-value {
+  align-self: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  gap: 1px !important;
+  line-height: 1.05 !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  transform: none !important;
+}
+
+.trade-start-value strong,
+.trade-score-value strong {
+  display: block !important;
+  line-height: 1.05 !important;
+}
+
+.trade-start-label,
+.trade-score-label {
+  display: block !important;
+  line-height: 1 !important;
+  margin-top: 1px !important;
+}
+
+.trade-price-value,
+.trade-price,
+.trade-price-cell {
+  align-self: center !important;
+  text-align: right !important;
+  line-height: 1.05 !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  transform: none !important;
+}
+
+.plus-btn {
+  align-self: center !important;
+  justify-self: end !important;
+  margin-top: 0 !important;
+  transform: none !important;
+}
+/* PLAYER_LIST_METRIC_ALIGNMENT_PATCH_END */
+
+
+/* PLAYER_LIST_POSITION_TOP_LINE_PATCH_START */
+.trade-position-value {
+  align-self: center !important;
+  transform: translateY(-7px) !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  line-height: 1.05 !important;
+}
+/* PLAYER_LIST_POSITION_TOP_LINE_PATCH_END */
 
 </style>
 
@@ -2600,19 +2873,70 @@ function saveState() {
       return allPlayers.find(player => String(player.player_id) === String(playerId)) || null;
     }
 
-    function getPlayerScore(player) {
-      const candidates = [
-        player?.display_score,
-        player?.optimizer_ev,
-        player?.weighted_group_stage_ev,
-        player?.holdet_proxy_score_filled
-      ];
-      for (const value of candidates) {
-        const num = Number(value);
-        if (Number.isFinite(num)) return num;
-      }
-      return 0;
-    }
+    
+
+
+function getPlayerScoreRaw(player) {
+  const optimizerEv = Number(player?.optimizer_ev);
+  const weightedEv = Number(player?.weighted_group_stage_ev);
+  const modelEv = Number(player?.model_ev_before_price_quality);
+  const priceQualityEv = Number(player?.price_quality_ev);
+
+  const primaryEv = Number.isFinite(optimizerEv) && optimizerEv > 0
+    ? optimizerEv
+    : (Number.isFinite(weightedEv) && weightedEv > 0 ? weightedEv : 0);
+
+  // Use current EV as the primary list score source.
+  // This avoids stale display_score values ranking rotation/value players too high.
+  if (primaryEv > 0) return Math.min(100, primaryEv * 22);
+
+  // Fallbacks only for players missing current EV.
+  if (Number.isFinite(modelEv) && modelEv > 0) return Math.min(100, modelEv * 18);
+  if (Number.isFinite(priceQualityEv) && priceQualityEv > 0) return Math.min(85, priceQualityEv * 18);
+
+  const displayScore = Number(player?.display_score);
+  if (Number.isFinite(displayScore) && displayScore > 0) return Math.min(75, displayScore);
+
+  const proxy = Number(player?.holdet_proxy_score_filled);
+  if (Number.isFinite(proxy) && proxy > 0) return Math.min(75, proxy);
+
+  return 0;
+}
+
+function getPlayerScoreStartFactor(player) {
+  const candidates = [];
+
+  const fromHelper = Number(getPlayerStart(player));
+  if (Number.isFinite(fromHelper) && fromHelper > 0 && fromHelper <= 1) candidates.push(fromHelper);
+
+  for (const key of ["start_prob", "start_security", "start_probability", "startProbability"]) {
+    const value = Number(player?.[key]);
+    if (Number.isFinite(value) && value > 0 && value <= 1) candidates.push(value);
+  }
+
+  const pct = Number(player?.start_probability_pct);
+  if (Number.isFinite(pct) && pct > 0 && pct <= 100) candidates.push(pct / 100);
+
+  if (!candidates.length) return fromHelper || 0;
+
+  return Math.min(...candidates);
+}
+
+/* PLAYER_LIST_START_ADJUSTED_SCORE_START */
+function getPlayerScore(player) {
+  const rawScore = Number(getPlayerScoreRaw(player) || 0);
+  const start = Math.max(0, Math.min(1, Number(getPlayerScoreStartFactor(player) || 0)));
+
+  if (start >= 0.75) return rawScore;
+
+  const factor = 0.55 + 0.45 * (start / 0.75);
+  return rawScore * factor;
+}
+/* PLAYER_LIST_START_ADJUSTED_SCORE_END */
+
+
+
+
 
     function getStrategyRowForPlayer(player, strategyKey = activeStrategyKey) {
       if (!player) return null;
@@ -3215,11 +3539,11 @@ function saveState() {
         );
       } else if (formation.df === 5) {
         slots.push(
-          { key: "DF1", position: "Forsvar", positionCode: "DEF", x: 10, y: 35 },
-          { key: "DF2", position: "Forsvar", positionCode: "DEF", x: 30, y: 35 },
+          { key: "DF1", position: "Forsvar", positionCode: "DEF", x: 12, y: 35 },
+          { key: "DF2", position: "Forsvar", positionCode: "DEF", x: 31, y: 35 },
           { key: "DF3", position: "Forsvar", positionCode: "DEF", x: 50, y: 35 },
-          { key: "DF4", position: "Forsvar", positionCode: "DEF", x: 70, y: 35 },
-          { key: "DF5", position: "Forsvar", positionCode: "DEF", x: 90, y: 35 }
+          { key: "DF4", position: "Forsvar", positionCode: "DEF", x: 69, y: 35 },
+          { key: "DF5", position: "Forsvar", positionCode: "DEF", x: 88, y: 35 }
         );
       }
 
@@ -3238,11 +3562,11 @@ function saveState() {
         );
       } else if (formation.mf === 5) {
         slots.push(
-          { key: "MF1", position: "Midtbane", positionCode: "MID", x: 10, y: 58 },
-          { key: "MF2", position: "Midtbane", positionCode: "MID", x: 30, y: 58 },
+          { key: "MF1", position: "Midtbane", positionCode: "MID", x: 12, y: 58 },
+          { key: "MF2", position: "Midtbane", positionCode: "MID", x: 31, y: 58 },
           { key: "MF3", position: "Midtbane", positionCode: "MID", x: 50, y: 58 },
-          { key: "MF4", position: "Midtbane", positionCode: "MID", x: 70, y: 58 },
-          { key: "MF5", position: "Midtbane", positionCode: "MID", x: 90, y: 58 }
+          { key: "MF4", position: "Midtbane", positionCode: "MID", x: 69, y: 58 },
+          { key: "MF5", position: "Midtbane", positionCode: "MID", x: 88, y: 58 }
         );
       }
 
@@ -3628,7 +3952,7 @@ function saveState() {
               <div>
                 <div class="trade-name">${escapeHtml(player.player_name || "Ukendt spiller")}${warning}${previousLabel}${modelLabel}</div>
                 <div class="trade-meta">${escapeHtml(teamDisplayName(player.team_id, player.team_name))} &middot; ${escapeHtml(positionFullLabel(player.position))}</div>
-                <div class="trade-next">${escapeHtml(nextMatchText(player.team_id))}</div>
+                <div class="trade-next">${escapeHtml(nextOpponentText(player.team_id))}</div>
               </div>
               <div class="trade-start-col">
                 <div class="trade-start-value">${startPct(getPlayerStart(player))}</div>
@@ -4496,7 +4820,83 @@ function saveState() {
       });
     }
 
-    function renderTradeList() {
+    
+
+
+
+
+function getCompactPositionLabel(position) {
+  const raw = String(position || "").trim().toLowerCase();
+  if (["m?lvogter", "m?lmand", "maalmand", "gk", "keeper"].includes(raw)) return "M\u00e5l";
+  if (["forsvar", "def", "defender"].includes(raw)) return "Forsvar";
+  if (["midtbane", "midt", "mid", "midfielder"].includes(raw)) return "Midt";
+  if (["angriber", "ang", "fwd", "forward"].includes(raw)) return "Ang";
+  return position || "";
+}
+
+
+function getTradeFlagTitle(player) {
+  const direct = (
+    player.country ||
+    player.country_name ||
+    player.team ||
+    player.team_name ||
+    player.nation ||
+    player.nationality ||
+    player.national_team ||
+    ""
+  );
+
+  if (direct && String(direct).trim() && String(direct).trim() !== "?") {
+    return String(direct).trim();
+  }
+
+  const code = String(getPlayerFlagCode(player) || "").toUpperCase();
+  const names = {
+    ARG: "Argentina", AT: "?strig", AUT: "?strig", AU: "Australien", AUS: "Australien",
+    BE: "Belgien", BEL: "Belgien", BR: "Brasilien", BRA: "Brasilien",
+    CA: "Canada", CAN: "Canada", CH: "Schweiz", SUI: "Schweiz",
+    CL: "Chile", CO: "Colombia", COL: "Colombia", CR: "Costa Rica",
+    CUW: "Cura?ao", CZ: "Tjekkiet", CZE: "Tjekkiet",
+    DE: "Tyskland", GER: "Tyskland", DK: "Danmark", DNK: "Danmark",
+    DZ: "Algeriet", ALG: "Algeriet", EC: "Ecuador", ECU: "Ecuador",
+    EG: "Egypten", EGY: "Egypten", EN: "England", ENG: "England",
+    ES: "Spanien", ESP: "Spanien", FR: "Frankrig", FRA: "Frankrig",
+    GH: "Ghana", GHA: "Ghana", HR: "Kroatien", CRO: "Kroatien",
+    IR: "Iran", IRN: "Iran", JP: "Japan", JPN: "Japan",
+    KR: "Sydkorea", KOR: "Sydkorea", MA: "Marokko", MAR: "Marokko",
+    MX: "Mexico", MEX: "Mexico", NG: "Nigeria", NGA: "Nigeria",
+    NL: "Holland", NED: "Holland", NO: "Norge", NOR: "Norge",
+    NZ: "New Zealand", NZL: "New Zealand", PA: "Panama", PAN: "Panama",
+    PT: "Portugal", POR: "Portugal", QA: "Qatar", QAT: "Qatar",
+    SA: "Saudi-Arabien", KSA: "Saudi-Arabien", SN: "Senegal", SEN: "Senegal",
+    TR: "Tyrkiet", TUR: "Tyrkiet", UA: "Ukraine", UKR: "Ukraine",
+    US: "USA", USA: "USA", UY: "Uruguay", URU: "Uruguay",
+    ZA: "Sydafrika", RSA: "Sydafrika"
+  };
+
+  return names[code] || code || "";
+}
+
+
+function shouldShowTmWarning(player) {
+  const start = Number(getPlayerStart(player) || 0);
+  const risk = String(player?.availability_risk || "").toLowerCase();
+  const status = String(player?.start_status || "").toLowerCase();
+
+  // Do not show "TM: usikker starter" for likely starters.
+  if (Number.isFinite(start) && start >= 0.75) return false;
+  if (risk === "low_risk") return false;
+
+  return (
+    status.includes("usikker") ||
+    status.includes("rotation") ||
+    status.includes("sj?ldent") ||
+    risk === "high_risk"
+  );
+}
+
+function renderTradeList() {
       sanitizeSearchField();
 
       let players = [...allPlayers];
@@ -4598,22 +4998,22 @@ function saveState() {
         const disabledReason = getDisabledReason(player);
         const isDisabled = !!disabledReason;
         const rowClass = isDisabled ? "trade-row disabled" : "trade-row";
+        const flagUrl = getFlagUrl(getPlayerFlagCode(player));
         const tmWatchReason = String(player.tm_watch_reason || "").trim();
-        const tmWarning = player.tm_watch_flag === "JA"
-          ? `<div class="trade-tm-warning" title="${escapeHtml(tmWatchReason || "Transfermarkt peger på starter-usikkerhed")}">TM: usikker starter</div>`
-          : "";
+        const tmWarning = shouldShowTmWarning(player) ? `<div class="trade-tm-warning">TM: usikker starter</div>` : "";
 
         return `
           <div class="${rowClass}">
-            <button class="plus-btn" data-player-id="${player.player_id}" ${isDisabled ? "disabled" : ""}>+</button>
-            <div>
-              <div class="trade-name">${player.player_name || "Ukendt spiller"}</div>
-              <div class="trade-meta">${teamDisplayName(player.team_id, player.team_name)}</div>
-              <div class="trade-next">${nextMatchText(player.team_id)}</div>
+            <div class="trade-player-main">
+              <div class="trade-name-line">
+                ${flagUrl ? `<img class="trade-list-flag" src="${flagUrl}" alt="${escapeHtml(getTradeFlagTitle(player))}" title="${escapeHtml(getTradeFlagTitle(player))}" aria-label="${escapeHtml(getTradeFlagTitle(player))}">` : ""}
+                <div class="trade-name">${player.player_name || "Ukendt spiller"}</div>
+              </div>
+              <div class="trade-next">${nextOpponentText(player.team_id)}</div>
               ${tmWarning}
             </div>
             <div class="trade-position-col">
-              <div class="trade-position-value">${positionFullLabel(player.position)}</div>
+              <div class="trade-position-value">${escapeHtml(getCompactPositionLabel(player.position))}</div>
             </div>
             <div class="trade-start-col">
               <div class="trade-start-value">${startPct(getPlayerStart(player))}</div>
@@ -4627,6 +5027,7 @@ function saveState() {
               <div class="trade-price">${formatMoney(getPlayerPrice(player))}</div>
               <div class="trade-subprice">Pris</div>
             </div>
+            <button class="plus-btn" data-player-id="${player.player_id}" ${isDisabled ? "disabled" : ""}>+</button>
           </div>
         `;
       }).join("");

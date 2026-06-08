@@ -77,5 +77,3 @@ son_heung_min__kor,Heung-Min Son,KOR,0.92,0.97,0.98,0.98,low_risk,low,,,,,,,,,Ma
 jude_bellingham__eng,Jude Bellingham,ENG,0.93,0.97,0.98,0.98,low_risk,low,,,,,,,,,Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.
 juli_n_lvarez__arg,Julian Alvarez,ARG,0.72,0.82,0.95,0.98,low_risk,medium,,,,,,,,,"Manual context review: Argentina striker role is shared/contested with Lautaro Martinez. Recent usage supports a slightly higher start chance than Lautaro, but not locked."
 brahim_d_az__mar,Brahim Diaz,MAR,0.72,0.85,0.95,0.95,low_risk,medium,,,,,,,,,"Manual context review: Brahim Diaz appears to be an important Morocco attacking starter/RW based on recent national-team usage. Raised from low model start probability, but not treated as fully locked due to some rotation/absence context."
-ismael_d_az__pan,Ismael Diaz,PAN,0.52,0.65,,,medium_risk,medium,,,,,,,,,
-casemiro__bra,Casemiro,BRA,0.83,0.90,,,low_risk,,,,,,,,,,
