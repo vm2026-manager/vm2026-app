@@ -57,7 +57,7 @@ bento_krepski__bra,Bento Krepski,BRA,0.05,0.08,,,medium_risk,high,,,,,,,,,Manual
 kylian_mbapp__fra,Kylian Mbappe,FRA,0.95,0.98,0.98,0.98,low_risk,low,,,,,,,,,Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.
 harry_kane__eng,Harry Kane,ENG,0.97,0.99,0.98,0.98,low_risk,low,,,,,,,,,Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.
 erling_haaland__nor,Erling Haaland,NOR,0.93,0.97,0.98,0.98,low_risk,low,,,,,,,,,Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.
-lautaro_mart_nez__arg,Lautaro Martinez,ARG,0.62,0.75,0.95,0.98,low_risk,medium,,,,,,,,,Manual context review: Argentina striker role is shared/contested with Julian Alvarez. Downgraded from near-locked to strong but uncertain starter.
+lautaro_mart_nez__arg,Lautaro Martinez,ARG,0.88,0.93,0.98,0.98,low_risk,low,,,,,,,,,Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.
 lionel_messi__arg,Lionel Messi,ARG,0.93,0.97,0.98,0.98,low_risk,low,,,,,,,,,Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.
 florian_wirtz__ger,Florian Wirtz,GER,0.94,0.97,0.98,0.98,low_risk,low,,,,,,,,,Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.
 mikel_oyarzabal__esp,Mikel Oyarzabal,ESP,0.88,0.93,0.98,0.98,low_risk,low,,,,,,,,,Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.
@@ -75,4 +75,3 @@ charles_de_ketelaere__bel,Charles De Ketelaere,BEL,0.82,0.88,0.98,0.98,low_risk,
 darwin_nunez__uru,Darwin Nunez,URU,0.88,0.93,0.98,0.98,low_risk,low,,,,,,,,,Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.
 son_heung_min__kor,Heung-Min Son,KOR,0.92,0.97,0.98,0.98,low_risk,low,,,,,,,,,Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.
 jude_bellingham__eng,Jude Bellingham,ENG,0.93,0.97,0.98,0.98,low_risk,low,,,,,,,,,Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.
-juli_n_lvarez__arg,Julian Alvarez,ARG,0.72,0.82,0.95,0.98,low_risk,medium,,,,,,,,,"Manual context review: Argentina striker role is shared/contested with Lautaro Martinez. Recent usage supports a slightly higher start chance than Lautaro, but not locked."

@@ -14,7 +14,7 @@
 - Dublerede player_id i EV: 0
 - Pool-rækker uden exact EV-match: 0
 - EV-rækker uden exact pool-match: 0
-- Backup: `data\player_pool_v1.backup_before_final_ev_sync_20260608_185627.json`
+- Backup: `data\player_pool_v1.backup_before_final_ev_sync_20260608_192309.json`
 
 ## Feltmismatches
 

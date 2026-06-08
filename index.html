@@ -2102,6 +2102,14 @@
       statusBox.textContent = "";
     }
 
+
+    function requireLoginForProtectedAction(actionLabel) {
+      if (currentUser) return true;
+      openAuthModal("login");
+      showStatus("Log ind eller opret bruger for at bruge denne funktion.", "error");
+      return false;
+    }
+
     function setOptimizerBusy(isBusy) {
       optimizerIsBusy = isBusy;
       if (isBusy) optimizerBusyStartedAt = performance.now();
@@ -2328,6 +2336,7 @@
 
       strategyButtons.querySelectorAll(".strategy-btn").forEach(button => {
         button.addEventListener("click", () => {
+          if (!requireLoginForProtectedAction("Valg af strategi")) return;
           activeStrategyKey = button.dataset.strategyKey || "next_round";
           frontendCaptainOverride = null;
           localStorage.setItem("vm2026_active_strategy", activeStrategyKey);
@@ -5079,8 +5088,14 @@ function saveState() {
         scheduleAutosave();
       });
 
-      optimizeBtn.addEventListener("click", applyOptimalSquadForCurrentFormation);
-      fillMissingBtn.addEventListener("click", fillMissingSlotsOptimally);
+      optimizeBtn.addEventListener("click", () => {
+        if (!requireLoginForProtectedAction("V?lg optimalt hold")) return;
+        applyOptimalSquadForCurrentFormation();
+      });
+      fillMissingBtn.addEventListener("click", () => {
+        if (!requireLoginForProtectedAction("Fyld mangler optimalt")) return;
+        fillMissingSlotsOptimally();
+      });
       cancelOptimizerBtn.addEventListener("click", () => cancelActiveAutofill());
       undoBtn.addEventListener("click", undoLastAction);
       clearTeamBtn.addEventListener("click", clearSquad);
