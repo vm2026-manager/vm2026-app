@@ -22548,10 +22548,7 @@
     "price_quality_applied": true,
     "price_quality_method": "raw_for_likely_starter",
     "base_ev_source": "component_weighted_sum",
-    "start_pct": 83,
-    "match_1_opponent_team": "PAR",
-    "match_2_opponent_team": "AUS",
-    "match_3_opponent_team": "TUR"
+    "start_pct": 83
   },
   {
     "player_id": "joe_scally__usa",

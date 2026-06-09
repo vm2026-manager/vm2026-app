@@ -2090,18 +2090,143 @@
 /* FORCE_TOOLTIP_ODDS_TONE_CSS_END */
 
 
-/* ONE_CLICK_PLUS_FIX_CSS_START */
-.vm-fixture-tooltip {
-  pointer-events: none !important;
+
+
+/* FAVORITES_FEATURE_CSS_START */
+.trade-row {
+  grid-template-columns: minmax(132px, 1fr) 34px 42px 34px 76px 28px 30px !important;
+  column-gap: 5px !important;
 }
 
-.trade-row button,
-.trade-row .trade-add,
-.trade-row .trade-plus,
-.trade-row .add-player-btn {
-  pointer-events: auto !important;
+.favorite-btn {
+  width: 26px !important;
+  height: 28px !important;
+  min-width: 26px !important;
+  border: 0 !important;
+  border-radius: 9px !important;
+  background: rgba(255,255,255,0.08) !important;
+  color: #cbd5e1 !important;
+  font-size: 17px !important;
+  line-height: 1 !important;
+  font-weight: 900 !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  align-self: center !important;
+  justify-self: end !important;
+  padding: 0 !important;
 }
-/* ONE_CLICK_PLUS_FIX_CSS_END */
+
+.favorite-btn.active {
+  color: #facc15 !important;
+  background: rgba(250, 204, 21, 0.18) !important;
+}
+
+.favorite-btn:hover {
+  transform: translateY(-1px);
+  background: rgba(250, 204, 21, 0.24) !important;
+}
+
+.favorite-filter-btn {
+  height: 40px;
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 12px;
+  background: #2d333d;
+  color: #ffffff;
+  font-weight: 800;
+  padding: 0 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  margin-left: 8px;
+}
+
+.favorite-filter-btn.active {
+  background: #facc15;
+  color: #111827;
+  border-color: #facc15;
+}
+
+.favorite-filter-btn:hover {
+  filter: brightness(1.05);
+}
+
+.trade-position {
+  white-space: nowrap !important;
+  text-align: center !important;
+  font-weight: 900 !important;
+}
+/* FAVORITES_FEATURE_CSS_END */
+
+
+/* MOVE_FAVORITES_BUTTON_NEXT_TO_ALTERNATIVES_CSS_START */
+.favorite-filter-btn {
+  height: 34px !important;
+  min-height: 34px !important;
+  padding: 0 11px !important;
+  margin-left: 0 !important;
+  margin-right: 8px !important;
+  border-radius: 10px !important;
+  font-size: 13px !important;
+  align-self: center !important;
+}
+/* MOVE_FAVORITES_BUTTON_NEXT_TO_ALTERNATIVES_CSS_END */
+
+
+
+
+/* FAVORITES_ICON_AND_COLUMNS_FIX_START */
+.trade-row {
+  grid-template-columns: minmax(138px, 1fr) 28px 36px 30px 66px 26px 30px !important;
+  column-gap: 4px !important;
+}
+
+.trade-position {
+  width: 28px !important;
+  min-width: 28px !important;
+  max-width: 28px !important;
+  text-align: center !important;
+}
+
+.trade-start-col,
+.trade-score-col {
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  text-align: center !important;
+  justify-self: center !important;
+}
+
+.trade-price {
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  text-align: right !important;
+  justify-self: end !important;
+  white-space: nowrap !important;
+}
+
+.favorite-btn {
+  width: 26px !important;
+  min-width: 26px !important;
+  max-width: 26px !important;
+  justify-self: center !important;
+  font-family: Arial, "Segoe UI Symbol", "Apple Color Emoji", sans-serif !important;
+  font-size: 18px !important;
+}
+
+.plus-btn {
+  justify-self: end !important;
+}
+/* FAVORITES_ICON_AND_COLUMNS_FIX_END */
+
+
+/* HIDE_FAVORITES_IN_ALTERNATIVES_CSS_START */
+.right-panel.alternative-mode #favoriteFilterBtn,
+.right-panel.alternative-mode .favorite-filter-btn {
+  display: none !important;
+}
+/* HIDE_FAVORITES_IN_ALTERNATIVES_CSS_END */
 
 </style>
 
@@ -2436,6 +2561,7 @@ setTimeout(removeDataStatusBox, 250);
     let modelChoiceBySlot = new Map();
     let squadHistory = [];
     let autosaveTimer = null;
+    let autosaveWriteChain = Promise.resolve(true);
     let authMode = "login";
     let isApplyingRemoteSquad = false;
     let eligibleOnly = localStorage.getItem(STORAGE_KEYS.eligibleOnly) === "1";
@@ -5151,6 +5277,164 @@ function shouldShowTmWarning(player) {
   );
 }
 
+
+/* FAVORITES_FEATURE_JS_START */
+let favoriteOnly = false;
+const FAVORITES_STORAGE_KEY = "vm2026_manager_favorite_player_ids_v1";
+const FAVORITES_UPDATED_AT_STORAGE_KEY = "vm2026_manager_favorite_player_ids_updated_at_v1";
+const FAVORITES_USER_STORAGE_KEY = "vm2026_manager_favorite_player_ids_user_v1";
+
+function loadFavoritePlayerIds() {
+  try {
+    const raw = localStorage.getItem(FAVORITES_STORAGE_KEY);
+    const arr = raw ? JSON.parse(raw) : [];
+    return new Set(Array.isArray(arr) ? arr.map(String) : []);
+  } catch (err) {
+    return new Set();
+  }
+}
+
+let favoritePlayerIds = loadFavoritePlayerIds();
+
+function getLocalFavoritesUpdatedAt() {
+  return localStorage.getItem(FAVORITES_UPDATED_AT_STORAGE_KEY) || "";
+}
+
+function getLocalFavoritesUserId() {
+  return localStorage.getItem(FAVORITES_USER_STORAGE_KEY) || "";
+}
+
+function saveFavoritePlayerIds(
+  updatedAt = new Date().toISOString(),
+  userId = currentUser?.id || getLocalFavoritesUserId()
+) {
+  try {
+    localStorage.setItem(FAVORITES_STORAGE_KEY, JSON.stringify(Array.from(favoritePlayerIds)));
+    localStorage.setItem(FAVORITES_UPDATED_AT_STORAGE_KEY, updatedAt);
+    if (userId) localStorage.setItem(FAVORITES_USER_STORAGE_KEY, userId);
+    else localStorage.removeItem(FAVORITES_USER_STORAGE_KEY);
+  } catch (err) {
+    console.warn("Kunne ikke gemme favoritter", err);
+  }
+}
+
+function setFavoritePlayerIds(playerIds, updatedAt = new Date().toISOString()) {
+  favoritePlayerIds = new Set(Array.isArray(playerIds) ? playerIds.map(String) : []);
+  saveFavoritePlayerIds(updatedAt);
+  updateFavoriteFilterButton();
+}
+
+function isFavoritePlayer(playerId) {
+  return favoritePlayerIds.has(String(playerId));
+}
+
+function toggleFavoritePlayer(playerId) {
+  const key = String(playerId);
+  if (favoritePlayerIds.has(key)) favoritePlayerIds.delete(key);
+  else favoritePlayerIds.add(key);
+
+  saveFavoritePlayerIds();
+  updateFavoriteFilterButton();
+  void queueAutosave();
+}
+
+
+function compactPositionLabel(position) {
+  const raw = String(position || "").trim();
+  const p = raw.toUpperCase();
+
+  // Brug unicode escape, s? M?l ikke bliver til M?l ved encoding.
+  if (p === "GK" || p === "M?L" || p === "MAL" || p === "M?L" || p === "MAAL") return "M\u00e5l";
+  if (p === "DEF" || p === "FORSVAR" || p === "FOR") return "For";
+  if (p === "MID" || p === "MIDTBANE") return "Mid";
+  if (p === "FWD" || p === "ANGRIBER" || p === "ANG") return "Ang";
+
+  return raw;
+}
+
+
+function favoritePositionOrder(player) {
+  const p = String(player?.position || "").toUpperCase();
+  if (p === "GK") return 0;
+  if (p === "DEF") return 1;
+  if (p === "MID") return 2;
+  if (p === "FWD") return 3;
+  return 9;
+}
+
+function updateFavoriteFilterButton() {
+  const btn = document.getElementById("favoriteFilterBtn");
+  if (!btn) return;
+
+  btn.textContent = `\u2665 Favoritter (${favoritePlayerIds.size})`;
+  btn.classList.toggle("active", !!favoriteOnly);
+}
+
+function ensureFavoriteFilterButton() {
+  if (document.getElementById("favoriteFilterBtn")) {
+    updateFavoriteFilterButton();
+    return;
+  }
+
+  const btn = document.createElement("button");
+  btn.id = "favoriteFilterBtn";
+  btn.type = "button";
+  btn.className = "favorite-filter-btn";
+  btn.textContent = `\u2665 Favoritter (${favoritePlayerIds.size})`;
+
+  const eligible = document.getElementById("eligibleOnlyToggle");
+  const anchor = eligible ? (eligible.closest("label") || eligible.parentElement) : null;
+
+  if (anchor && anchor.parentElement) {
+    anchor.insertAdjacentElement("afterend", btn);
+  } else {
+    const rightPanel = document.querySelector(".right-panel");
+    if (rightPanel) rightPanel.prepend(btn);
+  }
+
+  btn.addEventListener("click", function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    favoriteOnly = !favoriteOnly;
+    updateFavoriteFilterButton();
+
+    if (typeof renderTradeList === "function") renderTradeList();
+  });
+
+  updateFavoriteFilterButton();
+}
+
+function compactRenderedPositionLabels() {
+  document.querySelectorAll(".trade-position").forEach(el => {
+    el.textContent = compactPositionLabel(el.textContent);
+  });
+}
+
+document.addEventListener("click", function (event) {
+  const btn = event.target.closest(".favorite-btn");
+  if (!btn) return;
+
+  event.preventDefault();
+  event.stopPropagation();
+  event.stopImmediatePropagation();
+
+  const playerId = btn.dataset.playerId;
+  if (!playerId) return;
+
+  toggleFavoritePlayer(playerId);
+
+  if (typeof renderTradeList === "function") renderTradeList();
+}, true);
+
+document.addEventListener("DOMContentLoaded", function () {
+  ensureFavoriteFilterButton();
+  compactRenderedPositionLabels();
+});
+setTimeout(ensureFavoriteFilterButton, 250);
+setTimeout(ensureFavoriteFilterButton, 1000);
+/* FAVORITES_FEATURE_JS_END */
+
 function renderTradeList() {
       sanitizeSearchField();
 
@@ -5243,7 +5527,15 @@ function renderTradeList() {
         return;
       }
 
-      tradeList.innerHTML = players.slice(0, 80).map(player => {
+      ensureFavoriteFilterButton();
+
+      const visiblePlayers = favoriteOnly
+        ? players
+            .filter(player => isFavoritePlayer(player.player_id))
+            .sort((a, b) => favoritePositionOrder(a) - favoritePositionOrder(b))
+        : players;
+
+      tradeList.innerHTML = visiblePlayers.slice(0, favoriteOnly ? 500 : 80).map(player => {
         const disabledReason = getDisabledReason(player);
         const isDisabled = !!disabledReason;
         const rowClass = isDisabled ? "trade-row disabled" : "trade-row";
@@ -5262,7 +5554,7 @@ function renderTradeList() {
               ${tmWarning}
             </div>
             <div class="trade-position-col">
-              <div class="trade-position-value">${escapeHtml(getCompactPositionLabel(player.position))}</div>
+              <div class="trade-position-value">${escapeHtml(compactPositionLabel(player.position))}</div>
             </div>
             <div class="trade-start-col">
               <div class="trade-start-value">${startPct(getPlayerStart(player))}</div>
@@ -5276,16 +5568,23 @@ function renderTradeList() {
               <div class="trade-price">${formatMoney(getPlayerPrice(player))}</div>
               <div class="trade-subprice">Pris</div>
             </div>
+            <button
+              class="favorite-btn ${isFavoritePlayer(player.player_id) ? "active" : ""}"
+              data-player-id="${player.player_id}"
+              title="${isFavoritePlayer(player.player_id) ? "Fjern fra favoritter" : "Gem som favorit"}"
+              aria-label="${isFavoritePlayer(player.player_id) ? "Fjern fra favoritter" : "Gem som favorit"}"
+            >${isFavoritePlayer(player.player_id) ? "\u2665" : "\u2661"}</button>
             <button class="plus-btn" data-player-id="${player.player_id}" ${isDisabled ? "disabled" : ""}>+</button>
           </div>
         `;
       }).join("");
 
-      document.querySelectorAll(".plus-btn").forEach(btn => {
-        btn.addEventListener("click", () => {
+      tradeList.querySelectorAll(".plus-btn:not(.choose-alt-btn)").forEach(btn => {
+        btn.addEventListener("click", (event) => {
+          event.preventDefault();
+          event.stopPropagation();
           const playerId = btn.dataset.playerId;
-          if (activeSlotKey) addPlayerToSlot(playerId, activeSlotKey);
-          else addPlayerToBestSlot(playerId);
+          addPlayerToBestSlot(playerId);
         });
       });
     }
@@ -5577,13 +5876,16 @@ function renderTradeList() {
     }
 
     async function upsertAutosaveSquad() {
-      if (!currentUser || isApplyingRemoteSquad) return;
+      if (!currentUser || isApplyingRemoteSquad) return false;
 
       const payload = {
         user_id: currentUser.id,
         squad_name: "Autosave",
         formation: currentFormation,
-        squad_json: squad
+        squad_json: {
+          squad,
+          favorite_player_ids: Array.from(favoritePlayerIds)
+        }
       };
 
       const { error } = await supabaseClient
@@ -5592,7 +5894,31 @@ function renderTradeList() {
 
       if (error) {
         showStatus(`Automatisk gemning fejlede: ${error.message}`, "error");
+        return false;
       }
+      return true;
+    }
+
+    function queueAutosave() {
+      const queuedUserId = currentUser?.id || null;
+      if (!queuedUserId || isApplyingRemoteSquad) return Promise.resolve(false);
+
+      autosaveWriteChain = autosaveWriteChain
+        .catch(() => false)
+        .then(() => {
+          if (!currentUser || currentUser.id !== queuedUserId) return false;
+          return upsertAutosaveSquad();
+        });
+      return autosaveWriteChain;
+    }
+
+    async function flushAutosave() {
+      if (!currentUser || isApplyingRemoteSquad) return false;
+      if (autosaveTimer) {
+        clearTimeout(autosaveTimer);
+        autosaveTimer = null;
+      }
+      return queueAutosave();
     }
 
     function scheduleAutosave() {
@@ -5602,7 +5928,7 @@ function renderTradeList() {
 
       autosaveTimer = setTimeout(async () => {
         autosaveTimer = null;
-        await upsertAutosaveSquad();
+        await queueAutosave();
       }, AUTOSAVE_DEBOUNCE_MS);
     }
 
@@ -5628,7 +5954,39 @@ function renderTradeList() {
       isApplyingRemoteSquad = true;
       currentFormation = FORMATIONS[data.formation] ? data.formation : "3-4-3";
       formationSelect.value = currentFormation;
-      squad = typeof data.squad_json === "object" && data.squad_json ? data.squad_json : {};
+      const savedState = typeof data.squad_json === "object" && data.squad_json
+        ? data.squad_json
+        : {};
+      const hasSavedStateEnvelope = Object.prototype.hasOwnProperty.call(savedState, "squad")
+        || Object.prototype.hasOwnProperty.call(savedState, "favorite_player_ids");
+      squad = hasSavedStateEnvelope && savedState.squad && typeof savedState.squad === "object"
+        ? savedState.squad
+        : savedState;
+
+      const remoteFavoriteIds = hasSavedStateEnvelope && Array.isArray(savedState.favorite_player_ids)
+        ? savedState.favorite_player_ids
+        : null;
+      const remoteUpdatedAtMs = Date.parse(data.updated_at || "") || 0;
+      const localUpdatedAtMs = Date.parse(getLocalFavoritesUpdatedAt()) || 0;
+      const localFavoritesUserId = getLocalFavoritesUserId();
+      const localBelongsToCurrentUser = !localFavoritesUserId || localFavoritesUserId === currentUser.id;
+      const useNewerLocalFavorites = remoteFavoriteIds !== null
+        && localBelongsToCurrentUser
+        && localUpdatedAtMs > remoteUpdatedAtMs;
+
+      if (remoteFavoriteIds === null) {
+        // Legacy autosaves contain only the squad. Keep the local cache and migrate it on the next save.
+        if (localBelongsToCurrentUser) {
+          saveFavoritePlayerIds(
+            getLocalFavoritesUpdatedAt() || data.updated_at || new Date().toISOString(),
+            currentUser.id
+          );
+        } else {
+          setFavoritePlayerIds([], data.updated_at || new Date().toISOString());
+        }
+      } else if (!useNewerLocalFavorites) {
+        setFavoritePlayerIds(remoteFavoriteIds, data.updated_at || new Date().toISOString());
+      }
       previousReplacementBySlot.clear();
       modelChoiceBySlot.clear();
       activeSlotKey = null;
@@ -5636,6 +5994,9 @@ function renderTradeList() {
       saveState();
       render();
       isApplyingRemoteSquad = false;
+      if (remoteFavoriteIds === null || useNewerLocalFavorites) {
+        await upsertAutosaveSquad();
+      }
     }
 
     async function handleLogin() {
@@ -5688,6 +6049,11 @@ function renderTradeList() {
     }
 
     async function handleLogout() {
+      const saved = await flushAutosave();
+      if (!saved) {
+        showStatus("Logout afbrudt, fordi favoritter og hold ikke kunne gemmes.", "error");
+        return;
+      }
       const { error } = await supabaseClient.auth.signOut();
       if (error) {
         showStatus(`Logout fejlede: ${error.message}`, "error");
@@ -6382,69 +6748,173 @@ function renderTradeList() {
 
 
 
-/* ONE_CLICK_PLUS_FIX_JS_START */
+
+
+/* CLEAR_ACTIVE_SLOT_FIX_START */
 (function () {
-  try {
-    function normalizeText(value) {
-      return String(value || "")
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .toLowerCase()
-        .replace(/[^a-z0-9 ]+/g, " ")
-        .replace(/\s+/g, " ")
-        .trim();
-    }
-
-    function findPlayerFromTradeRow(row) {
-      if (!row) return null;
-
-      if (row.dataset && row.dataset.playerId && typeof getPlayer === "function") {
-        var directPlayer = getPlayer(row.dataset.playerId);
-        if (directPlayer) return directPlayer;
+  function clearActiveSlotSelection() {
+    try {
+      if (typeof activeSlotKey !== "undefined") {
+        activeSlotKey = null;
       }
 
-      var rowText = normalizeText(row.textContent || "");
-
-      if (typeof allPlayers !== "undefined" && Array.isArray(allPlayers)) {
-        return allPlayers.find(function (player) {
-          return rowText.indexOf(normalizeText(player.player_name || "")) >= 0;
-        }) || null;
+      var activeSlotTextEl = document.getElementById("activeSlotText");
+      if (activeSlotTextEl) {
+        activeSlotTextEl.textContent = "Ingen valgt";
       }
 
-      return null;
+      if (typeof renderPitch === "function") renderPitch();
+      if (typeof renderTradeList === "function") renderTradeList();
+      if (typeof showStatus === "function") {
+        showStatus("Valgt plads er nulstillet.", "info");
+      }
+    } catch (err) {
+      console.warn("Kunne ikke nulstille valgt plads", err);
     }
-
-    document.addEventListener("click", function (event) {
-      var plusButton = event.target.closest(
-        ".trade-row button, .trade-row .trade-add, .trade-row .trade-plus, .trade-row .add-player-btn"
-      );
-
-      if (!plusButton) return;
-
-      var row = plusButton.closest(".trade-row");
-      if (!row) return;
-
-      var player = findPlayerFromTradeRow(row);
-      if (!player) return;
-
-      if (typeof addPlayerToBestSlot !== "function") return;
-
-      event.preventDefault();
-      event.stopPropagation();
-
-      var result = addPlayerToBestSlot(player);
-
-      if (typeof render === "function") render();
-      if (typeof updateSelectedSummary === "function") updateSelectedSummary();
-      if (typeof updateBudgetSummary === "function") updateBudgetSummary();
-
-      return result;
-    }, true);
-  } catch (err) {
-    console.warn("One-click plus fix fejl", err);
   }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var badge = document.querySelector(".active-slot-badge");
+    var positionFilterEl = document.getElementById("positionFilter");
+
+    if (badge && !badge.dataset.clearSlotBound) {
+      badge.dataset.clearSlotBound = "1";
+      badge.title = "Klik for at nulstille valgt plads";
+      badge.style.cursor = "pointer";
+
+      badge.addEventListener("click", function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        clearActiveSlotSelection();
+      });
+    }
+
+    if (positionFilterEl && !positionFilterEl.dataset.clearSlotBound) {
+      positionFilterEl.dataset.clearSlotBound = "1";
+
+      positionFilterEl.addEventListener("change", function () {
+        clearActiveSlotSelection();
+      });
+    }
+  });
 }());
-/* ONE_CLICK_PLUS_FIX_JS_END */
+/* CLEAR_ACTIVE_SLOT_FIX_END */
+
+
+/* FINAL_ONE_CLICK_PLUS_DELEGATE_FIX_START */
+(function () {
+  function bindOneClickPlusFix() {
+    try {
+      var list = document.getElementById("tradeList");
+      if (!list || list.dataset.finalOneClickPlusBound === "1") return;
+
+      list.dataset.finalOneClickPlusBound = "1";
+
+      list.addEventListener("click", function (event) {
+        var btn = event.target.closest(".plus-btn");
+
+        if (!btn) return;
+        if (btn.classList.contains("choose-alt-btn")) return;
+        if (btn.disabled || btn.getAttribute("disabled") !== null) return;
+
+        var playerId = btn.dataset.playerId;
+        if (!playerId) return;
+        if (typeof addPlayerToBestSlot !== "function") return;
+
+        event.preventDefault();
+        event.stopPropagation();
+        event.stopImmediatePropagation();
+
+        addPlayerToBestSlot(playerId);
+      }, true);
+    } catch (err) {
+      console.warn("Final one-click plus fix kunne ikke initialiseres", err);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", bindOneClickPlusFix);
+  setTimeout(bindOneClickPlusFix, 250);
+  setTimeout(bindOneClickPlusFix, 1000);
+}());
+/* FINAL_ONE_CLICK_PLUS_DELEGATE_FIX_END */
+
+
+/* MOVE_FAVORITES_BUTTON_NEXT_TO_ALTERNATIVES_JS_START */
+(function () {
+  function findAlternativesButton() {
+    var buttons = Array.from(document.querySelectorAll("button"));
+    return buttons.find(function (btn) {
+      return String(btn.textContent || "").trim().toLowerCase().includes("se alternativer");
+    });
+  }
+
+  function moveFavoritesButtonNextToAlternatives() {
+    try {
+      if (typeof ensureFavoriteFilterButton === "function") {
+        ensureFavoriteFilterButton();
+      }
+
+      var favBtn = document.getElementById("favoriteFilterBtn");
+      var altBtn = findAlternativesButton();
+
+      if (!favBtn || !altBtn || !altBtn.parentElement) return;
+
+      // Plac?r favoritter lige til venstre for ?Se alternativer?
+      if (favBtn.nextElementSibling !== altBtn) {
+        altBtn.parentElement.insertBefore(favBtn, altBtn);
+      }
+
+      favBtn.title = "Vis kun dine favoritspillere";
+    } catch (err) {
+      console.warn("Kunne ikke flytte favoritknap", err);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", moveFavoritesButtonNextToAlternatives);
+  setTimeout(moveFavoritesButtonNextToAlternatives, 250);
+  setTimeout(moveFavoritesButtonNextToAlternatives, 1000);
+  setTimeout(moveFavoritesButtonNextToAlternatives, 2000);
+
+  document.addEventListener("click", function () {
+    setTimeout(moveFavoritesButtonNextToAlternatives, 50);
+  });
+}());
+/* MOVE_FAVORITES_BUTTON_NEXT_TO_ALTERNATIVES_JS_END */
+
+
+/* HIDE_FAVORITES_IN_ALTERNATIVES_JS_START */
+(function () {
+  function isAlternativesMode() {
+    const rightPanel = document.querySelector(".right-panel");
+    if (rightPanel && rightPanel.classList.contains("alternative-mode")) return true;
+
+    const title = document.querySelector(".right-panel h2, .right-panel h3, .panel-title");
+    if (title && String(title.textContent || "").toLowerCase().includes("alternativer")) return true;
+
+    const buttons = Array.from(document.querySelectorAll("button"));
+    return buttons.some(btn => String(btn.textContent || "").trim().toLowerCase().includes("se spillerliste"));
+  }
+
+  function updateFavoriteButtonVisibility() {
+    const btn = document.getElementById("favoriteFilterBtn");
+    if (!btn) return;
+
+    btn.style.display = isAlternativesMode() ? "none" : "";
+  }
+
+  document.addEventListener("DOMContentLoaded", updateFavoriteButtonVisibility);
+  document.addEventListener("click", function () {
+    setTimeout(updateFavoriteButtonVisibility, 50);
+    setTimeout(updateFavoriteButtonVisibility, 250);
+  });
+
+  const obs = new MutationObserver(updateFavoriteButtonVisibility);
+  obs.observe(document.body, { childList: true, subtree: true, attributes: true, attributeFilter: ["class"] });
+
+  setTimeout(updateFavoriteButtonVisibility, 250);
+  setTimeout(updateFavoriteButtonVisibility, 1000);
+}());
+/* HIDE_FAVORITES_IN_ALTERNATIVES_JS_END */
 
 </script>
 

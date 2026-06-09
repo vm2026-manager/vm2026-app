@@ -1,0 +1,629 @@
+﻿
+  index.html:1125:      font-weight: 900;
+  index.html:1126:    }
+  index.html:1127:
+> index.html:1128:    .trade-row.alternative {
+  index.html:1129:      grid-template-columns: 30px minmax(0, 1fr) 64px 104px 72px;
+  index.html:1130:      background: rgba(255,255,255,0.025);
+  index.html:1131:    }
+  index.html:1132:
+> index.html:1133:    .trade-row.alternative .trade-price {
+  index.html:1134:      min-width: 0;
+  index.html:1135:      white-space: nowrap;
+  index.html:1136:    }
+  index.html:1137:
+> index.html:1138:    .trade-row.alternative .choose-alt-btn {
+  index.html:1139:      justify-self: end;
+  index.html:1140:      width: 68px;
+  index.html:1141:    }
+  index.html:1167:      vertical-align: middle;
+  index.html:1168:    }
+  index.html:1169:
+> index.html:1170:    .trade-row {
+  index.html:1171:      display: grid;
+  index.html:1172:      grid-template-columns: minmax(0, 1fr) 76px 50px 50px 78px auto;
+  index.html:1173:      gap: 7px;
+  index.html:1176:      border-bottom: 1px solid #2f3239;
+  index.html:1177:    }
+  index.html:1178:
+> index.html:1179:    .trade-row.disabled {
+  index.html:1180:      opacity: 0.45;
+  index.html:1181:    }
+  index.html:1182:
+> index.html:1183:    .plus-btn {
+  index.html:1184:      background: #fde047;
+  index.html:1185:      color: #111827;
+  index.html:1186:      width: 28px;
+  index.html:1194:      cursor: pointer;
+  index.html:1195:    }
+  index.html:1196:
+> index.html:1197:    .plus-btn:disabled {
+  index.html:1198:      background: #6b7280;
+  index.html:1199:      color: #d1d5db;
+  index.html:1200:      cursor: not-allowed;
+  index.html:1534:        grid-template-columns: 1fr;
+  index.html:1535:      }
+  index.html:1536:
+> index.html:1537:      .trade-row {
+  index.html:1538:        grid-template-columns: minmax(0, 1fr) 72px auto;
+  index.html:1539:        gap: 8px;
+  index.html:1540:      }
+  index.html:1541:
+> index.html:1542:      .trade-row.alternative {
+  index.html:1543:        grid-template-columns: 30px minmax(0, 1fr) 104px 72px;
+  index.html:1544:      }
+  index.html:1545:
+  index.html:1550:      }
+  index.html:1551:    }
+  index.html:1552:  
+> index.html:1553:  /* PATCH_UI_DISABLED_ONLY_PLUS_BUTTON */
+> index.html:1554:  .trade-row.disabled,
+> index.html:1555:  .trade-row.unavailable,
+> index.html:1556:  .trade-row.not-affordable,
+> index.html:1557:  .trade-row.cannot-add,
+  index.html:1558:  .player-row.disabled,
+  index.html:1559:  .player-row.unavailable,
+  index.html:1560:  .player-row.not-affordable,
+  index.html:1567:    filter: none !important;
+  index.html:1568:  }
+  index.html:1569:
+> index.html:1570:  .trade-row.disabled > *:not(.plus-btn),
+> index.html:1571:  .trade-row.unavailable > *:not(.plus-btn),
+> index.html:1572:  .trade-row.not-affordable > *:not(.plus-btn),
+> index.html:1573:  .trade-row.cannot-add > *:not(.plus-btn),
+> index.html:1574:  .player-row.disabled > *:not(.plus-btn),
+> index.html:1575:  .player-row.unavailable > *:not(.plus-btn),
+> index.html:1576:  .player-row.not-affordable > *:not(.plus-btn),
+> index.html:1577:  .player-row.cannot-add > *:not(.plus-btn),
+> index.html:1578:  .list-row.disabled > *:not(.plus-btn),
+> index.html:1579:  .list-row.unavailable > *:not(.plus-btn),
+> index.html:1580:  .list-row.not-affordable > *:not(.plus-btn),
+> index.html:1581:  .list-row.cannot-add > *:not(.plus-btn) {
+  index.html:1582:    opacity: 1 !important;
+  index.html:1583:    filter: none !important;
+  index.html:1584:  }
+  index.html:1585:
+> index.html:1586:  .trade-row.disabled .trade-name,
+> index.html:1587:  .trade-row.disabled .trade-meta,
+> index.html:1588:  .trade-row.disabled .trade-next,
+> index.html:1589:  .trade-row.disabled .trade-price,
+> index.html:1590:  .trade-row.disabled .trade-start-col,
+> index.html:1591:  .trade-row.disabled .trade-score-col,
+> index.html:1592:  .trade-row.unavailable .trade-name,
+> index.html:1593:  .trade-row.unavailable .trade-meta,
+> index.html:1594:  .trade-row.unavailable .trade-next,
+> index.html:1595:  .trade-row.unavailable .trade-price,
+> index.html:1596:  .trade-row.unavailable .trade-start-col,
+> index.html:1597:  .trade-row.unavailable .trade-score-col,
+> index.html:1598:  .trade-row.not-affordable .trade-name,
+> index.html:1599:  .trade-row.not-affordable .trade-meta,
+> index.html:1600:  .trade-row.not-affordable .trade-next,
+> index.html:1601:  .trade-row.not-affordable .trade-price,
+> index.html:1602:  .trade-row.not-affordable .trade-start-col,
+> index.html:1603:  .trade-row.not-affordable .trade-score-col,
+> index.html:1604:  .trade-row.cannot-add .trade-name,
+> index.html:1605:  .trade-row.cannot-add .trade-meta,
+> index.html:1606:  .trade-row.cannot-add .trade-next,
+> index.html:1607:  .trade-row.cannot-add .trade-price,
+> index.html:1608:  .trade-row.cannot-add .trade-start-col,
+> index.html:1609:  .trade-row.cannot-add .trade-score-col {
+  index.html:1610:    opacity: 1 !important;
+  index.html:1611:    filter: none !important;
+  index.html:1612:    color: inherit;
+  index.html:1613:  }
+  index.html:1614:
+> index.html:1615:  .trade-row.disabled .plus-btn,
+> index.html:1616:  .trade-row.unavailable .plus-btn,
+> index.html:1617:  .trade-row.not-affordable .plus-btn,
+> index.html:1618:  .trade-row.cannot-add .plus-btn,
+> index.html:1619:  .player-row.disabled .plus-btn,
+> index.html:1620:  .player-row.unavailable .plus-btn,
+> index.html:1621:  .player-row.not-affordable .plus-btn,
+> index.html:1622:  .player-row.cannot-add .plus-btn,
+> index.html:1623:  .list-row.disabled .plus-btn,
+> index.html:1624:  .list-row.unavailable .plus-btn,
+> index.html:1625:  .list-row.not-affordable .plus-btn,
+> index.html:1626:  .list-row.cannot-add .plus-btn,
+> index.html:1627:  .plus-btn.disabled,
+> index.html:1628:  .plus-btn[disabled] {
+  index.html:1629:    opacity: 0.38 !important;
+  index.html:1630:    filter: grayscale(1) brightness(0.65) !important;
+  index.html:1631:    cursor: not-allowed !important;
+  index.html:1641:  row-gap: 0 !important;
+  index.html:1642:}
+  index.html:1643:
+> index.html:1644:.trade-row {
+  index.html:1645:  min-height: 48px !important;
+  index.html:1646:  padding: 6px 7px 6px 9px !important;
+  index.html:1647:  border-bottom: 1px solid rgba(255, 255, 255, 0.10) !important;
+  index.html:1648:  column-gap: 8px !important;
+  index.html:1649:}
+  index.html:1650:
+> index.html:1651:.trade-row:last-child {
+  index.html:1652:  border-bottom: 0 !important;
+  index.html:1653:}
+  index.html:1654:
+  index.html:1713:  line-height: 1.05 !important;
+  index.html:1714:}
+  index.html:1715:
+> index.html:1716:.plus-btn {
+  index.html:1717:  width: 28px !important;
+  index.html:1718:  height: 28px !important;
+  index.html:1719:  min-width: 28px !important;
+  index.html:1725:
+  index.html:1726:
+  index.html:1727:/* PLAYER_LIST_COMPACT_POSITION_PATCH_START */
+> index.html:1728:.trade-row {
+  index.html:1729:  grid-template-columns: minmax(150px, 1fr) 38px 42px 34px 78px 30px !important;
+  index.html:1730:  column-gap: 6px !important;
+  index.html:1731:}
+  index.html:1752:  text-align: right !important;
+  index.html:1753:}
+  index.html:1754:
+> index.html:1755:.plus-btn {
+  index.html:1756:  width: 28px !important;
+  index.html:1757:  height: 28px !important;
+  index.html:1758:  min-width: 28px !important;
+  index.html:1763:
+  index.html:1764:
+  index.html:1765:/* PLAYER_LIST_POSITION_ALIGN_PATCH_START */
+> index.html:1766:.trade-row {
+  index.html:1767:  align-items: start !important;
+  index.html:1768:}
+  index.html:1769:
+  index.html:1787:  margin-top: 0 !important;
+  index.html:1788:}
+  index.html:1789:
+> index.html:1790:.plus-btn {
+  index.html:1791:  align-self: center !important;
+  index.html:1792:  justify-self: end !important;
+  index.html:1793:}
+  index.html:1794:/* PLAYER_LIST_POSITION_ALIGN_PATCH_END */
+  index.html:1795:
+  index.html:1796:
+> index.html:1797:/* PLAYER_LIST_PLUS_TOP_ALIGN_PATCH_START */
+> index.html:1798:.plus-btn {
+  index.html:1799:  align-self: start !important;
+  index.html:1800:  justify-self: end !important;
+  index.html:1801:  margin-top: 0 !important;
+  index.html:1804:.trade-list-flag {
+  index.html:1805:  cursor: help !important;
+  index.html:1806:}
+> index.html:1807:/* PLAYER_LIST_PLUS_TOP_ALIGN_PATCH_END */
+  index.html:1808:
+  index.html:1809:
+  index.html:1810:
+  index.html:1811:
+  index.html:1812:/* PLAYER_LIST_METRIC_ALIGNMENT_PATCH_START */
+> index.html:1813:.trade-row {
+  index.html:1814:  align-items: center !important;
+  index.html:1815:}
+  index.html:1816:
+  index.html:1862:  transform: none !important;
+  index.html:1863:}
+  index.html:1864:
+> index.html:1865:.plus-btn {
+  index.html:1866:  align-self: center !important;
+  index.html:1867:  justify-self: end !important;
+  index.html:1868:  margin-top: 0 !important;
+  index.html:1910:
+  index.html:1911:
+  index.html:1912:/* ALT_LIST_LAYOUT_FIX_START */
+> index.html:1913:.right-panel.alternative-mode .trade-row.alternative {
+  index.html:1914:  grid-template-columns: 28px minmax(130px, 1fr) 48px 76px 52px 54px !important;
+  index.html:1915:  column-gap: 6px !important;
+  index.html:1916:  align-items: center !important;
+  index.html:1918:  padding: 8px 8px !important;
+  index.html:1919:}
+  index.html:1920:
+> index.html:1921:.right-panel.alternative-mode .trade-row.alternative > div:nth-child(2) {
+  index.html:1922:  min-width: 0 !important;
+  index.html:1923:  overflow: hidden !important;
+  index.html:1924:}
+  index.html:1925:
+> index.html:1926:.right-panel.alternative-mode .trade-row.alternative .trade-name {
+  index.html:1927:  max-width: 100% !important;
+  index.html:1928:  white-space: nowrap !important;
+  index.html:1929:  overflow: hidden !important;
+  index.html:1932:  font-size: 14px !important;
+  index.html:1933:}
+  index.html:1934:
+> index.html:1935:.right-panel.alternative-mode .trade-row.alternative .trade-meta,
+> index.html:1936:.right-panel.alternative-mode .trade-row.alternative .trade-next {
+  index.html:1937:  white-space: nowrap !important;
+  index.html:1938:  overflow: hidden !important;
+  index.html:1939:  text-overflow: ellipsis !important;
+  index.html:1941:  font-size: 11px !important;
+  index.html:1942:}
+  index.html:1943:
+> index.html:1944:.right-panel.alternative-mode .trade-row.alternative .trade-start-col,
+> index.html:1945:.right-panel.alternative-mode .trade-row.alternative .trade-price,
+> index.html:1946:.right-panel.alternative-mode .trade-row.alternative .trade-diff {
+  index.html:1947:  min-width: 0 !important;
+  index.html:1948:  width: auto !important;
+  index.html:1949:  text-align: center !important;
+  index.html:1953:  line-height: 1.1 !important;
+  index.html:1954:}
+  index.html:1955:
+> index.html:1956:.right-panel.alternative-mode .trade-row.alternative .trade-start-value,
+> index.html:1957:.right-panel.alternative-mode .trade-row.alternative .trade-price {
+  index.html:1958:  font-weight: 900 !important;
+  index.html:1959:}
+  index.html:1960:
+> index.html:1961:.right-panel.alternative-mode .trade-row.alternative .choose-alt-btn {
+  index.html:1962:  width: 52px !important;
+  index.html:1963:  min-width: 52px !important;
+  index.html:1964:  max-width: 52px !important;
+  index.html:2136:
+  index.html:2137:          <div class="strategy-panel">
+  index.html:2138:            <div class="strategy-topline">
+> index.html:2139:              <span class="strategy-label">Vælg strategi</span>
+  index.html:2140:              <span
+  index.html:2141:                class="info-icon"
+  index.html:2142:                title="Alle strategier prioriterer sandsynlige startere. Forskellen er tidshorisont o
+g risikoprofil."
+  index.html:2147:              <div class="strategy-buttons" id="strategyButtons"></div>
+  index.html:2148:            </div>
+  index.html:2149:            <div class="active-slot-badge">
+> index.html:2150:              <strong>Valgt plads</strong>
+  index.html:2151:              <span id="activeSlotText">Ingen valgt</span>
+  index.html:2152:            </div>
+  index.html:2153:          </div>
+  index.html:2165:                <option value="5-4-1">5-4-1</option>
+  index.html:2166:              </select>
+  index.html:2167:            </div>
+> index.html:2168:            <button id="optimizeBtn" class="action-btn primary">Vælg optimalt hold</button>
+  index.html:2169:            <button id="fillMissingBtn" class="action-btn tertiary">Fyld mangler optimalt</button>
+  index.html:2170:            <button id="undoBtn" class="action-btn undo">Fortryd</button>
+  index.html:2171:            <button id="clearTeamBtn" class="action-btn secondary">Ryd hold</button>
+  index.html:2336:  }
+  index.html:2337:}
+  index.html:2338:
+> index.html:2339:document.addEventListener("DOMContentLoaded", removeDataStatusBox);
+  index.html:2340:setTimeout(removeDataStatusBox, 250);
+  index.html:2341:/* REMOVE_DATA_STATUS_BOX_PATCH_END */
+  index.html:2342:
+  index.html:2847:      `).join("");
+  index.html:2848:
+  index.html:2849:      strategyButtons.querySelectorAll(".strategy-btn").forEach(button => {
+> index.html:2850:        button.addEventListener("click", () => {
+  index.html:2851:          if (!requireLoginForProtectedAction("Valg af strategi")) return;
+  index.html:2852:          activeStrategyKey = button.dataset.strategyKey || "next_round";
+  index.html:2853:          frontendCaptainOverride = null;
+  index.html:3852:      return counts;
+  index.html:3853:    }
+  index.html:3854:
+> index.html:3855:    function canAddMoreFromTeam(player, playerIdToIgnore = null) {
+  index.html:3856:      const teamKey = playerTeamKey(player);
+  index.html:3857:      if (!teamKey) return true;
+  index.html:3858:
+  index.html:3886:          const player = getPlayerById(playerId);
+  index.html:3887:          issues.push(`duplikatspiller${player ? ` (${player.player_name})` : ""}`);
+  index.html:3888:        }
+> index.html:3889:        seenIds.add(playerIdStr);
+  index.html:3890:      }
+  index.html:3891:
+  index.html:3892:      const teamCounts = getCurrentTeamCounts(squadObj);
+  index.html:3959:
+  index.html:3960:    function getDisabledReason(player) {
+  index.html:3961:
+> index.html:3962:      const selectedSlotKey = findFilledSlotByPlayerId(player.player_id);
+> index.html:3963:      if (selectedSlotKey) return "Allerede valgt";
+  index.html:3964:
+  index.html:3965:      if (isPlayerUnavailable(player)) return "Ikke tilgængelig";
+  index.html:3966:
+  index.html:3972:        const ignoreId = currentPlayerInSlot ? currentPlayerInSlot.player_id : null;
+  index.html:3973:
+  index.html:3974:        if (!activeSlot || !samePosition(activeSlot.positionCode || activeSlot.position, player.posit
+ion)) return "Forkert position";
+> index.html:3975:        if (!canAddMoreFromTeam(player, ignoreId)) return "Maks fra land";
+  index.html:3976:
+  index.html:3977:        const existingSpent = getSpentBudget();
+  index.html:3978:        const currentPrice = currentPlayerInSlot ? getPlayerPrice(currentPlayerInSlot) : 0;
+  index.html:3986:        return "";
+  index.html:3987:      }
+  index.html:3988:
+> index.html:3989:      if (!canAddMoreFromTeam(player)) return "Maks fra land";
+  index.html:3990:      if (!hasAvailableSlotForPosition(player.position)) return "Ingen plads";
+  index.html:3991:      if (price > getBankLeft()) return `Ikke råd (${formatMoney(getBankLeft())} tilbage)`;
+  index.html:3992:      return "";
+  index.html:4080:
+  index.html:4081:      if (isAlreadyInSquad) return false;
+  index.html:4082:      if (getPlayerPrice(candidate) > getAvailableForReplacement(currentPlayer)) return false;
+> index.html:4083:      return canAddMoreFromTeam(candidate, currentPlayer.player_id);
+  index.html:4084:    }
+  index.html:4085:
+  index.html:4086:    function prioritizeReplacementCandidates(players, activeSlot, currentPlayer, modelChoice) {
+  index.html:4169:        ? `
+  index.html:4170:          <div class="alternative-captain-warning">
+  index.html:4171:            <strong>Du skifter den anbefalede kaptajn.</strong><br>
+> index.html:4172:            Ny kaptajn vælges efter skift ud fra bedste lokale kandidat.
+  index.html:4173:          </div>
+  index.html:4174:        `
+  index.html:4175:        : "";
+  index.html:4190:          const priceDiffHtml = `<div class="trade-diff ${diffClass(priceDiff)}">${formatSignedMoneyD
+iff(priceDiff)}</div>`;
+  index.html:4191:          const transferHtml = transferInfoHtml(player, currentPlayer);
+  index.html:4192:          return `
+> index.html:4193:            <div class="trade-row alternative">
+  index.html:4194:              <span class="alternative-rank">${index + 1}</span>
+  index.html:4195:              <div>
+  index.html:4196:                <div class="trade-name">${escapeHtml(player.player_name || "Ukendt spiller")}${warnin
+g}${previousLabel}${modelLabel}</div>
+  index.html:4206:                ${priceDiffHtml}
+  index.html:4207:                ${transferHtml}
+  index.html:4208:              </div>
+> index.html:4209:              <button class="plus-btn choose-alt-btn" data-player-id="${escapeHtml(player.player_id)}
+">V\u00e6lg</button>
+  index.html:4210:            </div>
+  index.html:4211:          `;
+  index.html:4212:        }).join("");
+  index.html:4273:        || positionFullLabel(slot.positionCode || slot.position);
+  index.html:4274:    }
+  index.html:4275:
+> index.html:4276:    function addPlayerToBestSlot(playerId) {
+  index.html:4277:      const player = getPlayerById(playerId);
+  index.html:4278:      if (!player) return;
+  index.html:4279:      if (isPlayerUnavailable(player)) {
+  index.html:4287:        return;
+  index.html:4288:      }
+  index.html:4289:
+> index.html:4290:      if (!canAddMoreFromTeam(player)) {
+> index.html:4291:        showStatus(`Du kan maksimalt vælge ${MAX_PER_TEAM} spillere fra ${teamDisplayName(player.team
+_id, player.team_name)}.`, "error");
+  index.html:4292:        return;
+  index.html:4293:      }
+  index.html:4294:
+  index.html:4295:      const firstEmpty = findFirstEmptySlotByPosition(player.position);
+  index.html:4296:      if (firstEmpty) {
+> index.html:4297:        addPlayerToSlot(playerId, firstEmpty);
+  index.html:4298:        return;
+  index.html:4299:      }
+  index.html:4300:
+> index.html:4301:      showStatus(`Ingen ledig plads i ${positionFullLabel(player.position).toLowerCase()}. Vælg en sp
+iller på banen for at udskifte.`, "error");
+  index.html:4302:    }
+  index.html:4303:
+  index.html:4304:    function pickFrontendCaptainFromSquad(nextSquad) {
+  index.html:4324:      })[0]?.player_name || null;
+  index.html:4325:    }
+  index.html:4326:
+> index.html:4327:    function addPlayerToSlot(playerId, preferredSlotKey = null) {
+  index.html:4328:      const player = getPlayerById(playerId);
+  index.html:4329:      if (!player) return;
+  index.html:4330:      if (isPlayerUnavailable(player)) {
+  index.html:4344:      }
+  index.html:4345:
+  index.html:4346:      if (!slotKey || !slot || !samePosition(slot.positionCode || slot.position, player.position)) {
+> index.html:4347:        showStatus(`Ingen ledig plads i ${positionFullLabel(player.position).toLowerCase()}. Vælg en 
+spiller på banen for at udskifte.`, "error");
+  index.html:4348:        return;
+  index.html:4349:      }
+  index.html:4350:
+  index.html:4351:      const currentPlayerInSlot = getPlayerById(squad[slotKey]);
+  index.html:4352:      const ignoreId = currentPlayerInSlot ? currentPlayerInSlot.player_id : null;
+  index.html:4353:
+> index.html:4354:      if (!canAddMoreFromTeam(player, ignoreId)) {
+> index.html:4355:        showStatus(`Du kan maksimalt vælge ${MAX_PER_TEAM} spillere fra ${teamDisplayName(player.team
+_id, player.team_name)}.`, "error");
+  index.html:4356:        return;
+  index.html:4357:      }
+  index.html:4358:
+  index.html:4417:        if (!cheapest) return Infinity;
+  index.html:4418:
+  index.html:4419:        total += getPlayerPrice(cheapest);
+> index.html:4420:        usedIds.add(String(cheapest.player_id));
+  index.html:4421:        const teamKey = playerTeamKey(cheapest);
+  index.html:4422:        teamCounts[teamKey] = (teamCounts[teamKey] || 0) + 1;
+  index.html:4423:      }
+  index.html:4487:        if (!chosen) return null;
+  index.html:4488:
+  index.html:4489:        localSquad[slot.key] = chosen.player_id;
+> index.html:4490:        usedIds.add(String(chosen.player_id));
+  index.html:4491:          const teamKey = playerTeamKey(chosen);
+  index.html:4492:          teamCounts[teamKey] = (teamCounts[teamKey] || 0) + 1;
+  index.html:4493:        spent += getPlayerPrice(chosen);
+  index.html:4746:        });
+  index.html:4747:
+  index.html:4748:        if (cheapest) {
+> index.html:4749:          usedIds.add(String(cheapest.player_id));
+  index.html:4750:          const teamKey = playerTeamKey(cheapest);
+  index.html:4751:          teamCounts[teamKey] = (teamCounts[teamKey] || 0) + 1;
+  index.html:4752:        }
+  index.html:4828:        if (!bestPick) break;
+  index.html:4829:
+  index.html:4830:        partialSolution[bestPick.slot.key] = bestPick.player.player_id;
+> index.html:4831:        usedIds.add(String(bestPick.player.player_id));
+  index.html:4832:        const teamKey = playerTeamKey(bestPick.player);
+  index.html:4833:        teamCounts[teamKey] = (teamCounts[teamKey] || 0) + 1;
+  index.html:4834:        remainingBank -= getPlayerPrice(bestPick.player);
+  index.html:4971:      const spent = getSpentBudget();
+  index.html:4972:      const bank = getBankLeft();
+  index.html:4973:      const count = getPlayerCount();
+> index.html:4974:      const selectedPlayers = Object.values(squad)
+  index.html:4975:        .map(playerId => getPlayerById(playerId))
+  index.html:4976:        .filter(Boolean);
+> index.html:4977:      const avgStart = selectedPlayers.length
+> index.html:4978:        ? selectedPlayers.reduce((sum, player) => sum + getPlayerStart(player), 0) / selectedPlayers.
+length
+  index.html:4979:        : 0;
+> index.html:4980:      const highRiskCount = selectedPlayers.filter(player => String(player.availability_risk || "").t
+oLowerCase() === "high_risk").length;
+  index.html:4981:      spentValue.textContent = formatMoney(spent);
+  index.html:4982:      bankValue.textContent = formatMoney(bank);
+  index.html:4983:      playerCountValue.textContent = `${count} / 11`;
+> index.html:4984:      avgStartValue.textContent = selectedPlayers.length ? `${Math.round(avgStart)}%` : "–";
+  index.html:4985:      highRiskValue.textContent = String(highRiskCount);
+  index.html:4986:      updateUndoButton();
+  index.html:4987:    }
+  index.html:5022:            `}
+  index.html:5023:            <div class="slot-actions">
+  index.html:5024:              <button class="slot-btn ${player ? "remove" : ""}" data-slot-key="${slot.key}" data-act
+ion="${player ? "remove" : "select"}">
+> index.html:5025:                ${player ? "Fjern" : "Vælg"}
+  index.html:5026:              </button>
+  index.html:5027:              ${player ? `<button class="slot-btn" data-slot-key="${slot.key}" data-action="replace">
+Skift</button>` : ""}
+  index.html:5028:            </div>
+  index.html:5044:        const slotKey = btn.dataset.slotKey;
+  index.html:5045:        const action = btn.dataset.action;
+  index.html:5046:
+> index.html:5047:        btn.addEventListener("click", () => {
+  index.html:5048:          if (action === "remove") {
+  index.html:5049:            const playerId = squad[slotKey];
+  index.html:5050:            if (playerId) {
+  index.html:5163:        }
+  index.html:5164:        showPlayerListBtn?.classList.remove("active");
+  index.html:5165:        tradeList.innerHTML = renderAlternativePanel(activeSlot, currentPlayerForActiveSlot);
+> index.html:5166:        tradeList.querySelectorAll(".plus-btn, .choose-alt-btn").forEach(btn => {
+> index.html:5167:          btn.addEventListener("click", () => addPlayerToSlot(btn.dataset.playerId, activeSlot.key));
+  index.html:5168:        });
+  index.html:5169:        return;
+  index.html:5170:      }
+  index.html:5234:      tradeList.innerHTML = players.slice(0, 80).map(player => {
+  index.html:5235:        const disabledReason = getDisabledReason(player);
+  index.html:5236:        const isDisabled = !!disabledReason;
+> index.html:5237:        const rowClass = isDisabled ? "trade-row disabled" : "trade-row";
+  index.html:5238:        const flagUrl = getFlagUrl(getPlayerFlagCode(player));
+  index.html:5239:        const tmWatchReason = String(player.tm_watch_reason || "").trim();
+  index.html:5240:        const tmWarning = shouldShowTmWarning(player) ? `<div class="trade-tm-warning">TM: usikker st
+arter</div>` : "";
+  index.html:5264:              <div class="trade-price">${formatMoney(getPlayerPrice(player))}</div>
+  index.html:5265:              <div class="trade-subprice">Pris</div>
+  index.html:5266:            </div>
+> index.html:5267:            <button class="plus-btn" data-player-id="${player.player_id}" ${isDisabled ? "disabled" :
+ ""}>+</button>
+  index.html:5268:          </div>
+  index.html:5269:        `;
+  index.html:5270:      }).join("");
+  index.html:5271:
+> index.html:5272:      document.querySelectorAll(".plus-btn").forEach(btn => {
+> index.html:5273:        btn.addEventListener("click", () => {
+  index.html:5274:          const playerId = btn.dataset.playerId;
+> index.html:5275:          if (activeSlotKey) addPlayerToSlot(playerId, activeSlotKey);
+> index.html:5276:          else addPlayerToBestSlot(playerId);
+  index.html:5277:        });
+  index.html:5278:      });
+  index.html:5279:    }
+  index.html:5688:      formationSelect.value = currentFormation;
+  index.html:5689:      eligibleOnlyToggle.checked = eligibleOnly;
+  index.html:5690:
+> index.html:5691:      infoBoxToggle.addEventListener("click", () => {
+  index.html:5692:        const isCollapsed = infoBox.classList.toggle("collapsed");
+  index.html:5693:        infoBoxToggle.textContent = isCollapsed ? "Vis" : "Skjul";
+  index.html:5694:        infoBoxToggle.setAttribute("aria-expanded", String(!isCollapsed));
+  index.html:5695:      });
+  index.html:5696:
+> index.html:5697:      showPlayerListBtn.addEventListener("click", () => {
+  index.html:5698:        const activeSlot = activeSlotKey
+  index.html:5699:          ? getCurrentSlots().find(slot => slot.key === activeSlotKey)
+  index.html:5700:          : null;
+  index.html:5706:          return;
+  index.html:5707:        }
+  index.html:5708:
+> index.html:5709:        showStatus("Vælg først en plads på banen.", "info");
+  index.html:5710:      });
+  index.html:5711:
+> index.html:5712:      activePositionChip.addEventListener("click", () => {
+  index.html:5713:        positionFilter.value = "";
+  index.html:5714:        renderTradeList();
+  index.html:5715:      });
+  index.html:5716:
+> index.html:5717:      formationSelect.addEventListener("change", () => {
+  index.html:5718:        currentFormation = formationSelect.value;
+  index.html:5719:        activeSlotKey = null;
+  index.html:5720:        previousReplacementBySlot.clear();
+  index.html:5726:        scheduleAutosave();
+  index.html:5727:      });
+  index.html:5728:
+> index.html:5729:      optimizeBtn.addEventListener("click", () => {
+  index.html:5730:        if (!requireLoginForProtectedAction("V?lg optimalt hold")) return;
+  index.html:5731:        applyOptimalSquadForCurrentFormation();
+  index.html:5732:      });
+> index.html:5733:      fillMissingBtn.addEventListener("click", () => {
+  index.html:5734:        if (!requireLoginForProtectedAction("Fyld mangler optimalt")) return;
+  index.html:5735:        fillMissingSlotsOptimally();
+  index.html:5736:      });
+> index.html:5737:      cancelOptimizerBtn.addEventListener("click", () => cancelActiveAutofill());
+> index.html:5738:      undoBtn.addEventListener("click", undoLastAction);
+> index.html:5739:      clearTeamBtn.addEventListener("click", clearSquad);
+  index.html:5740:
+  index.html:5741:      [searchInput, teamFilter, positionFilter, sortSelect].forEach(el => {
+> index.html:5742:        el.addEventListener("input", renderTradeList);
+> index.html:5743:        el.addEventListener("change", renderTradeList);
+  index.html:5744:      });
+  index.html:5745:
+> index.html:5746:      searchInput.addEventListener("focus", sanitizeSearchField);
+> index.html:5747:      searchInput.addEventListener("click", sanitizeSearchField);
+  index.html:5748:
+> index.html:5749:      eligibleOnlyToggle.addEventListener("change", () => {
+  index.html:5750:        eligibleOnly = eligibleOnlyToggle.checked;
+  index.html:5751:        saveState();
+  index.html:5752:        renderTradeList();
+  index.html:5753:      });
+  index.html:5754:
+> index.html:5755:      openLoginBtn.addEventListener("click", () => openAuthModal("login"));
+> index.html:5756:      openSignupBtn.addEventListener("click", () => openAuthModal("signup"));
+> index.html:5757:      logoutBtn.addEventListener("click", handleLogout);
+  index.html:5758:
+> index.html:5759:      authPrimaryBtn.addEventListener("click", async () => {
+  index.html:5760:        if (authMode === "signup") await handleSignup();
+  index.html:5761:        else await handleLogin();
+  index.html:5762:      });
+  index.html:5763:
+> index.html:5764:      authCancelBtn.addEventListener("click", closeAuthModal);
+  index.html:5765:
+> index.html:5766:      authModal.addEventListener("click", (event) => {
+  index.html:5767:        if (event.target === authModal) closeAuthModal();
+  index.html:5768:      });
+  index.html:5769:
+> index.html:5770:      authPasswordInput.addEventListener("keydown", async (event) => {
+  index.html:5771:        if (event.key === "Enter") {
+  index.html:5772:          if (authMode === "signup") await handleSignup();
+  index.html:5773:          else await handleLogin();
+  index.html:6061:
+  index.html:6062:    function findCard(target) {
+  index.html:6063:      return target.closest(
+> index.html:6064:        "[data-player-id], [data-slot-key], .trade-row, .player-card, .pitch-player, .pitch-player-ca
+rd, .field-player, .formation-player, .slot-card, .squad-player, .player-token, .pitch-slot"
+  index.html:6065:      );
+  index.html:6066:    }
+  index.html:6067:
+  index.html:6071:      var rightPanel = target.closest(".right-panel");
+  index.html:6072:      if (rightPanel) {
+  index.html:6073:        var allowedListTarget = target.closest(".trade-name, .trade-meta, .trade-next");
+> index.html:6074:        var tradeRow = target.closest(".trade-row");
+  index.html:6075:
+  index.html:6076:        if (!allowedListTarget || !tradeRow) return null;
+  index.html:6077:
+  index.html:6264:      }, 140);
+  index.html:6265:    }
+  index.html:6266:
+> index.html:6267:    document.addEventListener("mouseover", function (event) {
+  index.html:6268:      try {
+  index.html:6269:        var card = findCard(event.target);
+  index.html:6270:        if (!card || activeCard === card) return;
+  index.html:6275:      }
+  index.html:6276:    });
+  index.html:6277:
+> index.html:6278:    document.addEventListener("mouseout", function (event) {
+  index.html:6279:      try {
+  index.html:6280:        if (!activeCard) return;
+  index.html:6281:        if (event.relatedTarget && activeCard.contains(event.relatedTarget)) return;
+  index.html:6286:      }
+  index.html:6287:    });
+  index.html:6288:
+> index.html:6289:    document.addEventListener("scroll", hide, true);
+> index.html:6290:    window.addEventListener("resize", hide);
+  index.html:6291:  } catch (err) {
+  index.html:6292:    console.warn("Safe tooltip kunne ikke initialiseres", err);
+  index.html:6293:  }
+  index.html:6356:    var observer = new MutationObserver(recolorTooltipOdds);
+  index.html:6357:    observer.observe(document.body, { childList: true, subtree: true });
+  index.html:6358:
+> index.html:6359:    document.addEventListener("mouseover", function () {
+  index.html:6360:      window.setTimeout(recolorTooltipOdds, 50);
+  index.html:6361:      window.setTimeout(recolorTooltipOdds, 150);
+  index.html:6362:    });
+
+
