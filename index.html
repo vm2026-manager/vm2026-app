@@ -2070,6 +2070,25 @@
 }
 /* SAFE_PLAYER_FIXTURE_TOOLTIP_CSS_END */
 
+
+/* FORCE_TOOLTIP_ODDS_TONE_CSS_START */
+.vm-fixture-tooltip-close {
+  color: #fde047 !important;
+}
+
+.vm-fixture-tooltip-win {
+  color: #86efac !important;
+}
+
+.vm-fixture-tooltip-draw {
+  color: #e5e7eb !important;
+}
+
+.vm-fixture-tooltip-loss {
+  color: #f87171 !important;
+}
+/* FORCE_TOOLTIP_ODDS_TONE_CSS_END */
+
 </style>
 
 </head>
@@ -6040,12 +6059,34 @@ function renderTradeList() {
 
     function findCard(target) {
       return target.closest(
-        "[data-player-id], [data-slot-key], .player-card, .pitch-player, .pitch-player-card, .field-player, .formation-player, .slot-card, .squad-player, .player-token, .pitch-slot"
+        "[data-player-id], [data-slot-key], .trade-row, .player-card, .pitch-player, .pitch-player-card, .field-player, .formation-player, .slot-card, .squad-player, .player-token, .pitch-slot"
       );
     }
 
     function findPlayer(target) {
-      if (!target || target.closest(".right-panel")) return null;
+      if (!target) return null;
+
+      var rightPanel = target.closest(".right-panel");
+      if (rightPanel) {
+        var allowedListTarget = target.closest(".trade-name, .trade-meta, .trade-next");
+        var tradeRow = target.closest(".trade-row");
+
+        if (!allowedListTarget || !tradeRow) return null;
+
+        if (tradeRow.dataset && tradeRow.dataset.playerId) {
+          var rowPlayer = getPlayer(tradeRow.dataset.playerId);
+          if (rowPlayer) return rowPlayer;
+        }
+
+        var rowText = normalize(tradeRow.textContent || "");
+        if (typeof allPlayers !== "undefined" && Array.isArray(allPlayers)) {
+          return allPlayers.find(function (p) {
+            return rowText.indexOf(normalize(p.player_name || "")) >= 0;
+          }) || null;
+        }
+
+        return null;
+      }
 
       var direct = target.closest("[data-player-id]");
       if (direct && direct.dataset.playerId) {
@@ -6250,6 +6291,81 @@ function renderTradeList() {
   }
 }());
 /* SAFE_PLAYER_FIXTURE_TOOLTIP_JS_END */
+
+
+
+/* FORCE_TOOLTIP_ODDS_TONE_JS_START */
+(function () {
+  try {
+    var CLOSE_TEAM_WIN_ODDS_SPAN = 0.25;
+
+    function oddsToneNumber(text) {
+      var n = Number(String(text || "").trim().replace(",", "."));
+      return Number.isFinite(n) && n > 0 ? n : null;
+    }
+
+    function recolorTooltipOdds() {
+      var tooltip = document.querySelector(".vm-fixture-tooltip");
+      if (!tooltip) return;
+
+      tooltip.querySelectorAll("tbody tr").forEach(function (row) {
+        var cells = row.querySelectorAll("td");
+        if (cells.length < 4) return;
+
+        var winCell = cells[1];
+        var drawCell = cells[2];
+        var lossCell = cells[3];
+
+        var winOdds = oddsToneNumber(winCell.textContent);
+        var lossOdds = oddsToneNumber(lossCell.textContent);
+
+        [winCell, drawCell, lossCell].forEach(function (cell) {
+          cell.classList.remove(
+            "vm-fixture-tooltip-win",
+            "vm-fixture-tooltip-draw",
+            "vm-fixture-tooltip-loss",
+            "vm-fixture-tooltip-close"
+          );
+        });
+
+        // Uafgjort er altid neutral/hvid.
+        drawCell.classList.add("vm-fixture-tooltip-draw");
+
+        if (winOdds === null || lossOdds === null) return;
+
+        // Gul kun n?r de to landes sejr-odds er t?t p? hinanden.
+        if (Math.abs(winOdds - lossOdds) <= CLOSE_TEAM_WIN_ODDS_SPAN) {
+          winCell.classList.add("vm-fixture-tooltip-close");
+          lossCell.classList.add("vm-fixture-tooltip-close");
+          return;
+        }
+
+        // Laveste sejr-odds = favorit/gr?n. H?jeste = underdog/r?d.
+        if (winOdds < lossOdds) {
+          winCell.classList.add("vm-fixture-tooltip-win");
+          lossCell.classList.add("vm-fixture-tooltip-loss");
+        } else {
+          winCell.classList.add("vm-fixture-tooltip-loss");
+          lossCell.classList.add("vm-fixture-tooltip-win");
+        }
+      });
+    }
+
+    var observer = new MutationObserver(recolorTooltipOdds);
+    observer.observe(document.body, { childList: true, subtree: true });
+
+    document.addEventListener("mouseover", function () {
+      window.setTimeout(recolorTooltipOdds, 50);
+      window.setTimeout(recolorTooltipOdds, 150);
+    });
+
+    window.recolorTooltipOdds = recolorTooltipOdds;
+  } catch (err) {
+    console.warn("Tooltip odds color patch fejl", err);
+  }
+}());
+/* FORCE_TOOLTIP_ODDS_TONE_JS_END */
+
 
 </script>
 
