@@ -1908,6 +1908,67 @@
 }
 /* HIDE_FIRST_RIGHT_INFO_CARD_PATCH_END */
 
+
+/* ALT_LIST_LAYOUT_FIX_START */
+.right-panel.alternative-mode .trade-row.alternative {
+  grid-template-columns: 28px minmax(130px, 1fr) 48px 76px 52px 54px !important;
+  column-gap: 6px !important;
+  align-items: center !important;
+  min-height: 74px !important;
+  padding: 8px 8px !important;
+}
+
+.right-panel.alternative-mode .trade-row.alternative > div:nth-child(2) {
+  min-width: 0 !important;
+  overflow: hidden !important;
+}
+
+.right-panel.alternative-mode .trade-row.alternative .trade-name {
+  max-width: 100% !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  line-height: 1.1 !important;
+  font-size: 14px !important;
+}
+
+.right-panel.alternative-mode .trade-row.alternative .trade-meta,
+.right-panel.alternative-mode .trade-row.alternative .trade-next {
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  line-height: 1.15 !important;
+  font-size: 11px !important;
+}
+
+.right-panel.alternative-mode .trade-row.alternative .trade-start-col,
+.right-panel.alternative-mode .trade-row.alternative .trade-price,
+.right-panel.alternative-mode .trade-row.alternative .trade-diff {
+  min-width: 0 !important;
+  width: auto !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  font-size: 12px !important;
+  line-height: 1.1 !important;
+}
+
+.right-panel.alternative-mode .trade-row.alternative .trade-start-value,
+.right-panel.alternative-mode .trade-row.alternative .trade-price {
+  font-weight: 900 !important;
+}
+
+.right-panel.alternative-mode .trade-row.alternative .choose-alt-btn {
+  width: 52px !important;
+  min-width: 52px !important;
+  max-width: 52px !important;
+  justify-self: end !important;
+  padding: 7px 8px !important;
+  font-size: 12px !important;
+  text-align: center !important;
+}
+/* ALT_LIST_LAYOUT_FIX_END */
+
 </style>
 
 </head>
