@@ -2089,6 +2089,20 @@
 }
 /* FORCE_TOOLTIP_ODDS_TONE_CSS_END */
 
+
+/* ONE_CLICK_PLUS_FIX_CSS_START */
+.vm-fixture-tooltip {
+  pointer-events: none !important;
+}
+
+.trade-row button,
+.trade-row .trade-add,
+.trade-row .trade-plus,
+.trade-row .add-player-btn {
+  pointer-events: auto !important;
+}
+/* ONE_CLICK_PLUS_FIX_CSS_END */
+
 </style>
 
 </head>
@@ -6366,6 +6380,71 @@ function renderTradeList() {
 }());
 /* FORCE_TOOLTIP_ODDS_TONE_JS_END */
 
+
+
+/* ONE_CLICK_PLUS_FIX_JS_START */
+(function () {
+  try {
+    function normalizeText(value) {
+      return String(value || "")
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase()
+        .replace(/[^a-z0-9 ]+/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+    }
+
+    function findPlayerFromTradeRow(row) {
+      if (!row) return null;
+
+      if (row.dataset && row.dataset.playerId && typeof getPlayer === "function") {
+        var directPlayer = getPlayer(row.dataset.playerId);
+        if (directPlayer) return directPlayer;
+      }
+
+      var rowText = normalizeText(row.textContent || "");
+
+      if (typeof allPlayers !== "undefined" && Array.isArray(allPlayers)) {
+        return allPlayers.find(function (player) {
+          return rowText.indexOf(normalizeText(player.player_name || "")) >= 0;
+        }) || null;
+      }
+
+      return null;
+    }
+
+    document.addEventListener("click", function (event) {
+      var plusButton = event.target.closest(
+        ".trade-row button, .trade-row .trade-add, .trade-row .trade-plus, .trade-row .add-player-btn"
+      );
+
+      if (!plusButton) return;
+
+      var row = plusButton.closest(".trade-row");
+      if (!row) return;
+
+      var player = findPlayerFromTradeRow(row);
+      if (!player) return;
+
+      if (typeof addPlayerToBestSlot !== "function") return;
+
+      event.preventDefault();
+      event.stopPropagation();
+
+      var result = addPlayerToBestSlot(player);
+
+      if (typeof render === "function") render();
+      if (typeof updateSelectedSummary === "function") updateSelectedSummary();
+      if (typeof updateBudgetSummary === "function") updateBudgetSummary();
+
+      return result;
+    }, true);
+  } catch (err) {
+    console.warn("One-click plus fix fejl", err);
+  }
+}());
+/* ONE_CLICK_PLUS_FIX_JS_END */
 
 </script>
 

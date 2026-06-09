@@ -1,0 +1,73 @@
+﻿Spiller,Land,match_status,match_method,holdet_player_name,holdet_team,old_position,new_position,old_price,new_price,is_out,note
+Alexander Schlager,Østrig,OK,exact_name_country,Alexander Schlager,Østrig,Mål,M?l,"3,5 mio.","3,5 mio.",False,position
+Gregor Kobel,Schweiz,OK,exact_name_country,Gregor Kobel,Schweiz,Mål,M?l,"4,0 mio.","4,0 mio.",False,position
+Manuel Neuer,Tyskland,OK,exact_name_country,Manuel Neuer,Tyskland,Mål,M?l,"5,0 mio.","5,0 mio.",False,position
+Luca Zidane,Algeriet,OK,exact_name_country,Luca Zidane,Algeriet,Mål,M?l,"3,0 mio.","3,0 mio.",False,position
+Hernán Galíndez,Ecuador,OK,exact_name_country,Hernan Galindez,Ecuador,Mål,M?l,"3,5 mio.","3,5 mio.",False,position
+Unai Simón,Spanien,OK,exact_name_country,Unai Simon,Spanien,Mål,M?l,"5,0 mio.","5,0 mio.",False,position
+Maxime Crépeau,Canada,OK,exact_name_country,Maxime Crepeau,Canada,Mål,M?l,"3,0 mio.","3,0 mio.",False,position
+Phillipp Mwene,Østrig,OK,exact_name_country,Phillipp Mwene,Østrig,Forsvar,Forsvar,"2,5 mio.","2,5 mio.",False,
+Stefan Posch,Østrig,OK,exact_name_country,Stefan Posch,Østrig,Forsvar,Forsvar,"3,0 mio.","3,0 mio.",False,
+Philipp Lienhart,Østrig,OK,exact_name_country,Philipp Lienhart,Østrig,Forsvar,Forsvar,,"3,0 mio.",False,pris
+Cristian Romero,Argentina,OK,exact_name_country,Cristian Romero,Argentina,Forsvar,Forsvar,"4,0 mio.","4,0 mio.",False,
+Nicolás Tagliafico,Argentina,OK,exact_name_country,Nicolas Tagliafico,Argentina,Forsvar,Forsvar,,"4,0 mio.",False,pris
+Nahuel Molina,Argentina,OK,exact_name_country,Nahuel Molina,Argentina,Forsvar,Forsvar,,"4,0 mio.",False,pris
+Theo Hernández,Frankrig,OK,exact_name_country,Theo Hernandez,Frankrig,Forsvar,Forsvar,"4,5 mio.","4,5 mio.",False,
+Jules Koundé,Frankrig,OK,exact_name_country,Jules Kounde,Frankrig,Forsvar,Forsvar,"3,5 mio.","3,5 mio.",False,
+Julian Ryerson,Norge,OK,exact_name_country,Julian Ryerson,Norge,Forsvar,Forsvar,"3,5 mio.","3,5 mio.",False,
+David Møller Wolfe,Norge,OK,exact_name_country,David Møller Wolfe,Norge,Forsvar,Forsvar,,"3,0 mio.",False,pris
+César Montes,Mexico,OK,exact_name_country,Cesar Montes,Mexico,Forsvar,Forsvar,"3,0 mio.","3,0 mio.",False,
+Ladislav Krejčí,Tjekkiet,OK,exact_name_country,Ladislav Krejci,Tjekkiet,Forsvar,Forsvar,,"3,0 mio.",False,pris
+Vladimír Coufal,Tjekkiet,OK,exact_name_country,Vladimir Coufal,Tjekkiet,Forsvar,Forsvar,,"3,0 mio.",False,pris
+Arthur Theate,Belgien,OK,exact_name_country,Arthur Theate,Belgien,Forsvar,Forsvar,"3,0 mio.","3,0 mio.",False,
+Maxim De Cuyper,Belgien,OK,exact_name_country,Maxim De Cuyper,Belgien,Forsvar,Forsvar,"4,0 mio.","4,0 mio.",False,
+Jurrien Timber,Holland,OK,exact_name_country,Jurrien Timber,Holland,Forsvar,Forsvar,"2,5 mio.","2,5 mio.",True,is_out
+Nico Schlotterbeck,Tyskland,OK,exact_name_country,Nico Schlotterbeck,Tyskland,Forsvar,Forsvar,"4,0 mio.","4,0 mio.",False,
+David Raum,Tyskland,OK,exact_name_country,David Raum,Tyskland,Forsvar,Forsvar,"4,5 mio.","4,5 mio.",False,
+Nathaniel Brown,Tyskland,OK,exact_name_country,Nathaniel Brown,Tyskland,Forsvar,Forsvar,"2,5 mio.","2,5 mio.",False,
+Nuno Mendes,Portugal,OK,exact_name_country,Nuno Mendes,Portugal,Forsvar,Forsvar,"4,5 mio.","4,5 mio.",False,
+Andrew Robertson,Skotland,OK,surname_country,Andy Robertson,Skotland,Forsvar,Forsvar,,"3,0 mio.",False,pris
+Davinson Sánchez,Colombia,OK,exact_name_country,Davinson Sanchez,Colombia,Forsvar,Forsvar,"3,5 mio.","3,5 mio.",False,
+Antonee Robinson,USA,OK,exact_name_country,Antonee Robinson,USA,Forsvar/Midtbane,Forsvar,"2,0 mio.","2,0 mio.",False,position
+Konrad Laimer,Østrig,OK,exact_name_country,Konrad Laimer,Østrig,Midtbane,Midtbane,"3,0 mio.","3,0 mio.",False,
+Romano Schmid,Østrig,OK,exact_name_country,Romano Schmid,Østrig,Midtbane,Midtbane,"3,0 mio.","3,0 mio.",False,
+Patrick Wimmer,Østrig,OK,exact_name_country,Patrick Wimmer,Østrig,Midtbane,Midtbane,"3,0 mio.","3,0 mio.",False,
+Marcel Sabitzer,Østrig,OK,exact_name_country,Marcel Sabitzer,Østrig,Midtbane,Midtbane,"4,5 mio.","4,5 mio.",False,
+Antonio Nusa,Norge,OK,exact_name_country,Antonio Nusa,Norge,Midtbane,Midtbane,"3,5 mio.","3,5 mio.",False,
+Scott McTominay,Skotland,OK,exact_name_country,Scott McTominay,Skotland,Midtbane,Midtbane,"4,5 mio.","4,5 mio.",False,
+Ryan Christie,Skotland,OK,exact_name_country,Ryan Christie,Skotland,Midtbane,Midtbane,"2,5 mio.","2,5 mio.",False,
+Ibrahim Maza,Algeriet,OK,exact_name_country,Ibrahim Maza,Algeriet,Midtbane/offensiv,Midtbane,,"3,0 mio.",False,"position, pris"
+Mohamed Amoura,Algeriet,OK,exact_name_country,Mohamed Amoura,Algeriet,Offensiv,Angriber,,"3,5 mio.",False,"position, pris"
+Mahmoud Trezeguet,Egypten,OK,exact_name_country,Mahmoud Trezeguet,Egypten,Midtbane,Midtbane,"3,0 mio.","3,0 mio.",False,
+Kevin De Bruyne,Belgien,OK,exact_name_country,Kevin De Bruyne,Belgien,Midtbane,Midtbane,"7,0 mio.","7,0 mio.",False,
+Florian Wirtz,Tyskland,OK,exact_name_country,Florian Wirtz,Tyskland,Midtbane,Midtbane,"7,5 mio.","7,5 mio.",False,
+Jamal Musiala,Tyskland,OK,exact_name_country,Jamal Musiala,Tyskland,Midtbane,Midtbane,"6,5 mio.","6,5 mio.",False,
+Aleksandar Pavlović,Tyskland,OK,exact_name_country,Aleksandar Pavlovic,Tyskland,Midtbane,Midtbane,"3,5 mio.","3,5 mio.",False,
+Nmecha,Tyskland,OK,contains_name_country,Felix Nmecha,Tyskland,Midtbane/offensiv,Midtbane,"3,0 mio.","3,0 mio.",False,position
+Fabian Rieder,Schweiz,OK,exact_name_country,Fabian Rieder,Schweiz,Midtbane,Midtbane,"3,0 mio.","3,0 mio.",False,
+Johan Manzambi,Schweiz,OK,exact_name_country,Johan Manzambi,Schweiz,Midtbane,Midtbane,"3,0 mio.","3,0 mio.",False,
+Kerem Aktürkoğlu,Tyrkiet,OK,exact_name_country,Kerem Akturkoglu,Tyrkiet,Midtbane,Midtbane,"4,5 mio.","4,5 mio.",False,
+Ismael Saibari,Marokko,OK,exact_name_country,Ismael Saibari,Marokko,Midtbane,Midtbane,"3,5 mio.","3,5 mio.",False,
+Dani Olmo,Spanien,OK,exact_name_country,Dani Olmo,Spanien,Midtbane,Midtbane,"5,0 mio.","5,0 mio.",False,
+Fabián Ruiz,Spanien,OK,exact_name_country,Fabian Ruiz,Spanien,Midtbane,Midtbane,"4,5 mio.","4,5 mio.",False,
+Roberto Alvarado,Mexico,OK,exact_name_country,Roberto Alvarado,Mexico,Midtbane,Midtbane,"2,5 mio.","2,5 mio.",False,
+Brian Gutiérrez,,OK,exact_name_unique,Brian Gutierrez,Mexico,Midtbane/offensiv,Midtbane,"2,5 mio.","2,5 mio.",False,position
+James Rodríguez,Colombia,OK,exact_name_country,James Rodriguez,Colombia,Midtbane,Midtbane,"4,0 mio.","4,0 mio.",False,
+Jhon Arias,Colombia,OK,exact_name_country,Jhon Arias,Colombia,Midtbane,Midtbane,"3,0 mio.","3,0 mio.",False,
+Kylian Mbappé,Frankrig,OK,exact_name_country,Kylian Mbappe,Frankrig,Angriber,Angriber,"10,0 mio.","10,0 mio.",False,
+Michael Olise,Frankrig,OK,exact_name_country,Michael Olise,Frankrig,Angriber,Angriber,"7,0 mio.","7,0 mio.",False,
+Erling Haaland,Norge,OK,exact_name_country,Erling Haaland,Norge,Angriber,Angriber,"8,5 mio.","8,5 mio.",False,
+Alexander Sørloth,Norge,OK,exact_name_country,Alexander Sørloth,Norge,Angriber,Angriber,"4,5 mio.","4,5 mio.",False,
+Marko Arnautović,Østrig,OK,exact_name_country,Marko Arnautovic,Østrig,Angriber,Angriber,"4,5 mio.","4,5 mio.",False,
+Enner Valencia,Ecuador,OK,exact_name_country,Enner Valencia,Ecuador,Angriber,Angriber,"4,0 mio.","4,0 mio.",False,
+Mehdi Taremi,Iran,OK,exact_name_country,Mehdi Taremi,Iran,Angriber,Angriber,"3,5 mio.","3,5 mio.",False,
+Raphinha,Brasilien,OK,exact_name_country,Raphinha,Brasilien,Angriber/offensiv,Angriber,"6,5 mio.","6,5 mio.",False,position
+Ismaïla Sarr,Senegal,OK,exact_name_country,Ismaila Sarr,Senegal,Angriber/offensiv,Midtbane,"3,5 mio.","3,5 mio.",False,position
+Harry Kane,England,OK,exact_name_country,Harry Kane,England,Angriber,Angriber,"9,5 mio.","9,5 mio.",False,
+Mikel Oyarzabal,Spanien,OK,exact_name_country,Mikel Oyarzabal,Spanien,Angriber,Angriber,"7,5 mio.","7,5 mio.",False,
+Luis Díaz,Colombia,OK,exact_name_country,Luis Diaz,Colombia,Angriber,Angriber,"5,5 mio.","5,5 mio.",False,
+Breel Embolo,Schweiz,OK,exact_name_country,Breel Embolo,Schweiz,Angriber,Angriber,"5,0 mio.","5,0 mio.",False,
+Kai Havertz,Tyskland,OK,exact_name_country,Kai Havertz,Tyskland,Angriber,Angriber,"5,5 mio.","5,5 mio.",False,
+Jonathan David,Canada,OK,exact_name_country,Jonathan David,Canada,Angriber,Angriber,"4,5 mio.","4,5 mio.",False,
+Cristiano Ronaldo,Portugal,OK,exact_name_country,Cristiano Ronaldo,Portugal,Angriber,Angriber,"7,0 mio.","7,0 mio.",False,
+Lionel Messi,Argentina,OK,exact_name_country,Lionel Messi,Argentina,Angriber,Angriber,"8,0 mio.","8,0 mio.",False,

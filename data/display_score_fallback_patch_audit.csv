@@ -1,0 +1,485 @@
+﻿player_name,team_name,old_display_score,new_display_score,price_quality_ev,source
+Luca Jaquez,Schweiz,,1.4,0.06852,price_quality_ev * 20
+Robin Hranac,Tjekkiet,,39.5,1.97486,price_quality_ev * 20
+Ladislav Krejci,Tjekkiet,,57.8,2.889018,price_quality_ev * 20
+Stepan Chaloupek,Tjekkiet,,7.9,0.397267059623668,price_quality_ev * 20
+David Jurasek,Tjekkiet,,10.2,0.508681,price_quality_ev * 20
+David Zima,Tjekkiet,,3.5,0.172517,price_quality_ev * 20
+Jaroslav Zeleny,Tjekkiet,,20.6,1.031723,price_quality_ev * 20
+Tomas Holes,Tjekkiet,,5.4,0.267501,price_quality_ev * 20
+Vladimir Coufal,Tjekkiet,,57.8,2.889018,price_quality_ev * 20
+Ferdi Kadioglu,Tyrkiet,,66.7,3.336204,price_quality_ev * 20
+Samet Akaydin,Tyrkiet,,5.5,0.274788,price_quality_ev * 20
+Abdulkerim Bardakci,Tyrkiet,,57.8,2.889018,price_quality_ev * 20
+Evren Eren Elmali,Tyrkiet,,16.0,0.799213,price_quality_ev * 20
+Ozan Kabak,Tyrkiet,,39.5,1.97486,price_quality_ev * 20
+Caglar Soyuncu,Tyrkiet,,34.6,1.730824,price_quality_ev * 20
+David Alaba,Østrig,,36.7,1.832876,price_quality_ev * 20
+Marco Friedl,Østrig,,13.7,0.684345,price_quality_ev * 20
+Luka Vuskovic,Kroatien,,20.0,1.00134,price_quality_ev * 20
+Malick Thiaw,Tyskland,,3.5,0.177468,price_quality_ev * 20
+Marc Pubill,Spanien,,3.8,0.188199,price_quality_ev * 20
+Eric Garcia,Spanien,,8.7,0.435416,price_quality_ev * 20
+Alejandro 'Alex' Grimaldo,Spanien,,38.9,1.943685,price_quality_ev * 20
+Eric Smith,Sverige,,9.0,0.45232,price_quality_ev * 20
+Achref Abada,Algeriet,,15.7,0.786052,price_quality_ev * 20
+Mohamed Amine Tougai,Algeriet,,9.6,0.481645,price_quality_ev * 20
+Jaouen Hadjam,Algeriet,,18.7,0.935801,price_quality_ev * 20
+Samir Chergui,Algeriet,,15.3,0.764881,price_quality_ev * 20
+Lisandro Martinez,Argentina,,30.3,1.513433,price_quality_ev * 20
+Facundo Medina,Argentina,,13.6,0.678788,price_quality_ev * 20
+Lucas Herrington,Australien,,20.0,1.00134,price_quality_ev * 20
+Jordan Bos,Australien,,24.9,1.245453,price_quality_ev * 20
+Harry Souttar,Australien,,39.5,1.97486,price_quality_ev * 20
+Aziz Behich,Australien,,21.6,1.0790422719112127,price_quality_ev * 20
+Danilo Luiz da Silva,Brasilien,,20.7,1.037366,price_quality_ev * 20
+Roger Ibanez,Brasilien,,28.0,1.40215,price_quality_ev * 20
+Bremer,Brasilien,,23.1,1.154369,price_quality_ev * 20
+Leo Pereira,Brasilien,,37.1,1.857226,price_quality_ev * 20
+Christopher Operi,Elfenbenskysten,,3.1,0.156638,price_quality_ev * 20
+Ghislain Konan,Elfenbenskysten,,35.5,1.777374,price_quality_ev * 20
+Guela Doue,Elfenbenskysten,,41.2,2.059059,price_quality_ev * 20
+Wilfried Stephane Singo,Elfenbenskysten,,33.5,1.674963,price_quality_ev * 20
+Ousmane Diomande,Elfenbenskysten,,17.6,0.877684,price_quality_ev * 20
+Emmanuel Agbadou,Elfenbenskysten,,30.3,1.515,price_quality_ev * 20
+Odilon Kossounou,Elfenbenskysten,,20.7,1.03398,price_quality_ev * 20
+Evan N'Dicka,Elfenbenskysten,,37.0,1.851008,price_quality_ev * 20
+Dan Burn,England,,29.2,1.460304,price_quality_ev * 20
+Reece James,England,,30.8,1.538943,price_quality_ev * 20
+Nico O'Reilly,England,,57.3,2.866644,price_quality_ev * 20
+Djed Spence,England,,33.1,1.657189,price_quality_ev * 20
+Jarell Quansah,England,,27.8,1.388326,price_quality_ev * 20
+Valentino Livramento,England,,24.0,1.199355,price_quality_ev * 20
+Jerome Opoku,Ghana,,16.8,0.838469,price_quality_ev * 20
+Kojo Peprah Oppong,Ghana,,9.8,0.49223,price_quality_ev * 20
+Alidu Seidu,Ghana,,18.7,0.935002,price_quality_ev * 20
+Caleb Yirenkyi,Ghana,,41.8,2.090643,price_quality_ev * 20
+Derrick Luckassen,Ghana,,1.3,0.064229,price_quality_ev * 20
+Abdul Rahman Baba,Ghana,,33.3,1.6665,price_quality_ev * 20
+Abdul Mumin,Ghana,,7.3,0.364059,price_quality_ev * 20
+Jonas Adjetey,Ghana,,39.5,1.97486,price_quality_ev * 20
+Marvin Senaya,Ghana,,8.7,0.435297,price_quality_ev * 20
+Hiroki Ito,Japan,,39.5,1.97486,price_quality_ev * 20
+Moon-Hwan Kim,Sydkorea,,18.7,0.934673,price_quality_ev * 20
+Han-beom Lee,Sydkorea,,20.0,1.00134,price_quality_ev * 20
+Tae-Seok Lee,Sydkorea,,35.2,1.759318,price_quality_ev * 20
+Tae-Hyeon Kim,Sydkorea,,9.9,0.493804,price_quality_ev * 20
+Gi-hyuk Lee,Sydkorea,,16.8,0.837693,price_quality_ev * 20
+Mateo Chavez,Mexico,,18.1,0.906743,price_quality_ev * 20
+Jorge Sanchez,Mexico,,33.4,1.669603,price_quality_ev * 20
+Callan Elliot,New Zealand,,1.2,0.061511,price_quality_ev * 20
+Liberato Cacace,New Zealand,,39.5,1.97486,price_quality_ev * 20
+Fabian Balbuena,Paraguay,,5.8,0.290577,price_quality_ev * 20
+Juan Jose Caceres,Paraguay,,45.6,2.282259,price_quality_ev * 20
+Olwethu Makhanya,Sydafrika,,20.0,1.00134,price_quality_ev * 20
+Kamogelo Sebelebele,Sydafrika,,8.0,0.398247,price_quality_ev * 20
+Ime Okon,Sydafrika,,20.0,1.00134,price_quality_ev * 20
+Khulumani Ndamane,Sydafrika,,7.8,0.389807,price_quality_ev * 20
+Thabang Matuludi,Sydafrika,,7.5,0.373643,price_quality_ev * 20
+Sebastian Caceres,Uruguay,,19.5,0.976145,price_quality_ev * 20
+Auston Trusty,USA,,14.1,0.703614,price_quality_ev * 20
+Sergino Dest,USA,,57.8,2.889018,price_quality_ev * 20
+Joe Scally,USA,,6.6,0.328549,price_quality_ev * 20
+Antonee Robinson,USA,,20.0,1.00134,price_quality_ev * 20
+Willer Ditta,Colombia,,29.7,1.48312,price_quality_ev * 20
+Deiver Machado,Colombia,,7.1,0.352873,price_quality_ev * 20
+Yerry Mina,Colombia,,27.9,1.39292,price_quality_ev * 20
+Felix 'Feliz' Torres,Ecuador,,50.9,2.5444,price_quality_ev * 20
+Jackson Porozo,Ecuador,,7.7,0.383942,price_quality_ev * 20
+Nidal Celik,Bosnien-Hercegovina,,1.4,0.068377,price_quality_ev * 20
+Sead Kolasinac,Bosnien-Hercegovina,,36.8,1.841134,price_quality_ev * 20
+Stjepan Radeljic,Bosnien-Hercegovina,,17.3,0.863578,price_quality_ev * 20
+Hossein Kanaani,Iran,,35.3,1.765243,price_quality_ev * 20
+Saleh Hardani,Iran,,16.9,0.847497,price_quality_ev * 20
+Ehsan Hajsafi,Iran,,10.4,0.521984,price_quality_ev * 20
+Daniyal Eiri,Iran,,7.2,0.357622,price_quality_ev * 20
+Arya Yousefi,Iran,,20.0,1.00134,price_quality_ev * 20
+Nathan Ngoy,Belgien,,20.0,1.00134,price_quality_ev * 20
+Brandon Mechele,Belgien,,15.0,0.752139,price_quality_ev * 20
+Koni de Winter,Belgien,,24.0,1.197704,price_quality_ev * 20
+Joaquin Seys,Belgien,,2.7,0.135983,price_quality_ev * 20
+Akam Hashem,Irak,,20.0,1.00134,price_quality_ev * 20
+Manaf Younis,Irak,,10.1,0.503531,price_quality_ev * 20
+Mustafa Saadoon,Irak,,13.1,0.656025,price_quality_ev * 20
+Ahmed Yahya,Irak,,14.0,0.702405,price_quality_ev * 20
+Roderick Miller,Panama,,9.4,0.471345,price_quality_ev * 20
+Jiovany Ramos,Panama,,14.8,0.737702,price_quality_ev * 20
+Edgardo Farina,Panama,,15.1,0.752722,price_quality_ev * 20
+Andres Andrade,Panama,,32.2,1.61105,price_quality_ev * 20
+Karim Hafez,Egypten,,8.6,0.431005,price_quality_ev * 20
+Mohamed Abdelmonem,Egypten,,23.3,1.164885,price_quality_ev * 20
+Hossam Abdelmaguid,Egypten,,4.1,0.205385,price_quality_ev * 20
+Rami Rabia,Egypten,,14.4,0.717715,price_quality_ev * 20
+Tarek Alaa,Egypten,,2.0,0.099133,price_quality_ev * 20
+Ahmed Fatouh,Egypten,,32.4,1.621078,price_quality_ev * 20
+Redouane Halhal,Marokko,,17.2,0.859722,price_quality_ev * 20
+Zakaria El Ouahdi,Marokko,,6.9,0.347322,price_quality_ev * 20
+Chadi Riad,Marokko,,8.4,0.421564,price_quality_ev * 20
+Youssef Belammari,Marokko,,10.4,0.518408,price_quality_ev * 20
+Issa Diop,Marokko,,39.5,1.97486,price_quality_ev * 20
+Mohamed Amine Ben Hamida,Tunesien,,17.0,0.850318,price_quality_ev * 20
+Adem Arous,Tunesien,,8.4,0.421421,price_quality_ev * 20
+Omar Rekik,Tunesien,,20.0,1.00134,price_quality_ev * 20
+Moutaz Neffati,Tunesien,,7.2,0.360053,price_quality_ev * 20
+Nawaf Bu Washl,Saudi-Arabien,,8.2,0.410059,price_quality_ev * 20
+Moteb Al-Harbi,Saudi-Arabien,,9.9,0.493089,price_quality_ev * 20
+Jehad Thakri,Saudi-Arabien,,9.4,0.467912,price_quality_ev * 20
+Hassan Al Tambakti,Saudi-Arabien,,7.2,0.357622,price_quality_ev * 20
+Ali Lajami,Saudi-Arabien,,16.0,0.798497,price_quality_ev * 20
+Hassan Kadesh,Saudi-Arabien,,15.7,0.787053,price_quality_ev * 20
+Mohammed Abu Al-Shamat,Saudi-Arabien,,19.5,0.972732,price_quality_ev * 20
+Al-Hashmi Al-Hussain,Qatar,,10.1,0.506249,price_quality_ev * 20
+Seydinaissa Laye,Qatar,,17.9,0.895055,price_quality_ev * 20
+Lucas Mendes,Qatar,,18.4,0.919801,price_quality_ev * 20
+Pedro 'Ro-Ro' Miguel Correia,Qatar,,39.5,1.97486,price_quality_ev * 20
+Homam Al-Amin Ahmed,Qatar,,6.0,0.298092,price_quality_ev * 20
+Ayoub Al-Oui,Qatar,,39.5,1.97486,price_quality_ev * 20
+Jack Hendry,Skotland,,10.6,0.527992,price_quality_ev * 20
+Nathan Patterson,Skotland,,2.7,0.135896,price_quality_ev * 20
+Aaron Hickey,Skotland,,39.5,1.97486,price_quality_ev * 20
+Andy Robertson,Skotland,,57.8,2.889018,price_quality_ev * 20
+Kieran Tierney,Skotland,,21.8,1.087583,price_quality_ev * 20
+Dominic Hyam,Skotland,,7.2,0.361484,price_quality_ev * 20
+Moïse Bombito,Canada,,14.1,0.705307,price_quality_ev * 20
+Alphonso Davies,Canada,,70.9,3.545946,price_quality_ev * 20
+Alfie Jones,Canada,,8.3,0.415413,price_quality_ev * 20
+Abdukodir Khusanov,Usbekistan,,57.8,2.889018,price_quality_ev * 20
+Abdulla Abdullaev,Usbekistan,,7.2,0.357622,price_quality_ev * 20
+Farrukh Sayfiev,Usbekistan,,17.9,0.895485,price_quality_ev * 20
+Khozhiakbar Alizhonov,Usbekistan,,29.3,1.464638,price_quality_ev * 20
+Behruzjon Karimov,Usbekistan,,7.2,0.357622,price_quality_ev * 20
+Avazbek Ulmasaliyev,Usbekistan,,7.2,0.357622,price_quality_ev * 20
+Jakhongir Urozov,Usbekistan,,22.7,1.135926,price_quality_ev * 20
+Ehsan Haddad,Jordan,,39.5,1.97486,price_quality_ev * 20
+Saed Al-Rosan,Jordan,,5.6,0.281977,price_quality_ev * 20
+Mohammad Abualnadi,Jordan,,21.6,1.080502,price_quality_ev * 20
+Husam Abu Dahab,Jordan,,9.5,0.475494,price_quality_ev * 20
+Diney Borges,Kap Verde,,57.8,2.889018,price_quality_ev * 20
+Roberto Lopes,Kap Verde,,20.0,1.00134,price_quality_ev * 20
+Sidny Lopes Cabral,Kap Verde,,19.4,0.972273,price_quality_ev * 20
+Joao Paulo,Kap Verde,,18.1,0.903108,price_quality_ev * 20
+Logan Costa,Kap Verde,,27.6,1.377814,price_quality_ev * 20
+Stopira,Kap Verde,,14.9,0.746139,price_quality_ev * 20
+Kelvin Pires,Kap Verde,,7.3,0.365775,price_quality_ev * 20
+Henrik Falchener,Norge,,1.3,0.067233,price_quality_ev * 20
+Leo Østigård,Norge,,23.4,1.169117,price_quality_ev * 20
+Marcus Holmgren Pedersen,Norge,,9.9,0.493947,price_quality_ev * 20
+Torbjørn Heggem,Norge,,36.0,1.798815,price_quality_ev * 20
+Shurandy Sambo,Curaçao,,12.4,0.621117,price_quality_ev * 20
+Riechedly Bazoer,Curaçao,,17.7,0.883039,price_quality_ev * 20
+Duke Lacroix,Haiti,,7.7,0.385662,price_quality_ev * 20
+Hannes Delcroix,Haiti,,17.9,0.895847,price_quality_ev * 20
+Dylan Batubinsika,Congo DR,,5.0,0.250807,price_quality_ev * 20
+Gedeon Kalulu,Congo DR,,25.1,1.256437,price_quality_ev * 20
+Timothy Fayulu,Congo DR,,0.6,0.029964,price_quality_ev * 20
+Matthieu Epolo,Congo DR,,1.4,0.069894,price_quality_ev * 20
+Lionel Mpasi Nzau,Congo DR,,16.5,0.822538,price_quality_ev * 20
+Alexandre Pierre,Haiti,,1.9,0.093064,price_quality_ev * 20
+Vozinha,Kap Verde,,16.5,0.822538,price_quality_ev * 20
+Abdallah Al-Fakhouri,Jordan,,0.6,0.029494,price_quality_ev * 20
+Utkir Yusupov,Usbekistan,,11.6,0.579067,price_quality_ev * 20
+Abduvokhid Nematov,Usbekistan,,11.3,0.566376,price_quality_ev * 20
+Owen Goodman,Canada,,0.6,0.029494,price_quality_ev * 20
+Craig Gordon,Skotland,,11.4,0.572016,price_quality_ev * 20
+Liam Kelly,Skotland,,14.0,0.698386,price_quality_ev * 20
+Mahmoud Abunada,Qatar,,9.0,0.449576,price_quality_ev * 20
+Ahmed Al-Kassar,Saudi-Arabien,,2.1,0.1074,price_quality_ev * 20
+Mohammed Al-Owais,Saudi-Arabien,,39.0,1.949245,price_quality_ev * 20
+Yehvann Diouf,Senegal,,3.0,0.15,price_quality_ev * 20
+Abdelmouhib Chamakh,Tunesien,,16.5,0.822538,price_quality_ev * 20
+Mory Diaw,Senegal,,14.9,0.746004,price_quality_ev * 20
+Yassine 'Bono' Bounou,Marokko,,54.8,2.739621,price_quality_ev * 20
+Mostafa Oufa Shobeir,Egypten,,12.2,0.610206,price_quality_ev * 20
+Luis Mejia,Panama,,2.3,0.11539,price_quality_ev * 20
+Cesar Samudio,Panama,,1.1,0.055933,price_quality_ev * 20
+Fahad Talib,Irak,,1.9,0.092829,price_quality_ev * 20
+Ahmed Basil Fadhil,Irak,,16.5,0.822538,price_quality_ev * 20
+Senne Lammens,Belgien,,2.5,0.126309,price_quality_ev * 20
+Thibaut Courtois,Belgien,,76.0,3.799061,price_quality_ev * 20
+Seyed Hossein Hosseini,Iran,,1.2,0.05887,price_quality_ev * 20
+Gonzalo Valle,Ecuador,,7.0,0.351142,price_quality_ev * 20
+Moises Ramirez,Ecuador,,2.2,0.109045,price_quality_ev * 20
+Alvaro Montero,Colombia,,8.5,0.427433,price_quality_ev * 20
+Matt Turner,USA,,11.8,0.590343,price_quality_ev * 20
+Sergio Rochet,Uruguay,,57.2,2.859958,price_quality_ev * 20
+Fernando Muslera,Uruguay,,35.8,1.791856,price_quality_ev * 20
+Michael Woud,New Zealand,,0.6,0.029964,price_quality_ev * 20
+Ricardo Goss,Sydafrika,,1.3,0.064275,price_quality_ev * 20
+Roberto 'Gatito' Fernandez,Paraguay,,25.4,1.268401,price_quality_ev * 20
+Gaston Olveira,Paraguay,,11.8,0.588672,price_quality_ev * 20
+Bum-Keun Song,Sydkorea,,0.6,0.029494,price_quality_ev * 20
+Raul Rangel,Mexico,,67.2,3.361832,price_quality_ev * 20
+Guillermo Ochoa,Mexico,,2.0,0.098019,price_quality_ev * 20
+Carlos Acevedo,Mexico,,2.0,0.098235,price_quality_ev * 20
+Benjamin Asare,Ghana,,39.0,1.949245,price_quality_ev * 20
+James Trafford,England,,4.2,0.209874,price_quality_ev * 20
+Yahia Fofana,Elfenbenskysten,,39.0,1.949245,price_quality_ev * 20
+Alban Lafont,Elfenbenskysten,,1.9,0.097412,price_quality_ev * 20
+Alisson Becker,Brasilien,,56.3,2.812724894067797,price_quality_ev * 20
+Ederson Moraes,Brasilien,,35.0,1.750693548387097,price_quality_ev * 20
+Weverton,Brasilien,,2.4,0.120546,price_quality_ev * 20
+Juan Musso,Argentina,,3.0,0.15,price_quality_ev * 20
+Melvin Feycal Mastil,Algeriet,,4.5,0.226668,price_quality_ev * 20
+Jacob Widell Zetterström,Sverige,,27.1,1.354467,price_quality_ev * 20
+Kristoffer Nordfeldt,Sverige,,37.2,1.859225,price_quality_ev * 20
+Joan Garcia,Spanien,,14.4,0.7203935643564356,price_quality_ev * 20
+Brice Samba,Frankrig,,3.0,0.15,price_quality_ev * 20
+Ivor Pandur,Kroatien,,0.6,0.029494,price_quality_ev * 20
+Mert Günok,Tyrkiet,,2.3,0.114673,price_quality_ev * 20
+Ugurcan Cakir,Tyrkiet,,67.2,3.361832,price_quality_ev * 20
+Altay Bayindir,Tyrkiet,,3.3,0.162623,price_quality_ev * 20
+Rui Silva,Portugal,,3.0,0.15,price_quality_ev * 20
+Matej Kovar,Tjekkiet,,39.0,1.949245,price_quality_ev * 20
+Lukas Hornicek,Tjekkiet,,1.5,0.073088,price_quality_ev * 20
+Marvin Keller,Schweiz,,1.4,0.069894,price_quality_ev * 20
+Djibril Sow,Schweiz,,5.7,0.285307,price_quality_ev * 20
+Johan Manzambi,Schweiz,,17.5,0.876242,price_quality_ev * 20
+Ardon Jashari,Schweiz,,3.6,0.178152,price_quality_ev * 20
+Lukas Cerv,Tjekkiet,,6.1,0.305085,price_quality_ev * 20
+David Doudera,Tjekkiet,,3.0,0.15,price_quality_ev * 20
+Pavel Sulc,Tjekkiet,,63.4,3.170512,price_quality_ev * 20
+Alexandr Sojka,Tjekkiet,,3.0,0.15,price_quality_ev * 20
+Tomas Soucek,Tjekkiet,,58.9,2.946328,price_quality_ev * 20
+Lukas Provod,Tjekkiet,,48.3,2.414929,price_quality_ev * 20
+Michal Sadilek,Tjekkiet,,6.2,0.309658,price_quality_ev * 20
+Vladimir Darida,Tjekkiet,,5.9,0.293937,price_quality_ev * 20
+Matheus Nunes,Portugal,,7.5,0.375921,price_quality_ev * 20
+Kenan Yildiz,Tyrkiet,,63.4,3.170512,price_quality_ev * 20
+Irfan Can Kahveci,Tyrkiet,,4.7,0.234356,price_quality_ev * 20
+Hakan Calhanoglu,Tyrkiet,,12.7,0.635275,price_quality_ev * 20
+Salih Özcan,Tyrkiet,,4.7,0.23369,price_quality_ev * 20
+Xaver Schlager,Østrig,,14.2,0.707754,price_quality_ev * 20
+Alessandro Schöpf,Østrig,,1.7,0.08663,price_quality_ev * 20
+Paul Wanner,Østrig,,3.0,0.15,price_quality_ev * 20
+Toni Fruk,Kroatien,,3.3,0.164215,price_quality_ev * 20
+Mateo Kovacic,Kroatien,,10.6,0.532212,price_quality_ev * 20
+Pascal Gross,Tyskland,,11.3,0.564435,price_quality_ev * 20
+Justin Kluivert,Holland,,6.0,0.298137,price_quality_ev * 20
+Crysencio Summerville,Holland,,48.3,2.414929,price_quality_ev * 20
+Frenkie de Jong,Holland,,48.3,2.414929,price_quality_ev * 20
+Pablo Gavi,Spanien,,26.3,1.315006,price_quality_ev * 20
+Mats Wieffer,Holland,,3.0,0.15,price_quality_ev * 20
+Yeremy Pino,Spanien,,5.0,0.252121,price_quality_ev * 20
+Rodri Hernandez,Spanien,,27.3,1.366639,price_quality_ev * 20
+Fabian Ruiz,Spanien,,32.8,1.638102,price_quality_ev * 20
+Marcos Llorente,Spanien,,20.7,1.035267,price_quality_ev * 20
+Mattias Svanberg,Sverige,,9.5,0.477306,price_quality_ev * 20
+Taha Abdi Ali,Sverige,,0.6,0.0318,price_quality_ev * 20
+Lucas Bergvall,Sverige,,7.9,0.393823,price_quality_ev * 20
+Yassine Titraoui,Algeriet,,3.7,0.183476,price_quality_ev * 20
+Herman Johansson,Sverige,,6.7,0.335762,price_quality_ev * 20
+Houssem Aouar,Algeriet,,16.4,0.8205500387897596,price_quality_ev * 20
+Exequiel Palacios,Argentina,,8.0,0.399072,price_quality_ev * 20
+Nabil Bentaleb,Algeriet,,5.4,0.269788,price_quality_ev * 20
+Nico Paz,Argentina,,5.5,0.277342,price_quality_ev * 20
+Valentin Barco,Argentina,,3.0,0.15,price_quality_ev * 20
+Cristian Volpato,Australien,,11.2,0.5576637668060106,price_quality_ev * 20
+Jackson Irvine,Australien,,4.2,0.2115504066288169,price_quality_ev * 20
+Mathew Leckie,Australien,,5.1,0.256809,price_quality_ev * 20
+Lucas Paqueta,Brasilien,,12.9,0.646549,price_quality_ev * 20
+Bruno Guimaraes,Brasilien,,66.3,3.315816,price_quality_ev * 20
+Danilo dos Santos,Brasilien,,7.0,0.34929,price_quality_ev * 20
+Ibrahim Sangare,Elfenbenskysten,,4.1,0.202736,price_quality_ev * 20
+Christ Inao Oulaï,Elfenbenskysten,,5.5,0.272885,price_quality_ev * 20
+Parfait Guiagon,Elfenbenskysten,,3.0,0.15,price_quality_ev * 20
+Seko Fofana,Elfenbenskysten,,4.0,0.201552,price_quality_ev * 20
+Jean Michael Seri,Elfenbenskysten,,4.5,0.224163,price_quality_ev * 20
+Franck Kessie,Elfenbenskysten,,6.1,0.302833,price_quality_ev * 20
+Eberechi Eze,England,,7.2,0.359148,price_quality_ev * 20
+Kobbie Mainoo,England,,12.6,0.629637,price_quality_ev * 20
+Kwasi Sibo,Ghana,,12.7,0.633825,price_quality_ev * 20
+Hyun-Jun Yang,Sydkorea,,1.7,0.08663,price_quality_ev * 20
+Jens Castrop,Sydkorea,,5.1,0.256701,price_quality_ev * 20
+Ji-sung Eom,Sydkorea,,0.6,0.0318,price_quality_ev * 20
+Jun-ho Bae,Sydkorea,,6.2,0.310111,price_quality_ev * 20
+Jin-gyu Kim,Sydkorea,,8.2,0.408684,price_quality_ev * 20
+Jin-seob Park,Sydkorea,,2.8,0.138406,price_quality_ev * 20
+In-beom Hwang,Sydkorea,,11.3,0.565271,price_quality_ev * 20
+Brian Gutierrez,Mexico,,14.1,0.705719,price_quality_ev * 20
+Alvaro Fidalgo,Mexico,,28.2,1.410252,price_quality_ev * 20
+Obed Vargas,Mexico,,2.5,0.124707,price_quality_ev * 20
+Dong-gyeong Lee,Sydkorea,,10.4,0.517668,price_quality_ev * 20
+Edson Alvarez,Mexico,,5.3,0.264765,price_quality_ev * 20
+Elijah Just,New Zealand,,48.3,2.414929,price_quality_ev * 20
+Gilberto Mora,Mexico,,3.0,0.15,price_quality_ev * 20
+Luis Chavez,Mexico,,4.2,0.207707,price_quality_ev * 20
+Luis Romo,Mexico,,8.0,0.402021,price_quality_ev * 20
+Alejandro Romero Gamarra,Paraguay,,3.0,0.15,price_quality_ev * 20
+Mauricio Magalhaes Prado,Paraguay,,3.0,0.15,price_quality_ev * 20
+Sphephelo Yaya Sithole,Sydafrika,,48.3,2.414929,price_quality_ev * 20
+Matias Galarza Fonda,Paraguay,,2.0,0.099524,price_quality_ev * 20
+Federico Valverde,Uruguay,,69.3,3.465272,price_quality_ev * 20
+Rodrigo Bentancur,Uruguay,,48.3,2.414929,price_quality_ev * 20
+Themba Zwane,Sydafrika,,7.5,0.373812,price_quality_ev * 20
+Giorgian De Arrascaeta,Uruguay,,63.4,3.170512,price_quality_ev * 20
+Rodrigo Zalazar,Uruguay,,58.9,2.946328,price_quality_ev * 20
+Maxi Araujo,Uruguay,,68.1,3.407151,price_quality_ev * 20
+Agustin Canobbio,Uruguay,,5.9,0.294522,price_quality_ev * 20
+Nicolas de la Cruz,Uruguay,,9.6,0.477811,price_quality_ev * 20
+Emiliano Martinez Toranza,Uruguay,,1.9,0.096703,price_quality_ev * 20
+Giovanni Reyna,USA,,12.6,0.628135,price_quality_ev * 20
+Cristian Roldan,USA,,2.3,0.115439,price_quality_ev * 20
+Weston McKennie,USA,,13.1,0.655652,price_quality_ev * 20
+Carlos Andres Gomez,Colombia,,3.7,0.18747,price_quality_ev * 20
+Alex Zendejas,USA,,3.0,0.15,price_quality_ev * 20
+Juan Portilla,Colombia,,5.5,0.273165,price_quality_ev * 20
+Denil Castillo,Ecuador,,3.0,0.15,price_quality_ev * 20
+Amir Hadziahmetovic,Bosnien-Hercegovina,,1.3,0.0653,price_quality_ev * 20
+Ermin Mahmic,Bosnien-Hercegovina,,0.7,0.034388,price_quality_ev * 20
+Amir Mohammad Razzaghinia,Iran,,6.2,0.309716,price_quality_ev * 20
+Mehdi Ghayedi,Iran,,10.4,0.521253,price_quality_ev * 20
+Roozbeh Cheshmi,Iran,,10.4,0.517668,price_quality_ev * 20
+Nicolas Raskin,Belgien,,14.4,0.718308,price_quality_ev * 20
+Hans Vanaken,Belgien,,6.9,0.343104,price_quality_ev * 20
+Axel Witsel,Belgien,,13.8,0.688285,price_quality_ev * 20
+Ahmed Qasem,Irak,,3.0,0.15,price_quality_ev * 20
+Diego Moreira,Belgien,,0.7,0.03387,price_quality_ev * 20
+Zaid Ismail,Irak,,5.2,0.257589,price_quality_ev * 20
+Adalberto Carrasquilla,Panama,,11.8,0.592452,price_quality_ev * 20
+Alberto Quintero,Panama,,3.0,0.15,price_quality_ev * 20
+Yoel Barcenas,Panama,,9.3,0.466197,price_quality_ev * 20
+Azarias Londono,Panama,,4.8,0.240769,price_quality_ev * 20
+Jose Luis Rodriguez Francis,Panama,,10.4,0.518616,price_quality_ev * 20
+Mahmoud Trezeguet,Egypten,,48.3,2.414929,price_quality_ev * 20
+Haissem Hassan,Egypten,,4.4,0.21853,price_quality_ev * 20
+Marwan Ateya,Egypten,,24.6,1.2277912665235566,price_quality_ev * 20
+Ahmed Zizo,Egypten,,24.6,1.2280340706839563,price_quality_ev * 20
+Ayoube Amaimouni-Echghouyab,Marokko,,3.6,0.180714,price_quality_ev * 20
+Samir El Mourabet,Marokko,,3.0,0.15,price_quality_ev * 20
+Soufiane Rahimi,Marokko,,3.0,0.15,price_quality_ev * 20
+Gessime Yassine,Marokko,,3.0,0.15,price_quality_ev * 20
+Nabil 'Dunga' Emad,Egypten,,3.0,0.15,price_quality_ev * 20
+Mostafa Ziko,Egypten,,6.9,0.343879,price_quality_ev * 20
+Ayyoub Bouaddi,Marokko,,4.0,0.2008466910542068,price_quality_ev * 20
+Mortadha Ben Ouanes,Tunesien,,1.0,0.051619,price_quality_ev * 20
+Khalil Ayari,Tunesien,,3.0,0.152193,price_quality_ev * 20
+Rani Khedira,Tunesien,,13.0,0.650322,price_quality_ev * 20
+Anis Ben Slimane,Tunesien,,8.4,0.417792,price_quality_ev * 20
+Ayman Yahya Salem,Saudi-Arabien,,6.5,0.327018,price_quality_ev * 20
+Musab Al-Juwayr,Saudi-Arabien,,10.4,0.518069,price_quality_ev * 20
+Nasser Al-Dawsari,Saudi-Arabien,,6.7,0.337318,price_quality_ev * 20
+Abdullah Al-Khaibari,Saudi-Arabien,,6.8,0.339201,price_quality_ev * 20
+Mohamed Kanno,Saudi-Arabien,,48.3,2.414929,price_quality_ev * 20
+Salem Al-Dawsari,Saudi-Arabien,,10.5,0.524604,price_quality_ev * 20
+Khalid Al-Ghannam,Saudi-Arabien,,3.0,0.15,price_quality_ev * 20
+Abdulaziz Hatim Mohammed,Qatar,,4.3,0.215696,price_quality_ev * 20
+Jassem Gaber,Qatar,,4.3,0.216039,price_quality_ev * 20
+Mohamed Al-Mannai,Qatar,,7.9,0.397173,price_quality_ev * 20
+Ben Doak,Skotland,,48.3,2.414929,price_quality_ev * 20
+Lewis Ferguson,Skotland,,8.3,0.417492,price_quality_ev * 20
+Marcelo Flores,Canada,,6.9,0.342992,price_quality_ev * 20
+Jonathan Osorio,Canada,,8.2,0.408468,price_quality_ev * 20
+Liam Millar,Canada,,48.3,2.414929,price_quality_ev * 20
+Dostonbek Khamdamov,Usbekistan,,1.0,0.049622,price_quality_ev * 20
+Rajaei Ayed,Jordan,,3.0,0.15,price_quality_ev * 20
+Odildzhon Khamrobekov,Usbekistan,,28.2,1.410252,price_quality_ev * 20
+Jamshid Iskanderov,Usbekistan,,0.7,0.033353,price_quality_ev * 20
+Abbosbek Fayzullaev,Usbekistan,,28.2,1.410252,price_quality_ev * 20
+Jaloliddin Masharipov,Usbekistan,,28.2,1.410252,price_quality_ev * 20
+Stephen Eustaquio,Canada,,28.2,1.410252,price_quality_ev * 20
+Kevin Lenini Pina,Kap Verde,,6.0,0.301155,price_quality_ev * 20
+Yannick Semedo,Kap Verde,,4.4,0.222309,price_quality_ev * 20
+Mohammad Al-Dawoud,Jordan,,0.6,0.0318,price_quality_ev * 20
+Mousa Tamari,Jordan,,48.3,2.414929,price_quality_ev * 20
+Kristian Thorstvedt,Norge,,4.4,0.222375,price_quality_ev * 20
+Jens Petter Hauge,Norge,,1.7,0.08663,price_quality_ev * 20
+Tahith Chong,Curaçao,,7.2,0.361545,price_quality_ev * 20
+Dominique Simon,Haiti,,6.9,0.343879,price_quality_ev * 20
+Carl Sainte,Haiti,,1.0,0.049992,price_quality_ev * 20
+Jean-Ricner Bellegarde,Haiti,,48.3,2.414929,price_quality_ev * 20
+Simon Banza,Congo DR,,2.6,0.127908,price_quality_ev * 20
+Wilson Isidor,Haiti,,47.7,2.385888,price_quality_ev * 20
+Don Deedson Louicius,Haiti,,4.5,0.225745,price_quality_ev * 20
+Yoane Wissa,Congo DR,,61.4,3.072063,price_quality_ev * 20
+Derrick Etienne Jr.,Haiti,,1.6,0.08134,price_quality_ev * 20
+Josue Casimir,Haiti,,8.1,0.404256,price_quality_ev * 20
+Yassin Fortune,Haiti,,1.3,0.062861,price_quality_ev * 20
+Sontje Hansen,Curaçao,,5.0,0.249879,price_quality_ev * 20
+Garry Mendes Rodrigues,Kap Verde,,5.0,0.250159,price_quality_ev * 20
+Gilson Benchimol Tavares,Kap Verde,,2.6,0.128112,price_quality_ev * 20
+Ryan Mendes Da Graça,Kap Verde,,47.7,2.385888,price_quality_ev * 20
+Nuno da Costa,Kap Verde,,3.0,0.15,price_quality_ev * 20
+Ali Olwan,Jordan,,61.4,3.072063,price_quality_ev * 20
+Cyle Christopher Larin,Canada,,12.8,0.637716,price_quality_ev * 20
+George Hirst,Skotland,,7.9,0.395394,price_quality_ev * 20
+Lawrence Shankland,Skotland,,6.6,0.330957,price_quality_ev * 20
+Ross Stewart,Skotland,,0.6,0.029845,price_quality_ev * 20
+Yusuf Abdurisag,Qatar,,3.0,0.15,price_quality_ev * 20
+Ahmed Alaaeldin Abdelmotaal,Qatar,,3.0,0.15,price_quality_ev * 20
+Almoez Ali,Qatar,,6.9,0.346314,price_quality_ev * 20
+Sultan Mandash,Saudi-Arabien,,3.0,0.15,price_quality_ev * 20
+Abdullah Al-Hamdan,Saudi-Arabien,,5.5,0.274456,price_quality_ev * 20
+Rayan Elloumi,Tunesien,,1.1,0.052732,price_quality_ev * 20
+Pape Cherif Ndiaye,Senegal,,3.0,0.15,price_quality_ev * 20
+Hamza Abdelkarim,Egypten,,0.7,0.035954,price_quality_ev * 20
+Jose Fajardo,Panama,,9.5,0.476286,price_quality_ev * 20
+Cecilio Waterman,Panama,,8.1,0.405697,price_quality_ev * 20
+Tomas Rodriguez,Panama,,3.0,0.15,price_quality_ev * 20
+Aymen Hussein,Irak,,5.8,0.288446,price_quality_ev * 20
+Mohanad Ali,Irak,,6.5,0.327286,price_quality_ev * 20
+Alexis Saelemaekers,Belgien,,7.9,0.393756,price_quality_ev * 20
+Shahriar Moghanlou,Iran,,4.1,0.20598,price_quality_ev * 20
+Dennis 'Dargahi' Eckert Ayensa,Iran,,3.0,0.15,price_quality_ev * 20
+Mohammad Mohebi,Iran,,47.7,2.385888,price_quality_ev * 20
+Edin Dzeko,Bosnien-Hercegovina,,11.9,0.594064,price_quality_ev * 20
+Jovo Lukic,Bosnien-Hercegovina,,5.1,0.252814159882557,price_quality_ev * 20
+Ermedin Demirovic,Bosnien-Hercegovina,,10.3,0.517353,price_quality_ev * 20
+Jordy Caicedo,Ecuador,,3.1,0.152913,price_quality_ev * 20
+Nilson Angulo,Ecuador,,6.3,0.3163085064935065,price_quality_ev * 20
+Juan 'Cucho' Hernandez,Colombia,,11.1,0.552519,price_quality_ev * 20
+Luis Suarez Charris,Colombia,,9.6,0.481861,price_quality_ev * 20
+Anthony Valencia,Ecuador,,4.8,0.237836,price_quality_ev * 20
+Haji Wright,USA,,3.0,0.15,price_quality_ev * 20
+Christian Pulisic,USA,,71.2,3.562187,price_quality_ev * 20
+Timothy Weah,USA,,12.4,0.617979,price_quality_ev * 20
+Ricardo Pepi,USA,,8.7,0.436371,price_quality_ev * 20
+Folarin Balogun,USA,,13.4,0.669093,price_quality_ev * 20
+Darwin Nunez,Uruguay,,25.7,1.2847242723361174,price_quality_ev * 20
+Facundo Pellistri,Uruguay,,14.5,0.724449,price_quality_ev * 20
+Gabriel Avalos,Paraguay,,4.5,0.226702,price_quality_ev * 20
+Armando Gonzalez,Mexico,,9.3,0.463488,price_quality_ev * 20
+Guillermo Martínez,Mexico,,3.8,0.189898,price_quality_ev * 20
+Kento Shiogai,Japan,,1.9,0.095575,price_quality_ev * 20
+Prince Adu,Ghana,,10.8,0.541239,price_quality_ev * 20
+Christopher Bonsu Baah,Ghana,,2.1,0.106963,price_quality_ev * 20
+Kamaldeen Sulemana,Ghana,,8.8,0.438191,price_quality_ev * 20
+Ernest Nuamah,Ghana,,3.0,0.15,price_quality_ev * 20
+Evann Guessand,Elfenbenskysten,,5.1,0.256485,price_quality_ev * 20
+Nicolas Pepe,Elfenbenskysten,,3.3,0.165623,price_quality_ev * 20
+Amad Diallo,Elfenbenskysten,,4.1,0.20546,price_quality_ev * 20
+Simon Adingra,Elfenbenskysten,,4.8,0.237839,price_quality_ev * 20
+Ivan Toney,England,,3.6,0.179853,price_quality_ev * 20
+Oumar Diakite,Elfenbenskysten,,4.0,0.198593,price_quality_ev * 20
+Elye Wahi,Elfenbenskysten,,3.6,0.1777159199237369,price_quality_ev * 20
+Bazoumana Toure,Elfenbenskysten,,3.0,0.15,price_quality_ev * 20
+Yan Diomande,Elfenbenskysten,,47.7,2.385888,price_quality_ev * 20
+Rayan,Brasilien,,10.9,0.544221,price_quality_ev * 20
+Igor Thiago,Brasilien,,12.5,0.6266345177664975,price_quality_ev * 20
+Endrick,Brasilien,,8.1,0.4067019867549669,price_quality_ev * 20
+Raphinha,Brasilien,,92.4,4.620717302325581,price_quality_ev * 20
+Neymar Jr.,Brasilien,,4.8,0.2396622379190492,price_quality_ev * 20
+Awer Mabil,Australien,,4.4,0.221753,price_quality_ev * 20
+Mohamed Toure,Australien,,7.7,0.386419,price_quality_ev * 20
+Tete Yengi,Australien,,10.8,0.541239,price_quality_ev * 20
+Nishan Velupillay,Australien,,1.9,0.093745,price_quality_ev * 20
+Nico Gonzalez,Argentina,,10.9,0.542898,price_quality_ev * 20
+Amine Gouiri,Algeriet,,26.7,1.335052971897538,price_quality_ev * 20
+Ahmed Nadhir Benbouali,Algeriet,,0.7,0.03634,price_quality_ev * 20
+Fares Ghedjemis,Algeriet,,0.7,0.03634,price_quality_ev * 20
+Viktor Gyökeres,Sverige,,88.5,4.426588,price_quality_ev * 20
+Borja Iglesias,Spanien,,15.0,0.747903,price_quality_ev * 20
+Victor Munoz,Spanien,,2.9,0.144517,price_quality_ev * 20
+Memphis Depay,Holland,,12.5,0.627227,price_quality_ev * 20
+Maghnes Akliouche,Frankrig,,12.8,0.6410162671232877,price_quality_ev * 20
+Petar Musa,Kroatien,,6.6,0.329228,price_quality_ev * 20
+Marco Pasalic,Kroatien,,3.0,0.15,price_quality_ev * 20
+Yunus Akgün,Tyrkiet,,8.4,0.421741,price_quality_ev * 20
+Baris Alper Yilmaz,Tyrkiet,,13.3,0.663701,price_quality_ev * 20
+Can Uzun,Tyrkiet,,3.0,0.15,price_quality_ev * 20
+Tomas Chory,Tjekkiet,,5.7,0.28404,price_quality_ev * 20
+Patrik Schick,Tjekkiet,,77.7,3.882995,price_quality_ev * 20
+Mojmir Chytil,Tjekkiet,,6.0,0.300075,price_quality_ev * 20
+Adam Hlozek,Tjekkiet,,3.1,0.15402,price_quality_ev * 20
+Mohamed Zeki Amdouni,Schweiz,,17.1,0.855515,price_quality_ev * 20
+Christian Fassnacht,Schweiz,,2.9,0.146562,price_quality_ev * 20
+Cedric Itten,Schweiz,,0.7,0.033248,price_quality_ev * 20
