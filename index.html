@@ -1969,6 +1969,107 @@
 }
 /* ALT_LIST_LAYOUT_FIX_END */
 
+
+/* SAFE_PLAYER_FIXTURE_TOOLTIP_CSS_START */
+.vm-fixture-tooltip {
+  position: fixed;
+  z-index: 99999;
+  width: 330px;
+  max-width: calc(100vw - 24px);
+  border-radius: 13px;
+  overflow: hidden;
+  background: #111827;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  box-shadow: 0 18px 38px rgba(0,0,0,0.42);
+  color: #f9fafb;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 120ms ease, transform 120ms ease;
+}
+
+.vm-fixture-tooltip.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.vm-fixture-tooltip-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 11px 13px;
+  font-size: 15px;
+  font-weight: 900;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+.vm-fixture-tooltip-source {
+  font-size: 10px;
+  color: #cbd5e1;
+  align-self: center;
+}
+
+.vm-fixture-tooltip table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.vm-fixture-tooltip th {
+  padding: 8px 7px 6px;
+  color: #aeb7c5;
+  font-size: 10px;
+  text-align: center;
+}
+
+.vm-fixture-tooltip th:first-child {
+  text-align: left;
+  padding-left: 13px;
+}
+
+.vm-fixture-tooltip td {
+  padding: 9px 7px;
+  border-top: 1px solid rgba(148, 163, 184, 0.14);
+  font-size: 12px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.vm-fixture-tooltip-opponent {
+  text-align: left !important;
+  padding-left: 13px !important;
+  max-width: 128px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.vm-fixture-tooltip-date {
+  display: block;
+  margin-top: 2px;
+  font-size: 9px;
+  color: #94a3b8;
+  font-weight: 700;
+}
+
+.vm-fixture-tooltip-win {
+  color: #86efac;
+}
+
+.vm-fixture-tooltip-draw {
+  color: #e5e7eb;
+}
+
+.vm-fixture-tooltip-loss {
+  color: #f87171;
+}
+
+.vm-fixture-tooltip-empty {
+  padding: 12px 13px;
+  font-size: 12px;
+  color: #cbd5e1;
+}
+/* SAFE_PLAYER_FIXTURE_TOOLTIP_CSS_END */
+
 </style>
 
 </head>
@@ -5743,7 +5844,414 @@ function renderTradeList() {
     }
 
     init();
-  </script>
+  
+/* SAFE_PLAYER_FIXTURE_TOOLTIP_JS_START */
+(function () {
+  try {
+    var tooltipEl = null;
+    var oddsPromise = null;
+    var oddsByTeamPair = null;
+    var activeCard = null;
+    var hideTimer = null;
+
+    function q(selector, root) {
+      return (root || document).querySelector(selector);
+    }
+
+    function esc(value) {
+      return String(value == null ? "" : value)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function csvLine(line) {
+      var out = [];
+      var cur = "";
+      var quoted = false;
+
+      for (var i = 0; i < line.length; i += 1) {
+        var ch = line[i];
+        var next = line[i + 1];
+
+        if (ch === '"' && next === '"') {
+          cur += '"';
+          i += 1;
+        } else if (ch === '"') {
+          quoted = !quoted;
+        } else if (ch === "," && !quoted) {
+          out.push(cur);
+          cur = "";
+        } else {
+          cur += ch;
+        }
+      }
+
+      out.push(cur);
+      return out;
+    }
+
+    function parseCsv(raw) {
+      var lines = String(raw || "").split(/\r?\n/).filter(function (line) {
+        return line.trim();
+      });
+
+      if (!lines.length) return [];
+
+      var headers = csvLine(lines[0]).map(function (h) {
+        return String(h || "").replace(/^\uFEFF/, "").trim();
+      });
+
+      return lines.slice(1).map(function (line) {
+        var values = csvLine(line);
+        var row = {};
+        headers.forEach(function (h, i) {
+          row[h] = values[i] == null ? "" : values[i];
+        });
+        return row;
+      });
+    }
+
+    function asNumber(value) {
+      var n = Number(String(value || "").replace(",", "."));
+      return Number.isFinite(n) ? n : null;
+    }
+
+    function fmtOdds(value) {
+      var n = asNumber(value);
+      if (!Number.isFinite(n) || n <= 0) return "-";
+      return n.toFixed(2).replace(".", ",");
+    }
+
+    function fmtDate(value) {
+      var raw = String(value || "");
+      if (!raw) return "";
+      var d = new Date(raw.replace(" ", "T"));
+      if (!Number.isFinite(d.getTime())) return raw;
+
+      return d.toLocaleString("da-DK", {
+        day: "2-digit",
+        month: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit"
+      }).replace(",", "");
+    }
+
+    function isFuture(value) {
+      var raw = String(value || "");
+      if (!raw) return true;
+      var d = new Date(raw.replace(" ", "T"));
+      if (!Number.isFinite(d.getTime())) return true;
+      return d.getTime() > Date.now();
+    }
+
+    function teamName(teamId) {
+      if (typeof teamDisplayName === "function") {
+        return teamDisplayName(teamId, teamId);
+      }
+      return teamId;
+    }
+
+    function getPlayer(playerId) {
+      if (!playerId) return null;
+
+      if (typeof getPlayerById === "function") {
+        var found = getPlayerById(playerId);
+        if (found) return found;
+      }
+
+      if (typeof allPlayers !== "undefined" && Array.isArray(allPlayers)) {
+        return allPlayers.find(function (p) {
+          return String(p.player_id) === String(playerId);
+        }) || null;
+      }
+
+      return null;
+    }
+
+    function normalize(value) {
+      if (typeof normalizeName === "function") return normalizeName(value || "");
+      return String(value || "").toLowerCase();
+    }
+
+    function getSquadPlayers() {
+      if (typeof squad === "undefined" || !squad) return [];
+      return Object.values(squad)
+        .map(getPlayer)
+        .filter(Boolean);
+    }
+
+    async function getOdds() {
+      if (oddsByTeamPair) return oddsByTeamPair;
+
+      if (!oddsPromise) {
+        oddsPromise = fetch("data/match_odds.csv", { cache: "no-store" })
+          .then(function (res) {
+            if (!res.ok) throw new Error("match_odds.csv " + res.status);
+            return res.text();
+          })
+          .then(parseCsv)
+          .catch(function (err) {
+            console.warn("Tooltip odds kunne ikke hentes", err);
+            return [];
+          });
+      }
+
+      var rows = await oddsPromise;
+      var grouped = {};
+
+      rows.forEach(function (row) {
+        var id = String(row.match_id || "").trim();
+        if (!id) return;
+        if (!grouped[id]) grouped[id] = [];
+        grouped[id].push(row);
+      });
+
+      oddsByTeamPair = new Map();
+
+      Object.keys(grouped).forEach(function (id) {
+        var rowsForMatch = grouped[id];
+        var selected = rowsForMatch.find(function (r) {
+          return String(r.source || "").toLowerCase() === "unibet";
+        }) || rowsForMatch[0];
+
+        var home = String(selected.home || "").toUpperCase();
+        var away = String(selected.away || "").toUpperCase();
+
+        if (!home || !away) return;
+
+        var entry = {
+          home: home,
+          away: away,
+          kickoff: selected.kickoff_dk || "",
+          h: selected.home_win_odds,
+          x: selected.draw_odds,
+          a: selected.away_win_odds,
+          source: selected.source || "odds"
+        };
+
+        oddsByTeamPair.set(home + "|" + away, entry);
+        oddsByTeamPair.set(away + "|" + home, entry);
+      });
+
+      return oddsByTeamPair;
+    }
+
+    function findCard(target) {
+      return target.closest(
+        "[data-player-id], [data-slot-key], .player-card, .pitch-player, .pitch-player-card, .field-player, .formation-player, .slot-card, .squad-player, .player-token, .pitch-slot"
+      );
+    }
+
+    function findPlayer(target) {
+      if (!target || target.closest(".right-panel")) return null;
+
+      var direct = target.closest("[data-player-id]");
+      if (direct && direct.dataset.playerId) {
+        var directPlayer = getPlayer(direct.dataset.playerId);
+        if (directPlayer) return directPlayer;
+      }
+
+      var slot = target.closest("[data-slot-key]");
+      if (slot && slot.dataset.slotKey && typeof squad !== "undefined" && squad[slot.dataset.slotKey]) {
+        var slotPlayer = getPlayer(squad[slot.dataset.slotKey]);
+        if (slotPlayer) return slotPlayer;
+      }
+
+      var card = findCard(target);
+      if (!card) return null;
+
+      var removeBtn = card.querySelector("[data-action='remove'][data-slot-key], [data-action='replace'][data-slot-key]");
+      if (removeBtn && removeBtn.dataset.slotKey && typeof squad !== "undefined" && squad[removeBtn.dataset.slotKey]) {
+        var btnPlayer = getPlayer(squad[removeBtn.dataset.slotKey]);
+        if (btnPlayer) return btnPlayer;
+      }
+
+      var txt = normalize(card.textContent || "");
+      return getSquadPlayers().find(function (p) {
+        return txt.indexOf(normalize(p.player_name || "")) >= 0;
+      }) || null;
+    }
+
+    async function fixturesFor(player) {
+      var odds = await getOdds();
+      var team = String(player.team_id || "").toUpperCase();
+      var out = [];
+
+      [1, 2, 3].forEach(function (roundNo) {
+        var opponent = String(
+          player["match_" + roundNo + "_opponent_team"] ||
+          player["round" + roundNo + "_opponent_team"] ||
+          ""
+        ).toUpperCase();
+
+        if (!opponent || opponent === "0") return;
+
+        var row = odds.get(team + "|" + opponent);
+        var kickoff = String(
+          player["match_" + roundNo + "_kickoff_dk"] ||
+          player["round" + roundNo + "_kickoff_dk"] ||
+          (row ? row.kickoff : "") ||
+          ""
+        );
+
+        if (!isFuture(kickoff)) return;
+
+        var win = null;
+        var draw = null;
+        var loss = null;
+
+        if (row) {
+          if (row.home === team) {
+            win = row.h;
+            draw = row.x;
+            loss = row.a;
+          } else if (row.away === team) {
+            win = row.a;
+            draw = row.x;
+            loss = row.h;
+          }
+        }
+
+        out.push({
+          opponent: opponent,
+          opponentName: teamName(opponent),
+          kickoff: kickoff,
+          win: win,
+          draw: draw,
+          loss: loss,
+          source: row ? row.source : ""
+        });
+      });
+
+      return out.slice(0, 3);
+    }
+
+    function ensureTooltip() {
+      if (tooltipEl) return tooltipEl;
+      tooltipEl = document.createElement("div");
+      tooltipEl.className = "vm-fixture-tooltip";
+      tooltipEl.hidden = true;
+      document.body.appendChild(tooltipEl);
+      return tooltipEl;
+    }
+
+    function placeTooltip(card) {
+      var el = ensureTooltip();
+      var rect = card.getBoundingClientRect();
+      var gap = 10;
+
+      var left = rect.right + gap;
+      var top = rect.top + rect.height / 2 - el.offsetHeight / 2;
+
+      if (left + el.offsetWidth > window.innerWidth - 12) {
+        left = rect.left - el.offsetWidth - gap;
+      }
+
+      left = Math.max(12, Math.min(left, window.innerWidth - el.offsetWidth - 12));
+      top = Math.max(12, Math.min(top, window.innerHeight - el.offsetHeight - 12));
+
+      el.style.left = Math.round(left) + "px";
+      el.style.top = Math.round(top) + "px";
+    }
+
+    function html(player, fixtures) {
+      var title = fixtures.length === 1 ? "N\u00e6ste kamp" : "N\u00e6ste " + fixtures.length + " kampe";
+      var source = fixtures.find(function (f) { return f.source; });
+      var sourceText = source ? source.source : "odds";
+
+      if (!fixtures.length) {
+        return '<div class="vm-fixture-tooltip-head"><span>Ingen kommende kampe</span></div>' +
+          '<div class="vm-fixture-tooltip-empty">Ingen kommende gruppekampe fundet.</div>';
+      }
+
+      var rows = fixtures.map(function (f) {
+        return "<tr>" +
+          '<td class="vm-fixture-tooltip-opponent">' +
+            esc(f.opponentName) +
+            '<span class="vm-fixture-tooltip-date">' + esc(fmtDate(f.kickoff)) + "</span>" +
+          "</td>" +
+          '<td class="vm-fixture-tooltip-win">' + esc(fmtOdds(f.win)) + "</td>" +
+          '<td class="vm-fixture-tooltip-draw">' + esc(fmtOdds(f.draw)) + "</td>" +
+          '<td class="vm-fixture-tooltip-loss">' + esc(fmtOdds(f.loss)) + "</td>" +
+        "</tr>";
+      }).join("");
+
+      return '<div class="vm-fixture-tooltip-head">' +
+          "<span>" + title + "</span>" +
+          '<span class="vm-fixture-tooltip-source">' + esc(sourceText) + "</span>" +
+        "</div>" +
+        "<table>" +
+          "<thead><tr><th>Modstander</th><th>Sejr</th><th>U</th><th>Tab</th></tr></thead>" +
+          "<tbody>" + rows + "</tbody>" +
+        "</table>";
+    }
+
+    async function show(target) {
+      var player = findPlayer(target);
+      var card = findCard(target);
+      if (!player || !card) return;
+
+      activeCard = card;
+      window.clearTimeout(hideTimer);
+
+      var el = ensureTooltip();
+      el.hidden = false;
+      el.innerHTML = '<div class="vm-fixture-tooltip-head"><span>Henter kampe...</span></div>';
+      el.classList.add("is-visible");
+      placeTooltip(card);
+
+      var fixtures = await fixturesFor(player);
+      if (activeCard !== card) return;
+
+      el.innerHTML = html(player, fixtures);
+      placeTooltip(card);
+    }
+
+    function hide() {
+      activeCard = null;
+      if (!tooltipEl) return;
+
+      tooltipEl.classList.remove("is-visible");
+      hideTimer = window.setTimeout(function () {
+        if (tooltipEl && !tooltipEl.classList.contains("is-visible")) {
+          tooltipEl.hidden = true;
+        }
+      }, 140);
+    }
+
+    document.addEventListener("mouseover", function (event) {
+      try {
+        var card = findCard(event.target);
+        if (!card || activeCard === card) return;
+        if (!findPlayer(event.target)) return;
+        show(event.target);
+      } catch (err) {
+        console.warn("Tooltip mouseover fejl", err);
+      }
+    });
+
+    document.addEventListener("mouseout", function (event) {
+      try {
+        if (!activeCard) return;
+        if (event.relatedTarget && activeCard.contains(event.relatedTarget)) return;
+        if (!activeCard.contains(event.target)) return;
+        hide();
+      } catch (err) {
+        hide();
+      }
+    });
+
+    document.addEventListener("scroll", hide, true);
+    window.addEventListener("resize", hide);
+  } catch (err) {
+    console.warn("Safe tooltip kunne ikke initialiseres", err);
+  }
+}());
+/* SAFE_PLAYER_FIXTURE_TOOLTIP_JS_END */
+
+</script>
 
 </body>
 </html>
