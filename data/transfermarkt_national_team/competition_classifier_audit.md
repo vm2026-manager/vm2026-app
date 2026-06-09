@@ -10,46 +10,46 @@ Derudover blev historiske to-cifrede årstal som `62` fortolket som 2062. Det sk
 
 | kategori | før | efter |
 | --- | --- | --- |
-| Kvalifikation | 0 | 31483 |
-| Nations League | 0 | 6739 |
-| Nations League-slutrunde | 0 | 1756 |
-| Slutrunde | 0 | 19043 |
+| Kvalifikation | 0 | 31716 |
+| Nations League | 0 | 6803 |
+| Nations League-slutrunde | 0 | 1780 |
+| Slutrunde | 0 | 19163 |
 | Ukendt | 82245 | 0 |
 | Ungdomskvalifikation | 0 | 19 |
 | Ungdomsslutrunde | 0 | 94 |
-| Venskabskamp | 0 | 30055 |
+| Venskabskamp | 0 | 30448 |
 | Øvrig turnering | 0 | 30 |
 
-- Ukendt før: 82245/89219 (92.18%)
-- Ukendt efter: 0/89219 (0.00%)
+- Ukendt før: 82245/90053 (91.33%)
+- Ukendt efter: 0/90053 (0.00%)
 
 ## Konkurrencekoder
 
 | kode | rækker | kategori | mapping |
 | --- | --- | --- | --- |
-| FS | 30055 | Venskabskamp | International friendly |
+| FS | 30448 | Venskabskamp | International friendly |
 | WMQ1 | 6149 | Kvalifikation | World Cup qualification, AFC |
-| WMQ6 | 5958 | Kvalifikation | World Cup qualification, UEFA |
-| WMQ4 | 4950 | Kvalifikation | World Cup qualification, CONMEBOL |
-| EMQ | 4217 | Kvalifikation | European Championship qualification |
-| UNLA | 3504 | Nations League | UEFA Nations League A |
-| WMQ2 | 3403 | Kvalifikation | World Cup qualification, CAF |
-| AFCQ | 3208 | Kvalifikation | Africa Cup of Nations qualification |
-| FIWC | 2922 | Slutrunde | FIFA World Cup |
-| AFCN | 2870 | Slutrunde | Africa Cup of Nations |
-| EURO | 2520 | Slutrunde | UEFA European Championship |
+| WMQ6 | 6048 | Kvalifikation | World Cup qualification, UEFA |
+| WMQ4 | 4984 | Kvalifikation | World Cup qualification, CONMEBOL |
+| EMQ | 4254 | Kvalifikation | European Championship qualification |
+| UNLA | 3557 | Nations League | UEFA Nations League A |
+| WMQ2 | 3437 | Kvalifikation | World Cup qualification, CAF |
+| AFCQ | 3244 | Kvalifikation | Africa Cup of Nations qualification |
+| FIWC | 2944 | Slutrunde | FIFA World Cup |
+| AFCN | 2910 | Slutrunde | Africa Cup of Nations |
+| EURO | 2551 | Slutrunde | UEFA European Championship |
 | WMQ3 | 2318 | Kvalifikation | World Cup qualification, CONCACAF |
 | GOCU | 2259 | Slutrunde | CONCACAF Gold Cup |
-| COPA | 2089 | Slutrunde | Copa America |
+| COPA | 2099 | Slutrunde | Copa America |
 | AFAC | 1568 | Slutrunde | AFC Asian Cup |
-| UNLB | 1539 | Nations League | UEFA Nations League B |
-| ARCP | 1432 | Slutrunde | FIFA Arab Cup |
+| UNLB | 1550 | Nations League | UEFA Nations League B |
+| ARCP | 1447 | Slutrunde | FIFA Arab Cup |
 | CHAN | 1197 | Slutrunde | African Nations Championship |
 | CNNF | 950 | Nations League-slutrunde | CONCACAF Nations League finals |
+| UNFI | 830 | Nations League-slutrunde | UEFA Nations League finals |
 | CNLA | 823 | Nations League | CONCACAF Nations League A |
-| UNFI | 806 | Nations League-slutrunde | UEFA Nations League finals |
 | AGUC | 669 | Slutrunde | Regional senior Gold Cup |
-| POWM | 545 | Kvalifikation | World Cup qualification play-off |
+| POWM | 547 | Kvalifikation | World Cup qualification play-off |
 | EAFC | 426 | Slutrunde | EAFF Championship |
 | CAFA | 339 | Slutrunde | CAFA Nations Cup |
 | WMQ5 | 331 | Kvalifikation | World Cup qualification, OFC |
@@ -63,8 +63,8 @@ Derudover blev historiske to-cifrede årstal som `62` fortolket som 2062. Det sk
 | CENC | 104 | Slutrunde | Central American Championship |
 | OFCN | 96 | Slutrunde | OFC Nations Cup |
 | CNLQ | 76 | Nations League | CONCACAF Nations League qualification |
+| AFT | 71 | Slutrunde | Regional senior national-team tournament |
 | POEM | 71 | Kvalifikation | European qualification play-off |
-| AFT | 69 | Slutrunde | Regional senior national-team tournament |
 | CARQ | 43 | Kvalifikation | Caribbean / CONCACAF qualification |
 | GCQU | 35 | Kvalifikation | Gold Cup qualification |
 | TRIN | 30 | Øvrig turnering | Tri-nation / invitational tournament |
@@ -91,8 +91,8 @@ Derudover blev historiske to-cifrede årstal som `62` fortolket som 2062. Det sk
 ## Antonio Rüdiger
 
 - Recency/startsignal før: 0.5
-- Recency/startsignal efter: 0.2008
-- Fuld recency-historik efter: 0.6695
+- Recency/startsignal efter: 0.2006
+- Fuld recency-historik efter: 0.6686
 - Tre seneste tilgængelige observationer: 0.0
 - Endeligt recency/startsignal = 70% seneste tre tilgængelige observationer + 30% fuld recency-/konkurrencehistorik.
 - `injured` er udelukket fra udvælgelsesnævneren. `in squad` uden minutter er en tilgængelig nul-start-observation.
@@ -114,8 +114,8 @@ Derudover blev historiske to-cifrede årstal som `62` fortolket som 2062. Det sk
 
 | spiller | dato | kode | kategori | status | start | recency_score |
 | --- | --- | --- | --- | --- | --- | --- |
-| Cristian Romero | 07/06/26 | FS | Venskabskamp | played | False | 0.6761 |
-| Nicolas Otamendi | 07/06/26 | FS | Venskabskamp | played | True | 0.6617 |
-| Thiago Almada | 07/06/26 | FS | Venskabskamp | played | True | 0.7891 |
-| Nicolas Tagliafico | 07/06/26 | FS | Venskabskamp | played | True | 0.6659 |
-| Alexis Mac Allister | 07/06/26 | FS | Venskabskamp | played | False | 0.6268 |
+| Rodri Hernandez | 09/06/26 | FS | Venskabskamp | played | True | 0.3928 |
+| Yeremy Pino | 09/06/26 | FS | Venskabskamp | played | False | 0.0367 |
+| Marc Pubill | 09/06/26 | FS | Venskabskamp | played | False | 0 |
+| Ferran Torres | 09/06/26 | FS | Venskabskamp | played | True | 0.8168 |
+| Marcos Llorente | 09/06/26 | FS | Venskabskamp | played | True | 0.2865 |

@@ -1,0 +1,5 @@
+﻿pool_name,team_name,pool_position,position,pool_is_out,is_out,match_type
+Jurrien Timber,Holland,DEF,DEF,False,True,holdet_player_id
+Leonardo Balerdi,Argentina,DEF,DEF,False,True,holdet_player_id
+Moustapha Mbow,Senegal,DEF,DEF,False,True,holdet_player_id
+Pape Alassane Gueye,Senegal,MID,MID,True,False,holdet_player_id

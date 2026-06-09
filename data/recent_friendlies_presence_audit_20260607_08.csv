@@ -1,0 +1,15 @@
+﻿team_id,team_name_da,date,opponent,score,likely_already_in_local_data,combined_hit_files,team_hit_files_count,date_hit_files_count,opponent_hit_files_count
+TUR,Tyrkiet,2026-06-07,Venezuela,2-1,NO,,14,0,0
+BRA,Brasilien,2026-06-07,Egypten,2-1,NO,,14,0,0
+EGY,Egypten,2026-06-07,Brasilien,1-2,NO,,14,0,0
+ARG,Argentina,2026-06-07,Honduras,2-0,NO,,14,0,0
+CRO,Kroatien,2026-06-07,Slovenien,2-1,NO,,13,0,0
+MAR,Marokko,2026-06-07,Norge,1-1,NO,,14,0,0
+NOR,Norge,2026-06-07,Marokko,1-1,NO,,14,0,0
+ECU,Ecuador,2026-06-07,Guatemala,3-0,NO,,14,0,0
+COL,Colombia,2026-06-08,Jordan,2-0,NO,,14,0,3
+JOR,Jordan,2026-06-08,Colombia,0-2,NO,,3,0,11
+NED,Holland,2026-06-08,Usbekistan,2-1,NO,,14,0,0
+UZB,Usbekistan,2026-06-08,Holland,1-2,NO,,3,0,0
+FRA,Frankrig,2026-06-08,Nordirland,3-1,NO,,14,0,0
+ESP,Spanien,2026-06-08,,,NO,,14,0,0
