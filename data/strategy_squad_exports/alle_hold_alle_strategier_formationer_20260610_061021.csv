@@ -1,0 +1,83 @@
+﻿Kilde,Strategi,Formation,Score,Nr,Pos,Spiller,Land,Pris,Start,EV,player_id
+optimal_squads_by_formation.json,Standard,3-4-3,,1,Mål,Mike Maignan,Frankrig,"5,0 mio.",82%,3.265,mike_maignan__fra
+optimal_squads_by_formation.json,Standard,3-4-3,,2,For,Gonzalo Montiel,Argentina,"3,5 mio.",55%,0.381,gonzalo_montiel__arg
+optimal_squads_by_formation.json,Standard,3-4-3,,3,For,Lucas Digne,Frankrig,"3,5 mio.",32%,0.706,lucas_digne__fra
+optimal_squads_by_formation.json,Standard,3-4-3,,4,For,Renato Veiga,Portugal,"3,5 mio.",58%,0.453,renato_veiga__por
+optimal_squads_by_formation.json,Standard,3-4-3,,5,Mid,Alex Baena,Spanien,"3,5 mio.",52%,0.647,alex_baena__esp
+optimal_squads_by_formation.json,Standard,3-4-3,,6,Mid,Casemiro,Brasilien,"4,5 mio.",83%,2.358,casemiro__bra
+optimal_squads_by_formation.json,Standard,3-4-3,,7,Mid,Manu Koné,Frankrig,"3,5 mio.",38%,1.4,manu_kon__fra
+optimal_squads_by_formation.json,Standard,3-4-3,,8,Mid,Martin Zubimendi,Spanien,"3,5 mio.",34%,1.717,mart_n_zubimendi__esp
+optimal_squads_by_formation.json,Standard,3-4-3,,9,Ang,Mikel Oyarzabal,Spanien,"7,5 mio.",88%,2.219,mikel_oyarzabal__esp
+optimal_squads_by_formation.json,Standard,3-4-3,,10,Ang,Nico Williams,Spanien,"4,5 mio.",84%,2.201,nico_williams__esp
+optimal_squads_by_formation.json,Standard,3-4-3,,11,Ang,Vinicius Junior,Brasilien,"7,5 mio.",92%,3.24,vinicius_j_nior__bra
+optimal_squads_by_formation.json,Standard,3-5-2,,1,Mål,Mike Maignan,Frankrig,"5,0 mio.",82%,3.265,mike_maignan__fra
+optimal_squads_by_formation.json,Standard,3-5-2,,2,For,Gonzalo Montiel,Argentina,"3,5 mio.",55%,0.381,gonzalo_montiel__arg
+optimal_squads_by_formation.json,Standard,3-5-2,,3,For,Lucas Digne,Frankrig,"3,5 mio.",32%,0.706,lucas_digne__fra
+optimal_squads_by_formation.json,Standard,3-5-2,,4,For,Renato Veiga,Portugal,"3,5 mio.",58%,0.453,renato_veiga__por
+optimal_squads_by_formation.json,Standard,3-5-2,,5,Mid,Alex Baena,Spanien,"3,5 mio.",52%,0.647,alex_baena__esp
+optimal_squads_by_formation.json,Standard,3-5-2,,6,Mid,Aurelien Tchouameni,Frankrig,"3,5 mio.",67%,1.392,aur_lien_tchouam_ni__fra
+optimal_squads_by_formation.json,Standard,3-5-2,,7,Mid,Giovani Lo Celso,Argentina,"4,0 mio.",55%,1.489,giovani_lo_celso__arg
+optimal_squads_by_formation.json,Standard,3-5-2,,8,Mid,Manu Koné,Frankrig,"3,5 mio.",38%,1.4,manu_kon__fra
+optimal_squads_by_formation.json,Standard,3-5-2,,9,Mid,Martin Zubimendi,Spanien,"3,5 mio.",34%,1.717,mart_n_zubimendi__esp
+optimal_squads_by_formation.json,Standard,3-5-2,,10,Ang,Lamine Yamal,Spanien,"9,0 mio.",90%,2.291,lamine_yamal__esp
+optimal_squads_by_formation.json,Standard,3-5-2,,11,Ang,Mikel Oyarzabal,Spanien,"7,5 mio.",88%,2.219,mikel_oyarzabal__esp
+optimal_squads_by_formation.json,Standard,4-3-3,,1,Mål,Mike Maignan,Frankrig,"5,0 mio.",82%,3.265,mike_maignan__fra
+optimal_squads_by_formation.json,Standard,4-3-3,,2,For,Gonzalo Montiel,Argentina,"3,5 mio.",55%,0.381,gonzalo_montiel__arg
+optimal_squads_by_formation.json,Standard,4-3-3,,3,For,Lucas Digne,Frankrig,"3,5 mio.",32%,0.706,lucas_digne__fra
+optimal_squads_by_formation.json,Standard,4-3-3,,4,For,Renato Veiga,Portugal,"3,5 mio.",58%,0.453,renato_veiga__por
+optimal_squads_by_formation.json,Standard,4-3-3,,5,For,Timothy Castagne,Belgien,"3,5 mio.",67%,2.054,timothy_castagne__bel
+optimal_squads_by_formation.json,Standard,4-3-3,,6,Mid,Alex Baena,Spanien,"3,5 mio.",52%,0.647,alex_baena__esp
+optimal_squads_by_formation.json,Standard,4-3-3,,7,Mid,Casemiro,Brasilien,"4,5 mio.",83%,2.358,casemiro__bra
+optimal_squads_by_formation.json,Standard,4-3-3,,8,Mid,Martin Zubimendi,Spanien,"3,5 mio.",34%,1.717,mart_n_zubimendi__esp
+optimal_squads_by_formation.json,Standard,4-3-3,,9,Ang,Mikel Oyarzabal,Spanien,"7,5 mio.",88%,2.219,mikel_oyarzabal__esp
+optimal_squads_by_formation.json,Standard,4-3-3,,10,Ang,Nico Williams,Spanien,"4,5 mio.",84%,2.201,nico_williams__esp
+optimal_squads_by_formation.json,Standard,4-3-3,,11,Ang,Vinicius Junior,Brasilien,"7,5 mio.",92%,3.24,vinicius_j_nior__bra
+optimal_squads_by_formation.json,Standard,4-4-2,,1,Mål,Mike Maignan,Frankrig,"5,0 mio.",82%,3.265,mike_maignan__fra
+optimal_squads_by_formation.json,Standard,4-4-2,,2,For,Gonzalo Montiel,Argentina,"3,5 mio.",55%,0.381,gonzalo_montiel__arg
+optimal_squads_by_formation.json,Standard,4-4-2,,3,For,Lucas Digne,Frankrig,"3,5 mio.",32%,0.706,lucas_digne__fra
+optimal_squads_by_formation.json,Standard,4-4-2,,4,For,Renato Veiga,Portugal,"3,5 mio.",58%,0.453,renato_veiga__por
+optimal_squads_by_formation.json,Standard,4-4-2,,5,For,Timothy Castagne,Belgien,"3,5 mio.",67%,2.054,timothy_castagne__bel
+optimal_squads_by_formation.json,Standard,4-4-2,,6,Mid,Adrien Rabiot,Frankrig,"4,0 mio.",60%,1.349,adrien_rabiot__fra
+optimal_squads_by_formation.json,Standard,4-4-2,,7,Mid,Alex Baena,Spanien,"3,5 mio.",52%,0.647,alex_baena__esp
+optimal_squads_by_formation.json,Standard,4-4-2,,8,Mid,Manu Koné,Frankrig,"3,5 mio.",38%,1.4,manu_kon__fra
+optimal_squads_by_formation.json,Standard,4-4-2,,9,Mid,Martin Zubimendi,Spanien,"3,5 mio.",34%,1.717,mart_n_zubimendi__esp
+optimal_squads_by_formation.json,Standard,4-4-2,,10,Ang,Lamine Yamal,Spanien,"9,0 mio.",90%,2.291,lamine_yamal__esp
+optimal_squads_by_formation.json,Standard,4-4-2,,11,Ang,Mikel Oyarzabal,Spanien,"7,5 mio.",88%,2.219,mikel_oyarzabal__esp
+optimal_squads_by_formation.json,Standard,4-5-1,,1,Mål,Mike Maignan,Frankrig,"5,0 mio.",82%,3.265,mike_maignan__fra
+optimal_squads_by_formation.json,Standard,4-5-1,,2,For,Gonzalo Montiel,Argentina,"3,5 mio.",55%,0.381,gonzalo_montiel__arg
+optimal_squads_by_formation.json,Standard,4-5-1,,3,For,Lucas Digne,Frankrig,"3,5 mio.",32%,0.706,lucas_digne__fra
+optimal_squads_by_formation.json,Standard,4-5-1,,4,For,Renato Veiga,Portugal,"3,5 mio.",58%,0.453,renato_veiga__por
+optimal_squads_by_formation.json,Standard,4-5-1,,5,For,Ruben Dias,Portugal,"4,0 mio.",95%,1.803,r_ben_dias__por
+optimal_squads_by_formation.json,Standard,4-5-1,,6,Mid,Adrien Rabiot,Frankrig,"4,0 mio.",60%,1.349,adrien_rabiot__fra
+optimal_squads_by_formation.json,Standard,4-5-1,,7,Mid,Alex Baena,Spanien,"3,5 mio.",52%,0.647,alex_baena__esp
+optimal_squads_by_formation.json,Standard,4-5-1,,8,Mid,Casemiro,Brasilien,"4,5 mio.",83%,2.358,casemiro__bra
+optimal_squads_by_formation.json,Standard,4-5-1,,9,Mid,Martin Zubimendi,Spanien,"3,5 mio.",34%,1.717,mart_n_zubimendi__esp
+optimal_squads_by_formation.json,Standard,4-5-1,,10,Mid,Pedri,Spanien,"6,0 mio.",64%,1.291,pedri__esp
+optimal_squads_by_formation.json,Standard,4-5-1,,11,Ang,Lamine Yamal,Spanien,"9,0 mio.",90%,2.291,lamine_yamal__esp
+optimal_squads_by_formation.json,Standard,5-3-2,,1,Mål,Mike Maignan,Frankrig,"5,0 mio.",82%,3.265,mike_maignan__fra
+optimal_squads_by_formation.json,Standard,5-3-2,,2,For,Gonzalo Montiel,Argentina,"3,5 mio.",55%,0.381,gonzalo_montiel__arg
+optimal_squads_by_formation.json,Standard,5-3-2,,3,For,Lucas Digne,Frankrig,"3,5 mio.",32%,0.706,lucas_digne__fra
+optimal_squads_by_formation.json,Standard,5-3-2,,4,For,Renato Veiga,Portugal,"3,5 mio.",58%,0.453,renato_veiga__por
+optimal_squads_by_formation.json,Standard,5-3-2,,5,For,Ruben Dias,Portugal,"4,0 mio.",95%,1.803,r_ben_dias__por
+optimal_squads_by_formation.json,Standard,5-3-2,,6,For,Timothy Castagne,Belgien,"3,5 mio.",67%,2.054,timothy_castagne__bel
+optimal_squads_by_formation.json,Standard,5-3-2,,7,Mid,Alex Baena,Spanien,"3,5 mio.",52%,0.647,alex_baena__esp
+optimal_squads_by_formation.json,Standard,5-3-2,,8,Mid,Manu Koné,Frankrig,"3,5 mio.",38%,1.4,manu_kon__fra
+optimal_squads_by_formation.json,Standard,5-3-2,,9,Mid,Martin Zubimendi,Spanien,"3,5 mio.",34%,1.717,mart_n_zubimendi__esp
+optimal_squads_by_formation.json,Standard,5-3-2,,10,Ang,Lamine Yamal,Spanien,"9,0 mio.",90%,2.291,lamine_yamal__esp
+optimal_squads_by_formation.json,Standard,5-3-2,,11,Ang,Mikel Oyarzabal,Spanien,"7,5 mio.",88%,2.219,mikel_oyarzabal__esp
+optimal_squads_by_formation.json,Standard,5-4-1,,1,Mål,Mike Maignan,Frankrig,"5,0 mio.",82%,3.265,mike_maignan__fra
+optimal_squads_by_formation.json,Standard,5-4-1,,2,For,Gonzalo Montiel,Argentina,"3,5 mio.",55%,0.381,gonzalo_montiel__arg
+optimal_squads_by_formation.json,Standard,5-4-1,,3,For,Lucas Digne,Frankrig,"3,5 mio.",32%,0.706,lucas_digne__fra
+optimal_squads_by_formation.json,Standard,5-4-1,,4,For,Pau Cubarsi,Spanien,"4,0 mio.",31%,0.231,pau_cubars__esp
+optimal_squads_by_formation.json,Standard,5-4-1,,5,For,Renato Veiga,Portugal,"3,5 mio.",58%,0.453,renato_veiga__por
+optimal_squads_by_formation.json,Standard,5-4-1,,6,For,Timothy Castagne,Belgien,"3,5 mio.",67%,2.054,timothy_castagne__bel
+optimal_squads_by_formation.json,Standard,5-4-1,,7,Mid,Adrien Rabiot,Frankrig,"4,0 mio.",60%,1.349,adrien_rabiot__fra
+optimal_squads_by_formation.json,Standard,5-4-1,,8,Mid,Casemiro,Brasilien,"4,5 mio.",83%,2.358,casemiro__bra
+optimal_squads_by_formation.json,Standard,5-4-1,,9,Mid,Martin Zubimendi,Spanien,"3,5 mio.",34%,1.717,mart_n_zubimendi__esp
+optimal_squads_by_formation.json,Standard,5-4-1,,10,Mid,Pedri,Spanien,"6,0 mio.",64%,1.291,pedri__esp
+optimal_squads_by_formation.json,Standard,5-4-1,,11,Ang,Lamine Yamal,Spanien,"9,0 mio.",90%,2.291,lamine_yamal__esp
+generated_5_squads_from_bruttoliste.json,Standard,Ukendt formation,,1,,Hold 1 - Første runde,,"50,0 mio.",,,
+generated_5_squads_from_bruttoliste.json,Standard,Ukendt formation,,2,,Hold 2 - Hele vejen,,"50,0 mio.",,,
+generated_5_squads_from_bruttoliste.json,Standard,Ukendt formation,,3,,Hold 3 - Balanceret,,"48,5 mio.",,,
+generated_5_squads_from_bruttoliste.json,Standard,Ukendt formation,,4,,Hold 4 - Value,,"50,0 mio.",,,
+generated_5_squads_from_bruttoliste.json,Standard,Ukendt formation,,5,,Hold 5 - Alternativ,,"50,0 mio.",,,

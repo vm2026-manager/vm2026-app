@@ -1,0 +1,337 @@
+﻿strategy;formation;outgoing;outgoing_price;candidate;candidate_team;candidate_pos;candidate_price;candidate_start;candidate_score;reason
+next_round;3-4-3;Cristiano Ronaldo;7,0 mio.;Vinicius Junior;Brasilien;FWD;7,5 mio.;92.0;7.185;for dyrt: 50.5 mio.
+next_round;3-4-3;Cristiano Ronaldo;7,0 mio.;Harry Kane;England;FWD;9,5 mio.;97.0;6.571;for dyrt: 52.5 mio.
+next_round;3-4-3;Cristiano Ronaldo;7,0 mio.;Lamine Yamal;Spanien;FWD;9,0 mio.;90.0;6.284;for dyrt: 52.0 mio.
+next_round;3-4-3;Cristiano Ronaldo;7,0 mio.;Raul Jimenez;Mexico;FWD;4,5 mio.;79.0;6.197;allerede i holdet
+next_round;3-4-3;Cristiano Ronaldo;7,0 mio.;Mikel Oyarzabal;Spanien;FWD;7,5 mio.;88.0;6.019;for dyrt: 50.5 mio.
+next_round;3-4-3;Cristiano Ronaldo;7,0 mio.;Cody Gakpo;Holland;FWD;6,5 mio.;91.0;5.961;OK
+next_round;3-4-3;Cristiano Ronaldo;7,0 mio.;Kylian Mbappe;Frankrig;FWD;10,0 mio.;95.0;5.745;for dyrt: 53.0 mio.
+next_round;3-4-3;Cristiano Ronaldo;7,0 mio.;Marko Arnautovic;Østrig;FWD;4,5 mio.;65.0;5.034;allerede i holdet
+next_round;3-4-3;Cristiano Ronaldo;7,0 mio.;Erling Haaland;Norge;FWD;8,5 mio.;93.0;4.93;for dyrt: 51.5 mio.
+next_round;3-4-3;Cristiano Ronaldo;7,0 mio.;Julian Alvarez;Argentina;FWD;6,0 mio.;72.0;4.742;OK
+next_round;3-4-3;Cristiano Ronaldo;7,0 mio.;Kai Havertz;Tyskland;FWD;5,5 mio.;88.0;4.089;OK
+next_round;3-4-3;Cristiano Ronaldo;7,0 mio.;Michael Olise;Frankrig;FWD;7,0 mio.;86.0;3.814;OK
+next_round;3-4-3;Cristiano Ronaldo;7,0 mio.;Ousmane Dembele;Frankrig;FWD;5,5 mio.;36.0;3.022;start lav: 36%
+next_round;3-4-3;Cristiano Ronaldo;7,0 mio.;Dani Olmo;Spanien;MID;5,0 mio.;58.0;2.976;position=MID ikke FWD
+next_round;3-5-2;Lionel Messi;8,0 mio.;Vinicius Junior;Brasilien;FWD;7,5 mio.;92.0;7.185;OK
+next_round;3-5-2;Lionel Messi;8,0 mio.;Harry Kane;England;FWD;9,5 mio.;97.0;6.571;for dyrt: 51.0 mio.
+next_round;3-5-2;Lionel Messi;8,0 mio.;Lamine Yamal;Spanien;FWD;9,0 mio.;90.0;6.284;for dyrt: 50.5 mio.
+next_round;3-5-2;Lionel Messi;8,0 mio.;Raul Jimenez;Mexico;FWD;4,5 mio.;79.0;6.197;allerede i holdet
+next_round;3-5-2;Lionel Messi;8,0 mio.;Mikel Oyarzabal;Spanien;FWD;7,5 mio.;88.0;6.019;OK
+next_round;3-5-2;Lionel Messi;8,0 mio.;Cody Gakpo;Holland;FWD;6,5 mio.;91.0;5.961;OK
+next_round;3-5-2;Lionel Messi;8,0 mio.;Kylian Mbappe;Frankrig;FWD;10,0 mio.;95.0;5.745;for dyrt: 51.5 mio.
+next_round;3-5-2;Lionel Messi;8,0 mio.;Marko Arnautovic;Østrig;FWD;4,5 mio.;65.0;5.034;OK
+next_round;3-5-2;Lionel Messi;8,0 mio.;Erling Haaland;Norge;FWD;8,5 mio.;93.0;4.93;OK
+next_round;3-5-2;Lionel Messi;8,0 mio.;Julian Alvarez;Argentina;FWD;6,0 mio.;72.0;4.742;OK
+next_round;3-5-2;Lionel Messi;8,0 mio.;Kai Havertz;Tyskland;FWD;5,5 mio.;88.0;4.089;OK
+next_round;3-5-2;Lionel Messi;8,0 mio.;Michael Olise;Frankrig;FWD;7,0 mio.;86.0;3.814;OK
+next_round;3-5-2;Lionel Messi;8,0 mio.;Ousmane Dembele;Frankrig;FWD;5,5 mio.;36.0;3.022;start lav: 36%
+next_round;3-5-2;Lionel Messi;8,0 mio.;Dani Olmo;Spanien;MID;5,0 mio.;58.0;2.976;position=MID ikke FWD
+next_round;4-3-3;Cristiano Ronaldo;7,0 mio.;Vinicius Junior;Brasilien;FWD;7,5 mio.;92.0;7.185;OK
+next_round;4-3-3;Cristiano Ronaldo;7,0 mio.;Harry Kane;England;FWD;9,5 mio.;97.0;6.571;for dyrt: 52.0 mio.
+next_round;4-3-3;Cristiano Ronaldo;7,0 mio.;Lamine Yamal;Spanien;FWD;9,0 mio.;90.0;6.284;for dyrt: 51.5 mio.
+next_round;4-3-3;Cristiano Ronaldo;7,0 mio.;Raul Jimenez;Mexico;FWD;4,5 mio.;79.0;6.197;allerede i holdet
+next_round;4-3-3;Cristiano Ronaldo;7,0 mio.;Mikel Oyarzabal;Spanien;FWD;7,5 mio.;88.0;6.019;OK
+next_round;4-3-3;Cristiano Ronaldo;7,0 mio.;Cody Gakpo;Holland;FWD;6,5 mio.;91.0;5.961;OK
+next_round;4-3-3;Cristiano Ronaldo;7,0 mio.;Kylian Mbappe;Frankrig;FWD;10,0 mio.;95.0;5.745;for dyrt: 52.5 mio.
+next_round;4-3-3;Cristiano Ronaldo;7,0 mio.;Marko Arnautovic;Østrig;FWD;4,5 mio.;65.0;5.034;allerede i holdet
+next_round;4-3-3;Cristiano Ronaldo;7,0 mio.;Erling Haaland;Norge;FWD;8,5 mio.;93.0;4.93;for dyrt: 51.0 mio.
+next_round;4-3-3;Cristiano Ronaldo;7,0 mio.;Julian Alvarez;Argentina;FWD;6,0 mio.;72.0;4.742;OK
+next_round;4-3-3;Cristiano Ronaldo;7,0 mio.;Kai Havertz;Tyskland;FWD;5,5 mio.;88.0;4.089;OK
+next_round;4-3-3;Cristiano Ronaldo;7,0 mio.;Michael Olise;Frankrig;FWD;7,0 mio.;86.0;3.814;OK
+next_round;4-3-3;Cristiano Ronaldo;7,0 mio.;Ousmane Dembele;Frankrig;FWD;5,5 mio.;36.0;3.022;start lav: 36%
+next_round;4-3-3;Cristiano Ronaldo;7,0 mio.;Dani Olmo;Spanien;MID;5,0 mio.;58.0;2.976;position=MID ikke FWD
+next_round;4-5-1;Lionel Messi;8,0 mio.;Vinicius Junior;Brasilien;FWD;7,5 mio.;92.0;7.185;OK
+next_round;4-5-1;Lionel Messi;8,0 mio.;Harry Kane;England;FWD;9,5 mio.;97.0;6.571;for dyrt: 51.0 mio.
+next_round;4-5-1;Lionel Messi;8,0 mio.;Lamine Yamal;Spanien;FWD;9,0 mio.;90.0;6.284;for dyrt: 50.5 mio.
+next_round;4-5-1;Lionel Messi;8,0 mio.;Raul Jimenez;Mexico;FWD;4,5 mio.;79.0;6.197;OK
+next_round;4-5-1;Lionel Messi;8,0 mio.;Mikel Oyarzabal;Spanien;FWD;7,5 mio.;88.0;6.019;OK
+next_round;4-5-1;Lionel Messi;8,0 mio.;Cody Gakpo;Holland;FWD;6,5 mio.;91.0;5.961;OK
+next_round;4-5-1;Lionel Messi;8,0 mio.;Kylian Mbappe;Frankrig;FWD;10,0 mio.;95.0;5.745;for dyrt: 51.5 mio.
+next_round;4-5-1;Lionel Messi;8,0 mio.;Marko Arnautovic;Østrig;FWD;4,5 mio.;65.0;5.034;OK
+next_round;4-5-1;Lionel Messi;8,0 mio.;Erling Haaland;Norge;FWD;8,5 mio.;93.0;4.93;OK
+next_round;4-5-1;Lionel Messi;8,0 mio.;Julian Alvarez;Argentina;FWD;6,0 mio.;72.0;4.742;OK
+next_round;4-5-1;Lionel Messi;8,0 mio.;Kai Havertz;Tyskland;FWD;5,5 mio.;88.0;4.089;OK
+next_round;4-5-1;Lionel Messi;8,0 mio.;Michael Olise;Frankrig;FWD;7,0 mio.;86.0;3.814;OK
+next_round;4-5-1;Lionel Messi;8,0 mio.;Ousmane Dembele;Frankrig;FWD;5,5 mio.;36.0;3.022;start lav: 36%
+next_round;4-5-1;Lionel Messi;8,0 mio.;Dani Olmo;Spanien;MID;5,0 mio.;58.0;2.976;position=MID ikke FWD
+round1_2;3-4-3;Cristiano Ronaldo;7,0 mio.;Vinicius Junior;Brasilien;FWD;7,5 mio.;92.0;7.185;allerede i holdet | for dyrt: 50.5 mio.
+round1_2;3-4-3;Cristiano Ronaldo;7,0 mio.;Harry Kane;England;FWD;9,5 mio.;97.0;6.571;for dyrt: 52.5 mio.
+round1_2;3-4-3;Cristiano Ronaldo;7,0 mio.;Lamine Yamal;Spanien;FWD;9,0 mio.;90.0;6.284;for dyrt: 52.0 mio.
+round1_2;3-4-3;Cristiano Ronaldo;7,0 mio.;Raul Jimenez;Mexico;FWD;4,5 mio.;79.0;6.197;OK
+round1_2;3-4-3;Cristiano Ronaldo;7,0 mio.;Mikel Oyarzabal;Spanien;FWD;7,5 mio.;88.0;6.019;for dyrt: 50.5 mio.
+round1_2;3-4-3;Cristiano Ronaldo;7,0 mio.;Cody Gakpo;Holland;FWD;6,5 mio.;91.0;5.961;OK
+round1_2;3-4-3;Cristiano Ronaldo;7,0 mio.;Kylian Mbappe;Frankrig;FWD;10,0 mio.;95.0;5.745;for dyrt: 53.0 mio.
+round1_2;3-4-3;Cristiano Ronaldo;7,0 mio.;Marko Arnautovic;Østrig;FWD;4,5 mio.;65.0;5.034;OK
+round1_2;3-4-3;Cristiano Ronaldo;7,0 mio.;Erling Haaland;Norge;FWD;8,5 mio.;93.0;4.93;for dyrt: 51.5 mio.
+round1_2;3-4-3;Cristiano Ronaldo;7,0 mio.;Julian Alvarez;Argentina;FWD;6,0 mio.;72.0;4.742;OK
+round1_2;3-4-3;Cristiano Ronaldo;7,0 mio.;Kai Havertz;Tyskland;FWD;5,5 mio.;88.0;4.089;OK
+round1_2;3-4-3;Cristiano Ronaldo;7,0 mio.;Michael Olise;Frankrig;FWD;7,0 mio.;86.0;3.814;OK
+round1_2;3-4-3;Cristiano Ronaldo;7,0 mio.;Ousmane Dembele;Frankrig;FWD;5,5 mio.;36.0;3.022;start lav: 36%
+round1_2;3-4-3;Cristiano Ronaldo;7,0 mio.;Dani Olmo;Spanien;MID;5,0 mio.;58.0;2.976;position=MID ikke FWD
+round1_2;3-4-3;Jonathan David;4,5 mio.;Vinicius Junior;Brasilien;FWD;7,5 mio.;92.0;7.185;allerede i holdet | for dyrt: 53.0 mio.
+round1_2;3-4-3;Jonathan David;4,5 mio.;Harry Kane;England;FWD;9,5 mio.;97.0;6.571;for dyrt: 55.0 mio.
+round1_2;3-4-3;Jonathan David;4,5 mio.;Lamine Yamal;Spanien;FWD;9,0 mio.;90.0;6.284;for dyrt: 54.5 mio.
+round1_2;3-4-3;Jonathan David;4,5 mio.;Raul Jimenez;Mexico;FWD;4,5 mio.;79.0;6.197;OK
+round1_2;3-4-3;Jonathan David;4,5 mio.;Mikel Oyarzabal;Spanien;FWD;7,5 mio.;88.0;6.019;for dyrt: 53.0 mio.
+round1_2;3-4-3;Jonathan David;4,5 mio.;Cody Gakpo;Holland;FWD;6,5 mio.;91.0;5.961;for dyrt: 52.0 mio.
+round1_2;3-4-3;Jonathan David;4,5 mio.;Kylian Mbappe;Frankrig;FWD;10,0 mio.;95.0;5.745;for dyrt: 55.5 mio.
+round1_2;3-4-3;Jonathan David;4,5 mio.;Marko Arnautovic;Østrig;FWD;4,5 mio.;65.0;5.034;OK
+round1_2;3-4-3;Jonathan David;4,5 mio.;Erling Haaland;Norge;FWD;8,5 mio.;93.0;4.93;for dyrt: 54.0 mio.
+round1_2;3-4-3;Jonathan David;4,5 mio.;Julian Alvarez;Argentina;FWD;6,0 mio.;72.0;4.742;for dyrt: 51.5 mio.
+round1_2;3-4-3;Jonathan David;4,5 mio.;Kai Havertz;Tyskland;FWD;5,5 mio.;88.0;4.089;for dyrt: 51.0 mio.
+round1_2;3-4-3;Jonathan David;4,5 mio.;Michael Olise;Frankrig;FWD;7,0 mio.;86.0;3.814;for dyrt: 52.5 mio.
+round1_2;3-4-3;Jonathan David;4,5 mio.;Ousmane Dembele;Frankrig;FWD;5,5 mio.;36.0;3.022;start lav: 36% | for dyrt: 51.0 mio.
+round1_2;3-4-3;Jonathan David;4,5 mio.;Dani Olmo;Spanien;MID;5,0 mio.;58.0;2.976;position=MID ikke FWD | for dyrt: 50.5 mio.
+round1_2;3-5-2;Cristiano Ronaldo;7,0 mio.;Vinicius Junior;Brasilien;FWD;7,5 mio.;92.0;7.185;OK
+round1_2;3-5-2;Cristiano Ronaldo;7,0 mio.;Harry Kane;England;FWD;9,5 mio.;97.0;6.571;for dyrt: 52.0 mio.
+round1_2;3-5-2;Cristiano Ronaldo;7,0 mio.;Lamine Yamal;Spanien;FWD;9,0 mio.;90.0;6.284;for dyrt: 51.5 mio.
+round1_2;3-5-2;Cristiano Ronaldo;7,0 mio.;Raul Jimenez;Mexico;FWD;4,5 mio.;79.0;6.197;OK
+round1_2;3-5-2;Cristiano Ronaldo;7,0 mio.;Mikel Oyarzabal;Spanien;FWD;7,5 mio.;88.0;6.019;OK
+round1_2;3-5-2;Cristiano Ronaldo;7,0 mio.;Cody Gakpo;Holland;FWD;6,5 mio.;91.0;5.961;OK
+round1_2;3-5-2;Cristiano Ronaldo;7,0 mio.;Kylian Mbappe;Frankrig;FWD;10,0 mio.;95.0;5.745;for dyrt: 52.5 mio.
+round1_2;3-5-2;Cristiano Ronaldo;7,0 mio.;Marko Arnautovic;Østrig;FWD;4,5 mio.;65.0;5.034;OK
+round1_2;3-5-2;Cristiano Ronaldo;7,0 mio.;Erling Haaland;Norge;FWD;8,5 mio.;93.0;4.93;for dyrt: 51.0 mio.
+round1_2;3-5-2;Cristiano Ronaldo;7,0 mio.;Julian Alvarez;Argentina;FWD;6,0 mio.;72.0;4.742;OK
+round1_2;3-5-2;Cristiano Ronaldo;7,0 mio.;Kai Havertz;Tyskland;FWD;5,5 mio.;88.0;4.089;OK
+round1_2;3-5-2;Cristiano Ronaldo;7,0 mio.;Michael Olise;Frankrig;FWD;7,0 mio.;86.0;3.814;OK
+round1_2;3-5-2;Cristiano Ronaldo;7,0 mio.;Ousmane Dembele;Frankrig;FWD;5,5 mio.;36.0;3.022;start lav: 36%
+round1_2;3-5-2;Cristiano Ronaldo;7,0 mio.;Dani Olmo;Spanien;MID;5,0 mio.;58.0;2.976;position=MID ikke FWD
+round1_2;3-5-2;Jonathan David;4,5 mio.;Vinicius Junior;Brasilien;FWD;7,5 mio.;92.0;7.185;for dyrt: 52.5 mio.
+round1_2;3-5-2;Jonathan David;4,5 mio.;Harry Kane;England;FWD;9,5 mio.;97.0;6.571;for dyrt: 54.5 mio.
+round1_2;3-5-2;Jonathan David;4,5 mio.;Lamine Yamal;Spanien;FWD;9,0 mio.;90.0;6.284;for dyrt: 54.0 mio.
+round1_2;3-5-2;Jonathan David;4,5 mio.;Raul Jimenez;Mexico;FWD;4,5 mio.;79.0;6.197;OK
+round1_2;3-5-2;Jonathan David;4,5 mio.;Mikel Oyarzabal;Spanien;FWD;7,5 mio.;88.0;6.019;for dyrt: 52.5 mio.
+round1_2;3-5-2;Jonathan David;4,5 mio.;Cody Gakpo;Holland;FWD;6,5 mio.;91.0;5.961;for dyrt: 51.5 mio.
+round1_2;3-5-2;Jonathan David;4,5 mio.;Kylian Mbappe;Frankrig;FWD;10,0 mio.;95.0;5.745;for dyrt: 55.0 mio.
+round1_2;3-5-2;Jonathan David;4,5 mio.;Marko Arnautovic;Østrig;FWD;4,5 mio.;65.0;5.034;OK
+round1_2;3-5-2;Jonathan David;4,5 mio.;Erling Haaland;Norge;FWD;8,5 mio.;93.0;4.93;for dyrt: 53.5 mio.
+round1_2;3-5-2;Jonathan David;4,5 mio.;Julian Alvarez;Argentina;FWD;6,0 mio.;72.0;4.742;for dyrt: 51.0 mio.
+round1_2;3-5-2;Jonathan David;4,5 mio.;Kai Havertz;Tyskland;FWD;5,5 mio.;88.0;4.089;for dyrt: 50.5 mio.
+round1_2;3-5-2;Jonathan David;4,5 mio.;Michael Olise;Frankrig;FWD;7,0 mio.;86.0;3.814;for dyrt: 52.0 mio.
+round1_2;3-5-2;Jonathan David;4,5 mio.;Ousmane Dembele;Frankrig;FWD;5,5 mio.;36.0;3.022;start lav: 36% | for dyrt: 50.5 mio.
+round1_2;3-5-2;Jonathan David;4,5 mio.;Dani Olmo;Spanien;MID;5,0 mio.;58.0;2.976;position=MID ikke FWD
+round1_2;4-3-3;Jonathan David;4,5 mio.;Vinicius Junior;Brasilien;FWD;7,5 mio.;92.0;7.185;allerede i holdet | for dyrt: 53.0 mio.
+round1_2;4-3-3;Jonathan David;4,5 mio.;Harry Kane;England;FWD;9,5 mio.;97.0;6.571;for dyrt: 55.0 mio.
+round1_2;4-3-3;Jonathan David;4,5 mio.;Lamine Yamal;Spanien;FWD;9,0 mio.;90.0;6.284;for dyrt: 54.5 mio.
+round1_2;4-3-3;Jonathan David;4,5 mio.;Raul Jimenez;Mexico;FWD;4,5 mio.;79.0;6.197;OK
+round1_2;4-3-3;Jonathan David;4,5 mio.;Mikel Oyarzabal;Spanien;FWD;7,5 mio.;88.0;6.019;allerede i holdet | for dyrt: 53.0 mio.
+round1_2;4-3-3;Jonathan David;4,5 mio.;Cody Gakpo;Holland;FWD;6,5 mio.;91.0;5.961;for dyrt: 52.0 mio.
+round1_2;4-3-3;Jonathan David;4,5 mio.;Kylian Mbappe;Frankrig;FWD;10,0 mio.;95.0;5.745;for dyrt: 55.5 mio.
+round1_2;4-3-3;Jonathan David;4,5 mio.;Marko Arnautovic;Østrig;FWD;4,5 mio.;65.0;5.034;OK
+round1_2;4-3-3;Jonathan David;4,5 mio.;Erling Haaland;Norge;FWD;8,5 mio.;93.0;4.93;for dyrt: 54.0 mio.
+round1_2;4-3-3;Jonathan David;4,5 mio.;Julian Alvarez;Argentina;FWD;6,0 mio.;72.0;4.742;for dyrt: 51.5 mio.
+round1_2;4-3-3;Jonathan David;4,5 mio.;Kai Havertz;Tyskland;FWD;5,5 mio.;88.0;4.089;for dyrt: 51.0 mio.
+round1_2;4-3-3;Jonathan David;4,5 mio.;Michael Olise;Frankrig;FWD;7,0 mio.;86.0;3.814;for dyrt: 52.5 mio.
+round1_2;4-3-3;Jonathan David;4,5 mio.;Ousmane Dembele;Frankrig;FWD;5,5 mio.;36.0;3.022;start lav: 36% | for dyrt: 51.0 mio.
+round1_2;4-3-3;Jonathan David;4,5 mio.;Dani Olmo;Spanien;MID;5,0 mio.;58.0;2.976;position=MID ikke FWD | for dyrt: 50.5 mio.
+group_stage;3-4-3;Jonathan David;4,5 mio.;Vinicius Junior;Brasilien;FWD;7,5 mio.;92.0;7.185;allerede i holdet | for dyrt: 53.0 mio.
+group_stage;3-4-3;Jonathan David;4,5 mio.;Harry Kane;England;FWD;9,5 mio.;97.0;6.571;for dyrt: 55.0 mio.
+group_stage;3-4-3;Jonathan David;4,5 mio.;Lamine Yamal;Spanien;FWD;9,0 mio.;90.0;6.284;for dyrt: 54.5 mio.
+group_stage;3-4-3;Jonathan David;4,5 mio.;Raul Jimenez;Mexico;FWD;4,5 mio.;79.0;6.197;OK
+group_stage;3-4-3;Jonathan David;4,5 mio.;Mikel Oyarzabal;Spanien;FWD;7,5 mio.;88.0;6.019;for dyrt: 53.0 mio.
+group_stage;3-4-3;Jonathan David;4,5 mio.;Cody Gakpo;Holland;FWD;6,5 mio.;91.0;5.961;for dyrt: 52.0 mio.
+group_stage;3-4-3;Jonathan David;4,5 mio.;Kylian Mbappe;Frankrig;FWD;10,0 mio.;95.0;5.745;for dyrt: 55.5 mio.
+group_stage;3-4-3;Jonathan David;4,5 mio.;Marko Arnautovic;Østrig;FWD;4,5 mio.;65.0;5.034;OK
+group_stage;3-4-3;Jonathan David;4,5 mio.;Erling Haaland;Norge;FWD;8,5 mio.;93.0;4.93;for dyrt: 54.0 mio.
+group_stage;3-4-3;Jonathan David;4,5 mio.;Julian Alvarez;Argentina;FWD;6,0 mio.;72.0;4.742;for dyrt: 51.5 mio.
+group_stage;3-4-3;Jonathan David;4,5 mio.;Kai Havertz;Tyskland;FWD;5,5 mio.;88.0;4.089;for dyrt: 51.0 mio.
+group_stage;3-4-3;Jonathan David;4,5 mio.;Michael Olise;Frankrig;FWD;7,0 mio.;86.0;3.814;for dyrt: 52.5 mio.
+group_stage;3-4-3;Jonathan David;4,5 mio.;Ousmane Dembele;Frankrig;FWD;5,5 mio.;36.0;3.022;start lav: 36% | for dyrt: 51.0 mio.
+group_stage;3-4-3;Jonathan David;4,5 mio.;Dani Olmo;Spanien;MID;5,0 mio.;58.0;2.976;position=MID ikke FWD | for dyrt: 50.5 mio.
+group_stage;3-4-3;Lionel Messi;8,0 mio.;Vinicius Junior;Brasilien;FWD;7,5 mio.;92.0;7.185;allerede i holdet
+group_stage;3-4-3;Lionel Messi;8,0 mio.;Harry Kane;England;FWD;9,5 mio.;97.0;6.571;for dyrt: 51.5 mio.
+group_stage;3-4-3;Lionel Messi;8,0 mio.;Lamine Yamal;Spanien;FWD;9,0 mio.;90.0;6.284;for dyrt: 51.0 mio.
+group_stage;3-4-3;Lionel Messi;8,0 mio.;Raul Jimenez;Mexico;FWD;4,5 mio.;79.0;6.197;OK
+group_stage;3-4-3;Lionel Messi;8,0 mio.;Mikel Oyarzabal;Spanien;FWD;7,5 mio.;88.0;6.019;OK
+group_stage;3-4-3;Lionel Messi;8,0 mio.;Cody Gakpo;Holland;FWD;6,5 mio.;91.0;5.961;OK
+group_stage;3-4-3;Lionel Messi;8,0 mio.;Kylian Mbappe;Frankrig;FWD;10,0 mio.;95.0;5.745;for dyrt: 52.0 mio.
+group_stage;3-4-3;Lionel Messi;8,0 mio.;Marko Arnautovic;Østrig;FWD;4,5 mio.;65.0;5.034;OK
+group_stage;3-4-3;Lionel Messi;8,0 mio.;Erling Haaland;Norge;FWD;8,5 mio.;93.0;4.93;for dyrt: 50.5 mio.
+group_stage;3-4-3;Lionel Messi;8,0 mio.;Julian Alvarez;Argentina;FWD;6,0 mio.;72.0;4.742;OK
+group_stage;3-4-3;Lionel Messi;8,0 mio.;Kai Havertz;Tyskland;FWD;5,5 mio.;88.0;4.089;OK
+group_stage;3-4-3;Lionel Messi;8,0 mio.;Michael Olise;Frankrig;FWD;7,0 mio.;86.0;3.814;OK
+group_stage;3-4-3;Lionel Messi;8,0 mio.;Ousmane Dembele;Frankrig;FWD;5,5 mio.;36.0;3.022;start lav: 36%
+group_stage;3-4-3;Lionel Messi;8,0 mio.;Dani Olmo;Spanien;MID;5,0 mio.;58.0;2.976;position=MID ikke FWD
+group_stage;3-5-2;Jonathan David;4,5 mio.;Vinicius Junior;Brasilien;FWD;7,5 mio.;92.0;7.185;for dyrt: 52.0 mio.
+group_stage;3-5-2;Jonathan David;4,5 mio.;Harry Kane;England;FWD;9,5 mio.;97.0;6.571;for dyrt: 54.0 mio.
+group_stage;3-5-2;Jonathan David;4,5 mio.;Lamine Yamal;Spanien;FWD;9,0 mio.;90.0;6.284;for dyrt: 53.5 mio.
+group_stage;3-5-2;Jonathan David;4,5 mio.;Raul Jimenez;Mexico;FWD;4,5 mio.;79.0;6.197;OK
+group_stage;3-5-2;Jonathan David;4,5 mio.;Mikel Oyarzabal;Spanien;FWD;7,5 mio.;88.0;6.019;for dyrt: 52.0 mio.
+group_stage;3-5-2;Jonathan David;4,5 mio.;Cody Gakpo;Holland;FWD;6,5 mio.;91.0;5.961;for dyrt: 51.0 mio.
+group_stage;3-5-2;Jonathan David;4,5 mio.;Kylian Mbappe;Frankrig;FWD;10,0 mio.;95.0;5.745;for dyrt: 54.5 mio.
+group_stage;3-5-2;Jonathan David;4,5 mio.;Marko Arnautovic;Østrig;FWD;4,5 mio.;65.0;5.034;OK
+group_stage;3-5-2;Jonathan David;4,5 mio.;Erling Haaland;Norge;FWD;8,5 mio.;93.0;4.93;for dyrt: 53.0 mio.
+group_stage;3-5-2;Jonathan David;4,5 mio.;Julian Alvarez;Argentina;FWD;6,0 mio.;72.0;4.742;for dyrt: 50.5 mio.
+group_stage;3-5-2;Jonathan David;4,5 mio.;Kai Havertz;Tyskland;FWD;5,5 mio.;88.0;4.089;OK
+group_stage;3-5-2;Jonathan David;4,5 mio.;Michael Olise;Frankrig;FWD;7,0 mio.;86.0;3.814;for dyrt: 51.5 mio.
+group_stage;3-5-2;Jonathan David;4,5 mio.;Ousmane Dembele;Frankrig;FWD;5,5 mio.;36.0;3.022;start lav: 36%
+group_stage;3-5-2;Jonathan David;4,5 mio.;Dani Olmo;Spanien;MID;5,0 mio.;58.0;2.976;position=MID ikke FWD
+group_stage;3-5-2;Lionel Messi;8,0 mio.;Vinicius Junior;Brasilien;FWD;7,5 mio.;92.0;7.185;OK
+group_stage;3-5-2;Lionel Messi;8,0 mio.;Harry Kane;England;FWD;9,5 mio.;97.0;6.571;for dyrt: 50.5 mio.
+group_stage;3-5-2;Lionel Messi;8,0 mio.;Lamine Yamal;Spanien;FWD;9,0 mio.;90.0;6.284;OK
+group_stage;3-5-2;Lionel Messi;8,0 mio.;Raul Jimenez;Mexico;FWD;4,5 mio.;79.0;6.197;OK
+group_stage;3-5-2;Lionel Messi;8,0 mio.;Mikel Oyarzabal;Spanien;FWD;7,5 mio.;88.0;6.019;OK
+group_stage;3-5-2;Lionel Messi;8,0 mio.;Cody Gakpo;Holland;FWD;6,5 mio.;91.0;5.961;OK
+group_stage;3-5-2;Lionel Messi;8,0 mio.;Kylian Mbappe;Frankrig;FWD;10,0 mio.;95.0;5.745;for dyrt: 51.0 mio.
+group_stage;3-5-2;Lionel Messi;8,0 mio.;Marko Arnautovic;Østrig;FWD;4,5 mio.;65.0;5.034;OK
+group_stage;3-5-2;Lionel Messi;8,0 mio.;Erling Haaland;Norge;FWD;8,5 mio.;93.0;4.93;OK
+group_stage;3-5-2;Lionel Messi;8,0 mio.;Julian Alvarez;Argentina;FWD;6,0 mio.;72.0;4.742;OK
+group_stage;3-5-2;Lionel Messi;8,0 mio.;Kai Havertz;Tyskland;FWD;5,5 mio.;88.0;4.089;OK
+group_stage;3-5-2;Lionel Messi;8,0 mio.;Michael Olise;Frankrig;FWD;7,0 mio.;86.0;3.814;OK
+group_stage;3-5-2;Lionel Messi;8,0 mio.;Ousmane Dembele;Frankrig;FWD;5,5 mio.;36.0;3.022;start lav: 36%
+group_stage;3-5-2;Lionel Messi;8,0 mio.;Dani Olmo;Spanien;MID;5,0 mio.;58.0;2.976;position=MID ikke FWD
+group_stage;4-3-3;Cristiano Ronaldo;7,0 mio.;Vinicius Junior;Brasilien;FWD;7,5 mio.;92.0;7.185;allerede i holdet
+group_stage;4-3-3;Cristiano Ronaldo;7,0 mio.;Harry Kane;England;FWD;9,5 mio.;97.0;6.571;for dyrt: 52.0 mio.
+group_stage;4-3-3;Cristiano Ronaldo;7,0 mio.;Lamine Yamal;Spanien;FWD;9,0 mio.;90.0;6.284;for dyrt: 51.5 mio.
+group_stage;4-3-3;Cristiano Ronaldo;7,0 mio.;Raul Jimenez;Mexico;FWD;4,5 mio.;79.0;6.197;OK
+group_stage;4-3-3;Cristiano Ronaldo;7,0 mio.;Mikel Oyarzabal;Spanien;FWD;7,5 mio.;88.0;6.019;OK
+group_stage;4-3-3;Cristiano Ronaldo;7,0 mio.;Cody Gakpo;Holland;FWD;6,5 mio.;91.0;5.961;OK
+group_stage;4-3-3;Cristiano Ronaldo;7,0 mio.;Kylian Mbappe;Frankrig;FWD;10,0 mio.;95.0;5.745;for dyrt: 52.5 mio.
+group_stage;4-3-3;Cristiano Ronaldo;7,0 mio.;Marko Arnautovic;Østrig;FWD;4,5 mio.;65.0;5.034;OK
+group_stage;4-3-3;Cristiano Ronaldo;7,0 mio.;Erling Haaland;Norge;FWD;8,5 mio.;93.0;4.93;for dyrt: 51.0 mio.
+group_stage;4-3-3;Cristiano Ronaldo;7,0 mio.;Julian Alvarez;Argentina;FWD;6,0 mio.;72.0;4.742;OK
+group_stage;4-3-3;Cristiano Ronaldo;7,0 mio.;Kai Havertz;Tyskland;FWD;5,5 mio.;88.0;4.089;OK
+group_stage;4-3-3;Cristiano Ronaldo;7,0 mio.;Michael Olise;Frankrig;FWD;7,0 mio.;86.0;3.814;OK
+group_stage;4-3-3;Cristiano Ronaldo;7,0 mio.;Ousmane Dembele;Frankrig;FWD;5,5 mio.;36.0;3.022;start lav: 36%
+group_stage;4-3-3;Cristiano Ronaldo;7,0 mio.;Dani Olmo;Spanien;MID;5,0 mio.;58.0;2.976;position=MID ikke FWD
+group_stage;4-3-3;Jonathan David;4,5 mio.;Vinicius Junior;Brasilien;FWD;7,5 mio.;92.0;7.185;allerede i holdet | for dyrt: 52.5 mio.
+group_stage;4-3-3;Jonathan David;4,5 mio.;Harry Kane;England;FWD;9,5 mio.;97.0;6.571;for dyrt: 54.5 mio.
+group_stage;4-3-3;Jonathan David;4,5 mio.;Lamine Yamal;Spanien;FWD;9,0 mio.;90.0;6.284;for dyrt: 54.0 mio.
+group_stage;4-3-3;Jonathan David;4,5 mio.;Raul Jimenez;Mexico;FWD;4,5 mio.;79.0;6.197;OK
+group_stage;4-3-3;Jonathan David;4,5 mio.;Mikel Oyarzabal;Spanien;FWD;7,5 mio.;88.0;6.019;for dyrt: 52.5 mio.
+group_stage;4-3-3;Jonathan David;4,5 mio.;Cody Gakpo;Holland;FWD;6,5 mio.;91.0;5.961;for dyrt: 51.5 mio.
+group_stage;4-3-3;Jonathan David;4,5 mio.;Kylian Mbappe;Frankrig;FWD;10,0 mio.;95.0;5.745;for dyrt: 55.0 mio.
+group_stage;4-3-3;Jonathan David;4,5 mio.;Marko Arnautovic;Østrig;FWD;4,5 mio.;65.0;5.034;OK
+group_stage;4-3-3;Jonathan David;4,5 mio.;Erling Haaland;Norge;FWD;8,5 mio.;93.0;4.93;for dyrt: 53.5 mio.
+group_stage;4-3-3;Jonathan David;4,5 mio.;Julian Alvarez;Argentina;FWD;6,0 mio.;72.0;4.742;for dyrt: 51.0 mio.
+group_stage;4-3-3;Jonathan David;4,5 mio.;Kai Havertz;Tyskland;FWD;5,5 mio.;88.0;4.089;for dyrt: 50.5 mio.
+group_stage;4-3-3;Jonathan David;4,5 mio.;Michael Olise;Frankrig;FWD;7,0 mio.;86.0;3.814;for dyrt: 52.0 mio.
+group_stage;4-3-3;Jonathan David;4,5 mio.;Ousmane Dembele;Frankrig;FWD;5,5 mio.;36.0;3.022;start lav: 36% | for dyrt: 50.5 mio.
+group_stage;4-3-3;Jonathan David;4,5 mio.;Dani Olmo;Spanien;MID;5,0 mio.;58.0;2.976;position=MID ikke FWD
+practical_start;3-4-3;Cristiano Ronaldo;7,0 mio.;Vinicius Junior;Brasilien;FWD;7,5 mio.;92.0;7.185;for dyrt: 50.5 mio.
+practical_start;3-4-3;Cristiano Ronaldo;7,0 mio.;Harry Kane;England;FWD;9,5 mio.;97.0;6.571;for dyrt: 52.5 mio.
+practical_start;3-4-3;Cristiano Ronaldo;7,0 mio.;Lamine Yamal;Spanien;FWD;9,0 mio.;90.0;6.284;for dyrt: 52.0 mio.
+practical_start;3-4-3;Cristiano Ronaldo;7,0 mio.;Raul Jimenez;Mexico;FWD;4,5 mio.;79.0;6.197;allerede i holdet
+practical_start;3-4-3;Cristiano Ronaldo;7,0 mio.;Mikel Oyarzabal;Spanien;FWD;7,5 mio.;88.0;6.019;for dyrt: 50.5 mio.
+practical_start;3-4-3;Cristiano Ronaldo;7,0 mio.;Cody Gakpo;Holland;FWD;6,5 mio.;91.0;5.961;OK
+practical_start;3-4-3;Cristiano Ronaldo;7,0 mio.;Kylian Mbappe;Frankrig;FWD;10,0 mio.;95.0;5.745;for dyrt: 53.0 mio.
+practical_start;3-4-3;Cristiano Ronaldo;7,0 mio.;Marko Arnautovic;Østrig;FWD;4,5 mio.;65.0;5.034;OK
+practical_start;3-4-3;Cristiano Ronaldo;7,0 mio.;Erling Haaland;Norge;FWD;8,5 mio.;93.0;4.93;for dyrt: 51.5 mio.
+practical_start;3-4-3;Cristiano Ronaldo;7,0 mio.;Julian Alvarez;Argentina;FWD;6,0 mio.;72.0;4.742;OK
+practical_start;3-4-3;Cristiano Ronaldo;7,0 mio.;Kai Havertz;Tyskland;FWD;5,5 mio.;88.0;4.089;OK
+practical_start;3-4-3;Cristiano Ronaldo;7,0 mio.;Michael Olise;Frankrig;FWD;7,0 mio.;86.0;3.814;OK
+practical_start;3-4-3;Cristiano Ronaldo;7,0 mio.;Ousmane Dembele;Frankrig;FWD;5,5 mio.;36.0;3.022;start lav: 36%
+practical_start;3-4-3;Cristiano Ronaldo;7,0 mio.;Dani Olmo;Spanien;MID;5,0 mio.;58.0;2.976;position=MID ikke FWD
+practical_start;3-4-3;Jonathan David;4,5 mio.;Vinicius Junior;Brasilien;FWD;7,5 mio.;92.0;7.185;for dyrt: 53.0 mio.
+practical_start;3-4-3;Jonathan David;4,5 mio.;Harry Kane;England;FWD;9,5 mio.;97.0;6.571;for dyrt: 55.0 mio.
+practical_start;3-4-3;Jonathan David;4,5 mio.;Lamine Yamal;Spanien;FWD;9,0 mio.;90.0;6.284;for dyrt: 54.5 mio.
+practical_start;3-4-3;Jonathan David;4,5 mio.;Raul Jimenez;Mexico;FWD;4,5 mio.;79.0;6.197;allerede i holdet
+practical_start;3-4-3;Jonathan David;4,5 mio.;Mikel Oyarzabal;Spanien;FWD;7,5 mio.;88.0;6.019;for dyrt: 53.0 mio.
+practical_start;3-4-3;Jonathan David;4,5 mio.;Cody Gakpo;Holland;FWD;6,5 mio.;91.0;5.961;for dyrt: 52.0 mio.
+practical_start;3-4-3;Jonathan David;4,5 mio.;Kylian Mbappe;Frankrig;FWD;10,0 mio.;95.0;5.745;for dyrt: 55.5 mio.
+practical_start;3-4-3;Jonathan David;4,5 mio.;Marko Arnautovic;Østrig;FWD;4,5 mio.;65.0;5.034;OK
+practical_start;3-4-3;Jonathan David;4,5 mio.;Erling Haaland;Norge;FWD;8,5 mio.;93.0;4.93;for dyrt: 54.0 mio.
+practical_start;3-4-3;Jonathan David;4,5 mio.;Julian Alvarez;Argentina;FWD;6,0 mio.;72.0;4.742;for dyrt: 51.5 mio.
+practical_start;3-4-3;Jonathan David;4,5 mio.;Kai Havertz;Tyskland;FWD;5,5 mio.;88.0;4.089;for dyrt: 51.0 mio.
+practical_start;3-4-3;Jonathan David;4,5 mio.;Michael Olise;Frankrig;FWD;7,0 mio.;86.0;3.814;for dyrt: 52.5 mio.
+practical_start;3-4-3;Jonathan David;4,5 mio.;Ousmane Dembele;Frankrig;FWD;5,5 mio.;36.0;3.022;start lav: 36% | for dyrt: 51.0 mio.
+practical_start;3-4-3;Jonathan David;4,5 mio.;Dani Olmo;Spanien;MID;5,0 mio.;58.0;2.976;position=MID ikke FWD | for dyrt: 50.5 mio.
+practical_start;3-5-2;Cristiano Ronaldo;7,0 mio.;Vinicius Junior;Brasilien;FWD;7,5 mio.;92.0;7.185;for dyrt: 50.5 mio.
+practical_start;3-5-2;Cristiano Ronaldo;7,0 mio.;Harry Kane;England;FWD;9,5 mio.;97.0;6.571;for dyrt: 52.5 mio.
+practical_start;3-5-2;Cristiano Ronaldo;7,0 mio.;Lamine Yamal;Spanien;FWD;9,0 mio.;90.0;6.284;for dyrt: 52.0 mio.
+practical_start;3-5-2;Cristiano Ronaldo;7,0 mio.;Raul Jimenez;Mexico;FWD;4,5 mio.;79.0;6.197;OK
+practical_start;3-5-2;Cristiano Ronaldo;7,0 mio.;Mikel Oyarzabal;Spanien;FWD;7,5 mio.;88.0;6.019;for dyrt: 50.5 mio.
+practical_start;3-5-2;Cristiano Ronaldo;7,0 mio.;Cody Gakpo;Holland;FWD;6,5 mio.;91.0;5.961;OK
+practical_start;3-5-2;Cristiano Ronaldo;7,0 mio.;Kylian Mbappe;Frankrig;FWD;10,0 mio.;95.0;5.745;for dyrt: 53.0 mio.
+practical_start;3-5-2;Cristiano Ronaldo;7,0 mio.;Marko Arnautovic;Østrig;FWD;4,5 mio.;65.0;5.034;OK
+practical_start;3-5-2;Cristiano Ronaldo;7,0 mio.;Erling Haaland;Norge;FWD;8,5 mio.;93.0;4.93;for dyrt: 51.5 mio.
+practical_start;3-5-2;Cristiano Ronaldo;7,0 mio.;Julian Alvarez;Argentina;FWD;6,0 mio.;72.0;4.742;OK
+practical_start;3-5-2;Cristiano Ronaldo;7,0 mio.;Kai Havertz;Tyskland;FWD;5,5 mio.;88.0;4.089;OK
+practical_start;3-5-2;Cristiano Ronaldo;7,0 mio.;Michael Olise;Frankrig;FWD;7,0 mio.;86.0;3.814;OK
+practical_start;3-5-2;Cristiano Ronaldo;7,0 mio.;Ousmane Dembele;Frankrig;FWD;5,5 mio.;36.0;3.022;start lav: 36%
+practical_start;3-5-2;Cristiano Ronaldo;7,0 mio.;Dani Olmo;Spanien;MID;5,0 mio.;58.0;2.976;position=MID ikke FWD
+practical_start;3-5-2;Jonathan David;4,5 mio.;Vinicius Junior;Brasilien;FWD;7,5 mio.;92.0;7.185;for dyrt: 53.0 mio.
+practical_start;3-5-2;Jonathan David;4,5 mio.;Harry Kane;England;FWD;9,5 mio.;97.0;6.571;for dyrt: 55.0 mio.
+practical_start;3-5-2;Jonathan David;4,5 mio.;Lamine Yamal;Spanien;FWD;9,0 mio.;90.0;6.284;for dyrt: 54.5 mio.
+practical_start;3-5-2;Jonathan David;4,5 mio.;Raul Jimenez;Mexico;FWD;4,5 mio.;79.0;6.197;OK
+practical_start;3-5-2;Jonathan David;4,5 mio.;Mikel Oyarzabal;Spanien;FWD;7,5 mio.;88.0;6.019;for dyrt: 53.0 mio.
+practical_start;3-5-2;Jonathan David;4,5 mio.;Cody Gakpo;Holland;FWD;6,5 mio.;91.0;5.961;for dyrt: 52.0 mio.
+practical_start;3-5-2;Jonathan David;4,5 mio.;Kylian Mbappe;Frankrig;FWD;10,0 mio.;95.0;5.745;for dyrt: 55.5 mio.
+practical_start;3-5-2;Jonathan David;4,5 mio.;Marko Arnautovic;Østrig;FWD;4,5 mio.;65.0;5.034;OK
+practical_start;3-5-2;Jonathan David;4,5 mio.;Erling Haaland;Norge;FWD;8,5 mio.;93.0;4.93;for dyrt: 54.0 mio.
+practical_start;3-5-2;Jonathan David;4,5 mio.;Julian Alvarez;Argentina;FWD;6,0 mio.;72.0;4.742;for dyrt: 51.5 mio.
+practical_start;3-5-2;Jonathan David;4,5 mio.;Kai Havertz;Tyskland;FWD;5,5 mio.;88.0;4.089;for dyrt: 51.0 mio.
+practical_start;3-5-2;Jonathan David;4,5 mio.;Michael Olise;Frankrig;FWD;7,0 mio.;86.0;3.814;for dyrt: 52.5 mio.
+practical_start;3-5-2;Jonathan David;4,5 mio.;Ousmane Dembele;Frankrig;FWD;5,5 mio.;36.0;3.022;start lav: 36% | for dyrt: 51.0 mio.
+practical_start;3-5-2;Jonathan David;4,5 mio.;Dani Olmo;Spanien;MID;5,0 mio.;58.0;2.976;position=MID ikke FWD | for dyrt: 50.5 mio.
+practical_start;4-3-3;Jonathan David;4,5 mio.;Vinicius Junior;Brasilien;FWD;7,5 mio.;92.0;7.185;allerede i holdet | for dyrt: 53.0 mio.
+practical_start;4-3-3;Jonathan David;4,5 mio.;Harry Kane;England;FWD;9,5 mio.;97.0;6.571;for dyrt: 55.0 mio.
+practical_start;4-3-3;Jonathan David;4,5 mio.;Lamine Yamal;Spanien;FWD;9,0 mio.;90.0;6.284;for dyrt: 54.5 mio.
+practical_start;4-3-3;Jonathan David;4,5 mio.;Raul Jimenez;Mexico;FWD;4,5 mio.;79.0;6.197;allerede i holdet
+practical_start;4-3-3;Jonathan David;4,5 mio.;Mikel Oyarzabal;Spanien;FWD;7,5 mio.;88.0;6.019;for dyrt: 53.0 mio.
+practical_start;4-3-3;Jonathan David;4,5 mio.;Cody Gakpo;Holland;FWD;6,5 mio.;91.0;5.961;for dyrt: 52.0 mio.
+practical_start;4-3-3;Jonathan David;4,5 mio.;Kylian Mbappe;Frankrig;FWD;10,0 mio.;95.0;5.745;for dyrt: 55.5 mio.
+practical_start;4-3-3;Jonathan David;4,5 mio.;Marko Arnautovic;Østrig;FWD;4,5 mio.;65.0;5.034;OK
+practical_start;4-3-3;Jonathan David;4,5 mio.;Erling Haaland;Norge;FWD;8,5 mio.;93.0;4.93;for dyrt: 54.0 mio.
+practical_start;4-3-3;Jonathan David;4,5 mio.;Julian Alvarez;Argentina;FWD;6,0 mio.;72.0;4.742;for dyrt: 51.5 mio.
+practical_start;4-3-3;Jonathan David;4,5 mio.;Kai Havertz;Tyskland;FWD;5,5 mio.;88.0;4.089;for dyrt: 51.0 mio.
+practical_start;4-3-3;Jonathan David;4,5 mio.;Michael Olise;Frankrig;FWD;7,0 mio.;86.0;3.814;for dyrt: 52.5 mio.
+practical_start;4-3-3;Jonathan David;4,5 mio.;Ousmane Dembele;Frankrig;FWD;5,5 mio.;36.0;3.022;start lav: 36% | for dyrt: 51.0 mio.
+practical_start;4-3-3;Jonathan David;4,5 mio.;Dani Olmo;Spanien;MID;5,0 mio.;58.0;2.976;position=MID ikke FWD | for dyrt: 50.5 mio.
+long_run;3-4-3;Cristiano Ronaldo;7,0 mio.;Vinicius Junior;Brasilien;FWD;7,5 mio.;92.0;7.185;allerede i holdet | for dyrt: 50.5 mio.
+long_run;3-4-3;Cristiano Ronaldo;7,0 mio.;Harry Kane;England;FWD;9,5 mio.;97.0;6.571;for dyrt: 52.5 mio.
+long_run;3-4-3;Cristiano Ronaldo;7,0 mio.;Lamine Yamal;Spanien;FWD;9,0 mio.;90.0;6.284;for dyrt: 52.0 mio.
+long_run;3-4-3;Cristiano Ronaldo;7,0 mio.;Raul Jimenez;Mexico;FWD;4,5 mio.;79.0;6.197;OK
+long_run;3-4-3;Cristiano Ronaldo;7,0 mio.;Mikel Oyarzabal;Spanien;FWD;7,5 mio.;88.0;6.019;for dyrt: 50.5 mio.
+long_run;3-4-3;Cristiano Ronaldo;7,0 mio.;Cody Gakpo;Holland;FWD;6,5 mio.;91.0;5.961;OK
+long_run;3-4-3;Cristiano Ronaldo;7,0 mio.;Kylian Mbappe;Frankrig;FWD;10,0 mio.;95.0;5.745;for dyrt: 53.0 mio.
+long_run;3-4-3;Cristiano Ronaldo;7,0 mio.;Marko Arnautovic;Østrig;FWD;4,5 mio.;65.0;5.034;OK
+long_run;3-4-3;Cristiano Ronaldo;7,0 mio.;Erling Haaland;Norge;FWD;8,5 mio.;93.0;4.93;for dyrt: 51.5 mio.
+long_run;3-4-3;Cristiano Ronaldo;7,0 mio.;Julian Alvarez;Argentina;FWD;6,0 mio.;72.0;4.742;OK
+long_run;3-4-3;Cristiano Ronaldo;7,0 mio.;Kai Havertz;Tyskland;FWD;5,5 mio.;88.0;4.089;OK
+long_run;3-4-3;Cristiano Ronaldo;7,0 mio.;Michael Olise;Frankrig;FWD;7,0 mio.;86.0;3.814;OK
+long_run;3-4-3;Cristiano Ronaldo;7,0 mio.;Ousmane Dembele;Frankrig;FWD;5,5 mio.;36.0;3.022;start lav: 36%
+long_run;3-4-3;Cristiano Ronaldo;7,0 mio.;Dani Olmo;Spanien;MID;5,0 mio.;58.0;2.976;position=MID ikke FWD
+long_run;3-5-2;Cristiano Ronaldo;7,0 mio.;Vinicius Junior;Brasilien;FWD;7,5 mio.;92.0;7.185;for dyrt: 50.5 mio.
+long_run;3-5-2;Cristiano Ronaldo;7,0 mio.;Harry Kane;England;FWD;9,5 mio.;97.0;6.571;for dyrt: 52.5 mio.
+long_run;3-5-2;Cristiano Ronaldo;7,0 mio.;Lamine Yamal;Spanien;FWD;9,0 mio.;90.0;6.284;for dyrt: 52.0 mio.
+long_run;3-5-2;Cristiano Ronaldo;7,0 mio.;Raul Jimenez;Mexico;FWD;4,5 mio.;79.0;6.197;OK
+long_run;3-5-2;Cristiano Ronaldo;7,0 mio.;Mikel Oyarzabal;Spanien;FWD;7,5 mio.;88.0;6.019;for dyrt: 50.5 mio.
+long_run;3-5-2;Cristiano Ronaldo;7,0 mio.;Cody Gakpo;Holland;FWD;6,5 mio.;91.0;5.961;OK
+long_run;3-5-2;Cristiano Ronaldo;7,0 mio.;Kylian Mbappe;Frankrig;FWD;10,0 mio.;95.0;5.745;for dyrt: 53.0 mio.
+long_run;3-5-2;Cristiano Ronaldo;7,0 mio.;Marko Arnautovic;Østrig;FWD;4,5 mio.;65.0;5.034;OK
+long_run;3-5-2;Cristiano Ronaldo;7,0 mio.;Erling Haaland;Norge;FWD;8,5 mio.;93.0;4.93;for dyrt: 51.5 mio.
+long_run;3-5-2;Cristiano Ronaldo;7,0 mio.;Julian Alvarez;Argentina;FWD;6,0 mio.;72.0;4.742;OK
+long_run;3-5-2;Cristiano Ronaldo;7,0 mio.;Kai Havertz;Tyskland;FWD;5,5 mio.;88.0;4.089;OK
+long_run;3-5-2;Cristiano Ronaldo;7,0 mio.;Michael Olise;Frankrig;FWD;7,0 mio.;86.0;3.814;OK
+long_run;3-5-2;Cristiano Ronaldo;7,0 mio.;Ousmane Dembele;Frankrig;FWD;5,5 mio.;36.0;3.022;start lav: 36%
+long_run;3-5-2;Cristiano Ronaldo;7,0 mio.;Dani Olmo;Spanien;MID;5,0 mio.;58.0;2.976;position=MID ikke FWD
+long_run;4-3-3;Jonathan David;4,5 mio.;Vinicius Junior;Brasilien;FWD;7,5 mio.;92.0;7.185;allerede i holdet | for dyrt: 50.5 mio.
+long_run;4-3-3;Jonathan David;4,5 mio.;Harry Kane;England;FWD;9,5 mio.;97.0;6.571;for dyrt: 52.5 mio.
+long_run;4-3-3;Jonathan David;4,5 mio.;Lamine Yamal;Spanien;FWD;9,0 mio.;90.0;6.284;for dyrt: 52.0 mio.
+long_run;4-3-3;Jonathan David;4,5 mio.;Raul Jimenez;Mexico;FWD;4,5 mio.;79.0;6.197;OK
+long_run;4-3-3;Jonathan David;4,5 mio.;Mikel Oyarzabal;Spanien;FWD;7,5 mio.;88.0;6.019;for dyrt: 50.5 mio.
+long_run;4-3-3;Jonathan David;4,5 mio.;Cody Gakpo;Holland;FWD;6,5 mio.;91.0;5.961;OK
+long_run;4-3-3;Jonathan David;4,5 mio.;Kylian Mbappe;Frankrig;FWD;10,0 mio.;95.0;5.745;for dyrt: 53.0 mio.
+long_run;4-3-3;Jonathan David;4,5 mio.;Marko Arnautovic;Østrig;FWD;4,5 mio.;65.0;5.034;OK
+long_run;4-3-3;Jonathan David;4,5 mio.;Erling Haaland;Norge;FWD;8,5 mio.;93.0;4.93;for dyrt: 51.5 mio.
+long_run;4-3-3;Jonathan David;4,5 mio.;Julian Alvarez;Argentina;FWD;6,0 mio.;72.0;4.742;OK
+long_run;4-3-3;Jonathan David;4,5 mio.;Kai Havertz;Tyskland;FWD;5,5 mio.;88.0;4.089;OK
+long_run;4-3-3;Jonathan David;4,5 mio.;Michael Olise;Frankrig;FWD;7,0 mio.;86.0;3.814;OK
+long_run;4-3-3;Jonathan David;4,5 mio.;Ousmane Dembele;Frankrig;FWD;5,5 mio.;36.0;3.022;start lav: 36%
+long_run;4-3-3;Jonathan David;4,5 mio.;Dani Olmo;Spanien;MID;5,0 mio.;58.0;2.976;position=MID ikke FWD
+long_run;4-4-2;Jonathan David;4,5 mio.;Vinicius Junior;Brasilien;FWD;7,5 mio.;92.0;7.185;for dyrt: 50.5 mio.
+long_run;4-4-2;Jonathan David;4,5 mio.;Harry Kane;England;FWD;9,5 mio.;97.0;6.571;for dyrt: 52.5 mio.
+long_run;4-4-2;Jonathan David;4,5 mio.;Lamine Yamal;Spanien;FWD;9,0 mio.;90.0;6.284;for dyrt: 52.0 mio.
+long_run;4-4-2;Jonathan David;4,5 mio.;Raul Jimenez;Mexico;FWD;4,5 mio.;79.0;6.197;OK
+long_run;4-4-2;Jonathan David;4,5 mio.;Mikel Oyarzabal;Spanien;FWD;7,5 mio.;88.0;6.019;for dyrt: 50.5 mio.
+long_run;4-4-2;Jonathan David;4,5 mio.;Cody Gakpo;Holland;FWD;6,5 mio.;91.0;5.961;OK
+long_run;4-4-2;Jonathan David;4,5 mio.;Kylian Mbappe;Frankrig;FWD;10,0 mio.;95.0;5.745;for dyrt: 53.0 mio.
+long_run;4-4-2;Jonathan David;4,5 mio.;Marko Arnautovic;Østrig;FWD;4,5 mio.;65.0;5.034;OK
+long_run;4-4-2;Jonathan David;4,5 mio.;Erling Haaland;Norge;FWD;8,5 mio.;93.0;4.93;for dyrt: 51.5 mio.
+long_run;4-4-2;Jonathan David;4,5 mio.;Julian Alvarez;Argentina;FWD;6,0 mio.;72.0;4.742;OK
+long_run;4-4-2;Jonathan David;4,5 mio.;Kai Havertz;Tyskland;FWD;5,5 mio.;88.0;4.089;OK
+long_run;4-4-2;Jonathan David;4,5 mio.;Michael Olise;Frankrig;FWD;7,0 mio.;86.0;3.814;OK
+long_run;4-4-2;Jonathan David;4,5 mio.;Ousmane Dembele;Frankrig;FWD;5,5 mio.;36.0;3.022;start lav: 36%
+long_run;4-4-2;Jonathan David;4,5 mio.;Dani Olmo;Spanien;MID;5,0 mio.;58.0;2.976;position=MID ikke FWD

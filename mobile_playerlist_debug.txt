@@ -1,0 +1,1436 @@
+﻿=== VM2026 player list debug ===
+
+
+=== PATTERN: renderPlayer ===
+LINE 3795:     function renderPlayerVisual(player, variant = "list") {
+          if (!player) return "";
+    
+          const appearance = player.holdet_appearance || {};
+          const [shirt, shorts, trim] = getTeamVisualColors(player);
+          const skin = sanitizeHexColor(appearance.skinColor, "#E9A58D");
+          const hair = sanitizeHexColor(appearance.hairColor, "#2b1a12");
+          const hairStyle = String(appearance.hairStyle || "").toLowerCase();
+    
+---
+
+
+=== PATTERN: playerList ===
+LINE 2319:   #playerList,
+      .players-list {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box;
+      }
+    
+      .player-row,
+---
+LINE 2852:   #playerList,
+      .players-list {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-right: 4px !important;
+        margin-right: 0 !important;
+        box-sizing: border-box !important;
+      }
+    
+---
+LINE 3073:               <button id="showPlayerListBtn" class="right-mode-btn active" type="button">Se spillerliste</button>
+                </div>
+              </div>
+    
+              <div class="trade-search">
+                <input
+                  id="searchInput"
+                  name="player_lookup_q"
+                  type="search"
+---
+LINE 3252:     let forcePlayerListForActiveSlot = false;
+        let previousReplacementBySlot = new Map();
+        let modelChoiceBySlot = new Map();
+        let squadHistory = [];
+        let autosaveTimer = null;
+        let autosaveWriteChain = Promise.resolve(true);
+        let authMode = "login";
+        let isApplyingRemoteSquad = false;
+        let eligibleOnly = localStorage.getItem(STORAGE_KEYS.eligibleOnly) === "1";
+---
+LINE 3275:     const showPlayerListBtn = document.getElementById("showPlayerListBtn");
+        const activePositionChip = document.getElementById("activePositionChip");
+        const infoBox = document.getElementById("infoBox");
+        const infoBoxToggle = document.getElementById("infoBoxToggle");
+        const spentValue = document.getElementById("spentValue");
+        const bankValue = document.getElementById("bankValue");
+        const playerCountValue = document.getElementById("playerCountValue");
+        const avgStartValue = document.getElementById("avgStartValue");
+        const highRiskValue = document.getElementById("highRiskValue");
+---
+LINE 5079:       forcePlayerListForActiveSlot = false;
+          activeSlotKey = slotKey;
+          const slot = getCurrentSlots().find(s => s.key === slotKey);
+    
+          if (slot) {
+            positionFilter.value = slot.position;
+          }
+    
+          render();
+---
+LINE 6145:       if (activeSlotKey && activeSlot && currentPlayerForActiveSlot && !forcePlayerListForActiveSlot) {
+            rightPanel?.classList.add("alternative-mode");
+            activePositionChip.hidden = true;
+            if (rightModeTitle) rightModeTitle.textContent = "Alternativer";
+            if (showPlayerListBtn) {
+              showPlayerListBtn.textContent = "Se spillerliste";
+              showPlayerListBtn.disabled = false;
+            }
+            showPlayerListBtn?.classList.remove("active");
+---
+LINE 6149:         if (showPlayerListBtn) {
+              showPlayerListBtn.textContent = "Se spillerliste";
+              showPlayerListBtn.disabled = false;
+            }
+            showPlayerListBtn?.classList.remove("active");
+            tradeList.innerHTML = renderAlternativePanel(activeSlot, currentPlayerForActiveSlot);
+            tradeList.querySelectorAll(".plus-btn, .choose-alt-btn").forEach(btn => {
+              btn.addEventListener("click", () => addPlayerToSlot(btn.dataset.playerId, activeSlot.key));
+            });
+---
+LINE 6150:           showPlayerListBtn.textContent = "Se spillerliste";
+              showPlayerListBtn.disabled = false;
+            }
+            showPlayerListBtn?.classList.remove("active");
+            tradeList.innerHTML = renderAlternativePanel(activeSlot, currentPlayerForActiveSlot);
+            tradeList.querySelectorAll(".plus-btn, .choose-alt-btn").forEach(btn => {
+              btn.addEventListener("click", () => addPlayerToSlot(btn.dataset.playerId, activeSlot.key));
+            });
+            return;
+---
+LINE 6151:           showPlayerListBtn.disabled = false;
+            }
+            showPlayerListBtn?.classList.remove("active");
+            tradeList.innerHTML = renderAlternativePanel(activeSlot, currentPlayerForActiveSlot);
+            tradeList.querySelectorAll(".plus-btn, .choose-alt-btn").forEach(btn => {
+              btn.addEventListener("click", () => addPlayerToSlot(btn.dataset.playerId, activeSlot.key));
+            });
+            return;
+          }
+---
+LINE 6153:         showPlayerListBtn?.classList.remove("active");
+            tradeList.innerHTML = renderAlternativePanel(activeSlot, currentPlayerForActiveSlot);
+            tradeList.querySelectorAll(".plus-btn, .choose-alt-btn").forEach(btn => {
+              btn.addEventListener("click", () => addPlayerToSlot(btn.dataset.playerId, activeSlot.key));
+            });
+            return;
+          }
+    
+          rightPanel?.classList.remove("alternative-mode");
+---
+LINE 6163:       if (showPlayerListBtn) {
+            const canShowAlternatives = !!(activeSlot && currentPlayerForActiveSlot);
+            showPlayerListBtn.textContent = "Se alternativer";
+            showPlayerListBtn.disabled = !canShowAlternatives;
+          }
+          showPlayerListBtn?.classList.add("active");
+    
+          const showPositionChip = !!(
+            activeSlot
+---
+LINE 6165:         showPlayerListBtn.textContent = "Se alternativer";
+            showPlayerListBtn.disabled = !canShowAlternatives;
+          }
+          showPlayerListBtn?.classList.add("active");
+    
+          const showPositionChip = !!(
+            activeSlot
+            && currentPlayerForActiveSlot
+            && forcePlayerListForActiveSlot
+---
+LINE 6166:         showPlayerListBtn.disabled = !canShowAlternatives;
+          }
+          showPlayerListBtn?.classList.add("active");
+    
+          const showPositionChip = !!(
+            activeSlot
+            && currentPlayerForActiveSlot
+            && forcePlayerListForActiveSlot
+            && position
+---
+LINE 6168:       showPlayerListBtn?.classList.add("active");
+    
+          const showPositionChip = !!(
+            activeSlot
+            && currentPlayerForActiveSlot
+            && forcePlayerListForActiveSlot
+            && position
+          );
+          activePositionChip.hidden = !showPositionChip;
+---
+LINE 6173:         && forcePlayerListForActiveSlot
+            && position
+          );
+          activePositionChip.hidden = !showPositionChip;
+          activePositionChip.textContent = showPositionChip
+            ? `${positionFullLabel(position)} \u00d7`
+            : "";
+    
+          if (search) {
+---
+LINE 6768:       showPlayerListBtn.addEventListener("click", () => {
+            const activeSlot = activeSlotKey
+              ? getCurrentSlots().find(slot => slot.key === activeSlotKey)
+              : null;
+            const activePlayer = activeSlot ? getPlayerById(squad[activeSlot.key]) : null;
+    
+            if (activeSlotKey && activePlayer) {
+              forcePlayerListForActiveSlot = !forcePlayerListForActiveSlot;
+              render();
+---
+LINE 6775:           forcePlayerListForActiveSlot = !forcePlayerListForActiveSlot;
+              render();
+              return;
+            }
+    
+            showStatus("Vælg først en plads på banen.", "info");
+          });
+    
+          activePositionChip.addEventListener("click", () => {
+---
+LINE 7812:   #playerList,
+      .players-list,
+      .players-panel,
+      .player-list-panel,
+      .right-panel,
+      .player-sidebar,
+      .sidebar {
+        width: 100% !important;
+        max-width: 100% !important;
+---
+LINE 8060:   #playerList,
+      .players-list,
+      .players-panel,
+      .player-list-panel,
+      .right-panel,
+      .player-sidebar,
+      .sidebar {
+        width: 100vw !important;
+        max-width: 100vw !important;
+---
+
+
+=== PATTERN: favorite-btn ===
+LINE 2101: .favorite-btn {
+      width: 26px !important;
+      height: 28px !important;
+      min-width: 26px !important;
+      border: 0 !important;
+      border-radius: 9px !important;
+      background: rgba(255,255,255,0.08) !important;
+      color: #cbd5e1 !important;
+      font-size: 17px !important;
+---
+LINE 2121: .favorite-btn.active {
+      color: #facc15 !important;
+      background: rgba(250, 204, 21, 0.18) !important;
+    }
+    
+    .favorite-btn:hover {
+      transform: translateY(-1px);
+      background: rgba(250, 204, 21, 0.24) !important;
+    }
+---
+LINE 2126: .favorite-btn:hover {
+      transform: translateY(-1px);
+      background: rgba(250, 204, 21, 0.24) !important;
+    }
+    
+    .favorite-filter-btn {
+      height: 40px;
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 12px;
+---
+LINE 2209: .favorite-btn {
+      width: 26px !important;
+      min-width: 26px !important;
+      max-width: 26px !important;
+      justify-self: center !important;
+      font-family: Arial, "Segoe UI Symbol", "Apple Color Emoji", sans-serif !important;
+      font-size: 18px !important;
+    }
+    
+---
+LINE 2365:   .favorite-btn,
+      .add-player-btn,
+      .add-btn,
+      .plus-btn,
+      .player-add-btn {
+        min-width: 34px !important;
+        width: 34px !important;
+        height: 34px !important;
+        min-height: 34px !important;
+---
+LINE 2382:   .favorite-btn {
+        font-size: 18px !important;
+      }
+    
+      .selected-slot,
+      .selected-slot-badge,
+      .active-slot,
+      .slot-status {
+        max-width: 100%;
+---
+LINE 2657:   .favorite-btn {
+        grid-column: 4 !important;
+        justify-self: center !important;
+        min-width: 38px !important;
+        width: 38px !important;
+        height: 38px !important;
+        min-height: 38px !important;
+        margin: 0 !important;
+      }
+---
+LINE 2881:   .favorite-btn {
+        min-width: 34px !important;
+        width: 34px !important;
+        height: 34px !important;
+        min-height: 34px !important;
+      }
+    
+      .add-player-btn,
+      .add-btn,
+---
+LINE 6108:   const btn = event.target.closest(".favorite-btn");
+      if (!btn) return;
+    
+      event.preventDefault();
+      event.stopPropagation();
+      event.stopImmediatePropagation();
+    
+      const playerId = btn.dataset.playerId;
+      if (!playerId) return;
+---
+LINE 6265:               class="favorite-btn ${isFavoritePlayer(player.player_id) ? "active" : ""}"
+                  data-player-id="${player.player_id}"
+                  title="${isFavoritePlayer(player.player_id) ? "Fjern fra favoritter" : "Gem som favorit"}"
+                  aria-label="${isFavoritePlayer(player.player_id) ? "Fjern fra favoritter" : "Gem som favorit"}"
+                >${isFavoritePlayer(player.player_id) ? "\u2665" : "\u2661"}</button>
+                <button class="plus-btn" data-player-id="${player.player_id}" ${isDisabled ? "disabled" : ""}>+</button>
+              </div>
+            `;
+          }).join("");
+---
+LINE 7847:   .favorite-btn {
+        justify-self: center !important;
+        width: 40px !important;
+        min-width: 40px !important;
+        height: 40px !important;
+        min-height: 40px !important;
+        margin: 0 !important;
+      }
+    
+---
+LINE 8152:   .favorite-btn {
+        grid-column: 5 !important;
+        justify-self: center !important;
+        width: 40px !important;
+        min-width: 40px !important;
+        height: 40px !important;
+        min-height: 40px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+---
+
+
+=== PATTERN: addPlayerToBestSlot ===
+LINE 5107:     function addPlayerToBestSlot(playerId) {
+          const player = getPlayerById(playerId);
+          if (!player) return;
+          if (isPlayerUnavailable(player)) {
+            showStatus("Spilleren er ikke tilgængelig.", "error");
+            return;
+          }
+    
+          const currentSlotForPlayer = findFilledSlotByPlayerId(playerId);
+---
+LINE 6280:           addPlayerToBestSlot(playerId);
+            });
+          });
+        }
+    
+        function render() {
+          cleanSquadForCurrentFormation();
+          renderBudget();
+          renderStrategyControls();
+---
+LINE 7515:         if (typeof addPlayerToBestSlot !== "function") return;
+    
+            event.preventDefault();
+            event.stopPropagation();
+            event.stopImmediatePropagation();
+    
+            addPlayerToBestSlot(playerId);
+          }, true);
+        } catch (err) {
+---
+LINE 7521:         addPlayerToBestSlot(playerId);
+          }, true);
+        } catch (err) {
+          console.warn("Final one-click plus fix kunne ikke initialiseres", err);
+        }
+      }
+    
+      document.addEventListener("DOMContentLoaded", bindOneClickPlusFix);
+      setTimeout(bindOneClickPlusFix, 250);
+---
+
+
+=== PATTERN: Pris ===
+LINE 4471:       dataStatusDate.textContent = `Priser ${holdetApiDate}`;
+          dataStatusSummary.textContent = `${formatMoney(playerCount)} spillere · ${formatMoney(missingPrices)} manglende priser · optimizer ${optimizerDate}`;
+          dataStatusGrid.innerHTML = [
+            dataStatusItem("Spillere", `${formatMoney(playerCount)} i poolen`, playerCount ? "ok" : "warn"),
+            dataStatusItem("Priser", `${formatMoney(missingPrices)} mangler · ${holdetApiDate}`, missingPrices ? "warn" : "ok"),
+            dataStatusItem("Odds", `${formatMoney(oddsRows)} kampe`, oddsRows ? "warn" : "error"),
+            dataStatusItem("Optimizer", `${formationCount}/7 OK · ${bestFormation} · ${optimizerDate}`, optimizerOk ? "ok" : "warn"),
+            dataStatusItem("Audit", auditOk ? "OK" : `${optimizerProblems} fejl/advarsler`, auditOk ? "ok" : "warn"),
+            dataStatusItem("Startdata", `Transfermarkt · ${transfermarktDate}`, "ok"),
+---
+LINE 4472:       dataStatusSummary.textContent = `${formatMoney(playerCount)} spillere · ${formatMoney(missingPrices)} manglende priser · optimizer ${optimizerDate}`;
+          dataStatusGrid.innerHTML = [
+            dataStatusItem("Spillere", `${formatMoney(playerCount)} i poolen`, playerCount ? "ok" : "warn"),
+            dataStatusItem("Priser", `${formatMoney(missingPrices)} mangler · ${holdetApiDate}`, missingPrices ? "warn" : "ok"),
+            dataStatusItem("Odds", `${formatMoney(oddsRows)} kampe`, oddsRows ? "warn" : "error"),
+            dataStatusItem("Optimizer", `${formationCount}/7 OK · ${bestFormation} · ${optimizerDate}`, optimizerOk ? "ok" : "warn"),
+            dataStatusItem("Audit", auditOk ? "OK" : `${optimizerProblems} fejl/advarsler`, auditOk ? "ok" : "warn"),
+            dataStatusItem("Startdata", `Transfermarkt · ${transfermarktDate}`, "ok"),
+            dataStatusItem("Score", "Start-neutral", "ok")
+---
+LINE 4475:         dataStatusItem("Priser", `${formatMoney(missingPrices)} mangler · ${holdetApiDate}`, missingPrices ? "warn" : "ok"),
+            dataStatusItem("Odds", `${formatMoney(oddsRows)} kampe`, oddsRows ? "warn" : "error"),
+            dataStatusItem("Optimizer", `${formationCount}/7 OK · ${bestFormation} · ${optimizerDate}`, optimizerOk ? "ok" : "warn"),
+            dataStatusItem("Audit", auditOk ? "OK" : `${optimizerProblems} fejl/advarsler`, auditOk ? "ok" : "warn"),
+            dataStatusItem("Startdata", `Transfermarkt · ${transfermarktDate}`, "ok"),
+            dataStatusItem("Score", "Start-neutral", "ok")
+          ].join("");
+    
+          dataStatusNote.textContent = "Foreløbig model: odds, startvurderinger og trupper skal fortsat opdateres frem mod turneringen.";
+---
+LINE 5054:           <div class="alternative-section-title"><strong>Samme prisniveau</strong> &middot; Op til ${formatMoney(currentPrice)}</div>
+              ${samePriceRows}
+            ` : ""}
+            ${!alternatives.length ? `
+              <div class="alternatives-subtitle">Ingen gyldige alternativer inden for position, budget og landeloft.</div>
+            ` : ""}
+          `;
+    
+    
+---
+LINE 5069:             <span class="alternative-chip">Nuv\u00e6rende pris: ${formatMoney(currentPrice)}</span>
+                <span class="alternative-chip">Med bank: ${formatMoney(availableForReplacement)}</span>
+              </div>
+              ${captainWarning}
+            </div>
+            ${rows}
+          `;
+        }
+    
+---
+LINE 5624:             parts.push(`${slot.position} (${slot.key}): ingen gyldige priser fundet`);
+              }
+              continue;
+            }
+    
+            parts.push(`${slot.position} (${slot.key}): kandidater findes, men kombinationen går ikke op med de øvrige constraints`);
+          }
+    
+          return parts;
+---
+LINE 6262:               <div class="trade-subprice">Pris</div>
+                </div>
+                <button
+                  class="favorite-btn ${isFavoritePlayer(player.player_id) ? "active" : ""}"
+                  data-player-id="${player.player_id}"
+                  title="${isFavoritePlayer(player.player_id) ? "Fjern fra favoritter" : "Gem som favorit"}"
+                  aria-label="${isFavoritePlayer(player.player_id) ? "Fjern fra favoritter" : "Gem som favorit"}"
+                >${isFavoritePlayer(player.player_id) ? "\u2665" : "\u2661"}</button>
+                <button class="plus-btn" data-player-id="${player.player_id}" ${isDisabled ? "disabled" : ""}>+</button>
+---
+
+
+=== PATTERN: position ===
+LINE 84:       position: relative;
+          background: linear-gradient(180deg, #88c23f 0%, #6faa31 100%);
+          padding: 14px 16px 16px;
+          height: 100%;
+          box-sizing: border-box;
+          overflow: auto;
+          min-width: 0;
+        }
+    
+---
+LINE 94:       position: relative;
+          background: #23252b;
+          color: white;
+          padding: 12px;
+          display: flex;
+          flex-direction: column;
+          min-width: 0;
+          height: 100%;
+          box-sizing: border-box;
+---
+LINE 308:       position: absolute;
+          inset: 0;
+          z-index: 20;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 20px;
+          background: rgba(17, 24, 39, 0.54);
+          pointer-events: none;
+---
+LINE 402:       position: relative;
+          border-radius: 16px;
+          height: calc(100vh - 222px);
+          min-height: 560px;
+          max-height: 800px;
+          border: 3px solid rgba(255,255,255,0.35);
+          overflow: hidden;
+          background:
+            linear-gradient(
+---
+LINE 430:       position: absolute;
+          left: 0;
+          right: 0;
+          top: 50%;
+          border-top: 2px solid rgba(255,255,255,0.38);
+        }
+    
+        .pitch-circle {
+          position: absolute;
+---
+LINE 438:       position: absolute;
+          left: 50%;
+          top: 50%;
+          width: 118px;
+          height: 118px;
+          margin-left: -59px;
+          margin-top: -59px;
+          border: 2px solid rgba(255,255,255,0.38);
+          border-radius: 50%;
+---
+LINE 451:       position: absolute;
+          left: 50%;
+          width: 184px;
+          margin-left: -92px;
+          border: 2px solid rgba(255,255,255,0.32);
+          box-sizing: border-box;
+        }
+    
+        .pitch-penalty-top {
+---
+LINE 475:       position: absolute;
+          left: 50%;
+          width: 78px;
+          margin-left: -39px;
+          border: 2px solid rgba(255,255,255,0.28);
+          box-sizing: border-box;
+        }
+    
+        .pitch-goal-top {
+---
+LINE 498:       position: absolute;
+          transform: translate(-50%, -50%);
+          width: 102px;
+          text-align: center;
+        }
+    
+        .player-figure {
+          width: 36px;
+          height: 36px;
+---
+LINE 526:       position: relative;
+          width: 96px;
+          height: 56px;
+          margin: 0 auto;
+          border-radius: 8px;
+          background: rgba(255,255,255,0.94);
+          color: #111827;
+          border: 1px solid rgba(17,24,39,0.16);
+          box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+---
+LINE 541:       position: absolute;
+          top: -14px;
+          left: 50%;
+          transform: translateX(-50%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 3px;
+          height: 24px;
+---
+LINE 699:       position: absolute;
+          top: -8px;
+          right: -7px;
+          margin-top: 0;
+          display: flex;
+          justify-content: center;
+          gap: 2px;
+          flex-wrap: wrap;
+        }
+---
+LINE 945:     .position-filter-chip {
+          display: inline-flex;
+          align-items: center;
+          gap: 5px;
+          border: 1px solid rgba(253, 224, 71, 0.55);
+          background: rgba(253, 224, 71, 0.12);
+          color: #fde047;
+          border-radius: 999px;
+          padding: 5px 8px;
+---
+LINE 959:     .position-filter-chip[hidden] {
+          display: none;
+        }
+    
+        .right-mode-btn {
+          border: 1px solid #3f4450;
+          background: #2f3239;
+          color: white;
+          border-radius: 8px;
+---
+LINE 1007:       position: relative;
+          margin: 0;
+          width: 30px;
+          height: 16px;
+          border-radius: 999px;
+          background: #111827;
+          border: 1px solid #4b5563;
+          accent-color: #fde047;
+          flex: 0 0 auto;
+---
+LINE 1021:       position: absolute;
+          top: 2px;
+          left: 2px;
+          width: 10px;
+          height: 10px;
+          border-radius: 999px;
+          background: #cbd5e1;
+          transition: transform 0.15s ease, background 0.15s ease;
+        }
+---
+LINE 1263:     .trade-position-col,
+        .trade-score-col,
+        .trade-start-col {
+          text-align: right;
+          min-width: 0;
+        }
+    
+        .trade-position-value {
+          font-weight: bold;
+---
+LINE 1270:     .trade-position-value {
+          font-weight: bold;
+          font-size: 11px;
+          line-height: 1.1;
+          white-space: nowrap;
+        }
+    
+        .trade-score-label,
+        .trade-start-label {
+---
+LINE 1349:       position: fixed;
+          inset: 0;
+          background: rgba(0,0,0,0.55);
+          display: none;
+          align-items: center;
+          justify-content: center;
+          z-index: 1000;
+          padding: 16px;
+          box-sizing: border-box;
+---
+LINE 1449:       position: absolute;
+          left: -10000px;
+          top: auto;
+          width: 1px;
+          height: 1px;
+          overflow: hidden;
+          opacity: 0;
+          pointer-events: none;
+        }
+---
+LINE 1546:       .trade-position-col,
+          .trade-start-col,
+          .trade-score-col {
+            display: none;
+          }
+        }
+      
+      /* PATCH_UI_DISABLED_ONLY_PLUS_BUTTON */
+      .trade-row.disabled,
+---
+LINE 1703: .trade-position-value,
+    .trade-start-value,
+    .trade-score-value {
+      font-size: 13px !important;
+      line-height: 1.05 !important;
+    }
+    
+    .trade-start-label,
+    .trade-score-label {
+---
+LINE 1727: /* PLAYER_LIST_COMPACT_POSITION_PATCH_START */
+    .trade-row {
+      grid-template-columns: minmax(150px, 1fr) 38px 42px 34px 78px 30px !important;
+      column-gap: 6px !important;
+    }
+    
+    .trade-position-value {
+      font-size: 12.5px !important;
+      white-space: nowrap !important;
+---
+LINE 1733: .trade-position-value {
+      font-size: 12.5px !important;
+      white-space: nowrap !important;
+      text-align: left !important;
+    }
+    
+    .trade-name {
+      max-width: none !important;
+    }
+---
+LINE 1760: /* PLAYER_LIST_COMPACT_POSITION_PATCH_END */
+    
+    
+    
+    
+    /* PLAYER_LIST_POSITION_ALIGN_PATCH_START */
+    .trade-row {
+      align-items: start !important;
+    }
+---
+LINE 1765: /* PLAYER_LIST_POSITION_ALIGN_PATCH_START */
+    .trade-row {
+      align-items: start !important;
+    }
+    
+    .trade-player-main {
+      align-self: start !important;
+    }
+    
+---
+LINE 1774: .trade-position-value {
+      align-self: start !important;
+      justify-self: start !important;
+      display: block !important;
+      padding-top: 0 !important;
+      margin-top: 1px !important;
+      line-height: 1.08 !important;
+    }
+    
+---
+LINE 1794: /* PLAYER_LIST_POSITION_ALIGN_PATCH_END */
+    
+    
+    /* PLAYER_LIST_PLUS_TOP_ALIGN_PATCH_START */
+    .plus-btn {
+      align-self: start !important;
+      justify-self: end !important;
+      margin-top: 0 !important;
+    }
+---
+LINE 1821: .trade-position-value {
+      align-self: center !important;
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+      line-height: 1.05 !important;
+    }
+    
+    .trade-start-value,
+    .trade-score-value {
+---
+LINE 1874: /* PLAYER_LIST_POSITION_TOP_LINE_PATCH_START */
+    .trade-position-value {
+      align-self: center !important;
+      transform: translateY(-7px) !important;
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+      line-height: 1.05 !important;
+    }
+    /* PLAYER_LIST_POSITION_TOP_LINE_PATCH_END */
+---
+LINE 1875: .trade-position-value {
+      align-self: center !important;
+      transform: translateY(-7px) !important;
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+      line-height: 1.05 !important;
+    }
+    /* PLAYER_LIST_POSITION_TOP_LINE_PATCH_END */
+    
+---
+LINE 1882: /* PLAYER_LIST_POSITION_TOP_LINE_PATCH_END */
+    
+    
+    /* HIDE_STATUS_BOX_PATCH_START */
+    .info-panel,
+    .explanation-panel,
+    .status-panel,
+    .data-status-panel {
+      display: none !important;
+---
+LINE 1975:   position: fixed;
+      z-index: 99999;
+      width: 330px;
+      max-width: calc(100vw - 24px);
+      border-radius: 13px;
+      overflow: hidden;
+      background: #111827;
+      border: 1px solid rgba(148, 163, 184, 0.45);
+      box-shadow: 0 18px 38px rgba(0,0,0,0.42);
+---
+LINE 2154: .trade-position {
+      white-space: nowrap !important;
+      text-align: center !important;
+      font-weight: 900 !important;
+    }
+    /* FAVORITES_FEATURE_CSS_END */
+    
+    
+    /* MOVE_FAVORITES_BUTTON_NEXT_TO_ALTERNATIVES_CSS_START */
+---
+LINE 2184: .trade-position {
+      width: 28px !important;
+      min-width: 28px !important;
+      max-width: 28px !important;
+      text-align: center !important;
+    }
+    
+    .trade-start-col,
+    .trade-score-col {
+---
+LINE 2506:   .position-group,
+      .line,
+      .field-line,
+      .squad-line {
+        gap: 6px !important;
+        margin-bottom: 6px !important;
+      }
+    
+      .slot,
+---
+LINE 2524:   .slot-position,
+      .position-title {
+        font-size: 11px !important;
+        line-height: 1.1 !important;
+        margin-bottom: 2px !important;
+      }
+    
+      .empty-slot,
+      .slot-empty,
+---
+LINE 2525:   .position-title {
+        font-size: 11px !important;
+        line-height: 1.1 !important;
+        margin-bottom: 2px !important;
+      }
+    
+      .empty-slot,
+      .slot-empty,
+      .empty-text {
+---
+LINE 2826:   .slot-position,
+      .position-title {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        font-size: 10px !important;
+        line-height: 1.05 !important;
+        margin: 0 auto 1px auto !important;
+      }
+---
+LINE 2827:   .position-title {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        font-size: 10px !important;
+        line-height: 1.05 !important;
+        margin: 0 auto 1px auto !important;
+      }
+    
+---
+LINE 3072:               <button id="activePositionChip" class="position-filter-chip" type="button" hidden></button>
+                  <button id="showPlayerListBtn" class="right-mode-btn active" type="button">Se spillerliste</button>
+                </div>
+              </div>
+    
+              <div class="trade-search">
+                <input
+                  id="searchInput"
+                  name="player_lookup_q"
+---
+LINE 3100:             <select id="positionFilter">
+                  <option value="">Alle positioner</option>
+                  <option value="Målmand">Målmand</option>
+                  <option value="Forsvar">Forsvar</option>
+                  <option value="Midtbane">Midtbane</option>
+                  <option value="Angriber">Angriber</option>
+                </select>
+                <select id="sortSelect">
+                  <option value="score_desc">Højeste modelscore</option>
+---
+LINE 3101:               <option value="">Alle positioner</option>
+                  <option value="Målmand">Målmand</option>
+                  <option value="Forsvar">Forsvar</option>
+                  <option value="Midtbane">Midtbane</option>
+                  <option value="Angriber">Angriber</option>
+                </select>
+                <select id="sortSelect">
+                  <option value="score_desc">Højeste modelscore</option>
+                  <option value="price_desc">Dyreste</option>
+---
+LINE 3214:     const POSITION_LABEL_TO_CODE = {
+          "Målmand": "GK",
+          "Forsvar": "DEF",
+          "Midtbane": "MID",
+          "Angriber": "FWD",
+          "Keeper": "GK",
+          "Goalkeeper": "GK",
+          "Defender": "DEF",
+          "Defense": "DEF",
+---
+LINE 3229:     const POSITION_CODE_TO_LABEL = {
+          GK: "Målmand",
+          DEF: "Forsvar",
+          MID: "Midtbane",
+          FWD: "Angriber"
+        };
+    
+        let allPlayers = [];
+        let fixtures = [];
+---
+LINE 3269:     const positionFilter = document.getElementById("positionFilter");
+        const sortSelect = document.getElementById("sortSelect");
+        const eligibleOnlyToggle = document.getElementById("eligibleOnlyToggle");
+        const tradeList = document.getElementById("tradeList");
+        const rightPanel = document.getElementById("rightPanel");
+        const rightModeTitle = document.getElementById("rightModeTitle");
+        const showPlayerListBtn = document.getElementById("showPlayerListBtn");
+        const activePositionChip = document.getElementById("activePositionChip");
+        const infoBox = document.getElementById("infoBox");
+---
+LINE 3276:     const activePositionChip = document.getElementById("activePositionChip");
+        const infoBox = document.getElementById("infoBox");
+        const infoBoxToggle = document.getElementById("infoBoxToggle");
+        const spentValue = document.getElementById("spentValue");
+        const bankValue = document.getElementById("bankValue");
+        const playerCountValue = document.getElementById("playerCountValue");
+        const avgStartValue = document.getElementById("avgStartValue");
+        const highRiskValue = document.getElementById("highRiskValue");
+        const statusBox = document.getElementById("statusBox");
+---
+LINE 3423:     function normalizePositionLabel(value) {
+          const text = String(value || "").trim();
+          if (!text) return "";
+          return POSITION_LABEL_TO_CODE[text] || text.toUpperCase();
+        }
+    
+        function samePosition(a, b) {
+          return normalizePositionLabel(a) === normalizePositionLabel(b);
+        }
+---
+LINE 3426:       return POSITION_LABEL_TO_CODE[text] || text.toUpperCase();
+        }
+    
+        function samePosition(a, b) {
+          return normalizePositionLabel(a) === normalizePositionLabel(b);
+        }
+    
+        function positionFullLabel(value) {
+          const code = normalizePositionLabel(value);
+---
+LINE 3429:     function samePosition(a, b) {
+          return normalizePositionLabel(a) === normalizePositionLabel(b);
+        }
+    
+        function positionFullLabel(value) {
+          const code = normalizePositionLabel(value);
+          return POSITION_CODE_TO_LABEL[code] || code || "–";
+        }
+    
+---
+LINE 3430:       return normalizePositionLabel(a) === normalizePositionLabel(b);
+        }
+    
+        function positionFullLabel(value) {
+          const code = normalizePositionLabel(value);
+          return POSITION_CODE_TO_LABEL[code] || code || "–";
+        }
+    
+        function showStatus(text, variant = "error") {
+---
+LINE 3433:     function positionFullLabel(value) {
+          const code = normalizePositionLabel(value);
+          return POSITION_CODE_TO_LABEL[code] || code || "–";
+        }
+    
+        function showStatus(text, variant = "error") {
+          statusBox.className = `status-box ${variant}`;
+          statusBox.textContent = text;
+        }
+---
+LINE 3434:       const code = normalizePositionLabel(value);
+          return POSITION_CODE_TO_LABEL[code] || code || "–";
+        }
+    
+        function showStatus(text, variant = "error") {
+          statusBox.className = `status-box ${variant}`;
+          statusBox.textContent = text;
+        }
+    
+---
+LINE 3435:       return POSITION_CODE_TO_LABEL[code] || code || "–";
+        }
+    
+        function showStatus(text, variant = "error") {
+          statusBox.className = `status-box ${variant}`;
+          statusBox.textContent = text;
+        }
+    
+        function clearStatus() {
+---
+LINE 3538:           position: normalizePositionLabel(slot.positionCode || slot.position)
+            })),
+            players: allPlayers.map(player => ({
+              id: String(player.player_id),
+              position: normalizePositionLabel(player.position),
+              team: playerTeamKey(player),
+              price: getPlayerPrice(player),
+              score: getPlayerScore(player),
+              start: getPlayerStart(player)
+---
+LINE 3542:           position: normalizePositionLabel(player.position),
+              team: playerTeamKey(player),
+              price: getPlayerPrice(player),
+              score: getPlayerScore(player),
+              start: getPlayerStart(player)
+            })),
+            bankLeft,
+            usedIds: [...usedIdsBase],
+            teamCounts: teamCountsBase,
+---
+LINE 3597:         positionFullLabel(player?.position),
+            normalizePositionLabel(player?.position)
+          ].filter(Boolean).join(" "));
+        }
+    
+        function activeStrategyEntry() {
+          return strategySquads?.[activeStrategyKey] || null;
+        }
+    
+---
+LINE 3598:         normalizePositionLabel(player?.position)
+          ].filter(Boolean).join(" "));
+        }
+    
+        function activeStrategyEntry() {
+          return strategySquads?.[activeStrategyKey] || null;
+        }
+    
+        function activeStrategySummary() {
+---
+LINE 4136:       const position = String(player?.position || "").toUpperCase();
+          const nextScore = getNextRoundAlternativeScore(player);
+    
+          if (!Number.isFinite(nextScore)) return 0;
+    
+          // I N?ste runde skal offensive spillere med sv?r n?ste kamp ikke flyde op
+          // pga. senere gruppespilskampe. Eksempel: Senegal MID/FWD mod Frankrig.
+          if (["MID", "FWD"].includes(position) && nextScore < 0.75) {
+            return 1.25 + ((0.75 - nextScore) * 2.0);
+---
+LINE 4143:       if (["MID", "FWD"].includes(position) && nextScore < 0.75) {
+            return 1.25 + ((0.75 - nextScore) * 2.0);
+          }
+    
+          // Mildere straf til defensive spillere med meget lav n?ste-runde-v?rdi.
+          if (["GK", "DEF"].includes(position) && nextScore < 0.55) {
+            return 0.45 + ((0.55 - nextScore) * 1.0);
+          }
+    
+---
+LINE 4148:       if (["GK", "DEF"].includes(position) && nextScore < 0.55) {
+            return 0.45 + ((0.55 - nextScore) * 1.0);
+          }
+    
+          return 0;
+        }
+    
+    
+        function getTargetRoundNumber() {
+---
+LINE 4595:       slots.push({ key: "GK1", position: "Målmand", positionCode: "GK", x: 50, y: 11 });
+    
+          if (formation.df === 3) {
+            slots.push(
+              { key: "DF1", position: "Forsvar", positionCode: "DEF", x: 25, y: 35 },
+              { key: "DF2", position: "Forsvar", positionCode: "DEF", x: 50, y: 35 },
+              { key: "DF3", position: "Forsvar", positionCode: "DEF", x: 75, y: 35 }
+            );
+          } else if (formation.df === 4) {
+---
+LINE 4599:           { key: "DF1", position: "Forsvar", positionCode: "DEF", x: 25, y: 35 },
+              { key: "DF2", position: "Forsvar", positionCode: "DEF", x: 50, y: 35 },
+              { key: "DF3", position: "Forsvar", positionCode: "DEF", x: 75, y: 35 }
+            );
+          } else if (formation.df === 4) {
+            slots.push(
+              { key: "DF1", position: "Forsvar", positionCode: "DEF", x: 17, y: 32 },
+              { key: "DF2", position: "Forsvar", positionCode: "DEF", x: 39, y: 32 },
+              { key: "DF3", position: "Forsvar", positionCode: "DEF", x: 61, y: 32 },
+---
+LINE 4600:           { key: "DF2", position: "Forsvar", positionCode: "DEF", x: 50, y: 35 },
+              { key: "DF3", position: "Forsvar", positionCode: "DEF", x: 75, y: 35 }
+            );
+          } else if (formation.df === 4) {
+            slots.push(
+              { key: "DF1", position: "Forsvar", positionCode: "DEF", x: 17, y: 32 },
+              { key: "DF2", position: "Forsvar", positionCode: "DEF", x: 39, y: 32 },
+              { key: "DF3", position: "Forsvar", positionCode: "DEF", x: 61, y: 32 },
+              { key: "DF4", position: "Forsvar", positionCode: "DEF", x: 83, y: 32 }
+---
+LINE 4601:           { key: "DF3", position: "Forsvar", positionCode: "DEF", x: 75, y: 35 }
+            );
+          } else if (formation.df === 4) {
+            slots.push(
+              { key: "DF1", position: "Forsvar", positionCode: "DEF", x: 17, y: 32 },
+              { key: "DF2", position: "Forsvar", positionCode: "DEF", x: 39, y: 32 },
+              { key: "DF3", position: "Forsvar", positionCode: "DEF", x: 61, y: 32 },
+              { key: "DF4", position: "Forsvar", positionCode: "DEF", x: 83, y: 32 }
+            );
+---
+LINE 4605:           { key: "DF1", position: "Forsvar", positionCode: "DEF", x: 17, y: 32 },
+              { key: "DF2", position: "Forsvar", positionCode: "DEF", x: 39, y: 32 },
+              { key: "DF3", position: "Forsvar", positionCode: "DEF", x: 61, y: 32 },
+              { key: "DF4", position: "Forsvar", positionCode: "DEF", x: 83, y: 32 }
+            );
+          } else if (formation.df === 5) {
+            slots.push(
+              { key: "DF1", position: "Forsvar", positionCode: "DEF", x: 12, y: 35 },
+              { key: "DF2", position: "Forsvar", positionCode: "DEF", x: 31, y: 35 },
+---
+LINE 4606:           { key: "DF2", position: "Forsvar", positionCode: "DEF", x: 39, y: 32 },
+              { key: "DF3", position: "Forsvar", positionCode: "DEF", x: 61, y: 32 },
+              { key: "DF4", position: "Forsvar", positionCode: "DEF", x: 83, y: 32 }
+            );
+          } else if (formation.df === 5) {
+            slots.push(
+              { key: "DF1", position: "Forsvar", positionCode: "DEF", x: 12, y: 35 },
+              { key: "DF2", position: "Forsvar", positionCode: "DEF", x: 31, y: 35 },
+              { key: "DF3", position: "Forsvar", positionCode: "DEF", x: 50, y: 35 },
+---
+LINE 4607:           { key: "DF3", position: "Forsvar", positionCode: "DEF", x: 61, y: 32 },
+              { key: "DF4", position: "Forsvar", positionCode: "DEF", x: 83, y: 32 }
+            );
+          } else if (formation.df === 5) {
+            slots.push(
+              { key: "DF1", position: "Forsvar", positionCode: "DEF", x: 12, y: 35 },
+              { key: "DF2", position: "Forsvar", positionCode: "DEF", x: 31, y: 35 },
+              { key: "DF3", position: "Forsvar", positionCode: "DEF", x: 50, y: 35 },
+              { key: "DF4", position: "Forsvar", positionCode: "DEF", x: 69, y: 35 },
+---
+LINE 4608:           { key: "DF4", position: "Forsvar", positionCode: "DEF", x: 83, y: 32 }
+            );
+          } else if (formation.df === 5) {
+            slots.push(
+              { key: "DF1", position: "Forsvar", positionCode: "DEF", x: 12, y: 35 },
+              { key: "DF2", position: "Forsvar", positionCode: "DEF", x: 31, y: 35 },
+              { key: "DF3", position: "Forsvar", positionCode: "DEF", x: 50, y: 35 },
+              { key: "DF4", position: "Forsvar", positionCode: "DEF", x: 69, y: 35 },
+              { key: "DF5", position: "Forsvar", positionCode: "DEF", x: 88, y: 35 }
+---
+LINE 4612:           { key: "DF1", position: "Forsvar", positionCode: "DEF", x: 12, y: 35 },
+              { key: "DF2", position: "Forsvar", positionCode: "DEF", x: 31, y: 35 },
+              { key: "DF3", position: "Forsvar", positionCode: "DEF", x: 50, y: 35 },
+              { key: "DF4", position: "Forsvar", positionCode: "DEF", x: 69, y: 35 },
+              { key: "DF5", position: "Forsvar", positionCode: "DEF", x: 88, y: 35 }
+            );
+          }
+    
+          if (formation.mf === 3) {
+---
+LINE 4613:           { key: "DF2", position: "Forsvar", positionCode: "DEF", x: 31, y: 35 },
+              { key: "DF3", position: "Forsvar", positionCode: "DEF", x: 50, y: 35 },
+              { key: "DF4", position: "Forsvar", positionCode: "DEF", x: 69, y: 35 },
+              { key: "DF5", position: "Forsvar", positionCode: "DEF", x: 88, y: 35 }
+            );
+          }
+    
+          if (formation.mf === 3) {
+            slots.push(
+---
+LINE 4614:           { key: "DF3", position: "Forsvar", positionCode: "DEF", x: 50, y: 35 },
+              { key: "DF4", position: "Forsvar", positionCode: "DEF", x: 69, y: 35 },
+              { key: "DF5", position: "Forsvar", positionCode: "DEF", x: 88, y: 35 }
+            );
+          }
+    
+          if (formation.mf === 3) {
+            slots.push(
+              { key: "MF1", position: "Midtbane", positionCode: "MID", x: 25, y: 58 },
+---
+LINE 4615:           { key: "DF4", position: "Forsvar", positionCode: "DEF", x: 69, y: 35 },
+              { key: "DF5", position: "Forsvar", positionCode: "DEF", x: 88, y: 35 }
+            );
+          }
+    
+          if (formation.mf === 3) {
+            slots.push(
+              { key: "MF1", position: "Midtbane", positionCode: "MID", x: 25, y: 58 },
+              { key: "MF2", position: "Midtbane", positionCode: "MID", x: 50, y: 58 },
+---
+LINE 4616:           { key: "DF5", position: "Forsvar", positionCode: "DEF", x: 88, y: 35 }
+            );
+          }
+    
+          if (formation.mf === 3) {
+            slots.push(
+              { key: "MF1", position: "Midtbane", positionCode: "MID", x: 25, y: 58 },
+              { key: "MF2", position: "Midtbane", positionCode: "MID", x: 50, y: 58 },
+              { key: "MF3", position: "Midtbane", positionCode: "MID", x: 75, y: 58 }
+---
+LINE 4622:           { key: "MF1", position: "Midtbane", positionCode: "MID", x: 25, y: 58 },
+              { key: "MF2", position: "Midtbane", positionCode: "MID", x: 50, y: 58 },
+              { key: "MF3", position: "Midtbane", positionCode: "MID", x: 75, y: 58 }
+            );
+          } else if (formation.mf === 4) {
+            slots.push(
+              { key: "MF1", position: "Midtbane", positionCode: "MID", x: 17, y: 58 },
+              { key: "MF2", position: "Midtbane", positionCode: "MID", x: 39, y: 58 },
+              { key: "MF3", position: "Midtbane", positionCode: "MID", x: 61, y: 58 },
+---
+LINE 4623:           { key: "MF2", position: "Midtbane", positionCode: "MID", x: 50, y: 58 },
+              { key: "MF3", position: "Midtbane", positionCode: "MID", x: 75, y: 58 }
+            );
+          } else if (formation.mf === 4) {
+            slots.push(
+              { key: "MF1", position: "Midtbane", positionCode: "MID", x: 17, y: 58 },
+              { key: "MF2", position: "Midtbane", positionCode: "MID", x: 39, y: 58 },
+              { key: "MF3", position: "Midtbane", positionCode: "MID", x: 61, y: 58 },
+              { key: "MF4", position: "Midtbane", positionCode: "MID", x: 83, y: 58 }
+---
+LINE 4624:           { key: "MF3", position: "Midtbane", positionCode: "MID", x: 75, y: 58 }
+            );
+          } else if (formation.mf === 4) {
+            slots.push(
+              { key: "MF1", position: "Midtbane", positionCode: "MID", x: 17, y: 58 },
+              { key: "MF2", position: "Midtbane", positionCode: "MID", x: 39, y: 58 },
+              { key: "MF3", position: "Midtbane", positionCode: "MID", x: 61, y: 58 },
+              { key: "MF4", position: "Midtbane", positionCode: "MID", x: 83, y: 58 }
+            );
+---
+LINE 4628:           { key: "MF1", position: "Midtbane", positionCode: "MID", x: 17, y: 58 },
+              { key: "MF2", position: "Midtbane", positionCode: "MID", x: 39, y: 58 },
+              { key: "MF3", position: "Midtbane", positionCode: "MID", x: 61, y: 58 },
+              { key: "MF4", position: "Midtbane", positionCode: "MID", x: 83, y: 58 }
+            );
+          } else if (formation.mf === 5) {
+            slots.push(
+              { key: "MF1", position: "Midtbane", positionCode: "MID", x: 12, y: 58 },
+              { key: "MF2", position: "Midtbane", positionCode: "MID", x: 31, y: 58 },
+---
+LINE 4629:           { key: "MF2", position: "Midtbane", positionCode: "MID", x: 39, y: 58 },
+              { key: "MF3", position: "Midtbane", positionCode: "MID", x: 61, y: 58 },
+              { key: "MF4", position: "Midtbane", positionCode: "MID", x: 83, y: 58 }
+            );
+          } else if (formation.mf === 5) {
+            slots.push(
+              { key: "MF1", position: "Midtbane", positionCode: "MID", x: 12, y: 58 },
+              { key: "MF2", position: "Midtbane", positionCode: "MID", x: 31, y: 58 },
+              { key: "MF3", position: "Midtbane", positionCode: "MID", x: 50, y: 58 },
+---
+LINE 4630:           { key: "MF3", position: "Midtbane", positionCode: "MID", x: 61, y: 58 },
+              { key: "MF4", position: "Midtbane", positionCode: "MID", x: 83, y: 58 }
+            );
+          } else if (formation.mf === 5) {
+            slots.push(
+              { key: "MF1", position: "Midtbane", positionCode: "MID", x: 12, y: 58 },
+              { key: "MF2", position: "Midtbane", positionCode: "MID", x: 31, y: 58 },
+              { key: "MF3", position: "Midtbane", positionCode: "MID", x: 50, y: 58 },
+              { key: "MF4", position: "Midtbane", positionCode: "MID", x: 69, y: 58 },
+---
+LINE 4631:           { key: "MF4", position: "Midtbane", positionCode: "MID", x: 83, y: 58 }
+            );
+          } else if (formation.mf === 5) {
+            slots.push(
+              { key: "MF1", position: "Midtbane", positionCode: "MID", x: 12, y: 58 },
+              { key: "MF2", position: "Midtbane", positionCode: "MID", x: 31, y: 58 },
+              { key: "MF3", position: "Midtbane", positionCode: "MID", x: 50, y: 58 },
+              { key: "MF4", position: "Midtbane", positionCode: "MID", x: 69, y: 58 },
+              { key: "MF5", position: "Midtbane", positionCode: "MID", x: 88, y: 58 }
+---
+LINE 4635:           { key: "MF1", position: "Midtbane", positionCode: "MID", x: 12, y: 58 },
+              { key: "MF2", position: "Midtbane", positionCode: "MID", x: 31, y: 58 },
+              { key: "MF3", position: "Midtbane", positionCode: "MID", x: 50, y: 58 },
+              { key: "MF4", position: "Midtbane", positionCode: "MID", x: 69, y: 58 },
+              { key: "MF5", position: "Midtbane", positionCode: "MID", x: 88, y: 58 }
+            );
+          }
+    
+          if (formation.fw === 1) {
+---
+LINE 4636:           { key: "MF2", position: "Midtbane", positionCode: "MID", x: 31, y: 58 },
+              { key: "MF3", position: "Midtbane", positionCode: "MID", x: 50, y: 58 },
+              { key: "MF4", position: "Midtbane", positionCode: "MID", x: 69, y: 58 },
+              { key: "MF5", position: "Midtbane", positionCode: "MID", x: 88, y: 58 }
+            );
+          }
+    
+          if (formation.fw === 1) {
+            slots.push({ key: "FW1", position: "Angriber", positionCode: "FWD", x: 50, y: 84 });
+---
+LINE 4637:           { key: "MF3", position: "Midtbane", positionCode: "MID", x: 50, y: 58 },
+              { key: "MF4", position: "Midtbane", positionCode: "MID", x: 69, y: 58 },
+              { key: "MF5", position: "Midtbane", positionCode: "MID", x: 88, y: 58 }
+            );
+          }
+    
+          if (formation.fw === 1) {
+            slots.push({ key: "FW1", position: "Angriber", positionCode: "FWD", x: 50, y: 84 });
+          } else if (formation.fw === 2) {
+---
+LINE 4638:           { key: "MF4", position: "Midtbane", positionCode: "MID", x: 69, y: 58 },
+              { key: "MF5", position: "Midtbane", positionCode: "MID", x: 88, y: 58 }
+            );
+          }
+    
+          if (formation.fw === 1) {
+            slots.push({ key: "FW1", position: "Angriber", positionCode: "FWD", x: 50, y: 84 });
+          } else if (formation.fw === 2) {
+            slots.push(
+---
+LINE 4639:           { key: "MF5", position: "Midtbane", positionCode: "MID", x: 88, y: 58 }
+            );
+          }
+    
+          if (formation.fw === 1) {
+            slots.push({ key: "FW1", position: "Angriber", positionCode: "FWD", x: 50, y: 84 });
+          } else if (formation.fw === 2) {
+            slots.push(
+              { key: "FW1", position: "Angriber", positionCode: "FWD", x: 34, y: 84 },
+---
+LINE 4644:         slots.push({ key: "FW1", position: "Angriber", positionCode: "FWD", x: 50, y: 84 });
+          } else if (formation.fw === 2) {
+            slots.push(
+              { key: "FW1", position: "Angriber", positionCode: "FWD", x: 34, y: 84 },
+              { key: "FW2", position: "Angriber", positionCode: "FWD", x: 66, y: 84 }
+            );
+          } else if (formation.fw === 3) {
+            slots.push(
+              { key: "FW1", position: "Angriber", positionCode: "FWD", x: 18, y: 84 },
+---
+LINE 4647:           { key: "FW1", position: "Angriber", positionCode: "FWD", x: 34, y: 84 },
+              { key: "FW2", position: "Angriber", positionCode: "FWD", x: 66, y: 84 }
+            );
+          } else if (formation.fw === 3) {
+            slots.push(
+              { key: "FW1", position: "Angriber", positionCode: "FWD", x: 18, y: 84 },
+              { key: "FW2", position: "Angriber", positionCode: "FWD", x: 50, y: 84 },
+              { key: "FW3", position: "Angriber", positionCode: "FWD", x: 82, y: 84 }
+            );
+---
+LINE 4648:           { key: "FW2", position: "Angriber", positionCode: "FWD", x: 66, y: 84 }
+            );
+          } else if (formation.fw === 3) {
+            slots.push(
+              { key: "FW1", position: "Angriber", positionCode: "FWD", x: 18, y: 84 },
+              { key: "FW2", position: "Angriber", positionCode: "FWD", x: 50, y: 84 },
+              { key: "FW3", position: "Angriber", positionCode: "FWD", x: 82, y: 84 }
+            );
+          }
+---
+LINE 4652:           { key: "FW1", position: "Angriber", positionCode: "FWD", x: 18, y: 84 },
+              { key: "FW2", position: "Angriber", positionCode: "FWD", x: 50, y: 84 },
+              { key: "FW3", position: "Angriber", positionCode: "FWD", x: 82, y: 84 }
+            );
+          }
+    
+          return slots;
+        }
+    
+---
+LINE 4653:           { key: "FW2", position: "Angriber", positionCode: "FWD", x: 50, y: 84 },
+              { key: "FW3", position: "Angriber", positionCode: "FWD", x: 82, y: 84 }
+            );
+          }
+    
+          return slots;
+        }
+    
+        function cleanSquadForCurrentFormation() {
+---
+LINE 4654:           { key: "FW3", position: "Angriber", positionCode: "FWD", x: 82, y: 84 }
+            );
+          }
+    
+          return slots;
+        }
+    
+        function cleanSquadForCurrentFormation() {
+          const validSlotKeys = new Set(getCurrentSlots().map(slot => slot.key));
+---
+LINE 4746:         if (!samePosition(player.position, slot.positionCode || slot.position)) {
+              issues.push(`forkert position i ${slotKey} (${player.player_name})`);
+            }
+          });
+    
+          return issues;
+        }
+    
+        function buildTeamFilter() {
+---
+LINE 4747:           issues.push(`forkert position i ${slotKey} (${player.player_name})`);
+            }
+          });
+    
+          return issues;
+        }
+    
+        function buildTeamFilter() {
+          const teams = [...new Set(allPlayers
+---
+LINE 4769:     function findFirstEmptySlotByPosition(position) {
+          const positionCode = normalizePositionLabel(position);
+          const slots = getCurrentSlots().filter(slot => samePosition(slot.positionCode || slot.position, positionCode));
+    
+          for (const slot of slots) {
+            if (!squad[slot.key]) return slot.key;
+          }
+    
+          return null;
+---
+LINE 4770:       const positionCode = normalizePositionLabel(position);
+          const slots = getCurrentSlots().filter(slot => samePosition(slot.positionCode || slot.position, positionCode));
+    
+          for (const slot of slots) {
+            if (!squad[slot.key]) return slot.key;
+          }
+    
+          return null;
+        }
+---
+LINE 4771:       const slots = getCurrentSlots().filter(slot => samePosition(slot.positionCode || slot.position, positionCode));
+    
+          for (const slot of slots) {
+            if (!squad[slot.key]) return slot.key;
+          }
+    
+          return null;
+        }
+    
+---
+LINE 4787:     function hasAvailableSlotForPosition(position) {
+          return !!findFirstEmptySlotByPosition(position);
+        }
+    
+        function getDisabledReason(player) {
+    
+          const selectedSlotKey = findFilledSlotByPlayerId(player.player_id);
