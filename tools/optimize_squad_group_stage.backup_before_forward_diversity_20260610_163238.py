@@ -654,39 +654,17 @@ def strategy_score_column(strategy: str) -> str:
     return f"score_{strategy}"
 
 
-def forward_diversity_penalty(previous_selections: int) -> float:
-    if previous_selections < 2:
-        return 0.0
-    if previous_selections == 2:
-        return 0.15
-    if previous_selections == 3:
-        return 0.30
-    return 1.15 + 0.50 * (previous_selections - 4)
-
-
-def solve_formation(
-    players: pd.DataFrame,
-    strategy: str,
-    formation_name: str,
-    formation: dict[str, int],
-    forward_selection_counts: Counter[str] | None = None,
-) -> pd.DataFrame:
+def solve_formation(players: pd.DataFrame, strategy: str, formation_name: str, formation: dict[str, int]) -> pd.DataFrame:
     score_col = strategy_score_column(strategy)
     problem = pulp.LpProblem(f"{strategy}_{formation_name.replace('-', '_')}", pulp.LpMaximize)
     variables = {idx: pulp.LpVariable(f"pick_{idx}", lowBound=0, upBound=1, cat="Binary") for idx in players.index}
     score_expr = pulp.lpSum(float(players.loc[idx, score_col]) * variables[idx] for idx in players.index)
-    forward_selection_counts = forward_selection_counts or Counter()
-    diversity_penalty_expr = pulp.lpSum(
-        forward_diversity_penalty(forward_selection_counts[txt(players.loc[idx, "player_id"])]) * variables[idx]
-        for idx in players.index
-        if txt(players.loc[idx, "position"]) == "FWD"
-    )
     total_price_expr = pulp.lpSum(float(players.loc[idx, "price_m"]) * variables[idx] for idx in players.index)
     underuse = pulp.LpVariable(f"{strategy}_budget_underuse", lowBound=0, cat="Continuous")
 
     floor = 49.5 if strategy in {"next_round", "practical_start"} else 49.0
     penalty = 1.10 if strategy == "next_round" else (0.75 if strategy == "practical_start" else (0.18 if strategy == "long_run" else 0.55))
-    problem += score_expr + 0.025 * total_price_expr - penalty * underuse - diversity_penalty_expr
+    problem += score_expr + 0.025 * total_price_expr - penalty * underuse
     problem += underuse >= floor - total_price_expr
     problem += pulp.lpSum(variables[idx] for idx in players.index) == SQUAD_SIZE
     problem += total_price_expr <= BUDGET_M
@@ -1032,15 +1010,8 @@ def main() -> int:
         best_summary: dict[str, Any] | None = None
         formation_records: dict[str, list[dict[str, Any]]] = {}
         squads_by_formation: dict[str, dict[str, Any]] = {}
-        forward_selection_counts: Counter[str] = Counter()
         for formation_name, formation in FORMATIONS.items():
-            squad = solve_formation(
-                players,
-                strategy,
-                formation_name,
-                formation,
-                forward_selection_counts,
-            )
+            squad = solve_formation(players, strategy, formation_name, formation)
             if squad.empty:
                 formation_records[formation_name] = []
                 squads_by_formation[formation_name] = {
@@ -1067,9 +1038,6 @@ def main() -> int:
                 }
                 missing_formations.append((strategy, formation_name))
                 continue
-            forward_selection_counts.update(
-                squad.loc[squad["position"] == "FWD", "player_id"].astype(str).tolist()
-            )
             summary = squad_summary(strategy, squad, context)
             records = squad_records(squad)
             formation_records[formation_name] = records

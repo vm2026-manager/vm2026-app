@@ -2935,7 +2935,6 @@
 /* END MOBILE PATCH 4 */
 
 </style>
-
 </head>
 <body>
   <form class="autofill-trap" autocomplete="on" aria-hidden="true" tabindex="-1">
@@ -2969,14 +2968,6 @@
               <div class="bank-box">
                 <div><strong>Spillere</strong></div>
                 <div id="playerCountValue">0 / 11</div>
-              </div>
-              <div class="bank-box">
-                <div><strong>Gns. start</strong></div>
-                <div id="avgStartValue">–</div>
-              </div>
-              <div class="bank-box">
-                <div><strong>High risk</strong></div>
-                <div id="highRiskValue">0</div>
               </div>
             </div>
           </div>
@@ -3299,8 +3290,6 @@ setTimeout(removeDataStatusBox, 250);
     const bankValue = document.getElementById("bankValue");
     const manualBankInput = document.getElementById("manualBankInput");
     const playerCountValue = document.getElementById("playerCountValue");
-    const avgStartValue = document.getElementById("avgStartValue");
-    const highRiskValue = document.getElementById("highRiskValue");
     const statusBox = document.getElementById("statusBox");
     const dataStatusSummary = document.getElementById("dataStatusSummary");
     const dataStatusDate = document.getElementById("dataStatusDate");
@@ -5877,10 +5866,6 @@ function getPlayerScore(player) {
       const selectedPlayers = Object.values(squad)
         .map(playerId => getPlayerById(playerId))
         .filter(Boolean);
-      const avgStart = selectedPlayers.length
-        ? selectedPlayers.reduce((sum, player) => sum + getPlayerStart(player), 0) / selectedPlayers.length
-        : 0;
-      const highRiskCount = selectedPlayers.filter(player => String(player.availability_risk || "").toLowerCase() === "high_risk").length;
       spentValue.textContent = formatMoney(spent);
       bankValue.textContent = formatMoney(bank);
       if (manualBankInput && document.activeElement !== manualBankInput) {
@@ -5889,8 +5874,6 @@ function getPlayerScore(player) {
           : String(manualBankMillions).replace(".", ",");
       }
       playerCountValue.textContent = `${count} / 11`;
-      avgStartValue.textContent = selectedPlayers.length ? `${Math.round(avgStart)}%` : "–";
-      highRiskValue.textContent = String(highRiskCount);
       updateUndoButton();
     }
 
@@ -9165,7 +9148,6 @@ function renderTradeList() {
   setTimeout(addStyle, 300);
 })();
 </script>
-
 </body>
 </html>
 
