@@ -4542,8 +4542,31 @@ function getPlayerScore(player) {
       dataStatusNote.textContent = "Foreløbig model: odds, startvurderinger og trupper skal fortsat opdateres frem mod turneringen.";
     }
 
+    const HIDE_FIXTURE_AFTER_KICKOFF_MINUTES = 0;
+
     function getNow() {
+      try {
+        const params = new URLSearchParams(window.location.search);
+        const raw = params.get("test_now") || params.get("vm_now") || "";
+        if (raw) {
+          const simulated = new Date(String(raw).replace(" ", "T"));
+          if (!Number.isNaN(simulated.getTime())) return simulated;
+        }
+      } catch (error) {
+        // Ignore invalid test_now/vm_now values and use real time.
+      }
+
       return new Date();
+    }
+
+    function isUpcomingKickoffDate(kickoffDate) {
+      if (!kickoffDate || Number.isNaN(kickoffDate.getTime())) return true;
+      return kickoffDate.getTime() > getNow().getTime() + HIDE_FIXTURE_AFTER_KICKOFF_MINUTES * 60 * 1000;
+    }
+
+    function isUpcomingFixture(fixture) {
+      if (!fixture) return false;
+      return isUpcomingKickoffDate(fixture.kickoffDate || kickoffToDate(fixture.kickoff_dk || fixture.kickoff));
     }
 
     function getNextFixtureForTeam(teamId) {
@@ -4555,8 +4578,8 @@ function getPlayerScore(player) {
       const relevantFixtures = fixtures
         .filter(f => f.stage === "GROUP")
         .filter(f => canonicalTeamId(f.home) === team || canonicalTeamId(f.away) === team)
-        .filter(f => f.kickoffDate >= now)
-        .sort((a, b) => a.kickoffDate - b.kickoffDate);
+        .filter(f => isUpcomingFixture(f))
+        .sort((a, b) => (a.kickoffDate || kickoffToDate(a.kickoff_dk || a.kickoff) || 0) - (b.kickoffDate || kickoffToDate(b.kickoff_dk || b.kickoff) || 0));
 
       if (!relevantFixtures.length) return null;
 
@@ -7092,7 +7115,7 @@ function renderTradeList() {
 
         setInterval(() => {
           sanitizeSearchField();
-          renderTradeList();
+          render();
         }, 60000);
       } catch (error) {
         console.error("INIT ERROR:", error);
@@ -7210,6 +7233,14 @@ function renderTradeList() {
     function isFuture(value) {
       var raw = String(value || "");
       if (!raw) return true;
+
+      if (typeof kickoffToDate === "function" && typeof isUpcomingKickoffDate === "function") {
+        var parsed = kickoffToDate(raw);
+        if (parsed && Number.isFinite(parsed.getTime())) {
+          return isUpcomingKickoffDate(parsed);
+        }
+      }
+
       var d = new Date(raw.replace(" ", "T"));
       if (!Number.isFinite(d.getTime())) return true;
       return d.getTime() > Date.now();
@@ -7449,6 +7480,12 @@ function renderTradeList() {
 
       if (!out.length && Array.isArray(fixtures)) {
         fixtures
+          .filter(function (f) { return isFuture(f.kickoff_dk || f.kickoff); })
+          .sort(function (a, b) {
+            var ad = new Date(String(a.kickoff_dk || a.kickoff || "").replace(" ", "T"));
+            var bd = new Date(String(b.kickoff_dk || b.kickoff || "").replace(" ", "T"));
+            return (Number.isFinite(ad.getTime()) ? ad.getTime() : 0) - (Number.isFinite(bd.getTime()) ? bd.getTime() : 0);
+          })
           .filter(function (f) { return f.stage === "GROUP"; })
           .filter(function (f) {
             return canonicalTeamId(f.home) === team || canonicalTeamId(f.away) === team;
