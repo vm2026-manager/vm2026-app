@@ -6977,6 +6977,11 @@ function renderTradeList() {
       modelChoiceBySlot.clear();
       frontendCaptainOverride = null;
       favoriteOnly = false;
+      manualBankMillions = null;
+
+      if (manualBankInput) {
+        manualBankInput.value = "";
+      }
 
       if (typeof updateFavoriteFilterButton === "function") {
         updateFavoriteFilterButton();
@@ -6997,6 +7002,8 @@ function renderTradeList() {
 
       if (currentUser) {
         await loadAutosaveSquadForUser();
+      } else {
+        clearLocalSquadViewAfterLogout();
       }
 
       sanitizeSearchField();
