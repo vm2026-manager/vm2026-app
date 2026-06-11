@@ -2934,6 +2934,51 @@
 }
 /* END MOBILE PATCH 4 */
 
+
+/* CLEARABLE_FILTER_SELECTS_CSS_START */
+.clearable-select-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.clearable-select-wrap select {
+  width: 100%;
+  padding-right: 44px;
+}
+
+.clear-filter-select-btn {
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.32);
+  color: #e5e7eb;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 800;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  z-index: 3;
+}
+
+.clear-filter-select-btn:hover {
+  background: rgba(248, 250, 252, 0.42);
+  color: #ffffff;
+}
+
+.clearable-select-wrap.has-value .clear-filter-select-btn {
+  display: inline-flex;
+}
+/* CLEARABLE_FILTER_SELECTS_CSS_END */
+
 </style>
 </head>
 <body>
@@ -4467,9 +4512,33 @@ function getPlayerScore(player) {
 
     function kickoffToDate(value) {
       if (!value) return null;
-      const normalized = String(value).trim().replace(" ", "T");
-      const date = new Date(normalized);
-      return Number.isNaN(date.getTime()) ? null : date;
+
+      const raw = String(value).trim();
+      if (!raw) return null;
+
+      // ISO-ish formats, e.g. 2026-06-13T21:00:00 or 2026-06-13 21:00
+      const normalized = raw.replace(" ", "T");
+      let date = new Date(normalized);
+      if (!Number.isNaN(date.getTime())) return date;
+
+      // Danish display formats used in player/tooltip data:
+      // 13.06 21.00
+      // 13.06.2026 21.00
+      // 13/06 21:00
+      const m = raw.match(/^(\d{1,2})[\.\/\-](\d{1,2})(?:[\.\/\-](\d{2,4}))?\s+(\d{1,2})[\.:](\d{2})/);
+      if (m) {
+        const day = Number(m[1]);
+        const month = Number(m[2]);
+        let year = m[3] ? Number(m[3]) : 2026;
+        if (year < 100) year += 2000;
+        const hour = Number(m[4]);
+        const minute = Number(m[5]);
+
+        date = new Date(year, month - 1, day, hour, minute, 0, 0);
+        if (!Number.isNaN(date.getTime())) return date;
+      }
+
+      return null;
     }
 
     function formatDataStatusDate(value) {
@@ -6898,8 +6967,61 @@ function renderTradeList() {
       showStatus("Du er logget ud.", "info");
     }
 
+
+/* CLEARABLE_FILTER_SELECTS_JS_START */
+function setupClearableFilterSelect(selectEl) {
+  if (!selectEl || selectEl.dataset.clearableFilterReady === "1") return;
+
+  const wrapper = document.createElement("div");
+  wrapper.className = "clearable-select-wrap";
+
+  selectEl.parentNode.insertBefore(wrapper, selectEl);
+  wrapper.appendChild(selectEl);
+
+  const clearBtn = document.createElement("button");
+  clearBtn.type = "button";
+  clearBtn.className = "clear-filter-select-btn";
+  clearBtn.setAttribute("aria-label", "Ryd filter");
+  clearBtn.title = "Ryd filter";
+  clearBtn.textContent = "×";
+
+  wrapper.appendChild(clearBtn);
+
+  function syncClearButton() {
+    wrapper.classList.toggle("has-value", !!selectEl.value);
+  }
+
+  clearBtn.addEventListener("click", event => {
+    event.preventDefault();
+    event.stopPropagation();
+
+    if (!selectEl.value) return;
+
+    selectEl.value = "";
+    syncClearButton();
+
+    selectEl.dispatchEvent(new Event("input", { bubbles: true }));
+    selectEl.dispatchEvent(new Event("change", { bubbles: true }));
+  });
+
+  selectEl.addEventListener("input", syncClearButton);
+  selectEl.addEventListener("change", syncClearButton);
+
+  selectEl.dataset.clearableFilterReady = "1";
+  syncClearButton();
+}
+
+function setupClearableFilterSelects() {
+  setupClearableFilterSelect(teamFilter);
+  setupClearableFilterSelect(positionFilter);
+}
+/* CLEARABLE_FILTER_SELECTS_JS_END */
+
+
     function setupEvents() {
-      formationSelect.value = currentFormation;
+      
+      setupClearableFilterSelects();
+formationSelect.value = currentFormation;
       eligibleOnlyToggle.checked = eligibleOnly;
 
       infoBoxToggle.addEventListener("click", () => {
@@ -7482,9 +7604,9 @@ function renderTradeList() {
         fixtures
           .filter(function (f) { return isFuture(f.kickoff_dk || f.kickoff); })
           .sort(function (a, b) {
-            var ad = new Date(String(a.kickoff_dk || a.kickoff || "").replace(" ", "T"));
-            var bd = new Date(String(b.kickoff_dk || b.kickoff || "").replace(" ", "T"));
-            return (Number.isFinite(ad.getTime()) ? ad.getTime() : 0) - (Number.isFinite(bd.getTime()) ? bd.getTime() : 0);
+            var ad = typeof kickoffToDate === "function" ? kickoffToDate(a.kickoff_dk || a.kickoff) : null;
+            var bd = typeof kickoffToDate === "function" ? kickoffToDate(b.kickoff_dk || b.kickoff) : null;
+            return (ad ? ad.getTime() : 0) - (bd ? bd.getTime() : 0);
           })
           .filter(function (f) { return f.stage === "GROUP"; })
           .filter(function (f) {
