@@ -6377,7 +6377,27 @@ function renderTradeList() {
       });
     }
 
+    function enforceLoggedOutPrivacyState() {
+      if (currentUser && currentUser.id) return;
+
+      squad = {};
+      activeSlotKey = null;
+      previousReplacementBySlot.clear();
+      modelChoiceBySlot.clear();
+      frontendCaptainOverride = null;
+      favoriteOnly = false;
+
+      if (activeSlotText) {
+        activeSlotText.textContent = "Ingen valgt";
+      }
+
+      if (typeof updateFavoriteFilterButton === "function") {
+        updateFavoriteFilterButton();
+      }
+    }
+
     function render() {
+      enforceLoggedOutPrivacyState();
       cleanSquadForCurrentFormation();
       renderBudget();
       renderStrategyControls();
