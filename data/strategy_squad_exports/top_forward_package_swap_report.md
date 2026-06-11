@@ -4,105 +4,105 @@ Rapporten ændrer ikke data. Den viser kun, hvilke angribere der går igen i de 
 
 ## Næste runde
 
-**3-4-3** — budget 49,5 mio.
+**3-4-3** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Erling Haaland | 8,5 mio. | 93% | 14,276 |
-| Cristiano Ronaldo | 7,0 mio. | 92% | 12,155 |
-| Breel Embolo | 5,0 mio. | 91% | 10,837 |
+| Cristiano Ronaldo | 7,0 mio. | 92% | 30,321 |
+| Raul Jimenez | 4,5 mio. | 79% | 28,374 |
+| Marko Arnautovic | 4,5 mio. | 82% | 26,476 |
 
 **3-5-2** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Erling Haaland | 8,5 mio. | 93% | 14,276 |
-| Cristiano Ronaldo | 7,0 mio. | 92% | 12,155 |
+| Cristiano Ronaldo | 7,0 mio. | 92% | 30,321 |
+| Raul Jimenez | 4,5 mio. | 79% | 28,374 |
 
 **4-3-3** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Erling Haaland | 8,5 mio. | 93% | 14,276 |
-| Cristiano Ronaldo | 7,0 mio. | 92% | 12,155 |
-| Breel Embolo | 5,0 mio. | 91% | 10,837 |
+| Cristiano Ronaldo | 7,0 mio. | 92% | 30,321 |
+| Lionel Messi | 8,0 mio. | 93% | 28,785 |
+| Raul Jimenez | 4,5 mio. | 79% | 28,374 |
 
 **4-4-2** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Erling Haaland | 8,5 mio. | 93% | 14,276 |
-| Cristiano Ronaldo | 7,0 mio. | 92% | 12,155 |
+| Cristiano Ronaldo | 7,0 mio. | 92% | 30,321 |
+| Lionel Messi | 8,0 mio. | 93% | 28,785 |
 
-**4-5-1** — budget 49,5 mio.
-
-| Angriber | Pris | Start | EV |
-|---|---:|---:|---:|
-| Erling Haaland | 8,5 mio. | 93% | 14,276 |
-
-**5-3-2** — budget 50,0 mio.
+**4-5-1** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Erling Haaland | 8,5 mio. | 93% | 14,276 |
-| Cristiano Ronaldo | 7,0 mio. | 92% | 12,155 |
+| Lionel Messi | 8,0 mio. | 93% | 28,785 |
+
+**5-3-2** — budget 49,5 mio.
+
+| Angriber | Pris | Start | EV |
+|---|---:|---:|---:|
+| Cristiano Ronaldo | 7,0 mio. | 92% | 30,321 |
+| Lionel Messi | 8,0 mio. | 93% | 28,785 |
 
 **5-4-1** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Erling Haaland | 8,5 mio. | 93% | 14,276 |
+| Cristiano Ronaldo | 7,0 mio. | 92% | 30,321 |
 
 ## Gruppespil
 
-**3-4-3** — budget 49,5 mio.
+**3-4-3** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Harry Kane | 9,5 mio. | 97% | 18,857 |
-| Cristiano Ronaldo | 7,0 mio. | 92% | 16,072 |
-| Breel Embolo | 5,0 mio. | 91% | 14,432 |
+| Vinicius Junior | 7,5 mio. | 92% | 39,88 |
+| Cristiano Ronaldo | 7,0 mio. | 92% | 39,683 |
+| Jonathan David | 4,5 mio. | 92% | 36,991 |
 
 **3-5-2** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Harry Kane | 9,5 mio. | 97% | 18,857 |
-| Lionel Messi | 8,0 mio. | 93% | 16,508 |
+| Lionel Messi | 8,0 mio. | 93% | 40,116 |
+| Vinicius Junior | 7,5 mio. | 92% | 39,88 |
 
 **4-3-3** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Harry Kane | 9,5 mio. | 97% | 18,857 |
-| Cristiano Ronaldo | 7,0 mio. | 92% | 16,072 |
-| Breel Embolo | 5,0 mio. | 91% | 14,432 |
+| Vinicius Junior | 7,5 mio. | 92% | 39,88 |
+| Cristiano Ronaldo | 7,0 mio. | 92% | 39,683 |
+| Jonathan David | 4,5 mio. | 92% | 36,991 |
 
-**4-4-2** — budget 49,5 mio.
-
-| Angriber | Pris | Start | EV |
-|---|---:|---:|---:|
-| Harry Kane | 9,5 mio. | 97% | 18,857 |
-| Cristiano Ronaldo | 7,0 mio. | 92% | 16,072 |
-
-**4-5-1** — budget 49,5 mio.
+**4-4-2** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Harry Kane | 9,5 mio. | 97% | 18,857 |
+| Lionel Messi | 8,0 mio. | 93% | 40,116 |
+| Cristiano Ronaldo | 7,0 mio. | 92% | 39,683 |
+
+**4-5-1** — budget 50,0 mio.
+
+| Angriber | Pris | Start | EV |
+|---|---:|---:|---:|
+| Cristiano Ronaldo | 7,0 mio. | 92% | 39,683 |
 
 **5-3-2** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Harry Kane | 9,5 mio. | 97% | 18,857 |
-| Cristiano Ronaldo | 7,0 mio. | 92% | 16,072 |
+| Lionel Messi | 8,0 mio. | 93% | 40,116 |
+| Jonathan David | 4,5 mio. | 92% | 36,991 |
 
 **5-4-1** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Harry Kane | 9,5 mio. | 97% | 18,857 |
+| Vinicius Junior | 7,5 mio. | 92% | 39,88 |
 
 ## 1. + 2. runde
 
@@ -110,50 +110,50 @@ Rapporten ændrer ikke data. Den viser kun, hvilke angribere der går igen i de 
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Cristiano Ronaldo | 7,0 mio. | 92% | 16,874 |
-| Erling Haaland | 8,5 mio. | 93% | 16,463 |
-| Breel Embolo | 5,0 mio. | 91% | 14,302 |
+| Cristiano Ronaldo | 7,0 mio. | 92% | 40,619 |
+| Jonathan David | 4,5 mio. | 92% | 36,514 |
+| Raul Jimenez | 4,5 mio. | 79% | 33,705 |
 
 **3-5-2** — budget 49,5 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Cristiano Ronaldo | 7,0 mio. | 92% | 16,874 |
-| Harry Kane | 9,5 mio. | 97% | 16,645 |
+| Cristiano Ronaldo | 7,0 mio. | 92% | 40,619 |
+| Jonathan David | 4,5 mio. | 92% | 36,514 |
 
 **4-3-3** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Cristiano Ronaldo | 7,0 mio. | 92% | 16,874 |
-| Harry Kane | 9,5 mio. | 97% | 16,645 |
-| Breel Embolo | 5,0 mio. | 91% | 14,302 |
+| Cristiano Ronaldo | 7,0 mio. | 92% | 40,619 |
+| Jonathan David | 4,5 mio. | 92% | 36,514 |
+| Raul Jimenez | 4,5 mio. | 79% | 33,705 |
 
-**4-4-2** — budget 49,5 mio.
-
-| Angriber | Pris | Start | EV |
-|---|---:|---:|---:|
-| Cristiano Ronaldo | 7,0 mio. | 92% | 16,874 |
-| Erling Haaland | 8,5 mio. | 93% | 16,463 |
-
-**4-5-1** — budget 50,0 mio.
+**4-4-2** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Harry Kane | 9,5 mio. | 97% | 16,645 |
+| Cristiano Ronaldo | 7,0 mio. | 92% | 40,619 |
+| Jonathan David | 4,5 mio. | 92% | 36,514 |
+
+**4-5-1** — budget 49,5 mio.
+
+| Angriber | Pris | Start | EV |
+|---|---:|---:|---:|
+| Cristiano Ronaldo | 7,0 mio. | 92% | 40,619 |
 
 **5-3-2** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Cristiano Ronaldo | 7,0 mio. | 92% | 16,874 |
-| Erling Haaland | 8,5 mio. | 93% | 16,463 |
+| Cristiano Ronaldo | 7,0 mio. | 92% | 40,619 |
+| Jonathan David | 4,5 mio. | 92% | 36,514 |
 
-**5-4-1** — budget 50,0 mio.
+**5-4-1** — budget 49,5 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Erling Haaland | 8,5 mio. | 93% | 16,463 |
+| Cristiano Ronaldo | 7,0 mio. | 92% | 40,619 |
 
 ## Lang sigt
 
@@ -161,66 +161,61 @@ Rapporten ændrer ikke data. Den viser kun, hvilke angribere der går igen i de 
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Cody Gakpo | 6,5 mio. | 91% | 7,865 |
-| Kai Havertz | 5,5 mio. | 88% | 7,739 |
-| Alexander Sørloth | 4,5 mio. | 88% | 5,626 |
+| Cristiano Ronaldo | 7,0 mio. | 92% | 16,949 |
+| Jonathan David | 4,5 mio. | 92% | 11,895 |
+| Raul Jimenez | 4,5 mio. | 79% | 11,774 |
 
 **3-5-2** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Kai Havertz | 5,5 mio. | 88% | 7,739 |
-| Julian Alvarez | 6,0 mio. | 72% | 7,149 |
+| Vinicius Junior | 7,5 mio. | 92% | 17,414 |
+| Cristiano Ronaldo | 7,0 mio. | 92% | 16,949 |
 
 **4-3-3** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Michael Olise | 7,0 mio. | 86% | 8,471 |
-| Kai Havertz | 5,5 mio. | 88% | 7,739 |
-| Breel Embolo | 5,0 mio. | 91% | 6,309 |
+| Vinicius Junior | 7,5 mio. | 92% | 17,414 |
+| Cristiano Ronaldo | 7,0 mio. | 92% | 16,949 |
+| Jonathan David | 4,5 mio. | 92% | 11,895 |
 
 **4-4-2** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Michael Olise | 7,0 mio. | 86% | 8,471 |
-| Kai Havertz | 5,5 mio. | 88% | 7,739 |
+| Cristiano Ronaldo | 7,0 mio. | 92% | 16,949 |
+| Raul Jimenez | 4,5 mio. | 79% | 11,774 |
 
 **4-5-1** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Cody Gakpo | 6,5 mio. | 91% | 7,865 |
+| Vinicius Junior | 7,5 mio. | 92% | 17,414 |
 
 **5-3-2** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Mikel Oyarzabal | 7,5 mio. | 88% | 8,949 |
-| Breel Embolo | 5,0 mio. | 91% | 6,309 |
+| Vinicius Junior | 7,5 mio. | 92% | 17,414 |
+| Jonathan David | 4,5 mio. | 92% | 11,895 |
 
 **5-4-1** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Mikel Oyarzabal | 7,5 mio. | 88% | 8,949 |
+| Cristiano Ronaldo | 7,0 mio. | 92% | 16,949 |
 
 # Samlet angriber-frekvens
 
 | Spiller | Antal hold |
 |---|---:|
-| Cristiano Ronaldo | 14 |
-| Erling Haaland | 11 |
-| Harry Kane | 10 |
-| Breel Embolo | 8 |
-| Kai Havertz | 4 |
-| Cody Gakpo | 2 |
-| Michael Olise | 2 |
-| Mikel Oyarzabal | 2 |
-| Lionel Messi | 1 |
-| Alexander Sørloth | 1 |
-| Julian Alvarez | 1 |
+| Cristiano Ronaldo | 22 |
+| Jonathan David | 11 |
+| Vinicius Junior | 8 |
+| Raul Jimenez | 7 |
+| Lionel Messi | 7 |
+| Marko Arnautovic | 1 |
 
 # Angriber-frekvens pr. strategi
 
@@ -228,36 +223,33 @@ Rapporten ændrer ikke data. Den viser kun, hvilke angribere der går igen i de 
 
 | Spiller | Antal formationer |
 |---|---:|
-| Erling Haaland | 7 |
-| Cristiano Ronaldo | 5 |
-| Breel Embolo | 2 |
+| Cristiano Ronaldo | 6 |
+| Lionel Messi | 4 |
+| Raul Jimenez | 3 |
+| Marko Arnautovic | 1 |
 
 ## Gruppespil
 
 | Spiller | Antal formationer |
 |---|---:|
-| Harry Kane | 7 |
+| Vinicius Junior | 4 |
 | Cristiano Ronaldo | 4 |
-| Breel Embolo | 2 |
-| Lionel Messi | 1 |
+| Jonathan David | 3 |
+| Lionel Messi | 3 |
 
 ## 1. + 2. runde
 
 | Spiller | Antal formationer |
 |---|---:|
-| Cristiano Ronaldo | 5 |
-| Erling Haaland | 4 |
-| Harry Kane | 3 |
-| Breel Embolo | 2 |
+| Cristiano Ronaldo | 7 |
+| Jonathan David | 5 |
+| Raul Jimenez | 2 |
 
 ## Lang sigt
 
 | Spiller | Antal formationer |
 |---|---:|
-| Kai Havertz | 4 |
-| Cody Gakpo | 2 |
-| Michael Olise | 2 |
-| Breel Embolo | 2 |
-| Mikel Oyarzabal | 2 |
-| Alexander Sørloth | 1 |
-| Julian Alvarez | 1 |
+| Cristiano Ronaldo | 5 |
+| Vinicius Junior | 4 |
+| Jonathan David | 3 |
+| Raul Jimenez | 2 |

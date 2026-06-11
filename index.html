@@ -2963,7 +2963,7 @@
               </div>
               <label class="bank-box">
                 <div><strong>Aktuel bank (mio.)</strong></div>
-                <input id="manualBankInput" class="manual-bank-input" type="text" inputmode="decimal" placeholder="fx 1,2" aria-label="Aktuel bank i millioner kroner">
+                <input id="manualBankInput" class="manual-bank-input" type="text" inputmode="decimal" placeholder="fx 50,5" aria-label="Samlet budgetramme i millioner kroner">
               </label>
               <div class="bank-box">
                 <div><strong>Spillere</strong></div>
@@ -3910,14 +3910,17 @@ function saveState() {
       return manualBankMillions === null ? null : Math.round(manualBankMillions * 1000000);
     }
 
+    function getEffectiveBudgetTotal() {
+      const manualBudgetTotal = getManualBankAmount();
+      return manualBudgetTotal === null ? BUDGET_TOTAL : manualBudgetTotal;
+    }
+
     function getFullOptimizationBudget() {
-      const manualBank = getManualBankAmount();
-      return manualBank === null ? BUDGET_TOTAL : getSpentBudget() + manualBank;
+      return getEffectiveBudgetTotal();
     }
 
     function getAutofillBankLeft(baseSpent) {
-      const manualBank = getManualBankAmount();
-      return manualBank === null ? BUDGET_TOTAL - baseSpent : manualBank;
+      return getEffectiveBudgetTotal() - baseSpent;
     }
 
     function setManualBankMillions(value) {
@@ -4411,8 +4414,7 @@ function getPlayerScore(player) {
     }
 
     function getDisplayedBankLeft() {
-      const manualBank = getManualBankAmount();
-      return manualBank === null ? getBankLeft() : manualBank;
+      return getEffectiveBudgetTotal() - getSpentBudget();
     }
 
     function buildMergeKey(playerName, teamId, teamName = "") {
@@ -6119,11 +6121,32 @@ function updateFavoriteFilterButton() {
   const btn = document.getElementById("favoriteFilterBtn");
   if (!btn) return;
 
+  const isLoggedIn = !!(currentUser && currentUser.id);
+  if (!isLoggedIn) {
+    favoriteOnly = false;
+  }
+
   btn.textContent = `\u2665 Favoritter (${favoritePlayerIds.size})`;
   btn.classList.toggle("active", !!favoriteOnly);
+  btn.hidden = !isLoggedIn;
+  btn.disabled = !isLoggedIn;
+  btn.setAttribute("aria-hidden", isLoggedIn ? "false" : "true");
+  btn.tabIndex = isLoggedIn ? 0 : -1;
+
+  if (isLoggedIn) {
+    btn.style.removeProperty("display");
+  } else {
+    btn.style.setProperty("display", "none", "important");
+  }
 }
 
 function ensureFavoriteFilterButton() {
+  if (!currentUser) {
+    const existingBtn = document.getElementById("favoriteFilterBtn");
+    if (existingBtn) updateFavoriteFilterButton();
+    return;
+  }
+
   if (document.getElementById("favoriteFilterBtn")) {
     updateFavoriteFilterButton();
     return;
@@ -6148,6 +6171,13 @@ function ensureFavoriteFilterButton() {
   btn.addEventListener("click", function (event) {
     event.preventDefault();
     event.stopPropagation();
+
+    if (!currentUser) {
+      favoriteOnly = false;
+      updateFavoriteFilterButton();
+      if (typeof renderTradeList === "function") renderTradeList();
+      return;
+    }
 
     favoriteOnly = !favoriteOnly;
     updateFavoriteFilterButton();
@@ -6281,6 +6311,11 @@ function renderTradeList() {
       }
 
       ensureFavoriteFilterButton();
+
+      if (!currentUser || !currentUser.id) {
+        favoriteOnly = false;
+        if (typeof updateFavoriteFilterButton === "function") updateFavoriteFilterButton();
+      }
 
       const visiblePlayers = favoriteOnly
         ? players
@@ -6935,6 +6970,26 @@ function renderTradeList() {
       });
     }
 
+    function clearLocalSquadViewAfterLogout() {
+      squad = {};
+      activeSlotKey = null;
+      previousReplacementBySlot.clear();
+      modelChoiceBySlot.clear();
+      frontendCaptainOverride = null;
+      favoriteOnly = false;
+
+      if (typeof updateFavoriteFilterButton === "function") {
+        updateFavoriteFilterButton();
+      }
+
+      if (activeSlotText) {
+        activeSlotText.textContent = "Ingen valgt";
+      }
+
+      saveState();
+      render();
+    }
+
     async function initAuth() {
       const { data } = await supabaseClient.auth.getSession();
       currentUser = data?.session?.user || null;
@@ -6953,6 +7008,12 @@ function renderTradeList() {
         setAuthUi();
 
         sanitizeSearchField();
+
+        if (!currentUser && previousUserId) {
+          clearLocalSquadViewAfterLogout();
+          showStatus("Du er logget ud.", "info");
+          return;
+        }
 
         if (currentUser && currentUser.id !== previousUserId) {
           await loadAutosaveSquadForUser();
@@ -7209,7 +7270,9 @@ function renderTradeList() {
           h: selected.home_win_odds,
           x: selected.draw_odds,
           a: selected.away_win_odds,
-          source: selected.source || "odds"
+          source: selected.source || "odds",
+          oddsFetchedLabel: selected.odds_fetched_label || selected.oddsFetchedLabel || "",
+          oddsFetchedAt: selected.odds_fetched_at || selected.oddsFetchedAt || ""
         };
 
         oddsByTeamPair.set(home + "|" + away, entry);
@@ -7279,38 +7342,41 @@ function renderTradeList() {
 
     async function fixturesFor(player) {
       var odds = await getOdds();
-      var team = String(player.team_id || "").toUpperCase();
+      var team = canonicalTeamId(player.team_id || player.team_name || "");
       var out = [];
 
-      [1, 2, 3].forEach(function (roundNo) {
-        var opponent = String(
-          player["match_" + roundNo + "_opponent_team"] ||
-          player["round" + roundNo + "_opponent_team"] ||
-          ""
-        ).toUpperCase();
+      function addFixture(home, away, kickoff, matchId, explicitOpponent) {
+        home = canonicalTeamId(home);
+        away = canonicalTeamId(away);
+        var opponent = canonicalTeamId(explicitOpponent || (home === team ? away : home));
 
-        if (!opponent || opponent === "0") return;
-
-        var row = odds.get(team + "|" + opponent);
-        var kickoff = String(
-          player["match_" + roundNo + "_kickoff_dk"] ||
-          player["round" + roundNo + "_kickoff_dk"] ||
-          (row ? row.kickoff : "") ||
-          ""
-        );
-
+        if (!team || !opponent || opponent === "0") return;
+        if (!kickoff) {
+          var kickoffRow = odds.get(home + "|" + away) || odds.get(away + "|" + home);
+          kickoff = kickoffRow ? kickoffRow.kickoff : "";
+        }
         if (!isFuture(kickoff)) return;
+
+        var row = odds.get(home + "|" + away) || odds.get(away + "|" + home);
+        if (!row && matchId) {
+          row = matchOddsRows.find(function (candidate) {
+            return String(getRowValue(candidate, ["match_id", "fixture_id", "id"])) === String(matchId);
+          }) || null;
+        }
 
         var win = null;
         var draw = null;
         var loss = null;
 
         if (row) {
-          if (row.home === team) {
+          var rowHome = canonicalTeamId(row.home);
+          var rowAway = canonicalTeamId(row.away);
+
+          if (rowHome === team) {
             win = row.h;
             draw = row.x;
             loss = row.a;
-          } else if (row.away === team) {
+          } else if (rowAway === team) {
             win = row.a;
             draw = row.x;
             loss = row.h;
@@ -7324,9 +7390,53 @@ function renderTradeList() {
           win: win,
           draw: draw,
           loss: loss,
-          source: row ? row.source : ""
+          source: row ? row.source : "",
+          oddsFetchedLabel: row ? (row.oddsFetchedLabel || row.odds_fetched_label || "") : "",
+          oddsFetchedAt: row ? (row.oddsFetchedAt || row.odds_fetched_at || "") : ""
         });
+      }
+
+      [1, 2, 3].forEach(function (roundNo) {
+        var opponent = player["match_" + roundNo + "_opponent_team"] ||
+          player["round" + roundNo + "_opponent_team"] ||
+          "";
+
+        if (!opponent || String(opponent) === "0") return;
+
+        var home = player["match_" + roundNo + "_home"] ||
+          player["round" + roundNo + "_home"] ||
+          team;
+
+        var away = player["match_" + roundNo + "_away"] ||
+          player["round" + roundNo + "_away"] ||
+          opponent;
+
+        var kickoff = String(
+          player["match_" + roundNo + "_kickoff_dk"] ||
+          player["round" + roundNo + "_kickoff_dk"] ||
+          ""
+        );
+
+        addFixture(home, away, kickoff, player["match_" + roundNo + "_id"] || player["round" + roundNo + "_id"], opponent);
       });
+
+      if (!out.length && Array.isArray(fixtures)) {
+        fixtures
+          .filter(function (f) { return f.stage === "GROUP"; })
+          .filter(function (f) {
+            return canonicalTeamId(f.home) === team || canonicalTeamId(f.away) === team;
+          })
+          .filter(function (f) {
+            return f.kickoffDate instanceof Date &&
+              !Number.isNaN(f.kickoffDate.getTime()) &&
+              f.kickoffDate >= getNow();
+          })
+          .sort(function (a, b) { return a.kickoffDate - b.kickoffDate; })
+          .slice(0, 3)
+          .forEach(function (f) {
+            addFixture(f.home, f.away, f.kickoff_dk || f.kickoff || "", f.match_id);
+          });
+      }
 
       return out.slice(0, 3);
     }
@@ -7363,6 +7473,9 @@ function renderTradeList() {
       var title = fixtures.length === 1 ? "N\u00e6ste kamp" : "N\u00e6ste " + fixtures.length + " kampe";
       var source = fixtures.find(function (f) { return f.source; });
       var sourceText = source ? source.source : "odds";
+      if (source && source.oddsFetchedLabel) {
+        sourceText = sourceText + " · hentet " + source.oddsFetchedLabel;
+      }
 
       if (!fixtures.length) {
         return '<div class="vm-fixture-tooltip-head"><span>Ingen kommende kampe</span></div>' +
@@ -7639,6 +7752,11 @@ function renderTradeList() {
       var favBtn = document.getElementById("favoriteFilterBtn");
       var altBtn = findAlternativesButton();
 
+      if (typeof updateFavoriteFilterButton === "function") {
+        updateFavoriteFilterButton();
+      }
+
+      if (!currentUser || !currentUser.id) return;
       if (!favBtn || !altBtn || !altBtn.parentElement) return;
 
       // Plac?r favoritter lige til venstre for ?Se alternativer?

@@ -1,0 +1,8 @@
+[OK] player_pool rows: 1522
+[OK] Agustin Giay i player_pool: ARG DEF price=2500000 holdet_is_out=True optimizer_ev=0
+[OK] EV rows: 1522
+[OK] Agustin Giay i EV: ARG DEF holdet_is_out=True optimizer_ev=0
+[OK] Agustin Giay i optimizer-output: ikke fundet
+[OK] Mbappé premium auditfiler: mbappe_premium_long_run_report.csv, mbappe_premium_long_run_report.md
+[OK] Nyeste direkte strategy-export: strategier_alle_formationer_direkte_20260611_075836.md
+[OK] Nyeste Holdet-diff: holdet_player_pool_diff_namepos_20260611_075116.md

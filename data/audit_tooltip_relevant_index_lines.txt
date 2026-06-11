@@ -1,0 +1,535 @@
+
+====================================================================================================
+fixture/core lookup | lines 4540-4665
+====================================================================================================
+ 4540:       dataStatusNote.textContent = "Foreløbig model: odds, startvurderinger og trupper skal fortsat opdateres frem mod turneringen.";
+ 4541:     }
+ 4542: 
+ 4543:     function getNow() {
+ 4544:       return new Date();
+ 4545:     }
+ 4546: 
+ 4547:     function getNextFixtureForTeam(teamId) {
+ 4548:       if (!teamId || !fixtures.length) return null;
+ 4549: 
+ 4550:       const now = getNow();
+ 4551:       const team = canonicalTeamId(teamId);
+ 4552: 
+ 4553:       const relevantFixtures = fixtures
+ 4554:         .filter(f => f.stage === "GROUP")
+ 4555:         .filter(f => canonicalTeamId(f.home) === team || canonicalTeamId(f.away) === team)
+ 4556:         .filter(f => f.kickoffDate >= now)
+ 4557:         .sort((a, b) => a.kickoffDate - b.kickoffDate);
+ 4558: 
+ 4559:       if (!relevantFixtures.length) return null;
+ 4560: 
+ 4561:       const nextFixture = relevantFixtures[0];
+ 4562:       const isHome = canonicalTeamId(nextFixture.home) === team;
+ 4563:       const opponent = canonicalTeamId(isHome ? nextFixture.away : nextFixture.home);
+ 4564: 
+ 4565:       return {
+ 4566:         opponent,
+ 4567:         isHome,
+ 4568:         home: canonicalTeamId(nextFixture.home),
+ 4569:         away: canonicalTeamId(nextFixture.away),
+ 4570:         match_id: nextFixture.match_id
+ 4571:       };
+ 4572:     }
+ 4573: 
+ 4574:     function getRowValue(row, keys) {
+ 4575:       for (const key of keys) {
+ 4576:         if (row[key] !== undefined && row[key] !== null && row[key] !== "") {
+ 4577:           return row[key];
+ 4578:         }
+ 4579:       }
+ 4580:       return "";
+ 4581:     }
+ 4582: 
+ 4583:     function findMatchOddsRow(nextFixture) {
+ 4584:       if (!nextFixture) return null;
+ 4585: 
+ 4586:       const exactByTeams = matchOddsRows.find(row =>
+ 4587:         canonicalTeamId(getRowValue(row, ["home", "home_team", "team_home", "home_team_id"])) === canonicalTeamId(nextFixture.home) &&
+ 4588:         canonicalTeamId(getRowValue(row, ["away", "away_team", "team_away", "away_team_id"])) === canonicalTeamId(nextFixture.away)
+ 4589:       );
+ 4590:       if (exactByTeams) return exactByTeams;
+ 4591: 
+ 4592:       return matchOddsRows.find(row =>
+ 4593:         String(getRowValue(row, ["match_id", "fixture_id", "id"])) === String(nextFixture.match_id)
+ 4594:       ) || null;
+ 4595:     }
+ 4596: 
+ 4597:     function parseProbNumber(value) {
+ 4598:       const num = Number(String(value || "").replace(",", "."));
+ 4599:       if (!Number.isFinite(num)) return null;
+ 4600:       if (num > 1) return num / 100;
+ 4601:       return num;
+ 4602:     }
+ 4603: 
+ 4604:     function getNextMatchWinProb(teamId) {
+ 4605:       const nextFixture = getNextFixtureForTeam(teamId);
+ 4606:       if (!nextFixture) return null;
+ 4607: 
+ 4608:       const row = findMatchOddsRow(nextFixture);
+ 4609:       if (!row) return null;
+ 4610: 
+ 4611:       const isHome = canonicalTeamId(nextFixture.home) === canonicalTeamId(teamId);
+ 4612: 
+ 4613:       const homeProb = parseProbNumber(getRowValue(row, [
+ 4614:         "home_win_prob_fair",
+ 4615:         "home_win_prob",
+ 4616:         "home_prob",
+ 4617:         "prob_home_win",
+ 4618:         "p_home_win",
+ 4619:         "home_win_pct"
+ 4620:       ]));
+ 4621: 
+ 4622:       const awayProb = parseProbNumber(getRowValue(row, [
+ 4623:         "away_win_prob_fair",
+ 4624:         "away_win_prob",
+ 4625:         "away_prob",
+ 4626:         "prob_away_win",
+ 4627:         "p_away_win",
+ 4628:         "away_win_pct"
+ 4629:       ]));
+ 4630: 
+ 4631:       return isHome ? homeProb : awayProb;
+ 4632:     }
+ 4633: 
+ 4634:     function nextMatchText(teamId) {
+ 4635:       const nextFixture = getNextFixtureForTeam(teamId);
+ 4636:       if (!nextFixture) return "Næste kamp: ikke fundet";
+ 4637: 
+ 4638:       return `Næste kamp: ${teamDisplayName(nextFixture.opponent)}`;
+ 4639:     }
+ 4640: 
+ 4641:     function nextOpponentText(teamId) {
+ 4642:       const nextFixture = getNextFixtureForTeam(teamId);
+ 4643:       if (!nextFixture) return "";
+ 4644: 
+ 4645:       return teamDisplayName(nextFixture.opponent);
+ 4646:     }
+ 4647: 
+ 4648:     function getCurrentSlots() {
+ 4649:       const formation = FORMATIONS[currentFormation];
+ 4650:       const slots = [];
+ 4651: 
+ 4652:       slots.push({ key: "GK1", position: "Målmand", positionCode: "GK", x: 50, y: 11 });
+ 4653: 
+ 4654:       if (formation.df === 3) {
+ 4655:         slots.push(
+ 4656:           { key: "DF1", position: "Forsvar", positionCode: "DEF", x: 25, y: 35 },
+ 4657:           { key: "DF2", position: "Forsvar", positionCode: "DEF", x: 50, y: 35 },
+ 4658:           { key: "DF3", position: "Forsvar", positionCode: "DEF", x: 75, y: 35 }
+ 4659:         );
+ 4660:       } else if (formation.df === 4) {
+ 4661:         slots.push(
+ 4662:           { key: "DF1", position: "Forsvar", positionCode: "DEF", x: 17, y: 32 },
+ 4663:           { key: "DF2", position: "Forsvar", positionCode: "DEF", x: 39, y: 32 },
+ 4664:           { key: "DF3", position: "Forsvar", positionCode: "DEF", x: 61, y: 32 },
+ 4665:           { key: "DF4", position: "Forsvar", positionCode: "DEF", x: 83, y: 32 }
+
+====================================================================================================
+fixture tooltip render | lines 7280-7425
+====================================================================================================
+ 7280:     async function fixturesFor(player) {
+ 7281:       var odds = await getOdds();
+ 7282:       var team = String(player.team_id || "").toUpperCase();
+ 7283:       var out = [];
+ 7284: 
+ 7285:       [1, 2, 3].forEach(function (roundNo) {
+ 7286:         var opponent = String(
+ 7287:           player["match_" + roundNo + "_opponent_team"] ||
+ 7288:           player["round" + roundNo + "_opponent_team"] ||
+ 7289:           ""
+ 7290:         ).toUpperCase();
+ 7291: 
+ 7292:         if (!opponent || opponent === "0") return;
+ 7293: 
+ 7294:         var row = odds.get(team + "|" + opponent);
+ 7295:         var kickoff = String(
+ 7296:           player["match_" + roundNo + "_kickoff_dk"] ||
+ 7297:           player["round" + roundNo + "_kickoff_dk"] ||
+ 7298:           (row ? row.kickoff : "") ||
+ 7299:           ""
+ 7300:         );
+ 7301: 
+ 7302:         if (!isFuture(kickoff)) return;
+ 7303: 
+ 7304:         var win = null;
+ 7305:         var draw = null;
+ 7306:         var loss = null;
+ 7307: 
+ 7308:         if (row) {
+ 7309:           if (row.home === team) {
+ 7310:             win = row.h;
+ 7311:             draw = row.x;
+ 7312:             loss = row.a;
+ 7313:           } else if (row.away === team) {
+ 7314:             win = row.a;
+ 7315:             draw = row.x;
+ 7316:             loss = row.h;
+ 7317:           }
+ 7318:         }
+ 7319: 
+ 7320:         out.push({
+ 7321:           opponent: opponent,
+ 7322:           opponentName: teamName(opponent),
+ 7323:           kickoff: kickoff,
+ 7324:           win: win,
+ 7325:           draw: draw,
+ 7326:           loss: loss,
+ 7327:           source: row ? row.source : ""
+ 7328:         });
+ 7329:       });
+ 7330: 
+ 7331:       return out.slice(0, 3);
+ 7332:     }
+ 7333: 
+ 7334:     function ensureTooltip() {
+ 7335:       if (tooltipEl) return tooltipEl;
+ 7336:       tooltipEl = document.createElement("div");
+ 7337:       tooltipEl.className = "vm-fixture-tooltip";
+ 7338:       tooltipEl.hidden = true;
+ 7339:       document.body.appendChild(tooltipEl);
+ 7340:       return tooltipEl;
+ 7341:     }
+ 7342: 
+ 7343:     function placeTooltip(card) {
+ 7344:       var el = ensureTooltip();
+ 7345:       var rect = card.getBoundingClientRect();
+ 7346:       var gap = 10;
+ 7347: 
+ 7348:       var left = rect.right + gap;
+ 7349:       var top = rect.top + rect.height / 2 - el.offsetHeight / 2;
+ 7350: 
+ 7351:       if (left + el.offsetWidth > window.innerWidth - 12) {
+ 7352:         left = rect.left - el.offsetWidth - gap;
+ 7353:       }
+ 7354: 
+ 7355:       left = Math.max(12, Math.min(left, window.innerWidth - el.offsetWidth - 12));
+ 7356:       top = Math.max(12, Math.min(top, window.innerHeight - el.offsetHeight - 12));
+ 7357: 
+ 7358:       el.style.left = Math.round(left) + "px";
+ 7359:       el.style.top = Math.round(top) + "px";
+ 7360:     }
+ 7361: 
+ 7362:     function html(player, fixtures) {
+ 7363:       var title = fixtures.length === 1 ? "N\u00e6ste kamp" : "N\u00e6ste " + fixtures.length + " kampe";
+ 7364:       var source = fixtures.find(function (f) { return f.source; });
+ 7365:       var sourceText = source ? source.source : "odds";
+ 7366: 
+ 7367:       if (!fixtures.length) {
+ 7368:         return '<div class="vm-fixture-tooltip-head"><span>Ingen kommende kampe</span></div>' +
+ 7369:           '<div class="vm-fixture-tooltip-empty">Ingen kommende gruppekampe fundet.</div>';
+ 7370:       }
+ 7371: 
+ 7372:       var rows = fixtures.map(function (f) {
+ 7373:         return "<tr>" +
+ 7374:           '<td class="vm-fixture-tooltip-opponent">' +
+ 7375:             esc(f.opponentName) +
+ 7376:             '<span class="vm-fixture-tooltip-date">' + esc(fmtDate(f.kickoff)) + "</span>" +
+ 7377:           "</td>" +
+ 7378:           '<td class="vm-fixture-tooltip-win">' + esc(fmtOdds(f.win)) + "</td>" +
+ 7379:           '<td class="vm-fixture-tooltip-draw">' + esc(fmtOdds(f.draw)) + "</td>" +
+ 7380:           '<td class="vm-fixture-tooltip-loss">' + esc(fmtOdds(f.loss)) + "</td>" +
+ 7381:         "</tr>";
+ 7382:       }).join("");
+ 7383: 
+ 7384:       return '<div class="vm-fixture-tooltip-head">' +
+ 7385:           "<span>" + title + "</span>" +
+ 7386:           '<span class="vm-fixture-tooltip-source">' + esc(sourceText) + "</span>" +
+ 7387:         "</div>" +
+ 7388:         "<table>" +
+ 7389:           "<thead><tr><th>Modstander</th><th>Sejr</th><th>U</th><th>Tab</th></tr></thead>" +
+ 7390:           "<tbody>" + rows + "</tbody>" +
+ 7391:         "</table>";
+ 7392:     }
+ 7393: 
+ 7394:     async function show(target) {
+ 7395:       var player = findPlayer(target);
+ 7396:       var card = findCard(target);
+ 7397:       if (!player || !card) return;
+ 7398: 
+ 7399:       activeCard = card;
+ 7400:       window.clearTimeout(hideTimer);
+ 7401: 
+ 7402:       var el = ensureTooltip();
+ 7403:       el.hidden = false;
+ 7404:       el.innerHTML = '<div class="vm-fixture-tooltip-head"><span>Henter kampe...</span></div>';
+ 7405:       el.classList.add("is-visible");
+ 7406:       placeTooltip(card);
+ 7407: 
+ 7408:       var fixtures = await fixturesFor(player);
+ 7409:       if (activeCard !== card) return;
+ 7410: 
+ 7411:       el.innerHTML = html(player, fixtures);
+ 7412:       placeTooltip(card);
+ 7413:     }
+ 7414: 
+ 7415:     function hide() {
+ 7416:       activeCard = null;
+ 7417:       if (!tooltipEl) return;
+ 7418: 
+ 7419:       tooltipEl.classList.remove("is-visible");
+ 7420:       hideTimer = window.setTimeout(function () {
+ 7421:         if (tooltipEl && !tooltipEl.classList.contains("is-visible")) {
+ 7422:           tooltipEl.hidden = true;
+ 7423:         }
+ 7424:       }, 140);
+ 7425:     }
+
+====================================================================================================
+fixture tooltip handlers | lines 7425-7555
+====================================================================================================
+ 7425:     }
+ 7426: 
+ 7427:     document.addEventListener("mouseover", function (event) {
+ 7428:       try {
+ 7429:         var card = findCard(event.target);
+ 7430:         if (!card || activeCard === card) return;
+ 7431:         if (!findPlayer(event.target)) return;
+ 7432:         show(event.target);
+ 7433:       } catch (err) {
+ 7434:         console.warn("Tooltip mouseover fejl", err);
+ 7435:       }
+ 7436:     });
+ 7437: 
+ 7438:     document.addEventListener("mouseout", function (event) {
+ 7439:       try {
+ 7440:         if (!activeCard) return;
+ 7441:         if (event.relatedTarget && activeCard.contains(event.relatedTarget)) return;
+ 7442:         if (!activeCard.contains(event.target)) return;
+ 7443:         hide();
+ 7444:       } catch (err) {
+ 7445:         hide();
+ 7446:       }
+ 7447:     });
+ 7448: 
+ 7449:     document.addEventListener("scroll", hide, true);
+ 7450:     window.addEventListener("resize", hide);
+ 7451:   } catch (err) {
+ 7452:     console.warn("Safe tooltip kunne ikke initialiseres", err);
+ 7453:   }
+ 7454: }());
+ 7455: /* SAFE_PLAYER_FIXTURE_TOOLTIP_JS_END */
+ 7456: 
+ 7457: 
+ 7458: 
+ 7459: /* FORCE_TOOLTIP_ODDS_TONE_JS_START */
+ 7460: (function () {
+ 7461:   try {
+ 7462:     var CLOSE_TEAM_WIN_ODDS_SPAN = 0.25;
+ 7463: 
+ 7464:     function oddsToneNumber(text) {
+ 7465:       var n = Number(String(text || "").trim().replace(",", "."));
+ 7466:       return Number.isFinite(n) && n > 0 ? n : null;
+ 7467:     }
+ 7468: 
+ 7469:     function recolorTooltipOdds() {
+ 7470:       var tooltip = document.querySelector(".vm-fixture-tooltip");
+ 7471:       if (!tooltip) return;
+ 7472: 
+ 7473:       tooltip.querySelectorAll("tbody tr").forEach(function (row) {
+ 7474:         var cells = row.querySelectorAll("td");
+ 7475:         if (cells.length < 4) return;
+ 7476: 
+ 7477:         var winCell = cells[1];
+ 7478:         var drawCell = cells[2];
+ 7479:         var lossCell = cells[3];
+ 7480: 
+ 7481:         var winOdds = oddsToneNumber(winCell.textContent);
+ 7482:         var lossOdds = oddsToneNumber(lossCell.textContent);
+ 7483: 
+ 7484:         [winCell, drawCell, lossCell].forEach(function (cell) {
+ 7485:           cell.classList.remove(
+ 7486:             "vm-fixture-tooltip-win",
+ 7487:             "vm-fixture-tooltip-draw",
+ 7488:             "vm-fixture-tooltip-loss",
+ 7489:             "vm-fixture-tooltip-close"
+ 7490:           );
+ 7491:         });
+ 7492: 
+ 7493:         // Uafgjort er altid neutral/hvid.
+ 7494:         drawCell.classList.add("vm-fixture-tooltip-draw");
+ 7495: 
+ 7496:         if (winOdds === null || lossOdds === null) return;
+ 7497: 
+ 7498:         // Gul kun n?r de to landes sejr-odds er t?t p? hinanden.
+ 7499:         if (Math.abs(winOdds - lossOdds) <= CLOSE_TEAM_WIN_ODDS_SPAN) {
+ 7500:           winCell.classList.add("vm-fixture-tooltip-close");
+ 7501:           lossCell.classList.add("vm-fixture-tooltip-close");
+ 7502:           return;
+ 7503:         }
+ 7504: 
+ 7505:         // Laveste sejr-odds = favorit/gr?n. H?jeste = underdog/r?d.
+ 7506:         if (winOdds < lossOdds) {
+ 7507:           winCell.classList.add("vm-fixture-tooltip-win");
+ 7508:           lossCell.classList.add("vm-fixture-tooltip-loss");
+ 7509:         } else {
+ 7510:           winCell.classList.add("vm-fixture-tooltip-loss");
+ 7511:           lossCell.classList.add("vm-fixture-tooltip-win");
+ 7512:         }
+ 7513:       });
+ 7514:     }
+ 7515: 
+ 7516:     var observer = new MutationObserver(recolorTooltipOdds);
+ 7517:     observer.observe(document.body, { childList: true, subtree: true });
+ 7518: 
+ 7519:     document.addEventListener("mouseover", function () {
+ 7520:       window.setTimeout(recolorTooltipOdds, 50);
+ 7521:       window.setTimeout(recolorTooltipOdds, 150);
+ 7522:     });
+ 7523: 
+ 7524:     window.recolorTooltipOdds = recolorTooltipOdds;
+ 7525:   } catch (err) {
+ 7526:     console.warn("Tooltip odds color patch fejl", err);
+ 7527:   }
+ 7528: }());
+ 7529: /* FORCE_TOOLTIP_ODDS_TONE_JS_END */
+ 7530: 
+ 7531: 
+ 7532: 
+ 7533: 
+ 7534: 
+ 7535: /* CLEAR_ACTIVE_SLOT_FIX_START */
+ 7536: (function () {
+ 7537:   function clearActiveSlotSelection() {
+ 7538:     try {
+ 7539:       if (typeof activeSlotKey !== "undefined") {
+ 7540:         activeSlotKey = null;
+ 7541:       }
+ 7542: 
+ 7543:       var activeSlotTextEl = document.getElementById("activeSlotText");
+ 7544:       if (activeSlotTextEl) {
+ 7545:         activeSlotTextEl.textContent = "Ingen valgt";
+ 7546:       }
+ 7547: 
+ 7548:       if (typeof renderPitch === "function") renderPitch();
+ 7549:       if (typeof renderTradeList === "function") renderTradeList();
+ 7550:       if (typeof showStatus === "function") {
+ 7551:         showStatus("Valgt plads er nulstillet.", "info");
+ 7552:       }
+ 7553:     } catch (err) {
+ 7554:       console.warn("Kunne ikke nulstille valgt plads", err);
+ 7555:     }
+
+====================================================================================================
+trade row player list html | lines 6280-6335
+====================================================================================================
+ 6280:         return;
+ 6281:       }
+ 6282: 
+ 6283:       ensureFavoriteFilterButton();
+ 6284: 
+ 6285:       const visiblePlayers = favoriteOnly
+ 6286:         ? players
+ 6287:             .filter(player => isFavoritePlayer(player.player_id))
+ 6288:             .sort((a, b) => favoritePositionOrder(a) - favoritePositionOrder(b))
+ 6289:         : players;
+ 6290: 
+ 6291:       tradeList.innerHTML = visiblePlayers.slice(0, favoriteOnly ? 500 : 80).map(player => {
+ 6292:         const disabledReason = getDisabledReason(player);
+ 6293:         const isDisabled = !!disabledReason;
+ 6294:         const rowClass = isDisabled ? "trade-row disabled" : "trade-row";
+ 6295:         const flagUrl = getFlagUrl(getPlayerFlagCode(player));
+ 6296:         const tmWatchReason = String(player.tm_watch_reason || "").trim();
+ 6297:         const tmWarning = shouldShowTmWarning(player) ? `<div class="trade-tm-warning">TM: usikker starter</div>` : "";
+ 6298: 
+ 6299:         return `
+ 6300:           <div class="${rowClass}">
+ 6301:             <div class="trade-player-main">
+ 6302:               <div class="trade-name-line">
+ 6303:                 ${flagUrl ? `<img class="trade-list-flag" src="${flagUrl}" alt="${escapeHtml(getTradeFlagTitle(player))}" title="${escapeHtml(getTradeFlagTitle(player))}" aria-label="${escapeHtml(getTradeFlagTitle(player))}">` : ""}
+ 6304:                 <div class="trade-name">${player.player_name || "Ukendt spiller"}</div>
+ 6305:               </div>
+ 6306:               <div class="trade-next">${nextOpponentText(player.team_id)}</div>
+ 6307:               ${tmWarning}
+ 6308:             </div>
+ 6309:             <div class="trade-position-col">
+ 6310:               <div class="trade-position-value">${escapeHtml(compactPositionLabel(player.position))}</div>
+ 6311:             </div>
+ 6312:             <div class="trade-start-col">
+ 6313:               <div class="trade-start-value">${startPct(getPlayerStart(player))}</div>
+ 6314:               <div class="trade-start-label">Start</div>
+ 6315:             </div>
+ 6316:             <div class="trade-score-col">
+ 6317:               <div class="trade-score-value">${Math.round(getPlayerScore(player))}</div>
+ 6318:               <div class="trade-score-label">Score</div>
+ 6319:             </div>
+ 6320:             <div>
+ 6321:               <div class="trade-price">${formatMoney(getPlayerPrice(player))}</div>
+ 6322:               <div class="trade-subprice">Pris</div>
+ 6323:             </div>
+ 6324:             <button
+ 6325:               class="favorite-btn ${isFavoritePlayer(player.player_id) ? "active" : ""}"
+ 6326:               data-player-id="${player.player_id}"
+ 6327:               title="${isFavoritePlayer(player.player_id) ? "Fjern fra favoritter" : "Gem som favorit"}"
+ 6328:               aria-label="${isFavoritePlayer(player.player_id) ? "Fjern fra favoritter" : "Gem som favorit"}"
+ 6329:             >${isFavoritePlayer(player.player_id) ? "\u2665" : "\u2661"}</button>
+ 6330:             <button class="plus-btn" data-player-id="${player.player_id}" ${isDisabled ? "disabled" : ""}>+</button>
+ 6331:           </div>
+ 6332:         `;
+ 6333:       }).join("");
+ 6334: 
+ 6335:       tradeList.querySelectorAll(".plus-btn:not(.choose-alt-btn)").forEach(btn => {
+
+====================================================================================================
+alternative row html | lines 5060-5115
+====================================================================================================
+ 5060:             Ny kaptajn vælges efter skift ud fra bedste lokale kandidat.
+ 5061:           </div>
+ 5062:         `
+ 5063:         : "";
+ 5064: 
+ 5065:       function alternativeRows(players) {
+ 5066:         return players.map((player, index) => {
+ 5067:           const priceDiff = getPlayerPrice(player) - currentPrice;
+ 5068:           const isModelChoice = modelChoiceId === String(player.player_id);
+ 5069:           const warning = hasManualCheck(player) || (isModelChoice && getPlayerStart(player) < 60)
+ 5070:             ? `<span class="manual-mini-warning" title="Tjek start">Tjek start</span>`
+ 5071:             : "";
+ 5072:           const previousLabel = previousPlayerId === String(player.player_id)
+ 5073:             ? `<span class="previous-player-label">Forrige spiller</span>`
+ 5074:             : "";
+ 5075:           const modelLabel = isModelChoice
+ 5076:             ? `<span class="previous-player-label">Modelvalg</span>`
+ 5077:             : "";
+ 5078:           const priceDiffHtml = `<div class="trade-diff ${diffClass(priceDiff)}">${formatSignedMoneyDiff(priceDiff)}</div>`;
+ 5079:           const transferHtml = transferInfoHtml(player, currentPlayer);
+ 5080:           return `
+ 5081:             <div class="trade-row alternative">
+ 5082:               <span class="alternative-rank">${index + 1}</span>
+ 5083:               <div>
+ 5084:                 <div class="trade-name">${escapeHtml(player.player_name || "Ukendt spiller")}${warning}${previousLabel}${modelLabel}</div>
+ 5085:                 <div class="trade-meta">${escapeHtml(teamDisplayName(player.team_id, player.team_name))} &middot; ${escapeHtml(positionFullLabel(player.position))}</div>
+ 5086:                 <div class="trade-next">${escapeHtml(nextOpponentText(player.team_id))}</div>
+ 5087:               </div>
+ 5088:               <div class="trade-start-col">
+ 5089:                 <div class="trade-start-value">${startPct(getPlayerStart(player))}</div>
+ 5090:                 <div class="trade-start-label">Start</div>
+ 5091:               </div>
+ 5092:               <div class="trade-price">
+ 5093:                 ${formatMoney(getPlayerPrice(player))}
+ 5094:                 ${priceDiffHtml}
+ 5095:                 ${transferHtml}
+ 5096:               </div>
+ 5097:               <button class="plus-btn choose-alt-btn" data-player-id="${escapeHtml(player.player_id)}">V\u00e6lg</button>
+ 5098:             </div>
+ 5099:           `;
+ 5100:         }).join("");
+ 5101:       }
+ 5102: 
+ 5103:       const withBankRows = alternativeRows(alternativeGroups.withBank);
+ 5104:       const samePriceRows = alternativeRows(alternativeGroups.samePrice);
+ 5105:       const rows = `
+ 5106:         ${alternativeGroups.withBank.length ? `
+ 5107:           <div class="alternative-section-title"><strong>Med bank</strong> &middot; Op til ${formatMoney(availableForReplacement)}</div>
+ 5108:           ${withBankRows}
+ 5109:         ` : ""}
+ 5110:         ${alternativeGroups.samePrice.length ? `
+ 5111:           <div class="alternative-section-title"><strong>Samme prisniveau</strong> &middot; Op til ${formatMoney(currentPrice)}</div>
+ 5112:           ${samePriceRows}
+ 5113:         ` : ""}
+ 5114:         ${!alternatives.length ? `
+ 5115:           <div class="alternatives-subtitle">Ingen gyldige alternativer inden for position, budget og landeloft.</div>
