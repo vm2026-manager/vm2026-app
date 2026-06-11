@@ -3661,7 +3661,18 @@ setTimeout(removeDataStatusBox, 250);
       return activeStrategyEntry()?.best_summary || {};
     }
 
-    function strategyDisplayName(strategyKey) {
+    
+function getTimeAwareStrategyDisplayName(strategyKey) {
+  const key = String(strategyKey || "");
+
+  if (key === "next_round" && !hasUpcomingStrategyRound(1)) {
+    return "Næste kamp";
+  }
+
+  return strategyDisplayNames[key] || key;
+}
+
+function strategyDisplayName(strategyKey) {
       if (strategyKey === "next_round" && strategyContext?.next_round_display_name) {
         return strategyContext.next_round_display_name;
       }
@@ -3719,10 +3730,214 @@ setTimeout(removeDataStatusBox, 250);
       return badges.length ? `<div class="player-badges">${badges.join("")}</div>` : "";
     }
 
+
+/* TIME_AWARE_STRATEGY_CONTROLS_JS_START */
+const STRATEGY_ROUND_FIXTURE_COUNT = 24;
+
+function getSortedGroupFixturesForStrategyControls() {
+  if (!Array.isArray(fixtures) || !fixtures.length) return [];
+
+  const groupFixtures = fixtures
+    .filter(f => String(f.stage || "").toUpperCase() === "GROUP")
+    .slice()
+    .sort((a, b) => {
+      const ad = a.kickoffDate || kickoffToDate(a.kickoff_dk || a.kickoff);
+      const bd = b.kickoffDate || kickoffToDate(b.kickoff_dk || b.kickoff);
+      return (ad ? ad.getTime() : 0) - (bd ? bd.getTime() : 0);
+    });
+
+  return groupFixtures.length ? groupFixtures : fixtures.slice().sort((a, b) => {
+    const ad = a.kickoffDate || kickoffToDate(a.kickoff_dk || a.kickoff);
+    const bd = b.kickoffDate || kickoffToDate(b.kickoff_dk || b.kickoff);
+    return (ad ? ad.getTime() : 0) - (bd ? bd.getTime() : 0);
+  });
+}
+
+function getStrategyRoundFixtures(roundNo) {
+  const sorted = getSortedGroupFixturesForStrategyControls();
+  const start = (roundNo - 1) * STRATEGY_ROUND_FIXTURE_COUNT;
+  return sorted.slice(start, start + STRATEGY_ROUND_FIXTURE_COUNT);
+}
+
+function hasUpcomingStrategyRound(roundNo) {
+  const roundFixtures = getStrategyRoundFixtures(roundNo);
+  if (!roundFixtures.length) return true;
+  return roundFixtures.some(f => isUpcomingFixture(f));
+}
+
+function hasUpcomingStrategyGroupStage() {
+  const sorted = getSortedGroupFixturesForStrategyControls();
+  if (!sorted.length) return true;
+  return sorted.some(f => isUpcomingFixture(f));
+}
+
+function isStrategyStillRelevantByTime(strategyKey) {
+  const key = String(strategyKey || "");
+
+  if (key === "next_round") {
+    return true;
+  }
+
+  // Vises som "1. + 2. runde" i UI.
+  if (key === "practical_start") {
+    return hasUpcomingStrategyRound(1) || hasUpcomingStrategyRound(2);
+  }
+
+  if (key === "group_stage") {
+    return hasUpcomingStrategyGroupStage();
+  }
+
+  // long_run og ukendte strategier bevares.
+  return true;
+}
+
+function getVisibleStrategyKeysByTime(strategyKeys) {
+  const keys = Array.isArray(strategyKeys) ? strategyKeys : [];
+  const visible = keys.filter(isStrategyStillRelevantByTime);
+
+  if (visible.length) return visible;
+
+  const longRun = keys.find(key => String(key) === "long_run");
+  return longRun ? [longRun] : keys;
+}
+
+function ensureActiveStrategyStillVisible(strategyKeys) {
+  const visible = getVisibleStrategyKeysByTime(strategyKeys);
+
+  if (visible.length && !visible.includes(activeStrategyKey)) {
+    activeStrategyKey = visible[0];
+    frontendCaptainOverride = null;
+
+    try {
+      localStorage.setItem("vm2026_active_strategy", activeStrategyKey);
+    } catch (error) {
+      // Ignore localStorage errors.
+    }
+  }
+
+  return visible;
+}
+/* TIME_AWARE_STRATEGY_CONTROLS_JS_END */
+
+
+
+/* STRATEGY_BUTTON_POSTPROCESS_JS_START */
+function getStrategyControlSortedGroupFixtures() {
+  if (!Array.isArray(fixtures) || !fixtures.length) return [];
+
+  const groupFixtures = fixtures
+    .filter(f => String(f.stage || "").toUpperCase() === "GROUP")
+    .slice();
+
+  const source = groupFixtures.length ? groupFixtures : fixtures.slice();
+
+  return source.sort((a, b) => {
+    const ad = a.kickoffDate || kickoffToDate(a.kickoff_dk || a.kickoff);
+    const bd = b.kickoffDate || kickoffToDate(b.kickoff_dk || b.kickoff);
+    return (ad ? ad.getTime() : 0) - (bd ? bd.getTime() : 0);
+  });
+}
+
+function getStrategyControlRoundFixtures(roundNo) {
+  const sorted = getStrategyControlSortedGroupFixtures();
+  const start = (roundNo - 1) * 24;
+  return sorted.slice(start, start + 24);
+}
+
+function hasStrategyControlUpcomingRound(roundNo) {
+  const roundFixtures = getStrategyControlRoundFixtures(roundNo);
+  if (!roundFixtures.length) return true;
+  return roundFixtures.some(f => isUpcomingFixture(f));
+}
+
+function hasStrategyControlUpcomingGroupStage() {
+  const sorted = getStrategyControlSortedGroupFixtures();
+  if (!sorted.length) return true;
+  return sorted.some(f => isUpcomingFixture(f));
+}
+
+function isStrategyButtonRelevantNow(strategyKey) {
+  const key = String(strategyKey || "");
+
+  if (key === "next_round") return true;
+  if (key === "long_run") return true;
+
+  // UI-label: "1. + 2. runde"
+  if (key === "practical_start") {
+    return hasStrategyControlUpcomingRound(1) || hasStrategyControlUpcomingRound(2);
+  }
+
+  if (key === "group_stage") {
+    return hasStrategyControlUpcomingGroupStage();
+  }
+
+  return true;
+}
+
+function getStrategyButtonLabelNow(strategyKey, currentText) {
+  const key = String(strategyKey || "");
+
+  if (key === "next_round" && !hasStrategyControlUpcomingRound(1)) {
+    return "Næste kamp";
+  }
+
+  return currentText;
+}
+
+function postProcessTimeAwareStrategyButtons() {
+  if (!strategyButtons) return;
+
+  const buttons = Array.from(strategyButtons.querySelectorAll(".strategy-btn"));
+  if (!buttons.length) return;
+
+  let firstVisibleKey = null;
+  let activeIsVisible = false;
+
+  buttons.forEach(button => {
+    const key = String(button.dataset.strategyKey || "");
+    const visible = isStrategyButtonRelevantNow(key);
+
+    button.hidden = !visible;
+    button.style.display = visible ? "" : "none";
+
+    if (visible) {
+      if (!firstVisibleKey) firstVisibleKey = key;
+
+      const label = getStrategyButtonLabelNow(key, button.textContent || "");
+      if (label && button.textContent !== label) {
+        button.textContent = label;
+      }
+
+      if (key === activeStrategyKey) {
+        activeIsVisible = true;
+      }
+    }
+  });
+
+  if (!activeIsVisible && firstVisibleKey) {
+    activeStrategyKey = firstVisibleKey;
+    frontendCaptainOverride = null;
+
+    try {
+      localStorage.setItem("vm2026_active_strategy", activeStrategyKey);
+    } catch (error) {
+      // Ignore localStorage errors.
+    }
+
+    buttons.forEach(button => {
+      const key = String(button.dataset.strategyKey || "");
+      button.classList.toggle("active", key === activeStrategyKey);
+    });
+  }
+}
+/* STRATEGY_BUTTON_POSTPROCESS_JS_END */
+
+
     function renderStrategyControls() {
+      const visibleStrategyKeys = ensureActiveStrategyStillVisible(USER_STRATEGIES);
       if (!strategyButtons) return;
 
-      strategyButtons.innerHTML = USER_STRATEGIES.map(strategyKey => `
+      strategyButtons.innerHTML = visibleStrategyKeys.map(strategyKey => `
         <button
           class="strategy-btn ${strategyKey === activeStrategyKey ? "active" : ""}"
           type="button"
@@ -6493,6 +6708,7 @@ function renderTradeList() {
       cleanSquadForCurrentFormation();
       renderBudget();
       renderStrategyControls();
+      postProcessTimeAwareStrategyButtons();
       renderActiveSlotBadge();
       renderPitch();
       renderTradeList();
