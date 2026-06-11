@@ -40,35 +40,35 @@ Rapporten ændrer ikke data. Den viser kun, hvilke angribere der går igen i de 
 |---|---:|---:|---:|
 | Erling Haaland | 8,5 mio. | 93% | 14,276 |
 
-**5-3-2** — budget 49,5 mio.
+**5-3-2** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
 | Erling Haaland | 8,5 mio. | 93% | 14,276 |
-| Lautaro Martinez | 8,0 mio. | 62% | 12,041 |
+| Cristiano Ronaldo | 7,0 mio. | 92% | 12,155 |
 
-**5-4-1** — budget 49,5 mio.
+**5-4-1** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Lamine Yamal | 9,0 mio. | 90% | 11,918 |
+| Erling Haaland | 8,5 mio. | 93% | 14,276 |
 
 ## Gruppespil
 
-**3-4-3** — budget 50,0 mio.
+**3-4-3** — budget 49,5 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
 | Harry Kane | 9,5 mio. | 97% | 18,857 |
-| Lautaro Martinez | 8,0 mio. | 62% | 16,907 |
-| Jonathan David | 4,5 mio. | 92% | 13,713 |
+| Cristiano Ronaldo | 7,0 mio. | 92% | 16,072 |
+| Breel Embolo | 5,0 mio. | 91% | 14,432 |
 
 **3-5-2** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
 | Harry Kane | 9,5 mio. | 97% | 18,857 |
-| Lautaro Martinez | 8,0 mio. | 62% | 16,907 |
+| Lionel Messi | 8,0 mio. | 93% | 16,508 |
 
 **4-3-3** — budget 50,0 mio.
 
@@ -91,12 +91,12 @@ Rapporten ændrer ikke data. Den viser kun, hvilke angribere der går igen i de 
 |---|---:|---:|---:|
 | Harry Kane | 9,5 mio. | 97% | 18,857 |
 
-**5-3-2** — budget 49,5 mio.
+**5-3-2** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Lautaro Martinez | 8,0 mio. | 62% | 16,907 |
-| Lionel Messi | 8,0 mio. | 93% | 16,508 |
+| Harry Kane | 9,5 mio. | 97% | 18,857 |
+| Cristiano Ronaldo | 7,0 mio. | 92% | 16,072 |
 
 **5-4-1** — budget 50,0 mio.
 
@@ -146,8 +146,8 @@ Rapporten ændrer ikke data. Den viser kun, hvilke angribere der går igen i de 
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
+| Cristiano Ronaldo | 7,0 mio. | 92% | 16,874 |
 | Erling Haaland | 8,5 mio. | 93% | 16,463 |
-| Lamine Yamal | 9,0 mio. | 90% | 16,347 |
 
 **5-4-1** — budget 50,0 mio.
 
@@ -162,30 +162,30 @@ Rapporten ændrer ikke data. Den viser kun, hvilke angribere der går igen i de 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
 | Cody Gakpo | 6,5 mio. | 91% | 7,865 |
-| Kai Havertz | 5,5 mio. | 88% | 7,353 |
-| Donyell Malen | 4,5 mio. | 80% | 6,074 |
+| Kai Havertz | 5,5 mio. | 88% | 7,739 |
+| Alexander Sørloth | 4,5 mio. | 88% | 5,626 |
 
 **3-5-2** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Michael Olise | 7,0 mio. | 86% | 8,471 |
-| Donyell Malen | 4,5 mio. | 80% | 6,074 |
+| Kai Havertz | 5,5 mio. | 88% | 7,739 |
+| Julian Alvarez | 6,0 mio. | 72% | 7,149 |
 
 **4-3-3** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Mikel Oyarzabal | 7,5 mio. | 88% | 8,949 |
-| Kai Havertz | 5,5 mio. | 88% | 7,353 |
-| Donyell Malen | 4,5 mio. | 80% | 6,074 |
+| Michael Olise | 7,0 mio. | 86% | 8,471 |
+| Kai Havertz | 5,5 mio. | 88% | 7,739 |
+| Breel Embolo | 5,0 mio. | 91% | 6,309 |
 
 **4-4-2** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
 | Michael Olise | 7,0 mio. | 86% | 8,471 |
-| Kai Havertz | 5,5 mio. | 88% | 7,353 |
+| Kai Havertz | 5,5 mio. | 88% | 7,739 |
 
 **4-5-1** — budget 50,0 mio.
 
@@ -197,8 +197,8 @@ Rapporten ændrer ikke data. Den viser kun, hvilke angribere der går igen i de 
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Cristiano Ronaldo | 7,0 mio. | 92% | 8,44 |
-| Kai Havertz | 5,5 mio. | 88% | 7,353 |
+| Mikel Oyarzabal | 7,5 mio. | 88% | 8,949 |
+| Breel Embolo | 5,0 mio. | 91% | 6,309 |
 
 **5-4-1** — budget 50,0 mio.
 
@@ -210,19 +210,17 @@ Rapporten ændrer ikke data. Den viser kun, hvilke angribere der går igen i de 
 
 | Spiller | Antal hold |
 |---|---:|
-| Cristiano Ronaldo | 11 |
-| Erling Haaland | 10 |
-| Harry Kane | 9 |
-| Breel Embolo | 5 |
-| Lautaro Martinez | 4 |
+| Cristiano Ronaldo | 14 |
+| Erling Haaland | 11 |
+| Harry Kane | 10 |
+| Breel Embolo | 8 |
 | Kai Havertz | 4 |
-| Donyell Malen | 3 |
-| Lamine Yamal | 2 |
 | Cody Gakpo | 2 |
 | Michael Olise | 2 |
 | Mikel Oyarzabal | 2 |
-| Jonathan David | 1 |
 | Lionel Messi | 1 |
+| Alexander Sørloth | 1 |
+| Julian Alvarez | 1 |
 
 # Angriber-frekvens pr. strategi
 
@@ -230,40 +228,36 @@ Rapporten ændrer ikke data. Den viser kun, hvilke angribere der går igen i de 
 
 | Spiller | Antal formationer |
 |---|---:|
-| Erling Haaland | 6 |
-| Cristiano Ronaldo | 4 |
+| Erling Haaland | 7 |
+| Cristiano Ronaldo | 5 |
 | Breel Embolo | 2 |
-| Lautaro Martinez | 1 |
-| Lamine Yamal | 1 |
 
 ## Gruppespil
 
 | Spiller | Antal formationer |
 |---|---:|
-| Harry Kane | 6 |
-| Lautaro Martinez | 3 |
-| Cristiano Ronaldo | 2 |
-| Jonathan David | 1 |
-| Breel Embolo | 1 |
+| Harry Kane | 7 |
+| Cristiano Ronaldo | 4 |
+| Breel Embolo | 2 |
 | Lionel Messi | 1 |
 
 ## 1. + 2. runde
 
 | Spiller | Antal formationer |
 |---|---:|
-| Cristiano Ronaldo | 4 |
+| Cristiano Ronaldo | 5 |
 | Erling Haaland | 4 |
 | Harry Kane | 3 |
 | Breel Embolo | 2 |
-| Lamine Yamal | 1 |
 
 ## Lang sigt
 
 | Spiller | Antal formationer |
 |---|---:|
 | Kai Havertz | 4 |
-| Donyell Malen | 3 |
 | Cody Gakpo | 2 |
 | Michael Olise | 2 |
+| Breel Embolo | 2 |
 | Mikel Oyarzabal | 2 |
-| Cristiano Ronaldo | 1 |
+| Alexander Sørloth | 1 |
+| Julian Alvarez | 1 |

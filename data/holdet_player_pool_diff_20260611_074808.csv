@@ -1,0 +1,2984 @@
+﻿type,player_name,team,position,pool_price,holdet_price,diff,pool_is_out,holdet_is_out
+new_in_holdet,Nico Elvedi,Schweiz,DEF,,3.0,,,False
+new_in_holdet,Silvan Widmer,Schweiz,DEF,,3.0,,,False
+new_in_holdet,Ricardo Rodriguez,Schweiz,DEF,,3.0,,,False
+new_in_holdet,Eray Cömert,Schweiz,DEF,,2.0,,,False
+new_in_holdet,Manuel Akanji,Schweiz,DEF,,3.5,,,False
+new_in_holdet,Becir Omeragic,Schweiz,DEF,,2.0,,,True
+new_in_holdet,Cedric Zesiger,Schweiz,DEF,,2.0,,,True
+new_in_holdet,Aurele Amenda,Schweiz,DEF,,2.5,,,False
+new_in_holdet,Luca Jaquez,Schweiz,DEF,,2.0,,,False
+new_in_holdet,Isaac Schmidt,Schweiz,DEF,,2.0,,,True
+new_in_holdet,Miro Muheim,Schweiz,DEF,,2.5,,,False
+new_in_holdet,Adrian Bajrami,Schweiz,DEF,,2.0,,,True
+new_in_holdet,Lucas Blondel,Schweiz,DEF,,2.0,,,True
+new_in_holdet,Robin Hranac,Tjekkiet,DEF,,2.5,,,False
+new_in_holdet,Ladislav Krejci,Tjekkiet,DEF,,3.0,,,False
+new_in_holdet,Stepan Chaloupek,Tjekkiet,DEF,,2.0,,,False
+new_in_holdet,Martin Vitik,Tjekkiet,DEF,,2.5,,,True
+new_in_holdet,David Jurasek,Tjekkiet,DEF,,2.0,,,False
+new_in_holdet,David Zima,Tjekkiet,DEF,,2.0,,,False
+new_in_holdet,Vladimir Coufal,Tjekkiet,DEF,,3.0,,,False
+new_in_holdet,Jaroslav Zeleny,Tjekkiet,DEF,,2.5,,,False
+new_in_holdet,Tomas Holes,Tjekkiet,DEF,,2.0,,,False
+new_in_holdet,João Cancelo,Portugal,DEF,,5.0,,,False
+new_in_holdet,Nelson Semedo,Portugal,DEF,,4.0,,,False
+new_in_holdet,Ruben Dias,Portugal,DEF,,4.0,,,False
+new_in_holdet,Diogo Dalot,Portugal,DEF,,4.0,,,False
+new_in_holdet,Nuno Tavares,Portugal,DEF,,3.5,,,True
+new_in_holdet,Nuno Mendes,Portugal,DEF,,4.5,,,False
+new_in_holdet,Goncalo Inacio,Portugal,DEF,,4.0,,,False
+new_in_holdet,Tomas Araujo,Portugal,DEF,,3.5,,,False
+new_in_holdet,Antonio Silva,Portugal,DEF,,3.5,,,True
+new_in_holdet,Renato Veiga,Portugal,DEF,,3.5,,,False
+new_in_holdet,Mustafa Eskihellac,Tyrkiet,DEF,,2.0,,,True
+new_in_holdet,Mert Müldür,Tyrkiet,DEF,,3.0,,,False
+new_in_holdet,Abdulkerim Bardakci,Tyrkiet,DEF,,3.0,,,False
+new_in_holdet,Ferdi Kadioglu,Tyrkiet,DEF,,3.5,,,False
+new_in_holdet,Samet Akaydin,Tyrkiet,DEF,,2.5,,,False
+new_in_holdet,Evren Eren Elmali,Tyrkiet,DEF,,2.0,,,False
+new_in_holdet,Zeki Celik,Tyrkiet,DEF,,2.5,,,False
+new_in_holdet,Merih Demiral,Tyrkiet,DEF,,3.0,,,False
+new_in_holdet,Ozan Kabak,Tyrkiet,DEF,,2.5,,,False
+new_in_holdet,Caglar Soyuncu,Tyrkiet,DEF,,2.5,,,False
+new_in_holdet,David Alaba,Østrig,DEF,,3.0,,,False
+new_in_holdet,Philipp Lienhart,Østrig,DEF,,3.0,,,False
+new_in_holdet,Kevin Danso,Østrig,DEF,,2.5,,,False
+new_in_holdet,Stefan Posch,Østrig,DEF,,3.0,,,False
+new_in_holdet,Marco Friedl,Østrig,DEF,,2.0,,,False
+new_in_holdet,Phillipp Mwene,Østrig,DEF,,2.5,,,False
+new_in_holdet,Maximilian Wöber,Østrig,DEF,,2.5,,,True
+new_in_holdet,Leopold Querfeld,Østrig,DEF,,2.0,,,True
+new_in_holdet,David Affengruber,Østrig,DEF,,2.5,,,False
+new_in_holdet,Alexander Prass,Østrig,DEF,,2.5,,,False
+new_in_holdet,Michael Svoboda,Østrig,DEF,,2.5,,,False
+new_in_holdet,Josip Sutalo,Kroatien,DEF,,3.0,,,False
+new_in_holdet,Martin Erlic,Kroatien,DEF,,3.0,,,False
+new_in_holdet,Josip Stanisic,Kroatien,DEF,,3.5,,,False
+new_in_holdet,Luka Vuskovic,Kroatien,DEF,,2.0,,,False
+new_in_holdet,Ivan Smolcic,Kroatien,DEF,,2.0,,,True
+new_in_holdet,Kristijan Jakic,Kroatien,DEF,,3.5,,,False
+new_in_holdet,Marin Pongracic,Kroatien,DEF,,2.5,,,False
+new_in_holdet,Duje Caleta-Car,Kroatien,DEF,,3.0,,,False
+new_in_holdet,Josko Gvardiol,Kroatien,DEF,,3.5,,,False
+new_in_holdet,Antonio Rüdiger,Tyskland,DEF,,4.5,,,False
+new_in_holdet,Jonathan Tah,Tyskland,DEF,,4.5,,,False
+new_in_holdet,Maximilian Mittelstädt,Tyskland,DEF,,3.5,,,True
+new_in_holdet,Waldemar Anton,Tyskland,DEF,,3.5,,,False
+new_in_holdet,Nico Schlotterbeck,Tyskland,DEF,,4.0,,,False
+new_in_holdet,Malick Thiaw,Tyskland,DEF,,3.0,,,False
+new_in_holdet,Robin Koch,Tyskland,DEF,,3.5,,,True
+new_in_holdet,Nathaniel Brown,Tyskland,DEF,,2.5,,,False
+new_in_holdet,David Raum,Tyskland,DEF,,4.5,,,False
+new_in_holdet,Malo Gusto,Frankrig,DEF,,4.0,,,False
+new_in_holdet,Pierre Kalulu,Frankrig,DEF,,3.0,,,True
+new_in_holdet,Maxence Lacroix,Frankrig,DEF,,3.0,,,False
+new_in_holdet,Jules Kounde,Frankrig,DEF,,3.5,,,False
+new_in_holdet,William Saliba,Frankrig,DEF,,4.5,,,False
+new_in_holdet,Dayot Upamecano,Frankrig,DEF,,4.0,,,False
+new_in_holdet,Ibrahima Konate,Frankrig,DEF,,3.0,,,False
+new_in_holdet,Theo Hernandez,Frankrig,DEF,,4.5,,,False
+new_in_holdet,Lucas Hernandez,Frankrig,DEF,,3.0,,,False
+new_in_holdet,Lucas Digne,Frankrig,DEF,,3.5,,,False
+new_in_holdet,Stefan de Vrij,Holland,DEF,,3.0,,,True
+new_in_holdet,Nathan Ake,Holland,DEF,,3.5,,,False
+new_in_holdet,Virgil van Dijk,Holland,DEF,,5.0,,,False
+new_in_holdet,Lutsharel Geertruida,Holland,DEF,,2.5,,,False
+new_in_holdet,Denzel Dumfries,Holland,DEF,,5.0,,,False
+new_in_holdet,Jurrien Timber,Holland,DEF,,2.5,,,True
+new_in_holdet,Jeremie Frimpong,Holland,DEF,,4.0,,,True
+new_in_holdet,Jorrel Hato,Holland,DEF,,2.5,,,False
+new_in_holdet,Micky van de Ven,Holland,DEF,,4.0,,,False
+new_in_holdet,Jan Paul van Hecke,Holland,DEF,,3.0,,,False
+new_in_holdet,Marc Pubill,Spanien,DEF,,3.0,,,False
+new_in_holdet,Dean Donny Huijsen,Spanien,DEF,,4.0,,,True
+new_in_holdet,Pau Cubarsi,Spanien,DEF,,4.0,,,False
+new_in_holdet,Pedro Porro,Spanien,DEF,,4.5,,,False
+new_in_holdet,Marc Cucurella,Spanien,DEF,,4.5,,,False
+new_in_holdet,Daniel Vivian,Spanien,DEF,,3.5,,,True
+new_in_holdet,Eric Garcia,Spanien,DEF,,3.0,,,False
+new_in_holdet,Robin Le Normand,Spanien,DEF,,4.5,,,True
+new_in_holdet,Alejandro 'Alex' Grimaldo,Spanien,DEF,,4.0,,,False
+new_in_holdet,Aymeric Laporte,Spanien,DEF,,4.5,,,False
+new_in_holdet,Victor Lindelöf,Sverige,DEF,,3.0,,,False
+new_in_holdet,Eric Smith,Sverige,DEF,,2.0,,,False
+new_in_holdet,Carl Starfelt,Sverige,DEF,,2.5,,,False
+new_in_holdet,Gabriel Gudmundsson,Sverige,DEF,,3.0,,,False
+new_in_holdet,Emil Holm,Sverige,DEF,,2.5,,,True
+new_in_holdet,Hjalmar Ekdal,Sverige,DEF,,2.0,,,False
+new_in_holdet,Daniel Svensson,Sverige,DEF,,3.0,,,False
+new_in_holdet,Isak Hien,Sverige,DEF,,2.5,,,False
+new_in_holdet,Gustaf Lagerbielke,Sverige,DEF,,3.0,,,False
+new_in_holdet,Victor Eriksson,Sverige,DEF,,2.0,,,True
+new_in_holdet,Achref Abada,Algeriet,DEF,,2.0,,,False
+new_in_holdet,Sohaib Nair,Algeriet,DEF,,2.0,,,True
+new_in_holdet,Mohamed Amine Tougai,Algeriet,DEF,,2.0,,,False
+new_in_holdet,Youcef Atal,Algeriet,DEF,,2.5,,,True
+new_in_holdet,Jaouen Hadjam,Algeriet,DEF,,2.5,,,False
+new_in_holdet,Elliot Stroud,Sverige,DEF,,2.0,,,False
+new_in_holdet,Rafik Belghali,Algeriet,DEF,,2.5,,,False
+new_in_holdet,Samir Chergui,Algeriet,DEF,,2.0,,,False
+new_in_holdet,Zineddine Belaid,Algeriet,DEF,,2.5,,,False
+new_in_holdet,Mehdi Dorval,Algeriet,DEF,,2.0,,,True
+new_in_holdet,Rayan Ait-Nouri,Algeriet,DEF,,3.0,,,False
+new_in_holdet,Ramy Bensebaini,Algeriet,DEF,,3.0,,,False
+new_in_holdet,Aissa Mandi,Algeriet,DEF,,3.0,,,False
+new_in_holdet,Nicolas Otamendi,Argentina,DEF,,4.5,,,False
+new_in_holdet,Nicolas Tagliafico,Argentina,DEF,,4.0,,,False
+new_in_holdet,Leonardo Balerdi,Argentina,DEF,,4.0,,,True
+new_in_holdet,Lisandro Martinez,Argentina,DEF,,3.0,,,False
+new_in_holdet,Cristian Romero,Argentina,DEF,,4.0,,,False
+new_in_holdet,Julio Soler,Argentina,DEF,,3.0,,,True
+new_in_holdet,Facundo Medina,Argentina,DEF,,2.5,,,False
+new_in_holdet,Gonzalo Montiel,Argentina,DEF,,3.5,,,False
+new_in_holdet,Nahuel Molina,Argentina,DEF,,4.0,,,False
+new_in_holdet,Lucas Herrington,Australien,DEF,,2.0,,,False
+new_in_holdet,Jason Geria,Australien,DEF,,2.5,,,False
+new_in_holdet,Kai Trewin,Australien,DEF,,2.0,,,False
+new_in_holdet,Jacob Italiano,Australien,DEF,,2.0,,,False
+new_in_holdet,Agustin Giay,Argentina,DEF,,2.5,,,True
+new_in_holdet,Jordan Bos,Australien,DEF,,3.0,,,False
+new_in_holdet,Alessandro Circati,Australien,DEF,,2.5,,,False
+new_in_holdet,Kye Rowles,Australien,DEF,,2.5,,,True
+new_in_holdet,Cameron Burgess,Australien,DEF,,3.0,,,False
+new_in_holdet,Harry Souttar,Australien,DEF,,2.5,,,False
+new_in_holdet,Aziz Behich,Australien,DEF,,2.5,,,False
+new_in_holdet,Milos Degenek,Australien,DEF,,2.5,,,False
+new_in_holdet,Douglas Santos,Brasilien,DEF,,2.5,,,False
+new_in_holdet,Marquinhos,Brasilien,DEF,,5.0,,,False
+new_in_holdet,Alex Sandro,Brasilien,DEF,,2.5,,,False
+new_in_holdet,Danilo Luiz da Silva,Brasilien,DEF,,2.5,,,False
+new_in_holdet,Callum Elder,Australien,DEF,,2.0,,,True
+new_in_holdet,Eder Militão,Brasilien,DEF,,3.0,,,True
+new_in_holdet,Gabriel Magalhaes,Brasilien,DEF,,4.5,,,False
+new_in_holdet,Roger Ibanez,Brasilien,DEF,,2.5,,,False
+new_in_holdet,Wesley Franca,Brasilien,DEF,,3.5,,,True
+new_in_holdet,Bremer,Brasilien,DEF,,3.0,,,False
+new_in_holdet,Leo Pereira,Brasilien,DEF,,3.0,,,False
+new_in_holdet,Clement Akpa,Elfenbenskysten,DEF,,2.0,,,True
+new_in_holdet,Christopher Operi,Elfenbenskysten,DEF,,2.0,,,False
+new_in_holdet,Ghislain Konan,Elfenbenskysten,DEF,,2.5,,,False
+new_in_holdet,Guela Doue,Elfenbenskysten,DEF,,3.0,,,False
+new_in_holdet,Wilfried Stephane Singo,Elfenbenskysten,DEF,,2.5,,,False
+new_in_holdet,Ousmane Diomande,Elfenbenskysten,DEF,,2.5,,,False
+new_in_holdet,Emmanuel Agbadou,Elfenbenskysten,DEF,,2.5,,,False
+new_in_holdet,Odilon Kossounou,Elfenbenskysten,DEF,,2.5,,,False
+new_in_holdet,Evan N'Dicka,Elfenbenskysten,DEF,,2.5,,,False
+new_in_holdet,Trent Alexander-Arnold,England,DEF,,3.5,,,True
+new_in_holdet,John Stones,England,DEF,,4.0,,,False
+new_in_holdet,Dan Burn,England,DEF,,3.5,,,False
+new_in_holdet,Harry Maguire,England,DEF,,3.0,,,True
+new_in_holdet,Marc Guehi,England,DEF,,4.5,,,False
+new_in_holdet,Reece James,England,DEF,,3.5,,,False
+new_in_holdet,Ezri Konsa,England,DEF,,4.5,,,False
+new_in_holdet,Nico O'Reilly,England,DEF,,4.0,,,False
+new_in_holdet,Djed Spence,England,DEF,,2.5,,,False
+new_in_holdet,Jarell Quansah,England,DEF,,2.5,,,False
+new_in_holdet,Lewis Hall,England,DEF,,3.5,,,True
+new_in_holdet,Valentino Livramento,England,DEF,,3.0,,,False
+new_in_holdet,Jerome Opoku,Ghana,DEF,,2.5,,,False
+new_in_holdet,Patric Pfeiffer,Ghana,DEF,,2.0,,,True
+new_in_holdet,Kojo Peprah Oppong,Ghana,DEF,,2.0,,,False
+new_in_holdet,Alexander Djiku,Ghana,DEF,,3.0,,,True
+new_in_holdet,Alidu Seidu,Ghana,DEF,,2.5,,,False
+new_in_holdet,Derrick Köhn,Ghana,DEF,,2.0,,,True
+new_in_holdet,Caleb Yirenkyi,Ghana,DEF,,3.0,,,False
+new_in_holdet,Gideon Mensah,Ghana,DEF,,3.0,,,False
+new_in_holdet,Derrick Luckassen,Ghana,DEF,,2.0,,,False
+new_in_holdet,Abdul Rahman Baba,Ghana,DEF,,2.5,,,False
+new_in_holdet,Abdul Mumin,Ghana,DEF,,2.0,,,False
+new_in_holdet,Jonas Adjetey,Ghana,DEF,,2.5,,,False
+new_in_holdet,Marvin Senaya,Ghana,DEF,,2.0,,,False
+new_in_holdet,Yuto Nagatomo,Japan,DEF,,2.0,,,False
+new_in_holdet,Ko Itakura,Japan,DEF,,2.0,,,False
+new_in_holdet,Takehiro Tomiyasu,Japan,DEF,,2.0,,,False
+new_in_holdet,Ayumu Seko,Japan,DEF,,2.5,,,False
+new_in_holdet,Tomoya Ando,Japan,DEF,,2.0,,,True
+new_in_holdet,Henry Mochizuki,Japan,DEF,,2.0,,,True
+new_in_holdet,Tsuyoshi Watanabe,Japan,DEF,,3.0,,,False
+new_in_holdet,Yukinari Sugawara,Japan,DEF,,3.5,,,False
+new_in_holdet,Daiki Hashioka,Japan,DEF,,2.0,,,True
+new_in_holdet,Junnosuke Suzuki,Japan,DEF,,2.5,,,False
+new_in_holdet,Shogo Taniguchi,Japan,DEF,,3.0,,,False
+new_in_holdet,Hiroki Ito,Japan,DEF,,2.5,,,False
+new_in_holdet,Min-jae Kim,Sydkorea,DEF,,3.5,,,False
+new_in_holdet,Moon-Hwan Kim,Sydkorea,DEF,,2.5,,,False
+new_in_holdet,Yu-Min Cho,Sydkorea,DEF,,2.5,,,True
+new_in_holdet,Young-woo Seol,Sydkorea,DEF,,3.0,,,False
+new_in_holdet,Han-beom Lee,Sydkorea,DEF,,2.0,,,False
+new_in_holdet,Tae-Seok Lee,Sydkorea,DEF,,2.5,,,False
+new_in_holdet,Tae-Hyeon Kim,Sydkorea,DEF,,2.0,,,False
+new_in_holdet,Ju-sung Kim,Sydkorea,DEF,,2.0,,,True
+new_in_holdet,Gi-hyuk Lee,Sydkorea,DEF,,2.0,,,False
+new_in_holdet,Wi-je Cho,Sydkorea,DEF,,2.0,,,False
+new_in_holdet,Jesus Angulo,Mexico,DEF,,2.0,,,True
+new_in_holdet,Everardo Lopez,Mexico,DEF,,2.5,,,True
+new_in_holdet,Cesar Montes,Mexico,DEF,,3.0,,,False
+new_in_holdet,Jesus Gallardo,Mexico,DEF,,3.0,,,False
+new_in_holdet,Richard Ledezma,Mexico,DEF,,2.0,,,True
+new_in_holdet,Israel Reyes,Mexico,DEF,,3.0,,,False
+new_in_holdet,Mateo Chavez,Mexico,DEF,,2.5,,,False
+new_in_holdet,Jorge Sanchez,Mexico,DEF,,2.5,,,False
+new_in_holdet,Johan Vasquez,Mexico,DEF,,3.0,,,False
+new_in_holdet,Liberato Cacace,New Zealand,DEF,,2.5,,,False
+new_in_holdet,Finn Surman,New Zealand,DEF,,2.0,,,False
+new_in_holdet,Michael Boxall,New Zealand,DEF,,2.0,,,False
+new_in_holdet,Lukas Kelly-Heald,New Zealand,DEF,,2.0,,,True
+new_in_holdet,James McGarry,New Zealand,DEF,,2.0,,,True
+new_in_holdet,Tim Payne,New Zealand,DEF,,2.5,,,False
+new_in_holdet,Callan Elliot,New Zealand,DEF,,2.0,,,False
+new_in_holdet,Francis de Vries,New Zealand,DEF,,2.5,,,False
+new_in_holdet,Tyler Bindon,New Zealand,DEF,,2.5,,,False
+new_in_holdet,Tommy Smith,New Zealand,DEF,,2.0,,,False
+new_in_holdet,Bill Tuiloma,New Zealand,DEF,,2.0,,,True
+new_in_holdet,Nando Pijnaker,New Zealand,DEF,,2.0,,,False
+new_in_holdet,Jose Canale,Paraguay,DEF,,2.0,,,False
+new_in_holdet,Blas Riveros,Paraguay,DEF,,2.0,,,True
+new_in_holdet,Omar Alderete,Paraguay,DEF,,3.5,,,False
+new_in_holdet,Junior Alonso,Paraguay,DEF,,3.0,,,False
+new_in_holdet,Fabian Balbuena,Paraguay,DEF,,2.5,,,False
+new_in_holdet,Alexandro Maidana,Paraguay,DEF,,2.0,,,False
+new_in_holdet,Gustavo Gomez,Paraguay,DEF,,3.0,,,False
+new_in_holdet,Alexis Duarte,Paraguay,DEF,,2.0,,,True
+new_in_holdet,Gustavo Velazquez,Paraguay,DEF,,2.5,,,False
+new_in_holdet,Gonzalo Agustin Sandez,Paraguay,DEF,,2.0,,,True
+new_in_holdet,Juan Jose Caceres,Paraguay,DEF,,3.0,,,False
+new_in_holdet,Alan Benitez,Paraguay,DEF,,2.5,,,True
+new_in_holdet,Aubrey Modiba,Sydafrika,DEF,,3.0,,,False
+new_in_holdet,Ime Okon,Sydafrika,DEF,,2.0,,,False
+new_in_holdet,Khulumani Ndamane,Sydafrika,DEF,,2.0,,,False
+new_in_holdet,Khuliso Mudau,Sydafrika,DEF,,3.0,,,False
+new_in_holdet,Samukele Kabini,Sydafrika,DEF,,2.0,,,False
+new_in_holdet,Mbekezeli Mbokazi,Sydafrika,DEF,,2.5,,,False
+new_in_holdet,Nkosinathi Sibisi,Sydafrika,DEF,,2.5,,,False
+new_in_holdet,Olwethu Makhanya,Sydafrika,DEF,,2.0,,,False
+new_in_holdet,Bradley Cross,Sydafrika,DEF,,2.0,,,False
+new_in_holdet,Kamogelo Sebelebele,Sydafrika,DEF,,2.0,,,False
+new_in_holdet,Thabang Matuludi,Sydafrika,DEF,,2.0,,,False
+new_in_holdet,Mathias Olivera,Uruguay,DEF,,4.0,,,False
+new_in_holdet,Jose Maria Gimenez,Uruguay,DEF,,4.5,,,False
+new_in_holdet,Martin Caceres,Uruguay,DEF,,3.0,,,True
+new_in_holdet,Guillermo Varela,Uruguay,DEF,,3.0,,,False
+new_in_holdet,Ronald Araujo,Uruguay,DEF,,4.5,,,False
+new_in_holdet,Sebastian Caceres,Uruguay,DEF,,2.5,,,False
+new_in_holdet,Jose Luis Rodriguez Bebanz,Uruguay,DEF,,3.0,,,True
+new_in_holdet,Santiago Bueno,Uruguay,DEF,,3.5,,,False
+new_in_holdet,Matias Viña,Uruguay,DEF,,4.0,,,False
+new_in_holdet,Willer Ditta,Colombia,DEF,,2.5,,,False
+new_in_holdet,Deiver Machado,Colombia,DEF,,3.0,,,False
+new_in_holdet,Yerry Mina,Colombia,DEF,,3.0,,,False
+new_in_holdet,Davinson Sanchez,Colombia,DEF,,3.5,,,False
+new_in_holdet,Johan Mojica,Colombia,DEF,,3.5,,,False
+new_in_holdet,Jhon Lucumi,Colombia,DEF,,3.5,,,False
+new_in_holdet,Santiago Arias,Colombia,DEF,,3.5,,,False
+new_in_holdet,Juan Cabal,Colombia,DEF,,3.0,,,True
+new_in_holdet,Yerson Mosquera,Colombia,DEF,,2.5,,,True
+new_in_holdet,Daniel Muñoz,Colombia,DEF,,4.0,,,False
+new_in_holdet,Piero Hincapie,Ecuador,DEF,,3.5,,,False
+new_in_holdet,Angelo Preciado,Ecuador,DEF,,3.0,,,False
+new_in_holdet,Felix 'Feliz' Torres,Ecuador,DEF,,3.0,,,False
+new_in_holdet,Jackson Porozo,Ecuador,DEF,,2.0,,,False
+new_in_holdet,Joel Ordonez,Ecuador,DEF,,2.5,,,False
+new_in_holdet,Willian Pacho,Ecuador,DEF,,3.0,,,False
+new_in_holdet,Pervis Estupinan,Ecuador,DEF,,3.5,,,False
+new_in_holdet,Jose Hurtado,Ecuador,DEF,,2.5,,,True
+new_in_holdet,Nihad Mujakic,Bosnien-Hercegovina,DEF,,2.5,,,False
+new_in_holdet,Nidal Celik,Bosnien-Hercegovina,DEF,,2.0,,,False
+new_in_holdet,Dennis Hadzikadunic,Bosnien-Hercegovina,DEF,,2.5,,,False
+new_in_holdet,Sead Kolasinac,Bosnien-Hercegovina,DEF,,2.5,,,False
+new_in_holdet,Amar Dedic,Bosnien-Hercegovina,DEF,,3.0,,,False
+new_in_holdet,Nikola Katic,Bosnien-Hercegovina,DEF,,3.0,,,False
+new_in_holdet,Stjepan Radeljic,Bosnien-Hercegovina,DEF,,2.5,,,False
+new_in_holdet,Tarik Muharemovic,Bosnien-Hercegovina,DEF,,3.0,,,False
+new_in_holdet,Ali Nemati,Iran,DEF,,2.5,,,False
+new_in_holdet,Hossein Abarghouei,Iran,DEF,,2.0,,,True
+new_in_holdet,Danial Esmaeilifar,Iran,DEF,,2.5,,,True
+new_in_holdet,Hossein Kanaani,Iran,DEF,,2.5,,,False
+new_in_holdet,Saleh Hardani,Iran,DEF,,2.5,,,False
+new_in_holdet,Shojae Khalilzadeh,Iran,DEF,,2.5,,,False
+new_in_holdet,Abolfazl Jalali,Iran,DEF,,2.0,,,True
+new_in_holdet,Milad Mohammadi,Iran,DEF,,2.5,,,False
+new_in_holdet,Ramin Rezaeian,Iran,DEF,,2.5,,,False
+new_in_holdet,Ehsan Hajsafi,Iran,DEF,,2.0,,,False
+new_in_holdet,Daniyal Eiri,Iran,DEF,,2.0,,,False
+new_in_holdet,Arya Yousefi,Iran,DEF,,2.0,,,False
+new_in_holdet,Nathan Ngoy,Belgien,DEF,,2.0,,,False
+new_in_holdet,Thomas Meunier,Belgien,DEF,,3.5,,,False
+new_in_holdet,Brandon Mechele,Belgien,DEF,,2.5,,,False
+new_in_holdet,Timothy Castagne,Belgien,DEF,,3.5,,,False
+new_in_holdet,Maxim De Cuyper,Belgien,DEF,,4.0,,,False
+new_in_holdet,Zeno Debast,Belgien,DEF,,3.5,,,False
+new_in_holdet,Arthur Theate,Belgien,DEF,,3.0,,,False
+new_in_holdet,Koni de Winter,Belgien,DEF,,3.0,,,False
+new_in_holdet,Joaquin Seys,Belgien,DEF,,2.5,,,False
+new_in_holdet,Hussein Ali,Irak,DEF,,3.0,,,False
+new_in_holdet,Frans Dhia Putros,Irak,DEF,,2.0,,,False
+new_in_holdet,Zaid Tahseen,Irak,DEF,,2.5,,,False
+new_in_holdet,Rebin Sulaka,Irak,DEF,,2.0,,,False
+new_in_holdet,Ahmed Hasan Maknzi,Irak,DEF,,2.0,,,True
+new_in_holdet,Merchas Doski,Irak,DEF,,2.5,,,False
+new_in_holdet,Akam Hashem,Irak,DEF,,2.0,,,False
+new_in_holdet,Manaf Younis,Irak,DEF,,2.0,,,False
+new_in_holdet,Roderick Miller,Panama,DEF,,2.0,,,False
+new_in_holdet,Jorge Gutierrez,Panama,DEF,,2.5,,,False
+new_in_holdet,Mustafa Saadoon,Irak,DEF,,2.0,,,False
+new_in_holdet,Ahmed Yahya,Irak,DEF,,2.0,,,False
+new_in_holdet,Jose Cordoba,Panama,DEF,,2.5,,,False
+new_in_holdet,Jiovany Ramos,Panama,DEF,,2.0,,,False
+new_in_holdet,Edgardo Farina,Panama,DEF,,2.0,,,False
+new_in_holdet,Eric Davis,Panama,DEF,,3.0,,,False
+new_in_holdet,Fidel Escobar,Panama,DEF,,2.5,,,False
+new_in_holdet,Michael Amir Murillo,Panama,DEF,,2.5,,,False
+new_in_holdet,Andres Andrade,Panama,DEF,,2.5,,,False
+new_in_holdet,Cesar Blackman,Panama,DEF,,2.5,,,False
+new_in_holdet,Martin Krug,Panama,DEF,,2.0,,,True
+new_in_holdet,Hossam Abdelmaguid,Egypten,DEF,,2.5,,,False
+new_in_holdet,Yasser Ibrahim,Egypten,DEF,,2.5,,,False
+new_in_holdet,Khaled Sobhi,Egypten,DEF,,2.0,,,True
+new_in_holdet,Mohamed Hany,Egypten,DEF,,2.5,,,False
+new_in_holdet,Karim Hafez,Egypten,DEF,,2.0,,,False
+new_in_holdet,Mohamed Abdelmonem,Egypten,DEF,,2.5,,,False
+new_in_holdet,Rami Rabia,Egypten,DEF,,3.0,,,False
+new_in_holdet,Ahmed Fatouh,Egypten,DEF,,2.5,,,False
+new_in_holdet,Redouane Halhal,Marokko,DEF,,2.0,,,False
+new_in_holdet,Ahmed Nabil Kouka,Egypten,DEF,,2.0,,,True
+new_in_holdet,Tarek Alaa,Egypten,DEF,,2.0,,,False
+new_in_holdet,Abdelhamid Ait Boudlal,Marokko,DEF,,2.5,,,True
+new_in_holdet,Zakaria El Ouahdi,Marokko,DEF,,2.0,,,False
+new_in_holdet,Achraf Hakimi,Marokko,DEF,,4.0,,,False
+new_in_holdet,Jawad El Yamiq,Marokko,DEF,,2.5,,,True
+new_in_holdet,Nayef Aguerd,Marokko,DEF,,3.0,,,False
+new_in_holdet,Issa Diop,Marokko,DEF,,2.5,,,False
+new_in_holdet,Noussair Mazraoui,Marokko,DEF,,3.5,,,False
+new_in_holdet,Chadi Riad,Marokko,DEF,,2.0,,,False
+new_in_holdet,Souffian El Karouani,Marokko,DEF,,2.0,,,True
+new_in_holdet,Youssef Belammari,Marokko,DEF,,2.0,,,False
+new_in_holdet,Anass Salah-Eddine,Marokko,DEF,,2.5,,,False
+new_in_holdet,Mamadou Sarr,Senegal,DEF,,2.5,,,False
+new_in_holdet,El Hadji Malick Diouf,Senegal,DEF,,3.5,,,False
+new_in_holdet,Ilay Camara,Senegal,DEF,,2.0,,,True
+new_in_holdet,Antoine Mendy,Senegal,DEF,,2.5,,,False
+new_in_holdet,Abdoulaye Seck,Senegal,DEF,,3.0,,,False
+new_in_holdet,Moussa Niakhate,Senegal,DEF,,3.0,,,False
+new_in_holdet,Youssouf Sabaly,Senegal,DEF,,2.0,,,True
+new_in_holdet,Kalidou Koulibaly,Senegal,DEF,,2.5,,,False
+new_in_holdet,Pape Abou Cisse,Senegal,DEF,,2.0,,,True
+new_in_holdet,Ismail Jakobs,Senegal,DEF,,2.5,,,False
+new_in_holdet,Abdou Diallo,Senegal,DEF,,2.0,,,True
+new_in_holdet,Raed Chikhaoui,Tunesien,DEF,,2.0,,,False
+new_in_holdet,Mohamed Amine Ben Hamida,Tunesien,DEF,,2.5,,,False
+new_in_holdet,Adem Arous,Tunesien,DEF,,2.0,,,False
+new_in_holdet,Ghaith Zaalouni,Tunesien,DEF,,2.0,,,True
+new_in_holdet,Moustapha Mbow,Senegal,DEF,,2.0,,,True
+new_in_holdet,Omar Rekik,Tunesien,DEF,,2.0,,,False
+new_in_holdet,Ali Maaloul,Tunesien,DEF,,2.0,,,True
+new_in_holdet,Dylan Bronn,Tunesien,DEF,,2.5,,,False
+new_in_holdet,Yassine Meriah,Tunesien,DEF,,2.5,,,True
+new_in_holdet,Yan Valery,Tunesien,DEF,,2.5,,,False
+new_in_holdet,Ali Abdi,Tunesien,DEF,,3.0,,,False
+new_in_holdet,Montassar Talbi,Tunesien,DEF,,3.0,,,False
+new_in_holdet,Alaa Ghram,Tunesien,DEF,,2.0,,,True
+new_in_holdet,Moutaz Neffati,Tunesien,DEF,,2.0,,,False
+new_in_holdet,Ali Majrashi,Saudi-Arabien,DEF,,2.5,,,False
+new_in_holdet,Nawaf Bu Washl,Saudi-Arabien,DEF,,2.5,,,False
+new_in_holdet,Moteb Al-Harbi,Saudi-Arabien,DEF,,2.0,,,False
+new_in_holdet,Mohammed Sulaiman,Saudi-Arabien,DEF,,2.0,,,True
+new_in_holdet,Jehad Thakri,Saudi-Arabien,DEF,,2.0,,,False
+new_in_holdet,Abdulelah Al-Amri,Saudi-Arabien,DEF,,2.5,,,False
+new_in_holdet,Hassan Al Tambakti,Saudi-Arabien,DEF,,2.0,,,False
+new_in_holdet,Saud Abdulhamid,Saudi-Arabien,DEF,,3.0,,,False
+new_in_holdet,Ali Lajami,Saudi-Arabien,DEF,,2.0,,,False
+new_in_holdet,Hassan Kadesh,Saudi-Arabien,DEF,,2.0,,,False
+new_in_holdet,Mohammed Abu Al-Shamat,Saudi-Arabien,DEF,,2.5,,,False
+new_in_holdet,Lucas Mendes,Qatar,DEF,,2.5,,,False
+new_in_holdet,Al-Hashmi Al-Hussain,Qatar,DEF,,2.0,,,False
+new_in_holdet,Seydinaissa Laye,Qatar,DEF,,2.0,,,False
+new_in_holdet,Boualem Khoukhi,Qatar,DEF,,2.5,,,False
+new_in_holdet,Pedro 'Ro-Ro' Miguel Correia,Qatar,DEF,,2.5,,,False
+new_in_holdet,Sultan Al-Brake,Qatar,DEF,,2.5,,,False
+new_in_holdet,Tarek Salman,Qatar,DEF,,2.5,,,True
+new_in_holdet,Homam Al-Amin Ahmed,Qatar,DEF,,2.5,,,False
+new_in_holdet,Ayoub Al-Oui,Qatar,DEF,,2.5,,,False
+new_in_holdet,Ross McCrorie,Skotland,DEF,,2.0,,,True
+new_in_holdet,John Souttar,Skotland,DEF,,2.5,,,False
+new_in_holdet,Jack Hendry,Skotland,DEF,,2.0,,,False
+new_in_holdet,Scott McKenna,Skotland,DEF,,2.5,,,False
+new_in_holdet,Nathan Patterson,Skotland,DEF,,2.0,,,False
+new_in_holdet,Aaron Hickey,Skotland,DEF,,2.5,,,False
+new_in_holdet,Andy Robertson,Skotland,DEF,,3.0,,,False
+new_in_holdet,Grant Hanley,Skotland,DEF,,2.5,,,False
+new_in_holdet,Anthony Ralston,Skotland,DEF,,2.5,,,False
+new_in_holdet,Kieran Tierney,Skotland,DEF,,2.5,,,False
+new_in_holdet,Moïse Bombito,Canada,DEF,,2.5,,,False
+new_in_holdet,Ralph Priso,Canada,DEF,,2.0,,,True
+new_in_holdet,Dominic Hyam,Skotland,DEF,,2.0,,,False
+new_in_holdet,Alphonso Davies,Canada,DEF,,4.0,,,False
+new_in_holdet,Alfie Jones,Canada,DEF,,2.0,,,False
+new_in_holdet,Richie Laryea,Canada,DEF,,3.0,,,False
+new_in_holdet,Alistair Johnston,Canada,DEF,,3.0,,,False
+new_in_holdet,Kamal Miller,Canada,DEF,,2.5,,,True
+new_in_holdet,Derek Cornelius,Canada,DEF,,2.5,,,False
+new_in_holdet,Joel Waterman,Canada,DEF,,2.5,,,False
+new_in_holdet,Jahkeele Rutty,Canada,DEF,,2.0,,,True
+new_in_holdet,Luc De Fougerolles,Canada,DEF,,2.0,,,False
+new_in_holdet,Abdukodir Khusanov,Usbekistan,DEF,,3.0,,,False
+new_in_holdet,Behruzjon Karimov,Usbekistan,DEF,,2.0,,,False
+new_in_holdet,Avazbek Ulmasaliyev,Usbekistan,DEF,,2.0,,,False
+new_in_holdet,Jakhongir Urozov,Usbekistan,DEF,,2.5,,,False
+new_in_holdet,Mukhammadrasul Abdumazhidov,Usbekistan,DEF,,2.0,,,True
+new_in_holdet,Mukhammadkodir Khamraliev,Usbekistan,DEF,,2.5,,,True
+new_in_holdet,Umar Eshmurodov,Usbekistan,DEF,,2.5,,,False
+new_in_holdet,Rustam Ashurmatov,Usbekistan,DEF,,2.5,,,False
+new_in_holdet,Abdulla Abdullaev,Usbekistan,DEF,,2.0,,,False
+new_in_holdet,Farrukh Sayfiev,Usbekistan,DEF,,2.5,,,False
+new_in_holdet,Khozhiakbar Alizhonov,Usbekistan,DEF,,2.5,,,False
+new_in_holdet,Sherzod Nasrullaev,Usbekistan,DEF,,2.5,,,False
+new_in_holdet,Dilshod Komilov,Usbekistan,DEF,,2.0,,,True
+new_in_holdet,Anas Badawi,Jordan,DEF,,2.0,,,False
+new_in_holdet,Ehsan Haddad,Jordan,DEF,,2.5,,,False
+new_in_holdet,Husam Abu Dahab,Jordan,DEF,,2.0,,,False
+new_in_holdet,Ahmad Assaf,Jordan,DEF,,2.5,,,True
+new_in_holdet,Yazan Al-Arab,Jordan,DEF,,2.5,,,False
+new_in_holdet,Abdallah Nasib,Jordan,DEF,,2.5,,,False
+new_in_holdet,Saed Al-Rosan,Jordan,DEF,,2.0,,,False
+new_in_holdet,Yousef Abu Al-Jazar,Jordan,DEF,,2.0,,,True
+new_in_holdet,Mohammad Abualnadi,Jordan,DEF,,2.5,,,False
+new_in_holdet,Saleem Obaid,Jordan,DEF,,2.5,,,False
+new_in_holdet,Diney Borges,Kap Verde,DEF,,3.0,,,False
+new_in_holdet,Roberto Lopes,Kap Verde,DEF,,2.0,,,False
+new_in_holdet,Wagner Pina,Kap Verde,DEF,,2.5,,,False
+new_in_holdet,Steven Moreira,Kap Verde,DEF,,2.0,,,False
+new_in_holdet,Sidny Lopes Cabral,Kap Verde,DEF,,3.0,,,False
+new_in_holdet,Heri Tavares,Kap Verde,DEF,,2.5,,,True
+new_in_holdet,Joao Paulo,Kap Verde,DEF,,2.5,,,False
+new_in_holdet,Logan Costa,Kap Verde,DEF,,2.5,,,False
+new_in_holdet,Stopira,Kap Verde,DEF,,2.5,,,False
+new_in_holdet,Kelvin Pires,Kap Verde,DEF,,2.0,,,False
+new_in_holdet,Henrik Falchener,Norge,DEF,,2.0,,,False
+new_in_holdet,Sondre Langås,Norge,DEF,,2.0,,,False
+new_in_holdet,Kristoffer Ajer,Norge,DEF,,3.0,,,False
+new_in_holdet,Julian Ryerson,Norge,DEF,,3.5,,,False
+new_in_holdet,Leo Østigård,Norge,DEF,,2.5,,,False
+new_in_holdet,Fredrik Andre Bjørkan,Norge,DEF,,2.5,,,False
+new_in_holdet,Marcus Holmgren Pedersen,Norge,DEF,,2.0,,,False
+new_in_holdet,Torbjørn Heggem,Norge,DEF,,2.5,,,False
+new_in_holdet,David Møller Wolfe,Norge,DEF,,3.0,,,False
+new_in_holdet,Odin Bjørtuft,Norge,DEF,,2.0,,,True
+new_in_holdet,Shurandy Sambo,Curaçao,DEF,,2.0,,,False
+new_in_holdet,Armando Obispo,Curaçao,DEF,,2.0,,,False
+new_in_holdet,Riechedly Bazoer,Curaçao,DEF,,2.0,,,False
+new_in_holdet,Jurien Gaari,Curaçao,DEF,,2.5,,,False
+new_in_holdet,Sherel Floranus,Curaçao,DEF,,2.5,,,False
+new_in_holdet,Joshua Brenet,Curaçao,DEF,,2.5,,,False
+new_in_holdet,Roshon van Eijma,Curaçao,DEF,,2.5,,,False
+new_in_holdet,Livano Comenencia,Curaçao,DEF,,2.5,,,False
+new_in_holdet,Deveron Fonville,Curaçao,DEF,,2.0,,,False
+new_in_holdet,Keeto Thermoncy,Haiti,DEF,,2.0,,,False
+new_in_holdet,Wilguens Paugain,Haiti,DEF,,2.0,,,False
+new_in_holdet,Delentz Pierre,Haiti,DEF,,2.0,,,True
+new_in_holdet,Jean-Kevin Duverne,Haiti,DEF,,2.5,,,False
+new_in_holdet,Ricardo Ade,Haiti,DEF,,2.5,,,False
+new_in_holdet,Carlens Arcus,Haiti,DEF,,2.0,,,False
+new_in_holdet,Martin Experience,Haiti,DEF,,2.0,,,False
+new_in_holdet,Duke Lacroix,Haiti,DEF,,2.5,,,False
+new_in_holdet,Rocky Bushiri,Congo DR,DEF,,2.0,,,True
+new_in_holdet,Hannes Delcroix,Haiti,DEF,,2.5,,,False
+new_in_holdet,Dylan Batubinsika,Congo DR,DEF,,2.5,,,False
+new_in_holdet,Jeremy Ngakia,Congo DR,DEF,,2.5,,,True
+new_in_holdet,Axel Tuanzebe,Congo DR,DEF,,3.0,,,False
+new_in_holdet,Chancel Mbemba,Congo DR,DEF,,2.5,,,False
+new_in_holdet,Arthur Masuaku,Congo DR,DEF,,2.5,,,False
+new_in_holdet,Aaron Tshibola,Congo DR,DEF,,2.0,,,False
+new_in_holdet,Aaron Wan-Bissaka,Congo DR,DEF,,3.0,,,False
+new_in_holdet,Gedeon Kalulu,Congo DR,DEF,,2.5,,,False
+new_in_holdet,Joris Kayembe,Congo DR,DEF,,2.5,,,False
+new_in_holdet,Steve Kapuadi,Congo DR,DEF,,2.0,,,False
+new_in_holdet,Timothy Fayulu,Congo DR,GK,,2.5,,,False
+new_in_holdet,Matthieu Epolo,Congo DR,GK,,3.0,,,False
+new_in_holdet,Lionel Mpasi Nzau,Congo DR,GK,,2.5,,,False
+new_in_holdet,Tyrick Bodak,Curaçao,GK,,2.5,,,False
+new_in_holdet,Trevor Doornbusch,Curaçao,GK,,2.5,,,False
+new_in_holdet,Johny Placide,Haiti,GK,,2.5,,,False
+new_in_holdet,Alexandre Pierre,Haiti,GK,,2.5,,,False
+new_in_holdet,Josue Duverger,Haiti,GK,,2.5,,,False
+new_in_holdet,Egil Selvik,Norge,GK,,3.5,,,False
+new_in_holdet,Eloy Room,Curaçao,GK,,2.5,,,False
+new_in_holdet,Ørjan Nyland,Norge,GK,,4.0,,,False
+new_in_holdet,Viljar Myhra,Norge,GK,,2.5,,,True
+new_in_holdet,Sander Tangvik,Norge,GK,,3.0,,,False
+new_in_holdet,CJ Dos Santos,Kap Verde,GK,,2.5,,,False
+new_in_holdet,Bruno Varela,Kap Verde,GK,,2.5,,,True
+new_in_holdet,Marcio Rosa,Kap Verde,GK,,2.5,,,False
+new_in_holdet,Vozinha,Kap Verde,GK,,2.5,,,False
+new_in_holdet,Abdallah Al-Fakhouri,Jordan,GK,,2.5,,,False
+new_in_holdet,Abdel Rahman Al-Talalga,Jordan,GK,,2.5,,,True
+new_in_holdet,Yazeed Abulaila,Jordan,GK,,2.5,,,False
+new_in_holdet,Noureddin Bani Attiah,Jordan,GK,,2.5,,,False
+new_in_holdet,Utkir Yusupov,Usbekistan,GK,,2.5,,,False
+new_in_holdet,Abduvokhid Nematov,Usbekistan,GK,,2.5,,,False
+new_in_holdet,Botirali Ergashev,Usbekistan,GK,,2.5,,,False
+new_in_holdet,Dayne St. Clair,Canada,GK,,3.5,,,False
+new_in_holdet,Maxime Crepeau,Canada,GK,,3.0,,,False
+new_in_holdet,Owen Goodman,Canada,GK,,2.5,,,False
+new_in_holdet,Angus Gunn,Skotland,GK,,3.5,,,False
+new_in_holdet,Craig Gordon,Skotland,GK,,2.5,,,False
+new_in_holdet,Scott Bain,Skotland,GK,,2.5,,,True
+new_in_holdet,Liam Kelly,Skotland,GK,,3.0,,,False
+new_in_holdet,Mahmoud Abunada,Qatar,GK,,2.5,,,False
+new_in_holdet,Shehab Ellethy,Qatar,GK,,2.5,,,True
+new_in_holdet,Meshaal Barsham,Qatar,GK,,2.5,,,False
+new_in_holdet,Salah Zakaria,Qatar,GK,,2.5,,,False
+new_in_holdet,Nawaf Al-Aqidi,Saudi-Arabien,GK,,2.5,,,False
+new_in_holdet,Ahmed Al-Kassar,Saudi-Arabien,GK,,2.5,,,False
+new_in_holdet,Mohammed Al-Owais,Saudi-Arabien,GK,,3.0,,,False
+new_in_holdet,Abdulrahman Al-Sanbi,Saudi-Arabien,GK,,2.5,,,True
+new_in_holdet,Mohammed Al-Rubaie Al-Yami,Saudi-Arabien,GK,,2.5,,,True
+new_in_holdet,Aymen Dahmen,Tunesien,GK,,3.0,,,False
+new_in_holdet,Bechir Ben Said,Tunesien,GK,,3.0,,,True
+new_in_holdet,Noureddine Farhati,Tunesien,GK,,2.5,,,True
+new_in_holdet,Abdelmouhib Chamakh,Tunesien,GK,,2.5,,,False
+new_in_holdet,Sabri Ben Hessen,Tunesien,GK,,2.5,,,False
+new_in_holdet,Mory Diaw,Senegal,GK,,3.0,,,False
+new_in_holdet,Yehvann Diouf,Senegal,GK,,3.0,,,False
+new_in_holdet,Edouard Mendy,Senegal,GK,,3.5,,,False
+new_in_holdet,El Mehdi Al Harrar,Marokko,GK,,2.5,,,True
+new_in_holdet,Ahmed Reda Tagnaouti,Marokko,GK,,2.5,,,False
+new_in_holdet,Yassine 'Bono' Bounou,Marokko,GK,,3.5,,,False
+new_in_holdet,Munir Mohamedi El Kajoui,Marokko,GK,,3.0,,,False
+new_in_holdet,Mohamed Alaa,Egypten,GK,,2.5,,,False
+new_in_holdet,El Mahdi Soliman,Egypten,GK,,2.5,,,False
+new_in_holdet,El Mehdi Benabid,Marokko,GK,,3.0,,,True
+new_in_holdet,Mostafa Oufa Shobeir,Egypten,GK,,2.5,,,False
+new_in_holdet,Kumel Al-Rekabe,Irak,GK,,2.5,,,True
+new_in_holdet,Mohamed El-Shennawy,Egypten,GK,,3.0,,,False
+new_in_holdet,Luis Mejia,Panama,GK,,2.5,,,False
+new_in_holdet,Cesar Samudio,Panama,GK,,2.5,,,False
+new_in_holdet,Orlando Mosquera,Panama,GK,,2.5,,,False
+new_in_holdet,Fahad Talib,Irak,GK,,2.5,,,False
+new_in_holdet,Jalal Hassan,Irak,GK,,2.5,,,False
+new_in_holdet,Ahmed Basil Fadhil,Irak,GK,,2.5,,,False
+new_in_holdet,Mike Penders,Belgien,GK,,3.5,,,False
+new_in_holdet,Senne Lammens,Belgien,GK,,4.0,,,False
+new_in_holdet,Maarten Vandevoordt,Belgien,GK,,3.5,,,True
+new_in_holdet,Thibaut Courtois,Belgien,GK,,4.5,,,False
+new_in_holdet,Matz Sels,Belgien,GK,,4.5,,,True
+new_in_holdet,Alireza Beiranvand,Iran,GK,,3.0,,,False
+new_in_holdet,Seyed Hossein Hosseini,Iran,GK,,2.5,,,False
+new_in_holdet,Nikola Vasilj,Bosnien-Hercegovina,GK,,3.0,,,False
+new_in_holdet,Mohammad Khalife,Iran,GK,,2.5,,,True
+new_in_holdet,Payam Niazmand,Iran,GK,,2.5,,,False
+new_in_holdet,Mladen Jurkas,Bosnien-Hercegovina,GK,,2.5,,,False
+new_in_holdet,Martin Zlomislic,Bosnien-Hercegovina,GK,,2.5,,,False
+new_in_holdet,Osman Hadzikic,Bosnien-Hercegovina,GK,,2.5,,,True
+new_in_holdet,David Cabezas,Ecuador,GK,,2.5,,,True
+new_in_holdet,Gonzalo Valle,Ecuador,GK,,3.0,,,False
+new_in_holdet,Hernan Galindez,Ecuador,GK,,3.5,,,False
+new_in_holdet,Moises Ramirez,Ecuador,GK,,2.5,,,False
+new_in_holdet,Camilo Vargas,Colombia,GK,,4.0,,,False
+new_in_holdet,David Ospina,Colombia,GK,,3.5,,,False
+new_in_holdet,Alvaro Montero,Colombia,GK,,4.0,,,False
+new_in_holdet,Sergio Rochet,Uruguay,GK,,4.0,,,False
+new_in_holdet,Fernando Muslera,Uruguay,GK,,4.0,,,False
+new_in_holdet,Santiago Mele,Uruguay,GK,,3.5,,,False
+new_in_holdet,Ricardo Goss,Sydafrika,GK,,2.5,,,False
+new_in_holdet,Ronwen Williams,Sydafrika,GK,,3.0,,,False
+new_in_holdet,Sipho Chaine,Sydafrika,GK,,2.5,,,False
+new_in_holdet,Gaston Olveira,Paraguay,GK,,3.0,,,False
+new_in_holdet,Orlando Gill,Paraguay,GK,,3.0,,,False
+new_in_holdet,Juan Espinola,Paraguay,GK,,2.5,,,True
+new_in_holdet,Roberto 'Gatito' Fernandez,Paraguay,GK,,3.0,,,False
+new_in_holdet,Carlos Miguel Coronel,Paraguay,GK,,2.5,,,True
+new_in_holdet,Alex Paulsen,New Zealand,GK,,2.5,,,False
+new_in_holdet,Michael Woud,New Zealand,GK,,2.5,,,False
+new_in_holdet,Max Crocombe,New Zealand,GK,,2.5,,,False
+new_in_holdet,Raul Rangel,Mexico,GK,,4.0,,,False
+new_in_holdet,Guillermo Ochoa,Mexico,GK,,3.0,,,False
+new_in_holdet,Carlos Acevedo,Mexico,GK,,3.5,,,False
+new_in_holdet,Seung-Gyu Kim,Sydkorea,GK,,3.0,,,False
+new_in_holdet,Hyeon-Woo Jo,Sydkorea,GK,,3.5,,,False
+new_in_holdet,Bum-Keun Song,Sydkorea,GK,,2.5,,,False
+new_in_holdet,Zion Suzuki,Japan,GK,,4.0,,,False
+new_in_holdet,Keisuke Osako,Japan,GK,,3.5,,,False
+new_in_holdet,Tomoki Hayakawa,Japan,GK,,3.5,,,False
+new_in_holdet,Solomon Agbasi,Ghana,GK,,2.5,,,True
+new_in_holdet,Benjamin Asare,Ghana,GK,,3.0,,,False
+new_in_holdet,Paul Reverson,Ghana,GK,,2.5,,,True
+new_in_holdet,Joseph Anang,Ghana,GK,,2.5,,,False
+new_in_holdet,Dean Henderson,England,GK,,4.5,,,False
+new_in_holdet,Lawrence Ati Zigi,Ghana,GK,,3.0,,,False
+new_in_holdet,James Trafford,England,GK,,4.0,,,False
+new_in_holdet,Jordan Pickford,England,GK,,5.0,,,False
+new_in_holdet,Yahia Fofana,Elfenbenskysten,GK,,3.0,,,False
+new_in_holdet,Mohamed Kone,Elfenbenskysten,GK,,3.0,,,False
+new_in_holdet,Alban Lafont,Elfenbenskysten,GK,,2.5,,,False
+new_in_holdet,Mathew Ryan,Australien,GK,,3.0,,,False
+new_in_holdet,Bento Krepski,Brasilien,GK,,5.0,,,True
+new_in_holdet,Alisson Becker,Brasilien,GK,,5.0,,,False
+new_in_holdet,Ederson Moraes,Brasilien,GK,,5.0,,,False
+new_in_holdet,Weverton,Brasilien,GK,,4.0,,,False
+new_in_holdet,Paul Izzo,Australien,GK,,2.5,,,False
+new_in_holdet,Patrick Beach,Australien,GK,,2.5,,,False
+new_in_holdet,Juan Musso,Argentina,GK,,4.0,,,False
+new_in_holdet,Walter Benitez,Argentina,GK,,4.0,,,True
+new_in_holdet,Emiliano Martinez,Argentina,GK,,5.0,,,False
+new_in_holdet,Geronimo Rulli,Argentina,GK,,4.5,,,False
+new_in_holdet,Luca Zidane,Algeriet,GK,,3.0,,,False
+new_in_holdet,Oussama Benbout,Algeriet,GK,,2.5,,,False
+new_in_holdet,Alexis Guendouz,Algeriet,GK,,3.0,,,True
+new_in_holdet,Viktor Johansson,Sverige,GK,,3.5,,,False
+new_in_holdet,Anthony Mandrea,Algeriet,GK,,3.0,,,True
+new_in_holdet,Melvin Feycal Mastil,Algeriet,GK,,2.5,,,False
+new_in_holdet,Jacob Widell Zetterström,Sverige,GK,,3.5,,,False
+new_in_holdet,Melker Ellborg,Sverige,GK,,3.5,,,True
+new_in_holdet,Noel Törnqvist,Sverige,GK,,3.5,,,True
+new_in_holdet,Robin Olsen,Sverige,GK,,4.0,,,True
+new_in_holdet,Kristoffer Nordfeldt,Sverige,GK,,4.0,,,False
+new_in_holdet,Alejandro 'Alex' Remiro,Spanien,GK,,4.0,,,True
+new_in_holdet,Unai Simon,Spanien,GK,,5.0,,,False
+new_in_holdet,David Raya,Spanien,GK,,5.0,,,False
+new_in_holdet,Joan Garcia,Spanien,GK,,4.0,,,False
+new_in_holdet,Bart Verbruggen,Holland,GK,,4.5,,,False
+new_in_holdet,Robin Roefs,Holland,GK,,3.5,,,False
+new_in_holdet,Justin Bijlow,Holland,GK,,3.5,,,True
+new_in_holdet,Mark Flekken,Holland,GK,,4.0,,,False
+new_in_holdet,Robin Risser,Frankrig,GK,,4.0,,,False
+new_in_holdet,Brice Samba,Frankrig,GK,,4.5,,,False
+new_in_holdet,Mike Maignan,Frankrig,GK,,5.0,,,False
+new_in_holdet,Lucas Chevalier,Frankrig,GK,,4.0,,,True
+new_in_holdet,Dominik Livakovic,Kroatien,GK,,4.0,,,False
+new_in_holdet,Jonas Urbig,Tyskland,GK,,4.0,,,True
+new_in_holdet,Finn Dahmen,Tyskland,GK,,4.0,,,True
+new_in_holdet,Alexander Nübel,Tyskland,GK,,4.5,,,False
+new_in_holdet,Oliver Baumann,Tyskland,GK,,5.0,,,False
+new_in_holdet,Manuel Neuer,Tyskland,GK,,5.0,,,False
+new_in_holdet,Dominik Kotarski,Kroatien,GK,,3.0,,,False
+new_in_holdet,Ivor Pandur,Kroatien,GK,,2.5,,,False
+new_in_holdet,Alexander Schlager,Østrig,GK,,3.5,,,False
+new_in_holdet,Patrick Pentz,Østrig,GK,,3.0,,,False
+new_in_holdet,Florian Wiegele,Østrig,GK,,2.5,,,False
+new_in_holdet,Nikolas Polster,Østrig,GK,,2.5,,,True
+new_in_holdet,Mert Günok,Tyrkiet,GK,,3.5,,,False
+new_in_holdet,Muhammed Sengezer,Tyrkiet,GK,,3.0,,,True
+new_in_holdet,Ugurcan Cakir,Tyrkiet,GK,,4.0,,,False
+new_in_holdet,Joao Carvalho,Portugal,GK,,3.5,,,True
+new_in_holdet,Ricardo Velho,Portugal,GK,,4.0,,,True
+new_in_holdet,Altay Bayindir,Tyrkiet,GK,,3.0,,,False
+new_in_holdet,Rui Silva,Portugal,GK,,4.0,,,False
+new_in_holdet,Jose Sa,Portugal,GK,,4.5,,,False
+new_in_holdet,Diogo Costa,Portugal,GK,,5.0,,,False
+new_in_holdet,Jindrich Stanek,Tjekkiet,GK,,2.5,,,False
+new_in_holdet,Matej Kovar,Tjekkiet,GK,,3.0,,,False
+new_in_holdet,Martin Jedlicka,Tjekkiet,GK,,2.5,,,True
+new_in_holdet,Lukas Hornicek,Tjekkiet,GK,,2.5,,,False
+new_in_holdet,Marvin Keller,Schweiz,GK,,3.0,,,False
+new_in_holdet,Pascal Loretz,Schweiz,GK,,3.0,,,True
+new_in_holdet,Gregor Kobel,Schweiz,GK,,4.0,,,False
+new_in_holdet,Yvon Mvogo,Schweiz,GK,,3.0,,,False
+new_in_holdet,Denis Zakaria,Schweiz,MID,,3.0,,,False
+new_in_holdet,Djibril Sow,Schweiz,MID,,3.0,,,False
+new_in_holdet,Granit Xhaka,Schweiz,MID,,4.0,,,False
+new_in_holdet,Vincent Sierro,Schweiz,MID,,2.5,,,True
+new_in_holdet,Noah Okafor,Schweiz,MID,,3.0,,,False
+new_in_holdet,Remo Freuler,Schweiz,MID,,3.5,,,False
+new_in_holdet,Michel Aebischer,Schweiz,MID,,2.5,,,False
+new_in_holdet,Simon Sohm,Schweiz,MID,,2.0,,,True
+new_in_holdet,Johan Manzambi,Schweiz,MID,,3.0,,,False
+new_in_holdet,Alvyn Sanches,Schweiz,MID,,2.5,,,True
+new_in_holdet,Filip Ugrinic,Schweiz,MID,,2.0,,,True
+new_in_holdet,Ardon Jashari,Schweiz,MID,,2.0,,,False
+new_in_holdet,Fabian Rieder,Schweiz,MID,,3.0,,,False
+new_in_holdet,Adam Karabec,Tjekkiet,MID,,2.5,,,True
+new_in_holdet,Alex Kral,Tjekkiet,MID,,2.0,,,True
+new_in_holdet,David Doudera,Tjekkiet,MID,,2.0,,,False
+new_in_holdet,Pavel Sulc,Tjekkiet,MID,,4.0,,,False
+new_in_holdet,Denis Visinsky,Tjekkiet,MID,,2.0,,,False
+new_in_holdet,Hugo Sochurek,Tjekkiet,MID,,2.0,,,False
+new_in_holdet,Alexandr Sojka,Tjekkiet,MID,,2.0,,,False
+new_in_holdet,Vladimir Darida,Tjekkiet,MID,,2.0,,,False
+new_in_holdet,Tomas Soucek,Tjekkiet,MID,,3.5,,,False
+new_in_holdet,Lukas Provod,Tjekkiet,MID,,3.0,,,False
+new_in_holdet,Michal Sadilek,Tjekkiet,MID,,2.5,,,False
+new_in_holdet,João Palhinha,Portugal,MID,,4.5,,,True
+new_in_holdet,Bruno Fernandes,Portugal,MID,,7.0,,,False
+new_in_holdet,Bernardo Silva,Portugal,MID,,5.5,,,False
+new_in_holdet,Ruben Neves,Portugal,MID,,4.0,,,False
+new_in_holdet,Vitinha,Portugal,MID,,5.5,,,False
+new_in_holdet,João Neves,Portugal,MID,,5.0,,,False
+new_in_holdet,Samu Costa,Portugal,MID,,2.5,,,False
+new_in_holdet,Matheus Nunes,Portugal,MID,,4.5,,,False
+new_in_holdet,Pedro 'Pote' Goncalves,Portugal,MID,,3.0,,,True
+new_in_holdet,Kerem Akturkoglu,Tyrkiet,MID,,4.5,,,False
+new_in_holdet,Kenan Yildiz,Tyrkiet,MID,,4.0,,,False
+new_in_holdet,Arda Güler,Tyrkiet,MID,,4.5,,,False
+new_in_holdet,Lukas Cerv,Tjekkiet,MID,,3.0,,,False
+new_in_holdet,Orkun Kökcü,Tyrkiet,MID,,3.0,,,False
+new_in_holdet,Ismail Yüksek,Tyrkiet,MID,,2.5,,,False
+new_in_holdet,Atakan Karazor,Tyrkiet,MID,,2.0,,,True
+new_in_holdet,Irfan Can Kahveci,Tyrkiet,MID,,2.0,,,False
+new_in_holdet,Kaan Ayhan,Tyrkiet,MID,,2.0,,,False
+new_in_holdet,Hakan Calhanoglu,Tyrkiet,MID,,4.0,,,False
+new_in_holdet,Alessandro Schöpf,Østrig,MID,,2.5,,,False
+new_in_holdet,Marcel Sabitzer,Østrig,MID,,4.5,,,False
+new_in_holdet,Oguz Aydin,Tyrkiet,MID,,2.0,,,False
+new_in_holdet,Salih Özcan,Tyrkiet,MID,,2.0,,,False
+new_in_holdet,Patrick Wimmer,Østrig,MID,,3.0,,,False
+new_in_holdet,Paul Wanner,Østrig,MID,,2.5,,,False
+new_in_holdet,Christoph Baumgartner,Østrig,MID,,3.5,,,True
+new_in_holdet,Nicolas Seiwald,Østrig,MID,,2.5,,,False
+new_in_holdet,Carney Chukwuemeka,Østrig,MID,,2.5,,,False
+new_in_holdet,Xaver Schlager,Østrig,MID,,2.5,,,False
+new_in_holdet,Romano Schmid,Østrig,MID,,3.0,,,False
+new_in_holdet,Florian Grillitsch,Østrig,MID,,2.5,,,False
+new_in_holdet,Konrad Laimer,Østrig,MID,,3.0,,,False
+new_in_holdet,Toni Fruk,Kroatien,MID,,3.0,,,False
+new_in_holdet,Martin Baturina,Kroatien,MID,,3.0,,,False
+new_in_holdet,Luka Sucic,Kroatien,MID,,2.0,,,False
+new_in_holdet,Petar Sucic,Kroatien,MID,,3.0,,,False
+new_in_holdet,Nikola Vlasic,Kroatien,MID,,3.0,,,False
+new_in_holdet,Nikola Moro,Kroatien,MID,,2.5,,,False
+new_in_holdet,Mario Pasalic,Kroatien,MID,,3.5,,,False
+new_in_holdet,Luka Modric,Kroatien,MID,,4.0,,,False
+new_in_holdet,Lovro Majer,Kroatien,MID,,2.5,,,True
+new_in_holdet,Mateo Kovacic,Kroatien,MID,,4.0,,,False
+new_in_holdet,Nadiem Amiri,Tyskland,MID,,2.5,,,False
+new_in_holdet,Leon Goretzka,Tyskland,MID,,4.5,,,False
+new_in_holdet,Pascal Gross,Tyskland,MID,,3.0,,,False
+new_in_holdet,Joshua Kimmich,Tyskland,MID,,5.0,,,False
+new_in_holdet,Florian Wirtz,Tyskland,MID,,7.5,,,False
+new_in_holdet,Jamal Musiala,Tyskland,MID,,6.5,,,False
+new_in_holdet,Angelo Stiller,Tyskland,MID,,2.5,,,False
+new_in_holdet,Kevin Schade,Tyskland,MID,,3.5,,,True
+new_in_holdet,Felix Nmecha,Tyskland,MID,,3.0,,,False
+new_in_holdet,Lennart Karl,Tyskland,MID,,5.0,,,True
+new_in_holdet,Assan Ouedraogo,Tyskland,MID,,3.0,,,False
+new_in_holdet,Anton Stach,Tyskland,MID,,4.5,,,True
+new_in_holdet,Jamie Leweling,Tyskland,MID,,3.0,,,False
+new_in_holdet,Aleksandar Pavlovic,Tyskland,MID,,3.5,,,False
+new_in_holdet,Warren Zaire-Emery,Frankrig,MID,,3.0,,,False
+new_in_holdet,Bradley Barcola,Frankrig,MID,,4.0,,,False
+new_in_holdet,Manu Koné,Frankrig,MID,,3.5,,,False
+new_in_holdet,Eduardo Camavinga,Frankrig,MID,,3.0,,,True
+new_in_holdet,Aurelien Tchouameni,Frankrig,MID,,3.5,,,False
+new_in_holdet,N'Golo Kante,Frankrig,MID,,3.0,,,False
+new_in_holdet,Kees Smit,Holland,MID,,2.0,,,True
+new_in_holdet,Luciano Valente,Holland,MID,,2.5,,,True
+new_in_holdet,Adrien Rabiot,Frankrig,MID,,4.0,,,False
+new_in_holdet,Marten de Roon,Holland,MID,,2.5,,,False
+new_in_holdet,Justin Kluivert,Holland,MID,,2.5,,,False
+new_in_holdet,Frenkie de Jong,Holland,MID,,3.0,,,False
+new_in_holdet,Mats Wieffer,Holland,MID,,2.5,,,False
+new_in_holdet,Teun Koopmeiners,Holland,MID,,3.5,,,False
+new_in_holdet,Quinten Timber,Holland,MID,,3.0,,,False
+new_in_holdet,Ryan Gravenberch,Holland,MID,,3.5,,,False
+new_in_holdet,Guus Til,Holland,MID,,2.5,,,False
+new_in_holdet,Tijjani Reijnders,Holland,MID,,6.0,,,False
+new_in_holdet,Fermin Lopez,Spanien,MID,,5.0,,,True
+new_in_holdet,Pablo Barrios,Spanien,MID,,3.0,,,True
+new_in_holdet,Crysencio Summerville,Holland,MID,,3.0,,,False
+new_in_holdet,Pablo Gavi,Spanien,MID,,4.0,,,False
+new_in_holdet,Yeremy Pino,Spanien,MID,,3.5,,,False
+new_in_holdet,Alex Baena,Spanien,MID,,3.5,,,False
+new_in_holdet,Pedri,Spanien,MID,,6.0,,,False
+new_in_holdet,Jesus Rodriguez,Spanien,MID,,3.5,,,True
+new_in_holdet,Dani Olmo,Spanien,MID,,5.0,,,False
+new_in_holdet,Mikel Merino,Spanien,MID,,4.5,,,False
+new_in_holdet,Rodri Hernandez,Spanien,MID,,5.0,,,False
+new_in_holdet,Aleix Garcia,Spanien,MID,,3.0,,,True
+new_in_holdet,Jesper Karlström,Sverige,MID,,3.0,,,False
+new_in_holdet,Martin Zubimendi,Spanien,MID,,3.5,,,False
+new_in_holdet,Fabian Ruiz,Spanien,MID,,4.5,,,False
+new_in_holdet,Marcos Llorente,Spanien,MID,,3.5,,,False
+new_in_holdet,Pablo Fornals,Spanien,MID,,3.0,,,True
+new_in_holdet,Alexander Bernhardsson,Sverige,MID,,2.0,,,False
+new_in_holdet,Mattias Svanberg,Sverige,MID,,2.5,,,False
+new_in_holdet,Ken Sema,Sverige,MID,,2.5,,,False
+new_in_holdet,Taha Abdi Ali,Sverige,MID,,2.0,,,False
+new_in_holdet,Yasin Ayari,Sverige,MID,,3.5,,,False
+new_in_holdet,Sebastian Nanasi,Sverige,MID,,2.0,,,True
+new_in_holdet,Herman Johansson,Sverige,MID,,2.5,,,False
+new_in_holdet,Hugo Larsson,Sverige,MID,,2.5,,,True
+new_in_holdet,Besfort Zeneli,Sverige,MID,,2.0,,,False
+new_in_holdet,Roony Bardghji,Sverige,MID,,3.0,,,True
+new_in_holdet,Lucas Bergvall,Sverige,MID,,2.5,,,False
+new_in_holdet,Himad Abdelli,Algeriet,MID,,2.5,,,True
+new_in_holdet,Yassine Titraoui,Algeriet,MID,,2.0,,,False
+new_in_holdet,Ibrahim Maza,Algeriet,MID,,3.0,,,False
+new_in_holdet,Ramiz Zerrouki,Algeriet,MID,,2.5,,,False
+new_in_holdet,Fares Chaibi,Algeriet,MID,,2.5,,,False
+new_in_holdet,Hicham Boudaoui,Algeriet,MID,,2.5,,,False
+new_in_holdet,Ismael Bennacer,Algeriet,MID,,2.5,,,True
+new_in_holdet,Nabil Bentaleb,Algeriet,MID,,2.5,,,False
+new_in_holdet,Adil Aouchiche,Algeriet,MID,,2.0,,,True
+new_in_holdet,Houssem Aouar,Algeriet,MID,,2.5,,,False
+new_in_holdet,Rodrigo de Paul,Argentina,MID,,4.5,,,False
+new_in_holdet,Leandro Paredes,Argentina,MID,,4.0,,,False
+new_in_holdet,Giovani Lo Celso,Argentina,MID,,4.0,,,False
+new_in_holdet,Thiago Almada,Argentina,MID,,5.5,,,False
+new_in_holdet,Nico Paz,Argentina,MID,,5.0,,,False
+new_in_holdet,Alan Varela,Argentina,MID,,2.5,,,True
+new_in_holdet,Enzo Fernandez,Argentina,MID,,5.0,,,False
+new_in_holdet,Franco Mastantuono,Argentina,MID,,3.5,,,True
+new_in_holdet,Valentin Barco,Argentina,MID,,2.5,,,False
+new_in_holdet,Alexis Mac Allister,Argentina,MID,,4.5,,,False
+new_in_holdet,Exequiel Palacios,Argentina,MID,,3.5,,,False
+new_in_holdet,Paul Okon-Engstler,Australien,MID,,2.0,,,False
+new_in_holdet,Cristian Volpato,Australien,MID,,2.5,,,False
+new_in_holdet,Cameron Devlin,Australien,MID,,2.0,,,False
+new_in_holdet,Connor Metcalfe,Australien,MID,,3.0,,,False
+new_in_holdet,Riley McGree,Australien,MID,,2.5,,,True
+new_in_holdet,Alexander 'Alex' Robertson,Australien,MID,,2.0,,,True
+new_in_holdet,Jackson Irvine,Australien,MID,,2.5,,,False
+new_in_holdet,Aiden O'Neill,Australien,MID,,2.5,,,False
+new_in_holdet,Mathew Leckie,Australien,MID,,2.0,,,False
+new_in_holdet,Patrick Yazbek,Australien,MID,,2.0,,,True
+new_in_holdet,Ajdin Hrustic,Australien,MID,,2.0,,,False
+new_in_holdet,Casemiro,Brasilien,MID,,4.5,,,False
+new_in_holdet,Fabinho,Brasilien,MID,,2.5,,,False
+new_in_holdet,Bruno Guimaraes,Brasilien,MID,,4.5,,,False
+new_in_holdet,Lucas Paqueta,Brasilien,MID,,5.5,,,False
+new_in_holdet,Andrey Santos,Brasilien,MID,,3.0,,,True
+new_in_holdet,Vitinho,Brasilien,MID,,2.5,,,True
+new_in_holdet,Danilo dos Santos,Brasilien,MID,,3.0,,,False
+new_in_holdet,Gabriel Sara,Brasilien,MID,,2.5,,,True
+new_in_holdet,Christ Inao Oulaï,Elfenbenskysten,MID,,2.0,,,False
+new_in_holdet,Parfait Guiagon,Elfenbenskysten,MID,,2.0,,,False
+new_in_holdet,Seko Fofana,Elfenbenskysten,MID,,2.5,,,False
+new_in_holdet,Ibrahim Sangare,Elfenbenskysten,MID,,3.0,,,False
+new_in_holdet,Jean Michael Seri,Elfenbenskysten,MID,,2.5,,,False
+new_in_holdet,Franck Kessie,Elfenbenskysten,MID,,3.0,,,False
+new_in_holdet,Declan Rice,England,MID,,4.5,,,False
+new_in_holdet,Ederson,Brasilien,MID,,2.5,,,False
+new_in_holdet,Jordan Henderson,England,MID,,3.5,,,False
+new_in_holdet,Elliot Anderson,England,MID,,4.0,,,False
+new_in_holdet,Eberechi Eze,England,MID,,3.0,,,False
+new_in_holdet,Cole Palmer,England,MID,,5.0,,,True
+new_in_holdet,Morgan Rogers,England,MID,,5.5,,,False
+new_in_holdet,Kobbie Mainoo,England,MID,,2.5,,,False
+new_in_holdet,Jude Bellingham,England,MID,,6.0,,,False
+new_in_holdet,Ibrahim Sulemana,Ghana,MID,,2.5,,,True
+new_in_holdet,Elisha Owusu,Ghana,MID,,2.5,,,False
+new_in_holdet,Thomas Partey,Ghana,MID,,3.0,,,False
+new_in_holdet,Augustine Boakye,Ghana,MID,,2.0,,,False
+new_in_holdet,Kodai Sano,Japan,MID,,2.0,,,True
+new_in_holdet,Ryunosuke Sato,Japan,MID,,2.0,,,True
+new_in_holdet,Wataru Endo,Japan,MID,,2.5,,,False
+new_in_holdet,Takumi Minamino,Japan,MID,,4.0,,,True
+new_in_holdet,Daichi Kamada,Japan,MID,,3.5,,,False
+new_in_holdet,Takefusa Kubo,Japan,MID,,4.0,,,False
+new_in_holdet,Keito Nakamura,Japan,MID,,3.0,,,False
+new_in_holdet,Koki Saito,Japan,MID,,2.0,,,True
+new_in_holdet,Junya Ito,Japan,MID,,3.5,,,False
+new_in_holdet,Ritsu Doan,Japan,MID,,4.0,,,False
+new_in_holdet,Joel Chima Fujita,Japan,MID,,2.0,,,True
+new_in_holdet,Kwasi Sibo,Ghana,MID,,2.5,,,False
+new_in_holdet,Ao Tanaka,Japan,MID,,2.5,,,False
+new_in_holdet,Kaishu Sano,Japan,MID,,2.5,,,False
+new_in_holdet,Kaoru Mitoma,Japan,MID,,3.5,,,True
+new_in_holdet,Jens Castrop,Sydkorea,MID,,2.5,,,False
+new_in_holdet,In-beom Hwang,Sydkorea,MID,,2.5,,,False
+new_in_holdet,Jae-Sung Lee,Sydkorea,MID,,4.0,,,False
+new_in_holdet,Kang-In Lee,Sydkorea,MID,,5.0,,,False
+new_in_holdet,Seung-Ho Paik,Sydkorea,MID,,2.0,,,False
+new_in_holdet,Hyun-seok Hong,Sydkorea,MID,,2.0,,,True
+new_in_holdet,Hyeok-kyu Kwon,Sydkorea,MID,,2.0,,,True
+new_in_holdet,Hyun-Jun Yang,Sydkorea,MID,,2.5,,,False
+new_in_holdet,Hee-Chan Hwang,Sydkorea,MID,,3.0,,,False
+new_in_holdet,Jun-ho Bae,Sydkorea,MID,,2.5,,,False
+new_in_holdet,Jin-gyu Kim,Sydkorea,MID,,2.5,,,False
+new_in_holdet,Jin-seob Park,Sydkorea,MID,,2.5,,,False
+new_in_holdet,Ji-sung Eom,Sydkorea,MID,,2.0,,,False
+new_in_holdet,Dong-gyeong Lee,Sydkorea,MID,,2.0,,,False
+new_in_holdet,Brian Gutierrez,Mexico,MID,,2.5,,,False
+new_in_holdet,Alvaro Fidalgo,Mexico,MID,,2.5,,,False
+new_in_holdet,Obed Vargas,Mexico,MID,,2.5,,,False
+new_in_holdet,Edson Alvarez,Mexico,MID,,3.0,,,False
+new_in_holdet,Denzell Garcia,Mexico,MID,,2.0,,,True
+new_in_holdet,Joe Bell,New Zealand,MID,,2.5,,,False
+new_in_holdet,Elijah Just,New Zealand,MID,,3.0,,,False
+new_in_holdet,Orbelin Pineda,Mexico,MID,,3.0,,,False
+new_in_holdet,Carlos Rodriguez,Mexico,MID,,2.5,,,True
+new_in_holdet,Erik Lira,Mexico,MID,,2.5,,,False
+new_in_holdet,Gilberto Mora,Mexico,MID,,2.5,,,False
+new_in_holdet,Cesar Huerta,Mexico,MID,,2.5,,,False
+new_in_holdet,Erick Sanchez,Mexico,MID,,3.0,,,True
+new_in_holdet,Luis Chavez,Mexico,MID,,2.0,,,False
+new_in_holdet,Luis Romo,Mexico,MID,,2.5,,,False
+new_in_holdet,Roberto Alvarado,Mexico,MID,,2.5,,,False
+new_in_holdet,Yuki Soma,Japan,MID,,2.0,,,True
+new_in_holdet,Callum McCowatt,New Zealand,MID,,2.5,,,False
+new_in_holdet,Ryan Thomas,New Zealand,MID,,2.5,,,False
+new_in_holdet,Marko Stamenic,New Zealand,MID,,2.5,,,False
+new_in_holdet,Sarpreet Singh,New Zealand,MID,,2.5,,,False
+new_in_holdet,Matthew Garbett,New Zealand,MID,,2.5,,,False
+new_in_holdet,Alex Rufer,New Zealand,MID,,2.5,,,False
+new_in_holdet,Ben Old,New Zealand,MID,,2.0,,,False
+new_in_holdet,Lachlan Bayliss,New Zealand,MID,,2.0,,,False
+new_in_holdet,Miguel Almiron,Paraguay,MID,,3.5,,,False
+new_in_holdet,Alejandro Romero Gamarra,Paraguay,MID,,3.0,,,False
+new_in_holdet,Mauricio Magalhaes Prado,Paraguay,MID,,2.0,,,False
+new_in_holdet,Gustavo Caballero,Paraguay,MID,,2.0,,,False
+new_in_holdet,Ramon Sosa,Paraguay,MID,,3.0,,,False
+new_in_holdet,Diego Gomez,Paraguay,MID,,3.0,,,False
+new_in_holdet,Hugo Cuenca,Paraguay,MID,,2.0,,,True
+new_in_holdet,Andres Cubas,Paraguay,MID,,2.5,,,False
+new_in_holdet,Lucas Ramon Romero,Paraguay,MID,,2.0,,,True
+new_in_holdet,Damian Bobadilla,Paraguay,MID,,2.5,,,False
+new_in_holdet,Matias Galarza Fonda,Paraguay,MID,,2.5,,,False
+new_in_holdet,Sphephelo Yaya Sithole,Sydafrika,MID,,3.0,,,False
+new_in_holdet,Teboho Mokoena,Sydafrika,MID,,3.5,,,False
+new_in_holdet,Braian Ojeda,Paraguay,MID,,2.0,,,False
+new_in_holdet,Jayden Adams,Sydafrika,MID,,2.0,,,False
+new_in_holdet,Thalente Mbatha,Sydafrika,MID,,3.0,,,False
+new_in_holdet,Joaquin Piquerez,Uruguay,MID,,2.5,,,False
+new_in_holdet,Themba Zwane,Sydafrika,MID,,2.5,,,False
+new_in_holdet,Nicolas Fonseca,Uruguay,MID,,2.5,,,True
+new_in_holdet,Rodrigo Bentancur,Uruguay,MID,,3.0,,,False
+new_in_holdet,Giorgian De Arrascaeta,Uruguay,MID,,4.0,,,False
+new_in_holdet,Federico Valverde,Uruguay,MID,,5.5,,,False
+new_in_holdet,Juan Manuel Sanabria,Uruguay,MID,,3.0,,,False
+new_in_holdet,Agustin Canobbio,Uruguay,MID,,2.5,,,False
+new_in_holdet,Nicolas de la Cruz,Uruguay,MID,,3.0,,,False
+new_in_holdet,Rodrigo Zalazar,Uruguay,MID,,3.5,,,False
+new_in_holdet,Maxi Araujo,Uruguay,MID,,5.0,,,False
+new_in_holdet,Emiliano Martinez Toranza,Uruguay,MID,,2.5,,,False
+new_in_holdet,Manuel Ugarte,Uruguay,MID,,3.5,,,False
+new_in_holdet,Carlos Andres Gomez,Colombia,MID,,2.0,,,False
+new_in_holdet,Gustavo Puerta,Colombia,MID,,2.5,,,False
+new_in_holdet,Jefferson Lerma,Colombia,MID,,3.0,,,False
+new_in_holdet,James Rodriguez,Colombia,MID,,4.0,,,False
+new_in_holdet,Juan Quintero,Colombia,MID,,2.5,,,False
+new_in_holdet,Alan Franco,Ecuador,MID,,2.5,,,False
+new_in_holdet,Gonzalo Plata,Ecuador,MID,,3.5,,,False
+new_in_holdet,Denil Castillo,Ecuador,MID,,2.5,,,False
+new_in_holdet,Kendry Paez,Ecuador,MID,,3.0,,,False
+new_in_holdet,Kevin Castano,Colombia,MID,,3.0,,,False
+new_in_holdet,Juan Portilla,Colombia,MID,,2.5,,,False
+new_in_holdet,Jaminton Campaz,Colombia,MID,,2.5,,,False
+new_in_holdet,Jorge Carrascal,Colombia,MID,,2.5,,,False
+new_in_holdet,Jhon Arias,Colombia,MID,,3.0,,,False
+new_in_holdet,Richard Rios,Colombia,MID,,3.5,,,False
+new_in_holdet,Moises Caicedo,Ecuador,MID,,3.0,,,False
+new_in_holdet,John Yeboah,Ecuador,MID,,3.0,,,False
+new_in_holdet,Jordy Alcivar,Ecuador,MID,,2.0,,,False
+new_in_holdet,Alan Minda,Ecuador,MID,,3.0,,,False
+new_in_holdet,Pedro Vite,Ecuador,MID,,2.5,,,False
+new_in_holdet,Yaimar Medina,Ecuador,MID,,2.0,,,False
+new_in_holdet,Amir Hadziahmetovic,Bosnien-Hercegovina,MID,,2.0,,,False
+new_in_holdet,Ivan Basic,Bosnien-Hercegovina,MID,,2.5,,,False
+new_in_holdet,Amar Memic,Bosnien-Hercegovina,MID,,3.0,,,False
+new_in_holdet,Ermin Mahmic,Bosnien-Hercegovina,MID,,2.0,,,False
+new_in_holdet,Dzenis Burnic,Bosnien-Hercegovina,MID,,2.5,,,False
+new_in_holdet,Armin Gigovic,Bosnien-Hercegovina,MID,,3.0,,,False
+new_in_holdet,Benjamin Tahirovic,Bosnien-Hercegovina,MID,,3.0,,,False
+new_in_holdet,Mohammad Ghorbani,Iran,MID,,2.5,,,False
+new_in_holdet,Kerim Alajbegovic,Bosnien-Hercegovina,MID,,3.5,,,False
+new_in_holdet,Esmir Bajraktarevic,Bosnien-Hercegovina,MID,,3.0,,,False
+new_in_holdet,Saman Ghoddos,Iran,MID,,2.5,,,False
+new_in_holdet,Saeid Ezatolahi,Iran,MID,,2.5,,,False
+new_in_holdet,Amir Mohammad Razzaghinia,Iran,MID,,2.0,,,False
+new_in_holdet,Mehdi Ghayedi,Iran,MID,,3.0,,,False
+new_in_holdet,Roozbeh Cheshmi,Iran,MID,,2.0,,,False
+new_in_holdet,Omid Noorafkan,Iran,MID,,2.5,,,True
+new_in_holdet,Ivan Sunjic,Bosnien-Hercegovina,MID,,3.0,,,False
+new_in_holdet,Mehdi Torabi,Iran,MID,,2.0,,,False
+new_in_holdet,Nicolas Raskin,Belgien,MID,,2.5,,,False
+new_in_holdet,Hans Vanaken,Belgien,MID,,4.0,,,False
+new_in_holdet,Youri Tielemans,Belgien,MID,,3.5,,,False
+new_in_holdet,Axel Witsel,Belgien,MID,,3.0,,,False
+new_in_holdet,Kevin De Bruyne,Belgien,MID,,7.0,,,False
+new_in_holdet,Ali Jasim,Irak,MID,,3.0,,,False
+new_in_holdet,Aimar Sher,Irak,MID,,2.5,,,False
+new_in_holdet,Peter Gwargis,Irak,MID,,2.0,,,True
+new_in_holdet,Kevin Yakob,Irak,MID,,2.0,,,False
+new_in_holdet,Diego Moreira,Belgien,MID,,2.0,,,False
+new_in_holdet,Charles Vanhoutte,Belgien,MID,,2.0,,,True
+new_in_holdet,Amadou Onana,Belgien,MID,,3.0,,,False
+new_in_holdet,Ibrahim Bayesh,Irak,MID,,2.5,,,False
+new_in_holdet,Marko Farji,Irak,MID,,2.5,,,False
+new_in_holdet,Amir Al Ammari,Irak,MID,,3.0,,,False
+new_in_holdet,Ahmed Qasem,Irak,MID,,2.0,,,False
+new_in_holdet,Zidane Iqbal,Irak,MID,,2.5,,,False
+new_in_holdet,Youssef Amyn,Irak,MID,,2.5,,,False
+new_in_holdet,Azarias Londono,Panama,MID,,2.0,,,False
+new_in_holdet,Cesar Yanis,Panama,MID,,2.0,,,False
+new_in_holdet,Zaid Ismail,Irak,MID,,2.5,,,False
+new_in_holdet,Hasan Abdulkareem,Irak,MID,,2.0,,,True
+new_in_holdet,Jose Luis Rodriguez Francis,Panama,MID,,2.5,,,False
+new_in_holdet,Haissem Hassan,Egypten,MID,,2.0,,,False
+new_in_holdet,Emam Ashour,Egypten,MID,,2.5,,,False
+new_in_holdet,Carlos Harvey,Panama,MID,,2.5,,,False
+new_in_holdet,Adalberto Carrasquilla,Panama,MID,,2.5,,,False
+new_in_holdet,Alberto Quintero,Panama,MID,,2.0,,,False
+new_in_holdet,Anibal Godoy,Panama,MID,,2.5,,,False
+new_in_holdet,Cristian Martinez,Panama,MID,,2.5,,,False
+new_in_holdet,Yoel Barcenas,Panama,MID,,2.0,,,False
+new_in_holdet,Islam Issa,Egypten,MID,,2.0,,,True
+new_in_holdet,Mahmoud Trezeguet,Egypten,MID,,3.0,,,False
+new_in_holdet,Marwan Ateya,Egypten,MID,,3.0,,,False
+new_in_holdet,Mohanad Lasheen,Egypten,MID,,2.5,,,False
+new_in_holdet,Hamdy Fathy,Egypten,MID,,2.5,,,False
+new_in_holdet,Mahmoud Saber,Egypten,MID,,2.5,,,False
+new_in_holdet,Ibrahim Adel,Egypten,MID,,3.0,,,False
+new_in_holdet,Ahmed Zizo,Egypten,MID,,3.0,,,False
+new_in_holdet,Mohamed Rabie Hrimat,Marokko,MID,,2.0,,,True
+new_in_holdet,Ayoube Amaimouni-Echghouyab,Marokko,MID,,2.5,,,False
+new_in_holdet,Samir El Mourabet,Marokko,MID,,2.0,,,False
+new_in_holdet,Soufiane Rahimi,Marokko,MID,,2.5,,,False
+new_in_holdet,Gessime Yassine,Marokko,MID,,2.0,,,False
+new_in_holdet,Nabil 'Dunga' Emad,Egypten,MID,,2.0,,,False
+new_in_holdet,Mostafa Ziko,Egypten,MID,,2.0,,,False
+new_in_holdet,Azzedine Ounahi,Marokko,MID,,3.0,,,False
+new_in_holdet,Bilal El Khannouss,Marokko,MID,,3.0,,,False
+new_in_holdet,Sofyan Amrabat,Marokko,MID,,2.5,,,False
+new_in_holdet,Hakim Ziyech,Marokko,MID,,2.5,,,True
+new_in_holdet,Eliesse Ben Seghir,Marokko,MID,,3.0,,,True
+new_in_holdet,Habib Diarra,Senegal,MID,,2.5,,,False
+new_in_holdet,Lamine Camara,Senegal,MID,,3.0,,,False
+new_in_holdet,Ibrahim Mbaye,Senegal,MID,,4.0,,,False
+new_in_holdet,Oussama Targhalline,Marokko,MID,,2.5,,,True
+new_in_holdet,Neil El Aynaoui,Marokko,MID,,3.0,,,False
+new_in_holdet,Ismael Saibari,Marokko,MID,,3.5,,,False
+new_in_holdet,Ayyoub Bouaddi,Marokko,MID,,2.0,,,False
+new_in_holdet,Iliman Ndiaye,Senegal,MID,,3.0,,,False
+new_in_holdet,Pape Alassane Gueye,Senegal,MID,,3.0,,,False
+new_in_holdet,Ismaila Sarr,Senegal,MID,,3.5,,,False
+new_in_holdet,Pape Matar Sarr,Senegal,MID,,2.5,,,False
+new_in_holdet,Pathe Ciss,Senegal,MID,,2.5,,,False
+new_in_holdet,Mortadha Ben Ouanes,Tunesien,MID,,2.0,,,False
+new_in_holdet,Khalil Ayari,Tunesien,MID,,2.0,,,False
+new_in_holdet,Idrissa Gana Gueye,Senegal,MID,,3.0,,,False
+new_in_holdet,Bara Sapoko Ndiaye,Senegal,MID,,2.0,,,False
+new_in_holdet,Cheikh Niasse,Senegal,MID,,2.0,,,True
+new_in_holdet,Nampalys Mendy,Senegal,MID,,2.0,,,True
+new_in_holdet,Sayfallah Ltaief,Tunesien,MID,,2.0,,,True
+new_in_holdet,Mohamed 'Hadj' Mahmoud,Tunesien,MID,,2.0,,,False
+new_in_holdet,Rani Khedira,Tunesien,MID,,3.0,,,False
+new_in_holdet,Anis Ben Slimane,Tunesien,MID,,2.5,,,False
+new_in_holdet,Aissa Laidouni,Tunesien,MID,,2.0,,,True
+new_in_holdet,Ellyes Skhiri,Tunesien,MID,,2.5,,,False
+new_in_holdet,Ferjani Sassi,Tunesien,MID,,3.0,,,True
+new_in_holdet,Naim Sliti,Tunesien,MID,,2.5,,,True
+new_in_holdet,Mohamed Ali Ben Romdhane,Tunesien,MID,,3.5,,,True
+new_in_holdet,Amor Layouni,Tunesien,MID,,2.0,,,True
+new_in_holdet,Elias Achouri,Tunesien,MID,,3.5,,,False
+new_in_holdet,Hannibal Mejbri,Tunesien,MID,,3.0,,,False
+new_in_holdet,Ismael Gharbi,Tunesien,MID,,2.5,,,False
+new_in_holdet,Elias Saad,Tunesien,MID,,2.5,,,False
+new_in_holdet,Sebastian Tounekti,Tunesien,MID,,2.0,,,False
+new_in_holdet,Ayman Yahya Salem,Saudi-Arabien,MID,,2.5,,,False
+new_in_holdet,Saleh Al-Shamat,Saudi-Arabien,MID,,2.5,,,True
+new_in_holdet,Musab Al-Juwayr,Saudi-Arabien,MID,,2.5,,,False
+new_in_holdet,Ziyad Al-Johani,Saudi-Arabien,MID,,2.5,,,False
+new_in_holdet,Abdullah Al-Khaibari,Saudi-Arabien,MID,,2.5,,,False
+new_in_holdet,Mohamed Kanno,Saudi-Arabien,MID,,3.0,,,False
+new_in_holdet,Salem Al-Dawsari,Saudi-Arabien,MID,,3.0,,,False
+new_in_holdet,Nasser Al-Dawsari,Saudi-Arabien,MID,,2.5,,,False
+new_in_holdet,Abdulrahman Al-Obood,Saudi-Arabien,MID,,2.5,,,True
+new_in_holdet,Alaa Hejji,Saudi-Arabien,MID,,2.0,,,False
+new_in_holdet,Khalid Al-Ghannam,Saudi-Arabien,MID,,2.5,,,False
+new_in_holdet,Mohamed Al-Mannai,Qatar,MID,,2.5,,,False
+new_in_holdet,Assim Madibo,Qatar,MID,,2.5,,,False
+new_in_holdet,Lennon Miller,Skotland,MID,,2.0,,,True
+new_in_holdet,Andrew Irving,Skotland,MID,,2.0,,,True
+new_in_holdet,Ben Doak,Skotland,MID,,3.0,,,False
+new_in_holdet,Lewis Ferguson,Skotland,MID,,2.0,,,False
+new_in_holdet,Ahmed Al-Ganehi,Qatar,MID,,2.0,,,False
+new_in_holdet,Tahsin Jamshid,Qatar,MID,,2.0,,,False
+new_in_holdet,Jassem Gaber,Qatar,MID,,2.5,,,False
+new_in_holdet,Mohammed Waad,Qatar,MID,,2.5,,,True
+new_in_holdet,Hassan Al-Haydos,Qatar,MID,,2.5,,,False
+new_in_holdet,Karim Boudiaf,Qatar,MID,,2.5,,,False
+new_in_holdet,Ahmed Fathi,Qatar,MID,,2.5,,,False
+new_in_holdet,Abdulaziz Hatim Mohammed,Qatar,MID,,2.5,,,False
+new_in_holdet,John McGinn,Skotland,MID,,3.5,,,False
+new_in_holdet,Kenny McLean,Skotland,MID,,2.5,,,False
+new_in_holdet,Scott McTominay,Skotland,MID,,4.5,,,False
+new_in_holdet,Ryan Christie,Skotland,MID,,2.5,,,False
+new_in_holdet,Marcelo Flores,Canada,MID,,2.0,,,False
+new_in_holdet,Tajon Buchanan,Canada,MID,,3.5,,,False
+new_in_holdet,Jonathan Osorio,Canada,MID,,3.0,,,False
+new_in_holdet,Tyler Fletcher,Skotland,MID,,2.0,,,False
+new_in_holdet,Billy Gilmour,Skotland,MID,,3.0,,,True
+new_in_holdet,David 'Junior' Hoilett,Canada,MID,,2.5,,,True
+new_in_holdet,Mohammad Abu 'Shararh' Zrayq,Jordan,MID,,2.5,,,False
+new_in_holdet,Mohammad Al-Dawoud,Jordan,MID,,2.0,,,False
+new_in_holdet,Yousef Qashi,Jordan,MID,,2.0,,,True
+new_in_holdet,Mohammad Taha,Jordan,MID,,2.0,,,True
+new_in_holdet,Mohammad Abu Hasheesh,Jordan,MID,,2.5,,,False
+new_in_holdet,Nizar Al-Rashdan,Jordan,MID,,2.0,,,False
+new_in_holdet,Noor Al-Rawabdeh,Jordan,MID,,2.5,,,False
+new_in_holdet,Ibrahim Saadeh,Jordan,MID,,2.5,,,False
+new_in_holdet,Amer Jamous,Jordan,MID,,2.5,,,False
+new_in_holdet,Mahmoud Al-Mardi,Jordan,MID,,2.0,,,False
+new_in_holdet,Mohannad Abu Taha,Jordan,MID,,2.5,,,False
+new_in_holdet,Odeh Al-Fakhouri,Jordan,MID,,2.0,,,False
+new_in_holdet,Mousa Tamari,Jordan,MID,,3.0,,,False
+new_in_holdet,Ali Azaizeh,Jordan,MID,,2.0,,,False
+new_in_holdet,Kevin Lenini Pina,Kap Verde,MID,,2.0,,,False
+new_in_holdet,Laros Duarte,Kap Verde,MID,,2.5,,,False
+new_in_holdet,Ailson Tavares,Kap Verde,MID,,2.5,,,True
+new_in_holdet,Deroy Duarte,Kap Verde,MID,,2.5,,,False
+new_in_holdet,Jamiro Monteiro,Kap Verde,MID,,2.5,,,False
+new_in_holdet,Yannick Semedo,Kap Verde,MID,,2.0,,,False
+new_in_holdet,Odildzhon Khamrobekov,Usbekistan,MID,,2.5,,,False
+new_in_holdet,Akmal Mozgovoy,Usbekistan,MID,,2.5,,,False
+new_in_holdet,Jamshid Iskanderov,Usbekistan,MID,,2.0,,,False
+new_in_holdet,Abbosbek Fayzullaev,Usbekistan,MID,,2.5,,,False
+new_in_holdet,Oston Urunov,Usbekistan,MID,,2.5,,,False
+new_in_holdet,Jaloliddin Masharipov,Usbekistan,MID,,2.5,,,False
+new_in_holdet,Alisher Odilov,Usbekistan,MID,,2.0,,,True
+new_in_holdet,Umarali Rakhmonaliyev,Usbekistan,MID,,2.0,,,True
+new_in_holdet,Otabek Shukurov,Usbekistan,MID,,2.5,,,False
+new_in_holdet,Ibrokhim Ibrokhimov,Usbekistan,MID,,2.0,,,True
+new_in_holdet,Dostonbek Khamdamov,Usbekistan,MID,,2.0,,,False
+new_in_holdet,Stephen Eustaquio,Canada,MID,,2.5,,,False
+new_in_holdet,Sherzod Esanov,Usbekistan,MID,,2.0,,,False
+new_in_holdet,Aziz Ganiev,Usbekistan,MID,,2.5,,,False
+new_in_holdet,Mathieu Choiniere,Canada,MID,,2.5,,,False
+new_in_holdet,Ali Ahmed,Canada,MID,,3.0,,,False
+new_in_holdet,Jacob Shaffelburg,Canada,MID,,2.0,,,False
+new_in_holdet,Nathan Saliba,Canada,MID,,3.0,,,False
+new_in_holdet,Niko Sigur,Canada,MID,,2.5,,,False
+new_in_holdet,Ismael Kone,Canada,MID,,3.0,,,False
+new_in_holdet,Liam Millar,Canada,MID,,3.0,,,False
+new_in_holdet,Telmo Arcanjo,Kap Verde,MID,,2.5,,,False
+new_in_holdet,Felix Horn Myhre,Norge,MID,,2.0,,,True
+new_in_holdet,Morten Thorsby,Norge,MID,,2.5,,,False
+new_in_holdet,Patrick Berg,Norge,MID,,2.5,,,False
+new_in_holdet,Martin Ødegaard,Norge,MID,,4.5,,,False
+new_in_holdet,Rajaei Ayed,Jordan,MID,,2.5,,,False
+new_in_holdet,Kristian Thorstvedt,Norge,MID,,2.0,,,False
+new_in_holdet,Antonio Nusa,Norge,MID,,3.5,,,False
+new_in_holdet,Jens Petter Hauge,Norge,MID,,2.5,,,False
+new_in_holdet,Tahith Chong,Curaçao,MID,,2.0,,,False
+new_in_holdet,Juninho Bacuna,Curaçao,MID,,3.0,,,False
+new_in_holdet,Thelo Aasgaard,Norge,MID,,2.0,,,False
+new_in_holdet,Kristian Arnstad,Norge,MID,,2.5,,,True
+new_in_holdet,Sander Berge,Norge,MID,,3.0,,,False
+new_in_holdet,Andreas Schjelderup,Norge,MID,,3.5,,,False
+new_in_holdet,Fredrik Aursnes,Norge,MID,,3.0,,,False
+new_in_holdet,Oscar Bobb,Norge,MID,,3.0,,,False
+new_in_holdet,Dominique Simon,Haiti,MID,,2.0,,,False
+new_in_holdet,Tyrese Noslin,Curaçao,MID,,2.0,,,False
+new_in_holdet,Leandro Bacuna,Curaçao,MID,,2.5,,,False
+new_in_holdet,Godfried Roemeratoe,Curaçao,MID,,2.0,,,False
+new_in_holdet,Kevin Felida,Curaçao,MID,,2.0,,,False
+new_in_holdet,Woodensky Pierre,Haiti,MID,,2.0,,,False
+new_in_holdet,Danley Jean Jacques,Haiti,MID,,3.0,,,False
+new_in_holdet,Leverton Pierre,Haiti,MID,,2.5,,,False
+new_in_holdet,Carl Sainte,Haiti,MID,,2.0,,,False
+new_in_holdet,Grady Diangana,Congo DR,MID,,2.5,,,True
+new_in_holdet,Noah Sadiki,Congo DR,MID,,2.5,,,False
+new_in_holdet,Ngal'ayel Mukau,Congo DR,MID,,2.5,,,False
+new_in_holdet,Nathanael Mbuku,Congo DR,MID,,2.5,,,False
+new_in_holdet,Meschack Elia,Congo DR,MID,,3.0,,,False
+new_in_holdet,Edo Kayembe,Congo DR,MID,,2.5,,,False
+new_in_holdet,Charles Pickel,Congo DR,MID,,2.5,,,False
+new_in_holdet,Jean-Ricner Bellegarde,Haiti,MID,,3.0,,,False
+new_in_holdet,Theo Bongonda,Congo DR,MID,,3.0,,,False
+new_in_holdet,Gaël Kakuta,Congo DR,MID,,2.5,,,False
+new_in_holdet,Brian Cipenga,Congo DR,MID,,2.0,,,False
+new_in_holdet,Samuel Moutoussamy,Congo DR,MID,,3.0,,,False
+new_in_holdet,Fiston Mayele,Congo DR,FWD,,3.0,,,False
+new_in_holdet,Cedric Bakambu,Congo DR,FWD,,3.5,,,False
+new_in_holdet,Frantzdy Pierrot,Haiti,FWD,,3.0,,,False
+new_in_holdet,Ruben Providence,Haiti,FWD,,2.5,,,False
+new_in_holdet,Yoane Wissa,Congo DR,FWD,,3.5,,,False
+new_in_holdet,Simon Banza,Congo DR,FWD,,2.5,,,False
+new_in_holdet,Wilson Isidor,Haiti,FWD,,3.0,,,False
+new_in_holdet,Don Deedson Louicius,Haiti,FWD,,3.0,,,False
+new_in_holdet,Duckens Nazon,Haiti,FWD,,3.5,,,False
+new_in_holdet,Woobens Pacius,Haiti,FWD,,2.0,,,True
+new_in_holdet,Derrick Etienne Jr.,Haiti,FWD,,2.0,,,False
+new_in_holdet,Josue Casimir,Haiti,FWD,,2.5,,,False
+new_in_holdet,Yassin Fortune,Haiti,FWD,,2.0,,,False
+new_in_holdet,Brandley Kuwas,Curaçao,FWD,,2.0,,,False
+new_in_holdet,Gervane Kastaneer,Curaçao,FWD,,2.5,,,False
+new_in_holdet,Jeremy Antonisse,Curaçao,FWD,,2.0,,,False
+new_in_holdet,Jearl Margaritha,Curaçao,FWD,,3.0,,,False
+new_in_holdet,Jürgen Locadia,Curaçao,FWD,,2.0,,,False
+new_in_holdet,Ar'jany Martha,Curaçao,FWD,,2.0,,,False
+new_in_holdet,Sontje Hansen,Curaçao,FWD,,2.0,,,False
+new_in_holdet,Lenny Joseph,Haiti,FWD,,2.0,,,False
+new_in_holdet,Kenji Gorre,Curaçao,FWD,,2.5,,,False
+new_in_holdet,Jørgen Strand Larsen,Norge,FWD,,3.0,,,False
+new_in_holdet,Erling Haaland,Norge,FWD,,8.5,,,False
+new_in_holdet,Alexander Sørloth,Norge,FWD,,4.5,,,False
+new_in_holdet,Gilson Benchimol Tavares,Kap Verde,FWD,,2.5,,,False
+new_in_holdet,Garry Mendes Rodrigues,Kap Verde,FWD,,2.5,,,False
+new_in_holdet,Ryan Mendes Da Graça,Kap Verde,FWD,,3.0,,,False
+new_in_holdet,Dailon Livramento,Kap Verde,FWD,,3.0,,,False
+new_in_holdet,Jovane Cabral,Kap Verde,FWD,,2.5,,,False
+new_in_holdet,Nuno da Costa,Kap Verde,FWD,,2.5,,,False
+new_in_holdet,Helio Varela,Kap Verde,FWD,,2.5,,,False
+new_in_holdet,Willy Semedo,Kap Verde,FWD,,3.5,,,False
+new_in_holdet,Eldor Shomurodov,Usbekistan,FWD,,3.0,,,False
+new_in_holdet,Azizbek Amanov,Usbekistan,FWD,,2.0,,,False
+new_in_holdet,Tani Oluwaseyi,Canada,FWD,,2.5,,,False
+new_in_holdet,Promise David,Canada,FWD,,3.0,,,False
+new_in_holdet,Igor Sergeev,Usbekistan,FWD,,2.0,,,False
+new_in_holdet,Ibrahim Sabra,Jordan,FWD,,2.5,,,False
+new_in_holdet,Ali Olwan,Jordan,FWD,,3.5,,,False
+new_in_holdet,Baha'a Faisal,Jordan,FWD,,2.5,,,True
+new_in_holdet,Daniel Jebbison,Canada,FWD,,2.5,,,True
+new_in_holdet,Jonathan David,Canada,FWD,,4.5,,,False
+new_in_holdet,Aribim Pepple,Canada,FWD,,2.0,,,True
+new_in_holdet,Findlay Curtis,Skotland,FWD,,2.0,,,False
+new_in_holdet,Jacen Russell-Rowe,Canada,FWD,,2.0,,,True
+new_in_holdet,Cyle Christopher Larin,Canada,FWD,,3.0,,,False
+new_in_holdet,George Hirst,Skotland,FWD,,2.5,,,False
+new_in_holdet,Che Adams,Skotland,FWD,,3.0,,,False
+new_in_holdet,Ahmed Alaaeldin Abdelmotaal,Qatar,FWD,,3.0,,,False
+new_in_holdet,Almoez Ali,Qatar,FWD,,3.0,,,False
+new_in_holdet,Akram Afif,Qatar,FWD,,3.5,,,False
+new_in_holdet,Mohammed Muntari,Qatar,FWD,,2.0,,,False
+new_in_holdet,Yusuf Abdurisag,Qatar,FWD,,2.0,,,False
+new_in_holdet,Edmilson Junior,Qatar,FWD,,2.5,,,False
+new_in_holdet,Lawrence Shankland,Skotland,FWD,,2.5,,,False
+new_in_holdet,Lyndon Dykes,Skotland,FWD,,2.5,,,False
+new_in_holdet,Ross Stewart,Skotland,FWD,,2.0,,,False
+new_in_holdet,Tommy Conway,Skotland,FWD,,2.5,,,True
+new_in_holdet,Sultan Mandash,Saudi-Arabien,FWD,,2.5,,,False
+new_in_holdet,Saleh Al-Shehri,Saudi-Arabien,FWD,,2.5,,,False
+new_in_holdet,Firas Al Brikan,Saudi-Arabien,FWD,,3.5,,,False
+new_in_holdet,Abdullah Al-Hamdan,Saudi-Arabien,FWD,,2.5,,,False
+new_in_holdet,Youssef Msakni,Tunesien,FWD,,2.5,,,True
+new_in_holdet,Hazem Mastouri,Tunesien,FWD,,3.5,,,False
+new_in_holdet,Firas Chaouat,Tunesien,FWD,,2.5,,,False
+new_in_holdet,Louey Ben Farhat,Tunesien,FWD,,2.0,,,True
+new_in_holdet,Rayan Elloumi,Tunesien,FWD,,2.0,,,False
+new_in_holdet,Boulaye Dia,Senegal,FWD,,2.0,,,True
+new_in_holdet,Nicolas Jackson,Senegal,FWD,,4.5,,,False
+new_in_holdet,Krepin Diatta,Senegal,FWD,,2.5,,,False
+new_in_holdet,Bamba Dieng,Senegal,FWD,,2.0,,,False
+new_in_holdet,Sadio Mane,Senegal,FWD,,5.0,,,False
+new_in_holdet,Chemsdine Talbi,Marokko,FWD,,2.5,,,False
+new_in_holdet,Pape Cherif Ndiaye,Senegal,FWD,,3.0,,,False
+new_in_holdet,Assane Diao Diaoune,Senegal,FWD,,2.5,,,False
+new_in_holdet,Habib Diallo,Senegal,FWD,,2.5,,,True
+new_in_holdet,Abde Ezzalzouli,Marokko,FWD,,3.0,,,False
+new_in_holdet,Amine Adli,Marokko,FWD,,2.5,,,True
+new_in_holdet,Brahim Diaz,Marokko,FWD,,4.5,,,False
+new_in_holdet,Youssef En-Nesyri,Marokko,FWD,,3.5,,,True
+new_in_holdet,Ayoub El Kaabi,Marokko,FWD,,3.5,,,False
+new_in_holdet,Aqtay Abdallah,Egypten,FWD,,2.0,,,True
+new_in_holdet,Hamza Abdelkarim,Egypten,FWD,,2.0,,,False
+new_in_holdet,Mostafa Mohamed,Egypten,FWD,,3.5,,,True
+new_in_holdet,Mohamed Salah,Egypten,FWD,,5.0,,,False
+new_in_holdet,Nasser Mansy,Egypten,FWD,,2.0,,,True
+new_in_holdet,Ismael Diaz,Panama,FWD,,2.5,,,False
+new_in_holdet,Jose Fajardo,Panama,FWD,,3.0,,,False
+new_in_holdet,Omar Marmoush,Egypten,FWD,,5.0,,,False
+new_in_holdet,Kadir Barria,Panama,FWD,,2.0,,,True
+new_in_holdet,Cecilio Waterman,Panama,FWD,,2.0,,,False
+new_in_holdet,Tomas Rodriguez,Panama,FWD,,2.0,,,False
+new_in_holdet,Ali Yousif,Irak,FWD,,2.0,,,False
+new_in_holdet,Aymen Hussein,Irak,FWD,,3.5,,,False
+new_in_holdet,Mohanad Ali,Irak,FWD,,3.0,,,False
+new_in_holdet,Alexis Saelemaekers,Belgien,FWD,,4.0,,,False
+new_in_holdet,Matias Fernandez-Pardo,Belgien,FWD,,2.5,,,False
+new_in_holdet,Romeo Vermant,Belgien,FWD,,2.0,,,True
+new_in_holdet,Ali Al-Hamadi,Irak,FWD,,2.5,,,False
+new_in_holdet,Lois Openda,Belgien,FWD,,4.0,,,True
+new_in_holdet,Leandro Trossard,Belgien,FWD,,5.5,,,False
+new_in_holdet,Romelu Lukaku,Belgien,FWD,,4.5,,,False
+new_in_holdet,Charles De Ketelaere,Belgien,FWD,,6.0,,,False
+new_in_holdet,Jeremy Doku,Belgien,FWD,,6.5,,,False
+new_in_holdet,Dodi Lukebakio,Belgien,FWD,,3.5,,,False
+new_in_holdet,Alireza Jahanbakhsh,Iran,FWD,,2.5,,,False
+new_in_holdet,Shahriar Moghanlou,Iran,FWD,,2.0,,,False
+new_in_holdet,Dennis 'Dargahi' Eckert Ayensa,Iran,FWD,,2.0,,,False
+new_in_holdet,Haris Tabakovic,Bosnien-Hercegovina,FWD,,3.0,,,False
+new_in_holdet,Samed Bazdar,Bosnien-Hercegovina,FWD,,2.0,,,False
+new_in_holdet,Mohammad Mohebi,Iran,FWD,,3.0,,,False
+new_in_holdet,Ali Alipour,Iran,FWD,,2.5,,,False
+new_in_holdet,Amirhossein Hosseinzadeh,Iran,FWD,,3.0,,,False
+new_in_holdet,Mehdi Taremi,Iran,FWD,,3.5,,,False
+new_in_holdet,Edin Dzeko,Bosnien-Hercegovina,FWD,,4.5,,,False
+new_in_holdet,Ermedin Demirovic,Bosnien-Hercegovina,FWD,,3.0,,,False
+new_in_holdet,Jovo Lukic,Bosnien-Hercegovina,FWD,,2.0,,,False
+new_in_holdet,Jordy Caicedo,Ecuador,FWD,,2.5,,,False
+new_in_holdet,John Mercado,Ecuador,FWD,,2.0,,,True
+new_in_holdet,Janner Corozo,Ecuador,FWD,,2.0,,,True
+new_in_holdet,Jeremy Arevalo,Ecuador,FWD,,2.0,,,False
+new_in_holdet,Enner Valencia,Ecuador,FWD,,4.0,,,False
+new_in_holdet,Kevin Rodriguez,Ecuador,FWD,,3.0,,,False
+new_in_holdet,Anthony Valencia,Ecuador,FWD,,2.0,,,False
+new_in_holdet,Nilson Angulo,Ecuador,FWD,,2.0,,,False
+new_in_holdet,Rafael Santos Borre,Colombia,FWD,,4.0,,,True
+new_in_holdet,Jhon Cordoba,Colombia,FWD,,3.0,,,False
+new_in_holdet,Luis Diaz,Colombia,FWD,,5.5,,,False
+new_in_holdet,Juan 'Cucho' Hernandez,Colombia,FWD,,4.0,,,False
+new_in_holdet,Luis Suarez Charris,Colombia,FWD,,4.5,,,False
+new_in_holdet,Johan Carbonero,Colombia,FWD,,3.5,,,True
+new_in_holdet,Agustin Alvarez,Uruguay,FWD,,3.0,,,True
+new_in_holdet,Darwin Nunez,Uruguay,FWD,,6.0,,,False
+new_in_holdet,Federico Vinas,Uruguay,FWD,,4.0,,,False
+new_in_holdet,Facundo Torres,Uruguay,FWD,,3.5,,,True
+new_in_holdet,Facundo Pellistri,Uruguay,FWD,,3.5,,,False
+new_in_holdet,Thapelo Morena,Sydafrika,FWD,,3.0,,,True
+new_in_holdet,Brian Rodriguez,Uruguay,FWD,,3.5,,,False
+new_in_holdet,Rodrigo Aguirre,Uruguay,FWD,,3.0,,,False
+new_in_holdet,Iqraam Rayners,Sydafrika,FWD,,2.5,,,False
+new_in_holdet,Bongokuhle Hlongwane,Sydafrika,FWD,,2.0,,,True
+new_in_holdet,Relebohile Mofokeng,Sydafrika,FWD,,2.5,,,False
+new_in_holdet,Thapelo Maseko,Sydafrika,FWD,,2.0,,,False
+new_in_holdet,Julio Enciso,Paraguay,FWD,,3.5,,,False
+new_in_holdet,Lyle Foster,Sydafrika,FWD,,3.5,,,False
+new_in_holdet,Evidence Makgopa,Sydafrika,FWD,,2.5,,,False
+new_in_holdet,Mohau Nkota,Sydafrika,FWD,,2.5,,,True
+new_in_holdet,Tshepang Moremi,Sydafrika,FWD,,2.5,,,False
+new_in_holdet,Oswin Appollis,Sydafrika,FWD,,3.5,,,False
+new_in_holdet,Alex Arce,Paraguay,FWD,,2.5,,,False
+new_in_holdet,Ronaldo Martinez,Paraguay,FWD,,2.0,,,True
+new_in_holdet,Gabriel Avalos,Paraguay,FWD,,2.0,,,False
+new_in_holdet,Angel Romero,Paraguay,FWD,,2.0,,,True
+new_in_holdet,Antonio Sanabria,Paraguay,FWD,,4.0,,,False
+new_in_holdet,Isidro Pitta,Paraguay,FWD,,2.0,,,False
+new_in_holdet,Ben Waine,New Zealand,FWD,,2.5,,,False
+new_in_holdet,Chris Wood,New Zealand,FWD,,3.5,,,False
+new_in_holdet,Logan Rogerson,New Zealand,FWD,,2.5,,,True
+new_in_holdet,Kosta Barbarouses,New Zealand,FWD,,2.5,,,False
+new_in_holdet,Jesse Randall,New Zealand,FWD,,2.0,,,False
+new_in_holdet,Julian Quinones,Mexico,FWD,,3.0,,,False
+new_in_holdet,Santiago Gimenez,Mexico,FWD,,3.5,,,False
+new_in_holdet,Alexis Vega,Mexico,FWD,,2.5,,,False
+new_in_holdet,Raul Jimenez,Mexico,FWD,,4.5,,,False
+new_in_holdet,Armando Gonzalez,Mexico,FWD,,2.5,,,False
+new_in_holdet,Guillermo Martínez,Mexico,FWD,,2.0,,,False
+new_in_holdet,German Berterame,Mexico,FWD,,3.0,,,True
+new_in_holdet,Hyeon-Gyu Oh,Sydkorea,FWD,,3.5,,,False
+new_in_holdet,Heung-Min Son,Sydkorea,FWD,,6.0,,,False
+new_in_holdet,Gue-sung Cho,Sydkorea,FWD,,2.5,,,False
+new_in_holdet,Yuito Suzuki,Japan,FWD,,2.5,,,False
+new_in_holdet,Shuto Machino,Japan,FWD,,2.5,,,True
+new_in_holdet,Koki Ogawa,Japan,FWD,,4.0,,,False
+new_in_holdet,Ayase Ueda,Japan,FWD,,5.5,,,False
+new_in_holdet,Daizen Maeda,Japan,FWD,,2.5,,,False
+new_in_holdet,Keisuke Goto,Japan,FWD,,2.5,,,False
+new_in_holdet,Kento Shiogai,Japan,FWD,,2.5,,,False
+new_in_holdet,Prince Adu,Ghana,FWD,,2.0,,,False
+new_in_holdet,Christopher Bonsu Baah,Ghana,FWD,,2.5,,,False
+new_in_holdet,Brandon Thomas-Asante,Ghana,FWD,,2.5,,,False
+new_in_holdet,Iñaki Williams,Ghana,FWD,,3.0,,,False
+new_in_holdet,Jordan Ayew,Ghana,FWD,,3.0,,,False
+new_in_holdet,Daniel Nana Agyei,Ghana,FWD,,2.0,,,True
+new_in_holdet,Antoine Semenyo,Ghana,FWD,,4.0,,,False
+new_in_holdet,Kamaldeen Sulemana,Ghana,FWD,,3.0,,,False
+new_in_holdet,Issahaku Abdul Fatawu,Ghana,FWD,,2.5,,,False
+new_in_holdet,Ernest Nuamah,Ghana,FWD,,2.5,,,False
+new_in_holdet,Anthony Gordon,England,FWD,,4.0,,,False
+new_in_holdet,Noni Madueke,England,FWD,,3.5,,,False
+new_in_holdet,Ollie Watkins,England,FWD,,4.0,,,False
+new_in_holdet,Jarrod Bowen,England,FWD,,3.0,,,True
+new_in_holdet,Bukayo Saka,England,FWD,,6.5,,,False
+new_in_holdet,Harry Kane,England,FWD,,9.5,,,False
+new_in_holdet,Marcus Rashford,England,FWD,,5.5,,,False
+new_in_holdet,Ivan Toney,England,FWD,,3.5,,,False
+new_in_holdet,Ange-Yoan Bonny,Elfenbenskysten,FWD,,2.5,,,False
+new_in_holdet,Bazoumana Toure,Elfenbenskysten,FWD,,2.0,,,False
+new_in_holdet,Elye Wahi,Elfenbenskysten,FWD,,2.5,,,False
+new_in_holdet,Yan Diomande,Elfenbenskysten,FWD,,3.0,,,False
+new_in_holdet,Evann Guessand,Elfenbenskysten,FWD,,3.0,,,False
+new_in_holdet,Nicolas Pepe,Elfenbenskysten,FWD,,2.5,,,False
+new_in_holdet,Amad Diallo,Elfenbenskysten,FWD,,3.5,,,False
+new_in_holdet,Simon Adingra,Elfenbenskysten,FWD,,2.5,,,False
+new_in_holdet,Benie Traore,Elfenbenskysten,FWD,,2.5,,,True
+new_in_holdet,Martial Godo,Elfenbenskysten,FWD,,3.0,,,True
+new_in_holdet,Oumar Diakite,Elfenbenskysten,FWD,,2.5,,,False
+new_in_holdet,Rayan,Brasilien,FWD,,3.0,,,False
+new_in_holdet,Luiz Henrique,Brasilien,FWD,,3.0,,,False
+new_in_holdet,Raphinha,Brasilien,FWD,,6.5,,,False
+new_in_holdet,Igor Thiago,Brasilien,FWD,,4.0,,,False
+new_in_holdet,Endrick,Brasilien,FWD,,2.5,,,False
+new_in_holdet,João Pedro,Brasilien,FWD,,4.0,,,True
+new_in_holdet,Gabriel Martinelli,Brasilien,FWD,,4.0,,,False
+new_in_holdet,Awer Mabil,Australien,FWD,,2.0,,,False
+new_in_holdet,Neymar Jr.,Brasilien,FWD,,5.5,,,False
+new_in_holdet,Vinicius Junior,Brasilien,FWD,,7.5,,,False
+new_in_holdet,Matheus Cunha,Brasilien,FWD,,4.5,,,False
+new_in_holdet,Nestory Irankunda,Australien,FWD,,3.5,,,False
+new_in_holdet,Tete Yengi,Australien,FWD,,2.0,,,False
+new_in_holdet,Mohamed Toure,Australien,FWD,,3.0,,,False
+new_in_holdet,Martin Boyle,Australien,FWD,,2.5,,,True
+new_in_holdet,Deni Juric,Australien,FWD,,2.5,,,True
+new_in_holdet,Nishan Velupillay,Australien,FWD,,2.5,,,False
+new_in_holdet,Ante Suto,Australien,FWD,,2.0,,,True
+new_in_holdet,Jose Manuel Lopez,Argentina,FWD,,2.5,,,False
+new_in_holdet,Julian Alvarez,Argentina,FWD,,6.0,,,False
+new_in_holdet,Giuliano Simeone,Argentina,FWD,,4.0,,,False
+new_in_holdet,Nico Gonzalez,Argentina,FWD,,4.0,,,False
+new_in_holdet,Lautaro Martinez,Argentina,FWD,,8.0,,,False
+new_in_holdet,Lionel Messi,Argentina,FWD,,8.0,,,False
+new_in_holdet,Amine Gouiri,Algeriet,FWD,,3.0,,,False
+new_in_holdet,Riyad Mahrez,Algeriet,FWD,,4.0,,,False
+new_in_holdet,Baghdad Bounedjah,Algeriet,FWD,,3.0,,,True
+new_in_holdet,Fares Ghedjemis,Algeriet,FWD,,2.0,,,False
+new_in_holdet,Amin Chiakha,Algeriet,FWD,,2.5,,,True
+new_in_holdet,Mohamed Amoura,Algeriet,FWD,,3.5,,,False
+new_in_holdet,Anis Hadj Moussa,Algeriet,FWD,,2.5,,,False
+new_in_holdet,Ahmed Nadhir Benbouali,Algeriet,FWD,,2.0,,,False
+new_in_holdet,Adil Boulbina,Algeriet,FWD,,2.5,,,False
+new_in_holdet,Anthony Elanga,Sverige,FWD,,3.5,,,False
+new_in_holdet,Williot Swedberg,Sverige,FWD,,2.5,,,True
+new_in_holdet,Alexander Isak,Sverige,FWD,,5.0,,,False
+new_in_holdet,Viktor Gyökeres,Sverige,FWD,,6.0,,,False
+new_in_holdet,Benjamin Nygren,Sverige,FWD,,3.0,,,False
+new_in_holdet,Borja Iglesias,Spanien,FWD,,3.5,,,False
+new_in_holdet,Mikel Oyarzabal,Spanien,FWD,,7.5,,,False
+new_in_holdet,Gustaf Nilsson,Sverige,FWD,,2.0,,,False
+new_in_holdet,Ferran Torres,Spanien,FWD,,5.0,,,False
+new_in_holdet,Victor Munoz,Spanien,FWD,,3.0,,,False
+new_in_holdet,Nico Williams,Spanien,FWD,,4.5,,,False
+new_in_holdet,Samuel Aghehowa,Spanien,FWD,,3.0,,,True
+new_in_holdet,Lamine Yamal,Spanien,FWD,,9.0,,,False
+new_in_holdet,Noa Lang,Holland,FWD,,3.0,,,False
+new_in_holdet,Cody Gakpo,Holland,FWD,,6.5,,,False
+new_in_holdet,Donyell Malen,Holland,FWD,,4.5,,,False
+new_in_holdet,Brian Brobbey,Holland,FWD,,2.5,,,False
+new_in_holdet,Wout Weghorst,Holland,FWD,,3.0,,,False
+new_in_holdet,Memphis Depay,Holland,FWD,,4.0,,,False
+new_in_holdet,Jean-Philippe Mateta,Frankrig,FWD,,3.5,,,False
+new_in_holdet,Kylian Mbappe,Frankrig,FWD,,10.0,,,False
+new_in_holdet,Ousmane Dembele,Frankrig,FWD,,5.5,,,False
+new_in_holdet,Michael Olise,Frankrig,FWD,,7.0,,,False
+new_in_holdet,Rayan Cherki,Frankrig,FWD,,4.0,,,False
+new_in_holdet,Marcus Thuram,Frankrig,FWD,,5.0,,,False
+new_in_holdet,Desire Doue,Frankrig,FWD,,4.0,,,False
+new_in_holdet,Maghnes Akliouche,Frankrig,FWD,,3.5,,,False
+new_in_holdet,Hugo Ekitike,Frankrig,FWD,,6.0,,,True
+new_in_holdet,Randal Kolo Muani,Frankrig,FWD,,4.5,,,True
+new_in_holdet,Deniz Undav,Tyskland,FWD,,3.5,,,False
+new_in_holdet,Maximilian Beier,Tyskland,FWD,,2.5,,,False
+new_in_holdet,Nick Woltemade,Tyskland,FWD,,6.0,,,False
+new_in_holdet,Kai Havertz,Tyskland,FWD,,5.5,,,False
+new_in_holdet,Andrej Kramaric,Kroatien,FWD,,5.5,,,False
+new_in_holdet,Leroy Sane,Tyskland,FWD,,5.5,,,False
+new_in_holdet,Serge Gnabry,Tyskland,FWD,,6.0,,,True
+new_in_holdet,Ivan Perisic,Kroatien,FWD,,4.5,,,False
+new_in_holdet,Petar Musa,Kroatien,FWD,,2.5,,,False
+new_in_holdet,Ante Budimir,Kroatien,FWD,,3.5,,,False
+new_in_holdet,Raul Florucz,Østrig,FWD,,2.0,,,True
+new_in_holdet,Marco Grüll,Østrig,FWD,,2.0,,,True
+new_in_holdet,Igor Matanovic,Kroatien,FWD,,2.5,,,False
+new_in_holdet,Marco Pasalic,Kroatien,FWD,,3.0,,,False
+new_in_holdet,Sasa Kalajdzic,Østrig,FWD,,2.5,,,False
+new_in_holdet,Michael Gregoritsch,Østrig,FWD,,3.5,,,False
+new_in_holdet,Marko Arnautovic,Østrig,FWD,,4.5,,,False
+new_in_holdet,Yunus Akgün,Tyrkiet,FWD,,2.5,,,False
+new_in_holdet,Can Uzun,Tyrkiet,FWD,,3.5,,,False
+new_in_holdet,Baris Alper Yilmaz,Tyrkiet,FWD,,3.0,,,False
+new_in_holdet,Deniz Gül,Tyrkiet,FWD,,2.5,,,False
+new_in_holdet,Rafael Leão,Portugal,FWD,,5.5,,,False
+new_in_holdet,Goncalo Ramos,Portugal,FWD,,5.0,,,False
+new_in_holdet,Francisco Trincao,Portugal,FWD,,4.0,,,False
+new_in_holdet,Francisco Conceicao,Portugal,FWD,,5.5,,,False
+new_in_holdet,João Felix,Portugal,FWD,,4.5,,,False
+new_in_holdet,Pedro Neto,Portugal,FWD,,5.0,,,False
+new_in_holdet,Goncalo Guedes,Portugal,FWD,,2.5,,,False
+new_in_holdet,Cristiano Ronaldo,Portugal,FWD,,7.0,,,False
+new_in_holdet,Tomas Chory,Tjekkiet,FWD,,3.0,,,False
+new_in_holdet,Patrik Schick,Tjekkiet,FWD,,4.5,,,False
+new_in_holdet,Jan Kliment,Tjekkiet,FWD,,2.0,,,True
+new_in_holdet,Mojmir Chytil,Tjekkiet,FWD,,2.5,,,False
+new_in_holdet,Jan Kuchta,Tjekkiet,FWD,,2.5,,,False
+new_in_holdet,Adam Hlozek,Tjekkiet,FWD,,2.5,,,False
+new_in_holdet,Joel Monteiro,Schweiz,FWD,,2.5,,,True
+new_in_holdet,Dan Ndoye,Schweiz,FWD,,4.0,,,False
+new_in_holdet,Mohamed Zeki Amdouni,Schweiz,FWD,,3.5,,,False
+new_in_holdet,Christian Fassnacht,Schweiz,FWD,,3.0,,,False
+new_in_holdet,Ruben Vargas,Schweiz,FWD,,3.5,,,False
+new_in_holdet,Andi Zeqiri,Schweiz,FWD,,2.0,,,True
+new_in_holdet,Cedric Itten,Schweiz,FWD,,2.0,,,False
+new_in_holdet,Breel Embolo,Schweiz,FWD,,5.0,,,False
+missing_from_holdet,Nico Elvedi,Schweiz,DEF,3.0,,,False,
+missing_from_holdet,Silvan Widmer,Schweiz,DEF,3.0,,,False,
+missing_from_holdet,Ricardo Rodriguez,Schweiz,DEF,3.0,,,False,
+missing_from_holdet,Eray Cömert,Schweiz,DEF,2.0,,,False,
+missing_from_holdet,Manuel Akanji,Schweiz,DEF,3.5,,,False,
+missing_from_holdet,Becir Omeragic,Schweiz,DEF,2.0,,,True,
+missing_from_holdet,Cedric Zesiger,Schweiz,DEF,2.0,,,True,
+missing_from_holdet,Aurele Amenda,Schweiz,DEF,2.5,,,False,
+missing_from_holdet,Luca Jaquez,Schweiz,DEF,2.0,,,False,
+missing_from_holdet,Isaac Schmidt,Schweiz,DEF,2.0,,,True,
+missing_from_holdet,Miro Muheim,Schweiz,DEF,2.5,,,False,
+missing_from_holdet,Adrian Bajrami,Schweiz,DEF,2.0,,,True,
+missing_from_holdet,Lucas Blondel,Schweiz,DEF,2.0,,,True,
+missing_from_holdet,Robin Hranac,Tjekkiet,DEF,2.5,,,False,
+missing_from_holdet,Ladislav Krejci,Tjekkiet,DEF,3.0,,,False,
+missing_from_holdet,Stepan Chaloupek,Tjekkiet,DEF,2.0,,,False,
+missing_from_holdet,Martin Vitik,Tjekkiet,DEF,2.5,,,True,
+missing_from_holdet,David Jurasek,Tjekkiet,DEF,2.0,,,False,
+missing_from_holdet,David Zima,Tjekkiet,DEF,2.0,,,False,
+missing_from_holdet,Jaroslav Zeleny,Tjekkiet,DEF,2.5,,,False,
+missing_from_holdet,Tomas Holes,Tjekkiet,DEF,2.0,,,False,
+missing_from_holdet,Vladimir Coufal,Tjekkiet,DEF,3.0,,,False,
+missing_from_holdet,João Cancelo,Portugal,DEF,5.0,,,False,
+missing_from_holdet,Nelson Semedo,Portugal,DEF,4.0,,,False,
+missing_from_holdet,Diogo Dalot,Portugal,DEF,4.0,,,False,
+missing_from_holdet,Nuno Tavares,Portugal,DEF,3.5,,,True,
+missing_from_holdet,Ruben Dias,Portugal,DEF,4.0,,,False,
+missing_from_holdet,Nuno Mendes,Portugal,DEF,4.5,,,False,
+missing_from_holdet,Goncalo Inacio,Portugal,DEF,4.0,,,False,
+missing_from_holdet,Tomas Araujo,Portugal,DEF,3.5,,,False,
+missing_from_holdet,Antonio Silva,Portugal,DEF,3.5,,,True,
+missing_from_holdet,Renato Veiga,Portugal,DEF,3.5,,,False,
+missing_from_holdet,Mustafa Eskihellac,Tyrkiet,DEF,2.0,,,True,
+missing_from_holdet,Mert Müldür,Tyrkiet,DEF,3.0,,,False,
+missing_from_holdet,Ferdi Kadioglu,Tyrkiet,DEF,3.5,,,False,
+missing_from_holdet,Samet Akaydin,Tyrkiet,DEF,2.5,,,False,
+missing_from_holdet,Abdulkerim Bardakci,Tyrkiet,DEF,3.0,,,False,
+missing_from_holdet,Evren Eren Elmali,Tyrkiet,DEF,2.0,,,False,
+missing_from_holdet,Zeki Celik,Tyrkiet,DEF,2.5,,,False,
+missing_from_holdet,Merih Demiral,Tyrkiet,DEF,3.0,,,False,
+missing_from_holdet,Ozan Kabak,Tyrkiet,DEF,2.5,,,False,
+missing_from_holdet,Caglar Soyuncu,Tyrkiet,DEF,2.5,,,False,
+missing_from_holdet,David Alaba,Østrig,DEF,3.0,,,False,
+missing_from_holdet,Marco Friedl,Østrig,DEF,2.0,,,False,
+missing_from_holdet,Philipp Lienhart,Østrig,DEF,3.0,,,False,
+missing_from_holdet,Kevin Danso,Østrig,DEF,2.5,,,False,
+missing_from_holdet,Stefan Posch,Østrig,DEF,3.0,,,False,
+missing_from_holdet,Phillipp Mwene,Østrig,DEF,2.5,,,False,
+missing_from_holdet,Maximilian Wöber,Østrig,DEF,2.5,,,True,
+missing_from_holdet,Leopold Querfeld,Østrig,DEF,2.0,,,True,
+missing_from_holdet,David Affengruber,Østrig,DEF,2.5,,,False,
+missing_from_holdet,Alexander Prass,Østrig,DEF,2.5,,,False,
+missing_from_holdet,Michael Svoboda,Østrig,DEF,2.5,,,False,
+missing_from_holdet,Josip Sutalo,Kroatien,DEF,3.0,,,False,
+missing_from_holdet,Kristijan Jakic,Kroatien,DEF,3.5,,,False,
+missing_from_holdet,Martin Erlic,Kroatien,DEF,3.0,,,False,
+missing_from_holdet,Josip Stanisic,Kroatien,DEF,3.5,,,False,
+missing_from_holdet,Luka Vuskovic,Kroatien,DEF,2.0,,,False,
+missing_from_holdet,Ivan Smolcic,Kroatien,DEF,2.0,,,True,
+missing_from_holdet,Josko Gvardiol,Kroatien,DEF,3.5,,,False,
+missing_from_holdet,Marin Pongracic,Kroatien,DEF,2.5,,,False,
+missing_from_holdet,Duje Caleta-Car,Kroatien,DEF,3.0,,,False,
+missing_from_holdet,Antonio Rüdiger,Tyskland,DEF,4.5,,,False,
+missing_from_holdet,Jonathan Tah,Tyskland,DEF,4.5,,,False,
+missing_from_holdet,Maximilian Mittelstädt,Tyskland,DEF,3.5,,,True,
+missing_from_holdet,Waldemar Anton,Tyskland,DEF,3.5,,,False,
+missing_from_holdet,Robin Koch,Tyskland,DEF,3.5,,,True,
+missing_from_holdet,Nico Schlotterbeck,Tyskland,DEF,4.0,,,False,
+missing_from_holdet,Malick Thiaw,Tyskland,DEF,3.0,,,False,
+missing_from_holdet,David Raum,Tyskland,DEF,4.5,,,False,
+missing_from_holdet,Nathaniel Brown,Tyskland,DEF,2.5,,,False,
+missing_from_holdet,Malo Gusto,Frankrig,DEF,4.0,,,False,
+missing_from_holdet,Pierre Kalulu,Frankrig,DEF,3.0,,,True,
+missing_from_holdet,Maxence Lacroix,Frankrig,DEF,3.0,,,False,
+missing_from_holdet,Jules Kounde,Frankrig,DEF,3.5,,,False,
+missing_from_holdet,William Saliba,Frankrig,DEF,4.5,,,False,
+missing_from_holdet,Dayot Upamecano,Frankrig,DEF,4.0,,,False,
+missing_from_holdet,Ibrahima Konate,Frankrig,DEF,3.0,,,False,
+missing_from_holdet,Theo Hernandez,Frankrig,DEF,4.5,,,False,
+missing_from_holdet,Lucas Hernandez,Frankrig,DEF,3.0,,,False,
+missing_from_holdet,Lucas Digne,Frankrig,DEF,3.5,,,False,
+missing_from_holdet,Stefan de Vrij,Holland,DEF,3.0,,,True,
+missing_from_holdet,Nathan Ake,Holland,DEF,3.5,,,False,
+missing_from_holdet,Virgil van Dijk,Holland,DEF,5.0,,,False,
+missing_from_holdet,Denzel Dumfries,Holland,DEF,5.0,,,False,
+missing_from_holdet,Jurrien Timber,Holland,DEF,2.5,,,True,
+missing_from_holdet,Jeremie Frimpong,Holland,DEF,4.0,,,True,
+missing_from_holdet,Jorrel Hato,Holland,DEF,2.5,,,False,
+missing_from_holdet,Jan Paul van Hecke,Holland,DEF,3.0,,,False,
+missing_from_holdet,Micky van de Ven,Holland,DEF,4.0,,,False,
+missing_from_holdet,Marc Pubill,Spanien,DEF,3.0,,,False,
+missing_from_holdet,Dean Donny Huijsen,Spanien,DEF,4.0,,,True,
+missing_from_holdet,Pau Cubarsi,Spanien,DEF,4.0,,,False,
+missing_from_holdet,Eric Garcia,Spanien,DEF,3.0,,,False,
+missing_from_holdet,Robin Le Normand,Spanien,DEF,4.5,,,True,
+missing_from_holdet,Pedro Porro,Spanien,DEF,4.5,,,False,
+missing_from_holdet,Marc Cucurella,Spanien,DEF,4.5,,,False,
+missing_from_holdet,Daniel Vivian,Spanien,DEF,3.5,,,True,
+missing_from_holdet,Alejandro 'Alex' Grimaldo,Spanien,DEF,4.0,,,False,
+missing_from_holdet,Aymeric Laporte,Spanien,DEF,4.5,,,False,
+missing_from_holdet,Victor Lindelöf,Sverige,DEF,3.0,,,False,
+missing_from_holdet,Eric Smith,Sverige,DEF,2.0,,,False,
+missing_from_holdet,Carl Starfelt,Sverige,DEF,2.5,,,False,
+missing_from_holdet,Gabriel Gudmundsson,Sverige,DEF,3.0,,,False,
+missing_from_holdet,Emil Holm,Sverige,DEF,2.5,,,True,
+missing_from_holdet,Hjalmar Ekdal,Sverige,DEF,2.0,,,False,
+missing_from_holdet,Daniel Svensson,Sverige,DEF,3.0,,,False,
+missing_from_holdet,Isak Hien,Sverige,DEF,2.5,,,False,
+missing_from_holdet,Victor Eriksson,Sverige,DEF,2.0,,,True,
+missing_from_holdet,Gustaf Lagerbielke,Sverige,DEF,3.0,,,False,
+missing_from_holdet,Elliot Stroud,Sverige,DEF,2.0,,,False,
+missing_from_holdet,Achref Abada,Algeriet,DEF,2.0,,,False,
+missing_from_holdet,Sohaib Nair,Algeriet,DEF,2.0,,,True,
+missing_from_holdet,Mohamed Amine Tougai,Algeriet,DEF,2.0,,,False,
+missing_from_holdet,Youcef Atal,Algeriet,DEF,2.5,,,True,
+missing_from_holdet,Jaouen Hadjam,Algeriet,DEF,2.5,,,False,
+missing_from_holdet,Samir Chergui,Algeriet,DEF,2.0,,,False,
+missing_from_holdet,Zineddine Belaid,Algeriet,DEF,2.5,,,False,
+missing_from_holdet,Mehdi Dorval,Algeriet,DEF,2.0,,,True,
+missing_from_holdet,Rayan Ait-Nouri,Algeriet,DEF,3.0,,,False,
+missing_from_holdet,Ramy Bensebaini,Algeriet,DEF,3.0,,,False,
+missing_from_holdet,Rafik Belghali,Algeriet,DEF,2.5,,,False,
+missing_from_holdet,Aissa Mandi,Algeriet,DEF,3.0,,,False,
+missing_from_holdet,Nicolas Otamendi,Argentina,DEF,4.5,,,False,
+missing_from_holdet,Nicolas Tagliafico,Argentina,DEF,4.0,,,False,
+missing_from_holdet,Leonardo Balerdi,Argentina,DEF,4.0,,,True,
+missing_from_holdet,Lisandro Martinez,Argentina,DEF,3.0,,,False,
+missing_from_holdet,Cristian Romero,Argentina,DEF,4.0,,,False,
+missing_from_holdet,Julio Soler,Argentina,DEF,3.0,,,True,
+missing_from_holdet,Facundo Medina,Argentina,DEF,2.5,,,False,
+missing_from_holdet,Lucas Herrington,Australien,DEF,2.0,,,False,
+missing_from_holdet,Gonzalo Montiel,Argentina,DEF,3.5,,,False,
+missing_from_holdet,Nahuel Molina,Argentina,DEF,4.0,,,False,
+missing_from_holdet,Jacob Italiano,Australien,DEF,2.0,,,False,
+missing_from_holdet,Jason Geria,Australien,DEF,2.5,,,False,
+missing_from_holdet,Kai Trewin,Australien,DEF,2.0,,,False,
+missing_from_holdet,Kye Rowles,Australien,DEF,2.5,,,True,
+missing_from_holdet,Cameron Burgess,Australien,DEF,3.0,,,False,
+missing_from_holdet,Alessandro Circati,Australien,DEF,2.5,,,False,
+missing_from_holdet,Jordan Bos,Australien,DEF,3.0,,,False,
+missing_from_holdet,Callum Elder,Australien,DEF,2.0,,,True,
+missing_from_holdet,Harry Souttar,Australien,DEF,2.5,,,False,
+missing_from_holdet,Aziz Behich,Australien,DEF,2.5,,,False,
+missing_from_holdet,Milos Degenek,Australien,DEF,2.5,,,False,
+missing_from_holdet,Douglas Santos,Brasilien,DEF,2.5,,,False,
+missing_from_holdet,Marquinhos,Brasilien,DEF,5.0,,,False,
+missing_from_holdet,Alex Sandro,Brasilien,DEF,2.5,,,False,
+missing_from_holdet,Danilo Luiz da Silva,Brasilien,DEF,2.5,,,False,
+missing_from_holdet,Eder Militão,Brasilien,DEF,3.0,,,True,
+missing_from_holdet,Gabriel Magalhaes,Brasilien,DEF,4.5,,,False,
+missing_from_holdet,Roger Ibanez,Brasilien,DEF,2.5,,,False,
+missing_from_holdet,Wesley Franca,Brasilien,DEF,3.5,,,True,
+missing_from_holdet,Bremer,Brasilien,DEF,3.0,,,False,
+missing_from_holdet,Leo Pereira,Brasilien,DEF,3.0,,,False,
+missing_from_holdet,Clement Akpa,Elfenbenskysten,DEF,2.0,,,True,
+missing_from_holdet,Christopher Operi,Elfenbenskysten,DEF,2.0,,,False,
+missing_from_holdet,Ghislain Konan,Elfenbenskysten,DEF,2.5,,,False,
+missing_from_holdet,Guela Doue,Elfenbenskysten,DEF,3.0,,,False,
+missing_from_holdet,Wilfried Stephane Singo,Elfenbenskysten,DEF,2.5,,,False,
+missing_from_holdet,Ousmane Diomande,Elfenbenskysten,DEF,2.5,,,False,
+missing_from_holdet,Emmanuel Agbadou,Elfenbenskysten,DEF,2.5,,,False,
+missing_from_holdet,Odilon Kossounou,Elfenbenskysten,DEF,2.5,,,False,
+missing_from_holdet,Evan N'Dicka,Elfenbenskysten,DEF,2.5,,,False,
+missing_from_holdet,Trent Alexander-Arnold,England,DEF,3.5,,,True,
+missing_from_holdet,John Stones,England,DEF,4.0,,,False,
+missing_from_holdet,Dan Burn,England,DEF,3.5,,,False,
+missing_from_holdet,Harry Maguire,England,DEF,3.0,,,True,
+missing_from_holdet,Marc Guehi,England,DEF,4.5,,,False,
+missing_from_holdet,Reece James,England,DEF,3.5,,,False,
+missing_from_holdet,Ezri Konsa,England,DEF,4.5,,,False,
+missing_from_holdet,Nico O'Reilly,England,DEF,4.0,,,False,
+missing_from_holdet,Djed Spence,England,DEF,2.5,,,False,
+missing_from_holdet,Jarell Quansah,England,DEF,2.5,,,False,
+missing_from_holdet,Lewis Hall,England,DEF,3.5,,,True,
+missing_from_holdet,Valentino Livramento,England,DEF,3.0,,,False,
+missing_from_holdet,Jerome Opoku,Ghana,DEF,2.5,,,False,
+missing_from_holdet,Patric Pfeiffer,Ghana,DEF,2.0,,,True,
+missing_from_holdet,Kojo Peprah Oppong,Ghana,DEF,2.0,,,False,
+missing_from_holdet,Alexander Djiku,Ghana,DEF,3.0,,,True,
+missing_from_holdet,Alidu Seidu,Ghana,DEF,2.5,,,False,
+missing_from_holdet,Derrick Köhn,Ghana,DEF,2.0,,,True,
+missing_from_holdet,Caleb Yirenkyi,Ghana,DEF,3.0,,,False,
+missing_from_holdet,Gideon Mensah,Ghana,DEF,3.0,,,False,
+missing_from_holdet,Derrick Luckassen,Ghana,DEF,2.0,,,False,
+missing_from_holdet,Abdul Rahman Baba,Ghana,DEF,2.5,,,False,
+missing_from_holdet,Abdul Mumin,Ghana,DEF,2.0,,,False,
+missing_from_holdet,Jonas Adjetey,Ghana,DEF,2.5,,,False,
+missing_from_holdet,Marvin Senaya,Ghana,DEF,2.0,,,False,
+missing_from_holdet,Yuto Nagatomo,Japan,DEF,2.0,,,False,
+missing_from_holdet,Ko Itakura,Japan,DEF,2.0,,,False,
+missing_from_holdet,Takehiro Tomiyasu,Japan,DEF,2.0,,,False,
+missing_from_holdet,Ayumu Seko,Japan,DEF,2.5,,,False,
+missing_from_holdet,Tomoya Ando,Japan,DEF,2.0,,,True,
+missing_from_holdet,Henry Mochizuki,Japan,DEF,2.0,,,True,
+missing_from_holdet,Tsuyoshi Watanabe,Japan,DEF,3.0,,,False,
+missing_from_holdet,Yukinari Sugawara,Japan,DEF,3.5,,,False,
+missing_from_holdet,Daiki Hashioka,Japan,DEF,2.0,,,True,
+missing_from_holdet,Junnosuke Suzuki,Japan,DEF,2.5,,,False,
+missing_from_holdet,Shogo Taniguchi,Japan,DEF,3.0,,,False,
+missing_from_holdet,Hiroki Ito,Japan,DEF,2.5,,,False,
+missing_from_holdet,Min-jae Kim,Sydkorea,DEF,3.5,,,False,
+missing_from_holdet,Moon-Hwan Kim,Sydkorea,DEF,2.5,,,False,
+missing_from_holdet,Yu-Min Cho,Sydkorea,DEF,2.5,,,True,
+missing_from_holdet,Han-beom Lee,Sydkorea,DEF,2.0,,,False,
+missing_from_holdet,Tae-Seok Lee,Sydkorea,DEF,2.5,,,False,
+missing_from_holdet,Tae-Hyeon Kim,Sydkorea,DEF,2.0,,,False,
+missing_from_holdet,Ju-sung Kim,Sydkorea,DEF,2.0,,,True,
+missing_from_holdet,Young-woo Seol,Sydkorea,DEF,3.0,,,False,
+missing_from_holdet,Gi-hyuk Lee,Sydkorea,DEF,2.0,,,False,
+missing_from_holdet,Wi-je Cho,Sydkorea,DEF,2.0,,,False,
+missing_from_holdet,Jesus Angulo,Mexico,DEF,2.0,,,True,
+missing_from_holdet,Everardo Lopez,Mexico,DEF,2.5,,,True,
+missing_from_holdet,Cesar Montes,Mexico,DEF,3.0,,,False,
+missing_from_holdet,Jesus Gallardo,Mexico,DEF,3.0,,,False,
+missing_from_holdet,Israel Reyes,Mexico,DEF,3.0,,,False,
+missing_from_holdet,Mateo Chavez,Mexico,DEF,2.5,,,False,
+missing_from_holdet,Richard Ledezma,Mexico,DEF,2.0,,,True,
+missing_from_holdet,Jorge Sanchez,Mexico,DEF,2.5,,,False,
+missing_from_holdet,Johan Vasquez,Mexico,DEF,3.0,,,False,
+missing_from_holdet,Francis de Vries,New Zealand,DEF,2.5,,,False,
+missing_from_holdet,Finn Surman,New Zealand,DEF,2.0,,,False,
+missing_from_holdet,Michael Boxall,New Zealand,DEF,2.0,,,False,
+missing_from_holdet,Lukas Kelly-Heald,New Zealand,DEF,2.0,,,True,
+missing_from_holdet,James McGarry,New Zealand,DEF,2.0,,,True,
+missing_from_holdet,Tim Payne,New Zealand,DEF,2.5,,,False,
+missing_from_holdet,Callan Elliot,New Zealand,DEF,2.0,,,False,
+missing_from_holdet,Liberato Cacace,New Zealand,DEF,2.5,,,False,
+missing_from_holdet,Tyler Bindon,New Zealand,DEF,2.5,,,False,
+missing_from_holdet,Tommy Smith,New Zealand,DEF,2.0,,,False,
+missing_from_holdet,Nando Pijnaker,New Zealand,DEF,2.0,,,False,
+missing_from_holdet,Bill Tuiloma,New Zealand,DEF,2.0,,,True,
+missing_from_holdet,Jose Canale,Paraguay,DEF,2.0,,,False,
+missing_from_holdet,Blas Riveros,Paraguay,DEF,2.0,,,True,
+missing_from_holdet,Omar Alderete,Paraguay,DEF,3.5,,,False,
+missing_from_holdet,Junior Alonso,Paraguay,DEF,3.0,,,False,
+missing_from_holdet,Fabian Balbuena,Paraguay,DEF,2.5,,,False,
+missing_from_holdet,Alexis Duarte,Paraguay,DEF,2.0,,,True,
+missing_from_holdet,Gustavo Velazquez,Paraguay,DEF,2.5,,,False,
+missing_from_holdet,Gonzalo Agustin Sandez,Paraguay,DEF,2.0,,,True,
+missing_from_holdet,Juan Jose Caceres,Paraguay,DEF,3.0,,,False,
+missing_from_holdet,Alan Benitez,Paraguay,DEF,2.5,,,True,
+missing_from_holdet,Alexandro Maidana,Paraguay,DEF,2.0,,,False,
+missing_from_holdet,Gustavo Gomez,Paraguay,DEF,3.0,,,False,
+missing_from_holdet,Khuliso Mudau,Sydafrika,DEF,3.0,,,False,
+missing_from_holdet,Samukele Kabini,Sydafrika,DEF,2.0,,,False,
+missing_from_holdet,Mbekezeli Mbokazi,Sydafrika,DEF,2.5,,,False,
+missing_from_holdet,Nkosinathi Sibisi,Sydafrika,DEF,2.5,,,False,
+missing_from_holdet,Aubrey Modiba,Sydafrika,DEF,3.0,,,False,
+missing_from_holdet,Olwethu Makhanya,Sydafrika,DEF,2.0,,,False,
+missing_from_holdet,Bradley Cross,Sydafrika,DEF,2.0,,,False,
+missing_from_holdet,Kamogelo Sebelebele,Sydafrika,DEF,2.0,,,False,
+missing_from_holdet,Ime Okon,Sydafrika,DEF,2.0,,,False,
+missing_from_holdet,Khulumani Ndamane,Sydafrika,DEF,2.0,,,False,
+missing_from_holdet,Thabang Matuludi,Sydafrika,DEF,2.0,,,False,
+missing_from_holdet,Mathias Olivera,Uruguay,DEF,4.0,,,False,
+missing_from_holdet,Jose Maria Gimenez,Uruguay,DEF,4.5,,,False,
+missing_from_holdet,Martin Caceres,Uruguay,DEF,3.0,,,True,
+missing_from_holdet,Guillermo Varela,Uruguay,DEF,3.0,,,False,
+missing_from_holdet,Ronald Araujo,Uruguay,DEF,4.5,,,False,
+missing_from_holdet,Sebastian Caceres,Uruguay,DEF,2.5,,,False,
+missing_from_holdet,Jose Luis Rodriguez Bebanz,Uruguay,DEF,3.0,,,True,
+missing_from_holdet,Santiago Bueno,Uruguay,DEF,3.5,,,False,
+missing_from_holdet,Matias Viña,Uruguay,DEF,4.0,,,False,
+missing_from_holdet,Willer Ditta,Colombia,DEF,2.5,,,False,
+missing_from_holdet,Deiver Machado,Colombia,DEF,3.0,,,False,
+missing_from_holdet,Yerry Mina,Colombia,DEF,3.0,,,False,
+missing_from_holdet,Davinson Sanchez,Colombia,DEF,3.5,,,False,
+missing_from_holdet,Johan Mojica,Colombia,DEF,3.5,,,False,
+missing_from_holdet,Juan Cabal,Colombia,DEF,3.0,,,True,
+missing_from_holdet,Yerson Mosquera,Colombia,DEF,2.5,,,True,
+missing_from_holdet,Daniel Muñoz,Colombia,DEF,4.0,,,False,
+missing_from_holdet,Jhon Lucumi,Colombia,DEF,3.5,,,False,
+missing_from_holdet,Santiago Arias,Colombia,DEF,3.5,,,False,
+missing_from_holdet,Piero Hincapie,Ecuador,DEF,3.5,,,False,
+missing_from_holdet,Joel Ordonez,Ecuador,DEF,2.5,,,False,
+missing_from_holdet,Angelo Preciado,Ecuador,DEF,3.0,,,False,
+missing_from_holdet,Felix 'Feliz' Torres,Ecuador,DEF,3.0,,,False,
+missing_from_holdet,Jackson Porozo,Ecuador,DEF,2.0,,,False,
+missing_from_holdet,Jose Hurtado,Ecuador,DEF,2.5,,,True,
+missing_from_holdet,Willian Pacho,Ecuador,DEF,3.0,,,False,
+missing_from_holdet,Pervis Estupinan,Ecuador,DEF,3.5,,,False,
+missing_from_holdet,Nihad Mujakic,Bosnien-Hercegovina,DEF,2.5,,,False,
+missing_from_holdet,Nidal Celik,Bosnien-Hercegovina,DEF,2.0,,,False,
+missing_from_holdet,Dennis Hadzikadunic,Bosnien-Hercegovina,DEF,2.5,,,False,
+missing_from_holdet,Sead Kolasinac,Bosnien-Hercegovina,DEF,2.5,,,False,
+missing_from_holdet,Nikola Katic,Bosnien-Hercegovina,DEF,3.0,,,False,
+missing_from_holdet,Stjepan Radeljic,Bosnien-Hercegovina,DEF,2.5,,,False,
+missing_from_holdet,Tarik Muharemovic,Bosnien-Hercegovina,DEF,3.0,,,False,
+missing_from_holdet,Amar Dedic,Bosnien-Hercegovina,DEF,3.0,,,False,
+missing_from_holdet,Ali Nemati,Iran,DEF,2.5,,,False,
+missing_from_holdet,Hossein Abarghouei,Iran,DEF,2.0,,,True,
+missing_from_holdet,Danial Esmaeilifar,Iran,DEF,2.5,,,True,
+missing_from_holdet,Hossein Kanaani,Iran,DEF,2.5,,,False,
+missing_from_holdet,Saleh Hardani,Iran,DEF,2.5,,,False,
+missing_from_holdet,Shojae Khalilzadeh,Iran,DEF,2.5,,,False,
+missing_from_holdet,Abolfazl Jalali,Iran,DEF,2.0,,,True,
+missing_from_holdet,Milad Mohammadi,Iran,DEF,2.5,,,False,
+missing_from_holdet,Ramin Rezaeian,Iran,DEF,2.5,,,False,
+missing_from_holdet,Ehsan Hajsafi,Iran,DEF,2.0,,,False,
+missing_from_holdet,Daniyal Eiri,Iran,DEF,2.0,,,False,
+missing_from_holdet,Arya Yousefi,Iran,DEF,2.0,,,False,
+missing_from_holdet,Nathan Ngoy,Belgien,DEF,2.0,,,False,
+missing_from_holdet,Thomas Meunier,Belgien,DEF,3.5,,,False,
+missing_from_holdet,Brandon Mechele,Belgien,DEF,2.5,,,False,
+missing_from_holdet,Timothy Castagne,Belgien,DEF,3.5,,,False,
+missing_from_holdet,Maxim De Cuyper,Belgien,DEF,4.0,,,False,
+missing_from_holdet,Koni de Winter,Belgien,DEF,3.0,,,False,
+missing_from_holdet,Zeno Debast,Belgien,DEF,3.5,,,False,
+missing_from_holdet,Arthur Theate,Belgien,DEF,3.0,,,False,
+missing_from_holdet,Joaquin Seys,Belgien,DEF,2.5,,,False,
+missing_from_holdet,Rebin Sulaka,Irak,DEF,2.0,,,False,
+missing_from_holdet,Hussein Ali,Irak,DEF,3.0,,,False,
+missing_from_holdet,Frans Dhia Putros,Irak,DEF,2.0,,,False,
+missing_from_holdet,Zaid Tahseen,Irak,DEF,2.5,,,False,
+missing_from_holdet,Ahmed Hasan Maknzi,Irak,DEF,2.0,,,True,
+missing_from_holdet,Merchas Doski,Irak,DEF,2.5,,,False,
+missing_from_holdet,Akam Hashem,Irak,DEF,2.0,,,False,
+missing_from_holdet,Manaf Younis,Irak,DEF,2.0,,,False,
+missing_from_holdet,Mustafa Saadoon,Irak,DEF,2.0,,,False,
+missing_from_holdet,Ahmed Yahya,Irak,DEF,2.0,,,False,
+missing_from_holdet,Roderick Miller,Panama,DEF,2.0,,,False,
+missing_from_holdet,Jorge Gutierrez,Panama,DEF,2.5,,,False,
+missing_from_holdet,Jose Cordoba,Panama,DEF,2.5,,,False,
+missing_from_holdet,Jiovany Ramos,Panama,DEF,2.0,,,False,
+missing_from_holdet,Edgardo Farina,Panama,DEF,2.0,,,False,
+missing_from_holdet,Eric Davis,Panama,DEF,3.0,,,False,
+missing_from_holdet,Fidel Escobar,Panama,DEF,2.5,,,False,
+missing_from_holdet,Michael Amir Murillo,Panama,DEF,2.5,,,False,
+missing_from_holdet,Andres Andrade,Panama,DEF,2.5,,,False,
+missing_from_holdet,Cesar Blackman,Panama,DEF,2.5,,,False,
+missing_from_holdet,Martin Krug,Panama,DEF,2.0,,,True,
+missing_from_holdet,Karim Hafez,Egypten,DEF,2.0,,,False,
+missing_from_holdet,Mohamed Abdelmonem,Egypten,DEF,2.5,,,False,
+missing_from_holdet,Hossam Abdelmaguid,Egypten,DEF,2.5,,,False,
+missing_from_holdet,Yasser Ibrahim,Egypten,DEF,2.5,,,False,
+missing_from_holdet,Khaled Sobhi,Egypten,DEF,2.0,,,True,
+missing_from_holdet,Mohamed Hany,Egypten,DEF,2.5,,,False,
+missing_from_holdet,Rami Rabia,Egypten,DEF,3.0,,,False,
+missing_from_holdet,Ahmed Nabil Kouka,Egypten,DEF,2.0,,,True,
+missing_from_holdet,Tarek Alaa,Egypten,DEF,2.0,,,False,
+missing_from_holdet,Ahmed Fatouh,Egypten,DEF,2.5,,,False,
+missing_from_holdet,Redouane Halhal,Marokko,DEF,2.0,,,False,
+missing_from_holdet,Abdelhamid Ait Boudlal,Marokko,DEF,2.5,,,True,
+missing_from_holdet,Zakaria El Ouahdi,Marokko,DEF,2.0,,,False,
+missing_from_holdet,Jawad El Yamiq,Marokko,DEF,2.5,,,True,
+missing_from_holdet,Nayef Aguerd,Marokko,DEF,3.0,,,False,
+missing_from_holdet,Achraf Hakimi,Marokko,DEF,4.0,,,False,
+missing_from_holdet,Chadi Riad,Marokko,DEF,2.0,,,False,
+missing_from_holdet,Souffian El Karouani,Marokko,DEF,2.0,,,True,
+missing_from_holdet,Youssef Belammari,Marokko,DEF,2.0,,,False,
+missing_from_holdet,Anass Salah-Eddine,Marokko,DEF,2.5,,,False,
+missing_from_holdet,Issa Diop,Marokko,DEF,2.5,,,False,
+missing_from_holdet,Noussair Mazraoui,Marokko,DEF,3.5,,,False,
+missing_from_holdet,Mamadou Sarr,Senegal,DEF,2.5,,,False,
+missing_from_holdet,El Hadji Malick Diouf,Senegal,DEF,3.5,,,False,
+missing_from_holdet,Abdoulaye Seck,Senegal,DEF,3.0,,,False,
+missing_from_holdet,Moussa Niakhate,Senegal,DEF,3.0,,,False,
+missing_from_holdet,Ismail Jakobs,Senegal,DEF,2.5,,,False,
+missing_from_holdet,Youssouf Sabaly,Senegal,DEF,2.0,,,True,
+missing_from_holdet,Kalidou Koulibaly,Senegal,DEF,2.5,,,False,
+missing_from_holdet,Pape Abou Cisse,Senegal,DEF,2.0,,,True,
+missing_from_holdet,Abdou Diallo,Senegal,DEF,2.0,,,True,
+missing_from_holdet,Ilay Camara,Senegal,DEF,2.0,,,True,
+missing_from_holdet,Antoine Mendy,Senegal,DEF,2.5,,,False,
+missing_from_holdet,Moustapha Mbow,Senegal,DEF,2.0,,,True,
+missing_from_holdet,Mohamed Amine Ben Hamida,Tunesien,DEF,2.5,,,False,
+missing_from_holdet,Adem Arous,Tunesien,DEF,2.0,,,False,
+missing_from_holdet,Ghaith Zaalouni,Tunesien,DEF,2.0,,,True,
+missing_from_holdet,Raed Chikhaoui,Tunesien,DEF,2.0,,,False,
+missing_from_holdet,Omar Rekik,Tunesien,DEF,2.0,,,False,
+missing_from_holdet,Ali Maaloul,Tunesien,DEF,2.0,,,True,
+missing_from_holdet,Dylan Bronn,Tunesien,DEF,2.5,,,False,
+missing_from_holdet,Yassine Meriah,Tunesien,DEF,2.5,,,True,
+missing_from_holdet,Yan Valery,Tunesien,DEF,2.5,,,False,
+missing_from_holdet,Ali Abdi,Tunesien,DEF,3.0,,,False,
+missing_from_holdet,Montassar Talbi,Tunesien,DEF,3.0,,,False,
+missing_from_holdet,Alaa Ghram,Tunesien,DEF,2.0,,,True,
+missing_from_holdet,Moutaz Neffati,Tunesien,DEF,2.0,,,False,
+missing_from_holdet,Ali Majrashi,Saudi-Arabien,DEF,2.5,,,False,
+missing_from_holdet,Nawaf Bu Washl,Saudi-Arabien,DEF,2.5,,,False,
+missing_from_holdet,Moteb Al-Harbi,Saudi-Arabien,DEF,2.0,,,False,
+missing_from_holdet,Mohammed Sulaiman,Saudi-Arabien,DEF,2.0,,,True,
+missing_from_holdet,Jehad Thakri,Saudi-Arabien,DEF,2.0,,,False,
+missing_from_holdet,Abdulelah Al-Amri,Saudi-Arabien,DEF,2.5,,,False,
+missing_from_holdet,Hassan Al Tambakti,Saudi-Arabien,DEF,2.0,,,False,
+missing_from_holdet,Saud Abdulhamid,Saudi-Arabien,DEF,3.0,,,False,
+missing_from_holdet,Ali Lajami,Saudi-Arabien,DEF,2.0,,,False,
+missing_from_holdet,Hassan Kadesh,Saudi-Arabien,DEF,2.0,,,False,
+missing_from_holdet,Mohammed Abu Al-Shamat,Saudi-Arabien,DEF,2.5,,,False,
+missing_from_holdet,Al-Hashmi Al-Hussain,Qatar,DEF,2.0,,,False,
+missing_from_holdet,Seydinaissa Laye,Qatar,DEF,2.0,,,False,
+missing_from_holdet,Lucas Mendes,Qatar,DEF,2.5,,,False,
+missing_from_holdet,Boualem Khoukhi,Qatar,DEF,2.5,,,False,
+missing_from_holdet,Pedro 'Ro-Ro' Miguel Correia,Qatar,DEF,2.5,,,False,
+missing_from_holdet,Sultan Al-Brake,Qatar,DEF,2.5,,,False,
+missing_from_holdet,Tarek Salman,Qatar,DEF,2.5,,,True,
+missing_from_holdet,Homam Al-Amin Ahmed,Qatar,DEF,2.5,,,False,
+missing_from_holdet,Ayoub Al-Oui,Qatar,DEF,2.5,,,False,
+missing_from_holdet,Ross McCrorie,Skotland,DEF,2.0,,,True,
+missing_from_holdet,John Souttar,Skotland,DEF,2.5,,,False,
+missing_from_holdet,Jack Hendry,Skotland,DEF,2.0,,,False,
+missing_from_holdet,Scott McKenna,Skotland,DEF,2.5,,,False,
+missing_from_holdet,Nathan Patterson,Skotland,DEF,2.0,,,False,
+missing_from_holdet,Aaron Hickey,Skotland,DEF,2.5,,,False,
+missing_from_holdet,Andy Robertson,Skotland,DEF,3.0,,,False,
+missing_from_holdet,Grant Hanley,Skotland,DEF,2.5,,,False,
+missing_from_holdet,Anthony Ralston,Skotland,DEF,2.5,,,False,
+missing_from_holdet,Kieran Tierney,Skotland,DEF,2.5,,,False,
+missing_from_holdet,Dominic Hyam,Skotland,DEF,2.0,,,False,
+missing_from_holdet,Moïse Bombito,Canada,DEF,2.5,,,False,
+missing_from_holdet,Ralph Priso,Canada,DEF,2.0,,,True,
+missing_from_holdet,Alphonso Davies,Canada,DEF,4.0,,,False,
+missing_from_holdet,Alfie Jones,Canada,DEF,2.0,,,False,
+missing_from_holdet,Richie Laryea,Canada,DEF,3.0,,,False,
+missing_from_holdet,Derek Cornelius,Canada,DEF,2.5,,,False,
+missing_from_holdet,Joel Waterman,Canada,DEF,2.5,,,False,
+missing_from_holdet,Alistair Johnston,Canada,DEF,3.0,,,False,
+missing_from_holdet,Kamal Miller,Canada,DEF,2.5,,,True,
+missing_from_holdet,Luc De Fougerolles,Canada,DEF,2.0,,,False,
+missing_from_holdet,Jahkeele Rutty,Canada,DEF,2.0,,,True,
+missing_from_holdet,Abdukodir Khusanov,Usbekistan,DEF,3.0,,,False,
+missing_from_holdet,Umar Eshmurodov,Usbekistan,DEF,2.5,,,False,
+missing_from_holdet,Rustam Ashurmatov,Usbekistan,DEF,2.5,,,False,
+missing_from_holdet,Abdulla Abdullaev,Usbekistan,DEF,2.0,,,False,
+missing_from_holdet,Farrukh Sayfiev,Usbekistan,DEF,2.5,,,False,
+missing_from_holdet,Khozhiakbar Alizhonov,Usbekistan,DEF,2.5,,,False,
+missing_from_holdet,Sherzod Nasrullaev,Usbekistan,DEF,2.5,,,False,
+missing_from_holdet,Dilshod Komilov,Usbekistan,DEF,2.0,,,True,
+missing_from_holdet,Behruzjon Karimov,Usbekistan,DEF,2.0,,,False,
+missing_from_holdet,Avazbek Ulmasaliyev,Usbekistan,DEF,2.0,,,False,
+missing_from_holdet,Jakhongir Urozov,Usbekistan,DEF,2.5,,,False,
+missing_from_holdet,Mukhammadrasul Abdumazhidov,Usbekistan,DEF,2.0,,,True,
+missing_from_holdet,Mukhammadkodir Khamraliev,Usbekistan,DEF,2.5,,,True,
+missing_from_holdet,Anas Badawi,Jordan,DEF,2.0,,,False,
+missing_from_holdet,Ehsan Haddad,Jordan,DEF,2.5,,,False,
+missing_from_holdet,Yazan Al-Arab,Jordan,DEF,2.5,,,False,
+missing_from_holdet,Abdallah Nasib,Jordan,DEF,2.5,,,False,
+missing_from_holdet,Saed Al-Rosan,Jordan,DEF,2.0,,,False,
+missing_from_holdet,Yousef Abu Al-Jazar,Jordan,DEF,2.0,,,True,
+missing_from_holdet,Mohammad Abualnadi,Jordan,DEF,2.5,,,False,
+missing_from_holdet,Saleem Obaid,Jordan,DEF,2.5,,,False,
+missing_from_holdet,Husam Abu Dahab,Jordan,DEF,2.0,,,False,
+missing_from_holdet,Ahmad Assaf,Jordan,DEF,2.5,,,True,
+missing_from_holdet,Diney Borges,Kap Verde,DEF,3.0,,,False,
+missing_from_holdet,Roberto Lopes,Kap Verde,DEF,2.0,,,False,
+missing_from_holdet,Wagner Pina,Kap Verde,DEF,2.5,,,False,
+missing_from_holdet,Steven Moreira,Kap Verde,DEF,2.0,,,False,
+missing_from_holdet,Sidny Lopes Cabral,Kap Verde,DEF,3.0,,,False,
+missing_from_holdet,Heri Tavares,Kap Verde,DEF,2.5,,,True,
+missing_from_holdet,Joao Paulo,Kap Verde,DEF,2.5,,,False,
+missing_from_holdet,Logan Costa,Kap Verde,DEF,2.5,,,False,
+missing_from_holdet,Stopira,Kap Verde,DEF,2.5,,,False,
+missing_from_holdet,Kelvin Pires,Kap Verde,DEF,2.0,,,False,
+missing_from_holdet,Henrik Falchener,Norge,DEF,2.0,,,False,
+missing_from_holdet,Sondre Langås,Norge,DEF,2.0,,,False,
+missing_from_holdet,Kristoffer Ajer,Norge,DEF,3.0,,,False,
+missing_from_holdet,Julian Ryerson,Norge,DEF,3.5,,,False,
+missing_from_holdet,Leo Østigård,Norge,DEF,2.5,,,False,
+missing_from_holdet,Fredrik Andre Bjørkan,Norge,DEF,2.5,,,False,
+missing_from_holdet,Marcus Holmgren Pedersen,Norge,DEF,2.0,,,False,
+missing_from_holdet,Torbjørn Heggem,Norge,DEF,2.5,,,False,
+missing_from_holdet,David Møller Wolfe,Norge,DEF,3.0,,,False,
+missing_from_holdet,Odin Bjørtuft,Norge,DEF,2.0,,,True,
+missing_from_holdet,Shurandy Sambo,Curaçao,DEF,2.0,,,False,
+missing_from_holdet,Armando Obispo,Curaçao,DEF,2.0,,,False,
+missing_from_holdet,Riechedly Bazoer,Curaçao,DEF,2.0,,,False,
+missing_from_holdet,Roshon van Eijma,Curaçao,DEF,2.5,,,False,
+missing_from_holdet,Jurien Gaari,Curaçao,DEF,2.5,,,False,
+missing_from_holdet,Sherel Floranus,Curaçao,DEF,2.5,,,False,
+missing_from_holdet,Joshua Brenet,Curaçao,DEF,2.5,,,False,
+missing_from_holdet,Livano Comenencia,Curaçao,DEF,2.5,,,False,
+missing_from_holdet,Deveron Fonville,Curaçao,DEF,2.0,,,False,
+missing_from_holdet,Keeto Thermoncy,Haiti,DEF,2.0,,,False,
+missing_from_holdet,Wilguens Paugain,Haiti,DEF,2.0,,,False,
+missing_from_holdet,Delentz Pierre,Haiti,DEF,2.0,,,True,
+missing_from_holdet,Jean-Kevin Duverne,Haiti,DEF,2.5,,,False,
+missing_from_holdet,Ricardo Ade,Haiti,DEF,2.5,,,False,
+missing_from_holdet,Carlens Arcus,Haiti,DEF,2.0,,,False,
+missing_from_holdet,Martin Experience,Haiti,DEF,2.0,,,False,
+missing_from_holdet,Duke Lacroix,Haiti,DEF,2.5,,,False,
+missing_from_holdet,Rocky Bushiri,Congo DR,DEF,2.0,,,True,
+missing_from_holdet,Hannes Delcroix,Haiti,DEF,2.5,,,False,
+missing_from_holdet,Dylan Batubinsika,Congo DR,DEF,2.5,,,False,
+missing_from_holdet,Jeremy Ngakia,Congo DR,DEF,2.5,,,True,
+missing_from_holdet,Axel Tuanzebe,Congo DR,DEF,3.0,,,False,
+missing_from_holdet,Chancel Mbemba,Congo DR,DEF,2.5,,,False,
+missing_from_holdet,Arthur Masuaku,Congo DR,DEF,2.5,,,False,
+missing_from_holdet,Aaron Tshibola,Congo DR,DEF,2.0,,,False,
+missing_from_holdet,Aaron Wan-Bissaka,Congo DR,DEF,3.0,,,False,
+missing_from_holdet,Gedeon Kalulu,Congo DR,DEF,2.5,,,False,
+missing_from_holdet,Joris Kayembe,Congo DR,DEF,2.5,,,False,
+missing_from_holdet,Steve Kapuadi,Congo DR,DEF,2.0,,,False,
+missing_from_holdet,Timothy Fayulu,Congo DR,GK,2.5,,,False,
+missing_from_holdet,Matthieu Epolo,Congo DR,GK,3.0,,,False,
+missing_from_holdet,Lionel Mpasi Nzau,Congo DR,GK,2.5,,,False,
+missing_from_holdet,Johny Placide,Haiti,GK,2.5,,,False,
+missing_from_holdet,Alexandre Pierre,Haiti,GK,2.5,,,False,
+missing_from_holdet,Josue Duverger,Haiti,GK,2.5,,,False,
+missing_from_holdet,Tyrick Bodak,Curaçao,GK,2.5,,,False,
+missing_from_holdet,Trevor Doornbusch,Curaçao,GK,2.5,,,False,
+missing_from_holdet,Egil Selvik,Norge,GK,3.5,,,False,
+missing_from_holdet,Eloy Room,Curaçao,GK,2.5,,,False,
+missing_from_holdet,Sander Tangvik,Norge,GK,3.0,,,False,
+missing_from_holdet,Ørjan Nyland,Norge,GK,4.0,,,False,
+missing_from_holdet,Viljar Myhra,Norge,GK,2.5,,,True,
+missing_from_holdet,CJ Dos Santos,Kap Verde,GK,2.5,,,False,
+missing_from_holdet,Bruno Varela,Kap Verde,GK,2.5,,,True,
+missing_from_holdet,Yazeed Abulaila,Jordan,GK,2.5,,,False,
+missing_from_holdet,Noureddin Bani Attiah,Jordan,GK,2.5,,,False,
+missing_from_holdet,Marcio Rosa,Kap Verde,GK,2.5,,,False,
+missing_from_holdet,Vozinha,Kap Verde,GK,2.5,,,False,
+missing_from_holdet,Abdallah Al-Fakhouri,Jordan,GK,2.5,,,False,
+missing_from_holdet,Abdel Rahman Al-Talalga,Jordan,GK,2.5,,,True,
+missing_from_holdet,Utkir Yusupov,Usbekistan,GK,2.5,,,False,
+missing_from_holdet,Abduvokhid Nematov,Usbekistan,GK,2.5,,,False,
+missing_from_holdet,Botirali Ergashev,Usbekistan,GK,2.5,,,False,
+missing_from_holdet,Owen Goodman,Canada,GK,2.5,,,False,
+missing_from_holdet,Dayne St. Clair,Canada,GK,3.5,,,False,
+missing_from_holdet,Maxime Crepeau,Canada,GK,3.0,,,False,
+missing_from_holdet,Angus Gunn,Skotland,GK,3.5,,,False,
+missing_from_holdet,Craig Gordon,Skotland,GK,2.5,,,False,
+missing_from_holdet,Scott Bain,Skotland,GK,2.5,,,True,
+missing_from_holdet,Salah Zakaria,Qatar,GK,2.5,,,False,
+missing_from_holdet,Liam Kelly,Skotland,GK,3.0,,,False,
+missing_from_holdet,Mahmoud Abunada,Qatar,GK,2.5,,,False,
+missing_from_holdet,Shehab Ellethy,Qatar,GK,2.5,,,True,
+missing_from_holdet,Meshaal Barsham,Qatar,GK,2.5,,,False,
+missing_from_holdet,Ahmed Al-Kassar,Saudi-Arabien,GK,2.5,,,False,
+missing_from_holdet,Mohammed Al-Owais,Saudi-Arabien,GK,3.0,,,False,
+missing_from_holdet,Noureddine Farhati,Tunesien,GK,2.5,,,True,
+missing_from_holdet,Nawaf Al-Aqidi,Saudi-Arabien,GK,2.5,,,False,
+missing_from_holdet,Abdulrahman Al-Sanbi,Saudi-Arabien,GK,2.5,,,True,
+missing_from_holdet,Mohammed Al-Rubaie Al-Yami,Saudi-Arabien,GK,2.5,,,True,
+missing_from_holdet,Yehvann Diouf,Senegal,GK,3.0,,,False,
+missing_from_holdet,Abdelmouhib Chamakh,Tunesien,GK,2.5,,,False,
+missing_from_holdet,Aymen Dahmen,Tunesien,GK,3.0,,,False,
+missing_from_holdet,Bechir Ben Said,Tunesien,GK,3.0,,,True,
+missing_from_holdet,Sabri Ben Hessen,Tunesien,GK,2.5,,,False,
+missing_from_holdet,Mory Diaw,Senegal,GK,3.0,,,False,
+missing_from_holdet,Edouard Mendy,Senegal,GK,3.5,,,False,
+missing_from_holdet,El Mehdi Al Harrar,Marokko,GK,2.5,,,True,
+missing_from_holdet,Ahmed Reda Tagnaouti,Marokko,GK,2.5,,,False,
+missing_from_holdet,El Mahdi Soliman,Egypten,GK,2.5,,,False,
+missing_from_holdet,El Mehdi Benabid,Marokko,GK,3.0,,,True,
+missing_from_holdet,Yassine 'Bono' Bounou,Marokko,GK,3.5,,,False,
+missing_from_holdet,Munir Mohamedi El Kajoui,Marokko,GK,3.0,,,False,
+missing_from_holdet,Mohamed Alaa,Egypten,GK,2.5,,,False,
+missing_from_holdet,Mostafa Oufa Shobeir,Egypten,GK,2.5,,,False,
+missing_from_holdet,Mohamed El-Shennawy,Egypten,GK,3.0,,,False,
+missing_from_holdet,Luis Mejia,Panama,GK,2.5,,,False,
+missing_from_holdet,Cesar Samudio,Panama,GK,2.5,,,False,
+missing_from_holdet,Orlando Mosquera,Panama,GK,2.5,,,False,
+missing_from_holdet,Kumel Al-Rekabe,Irak,GK,2.5,,,True,
+missing_from_holdet,Fahad Talib,Irak,GK,2.5,,,False,
+missing_from_holdet,Jalal Hassan,Irak,GK,2.5,,,False,
+missing_from_holdet,Ahmed Basil Fadhil,Irak,GK,2.5,,,False,
+missing_from_holdet,Mike Penders,Belgien,GK,3.5,,,False,
+missing_from_holdet,Senne Lammens,Belgien,GK,4.0,,,False,
+missing_from_holdet,Maarten Vandevoordt,Belgien,GK,3.5,,,True,
+missing_from_holdet,Thibaut Courtois,Belgien,GK,4.5,,,False,
+missing_from_holdet,Matz Sels,Belgien,GK,4.5,,,True,
+missing_from_holdet,Alireza Beiranvand,Iran,GK,3.0,,,False,
+missing_from_holdet,Seyed Hossein Hosseini,Iran,GK,2.5,,,False,
+missing_from_holdet,Nikola Vasilj,Bosnien-Hercegovina,GK,3.0,,,False,
+missing_from_holdet,Mohammad Khalife,Iran,GK,2.5,,,True,
+missing_from_holdet,Payam Niazmand,Iran,GK,2.5,,,False,
+missing_from_holdet,Mladen Jurkas,Bosnien-Hercegovina,GK,2.5,,,False,
+missing_from_holdet,David Cabezas,Ecuador,GK,2.5,,,True,
+missing_from_holdet,Gonzalo Valle,Ecuador,GK,3.0,,,False,
+missing_from_holdet,Martin Zlomislic,Bosnien-Hercegovina,GK,2.5,,,False,
+missing_from_holdet,Osman Hadzikic,Bosnien-Hercegovina,GK,2.5,,,True,
+missing_from_holdet,Hernan Galindez,Ecuador,GK,3.5,,,False,
+missing_from_holdet,Moises Ramirez,Ecuador,GK,2.5,,,False,
+missing_from_holdet,Camilo Vargas,Colombia,GK,4.0,,,False,
+missing_from_holdet,Alvaro Montero,Colombia,GK,4.0,,,False,
+missing_from_holdet,David Ospina,Colombia,GK,3.5,,,False,
+missing_from_holdet,Sergio Rochet,Uruguay,GK,4.0,,,False,
+missing_from_holdet,Fernando Muslera,Uruguay,GK,4.0,,,False,
+missing_from_holdet,Michael Woud,New Zealand,GK,2.5,,,False,
+missing_from_holdet,Santiago Mele,Uruguay,GK,3.5,,,False,
+missing_from_holdet,Ricardo Goss,Sydafrika,GK,2.5,,,False,
+missing_from_holdet,Ronwen Williams,Sydafrika,GK,3.0,,,False,
+missing_from_holdet,Sipho Chaine,Sydafrika,GK,2.5,,,False,
+missing_from_holdet,Orlando Gill,Paraguay,GK,3.0,,,False,
+missing_from_holdet,Juan Espinola,Paraguay,GK,2.5,,,True,
+missing_from_holdet,Roberto 'Gatito' Fernandez,Paraguay,GK,3.0,,,False,
+missing_from_holdet,Carlos Miguel Coronel,Paraguay,GK,2.5,,,True,
+missing_from_holdet,Gaston Olveira,Paraguay,GK,3.0,,,False,
+missing_from_holdet,Max Crocombe,New Zealand,GK,2.5,,,False,
+missing_from_holdet,Bum-Keun Song,Sydkorea,GK,2.5,,,False,
+missing_from_holdet,Alex Paulsen,New Zealand,GK,2.5,,,False,
+missing_from_holdet,Raul Rangel,Mexico,GK,4.0,,,False,
+missing_from_holdet,Guillermo Ochoa,Mexico,GK,3.0,,,False,
+missing_from_holdet,Seung-Gyu Kim,Sydkorea,GK,3.0,,,False,
+missing_from_holdet,Carlos Acevedo,Mexico,GK,3.5,,,False,
+missing_from_holdet,Hyeon-Woo Jo,Sydkorea,GK,3.5,,,False,
+missing_from_holdet,Zion Suzuki,Japan,GK,4.0,,,False,
+missing_from_holdet,Keisuke Osako,Japan,GK,3.5,,,False,
+missing_from_holdet,Tomoki Hayakawa,Japan,GK,3.5,,,False,
+missing_from_holdet,Solomon Agbasi,Ghana,GK,2.5,,,True,
+missing_from_holdet,Benjamin Asare,Ghana,GK,3.0,,,False,
+missing_from_holdet,Paul Reverson,Ghana,GK,2.5,,,True,
+missing_from_holdet,Joseph Anang,Ghana,GK,2.5,,,False,
+missing_from_holdet,Lawrence Ati Zigi,Ghana,GK,3.0,,,False,
+missing_from_holdet,Dean Henderson,England,GK,4.5,,,False,
+missing_from_holdet,James Trafford,England,GK,4.0,,,False,
+missing_from_holdet,Jordan Pickford,England,GK,5.0,,,False,
+missing_from_holdet,Yahia Fofana,Elfenbenskysten,GK,3.0,,,False,
+missing_from_holdet,Mohamed Kone,Elfenbenskysten,GK,3.0,,,False,
+missing_from_holdet,Alban Lafont,Elfenbenskysten,GK,2.5,,,False,
+missing_from_holdet,Bento Krepski,Brasilien,GK,5.0,,,True,
+missing_from_holdet,Mathew Ryan,Australien,GK,3.0,,,False,
+missing_from_holdet,Alisson Becker,Brasilien,GK,5.0,,,False,
+missing_from_holdet,Ederson Moraes,Brasilien,GK,5.0,,,False,
+missing_from_holdet,Weverton,Brasilien,GK,4.0,,,False,
+missing_from_holdet,Paul Izzo,Australien,GK,2.5,,,False,
+missing_from_holdet,Juan Musso,Argentina,GK,4.0,,,False,
+missing_from_holdet,Patrick Beach,Australien,GK,2.5,,,False,
+missing_from_holdet,Walter Benitez,Argentina,GK,4.0,,,True,
+missing_from_holdet,Emiliano Martinez,Argentina,GK,5.0,,,False,
+missing_from_holdet,Geronimo Rulli,Argentina,GK,4.5,,,False,
+missing_from_holdet,Oussama Benbout,Algeriet,GK,2.5,,,False,
+missing_from_holdet,Alexis Guendouz,Algeriet,GK,3.0,,,True,
+missing_from_holdet,Luca Zidane,Algeriet,GK,3.0,,,False,
+missing_from_holdet,Viktor Johansson,Sverige,GK,3.5,,,False,
+missing_from_holdet,Anthony Mandrea,Algeriet,GK,3.0,,,True,
+missing_from_holdet,Melvin Feycal Mastil,Algeriet,GK,2.5,,,False,
+missing_from_holdet,Melker Ellborg,Sverige,GK,3.5,,,True,
+missing_from_holdet,Noel Törnqvist,Sverige,GK,3.5,,,True,
+missing_from_holdet,Robin Olsen,Sverige,GK,4.0,,,True,
+missing_from_holdet,Jacob Widell Zetterström,Sverige,GK,3.5,,,False,
+missing_from_holdet,Kristoffer Nordfeldt,Sverige,GK,4.0,,,False,
+missing_from_holdet,Alejandro 'Alex' Remiro,Spanien,GK,4.0,,,True,
+missing_from_holdet,Unai Simon,Spanien,GK,5.0,,,False,
+missing_from_holdet,Bart Verbruggen,Holland,GK,4.5,,,False,
+missing_from_holdet,David Raya,Spanien,GK,5.0,,,False,
+missing_from_holdet,Joan Garcia,Spanien,GK,4.0,,,False,
+missing_from_holdet,Robin Roefs,Holland,GK,3.5,,,False,
+missing_from_holdet,Justin Bijlow,Holland,GK,3.5,,,True,
+missing_from_holdet,Mark Flekken,Holland,GK,4.0,,,False,
+missing_from_holdet,Robin Risser,Frankrig,GK,4.0,,,False,
+missing_from_holdet,Brice Samba,Frankrig,GK,4.5,,,False,
+missing_from_holdet,Mike Maignan,Frankrig,GK,5.0,,,False,
+missing_from_holdet,Lucas Chevalier,Frankrig,GK,4.0,,,True,
+missing_from_holdet,Dominik Livakovic,Kroatien,GK,4.0,,,False,
+missing_from_holdet,Jonas Urbig,Tyskland,GK,4.0,,,True,
+missing_from_holdet,Finn Dahmen,Tyskland,GK,4.0,,,True,
+missing_from_holdet,Oliver Baumann,Tyskland,GK,5.0,,,False,
+missing_from_holdet,Manuel Neuer,Tyskland,GK,5.0,,,False,
+missing_from_holdet,Alexander Nübel,Tyskland,GK,4.5,,,False,
+missing_from_holdet,Dominik Kotarski,Kroatien,GK,3.0,,,False,
+missing_from_holdet,Ivor Pandur,Kroatien,GK,2.5,,,False,
+missing_from_holdet,Nikolas Polster,Østrig,GK,2.5,,,True,
+missing_from_holdet,Patrick Pentz,Østrig,GK,3.0,,,False,
+missing_from_holdet,Florian Wiegele,Østrig,GK,2.5,,,False,
+missing_from_holdet,Alexander Schlager,Østrig,GK,3.5,,,False,
+missing_from_holdet,Mert Günok,Tyrkiet,GK,3.5,,,False,
+missing_from_holdet,Muhammed Sengezer,Tyrkiet,GK,3.0,,,True,
+missing_from_holdet,Ugurcan Cakir,Tyrkiet,GK,4.0,,,False,
+missing_from_holdet,Altay Bayindir,Tyrkiet,GK,3.0,,,False,
+missing_from_holdet,Joao Carvalho,Portugal,GK,3.5,,,True,
+missing_from_holdet,Ricardo Velho,Portugal,GK,4.0,,,True,
+missing_from_holdet,Rui Silva,Portugal,GK,4.0,,,False,
+missing_from_holdet,Jose Sa,Portugal,GK,4.5,,,False,
+missing_from_holdet,Diogo Costa,Portugal,GK,5.0,,,False,
+missing_from_holdet,Jindrich Stanek,Tjekkiet,GK,2.5,,,False,
+missing_from_holdet,Matej Kovar,Tjekkiet,GK,3.0,,,False,
+missing_from_holdet,Martin Jedlicka,Tjekkiet,GK,2.5,,,True,
+missing_from_holdet,Lukas Hornicek,Tjekkiet,GK,2.5,,,False,
+missing_from_holdet,Marvin Keller,Schweiz,GK,3.0,,,False,
+missing_from_holdet,Pascal Loretz,Schweiz,GK,3.0,,,True,
+missing_from_holdet,Gregor Kobel,Schweiz,GK,4.0,,,False,
+missing_from_holdet,Yvon Mvogo,Schweiz,GK,3.0,,,False,
+missing_from_holdet,Denis Zakaria,Schweiz,MID,3.0,,,False,
+missing_from_holdet,Djibril Sow,Schweiz,MID,3.0,,,False,
+missing_from_holdet,Granit Xhaka,Schweiz,MID,4.0,,,False,
+missing_from_holdet,Vincent Sierro,Schweiz,MID,2.5,,,True,
+missing_from_holdet,Noah Okafor,Schweiz,MID,3.0,,,False,
+missing_from_holdet,Remo Freuler,Schweiz,MID,3.5,,,False,
+missing_from_holdet,Michel Aebischer,Schweiz,MID,2.5,,,False,
+missing_from_holdet,Simon Sohm,Schweiz,MID,2.0,,,True,
+missing_from_holdet,Johan Manzambi,Schweiz,MID,3.0,,,False,
+missing_from_holdet,Alvyn Sanches,Schweiz,MID,2.5,,,True,
+missing_from_holdet,Filip Ugrinic,Schweiz,MID,2.0,,,True,
+missing_from_holdet,Ardon Jashari,Schweiz,MID,2.0,,,False,
+missing_from_holdet,Fabian Rieder,Schweiz,MID,3.0,,,False,
+missing_from_holdet,Lukas Cerv,Tjekkiet,MID,3.0,,,False,
+missing_from_holdet,Adam Karabec,Tjekkiet,MID,2.5,,,True,
+missing_from_holdet,David Doudera,Tjekkiet,MID,2.0,,,False,
+missing_from_holdet,Pavel Sulc,Tjekkiet,MID,4.0,,,False,
+missing_from_holdet,Denis Visinsky,Tjekkiet,MID,2.0,,,False,
+missing_from_holdet,Hugo Sochurek,Tjekkiet,MID,2.0,,,False,
+missing_from_holdet,Alexandr Sojka,Tjekkiet,MID,2.0,,,False,
+missing_from_holdet,Alex Kral,Tjekkiet,MID,2.0,,,True,
+missing_from_holdet,Tomas Soucek,Tjekkiet,MID,3.5,,,False,
+missing_from_holdet,Lukas Provod,Tjekkiet,MID,3.0,,,False,
+missing_from_holdet,Michal Sadilek,Tjekkiet,MID,2.5,,,False,
+missing_from_holdet,Vladimir Darida,Tjekkiet,MID,2.0,,,False,
+missing_from_holdet,Bruno Fernandes,Portugal,MID,7.0,,,False,
+missing_from_holdet,Bernardo Silva,Portugal,MID,5.5,,,False,
+missing_from_holdet,Ruben Neves,Portugal,MID,4.0,,,False,
+missing_from_holdet,Vitinha,Portugal,MID,5.5,,,False,
+missing_from_holdet,Samu Costa,Portugal,MID,2.5,,,False,
+missing_from_holdet,Matheus Nunes,Portugal,MID,4.5,,,False,
+missing_from_holdet,Pedro 'Pote' Goncalves,Portugal,MID,3.0,,,True,
+missing_from_holdet,João Palhinha,Portugal,MID,4.5,,,True,
+missing_from_holdet,João Neves,Portugal,MID,5.0,,,False,
+missing_from_holdet,Kenan Yildiz,Tyrkiet,MID,4.0,,,False,
+missing_from_holdet,Arda Güler,Tyrkiet,MID,4.5,,,False,
+missing_from_holdet,Kerem Akturkoglu,Tyrkiet,MID,4.5,,,False,
+missing_from_holdet,Orkun Kökcü,Tyrkiet,MID,3.0,,,False,
+missing_from_holdet,Ismail Yüksek,Tyrkiet,MID,2.5,,,False,
+missing_from_holdet,Oguz Aydin,Tyrkiet,MID,2.0,,,False,
+missing_from_holdet,Atakan Karazor,Tyrkiet,MID,2.0,,,True,
+missing_from_holdet,Irfan Can Kahveci,Tyrkiet,MID,2.0,,,False,
+missing_from_holdet,Kaan Ayhan,Tyrkiet,MID,2.0,,,False,
+missing_from_holdet,Hakan Calhanoglu,Tyrkiet,MID,4.0,,,False,
+missing_from_holdet,Salih Özcan,Tyrkiet,MID,2.0,,,False,
+missing_from_holdet,Nicolas Seiwald,Østrig,MID,2.5,,,False,
+missing_from_holdet,Carney Chukwuemeka,Østrig,MID,2.5,,,False,
+missing_from_holdet,Christoph Baumgartner,Østrig,MID,3.5,,,True,
+missing_from_holdet,Xaver Schlager,Østrig,MID,2.5,,,False,
+missing_from_holdet,Romano Schmid,Østrig,MID,3.0,,,False,
+missing_from_holdet,Konrad Laimer,Østrig,MID,3.0,,,False,
+missing_from_holdet,Florian Grillitsch,Østrig,MID,2.5,,,False,
+missing_from_holdet,Alessandro Schöpf,Østrig,MID,2.5,,,False,
+missing_from_holdet,Marcel Sabitzer,Østrig,MID,4.5,,,False,
+missing_from_holdet,Patrick Wimmer,Østrig,MID,3.0,,,False,
+missing_from_holdet,Paul Wanner,Østrig,MID,2.5,,,False,
+missing_from_holdet,Toni Fruk,Kroatien,MID,3.0,,,False,
+missing_from_holdet,Martin Baturina,Kroatien,MID,3.0,,,False,
+missing_from_holdet,Nikola Vlasic,Kroatien,MID,3.0,,,False,
+missing_from_holdet,Nikola Moro,Kroatien,MID,2.5,,,False,
+missing_from_holdet,Mario Pasalic,Kroatien,MID,3.5,,,False,
+missing_from_holdet,Luka Modric,Kroatien,MID,4.0,,,False,
+missing_from_holdet,Lovro Majer,Kroatien,MID,2.5,,,True,
+missing_from_holdet,Luka Sucic,Kroatien,MID,2.0,,,False,
+missing_from_holdet,Petar Sucic,Kroatien,MID,3.0,,,False,
+missing_from_holdet,Nadiem Amiri,Tyskland,MID,2.5,,,False,
+missing_from_holdet,Mateo Kovacic,Kroatien,MID,4.0,,,False,
+missing_from_holdet,Leon Goretzka,Tyskland,MID,4.5,,,False,
+missing_from_holdet,Pascal Gross,Tyskland,MID,3.0,,,False,
+missing_from_holdet,Joshua Kimmich,Tyskland,MID,5.0,,,False,
+missing_from_holdet,Anton Stach,Tyskland,MID,4.5,,,True,
+missing_from_holdet,Jamie Leweling,Tyskland,MID,3.0,,,False,
+missing_from_holdet,Aleksandar Pavlovic,Tyskland,MID,3.5,,,False,
+missing_from_holdet,Lennart Karl,Tyskland,MID,5.0,,,True,
+missing_from_holdet,Assan Ouedraogo,Tyskland,MID,3.0,,,False,
+missing_from_holdet,Florian Wirtz,Tyskland,MID,7.5,,,False,
+missing_from_holdet,Jamal Musiala,Tyskland,MID,6.5,,,False,
+missing_from_holdet,Angelo Stiller,Tyskland,MID,2.5,,,False,
+missing_from_holdet,Kevin Schade,Tyskland,MID,3.5,,,True,
+missing_from_holdet,Felix Nmecha,Tyskland,MID,3.0,,,False,
+missing_from_holdet,Manu Koné,Frankrig,MID,3.5,,,False,
+missing_from_holdet,Eduardo Camavinga,Frankrig,MID,3.0,,,True,
+missing_from_holdet,Bradley Barcola,Frankrig,MID,4.0,,,False,
+missing_from_holdet,Warren Zaire-Emery,Frankrig,MID,3.0,,,False,
+missing_from_holdet,Aurelien Tchouameni,Frankrig,MID,3.5,,,False,
+missing_from_holdet,Adrien Rabiot,Frankrig,MID,4.0,,,False,
+missing_from_holdet,N'Golo Kante,Frankrig,MID,3.0,,,False,
+missing_from_holdet,Kees Smit,Holland,MID,2.0,,,True,
+missing_from_holdet,Luciano Valente,Holland,MID,2.5,,,True,
+missing_from_holdet,Marten de Roon,Holland,MID,2.5,,,False,
+missing_from_holdet,Justin Kluivert,Holland,MID,2.5,,,False,
+missing_from_holdet,Crysencio Summerville,Holland,MID,3.0,,,False,
+missing_from_holdet,Teun Koopmeiners,Holland,MID,3.5,,,False,
+missing_from_holdet,Quinten Timber,Holland,MID,3.0,,,False,
+missing_from_holdet,Ryan Gravenberch,Holland,MID,3.5,,,False,
+missing_from_holdet,Guus Til,Holland,MID,2.5,,,False,
+missing_from_holdet,Frenkie de Jong,Holland,MID,3.0,,,False,
+missing_from_holdet,Pablo Gavi,Spanien,MID,4.0,,,False,
+missing_from_holdet,Tijjani Reijnders,Holland,MID,6.0,,,False,
+missing_from_holdet,Mats Wieffer,Holland,MID,2.5,,,False,
+missing_from_holdet,Fermin Lopez,Spanien,MID,5.0,,,True,
+missing_from_holdet,Martin Zubimendi,Spanien,MID,3.5,,,False,
+missing_from_holdet,Yeremy Pino,Spanien,MID,3.5,,,False,
+missing_from_holdet,Alex Baena,Spanien,MID,3.5,,,False,
+missing_from_holdet,Pedri,Spanien,MID,6.0,,,False,
+missing_from_holdet,Pablo Barrios,Spanien,MID,3.0,,,True,
+missing_from_holdet,Dani Olmo,Spanien,MID,5.0,,,False,
+missing_from_holdet,Mikel Merino,Spanien,MID,4.5,,,False,
+missing_from_holdet,Rodri Hernandez,Spanien,MID,5.0,,,False,
+missing_from_holdet,Aleix Garcia,Spanien,MID,3.0,,,True,
+missing_from_holdet,Fabian Ruiz,Spanien,MID,4.5,,,False,
+missing_from_holdet,Marcos Llorente,Spanien,MID,3.5,,,False,
+missing_from_holdet,Pablo Fornals,Spanien,MID,3.0,,,True,
+missing_from_holdet,Mattias Svanberg,Sverige,MID,2.5,,,False,
+missing_from_holdet,Ken Sema,Sverige,MID,2.5,,,False,
+missing_from_holdet,Alexander Bernhardsson,Sverige,MID,2.0,,,False,
+missing_from_holdet,Jesus Rodriguez,Spanien,MID,3.5,,,True,
+missing_from_holdet,Jesper Karlström,Sverige,MID,3.0,,,False,
+missing_from_holdet,Taha Abdi Ali,Sverige,MID,2.0,,,False,
+missing_from_holdet,Yasin Ayari,Sverige,MID,3.5,,,False,
+missing_from_holdet,Sebastian Nanasi,Sverige,MID,2.0,,,True,
+missing_from_holdet,Lucas Bergvall,Sverige,MID,2.5,,,False,
+missing_from_holdet,Hugo Larsson,Sverige,MID,2.5,,,True,
+missing_from_holdet,Besfort Zeneli,Sverige,MID,2.0,,,False,
+missing_from_holdet,Roony Bardghji,Sverige,MID,3.0,,,True,
+missing_from_holdet,Ibrahim Maza,Algeriet,MID,3.0,,,False,
+missing_from_holdet,Ramiz Zerrouki,Algeriet,MID,2.5,,,False,
+missing_from_holdet,Fares Chaibi,Algeriet,MID,2.5,,,False,
+missing_from_holdet,Himad Abdelli,Algeriet,MID,2.5,,,True,
+missing_from_holdet,Yassine Titraoui,Algeriet,MID,2.0,,,False,
+missing_from_holdet,Herman Johansson,Sverige,MID,2.5,,,False,
+missing_from_holdet,Hicham Boudaoui,Algeriet,MID,2.5,,,False,
+missing_from_holdet,Adil Aouchiche,Algeriet,MID,2.0,,,True,
+missing_from_holdet,Houssem Aouar,Algeriet,MID,2.5,,,False,
+missing_from_holdet,Rodrigo de Paul,Argentina,MID,4.5,,,False,
+missing_from_holdet,Leandro Paredes,Argentina,MID,4.0,,,False,
+missing_from_holdet,Giovani Lo Celso,Argentina,MID,4.0,,,False,
+missing_from_holdet,Franco Mastantuono,Argentina,MID,3.5,,,True,
+missing_from_holdet,Alexis Mac Allister,Argentina,MID,4.5,,,False,
+missing_from_holdet,Exequiel Palacios,Argentina,MID,3.5,,,False,
+missing_from_holdet,Ismael Bennacer,Algeriet,MID,2.5,,,True,
+missing_from_holdet,Nabil Bentaleb,Algeriet,MID,2.5,,,False,
+missing_from_holdet,Alan Varela,Argentina,MID,2.5,,,True,
+missing_from_holdet,Nico Paz,Argentina,MID,5.0,,,False,
+missing_from_holdet,Valentin Barco,Argentina,MID,2.5,,,False,
+missing_from_holdet,Thiago Almada,Argentina,MID,5.5,,,False,
+missing_from_holdet,Enzo Fernandez,Argentina,MID,5.0,,,False,
+missing_from_holdet,Paul Okon-Engstler,Australien,MID,2.0,,,False,
+missing_from_holdet,Cristian Volpato,Australien,MID,2.5,,,False,
+missing_from_holdet,Cameron Devlin,Australien,MID,2.0,,,False,
+missing_from_holdet,Connor Metcalfe,Australien,MID,3.0,,,False,
+missing_from_holdet,Riley McGree,Australien,MID,2.5,,,True,
+missing_from_holdet,Patrick Yazbek,Australien,MID,2.0,,,True,
+missing_from_holdet,Ajdin Hrustic,Australien,MID,2.0,,,False,
+missing_from_holdet,Alexander 'Alex' Robertson,Australien,MID,2.0,,,True,
+missing_from_holdet,Casemiro,Brasilien,MID,4.5,,,False,
+missing_from_holdet,Fabinho,Brasilien,MID,2.5,,,False,
+missing_from_holdet,Jackson Irvine,Australien,MID,2.5,,,False,
+missing_from_holdet,Aiden O'Neill,Australien,MID,2.5,,,False,
+missing_from_holdet,Mathew Leckie,Australien,MID,2.0,,,False,
+missing_from_holdet,Gabriel Sara,Brasilien,MID,2.5,,,True,
+missing_from_holdet,Lucas Paqueta,Brasilien,MID,5.5,,,False,
+missing_from_holdet,Bruno Guimaraes,Brasilien,MID,4.5,,,False,
+missing_from_holdet,Danilo dos Santos,Brasilien,MID,3.0,,,False,
+missing_from_holdet,Andrey Santos,Brasilien,MID,3.0,,,True,
+missing_from_holdet,Vitinho,Brasilien,MID,2.5,,,True,
+missing_from_holdet,Ibrahim Sangare,Elfenbenskysten,MID,3.0,,,False,
+missing_from_holdet,Christ Inao Oulaï,Elfenbenskysten,MID,2.0,,,False,
+missing_from_holdet,Parfait Guiagon,Elfenbenskysten,MID,2.0,,,False,
+missing_from_holdet,Seko Fofana,Elfenbenskysten,MID,2.5,,,False,
+missing_from_holdet,Jean Michael Seri,Elfenbenskysten,MID,2.5,,,False,
+missing_from_holdet,Franck Kessie,Elfenbenskysten,MID,3.0,,,False,
+missing_from_holdet,Declan Rice,England,MID,4.5,,,False,
+missing_from_holdet,Elliot Anderson,England,MID,4.0,,,False,
+missing_from_holdet,Eberechi Eze,England,MID,3.0,,,False,
+missing_from_holdet,Cole Palmer,England,MID,5.0,,,True,
+missing_from_holdet,Jordan Henderson,England,MID,3.5,,,False,
+missing_from_holdet,Morgan Rogers,England,MID,5.5,,,False,
+missing_from_holdet,Kobbie Mainoo,England,MID,2.5,,,False,
+missing_from_holdet,Jude Bellingham,England,MID,6.0,,,False,
+missing_from_holdet,Ibrahim Sulemana,Ghana,MID,2.5,,,True,
+missing_from_holdet,Elisha Owusu,Ghana,MID,2.5,,,False,
+missing_from_holdet,Thomas Partey,Ghana,MID,3.0,,,False,
+missing_from_holdet,Augustine Boakye,Ghana,MID,2.0,,,False,
+missing_from_holdet,Kodai Sano,Japan,MID,2.0,,,True,
+missing_from_holdet,Ryunosuke Sato,Japan,MID,2.0,,,True,
+missing_from_holdet,Wataru Endo,Japan,MID,2.5,,,False,
+missing_from_holdet,Takumi Minamino,Japan,MID,4.0,,,True,
+missing_from_holdet,Daichi Kamada,Japan,MID,3.5,,,False,
+missing_from_holdet,Takefusa Kubo,Japan,MID,4.0,,,False,
+missing_from_holdet,Keito Nakamura,Japan,MID,3.0,,,False,
+missing_from_holdet,Koki Saito,Japan,MID,2.0,,,True,
+missing_from_holdet,Junya Ito,Japan,MID,3.5,,,False,
+missing_from_holdet,Ritsu Doan,Japan,MID,4.0,,,False,
+missing_from_holdet,Joel Chima Fujita,Japan,MID,2.0,,,True,
+missing_from_holdet,Kwasi Sibo,Ghana,MID,2.5,,,False,
+missing_from_holdet,Ao Tanaka,Japan,MID,2.5,,,False,
+missing_from_holdet,Hyeok-kyu Kwon,Sydkorea,MID,2.0,,,True,
+missing_from_holdet,Hyun-Jun Yang,Sydkorea,MID,2.5,,,False,
+missing_from_holdet,Kaoru Mitoma,Japan,MID,3.5,,,True,
+missing_from_holdet,Jens Castrop,Sydkorea,MID,2.5,,,False,
+missing_from_holdet,Kaishu Sano,Japan,MID,2.5,,,False,
+missing_from_holdet,Yuki Soma,Japan,MID,2.0,,,True,
+missing_from_holdet,Jae-Sung Lee,Sydkorea,MID,4.0,,,False,
+missing_from_holdet,Hyun-seok Hong,Sydkorea,MID,2.0,,,True,
+missing_from_holdet,Ji-sung Eom,Sydkorea,MID,2.0,,,False,
+missing_from_holdet,Kang-In Lee,Sydkorea,MID,5.0,,,False,
+missing_from_holdet,Seung-Ho Paik,Sydkorea,MID,2.0,,,False,
+missing_from_holdet,Jun-ho Bae,Sydkorea,MID,2.5,,,False,
+missing_from_holdet,Jin-gyu Kim,Sydkorea,MID,2.5,,,False,
+missing_from_holdet,Jin-seob Park,Sydkorea,MID,2.5,,,False,
+missing_from_holdet,In-beom Hwang,Sydkorea,MID,2.5,,,False,
+missing_from_holdet,Brian Gutierrez,Mexico,MID,2.5,,,False,
+missing_from_holdet,Denzell Garcia,Mexico,MID,2.0,,,True,
+missing_from_holdet,Alvaro Fidalgo,Mexico,MID,2.5,,,False,
+missing_from_holdet,Obed Vargas,Mexico,MID,2.5,,,False,
+missing_from_holdet,Hee-Chan Hwang,Sydkorea,MID,3.0,,,False,
+missing_from_holdet,Dong-gyeong Lee,Sydkorea,MID,2.0,,,False,
+missing_from_holdet,Edson Alvarez,Mexico,MID,3.0,,,False,
+missing_from_holdet,Joe Bell,New Zealand,MID,2.5,,,False,
+missing_from_holdet,Elijah Just,New Zealand,MID,3.0,,,False,
+missing_from_holdet,Orbelin Pineda,Mexico,MID,3.0,,,False,
+missing_from_holdet,Erik Lira,Mexico,MID,2.5,,,False,
+missing_from_holdet,Gilberto Mora,Mexico,MID,2.5,,,False,
+missing_from_holdet,Cesar Huerta,Mexico,MID,2.5,,,False,
+missing_from_holdet,Erick Sanchez,Mexico,MID,3.0,,,True,
+missing_from_holdet,Luis Chavez,Mexico,MID,2.0,,,False,
+missing_from_holdet,Luis Romo,Mexico,MID,2.5,,,False,
+missing_from_holdet,Roberto Alvarado,Mexico,MID,2.5,,,False,
+missing_from_holdet,Carlos Rodriguez,Mexico,MID,2.5,,,True,
+missing_from_holdet,Callum McCowatt,New Zealand,MID,2.5,,,False,
+missing_from_holdet,Ryan Thomas,New Zealand,MID,2.5,,,False,
+missing_from_holdet,Marko Stamenic,New Zealand,MID,2.5,,,False,
+missing_from_holdet,Sarpreet Singh,New Zealand,MID,2.5,,,False,
+missing_from_holdet,Matthew Garbett,New Zealand,MID,2.5,,,False,
+missing_from_holdet,Alex Rufer,New Zealand,MID,2.5,,,False,
+missing_from_holdet,Ben Old,New Zealand,MID,2.0,,,False,
+missing_from_holdet,Lachlan Bayliss,New Zealand,MID,2.0,,,False,
+missing_from_holdet,Miguel Almiron,Paraguay,MID,3.5,,,False,
+missing_from_holdet,Alejandro Romero Gamarra,Paraguay,MID,3.0,,,False,
+missing_from_holdet,Mauricio Magalhaes Prado,Paraguay,MID,2.0,,,False,
+missing_from_holdet,Gustavo Caballero,Paraguay,MID,2.0,,,False,
+missing_from_holdet,Sphephelo Yaya Sithole,Sydafrika,MID,3.0,,,False,
+missing_from_holdet,Teboho Mokoena,Sydafrika,MID,3.5,,,False,
+missing_from_holdet,Andres Cubas,Paraguay,MID,2.5,,,False,
+missing_from_holdet,Lucas Ramon Romero,Paraguay,MID,2.0,,,True,
+missing_from_holdet,Damian Bobadilla,Paraguay,MID,2.5,,,False,
+missing_from_holdet,Matias Galarza Fonda,Paraguay,MID,2.5,,,False,
+missing_from_holdet,Ramon Sosa,Paraguay,MID,3.0,,,False,
+missing_from_holdet,Diego Gomez,Paraguay,MID,3.0,,,False,
+missing_from_holdet,Hugo Cuenca,Paraguay,MID,2.0,,,True,
+missing_from_holdet,Braian Ojeda,Paraguay,MID,2.0,,,False,
+missing_from_holdet,Joaquin Piquerez,Uruguay,MID,2.5,,,False,
+missing_from_holdet,Federico Valverde,Uruguay,MID,5.5,,,False,
+missing_from_holdet,Rodrigo Bentancur,Uruguay,MID,3.0,,,False,
+missing_from_holdet,Themba Zwane,Sydafrika,MID,2.5,,,False,
+missing_from_holdet,Nicolas Fonseca,Uruguay,MID,2.5,,,True,
+missing_from_holdet,Jayden Adams,Sydafrika,MID,2.0,,,False,
+missing_from_holdet,Thalente Mbatha,Sydafrika,MID,3.0,,,False,
+missing_from_holdet,Giorgian De Arrascaeta,Uruguay,MID,4.0,,,False,
+missing_from_holdet,Rodrigo Zalazar,Uruguay,MID,3.5,,,False,
+missing_from_holdet,Maxi Araujo,Uruguay,MID,5.0,,,False,
+missing_from_holdet,Juan Manuel Sanabria,Uruguay,MID,3.0,,,False,
+missing_from_holdet,Agustin Canobbio,Uruguay,MID,2.5,,,False,
+missing_from_holdet,Nicolas de la Cruz,Uruguay,MID,3.0,,,False,
+missing_from_holdet,Emiliano Martinez Toranza,Uruguay,MID,2.5,,,False,
+missing_from_holdet,Carlos Andres Gomez,Colombia,MID,2.0,,,False,
+missing_from_holdet,Jefferson Lerma,Colombia,MID,3.0,,,False,
+missing_from_holdet,Manuel Ugarte,Uruguay,MID,3.5,,,False,
+missing_from_holdet,James Rodriguez,Colombia,MID,4.0,,,False,
+missing_from_holdet,Juan Quintero,Colombia,MID,2.5,,,False,
+missing_from_holdet,Jhon Arias,Colombia,MID,3.0,,,False,
+missing_from_holdet,Richard Rios,Colombia,MID,3.5,,,False,
+missing_from_holdet,Kevin Castano,Colombia,MID,3.0,,,False,
+missing_from_holdet,Juan Portilla,Colombia,MID,2.5,,,False,
+missing_from_holdet,Jaminton Campaz,Colombia,MID,2.5,,,False,
+missing_from_holdet,Jorge Carrascal,Colombia,MID,2.5,,,False,
+missing_from_holdet,Denil Castillo,Ecuador,MID,2.5,,,False,
+missing_from_holdet,Gustavo Puerta,Colombia,MID,2.5,,,False,
+missing_from_holdet,Kendry Paez,Ecuador,MID,3.0,,,False,
+missing_from_holdet,Gonzalo Plata,Ecuador,MID,3.5,,,False,
+missing_from_holdet,Alan Franco,Ecuador,MID,2.5,,,False,
+missing_from_holdet,Moises Caicedo,Ecuador,MID,3.0,,,False,
+missing_from_holdet,John Yeboah,Ecuador,MID,3.0,,,False,
+missing_from_holdet,Jordy Alcivar,Ecuador,MID,2.0,,,False,
+missing_from_holdet,Alan Minda,Ecuador,MID,3.0,,,False,
+missing_from_holdet,Pedro Vite,Ecuador,MID,2.5,,,False,
+missing_from_holdet,Yaimar Medina,Ecuador,MID,2.0,,,False,
+missing_from_holdet,Amir Hadziahmetovic,Bosnien-Hercegovina,MID,2.0,,,False,
+missing_from_holdet,Ivan Basic,Bosnien-Hercegovina,MID,2.5,,,False,
+missing_from_holdet,Ermin Mahmic,Bosnien-Hercegovina,MID,2.0,,,False,
+missing_from_holdet,Amar Memic,Bosnien-Hercegovina,MID,3.0,,,False,
+missing_from_holdet,Esmir Bajraktarevic,Bosnien-Hercegovina,MID,3.0,,,False,
+missing_from_holdet,Dzenis Burnic,Bosnien-Hercegovina,MID,2.5,,,False,
+missing_from_holdet,Mohammad Ghorbani,Iran,MID,2.5,,,False,
+missing_from_holdet,Armin Gigovic,Bosnien-Hercegovina,MID,3.0,,,False,
+missing_from_holdet,Benjamin Tahirovic,Bosnien-Hercegovina,MID,3.0,,,False,
+missing_from_holdet,Kerim Alajbegovic,Bosnien-Hercegovina,MID,3.5,,,False,
+missing_from_holdet,Saman Ghoddos,Iran,MID,2.5,,,False,
+missing_from_holdet,Saeid Ezatolahi,Iran,MID,2.5,,,False,
+missing_from_holdet,Amir Mohammad Razzaghinia,Iran,MID,2.0,,,False,
+missing_from_holdet,Mehdi Ghayedi,Iran,MID,3.0,,,False,
+missing_from_holdet,Roozbeh Cheshmi,Iran,MID,2.0,,,False,
+missing_from_holdet,Omid Noorafkan,Iran,MID,2.5,,,True,
+missing_from_holdet,Ivan Sunjic,Bosnien-Hercegovina,MID,3.0,,,False,
+missing_from_holdet,Mehdi Torabi,Iran,MID,2.0,,,False,
+missing_from_holdet,Nicolas Raskin,Belgien,MID,2.5,,,False,
+missing_from_holdet,Hans Vanaken,Belgien,MID,4.0,,,False,
+missing_from_holdet,Youri Tielemans,Belgien,MID,3.5,,,False,
+missing_from_holdet,Axel Witsel,Belgien,MID,3.0,,,False,
+missing_from_holdet,Kevin De Bruyne,Belgien,MID,7.0,,,False,
+missing_from_holdet,Ali Jasim,Irak,MID,3.0,,,False,
+missing_from_holdet,Amir Al Ammari,Irak,MID,3.0,,,False,
+missing_from_holdet,Ahmed Qasem,Irak,MID,2.0,,,False,
+missing_from_holdet,Aimar Sher,Irak,MID,2.5,,,False,
+missing_from_holdet,Peter Gwargis,Irak,MID,2.0,,,True,
+missing_from_holdet,Kevin Yakob,Irak,MID,2.0,,,False,
+missing_from_holdet,Charles Vanhoutte,Belgien,MID,2.0,,,True,
+missing_from_holdet,Diego Moreira,Belgien,MID,2.0,,,False,
+missing_from_holdet,Amadou Onana,Belgien,MID,3.0,,,False,
+missing_from_holdet,Ibrahim Bayesh,Irak,MID,2.5,,,False,
+missing_from_holdet,Zaid Ismail,Irak,MID,2.5,,,False,
+missing_from_holdet,Hasan Abdulkareem,Irak,MID,2.0,,,True,
+missing_from_holdet,Marko Farji,Irak,MID,2.5,,,False,
+missing_from_holdet,Carlos Harvey,Panama,MID,2.5,,,False,
+missing_from_holdet,Adalberto Carrasquilla,Panama,MID,2.5,,,False,
+missing_from_holdet,Alberto Quintero,Panama,MID,2.0,,,False,
+missing_from_holdet,Anibal Godoy,Panama,MID,2.5,,,False,
+missing_from_holdet,Cristian Martinez,Panama,MID,2.5,,,False,
+missing_from_holdet,Yoel Barcenas,Panama,MID,2.0,,,False,
+missing_from_holdet,Cesar Yanis,Panama,MID,2.0,,,False,
+missing_from_holdet,Azarias Londono,Panama,MID,2.0,,,False,
+missing_from_holdet,Zidane Iqbal,Irak,MID,2.5,,,False,
+missing_from_holdet,Youssef Amyn,Irak,MID,2.5,,,False,
+missing_from_holdet,Jose Luis Rodriguez Francis,Panama,MID,2.5,,,False,
+missing_from_holdet,Mahmoud Trezeguet,Egypten,MID,3.0,,,False,
+missing_from_holdet,Haissem Hassan,Egypten,MID,2.0,,,False,
+missing_from_holdet,Emam Ashour,Egypten,MID,2.5,,,False,
+missing_from_holdet,Islam Issa,Egypten,MID,2.0,,,True,
+missing_from_holdet,Marwan Ateya,Egypten,MID,3.0,,,False,
+missing_from_holdet,Mohanad Lasheen,Egypten,MID,2.5,,,False,
+missing_from_holdet,Hamdy Fathy,Egypten,MID,2.5,,,False,
+missing_from_holdet,Mahmoud Saber,Egypten,MID,2.5,,,False,
+missing_from_holdet,Ibrahim Adel,Egypten,MID,3.0,,,False,
+missing_from_holdet,Ahmed Zizo,Egypten,MID,3.0,,,False,
+missing_from_holdet,Mohamed Rabie Hrimat,Marokko,MID,2.0,,,True,
+missing_from_holdet,Ayoube Amaimouni-Echghouyab,Marokko,MID,2.5,,,False,
+missing_from_holdet,Samir El Mourabet,Marokko,MID,2.0,,,False,
+missing_from_holdet,Soufiane Rahimi,Marokko,MID,2.5,,,False,
+missing_from_holdet,Gessime Yassine,Marokko,MID,2.0,,,False,
+missing_from_holdet,Nabil 'Dunga' Emad,Egypten,MID,2.0,,,False,
+missing_from_holdet,Mostafa Ziko,Egypten,MID,2.0,,,False,
+missing_from_holdet,Sofyan Amrabat,Marokko,MID,2.5,,,False,
+missing_from_holdet,Hakim Ziyech,Marokko,MID,2.5,,,True,
+missing_from_holdet,Ayyoub Bouaddi,Marokko,MID,2.0,,,False,
+missing_from_holdet,Eliesse Ben Seghir,Marokko,MID,3.0,,,True,
+missing_from_holdet,Azzedine Ounahi,Marokko,MID,3.0,,,False,
+missing_from_holdet,Ismaila Sarr,Senegal,MID,3.5,,,False,
+missing_from_holdet,Iliman Ndiaye,Senegal,MID,3.0,,,False,
+missing_from_holdet,Pape Alassane Gueye,Senegal,MID,3.0,,,False,
+missing_from_holdet,Cheikh Niasse,Senegal,MID,2.0,,,True,
+missing_from_holdet,Nampalys Mendy,Senegal,MID,2.0,,,True,
+missing_from_holdet,Idrissa Gana Gueye,Senegal,MID,3.0,,,False,
+missing_from_holdet,Bara Sapoko Ndiaye,Senegal,MID,2.0,,,False,
+missing_from_holdet,Pathe Ciss,Senegal,MID,2.5,,,False,
+missing_from_holdet,Lamine Camara,Senegal,MID,3.0,,,False,
+missing_from_holdet,Ibrahim Mbaye,Senegal,MID,4.0,,,False,
+missing_from_holdet,Pape Matar Sarr,Senegal,MID,2.5,,,False,
+missing_from_holdet,Habib Diarra,Senegal,MID,2.5,,,False,
+missing_from_holdet,Bilal El Khannouss,Marokko,MID,3.0,,,False,
+missing_from_holdet,Oussama Targhalline,Marokko,MID,2.5,,,True,
+missing_from_holdet,Ismael Saibari,Marokko,MID,3.5,,,False,
+missing_from_holdet,Neil El Aynaoui,Marokko,MID,3.0,,,False,
+missing_from_holdet,Mortadha Ben Ouanes,Tunesien,MID,2.0,,,False,
+missing_from_holdet,Khalil Ayari,Tunesien,MID,2.0,,,False,
+missing_from_holdet,Rani Khedira,Tunesien,MID,3.0,,,False,
+missing_from_holdet,Anis Ben Slimane,Tunesien,MID,2.5,,,False,
+missing_from_holdet,Aissa Laidouni,Tunesien,MID,2.0,,,True,
+missing_from_holdet,Amor Layouni,Tunesien,MID,2.0,,,True,
+missing_from_holdet,Elias Achouri,Tunesien,MID,3.5,,,False,
+missing_from_holdet,Ellyes Skhiri,Tunesien,MID,2.5,,,False,
+missing_from_holdet,Ferjani Sassi,Tunesien,MID,3.0,,,True,
+missing_from_holdet,Naim Sliti,Tunesien,MID,2.5,,,True,
+missing_from_holdet,Mohamed Ali Ben Romdhane,Tunesien,MID,3.5,,,True,
+missing_from_holdet,Elias Saad,Tunesien,MID,2.5,,,False,
+missing_from_holdet,Sebastian Tounekti,Tunesien,MID,2.0,,,False,
+missing_from_holdet,Hannibal Mejbri,Tunesien,MID,3.0,,,False,
+missing_from_holdet,Ismael Gharbi,Tunesien,MID,2.5,,,False,
+missing_from_holdet,Sayfallah Ltaief,Tunesien,MID,2.0,,,True,
+missing_from_holdet,Mohamed 'Hadj' Mahmoud,Tunesien,MID,2.0,,,False,
+missing_from_holdet,Ayman Yahya Salem,Saudi-Arabien,MID,2.5,,,False,
+missing_from_holdet,Saleh Al-Shamat,Saudi-Arabien,MID,2.5,,,True,
+missing_from_holdet,Musab Al-Juwayr,Saudi-Arabien,MID,2.5,,,False,
+missing_from_holdet,Ziyad Al-Johani,Saudi-Arabien,MID,2.5,,,False,
+missing_from_holdet,Nasser Al-Dawsari,Saudi-Arabien,MID,2.5,,,False,
+missing_from_holdet,Abdullah Al-Khaibari,Saudi-Arabien,MID,2.5,,,False,
+missing_from_holdet,Mohamed Kanno,Saudi-Arabien,MID,3.0,,,False,
+missing_from_holdet,Salem Al-Dawsari,Saudi-Arabien,MID,3.0,,,False,
+missing_from_holdet,Alaa Hejji,Saudi-Arabien,MID,2.0,,,False,
+missing_from_holdet,Khalid Al-Ghannam,Saudi-Arabien,MID,2.5,,,False,
+missing_from_holdet,Abdulrahman Al-Obood,Saudi-Arabien,MID,2.5,,,True,
+missing_from_holdet,Ahmed Fathi,Qatar,MID,2.5,,,False,
+missing_from_holdet,Abdulaziz Hatim Mohammed,Qatar,MID,2.5,,,False,
+missing_from_holdet,Assim Madibo,Qatar,MID,2.5,,,False,
+missing_from_holdet,Hassan Al-Haydos,Qatar,MID,2.5,,,False,
+missing_from_holdet,Karim Boudiaf,Qatar,MID,2.5,,,False,
+missing_from_holdet,Jassem Gaber,Qatar,MID,2.5,,,False,
+missing_from_holdet,Mohammed Waad,Qatar,MID,2.5,,,True,
+missing_from_holdet,Lennon Miller,Skotland,MID,2.0,,,True,
+missing_from_holdet,Andrew Irving,Skotland,MID,2.0,,,True,
+missing_from_holdet,Ahmed Al-Ganehi,Qatar,MID,2.0,,,False,
+missing_from_holdet,Tahsin Jamshid,Qatar,MID,2.0,,,False,
+missing_from_holdet,Mohamed Al-Mannai,Qatar,MID,2.5,,,False,
+missing_from_holdet,Ben Doak,Skotland,MID,3.0,,,False,
+missing_from_holdet,Lewis Ferguson,Skotland,MID,2.0,,,False,
+missing_from_holdet,John McGinn,Skotland,MID,3.5,,,False,
+missing_from_holdet,Kenny McLean,Skotland,MID,2.5,,,False,
+missing_from_holdet,Ryan Christie,Skotland,MID,2.5,,,False,
+missing_from_holdet,Scott McTominay,Skotland,MID,4.5,,,False,
+missing_from_holdet,Tyler Fletcher,Skotland,MID,2.0,,,False,
+missing_from_holdet,Marcelo Flores,Canada,MID,2.0,,,False,
+missing_from_holdet,Tajon Buchanan,Canada,MID,3.5,,,False,
+missing_from_holdet,Billy Gilmour,Skotland,MID,3.0,,,True,
+missing_from_holdet,David 'Junior' Hoilett,Canada,MID,2.5,,,True,
+missing_from_holdet,Jonathan Osorio,Canada,MID,3.0,,,False,
+missing_from_holdet,Ismael Kone,Canada,MID,3.0,,,False,
+missing_from_holdet,Liam Millar,Canada,MID,3.0,,,False,
+missing_from_holdet,Ibrokhim Ibrokhimov,Usbekistan,MID,2.0,,,True,
+missing_from_holdet,Dostonbek Khamdamov,Usbekistan,MID,2.0,,,False,
+missing_from_holdet,Aziz Ganiev,Usbekistan,MID,2.5,,,False,
+missing_from_holdet,Mohammad Abu 'Shararh' Zrayq,Jordan,MID,2.5,,,False,
+missing_from_holdet,Alisher Odilov,Usbekistan,MID,2.0,,,True,
+missing_from_holdet,Umarali Rakhmonaliyev,Usbekistan,MID,2.0,,,True,
+missing_from_holdet,Rajaei Ayed,Jordan,MID,2.5,,,False,
+missing_from_holdet,Odildzhon Khamrobekov,Usbekistan,MID,2.5,,,False,
+missing_from_holdet,Akmal Mozgovoy,Usbekistan,MID,2.5,,,False,
+missing_from_holdet,Jamshid Iskanderov,Usbekistan,MID,2.0,,,False,
+missing_from_holdet,Abbosbek Fayzullaev,Usbekistan,MID,2.5,,,False,
+missing_from_holdet,Oston Urunov,Usbekistan,MID,2.5,,,False,
+missing_from_holdet,Jaloliddin Masharipov,Usbekistan,MID,2.5,,,False,
+missing_from_holdet,Stephen Eustaquio,Canada,MID,2.5,,,False,
+missing_from_holdet,Sherzod Esanov,Usbekistan,MID,2.0,,,False,
+missing_from_holdet,Mathieu Choiniere,Canada,MID,2.5,,,False,
+missing_from_holdet,Ali Ahmed,Canada,MID,3.0,,,False,
+missing_from_holdet,Jacob Shaffelburg,Canada,MID,2.0,,,False,
+missing_from_holdet,Nathan Saliba,Canada,MID,3.0,,,False,
+missing_from_holdet,Niko Sigur,Canada,MID,2.5,,,False,
+missing_from_holdet,Otabek Shukurov,Usbekistan,MID,2.5,,,False,
+missing_from_holdet,Telmo Arcanjo,Kap Verde,MID,2.5,,,False,
+missing_from_holdet,Kevin Lenini Pina,Kap Verde,MID,2.0,,,False,
+missing_from_holdet,Laros Duarte,Kap Verde,MID,2.5,,,False,
+missing_from_holdet,Ailson Tavares,Kap Verde,MID,2.5,,,True,
+missing_from_holdet,Deroy Duarte,Kap Verde,MID,2.5,,,False,
+missing_from_holdet,Jamiro Monteiro,Kap Verde,MID,2.5,,,False,
+missing_from_holdet,Yannick Semedo,Kap Verde,MID,2.0,,,False,
+missing_from_holdet,Mohammad Al-Dawoud,Jordan,MID,2.0,,,False,
+missing_from_holdet,Yousef Qashi,Jordan,MID,2.0,,,True,
+missing_from_holdet,Mohammad Taha,Jordan,MID,2.0,,,True,
+missing_from_holdet,Mahmoud Al-Mardi,Jordan,MID,2.0,,,False,
+missing_from_holdet,Mohannad Abu Taha,Jordan,MID,2.5,,,False,
+missing_from_holdet,Odeh Al-Fakhouri,Jordan,MID,2.0,,,False,
+missing_from_holdet,Mousa Tamari,Jordan,MID,3.0,,,False,
+missing_from_holdet,Ali Azaizeh,Jordan,MID,2.0,,,False,
+missing_from_holdet,Mohammad Abu Hasheesh,Jordan,MID,2.5,,,False,
+missing_from_holdet,Nizar Al-Rashdan,Jordan,MID,2.0,,,False,
+missing_from_holdet,Noor Al-Rawabdeh,Jordan,MID,2.5,,,False,
+missing_from_holdet,Ibrahim Saadeh,Jordan,MID,2.5,,,False,
+missing_from_holdet,Amer Jamous,Jordan,MID,2.5,,,False,
+missing_from_holdet,Martin Ødegaard,Norge,MID,4.5,,,False,
+missing_from_holdet,Morten Thorsby,Norge,MID,2.5,,,False,
+missing_from_holdet,Patrick Berg,Norge,MID,2.5,,,False,
+missing_from_holdet,Felix Horn Myhre,Norge,MID,2.0,,,True,
+missing_from_holdet,Kristian Thorstvedt,Norge,MID,2.0,,,False,
+missing_from_holdet,Antonio Nusa,Norge,MID,3.5,,,False,
+missing_from_holdet,Jens Petter Hauge,Norge,MID,2.5,,,False,
+missing_from_holdet,Fredrik Aursnes,Norge,MID,3.0,,,False,
+missing_from_holdet,Kristian Arnstad,Norge,MID,2.5,,,True,
+missing_from_holdet,Thelo Aasgaard,Norge,MID,2.0,,,False,
+missing_from_holdet,Oscar Bobb,Norge,MID,3.0,,,False,
+missing_from_holdet,Sander Berge,Norge,MID,3.0,,,False,
+missing_from_holdet,Andreas Schjelderup,Norge,MID,3.5,,,False,
+missing_from_holdet,Tahith Chong,Curaçao,MID,2.0,,,False,
+missing_from_holdet,Juninho Bacuna,Curaçao,MID,3.0,,,False,
+missing_from_holdet,Kevin Felida,Curaçao,MID,2.0,,,False,
+missing_from_holdet,Tyrese Noslin,Curaçao,MID,2.0,,,False,
+missing_from_holdet,Woodensky Pierre,Haiti,MID,2.0,,,False,
+missing_from_holdet,Dominique Simon,Haiti,MID,2.0,,,False,
+missing_from_holdet,Leandro Bacuna,Curaçao,MID,2.5,,,False,
+missing_from_holdet,Godfried Roemeratoe,Curaçao,MID,2.0,,,False,
+missing_from_holdet,Danley Jean Jacques,Haiti,MID,3.0,,,False,
+missing_from_holdet,Leverton Pierre,Haiti,MID,2.5,,,False,
+missing_from_holdet,Carl Sainte,Haiti,MID,2.0,,,False,
+missing_from_holdet,Jean-Ricner Bellegarde,Haiti,MID,3.0,,,False,
+missing_from_holdet,Gaël Kakuta,Congo DR,MID,2.5,,,False,
+missing_from_holdet,Grady Diangana,Congo DR,MID,2.5,,,True,
+missing_from_holdet,Noah Sadiki,Congo DR,MID,2.5,,,False,
+missing_from_holdet,Ngal'ayel Mukau,Congo DR,MID,2.5,,,False,
+missing_from_holdet,Nathanael Mbuku,Congo DR,MID,2.5,,,False,
+missing_from_holdet,Meschack Elia,Congo DR,MID,3.0,,,False,
+missing_from_holdet,Edo Kayembe,Congo DR,MID,2.5,,,False,
+missing_from_holdet,Charles Pickel,Congo DR,MID,2.5,,,False,
+missing_from_holdet,Theo Bongonda,Congo DR,MID,3.0,,,False,
+missing_from_holdet,Samuel Moutoussamy,Congo DR,MID,3.0,,,False,
+missing_from_holdet,Brian Cipenga,Congo DR,MID,2.0,,,False,
+missing_from_holdet,Fiston Mayele,Congo DR,FWD,3.0,,,False,
+missing_from_holdet,Cedric Bakambu,Congo DR,FWD,3.5,,,False,
+missing_from_holdet,Simon Banza,Congo DR,FWD,2.5,,,False,
+missing_from_holdet,Wilson Isidor,Haiti,FWD,3.0,,,False,
+missing_from_holdet,Don Deedson Louicius,Haiti,FWD,3.0,,,False,
+missing_from_holdet,Frantzdy Pierrot,Haiti,FWD,3.0,,,False,
+missing_from_holdet,Ruben Providence,Haiti,FWD,2.5,,,False,
+missing_from_holdet,Yoane Wissa,Congo DR,FWD,3.5,,,False,
+missing_from_holdet,Duckens Nazon,Haiti,FWD,3.5,,,False,
+missing_from_holdet,Woobens Pacius,Haiti,FWD,2.0,,,True,
+missing_from_holdet,Derrick Etienne Jr.,Haiti,FWD,2.0,,,False,
+missing_from_holdet,Lenny Joseph,Haiti,FWD,2.0,,,False,
+missing_from_holdet,Josue Casimir,Haiti,FWD,2.5,,,False,
+missing_from_holdet,Yassin Fortune,Haiti,FWD,2.0,,,False,
+missing_from_holdet,Ar'jany Martha,Curaçao,FWD,2.0,,,False,
+missing_from_holdet,Sontje Hansen,Curaçao,FWD,2.0,,,False,
+missing_from_holdet,Jürgen Locadia,Curaçao,FWD,2.0,,,False,
+missing_from_holdet,Brandley Kuwas,Curaçao,FWD,2.0,,,False,
+missing_from_holdet,Gervane Kastaneer,Curaçao,FWD,2.5,,,False,
+missing_from_holdet,Jeremy Antonisse,Curaçao,FWD,2.0,,,False,
+missing_from_holdet,Jearl Margaritha,Curaçao,FWD,3.0,,,False,
+missing_from_holdet,Kenji Gorre,Curaçao,FWD,2.5,,,False,
+missing_from_holdet,Jørgen Strand Larsen,Norge,FWD,3.0,,,False,
+missing_from_holdet,Erling Haaland,Norge,FWD,8.5,,,False,
+missing_from_holdet,Alexander Sørloth,Norge,FWD,4.5,,,False,
+missing_from_holdet,Garry Mendes Rodrigues,Kap Verde,FWD,2.5,,,False,
+missing_from_holdet,Gilson Benchimol Tavares,Kap Verde,FWD,2.5,,,False,
+missing_from_holdet,Ryan Mendes Da Graça,Kap Verde,FWD,3.0,,,False,
+missing_from_holdet,Jovane Cabral,Kap Verde,FWD,2.5,,,False,
+missing_from_holdet,Nuno da Costa,Kap Verde,FWD,2.5,,,False,
+missing_from_holdet,Ali Olwan,Jordan,FWD,3.5,,,False,
+missing_from_holdet,Ibrahim Sabra,Jordan,FWD,2.5,,,False,
+missing_from_holdet,Baha'a Faisal,Jordan,FWD,2.5,,,True,
+missing_from_holdet,Dailon Livramento,Kap Verde,FWD,3.0,,,False,
+missing_from_holdet,Helio Varela,Kap Verde,FWD,2.5,,,False,
+missing_from_holdet,Willy Semedo,Kap Verde,FWD,3.5,,,False,
+missing_from_holdet,Eldor Shomurodov,Usbekistan,FWD,3.0,,,False,
+missing_from_holdet,Azizbek Amanov,Usbekistan,FWD,2.0,,,False,
+missing_from_holdet,Igor Sergeev,Usbekistan,FWD,2.0,,,False,
+missing_from_holdet,Promise David,Canada,FWD,3.0,,,False,
+missing_from_holdet,Aribim Pepple,Canada,FWD,2.0,,,True,
+missing_from_holdet,Tani Oluwaseyi,Canada,FWD,2.5,,,False,
+missing_from_holdet,Findlay Curtis,Skotland,FWD,2.0,,,False,
+missing_from_holdet,Daniel Jebbison,Canada,FWD,2.5,,,True,
+missing_from_holdet,Jonathan David,Canada,FWD,4.5,,,False,
+missing_from_holdet,Jacen Russell-Rowe,Canada,FWD,2.0,,,True,
+missing_from_holdet,Cyle Christopher Larin,Canada,FWD,3.0,,,False,
+missing_from_holdet,George Hirst,Skotland,FWD,2.5,,,False,
+missing_from_holdet,Che Adams,Skotland,FWD,3.0,,,False,
+missing_from_holdet,Lyndon Dykes,Skotland,FWD,2.5,,,False,
+missing_from_holdet,Lawrence Shankland,Skotland,FWD,2.5,,,False,
+missing_from_holdet,Edmilson Junior,Qatar,FWD,2.5,,,False,
+missing_from_holdet,Ross Stewart,Skotland,FWD,2.0,,,False,
+missing_from_holdet,Tommy Conway,Skotland,FWD,2.5,,,True,
+missing_from_holdet,Mohammed Muntari,Qatar,FWD,2.0,,,False,
+missing_from_holdet,Yusuf Abdurisag,Qatar,FWD,2.0,,,False,
+missing_from_holdet,Ahmed Alaaeldin Abdelmotaal,Qatar,FWD,3.0,,,False,
+missing_from_holdet,Almoez Ali,Qatar,FWD,3.0,,,False,
+missing_from_holdet,Akram Afif,Qatar,FWD,3.5,,,False,
+missing_from_holdet,Sultan Mandash,Saudi-Arabien,FWD,2.5,,,False,
+missing_from_holdet,Firas Al Brikan,Saudi-Arabien,FWD,3.5,,,False,
+missing_from_holdet,Saleh Al-Shehri,Saudi-Arabien,FWD,2.5,,,False,
+missing_from_holdet,Abdullah Al-Hamdan,Saudi-Arabien,FWD,2.5,,,False,
+missing_from_holdet,Hazem Mastouri,Tunesien,FWD,3.5,,,False,
+missing_from_holdet,Firas Chaouat,Tunesien,FWD,2.5,,,False,
+missing_from_holdet,Youssef Msakni,Tunesien,FWD,2.5,,,True,
+missing_from_holdet,Louey Ben Farhat,Tunesien,FWD,2.0,,,True,
+missing_from_holdet,Rayan Elloumi,Tunesien,FWD,2.0,,,False,
+missing_from_holdet,Pape Cherif Ndiaye,Senegal,FWD,3.0,,,False,
+missing_from_holdet,Assane Diao Diaoune,Senegal,FWD,2.5,,,False,
+missing_from_holdet,Nicolas Jackson,Senegal,FWD,4.5,,,False,
+missing_from_holdet,Boulaye Dia,Senegal,FWD,2.0,,,True,
+missing_from_holdet,Bamba Dieng,Senegal,FWD,2.0,,,False,
+missing_from_holdet,Habib Diallo,Senegal,FWD,2.5,,,True,
+missing_from_holdet,Sadio Mane,Senegal,FWD,5.0,,,False,
+missing_from_holdet,Krepin Diatta,Senegal,FWD,2.5,,,False,
+missing_from_holdet,Abde Ezzalzouli,Marokko,FWD,3.0,,,False,
+missing_from_holdet,Amine Adli,Marokko,FWD,2.5,,,True,
+missing_from_holdet,Chemsdine Talbi,Marokko,FWD,2.5,,,False,
+missing_from_holdet,Youssef En-Nesyri,Marokko,FWD,3.5,,,True,
+missing_from_holdet,Ayoub El Kaabi,Marokko,FWD,3.5,,,False,
+missing_from_holdet,Aqtay Abdallah,Egypten,FWD,2.0,,,True,
+missing_from_holdet,Hamza Abdelkarim,Egypten,FWD,2.0,,,False,
+missing_from_holdet,Brahim Diaz,Marokko,FWD,4.5,,,False,
+missing_from_holdet,Mostafa Mohamed,Egypten,FWD,3.5,,,True,
+missing_from_holdet,Nasser Mansy,Egypten,FWD,2.0,,,True,
+missing_from_holdet,Omar Marmoush,Egypten,FWD,5.0,,,False,
+missing_from_holdet,Mohamed Salah,Egypten,FWD,5.0,,,False,
+missing_from_holdet,Ismael Diaz,Panama,FWD,2.5,,,False,
+missing_from_holdet,Jose Fajardo,Panama,FWD,3.0,,,False,
+missing_from_holdet,Kadir Barria,Panama,FWD,2.0,,,True,
+missing_from_holdet,Cecilio Waterman,Panama,FWD,2.0,,,False,
+missing_from_holdet,Tomas Rodriguez,Panama,FWD,2.0,,,False,
+missing_from_holdet,Ali Yousif,Irak,FWD,2.0,,,False,
+missing_from_holdet,Aymen Hussein,Irak,FWD,3.5,,,False,
+missing_from_holdet,Mohanad Ali,Irak,FWD,3.0,,,False,
+missing_from_holdet,Alexis Saelemaekers,Belgien,FWD,4.0,,,False,
+missing_from_holdet,Matias Fernandez-Pardo,Belgien,FWD,2.5,,,False,
+missing_from_holdet,Romeo Vermant,Belgien,FWD,2.0,,,True,
+missing_from_holdet,Ali Al-Hamadi,Irak,FWD,2.5,,,False,
+missing_from_holdet,Lois Openda,Belgien,FWD,4.0,,,True,
+missing_from_holdet,Leandro Trossard,Belgien,FWD,5.5,,,False,
+missing_from_holdet,Romelu Lukaku,Belgien,FWD,4.5,,,False,
+missing_from_holdet,Charles De Ketelaere,Belgien,FWD,6.0,,,False,
+missing_from_holdet,Jeremy Doku,Belgien,FWD,6.5,,,False,
+missing_from_holdet,Dodi Lukebakio,Belgien,FWD,3.5,,,False,
+missing_from_holdet,Alireza Jahanbakhsh,Iran,FWD,2.5,,,False,
+missing_from_holdet,Shahriar Moghanlou,Iran,FWD,2.0,,,False,
+missing_from_holdet,Dennis 'Dargahi' Eckert Ayensa,Iran,FWD,2.0,,,False,
+missing_from_holdet,Samed Bazdar,Bosnien-Hercegovina,FWD,2.0,,,False,
+missing_from_holdet,Mohammad Mohebi,Iran,FWD,3.0,,,False,
+missing_from_holdet,Ali Alipour,Iran,FWD,2.5,,,False,
+missing_from_holdet,Amirhossein Hosseinzadeh,Iran,FWD,3.0,,,False,
+missing_from_holdet,Mehdi Taremi,Iran,FWD,3.5,,,False,
+missing_from_holdet,Edin Dzeko,Bosnien-Hercegovina,FWD,4.5,,,False,
+missing_from_holdet,Haris Tabakovic,Bosnien-Hercegovina,FWD,3.0,,,False,
+missing_from_holdet,Jovo Lukic,Bosnien-Hercegovina,FWD,2.0,,,False,
+missing_from_holdet,Ermedin Demirovic,Bosnien-Hercegovina,FWD,3.0,,,False,
+missing_from_holdet,Jordy Caicedo,Ecuador,FWD,2.5,,,False,
+missing_from_holdet,John Mercado,Ecuador,FWD,2.0,,,True,
+missing_from_holdet,Janner Corozo,Ecuador,FWD,2.0,,,True,
+missing_from_holdet,Jeremy Arevalo,Ecuador,FWD,2.0,,,False,
+missing_from_holdet,Enner Valencia,Ecuador,FWD,4.0,,,False,
+missing_from_holdet,Kevin Rodriguez,Ecuador,FWD,3.0,,,False,
+missing_from_holdet,Nilson Angulo,Ecuador,FWD,2.0,,,False,
+missing_from_holdet,Luis Diaz,Colombia,FWD,5.5,,,False,
+missing_from_holdet,Juan 'Cucho' Hernandez,Colombia,FWD,4.0,,,False,
+missing_from_holdet,Luis Suarez Charris,Colombia,FWD,4.5,,,False,
+missing_from_holdet,Anthony Valencia,Ecuador,FWD,2.0,,,False,
+missing_from_holdet,Jhon Cordoba,Colombia,FWD,3.0,,,False,
+missing_from_holdet,Rafael Santos Borre,Colombia,FWD,4.0,,,True,
+missing_from_holdet,Johan Carbonero,Colombia,FWD,3.5,,,True,
+missing_from_holdet,Darwin Nunez,Uruguay,FWD,6.0,,,False,
+missing_from_holdet,Agustin Alvarez,Uruguay,FWD,3.0,,,True,
+missing_from_holdet,Facundo Torres,Uruguay,FWD,3.5,,,True,
+missing_from_holdet,Federico Vinas,Uruguay,FWD,4.0,,,False,
+missing_from_holdet,Facundo Pellistri,Uruguay,FWD,3.5,,,False,
+missing_from_holdet,Bongokuhle Hlongwane,Sydafrika,FWD,2.0,,,True,
+missing_from_holdet,Relebohile Mofokeng,Sydafrika,FWD,2.5,,,False,
+missing_from_holdet,Thapelo Maseko,Sydafrika,FWD,2.0,,,False,
+missing_from_holdet,Thapelo Morena,Sydafrika,FWD,3.0,,,True,
+missing_from_holdet,Brian Rodriguez,Uruguay,FWD,3.5,,,False,
+missing_from_holdet,Rodrigo Aguirre,Uruguay,FWD,3.0,,,False,
+missing_from_holdet,Julio Enciso,Paraguay,FWD,3.5,,,False,
+missing_from_holdet,Lyle Foster,Sydafrika,FWD,3.5,,,False,
+missing_from_holdet,Evidence Makgopa,Sydafrika,FWD,2.5,,,False,
+missing_from_holdet,Mohau Nkota,Sydafrika,FWD,2.5,,,True,
+missing_from_holdet,Tshepang Moremi,Sydafrika,FWD,2.5,,,False,
+missing_from_holdet,Oswin Appollis,Sydafrika,FWD,3.5,,,False,
+missing_from_holdet,Alex Arce,Paraguay,FWD,2.5,,,False,
+missing_from_holdet,Ronaldo Martinez,Paraguay,FWD,2.0,,,True,
+missing_from_holdet,Gabriel Avalos,Paraguay,FWD,2.0,,,False,
+missing_from_holdet,Angel Romero,Paraguay,FWD,2.0,,,True,
+missing_from_holdet,Antonio Sanabria,Paraguay,FWD,4.0,,,False,
+missing_from_holdet,Iqraam Rayners,Sydafrika,FWD,2.5,,,False,
+missing_from_holdet,Isidro Pitta,Paraguay,FWD,2.0,,,False,
+missing_from_holdet,Chris Wood,New Zealand,FWD,3.5,,,False,
+missing_from_holdet,Ben Waine,New Zealand,FWD,2.5,,,False,
+missing_from_holdet,Logan Rogerson,New Zealand,FWD,2.5,,,True,
+missing_from_holdet,Kosta Barbarouses,New Zealand,FWD,2.5,,,False,
+missing_from_holdet,Jesse Randall,New Zealand,FWD,2.0,,,False,
+missing_from_holdet,Santiago Gimenez,Mexico,FWD,3.5,,,False,
+missing_from_holdet,Julian Quinones,Mexico,FWD,3.0,,,False,
+missing_from_holdet,Alexis Vega,Mexico,FWD,2.5,,,False,
+missing_from_holdet,Raul Jimenez,Mexico,FWD,4.5,,,False,
+missing_from_holdet,Armando Gonzalez,Mexico,FWD,2.5,,,False,
+missing_from_holdet,Guillermo Martínez,Mexico,FWD,2.0,,,False,
+missing_from_holdet,German Berterame,Mexico,FWD,3.0,,,True,
+missing_from_holdet,Gue-sung Cho,Sydkorea,FWD,2.5,,,False,
+missing_from_holdet,Heung-Min Son,Sydkorea,FWD,6.0,,,False,
+missing_from_holdet,Yuito Suzuki,Japan,FWD,2.5,,,False,
+missing_from_holdet,Hyeon-Gyu Oh,Sydkorea,FWD,3.5,,,False,
+missing_from_holdet,Shuto Machino,Japan,FWD,2.5,,,True,
+missing_from_holdet,Koki Ogawa,Japan,FWD,4.0,,,False,
+missing_from_holdet,Ayase Ueda,Japan,FWD,5.5,,,False,
+missing_from_holdet,Daizen Maeda,Japan,FWD,2.5,,,False,
+missing_from_holdet,Kento Shiogai,Japan,FWD,2.5,,,False,
+missing_from_holdet,Keisuke Goto,Japan,FWD,2.5,,,False,
+missing_from_holdet,Prince Adu,Ghana,FWD,2.0,,,False,
+missing_from_holdet,Christopher Bonsu Baah,Ghana,FWD,2.5,,,False,
+missing_from_holdet,Brandon Thomas-Asante,Ghana,FWD,2.5,,,False,
+missing_from_holdet,Iñaki Williams,Ghana,FWD,3.0,,,False,
+missing_from_holdet,Jordan Ayew,Ghana,FWD,3.0,,,False,
+missing_from_holdet,Daniel Nana Agyei,Ghana,FWD,2.0,,,True,
+missing_from_holdet,Antoine Semenyo,Ghana,FWD,4.0,,,False,
+missing_from_holdet,Kamaldeen Sulemana,Ghana,FWD,3.0,,,False,
+missing_from_holdet,Issahaku Abdul Fatawu,Ghana,FWD,2.5,,,False,
+missing_from_holdet,Ernest Nuamah,Ghana,FWD,2.5,,,False,
+missing_from_holdet,Anthony Gordon,England,FWD,4.0,,,False,
+missing_from_holdet,Noni Madueke,England,FWD,3.5,,,False,
+missing_from_holdet,Ollie Watkins,England,FWD,4.0,,,False,
+missing_from_holdet,Jarrod Bowen,England,FWD,3.0,,,True,
+missing_from_holdet,Bukayo Saka,England,FWD,6.5,,,False,
+missing_from_holdet,Ange-Yoan Bonny,Elfenbenskysten,FWD,2.5,,,False,
+missing_from_holdet,Evann Guessand,Elfenbenskysten,FWD,3.0,,,False,
+missing_from_holdet,Nicolas Pepe,Elfenbenskysten,FWD,2.5,,,False,
+missing_from_holdet,Amad Diallo,Elfenbenskysten,FWD,3.5,,,False,
+missing_from_holdet,Simon Adingra,Elfenbenskysten,FWD,2.5,,,False,
+missing_from_holdet,Benie Traore,Elfenbenskysten,FWD,2.5,,,True,
+missing_from_holdet,Marcus Rashford,England,FWD,5.5,,,False,
+missing_from_holdet,Ivan Toney,England,FWD,3.5,,,False,
+missing_from_holdet,Harry Kane,England,FWD,9.5,,,False,
+missing_from_holdet,Oumar Diakite,Elfenbenskysten,FWD,2.5,,,False,
+missing_from_holdet,Elye Wahi,Elfenbenskysten,FWD,2.5,,,False,
+missing_from_holdet,Bazoumana Toure,Elfenbenskysten,FWD,2.0,,,False,
+missing_from_holdet,Yan Diomande,Elfenbenskysten,FWD,3.0,,,False,
+missing_from_holdet,Martial Godo,Elfenbenskysten,FWD,3.0,,,True,
+missing_from_holdet,Luiz Henrique,Brasilien,FWD,3.0,,,False,
+missing_from_holdet,Rayan,Brasilien,FWD,3.0,,,False,
+missing_from_holdet,Igor Thiago,Brasilien,FWD,4.0,,,False,
+missing_from_holdet,Endrick,Brasilien,FWD,2.5,,,False,
+missing_from_holdet,João Pedro,Brasilien,FWD,4.0,,,True,
+missing_from_holdet,Raphinha,Brasilien,FWD,6.5,,,False,
+missing_from_holdet,Neymar Jr.,Brasilien,FWD,5.5,,,False,
+missing_from_holdet,Gabriel Martinelli,Brasilien,FWD,4.0,,,False,
+missing_from_holdet,Vinicius Junior,Brasilien,FWD,7.5,,,False,
+missing_from_holdet,Matheus Cunha,Brasilien,FWD,4.5,,,False,
+missing_from_holdet,Awer Mabil,Australien,FWD,2.0,,,False,
+missing_from_holdet,Nestory Irankunda,Australien,FWD,3.5,,,False,
+missing_from_holdet,Martin Boyle,Australien,FWD,2.5,,,True,
+missing_from_holdet,Mohamed Toure,Australien,FWD,3.0,,,False,
+missing_from_holdet,Tete Yengi,Australien,FWD,2.0,,,False,
+missing_from_holdet,Deni Juric,Australien,FWD,2.5,,,True,
+missing_from_holdet,Nishan Velupillay,Australien,FWD,2.5,,,False,
+missing_from_holdet,Ante Suto,Australien,FWD,2.0,,,True,
+missing_from_holdet,Jose Manuel Lopez,Argentina,FWD,2.5,,,False,
+missing_from_holdet,Giuliano Simeone,Argentina,FWD,4.0,,,False,
+missing_from_holdet,Julian Alvarez,Argentina,FWD,6.0,,,False,
+missing_from_holdet,Riyad Mahrez,Algeriet,FWD,4.0,,,False,
+missing_from_holdet,Nico Gonzalez,Argentina,FWD,4.0,,,False,
+missing_from_holdet,Lautaro Martinez,Argentina,FWD,8.0,,,False,
+missing_from_holdet,Lionel Messi,Argentina,FWD,8.0,,,False,
+missing_from_holdet,Amine Gouiri,Algeriet,FWD,3.0,,,False,
+missing_from_holdet,Baghdad Bounedjah,Algeriet,FWD,3.0,,,True,
+missing_from_holdet,Anis Hadj Moussa,Algeriet,FWD,2.5,,,False,
+missing_from_holdet,Ahmed Nadhir Benbouali,Algeriet,FWD,2.0,,,False,
+missing_from_holdet,Adil Boulbina,Algeriet,FWD,2.5,,,False,
+missing_from_holdet,Fares Ghedjemis,Algeriet,FWD,2.0,,,False,
+missing_from_holdet,Amin Chiakha,Algeriet,FWD,2.5,,,True,
+missing_from_holdet,Mohamed Amoura,Algeriet,FWD,3.5,,,False,
+missing_from_holdet,Anthony Elanga,Sverige,FWD,3.5,,,False,
+missing_from_holdet,Williot Swedberg,Sverige,FWD,2.5,,,True,
+missing_from_holdet,Viktor Gyökeres,Sverige,FWD,6.0,,,False,
+missing_from_holdet,Benjamin Nygren,Sverige,FWD,3.0,,,False,
+missing_from_holdet,Alexander Isak,Sverige,FWD,5.0,,,False,
+missing_from_holdet,Gustaf Nilsson,Sverige,FWD,2.0,,,False,
+missing_from_holdet,Borja Iglesias,Spanien,FWD,3.5,,,False,
+missing_from_holdet,Mikel Oyarzabal,Spanien,FWD,7.5,,,False,
+missing_from_holdet,Ferran Torres,Spanien,FWD,5.0,,,False,
+missing_from_holdet,Nico Williams,Spanien,FWD,4.5,,,False,
+missing_from_holdet,Samuel Aghehowa,Spanien,FWD,3.0,,,True,
+missing_from_holdet,Lamine Yamal,Spanien,FWD,9.0,,,False,
+missing_from_holdet,Victor Munoz,Spanien,FWD,3.0,,,False,
+missing_from_holdet,Noa Lang,Holland,FWD,3.0,,,False,
+missing_from_holdet,Cody Gakpo,Holland,FWD,6.5,,,False,
+missing_from_holdet,Donyell Malen,Holland,FWD,4.5,,,False,
+missing_from_holdet,Brian Brobbey,Holland,FWD,2.5,,,False,
+missing_from_holdet,Wout Weghorst,Holland,FWD,3.0,,,False,
+missing_from_holdet,Memphis Depay,Holland,FWD,4.0,,,False,
+missing_from_holdet,Ousmane Dembele,Frankrig,FWD,5.5,,,False,
+missing_from_holdet,Michael Olise,Frankrig,FWD,7.0,,,False,
+missing_from_holdet,Randal Kolo Muani,Frankrig,FWD,4.5,,,True,
+missing_from_holdet,Desire Doue,Frankrig,FWD,4.0,,,False,
+missing_from_holdet,Maghnes Akliouche,Frankrig,FWD,3.5,,,False,
+missing_from_holdet,Hugo Ekitike,Frankrig,FWD,6.0,,,True,
+missing_from_holdet,Rayan Cherki,Frankrig,FWD,4.0,,,False,
+missing_from_holdet,Jean-Philippe Mateta,Frankrig,FWD,3.5,,,False,
+missing_from_holdet,Kylian Mbappe,Frankrig,FWD,10.0,,,False,
+missing_from_holdet,Marcus Thuram,Frankrig,FWD,5.0,,,False,
+missing_from_holdet,Maximilian Beier,Tyskland,FWD,2.5,,,False,
+missing_from_holdet,Nick Woltemade,Tyskland,FWD,6.0,,,False,
+missing_from_holdet,Deniz Undav,Tyskland,FWD,3.5,,,False,
+missing_from_holdet,Kai Havertz,Tyskland,FWD,5.5,,,False,
+missing_from_holdet,Andrej Kramaric,Kroatien,FWD,5.5,,,False,
+missing_from_holdet,Serge Gnabry,Tyskland,FWD,6.0,,,True,
+missing_from_holdet,Leroy Sane,Tyskland,FWD,5.5,,,False,
+missing_from_holdet,Petar Musa,Kroatien,FWD,2.5,,,False,
+missing_from_holdet,Ante Budimir,Kroatien,FWD,3.5,,,False,
+missing_from_holdet,Ivan Perisic,Kroatien,FWD,4.5,,,False,
+missing_from_holdet,Igor Matanovic,Kroatien,FWD,2.5,,,False,
+missing_from_holdet,Marco Pasalic,Kroatien,FWD,3.0,,,False,
+missing_from_holdet,Raul Florucz,Østrig,FWD,2.0,,,True,
+missing_from_holdet,Marco Grüll,Østrig,FWD,2.0,,,True,
+missing_from_holdet,Sasa Kalajdzic,Østrig,FWD,2.5,,,False,
+missing_from_holdet,Michael Gregoritsch,Østrig,FWD,3.5,,,False,
+missing_from_holdet,Marko Arnautovic,Østrig,FWD,4.5,,,False,
+missing_from_holdet,Yunus Akgün,Tyrkiet,FWD,2.5,,,False,
+missing_from_holdet,Baris Alper Yilmaz,Tyrkiet,FWD,3.0,,,False,
+missing_from_holdet,Can Uzun,Tyrkiet,FWD,3.5,,,False,
+missing_from_holdet,Deniz Gül,Tyrkiet,FWD,2.5,,,False,
+missing_from_holdet,Rafael Leão,Portugal,FWD,5.5,,,False,
+missing_from_holdet,Goncalo Ramos,Portugal,FWD,5.0,,,False,
+missing_from_holdet,Francisco Trincao,Portugal,FWD,4.0,,,False,
+missing_from_holdet,Francisco Conceicao,Portugal,FWD,5.5,,,False,
+missing_from_holdet,João Felix,Portugal,FWD,4.5,,,False,
+missing_from_holdet,Pedro Neto,Portugal,FWD,5.0,,,False,
+missing_from_holdet,Goncalo Guedes,Portugal,FWD,2.5,,,False,
+missing_from_holdet,Cristiano Ronaldo,Portugal,FWD,7.0,,,False,
+missing_from_holdet,Tomas Chory,Tjekkiet,FWD,3.0,,,False,
+missing_from_holdet,Patrik Schick,Tjekkiet,FWD,4.5,,,False,
+missing_from_holdet,Jan Kliment,Tjekkiet,FWD,2.0,,,True,
+missing_from_holdet,Mojmir Chytil,Tjekkiet,FWD,2.5,,,False,
+missing_from_holdet,Jan Kuchta,Tjekkiet,FWD,2.5,,,False,
+missing_from_holdet,Adam Hlozek,Tjekkiet,FWD,2.5,,,False,
+missing_from_holdet,Joel Monteiro,Schweiz,FWD,2.5,,,True,
+missing_from_holdet,Dan Ndoye,Schweiz,FWD,4.0,,,False,
+missing_from_holdet,Mohamed Zeki Amdouni,Schweiz,FWD,3.5,,,False,
+missing_from_holdet,Christian Fassnacht,Schweiz,FWD,3.0,,,False,
+missing_from_holdet,Ruben Vargas,Schweiz,FWD,3.5,,,False,
+missing_from_holdet,Andi Zeqiri,Schweiz,FWD,2.0,,,True,
+missing_from_holdet,Cedric Itten,Schweiz,FWD,2.0,,,False,
+missing_from_holdet,Breel Embolo,Schweiz,FWD,5.0,,,False,
+missing_from_holdet,Ederson,Brasilien,MID,2.5,,,False,
+missing_from_holdet,Lutsharel Geertruida,Holland,DEF,2.5,,,False,

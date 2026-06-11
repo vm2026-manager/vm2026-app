@@ -1,0 +1,8 @@
+﻿formation,status,budget_m,long_run_score,optimizer_ev,standard_long_run_score,score_loss,standard_forwards,forwards,players_out,players_in
+3-4-3,ok,50.0,78.273325,52.335422,80.108527,1.835202,"Cody Gakpo, Kai Havertz, Alexander Sørloth","Kylian Mbappe, Kai Havertz, Ruben Vargas","Alexander Sørloth, Cody Gakpo, Nuno Mendes","Kylian Mbappe, Nathan Ngoy, Ruben Vargas"
+3-5-2,ok,50.0,79.409328,51.607549,80.97437,1.565042,"Kai Havertz, Julian Alvarez","Kylian Mbappe, Kai Havertz","Joshua Kimmich, Julian Alvarez, Nuno Mendes","Kylian Mbappe, Nathaniel Brown, Sander Berge"
+4-3-3,ok,50.0,79.191207,52.809997,80.884216,1.693009,"Michael Olise, Kai Havertz, Breel Embolo","Kylian Mbappe, Kai Havertz, Ruben Vargas","Breel Embolo, Michael Olise, Nuno Mendes","Arthur Theate, Kylian Mbappe, Ruben Vargas"
+4-4-2,ok,50.0,80.669085,52.872838,81.947661,1.278576,"Michael Olise, Kai Havertz","Kylian Mbappe, Kai Havertz","Michael Olise, Nico Schlotterbeck, Nuno Mendes","Arthur Theate, Kylian Mbappe, Nathaniel Brown"
+4-5-1,ok,50.0,80.562693,52.664004,81.905812,1.343119,Cody Gakpo,Kylian Mbappe,"Cody Gakpo, Marquinhos, Ruben Dias","Arthur Theate, Kylian Mbappe, Nathaniel Brown"
+5-3-2,ok,50.0,81.069103,52.131797,81.577799,0.508696,"Mikel Oyarzabal, Breel Embolo","Kylian Mbappe, Kai Havertz","Breel Embolo, Marquinhos, Mikel Oyarzabal","Kai Havertz, Kylian Mbappe, Nathan Ngoy"
+5-4-1,ok,50.0,81.683994,52.936664,82.641245,0.957251,Mikel Oyarzabal,Kylian Mbappe,"Marquinhos, Mikel Oyarzabal","Kylian Mbappe, Nathaniel Brown"
