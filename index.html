@@ -1077,6 +1077,208 @@
       padding: 3px;
     }
 
+    .player-change-panel {
+      margin-top: 14px;
+      padding: 12px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.94);
+      box-shadow: 0 16px 36px rgba(15, 23, 42, 0.14);
+      color: #0f172a;
+    }
+
+    .player-change-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .player-change-title {
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 1.2;
+      color: #111827;
+    }
+
+    .player-change-subtitle {
+      margin-top: 4px;
+      font-size: 12px;
+      color: #475569;
+      line-height: 1.35;
+    }
+
+    .player-change-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .player-change-btn {
+      border: 1px solid rgba(15, 23, 42, 0.14);
+      background: #111827;
+      color: #f8fafc;
+      border-radius: 999px;
+      padding: 7px 11px;
+      font-size: 11px;
+      font-weight: 800;
+      cursor: pointer;
+      line-height: 1;
+    }
+
+    .player-change-btn.secondary {
+      background: #ffffff;
+      color: #111827;
+    }
+
+    .player-change-table {
+      margin-top: 10px;
+      border: 1px solid rgba(148, 163, 184, 0.28);
+      border-radius: 12px;
+      overflow: hidden;
+      background: rgba(255,255,255,0.72);
+    }
+
+    .player-change-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.6fr) 88px 104px 58px;
+      gap: 10px;
+      align-items: center;
+      padding: 11px 12px;
+      border-bottom: 1px solid rgba(226, 232, 240, 0.95);
+      font-size: 12px;
+    }
+
+    .player-change-row:last-child {
+      border-bottom: 0;
+    }
+
+    .player-change-row.header {
+      background: rgba(15, 23, 42, 0.05);
+      font-size: 11px;
+      font-weight: 900;
+      color: #475569;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .player-change-cell {
+      min-width: 0;
+    }
+
+    .player-change-player-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 0;
+    }
+
+    .player-change-flag {
+      width: 24px;
+      height: 18px;
+      border-radius: 5px;
+      object-fit: cover;
+      border: 1px solid rgba(15, 23, 42, 0.1);
+      box-shadow: 0 2px 6px rgba(15, 23, 42, 0.12);
+      flex: 0 0 auto;
+    }
+
+    .player-change-player {
+      font-weight: 800;
+      color: #111827;
+      overflow-wrap: anywhere;
+    }
+
+    .player-change-price {
+      margin-top: 2px;
+      font-size: 11px;
+      color: #475569;
+    }
+
+    .player-change-metric {
+      font-variant-numeric: tabular-nums;
+      font-weight: 800;
+      color: #111827;
+    }
+
+    .player-change-metric.negative {
+      color: #b91c1c;
+    }
+
+    .player-change-metric.positive {
+      color: #166534;
+    }
+
+    .player-change-remove {
+      width: 30px;
+      height: 30px;
+      border: 0;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.08);
+      color: #111827;
+      font-size: 17px;
+      font-weight: 900;
+      cursor: pointer;
+      justify-self: end;
+    }
+
+    .player-change-summary {
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: 800;
+      color: #111827;
+    }
+
+    .player-change-note {
+      margin-top: 8px;
+      font-size: 11px;
+      line-height: 1.4;
+      color: #475569;
+    }
+
+    .player-change-empty {
+      margin-top: 10px;
+      padding: 12px;
+      border-radius: 10px;
+      background: rgba(15, 23, 42, 0.05);
+      color: #475569;
+      font-size: 12px;
+    }
+
+    @media (max-width: 700px) {
+      .player-change-panel {
+        padding: 10px;
+      }
+
+      .player-change-row {
+        grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.3fr) 72px 88px 34px;
+        gap: 7px;
+        padding: 9px 8px;
+        font-size: 11px;
+      }
+
+      .player-change-player {
+        font-size: 11px;
+      }
+
+      .player-change-flag {
+        width: 20px;
+        height: 15px;
+      }
+
+      .player-change-price,
+      .player-change-subtitle,
+      .player-change-note {
+        font-size: 10px;
+      }
+
+      .player-change-remove {
+        width: 26px;
+        height: 26px;
+        font-size: 15px;
+      }
+    }
+
     .alternatives-panel {
       margin: 0 4px 8px;
       padding: 10px;
@@ -3103,6 +3305,8 @@
               <button id="cancelOptimizerBtn" class="optimizer-cancel-btn" type="button">Annullér</button>
             </div>
           </div>
+
+          <div id="playerChangePanel" class="player-change-panel"></div>
         </div>
 
         <div class="right-panel" id="rightPanel">
@@ -3274,7 +3478,9 @@ setTimeout(removeDataStatusBox, 250);
       squadPurchasePrices: "vm2026_squad_purchase_prices_v1",
       formation: "vm2026_formation_v2",
       eligibleOnly: "vm2026_eligible_only_v1",
-      manualBankMillions: "vm2026_manual_bank_millions_v1"
+      manualBankMillions: "vm2026_manual_bank_millions_v1",
+      transferBaselineSquad: "vm2026_transfer_baseline_squad_v1",
+      transferBaselinePurchasePrices: "vm2026_transfer_baseline_purchase_prices_v1"
     };
 
     const FORMATIONS = {
@@ -3325,6 +3531,8 @@ setTimeout(removeDataStatusBox, 250);
     let currentUser = null;
     let squad = JSON.parse(localStorage.getItem(STORAGE_KEYS.squad) || "{}");
     let squadPurchasePrices = JSON.parse(localStorage.getItem(STORAGE_KEYS.squadPurchasePrices) || "{}");
+    let transferBaselineSquad = JSON.parse(localStorage.getItem(STORAGE_KEYS.transferBaselineSquad) || "null");
+    let transferBaselinePurchasePrices = JSON.parse(localStorage.getItem(STORAGE_KEYS.transferBaselinePurchasePrices) || "null");
     let currentFormation = localStorage.getItem(STORAGE_KEYS.formation) || "3-4-3";
     let manualBankMillions = parseManualBankMillions(localStorage.getItem(STORAGE_KEYS.manualBankMillions));
     let activeSlotKey = null;
@@ -3342,6 +3550,7 @@ setTimeout(removeDataStatusBox, 250);
 
     const formationSelect = document.getElementById("formationSelect");
     const pitch = document.getElementById("pitch");
+    const playerChangePanel = document.getElementById("playerChangePanel");
     const activeSlotText = document.getElementById("activeSlotText");
     const searchInput = document.getElementById("searchInput");
     const teamFilter = document.getElementById("teamFilter");
@@ -4202,10 +4411,23 @@ function saveState() {
       }, 0);
     }
 
+    function getBaselineBudgetTotal() {
+      ensureTransferBaselineState();
+
+      const baselineSquad = transferBaselineSquad && typeof transferBaselineSquad === "object"
+        ? transferBaselineSquad
+        : squad;
+      const baselinePurchasePrices = transferBaselinePurchasePrices && typeof transferBaselinePurchasePrices === "object"
+        ? transferBaselinePurchasePrices
+        : squadPurchasePrices;
+
+      const baselineSpent = getSpentBudget(baselineSquad, baselinePurchasePrices);
+      const baselineCurrentValue = getCurrentSquadMarketValue(baselineSquad);
+      return BUDGET_TOTAL + Math.max(0, baselineCurrentValue - baselineSpent);
+    }
+
     function getAutomaticBudgetTotal() {
-      const spent = getSpentBudget();
-      const currentValue = getCurrentSquadMarketValue();
-      return BUDGET_TOTAL + Math.max(0, currentValue - spent);
+      return getBaselineBudgetTotal();
     }
 
     function getEffectiveBudgetTotal() {
@@ -4234,6 +4456,37 @@ function saveState() {
       return JSON.parse(JSON.stringify(value || {}));
     }
 
+    function saveTransferBaselineState() {
+      if (transferBaselineSquad && typeof transferBaselineSquad === "object") {
+        localStorage.setItem(STORAGE_KEYS.transferBaselineSquad, JSON.stringify(transferBaselineSquad));
+      } else {
+        localStorage.removeItem(STORAGE_KEYS.transferBaselineSquad);
+      }
+
+      if (transferBaselinePurchasePrices && typeof transferBaselinePurchasePrices === "object") {
+        localStorage.setItem(STORAGE_KEYS.transferBaselinePurchasePrices, JSON.stringify(transferBaselinePurchasePrices));
+      } else {
+        localStorage.removeItem(STORAGE_KEYS.transferBaselinePurchasePrices);
+      }
+    }
+
+    function clearTransferBaselineState() {
+      transferBaselineSquad = null;
+      transferBaselinePurchasePrices = null;
+      saveTransferBaselineState();
+    }
+
+    function setTransferBaselineState(nextSquad = squad, nextPurchasePrices = squadPurchasePrices) {
+      transferBaselineSquad = cloneSquadState(nextSquad);
+      transferBaselinePurchasePrices = cloneSquadState(nextPurchasePrices);
+      saveTransferBaselineState();
+    }
+
+    function ensureTransferBaselineState() {
+      if (transferBaselineSquad && typeof transferBaselineSquad === "object") return;
+      setTransferBaselineState(squad, squadPurchasePrices);
+    }
+
     function parseBudgetPrice(value) {
       const parsed = Number(value);
       if (!Number.isFinite(parsed) || parsed < 0) return null;
@@ -4256,6 +4509,44 @@ function saveState() {
       if (currentPrice !== null) return currentPrice;
       if (startPrice !== null) return startPrice;
       return 0;
+    }
+
+    function getCurrentGameRound() {
+      const roundNumbers = [1, 2, 3].filter(roundNo => getStrategyControlRoundFixtures(roundNo).length);
+      const currentRound = roundNumbers.find(roundNo => hasStrategyControlUpcomingRound(roundNo));
+      return currentRound || 1;
+    }
+
+    function hasTournamentStarted() {
+      const orderedFixtures = typeof getStrategyControlSortedGroupFixtures === "function"
+        ? getStrategyControlSortedGroupFixtures()
+        : (Array.isArray(fixtures) ? fixtures.slice() : []);
+      const firstFixture = orderedFixtures.length ? orderedFixtures[0] : (Array.isArray(fixtures) ? fixtures[0] : null);
+      const kickoffDate = firstFixture?.kickoffDate || kickoffToDate(firstFixture?.kickoff_dk || firstFixture?.kickoff);
+      if (!(kickoffDate instanceof Date) || Number.isNaN(kickoffDate.getTime())) return false;
+      return kickoffDate.getTime() <= getNow().getTime();
+    }
+
+    function isTransferFeeActive() {
+      return hasTournamentStarted();
+    }
+
+    function getTransferFeeRate() {
+      return isTransferFeeActive() ? 0.01 : 0;
+    }
+
+    function getTransferLockedPrice(player, squadObj = squad, purchasePriceMap = squadPurchasePrices, { preferStoredPrice = true } = {}) {
+      if (!player) return 0;
+
+      const existingSlotKey = preferStoredPrice ? findFilledSlotByPlayerId(player.player_id, squadObj) : null;
+      if (existingSlotKey) {
+        const storedPrice = getStoredPurchasePriceForSlot(existingSlotKey, purchasePriceMap);
+        if (storedPrice !== null) return storedPrice;
+      }
+
+      const marketPrice = resolvePlayerPurchasePrice(player, { preferStartPrice: false });
+      if (!isTransferFeeActive()) return marketPrice;
+      return Math.round(marketPrice * (1 + getTransferFeeRate()));
     }
 
     function getStoredPurchasePriceForSlot(slotKey, purchasePriceMap = squadPurchasePrices) {
@@ -4294,9 +4585,10 @@ function saveState() {
           }
         }
 
-        nextPurchasePrices[slotKey] = resolvePlayerPurchasePrice(getPlayerById(playerId), {
-          preferStartPrice: preferStartPriceForNew
-        });
+        const player = getPlayerById(playerId);
+        nextPurchasePrices[slotKey] = preferStartPriceForNew
+          ? resolvePlayerPurchasePrice(player, { preferStartPrice: true })
+          : getTransferLockedPrice(player, previousSquad, previousPurchasePrices, { preferStoredPrice: true });
       });
 
       return nextPurchasePrices;
@@ -4392,6 +4684,9 @@ function saveState() {
 
       applySquadState(nextSquad, nextPurchasePrices, { preferStartPriceForNew: true });
       ensureSquadPurchasePrices({ preferStartPriceForNew: true });
+      if (!transferBaselineSquad) {
+        setTransferBaselineState(squad, squadPurchasePrices);
+      }
       pendingRemoteSquadState = null;
       return true;
     }
@@ -4679,7 +4974,7 @@ function getPlayerScore(player) {
     }
 
     function transferFeesEnabled() {
-      return getTargetRoundNumber() > 1;
+      return isTransferFeeActive();
     }
 
     function currentSquadKeysForPlayer(player) {
@@ -4709,9 +5004,8 @@ function getPlayerScore(player) {
     }
 
     function getIncomingTransferFee(player) {
-      if (!transferFeesEnabled()) return 0;
-      if (isOwnedCurrentSquadPlayer(player)) return 0;
-      return Math.round(getTransferCurrentValue(player) * 0.01);
+      const marketPrice = resolvePlayerPurchasePrice(player, { preferStartPrice: false });
+      return Math.max(0, getTransferLockedPrice(player) - marketPrice);
     }
 
     function getTransferExpectedGrowth(player) {
@@ -4742,12 +5036,7 @@ function getPlayerScore(player) {
     function transferInfoHtml(incomingPlayer, outgoingPlayer) {
       if (!transferFeesEnabled()) return "";
       const fee = getIncomingTransferFee(incomingPlayer);
-      const netGain = getTransferNetGain(incomingPlayer, outgoingPlayer);
-      if (!Number.isFinite(netGain)) return fee ? `<div class="trade-transfer-note">Gebyr: ${formatMoney(fee)}</div>` : "";
-      if (netGain <= 0) {
-        return `<div class="trade-transfer-note">Gebyr: ${formatMoney(fee)}<br><span class="negative">Behold nuværende spiller</span></div>`;
-      }
-      return `<div class="trade-transfer-note">Gebyr: ${formatMoney(fee)}<br><span class="positive">Est. netto (proxy): +${formatMoney(Math.round(netGain * 1_000_000))}</span></div>`;
+      return fee ? `<div class="trade-transfer-note">+ gebyr ${formatMoney(fee)}</div>` : "";
     }
 
         function compareAlternativePlayers(a, b) {
@@ -5371,8 +5660,8 @@ function getPlayerScore(player) {
       return null;
     }
 
-    function findFilledSlotByPlayerId(playerId) {
-      for (const [slotKey, id] of Object.entries(squad)) {
+    function findFilledSlotByPlayerId(playerId, squadObj = squad) {
+      for (const [slotKey, id] of Object.entries(squadObj || {})) {
         if (String(id) === String(playerId)) return slotKey;
       }
       return null;
@@ -5389,7 +5678,7 @@ function getPlayerScore(player) {
 
       if (isPlayerUnavailable(player)) return "Ikke tilgængelig";
 
-      const price = getPlayerPrice(player);
+      const price = getTransferLockedPrice(player);
 
       if (activeSlotKey) {
         const activeSlot = getCurrentSlots().find(slot => slot.key === activeSlotKey);
@@ -5504,7 +5793,7 @@ function getPlayerScore(player) {
         .some(playerId => String(playerId) === candidateId);
 
       if (isAlreadyInSquad) return false;
-      if (getPlayerPrice(candidate) > getAvailableForReplacement(currentPlayer)) return false;
+      if (getTransferLockedPrice(candidate) > getAvailableForReplacement(currentPlayer)) return false;
       return canAddMoreFromTeam(candidate, currentPlayer.player_id);
     }
 
@@ -5545,7 +5834,7 @@ function getPlayerScore(player) {
 
       const samePrice = prioritizeReplacementCandidates(
         rankReplacementCandidates(
-          baseCandidates.filter(player => getPlayerPrice(player) <= currentPrice),
+          baseCandidates.filter(player => getTransferLockedPrice(player) <= currentPrice),
           currentPlayer
         ),
         activeSlot,
@@ -5558,7 +5847,7 @@ function getPlayerScore(player) {
       const withBank = prioritizeReplacementCandidates(
         rankReplacementCandidates(
           baseCandidates
-            .filter(player => getPlayerPrice(player) > currentPrice)
+            .filter(player => getTransferLockedPrice(player) > currentPrice)
             .filter(player => !samePriceIds.has(String(player.player_id))),
           currentPlayer
         ),
@@ -5783,7 +6072,7 @@ function getPlayerScore(player) {
 
       const existingSpent = getSpentBudget();
       const currentPrice = currentPlayerInSlot ? getCurrentSquadPurchasePrice(currentPlayerInSlot) : 0;
-      const newPrice = getPlayerPrice(player);
+      const newPrice = getTransferLockedPrice(player);
       const projectedSpent = existingSpent - currentPrice + newPrice;
 
       if (projectedSpent > getEffectiveBudgetTotal()) {
@@ -5815,7 +6104,7 @@ function getPlayerScore(player) {
       squadPurchasePrices = buildPurchasePriceMapForSquad(squad, previousSquad, previousPurchasePrices, {
         preferStartPriceForNew: false
       });
-      squadPurchasePrices[slotKey] = resolvePlayerPurchasePrice(player, { preferStartPrice: false });
+      squadPurchasePrices[slotKey] = getTransferLockedPrice(player, previousSquad, previousPurchasePrices, { preferStoredPrice: true });
       if (removedCaptain) {
         frontendCaptainOverride = pickFrontendCaptainFromSquad(squad);
       }
@@ -5833,7 +6122,7 @@ function getPlayerScore(player) {
         .filter(player => samePosition(player.position, slotPosition))
         .filter(player => !usedIdsSet.has(String(player.player_id)))
         .filter(player => (teamCounts[playerTeamKey(player)] || 0) < MAX_PER_TEAM)
-        .sort((a, b) => getPlayerPrice(a) - getPlayerPrice(b));
+        .sort((a, b) => getTransferLockedPrice(a) - getTransferLockedPrice(b));
 
       return candidates.length ? candidates[0] : null;
     }
@@ -5847,7 +6136,7 @@ function getPlayerScore(player) {
         const cheapest = getCheapestValidPlayerForSlot(slot, usedIds, teamCounts);
         if (!cheapest) return Infinity;
 
-        total += getPlayerPrice(cheapest);
+        total += getTransferLockedPrice(cheapest);
         usedIds.add(String(cheapest.player_id));
         const teamKey = playerTeamKey(cheapest);
         teamCounts[teamKey] = (teamCounts[teamKey] || 0) + 1;
@@ -5863,7 +6152,7 @@ function getPlayerScore(player) {
         .filter(player => samePosition(player.position, slotPosition))
         .filter(player => !usedIdsSet.has(String(player.player_id)))
         .filter(player => (teamCounts[playerTeamKey(player)] || 0) < MAX_PER_TEAM)
-        .filter(player => getPlayerPrice(player) <= maxPriceForSinglePlayer)
+        .filter(player => getTransferLockedPrice(player) <= maxPriceForSinglePlayer)
         .sort((a, b) => {
           const scoreDiff = getPlayerScore(b) - getPlayerScore(a);
           if (scoreDiff !== 0) return scoreDiff;
@@ -5871,7 +6160,7 @@ function getPlayerScore(player) {
           const startDiff = getPlayerStart(b) - getPlayerStart(a);
           if (startDiff !== 0) return startDiff;
 
-          return getPlayerPrice(a) - getPlayerPrice(b);
+          return getTransferLockedPrice(a) - getTransferLockedPrice(b);
         });
     }
 
@@ -5897,7 +6186,7 @@ function getPlayerScore(player) {
 
         let chosen = null;
         for (const player of candidates) {
-          const price = getPlayerPrice(player);
+          const price = getTransferLockedPrice(player);
           if (price + remainingMinCost <= bankLeftNow) {
             chosen = player;
             break;
@@ -5905,9 +6194,9 @@ function getPlayerScore(player) {
         }
 
         if (!chosen) {
-          const cheapestCandidates = [...candidates].sort((a, b) => getPlayerPrice(a) - getPlayerPrice(b));
+          const cheapestCandidates = [...candidates].sort((a, b) => getTransferLockedPrice(a) - getTransferLockedPrice(b));
           for (const player of cheapestCandidates) {
-            const price = getPlayerPrice(player);
+            const price = getTransferLockedPrice(player);
             if (price + remainingMinCost <= bankLeftNow) {
               chosen = player;
               break;
@@ -5921,7 +6210,7 @@ function getPlayerScore(player) {
         usedIds.add(String(chosen.player_id));
           const teamKey = playerTeamKey(chosen);
           teamCounts[teamKey] = (teamCounts[teamKey] || 0) + 1;
-        spent += getPlayerPrice(chosen);
+        spent += getTransferLockedPrice(chosen);
       }
 
       return localSquad;
@@ -6182,7 +6471,7 @@ function getPlayerScore(player) {
           slotKey: slot.key,
           position: slot.position,
           player: cheapest,
-          price: cheapest ? getPlayerPrice(cheapest) : null
+          price: cheapest ? getTransferLockedPrice(cheapest) : null
         });
 
         if (cheapest) {
@@ -6220,10 +6509,10 @@ function getPlayerScore(player) {
           continue;
         }
 
-        const affordable = teamEligible.filter(player => getPlayerPrice(player) <= bankLeft);
+        const affordable = teamEligible.filter(player => getTransferLockedPrice(player) <= bankLeft);
         if (!affordable.length) {
           const cheapest = teamEligible
-            .map(player => getPlayerPrice(player))
+            .map(player => getTransferLockedPrice(player))
             .filter(price => price > 0)
             .sort((a, b) => a - b)[0];
 
@@ -6271,7 +6560,7 @@ function getPlayerScore(player) {
         usedIds.add(String(bestPick.player.player_id));
         const teamKey = playerTeamKey(bestPick.player);
         teamCounts[teamKey] = (teamCounts[teamKey] || 0) + 1;
-        remainingBank -= getPlayerPrice(bestPick.player);
+        remainingBank -= getTransferLockedPrice(bestPick.player);
 
         remainingSlots.splice(bestSlotIndex, 1);
       }
@@ -6437,6 +6726,243 @@ function getPlayerScore(player) {
       }
       playerCountValue.textContent = `${count} / 11`;
       updateUndoButton();
+    }
+
+    function buildTransferChangeRows() {
+      const baselineSquad = transferBaselineSquad && typeof transferBaselineSquad === "object" ? transferBaselineSquad : {};
+      const baselinePrices = transferBaselinePurchasePrices && typeof transferBaselinePurchasePrices === "object" ? transferBaselinePurchasePrices : {};
+
+      return getCurrentSlots().map(slot => {
+        const slotKey = slot.key;
+        const outgoingPlayerId = baselineSquad?.[slotKey] || null;
+        const incomingPlayerId = squad?.[slotKey] || null;
+        const outgoingPlayer = getPlayerById(outgoingPlayerId);
+        const incomingPlayer = getPlayerById(incomingPlayerId);
+        const outgoingLockedPrice = outgoingPlayerId ? getPurchasePriceForSlot(slotKey, baselineSquad, baselinePrices) : 0;
+        const incomingLockedPrice = incomingPlayerId ? getPurchasePriceForSlot(slotKey, squad, squadPurchasePrices) : 0;
+        const incomingMarketPrice = incomingPlayer
+          ? resolvePlayerPurchasePrice(incomingPlayer, { preferStartPrice: false })
+          : 0;
+
+        if (
+          String(outgoingPlayerId || "") === String(incomingPlayerId || "")
+          && outgoingLockedPrice === incomingLockedPrice
+        ) {
+          return null;
+        }
+
+        const fee = incomingPlayer ? Math.max(0, incomingLockedPrice - incomingMarketPrice) : 0;
+
+        return {
+          slotKey,
+          outgoingPlayer,
+          incomingPlayer,
+          outgoingLockedPrice,
+          incomingLockedPrice,
+          incomingMarketPrice,
+          fee,
+          netEffect: outgoingLockedPrice - incomingLockedPrice
+        };
+      }).filter(Boolean);
+    }
+
+    function revertTransferChange(slotKey) {
+      if (!transferBaselineSquad || typeof transferBaselineSquad !== "object") return;
+
+      pushHistory();
+      const nextSquad = cloneSquadState(squad);
+      const nextPurchasePrices = cloneSquadState(squadPurchasePrices);
+      const baselinePlayerId = transferBaselineSquad?.[slotKey] || null;
+      const currentPlayerIdInSlot = nextSquad?.[slotKey] || null;
+      const baselinePlayerCurrentSlot = baselinePlayerId
+        ? Object.entries(nextSquad).find(([currentSlotKey, playerId]) =>
+            currentSlotKey !== slotKey && String(playerId) === String(baselinePlayerId)
+          )?.[0] || null
+        : null;
+
+      if (baselinePlayerCurrentSlot) {
+        if (currentPlayerIdInSlot) {
+          nextSquad[baselinePlayerCurrentSlot] = currentPlayerIdInSlot;
+          const currentLockedPrice = getPurchasePriceForSlot(slotKey, squad, squadPurchasePrices);
+          if (currentLockedPrice) {
+            nextPurchasePrices[baselinePlayerCurrentSlot] = currentLockedPrice;
+          } else {
+            delete nextPurchasePrices[baselinePlayerCurrentSlot];
+          }
+        } else {
+          delete nextSquad[baselinePlayerCurrentSlot];
+          delete nextPurchasePrices[baselinePlayerCurrentSlot];
+        }
+      }
+
+      if (baselinePlayerId) {
+        nextSquad[slotKey] = baselinePlayerId;
+        nextPurchasePrices[slotKey] = getPurchasePriceForSlot(slotKey, transferBaselineSquad, transferBaselinePurchasePrices || {});
+      } else {
+        delete nextSquad[slotKey];
+        delete nextPurchasePrices[slotKey];
+      }
+
+      applySquadState(nextSquad, nextPurchasePrices, { preferStartPriceForNew: false });
+      previousReplacementBySlot.delete(slotKey);
+      frontendCaptainOverride = null;
+      clearStatus();
+      saveState();
+      render();
+      scheduleAutosave();
+    }
+
+    function resetTransferChanges() {
+      if (!transferBaselineSquad || typeof transferBaselineSquad !== "object") return;
+
+      pushHistory();
+      applySquadState(transferBaselineSquad, transferBaselinePurchasePrices || {}, { preferStartPriceForNew: false });
+      previousReplacementBySlot.clear();
+      frontendCaptainOverride = null;
+      clearStatus();
+      saveState();
+      render();
+      scheduleAutosave();
+    }
+
+    function getTransferWindowLabel() {
+      const groupFixtures = typeof getStrategyControlSortedGroupFixtures === "function"
+        ? getStrategyControlSortedGroupFixtures()
+        : (Array.isArray(fixtures) ? fixtures.slice() : []);
+
+      const firstKickoffForFixtures = fixtureList => fixtureList
+        .map(fixture => fixture?.kickoffDate || kickoffToDate(fixture?.kickoff_dk || fixture?.kickoff))
+        .filter(date => date instanceof Date && !Number.isNaN(date.getTime()))
+        .sort((a, b) => a.getTime() - b.getTime())[0] || null;
+
+      const round1Start = firstKickoffForFixtures(groupFixtures);
+      const round2Start = typeof getStrategyControlRoundFixtures === "function"
+        ? firstKickoffForFixtures(getStrategyControlRoundFixtures(2))
+        : null;
+      const round3Start = typeof getStrategyControlRoundFixtures === "function"
+        ? firstKickoffForFixtures(getStrategyControlRoundFixtures(3))
+        : null;
+
+      if (!(round1Start instanceof Date)) return "næste runde";
+
+      const tournamentYear = round1Start.getFullYear();
+      const now = getNow();
+
+      // Fallback phase starts used only for the player-change panel label after group stage.
+      // When exact knockout kickoff times are not present in project data, the label switches at 00:00 Danish time.
+      const knockoutStarts = [
+        { start: kickoffToDate(`${tournamentYear}-06-28 00:00`), label: "runde 3 → 1/16-finaler" },
+        { start: kickoffToDate(`${tournamentYear}-07-04 00:00`), label: "1/16-finaler → 1/8-finaler" },
+        { start: kickoffToDate(`${tournamentYear}-07-09 00:00`), label: "1/8-finaler → Kvartfinaler" },
+        { start: kickoffToDate(`${tournamentYear}-07-14 00:00`), label: "Kvartfinaler → Semifinaler" },
+        { start: kickoffToDate(`${tournamentYear}-07-18 00:00`), label: "Semifinaler → Bronzekamp/finale" },
+        { start: kickoffToDate(`${tournamentYear}-07-19 00:00`), label: "Finalerunde" }
+      ];
+
+      const windows = [
+        { start: null, end: round1Start, label: "runde 1" },
+        { start: round1Start, end: round2Start, label: "runde 1 → 2" },
+        { start: round2Start, end: round3Start, label: "runde 2 → 3" },
+        { start: round3Start, end: knockoutStarts[0].start, label: "runde 3 → 1/16-finaler" },
+        { start: knockoutStarts[0].start, end: knockoutStarts[1].start, label: knockoutStarts[0].label },
+        { start: knockoutStarts[1].start, end: knockoutStarts[2].start, label: knockoutStarts[1].label },
+        { start: knockoutStarts[2].start, end: knockoutStarts[3].start, label: knockoutStarts[2].label },
+        { start: knockoutStarts[3].start, end: knockoutStarts[4].start, label: knockoutStarts[3].label },
+        { start: knockoutStarts[4].start, end: knockoutStarts[5].start, label: knockoutStarts[4].label },
+        { start: knockoutStarts[5].start, end: null, label: knockoutStarts[5].label }
+      ];
+
+      const activeWindow = windows.find(window => {
+        const afterStart = !(window.start instanceof Date) || now.getTime() >= window.start.getTime();
+        const beforeEnd = !(window.end instanceof Date) || now.getTime() < window.end.getTime();
+        return afterStart && beforeEnd;
+      });
+
+      return activeWindow?.label || "næste runde";
+    }
+
+    function renderPlayerChangePanel() {
+      if (!playerChangePanel) return;
+
+      const roundLabel = getTransferWindowLabel();
+      const feeRate = getTransferFeeRate();
+      const rows = buildTransferChangeRows();
+      const changeCount = rows.length;
+      const totalNetEffect = rows.reduce((sum, row) => sum + row.netEffect, 0);
+      const feeSummary = feeRate > 0
+        ? `${Math.round(feeRate * 100)} % transfergebyr`
+        : "0 % transfergebyr";
+
+      if (!changeCount) {
+        playerChangePanel.innerHTML = `
+          <div class="player-change-head">
+            <div>
+              <div class="player-change-title">Spillerændringer (${roundLabel})</div>
+              <div class="player-change-subtitle">0 ændringer · ${escapeHtml(feeSummary)}</div>
+            </div>
+          </div>
+          <div class="player-change-empty">Ingen registrerede spillerændringer endnu.</div>
+          <div class="player-change-note">Transfergebyr: 1 % på nye køb, når spillet er i gang. Før første kamp er handler gebyrfri.</div>
+        `;
+        return;
+      }
+
+      playerChangePanel.innerHTML = `
+        <div class="player-change-head">
+          <div>
+            <div class="player-change-title">Spillerændringer (${roundLabel})</div>
+            <div class="player-change-subtitle">${changeCount} ændringer · ${escapeHtml(feeSummary)}</div>
+          </div>
+          <div class="player-change-actions">
+            <button type="button" class="player-change-btn secondary" data-action="reset-transfer-changes">Nulstil alle</button>
+          </div>
+        </div>
+        <div class="player-change-table">
+          <div class="player-change-row header">
+            <div>Ud</div>
+            <div>Ind</div>
+            <div>Gebyr</div>
+            <div>Netto effekt</div>
+            <div></div>
+          </div>
+          ${rows.map(row => `
+            <div class="player-change-row">
+              <div class="player-change-cell">
+                <div class="player-change-player-row">
+                  ${row.outgoingPlayer ? (() => {
+                    const flagUrl = getFlagUrl(getPlayerFlagCode(row.outgoingPlayer));
+                    const flagTitle = getTradeFlagTitle(row.outgoingPlayer);
+                    return flagUrl ? `<img class="player-change-flag" src="${flagUrl}" alt="${escapeHtml(flagTitle)}" title="${escapeHtml(flagTitle)}">` : "";
+                  })() : ""}
+                  <div class="player-change-player">${escapeHtml(row.outgoingPlayer?.player_name || "Tom plads")}</div>
+                </div>
+                <div class="player-change-price">${formatMoney(row.outgoingLockedPrice)}</div>
+              </div>
+              <div class="player-change-cell">
+                <div class="player-change-player-row">
+                  ${row.incomingPlayer ? (() => {
+                    const flagUrl = getFlagUrl(getPlayerFlagCode(row.incomingPlayer));
+                    const flagTitle = getTradeFlagTitle(row.incomingPlayer);
+                    return flagUrl ? `<img class="player-change-flag" src="${flagUrl}" alt="${escapeHtml(flagTitle)}" title="${escapeHtml(flagTitle)}">` : "";
+                  })() : ""}
+                  <div class="player-change-player">${escapeHtml(row.incomingPlayer?.player_name || "Tom plads")}</div>
+                </div>
+                <div class="player-change-price">${formatMoney(row.incomingMarketPrice)}</div>
+              </div>
+              <div class="player-change-cell player-change-metric">${formatMoney(row.fee)}</div>
+              <div class="player-change-cell player-change-metric ${diffClass(row.netEffect)}">${formatSignedMoneyDiff(row.netEffect)}</div>
+              <button type="button" class="player-change-remove" data-action="remove-transfer-change" data-slot-key="${escapeHtml(row.slotKey)}" aria-label="Fjern ændring" title="Fjern ændring">×</button>
+            </div>
+          `).join("")}
+        </div>
+        <div class="player-change-summary">Samlet netto effekt på budget: <span class="${diffClass(totalNetEffect)}">${formatSignedMoneyDiff(totalNetEffect)}</span></div>
+        <div class="player-change-note">Transfergebyr: 1 % på nye køb, når spillet er i gang. Før første kamp er handler gebyrfri.</div>
+      `;
+
+      playerChangePanel.querySelectorAll("[data-action='remove-transfer-change']").forEach(btn => {
+        btn.addEventListener("click", () => revertTransferChange(btn.dataset.slotKey));
+      });
+      playerChangePanel.querySelector("[data-action='reset-transfer-changes']")?.addEventListener("click", resetTransferChanges);
     }
 
 
@@ -7021,6 +7547,7 @@ function renderTradeList() {
       postProcessTimeAwareStrategyButtons();
       renderActiveSlotBadge();
       renderPitch();
+      renderPlayerChangePanel();
       renderTradeList();
     }
 
@@ -7375,6 +7902,9 @@ function renderTradeList() {
       }
 
       if (!data) {
+        if (!transferBaselineSquad) {
+          setTransferBaselineState(squad, squadPurchasePrices);
+        }
         await upsertAutosaveSquad();
         return;
       }
@@ -7403,6 +7933,9 @@ function renderTradeList() {
       } else {
         applySquadState(nextSquad, nextPurchasePrices, { preferStartPriceForNew: true });
         ensureSquadPurchasePrices({ preferStartPriceForNew: true });
+        if (!transferBaselineSquad) {
+          setTransferBaselineState(squad, squadPurchasePrices);
+        }
       }
 
       const remoteFavoriteIds = hasSavedStateEnvelope && Array.isArray(savedState.favorite_player_ids)
@@ -7676,6 +8209,7 @@ formationSelect.value = currentFormation;
     }
 
     function clearLocalSquadViewAfterLogout() {
+      clearTransferBaselineState();
       applySquadState({}, {});
       activeSlotKey = null;
       previousReplacementBySlot.clear();
