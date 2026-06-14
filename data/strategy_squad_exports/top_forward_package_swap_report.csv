@@ -1,29 +1,29 @@
 ﻿strategy;formation;budget_m;forwards
-Næste runde;3-4-3;50.0;Cristiano Ronaldo, Raul Jimenez, Marko Arnautovic
+Næste runde;3-4-3;50.0;Cristiano Ronaldo, Lionel Messi, Raul Jimenez
 Næste runde;3-5-2;50.0;Cristiano Ronaldo, Raul Jimenez
-Næste runde;4-3-3;50.0;Cristiano Ronaldo, Lionel Messi, Raul Jimenez
-Næste runde;4-4-2;50.0;Cristiano Ronaldo, Lionel Messi
-Næste runde;4-5-1;50.0;Lionel Messi
+Næste runde;4-3-3;49.0;Cristiano Ronaldo, Raul Jimenez, Marko Arnautovic
+Næste runde;4-4-2;49.5;Cristiano Ronaldo, Raul Jimenez
+Næste runde;4-5-1;50.0;Cristiano Ronaldo
 Næste runde;5-3-2;49.5;Cristiano Ronaldo, Lionel Messi
 Næste runde;5-4-1;50.0;Cristiano Ronaldo
 Gruppespil;3-4-3;50.0;Vinicius Junior, Cristiano Ronaldo, Jonathan David
-Gruppespil;3-5-2;50.0;Lionel Messi, Vinicius Junior
-Gruppespil;4-3-3;50.0;Vinicius Junior, Cristiano Ronaldo, Jonathan David
-Gruppespil;4-4-2;50.0;Lionel Messi, Cristiano Ronaldo
+Gruppespil;3-5-2;50.0;Vinicius Junior, Cristiano Ronaldo
+Gruppespil;4-3-3;50.0;Cristiano Ronaldo, Jonathan David, Raul Jimenez
+Gruppespil;4-4-2;50.0;Vinicius Junior, Jonathan David
 Gruppespil;4-5-1;50.0;Cristiano Ronaldo
-Gruppespil;5-3-2;50.0;Lionel Messi, Jonathan David
+Gruppespil;5-3-2;50.0;Cristiano Ronaldo, Jonathan David
 Gruppespil;5-4-1;50.0;Vinicius Junior
-1. + 2. runde;3-4-3;50.0;Cristiano Ronaldo, Jonathan David, Raul Jimenez
+1. + 2. runde;3-4-3;50.0;Cristiano Ronaldo, Jonathan David, Vinicius Junior
 1. + 2. runde;3-5-2;49.5;Cristiano Ronaldo, Jonathan David
-1. + 2. runde;4-3-3;50.0;Cristiano Ronaldo, Jonathan David, Raul Jimenez
+1. + 2. runde;4-3-3;49.5;Cristiano Ronaldo, Jonathan David, Raul Jimenez
 1. + 2. runde;4-4-2;50.0;Cristiano Ronaldo, Jonathan David
-1. + 2. runde;4-5-1;49.5;Cristiano Ronaldo
+1. + 2. runde;4-5-1;50.0;Cristiano Ronaldo
 1. + 2. runde;5-3-2;50.0;Cristiano Ronaldo, Jonathan David
-1. + 2. runde;5-4-1;49.5;Cristiano Ronaldo
+1. + 2. runde;5-4-1;50.0;Cristiano Ronaldo
 Lang sigt;3-4-3;50.0;Cristiano Ronaldo, Jonathan David, Raul Jimenez
-Lang sigt;3-5-2;50.0;Vinicius Junior, Cristiano Ronaldo
-Lang sigt;4-3-3;50.0;Vinicius Junior, Cristiano Ronaldo, Jonathan David
-Lang sigt;4-4-2;50.0;Cristiano Ronaldo, Raul Jimenez
-Lang sigt;4-5-1;50.0;Vinicius Junior
-Lang sigt;5-3-2;50.0;Vinicius Junior, Jonathan David
-Lang sigt;5-4-1;50.0;Cristiano Ronaldo
+Lang sigt;3-5-2;50.0;Vinicius Junior, Jonathan David
+Lang sigt;4-3-3;50.0;Vinicius Junior, Jonathan David, Raul Jimenez
+Lang sigt;4-4-2;50.0;Cristiano Ronaldo, Jonathan David
+Lang sigt;4-5-1;49.5;Vinicius Junior
+Lang sigt;5-3-2;50.0;Vinicius Junior, Cristiano Ronaldo
+Lang sigt;5-4-1;49.5;Cristiano Ronaldo

@@ -1,0 +1,8 @@
+﻿type,player_name,team,position,pool_team,holdet_team,pool_price,holdet_price,diff,pool_is_out,holdet_is_out
+new_in_holdet,Amine Sbai,Marokko,FWD,,,,2.0,,,False
+new_in_holdet,Arjan Malic,Bosnien-Hercegovina,DEF,,,,2.0,,,False
+new_in_holdet,Dejan Ljubicic,Østrig,MID,,,,2.0,,,False
+new_in_holdet,Garven-Michee Metusala,Haiti,DEF,,,,2.0,,,False
+new_in_holdet,Jayden Nelson,Canada,FWD,,,,2.0,,,False
+new_in_holdet,Marcos Senesi,Argentina,MID,,,,2.5,,,False
+new_in_holdet,Marwane Saadane,Marokko,DEF,,,,2.0,,,False
