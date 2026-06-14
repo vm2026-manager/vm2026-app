@@ -3024,8 +3024,8 @@
                 <div id="bankValue">50.000.000</div>
               </div>
               <label class="bank-box">
-                <div><strong>Aktuel bank (mio.)</strong></div>
-                <input id="manualBankInput" class="manual-bank-input" type="text" inputmode="decimal" placeholder="fx 50,5" aria-label="Samlet budgetramme i millioner kroner">
+                <div><strong>Aktuel budgetramme (mio.)</strong></div>
+                <input id="manualBankInput" class="manual-bank-input" type="text" inputmode="decimal" placeholder="fx 50,5" aria-label="Samlet budgetramme i millioner kroner" title="Brug kun dette felt, hvis du manuelt vil sætte din samlede budgetramme. Eksisterende hold bruger ellers låste købspriser.">
               </label>
               <div class="bank-box">
                 <div><strong>Spillere</strong></div>
@@ -3271,6 +3271,7 @@ setTimeout(removeDataStatusBox, 250);
 
     const STORAGE_KEYS = {
       squad: "vm2026_squad_v2",
+      squadPurchasePrices: "vm2026_squad_purchase_prices_v1",
       formation: "vm2026_formation_v2",
       eligibleOnly: "vm2026_eligible_only_v1",
       manualBankMillions: "vm2026_manual_bank_millions_v1"
@@ -3309,6 +3310,7 @@ setTimeout(removeDataStatusBox, 250);
     };
 
     let allPlayers = [];
+    let pendingRemoteSquadState = null;
     let fixtures = [];
     let optimalSquads = [];
     let strategySquads = {};
@@ -3322,6 +3324,7 @@ setTimeout(removeDataStatusBox, 250);
     let dataFreshness = null;
     let currentUser = null;
     let squad = JSON.parse(localStorage.getItem(STORAGE_KEYS.squad) || "{}");
+    let squadPurchasePrices = JSON.parse(localStorage.getItem(STORAGE_KEYS.squadPurchasePrices) || "{}");
     let currentFormation = localStorage.getItem(STORAGE_KEYS.formation) || "3-4-3";
     let manualBankMillions = parseManualBankMillions(localStorage.getItem(STORAGE_KEYS.manualBankMillions));
     let activeSlotKey = null;
@@ -4175,6 +4178,7 @@ function postProcessTimeAwareStrategyButtons() {
     }
 function saveState() {
       localStorage.setItem(STORAGE_KEYS.squad, JSON.stringify(squad));
+      localStorage.setItem(STORAGE_KEYS.squadPurchasePrices, JSON.stringify(squadPurchasePrices || {}));
       localStorage.setItem(STORAGE_KEYS.formation, currentFormation);
       localStorage.setItem(STORAGE_KEYS.eligibleOnly, eligibleOnly ? "1" : "0");
       if (manualBankMillions === null) localStorage.removeItem(STORAGE_KEYS.manualBankMillions);
@@ -4191,9 +4195,22 @@ function saveState() {
       return manualBankMillions === null ? null : Math.round(manualBankMillions * 1000000);
     }
 
+    function getCurrentSquadMarketValue(squadObj = squad) {
+      return Object.values(squadObj || {}).reduce((sum, playerId) => {
+        const player = getPlayerById(playerId);
+        return player ? sum + resolvePlayerPurchasePrice(player, { preferStartPrice: false }) : sum;
+      }, 0);
+    }
+
+    function getAutomaticBudgetTotal() {
+      const spent = getSpentBudget();
+      const currentValue = getCurrentSquadMarketValue();
+      return BUDGET_TOTAL + Math.max(0, currentValue - spent);
+    }
+
     function getEffectiveBudgetTotal() {
       const manualBudgetTotal = getManualBankAmount();
-      return manualBudgetTotal === null ? BUDGET_TOTAL : manualBudgetTotal;
+      return manualBudgetTotal === null ? getAutomaticBudgetTotal() : manualBudgetTotal;
     }
 
     function getFullOptimizationBudget() {
@@ -4217,8 +4234,182 @@ function saveState() {
       return JSON.parse(JSON.stringify(value || {}));
     }
 
+    function parseBudgetPrice(value) {
+      const parsed = Number(value);
+      if (!Number.isFinite(parsed) || parsed < 0) return null;
+      return Math.round(parsed);
+    }
+
+    function getPlayerStartPrice(player) {
+      return parseBudgetPrice(
+        player?.holdet_start_price
+        ?? player?.start_price
+        ?? player?.purchase_price
+        ?? player?.locked_price
+      );
+    }
+
+    function resolvePlayerPurchasePrice(player, { preferStartPrice = false } = {}) {
+      const startPrice = getPlayerStartPrice(player);
+      const currentPrice = parseBudgetPrice(player?.price_estimate ?? player?.price ?? player?.holdet_price);
+      if (preferStartPrice && startPrice !== null) return startPrice;
+      if (currentPrice !== null) return currentPrice;
+      if (startPrice !== null) return startPrice;
+      return 0;
+    }
+
+    function getStoredPurchasePriceForSlot(slotKey, purchasePriceMap = squadPurchasePrices) {
+      return parseBudgetPrice(purchasePriceMap?.[slotKey]);
+    }
+
+    function getPurchasePriceForSlot(slotKey, squadObj = squad, purchasePriceMap = squadPurchasePrices) {
+      const storedPrice = getStoredPurchasePriceForSlot(slotKey, purchasePriceMap);
+      if (storedPrice !== null) return storedPrice;
+      const player = getPlayerById(squadObj?.[slotKey]);
+      return resolvePlayerPurchasePrice(player, { preferStartPrice: true });
+    }
+
+    function buildPurchasePriceMapForSquad(nextSquad, previousSquad = squad, previousPurchasePrices = squadPurchasePrices, { preferStartPriceForNew = false } = {}) {
+      const nextPurchasePrices = {};
+
+      Object.entries(nextSquad || {}).forEach(([slotKey, playerId]) => {
+        if (!playerId) return;
+
+        const currentSlotPrice =
+          previousSquad?.[slotKey] && String(previousSquad[slotKey]) === String(playerId)
+            ? getStoredPurchasePriceForSlot(slotKey, previousPurchasePrices)
+            : null;
+
+        if (currentSlotPrice !== null) {
+          nextPurchasePrices[slotKey] = currentSlotPrice;
+          return;
+        }
+
+        const previousSlotKey = Object.entries(previousSquad || {}).find(([, prevPlayerId]) => String(prevPlayerId) === String(playerId))?.[0] || null;
+        if (previousSlotKey) {
+          const carriedPrice = getStoredPurchasePriceForSlot(previousSlotKey, previousPurchasePrices);
+          if (carriedPrice !== null) {
+            nextPurchasePrices[slotKey] = carriedPrice;
+            return;
+          }
+        }
+
+        nextPurchasePrices[slotKey] = resolvePlayerPurchasePrice(getPlayerById(playerId), {
+          preferStartPrice: preferStartPriceForNew
+        });
+      });
+
+      return nextPurchasePrices;
+    }
+
+    function seedLegacyPurchasePricesForSquad(squadObj = squad) {
+      const seeded = {};
+      Object.entries(squadObj || {}).forEach(([slotKey, playerId]) => {
+        if (!playerId) return;
+        const player = getPlayerById(playerId);
+        if (!player) return;
+        seeded[slotKey] = resolvePlayerPurchasePrice(player, { preferStartPrice: true });
+      });
+      return seeded;
+    }
+
+    function shouldRepairLegacyPurchasePrices(squadObj = squad, purchasePriceMap = squadPurchasePrices) {
+      const occupiedSlots = Object.entries(squadObj || {}).filter(([, playerId]) => !!playerId);
+      if (!occupiedSlots.length) return false;
+
+      const rawStoredCount = occupiedSlots.filter(([slotKey]) =>
+        getStoredPurchasePriceForSlot(slotKey, purchasePriceMap) !== null
+      ).length;
+
+      if (rawStoredCount !== occupiedSlots.length) return false;
+
+      const allStoredMatchCurrentPrice = occupiedSlots.every(([slotKey, playerId]) => {
+        const player = getPlayerById(playerId);
+        if (!player) return false;
+        return getStoredPurchasePriceForSlot(slotKey, purchasePriceMap) === resolvePlayerPurchasePrice(player, { preferStartPrice: false });
+      });
+
+      if (!allStoredMatchCurrentPrice) return false;
+
+      let startTotal = 0;
+      let currentTotal = 0;
+      let validStartCount = 0;
+      let slotsWithRealStartDiscount = 0;
+
+      occupiedSlots.forEach(([, playerId]) => {
+        const player = getPlayerById(playerId);
+        if (!player) return;
+        const currentPrice = resolvePlayerPurchasePrice(player, { preferStartPrice: false });
+        const startPrice = getPlayerStartPrice(player);
+        currentTotal += currentPrice;
+        if (startPrice !== null) {
+          startTotal += startPrice;
+          validStartCount += 1;
+          if (startPrice < currentPrice) slotsWithRealStartDiscount += 1;
+        } else {
+          startTotal += currentPrice;
+        }
+      });
+
+      return validStartCount >= Math.max(1, occupiedSlots.length - 1)
+        && slotsWithRealStartDiscount >= 2
+        && currentTotal > startTotal;
+    }
+
+    function ensureSquadPurchasePrices({ preferStartPriceForNew = true } = {}) {
+      const nextPurchasePrices = buildPurchasePriceMapForSquad(
+        squad,
+        squad,
+        squadPurchasePrices,
+        { preferStartPriceForNew }
+      );
+
+      const repairedPurchasePrices = shouldRepairLegacyPurchasePrices(squad, nextPurchasePrices)
+        ? seedLegacyPurchasePricesForSquad(squad)
+        : nextPurchasePrices;
+
+      const changed = JSON.stringify(squadPurchasePrices || {}) !== JSON.stringify(repairedPurchasePrices || {});
+      squadPurchasePrices = repairedPurchasePrices;
+
+      if (changed) {
+        localStorage.setItem(STORAGE_KEYS.squadPurchasePrices, JSON.stringify(squadPurchasePrices || {}));
+      }
+
+      return changed;
+    }
+
+    function hasLoadedPlayerData() {
+      return Array.isArray(allPlayers) && allPlayers.length > 0;
+    }
+
+    function applyPendingRemoteSquadStateIfReady() {
+      if (!pendingRemoteSquadState || !hasLoadedPlayerData()) return false;
+
+      const {
+        squad: nextSquad,
+        purchasePrices: nextPurchasePrices
+      } = pendingRemoteSquadState;
+
+      applySquadState(nextSquad, nextPurchasePrices, { preferStartPriceForNew: true });
+      ensureSquadPurchasePrices({ preferStartPriceForNew: true });
+      pendingRemoteSquadState = null;
+      return true;
+    }
+
+    function applySquadState(nextSquad, nextPurchasePrices, { preferStartPriceForNew = false } = {}) {
+      const previousSquad = squad;
+      const previousPurchasePrices = squadPurchasePrices;
+      squad = cloneSquadState(nextSquad);
+      squadPurchasePrices = nextPurchasePrices
+        ? cloneSquadState(nextPurchasePrices)
+        : buildPurchasePriceMapForSquad(squad, previousSquad, previousPurchasePrices, { preferStartPriceForNew });
+    }
+
     function pushHistory() {
-      squadHistory.push(cloneSquadState(squad));
+      squadHistory.push({
+        squad: cloneSquadState(squad),
+        purchasePrices: cloneSquadState(squadPurchasePrices)
+      });
       if (squadHistory.length > HISTORY_LIMIT) squadHistory.shift();
       updateUndoButton();
     }
@@ -4233,7 +4424,12 @@ function saveState() {
         return;
       }
 
-      squad = squadHistory.pop();
+      const previousState = squadHistory.pop();
+      applySquadState(
+        previousState?.squad && typeof previousState.squad === "object" ? previousState.squad : previousState,
+        previousState?.purchasePrices && typeof previousState.purchasePrices === "object" ? previousState.purchasePrices : null,
+        { preferStartPriceForNew: true }
+      );
       activeSlotKey = null;
       previousReplacementBySlot.clear();
       activeSlotText.textContent = "Ingen valgt";
@@ -4250,7 +4446,7 @@ function saveState() {
       }
 
       pushHistory();
-      squad = {};
+      applySquadState({}, {});
       activeSlotKey = null;
       previousReplacementBySlot.clear();
       modelChoiceBySlot.clear();
@@ -4602,17 +4798,17 @@ function getPlayerScore(player) {
     }
 
     function getAvailableForReplacement(currentPlayer) {
-      return getBankLeft() + getPlayerPrice(currentPlayer);
+      return getBankLeft() + getCurrentSquadPurchasePrice(currentPlayer);
     }
 
     function isEliteReplacementContext(currentPlayer) {
-      return getPlayerPrice(currentPlayer) >= 7000000
+      return getCurrentSquadPurchasePrice(currentPlayer) >= 7000000
         || getAlternativeComparableScore(currentPlayer) >= 8;
     }
 
     function isSameTierReplacementCandidate(player, currentPlayer) {
       if (!isEliteReplacementContext(currentPlayer)) return false;
-      const outgoingPrice = getPlayerPrice(currentPlayer);
+      const outgoingPrice = getCurrentSquadPurchasePrice(currentPlayer);
       const sameTierFloor = Math.max(4500000, outgoingPrice * 0.65);
       return getPlayerPrice(player) >= sameTierFloor;
     }
@@ -4647,6 +4843,12 @@ function getPlayerScore(player) {
       return Number.isFinite(price) ? price : 0;
     }
 
+    function getCurrentSquadPurchasePrice(player) {
+      if (!player) return 0;
+      const slotKey = findFilledSlotByPlayerId(player.player_id);
+      return slotKey ? getPurchasePriceForSlot(slotKey) : resolvePlayerPurchasePrice(player, { preferStartPrice: true });
+    }
+
     function getPlayerStart(player) {
       const startPct = Number(player?.start_probability_pct);
       if (Number.isFinite(startPct) && startPct > 0) return startPct;
@@ -4679,11 +4881,11 @@ function getPlayerScore(player) {
       return { text: `Start: ${Math.round(num)}%`, className: "low" };
     }
 
-    function getSpentBudget(squadObj = squad) {
-      return Object.values(squadObj)
-        .map(playerId => getPlayerById(playerId))
-        .filter(Boolean)
-        .reduce((sum, player) => sum + getPlayerPrice(player), 0);
+    function getSpentBudget(squadObj = squad, purchasePriceMap = squadPurchasePrices) {
+      return Object.entries(squadObj || {}).reduce((sum, [slotKey, playerId]) => {
+        if (!playerId || !getPlayerById(playerId)) return sum;
+        return sum + getPurchasePriceForSlot(slotKey, squadObj, purchasePriceMap);
+      }, 0);
     }
 
     function getPlayerCount(squadObj = squad) {
@@ -4691,11 +4893,11 @@ function getPlayerScore(player) {
     }
 
     function getBankLeft() {
-      return BUDGET_TOTAL - getSpentBudget();
+      return getEffectiveBudgetTotal() - getSpentBudget();
     }
 
     function getDisplayedBankLeft() {
-      return getEffectiveBudgetTotal() - getSpentBudget();
+      return getBankLeft();
     }
 
     function buildMergeKey(playerName, teamId, teamName = "") {
@@ -5048,6 +5250,8 @@ function getPlayerScore(player) {
     function cleanSquadForCurrentFormation() {
       const validSlotKeys = new Set(getCurrentSlots().map(slot => slot.key));
       const cleanedSquad = {};
+      const previousSquad = cloneSquadState(squad);
+      const previousPurchasePrices = cloneSquadState(squadPurchasePrices);
 
       Object.entries(squad).forEach(([slotKey, playerId]) => {
         if (validSlotKeys.has(slotKey) && getPlayerById(playerId)) {
@@ -5056,6 +5260,9 @@ function getPlayerScore(player) {
       });
 
       squad = cleanedSquad;
+      squadPurchasePrices = buildPurchasePriceMapForSquad(cleanedSquad, previousSquad, previousPurchasePrices, {
+        preferStartPriceForNew: true
+      });
     }
 
     function getCurrentTeamCounts(squadObj = squad) {
@@ -5087,12 +5294,12 @@ function getPlayerScore(player) {
       return (counts[teamKey] || 0) < MAX_PER_TEAM;
     }
 
-    function getSquadConstraintIssues(squadObj, budgetLimit = BUDGET_TOTAL) {
+    function getSquadConstraintIssues(squadObj, budgetLimit = getEffectiveBudgetTotal(), purchasePriceMap = squadPurchasePrices) {
       const issues = [];
       const playerIds = Object.values(squadObj).filter(Boolean);
       const slots = getCurrentSlots();
 
-      const spent = getSpentBudget(squadObj);
+      const spent = getSpentBudget(squadObj, purchasePriceMap);
       if (spent > budgetLimit) {
         issues.push(`budget overskredet (${formatMoney(spent)} > ${formatMoney(budgetLimit)})`);
       }
@@ -5193,11 +5400,11 @@ function getPlayerScore(player) {
         if (!canAddMoreFromTeam(player, ignoreId)) return "Maks fra land";
 
         const existingSpent = getSpentBudget();
-        const currentPrice = currentPlayerInSlot ? getPlayerPrice(currentPlayerInSlot) : 0;
+        const currentPrice = currentPlayerInSlot ? getCurrentSquadPurchasePrice(currentPlayerInSlot) : 0;
         const projectedSpent = existingSpent - currentPrice + price;
 
-        if (projectedSpent > BUDGET_TOTAL) {
-          const bankAfterSale = BUDGET_TOTAL - (existingSpent - currentPrice);
+        if (projectedSpent > getEffectiveBudgetTotal()) {
+          const bankAfterSale = getEffectiveBudgetTotal() - (existingSpent - currentPrice);
           return `Ikke råd (${formatMoney(bankAfterSale)} tilbage)`;
         }
 
@@ -5327,7 +5534,7 @@ function getPlayerScore(player) {
         return { samePrice: [], withBank: [] };
       }
 
-      const currentPrice = getPlayerPrice(currentPlayer);
+      const currentPrice = getCurrentSquadPurchasePrice(currentPlayer);
       const modelChoice = getModelChoiceForSlot(activeSlot);
       const modelChoiceId = modelChoice ? String(modelChoice.player_id) : null;
       const baseCandidates = allPlayers.filter(player =>
@@ -5375,7 +5582,7 @@ function getPlayerScore(player) {
       const strategyName = strategyDisplayName(activeStrategyKey);
       const positionLabel = positionFullLabel(currentPlayer?.position || activeSlot?.positionCode || activeSlot?.position);
       const availableForReplacement = getAvailableForReplacement(currentPlayer);
-      const currentPrice = getPlayerPrice(currentPlayer);
+      const currentPrice = getCurrentSquadPurchasePrice(currentPlayer);
       const previousReplacement = previousReplacementBySlot.get(activeSlot?.key);
       const previousPlayerId = previousReplacement
         && String(previousReplacement.newPlayerId) === String(currentPlayer?.player_id)
@@ -5575,18 +5782,20 @@ function getPlayerScore(player) {
       }
 
       const existingSpent = getSpentBudget();
-      const currentPrice = currentPlayerInSlot ? getPlayerPrice(currentPlayerInSlot) : 0;
+      const currentPrice = currentPlayerInSlot ? getCurrentSquadPurchasePrice(currentPlayerInSlot) : 0;
       const newPrice = getPlayerPrice(player);
       const projectedSpent = existingSpent - currentPrice + newPrice;
 
-      if (projectedSpent > BUDGET_TOTAL) {
-        const bankAfterSale = BUDGET_TOTAL - (existingSpent - currentPrice);
+      if (projectedSpent > getEffectiveBudgetTotal()) {
+        const bankAfterSale = getEffectiveBudgetTotal() - (existingSpent - currentPrice);
         showStatus(`Ikke nok i banken til dette køb. Du har ${formatMoney(bankAfterSale)} til rådighed for denne plads.`, "error");
         return;
       }
 
       const alreadyInSquadSlot = findFilledSlotByPlayerId(playerId);
       pushHistory();
+      const previousSquad = cloneSquadState(squad);
+      const previousPurchasePrices = cloneSquadState(squadPurchasePrices);
 
       if (alreadyInSquadSlot && alreadyInSquadSlot !== slotKey) {
         delete squad[alreadyInSquadSlot];
@@ -5603,6 +5812,10 @@ function getPlayerScore(player) {
       }
 
       squad[slotKey] = playerId;
+      squadPurchasePrices = buildPurchasePriceMapForSquad(squad, previousSquad, previousPurchasePrices, {
+        preferStartPriceForNew: false
+      });
+      squadPurchasePrices[slotKey] = resolvePlayerPurchasePrice(player, { preferStartPrice: false });
       if (removedCaptain) {
         frontendCaptainOverride = pickFrontendCaptainFromSquad(squad);
       }
@@ -5662,7 +5875,7 @@ function getPlayerScore(player) {
         });
     }
 
-    function buildFullSquadGreedyFast(budgetLimit = BUDGET_TOTAL) {
+    function buildFullSquadGreedyFast(budgetLimit = getFullOptimizationBudget()) {
       const slots = getCurrentSlots();
       const orderedSlots = [...slots].sort((a, b) => {
         const rank = { "FWD": 1, "MID": 2, "DEF": 3, "GK": 4 };
@@ -5714,7 +5927,7 @@ function getPlayerScore(player) {
       return localSquad;
     }
 
-    function applyFastFullSquadFallback(reasonText = "", budgetLimit = BUDGET_TOTAL) {
+    function applyFastFullSquadFallback(reasonText = "", budgetLimit = getFullOptimizationBudget()) {
       const fallbackSquad = buildFullSquadGreedyFast(budgetLimit);
 
       if (!fallbackSquad) {
@@ -5722,14 +5935,17 @@ function getPlayerScore(player) {
         return false;
       }
 
-      const issues = getSquadConstraintIssues(fallbackSquad, budgetLimit);
+      const fallbackPurchasePrices = buildPurchasePriceMapForSquad(fallbackSquad, squad, squadPurchasePrices, {
+        preferStartPriceForNew: false
+      });
+      const issues = getSquadConstraintIssues(fallbackSquad, budgetLimit, fallbackPurchasePrices);
       if (issues.length) {
         showStatus(`Fallback-holdet blev ugyldigt: ${issues.join(" · ")}`, "error");
         return false;
       }
 
       pushHistory();
-      squad = fallbackSquad;
+      applySquadState(fallbackSquad, fallbackPurchasePrices);
       previousReplacementBySlot.clear();
       modelChoiceBySlot = new Map(
         Object.entries(fallbackSquad).map(([slotKey, playerId]) => [
@@ -5876,7 +6092,7 @@ function getPlayerScore(player) {
       applyOptimizerRowsToSquad(rows, fallbackText, budgetLimit);
     }
 
-    function applyOptimizerRowsToSquad(rows, successText, budgetLimit = BUDGET_TOTAL) {
+    function applyOptimizerRowsToSquad(rows, successText, budgetLimit = getFullOptimizationBudget()) {
       const slots = getCurrentSlots();
       const byPosition = {
         GK: rows.filter(row => normalizePositionLabel(row.position) === "GK"),
@@ -5913,7 +6129,10 @@ function getPlayerScore(player) {
         });
       });
 
-      const issues = getSquadConstraintIssues(newSquad, budgetLimit);
+      const newPurchasePrices = buildPurchasePriceMapForSquad(newSquad, squad, squadPurchasePrices, {
+        preferStartPriceForNew: false
+      });
+      const issues = getSquadConstraintIssues(newSquad, budgetLimit, newPurchasePrices);
 
       if (issues.length || missingPlayers.length || Object.keys(newSquad).length !== 11) {
         const reasonParts = [];
@@ -5927,7 +6146,7 @@ function getPlayerScore(player) {
       }
 
       pushHistory();
-      squad = newSquad;
+      applySquadState(newSquad, newPurchasePrices);
       previousReplacementBySlot.clear();
       modelChoiceBySlot = new Map(
         Object.entries(newSquad).map(([slotKey, playerId]) => [
@@ -6103,7 +6322,12 @@ function getPlayerScore(player) {
 
         if (partialCount > 0) {
           pushHistory();
-          squad = { ...squad, ...partial };
+          applySquadState(
+            { ...squad, ...partial },
+            buildPurchasePriceMapForSquad({ ...squad, ...partial }, squad, squadPurchasePrices, {
+              preferStartPriceForNew: false
+            })
+          );
           previousReplacementBySlot.clear();
           activeSlotKey = null;
           activeSlotText.textContent = "Ingen valgt";
@@ -6130,7 +6354,12 @@ function getPlayerScore(player) {
 
         if (partialCount > 0) {
           pushHistory();
-          squad = { ...squad, ...partial };
+          applySquadState(
+            { ...squad, ...partial },
+            buildPurchasePriceMapForSquad({ ...squad, ...partial }, squad, squadPurchasePrices, {
+              preferStartPriceForNew: false
+            })
+          );
           previousReplacementBySlot.clear();
           activeSlotKey = null;
           activeSlotText.textContent = "Ingen valgt";
@@ -6146,13 +6375,16 @@ function getPlayerScore(player) {
       }
 
       const candidateSquad = { ...squad, ...solution };
-      const issues = getSquadConstraintIssues(candidateSquad, fillBudgetTotal);
+      const candidatePurchasePrices = buildPurchasePriceMapForSquad(candidateSquad, squad, squadPurchasePrices, {
+        preferStartPriceForNew: false
+      });
+      const issues = getSquadConstraintIssues(candidateSquad, fillBudgetTotal, candidatePurchasePrices);
       if (issues.length) {
         showStatus(`Udfyldningen blev stoppet, fordi resultatet ville være ugyldigt: ${issues.join(" · ")}`, "error");
         return;
       }
 
-      const spentAfterFill = getSpentBudget(candidateSquad);
+      const spentAfterFill = getSpentBudget(candidateSquad, candidatePurchasePrices);
       const bankAfterFill = fillBudgetTotal - spentAfterFill;
       const maxAcceptableBankAfterFill = 500000;
 
@@ -6165,7 +6397,7 @@ function getPlayerScore(player) {
       }
 
         pushHistory();
-        squad = candidateSquad;
+        applySquadState(candidateSquad, candidatePurchasePrices);
         previousReplacementBySlot.clear();
         activeSlotKey = null;
         frontendCaptainOverride = null;
@@ -6326,6 +6558,7 @@ function getRenderSlots() {
             if (playerId) {
               pushHistory();
               delete squad[slotKey];
+              delete squadPurchasePrices[slotKey];
               previousReplacementBySlot.delete(slotKey);
               saveState();
               render();
@@ -6763,7 +6996,7 @@ function renderTradeList() {
     function enforceLoggedOutPrivacyState() {
       if (currentUser && currentUser.id) return;
 
-      squad = {};
+      applySquadState({}, {});
       activeSlotKey = null;
       previousReplacementBySlot.clear();
       modelChoiceBySlot.clear();
@@ -6782,6 +7015,7 @@ function renderTradeList() {
     function render() {
       enforceLoggedOutPrivacyState();
       cleanSquadForCurrentFormation();
+      ensureSquadPurchasePrices({ preferStartPriceForNew: true });
       renderBudget();
       renderStrategyControls();
       postProcessTimeAwareStrategyButtons();
@@ -7076,6 +7310,7 @@ function renderTradeList() {
         formation: currentFormation,
         squad_json: {
           squad,
+          purchase_prices: squadPurchasePrices,
           favorite_player_ids: Array.from(favoritePlayerIds),
           manual_bank_millions: manualBankMillions
         }
@@ -7151,11 +7386,24 @@ function renderTradeList() {
         ? data.squad_json
         : {};
       const hasSavedStateEnvelope = Object.prototype.hasOwnProperty.call(savedState, "squad")
+        || Object.prototype.hasOwnProperty.call(savedState, "purchase_prices")
         || Object.prototype.hasOwnProperty.call(savedState, "favorite_player_ids")
         || Object.prototype.hasOwnProperty.call(savedState, "manual_bank_millions");
-      squad = hasSavedStateEnvelope && savedState.squad && typeof savedState.squad === "object"
+      const nextSquad = hasSavedStateEnvelope && savedState.squad && typeof savedState.squad === "object"
         ? savedState.squad
         : savedState;
+      const nextPurchasePrices = hasSavedStateEnvelope && savedState.purchase_prices && typeof savedState.purchase_prices === "object"
+        ? savedState.purchase_prices
+        : {};
+      if (!hasLoadedPlayerData()) {
+        pendingRemoteSquadState = {
+          squad: cloneSquadState(nextSquad),
+          purchasePrices: cloneSquadState(nextPurchasePrices)
+        };
+      } else {
+        applySquadState(nextSquad, nextPurchasePrices, { preferStartPriceForNew: true });
+        ensureSquadPurchasePrices({ preferStartPriceForNew: true });
+      }
 
       const remoteFavoriteIds = hasSavedStateEnvelope && Array.isArray(savedState.favorite_player_ids)
         ? savedState.favorite_player_ids
@@ -7428,7 +7676,7 @@ formationSelect.value = currentFormation;
     }
 
     function clearLocalSquadViewAfterLogout() {
-      squad = {};
+      applySquadState({}, {});
       activeSlotKey = null;
       previousReplacementBySlot.clear();
       modelChoiceBySlot.clear();
@@ -7515,6 +7763,7 @@ formationSelect.value = currentFormation;
         }
 
         allPlayers = attachStartSecurity(players, startMap);
+        applyPendingRemoteSquadStateIfReady();
 
         cleanSquadForCurrentFormation();
         buildTeamFilter();
