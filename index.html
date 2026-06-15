@@ -6289,7 +6289,7 @@ function getPlayerScore(player) {
                 ${flagUrl ? `<img class="trade-list-flag" src="${flagUrl}" alt="${escapeHtml(flagTitle)}" title="${escapeHtml(flagTitle)}" aria-label="${escapeHtml(flagTitle)}">` : ""}
               </div>
               <div class="trade-player-main">
-                <div class="alternative-player-name">${escapeHtml(player.player_name || "Ukendt spiller")}${warning}${previousLabel}${modelLabel}</div>
+                <div class="alternative-player-name player-name" data-player-id="${escapeHtml(player.player_id || "")}" data-team-id="${escapeHtml(player.team_id || "")}">${escapeHtml(player.player_name || "Ukendt spiller")}${warning}${previousLabel}${modelLabel}</div>
                 <div class="alternative-player-meta">${escapeHtml(positionFullLabel(player.position))}</div>
                 <div class="alternative-player-opponent">${escapeHtml(nextOpponentText(player.team_id))}</div>
                 <div class="alternative-bottom">
@@ -8973,7 +8973,7 @@ formationSelect.value = currentFormation;
 
       var rightPanel = target.closest(".right-panel");
       if (rightPanel) {
-        var allowedListTarget = target.closest(".trade-name, .trade-meta, .trade-next");
+        var allowedListTarget = target.closest(".trade-name, .trade-meta, .trade-next, .alternative-player-name, .alternative-player-meta, .alternative-player-opponent");
         var tradeRow = target.closest(".trade-row");
 
         if (!allowedListTarget || !tradeRow) return null;
