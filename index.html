@@ -6287,7 +6287,7 @@ function getPlayerScore(player) {
           const priceDiffHtml = `<div class="trade-diff ${diffClass(priceDiff)}">${formatSignedMoneyDiff(priceDiff)}</div>`;
           const transferHtml = transferInfoHtml(player, currentPlayer);
           return `
-            <div class="trade-row alternative">
+            <div class="trade-row alternative" data-player-id="${escapeHtml(player.player_id || "")}">
               <span class="alternative-rank">${index + 1}</span>
               <div class="alternative-flag-wrap">
                 ${flagUrl ? `<img class="trade-list-flag" src="${flagUrl}" alt="${escapeHtml(flagTitle)}" title="${escapeHtml(flagTitle)}" aria-label="${escapeHtml(flagTitle)}">` : ""}
@@ -7918,7 +7918,7 @@ function renderTradeList() {
         const tmWarning = shouldShowTmWarning(player) ? `<div class="trade-tm-warning">TM: usikker starter</div>` : "";
 
         return `
-          <div class="${rowClass}">
+          <div class="${rowClass}" data-player-id="${player.player_id}">
             <div class="trade-player-main">
               <div class="trade-name-line">
                 ${flagUrl ? `<img class="trade-list-flag" src="${flagUrl}" alt="${escapeHtml(getTradeFlagTitle(player))}" title="${escapeHtml(getTradeFlagTitle(player))}" aria-label="${escapeHtml(getTradeFlagTitle(player))}">` : ""}
@@ -8982,6 +8982,12 @@ formationSelect.value = currentFormation;
     }
 
     function findCard(target) {
+      var rightPanel = target.closest(".right-panel");
+      if (rightPanel) {
+        var tradeRow = target.closest(".trade-row");
+        if (tradeRow) return tradeRow;
+      }
+
       return target.closest(
         "[data-player-id], [data-slot-key], .trade-row, .player-card, .pitch-player, .pitch-player-card, .field-player, .formation-player, .slot-card, .squad-player, .player-token, .pitch-slot"
       );
