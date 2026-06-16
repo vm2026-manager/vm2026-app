@@ -190,7 +190,7 @@
       display: flex;
       flex-direction: column;
       gap: 6px;
-      margin-bottom: 7px;
+      margin-bottom: 5px;
       background: rgba(255,255,255,0.92);
       color: #111827;
       border-radius: 10px;
@@ -226,9 +226,9 @@
 
     .strategy-content {
       display: flex;
-      align-items: stretch;
+      align-items: center;
       justify-content: space-between;
-      gap: 7px;
+      gap: 6px;
       flex-wrap: wrap;
     }
 
@@ -259,15 +259,15 @@
     .action-bar {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       flex-wrap: wrap;
-      margin-bottom: 8px;
+      margin-bottom: 5px;
     }
 
     .action-controls {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       flex-wrap: wrap;
       flex: 1 1 280px;
     }
@@ -275,17 +275,9 @@
     .action-buttons {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       flex-wrap: wrap;
       flex: 999 1 420px;
-    }
-
-    .action-help-text {
-      width: 100%;
-      margin-top: 2px;
-      color: rgba(15, 23, 42, 0.72);
-      font-size: 11px;
-      line-height: 1.35;
     }
 
     .active-slot-badge {
@@ -300,6 +292,10 @@
       line-height: 1.15;
       white-space: nowrap;
       flex: 0 1 auto;
+    }
+
+    .strategy-content .active-slot-badge {
+      margin-left: auto;
     }
 
     .active-slot-badge strong {
@@ -3599,6 +3595,10 @@
             </div>
             <div class="strategy-content">
               <div class="strategy-buttons" id="strategyButtons"></div>
+              <div class="active-slot-badge">
+                <strong>Valgt plads:</strong>
+                <span id="activeSlotText">Ingen valgt</span>
+              </div>
             </div>
           </div>
 
@@ -3616,17 +3616,12 @@
                   <option value="5-4-1">5-4-1</option>
                 </select>
               </div>
-              <div class="active-slot-badge">
-                <strong>Valgt plads:</strong>
-                <span id="activeSlotText">Ingen valgt</span>
-              </div>
             </div>
             <div class="action-buttons">
-              <button id="optimizeBtn" class="action-btn primary" title="Indlæser et generisk benchmarkhold fra scratch. Det tager ikke udgangspunkt i dit nuværende hold.">Indlæs benchmarkhold</button>
+              <button id="optimizeBtn" class="action-btn primary" title="Indlæser et generisk benchmarkhold fra scratch. Det er ikke en personlig transferanbefaling. Personlige ændringer tager i stedet højde for bank og 1 % transfergebyr via fyld mangler, spillerændringer og alternativer.">Indlæs benchmarkhold</button>
               <button id="fillMissingBtn" class="action-btn tertiary">Fyld mangler optimalt</button>
               <button id="undoBtn" class="action-btn undo">Fortryd</button>
               <button id="clearTeamBtn" class="action-btn secondary">Ryd hold</button>
-              <div class="action-help-text">Benchmarkholdet er generisk. Personlige ændringer tager højde for bank og transfergebyr via fyld mangler, spillerændringer og alternativer.</div>
             </div>
           </div>
 
