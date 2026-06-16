@@ -1,49 +1,49 @@
-﻿team_id,team_name,unibet_win_odds,unibet_top2_odds,source,source_date
-ESP,Spanien,5.50,3.25,Unibet,2026-06-09
-FRA,Frankrig,6.00,3.50,Unibet,2026-06-09
-ENG,England,8.00,4.25,Unibet,2026-06-09
-POR,Portugal,9.00,5.25,Unibet,2026-06-09
-ARG,Argentina,10.00,5.50,Unibet,2026-06-09
-BRA,Brasilien,10.00,5.50,Unibet,2026-06-09
-GER,Tyskland,13.00,6.50,Unibet,2026-06-09
-NED,Holland,19.00,9.00,Unibet,2026-06-09
-NOR,Norge,26.00,12.00,Unibet,2026-06-09
-BEL,Belgien,34.00,15.00,Unibet,2026-06-09
-COL,Colombia,34.00,17.00,Unibet,2026-06-09
-JPN,Japan,51.00,21.00,Unibet,2026-06-09
-MAR,Marokko,51.00,21.00,Unibet,2026-06-09
-USA,USA,51.00,21.00,Unibet,2026-06-09
-MEX,Mexico,67.00,21.00,Unibet,2026-06-09
-SUI,Schweiz,67.00,21.00,Unibet,2026-06-09
-CRO,Kroatien,81.00,29.00,Unibet,2026-06-09
-URU,Uruguay,81.00,23.00,Unibet,2026-06-09
-CAN,Canada,101.00,34.00,Unibet,2026-06-09
-ECU,Ecuador,101.00,34.00,Unibet,2026-06-09
-SEN,Senegal,101.00,51.00,Unibet,2026-06-09
-SWE,Sverige,101.00,41.00,Unibet,2026-06-09
-TUR,Tyrkiet,101.00,26.00,Unibet,2026-06-09
-PAR,Paraguay,151.00,51.00,Unibet,2026-06-09
-AUT,?strig,151.00,34.00,Unibet,2026-06-09
-BIH,Bosnien,251.00,67.00,Unibet,2026-06-09
-SCO,Skotland,251.00,51.00,Unibet,2026-06-09
-EGY,Egypten,301.00,67.00,Unibet,2026-06-09
-CIV,Elfenbenskysten,301.00,67.00,Unibet,2026-06-09
-CZE,Tjekkiet,301.00,101.00,Unibet,2026-06-09
-ALG,Algeriet,401.00,67.00,Unibet,2026-06-09
-GHA,Ghana,401.00,67.00,Unibet,2026-06-09
-KOR,Sydkorea,401.00,101.00,Unibet,2026-06-09
-AUS,Australia,501.00,126.00,Unibet,2026-06-09
-IRN,Iran,501.00,126.00,Unibet,2026-06-09
-TUN,Tunesien,501.00,151.00,Unibet,2026-06-09
-COD,DR Congo,751.00,201.00,Unibet,2026-06-09
-QAT,Qatar,1001.00,251.00,Unibet,2026-06-09
-KSA,Saudi Arabien,1001.00,251.00,Unibet,2026-06-09
-RSA,Sydafrika,1001.00,251.00,Unibet,2026-06-09
-IRQ,Irak,1501.00,301.00,Unibet,2026-06-09
-NZL,New Zealand,1501.00,301.00,Unibet,2026-06-09
-PAN,Panama,1501.00,301.00,Unibet,2026-06-09
-CUW,Curacao,2001.00,401.00,Unibet,2026-06-09
-CPV,Kap Verde,2001.00,301.00,Unibet,2026-06-09
-UZB,Uzbekistan,2001.00,401.00,Unibet,2026-06-09
-HAI,Haiti,2501.00,501.00,Unibet,2026-06-09
-JOR,Jordan,2501.00,501.00,Unibet,2026-06-09
+team_id,team_name,unibet_win_odds,unibet_top2_odds,source,source_date,bold_bookmaker_1_win_odds,bold_bookmaker_2_win_odds,bold_bwin_win_odds,bold_bookmaker_4_win_odds,market_min_win_odds,market_max_win_odds,market_avg_win_odds,market_median_win_odds,model_win_odds,model_win_implied_pct,outright_odds_source_note,outright_odds_fetched_label,outright_odds_fetched_at
+ESP,Spanien,5.78,3.25,Unibet,2026-06-09,5.55,5.55,6.00,6.00,5.55,6.00,5.78,5.78,5.78,17.32,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+FRA,Frankrig,5.40,3.50,Unibet,2026-06-09,5.40,5.40,5.00,5.50,5.00,5.50,5.33,5.40,5.40,18.52,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+ENG,England,7.97,4.25,Unibet,2026-06-09,7.95,7.95,8.00,8.50,7.95,8.50,8.10,7.97,7.97,12.54,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+POR,Portugal,8.40,5.25,Unibet,2026-06-09,8.40,8.40,8.00,8.50,8.00,8.50,8.32,8.40,8.40,11.90,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+ARG,Argentina,10.80,5.50,Unibet,2026-06-09,10.80,10.80,10.00,11.00,10.00,11.00,10.65,10.80,10.80,9.26,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+BRA,Brasilien,10.90,5.50,Unibet,2026-06-09,10.90,10.90,10.00,12.00,10.00,12.00,10.95,10.90,10.90,9.17,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+GER,Tyskland,15.20,6.50,Unibet,2026-06-09,15.40,15.40,13.00,15.00,13.00,15.40,14.70,15.20,15.20,6.58,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+NED,Holland,18.55,9.00,Unibet,2026-06-09,18.10,18.10,19.00,19.00,18.10,19.00,18.55,18.55,18.55,5.39,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+NOR,Norge,31.90,12.00,Unibet,2026-06-09,29.80,29.80,34.00,34.00,29.80,34.00,31.90,31.90,31.90,3.13,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+BEL,Belgien,40.00,15.00,Unibet,2026-06-09,40.00,40.00,34.00,41.00,34.00,41.00,38.75,40.00,40.00,2.50,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+COL,Colombia,41.00,17.00,Unibet,2026-06-09,41.00,41.00,41.00,51.00,41.00,51.00,43.50,41.00,41.00,2.44,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+JPN,Japan,50.00,21.00,Unibet,2026-06-09,50.00,50.00,51.00,46.00,46.00,51.00,49.25,50.00,50.00,2.00,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+MAR,Marokko,40.50,21.00,Unibet,2026-06-09,40.00,40.00,41.00,41.00,40.00,41.00,40.50,40.50,40.50,2.47,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+USA,USA,40.00,21.00,Unibet,2026-06-09,40.00,40.00,34.00,41.00,34.00,41.00,38.75,40.00,40.00,2.50,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+MEX,Mexico,50.00,21.00,Unibet,2026-06-09,50.00,50.00,51.00,41.00,41.00,51.00,48.00,50.00,50.00,2.00,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+SUI,Schweiz,79.00,21.00,Unibet,2026-06-09,79.00,79.00,67.00,91.00,67.00,91.00,79.00,79.00,79.00,1.27,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+CRO,Kroatien,81.00,29.00,Unibet,2026-06-09,81.00,81.00,81.00,101.00,81.00,101.00,86.00,81.00,81.00,1.23,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+URU,Uruguay,67.00,23.00,Unibet,2026-06-09,67.00,67.00,67.00,81.00,67.00,81.00,70.50,67.00,67.00,1.49,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+CAN,Canada,143.00,34.00,Unibet,2026-06-09,135.00,135.00,151.00,301.00,135.00,301.00,180.50,143.00,143.00,0.70,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+ECU,Ecuador,140.50,34.00,Unibet,2026-06-09,150.00,150.00,101.00,131.00,101.00,150.00,133.00,140.50,140.50,0.71,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+SEN,Senegal,120.00,51.00,Unibet,2026-06-09,120.00,120.00,81.00,121.00,81.00,121.00,110.50,120.00,120.00,0.83,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+SWE,Sverige,88.00,41.00,Unibet,2026-06-09,88.00,88.00,81.00,101.00,81.00,101.00,89.50,88.00,88.00,1.14,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+TUR,Tyrkiet,150.00,26.00,Unibet,2026-06-09,150.00,150.00,126.00,151.00,126.00,151.00,144.25,150.00,150.00,0.67,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+PAR,Paraguay,400.00,51.00,Unibet,2026-06-09,400.00,400.00,301.00,401.00,301.00,401.00,375.50,400.00,400.00,0.25,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+AUT,?strig,150.50,34.00,Unibet,2026-06-09,150.00,150.00,151.00,151.00,150.00,151.00,150.50,150.50,150.50,0.66,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+BIH,Bosnien,300.00,67.00,Unibet,2026-06-09,300.00,300.00,251.00,,251.00,300.00,283.67,300.00,300.00,0.33,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+SCO,Skotland,195.00,51.00,Unibet,2026-06-09,195.00,195.00,151.00,201.00,151.00,201.00,185.50,195.00,195.00,0.51,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+EGY,Egypten,250.00,67.00,Unibet,2026-06-09,250.00,250.00,201.00,401.00,201.00,401.00,275.50,250.00,250.00,0.40,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+CIV,Elfenbenskysten,165.50,67.00,Unibet,2026-06-09,190.00,190.00,101.00,141.00,101.00,190.00,155.50,165.50,165.50,0.60,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+CZE,Tjekkiet,475.00,101.00,Unibet,2026-06-09,475.00,475.00,301.00,501.00,301.00,501.00,438.00,475.00,475.00,0.21,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+DZA,Algeriet,375.00,67.00,Unibet,2026-06-09,375.00,375.00,251.00,401.00,251.00,401.00,350.50,375.00,375.00,0.27,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+GHA,Ghana,450.50,67.00,Unibet,2026-06-09,400.00,400.00,501.00,501.00,400.00,501.00,450.50,450.50,450.50,0.22,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+KOR,Sydkorea,201.00,101.00,Unibet,2026-06-09,,,,201.00,201.00,201.00,201.00,201.00,201.00,0.50,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+AUS,Australia,93.50,126.00,Unibet,2026-06-09,86.00,86.00,101.00,151.00,86.00,151.00,106.00,93.50,93.50,1.07,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+IRN,Iran,700.00,126.00,Unibet,2026-06-09,700.00,700.00,501.00,751.00,501.00,751.00,663.00,700.00,700.00,0.14,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+TUN,Tunesien,750.50,151.00,Unibet,2026-06-09,750.00,750.00,751.00,751.00,750.00,751.00,750.50,750.50,750.50,0.13,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+COD,DR Congo,751.00,201.00,Unibet,2026-06-09,,,751.00,751.00,751.00,751.00,751.00,751.00,751.00,0.13,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+QAT,Qatar,1350.50,251.00,Unibet,2026-06-09,1700.00,1700.00,1001.00,1001.00,1001.00,1700.00,1350.50,1350.50,1350.50,0.07,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+KSA,Saudi Arabien,925.00,251.00,Unibet,2026-06-09,925.00,925.00,751.00,1001.00,751.00,1001.00,900.50,925.00,925.00,0.11,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+RSA,Sydafrika,1400.50,251.00,Unibet,2026-06-09,1800.00,1800.00,1001.00,1001.00,1001.00,1800.00,1400.50,1400.50,1400.50,0.07,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+IRQ,Irak,1400.00,301.00,Unibet,2026-06-09,1400.00,1400.00,1001.00,,1001.00,1400.00,1267.00,1400.00,1400.00,0.07,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+NZL,New Zealand,975.00,301.00,Unibet,2026-06-09,975.00,975.00,501.00,1001.00,501.00,1001.00,863.00,975.00,975.00,0.10,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+PAN,Panama,1200.50,301.00,Unibet,2026-06-09,1400.00,1400.00,1001.00,1001.00,1001.00,1400.00,1200.50,1200.50,1200.50,0.08,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+CUW,Curacao,2800.50,401.00,Unibet,2026-06-09,3100.00,3100.00,2501.00,1001.00,1001.00,3100.00,2425.50,2800.50,2800.50,0.04,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+CPV,Kap Verde,1200.50,301.00,Unibet,2026-06-09,1400.00,1400.00,1001.00,1001.00,1001.00,1400.00,1200.50,1200.50,1200.50,0.08,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+UZB,Uzbekistan,1200.50,401.00,Unibet,2026-06-09,1400.00,1400.00,1001.00,1001.00,1001.00,1400.00,1200.50,1200.50,1200.50,0.08,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+HAI,Haiti,2750.50,501.00,Unibet,2026-06-09,3000.00,3000.00,2501.00,1001.00,1001.00,3000.00,2375.50,2750.50,2750.50,0.04,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00
+JOR,Jordan,1600.50,501.00,Unibet,2026-06-09,2200.00,2200.00,1001.00,1001.00,1001.00,2200.00,1600.50,1600.50,1600.50,0.06,"Bold.dk odds-sammenligning, VM 2026 vinderodds",16.06 kl. 12:20,2026-06-16T12:20:52+02:00

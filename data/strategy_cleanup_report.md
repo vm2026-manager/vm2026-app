@@ -2,10 +2,8 @@
 
 ## Brugerrettede Strategier
 
-- next_round: Næste runde (runde 1)
-- round1_2: 1. + 2. runde
+- next_round: Næste runde (runde 2)
 - group_stage: Gruppespil
-- practical_start: 1. + 2. runde
 - long_run: Lang sigt
 
 ## Mapping
@@ -17,8 +15,8 @@
 
 ## Dynamisk Næste Runde
 
-- target_round: 1
-- display: Næste runde (runde 1)
+- target_round: 2
+- display: Næste runde (runde 2)
 - target_round beregnes som laveste grupperunde med mindst én kamp, der endnu ikke er startet.
 
 ## Kaptajn

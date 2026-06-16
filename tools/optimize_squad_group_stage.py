@@ -50,7 +50,10 @@ FORMATIONS: dict[str, dict[str, int]] = {
     "5-4-1": {"GK": 1, "DEF": 5, "MID": 4, "FWD": 1},
 }
 
-STRATEGIES = ["next_round", "round1_2", "group_stage", "practical_start", "long_run"]
+STRATEGIES = ["next_round", "group_stage", "long_run"]
+
+# Lokal turneringskontekst: runde 1 er færdigspillet, så "Næste runde" skal være runde 2.
+FORCE_TARGET_ROUND = 2
 
 DISPLAY_NAMES_DA = {
     "next_round": "Næste runde",
@@ -151,12 +154,22 @@ def get_current_target_round(now: datetime | None = None) -> dict[str, Any]:
 
     target_round: int | None = None
     remaining: list[dict[str, Any]] = []
-    for rnd in [1, 2, 3]:
-        future = [item for item in by_round[rnd] if item["kickoff"] > current]
-        if future:
-            target_round = rnd
-            remaining = future
-            break
+
+    forced_round = globals().get("FORCE_TARGET_ROUND")
+    if forced_round in by_round:
+        target_round = int(forced_round)
+        # Bevar remaining som fremtidige kampe, men fald tilbage til alle runde-kampe,
+        # hvis lokale fixture-datoer gør at runden ellers ser færdig ud.
+        remaining = [item for item in by_round[target_round] if item["kickoff"] > current]
+        if not remaining:
+            remaining = list(by_round[target_round])
+    else:
+        for rnd in [1, 2, 3]:
+            future = [item for item in by_round[rnd] if item["kickoff"] > current]
+            if future:
+                target_round = rnd
+                remaining = future
+                break
 
     if target_round is None:
         return {
@@ -508,12 +521,12 @@ def add_strategy_scores(players: pd.DataFrame) -> pd.DataFrame:
     work["transfer_fee"] = transfer_fee.round(0).astype(int)
     work["transfer_fee_m"] = transfer_fee / 1_000_000.0
 
-    # Runde 1 kampmilj?-bonus:
-    # L?fter kun sikre/relevante startere fra de st?rste favoritkampe.
-    # Skal f? N?ste runde til at l?ne sig mere mod GER/ESP/NOR/SUI/AUT/POR
+    # Næste-runde kampmiljøbonus:
+    # Løfter kun sikre/relevante startere fra de største favoritkampe i target_round.
+    # Skal få Næste runde til at læne sig mod stærke favoritkampe
     # uden at tvinge svage picks ind.
-    round1_ev_for_favorite_bonus = pd.to_numeric(
-        work.get("round1_ev", work.get("match_1_weighted_match_ev", 0.0)),
+    target_round_ev_for_favorite_bonus = pd.to_numeric(
+        work.get(f"round{target_round}_ev", 0.0),
         errors="coerce",
     ).fillna(0.0)
 
@@ -535,7 +548,7 @@ def add_strategy_scores(players: pd.DataFrame) -> pd.DataFrame:
     next_round_favorite_bonus = (
         next_round_favorite_tier
         * (start >= 0.75).astype(float)
-        * (round1_ev_for_favorite_bonus >= 1.00).astype(float)
+        * (target_round_ev_for_favorite_bonus >= 1.00).astype(float)
     )
 
     work["score_next_round"] = (
@@ -962,9 +975,7 @@ def ensure_templates() -> None:
 def write_strategy_metadata(context: dict[str, Any]) -> None:
     display = {
         "next_round": context["next_round_display_name"],
-        "round1_2": DISPLAY_NAMES_DA["round1_2"],
         "group_stage": DISPLAY_NAMES_DA["group_stage"],
-        "practical_start": DISPLAY_NAMES_DA["practical_start"],
         "long_run": DISPLAY_NAMES_DA["long_run"],
     }
     OUT_CONTEXT_JSON.write_text(json.dumps(context, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -975,9 +986,7 @@ def write_strategy_metadata(context: dict[str, Any]) -> None:
         "## Brugerrettede Strategier",
         "",
         f"- next_round: {display['next_round']}",
-        f"- round1_2: {display['round1_2']}",
         f"- group_stage: {display['group_stage']}",
-        f"- practical_start: {display['practical_start']}",
         f"- long_run: {display['long_run']}",
         "",
         "## Mapping",

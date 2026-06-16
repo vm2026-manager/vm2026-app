@@ -48,6 +48,12 @@ IMPACT_FIELDS = [
     "main_reason",
 ]
 
+BASE_COMPONENTS = {
+    "goal": "goal_multiplier",
+    "assist": "assist_multiplier",
+    "clean_sheet": "clean_sheet_multiplier",
+}
+
 
 def txt(value: Any) -> str:
     return "" if value is None else str(value).strip()
@@ -82,6 +88,16 @@ def write_csv(path: Path, fieldnames: list[str], rows: list[dict[str, Any]]) -> 
         writer.writerows(rows)
 
 
+def ensure_base_component_fields(fieldnames: list[str]) -> list[str]:
+    next_fields = list(fieldnames)
+    for match_no in [1, 2, 3]:
+        for component in BASE_COMPONENTS:
+            field = f"match_{match_no}_{component}_ev_base"
+            if field not in next_fields:
+                next_fields.append(field)
+    return next_fields
+
+
 def load_multiplier_lookup() -> dict[tuple[str, str], dict[str, float | str]]:
     _, rows = read_csv(MULTIPLIERS_PATH)
     lookup: dict[tuple[str, str], dict[str, float | str]] = {}
@@ -106,9 +122,10 @@ def load_multiplier_lookup() -> dict[tuple[str, str], dict[str, float | str]]:
     return lookup
 
 
-def load_fixture_match_lookup() -> dict[tuple[str, str, str], str]:
+def load_fixture_match_lookup() -> tuple[dict[tuple[str, str, str], str], dict[tuple[str, str], str]]:
     _, rows = read_csv(FIXTURES_PATH)
     lookup: dict[tuple[str, str, str], str] = {}
+    pair_candidates: dict[tuple[str, str], set[str]] = {}
     for row in rows:
         match_id = txt(row.get("match_id"))
         home = txt(row.get("home")).upper()
@@ -116,14 +133,31 @@ def load_fixture_match_lookup() -> dict[tuple[str, str, str], str]:
         kickoff = txt(row.get("kickoff_dk"))
         lookup[(home, away, kickoff)] = match_id
         lookup[(away, home, kickoff)] = match_id
-    return lookup
+        pair_candidates.setdefault((home, away), set()).add(match_id)
+        pair_candidates.setdefault((away, home), set()).add(match_id)
+
+    pair_lookup = {
+        pair: next(iter(match_ids))
+        for pair, match_ids in pair_candidates.items()
+        if len(match_ids) == 1
+    }
+    return lookup, pair_lookup
 
 
-def match_id_for(row: dict[str, str], match_no: int, fixture_lookup: dict[tuple[str, str, str], str]) -> str:
+def match_id_for(
+    row: dict[str, str],
+    match_no: int,
+    fixture_lookup: dict[tuple[str, str, str], str],
+    fixture_pair_lookup: dict[tuple[str, str], str],
+) -> str:
     team = txt(row.get("team_id")).upper()
     opponent = txt(row.get(f"match_{match_no}_opponent_team")).upper()
     kickoff = txt(row.get(f"match_{match_no}_kickoff"))
-    return fixture_lookup.get((team, opponent, kickoff), "")
+    if kickoff and kickoff not in {"0", "0.0"}:
+        match_id = fixture_lookup.get((team, opponent, kickoff), "")
+        if match_id:
+            return match_id
+    return fixture_pair_lookup.get((team, opponent), "")
 
 
 def recompute_match_total(row: dict[str, str], match_no: int) -> float:
@@ -159,10 +193,91 @@ def current_component_total_sum(row: dict[str, str]) -> float:
     return sum(to_float(row.get(f"match_{match_no}_total_ev_next_match")) for match_no in [1, 2, 3])
 
 
+def has_component_breakdown(row: dict[str, str]) -> bool:
+    if abs(current_component_weighted_sum(row)) > 1e-9 or abs(current_component_total_sum(row)) > 1e-9:
+        return True
+
+    component_suffixes = [
+        "goal_ev",
+        "assist_ev",
+        "shots_on_target_ev",
+        "clean_sheet_ev",
+        "card_ev",
+        "result_ev",
+        "team_scores_ev",
+        "opponent_scores_ev",
+        "on_pitch_ev",
+        "start_minutes_ev",
+    ]
+    for match_no in [1, 2, 3]:
+        for suffix in component_suffixes:
+            if abs(to_float(row.get(f"match_{match_no}_{suffix}"))) > 1e-9:
+                return True
+    return False
+
+
+def aggregate_ev_fallback(row: dict[str, str]) -> tuple[float, float]:
+    weighted_candidates = [
+        to_float(row.get("weighted_group_stage_ev")),
+        to_float(row.get("optimizer_ev")),
+        to_float(row.get("price_quality_ev")),
+    ]
+    total_candidates = [
+        to_float(row.get("total_ev_group_stage")),
+        to_float(row.get("weighted_group_stage_ev_before_price_quality")),
+        to_float(row.get("optimizer_ev_before_price_quality")),
+        to_float(row.get("model_ev_before_price_quality")),
+        to_float(row.get("price_quality_raw_ev")),
+    ]
+    weighted = max(weighted_candidates)
+    total = max(total_candidates)
+    return weighted, total
+
+
+def read_existing_multiplier(row: dict[str, str], match_no: int, component: str) -> float | None:
+    field = f"match_{match_no}_{BASE_COMPONENTS[component]}"
+    raw = txt(row.get(field))
+    if not raw:
+        return None
+    value = to_float(raw, 0.0)
+    if abs(value) <= 1e-9:
+        return None
+    return value
+
+
+def seed_base_component_value(
+    row: dict[str, str],
+    match_no: int,
+    component: str,
+    current_multiplier: float,
+) -> float:
+    base_field = f"match_{match_no}_{component}_ev_base"
+    base_raw = txt(row.get(base_field))
+    if base_raw:
+        return to_float(base_raw)
+
+    adjusted_field = f"match_{match_no}_{component}_ev"
+    adjusted_value = to_float(row.get(adjusted_field))
+    previous_multiplier = read_existing_multiplier(row, match_no, component)
+
+    if previous_multiplier is not None:
+        return adjusted_value / previous_multiplier
+
+    # Transition path for legacy rows without stable base fields or stored previous
+    # multipliers. If a current fixture multiplier exists, assume the current adjusted
+    # component was produced from that multiplier and back it out once; future runs
+    # then use the persisted base field only.
+    if abs(current_multiplier) > 1e-9 and abs(adjusted_value) > 1e-9:
+        return adjusted_value / current_multiplier
+
+    return adjusted_value
+
+
 def main() -> int:
     fields, rows = read_csv(PLAYER_EV_PATH)
+    fields = ensure_base_component_fields(fields)
     multiplier_lookup = load_multiplier_lookup()
-    fixture_lookup = load_fixture_match_lookup()
+    fixture_lookup, fixture_pair_lookup = load_fixture_match_lookup()
 
     warnings: list[str] = []
     impact_rows: list[dict[str, Any]] = []
@@ -173,6 +288,7 @@ def main() -> int:
         old_total_ev = to_float(row.get("total_ev_group_stage"))
         old_component_weighted = current_component_weighted_sum(row)
         old_component_total = current_component_total_sum(row)
+        row_has_breakdown = has_component_breakdown(row)
         weighted_scale = old_ev / old_component_weighted if old_component_weighted else 1.0
         total_scale = old_total_ev / old_component_total if old_component_total else weighted_scale
         max_abs_reason_diff = 0.0
@@ -180,7 +296,7 @@ def main() -> int:
         any_multiplier = False
 
         for match_no in [1, 2, 3]:
-            match_id = match_id_for(row, match_no, fixture_lookup)
+            match_id = match_id_for(row, match_no, fixture_lookup, fixture_pair_lookup)
             team = txt(row.get("team_id")).upper()
             multiplier = multiplier_lookup.get((match_id, team)) if match_id else None
 
@@ -190,6 +306,9 @@ def main() -> int:
                     warnings.append(f"missing_multiplier player={txt(row.get('player_id'))} team={team} match_no={match_no} opponent={opponent}")
                 # Keep existing component totals for rows without a fixture match. Some legacy
                 # EV rows have aggregate EV but no match breakdown.
+                for component in BASE_COMPONENTS:
+                    base_field = f"match_{match_no}_{component}_ev_base"
+                    row[base_field] = fmt(seed_base_component_value(row, match_no, component, 1.0))
                 continue
             else:
                 goal_multiplier = float(multiplier["goal_multiplier"])
@@ -197,13 +316,21 @@ def main() -> int:
                 clean_sheet_multiplier = float(multiplier["clean_sheet_multiplier"])
                 any_multiplier = True
 
-            old_goal = to_float(row.get(f"match_{match_no}_goal_ev"))
-            old_assist = to_float(row.get(f"match_{match_no}_assist_ev"))
-            old_cs = to_float(row.get(f"match_{match_no}_clean_sheet_ev"))
+            base_goal = seed_base_component_value(row, match_no, "goal", goal_multiplier)
+            base_assist = seed_base_component_value(row, match_no, "assist", assist_multiplier)
+            base_cs = seed_base_component_value(row, match_no, "clean_sheet", clean_sheet_multiplier)
 
-            row[f"match_{match_no}_goal_ev"] = fmt(old_goal * goal_multiplier)
-            row[f"match_{match_no}_assist_ev"] = fmt(old_assist * assist_multiplier)
-            row[f"match_{match_no}_clean_sheet_ev"] = fmt(old_cs * clean_sheet_multiplier)
+            row[f"match_{match_no}_goal_ev_base"] = fmt(base_goal)
+            row[f"match_{match_no}_assist_ev_base"] = fmt(base_assist)
+            row[f"match_{match_no}_clean_sheet_ev_base"] = fmt(base_cs)
+
+            row[f"match_{match_no}_goal_multiplier"] = fmt(goal_multiplier)
+            row[f"match_{match_no}_assist_multiplier"] = fmt(assist_multiplier)
+            row[f"match_{match_no}_clean_sheet_multiplier"] = fmt(clean_sheet_multiplier)
+
+            row[f"match_{match_no}_goal_ev"] = fmt(base_goal * goal_multiplier)
+            row[f"match_{match_no}_assist_ev"] = fmt(base_assist * assist_multiplier)
+            row[f"match_{match_no}_clean_sheet_ev"] = fmt(base_cs * clean_sheet_multiplier)
 
             reason_diff = abs(clean_sheet_multiplier - 1.0)
             reason = f"clean_sheet_multiplier={clean_sheet_multiplier:.3f}"
@@ -222,7 +349,7 @@ def main() -> int:
             row[f"match_{match_no}_total_ev_next_match"] = fmt(total)
             row[f"match_{match_no}_weighted_match_ev"] = fmt(weighted)
 
-        if any_multiplier:
+        if any_multiplier and row_has_breakdown:
             new_component_weighted = current_component_weighted_sum(row)
             new_component_total = current_component_total_sum(row)
             new_ev = max(0.0, new_component_weighted * weighted_scale)
@@ -231,7 +358,10 @@ def main() -> int:
             row["optimizer_ev"] = fmt(new_ev)
             row["total_ev_group_stage"] = fmt(total_ev)
         else:
-            new_ev = old_ev
+            new_ev, total_ev = aggregate_ev_fallback(row)
+            row["weighted_group_stage_ev"] = fmt(new_ev)
+            row["optimizer_ev"] = fmt(new_ev)
+            row["total_ev_group_stage"] = fmt(total_ev)
 
         if any_multiplier:
             updated_count += 1
