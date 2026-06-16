@@ -280,6 +280,14 @@
       flex: 999 1 420px;
     }
 
+    .action-help-text {
+      width: 100%;
+      margin-top: 2px;
+      color: rgba(15, 23, 42, 0.72);
+      font-size: 11px;
+      line-height: 1.35;
+    }
+
     .active-slot-badge {
       display: flex;
       align-items: center;
@@ -3614,10 +3622,11 @@
               </div>
             </div>
             <div class="action-buttons">
-              <button id="optimizeBtn" class="action-btn primary">Vælg optimalt hold</button>
+              <button id="optimizeBtn" class="action-btn primary" title="Indlæser et generisk benchmarkhold fra scratch. Det tager ikke udgangspunkt i dit nuværende hold.">Indlæs benchmarkhold</button>
               <button id="fillMissingBtn" class="action-btn tertiary">Fyld mangler optimalt</button>
               <button id="undoBtn" class="action-btn undo">Fortryd</button>
               <button id="clearTeamBtn" class="action-btn secondary">Ryd hold</button>
+              <div class="action-help-text">Benchmarkholdet er generisk. Personlige ændringer tager højde for bank og transfergebyr via fyld mangler, spillerændringer og alternativer.</div>
             </div>
           </div>
 
@@ -6604,7 +6613,7 @@ function getPlayerScore(player) {
       const fallbackSquad = buildFullSquadGreedyFast(budgetLimit);
 
       if (!fallbackSquad) {
-        showStatus(`Kunne ikke bygge et gyldigt hurtigt fallback-hold.${reasonText ? ` ${reasonText}` : ""}`, "error");
+        showStatus(`Kunne ikke bygge et gyldigt benchmarkhold fra scratch.${reasonText ? ` ${reasonText}` : ""}`, "error");
         return false;
       }
 
@@ -6613,7 +6622,7 @@ function getPlayerScore(player) {
       });
       const issues = getSquadConstraintIssues(fallbackSquad, budgetLimit, fallbackPurchasePrices);
       if (issues.length) {
-        showStatus(`Fallback-holdet blev ugyldigt: ${issues.join(" · ")}`, "error");
+        showStatus(`Benchmarkholdet fra scratch blev ugyldigt: ${issues.join(" · ")}`, "error");
         return false;
       }
 
@@ -6637,9 +6646,9 @@ function getPlayerScore(player) {
       scheduleAutosave();
 
       if (reasonText) {
-        showStatus(`Byggede i stedet et hurtigt gyldigt hold fra appens spillerpulje. ${reasonText}`, "info");
+        showStatus(`Indlæste i stedet et hurtigt benchmarkhold fra scratch fra appens spillerpulje. Det er ikke en personlig transferanbefaling. ${reasonText}`, "info");
       } else {
-        clearStatus();
+        showStatus("Indlæste et hurtigt benchmarkhold fra scratch. Det er et generisk sammenligningshold, ikke en personlig transferanbefaling.", "info");
       }
 
       return true;
@@ -6738,7 +6747,7 @@ function getPlayerScore(player) {
       if (!optimalSquads.length) {
         if (strategyRows.length) {
           showStatus(
-            `Der findes ikke et optimeret ${strategyDisplayName(activeStrategyKey)}-hold for formation ${selectedFormation} endnu.`,
+            `Der findes ikke et benchmarkhold fra scratch for ${strategyDisplayName(activeStrategyKey)} i formation ${selectedFormation} endnu.`,
             "error"
           );
           return;
@@ -6753,15 +6762,15 @@ function getPlayerScore(player) {
 
       if (!rows.length) {
         showStatus(
-          `Der findes ikke et optimeret hold for formation ${selectedFormation} endnu.`,
+          `Der findes ikke et benchmarkhold fra scratch for formation ${selectedFormation} endnu.`,
           "error"
         );
         return;
       }
 
       const fallbackText = strategyRows.length
-        ? `Der findes ikke et precomputed ${strategyDisplayName(activeStrategyKey)}-hold for ${selectedFormation}; bruger sidste nød-fallback fra generisk formationsoutput.`
-        : `Valgte optimalt hold fra optimizer-filen i formation ${selectedFormation}.`;
+        ? `Der findes ikke et precomputed benchmarkhold fra scratch for ${strategyDisplayName(activeStrategyKey)} i ${selectedFormation}; bruger sidste nød-fallback fra generisk formationsoutput.`
+        : `Indlæste benchmarkhold fra scratch fra optimizer-filen i formation ${selectedFormation}. Det tager ikke udgangspunkt i dit nuværende hold.`;
       applyOptimizerRowsToSquad(rows, fallbackText, budgetLimit);
     }
 
@@ -6836,7 +6845,10 @@ function getPlayerScore(player) {
       activeSlotText.textContent = "Ingen valgt";
       saveState();
       render();
-      showStatus(successText, "info");
+      showStatus(
+        successText || "Indlæste benchmarkhold fra scratch. Det er et generisk sammenligningshold, ikke en personlig transferanbefaling.",
+        "info"
+      );
       scheduleAutosave();
     }
 
@@ -7110,6 +7122,18 @@ function getPlayerScore(player) {
       }
       playerCountValue.textContent = `${count} / 11`;
       updateUndoButton();
+      updateBenchmarkActionUi();
+    }
+
+    function updateBenchmarkActionUi() {
+      if (!optimizeBtn) return;
+
+      const tournamentStarted = hasTournamentStarted();
+      optimizeBtn.classList.toggle("primary", !tournamentStarted);
+      optimizeBtn.classList.toggle("tertiary", tournamentStarted);
+      optimizeBtn.title = tournamentStarted
+        ? "Indlæser et generisk benchmarkhold fra scratch. Det er ikke en personlig transferanbefaling og tager ikke udgangspunkt i dit nuværende hold eller dine transfergebyrer."
+        : "Indlæser et generisk benchmarkhold fra scratch før turneringsstart.";
     }
 
     function buildTransferChangeRows() {
