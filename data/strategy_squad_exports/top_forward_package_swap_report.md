@@ -110,50 +110,50 @@ Rapporten ændrer ikke data. Den viser kun, hvilke angribere der går igen i de 
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Cristiano Ronaldo | 7,0 mio. | 92% | 21,105 |
-| Jonathan David | 4,5 mio. | 92% | 15,052 |
-| Raul Jimenez | 4,5 mio. | 79% | 14,77 |
+| Cristiano Ronaldo | 7,0 mio. | 92% | 21,12 |
+| Jonathan David | 4,5 mio. | 92% | 15,049 |
+| Raul Jimenez | 4,5 mio. | 79% | 14,783 |
 
 **3-5-2** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Vinicius Junior | 7,5 mio. | 92% | 21,746 |
-| Jonathan David | 4,5 mio. | 92% | 15,052 |
+| Vinicius Junior | 7,5 mio. | 92% | 21,691 |
+| Jonathan David | 4,5 mio. | 92% | 15,049 |
 
 **4-3-3** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Vinicius Junior | 7,5 mio. | 92% | 21,746 |
-| Jonathan David | 4,5 mio. | 92% | 15,052 |
-| Raul Jimenez | 4,5 mio. | 79% | 14,77 |
+| Vinicius Junior | 7,5 mio. | 92% | 21,691 |
+| Jonathan David | 4,5 mio. | 92% | 15,049 |
+| Raul Jimenez | 4,5 mio. | 79% | 14,783 |
 
 **4-4-2** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Cristiano Ronaldo | 7,0 mio. | 92% | 21,105 |
-| Jonathan David | 4,5 mio. | 92% | 15,052 |
+| Cristiano Ronaldo | 7,0 mio. | 92% | 21,12 |
+| Jonathan David | 4,5 mio. | 92% | 15,049 |
 
 **4-5-1** — budget 49,5 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Vinicius Junior | 7,5 mio. | 92% | 21,746 |
+| Vinicius Junior | 7,5 mio. | 92% | 21,691 |
 
 **5-3-2** — budget 50,0 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Vinicius Junior | 7,5 mio. | 92% | 21,746 |
-| Cristiano Ronaldo | 7,0 mio. | 92% | 21,105 |
+| Vinicius Junior | 7,5 mio. | 92% | 21,691 |
+| Cristiano Ronaldo | 7,0 mio. | 92% | 21,12 |
 
 **5-4-1** — budget 49,5 mio.
 
 | Angriber | Pris | Start | EV |
 |---|---:|---:|---:|
-| Cristiano Ronaldo | 7,0 mio. | 92% | 21,105 |
+| Cristiano Ronaldo | 7,0 mio. | 92% | 21,12 |
 
 # Samlet angriber-frekvens
 

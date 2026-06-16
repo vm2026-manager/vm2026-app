@@ -1,0 +1,211 @@
+﻿player_id,holdet_player_id,player_name,team_name,position,match_method,old_price,old_holdet_price,new_price,diff
+virgil_van_dijk__ned,49930,Virgil van Dijk,Holland,DEF,holdet_player_id,5257000,5257000,5224000,-33000
+marc_pubill__esp,50110,Marc Pubill,Spanien,DEF,holdet_player_id,3000000,3000000,2995000,-5000
+pau_cubars__esp,49720,Pau Cubarsi,Spanien,DEF,holdet_player_id,4000000,4000000,4062000,62000
+eric_garcia__esp,50111,Eric Garcia,Spanien,DEF,holdet_player_id,3000000,3000000,2995000,-5000
+pedro_porro__esp,49729,Pedro Porro,Spanien,DEF,holdet_player_id,4500000,4500000,4495000,-5000
+marc_cucurella__esp,49488,Marc Cucurella,Spanien,DEF,holdet_player_id,4500000,4500000,4572000,72000
+alejandro_alex_grimaldo__esp,48767,Alejandro 'Alex' Grimaldo,Spanien,DEF,holdet_player_id,4000000,4000000,3995000,-5000
+aymeric_laporte__esp,48877,Aymeric Laporte,Spanien,DEF,holdet_player_id,4500000,4500000,4572000,72000
+francis_de_vries__nzl,50052,Francis de Vries,New Zealand,DEF,holdet_player_id,2500000,2500000,2495000,-5000
+finn_surman__nzl,49110,Finn Surman,New Zealand,DEF,holdet_player_id,2000000,2000000,2016000,16000
+michael_boxall__nzl,50055,Michael Boxall,New Zealand,DEF,holdet_player_id,2000000,2000000,2016000,16000
+tim_payne__nzl,49895,Tim Payne,New Zealand,DEF,holdet_player_id,2500000,2500000,2516000,16000
+callan_elliot__nzl,48926,Callan Elliot,New Zealand,DEF,holdet_player_id,2000000,2000000,2012000,12000
+liberato_cacace__nzl,49441,Liberato Cacace,New Zealand,DEF,holdet_player_id,2500000,2500000,2526000,26000
+tyler_bindon__nzl,49914,Tyler Bindon,New Zealand,DEF,holdet_player_id,2500000,2500000,2512000,12000
+tommy_smith__nzl,50057,Tommy Smith,New Zealand,DEF,holdet_player_id,2000000,2000000,1995000,-5000
+nando_pijnaker__nzl,50056,Nando Pijnaker,New Zealand,DEF,holdet_player_id,2000000,2000000,1995000,-5000
+math_as_olivera__uru,49527,Mathias Olivera,Uruguay,DEF,holdet_player_id,4000000,4000000,4014000,14000
+jos_mar_a_gim_nez__uru,49332,Jose Maria Gimenez,Uruguay,DEF,holdet_player_id,4500000,4500000,4495000,-5000
+guillermo_varela__uru,49156,Guillermo Varela,Uruguay,DEF,holdet_player_id,3000000,3000000,3014000,14000
+ronald_ara_jo__uru,49792,Ronald Araujo,Uruguay,DEF,holdet_player_id,4500000,4500000,4495000,-5000
+sebastian_caceres__uru,50310,Sebastian Caceres,Uruguay,DEF,holdet_player_id,2500000,2500000,2514000,14000
+santiago_bueno__uru,49824,Santiago Bueno,Uruguay,DEF,holdet_player_id,3500000,3500000,3495000,-5000
+mat_as_vi_a__uru,49530,Matias Viña,Uruguay,DEF,holdet_player_id,4000000,4000000,4004000,4000
+ali_nemati__irn,48801,Ali Nemati,Iran,DEF,holdet_player_id,2500000,2500000,2516000,16000
+hossein_kanaani__irn,49190,Hossein Kanaani,Iran,DEF,holdet_player_id,2500000,2500000,2495000,-5000
+saleh_hardani__irn,50370,Saleh Hardani,Iran,DEF,holdet_player_id,2500000,2500000,2495000,-5000
+shoja_khalilzadeh__irn,49847,Shojae Khalilzadeh,Iran,DEF,holdet_player_id,2500000,2500000,2516000,16000
+milad_mohammadi__irn,49565,Milad Mohammadi,Iran,DEF,holdet_player_id,2500000,2500000,2516000,16000
+ramin_rezaeian__irn,49746,Ramin Rezaeian,Iran,DEF,holdet_player_id,2500000,2500000,2784000,284000
+ehsan_hajsafi__irn,49049,Ehsan Hajsafi,Iran,DEF,holdet_player_id,2000000,2000000,1992000,-8000
+daniyal_eiri__irn,50369,Daniyal Eiri,Iran,DEF,holdet_player_id,2000000,2000000,1995000,-5000
+arya_yousefi__irn,50374,Arya Yousefi,Iran,DEF,holdet_player_id,2000000,2000000,2024000,24000
+nathan_ngoy__bel,49627,Nathan Ngoy,Belgien,DEF,holdet_player_id,2000000,2000000,2014000,14000
+thomas_meunier__bel,49892,Thomas Meunier,Belgien,DEF,holdet_player_id,3500000,3500000,3524000,24000
+brandon_mechele__bel,48911,Brandon Mechele,Belgien,DEF,holdet_player_id,2500000,2500000,2524000,24000
+timothy_castagne__bel,49897,Timothy Castagne,Belgien,DEF,holdet_player_id,3500000,3500000,3484000,-16000
+maxim_de_cuyper__bel,49539,Maxim De Cuyper,Belgien,DEF,holdet_player_id,4000000,4000000,4002000,2000
+koni_de_winter__bel,49406,Koni de Winter,Belgien,DEF,holdet_player_id,3000000,3000000,2995000,-5000
+zeno_debast__bel,49992,Zeno Debast,Belgien,DEF,holdet_player_id,3500000,3500000,3495000,-5000
+arthur_theate__bel,48864,Arthur Theate,Belgien,DEF,holdet_player_id,3000000,3000000,2995000,-5000
+joaquin_seys__bel,49294,Joaquin Seys,Belgien,DEF,holdet_player_id,2500000,2500000,2495000,-5000
+karim_hafez__egy,50071,Karim Hafez,Egypten,DEF,holdet_player_id,2000000,2000000,2012000,12000
+mohamed_abdelmonem__egy,49571,Mohamed Abdelmonem,Egypten,DEF,holdet_player_id,2500000,2500000,2495000,-5000
+hossam_abdelmaguid__egy,49188,Hossam Abdelmaguid,Egypten,DEF,holdet_player_id,2500000,2500000,2495000,-5000
+yasser_ibrahim__egy,49960,Yasser Ibrahim,Egypten,DEF,holdet_player_id,2500000,2500000,2514000,14000
+mohamed_hany__egy,49578,Mohamed Hany,Egypten,DEF,holdet_player_id,2500000,2500000,2464000,-36000
+rami_rabia__egy,49745,Rami Rabia,Egypten,DEF,holdet_player_id,3000000,3000000,3012000,12000
+tarek_alaa__egy,49877,Tarek Alaa,Egypten,DEF,holdet_player_id,2000000,2000000,1995000,-5000
+ahmed_fatouh__egy,48746,Ahmed Fatouh,Egypten,DEF,holdet_player_id,2500000,2500000,2494000,-6000
+ali_majrashi__ksa,48800,Ali Majrashi,Saudi-Arabien,DEF,holdet_player_id,2500000,2500000,2495000,-5000
+nawaf_bu_washl__ksa,49632,Nawaf Bu Washl,Saudi-Arabien,DEF,holdet_player_id,2500000,2500000,2512000,12000
+moteb_al_harbi__ksa,50414,Moteb Al-Harbi,Saudi-Arabien,DEF,holdet_player_id,2000000,2000000,2014000,14000
+jehad_thakri__ksa,50410,Jehad Thakri,Saudi-Arabien,DEF,holdet_player_id,2000000,2000000,1995000,-5000
+abdulelah_al_amri__ksa,48724,Abdulelah Al-Amri,Saudi-Arabien,DEF,holdet_player_id,2500000,2500000,2679000,179000
+hassan_al_tambakti__ksa,50408,Hassan Al Tambakti,Saudi-Arabien,DEF,holdet_player_id,2000000,2000000,2014000,14000
+saud_abdulhamid__ksa,49827,Saud Abdulhamid,Saudi-Arabien,DEF,holdet_player_id,3000000,3000000,3014000,14000
+ali_lajami__ksa,50407,Ali Lajami,Saudi-Arabien,DEF,holdet_player_id,2000000,2000000,2012000,12000
+hassan_kadesh__ksa,50409,Hassan Kadesh,Saudi-Arabien,DEF,holdet_player_id,2000000,2000000,1995000,-5000
+mohammed_abu_al_shamat__ksa,50412,Mohammed Abu Al-Shamat,Saudi-Arabien,DEF,holdet_player_id,2500000,2500000,2514000,14000
+diney_borges__cpv,49023,Diney Borges,Kap Verde,DEF,holdet_player_id,3000000,3000000,3072000,72000
+roberto_lopes__cpv,49779,Roberto Lopes,Kap Verde,DEF,holdet_player_id,2000000,2000000,2062000,62000
+wagner_pina__cpv,49936,Wagner Pina,Kap Verde,DEF,holdet_player_id,2500000,2500000,2495000,-5000
+steven_moreira__cpv,49864,Steven Moreira,Kap Verde,DEF,holdet_player_id,2000000,2000000,2062000,62000
+sidny_lopes_cabral__cpv,49850,Sidny Lopes Cabral,Kap Verde,DEF,holdet_player_id,3000000,3000000,3042000,42000
+joao_paulo__cpv,49291,Joao Paulo,Kap Verde,DEF,holdet_player_id,2500000,2500000,2512000,12000
+logan_costa__cpv,50037,Logan Costa,Kap Verde,DEF,holdet_player_id,2500000,2500000,2495000,-5000
+stopira__cpv,49866,Stopira,Kap Verde,DEF,holdet_player_id,2500000,2500000,2495000,-5000
+kelvin_pires__cpv,49380,Kelvin Pires,Kap Verde,DEF,holdet_player_id,2000000,2000000,1995000,-5000
+cj_dos_santos__cpv,50036,CJ Dos Santos,Kap Verde,GK,holdet_player_id,2500000,2500000,2495000,-5000
+marcio_rosa__cpv,49492,Marcio Rosa,Kap Verde,GK,holdet_player_id,2500000,2500000,2495000,-5000
+vozinha__cpv,49935,Vozinha,Kap Verde,GK,holdet_player_id,2500000,2500000,2655000,155000
+ahmed_al_kassar__ksa,50405,Ahmed Al-Kassar,Saudi-Arabien,GK,holdet_player_id,2500000,2500000,2495000,-5000
+mohammed_al_owais__ksa,50413,Mohammed Al-Owais,Saudi-Arabien,GK,holdet_player_id,3000000,3000000,3069000,69000
+nawaf_al_aqidi__ksa,49631,Nawaf Al-Aqidi,Saudi-Arabien,GK,holdet_player_id,2500000,2500000,2495000,-5000
+el_mahdi_soliman__egy,50069,El Mahdi Soliman,Egypten,GK,holdet_player_id,2500000,2500000,2495000,-5000
+mohamed_alaa__egy,49573,Mohamed Alaa,Egypten,GK,holdet_player_id,2500000,2500000,2495000,-5000
+oufa_shobeir__egy,49696,Mostafa Oufa Shobeir,Egypten,GK,holdet_player_id,2500000,2500000,2524000,24000
+mohamed_el_shenawy__egy,49577,Mohamed El-Shennawy,Egypten,GK,holdet_player_id,3000000,3000000,2995000,-5000
+mike_penders__bel,50018,Mike Penders,Belgien,GK,holdet_player_id,3500000,3500000,3495000,-5000
+senne_lammens__bel,49837,Senne Lammens,Belgien,GK,holdet_player_id,4000000,4000000,3995000,-5000
+thibaut_courtois__bel,49891,Thibaut Courtois,Belgien,GK,holdet_player_id,4500000,4500000,4529000,29000
+alireza_beiranvand__irn,48803,Alireza Beiranvand,Iran,GK,holdet_player_id,3000000,3000000,3046000,46000
+seyed_hossein_hosseini__irn,50404,Seyed Hossein Hosseini,Iran,GK,holdet_player_id,2500000,2500000,2495000,-5000
+payam_niazmand__irn,49724,Payam Niazmand,Iran,GK,holdet_player_id,2500000,2500000,2495000,-5000
+sergio_rochet__uru,49839,Sergio Rochet,Uruguay,GK,holdet_player_id,4000000,4000000,3995000,-5000
+fernando_muslera__uru,49104,Fernando Muslera,Uruguay,GK,holdet_player_id,4000000,4000000,4024000,24000
+michael_woud__nzl,49557,Michael Woud,New Zealand,GK,holdet_player_id,2500000,2500000,2495000,-5000
+santiago_mele__uru,49825,Santiago Mele,Uruguay,GK,holdet_player_id,3500000,3500000,3495000,-5000
+max_crocombe__nzl,49537,Max Crocombe,New Zealand,GK,holdet_player_id,2500000,2500000,2526000,26000
+alex_paulsen__nzl,48776,Alex Paulsen,New Zealand,GK,holdet_player_id,2500000,2500000,2495000,-5000
+unai_sim_n__esp,49920,Unai Simon,Spanien,GK,holdet_player_id,5000000,5000000,5092000,92000
+david_raya__esp,48997,David Raya,Spanien,GK,holdet_player_id,5000000,5000000,4995000,-5000
+joan_garcia__esp,50109,Joan Garcia,Spanien,GK,holdet_player_id,4000000,4000000,3995000,-5000
+pablo_gavi__esp,50112,Pablo Gavi,Spanien,MID,holdet_player_id,4000000,4000000,4012000,12000
+mart_n_zubimendi__esp,49519,Martin Zubimendi,Spanien,MID,holdet_player_id,3500000,3500000,3495000,-5000
+yeremy_pino__esp,49968,Yeremy Pino,Spanien,MID,holdet_player_id,3500000,3500000,3495000,-5000
+alex_baena__esp,48773,Alex Baena,Spanien,MID,holdet_player_id,3500000,3500000,3495000,-5000
+pedri__esp,49725,Pedri,Spanien,MID,holdet_player_id,6000000,6000000,6002000,2000
+dani_olmo__esp,48979,Dani Olmo,Spanien,MID,holdet_player_id,5000000,5000000,5012000,12000
+mikel_merino__esp,49563,Mikel Merino,Spanien,MID,holdet_player_id,4500000,4500000,4522000,22000
+rodri_hernandez__esp,49786,Rodri Hernandez,Spanien,MID,holdet_player_id,5000000,5000000,5012000,12000
+fabian_ruiz__esp,49088,Fabian Ruiz,Spanien,MID,holdet_player_id,4500000,4500000,4522000,22000
+marcos_llorente__esp,49496,Marcos Llorente,Spanien,MID,holdet_player_id,3500000,3500000,3512000,12000
+joe_bell__nzl,49295,Joe Bell,New Zealand,MID,holdet_player_id,2500000,2500000,2516000,16000
+elijah_just__nzl,49057,Elijah Just,New Zealand,MID,holdet_player_id,3000000,3000000,3316000,316000
+callum_mccowatt__nzl,48928,Callum McCowatt,New Zealand,MID,holdet_player_id,2500000,2500000,2526000,26000
+ryan_thomas__nzl,49807,Ryan Thomas,New Zealand,MID,holdet_player_id,2500000,2500000,2512000,12000
+marko_stamenic__nzl,49506,Marko Stamenic,New Zealand,MID,holdet_player_id,2500000,2500000,2516000,16000
+sarpreet_singh__nzl,49826,Sarpreet Singh,New Zealand,MID,holdet_player_id,2500000,2500000,2536000,36000
+matthew_garbett__nzl,50054,Matthew Garbett,New Zealand,MID,holdet_player_id,2500000,2500000,2495000,-5000
+alex_rufer__nzl,48777,Alex Rufer,New Zealand,MID,holdet_player_id,2500000,2500000,2495000,-5000
+ben_old__nzl,48891,Ben Old,New Zealand,MID,holdet_player_id,2000000,2000000,2012000,12000
+lachlan_bayliss__nzl,50053,Lachlan Bayliss,New Zealand,MID,holdet_player_id,2000000,2000000,1995000,-5000
+joaqu_n_piquerez__uru,49293,Joaquin Piquerez,Uruguay,MID,holdet_player_id,2500000,2500000,2495000,-5000
+federico_valverde__uru,49096,Federico Valverde,Uruguay,MID,holdet_player_id,5500000,5500000,5567000,67000
+rodrigo_bentancur__uru,50308,Rodrigo Bentancur,Uruguay,MID,holdet_player_id,3000000,3000000,3014000,14000
+giorgian_de_arrascaeta__uru,50282,Giorgian De Arrascaeta,Uruguay,MID,holdet_player_id,4000000,4000000,3995000,-5000
+rodrigo_zalazar__uru,50309,Rodrigo Zalazar,Uruguay,MID,holdet_player_id,3500000,3500000,3495000,-5000
+maxi_araujo__uru,49538,Maxi Araujo,Uruguay,MID,holdet_player_id,5000000,5000000,5194000,194000
+juan_manuel_sanabria__uru,49348,Juan Manuel Sanabria,Uruguay,MID,holdet_player_id,3000000,3000000,3022000,22000
+agustin_canobbio__uru,50307,Agustin Canobbio,Uruguay,MID,holdet_player_id,2500000,2500000,2522000,22000
+nicolas_de_la_cruz__uru,49644,Nicolas de la Cruz,Uruguay,MID,holdet_player_id,3000000,3000000,3032000,32000
+emiliano_martinez_toranza__uru,49066,Emiliano Martinez Toranza,Uruguay,MID,holdet_player_id,2500000,2500000,2495000,-5000
+manuel_ugarte__uru,49487,Manuel Ugarte,Uruguay,MID,holdet_player_id,3500000,3500000,3514000,14000
+mohammed_ghorbani__irn,49589,Mohammad Ghorbani,Iran,MID,holdet_player_id,2500000,2500000,2495000,-5000
+saman_ghoddos__irn,49816,Saman Ghoddos,Iran,MID,holdet_player_id,2500000,2500000,2516000,16000
+saeid_ezatolahi__irn,49811,Saeid Ezatolahi,Iran,MID,holdet_player_id,2500000,2500000,2526000,26000
+amir_mohammad_razzaghinia__irn,50375,Amir Mohammad Razzaghinia,Iran,MID,holdet_player_id,2000000,2000000,1995000,-5000
+mehdi_ghayedi__irn,50066,Mehdi Ghayedi,Iran,MID,holdet_player_id,3000000,3000000,3014000,14000
+roozbeh_cheshmi__irn,50372,Roozbeh Cheshmi,Iran,MID,holdet_player_id,2000000,2000000,1995000,-5000
+mehdi_torabi__irn,50373,Mehdi Torabi,Iran,MID,holdet_player_id,2000000,2000000,1995000,-5000
+nicolas_raskin__bel,49649,Nicolas Raskin,Belgien,MID,holdet_player_id,2500000,2500000,2522000,22000
+hans_vanaken__bel,49170,Hans Vanaken,Belgien,MID,holdet_player_id,4000000,4000000,4012000,12000
+youri_tielemans__bel,49974,Youri Tielemans,Belgien,MID,holdet_player_id,3500000,3500000,3514000,14000
+axel_witsel__bel,48872,Axel Witsel,Belgien,MID,holdet_player_id,3000000,3000000,2995000,-5000
+kevin_de_bruyne__bel,49390,Kevin De Bruyne,Belgien,MID,holdet_player_id,7000000,7000000,7024000,24000
+diego_moreira__bel,49021,Diego Moreira,Belgien,MID,holdet_player_id,2000000,2000000,1995000,-5000
+amadou_onana__bel,48815,Amadou Onana,Belgien,MID,holdet_player_id,3000000,3000000,3004000,4000
+mahmoud_trezeguet__egy,49479,Mahmoud Trezeguet,Egypten,MID,holdet_player_id,3000000,3000000,2995000,-5000
+haissem_hassan__egy,49163,Haissem Hassan,Egypten,MID,holdet_player_id,2000000,2000000,1995000,-5000
+emam_ashour__egy,49064,Emam Ashour,Egypten,MID,holdet_player_id,2500000,2500000,2697000,197000
+marwan_ateya__egy,49522,Marwan Ateya,Egypten,MID,holdet_player_id,3000000,3000000,2994000,-6000
+mohanad_lasheen__egy,49598,Mohanad Lasheen,Egypten,MID,holdet_player_id,2500000,2500000,2514000,14000
+hamdy_fathy__egy,49166,Hamdy Fathy,Egypten,MID,holdet_player_id,2500000,2500000,2514000,14000
+mahmoud_saber__egy,49478,Mahmoud Saber,Egypten,MID,holdet_player_id,2500000,2500000,2495000,-5000
+ibrahim_adel__egy,49202,Ibrahim Adel,Egypten,MID,holdet_player_id,3000000,3000000,3012000,12000
+zizo__egy,49997,Ahmed Zizo,Egypten,MID,holdet_player_id,3000000,3000000,3012000,12000
+nabil_dunga_emad__egy,50073,Nabil 'Dunga' Emad,Egypten,MID,holdet_player_id,2000000,2000000,1995000,-5000
+mostafa_ziko__egy,50072,Mostafa Ziko,Egypten,MID,holdet_player_id,2000000,2000000,2024000,24000
+mohamed_haj_mahmoud__tun,49570,Mohamed 'Hadj' Mahmoud,Tunesien,MID,holdet_player_id,1995000,1995000,1983000,-12000
+ayman_yahya_salem__ksa,48874,Ayman Yahya Salem,Saudi-Arabien,MID,holdet_player_id,2500000,2500000,2495000,-5000
+musab_al_juwayr__ksa,49618,Musab Al-Juwayr,Saudi-Arabien,MID,holdet_player_id,2500000,2500000,2522000,22000
+ziyad_al_johani__ksa,49996,Ziyad Al-Johani,Saudi-Arabien,MID,holdet_player_id,2500000,2500000,2495000,-5000
+nasser_al_dawsari__ksa,49624,Nasser Al-Dawsari,Saudi-Arabien,MID,holdet_player_id,2500000,2500000,2504000,4000
+abdullah_al_khaibari__ksa,48727,Abdullah Al-Khaibari,Saudi-Arabien,MID,holdet_player_id,2500000,2500000,2514000,14000
+mohamed_kanno__ksa,49579,Mohamed Kanno,Saudi-Arabien,MID,holdet_player_id,3000000,3000000,3024000,24000
+salem_al_dawsari__ksa,49814,Salem Al-Dawsari,Saudi-Arabien,MID,holdet_player_id,3000000,3000000,3014000,14000
+alaa_hejji__ksa,50406,Alaa Hejji,Saudi-Arabien,MID,holdet_player_id,2000000,2000000,2012000,12000
+khalid_al_ghannam__ksa,50411,Khalid Al-Ghannam,Saudi-Arabien,MID,holdet_player_id,2500000,2500000,2495000,-5000
+telmo_arcanjo__cpv,49881,Telmo Arcanjo,Kap Verde,MID,holdet_player_id,2500000,2500000,2512000,12000
+kevin_lenini__cpv,49392,Kevin Lenini Pina,Kap Verde,MID,holdet_player_id,2000000,2000000,2012000,12000
+laros_duarte__cpv,49422,Laros Duarte,Kap Verde,MID,holdet_player_id,2500000,2500000,2512000,12000
+deroy_duarte__cpv,49015,Deroy Duarte,Kap Verde,MID,holdet_player_id,2500000,2500000,2512000,12000
+jamiro_monteiro__cpv,49251,Jamiro Monteiro,Kap Verde,MID,holdet_player_id,2500000,2500000,2512000,12000
+yannick_semedo__cpv,49958,Yannick Semedo,Kap Verde,MID,holdet_player_id,2000000,2000000,1995000,-5000
+garry_mendes_rodrigues__cpv,49129,Garry Mendes Rodrigues,Kap Verde,FWD,holdet_player_id,2500000,2500000,2495000,-5000
+gilson_benchimol_tavares__cpv,50038,Gilson Benchimol Tavares,Kap Verde,FWD,holdet_player_id,2500000,2500000,2495000,-5000
+ryan_mendes_da_graca__cpv,49806,Ryan Mendes Da Graça,Kap Verde,FWD,holdet_player_id,3000000,3000000,3012000,12000
+jovane_cabral__cpv,49342,Jovane Cabral,Kap Verde,FWD,holdet_player_id,2500000,2500000,2512000,12000
+nuno_da_costa__cpv,49671,Nuno da Costa,Kap Verde,FWD,holdet_player_id,2500000,2500000,2512000,12000
+dailon_livramento__cpv,48974,Dailon Livramento,Kap Verde,FWD,holdet_player_id,3000000,3000000,3012000,12000
+h_lio_varela__cpv,49177,Helio Varela,Kap Verde,FWD,holdet_player_id,2500000,2500000,2495000,-5000
+willy_semedo__cpv,49948,Willy Semedo,Kap Verde,FWD,holdet_player_id,3500000,3500000,3512000,12000
+sultan_mandash__ksa,50416,Sultan Mandash,Saudi-Arabien,FWD,holdet_player_id,2500000,2500000,2495000,-5000
+firas_al_buraikan__ksa,49111,Firas Al Brikan,Saudi-Arabien,FWD,holdet_player_id,3500000,3500000,3514000,14000
+saleh_al_shehri__ksa,50415,Saleh Al-Shehri,Saudi-Arabien,FWD,holdet_player_id,2500000,2500000,2495000,-5000
+abdullah_al_hamdan__ksa,48726,Abdullah Al-Hamdan,Saudi-Arabien,FWD,holdet_player_id,2500000,2500000,2512000,12000
+hamza_abdelkarim__egy,50070,Hamza Abdelkarim,Egypten,FWD,holdet_player_id,2000000,2000000,2012000,12000
+omar_marmoush__egy,49683,Omar Marmoush,Egypten,FWD,holdet_player_id,5000000,5000000,5024000,24000
+mohamed_salah__egy,49582,Mohamed Salah,Egypten,FWD,holdet_player_id,5000000,5000000,5084000,84000
+alexis_saelemaekers__bel,48791,Alexis Saelemaekers,Belgien,FWD,holdet_player_id,4000000,4000000,3995000,-5000
+matias_fernandez_pardo__bel,50019,Matias Fernandez-Pardo,Belgien,FWD,holdet_player_id,2500000,2500000,2512000,12000
+leandro_trossard__bel,49427,Leandro Trossard,Belgien,FWD,holdet_player_id,5500000,5500000,5514000,14000
+romelu_lukaku__bel,50020,Romelu Lukaku,Belgien,FWD,holdet_player_id,4500000,4500000,4522000,22000
+charles_de_ketelaere__bel,48949,Charles De Ketelaere,Belgien,FWD,holdet_player_id,6000000,6000000,6004000,4000
+jeremy_doku__bel,49271,Jeremy Doku,Belgien,FWD,holdet_player_id,6500000,6500000,6514000,14000
+dodi_lukebakio__bel,49027,Dodi Lukebakio,Belgien,FWD,holdet_player_id,3500000,3500000,3495000,-5000
+alireza_jahanbakhsh__irn,48804,Alireza Jahanbakhsh,Iran,FWD,holdet_player_id,2500000,2500000,2495000,-5000
+shahriar_moghanlou__irn,49842,Shahriar Moghanlou,Iran,FWD,holdet_player_id,2000000,2000000,2074000,74000
+dennis_dargahi_eckert_ayensa__irn,50376,Dennis 'Dargahi' Eckert Ayensa,Iran,FWD,holdet_player_id,2000000,2000000,1995000,-5000
+mohammad_mohebi__irn,49591,Mohammad Mohebi,Iran,FWD,holdet_player_id,3000000,3000000,3161000,161000
+ali_alipour__irn,48796,Ali Alipour,Iran,FWD,holdet_player_id,2500000,2500000,2514000,14000
+amirhossein_hosseinzadeh__irn,48824,Amirhossein Hosseinzadeh,Iran,FWD,holdet_player_id,3000000,3000000,3012000,12000
+mehdi_taremi__irn,49545,Mehdi Taremi,Iran,FWD,holdet_player_id,3500000,3500000,3516000,16000
+darwin_nunez__uru,48989,Darwin Nunez,Uruguay,FWD,holdet_player_id,6000000,6000000,6004000,4000
+federico_vi_as__uru,49097,Federico Vinas,Uruguay,FWD,holdet_player_id,4000000,4000000,4044000,44000
+facundo_pellistri__uru,49090,Facundo Pellistri,Uruguay,FWD,holdet_player_id,3500000,3500000,3495000,-5000
+brian_rodr_guez__uru,48919,Brian Rodriguez,Uruguay,FWD,holdet_player_id,3500000,3500000,3522000,22000
+rodrigo_aguirre__uru,49787,Rodrigo Aguirre,Uruguay,FWD,holdet_player_id,3000000,3000000,3012000,12000
+chris_wood__nzl,48957,Chris Wood,New Zealand,FWD,holdet_player_id,3500000,3500000,3656000,156000
+ben_waine__nzl,48892,Ben Waine,New Zealand,FWD,holdet_player_id,2500000,2500000,2495000,-5000
+kosta_barbarouses__nzl,49408,Kosta Barbarouses,New Zealand,FWD,holdet_player_id,2500000,2500000,2495000,-5000
+jesse_randall__nzl,49275,Jesse Randall,New Zealand,FWD,holdet_player_id,2000000,2000000,2012000,12000
+borja_iglesias__esp,48905,Borja Iglesias,Spanien,FWD,holdet_player_id,3500000,3500000,3495000,-5000
+mikel_oyarzabal__esp,49564,Mikel Oyarzabal,Spanien,FWD,holdet_player_id,7500000,7500000,7522000,22000
+ferr_n_torres__esp,49105,Ferran Torres,Spanien,FWD,holdet_player_id,5000000,5000000,5022000,22000
+nico_williams__esp,50002,Nico Williams,Spanien,FWD,holdet_player_id,4500000,4500000,4512000,12000
+lamine_yamal__esp,49421,Lamine Yamal,Spanien,FWD,holdet_player_id,9000000,9000000,9012000,12000
+victor_munoz__esp,50113,Victor Munoz,Spanien,FWD,holdet_player_id,3000000,3000000,2995000,-5000
