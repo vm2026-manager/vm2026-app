@@ -1,0 +1,49 @@
+round,team_name,opponent_name,clean_sheet_yes_odds,clean_sheet_no_odds,source,clean_sheet_fetched_label
+2,Schweiz,Bosnien-Hercegovina,1.95,1.77,manual_screenshot,17.06 screenshot
+2,Bosnien-Hercegovina,Schweiz,4.75,1.14,manual_screenshot,17.06 screenshot
+2,Tjekkiet,Sydafrika,2.20,1.61,manual_screenshot,17.06 screenshot
+2,Sydafrika,Tjekkiet,4.25,1.20,manual_screenshot,17.06 screenshot
+2,Canada,Qatar,1.67,2.10,manual_screenshot,17.06 screenshot
+2,Qatar,Canada,6.75,1.08,manual_screenshot,17.06 screenshot
+2,Mexico,Sydkorea,2.20,1.61,manual_screenshot,17.06 screenshot
+2,Sydkorea,Mexico,3.40,1.26,manual_screenshot,17.06 screenshot
+2,USA,Australien,2.10,1.65,manual_screenshot,17.06 screenshot
+2,Australien,USA,4.75,1.14,manual_screenshot,17.06 screenshot
+2,Skotland,Marokko,,,, 
+2,Marokko,Skotland,,,, 
+2,Brasilien,Haiti,1.61,2.15,manual_screenshot,17.06 screenshot
+2,Haiti,Brasilien,12.00,1.004,manual_screenshot,17.06 screenshot
+2,Tyrkiet,Paraguay,2.40,1.51,manual_screenshot,17.06 screenshot
+2,Paraguay,Tyrkiet,3.65,1.23,manual_screenshot,17.06 screenshot
+2,Holland,Sverige,,,, 
+2,Sverige,Holland,,,, 
+2,Tyskland,Elfenbenskysten,2.25,1.57,manual_screenshot,17.06 screenshot
+2,Elfenbenskysten,Tyskland,5.75,1.11,manual_screenshot,17.06 screenshot
+2,Ecuador,Curacao,1.38,2.80,manual_screenshot,17.06 screenshot
+2,Curacao,Ecuador,10.00,1.02,manual_screenshot,17.06 screenshot
+2,Tunesien,Japan,,,, 
+2,Japan,Tunesien,,,, 
+2,Spanien,Saudi-Arabien,1.36,3.00,manual_screenshot,17.06 screenshot
+2,Saudi-Arabien,Spanien,10.00,1.02,manual_screenshot,17.06 screenshot
+2,Belgien,Iran,1.83,1.87,manual_screenshot,17.06 screenshot
+2,Iran,Belgien,5.75,1.11,manual_screenshot,17.06 screenshot
+2,Uruguay,Kap Verde,,,, 
+2,Kap Verde,Uruguay,,,, 
+2,New Zealand,Egypten,4.25,1.18,manual_screenshot,17.06 screenshot
+2,Egypten,New Zealand,1.87,1.83,manual_screenshot,17.06 screenshot
+2,Argentina,Østrig,1.95,1.77,manual_screenshot,17.06 screenshot
+2,Østrig,Argentina,4.75,1.16,manual_screenshot,17.06 screenshot
+2,Frankrig,Irak,1.43,2.70,manual_screenshot,17.06 screenshot
+2,Irak,Frankrig,11.00,1.02,manual_screenshot,17.06 screenshot
+2,Norge,Senegal,,,, 
+2,Senegal,Norge,,,, 
+2,Jordan,Algeriet,,,, 
+2,Algeriet,Jordan,,,, 
+2,Portugal,Usbekistan,1.71,2.05,manual_screenshot,17.06 screenshot
+2,Usbekistan,Portugal,7.75,1.05,manual_screenshot,17.06 screenshot
+2,England,Ghana,1.71,2.00,manual_screenshot,17.06 screenshot
+2,Ghana,England,6.75,1.08,manual_screenshot,17.06 screenshot
+2,Panama,Kroatien,,,, 
+2,Kroatien,Panama,,,, 
+2,Colombia,DR Congo,,,, 
+2,DR Congo,Colombia,,,, 
