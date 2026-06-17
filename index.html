@@ -1420,6 +1420,16 @@
       color: #fde68a;
     }
 
+    .trade-row.alternative .trade-clean-sheet {
+      font-size: 10px;
+      color: #cbd5e1;
+      margin-top: 2px;
+      line-height: 1.1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
     .trade-row.alternative .alternative-bottom {
       margin-top: 3px;
       display: flex;
@@ -1568,6 +1578,16 @@
     .trade-next {
       font-size: 10px;
       color: #fde68a;
+      margin-top: 2px;
+      line-height: 1.1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .trade-clean-sheet {
+      font-size: 10px;
+      color: #cbd5e1;
       margin-top: 2px;
       line-height: 1.1;
       white-space: nowrap;
@@ -2396,6 +2416,40 @@
   padding: 12px 13px;
   font-size: 12px;
   color: #cbd5e1;
+}
+
+.vm-fixture-tooltip-clean-sheet {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 13px 12px;
+  border-top: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.vm-fixture-tooltip-clean-sheet-copy {
+  min-width: 0;
+}
+
+.vm-fixture-tooltip-clean-sheet-label {
+  font-size: 12px;
+  font-weight: 800;
+  color: #f8fafc;
+}
+
+.vm-fixture-tooltip-clean-sheet-subline {
+  margin-top: 2px;
+  font-size: 10px;
+  color: #94a3b8;
+}
+
+.vm-fixture-tooltip-clean-sheet-value {
+  flex: 0 0 auto;
+  font-size: 17px;
+  line-height: 1;
+  font-weight: 900;
+  color: #fde68a;
+  text-align: right;
 }
 /* SAFE_PLAYER_FIXTURE_TOOLTIP_CSS_END */
 
@@ -3808,6 +3862,7 @@ setTimeout(removeDataStatusBox, 250);
     const CURRENT_SQUAD_URL = "data/current_squad.csv";
     const MANUAL_OVERRIDES_URL = "data/manual_player_overrides.csv";
     const MATCH_ODDS_PROBS_URL = "data/match_odds_probs.csv";
+    const CLEAN_SHEET_PROBS_URL = "data/clean_sheet_probs.csv";
     const MODEL_STATUS_URL = "data/model_status_snapshot.json";
     const APP_AUDIT_URL = "data/audit_app_data_consistency.json";
     const DATA_FRESHNESS_URL = "data/data_freshness.json";
@@ -3874,6 +3929,8 @@ setTimeout(removeDataStatusBox, 250);
     let currentSquadOwnership = new Map();
     let manualOverrideMap = new Map();
     let matchOddsRows = [];
+    let cleanSheetProbRows = [];
+    let cleanSheetProbByMatchTeam = new Map();
     let modelStatus = null;
     let appAudit = null;
     let dataFreshness = null;
@@ -5897,6 +5954,49 @@ function getPlayerScore(player) {
       return teamDisplayName(nextFixture.opponent);
     }
 
+    function isCleanSheetEligiblePosition(position) {
+      const code = normalizePositionLabel(position);
+      return code === "GK" || code === "DEF";
+    }
+
+    function formatPercentOneDecimal(value) {
+      const num = Number(value);
+      if (!Number.isFinite(num)) return "";
+      const percent = num <= 1 ? num * 100 : num;
+      return percent.toLocaleString("da-DK", {
+        minimumFractionDigits: 1,
+        maximumFractionDigits: 1
+      }) + " %";
+    }
+
+    function getNextCleanSheetInfo(player) {
+      if (!player || !isCleanSheetEligiblePosition(player.position)) return null;
+
+      const nextFixture = getNextFixtureForTeam(player.team_id || player.team_name || "");
+      if (!nextFixture) return null;
+
+      const teamId = canonicalTeamId(player.team_id || player.team_name || "");
+      const row = cleanSheetProbByMatchTeam.get(`${String(nextFixture.match_id)}|${teamId}`);
+      if (!row) return null;
+
+      const prob = parseProbNumber(getRowValue(row, ["clean_sheet_yes_prob_novig", "clean_sheet_yes_prob_raw"]));
+      if (!Number.isFinite(prob) || prob <= 0) return null;
+
+      const positionCode = normalizePositionLabel(player.position);
+      const opponentName = teamDisplayName(nextFixture.opponent);
+      const pctText = formatPercentOneDecimal(prob);
+      return {
+        prob,
+        label: positionCode === "GK" ? "Rent bur næste kamp" : "Clean sheet næste kamp",
+        shortLabel: positionCode === "GK" ? "Rent bur" : "CS",
+        opponentName,
+        pctText,
+        text: positionCode === "GK"
+          ? `Rent bur næste kamp: ${pctText}`
+          : `Clean sheet næste kamp: ${pctText}`
+      };
+    }
+
     function getCurrentSlots() {
       const formation = FORMATIONS[currentFormation];
       const slots = [];
@@ -6336,6 +6436,7 @@ function getPlayerScore(player) {
             : "";
           const priceDiffHtml = `<div class="trade-diff ${diffClass(priceDiff)}">${formatSignedMoneyDiff(priceDiff)}</div>`;
           const transferHtml = transferInfoHtml(player, currentPlayer);
+          const cleanSheetInfo = getNextCleanSheetInfo(player);
           return `
             <div class="trade-row alternative" data-player-id="${escapeHtml(player.player_id || "")}">
               <span class="alternative-rank">${index + 1}</span>
@@ -6346,6 +6447,7 @@ function getPlayerScore(player) {
                 <div class="alternative-player-name player-name" data-player-id="${escapeHtml(player.player_id || "")}" data-team-id="${escapeHtml(player.team_id || "")}">${escapeHtml(player.player_name || "Ukendt spiller")}${warning}${previousLabel}${modelLabel}</div>
                 <div class="alternative-player-meta">${escapeHtml(positionFullLabel(player.position))}</div>
                 <div class="alternative-player-opponent">${escapeHtml(nextOpponentText(player.team_id))}</div>
+                ${cleanSheetInfo ? `<div class="trade-clean-sheet">${escapeHtml(cleanSheetInfo.shortLabel + ": " + cleanSheetInfo.pctText)}</div>` : ""}
                 <div class="alternative-bottom">
                   <div class="trade-start-col">
                     <div class="trade-start-value">${startPct(getPlayerStart(player))}</div>
@@ -7968,6 +8070,7 @@ function renderTradeList() {
         const flagUrl = getFlagUrl(getPlayerFlagCode(player));
         const tmWatchReason = String(player.tm_watch_reason || "").trim();
         const tmWarning = shouldShowTmWarning(player) ? `<div class="trade-tm-warning">TM: usikker starter</div>` : "";
+        const cleanSheetInfo = getNextCleanSheetInfo(player);
 
         return `
           <div class="${rowClass}" data-player-id="${player.player_id}">
@@ -7977,6 +8080,7 @@ function renderTradeList() {
                 <div class="trade-name">${player.player_name || "Ukendt spiller"}</div>
               </div>
               <div class="trade-next">${nextOpponentText(player.team_id)}</div>
+              ${cleanSheetInfo ? `<div class="trade-clean-sheet">${escapeHtml(cleanSheetInfo.shortLabel + ": " + cleanSheetInfo.pctText)}</div>` : ""}
               ${tmWarning}
             </div>
             <div class="trade-position-col">
@@ -8074,6 +8178,28 @@ function renderTradeList() {
 
       const text = await response.text();
       matchOddsRows = parseCsv(text);
+    }
+
+    async function loadCleanSheetProbs() {
+      try {
+        const response = await fetch(CLEAN_SHEET_PROBS_URL);
+        if (!response.ok) throw new Error(`Kunne ikke hente clean sheet probs: ${response.status}`);
+
+        const text = await response.text();
+        cleanSheetProbRows = parseCsv(text);
+        cleanSheetProbByMatchTeam = new Map();
+
+        cleanSheetProbRows.forEach(row => {
+          const matchId = String(getRowValue(row, ["match_id", "fixture_id", "id"])).trim();
+          const teamId = canonicalTeamId(getRowValue(row, ["team_id", "team", "team_code"]));
+          if (!matchId || !teamId) return;
+          cleanSheetProbByMatchTeam.set(`${matchId}|${teamId}`, row);
+        });
+      } catch (error) {
+        cleanSheetProbRows = [];
+        cleanSheetProbByMatchTeam = new Map();
+        console.warn("Clean sheet probs kunne ikke hentes", error);
+      }
     }
 
     async function fetchOptionalJson(url) {
@@ -8802,6 +8928,7 @@ formationSelect.value = currentFormation;
           loadManualOverrides(),
           loadCurrentSquadOwnership(),
           loadMatchOddsProbs(),
+          loadCleanSheetProbs(),
           loadDataStatus()
         ]);
 
@@ -9259,6 +9386,7 @@ formationSelect.value = currentFormation;
     function html(player, fixtures) {
       var title = fixtures.length === 1 ? "N\u00e6ste kamp" : "N\u00e6ste " + fixtures.length + " kampe";
       var source = fixtures.find(function (f) { return f.source; });
+      var cleanSheetInfo = typeof getNextCleanSheetInfo === "function" ? getNextCleanSheetInfo(player) : null;
       var sourceText = source ? source.source : "odds";
       if (source && source.oddsFetchedLabel) {
         sourceText = sourceText + " · hentet " + source.oddsFetchedLabel;
@@ -9288,7 +9416,16 @@ formationSelect.value = currentFormation;
         "<table>" +
           "<thead><tr><th>Modstander</th><th>Sejr</th><th>U</th><th>Tab</th></tr></thead>" +
           "<tbody>" + rows + "</tbody>" +
-        "</table>";
+        "</table>" +
+        (cleanSheetInfo
+          ? '<div class="vm-fixture-tooltip-clean-sheet">' +
+              '<div class="vm-fixture-tooltip-clean-sheet-copy">' +
+                '<div class="vm-fixture-tooltip-clean-sheet-label">' + esc(cleanSheetInfo.label) + '</div>' +
+                '<div class="vm-fixture-tooltip-clean-sheet-subline">vs. ' + esc(cleanSheetInfo.opponentName) + '</div>' +
+              '</div>' +
+              '<div class="vm-fixture-tooltip-clean-sheet-value">' + esc(cleanSheetInfo.pctText) + '</div>' +
+            '</div>'
+          : '');
     }
 
     async function show(target) {
