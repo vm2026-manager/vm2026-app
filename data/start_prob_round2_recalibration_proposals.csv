@@ -1,0 +1,578 @@
+﻿player_name,team,position,current_start_prob,proposed_start_prob,direction,confidence,round1_started,round1_minutes,round1_rating,round1_goals,round1_assists,used_substitute,team_underperformance_flag,reason,risk_flag,do_not_auto_apply
+Adil Boulbina,Algeriet,FWD,0.0917,0.0717,watch,low,0,9,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Aissa Mandi,Algeriet,DEF,0.6633,0.7133,up,medium,1,90,7.2,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Amine Gouiri,Algeriet,FWD,0.45,0.41,down,medium,1,64,5.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, svag rating",,TRUE
+Fares Chaibi,Algeriet,MID,0.3472,0.3772,watch,low,1,90,6.6,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Hicham Boudaoui,Algeriet,MID,0.5497,0.5097,down,medium,1,64,6.2,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, svag rating",,TRUE
+Houssem Aouar,Algeriet,MID,0.45,0.43,watch,low,0,26,6.5,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Ibrahim Maza,Algeriet,MID,0.324,0.314,hold,low,1,81,6.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Luca Zidane,Algeriet,GK,0.782,0.772,hold,low,1,90,5.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Mohamed Amoura,Algeriet,FWD,0.572,0.552,watch,low,0,26,6.1,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Nabil Bentaleb,Algeriet,MID,0.5835,0.6135,watch,low,1,82,6.5,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Ramiz Zerrouki,Algeriet,MID,0.5785,0.5585,watch,low,0,8,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Ramy Bensebaini,Algeriet,DEF,0.6387,0.6687,watch,low,1,90,6.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Rayan Ait-Nouri,Algeriet,DEF,0.8435,0.8335,hold,low,1,90,6.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Riyad Mahrez,Algeriet,FWD,0.6319,0.6119,watch,low,0,26,6.3,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Alexis Mac Allister,Argentina,MID,0.6336,0.6236,hold,low,1,90,6.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Cristian Romero,Argentina,DEF,0.6811,0.7311,up,medium,1,80,7.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Emiliano Martinez,Argentina,GK,0.938,0.968,watch,low,1,90,6.8,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Enzo Fernandez,Argentina,MID,0.6606,0.7106,up,medium,1,90,7.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Facundo Medina,Argentina,DEF,0.2406,0.2706,watch,low,1,90,6.7,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Gonzalo Montiel,Argentina,DEF,0.5505,0.5205,watch,low,1,46,6.7,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, tidlig udskiftning",,TRUE
+Julian Alvarez,Argentina,FWD,0.72,0.7,watch,low,0,35,6.4,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Lautaro Martinez,Argentina,FWD,0.58,0.56,down,medium,,,,,,,FALSE,"Ekspertinput placerer Almada en smule foran; moderat nedjustering som proposal, ikke auto.",role_competition,TRUE
+Lionel Messi,Argentina,FWD,0.93,0.98,up,medium,1,80,9.6,3,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Nahuel Molina,Argentina,DEF,0.6568,0.6368,watch,low,0,44,6.6,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Nico Gonzalez,Argentina,FWD,0.5303,0.5603,watch,low,0,35,7.0,0,1,1,FALSE,"St?rk indskifter-performance i runde 1; watch-signal, men ikke automatisk starterl?ft.",impact_sub_not_auto_start,TRUE
+Nico Paz,Argentina,MID,0.2902,0.2702,watch,low,0,10,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Nicolas Otamendi,Argentina,DEF,0.6444,0.6244,watch,low,0,10,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Rodrigo de Paul,Argentina,MID,0.2199,0.2499,watch,low,1,90,6.8,0,1,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Thiago Almada,Argentina,MID,0.765,0.68,up,medium,1,55,6.5,0,0,0,FALSE,Bold+ peger p? Almada lidt foran Lautaro i runde 2-billedet.,role_competition,TRUE
+Aiden O'Neill,Australien,MID,0.8832,0.9132,watch,low,1,90,6.6,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Alessandro Circati,Australien,DEF,0.8608,0.9308,up,medium,1,90,7.5,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Aziz Behich,Australien,DEF,0.4,0.38,watch,low,0,6,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Cameron Burgess,Australien,DEF,0.1661,0.1961,watch,low,1,90,6.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Connor Metcalfe,Australien,MID,0.6532,0.7232,up,medium,1,90,7.5,1,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Harry Souttar,Australien,DEF,0.9494,0.98,up,medium,1,90,7.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Jackson Irvine,Australien,MID,0.45,0.43,watch,low,0,6,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Jason Geria,Australien,DEF,0.1245,0.1045,watch,low,0,16,6.5,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Jordan Bos,Australien,DEF,0.3743,0.4043,watch,low,1,84,6.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Nestory Irankunda,Australien,FWD,0.3241,0.3441,watch,low,1,61,7.2,1,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, god rating",,TRUE
+Nishan Velupillay,Australien,FWD,0.0461,0.0261,watch,low,0,29,6.2,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Patrick Beach,Australien,GK,0.0801,0.1501,up,medium,1,90,9.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Paul Okon-Engstler,Australien,MID,0.3162,0.3862,up,medium,1,84,8.0,0,1,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Tete Yengi,Australien,FWD,0.8851,0.8651,watch,low,0,16,6.5,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Amadou Onana,Belgien,MID,0.6486,0.6186,watch,low,1,56,6.8,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, tidlig udskiftning",,TRUE
+Brandon Mechele,Belgien,DEF,0.2666,0.3366,up,medium,1,90,8.2,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Charles De Ketelaere,Belgien,FWD,0.82,0.84,watch,low,1,66,7.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, god rating",,TRUE
+Hans Vanaken,Belgien,MID,0.3017,0.2817,watch,low,0,4,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Jeremy Doku,Belgien,FWD,0.86,0.89,watch,low,1,86,6.6,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Kevin De Bruyne,Belgien,MID,0.91,0.96,up,medium,1,86,7.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Leandro Trossard,Belgien,FWD,0.5943,0.6443,up,medium,1,90,7.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Matias Fernandez-Pardo,Belgien,FWD,0.0465,0.0265,watch,low,0,4,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Maxim De Cuyper,Belgien,DEF,0.6436,0.6236,watch,low,0,34,6.5,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Nathan Ngoy,Belgien,DEF,0.8806,0.9106,watch,low,1,90,6.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Nicolas Raskin,Belgien,MID,0.412,0.392,watch,low,0,34,6.9,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Romelu Lukaku,Belgien,FWD,0.4126,0.58,watch,medium,0,24,6.3,0,0,1,FALSE,"Indskiftet, men skal ikke blindt opjusteres som sikker starter endnu.",impact_sub_not_auto_start,TRUE
+Thibaut Courtois,Belgien,GK,0.9486,0.9786,watch,low,1,90,6.6,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Thomas Meunier,Belgien,DEF,0.391,0.381,hold,low,1,90,5.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Timothy Castagne,Belgien,DEF,0.6704,0.6804,hold,low,1,56,7.6,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, tidlig udskiftning, st?rk rating",,TRUE
+Youri Tielemans,Belgien,MID,0.8737,0.9437,up,medium,1,90,7.8,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Amar Dedic,Bosnien-Hercegovina,DEF,0.8997,0.9297,watch,low,1,90,6.6,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Amar Memic,Bosnien-Hercegovina,MID,0.396,0.356,down,medium,1,74,5.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, svag rating",,TRUE
+Armin Gigovic,Bosnien-Hercegovina,MID,0.3948,0.3748,watch,low,0,28,6.5,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Benjamin Tahirovic,Bosnien-Hercegovina,MID,0.9018,0.8918,hold,low,1,90,5.5,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Dzenis Burnic,Bosnien-Hercegovina,MID,0.112,0.092,watch,low,0,6,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Ermedin Demirovic,Bosnien-Hercegovina,FWD,0.6756,0.6656,hold,low,1,90,5.6,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Esmir Bajraktarevic,Bosnien-Hercegovina,MID,0.8135,0.7735,down,medium,1,74,5.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, svag rating",,TRUE
+Ivan Sunjic,Bosnien-Hercegovina,MID,0.6652,0.6452,watch,low,0,16,6.4,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Jovo Lukic,Bosnien-Hercegovina,FWD,0.35,0.39,up,medium,1,62,8.3,1,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, st?rk rating",,TRUE
+Kerim Alajbegovic,Bosnien-Hercegovina,MID,0.4,0.38,watch,low,0,16,6.4,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Nikola Katic,Bosnien-Hercegovina,DEF,0.8761,0.9461,up,medium,1,90,8.6,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Nikola Vasilj,Bosnien-Hercegovina,GK,0.9097,0.9397,watch,low,1,90,6.5,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Samed Bazdar,Bosnien-Hercegovina,FWD,0.307,0.287,watch,low,0,28,6.1,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Sead Kolasinac,Bosnien-Hercegovina,DEF,0.6526,0.7226,up,medium,1,84,7.9,0,1,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Tarik Muharemovic,Bosnien-Hercegovina,DEF,0.4,0.47,up,medium,1,90,7.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Alex Sandro,Brasilien,DEF,0.3354,0.43,watch,medium,,,,,,,TRUE,Douglas Santos-sporet skal holdes ?bent efter runde 1; watch frem for direkte nedjustering.,competition_for_role,TRUE
+Alisson Becker,Brasilien,GK,0.65,0.68,watch,low,1,90,6.6,0,0,0,TRUE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Bruno Guimaraes,Brasilien,MID,0.8816,0.8716,hold,low,1,80,6.0,0,1,0,TRUE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Casemiro,Brasilien,MID,0.83,0.8,watch,low,1,46,6.4,0,0,0,TRUE,"Flashscore-baseret runde 1-signal: runde1_start, tidlig udskiftning",,TRUE
+Douglas Santos,Brasilien,DEF,0.55,0.6,up,medium,1,90,7.3,0,0,0,TRUE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Endrick,Brasilien,FWD,0.2,0.28,watch,medium,,,,,,,TRUE,9?er/angrebsspor skal auditeres efter underpr?station; ikke automatisk op eller ned.,role_competition,TRUE
+Fabinho,Brasilien,MID,0.0436,0.0236,watch,low,0,44,6.4,0,0,1,TRUE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Igor Thiago,Brasilien,FWD,0.25,0.18,down,high,1,62,6.2,0,0,0,TRUE,Skuffende pr?station og ekspertinput peger v?k fra startpladsen i Brasilien-angrebet.,role_competition,TRUE
+Lucas Paqueta,Brasilien,MID,0.3797,0.62,watch,medium,1,61,6.3,0,0,0,TRUE,"Brasilien underpr?sterede; Paquet? skal auditeres, men ikke auto-ned uden st?rkere individuelt signal.",team_underperformance_flag,TRUE
+Luiz Henrique,Brasilien,FWD,0.45,0.43,watch,low,0,28,6.6,0,0,1,TRUE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Marquinhos,Brasilien,DEF,0.9027,0.9327,watch,low,1,90,6.8,0,0,0,TRUE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Matheus Cunha,Brasilien,FWD,0.5422,0.6,up,high,0,29,6.4,0,0,1,TRUE,Bold+ peger p? Cunha som mest sandsynlig 9?er til runde 2; opjusteres moderat.,role_competition,TRUE
+Raphinha,Brasilien,FWD,0.88,0.87,hold,low,1,90,6.3,0,0,0,TRUE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Roger Ibanez,Brasilien,DEF,0.497,0.467,watch,low,1,46,6.6,0,0,0,TRUE,"Flashscore-baseret runde 1-signal: runde1_start, tidlig udskiftning",,TRUE
+Vinicius Junior,Brasilien,FWD,0.92,0.92,hold,medium,1,90,6.9,1,0,0,TRUE,"Mål i et underpræsterende Brasilien-hold, men må ikke blive auto-lock alene af det. Bevar stærk baseline.",,TRUE
+Ali Ahmed,Canada,MID,0.3913,0.3713,watch,low,0,29,6.5,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Alistair Johnston,Canada,DEF,0.9134,0.9434,watch,low,1,90,6.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Cyle Christopher Larin,Canada,FWD,0.6285,0.74,up,high,0,14,7.6,1,0,1,FALSE,Flashscore impactm?l som indskifter kombineret med Bold+-note om at Larin spiller sig t?ttere p? startrollen for Canada.,competition_for_role,TRUE
+Derek Cornelius,Canada,DEF,0.6199,0.6699,up,medium,1,90,7.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Ismael Kone,Canada,MID,0.8655,0.8555,hold,low,1,90,5.8,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Jacob Shaffelburg,Canada,MID,0.1043,0.0843,watch,low,0,29,6.5,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Jonathan David,Canada,FWD,0.9223,0.9,hold,medium,,,,,,,FALSE,H?j hierarkiprofil trods anonym runde 1; skal ikke ned automatisk alene pga. konkurrenceflag.,role_competition_watch,TRUE
+Jonathan Osorio,Canada,MID,0.1184,0.0984,watch,low,0,0,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Luc De Fougerolles,Canada,DEF,0.68,0.73,up,medium,1,90,7.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Maxime Crepeau,Canada,GK,0.8,0.83,watch,low,1,90,6.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Promise David,Canada,FWD,0.0478,0.0778,watch,low,0,29,6.8,0,1,1,FALSE,"St?rk indskifter-performance i runde 1; watch-signal, men ikke automatisk starterl?ft.",impact_sub_not_auto_start,TRUE
+Richie Laryea,Canada,DEF,0.9369,0.98,up,medium,1,90,7.8,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Stephen Eustaquio,Canada,MID,0.8869,0.9369,up,medium,1,91,7.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Tajon Buchanan,Canada,MID,0.8774,0.8374,down,medium,1,61,5.7,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, svag rating",,TRUE
+Tani Oluwaseyi,Canada,FWD,0.3452,0.3,watch,medium,1,76,6.7,0,0,0,FALSE,"Startede, men Bold+ peger p? pres fra Larin; hold som watch frem for automatisk nedjustering.",competition_for_role,TRUE
+Armando Obispo,Curaçao,DEF,0.8574,0.9074,up,medium,1,90,7.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Deveron Fonville,Curaçao,DEF,0.489,0.479,hold,low,1,90,5.5,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Eloy Room,Curaçao,GK,0.9495,0.9395,hold,low,1,90,4.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Gervane Kastaneer,Curaçao,FWD,0.0902,0.0702,watch,low,0,7,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Jearl Margaritha,Curaçao,FWD,0.1755,0.1555,watch,low,0,25,6.2,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Jeremy Antonisse,Curaçao,FWD,0.3151,0.2951,watch,low,0,44,6.3,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Juninho Bacuna,Curaçao,MID,0.9344,0.98,up,medium,1,90,7.6,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Jürgen Locadia,Curaçao,FWD,0.5505,0.5105,down,medium,1,65,5.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, svag rating",,TRUE
+Leandro Bacuna,Curaçao,MID,0.9151,0.9051,hold,low,1,90,5.7,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Livano Comenencia,Curaçao,DEF,0.9477,0.98,up,medium,1,90,7.1,1,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Riechedly Bazoer,Curaçao,DEF,0.6173,0.6073,hold,low,1,90,5.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Sherel Floranus,Curaçao,DEF,0.9165,0.9065,hold,low,1,90,6.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Sontje Hansen,Curaçao,FWD,0.377,0.347,watch,low,1,46,6.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, tidlig udskiftning",,TRUE
+Tahith Chong,Curaçao,MID,0.6207,0.6707,up,medium,1,83,7.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Alan Minda,Ecuador,MID,0.3264,0.2564,down,medium,1,56,6.2,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, tidlig udskiftning, svag rating",,TRUE
+Angelo Preciado,Ecuador,DEF,0.164,0.144,watch,low,0,28,6.1,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Enner Valencia,Ecuador,FWD,0.8826,0.8726,hold,low,1,77,5.8,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Gonzalo Plata,Ecuador,MID,0.7824,0.8124,watch,low,1,90,6.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Hernan Galindez,Ecuador,GK,0.7812,0.8112,watch,low,1,90,6.8,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Jackson Porozo,Ecuador,DEF,0.2684,0.2484,watch,low,0,28,5.9,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Joel Ordonez,Ecuador,DEF,0.8348,0.8648,watch,low,1,90,6.7,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Kevin Rodriguez,Ecuador,FWD,0.0689,0.0489,watch,low,0,13,5.9,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Moises Caicedo,Ecuador,MID,0.55,0.58,watch,low,1,90,6.7,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Nilson Angulo,Ecuador,FWD,0.45,0.43,watch,low,0,34,5.6,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Pedro Vite,Ecuador,MID,0.8211,0.8911,up,medium,1,90,7.6,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Piero Hincapie,Ecuador,DEF,0.9126,0.9026,hold,low,1,90,6.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Willian Pacho,Ecuador,DEF,0.9359,0.9259,hold,low,1,90,6.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Ahmed Fatouh,Egypten,DEF,0.5746,0.6046,watch,low,1,88,6.8,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Ahmed Zizo,Egypten,MID,0.4,0.38,watch,low,0,14,6.4,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Emam Ashour,Egypten,MID,0.5732,0.5932,watch,low,1,71,7.1,1,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, god rating",,TRUE
+Hamdy Fathy,Egypten,MID,0.8588,0.8888,watch,low,1,88,6.5,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Hamza Abdelkarim,Egypten,FWD,0.0465,0.0265,watch,low,0,14,6.4,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Ibrahim Adel,Egypten,MID,0.0534,0.0334,watch,low,0,2,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Karim Hafez,Egypten,DEF,0.3013,0.2813,watch,low,0,2,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Mohamed Hany,Egypten,DEF,0.8454,0.8354,hold,low,1,90,6.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Mohamed Salah,Egypten,FWD,0.6536,0.7036,up,medium,1,76,7.0,0,1,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Mohanad Lasheen,Egypten,MID,0.6911,0.7211,watch,low,1,90,6.8,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Mostafa Oufa Shobeir,Egypten,GK,0.5193,0.5693,up,medium,1,90,7.2,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Mostafa Ziko,Egypten,MID,0.465,0.455,hold,low,1,76,6.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Omar Marmoush,Egypten,FWD,0.8621,0.9121,up,medium,1,90,7.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Rami Rabia,Egypten,DEF,0.1739,0.1539,watch,low,0,19,6.4,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Yasser Ibrahim,Egypten,DEF,0.5221,0.5121,hold,low,1,90,6.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Amad Diallo,Elfenbenskysten,FWD,0.1346,0.1646,watch,low,0,34,8.6,1,0,1,FALSE,"St?rk indskifter-performance i runde 1; watch-signal, men ikke automatisk starterl?ft.",impact_sub_not_auto_start,TRUE
+Ange-Yoan Bonny,Elfenbenskysten,FWD,0.0456,0.0256,watch,low,0,34,6.5,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Bazoumana Toure,Elfenbenskysten,FWD,0.2658,0.1958,down,medium,1,56,6.2,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, tidlig udskiftning, svag rating",,TRUE
+Christ Inao Oulaï,Elfenbenskysten,MID,0.369,0.349,watch,low,0,13,6.7,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Elye Wahi,Elfenbenskysten,FWD,0.35,0.32,watch,low,1,56,6.5,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, tidlig udskiftning",,TRUE
+Emmanuel Agbadou,Elfenbenskysten,DEF,0.537,0.607,up,medium,1,90,7.8,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Franck Kessie,Elfenbenskysten,MID,0.6903,0.7203,watch,low,1,90,6.7,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Ghislain Konan,Elfenbenskysten,DEF,0.63,0.66,watch,low,1,90,6.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Guela Doue,Elfenbenskysten,DEF,0.6,0.65,up,medium,1,89,7.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Ibrahim Sangare,Elfenbenskysten,MID,0.1728,0.1528,watch,low,0,13,6.4,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Nicolas Pepe,Elfenbenskysten,FWD,0.3299,0.3599,watch,low,1,77,6.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Odilon Kossounou,Elfenbenskysten,DEF,0.3665,0.3465,watch,low,0,1,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Seko Fofana,Elfenbenskysten,MID,0.5514,0.6014,up,medium,1,77,7.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Wilfried Stephane Singo,Elfenbenskysten,DEF,0.5937,0.6637,up,medium,1,90,8.0,0,1,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Yahia Fofana,Elfenbenskysten,GK,0.892,0.922,watch,low,1,90,6.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Yan Diomande,Elfenbenskysten,FWD,0.9123,0.98,up,medium,1,90,8.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Ezri Konsa,England,DEF,0.5823,0.69,watch,high,,,,,,,FALSE,Ekspertinput peger p? reel start-usikkerhed mellem Stones/Konsa.,selection_uncertain,TRUE
+John Stones,England,DEF,0.6587,0.73,watch,high,,,,,,,FALSE,Ekspertinput peger p? reel start-usikkerhed mellem Stones/Konsa.,selection_uncertain,TRUE
+Adrien Rabiot,Frankrig,MID,0.6037,0.6737,up,medium,1,90,8.1,0,1,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Aurelien Tchouameni,Frankrig,MID,0.6726,0.7226,up,medium,1,90,7.2,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Bradley Barcola,Frankrig,MID,0.3,0.33,watch,low,0,10,,1,0,1,FALSE,"St?rk indskifter-performance i runde 1; watch-signal, men ikke automatisk starterl?ft.",impact_sub_not_auto_start,TRUE
+Dayot Upamecano,Frankrig,DEF,0.6508,0.7208,up,medium,1,90,8.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Desire Doue,Frankrig,FWD,0.33,0.32,hold,low,1,87,6.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Jules Kounde,Frankrig,DEF,0.6814,0.7314,up,medium,1,90,7.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Kylian Mbappe,Frankrig,FWD,0.95,0.98,up,medium,1,90,8.1,2,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Michael Olise,Frankrig,FWD,0.86,0.93,up,medium,1,90,8.6,0,1,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Ousmane Dembele,Frankrig,FWD,0.7,0.73,watch,low,1,80,6.5,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Rayan Cherki,Frankrig,FWD,0.595,0.575,watch,low,0,3,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Theo Hernandez,Frankrig,DEF,0.6642,0.6942,watch,low,1,90,6.6,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+William Saliba,Frankrig,DEF,0.4145,0.4445,watch,low,1,90,6.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Carlens Arcus,Haiti,DEF,0.9094,0.8994,hold,low,1,90,5.6,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Danley Jean Jacques,Haiti,MID,0.9149,0.9449,watch,low,1,90,6.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Don Deedson Louicius,Haiti,FWD,0.6012,0.5612,down,medium,1,61,6.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, svag rating",,TRUE
+Frantzdy Pierrot,Haiti,FWD,0.4591,0.4491,hold,low,1,90,6.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Hannes Delcroix,Haiti,DEF,0.6346,0.7046,up,medium,1,90,7.5,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Jean-Ricner Bellegarde,Haiti,MID,0.7054,0.7554,up,medium,1,90,7.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Johny Placide,Haiti,GK,0.8957,0.9257,watch,low,1,90,6.6,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Josue Casimir,Haiti,FWD,0.6633,0.6433,watch,low,0,29,6.5,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Lenny Joseph,Haiti,FWD,0.0465,0.0265,watch,low,0,14,6.5,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Martin Experience,Haiti,DEF,0.7871,0.8171,watch,low,1,90,6.7,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Ricardo Ade,Haiti,DEF,0.9239,0.9539,watch,low,1,90,6.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Ruben Providence,Haiti,FWD,0.8572,0.8872,watch,low,1,85,6.7,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Wilson Isidor,Haiti,FWD,0.8806,0.8706,hold,low,1,76,6.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Yassin Fortune,Haiti,FWD,0.0813,0.0613,watch,low,0,5,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Bart Verbruggen,Holland,GK,0.9012,0.8912,hold,low,1,90,6.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Brian Brobbey,Holland,FWD,0.268,0.248,watch,low,0,5,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Cody Gakpo,Holland,FWD,0.91,0.94,watch,low,1,85,6.8,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Crysencio Summerville,Holland,MID,0.8851,0.34,watch,medium,1,70,7.7,1,0,0,FALSE,"Scorede, men formations- og rolleusikkerhed g?r at han ikke skal l?ftes blindt.",formation_uncertain,TRUE
+Denzel Dumfries,Holland,DEF,0.9243,0.9743,up,medium,1,90,7.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Frenkie de Jong,Holland,MID,0.9368,0.98,up,medium,1,90,7.6,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Jan Paul van Hecke,Holland,DEF,0.5768,0.6468,up,medium,1,90,7.8,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Memphis Depay,Holland,FWD,0.6669,0.6469,watch,low,0,20,6.2,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Micky van de Ven,Holland,DEF,0.5829,0.6129,watch,low,1,90,6.7,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Nathan Ake,Holland,DEF,0.3831,0.3631,watch,low,0,9,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Quinten Timber,Holland,MID,0.3012,0.2812,watch,low,0,20,6.7,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Ryan Gravenberch,Holland,MID,0.566,0.616,up,medium,1,81,7.3,0,2,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Teun Koopmeiners,Holland,MID,0.2773,0.2573,watch,low,0,20,6.6,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Tijjani Reijnders,Holland,MID,0.6768,0.6368,down,medium,1,70,6.2,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, svag rating",,TRUE
+Virgil van Dijk,Holland,DEF,0.9438,0.98,up,medium,1,90,7.7,1,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Ahmed Qasem,Irak,MID,0.465,0.445,watch,low,0,17,6.2,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Akam Hashem,Irak,DEF,0.7592,0.7492,hold,low,1,90,5.5,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Ali Al-Hamadi,Irak,FWD,0.5283,0.4983,watch,low,1,59,6.7,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, tidlig udskiftning",,TRUE
+Amir Al Ammari,Irak,MID,0.8671,0.8971,watch,low,1,90,6.6,0,1,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Ibrahim Bayesh,Irak,MID,0.8738,0.8638,hold,low,1,78,5.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Marko Farji,Irak,MID,0.5495,0.5295,watch,low,0,31,6.1,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Merchas Doski,Irak,DEF,0.8375,0.8875,up,medium,1,90,7.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Mustafa Saadoon,Irak,DEF,0.5195,0.4995,watch,low,0,17,6.3,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Zaid Tahseen,Irak,DEF,0.8161,0.8061,hold,low,1,90,4.6,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Zidane Iqbal,Irak,MID,0.3015,0.2815,watch,low,0,31,6.2,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Ali Alipour,Iran,FWD,0.043,0.023,watch,low,0,37,6.4,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Ali Nemati,Iran,DEF,0.514,0.504,hold,low,1,90,5.8,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Alireza Beiranvand,Iran,GK,0.9189,0.9089,hold,low,1,90,6.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Amirhossein Hosseinzadeh,Iran,FWD,0.5366,0.5166,watch,low,0,10,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Arya Yousefi,Iran,DEF,0.8205,0.7905,watch,low,1,46,6.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, tidlig udskiftning",,TRUE
+Ehsan Hajsafi,Iran,DEF,0.3649,0.3449,watch,low,0,25,6.3,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Mehdi Taremi,Iran,FWD,0.9302,0.9602,watch,low,1,80,6.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Milad Mohammadi,Iran,DEF,0.6091,0.5991,hold,low,1,90,5.5,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Mohammad Mohebi,Iran,FWD,0.8317,0.9017,up,medium,1,90,7.6,1,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Ramin Rezaeian,Iran,DEF,0.1338,0.2038,up,medium,1,90,9.0,1,1,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Saeid Ezatolahi,Iran,MID,0.8138,0.8438,watch,low,1,90,6.6,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Shahriar Moghanlou,Iran,FWD,0.2664,0.2564,hold,low,1,53,7.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, tidlig udskiftning, god rating",,TRUE
+Shojae Khalilzadeh,Iran,DEF,0.7167,0.7067,hold,low,1,90,6.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Ayase Ueda,Japan,FWD,0.5698,0.5598,hold,low,1,84,6.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Daichi Kamada,Japan,MID,0.565,0.635,up,medium,1,90,7.7,1,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Daizen Maeda,Japan,FWD,0.2701,0.2301,down,medium,1,66,5.6,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, svag rating",,TRUE
+Hiroki Ito,Japan,DEF,0.8534,0.8434,hold,low,1,90,5.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Junya Ito,Japan,MID,0.5593,0.5393,watch,low,0,24,6.6,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Keito Nakamura,Japan,MID,0.56,0.61,up,medium,1,90,7.2,1,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Kento Shiogai,Japan,FWD,0.047,0.027,watch,low,0,6,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Koki Ogawa,Japan,FWD,0.0812,0.1112,watch,low,0,15,6.8,0,1,1,FALSE,"St?rk indskifter-performance i runde 1; watch-signal, men ikke automatisk starterl?ft.",impact_sub_not_auto_start,TRUE
+Ritsu Doan,Japan,MID,0.595,0.625,watch,low,1,75,6.5,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Shogo Taniguchi,Japan,DEF,0.3434,0.3934,up,medium,1,90,7.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Takefusa Kubo,Japan,MID,0.8066,0.8366,watch,low,1,75,6.6,0,1,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Takehiro Tomiyasu,Japan,DEF,0.8016,0.7816,watch,low,0,15,6.4,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Tsuyoshi Watanabe,Japan,DEF,0.5392,0.5692,watch,low,1,75,6.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Yukinari Sugawara,Japan,DEF,0.2932,0.2732,watch,low,0,15,6.8,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Zion Suzuki,Japan,GK,0.9433,0.9733,watch,low,1,90,6.7,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Abdallah Nasib,Jordan,DEF,0.9105,0.9005,hold,low,1,81,6.2,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Ali Azaizeh,Jordan,MID,0.043,0.023,watch,low,0,1,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Ali Olwan,Jordan,FWD,0.902,0.972,up,medium,1,90,7.7,1,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Ehsan Haddad,Jordan,DEF,0.8689,0.8589,hold,low,1,81,6.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Mahmoud Al-Mardi,Jordan,MID,0.5985,0.5785,watch,low,0,9,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Mohammad Abualnadi,Jordan,DEF,0.5929,0.5529,down,medium,1,72,6.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, svag rating",,TRUE
+Mohannad Abu Taha,Jordan,MID,0.6235,0.6535,watch,low,1,90,6.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Mousa Tamari,Jordan,MID,0.8438,0.8738,watch,low,1,88,6.7,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Nizar Al-Rashdan,Jordan,MID,0.6498,0.6798,watch,low,1,90,6.6,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Noor Al-Rawabdeh,Jordan,MID,0.831,0.861,watch,low,1,90,6.7,0,1,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Odeh Al-Fakhouri,Jordan,MID,0.25,0.24,hold,low,1,89,5.8,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Saed Al-Rosan,Jordan,DEF,0.25,0.23,watch,low,0,9,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Saleem Obaid,Jordan,DEF,0.0784,0.0584,watch,low,0,18,5.7,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Yazan Al-Arab,Jordan,DEF,0.8738,0.9238,up,medium,1,90,7.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Yazeed Abulaila,Jordan,GK,0.9498,0.9398,hold,low,1,90,5.6,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Dailon Livramento,Kap Verde,FWD,0.3874,0.3474,down,medium,1,61,5.8,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, svag rating",,TRUE
+Diney Borges,Kap Verde,DEF,0.7912,0.8612,up,medium,1,90,7.7,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Jamiro Monteiro,Kap Verde,MID,0.6323,0.6623,watch,low,1,79,6.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Joao Paulo,Kap Verde,DEF,0.4119,0.3919,watch,low,0,14,6.3,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Jovane Cabral,Kap Verde,FWD,0.5853,0.5453,down,medium,1,61,6.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, svag rating",,TRUE
+Kevin Lenini Pina,Kap Verde,MID,0.6738,0.6638,hold,low,1,90,5.2,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Laros Duarte,Kap Verde,MID,0.294,0.254,down,medium,1,61,5.6,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, svag rating",,TRUE
+Nuno da Costa,Kap Verde,FWD,0.2764,0.2564,watch,low,0,29,6.3,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Roberto Lopes,Kap Verde,DEF,0.8954,0.9254,watch,low,1,90,6.8,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Sidny Lopes Cabral,Kap Verde,DEF,0.5168,0.5068,hold,low,1,76,6.2,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Steven Moreira,Kap Verde,DEF,0.4171,0.4071,hold,low,1,90,5.5,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Telmo Arcanjo,Kap Verde,MID,0.5432,0.5232,watch,low,0,11,6.6,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Vozinha,Kap Verde,GK,0.9285,0.98,up,medium,1,90,8.8,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Willy Semedo,Kap Verde,FWD,0.3479,0.3279,watch,low,0,29,5.8,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Achraf Hakimi,Marokko,DEF,0.8511,0.9011,up,medium,1,90,7.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Anass Salah-Eddine,Marokko,DEF,0.5353,0.5153,watch,low,0,10,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Ayoube Amaimouni-Echghouyab,Marokko,MID,0.465,0.445,watch,low,0,10,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Azzedine Ounahi,Marokko,MID,0.3946,0.4146,watch,low,1,65,7.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, god rating",,TRUE
+Bilal El Khannouss,Marokko,MID,0.5176,0.5476,watch,low,1,80,6.7,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Brahim Diaz,Marokko,FWD,0.72,0.74,watch,low,1,65,7.4,0,1,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, god rating",,TRUE
+Chadi Riad,Marokko,DEF,0.2947,0.2847,hold,low,1,90,5.8,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Chemsdine Talbi,Marokko,FWD,0.2297,0.2097,watch,low,0,25,6.3,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Ismael Saibari,Marokko,MID,0.7891,0.8391,up,medium,1,89,7.2,1,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Issa Diop,Marokko,DEF,0.8707,0.8607,hold,low,1,90,6.2,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Neil El Aynaoui,Marokko,MID,0.45,0.5,up,medium,1,90,7.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Noussair Mazraoui,Marokko,DEF,0.6272,0.6572,watch,low,1,80,6.7,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Samir El Mourabet,Marokko,MID,0.2896,0.2696,watch,low,0,25,6.3,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Soufiane Rahimi,Marokko,MID,0.28,0.26,watch,low,0,1,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Yassine 'Bono' Bounou,Marokko,GK,0.949,0.98,up,medium,1,90,7.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Alexis Vega,Mexico,FWD,0.5496,0.5296,watch,low,0,11,6.4,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Armando Gonzalez,Mexico,FWD,0.3162,0.2962,watch,low,0,14,6.3,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Cesar Montes,Mexico,DEF,0.72,0.71,hold,low,1,90,6.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Edson Alvarez,Mexico,MID,0.4344,0.4144,watch,low,0,14,6.6,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Erik Lira,Mexico,MID,0.5447,0.5947,up,medium,1,76,7.2,0,1,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Gilberto Mora,Mexico,MID,0.2971,0.2771,watch,low,0,24,6.5,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Israel Reyes,Mexico,DEF,0.3471,0.3971,up,medium,1,90,7.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Jesus Gallardo,Mexico,DEF,0.6424,0.6724,watch,low,1,90,6.7,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Johan Vasquez,Mexico,DEF,0.8341,0.8641,watch,low,1,90,6.7,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Julian Quinones,Mexico,FWD,0.5348,0.6048,up,medium,1,79,8.6,1,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Luis Chavez,Mexico,MID,0.3826,0.3626,watch,low,0,24,6.8,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Raul Jimenez,Mexico,FWD,0.7885,0.8585,up,medium,1,76,8.0,1,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Raul Rangel,Mexico,GK,0.9397,0.98,up,medium,1,90,7.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Roberto Alvarado,Mexico,MID,0.78,0.85,up,medium,1,90,7.8,0,1,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Ben Old,New Zealand,MID,0.3709,0.3509,watch,low,0,22,6.2,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Callan Elliot,New Zealand,DEF,0.043,0.023,watch,low,0,12,6.5,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Elijah Just,New Zealand,MID,0.8876,0.9576,up,medium,1,90,8.3,2,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Finn Surman,New Zealand,DEF,0.8854,0.9354,up,medium,1,90,7.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Jesse Randall,New Zealand,FWD,0.4601,0.4401,watch,low,0,0,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Joe Bell,New Zealand,MID,0.6207,0.6107,hold,low,1,90,6.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Liberato Cacace,New Zealand,DEF,0.8554,0.8154,down,medium,1,68,5.7,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, svag rating",,TRUE
+Marko Stamenic,New Zealand,MID,0.9032,0.8932,hold,low,1,92,6.2,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Max Crocombe,New Zealand,GK,0.3832,0.3732,hold,low,1,90,6.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Michael Boxall,New Zealand,DEF,0.3955,0.4255,watch,low,1,90,6.5,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Ryan Thomas,New Zealand,MID,0.6186,0.5986,watch,low,0,22,5.8,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Sarpreet Singh,New Zealand,MID,0.8587,0.8487,hold,low,1,92,5.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Tim Payne,New Zealand,DEF,0.853,0.843,hold,low,1,78,5.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Tyler Bindon,New Zealand,DEF,0.6587,0.6387,watch,low,0,0,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Alexander Sørloth,Norge,FWD,0.8805,0.8405,down,medium,1,73,6.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, svag rating",,TRUE
+Andreas Schjelderup,Norge,MID,0.3333,0.3133,watch,low,0,17,6.5,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+David Møller Wolfe,Norge,DEF,0.6856,0.7056,watch,low,1,73,7.2,0,1,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, god rating",,TRUE
+Julian Ryerson,Norge,DEF,0.88,0.91,watch,low,1,90,6.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Kristian Thorstvedt,Norge,MID,0.3007,0.2807,watch,low,0,17,6.7,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Kristoffer Ajer,Norge,DEF,0.9075,0.9575,up,medium,1,90,7.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Martin Ødegaard,Norge,MID,0.8841,0.9341,up,medium,1,81,7.3,0,1,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Oscar Bobb,Norge,MID,0.58,0.56,watch,low,0,17,6.5,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Patrick Berg,Norge,MID,0.3558,0.3358,watch,low,0,9,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Sander Berge,Norge,MID,0.934,0.98,up,medium,1,90,7.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Torbjørn Heggem,Norge,DEF,0.6376,0.6676,watch,low,1,90,6.5,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+"Alejandro ""Kaku"" Romero Gamarra",Paraguay,MID,0.2617,0.2417,watch,low,0,10,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Alex Arce,Paraguay,FWD,0.0719,0.0519,watch,low,0,28,5.9,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Andres Cubas,Paraguay,MID,0.6302,0.6602,watch,low,1,90,6.7,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Antonio Sanabria,Paraguay,FWD,0.5484,0.5084,down,medium,1,62,6.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, svag rating",,TRUE
+Damian Bobadilla,Paraguay,MID,0.6047,0.5347,down,medium,1,46,5.2,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, tidlig udskiftning, svag rating",,TRUE
+Diego Gomez,Paraguay,MID,0.9002,0.8902,hold,low,1,80,5.6,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Gustavo Velazquez,Paraguay,DEF,0.0932,0.0732,watch,low,0,11,6.3,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Juan Jose Caceres,Paraguay,DEF,0.6453,0.6353,hold,low,1,79,6.2,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Julio Enciso,Paraguay,FWD,0.8565,0.8865,watch,low,1,90,6.6,0,1,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Junior Alonso,Paraguay,DEF,0.8733,0.8633,hold,low,1,90,5.2,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Mauricio Magalhaes Prado,Paraguay,MID,0.3187,0.3487,watch,low,0,44,7.0,1,0,1,FALSE,"St?rk indskifter-performance i runde 1; watch-signal, men ikke automatisk starterl?ft.",impact_sub_not_auto_start,TRUE
+Miguel Almiron,Paraguay,MID,0.9133,0.9033,hold,low,1,79,6.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Omar Alderete,Paraguay,DEF,0.8699,0.8599,hold,low,1,90,6.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Orlando Gill,Paraguay,GK,0.3331,0.3231,hold,low,1,90,5.6,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Ramon Sosa,Paraguay,MID,0.1096,0.0896,watch,low,0,11,6.3,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Nuno Mendes,Portugal,DEF,0.88,0.9,hold,medium,,,,,,,FALSE,Tidlig udskiftning var planlagt; skal ikke tolkes som rotationsfald.,planned_substitution,TRUE
+Rafael Leão,Portugal,FWD,0.6177,0.7,up,high,,,,,,,FALSE,Bold+ noterer at Le?o undg?r karant?ne og dermed st?r st?rkere til runde 2-start.,,TRUE
+Ahmed Alaaeldin Abdelmotaal,Qatar,FWD,0.4247,0.4047,watch,low,0,30,6.3,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Ahmed Fathi,Qatar,MID,0.4166,0.3966,watch,low,0,30,6.5,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Akram Afif,Qatar,FWD,0.91,0.94,watch,low,1,90,6.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Ayoub Al-Oui,Qatar,DEF,0.9308,0.8608,down,medium,1,60,5.7,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, tidlig udskiftning, svag rating",,TRUE
+Boualem Khoukhi,Qatar,DEF,0.8243,0.8143,hold,low,1,90,6.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Edmilson Junior,Qatar,FWD,0.6178,0.6078,hold,low,1,88,5.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Hassan Al-Haydos,Qatar,MID,0.25,0.23,watch,low,0,2,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Homam Al-Amin Ahmed,Qatar,DEF,0.25,0.28,watch,low,1,90,6.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Jassem Gaber,Qatar,MID,0.5685,0.5385,watch,low,1,60,6.5,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, tidlig udskiftning",,TRUE
+Karim Boudiaf,Qatar,MID,0.3756,0.3556,watch,low,0,30,6.5,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Mahmoud Abunada,Qatar,GK,0.3826,0.4326,up,medium,1,90,7.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Mohamed Al-Mannai,Qatar,MID,0.3513,0.3313,watch,low,0,11,6.4,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Pedro 'Ro-Ro' Miguel Correia,Qatar,DEF,0.8455,0.8755,watch,low,1,90,6.7,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Yusuf Abdurisag,Qatar,FWD,0.5094,0.4794,watch,low,1,60,6.5,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, tidlig udskiftning",,TRUE
+Abdulelah Al-Amri,Saudi-Arabien,DEF,0.5781,0.6281,up,medium,1,90,7.4,1,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Abdullah Al-Hamdan,Saudi-Arabien,FWD,0.4927,0.4727,watch,low,0,0,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Abdullah Al-Khaibari,Saudi-Arabien,MID,0.3544,0.3444,hold,low,1,90,6.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Alaa Hejji,Saudi-Arabien,MID,0.0465,0.0265,watch,low,0,0,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Ali Lajami,Saudi-Arabien,DEF,0.5582,0.5382,watch,low,0,0,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Hassan Al Tambakti,Saudi-Arabien,DEF,0.25,0.24,hold,low,1,90,5.5,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Mohamed Kanno,Saudi-Arabien,MID,0.848,0.898,up,medium,1,90,7.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Mohammed Al-Owais,Saudi-Arabien,GK,0.7314,0.7814,up,medium,1,90,7.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Moteb Al-Harbi,Saudi-Arabien,DEF,0.3447,0.3347,hold,low,1,93,6.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Musab Al-Juwayr,Saudi-Arabien,MID,0.4036,0.3636,down,medium,1,63,6.2,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, svag rating",,TRUE
+Nasser Al-Dawsari,Saudi-Arabien,MID,0.5757,0.5557,watch,low,0,27,6.6,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Salem Al-Dawsari,Saudi-Arabien,MID,0.677,0.667,hold,low,1,90,5.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Saud Abdulhamid,Saudi-Arabien,DEF,0.7903,0.8203,watch,low,1,93,6.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Ardon Jashari,Schweiz,MID,0.2409,0.2209,watch,low,0,1,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Breel Embolo,Schweiz,FWD,0.9109,0.98,up,medium,1,90,8.5,1,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Dan Ndoye,Schweiz,FWD,0.906,0.926,watch,low,1,65,7.2,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, god rating",,TRUE
+Denis Zakaria,Schweiz,MID,0.5608,0.6108,up,medium,1,90,7.2,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Fabian Rieder,Schweiz,MID,0.3527,0.3327,watch,low,0,25,6.6,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Granit Xhaka,Schweiz,MID,0.9302,0.98,up,medium,1,90,7.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Gregor Kobel,Schweiz,GK,0.92,0.97,up,medium,1,90,7.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Johan Manzambi,Schweiz,MID,0.5589,0.5389,watch,low,0,25,6.6,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Manuel Akanji,Schweiz,DEF,0.9398,0.98,up,medium,1,90,7.2,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Michel Aebischer,Schweiz,MID,0.8008,0.8208,watch,low,1,65,7.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, god rating",,TRUE
+Miro Muheim,Schweiz,DEF,0.0488,0.0288,watch,low,0,1,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Mohamed Zeki Amdouni,Schweiz,FWD,0.3483,0.3283,watch,low,0,11,6.9,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Nico Elvedi,Schweiz,DEF,0.8785,0.9485,up,medium,1,90,8.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Remo Freuler,Schweiz,MID,0.9381,0.9681,watch,low,1,89,6.8,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Ricardo Rodriguez,Schweiz,DEF,0.4831,0.5531,up,medium,1,89,8.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Ruben Vargas,Schweiz,FWD,0.9149,0.9649,up,medium,1,79,7.2,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Bamba Dieng,Senegal,FWD,0.043,0.023,watch,low,0,7,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Edouard Mendy,Senegal,GK,0.6706,0.7006,watch,low,1,90,6.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+El Hadji Malick Diouf,Senegal,DEF,0.3793,0.4093,watch,low,1,90,6.5,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Habib Diarra,Senegal,MID,0.5911,0.5711,watch,low,0,14,6.2,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Ibrahim Mbaye,Senegal,MID,0.2706,0.3006,watch,low,0,15,7.3,1,0,1,FALSE,"St?rk indskifter-performance i runde 1; watch-signal, men ikke automatisk starterl?ft.",impact_sub_not_auto_start,TRUE
+Idrissa Gana Gueye,Senegal,MID,0.6524,0.6424,hold,low,1,88,6.2,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Iliman Ndiaye,Senegal,MID,0.8253,0.39,watch,medium,0,7,,0,1,1,FALSE,"Assist som indskifter er positiv, men rolle og matchup er stadig usikre.",impact_sub_not_auto_start,TRUE
+Ismaila Sarr,Senegal,MID,0.6015,0.5915,hold,low,1,75,6.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Kalidou Koulibaly,Senegal,DEF,0.8777,0.8677,hold,low,1,90,6.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Krepin Diatta,Senegal,FWD,0.8592,0.9092,up,medium,1,90,7.2,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Lamine Camara,Senegal,MID,0.5487,0.5387,hold,low,1,76,5.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Moussa Niakhate,Senegal,DEF,0.4165,0.4065,hold,low,1,90,5.8,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Nicolas Jackson,Senegal,FWD,0.6014,0.5914,hold,low,1,83,5.2,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Pape Alassane Gueye,Senegal,MID,0.0,0.02,hold,low,1,83,6.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Pathe Ciss,Senegal,MID,0.2564,0.2364,watch,low,0,2,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Sadio Mane,Senegal,FWD,0.8922,0.8822,hold,low,1,90,5.5,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Aaron Hickey,Skotland,DEF,0.8813,0.9313,up,medium,1,75,7.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Andy Robertson,Skotland,DEF,0.8728,0.9228,up,medium,1,90,7.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Angus Gunn,Skotland,GK,0.2623,0.2923,watch,low,1,90,6.8,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Che Adams,Skotland,FWD,0.6374,0.6274,hold,low,1,75,6.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Findlay Curtis,Skotland,FWD,0.0474,0.0274,watch,low,0,7,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Grant Hanley,Skotland,DEF,0.4174,0.4674,up,medium,1,90,7.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Jack Hendry,Skotland,DEF,0.3691,0.3991,watch,low,1,90,6.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+John McGinn,Skotland,MID,0.88,0.93,up,medium,1,83,7.3,1,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Kenny McLean,Skotland,MID,0.3397,0.3197,watch,low,0,7,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Lawrence Shankland,Skotland,FWD,0.4793,0.5093,watch,low,1,83,6.5,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Lewis Ferguson,Skotland,MID,0.577,0.627,up,medium,1,90,7.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Lyndon Dykes,Skotland,FWD,0.1452,0.1252,watch,low,0,15,6.3,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Nathan Patterson,Skotland,DEF,0.095,0.075,watch,low,0,15,6.4,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Ryan Christie,Skotland,MID,0.8635,0.8435,watch,low,0,15,6.5,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Scott McTominay,Skotland,MID,0.934,0.924,hold,low,1,90,5.8,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Aymeric Laporte,Spanien,DEF,0.6506,0.7206,up,medium,1,90,8.3,0,0,0,TRUE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Dani Olmo,Spanien,MID,0.5831,0.5631,watch,low,0,9,,0,0,1,TRUE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Ferran Torres,Spanien,FWD,0.5696,0.62,watch,medium,1,81,6.3,0,0,0,TRUE,"81 startminutter og 6.3 rating i et skuffende hold. Individuel case til watch, men ikke auto-ned alene pga. resultatet.",team_underperformed,TRUE
+Lamine Yamal,Spanien,FWD,0.9012,0.8812,watch,low,0,19,6.8,0,0,1,TRUE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Marc Cucurella,Spanien,DEF,0.5911,0.6611,up,medium,1,90,7.6,0,0,0,TRUE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Marcos Llorente,Spanien,MID,0.289,0.359,up,medium,1,90,7.6,0,0,0,TRUE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Mikel Merino,Spanien,MID,0.5545,0.5345,watch,low,0,19,6.9,0,0,1,TRUE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Mikel Oyarzabal,Spanien,FWD,0.88,0.91,watch,low,1,90,6.9,0,0,0,TRUE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Nico Williams,Spanien,FWD,0.56,0.54,watch,low,0,3,,0,0,1,TRUE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Pau Cubarsi,Spanien,DEF,0.3084,0.3784,up,medium,1,90,8.1,0,0,0,TRUE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Pedri,Spanien,MID,0.6444,0.7144,up,medium,1,90,8.6,0,0,0,TRUE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Rodri Hernandez,Spanien,MID,0.3836,0.4536,up,medium,1,87,8.2,0,0,0,TRUE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Unai Simon,Spanien,GK,0.86,0.9,hold,medium,1,90,7.0,0,0,0,TRUE,"Spanien skuffede som hold, men der er ingen individuel grund til nedjustering her. Holdflag må ikke blive bred spillerstraf.",,TRUE
+Alexander Bernhardsson,Sverige,MID,0.3744,0.4044,watch,low,1,91,6.5,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Alexander Isak,Sverige,FWD,0.3944,0.4644,up,medium,1,90,8.1,1,2,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Anthony Elanga,Sverige,FWD,0.5704,0.5504,watch,low,0,0,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Daniel Svensson,Sverige,DEF,0.8525,0.8325,watch,low,0,0,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Elliot Stroud,Sverige,DEF,0.0441,0.0241,watch,low,0,25,6.6,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Gustaf Lagerbielke,Sverige,DEF,0.7784,0.8084,watch,low,1,90,6.6,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Isak Hien,Sverige,DEF,0.9237,0.9537,watch,low,1,90,6.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Jesper Karlström,Sverige,MID,0.51,0.5,hold,low,1,84,6.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Kristoffer Nordfeldt,Sverige,GK,0.4727,0.4627,hold,low,1,90,6.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Lucas Bergvall,Sverige,MID,0.2777,0.3077,watch,low,0,25,7.3,0,1,1,FALSE,"St?rk indskifter-performance i runde 1; watch-signal, men ikke automatisk starterl?ft.",impact_sub_not_auto_start,TRUE
+Mattias Svanberg,Sverige,MID,0.3308,0.3608,watch,low,0,6,,1,0,1,FALSE,"St?rk indskifter-performance i runde 1; watch-signal, men ikke automatisk starterl?ft.",impact_sub_not_auto_start,TRUE
+Victor Lindelöf,Sverige,DEF,0.6257,0.6557,watch,low,1,90,6.6,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Viktor Gyökeres,Sverige,FWD,0.8149,0.8849,up,medium,1,90,8.8,1,1,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Yasin Ayari,Sverige,MID,0.8753,0.9453,up,medium,1,90,8.0,2,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Evidence Makgopa,Sydafrika,FWD,0.0875,0.0675,watch,low,0,14,6.6,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Ime Okon,Sydafrika,DEF,0.9119,0.9019,hold,low,1,90,5.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Jayden Adams,Sydafrika,MID,0.2299,0.1899,down,medium,1,61,6.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, svag rating",,TRUE
+Khuliso Mudau,Sydafrika,DEF,0.652,0.642,hold,low,1,90,6.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Lyle Foster,Sydafrika,FWD,0.8284,0.7584,down,medium,1,56,5.5,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, tidlig udskiftning, svag rating",,TRUE
+Mbekezeli Mbokazi,Sydafrika,DEF,0.4156,0.4056,hold,low,1,90,5.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Oswin Appollis,Sydafrika,FWD,0.4007,0.3807,watch,low,0,13,6.3,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Ronwen Williams,Sydafrika,GK,0.92,0.91,hold,low,1,90,6.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Sphephelo Yaya Sithole,Sydafrika,MID,0.8032,0.7932,hold,low,1,90,3.8,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Teboho Mokoena,Sydafrika,MID,0.6667,0.6567,hold,low,1,90,6.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Thalente Mbatha,Sydafrika,MID,0.3021,0.2821,watch,low,0,34,6.0,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Themba Zwane,Sydafrika,MID,0.6009,0.5809,watch,low,0,29,4.4,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Gi-hyuk Lee,Sydkorea,DEF,0.5856,0.6156,watch,low,1,90,6.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Hee-Chan Hwang,Sydkorea,MID,0.3786,0.3586,watch,low,0,28,6.5,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Heung-Min Son,Sydkorea,FWD,0.92,0.94,watch,low,1,69,7.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, god rating",,TRUE
+Hyeon-Gyu Oh,Sydkorea,FWD,0.2693,0.2993,watch,low,0,21,7.6,1,0,1,FALSE,"St?rk indskifter-performance i runde 1; watch-signal, men ikke automatisk starterl?ft.",impact_sub_not_auto_start,TRUE
+In-beom Hwang,Sydkorea,MID,0.6856,0.7556,up,medium,1,84,8.8,1,1,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Jae-Sung Lee,Sydkorea,MID,0.6446,0.6646,watch,low,1,62,7.2,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, god rating",,TRUE
+Ji-sung Eom,Sydkorea,MID,0.043,0.023,watch,low,0,21,6.8,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Jin-gyu Kim,Sydkorea,MID,0.5377,0.5177,watch,low,0,6,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Jin-seob Park,Sydkorea,MID,0.0687,0.0487,watch,low,0,6,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Kang-In Lee,Sydkorea,MID,0.394,0.464,up,medium,1,90,9.1,0,1,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Min-jae Kim,Sydkorea,DEF,0.6839,0.7339,up,medium,1,90,7.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Seung-Gyu Kim,Sydkorea,GK,0.7029,0.7529,up,medium,1,90,7.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Seung-Ho Paik,Sydkorea,MID,0.509,0.559,up,medium,1,84,7.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Tae-Seok Lee,Sydkorea,DEF,0.6236,0.6436,watch,low,1,69,7.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, god rating",,TRUE
+Young-woo Seol,Sydkorea,DEF,0.6673,0.6973,watch,low,1,90,6.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Adam Hlozek,Tjekkiet,FWD,0.5872,0.5672,watch,low,0,26,6.7,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Alexandr Sojka,Tjekkiet,MID,0.465,0.455,hold,low,1,84,5.7,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Jaroslav Zeleny,Tjekkiet,DEF,0.3657,0.3557,hold,low,1,90,6.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Ladislav Krejci,Tjekkiet,DEF,0.9051,0.9351,watch,low,1,90,6.5,1,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Lukas Provod,Tjekkiet,MID,0.8588,0.8188,down,medium,1,64,6.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, svag rating",,TRUE
+Matej Kovar,Tjekkiet,GK,0.9039,0.9539,up,medium,1,90,7.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Michal Sadilek,Tjekkiet,MID,0.3527,0.3327,watch,low,0,26,6.6,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Mojmir Chytil,Tjekkiet,FWD,0.2882,0.2682,watch,low,0,6,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Patrik Schick,Tjekkiet,FWD,0.8552,0.8152,down,medium,1,64,5.7,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, svag rating",,TRUE
+Pavel Sulc,Tjekkiet,MID,0.8997,0.8597,down,medium,1,64,6.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, svag rating",,TRUE
+Robin Hranac,Tjekkiet,DEF,0.8244,0.8144,hold,low,1,90,5.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Tomas Chory,Tjekkiet,FWD,0.3391,0.3191,watch,low,0,26,6.1,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Tomas Soucek,Tjekkiet,MID,0.9394,0.9294,hold,low,1,90,5.6,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Vladimir Coufal,Tjekkiet,DEF,0.9096,0.8996,hold,low,1,90,5.9,0,1,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Abdelmouhib Chamakh,Tunesien,GK,0.924,0.914,hold,low,1,90,2.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Ali Abdi,Tunesien,DEF,0.6355,0.6255,hold,low,1,90,5.7,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Anis Ben Slimane,Tunesien,MID,0.5407,0.5307,hold,low,1,84,5.8,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Elias Achouri,Tunesien,MID,0.6026,0.5826,watch,low,0,18,6.3,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Elias Saad,Tunesien,MID,0.3347,0.2947,down,medium,1,72,6.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, svag rating",,TRUE
+Ellyes Skhiri,Tunesien,MID,0.8734,0.8334,down,medium,1,72,5.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, svag rating",,TRUE
+Firas Chaouat,Tunesien,FWD,0.2848,0.2648,watch,low,0,6,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Hannibal Mejbri,Tunesien,MID,0.5947,0.6447,up,medium,1,90,7.4,0,1,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Ismael Gharbi,Tunesien,MID,0.6165,0.5965,watch,low,0,7,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Mohamed Amine Ben Hamida,Tunesien,DEF,0.3014,0.3714,up,medium,1,90,7.5,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Montassar Talbi,Tunesien,DEF,0.9019,0.9519,up,medium,1,90,7.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Omar Rekik,Tunesien,DEF,0.7422,0.7922,up,medium,1,90,7.3,1,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Rani Khedira,Tunesien,MID,0.6533,0.6433,hold,low,1,83,5.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Sebastian Tounekti,Tunesien,MID,0.0568,0.0368,watch,low,0,18,6.0,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Yan Valery,Tunesien,DEF,0.7887,0.7487,down,medium,1,72,5.8,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, svag rating",,TRUE
+Abdulkerim Bardakci,Tyrkiet,DEF,0.8864,0.9364,up,medium,1,90,7.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Arda Güler,Tyrkiet,MID,0.88,0.95,up,medium,1,90,7.6,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Baris Alper Yilmaz,Tyrkiet,FWD,0.3583,0.2883,down,medium,1,46,6.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, tidlig udskiftning, svag rating",,TRUE
+Deniz Gül,Tyrkiet,FWD,0.5224,0.5024,watch,low,0,5,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Ferdi Kadioglu,Tyrkiet,DEF,0.918,0.98,up,medium,1,90,7.8,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Hakan Calhanoglu,Tyrkiet,MID,0.4675,0.5375,up,medium,1,90,8.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Ismail Yüksek,Tyrkiet,MID,0.6264,0.6964,up,medium,1,81,7.5,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Kenan Yildiz,Tyrkiet,MID,0.8953,0.9253,watch,low,0,44,7.4,0,0,1,FALSE,"St?rk indskifter-performance i runde 1; watch-signal, men ikke automatisk starterl?ft.",impact_sub_not_auto_start,TRUE
+Kerem Akturkoglu,Tyrkiet,MID,0.6674,0.6574,hold,low,1,85,6.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Merih Demiral,Tyrkiet,DEF,0.4349,0.4649,watch,low,1,90,6.5,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Mert Müldür,Tyrkiet,DEF,0.3893,0.3693,watch,low,0,9,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Salih Özcan,Tyrkiet,MID,0.316,0.296,watch,low,0,9,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Ugurcan Cakir,Tyrkiet,GK,0.9123,0.9023,hold,low,1,90,5.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Yunus Akgün,Tyrkiet,FWD,0.3302,0.3102,watch,low,0,28,6.5,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Zeki Celik,Tyrkiet,DEF,0.8552,0.8452,hold,low,1,81,6.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Aleksandar Pavlovic,Tyskland,MID,0.68,0.75,up,medium,1,90,7.8,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Antonio Rüdiger,Tyskland,DEF,0.208,0.188,watch,low,0,17,6.2,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+David Raum,Tyskland,DEF,0.1476,0.1276,watch,low,0,17,6.7,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Deniz Undav,Tyskland,FWD,0.2623,0.4,up,medium,0,26,8.9,1,2,1,FALSE,"26 minutters cameo med mål, to assists og 8.9 rating. Meget stærk impact, men ikke nok alene til at kalde ham sikker starter.",impact_sub_not_proven_starter,TRUE
+Felix Nmecha,Tyskland,MID,0.4825,0.5225,up,medium,1,73,8.3,1,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, st?rk rating",,TRUE
+Florian Wirtz,Tyskland,MID,0.94,0.98,up,medium,1,90,7.9,0,1,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Jamal Musiala,Tyskland,MID,0.9,0.94,up,medium,1,64,8.3,1,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, st?rk rating",,TRUE
+Jonathan Tah,Tyskland,DEF,0.8434,0.8834,up,medium,1,73,7.6,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, st?rk rating",,TRUE
+Joshua Kimmich,Tyskland,MID,0.9525,0.98,up,medium,1,83,8.9,0,2,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Kai Havertz,Tyskland,FWD,0.8813,0.9513,up,medium,1,90,8.1,2,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Leon Goretzka,Tyskland,MID,0.1607,0.1407,watch,low,0,17,6.8,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Leroy Sane,Tyskland,FWD,0.3805,0.4105,watch,low,1,90,6.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Manuel Neuer,Tyskland,GK,0.2771,0.3071,watch,low,1,90,6.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Nathaniel Brown,Tyskland,DEF,0.803,0.86,up,high,1,73,8.5,1,1,0,FALSE,Starter med st?rk rating samt m?l/assist-signal; konkret individuelt l?ft underst?ttet af audit.,,TRUE
+Nico Schlotterbeck,Tyskland,DEF,0.831,0.88,hold,medium,1,90,9.3,1,0,0,FALSE,St?rk runde 1 og fortsat sikker profil; markeres som hold st?rkt snarere end aggressivt l?ft.,,TRUE
+Waldemar Anton,Tyskland,DEF,0.0482,0.0282,watch,low,0,7,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Alex Freeman,USA,DEF,0.8986,0.9486,up,medium,1,90,7.4,0,1,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Antonee Robinson,USA,DEF,0.8297,0.8597,watch,low,1,90,6.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Chris Richards,USA,DEF,0.8175,0.8675,up,medium,1,90,7.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Christian Pulisic,USA,FWD,0.8318,0.84,watch,high,1,46,8.1,0,1,0,FALSE,"Udskiftet i pausen med skade-/statususikkerhed; skal ikke auto-ned, men markeres tydeligt som watch.",injury_flag,TRUE
+Folarin Balogun,USA,FWD,0.4033,0.82,watch,high,1,72,9.0,2,0,0,FALSE,"St?rk performance, men skadeflag g?r at han fortsat er watch og ikke auto-l?ftes endnu.",injury_flag,TRUE
+Giovanni Reyna,USA,MID,0.3506,0.3806,watch,low,0,8,,1,0,1,FALSE,"St?rk indskifter-performance i runde 1; watch-signal, men ikke automatisk starterl?ft.",impact_sub_not_auto_start,TRUE
+Malik Tillman,USA,MID,0.5807,0.6507,up,medium,1,82,7.6,0,1,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Matt Freese,USA,GK,0.7629,0.7529,hold,low,1,90,6.2,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Ricardo Pepi,USA,FWD,0.288,0.24,watch,medium,0,18,6.7,0,0,1,FALSE,Balogun/Pepi-rollen b?r kun flyttes med mere klar holdnyt; behold watch.,role_competition_watch,TRUE
+Sebastian Berhalter,USA,MID,0.6178,0.5978,watch,low,0,44,6.9,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Sergino Dest,USA,DEF,0.8263,0.8463,watch,low,1,72,7.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, god rating",,TRUE
+Tim Ream,USA,DEF,0.5896,0.6596,up,medium,1,90,8.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Timothy Weah,USA,FWD,0.402,0.382,watch,low,0,18,6.4,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Tyler Adams,USA,MID,0.8123,0.8423,watch,low,1,90,6.7,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Weston McKennie,USA,MID,0.6257,0.6957,up,medium,1,90,7.5,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Agustin Canobbio,Uruguay,MID,0.4775,0.4575,watch,low,0,44,6.5,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Darwin Nunez,Uruguay,FWD,0.88,0.81,down,medium,1,46,6.3,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, tidlig udskiftning, svag rating",,TRUE
+Federico Valverde,Uruguay,MID,0.8894,0.9194,watch,low,1,90,6.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Federico Vinas,Uruguay,FWD,0.5403,0.5703,watch,low,1,90,6.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Fernando Muslera,Uruguay,GK,0.3731,0.3631,hold,low,1,90,5.7,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, svag rating",,TRUE
+Guillermo Varela,Uruguay,DEF,0.5293,0.5593,watch,low,1,90,6.8,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Juan Manuel Sanabria,Uruguay,MID,0.0993,0.0793,watch,low,0,44,7.1,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Manuel Ugarte,Uruguay,MID,0.852,0.812,down,medium,1,72,6.1,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, svag rating",,TRUE
+Mathias Olivera,Uruguay,DEF,0.8746,0.9446,up,medium,1,90,8.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, st?rk rating",,TRUE
+Matias Viña,Uruguay,DEF,0.3723,0.3423,watch,low,1,46,6.5,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, tidlig udskiftning",,TRUE
+Maxi Araujo,Uruguay,MID,0.9087,0.9587,up,medium,1,81,7.4,1,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Nicolas de la Cruz,Uruguay,MID,0.1385,0.1185,watch,low,0,18,7.0,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Rodrigo Aguirre,Uruguay,FWD,0.5997,0.5797,watch,low,0,0,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Rodrigo Bentancur,Uruguay,MID,0.8642,0.8942,watch,low,1,90,6.7,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Sebastian Caceres,Uruguay,DEF,0.346,0.376,watch,low,1,90,6.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Alexander Schlager,Østrig,GK,0.9,0.95,up,medium,1,90,7.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Carney Chukwuemeka,Østrig,MID,0.047,0.027,watch,low,0,31,6.3,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+David Alaba,Østrig,DEF,0.4441,0.4141,watch,low,1,59,6.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, tidlig udskiftning",,TRUE
+Kevin Danso,Østrig,DEF,0.3346,0.3146,watch,low,0,31,6.8,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Konrad Laimer,Østrig,MID,0.86,0.82,watch,medium,1,90,5.9,0,0,0,FALSE,90 minutter men lav 5.9 rating; Bold+-note om fleksibel rolle kan åbne for Mwene uden at Laimer nødvendigvis mister pladsen.,role_flexibility,TRUE
+Marcel Sabitzer,Østrig,MID,0.9019,0.9319,watch,low,1,90,6.9,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Marko Arnautovic,Østrig,FWD,0.82,0.88,up,medium,0,44,7.4,1,0,1,FALSE,"44 minutters impact fra bænken, mål og 7.4 rating; styrker hans sag mod Kalajdzic i Østrigs angreb.",,TRUE
+Nicolas Seiwald,Østrig,MID,0.7343,0.7843,up,medium,1,90,7.2,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Patrick Wimmer,Østrig,MID,0.5787,0.5587,watch,low,0,7,,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Paul Wanner,Østrig,MID,0.3107,0.2907,watch,low,0,31,6.4,0,0,1,FALSE,"Flashscore-baseret runde 1-signal: indskifter, ingen st?rk indskiftereffekt",,TRUE
+Philipp Lienhart,Østrig,DEF,0.84,0.89,up,medium,1,90,7.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Phillipp Mwene,Østrig,DEF,0.76,0.78,watch,medium,1,59,6.7,0,0,0,FALSE,"Bold+-note siger Laimer kan åbne for Mwene. Ingen stærk performance-case alene, men klar audit-kandidat.",role_flexibility,TRUE
+Romano Schmid,Østrig,MID,0.6361,0.6861,up,medium,1,83,7.2,1,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter, god rating",,TRUE
+Sasa Kalajdzic,Østrig,FWD,0.0641,0.0541,hold,low,1,46,7.0,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, tidlig udskiftning, god rating",,TRUE
+Stefan Posch,Østrig,DEF,0.84,0.87,watch,low,1,90,6.4,0,0,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, 75+ minutter",,TRUE
+Xaver Schlager,Østrig,MID,0.6421,0.6521,hold,low,1,59,8.1,0,1,0,FALSE,"Flashscore-baseret runde 1-signal: runde1_start, tidlig udskiftning, st?rk rating",,TRUE
