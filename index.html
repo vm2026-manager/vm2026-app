@@ -4236,6 +4236,19 @@ setTimeout(removeDataStatusBox, 250);
       ].filter(Boolean).join(" "));
     }
 
+    function tokenizeSearchText(value) {
+      const normalized = normalizeSearchText(value);
+      return normalized ? normalized.split(/\s+/).filter(Boolean) : [];
+    }
+
+    function playerMatchesSearch(player, query) {
+      const tokens = tokenizeSearchText(query);
+      if (!tokens.length) return true;
+
+      const haystack = playerSearchText(player);
+      return tokens.every(token => haystack.includes(token));
+    }
+
     function activeStrategyEntry() {
       return strategySquads?.[activeStrategyKey] || null;
     }
@@ -7896,9 +7909,7 @@ function renderTradeList() {
         : "";
 
       if (search) {
-        players = players.filter(player =>
-          playerSearchText(player).includes(search)
-        );
+        players = players.filter(player => playerMatchesSearch(player, search));
       }
 
       if (team) {
