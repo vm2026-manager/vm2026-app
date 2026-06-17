@@ -8666,14 +8666,14 @@ formationSelect.value = currentFormation;
       manualBankInput.addEventListener("input", () => {
         manualBankMillions = parseManualBankMillions(manualBankInput.value);
         saveState();
-        renderBudget();
+        refreshTradeListAfterBudgetChange();
         scheduleAutosave();
       });
 
       manualBankInput.addEventListener("change", () => {
         setManualBankMillions(manualBankInput.value);
         saveState();
-        renderBudget();
+        refreshTradeListAfterBudgetChange();
         void queueAutosave();
       });
 
@@ -8682,7 +8682,7 @@ formationSelect.value = currentFormation;
         event.preventDefault();
         setManualBankMillions(manualBankInput.value);
         saveState();
-        renderBudget();
+        refreshTradeListAfterBudgetChange();
         void queueAutosave();
         manualBankInput.blur();
       });
@@ -8736,6 +8736,11 @@ formationSelect.value = currentFormation;
 
       saveState();
       render();
+    }
+
+    function refreshTradeListAfterBudgetChange() {
+      renderBudget();
+      renderTradeList();
     }
 
     async function initAuth() {
