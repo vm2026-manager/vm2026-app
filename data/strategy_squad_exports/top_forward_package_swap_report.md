@@ -76,7 +76,7 @@ Rapporten ændrer ikke data. Den viser kun, hvilke angribere der går igen i de 
 |---|---:|---:|---:|
 | Cristiano Ronaldo | 7,0 mio. | 92% | 51,405 |
 | Jonathan David | 4,5 mio. | 92% | 46,512 |
-| Raul Jimenez | 4,5 mio. | 79% | 42,598 |
+| Raul Jimenez | 4,5 mio. | 86% | 42,598 |
 
 **4-4-2** — budget 50,0 mio.
 
@@ -112,7 +112,7 @@ Rapporten ændrer ikke data. Den viser kun, hvilke angribere der går igen i de 
 |---|---:|---:|---:|
 | Cristiano Ronaldo | 7,0 mio. | 92% | 21,12 |
 | Jonathan David | 4,5 mio. | 92% | 15,049 |
-| Raul Jimenez | 4,5 mio. | 79% | 14,783 |
+| Raul Jimenez | 4,5 mio. | 86% | 14,783 |
 
 **3-5-2** — budget 50,0 mio.
 
@@ -127,7 +127,7 @@ Rapporten ændrer ikke data. Den viser kun, hvilke angribere der går igen i de 
 |---|---:|---:|---:|
 | Vinicius Junior | 7,5 mio. | 92% | 21,691 |
 | Jonathan David | 4,5 mio. | 92% | 15,049 |
-| Raul Jimenez | 4,5 mio. | 79% | 14,783 |
+| Raul Jimenez | 4,5 mio. | 86% | 14,783 |
 
 **4-4-2** — budget 50,0 mio.
 

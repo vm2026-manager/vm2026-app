@@ -8,40 +8,40 @@
 
 ## Før/efter
 
-- `optimizer_ev` forskel > 0.001: 908 -> 0
-- `optimizer_ev` forskel > 0.10: 513 -> 0
+- `optimizer_ev` forskel > 0.001: 895 -> 0
+- `optimizer_ev` forskel > 0.10: 777 -> 0
 - Dublerede player_id i pool: 0
 - Dublerede player_id i EV: 0
 - Pool-rækker uden exact EV-match: 0
 - EV-rækker uden exact pool-match: 0
-- Backup: `data\player_pool_v1.backup_before_final_ev_sync_20260609_220205.json`
+- Backup: `data\player_pool_v1.backup_before_final_ev_sync_20260617_213348.json`
 
 ## Feltmismatches
 
 | Felt | Før | Efter |
 | --- | ---: | ---: |
-| optimizer_ev | 916 | 0 |
-| weighted_group_stage_ev | 916 | 0 |
-| weighted_group_stage_ev_before_price_quality | 2 | 0 |
-| price_quality_ev | 1 | 0 |
-| model_ev_before_price_quality | 4 | 0 |
-| optimizer_ev_before_price_quality | 2 | 0 |
-| price_quality_raw_ev | 3 | 0 |
-| price_quality_appearance_scaled_ev | 4 | 0 |
-| price_quality_base_capped_ev | 3 | 0 |
+| optimizer_ev | 898 | 0 |
+| weighted_group_stage_ev | 898 | 0 |
+| weighted_group_stage_ev_before_price_quality | 0 | 0 |
+| price_quality_ev | 0 | 0 |
+| model_ev_before_price_quality | 1 | 0 |
+| optimizer_ev_before_price_quality | 0 | 0 |
+| price_quality_raw_ev | 1 | 0 |
+| price_quality_appearance_scaled_ev | 0 | 0 |
+| price_quality_base_capped_ev | 0 | 0 |
 | price_quality_weight | 0 | 0 |
 | price_quality_spread_multiplier | 0 | 0 |
-| price_quality_applied | 1 | 0 |
-| price_quality_method | 2 | 0 |
-| base_ev_source | 4 | 0 |
+| price_quality_applied | 0 | 0 |
+| price_quality_method | 0 | 0 |
+| base_ev_source | 1 | 0 |
 
 ## Sanity
 
 | Spiller | Hold | Pool før | EV | Pool efter | Status |
 | --- | --- | ---: | ---: | ---: | --- |
-| Jules Kounde | FRA | 2.94753 | 3.593876 | 3.593876 | updated |
-| Leo Pereira | BRA | 1.928714 | 2.374221 | 2.374221 | updated |
-| Unai Simon | ESP | 4.576512 | 5.884328 | 5.884328 | updated |
-| Joan Garcia | ESP | 1.1523378712871288 | 0.361513 | 0.361513 | updated |
+| Jules Kounde | FRA | 3.593876 | 13.159026 | 13.159026 | updated |
+| Leo Pereira | BRA | 2.374221 | 8.478553 | 8.478553 | updated |
+| Unai Simon | ESP | 5.884328 | 26.557254 | 26.557254 | updated |
+| Joan Garcia | ESP | 0.361513 | 1.170035 | 1.170035 | updated |
 | Patrick Agyemang | USA | 0.0 | 0.0 | 0.0 | already_equal |
-| Noni Madueke | ENG | 1.879299 | 2.297708 | 2.297708 | updated |
+| Noni Madueke | ENG | 2.297708 | 5.842315 | 5.842315 | updated |
