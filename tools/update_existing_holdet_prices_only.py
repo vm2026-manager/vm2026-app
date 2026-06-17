@@ -1,17 +1,27 @@
 from __future__ import annotations
 
+import argparse
 import csv
 import json
+import sys
 from datetime import datetime
 from pathlib import Path
 from typing import Any
 
-
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = PROJECT_ROOT / "data"
+TOOLS_DIR = Path(__file__).resolve().parent
+
+if str(TOOLS_DIR) not in sys.path:
+    sys.path.insert(0, str(TOOLS_DIR))
+
+from holdet_players_api import fetch_holdet_players, flatten_holdet_payload
 
 POOL_PATH = DATA_DIR / "player_pool_v1.json"
 HOLDET_PATH = DATA_DIR / "holdet_players_game_616_flat.csv"
+RAW_PATH = DATA_DIR / "holdet_players_game_616_raw.json"
+FLAT_JSON_PATH = DATA_DIR / "holdet_players_game_616_flat.json"
+DEFAULT_GAME_ID = 616
 
 
 def txt(value: Any) -> str:
@@ -32,7 +42,30 @@ def is_active_player(player: dict[str, Any]) -> bool:
     return not bool(player.get("holdet_is_out"))
 
 
+def refresh_holdet_files(game_id: int) -> None:
+    payload = fetch_holdet_players(game_id)
+    df = flatten_holdet_payload(payload)
+
+    RAW_PATH.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    df.to_csv(HOLDET_PATH, index=False, encoding="utf-8-sig")
+    FLAT_JSON_PATH.write_text(
+        df.to_json(orient="records", force_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+
+
 def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--game-id", type=int, default=DEFAULT_GAME_ID)
+    parser.add_argument("--no-refresh", action="store_true")
+    args = parser.parse_args()
+
+    if not args.no_refresh:
+        refresh_holdet_files(args.game_id)
+
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     backup_path = DATA_DIR / f"player_pool_v1.backup_before_existing_price_update_{timestamp}.json"
     audit_path = DATA_DIR / f"existing_player_price_update_audit_{timestamp}.json"
@@ -236,6 +269,9 @@ def main() -> int:
     print("Backup:", backup_path)
     print("Audit:", audit_path)
     print("Changes CSV:", changes_csv_path)
+    print("Raw JSON:", RAW_PATH)
+    print("Flat CSV:", HOLDET_PATH)
+    print("Flat JSON:", FLAT_JSON_PATH)
     print("Holdet rows:", len(holdet_rows))
     print("Player pool rows:", len(pool))
     print("Safe matches:", matched_players)
