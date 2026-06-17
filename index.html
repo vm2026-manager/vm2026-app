@@ -4818,6 +4818,18 @@ function saveState() {
       return JSON.parse(JSON.stringify(Array.isArray(value) ? value : []));
     }
 
+    function hasSquadPlayers(squadState) {
+      return !!(
+        squadState &&
+        typeof squadState === "object" &&
+        Object.values(squadState).some(Boolean)
+      );
+    }
+
+    function hasTransferBaselinePlayers() {
+      return hasSquadPlayers(transferBaselineSquad);
+    }
+
     function saveTransferBaselineState() {
       if (transferBaselineSquad && typeof transferBaselineSquad === "object") {
         localStorage.setItem(STORAGE_KEYS.transferBaselineSquad, JSON.stringify(transferBaselineSquad));
@@ -4844,17 +4856,36 @@ function saveState() {
       saveTransferBaselineState();
     }
 
+    function applyLoadedTransferBaselineState(nextBaselineSquad, nextBaselinePurchasePrices) {
+      if (hasSquadPlayers(nextBaselineSquad)) {
+        setTransferBaselineState(nextBaselineSquad, nextBaselinePurchasePrices || {});
+        return true;
+      }
+
+      transferBaselineSquad = null;
+      transferBaselinePurchasePrices = null;
+      saveTransferBaselineState();
+      return false;
+    }
+
     function setLoadedSquadAsTransferBaseline(nextSquad = squad, nextPurchasePrices = squadPurchasePrices) {
-      const loadedMarketPrices = buildCurrentMarketPurchasePriceMapForSquad(nextSquad);
-      squadPurchasePrices = cloneSquadState(loadedMarketPrices);
-      localStorage.setItem(STORAGE_KEYS.squadPurchasePrices, JSON.stringify(squadPurchasePrices || {}));
-      setTransferBaselineState(nextSquad, loadedMarketPrices);
+      setTransferBaselineState(nextSquad, nextPurchasePrices);
       transferChanges = [];
       localStorage.setItem(STORAGE_KEYS.transferChanges, JSON.stringify([]));
     }
 
+    function syncTransferStateAfterLoadedSquad(nextSquad = squad, nextPurchasePrices = squadPurchasePrices) {
+      if (!hasTransferBaselinePlayers()) {
+        setLoadedSquadAsTransferBaseline(nextSquad, nextPurchasePrices);
+        return;
+      }
+
+      transferChanges = synchronizeTransferChanges();
+      localStorage.setItem(STORAGE_KEYS.transferChanges, JSON.stringify(transferChanges || []));
+    }
+
     function ensureTransferBaselineState() {
-      if (transferBaselineSquad && typeof transferBaselineSquad === "object") return;
+      if (hasTransferBaselinePlayers()) return;
       setTransferBaselineState(squad, squadPurchasePrices);
     }
 
@@ -5062,12 +5093,18 @@ function saveState() {
 
       const {
         squad: nextSquad,
-        purchasePrices: nextPurchasePrices
+        purchasePrices: nextPurchasePrices,
+        transferChanges: nextTransferChanges,
+        transferBaselineSquad: nextTransferBaselineSquad,
+        transferBaselinePurchasePrices: nextTransferBaselinePurchasePrices
       } = pendingRemoteSquadState;
 
+      transferChanges = cloneTransferChanges(nextTransferChanges);
+      localStorage.setItem(STORAGE_KEYS.transferChanges, JSON.stringify(transferChanges || []));
+      applyLoadedTransferBaselineState(nextTransferBaselineSquad, nextTransferBaselinePurchasePrices);
       applySquadState(nextSquad, nextPurchasePrices, { preferStartPriceForNew: true });
       ensureSquadPurchasePrices({ preferStartPriceForNew: true });
-      setLoadedSquadAsTransferBaseline(squad, squadPurchasePrices);
+      syncTransferStateAfterLoadedSquad(squad, squadPurchasePrices);
       pendingRemoteSquadState = null;
       return true;
     }
@@ -7132,6 +7169,10 @@ function getPlayerScore(player) {
     }
 
     function buildTransferChangeRows() {
+      if (!hasTransferBaselinePlayers()) {
+        return [];
+      }
+
       const baselineSquad = transferBaselineSquad && typeof transferBaselineSquad === "object" ? transferBaselineSquad : {};
       const baselinePrices = transferBaselinePurchasePrices && typeof transferBaselinePurchasePrices === "object" ? transferBaselinePurchasePrices : {};
 
@@ -8283,6 +8324,8 @@ function renderTradeList() {
           squad,
           purchase_prices: squadPurchasePrices,
           transfer_changes: synchronizeTransferChanges(),
+          transfer_baseline_squad: transferBaselineSquad,
+          transfer_baseline_purchase_prices: transferBaselinePurchasePrices,
           favorite_player_ids: Array.from(favoritePlayerIds),
           manual_bank_millions: manualBankMillions
         }
@@ -8347,7 +8390,7 @@ function renderTradeList() {
       }
 
       if (!data) {
-        setLoadedSquadAsTransferBaseline(squad, squadPurchasePrices);
+        syncTransferStateAfterLoadedSquad(squad, squadPurchasePrices);
         await upsertAutosaveSquad();
         return;
       }
@@ -8361,6 +8404,8 @@ function renderTradeList() {
       const hasSavedStateEnvelope = Object.prototype.hasOwnProperty.call(savedState, "squad")
         || Object.prototype.hasOwnProperty.call(savedState, "purchase_prices")
         || Object.prototype.hasOwnProperty.call(savedState, "transfer_changes")
+        || Object.prototype.hasOwnProperty.call(savedState, "transfer_baseline_squad")
+        || Object.prototype.hasOwnProperty.call(savedState, "transfer_baseline_purchase_prices")
         || Object.prototype.hasOwnProperty.call(savedState, "favorite_player_ids")
         || Object.prototype.hasOwnProperty.call(savedState, "manual_bank_millions");
       const nextSquad = hasSavedStateEnvelope && savedState.squad && typeof savedState.squad === "object"
@@ -8369,15 +8414,30 @@ function renderTradeList() {
       const nextPurchasePrices = hasSavedStateEnvelope && savedState.purchase_prices && typeof savedState.purchase_prices === "object"
         ? savedState.purchase_prices
         : {};
+      const nextTransferChanges = hasSavedStateEnvelope && Array.isArray(savedState.transfer_changes)
+        ? cloneTransferChanges(savedState.transfer_changes)
+        : [];
+      const nextTransferBaselineSquad = hasSavedStateEnvelope && savedState.transfer_baseline_squad && typeof savedState.transfer_baseline_squad === "object"
+        ? savedState.transfer_baseline_squad
+        : null;
+      const nextTransferBaselinePurchasePrices = hasSavedStateEnvelope && savedState.transfer_baseline_purchase_prices && typeof savedState.transfer_baseline_purchase_prices === "object"
+        ? savedState.transfer_baseline_purchase_prices
+        : null;
       if (!hasLoadedPlayerData()) {
         pendingRemoteSquadState = {
           squad: cloneSquadState(nextSquad),
-          purchasePrices: cloneSquadState(nextPurchasePrices)
+          purchasePrices: cloneSquadState(nextPurchasePrices),
+          transferChanges: cloneTransferChanges(nextTransferChanges),
+          transferBaselineSquad: cloneSquadState(nextTransferBaselineSquad),
+          transferBaselinePurchasePrices: cloneSquadState(nextTransferBaselinePurchasePrices)
         };
       } else {
+        transferChanges = cloneTransferChanges(nextTransferChanges);
+        localStorage.setItem(STORAGE_KEYS.transferChanges, JSON.stringify(transferChanges || []));
+        applyLoadedTransferBaselineState(nextTransferBaselineSquad, nextTransferBaselinePurchasePrices);
         applySquadState(nextSquad, nextPurchasePrices, { preferStartPriceForNew: true });
         ensureSquadPurchasePrices({ preferStartPriceForNew: true });
-        setLoadedSquadAsTransferBaseline(squad, squadPurchasePrices);
+        syncTransferStateAfterLoadedSquad(squad, squadPurchasePrices);
       }
 
       const remoteFavoriteIds = hasSavedStateEnvelope && Array.isArray(savedState.favorite_player_ids)
