@@ -9119,6 +9119,45 @@ formationSelect.value = currentFormation;
       return String(value || "").toLowerCase();
     }
 
+    function parseOddsSnapshotTime(row) {
+      var rawAt = String((row && (row.odds_fetched_at || row.oddsFetchedAt)) || "").trim();
+      if (rawAt) {
+        var parsedAt = Date.parse(rawAt);
+        if (Number.isFinite(parsedAt)) return parsedAt;
+      }
+
+      var rawLabel = String((row && (row.odds_fetched_label || row.oddsFetchedLabel)) || "").trim();
+      var match = rawLabel.match(/^(\d{2})\.(\d{2})\s+kl\.\s*(\d{2}):(\d{2})$/i);
+      if (match) {
+        var year = 2026;
+        var month = Number(match[2]) - 1;
+        var day = Number(match[1]);
+        var hour = Number(match[3]);
+        var minute = Number(match[4]);
+        var parsedLabel = new Date(year, month, day, hour, minute).getTime();
+        if (Number.isFinite(parsedLabel)) return parsedLabel;
+      }
+
+      return 0;
+    }
+
+    function selectPreferredOddsRow(rowsForMatch) {
+      if (!Array.isArray(rowsForMatch) || !rowsForMatch.length) return null;
+      return rowsForMatch.slice().sort(function (a, b) {
+        var aSource = String((a && a.source) || "").toLowerCase();
+        var bSource = String((b && b.source) || "").toLowerCase();
+        var aIsUnibet = aSource === "unibet" ? 1 : 0;
+        var bIsUnibet = bSource === "unibet" ? 1 : 0;
+        if (aIsUnibet !== bIsUnibet) return bIsUnibet - aIsUnibet;
+
+        var aTime = parseOddsSnapshotTime(a);
+        var bTime = parseOddsSnapshotTime(b);
+        if (aTime !== bTime) return bTime - aTime;
+
+        return 0;
+      })[0] || null;
+    }
+
     function getSquadPlayers() {
       if (typeof squad === "undefined" || !squad) return [];
       return Object.values(squad)
@@ -9130,9 +9169,9 @@ formationSelect.value = currentFormation;
       if (oddsByTeamPair) return oddsByTeamPair;
 
       if (!oddsPromise) {
-        oddsPromise = fetch("data/match_odds.csv", { cache: "no-store" })
+        oddsPromise = fetch(MATCH_ODDS_PROBS_URL, { cache: "no-store" })
           .then(function (res) {
-            if (!res.ok) throw new Error("match_odds.csv " + res.status);
+            if (!res.ok) throw new Error("match_odds_probs.csv " + res.status);
             return res.text();
           })
           .then(parseCsv)
@@ -9156,9 +9195,7 @@ formationSelect.value = currentFormation;
 
       Object.keys(grouped).forEach(function (id) {
         var rowsForMatch = grouped[id];
-        var selected = rowsForMatch.find(function (r) {
-          return String(r.source || "").toLowerCase() === "unibet";
-        }) || rowsForMatch[0];
+        var selected = selectPreferredOddsRow(rowsForMatch) || rowsForMatch[0];
 
         var home = String(selected.home || "").toUpperCase();
         var away = String(selected.away || "").toUpperCase();
