@@ -1,0 +1,791 @@
+{
+  "holdet_rows": 1530,
+  "player_pool_rows": 1522,
+  "safe_matches": 1522,
+  "price_changes": 104,
+  "duplicate_holdet_player_ids": [],
+  "duplicate_holdet_person_ids": [],
+  "largest_price_increases": [
+    {
+      "player_id": "michal_sadilek__cze",
+      "holdet_player_id": "49558",
+      "player_name": "Michal Sadilek",
+      "team_name": "Tjekkiet",
+      "position": "MID",
+      "match_method": "holdet_player_id",
+      "old_price": 2503000,
+      "old_holdet_price": 2503000,
+      "new_price": 2675000,
+      "diff": 172000
+    },
+    {
+      "player_id": "teboho_mokoena__rsa",
+      "holdet_player_id": "49880",
+      "player_name": "Teboho Mokoena",
+      "team_name": "Sydafrika",
+      "position": "MID",
+      "match_method": "holdet_player_id",
+      "old_price": 3463000,
+      "old_holdet_price": 3463000,
+      "new_price": 3627000,
+      "diff": 164000
+    },
+    {
+      "player_id": "alexandr_sojka__cze",
+      "holdet_player_id": "50290",
+      "player_name": "Alexandr Sojka",
+      "team_name": "Tjekkiet",
+      "position": "MID",
+      "match_method": "holdet_player_id",
+      "old_price": 1993000,
+      "old_holdet_price": 1993000,
+      "new_price": 2075000,
+      "diff": 82000
+    },
+    {
+      "player_id": "evidence_makgopa__rsa",
+      "holdet_player_id": "49083",
+      "player_name": "Evidence Makgopa",
+      "team_name": "Sydafrika",
+      "position": "FWD",
+      "match_method": "holdet_player_id",
+      "old_price": 2499000,
+      "old_holdet_price": 2499000,
+      "new_price": 2541000,
+      "diff": 42000
+    },
+    {
+      "player_id": "lukas_cerv__cze",
+      "holdet_player_id": "49468",
+      "player_name": "Lukas Cerv",
+      "team_name": "Tjekkiet",
+      "position": "MID",
+      "match_method": "holdet_player_id",
+      "old_price": 2995000,
+      "old_holdet_price": 2995000,
+      "new_price": 3027000,
+      "diff": 32000
+    },
+    {
+      "player_id": "relebohile_mofokeng__rsa",
+      "holdet_player_id": "49762",
+      "player_name": "Relebohile Mofokeng",
+      "team_name": "Sydafrika",
+      "position": "FWD",
+      "match_method": "holdet_player_id",
+      "old_price": 2495000,
+      "old_holdet_price": 2495000,
+      "new_price": 2527000,
+      "diff": 32000
+    },
+    {
+      "player_id": "matej_kovar__cze",
+      "holdet_player_id": "49523",
+      "player_name": "Matej Kovar",
+      "team_name": "Tjekkiet",
+      "position": "GK",
+      "match_method": "holdet_player_id",
+      "old_price": 3018000,
+      "old_holdet_price": 3018000,
+      "new_price": 3047000,
+      "diff": 29000
+    },
+    {
+      "player_id": "ladislav_krejci__cze",
+      "holdet_player_id": "49419",
+      "player_name": "Ladislav Krejci",
+      "team_name": "Tjekkiet",
+      "position": "DEF",
+      "match_method": "holdet_player_id",
+      "old_price": 3168000,
+      "old_holdet_price": 3168000,
+      "new_price": 3195000,
+      "diff": 27000
+    },
+    {
+      "player_id": "ronwen_williams__rsa",
+      "holdet_player_id": "49794",
+      "player_name": "Ronwen Williams",
+      "team_name": "Sydafrika",
+      "position": "GK",
+      "match_method": "holdet_player_id",
+      "old_price": 2993000,
+      "old_holdet_price": 2993000,
+      "new_price": 3017000,
+      "diff": 24000
+    },
+    {
+      "player_id": "patrik_schick__cze",
+      "holdet_player_id": "49719",
+      "player_name": "Patrik Schick",
+      "team_name": "Tjekkiet",
+      "position": "FWD",
+      "match_method": "holdet_player_id",
+      "old_price": 4509000,
+      "old_holdet_price": 4509000,
+      "new_price": 4533000,
+      "diff": 24000
+    },
+    {
+      "player_id": "vladimir_darida__cze",
+      "holdet_player_id": "49934",
+      "player_name": "Vladimir Darida",
+      "team_name": "Tjekkiet",
+      "position": "MID",
+      "match_method": "holdet_player_id",
+      "old_price": 1995000,
+      "old_holdet_price": 1995000,
+      "new_price": 2017000,
+      "diff": 22000
+    },
+    {
+      "player_id": "adam_hlozek__cze",
+      "holdet_player_id": "50289",
+      "player_name": "Adam Hlozek",
+      "team_name": "Tjekkiet",
+      "position": "FWD",
+      "match_method": "holdet_player_id",
+      "old_price": 2493000,
+      "old_holdet_price": 2493000,
+      "new_price": 2515000,
+      "diff": 22000
+    },
+    {
+      "player_id": "amar_memi__bih",
+      "holdet_player_id": "48817",
+      "player_name": "Amar Memic",
+      "team_name": "Bosnien-Hercegovina",
+      "position": "MID",
+      "match_method": "holdet_player_id",
+      "old_price": 3022000,
+      "old_holdet_price": 3022000,
+      "new_price": 3039000,
+      "diff": 17000
+    },
+    {
+      "player_id": "dan_ndoye__sui",
+      "holdet_player_id": "48978",
+      "player_name": "Dan Ndoye",
+      "team_name": "Schweiz",
+      "position": "FWD",
+      "match_method": "holdet_player_id",
+      "old_price": 4042000,
+      "old_holdet_price": 4042000,
+      "new_price": 4059000,
+      "diff": 17000
+    },
+    {
+      "player_id": "robin_hranac__cze",
+      "holdet_player_id": "49780",
+      "player_name": "Robin Hranac",
+      "team_name": "Tjekkiet",
+      "position": "DEF",
+      "match_method": "holdet_player_id",
+      "old_price": 2493000,
+      "old_holdet_price": 2493000,
+      "new_price": 2507000,
+      "diff": 14000
+    },
+    {
+      "player_id": "tomas_holes__cze",
+      "holdet_player_id": "49902",
+      "player_name": "Tomas Holes",
+      "team_name": "Tjekkiet",
+      "position": "DEF",
+      "match_method": "holdet_player_id",
+      "old_price": 1995000,
+      "old_holdet_price": 1995000,
+      "new_price": 2009000,
+      "diff": 14000
+    },
+    {
+      "player_id": "vladimir_coufal__cze",
+      "holdet_player_id": "49933",
+      "player_name": "Vladimir Coufal",
+      "team_name": "Tjekkiet",
+      "position": "DEF",
+      "match_method": "holdet_player_id",
+      "old_price": 3053000,
+      "old_holdet_price": 3053000,
+      "new_price": 3067000,
+      "diff": 14000
+    },
+    {
+      "player_id": "khuliso_mudau__rsa",
+      "holdet_player_id": "49399",
+      "player_name": "Khuliso Mudau",
+      "team_name": "Sydafrika",
+      "position": "DEF",
+      "match_method": "holdet_player_id",
+      "old_price": 2983000,
+      "old_holdet_price": 2983000,
+      "new_price": 2997000,
+      "diff": 14000
+    },
+    {
+      "player_id": "mbekezeli_mbokazi__rsa",
+      "holdet_player_id": "49543",
+      "player_name": "Mbekezeli Mbokazi",
+      "team_name": "Sydafrika",
+      "position": "DEF",
+      "match_method": "holdet_player_id",
+      "old_price": 2493000,
+      "old_holdet_price": 2493000,
+      "new_price": 2507000,
+      "diff": 14000
+    },
+    {
+      "player_id": "aubrey_modiba__rsa",
+      "holdet_player_id": "48867",
+      "player_name": "Aubrey Modiba",
+      "team_name": "Sydafrika",
+      "position": "DEF",
+      "match_method": "holdet_player_id",
+      "old_price": 2993000,
+      "old_holdet_price": 2993000,
+      "new_price": 3007000,
+      "diff": 14000
+    }
+  ],
+  "largest_price_decreases": [
+    {
+      "player_id": "thalente_mbatha__rsa",
+      "holdet_player_id": "49884",
+      "player_name": "Thalente Mbatha",
+      "team_name": "Sydafrika",
+      "position": "MID",
+      "match_method": "holdet_player_id",
+      "old_price": 2991000,
+      "old_holdet_price": 2991000,
+      "new_price": 2985000,
+      "diff": -6000
+    },
+    {
+      "player_id": "eray_c_mert__sui",
+      "holdet_player_id": "49071",
+      "player_name": "Eray Cömert",
+      "team_name": "Schweiz",
+      "position": "DEF",
+      "match_method": "holdet_player_id",
+      "old_price": 1995000,
+      "old_holdet_price": 1995000,
+      "new_price": 1990000,
+      "diff": -5000
+    },
+    {
+      "player_id": "aurele_amenda__sui",
+      "holdet_player_id": "48868",
+      "player_name": "Aurele Amenda",
+      "team_name": "Schweiz",
+      "position": "DEF",
+      "match_method": "holdet_player_id",
+      "old_price": 2495000,
+      "old_holdet_price": 2495000,
+      "new_price": 2490000,
+      "diff": -5000
+    },
+    {
+      "player_id": "luca_jaquez__sui",
+      "holdet_player_id": "49450",
+      "player_name": "Luca Jaquez",
+      "team_name": "Schweiz",
+      "position": "DEF",
+      "match_method": "holdet_player_id",
+      "old_price": 1995000,
+      "old_holdet_price": 1995000,
+      "new_price": 1990000,
+      "diff": -5000
+    },
+    {
+      "player_id": "miro_muheim__sui",
+      "holdet_player_id": "49569",
+      "player_name": "Miro Muheim",
+      "team_name": "Schweiz",
+      "position": "DEF",
+      "match_method": "holdet_player_id",
+      "old_price": 2504000,
+      "old_holdet_price": 2504000,
+      "new_price": 2499000,
+      "diff": -5000
+    },
+    {
+      "player_id": "stepan_chaloupek__cze",
+      "holdet_player_id": "49863",
+      "player_name": "Stepan Chaloupek",
+      "team_name": "Tjekkiet",
+      "position": "DEF",
+      "match_method": "holdet_player_id",
+      "old_price": 1993000,
+      "old_holdet_price": 1993000,
+      "new_price": 1988000,
+      "diff": -5000
+    },
+    {
+      "player_id": "david_jurasek__cze",
+      "holdet_player_id": "48993",
+      "player_name": "David Jurasek",
+      "team_name": "Tjekkiet",
+      "position": "DEF",
+      "match_method": "holdet_player_id",
+      "old_price": 1995000,
+      "old_holdet_price": 1995000,
+      "new_price": 1990000,
+      "diff": -5000
+    },
+    {
+      "player_id": "samukele_kabini__rsa",
+      "holdet_player_id": "49821",
+      "player_name": "Samukele Kabini",
+      "team_name": "Sydafrika",
+      "position": "DEF",
+      "match_method": "holdet_player_id",
+      "old_price": 1995000,
+      "old_holdet_price": 1995000,
+      "new_price": 1990000,
+      "diff": -5000
+    },
+    {
+      "player_id": "nkosinathi_sibisi__rsa",
+      "holdet_player_id": "49662",
+      "player_name": "Nkosinathi Sibisi",
+      "team_name": "Sydafrika",
+      "position": "DEF",
+      "match_method": "holdet_player_id",
+      "old_price": 2463000,
+      "old_holdet_price": 2463000,
+      "new_price": 2458000,
+      "diff": -5000
+    },
+    {
+      "player_id": "olwethu_makhanya__rsa",
+      "holdet_player_id": "50280",
+      "player_name": "Olwethu Makhanya",
+      "team_name": "Sydafrika",
+      "position": "DEF",
+      "match_method": "holdet_player_id",
+      "old_price": 1995000,
+      "old_holdet_price": 1995000,
+      "new_price": 1990000,
+      "diff": -5000
+    },
+    {
+      "player_id": "bradley_cross__rsa",
+      "holdet_player_id": "50277",
+      "player_name": "Bradley Cross",
+      "team_name": "Sydafrika",
+      "position": "DEF",
+      "match_method": "holdet_player_id",
+      "old_price": 1995000,
+      "old_holdet_price": 1995000,
+      "new_price": 1990000,
+      "diff": -5000
+    },
+    {
+      "player_id": "khulumani_ndamane__rsa",
+      "holdet_player_id": "49400",
+      "player_name": "Khulumani Ndamane",
+      "team_name": "Sydafrika",
+      "position": "DEF",
+      "match_method": "holdet_player_id",
+      "old_price": 1995000,
+      "old_holdet_price": 1995000,
+      "new_price": 1990000,
+      "diff": -5000
+    },
+    {
+      "player_id": "thabang_matuludi__rsa",
+      "holdet_player_id": "49883",
+      "player_name": "Thabang Matuludi",
+      "team_name": "Sydafrika",
+      "position": "DEF",
+      "match_method": "holdet_player_id",
+      "old_price": 1995000,
+      "old_holdet_price": 1995000,
+      "new_price": 1990000,
+      "diff": -5000
+    },
+    {
+      "player_id": "nihad_mujaki__bih",
+      "holdet_player_id": "49653",
+      "player_name": "Nihad Mujakic",
+      "team_name": "Bosnien-Hercegovina",
+      "position": "DEF",
+      "match_method": "holdet_player_id",
+      "old_price": 2495000,
+      "old_holdet_price": 2495000,
+      "new_price": 2490000,
+      "diff": -5000
+    },
+    {
+      "player_id": "nidal_celik__bih",
+      "holdet_player_id": "49652",
+      "player_name": "Nidal Celik",
+      "team_name": "Bosnien-Hercegovina",
+      "position": "DEF",
+      "match_method": "holdet_player_id",
+      "old_price": 1995000,
+      "old_holdet_price": 1995000,
+      "new_price": 1990000,
+      "diff": -5000
+    },
+    {
+      "player_id": "dennis_hadzikadunic__bih",
+      "holdet_player_id": "49011",
+      "player_name": "Dennis Hadzikadunic",
+      "team_name": "Bosnien-Hercegovina",
+      "position": "DEF",
+      "match_method": "holdet_player_id",
+      "old_price": 2495000,
+      "old_holdet_price": 2495000,
+      "new_price": 2490000,
+      "diff": -5000
+    },
+    {
+      "player_id": "stjepan_radeljic__bih",
+      "holdet_player_id": "49865",
+      "player_name": "Stjepan Radeljic",
+      "team_name": "Bosnien-Hercegovina",
+      "position": "DEF",
+      "match_method": "holdet_player_id",
+      "old_price": 2495000,
+      "old_holdet_price": 2495000,
+      "new_price": 2490000,
+      "diff": -5000
+    },
+    {
+      "player_id": "mladen_jurkas__bih",
+      "holdet_player_id": "50388",
+      "player_name": "Mladen Jurkas",
+      "team_name": "Bosnien-Hercegovina",
+      "position": "GK",
+      "match_method": "holdet_player_id",
+      "old_price": 2495000,
+      "old_holdet_price": 2495000,
+      "new_price": 2490000,
+      "diff": -5000
+    },
+    {
+      "player_id": "martin_zlomisli__bih",
+      "holdet_player_id": "49518",
+      "player_name": "Martin Zlomislic",
+      "team_name": "Bosnien-Hercegovina",
+      "position": "GK",
+      "match_method": "holdet_player_id",
+      "old_price": 2495000,
+      "old_holdet_price": 2495000,
+      "new_price": 2490000,
+      "diff": -5000
+    },
+    {
+      "player_id": "ricardo_goss__rsa",
+      "holdet_player_id": "49766",
+      "player_name": "Ricardo Goss",
+      "team_name": "Sydafrika",
+      "position": "GK",
+      "match_method": "holdet_player_id",
+      "old_price": 2495000,
+      "old_holdet_price": 2495000,
+      "new_price": 2490000,
+      "diff": -5000
+    }
+  ],
+  "ignored_new_holdet_players": [
+    {
+      "holdet_player_id": "50731",
+      "holdet_person_id": "46044",
+      "player_name": "Arjan Malic",
+      "team_name": "Bosnien-Hercegovina",
+      "position": "DEF",
+      "price": 1995000,
+      "is_out": "False",
+      "reason": "not_in_player_pool"
+    },
+    {
+      "holdet_player_id": "50729",
+      "holdet_person_id": "52378",
+      "player_name": "Marwane Saadane",
+      "team_name": "Marokko",
+      "position": "DEF",
+      "price": 1995000,
+      "is_out": "False",
+      "reason": "not_in_player_pool"
+    },
+    {
+      "holdet_player_id": "50734",
+      "holdet_person_id": "51972",
+      "player_name": "Garven-Michee Metusala",
+      "team_name": "Haiti",
+      "position": "DEF",
+      "price": 1995000,
+      "is_out": "False",
+      "reason": "not_in_player_pool"
+    },
+    {
+      "holdet_player_id": "50732",
+      "holdet_person_id": "40810",
+      "player_name": "Dejan Ljubicic",
+      "team_name": "Østrig",
+      "position": "MID",
+      "price": 1995000,
+      "is_out": "False",
+      "reason": "not_in_player_pool"
+    },
+    {
+      "holdet_player_id": "50733",
+      "holdet_person_id": "42852",
+      "player_name": "Marcos Senesi",
+      "team_name": "Argentina",
+      "position": "MID",
+      "price": 2495000,
+      "is_out": "False",
+      "reason": "not_in_player_pool"
+    },
+    {
+      "holdet_player_id": "50747",
+      "holdet_person_id": "49795",
+      "player_name": "Ruslanbek Jiyanov",
+      "team_name": "Usbekistan",
+      "position": "FWD",
+      "price": 1995000,
+      "is_out": "False",
+      "reason": "not_in_player_pool"
+    },
+    {
+      "holdet_player_id": "50730",
+      "holdet_person_id": "49456",
+      "player_name": "Jayden Nelson",
+      "team_name": "Canada",
+      "position": "FWD",
+      "price": 2000000,
+      "is_out": "False",
+      "reason": "not_in_player_pool"
+    },
+    {
+      "holdet_player_id": "50728",
+      "holdet_person_id": "52379",
+      "player_name": "Amine Sbai",
+      "team_name": "Marokko",
+      "position": "FWD",
+      "price": 1995000,
+      "is_out": "False",
+      "reason": "not_in_player_pool"
+    }
+  ],
+  "player_pool_without_safe_holdet_match": [],
+  "name_mismatches": [],
+  "position_mismatches": [],
+  "team_mismatches": [
+    {
+      "player_id": "rebin_sulaka__irq",
+      "holdet_player_id": "49760",
+      "player_name": "Rebin Sulaka",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    },
+    {
+      "player_id": "hussein_ali__irq",
+      "holdet_player_id": "49196",
+      "player_name": "Hussein Ali",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    },
+    {
+      "player_id": "frans_dhia_putros__irq",
+      "holdet_player_id": "49121",
+      "player_name": "Frans Dhia Putros",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    },
+    {
+      "player_id": "zaid_tahseen__irq",
+      "holdet_player_id": "49989",
+      "player_name": "Zaid Tahseen",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    },
+    {
+      "player_id": "ahmed_hasan_maknzi__irq",
+      "holdet_player_id": "48747",
+      "player_name": "Ahmed Hasan Maknzi",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    },
+    {
+      "player_id": "merchas_doski__irq",
+      "holdet_player_id": "49548",
+      "player_name": "Merchas Doski",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    },
+    {
+      "player_id": "akam_hashem__irq",
+      "holdet_player_id": "48757",
+      "player_name": "Akam Hashem",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    },
+    {
+      "player_id": "manaf_younis__irq",
+      "holdet_player_id": "49484",
+      "player_name": "Manaf Younis",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    },
+    {
+      "player_id": "mustafa_saadoon__irq",
+      "holdet_player_id": "50378",
+      "player_name": "Mustafa Saadoon",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    },
+    {
+      "player_id": "ahmed_yahya__irq",
+      "holdet_player_id": "50379",
+      "player_name": "Ahmed Yahya",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    },
+    {
+      "player_id": "kumel_al_rekabe__irq",
+      "holdet_player_id": "49415",
+      "player_name": "Kumel Al-Rekabe",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    },
+    {
+      "player_id": "fahad_talib__irq",
+      "holdet_player_id": "49092",
+      "player_name": "Fahad Talib",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    },
+    {
+      "player_id": "jalal_hassan__irq",
+      "holdet_player_id": "50377",
+      "player_name": "Jalal Hassan",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    },
+    {
+      "player_id": "ahmed_basil_fadhil__irq",
+      "holdet_player_id": "48744",
+      "player_name": "Ahmed Basil Fadhil",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    },
+    {
+      "player_id": "ali_jasim__irq",
+      "holdet_player_id": "48798",
+      "player_name": "Ali Jasim",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    },
+    {
+      "player_id": "amir_al_ammari__irq",
+      "holdet_player_id": "48822",
+      "player_name": "Amir Al Ammari",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    },
+    {
+      "player_id": "ahmed_qasem__irq",
+      "holdet_player_id": "50380",
+      "player_name": "Ahmed Qasem",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    },
+    {
+      "player_id": "aimar_sher__irq",
+      "holdet_player_id": "48753",
+      "player_name": "Aimar Sher",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    },
+    {
+      "player_id": "peter_gwargis__irq",
+      "holdet_player_id": "49734",
+      "player_name": "Peter Gwargis",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    },
+    {
+      "player_id": "kevin_yakob__irq",
+      "holdet_player_id": "49395",
+      "player_name": "Kevin Yakob",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    },
+    {
+      "player_id": "ibrahim_bayesh__irq",
+      "holdet_player_id": "49203",
+      "player_name": "Ibrahim Bayesh",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    },
+    {
+      "player_id": "zaid_ismail__irq",
+      "holdet_player_id": "49988",
+      "player_name": "Zaid Ismail",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    },
+    {
+      "player_id": "hasan_abdulkareem__irq",
+      "holdet_player_id": "49174",
+      "player_name": "Hasan Abdulkareem",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    },
+    {
+      "player_id": "marko_farji__irq",
+      "holdet_player_id": "49505",
+      "player_name": "Marko Farji",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    },
+    {
+      "player_id": "zidane_iqbal__irq",
+      "holdet_player_id": "49993",
+      "player_name": "Zidane Iqbal",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    },
+    {
+      "player_id": "youssef_amyn__irq",
+      "holdet_player_id": "49977",
+      "player_name": "Youssef Amyn",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    },
+    {
+      "player_id": "ali_yousif__irq",
+      "holdet_player_id": "48802",
+      "player_name": "Ali Yousif",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    },
+    {
+      "player_id": "aymen_hussein__irq",
+      "holdet_player_id": "48876",
+      "player_name": "Aymen Hussein",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    },
+    {
+      "player_id": "mohanad_ali__irq",
+      "holdet_player_id": "49597",
+      "player_name": "Mohanad Ali",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    },
+    {
+      "player_id": "ali_al_hamadi__irq",
+      "holdet_player_id": "48795",
+      "player_name": "Ali Al-Hamadi",
+      "pool_team": "Irak",
+      "holdet_team": "Iraq"
+    }
+  ],
+  "backup_path": "C:\\Users\\Administrator\\Documents\\GitHub\\vm2026-app\\data\\player_pool_v1.backup_before_existing_price_update_20260618_220155.json",
+  "changes_csv_path": "C:\\Users\\Administrator\\Documents\\GitHub\\vm2026-app\\data\\existing_player_price_changes_20260618_220155.csv"
+}
