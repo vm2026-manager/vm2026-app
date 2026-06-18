@@ -4931,34 +4931,28 @@ function saveState() {
       if (separatorMatches.length === 0) {
         const parsed = Number(compact);
         if (!Number.isFinite(parsed) || parsed < 0) return null;
-        return parsed >= 1000000 ? parsed / 1000000 : parsed;
+        return parsed / 1000000;
       }
 
-      if (separatorMatches.length > 1 || (hasComma && hasDot)) {
+      if (hasComma) {
+        const commaParts = compact.split(",");
+        if (commaParts.length !== 2) return null;
+        const wholeDigits = commaParts[0].replace(/[^\d]/g, "");
+        const fractionDigits = commaParts[1].replace(/[^\d]/g, "");
+        if (!wholeDigits && !fractionDigits) return null;
+        const normalized = `${wholeDigits || "0"}.${fractionDigits || "0"}`;
+        const parsed = Number(normalized);
+        return Number.isFinite(parsed) && parsed >= 0 ? parsed : null;
+      }
+
+      if (hasDot) {
         const absoluteAmount = Number(digitsOnly);
         return Number.isFinite(absoluteAmount) && absoluteAmount >= 0
           ? absoluteAmount / 1000000
           : null;
       }
 
-      const singleSeparator = hasComma ? "," : ".";
-      const [wholePartRaw, fractionPartRaw = ""] = compact.split(singleSeparator);
-      const wholeDigits = wholePartRaw.replace(/[^\d]/g, "");
-      const fractionDigits = fractionPartRaw.replace(/[^\d]/g, "");
-
-      if (!wholeDigits && !fractionDigits) return null;
-
-      const shouldTreatAsMillions = wholeDigits.length <= 3 && fractionDigits.length <= 3;
-      if (shouldTreatAsMillions) {
-        const normalized = `${wholeDigits || "0"}.${fractionDigits || "0"}`;
-        const parsed = Number(normalized);
-        return Number.isFinite(parsed) && parsed >= 0 ? parsed : null;
-      }
-
-      const absoluteAmount = Number(digitsOnly);
-      return Number.isFinite(absoluteAmount) && absoluteAmount >= 0
-        ? absoluteAmount / 1000000
-        : null;
+      return null;
     }
 
     function getManualBankAmount() {
