@@ -83472,8 +83472,8 @@
     "old_player_id": "gonzalo_plata__ecu",
     "old_match_method": "exact_name_team",
     "old_match_score": 1.0,
-    "start_prob": 0.7824,
-    "start_prob_source": "transfermarkt_availability_split_2026_06_07",
+    "start_prob": 0.78,
+    "start_prob_source": "manual_context_override_safe",
     "weighted_group_stage_ev": 9.123776,
     "optimizer_ev": 9.123776,
     "holdet_appearance": {
@@ -83495,7 +83495,7 @@
     "transfermarkt_start_score": 0.3919,
     "transfermarkt_recency_start_score": 0.5792,
     "transfermarkt_recent_start_rate_since_2025": 0.5,
-    "conditional_start_prob": 0.8987,
+    "conditional_start_prob": 0.78,
     "availability_prob": 0.6304,
     "availability_risk": "high_risk",
     "availability_status": "high_risk",
@@ -83528,7 +83528,9 @@
     "round2_ev": 1.784635,
     "round3_ev": 0.650508,
     "start_pct": 78,
-    "start_price": 3500000
+    "start_price": 3500000,
+    "start_signal_context_note": "Bold+ round 2 bruttoliste audit applied 2026-06-18; included in expected Ecuador XI.",
+    "source_note": "Bold+ round 2 bruttoliste audit applied 2026-06-18; included in expected Ecuador XI."
   },
   {
     "player_id": "alan_franco__ecu",
@@ -106174,7 +106176,7 @@
     "old_player_id": "cyle_christopher_larin__can",
     "old_match_method": "exact_name_team",
     "old_match_score": 1.0,
-    "start_prob": 0.74,
+    "start_prob": 0.82,
     "start_prob_source": "manual_context_override_safe",
     "weighted_group_stage_ev": 0.520801,
     "optimizer_ev": 0.520801,
@@ -106207,7 +106209,7 @@
       "tm_competition_starts": 103,
       "tm_recency_weighted_competitive_start_score": 0.8222
     },
-    "conditional_start_prob": 0.74,
+    "conditional_start_prob": 0.82,
     "availability_prob": 0.8483,
     "availability_risk": "medium_risk",
     "availability_status": "medium_risk",
@@ -106242,8 +106244,8 @@
     "start_pct": 74,
     "start_price": 3000000,
     "manual_start_override": true,
-    "start_signal_context_note": "Manual round 2 start_prob package applied 2026-06-17; no EV rebuild yet.",
-    "source_note": "Manual round 2 start_prob package applied 2026-06-17; no EV rebuild yet."
+    "start_signal_context_note": "Bold+ round 2 bruttoliste audit applied 2026-06-18; projected Canada starter.",
+    "source_note": "Manual round 2 start_prob package applied 2026-06-17; no EV rebuild yet. | Bold+ round 2 bruttoliste audit applied 2026-06-18; projected Canada starter."
   },
   {
     "player_id": "george_hirst__sco",
@@ -110790,8 +110792,8 @@
     "old_player_id": "romelu_lukaku__bel",
     "old_match_method": "exact_name_team",
     "old_match_score": 1.0,
-    "start_prob": 0.4126,
-    "start_prob_source": "transfermarkt_availability_split_2026_06_07",
+    "start_prob": 0.08,
+    "start_prob_source": "manual_context_override_safe",
     "weighted_group_stage_ev": 0.535533,
     "optimizer_ev": 0.535533,
     "player_visual_source": "holdet_api_appearance",
@@ -110824,7 +110826,7 @@
     "transfermarkt_start_score": 0.574,
     "transfermarkt_recency_start_score": 0.1818,
     "transfermarkt_recent_start_rate_since_2025": 0.3333,
-    "conditional_start_prob": 0.4478,
+    "conditional_start_prob": 0.08,
     "availability_prob": 0.7752,
     "availability_risk": "medium_risk",
     "availability_status": "medium_risk",
@@ -110857,7 +110859,9 @@
     "round2_ev": 0.141246,
     "round3_ev": 0.119997,
     "start_pct": 41,
-    "start_price": 4500000
+    "start_price": 4500000,
+    "start_signal_context_note": "Bold+ round 2 bruttoliste audit applied 2026-06-18; not projected in Belgium starting XI.",
+    "source_note": "Bold+ round 2 bruttoliste audit applied 2026-06-18; not projected in Belgium starting XI."
   },
   {
     "player_id": "charles_de_ketelaere__bel",
@@ -120587,7 +120591,7 @@
     "old_player_id": "igor_thiago__bra",
     "old_match_method": "exact_name_team",
     "old_match_score": 1.0,
-    "start_prob": 0.18,
+    "start_prob": 0.12,
     "start_prob_source": "manual_context_override_safe",
     "weighted_group_stage_ev": 0.60489,
     "optimizer_ev": 0.60489,
@@ -120624,7 +120628,7 @@
     "transfermarkt_start_score": 0.25,
     "transfermarkt_recency_start_score": 0.3179,
     "transfermarkt_recent_start_rate_since_2025": 1.0,
-    "conditional_start_prob": 0.35,
+    "conditional_start_prob": 0.12,
     "availability_prob": 0.8538,
     "availability_risk": "medium_risk",
     "availability_status": "medium_risk",
@@ -120657,8 +120661,8 @@
     "round2_ev": 0.168448,
     "round3_ev": 0.122439,
     "round_specific_rotation_risk": "high",
-    "start_signal_context_note": "Manual round 2 start_prob package applied 2026-06-17; no EV rebuild yet.",
-    "source_note": "Manual context review: Brazil forward hierarchy. Igor Thiago should not be treated as near-secure starter from recent test-match usage. | Manual round 2 start_prob package applied 2026-06-17; no EV rebuild yet.",
+    "start_signal_context_note": "Bold+ round 2 bruttoliste audit applied 2026-06-18; not projected to start for Brazil.",
+    "source_note": "Manual context review: Brazil forward hierarchy. Igor Thiago should not be treated as near-secure starter from recent test-match usage. | Manual round 2 start_prob package applied 2026-06-17; no EV rebuild yet. | Bold+ round 2 bruttoliste audit applied 2026-06-18; not projected to start for Brazil.",
     "manual_start_override": true,
     "start_pct": 18,
     "start_price": 4000000
@@ -121288,7 +121292,7 @@
     "old_player_id": "matheus_cunha__bra",
     "old_match_method": "exact_name_team",
     "old_match_score": 1.0,
-    "start_prob": 0.6,
+    "start_prob": 0.72,
     "start_prob_source": "manual_context_override_safe",
     "weighted_group_stage_ev": 11.225865,
     "optimizer_ev": 11.225865,
@@ -121324,7 +121328,7 @@
     "transfermarkt_start_score": 0.1864,
     "transfermarkt_recency_start_score": 0.5341,
     "transfermarkt_recent_start_rate_since_2025": 0.75,
-    "conditional_start_prob": 0.6305,
+    "conditional_start_prob": 0.72,
     "availability_prob": 0.6,
     "availability_risk": "high_risk",
     "availability_status": "high_risk",
@@ -121359,8 +121363,8 @@
     "start_pct": 60,
     "start_price": 4500000,
     "manual_start_override": true,
-    "start_signal_context_note": "Manual round 2 start_prob package applied 2026-06-17; no EV rebuild yet.",
-    "source_note": "Manual round 2 start_prob package applied 2026-06-17; no EV rebuild yet."
+    "start_signal_context_note": "Bold+ round 2 bruttoliste audit applied 2026-06-18; favored Brazil 9 over Igor Thiago.",
+    "source_note": "Manual round 2 start_prob package applied 2026-06-17; no EV rebuild yet. | Bold+ round 2 bruttoliste audit applied 2026-06-18; favored Brazil 9 over Igor Thiago."
   },
   {
     "player_id": "awer_mabil__aus",

@@ -976,7 +976,7 @@ jorge_carrascal__col,Jorge Carrascal,COL,MID,26,0.2581,0.2581,transfermarkt_avai
 denil_castillo__ecu,Denil Castillo,ECU,MID,24,0.2365,0.2365,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.275,0.6,high_risk,high_risk,
 gustavo_puerta__col,Gustavo Puerta,COL,MID,27,0.2706,0.2706,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.3363,,,,gustavo puerta||col,,,0.3146,0.6,high_risk,high_risk,
 kendry_p_ez__ecu,Kendry Paez,ECU,MID,12,0.1237,0.1237,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6298,,,,kendry paez||ecu,,,0.1258,0.952,medium_risk,medium_risk,
-gonzalo_plata__ecu,Gonzalo Plata,ECU,MID,78,0.7824,0.7824,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.7964,,,,gonzalo plata||ecu,,,0.8987,0.6304,high_risk,high_risk,
+gonzalo_plata__ecu,Gonzalo Plata,ECU,MID,78,0.78,0.78,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.7964,,,,gonzalo plata||ecu,,,0.78,0.6304,high_risk,high_risk,
 alan_franco__ecu,Alan Franco,ECU,MID,4,0.0445,0.0445,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.45,,,,alan franco||ecu,,,0.05,0.6875,unknown,unknown,
 mois_s_caicedo__ecu,Moises Caicedo,ECU,MID,55.0,0.55,0.55,manual_context_override_safe,rotation/usikker - Transfermarkt landshold,,,,,,0.9079,,,,moises caicedo||ecu,,,0.65,0.7977,medium_risk,medium_risk,
 john_yeboah__ecu,John Yeboah,ECU,MID,86,0.8633,0.8633,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.6657,,,,john yeboah||ecu,,,0.8797,0.9467,low_risk,low_risk,
@@ -1246,7 +1246,7 @@ findlay_curtis__sco,Findlay Curtis,SCO,FWD,5,0.0474,0.0474,transfermarkt_availab
 daniel_jebbison__can,Daniel Jebbison,CAN,FWD,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.3358,,,,daniel jebbison||can,,,0.0,0.6,out,out_of_tournament,0.0
 jonathan_david__can,Jonathan David,CAN,FWD,92,0.9223,0.9223,transfermarkt_availability_split_2026_06_07,sikker starter - Transfermarkt landshold,,,,,,0.9,,,,jonathan david||can,,,0.9695,0.861,low_risk,low_risk,
 jacen_russell_rowe__can,Jacen Russell-Rowe,CAN,FWD,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.215,,,,jacen russell-rowe||can,,,0.0,0.6,out,out_of_tournament,0.0
-cyle_christopher_larin__can,Cyle Christopher Larin,CAN,FWD,74,0.74,0.74,manual_context_override_safe,sandsynlig starter - Transfermarkt landshold,,,,,,0.793,,,,cyle christopher larin||can,,,0.74,0.8483,medium_risk,medium_risk,
+cyle_christopher_larin__can,Cyle Christopher Larin,CAN,FWD,82,0.82,0.82,manual_context_override_safe,sandsynlig starter - Transfermarkt landshold,,,,,,0.793,,,,cyle christopher larin||can,,,0.82,0.8483,medium_risk,medium_risk,
 george_hirst__sco,George Hirst,SCO,FWD,55,0.5479,0.5479,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.465,,,,george hirst||sco,,,0.5628,0.9245,medium_risk,medium_risk,
 che_adams__sco,Che Adams,SCO,FWD,64,0.6374,0.6374,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.8708,,,,che adams||sco,,,0.6827,0.8102,medium_risk,medium_risk,
 lyndon_dykes__sco,Lyndon Dykes,SCO,FWD,15,0.1452,0.1452,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.8595,,,,lyndon dykes||sco,,,0.1492,0.9234,medium_risk,medium_risk,
@@ -1302,7 +1302,7 @@ romeo_vermant__bel,Romeo Vermant,BEL,FWD,0,0.0,0.0,holdet_official_unmatched_def
 ali_al_hamadi__irq,Ali Al-Hamadi,IRQ,FWD,53,0.5283,0.5283,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.5375,,,,ali al-hamadi||irq,,,0.6144,0.6,high_risk,high_risk,
 lois_openda__bel,Lois Openda,BEL,FWD,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.0,0.9196,out,out_of_tournament,0.0
 leandro_trossard__bel,Leandro Trossard,BEL,FWD,59,0.5943,0.5943,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.6774,,,,leandro trossard||bel,,,0.6462,0.7704,medium_risk,medium_risk,
-romelu_lukaku__bel,Romelu Lukaku,BEL,FWD,41,0.4126,0.4126,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7965,,,,romelu lukaku||bel,,,0.4478,0.7752,medium_risk,medium_risk,
+romelu_lukaku__bel,Romelu Lukaku,BEL,FWD,8,0.08,0.08,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7965,,,,romelu lukaku||bel,,,0.08,0.7752,medium_risk,medium_risk,
 charles_de_ketelaere__bel,Charles De Ketelaere,BEL,FWD,82.0,0.82,0.82,manual_context_override_safe,sandsynlig starter - Transfermarkt landshold,,,,,,0.6079,,,,charles de ketelaere||bel,,,0.88,0.98,low_risk,medium_risk,0.98
 jeremy_doku__bel,Jeremy Doku,BEL,FWD,86.0,0.86,0.86,manual_context_override_safe,sandsynlig starter - Transfermarkt landshold,,,,,,0.7134,,,,jeremy doku||bel,,,0.92,0.98,low_risk,medium_risk,0.98
 dodi_lukebakio__bel,Dodi Lukebakio,BEL,FWD,28,0.2757,0.2757,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.5114,,,,dodi lukebakio||bel,,,0.2978,0.7878,medium_risk,medium_risk,
@@ -1415,14 +1415,14 @@ yan_diomande__civ,Yan Diomande,CIV,FWD,91,0.9123,0.9123,transfermarkt_availabili
 martial_godo__civ,Martial Godo,CIV,FWD,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.0,0.7934,out,out_of_tournament,0.0
 luiz_henrique__bra,Luiz Henrique,BRA,FWD,45.0,0.45,0.45,manual_context_override_safe,rotation/usikker - Transfermarkt landshold,,,,,,0.8148,,,,luiz henrique||bra,,,0.55,0.804,medium_risk,medium_risk,
 rayan__bra,Rayan,BRA,FWD,60,0.595,0.595,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.6933,,,,rayan||bra,,,0.6502,0.7572,medium_risk,medium_risk,
-igor_thiago__bra,Igor Thiago,BRA,FWD,18,0.18,0.18,manual_context_override_safe,rotation/usikker - Transfermarkt landshold,,,,,,0.873,,,,igor thiago||bra,,,0.35,0.8538,medium_risk,medium_risk,
+igor_thiago__bra,Igor Thiago,BRA,FWD,12,0.12,0.12,manual_context_override_safe,rotation/usikker - Transfermarkt landshold,,,,,,0.873,,,,igor thiago||bra,,,0.12,0.8538,medium_risk,medium_risk,
 endrick__bra,Endrick,BRA,FWD,20.0,0.2,0.2,manual_context_override_safe,rotation/usikker - Transfermarkt landshold,,,,,,0.7077,,,,endrick||bra,,,0.3,0.7335,medium_risk,medium_risk,
 joao_pedro__bra,João Pedro,BRA,FWD,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.0,0.6,out,out_of_tournament,0.0
 raphinha__bra,Raphinha,BRA,FWD,88.0,0.88,0.88,manual_context_override_safe,sandsynlig starter - Transfermarkt landshold,,,,,,0.8812,,,,raphinha||bra,,,0.93,0.98,low_risk,medium_risk,0.98
 neymar_jr__bra,Neymar Jr.,BRA,FWD,5.0,0.05,0.05,manual_context_override_safe,rotation/usikker - Transfermarkt landshold,,,,,,0.8919,,,,neymar jr.||bra,,,0.1,0.35,high_risk,medium_risk,0.2
 gabriel_martinelli__bra,Gabriel Martinelli,BRA,FWD,29,0.2923,0.2923,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6448,,,,gabriel martinelli||bra,,,0.3225,0.7321,medium_risk,medium_risk,
 vinicius_j_nior__bra,Vinicius Junior,BRA,FWD,92.0,0.92,0.92,manual_context_override_safe,sikker starter - Transfermarkt landshold,,,,,,0.7444,,,,vinicius junior||bra,,,0.96,0.98,low_risk,medium_risk,0.98
-matheus_cunha__bra,Matheus Cunha,BRA,FWD,60,0.6,0.6,manual_context_override_safe,rotation/usikker - Transfermarkt landshold,,,,,,0.6946,,,,matheus cunha||bra,,,0.6305,0.6,high_risk,high_risk,
+matheus_cunha__bra,Matheus Cunha,BRA,FWD,72,0.72,0.72,manual_context_override_safe,rotation/usikker - Transfermarkt landshold,,,,,,0.6946,,,,matheus cunha||bra,,,0.72,0.6,high_risk,high_risk,
 awer_mabil__aus,Awer Mabil,AUS,FWD,29,0.2868,0.2868,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7036,,,,awer mabil||aus,,,0.3335,0.6,high_risk,high_risk,
 nestory_irankunda__aus,Nestory Irankunda,AUS,FWD,32,0.3241,0.3241,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.5879,,,,nestory irankunda||aus,,,0.3533,0.7639,medium_risk,medium_risk,
 martin_boyle__aus,Martin Boyle,AUS,FWD,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7263,,,,martin boyle||aus,,,0.0,0.8503,out,out_of_tournament,0.0
