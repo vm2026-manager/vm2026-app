@@ -5452,6 +5452,207 @@ function getPlayerScore(player) {
       return 0;
     }
 
+    function getAlternativeStrategyStrength(player, strategyKey = activeStrategyKey) {
+      if (!player) return null;
+
+      const position = normalizePositionLabel(player.position);
+      const teamId = player.team_id || player.team_name || "";
+      const isAttacking = ["MID", "FWD"].includes(position);
+      const isDefensive = ["GK", "DEF"].includes(position);
+
+      if (strategyKey === "next_round") {
+        const nextWinProb = getNextMatchWinProb(teamId);
+        if (!Number.isFinite(nextWinProb)) return null;
+
+        let multiplier;
+        if (nextWinProb < 0.18) {
+          multiplier = isAttacking ? 0.03 : 0.05;
+        } else if (nextWinProb < 0.25) {
+          multiplier = isAttacking ? 0.10 : 0.16;
+        } else if (nextWinProb < 0.35) {
+          multiplier = isAttacking ? 0.28 : 0.40;
+        } else if (nextWinProb < 0.45) {
+          multiplier = isAttacking ? 0.55 : 0.68;
+        } else {
+          multiplier = isAttacking
+            ? clampNumber(0.62 + (Math.pow(nextWinProb, 1.9) * 1.9), 0.62, 1.35)
+            : clampNumber(0.74 + (Math.pow(nextWinProb, 1.55) * 1.65), 0.74, 1.28);
+        }
+
+        return {
+          multiplier,
+          nextWinProb,
+          weightedAverage: nextWinProb,
+          minProb: nextWinProb
+        };
+      }
+
+      if (strategyKey === "group_stage") {
+        const summary = getUpcomingGroupWinProbSummary(teamId);
+        if (!summary) return null;
+
+        const avgFactor = isAttacking
+          ? (0.66 + (summary.weightedAverage * 0.90))
+          : (0.74 + (summary.weightedAverage * 0.76));
+        const dangerPenalty = summary.minProb !== null && summary.minProb < 0.42
+          ? ((0.42 - summary.minProb) * (isAttacking ? 1.20 : 0.80))
+          : 0;
+        const multiplier = clampNumber(avgFactor - dangerPenalty, isDefensive ? 0.58 : 0.52, 1.28);
+
+        return {
+          multiplier,
+          nextWinProb: null,
+          weightedAverage: summary.weightedAverage,
+          minProb: summary.minProb
+        };
+      }
+
+      return null;
+    }
+
+    function getStrategyAdjustedAlternativeScore(player, strategyKey = activeStrategyKey) {
+      if (strategyKey === "next_round") {
+        const baseNext = getNextRoundAlternativeScore(player);
+        const adjustedBase = Number.isFinite(baseNext)
+          ? (baseNext - getNextRoundAlternativePenalty(player))
+          : null;
+        const strength = getAlternativeStrategyStrength(player, strategyKey);
+        if (Number.isFinite(adjustedBase) && strength?.multiplier) {
+          return adjustedBase * strength.multiplier;
+        }
+        return adjustedBase;
+      }
+
+      const base = getAlternativeComparableScore(player);
+      const strength = getAlternativeStrategyStrength(player, strategyKey);
+      if (Number.isFinite(base) && strength?.multiplier) {
+        return base * strength.multiplier;
+      }
+      return base;
+    }
+
+    function getAlternativePrimaryScore(player, strategyKey = activeStrategyKey) {
+      const adjusted = getStrategyAdjustedAlternativeScore(player, strategyKey);
+      if (Number.isFinite(adjusted)) return adjusted;
+      return getLegacyAlternativeSortScore(player, strategyKey);
+    }
+
+    function getNextRoundWinTier(player) {
+      const nextWinProb = getNextMatchWinProb(player?.team_id || player?.team_name || "");
+      if (!Number.isFinite(nextWinProb)) return 1;
+      if (nextWinProb < 0.18) return 2;
+      if (nextWinProb < 0.35) return 1;
+      return 0;
+    }
+
+    function demoteWeakNextRoundAlternatives(players) {
+      if (activeStrategyKey !== "next_round" || !Array.isArray(players) || !players.length) {
+        return players;
+      }
+
+      const strong = [];
+      const medium = [];
+      const severe = [];
+
+      players.forEach(player => {
+        const tier = getNextRoundWinTier(player);
+        if (tier >= 2) severe.push(player);
+        else if (tier === 1) medium.push(player);
+        else strong.push(player);
+      });
+
+      return [...strong, ...medium, ...severe];
+    }
+
+    function trimSevereNextRoundAlternatives(players, targetCount) {
+      if (activeStrategyKey !== "next_round" || !Array.isArray(players) || !players.length) {
+        return players;
+      }
+
+      const keepCount = Number(targetCount);
+      if (!Number.isFinite(keepCount) || keepCount <= 0) return players;
+
+      const normal = [];
+      const severe = [];
+
+      players.forEach(player => {
+        if (getNextRoundWinTier(player) >= 2) severe.push(player);
+        else normal.push(player);
+      });
+
+      if (normal.length >= keepCount) {
+        return normal;
+      }
+
+      return [...normal, ...severe];
+    }
+
+    function getGroupStageDifficultyTier(player) {
+      const summary = getUpcomingGroupWinProbSummary(player?.team_id || player?.team_name || "");
+      if (!summary) return 1;
+
+      const avg = Number(summary.weightedAverage);
+      const minProb = Number(summary.minProb);
+
+      if ((Number.isFinite(minProb) && minProb < 0.18) || (Number.isFinite(avg) && avg < 0.30)) {
+        return 2;
+      }
+      if ((Number.isFinite(minProb) && minProb < 0.28) || (Number.isFinite(avg) && avg < 0.42)) {
+        return 1;
+      }
+      return 0;
+    }
+
+    function demoteWeakGroupStageAlternatives(players) {
+      if (activeStrategyKey !== "group_stage" || !Array.isArray(players) || !players.length) {
+        return players;
+      }
+
+      const strong = [];
+      const medium = [];
+      const severe = [];
+
+      players.forEach(player => {
+        const tier = getGroupStageDifficultyTier(player);
+        if (tier >= 2) severe.push(player);
+        else if (tier === 1) medium.push(player);
+        else strong.push(player);
+      });
+
+      return [...strong, ...medium, ...severe];
+    }
+
+    function trimSevereGroupStageAlternatives(players, targetCount) {
+      if (activeStrategyKey !== "group_stage" || !Array.isArray(players) || !players.length) {
+        return players;
+      }
+
+      const keepCount = Number(targetCount);
+      if (!Number.isFinite(keepCount) || keepCount <= 0) return players;
+
+      const normal = [];
+      const severe = [];
+
+      players.forEach(player => {
+        if (getGroupStageDifficultyTier(player) >= 2) severe.push(player);
+        else normal.push(player);
+      });
+
+      if (normal.length >= keepCount) {
+        return normal;
+      }
+
+      return [...normal, ...severe];
+    }
+
+    function getLegacyAlternativeSortScore(player, strategyKey = activeStrategyKey) {
+      if (strategyKey === "next_round") {
+        const next = getNextRoundAlternativeScore(player);
+        return Number.isFinite(next) ? next - getNextRoundAlternativePenalty(player) : null;
+      }
+      return getAlternativeComparableScore(player);
+    }
+
 
     function getTargetRoundNumber() {
       const target = Number(strategyContext?.target_round || 1);
@@ -5525,18 +5726,14 @@ function getPlayerScore(player) {
     }
 
         function compareAlternativePlayers(a, b) {
-      if (activeStrategyKey === "next_round") {
-        const aNext = getNextRoundAlternativeScore(a);
-        const bNext = getNextRoundAlternativeScore(b);
-        const aAdjusted = aNext - getNextRoundAlternativePenalty(a);
-        const bAdjusted = bNext - getNextRoundAlternativePenalty(b);
+      const aAdjusted = getStrategyAdjustedAlternativeScore(a);
+      const bAdjusted = getStrategyAdjustedAlternativeScore(b);
 
-        if (Number.isFinite(aAdjusted) && Number.isFinite(bAdjusted) && Math.abs(bAdjusted - aAdjusted) > 0.0001) {
-          return bAdjusted - aAdjusted;
-        }
-        if (Number.isFinite(aAdjusted) && !Number.isFinite(bAdjusted)) return -1;
-        if (!Number.isFinite(aAdjusted) && Number.isFinite(bAdjusted)) return 1;
+      if (Number.isFinite(aAdjusted) && Number.isFinite(bAdjusted) && Math.abs(bAdjusted - aAdjusted) > 0.0001) {
+        return bAdjusted - aAdjusted;
       }
+      if (Number.isFinite(aAdjusted) && !Number.isFinite(bAdjusted)) return -1;
+      if (!Number.isFinite(aAdjusted) && Number.isFinite(bAdjusted)) return 1;
 
       const aRank = getAlternativeRankParts(a);
       const bRank = getAlternativeRankParts(b);
@@ -5937,6 +6134,70 @@ function getPlayerScore(player) {
       return isHome ? homeProb : awayProb;
     }
 
+    function getUpcomingGroupFixturesForTeam(teamId) {
+      if (!teamId || !fixtures.length) return [];
+
+      const team = canonicalTeamId(teamId);
+      return fixtures
+        .filter(f => f.stage === "GROUP")
+        .filter(f => canonicalTeamId(f.home) === team || canonicalTeamId(f.away) === team)
+        .filter(f => isUpcomingFixture(f))
+        .sort((a, b) => (a.kickoffDate || kickoffToDate(a.kickoff_dk || a.kickoff) || 0) - (b.kickoffDate || kickoffToDate(b.kickoff_dk || b.kickoff) || 0));
+    }
+
+    function getFixtureWinProbForTeam(teamId, fixture) {
+      if (!teamId || !fixture) return null;
+
+      const canonicalTeam = canonicalTeamId(teamId);
+      const row = findMatchOddsRow({
+        home: canonicalTeamId(fixture.home),
+        away: canonicalTeamId(fixture.away),
+        match_id: fixture.match_id
+      });
+      if (!row) return null;
+
+      const isHome = canonicalTeamId(fixture.home) === canonicalTeam;
+      const prob = parseProbNumber(getRowValue(row, isHome
+        ? ["home_win_prob_fair", "home_win_prob", "home_prob", "prob_home_win", "p_home_win", "home_win_pct"]
+        : ["away_win_prob_fair", "away_win_prob", "away_prob", "prob_away_win", "p_away_win", "away_win_pct"]));
+
+      return Number.isFinite(prob) ? prob : null;
+    }
+
+    function clampNumber(value, minValue, maxValue) {
+      return Math.max(minValue, Math.min(maxValue, value));
+    }
+
+    function getUpcomingGroupWinProbSummary(teamId, limit = null) {
+      const upcoming = getUpcomingGroupFixturesForTeam(teamId);
+      if (!upcoming.length) return null;
+
+      const limited = Number.isFinite(limit) && limit > 0 ? upcoming.slice(0, limit) : upcoming;
+      const weights = [1, 0.82, 0.68];
+      let weightedSum = 0;
+      let totalWeight = 0;
+      let minProb = null;
+      let count = 0;
+
+      limited.forEach((fixture, index) => {
+        const prob = getFixtureWinProbForTeam(teamId, fixture);
+        if (!Number.isFinite(prob)) return;
+        const weight = weights[index] || Math.max(0.45, 0.68 - ((index - 2) * 0.08));
+        weightedSum += prob * weight;
+        totalWeight += weight;
+        minProb = minProb === null ? prob : Math.min(minProb, prob);
+        count += 1;
+      });
+
+      if (!count || totalWeight <= 0) return null;
+
+      return {
+        count,
+        weightedAverage: weightedSum / totalWeight,
+        minProb
+      };
+    }
+
     function nextMatchText(teamId) {
       const nextFixture = getNextFixtureForTeam(teamId);
       if (!nextFixture) return "Næste kamp: ikke fundet";
@@ -6239,17 +6500,22 @@ function getPlayerScore(player) {
     }
 
     function rankReplacementCandidates(candidates, currentPlayer) {
-      const sorted = [...candidates].sort((a, b) => compareReplacementPlayers(a, b, currentPlayer));
+      const sorted = demoteWeakGroupStageAlternatives(
+        demoteWeakNextRoundAlternatives(
+          [...candidates].sort((a, b) => compareReplacementPlayers(a, b, currentPlayer))
+        )
+      );
 
       if (!isEliteReplacementContext(currentPlayer)) {
         return sorted;
       }
 
-      const currentScore = getAlternativeComparableScore(currentPlayer);
+      const currentScore = getAlternativePrimaryScore(currentPlayer);
+      const highScoreGap = activeStrategyKey === "next_round" ? 0.75 : 1.5;
       const highScoreCandidates = sorted
         .filter(player => {
-          const score = getAlternativeComparableScore(player);
-          return Number.isFinite(score) && Number.isFinite(currentScore) && score >= currentScore - 1.5;
+          const score = getAlternativePrimaryScore(player);
+          return Number.isFinite(score) && Number.isFinite(currentScore) && score >= currentScore - highScoreGap;
         })
         .sort((a, b) => compareReplacementPlayers(a, b, currentPlayer));
 
@@ -6265,7 +6531,13 @@ function getPlayerScore(player) {
         .filter(player => !highScoreIds.has(String(player.player_id)))
         .filter(player => !sameTierIds.has(String(player.player_id)));
 
-      return [...highScoreCandidates, ...sameTierCandidates, ...remainingCandidates];
+      return demoteWeakGroupStageAlternatives(
+        demoteWeakNextRoundAlternatives([
+          ...highScoreCandidates,
+          ...sameTierCandidates,
+          ...remainingCandidates
+        ])
+      );
     }
 
     function modelRowsForCurrentStrategyAndFormation() {
@@ -6338,11 +6610,29 @@ function getPlayerScore(player) {
       }
 
       const uniquePriorityIds = [...new Set(priorityIds)];
+      const preferredPriorityIds = activeStrategyKey === "next_round"
+        ? uniquePriorityIds.filter(playerId => {
+            const player = players.find(item => String(item.player_id) === playerId);
+            if (!player) return false;
+            return getNextRoundWinTier(player) < 2;
+          })
+        : activeStrategyKey === "group_stage"
+          ? uniquePriorityIds.filter(playerId => {
+              const player = players.find(item => String(item.player_id) === playerId);
+              if (!player) return false;
+              return getGroupStageDifficultyTier(player) < 2;
+            })
+        : uniquePriorityIds;
+
       return [
-        ...uniquePriorityIds
+        ...preferredPriorityIds
           .map(playerId => players.find(player => String(player.player_id) === playerId))
           .filter(Boolean),
-        ...players.filter(player => !uniquePriorityIds.includes(String(player.player_id)))
+        ...demoteWeakGroupStageAlternatives(
+          demoteWeakNextRoundAlternatives(
+            players.filter(player => !preferredPriorityIds.includes(String(player.player_id)))
+          )
+        )
       ];
     }
 
@@ -6360,32 +6650,106 @@ function getPlayerScore(player) {
         })
       );
 
-      const samePrice = prioritizeReplacementCandidates(
-        rankReplacementCandidates(
-          baseCandidates.filter(player => getTransferLockedPrice(player) <= currentPrice),
-          currentPlayer
+      const samePrice = trimSevereGroupStageAlternatives(
+        trimSevereNextRoundAlternatives(
+          prioritizeReplacementCandidates(
+            rankReplacementCandidates(
+              baseCandidates.filter(player => getTransferLockedPrice(player) <= currentPrice),
+              currentPlayer
+            ),
+            activeSlot,
+            currentPlayer,
+            modelChoice
+          ),
+          6
         ),
-        activeSlot,
-        currentPlayer,
-        modelChoice
+        6
       ).slice(0, 6);
 
       const samePriceIds = new Set(samePrice.map(player => String(player.player_id)));
 
-      const withBank = prioritizeReplacementCandidates(
-        rankReplacementCandidates(
-          baseCandidates
-            .filter(player => getTransferLockedPrice(player) > currentPrice)
-            .filter(player => !samePriceIds.has(String(player.player_id))),
-          currentPlayer
+      const withBank = trimSevereGroupStageAlternatives(
+        trimSevereNextRoundAlternatives(
+          prioritizeReplacementCandidates(
+            rankReplacementCandidates(
+              baseCandidates
+                .filter(player => getTransferLockedPrice(player) > currentPrice)
+                .filter(player => !samePriceIds.has(String(player.player_id))),
+              currentPlayer
+            ),
+            activeSlot,
+            currentPlayer,
+            modelChoice
+          ),
+          8
         ),
-        activeSlot,
-        currentPlayer,
-        modelChoice
+        8
       ).slice(0, 8);
 
       return { samePrice, withBank };
     }
+
+    function debugAlternativeRankingForSlot(slotKey, strategyKey = activeStrategyKey, limit = 8) {
+      const activeSlot = getCurrentSlots().find(slot => String(slot.key) === String(slotKey));
+      if (!activeSlot) return [];
+
+      const currentPlayerId = squad?.[activeSlot.key];
+      const currentPlayer = getPlayerById(currentPlayerId);
+      if (!currentPlayer) return [];
+
+      const previousStrategyKey = activeStrategyKey;
+      activeStrategyKey = strategyKey;
+      try {
+        const modelChoice = getModelChoiceForSlot(activeSlot);
+        const modelChoiceId = modelChoice ? String(modelChoice.player_id) : null;
+        const candidates = allPlayers.filter(player =>
+          canReplaceWith(player, currentPlayer, activeSlot, {
+            ignoreStartRequirement: modelChoiceId === String(player.player_id)
+          })
+        );
+
+        const topBefore = [...candidates]
+          .sort((a, b) => {
+            const bScore = getLegacyAlternativeSortScore(b, strategyKey);
+            const aScore = getLegacyAlternativeSortScore(a, strategyKey);
+            if (Number.isFinite(bScore) && Number.isFinite(aScore) && Math.abs(bScore - aScore) > 0.0001) {
+              return bScore - aScore;
+            }
+            return compareAlternativePlayers(a, b);
+          })
+          .slice(0, limit);
+
+        const topAfter = rankReplacementCandidates(candidates, currentPlayer).slice(0, limit);
+        const snapshot = {
+          slotKey: activeSlot.key,
+          strategyKey,
+          currentPlayer: currentPlayer.player_name,
+          before: topBefore.map(player => ({
+            player: player.player_name,
+            team: player.team_id,
+            legacyScore: getLegacyAlternativeSortScore(player, strategyKey),
+            adjustedScore: getStrategyAdjustedAlternativeScore(player, strategyKey),
+            nextWinProb: getNextMatchWinProb(player.team_id),
+            remainingWeightedWinProb: getUpcomingGroupWinProbSummary(player.team_id)?.weightedAverage ?? null
+          })),
+          after: topAfter.map(player => ({
+            player: player.player_name,
+            team: player.team_id,
+            legacyScore: getLegacyAlternativeSortScore(player, strategyKey),
+            adjustedScore: getStrategyAdjustedAlternativeScore(player, strategyKey),
+            nextWinProb: getNextMatchWinProb(player.team_id),
+            remainingWeightedWinProb: getUpcomingGroupWinProbSummary(player.team_id)?.weightedAverage ?? null
+          }))
+        };
+
+        console.log("[alternative-debug]", snapshot);
+        return snapshot;
+      } finally {
+        activeStrategyKey = previousStrategyKey;
+      }
+    }
+
+    window.debugAlternativeRankingForSlot = debugAlternativeRankingForSlot;
 
     function getBestAlternativesForActiveSlot(activeSlot, currentPlayer) {
       const groups = getAlternativeGroupsForActiveSlot(activeSlot, currentPlayer);
