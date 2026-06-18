@@ -147,6 +147,10 @@
       line-height: 1.2;
     }
 
+    .manual-budget-box {
+      min-width: 150px;
+    }
+
     .bank-box strong {
       font-size: 13px;
       color: white;
@@ -163,6 +167,11 @@
       color: #111827;
       font: inherit;
       box-sizing: border-box;
+    }
+
+    .manual-budget-box .manual-bank-input {
+      width: 100%;
+      max-width: none;
     }
 
     .formation-select-wrap {
@@ -3657,7 +3666,7 @@
                 <div><strong>Restbank</strong></div>
                 <div id="bankValue">50.000.000</div>
               </div>
-              <label class="bank-box">
+              <label class="bank-box manual-budget-box">
                 <div><strong>Aktuel budgetramme</strong></div>
                 <input id="manualBankInput" class="manual-bank-input" type="text" inputmode="decimal" placeholder="fx 51.967.490" aria-label="Samlet budgetramme i kroner eller millioner kroner" title="Du kan skrive budgetrammen som mio.-tal, fx 52,274, eller som hele kroner, fx 51.967.490. Eksisterende hold bruger ellers låste købspriser.">
               </label>
@@ -12175,6 +12184,11 @@ formationSelect.value = currentFormation;
     border-radius: 10px !important;
   }
 
+  .manual-budget-box {
+    min-width: 124px !important;
+    flex: 1 1 124px !important;
+  }
+
   .bank-box strong {
     font-size: 11px !important;
   }
@@ -12195,6 +12209,10 @@ formationSelect.value = currentFormation;
     margin-top: 2px !important;
     padding: 1px 5px !important;
     font-size: 11px !important;
+  }
+
+  .manual-budget-box .manual-bank-input {
+    max-width: none !important;
   }
 
   /* Strategiområdet skal være meget mindre */
@@ -12630,6 +12648,11 @@ formationSelect.value = currentFormation;
     border-radius: 9px !important;
   }
 
+  .manual-budget-box {
+    min-width: 112px !important;
+    flex: 1 1 112px !important;
+  }
+
   .bank-box strong {
     font-size: 10px !important;
     line-height: 1 !important;
@@ -12649,6 +12672,10 @@ formationSelect.value = currentFormation;
     max-width: 60px !important;
     padding: 1px 4px !important;
     font-size: 10px !important;
+  }
+
+  .manual-budget-box .manual-bank-input {
+    max-width: none !important;
   }
 
   /* Strategi gøres til kompakt bjælke */
