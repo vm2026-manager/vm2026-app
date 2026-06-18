@@ -9647,11 +9647,61 @@ formationSelect.value = currentFormation;
       var odds = await getOdds();
       var team = canonicalTeamId(player.team_id || player.team_name || "");
       var out = [];
+      var seen = new Set();
+
+      function resolveFixtureMeta(home, away, kickoff, matchId, opponent) {
+        var resolvedHome = canonicalTeamId(home);
+        var resolvedAway = canonicalTeamId(away);
+        var resolvedOpponent = canonicalTeamId(opponent || "");
+        var resolvedKickoff = String(kickoff || "");
+        var resolvedMatchId = matchId || "";
+
+        var fixtureMatch = null;
+        if (Array.isArray(fixtures) && fixtures.length) {
+          if (resolvedMatchId) {
+            fixtureMatch = fixtures.find(function (fixture) {
+              return String(fixture.match_id) === String(resolvedMatchId);
+            }) || null;
+          }
+
+          if (!fixtureMatch && team && resolvedOpponent) {
+            fixtureMatch = fixtures.find(function (fixture) {
+              var fixtureHome = canonicalTeamId(fixture.home);
+              var fixtureAway = canonicalTeamId(fixture.away);
+              return (
+                (fixtureHome === team && fixtureAway === resolvedOpponent) ||
+                (fixtureAway === team && fixtureHome === resolvedOpponent)
+              );
+            }) || null;
+          }
+        }
+
+        if (fixtureMatch) {
+          resolvedHome = canonicalTeamId(fixtureMatch.home || resolvedHome);
+          resolvedAway = canonicalTeamId(fixtureMatch.away || resolvedAway);
+          resolvedKickoff = String(fixtureMatch.kickoff_dk || fixtureMatch.kickoff || resolvedKickoff || "");
+          resolvedMatchId = fixtureMatch.match_id || resolvedMatchId;
+          if (!resolvedOpponent) {
+            resolvedOpponent = resolvedHome === team ? resolvedAway : resolvedHome;
+          }
+        }
+
+        return {
+          home: resolvedHome,
+          away: resolvedAway,
+          kickoff: resolvedKickoff,
+          matchId: resolvedMatchId,
+          opponent: resolvedOpponent
+        };
+      }
 
       function addFixture(home, away, kickoff, matchId, explicitOpponent) {
-        home = canonicalTeamId(home);
-        away = canonicalTeamId(away);
-        var opponent = canonicalTeamId(explicitOpponent || (home === team ? away : home));
+        var resolved = resolveFixtureMeta(home, away, kickoff, matchId, explicitOpponent);
+        home = resolved.home;
+        away = resolved.away;
+        kickoff = resolved.kickoff;
+        matchId = resolved.matchId;
+        var opponent = canonicalTeamId(resolved.opponent || (home === team ? away : home));
 
         if (!team || !opponent || opponent === "0") return;
         if (!kickoff) {
@@ -9659,6 +9709,10 @@ formationSelect.value = currentFormation;
           kickoff = kickoffRow ? kickoffRow.kickoff : "";
         }
         if (!isFuture(kickoff)) return;
+
+        var dedupeKey = String(matchId || [team, opponent, kickoff].join("|"));
+        if (seen.has(dedupeKey)) return;
+        seen.add(dedupeKey);
 
         var row = odds.get(home + "|" + away) || odds.get(away + "|" + home);
         if (!row && matchId) {
@@ -9746,6 +9800,12 @@ formationSelect.value = currentFormation;
             addFixture(f.home, f.away, f.kickoff_dk || f.kickoff || "", f.match_id);
           });
       }
+
+      out.sort(function (a, b) {
+        var ad = typeof kickoffToDate === "function" ? kickoffToDate(a.kickoff) : null;
+        var bd = typeof kickoffToDate === "function" ? kickoffToDate(b.kickoff) : null;
+        return (ad ? ad.getTime() : 0) - (bd ? bd.getTime() : 0);
+      });
 
       return out.slice(0, 3);
     }
