@@ -4877,7 +4877,41 @@ function postProcessTimeAwareStrategyButtons() {
         </span>
       `;
     }
+function normalizeSquadStateAgainstTransferBaseline() {
+      if (!hasTransferBaselinePlayers()) return;
+
+      const baselineSquad = transferBaselineSquad && typeof transferBaselineSquad === "object"
+        ? transferBaselineSquad
+        : {};
+      const baselinePrices = transferBaselinePurchasePrices && typeof transferBaselinePurchasePrices === "object"
+        ? transferBaselinePurchasePrices
+        : {};
+
+      getCurrentSlots().forEach(slot => {
+        const slotKey = slot.key;
+        const baselinePlayerId = baselineSquad?.[slotKey] || null;
+        const currentPlayerId = squad?.[slotKey] || null;
+
+        if (String(baselinePlayerId || "") !== String(currentPlayerId || "")) {
+          return;
+        }
+
+        if (!currentPlayerId) {
+          delete squadPurchasePrices[slotKey];
+          return;
+        }
+
+        const baselinePrice = getPurchasePriceForSlot(slotKey, baselineSquad, baselinePrices);
+        if (baselinePrice !== null && baselinePrice > 0) {
+          squadPurchasePrices[slotKey] = baselinePrice;
+        } else {
+          delete squadPurchasePrices[slotKey];
+        }
+      });
+    }
+
 function saveState() {
+      normalizeSquadStateAgainstTransferBaseline();
       transferChanges = synchronizeTransferChanges();
       captainPlayerId = normalizeCaptainPlayerId(captainPlayerId);
       if (captainPlayerId && !hasCaptainPlayerInSquad(captainPlayerId)) {
