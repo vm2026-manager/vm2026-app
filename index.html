@@ -9422,6 +9422,12 @@ formationSelect.value = currentFormation;
         void queueAutosave();
       });
 
+      manualBankInput.addEventListener("blur", () => {
+        setManualBankMillions(manualBankInput.value);
+        saveState();
+        refreshTradeListAfterBudgetChange();
+      });
+
       manualBankInput.addEventListener("keydown", event => {
         if (event.key !== "Enter") return;
         event.preventDefault();
