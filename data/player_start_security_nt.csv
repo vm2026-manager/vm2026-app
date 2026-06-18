@@ -660,7 +660,7 @@ lucas_chevalier__fra,Lucas Chevalier,FRA,GK,0,0.0,0.0,holdet_official_unmatched_
 dominik_livakovi__cro,Dominik Livakovic,CRO,GK,95,0.9486,0.9486,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,sikker starter - GK hierarchy,,,,,,0.6372,,,,dominik livakovic||cro,,,0.9486,0.9471,low_risk,low_risk,
 jonas_urbig__ger,Jonas Urbig,GER,GK,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,ude - GK hierarchy,,,,,,,,,,,,,0.0,0.75,out,out_of_tournament,0.0
 finn_dahmen__ger,Finn Dahmen,GER,GK,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,ude - GK hierarchy,,,,,,,,,,,,,0.0,0.8879,out,out_of_tournament,0.0
-oliver_baumann__ger,Oliver Baumann,GER,GK,66,0.6554,0.6554,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,sandsynlig starter - GK hierarchy,,,,,,0.342,,,,oliver baumann||ger,,,0.6554,0.9567,medium_risk,medium_risk,
+oliver_baumann__ger,Oliver Baumann,GER,GK,10,0.1,0.1,manual_context_override_safe,reservekeeper - GK hierarchy,,,,,,0.342,,,,oliver baumann||ger,,,0.1,0.9567,medium_risk,medium_risk,
 manuel_neuer__ger,Manuel Neuer,GER,GK,28,0.2771,0.2771,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,rotation/usikker - GK hierarchy,,,,,,0.8454,,,,manuel neuer||ger,,,0.2771,0.6164,high_risk,high_risk,
 alexander_n_bel__ger,Alexander Nübel,GER,GK,7,0.0675,0.0675,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.143,,,,alexander nubel||ger,,,0.0675,0.9384,medium_risk,medium_risk,
 dominik_kotarski__cro,Dominik Kotarski,CRO,GK,3,0.0263,0.0263,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.1323,,,,dominik kotarski||cro,,,0.0263,0.6,high_risk,high_risk,

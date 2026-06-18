@@ -56376,8 +56376,8 @@
     "old_player_id": "oliver_baumann__ger",
     "old_match_method": "exact_name_team",
     "old_match_score": 1.0,
-    "start_prob": 0.6554,
-    "start_prob_source": "transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized",
+    "start_prob": 0.1,
+    "start_prob_source": "manual_context_override_safe",
     "weighted_group_stage_ev": 16.768131,
     "optimizer_ev": 16.768131,
     "holdet_appearance": {
@@ -56416,7 +56416,7 @@
     "gk_start_prob_raw_before_normalization": 0.5908,
     "gk_start_prob_normalized": 0.6554,
     "gk_start_prob_normalized_at": "2026-06-07",
-    "conditional_start_prob": 0.6554,
+    "conditional_start_prob": 0.1,
     "availability_prob": 0.9567,
     "availability_risk": "medium_risk",
     "availability_status": "medium_risk",
@@ -56451,7 +56451,9 @@
     "round2_ev": 0.696025,
     "round3_ev": 0.623683,
     "start_pct": 66,
-    "start_price": 5000000
+    "start_price": 5000000,
+    "start_signal_context_note": "Manual GK audit 2026-06-18: Oliver Baumann downgraded pending concrete Germany starter confirmation.",
+    "source_note": "Manual GK audit 2026-06-18: Oliver Baumann downgraded pending concrete Germany starter confirmation."
   },
   {
     "player_id": "manuel_neuer__ger",

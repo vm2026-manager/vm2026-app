@@ -1,0 +1,186 @@
+﻿team_id,team_name,gk_count,sum_start_prob,max_start_prob,over_100_flag,multiple_high_gk_flag,player_name,player_id,start_prob,conditional_start_prob,start_prob_source,optimizer_ev,price
+ALG,Algeriet,5,1.0,0.782,FALSE,FALSE,Luca Zidane,luca_zidane__alg,0.782,0.782,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,2.549619,2990000
+ALG,Algeriet,5,1.0,0.782,FALSE,FALSE,Melvin Feycal Mastil,melvin_feycal_mastil__alg,0.1929,0.1929,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.435424,2495000
+ALG,Algeriet,5,1.0,0.782,FALSE,FALSE,Oussama Benbout,oussama_benbout__alg,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.0,2495000
+ALG,Algeriet,5,1.0,0.782,FALSE,FALSE,Alexis Guendouz,alexis_guendouz__alg,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,3000000
+ALG,Algeriet,5,1.0,0.782,FALSE,FALSE,Anthony Mandrea,anthony_mandrea__alg,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,3000000
+ARG,Argentina,4,0.9999,0.938,FALSE,FALSE,Emiliano Martinez,emiliano_mart_nez__arg,0.938,0.938,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,15.901831,5137000
+ARG,Argentina,4,0.9999,0.938,FALSE,FALSE,Juan Musso,juan_musso__arg,0.0368,0.0368,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,1.302918,3995000
+ARG,Argentina,4,0.9999,0.938,FALSE,FALSE,Geronimo Rulli,ger_nimo_rulli__arg,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.460421,4495000
+ARG,Argentina,4,0.9999,0.938,FALSE,FALSE,Walter Benitez,walter_benitez__arg,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,4000000
+AUS,Australien,3,1.0,0.8931,FALSE,FALSE,Mathew Ryan,mathew_ryan__aus,0.8931,0.8931,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,1.057617,2995000
+AUS,Australien,3,1.0,0.8931,FALSE,FALSE,Patrick Beach,patrick_beach__aus,0.0801,0.0801,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.111604,2667000
+AUS,Australien,3,1.0,0.8931,FALSE,FALSE,Paul Izzo,paul_izzo__aus,0.0268,0.0268,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.080717,2495000
+AUT,Østrig,4,1.0289,0.95,TRUE,FALSE,Alexander Schlager,alexander_schlager__aut,0.95,0.95,manual_context_override_safe,5.632324,3569000
+AUT,Østrig,4,1.0289,0.95,TRUE,FALSE,Patrick Pentz,patrick_pentz__aut,0.0538,0.0538,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.430095,2995000
+AUT,Østrig,4,1.0289,0.95,TRUE,FALSE,Florian Wiegele,florian_wiegele__aut,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.0,2495000
+AUT,Østrig,4,1.0289,0.95,TRUE,FALSE,Nikolas Polster,nikolas_polster__aut,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,2500000
+BEL,Belgien,5,1.0,0.9486,FALSE,FALSE,Thibaut Courtois,thibaut_courtois__bel,0.9486,0.9486,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,11.461094,4529000
+BEL,Belgien,5,1.0,0.9486,FALSE,FALSE,Senne Lammens,senne_lammens__bel,0.0263,0.0263,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.343993,3995000
+BEL,Belgien,5,1.0,0.9486,FALSE,FALSE,Mike Penders,mike_penders__bel,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.395085,3495000
+BEL,Belgien,5,1.0,0.9486,FALSE,FALSE,Maarten Vandevoordt,maarten_vandevoordt__bel,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,3500000
+BEL,Belgien,5,1.0,0.9486,FALSE,FALSE,Matz Sels,matz_sels__bel,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,4500000
+BIH,Bosnien-Hercegovina,4,1.0,0.9097,FALSE,FALSE,Nikola Vasilj,nikola_vasilj__bih,0.9097,0.9097,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,3.413347,3019000
+BIH,Bosnien-Hercegovina,4,1.0,0.9097,FALSE,FALSE,Martin Zlomislic,martin_zlomisli__bih,0.0652,0.0652,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.232798,2495000
+BIH,Bosnien-Hercegovina,4,1.0,0.9097,FALSE,FALSE,Mladen Jurkas,mladen_jurkas__bih,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.0,2495000
+BIH,Bosnien-Hercegovina,4,1.0,0.9097,FALSE,FALSE,Osman Hadzikic,osman_hadzikic__bih,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,2500000
+BRA,Brasilien,4,1.0251,0.65,TRUE,FALSE,Alisson Becker,alisson_becker__bra,0.65,0.7,manual_context_override_safe,21.501081,5019000
+BRA,Brasilien,4,1.0251,0.65,TRUE,FALSE,Ederson Moraes,ederson_moraes__bra,0.3,0.35,manual_context_override_safe,0.732927,4995000
+BRA,Brasilien,4,1.0251,0.65,TRUE,FALSE,Bento Krepski,bento_krepski__bra,0.05,0.08,manual_context_override_safe,0.0,5000000
+BRA,Brasilien,4,1.0251,0.65,TRUE,FALSE,Weverton,weverton__bra,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.691232,3995000
+CAN,Canada,3,0.8552,0.8,FALSE,FALSE,Maxime Crepeau,maxime_cr_peau__can,0.8,0.88,manual_context_override_safe,9.329998,3029000
+CAN,Canada,3,0.8552,0.8,FALSE,FALSE,Dayne St. Clair,dayne_st_clair__can,0.0301,0.0301,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.422396,3495000
+CAN,Canada,3,0.8552,0.8,FALSE,FALSE,Owen Goodman,owen_goodman__can,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.54364,2495000
+CIV,Elfenbenskysten,3,1.0,0.892,FALSE,FALSE,Yahia Fofana,yahia_fofana__civ,0.892,0.892,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,5.03514,3122000
+CIV,Elfenbenskysten,3,1.0,0.892,FALSE,FALSE,Alban Lafont,alban_lafont__civ,0.0829,0.0829,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.371643,2495000
+CIV,Elfenbenskysten,3,1.0,0.892,FALSE,FALSE,Mohamed Kone,mohamed_kone__civ,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.0,2995000
+COD,Congo DR,3,1.0,0.9494,FALSE,FALSE,Lionel Mpasi Nzau,lionel_mpasi_nzau__cod,0.9494,0.9494,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,1.061036,2514000
+COD,Congo DR,3,1.0,0.9494,FALSE,FALSE,Timothy Fayulu,timothy_fayulu__cod,0.0255,0.0255,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.060125,2495000
+COD,Congo DR,3,1.0,0.9494,FALSE,FALSE,Matthieu Epolo,matthieu_epolo__cod,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.101003,2995000
+COL,Colombia,3,1.0001,0.7899,FALSE,FALSE,Camilo Vargas,camilo_vargas__col,0.7899,0.7899,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,10.265664,4059000
+COL,Colombia,3,1.0001,0.7899,FALSE,FALSE,David Ospina,david_ospina__col,0.1212,0.1212,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,1.507991,3495000
+COL,Colombia,3,1.0001,0.7899,FALSE,FALSE,Alvaro Montero,alvaro_montero__col,0.089,0.089,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,1.253397,3995000
+CPV,Kap Verde,4,1.0,0.9285,FALSE,FALSE,Vozinha,vozinha__cpv,0.9285,0.9285,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.969572,2655000
+CPV,Kap Verde,4,1.0,0.9285,FALSE,FALSE,Marcio Rosa,marcio_rosa__cpv,0.0464,0.0464,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.0,2495000
+CPV,Kap Verde,4,1.0,0.9285,FALSE,FALSE,CJ Dos Santos,cj_dos_santos__cpv,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.0,2495000
+CPV,Kap Verde,4,1.0,0.9285,FALSE,FALSE,Bruno Varela,bruno_varela__cpv,0.0,0.0,holdet_official_unmatched_default,0.0,2500000
+CRO,Kroatien,3,1.0,0.9486,FALSE,FALSE,Dominik Livakovic,dominik_livakovi__cro,0.9486,0.9486,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,7.418713,4022000
+CRO,Kroatien,3,1.0,0.9486,FALSE,FALSE,Dominik Kotarski,dominik_kotarski__cro,0.0263,0.0263,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.216728,2995000
+CRO,Kroatien,3,1.0,0.9486,FALSE,FALSE,Ivor Pandur,ivor_pandur__cro,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.628593,2495000
+CUW,Curaçao,3,1.0,0.9495,FALSE,FALSE,Eloy Room,eloy_room__cuw,0.9495,0.9495,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.284586,2473000
+CUW,Curaçao,3,1.0,0.9495,FALSE,FALSE,Trevor Doornbusch,trevor_doornbusch__cuw,0.0254,0.0254,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.0,2495000
+CUW,Curaçao,3,1.0,0.9495,FALSE,FALSE,Tyrick Bodak,tyrick_bodak__cuw,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.0,2495000
+CZE,Tjekkiet,4,0.9999,0.9039,FALSE,FALSE,Matej Kovar,matej_kovar__cze,0.9039,0.9039,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,2.805337,3018000
+CZE,Tjekkiet,4,0.9999,0.9039,FALSE,FALSE,Lukas Hornicek,lukas_hornicek__cze,0.0622,0.0622,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.116794,2495000
+CZE,Tjekkiet,4,0.9999,0.9039,FALSE,FALSE,Jindrich Stanek,jindrich_stanek__cze,0.0338,0.0338,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.0,2495000
+CZE,Tjekkiet,4,0.9999,0.9039,FALSE,FALSE,Martin Jedlicka,martin_jedlicka__cze,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,2500000
+ECU,Ecuador,4,1.0001,0.7812,FALSE,FALSE,Hernan Galindez,hern_n_gal_ndez__ecu,0.7812,0.7812,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,8.495284,3506000
+ECU,Ecuador,4,1.0001,0.7812,FALSE,FALSE,Gonzalo Valle,gonzalo_valle__ecu,0.1261,0.1261,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,1.261501,2995000
+ECU,Ecuador,4,1.0001,0.7812,FALSE,FALSE,Moises Ramirez,moises_ramirez__ecu,0.0928,0.0928,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.698755,2495000
+ECU,Ecuador,4,1.0001,0.7812,FALSE,FALSE,David Cabezas,david_cabezas__ecu,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,2500000
+EGY,Egypten,4,1.0001,0.5193,FALSE,TRUE,Mostafa Oufa Shobeir,oufa_shobeir__egy,0.5193,0.5193,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,2.238991,2524000
+EGY,Egypten,4,1.0001,0.5193,FALSE,TRUE,Mohamed El-Shennawy,mohamed_el_shenawy__egy,0.4506,0.4506,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,2.617303,2995000
+EGY,Egypten,4,1.0001,0.5193,FALSE,TRUE,El Mahdi Soliman,el_mahdi_soliman__egy,0.0151,0.0151,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.0,2495000
+EGY,Egypten,4,1.0001,0.5193,FALSE,TRUE,Mohamed Alaa,mohamed_alaa__egy,0.0151,0.0151,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.0,2495000
+ENG,England,3,1.0,0.9287,FALSE,FALSE,Jordan Pickford,jordan_pickford__eng,0.9287,0.9287,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,12.995492,5071000
+ENG,England,3,1.0,0.9287,FALSE,FALSE,James Trafford,james_trafford__eng,0.0437,0.0437,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.6312,3995000
+ENG,England,3,1.0,0.9287,FALSE,FALSE,Dean Henderson,dean_henderson__eng,0.0276,0.0276,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.433351,4495000
+ESP,Spanien,4,1.1096,0.86,TRUE,FALSE,Unai Simon,unai_sim_n__esp,0.86,0.86,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,26.557254,5092000
+ESP,Spanien,4,1.1096,0.86,TRUE,FALSE,Joan Garcia,joan_garcia__esp,0.15,0.2,manual_context_override_safe,1.170035,3995000
+ESP,Spanien,4,1.1096,0.86,TRUE,FALSE,David Raya,david_raya__esp,0.0996,0.0996,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,3.051823,4995000
+ESP,Spanien,4,1.1096,0.86,TRUE,FALSE,Alejandro 'Alex' Remiro,alejandro_alex_remiro__esp,0.0,0.0,holdet_official_unmatched_default,0.0,4000000
+FRA,Frankrig,4,0.8794,0.82,FALSE,FALSE,Mike Maignan,mike_maignan__fra,0.82,0.95,manual_context_override_safe,20.233152,5064000
+FRA,Frankrig,4,0.8794,0.82,FALSE,FALSE,Brice Samba,brice_samba__fra,0.0343,0.0343,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.946229,4495000
+FRA,Frankrig,4,0.8794,0.82,FALSE,FALSE,Robin Risser,robin_risser__fra,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.53012,3995000
+FRA,Frankrig,4,0.8794,0.82,FALSE,FALSE,Lucas Chevalier,lucas_chevalier__fra,0.0,0.0,holdet_official_unmatched_default,0.0,4000000
+GER,Tyskland,5,1.0,0.6554,FALSE,FALSE,Oliver Baumann,oliver_baumann__ger,0.6554,0.6554,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,16.768131,4995000
+GER,Tyskland,5,1.0,0.6554,FALSE,FALSE,Manuel Neuer,manuel_neuer__ger,0.2771,0.2771,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,6.613654,5099000
+GER,Tyskland,5,1.0,0.6554,FALSE,FALSE,Alexander Nübel,alexander_n_bel__ger,0.0675,0.0675,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,1.526685,4495000
+GER,Tyskland,5,1.0,0.6554,FALSE,FALSE,Jonas Urbig,jonas_urbig__ger,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,4000000
+GER,Tyskland,5,1.0,0.6554,FALSE,FALSE,Finn Dahmen,finn_dahmen__ger,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,4000000
+GHA,Ghana,5,1.0,0.8194,FALSE,FALSE,Benjamin Asare,benjamin_asare__gha,0.8194,0.8194,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,1.902633,3057000
+GHA,Ghana,5,1.0,0.8194,FALSE,FALSE,Lawrence Ati Zigi,lawrence_ati_zigi__gha,0.1554,0.1554,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.472603,3037000
+GHA,Ghana,5,1.0,0.8194,FALSE,FALSE,Joseph Anang,joseph_anang__gha,0.0252,0.0252,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.0,2495000
+GHA,Ghana,5,1.0,0.8194,FALSE,FALSE,Solomon Agbasi,solomon_agbasi__gha,0.0,0.0,holdet_official_unmatched_default,0.0,2500000
+GHA,Ghana,5,1.0,0.8194,FALSE,FALSE,Paul Reverson,paul_reverson__gha,0.0,0.0,holdet_official_unmatched_default,0.0,2500000
+HAI,Haiti,3,1.0,0.8957,FALSE,FALSE,Johny Placide,johny_placide__hai,0.8957,0.8957,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.305088,2496000
+HAI,Haiti,3,1.0,0.8957,FALSE,FALSE,Alexandre Pierre,alexandre_pierre__hai,0.0792,0.0792,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.061024,2495000
+HAI,Haiti,3,1.0,0.8957,FALSE,FALSE,Josue Duverger,josue_duverger__hai,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.0,2495000
+IRN,Iran,4,1.0,0.9189,FALSE,FALSE,Alireza Beiranvand,alireza_beiranvand__irn,0.9189,0.9189,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,2.782046,3046000
+IRN,Iran,4,1.0,0.9189,FALSE,FALSE,Seyed Hossein Hosseini,seyed_hossein_hosseini__irn,0.0501,0.0501,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.265584,2495000
+IRN,Iran,4,1.0,0.9189,FALSE,FALSE,Payam Niazmand,payam_niazmand__irn,0.031,0.031,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.145606,2495000
+IRN,Iran,4,1.0,0.9189,FALSE,FALSE,Mohammad Khalife,mohammad_khalife__irn,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,2500000
+IRQ,Irak,4,1.0,0.845,FALSE,FALSE,Ahmed Basil Fadhil,ahmed_basil_fadhil__irq,0.845,0.845,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.35212,2495000
+IRQ,Irak,4,1.0,0.845,FALSE,FALSE,Fahad Talib,fahad_talib__irq,0.079,0.079,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.010623,2495000
+IRQ,Irak,4,1.0,0.845,FALSE,FALSE,Jalal Hassan,jalal_hassan__irq,0.076,0.076,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.0,2487000
+IRQ,Irak,4,1.0,0.845,FALSE,FALSE,Kumel Al-Rekabe,kumel_al_rekabe__irq,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,2500000
+JOR,Jordan,4,1.0,0.9498,FALSE,FALSE,Yazeed Abulaila,yazeed_abulaila__jor,0.9498,0.9498,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.394976,2490000
+JOR,Jordan,4,1.0,0.9498,FALSE,FALSE,Noureddin Bani Attiah,noureddin_bani_attiah__jor,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.0,2495000
+JOR,Jordan,4,1.0,0.9498,FALSE,FALSE,Abdallah Al-Fakhouri,abdallah_al_fakhouri__jor,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.041497,2495000
+JOR,Jordan,4,1.0,0.9498,FALSE,FALSE,Abdel Rahman Al-Talalga,abdel_rahman_al_talalga__jor,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,2500000
+JPN,Japan,3,1.0,0.9433,FALSE,FALSE,Zion Suzuki,zion_suzuki__jpn,0.9433,0.9433,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,4.727281,4036000
+JPN,Japan,3,1.0,0.9433,FALSE,FALSE,Tomoki Hayakawa,tomoki_hayakawa__jpn,0.0304,0.0304,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.208985,3495000
+JPN,Japan,3,1.0,0.9433,FALSE,FALSE,Keisuke Osako,keisuke_sako__jpn,0.0263,0.0263,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.183843,3495000
+KOR,Sydkorea,3,1.0,0.7029,FALSE,FALSE,Seung-Gyu Kim,kim_seung_gyu__kor,0.7029,0.7029,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,2.176383,3059000
+KOR,Sydkorea,3,1.0,0.7029,FALSE,FALSE,Hyeon-Woo Jo,jo_hyeon_woo__kor,0.272,0.272,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,1.005921,3495000
+KOR,Sydkorea,3,1.0,0.7029,FALSE,FALSE,Bum-Keun Song,bum_keun_song__kor,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.03334,2495000
+KSA,Saudi-Arabien,5,1.0,0.7314,FALSE,FALSE,Mohammed Al-Owais,mohammed_al_owais__ksa,0.7314,0.7314,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,1.066982,3069000
+KSA,Saudi-Arabien,5,1.0,0.7314,FALSE,FALSE,Nawaf Al-Aqidi,nawaf_al_aqidi__ksa,0.1772,0.1772,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.357593,2495000
+KSA,Saudi-Arabien,5,1.0,0.7314,FALSE,FALSE,Ahmed Al-Kassar,ahmed_al_kassar__ksa,0.0914,0.0914,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.0,2495000
+KSA,Saudi-Arabien,5,1.0,0.7314,FALSE,FALSE,Abdulrahman Al-Sanbi,abdulrahman_al_sanbi__ksa,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,2500000
+KSA,Saudi-Arabien,5,1.0,0.7314,FALSE,FALSE,Mohammed Al-Rubaie Al-Yami,mohammed_al_rubaie_al_yami__ksa,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,2500000
+MAR,Marokko,5,1.0,0.949,FALSE,FALSE,Yassine 'Bono' Bounou,yassine_bono_bounou__mar,0.949,0.949,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,8.946041,3534000
+MAR,Marokko,5,1.0,0.949,FALSE,FALSE,Munir Mohamedi El Kajoui,munir_mohamedi_el_kajoui__mar,0.0259,0.0259,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.0,2995000
+MAR,Marokko,5,1.0,0.949,FALSE,FALSE,Ahmed Reda Tagnaouti,ahmed_reda_tagnaouti__mar,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.0,2495000
+MAR,Marokko,5,1.0,0.949,FALSE,FALSE,El Mehdi Al Harrar,el_mehdi_al_harrar__mar,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,2500000
+MAR,Marokko,5,1.0,0.949,FALSE,FALSE,El Mehdi Benabid,el_mehdi_benabid__mar,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,3000000
+MEX,Mexico,3,1.0,0.9397,FALSE,FALSE,Raul Rangel,raul_rangel__mex,0.9397,0.9397,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,10.854725,4137000
+MEX,Mexico,3,1.0,0.9397,FALSE,FALSE,Guillermo Ochoa,guillermo_ochoa__mex,0.0352,0.0352,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.438269,2995000
+MEX,Mexico,3,1.0,0.9397,FALSE,FALSE,Carlos Acevedo,carlos_acevedo__mex,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.299323,3495000
+NED,Holland,4,1.0,0.9012,FALSE,FALSE,Bart Verbruggen,bart_verbruggen__ned,0.9012,0.9012,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,6.948376,4521000
+NED,Holland,4,1.0,0.9012,FALSE,FALSE,Mark Flekken,mark_flekken__ned,0.0737,0.0737,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.607007,3995000
+NED,Holland,4,1.0,0.9012,FALSE,FALSE,Robin Roefs,robin_roefs__ned,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.0,3495000
+NED,Holland,4,1.0,0.9012,FALSE,FALSE,Justin Bijlow,justin_bijlow__ned,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,3500000
+NOR,Norge,4,1.0,0.9496,FALSE,FALSE,Ørjan Nyland,rjan_nyland__nor,0.9496,0.9496,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,9.52045,4064000
+NOR,Norge,4,1.0,0.9496,FALSE,FALSE,Egil Selvik,egil_selvik__nor,0.0253,0.0253,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.296114,3495000
+NOR,Norge,4,1.0,0.9496,FALSE,FALSE,Sander Tangvik,sander_tangvik__nor,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.0,2995000
+NOR,Norge,4,1.0,0.9496,FALSE,FALSE,Viljar Myhra,viljar_myhra__nor,0.0,0.0,holdet_official_unmatched_default,0.0,2500000
+NZL,New Zealand,3,0.9999,0.5912,FALSE,TRUE,Alex Paulsen,alex_paulsen__nzl,0.5912,0.5912,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.450521,2495000
+NZL,New Zealand,3,0.9999,0.5912,FALSE,TRUE,Max Crocombe,max_crocombe__nzl,0.3832,0.3832,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.301408,2526000
+NZL,New Zealand,3,0.9999,0.5912,FALSE,TRUE,Michael Woud,michael_woud__nzl,0.0255,0.0255,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.024254,2495000
+PAN,Panama,3,1.0,0.8542,FALSE,FALSE,Orlando Mosquera,orlando_mosquera__pan,0.8542,0.8542,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.62742,2496000
+PAN,Panama,3,1.0,0.8542,FALSE,FALSE,Luis Mejia,luis_mejia__pan,0.0982,0.0982,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.125268,2495000
+PAN,Panama,3,1.0,0.8542,FALSE,FALSE,Cesar Samudio,cesar_samudio__pan,0.0476,0.0476,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.0,2495000
+PAR,Paraguay,5,1.0,0.4555,FALSE,FALSE,Roberto 'Gatito' Fernandez,roberto_gatito_fernandez__par,0.4555,0.4555,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,1.205382,2995000
+PAR,Paraguay,5,1.0,0.4555,FALSE,FALSE,Orlando Gill,orlando_gill__par,0.3331,0.3331,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.939376,2997000
+PAR,Paraguay,5,1.0,0.4555,FALSE,FALSE,Gaston Olveira,gaston_olveira__par,0.2114,0.2114,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.594893,2995000
+PAR,Paraguay,5,1.0,0.4555,FALSE,FALSE,Juan Espinola,juan_espinola__par,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,2500000
+PAR,Paraguay,5,1.0,0.4555,FALSE,FALSE,Carlos Miguel Coronel,carlos_miguel_coronel__par,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,2500000
+POR,Portugal,5,1.0,0.6212,FALSE,FALSE,Diogo Costa,diogo_costa__por,0.6212,0.6212,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,8.480255,5019000
+POR,Portugal,5,1.0,0.6212,FALSE,FALSE,Jose Sa,jos_s__por,0.3446,0.3446,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,4.500301,4495000
+POR,Portugal,5,1.0,0.6212,FALSE,FALSE,Rui Silva,rui_silva__por,0.0342,0.0342,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,1.113419,3995000
+POR,Portugal,5,1.0,0.6212,FALSE,FALSE,Joao Carvalho,joao_carvalho__por,0.0,0.0,holdet_official_unmatched_default,0.0,3500000
+POR,Portugal,5,1.0,0.6212,FALSE,FALSE,Ricardo Velho,ricardo_velho__por,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,4000000
+QAT,Qatar,4,1.0,0.5918,FALSE,TRUE,Meshaal Barsham,meshaal_barsham__qat,0.5918,0.5918,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.329837,2495000
+QAT,Qatar,4,1.0,0.5918,FALSE,TRUE,Mahmoud Abunada,mahmoud_abunada__qat,0.3826,0.3826,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.126652,2552000
+QAT,Qatar,4,1.0,0.5918,FALSE,TRUE,Salah Zakaria,salah_zakaria__qat,0.0256,0.0256,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.0,2495000
+QAT,Qatar,4,1.0,0.5918,FALSE,TRUE,Shehab Ellethy,shehab_ellethy__qat,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,2500000
+RSA,Sydafrika,3,0.9999,0.92,FALSE,FALSE,Ronwen Williams,ronwen_williams__rsa,0.92,0.92,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.986527,2993000
+RSA,Sydafrika,3,0.9999,0.92,FALSE,FALSE,Ricardo Goss,ricardo_goss__rsa,0.0547,0.0547,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.0,2495000
+RSA,Sydafrika,3,0.9999,0.92,FALSE,FALSE,Sipho Chaine,sipho_chaine__rsa,0.0252,0.0252,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.0,2495000
+SCO,Skotland,4,0.9999,0.4868,FALSE,FALSE,Craig Gordon,craig_gordon__sco,0.4868,0.4868,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,1.991663,2495000
+SCO,Skotland,4,0.9999,0.4868,FALSE,FALSE,Angus Gunn,angus_gunn__sco,0.2623,0.2623,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,1.707063,3627000
+SCO,Skotland,4,0.9999,0.4868,FALSE,FALSE,Liam Kelly,liam_kelly__sco,0.2508,0.2508,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,1.363233,2995000
+SCO,Skotland,4,0.9999,0.4868,FALSE,FALSE,Scott Bain,scott_bain__sco,0.0,0.0,holdet_official_unmatched_default,0.0,2500000
+SEN,Senegal,3,1.0,0.6706,FALSE,FALSE,Edouard Mendy,edouard_mendy__sen,0.6706,0.6706,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,4.317495,3510000
+SEN,Senegal,3,1.0,0.6706,FALSE,FALSE,Mory Diaw,mory_diaw__sen,0.2679,0.2679,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,1.453502,2995000
+SEN,Senegal,3,1.0,0.6706,FALSE,FALSE,Yehvann Diouf,yehvann_diouf__sen,0.0615,0.0615,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.334446,2995000
+SUI,Schweiz,4,1.0056,0.92,FALSE,FALSE,Gregor Kobel,gregor_kobel__sui,0.92,0.96,manual_context_override_safe,11.539518,4029000
+SUI,Schweiz,4,1.0056,0.92,FALSE,FALSE,Yvon Mvogo,yvon_mvogo__sui,0.0605,0.0605,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.735596,2995000
+SUI,Schweiz,4,1.0056,0.92,FALSE,FALSE,Marvin Keller,marvin_keller__sui,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.28808,2995000
+SUI,Schweiz,4,1.0056,0.92,FALSE,FALSE,Pascal Loretz,pascal_loretz__sui,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,3000000
+SWE,Sverige,6,0.9999,0.4727,FALSE,TRUE,Kristoffer Nordfeldt,kristoffer_nordfeldt__swe,0.4727,0.4727,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,1.801111,4079000
+SWE,Sverige,6,0.9999,0.4727,FALSE,TRUE,Jacob Widell Zetterström,jacob_widell_zetterstrom__swe,0.3576,0.3576,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,1.320045,3495000
+SWE,Sverige,6,0.9999,0.4727,FALSE,TRUE,Viktor Johansson,viktor_johansson__swe,0.1696,0.1696,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.71159,3495000
+SWE,Sverige,6,0.9999,0.4727,FALSE,TRUE,Melker Ellborg,melker_ellborg__swe,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,3500000
+SWE,Sverige,6,0.9999,0.4727,FALSE,TRUE,Noel Törnqvist,noel_tornqvist__swe,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,3500000
+SWE,Sverige,6,0.9999,0.4727,FALSE,TRUE,Robin Olsen,robin_olsen__swe,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,4000000
+TUN,Tunesien,5,1.0,0.924,FALSE,FALSE,Abdelmouhib Chamakh,abdelmouhib_chamakh__tun,0.924,0.924,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.849804,2474000
+TUN,Tunesien,5,1.0,0.924,FALSE,FALSE,Aymen Dahmen,aymen_dahmen__tun,0.0499,0.0499,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.239802,2995000
+TUN,Tunesien,5,1.0,0.924,FALSE,FALSE,Sabri Ben Hessen,sabri_ben_hessen__tun,0.0261,0.0261,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.0,2495000
+TUN,Tunesien,5,1.0,0.924,FALSE,FALSE,Noureddine Farhati,noureddine_farhati__tun,0.0,0.0,holdet_official_unmatched_default,0.0,2500000
+TUN,Tunesien,5,1.0,0.924,FALSE,FALSE,Bechir Ben Said,bechir_ben_said__tun,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,3000000
+TUR,Tyrkiet,4,1.0,0.9123,FALSE,FALSE,Ugurcan Cakir,ugurcan_cakir__tur,0.9123,0.9123,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,4.547585,3993000
+TUR,Tyrkiet,4,1.0,0.9123,FALSE,FALSE,Altay Bayindir,altay_bayindir__tur,0.0584,0.0584,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.243606,2995000
+TUR,Tyrkiet,4,1.0,0.9123,FALSE,FALSE,Mert Günok,mert_gunok__tur,0.0293,0.0293,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.203676,3495000
+TUR,Tyrkiet,4,1.0,0.9123,FALSE,FALSE,Muhammed Sengezer,muhammed_sengezer__tur,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,3000000
+URU,Uruguay,3,1.0,0.5955,FALSE,TRUE,Sergio Rochet,sergio_rochet__uru,0.5955,0.5955,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,6.822548,3995000
+URU,Uruguay,3,1.0,0.5955,FALSE,TRUE,Fernando Muslera,fernando_muslera__uru,0.3731,0.3731,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,4.193249,4024000
+URU,Uruguay,3,1.0,0.5955,FALSE,TRUE,Santiago Mele,santiago_mele__uru,0.0314,0.0314,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.352285,3495000
+USA,USA,4,1.0,0.7629,FALSE,FALSE,Matt Freese,matt_freese__usa,0.7629,0.7629,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,4.387009,3564000
+USA,USA,4,1.0,0.7629,FALSE,FALSE,Matt Turner,matt_turner__usa,0.212,0.212,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,1.180815,2995000
+USA,USA,4,1.0,0.7629,FALSE,FALSE,Chris Brady,chris_brady__usa,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.0,2495000
+USA,USA,4,1.0,0.7629,FALSE,FALSE,Patrick Schulte,patrick_schulte__usa,0.0,0.0,transfermarkt_availability_split_2026_06_07,0.0,2500000
+UZB,Usbekistan,3,0.9999,0.4928,FALSE,TRUE,Utkir Yusupov,utkir_yusupov__uzb,0.4928,0.4928,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.497236,2490000
+UZB,Usbekistan,3,0.9999,0.4928,FALSE,TRUE,Abduvokhid Nematov,abduvokhid_nematov__uzb,0.482,0.482,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.430308,2495000
+UZB,Usbekistan,3,0.9999,0.4928,FALSE,TRUE,Botirali Ergashev,botirali_ergashev__uzb,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,0.0,2495000
