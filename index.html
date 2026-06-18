@@ -3661,11 +3661,11 @@
 
             <div class="bank-row">
               <div class="bank-box">
-                <div><strong>Brugt</strong></div>
+                <div><strong>Spillerværdi</strong></div>
                 <div id="spentValue">0</div>
               </div>
               <div class="bank-box">
-                <div><strong>Restbank</strong></div>
+                <div><strong>Bank</strong></div>
                 <div id="bankValue">50.000.000</div>
               </div>
               <label class="bank-box manual-budget-box">
@@ -6011,7 +6011,7 @@ function getPlayerScore(player) {
     }
 
     function getDisplayedBankLeft() {
-      return getBankLeft();
+      return getEffectiveBudgetTotal() - getCurrentSquadMarketValue();
     }
 
     function buildMergeKey(playerName, teamId, teamName = "") {
@@ -7761,7 +7761,7 @@ function getPlayerScore(player) {
     }
 
     function renderBudget() {
-      const spent = getSpentBudget();
+      const spent = getCurrentSquadMarketValue();
       const bank = getDisplayedBankLeft();
       const count = getPlayerCount();
       const selectedPlayers = Object.values(squad)
