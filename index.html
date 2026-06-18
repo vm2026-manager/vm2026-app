@@ -338,6 +338,31 @@
       cursor: not-allowed;
     }
 
+    @media (min-width: 1100px) {
+      .action-bar {
+        flex-wrap: nowrap;
+        align-items: center;
+      }
+
+      .action-controls {
+        flex: 0 0 auto;
+      }
+
+      .action-buttons {
+        flex: 1 1 auto;
+        min-width: 0;
+        flex-wrap: nowrap;
+        gap: 6px;
+      }
+
+      .action-btn,
+      .action-buttons .action-btn {
+        white-space: nowrap;
+        padding: 8px 11px;
+        font-size: 12px;
+      }
+    }
+
     .optimizer-loading-overlay {
       position: absolute;
       inset: 0;
@@ -1747,6 +1772,11 @@
       border-radius: 8px;
       padding: 8px 10px;
       box-sizing: border-box;
+    }
+
+    .captain-select {
+      width: 100%;
+      min-height: 42px;
     }
 
     .modal-actions {
@@ -3674,6 +3704,7 @@
             <div class="action-buttons">
               <button id="optimizeBtn" class="action-btn primary" title="Indlæser et generisk benchmarkhold fra scratch. Det er ikke en personlig transferanbefaling. Personlige ændringer tager i stedet højde for bank og 1 % transfergebyr via fyld mangler, spillerændringer og alternativer.">Indlæs benchmarkhold</button>
               <button id="fillMissingBtn" class="action-btn tertiary">Fyld mangler optimalt</button>
+              <button id="changeCaptainBtn" class="action-btn tertiary" type="button">Skift kaptajn</button>
               <button id="undoBtn" class="action-btn undo">Fortryd</button>
               <button id="clearTeamBtn" class="action-btn secondary">Ryd hold</button>
             </div>
@@ -3821,6 +3852,24 @@
     </div>
   </div>
 
+  <div id="captainModal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal">
+      <div class="modal-title">Skift kaptajn</div>
+      <div class="modal-subtitle">Vælg én spiller fra dit nuværende hold som kaptajn. Valget gemmes på dit hold. TODO: captain_bonus_ledger skal senere låse kaptajnbonus pr. runde.</div>
+
+      <div class="modal-grid">
+        <select id="captainSelect" class="modal-input captain-select" aria-label="Vælg kaptajn"></select>
+      </div>
+
+      <div class="modal-actions">
+        <button id="captainPrimaryBtn" class="modal-btn" type="button">Skift kaptajn</button>
+        <button id="captainCancelBtn" class="modal-btn secondary" type="button">Luk</button>
+      </div>
+
+      <div id="captainModalStatus" class="modal-status"></div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
 /* REMOVE_DATA_STATUS_BOX_PATCH_START */
 function removeDataStatusBox() {
@@ -3882,6 +3931,7 @@ setTimeout(removeDataStatusBox, 250);
       formation: "vm2026_formation_v2",
       eligibleOnly: "vm2026_eligible_only_v1",
       manualBankMillions: "vm2026_manual_bank_millions_v1",
+      captainPlayerId: "vm2026_captain_player_id_v1",
       transferBaselineSquad: "vm2026_transfer_baseline_squad_v1",
       transferBaselinePurchasePrices: "vm2026_transfer_baseline_purchase_prices_v1",
       transferChanges: "vm2026_transfer_changes_v1"
@@ -3940,6 +3990,7 @@ setTimeout(removeDataStatusBox, 250);
     let transferBaselineSquad = JSON.parse(localStorage.getItem(STORAGE_KEYS.transferBaselineSquad) || "null");
     let transferBaselinePurchasePrices = JSON.parse(localStorage.getItem(STORAGE_KEYS.transferBaselinePurchasePrices) || "null");
     let transferChanges = JSON.parse(localStorage.getItem(STORAGE_KEYS.transferChanges) || "[]");
+    let captainPlayerId = localStorage.getItem(STORAGE_KEYS.captainPlayerId) || null;
     let currentFormation = localStorage.getItem(STORAGE_KEYS.formation) || "3-4-3";
     let manualBankMillions = parseManualBankMillions(localStorage.getItem(STORAGE_KEYS.manualBankMillions));
     let activeSlotKey = null;
@@ -3982,6 +4033,7 @@ setTimeout(removeDataStatusBox, 250);
     const dataStatusNote = document.getElementById("dataStatusNote");
     const optimizeBtn = document.getElementById("optimizeBtn");
     const fillMissingBtn = document.getElementById("fillMissingBtn");
+    const changeCaptainBtn = document.getElementById("changeCaptainBtn");
     const undoBtn = document.getElementById("undoBtn");
     const clearTeamBtn = document.getElementById("clearTeamBtn");
     const strategyButtons = document.getElementById("strategyButtons");
@@ -4009,6 +4061,11 @@ setTimeout(removeDataStatusBox, 250);
     const authPrimaryBtn = document.getElementById("authPrimaryBtn");
     const authCancelBtn = document.getElementById("authCancelBtn");
     const authModalStatus = document.getElementById("authModalStatus");
+    const captainModal = document.getElementById("captainModal");
+    const captainSelect = document.getElementById("captainSelect");
+    const captainPrimaryBtn = document.getElementById("captainPrimaryBtn");
+    const captainCancelBtn = document.getElementById("captainCancelBtn");
+    const captainModalStatus = document.getElementById("captainModalStatus");
 
     function formatMoney(value) {
       return Number(value || 0).toLocaleString("da-DK");
@@ -4361,6 +4418,10 @@ function strategyDisplayName(strategyKey) {
     }
 
     function isCaptainPlayer(player) {
+      const manualCaptainId = sanitizeCaptainPlayerId(squad);
+      if (manualCaptainId) {
+        return String(player?.player_id) === String(manualCaptainId);
+      }
       const row = playerStrategyRow(player);
       const manual = manualOverrideForPlayer(player, row);
       if (String(manual.manual_captain_status || "").toLowerCase() === "avoid") return false;
@@ -4807,6 +4868,10 @@ function postProcessTimeAwareStrategyButtons() {
     }
 function saveState() {
       transferChanges = synchronizeTransferChanges();
+      captainPlayerId = normalizeCaptainPlayerId(captainPlayerId);
+      if (captainPlayerId && !hasCaptainPlayerInSquad(captainPlayerId)) {
+        captainPlayerId = null;
+      }
       localStorage.setItem(STORAGE_KEYS.squad, JSON.stringify(squad));
       localStorage.setItem(STORAGE_KEYS.squadPurchasePrices, JSON.stringify(squadPurchasePrices || {}));
       localStorage.setItem(STORAGE_KEYS.transferChanges, JSON.stringify(transferChanges || []));
@@ -4814,6 +4879,27 @@ function saveState() {
       localStorage.setItem(STORAGE_KEYS.eligibleOnly, eligibleOnly ? "1" : "0");
       if (manualBankMillions === null) localStorage.removeItem(STORAGE_KEYS.manualBankMillions);
       else localStorage.setItem(STORAGE_KEYS.manualBankMillions, String(manualBankMillions));
+      if (captainPlayerId) localStorage.setItem(STORAGE_KEYS.captainPlayerId, captainPlayerId);
+      else localStorage.removeItem(STORAGE_KEYS.captainPlayerId);
+    }
+
+    function normalizeCaptainPlayerId(value) {
+      const text = String(value || "").trim();
+      return text ? text : null;
+    }
+
+    function hasCaptainPlayerInSquad(playerId, squadObj = squad) {
+      const normalized = normalizeCaptainPlayerId(playerId);
+      if (!normalized || !squadObj || typeof squadObj !== "object") return false;
+      return Object.values(squadObj).some(ownedPlayerId => String(ownedPlayerId) === normalized);
+    }
+
+    function sanitizeCaptainPlayerId(squadObj = squad) {
+      captainPlayerId = normalizeCaptainPlayerId(captainPlayerId);
+      if (captainPlayerId && !hasCaptainPlayerInSquad(captainPlayerId, squadObj)) {
+        captainPlayerId = null;
+      }
+      return captainPlayerId;
     }
 
     function parseManualBankMillions(value) {
@@ -5165,12 +5251,14 @@ function saveState() {
         squad: nextSquad,
         purchasePrices: nextPurchasePrices,
         transferChanges: nextTransferChanges,
+        captainPlayerId: nextCaptainPlayerId,
         transferBaselineSquad: nextTransferBaselineSquad,
         transferBaselinePurchasePrices: nextTransferBaselinePurchasePrices
       } = pendingRemoteSquadState;
 
       transferChanges = cloneTransferChanges(nextTransferChanges);
       localStorage.setItem(STORAGE_KEYS.transferChanges, JSON.stringify(transferChanges || []));
+      captainPlayerId = normalizeCaptainPlayerId(nextCaptainPlayerId);
       applyLoadedTransferBaselineState(nextTransferBaselineSquad, nextTransferBaselinePurchasePrices);
       applySquadState(nextSquad, nextPurchasePrices, { preferStartPriceForNew: true });
       ensureSquadPurchasePrices({ preferStartPriceForNew: true });
@@ -5186,12 +5274,14 @@ function saveState() {
       squadPurchasePrices = nextPurchasePrices
         ? cloneSquadState(nextPurchasePrices)
         : buildPurchasePriceMapForSquad(squad, previousSquad, previousPurchasePrices, { preferStartPriceForNew });
+      sanitizeCaptainPlayerId(squad);
     }
 
     function pushHistory() {
       squadHistory.push({
         squad: cloneSquadState(squad),
-        purchasePrices: cloneSquadState(squadPurchasePrices)
+        purchasePrices: cloneSquadState(squadPurchasePrices),
+        captainPlayerId: normalizeCaptainPlayerId(captainPlayerId)
       });
       if (squadHistory.length > HISTORY_LIMIT) squadHistory.shift();
       updateUndoButton();
@@ -5208,6 +5298,7 @@ function saveState() {
       }
 
       const previousState = squadHistory.pop();
+      captainPlayerId = normalizeCaptainPlayerId(previousState?.captainPlayerId);
       applySquadState(
         previousState?.squad && typeof previousState.squad === "object" ? previousState.squad : previousState,
         previousState?.purchasePrices && typeof previousState.purchasePrices === "object" ? previousState.purchasePrices : null,
@@ -5233,6 +5324,7 @@ function saveState() {
       activeSlotKey = null;
       previousReplacementBySlot.clear();
       modelChoiceBySlot.clear();
+      captainPlayerId = null;
       frontendCaptainOverride = null;
       activeSlotText.textContent = "Ingen valgt";
       clearStatus();
@@ -7006,6 +7098,9 @@ function getPlayerScore(player) {
         preferStartPriceForNew: false
       });
       squadPurchasePrices[slotKey] = getTransferLockedPrice(player, previousSquad, previousPurchasePrices, { preferStoredPrice: true });
+      if (currentPlayerInSlot && String(currentPlayerInSlot.player_id) !== String(playerId) && String(captainPlayerId || "") === String(currentPlayerInSlot.player_id)) {
+        captainPlayerId = null;
+      }
       if (removedCaptain) {
         frontendCaptainOverride = pickFrontendCaptainFromSquad(squad);
       }
@@ -8044,6 +8139,9 @@ function getRenderSlots() {
             const playerId = squad[slotKey];
             if (playerId) {
               pushHistory();
+              if (String(captainPlayerId || "") === String(playerId)) {
+                captainPlayerId = null;
+              }
               delete squad[slotKey];
               delete squadPurchasePrices[slotKey];
               previousReplacementBySlot.delete(slotKey);
@@ -8792,6 +8890,95 @@ function renderTradeList() {
       clearAuthModalStatus();
     }
 
+    function showCaptainModalStatus(text, variant = "error") {
+      captainModalStatus.className = `modal-status ${variant}`;
+      captainModalStatus.textContent = text;
+    }
+
+    function clearCaptainModalStatus() {
+      captainModalStatus.className = "modal-status";
+      captainModalStatus.textContent = "";
+    }
+
+    function getCurrentSquadPlayersForCaptainChoice() {
+      return Object.values(squad)
+        .map(playerId => getPlayerById(playerId))
+        .filter(Boolean);
+    }
+
+    function populateCaptainSelect() {
+      if (!captainSelect) return;
+
+      const squadPlayers = getCurrentSquadPlayersForCaptainChoice()
+        .sort((a, b) => {
+          const positionOrder = { GK: 0, DEF: 1, MID: 2, FWD: 3 };
+          const aOrder = positionOrder[normalizePositionLabel(a.position)] ?? 9;
+          const bOrder = positionOrder[normalizePositionLabel(b.position)] ?? 9;
+          if (aOrder !== bOrder) return aOrder - bOrder;
+          return String(a.player_name || "").localeCompare(String(b.player_name || ""), "da");
+        });
+
+      captainSelect.innerHTML = squadPlayers.length
+        ? squadPlayers.map(player => {
+            const isSelected = String(player.player_id) === String(captainPlayerId || "");
+            const selectedLabel = isSelected ? " (valgt)" : "";
+            return `<option value="${escapeHtml(String(player.player_id))}">${escapeHtml(player.player_name)} · ${escapeHtml(positionFullLabel(player.position))}${selectedLabel}</option>`;
+          }).join("")
+        : '<option value="">Ingen spillere på holdet</option>';
+
+      if (squadPlayers.length) {
+        const selectedId = sanitizeCaptainPlayerId(squad) || String(squadPlayers[0].player_id);
+        captainSelect.value = selectedId;
+      } else {
+        captainSelect.value = "";
+      }
+    }
+
+    function openCaptainModal() {
+      const squadPlayers = getCurrentSquadPlayersForCaptainChoice();
+      if (!squadPlayers.length) {
+        showStatus("Du skal have mindst én spiller på holdet for at vælge kaptajn.", "info");
+        return;
+      }
+
+      populateCaptainSelect();
+      clearCaptainModalStatus();
+      captainModal.classList.add("show");
+      captainModal.setAttribute("aria-hidden", "false");
+      setTimeout(() => captainSelect.focus(), 50);
+    }
+
+    function closeCaptainModal() {
+      captainModal.classList.remove("show");
+      captainModal.setAttribute("aria-hidden", "true");
+      clearCaptainModalStatus();
+    }
+
+    function applyCaptainSelection() {
+      // TODO: captain_bonus_ledger should later lock the extra captain gain per round.
+      const nextCaptainId = normalizeCaptainPlayerId(captainSelect?.value);
+      if (!nextCaptainId) {
+        showCaptainModalStatus("Vælg en spiller som kaptajn.", "error");
+        return;
+      }
+      if (!hasCaptainPlayerInSquad(nextCaptainId)) {
+        captainPlayerId = null;
+        saveState();
+        render();
+        scheduleAutosave();
+        showCaptainModalStatus("Den valgte spiller er ikke længere på holdet.", "error");
+        return;
+      }
+
+      captainPlayerId = nextCaptainId;
+      clearCaptainModalStatus();
+      closeCaptainModal();
+      saveState();
+      render();
+      scheduleAutosave();
+      showStatus("Kaptajn opdateret.", "info");
+    }
+
     function setAuthUi() {
       if (currentUser) {
         topbarUser.style.display = "inline-block";
@@ -8818,6 +9005,7 @@ function renderTradeList() {
         squad_json: {
           squad,
           purchase_prices: squadPurchasePrices,
+          captain_player_id: sanitizeCaptainPlayerId(squad),
           transfer_changes: synchronizeTransferChanges(),
           transfer_baseline_squad: transferBaselineSquad,
           transfer_baseline_purchase_prices: transferBaselinePurchasePrices,
@@ -8898,6 +9086,7 @@ function renderTradeList() {
         : {};
       const hasSavedStateEnvelope = Object.prototype.hasOwnProperty.call(savedState, "squad")
         || Object.prototype.hasOwnProperty.call(savedState, "purchase_prices")
+        || Object.prototype.hasOwnProperty.call(savedState, "captain_player_id")
         || Object.prototype.hasOwnProperty.call(savedState, "transfer_changes")
         || Object.prototype.hasOwnProperty.call(savedState, "transfer_baseline_squad")
         || Object.prototype.hasOwnProperty.call(savedState, "transfer_baseline_purchase_prices")
@@ -8909,6 +9098,9 @@ function renderTradeList() {
       const nextPurchasePrices = hasSavedStateEnvelope && savedState.purchase_prices && typeof savedState.purchase_prices === "object"
         ? savedState.purchase_prices
         : {};
+      const nextCaptainPlayerId = hasSavedStateEnvelope
+        ? normalizeCaptainPlayerId(savedState.captain_player_id)
+        : null;
       const nextTransferChanges = hasSavedStateEnvelope && Array.isArray(savedState.transfer_changes)
         ? cloneTransferChanges(savedState.transfer_changes)
         : [];
@@ -8922,11 +9114,13 @@ function renderTradeList() {
         pendingRemoteSquadState = {
           squad: cloneSquadState(nextSquad),
           purchasePrices: cloneSquadState(nextPurchasePrices),
+          captainPlayerId: nextCaptainPlayerId,
           transferChanges: cloneTransferChanges(nextTransferChanges),
           transferBaselineSquad: cloneSquadState(nextTransferBaselineSquad),
           transferBaselinePurchasePrices: cloneSquadState(nextTransferBaselinePurchasePrices)
         };
       } else {
+        captainPlayerId = nextCaptainPlayerId;
         transferChanges = cloneTransferChanges(nextTransferChanges);
         localStorage.setItem(STORAGE_KEYS.transferChanges, JSON.stringify(transferChanges || []));
         applyLoadedTransferBaselineState(nextTransferBaselineSquad, nextTransferBaselinePurchasePrices);
@@ -9140,6 +9334,7 @@ formationSelect.value = currentFormation;
         if (!requireLoginForProtectedAction("Fyld mangler optimalt")) return;
         fillMissingSlotsOptimally();
       });
+      changeCaptainBtn.addEventListener("click", openCaptainModal);
       cancelOptimizerBtn.addEventListener("click", () => cancelActiveAutofill());
       undoBtn.addEventListener("click", undoLastAction);
       clearTeamBtn.addEventListener("click", clearSquad);
@@ -9192,9 +9387,14 @@ formationSelect.value = currentFormation;
       });
 
       authCancelBtn.addEventListener("click", closeAuthModal);
+      captainPrimaryBtn.addEventListener("click", applyCaptainSelection);
+      captainCancelBtn.addEventListener("click", closeCaptainModal);
 
       authModal.addEventListener("click", (event) => {
         if (event.target === authModal) closeAuthModal();
+      });
+      captainModal.addEventListener("click", (event) => {
+        if (event.target === captainModal) closeCaptainModal();
       });
 
       authPasswordInput.addEventListener("keydown", async (event) => {
@@ -9202,6 +9402,12 @@ formationSelect.value = currentFormation;
           if (authMode === "signup") await handleSignup();
           else await handleLogin();
         }
+      });
+
+      captainSelect.addEventListener("keydown", (event) => {
+        if (event.key !== "Enter") return;
+        event.preventDefault();
+        applyCaptainSelection();
       });
     }
 
@@ -9213,6 +9419,7 @@ formationSelect.value = currentFormation;
       activeSlotKey = null;
       previousReplacementBySlot.clear();
       modelChoiceBySlot.clear();
+      captainPlayerId = null;
       frontendCaptainOverride = null;
       favoriteOnly = false;
       manualBankMillions = null;
