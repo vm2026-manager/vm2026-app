@@ -3658,8 +3658,8 @@
                 <div id="bankValue">50.000.000</div>
               </div>
               <label class="bank-box">
-                <div><strong>Aktuel budgetramme (mio.)</strong></div>
-                <input id="manualBankInput" class="manual-bank-input" type="text" inputmode="decimal" placeholder="fx 50,5" aria-label="Samlet budgetramme i millioner kroner" title="Brug kun dette felt, hvis du manuelt vil sætte din samlede budgetramme. Eksisterende hold bruger ellers låste købspriser.">
+                <div><strong>Aktuel budgetramme</strong></div>
+                <input id="manualBankInput" class="manual-bank-input" type="text" inputmode="decimal" placeholder="fx 51.967.490" aria-label="Samlet budgetramme i kroner eller millioner kroner" title="Du kan skrive budgetrammen som mio.-tal, fx 52,274, eller som hele kroner, fx 51.967.490. Eksisterende hold bruger ellers låste købspriser.">
               </label>
               <div class="bank-box">
                 <div><strong>Spillere</strong></div>
@@ -4903,13 +4903,61 @@ function saveState() {
     }
 
     function parseManualBankMillions(value) {
-      if (value === null || value === undefined || String(value).trim() === "") return null;
-      const parsed = Number(String(value).trim().replace(",", "."));
-      return Number.isFinite(parsed) && parsed >= 0 ? parsed : null;
+      if (value === null || value === undefined) return null;
+      const raw = String(value).trim();
+      if (!raw) return null;
+
+      const compact = raw.replace(/\s+/g, "");
+      if (!compact) return null;
+
+      const digitsOnly = compact.replace(/[^\d]/g, "");
+      if (!digitsOnly) return null;
+
+      const separatorMatches = compact.match(/[.,]/g) || [];
+      const hasComma = compact.includes(",");
+      const hasDot = compact.includes(".");
+
+      if (separatorMatches.length === 0) {
+        const parsed = Number(compact);
+        if (!Number.isFinite(parsed) || parsed < 0) return null;
+        return parsed >= 1000000 ? parsed / 1000000 : parsed;
+      }
+
+      if (separatorMatches.length > 1 || (hasComma && hasDot)) {
+        const absoluteAmount = Number(digitsOnly);
+        return Number.isFinite(absoluteAmount) && absoluteAmount >= 0
+          ? absoluteAmount / 1000000
+          : null;
+      }
+
+      const singleSeparator = hasComma ? "," : ".";
+      const [wholePartRaw, fractionPartRaw = ""] = compact.split(singleSeparator);
+      const wholeDigits = wholePartRaw.replace(/[^\d]/g, "");
+      const fractionDigits = fractionPartRaw.replace(/[^\d]/g, "");
+
+      if (!wholeDigits && !fractionDigits) return null;
+
+      const shouldTreatAsMillions = wholeDigits.length <= 3 && fractionDigits.length <= 3;
+      if (shouldTreatAsMillions) {
+        const normalized = `${wholeDigits || "0"}.${fractionDigits || "0"}`;
+        const parsed = Number(normalized);
+        return Number.isFinite(parsed) && parsed >= 0 ? parsed : null;
+      }
+
+      const absoluteAmount = Number(digitsOnly);
+      return Number.isFinite(absoluteAmount) && absoluteAmount >= 0
+        ? absoluteAmount / 1000000
+        : null;
     }
 
     function getManualBankAmount() {
       return manualBankMillions === null ? null : Math.round(manualBankMillions * 1000000);
+    }
+
+    function formatManualBankInputValue(value) {
+      if (value === null || value === undefined) return "";
+      const amount = Math.round(Number(value) * 1000000);
+      return Number.isFinite(amount) ? formatMoney(amount) : "";
     }
 
     function getCurrentSquadMarketValue(squadObj = squad) {
@@ -4960,9 +5008,7 @@ function saveState() {
     function setManualBankMillions(value) {
       manualBankMillions = parseManualBankMillions(value);
       if (manualBankInput) {
-        manualBankInput.value = manualBankMillions === null
-          ? ""
-          : String(manualBankMillions).replace(".", ",");
+        manualBankInput.value = formatManualBankInputValue(manualBankMillions);
       }
     }
 
@@ -7719,9 +7765,7 @@ function getPlayerScore(player) {
       spentValue.textContent = formatMoney(spent);
       bankValue.textContent = formatMoney(bank);
       if (manualBankInput && document.activeElement !== manualBankInput) {
-        manualBankInput.value = manualBankMillions === null
-          ? ""
-          : String(manualBankMillions).replace(".", ",");
+        manualBankInput.value = formatManualBankInputValue(manualBankMillions);
       }
       playerCountValue.textContent = `${count} / 11`;
       updateUndoButton();
