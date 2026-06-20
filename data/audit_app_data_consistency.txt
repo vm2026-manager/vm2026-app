@@ -3,8 +3,8 @@ VM 2026 APP DATA AUDIT
 
 1. PÃ¥krÃ¦vede app-filer
 ------------------------------------------------------------
-OK       player_pool_v1.json                 2835933
-OK       optimal_squads_by_formation.json    370182
+OK       player_pool_v1.json                 4022402
+OK       optimal_squads_by_formation.json    373547
 OK       fixtures_group.csv                  2701
 OK       player_start_security_nt.csv        420674
 OK       match_odds_probs.csv                7314
@@ -28,28 +28,14 @@ Antal hold dÃ¦kket: 48
 
 4. Optimizer vs app-data
 ------------------------------------------------------------
-FEJL  3-4-3 rÃ¦kker=11 pris=50.672.000 pos={'GK': 1, 'DEF': 3, 'MID': 4, 'FWD': 3} match={'player_id': 11}
-      - Player-pool-pris overskrider budget: 50,672,000 > 50,000,000.
-      ! 11 prisforskelle mellem optimizer og player_pool over 1.000 kr.
-FEJL  3-5-2 rÃ¦kker=11 pris=50.183.000 pos={'GK': 1, 'DEF': 3, 'MID': 5, 'FWD': 2} match={'player_id': 11}
-      - Player-pool-pris overskrider budget: 50,183,000 > 50,000,000.
-      ! 11 prisforskelle mellem optimizer og player_pool over 1.000 kr.
-FEJL  4-3-3 rÃ¦kker=11 pris=50.661.000 pos={'GK': 1, 'DEF': 4, 'MID': 3, 'FWD': 3} match={'player_id': 11}
-      - Player-pool-pris overskrider budget: 50,661,000 > 50,000,000.
-      ! 11 prisforskelle mellem optimizer og player_pool over 1.000 kr.
-FEJL  4-4-2 rÃ¦kker=11 pris=50.232.000 pos={'GK': 1, 'DEF': 4, 'MID': 4, 'FWD': 2} match={'player_id': 11}
-      - Player-pool-pris overskrider budget: 50,232,000 > 50,000,000.
-      ! 11 prisforskelle mellem optimizer og player_pool over 1.000 kr.
-FEJL  4-5-1 rÃ¦kker=11 pris=50.284.000 pos={'GK': 1, 'DEF': 4, 'MID': 5, 'FWD': 1} match={'player_id': 11}
-      - Player-pool-pris overskrider budget: 50,284,000 > 50,000,000.
-      ! 11 prisforskelle mellem optimizer og player_pool over 1.000 kr.
-FEJL  5-3-2 rÃ¦kker=11 pris=50.113.000 pos={'GK': 1, 'DEF': 5, 'MID': 3, 'FWD': 2} match={'player_id': 11}
-      - Player-pool-pris overskrider budget: 50,113,000 > 50,000,000.
-      ! 11 prisforskelle mellem optimizer og player_pool over 1.000 kr.
-FEJL  5-4-1 rÃ¦kker=11 pris=50.340.000 pos={'GK': 1, 'DEF': 5, 'MID': 4, 'FWD': 1} match={'player_id': 11}
-      - Player-pool-pris overskrider budget: 50,340,000 > 50,000,000.
-      ! 11 prisforskelle mellem optimizer og player_pool over 1.000 kr.
+OK    3-4-3 rÃ¦kker=11 pris=49.781.000 pos={'GK': 1, 'DEF': 3, 'MID': 4, 'FWD': 3} match={'player_id': 11}
+OK    3-5-2 rÃ¦kker=11 pris=49.680.000 pos={'GK': 1, 'DEF': 3, 'MID': 5, 'FWD': 2} match={'player_id': 11}
+OK    4-3-3 rÃ¦kker=11 pris=49.711.000 pos={'GK': 1, 'DEF': 4, 'MID': 3, 'FWD': 3} match={'player_id': 11}
+OK    4-4-2 rÃ¦kker=11 pris=49.669.000 pos={'GK': 1, 'DEF': 4, 'MID': 4, 'FWD': 2} match={'player_id': 11}
+OK    4-5-1 rÃ¦kker=11 pris=49.783.000 pos={'GK': 1, 'DEF': 4, 'MID': 5, 'FWD': 1} match={'player_id': 11}
+OK    5-3-2 rÃ¦kker=11 pris=49.672.000 pos={'GK': 1, 'DEF': 5, 'MID': 3, 'FWD': 2} match={'player_id': 11}
+OK    5-4-1 rÃ¦kker=11 pris=49.780.000 pos={'GK': 1, 'DEF': 5, 'MID': 4, 'FWD': 1} match={'player_id': 11}
 
 5. Samlet vurdering
 ------------------------------------------------------------
-OBS: Der er fejl/mismatch i mindst Ã©n formation. Se detaljer ovenfor.
+OK: Optimizer-holdene matcher appens player_pool, positioner, budget og maks. 4 fra land.
