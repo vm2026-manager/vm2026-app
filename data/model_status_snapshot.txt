@@ -1,6 +1,6 @@
 VM 2026 MODEL STATUS SNAPSHOT
 
-Oprettet: 2026-06-20T08:03:53
+Oprettet: 2026-06-20T08:07:00
 
 VURDERING
 - Bedste formation i seneste optimizer-kørsel: 3-4-3.
