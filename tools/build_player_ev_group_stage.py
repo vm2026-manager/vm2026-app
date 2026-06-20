@@ -11,6 +11,7 @@ DATA_DIR = PROJECT_ROOT / "data"
 PLAYER_EV_PATH = DATA_DIR / "player_ev_group_stage_v1.csv"
 FIXTURES_PATH = DATA_DIR / "fixtures_group.csv"
 MULTIPLIERS_PATH = DATA_DIR / "fixture_strength_multipliers.csv"
+MATCH_ODDS_PATH = DATA_DIR / "match_odds_probs.csv"
 IMPACT_REPORT_PATH = DATA_DIR / "player_ev_fixture_strength_impact_report.csv"
 
 ROUND_WEIGHTS = {
@@ -95,7 +96,52 @@ def ensure_base_component_fields(fieldnames: list[str]) -> list[str]:
             field = f"match_{match_no}_{component}_ev_base"
             if field not in next_fields:
                 next_fields.append(field)
+    for field in ["p_6_points_after_2", "round3_rotation_factor"]:
+        if field not in next_fields:
+            next_fields.append(field)
     return next_fields
+
+
+def round_for_match_id(match_id: Any) -> int:
+    mid = int(txt(match_id) or "0")
+    if 1 <= mid <= 24:
+        return 1
+    if 25 <= mid <= 48:
+        return 2
+    if 49 <= mid <= 72:
+        return 3
+    return 0
+
+
+def load_team_round_win_probs() -> dict[str, dict[int, float]]:
+    if not MATCH_ODDS_PATH.exists():
+        return {}
+
+    _, rows = read_csv(MATCH_ODDS_PATH)
+    wins: dict[str, dict[int, float]] = {}
+    for row in rows:
+        match_id = txt(row.get("match_id"))
+        rnd = round_for_match_id(match_id)
+        if rnd not in {1, 2, 3}:
+            continue
+        home = txt(row.get("home")).upper()
+        away = txt(row.get("away")).upper()
+        if home:
+            wins.setdefault(home, {})[rnd] = to_float(row.get("home_win_prob_fair"))
+        if away:
+            wins.setdefault(away, {})[rnd] = to_float(row.get("away_win_prob_fair"))
+    return wins
+
+
+def round3_rotation_factor_for_team(team: str, team_round_win_probs: dict[str, dict[int, float]]) -> tuple[float, float]:
+    p6 = team_round_win_probs.get(team, {}).get(1, 0.0) * team_round_win_probs.get(team, {}).get(2, 0.0)
+    if p6 >= 0.55:
+        return p6, 0.62
+    if p6 >= 0.40:
+        return p6, 0.74
+    if p6 >= 0.25:
+        return p6, 0.86
+    return p6, 1.0
 
 
 def load_multiplier_lookup() -> dict[tuple[str, str], dict[str, float | str]]:
@@ -278,12 +324,18 @@ def main() -> int:
     fields = ensure_base_component_fields(fields)
     multiplier_lookup = load_multiplier_lookup()
     fixture_lookup, fixture_pair_lookup = load_fixture_match_lookup()
+    team_round_win_probs = load_team_round_win_probs()
 
     warnings: list[str] = []
     impact_rows: list[dict[str, Any]] = []
     updated_count = 0
 
     for row in rows:
+        team = txt(row.get("team_id")).upper()
+        p6, round3_rotation_factor = round3_rotation_factor_for_team(team, team_round_win_probs)
+        row["p_6_points_after_2"] = fmt(p6)
+        row["round3_rotation_factor"] = fmt(round3_rotation_factor)
+
         old_ev = to_float(row.get("weighted_group_stage_ev"))
         old_total_ev = to_float(row.get("total_ev_group_stage"))
         old_component_weighted = current_component_weighted_sum(row)
@@ -297,7 +349,6 @@ def main() -> int:
 
         for match_no in [1, 2, 3]:
             match_id = match_id_for(row, match_no, fixture_lookup, fixture_pair_lookup)
-            team = txt(row.get("team_id")).upper()
             multiplier = multiplier_lookup.get((match_id, team)) if match_id else None
 
             if not multiplier:

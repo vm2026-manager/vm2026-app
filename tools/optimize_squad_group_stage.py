@@ -376,6 +376,8 @@ def add_player_round_context(players: pd.DataFrame) -> pd.DataFrame:
     lookup = load_fixture_lookup()
     win_probs = team_round_win_probs()
     work = players.copy()
+    work["p_6_points_after_2"] = 0.0
+    work["round3_rotation_factor"] = 1.0
     for rnd in [1, 2, 3]:
         for col in [
             "ev",
