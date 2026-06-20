@@ -1,6 +1,9 @@
 from __future__ import annotations
 
 import csv
+import io
+import shutil
+import subprocess
 from pathlib import Path
 from typing import Any
 
@@ -60,6 +63,14 @@ def txt(value: Any) -> str:
     return "" if value is None else str(value).strip()
 
 
+def normalize_fieldname(value: Any) -> str:
+    return txt(value).lstrip("\ufeff")
+
+
+def normalize_row_keys(row: dict[str, Any]) -> dict[str, Any]:
+    return {normalize_fieldname(key): value for key, value in row.items()}
+
+
 def to_float(value: Any, default: float = 0.0) -> float:
     text = txt(value).replace(",", ".")
     if not text:
@@ -79,14 +90,62 @@ def read_csv(path: Path) -> tuple[list[str], list[dict[str, str]]]:
         raise FileNotFoundError(path)
     with path.open(encoding="utf-8-sig", newline="") as f:
         reader = csv.DictReader(f)
-        return reader.fieldnames or [], list(reader)
+        fieldnames = [normalize_fieldname(field) for field in (reader.fieldnames or [])]
+        rows = [normalize_row_keys(row) for row in reader]
+        return fieldnames, rows
+
+
+def git_executable() -> str | None:
+    candidates = [
+        shutil.which("git"),
+        r"C:\Users\Administrator\AppData\Local\GitHubDesktop\app-3.5.12\resources\app\git\cmd\git.exe",
+        r"C:\Users\Administrator\AppData\Local\GitHubDesktop\app-3.5.8\resources\app\git\cmd\git.exe",
+    ]
+    for candidate in candidates:
+        if candidate and Path(candidate).exists():
+            return candidate
+    return None
+
+
+def load_head_ev_rows_from_git() -> tuple[list[str], list[dict[str, str]]]:
+    git = git_executable()
+    if not git:
+        raise RuntimeError("Kan ikke finde git.exe til EV fallback.")
+
+    result = subprocess.run(
+        [git, "show", "HEAD:data/player_ev_group_stage_v1.csv"],
+        cwd=PROJECT_ROOT,
+        check=True,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+    )
+    reader = csv.DictReader(io.StringIO(result.stdout))
+    fieldnames = [normalize_fieldname(field) for field in (reader.fieldnames or [])]
+    rows = [normalize_row_keys(row) for row in reader]
+    return fieldnames, rows
+
+
+def read_ev_rows_with_fallback(path: Path) -> tuple[list[str], list[dict[str, str]], str]:
+    fields, rows = read_csv(path)
+    if rows:
+        return fields, rows, "working_tree"
+
+    head_fields, head_rows = load_head_ev_rows_from_git()
+    if not head_rows:
+        raise RuntimeError(
+            f"{path.relative_to(PROJECT_ROOT)} er header-only, og HEAD fallback indeholder heller ingen rækker."
+        )
+    return head_fields, head_rows, "git_head_fallback"
 
 
 def write_csv(path: Path, fieldnames: list[str], rows: list[dict[str, Any]]) -> None:
-    with path.open("w", encoding="utf-8-sig", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+    normalized_fieldnames = [normalize_fieldname(field) for field in fieldnames]
+    normalized_rows = [normalize_row_keys(row) for row in rows]
+    with path.open("w", encoding="utf-8", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=normalized_fieldnames)
         writer.writeheader()
-        writer.writerows(rows)
+        writer.writerows(normalized_rows)
 
 
 def ensure_base_component_fields(fieldnames: list[str]) -> list[str]:
@@ -94,6 +153,13 @@ def ensure_base_component_fields(fieldnames: list[str]) -> list[str]:
     for match_no in [1, 2, 3]:
         for component in BASE_COMPONENTS:
             field = f"match_{match_no}_{component}_ev_base"
+            if field not in next_fields:
+                next_fields.append(field)
+        for field in [
+            f"match_{match_no}_goal_multiplier",
+            f"match_{match_no}_assist_multiplier",
+            f"match_{match_no}_clean_sheet_multiplier",
+        ]:
             if field not in next_fields:
                 next_fields.append(field)
     for field in ["p_6_points_after_2", "round3_rotation_factor"]:
@@ -320,7 +386,7 @@ def seed_base_component_value(
 
 
 def main() -> int:
-    fields, rows = read_csv(PLAYER_EV_PATH)
+    fields, rows, row_source = read_ev_rows_with_fallback(PLAYER_EV_PATH)
     fields = ensure_base_component_fields(fields)
     multiplier_lookup = load_multiplier_lookup()
     fixture_lookup, fixture_pair_lookup = load_fixture_match_lookup()
@@ -441,6 +507,8 @@ def main() -> int:
     warnings_unique = list(dict.fromkeys(warnings))
     print(f"Skrevet: {PLAYER_EV_PATH.relative_to(PROJECT_ROOT)}")
     print(f"Skrevet: {IMPACT_REPORT_PATH.relative_to(PROJECT_ROOT)}")
+    print(f"Kilderækker indlæst fra: {row_source}")
+    print(f"Antal inputrækker: {len(rows)}")
     print(f"Antal spillere opdateret: {updated_count}")
     print(f"Warnings om manglende multipliers: {len(warnings_unique)}")
 
