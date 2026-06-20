@@ -1,6 +1,6 @@
 VM 2026 MODEL STATUS SNAPSHOT
 
-Oprettet: 2026-05-27T08:04:58
+Oprettet: 2026-06-20T08:03:53
 
 VURDERING
 - Bedste formation i seneste optimizer-kørsel: 3-4-3.
@@ -10,18 +10,18 @@ VURDERING
 - Forbehold: Startvurderinger, odds og trupper er stadig foreløbige og skal opdateres løbende.
 
 PLAYER POOL
-- Rækker: 1244
-- Officiel Holdet-master: 1244
+- Rækker: 1249
+- Officiel Holdet-master: 1249
 - Hold: 48
 - Mangler pris: 0
-- Positioner: {'MID': 410, 'DEF': 408, 'FWD': 274, 'GK': 152}
+- Positioner: {'MID': 426, 'DEF': 410, 'FWD': 268, 'GK': 145}
 
 EV-FIL
-- Rækker: 1244
-- Weighted EV sum: 1110.602
-- Weighted EV mean: 0.8928
-- Weighted EV median: 0.7589
-- Positioner: {'MID': 410, 'DEF': 408, 'FWD': 274, 'GK': 152}
+- Rækker: 1249
+- Weighted EV sum: 1033.170
+- Weighted EV mean: 0.8272
+- Weighted EV median: 0.6536
+- Positioner: {'MID': 426, 'DEF': 410, 'FWD': 268, 'GK': 145}
 
 FORMATIONER
 - 3-4-3: status=Optimal, adjEV=169.249, rawEV=18.587, pris=50.0

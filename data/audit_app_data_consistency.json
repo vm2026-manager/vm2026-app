@@ -2,39 +2,39 @@
   "required_files": {
     "player_pool_v1.json": {
       "exists": true,
-      "path": "C:\\Users\\Administrator\\Documents\\GitHub\\vm2026-app\\data\\player_pool_v1.json",
-      "size_bytes": 4019482
+      "path": "C:\\Users\\Administrator\\Desktop\\vm2026_local_app\\data\\player_pool_v1.json",
+      "size_bytes": 2835933
     },
     "optimal_squads_by_formation.json": {
       "exists": true,
-      "path": "C:\\Users\\Administrator\\Documents\\GitHub\\vm2026-app\\data\\optimal_squads_by_formation.json",
+      "path": "C:\\Users\\Administrator\\Desktop\\vm2026_local_app\\data\\optimal_squads_by_formation.json",
       "size_bytes": 370182
     },
     "fixtures_group.csv": {
       "exists": true,
-      "path": "C:\\Users\\Administrator\\Documents\\GitHub\\vm2026-app\\data\\fixtures_group.csv",
+      "path": "C:\\Users\\Administrator\\Desktop\\vm2026_local_app\\data\\fixtures_group.csv",
       "size_bytes": 2701
     },
     "player_start_security_nt.csv": {
       "exists": true,
-      "path": "C:\\Users\\Administrator\\Documents\\GitHub\\vm2026-app\\data\\player_start_security_nt.csv",
-      "size_bytes": 421451
+      "path": "C:\\Users\\Administrator\\Desktop\\vm2026_local_app\\data\\player_start_security_nt.csv",
+      "size_bytes": 420674
     },
     "match_odds_probs.csv": {
       "exists": true,
-      "path": "C:\\Users\\Administrator\\Documents\\GitHub\\vm2026-app\\data\\match_odds_probs.csv",
+      "path": "C:\\Users\\Administrator\\Desktop\\vm2026_local_app\\data\\match_odds_probs.csv",
       "size_bytes": 7314
     }
   },
   "player_pool": {
-    "player_count": 1292,
-    "unique_player_ids": 1292,
+    "player_count": 1249,
+    "unique_player_ids": 1249,
     "duplicate_ids": [],
     "position_counts": {
-      "DEF": 417,
-      "GK": 164,
+      "DEF": 410,
+      "GK": 145,
       "MID": 426,
-      "FWD": 285
+      "FWD": 268
     },
     "team_count": 48,
     "missing_price_count": 0,
@@ -103,14 +103,14 @@
     "3-4-3": {
       "row_count": 11,
       "complete": true,
-      "valid": true,
+      "valid": false,
       "optimizer_position_counts": {
         "GK": 1,
         "DEF": 3,
         "MID": 4,
         "FWD": 3
       },
-      "pool_total_price": 50000000,
+      "pool_total_price": 50672000,
       "optimizer_total_price": 50000000,
       "budget_total": 50000000,
       "team_counts": {
@@ -123,23 +123,105 @@
       "match_methods": {
         "player_id": 11
       },
-      "issues": [],
-      "warnings": [],
+      "issues": [
+        "Player-pool-pris overskrider budget: 50,672,000 > 50,000,000."
+      ],
+      "warnings": [
+        "11 prisforskelle mellem optimizer og player_pool over 1.000 kr."
+      ],
       "missing_players": [],
       "position_mismatches": [],
-      "price_mismatches_sample": []
+      "price_mismatches_sample": [
+        {
+          "player_id": "mike_maignan__fra",
+          "player_name": "Mike Maignan",
+          "optimizer_price": 5000000,
+          "player_pool_price": 5064000,
+          "difference": 64000
+        },
+        {
+          "player_id": "gonzalo_montiel__arg",
+          "player_name": "Gonzalo Montiel",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3542000,
+          "difference": 42000
+        },
+        {
+          "player_id": "lucas_digne__fra",
+          "player_name": "Lucas Digne",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3495000,
+          "difference": 5000
+        },
+        {
+          "player_id": "renato_veiga__por",
+          "player_name": "Renato Veiga",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3514000,
+          "difference": 14000
+        },
+        {
+          "player_id": "alex_baena__esp",
+          "player_name": "Alex Baena",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3495000,
+          "difference": 5000
+        },
+        {
+          "player_id": "casemiro__bra",
+          "player_name": "Casemiro",
+          "optimizer_price": 4500000,
+          "player_pool_price": 4556000,
+          "difference": 56000
+        },
+        {
+          "player_id": "manu_kon__fra",
+          "player_name": "Manu Koné",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3495000,
+          "difference": 5000
+        },
+        {
+          "player_id": "mart_n_zubimendi__esp",
+          "player_name": "Martin Zubimendi",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3495000,
+          "difference": 5000
+        },
+        {
+          "player_id": "mikel_oyarzabal__esp",
+          "player_name": "Mikel Oyarzabal",
+          "optimizer_price": 7500000,
+          "player_pool_price": 7522000,
+          "difference": 22000
+        },
+        {
+          "player_id": "nico_williams__esp",
+          "player_name": "Nico Williams",
+          "optimizer_price": 4500000,
+          "player_pool_price": 4512000,
+          "difference": 12000
+        },
+        {
+          "player_id": "vinicius_j_nior__bra",
+          "player_name": "Vinicius Junior",
+          "optimizer_price": 7500000,
+          "player_pool_price": 7982000,
+          "difference": 482000
+        }
+      ]
     },
     "3-5-2": {
       "row_count": 11,
       "complete": true,
-      "valid": true,
+      "valid": false,
       "optimizer_position_counts": {
         "GK": 1,
         "DEF": 3,
         "MID": 5,
         "FWD": 2
       },
-      "pool_total_price": 50000000,
+      "pool_total_price": 50183000,
       "optimizer_total_price": 50000000,
       "budget_total": 50000000,
       "team_counts": {
@@ -151,23 +233,105 @@
       "match_methods": {
         "player_id": 11
       },
-      "issues": [],
-      "warnings": [],
+      "issues": [
+        "Player-pool-pris overskrider budget: 50,183,000 > 50,000,000."
+      ],
+      "warnings": [
+        "11 prisforskelle mellem optimizer og player_pool over 1.000 kr."
+      ],
       "missing_players": [],
       "position_mismatches": [],
-      "price_mismatches_sample": []
+      "price_mismatches_sample": [
+        {
+          "player_id": "mike_maignan__fra",
+          "player_name": "Mike Maignan",
+          "optimizer_price": 5000000,
+          "player_pool_price": 5064000,
+          "difference": 64000
+        },
+        {
+          "player_id": "gonzalo_montiel__arg",
+          "player_name": "Gonzalo Montiel",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3542000,
+          "difference": 42000
+        },
+        {
+          "player_id": "lucas_digne__fra",
+          "player_name": "Lucas Digne",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3495000,
+          "difference": 5000
+        },
+        {
+          "player_id": "renato_veiga__por",
+          "player_name": "Renato Veiga",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3514000,
+          "difference": 14000
+        },
+        {
+          "player_id": "alex_baena__esp",
+          "player_name": "Alex Baena",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3495000,
+          "difference": 5000
+        },
+        {
+          "player_id": "aur_lien_tchouam_ni__fra",
+          "player_name": "Aurelien Tchouameni",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3554000,
+          "difference": 54000
+        },
+        {
+          "player_id": "giovani_lo_celso__arg",
+          "player_name": "Giovani Lo Celso",
+          "optimizer_price": 4000000,
+          "player_pool_price": 3995000,
+          "difference": 5000
+        },
+        {
+          "player_id": "manu_kon__fra",
+          "player_name": "Manu Koné",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3495000,
+          "difference": 5000
+        },
+        {
+          "player_id": "mart_n_zubimendi__esp",
+          "player_name": "Martin Zubimendi",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3495000,
+          "difference": 5000
+        },
+        {
+          "player_id": "lamine_yamal__esp",
+          "player_name": "Lamine Yamal",
+          "optimizer_price": 9000000,
+          "player_pool_price": 9012000,
+          "difference": 12000
+        },
+        {
+          "player_id": "mikel_oyarzabal__esp",
+          "player_name": "Mikel Oyarzabal",
+          "optimizer_price": 7500000,
+          "player_pool_price": 7522000,
+          "difference": 22000
+        }
+      ]
     },
     "4-3-3": {
       "row_count": 11,
       "complete": true,
-      "valid": true,
+      "valid": false,
       "optimizer_position_counts": {
         "GK": 1,
         "DEF": 4,
         "MID": 3,
         "FWD": 3
       },
-      "pool_total_price": 50000000,
+      "pool_total_price": 50661000,
       "optimizer_total_price": 50000000,
       "budget_total": 50000000,
       "team_counts": {
@@ -181,23 +345,105 @@
       "match_methods": {
         "player_id": 11
       },
-      "issues": [],
-      "warnings": [],
+      "issues": [
+        "Player-pool-pris overskrider budget: 50,661,000 > 50,000,000."
+      ],
+      "warnings": [
+        "11 prisforskelle mellem optimizer og player_pool over 1.000 kr."
+      ],
       "missing_players": [],
       "position_mismatches": [],
-      "price_mismatches_sample": []
+      "price_mismatches_sample": [
+        {
+          "player_id": "mike_maignan__fra",
+          "player_name": "Mike Maignan",
+          "optimizer_price": 5000000,
+          "player_pool_price": 5064000,
+          "difference": 64000
+        },
+        {
+          "player_id": "gonzalo_montiel__arg",
+          "player_name": "Gonzalo Montiel",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3542000,
+          "difference": 42000
+        },
+        {
+          "player_id": "lucas_digne__fra",
+          "player_name": "Lucas Digne",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3495000,
+          "difference": 5000
+        },
+        {
+          "player_id": "renato_veiga__por",
+          "player_name": "Renato Veiga",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3514000,
+          "difference": 14000
+        },
+        {
+          "player_id": "timothy_castagne__bel",
+          "player_name": "Timothy Castagne",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3484000,
+          "difference": 16000
+        },
+        {
+          "player_id": "alex_baena__esp",
+          "player_name": "Alex Baena",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3495000,
+          "difference": 5000
+        },
+        {
+          "player_id": "casemiro__bra",
+          "player_name": "Casemiro",
+          "optimizer_price": 4500000,
+          "player_pool_price": 4556000,
+          "difference": 56000
+        },
+        {
+          "player_id": "mart_n_zubimendi__esp",
+          "player_name": "Martin Zubimendi",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3495000,
+          "difference": 5000
+        },
+        {
+          "player_id": "mikel_oyarzabal__esp",
+          "player_name": "Mikel Oyarzabal",
+          "optimizer_price": 7500000,
+          "player_pool_price": 7522000,
+          "difference": 22000
+        },
+        {
+          "player_id": "nico_williams__esp",
+          "player_name": "Nico Williams",
+          "optimizer_price": 4500000,
+          "player_pool_price": 4512000,
+          "difference": 12000
+        },
+        {
+          "player_id": "vinicius_j_nior__bra",
+          "player_name": "Vinicius Junior",
+          "optimizer_price": 7500000,
+          "player_pool_price": 7982000,
+          "difference": 482000
+        }
+      ]
     },
     "4-4-2": {
       "row_count": 11,
       "complete": true,
-      "valid": true,
+      "valid": false,
       "optimizer_position_counts": {
         "GK": 1,
         "DEF": 4,
         "MID": 4,
         "FWD": 2
       },
-      "pool_total_price": 50000000,
+      "pool_total_price": 50232000,
       "optimizer_total_price": 50000000,
       "budget_total": 50000000,
       "team_counts": {
@@ -210,23 +456,105 @@
       "match_methods": {
         "player_id": 11
       },
-      "issues": [],
-      "warnings": [],
+      "issues": [
+        "Player-pool-pris overskrider budget: 50,232,000 > 50,000,000."
+      ],
+      "warnings": [
+        "11 prisforskelle mellem optimizer og player_pool over 1.000 kr."
+      ],
       "missing_players": [],
       "position_mismatches": [],
-      "price_mismatches_sample": []
+      "price_mismatches_sample": [
+        {
+          "player_id": "mike_maignan__fra",
+          "player_name": "Mike Maignan",
+          "optimizer_price": 5000000,
+          "player_pool_price": 5064000,
+          "difference": 64000
+        },
+        {
+          "player_id": "gonzalo_montiel__arg",
+          "player_name": "Gonzalo Montiel",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3542000,
+          "difference": 42000
+        },
+        {
+          "player_id": "lucas_digne__fra",
+          "player_name": "Lucas Digne",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3495000,
+          "difference": 5000
+        },
+        {
+          "player_id": "renato_veiga__por",
+          "player_name": "Renato Veiga",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3514000,
+          "difference": 14000
+        },
+        {
+          "player_id": "timothy_castagne__bel",
+          "player_name": "Timothy Castagne",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3484000,
+          "difference": 16000
+        },
+        {
+          "player_id": "adrien_rabiot__fra",
+          "player_name": "Adrien Rabiot",
+          "optimizer_price": 4000000,
+          "player_pool_price": 4114000,
+          "difference": 114000
+        },
+        {
+          "player_id": "alex_baena__esp",
+          "player_name": "Alex Baena",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3495000,
+          "difference": 5000
+        },
+        {
+          "player_id": "manu_kon__fra",
+          "player_name": "Manu Koné",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3495000,
+          "difference": 5000
+        },
+        {
+          "player_id": "mart_n_zubimendi__esp",
+          "player_name": "Martin Zubimendi",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3495000,
+          "difference": 5000
+        },
+        {
+          "player_id": "lamine_yamal__esp",
+          "player_name": "Lamine Yamal",
+          "optimizer_price": 9000000,
+          "player_pool_price": 9012000,
+          "difference": 12000
+        },
+        {
+          "player_id": "mikel_oyarzabal__esp",
+          "player_name": "Mikel Oyarzabal",
+          "optimizer_price": 7500000,
+          "player_pool_price": 7522000,
+          "difference": 22000
+        }
+      ]
     },
     "4-5-1": {
       "row_count": 11,
       "complete": true,
-      "valid": true,
+      "valid": false,
       "optimizer_position_counts": {
         "GK": 1,
         "DEF": 4,
         "MID": 5,
         "FWD": 1
       },
-      "pool_total_price": 50000000,
+      "pool_total_price": 50284000,
       "optimizer_total_price": 50000000,
       "budget_total": 50000000,
       "team_counts": {
@@ -239,23 +567,105 @@
       "match_methods": {
         "player_id": 11
       },
-      "issues": [],
-      "warnings": [],
+      "issues": [
+        "Player-pool-pris overskrider budget: 50,284,000 > 50,000,000."
+      ],
+      "warnings": [
+        "11 prisforskelle mellem optimizer og player_pool over 1.000 kr."
+      ],
       "missing_players": [],
       "position_mismatches": [],
-      "price_mismatches_sample": []
+      "price_mismatches_sample": [
+        {
+          "player_id": "mike_maignan__fra",
+          "player_name": "Mike Maignan",
+          "optimizer_price": 5000000,
+          "player_pool_price": 5064000,
+          "difference": 64000
+        },
+        {
+          "player_id": "gonzalo_montiel__arg",
+          "player_name": "Gonzalo Montiel",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3542000,
+          "difference": 42000
+        },
+        {
+          "player_id": "lucas_digne__fra",
+          "player_name": "Lucas Digne",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3495000,
+          "difference": 5000
+        },
+        {
+          "player_id": "renato_veiga__por",
+          "player_name": "Renato Veiga",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3514000,
+          "difference": 14000
+        },
+        {
+          "player_id": "r_ben_dias__por",
+          "player_name": "Ruben Dias",
+          "optimizer_price": 4000000,
+          "player_pool_price": 3995000,
+          "difference": 5000
+        },
+        {
+          "player_id": "adrien_rabiot__fra",
+          "player_name": "Adrien Rabiot",
+          "optimizer_price": 4000000,
+          "player_pool_price": 4114000,
+          "difference": 114000
+        },
+        {
+          "player_id": "alex_baena__esp",
+          "player_name": "Alex Baena",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3495000,
+          "difference": 5000
+        },
+        {
+          "player_id": "casemiro__bra",
+          "player_name": "Casemiro",
+          "optimizer_price": 4500000,
+          "player_pool_price": 4556000,
+          "difference": 56000
+        },
+        {
+          "player_id": "mart_n_zubimendi__esp",
+          "player_name": "Martin Zubimendi",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3495000,
+          "difference": 5000
+        },
+        {
+          "player_id": "pedri__esp",
+          "player_name": "Pedri",
+          "optimizer_price": 6000000,
+          "player_pool_price": 6002000,
+          "difference": 2000
+        },
+        {
+          "player_id": "lamine_yamal__esp",
+          "player_name": "Lamine Yamal",
+          "optimizer_price": 9000000,
+          "player_pool_price": 9012000,
+          "difference": 12000
+        }
+      ]
     },
     "5-3-2": {
       "row_count": 11,
       "complete": true,
-      "valid": true,
+      "valid": false,
       "optimizer_position_counts": {
         "GK": 1,
         "DEF": 5,
         "MID": 3,
         "FWD": 2
       },
-      "pool_total_price": 50000000,
+      "pool_total_price": 50113000,
       "optimizer_total_price": 50000000,
       "budget_total": 50000000,
       "team_counts": {
@@ -268,23 +678,105 @@
       "match_methods": {
         "player_id": 11
       },
-      "issues": [],
-      "warnings": [],
+      "issues": [
+        "Player-pool-pris overskrider budget: 50,113,000 > 50,000,000."
+      ],
+      "warnings": [
+        "11 prisforskelle mellem optimizer og player_pool over 1.000 kr."
+      ],
       "missing_players": [],
       "position_mismatches": [],
-      "price_mismatches_sample": []
+      "price_mismatches_sample": [
+        {
+          "player_id": "mike_maignan__fra",
+          "player_name": "Mike Maignan",
+          "optimizer_price": 5000000,
+          "player_pool_price": 5064000,
+          "difference": 64000
+        },
+        {
+          "player_id": "gonzalo_montiel__arg",
+          "player_name": "Gonzalo Montiel",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3542000,
+          "difference": 42000
+        },
+        {
+          "player_id": "lucas_digne__fra",
+          "player_name": "Lucas Digne",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3495000,
+          "difference": 5000
+        },
+        {
+          "player_id": "renato_veiga__por",
+          "player_name": "Renato Veiga",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3514000,
+          "difference": 14000
+        },
+        {
+          "player_id": "r_ben_dias__por",
+          "player_name": "Ruben Dias",
+          "optimizer_price": 4000000,
+          "player_pool_price": 3995000,
+          "difference": 5000
+        },
+        {
+          "player_id": "timothy_castagne__bel",
+          "player_name": "Timothy Castagne",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3484000,
+          "difference": 16000
+        },
+        {
+          "player_id": "alex_baena__esp",
+          "player_name": "Alex Baena",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3495000,
+          "difference": 5000
+        },
+        {
+          "player_id": "manu_kon__fra",
+          "player_name": "Manu Koné",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3495000,
+          "difference": 5000
+        },
+        {
+          "player_id": "mart_n_zubimendi__esp",
+          "player_name": "Martin Zubimendi",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3495000,
+          "difference": 5000
+        },
+        {
+          "player_id": "lamine_yamal__esp",
+          "player_name": "Lamine Yamal",
+          "optimizer_price": 9000000,
+          "player_pool_price": 9012000,
+          "difference": 12000
+        },
+        {
+          "player_id": "mikel_oyarzabal__esp",
+          "player_name": "Mikel Oyarzabal",
+          "optimizer_price": 7500000,
+          "player_pool_price": 7522000,
+          "difference": 22000
+        }
+      ]
     },
     "5-4-1": {
       "row_count": 11,
       "complete": true,
-      "valid": true,
+      "valid": false,
       "optimizer_position_counts": {
         "GK": 1,
         "DEF": 5,
         "MID": 4,
         "FWD": 1
       },
-      "pool_total_price": 50000000,
+      "pool_total_price": 50340000,
       "optimizer_total_price": 50000000,
       "budget_total": 50000000,
       "team_counts": {
@@ -298,11 +790,93 @@
       "match_methods": {
         "player_id": 11
       },
-      "issues": [],
-      "warnings": [],
+      "issues": [
+        "Player-pool-pris overskrider budget: 50,340,000 > 50,000,000."
+      ],
+      "warnings": [
+        "11 prisforskelle mellem optimizer og player_pool over 1.000 kr."
+      ],
       "missing_players": [],
       "position_mismatches": [],
-      "price_mismatches_sample": []
+      "price_mismatches_sample": [
+        {
+          "player_id": "mike_maignan__fra",
+          "player_name": "Mike Maignan",
+          "optimizer_price": 5000000,
+          "player_pool_price": 5064000,
+          "difference": 64000
+        },
+        {
+          "player_id": "gonzalo_montiel__arg",
+          "player_name": "Gonzalo Montiel",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3542000,
+          "difference": 42000
+        },
+        {
+          "player_id": "lucas_digne__fra",
+          "player_name": "Lucas Digne",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3495000,
+          "difference": 5000
+        },
+        {
+          "player_id": "pau_cubars__esp",
+          "player_name": "Pau Cubarsi",
+          "optimizer_price": 4000000,
+          "player_pool_price": 4062000,
+          "difference": 62000
+        },
+        {
+          "player_id": "renato_veiga__por",
+          "player_name": "Renato Veiga",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3514000,
+          "difference": 14000
+        },
+        {
+          "player_id": "timothy_castagne__bel",
+          "player_name": "Timothy Castagne",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3484000,
+          "difference": 16000
+        },
+        {
+          "player_id": "adrien_rabiot__fra",
+          "player_name": "Adrien Rabiot",
+          "optimizer_price": 4000000,
+          "player_pool_price": 4114000,
+          "difference": 114000
+        },
+        {
+          "player_id": "casemiro__bra",
+          "player_name": "Casemiro",
+          "optimizer_price": 4500000,
+          "player_pool_price": 4556000,
+          "difference": 56000
+        },
+        {
+          "player_id": "mart_n_zubimendi__esp",
+          "player_name": "Martin Zubimendi",
+          "optimizer_price": 3500000,
+          "player_pool_price": 3495000,
+          "difference": 5000
+        },
+        {
+          "player_id": "pedri__esp",
+          "player_name": "Pedri",
+          "optimizer_price": 6000000,
+          "player_pool_price": 6002000,
+          "difference": 2000
+        },
+        {
+          "player_id": "lamine_yamal__esp",
+          "player_name": "Lamine Yamal",
+          "optimizer_price": 9000000,
+          "player_pool_price": 9012000,
+          "difference": 12000
+        }
+      ]
     }
   }
 }
