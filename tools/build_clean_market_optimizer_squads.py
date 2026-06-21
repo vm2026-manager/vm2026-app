@@ -427,7 +427,23 @@ def build_squad(formation: str, df: pd.DataFrame) -> tuple[list[dict[str, Any]],
 
 
 def write_json(path: Path, data: Any) -> None:
-    path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    def sanitize(value: Any) -> Any:
+        if isinstance(value, dict):
+            return {key: sanitize(item) for key, item in value.items()}
+        if isinstance(value, list):
+            return [sanitize(item) for item in value]
+        if isinstance(value, tuple):
+            return [sanitize(item) for item in value]
+        if value is None:
+            return None
+        if isinstance(value, float):
+            return value if math.isfinite(value) else None
+        return value
+
+    path.write_text(
+        json.dumps(sanitize(data), ensure_ascii=False, indent=2, allow_nan=False),
+        encoding="utf-8",
+    )
 
 
 def main() -> None:

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import math
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -17,6 +18,20 @@ POOL_PATH = DATA_DIR / "player_pool_v1.json"
 
 OUT_JSON = DATA_DIR / "model_status_snapshot.json"
 OUT_TXT = DATA_DIR / "model_status_snapshot.txt"
+
+
+def sanitize_for_json(value: Any) -> Any:
+    if isinstance(value, dict):
+        return {key: sanitize_for_json(item) for key, item in value.items()}
+    if isinstance(value, list):
+        return [sanitize_for_json(item) for item in value]
+    if isinstance(value, tuple):
+        return [sanitize_for_json(item) for item in value]
+    if value is None:
+        return None
+    if isinstance(value, float):
+        return value if math.isfinite(value) else None
+    return value
 
 
 def load_json(path: Path) -> Any:
@@ -273,7 +288,7 @@ def main() -> None:
     }
 
     OUT_JSON.write_text(
-        json.dumps(snapshot, ensure_ascii=False, indent=2),
+        json.dumps(sanitize_for_json(snapshot), ensure_ascii=False, indent=2, allow_nan=False),
         encoding="utf-8",
     )
 

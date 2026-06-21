@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import csv
 import json
+import math
 from collections import Counter
 from datetime import datetime
 from pathlib import Path
@@ -62,6 +63,27 @@ DISPLAY_NAMES_DA = {
     "practical_start": "1. + 2. runde",
     "long_run": "Lang sigt",
 }
+
+
+def sanitize_for_json(value: Any) -> Any:
+    if isinstance(value, dict):
+        return {key: sanitize_for_json(item) for key, item in value.items()}
+    if isinstance(value, list):
+        return [sanitize_for_json(item) for item in value]
+    if isinstance(value, tuple):
+        return [sanitize_for_json(item) for item in value]
+    if value is None:
+        return None
+    if isinstance(value, float):
+        return value if math.isfinite(value) else None
+    return value
+
+
+def write_json_file(path: Path, data: Any) -> None:
+    path.write_text(
+        json.dumps(sanitize_for_json(data), ensure_ascii=False, indent=2, allow_nan=False),
+        encoding="utf-8",
+    )
 
 POSITION_MAP = {
     "GK": "GK",
@@ -980,8 +1002,8 @@ def write_strategy_metadata(context: dict[str, Any]) -> None:
         "group_stage": DISPLAY_NAMES_DA["group_stage"],
         "long_run": DISPLAY_NAMES_DA["long_run"],
     }
-    OUT_CONTEXT_JSON.write_text(json.dumps(context, ensure_ascii=False, indent=2), encoding="utf-8")
-    OUT_DISPLAY_NAMES_JSON.write_text(json.dumps(display, ensure_ascii=False, indent=2), encoding="utf-8")
+    write_json_file(OUT_CONTEXT_JSON, context)
+    write_json_file(OUT_DISPLAY_NAMES_JSON, display)
     lines = [
         "# Strategy Cleanup Report",
         "",
@@ -1128,7 +1150,7 @@ def main() -> int:
             f"kaptajn={best_summary['recommended_captain']}"
         )
 
-    OUT_STRATEGIES_JSON.write_text(json.dumps(all_results, ensure_ascii=False, indent=2), encoding="utf-8")
+    write_json_file(OUT_STRATEGIES_JSON, all_results)
     fieldnames = [
         "strategy",
         "display_name_da",

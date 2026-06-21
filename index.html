@@ -3921,11 +3921,13 @@ setTimeout(removeDataStatusBox, 250);
     const STRATEGY_CONTEXT_URL = "data/current_strategy_context.json";
     const CURRENT_SQUAD_URL = "data/current_squad.csv";
     const MANUAL_OVERRIDES_URL = "data/manual_player_overrides.csv";
+    const MATCH_ODDS_URL = "data/match_odds.csv";
     const MATCH_ODDS_PROBS_URL = "data/match_odds_probs.csv";
     const CLEAN_SHEET_PROBS_URL = "data/clean_sheet_probs.csv";
     const MODEL_STATUS_URL = "data/model_status_snapshot.json";
     const APP_AUDIT_URL = "data/audit_app_data_consistency.json";
     const DATA_FRESHNESS_URL = "data/data_freshness.json";
+    const PAGE_CACHE_BUST = new URLSearchParams(window.location.search).get("v") || "";
 
     const SUPABASE_URL = "https://jmxaadgcqueudfpjyqqa.supabase.co";
     const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_ZYZ__-zXk1ZotGumRcINfg_MuDqe0ae";
@@ -3947,6 +3949,22 @@ setTimeout(removeDataStatusBox, 250);
       transferBaselinePurchasePrices: "vm2026_transfer_baseline_purchase_prices_v1",
       transferChanges: "vm2026_transfer_changes_v1"
     };
+
+    function withCacheBust(url) {
+      if (!PAGE_CACHE_BUST) return url;
+      try {
+        const resolved = new URL(url, window.location.href);
+        resolved.searchParams.set("v", PAGE_CACHE_BUST);
+        return resolved.toString();
+      } catch (_error) {
+        const sep = url.includes("?") ? "&" : "?";
+        return `${url}${sep}v=${encodeURIComponent(PAGE_CACHE_BUST)}`;
+      }
+    }
+
+    function fetchWithCacheBust(url, options) {
+      return fetch(withCacheBust(url), options);
+    }
 
     const FORMATIONS = {
       "3-4-3": { df: 3, mf: 4, fw: 3 },
@@ -8691,7 +8709,7 @@ function renderTradeList() {
     }
 
     async function loadFixtures() {
-      const response = await fetch(FIXTURES_URL);
+      const response = await fetchWithCacheBust(FIXTURES_URL);
       if (!response.ok) throw new Error(`Kunne ikke hente fixtures: ${response.status}`);
 
       const text = await response.text();
@@ -8712,7 +8730,7 @@ function renderTradeList() {
     }
 
     async function loadMatchOddsProbs() {
-      const response = await fetch(MATCH_ODDS_PROBS_URL);
+      const response = await fetchWithCacheBust(MATCH_ODDS_PROBS_URL);
       if (!response.ok) throw new Error(`Kunne ikke hente match odds probs: ${response.status}`);
 
       const text = await response.text();
@@ -8721,7 +8739,7 @@ function renderTradeList() {
 
     async function loadCleanSheetProbs() {
       try {
-        const response = await fetch(CLEAN_SHEET_PROBS_URL);
+        const response = await fetchWithCacheBust(CLEAN_SHEET_PROBS_URL);
         if (!response.ok) throw new Error(`Kunne ikke hente clean sheet probs: ${response.status}`);
 
         const text = await response.text();
@@ -8743,7 +8761,7 @@ function renderTradeList() {
 
     async function fetchOptionalJson(url) {
       try {
-        const response = await fetch(url);
+        const response = await fetchWithCacheBust(url);
         if (!response.ok) return null;
         return await response.json();
       } catch (_error) {
@@ -8765,7 +8783,7 @@ function renderTradeList() {
     }
 
     async function loadStartSecurityMap() {
-      const response = await fetch(START_SECURITY_URL);
+      const response = await fetchWithCacheBust(START_SECURITY_URL);
       if (!response.ok) throw new Error(`Kunne ikke hente start-sandsynlighed: ${response.status}`);
 
       const text = await response.text();
@@ -8787,7 +8805,7 @@ function renderTradeList() {
     }
 
     async function loadOptimalSquads() {
-      const response = await fetch(OPTIMAL_SQUADS_URL);
+      const response = await fetchWithCacheBust(OPTIMAL_SQUADS_URL);
       if (!response.ok) throw new Error(`Kunne ikke hente optimizer-data: ${response.status}`);
 
       const raw = await response.json();
@@ -8858,7 +8876,7 @@ function renderTradeList() {
 
     async function loadManualOverrides() {
       try {
-        const response = await fetch(MANUAL_OVERRIDES_URL);
+        const response = await fetchWithCacheBust(MANUAL_OVERRIDES_URL);
         if (!response.ok) return;
 
         const rows = parseCsv(await response.text());
@@ -8874,7 +8892,7 @@ function renderTradeList() {
 
     async function loadCurrentSquadOwnership() {
       try {
-        const response = await fetch(CURRENT_SQUAD_URL);
+        const response = await fetchWithCacheBust(CURRENT_SQUAD_URL);
         if (!response.ok) return;
 
         const rows = parseCsv(await response.text());
@@ -9574,7 +9592,7 @@ formationSelect.value = currentFormation;
           playersResponse,
           startMap
         ] = await Promise.all([
-          fetch(DATA_URL),
+          fetchWithCacheBust(DATA_URL),
           loadStartSecurityMap(),
           loadFixtures(),
           loadOptimalSquads(),
@@ -9823,9 +9841,9 @@ formationSelect.value = currentFormation;
       if (oddsByTeamPair) return oddsByTeamPair;
 
       if (!oddsPromise) {
-        oddsPromise = fetch(MATCH_ODDS_PROBS_URL, { cache: "no-store" })
+        oddsPromise = fetchWithCacheBust(MATCH_ODDS_URL, { cache: "no-store" })
           .then(function (res) {
-            if (!res.ok) throw new Error("match_odds_probs.csv " + res.status);
+            if (!res.ok) throw new Error("match_odds.csv " + res.status);
             return res.text();
           })
           .then(parseCsv)
@@ -10012,9 +10030,9 @@ formationSelect.value = currentFormation;
 
         var row = odds.get(home + "|" + away) || odds.get(away + "|" + home);
         if (!row && matchId) {
-          row = matchOddsRows.find(function (candidate) {
+          row = selectPreferredOddsRow(matchOddsRows.filter(function (candidate) {
             return String(getRowValue(candidate, ["match_id", "fixture_id", "id"])) === String(matchId);
-          }) || null;
+          })) || null;
         }
 
         var win = null;
