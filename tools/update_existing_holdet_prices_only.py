@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import math
 import sys
 from datetime import datetime
 from pathlib import Path
@@ -38,6 +39,20 @@ def to_int(value: Any) -> int | None:
         return None
 
 
+def sanitize_for_json(value: Any) -> Any:
+    if isinstance(value, dict):
+        return {key: sanitize_for_json(item) for key, item in value.items()}
+    if isinstance(value, list):
+        return [sanitize_for_json(item) for item in value]
+    if isinstance(value, tuple):
+        return [sanitize_for_json(item) for item in value]
+    if value is None:
+        return None
+    if isinstance(value, float):
+        return value if math.isfinite(value) else None
+    return value
+
+
 def is_active_player(player: dict[str, Any]) -> bool:
     return not bool(player.get("holdet_is_out"))
 
@@ -47,7 +62,7 @@ def refresh_holdet_files(game_id: int) -> None:
     df = flatten_holdet_payload(payload)
 
     RAW_PATH.write_text(
-        json.dumps(payload, ensure_ascii=False, indent=2),
+        json.dumps(sanitize_for_json(payload), ensure_ascii=False, indent=2, allow_nan=False),
         encoding="utf-8",
     )
     df.to_csv(HOLDET_PATH, index=False, encoding="utf-8-sig")
@@ -78,7 +93,10 @@ def main() -> int:
     with HOLDET_PATH.open(encoding="utf-8-sig", newline="") as f:
         holdet_rows = list(csv.DictReader(f))
 
-    backup_path.write_text(json.dumps(pool, ensure_ascii=False, indent=2), encoding="utf-8")
+    backup_path.write_text(
+        json.dumps(sanitize_for_json(pool), ensure_ascii=False, indent=2, allow_nan=False),
+        encoding="utf-8",
+    )
 
     holdet_by_player_id = {}
     holdet_by_person_id = {}
@@ -228,7 +246,10 @@ def main() -> int:
     price_changes_sorted_up = sorted(price_changes, key=lambda item: (item["diff"] if item["diff"] is not None else -10**12), reverse=True)
     price_changes_sorted_down = sorted(price_changes, key=lambda item: (item["diff"] if item["diff"] is not None else 10**12))
 
-    POOL_PATH.write_text(json.dumps(pool, ensure_ascii=False, indent=2), encoding="utf-8")
+    POOL_PATH.write_text(
+        json.dumps(sanitize_for_json(pool), ensure_ascii=False, indent=2, allow_nan=False),
+        encoding="utf-8",
+    )
 
     with changes_csv_path.open("w", encoding="utf-8-sig", newline="") as f:
         fieldnames = [
@@ -264,7 +285,10 @@ def main() -> int:
         "backup_path": str(backup_path),
         "changes_csv_path": str(changes_csv_path),
     }
-    audit_path.write_text(json.dumps(audit, ensure_ascii=False, indent=2), encoding="utf-8")
+    audit_path.write_text(
+        json.dumps(sanitize_for_json(audit), ensure_ascii=False, indent=2, allow_nan=False),
+        encoding="utf-8",
+    )
 
     print("Backup:", backup_path)
     print("Audit:", audit_path)
