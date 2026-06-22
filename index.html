@@ -4643,6 +4643,39 @@ function hasUpcomingStrategyGroupStage() {
   return sorted.some(f => isUpcomingFixture(f));
 }
 
+function getMaxUpcomingGroupFixturesPerTeam() {
+  if (!Array.isArray(fixtures) || !fixtures.length) return null;
+
+  const counts = new Map();
+  fixtures
+    .filter(f => String(f.stage || "").toUpperCase() === "GROUP")
+    .filter(f => isUpcomingFixture(f))
+    .forEach(fixture => {
+      const home = canonicalTeamId(fixture.home);
+      const away = canonicalTeamId(fixture.away);
+      if (home) counts.set(home, (counts.get(home) || 0) + 1);
+      if (away) counts.set(away, (counts.get(away) || 0) + 1);
+    });
+
+  if (!counts.size) return 0;
+  return Math.max(...counts.values());
+}
+
+function shouldHideGroupStageStrategy() {
+  const currentWindowKey = normalizeTransferWindowKey(
+    typeof getTransferWindowLabel === "function" ? getTransferWindowLabel() : transferWindowKey || ""
+  );
+  if (currentWindowKey === "runde_2_3") return true;
+
+  const contextTargetRound = Number(strategyContext?.target_round || 0);
+  if (contextTargetRound >= 3) return true;
+
+  const maxUpcomingGroupFixtures = getMaxUpcomingGroupFixturesPerTeam();
+  if (Number.isFinite(maxUpcomingGroupFixtures) && maxUpcomingGroupFixtures <= 1) return true;
+
+  return false;
+}
+
 function isStrategyStillRelevantByTime(strategyKey) {
   const key = String(strategyKey || "");
 
@@ -4656,6 +4689,7 @@ function isStrategyStillRelevantByTime(strategyKey) {
   }
 
   if (key === "group_stage") {
+    if (shouldHideGroupStageStrategy()) return false;
     return hasUpcomingStrategyGroupStage();
   }
 
@@ -4740,6 +4774,7 @@ function isStrategyButtonRelevantNow(strategyKey) {
   }
 
   if (key === "group_stage") {
+    if (shouldHideGroupStageStrategy()) return false;
     return hasStrategyControlUpcomingGroupStage();
   }
 
