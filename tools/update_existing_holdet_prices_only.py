@@ -3,7 +3,6 @@ from __future__ import annotations
 import argparse
 import csv
 import json
-import math
 import sys
 from datetime import datetime
 from pathlib import Path
@@ -17,6 +16,8 @@ if str(TOOLS_DIR) not in sys.path:
     sys.path.insert(0, str(TOOLS_DIR))
 
 from holdet_players_api import fetch_holdet_players, flatten_holdet_payload
+from json_file_safety import sanitize_for_json, write_json_strict
+from sanity_check_active_json import main as run_active_json_sanity
 
 POOL_PATH = DATA_DIR / "player_pool_v1.json"
 HOLDET_PATH = DATA_DIR / "holdet_players_game_616_flat.csv"
@@ -39,20 +40,6 @@ def to_int(value: Any) -> int | None:
         return None
 
 
-def sanitize_for_json(value: Any) -> Any:
-    if isinstance(value, dict):
-        return {key: sanitize_for_json(item) for key, item in value.items()}
-    if isinstance(value, list):
-        return [sanitize_for_json(item) for item in value]
-    if isinstance(value, tuple):
-        return [sanitize_for_json(item) for item in value]
-    if value is None:
-        return None
-    if isinstance(value, float):
-        return value if math.isfinite(value) else None
-    return value
-
-
 def is_active_player(player: dict[str, Any]) -> bool:
     return not bool(player.get("holdet_is_out"))
 
@@ -61,15 +48,9 @@ def refresh_holdet_files(game_id: int) -> None:
     payload = fetch_holdet_players(game_id)
     df = flatten_holdet_payload(payload)
 
-    RAW_PATH.write_text(
-        json.dumps(sanitize_for_json(payload), ensure_ascii=False, indent=2, allow_nan=False),
-        encoding="utf-8",
-    )
+    write_json_strict(RAW_PATH, payload)
     df.to_csv(HOLDET_PATH, index=False, encoding="utf-8-sig")
-    FLAT_JSON_PATH.write_text(
-        df.to_json(orient="records", force_ascii=False, indent=2),
-        encoding="utf-8",
-    )
+    write_json_strict(FLAT_JSON_PATH, df.to_dict(orient="records"))
 
 
 def main() -> int:
@@ -93,10 +74,7 @@ def main() -> int:
     with HOLDET_PATH.open(encoding="utf-8-sig", newline="") as f:
         holdet_rows = list(csv.DictReader(f))
 
-    backup_path.write_text(
-        json.dumps(sanitize_for_json(pool), ensure_ascii=False, indent=2, allow_nan=False),
-        encoding="utf-8",
-    )
+    write_json_strict(backup_path, pool)
 
     holdet_by_player_id = {}
     holdet_by_person_id = {}
@@ -246,10 +224,7 @@ def main() -> int:
     price_changes_sorted_up = sorted(price_changes, key=lambda item: (item["diff"] if item["diff"] is not None else -10**12), reverse=True)
     price_changes_sorted_down = sorted(price_changes, key=lambda item: (item["diff"] if item["diff"] is not None else 10**12))
 
-    POOL_PATH.write_text(
-        json.dumps(sanitize_for_json(pool), ensure_ascii=False, indent=2, allow_nan=False),
-        encoding="utf-8",
-    )
+    write_json_strict(POOL_PATH, pool)
 
     with changes_csv_path.open("w", encoding="utf-8-sig", newline="") as f:
         fieldnames = [
@@ -285,10 +260,7 @@ def main() -> int:
         "backup_path": str(backup_path),
         "changes_csv_path": str(changes_csv_path),
     }
-    audit_path.write_text(
-        json.dumps(sanitize_for_json(audit), ensure_ascii=False, indent=2, allow_nan=False),
-        encoding="utf-8",
-    )
+    write_json_strict(audit_path, audit)
 
     print("Backup:", backup_path)
     print("Audit:", audit_path)
@@ -305,6 +277,10 @@ def main() -> int:
     print("Name mismatches:", len(name_mismatches))
     print("Position mismatches:", len(position_mismatches))
     print("Team mismatches:", len(team_mismatches))
+
+    sanity_exit_code = run_active_json_sanity()
+    if sanity_exit_code != 0:
+        return sanity_exit_code
 
     return 0
 

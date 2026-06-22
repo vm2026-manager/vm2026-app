@@ -12,6 +12,8 @@ from zoneinfo import ZoneInfo
 import pandas as pd
 import pulp
 
+from json_file_safety import write_json_strict
+
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = PROJECT_ROOT / "data"
@@ -64,26 +66,8 @@ DISPLAY_NAMES_DA = {
     "long_run": "Lang sigt",
 }
 
-
-def sanitize_for_json(value: Any) -> Any:
-    if isinstance(value, dict):
-        return {key: sanitize_for_json(item) for key, item in value.items()}
-    if isinstance(value, list):
-        return [sanitize_for_json(item) for item in value]
-    if isinstance(value, tuple):
-        return [sanitize_for_json(item) for item in value]
-    if value is None:
-        return None
-    if isinstance(value, float):
-        return value if math.isfinite(value) else None
-    return value
-
-
 def write_json_file(path: Path, data: Any) -> None:
-    path.write_text(
-        json.dumps(sanitize_for_json(data), ensure_ascii=False, indent=2, allow_nan=False),
-        encoding="utf-8",
-    )
+    write_json_strict(path, data)
 
 POSITION_MAP = {
     "GK": "GK",

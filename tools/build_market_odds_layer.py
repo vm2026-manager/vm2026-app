@@ -1,11 +1,12 @@
 from __future__ import annotations
 
 import json
-import math
 from pathlib import Path
 from typing import Any
 
 import pandas as pd
+
+from json_file_safety import write_json_strict
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -199,32 +200,8 @@ def build_team_market_layer() -> pd.DataFrame:
 
     return df
 
-
-def sanitize_for_json(value: Any) -> Any:
-    if isinstance(value, dict):
-        return {key: sanitize_for_json(item) for key, item in value.items()}
-    if isinstance(value, list):
-        return [sanitize_for_json(item) for item in value]
-    if isinstance(value, tuple):
-        return [sanitize_for_json(item) for item in value]
-    if value is None:
-        return None
-    if isinstance(value, float):
-        return value if math.isfinite(value) else None
-    try:
-        if pd.isna(value):
-            return None
-    except Exception:
-        pass
-    return value
-
-
 def write_json(path: Path, data: Any) -> None:
-    sanitized = sanitize_for_json(data)
-    path.write_text(
-        json.dumps(sanitized, ensure_ascii=False, indent=2, allow_nan=False),
-        encoding="utf-8",
-    )
+    write_json_strict(path, data)
 
 
 def main() -> None:

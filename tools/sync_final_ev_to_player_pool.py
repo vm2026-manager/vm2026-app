@@ -9,6 +9,8 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+from json_file_safety import write_json_strict
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -88,20 +90,6 @@ def normalized_value(field: str, value: Any) -> Any:
     if field == "price_quality_applied":
         return text(value).casefold() in {"true", "1", "yes", "ja"}
     return value if value is not None else ""
-
-
-def sanitize_for_json(value: Any) -> Any:
-    if isinstance(value, dict):
-        return {key: sanitize_for_json(item) for key, item in value.items()}
-    if isinstance(value, list):
-        return [sanitize_for_json(item) for item in value]
-    if isinstance(value, tuple):
-        return [sanitize_for_json(item) for item in value]
-    if value is None:
-        return None
-    if isinstance(value, float):
-        return value if math.isfinite(value) else None
-    return value
 
 
 def values_match(field: str, left: Any, right: Any, tolerance: float = 1e-9) -> bool:
@@ -309,11 +297,7 @@ def sync_final_ev_to_pool() -> dict[str, Any]:
                 }
             )
 
-    sanitized_pool_rows = sanitize_for_json(pool_rows)
-    POOL_PATH.write_text(
-        json.dumps(sanitized_pool_rows, ensure_ascii=False, indent=2, allow_nan=False),
-        encoding="utf-8",
-    )
+    write_json_strict(POOL_PATH, pool_rows)
     after_counts = mismatch_counts(pool_rows, ev_by_id, blocked_ids)
     after_thresholds = optimizer_threshold_counts(pool_rows, ev_by_id, blocked_ids)
     write_audit(

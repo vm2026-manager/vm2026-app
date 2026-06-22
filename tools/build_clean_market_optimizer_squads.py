@@ -9,6 +9,8 @@ from typing import Any
 
 import pandas as pd
 
+from json_file_safety import write_json_strict
+
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = PROJECT_ROOT / "data"
@@ -427,23 +429,7 @@ def build_squad(formation: str, df: pd.DataFrame) -> tuple[list[dict[str, Any]],
 
 
 def write_json(path: Path, data: Any) -> None:
-    def sanitize(value: Any) -> Any:
-        if isinstance(value, dict):
-            return {key: sanitize(item) for key, item in value.items()}
-        if isinstance(value, list):
-            return [sanitize(item) for item in value]
-        if isinstance(value, tuple):
-            return [sanitize(item) for item in value]
-        if value is None:
-            return None
-        if isinstance(value, float):
-            return value if math.isfinite(value) else None
-        return value
-
-    path.write_text(
-        json.dumps(sanitize(data), ensure_ascii=False, indent=2, allow_nan=False),
-        encoding="utf-8",
-    )
+    write_json_strict(path, data)
 
 
 def main() -> None:

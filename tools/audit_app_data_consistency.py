@@ -8,6 +8,8 @@ from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any
 
+from json_file_safety import write_json_strict
+
 
 BASE_DIR = Path(__file__).resolve().parents[1]
 DATA_DIR = BASE_DIR / "data"
@@ -33,20 +35,6 @@ FORMATIONS = {
     "5-3-2": {"GK": 1, "DEF": 5, "MID": 3, "FWD": 2},
     "5-4-1": {"GK": 1, "DEF": 5, "MID": 4, "FWD": 1},
 }
-
-
-def sanitize_for_json(value: Any) -> Any:
-    if isinstance(value, dict):
-        return {key: sanitize_for_json(item) for key, item in value.items()}
-    if isinstance(value, list):
-        return [sanitize_for_json(item) for item in value]
-    if isinstance(value, tuple):
-        return [sanitize_for_json(item) for item in value]
-    if value is None:
-        return None
-    if isinstance(value, float):
-        return value if math.isfinite(value) else None
-    return value
 
 POSITION_MAP = {
     "GK": "GK",
@@ -579,10 +567,7 @@ def main() -> None:
     audit["match_odds_probs"] = audit_match_odds_probs()
     audit["optimizer"] = audit_optimizer(optimizer_by_formation, indexes)
 
-    OUT_JSON.write_text(
-        json.dumps(sanitize_for_json(audit), ensure_ascii=False, indent=2, allow_nan=False),
-        encoding="utf-8",
-    )
+    write_json_strict(OUT_JSON, audit)
 
     report = format_report(audit)
     OUT_TXT.write_text(report, encoding="utf-8")
