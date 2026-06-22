@@ -3923,7 +3923,7 @@ setTimeout(removeDataStatusBox, 250);
     const MANUAL_OVERRIDES_URL = "data/manual_player_overrides.csv";
     const MATCH_ODDS_URL = "data/match_odds.csv";
     const MATCH_ODDS_PROBS_URL = "data/match_odds_probs.csv";
-    const CLEAN_SHEET_PROBS_URL = "data/clean_sheet_probs.csv";
+    const CLEAN_SHEET_ODDS_URL = "data/clean_sheet_odds.csv";
     const MODEL_STATUS_URL = "data/model_status_snapshot.json";
     const APP_AUDIT_URL = "data/audit_app_data_consistency.json";
     const DATA_FRESHNESS_URL = "data/data_freshness.json";
@@ -4009,8 +4009,8 @@ setTimeout(removeDataStatusBox, 250);
     let currentSquadOwnership = new Map();
     let manualOverrideMap = new Map();
     let matchOddsRows = [];
-    let cleanSheetProbRows = [];
-    let cleanSheetProbByMatchTeam = new Map();
+    let cleanSheetOddsRows = [];
+    let cleanSheetOddsByMatchTeam = new Map();
     let modelStatus = null;
     let appAudit = null;
     let dataFreshness = null;
@@ -6320,17 +6320,37 @@ function getPlayerScore(player) {
       return "";
     }
 
+    function getOddsRowTeamId(row, side) {
+      if (!row) return "";
+      const preferredKeys = side === "home"
+        ? ["home_team_id", "home", "home_team", "team_home"]
+        : ["away_team_id", "away", "away_team", "team_away"];
+      return canonicalTeamId(getRowValue(row, preferredKeys));
+    }
+
     function findMatchOddsRow(nextFixture) {
       if (!nextFixture) return null;
 
+      const exactByMatchId = matchOddsRows.find(row =>
+        String(getRowValue(row, ["match_id", "fixture_id", "id"])) === String(nextFixture.match_id)
+      );
+      if (exactByMatchId) return exactByMatchId;
+
+      const exactByTeamIds = matchOddsRows.find(row =>
+        getOddsRowTeamId(row, "home") === canonicalTeamId(nextFixture.home) &&
+        getOddsRowTeamId(row, "away") === canonicalTeamId(nextFixture.away)
+      );
+      if (exactByTeamIds) return exactByTeamIds;
+
       const exactByTeams = matchOddsRows.find(row =>
-        canonicalTeamId(getRowValue(row, ["home", "home_team", "team_home", "home_team_id"])) === canonicalTeamId(nextFixture.home) &&
-        canonicalTeamId(getRowValue(row, ["away", "away_team", "team_away", "away_team_id"])) === canonicalTeamId(nextFixture.away)
+        canonicalTeamId(getRowValue(row, ["home", "home_team", "team_home"])) === canonicalTeamId(nextFixture.home) &&
+        canonicalTeamId(getRowValue(row, ["away", "away_team", "team_away"])) === canonicalTeamId(nextFixture.away)
       );
       if (exactByTeams) return exactByTeams;
 
       return matchOddsRows.find(row =>
-        String(getRowValue(row, ["match_id", "fixture_id", "id"])) === String(nextFixture.match_id)
+        canonicalTeamId(getRowValue(row, ["home"])) === canonicalTeamId(nextFixture.home) &&
+        canonicalTeamId(getRowValue(row, ["away"])) === canonicalTeamId(nextFixture.away)
       ) || null;
     }
 
@@ -6464,28 +6484,64 @@ function getPlayerScore(player) {
       }) + " %";
     }
 
+    function parsePositiveOdds(value) {
+      const num = Number(String(value || "").replace(",", "."));
+      if (!Number.isFinite(num) || num <= 0) return null;
+      return num;
+    }
+
+    function cleanSheetProbabilityFromOdds(row) {
+      if (!row) return null;
+      const yesOdds = parsePositiveOdds(getRowValue(row, ["clean_sheet_yes_odds"]));
+      const noOdds = parsePositiveOdds(getRowValue(row, ["clean_sheet_no_odds"]));
+      if (!yesOdds || !noOdds) return null;
+
+      const rawYes = 1 / yesOdds;
+      const rawNo = 1 / noOdds;
+      const denom = rawYes + rawNo;
+      if (!Number.isFinite(denom) || denom <= 0) return null;
+
+      const prob = rawYes / denom;
+      return Number.isFinite(prob) && prob > 0 ? prob : null;
+    }
+
     function getNextCleanSheetInfo(player) {
       if (!player || !isCleanSheetEligiblePosition(player.position)) return null;
 
-      const nextFixture = getNextFixtureForTeam(player.team_id || player.team_name || "");
-      if (!nextFixture) return null;
-
       const teamId = canonicalTeamId(player.team_id || player.team_name || "");
-      const row = cleanSheetProbByMatchTeam.get(`${String(nextFixture.match_id)}|${teamId}`);
-      if (!row) return null;
+      const upcomingFixtures = getUpcomingGroupFixturesForTeam(teamId);
+      if (!upcomingFixtures.length) return null;
 
-      const prob = parseProbNumber(getRowValue(row, ["clean_sheet_yes_prob_novig", "clean_sheet_yes_prob_raw"]));
+      let matchedFixture = null;
+      let row = null;
+
+      for (const fixture of upcomingFixtures) {
+        const candidateRow = cleanSheetOddsByMatchTeam.get(`${String(fixture.match_id)}|${teamId}`);
+        if (!candidateRow) continue;
+        matchedFixture = {
+          match_id: fixture.match_id,
+          opponent: canonicalTeamId(canonicalTeamId(fixture.home) === teamId ? fixture.away : fixture.home)
+        };
+        row = candidateRow;
+        break;
+      }
+
+      if (!matchedFixture || !row) return null;
+
+      const prob = cleanSheetProbabilityFromOdds(row);
       if (!Number.isFinite(prob) || prob <= 0) return null;
 
       const positionCode = normalizePositionLabel(player.position);
-      const opponentName = teamDisplayName(nextFixture.opponent);
+      const opponentName = teamDisplayName(matchedFixture.opponent);
       const pctText = formatPercentOneDecimal(prob);
+      const fetchedLabel = String(getRowValue(row, ["clean_sheet_fetched_label"])).trim();
       return {
         prob,
         label: positionCode === "GK" ? "Rent bur næste kamp" : "Clean sheet næste kamp",
         shortLabel: positionCode === "GK" ? "Rent bur" : "CS",
         opponentName,
         pctText,
+        fetchedLabel,
         text: positionCode === "GK"
           ? `Rent bur næste kamp: ${pctText}`
           : `Clean sheet næste kamp: ${pctText}`
@@ -8779,25 +8835,25 @@ function renderTradeList() {
       matchOddsRows = parseCsv(text);
     }
 
-    async function loadCleanSheetProbs() {
+    async function loadCleanSheetOdds() {
       try {
-        const response = await fetchWithCacheBust(CLEAN_SHEET_PROBS_URL);
-        if (!response.ok) throw new Error(`Kunne ikke hente clean sheet probs: ${response.status}`);
+        const response = await fetchWithCacheBust(CLEAN_SHEET_ODDS_URL);
+        if (!response.ok) throw new Error(`Kunne ikke hente clean sheet odds: ${response.status}`);
 
         const text = await response.text();
-        cleanSheetProbRows = parseCsv(text);
-        cleanSheetProbByMatchTeam = new Map();
+        cleanSheetOddsRows = parseCsv(text);
+        cleanSheetOddsByMatchTeam = new Map();
 
-        cleanSheetProbRows.forEach(row => {
+        cleanSheetOddsRows.forEach(row => {
           const matchId = String(getRowValue(row, ["match_id", "fixture_id", "id"])).trim();
           const teamId = canonicalTeamId(getRowValue(row, ["team_id", "team", "team_code"]));
           if (!matchId || !teamId) return;
-          cleanSheetProbByMatchTeam.set(`${matchId}|${teamId}`, row);
+          cleanSheetOddsByMatchTeam.set(`${matchId}|${teamId}`, row);
         });
       } catch (error) {
-        cleanSheetProbRows = [];
-        cleanSheetProbByMatchTeam = new Map();
-        console.warn("Clean sheet probs kunne ikke hentes", error);
+        cleanSheetOddsRows = [];
+        cleanSheetOddsByMatchTeam = new Map();
+        console.warn("Clean sheet odds kunne ikke hentes", error);
       }
     }
 
@@ -9650,7 +9706,7 @@ formationSelect.value = currentFormation;
           loadManualOverrides(),
           loadCurrentSquadOwnership(),
           loadMatchOddsProbs(),
-          loadCleanSheetProbs(),
+          loadCleanSheetOdds(),
           loadDataStatus()
         ]);
 
@@ -9919,8 +9975,8 @@ formationSelect.value = currentFormation;
         var rowsForMatch = grouped[id];
         var selected = selectPreferredOddsRow(rowsForMatch) || rowsForMatch[0];
 
-        var home = String(selected.home || "").toUpperCase();
-        var away = String(selected.away || "").toUpperCase();
+        var home = getOddsRowTeamId(selected, "home");
+        var away = getOddsRowTeamId(selected, "away");
 
         if (!home || !away) return;
 
@@ -10240,7 +10296,7 @@ formationSelect.value = currentFormation;
           ? '<div class="vm-fixture-tooltip-clean-sheet">' +
               '<div class="vm-fixture-tooltip-clean-sheet-copy">' +
                 '<div class="vm-fixture-tooltip-clean-sheet-label">' + esc(cleanSheetInfo.label) + '</div>' +
-                '<div class="vm-fixture-tooltip-clean-sheet-subline">vs. ' + esc(cleanSheetInfo.opponentName) + '</div>' +
+                '<div class="vm-fixture-tooltip-clean-sheet-subline">vs. ' + esc(cleanSheetInfo.opponentName) + (cleanSheetInfo.fetchedLabel ? ' · ' + esc(cleanSheetInfo.fetchedLabel) : '') + '</div>' +
               '</div>' +
               '<div class="vm-fixture-tooltip-clean-sheet-value">' + esc(cleanSheetInfo.pctText) + '</div>' +
             '</div>'

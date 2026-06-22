@@ -1,49 +1,39 @@
-﻿round,match_id,team_id,team_name,opponent_team_id,opponent_team_name,clean_sheet_yes_odds,clean_sheet_no_odds,source,clean_sheet_fetched_label,clean_sheet_fetched_at
-2,25,CZE,Tjekkiet,RSA,Sydafrika,2.2,1.61,manual_screenshot,17.06 screenshot,
-2,25,RSA,Sydafrika,CZE,Tjekkiet,4.25,1.2,manual_screenshot,17.06 screenshot,
-2,26,SUI,Schweiz,BIH,Bosnien,1.95,1.77,manual_screenshot,17.06 screenshot,
-2,26,BIH,Bosnien,SUI,Schweiz,4.75,1.14,manual_screenshot,17.06 screenshot,
-2,27,CAN,Canada,QAT,Qatar,1.67,2.1,manual_screenshot,17.06 screenshot,
-2,27,QAT,Qatar,CAN,Canada,6.75,1.08,manual_screenshot,17.06 screenshot,
-2,28,MEX,Mexico,KOR,Sydkorea,2.2,1.61,manual_screenshot,17.06 screenshot,
-2,28,KOR,Sydkorea,MEX,Mexico,3.4,1.26,manual_screenshot,17.06 screenshot,
-2,29,USA,USA,AUS,Australia,2.1,1.65,manual_screenshot,17.06 screenshot,
-2,29,AUS,Australia,USA,USA,4.75,1.14,manual_screenshot,17.06 screenshot,
-2,30,SCO,Skotland,MAR,Marokko,,,,,
-2,30,MAR,Marokko,SCO,Skotland,,,,,
-2,31,BRA,Brasilien,HAI,Haiti,1.61,2.15,manual_screenshot,17.06 screenshot,
-2,31,HAI,Haiti,BRA,Brasilien,12,1.004,manual_screenshot,17.06 screenshot,
-2,32,TUR,Tyrkiet,PAR,Paraguay,2.4,1.51,manual_screenshot,17.06 screenshot,
-2,32,PAR,Paraguay,TUR,Tyrkiet,3.65,1.23,manual_screenshot,17.06 screenshot,
-2,33,NED,Holland,SWE,Sverige,,,,,
-2,33,SWE,Sverige,NED,Holland,,,,,
-2,34,GER,Tyskland,CIV,Elfenbenskysten,2.25,1.57,manual_screenshot,17.06 screenshot,
-2,34,CIV,Elfenbenskysten,GER,Tyskland,5.75,1.11,manual_screenshot,17.06 screenshot,
-2,35,ECU,Ecuador,CUW,Curacao,1.38,2.8,manual_screenshot,17.06 screenshot,
-2,35,CUW,Curacao,ECU,Ecuador,10,1.02,manual_screenshot,17.06 screenshot,
-2,36,TUN,Tunesien,JPN,Japan,,,,,
-2,36,JPN,Japan,TUN,Tunesien,,,,,
-2,37,ESP,Spanien,KSA,Saudi Arabien,1.36,3,manual_screenshot,17.06 screenshot,
-2,37,KSA,Saudi Arabien,ESP,Spanien,10,1.02,manual_screenshot,17.06 screenshot,
-2,38,BEL,Belgien,IRN,Iran,1.83,1.87,manual_screenshot,17.06 screenshot,
-2,38,IRN,Iran,BEL,Belgien,5.75,1.11,manual_screenshot,17.06 screenshot,
-2,39,URU,Uruguay,CPV,Kap Verde,,,,,
-2,39,CPV,Kap Verde,URU,Uruguay,,,,,
-2,40,NZL,New Zealand,EGY,Egypten,4.25,1.18,manual_screenshot,17.06 screenshot,
-2,40,EGY,Egypten,NZL,New Zealand,1.87,1.83,manual_screenshot,17.06 screenshot,
-2,41,ARG,Argentina,AUT,Østrig,1.95,1.77,manual_screenshot,17.06 screenshot,
-2,41,AUT,Østrig,ARG,Argentina,4.75,1.16,manual_screenshot,17.06 screenshot,
-2,42,FRA,Frankrig,IRQ,Irak,1.43,2.7,manual_screenshot,17.06 screenshot,
-2,42,IRQ,Irak,FRA,Frankrig,11,1.02,manual_screenshot,17.06 screenshot,
-2,43,NOR,Norge,SEN,Senegal,,,,,
-2,43,SEN,Senegal,NOR,Norge,,,,,
-2,44,JOR,Jordan,ALG,Algeriet,,,,,
-2,44,ALG,Algeriet,JOR,Jordan,,,,,
-2,45,POR,Portugal,UZB,Uzbekistan,1.71,2.05,manual_screenshot,17.06 screenshot,
-2,45,UZB,Uzbekistan,POR,Portugal,7.75,1.05,manual_screenshot,17.06 screenshot,
-2,46,ENG,England,GHA,Ghana,1.71,2,manual_screenshot,17.06 screenshot,
-2,46,GHA,Ghana,ENG,England,6.75,1.08,manual_screenshot,17.06 screenshot,
-2,47,PAN,Panama,CRO,Kroatien,,,,,
-2,47,CRO,Kroatien,PAN,Panama,,,,,
-2,48,COL,Colombia,COD,DR Congo,,,,,
-2,48,COD,DR Congo,COL,Colombia,,,,,
+match_id,home,away,team_id,clean_sheet_yes_odds,clean_sheet_no_odds,source,clean_sheet_fetched_at,clean_sheet_fetched_label,note
+65,NZL,BEL,NZL,7.50,1.06,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+65,NZL,BEL,BEL,1.63,2.15,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+49,SUI,CAN,SUI,2.90,1.36,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+49,SUI,CAN,CAN,3.40,1.29,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+48,COL,COD,COL,1.77,1.95,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+48,COL,COD,COD,4.50,1.16,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+52,MAR,HAI,MAR,1.61,2.20,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+52,MAR,HAI,HAI,8.50,1.04,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+51,SCO,BRA,SCO,6.00,1.10,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+51,SCO,BRA,BRA,1.83,1.87,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+53,CZE,MEX,CZE,3.75,1.23,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+53,CZE,MEX,MEX,2.45,1.49,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+55,CUW,CIV,CUW,9.50,1.02,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+55,CUW,CIV,CIV,1.47,2.50,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+56,ECU,GER,ECU,4.25,1.18,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+56,ECU,GER,GER,2.70,1.40,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+61,NOR,FRA,NOR,4.50,1.18,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+61,NOR,FRA,FRA,2.50,1.47,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+62,SEN,IRQ,SEN,1.65,2.10,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+62,SEN,IRQ,IRQ,6.25,1.08,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+64,URU,ESP,URU,5.25,1.12,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+64,URU,ESP,ESP,1.98,1.73,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+68,PAN,ENG,PAN,8.00,1.05,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+68,PAN,ENG,ENG,1.69,2.05,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+70,COL,POR,COL,3.65,1.23,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+70,COL,POR,POR,2.50,1.47,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+72,JOR,ARG,JOR,8.50,1.04,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+72,JOR,ARG,ARG,1.61,2.15,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+71,ALG,AUT,ALG,3.15,1.31,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+71,ALG,AUT,AUT,2.70,1.40,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+57,TUN,NED,TUN,9.50,1.03,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+57,TUN,NED,NED,1.49,2.45,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+58,JPN,SWE,JPN,2.75,1.40,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+58,JPN,SWE,SWE,4.25,1.18,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+59,TUR,USA,TUR,4.50,1.16,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+59,TUR,USA,USA,2.80,1.38,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+66,EGY,IRN,EGY,2.35,1.53,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
+66,EGY,IRN,IRN,2.90,1.36,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots
