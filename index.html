@@ -3947,7 +3947,8 @@ setTimeout(removeDataStatusBox, 250);
       captainPlayerId: "vm2026_captain_player_id_v1",
       transferBaselineSquad: "vm2026_transfer_baseline_squad_v1",
       transferBaselinePurchasePrices: "vm2026_transfer_baseline_purchase_prices_v1",
-      transferChanges: "vm2026_transfer_changes_v1"
+      transferChanges: "vm2026_transfer_changes_v1",
+      transferWindowKey: "vm2026_transfer_window_key_v1"
     };
 
     function withCacheBust(url) {
@@ -4019,6 +4020,7 @@ setTimeout(removeDataStatusBox, 250);
     let transferBaselineSquad = JSON.parse(localStorage.getItem(STORAGE_KEYS.transferBaselineSquad) || "null");
     let transferBaselinePurchasePrices = JSON.parse(localStorage.getItem(STORAGE_KEYS.transferBaselinePurchasePrices) || "null");
     let transferChanges = JSON.parse(localStorage.getItem(STORAGE_KEYS.transferChanges) || "[]");
+    let transferWindowKey = String(localStorage.getItem(STORAGE_KEYS.transferWindowKey) || "").trim() || null;
     let captainPlayerId = localStorage.getItem(STORAGE_KEYS.captainPlayerId) || null;
     let currentFormation = localStorage.getItem(STORAGE_KEYS.formation) || "3-4-3";
     let manualBankMillions = parseManualBankMillions(localStorage.getItem(STORAGE_KEYS.manualBankMillions));
@@ -4931,6 +4933,7 @@ function normalizeSquadStateAgainstTransferBaseline() {
 function saveState() {
       normalizeSquadStateAgainstTransferBaseline();
       transferChanges = synchronizeTransferChanges();
+      transferWindowKey = transferWindowKey || getCurrentTransferWindowKey();
       captainPlayerId = normalizeCaptainPlayerId(captainPlayerId);
       if (captainPlayerId && !hasCaptainPlayerInSquad(captainPlayerId)) {
         captainPlayerId = null;
@@ -4944,6 +4947,7 @@ function saveState() {
       else localStorage.setItem(STORAGE_KEYS.manualBankMillions, String(manualBankMillions));
       if (captainPlayerId) localStorage.setItem(STORAGE_KEYS.captainPlayerId, captainPlayerId);
       else localStorage.removeItem(STORAGE_KEYS.captainPlayerId);
+      saveTransferWindowKeyState();
     }
 
     function normalizeCaptainPlayerId(value) {
@@ -5089,6 +5093,29 @@ function saveState() {
       return hasSquadPlayers(transferBaselineSquad);
     }
 
+    function normalizeTransferWindowKey(value) {
+      const text = String(value || "")
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/\s*→\s*/g, "_to_")
+        .replace(/[^a-zA-Z0-9]+/g, "_")
+        .replace(/^_+|_+$/g, "")
+        .toLowerCase();
+      return text || null;
+    }
+
+    function saveTransferWindowKeyState() {
+      if (transferWindowKey) {
+        localStorage.setItem(STORAGE_KEYS.transferWindowKey, transferWindowKey);
+      } else {
+        localStorage.removeItem(STORAGE_KEYS.transferWindowKey);
+      }
+    }
+
+    function getCurrentTransferWindowKey() {
+      return normalizeTransferWindowKey(getTransferWindowLabel()) || "naeste_runde";
+    }
+
     function saveTransferBaselineState() {
       if (transferBaselineSquad && typeof transferBaselineSquad === "object") {
         localStorage.setItem(STORAGE_KEYS.transferBaselineSquad, JSON.stringify(transferBaselineSquad));
@@ -5106,13 +5133,23 @@ function saveState() {
     function clearTransferBaselineState() {
       transferBaselineSquad = null;
       transferBaselinePurchasePrices = null;
+      transferWindowKey = null;
       saveTransferBaselineState();
+      saveTransferWindowKeyState();
     }
 
     function setTransferBaselineState(nextSquad = squad, nextPurchasePrices = squadPurchasePrices) {
       transferBaselineSquad = cloneSquadState(nextSquad);
       transferBaselinePurchasePrices = cloneSquadState(nextPurchasePrices);
       saveTransferBaselineState();
+    }
+
+    function setTransferWindowBaselineState(nextWindowKey = getCurrentTransferWindowKey(), nextSquad = squad, nextPurchasePrices = squadPurchasePrices) {
+      transferWindowKey = normalizeTransferWindowKey(nextWindowKey) || getCurrentTransferWindowKey();
+      setTransferBaselineState(nextSquad, nextPurchasePrices);
+      transferChanges = [];
+      localStorage.setItem(STORAGE_KEYS.transferChanges, JSON.stringify([]));
+      saveTransferWindowKeyState();
     }
 
     function applyLoadedTransferBaselineState(nextBaselineSquad, nextBaselinePurchasePrices) {
@@ -5128,24 +5165,26 @@ function saveState() {
     }
 
     function setLoadedSquadAsTransferBaseline(nextSquad = squad, nextPurchasePrices = squadPurchasePrices) {
-      setTransferBaselineState(nextSquad, nextPurchasePrices);
-      transferChanges = [];
-      localStorage.setItem(STORAGE_KEYS.transferChanges, JSON.stringify([]));
+      setTransferWindowBaselineState(getCurrentTransferWindowKey(), nextSquad, nextPurchasePrices);
     }
 
     function syncTransferStateAfterLoadedSquad(nextSquad = squad, nextPurchasePrices = squadPurchasePrices) {
-      if (!hasTransferBaselinePlayers()) {
+      const currentWindowKey = getCurrentTransferWindowKey();
+
+      if (transferWindowKey !== currentWindowKey || !hasTransferBaselinePlayers()) {
         setLoadedSquadAsTransferBaseline(nextSquad, nextPurchasePrices);
         return;
       }
 
       transferChanges = synchronizeTransferChanges();
       localStorage.setItem(STORAGE_KEYS.transferChanges, JSON.stringify(transferChanges || []));
+      saveTransferWindowKeyState();
     }
 
     function ensureTransferBaselineState() {
-      if (hasTransferBaselinePlayers()) return;
-      setTransferBaselineState(squad, squadPurchasePrices);
+      const currentWindowKey = getCurrentTransferWindowKey();
+      if (hasTransferBaselinePlayers() && transferWindowKey === currentWindowKey) return;
+      setTransferWindowBaselineState(currentWindowKey, squad, squadPurchasePrices);
     }
 
     function parseBudgetPrice(value) {
@@ -5355,12 +5394,15 @@ function saveState() {
         purchasePrices: nextPurchasePrices,
         transferChanges: nextTransferChanges,
         captainPlayerId: nextCaptainPlayerId,
+        transferWindowKey: nextTransferWindowKey,
         transferBaselineSquad: nextTransferBaselineSquad,
         transferBaselinePurchasePrices: nextTransferBaselinePurchasePrices
       } = pendingRemoteSquadState;
 
       transferChanges = cloneTransferChanges(nextTransferChanges);
       localStorage.setItem(STORAGE_KEYS.transferChanges, JSON.stringify(transferChanges || []));
+      transferWindowKey = normalizeTransferWindowKey(nextTransferWindowKey);
+      saveTransferWindowKeyState();
       captainPlayerId = normalizeCaptainPlayerId(nextCaptainPlayerId);
       applyLoadedTransferBaselineState(nextTransferBaselineSquad, nextTransferBaselinePurchasePrices);
       applySquadState(nextSquad, nextPurchasePrices, { preferStartPriceForNew: true });
@@ -7912,7 +7954,7 @@ function getPlayerScore(player) {
           lockedInPrice: row.incomingLockedPrice || 0,
           netEffect: row.netEffect || 0,
           transferWindowLabel: getTransferWindowLabel(),
-          transferWindowKey: getTransferWindowLabel(),
+          transferWindowKey: getCurrentTransferWindowKey(),
           timestamp: previous?.timestamp || new Date().toISOString()
         };
       });
@@ -9108,6 +9150,7 @@ function renderTradeList() {
           purchase_prices: squadPurchasePrices,
           captain_player_id: sanitizeCaptainPlayerId(squad),
           transfer_changes: synchronizeTransferChanges(),
+          transfer_window_key: transferWindowKey || getCurrentTransferWindowKey(),
           transfer_baseline_squad: transferBaselineSquad,
           transfer_baseline_purchase_prices: transferBaselinePurchasePrices,
           favorite_player_ids: Array.from(favoritePlayerIds),
@@ -9189,6 +9232,7 @@ function renderTradeList() {
         || Object.prototype.hasOwnProperty.call(savedState, "purchase_prices")
         || Object.prototype.hasOwnProperty.call(savedState, "captain_player_id")
         || Object.prototype.hasOwnProperty.call(savedState, "transfer_changes")
+        || Object.prototype.hasOwnProperty.call(savedState, "transfer_window_key")
         || Object.prototype.hasOwnProperty.call(savedState, "transfer_baseline_squad")
         || Object.prototype.hasOwnProperty.call(savedState, "transfer_baseline_purchase_prices")
         || Object.prototype.hasOwnProperty.call(savedState, "favorite_player_ids")
@@ -9205,6 +9249,9 @@ function renderTradeList() {
       const nextTransferChanges = hasSavedStateEnvelope && Array.isArray(savedState.transfer_changes)
         ? cloneTransferChanges(savedState.transfer_changes)
         : [];
+      const nextTransferWindowKey = hasSavedStateEnvelope
+        ? normalizeTransferWindowKey(savedState.transfer_window_key)
+        : null;
       const nextTransferBaselineSquad = hasSavedStateEnvelope && savedState.transfer_baseline_squad && typeof savedState.transfer_baseline_squad === "object"
         ? savedState.transfer_baseline_squad
         : null;
@@ -9217,6 +9264,7 @@ function renderTradeList() {
           purchasePrices: cloneSquadState(nextPurchasePrices),
           captainPlayerId: nextCaptainPlayerId,
           transferChanges: cloneTransferChanges(nextTransferChanges),
+          transferWindowKey: nextTransferWindowKey,
           transferBaselineSquad: cloneSquadState(nextTransferBaselineSquad),
           transferBaselinePurchasePrices: cloneSquadState(nextTransferBaselinePurchasePrices)
         };
@@ -9224,6 +9272,8 @@ function renderTradeList() {
         captainPlayerId = nextCaptainPlayerId;
         transferChanges = cloneTransferChanges(nextTransferChanges);
         localStorage.setItem(STORAGE_KEYS.transferChanges, JSON.stringify(transferChanges || []));
+        transferWindowKey = nextTransferWindowKey;
+        saveTransferWindowKeyState();
         applyLoadedTransferBaselineState(nextTransferBaselineSquad, nextTransferBaselinePurchasePrices);
         applySquadState(nextSquad, nextPurchasePrices, { preferStartPriceForNew: true });
         ensureSquadPurchasePrices({ preferStartPriceForNew: true });
