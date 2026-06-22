@@ -296,7 +296,7 @@ dennis_hadzikadunic__bih,Dennis Hadzikadunic,BIH,DEF,34,0.3378,0.3378,transferma
 sead_kolasinac__bih,Sead Kolasinac,BIH,DEF,65,0.6526,0.6526,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.8213,,,,sead kolasinac||bih,,,0.701,0.803,medium_risk,medium_risk,
 nikola_kati__bih,Nikola Katic,BIH,DEF,88,0.8761,0.8761,transfermarkt_availability_split_2026_06_07,sikker starter - Transfermarkt landshold,,,,,,0.7847,,,,nikola katic||bih,,,0.9267,0.844,medium_risk,medium_risk,
 stjepan_radeljic__bih,Stjepan Radeljic,BIH,DEF,31,0.3061,0.3061,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.3715,,,,stjepan radeljic||bih,,,0.356,0.6,high_risk,high_risk,
-tarik_muharemovic__bih,Tarik Muharemovic,BIH,DEF,40.0,0.4,0.4,manual_context_override_safe,rotation/usikker - Transfermarkt landshold,,,,,,0.7755,,,,tarik muharemovic||bih,,,0.5,0.7872,medium_risk,medium_risk,
+tarik_muharemovic__bih,Tarik Muharemovic,BIH,DEF,0.0,0.0,0.0,manual_context_override_safe,suspended,,,,,,0.7755,,,,tarik muharemovic||bih,,,0.0,0.0000,suspended,suspended,0
 amar_dedi__bih,Amar Dedic,BIH,DEF,90,0.8997,0.8997,transfermarkt_availability_split_2026_06_07,sikker starter - Transfermarkt landshold,,,,,,0.8054,,,,amar dedic||bih,,,0.9598,0.821,medium_risk,medium_risk,
 ali_nemati__irn,Ali Nemati,IRN,DEF,51,0.514,0.514,name+team,,,,,,,,,,,,,,,,,,
 hossein_abarghouei__irn,Hossein Abarghouei,IRN,DEF,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.7913,,,,hossein abarghouei||irn,,,0.0,0.7283,out,out_of_tournament,0.0
@@ -310,7 +310,7 @@ ramin_rezaeian__irn,Ramin Rezaeian,IRN,DEF,13,0.1338,0.1338,transfermarkt_availa
 ehsan_hajsafi__irn,Ehsan Hajsafi,IRN,DEF,36,0.3649,0.3649,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7469,,,,ehsan hajsafi||irn,,,0.421,0.6192,high_risk,high_risk,
 daniyal_eiri__irn,Daniyal Eiri,IRN,DEF,25,0.25,0.25,holdet_official_unmatched_default,,,,,,,,,,,,,,,,,,
 arya_yousefi__irn,Arya Yousefi,IRN,DEF,82,0.8205,0.8205,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,,,,,,,,0.8526,0.8924,low_risk,low_risk,
-nathan_ngoy__bel,Nathan Ngoy,BEL,DEF,88,0.8806,0.8806,transfermarkt_availability_split_2026_06_07,sikker starter - Transfermarkt landshold,,,,,,0.8655,,,,nathan ngoy||bel,,,0.9281,0.8538,low_risk,low_risk,
+nathan_ngoy__bel,Nathan Ngoy,BEL,DEF,0,0.0000,0.0000,transfermarkt_availability_split_2026_06_07,suspended,,,,,,0.8655,,,,nathan ngoy||bel,,,0.0000,0.0000,suspended,suspended,0
 thomas_meunier__bel,Thomas Meunier,BEL,DEF,39,0.391,0.391,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7556,,,,thomas meunier||bel,,,0.429,0.7466,medium_risk,medium_risk,
 brandon_mechele__bel,Brandon Mechele,BEL,DEF,27,0.2666,0.2666,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.1771,,,,brandon mechele||bel,,,0.31,0.6,high_risk,high_risk,
 timothy_castagne__bel,Timothy Castagne,BEL,DEF,67,0.6704,0.6704,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.7767,,,,timothy castagne||bel,,,0.6867,0.9322,medium_risk,medium_risk,
@@ -924,7 +924,7 @@ matthew_garbett__nzl,Matthew Garbett,NZL,MID,43,0.4267,0.4267,transfermarkt_avai
 alex_rufer__nzl,Alex Rufer,NZL,MID,32,0.3156,0.3156,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.5288,,,,alex rufer||nzl,,,0.3431,0.7717,medium_risk,medium_risk,
 ben_old__nzl,Ben Old,NZL,MID,37,0.3709,0.3709,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.8147,,,,ben old||nzl,,,0.3988,0.8004,medium_risk,medium_risk,
 lachlan_bayliss__nzl,Lachlan Bayliss,NZL,MID,5,0.0474,0.0474,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.8655,,,,lachlan bayliss||nzl,,,0.05,0.8538,medium_risk,medium_risk,
-miguel_almir_n__par,Miguel Almiron,PAR,MID,91,0.9133,0.9133,transfermarkt_availability_split_2026_06_07,sikker starter - Transfermarkt landshold,,,,,,0.8699,,,,miguel almiron||par,,,0.97,0.8329,medium_risk,medium_risk,
+miguel_almir_n__par,Miguel Almiron,PAR,MID,0,0.0000,0.0000,transfermarkt_availability_split_2026_06_07,suspended,,,,,,0.8699,,,,miguel almiron||par,,,0.00,0.0000,suspended,suspended,0
 alejandro_romero_gamarra__par,Alejandro Romero Gamarra,PAR,MID,26,0.2617,0.2617,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.2802,0.811,medium_risk,medium_risk,
 mauricio_magalhaes_prado__par,Mauricio Magalhaes Prado,PAR,MID,32,0.3187,0.3187,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.339,0.8288,medium_risk,medium_risk,
 gustavo_caballero__par,Gustavo Caballero,PAR,MID,5,0.047,0.047,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.05,0.8288,medium_risk,medium_risk,
