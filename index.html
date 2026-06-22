@@ -803,6 +803,13 @@
       border: 1px solid rgba(124, 45, 18, 0.2);
     }
 
+    .player-badge.suspension {
+      background: #fee2e2;
+      color: #991b1b;
+      border: 1px solid rgba(153, 27, 27, 0.28);
+      box-shadow: 0 4px 10px rgba(127, 29, 29, 0.12);
+    }
+
     .player-badge.pitch-warning {
       width: 18px;
       max-width: 18px;
@@ -838,6 +845,42 @@
     .slot-btn.remove {
       background: #111827;
       color: white;
+    }
+
+    .pitch-player-card.is-suspended {
+      background: rgba(255,255,255,0.88);
+      border-color: rgba(153, 27, 27, 0.24);
+      box-shadow: 0 8px 18px rgba(127, 29, 29, 0.18);
+      min-height: 68px;
+      height: auto;
+      padding-bottom: 6px;
+    }
+
+    .pitch-player-suspension-line {
+      margin-top: 3px;
+      color: #b91c1c;
+      font-size: 8px;
+      font-weight: 800;
+      line-height: 1.05;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .suspension-banner {
+      margin: 8px 0 10px;
+      padding: 10px 14px;
+      border-radius: 14px;
+      background: rgba(127, 29, 29, 0.12);
+      border: 1px solid rgba(248, 113, 113, 0.26);
+      color: #fee2e2;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .suspension-banner[hidden] {
+      display: none;
     }
 
     .info-box {
@@ -1642,6 +1685,27 @@
       font-size: 10px;
       font-weight: bold;
       line-height: 1.2;
+    }
+
+    .trade-suspension-flag {
+      display: inline-block;
+      margin-top: 4px;
+      background: rgba(127, 29, 29, 0.2);
+      border: 1px solid rgba(248, 113, 113, 0.32);
+      color: #fecaca;
+      border-radius: 7px;
+      padding: 2px 6px;
+      font-size: 10px;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .trade-suspension-status {
+      color: #fca5a5;
+      font-size: 10px;
+      font-weight: 800;
+      line-height: 1.15;
+      text-align: right;
     }
 
     .trade-position-col,
@@ -3722,6 +3786,7 @@
           </div>
 
           <div id="statusBox" class="status-box"></div>
+          <div id="suspensionBanner" class="suspension-banner" hidden></div>
 
           <div class="pitch" id="pitch">
             <div class="pitch-half"></div>
@@ -3924,6 +3989,7 @@ setTimeout(removeDataStatusBox, 250);
     const MATCH_ODDS_URL = "data/match_odds.csv";
     const MATCH_ODDS_PROBS_URL = "data/match_odds_probs.csv";
     const CLEAN_SHEET_ODDS_URL = "data/clean_sheet_odds.csv";
+    const PLAYER_SUSPENSIONS_URL = "data/player_suspensions.csv";
     const MODEL_STATUS_URL = "data/model_status_snapshot.json";
     const APP_AUDIT_URL = "data/audit_app_data_consistency.json";
     const DATA_FRESHNESS_URL = "data/data_freshness.json";
@@ -4000,6 +4066,9 @@ setTimeout(removeDataStatusBox, 250);
     };
 
     let allPlayers = [];
+    let suspensionRows = [];
+    let suspensionsByPlayerId = new Map();
+    let suspensionsByNameTeam = new Map();
     let pendingRemoteSquadState = null;
     let fixtures = [];
     let optimalSquads = [];
@@ -4127,6 +4196,11 @@ setTimeout(removeDataStatusBox, 250);
       return String(value || "").trim().toUpperCase();
     }
 
+    function isTruthyFlag(value) {
+      const normalized = String(value ?? "").trim().toLowerCase();
+      return value === true || normalized === "1" || normalized === "true" || normalized === "yes" || normalized === "ja";
+    }
+
     const TEAM_ID_ALIASES = {
       HOLDET_767: "CIV"
     };
@@ -4200,6 +4274,39 @@ setTimeout(removeDataStatusBox, 250);
 
     function playerTeamKey(player) {
       return canonicalTeamId(player?.team_id || player?.team_name || "");
+    }
+
+    function suspensionPlayerKey(playerId) {
+      return String(playerId || "").trim().toLowerCase();
+    }
+
+    function suspensionNameTeamKey(playerName, teamId) {
+      return `${normalizeName(playerName)}|${canonicalTeamId(teamId)}`;
+    }
+
+    function getSuspensionRecord(player) {
+      if (!player) return null;
+      const byPlayerId = suspensionsByPlayerId.get(suspensionPlayerKey(player.player_id));
+      if (byPlayerId) return byPlayerId;
+      return suspensionsByNameTeam.get(
+        suspensionNameTeamKey(player.player_name, player.team_id || player.team_name)
+      ) || null;
+    }
+
+    function isSuspendedNextMatch(player) {
+      const row = getSuspensionRecord(player);
+      return !!(row && isTruthyFlag(row.suspended_next_match) && isTruthyFlag(row.active));
+    }
+
+    function getSuspendedSquadPlayers() {
+      const seen = new Set();
+      return Object.values(squad)
+        .map(playerId => getPlayerById(playerId))
+        .filter(player => {
+          if (!player || seen.has(String(player.player_id))) return false;
+          seen.add(String(player.player_id));
+          return isSuspendedNextMatch(player);
+        });
     }
 
     function normalizePositionLabel(value) {
@@ -4472,7 +4579,27 @@ function strategyDisplayName(strategyKey) {
         badges.push(`<span class="player-badge warning pitch-warning" title="Tjek start">!</span>`);
       }
 
+      if (isSuspendedNextMatch(player)) {
+        badges.push(`<span class="player-badge suspension" title="Karantæne · ude næste kamp">⛔ Karantæne</span>`);
+      }
+
       return badges.length ? `<div class="player-badges">${badges.join("")}</div>` : "";
+    }
+
+    function renderSuspensionBanner() {
+      const banner = document.getElementById("suspensionBanner");
+      if (!banner) return;
+      const suspendedPlayers = getSuspendedSquadPlayers();
+      if (!suspendedPlayers.length) {
+        banner.hidden = true;
+        banner.textContent = "";
+        return;
+      }
+      const names = suspendedPlayers.map(player => player.player_name).join(", ");
+      banner.textContent = suspendedPlayers.length === 1
+        ? `⚠️ 1 spiller i karantæne: ${names}`
+        : `⚠️ ${suspendedPlayers.length} spillere i karantæne: ${names}`;
+      banner.hidden = false;
     }
 
 
@@ -6758,6 +6885,8 @@ function getPlayerScore(player) {
       const selectedSlotKey = findFilledSlotByPlayerId(player.player_id);
       if (selectedSlotKey) return "Allerede valgt";
 
+      if (isSuspendedNextMatch(player)) return "Karantæne";
+
       if (isPlayerUnavailable(player)) return "Ikke tilgængelig";
 
       const price = getTransferLockedPrice(player);
@@ -6873,6 +7002,7 @@ function getPlayerScore(player) {
     function canReplaceWith(candidate, currentPlayer, activeSlot, { ignoreStartRequirement = false } = {}) {
       if (!candidate || !currentPlayer || !activeSlot) return false;
       if (isPlayerUnavailable(candidate)) return false;
+      if (isSuspendedNextMatch(candidate)) return false;
       if (!samePosition(candidate.position, activeSlot.positionCode || activeSlot.position)) return false;
       if (isManualAvoidPlayer(candidate)) return false;
       if (!ignoreStartRequirement && getPlayerStart(candidate) < 60) return false;
@@ -8283,6 +8413,7 @@ function getRenderSlots() {
         const flagUrl = player ? getFlagUrl(getPlayerFlagCode(player)) : "";
         const isActive = activeSlotKey === slot.key ? "active" : "";
         const opponentText = player ? nextOpponentText(player.team_id) : "";
+        const isSuspended = player ? isSuspendedNextMatch(player) : false;
         const captainArmband = player && isCaptainPlayer(player)
           ? `<span class="pitch-captain-armband" title="Kaptajn" aria-label="Kaptajn">C</span>`
           : "";
@@ -8290,7 +8421,7 @@ function getRenderSlots() {
         return `
           <div class="slot ${isActive}" style="left:${slot.x}%; top:${slot.y}%;">
             ${player ? `
-              <div class="pitch-player-card">
+              <div class="pitch-player-card ${isSuspended ? "is-suspended" : ""}">
                 <div class="pitch-flag-row">
                   ${captainArmband}
                   <div class="pitch-player-flag">
@@ -8303,6 +8434,7 @@ function getRenderSlots() {
                 <div class="player-name">${escapeHtml(player.player_name)}</div>
                 <div class="player-price">${formatMoney(getPlayerPrice(player))}</div>
                 ${opponentText ? `<div class="player-opponent">${escapeHtml(opponentText)}</div>` : ""}
+                ${isSuspended ? `<div class="pitch-player-suspension-line">Ude næste kamp</div>` : ""}
               </div>
             ` : `
               <div class="player-figure empty"></div>
@@ -8724,10 +8856,18 @@ function renderTradeList() {
       tradeList.innerHTML = visiblePlayers.slice(0, favoriteOnly ? 500 : 80).map(player => {
         const disabledReason = getDisabledReason(player);
         const isDisabled = !!disabledReason;
-        const rowClass = isDisabled ? "trade-row disabled" : "trade-row";
+        const isSuspended = isSuspendedNextMatch(player);
+        const rowClass = `${isDisabled ? "trade-row disabled" : "trade-row"}${isSuspended ? " suspended" : ""}`;
         const flagUrl = getFlagUrl(getPlayerFlagCode(player));
         const tmWatchReason = String(player.tm_watch_reason || "").trim();
         const tmWarning = shouldShowTmWarning(player) ? `<div class="trade-tm-warning">TM: usikker starter</div>` : "";
+        const suspensionHtml = isSuspended ? `<div class="trade-suspension-flag">⛔ Karantæne</div>` : "";
+        const startColumnHtml = isSuspended
+          ? `<div class="trade-suspension-status">Ude næste kamp</div>`
+          : `
+            <div class="trade-start-value">${startPct(getPlayerStart(player))}</div>
+            <div class="trade-start-label">Start</div>
+          `;
         return `
           <div class="${rowClass}" data-player-id="${player.player_id}">
             <div class="trade-player-main">
@@ -8736,14 +8876,14 @@ function renderTradeList() {
                 <div class="trade-name">${player.player_name || "Ukendt spiller"}</div>
               </div>
               <div class="trade-next">${nextOpponentText(player.team_id)}</div>
+              ${suspensionHtml}
               ${tmWarning}
             </div>
             <div class="trade-position-col">
               <div class="trade-position-value">${escapeHtml(compactPositionLabel(player.position))}</div>
             </div>
             <div class="trade-start-col">
-              <div class="trade-start-value">${startPct(getPlayerStart(player))}</div>
-              <div class="trade-start-label">Start</div>
+              ${startColumnHtml}
             </div>
             <div class="trade-score-col">
               <div class="trade-score-value">${Math.round(getPlayerScore(player))}</div>
@@ -8801,6 +8941,7 @@ function renderTradeList() {
       renderStrategyControls();
       postProcessTimeAwareStrategyButtons();
       renderActiveSlotBadge();
+      renderSuspensionBanner();
       renderPitch();
       renderPlayerChangePanel();
       renderTradeList();
@@ -8854,6 +8995,38 @@ function renderTradeList() {
         cleanSheetOddsRows = [];
         cleanSheetOddsByMatchTeam = new Map();
         console.warn("Clean sheet odds kunne ikke hentes", error);
+      }
+    }
+
+    async function loadPlayerSuspensions() {
+      try {
+        const response = await fetchWithCacheBust(PLAYER_SUSPENSIONS_URL);
+        if (!response.ok) throw new Error(`Kunne ikke hente karantæner: ${response.status}`);
+
+        const text = await response.text();
+        suspensionRows = parseCsv(text).filter(row => isTruthyFlag(row.active));
+        suspensionsByPlayerId = new Map();
+        suspensionsByNameTeam = new Map();
+
+        suspensionRows.forEach(row => {
+          const normalizedRow = {
+            ...row,
+            player_id: String(row.player_id || "").trim(),
+            player_name: String(row.player_name || "").trim(),
+            team_id: canonicalTeamId(row.team_id || row.team || row.team_code || "")
+          };
+          const playerIdKey = suspensionPlayerKey(normalizedRow.player_id);
+          if (playerIdKey) suspensionsByPlayerId.set(playerIdKey, normalizedRow);
+          const nameTeamKey = suspensionNameTeamKey(normalizedRow.player_name, normalizedRow.team_id);
+          if (normalizedRow.player_name && normalizedRow.team_id) {
+            suspensionsByNameTeam.set(nameTeamKey, normalizedRow);
+          }
+        });
+      } catch (error) {
+        suspensionRows = [];
+        suspensionsByPlayerId = new Map();
+        suspensionsByNameTeam = new Map();
+        console.warn("Karantænedata kunne ikke hentes", error);
       }
     }
 
@@ -9707,6 +9880,7 @@ formationSelect.value = currentFormation;
           loadCurrentSquadOwnership(),
           loadMatchOddsProbs(),
           loadCleanSheetOdds(),
+          loadPlayerSuspensions(),
           loadDataStatus()
         ]);
 

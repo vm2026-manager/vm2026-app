@@ -1,0 +1,6 @@
+player_id,player_name,team_id,status,suspended_next_match,suspension_matches_total,suspension_matches_served,suspension_round,reason,source_note,active
+nathan_ngoy__bel,Nathan Ngoy,BEL,suspended,1,1,0,3,"Direkte rødt kort mod Iran, 66'",Manuelt noteret fra runde 2 screenshot; DOGSO/holder fast,1
+,Miguel Almiron,PAR,suspended,1,1,0,3,"Direkte rødt kort mod Tyrkiet, 45+3'",Manuelt noteret fra runde 2 screenshot,1
+,Mohammed Al Amin,QAT,suspended,1,1,0,3,"Direkte rødt kort mod Canada, 33'",Manuelt noteret fra runde 2 screenshot,1
+,Assan O. Madibo,QAT,suspended,1,1,0,3,"Direkte rødt kort mod Canada, 53'",Manuelt noteret fra runde 2 screenshot; grov tackling,1
+,Tarik Muharemovic,BIH,suspended,1,1,0,3,"Direkte rødt kort mod Schweiz, 80'",Manuelt noteret fra runde 2 screenshot; benspænd,1
