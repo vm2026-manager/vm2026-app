@@ -4453,9 +4453,9 @@ setTimeout(removeDataStatusBox, 250);
 
     const USER_STRATEGIES = ["next_round", "group_stage", "long_run"];
     const STRATEGY_TOOLTIPS = {
-      next_round: "Fokus p\u00e5 den kommende runde. Kan derfor v\u00e6lge spillere, som med fordel skiftes ud igen til runden efter.",
+      next_round: "Bedste hold til den n\u00e6ste kommende kamp. Fokuserer kun p\u00e5 n\u00e6ste relevante opg\u00f8r og blander ikke f\u00e6rdigspillede kampe ind.",
       practical_start: "Fokus p\u00e5 runde 1-2 med offensive profiler, kampodds og sikre value-startere.",
-      group_stage: "Fokus p\u00e5 samlet gruppespilsv\u00e6rdi p\u00e5 tv\u00e6rs af alle tre gruppekampe.",
+      group_stage: "Fokus p\u00e5 de resterende gruppekampe. F\u00e6rdigspillede gruppekampe t\u00e6ller ikke med i vurderingen.",
       long_run: "Fokus p\u00e5 spillere fra st\u00e6rke nationer med god vej videre i turneringen."
     };
 
@@ -4521,9 +4521,9 @@ function getTimeAwareStrategyDisplayName(strategyKey) {
 }
 
 function strategyDisplayName(strategyKey) {
-      if (strategyKey === "next_round" && strategyContext?.next_round_display_name) {
-        return strategyContext.next_round_display_name;
-      }
+      if (strategyKey === "next_round") return "Næste kamp";
+      if (strategyKey === "group_stage") return "Resterende gruppespil";
+      if (strategyKey === "long_run") return "Lang sigt";
       return strategyDisplayNames?.[strategyKey]
         || strategySquads?.[strategyKey]?.best_summary?.display_name_da
         || strategyKey;
@@ -4749,11 +4749,16 @@ function isStrategyButtonRelevantNow(strategyKey) {
 function getStrategyButtonLabelNow(strategyKey, currentText) {
   const key = String(strategyKey || "");
 
-  if (key === "next_round" && !hasStrategyControlUpcomingRound(1)) {
-    return "Næste kamp";
-  }
+  if (key === "next_round") return "Næste kamp";
+  if (key === "group_stage") return "Resterende gruppespil";
+  if (key === "long_run") return "Lang sigt";
 
   return currentText;
+}
+
+function getStrategyButtonTitleNow(strategyKey) {
+  const key = String(strategyKey || "");
+  return STRATEGY_TOOLTIPS[key] || "";
 }
 
 function postProcessTimeAwareStrategyButtons() {
@@ -4772,17 +4777,18 @@ function postProcessTimeAwareStrategyButtons() {
     button.hidden = !visible;
     button.style.display = visible ? "" : "none";
 
-    if (visible) {
-      if (!firstVisibleKey) firstVisibleKey = key;
+      if (visible) {
+        if (!firstVisibleKey) firstVisibleKey = key;
 
-      const label = getStrategyButtonLabelNow(key, button.textContent || "");
-      if (label && button.textContent !== label) {
-        button.textContent = label;
-      }
+        const label = getStrategyButtonLabelNow(key, button.textContent || "");
+        if (label && button.textContent !== label) {
+          button.textContent = label;
+        }
+        button.title = getStrategyButtonTitleNow(key);
 
-      if (key === activeStrategyKey) {
-        activeIsVisible = true;
-      }
+        if (key === activeStrategyKey) {
+          activeIsVisible = true;
+        }
     }
   });
 
@@ -4814,7 +4820,7 @@ function postProcessTimeAwareStrategyButtons() {
           class="strategy-btn ${strategyKey === activeStrategyKey ? "active" : ""}"
           type="button"
           data-strategy-key="${escapeHtml(strategyKey)}"
-          title="${escapeHtml(STRATEGY_TOOLTIPS[strategyKey] || "")}"
+          title="${escapeHtml(getStrategyButtonTitleNow(strategyKey))}"
         >${escapeHtml(strategyDisplayName(strategyKey))}</button>
       `).join("");
 
