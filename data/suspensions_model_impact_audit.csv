@@ -1,0 +1,6 @@
+player_id,player_name,team_id,suspension_round,matches_total,found_in_player_pool,current_start_prob,current_availability_status,current_holdet_is_out,current_ev,current_optimizer_ev,found_in_ev,found_in_optimizer_squads,reason,recommended_action
+nathan_ngoy__bel,Nathan Ngoy,BEL,3,1,yes,0.25,unknown,False,0.1235,0.1235,yes,no,"Direkte rødt kort mod Iran, 66'",set next-match start_prob to 0; mark availability_status suspended; keep holdet_is_out false; exclude from optimizer for affected round
+,Miguel Almiron,PAR,3,1,yes,0.824,medium_risk,False,2.221845,2.221845,yes,no,"Direkte rødt kort mod Tyrkiet, 45+3'",set next-match start_prob to 0; mark availability_status suspended; keep holdet_is_out false; exclude from optimizer for affected round
+,Mohammed Al Amin,QAT,3,1,no,,,,,,no,no,"Direkte rødt kort mod Canada, 33'",manual review - no model match found
+,Assan O. Madibo,QAT,3,1,no,,,,,,no,no,"Direkte rødt kort mod Canada, 53'",manual review - no model match found
+,Tarik Muharemovic,BIH,3,1,yes,0.66,medium_risk,False,1.020419,1.020419,yes,no,"Direkte rødt kort mod Schweiz, 80'",set next-match start_prob to 0; mark availability_status suspended; keep holdet_is_out false; exclude from optimizer for affected round
