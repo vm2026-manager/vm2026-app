@@ -3,12 +3,12 @@
     "player_pool_v1.json": {
       "exists": true,
       "path": "C:\\Users\\Administrator\\Desktop\\vm2026_local_app\\data\\player_pool_v1.json",
-      "size_bytes": 4022402
+      "size_bytes": 4029896
     },
     "optimal_squads_by_formation.json": {
       "exists": true,
       "path": "C:\\Users\\Administrator\\Desktop\\vm2026_local_app\\data\\optimal_squads_by_formation.json",
-      "size_bytes": 373547
+      "size_bytes": 373597
     },
     "fixtures_group.csv": {
       "exists": true,
@@ -110,13 +110,12 @@
         "MID": 4,
         "FWD": 3
       },
-      "pool_total_price": 49781000,
-      "optimizer_total_price": 49781000,
+      "pool_total_price": 49988000,
+      "optimizer_total_price": 49988000,
       "budget_total": 50000000,
       "team_counts": {
         "Frankrig": 4,
-        "Argentina": 1,
-        "Portugal": 1,
+        "Belgien": 2,
         "Spanien": 4,
         "Brasilien": 1
       },
@@ -139,15 +138,15 @@
         "MID": 5,
         "FWD": 2
       },
-      "pool_total_price": 49680000,
-      "optimizer_total_price": 49680000,
+      "pool_total_price": 49993000,
+      "optimizer_total_price": 49993000,
       "budget_total": 50000000,
       "team_counts": {
-        "Frankrig": 4,
-        "Argentina": 1,
-        "Portugal": 1,
         "Spanien": 4,
-        "Brasilien": 1
+        "Frankrig": 2,
+        "Belgien": 2,
+        "Brasilien": 2,
+        "England": 1
       },
       "match_methods": {
         "player_id": 11
@@ -168,16 +167,15 @@
         "MID": 3,
         "FWD": 3
       },
-      "pool_total_price": 49711000,
-      "optimizer_total_price": 49711000,
+      "pool_total_price": 49985000,
+      "optimizer_total_price": 49985000,
       "budget_total": 50000000,
       "team_counts": {
-        "Frankrig": 3,
+        "Frankrig": 4,
         "Argentina": 1,
         "Portugal": 1,
         "Belgien": 1,
-        "Spanien": 4,
-        "Brasilien": 1
+        "Spanien": 4
       },
       "match_methods": {
         "player_id": 11
@@ -198,15 +196,14 @@
         "MID": 4,
         "FWD": 2
       },
-      "pool_total_price": 49669000,
-      "optimizer_total_price": 49669000,
+      "pool_total_price": 49997000,
+      "optimizer_total_price": 49997000,
       "budget_total": 50000000,
       "team_counts": {
-        "Frankrig": 3,
-        "Argentina": 1,
-        "Portugal": 1,
-        "Belgien": 1,
         "Spanien": 4,
+        "Frankrig": 3,
+        "Portugal": 1,
+        "Belgien": 2,
         "Brasilien": 1
       },
       "match_methods": {
@@ -228,13 +225,13 @@
         "MID": 5,
         "FWD": 1
       },
-      "pool_total_price": 49783000,
-      "optimizer_total_price": 49783000,
+      "pool_total_price": 49995000,
+      "optimizer_total_price": 49995000,
       "budget_total": 50000000,
       "team_counts": {
-        "Frankrig": 4,
-        "Argentina": 1,
-        "Portugal": 1,
+        "Frankrig": 3,
+        "Portugal": 2,
+        "Belgien": 1,
         "Spanien": 4,
         "Brasilien": 1
       },
@@ -257,15 +254,16 @@
         "MID": 3,
         "FWD": 2
       },
-      "pool_total_price": 49672000,
-      "optimizer_total_price": 49672000,
+      "pool_total_price": 49985000,
+      "optimizer_total_price": 49985000,
       "budget_total": 50000000,
       "team_counts": {
-        "Frankrig": 3,
+        "Spanien": 4,
         "Argentina": 1,
+        "Frankrig": 2,
         "Portugal": 1,
         "Belgien": 2,
-        "Spanien": 4
+        "Brasilien": 1
       },
       "match_methods": {
         "player_id": 11
@@ -286,16 +284,15 @@
         "MID": 4,
         "FWD": 1
       },
-      "pool_total_price": 49780000,
-      "optimizer_total_price": 49780000,
+      "pool_total_price": 49968000,
+      "optimizer_total_price": 49968000,
       "budget_total": 50000000,
       "team_counts": {
         "Frankrig": 3,
         "Argentina": 1,
-        "Spanien": 4,
-        "Portugal": 1,
+        "Portugal": 2,
         "Belgien": 1,
-        "Brasilien": 1
+        "Spanien": 4
       },
       "match_methods": {
         "player_id": 11

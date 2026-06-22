@@ -1,6 +1,6 @@
 VM 2026 MODEL STATUS SNAPSHOT
 
-Oprettet: 2026-06-21T10:06:26
+Oprettet: 2026-06-22T14:36:34
 
 VURDERING
 - Bedste formation i seneste optimizer-kørsel: 3-4-3.
@@ -24,29 +24,29 @@ EV-FIL
 - Positioner: {'MID': 426, 'DEF': 410, 'FWD': 268, 'GK': 145}
 
 FORMATIONER
-- 3-4-3: status=Optimal, adjEV=168.258, rawEV=18.103, pris=49.781
-- 3-5-2: status=Optimal, adjEV=166.373, rawEV=16.381, pris=49.68
-- 4-3-3: status=Optimal, adjEV=166.108, rawEV=18.765, pris=49.711
-- 4-4-2: status=Optimal, adjEV=164.556, rawEV=17.035, pris=49.669
-- 4-5-1: status=Optimal, adjEV=162.672, rawEV=14.89, pris=49.783
-- 5-3-2: status=Optimal, adjEV=156.793, rawEV=16.976, pris=49.672
-- 5-4-1: status=Optimal, adjEV=156.536, rawEV=16.139, pris=49.78
+- 3-4-3: status=Optimal, adjEV=167.977, rawEV=21.182, pris=49.988
+- 3-5-2: status=Optimal, adjEV=164.412, rawEV=17.653, pris=49.993
+- 4-3-3: status=Optimal, adjEV=166.346, rawEV=18.121, pris=49.985
+- 4-4-2: status=Optimal, adjEV=164.111, rawEV=16.813, pris=49.997
+- 4-5-1: status=Optimal, adjEV=162.783, rawEV=17.985, pris=49.995
+- 5-3-2: status=Optimal, adjEV=156.916, rawEV=15.802, pris=49.985
+- 5-4-1: status=Optimal, adjEV=156.243, rawEV=16.322, pris=49.968
 
 BEDSTE HOLD
 - selected_formation: 3-4-3
-- squad_total_price_m: 49.781
-- squad_total_adj_ev: 168.258
-- squad_total_raw_ev: 18.103
+- squad_total_price_m: 49.988
+- squad_total_adj_ev: 167.977
+- squad_total_raw_ev: 21.182
 
 SPILLERE
 - Mike Maignan | FRA | GK | pris=5.1 | EV=17.162
-- Gonzalo Montiel | ARG | DEF | pris=3.5 | EV=11.287
 - Lucas Digne | FRA | DEF | pris=3.5 | EV=12.584
-- Renato Veiga | POR | DEF | pris=3.5 | EV=11.172
-- Alex Baena | ESP | MID | pris=3.5 | EV=13.238
-- Aurelien Tchouameni | FRA | MID | pris=3.6 | EV=12.981
+- Timothy Castagne | BEL | DEF | pris=3.5 | EV=10.926
+- Zeno Debast | BEL | DEF | pris=3.5 | EV=10.763
+- Alex Baena | ESP | MID | pris=3.6 | EV=13.402
 - Casemiro | BRA | MID | pris=4.6 | EV=15.730
-- Martin Zubimendi | ESP | MID | pris=3.5 | EV=14.700
-- Lamine Yamal | ESP | FWD | pris=9.0 | EV=25.183
-- Nico Williams | ESP | FWD | pris=4.5 | EV=16.796
+- Manu Koné | FRA | MID | pris=3.5 | EV=12.849
+- Martin Zubimendi | ESP | MID | pris=3.5 | EV=14.661
+- Lamine Yamal | ESP | FWD | pris=9.2 | EV=25.621
+- Nico Williams | ESP | FWD | pris=4.5 | EV=16.856
 - Ousmane Dembele | FRA | FWD | pris=5.5 | EV=17.424
