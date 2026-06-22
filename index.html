@@ -4665,7 +4665,7 @@ function shouldHideGroupStageStrategy() {
   const currentWindowKey = normalizeTransferWindowKey(
     typeof getTransferWindowLabel === "function" ? getTransferWindowLabel() : transferWindowKey || ""
   );
-  if (currentWindowKey === "runde_2_3") return true;
+  if (currentWindowKey === "runde_2_to_3") return true;
 
   const contextTargetRound = Number(strategyContext?.target_round || 0);
   if (contextTargetRound >= 3) return true;
@@ -4847,7 +4847,21 @@ function postProcessTimeAwareStrategyButtons() {
 
 
     function renderStrategyControls() {
-      const visibleStrategyKeys = ensureActiveStrategyStillVisible(USER_STRATEGIES);
+      let visibleStrategyKeys = ensureActiveStrategyStillVisible(USER_STRATEGIES);
+      if (shouldHideGroupStageStrategy()) {
+        visibleStrategyKeys = visibleStrategyKeys.filter(key => key !== "group_stage");
+        if (activeStrategyKey === "group_stage") {
+          activeStrategyKey = visibleStrategyKeys.includes("next_round")
+            ? "next_round"
+            : (visibleStrategyKeys[0] || "next_round");
+          frontendCaptainOverride = null;
+          try {
+            localStorage.setItem("vm2026_active_strategy", activeStrategyKey);
+          } catch (_error) {
+            // Ignore localStorage errors.
+          }
+        }
+      }
       if (!strategyButtons) return;
 
       strategyButtons.innerHTML = visibleStrategyKeys.map(strategyKey => `
