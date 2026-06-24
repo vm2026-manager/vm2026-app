@@ -1,5 +1,5 @@
 {
-  "created_at": "2026-06-24T09:17:33",
+  "created_at": "2026-06-24T09:17:51",
   "assessment": {
     "best_formation": "3-4-3",
     "message": "Modellen bruger nu Holdet.dk game 616 som officiel master-player-pool. EV-filen er rebased til de officielle Holdet-spillere, og optimizer-holdene matcher appens player_pool.",
