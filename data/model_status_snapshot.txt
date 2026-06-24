@@ -1,6 +1,6 @@
 VM 2026 MODEL STATUS SNAPSHOT
 
-Oprettet: 2026-06-22T14:37:19
+Oprettet: 2026-06-24T09:16:42
 
 VURDERING
 - Bedste formation i seneste optimizer-kørsel: 3-4-3.
@@ -10,43 +10,43 @@ VURDERING
 - Forbehold: Startvurderinger, odds og trupper er stadig foreløbige og skal opdateres løbende.
 
 PLAYER POOL
-- Rækker: 1249
-- Officiel Holdet-master: 1249
+- Rækker: 1248
+- Officiel Holdet-master: 1248
 - Hold: 48
 - Mangler pris: 0
-- Positioner: {'MID': 426, 'DEF': 410, 'FWD': 268, 'GK': 145}
+- Positioner: {'MID': 425, 'DEF': 410, 'FWD': 268, 'GK': 145}
 
 EV-FIL
-- Rækker: 1249
-- Weighted EV sum: 1033.170
-- Weighted EV mean: 0.8272
+- Rækker: 1248
+- Weighted EV sum: 1032.517
+- Weighted EV mean: 0.8273
 - Weighted EV median: 0.6536
-- Positioner: {'MID': 426, 'DEF': 410, 'FWD': 268, 'GK': 145}
+- Positioner: {'MID': 425, 'DEF': 410, 'FWD': 268, 'GK': 145}
 
 FORMATIONER
-- 3-4-3: status=Optimal, adjEV=167.977, rawEV=21.182, pris=49.988
-- 3-5-2: status=Optimal, adjEV=164.412, rawEV=17.653, pris=49.993
-- 4-3-3: status=Optimal, adjEV=166.346, rawEV=18.121, pris=49.985
-- 4-4-2: status=Optimal, adjEV=164.111, rawEV=16.813, pris=49.997
-- 4-5-1: status=Optimal, adjEV=162.783, rawEV=17.985, pris=49.995
-- 5-3-2: status=Optimal, adjEV=156.916, rawEV=15.802, pris=49.985
-- 5-4-1: status=Optimal, adjEV=156.243, rawEV=16.322, pris=49.968
+- 3-4-3: status=Optimal, adjEV=166.807, rawEV=19.362, pris=49.934
+- 3-5-2: status=Optimal, adjEV=165.557, rawEV=18.122, pris=49.944
+- 4-3-3: status=Optimal, adjEV=165.585, rawEV=19.417, pris=49.99
+- 4-4-2: status=Optimal, adjEV=164.416, rawEV=16.347, pris=49.898
+- 4-5-1: status=Optimal, adjEV=161.848, rawEV=16.563, pris=49.96
+- 5-3-2: status=Optimal, adjEV=157.319, rawEV=17.158, pris=49.98
+- 5-4-1: status=Optimal, adjEV=155.117, rawEV=17.014, pris=49.893
 
 BEDSTE HOLD
 - selected_formation: 3-4-3
-- squad_total_price_m: 49.988
-- squad_total_adj_ev: 167.977
-- squad_total_raw_ev: 21.182
+- squad_total_price_m: 49.934
+- squad_total_adj_ev: 166.807
+- squad_total_raw_ev: 19.362
 
 SPILLERE
-- Mike Maignan | FRA | GK | pris=5.1 | EV=17.162
-- Lucas Digne | FRA | DEF | pris=3.5 | EV=12.584
+- Mike Maignan | FRA | GK | pris=5.2 | EV=17.415
+- Gonzalo Montiel | ARG | DEF | pris=3.5 | EV=11.277
+- Lucas Digne | FRA | DEF | pris=3.6 | EV=12.821
 - Timothy Castagne | BEL | DEF | pris=3.5 | EV=10.926
-- Zeno Debast | BEL | DEF | pris=3.5 | EV=10.763
 - Alex Baena | ESP | MID | pris=3.6 | EV=13.402
-- Casemiro | BRA | MID | pris=4.6 | EV=15.730
-- Manu Koné | FRA | MID | pris=3.5 | EV=12.849
+- Aurelien Tchouameni | FRA | MID | pris=3.5 | EV=12.972
+- Manu Koné | FRA | MID | pris=3.6 | EV=12.993
 - Martin Zubimendi | ESP | MID | pris=3.5 | EV=14.661
-- Lamine Yamal | ESP | FWD | pris=9.2 | EV=25.621
+- Cristiano Ronaldo | POR | FWD | pris=7.4 | EV=20.365
+- Mikel Oyarzabal | ESP | FWD | pris=7.9 | EV=23.120
 - Nico Williams | ESP | FWD | pris=4.5 | EV=16.856
-- Ousmane Dembele | FRA | FWD | pris=5.5 | EV=17.424
