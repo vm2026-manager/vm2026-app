@@ -204,13 +204,20 @@ def write_json(path: Path, data: Any) -> None:
     write_json_strict(path, data)
 
 
+def dataframe_to_json_records(df: pd.DataFrame) -> list[dict[str, Any]]:
+    # Pandas float columns can keep NaN even after a plain .where(..., None).
+    # Force object dtype first so missing market fields serialize as null, not NaN.
+    normalized = df.astype(object).where(pd.notna(df), None)
+    return normalized.to_dict(orient="records")
+
+
 def main() -> None:
     create_manual_team_market_file_if_missing()
 
     layer = build_team_market_layer()
 
     layer.to_csv(TEAM_LAYER_CSV_PATH, index=False, encoding="utf-8-sig")
-    write_json(TEAM_LAYER_JSON_PATH, layer.where(pd.notna(layer), None).to_dict(orient="records"))
+    write_json(TEAM_LAYER_JSON_PATH, dataframe_to_json_records(layer))
 
     print("")
     print("TEAM MARKET ODDS LAYER")
