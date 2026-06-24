@@ -10487,13 +10487,31 @@ formationSelect.value = currentFormation;
       el.style.top = Math.round(top) + "px";
     }
 
+    function formatOddsSourceLabel(rawLabel) {
+      var label = String(rawLabel || "").trim();
+      if (!label) return "";
+      label = label.replace(/^unibet\s+/i, "").trim();
+      var match = label.match(/^(\d{2})\.(\d{2})(?:\s+kl\.\s*\d{2}:\d{2})?$/i);
+      if (!match) return label;
+
+      var day = String(Number(match[1]));
+      var monthIndex = Number(match[2]) - 1;
+      var monthNames = [
+        "januar", "februar", "marts", "april", "maj", "juni",
+        "juli", "august", "september", "oktober", "november", "december"
+      ];
+      var monthName = monthNames[monthIndex];
+      if (!monthName) return label;
+      return day + ". " + monthName;
+    }
+
     function html(player, fixtures) {
       var title = fixtures.length === 1 ? "N\u00e6ste kamp" : "N\u00e6ste " + fixtures.length + " kampe";
       var source = fixtures.find(function (f) { return f.source; });
       var cleanSheetInfo = typeof getNextCleanSheetInfo === "function" ? getNextCleanSheetInfo(player) : null;
       var sourceText = source ? source.source : "odds";
       if (source && source.oddsFetchedLabel) {
-        sourceText = sourceText + " · hentet " + source.oddsFetchedLabel;
+        sourceText = sourceText + " (" + formatOddsSourceLabel(source.oddsFetchedLabel) + ")";
       }
 
       if (!fixtures.length) {
