@@ -1,45 +1,52 @@
 VM 2026 MODEL STATUS SNAPSHOT
 
-Oprettet: 2026-04-16T20:17:52
+Oprettet: 2026-06-24T10:06:52
 
 VURDERING
-- Formation: 5-4-1 vinder stadig i den nuværende model, men det vurderes ikke som afgørende endnu, fordi spillerfelt og priser stadig er foreløbige/proxy-baserede.
-- Hovedpointe: Det vigtigste lige nu er en nogenlunde sund EV-motor og en meningsfuld optimizer. Formationsfinjustering kan vente eller evt. håndteres med en midlertidig balanced-toggle senere.
-- Næste fokus: Flyt fokus væk fra mere formation-tuning og over på datagrundlag, workflow, rigtige priser og bedre spiller-/starterinput.
+- Bedste formation i seneste optimizer-kørsel: 3-4-3.
+- Modellen bruger nu Holdet.dk game 616 som officiel master-player-pool.
+- EV-filen er rebased til de officielle Holdet-spillere.
+- Optimizer-holdene matcher appens player_pool på player_id.
+- Forbehold: Startvurderinger, odds og trupper er stadig foreløbige og skal opdateres løbende.
+
+PLAYER POOL
+- Rækker: 1248
+- Officiel Holdet-master: 1248
+- Hold: 48
+- Mangler pris: 0
+- Positioner: {'MID': 425, 'DEF': 410, 'FWD': 268, 'GK': 145}
 
 EV-FIL
-- Rækker: 1296
-- Weighted EV sum: 2368.696
-- Weighted EV mean: 1.8277
-- Weighted EV median: 1.4331
-- Positioner: {'MID': 451, 'DEF': 437, 'FWD': 317, 'GK': 91}
+- Rækker: 1248
+- Weighted EV sum: 1032.517
+- Weighted EV mean: 0.8273
+- Weighted EV median: 0.6536
+- Positioner: {'MID': 425, 'DEF': 410, 'FWD': 268, 'GK': 145}
 
 FORMATIONER
-- 3-4-3: status=Optimal, EV=19.794, pris=49.985
-- 3-5-2: status=Optimal, EV=21.526, pris=50.0
-- 4-3-3: status=Optimal, EV=21.437, pris=50.0
-- 4-4-2: status=Optimal, EV=22.843, pris=50.0
-- 4-5-1: status=Optimal, EV=24.154, pris=49.955
-- 5-3-2: status=Optimal, EV=24.405, pris=49.997
-- 5-4-1: status=Optimal, EV=25.402, pris=49.979
+- 3-4-3: status=Optimal, adjEV=166.807, rawEV=19.362, pris=49.934
+- 3-5-2: status=Optimal, adjEV=165.557, rawEV=18.122, pris=49.944
+- 4-3-3: status=Optimal, adjEV=165.585, rawEV=19.417, pris=49.99
+- 4-4-2: status=Optimal, adjEV=164.416, rawEV=16.347, pris=49.898
+- 4-5-1: status=Optimal, adjEV=161.848, rawEV=16.563, pris=49.96
+- 5-3-2: status=Optimal, adjEV=157.319, rawEV=17.158, pris=49.98
+- 5-4-1: status=Optimal, adjEV=155.117, rawEV=17.014, pris=49.893
 
 BEDSTE HOLD
-- selected_formation: 5-4-1
-- solver_quality_profile: soft_penalty_v5_use_file_ev_directly
-- squad_total_price_m: 49.97899999999999
-- squad_total_ev: 25.60162841400151
-- squad_total_adj_ev: 25.401933151171576
-- squad_total_raw_ev: 26.9251166308
+- selected_formation: 3-4-3
+- squad_total_price_m: 49.934
+- squad_total_adj_ev: 166.807
+- squad_total_raw_ev: 19.362
 
 SPILLERE
-- Seol Young-woo | KOR | DEF | pris=4.82 | EV=3.0211811269301947
-- Jan Paul van Hecke | NED | DEF | pris=3.934 | EV=2.3534665214446875
-- Kim Moonhwan | KOR | DEF | pris=3.834 | EV=2.266056130759841
-- Lee Myung-jae | KOR | DEF | pris=3.83 | EV=2.254826163415624
-- Lee Hanbeom | KOR | DEF | pris=3.821 | EV=2.234576022081819
-- Patrick Agyemang | USA | FWD | pris=8.9 | EV=4.710500178820372
-- Martin Jedlička | CZE | GK | pris=3.345 | EV=1.8370350178832784
-- Osama Rashid | IRQ | MID | pris=4.568 | EV=2.032836303718413
-- Zidane Iqbal | IRQ | MID | pris=4.468 | EV=1.859555126285363
-- Bashar Resan | IRQ | MID | pris=4.263 | EV=1.462788413137801
-- Marko Farji | IRQ | MID | pris=4.196 | EV=1.369112146694186
+- Mike Maignan | FRA | GK | pris=5.2 | EV=17.415
+- Gonzalo Montiel | ARG | DEF | pris=3.5 | EV=11.277
+- Lucas Digne | FRA | DEF | pris=3.6 | EV=12.821
+- Timothy Castagne | BEL | DEF | pris=3.5 | EV=10.926
+- Alex Baena | ESP | MID | pris=3.6 | EV=13.402
+- Aurelien Tchouameni | FRA | MID | pris=3.5 | EV=12.972
+- Manu Koné | FRA | MID | pris=3.6 | EV=12.993
+- Martin Zubimendi | ESP | MID | pris=3.5 | EV=14.661
+- Cristiano Ronaldo | POR | FWD | pris=7.4 | EV=20.365
+- Mikel Oyarzabal | ESP | FWD | pris=7.9 | EV=23.120
+- Nico Williams | ESP | FWD | pris=4.5 | EV=16.856
