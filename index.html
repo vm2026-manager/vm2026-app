@@ -2753,11 +2753,12 @@
 
 .vm-fixture-tooltip-clean-sheet-value {
   flex: 0 0 auto;
-  font-size: 17px;
-  line-height: 1;
+  font-size: 15px;
+  line-height: 1.2;
   font-weight: 900;
   color: #fde68a;
   text-align: right;
+  white-space: nowrap;
 }
 /* SAFE_PLAYER_FIXTURE_TOOLTIP_CSS_END */
 
@@ -7087,6 +7088,31 @@ function getPlayerScore(player) {
       return Number.isFinite(prob) && prob > 0 ? prob : null;
     }
 
+    function parseCleanSheetSnapshotTime(row) {
+      const rawAt = String(getRowValue(row || {}, ["clean_sheet_fetched_at"])).trim();
+      if (rawAt) {
+        const parsedAt = Date.parse(rawAt);
+        if (Number.isFinite(parsedAt)) return parsedAt;
+      }
+
+      const rawLabel = String(getRowValue(row || {}, ["clean_sheet_fetched_label"])).trim();
+      const match = rawLabel.match(/^(\d{2})\.(\d{2})(?:\s+screenshots?)?$/i);
+      if (!match) return 0;
+
+      const parsedLabel = new Date(2026, Number(match[2]) - 1, Number(match[1]), 12, 0, 0).getTime();
+      return Number.isFinite(parsedLabel) ? parsedLabel : 0;
+    }
+
+    function selectPreferredCleanSheetRow(rowsForMatchTeam) {
+      if (!Array.isArray(rowsForMatchTeam) || !rowsForMatchTeam.length) return null;
+      return rowsForMatchTeam.slice().sort((a, b) => {
+        const aTime = parseCleanSheetSnapshotTime(a);
+        const bTime = parseCleanSheetSnapshotTime(b);
+        if (aTime !== bTime) return bTime - aTime;
+        return 0;
+      })[0] || null;
+    }
+
     function getNextCleanSheetInfo(player) {
       if (!player || !isCleanSheetEligiblePosition(player.position)) return null;
 
@@ -7110,23 +7136,24 @@ function getPlayerScore(player) {
 
       if (!matchedFixture || !row) return null;
 
+      const yesOdds = parsePositiveOdds(getRowValue(row, ["clean_sheet_yes_odds"]));
+      const noOdds = parsePositiveOdds(getRowValue(row, ["clean_sheet_no_odds"]));
       const prob = cleanSheetProbabilityFromOdds(row);
-      if (!Number.isFinite(prob) || prob <= 0) return null;
+      if ((!yesOdds || !noOdds) && (!Number.isFinite(prob) || prob <= 0)) return null;
 
-      const positionCode = normalizePositionLabel(player.position);
       const opponentName = teamDisplayName(matchedFixture.opponent);
-      const pctText = formatPercentOneDecimal(prob);
+      const pctText = formatPercentOneDecimal(prob).replace(/,0\s%$/, " %");
       const fetchedLabel = String(getRowValue(row, ["clean_sheet_fetched_label"])).trim();
       return {
         prob,
-        label: positionCode === "GK" ? "Rent bur næste kamp" : "Clean sheet næste kamp",
-        shortLabel: positionCode === "GK" ? "Rent bur" : "CS",
+        label: "Rent bur",
+        shortLabel: "Rent bur",
         opponentName,
+        yesOdds,
+        noOdds,
         pctText,
         fetchedLabel,
-        text: positionCode === "GK"
-          ? `Rent bur næste kamp: ${pctText}`
-          : `Clean sheet næste kamp: ${pctText}`
+        text: `Rent bur næste kamp: ${pctText}`
       };
     }
 
@@ -9440,12 +9467,21 @@ function renderTradeList() {
         const text = await response.text();
         cleanSheetOddsRows = parseCsv(text);
         cleanSheetOddsByMatchTeam = new Map();
+        const groupedRows = new Map();
 
         cleanSheetOddsRows.forEach(row => {
           const matchId = String(getRowValue(row, ["match_id", "fixture_id", "id"])).trim();
           const teamId = canonicalTeamId(getRowValue(row, ["team_id", "team", "team_code"]));
           if (!matchId || !teamId) return;
-          cleanSheetOddsByMatchTeam.set(`${matchId}|${teamId}`, row);
+          const key = `${matchId}|${teamId}`;
+          const rowsForKey = groupedRows.get(key) || [];
+          rowsForKey.push(row);
+          groupedRows.set(key, rowsForKey);
+        });
+
+        groupedRows.forEach((rowsForKey, key) => {
+          const selectedRow = selectPreferredCleanSheetRow(rowsForKey);
+          if (selectedRow) cleanSheetOddsByMatchTeam.set(key, selectedRow);
         });
       } catch (error) {
         cleanSheetOddsRows = [];
@@ -10934,7 +10970,13 @@ formationSelect.value = currentFormation;
     function html(player, fixtures) {
       var title = fixtures.length === 1 ? "N\u00e6ste kamp" : "N\u00e6ste " + fixtures.length + " kampe";
       var source = fixtures.find(function (f) { return f.source; });
-      var cleanSheetInfo = typeof getNextCleanSheetInfo === "function" ? getNextCleanSheetInfo(player) : null;
+      var cleanSheetInfo = null;
+      try {
+        cleanSheetInfo = typeof getNextCleanSheetInfo === "function" ? getNextCleanSheetInfo(player) : null;
+      } catch (error) {
+        console.warn("Clean sheet tooltip springes over", error);
+        cleanSheetInfo = null;
+      }
       var sourceText = source ? source.source : "odds";
       if (source && source.oddsFetchedLabel) {
         sourceText = sourceText + " (" + formatOddsSourceLabel(source.oddsFetchedLabel) + ")";
