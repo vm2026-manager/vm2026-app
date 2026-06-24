@@ -104,6 +104,209 @@
       border-left: 1px solid rgba(255,255,255,0.08);
     }
 
+    .strategy-tools {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-left: auto;
+      flex: 0 0 auto;
+    }
+
+    .lowest-odds-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      min-height: 30px;
+      padding: 6px 10px;
+      border: 1px solid rgba(17, 24, 39, 0.12);
+      border-radius: 999px;
+      background: #1f2937;
+      color: #f9fafb;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .lowest-odds-btn[aria-expanded="true"] {
+      background: #111827;
+      border-color: rgba(255, 217, 77, 0.45);
+    }
+
+    .lowest-odds-popover {
+      position: absolute;
+      top: calc(100% + 8px);
+      right: 0;
+      z-index: 50;
+      width: min(560px, calc(100vw - 48px));
+      background: #23252b;
+      color: #f4f7fb;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.28);
+      padding: 12px 12px 12px;
+      box-sizing: border-box;
+    }
+
+    .lowest-odds-popover[hidden] {
+      display: none !important;
+    }
+
+    .lowest-odds-popover-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .lowest-odds-popover-title {
+      margin: 0;
+      font-size: 13px;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .lowest-odds-popover-subtitle {
+      margin-top: 2px;
+      font-size: 10px;
+      color: rgba(255, 255, 255, 0.66);
+    }
+
+    .lowest-odds-close {
+      width: 24px;
+      height: 24px;
+      border: 0;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1;
+      cursor: pointer;
+      flex: 0 0 auto;
+    }
+
+    .lowest-odds-list {
+      margin-top: 9px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .lowest-odds-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      column-gap: 14px;
+      padding: 8px 10px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .lowest-odds-match {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #ffffff;
+      min-width: 0;
+    }
+
+    .lowest-odds-match-text {
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .lowest-odds-flag {
+      width: 16px;
+      height: 12px;
+      border-radius: 3px;
+      object-fit: cover;
+      flex: 0 0 auto;
+      box-shadow: 0 0 0 1px rgba(255,255,255,0.16);
+    }
+
+    .lowest-odds-oddsline {
+      font-size: 11px;
+      line-height: 1.15;
+      color: rgba(255, 255, 255, 0.8);
+      display: grid;
+      grid-template-columns: repeat(3, 72px);
+      gap: 8px;
+      align-items: center;
+      justify-items: end;
+      white-space: nowrap;
+    }
+
+    .lowest-odds-odd {
+      display: flex;
+      align-items: baseline;
+      justify-content: flex-end;
+      gap: 4px;
+      min-width: 0;
+    }
+
+    .lowest-odds-odd-label {
+      color: rgba(255, 255, 255, 0.62);
+      font-size: 10px;
+      font-weight: 700;
+    }
+
+    .lowest-odds-oddsline strong {
+      font-weight: 800;
+    }
+
+    .lowest-odds-odd.win strong {
+      color: #86efac;
+    }
+
+    .lowest-odds-odd.draw strong {
+      color: #e5e7eb;
+    }
+
+    .lowest-odds-odd.loss strong {
+      color: #fde047;
+    }
+
+    .lowest-odds-empty {
+      margin-top: 10px;
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.72);
+      line-height: 1.35;
+    }
+
+    @media (max-width: 1320px) {
+      .lowest-odds-popover {
+        width: min(470px, calc(100vw - 40px));
+      }
+
+      .lowest-odds-row {
+        grid-template-columns: 1fr;
+        row-gap: 6px;
+      }
+
+      .lowest-odds-oddsline {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        justify-items: start;
+      }
+
+      .lowest-odds-odd {
+        justify-content: flex-start;
+      }
+    }
+
+    @media (max-width: 1100px) {
+      .strategy-tools {
+        display: none;
+      }
+    }
+
     .team-title {
       color: white;
       font-size: 22px;
@@ -3754,6 +3957,26 @@
             </div>
             <div class="strategy-content">
               <div class="strategy-buttons" id="strategyButtons"></div>
+              <div class="strategy-tools">
+                <button
+                  id="lowestOddsBtn"
+                  class="lowest-odds-btn"
+                  type="button"
+                  aria-haspopup="dialog"
+                  aria-expanded="false"
+                  aria-controls="lowestOddsPopover"
+                >Laveste odds</button>
+                <div id="lowestOddsPopover" class="lowest-odds-popover" hidden>
+                  <div class="lowest-odds-popover-head">
+                    <div>
+                      <h3 class="lowest-odds-popover-title">Top 5 næste kampe</h3>
+                      <div class="lowest-odds-popover-subtitle">Laveste odds</div>
+                    </div>
+                    <button id="lowestOddsCloseBtn" class="lowest-odds-close" type="button" aria-label="Luk laveste odds">×</button>
+                  </div>
+                  <div id="lowestOddsList" class="lowest-odds-list"></div>
+                </div>
+              </div>
               <div class="active-slot-badge">
                 <strong>Valgt plads:</strong>
                 <span id="activeSlotText">Ingen valgt</span>
@@ -4109,6 +4332,10 @@ setTimeout(removeDataStatusBox, 250);
     const formationSelect = document.getElementById("formationSelect");
     const pitch = document.getElementById("pitch");
     const playerChangePanel = document.getElementById("playerChangePanel");
+    const lowestOddsBtn = document.getElementById("lowestOddsBtn");
+    const lowestOddsPopover = document.getElementById("lowestOddsPopover");
+    const lowestOddsList = document.getElementById("lowestOddsList");
+    const lowestOddsCloseBtn = document.getElementById("lowestOddsCloseBtn");
     const activeSlotText = document.getElementById("activeSlotText");
     const searchInput = document.getElementById("searchInput");
     const teamFilter = document.getElementById("teamFilter");
@@ -4147,6 +4374,7 @@ setTimeout(removeDataStatusBox, 250);
     const AUTOFILL_TIMEOUT_MS = 20000;
     const AUTOFILL_MIN_LOADING_MS = 750;
     let optimizerBusyStartedAt = 0;
+    let lowestOddsPopoverOpen = false;
 
     const topbarUser = document.getElementById("topbarUser");
     const openLoginBtn = document.getElementById("openLoginBtn");
@@ -4600,6 +4828,178 @@ function strategyDisplayName(strategyKey) {
         ? `⚠️ 1 spiller i karantæne: ${names}`
         : `⚠️ ${suspendedPlayers.length} spillere i karantæne: ${names}`;
       banner.hidden = false;
+    }
+
+    function getWidgetUpcomingRoundFixtures() {
+      const sortedGroupFixtures = getSortedGroupFixturesForStrategyControls();
+      if (!sortedGroupFixtures.length) return [];
+
+      const upcomingFixtures = sortedGroupFixtures.filter(fixture => isUpcomingFixture(fixture));
+      if (!upcomingFixtures.length) return [];
+
+      const firstUpcomingFixture = upcomingFixtures[0];
+      const firstUpcomingIndex = sortedGroupFixtures.findIndex(fixture =>
+        String(fixture.match_id || "") === String(firstUpcomingFixture.match_id || "")
+      );
+      if (firstUpcomingIndex < 0) return upcomingFixtures;
+
+      const roundStart = Math.floor(firstUpcomingIndex / STRATEGY_ROUND_FIXTURE_COUNT) * STRATEGY_ROUND_FIXTURE_COUNT;
+      const roundEnd = roundStart + STRATEGY_ROUND_FIXTURE_COUNT;
+
+      return sortedGroupFixtures
+        .slice(roundStart, roundEnd)
+        .filter(fixture => isUpcomingFixture(fixture));
+    }
+
+    function parseWidgetOddsSnapshotTime(row) {
+      const rawAt = String(getRowValue(row || {}, ["odds_fetched_at", "oddsFetchedAt"]) || "").trim();
+      if (rawAt) {
+        const parsedAt = Date.parse(rawAt);
+        if (Number.isFinite(parsedAt)) return parsedAt;
+      }
+
+      const rawLabel = String(getRowValue(row || {}, ["odds_fetched_label", "oddsFetchedLabel"]) || "").trim();
+      const normalizedLabel = rawLabel.replace(/^unibet\s+/i, "").trim();
+      const match = normalizedLabel.match(/^(\d{2})\.(\d{2})\s+kl\.\s*(\d{2}):(\d{2})$/i);
+      if (!match) return 0;
+
+      const parsedLabel = new Date(
+        2026,
+        Number(match[2]) - 1,
+        Number(match[1]),
+        Number(match[3]),
+        Number(match[4])
+      ).getTime();
+
+      return Number.isFinite(parsedLabel) ? parsedLabel : 0;
+    }
+
+    function parseWidgetOddsNumber(value) {
+      const num = Number(String(value || "").replace(",", "."));
+      return Number.isFinite(num) ? num : null;
+    }
+
+    function formatWidgetOdds(value) {
+      const num = parseWidgetOddsNumber(value);
+      if (!Number.isFinite(num) || num <= 0) return "-";
+      return num.toFixed(2).replace(".", ",");
+    }
+
+    function escapeWidgetHtml(value) {
+      return String(value == null ? "" : value)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function selectPreferredOddsRowForWidget(rowsForMatch) {
+      if (!Array.isArray(rowsForMatch) || !rowsForMatch.length) return null;
+
+      return rowsForMatch.slice().sort((a, b) => {
+        const aSource = String((a && a.source) || "").toLowerCase();
+        const bSource = String((b && b.source) || "").toLowerCase();
+        const aIsUnibet = aSource === "unibet" ? 1 : 0;
+        const bIsUnibet = bSource === "unibet" ? 1 : 0;
+        if (aIsUnibet !== bIsUnibet) return bIsUnibet - aIsUnibet;
+
+        const aTime = parseWidgetOddsSnapshotTime(a);
+        const bTime = parseWidgetOddsSnapshotTime(b);
+        if (aTime !== bTime) return bTime - aTime;
+
+        return 0;
+      })[0] || null;
+    }
+
+    function getTopNextRoundMatches() {
+      const roundFixtures = getWidgetUpcomingRoundFixtures();
+      if (!roundFixtures.length) return [];
+
+      return roundFixtures
+        .map(fixture => {
+          const selectedRow = selectPreferredOddsRowForWidget(
+            matchOddsRows.filter(row =>
+              String(getRowValue(row, ["match_id", "fixture_id", "id"])) === String(fixture.match_id)
+            )
+          );
+          if (!selectedRow) return null;
+
+          const homeOdds = parseWidgetOddsNumber(getRowValue(selectedRow, ["home_win_odds"]));
+          const drawOdds = parseWidgetOddsNumber(getRowValue(selectedRow, ["draw_odds"]));
+          const awayOdds = parseWidgetOddsNumber(getRowValue(selectedRow, ["away_win_odds"]));
+          if (!Number.isFinite(homeOdds) || !Number.isFinite(drawOdds) || !Number.isFinite(awayOdds)) {
+            return null;
+          }
+
+          const homeTeamId = getOddsRowTeamId(selectedRow, "home") || canonicalTeamId(fixture.home);
+          const awayTeamId = getOddsRowTeamId(selectedRow, "away") || canonicalTeamId(fixture.away);
+          const favoriteIsHome = homeOdds <= awayOdds;
+          const favoriteTeamId = favoriteIsHome ? homeTeamId : awayTeamId;
+          const underdogTeamId = favoriteIsHome ? awayTeamId : homeTeamId;
+
+          return {
+            matchId: String(fixture.match_id || ""),
+            favoriteTeamId,
+            underdogTeamId,
+            favoriteOdds: favoriteIsHome ? homeOdds : awayOdds,
+            drawOdds,
+            underdogOdds: favoriteIsHome ? awayOdds : homeOdds
+          };
+        })
+        .filter(Boolean)
+        .sort((a, b) => a.favoriteOdds - b.favoriteOdds)
+        .slice(0, 5);
+    }
+
+    function getTeamFlagCode(teamId) {
+      const canonicalId = canonicalTeamId(teamId);
+      return TEAM_ID_TO_FLAG_CODE[canonicalId] || "";
+    }
+
+    function setLowestOddsPopoverOpen(isOpen) {
+      lowestOddsPopoverOpen = !!isOpen;
+      if (lowestOddsBtn) {
+        lowestOddsBtn.setAttribute("aria-expanded", String(lowestOddsPopoverOpen));
+      }
+      if (lowestOddsPopover) {
+        lowestOddsPopover.hidden = !lowestOddsPopoverOpen;
+      }
+    }
+
+    function renderLowestOddsPopover() {
+      if (!lowestOddsList) return;
+      try {
+        const matches = getTopNextRoundMatches();
+        if (!matches.length) {
+          lowestOddsList.innerHTML = `<div class="lowest-odds-empty">Ingen kommende kampe med gyldige 1X2-odds fundet.</div>`;
+          return;
+        }
+
+        lowestOddsList.innerHTML = matches.map(match => {
+          const favoriteName = teamDisplayName(match.favoriteTeamId, match.favoriteTeamId);
+          const underdogName = teamDisplayName(match.underdogTeamId, match.underdogTeamId);
+          const favoriteFlagUrl = getFlagUrl(getTeamFlagCode(match.favoriteTeamId));
+          const underdogFlagUrl = getFlagUrl(getTeamFlagCode(match.underdogTeamId));
+
+          return `
+            <div class="lowest-odds-row">
+              <div class="lowest-odds-match">
+                ${favoriteFlagUrl ? `<img class="lowest-odds-flag" src="${favoriteFlagUrl}" alt="${escapeWidgetHtml(favoriteName)}">` : ""}
+                <span class="lowest-odds-match-text">${escapeWidgetHtml(favoriteName)} – ${escapeWidgetHtml(underdogName)}</span>
+                ${underdogFlagUrl ? `<img class="lowest-odds-flag" src="${underdogFlagUrl}" alt="${escapeWidgetHtml(underdogName)}">` : ""}
+              </div>
+              <div class="lowest-odds-oddsline">
+                <span class="lowest-odds-odd win"><span class="lowest-odds-odd-label">Sejr</span><strong>${escapeWidgetHtml(formatWidgetOdds(match.favoriteOdds))}</strong></span>
+                <span class="lowest-odds-odd draw"><span class="lowest-odds-odd-label">U</span><strong>${escapeWidgetHtml(formatWidgetOdds(match.drawOdds))}</strong></span>
+                <span class="lowest-odds-odd loss"><span class="lowest-odds-odd-label">Tab</span><strong>${escapeWidgetHtml(formatWidgetOdds(match.underdogOdds))}</strong></span>
+              </div>
+            </div>
+          `;
+        }).join("");
+      } catch (error) {
+        console.warn("Laveste odds kunne ikke indlæses", error);
+        lowestOddsList.innerHTML = `<div class="lowest-odds-empty">Kunne ikke indlæse laveste odds.</div>`;
+      }
     }
 
 
@@ -8995,6 +9395,7 @@ function renderTradeList() {
       renderBudget();
       renderStrategyControls();
       postProcessTimeAwareStrategyButtons();
+      renderLowestOddsPopover();
       renderActiveSlotBadge();
       renderSuspensionBanner();
       renderPitch();
@@ -9722,6 +10123,31 @@ function setupClearableFilterSelects() {
       setupClearableFilterSelects();
 formationSelect.value = currentFormation;
       eligibleOnlyToggle.checked = eligibleOnly;
+      window.addEventListener("resize", () => {
+        if (window.innerWidth <= 1100) {
+          setLowestOddsPopoverOpen(false);
+        }
+        renderLowestOddsPopover();
+      });
+
+      lowestOddsBtn?.addEventListener("click", (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        renderLowestOddsPopover();
+        setLowestOddsPopoverOpen(!lowestOddsPopoverOpen);
+      });
+
+      lowestOddsCloseBtn?.addEventListener("click", (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        setLowestOddsPopoverOpen(false);
+      });
+
+      document.addEventListener("click", (event) => {
+        if (!lowestOddsPopoverOpen) return;
+        if (lowestOddsPopover?.contains(event.target) || lowestOddsBtn?.contains(event.target)) return;
+        setLowestOddsPopoverOpen(false);
+      });
 
       infoBoxToggle.addEventListener("click", () => {
         const isCollapsed = infoBox.classList.toggle("collapsed");
