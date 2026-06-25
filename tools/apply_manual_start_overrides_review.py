@@ -6,6 +6,8 @@ import shutil
 from datetime import datetime
 from pathlib import Path
 
+from json_file_safety import write_json_strict
+
 DATA = Path("data")
 POOL_PATH = DATA / "player_pool_v1.json"
 
@@ -174,7 +176,7 @@ def main() -> None:
         if new_note not in old_note:
             player["source_note"] = (old_note + " | " + new_note).strip(" |")
 
-    POOL_PATH.write_text(json.dumps(players, ensure_ascii=False, indent=2), encoding="utf-8")
+    write_json_strict(POOL_PATH, players)
 
     print("CHANGED")
     for player, before, item in changed:

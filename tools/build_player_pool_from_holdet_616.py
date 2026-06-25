@@ -12,6 +12,8 @@ from typing import Any
 
 import pandas as pd
 
+from json_file_safety import write_json_strict
+
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = PROJECT_ROOT / "data"
@@ -587,10 +589,7 @@ def main() -> None:
         team_code_map=team_code_map,
     )
 
-    PREVIEW_PATH.write_text(
-        json.dumps(new_players, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
+    write_json_strict(PREVIEW_PATH, new_players)
     diag.to_csv(DIAG_PATH, index=False, encoding="utf-8-sig")
 
     unmatched = diag.loc[~diag["copied_from_old_player_pool"]].copy()
@@ -614,10 +613,7 @@ def main() -> None:
     )
     shutil.copy2(OLD_PLAYER_POOL_PATH, backup_path)
 
-    OLD_PLAYER_POOL_PATH.write_text(
-        json.dumps(new_players, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
+    write_json_strict(OLD_PLAYER_POOL_PATH, new_players)
 
     print("\nSKREV ÆNDRINGER")
     print(f"Backup:    {backup_path}")

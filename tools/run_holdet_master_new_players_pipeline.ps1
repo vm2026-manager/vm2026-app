@@ -60,6 +60,14 @@ python .\tools\build_start_signal_layer.py
 Write-Host "=== 12/12 Optimize squads ==="
 python .\tools\optimize_squad_group_stage.py
 
+Write-Host "=== JSON sanity ==="
+python .\tools\sanity_check_active_json.py
+if ($LASTEXITCODE -ne 0) {
+    Write-Error "Active JSON sanity failed. Pipeline stops before any downstream commit/push."
+    Stop-Transcript
+    exit $LASTEXITCODE
+}
+
 Write-Host "=== DONE ==="
 Write-Host "Logfil: $log"
 Stop-Transcript

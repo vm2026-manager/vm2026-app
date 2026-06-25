@@ -4,10 +4,13 @@ import csv
 import json
 import shutil
 import unicodedata
+from copy import deepcopy
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
 from typing import Any
+
+from json_file_safety import write_json_strict
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -726,7 +729,7 @@ def main() -> None:
 
     with PLAYER_POOL_PATH.open("r", encoding="utf-8-sig") as f:
         players = json.load(f)
-    before_players = json.loads(json.dumps(players))
+    before_players = deepcopy(players)
 
     with TM_SUMMARY_PATH.open("r", encoding="utf-8-sig", newline="") as f:
         tm_rows = list(csv.DictReader(f))
@@ -837,8 +840,7 @@ def main() -> None:
     write_gk_audit(gk_audit_rows, before_gk_metrics, after_gk_metrics)
     write_recent_nonstarter_audit(before_players, players, availability_splits, match_rows)
 
-    with PLAYER_POOL_PATH.open("w", encoding="utf-8") as f:
-        json.dump(players, f, ensure_ascii=False, indent=2)
+    write_json_strict(PLAYER_POOL_PATH, players)
 
     with OUT_SPLIT_REPORT.open("w", encoding="utf-8-sig", newline="") as f:
         fieldnames = [

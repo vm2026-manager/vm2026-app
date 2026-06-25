@@ -9,8 +9,10 @@ from pathlib import Path
 from typing import Any
 
 try:
+    from json_file_safety import write_json_strict
     from sync_final_ev_to_player_pool import sync_final_ev_to_pool
 except ImportError:
+    from tools.json_file_safety import write_json_strict
     from tools.sync_final_ev_to_player_pool import sync_final_ev_to_pool
 
 
@@ -440,7 +442,7 @@ def update_baumgartner_pool(players: list[dict[str, Any]]) -> tuple[dict[str, An
 
 
 def write_pool(players: list[dict[str, Any]]) -> None:
-    PLAYER_POOL_PATH.write_text(json.dumps(players, ensure_ascii=False, indent=2), encoding="utf-8")
+    write_json_strict(PLAYER_POOL_PATH, players)
 
 
 def sanity_table(before: list[dict[str, Any]], after: list[dict[str, Any]]) -> list[dict[str, Any]]:
