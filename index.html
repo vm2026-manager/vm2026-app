@@ -4260,7 +4260,15 @@ setTimeout(removeDataStatusBox, 250);
       return fetch(withCacheBust(url), options);
     }
 
-    async function fetchCsvRows(url, errorLabel, optional = false) {
+    
+    function withDataCacheBuster(url) {
+      if (!url || typeof url !== 'string') return url;
+      if (!url.startsWith('data/')) return url;
+      const sep = url.includes('?') ? '&' : '?';
+      return `${url}${sep}v=${Date.now()}`;
+    }
+
+async function fetchCsvRows(url, errorLabel, optional = false) {
       try {
         const response = await fetchWithCacheBust(url);
         if (!response.ok) {
