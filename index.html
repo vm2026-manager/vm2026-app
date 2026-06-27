@@ -4203,6 +4203,7 @@ setTimeout(removeDataStatusBox, 250);
   <script>
     const DATA_URL = "data/player_pool_v1.json";
     const FIXTURES_URL = "data/fixtures_group.csv";
+    const KNOCKOUT_FIXTURES_URL = "data/fixtures_knockout.csv";
     const START_SECURITY_URL = "data/player_start_security_nt.csv";
     const OPTIMAL_SQUADS_URL = "data/optimal_squads_by_formation.json";
     const STRATEGY_SQUADS_URL = "data/optimal_squads_by_strategy.json";
@@ -4211,7 +4212,9 @@ setTimeout(removeDataStatusBox, 250);
     const CURRENT_SQUAD_URL = "data/current_squad.csv";
     const MANUAL_OVERRIDES_URL = "data/manual_player_overrides.csv";
     const MATCH_ODDS_URL = "data/match_odds.csv";
+    const KNOCKOUT_MATCH_ODDS_URL = "data/knockout_match_odds.csv";
     const MATCH_ODDS_PROBS_URL = "data/match_odds_probs.csv";
+    const KNOCKOUT_MATCH_ODDS_PROBS_URL = "data/knockout_match_odds_probs.csv";
     const CLEAN_SHEET_ODDS_URL = "data/clean_sheet_odds.csv";
     const PLAYER_SUSPENSIONS_URL = "data/player_suspensions.csv";
     const MODEL_STATUS_URL = "data/model_status_snapshot.json";
@@ -4255,6 +4258,23 @@ setTimeout(removeDataStatusBox, 250);
 
     function fetchWithCacheBust(url, options) {
       return fetch(withCacheBust(url), options);
+    }
+
+    async function fetchCsvRows(url, errorLabel, optional = false) {
+      try {
+        const response = await fetchWithCacheBust(url);
+        if (!response.ok) {
+          if (optional && response.status === 404) return [];
+          throw new Error(`${errorLabel}: ${response.status}`);
+        }
+        return parseCsv(await response.text());
+      } catch (error) {
+        if (optional) {
+          console.warn(`${errorLabel} kunne ikke hentes`, error);
+          return [];
+        }
+        throw error;
+      }
     }
 
     const FORMATIONS = {
@@ -6874,7 +6894,6 @@ function getPlayerScore(player) {
       const team = canonicalTeamId(teamId);
 
       const relevantFixtures = fixtures
-        .filter(f => f.stage === "GROUP")
         .filter(f => canonicalTeamId(f.home) === team || canonicalTeamId(f.away) === team)
         .filter(f => isUpcomingFixture(f))
         .sort((a, b) => (a.kickoffDate || kickoffToDate(a.kickoff_dk || a.kickoff) || 0) - (b.kickoffDate || kickoffToDate(b.kickoff_dk || b.kickoff) || 0));
@@ -6913,28 +6932,24 @@ function getPlayerScore(player) {
 
     function findMatchOddsRow(nextFixture) {
       if (!nextFixture) return null;
+      const homeTeamId = canonicalTeamId(nextFixture.home);
+      const awayTeamId = canonicalTeamId(nextFixture.away);
+      const fixtureMatchId = String(nextFixture.match_id || "");
+      const candidates = matchOddsRows.filter(row => {
+        const rowMatchId = String(getRowValue(row, ["match_id", "fixture_id", "id"]));
+        const rowHomeTeamId = getOddsRowTeamId(row, "home");
+        const rowAwayTeamId = getOddsRowTeamId(row, "away");
+        const rowHomeFallback = canonicalTeamId(getRowValue(row, ["home", "home_team", "team_home"]));
+        const rowAwayFallback = canonicalTeamId(getRowValue(row, ["away", "away_team", "team_away"]));
 
-      const exactByMatchId = matchOddsRows.find(row =>
-        String(getRowValue(row, ["match_id", "fixture_id", "id"])) === String(nextFixture.match_id)
-      );
-      if (exactByMatchId) return exactByMatchId;
+        return (
+          (fixtureMatchId && rowMatchId === fixtureMatchId) ||
+          (rowHomeTeamId === homeTeamId && rowAwayTeamId === awayTeamId) ||
+          (rowHomeFallback === homeTeamId && rowAwayFallback === awayTeamId)
+        );
+      });
 
-      const exactByTeamIds = matchOddsRows.find(row =>
-        getOddsRowTeamId(row, "home") === canonicalTeamId(nextFixture.home) &&
-        getOddsRowTeamId(row, "away") === canonicalTeamId(nextFixture.away)
-      );
-      if (exactByTeamIds) return exactByTeamIds;
-
-      const exactByTeams = matchOddsRows.find(row =>
-        canonicalTeamId(getRowValue(row, ["home", "home_team", "team_home"])) === canonicalTeamId(nextFixture.home) &&
-        canonicalTeamId(getRowValue(row, ["away", "away_team", "team_away"])) === canonicalTeamId(nextFixture.away)
-      );
-      if (exactByTeams) return exactByTeams;
-
-      return matchOddsRows.find(row =>
-        canonicalTeamId(getRowValue(row, ["home"])) === canonicalTeamId(nextFixture.home) &&
-        canonicalTeamId(getRowValue(row, ["away"])) === canonicalTeamId(nextFixture.away)
-      ) || null;
+      return selectPreferredOddsRow(candidates);
     }
 
     function parseProbNumber(value) {
@@ -9431,16 +9446,16 @@ function renderTradeList() {
     }
 
     async function loadFixtures() {
-      const response = await fetchWithCacheBust(FIXTURES_URL);
-      if (!response.ok) throw new Error(`Kunne ikke hente fixtures: ${response.status}`);
+      const [groupRows, knockoutRows] = await Promise.all([
+        fetchCsvRows(FIXTURES_URL, "Kunne ikke hente fixtures"),
+        fetchCsvRows(KNOCKOUT_FIXTURES_URL, "Kunne ikke hente knockout fixtures", true)
+      ]);
 
-      const text = await response.text();
-      const rows = parseCsv(text);
-
-      fixtures = rows
+      fixtures = groupRows
+        .concat(knockoutRows)
         .map(row => ({
           match_id: row.match_id,
-          stage: row.stage,
+          stage: row.stage || "GROUP",
           group: row.group,
           home: row.home,
           away: row.away,
@@ -9452,11 +9467,11 @@ function renderTradeList() {
     }
 
     async function loadMatchOddsProbs() {
-      const response = await fetchWithCacheBust(MATCH_ODDS_PROBS_URL);
-      if (!response.ok) throw new Error(`Kunne ikke hente match odds probs: ${response.status}`);
-
-      const text = await response.text();
-      matchOddsRows = parseCsv(text);
+      const [groupRows, knockoutRows] = await Promise.all([
+        fetchCsvRows(MATCH_ODDS_PROBS_URL, "Kunne ikke hente match odds probs"),
+        fetchCsvRows(KNOCKOUT_MATCH_ODDS_PROBS_URL, "Kunne ikke hente knockout match odds probs", true)
+      ]);
+      matchOddsRows = groupRows.concat(knockoutRows);
     }
 
     async function loadCleanSheetOdds() {
@@ -10638,12 +10653,32 @@ formationSelect.value = currentFormation;
       if (oddsByTeamPair) return oddsByTeamPair;
 
       if (!oddsPromise) {
-        oddsPromise = fetchWithCacheBust(MATCH_ODDS_URL, { cache: "no-store" })
-          .then(function (res) {
-            if (!res.ok) throw new Error("match_odds.csv " + res.status);
-            return res.text();
+        oddsPromise = Promise.all([
+            fetchWithCacheBust(MATCH_ODDS_URL, { cache: "no-store" })
+              .then(function (res) {
+                if (!res.ok) throw new Error("match_odds.csv " + res.status);
+                return res.text();
+              })
+              .then(parseCsv),
+            fetchWithCacheBust(KNOCKOUT_MATCH_ODDS_URL, { cache: "no-store" })
+              .then(function (res) {
+                if (!res.ok) {
+                  if (res.status === 404) return "";
+                  throw new Error("knockout_match_odds.csv " + res.status);
+                }
+                return res.text();
+              })
+              .then(function (text) {
+                return text ? parseCsv(text) : [];
+              })
+              .catch(function (err) {
+                console.warn("Tooltip knockout odds kunne ikke hentes", err);
+                return [];
+              })
+          ])
+          .then(function (parts) {
+            return parts[0].concat(parts[1]);
           })
-          .then(parseCsv)
           .catch(function (err) {
             console.warn("Tooltip odds kunne ikke hentes", err);
             return [];
@@ -10896,7 +10931,6 @@ formationSelect.value = currentFormation;
             var bd = typeof kickoffToDate === "function" ? kickoffToDate(b.kickoff_dk || b.kickoff) : null;
             return (ad ? ad.getTime() : 0) - (bd ? bd.getTime() : 0);
           })
-          .filter(function (f) { return f.stage === "GROUP"; })
           .filter(function (f) {
             return canonicalTeamId(f.home) === team || canonicalTeamId(f.away) === team;
           })
@@ -10984,7 +11018,7 @@ formationSelect.value = currentFormation;
 
       if (!fixtures.length) {
         return '<div class="vm-fixture-tooltip-head"><span>Ingen kommende kampe</span></div>' +
-          '<div class="vm-fixture-tooltip-empty">Ingen kommende gruppekampe fundet.</div>';
+          '<div class="vm-fixture-tooltip-empty">Ingen kommende kampe fundet.</div>';
       }
 
       var rows = fixtures.map(function (f) {
