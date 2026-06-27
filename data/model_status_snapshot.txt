@@ -1,9 +1,9 @@
 VM 2026 MODEL STATUS SNAPSHOT
 
-Oprettet: 2026-06-26T17:45:51
+Oprettet: 2026-06-27T07:29:03
 
 VURDERING
-- Bedste formation i seneste optimizer-kørsel: 3-4-3.
+- Bedste formation i seneste optimizer-kørsel: 3-5-2.
 - Modellen bruger nu Holdet.dk game 616 som officiel master-player-pool.
 - EV-filen er rebased til de officielle Holdet-spillere.
 - Optimizer-holdene matcher appens player_pool på player_id.
@@ -24,29 +24,29 @@ EV-FIL
 - Positioner: {'MID': 425, 'DEF': 410, 'FWD': 268, 'GK': 145}
 
 FORMATIONER
-- 3-4-3: status=Optimal, adjEV=167.884, rawEV=19.063, pris=49.927
-- 3-5-2: status=Optimal, adjEV=165.636, rawEV=14.637, pris=49.804
-- 4-3-3: status=Optimal, adjEV=166.27, rawEV=18.116, pris=49.996
-- 4-4-2: status=Optimal, adjEV=164.456, rawEV=17.744, pris=49.962
-- 4-5-1: status=Optimal, adjEV=161.493, rawEV=15.911, pris=49.94
-- 5-3-2: status=Optimal, adjEV=157.319, rawEV=17.158, pris=49.98
-- 5-4-1: status=Optimal, adjEV=155.232, rawEV=17.014, pris=49.955
+- 3-4-3: status=Optimal, adjEV=166.994, rawEV=17.16, pris=49.924
+- 3-5-2: status=Optimal, adjEV=168.273, rawEV=17.125, pris=49.995
+- 4-3-3: status=Optimal, adjEV=166.07, rawEV=17.339, pris=49.961
+- 4-4-2: status=Optimal, adjEV=166.429, rawEV=17.779, pris=49.934
+- 4-5-1: status=Optimal, adjEV=162.022, rawEV=18.203, pris=49.999
+- 5-3-2: status=Optimal, adjEV=155.672, rawEV=13.251, pris=49.99
+- 5-4-1: status=Optimal, adjEV=156.473, rawEV=15.48, pris=49.945
 
 BEDSTE HOLD
-- selected_formation: 3-4-3
-- squad_total_price_m: 49.927
-- squad_total_adj_ev: 167.884
-- squad_total_raw_ev: 19.063
+- selected_formation: 3-5-2
+- squad_total_price_m: 49.995
+- squad_total_adj_ev: 168.273
+- squad_total_raw_ev: 17.125
 
 SPILLERE
-- Mike Maignan | FRA | GK | pris=5.2 | EV=17.415
+- Mike Maignan | FRA | GK | pris=5.4 | EV=17.747
 - Gonzalo Montiel | ARG | DEF | pris=3.5 | EV=11.277
-- Lucas Digne | FRA | DEF | pris=3.6 | EV=12.821
-- Timothy Castagne | BEL | DEF | pris=3.5 | EV=10.926
-- Alex Baena | ESP | MID | pris=3.6 | EV=13.402
+- Lucas Digne | FRA | DEF | pris=3.6 | EV=12.812
+- Renato Veiga | POR | DEF | pris=3.6 | EV=11.379
+- Aurelien Tchouameni | FRA | MID | pris=3.7 | EV=13.165
 - Casemiro | BRA | MID | pris=4.6 | EV=15.845
-- Manu Koné | FRA | MID | pris=3.6 | EV=12.993
-- Martin Zubimendi | ESP | MID | pris=3.5 | EV=14.661
-- Lamine Yamal | ESP | FWD | pris=9.2 | EV=25.621
-- Matheus Cunha | BRA | FWD | pris=5.1 | EV=16.067
-- Nico Williams | ESP | FWD | pris=4.5 | EV=16.856
+- Manu Koné | FRA | MID | pris=3.6 | EV=13.130
+- Martin Zubimendi | ESP | MID | pris=3.5 | EV=14.621
+- Mikel Merino | ESP | MID | pris=4.6 | EV=15.883
+- Lamine Yamal | ESP | FWD | pris=9.3 | EV=25.699
+- Nico Williams | ESP | FWD | pris=4.6 | EV=16.915
