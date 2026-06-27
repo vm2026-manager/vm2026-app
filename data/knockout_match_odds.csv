@@ -1,0 +1,5 @@
+match_id,home,away,kickoff_dk,home_win_odds,draw_odds,away_win_odds,home_clean_sheet_odds,away_clean_sheet_odds,over_2_5_odds,under_2_5_odds,source,odds_fetched_at,odds_fetched_label,home_team_id,away_team_id,stage,group
+73,FRA,SWE,2026-07-02 23:00,1.30,5.80,12.50,,,,,Unibet,2026-06-27T07:28:31+02:00,Unibet 27.06 kl. 07:28,FRA,SWE,R32,
+74,USA,BIH,2026-07-02 02:00,1.43,4.80,8.50,,,,,Unibet,2026-06-27T07:28:31+02:00,Unibet 27.06 kl. 07:28,USA,BIH,R32,
+75,AUS,EGY,2026-07-03 20:00,3.70,3.40,2.12,,,,,Unibet,2026-06-27T07:28:31+02:00,Unibet 27.06 kl. 07:28,AUS,EGY,R32,
+76,ARG,CPV,2026-07-04 00:00,1.19,7.50,17.00,,,,,Unibet,2026-06-27T07:28:31+02:00,Unibet 27.06 kl. 07:28,ARG,CPV,R32,
