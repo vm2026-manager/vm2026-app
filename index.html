@@ -4322,6 +4322,7 @@ setTimeout(removeDataStatusBox, 250);
     let currentSquadOwnership = new Map();
     let manualOverrideMap = new Map();
     let matchOddsRows = [];
+    let playerNextMatchInfoById = new Map();
     let cleanSheetOddsRows = [];
     let cleanSheetOddsByMatchTeam = new Map();
     let modelStatus = null;
@@ -6887,30 +6888,117 @@ function getPlayerScore(player) {
       return isUpcomingKickoffDate(fixture.kickoffDate || kickoffToDate(fixture.kickoff_dk || fixture.kickoff));
     }
 
-    function getNextFixtureForTeam(teamId) {
-      if (!teamId || !fixtures.length) return null;
+    function getUpcomingFixturesForTeam(teamId, limit = null) {
+      if (!teamId || !fixtures.length) return [];
 
-      const now = getNow();
       const team = canonicalTeamId(teamId);
-
       const relevantFixtures = fixtures
         .filter(f => canonicalTeamId(f.home) === team || canonicalTeamId(f.away) === team)
         .filter(f => isUpcomingFixture(f))
         .sort((a, b) => (a.kickoffDate || kickoffToDate(a.kickoff_dk || a.kickoff) || 0) - (b.kickoffDate || kickoffToDate(b.kickoff_dk || b.kickoff) || 0));
 
-      if (!relevantFixtures.length) return null;
+      const sliced = Number.isFinite(limit) && limit > 0 ? relevantFixtures.slice(0, limit) : relevantFixtures;
+      return sliced.map(nextFixture => {
+        const isHome = canonicalTeamId(nextFixture.home) === team;
+        const opponent = canonicalTeamId(isHome ? nextFixture.away : nextFixture.home);
+        return {
+          opponent,
+          isHome,
+          home: canonicalTeamId(nextFixture.home),
+          away: canonicalTeamId(nextFixture.away),
+          match_id: nextFixture.match_id,
+          kickoff: nextFixture.kickoff_dk || nextFixture.kickoff || "",
+          kickoffDate: nextFixture.kickoffDate || kickoffToDate(nextFixture.kickoff_dk || nextFixture.kickoff),
+          stage: nextFixture.stage || ""
+        };
+      });
+    }
 
-      const nextFixture = relevantFixtures[0];
-      const isHome = canonicalTeamId(nextFixture.home) === team;
-      const opponent = canonicalTeamId(isHome ? nextFixture.away : nextFixture.home);
+    function getNextFixtureForTeam(teamId) {
+      const upcomingFixtures = getUpcomingFixturesForTeam(teamId, 1);
+      return upcomingFixtures.length ? upcomingFixtures[0] : null;
+    }
+
+    function getTeamNextMatchInfo(teamId) {
+      const canonicalTeam = canonicalTeamId(teamId);
+      if (!canonicalTeam) {
+        return {
+          hasMatch: false,
+          fixture: null,
+          opponentId: "",
+          opponentName: "",
+          displayOpponentName: "",
+          oddsRow: null,
+          oddsText: "",
+          source: "",
+          sourceLabel: "",
+          kickoff: "",
+          stage: "",
+          win: null,
+          draw: null,
+          loss: null
+        };
+      }
+
+      const fixture = getNextFixtureForTeam(canonicalTeam);
+      if (!fixture) {
+        return {
+          hasMatch: false,
+          fixture: null,
+          opponentId: "",
+          opponentName: "",
+          displayOpponentName: "",
+          oddsRow: null,
+          oddsText: "",
+          source: "",
+          sourceLabel: "",
+          kickoff: "",
+          stage: "",
+          win: null,
+          draw: null,
+          loss: null
+        };
+      }
+
+      const opponentId = canonicalTeamId(fixture.opponent || (canonicalTeamId(fixture.home) === canonicalTeam ? fixture.away : fixture.home));
+      const displayOpponentName = teamDisplayName(opponentId);
+      const oddsRow = findMatchOddsRow(fixture);
+      const isHome = canonicalTeamId(fixture.home) === canonicalTeam;
+      const win = oddsRow
+        ? getRowValue(oddsRow, isHome ? ["home_win_odds", "h"] : ["away_win_odds", "a"])
+        : null;
+      const draw = oddsRow
+        ? getRowValue(oddsRow, ["draw_odds", "x"])
+        : null;
+      const loss = oddsRow
+        ? getRowValue(oddsRow, isHome ? ["away_win_odds", "a"] : ["home_win_odds", "h"])
+        : null;
 
       return {
-        opponent,
-        isHome,
-        home: canonicalTeamId(nextFixture.home),
-        away: canonicalTeamId(nextFixture.away),
-        match_id: nextFixture.match_id
+        hasMatch: true,
+        fixture,
+        opponentId,
+        opponentName: displayOpponentName,
+        displayOpponentName,
+        oddsRow,
+        oddsText: [win, draw, loss].some(value => value !== null && value !== undefined && value !== "")
+          ? `${win ?? "-"} / ${draw ?? "-"} / ${loss ?? "-"}`
+          : "",
+        source: oddsRow ? String(getRowValue(oddsRow, ["source"])) : "",
+        sourceLabel: oddsRow ? String(getRowValue(oddsRow, ["odds_fetched_label", "oddsFetchedLabel"])) : "",
+        kickoff: fixture.kickoff || fixture.kickoff_dk || "",
+        stage: fixture.stage || "",
+        win,
+        draw,
+        loss
       };
+    }
+
+    function getPlayerNextMatchInfo(player) {
+      if (!player) {
+        return getTeamNextMatchInfo("");
+      }
+      return getTeamNextMatchInfo(player.team_id || player.team_name || "");
     }
 
     function getRowValue(row, keys) {
@@ -6928,6 +7016,46 @@ function getPlayerScore(player) {
         ? ["home_team_id", "home", "home_team", "team_home"]
         : ["away_team_id", "away", "away_team", "team_away"];
       return canonicalTeamId(getRowValue(row, preferredKeys));
+    }
+
+    function parseOddsSnapshotTime(row) {
+      const rawAt = String(getRowValue(row || {}, ["odds_fetched_at", "oddsFetchedAt"]) || "").trim();
+      if (rawAt) {
+        const parsedAt = Date.parse(rawAt);
+        if (Number.isFinite(parsedAt)) return parsedAt;
+      }
+
+      const rawLabel = String(getRowValue(row || {}, ["odds_fetched_label", "oddsFetchedLabel"]) || "").trim();
+      const normalizedLabel = rawLabel.replace(/^unibet\s+/i, "").trim();
+      const match = normalizedLabel.match(/^(\d{2})\.(\d{2})\s+kl\.\s*(\d{2}):(\d{2})$/i);
+      if (!match) return 0;
+
+      const parsedLabel = new Date(
+        2026,
+        Number(match[2]) - 1,
+        Number(match[1]),
+        Number(match[3]),
+        Number(match[4])
+      ).getTime();
+
+      return Number.isFinite(parsedLabel) ? parsedLabel : 0;
+    }
+
+    function selectPreferredOddsRow(rowsForMatch) {
+      if (!Array.isArray(rowsForMatch) || !rowsForMatch.length) return null;
+      return rowsForMatch.slice().sort((a, b) => {
+        const aSource = String((a && a.source) || "").toLowerCase();
+        const bSource = String((b && b.source) || "").toLowerCase();
+        const aIsUnibet = aSource === "unibet" ? 1 : 0;
+        const bIsUnibet = bSource === "unibet" ? 1 : 0;
+        if (aIsUnibet !== bIsUnibet) return bIsUnibet - aIsUnibet;
+
+        const aTime = parseOddsSnapshotTime(a);
+        const bTime = parseOddsSnapshotTime(b);
+        if (aTime !== bTime) return bTime - aTime;
+
+        return 0;
+      })[0] || null;
     }
 
     function findMatchOddsRow(nextFixture) {
@@ -7054,17 +7182,14 @@ function getPlayerScore(player) {
     }
 
     function nextMatchText(teamId) {
-      const nextFixture = getNextFixtureForTeam(teamId);
-      if (!nextFixture) return "Næste kamp: ikke fundet";
-
-      return `Næste kamp: ${teamDisplayName(nextFixture.opponent)}`;
+      const nextMatchInfo = getTeamNextMatchInfo(teamId);
+      if (!nextMatchInfo.hasMatch) return "Næste kamp: ikke fundet";
+      return `Næste kamp: ${nextMatchInfo.displayOpponentName}`;
     }
 
     function nextOpponentText(teamId) {
-      const nextFixture = getNextFixtureForTeam(teamId);
-      if (!nextFixture) return "";
-
-      return teamDisplayName(nextFixture.opponent);
+      const nextMatchInfo = getTeamNextMatchInfo(teamId);
+      return nextMatchInfo.hasMatch ? nextMatchInfo.displayOpponentName : "";
     }
 
     function isCleanSheetEligiblePosition(position) {
@@ -9350,12 +9475,15 @@ function renderTradeList() {
             .sort((a, b) => favoritePositionOrder(a) - favoritePositionOrder(b))
         : players;
 
+      playerNextMatchInfoById = new Map();
       tradeList.innerHTML = visiblePlayers.slice(0, favoriteOnly ? 500 : 80).map(player => {
         const disabledReason = getDisabledReason(player);
         const isDisabled = !!disabledReason;
         const isSuspended = isSuspendedNextMatch(player);
         const rowClass = `${isDisabled ? "trade-row disabled" : "trade-row"}${isSuspended ? " suspended" : ""}`;
         const flagUrl = getFlagUrl(getPlayerFlagCode(player));
+        const nextMatchInfo = getPlayerNextMatchInfo(player);
+        playerNextMatchInfoById.set(String(player.player_id), nextMatchInfo);
         const tmWatchReason = String(player.tm_watch_reason || "").trim();
         const tmWarning = shouldShowTmWarning(player) ? `<div class="trade-tm-warning">TM: usikker starter</div>` : "";
         const suspensionHtml = isSuspended ? `<div class="trade-suspension-flag">⛔ Karantæne</div>` : "";
@@ -9372,7 +9500,7 @@ function renderTradeList() {
                 ${flagUrl ? `<img class="trade-list-flag" src="${flagUrl}" alt="${escapeHtml(getTradeFlagTitle(player))}" title="${escapeHtml(getTradeFlagTitle(player))}" aria-label="${escapeHtml(getTradeFlagTitle(player))}">` : ""}
                 <div class="trade-name">${player.player_name || "Ukendt spiller"}</div>
               </div>
-              <div class="trade-next">${nextOpponentText(player.team_id)}</div>
+              <div class="trade-next">${escapeHtml(nextMatchInfo.displayOpponentName || "")}</div>
               ${suspensionHtml}
               ${tmWarning}
             </div>
@@ -10790,169 +10918,135 @@ formationSelect.value = currentFormation;
     }
 
     async function fixturesFor(player) {
-      var odds = await getOdds();
-      var team = canonicalTeamId(player.team_id || player.team_name || "");
-      var out = [];
-      var seen = new Set();
+      try {
+        var odds = await getOdds();
+        var team = canonicalTeamId(player.team_id || player.team_name || "");
+        var out = [];
+        var seen = new Set();
 
-      function resolveFixtureMeta(home, away, kickoff, matchId, opponent) {
-        var resolvedHome = canonicalTeamId(home);
-        var resolvedAway = canonicalTeamId(away);
-        var resolvedOpponent = canonicalTeamId(opponent || "");
-        var resolvedKickoff = String(kickoff || "");
-        var resolvedMatchId = matchId || "";
+        function addResolvedFixture(fixtureLike) {
+          try {
+            var home = canonicalTeamId(fixtureLike && fixtureLike.home);
+            var away = canonicalTeamId(fixtureLike && fixtureLike.away);
+            var kickoff = String((fixtureLike && (fixtureLike.kickoff || fixtureLike.kickoff_dk)) || "");
+            var matchId = String((fixtureLike && (fixtureLike.match_id || fixtureLike.matchId)) || "");
+            var opponent = canonicalTeamId(fixtureLike && fixtureLike.opponent);
 
-        var fixtureMatch = null;
-        if (Array.isArray(fixtures) && fixtures.length) {
-          if (resolvedMatchId) {
-            fixtureMatch = fixtures.find(function (fixture) {
-              return String(fixture.match_id) === String(resolvedMatchId);
-            }) || null;
-          }
+            if (!team || !opponent || opponent === "0") return;
+            if (!kickoff) {
+              var kickoffRow = odds.get(home + "|" + away) || odds.get(away + "|" + home);
+              kickoff = kickoffRow ? kickoffRow.kickoff : "";
+            }
+            if (!isFuture(kickoff)) return;
 
-          if (!fixtureMatch && team && resolvedOpponent) {
-            fixtureMatch = fixtures.find(function (fixture) {
-              var fixtureHome = canonicalTeamId(fixture.home);
-              var fixtureAway = canonicalTeamId(fixture.away);
-              return (
-                (fixtureHome === team && fixtureAway === resolvedOpponent) ||
-                (fixtureAway === team && fixtureHome === resolvedOpponent)
-              );
-            }) || null;
-          }
-        }
+            var dedupeKey = String(matchId || [team, opponent, kickoff].join("|"));
+            if (seen.has(dedupeKey)) return;
+            seen.add(dedupeKey);
 
-        if (fixtureMatch) {
-          resolvedHome = canonicalTeamId(fixtureMatch.home || resolvedHome);
-          resolvedAway = canonicalTeamId(fixtureMatch.away || resolvedAway);
-          resolvedKickoff = String(fixtureMatch.kickoff_dk || fixtureMatch.kickoff || resolvedKickoff || "");
-          resolvedMatchId = fixtureMatch.match_id || resolvedMatchId;
-          if (!resolvedOpponent) {
-            resolvedOpponent = resolvedHome === team ? resolvedAway : resolvedHome;
-          }
-        }
+            var row = null;
+            if (typeof findMatchOddsRow === "function") {
+              row = findMatchOddsRow({
+                home: home,
+                away: away,
+                match_id: matchId
+              });
+            }
+            if (!row) {
+              row = odds.get(home + "|" + away) || odds.get(away + "|" + home);
+            }
+            if (!row && matchId) {
+              row = selectPreferredOddsRow(matchOddsRows.filter(function (candidate) {
+                return String(getRowValue(candidate, ["match_id", "fixture_id", "id"])) === String(matchId);
+              })) || null;
+            }
 
-        return {
-          home: resolvedHome,
-          away: resolvedAway,
-          kickoff: resolvedKickoff,
-          matchId: resolvedMatchId,
-          opponent: resolvedOpponent
-        };
-      }
+            var win = null;
+            var draw = null;
+            var loss = null;
 
-      function addFixture(home, away, kickoff, matchId, explicitOpponent) {
-        var resolved = resolveFixtureMeta(home, away, kickoff, matchId, explicitOpponent);
-        home = resolved.home;
-        away = resolved.away;
-        kickoff = resolved.kickoff;
-        matchId = resolved.matchId;
-        var opponent = canonicalTeamId(resolved.opponent || (home === team ? away : home));
+            if (row) {
+              var rowHome = canonicalTeamId(row.home);
+              var rowAway = canonicalTeamId(row.away);
 
-        if (!team || !opponent || opponent === "0") return;
-        if (!kickoff) {
-          var kickoffRow = odds.get(home + "|" + away) || odds.get(away + "|" + home);
-          kickoff = kickoffRow ? kickoffRow.kickoff : "";
-        }
-        if (!isFuture(kickoff)) return;
+              if (rowHome === team) {
+                win = row.h;
+                draw = row.x;
+                loss = row.a;
+              } else if (rowAway === team) {
+                win = row.a;
+                draw = row.x;
+                loss = row.h;
+              }
+            }
 
-        var dedupeKey = String(matchId || [team, opponent, kickoff].join("|"));
-        if (seen.has(dedupeKey)) return;
-        seen.add(dedupeKey);
-
-        var row = odds.get(home + "|" + away) || odds.get(away + "|" + home);
-        if (!row && matchId) {
-          row = selectPreferredOddsRow(matchOddsRows.filter(function (candidate) {
-            return String(getRowValue(candidate, ["match_id", "fixture_id", "id"])) === String(matchId);
-          })) || null;
-        }
-
-        var win = null;
-        var draw = null;
-        var loss = null;
-
-        if (row) {
-          var rowHome = canonicalTeamId(row.home);
-          var rowAway = canonicalTeamId(row.away);
-
-          if (rowHome === team) {
-            win = row.h;
-            draw = row.x;
-            loss = row.a;
-          } else if (rowAway === team) {
-            win = row.a;
-            draw = row.x;
-            loss = row.h;
+            out.push({
+              opponent: opponent,
+              opponentName: teamName(opponent),
+              kickoff: kickoff,
+              win: win,
+              draw: draw,
+              loss: loss,
+              source: row ? row.source : "",
+              oddsFetchedLabel: row ? (row.oddsFetchedLabel || row.odds_fetched_label || "") : "",
+              oddsFetchedAt: row ? (row.oddsFetchedAt || row.odds_fetched_at || "") : ""
+            });
+          } catch (error) {
+            console.warn("Tooltip fixture springes over", error);
           }
         }
 
-        out.push({
-          opponent: opponent,
-          opponentName: teamName(opponent),
-          kickoff: kickoff,
-          win: win,
-          draw: draw,
-          loss: loss,
-          source: row ? row.source : "",
-          oddsFetchedLabel: row ? (row.oddsFetchedLabel || row.odds_fetched_label || "") : "",
-          oddsFetchedAt: row ? (row.oddsFetchedAt || row.odds_fetched_at || "") : ""
-        });
-      }
-
-      [1, 2, 3].forEach(function (roundNo) {
-        var opponent = player["match_" + roundNo + "_opponent_team"] ||
-          player["round" + roundNo + "_opponent_team"] ||
-          "";
-
-        if (!opponent || String(opponent) === "0") return;
-
-        var home = player["match_" + roundNo + "_home"] ||
-          player["round" + roundNo + "_home"] ||
-          team;
-
-        var away = player["match_" + roundNo + "_away"] ||
-          player["round" + roundNo + "_away"] ||
-          opponent;
-
-        var kickoff = String(
-          player["match_" + roundNo + "_kickoff_dk"] ||
-          player["round" + roundNo + "_kickoff_dk"] ||
-          ""
-        );
-
-        addFixture(home, away, kickoff, player["match_" + roundNo + "_id"] || player["round" + roundNo + "_id"], opponent);
-      });
-
-      if (!out.length && Array.isArray(fixtures)) {
-        fixtures
-          .filter(function (f) { return isFuture(f.kickoff_dk || f.kickoff); })
-          .sort(function (a, b) {
-            var ad = typeof kickoffToDate === "function" ? kickoffToDate(a.kickoff_dk || a.kickoff) : null;
-            var bd = typeof kickoffToDate === "function" ? kickoffToDate(b.kickoff_dk || b.kickoff) : null;
-            return (ad ? ad.getTime() : 0) - (bd ? bd.getTime() : 0);
-          })
-          .filter(function (f) {
-            return canonicalTeamId(f.home) === team || canonicalTeamId(f.away) === team;
-          })
-          .filter(function (f) {
-            return f.kickoffDate instanceof Date &&
-              !Number.isNaN(f.kickoffDate.getTime()) &&
-              f.kickoffDate >= getNow();
-          })
-          .sort(function (a, b) { return a.kickoffDate - b.kickoffDate; })
-          .slice(0, 3)
-          .forEach(function (f) {
-            addFixture(f.home, f.away, f.kickoff_dk || f.kickoff || "", f.match_id);
+        var sharedUpcomingFixtures = typeof getUpcomingFixturesForTeam === "function"
+          ? getUpcomingFixturesForTeam(team, 3)
+          : [];
+        if (Array.isArray(sharedUpcomingFixtures) && sharedUpcomingFixtures.length) {
+          sharedUpcomingFixtures.forEach(function (fixture) {
+            addResolvedFixture(fixture);
           });
+        }
+
+        if (!out.length) {
+          [1, 2, 3].forEach(function (roundNo) {
+            var opponent = player["match_" + roundNo + "_opponent_team"] ||
+              player["round" + roundNo + "_opponent_team"] ||
+              "";
+
+            if (!opponent || String(opponent) === "0") return;
+
+            var home = player["match_" + roundNo + "_home"] ||
+              player["round" + roundNo + "_home"] ||
+              team;
+
+            var away = player["match_" + roundNo + "_away"] ||
+              player["round" + roundNo + "_away"] ||
+              opponent;
+
+            var kickoff = String(
+              player["match_" + roundNo + "_kickoff_dk"] ||
+              player["round" + roundNo + "_kickoff_dk"] ||
+              ""
+            );
+
+            addResolvedFixture({
+              home: home,
+              away: away,
+              kickoff: kickoff,
+              match_id: player["match_" + roundNo + "_id"] || player["round" + roundNo + "_id"],
+              opponent: opponent
+            });
+          });
+        }
+
+        out.sort(function (a, b) {
+          var ad = typeof kickoffToDate === "function" ? kickoffToDate(a.kickoff) : null;
+          var bd = typeof kickoffToDate === "function" ? kickoffToDate(b.kickoff) : null;
+          return (ad ? ad.getTime() : 0) - (bd ? bd.getTime() : 0);
+        });
+
+        return out.slice(0, 3);
+      } catch (error) {
+        console.warn("Tooltip fixturesFor fallback", error);
+        return [];
       }
-
-      out.sort(function (a, b) {
-        var ad = typeof kickoffToDate === "function" ? kickoffToDate(a.kickoff) : null;
-        var bd = typeof kickoffToDate === "function" ? kickoffToDate(b.kickoff) : null;
-        return (ad ? ad.getTime() : 0) - (bd ? bd.getTime() : 0);
-      });
-
-      return out.slice(0, 3);
     }
 
     function ensureTooltip() {
@@ -11052,6 +11146,23 @@ formationSelect.value = currentFormation;
           : '');
     }
 
+    function fixturesFromNextMatchInfo(nextMatchInfo) {
+      if (!nextMatchInfo || !nextMatchInfo.hasMatch) return [];
+      return [{
+        opponent: nextMatchInfo.opponentId || "",
+        opponentName: nextMatchInfo.displayOpponentName || nextMatchInfo.opponentName || "",
+        kickoff: nextMatchInfo.kickoff || "",
+        win: nextMatchInfo.win,
+        draw: nextMatchInfo.draw,
+        loss: nextMatchInfo.loss,
+        source: nextMatchInfo.source || "",
+        oddsFetchedLabel: nextMatchInfo.sourceLabel || "",
+        oddsFetchedAt: nextMatchInfo.oddsRow
+          ? (nextMatchInfo.oddsRow.oddsFetchedAt || nextMatchInfo.oddsRow.odds_fetched_at || "")
+          : ""
+      }];
+    }
+
     async function show(target) {
       var player = findPlayer(target);
       var card = findCard(target);
@@ -11066,11 +11177,31 @@ formationSelect.value = currentFormation;
       el.classList.add("is-visible");
       placeTooltip(card);
 
-      var fixtures = await fixturesFor(player);
-      if (activeCard !== card) return;
+      try {
+        var nextMatchInfo = null;
+        try {
+          nextMatchInfo = playerNextMatchInfoById.get(String(player.player_id || "")) || null;
+        } catch (_lookupError) {
+          nextMatchInfo = null;
+        }
+        if (!nextMatchInfo || !nextMatchInfo.hasMatch) {
+          nextMatchInfo = typeof getPlayerNextMatchInfo === "function" ? getPlayerNextMatchInfo(player) : null;
+        }
 
-      el.innerHTML = html(player, fixtures);
-      placeTooltip(card);
+        var fixtures = (nextMatchInfo && nextMatchInfo.hasMatch)
+          ? fixturesFromNextMatchInfo(nextMatchInfo)
+          : await fixturesFor(player);
+        if (activeCard !== card) return;
+
+        el.innerHTML = html(player, Array.isArray(fixtures) ? fixtures : []);
+        placeTooltip(card);
+      } catch (error) {
+        console.warn("Tooltip show fallback", error);
+        if (activeCard !== card) return;
+        el.innerHTML = '<div class="vm-fixture-tooltip-head"><span>Ingen kommende kampe</span></div>' +
+          '<div class="vm-fixture-tooltip-empty">Ingen kommende kampe fundet.</div>';
+        placeTooltip(card);
+      }
     }
 
     function hide() {
