@@ -7331,48 +7331,208 @@ function getPlayerScore(player) {
       })[0] || null;
     }
 
-    function getNextCleanSheetInfo(player) {
-      if (!player || !isCleanSheetEligiblePosition(player.position)) return null;
+    function isCleanSheetEligiblePlayer(player) {
+      if (!player) return false;
 
-      const teamId = canonicalTeamId(player.team_id || player.team_name || "");
-      const upcomingFixtures = getUpcomingGroupFixturesForTeam(teamId);
-      if (!upcomingFixtures.length) return null;
+      const rawValues = [
+        player.position,
+        player.position_code,
+        player.positionCode,
+        player.position_raw,
+        player.positionRaw,
+        player.holdet_position,
+        player.holdetPosition
+      ]
+        .filter(value => value !== null && value !== undefined)
+        .map(value => String(value).trim())
+        .filter(Boolean);
 
-      let matchedFixture = null;
-      let row = null;
+      const normalizedValues = [];
 
-      for (const fixture of upcomingFixtures) {
-        const candidateRow = cleanSheetOddsByMatchTeam.get(`${String(fixture.match_id)}|${teamId}`);
-        if (!candidateRow) continue;
-        matchedFixture = {
-          match_id: fixture.match_id,
-          opponent: canonicalTeamId(canonicalTeamId(fixture.home) === teamId ? fixture.away : fixture.home)
-        };
-        row = candidateRow;
-        break;
+      for (const value of rawValues) {
+        normalizedValues.push(value.toUpperCase());
+
+        try {
+          if (typeof normalizePositionLabel === "function") {
+            normalizedValues.push(String(normalizePositionLabel(value) || "").trim().toUpperCase());
+          }
+        } catch (_error) {
+          // Ignore normalization errors.
+        }
       }
 
-      if (!matchedFixture || !row) return null;
+      const allowed = new Set([
+        "GK",
+        "DEF",
+        "MÅL",
+        "MAL",
+        "MÅLMAND",
+        "MÅLMÆND",
+        "GOALKEEPER",
+        "KEEPER",
+        "DEFENSE",
+        "DEFENCE",
+        "DEFENDER",
+        "FORSVAR",
+        "FORSVARER"
+      ]);
 
-      const yesOdds = parsePositiveOdds(getRowValue(row, ["clean_sheet_yes_odds"]));
-      const noOdds = parsePositiveOdds(getRowValue(row, ["clean_sheet_no_odds"]));
-      const prob = cleanSheetProbabilityFromOdds(row);
-      if ((!yesOdds || !noOdds) && (!Number.isFinite(prob) || prob <= 0)) return null;
+      return normalizedValues.some(value => allowed.has(value));
+    }
 
-      const opponentName = teamDisplayName(matchedFixture.opponent);
-      const pctText = formatPercentOneDecimal(prob).replace(/,0\s%$/, " %");
-      const fetchedLabel = String(getRowValue(row, ["clean_sheet_fetched_label"])).trim();
-      return {
-        prob,
-        label: "Rent bur",
-        shortLabel: "Rent bur",
-        opponentName,
-        yesOdds,
-        noOdds,
-        pctText,
-        fetchedLabel,
-        text: `Rent bur næste kamp: ${pctText}`
-      };
+    function getNextCleanSheetInfo(player) {
+      try {
+        if (!player) return null;
+
+        
+        if (!isCleanSheetEligiblePlayer(player)) return null;
+const playerId = String(player.player_id || player.id || "");
+        const teamId = String(
+          player.team_id ||
+          player.country_code ||
+          player.teamCode ||
+          player.team ||
+          player.country ||
+          ""
+        ).trim();
+
+        if (!teamId) return null;
+        if (!Array.isArray(cleanSheetOddsRows) || !cleanSheetOddsRows.length) return null;
+
+        let nextMatchInfo = null;
+
+        try {
+          if (playerId && playerNextMatchInfoById && playerNextMatchInfoById.get) {
+            nextMatchInfo = playerNextMatchInfoById.get(playerId) || null;
+          }
+        } catch (_error) {}
+
+        try {
+          if (!nextMatchInfo && typeof getPlayerNextMatchInfo === "function") {
+            nextMatchInfo = getPlayerNextMatchInfo(player);
+          }
+        } catch (_error) {}
+
+        try {
+          if (!nextMatchInfo && typeof getTeamNextMatchInfo === "function") {
+            nextMatchInfo = getTeamNextMatchInfo(teamId);
+          }
+        } catch (_error) {}
+
+        const nextMatchId = String(
+          nextMatchInfo?.matchId ||
+          nextMatchInfo?.match_id ||
+          nextMatchInfo?.fixtureId ||
+          ""
+        ).trim();
+
+        const opponentId = String(
+          nextMatchInfo?.opponentId ||
+          nextMatchInfo?.opponent_id ||
+          nextMatchInfo?.opponentTeamId ||
+          ""
+        ).trim();
+
+        let rows = cleanSheetOddsRows.filter((row) => {
+          const rowTeamId = String(row.team_id || row.teamId || "").trim();
+          if (rowTeamId !== teamId) return false;
+
+          if (nextMatchId) {
+            const rowMatchId = String(row.match_id || row.matchId || "").trim();
+            if (rowMatchId && rowMatchId === nextMatchId) return true;
+          }
+
+          if (opponentId) {
+            const rowOpponentId = String(row.opponent_id || row.opponentId || "").trim();
+            if (rowOpponentId && rowOpponentId === opponentId) return true;
+          }
+
+          return false;
+        });
+
+        if (!rows.length) {
+          rows = cleanSheetOddsRows.filter((row) => {
+            const rowTeamId = String(row.team_id || row.teamId || "").trim();
+            return rowTeamId === teamId;
+          });
+        }
+
+        if (!rows.length) return null;
+
+        let row = null;
+
+        try {
+          if (typeof selectPreferredCleanSheetRow === "function") {
+            row = selectPreferredCleanSheetRow(rows);
+          }
+        } catch (_error) {}
+
+        if (!row) {
+          row = rows[0];
+        }
+        if (!row) return null;
+
+        const yesOdds = Number(
+          row.clean_sheet_yes_odds ??
+          row.yes_odds ??
+          row.clean_sheet_odds_yes ??
+          row.odds_yes
+        );
+
+        const noOdds = Number(
+          row.clean_sheet_no_odds ??
+          row.no_odds ??
+          row.clean_sheet_odds_no ??
+          row.odds_no
+        );
+
+        let pct = null;
+
+        const directProb = Number(
+          row.clean_sheet_prob ??
+          row.clean_sheet_probability ??
+          row.probability ??
+          row.pct
+        );
+
+        if (Number.isFinite(directProb) && directProb > 0) {
+          pct = directProb <= 1 ? directProb * 100 : directProb;
+        } else if (Number.isFinite(yesOdds) && yesOdds > 0 && Number.isFinite(noOdds) && noOdds > 0) {
+          const invYes = 1 / yesOdds;
+          const invNo = 1 / noOdds;
+          pct = (invYes / (invYes + invNo)) * 100;
+        }
+
+        if (!Number.isFinite(pct)) return null;
+
+        const roundedPct = Math.round(pct);
+
+        const opponentName =
+          nextMatchInfo?.displayOpponentName ||
+          nextMatchInfo?.opponentName ||
+          row.opponent_name ||
+          row.opponentName ||
+          "";
+
+        const sourceText =
+          row.odds_fetched_label ||
+          row.fetched_label ||
+          row.source ||
+          "";
+
+        return {
+          label: "Rent bur",
+          pct: roundedPct,
+          pctText: `${roundedPct} %`,
+          detailText: [opponentName ? `vs. ${opponentName}` : "", sourceText].filter(Boolean).join(" · "),
+          sourceText,
+          opponentName,
+          yesOdds: Number.isFinite(yesOdds) ? yesOdds : null,
+          noOdds: Number.isFinite(noOdds) ? noOdds : null
+        };
+      } catch (_error) {
+        return null;
+      }
     }
 
     function getCurrentSlots() {
@@ -7920,7 +8080,7 @@ function getPlayerScore(player) {
             : "";
           const priceDiffHtml = `<div class="trade-diff ${diffClass(priceDiff)}">${formatSignedMoneyDiff(priceDiff)}</div>`;
           const transferHtml = transferInfoHtml(player, currentPlayer);
-          const cleanSheetInfo = getNextCleanSheetInfo(player);
+          const cleanSheetInfo = isCleanSheetEligiblePlayer(player) ? getNextCleanSheetInfo(player) : null;
           return `
             <div class="trade-row alternative" data-player-id="${escapeHtml(player.player_id || "")}">
               <span class="alternative-rank">${index + 1}</span>
@@ -7931,7 +8091,7 @@ function getPlayerScore(player) {
                 <div class="alternative-player-name player-name" data-player-id="${escapeHtml(player.player_id || "")}" data-team-id="${escapeHtml(player.team_id || "")}">${escapeHtml(player.player_name || "Ukendt spiller")}${warning}${previousLabel}${modelLabel}</div>
                 <div class="alternative-player-meta">${escapeHtml(positionFullLabel(player.position))}</div>
                 <div class="alternative-player-opponent">${escapeHtml(nextOpponentText(player.team_id))}</div>
-                ${cleanSheetInfo ? `<div class="trade-clean-sheet">${escapeHtml(cleanSheetInfo.shortLabel + ": " + cleanSheetInfo.pctText)}</div>` : ""}
+                ${isCleanSheetEligiblePlayer(player) && cleanSheetInfo ? `<div class="trade-clean-sheet">${escapeHtml(cleanSheetInfo.shortLabel + ": " + cleanSheetInfo.pctText)}</div>` : ""}
                 <div class="alternative-bottom">
                   <div class="trade-start-col">
                     <div class="trade-start-value">${startPct(getPlayerStart(player))}</div>
