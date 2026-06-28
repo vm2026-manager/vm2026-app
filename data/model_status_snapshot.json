@@ -1,31 +1,31 @@
 {
-  "created_at": "2026-06-27T07:29:03",
+  "created_at": "2026-06-28T06:05:20",
   "assessment": {
     "best_formation": "3-5-2",
     "message": "Modellen bruger nu Holdet.dk game 616 som officiel master-player-pool. EV-filen er rebased til de officielle Holdet-spillere, og optimizer-holdene matcher appens player_pool.",
     "caveat": "Spillerfelt, startvurderinger og odds er stadig foreløbige. Kun første runde har bookmaker-odds pt.; resten bygger på modelinput."
   },
   "player_pool": {
-    "rows": 1248,
-    "official_holdet_master": 1248,
+    "rows": 1249,
+    "official_holdet_master": 1249,
     "positions": {
       "MID": 425,
       "DEF": 410,
-      "FWD": 268,
+      "FWD": 269,
       "GK": 145
     },
     "teams": 48,
     "missing_price": 0
   },
   "ev_file": {
-    "rows": 1248,
+    "rows": 1249,
     "weighted_ev_sum": 1032.5168429999999,
-    "weighted_ev_mean": 0.8273372139423076,
+    "weighted_ev_mean": 0.826674814251401,
     "weighted_ev_median": 0.653569,
     "positions": {
       "MID": 425,
       "DEF": 410,
-      "FWD": 268,
+      "FWD": 269,
       "GK": 145
     }
   },
@@ -33,58 +33,58 @@
     {
       "formation": "3-4-3",
       "status": "Optimal",
-      "adj_ev": 166.994,
+      "adj_ev": 166.985,
       "raw_ev": 17.16,
-      "price_m": 49.924
+      "price_m": 49.919
     },
     {
       "formation": "3-5-2",
       "status": "Optimal",
-      "adj_ev": 168.273,
-      "raw_ev": 17.125,
-      "price_m": 49.995
+      "adj_ev": 167.971,
+      "raw_ev": 18.726,
+      "price_m": 49.934
     },
     {
       "formation": "4-3-3",
       "status": "Optimal",
-      "adj_ev": 166.07,
+      "adj_ev": 166.052,
       "raw_ev": 17.339,
-      "price_m": 49.961
+      "price_m": 49.951
     },
     {
       "formation": "4-4-2",
       "status": "Optimal",
-      "adj_ev": 166.429,
+      "adj_ev": 166.535,
       "raw_ev": 17.779,
-      "price_m": 49.934
+      "price_m": 49.991
     },
     {
       "formation": "4-5-1",
       "status": "Optimal",
-      "adj_ev": 162.022,
+      "adj_ev": 162.013,
       "raw_ev": 18.203,
-      "price_m": 49.999
+      "price_m": 49.994
     },
     {
       "formation": "5-3-2",
       "status": "Optimal",
-      "adj_ev": 155.672,
-      "raw_ev": 13.251,
-      "price_m": 49.99
+      "adj_ev": 158.788,
+      "raw_ev": 15.546,
+      "price_m": 49.999
     },
     {
       "formation": "5-4-1",
       "status": "Optimal",
-      "adj_ev": 156.473,
-      "raw_ev": 15.48,
-      "price_m": 49.945
+      "adj_ev": 154.907,
+      "raw_ev": 15.428,
+      "price_m": 49.965
     }
   ],
   "best_squad": {
     "selected_formation": "3-5-2",
-    "squad_total_price_m": 49.995,
-    "squad_total_adj_ev": 168.273,
-    "squad_total_raw_ev": 17.125,
+    "squad_total_price_m": 49.934,
+    "squad_total_adj_ev": 167.971,
+    "squad_total_raw_ev": 18.726,
     "players": [
       {
         "player_id": "mike_maignan__fra",
@@ -99,8 +99,8 @@
         "player_name": "Gonzalo Montiel",
         "team_id": "ARG",
         "position": "DEF",
-        "price_m": 3.537,
-        "ev": 11.277458754307643
+        "price_m": 3.532,
+        "ev": 11.268208754307643
       },
       {
         "player_id": "lucas_digne__fra",
@@ -111,12 +111,12 @@
         "ev": 12.811853112599206
       },
       {
-        "player_id": "renato_veiga__por",
-        "player_name": "Renato Veiga",
-        "team_id": "POR",
+        "player_id": "timothy_castagne__bel",
+        "player_name": "Timothy Castagne",
+        "team_id": "BEL",
         "position": "DEF",
-        "price_m": 3.626,
-        "ev": 11.379303137400793
+        "price_m": 3.57,
+        "ev": 11.086697600081699
       },
       {
         "player_id": "aur_lien_tchouam_ni__fra",
