@@ -5665,9 +5665,40 @@ function saveState() {
       return getBaselineBudgetTotal();
     }
 
+    function repairManualBudgetTotalIfNeeded(manualBudgetTotal) {
+      if (manualBudgetTotal === null || manualBudgetTotal === undefined) return manualBudgetTotal;
+      if (!Number.isFinite(manualBudgetTotal) || manualBudgetTotal <= 0) return manualBudgetTotal;
+
+      const squadMarketValue = getCurrentSquadMarketValue();
+      if (!Number.isFinite(squadMarketValue) || squadMarketValue <= 0) return manualBudgetTotal;
+
+      const repairedTotal = Math.round(manualBudgetTotal * 10);
+
+      // Reparer kendt fejl: 54.828.890 blev tidligere gemt/vist som 5.482.889.
+      // Vi retter kun, når den manuelle budgetramme er umuligt lav ift. det aktuelle hold,
+      // og faktor 10 giver en realistisk budgetramme omkring holdets markedsværdi.
+      const looksLikeFactorTenBug =
+        manualBudgetTotal < squadMarketValue &&
+        repairedTotal >= squadMarketValue - 1000000 &&
+        repairedTotal <= squadMarketValue + 25000000;
+
+      if (!looksLikeFactorTenBug) return manualBudgetTotal;
+
+      manualBankMillions = repairedTotal / 1000000;
+
+      try {
+        localStorage.setItem(STORAGE_KEYS.manualBankMillions, String(manualBankMillions));
+      } catch (_error) {
+        // Ignore localStorage errors.
+      }
+
+      return repairedTotal;
+    }
+
     function getEffectiveBudgetTotal() {
       const manualBudgetTotal = getManualBankAmount();
-      return manualBudgetTotal === null ? getAutomaticBudgetTotal() : manualBudgetTotal;
+      if (manualBudgetTotal === null) return getAutomaticBudgetTotal();
+      return repairManualBudgetTotalIfNeeded(manualBudgetTotal);
     }
 
     function getFullOptimizationBudget() {
