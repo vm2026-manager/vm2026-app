@@ -3909,6 +3909,47 @@
 }
 /* ALT_CARD_META_CLEANUP_END */
 
+
+/* FAVORITE_BUTTON_HEADER_LAYOUT_FIX_START */
+.player-list-header-actions-fixed {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+
+.favorite-filter-btn.favorite-filter-btn-header {
+  width: auto !important;
+  min-width: 190px !important;
+  max-width: 240px !important;
+  height: 42px !important;
+  min-height: 42px !important;
+  margin: 0 0 0 auto !important;
+  padding: 0 16px !important;
+  flex: 0 0 auto !important;
+  align-self: center !important;
+  justify-self: auto !important;
+  white-space: nowrap !important;
+}
+
+.favorite-filter-btn.favorite-filter-btn-header + button {
+  flex: 0 0 auto !important;
+}
+
+@media (max-width: 700px) {
+  .player-list-header-actions-fixed {
+    gap: 8px !important;
+  }
+
+  .favorite-filter-btn.favorite-filter-btn-header {
+    min-width: 0 !important;
+    max-width: none !important;
+    flex: 1 1 auto !important;
+    padding: 0 10px !important;
+    font-size: 13px !important;
+  }
+}
+/* FAVORITE_BUTTON_HEADER_LAYOUT_FIX_END */
+
 </style>
 </head>
 <body>
@@ -4942,42 +4983,66 @@ function strategyDisplayName(strategyKey) {
     }
 
     function getTopNextRoundMatches() {
-      const roundFixtures = getWidgetUpcomingRoundFixtures();
-      if (!roundFixtures.length) return [];
+      const now = getNow();
+      const upcomingFixtures = (Array.isArray(fixtures) ? fixtures : [])
+        .filter(fixture => {
+          const kickoff = fixture.kickoffDate || kickoffToDate(fixture.kickoff_dk || fixture.kickoff);
+          return kickoff instanceof Date && !Number.isNaN(kickoff.getTime()) && kickoff > now;
+        })
+        .sort((a, b) => {
+          const aDate = a.kickoffDate || kickoffToDate(a.kickoff_dk || a.kickoff);
+          const bDate = b.kickoffDate || kickoffToDate(b.kickoff_dk || b.kickoff);
+          return aDate - bDate;
+        });
 
-      return roundFixtures
+      return upcomingFixtures
         .map(fixture => {
+          const fixtureMatchId = String(fixture.match_id || fixture.fixture_id || fixture.id || "").trim();
+          const fixtureHome = canonicalTeamId(fixture.home);
+          const fixtureAway = canonicalTeamId(fixture.away);
+
           const selectedRow = selectPreferredOddsRowForWidget(
-            matchOddsRows.filter(row =>
-              String(getRowValue(row, ["match_id", "fixture_id", "id"])) === String(fixture.match_id)
-            )
+            matchOddsRows.filter(row => {
+              const rowMatchId = String(getRowValue(row, ["match_id", "fixture_id", "id"])).trim();
+              const rowHome = getOddsRowTeamId(row, "home") || canonicalTeamId(getRowValue(row, ["home", "home_team", "team_home"]));
+              const rowAway = getOddsRowTeamId(row, "away") || canonicalTeamId(getRowValue(row, ["away", "away_team", "team_away"]));
+
+              return (
+                (fixtureMatchId && rowMatchId === fixtureMatchId) ||
+                (rowHome === fixtureHome && rowAway === fixtureAway)
+              );
+            })
           );
+
           if (!selectedRow) return null;
 
           const homeOdds = parseWidgetOddsNumber(getRowValue(selectedRow, ["home_win_odds"]));
           const drawOdds = parseWidgetOddsNumber(getRowValue(selectedRow, ["draw_odds"]));
           const awayOdds = parseWidgetOddsNumber(getRowValue(selectedRow, ["away_win_odds"]));
+
           if (!Number.isFinite(homeOdds) || !Number.isFinite(drawOdds) || !Number.isFinite(awayOdds)) {
             return null;
           }
 
-          const homeTeamId = getOddsRowTeamId(selectedRow, "home") || canonicalTeamId(fixture.home);
-          const awayTeamId = getOddsRowTeamId(selectedRow, "away") || canonicalTeamId(fixture.away);
+          const homeTeamId = getOddsRowTeamId(selectedRow, "home") || fixtureHome;
+          const awayTeamId = getOddsRowTeamId(selectedRow, "away") || fixtureAway;
           const favoriteIsHome = homeOdds <= awayOdds;
-          const favoriteTeamId = favoriteIsHome ? homeTeamId : awayTeamId;
-          const underdogTeamId = favoriteIsHome ? awayTeamId : homeTeamId;
 
           return {
             matchId: String(fixture.match_id || ""),
-            favoriteTeamId,
-            underdogTeamId,
+            favoriteTeamId: favoriteIsHome ? homeTeamId : awayTeamId,
+            underdogTeamId: favoriteIsHome ? awayTeamId : homeTeamId,
             favoriteOdds: favoriteIsHome ? homeOdds : awayOdds,
             drawOdds,
-            underdogOdds: favoriteIsHome ? awayOdds : homeOdds
+            underdogOdds: favoriteIsHome ? awayOdds : homeOdds,
+            kickoff: fixture.kickoff_dk || ""
           };
         })
         .filter(Boolean)
-        .sort((a, b) => a.favoriteOdds - b.favoriteOdds)
+        .sort((a, b) => {
+          if (Math.abs(a.favoriteOdds - b.favoriteOdds) > 0.0001) return a.favoriteOdds - b.favoriteOdds;
+          return String(a.kickoff || "").localeCompare(String(b.kickoff || ""));
+        })
         .slice(0, 5);
     }
 
@@ -6751,10 +6816,104 @@ function getPlayerScore(player) {
       return 0;
     }
 
+    const TOURNAMENT_ALIVE_TEAM_IDS = new Set([
+      "CAN","RSA","BRA","JPN","GER","PAR","NED","MAR","CIV","NOR","FRA","SWE",
+      "MEX","ECU","ENG","COD","BEL","SEN","USA","BIH","ESP","AUT","POR","CRO",
+      "SUI","ALG","EGY","AUS","ARG","CPV","COL","GHA"
+    ]);
+
+    function tournamentTeamId(value) {
+      const raw = String(value || "").trim();
+      if (!raw) return "";
+      try {
+        if (typeof canonicalTeamId === "function") {
+          return String(canonicalTeamId(raw) || raw).trim().toUpperCase();
+        }
+      } catch (_error) {}
+      return raw.toUpperCase();
+    }
+
+    function isTeamStillAlive(teamId) {
+      const id = tournamentTeamId(teamId);
+      if (!id) return true;
+      return TOURNAMENT_ALIVE_TEAM_IDS.has(id);
+    }
+
+    function playerTournamentTeamId(player) {
+      if (!player) return "";
+      return tournamentTeamId(
+        player.team_id ||
+        player.teamId ||
+        player.country_code ||
+        player.countryCode ||
+        player.team ||
+        player.country ||
+        player.nation ||
+        player.team_name
+      );
+    }
+
+    function isPlayerTournamentEliminated(player) {
+      if (!player) return false;
+      const teamId = playerTournamentTeamId(player);
+      if (!teamId) return false;
+      return !TOURNAMENT_ALIVE_TEAM_IDS.has(teamId);
+    }
+
+
+    function getAliveFavoritePlayerIds() {
+      try {
+        if (typeof favoritePlayerIds === "undefined" || !favoritePlayerIds) return new Set();
+
+        const aliveIds = new Set();
+        favoritePlayerIds.forEach(playerId => {
+          const player = getPlayerById(playerId);
+          if (player && !isPlayerTournamentEliminated(player)) {
+            aliveIds.add(String(playerId));
+          }
+        });
+
+        return aliveIds;
+      } catch (_error) {
+        return new Set();
+      }
+    }
+
+    function filterTeamFilterToAliveTeams() {
+      try {
+        if (!teamFilter) return;
+
+        const currentValue = String(teamFilter.value || "");
+        const options = Array.from(teamFilter.options || []);
+
+        options.forEach(option => {
+          const value = String(option.value || "").trim();
+
+          // Behold "Alle lande"/tom værdi
+          if (!value) {
+            option.hidden = false;
+            option.disabled = false;
+            return;
+          }
+
+          const alive = isTeamStillAlive(value);
+          option.hidden = !alive;
+          option.disabled = !alive;
+        });
+
+        if (currentValue && !isTeamStillAlive(currentValue)) {
+          teamFilter.value = "";
+        }
+      } catch (error) {
+        console.warn("Kunne ikke filtrere landelisten", error);
+      }
+    }
+
+
     function isPlayerUnavailable(player) {
       const isTrue = value => value === true
         || ["true", "1", "yes", "ja"].includes(String(value || "").trim().toLowerCase());
-      return isTrue(player?.holdet_is_out) || isTrue(player?.is_out);
+      return isTrue(player?.holdet_is_out) || isTrue(player?.is_out) || isPlayerTournamentEliminated(player);
     }
 
     function startPct(value) {
@@ -7927,11 +8086,13 @@ const playerId = String(player.player_id || player.id || "");
       const currentPrice = getCurrentSquadPurchasePrice(currentPlayer);
       const modelChoice = getModelChoiceForSlot(activeSlot);
       const modelChoiceId = modelChoice ? String(modelChoice.player_id) : null;
-      const baseCandidates = allPlayers.filter(player =>
-        canReplaceWith(player, currentPlayer, activeSlot, {
-          ignoreStartRequirement: modelChoiceId === String(player.player_id)
-        })
-      );
+      const baseCandidates = allPlayers
+        .filter(player => !isPlayerTournamentEliminated(player))
+        .filter(player =>
+          canReplaceWith(player, currentPlayer, activeSlot, {
+            ignoreStartRequirement: modelChoiceId === String(player.player_id)
+          })
+        );
 
       const samePrice = trimSevereGroupStageAlternatives(
         trimSevereNextRoundAlternatives(
@@ -8080,6 +8241,7 @@ const playerId = String(player.player_id || player.id || "");
             : "";
           const priceDiffHtml = `<div class="trade-diff ${diffClass(priceDiff)}">${formatSignedMoneyDiff(priceDiff)}</div>`;
           const transferHtml = transferInfoHtml(player, currentPlayer);
+          if (isPlayerTournamentEliminated(player)) return "";
           const cleanSheetInfo = isCleanSheetEligiblePlayer(player) ? getNextCleanSheetInfo(player) : null;
           return `
             <div class="trade-row alternative" data-player-id="${escapeHtml(player.player_id || "")}">
@@ -8336,6 +8498,7 @@ const playerId = String(player.player_id || player.id || "");
       const slotPosition = normalizePositionLabel(slot.positionCode || slot.position);
 
       return allPlayers
+        .filter(player => !isPlayerTournamentEliminated(player))
         .filter(player => samePosition(player.position, slotPosition))
         .filter(player => !usedIdsSet.has(String(player.player_id)))
         .filter(player => (teamCounts[playerTeamKey(player)] || 0) < MAX_PER_TEAM)
@@ -9518,7 +9681,7 @@ function updateFavoriteFilterButton() {
     favoriteOnly = false;
   }
 
-  btn.textContent = `\u2665 Favoritter (${favoritePlayerIds.size})`;
+  btn.textContent = `\u2665 Favoritter (${getAliveFavoritePlayerIds().size})`;
   btn.classList.toggle("active", !!favoriteOnly);
   btn.hidden = !isLoggedIn;
   btn.disabled = !isLoggedIn;
@@ -9548,7 +9711,7 @@ function ensureFavoriteFilterButton() {
   btn.id = "favoriteFilterBtn";
   btn.type = "button";
   btn.className = "favorite-filter-btn";
-  btn.textContent = `\u2665 Favoritter (${favoritePlayerIds.size})`;
+  btn.textContent = `\u2665 Favoritter (${getAliveFavoritePlayerIds().size})`;
 
   const eligible = document.getElementById("eligibleOnlyToggle");
   const anchor = eligible ? (eligible.closest("label") || eligible.parentElement) : null;
@@ -9720,6 +9883,7 @@ function renderTradeList() {
         const isSuspended = isSuspendedNextMatch(player);
         const rowClass = `${isDisabled ? "trade-row disabled" : "trade-row"}${isSuspended ? " suspended" : ""}`;
         const flagUrl = getFlagUrl(getPlayerFlagCode(player));
+        if (isPlayerTournamentEliminated(player)) return "";
         const nextMatchInfo = getPlayerNextMatchInfo(player);
         playerNextMatchInfoById.set(String(player.player_id), nextMatchInfo);
         const tmWatchReason = String(player.tm_watch_reason || "").trim();
@@ -9809,6 +9973,7 @@ function renderTradeList() {
       renderPitch();
       renderPlayerChangePanel();
       renderTradeList();
+      filterTeamFilterToAliveTeams();
     }
 
     async function loadFixtures() {
@@ -15582,6 +15747,86 @@ formationSelect.value = currentFormation;
   }
 }
 </style>
+
+<script id="favorite-button-header-layout-fix">
+(function () {
+  function buttonText(button) {
+    return String(button && button.textContent || "").replace(/\s+/g, " ").trim();
+  }
+
+  function findAlternativesButton() {
+    var buttons = Array.from(document.querySelectorAll("button"));
+    return buttons.find(function (button) {
+      var text = buttonText(button);
+      return text === "Se alternativer" || text.indexOf("Se alternativer") !== -1;
+    }) || null;
+  }
+
+  function moveFavoriteButtonToHeader() {
+    try {
+      var favoriteButton = document.getElementById("favoriteFilterBtn");
+      var alternativesButton = findAlternativesButton();
+
+      if (!favoriteButton || !alternativesButton || !alternativesButton.parentElement) return;
+
+      var headerRow = alternativesButton.parentElement;
+      headerRow.classList.add("player-list-header-actions-fixed");
+
+      favoriteButton.classList.add("favorite-filter-btn-header");
+
+      if (favoriteButton.parentElement !== headerRow || favoriteButton.nextElementSibling !== alternativesButton) {
+        headerRow.insertBefore(favoriteButton, alternativesButton);
+      }
+    } catch (error) {
+      console.warn("Kunne ikke flytte favoritknap til header", error);
+    }
+  }
+
+  function scheduleMoveFavoriteButtonToHeader() {
+    if (window.__favoriteHeaderMoveTimer) {
+      window.clearTimeout(window.__favoriteHeaderMoveTimer);
+    }
+    window.__favoriteHeaderMoveTimer = window.setTimeout(moveFavoriteButtonToHeader, 0);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", scheduleMoveFavoriteButtonToHeader);
+  } else {
+    scheduleMoveFavoriteButtonToHeader();
+  }
+
+  window.setTimeout(moveFavoriteButtonToHeader, 100);
+  window.setTimeout(moveFavoriteButtonToHeader, 500);
+  window.setTimeout(moveFavoriteButtonToHeader, 1200);
+
+  try {
+    if (typeof ensureFavoriteFilterButton === "function" && !ensureFavoriteFilterButton.__headerLayoutWrapped) {
+      var originalEnsureFavoriteFilterButton = ensureFavoriteFilterButton;
+      ensureFavoriteFilterButton = function () {
+        var result = originalEnsureFavoriteFilterButton.apply(this, arguments);
+        scheduleMoveFavoriteButtonToHeader();
+        return result;
+      };
+      ensureFavoriteFilterButton.__headerLayoutWrapped = true;
+    }
+  } catch (_error) {}
+
+  try {
+    if (typeof updateFavoriteFilterButton === "function" && !updateFavoriteFilterButton.__headerLayoutWrapped) {
+      var originalUpdateFavoriteFilterButton = updateFavoriteFilterButton;
+      updateFavoriteFilterButton = function () {
+        var result = originalUpdateFavoriteFilterButton.apply(this, arguments);
+        scheduleMoveFavoriteButtonToHeader();
+        return result;
+      };
+      updateFavoriteFilterButton.__headerLayoutWrapped = true;
+    }
+  } catch (_error) {}
+
+  window.moveFavoriteButtonToHeader = moveFavoriteButtonToHeader;
+}());
+</script>
+
 </body>
 </html>
 
