@@ -6945,8 +6945,30 @@ function getPlayerScore(player) {
       return getEffectiveBudgetTotal() - getSpentBudget();
     }
 
+
+    function getCurrentTransferFeeTotalSafe() {
+      try {
+        if (typeof getTransferFeeSummary === "function") {
+          const summary = getTransferFeeSummary();
+          const value = Number(summary?.totalFee ?? summary?.feeTotal ?? summary?.total ?? 0);
+          return Number.isFinite(value) ? value : 0;
+        }
+      } catch (_error) {}
+
+      try {
+        if (Array.isArray(transferChanges)) {
+          return transferChanges.reduce((sum, change) => {
+            const fee = Number(change?.fee ?? change?.transferFee ?? change?.transfer_fee ?? 0);
+            return sum + (Number.isFinite(fee) ? fee : 0);
+          }, 0);
+        }
+      } catch (_error) {}
+
+      return 0;
+    }
+
     function getDisplayedBankLeft() {
-      return getEffectiveBudgetTotal() - getCurrentSquadMarketValue();
+      return (getEffectiveBudgetTotal() - getCurrentSquadMarketValue()) - getCurrentTransferFeeTotalSafe();
     }
 
     function buildMergeKey(playerName, teamId, teamName = "") {
