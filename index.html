@@ -5629,8 +5629,12 @@ function saveState() {
 
     function formatManualBankInputValue(value) {
       if (value === null || value === undefined) return "";
+
       const amount = Math.round(Number(value) * 1000000);
-      return Number.isFinite(amount) ? formatMoney(amount) : "";
+      if (!Number.isFinite(amount)) return "";
+
+      const repairedAmount = repairManualBudgetTotalIfNeeded(amount);
+      return Number.isFinite(repairedAmount) ? formatMoney(repairedAmount) : "";
     }
 
     function getCurrentSquadMarketValue(squadObj = squad) {
@@ -5665,22 +5669,57 @@ function saveState() {
       return getBaselineBudgetTotal();
     }
 
+    function getBudgetRepairReferenceValue() {
+      const candidates = [];
+
+      try {
+        const currentMarketValue = getCurrentSquadMarketValue();
+        if (Number.isFinite(currentMarketValue) && currentMarketValue > 0) {
+          candidates.push(currentMarketValue);
+        }
+      } catch (_error) {
+        // Ignore repair helper errors.
+      }
+
+      try {
+        const spentBudget = getSpentBudget(squad, squadPurchasePrices);
+        if (Number.isFinite(spentBudget) && spentBudget > 0) {
+          candidates.push(spentBudget);
+        }
+      } catch (_error) {
+        // Ignore repair helper errors.
+      }
+
+      try {
+        if (spentValue && spentValue.textContent) {
+          const parsedMillions = parseManualBankMillions(spentValue.textContent);
+          const parsedAmount = parsedMillions === null ? null : Math.round(parsedMillions * 1000000);
+          if (Number.isFinite(parsedAmount) && parsedAmount > 0) {
+            candidates.push(parsedAmount);
+          }
+        }
+      } catch (_error) {
+        // Ignore repair helper errors.
+      }
+
+      return candidates.length ? Math.max(...candidates) : null;
+    }
+
     function repairManualBudgetTotalIfNeeded(manualBudgetTotal) {
       if (manualBudgetTotal === null || manualBudgetTotal === undefined) return manualBudgetTotal;
       if (!Number.isFinite(manualBudgetTotal) || manualBudgetTotal <= 0) return manualBudgetTotal;
 
-      const squadMarketValue = getCurrentSquadMarketValue();
-      if (!Number.isFinite(squadMarketValue) || squadMarketValue <= 0) return manualBudgetTotal;
+      const referenceValue = getBudgetRepairReferenceValue();
+      if (!Number.isFinite(referenceValue) || referenceValue <= 0) return manualBudgetTotal;
 
       const repairedTotal = Math.round(manualBudgetTotal * 10);
 
-      // Reparer kendt fejl: 54.828.890 blev tidligere gemt/vist som 5.482.889.
-      // Vi retter kun, når den manuelle budgetramme er umuligt lav ift. det aktuelle hold,
-      // og faktor 10 giver en realistisk budgetramme omkring holdets markedsværdi.
       const looksLikeFactorTenBug =
-        manualBudgetTotal < squadMarketValue &&
-        repairedTotal >= squadMarketValue - 1000000 &&
-        repairedTotal <= squadMarketValue + 25000000;
+        manualBudgetTotal < 10000000 &&
+        referenceValue > 30000000 &&
+        manualBudgetTotal < referenceValue &&
+        repairedTotal >= referenceValue - 1000000 &&
+        repairedTotal <= referenceValue + 25000000;
 
       if (!looksLikeFactorTenBug) return manualBudgetTotal;
 
