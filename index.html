@@ -6971,6 +6971,94 @@ function getPlayerScore(player) {
       return (getEffectiveBudgetTotal() - getCurrentSquadMarketValue()) - getCurrentTransferFeeTotalSafe();
     }
 
+    function getTransferFeeTotalForSquadState(squadObj = squad, purchasePriceMap = squadPurchasePrices) {
+      try {
+        if (!transferBaselineSquad || typeof transferBaselineSquad !== "object") return 0;
+        const baselineSquad = transferBaselineSquad && typeof transferBaselineSquad === "object" ? transferBaselineSquad : {};
+
+        return getCurrentSlots().reduce((sum, slot) => {
+          const slotKey = slot.key;
+          const outgoingPlayerId = baselineSquad?.[slotKey] || null;
+          const incomingPlayerId = squadObj?.[slotKey] || null;
+          if (String(outgoingPlayerId || "") === String(incomingPlayerId || "")) return sum;
+
+          const incomingPlayer = getPlayerById(incomingPlayerId);
+          if (!incomingPlayer) return sum;
+
+          const incomingLockedPrice = getPurchasePriceForSlot(slotKey, squadObj, purchasePriceMap);
+          const incomingMarketPrice = resolvePlayerPurchasePrice(incomingPlayer, { preferStartPrice: false });
+          return sum + Math.max(0, incomingLockedPrice - incomingMarketPrice);
+        }, 0);
+      } catch (_error) {
+        return 0;
+      }
+    }
+
+    function buildProjectedReplacementState(candidate, slotKey) {
+      if (!candidate || !slotKey) return null;
+
+      const previousSquad = cloneSquadState(squad);
+      const previousPurchasePrices = cloneSquadState(squadPurchasePrices);
+      const nextSquad = cloneSquadState(squad);
+      const alreadyInSquadSlot = findFilledSlotByPlayerId(candidate.player_id);
+
+      if (alreadyInSquadSlot && alreadyInSquadSlot !== slotKey) {
+        delete nextSquad[alreadyInSquadSlot];
+      }
+
+      nextSquad[slotKey] = candidate.player_id;
+
+      const nextPurchasePrices = buildPurchasePriceMapForSquad(nextSquad, previousSquad, previousPurchasePrices, {
+        preferStartPriceForNew: false
+      });
+      nextPurchasePrices[slotKey] = getTransferLockedPrice(candidate, previousSquad, previousPurchasePrices, { preferStoredPrice: true });
+
+      return { nextSquad, nextPurchasePrices };
+    }
+
+    function getReplacementAffordability(candidate, currentPlayer, activeSlot) {
+      if (!candidate || !currentPlayer || !activeSlot) {
+        return {
+          affordable: false,
+          projectedDisplayedBank: null,
+          projectedSpentBank: null,
+          extraBankNeeded: null
+        };
+      }
+
+      const projected = buildProjectedReplacementState(candidate, activeSlot.key);
+      if (!projected) {
+        return {
+          affordable: false,
+          projectedDisplayedBank: null,
+          projectedSpentBank: null,
+          extraBankNeeded: null
+        };
+      }
+
+      const projectedDisplayedBank =
+        getEffectiveBudgetTotal()
+        - getCurrentSquadMarketValue(projected.nextSquad)
+        - getTransferFeeTotalForSquadState(projected.nextSquad, projected.nextPurchasePrices);
+
+      const projectedSpentBank =
+        getEffectiveBudgetTotal()
+        - getSpentBudget(projected.nextSquad, projected.nextPurchasePrices);
+
+      const outgoingMarketPrice = resolvePlayerPurchasePrice(currentPlayer, { preferStartPrice: false });
+      const incomingMarketPrice = resolvePlayerPurchasePrice(candidate, { preferStartPrice: false });
+      const incomingLockedPrice = getPurchasePriceForSlot(activeSlot.key, projected.nextSquad, projected.nextPurchasePrices);
+      const incomingFee = Math.max(0, incomingLockedPrice - incomingMarketPrice);
+      const extraBankNeeded = Math.max(0, incomingMarketPrice + incomingFee - outgoingMarketPrice);
+
+      return {
+        affordable: projectedDisplayedBank >= 0 && projectedSpentBank >= 0,
+        projectedDisplayedBank,
+        projectedSpentBank,
+        extraBankNeeded
+      };
+    }
+
     function buildMergeKey(playerName, teamId, teamName = "") {
       const teamPart = normalizeText(teamId || teamName);
       return `${normalizeText(playerName)}||${teamPart}`;
@@ -7940,13 +8028,15 @@ const playerId = String(player.player_id || player.id || "");
         if (!activeSlot || !samePosition(activeSlot.positionCode || activeSlot.position, player.position)) return "Forkert position";
         if (!canAddMoreFromTeam(player, ignoreId)) return "Maks fra land";
 
-        const existingSpent = getSpentBudget();
-        const currentPrice = currentPlayerInSlot ? getCurrentSquadPurchasePrice(currentPlayerInSlot) : 0;
-        const projectedSpent = existingSpent - currentPrice + price;
+        const affordability = currentPlayerInSlot
+          ? getReplacementAffordability(player, currentPlayerInSlot, activeSlot)
+          : null;
 
-        if (projectedSpent > getEffectiveBudgetTotal()) {
-          const bankAfterSale = getEffectiveBudgetTotal() - (existingSpent - currentPrice);
-          return `Ikke råd (${formatMoney(bankAfterSale)} tilbage)`;
+        if (!affordability || !affordability.affordable) {
+          const bankAfterReplacement = affordability && Number.isFinite(affordability.projectedDisplayedBank)
+            ? affordability.projectedDisplayedBank
+            : getDisplayedBankLeft();
+          return `Ikke råd (${formatMoney(bankAfterReplacement)} tilbage)`;
         }
 
         return "";
@@ -8057,7 +8147,7 @@ const playerId = String(player.player_id || player.id || "");
         .some(playerId => String(playerId) === candidateId);
 
       if (isAlreadyInSquad) return false;
-      if (getTransferLockedPrice(candidate) > getAvailableForReplacement(currentPlayer)) return false;
+      if (!getReplacementAffordability(candidate, currentPlayer, activeSlot).affordable) return false;
       return canAddMoreFromTeam(candidate, currentPlayer.player_id);
     }
 
@@ -8106,6 +8196,7 @@ const playerId = String(player.player_id || player.id || "");
       }
 
       const currentPrice = getCurrentSquadPurchasePrice(currentPlayer);
+      const currentMarketPrice = resolvePlayerPurchasePrice(currentPlayer, { preferStartPrice: false });
       const modelChoice = getModelChoiceForSlot(activeSlot);
       const modelChoiceId = modelChoice ? String(modelChoice.player_id) : null;
       const baseCandidates = allPlayers
@@ -8120,7 +8211,10 @@ const playerId = String(player.player_id || player.id || "");
         trimSevereNextRoundAlternatives(
           prioritizeReplacementCandidates(
             rankReplacementCandidates(
-              baseCandidates.filter(player => getTransferLockedPrice(player) <= currentPrice),
+              baseCandidates.filter(player => {
+                const affordability = getReplacementAffordability(player, currentPlayer, activeSlot);
+                return affordability.affordable && affordability.extraBankNeeded <= 0;
+              }),
               currentPlayer
             ),
             activeSlot,
@@ -8139,7 +8233,10 @@ const playerId = String(player.player_id || player.id || "");
           prioritizeReplacementCandidates(
             rankReplacementCandidates(
               baseCandidates
-                .filter(player => getTransferLockedPrice(player) > currentPrice)
+                .filter(player => {
+                  const affordability = getReplacementAffordability(player, currentPlayer, activeSlot);
+                  return affordability.affordable && affordability.extraBankNeeded > 0;
+                })
                 .filter(player => !samePriceIds.has(String(player.player_id))),
               currentPlayer
             ),
@@ -8230,6 +8327,7 @@ const playerId = String(player.player_id || player.id || "");
       const positionLabel = positionFullLabel(currentPlayer?.position || activeSlot?.positionCode || activeSlot?.position);
       const availableForReplacement = getAvailableForReplacement(currentPlayer);
       const currentPrice = getCurrentSquadPurchasePrice(currentPlayer);
+      const currentMarketPrice = resolvePlayerPurchasePrice(currentPlayer, { preferStartPrice: false });
       const previousReplacement = previousReplacementBySlot.get(activeSlot?.key);
       const previousPlayerId = previousReplacement
         && String(previousReplacement.newPlayerId) === String(currentPlayer?.player_id)
@@ -8298,11 +8396,11 @@ const playerId = String(player.player_id || player.id || "");
       const samePriceRows = alternativeRows(alternativeGroups.samePrice);
       const rows = `
         ${alternativeGroups.withBank.length ? `
-          <div class="alternative-section-title"><strong>Med bank</strong> &middot; Op til ${formatMoney(availableForReplacement)}</div>
+          <div class="alternative-section-title"><strong>Med bank</strong> &middot; Kræver faktisk bank efter gebyr</div>
           ${withBankRows}
         ` : ""}
         ${alternativeGroups.samePrice.length ? `
-          <div class="alternative-section-title"><strong>Samme prisniveau</strong> &middot; Op til ${formatMoney(currentPrice)}</div>
+          <div class="alternative-section-title"><strong>Samme prisniveau</strong> &middot; Kan vælges uden ekstra bank</div>
           ${samePriceRows}
         ` : ""}
         ${!alternatives.length ? `
@@ -8318,7 +8416,8 @@ const playerId = String(player.player_id || player.id || "");
           <div class="alternative-chips">
             <span class="alternative-chip">Position: ${escapeHtml(positionLabel)}</span>
             <span class="alternative-chip">Nuv\u00e6rende pris: ${formatMoney(currentPrice)}</span>
-            <span class="alternative-chip">Med bank: ${formatMoney(availableForReplacement)}</span>
+            <span class="alternative-chip">Aktuel markedsværdi: ${formatMoney(currentMarketPrice)}</span>
+            <span class="alternative-chip">Faktisk bank: ${formatMoney(getDisplayedBankLeft())}</span>
           </div>
           ${captainWarning}
         </div>
@@ -8438,14 +8537,15 @@ const playerId = String(player.player_id || player.id || "");
         return;
       }
 
-      const existingSpent = getSpentBudget();
-      const currentPrice = currentPlayerInSlot ? getCurrentSquadPurchasePrice(currentPlayerInSlot) : 0;
-      const newPrice = getTransferLockedPrice(player);
-      const projectedSpent = existingSpent - currentPrice + newPrice;
+      const affordability = currentPlayerInSlot
+        ? getReplacementAffordability(player, currentPlayerInSlot, slot)
+        : null;
 
-      if (projectedSpent > getEffectiveBudgetTotal()) {
-        const bankAfterSale = getEffectiveBudgetTotal() - (existingSpent - currentPrice);
-        showStatus(`Ikke nok i banken til dette køb. Du har ${formatMoney(bankAfterSale)} til rådighed for denne plads.`, "error");
+      if (currentPlayerInSlot && (!affordability || !affordability.affordable)) {
+        const bankAfterReplacement = affordability && Number.isFinite(affordability.projectedDisplayedBank)
+          ? affordability.projectedDisplayedBank
+          : getDisplayedBankLeft();
+        showStatus(`Ikke nok i banken til dette køb. Du har ${formatMoney(bankAfterReplacement)} tilbage efter gebyr for denne plads.`, "error");
         return;
       }
 
