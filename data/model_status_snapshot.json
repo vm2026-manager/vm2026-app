@@ -1,146 +1,138 @@
 {
-  "created_at": "2026-06-28T06:05:20",
+  "created_at": "2026-07-01T17:08:04",
   "assessment": {
-    "best_formation": "3-5-2",
+    "best_formation": "3-4-3",
     "message": "Modellen bruger nu Holdet.dk game 616 som officiel master-player-pool. EV-filen er rebased til de officielle Holdet-spillere, og optimizer-holdene matcher appens player_pool.",
     "caveat": "Spillerfelt, startvurderinger og odds er stadig foreløbige. Kun første runde har bookmaker-odds pt.; resten bygger på modelinput."
   },
   "player_pool": {
-    "rows": 1249,
-    "official_holdet_master": 1249,
+    "rows": 650,
+    "official_holdet_master": 650,
     "positions": {
-      "MID": 425,
-      "DEF": 410,
-      "FWD": 269,
-      "GK": 145
+      "MID": 219,
+      "DEF": 210,
+      "FWD": 145,
+      "GK": 76
     },
-    "teams": 48,
+    "teams": 25,
     "missing_price": 0
   },
   "ev_file": {
-    "rows": 1249,
-    "weighted_ev_sum": 1032.5168429999999,
-    "weighted_ev_mean": 0.826674814251401,
-    "weighted_ev_median": 0.653569,
+    "rows": 650,
+    "weighted_ev_sum": 625.008434,
+    "weighted_ev_mean": 0.9615514369230769,
+    "weighted_ev_median": 0.863461,
     "positions": {
-      "MID": 425,
-      "DEF": 410,
-      "FWD": 269,
-      "GK": 145
+      "MID": 219,
+      "DEF": 210,
+      "FWD": 145,
+      "GK": 76
     }
   },
   "formations": [
     {
       "formation": "3-4-3",
       "status": "Optimal",
-      "adj_ev": 166.985,
-      "raw_ev": 17.16,
-      "price_m": 49.919
+      "adj_ev": 152.355,
+      "raw_ev": 17.012,
+      "price_m": 49.918
     },
     {
       "formation": "3-5-2",
       "status": "Optimal",
-      "adj_ev": 167.971,
-      "raw_ev": 18.726,
-      "price_m": 49.934
+      "adj_ev": 150.596,
+      "raw_ev": 21.862,
+      "price_m": 49.986
     },
     {
       "formation": "4-3-3",
       "status": "Optimal",
-      "adj_ev": 166.052,
-      "raw_ev": 17.339,
-      "price_m": 49.951
+      "adj_ev": 151.635,
+      "raw_ev": 17.957,
+      "price_m": 49.993
     },
     {
       "formation": "4-4-2",
       "status": "Optimal",
-      "adj_ev": 166.535,
-      "raw_ev": 17.779,
-      "price_m": 49.991
+      "adj_ev": 150.618,
+      "raw_ev": 20.213,
+      "price_m": 49.962
     },
     {
       "formation": "4-5-1",
       "status": "Optimal",
-      "adj_ev": 162.013,
-      "raw_ev": 18.203,
-      "price_m": 49.994
+      "adj_ev": 149.806,
+      "raw_ev": 17.533,
+      "price_m": 49.988
     },
     {
       "formation": "5-3-2",
       "status": "Optimal",
-      "adj_ev": 158.788,
-      "raw_ev": 15.546,
-      "price_m": 49.999
+      "adj_ev": 144.009,
+      "raw_ev": 18.393,
+      "price_m": 49.973
     },
     {
       "formation": "5-4-1",
       "status": "Optimal",
-      "adj_ev": 154.907,
-      "raw_ev": 15.428,
-      "price_m": 49.965
+      "adj_ev": 142.528,
+      "raw_ev": 13.565,
+      "price_m": 49.97
     }
   ],
   "best_squad": {
-    "selected_formation": "3-5-2",
-    "squad_total_price_m": 49.934,
-    "squad_total_adj_ev": 167.971,
-    "squad_total_raw_ev": 18.726,
+    "selected_formation": "3-4-3",
+    "squad_total_price_m": 49.918,
+    "squad_total_adj_ev": 152.355,
+    "squad_total_raw_ev": 17.012,
     "players": [
       {
-        "player_id": "mike_maignan__fra",
-        "player_name": "Mike Maignan",
-        "team_id": "FRA",
+        "player_id": "david_raya__esp",
+        "player_name": "David Raya",
+        "team_id": "ESP",
         "position": "GK",
-        "price_m": 5.38,
-        "ev": 17.746603112599207
+        "price_m": 4.985,
+        "ev": 16.739401442307692
       },
       {
-        "player_id": "gonzalo_montiel__arg",
-        "player_name": "Gonzalo Montiel",
-        "team_id": "ARG",
-        "position": "DEF",
-        "price_m": 3.532,
-        "ev": 11.268208754307643
-      },
-      {
-        "player_id": "lucas_digne__fra",
-        "player_name": "Lucas Digne",
+        "player_id": "ibrahima_konat__fra",
+        "player_name": "Ibrahima Konate",
         "team_id": "FRA",
         "position": "DEF",
-        "price_m": 3.602,
-        "ev": 12.811853112599206
+        "price_m": 3.027,
+        "ev": 9.234553112599208
       },
       {
-        "player_id": "timothy_castagne__bel",
-        "player_name": "Timothy Castagne",
-        "team_id": "BEL",
-        "position": "DEF",
-        "price_m": 3.57,
-        "ev": 11.086697600081699
-      },
-      {
-        "player_id": "aur_lien_tchouam_ni__fra",
-        "player_name": "Aurelien Tchouameni",
+        "player_id": "lucas_hern_ndez__fra",
+        "player_name": "Lucas Hernandez",
         "team_id": "FRA",
-        "position": "MID",
-        "price_m": 3.653,
-        "ev": 13.164528038194444
+        "position": "DEF",
+        "price_m": 2.98,
+        "ev": 7.313303112599207
       },
       {
-        "player_id": "casemiro__bra",
-        "player_name": "Casemiro",
-        "team_id": "BRA",
+        "player_id": "max_arfsten__usa",
+        "player_name": "Max Arfsten",
+        "team_id": "USA",
+        "position": "DEF",
+        "price_m": 2.985,
+        "ev": 5.901232937248202
+      },
+      {
+        "player_id": "jordan_henderson__eng",
+        "player_name": "Jordan Henderson",
+        "team_id": "ENG",
         "position": "MID",
-        "price_m": 4.618,
-        "ev": 15.844783891369048
+        "price_m": 3.522,
+        "ev": 11.40799672809829
       },
       {
         "player_id": "manu_kon__fra",
         "player_name": "Manu Koné",
         "team_id": "FRA",
         "position": "MID",
-        "price_m": 3.631,
-        "ev": 13.130228038194442
+        "price_m": 3.626,
+        "ev": 13.120978038194444
       },
       {
         "player_id": "mart_n_zubimendi__esp",
@@ -151,12 +143,12 @@
         "ev": 14.62131875
       },
       {
-        "player_id": "mikel_merino__esp",
-        "player_name": "Mikel Merino",
-        "team_id": "ESP",
+        "player_id": "n_golo_kant__fra",
+        "player_name": "N'Golo Kante",
+        "team_id": "FRA",
         "position": "MID",
-        "price_m": 4.596,
-        "ev": 15.88286875
+        "price_m": 2.98,
+        "ev": 8.014178038194444
       },
       {
         "player_id": "lamine_yamal__esp",
@@ -173,6 +165,14 @@
         "position": "FWD",
         "price_m": 4.576,
         "ev": 16.91486875
+      },
+      {
+        "player_id": "vinicius_j_nior__bra",
+        "player_name": "Vinicius Junior",
+        "team_id": "BRA",
+        "position": "FWD",
+        "price_m": 8.461,
+        "ev": 23.388433891369047
       }
     ]
   }
