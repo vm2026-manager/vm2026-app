@@ -5060,6 +5060,26 @@ function strategyDisplayName(strategyKey) {
       };
     }
 
+    function getActiveKnockoutRoundConfig() {
+      const currentWindowLabel = typeof getTransferWindowLabel === "function"
+        ? getTransferWindowLabel()
+        : "";
+
+      if (currentWindowLabel === ROUND_OF_16_TRANSFER_WINDOW_LABEL) {
+        return {
+          windowLabel: currentWindowLabel,
+          stageLabel: "R16",
+          targetRound: 4,
+          targetRoundLabel: "Ottendedelsfinaler",
+          nextRoundDisplayName: "Næste kamp (ottendedelsfinaler)",
+          minMatchId: 89,
+          maxMatchId: 96
+        };
+      }
+
+      return null;
+    }
+
     function isOddsRowInLowestOddsRound(row, roundConfig = getLowestOddsRoundConfig()) {
       if (!row || !roundConfig) return false;
       const stage = String(getRowValue(row, ["stage", "round", "phase"]) || "")
@@ -7384,9 +7404,52 @@ function getPlayerScore(player) {
       });
     }
 
+    function getUpcomingOddsOnlyFixtureForTeam(teamId) {
+      const canonicalTeam = canonicalTeamId(teamId);
+      if (!canonicalTeam || !Array.isArray(matchOddsRows) || !matchOddsRows.length) return null;
+
+      const activeKnockoutRound = getActiveKnockoutRoundConfig();
+      if (!activeKnockoutRound) return null;
+
+      const candidateRows = matchOddsRows.filter(row => {
+        if (!isOddsRowInLowestOddsRound(row, activeKnockoutRound)) return false;
+        const homeTeamId = getOddsRowTeamId(row, "home") || canonicalTeamId(getRowValue(row, ["home", "home_team", "team_home"]));
+        const awayTeamId = getOddsRowTeamId(row, "away") || canonicalTeamId(getRowValue(row, ["away", "away_team", "team_away"]));
+        return homeTeamId === canonicalTeam || awayTeamId === canonicalTeam;
+      });
+
+      const selectedRow = selectPreferredOddsRow(candidateRows);
+      if (!selectedRow) return null;
+
+      const homeTeamId = getOddsRowTeamId(selectedRow, "home") || canonicalTeamId(getRowValue(selectedRow, ["home", "home_team", "team_home"]));
+      const awayTeamId = getOddsRowTeamId(selectedRow, "away") || canonicalTeamId(getRowValue(selectedRow, ["away", "away_team", "team_away"]));
+      if (!homeTeamId || !awayTeamId) return null;
+
+      const isHome = homeTeamId === canonicalTeam;
+      const opponent = canonicalTeamId(isHome ? awayTeamId : homeTeamId);
+      if (!opponent) return null;
+
+      const kickoffText = String(getRowValue(selectedRow, ["kickoff_dk", "kickoff"]) || "").trim();
+      const kickoffDate = kickoffText ? kickoffToDate(kickoffText) : null;
+
+      return {
+        opponent,
+        isHome,
+        home: homeTeamId,
+        away: awayTeamId,
+        match_id: String(getRowValue(selectedRow, ["match_id", "fixture_id", "id"]) || "").trim(),
+        kickoff: kickoffText,
+        kickoffDate: kickoffDate instanceof Date && !Number.isNaN(kickoffDate.getTime()) ? kickoffDate : null,
+        stage: String(getRowValue(selectedRow, ["stage"]) || activeKnockoutRound.stageLabel || "").trim(),
+        source: String(getRowValue(selectedRow, ["source"]) || "").trim(),
+        oddsFetchedLabel: String(getRowValue(selectedRow, ["odds_fetched_label", "oddsFetchedLabel"]) || "").trim()
+      };
+    }
+
     function getNextFixtureForTeam(teamId) {
       const upcomingFixtures = getUpcomingFixturesForTeam(teamId, 1);
-      return upcomingFixtures.length ? upcomingFixtures[0] : null;
+      if (upcomingFixtures.length) return upcomingFixtures[0];
+      return getUpcomingOddsOnlyFixtureForTeam(teamId);
     }
 
     function getTeamNextMatchInfo(teamId) {
@@ -11014,6 +11077,33 @@ function renderTradeList() {
       }
     }
 
+    function synchronizeStrategyContextToCurrentWindow() {
+      const activeKnockoutRound = getActiveKnockoutRoundConfig();
+      if (!activeKnockoutRound) return;
+
+      const relevantRows = (Array.isArray(matchOddsRows) ? matchOddsRows : [])
+        .filter(row => isOddsRowInLowestOddsRound(row, activeKnockoutRound));
+
+      const kickoffDates = relevantRows
+        .map(row => kickoffToDate(getRowValue(row, ["kickoff_dk", "kickoff"])))
+        .filter(date => date instanceof Date && !Number.isNaN(date.getTime()))
+        .sort((a, b) => a.getTime() - b.getTime());
+
+      const firstKickoff = kickoffDates[0] || null;
+      const lastKickoff = kickoffDates[kickoffDates.length - 1] || null;
+
+      strategyContext = {
+        ...(strategyContext && typeof strategyContext === "object" ? strategyContext : {}),
+        current_time_dk: getNow().toISOString(),
+        target_round: activeKnockoutRound.targetRound,
+        target_round_label: activeKnockoutRound.targetRoundLabel,
+        next_round_display_name: activeKnockoutRound.nextRoundDisplayName,
+        remaining_matches_in_target_round: relevantRows.length,
+        first_kickoff_in_target_round: firstKickoff ? firstKickoff.toISOString() : "",
+        last_kickoff_in_target_round: lastKickoff ? lastKickoff.toISOString() : ""
+      };
+    }
+
     async function loadManualOverrides() {
       try {
         const response = await fetchWithCacheBust(MANUAL_OVERRIDES_URL);
@@ -11791,6 +11881,7 @@ formationSelect.value = currentFormation;
         }
 
         allPlayers = attachStartSecurity(players, startMap);
+        synchronizeStrategyContextToCurrentWindow();
         applyPendingRemoteSquadStateIfReady();
 
         cleanSquadForCurrentFormation();

@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-20T13:35:00+02:00",
-  "current_time_dk": "2026-06-20T13:35:00+02:00",
-  "target_round": 2,
-  "target_round_label": "runde 2",
-  "next_round_display_name": "Næste runde (runde 2)",
-  "remaining_matches_in_target_round": 16,
-  "first_kickoff_in_target_round": "2026-06-20T19:00+02:00",
-  "last_kickoff_in_target_round": "2026-06-24T04:00+02:00"
+  "generated_at": "2026-07-02T22:00:00+02:00",
+  "current_time_dk": "2026-07-02T22:00:00+02:00",
+  "target_round": 4,
+  "target_round_label": "Ottendedelsfinaler",
+  "next_round_display_name": "Næste kamp (ottendedelsfinaler)",
+  "remaining_matches_in_target_round": 5,
+  "first_kickoff_in_target_round": "2026-07-01T19:00:00+02:00",
+  "last_kickoff_in_target_round": "2026-07-04T02:00:00+02:00"
 }
