@@ -73,3 +73,9 @@ match_id,home,away,team_id,clean_sheet_yes_odds,clean_sheet_no_odds,source,clean
 87,,,SUI,2.10,1.65,Unibet/Oddset.dk,,,,R32,,Schweiz,ALG,Algeriet,2026-07-03 05:00,2.10,1.65,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
 88,,,COL,2.00,1.73,Unibet/Oddset.dk,,,,R32,,Colombia,GHA,Ghana,2026-07-04 03:30,2.00,1.73,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
 88,,,GHA,3.65,1.25,Unibet/Oddset.dk,,,,R32,,Ghana,COL,Colombia,2026-07-04 03:30,3.65,1.25,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
+,BRA,NOR,BRA,2.45,1.49,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,,Brasilien,NOR,Norge,,2.45,1.49,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27
+,NOR,BRA,NOR,4.00,1.20,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,,Norge,BRA,Brasilien,,4.00,1.20,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27
+,PAR,FRA,PAR,8.00,1.05,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,,Paraguay,FRA,Frankrig,,8.00,1.05,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28
+,FRA,PAR,FRA,1.54,2.30,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,,Frankrig,PAR,Paraguay,,1.54,2.30,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28
+,CAN,MAR,CAN,3.75,1.23,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,,Canada,MAR,Marokko,,3.75,1.23,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28
+,MAR,CAN,MAR,2.05,1.69,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,,Marokko,CAN,Canada,,2.05,1.69,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28

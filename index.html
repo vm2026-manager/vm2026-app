@@ -3994,6 +3994,15 @@
             </div>
           </div>
 
+          <div id="mobileHoldMainCard" class="mobile-hold-main-card" aria-hidden="true">
+            <div id="mobileEconomySlot" class="mobile-economy-slot"></div>
+            <div id="mobileControlsSlot" class="mobile-controls-slot"></div>
+            <div id="mobileStrategySlot" class="mobile-strategy-slot"></div>
+            <div id="mobilePitchSlot" class="mobile-pitch-slot"></div>
+            <div id="mobilePitchActionTray" class="mobile-pitch-action-tray"></div>
+            <div id="mobileActionsCardSlot" class="mobile-actions-card-slot"></div>
+          </div>
+
           <div class="mobile-hold-toolbar" id="mobileHoldToolbar" aria-label="Mobil holdkontroller">
             <div class="mobile-hold-toolbar-top">
               <div id="mobileHoldFormationSlot" class="mobile-hold-formation-slot"></div>
@@ -4288,6 +4297,7 @@ setTimeout(removeDataStatusBox, 250);
     const MATCH_ODDS_PROBS_URL = "data/match_odds_probs.csv";
     const KNOCKOUT_MATCH_ODDS_PROBS_URL = "data/knockout_match_odds_probs.csv";
     const CLEAN_SHEET_ODDS_URL = "data/clean_sheet_odds.csv";
+    const SCORER_ODDS_URL = "data/scorer_odds.csv";
     const PLAYER_SUSPENSIONS_URL = "data/player_suspensions.csv";
     const MODEL_STATUS_URL = "data/model_status_snapshot.json";
     const APP_AUDIT_URL = "data/audit_app_data_consistency.json";
@@ -4405,6 +4415,10 @@ async function fetchCsvRows(url, errorLabel, optional = false) {
     let playerNextMatchInfoById = new Map();
     let cleanSheetOddsRows = [];
     let cleanSheetOddsByMatchTeam = new Map();
+    let scorerOddsRows = [];
+    let scorerOddsByPlayerId = new Map();
+    let scorerOddsByNameTeam = new Map();
+    let scorerOddsLoadPromise = null;
     let modelStatus = null;
     let appAudit = null;
     let dataFreshness = null;
@@ -4470,6 +4484,7 @@ async function fetchCsvRows(url, errorLabel, optional = false) {
     const optimizerLoadingOverlay = document.getElementById("optimizerLoadingOverlay");
     const optimizerLoadingDetail = document.getElementById("optimizerLoadingDetail");
     const cancelOptimizerBtn = document.getElementById("cancelOptimizerBtn");
+    const mobilePitchActionTray = document.getElementById("mobilePitchActionTray");
     const fillMissingButtonText = fillMissingBtn.textContent;
     let optimizerIsBusy = false;
     let activeAutofillWorker = null;
@@ -7592,6 +7607,12 @@ function getPlayerScore(player) {
       return num;
     }
 
+    function formatOddsValue(value) {
+      const num = parsePositiveOdds(value);
+      if (!num) return "-";
+      return num.toFixed(2).replace(".", ",");
+    }
+
     function cleanSheetProbabilityFromOdds(row) {
       if (!row) return null;
       const yesOdds = parsePositiveOdds(getRowValue(row, ["clean_sheet_yes_odds"]));
@@ -7676,6 +7697,52 @@ function getPlayerScore(player) {
         "DEFENDER",
         "FORSVAR",
         "FORSVARER"
+      ]);
+
+      return normalizedValues.some(value => allowed.has(value));
+    }
+
+    function isScorerEligiblePlayer(player) {
+      if (!player) return false;
+
+      const rawValues = [
+        player.position,
+        player.position_code,
+        player.positionCode,
+        player.position_raw,
+        player.positionRaw,
+        player.holdet_position,
+        player.holdetPosition
+      ]
+        .filter(value => value !== null && value !== undefined)
+        .map(value => String(value).trim())
+        .filter(Boolean);
+
+      const normalizedValues = [];
+
+      for (const value of rawValues) {
+        normalizedValues.push(value.toUpperCase());
+
+        try {
+          if (typeof normalizePositionLabel === "function") {
+            normalizedValues.push(String(normalizePositionLabel(value) || "").trim().toUpperCase());
+          }
+        } catch (_error) {
+          // Ignore normalization errors.
+        }
+      }
+
+      const allowed = new Set([
+        "MID",
+        "FWD",
+        "MIDTBANE",
+        "MIDTBANESPILLER",
+        "MIDFIELDER",
+        "ANG",
+        "ANGRIBER",
+        "FORWARD",
+        "STRIKER",
+        "ATTACKER"
       ]);
 
       return normalizedValues.some(value => allowed.has(value));
@@ -7823,10 +7890,13 @@ const playerId = String(player.player_id || player.id || "");
 
         return {
           label: "Rent bur",
+          shortLabel: "Rent bur",
           pct: roundedPct,
           pctText: `${roundedPct} %`,
+          valueText: `${roundedPct} %`,
           detailText: [opponentName ? `vs. ${opponentName}` : "", sourceText].filter(Boolean).join(" · "),
           sourceText,
+          fetchedLabel: sourceText,
           opponentName,
           yesOdds: Number.isFinite(yesOdds) ? yesOdds : null,
           noOdds: Number.isFinite(noOdds) ? noOdds : null
@@ -7834,6 +7904,190 @@ const playerId = String(player.player_id || player.id || "");
       } catch (_error) {
         return null;
       }
+    }
+
+    function parseScorerSnapshotTime(row) {
+      const rawAt = String(getRowValue(row || {}, ["scorer_fetched_at"])).trim();
+      if (rawAt) {
+        const parsedAt = Date.parse(rawAt);
+        if (Number.isFinite(parsedAt)) return parsedAt;
+      }
+
+      const rawLabel = String(getRowValue(row || {}, ["scorer_fetched_label"])).trim();
+      const match = rawLabel.match(/(\d{2})\.(\d{2}).*?(\d{2}):(\d{2})/i);
+      if (match) {
+        const parsedLabel = new Date(
+          2026,
+          Number(match[2]) - 1,
+          Number(match[1]),
+          Number(match[3]),
+          Number(match[4])
+        ).getTime();
+        if (Number.isFinite(parsedLabel)) return parsedLabel;
+      }
+      return 0;
+    }
+
+    function selectPreferredScorerRow(rowsForPlayer) {
+      if (!Array.isArray(rowsForPlayer) || !rowsForPlayer.length) return null;
+      return rowsForPlayer.slice().sort((a, b) => {
+        const aTime = parseScorerSnapshotTime(a);
+        const bTime = parseScorerSnapshotTime(b);
+        if (aTime !== bTime) return bTime - aTime;
+        return 0;
+      })[0] || null;
+    }
+
+    function scorerPlayerIdKey(value) {
+      return String(value || "").trim().toLowerCase();
+    }
+
+    function scorerNameTeamKey(playerName, teamId, teamName = "") {
+      return buildMergeKey(playerName, canonicalTeamId(teamId || teamName), teamName);
+    }
+
+    async function ensureScorerOddsLoaded() {
+      if (Array.isArray(scorerOddsRows) && scorerOddsRows.length) return scorerOddsRows;
+      if (scorerOddsLoadPromise) return scorerOddsLoadPromise;
+      scorerOddsLoadPromise = loadScorerOdds()
+        .catch(() => [])
+        .finally(() => {
+          scorerOddsLoadPromise = null;
+        });
+      return scorerOddsLoadPromise;
+    }
+
+    function getNextScorerInfo(player) {
+      try {
+        if (!player) return null;
+        if (!isScorerEligiblePlayer(player)) return null;
+
+        const playerId = scorerPlayerIdKey(player.player_id || player.id || "");
+        const teamId = canonicalTeamId(
+          player.team_id ||
+          player.country_code ||
+          player.teamCode ||
+          player.team ||
+          player.country ||
+          ""
+        ).trim();
+
+        const nameTeamKey = scorerNameTeamKey(player.player_name, teamId, player.team_name || player.team);
+        const normalizedPlayerName = normalizeName(player.player_name || "");
+        if (!playerId && !normalizedPlayerName) return null;
+        if (!Array.isArray(scorerOddsRows) || !scorerOddsRows.length) return null;
+
+        let nextMatchInfo = null;
+
+        try {
+          if (playerNextMatchInfoById && playerNextMatchInfoById.get) {
+            nextMatchInfo = playerNextMatchInfoById.get(playerId) || null;
+          }
+        } catch (_error) {}
+
+        try {
+          if (!nextMatchInfo && typeof getPlayerNextMatchInfo === "function") {
+            nextMatchInfo = getPlayerNextMatchInfo(player);
+          }
+        } catch (_error) {}
+
+        const nextMatchId = String(
+          nextMatchInfo?.matchId ||
+          nextMatchInfo?.match_id ||
+          nextMatchInfo?.fixtureId ||
+          ""
+        ).trim();
+
+        const opponentId = String(
+          nextMatchInfo?.opponentId ||
+          nextMatchInfo?.opponent_id ||
+          nextMatchInfo?.opponentTeamId ||
+          ""
+        ).trim();
+
+        let candidateRows = scorerOddsRows.filter((row) => {
+          const rowPlayerId = scorerPlayerIdKey(row.player_id || row.playerId || "");
+          return !!playerId && rowPlayerId === playerId;
+        });
+
+        if (!candidateRows.length && nameTeamKey && scorerOddsByNameTeam.has(nameTeamKey)) {
+          candidateRows = scorerOddsByNameTeam.get(nameTeamKey) || [];
+        }
+
+        if (!candidateRows.length && normalizedPlayerName) {
+          candidateRows = scorerOddsRows.filter((row) => {
+            const rowName = normalizeName(row.player_name || row.playerName || "");
+            const rowTeamId = canonicalTeamId(row.team_id || row.team || row.team_code || row.teamCode || "");
+            if (rowName !== normalizedPlayerName) return false;
+            if (teamId && rowTeamId) return rowTeamId === teamId;
+            return true;
+          });
+        }
+
+        if (!candidateRows.length) return null;
+
+        let rows = candidateRows.filter((row) => {
+          const rowMatchId = String(row.match_id || row.matchId || "").trim();
+          const rowOpponentId = canonicalTeamId(row.opponent_id || row.opponentId || row.opponent_team_id || row.opponent);
+
+          if (nextMatchId && rowMatchId) {
+            return rowMatchId === nextMatchId;
+          }
+
+          if (opponentId && rowOpponentId) {
+            return rowOpponentId === opponentId;
+          }
+
+          return false;
+        });
+
+        if (!rows.length) {
+          rows = candidateRows.slice();
+        }
+
+        if (!rows.length) return null;
+
+        const row = selectPreferredScorerRow(rows) || rows[0];
+        if (!row) return null;
+
+        const scorerOdds = parsePositiveOdds(
+          getRowValue(row, ["scorer_odds", "anytime_scorer_odds", "odds"])
+        );
+        if (!scorerOdds) return null;
+
+        const opponentName =
+          nextMatchInfo?.displayOpponentName ||
+          nextMatchInfo?.opponentName ||
+          row.opponent_name ||
+          row.opponentName ||
+          "";
+
+        const fetchedLabel =
+          row.scorer_fetched_label ||
+          row.fetched_label ||
+          row.source ||
+          "";
+
+        return {
+          label: "Scorer i kampen",
+          shortLabel: "Scorer",
+          odds: scorerOdds,
+          oddsText: formatOddsValue(scorerOdds),
+          valueText: formatOddsValue(scorerOdds),
+          detailText: [opponentName ? `vs. ${opponentName}` : "", fetchedLabel].filter(Boolean).join(" · "),
+          sourceText: fetchedLabel,
+          fetchedLabel,
+          opponentName
+        };
+      } catch (_error) {
+        return null;
+      }
+    }
+
+    function getPlayerSupplementalOddsInfo(player) {
+      if (isCleanSheetEligiblePlayer(player)) return getNextCleanSheetInfo(player);
+      if (isScorerEligiblePlayer(player)) return getNextScorerInfo(player);
+      return null;
     }
 
     function getCurrentSlots() {
@@ -8394,7 +8648,7 @@ const playerId = String(player.player_id || player.id || "");
           const priceDiffHtml = `<div class="trade-diff ${diffClass(priceDiff)}">${formatSignedMoneyDiff(priceDiff)}</div>`;
           const transferHtml = transferInfoHtml(player, currentPlayer);
           if (isPlayerTournamentEliminated(player)) return "";
-          const cleanSheetInfo = isCleanSheetEligiblePlayer(player) ? getNextCleanSheetInfo(player) : null;
+          const supplementalOddsInfo = getPlayerSupplementalOddsInfo(player);
           return `
             <div class="trade-row alternative" data-player-id="${escapeHtml(player.player_id || "")}">
               <span class="alternative-rank">${index + 1}</span>
@@ -8405,7 +8659,7 @@ const playerId = String(player.player_id || player.id || "");
                 <div class="alternative-player-name player-name" data-player-id="${escapeHtml(player.player_id || "")}" data-team-id="${escapeHtml(player.team_id || "")}">${escapeHtml(player.player_name || "Ukendt spiller")}${warning}${previousLabel}${modelLabel}</div>
                 <div class="alternative-player-meta">${escapeHtml(positionFullLabel(player.position))}</div>
                 <div class="alternative-player-opponent">${escapeHtml(nextOpponentText(player.team_id))}</div>
-                ${isCleanSheetEligiblePlayer(player) && cleanSheetInfo ? `<div class="trade-clean-sheet">${escapeHtml(cleanSheetInfo.shortLabel + ": " + cleanSheetInfo.pctText)}</div>` : ""}
+                ${supplementalOddsInfo ? `<div class="trade-clean-sheet">${escapeHtml(supplementalOddsInfo.shortLabel + ": " + supplementalOddsInfo.valueText)}</div>` : ""}
                 <div class="alternative-bottom">
                   <div class="trade-start-col">
                     <div class="trade-start-value">${startPct(getPlayerStart(player))}</div>
@@ -8467,6 +8721,74 @@ const playerId = String(player.player_id || player.id || "");
       }
 
       render();
+    }
+
+    function removePlayerFromSlot(slotKey) {
+      const playerId = squad[slotKey];
+      if (!playerId) return;
+      pushHistory();
+      if (String(captainPlayerId || "") === String(playerId)) {
+        captainPlayerId = null;
+      }
+      delete squad[slotKey];
+      delete squadPurchasePrices[slotKey];
+      previousReplacementBySlot.delete(slotKey);
+      saveState();
+      render();
+      clearStatus();
+      scheduleAutosave();
+    }
+
+    function renderMobilePitchActionTray() {
+      if (!mobilePitchActionTray) return;
+      const isMobileHoldView = shouldUseMobilePitchCoordinates();
+      if (!isMobileHoldView) {
+        mobilePitchActionTray.innerHTML = "";
+        mobilePitchActionTray.hidden = true;
+        return;
+      }
+
+      const slot = activeSlotKey ? getCurrentSlots().find(item => item.key === activeSlotKey) : null;
+      const player = slot ? getPlayerById(squad[slot.key]) : null;
+      const label = player
+        ? `${player.player_name} · ${formatMobilePitchPrice(getPlayerPrice(player))}`
+        : slot
+          ? `${positionFullLabel(slot.positionCode || slot.position)} · Tom plads`
+          : "Tryk på en spiller eller tom plads for at vælge handling";
+
+      mobilePitchActionTray.hidden = false;
+      mobilePitchActionTray.innerHTML = `
+        <div class="mobile-pitch-action-card ${slot ? "has-selection" : ""}">
+          <div class="mobile-pitch-action-label">${escapeHtml(label)}</div>
+          <div class="mobile-pitch-action-buttons">
+            ${slot ? `
+              <button type="button" class="mobile-pitch-action-btn primary" data-mobile-pitch-action="open-players" data-slot-key="${escapeHtml(slot.key)}">
+                ${player ? "Skift spiller" : "Vælg spiller"}
+              </button>
+              ${player ? `<button type="button" class="mobile-pitch-action-btn secondary" data-mobile-pitch-action="remove" data-slot-key="${escapeHtml(slot.key)}">Fjern</button>` : ""}
+            ` : `
+              <button type="button" class="mobile-pitch-action-btn primary" data-mobile-pitch-action="open-players">Se spillere</button>
+            `}
+          </div>
+        </div>
+      `;
+
+      mobilePitchActionTray.querySelectorAll("[data-mobile-pitch-action]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const action = btn.dataset.mobilePitchAction;
+          const slotKey = btn.dataset.slotKey || null;
+          if (action === "remove" && slotKey) {
+            removePlayerFromSlot(slotKey);
+            return;
+          }
+          if (action === "open-players") {
+            if (slotKey) {
+              setActiveSlot(slotKey);
+            }
+            document.getElementById("mobileOpenPlayersBtn")?.click();
+          }
+        });
+      });
     }
 
     function renderActiveSlotBadge() {
@@ -9547,10 +9869,10 @@ function getMobilePitchXPositions(count) {
 
 function getMobilePitchY(positionCode) {
   const code = normalizePositionLabel(positionCode || "");
-  if (code === "GK") return 10;
-  if (code === "DEF") return 31;
-  if (code === "MID") return 56;
-  if (code === "FWD") return 82;
+  if (code === "GK") return 11;
+  if (code === "DEF") return 30;
+  if (code === "MID") return 57;
+  if (code === "FWD") return 85;
   return 50;
 }
 
@@ -9583,11 +9905,133 @@ function getRenderSlots() {
 
   return slots.map(slot => byKey.get(slot.key) || slot);
 }
+
+function getMobilePitchPlayerName(playerName) {
+  const name = String(playerName || "").trim();
+  if (!name) return "";
+  const parts = name.split(/\s+/).filter(Boolean);
+  if (parts.length === 1) {
+    return parts[0].length > 10 ? `${parts[0].slice(0, 9)}…` : parts[0];
+  }
+  const firstInitial = `${parts[0].charAt(0)}.`;
+  const lastName = parts[parts.length - 1];
+  const compactLastName = lastName.length > 9 ? `${lastName.slice(0, 8)}…` : lastName;
+  return `${firstInitial} ${compactLastName}`;
+}
+
+function formatMobilePitchPrice(value) {
+  const amount = Number(value || 0);
+  if (!Number.isFinite(amount) || amount <= 0) return "";
+  const millions = amount / 1000000;
+  const decimals = millions >= 10 ? 1 : 2;
+  return `${millions.toFixed(decimals).replace(".", ",")}m`;
+}
+
+function getMobileSlotPositionLabel(slot) {
+  const code = normalizePositionLabel(slot?.positionCode || slot?.position || "");
+  if (code === "GK") return "Mål";
+  if (code === "DEF") return "Fors";
+  if (code === "MID") return "Mid";
+  if (code === "FWD") return "Ang";
+  return "Tom";
+}
+
+function getMobileFormationRowLabel(positionCode) {
+  const code = normalizePositionLabel(positionCode || "");
+  if (code === "GK") return "Mål";
+  if (code === "DEF") return "Forsvar";
+  if (code === "MID") return "Midtbane";
+  if (code === "FWD") return "Angreb";
+  return "";
+}
+
+function renderMobileFormationCard(slot, player, isActive) {
+  const flagUrl = player ? getFlagUrl(getPlayerFlagCode(player)) : "";
+  const isSuspended = player ? isSuspendedNextMatch(player) : false;
+  const displayName = player ? getMobilePitchPlayerName(player.player_name) : getMobileSlotPositionLabel(slot);
+  const displayPrice = player ? formatMobilePitchPrice(getPlayerPrice(player)) : "";
+  const captainArmband = player && isCaptainPlayer(player)
+    ? `<span class="pitch-captain-armband" title="Kaptajn" aria-label="Kaptajn">C</span>`
+    : "";
+  const positionHint = getMobileSlotPositionLabel(slot);
+  const ariaLabel = player
+    ? `${player.player_name}, ${displayPrice}. Tryk for handlinger.`
+    : `${positionHint}. Tryk for at vælge spiller.`;
+
+  return `
+    <div class="mobile-slot-card ${player ? "filled" : "empty"} ${isActive ? "active" : ""}">
+      <button type="button" class="mobile-slot-hit ${isSuspended ? "is-suspended" : ""}" data-slot-key="${slot.key}" data-filled="${player ? "1" : "0"}" aria-label="${escapeHtml(ariaLabel)}">
+        <div class="mobile-slot-avatar ${player ? "filled" : "empty"}">
+          ${player ? `
+            ${captainArmband}
+            ${flagUrl
+              ? `<img class="flag-img" src="${flagUrl}" alt="${escapeHtml(teamDisplayName(player.team_id, player.team_name))}">`
+              : `<span class="mobile-slot-avatar-code">${escapeHtml(teamShortLabel(player.team_id, slot.positionCode) || positionHint)}</span>`}
+          ` : `
+            <span class="mobile-slot-avatar-plus">+</span>
+          `}
+        </div>
+        <div class="mobile-slot-chip ${player ? "filled" : "empty"} ${isActive ? "active" : ""}">
+          ${player ? `
+            <div class="player-name">${escapeHtml(displayName)}</div>
+            <div class="player-price">${escapeHtml(displayPrice)}</div>
+          ` : `
+            <div class="player-name">${escapeHtml(displayName)}</div>
+            <div class="player-price">Vælg</div>
+          `}
+        </div>
+      </button>
+    </div>
+  `;
+}
 /* MOBILE_PITCH_COORDINATES_V3_JS_END */
 
 
     function renderPitch() {
-      const slots = getRenderSlots();
+      const useCompactMobilePitch = shouldUseMobilePitchCoordinates();
+      const slots = useCompactMobilePitch ? getCurrentSlots() : getRenderSlots();
+
+      if (useCompactMobilePitch) {
+        const rows = [
+          { code: "GK", className: "gk", slots: slots.filter(slot => normalizePositionLabel(slot.positionCode || slot.position) === "GK") },
+          { code: "DEF", className: "def", slots: slots.filter(slot => normalizePositionLabel(slot.positionCode || slot.position) === "DEF") },
+          { code: "MID", className: "mid", slots: slots.filter(slot => normalizePositionLabel(slot.positionCode || slot.position) === "MID") },
+          { code: "FWD", className: "fwd", slots: slots.filter(slot => normalizePositionLabel(slot.positionCode || slot.position) === "FWD") }
+        ].filter(row => row.slots.length);
+
+        const boardHtml = rows.map(row => `
+          <div class="mobile-formation-row-group mobile-formation-row-group-${row.className}">
+            <div class="mobile-formation-row-label">${escapeHtml(getMobileFormationRowLabel(row.code))}</div>
+            <div class="mobile-formation-row mobile-formation-row-${row.className}" style="--row-count:${row.slots.length}; --row-card-max:${row.slots.length >= 5 ? 52 : row.slots.length === 4 ? 62 : row.slots.length === 3 ? 76 : row.slots.length === 2 ? 92 : 108}px; grid-template-columns:repeat(${row.slots.length}, minmax(0, 1fr));">
+              ${row.slots.map(slot => {
+                const player = getPlayerById(squad[slot.key]);
+                const isActive = activeSlotKey === slot.key;
+                return renderMobileFormationCard(slot, player, isActive);
+              }).join("")}
+            </div>
+          </div>
+        `).join("");
+
+        pitch.innerHTML = `
+          <div class="pitch-half"></div>
+          <div class="pitch-circle"></div>
+          <div class="pitch-penalty-top"></div>
+          <div class="pitch-penalty-bottom"></div>
+          <div class="pitch-goal-top"></div>
+          <div class="pitch-goal-bottom"></div>
+          <div class="mobile-formation-board">
+            ${boardHtml}
+          </div>
+        `;
+
+        pitch.querySelectorAll(".mobile-slot-hit").forEach(btn => {
+          const slotKey = btn.dataset.slotKey;
+          btn.addEventListener("click", () => {
+            setActiveSlot(slotKey);
+          });
+        });
+        return;
+      }
 
       const slotHtml = slots.map(slot => {
         const player = getPlayerById(squad[slot.key]);
@@ -9595,8 +10039,34 @@ function getRenderSlots() {
         const isActive = activeSlotKey === slot.key ? "active" : "";
         const opponentText = player ? nextOpponentText(player.team_id) : "";
         const isSuspended = player ? isSuspendedNextMatch(player) : false;
+        const displayName = player
+          ? (useCompactMobilePitch ? getMobilePitchPlayerName(player.player_name) : player.player_name)
+          : slot.position;
+        const displayPrice = player
+          ? (useCompactMobilePitch ? formatMobilePitchPrice(getPlayerPrice(player)) : formatMoney(getPlayerPrice(player)))
+          : "";
         const captainArmband = player && isCaptainPlayer(player)
           ? `<span class="pitch-captain-armband" title="Kaptajn" aria-label="Kaptajn">C</span>`
+          : "";
+        const inlineMobileActions = useCompactMobilePitch
+          ? `
+              <div class="slot-actions mobile-inline-slot-actions">
+                <button class="slot-btn ${player ? "remove" : ""}" data-slot-key="${slot.key}" data-action="${player ? "remove" : "select"}">
+                  ${player ? "Ud" : "Vælg"}
+                </button>
+                ${player ? `<button class="slot-btn" data-slot-key="${slot.key}" data-action="replace">Ny</button>` : ""}
+              </div>
+            `
+          : "";
+        const defaultSlotActions = !useCompactMobilePitch
+          ? `
+              <div class="slot-actions">
+                <button class="slot-btn ${player ? "remove" : ""}" data-slot-key="${slot.key}" data-action="${player ? "remove" : "select"}">
+                  ${player ? "Fjern" : "Vælg"}
+                </button>
+                ${player ? `<button class="slot-btn" data-slot-key="${slot.key}" data-action="replace">Skift</button>` : ""}
+              </div>
+            `
           : "";
 
         return `
@@ -9612,22 +10082,20 @@ function getRenderSlots() {
                   </div>
                 </div>
                 ${playerBadges(player)}
-                <div class="player-name">${escapeHtml(player.player_name)}</div>
-                <div class="player-price">${formatMoney(getPlayerPrice(player))}</div>
+                <div class="player-name">${escapeHtml(displayName)}</div>
+                <div class="player-price">${escapeHtml(displayPrice)}</div>
                 ${opponentText ? `<div class="player-opponent">${escapeHtml(opponentText)}</div>` : ""}
                 ${isSuspended ? `<div class="pitch-player-suspension-line">Ude næste kamp</div>` : ""}
+                ${inlineMobileActions}
               </div>
             ` : `
-              <div class="player-figure empty"></div>
-              <div class="player-name">${slot.position}</div>
-              <div class="player-price">Tom plads</div>
+              <div class="pitch-player-card pitch-empty-card">
+                <div class="player-figure empty"></div>
+                <div class="player-name">${escapeHtml(displayName)}</div>
+                ${useCompactMobilePitch ? inlineMobileActions : (displayPrice ? `<div class="player-price">${displayPrice}</div>` : "")}
+              </div>
             `}
-            <div class="slot-actions">
-              <button class="slot-btn ${player ? "remove" : ""}" data-slot-key="${slot.key}" data-action="${player ? "remove" : "select"}">
-                ${player ? "Fjern" : "Vælg"}
-              </button>
-              ${player ? `<button class="slot-btn" data-slot-key="${slot.key}" data-action="replace">Skift</button>` : ""}
-            </div>
+            ${defaultSlotActions}
           </div>
         `;
       }).join("");
@@ -9648,20 +10116,7 @@ function getRenderSlots() {
 
         btn.addEventListener("click", () => {
           if (action === "remove") {
-            const playerId = squad[slotKey];
-            if (playerId) {
-              pushHistory();
-              if (String(captainPlayerId || "") === String(playerId)) {
-                captainPlayerId = null;
-              }
-              delete squad[slotKey];
-              delete squadPurchasePrices[slotKey];
-              previousReplacementBySlot.delete(slotKey);
-              saveState();
-              render();
-              clearStatus();
-              scheduleAutosave();
-            }
+            removePlayerFromSlot(slotKey);
           } else if (action === "replace" || action === "select") {
             setActiveSlot(slotKey);
           }
@@ -9993,6 +10448,12 @@ function renderTradeList() {
         players = players.filter(player => samePosition(player.position, position));
       }
 
+      if ((!Array.isArray(scorerOddsRows) || !scorerOddsRows.length) && players.some(isScorerEligiblePlayer)) {
+        ensureScorerOddsLoaded().then(() => {
+          if (typeof renderTradeList === "function") renderTradeList();
+        }).catch(() => {});
+      }
+
       const usedPlayerIds = new Set(Object.values(squad).filter(Boolean).map(String));
 
       // Keep already-selected players visible in the list/search.
@@ -10044,6 +10505,7 @@ function renderTradeList() {
         if (isPlayerTournamentEliminated(player)) return "";
         const nextMatchInfo = getPlayerNextMatchInfo(player);
         playerNextMatchInfoById.set(String(player.player_id), nextMatchInfo);
+        const supplementalOddsInfo = getPlayerSupplementalOddsInfo(player);
         const tmWatchReason = String(player.tm_watch_reason || "").trim();
         const tmWarning = shouldShowTmWarning(player) ? `<div class="trade-tm-warning">TM: usikker starter</div>` : "";
         const suspensionHtml = isSuspended ? `<div class="trade-suspension-flag">⛔ Karantæne</div>` : "";
@@ -10061,6 +10523,7 @@ function renderTradeList() {
                 <div class="trade-name">${player.player_name || "Ukendt spiller"}</div>
               </div>
               <div class="trade-next">${escapeHtml(nextMatchInfo.displayOpponentName || "")}</div>
+              ${supplementalOddsInfo ? `<div class="trade-clean-sheet">${escapeHtml(supplementalOddsInfo.shortLabel + ": " + supplementalOddsInfo.valueText)}</div>` : ""}
               ${suspensionHtml}
               ${tmWarning}
             </div>
@@ -10129,6 +10592,7 @@ function renderTradeList() {
       renderActiveSlotBadge();
       renderSuspensionBanner();
       renderPitch();
+      renderMobilePitchActionTray();
       renderPlayerChangePanel();
       renderTradeList();
       filterTeamFilterToAliveTeams();
@@ -10191,6 +10655,51 @@ function renderTradeList() {
         cleanSheetOddsRows = [];
         cleanSheetOddsByMatchTeam = new Map();
         console.warn("Clean sheet odds kunne ikke hentes", error);
+      }
+    }
+
+    async function loadScorerOdds() {
+      try {
+        const response = await fetchWithCacheBust(SCORER_ODDS_URL);
+        if (!response.ok) throw new Error(`Kunne ikke hente scorer odds: ${response.status}`);
+
+        const text = await response.text();
+        scorerOddsRows = parseCsv(text);
+        scorerOddsByPlayerId = new Map();
+        scorerOddsByNameTeam = new Map();
+
+        scorerOddsRows.forEach((row) => {
+          const normalizedRow = {
+            ...row,
+            player_id: scorerPlayerIdKey(row.player_id || row.playerId || ""),
+            team_id: canonicalTeamId(row.team_id || row.team || row.team_code || row.teamCode || ""),
+            opponent_id: canonicalTeamId(row.opponent_id || row.opponent || row.opponent_team_id || row.opponentTeamId || "")
+          };
+
+          if (normalizedRow.player_id) {
+            const existingRows = scorerOddsByPlayerId.get(normalizedRow.player_id) || [];
+            existingRows.push(normalizedRow);
+            scorerOddsByPlayerId.set(normalizedRow.player_id, existingRows);
+          }
+
+          const key = scorerNameTeamKey(
+            normalizedRow.player_name || row.player_name || row.playerName || "",
+            normalizedRow.team_id,
+            normalizedRow.team_name || row.team_name || row.teamName || row.team || ""
+          );
+          if (key) {
+            const existingRows = scorerOddsByNameTeam.get(key) || [];
+            existingRows.push(normalizedRow);
+            scorerOddsByNameTeam.set(key, existingRows);
+          }
+        });
+        return scorerOddsRows;
+      } catch (error) {
+        scorerOddsRows = [];
+        scorerOddsByPlayerId = new Map();
+        scorerOddsByNameTeam = new Map();
+        console.warn("Scorer odds kunne ikke hentes", error);
+        return [];
       }
     }
 
@@ -11101,6 +11610,7 @@ formationSelect.value = currentFormation;
           loadCurrentSquadOwnership(),
           loadMatchOddsProbs(),
           loadCleanSheetOdds(),
+          loadScorerOdds(),
           loadPlayerSuspensions(),
           loadDataStatus()
         ]);
@@ -11659,12 +12169,14 @@ formationSelect.value = currentFormation;
     function html(player, fixtures) {
       var title = fixtures.length === 1 ? "N\u00e6ste kamp" : "N\u00e6ste " + fixtures.length + " kampe";
       var source = fixtures.find(function (f) { return f.source; });
-      var cleanSheetInfo = null;
+      var supplementalOddsInfo = null;
       try {
-        cleanSheetInfo = typeof getNextCleanSheetInfo === "function" ? getNextCleanSheetInfo(player) : null;
+        supplementalOddsInfo = typeof getPlayerSupplementalOddsInfo === "function"
+          ? getPlayerSupplementalOddsInfo(player)
+          : null;
       } catch (error) {
-        console.warn("Clean sheet tooltip springes over", error);
-        cleanSheetInfo = null;
+        console.warn("Supplemental odds tooltip springes over", error);
+        supplementalOddsInfo = null;
       }
       var sourceText = source ? source.source : "odds";
       if (source && source.oddsFetchedLabel) {
@@ -11672,6 +12184,18 @@ formationSelect.value = currentFormation;
       }
 
       if (!fixtures.length) {
+        if (supplementalOddsInfo) {
+          return '<div class="vm-fixture-tooltip-head">' +
+              '<span>' + esc(supplementalOddsInfo.label) + '</span>' +
+            '</div>' +
+            '<div class="vm-fixture-tooltip-clean-sheet">' +
+              '<div class="vm-fixture-tooltip-clean-sheet-copy">' +
+                '<div class="vm-fixture-tooltip-clean-sheet-label">' + esc(supplementalOddsInfo.label) + '</div>' +
+                '<div class="vm-fixture-tooltip-clean-sheet-subline">' + esc(supplementalOddsInfo.detailText || "") + '</div>' +
+              '</div>' +
+              '<div class="vm-fixture-tooltip-clean-sheet-value">' + esc(supplementalOddsInfo.valueText) + '</div>' +
+            '</div>';
+        }
         return '<div class="vm-fixture-tooltip-head"><span>Ingen kommende kampe</span></div>' +
           '<div class="vm-fixture-tooltip-empty">Ingen kommende kampe fundet.</div>';
       }
@@ -11696,15 +12220,25 @@ formationSelect.value = currentFormation;
           "<thead><tr><th>Modstander</th><th>Sejr</th><th>U</th><th>Tab</th></tr></thead>" +
           "<tbody>" + rows + "</tbody>" +
         "</table>" +
-        (cleanSheetInfo
+        (supplementalOddsInfo
           ? '<div class="vm-fixture-tooltip-clean-sheet">' +
               '<div class="vm-fixture-tooltip-clean-sheet-copy">' +
-                '<div class="vm-fixture-tooltip-clean-sheet-label">' + esc(cleanSheetInfo.label) + '</div>' +
-                '<div class="vm-fixture-tooltip-clean-sheet-subline">vs. ' + esc(cleanSheetInfo.opponentName) + (cleanSheetInfo.fetchedLabel ? ' · ' + esc(cleanSheetInfo.fetchedLabel) : '') + '</div>' +
+                '<div class="vm-fixture-tooltip-clean-sheet-label">' + esc(supplementalOddsInfo.label) + '</div>' +
+                '<div class="vm-fixture-tooltip-clean-sheet-subline">' + esc(supplementalOddsInfo.detailText || "") + '</div>' +
               '</div>' +
-              '<div class="vm-fixture-tooltip-clean-sheet-value">' + esc(cleanSheetInfo.pctText) + '</div>' +
+              '<div class="vm-fixture-tooltip-clean-sheet-value">' + esc(supplementalOddsInfo.valueText) + '</div>' +
             '</div>'
           : '');
+    }
+
+    function renderTooltipContent(player, fixtures) {
+      try {
+        return html(player, Array.isArray(fixtures) ? fixtures : []);
+      } catch (error) {
+        console.warn("Tooltip html fallback", error);
+        return '<div class="vm-fixture-tooltip-head"><span>Ingen kommende kampe</span></div>' +
+          '<div class="vm-fixture-tooltip-empty">Ingen kommende kampe fundet.</div>';
+      }
     }
 
     function fixturesFromNextMatchInfo(nextMatchInfo) {
@@ -11739,6 +12273,12 @@ formationSelect.value = currentFormation;
       placeTooltip(card);
 
       try {
+        if (isScorerEligiblePlayer(player)) {
+          try {
+            await ensureScorerOddsLoaded();
+          } catch (_scorerLoadError) {}
+        }
+
         var nextMatchInfo = null;
         try {
           nextMatchInfo = playerNextMatchInfoById.get(String(player.player_id || "")) || null;
@@ -11754,13 +12294,12 @@ formationSelect.value = currentFormation;
           : await fixturesFor(player);
         if (activeCard !== card) return;
 
-        el.innerHTML = html(player, Array.isArray(fixtures) ? fixtures : []);
+        el.innerHTML = renderTooltipContent(player, fixtures);
         placeTooltip(card);
       } catch (error) {
         console.warn("Tooltip show fallback", error);
         if (activeCard !== card) return;
-        el.innerHTML = '<div class="vm-fixture-tooltip-head"><span>Ingen kommende kampe</span></div>' +
-          '<div class="vm-fixture-tooltip-empty">Ingen kommende kampe fundet.</div>';
+        el.innerHTML = renderTooltipContent(player, []);
         placeTooltip(card);
       }
     }
@@ -13410,7 +13949,7 @@ formationSelect.value = currentFormation;
     border-radius: 9px !important;
   }
 
-  .pitch {
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .pitch {
     width: 100% !important;
     max-width: 100% !important;
     height: 600px !important;
@@ -13421,11 +13960,11 @@ formationSelect.value = currentFormation;
     border-radius: 14px !important;
   }
 
-  .slot,
-  .player-slot,
-  .squad-slot,
-  .field-slot,
-  .mobile-pitch-player-slot {
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .slot,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .player-slot,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .squad-slot,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .field-slot,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .mobile-pitch-player-slot {
     width: 68px !important;
     min-width: 68px !important;
     max-width: 68px !important;
@@ -13434,10 +13973,10 @@ formationSelect.value = currentFormation;
     box-sizing: border-box !important;
   }
 
-  .player-card,
-  .slot-card,
-  .squad-card,
-  .mobile-pitch-player-card {
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .player-card,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .slot-card,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .squad-card,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .mobile-pitch-player-card {
     width: 64px !important;
     min-width: 64px !important;
     max-width: 64px !important;
@@ -13448,31 +13987,31 @@ formationSelect.value = currentFormation;
     text-align: center !important;
   }
 
-  .player-card img,
-  .slot-card img,
-  .squad-card img,
-  .mobile-pitch-player-card img,
-  .player-card .flag,
-  .slot-card .flag,
-  .squad-card .flag,
-  .mobile-pitch-player-card .flag,
-  .player-flag {
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .player-card img,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .slot-card img,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .squad-card img,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .mobile-pitch-player-card img,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .player-card .flag,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .slot-card .flag,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .squad-card .flag,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .mobile-pitch-player-card .flag,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .player-flag {
     width: 25px !important;
     height: 18px !important;
     max-width: 25px !important;
     max-height: 18px !important;
   }
 
-  .player-card strong,
-  .player-card b,
-  .slot-card strong,
-  .slot-card b,
-  .squad-card strong,
-  .squad-card b,
-  .mobile-pitch-player-card strong,
-  .mobile-pitch-player-card b,
-  .player-name,
-  .name {
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .player-card strong,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .player-card b,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .slot-card strong,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .slot-card b,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .squad-card strong,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .squad-card b,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .mobile-pitch-player-card strong,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .mobile-pitch-player-card b,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .player-name,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .name {
     max-width: 58px !important;
     font-size: 7.4px !important;
     line-height: 0.95 !important;
@@ -13481,18 +14020,18 @@ formationSelect.value = currentFormation;
     text-overflow: ellipsis !important;
   }
 
-  .player-card,
-  .slot-card,
-  .squad-card,
-  .mobile-pitch-player-card {
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .player-card,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .slot-card,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .squad-card,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .mobile-pitch-player-card {
     font-size: 7.2px !important;
     line-height: 0.95 !important;
   }
 
-  .player-next,
-  .player-start,
-  .slot .player-next,
-  .mobile-pitch-player-card .player-next {
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .player-next,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .player-start,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .slot .player-next,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .mobile-pitch-player-card .player-next {
     max-width: 58px !important;
     font-size: 6.8px !important;
     line-height: 0.95 !important;
@@ -13501,9 +14040,9 @@ formationSelect.value = currentFormation;
     text-overflow: ellipsis !important;
   }
 
-  .slot-actions,
-  .player-actions,
-  .mobile-pitch-player-slot .slot-actions {
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .slot-actions,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .player-actions,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .mobile-pitch-player-slot .slot-actions {
     display: flex !important;
     justify-content: center !important;
     gap: 2px !important;
@@ -13511,11 +14050,11 @@ formationSelect.value = currentFormation;
     max-width: 68px !important;
   }
 
-  .slot button,
-  .player-slot button,
-  .squad-slot button,
-  .field-slot button,
-  .mobile-pitch-player-slot button {
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .slot button,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .player-slot button,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .squad-slot button,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .field-slot button,
+  body[data-mobile-view]:not([data-mobile-view="hold"]) .mobile-pitch-player-slot button {
     min-width: 28px !important;
     width: 28px !important;
     max-width: 28px !important;
@@ -17559,13 +18098,12 @@ formationSelect.value = currentFormation;
   }
 
   body[data-mobile-view="hold"] .team-header {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: minmax(0, 1fr) auto !important;
     grid-template-areas:
-      "title"
-      "auth"
-      "cards" !important;
-    gap: 8px !important;
-    padding: 12px 14px 0 !important;
+      "title auth"
+      "cards cards" !important;
+    gap: 8px 10px !important;
+    padding: 14px 12px 0 !important;
     position: relative !important;
   }
 
@@ -17600,37 +18138,44 @@ formationSelect.value = currentFormation;
   }
 
   body[data-mobile-view="hold"] .team-title {
-    font-size: 18px !important;
+    font-size: 17px !important;
     line-height: 1 !important;
   }
 
   body[data-mobile-view="hold"] .mobile-global-auth-slot {
     grid-area: auth !important;
     margin-bottom: 0 !important;
-    justify-content: flex-start !important;
+    justify-content: flex-end !important;
+    align-self: start !important;
   }
 
   body[data-mobile-view="hold"] .mobile-global-auth-slot .topbar-auth {
-    gap: 7px !important;
-    flex-wrap: wrap !important;
-    justify-content: flex-start !important;
-    width: 100% !important;
+    gap: 6px !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-end !important;
+    width: auto !important;
   }
 
   body[data-mobile-view="hold"] .mobile-global-auth-slot .topbar-user,
   body[data-mobile-view="hold"] .mobile-global-auth-slot .topbar-btn {
-    min-height: 36px !important;
-    border-radius: 16px !important;
+    min-height: 34px !important;
+    border-radius: 14px !important;
     font-size: 11px !important;
   }
 
   body[data-mobile-view="hold"] .mobile-global-auth-slot .topbar-user {
     padding: 8px 10px !important;
+    max-width: 34vw !important;
   }
 
   body[data-mobile-view="hold"] .bank-row {
+    grid-area: cards !important;
+    background: rgba(255,255,255,0.96) !important;
+    border-radius: 28px 28px 0 0 !important;
+    padding: 12px !important;
     margin-top: 8px !important;
     gap: 8px !important;
+    box-shadow: 0 16px 34px rgba(21, 38, 12, 0.14) !important;
   }
 
   body[data-mobile-view="hold"] .bank-box,
@@ -17642,7 +18187,9 @@ formationSelect.value = currentFormation;
     flex-direction: column !important;
     justify-content: center !important;
     gap: 4px !important;
-    box-shadow: 0 8px 20px rgba(24, 44, 11, 0.08) !important;
+    background: #ffffff !important;
+    border: 1px solid rgba(15, 23, 42, 0.08) !important;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05) !important;
   }
 
   body[data-mobile-view="hold"] .bank-box strong,
@@ -17672,9 +18219,11 @@ formationSelect.value = currentFormation;
     display: grid !important;
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
     gap: 8px !important;
-    margin: 10px 0 0 !important;
-    padding: 12px !important;
-    border-radius: 24px 24px 0 0 !important;
+    margin: 0 !important;
+    padding: 8px 12px 0 !important;
+    border-radius: 0 !important;
+    background: rgba(255,255,255,0.96) !important;
+    box-shadow: 0 0 0 transparent !important;
   }
 
   body[data-mobile-view="hold"] .formation-select-wrap {
@@ -17716,9 +18265,11 @@ formationSelect.value = currentFormation;
   }
 
   body[data-mobile-view="hold"] #strategyPanel {
-    margin-top: -2px !important;
-    padding: 4px 12px 12px !important;
-    border-radius: 0 0 24px 24px !important;
+    margin-top: 0 !important;
+    padding: 8px 12px 12px !important;
+    background: rgba(255,255,255,0.96) !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
   }
 
   body[data-mobile-view="hold"] .strategy-content {
@@ -17757,11 +18308,17 @@ formationSelect.value = currentFormation;
   }
 
   body[data-mobile-view="hold"] .pitch {
+    background-color: #86c13c !important;
     height: 316px !important;
     min-height: 316px !important;
-    margin-top: 10px !important;
+    margin-top: 0 !important;
     padding: 10px 8px 8px !important;
     border-radius: 26px !important;
+    box-shadow: none !important;
+  }
+
+  body[data-mobile-view="hold"] #pitch {
+    border-top: 0 !important;
   }
 
   body[data-mobile-view="hold"] .slot {
@@ -17831,7 +18388,11 @@ formationSelect.value = currentFormation;
   }
 
   body[data-mobile-view="hold"] .mobile-hold-actions-slot {
-    margin-top: 12px !important;
+    margin-top: 0 !important;
+    padding: 12px 12px calc(18px + env(safe-area-inset-bottom, 0px)) !important;
+    background: rgba(255,255,255,0.96) !important;
+    border-radius: 0 0 28px 28px !important;
+    box-shadow: 0 18px 36px rgba(21, 38, 12, 0.14) !important;
   }
 
   body[data-mobile-view="hold"] .mobile-hold-actions-slot .action-buttons {
@@ -17863,7 +18424,7 @@ formationSelect.value = currentFormation;
   }
 
   body[data-mobile-view="hold"] .team-header {
-    padding: 10px 10px 0 !important;
+    padding: 12px 10px 0 !important;
   }
 
   body[data-mobile-view="hold"] .team-header > :first-child {
@@ -17877,7 +18438,7 @@ formationSelect.value = currentFormation;
   }
 
   body[data-mobile-view="hold"] .mobile-global-auth-slot .topbar-user {
-    max-width: none !important;
+    max-width: 30vw !important;
   }
 
   body[data-mobile-view="hold"] .mobile-global-auth-slot .topbar-btn,
@@ -17947,12 +18508,623 @@ formationSelect.value = currentFormation;
   }
 }
 
+@media (max-width: 700px) {
+  body[data-mobile-view] #mobileHoldMainCard {
+    display: none !important;
+  }
+
+  body[data-mobile-view="hold"] #mobileHoldMainCard {
+    display: block !important;
+    margin: 10px 10px 0 !important;
+    padding: 10px 10px 24px !important;
+    border-radius: 30px !important;
+    background: rgba(255, 255, 255, 0.97) !important;
+    box-shadow: 0 18px 40px rgba(20, 37, 10, 0.16) !important;
+    overflow: hidden !important;
+  }
+
+  body[data-mobile-view="hold"] .team-header {
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 10px 10px 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  body[data-mobile-view="hold"] .team-header > :first-child {
+    min-height: 38px !important;
+    padding-left: 46px !important;
+    min-width: 0 !important;
+    position: relative !important;
+    z-index: 1 !important;
+  }
+
+  body[data-mobile-view="hold"] .team-header > :first-child::before {
+    width: 36px !important;
+    height: 36px !important;
+    top: 1px !important;
+    font-size: 20px !important;
+  }
+
+  body[data-mobile-view="hold"] .app-name {
+    font-size: 12px !important;
+    margin-bottom: 0 !important;
+  }
+
+  body[data-mobile-view="hold"] .team-title {
+    font-size: 16px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-global-auth-slot {
+    position: relative !important;
+    z-index: 5 !important;
+    pointer-events: auto !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-global-auth-slot .topbar-auth {
+    gap: 6px !important;
+    position: relative !important;
+    z-index: 6 !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-global-auth-slot .topbar-user,
+  body[data-mobile-view="hold"] .mobile-global-auth-slot .topbar-btn {
+    min-height: 32px !important;
+    padding: 7px 10px !important;
+    border-radius: 13px !important;
+    font-size: 11px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-global-auth-slot .topbar-user,
+  body[data-mobile-view="hold"] .mobile-global-auth-slot .topbar-btn,
+  body[data-mobile-view="hold"] .mobile-global-auth-slot #openLoginBtn,
+  body[data-mobile-view="hold"] .mobile-global-auth-slot #openSignupBtn,
+  body[data-mobile-view="hold"] .mobile-global-auth-slot #logoutBtn {
+    position: relative !important;
+    z-index: 7 !important;
+    pointer-events: auto !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-global-auth-slot .topbar-user {
+    max-width: 33vw !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-economy-slot .bank-row {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 6px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-economy-slot .bank-box,
+  body[data-mobile-view="hold"] .mobile-economy-slot .manual-budget-box {
+    min-height: 58px !important;
+    padding: 9px 11px !important;
+    border-radius: 18px !important;
+    background: #ffffff !important;
+    border: 1px solid rgba(15, 23, 42, 0.08) !important;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05) !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-economy-slot .bank-box strong,
+  body[data-mobile-view="hold"] .mobile-economy-slot .manual-budget-box strong {
+    font-size: 10px !important;
+    color: #4b5563 !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-economy-slot .bank-box > div:last-child {
+    font-size: 12px !important;
+    font-weight: 900 !important;
+    line-height: 1.15 !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-economy-slot .manual-bank-input {
+    height: 22px !important;
+    padding: 0 !important;
+    font-size: 12px !important;
+    font-weight: 900 !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-controls-slot {
+    margin-top: 8px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-controls-slot .mobile-hold-toolbar {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 6px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-controls-slot .mobile-hold-toolbar-top,
+  body[data-mobile-view="hold"] .mobile-controls-slot .mobile-hold-toolbar-bottom {
+    display: contents !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-controls-slot .formation-select-wrap,
+  body[data-mobile-view="hold"] .mobile-controls-slot .mobile-hold-open-players,
+  body[data-mobile-view="hold"] .mobile-controls-slot .mobile-hold-captain-slot .action-btn {
+    min-height: 46px !important;
+    padding: 9px 11px !important;
+    border-radius: 18px !important;
+    box-shadow: none !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-controls-slot .formation-select-wrap {
+    background: #ffffff !important;
+    border: 1px solid rgba(15, 23, 42, 0.08) !important;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto !important;
+    align-items: center !important;
+    gap: 8px !important;
+    overflow: hidden !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-controls-slot .formation-select-wrap strong {
+    font-size: 10px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-controls-slot .formation-select-wrap select {
+    width: 76px !important;
+    min-width: 76px !important;
+    max-width: 76px !important;
+    height: 30px !important;
+    font-size: 11px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-controls-slot .mobile-hold-open-players {
+    background: #111827 !important;
+    color: #fff !important;
+    font-size: 12px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-controls-slot .mobile-hold-captain-slot {
+    grid-column: 1 / -1 !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-controls-slot .mobile-hold-captain-slot .action-btn {
+    background: #fff8db !important;
+    border: 1px solid rgba(245, 158, 11, 0.26) !important;
+    color: #111827 !important;
+    font-size: 12px !important;
+    justify-content: center !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-strategy-slot {
+    margin-top: 8px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-strategy-slot #strategyPanel {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-strategy-slot .strategy-topline,
+  body[data-mobile-view="hold"] .mobile-strategy-slot .active-slot-badge {
+    display: none !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-strategy-slot .strategy-content {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    align-items: stretch !important;
+    gap: 6px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-strategy-slot .strategy-tools {
+    display: flex !important;
+    justify-content: flex-start !important;
+    margin: 0 !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-strategy-slot .lowest-odds-btn {
+    min-height: 34px !important;
+    padding: 7px 12px !important;
+    border-radius: 999px !important;
+    font-size: 11px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-strategy-slot .strategy-buttons {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    border: 1px solid rgba(15, 23, 42, 0.1) !important;
+    border-radius: 18px !important;
+    overflow: hidden !important;
+    background: #fff !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-strategy-slot .strategy-buttons button,
+  body[data-mobile-view="hold"] .mobile-strategy-slot .strategy-buttons .strategy-btn {
+    min-height: 38px !important;
+    padding: 6px 6px !important;
+    font-size: 10px !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+    border-radius: 0 !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot {
+    margin-top: 8px !important;
+    margin-bottom: 12px !important;
+    scroll-margin-bottom: 92px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .pitch {
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    border-radius: 26px !important;
+    padding: 10px 10px 16px !important;
+    background:
+      linear-gradient(180deg, rgba(116, 184, 45, 0.98) 0%, rgba(133, 197, 57, 0.98) 100%) !important;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.16), 0 12px 24px rgba(15, 23, 42, 0.10) !important;
+    overflow: visible !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .pitch-half,
+  body[data-mobile-view="hold"] .mobile-pitch-slot .pitch-circle,
+  body[data-mobile-view="hold"] .mobile-pitch-slot .pitch-penalty-top,
+  body[data-mobile-view="hold"] .mobile-pitch-slot .pitch-penalty-bottom,
+  body[data-mobile-view="hold"] .mobile-pitch-slot .pitch-goal-top,
+  body[data-mobile-view="hold"] .mobile-pitch-slot .pitch-goal-bottom {
+    opacity: 0.24 !important;
+    border-color: rgba(255,255,255,0.26) !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-formation-board {
+    position: relative !important;
+    z-index: 2 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    padding: 0 !important;
+    min-height: max-content !important;
+    overflow: visible !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-formation-row-group {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 4px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-formation-row-label {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 14px !important;
+    padding-left: 0 !important;
+    color: rgba(248, 250, 252, 0.86) !important;
+    font-size: 9px !important;
+    font-weight: 900 !important;
+    letter-spacing: 0.02em !important;
+    text-transform: uppercase !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-formation-row {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: start !important;
+    gap: 8px !important;
+    flex-wrap: nowrap !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-formation-row-gk {
+    margin-bottom: 0 !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-card {
+    width: auto !important;
+    flex: 0 1 var(--row-card-max, 84px) !important;
+    max-width: var(--row-card-max, 84px) !important;
+    min-width: 0 !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-hit {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    border: 0 !important;
+    background: transparent !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 5px !important;
+    width: 100% !important;
+    padding: 0 !important;
+    cursor: pointer !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-avatar {
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 22px !important;
+    height: 22px !important;
+    border-radius: 999px !important;
+    background: rgba(255, 255, 255, 0.18) !important;
+    border: 1px solid rgba(255,255,255,0.34) !important;
+    box-shadow: 0 4px 10px rgba(15, 23, 42, 0.18) !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-avatar.empty {
+    border-style: dashed !important;
+    background: rgba(255,255,255,0.12) !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-avatar-plus,
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-avatar-code {
+    color: #fff !important;
+    font-size: 11px !important;
+    font-weight: 900 !important;
+    line-height: 1 !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-avatar .pitch-captain-armband {
+    position: absolute !important;
+    top: -6px !important;
+    right: -6px !important;
+    width: 16px !important;
+    height: 12px !important;
+    font-size: 8px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-avatar img,
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-avatar .flag-img {
+    width: 18px !important;
+    height: 13px !important;
+    border-radius: 3px !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-chip {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    min-height: 0 !important;
+    padding: 4px 6px !important;
+    border-radius: 12px !important;
+    background: rgba(255,255,255,0.96) !important;
+    box-shadow: 0 4px 10px rgba(16, 24, 40, 0.10) !important;
+    position: relative !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-hit.is-suspended {
+    opacity: 0.88 !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-chip.active {
+    outline: 2px solid #facc15 !important;
+    outline-offset: 1px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-card .player-name {
+    font-size: 8.5px !important;
+    line-height: 1.05 !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.02em !important;
+    text-align: center !important;
+    margin-top: 0 !important;
+    width: 100% !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-card .player-price {
+    font-size: 8px !important;
+    line-height: 1.05 !important;
+    font-weight: 700 !important;
+    color: #374151 !important;
+    margin-top: 2px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-card .player-opponent,
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-card .player-meta,
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-card .player-subline,
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-card .player-next,
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-card .pitch-player-suspension-line {
+    display: none !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .slot {
+    display: none !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .slot-actions,
+  body[data-mobile-view="hold"] .mobile-pitch-slot .slot-btn,
+  body[data-mobile-view="hold"] .mobile-pitch-slot .pitch-player-suspension-line,
+  body[data-mobile-view="hold"] .mobile-pitch-slot .playerBadges {
+    display: none !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-action-tray {
+    margin-top: 8px !important;
+    margin-bottom: 6px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-action-card {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 10px !important;
+    padding: 10px 12px !important;
+    border-radius: 16px !important;
+    background: rgba(255,255,255,0.96) !important;
+    box-shadow: 0 6px 14px rgba(15, 23, 42, 0.08) !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-action-label {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    color: #111827 !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    line-height: 1.25 !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-action-buttons {
+    display: flex !important;
+    gap: 8px !important;
+    flex: 0 0 auto !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-action-btn {
+    min-height: 32px !important;
+    padding: 0 12px !important;
+    border: 0 !important;
+    border-radius: 999px !important;
+    font-size: 10px !important;
+    font-weight: 800 !important;
+    cursor: pointer !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-action-btn.primary {
+    background: #111827 !important;
+    color: #fff !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-action-btn.secondary {
+    background: #fde047 !important;
+    color: #111827 !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-actions-card-slot {
+    margin-top: 8px !important;
+    padding-bottom: 64px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-actions-card-slot .mobile-hold-actions-slot {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-actions-card-slot .action-buttons {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-actions-card-slot .action-btn {
+    min-height: 52px !important;
+    padding: 10px 12px !important;
+    border-radius: 18px !important;
+    background: #fff !important;
+    border: 1px solid rgba(15, 23, 42, 0.08) !important;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05) !important;
+    color: #111827 !important;
+    font-size: 13px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-actions-card-slot #clearTeamBtn {
+    color: #dc2626 !important;
+  }
+
+  body[data-mobile-view] .mobile-bottom-nav {
+    left: 10px !important;
+    right: 10px !important;
+    padding: 4px 5px calc(4px + env(safe-area-inset-bottom, 0px)) !important;
+    border-radius: 18px 18px 0 0 !important;
+    min-height: 36px !important;
+  }
+
+  body[data-mobile-view] .mobile-bottom-nav-btn {
+    min-height: 30px !important;
+    padding: 3px 4px !important;
+    font-size: 10px !important;
+  }
+}
+
+@media (max-width: 430px) {
+  body[data-mobile-view="hold"] {
+    padding-bottom: calc(98px + env(safe-area-inset-bottom, 0px)) !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-global-auth-slot .topbar-user {
+    max-width: 28vw !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-strategy-slot .strategy-content {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .pitch {
+    padding: 8px 8px 12px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-formation-board {
+    gap: 8px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-formation-row-group {
+    gap: 3px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-formation-row-label {
+    font-size: 8px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-formation-row {
+    gap: 6px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-card {
+    max-width: var(--row-card-max, 80px) !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-avatar {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-card .player-name {
+    font-size: 7.5px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-card .player-price {
+    font-size: 8.5px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-actions-card-slot {
+    padding-bottom: 54px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-strategy-slot .strategy-buttons button,
+  body[data-mobile-view="hold"] .mobile-strategy-slot .strategy-buttons .strategy-btn {
+    font-size: 9px !important;
+    padding: 5px 4px !important;
+  }
+}
+
 @media (min-width: 701px) {
   .mobile-hold-toolbar,
   .mobile-strategy-budget-slot,
   .mobile-global-auth-slot,
   .mobile-budget-summary-box,
-  .mobile-hold-actions-slot {
+  .mobile-hold-actions-slot,
+  .mobile-hold-main-card {
     display: none !important;
   }
 
@@ -17964,7 +19136,16 @@ formationSelect.value = currentFormation;
 <script id="mobile-bottom-nav-behavior">
 (() => {
   const nav = document.getElementById("mobileBottomNav");
+  const bankRow = document.querySelector(".team-header .bank-row");
   const holdToolbar = document.getElementById("mobileHoldToolbar");
+  const strategyPanel = document.getElementById("strategyPanel");
+  const pitch = document.getElementById("pitch");
+  const mobileHoldMainCard = document.getElementById("mobileHoldMainCard");
+  const mobileEconomySlot = document.getElementById("mobileEconomySlot");
+  const mobileControlsSlot = document.getElementById("mobileControlsSlot");
+  const mobileStrategySlot = document.getElementById("mobileStrategySlot");
+  const mobilePitchSlot = document.getElementById("mobilePitchSlot");
+  const mobileActionsCardSlot = document.getElementById("mobileActionsCardSlot");
   const holdFormationSlot = document.getElementById("mobileHoldFormationSlot");
   const holdCaptainSlot = document.getElementById("mobileHoldCaptainSlot");
   const holdActionsSlot = document.getElementById("mobileHoldActionsSlot");
@@ -17977,16 +19158,25 @@ formationSelect.value = currentFormation;
   const captainBtn = document.getElementById("changeCaptainBtn");
   const budgetBox = document.querySelector(".manual-budget-box");
   const topbarAuth = document.querySelector(".topbar-auth");
-  if (!nav || !holdToolbar || !holdFormationSlot || !holdCaptainSlot || !holdActionsSlot || !strategyBudgetSlot || !mobileGlobalAuthSlot || !actionControls || !actionButtons || !formationWrap || !captainBtn || !budgetBox || !topbarAuth) return;
+  if (!nav || !bankRow || !holdToolbar || !strategyPanel || !pitch || !mobileHoldMainCard || !mobileEconomySlot || !mobileControlsSlot || !mobileStrategySlot || !mobilePitchSlot || !mobileActionsCardSlot || !holdFormationSlot || !holdCaptainSlot || !holdActionsSlot || !strategyBudgetSlot || !mobileGlobalAuthSlot || !actionControls || !actionButtons || !formationWrap || !captainBtn || !budgetBox || !topbarAuth) return;
 
   const isMobile = () => window.matchMedia("(max-width: 700px)").matches;
   const body = document.body;
   const mobileViewOrder = ["hold", "players", "changes"];
+  let lastCompactPitchMode = null;
 
+  const bankRowAnchor = document.createComment("mobile-bank-row-anchor");
+  const holdToolbarAnchor = document.createComment("mobile-hold-toolbar-anchor");
+  const strategyPanelAnchor = document.createComment("mobile-strategy-panel-anchor");
+  const pitchAnchor = document.createComment("mobile-pitch-anchor");
   const formationAnchor = document.createComment("mobile-formation-anchor");
   const captainAnchor = document.createComment("mobile-captain-anchor");
   const actionButtonsAnchor = document.createComment("mobile-action-buttons-anchor");
   const authAnchor = document.createComment("mobile-auth-anchor");
+  bankRow.parentNode.insertBefore(bankRowAnchor, bankRow);
+  holdToolbar.parentNode.insertBefore(holdToolbarAnchor, holdToolbar);
+  strategyPanel.parentNode.insertBefore(strategyPanelAnchor, strategyPanel);
+  pitch.parentNode.insertBefore(pitchAnchor, pitch);
   formationWrap.parentNode.insertBefore(formationAnchor, formationWrap);
   captainBtn.parentNode.insertBefore(captainAnchor, captainBtn);
   actionButtons.parentNode.insertBefore(actionButtonsAnchor, actionButtons);
@@ -18002,6 +19192,11 @@ formationSelect.value = currentFormation;
   };
 
   const moveForMobile = () => {
+    if (bankRow.parentElement !== mobileEconomySlot) mobileEconomySlot.appendChild(bankRow);
+    if (holdToolbar.parentElement !== mobileControlsSlot) mobileControlsSlot.appendChild(holdToolbar);
+    if (strategyPanel.parentElement !== mobileStrategySlot) mobileStrategySlot.appendChild(strategyPanel);
+    if (pitch.parentElement !== mobilePitchSlot) mobilePitchSlot.appendChild(pitch);
+    if (holdActionsSlot.parentElement !== mobileActionsCardSlot) mobileActionsCardSlot.appendChild(holdActionsSlot);
     if (formationWrap.parentElement !== holdFormationSlot) holdFormationSlot.appendChild(formationWrap);
     if (captainBtn.parentElement !== holdCaptainSlot) holdCaptainSlot.appendChild(captainBtn);
     if (actionButtons.parentElement !== holdActionsSlot) holdActionsSlot.appendChild(actionButtons);
@@ -18011,6 +19206,21 @@ formationSelect.value = currentFormation;
   };
 
   const restoreDesktop = () => {
+    if (bankRowAnchor.parentNode && bankRow.parentNode !== bankRowAnchor.parentNode) {
+      bankRowAnchor.parentNode.insertBefore(bankRow, bankRowAnchor.nextSibling);
+    }
+    if (holdToolbarAnchor.parentNode && holdToolbar.parentNode !== holdToolbarAnchor.parentNode) {
+      holdToolbarAnchor.parentNode.insertBefore(holdToolbar, holdToolbarAnchor.nextSibling);
+    }
+    if (strategyPanelAnchor.parentNode && strategyPanel.parentNode !== strategyPanelAnchor.parentNode) {
+      strategyPanelAnchor.parentNode.insertBefore(strategyPanel, strategyPanelAnchor.nextSibling);
+    }
+    if (pitchAnchor.parentNode && pitch.parentNode !== pitchAnchor.parentNode) {
+      pitchAnchor.parentNode.insertBefore(pitch, pitchAnchor.nextSibling);
+    }
+    if (actionButtonsAnchor.parentNode && holdActionsSlot.parentNode === mobileActionsCardSlot) {
+      pitchAnchor.parentNode.insertBefore(holdActionsSlot, pitch.nextSibling);
+    }
     if (formationAnchor.parentNode && formationWrap.parentNode !== actionControls) {
       formationAnchor.parentNode.insertBefore(formationWrap, formationAnchor.nextSibling);
     }
@@ -18030,11 +19240,16 @@ formationSelect.value = currentFormation;
   };
 
   const syncLayout = () => {
-    if (isMobile()) {
+    const compactPitchMode = isMobile();
+    if (compactPitchMode) {
       moveForMobile();
     } else {
       restoreDesktop();
     }
+    if (lastCompactPitchMode !== compactPitchMode && typeof renderPitch === "function") {
+      renderPitch();
+    }
+    lastCompactPitchMode = compactPitchMode;
   };
 
   nav.addEventListener("click", event => {
