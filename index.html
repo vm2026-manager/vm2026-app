@@ -4154,6 +4154,8 @@
             </div>
           </div>
 
+          <div id="mobilePlayersStatusBar" class="mobile-players-statusbar" hidden></div>
+
           <div class="trade-search">
             <input
               id="searchInput"
@@ -4459,6 +4461,7 @@ async function fetchCsvRows(url, errorLabel, optional = false) {
     const sortSelect = document.getElementById("sortSelect");
     const eligibleOnlyToggle = document.getElementById("eligibleOnlyToggle");
     const tradeList = document.getElementById("tradeList");
+    const mobilePlayersStatusBar = document.getElementById("mobilePlayersStatusBar");
     const rightPanel = document.getElementById("rightPanel");
     const rightModeTitle = document.getElementById("rightModeTitle");
     const showPlayerListBtn = document.getElementById("showPlayerListBtn");
@@ -8961,6 +8964,7 @@ const playerId = String(player.player_id || player.id || "");
       render();
       clearStatus();
       scheduleAutosave();
+      maybeReturnToMobileHoldViewAfterSquadChange();
     }
 
     function renderMobilePitchActionTray() {
@@ -9162,6 +9166,7 @@ const playerId = String(player.player_id || player.id || "");
       saveState();
       render();
       scheduleAutosave();
+      maybeReturnToMobileHoldViewAfterSquadChange();
     }
 
     function getCheapestValidPlayerForSlot(slot, usedIdsSet, teamCounts) {
@@ -9780,6 +9785,7 @@ const playerId = String(player.player_id || player.id || "");
         manualBankInput.value = formatManualBankInputValue(manualBankMillions);
       }
       playerCountValue.textContent = `${count} / 11`;
+      renderMobilePlayersStatusBar();
       updateUndoButton();
       updateBenchmarkActionUi();
     }
@@ -10563,6 +10569,58 @@ function updateMobilePlayersTopControlLabels() {
   }
 }
 
+function getMobilePlayersStatusSlotLabel() {
+  if (!activeSlotKey) return "";
+  const slot = getCurrentSlots().find(item => item.key === activeSlotKey);
+  if (!slot) return "";
+  return compactPositionLabel(slot.positionCode || slot.position || "");
+}
+
+function renderMobilePlayersStatusBar() {
+  if (!mobilePlayersStatusBar) return;
+
+  const isMobilePlayersView =
+    window.matchMedia("(max-width: 768px)").matches
+    && document.body?.dataset?.mobileView === "players";
+
+  if (!isMobilePlayersView) {
+    mobilePlayersStatusBar.hidden = true;
+    mobilePlayersStatusBar.innerHTML = "";
+    return;
+  }
+
+  const bank = formatMoney(getDisplayedBankLeft());
+  const playerCount = `${getPlayerCount()} / 11`;
+  const slotLabel = getMobilePlayersStatusSlotLabel();
+
+  mobilePlayersStatusBar.hidden = false;
+  mobilePlayersStatusBar.innerHTML = `
+    <div class="mobile-players-statusitem">
+      <span class="mobile-players-statuslabel">Bank</span>
+      <span class="mobile-players-statusvalue">${escapeHtml(bank)}</span>
+    </div>
+    <div class="mobile-players-statusitem">
+      <span class="mobile-players-statuslabel">Spillere</span>
+      <span class="mobile-players-statusvalue">${escapeHtml(playerCount)}</span>
+    </div>
+    <div class="mobile-players-statusitem${slotLabel ? "" : " is-muted"}">
+      <span class="mobile-players-statuslabel">Plads</span>
+      <span class="mobile-players-statusvalue">${escapeHtml(slotLabel || "Ingen")}</span>
+    </div>
+  `;
+}
+
+function maybeReturnToMobileHoldViewAfterSquadChange() {
+  if (!window.matchMedia || !window.matchMedia("(max-width: 700px)").matches) return;
+  if (document.body?.dataset?.mobileView !== "players") return;
+  if (typeof window.setMobileView === "function") {
+    window.setTimeout(() => window.setMobileView("hold"), 0);
+  }
+}
+
+window.updateMobilePlayersTopControlLabels = updateMobilePlayersTopControlLabels;
+window.renderMobilePlayersStatusBar = renderMobilePlayersStatusBar;
+
 function ensureFavoriteFilterButton() {
   if (!currentUser) {
     const existingBtn = document.getElementById("favoriteFilterBtn");
@@ -10666,6 +10724,7 @@ function renderTradeList() {
           showPlayerListBtn.disabled = false;
         }
         updateMobilePlayersTopControlLabels();
+        renderMobilePlayersStatusBar();
         showPlayerListBtn?.classList.remove("active");
         tradeList.innerHTML = renderAlternativePanel(activeSlot, currentPlayerForActiveSlot);
         tradeList.querySelectorAll(".plus-btn, .choose-alt-btn").forEach(btn => {
@@ -10682,6 +10741,7 @@ function renderTradeList() {
         showPlayerListBtn.disabled = !canShowAlternatives;
       }
       updateMobilePlayersTopControlLabels();
+      renderMobilePlayersStatusBar();
       showPlayerListBtn?.classList.add("active");
 
       const showPositionChip = !!(
@@ -19619,6 +19679,16 @@ formationSelect.value = currentFormation;
   }
 }
 
+/* MOBILE HOLD ACTION BUTTON ROW FINAL LAYER */
+@media (max-width: 768px) {
+  body[data-mobile-view="hold"] .mobile-actions-card-slot #undoBtn,
+  body[data-mobile-view="hold"] .mobile-actions-card-slot #clearTeamBtn {
+    grid-column: auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+}
+
 /* MOBILE PLAYER LIST HEADER FINAL LAYER */
 @media (max-width: 700px) {
   body[data-mobile-view="players"] .right-panel {
@@ -19811,6 +19881,10 @@ formationSelect.value = currentFormation;
 
 /* MOBILE PLAYERS TOP CONTROLS FINAL LAYER */
 @media (max-width: 768px) {
+  body[data-mobile-view="players"] {
+    padding-bottom: calc(104px + env(safe-area-inset-bottom, 0px)) !important;
+  }
+
   body[data-mobile-view="players"] .right-modebar {
     display: flex !important;
     flex-direction: column !important;
@@ -19855,6 +19929,57 @@ formationSelect.value = currentFormation;
     overflow: hidden !important;
     text-overflow: ellipsis !important;
     box-sizing: border-box !important;
+  }
+
+  body[data-mobile-view="players"] .mobile-players-statusbar {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 0 !important;
+    width: 100% !important;
+    min-height: 44px !important;
+    margin: 0 0 10px !important;
+    padding: 8px 10px !important;
+    border-radius: 14px !important;
+    background: linear-gradient(180deg, rgba(43, 47, 55, 0.98) 0%, rgba(31, 35, 43, 0.98) 100%) !important;
+    border: 1px solid rgba(255,255,255,0.08) !important;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.04) !important;
+    box-sizing: border-box !important;
+  }
+
+  body[data-mobile-view="players"] .mobile-players-statusitem {
+    min-width: 0 !important;
+    padding: 0 8px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    gap: 2px !important;
+  }
+
+  body[data-mobile-view="players"] .mobile-players-statusitem + .mobile-players-statusitem {
+    border-left: 1px solid rgba(255,255,255,0.08) !important;
+  }
+
+  body[data-mobile-view="players"] .mobile-players-statusitem.is-muted .mobile-players-statusvalue {
+    color: rgba(226,232,240,0.72) !important;
+  }
+
+  body[data-mobile-view="players"] .mobile-players-statuslabel {
+    color: rgba(203,213,225,0.82) !important;
+    font-size: 9px !important;
+    line-height: 1 !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    white-space: nowrap !important;
+  }
+
+  body[data-mobile-view="players"] .mobile-players-statusvalue {
+    color: #f8fafc !important;
+    font-size: 11px !important;
+    line-height: 1.1 !important;
+    font-weight: 800 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
   }
 
   body[data-mobile-view="players"] .trade-search {
@@ -19928,9 +20053,51 @@ formationSelect.value = currentFormation;
     padding: 10px 12px !important;
     box-sizing: border-box !important;
   }
+
+  body[data-mobile-view="players"] .right-panel {
+    padding-bottom: calc(92px + env(safe-area-inset-bottom, 0px)) !important;
+  }
+
+  body[data-mobile-view="players"] .trade-list,
+  body[data-mobile-view="players"] #tradeList {
+    padding-bottom: calc(82px + env(safe-area-inset-bottom, 0px)) !important;
+    margin-bottom: 8px !important;
+    scroll-padding-bottom: calc(92px + env(safe-area-inset-bottom, 0px)) !important;
+  }
 }
 
 @media (max-width: 430px) {
+  body[data-mobile-view="players"] {
+    padding-bottom: calc(98px + env(safe-area-inset-bottom, 0px)) !important;
+  }
+
+  body[data-mobile-view="players"] .right-panel {
+    padding-bottom: calc(88px + env(safe-area-inset-bottom, 0px)) !important;
+  }
+
+  body[data-mobile-view="players"] .trade-list,
+  body[data-mobile-view="players"] #tradeList {
+    padding-bottom: calc(78px + env(safe-area-inset-bottom, 0px)) !important;
+    margin-bottom: 6px !important;
+  }
+
+  body[data-mobile-view="players"] .mobile-players-statusbar {
+    min-height: 42px !important;
+    padding: 7px 8px !important;
+  }
+
+  body[data-mobile-view="players"] .mobile-players-statusitem {
+    padding: 0 6px !important;
+  }
+
+  body[data-mobile-view="players"] .mobile-players-statuslabel {
+    font-size: 8px !important;
+  }
+
+  body[data-mobile-view="players"] .mobile-players-statusvalue {
+    font-size: 10px !important;
+  }
+
   body[data-mobile-view="players"] #favoriteFilterBtn,
   body[data-mobile-view="players"] #showPlayerListBtn {
     min-height: 42px !important;
@@ -20216,7 +20383,15 @@ formationSelect.value = currentFormation;
     nav.querySelectorAll(".mobile-bottom-nav-btn").forEach(btn => {
       btn.classList.toggle("is-active", btn.dataset.mobileView === nextView);
     });
+    if (typeof window.updateMobilePlayersTopControlLabels === "function") {
+      window.updateMobilePlayersTopControlLabels();
+    }
+    if (typeof window.renderMobilePlayersStatusBar === "function") {
+      window.renderMobilePlayersStatusBar();
+    }
   };
+
+  window.setMobileView = setActiveView;
 
   const moveForMobile = () => {
     if (bankRow.parentElement !== mobileEconomySlot) mobileEconomySlot.appendChild(bankRow);
