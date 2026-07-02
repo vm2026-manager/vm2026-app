@@ -6881,10 +6881,12 @@ function getPlayerScore(player) {
       return 0;
     }
 
+    // Knockout filter: these are the teams still alive after the finished 1/16-finaler.
+    // Players from eliminated teams stay on the user's current squad if already selected,
+    // but they must not appear as new choices in player list, favorites, alternatives or team filter.
     const TOURNAMENT_ALIVE_TEAM_IDS = new Set([
-      "CAN","RSA","BRA","JPN","GER","PAR","NED","MAR","CIV","NOR","FRA","SWE",
-      "MEX","ECU","ENG","COD","BEL","SEN","USA","BIH","ESP","AUT","POR","CRO",
-      "SUI","ALG","EGY","AUS","ARG","CPV","COL","GHA"
+      "CAN","BRA","PAR","MAR","NOR","FRA","MEX","ENG","BEL","USA",
+      "ESP","AUT","POR","CRO","SUI","ALG","EGY","AUS","ARG","CPV","COL","GHA"
     ]);
 
     function tournamentTeamId(value) {
@@ -12239,6 +12241,7 @@ formationSelect.value = currentFormation;
 
           var opponent = "";
           var scorerRow = findDirectScorerOddsRow();
+          var fallbackOddsRow = null;
 
           if (scorerRow) {
             opponent = canonicalTeamId(
@@ -12268,17 +12271,81 @@ formationSelect.value = currentFormation;
             }
           }
 
+          if ((!opponent || opponent === "0" || opponent === team) && Array.isArray(matchOddsRows) && matchOddsRows.length) {
+            var groupedCandidateRows = {};
+            matchOddsRows.forEach(function (row) {
+              var homeTeamId = getOddsRowTeamId(row, "home");
+              var awayTeamId = getOddsRowTeamId(row, "away");
+              if (homeTeamId !== team && awayTeamId !== team) return;
+              var candidateMatchId = String(getRowValue(row, ["match_id", "fixture_id", "id"])).trim();
+              var candidateKey = candidateMatchId || [homeTeamId, awayTeamId, getRowValue(row, ["odds_fetched_at", "oddsFetchedAt", "odds_fetched_label", "oddsFetchedLabel"])].join("|");
+              if (!groupedCandidateRows[candidateKey]) groupedCandidateRows[candidateKey] = [];
+              groupedCandidateRows[candidateKey].push(row);
+            });
+
+            var selectedCandidateRows = Object.keys(groupedCandidateRows)
+              .map(function (candidateKey) {
+                var rowsForCandidate = groupedCandidateRows[candidateKey];
+                return (typeof selectPreferredOddsRow === "function"
+                  ? selectPreferredOddsRow(rowsForCandidate)
+                  : null) || rowsForCandidate[0] || null;
+              })
+              .filter(Boolean);
+
+            selectedCandidateRows.sort(function (a, b) {
+              function getCandidatePriority(row) {
+                var kickoffText = String(getRowValue(row, ["kickoff_dk", "kickoff"]) || "").trim();
+                var kickoffDate = typeof kickoffToDate === "function" ? kickoffToDate(kickoffText) : null;
+                if (kickoffDate instanceof Date && !Number.isNaN(kickoffDate.getTime())) {
+                  return kickoffDate.getTime() >= getNow().getTime() ? 0 : 2;
+                }
+                return 1;
+              }
+
+              var aPriority = getCandidatePriority(a);
+              var bPriority = getCandidatePriority(b);
+              if (aPriority !== bPriority) return aPriority - bPriority;
+
+              var aKickoffText = String(getRowValue(a, ["kickoff_dk", "kickoff"]) || "").trim();
+              var bKickoffText = String(getRowValue(b, ["kickoff_dk", "kickoff"]) || "").trim();
+              var aKickoff = typeof kickoffToDate === "function" ? kickoffToDate(aKickoffText) : null;
+              var bKickoff = typeof kickoffToDate === "function" ? kickoffToDate(bKickoffText) : null;
+
+              if (aPriority === 0) {
+                return (aKickoff ? aKickoff.getTime() : Number.MAX_SAFE_INTEGER) - (bKickoff ? bKickoff.getTime() : Number.MAX_SAFE_INTEGER);
+              }
+
+              if (aPriority === 2) {
+                return (bKickoff ? bKickoff.getTime() : 0) - (aKickoff ? aKickoff.getTime() : 0);
+              }
+
+              return parseOddsSnapshotTime(b) - parseOddsSnapshotTime(a);
+            });
+
+            fallbackOddsRow = selectedCandidateRows[0] || null;
+            if (fallbackOddsRow) {
+              var rowHomeTeam = getOddsRowTeamId(fallbackOddsRow, "home");
+              var rowAwayTeam = getOddsRowTeamId(fallbackOddsRow, "away");
+              opponent = rowHomeTeam === team ? rowAwayTeam : rowHomeTeam;
+            }
+          }
+
           if (!opponent || opponent === "0" || opponent === team) return;
 
-          var fallbackOddsRow = odds.get(team + "|" + opponent) || odds.get(opponent + "|" + team);
+          if (!fallbackOddsRow) {
+            fallbackOddsRow = odds.get(team + "|" + opponent) || odds.get(opponent + "|" + team);
+          }
           if (!fallbackOddsRow) return;
 
           var fallbackHome = canonicalTeamId(fallbackOddsRow.home || team);
           var fallbackAway = canonicalTeamId(fallbackOddsRow.away || opponent);
           var fallbackIsHome = fallbackHome === team;
-          var fallbackWin = fallbackIsHome ? fallbackOddsRow.h : fallbackOddsRow.a;
-          var fallbackDraw = fallbackOddsRow.x;
-          var fallbackLoss = fallbackIsHome ? fallbackOddsRow.a : fallbackOddsRow.h;
+          var fallbackHomeOdds = getRowValue(fallbackOddsRow, ["h", "home_win_odds", "home_odds", "odds_home"]);
+          var fallbackDrawOdds = getRowValue(fallbackOddsRow, ["x", "draw_odds", "draw", "odds_draw"]);
+          var fallbackAwayOdds = getRowValue(fallbackOddsRow, ["a", "away_win_odds", "away_odds", "odds_away"]);
+          var fallbackWin = fallbackIsHome ? fallbackHomeOdds : fallbackAwayOdds;
+          var fallbackDraw = fallbackDrawOdds;
+          var fallbackLoss = fallbackIsHome ? fallbackAwayOdds : fallbackHomeOdds;
 
           out.push({
             opponent: opponent,
