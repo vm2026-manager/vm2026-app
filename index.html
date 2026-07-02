@@ -11958,9 +11958,9 @@ formationSelect.value = currentFormation;
           home: home,
           away: away,
           kickoff: selected.kickoff_dk || "",
-          h: selected.home_win_odds,
-          x: selected.draw_odds,
-          a: selected.away_win_odds,
+          h: getRowValue(selected, ["home_win_odds", "h", "home_odds", "odds_home", "home"]),
+          x: getRowValue(selected, ["draw_odds", "x", "draw", "odds_draw"]),
+          a: getRowValue(selected, ["away_win_odds", "a", "away_odds", "odds_away", "away"]),
           source: selected.source || "odds",
           oddsFetchedLabel: selected.odds_fetched_label || selected.oddsFetchedLabel || "",
           oddsFetchedAt: selected.odds_fetched_at || selected.oddsFetchedAt || ""
@@ -12043,6 +12043,12 @@ formationSelect.value = currentFormation;
         var team = canonicalTeamId(player.team_id || player.team_name || "");
         var out = [];
         var seen = new Set();
+        var exactPlayerId = typeof scorerPlayerIdKey === "function"
+          ? scorerPlayerIdKey(player && (player.player_id || player.id || ""))
+          : String(player && (player.player_id || player.id || "") || "").trim().toLowerCase();
+        var fallbackPlayerId = typeof scorerPlayerIdKey === "function"
+          ? scorerPlayerIdKey(player && (player.id || ""))
+          : String(player && (player.id || "") || "").trim().toLowerCase();
 
         function addResolvedFixture(fixtureLike) {
           try {
@@ -12115,6 +12121,121 @@ formationSelect.value = currentFormation;
           }
         }
 
+        function findDirectScorerOddsRow() {
+          if (!player || !isScorerEligiblePlayer(player)) return null;
+          if (!Array.isArray(scorerOddsRows) || !scorerOddsRows.length) return null;
+          var teamId = canonicalTeamId(
+            player.team_id ||
+            player.country_code ||
+            player.teamCode ||
+            player.team ||
+            player.country ||
+            ""
+          ).trim();
+          var nameTeamKey = typeof scorerNameTeamKey === "function"
+            ? scorerNameTeamKey(player.player_name, teamId, player.team_name || player.team)
+            : "";
+          var normalizedPlayerName = typeof normalizeName === "function"
+            ? normalizeName(player.player_name || "")
+            : String(player.player_name || "").trim().toLowerCase();
+
+          var rows = scorerOddsRows.filter(function (row) {
+            var rowPlayerId = typeof scorerPlayerIdKey === "function"
+              ? scorerPlayerIdKey(row.player_id || row.playerId || "")
+              : String(row.player_id || row.playerId || "").trim().toLowerCase();
+            if (exactPlayerId && rowPlayerId === exactPlayerId) return true;
+            if (!exactPlayerId && fallbackPlayerId && rowPlayerId === fallbackPlayerId) return true;
+            return false;
+          });
+
+          if (!rows.length && fallbackPlayerId && fallbackPlayerId !== exactPlayerId) {
+            rows = scorerOddsRows.filter(function (row) {
+              var rowPlayerId = typeof scorerPlayerIdKey === "function"
+                ? scorerPlayerIdKey(row.player_id || row.playerId || "")
+                : String(row.player_id || row.playerId || "").trim().toLowerCase();
+              return rowPlayerId === fallbackPlayerId;
+            });
+          }
+
+          if (!rows.length && nameTeamKey && scorerOddsByNameTeam && scorerOddsByNameTeam.has(nameTeamKey)) {
+            rows = scorerOddsByNameTeam.get(nameTeamKey) || [];
+          }
+
+          if (!rows.length && normalizedPlayerName) {
+            rows = scorerOddsRows.filter(function (row) {
+              var rowName = typeof normalizeName === "function"
+                ? normalizeName(row.player_name || row.playerName || "")
+                : String(row.player_name || row.playerName || "").trim().toLowerCase();
+              var rowTeamId = canonicalTeamId(row.team_id || row.team || row.team_code || row.teamCode || "");
+              if (rowName !== normalizedPlayerName) return false;
+              if (teamId && rowTeamId) return rowTeamId === teamId;
+              return true;
+            });
+          }
+
+          if (!rows.length) return null;
+          return (typeof selectPreferredScorerRow === "function" ? selectPreferredScorerRow(rows) : null) || rows[0] || null;
+        }
+
+        function addSpecialOddsFixtureFallback() {
+          if (out.length || !team) return;
+
+          var opponent = "";
+          var scorerRow = findDirectScorerOddsRow();
+
+          if (scorerRow) {
+            opponent = canonicalTeamId(
+              scorerRow.opponent_id ||
+              scorerRow.opponentId ||
+              scorerRow.opponent_team_id ||
+              scorerRow.opponent
+            );
+          }
+
+          if (!opponent && player && isCleanSheetEligiblePlayer(player) && Array.isArray(cleanSheetOddsRows) && cleanSheetOddsRows.length) {
+            var cleanSheetRows = cleanSheetOddsRows.filter(function (row) {
+              return canonicalTeamId(row.team_id || row.teamId || "") === team;
+            });
+            if (cleanSheetRows.length) {
+              var cleanSheetRow = (typeof selectPreferredCleanSheetRow === "function"
+                ? selectPreferredCleanSheetRow(cleanSheetRows)
+                : null) || cleanSheetRows[0] || null;
+              if (cleanSheetRow) {
+                opponent = canonicalTeamId(
+                  cleanSheetRow.opponent_id ||
+                  cleanSheetRow.opponentId ||
+                  cleanSheetRow.opponent_team_id ||
+                  cleanSheetRow.opponent
+                );
+              }
+            }
+          }
+
+          if (!opponent || opponent === "0" || opponent === team) return;
+
+          var fallbackOddsRow = odds.get(team + "|" + opponent) || odds.get(opponent + "|" + team);
+          if (!fallbackOddsRow) return;
+
+          var fallbackHome = canonicalTeamId(fallbackOddsRow.home || team);
+          var fallbackAway = canonicalTeamId(fallbackOddsRow.away || opponent);
+          var fallbackIsHome = fallbackHome === team;
+          var fallbackWin = fallbackIsHome ? fallbackOddsRow.h : fallbackOddsRow.a;
+          var fallbackDraw = fallbackOddsRow.x;
+          var fallbackLoss = fallbackIsHome ? fallbackOddsRow.a : fallbackOddsRow.h;
+
+          out.push({
+            opponent: opponent,
+            opponentName: teamName(opponent),
+            kickoff: fallbackOddsRow.kickoff || "",
+            win: fallbackWin,
+            draw: fallbackDraw,
+            loss: fallbackLoss,
+            source: fallbackOddsRow.source || "",
+            oddsFetchedLabel: fallbackOddsRow.oddsFetchedLabel || fallbackOddsRow.odds_fetched_label || "",
+            oddsFetchedAt: fallbackOddsRow.oddsFetchedAt || fallbackOddsRow.odds_fetched_at || ""
+          });
+        }
+
         var sharedUpcomingFixtures = typeof getUpcomingFixturesForTeam === "function"
           ? getUpcomingFixturesForTeam(team, 3)
           : [];
@@ -12155,6 +12276,8 @@ formationSelect.value = currentFormation;
             });
           });
         }
+
+        addSpecialOddsFixtureFallback();
 
         out.sort(function (a, b) {
           var ad = typeof kickoffToDate === "function" ? kickoffToDate(a.kickoff) : null;
