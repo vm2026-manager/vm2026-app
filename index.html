@@ -5633,8 +5633,8 @@ function normalizeSquadStateAgainstTransferBaseline() {
 
       getCurrentSlots().forEach(slot => {
         const slotKey = slot.key;
-        const baselinePlayerId = baselineSquad?.[slotKey] || null;
-        const currentPlayerId = squad?.[slotKey] || null;
+        const baselinePlayerId = normalizeSquadSlotPlayerId(baselineSquad?.[slotKey]);
+        const currentPlayerId = normalizeSquadSlotPlayerId(squad?.[slotKey]);
 
         if (String(baselinePlayerId || "") !== String(currentPlayerId || "")) {
           return;
@@ -5887,6 +5887,18 @@ function saveState() {
       return hasSquadPlayers(transferBaselineSquad);
     }
 
+    const ROUND_OF_16_TRANSFER_WINDOW_LABEL = "1/16-finaler → Ottendedelsfinaler";
+    const ROUND_OF_16_TRANSFER_WINDOW_VERSION_KEY = "ottendedelsfinaler_baseline_v1";
+
+    function normalizeSquadSlotPlayerId(value) {
+      if (value === null || value === undefined) return null;
+      const text = String(value).trim();
+      if (!text || text === "0" || text.toLowerCase() === "null" || text.toLowerCase() === "undefined") {
+        return null;
+      }
+      return text;
+    }
+
     function normalizeTransferWindowKey(value) {
       const text = String(value || "")
         .normalize("NFD")
@@ -5907,7 +5919,13 @@ function saveState() {
     }
 
     function getCurrentTransferWindowKey() {
-      return normalizeTransferWindowKey(getTransferWindowLabel()) || "naeste_runde";
+      const currentLabel = getTransferWindowLabel();
+      const normalizedLabel = normalizeTransferWindowKey(currentLabel);
+      if (!normalizedLabel) return "naeste_runde";
+      if (currentLabel === ROUND_OF_16_TRANSFER_WINDOW_LABEL) {
+        return `${normalizedLabel}__${ROUND_OF_16_TRANSFER_WINDOW_VERSION_KEY}`;
+      }
+      return normalizedLabel;
     }
 
     function saveTransferBaselineState() {
@@ -8090,6 +8108,42 @@ const playerId = String(player.player_id || player.id || "");
       return null;
     }
 
+    function getPlayerOpponentLineText(player, nextMatchInfo = null) {
+      const primaryOpponent =
+        nextMatchInfo?.displayOpponentName ||
+        nextMatchInfo?.opponentName ||
+        "";
+
+      if (primaryOpponent) {
+        return `vs. ${primaryOpponent}`;
+      }
+
+      let supplementalOddsInfo = null;
+
+      try {
+        supplementalOddsInfo = typeof getPlayerSupplementalOddsInfo === "function"
+          ? getPlayerSupplementalOddsInfo(player)
+          : null;
+      } catch (_error) {
+        supplementalOddsInfo = null;
+      }
+
+      if (!supplementalOddsInfo && typeof getDirectTooltipScorerInfo === "function") {
+        supplementalOddsInfo = getDirectTooltipScorerInfo(player);
+      }
+
+      if (!supplementalOddsInfo && isCleanSheetEligiblePlayer(player)) {
+        try {
+          supplementalOddsInfo = getNextCleanSheetInfo(player);
+        } catch (_error) {
+          supplementalOddsInfo = null;
+        }
+      }
+
+      const fallbackOpponent = supplementalOddsInfo?.opponentName || "";
+      return fallbackOpponent ? `vs. ${fallbackOpponent}` : "";
+    }
+
     function getDirectTooltipScorerInfo(player) {
       try {
         if (!player || !isScorerEligiblePlayer(player)) return null;
@@ -9630,8 +9684,8 @@ const playerId = String(player.player_id || player.id || "");
 
       return getCurrentSlots().map(slot => {
         const slotKey = slot.key;
-        const outgoingPlayerId = baselineSquad?.[slotKey] || null;
-        const incomingPlayerId = squad?.[slotKey] || null;
+        const outgoingPlayerId = normalizeSquadSlotPlayerId(baselineSquad?.[slotKey]);
+        const incomingPlayerId = normalizeSquadSlotPlayerId(squad?.[slotKey]);
         const outgoingPlayer = getPlayerById(outgoingPlayerId);
         const incomingPlayer = getPlayerById(incomingPlayerId);
         const outgoingLockedPrice = outgoingPlayerId ? getPurchasePriceForSlot(slotKey, baselineSquad, baselinePrices) : 0;
@@ -9643,6 +9697,10 @@ const playerId = String(player.player_id || player.id || "");
         // Same player in same slot is not a transfer.
         // Ignore price/value changes here; those are value gains, not player changes.
         if (String(outgoingPlayerId || "") === String(incomingPlayerId || "")) {
+          return null;
+        }
+
+        if (!outgoingPlayerId && !incomingPlayerId) {
           return null;
         }
 
@@ -9789,7 +9847,7 @@ const playerId = String(player.player_id || player.id || "");
       // When exact knockout kickoff times are not present in project data, the label switches at 00:00 Danish time.
       const knockoutStarts = [
         { start: kickoffToDate(`${tournamentYear}-06-28 00:00`), label: "runde 3 → 1/16-finaler" },
-        { start: kickoffToDate(`${tournamentYear}-07-04 00:00`), label: "1/16-finaler → 1/8-finaler" },
+        { start: kickoffToDate(`${tournamentYear}-07-02 00:00`), label: ROUND_OF_16_TRANSFER_WINDOW_LABEL },
         { start: kickoffToDate(`${tournamentYear}-07-09 00:00`), label: "1/8-finaler → Kvartfinaler" },
         { start: kickoffToDate(`${tournamentYear}-07-14 00:00`), label: "Kvartfinaler → Semifinaler" },
         { start: kickoffToDate(`${tournamentYear}-07-18 00:00`), label: "Semifinaler → Bronzekamp/finale" },
@@ -10554,7 +10612,7 @@ function renderTradeList() {
         if (isPlayerTournamentEliminated(player)) return "";
         const nextMatchInfo = getPlayerNextMatchInfo(player);
         playerNextMatchInfoById.set(String(player.player_id), nextMatchInfo);
-        const supplementalOddsInfo = getPlayerSupplementalOddsInfo(player);
+        const opponentLineText = getPlayerOpponentLineText(player, nextMatchInfo);
         const tmWatchReason = String(player.tm_watch_reason || "").trim();
         const tmWarning = shouldShowTmWarning(player) ? `<div class="trade-tm-warning">TM: usikker starter</div>` : "";
         const suspensionHtml = isSuspended ? `<div class="trade-suspension-flag">⛔ Karantæne</div>` : "";
@@ -10571,8 +10629,7 @@ function renderTradeList() {
                 ${flagUrl ? `<img class="trade-list-flag" src="${flagUrl}" alt="${escapeHtml(getTradeFlagTitle(player))}" title="${escapeHtml(getTradeFlagTitle(player))}" aria-label="${escapeHtml(getTradeFlagTitle(player))}">` : ""}
                 <div class="trade-name">${player.player_name || "Ukendt spiller"}</div>
               </div>
-              <div class="trade-next">${escapeHtml(nextMatchInfo.displayOpponentName || "")}</div>
-              ${supplementalOddsInfo ? `<div class="trade-clean-sheet">${escapeHtml(supplementalOddsInfo.shortLabel + ": " + supplementalOddsInfo.valueText)}</div>` : ""}
+              <div class="trade-next">${escapeHtml(opponentLineText)}</div>
               ${suspensionHtml}
               ${tmWarning}
             </div>
