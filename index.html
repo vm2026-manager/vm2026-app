@@ -4169,7 +4169,7 @@
             />
             <label class="toggle-chip" for="eligibleOnlyToggle">
               <input id="eligibleOnlyToggle" type="checkbox" />
-              <span>Kun mulige spillere</span>
+              <span class="toggle-chip-label">Kun mulige spillere</span>
             </label>
           </div>
 
@@ -10534,6 +10534,33 @@ function updateFavoriteFilterButton() {
   } else {
     btn.style.setProperty("display", "none", "important");
   }
+
+  updateMobilePlayersTopControlLabels();
+}
+
+function updateMobilePlayersTopControlLabels() {
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+  const toggleLabel = document.querySelector(".toggle-chip-label");
+  if (toggleLabel) {
+    toggleLabel.textContent = isMobile ? "Kun plads/råd" : "Kun mulige spillere";
+  }
+
+  const favoriteBtn = document.getElementById("favoriteFilterBtn");
+  if (favoriteBtn && currentUser && currentUser.id) {
+    favoriteBtn.textContent = isMobile
+      ? "Favoritter"
+      : `\u2665 Favoritter (${getAliveFavoritePlayerIds().size})`;
+  }
+
+  const playerListBtn = document.getElementById("showPlayerListBtn");
+  if (playerListBtn) {
+    const currentText = String(playerListBtn.textContent || "").trim().toLowerCase();
+    if (currentText.includes("alternativ")) {
+      playerListBtn.textContent = isMobile ? "Alternativer" : "Se alternativer";
+    } else if (currentText.includes("spillerliste")) {
+      playerListBtn.textContent = isMobile ? "Spillerliste" : "Se spillerliste";
+    }
+  }
 }
 
 function ensureFavoriteFilterButton() {
@@ -10609,9 +10636,11 @@ document.addEventListener("click", function (event) {
 document.addEventListener("DOMContentLoaded", function () {
   ensureFavoriteFilterButton();
   compactRenderedPositionLabels();
+  updateMobilePlayersTopControlLabels();
 });
 setTimeout(ensureFavoriteFilterButton, 250);
 setTimeout(ensureFavoriteFilterButton, 1000);
+window.addEventListener("resize", updateMobilePlayersTopControlLabels);
 /* FAVORITES_FEATURE_JS_END */
 
 function renderTradeList() {
@@ -10636,6 +10665,7 @@ function renderTradeList() {
           showPlayerListBtn.textContent = "Se spillerliste";
           showPlayerListBtn.disabled = false;
         }
+        updateMobilePlayersTopControlLabels();
         showPlayerListBtn?.classList.remove("active");
         tradeList.innerHTML = renderAlternativePanel(activeSlot, currentPlayerForActiveSlot);
         tradeList.querySelectorAll(".plus-btn, .choose-alt-btn").forEach(btn => {
@@ -10651,6 +10681,7 @@ function renderTradeList() {
         showPlayerListBtn.textContent = "Se alternativer";
         showPlayerListBtn.disabled = !canShowAlternatives;
       }
+      updateMobilePlayersTopControlLabels();
       showPlayerListBtn?.classList.add("active");
 
       const showPositionChip = !!(
@@ -19585,6 +19616,532 @@ formationSelect.value = currentFormation;
   body[data-mobile-view="hold"] .mobile-strategy-slot .strategy-buttons .strategy-btn {
     font-size: 9px !important;
     padding: 5px 4px !important;
+  }
+}
+
+/* MOBILE PLAYER LIST HEADER FINAL LAYER */
+@media (max-width: 700px) {
+  body[data-mobile-view="players"] .right-panel {
+    padding: 12px 12px 16px !important;
+    gap: 0 !important;
+    background: #23252b !important;
+    border-left: 0 !important;
+    overflow: hidden !important;
+  }
+
+  body[data-mobile-view="players"] .topbar-auth,
+  body[data-mobile-view="players"] .info-box,
+  body[data-mobile-view="players"] .credit-box {
+    display: none !important;
+  }
+
+  body[data-mobile-view="players"] .right-modebar {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 8px !important;
+    margin: 0 0 10px !important;
+    padding: 0 !important;
+  }
+
+  body[data-mobile-view="players"] .right-mode-title {
+    font-size: 18px !important;
+    font-weight: 900 !important;
+    line-height: 1.1 !important;
+    color: #f8fafc !important;
+  }
+
+  body[data-mobile-view="players"] .right-mode-actions {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 8px !important;
+    flex: 0 0 auto !important;
+    flex-wrap: nowrap !important;
+    min-width: 0 !important;
+  }
+
+  body[data-mobile-view="players"] .position-filter-chip,
+  body[data-mobile-view="players"] .right-mode-btn,
+  body[data-mobile-view="players"] #favoriteFilterBtn {
+    min-height: 38px !important;
+    padding: 8px 12px !important;
+    border-radius: 12px !important;
+    font-size: 12px !important;
+    line-height: 1.1 !important;
+    white-space: nowrap !important;
+    flex: 0 0 auto !important;
+  }
+
+  body[data-mobile-view="players"] #showPlayerListBtn {
+    min-width: 0 !important;
+    max-width: 48vw !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  body[data-mobile-view="players"] .trade-search {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+    align-items: stretch !important;
+    margin: 0 0 10px !important;
+    padding: 0 !important;
+  }
+
+  body[data-mobile-view="players"] .trade-search input,
+  body[data-mobile-view="players"] #searchInput {
+    width: 100% !important;
+    min-height: 44px !important;
+    padding: 11px 13px !important;
+    border-radius: 12px !important;
+    font-size: 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  body[data-mobile-view="players"] .toggle-chip {
+    width: 100% !important;
+    min-height: 42px !important;
+    justify-content: space-between !important;
+    padding: 9px 12px !important;
+    border-radius: 12px !important;
+    font-size: 12px !important;
+    box-sizing: border-box !important;
+  }
+
+  body[data-mobile-view="players"] .toggle-chip span {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+  }
+
+  body[data-mobile-view="players"] .trade-header {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+    margin: 0 0 12px !important;
+    padding: 0 !important;
+  }
+
+  body[data-mobile-view="players"] .trade-header select,
+  body[data-mobile-view="players"] #teamFilter,
+  body[data-mobile-view="players"] #positionFilter,
+  body[data-mobile-view="players"] #sortSelect {
+    width: 100% !important;
+    min-height: 42px !important;
+    padding: 10px 12px !important;
+    border-radius: 12px !important;
+    font-size: 14px !important;
+    box-sizing: border-box !important;
+  }
+
+  body[data-mobile-view="players"] #tradeList,
+  body[data-mobile-view="players"] .trade-list {
+    margin-top: 2px !important;
+    border-radius: 14px !important;
+    padding: 4px !important;
+  }
+}
+
+@media (max-width: 430px) {
+  body[data-mobile-view="players"] .right-panel {
+    padding: 10px 10px 14px !important;
+  }
+
+  body[data-mobile-view="players"] .right-mode-title {
+    font-size: 17px !important;
+  }
+
+  body[data-mobile-view="players"] .position-filter-chip,
+  body[data-mobile-view="players"] .right-mode-btn,
+  body[data-mobile-view="players"] #favoriteFilterBtn {
+    min-height: 36px !important;
+    padding: 7px 11px !important;
+    font-size: 11px !important;
+  }
+
+  body[data-mobile-view="players"] #showPlayerListBtn {
+    max-width: 46vw !important;
+  }
+
+  body[data-mobile-view="players"] .trade-search {
+    gap: 8px !important;
+  }
+
+  body[data-mobile-view="players"] .trade-header {
+    gap: 7px !important;
+  }
+}
+
+/* MOBILE PLAYER LIST ROW FINAL LAYER */
+@media (max-width: 768px) {
+  body[data-mobile-view="players"] .right-panel,
+  body[data-mobile-view="players"] .trade-list,
+  body[data-mobile-view="players"] #tradeList {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+  }
+
+  body[data-mobile-view="players"] .right-modebar,
+  body[data-mobile-view="players"] .trade-search,
+  body[data-mobile-view="players"] .trade-header {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  body[data-mobile-view="players"] .right-modebar > *,
+  body[data-mobile-view="players"] .trade-search > *,
+  body[data-mobile-view="players"] .trade-header > * {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 430px) {
+  body[data-mobile-view="players"] .right-panel,
+  body[data-mobile-view="players"] .trade-list,
+  body[data-mobile-view="players"] #tradeList {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+/* MOBILE PLAYERS TOP CONTROLS FINAL LAYER */
+@media (max-width: 768px) {
+  body[data-mobile-view="players"] .right-modebar {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+    margin: 0 0 12px !important;
+  }
+
+  body[data-mobile-view="players"] .right-mode-title {
+    text-align: center !important;
+    font-size: 18px !important;
+    line-height: 1.1 !important;
+    font-weight: 900 !important;
+  }
+
+  body[data-mobile-view="players"] .right-mode-actions {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  body[data-mobile-view="players"] .right-mode-actions #activePositionChip[hidden] {
+    display: none !important;
+  }
+
+  body[data-mobile-view="players"] #favoriteFilterBtn,
+  body[data-mobile-view="players"] #showPlayerListBtn {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    min-height: 44px !important;
+    border-radius: 14px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 10px 12px !important;
+    font-size: 12px !important;
+    font-weight: 800 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    box-sizing: border-box !important;
+  }
+
+  body[data-mobile-view="players"] .trade-search {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+    margin: 0 0 12px !important;
+  }
+
+  body[data-mobile-view="players"] .trade-search .toggle-chip {
+    order: -1 !important;
+    width: 100% !important;
+    min-height: 46px !important;
+    padding: 10px 12px !important;
+    border-radius: 14px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 12px !important;
+    font-size: 13px !important;
+    font-weight: 800 !important;
+    white-space: nowrap !important;
+    box-sizing: border-box !important;
+  }
+
+  body[data-mobile-view="players"] .trade-search .toggle-chip .toggle-chip-label {
+    min-width: 0 !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+  }
+
+  body[data-mobile-view="players"] .trade-search .toggle-chip input {
+    width: 34px !important;
+    height: 18px !important;
+    flex: 0 0 34px !important;
+  }
+
+  body[data-mobile-view="players"] .trade-search .toggle-chip input::after {
+    width: 12px !important;
+    height: 12px !important;
+  }
+
+  body[data-mobile-view="players"] .trade-search .toggle-chip input:checked::after {
+    transform: translateX(16px) !important;
+  }
+
+  body[data-mobile-view="players"] #searchInput,
+  body[data-mobile-view="players"] .trade-search input[type="search"] {
+    width: 100% !important;
+    min-height: 44px !important;
+    border-radius: 14px !important;
+    padding: 11px 13px !important;
+    box-sizing: border-box !important;
+  }
+
+  body[data-mobile-view="players"] .trade-header {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+    margin: 0 0 12px !important;
+  }
+
+  body[data-mobile-view="players"] .trade-header select,
+  body[data-mobile-view="players"] #teamFilter,
+  body[data-mobile-view="players"] #positionFilter,
+  body[data-mobile-view="players"] #sortSelect {
+    width: 100% !important;
+    min-height: 42px !important;
+    border-radius: 12px !important;
+    padding: 10px 12px !important;
+    box-sizing: border-box !important;
+  }
+}
+
+@media (max-width: 430px) {
+  body[data-mobile-view="players"] #favoriteFilterBtn,
+  body[data-mobile-view="players"] #showPlayerListBtn {
+    min-height: 42px !important;
+    font-size: 11px !important;
+    padding: 9px 10px !important;
+  }
+
+  body[data-mobile-view="players"] .trade-search .toggle-chip {
+    min-height: 44px !important;
+    font-size: 12px !important;
+    padding: 9px 11px !important;
+  }
+}
+
+/* MOBILE PITCH DENSITY FINAL LAYER */
+@media (max-width: 768px) {
+  body[data-mobile-view="hold"] .mobile-pitch-slot {
+    margin-top: 6px !important;
+    margin-bottom: 18px !important;
+    scroll-margin-bottom: 108px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .pitch {
+    padding: 8px 8px 12px !important;
+    min-height: 430px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-formation-board {
+    gap: 6px !important;
+    min-height: 408px !important;
+    justify-content: space-between !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-formation-row-group {
+    gap: 2px !important;
+    flex: 1 1 0 !important;
+    justify-content: center !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-formation-row-label {
+    min-height: 12px !important;
+    font-size: 8px !important;
+    margin-bottom: 1px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-formation-row {
+    gap: 6px !important;
+    align-items: stretch !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-card {
+    flex: 1 1 0 !important;
+    width: auto !important;
+    max-width: min(104px, calc((100% / var(--row-count)) - 6px)) !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-hit {
+    gap: 4px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-avatar {
+    width: 22px !important;
+    height: 22px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-chip {
+    min-height: 36px !important;
+    padding: 5px 8px !important;
+    border-radius: 16px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-card .player-name {
+    font-size: 8.6px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-card .player-price {
+    font-size: 8.2px !important;
+  }
+}
+
+@media (max-width: 430px) {
+  body[data-mobile-view="hold"] .mobile-pitch-slot {
+    margin-bottom: 20px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .pitch {
+    min-height: 404px !important;
+    padding: 8px 7px 12px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-formation-board {
+    min-height: 384px !important;
+    gap: 5px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-formation-row {
+    gap: 5px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-card {
+    max-width: min(100px, calc((100% / var(--row-count)) - 5px)) !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-chip {
+    min-height: 34px !important;
+    padding: 4px 7px !important;
+  }
+}
+
+/* MOBILE PITCH VISUAL FINAL LAYER */
+@media (max-width: 768px) {
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-hit {
+    gap: 6px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-avatar {
+    width: 30px !important;
+    height: 30px !important;
+    background: rgba(255, 255, 255, 0.14) !important;
+    border: 2px solid rgba(255,255,255,0.78) !important;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.16) !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-avatar.empty {
+    background: rgba(255,255,255,0.08) !important;
+    border: 1.5px dashed rgba(255,255,255,0.72) !important;
+    box-shadow: none !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-avatar img,
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-avatar .flag-img {
+    width: 24px !important;
+    height: 24px !important;
+    border-radius: 999px !important;
+    object-fit: cover !important;
+    border: 0 !important;
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.20) !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-avatar-plus,
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-avatar-code {
+    font-size: 16px !important;
+    color: rgba(255,255,255,0.96) !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-avatar .pitch-captain-armband {
+    top: -5px !important;
+    right: -7px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-chip {
+    width: auto !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-chip.active {
+    outline: 0 !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-card .player-name {
+    max-width: 92px !important;
+    color: #ffffff !important;
+    font-size: 8.8px !important;
+    font-weight: 900 !important;
+    line-height: 1.08 !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.28) !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-card .player-price {
+    color: rgba(255,255,255,0.92) !important;
+    font-size: 8.3px !important;
+    font-weight: 800 !important;
+    line-height: 1.05 !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+    margin-top: 1px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-card.empty .player-name {
+    color: rgba(255,255,255,0.90) !important;
+    font-weight: 800 !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-card.empty .player-price {
+    color: rgba(255,255,255,0.78) !important;
+  }
+}
+
+@media (max-width: 430px) {
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-avatar {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-avatar img,
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-avatar .flag-img {
+    width: 22px !important;
+    height: 22px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-card .player-name {
+    max-width: 84px !important;
+    font-size: 8.2px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-pitch-slot .mobile-slot-card .player-price {
+    font-size: 7.9px !important;
   }
 }
 
