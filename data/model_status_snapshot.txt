@@ -1,6 +1,6 @@
 VM 2026 MODEL STATUS SNAPSHOT
 
-Oprettet: 2026-07-01T17:08:04
+Oprettet: 2026-07-02T07:17:26
 
 VURDERING
 - Bedste formation i seneste optimizer-kørsel: 3-4-3.
@@ -10,40 +10,40 @@ VURDERING
 - Forbehold: Startvurderinger, odds og trupper er stadig foreløbige og skal opdateres løbende.
 
 PLAYER POOL
-- Rækker: 650
-- Officiel Holdet-master: 650
-- Hold: 25
+- Rækker: 598
+- Officiel Holdet-master: 598
+- Hold: 23
 - Mangler pris: 0
-- Positioner: {'MID': 219, 'DEF': 210, 'FWD': 145, 'GK': 76}
+- Positioner: {'MID': 199, 'DEF': 194, 'FWD': 135, 'GK': 70}
 
 EV-FIL
-- Rækker: 650
-- Weighted EV sum: 625.008
-- Weighted EV mean: 0.9616
-- Weighted EV median: 0.8635
-- Positioner: {'MID': 219, 'DEF': 210, 'FWD': 145, 'GK': 76}
+- Rækker: 598
+- Weighted EV sum: 576.433
+- Weighted EV mean: 0.9639
+- Weighted EV median: 0.8649
+- Positioner: {'MID': 199, 'DEF': 194, 'FWD': 135, 'GK': 70}
 
 FORMATIONER
-- 3-4-3: status=Optimal, adjEV=152.355, rawEV=17.012, pris=49.918
-- 3-5-2: status=Optimal, adjEV=150.596, rawEV=21.862, pris=49.986
-- 4-3-3: status=Optimal, adjEV=151.635, rawEV=17.957, pris=49.993
-- 4-4-2: status=Optimal, adjEV=150.618, rawEV=20.213, pris=49.962
-- 4-5-1: status=Optimal, adjEV=149.806, rawEV=17.533, pris=49.988
-- 5-3-2: status=Optimal, adjEV=144.009, rawEV=18.393, pris=49.973
-- 5-4-1: status=Optimal, adjEV=142.528, rawEV=13.565, pris=49.97
+- 3-4-3: status=Optimal, adjEV=152.605, rawEV=17.208, pris=49.922
+- 3-5-2: status=Optimal, adjEV=150.795, rawEV=20.274, pris=49.982
+- 4-3-3: status=Optimal, adjEV=151.55, rawEV=20.138, pris=49.987
+- 4-4-2: status=Optimal, adjEV=150.504, rawEV=20.795, pris=49.97
+- 4-5-1: status=Optimal, adjEV=149.01, rawEV=17.019, pris=49.938
+- 5-3-2: status=Optimal, adjEV=144.303, rawEV=20.108, pris=49.97
+- 5-4-1: status=Optimal, adjEV=142.305, rawEV=15.035, pris=49.964
 
 BEDSTE HOLD
 - selected_formation: 3-4-3
-- squad_total_price_m: 49.918
-- squad_total_adj_ev: 152.355
-- squad_total_raw_ev: 17.012
+- squad_total_price_m: 49.922
+- squad_total_adj_ev: 152.605
+- squad_total_raw_ev: 17.208
 
 SPILLERE
 - David Raya | ESP | GK | pris=5.0 | EV=16.739
+- Alex Freeman | USA | DEF | pris=3.0 | EV=6.160
 - Ibrahima Konate | FRA | DEF | pris=3.0 | EV=9.235
 - Lucas Hernandez | FRA | DEF | pris=3.0 | EV=7.313
-- Max Arfsten | USA | DEF | pris=3.0 | EV=5.901
-- Jordan Henderson | ENG | MID | pris=3.5 | EV=11.408
+- Jordan Henderson | ENG | MID | pris=3.5 | EV=11.399
 - Manu Koné | FRA | MID | pris=3.6 | EV=13.121
 - Martin Zubimendi | ESP | MID | pris=3.5 | EV=14.621
 - N'Golo Kante | FRA | MID | pris=3.0 | EV=8.014

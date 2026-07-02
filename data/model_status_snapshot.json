@@ -1,90 +1,90 @@
 {
-  "created_at": "2026-07-01T17:08:04",
+  "created_at": "2026-07-02T07:17:26",
   "assessment": {
     "best_formation": "3-4-3",
     "message": "Modellen bruger nu Holdet.dk game 616 som officiel master-player-pool. EV-filen er rebased til de officielle Holdet-spillere, og optimizer-holdene matcher appens player_pool.",
     "caveat": "Spillerfelt, startvurderinger og odds er stadig foreløbige. Kun første runde har bookmaker-odds pt.; resten bygger på modelinput."
   },
   "player_pool": {
-    "rows": 650,
-    "official_holdet_master": 650,
+    "rows": 598,
+    "official_holdet_master": 598,
     "positions": {
-      "MID": 219,
-      "DEF": 210,
-      "FWD": 145,
-      "GK": 76
+      "MID": 199,
+      "DEF": 194,
+      "FWD": 135,
+      "GK": 70
     },
-    "teams": 25,
+    "teams": 23,
     "missing_price": 0
   },
   "ev_file": {
-    "rows": 650,
-    "weighted_ev_sum": 625.008434,
-    "weighted_ev_mean": 0.9615514369230769,
-    "weighted_ev_median": 0.863461,
+    "rows": 598,
+    "weighted_ev_sum": 576.4330289999999,
+    "weighted_ev_mean": 0.9639348311036788,
+    "weighted_ev_median": 0.86493,
     "positions": {
-      "MID": 219,
-      "DEF": 210,
-      "FWD": 145,
-      "GK": 76
+      "MID": 199,
+      "DEF": 194,
+      "FWD": 135,
+      "GK": 70
     }
   },
   "formations": [
     {
       "formation": "3-4-3",
       "status": "Optimal",
-      "adj_ev": 152.355,
-      "raw_ev": 17.012,
-      "price_m": 49.918
+      "adj_ev": 152.605,
+      "raw_ev": 17.208,
+      "price_m": 49.922
     },
     {
       "formation": "3-5-2",
       "status": "Optimal",
-      "adj_ev": 150.596,
-      "raw_ev": 21.862,
-      "price_m": 49.986
+      "adj_ev": 150.795,
+      "raw_ev": 20.274,
+      "price_m": 49.982
     },
     {
       "formation": "4-3-3",
       "status": "Optimal",
-      "adj_ev": 151.635,
-      "raw_ev": 17.957,
-      "price_m": 49.993
+      "adj_ev": 151.55,
+      "raw_ev": 20.138,
+      "price_m": 49.987
     },
     {
       "formation": "4-4-2",
       "status": "Optimal",
-      "adj_ev": 150.618,
-      "raw_ev": 20.213,
-      "price_m": 49.962
+      "adj_ev": 150.504,
+      "raw_ev": 20.795,
+      "price_m": 49.97
     },
     {
       "formation": "4-5-1",
       "status": "Optimal",
-      "adj_ev": 149.806,
-      "raw_ev": 17.533,
-      "price_m": 49.988
+      "adj_ev": 149.01,
+      "raw_ev": 17.019,
+      "price_m": 49.938
     },
     {
       "formation": "5-3-2",
       "status": "Optimal",
-      "adj_ev": 144.009,
-      "raw_ev": 18.393,
-      "price_m": 49.973
+      "adj_ev": 144.303,
+      "raw_ev": 20.108,
+      "price_m": 49.97
     },
     {
       "formation": "5-4-1",
       "status": "Optimal",
-      "adj_ev": 142.528,
-      "raw_ev": 13.565,
-      "price_m": 49.97
+      "adj_ev": 142.305,
+      "raw_ev": 15.035,
+      "price_m": 49.964
     }
   ],
   "best_squad": {
     "selected_formation": "3-4-3",
-    "squad_total_price_m": 49.918,
-    "squad_total_adj_ev": 152.355,
-    "squad_total_raw_ev": 17.012,
+    "squad_total_price_m": 49.922,
+    "squad_total_adj_ev": 152.605,
+    "squad_total_raw_ev": 17.208,
     "players": [
       {
         "player_id": "david_raya__esp",
@@ -93,6 +93,14 @@
         "position": "GK",
         "price_m": 4.985,
         "ev": 16.739401442307692
+      },
+      {
+        "player_id": "alex_freeman__usa",
+        "player_name": "Alex Freeman",
+        "team_id": "USA",
+        "position": "DEF",
+        "price_m": 2.994,
+        "ev": 6.159682937248204
       },
       {
         "player_id": "ibrahima_konat__fra",
@@ -111,20 +119,12 @@
         "ev": 7.313303112599207
       },
       {
-        "player_id": "max_arfsten__usa",
-        "player_name": "Max Arfsten",
-        "team_id": "USA",
-        "position": "DEF",
-        "price_m": 2.985,
-        "ev": 5.901232937248202
-      },
-      {
         "player_id": "jordan_henderson__eng",
         "player_name": "Jordan Henderson",
         "team_id": "ENG",
         "position": "MID",
-        "price_m": 3.522,
-        "ev": 11.40799672809829
+        "price_m": 3.517,
+        "ev": 11.39874672809829
       },
       {
         "player_id": "manu_kon__fra",
