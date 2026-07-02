@@ -8090,6 +8090,55 @@ const playerId = String(player.player_id || player.id || "");
       return null;
     }
 
+    function getDirectTooltipScorerInfo(player) {
+      try {
+        if (!player || !isScorerEligiblePlayer(player)) return null;
+        if (!Array.isArray(scorerOddsRows) || !scorerOddsRows.length) return null;
+
+        const exactPlayerId = scorerPlayerIdKey(player.player_id || "");
+        const fallbackPlayerId = scorerPlayerIdKey(player.id || "");
+
+        let rows = scorerOddsRows.filter((row) => {
+          const rowPlayerId = scorerPlayerIdKey(row.player_id || row.playerId || "");
+          if (exactPlayerId && rowPlayerId === exactPlayerId) return true;
+          if (!exactPlayerId && fallbackPlayerId && rowPlayerId === fallbackPlayerId) return true;
+          return false;
+        });
+
+        if (!rows.length && fallbackPlayerId && fallbackPlayerId !== exactPlayerId) {
+          rows = scorerOddsRows.filter((row) => {
+            const rowPlayerId = scorerPlayerIdKey(row.player_id || row.playerId || "");
+            return rowPlayerId === fallbackPlayerId;
+          });
+        }
+
+        if (!rows.length) return null;
+
+        const row = selectPreferredScorerRow(rows) || rows[0];
+        if (!row) return null;
+
+        const scorerOdds = parsePositiveOdds(getRowValue(row, ["scorer_odds", "anytime_scorer_odds", "odds"]));
+        if (!scorerOdds) return null;
+
+        const opponentName = String(row.opponent_name || row.opponentName || "").trim();
+        const fetchedLabel = String(row.scorer_fetched_label || row.fetched_label || row.source || "").trim();
+
+        return {
+          label: "Scorer i kampen",
+          shortLabel: "Scorer",
+          odds: scorerOdds,
+          oddsText: formatOddsValue(scorerOdds),
+          valueText: formatOddsValue(scorerOdds),
+          detailText: [opponentName ? `vs. ${opponentName}` : "", fetchedLabel].filter(Boolean).join(" · "),
+          sourceText: fetchedLabel,
+          fetchedLabel,
+          opponentName
+        };
+      } catch (_error) {
+        return null;
+      }
+    }
+
     function getCurrentSlots() {
       const formation = FORMATIONS[currentFormation];
       const slots = [];
@@ -12178,6 +12227,16 @@ formationSelect.value = currentFormation;
         console.warn("Supplemental odds tooltip springes over", error);
         supplementalOddsInfo = null;
       }
+      if (!supplementalOddsInfo && typeof getDirectTooltipScorerInfo === "function") {
+        supplementalOddsInfo = getDirectTooltipScorerInfo(player);
+      }
+      if (!supplementalOddsInfo && isCleanSheetEligiblePlayer(player)) {
+        try {
+          supplementalOddsInfo = getNextCleanSheetInfo(player);
+        } catch (_cleanSheetError) {
+          supplementalOddsInfo = null;
+        }
+      }
       var sourceText = source ? source.source : "odds";
       if (source && source.oddsFetchedLabel) {
         sourceText = sourceText + " (" + formatOddsSourceLabel(source.oddsFetchedLabel) + ")";
@@ -12236,6 +12295,29 @@ formationSelect.value = currentFormation;
         return html(player, Array.isArray(fixtures) ? fixtures : []);
       } catch (error) {
         console.warn("Tooltip html fallback", error);
+        var supplementalOddsInfo = null;
+        if (typeof getDirectTooltipScorerInfo === "function") {
+          supplementalOddsInfo = getDirectTooltipScorerInfo(player);
+        }
+        if (!supplementalOddsInfo && isCleanSheetEligiblePlayer(player)) {
+          try {
+            supplementalOddsInfo = getNextCleanSheetInfo(player);
+          } catch (_cleanSheetError) {
+            supplementalOddsInfo = null;
+          }
+        }
+        if (supplementalOddsInfo) {
+          return '<div class="vm-fixture-tooltip-head">' +
+              '<span>' + esc(supplementalOddsInfo.label) + '</span>' +
+            '</div>' +
+            '<div class="vm-fixture-tooltip-clean-sheet">' +
+              '<div class="vm-fixture-tooltip-clean-sheet-copy">' +
+                '<div class="vm-fixture-tooltip-clean-sheet-label">' + esc(supplementalOddsInfo.label) + '</div>' +
+                '<div class="vm-fixture-tooltip-clean-sheet-subline">' + esc(supplementalOddsInfo.detailText || "") + '</div>' +
+              '</div>' +
+              '<div class="vm-fixture-tooltip-clean-sheet-value">' + esc(supplementalOddsInfo.valueText) + '</div>' +
+            '</div>';
+        }
         return '<div class="vm-fixture-tooltip-head"><span>Ingen kommende kampe</span></div>' +
           '<div class="vm-fixture-tooltip-empty">Ingen kommende kampe fundet.</div>';
       }
@@ -12273,12 +12355,6 @@ formationSelect.value = currentFormation;
       placeTooltip(card);
 
       try {
-        if (isScorerEligiblePlayer(player)) {
-          try {
-            await ensureScorerOddsLoaded();
-          } catch (_scorerLoadError) {}
-        }
-
         var nextMatchInfo = null;
         try {
           nextMatchInfo = playerNextMatchInfoById.get(String(player.player_id || "")) || null;
