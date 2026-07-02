@@ -4212,7 +4212,7 @@
       <span class="mobile-bottom-nav-label">Spillere</span>
     </button>
     <button type="button" class="mobile-bottom-nav-btn" data-mobile-view="changes">
-      <span class="mobile-bottom-nav-label">Ændringer</span>
+      <span class="mobile-bottom-nav-label">Mine transfers</span>
     </button>
   </nav>
 
@@ -19681,9 +19681,21 @@ formationSelect.value = currentFormation;
 
 /* MOBILE HOLD ACTION BUTTON ROW FINAL LAYER */
 @media (max-width: 768px) {
+  body[data-mobile-view="hold"] .mobile-hold-actions-slot .action-buttons,
+  body[data-mobile-view="hold"] .mobile-actions-card-slot .mobile-hold-actions-slot .action-buttons {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-auto-flow: row !important;
+    gap: 10px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-hold-actions-slot .action-buttons > .action-btn,
+  body[data-mobile-view="hold"] .mobile-actions-card-slot .mobile-hold-actions-slot .action-buttons > .action-btn,
+  body[data-mobile-view="hold"] .mobile-hold-actions-slot #undoBtn,
+  body[data-mobile-view="hold"] .mobile-hold-actions-slot #clearTeamBtn,
   body[data-mobile-view="hold"] .mobile-actions-card-slot #undoBtn,
   body[data-mobile-view="hold"] .mobile-actions-card-slot #clearTeamBtn {
-    grid-column: auto !important;
+    grid-column: auto / span 1 !important;
     width: 100% !important;
     min-width: 0 !important;
   }
@@ -20112,6 +20124,169 @@ formationSelect.value = currentFormation;
   }
 }
 
+/* MOBILE FINAL FIXES HEADER ODDS ACTIONS */
+@media (max-width: 768px) {
+  body[data-mobile-view="hold"] .team-header {
+    grid-template-columns: minmax(0, 1fr) auto !important;
+    grid-template-areas:
+      "title auth"
+      "cards" !important;
+    column-gap: 8px !important;
+    row-gap: 6px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-global-auth-slot {
+    grid-area: auth !important;
+    width: auto !important;
+    max-width: min(52vw, 220px) !important;
+    justify-content: flex-end !important;
+    align-self: start !important;
+    margin: 0 !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-global-auth-slot .topbar-auth {
+    display: flex !important;
+    width: auto !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    flex-wrap: nowrap !important;
+    gap: 6px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-global-auth-slot .topbar-user {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    max-width: 30vw !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    font-size: 10px !important;
+    min-height: 30px !important;
+    padding: 6px 8px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-global-auth-slot .topbar-btn,
+  body[data-mobile-view="hold"] .mobile-global-auth-slot #logoutBtn {
+    flex: 0 0 auto !important;
+    min-height: 30px !important;
+    padding: 6px 8px !important;
+    font-size: 10px !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-controls-slot .mobile-hold-captain-slot {
+    grid-column: 1 / -1 !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+    align-items: stretch !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-controls-slot .mobile-hold-captain-slot .action-btn,
+  body[data-mobile-view="hold"] .mobile-controls-slot .mobile-hold-captain-slot .strategy-tools {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-controls-slot .mobile-hold-captain-slot .strategy-tools {
+    position: relative !important;
+    display: flex !important;
+    align-items: stretch !important;
+    justify-content: stretch !important;
+    margin: 0 !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-controls-slot .mobile-hold-captain-slot .lowest-odds-btn {
+    width: 100% !important;
+    min-height: 46px !important;
+    padding: 9px 11px !important;
+    font-size: 12px !important;
+    border-radius: 18px !important;
+    justify-content: center !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-controls-slot .mobile-hold-captain-slot .action-btn {
+    grid-column: auto !important;
+  }
+
+  body[data-mobile-view="hold"] .mobile-strategy-slot .strategy-content {
+    gap: 6px !important;
+  }
+
+  body[data-mobile-view="hold"] .lowest-odds-popover {
+    position: fixed !important;
+    top: clamp(104px, 16vh, 164px) !important;
+    left: 10px !important;
+    right: 10px !important;
+    width: auto !important;
+    max-width: calc(100vw - 20px) !important;
+    max-height: calc(100dvh - 156px) !important;
+    padding: 10px 10px 8px !important;
+    overflow: visible !important;
+    z-index: 10030 !important;
+  }
+
+  body[data-mobile-view="hold"] .lowest-odds-popover-head {
+    position: relative !important;
+    top: auto !important;
+    z-index: auto !important;
+    background: transparent !important;
+    padding-bottom: 4px !important;
+  }
+
+  body[data-mobile-view="hold"] .lowest-odds-popover-title {
+    font-size: 11px !important;
+    line-height: 1.1 !important;
+  }
+
+  body[data-mobile-view="hold"] .lowest-odds-popover-subtitle {
+    margin-top: 1px !important;
+    font-size: 8px !important;
+  }
+
+  body[data-mobile-view="hold"] .lowest-odds-list {
+    margin-top: 6px !important;
+    gap: 5px !important;
+  }
+
+  body[data-mobile-view="hold"] .lowest-odds-row {
+    grid-template-columns: 1fr !important;
+    row-gap: 3px !important;
+  }
+
+  body[data-mobile-view="hold"] .lowest-odds-match {
+    gap: 4px !important;
+  }
+
+  body[data-mobile-view="hold"] .lowest-odds-match-text {
+    font-size: 10px !important;
+    line-height: 1.1 !important;
+  }
+
+  body[data-mobile-view="hold"] .lowest-odds-oddsline {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 6px !important;
+    font-size: 10px !important;
+  }
+
+  body[data-mobile-view="hold"] .lowest-odds-odd {
+    justify-content: flex-start !important;
+  }
+
+  body[data-mobile-view="hold"] .lowest-odds-odd-label {
+    font-size: 8px !important;
+  }
+
+  body[data-mobile-view="hold"] .lowest-odds-oddsline strong {
+    font-size: 10px !important;
+  }
+
+  body[data-mobile-view="hold"] .lowest-odds-close {
+    width: 22px !important;
+    height: 22px !important;
+    flex: 0 0 22px !important;
+  }
+}
+
 /* MOBILE PITCH DENSITY FINAL LAYER */
 @media (max-width: 768px) {
   body[data-mobile-view="hold"] .mobile-pitch-slot {
@@ -20346,13 +20521,14 @@ formationSelect.value = currentFormation;
   const strategyBudgetSlot = document.getElementById("mobileStrategyBudgetSlot");
   const mobileGlobalAuthSlot = document.getElementById("mobileGlobalAuthSlot");
   const mobileOpenPlayersBtn = document.getElementById("mobileOpenPlayersBtn");
+  const strategyTools = strategyPanel.querySelector(".strategy-tools");
   const actionControls = document.querySelector("#actionBar .action-controls");
   const actionButtons = document.querySelector("#actionBar .action-buttons");
   const formationWrap = document.querySelector(".formation-select-wrap");
   const captainBtn = document.getElementById("changeCaptainBtn");
   const budgetBox = document.querySelector(".manual-budget-box");
   const topbarAuth = document.querySelector(".topbar-auth");
-  if (!nav || !bankRow || !holdToolbar || !strategyPanel || !pitch || !mobileHoldMainCard || !mobileEconomySlot || !mobileControlsSlot || !mobileStrategySlot || !mobilePitchSlot || !mobileActionsCardSlot || !holdFormationSlot || !holdCaptainSlot || !holdActionsSlot || !strategyBudgetSlot || !mobileGlobalAuthSlot || !actionControls || !actionButtons || !formationWrap || !captainBtn || !budgetBox || !topbarAuth) return;
+  if (!nav || !bankRow || !holdToolbar || !strategyPanel || !pitch || !mobileHoldMainCard || !mobileEconomySlot || !mobileControlsSlot || !mobileStrategySlot || !mobilePitchSlot || !mobileActionsCardSlot || !holdFormationSlot || !holdCaptainSlot || !holdActionsSlot || !strategyBudgetSlot || !mobileGlobalAuthSlot || !strategyTools || !actionControls || !actionButtons || !formationWrap || !captainBtn || !budgetBox || !topbarAuth) return;
 
   const isMobile = () => window.matchMedia("(max-width: 700px)").matches;
   const body = document.body;
@@ -20365,6 +20541,7 @@ formationSelect.value = currentFormation;
   const pitchAnchor = document.createComment("mobile-pitch-anchor");
   const formationAnchor = document.createComment("mobile-formation-anchor");
   const captainAnchor = document.createComment("mobile-captain-anchor");
+  const strategyToolsAnchor = document.createComment("mobile-strategy-tools-anchor");
   const actionButtonsAnchor = document.createComment("mobile-action-buttons-anchor");
   const authAnchor = document.createComment("mobile-auth-anchor");
   bankRow.parentNode.insertBefore(bankRowAnchor, bankRow);
@@ -20373,6 +20550,7 @@ formationSelect.value = currentFormation;
   pitch.parentNode.insertBefore(pitchAnchor, pitch);
   formationWrap.parentNode.insertBefore(formationAnchor, formationWrap);
   captainBtn.parentNode.insertBefore(captainAnchor, captainBtn);
+  strategyTools.parentNode.insertBefore(strategyToolsAnchor, strategyTools);
   actionButtons.parentNode.insertBefore(actionButtonsAnchor, actionButtons);
   topbarAuth.parentNode.insertBefore(authAnchor, topbarAuth);
 
@@ -20401,6 +20579,7 @@ formationSelect.value = currentFormation;
     if (holdActionsSlot.parentElement !== mobileActionsCardSlot) mobileActionsCardSlot.appendChild(holdActionsSlot);
     if (formationWrap.parentElement !== holdFormationSlot) holdFormationSlot.appendChild(formationWrap);
     if (captainBtn.parentElement !== holdCaptainSlot) holdCaptainSlot.appendChild(captainBtn);
+    if (strategyTools.parentElement !== holdCaptainSlot) holdCaptainSlot.appendChild(strategyTools);
     if (actionButtons.parentElement !== holdActionsSlot) holdActionsSlot.appendChild(actionButtons);
     if (topbarAuth.parentElement !== mobileGlobalAuthSlot) mobileGlobalAuthSlot.appendChild(topbarAuth);
     if (!body.dataset.mobileView) setActiveView("hold");
@@ -20428,6 +20607,9 @@ formationSelect.value = currentFormation;
     }
     if (captainAnchor.parentNode && captainBtn.parentNode !== actionButtons) {
       captainAnchor.parentNode.insertBefore(captainBtn, captainAnchor.nextSibling);
+    }
+    if (strategyToolsAnchor.parentNode && strategyTools.parentNode !== strategyToolsAnchor.parentNode) {
+      strategyToolsAnchor.parentNode.insertBefore(strategyTools, strategyToolsAnchor.nextSibling);
     }
     if (actionButtonsAnchor.parentNode && actionButtons.parentNode !== actionButtonsAnchor.parentNode) {
       actionButtonsAnchor.parentNode.insertBefore(actionButtons, actionButtonsAnchor.nextSibling);
