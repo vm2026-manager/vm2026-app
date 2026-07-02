@@ -5029,68 +5029,110 @@ function strategyDisplayName(strategyKey) {
       })[0] || null;
     }
 
-    function getTopNextRoundMatches() {
-      const now = getNow();
-      const upcomingFixtures = (Array.isArray(fixtures) ? fixtures : [])
-        .filter(fixture => {
-          const kickoff = fixture.kickoffDate || kickoffToDate(fixture.kickoff_dk || fixture.kickoff);
-          return kickoff instanceof Date && !Number.isNaN(kickoff.getTime()) && kickoff > now;
-        })
-        .sort((a, b) => {
-          const aDate = a.kickoffDate || kickoffToDate(a.kickoff_dk || a.kickoff);
-          const bDate = b.kickoffDate || kickoffToDate(b.kickoff_dk || b.kickoff);
-          return aDate - bDate;
+    function getLowestOddsRoundConfig() {
+      const currentWindowLabel = typeof getTransferWindowLabel === "function"
+        ? getTransferWindowLabel()
+        : "";
+
+      if (currentWindowLabel === ROUND_OF_16_TRANSFER_WINDOW_LABEL) {
+        return {
+          title: "Laveste odds i ottendedelsfinalerne",
+          allowedStages: ["R16", "ROUND_OF_16", "OTTENDELSFINALER", "1/8", "1/8-FINALER"],
+          minMatchId: 89,
+          maxMatchId: 96
+        };
+      }
+
+      if (currentWindowLabel === "runde 3 → 1/16-finaler") {
+        return {
+          title: "Laveste odds i 1/16-finalerne",
+          allowedStages: ["R32", "1/16", "1/16-FINALER"],
+          minMatchId: 73,
+          maxMatchId: 88
+        };
+      }
+
+      return {
+        title: "Top 5 næste kampe",
+        allowedStages: [],
+        minMatchId: null,
+        maxMatchId: null
+      };
+    }
+
+    function isOddsRowInLowestOddsRound(row, roundConfig = getLowestOddsRoundConfig()) {
+      if (!row || !roundConfig) return false;
+      const stage = String(getRowValue(row, ["stage", "round", "phase"]) || "")
+        .trim()
+        .toUpperCase();
+      if (Array.isArray(roundConfig.allowedStages) && roundConfig.allowedStages.includes(stage)) {
+        return true;
+      }
+
+      const matchId = Number(String(getRowValue(row, ["match_id", "fixture_id", "id"]) || "").trim());
+      if (Number.isFinite(matchId)) {
+        if (Number.isFinite(roundConfig.minMatchId) && matchId < roundConfig.minMatchId) return false;
+        if (Number.isFinite(roundConfig.maxMatchId) && matchId > roundConfig.maxMatchId) return false;
+        if (Number.isFinite(roundConfig.minMatchId) || Number.isFinite(roundConfig.maxMatchId)) return true;
+      }
+
+      return !stage && !Number.isFinite(roundConfig.minMatchId) && !Number.isFinite(roundConfig.maxMatchId);
+    }
+
+    function buildLowestOddsMatchesFromRows(oddsRows, roundConfig = getLowestOddsRoundConfig()) {
+      const rowsByMatch = new Map();
+
+      (Array.isArray(oddsRows) ? oddsRows : [])
+        .filter(row => isOddsRowInLowestOddsRound(row, roundConfig))
+        .forEach(row => {
+          const rowMatchId = String(getRowValue(row, ["match_id", "fixture_id", "id"]) || "").trim();
+          const rowHome = getOddsRowTeamId(row, "home") || canonicalTeamId(getRowValue(row, ["home", "home_team", "team_home"]));
+          const rowAway = getOddsRowTeamId(row, "away") || canonicalTeamId(getRowValue(row, ["away", "away_team", "team_away"]));
+          const rowKey = rowMatchId || `${rowHome}__${rowAway}`;
+          if (!rowKey) return;
+          if (!rowsByMatch.has(rowKey)) rowsByMatch.set(rowKey, []);
+          rowsByMatch.get(rowKey).push(row);
         });
 
-      return upcomingFixtures
-        .map(fixture => {
-          const fixtureMatchId = String(fixture.match_id || fixture.fixture_id || fixture.id || "").trim();
-          const fixtureHome = canonicalTeamId(fixture.home);
-          const fixtureAway = canonicalTeamId(fixture.away);
-
-          const selectedRow = selectPreferredOddsRowForWidget(
-            matchOddsRows.filter(row => {
-              const rowMatchId = String(getRowValue(row, ["match_id", "fixture_id", "id"])).trim();
-              const rowHome = getOddsRowTeamId(row, "home") || canonicalTeamId(getRowValue(row, ["home", "home_team", "team_home"]));
-              const rowAway = getOddsRowTeamId(row, "away") || canonicalTeamId(getRowValue(row, ["away", "away_team", "team_away"]));
-
-              return (
-                (fixtureMatchId && rowMatchId === fixtureMatchId) ||
-                (rowHome === fixtureHome && rowAway === fixtureAway)
-              );
-            })
-          );
-
+      return Array.from(rowsByMatch.values())
+        .map(rowsForMatch => {
+          const selectedRow = selectPreferredOddsRowForWidget(rowsForMatch);
           if (!selectedRow) return null;
 
-          const homeOdds = parseWidgetOddsNumber(getRowValue(selectedRow, ["home_win_odds"]));
-          const drawOdds = parseWidgetOddsNumber(getRowValue(selectedRow, ["draw_odds"]));
-          const awayOdds = parseWidgetOddsNumber(getRowValue(selectedRow, ["away_win_odds"]));
+          const homeOdds = parseWidgetOddsNumber(getRowValue(selectedRow, ["home_win_odds", "h"]));
+          const drawOdds = parseWidgetOddsNumber(getRowValue(selectedRow, ["draw_odds", "x"]));
+          const awayOdds = parseWidgetOddsNumber(getRowValue(selectedRow, ["away_win_odds", "a"]));
 
-          if (!Number.isFinite(homeOdds) || !Number.isFinite(drawOdds) || !Number.isFinite(awayOdds)) {
-            return null;
-          }
+          if (!Number.isFinite(homeOdds) || !Number.isFinite(drawOdds) || !Number.isFinite(awayOdds)) return null;
 
-          const homeTeamId = getOddsRowTeamId(selectedRow, "home") || fixtureHome;
-          const awayTeamId = getOddsRowTeamId(selectedRow, "away") || fixtureAway;
+          const homeTeamId = getOddsRowTeamId(selectedRow, "home") || canonicalTeamId(getRowValue(selectedRow, ["home", "home_team", "team_home"]));
+          const awayTeamId = getOddsRowTeamId(selectedRow, "away") || canonicalTeamId(getRowValue(selectedRow, ["away", "away_team", "team_away"]));
+          if (!homeTeamId || !awayTeamId) return null;
+
           const favoriteIsHome = homeOdds <= awayOdds;
-
           return {
-            matchId: String(fixture.match_id || ""),
+            matchId: String(getRowValue(selectedRow, ["match_id", "fixture_id", "id"]) || "").trim(),
             favoriteTeamId: favoriteIsHome ? homeTeamId : awayTeamId,
             underdogTeamId: favoriteIsHome ? awayTeamId : homeTeamId,
             favoriteOdds: favoriteIsHome ? homeOdds : awayOdds,
             drawOdds,
             underdogOdds: favoriteIsHome ? awayOdds : homeOdds,
-            kickoff: fixture.kickoff_dk || ""
+            kickoff: String(getRowValue(selectedRow, ["kickoff_dk", "kickoff"]) || "").trim(),
+            fetchedAt: parseWidgetOddsSnapshotTime(selectedRow)
           };
         })
         .filter(Boolean)
         .sort((a, b) => {
           if (Math.abs(a.favoriteOdds - b.favoriteOdds) > 0.0001) return a.favoriteOdds - b.favoriteOdds;
-          return String(a.kickoff || "").localeCompare(String(b.kickoff || ""));
+          const kickoffCompare = String(a.kickoff || "").localeCompare(String(b.kickoff || ""));
+          if (kickoffCompare !== 0) return kickoffCompare;
+          return (a.fetchedAt || 0) - (b.fetchedAt || 0);
         })
         .slice(0, 5);
+    }
+
+    function getTopNextRoundMatches(oddsRows = matchOddsRows) {
+      return buildLowestOddsMatchesFromRows(oddsRows, getLowestOddsRoundConfig());
     }
 
     function getTeamFlagCode(teamId) {
@@ -5108,10 +5150,24 @@ function strategyDisplayName(strategyKey) {
       }
     }
 
-    function renderLowestOddsPopover() {
+    async function renderLowestOddsPopover() {
       if (!lowestOddsList) return;
       try {
-        const matches = getTopNextRoundMatches();
+        const titleEl = lowestOddsPopover?.querySelector(".lowest-odds-popover-title");
+        const roundConfig = getLowestOddsRoundConfig();
+        if (titleEl) titleEl.textContent = roundConfig.title || "Top 5 næste kampe";
+        let matches = getTopNextRoundMatches();
+        if (!matches.length && Number.isFinite(roundConfig.minMatchId)) {
+          const knockoutRows = await fetchCsvRows(
+            KNOCKOUT_MATCH_ODDS_PROBS_URL,
+            "Kunne ikke hente knockout match odds probs",
+            true
+          );
+          matches = buildLowestOddsMatchesFromRows(
+            (Array.isArray(matchOddsRows) ? matchOddsRows : []).concat(Array.isArray(knockoutRows) ? knockoutRows : []),
+            roundConfig
+          );
+        }
         if (!matches.length) {
           lowestOddsList.innerHTML = `<div class="lowest-odds-empty">Ingen kommende kampe med gyldige 1X2-odds fundet.</div>`;
           return;
