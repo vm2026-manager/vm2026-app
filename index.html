@@ -301,6 +301,35 @@
       }
     }
 
+    @media (min-width: 701px) {
+      .pitch-empty-card {
+        height: auto;
+        min-height: 64px;
+        padding: 10px 6px 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+      }
+
+      .pitch-empty-card .player-figure.empty {
+        margin-bottom: 1px;
+      }
+
+      .pitch-empty-card .player-name {
+        max-width: 88px;
+        font-size: 10px;
+        line-height: 1.15;
+        white-space: normal;
+        text-align: center;
+      }
+
+      .slot .pitch-empty-card ~ .slot-actions {
+        margin-top: 6px;
+      }
+    }
+
     @media (max-width: 1100px) {
       .strategy-tools {
         display: none;
@@ -9010,6 +9039,7 @@ const playerId = String(player.player_id || player.id || "");
             return;
           }
           if (action === "open-players") {
+            if (!requireLoginForProtectedAction("Vælg spiller")) return;
             if (slotKey) {
               setActiveSlot(slotKey);
             }
@@ -9037,6 +9067,7 @@ const playerId = String(player.player_id || player.id || "");
     }
 
     function addPlayerToBestSlot(playerId) {
+      if (!requireLoginForProtectedAction("Tilføj spiller")) return;
       const player = getPlayerById(playerId);
       if (!player) return;
       if (isPlayerUnavailable(player)) {
@@ -9088,6 +9119,7 @@ const playerId = String(player.player_id || player.id || "");
     }
 
     function addPlayerToSlot(playerId, preferredSlotKey = null) {
+      if (!requireLoginForProtectedAction("Tilføj spiller")) return;
       const player = getPlayerById(playerId);
       if (!player) return;
       if (isPlayerUnavailable(player)) {
@@ -10326,7 +10358,7 @@ function renderMobileFormationCard(slot, player, isActive) {
               <div class="pitch-player-card pitch-empty-card">
                 <div class="player-figure empty"></div>
                 <div class="player-name">${escapeHtml(displayName)}</div>
-                ${useCompactMobilePitch ? inlineMobileActions : (displayPrice ? `<div class="player-price">${displayPrice}</div>` : "")}
+                ${useCompactMobilePitch ? inlineMobileActions : ""}
               </div>
             `}
             ${defaultSlotActions}
@@ -10352,6 +10384,7 @@ function renderMobileFormationCard(slot, player, isActive) {
           if (action === "remove") {
             removePlayerFromSlot(slotKey);
           } else if (action === "replace" || action === "select") {
+            if (!requireLoginForProtectedAction("Vælg spiller")) return;
             setActiveSlot(slotKey);
           }
         });
