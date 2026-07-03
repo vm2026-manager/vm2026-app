@@ -7408,11 +7408,35 @@ function getPlayerScore(player) {
       return isUpcomingKickoffDate(fixture.kickoffDate || kickoffToDate(fixture.kickoff_dk || fixture.kickoff));
     }
 
+    function isFixtureInActiveKnockoutRound(fixture, roundConfig = getActiveKnockoutRoundConfig()) {
+      if (!fixture || !roundConfig) return false;
+
+      const stage = String(fixture.stage || "")
+        .trim()
+        .toUpperCase();
+      if (stage && stage === String(roundConfig.stageLabel || "").trim().toUpperCase()) {
+        return true;
+      }
+
+      const matchId = Number(String(fixture.match_id || fixture.matchId || "").trim());
+      if (Number.isFinite(matchId)) {
+        if (Number.isFinite(roundConfig.minMatchId) && matchId < roundConfig.minMatchId) return false;
+        if (Number.isFinite(roundConfig.maxMatchId) && matchId > roundConfig.maxMatchId) return false;
+        if (Number.isFinite(roundConfig.minMatchId) || Number.isFinite(roundConfig.maxMatchId)) return true;
+      }
+
+      return false;
+    }
+
     function getUpcomingFixturesForTeam(teamId, limit = null) {
       if (!teamId || !fixtures.length) return [];
 
       const team = canonicalTeamId(teamId);
-      const relevantFixtures = fixtures
+      const activeKnockoutRound = getActiveKnockoutRoundConfig();
+      const fixtureSource = activeKnockoutRound
+        ? fixtures.filter(f => isFixtureInActiveKnockoutRound(f, activeKnockoutRound))
+        : fixtures;
+      const relevantFixtures = fixtureSource
         .filter(f => canonicalTeamId(f.home) === team || canonicalTeamId(f.away) === team)
         .filter(f => isUpcomingFixture(f))
         .sort((a, b) => (a.kickoffDate || kickoffToDate(a.kickoff_dk || a.kickoff) || 0) - (b.kickoffDate || kickoffToDate(b.kickoff_dk || b.kickoff) || 0));
@@ -7987,6 +8011,10 @@ const playerId = String(player.player_id || player.id || "");
           return false;
         });
 
+        if (!rows.length && getActiveKnockoutRoundConfig()) {
+          return null;
+        }
+
         if (!rows.length) {
           rows = cleanSheetOddsRows.filter((row) => {
             const rowTeamId = String(row.team_id || row.teamId || "").trim();
@@ -8209,6 +8237,10 @@ const playerId = String(player.player_id || player.id || "");
 
           return false;
         });
+
+        if (!rows.length && getActiveKnockoutRoundConfig()) {
+          return null;
+        }
 
         if (!rows.length) {
           rows = candidateRows.slice();
@@ -11456,6 +11488,10 @@ function renderTradeList() {
       showStatus("Kaptajn opdateret.", "info");
     }
 
+    function getMobileLayoutToggleLabel() {
+      return isDesktopOverrideActive() ? "Mobil-version" : "PC-version";
+    }
+
     function setAuthUi() {
       if (topbarAuth) {
         topbarAuth.dataset.authState = currentUser ? "logged-in" : "logged-out";
@@ -11475,7 +11511,7 @@ function renderTradeList() {
       }
       if (pcLayoutToggleBtn) {
         const desktopOverride = isDesktopOverrideActive();
-        pcLayoutToggleBtn.textContent = desktopOverride ? "Mobilversion" : "PC-version";
+        pcLayoutToggleBtn.textContent = getMobileLayoutToggleLabel();
         pcLayoutToggleBtn.setAttribute("aria-pressed", desktopOverride ? "true" : "false");
       }
     }
@@ -12670,7 +12706,7 @@ formationSelect.value = currentFormation;
           });
         }
 
-        if (!out.length) {
+        if (!out.length && !getActiveKnockoutRoundConfig()) {
           [1, 2, 3].forEach(function (roundNo) {
             var opponent = player["match_" + roundNo + "_opponent_team"] ||
               player["round" + roundNo + "_opponent_team"] ||
@@ -20279,7 +20315,7 @@ formationSelect.value = currentFormation;
     grid-area: logout !important;
   }
 
-  body[data-mobile-view="hold"] .mobile-global-auth-slot #pcLayoutToggleBtn {
+  body[data-mobile-view="hold"][data-mobile-device-context="1"] .mobile-global-auth-slot #pcLayoutToggleBtn {
     grid-area: pc !important;
     display: inline-flex !important;
     align-items: center !important;
@@ -20416,7 +20452,7 @@ formationSelect.value = currentFormation;
     display: none !important;
   }
 
-  body[data-force-desktop="1"] #pcLayoutToggleBtn {
+  body[data-force-desktop="1"][data-mobile-device-context="1"] #pcLayoutToggleBtn {
     display: inline-flex !important;
   }
 }
@@ -20667,6 +20703,14 @@ formationSelect.value = currentFormation;
 
   const MOBILE_DESKTOP_OVERRIDE_KEY = "vm2026_mobile_desktop_override_v1";
   const isMobileViewport = () => window.matchMedia("(max-width: 700px)").matches;
+  const isMobileDeviceContext = () => {
+    const ua = navigator.userAgent || "";
+    const mobileUa = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile/i.test(ua);
+    const coarsePointer = window.matchMedia("(pointer: coarse)").matches || window.matchMedia("(any-pointer: coarse)").matches;
+    const touchPoints = Number(navigator.maxTouchPoints || 0);
+    const smallTouchViewport = isMobileViewport() && (coarsePointer || touchPoints > 0);
+    return mobileUa || smallTouchViewport;
+  };
   const isDesktopOverrideActive = () => {
     try {
       return localStorage.getItem(MOBILE_DESKTOP_OVERRIDE_KEY) === "1";
@@ -20717,9 +20761,12 @@ formationSelect.value = currentFormation;
 
   const updatePcLayoutToggle = () => {
     if (!pcLayoutToggleBtn) return;
+    const mobileDeviceContext = isMobileDeviceContext();
     const desktopOverride = isDesktopOverrideActive();
+    body.dataset.mobileDeviceContext = mobileDeviceContext ? "1" : "0";
     body.dataset.forceDesktop = desktopOverride ? "1" : "0";
-    pcLayoutToggleBtn.textContent = desktopOverride ? "Mobilversion" : "PC-version";
+    pcLayoutToggleBtn.hidden = !mobileDeviceContext;
+    pcLayoutToggleBtn.textContent = desktopOverride ? "Mobil-version" : "PC-version";
     pcLayoutToggleBtn.setAttribute("aria-pressed", desktopOverride ? "true" : "false");
   };
 

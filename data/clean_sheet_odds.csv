@@ -1,87 +1,85 @@
-match_id,home,away,team_id,clean_sheet_yes_odds,clean_sheet_no_odds,source,clean_sheet_fetched_at,clean_sheet_fetched_label,note,stage,group,team_name,opponent_id,opponent_name,kickoff_dk,yes_odds,no_odds,odds_fetched_at,odds_fetched_label
-41,ARG,AUT,ARG,1.95,1.77,Unibet,,runde 2 screenshots,Manuelt aflæst fra tidligere runde 2 screenshot,,,,,,,,,,
-41,ARG,AUT,AUT,4.75,1.16,Unibet,,runde 2 screenshots,Manuelt aflæst fra tidligere runde 2 screenshot,,,,,,,,,,
-48,COL,COD,COD,4.50,1.16,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-48,COL,COD,COL,1.77,1.95,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-49,SUI,CAN,CAN,3.40,1.29,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-49,SUI,CAN,SUI,2.90,1.36,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-51,SCO,BRA,BRA,1.83,1.87,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-51,SCO,BRA,SCO,6.00,1.10,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-52,MAR,HAI,HAI,8.50,1.04,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-52,MAR,HAI,MAR,1.61,2.20,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-53,CZE,MEX,CZE,3.75,1.23,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-53,CZE,MEX,MEX,2.45,1.49,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-55,CUW,CIV,CIV,1.47,2.50,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-55,CUW,CIV,CUW,9.50,1.02,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-56,ECU,GER,ECU,4.25,1.18,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-56,ECU,GER,GER,2.70,1.40,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-57,TUN,NED,NED,1.49,2.45,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-57,TUN,NED,TUN,9.50,1.03,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-58,JPN,SWE,JPN,2.75,1.40,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-58,JPN,SWE,SWE,4.25,1.18,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-59,TUR,USA,TUR,4.50,1.16,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-59,TUR,USA,USA,2.80,1.38,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-61,NOR,FRA,FRA,2.50,1.47,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-61,NOR,FRA,NOR,4.50,1.18,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-62,SEN,IRQ,IRQ,6.25,1.08,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-62,SEN,IRQ,SEN,1.65,2.10,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-64,URU,ESP,ESP,1.98,1.73,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-64,URU,ESP,URU,5.25,1.12,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-65,NZL,BEL,BEL,1.63,2.15,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-65,NZL,BEL,NZL,7.50,1.06,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-66,EGY,IRN,EGY,2.35,1.53,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-66,EGY,IRN,IRN,2.90,1.36,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-68,PAN,ENG,ENG,1.69,2.05,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-68,PAN,ENG,PAN,8.00,1.05,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-69,COD,UZB,COD,2.40,1.50,Unibet,2026-06-24T10:36:06+02:00,24.06 screenshots,Manuelt aflæst fra screenshot,,,,,,,,,,
-69,COD,UZB,UZB,4.50,1.18,Unibet,2026-06-24T10:36:06+02:00,24.06 screenshots,Manuelt aflæst fra screenshot,,,,,,,,,,
-70,COL,POR,COL,3.65,1.23,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-70,COL,POR,POR,2.50,1.47,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-71,ALG,AUT,ALG,3.15,1.31,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-71,ALG,AUT,AUT,2.70,1.40,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-72,JOR,ARG,ARG,1.61,2.15,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-72,JOR,ARG,JOR,8.50,1.04,Unibet,2026-06-22T14:49:12+02:00,22.06 screenshots,Manuelt aflæst fra screenshots,,,,,,,,,,
-73,,,FRA,1.87,1.83,Unibet/Oddset.dk,,,,R32,,Frankrig,SWE,Sverige,2026-06-30 23:00,1.87,1.83,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-73,,,SWE,7.75,1.05,Unibet/Oddset.dk,,,,R32,,Sverige,FRA,Frankrig,2026-06-30 23:00,7.75,1.05,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-74,,,BIH,5.75,1.10,Unibet/Oddset.dk,,,,R32,,Bosnien-Hercegovina,USA,USA,2026-07-02 02:00,5.75,1.10,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-74,,,USA,1.73,2.00,Unibet/Oddset.dk,,,,R32,,USA,BIH,Bosnien-Hercegovina,2026-07-02 02:00,1.73,2.00,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-75,,,AUS,2.75,1.40,Unibet/Oddset.dk,,,,R32,,Australien,EGY,Egypten,2026-07-03 20:00,2.75,1.40,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-75,,,EGY,2.25,1.56,Unibet/Oddset.dk,,,,R32,,Egypten,AUS,Australien,2026-07-03 20:00,2.25,1.56,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-76,,,ARG,1.40,2.70,Unibet/Oddset.dk,,,,R32,,Argentina,CPV,Kap Verde,2026-07-04 00:00,1.40,2.70,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-76,,,CPV,8.00,1.04,Unibet/Oddset.dk,,,,R32,,Kap Verde,ARG,Argentina,2026-07-04 00:00,8.00,1.04,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-77,,,CAN,2.05,1.67,Unibet/Oddset.dk,,,,R32,,Canada,RSA,Sydafrika,2026-06-28 21:00,2.05,1.67,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-77,,,RSA,4.25,1.18,Unibet/Oddset.dk,,,,R32,,Sydafrika,CAN,Canada,2026-06-28 21:00,4.25,1.18,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-78,,,BRA,2.15,1.63,Unibet/Oddset.dk,,,,R32,,Brasilien,JPN,Japan,2026-06-29 19:00,2.15,1.63,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-78,,,JPN,4.50,1.16,Unibet/Oddset.dk,,,,R32,,Japan,BRA,Brasilien,2026-06-29 19:00,4.50,1.16,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-79,,,GER,1.87,1.83,Unibet/Oddset.dk,,,,R32,,Tyskland,PAR,Paraguay,2026-06-29 22:30,1.87,1.83,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-79,,,PAR,6.50,1.08,Unibet/Oddset.dk,,,,R32,,Paraguay,GER,Tyskland,2026-06-29 22:30,6.50,1.08,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-80,,,MAR,3.50,1.26,Unibet/Oddset.dk,,,,R32,,Marokko,NED,Holland,2026-06-30 03:00,3.50,1.26,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-80,,,NED,2.40,1.50,Unibet/Oddset.dk,,,,R32,,Holland,MAR,Marokko,2026-06-30 03:00,2.40,1.50,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-81,,,CIV,4.00,1.21,Unibet/Oddset.dk,,,,R32,,Elfenbenskysten,NOR,Norge,2026-06-30 19:00,4.00,1.21,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-81,,,NOR,2.75,1.40,Unibet/Oddset.dk,,,,R32,,Norge,CIV,Elfenbenskysten,2026-06-30 19:00,2.75,1.40,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-82,,,ECU,3.00,1.33,Unibet/Oddset.dk,,,,R32,,Ecuador,MEX,Mexico,2026-07-01 03:00,3.00,1.33,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-82,,,MEX,2.15,1.63,Unibet/Oddset.dk,,,,R32,,Mexico,ECU,Ecuador,2026-07-01 03:00,2.15,1.63,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-83,,,COD,6.50,1.08,Unibet/Oddset.dk,,,,R32,,DR Congo,ENG,England,2026-07-01 18:00,6.50,1.08,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-83,,,ENG,1.56,2.30,Unibet/Oddset.dk,,,,R32,,England,COD,DR Congo,2026-07-01 18:00,1.56,2.30,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-84,,,BEL,2.30,1.54,Unibet/Oddset.dk,,,,R32,,Belgien,SEN,Senegal,2026-07-01 22:00,2.30,1.54,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-84,,,SEN,3.50,1.26,Unibet/Oddset.dk,,,,R32,,Senegal,BEL,Belgien,2026-07-01 22:00,3.50,1.26,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-85,,,AUT,5.50,1.11,Unibet/Oddset.dk,,,,R32,,Østrig,ESP,Spanien,2026-07-02 21:00,5.50,1.11,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-85,,,ESP,1.56,2.30,Unibet/Oddset.dk,,,,R32,,Spanien,AUT,Østrig,2026-07-02 21:00,1.56,2.30,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-86,,,CRO,3.40,1.26,Unibet/Oddset.dk,,,,R32,,Kroatien,POR,Portugal,2026-07-03 01:00,3.40,1.26,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-86,,,POR,2.10,1.67,Unibet/Oddset.dk,,,,R32,,Portugal,CRO,Kroatien,2026-07-03 01:00,2.10,1.67,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-87,,,ALG,4.75,1.16,Unibet/Oddset.dk,,,,R32,,Algeriet,SUI,Schweiz,2026-07-03 05:00,4.75,1.16,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-87,,,SUI,2.10,1.65,Unibet/Oddset.dk,,,,R32,,Schweiz,ALG,Algeriet,2026-07-03 05:00,2.10,1.65,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-88,,,COL,2.00,1.73,Unibet/Oddset.dk,,,,R32,,Colombia,GHA,Ghana,2026-07-04 03:30,2.00,1.73,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-88,,,GHA,3.65,1.25,Unibet/Oddset.dk,,,,R32,,Ghana,COL,Colombia,2026-07-04 03:30,3.65,1.25,2026-06-28T06:18:52+02:00,Unibet/Oddset 28.06 screenshots
-,BRA,NOR,BRA,2.45,1.49,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,,Brasilien,NOR,Norge,,2.45,1.49,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27
-,NOR,BRA,NOR,4.00,1.20,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,,Norge,BRA,Brasilien,,4.00,1.20,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27
-,PAR,FRA,PAR,8.00,1.05,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,,Paraguay,FRA,Frankrig,,8.00,1.05,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28
-,FRA,PAR,FRA,1.54,2.30,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,,Frankrig,PAR,Paraguay,,1.54,2.30,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28
-,CAN,MAR,CAN,3.75,1.23,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,,Canada,MAR,Marokko,,3.75,1.23,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28
-,MAR,CAN,MAR,2.05,1.69,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,,Marokko,CAN,Canada,,2.05,1.69,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28
-92,MEX,ENG,MEX,3.00,1.36,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,,Mexico,ENG,England,,3.00,1.36,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34
-92,MEX,ENG,ENG,2.50,1.47,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,,England,MEX,Mexico,,2.50,1.47,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34
-94,POR,ESP,POR,4.00,1.20,Danske Spil / Oddset,2026-07-03T09:33:12+02:00,Oddset 03.07 kl. 09:33,Manuelt aflæst fra screenshots/PDF 03.07,R16,,Portugal,ESP,Spanien,,4.00,1.20,2026-07-03T09:33:12+02:00,Oddset 03.07 kl. 09:33
-94,POR,ESP,ESP,2.50,1.47,Danske Spil / Oddset,2026-07-03T09:33:12+02:00,Oddset 03.07 kl. 09:33,Manuelt aflæst fra screenshots/PDF 03.07,R16,,Spanien,POR,Portugal,,2.50,1.47,2026-07-03T09:33:12+02:00,Oddset 03.07 kl. 09:33
-93,USA,BEL,USA,3.50,1.26,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,,USA,BEL,Belgien,,3.50,1.26,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32
-93,USA,BEL,BEL,3.50,1.26,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,,Belgien,USA,USA,,3.50,1.26,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32
+﻿"match_id","home","away","team_id","clean_sheet_yes_odds","clean_sheet_no_odds","source","clean_sheet_fetched_at","clean_sheet_fetched_label","note","stage","group","team_name","opponent_id","opponent_name","kickoff_dk","yes_odds","no_odds","odds_fetched_at","odds_fetched_label"
+"41","ARG","AUT","ARG","1.95","1.77","Unibet","","runde 2 screenshots","Manuelt aflæst fra tidligere runde 2 screenshot","","","","","","","","","",""
+"41","ARG","AUT","AUT","4.75","1.16","Unibet","","runde 2 screenshots","Manuelt aflæst fra tidligere runde 2 screenshot","","","","","","","","","",""
+"48","COL","COD","COD","4.50","1.16","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"48","COL","COD","COL","1.77","1.95","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"49","SUI","CAN","CAN","3.40","1.29","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"49","SUI","CAN","SUI","2.90","1.36","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"51","SCO","BRA","BRA","1.83","1.87","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"51","SCO","BRA","SCO","6.00","1.10","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"52","MAR","HAI","HAI","8.50","1.04","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"52","MAR","HAI","MAR","1.61","2.20","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"53","CZE","MEX","CZE","3.75","1.23","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"53","CZE","MEX","MEX","2.45","1.49","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"55","CUW","CIV","CIV","1.47","2.50","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"55","CUW","CIV","CUW","9.50","1.02","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"56","ECU","GER","ECU","4.25","1.18","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"56","ECU","GER","GER","2.70","1.40","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"57","TUN","NED","NED","1.49","2.45","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"57","TUN","NED","TUN","9.50","1.03","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"58","JPN","SWE","JPN","2.75","1.40","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"58","JPN","SWE","SWE","4.25","1.18","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"59","TUR","USA","TUR","4.50","1.16","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"59","TUR","USA","USA","2.80","1.38","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"61","NOR","FRA","FRA","2.50","1.47","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"61","NOR","FRA","NOR","4.50","1.18","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"62","SEN","IRQ","IRQ","6.25","1.08","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"62","SEN","IRQ","SEN","1.65","2.10","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"64","URU","ESP","ESP","1.98","1.73","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"64","URU","ESP","URU","5.25","1.12","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"65","NZL","BEL","BEL","1.63","2.15","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"65","NZL","BEL","NZL","7.50","1.06","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"66","EGY","IRN","EGY","2.35","1.53","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"66","EGY","IRN","IRN","2.90","1.36","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"68","PAN","ENG","ENG","1.69","2.05","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"68","PAN","ENG","PAN","8.00","1.05","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"69","COD","UZB","COD","2.40","1.50","Unibet","2026-06-24T10:36:06+02:00","24.06 screenshots","Manuelt aflæst fra screenshot","","","","","","","","","",""
+"69","COD","UZB","UZB","4.50","1.18","Unibet","2026-06-24T10:36:06+02:00","24.06 screenshots","Manuelt aflæst fra screenshot","","","","","","","","","",""
+"70","COL","POR","COL","3.65","1.23","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"70","COL","POR","POR","2.50","1.47","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"71","ALG","AUT","ALG","3.15","1.31","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"71","ALG","AUT","AUT","2.70","1.40","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"72","JOR","ARG","ARG","1.61","2.15","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"72","JOR","ARG","JOR","8.50","1.04","Unibet","2026-06-22T14:49:12+02:00","22.06 screenshots","Manuelt aflæst fra screenshots","","","","","","","","","",""
+"73","","","FRA","1.87","1.83","Unibet/Oddset.dk","","","","R32","","Frankrig","SWE","Sverige","2026-06-30 23:00","1.87","1.83","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"73","","","SWE","7.75","1.05","Unibet/Oddset.dk","","","","R32","","Sverige","FRA","Frankrig","2026-06-30 23:00","7.75","1.05","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"74","","","BIH","5.75","1.10","Unibet/Oddset.dk","","","","R32","","Bosnien-Hercegovina","USA","USA","2026-07-02 02:00","5.75","1.10","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"74","","","USA","1.73","2.00","Unibet/Oddset.dk","","","","R32","","USA","BIH","Bosnien-Hercegovina","2026-07-02 02:00","1.73","2.00","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"75","","","AUS","2.75","1.40","Unibet/Oddset.dk","","","","R32","","Australien","EGY","Egypten","2026-07-03 20:00","2.75","1.40","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"75","","","EGY","2.25","1.56","Unibet/Oddset.dk","","","","R32","","Egypten","AUS","Australien","2026-07-03 20:00","2.25","1.56","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"76","","","ARG","1.40","2.70","Unibet/Oddset.dk","","","","R32","","Argentina","CPV","Kap Verde","2026-07-04 00:00","1.40","2.70","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"76","","","CPV","8.00","1.04","Unibet/Oddset.dk","","","","R32","","Kap Verde","ARG","Argentina","2026-07-04 00:00","8.00","1.04","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"77","","","CAN","2.05","1.67","Unibet/Oddset.dk","","","","R32","","Canada","RSA","Sydafrika","2026-06-28 21:00","2.05","1.67","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"77","","","RSA","4.25","1.18","Unibet/Oddset.dk","","","","R32","","Sydafrika","CAN","Canada","2026-06-28 21:00","4.25","1.18","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"78","","","BRA","2.15","1.63","Unibet/Oddset.dk","","","","R32","","Brasilien","JPN","Japan","2026-06-29 19:00","2.15","1.63","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"78","","","JPN","4.50","1.16","Unibet/Oddset.dk","","","","R32","","Japan","BRA","Brasilien","2026-06-29 19:00","4.50","1.16","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"79","","","GER","1.87","1.83","Unibet/Oddset.dk","","","","R32","","Tyskland","PAR","Paraguay","2026-06-29 22:30","1.87","1.83","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"79","","","PAR","6.50","1.08","Unibet/Oddset.dk","","","","R32","","Paraguay","GER","Tyskland","2026-06-29 22:30","6.50","1.08","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"80","","","MAR","3.50","1.26","Unibet/Oddset.dk","","","","R32","","Marokko","NED","Holland","2026-06-30 03:00","3.50","1.26","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"80","","","NED","2.40","1.50","Unibet/Oddset.dk","","","","R32","","Holland","MAR","Marokko","2026-06-30 03:00","2.40","1.50","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"81","","","CIV","4.00","1.21","Unibet/Oddset.dk","","","","R32","","Elfenbenskysten","NOR","Norge","2026-06-30 19:00","4.00","1.21","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"81","","","NOR","2.75","1.40","Unibet/Oddset.dk","","","","R32","","Norge","CIV","Elfenbenskysten","2026-06-30 19:00","2.75","1.40","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"82","","","ECU","3.00","1.33","Unibet/Oddset.dk","","","","R32","","Ecuador","MEX","Mexico","2026-07-01 03:00","3.00","1.33","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"82","","","MEX","2.15","1.63","Unibet/Oddset.dk","","","","R32","","Mexico","ECU","Ecuador","2026-07-01 03:00","2.15","1.63","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"83","","","COD","6.50","1.08","Unibet/Oddset.dk","","","","R32","","DR Congo","ENG","England","2026-07-01 18:00","6.50","1.08","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"83","","","ENG","1.56","2.30","Unibet/Oddset.dk","","","","R32","","England","COD","DR Congo","2026-07-01 18:00","1.56","2.30","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"84","","","BEL","2.30","1.54","Unibet/Oddset.dk","","","","R32","","Belgien","SEN","Senegal","2026-07-01 22:00","2.30","1.54","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"84","","","SEN","3.50","1.26","Unibet/Oddset.dk","","","","R32","","Senegal","BEL","Belgien","2026-07-01 22:00","3.50","1.26","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"85","","","AUT","5.50","1.11","Unibet/Oddset.dk","","","","R32","","Østrig","ESP","Spanien","2026-07-02 21:00","5.50","1.11","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"85","","","ESP","1.56","2.30","Unibet/Oddset.dk","","","","R32","","Spanien","AUT","Østrig","2026-07-02 21:00","1.56","2.30","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"86","","","CRO","3.40","1.26","Unibet/Oddset.dk","","","","R32","","Kroatien","POR","Portugal","2026-07-03 01:00","3.40","1.26","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"86","","","POR","2.10","1.67","Unibet/Oddset.dk","","","","R32","","Portugal","CRO","Kroatien","2026-07-03 01:00","2.10","1.67","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"88","","","COL","2.00","1.73","Unibet/Oddset.dk","","","","R32","","Colombia","GHA","Ghana","2026-07-04 03:30","2.00","1.73","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"88","","","GHA","3.65","1.25","Unibet/Oddset.dk","","","","R32","","Ghana","COL","Colombia","2026-07-04 03:30","3.65","1.25","2026-06-28T06:18:52+02:00","Unibet/Oddset 28.06 screenshots"
+"","BRA","NOR","BRA","2.45","1.49","Danske Spil / Oddset","2026-07-01T15:27:00+02:00","Oddset 01.07 kl. 15:27","Manuelt aflæst fra screenshot 01.07","QF","","Brasilien","NOR","Norge","","2.45","1.49","2026-07-01T15:27:00+02:00","Oddset 01.07 kl. 15:27"
+"","NOR","BRA","NOR","4.00","1.20","Danske Spil / Oddset","2026-07-01T15:27:00+02:00","Oddset 01.07 kl. 15:27","Manuelt aflæst fra screenshot 01.07","QF","","Norge","BRA","Brasilien","","4.00","1.20","2026-07-01T15:27:00+02:00","Oddset 01.07 kl. 15:27"
+"","PAR","FRA","PAR","8.00","1.05","Danske Spil / Oddset","2026-07-01T15:28:00+02:00","Oddset 01.07 kl. 15:28","Manuelt aflæst fra screenshot 01.07","QF","","Paraguay","FRA","Frankrig","","8.00","1.05","2026-07-01T15:28:00+02:00","Oddset 01.07 kl. 15:28"
+"","FRA","PAR","FRA","1.54","2.30","Danske Spil / Oddset","2026-07-01T15:28:00+02:00","Oddset 01.07 kl. 15:28","Manuelt aflæst fra screenshot 01.07","QF","","Frankrig","PAR","Paraguay","","1.54","2.30","2026-07-01T15:28:00+02:00","Oddset 01.07 kl. 15:28"
+"","CAN","MAR","CAN","3.75","1.23","Danske Spil / Oddset","2026-07-01T15:28:00+02:00","Oddset 01.07 kl. 15:28","Manuelt aflæst fra screenshot 01.07","QF","","Canada","MAR","Marokko","","3.75","1.23","2026-07-01T15:28:00+02:00","Oddset 01.07 kl. 15:28"
+"","MAR","CAN","MAR","2.05","1.69","Danske Spil / Oddset","2026-07-01T15:28:00+02:00","Oddset 01.07 kl. 15:28","Manuelt aflæst fra screenshot 01.07","QF","","Marokko","CAN","Canada","","2.05","1.69","2026-07-01T15:28:00+02:00","Oddset 01.07 kl. 15:28"
+"92","MEX","ENG","MEX","3.00","1.36","Danske Spil / Oddset","2026-07-03T09:34:08+02:00","Oddset 03.07 kl. 09:34","Manuelt aflæst fra screenshots/PDF 03.07","R16","","Mexico","ENG","England","","3.00","1.36","2026-07-03T09:34:08+02:00","Oddset 03.07 kl. 09:34"
+"92","MEX","ENG","ENG","2.50","1.47","Danske Spil / Oddset","2026-07-03T09:34:08+02:00","Oddset 03.07 kl. 09:34","Manuelt aflæst fra screenshots/PDF 03.07","R16","","England","MEX","Mexico","","2.50","1.47","2026-07-03T09:34:08+02:00","Oddset 03.07 kl. 09:34"
+"94","POR","ESP","POR","4.00","1.20","Danske Spil / Oddset","2026-07-03T09:33:12+02:00","Oddset 03.07 kl. 09:33","Manuelt aflæst fra screenshots/PDF 03.07","R16","","Portugal","ESP","Spanien","","4.00","1.20","2026-07-03T09:33:12+02:00","Oddset 03.07 kl. 09:33"
+"94","POR","ESP","ESP","2.50","1.47","Danske Spil / Oddset","2026-07-03T09:33:12+02:00","Oddset 03.07 kl. 09:33","Manuelt aflæst fra screenshots/PDF 03.07","R16","","Spanien","POR","Portugal","","2.50","1.47","2026-07-03T09:33:12+02:00","Oddset 03.07 kl. 09:33"
+"93","USA","BEL","USA","3.50","1.26","Danske Spil / Oddset","2026-07-03T09:32:21+02:00","Oddset 03.07 kl. 09:32","Manuelt aflæst fra screenshots/PDF 03.07","R16","","USA","BEL","Belgien","","3.50","1.26","2026-07-03T09:32:21+02:00","Oddset 03.07 kl. 09:32"
+"93","USA","BEL","BEL","3.50","1.26","Danske Spil / Oddset","2026-07-03T09:32:21+02:00","Oddset 03.07 kl. 09:32","Manuelt aflæst fra screenshots/PDF 03.07","R16","","Belgien","USA","USA","","3.50","1.26","2026-07-03T09:32:21+02:00","Oddset 03.07 kl. 09:32"
