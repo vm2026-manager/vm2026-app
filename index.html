@@ -6103,7 +6103,29 @@ function saveState() {
     }
 
     const ROUND_OF_16_TRANSFER_WINDOW_LABEL = "1/16-finaler → Ottendedelsfinaler";
-    const ROUND_OF_16_TRANSFER_WINDOW_VERSION_KEY = "ottendedelsfinaler_baseline_v1";
+    const TRANSFER_WINDOW_KEY_R32_TO_R16 = "R32_TO_R16";
+    const TRANSFER_WINDOW_KEY_R16_TO_QF = "R16_TO_QF";
+    const TRANSFER_WINDOW_KEY_QF_TO_SF = "QF_TO_SF";
+    const TRANSFER_WINDOW_KEY_SF_TO_FINAL_ROUND = "SF_TO_FINAL_ROUND";
+    const KNOCKOUT_TRANSFER_WINDOW_LABELS = Object.freeze({
+      [TRANSFER_WINDOW_KEY_R32_TO_R16]: ROUND_OF_16_TRANSFER_WINDOW_LABEL,
+      [TRANSFER_WINDOW_KEY_R16_TO_QF]: "Ottendedelsfinaler → Kvartfinaler",
+      [TRANSFER_WINDOW_KEY_QF_TO_SF]: "Kvartfinaler → Semifinaler",
+      [TRANSFER_WINDOW_KEY_SF_TO_FINAL_ROUND]: "Semifinaler → Finalerunde"
+    });
+    const KNOCKOUT_TRANSFER_WINDOW_MIGRATION_MAP = Object.freeze({
+      "runde_3_to_1_16_finaler": TRANSFER_WINDOW_KEY_R32_TO_R16,
+      "1_16_finaler_to_ottendedelsfinaler": TRANSFER_WINDOW_KEY_R32_TO_R16,
+      "1_16_finaler_to_ottendedelsfinaler__ottendedelsfinaler_baseline_v1": TRANSFER_WINDOW_KEY_R32_TO_R16,
+      "1_8_finaler_to_kvartfinaler": TRANSFER_WINDOW_KEY_R16_TO_QF,
+      "ottendedelsfinaler_to_kvartfinaler": TRANSFER_WINDOW_KEY_R16_TO_QF,
+      "kvartfinaler_to_semifinaler": TRANSFER_WINDOW_KEY_QF_TO_SF,
+      "semifinaler_to_bronzekamp_finale": TRANSFER_WINDOW_KEY_SF_TO_FINAL_ROUND,
+      "semifinaler_to_finale": TRANSFER_WINDOW_KEY_SF_TO_FINAL_ROUND,
+      "semifinaler_to_finalerunde": TRANSFER_WINDOW_KEY_SF_TO_FINAL_ROUND,
+      "finalerunde": TRANSFER_WINDOW_KEY_SF_TO_FINAL_ROUND,
+      "sf_to_f": TRANSFER_WINDOW_KEY_SF_TO_FINAL_ROUND
+    });
 
     function normalizeSquadSlotPlayerId(value) {
       if (value === null || value === undefined) return null;
@@ -6122,7 +6144,39 @@ function saveState() {
         .replace(/[^a-zA-Z0-9]+/g, "_")
         .replace(/^_+|_+$/g, "")
         .toLowerCase();
-      return text || null;
+      if (!text) return null;
+
+      const canonicalFromMigration = KNOCKOUT_TRANSFER_WINDOW_MIGRATION_MAP[text];
+      if (canonicalFromMigration) return canonicalFromMigration;
+
+      const uppercase = String(value || "").trim().toUpperCase();
+      if (KNOCKOUT_TRANSFER_WINDOW_LABELS[uppercase]) return uppercase;
+
+      return text;
+    }
+
+    transferWindowKey = normalizeTransferWindowKey(transferWindowKey);
+
+    function getCanonicalTransferWindowKey(now = getNow()) {
+      const currentTime = now instanceof Date && !Number.isNaN(now.getTime()) ? now.getTime() : Date.now();
+      const windows = [
+        { startMs: Date.parse("2026-07-04T18:00:00+01:00"), key: TRANSFER_WINDOW_KEY_R16_TO_QF },
+        { startMs: Date.parse("2026-07-09T21:00:00+01:00"), key: TRANSFER_WINDOW_KEY_QF_TO_SF },
+        { startMs: Date.parse("2026-07-14T20:00:00+01:00"), key: TRANSFER_WINDOW_KEY_SF_TO_FINAL_ROUND }
+      ];
+
+      let currentKey = TRANSFER_WINDOW_KEY_R32_TO_R16;
+      for (const window of windows) {
+        if (Number.isFinite(window.startMs) && currentTime >= window.startMs) {
+          currentKey = window.key;
+        }
+      }
+      return currentKey;
+    }
+
+    function getTransferWindowLabelForKey(key, fallbackLabel = "næste runde") {
+      const normalizedKey = normalizeTransferWindowKey(key);
+      return KNOCKOUT_TRANSFER_WINDOW_LABELS[normalizedKey] || fallbackLabel;
     }
 
     function saveTransferWindowKeyState() {
@@ -6135,12 +6189,12 @@ function saveState() {
 
     function getCurrentTransferWindowKey() {
       const currentLabel = getTransferWindowLabel();
-      const normalizedLabel = normalizeTransferWindowKey(currentLabel);
-      if (!normalizedLabel) return "naeste_runde";
-      if (currentLabel === ROUND_OF_16_TRANSFER_WINDOW_LABEL) {
-        return `${normalizedLabel}__${ROUND_OF_16_TRANSFER_WINDOW_VERSION_KEY}`;
+      const canonicalKnockoutKey = getCanonicalTransferWindowKey();
+      if (currentLabel === getTransferWindowLabelForKey(canonicalKnockoutKey, "")) {
+        return canonicalKnockoutKey;
       }
-      return normalizedLabel;
+      const normalizedLabel = normalizeTransferWindowKey(currentLabel);
+      return normalizedLabel || "naeste_runde";
     }
 
     function saveTransferBaselineState() {
@@ -6195,10 +6249,87 @@ function saveState() {
       setTransferWindowBaselineState(getCurrentTransferWindowKey(), nextSquad, nextPurchasePrices);
     }
 
+    function getTransferChangesForWindow(windowKey = getCurrentTransferWindowKey(), changes = transferChanges) {
+      const normalizedWindowKey = normalizeTransferWindowKey(windowKey) || getCurrentTransferWindowKey();
+      return (Array.isArray(changes) ? changes : []).filter(change => {
+        const changeWindowKey = normalizeTransferWindowKey(
+          change?.transferWindowKey ||
+          change?.transfer_window_key ||
+          change?.transferWindowLabel ||
+          change?.transfer_window_label
+        );
+        return changeWindowKey === normalizedWindowKey;
+      });
+    }
+
+    function restoreTransferBaselineFromPersistedChanges(nextSquad = squad, nextPurchasePrices = squadPurchasePrices, windowKey = getCurrentTransferWindowKey()) {
+      const relevantChanges = getTransferChangesForWindow(windowKey, transferChanges)
+        .filter(change => change && change.slotKey)
+        .filter(change => normalizeSquadSlotPlayerId(change.outPlayerId || change.out_player_id || "") !== null
+          || normalizeSquadSlotPlayerId(change.inPlayerId || change.in_player_id || "") !== null);
+
+      if (!relevantChanges.length) return false;
+
+      const currentSquadState = cloneSquadState(nextSquad);
+      const currentPurchasePrices = cloneSquadState(nextPurchasePrices);
+
+      for (const change of relevantChanges) {
+        const slotKey = String(change.slotKey || "").trim();
+        if (!slotKey) return false;
+
+        const expectedIncomingPlayerId = normalizeSquadSlotPlayerId(change.inPlayerId || change.in_player_id || "");
+        const currentPlayerId = normalizeSquadSlotPlayerId(currentSquadState?.[slotKey]);
+
+        if (String(currentPlayerId || "") !== String(expectedIncomingPlayerId || "")) {
+          return false;
+        }
+      }
+
+      const reconstructedBaselineSquad = cloneSquadState(currentSquadState);
+      const reconstructedBaselinePurchasePrices = cloneSquadState(currentPurchasePrices);
+
+      for (const change of relevantChanges) {
+        const slotKey = String(change.slotKey || "").trim();
+        const outgoingPlayerId = normalizeSquadSlotPlayerId(change.outPlayerId || change.out_player_id || "");
+        const outgoingPrice = parseBudgetPrice(change.outPrice ?? change.out_price);
+
+        if (outgoingPlayerId) {
+          reconstructedBaselineSquad[slotKey] = outgoingPlayerId;
+          if (outgoingPrice !== null && outgoingPrice > 0) {
+            reconstructedBaselinePurchasePrices[slotKey] = outgoingPrice;
+          } else {
+            delete reconstructedBaselinePurchasePrices[slotKey];
+          }
+        } else {
+          delete reconstructedBaselineSquad[slotKey];
+          delete reconstructedBaselinePurchasePrices[slotKey];
+        }
+      }
+
+      if (JSON.stringify(reconstructedBaselineSquad || {}) === JSON.stringify(currentSquadState || {})) {
+        return false;
+      }
+
+      transferWindowKey = normalizeTransferWindowKey(windowKey) || getCurrentTransferWindowKey();
+      setTransferBaselineState(reconstructedBaselineSquad, reconstructedBaselinePurchasePrices);
+      saveTransferWindowKeyState();
+      return true;
+    }
+
     function syncTransferStateAfterLoadedSquad(nextSquad = squad, nextPurchasePrices = squadPurchasePrices) {
       const currentWindowKey = getCurrentTransferWindowKey();
+      const restoredFromPersistedChanges = restoreTransferBaselineFromPersistedChanges(
+        nextSquad,
+        nextPurchasePrices,
+        currentWindowKey
+      );
 
-      if (transferWindowKey !== currentWindowKey || !hasTransferBaselinePlayers()) {
+      if (transferWindowKey !== currentWindowKey) {
+        setLoadedSquadAsTransferBaseline(nextSquad, nextPurchasePrices);
+        return;
+      }
+
+      if (!hasTransferBaselinePlayers() && !restoredFromPersistedChanges) {
         setLoadedSquadAsTransferBaseline(nextSquad, nextPurchasePrices);
         return;
       }
@@ -10329,28 +10460,24 @@ const playerId = String(player.player_id || player.id || "");
       const tournamentYear = round1Start.getFullYear();
       const now = getNow();
 
-      // Fallback phase starts used only for the player-change panel label after group stage.
-      // When exact knockout kickoff times are not present in project data, the label switches at 00:00 Danish time.
+      // Stable knockout transfer windows use fixed round-start timestamps rather than fixture labels,
+      // so baseline/state survives reloads and label changes.
       const knockoutStarts = [
-        { start: kickoffToDate(`${tournamentYear}-06-28 00:00`), label: "runde 3 → 1/16-finaler" },
-        { start: kickoffToDate(`${tournamentYear}-07-02 00:00`), label: ROUND_OF_16_TRANSFER_WINDOW_LABEL },
-        { start: kickoffToDate(`${tournamentYear}-07-09 00:00`), label: "1/8-finaler → Kvartfinaler" },
-        { start: kickoffToDate(`${tournamentYear}-07-14 00:00`), label: "Kvartfinaler → Semifinaler" },
-        { start: kickoffToDate(`${tournamentYear}-07-18 00:00`), label: "Semifinaler → Bronzekamp/finale" },
-        { start: kickoffToDate(`${tournamentYear}-07-19 00:00`), label: "Finalerunde" }
+        { start: Date.parse(`${tournamentYear}-06-28T00:00:00+02:00`), label: "runde 3 → 1/16-finaler" },
+        { start: Date.parse(`${tournamentYear}-07-04T18:00:00+01:00`), label: getTransferWindowLabelForKey(TRANSFER_WINDOW_KEY_R16_TO_QF, "Ottendedelsfinaler → Kvartfinaler") },
+        { start: Date.parse(`${tournamentYear}-07-09T21:00:00+01:00`), label: getTransferWindowLabelForKey(TRANSFER_WINDOW_KEY_QF_TO_SF, "Kvartfinaler → Semifinaler") },
+        { start: Date.parse(`${tournamentYear}-07-14T20:00:00+01:00`), label: getTransferWindowLabelForKey(TRANSFER_WINDOW_KEY_SF_TO_FINAL_ROUND, "Semifinaler → Finalerunde") }
       ];
 
       const windows = [
         { start: null, end: round1Start, label: "runde 1" },
         { start: round1Start, end: round2Start, label: "runde 1 → 2" },
         { start: round2Start, end: round3Start, label: "runde 2 → 3" },
-        { start: round3Start, end: knockoutStarts[0].start, label: "runde 3 → 1/16-finaler" },
-        { start: knockoutStarts[0].start, end: knockoutStarts[1].start, label: knockoutStarts[0].label },
-        { start: knockoutStarts[1].start, end: knockoutStarts[2].start, label: knockoutStarts[1].label },
-        { start: knockoutStarts[2].start, end: knockoutStarts[3].start, label: knockoutStarts[2].label },
-        { start: knockoutStarts[3].start, end: knockoutStarts[4].start, label: knockoutStarts[3].label },
-        { start: knockoutStarts[4].start, end: knockoutStarts[5].start, label: knockoutStarts[4].label },
-        { start: knockoutStarts[5].start, end: null, label: knockoutStarts[5].label }
+        { start: round3Start, end: (Number.isFinite(knockoutStarts[0].start) ? new Date(knockoutStarts[0].start) : null), label: "runde 3 → 1/16-finaler" },
+        { start: (Number.isFinite(knockoutStarts[0].start) ? new Date(knockoutStarts[0].start) : null), end: (Number.isFinite(knockoutStarts[1].start) ? new Date(knockoutStarts[1].start) : null), label: ROUND_OF_16_TRANSFER_WINDOW_LABEL },
+        { start: (Number.isFinite(knockoutStarts[1].start) ? new Date(knockoutStarts[1].start) : null), end: (Number.isFinite(knockoutStarts[2].start) ? new Date(knockoutStarts[2].start) : null), label: knockoutStarts[1].label },
+        { start: (Number.isFinite(knockoutStarts[2].start) ? new Date(knockoutStarts[2].start) : null), end: (Number.isFinite(knockoutStarts[3].start) ? new Date(knockoutStarts[3].start) : null), label: knockoutStarts[2].label },
+        { start: (Number.isFinite(knockoutStarts[3].start) ? new Date(knockoutStarts[3].start) : null), end: null, label: knockoutStarts[3].label }
       ];
 
       const activeWindow = windows.find(window => {
