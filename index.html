@@ -7002,7 +7002,7 @@ function getPlayerScore(player) {
     // but they must not appear as new choices in player list, favorites, alternatives or team filter.
     const TOURNAMENT_ALIVE_TEAM_IDS = new Set([
       "CAN","BRA","PAR","MAR","NOR","FRA","MEX","ENG","BEL","USA",
-      "ESP","POR","SUI","ALG","EGY","AUS","ARG","CPV","COL","GHA"
+      "ESP","POR","SUI","EGY","AUS","ARG","CPV","COL","GHA"
     ]);
 
     function tournamentTeamId(value) {
@@ -7051,7 +7051,7 @@ function getPlayerScore(player) {
         const aliveIds = new Set();
         favoritePlayerIds.forEach(playerId => {
           const player = getPlayerById(playerId);
-          if (player && !isPlayerTournamentEliminated(player)) {
+          if (player && !isPlayerUnavailable(player)) {
             aliveIds.add(String(playerId));
           }
         });
@@ -8787,7 +8787,7 @@ const playerId = String(player.player_id || player.id || "");
       const modelChoice = getModelChoiceForSlot(activeSlot);
       const modelChoiceId = modelChoice ? String(modelChoice.player_id) : null;
       const baseCandidates = allPlayers
-        .filter(player => !isPlayerTournamentEliminated(player))
+        .filter(player => !isPlayerUnavailable(player))
         .filter(player =>
           canReplaceWith(player, currentPlayer, activeSlot, {
             ignoreStartRequirement: modelChoiceId === String(player.player_id)
@@ -9280,7 +9280,7 @@ const playerId = String(player.player_id || player.id || "");
       const slotPosition = normalizePositionLabel(slot.positionCode || slot.position);
 
       return allPlayers
-        .filter(player => !isPlayerTournamentEliminated(player))
+        .filter(player => !isPlayerUnavailable(player))
         .filter(player => samePosition(player.position, slotPosition))
         .filter(player => !usedIdsSet.has(String(player.player_id)))
         .filter(player => (teamCounts[playerTeamKey(player)] || 0) < MAX_PER_TEAM)
@@ -10908,7 +10908,7 @@ function renderTradeList() {
         const isSuspended = isSuspendedNextMatch(player);
         const rowClass = `${isDisabled ? "trade-row disabled" : "trade-row"}${isSuspended ? " suspended" : ""}`;
         const flagUrl = getFlagUrl(getPlayerFlagCode(player));
-        if (isPlayerTournamentEliminated(player)) return "";
+        if (isPlayerUnavailable(player)) return "";
         const nextMatchInfo = getPlayerNextMatchInfo(player);
         playerNextMatchInfoById.set(String(player.player_id), nextMatchInfo);
         const opponentLineText = getPlayerOpponentLineText(player, nextMatchInfo);
@@ -11508,8 +11508,9 @@ function renderTradeList() {
     }
 
     function setAuthUi() {
-      if (topbarAuth) {
-        topbarAuth.dataset.authState = currentUser ? "logged-in" : "logged-out";
+      const authRoot = document.querySelector(".topbar-auth");
+      if (authRoot) {
+        authRoot.dataset.authState = currentUser ? "logged-in" : "logged-out";
       }
       if (currentUser) {
         topbarUser.style.display = "inline-block";
