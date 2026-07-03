@@ -1,6 +1,6 @@
 VM 2026 MODEL STATUS SNAPSHOT
 
-Oprettet: 2026-07-03T06:10:18
+Oprettet: 2026-07-03T08:31:09
 
 VURDERING
 - Bedste formation i seneste optimizer-kørsel: 3-5-2.
@@ -24,12 +24,12 @@ EV-FIL
 - Positioner: {'MID': 189, 'DEF': 186, 'FWD': 130, 'GK': 67}
 
 FORMATIONER
-- 3-4-3: status=Optimal, adjEV=151.159, rawEV=18.103, pris=49.941
+- 3-4-3: status=Optimal, adjEV=151.517, rawEV=20.492, pris=49.968
 - 3-5-2: status=Optimal, adjEV=152.095, rawEV=18.511, pris=49.994
 - 4-3-3: status=Optimal, adjEV=152.064, rawEV=18.418, pris=49.995
-- 4-4-2: status=Optimal, adjEV=151.867, rawEV=18.055, pris=49.995
+- 4-4-2: status=Optimal, adjEV=151.594, rawEV=17.824, pris=49.994
 - 4-5-1: status=Optimal, adjEV=147.675, rawEV=17.553, pris=49.972
-- 5-3-2: status=Optimal, adjEV=143.076, rawEV=18.124, pris=49.991
+- 5-3-2: status=Optimal, adjEV=142.649, rawEV=18.037, pris=49.971
 - 5-4-1: status=Optimal, adjEV=142.745, rawEV=17.153, pris=49.993
 
 BEDSTE HOLD

@@ -1,5 +1,5 @@
 {
-  "created_at": "2026-07-03T06:10:18",
+  "created_at": "2026-07-03T08:31:09",
   "assessment": {
     "best_formation": "3-5-2",
     "message": "Modellen bruger nu Holdet.dk game 616 som officiel master-player-pool. EV-filen er rebased til de officielle Holdet-spillere, og optimizer-holdene matcher appens player_pool.",
@@ -33,9 +33,9 @@
     {
       "formation": "3-4-3",
       "status": "Optimal",
-      "adj_ev": 151.159,
-      "raw_ev": 18.103,
-      "price_m": 49.941
+      "adj_ev": 151.517,
+      "raw_ev": 20.492,
+      "price_m": 49.968
     },
     {
       "formation": "3-5-2",
@@ -54,9 +54,9 @@
     {
       "formation": "4-4-2",
       "status": "Optimal",
-      "adj_ev": 151.867,
-      "raw_ev": 18.055,
-      "price_m": 49.995
+      "adj_ev": 151.594,
+      "raw_ev": 17.824,
+      "price_m": 49.994
     },
     {
       "formation": "4-5-1",
@@ -68,9 +68,9 @@
     {
       "formation": "5-3-2",
       "status": "Optimal",
-      "adj_ev": 143.076,
-      "raw_ev": 18.124,
-      "price_m": 49.991
+      "adj_ev": 142.649,
+      "raw_ev": 18.037,
+      "price_m": 49.971
     },
     {
       "formation": "5-4-1",

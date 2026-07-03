@@ -4,7 +4,7 @@ VM 2026 APP DATA AUDIT
 1. PÃ¥krÃ¦vede app-filer
 ------------------------------------------------------------
 OK       player_pool_v1.json                 1861476
-OK       optimal_squads_by_formation.json    373105
+OK       optimal_squads_by_formation.json    372914
 OK       fixtures_group.csv                  2701
 OK       player_start_security_nt.csv        420674
 OK       match_odds_probs.csv                7314
@@ -28,12 +28,12 @@ Antal hold dÃ¦kket: 48
 
 4. Optimizer vs app-data
 ------------------------------------------------------------
-OK    3-4-3 rÃ¦kker=11 pris=49.941.000 pos={'GK': 1, 'DEF': 3, 'MID': 4, 'FWD': 3} match={'player_id': 11}
+OK    3-4-3 rÃ¦kker=11 pris=49.968.000 pos={'GK': 1, 'DEF': 3, 'MID': 4, 'FWD': 3} match={'player_id': 11}
 OK    3-5-2 rÃ¦kker=11 pris=49.994.000 pos={'GK': 1, 'DEF': 3, 'MID': 5, 'FWD': 2} match={'player_id': 11}
 OK    4-3-3 rÃ¦kker=11 pris=49.995.000 pos={'GK': 1, 'DEF': 4, 'MID': 3, 'FWD': 3} match={'player_id': 11}
-OK    4-4-2 rÃ¦kker=11 pris=49.995.000 pos={'GK': 1, 'DEF': 4, 'MID': 4, 'FWD': 2} match={'player_id': 11}
+OK    4-4-2 rÃ¦kker=11 pris=49.994.000 pos={'GK': 1, 'DEF': 4, 'MID': 4, 'FWD': 2} match={'player_id': 11}
 OK    4-5-1 rÃ¦kker=11 pris=49.972.000 pos={'GK': 1, 'DEF': 4, 'MID': 5, 'FWD': 1} match={'player_id': 11}
-OK    5-3-2 rÃ¦kker=11 pris=49.991.000 pos={'GK': 1, 'DEF': 5, 'MID': 3, 'FWD': 2} match={'player_id': 11}
+OK    5-3-2 rÃ¦kker=11 pris=49.971.000 pos={'GK': 1, 'DEF': 5, 'MID': 3, 'FWD': 2} match={'player_id': 11}
 OK    5-4-1 rÃ¦kker=11 pris=49.993.000 pos={'GK': 1, 'DEF': 5, 'MID': 4, 'FWD': 1} match={'player_id': 11}
 
 5. Samlet vurdering
