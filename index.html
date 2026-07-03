@@ -7506,6 +7506,11 @@ function getPlayerScore(player) {
       return getUpcomingOddsOnlyFixtureForTeam(teamId);
     }
 
+    function getStrictUpcomingFixtureForTeam(teamId) {
+      const upcomingFixtures = getUpcomingFixturesForTeam(teamId, 1);
+      return Array.isArray(upcomingFixtures) && upcomingFixtures.length ? upcomingFixtures[0] : null;
+    }
+
     function getTeamNextMatchInfo(teamId) {
       const canonicalTeam = canonicalTeamId(teamId);
       if (!canonicalTeam) {
@@ -7959,6 +7964,9 @@ const playerId = String(player.player_id || player.id || "");
 
         if (!teamId) return null;
         if (!Array.isArray(cleanSheetOddsRows) || !cleanSheetOddsRows.length) return null;
+        const activeKnockoutRound = getActiveKnockoutRoundConfig();
+        const strictUpcomingFixture = activeKnockoutRound ? getStrictUpcomingFixtureForTeam(teamId) : null;
+        if (activeKnockoutRound && !strictUpcomingFixture) return null;
 
         let nextMatchInfo = null;
 
@@ -7981,6 +7989,7 @@ const playerId = String(player.player_id || player.id || "");
         } catch (_error) {}
 
         const nextMatchId = String(
+          strictUpcomingFixture?.match_id ||
           nextMatchInfo?.matchId ||
           nextMatchInfo?.match_id ||
           nextMatchInfo?.fixtureId ||
@@ -7988,6 +7997,7 @@ const playerId = String(player.player_id || player.id || "");
         ).trim();
 
         const opponentId = String(
+          strictUpcomingFixture?.opponent ||
           nextMatchInfo?.opponentId ||
           nextMatchInfo?.opponent_id ||
           nextMatchInfo?.opponentTeamId ||
@@ -8011,7 +8021,7 @@ const playerId = String(player.player_id || player.id || "");
           return false;
         });
 
-        if (!rows.length && getActiveKnockoutRoundConfig()) {
+        if (!rows.length && activeKnockoutRound) {
           return null;
         }
 
@@ -8173,6 +8183,9 @@ const playerId = String(player.player_id || player.id || "");
         const normalizedPlayerName = normalizeName(player.player_name || "");
         if (!playerId && !normalizedPlayerName) return null;
         if (!Array.isArray(scorerOddsRows) || !scorerOddsRows.length) return null;
+        const activeKnockoutRound = getActiveKnockoutRoundConfig();
+        const strictUpcomingFixture = activeKnockoutRound ? getStrictUpcomingFixtureForTeam(teamId) : null;
+        if (activeKnockoutRound && !strictUpcomingFixture) return null;
 
         let nextMatchInfo = null;
 
@@ -8189,6 +8202,7 @@ const playerId = String(player.player_id || player.id || "");
         } catch (_error) {}
 
         const nextMatchId = String(
+          strictUpcomingFixture?.match_id ||
           nextMatchInfo?.matchId ||
           nextMatchInfo?.match_id ||
           nextMatchInfo?.fixtureId ||
@@ -8196,6 +8210,7 @@ const playerId = String(player.player_id || player.id || "");
         ).trim();
 
         const opponentId = String(
+          strictUpcomingFixture?.opponent ||
           nextMatchInfo?.opponentId ||
           nextMatchInfo?.opponent_id ||
           nextMatchInfo?.opponentTeamId ||
@@ -8238,7 +8253,7 @@ const playerId = String(player.player_id || player.id || "");
           return false;
         });
 
-        if (!rows.length && getActiveKnockoutRoundConfig()) {
+        if (!rows.length && activeKnockoutRound) {
           return null;
         }
 
@@ -12575,6 +12590,7 @@ formationSelect.value = currentFormation;
 
         function addSpecialOddsFixtureFallback() {
           if (out.length || !team) return;
+          if (getActiveKnockoutRoundConfig() && !getStrictUpcomingFixtureForTeam(team)) return;
 
           var opponent = "";
           var scorerRow = findDirectScorerOddsRow();
