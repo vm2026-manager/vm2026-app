@@ -4461,7 +4461,8 @@
     "gk_start_prob_normalized_at": null,
     "manual_start_note": null,
     "tm_watch_flag": null,
-    "tm_watch_reason": null
+    "tm_watch_reason": null,
+    "holdet_is_out": true
   },
   {
     "player_id": "mohamed_amine_tougai__alg",
@@ -4544,7 +4545,8 @@
     "gk_start_prob_normalized_at": null,
     "manual_start_note": null,
     "tm_watch_flag": null,
-    "tm_watch_reason": null
+    "tm_watch_reason": null,
+    "holdet_is_out": true
   },
   {
     "player_id": "jaouen_hadjam__alg",
@@ -4627,7 +4629,8 @@
     "gk_start_prob_normalized_at": null,
     "manual_start_note": null,
     "tm_watch_flag": null,
-    "tm_watch_reason": null
+    "tm_watch_reason": null,
+    "holdet_is_out": true
   },
   {
     "player_id": "samir_chergui__alg",
@@ -4710,7 +4713,8 @@
     "gk_start_prob_normalized_at": null,
     "manual_start_note": null,
     "tm_watch_flag": null,
-    "tm_watch_reason": null
+    "tm_watch_reason": null,
+    "holdet_is_out": true
   },
   {
     "player_id": "zineddine_belaid__alg",
@@ -4800,7 +4804,8 @@
     "gk_start_prob_normalized_at": null,
     "manual_start_note": null,
     "tm_watch_flag": null,
-    "tm_watch_reason": null
+    "tm_watch_reason": null,
+    "holdet_is_out": true
   },
   {
     "player_id": "rayan_a_t_nouri__alg",
@@ -4886,7 +4891,8 @@
     "gk_start_prob_normalized_at": null,
     "manual_start_note": null,
     "tm_watch_flag": null,
-    "tm_watch_reason": null
+    "tm_watch_reason": null,
+    "holdet_is_out": true
   },
   {
     "player_id": "ramy_bensebaini__alg",
@@ -4972,7 +4978,8 @@
     "gk_start_prob_normalized_at": null,
     "manual_start_note": null,
     "tm_watch_flag": null,
-    "tm_watch_reason": null
+    "tm_watch_reason": null,
+    "holdet_is_out": true
   },
   {
     "player_id": "rafik_belghali__alg",
@@ -5065,7 +5072,8 @@
     "gk_start_prob_normalized_at": null,
     "manual_start_note": null,
     "tm_watch_flag": null,
-    "tm_watch_reason": null
+    "tm_watch_reason": null,
+    "holdet_is_out": true
   },
   {
     "player_id": "a_ssa_mandi__alg",
@@ -5159,7 +5167,8 @@
     "gk_start_prob_normalized_at": null,
     "manual_start_note": null,
     "tm_watch_flag": null,
-    "tm_watch_reason": null
+    "tm_watch_reason": null,
+    "holdet_is_out": true
   },
   {
     "player_id": "nicol_s_otamendi__arg",
@@ -20440,7 +20449,8 @@
     "gk_start_prob_normalized_at": null,
     "manual_start_note": null,
     "tm_watch_flag": null,
-    "tm_watch_reason": null
+    "tm_watch_reason": null,
+    "holdet_is_out": true
   },
   {
     "player_id": "luca_zidane__alg",
@@ -20527,7 +20537,8 @@
     "gk_start_prob_normalized_at": "2026-05-26",
     "manual_start_note": null,
     "tm_watch_flag": null,
-    "tm_watch_reason": null
+    "tm_watch_reason": null,
+    "holdet_is_out": true
   },
   {
     "player_id": "melvin_feycal_mastil__alg",
@@ -20610,7 +20621,8 @@
     "gk_start_prob_normalized_at": null,
     "manual_start_note": null,
     "tm_watch_flag": null,
-    "tm_watch_reason": null
+    "tm_watch_reason": null,
+    "holdet_is_out": true
   },
   {
     "player_id": "unai_sim_n__esp",
@@ -27079,7 +27091,8 @@
     "gk_start_prob_normalized_at": null,
     "manual_start_note": null,
     "tm_watch_flag": null,
-    "tm_watch_reason": null
+    "tm_watch_reason": null,
+    "holdet_is_out": true
   },
   {
     "player_id": "ramiz_zerrouki__alg",
@@ -27173,7 +27186,8 @@
     "gk_start_prob_normalized_at": null,
     "manual_start_note": null,
     "tm_watch_flag": null,
-    "tm_watch_reason": null
+    "tm_watch_reason": null,
+    "holdet_is_out": true
   },
   {
     "player_id": "fares_cha_bi__alg",
@@ -27259,7 +27273,8 @@
     "gk_start_prob_normalized_at": null,
     "manual_start_note": null,
     "tm_watch_flag": null,
-    "tm_watch_reason": null
+    "tm_watch_reason": null,
+    "holdet_is_out": true
   },
   {
     "player_id": "yassine_titraoui__alg",
@@ -27342,7 +27357,8 @@
     "gk_start_prob_normalized_at": null,
     "manual_start_note": null,
     "tm_watch_flag": null,
-    "tm_watch_reason": null
+    "tm_watch_reason": null,
+    "holdet_is_out": true
   },
   {
     "player_id": "rodrigo_de_paul__arg",
@@ -27620,7 +27636,8 @@
     "gk_start_prob_normalized_at": null,
     "manual_start_note": null,
     "tm_watch_flag": null,
-    "tm_watch_reason": null
+    "tm_watch_reason": null,
+    "holdet_is_out": true
   },
   {
     "player_id": "hicham_boudaoui__alg",
@@ -27703,7 +27720,8 @@
     "gk_start_prob_normalized_at": null,
     "manual_start_note": null,
     "tm_watch_flag": null,
-    "tm_watch_reason": null
+    "tm_watch_reason": null,
+    "holdet_is_out": true
   },
   {
     "player_id": "giovani_lo_celso__arg",
@@ -27959,7 +27977,8 @@
     "gk_start_prob_normalized_at": null,
     "manual_start_note": null,
     "tm_watch_flag": null,
-    "tm_watch_reason": null
+    "tm_watch_reason": null,
+    "holdet_is_out": true
   },
   {
     "player_id": "nico_paz__arg",
@@ -46382,7 +46401,8 @@
     "gk_start_prob_normalized_at": null,
     "manual_start_note": null,
     "tm_watch_flag": null,
-    "tm_watch_reason": null
+    "tm_watch_reason": null,
+    "holdet_is_out": true
   },
   {
     "player_id": "nico_gonzalez__arg",
@@ -46662,7 +46682,8 @@
     "gk_start_prob_normalized_at": null,
     "manual_start_note": null,
     "tm_watch_flag": null,
-    "tm_watch_reason": null
+    "tm_watch_reason": null,
+    "holdet_is_out": true
   },
   {
     "player_id": "lionel_messi__arg",
@@ -46841,7 +46862,8 @@
     "gk_start_prob_normalized_at": null,
     "manual_start_note": null,
     "tm_watch_flag": null,
-    "tm_watch_reason": null
+    "tm_watch_reason": null,
+    "holdet_is_out": true
   },
   {
     "player_id": "adil_boulbina__alg",
@@ -46924,7 +46946,8 @@
     "gk_start_prob_normalized_at": null,
     "manual_start_note": null,
     "tm_watch_flag": null,
-    "tm_watch_reason": null
+    "tm_watch_reason": null,
+    "holdet_is_out": true
   },
   {
     "player_id": "fares_ghedjemis__alg",
@@ -47011,7 +47034,8 @@
     "gk_start_prob_normalized_at": null,
     "manual_start_note": null,
     "tm_watch_flag": null,
-    "tm_watch_reason": null
+    "tm_watch_reason": null,
+    "holdet_is_out": true
   },
   {
     "player_id": "mohamed_amoura__alg",
@@ -47098,7 +47122,8 @@
     "gk_start_prob_normalized_at": null,
     "manual_start_note": null,
     "tm_watch_flag": null,
-    "tm_watch_reason": null
+    "tm_watch_reason": null,
+    "holdet_is_out": true
   },
   {
     "player_id": "anis_hadj_moussa__alg",
@@ -47184,7 +47209,8 @@
     "gk_start_prob_normalized_at": null,
     "manual_start_note": null,
     "tm_watch_flag": null,
-    "tm_watch_reason": null
+    "tm_watch_reason": null,
+    "holdet_is_out": true
   },
   {
     "player_id": "borja_iglesias__esp",
