@@ -2793,6 +2793,24 @@
   text-align: right;
   white-space: nowrap;
 }
+
+.vm-fixture-tooltip-next-round {
+  padding: 10px 13px 12px;
+  border-top: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.vm-fixture-tooltip-next-round-label {
+  font-size: 12px;
+  font-weight: 800;
+  color: #f8fafc;
+}
+
+.vm-fixture-tooltip-next-round-subline {
+  margin-top: 3px;
+  font-size: 11px;
+  line-height: 1.35;
+  color: #cbd5e1;
+}
 /* SAFE_PLAYER_FIXTURE_TOOLTIP_CSS_END */
 
 
@@ -5118,6 +5136,87 @@ function strategyDisplayName(strategyKey) {
       }
 
       return null;
+    }
+
+    const KNOCKOUT_NEXT_ROUND_MATCHUP_MAP = {
+      R16: {
+        "89": "93",
+        "90": "94",
+        "91": "95",
+        "92": "96",
+        "93": "89",
+        "94": "90",
+        "95": "91",
+        "96": "92"
+      }
+    };
+
+    function getKnockoutFixtureDescriptorByMatchId(matchId, roundConfig = getActiveKnockoutRoundConfig()) {
+      const normalizedMatchId = String(matchId || "").trim();
+      if (!normalizedMatchId || !roundConfig) return null;
+
+      const fixtureMatch = fixtures.find(fixture =>
+        String(fixture?.match_id || fixture?.matchId || "").trim() === normalizedMatchId &&
+        isFixtureInActiveKnockoutRound(fixture, roundConfig)
+      );
+      if (fixtureMatch) {
+        return {
+          match_id: normalizedMatchId,
+          home: canonicalTeamId(fixtureMatch.home),
+          away: canonicalTeamId(fixtureMatch.away),
+          stage: String(fixtureMatch.stage || roundConfig.stageLabel || "").trim()
+        };
+      }
+
+      if (!Array.isArray(matchOddsRows) || !matchOddsRows.length) return null;
+      const oddsRow = selectPreferredOddsRow(matchOddsRows.filter(row => {
+        const rowMatchId = String(getRowValue(row, ["match_id", "fixture_id", "id"]) || "").trim();
+        return rowMatchId === normalizedMatchId && isOddsRowInLowestOddsRound(row, roundConfig);
+      }));
+      if (!oddsRow) return null;
+
+      const home = getOddsRowTeamId(oddsRow, "home");
+      const away = getOddsRowTeamId(oddsRow, "away");
+      if (!home || !away) return null;
+
+      return {
+        match_id: normalizedMatchId,
+        home,
+        away,
+        stage: String(getRowValue(oddsRow, ["stage"]) || roundConfig.stageLabel || "").trim()
+      };
+    }
+
+    function getPotentialNextKnockoutRoundInfo(player, fixtureLike) {
+      if (!player || !fixtureLike) return null;
+
+      const roundConfig = getActiveKnockoutRoundConfig();
+      if (!roundConfig) return null;
+
+      const currentMatchId = String(fixtureLike.match_id || fixtureLike.matchId || "").trim();
+      if (!currentMatchId) return null;
+
+      const stageKey = String(roundConfig.stageLabel || "").trim().toUpperCase();
+      const nextRoundMap = KNOCKOUT_NEXT_ROUND_MATCHUP_MAP[stageKey];
+      if (!nextRoundMap) return null;
+
+      const pairedMatchId = nextRoundMap[currentMatchId];
+      if (!pairedMatchId) return null;
+
+      const pairedFixture = getKnockoutFixtureDescriptorByMatchId(pairedMatchId, roundConfig);
+      if (!pairedFixture || !pairedFixture.home || !pairedFixture.away) return null;
+
+      const teamId = canonicalTeamId(player.team_id || player.team_name || "");
+      const currentHome = canonicalTeamId(fixtureLike.home);
+      const currentAway = canonicalTeamId(fixtureLike.away);
+      if (!teamId || (teamId !== currentHome && teamId !== currentAway)) return null;
+
+      const teamNameValue = teamDisplayName(teamId, teamId);
+      const nextRoundLabel = stageKey === "R16" ? "Potentiel kvartfinale" : "Potentiel næste knockout-runde";
+      return {
+        label: `Hvis ${teamNameValue} går videre`,
+        detail: `${nextRoundLabel}: vinder af ${teamDisplayName(pairedFixture.home, pairedFixture.home)} – ${teamDisplayName(pairedFixture.away, pairedFixture.away)}`
+      };
     }
 
     function isOddsRowInLowestOddsRound(row, roundConfig = getLowestOddsRoundConfig()) {
@@ -8304,6 +8403,189 @@ const playerId = String(player.player_id || player.id || "");
       if (isCleanSheetEligiblePlayer(player)) return getNextCleanSheetInfo(player);
       if (isScorerEligiblePlayer(player)) return getNextScorerInfo(player);
       return null;
+    }
+
+    function buildCleanSheetTooltipInfoFromRow(row, opponentName = "") {
+      if (!row) return null;
+
+      const yesOdds = Number(
+        row.clean_sheet_yes_odds ??
+        row.yes_odds ??
+        row.clean_sheet_odds_yes ??
+        row.odds_yes
+      );
+
+      const noOdds = Number(
+        row.clean_sheet_no_odds ??
+        row.no_odds ??
+        row.clean_sheet_odds_no ??
+        row.odds_no
+      );
+
+      let pct = null;
+      const directProb = Number(
+        row.clean_sheet_prob ??
+        row.clean_sheet_probability ??
+        row.probability ??
+        row.pct
+      );
+
+      if (Number.isFinite(directProb) && directProb > 0) {
+        pct = directProb <= 1 ? directProb * 100 : directProb;
+      } else if (Number.isFinite(yesOdds) && yesOdds > 0 && Number.isFinite(noOdds) && noOdds > 0) {
+        const invYes = 1 / yesOdds;
+        const invNo = 1 / noOdds;
+        pct = (invYes / (invYes + invNo)) * 100;
+      }
+
+      if (!Number.isFinite(pct)) return null;
+
+      const roundedPct = Math.round(pct);
+      const sourceText =
+        row.clean_sheet_fetched_label ||
+        row.odds_fetched_label ||
+        row.fetched_label ||
+        row.source ||
+        "";
+
+      return {
+        label: "Rent bur",
+        shortLabel: "Rent bur",
+        pct: roundedPct,
+        pctText: `${roundedPct} %`,
+        valueText: `${roundedPct} %`,
+        detailText: [opponentName ? `vs. ${opponentName}` : "", sourceText].filter(Boolean).join(" · "),
+        sourceText,
+        fetchedLabel: sourceText,
+        opponentName,
+        yesOdds: Number.isFinite(yesOdds) ? yesOdds : null,
+        noOdds: Number.isFinite(noOdds) ? noOdds : null
+      };
+    }
+
+    function buildScorerTooltipInfoFromRow(row, opponentName = "") {
+      if (!row) return null;
+      const scorerOdds = parsePositiveOdds(
+        getRowValue(row, ["scorer_odds", "anytime_scorer_odds", "odds"])
+      );
+      if (!scorerOdds) return null;
+
+      const fetchedLabel =
+        row.scorer_fetched_label ||
+        row.fetched_label ||
+        row.source ||
+        "";
+
+      return {
+        label: "Scorer i kampen",
+        shortLabel: "Scorer",
+        odds: scorerOdds,
+        oddsText: formatOddsValue(scorerOdds),
+        valueText: formatOddsValue(scorerOdds),
+        detailText: [opponentName ? `vs. ${opponentName}` : "", fetchedLabel].filter(Boolean).join(" · "),
+        sourceText: fetchedLabel,
+        fetchedLabel,
+        opponentName
+      };
+    }
+
+    function getFixtureBoundSupplementalOddsInfo(player, fixtureLike) {
+      try {
+        if (!player || !fixtureLike) return null;
+
+        const teamId = canonicalTeamId(
+          player.team_id ||
+          player.country_code ||
+          player.teamCode ||
+          player.team ||
+          player.country ||
+          ""
+        ).trim();
+        if (!teamId) return null;
+
+        const matchId = String(fixtureLike.match_id || fixtureLike.matchId || "").trim();
+        const opponentId = canonicalTeamId(
+          fixtureLike.opponent ||
+          fixtureLike.opponentId ||
+          fixtureLike.opponent_id ||
+          (canonicalTeamId(fixtureLike.home) === teamId ? fixtureLike.away : fixtureLike.home)
+        );
+        const opponentName = fixtureLike.opponentName || teamDisplayName(opponentId, opponentId);
+
+        if (isCleanSheetEligiblePlayer(player) && Array.isArray(cleanSheetOddsRows) && cleanSheetOddsRows.length) {
+          const cleanSheetRows = cleanSheetOddsRows.filter((row) => {
+            const rowTeamId = canonicalTeamId(row.team_id || row.teamId || row.team || row.team_code || "");
+            if (rowTeamId !== teamId) return false;
+            const rowMatchId = String(row.match_id || row.matchId || "").trim();
+            const rowOpponentId = canonicalTeamId(
+              row.opponent_id ||
+              row.opponentId ||
+              row.opponent_team_id ||
+              row.opponent
+            );
+            if (matchId && rowMatchId) return rowMatchId === matchId;
+            if (opponentId && rowOpponentId) return rowOpponentId === opponentId;
+            return false;
+          });
+
+          const cleanSheetRow = (typeof selectPreferredCleanSheetRow === "function"
+            ? selectPreferredCleanSheetRow(cleanSheetRows)
+            : null) || cleanSheetRows[0] || null;
+
+          const cleanSheetInfo = buildCleanSheetTooltipInfoFromRow(cleanSheetRow, opponentName);
+          if (cleanSheetInfo) return cleanSheetInfo;
+        }
+
+        if (isScorerEligiblePlayer(player) && Array.isArray(scorerOddsRows) && scorerOddsRows.length) {
+          const playerId = scorerPlayerIdKey(player.player_id || player.id || "");
+          const teamName = player.team_name || player.team || "";
+          const nameTeamKey = scorerNameTeamKey(player.player_name, teamId, teamName);
+          const normalizedPlayerName = normalizeName(player.player_name || "");
+
+          let scorerCandidates = scorerOddsRows.filter((row) => {
+            const rowPlayerId = scorerPlayerIdKey(row.player_id || row.playerId || "");
+            return !!playerId && rowPlayerId === playerId;
+          });
+
+          if (!scorerCandidates.length && nameTeamKey && scorerOddsByNameTeam.has(nameTeamKey)) {
+            scorerCandidates = scorerOddsByNameTeam.get(nameTeamKey) || [];
+          }
+
+          if (!scorerCandidates.length && normalizedPlayerName) {
+            scorerCandidates = scorerOddsRows.filter((row) => {
+              const rowName = normalizeName(row.player_name || row.playerName || "");
+              const rowTeamId = canonicalTeamId(row.team_id || row.team || row.team_code || row.teamCode || "");
+              if (rowName !== normalizedPlayerName) return false;
+              if (teamId && rowTeamId) return rowTeamId === teamId;
+              return true;
+            });
+          }
+
+          const scorerRows = scorerCandidates.filter((row) => {
+            const rowMatchId = String(row.match_id || row.matchId || "").trim();
+            const rowOpponentId = canonicalTeamId(
+              row.opponent_id ||
+              row.opponentId ||
+              row.opponent_team_id ||
+              row.opponent
+            );
+            if (matchId && rowMatchId) return rowMatchId === matchId;
+            if (opponentId && rowOpponentId) return rowOpponentId === opponentId;
+            return false;
+          });
+
+          const scorerRow = (typeof selectPreferredScorerRow === "function"
+            ? selectPreferredScorerRow(scorerRows)
+            : null) || scorerRows[0] || null;
+
+          const scorerInfo = buildScorerTooltipInfoFromRow(scorerRow, opponentName);
+          if (scorerInfo) return scorerInfo;
+        }
+
+        return null;
+      } catch (_error) {
+        return null;
+      }
     }
 
     function getPlayerOpponentLineText(player, nextMatchInfo = null) {
@@ -12521,6 +12803,10 @@ formationSelect.value = currentFormation;
               opponent: opponent,
               opponentName: teamName(opponent),
               kickoff: kickoff,
+              match_id: matchId,
+              stage: String((fixtureLike && fixtureLike.stage) || "") || (row ? String(getRowValue(row, ["stage"]) || "") : ""),
+              home: home,
+              away: away,
               win: win,
               draw: draw,
               loss: loss,
@@ -12705,6 +12991,10 @@ formationSelect.value = currentFormation;
             opponent: opponent,
             opponentName: teamName(opponent),
             kickoff: fallbackOddsRow.kickoff || "",
+            match_id: String(getRowValue(fallbackOddsRow, ["match_id", "fixture_id", "id"]) || "").trim(),
+            stage: String(getRowValue(fallbackOddsRow, ["stage"]) || "").trim(),
+            home: fallbackHome,
+            away: fallbackAway,
             win: fallbackWin,
             draw: fallbackDraw,
             loss: fallbackLoss,
@@ -12819,14 +13109,22 @@ formationSelect.value = currentFormation;
     function html(player, fixtures) {
       var title = fixtures.length === 1 ? "N\u00e6ste kamp" : "N\u00e6ste " + fixtures.length + " kampe";
       var source = fixtures.find(function (f) { return f.source; });
+      var nextRoundInfo = null;
       var supplementalOddsInfo = null;
+      if (fixtures.length && typeof getFixtureBoundSupplementalOddsInfo === "function") {
+        try {
+          supplementalOddsInfo = getFixtureBoundSupplementalOddsInfo(player, fixtures[0]);
+        } catch (_fixtureBoundSupplementalError) {
+          supplementalOddsInfo = null;
+        }
+      }
       try {
-        supplementalOddsInfo = typeof getPlayerSupplementalOddsInfo === "function"
+        supplementalOddsInfo = supplementalOddsInfo || (typeof getPlayerSupplementalOddsInfo === "function"
           ? getPlayerSupplementalOddsInfo(player)
-          : null;
+          : null);
       } catch (error) {
         console.warn("Supplemental odds tooltip springes over", error);
-        supplementalOddsInfo = null;
+        supplementalOddsInfo = supplementalOddsInfo || null;
       }
       if (!supplementalOddsInfo && typeof getDirectTooltipScorerInfo === "function") {
         supplementalOddsInfo = getDirectTooltipScorerInfo(player);
@@ -12841,6 +13139,14 @@ formationSelect.value = currentFormation;
       var sourceText = source ? source.source : "odds";
       if (source && source.oddsFetchedLabel) {
         sourceText = sourceText + " (" + formatOddsSourceLabel(source.oddsFetchedLabel) + ")";
+      }
+      try {
+        nextRoundInfo = fixtures.length && typeof getPotentialNextKnockoutRoundInfo === "function"
+          ? getPotentialNextKnockoutRoundInfo(player, fixtures[0])
+          : null;
+      } catch (error) {
+        console.warn("Potentiel knockout-modstander kunne ikke beregnes", error);
+        nextRoundInfo = null;
       }
 
       if (!fixtures.length) {
@@ -12888,6 +13194,12 @@ formationSelect.value = currentFormation;
               '</div>' +
               '<div class="vm-fixture-tooltip-clean-sheet-value">' + esc(supplementalOddsInfo.valueText) + '</div>' +
             '</div>'
+          : '') +
+        (nextRoundInfo
+          ? '<div class="vm-fixture-tooltip-next-round">' +
+              '<div class="vm-fixture-tooltip-next-round-label">' + esc(nextRoundInfo.label) + '</div>' +
+              '<div class="vm-fixture-tooltip-next-round-subline">' + esc(nextRoundInfo.detail) + '</div>' +
+            '</div>'
           : '');
     }
 
@@ -12897,8 +13209,15 @@ formationSelect.value = currentFormation;
       } catch (error) {
         console.warn("Tooltip html fallback", error);
         var supplementalOddsInfo = null;
+        if (Array.isArray(fixtures) && fixtures.length && typeof getFixtureBoundSupplementalOddsInfo === "function") {
+          try {
+            supplementalOddsInfo = getFixtureBoundSupplementalOddsInfo(player, fixtures[0]);
+          } catch (_fixtureBoundSupplementalError) {
+            supplementalOddsInfo = null;
+          }
+        }
         if (typeof getDirectTooltipScorerInfo === "function") {
-          supplementalOddsInfo = getDirectTooltipScorerInfo(player);
+          supplementalOddsInfo = supplementalOddsInfo || getDirectTooltipScorerInfo(player);
         }
         if (!supplementalOddsInfo && isCleanSheetEligiblePlayer(player)) {
           try {
@@ -12930,6 +13249,10 @@ formationSelect.value = currentFormation;
         opponent: nextMatchInfo.opponentId || "",
         opponentName: nextMatchInfo.displayOpponentName || nextMatchInfo.opponentName || "",
         kickoff: nextMatchInfo.kickoff || "",
+        match_id: nextMatchInfo.fixture?.match_id || "",
+        stage: nextMatchInfo.stage || nextMatchInfo.fixture?.stage || "",
+        home: nextMatchInfo.fixture?.home || "",
+        away: nextMatchInfo.fixture?.away || "",
         win: nextMatchInfo.win,
         draw: nextMatchInfo.draw,
         loss: nextMatchInfo.loss,
