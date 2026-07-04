@@ -174,19 +174,19 @@ djed_spence__eng,Djed Spence,ENG,DEF,59,0.5874,0.5874,transfermarkt_availability
 jarell_quansah__eng,Jarell Quansah,ENG,DEF,49,0.4921,0.4921,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.4327,,,,jarell quansah||eng,,,0.5512,0.6934,medium_risk,medium_risk,
 lewis_hall__eng,Lewis Hall,ENG,DEF,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.0,0.5634,out,out_of_tournament,0.0
 valentino_livramento__eng,Valentino Livramento,ENG,DEF,29,0.2906,0.2906,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.4796,,,,valentino livramento||eng,,,0.3159,0.771,medium_risk,medium_risk,
-jerome_opoku__gha,Jerome Opoku,GHA,DEF,30,0.2972,0.2972,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.3969,,,,jerome opoku||gha,,,0.3409,0.6338,high_risk,high_risk,
-patric_pfeiffer__gha,Patric Pfeiffer,GHA,DEF,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.0438,,,,patric pfeiffer||gha,,,0.0,0.7934,out,out_of_tournament,0.0
-kojo_peprah_oppong__gha,Kojo Peprah Oppong,GHA,DEF,34,0.3441,0.3441,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6728,,,,kojo peprah oppong||gha,,,0.3735,0.7748,medium_risk,medium_risk,
-alexander_djiku__gha,Alexander Djiku,GHA,DEF,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.8325,,,,alexander djiku||gha,,,0.0,0.6337,out,out_of_tournament,0.0
-alidu_seidu__gha,Alidu Seidu,GHA,DEF,36,0.3575,0.3575,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.3992,0.7017,medium_risk,medium_risk,
-derrick_kohn__gha,Derrick Köhn,GHA,DEF,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.6728,,,,derrick kohn||gha,,,0.0,0.8387,out,out_of_tournament,0.0
-caleb_yirenkyi__gha,Caleb Yirenkyi,GHA,DEF,64,0.6441,0.6441,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.8892,,,,caleb yirenkyi||gha,,,0.6844,0.8316,medium_risk,medium_risk,
-gideon_mensah__gha,Gideon Mensah,GHA,DEF,41,0.412,0.412,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6819,,,,gideon mensah||gha,,,0.4426,0.8021,medium_risk,medium_risk,
-derrick_luckassen__gha,Derrick Luckassen,GHA,DEF,4,0.0449,0.0449,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.4417,,,,derrick luckassen||gha,,,0.05,0.7076,medium_risk,medium_risk,
-abdul_rahman_baba__gha,Abdul Rahman Baba,GHA,DEF,59,0.5907,0.5907,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,,,,,,,,0.6868,0.6,high_risk,high_risk,
-abdul_mumin__gha,Abdul Mumin,GHA,DEF,25,0.2545,0.2545,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.2959,0.6,high_risk,high_risk,
-jonas_adjetey__gha,Jonas Adjetey,GHA,DEF,81,0.8126,0.8126,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,,,,,,,,0.9009,0.7201,medium_risk,medium_risk,
-marvin_senaya__gha,Marvin Senaya,GHA,DEF,30,0.3043,0.3043,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.0438,,,,marvin senaya||gha,,,0.339,0.7076,medium_risk,medium_risk,
+jerome_opoku__gha,Jerome Opoku,GHA,DEF,30,0.2972,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.3969,,,,jerome opoku||gha,,,0,0.6338,team_eliminated_r32,team_eliminated_r32,0
+patric_pfeiffer__gha,Patric Pfeiffer,GHA,DEF,0,0.0,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.0438,,,,patric pfeiffer||gha,,,0,0.7934,team_eliminated_r32,team_eliminated_r32,0
+kojo_peprah_oppong__gha,Kojo Peprah Oppong,GHA,DEF,34,0.3441,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.6728,,,,kojo peprah oppong||gha,,,0,0.7748,team_eliminated_r32,team_eliminated_r32,0
+alexander_djiku__gha,Alexander Djiku,GHA,DEF,0,0.0,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.8325,,,,alexander djiku||gha,,,0,0.6337,team_eliminated_r32,team_eliminated_r32,0
+alidu_seidu__gha,Alidu Seidu,GHA,DEF,36,0.3575,0,team_eliminated_r32,team_eliminated_r32,,,,,,,,,,,,,0,0.7017,team_eliminated_r32,team_eliminated_r32,0
+derrick_kohn__gha,Derrick Köhn,GHA,DEF,0,0.0,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.6728,,,,derrick kohn||gha,,,0,0.8387,team_eliminated_r32,team_eliminated_r32,0
+caleb_yirenkyi__gha,Caleb Yirenkyi,GHA,DEF,64,0.6441,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.8892,,,,caleb yirenkyi||gha,,,0,0.8316,team_eliminated_r32,team_eliminated_r32,0
+gideon_mensah__gha,Gideon Mensah,GHA,DEF,41,0.412,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.6819,,,,gideon mensah||gha,,,0,0.8021,team_eliminated_r32,team_eliminated_r32,0
+derrick_luckassen__gha,Derrick Luckassen,GHA,DEF,4,0.0449,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.4417,,,,derrick luckassen||gha,,,0,0.7076,team_eliminated_r32,team_eliminated_r32,0
+abdul_rahman_baba__gha,Abdul Rahman Baba,GHA,DEF,59,0.5907,0,team_eliminated_r32,team_eliminated_r32,,,,,,,,,,,,,0,0.6,team_eliminated_r32,team_eliminated_r32,0
+abdul_mumin__gha,Abdul Mumin,GHA,DEF,25,0.2545,0,team_eliminated_r32,team_eliminated_r32,,,,,,,,,,,,,0,0.6,team_eliminated_r32,team_eliminated_r32,0
+jonas_adjetey__gha,Jonas Adjetey,GHA,DEF,81,0.8126,0,team_eliminated_r32,team_eliminated_r32,,,,,,,,,,,,,0,0.7201,team_eliminated_r32,team_eliminated_r32,0
+marvin_senaya__gha,Marvin Senaya,GHA,DEF,30,0.3043,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.0438,,,,marvin senaya||gha,,,0,0.7076,team_eliminated_r32,team_eliminated_r32,0
 yuto_nagatomo__jpn,Yuto Nagatomo,JPN,DEF,18,0.1759,0.1759,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7557,,,,yuto nagatomo||jpn,,,0.2046,0.6,high_risk,high_risk,
 ko_itakura__jpn,Ko Itakura,JPN,DEF,62,0.6165,0.6165,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.6414,,,,ko itakura||jpn,,,0.6818,0.7264,medium_risk,medium_risk,
 takehiro_tomiyasu__jpn,Takehiro Tomiyasu,JPN,DEF,80,0.8016,0.8016,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.7391,,,,takehiro tomiyasu||jpn,,,0.9321,0.6,high_risk,high_risk,
@@ -452,16 +452,16 @@ mohammad_abualnadi__jor,Mohammad Abualnadi,JOR,DEF,59,0.5929,0.5929,transfermark
 saleem_obaid__jor,Saleem Obaid,JOR,DEF,8,0.0784,0.0784,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.4778,,,,saleem obaid||jor,,,0.0911,0.6,high_risk,high_risk,
 husam_abu_dahab__jor,Husam Abu Dahab,JOR,DEF,33,0.3324,0.3324,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.4523,,,,husam abu dahab||jor,,,0.3563,0.8086,medium_risk,medium_risk,
 ahmad_assaf__jor,Ahmad Assaf,JOR,DEF,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.5422,,,,ahmad assaf||jor,,,0.0,0.6,out,out_of_tournament,0.0
-diney_borges__cpv,Diney Borges,CPV,DEF,79,0.7912,0.7912,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.4927,,,,diney borges||cpv,,,0.868,0.7472,medium_risk,medium_risk,
-roberto_lopes__cpv,Roberto Lopes,CPV,DEF,90,0.8954,0.8954,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.8194,,,,roberto lopes||cpv,,,0.97,0.7803,medium_risk,medium_risk,
-wagner_pina__cpv,Wagner Pina,CPV,DEF,59,0.5877,0.5877,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.5432,,,,wagner pina||cpv,,,0.6084,0.9024,medium_risk,medium_risk,
-steven_moreira__cpv,Steven Moreira,CPV,DEF,42,0.4171,0.4171,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.8138,,,,steven moreira||cpv,,,0.4704,0.6759,medium_risk,medium_risk,
-sidny_lopes_cabral__cpv,Sidny Lopes Cabral,CPV,DEF,52,0.5168,0.5168,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.5278,,,,sidny lopes cabral||cpv,,,0.601,0.6,high_risk,high_risk,
-heri_tavares__cpv,Heri Tavares,CPV,DEF,0,0.0,0.0,holdet_official_unmatched_default,,,,,,,,,,,,,,0.0,,out,out_of_tournament,0.0
-joao_paulo__cpv,Joao Paulo,CPV,DEF,41,0.4119,0.4119,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.4414,0.8086,medium_risk,medium_risk,
-logan_costa__cpv,Logan Costa,CPV,DEF,65,0.6542,0.6542,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.8139,,,,logan costa||cpv,,,0.6998,0.814,medium_risk,medium_risk,
-stopira__cpv,Stopira,CPV,DEF,33,0.3309,0.3309,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.654,,,,stopira||cpv,,,0.3847,0.6,high_risk,high_risk,
-kelvin_pires__cpv,Kelvin Pires,CPV,DEF,26,0.2557,0.2557,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.1811,,,,kelvin pires||cpv,,,0.2973,0.6,high_risk,high_risk,
+diney_borges__cpv,Diney Borges,CPV,DEF,79,0.7912,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.4927,,,,diney borges||cpv,,,0,0.7472,team_eliminated_r32,team_eliminated_r32,0
+roberto_lopes__cpv,Roberto Lopes,CPV,DEF,90,0.8954,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.8194,,,,roberto lopes||cpv,,,0,0.7803,team_eliminated_r32,team_eliminated_r32,0
+wagner_pina__cpv,Wagner Pina,CPV,DEF,59,0.5877,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.5432,,,,wagner pina||cpv,,,0,0.9024,team_eliminated_r32,team_eliminated_r32,0
+steven_moreira__cpv,Steven Moreira,CPV,DEF,42,0.4171,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.8138,,,,steven moreira||cpv,,,0,0.6759,team_eliminated_r32,team_eliminated_r32,0
+sidny_lopes_cabral__cpv,Sidny Lopes Cabral,CPV,DEF,52,0.5168,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.5278,,,,sidny lopes cabral||cpv,,,0,0.6,team_eliminated_r32,team_eliminated_r32,0
+heri_tavares__cpv,Heri Tavares,CPV,DEF,0,0.0,0,team_eliminated_r32,team_eliminated_r32,,,,,,,,,,,,,0,,team_eliminated_r32,team_eliminated_r32,0
+joao_paulo__cpv,Joao Paulo,CPV,DEF,41,0.4119,0,team_eliminated_r32,team_eliminated_r32,,,,,,,,,,,,,0,0.8086,team_eliminated_r32,team_eliminated_r32,0
+logan_costa__cpv,Logan Costa,CPV,DEF,65,0.6542,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.8139,,,,logan costa||cpv,,,0,0.814,team_eliminated_r32,team_eliminated_r32,0
+stopira__cpv,Stopira,CPV,DEF,33,0.3309,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.654,,,,stopira||cpv,,,0,0.6,team_eliminated_r32,team_eliminated_r32,0
+kelvin_pires__cpv,Kelvin Pires,CPV,DEF,26,0.2557,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.1811,,,,kelvin pires||cpv,,,0,0.6,team_eliminated_r32,team_eliminated_r32,0
 henrik_falchener__nor,Henrik Falchener,NOR,DEF,5,0.047,0.047,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.0446,,,,henrik falchener||nor,,,0.05,0.8288,medium_risk,medium_risk,
 sondre_langas__nor,Sondre Langås,NOR,DEF,5,0.0472,0.0472,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.1054,,,,sondre langas||nor,,,0.05,0.8391,medium_risk,medium_risk,
 kristoffer_ajer__nor,Kristoffer Ajer,NOR,DEF,91,0.9075,0.9075,transfermarkt_availability_split_2026_06_07,sikker starter - Transfermarkt landshold,,,,,,0.8028,,,,kristoffer ajer||nor,,,0.9629,0.8357,medium_risk,medium_risk,
@@ -514,12 +514,12 @@ eloy_room__cuw,Eloy Room,CUW,GK,95,0.9495,0.9495,transfermarkt_availability_spli
 sander_tangvik__nor,Sander Tangvik,NOR,GK,3,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.0434,,,,sander tangvik||nor,,,0.0251,0.8134,medium_risk,medium_risk,
 rjan_nyland__nor,Ørjan Nyland,NOR,GK,95,0.9496,0.9496,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,sikker starter - GK hierarchy,,,,,,0.6193,,,,ørjan nyland||nor,,,0.9496,0.9293,low_risk,low_risk,
 viljar_myhra__nor,Viljar Myhra,NOR,GK,0,0.0,0.0,holdet_official_unmatched_default,ude - GK hierarchy,,,,,,,,,,,,,0.0,,out,out_of_tournament,0.0
-cj_dos_santos__cpv,CJ Dos Santos,CPV,GK,3,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,,,,,,,,0.0251,0.75,unknown,unknown,
-bruno_varela__cpv,Bruno Varela,CPV,GK,0,0.0,0.0,holdet_official_unmatched_default,ude - GK hierarchy,,,,,,,,,,,,,0.0,,out,out_of_tournament,0.0
+cj_dos_santos__cpv,CJ Dos Santos,CPV,GK,3,0.0251,0,team_eliminated_r32,team_eliminated_r32,,,,,,,,,,,,,0,0.75,team_eliminated_r32,team_eliminated_r32,0
+bruno_varela__cpv,Bruno Varela,CPV,GK,0,0.0,0,team_eliminated_r32,team_eliminated_r32,,,,,,,,,,,,,0,,team_eliminated_r32,team_eliminated_r32,0
 yazeed_abulaila__jor,Yazeed Abulaila,JOR,GK,95,0.9498,0.9498,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,sikker starter - GK hierarchy,,,,,,0.6988,,,,yazeed abulaila||jor,,,0.9498,0.8149,medium_risk,medium_risk,
 noureddin_bani_attiah__jor,Noureddin Bani Attiah,JOR,GK,3,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,,,,,,,,0.0251,0.7434,medium_risk,medium_risk,
-marcio_rosa__cpv,Marcio Rosa,CPV,GK,5,0.0464,0.0464,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.1599,,,,marcio rosa||cpv,,,0.0464,0.7641,medium_risk,medium_risk,
-vozinha__cpv,Vozinha,CPV,GK,93,0.9285,0.9285,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,sikker starter - GK hierarchy,,,,,,0.8342,,,,vozinha||cpv,,,0.9285,0.8701,low_risk,low_risk,
+marcio_rosa__cpv,Marcio Rosa,CPV,GK,5,0.0464,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.1599,,,,marcio rosa||cpv,,,0,0.7641,team_eliminated_r32,team_eliminated_r32,0
+vozinha__cpv,Vozinha,CPV,GK,93,0.9285,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.8342,,,,vozinha||cpv,,,0,0.8701,team_eliminated_r32,team_eliminated_r32,0
 abdallah_al_fakhouri__jor,Abdallah Al-Fakhouri,JOR,GK,3,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.3942,,,,abdallah al-fakhouri||jor,,,0.0251,0.6,high_risk,high_risk,
 abdel_rahman_al_talalga__jor,Abdel Rahman Al-Talalga,JOR,GK,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,ude - GK hierarchy,,,,,,0.7262,,,,abdel rahman al-talalga||jor,,,0.0,0.6702,out,out_of_tournament,0.0
 utkir_yusupov__uzb,Utkir Yusupov,UZB,GK,49,0.4928,0.4928,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,rotation/usikker - GK hierarchy,,,,,,0.6701,,,,utkir yusupov||uzb,,,0.4928,0.8586,medium_risk,medium_risk,
@@ -612,11 +612,11 @@ jo_hyeon_woo__kor,Hyeon-Woo Jo,KOR,GK,27,0.272,0.272,transfermarkt_availability_
 zion_suzuki__jpn,Zion Suzuki,JPN,GK,94,0.9433,0.9433,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,sikker starter - GK hierarchy,,,,,,0.7731,,,,zion suzuki||jpn,,,0.9433,0.6927,medium_risk,medium_risk,
 keisuke_sako__jpn,Keisuke Osako,JPN,GK,3,0.0263,0.0263,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.3581,,,,keisuke osako||jpn,,,0.0263,0.7043,medium_risk,medium_risk,
 tomoki_hayakawa__jpn,Tomoki Hayakawa,JPN,GK,3,0.0304,0.0304,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.2561,,,,tomoki hayakawa||jpn,,,0.0304,0.9164,medium_risk,medium_risk,
-solomon_agbasi__gha,Solomon Agbasi,GHA,GK,0,0.0,0.0,holdet_official_unmatched_default,ude - GK hierarchy,,,,,,,,,,,,,0.0,,out,out_of_tournament,0.0
-benjamin_asare__gha,Benjamin Asare,GHA,GK,82,0.8194,0.8194,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,sandsynlig starter - GK hierarchy,,,,,,0.7262,,,,benjamin asare||gha,,,0.8194,0.9221,medium_risk,medium_risk,
-paul_reverson__gha,Paul Reverson,GHA,GK,0,0.0,0.0,holdet_official_unmatched_default,ude - GK hierarchy,,,,,,,,,,,,,0.0,,out,out_of_tournament,0.0
-joseph_anang__gha,Joseph Anang,GHA,GK,3,0.0252,0.0252,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.0924,,,,joseph anang||gha,,,0.0252,0.8316,medium_risk,medium_risk,
-lawrence_ati_zigi__gha,Lawrence Ati Zigi,GHA,GK,16,0.1554,0.1554,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.3471,,,,lawrence ati zigi||gha,,,0.1554,0.8549,medium_risk,medium_risk,
+solomon_agbasi__gha,Solomon Agbasi,GHA,GK,0,0.0,0,team_eliminated_r32,team_eliminated_r32,,,,,,,,,,,,,0,,team_eliminated_r32,team_eliminated_r32,0
+benjamin_asare__gha,Benjamin Asare,GHA,GK,82,0.8194,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.7262,,,,benjamin asare||gha,,,0,0.9221,team_eliminated_r32,team_eliminated_r32,0
+paul_reverson__gha,Paul Reverson,GHA,GK,0,0.0,0,team_eliminated_r32,team_eliminated_r32,,,,,,,,,,,,,0,,team_eliminated_r32,team_eliminated_r32,0
+joseph_anang__gha,Joseph Anang,GHA,GK,3,0.0252,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.0924,,,,joseph anang||gha,,,0,0.8316,team_eliminated_r32,team_eliminated_r32,0
+lawrence_ati_zigi__gha,Lawrence Ati Zigi,GHA,GK,16,0.1554,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.3471,,,,lawrence ati zigi||gha,,,0,0.8549,team_eliminated_r32,team_eliminated_r32,0
 dean_henderson__eng,Dean Henderson,ENG,GK,3,0.0276,0.0276,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.08,,,,dean henderson||eng,,,0.0276,0.7402,medium_risk,medium_risk,
 james_trafford__eng,James Trafford,ENG,GK,4,0.0437,0.0437,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.2332,,,,james trafford||eng,,,0.0437,0.9302,medium_risk,medium_risk,
 jordan_pickford__eng,Jordan Pickford,ENG,GK,93,0.9287,0.9287,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,sikker starter - GK hierarchy,,,,,,0.7459,,,,jordan pickford||eng,,,0.9287,0.9429,low_risk,low_risk,
@@ -866,10 +866,10 @@ jordan_henderson__eng,Jordan Henderson,ENG,MID,52,0.5247,0.5247,transfermarkt_av
 morgan_rogers__eng,Morgan Rogers,ENG,MID,45.0,0.45,0.45,manual_context_override_safe,rotation/usikker - Transfermarkt landshold,,,,,,0.8928,,,,morgan rogers||eng,,,0.55,0.8545,medium_risk,medium_risk,
 kobbie_mainoo__eng,Kobbie Mainoo,ENG,MID,56,0.5609,0.5609,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.7371,,,,kobbie mainoo||eng,,,0.6522,0.6,high_risk,high_risk,
 jude_bellingham__eng,Jude Bellingham,ENG,MID,93.0,0.93,0.93,manual_context_override_safe,sikker starter - Transfermarkt landshold,,,,,,0.7202,,,,jude bellingham||eng,,,0.97,0.98,low_risk,medium_risk,0.98
-ibrahim_sulemana__gha,Ibrahim Sulemana,GHA,MID,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6239,,,,ibrahim sulemana||gha,,,0.0,0.6724,out,out_of_tournament,0.0
-elisha_owusu__gha,Elisha Owusu,GHA,MID,30,0.3014,0.3014,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.5235,,,,elisha owusu||gha,,,0.3504,0.6007,high_risk,high_risk,
-thomas_partey__gha,Thomas Partey,GHA,MID,86,0.8558,0.8558,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.778,,,,thomas partey||gha,,,0.9696,0.6647,medium_risk,medium_risk,
-augustine_boakye__gha,Augustine Boakye,GHA,MID,5,0.0456,0.0456,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.05,0.75,unknown,unknown,
+ibrahim_sulemana__gha,Ibrahim Sulemana,GHA,MID,0,0.0,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.6239,,,,ibrahim sulemana||gha,,,0,0.6724,team_eliminated_r32,team_eliminated_r32,0
+elisha_owusu__gha,Elisha Owusu,GHA,MID,30,0.3014,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.5235,,,,elisha owusu||gha,,,0,0.6007,team_eliminated_r32,team_eliminated_r32,0
+thomas_partey__gha,Thomas Partey,GHA,MID,86,0.8558,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.778,,,,thomas partey||gha,,,0,0.6647,team_eliminated_r32,team_eliminated_r32,0
+augustine_boakye__gha,Augustine Boakye,GHA,MID,5,0.0456,0,team_eliminated_r32,team_eliminated_r32,,,,,,,,,,,,,0,0.75,team_eliminated_r32,team_eliminated_r32,0
 kodai_sano__jpn,Kodai Sano,JPN,MID,0,0.0,0.0,holdet_official_unmatched_default,,,,,,,,,,,,,,0.0,,out,out_of_tournament,0.0
 ryunosuke_sato__jpn,Ryunosuke Sato,JPN,MID,0,0.0,0.0,holdet_official_unmatched_default,,,,,,,,,,,,,,0.0,,out,out_of_tournament,0.0
 wataru_endo__jpn,Wataru Endo,JPN,MID,62,0.6163,0.6163,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.6471,,,,wataru endo||jpn,,,0.6727,0.7607,medium_risk,medium_risk,
@@ -881,7 +881,7 @@ koki_saito__jpn,Koki Saito,JPN,MID,0,0.0,0.0,holdet_official_unmatched_default,,
 junya_ito__jpn,Junya Ito,JPN,MID,56,0.5593,0.5593,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.7491,,,,junya ito||jpn,,,0.6179,0.729,medium_risk,medium_risk,
 ritsu_doan__jpn,Ritsu Doan,JPN,MID,60,0.595,0.595,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.8106,,,,ritsu doan||jpn,,,0.658,0.7264,medium_risk,medium_risk,
 joel_chima_fujita__jpn,Joel Chima Fujita,JPN,MID,0,0.0,0.0,holdet_official_unmatched_default,,,,,,,,,,,,,,0.0,,out,out_of_tournament,0.0
-kwasi_sibo__gha,Kwasi Sibo,GHA,MID,67,0.6695,0.6695,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.8851,,,,kwasi sibo||gha,,,0.7186,0.8047,medium_risk,medium_risk,
+kwasi_sibo__gha,Kwasi Sibo,GHA,MID,67,0.6695,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.8851,,,,kwasi sibo||gha,,,0,0.8047,team_eliminated_r32,team_eliminated_r32,0
 ao_tanaka__jpn,Ao Tanaka,JPN,MID,56,0.5589,0.5589,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.6829,,,,ao tanaka||jpn,,,0.6251,0.6976,medium_risk,medium_risk,
 hyeok_kyu_kwon__kor,Hyeok-kyu Kwon,KOR,MID,0,0.0,0.0,holdet_official_unmatched_default,,,,,,,,,,,,,,0.0,,out,out_of_tournament,0.0
 hyun_jun_yang__kor,Hyun-Jun Yang,KOR,MID,4,0.043,0.043,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.4047,,,,hyun-jun yang||kor,,,0.05,0.6,high_risk,high_risk,
@@ -1144,13 +1144,13 @@ jacob_shaffelburg__can,Jacob Shaffelburg,CAN,MID,10,0.1043,0.1043,transfermarkt_
 nathan_saliba__can,Nathan Saliba,CAN,MID,33,0.3262,0.3262,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.5648,,,,nathan saliba||can,,,0.3503,0.8037,medium_risk,medium_risk,
 niko_sigur__can,Niko Sigur,CAN,MID,41,0.4104,0.4104,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7463,,,,niko sigur||can,,,0.4247,0.9037,medium_risk,medium_risk,
 otabek_shukurov__uzb,Otabek Shukurov,UZB,MID,91,0.9103,0.9103,transfermarkt_availability_split_2026_06_07,sikker starter - Transfermarkt landshold,,,,,,0.8579,,,,otabek shukurov||uzb,,,0.9666,0.8333,medium_risk,medium_risk,
-telmo_arcanjo__cpv,Telmo Arcanjo,CPV,MID,54,0.5432,0.5432,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.7304,,,,telmo arcanjo||cpv,,,0.6118,0.6799,medium_risk,medium_risk,
-kevin_lenini__cpv,Kevin Lenini Pina,CPV,MID,67,0.6738,0.6738,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,,,,,,,,0.7275,0.7889,medium_risk,medium_risk,
-laros_duarte__cpv,Laros Duarte,CPV,MID,29,0.294,0.294,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.652,,,,laros duarte||cpv,,,0.3156,0.8048,medium_risk,medium_risk,
-ailson_tavares__cpv,Ailson Tavares,CPV,MID,0,0.0,0.0,holdet_official_unmatched_default,,,,,,,,,,,,,,0.0,,out,out_of_tournament,0.0
-deroy_duarte__cpv,Deroy Duarte,CPV,MID,37,0.3704,0.3704,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7054,,,,deroy duarte||cpv,,,0.3934,0.8327,medium_risk,medium_risk,
-jamiro_monteiro__cpv,Jamiro Monteiro,CPV,MID,63,0.6323,0.6323,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.7679,,,,jamiro monteiro||cpv,,,0.6869,0.7731,medium_risk,medium_risk,
-yannick_semedo__cpv,Yannick Semedo,CPV,MID,34,0.3444,0.3444,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.5733,,,,yannick semedo||cpv,,,0.4004,0.6,high_risk,high_risk,
+telmo_arcanjo__cpv,Telmo Arcanjo,CPV,MID,54,0.5432,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.7304,,,,telmo arcanjo||cpv,,,0,0.6799,team_eliminated_r32,team_eliminated_r32,0
+kevin_lenini__cpv,Kevin Lenini Pina,CPV,MID,67,0.6738,0,team_eliminated_r32,team_eliminated_r32,,,,,,,,,,,,,0,0.7889,team_eliminated_r32,team_eliminated_r32,0
+laros_duarte__cpv,Laros Duarte,CPV,MID,29,0.294,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.652,,,,laros duarte||cpv,,,0,0.8048,team_eliminated_r32,team_eliminated_r32,0
+ailson_tavares__cpv,Ailson Tavares,CPV,MID,0,0.0,0,team_eliminated_r32,team_eliminated_r32,,,,,,,,,,,,,0,,team_eliminated_r32,team_eliminated_r32,0
+deroy_duarte__cpv,Deroy Duarte,CPV,MID,37,0.3704,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.7054,,,,deroy duarte||cpv,,,0,0.8327,team_eliminated_r32,team_eliminated_r32,0
+jamiro_monteiro__cpv,Jamiro Monteiro,CPV,MID,63,0.6323,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.7679,,,,jamiro monteiro||cpv,,,0,0.7731,team_eliminated_r32,team_eliminated_r32,0
+yannick_semedo__cpv,Yannick Semedo,CPV,MID,34,0.3444,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.5733,,,,yannick semedo||cpv,,,0,0.6,team_eliminated_r32,team_eliminated_r32,0
 mohammad_al_dawoud__jor,Mohammad Al-Dawoud,JOR,MID,4,0.043,0.043,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6645,,,,mohammad al-dawoud||jor,,,0.05,0.6,high_risk,high_risk,
 yousef_qashi__jor,Yousef Qashi,JOR,MID,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.045,,,,yousef qashi||jor,,,0.0,0.6638,out,out_of_tournament,0.0
 mohammad_taha__jor,Mohammad Taha,JOR,MID,0,0.0,0.0,holdet_official_unmatched_default,,,,,,,,,,,,,,0.0,,out,out_of_tournament,0.0
@@ -1225,17 +1225,17 @@ kenji_gorr__cuw,Kenji Gorre,CUW,FWD,43,0.4289,0.4289,transfermarkt_availability_
 j_rgen_strand_larsen__nor,Jørgen Strand Larsen,NOR,FWD,38.0,0.38,0.38,manual_context_override_safe,rotation/usikker - Transfermarkt landshold,,,,,,0.7453,,,,jørgen strand larsen||nor,,,0.48,0.7712,medium_risk,medium_risk,
 erling_haaland__nor,Erling Haaland,NOR,FWD,93.0,0.93,0.93,manual_context_override_safe,sikker starter - Transfermarkt landshold,,,,,,0.8883,,,,erling haaland||nor,,,0.97,0.98,low_risk,medium_risk,0.98
 alexander_s_rloth__nor,Alexander Sørloth,NOR,FWD,88,0.8805,0.8805,transfermarkt_availability_split_2026_06_07,sikker starter - Transfermarkt landshold,,,,,,0.8078,,,,alexander sørloth||nor,,,0.9352,0.8331,medium_risk,medium_risk,
-garry_mendes_rodrigues__cpv,Garry Mendes Rodrigues,CPV,FWD,34,0.3371,0.3371,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7496,,,,garry mendes rodrigues||cpv,,,0.3739,0.7186,medium_risk,medium_risk,
-gilson_benchimol_tavares__cpv,Gilson Benchimol Tavares,CPV,FWD,6,0.063,0.063,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.5415,,,,gilson benchimol tavares||cpv,,,0.0732,0.6,high_risk,high_risk,
-ryan_mendes_da_graca__cpv,Ryan Mendes Da Graça,CPV,FWD,88,0.8829,0.8829,transfermarkt_availability_split_2026_06_04,sandsynlig starter - Transfermarkt landshold,,,,,,0.8829,,,,ryan mendes da graca||cpv,,,0.97,0.7436,medium_risk,medium_risk,
-jovane_cabral__cpv,Jovane Cabral,CPV,FWD,59,0.5853,0.5853,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.7525,,,,jovane cabral||cpv,,,0.6752,0.6196,high_risk,high_risk,
-nuno_da_costa__cpv,Nuno da Costa,CPV,FWD,28,0.2764,0.2764,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.3862,,,,nuno da costa||cpv,,,0.3215,0.6,high_risk,high_risk,
+garry_mendes_rodrigues__cpv,Garry Mendes Rodrigues,CPV,FWD,34,0.3371,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.7496,,,,garry mendes rodrigues||cpv,,,0,0.7186,team_eliminated_r32,team_eliminated_r32,0
+gilson_benchimol_tavares__cpv,Gilson Benchimol Tavares,CPV,FWD,6,0.063,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.5415,,,,gilson benchimol tavares||cpv,,,0,0.6,team_eliminated_r32,team_eliminated_r32,0
+ryan_mendes_da_graca__cpv,Ryan Mendes Da Graça,CPV,FWD,88,0.8829,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.8829,,,,ryan mendes da graca||cpv,,,0,0.7436,team_eliminated_r32,team_eliminated_r32,0
+jovane_cabral__cpv,Jovane Cabral,CPV,FWD,59,0.5853,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.7525,,,,jovane cabral||cpv,,,0,0.6196,team_eliminated_r32,team_eliminated_r32,0
+nuno_da_costa__cpv,Nuno da Costa,CPV,FWD,28,0.2764,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.3862,,,,nuno da costa||cpv,,,0,0.6,team_eliminated_r32,team_eliminated_r32,0
 ali_olwan__jor,Ali Olwan,JOR,FWD,90,0.902,0.902,transfermarkt_availability_split_2026_06_07,sikker starter - Transfermarkt landshold,,,,,,,,,,,,,0.9562,0.8382,medium_risk,medium_risk,
 ibrahim_sabra__jor,Ibrahim Sabra,JOR,FWD,26,0.2619,0.2619,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.3742,,,,ibrahim sabra||jor,,,0.3011,0.6275,high_risk,high_risk,
 baha_a_faisal__jor,Baha'a Faisal,JOR,FWD,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.7502,,,,baha'a faisal||jor,,,0.0,0.6,out,out_of_tournament,0.0
-dailon_livramento__cpv,Dailon Livramento,CPV,FWD,39,0.3874,0.3874,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.8309,,,,dailon livramento||cpv,,,0.3999,0.9104,medium_risk,medium_risk,
-h_lio_varela__cpv,Helio Varela,CPV,FWD,27,0.2659,0.2659,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7167,,,,helio varela||cpv,,,0.2992,0.6819,medium_risk,medium_risk,
-willy_semedo__cpv,Willy Semedo,CPV,FWD,35,0.3479,0.3479,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.771,,,,willy semedo||cpv,,,0.3807,0.7538,medium_risk,medium_risk,
+dailon_livramento__cpv,Dailon Livramento,CPV,FWD,39,0.3874,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.8309,,,,dailon livramento||cpv,,,0,0.9104,team_eliminated_r32,team_eliminated_r32,0
+h_lio_varela__cpv,Helio Varela,CPV,FWD,27,0.2659,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.7167,,,,helio varela||cpv,,,0,0.6819,team_eliminated_r32,team_eliminated_r32,0
+willy_semedo__cpv,Willy Semedo,CPV,FWD,35,0.3479,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.771,,,,willy semedo||cpv,,,0,0.7538,team_eliminated_r32,team_eliminated_r32,0
 eldor_shomurodov__uzb,Eldor Shomurodov,UZB,FWD,92,0.9205,0.9205,transfermarkt_availability_split_2026_06_07,sikker starter - Transfermarkt landshold,,,,,,0.8976,,,,eldor shomurodov||uzb,,,0.97,0.8541,low_risk,low_risk,
 azizbek_amanov__uzb,Azizbek Amanov,UZB,FWD,4,0.043,0.043,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.05,0.6,high_risk,high_risk,
 igor_sergeev__uzb,Igor Sergeev,UZB,FWD,8,0.0843,0.0843,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7642,,,,igor sergeev||uzb,,,0.0927,0.7406,medium_risk,medium_risk,
@@ -1384,16 +1384,16 @@ ayase_ueda__jpn,Ayase Ueda,JPN,FWD,57,0.5698,0.5698,transfermarkt_availability_s
 daizen_maeda__jpn,Daizen Maeda,JPN,FWD,27,0.2701,0.2701,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.5912,,,,daizen maeda||jpn,,,0.3108,0.6262,high_risk,high_risk,
 kento_shiogai__jpn,Kento Shiogai,JPN,FWD,5,0.047,0.047,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.45,,,,kento shiogai||jpn,,,0.05,0.8288,medium_risk,medium_risk,
 keisuke_goto__jpn,Keisuke Goto,JPN,FWD,28,0.2845,0.2845,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6844,,,,keisuke goto||jpn,,,0.299,0.8611,medium_risk,medium_risk,
-prince_adu__gha,Prince Adu,GHA,FWD,87,0.8702,0.8702,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.8639,,,,prince adu||gha,,,0.9514,0.7561,medium_risk,medium_risk,
-christopher_bonsu_baah__gha,Christopher Bonsu Baah,GHA,FWD,5,0.0526,0.0526,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.3911,,,,christopher bonsu baah||gha,,,0.0557,0.8442,medium_risk,medium_risk,
-brandon_thomas_asante__gha,Brandon Thomas-Asante,GHA,FWD,23,0.2254,0.2254,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.3589,,,,brandon thomas-asante||gha,,,0.2621,0.6,high_risk,high_risk,
-i_aki_williams__gha,Iñaki Williams,GHA,FWD,34,0.3364,0.3364,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.8226,,,,inaki williams||gha,,,0.3899,0.6081,high_risk,high_risk,
-jordan_ayew__gha,Jordan Ayew,GHA,FWD,86,0.8638,0.8638,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.8417,,,,jordan ayew||gha,,,0.9467,0.7499,medium_risk,medium_risk,
-daniel_nana_agyei__gha,Daniel Nana Agyei,GHA,FWD,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.242,,,,daniel nana agyei||gha,,,0.0,0.6,out,out_of_tournament,0.0
-antoine_semenyo__gha,Antoine Semenyo,GHA,FWD,63,0.6286,0.6286,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.8635,,,,antoine semenyo||gha,,,0.6942,0.7299,medium_risk,medium_risk,
-kamaldeen_sulemana__gha,Kamaldeen Sulemana,GHA,FWD,31,0.3121,0.3121,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6808,,,,kamaldeen sulemana||gha,,,0.3594,0.6244,high_risk,high_risk,
-abdul_fatawu_issahaku__gha,Issahaku Abdul Fatawu,GHA,FWD,53,0.5339,0.5339,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.5565,,,,issahaku abdul fatawu||gha,,,0.6071,0.6556,medium_risk,medium_risk,
-ernest_nuamah__gha,Ernest Nuamah,GHA,FWD,33,0.3267,0.3267,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.3453,0.8462,medium_risk,medium_risk,
+prince_adu__gha,Prince Adu,GHA,FWD,87,0.8702,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.8639,,,,prince adu||gha,,,0,0.7561,team_eliminated_r32,team_eliminated_r32,0
+christopher_bonsu_baah__gha,Christopher Bonsu Baah,GHA,FWD,5,0.0526,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.3911,,,,christopher bonsu baah||gha,,,0,0.8442,team_eliminated_r32,team_eliminated_r32,0
+brandon_thomas_asante__gha,Brandon Thomas-Asante,GHA,FWD,23,0.2254,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.3589,,,,brandon thomas-asante||gha,,,0,0.6,team_eliminated_r32,team_eliminated_r32,0
+i_aki_williams__gha,Iñaki Williams,GHA,FWD,34,0.3364,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.8226,,,,inaki williams||gha,,,0,0.6081,team_eliminated_r32,team_eliminated_r32,0
+jordan_ayew__gha,Jordan Ayew,GHA,FWD,86,0.8638,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.8417,,,,jordan ayew||gha,,,0,0.7499,team_eliminated_r32,team_eliminated_r32,0
+daniel_nana_agyei__gha,Daniel Nana Agyei,GHA,FWD,0,0.0,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.242,,,,daniel nana agyei||gha,,,0,0.6,team_eliminated_r32,team_eliminated_r32,0
+antoine_semenyo__gha,Antoine Semenyo,GHA,FWD,63,0.6286,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.8635,,,,antoine semenyo||gha,,,0,0.7299,team_eliminated_r32,team_eliminated_r32,0
+kamaldeen_sulemana__gha,Kamaldeen Sulemana,GHA,FWD,31,0.3121,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.6808,,,,kamaldeen sulemana||gha,,,0,0.6244,team_eliminated_r32,team_eliminated_r32,0
+abdul_fatawu_issahaku__gha,Issahaku Abdul Fatawu,GHA,FWD,53,0.5339,0,team_eliminated_r32,team_eliminated_r32,,,,,,0.5565,,,,issahaku abdul fatawu||gha,,,0,0.6556,team_eliminated_r32,team_eliminated_r32,0
+ernest_nuamah__gha,Ernest Nuamah,GHA,FWD,33,0.3267,0,team_eliminated_r32,team_eliminated_r32,,,,,,,,,,,,,0,0.8462,team_eliminated_r32,team_eliminated_r32,0
 anthony_gordon__eng,Anthony Gordon,ENG,FWD,55.0,0.55,0.55,manual_context_override_safe,rotation/usikker - Transfermarkt landshold,,,,,,0.6409,,,,anthony gordon||eng,,,0.65,0.85,medium_risk,medium_risk,0.85
 noni_madueke__eng,Noni Madueke,ENG,FWD,38.0,0.38,0.38,manual_context_override_safe,rotation/usikker - Transfermarkt landshold,,,,,,0.7302,,,,noni madueke||eng,,,0.45,0.97,medium_risk,medium_risk,0.72
 ollie_watkins__eng,Ollie Watkins,ENG,FWD,48,0.4768,0.4768,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.5529,,,,ollie watkins||eng,,,0.5544,0.6,high_risk,high_risk,
