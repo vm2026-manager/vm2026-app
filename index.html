@@ -4419,7 +4419,8 @@ setTimeout(removeDataStatusBox, 250);
       transferBaselinePurchasePrices: "vm2026_transfer_baseline_purchase_prices_v1",
       transferChanges: "vm2026_transfer_changes_v1",
       transferWindowKey: "vm2026_transfer_window_key_v1",
-      suppressedTransferChangeIds: "vm2026_suppressed_transfer_change_ids_v1"
+      suppressedTransferChangeIds: "vm2026_suppressed_transfer_change_ids_v1",
+      manualRecoveryClearedSlots: "vm2026_manual_recovery_cleared_slots_v1"
     };
 
     function withCacheBust(url) {
@@ -4526,6 +4527,9 @@ async function fetchCsvRows(url, errorLabel, optional = false) {
     let transferChanges = JSON.parse(localStorage.getItem(STORAGE_KEYS.transferChanges) || "[]");
     let suppressedTransferChangeIds = cloneSuppressedTransferChangeIds(
       JSON.parse(localStorage.getItem(STORAGE_KEYS.suppressedTransferChangeIds) || "[]")
+    );
+    let manualRecoveryClearedSlots = cloneManualRecoveryClearedSlots(
+      JSON.parse(localStorage.getItem(STORAGE_KEYS.manualRecoveryClearedSlots) || "[]")
     );
     let transferWindowKey = String(localStorage.getItem(STORAGE_KEYS.transferWindowKey) || "").trim() || null;
     let captainPlayerId = localStorage.getItem(STORAGE_KEYS.captainPlayerId) || null;
@@ -5915,6 +5919,7 @@ function normalizeSquadStateAgainstTransferBaseline() {
 
 function saveState() {
       normalizeSquadStateAgainstTransferBaseline();
+      pruneManualRecoveryClearedSlots();
       transferChanges = synchronizeTransferChanges();
       transferWindowKey = transferWindowKey || getCurrentTransferWindowKey();
       captainPlayerId = normalizeCaptainPlayerId(captainPlayerId);
@@ -5925,6 +5930,7 @@ function saveState() {
       localStorage.setItem(STORAGE_KEYS.squadPurchasePrices, JSON.stringify(squadPurchasePrices || {}));
       localStorage.setItem(STORAGE_KEYS.transferChanges, JSON.stringify(transferChanges || []));
       saveSuppressedTransferChangeState();
+      saveManualRecoveryClearedSlotsState();
       localStorage.setItem(STORAGE_KEYS.formation, currentFormation);
       localStorage.setItem(STORAGE_KEYS.eligibleOnly, eligibleOnly ? "1" : "0");
       if (manualBankMillions === null) localStorage.removeItem(STORAGE_KEYS.manualBankMillions);
@@ -6143,6 +6149,20 @@ function saveState() {
       ));
     }
 
+    function cloneManualRecoveryClearedSlots(value) {
+      return (Array.isArray(value) ? value : [])
+        .map(item => {
+          const windowKey = normalizeTransferWindowKey(item?.windowKey || item?.transferWindowKey || item?.transfer_window_key || "");
+          const slotKey = String(item?.slotKey || item?.slot_key || "").trim();
+          const removedPlayerId = normalizeSquadSlotPlayerId(item?.removedPlayerId || item?.removed_player_id || "");
+          const baselinePlayerId = normalizeSquadSlotPlayerId(item?.baselinePlayerId || item?.baseline_player_id || "") || removedPlayerId;
+          const timestamp = String(item?.timestamp || "").trim() || new Date().toISOString();
+          if (!windowKey || !slotKey || !removedPlayerId) return null;
+          return { windowKey, slotKey, removedPlayerId, baselinePlayerId, timestamp };
+        })
+        .filter(Boolean);
+    }
+
     function hasSquadPlayers(squadState) {
       return !!(
         squadState &&
@@ -6255,6 +6275,71 @@ function saveState() {
       return suppressedTransferChangeIds;
     }
 
+    function saveManualRecoveryClearedSlotsState() {
+      manualRecoveryClearedSlots = cloneManualRecoveryClearedSlots(manualRecoveryClearedSlots);
+      if (manualRecoveryClearedSlots.length) {
+        localStorage.setItem(STORAGE_KEYS.manualRecoveryClearedSlots, JSON.stringify(manualRecoveryClearedSlots));
+      } else {
+        localStorage.removeItem(STORAGE_KEYS.manualRecoveryClearedSlots);
+      }
+    }
+
+    function setManualRecoveryClearedSlots(nextItems) {
+      manualRecoveryClearedSlots = cloneManualRecoveryClearedSlots(nextItems);
+      saveManualRecoveryClearedSlotsState();
+      return manualRecoveryClearedSlots;
+    }
+
+    function getManualRecoveryClearedSlotEntry(slotKey, windowKey = getCurrentTransferWindowKey()) {
+      const normalizedWindowKey = normalizeTransferWindowKey(windowKey) || getCurrentTransferWindowKey();
+      const normalizedSlotKey = String(slotKey || "").trim();
+      if (!normalizedWindowKey || !normalizedSlotKey) return null;
+      return manualRecoveryClearedSlots.find(entry =>
+        entry.windowKey === normalizedWindowKey && entry.slotKey === normalizedSlotKey
+      ) || null;
+    }
+
+    function setManualRecoveryClearedSlot(slotKey, removedPlayerId, baselinePlayerId = null, windowKey = getCurrentTransferWindowKey()) {
+      const normalizedWindowKey = normalizeTransferWindowKey(windowKey) || getCurrentTransferWindowKey();
+      const normalizedSlotKey = String(slotKey || "").trim();
+      const normalizedRemovedPlayerId = normalizeSquadSlotPlayerId(removedPlayerId);
+      const normalizedBaselinePlayerId = normalizeSquadSlotPlayerId(baselinePlayerId) || normalizedRemovedPlayerId;
+      if (!normalizedWindowKey || !normalizedSlotKey || !normalizedRemovedPlayerId) return null;
+      const nextEntry = {
+        windowKey: normalizedWindowKey,
+        slotKey: normalizedSlotKey,
+        removedPlayerId: normalizedRemovedPlayerId,
+        baselinePlayerId: normalizedBaselinePlayerId,
+        timestamp: new Date().toISOString()
+      };
+      const nextItems = manualRecoveryClearedSlots.filter(entry =>
+        !(entry.windowKey === normalizedWindowKey && entry.slotKey === normalizedSlotKey)
+      );
+      nextItems.push(nextEntry);
+      setManualRecoveryClearedSlots(nextItems);
+      return nextEntry;
+    }
+
+    function clearManualRecoveryClearedSlotsForWindow(windowKey = getCurrentTransferWindowKey()) {
+      const normalizedWindowKey = normalizeTransferWindowKey(windowKey) || getCurrentTransferWindowKey();
+      setManualRecoveryClearedSlots(
+        manualRecoveryClearedSlots.filter(entry => entry.windowKey !== normalizedWindowKey)
+      );
+    }
+
+    function pruneManualRecoveryClearedSlots(nextSquad = squad, windowKey = getCurrentTransferWindowKey()) {
+      const normalizedWindowKey = normalizeTransferWindowKey(windowKey) || getCurrentTransferWindowKey();
+      const nextItems = manualRecoveryClearedSlots.filter(entry => {
+        if (entry.windowKey !== normalizedWindowKey) return true;
+        const currentPlayerId = normalizeSquadSlotPlayerId(nextSquad?.[entry.slotKey]);
+        const resetPlayerId = normalizeSquadSlotPlayerId(entry.baselinePlayerId) || normalizeSquadSlotPlayerId(entry.removedPlayerId);
+        return String(currentPlayerId || "") !== String(resetPlayerId || "");
+      });
+      if (nextItems.length !== manualRecoveryClearedSlots.length) {
+        setManualRecoveryClearedSlots(nextItems);
+      }
+    }
+
     function clearSuppressedTransferChangesForWindow(windowKey = getCurrentTransferWindowKey()) {
       const normalizedWindowKey = normalizeTransferWindowKey(windowKey) || getCurrentTransferWindowKey();
       setSuppressedTransferChangeIds(
@@ -6306,6 +6391,7 @@ function saveState() {
       transferChanges = [];
       localStorage.setItem(STORAGE_KEYS.transferChanges, JSON.stringify([]));
       clearSuppressedTransferChangesForWindow(transferWindowKey);
+      clearManualRecoveryClearedSlotsForWindow(transferWindowKey);
       saveTransferWindowKeyState();
     }
 
@@ -6691,6 +6777,7 @@ function saveState() {
         purchasePrices: nextPurchasePrices,
         transferChanges: nextTransferChanges,
         suppressedTransferChangeIds: nextSuppressedTransferChangeIds,
+        manualRecoveryClearedSlots: nextManualRecoveryClearedSlots,
         captainPlayerId: nextCaptainPlayerId,
         transferWindowKey: nextTransferWindowKey,
         transferBaselineSquad: nextTransferBaselineSquad,
@@ -6701,6 +6788,8 @@ function saveState() {
       localStorage.setItem(STORAGE_KEYS.transferChanges, JSON.stringify(transferChanges || []));
       suppressedTransferChangeIds = cloneSuppressedTransferChangeIds(nextSuppressedTransferChangeIds);
       saveSuppressedTransferChangeState();
+      manualRecoveryClearedSlots = cloneManualRecoveryClearedSlots(nextManualRecoveryClearedSlots);
+      saveManualRecoveryClearedSlotsState();
       transferWindowKey = normalizeTransferWindowKey(nextTransferWindowKey);
       saveTransferWindowKeyState();
       captainPlayerId = normalizeCaptainPlayerId(nextCaptainPlayerId);
@@ -9602,6 +9691,7 @@ const playerId = String(player.player_id || player.id || "");
       if (!playerId) return;
       const player = getPlayerById(playerId);
       const playerName = player?.player_name || "spilleren";
+      const baselinePlayerId = normalizeSquadSlotPlayerId(transferBaselineSquad?.[slotKey]);
       const confirmed = window.confirm(
         `Fjern ${playerName} fra holdet og ryd tilhørende spillerændring i listen?\n\nDette ændrer ikke bank automatisk. Du kan justere bank manuelt bagefter.`
       );
@@ -9611,6 +9701,7 @@ const playerId = String(player.player_id || player.id || "");
       if (String(captainPlayerId || "") === String(playerId)) {
         captainPlayerId = null;
       }
+      setManualRecoveryClearedSlot(slotKey, playerId, baselinePlayerId);
       delete squad[slotKey];
       delete squadPurchasePrices[slotKey];
       previousReplacementBySlot.delete(slotKey);
@@ -10476,7 +10567,12 @@ const playerId = String(player.player_id || player.id || "");
 
       return getCurrentSlots().map(slot => {
         const slotKey = slot.key;
-        const outgoingPlayerId = normalizeSquadSlotPlayerId(baselineSquad?.[slotKey]);
+        const baselineOutgoingPlayerId = normalizeSquadSlotPlayerId(baselineSquad?.[slotKey]);
+        const recoveryEntry = getManualRecoveryClearedSlotEntry(slotKey);
+        const recoveryBaselinePlayerId = normalizeSquadSlotPlayerId(recoveryEntry?.baselinePlayerId) || normalizeSquadSlotPlayerId(recoveryEntry?.removedPlayerId);
+        const outgoingPlayerId = recoveryEntry && String(recoveryBaselinePlayerId || "") === String(baselineOutgoingPlayerId || "")
+          ? null
+          : baselineOutgoingPlayerId;
         const incomingPlayerId = normalizeSquadSlotPlayerId(squad?.[slotKey]);
         const outgoingPlayer = getPlayerById(outgoingPlayerId);
         const incomingPlayer = getPlayerById(incomingPlayerId);
@@ -12170,6 +12266,7 @@ function renderTradeList() {
           captain_player_id: sanitizeCaptainPlayerId(squad),
           transfer_changes: synchronizeTransferChanges(),
           suppressed_transfer_change_ids: cloneSuppressedTransferChangeIds(suppressedTransferChangeIds),
+          manual_recovery_cleared_slots: cloneManualRecoveryClearedSlots(manualRecoveryClearedSlots),
           transfer_window_key: transferWindowKey || getCurrentTransferWindowKey(),
           transfer_baseline_squad: transferBaselineSquad,
           transfer_baseline_purchase_prices: transferBaselinePurchasePrices,
@@ -12253,6 +12350,7 @@ function renderTradeList() {
         || Object.prototype.hasOwnProperty.call(savedState, "captain_player_id")
         || Object.prototype.hasOwnProperty.call(savedState, "transfer_changes")
         || Object.prototype.hasOwnProperty.call(savedState, "suppressed_transfer_change_ids")
+        || Object.prototype.hasOwnProperty.call(savedState, "manual_recovery_cleared_slots")
         || Object.prototype.hasOwnProperty.call(savedState, "transfer_window_key")
         || Object.prototype.hasOwnProperty.call(savedState, "transfer_baseline_squad")
         || Object.prototype.hasOwnProperty.call(savedState, "transfer_baseline_purchase_prices")
@@ -12273,6 +12371,9 @@ function renderTradeList() {
       const nextSuppressedTransferChangeIds = hasSavedStateEnvelope && Array.isArray(savedState.suppressed_transfer_change_ids)
         ? cloneSuppressedTransferChangeIds(savedState.suppressed_transfer_change_ids)
         : [];
+      const nextManualRecoveryClearedSlots = hasSavedStateEnvelope && Array.isArray(savedState.manual_recovery_cleared_slots)
+        ? cloneManualRecoveryClearedSlots(savedState.manual_recovery_cleared_slots)
+        : [];
       const nextTransferWindowKey = hasSavedStateEnvelope
         ? normalizeTransferWindowKey(savedState.transfer_window_key)
         : null;
@@ -12289,6 +12390,7 @@ function renderTradeList() {
           captainPlayerId: nextCaptainPlayerId,
           transferChanges: cloneTransferChanges(nextTransferChanges),
           suppressedTransferChangeIds: cloneSuppressedTransferChangeIds(nextSuppressedTransferChangeIds),
+          manualRecoveryClearedSlots: cloneManualRecoveryClearedSlots(nextManualRecoveryClearedSlots),
           transferWindowKey: nextTransferWindowKey,
           transferBaselineSquad: cloneSquadState(nextTransferBaselineSquad),
           transferBaselinePurchasePrices: cloneSquadState(nextTransferBaselinePurchasePrices)
@@ -12299,6 +12401,8 @@ function renderTradeList() {
         localStorage.setItem(STORAGE_KEYS.transferChanges, JSON.stringify(transferChanges || []));
         suppressedTransferChangeIds = cloneSuppressedTransferChangeIds(nextSuppressedTransferChangeIds);
         saveSuppressedTransferChangeState();
+        manualRecoveryClearedSlots = cloneManualRecoveryClearedSlots(nextManualRecoveryClearedSlots);
+        saveManualRecoveryClearedSlotsState();
         transferWindowKey = nextTransferWindowKey;
         saveTransferWindowKeyState();
         applyLoadedTransferBaselineState(nextTransferBaselineSquad, nextTransferBaselinePurchasePrices);
