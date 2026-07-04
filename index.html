@@ -1529,16 +1529,46 @@
     }
 
     .player-change-remove {
-      width: 30px;
-      height: 30px;
-      border: 0;
+      border: 1px solid rgba(15, 23, 42, 0.14);
       border-radius: 999px;
-      background: rgba(15, 23, 42, 0.08);
-      color: #111827;
-      font-size: 17px;
-      font-weight: 900;
+      padding: 6px 10px;
+      background: #111827;
+      color: #f8fafc;
+      font-size: 11px;
+      font-weight: 800;
+      line-height: 1.1;
       cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .player-change-row-actions {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .player-change-action-cell {
       justify-self: end;
+    }
+
+    .player-change-row-btn {
+      border: 1px solid rgba(15, 23, 42, 0.14);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 11px;
+      font-weight: 800;
+      line-height: 1.1;
+      cursor: pointer;
+      background: #111827;
+      color: #f8fafc;
+      white-space: nowrap;
+    }
+
+    .player-change-row-btn.secondary {
+      background: #ffffff;
+      color: #111827;
     }
 
     .player-change-summary {
@@ -1592,9 +1622,13 @@
       }
 
       .player-change-remove {
-        width: 26px;
-        height: 26px;
-        font-size: 15px;
+        padding: 5px 8px;
+        font-size: 10px;
+      }
+
+      .player-change-row-btn {
+        padding: 5px 8px;
+        font-size: 10px;
       }
     }
 
@@ -4378,7 +4412,8 @@ setTimeout(removeDataStatusBox, 250);
       transferBaselineSquad: "vm2026_transfer_baseline_squad_v1",
       transferBaselinePurchasePrices: "vm2026_transfer_baseline_purchase_prices_v1",
       transferChanges: "vm2026_transfer_changes_v1",
-      transferWindowKey: "vm2026_transfer_window_key_v1"
+      transferWindowKey: "vm2026_transfer_window_key_v1",
+      suppressedTransferChangeIds: "vm2026_suppressed_transfer_change_ids_v1"
     };
 
     function withCacheBust(url) {
@@ -4483,6 +4518,9 @@ async function fetchCsvRows(url, errorLabel, optional = false) {
     let transferBaselineSquad = JSON.parse(localStorage.getItem(STORAGE_KEYS.transferBaselineSquad) || "null");
     let transferBaselinePurchasePrices = JSON.parse(localStorage.getItem(STORAGE_KEYS.transferBaselinePurchasePrices) || "null");
     let transferChanges = JSON.parse(localStorage.getItem(STORAGE_KEYS.transferChanges) || "[]");
+    let suppressedTransferChangeIds = cloneSuppressedTransferChangeIds(
+      JSON.parse(localStorage.getItem(STORAGE_KEYS.suppressedTransferChangeIds) || "[]")
+    );
     let transferWindowKey = String(localStorage.getItem(STORAGE_KEYS.transferWindowKey) || "").trim() || null;
     let captainPlayerId = localStorage.getItem(STORAGE_KEYS.captainPlayerId) || null;
     let currentFormation = localStorage.getItem(STORAGE_KEYS.formation) || "3-4-3";
@@ -5880,6 +5918,7 @@ function saveState() {
       localStorage.setItem(STORAGE_KEYS.squad, JSON.stringify(squad));
       localStorage.setItem(STORAGE_KEYS.squadPurchasePrices, JSON.stringify(squadPurchasePrices || {}));
       localStorage.setItem(STORAGE_KEYS.transferChanges, JSON.stringify(transferChanges || []));
+      saveSuppressedTransferChangeState();
       localStorage.setItem(STORAGE_KEYS.formation, currentFormation);
       localStorage.setItem(STORAGE_KEYS.eligibleOnly, eligibleOnly ? "1" : "0");
       if (manualBankMillions === null) localStorage.removeItem(STORAGE_KEYS.manualBankMillions);
@@ -6090,6 +6129,14 @@ function saveState() {
       return JSON.parse(JSON.stringify(Array.isArray(value) ? value : []));
     }
 
+    function cloneSuppressedTransferChangeIds(value) {
+      return Array.from(new Set(
+        (Array.isArray(value) ? value : [])
+          .map(item => String(item || "").trim())
+          .filter(Boolean)
+      ));
+    }
+
     function hasSquadPlayers(squadState) {
       return !!(
         squadState &&
@@ -6187,6 +6234,28 @@ function saveState() {
       }
     }
 
+    function saveSuppressedTransferChangeState() {
+      suppressedTransferChangeIds = cloneSuppressedTransferChangeIds(suppressedTransferChangeIds);
+      if (suppressedTransferChangeIds.length) {
+        localStorage.setItem(STORAGE_KEYS.suppressedTransferChangeIds, JSON.stringify(suppressedTransferChangeIds));
+      } else {
+        localStorage.removeItem(STORAGE_KEYS.suppressedTransferChangeIds);
+      }
+    }
+
+    function setSuppressedTransferChangeIds(nextIds) {
+      suppressedTransferChangeIds = cloneSuppressedTransferChangeIds(nextIds);
+      saveSuppressedTransferChangeState();
+      return suppressedTransferChangeIds;
+    }
+
+    function clearSuppressedTransferChangesForWindow(windowKey = getCurrentTransferWindowKey()) {
+      const normalizedWindowKey = normalizeTransferWindowKey(windowKey) || getCurrentTransferWindowKey();
+      setSuppressedTransferChangeIds(
+        suppressedTransferChangeIds.filter(id => !String(id || "").startsWith(`${normalizedWindowKey}::`))
+      );
+    }
+
     function getCurrentTransferWindowKey() {
       const currentLabel = getTransferWindowLabel();
       const canonicalKnockoutKey = getCanonicalTransferWindowKey();
@@ -6230,6 +6299,7 @@ function saveState() {
       setTransferBaselineState(nextSquad, nextPurchasePrices);
       transferChanges = [];
       localStorage.setItem(STORAGE_KEYS.transferChanges, JSON.stringify([]));
+      clearSuppressedTransferChangesForWindow(transferWindowKey);
       saveTransferWindowKeyState();
     }
 
@@ -6260,6 +6330,50 @@ function saveState() {
         );
         return changeWindowKey === normalizedWindowKey;
       });
+    }
+
+    function getTransferChangeSuppressionKey(change, windowKey = getCurrentTransferWindowKey()) {
+      const normalizedWindowKey = normalizeTransferWindowKey(windowKey) || getCurrentTransferWindowKey();
+      const persistKey = getTransferChangePersistKey(change);
+      const timestamp = String(change?.timestamp || "").trim();
+      if (!normalizedWindowKey || !persistKey || !timestamp) return "";
+      return `${normalizedWindowKey}::${persistKey}::${timestamp}`;
+    }
+
+    function isTransferChangeSuppressed(change, windowKey = getCurrentTransferWindowKey()) {
+      const suppressionKey = getTransferChangeSuppressionKey(change, windowKey);
+      return !!suppressionKey && suppressedTransferChangeIds.includes(suppressionKey);
+    }
+
+    function suppressTransferChange(change, windowKey = getCurrentTransferWindowKey()) {
+      const suppressionKey = getTransferChangeSuppressionKey(change, windowKey);
+      if (!suppressionKey || suppressedTransferChangeIds.includes(suppressionKey)) return false;
+      setSuppressedTransferChangeIds([...suppressedTransferChangeIds, suppressionKey]);
+      return true;
+    }
+
+    function decorateTransferChangeRows(rows, existingChanges = transferChanges) {
+      const serializedByKey = new Map(
+        serializeTransferChangeRows(rows, existingChanges).map(change => [getTransferChangePersistKey(change), change])
+      );
+      return (Array.isArray(rows) ? rows : []).map(row => {
+        const persisted = serializedByKey.get(getTransferChangePersistKey(row)) || {};
+        return {
+          ...persisted,
+          ...row,
+          timestamp: persisted.timestamp || "",
+          transferWindowKey: persisted.transferWindowKey || getCurrentTransferWindowKey(),
+          transferWindowLabel: persisted.transferWindowLabel || getTransferWindowLabel()
+        };
+      });
+    }
+
+    function getVisibleTransferChangeRows(rows = buildTransferChangeRows(), existingChanges = transferChanges) {
+      return decorateTransferChangeRows(rows, existingChanges).filter(change => !isTransferChangeSuppressed(change));
+    }
+
+    function getVisibleTransferChangesForWindow(windowKey = getCurrentTransferWindowKey(), changes = transferChanges) {
+      return getTransferChangesForWindow(windowKey, changes).filter(change => !isTransferChangeSuppressed(change, windowKey));
     }
 
     function restoreTransferBaselineFromPersistedChanges(nextSquad = squad, nextPurchasePrices = squadPurchasePrices, windowKey = getCurrentTransferWindowKey()) {
@@ -6551,6 +6665,7 @@ function saveState() {
         squad: nextSquad,
         purchasePrices: nextPurchasePrices,
         transferChanges: nextTransferChanges,
+        suppressedTransferChangeIds: nextSuppressedTransferChangeIds,
         captainPlayerId: nextCaptainPlayerId,
         transferWindowKey: nextTransferWindowKey,
         transferBaselineSquad: nextTransferBaselineSquad,
@@ -6559,6 +6674,8 @@ function saveState() {
 
       transferChanges = cloneTransferChanges(nextTransferChanges);
       localStorage.setItem(STORAGE_KEYS.transferChanges, JSON.stringify(transferChanges || []));
+      suppressedTransferChangeIds = cloneSuppressedTransferChangeIds(nextSuppressedTransferChangeIds);
+      saveSuppressedTransferChangeState();
       transferWindowKey = normalizeTransferWindowKey(nextTransferWindowKey);
       saveTransferWindowKeyState();
       captainPlayerId = normalizeCaptainPlayerId(nextCaptainPlayerId);
@@ -7359,8 +7476,9 @@ function getPlayerScore(player) {
       } catch (_error) {}
 
       try {
-        if (Array.isArray(transferChanges)) {
-          return transferChanges.reduce((sum, change) => {
+        const visibleChanges = getVisibleTransferChangesForWindow(getCurrentTransferWindowKey(), transferChanges);
+        if (Array.isArray(visibleChanges)) {
+          return visibleChanges.reduce((sum, change) => {
             const fee = Number(change?.fee ?? change?.transferFee ?? change?.transfer_fee ?? 0);
             return sum + (Number.isFinite(fee) ? fee : 0);
           }, 0);
@@ -10494,7 +10612,7 @@ const playerId = String(player.player_id || player.id || "");
 
       const roundLabel = getTransferWindowLabel();
       const feeRate = getTransferFeeRate();
-      const rows = buildTransferChangeRows();
+      const rows = getVisibleTransferChangeRows(buildTransferChangeRows(), transferChanges);
       const changeCount = rows.length;
       const totalNetEffect = rows.reduce((sum, row) => sum + row.netEffect, 0);
       const feeSummary = feeRate > 0
@@ -10559,7 +10677,29 @@ const playerId = String(player.player_id || player.id || "");
               </div>
               <div class="player-change-cell player-change-metric">${formatMoney(row.fee)}</div>
               <div class="player-change-cell player-change-metric ${diffClass(row.netEffect)}">${formatSignedMoneyDiff(row.netEffect)}</div>
-              <button type="button" class="player-change-remove" data-action="remove-transfer-change" data-slot-key="${escapeHtml(row.slotKey)}" aria-label="Fjern ændring" title="Fjern ændring">×</button>
+              <div class="player-change-cell player-change-action-cell">
+                <div class="player-change-row-actions">
+                  <button
+                    type="button"
+                    class="player-change-row-btn secondary"
+                    data-action="suppress-transfer-change"
+                    data-slot-key="${escapeHtml(row.slotKey)}"
+                    data-out-player-id="${escapeHtml(String(row.outgoingPlayer?.player_id || row.outPlayerId || ""))}"
+                    data-in-player-id="${escapeHtml(String(row.incomingPlayer?.player_id || row.inPlayerId || ""))}"
+                    data-timestamp="${escapeHtml(String(row.timestamp || ""))}"
+                    aria-label="Fjern kun fra listen"
+                    title="Fjern kun fra listen – ændrer ikke truppen"
+                  >Fjern fra liste</button>
+                  <button
+                    type="button"
+                    class="player-change-remove"
+                    data-action="remove-transfer-change"
+                    data-slot-key="${escapeHtml(row.slotKey)}"
+                    aria-label="Fortryd transfer"
+                    title="Fortryd transfer – sætter den gamle spiller tilbage"
+                  >Fortryd</button>
+                </div>
+              </div>
             </div>
           `).join("")}
         </div>
@@ -10569,6 +10709,22 @@ const playerId = String(player.player_id || player.id || "");
 
       playerChangePanel.querySelectorAll("[data-action='remove-transfer-change']").forEach(btn => {
         btn.addEventListener("click", () => revertTransferChange(btn.dataset.slotKey));
+      });
+      playerChangePanel.querySelectorAll("[data-action='suppress-transfer-change']").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const change = {
+            slotKey: btn.dataset.slotKey || "",
+            outPlayerId: btn.dataset.outPlayerId || "",
+            inPlayerId: btn.dataset.inPlayerId || "",
+            timestamp: btn.dataset.timestamp || "",
+            transferWindowKey: getCurrentTransferWindowKey()
+          };
+          if (!suppressTransferChange(change)) return;
+          clearStatus();
+          saveState();
+          render();
+          scheduleAutosave();
+        });
       });
       playerChangePanel.querySelector("[data-action='reset-transfer-changes']")?.addEventListener("click", resetTransferChanges);
     }
@@ -11953,6 +12109,7 @@ function renderTradeList() {
           purchase_prices: squadPurchasePrices,
           captain_player_id: sanitizeCaptainPlayerId(squad),
           transfer_changes: synchronizeTransferChanges(),
+          suppressed_transfer_change_ids: cloneSuppressedTransferChangeIds(suppressedTransferChangeIds),
           transfer_window_key: transferWindowKey || getCurrentTransferWindowKey(),
           transfer_baseline_squad: transferBaselineSquad,
           transfer_baseline_purchase_prices: transferBaselinePurchasePrices,
@@ -12035,6 +12192,7 @@ function renderTradeList() {
         || Object.prototype.hasOwnProperty.call(savedState, "purchase_prices")
         || Object.prototype.hasOwnProperty.call(savedState, "captain_player_id")
         || Object.prototype.hasOwnProperty.call(savedState, "transfer_changes")
+        || Object.prototype.hasOwnProperty.call(savedState, "suppressed_transfer_change_ids")
         || Object.prototype.hasOwnProperty.call(savedState, "transfer_window_key")
         || Object.prototype.hasOwnProperty.call(savedState, "transfer_baseline_squad")
         || Object.prototype.hasOwnProperty.call(savedState, "transfer_baseline_purchase_prices")
@@ -12052,6 +12210,9 @@ function renderTradeList() {
       const nextTransferChanges = hasSavedStateEnvelope && Array.isArray(savedState.transfer_changes)
         ? cloneTransferChanges(savedState.transfer_changes)
         : [];
+      const nextSuppressedTransferChangeIds = hasSavedStateEnvelope && Array.isArray(savedState.suppressed_transfer_change_ids)
+        ? cloneSuppressedTransferChangeIds(savedState.suppressed_transfer_change_ids)
+        : [];
       const nextTransferWindowKey = hasSavedStateEnvelope
         ? normalizeTransferWindowKey(savedState.transfer_window_key)
         : null;
@@ -12067,6 +12228,7 @@ function renderTradeList() {
           purchasePrices: cloneSquadState(nextPurchasePrices),
           captainPlayerId: nextCaptainPlayerId,
           transferChanges: cloneTransferChanges(nextTransferChanges),
+          suppressedTransferChangeIds: cloneSuppressedTransferChangeIds(nextSuppressedTransferChangeIds),
           transferWindowKey: nextTransferWindowKey,
           transferBaselineSquad: cloneSquadState(nextTransferBaselineSquad),
           transferBaselinePurchasePrices: cloneSquadState(nextTransferBaselinePurchasePrices)
@@ -12075,6 +12237,8 @@ function renderTradeList() {
         captainPlayerId = nextCaptainPlayerId;
         transferChanges = cloneTransferChanges(nextTransferChanges);
         localStorage.setItem(STORAGE_KEYS.transferChanges, JSON.stringify(transferChanges || []));
+        suppressedTransferChangeIds = cloneSuppressedTransferChangeIds(nextSuppressedTransferChangeIds);
+        saveSuppressedTransferChangeState();
         transferWindowKey = nextTransferWindowKey;
         saveTransferWindowKeyState();
         applyLoadedTransferBaselineState(nextTransferBaselineSquad, nextTransferBaselinePurchasePrices);
