@@ -1083,6 +1083,12 @@
       color: white;
     }
 
+    .slot-btn.recovery {
+      background: #ffffff;
+      color: #991b1b;
+      border: 1px solid rgba(153, 27, 27, 0.24);
+    }
+
     .pitch-player-card.is-suspended {
       background: rgba(255,255,255,0.88);
       border-color: rgba(153, 27, 27, 0.24);
@@ -6352,6 +6358,25 @@ function saveState() {
       return true;
     }
 
+    function suppressTransferChangesForSlot(slotKey, { windowKey = getCurrentTransferWindowKey() } = {}) {
+      const normalizedWindowKey = normalizeTransferWindowKey(windowKey) || getCurrentTransferWindowKey();
+      const relevantChanges = getTransferChangesForWindow(normalizedWindowKey, transferChanges)
+        .filter(change => String(change?.slotKey || "").trim() === String(slotKey || "").trim());
+      if (!relevantChanges.length) return 0;
+      const nextSuppressed = [...suppressedTransferChangeIds];
+      let added = 0;
+      relevantChanges.forEach(change => {
+        const suppressionKey = getTransferChangeSuppressionKey(change, normalizedWindowKey);
+        if (!suppressionKey || nextSuppressed.includes(suppressionKey)) return;
+        nextSuppressed.push(suppressionKey);
+        added += 1;
+      });
+      if (added) {
+        setSuppressedTransferChangeIds(nextSuppressed);
+      }
+      return added;
+    }
+
     function decorateTransferChangeRows(rows, existingChanges = transferChanges) {
       const serializedByKey = new Map(
         serializeTransferChangeRows(rows, existingChanges).map(change => [getTransferChangePersistKey(change), change])
@@ -9572,6 +9597,33 @@ const playerId = String(player.player_id || player.id || "");
       maybeReturnToMobileHoldViewAfterSquadChange();
     }
 
+    function removePlayerCompletelyFromSlot(slotKey) {
+      const playerId = squad[slotKey];
+      if (!playerId) return;
+      const player = getPlayerById(playerId);
+      const playerName = player?.player_name || "spilleren";
+      const confirmed = window.confirm(
+        `Fjern ${playerName} fra holdet og ryd tilhørende spillerændring i listen?\n\nDette ændrer ikke bank automatisk. Du kan justere bank manuelt bagefter.`
+      );
+      if (!confirmed) return;
+
+      pushHistory();
+      if (String(captainPlayerId || "") === String(playerId)) {
+        captainPlayerId = null;
+      }
+      delete squad[slotKey];
+      delete squadPurchasePrices[slotKey];
+      previousReplacementBySlot.delete(slotKey);
+      clearStatus();
+
+      saveState();
+      suppressTransferChangesForSlot(slotKey);
+      saveState();
+      render();
+      scheduleAutosave();
+      maybeReturnToMobileHoldViewAfterSquadChange();
+    }
+
     function renderMobilePitchActionTray() {
       if (!mobilePitchActionTray) return;
       const isMobileHoldView = shouldUseMobilePitchCoordinates();
@@ -9599,6 +9651,7 @@ const playerId = String(player.player_id || player.id || "");
                 ${player ? "Skift spiller" : "Vælg spiller"}
               </button>
               ${player ? `<button type="button" class="mobile-pitch-action-btn secondary" data-mobile-pitch-action="remove" data-slot-key="${escapeHtml(slot.key)}">Fjern</button>` : ""}
+              ${player ? `<button type="button" class="mobile-pitch-action-btn recovery" data-mobile-pitch-action="remove-completely" data-slot-key="${escapeHtml(slot.key)}">Fjern helt</button>` : ""}
             ` : `
               <button type="button" class="mobile-pitch-action-btn primary" data-mobile-pitch-action="open-players">Se spillere</button>
             `}
@@ -9612,6 +9665,10 @@ const playerId = String(player.player_id || player.id || "");
           const slotKey = btn.dataset.slotKey || null;
           if (action === "remove" && slotKey) {
             removePlayerFromSlot(slotKey);
+            return;
+          }
+          if (action === "remove-completely" && slotKey) {
+            removePlayerCompletelyFromSlot(slotKey);
             return;
           }
           if (action === "open-players") {
@@ -10942,6 +10999,7 @@ function renderMobileFormationCard(slot, player, isActive) {
                   ${player ? "Fjern" : "Vælg"}
                 </button>
                 ${player ? `<button class="slot-btn" data-slot-key="${slot.key}" data-action="replace">Skift</button>` : ""}
+                ${player ? `<button class="slot-btn recovery" data-slot-key="${slot.key}" data-action="remove-completely" title="Fjern spilleren fra holdet og ryd tilhørende spillerændring">Fjern helt</button>` : ""}
               </div>
             `
           : "";
@@ -10994,6 +11052,8 @@ function renderMobileFormationCard(slot, player, isActive) {
         btn.addEventListener("click", () => {
           if (action === "remove") {
             removePlayerFromSlot(slotKey);
+          } else if (action === "remove-completely") {
+            removePlayerCompletelyFromSlot(slotKey);
           } else if (action === "replace" || action === "select") {
             if (!requireLoginForProtectedAction("Vælg spiller")) return;
             setActiveSlot(slotKey);
