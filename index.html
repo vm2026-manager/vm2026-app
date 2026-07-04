@@ -9206,6 +9206,7 @@ const playerId = String(player.player_id || player.id || "");
 
     function buildTeamFilter() {
       const teams = [...new Set(allPlayers
+        .filter(player => !isPlayerUnavailable(player))
         .map(player => canonicalTeamId(player.team_id || player.team_name))
         .filter(teamId => teamId && isTeamStillAlive(teamId)))]
         .sort((a, b) => teamDisplayName(a).localeCompare(teamDisplayName(b), "da"));
@@ -9929,6 +9930,7 @@ const playerId = String(player.player_id || player.id || "");
       const slotPosition = normalizePositionLabel(slot.positionCode || slot.position);
 
       const candidates = allPlayers
+        .filter(player => !isPlayerUnavailable(player))
         .filter(player => samePosition(player.position, slotPosition))
         .filter(player => !usedIdsSet.has(String(player.player_id)))
         .filter(player => (teamCounts[playerTeamKey(player)] || 0) < MAX_PER_TEAM)
@@ -11512,7 +11514,7 @@ window.addEventListener("resize", updateMobilePlayersTopControlLabels);
 function renderTradeList() {
       sanitizeSearchField();
 
-      let players = [...allPlayers];
+      let players = allPlayers.filter(player => !isPlayerUnavailable(player));
 
       const search = normalizeSearchText(searchInput.value);
       const team = teamFilter.value;
