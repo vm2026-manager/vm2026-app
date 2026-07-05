@@ -1,6 +1,6 @@
 VM 2026 MODEL STATUS SNAPSHOT
 
-Oprettet: 2026-07-04T05:59:45
+Oprettet: 2026-07-05T19:03:28
 
 VURDERING
 - Bedste formation i seneste optimizer-kørsel: 3-4-3.
@@ -10,43 +10,43 @@ VURDERING
 - Forbehold: Startvurderinger, odds og trupper er stadig foreløbige og skal opdateres løbende.
 
 PLAYER POOL
-- Rækker: 494
-- Officiel Holdet-master: 494
-- Hold: 19
+- Rækker: 416
+- Officiel Holdet-master: 416
+- Hold: 16
 - Mangler pris: 0
-- Positioner: {'MID': 162, 'DEF': 160, 'FWD': 114, 'GK': 58}
+- Positioner: {'MID': 144, 'DEF': 131, 'FWD': 92, 'GK': 49}
 
 EV-FIL
-- Rækker: 494
-- Weighted EV sum: 473.154
-- Weighted EV mean: 0.9578
-- Weighted EV median: 0.8649
-- Positioner: {'MID': 162, 'DEF': 160, 'FWD': 114, 'GK': 58}
+- Rækker: 416
+- Weighted EV sum: 430.337
+- Weighted EV mean: 1.0345
+- Weighted EV median: 0.9566
+- Positioner: {'MID': 144, 'DEF': 131, 'FWD': 92, 'GK': 49}
 
 FORMATIONER
-- 3-4-3: status=Optimal, adjEV=152.6, rawEV=16.272, pris=49.957
-- 3-5-2: status=Optimal, adjEV=147.827, rawEV=20.072, pris=49.921
-- 4-3-3: status=Optimal, adjEV=151.899, rawEV=15.585, pris=49.957
-- 4-4-2: status=Optimal, adjEV=148.211, rawEV=18.423, pris=49.943
-- 4-5-1: status=Optimal, adjEV=148.729, rawEV=14.65, pris=49.962
-- 5-3-2: status=Optimal, adjEV=142.01, rawEV=17.736, pris=49.943
-- 5-4-1: status=Optimal, adjEV=142.374, rawEV=16.352, pris=49.976
+- 3-4-3: status=Optimal, adjEV=152.581, rawEV=16.272, pris=49.979
+- 3-5-2: status=Optimal, adjEV=147.744, rawEV=19.56, pris=49.981
+- 4-3-3: status=Optimal, adjEV=151.88, rawEV=15.585, pris=49.979
+- 4-4-2: status=Optimal, adjEV=147.722, rawEV=15.02, pris=49.994
+- 4-5-1: status=Optimal, adjEV=146.616, rawEV=15.963, pris=49.998
+- 5-3-2: status=Optimal, adjEV=142.16, rawEV=15.015, pris=49.964
+- 5-4-1: status=Optimal, adjEV=141.736, rawEV=15.703, pris=49.998
 
 BEDSTE HOLD
 - selected_formation: 3-4-3
-- squad_total_price_m: 49.957
-- squad_total_adj_ev: 152.6
+- squad_total_price_m: 49.979
+- squad_total_adj_ev: 152.581
 - squad_total_raw_ev: 16.272
 
 SPILLERE
 - David Raya | ESP | GK | pris=5.0 | EV=16.730
 - Arthur Theate | BEL | DEF | pris=3.1 | EV=7.861
 - Douglas Santos | BRA | DEF | pris=2.8 | EV=5.434
-- Ibrahima Konate | FRA | DEF | pris=3.0 | EV=9.235
+- Ibrahima Konate | FRA | DEF | pris=3.0 | EV=9.195
 - Jordan Henderson | ENG | MID | pris=3.5 | EV=11.399
-- Manu Koné | FRA | MID | pris=3.6 | EV=13.121
+- Manu Koné | FRA | MID | pris=3.7 | EV=13.180
 - Martin Zubimendi | ESP | MID | pris=3.5 | EV=14.582
-- N'Golo Kante | FRA | MID | pris=3.0 | EV=8.014
+- N'Golo Kante | FRA | MID | pris=3.0 | EV=7.975
 - Lamine Yamal | ESP | FWD | pris=9.4 | EV=25.930
 - Nico Williams | ESP | FWD | pris=4.6 | EV=16.906
 - Vinicius Junior | BRA | FWD | pris=8.5 | EV=23.388

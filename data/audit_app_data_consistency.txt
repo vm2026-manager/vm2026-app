@@ -3,18 +3,18 @@ VM 2026 APP DATA AUDIT
 
 1. PÃ¥krÃ¦vede app-filer
 ------------------------------------------------------------
-OK       player_pool_v1.json                 1612649
-OK       optimal_squads_by_formation.json    373102
+OK       player_pool_v1.json                 1367610
+OK       optimal_squads_by_formation.json    373118
 OK       fixtures_group.csv                  2701
 OK       player_start_security_nt.csv        420674
 OK       match_odds_probs.csv                7314
 
 2. Player pool
 ------------------------------------------------------------
-Spillere: 494
-Unikke player_id: 494
-Positioner: {'DEF': 160, 'GK': 58, 'MID': 162, 'FWD': 114}
-Lande/hold: 19
+Spillere: 416
+Unikke player_id: 416
+Positioner: {'DEF': 131, 'GK': 49, 'MID': 144, 'FWD': 92}
+Lande/hold: 16
 Mangler pris: 0
 Mangler position: 0
 Mangler land/hold: 0
@@ -28,13 +28,13 @@ Antal hold dÃ¦kket: 48
 
 4. Optimizer vs app-data
 ------------------------------------------------------------
-OK    3-4-3 rÃ¦kker=11 pris=49.957.000 pos={'GK': 1, 'DEF': 3, 'MID': 4, 'FWD': 3} match={'player_id': 11}
-OK    3-5-2 rÃ¦kker=11 pris=49.921.000 pos={'GK': 1, 'DEF': 3, 'MID': 5, 'FWD': 2} match={'player_id': 11}
-OK    4-3-3 rÃ¦kker=11 pris=49.957.000 pos={'GK': 1, 'DEF': 4, 'MID': 3, 'FWD': 3} match={'player_id': 11}
-OK    4-4-2 rÃ¦kker=11 pris=49.943.000 pos={'GK': 1, 'DEF': 4, 'MID': 4, 'FWD': 2} match={'player_id': 11}
-OK    4-5-1 rÃ¦kker=11 pris=49.962.000 pos={'GK': 1, 'DEF': 4, 'MID': 5, 'FWD': 1} match={'player_id': 11}
-OK    5-3-2 rÃ¦kker=11 pris=49.943.000 pos={'GK': 1, 'DEF': 5, 'MID': 3, 'FWD': 2} match={'player_id': 11}
-OK    5-4-1 rÃ¦kker=11 pris=49.976.000 pos={'GK': 1, 'DEF': 5, 'MID': 4, 'FWD': 1} match={'player_id': 11}
+OK    3-4-3 rÃ¦kker=11 pris=49.979.000 pos={'GK': 1, 'DEF': 3, 'MID': 4, 'FWD': 3} match={'player_id': 11}
+OK    3-5-2 rÃ¦kker=11 pris=49.981.000 pos={'GK': 1, 'DEF': 3, 'MID': 5, 'FWD': 2} match={'player_id': 11}
+OK    4-3-3 rÃ¦kker=11 pris=49.979.000 pos={'GK': 1, 'DEF': 4, 'MID': 3, 'FWD': 3} match={'player_id': 11}
+OK    4-4-2 rÃ¦kker=11 pris=49.994.000 pos={'GK': 1, 'DEF': 4, 'MID': 4, 'FWD': 2} match={'player_id': 11}
+OK    4-5-1 rÃ¦kker=11 pris=49.998.000 pos={'GK': 1, 'DEF': 4, 'MID': 5, 'FWD': 1} match={'player_id': 11}
+OK    5-3-2 rÃ¦kker=11 pris=49.964.000 pos={'GK': 1, 'DEF': 5, 'MID': 3, 'FWD': 2} match={'player_id': 11}
+OK    5-4-1 rÃ¦kker=11 pris=49.998.000 pos={'GK': 1, 'DEF': 5, 'MID': 4, 'FWD': 1} match={'player_id': 11}
 
 5. Samlet vurdering
 ------------------------------------------------------------
