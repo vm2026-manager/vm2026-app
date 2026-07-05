@@ -11489,6 +11489,10 @@ function compactRenderedPositionLabels() {
   });
 }
 
+function markTradeFiltersTouched() {
+  tradeFiltersTouchedSinceLoad = true;
+}
+
 function getDefaultTradeSortValue() {
   const firstOption = sortSelect?.querySelector("option[value]");
   return String(firstOption?.value || "score_desc");
@@ -11560,13 +11564,16 @@ function applyTradeFilterStateMigration() {
     return;
   }
 
-  resetTradeListFilters({
+  const changed = resetTradeListFilters({
     resetSearch: true,
     resetTeam: true,
     resetPosition: true,
     resetSort: true,
     resetEligibleOnly: true
   });
+  if (changed) {
+    showStatus("Filtre blev nulstillet, fordi gammel browserdata skjulte spillerlisten.", "info");
+  }
 }
 
 function recoverTradeListFiltersIfEmpty({ eligibleOnlyApplied = false, baseFilteredCount = 0 } = {}) {
@@ -11605,6 +11612,7 @@ function recoverTradeListFiltersIfEmpty({ eligibleOnlyApplied = false, baseFilte
 
   if (!changed) return false;
   didAutoRecoverTradeFiltersThisLoad = true;
+  showStatus("Filtre blev nulstillet, fordi gammel browserdata skjulte spillerlisten.", "info");
   return true;
 }
 
@@ -12782,12 +12790,9 @@ formationSelect.value = currentFormation;
       clearTeamBtn.addEventListener("click", clearSquad);
 
       [searchInput, teamFilter, positionFilter, sortSelect].forEach(el => {
-        el.addEventListener("input", () => {
-          tradeFiltersTouchedSinceLoad = true;
-        });
-        el.addEventListener("change", () => {
-          tradeFiltersTouchedSinceLoad = true;
-        });
+        el.addEventListener("pointerdown", markTradeFiltersTouched);
+        el.addEventListener("touchstart", markTradeFiltersTouched, { passive: true });
+        el.addEventListener("keydown", markTradeFiltersTouched);
         el.addEventListener("input", renderTradeList);
         el.addEventListener("change", renderTradeList);
       });
@@ -12795,8 +12800,11 @@ formationSelect.value = currentFormation;
       searchInput.addEventListener("focus", sanitizeSearchField);
       searchInput.addEventListener("click", sanitizeSearchField);
 
+      const eligibleOnlyChip = eligibleOnlyToggle.closest("label") || eligibleOnlyToggle;
+      eligibleOnlyChip?.addEventListener("pointerdown", markTradeFiltersTouched);
+      eligibleOnlyChip?.addEventListener("touchstart", markTradeFiltersTouched, { passive: true });
+      eligibleOnlyChip?.addEventListener("keydown", markTradeFiltersTouched);
       eligibleOnlyToggle.addEventListener("change", () => {
-        tradeFiltersTouchedSinceLoad = true;
         eligibleOnly = eligibleOnlyToggle.checked;
         saveState();
         renderTradeList();
