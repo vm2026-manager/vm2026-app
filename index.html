@@ -4412,6 +4412,7 @@ setTimeout(removeDataStatusBox, 250);
       squadPurchasePrices: "vm2026_squad_purchase_prices_v1",
       formation: "vm2026_formation_v2",
       eligibleOnly: "vm2026_eligible_only_v1",
+      filterStateVersion: "vm2026_filter_state_version_v1",
       manualBankMillions: "vm2026_manual_bank_millions_v1",
       captainPlayerId: "vm2026_captain_player_id_v1",
       mobileDesktopOverride: "vm2026_mobile_desktop_override_v1",
@@ -4545,6 +4546,9 @@ async function fetchCsvRows(url, errorLabel, optional = false) {
     let authMode = "login";
     let isApplyingRemoteSquad = false;
     let eligibleOnly = localStorage.getItem(STORAGE_KEYS.eligibleOnly) === "1";
+    const PLAYER_FILTER_STATE_VERSION = "player_pool_416_v1";
+    let didAutoRecoverTradeFiltersThisLoad = false;
+    let tradeFiltersTouchedSinceLoad = false;
     let activeStrategyKey = localStorage.getItem("vm2026_active_strategy") || "next_round";
     let frontendCaptainOverride = null;
 
@@ -11485,6 +11489,125 @@ function compactRenderedPositionLabels() {
   });
 }
 
+function getDefaultTradeSortValue() {
+  const firstOption = sortSelect?.querySelector("option[value]");
+  return String(firstOption?.value || "score_desc");
+}
+
+function persistTradeFilterStateVersion() {
+  try {
+    localStorage.setItem(STORAGE_KEYS.filterStateVersion, PLAYER_FILTER_STATE_VERSION);
+  } catch (_error) {}
+}
+
+function resetTradeListFilters({
+  resetSearch = true,
+  resetTeam = true,
+  resetPosition = true,
+  resetSort = true,
+  resetEligibleOnly = false
+} = {}) {
+  let changed = false;
+
+  if (resetSearch && searchInput && String(searchInput.value || "") !== "") {
+    searchInput.value = "";
+    changed = true;
+  }
+
+  if (resetTeam && teamFilter && String(teamFilter.value || "") !== "") {
+    teamFilter.value = "";
+    changed = true;
+  }
+
+  if (resetPosition && positionFilter && String(positionFilter.value || "") !== "") {
+    positionFilter.value = "";
+    changed = true;
+  }
+
+  if (resetSort && sortSelect) {
+    const defaultSort = getDefaultTradeSortValue();
+    const hasSelectedOption = Array.from(sortSelect.options || []).some(option => String(option.value) === String(sortSelect.value));
+    if (!hasSelectedOption || String(sortSelect.value || "") !== defaultSort) {
+      sortSelect.value = defaultSort;
+      changed = true;
+    }
+  }
+
+  if (resetEligibleOnly && eligibleOnly) {
+    eligibleOnly = false;
+    if (eligibleOnlyToggle) eligibleOnlyToggle.checked = false;
+    try {
+      localStorage.setItem(STORAGE_KEYS.eligibleOnly, "0");
+    } catch (_error) {}
+    changed = true;
+  }
+
+  if (changed) {
+    persistTradeFilterStateVersion();
+  }
+
+  return changed;
+}
+
+function applyTradeFilterStateMigration() {
+  let storedVersion = "";
+  try {
+    storedVersion = String(localStorage.getItem(STORAGE_KEYS.filterStateVersion) || "").trim();
+  } catch (_error) {}
+
+  if (storedVersion === PLAYER_FILTER_STATE_VERSION) {
+    resetTradeListFilters({ resetSort: true });
+    return;
+  }
+
+  resetTradeListFilters({
+    resetSearch: true,
+    resetTeam: true,
+    resetPosition: true,
+    resetSort: true,
+    resetEligibleOnly: true
+  });
+}
+
+function recoverTradeListFiltersIfEmpty({ eligibleOnlyApplied = false, baseFilteredCount = 0 } = {}) {
+  if (didAutoRecoverTradeFiltersThisLoad) return false;
+  if (!Array.isArray(allPlayers) || !allPlayers.length) return false;
+  if (favoriteOnly) return false;
+  if (tradeFiltersTouchedSinceLoad) return false;
+
+  const hasSearch = !!normalizeSearchText(searchInput?.value || "");
+  const hasTeam = !!String(teamFilter?.value || "").trim();
+  const hasPosition = !!String(positionFilter?.value || "").trim();
+  const defaultSort = getDefaultTradeSortValue();
+  const hasValidSort = !!Array.from(sortSelect?.options || []).some(option => String(option.value) === String(sortSelect?.value || ""));
+  const needsSortReset = !hasValidSort || String(sortSelect?.value || "") !== defaultSort;
+
+  let changed = false;
+  if (eligibleOnlyApplied && baseFilteredCount > 0) {
+    changed = resetTradeListFilters({
+      resetSearch: false,
+      resetTeam: false,
+      resetPosition: false,
+      resetSort: needsSortReset,
+      resetEligibleOnly: true
+    });
+  }
+
+  if (!changed && (hasSearch || hasTeam || hasPosition || needsSortReset)) {
+    changed = resetTradeListFilters({
+      resetSearch: hasSearch,
+      resetTeam: hasTeam,
+      resetPosition: hasPosition,
+      resetSort: needsSortReset,
+      resetEligibleOnly: false
+    });
+  }
+
+  if (!changed) return false;
+  didAutoRecoverTradeFiltersThisLoad = true;
+  return true;
+}
+
 document.addEventListener("click", function (event) {
   const btn = event.target.closest(".favorite-btn");
   if (!btn) return;
@@ -11588,6 +11711,8 @@ function renderTradeList() {
       // Keep already-selected players visible in the list/search.
       // Addability is handled by getDisabledReason()/button disabled state.
 
+      const baseFilteredPlayerCount = players.length;
+
       if (eligibleOnly) {
         players = players.filter(player => isEligibleNow(player));
       }
@@ -11604,6 +11729,14 @@ function renderTradeList() {
         players.sort((a, b) => getPlayerStart(b) - getPlayerStart(a));
       } else if (sortValue === "name_asc") {
         players.sort((a, b) => String(a.player_name || "").localeCompare(String(b.player_name || ""), "da"));
+      }
+
+      if (!players.length && recoverTradeListFiltersIfEmpty({
+        eligibleOnlyApplied: eligibleOnly,
+        baseFilteredCount: baseFilteredPlayerCount
+      })) {
+        renderTradeList();
+        return;
       }
 
       if (!players.length) {
@@ -12649,6 +12782,12 @@ formationSelect.value = currentFormation;
       clearTeamBtn.addEventListener("click", clearSquad);
 
       [searchInput, teamFilter, positionFilter, sortSelect].forEach(el => {
+        el.addEventListener("input", () => {
+          tradeFiltersTouchedSinceLoad = true;
+        });
+        el.addEventListener("change", () => {
+          tradeFiltersTouchedSinceLoad = true;
+        });
         el.addEventListener("input", renderTradeList);
         el.addEventListener("change", renderTradeList);
       });
@@ -12657,6 +12796,7 @@ formationSelect.value = currentFormation;
       searchInput.addEventListener("click", sanitizeSearchField);
 
       eligibleOnlyToggle.addEventListener("change", () => {
+        tradeFiltersTouchedSinceLoad = true;
         eligibleOnly = eligibleOnlyToggle.checked;
         saveState();
         renderTradeList();
@@ -12831,6 +12971,7 @@ formationSelect.value = currentFormation;
 
         cleanSquadForCurrentFormation();
         buildTeamFilter();
+        applyTradeFilterStateMigration();
         setupEvents();
         await initAuth();
 
