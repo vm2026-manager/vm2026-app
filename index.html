@@ -11493,6 +11493,49 @@ function markTradeFiltersTouched() {
   tradeFiltersTouchedSinceLoad = true;
 }
 
+function getTradeListSelectionContext() {
+  const activeSlot = activeSlotKey
+    ? getCurrentSlots().find(slot => slot.key === activeSlotKey)
+    : null;
+  const currentPlayerForActiveSlot = activeSlot ? getPlayerById(squad[activeSlot.key]) : null;
+  return {
+    activeSlot,
+    currentPlayerForActiveSlot,
+    hasValidAlternativeContext: !!(activeSlotKey && activeSlot && currentPlayerForActiveSlot)
+  };
+}
+
+function normalizeTradeListModeState({ clearInvalidSelection = false } = {}) {
+  const { activeSlot, currentPlayerForActiveSlot, hasValidAlternativeContext } = getTradeListSelectionContext();
+
+  if (!hasValidAlternativeContext && clearInvalidSelection && activeSlotKey) {
+    activeSlotKey = null;
+    if (activeSlotText) activeSlotText.textContent = "Ingen valgt";
+  }
+
+  if (!hasValidAlternativeContext) {
+    forcePlayerListForActiveSlot = false;
+    rightPanel?.classList.remove("alternative-mode");
+    if (rightModeTitle) rightModeTitle.textContent = "Spillerliste";
+    if (showPlayerListBtn) {
+      showPlayerListBtn.textContent = "Se alternativer";
+      showPlayerListBtn.disabled = true;
+      showPlayerListBtn.classList.add("active");
+    }
+    if (activePositionChip) {
+      activePositionChip.hidden = true;
+      activePositionChip.textContent = "";
+    }
+    return {
+      activeSlot: null,
+      currentPlayerForActiveSlot: null,
+      hasValidAlternativeContext: false
+    };
+  }
+
+  return { activeSlot, currentPlayerForActiveSlot, hasValidAlternativeContext };
+}
+
 function getDefaultTradeSortValue() {
   const firstOption = sortSelect?.querySelector("option[value]");
   return String(firstOption?.value || "score_desc");
@@ -11651,27 +11694,31 @@ function renderTradeList() {
       const team = teamFilter.value;
       const position = positionFilter.value;
       const sortValue = sortSelect.value;
-      const activeSlot = activeSlotKey
-        ? getCurrentSlots().find(slot => slot.key === activeSlotKey)
-        : null;
-
-      const currentPlayerForActiveSlot = activeSlot ? getPlayerById(squad[activeSlot.key]) : null;
-      if (activeSlotKey && activeSlot && currentPlayerForActiveSlot && !forcePlayerListForActiveSlot) {
-        rightPanel?.classList.add("alternative-mode");
-        activePositionChip.hidden = true;
-        if (rightModeTitle) rightModeTitle.textContent = "Alternativer";
-        if (showPlayerListBtn) {
-          showPlayerListBtn.textContent = "Se spillerliste";
-          showPlayerListBtn.disabled = false;
+      let { activeSlot, currentPlayerForActiveSlot, hasValidAlternativeContext } =
+        normalizeTradeListModeState({ clearInvalidSelection: true });
+      if (hasValidAlternativeContext && !forcePlayerListForActiveSlot) {
+        try {
+          rightPanel?.classList.add("alternative-mode");
+          activePositionChip.hidden = true;
+          if (rightModeTitle) rightModeTitle.textContent = "Alternativer";
+          if (showPlayerListBtn) {
+            showPlayerListBtn.textContent = "Se spillerliste";
+            showPlayerListBtn.disabled = false;
+          }
+          updateMobilePlayersTopControlLabels();
+          renderMobilePlayersStatusBar();
+          showPlayerListBtn?.classList.remove("active");
+          tradeList.innerHTML = renderAlternativePanel(activeSlot, currentPlayerForActiveSlot);
+          tradeList.querySelectorAll(".plus-btn, .choose-alt-btn").forEach(btn => {
+            btn.addEventListener("click", () => addPlayerToSlot(btn.dataset.playerId, activeSlot.key));
+          });
+          return;
+        } catch (error) {
+          console.warn("Alternativer-visning nulstillet til spillerliste", error);
+          forcePlayerListForActiveSlot = false;
+          ({ activeSlot, currentPlayerForActiveSlot, hasValidAlternativeContext } =
+            normalizeTradeListModeState({ clearInvalidSelection: true }));
         }
-        updateMobilePlayersTopControlLabels();
-        renderMobilePlayersStatusBar();
-        showPlayerListBtn?.classList.remove("active");
-        tradeList.innerHTML = renderAlternativePanel(activeSlot, currentPlayerForActiveSlot);
-        tradeList.querySelectorAll(".plus-btn, .choose-alt-btn").forEach(btn => {
-          btn.addEventListener("click", () => addPlayerToSlot(btn.dataset.playerId, activeSlot.key));
-        });
-        return;
       }
 
       rightPanel?.classList.remove("alternative-mode");
