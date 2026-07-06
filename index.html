@@ -4423,6 +4423,82 @@ setTimeout(removeDataStatusBox, 250);
       suppressedTransferChangeIds: "vm2026_suppressed_transfer_change_ids_v1",
       manualRecoveryClearedSlots: "vm2026_manual_recovery_cleared_slots_v1"
     };
+    const EMERGENCY_STATE_RESET_KEY = "vm2026_emergency_state_reset_20260705_v1";
+
+    function runEmergencyAppStateResetOnce() {
+      try {
+        if (localStorage.getItem(EMERGENCY_STATE_RESET_KEY) === "done") return;
+
+        const keysToRemove = [
+          STORAGE_KEYS.squad,
+          STORAGE_KEYS.squadPurchasePrices,
+          STORAGE_KEYS.transferBaselineSquad,
+          STORAGE_KEYS.transferBaselinePurchasePrices,
+          STORAGE_KEYS.transferChanges,
+          STORAGE_KEYS.suppressedTransferChangeIds,
+          STORAGE_KEYS.manualRecoveryClearedSlots,
+          STORAGE_KEYS.filterStateVersion,
+          STORAGE_KEYS.eligibleOnly,
+          STORAGE_KEYS.manualBankMillions,
+          STORAGE_KEYS.transferWindowKey,
+          STORAGE_KEYS.captainPlayerId,
+          STORAGE_KEYS.formation,
+          "vm2026_active_slot_key",
+          "vm2026_active_slot_key_v1",
+          "vm2026_force_player_list_for_active_slot",
+          "vm2026_force_player_list_for_active_slot_v1",
+          "vm2026_trade_list_mode",
+          "vm2026_trade_list_mode_v1",
+          "vm2026_player_list_mode",
+          "vm2026_player_list_mode_v1",
+          "vm2026_alternative_mode",
+          "vm2026_alternative_mode_v1",
+          "vm2026_show_player_list_mode",
+          "vm2026_show_player_list_mode_v1"
+        ];
+
+        keysToRemove.forEach(key => {
+          try {
+            localStorage.removeItem(key);
+          } catch (_error) {}
+        });
+
+        localStorage.setItem(EMERGENCY_STATE_RESET_KEY, "done");
+      } catch (_error) {}
+    }
+
+    function cloneStorageFallback(value) {
+      if (value === null || typeof value !== "object") return value;
+      if (Array.isArray(value)) return value.slice();
+      return { ...value };
+    }
+
+    function readJsonLocalStorage(key, fallbackValue) {
+      try {
+        const raw = localStorage.getItem(key);
+        if (raw === null || raw === "") return cloneStorageFallback(fallbackValue);
+        return JSON.parse(raw);
+      } catch (_error) {
+        try {
+          localStorage.removeItem(key);
+        } catch (_innerError) {}
+        return cloneStorageFallback(fallbackValue);
+      }
+    }
+
+    function readTextLocalStorage(key, fallbackValue = "") {
+      try {
+        const raw = localStorage.getItem(key);
+        return raw === null ? fallbackValue : String(raw);
+      } catch (_error) {
+        try {
+          localStorage.removeItem(key);
+        } catch (_innerError) {}
+        return fallbackValue;
+      }
+    }
+
+    runEmergencyAppStateResetOnce();
 
     function withCacheBust(url) {
       if (!PAGE_CACHE_BUST) return url;
@@ -4521,21 +4597,21 @@ async function fetchCsvRows(url, errorLabel, optional = false) {
     let appAudit = null;
     let dataFreshness = null;
     let currentUser = null;
-    let squad = JSON.parse(localStorage.getItem(STORAGE_KEYS.squad) || "{}");
-    let squadPurchasePrices = JSON.parse(localStorage.getItem(STORAGE_KEYS.squadPurchasePrices) || "{}");
-    let transferBaselineSquad = JSON.parse(localStorage.getItem(STORAGE_KEYS.transferBaselineSquad) || "null");
-    let transferBaselinePurchasePrices = JSON.parse(localStorage.getItem(STORAGE_KEYS.transferBaselinePurchasePrices) || "null");
-    let transferChanges = JSON.parse(localStorage.getItem(STORAGE_KEYS.transferChanges) || "[]");
+    let squad = readJsonLocalStorage(STORAGE_KEYS.squad, {});
+    let squadPurchasePrices = readJsonLocalStorage(STORAGE_KEYS.squadPurchasePrices, {});
+    let transferBaselineSquad = readJsonLocalStorage(STORAGE_KEYS.transferBaselineSquad, null);
+    let transferBaselinePurchasePrices = readJsonLocalStorage(STORAGE_KEYS.transferBaselinePurchasePrices, null);
+    let transferChanges = readJsonLocalStorage(STORAGE_KEYS.transferChanges, []);
     let suppressedTransferChangeIds = cloneSuppressedTransferChangeIds(
-      JSON.parse(localStorage.getItem(STORAGE_KEYS.suppressedTransferChangeIds) || "[]")
+      readJsonLocalStorage(STORAGE_KEYS.suppressedTransferChangeIds, [])
     );
     let manualRecoveryClearedSlots = cloneManualRecoveryClearedSlots(
-      JSON.parse(localStorage.getItem(STORAGE_KEYS.manualRecoveryClearedSlots) || "[]")
+      readJsonLocalStorage(STORAGE_KEYS.manualRecoveryClearedSlots, [])
     );
-    let transferWindowKey = String(localStorage.getItem(STORAGE_KEYS.transferWindowKey) || "").trim() || null;
-    let captainPlayerId = localStorage.getItem(STORAGE_KEYS.captainPlayerId) || null;
-    let currentFormation = localStorage.getItem(STORAGE_KEYS.formation) || "3-4-3";
-    let manualBankMillions = parseManualBankMillions(localStorage.getItem(STORAGE_KEYS.manualBankMillions));
+    let transferWindowKey = readTextLocalStorage(STORAGE_KEYS.transferWindowKey, "").trim() || null;
+    let captainPlayerId = readTextLocalStorage(STORAGE_KEYS.captainPlayerId, "") || null;
+    let currentFormation = readTextLocalStorage(STORAGE_KEYS.formation, "3-4-3") || "3-4-3";
+    let manualBankMillions = parseManualBankMillions(readTextLocalStorage(STORAGE_KEYS.manualBankMillions, ""));
     let activeSlotKey = null;
     let forcePlayerListForActiveSlot = false;
     let previousReplacementBySlot = new Map();
@@ -4545,11 +4621,11 @@ async function fetchCsvRows(url, errorLabel, optional = false) {
     let autosaveWriteChain = Promise.resolve(true);
     let authMode = "login";
     let isApplyingRemoteSquad = false;
-    let eligibleOnly = localStorage.getItem(STORAGE_KEYS.eligibleOnly) === "1";
+    let eligibleOnly = readTextLocalStorage(STORAGE_KEYS.eligibleOnly, "0") === "1";
     const PLAYER_FILTER_STATE_VERSION = "player_pool_416_v1";
     let didAutoRecoverTradeFiltersThisLoad = false;
     let tradeFiltersTouchedSinceLoad = false;
-    let activeStrategyKey = localStorage.getItem("vm2026_active_strategy") || "next_round";
+    let activeStrategyKey = readTextLocalStorage("vm2026_active_strategy", "next_round") || "next_round";
     let frontendCaptainOverride = null;
 
     const formationSelect = document.getElementById("formationSelect");
@@ -6153,6 +6229,31 @@ function saveState() {
       ));
     }
 
+    const ROUND_OF_16_TRANSFER_WINDOW_LABEL = "1/16-finaler → Ottendedelsfinaler";
+    const TRANSFER_WINDOW_KEY_R32_TO_R16 = "R32_TO_R16";
+    const TRANSFER_WINDOW_KEY_R16_TO_QF = "R16_TO_QF";
+    const TRANSFER_WINDOW_KEY_QF_TO_SF = "QF_TO_SF";
+    const TRANSFER_WINDOW_KEY_SF_TO_FINAL_ROUND = "SF_TO_FINAL_ROUND";
+    const KNOCKOUT_TRANSFER_WINDOW_LABELS = Object.freeze({
+      [TRANSFER_WINDOW_KEY_R32_TO_R16]: ROUND_OF_16_TRANSFER_WINDOW_LABEL,
+      [TRANSFER_WINDOW_KEY_R16_TO_QF]: "Ottendedelsfinaler → Kvartfinaler",
+      [TRANSFER_WINDOW_KEY_QF_TO_SF]: "Kvartfinaler → Semifinaler",
+      [TRANSFER_WINDOW_KEY_SF_TO_FINAL_ROUND]: "Semifinaler → Finalerunde"
+    });
+    const KNOCKOUT_TRANSFER_WINDOW_MIGRATION_MAP = Object.freeze({
+      "runde_3_to_1_16_finaler": TRANSFER_WINDOW_KEY_R32_TO_R16,
+      "1_16_finaler_to_ottendedelsfinaler": TRANSFER_WINDOW_KEY_R32_TO_R16,
+      "1_16_finaler_to_ottendedelsfinaler__ottendedelsfinaler_baseline_v1": TRANSFER_WINDOW_KEY_R32_TO_R16,
+      "1_8_finaler_to_kvartfinaler": TRANSFER_WINDOW_KEY_R16_TO_QF,
+      "ottendedelsfinaler_to_kvartfinaler": TRANSFER_WINDOW_KEY_R16_TO_QF,
+      "kvartfinaler_to_semifinaler": TRANSFER_WINDOW_KEY_QF_TO_SF,
+      "semifinaler_to_bronzekamp_finale": TRANSFER_WINDOW_KEY_SF_TO_FINAL_ROUND,
+      "semifinaler_to_finale": TRANSFER_WINDOW_KEY_SF_TO_FINAL_ROUND,
+      "semifinaler_to_finalerunde": TRANSFER_WINDOW_KEY_SF_TO_FINAL_ROUND,
+      "finalerunde": TRANSFER_WINDOW_KEY_SF_TO_FINAL_ROUND,
+      "sf_to_f": TRANSFER_WINDOW_KEY_SF_TO_FINAL_ROUND
+    });
+
     function cloneManualRecoveryClearedSlots(value) {
       return (Array.isArray(value) ? value : [])
         .map(item => {
@@ -6178,31 +6279,6 @@ function saveState() {
     function hasTransferBaselinePlayers() {
       return hasSquadPlayers(transferBaselineSquad);
     }
-
-    const ROUND_OF_16_TRANSFER_WINDOW_LABEL = "1/16-finaler → Ottendedelsfinaler";
-    const TRANSFER_WINDOW_KEY_R32_TO_R16 = "R32_TO_R16";
-    const TRANSFER_WINDOW_KEY_R16_TO_QF = "R16_TO_QF";
-    const TRANSFER_WINDOW_KEY_QF_TO_SF = "QF_TO_SF";
-    const TRANSFER_WINDOW_KEY_SF_TO_FINAL_ROUND = "SF_TO_FINAL_ROUND";
-    const KNOCKOUT_TRANSFER_WINDOW_LABELS = Object.freeze({
-      [TRANSFER_WINDOW_KEY_R32_TO_R16]: ROUND_OF_16_TRANSFER_WINDOW_LABEL,
-      [TRANSFER_WINDOW_KEY_R16_TO_QF]: "Ottendedelsfinaler → Kvartfinaler",
-      [TRANSFER_WINDOW_KEY_QF_TO_SF]: "Kvartfinaler → Semifinaler",
-      [TRANSFER_WINDOW_KEY_SF_TO_FINAL_ROUND]: "Semifinaler → Finalerunde"
-    });
-    const KNOCKOUT_TRANSFER_WINDOW_MIGRATION_MAP = Object.freeze({
-      "runde_3_to_1_16_finaler": TRANSFER_WINDOW_KEY_R32_TO_R16,
-      "1_16_finaler_to_ottendedelsfinaler": TRANSFER_WINDOW_KEY_R32_TO_R16,
-      "1_16_finaler_to_ottendedelsfinaler__ottendedelsfinaler_baseline_v1": TRANSFER_WINDOW_KEY_R32_TO_R16,
-      "1_8_finaler_to_kvartfinaler": TRANSFER_WINDOW_KEY_R16_TO_QF,
-      "ottendedelsfinaler_to_kvartfinaler": TRANSFER_WINDOW_KEY_R16_TO_QF,
-      "kvartfinaler_to_semifinaler": TRANSFER_WINDOW_KEY_QF_TO_SF,
-      "semifinaler_to_bronzekamp_finale": TRANSFER_WINDOW_KEY_SF_TO_FINAL_ROUND,
-      "semifinaler_to_finale": TRANSFER_WINDOW_KEY_SF_TO_FINAL_ROUND,
-      "semifinaler_to_finalerunde": TRANSFER_WINDOW_KEY_SF_TO_FINAL_ROUND,
-      "finalerunde": TRANSFER_WINDOW_KEY_SF_TO_FINAL_ROUND,
-      "sf_to_f": TRANSFER_WINDOW_KEY_SF_TO_FINAL_ROUND
-    });
 
     function normalizeSquadSlotPlayerId(value) {
       if (value === null || value === undefined) return null;
@@ -11385,7 +11461,8 @@ function getMobilePlayersStatusSlotLabel() {
 }
 
 function renderMobilePlayersStatusBar() {
-  if (!mobilePlayersStatusBar) return;
+  const mobilePlayersStatusBarEl = document.getElementById("mobilePlayersStatusBar");
+  if (!mobilePlayersStatusBarEl) return;
 
   const isMobilePlayersView =
     (typeof window.isCompactMobileLayout === "function"
@@ -11394,8 +11471,8 @@ function renderMobilePlayersStatusBar() {
     && document.body?.dataset?.mobileView === "players";
 
   if (!isMobilePlayersView) {
-    mobilePlayersStatusBar.hidden = true;
-    mobilePlayersStatusBar.innerHTML = "";
+    mobilePlayersStatusBarEl.hidden = true;
+    mobilePlayersStatusBarEl.innerHTML = "";
     return;
   }
 
@@ -11403,8 +11480,8 @@ function renderMobilePlayersStatusBar() {
   const playerCount = `${getPlayerCount()} / 11`;
   const slotLabel = getMobilePlayersStatusSlotLabel();
 
-  mobilePlayersStatusBar.hidden = false;
-  mobilePlayersStatusBar.innerHTML = `
+  mobilePlayersStatusBarEl.hidden = false;
+  mobilePlayersStatusBarEl.innerHTML = `
     <div class="mobile-players-statusitem">
       <span class="mobile-players-statuslabel">Bank</span>
       <span class="mobile-players-statusvalue">${escapeHtml(bank)}</span>
