@@ -6866,6 +6866,7 @@ function saveState() {
       applyLoadedTransferBaselineState(nextTransferBaselineSquad, nextTransferBaselinePurchasePrices);
       applySquadState(nextSquad, nextPurchasePrices, { preferStartPriceForNew: true });
       ensureSquadPurchasePrices({ preferStartPriceForNew: true });
+      cleanSquadForCurrentFormation();
       syncTransferStateAfterLoadedSquad(squad, squadPurchasePrices);
       pendingRemoteSquadState = null;
       return true;
@@ -7618,6 +7619,32 @@ function getPlayerScore(player) {
       const isTrue = value => value === true
         || ["true", "1", "yes", "ja"].includes(String(value || "").trim().toLowerCase());
       return isTrue(player?.holdet_is_out) || isTrue(player?.is_out) || isPlayerTournamentEliminated(player);
+    }
+
+    function shouldAutoRemoveEliminatedSquadPlayer(player) {
+      return !!player && isPlayerUnavailable(player);
+    }
+
+    function getTransferSafeBaselinePlayerId(slotKey) {
+      const baselinePlayerId = normalizeSquadSlotPlayerId(transferBaselineSquad?.[slotKey]);
+      if (!baselinePlayerId) return null;
+      const baselinePlayer = getPlayerById(baselinePlayerId);
+      if (shouldAutoRemoveEliminatedSquadPlayer(baselinePlayer)) {
+        return null;
+      }
+      return baselinePlayerId;
+    }
+
+    function getTransferSafeBaselineSquadState() {
+      if (!transferBaselineSquad || typeof transferBaselineSquad !== "object") return {};
+      const nextBaselineSquad = cloneSquadState(transferBaselineSquad);
+      Object.entries(nextBaselineSquad).forEach(([slotKey, playerId]) => {
+        const player = getPlayerById(playerId);
+        if (shouldAutoRemoveEliminatedSquadPlayer(player)) {
+          delete nextBaselineSquad[slotKey];
+        }
+      });
+      return nextBaselineSquad;
     }
 
     function startPct(value) {
@@ -9181,17 +9208,35 @@ const playerId = String(player.player_id || player.id || "");
       const cleanedSquad = {};
       const previousSquad = cloneSquadState(squad);
       const previousPurchasePrices = cloneSquadState(squadPurchasePrices);
+      let removedEliminatedPlayer = false;
 
       Object.entries(squad).forEach(([slotKey, playerId]) => {
-        if (validSlotKeys.has(slotKey) && getPlayerById(playerId)) {
+        const player = getPlayerById(playerId);
+        if (!validSlotKeys.has(slotKey) || !player) {
+          return;
+        }
+
+        if (shouldAutoRemoveEliminatedSquadPlayer(player)) {
+          removedEliminatedPlayer = true;
+          return;
+        }
+
+        if (validSlotKeys.has(slotKey) && player) {
           cleanedSquad[slotKey] = playerId;
         }
       });
+
+      if (removedEliminatedPlayer && !hasTransferBaselinePlayers() && hasSquadPlayers(previousSquad)) {
+        setTransferBaselineState(previousSquad, previousPurchasePrices || {});
+      }
 
       squad = cleanedSquad;
       squadPurchasePrices = buildPurchasePriceMapForSquad(cleanedSquad, previousSquad, previousPurchasePrices, {
         preferStartPriceForNew: true
       });
+      sanitizeCaptainPlayerId(squad);
+
+      return removedEliminatedPlayer || JSON.stringify(previousSquad || {}) !== JSON.stringify(cleanedSquad || {});
     }
 
     function getCurrentTeamCounts(squadObj = squad) {
@@ -10727,7 +10772,7 @@ const playerId = String(player.player_id || player.id || "");
       pushHistory();
       const nextSquad = cloneSquadState(squad);
       const nextPurchasePrices = cloneSquadState(squadPurchasePrices);
-      const baselinePlayerId = transferBaselineSquad?.[slotKey] || null;
+      const baselinePlayerId = getTransferSafeBaselinePlayerId(slotKey);
       const currentPlayerIdInSlot = nextSquad?.[slotKey] || null;
       const baselinePlayerCurrentSlot = baselinePlayerId
         ? Object.entries(nextSquad).find(([currentSlotKey, playerId]) =>
@@ -10752,7 +10797,11 @@ const playerId = String(player.player_id || player.id || "");
 
       if (baselinePlayerId) {
         nextSquad[slotKey] = baselinePlayerId;
-        nextPurchasePrices[slotKey] = getPurchasePriceForSlot(slotKey, transferBaselineSquad, transferBaselinePurchasePrices || {});
+        nextPurchasePrices[slotKey] = getPurchasePriceForSlot(
+          slotKey,
+          transferBaselineSquad,
+          transferBaselinePurchasePrices || {}
+        );
       } else {
         delete nextSquad[slotKey];
         delete nextPurchasePrices[slotKey];
@@ -10771,7 +10820,11 @@ const playerId = String(player.player_id || player.id || "");
       if (!transferBaselineSquad || typeof transferBaselineSquad !== "object") return;
 
       pushHistory();
-      applySquadState(transferBaselineSquad, transferBaselinePurchasePrices || {}, { preferStartPriceForNew: false });
+      applySquadState(
+        getTransferSafeBaselineSquadState(),
+        transferBaselinePurchasePrices || {},
+        { preferStartPriceForNew: false }
+      );
       previousReplacementBySlot.clear();
       frontendCaptainOverride = null;
       clearStatus();
@@ -12665,6 +12718,7 @@ function renderTradeList() {
         applyLoadedTransferBaselineState(nextTransferBaselineSquad, nextTransferBaselinePurchasePrices);
         applySquadState(nextSquad, nextPurchasePrices, { preferStartPriceForNew: true });
         ensureSquadPurchasePrices({ preferStartPriceForNew: true });
+        cleanSquadForCurrentFormation();
         syncTransferStateAfterLoadedSquad(squad, squadPurchasePrices);
       }
 
@@ -13091,17 +13145,23 @@ formationSelect.value = currentFormation;
         synchronizeStrategyContextToCurrentWindow();
         applyPendingRemoteSquadStateIfReady();
 
-        cleanSquadForCurrentFormation();
+        let squadWasSanitized = cleanSquadForCurrentFormation();
         buildTeamFilter();
         applyTradeFilterStateMigration();
         setupEvents();
         await initAuth();
+        squadWasSanitized = cleanSquadForCurrentFormation() || squadWasSanitized;
 
         searchInput.value = "";
         sanitizeSearchField();
 
         render();
         renderDataStatus();
+
+        if (squadWasSanitized) {
+          saveState();
+          scheduleAutosave();
+        }
 
         setInterval(() => {
           sanitizeSearchField();
