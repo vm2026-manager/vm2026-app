@@ -6,15 +6,12 @@ patrick_wimmer__aut,Patrick Wimmer,AUT,0.5787,0.6477,0.8085,0.8085,medium_risk,m
 ismaila_sarr__sen,Ismaila Sarr,SEN,0.6015,0.6526,0.768,0.768,medium_risk,medium,3.0,0.0,0.0,0.0,0.0,3.0,0.0,0.0,Existing raw country start-security row is 0.6015 with base_start_score 0.6526; canonical availability split over-promoted him to probable starter.,,
 alexander_schlager__aut,Alexander Schlager,AUT,0.95,0.95,0.98,0.95,low_risk,low,1.0,0.0,1.0,0.0,0.0,0.0,1.0,1.0,Manual round 2 start_prob package applied 2026-06-17; no EV rebuild yet.,Østrig,Manual round 2 start_prob package
 joan_garcia__esp,Joan Garcia,ESP,0.15,0.2,0.25,0.9,low_risk,low,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,"Manuel kontekstjustering: Joan Garcia vurderes ikke som sandsynlig Spanien-starter trods modelens høje start_prob. Nedjusteret for at undgå, at han vælges som value-GK på fejlagtig starterantagelse.",,
-leo_pereira__bra,Leo Pereira,BRA,0.45,0.55,0.85,0.85,medium_risk,high,,,,,,,,,Manual context review: not in Bold expected Brazil XI. Recent full friendly starts may reflect rotation/rest for first-choice centre-backs rather than secure starting role. Downgraded to rotation/uncertain starter.,,
 noni_madueke__eng,Noni Madueke,ENG,0.38,0.45,0.72,0.97,medium_risk,high,,,,,,,,,Manual context review: recent national-team usage indicates rotation/substitute role rather than expected first-choice starter.,,
-raul_jimenez__mex,Raul Jimenez,MEX,,,,,medium_risk,,,,,,,,,,Manual context review: currently available and selected as a likely starter. Previous high-risk availability flag appears stale; retain medium caution.,,
 gregor_kobel__sui,Gregor Kobel,SUI,0.92,0.96,0.98,0.97,low_risk,low,,,,,,,,,Manual context review: established Switzerland first-choice goalkeeper. Recent friendly benches assessed as rotation.,,
 arthur_theate__bel,Arthur Theate,BEL,0.86,0.91,0.96,0.95,low_risk,low,,,,,,,,,Manual context review: regular Belgium starter. Recent friendly rotation should not outweigh qualification usage.,,
 silvan_widmer__sui,Silvan Widmer,SUI,0.84,0.89,0.96,0.94,medium_risk,medium,,,,,,,,,Manual context review: expected Switzerland right-back. Recent reduced friendly minutes assessed mainly as managed minutes.,,
 mahmoud_trezeguet__egy,Mahmoud Trezeguet,EGY,0.92,0.96,0.98,0.96,low_risk,low,,,,,,,,,Manual context review: expected Egypt starter with an advanced attacking role despite Holdet midfield classification.,,
 antonio_nusa__nor,Antonio Nusa,NOR,0.82,0.88,0.96,0.93,medium_risk,medium,,,,,,,,,"Manual context review: likely Norway starter based on recent starts, minutes and expected-lineup assessment.",,
-cesar_montes__mex,Cesar Montes,MEX,0.72,0.82,0.94,0.9,medium_risk,medium,,,,,,,,,"Manual context review: included in expected Mexico starting lineup, but recent mixed usage warrants continued caution.",,
 phillipp_mwene__aut,Phillipp Mwene,AUT,0.76,0.82,0.95,0.93,medium_risk,medium,,,,,,,,,"Manual context review: frequent Austria starter with substantial recent minutes, but defensive role competition remains.",,
 giovani_lo_celso__arg,Giovani Lo Celso,ARG,0.55,0.65,0.85,0.85,medium_risk,high,,,,,,,,,"Manual context review: not in Bold expected Argentina starting XI; recent national-team usage includes mixed starts, bench appearances and injury/absence context. Downgraded from likely starter to uncertain rotation option.",,
 anthony_gordon__eng,Anthony Gordon,ENG,0.55,0.65,0.85,0.85,medium_risk,high,,,,,,,,,Manual context review: Bold marks him as a red/on-the-bubble starter; England attacking roles are highly competitive. Downgraded to uncertain starter.,,
@@ -31,9 +28,6 @@ elliot_anderson__eng,Elliot Anderson,ENG,0.35,0.45,,,medium_risk,high,,,,,,,,,Ma
 maghnes_akliouche__fra,Maghnes Akliouche,FRA,0.25,0.35,,,medium_risk,high,,,,,,,,,Manual context review: France attacking roles are competitive. Recent test-match usage should not over-promote him to likely starter.,,
 maxence_lacroix__fra,Maxence Lacroix,FRA,0.25,0.35,,,medium_risk,high,,,,,,,,,Manual context review: France defensive role not secure. Recent test-match usage should not over-promote him to likely starter.,,
 bradley_barcola__fra,Bradley Barcola,FRA,0.3,0.4,,,medium_risk,high,,,,,,,,,Manual context review: France attacking roles are competitive. Barcola should be treated as rotation/possible starter rather than secure starter.,,
-igor_thiago__bra,Igor Thiago,BRA,0.18,0.35,,,medium_risk,high,,,,,,,,,Manual round 2 start_prob package applied 2026-06-17; no EV rebuild yet.,Brasilien,Manual round 2 start_prob package
-luiz_henrique__bra,Luiz Henrique,BRA,0.45,0.55,,,medium_risk,high,,,,,,,,,Manual context review: Brazil forward/right-side attacking roles are competitive. Do not allow recent test-match usage to make him a near-locked starter.,,
-endrick__bra,Endrick,BRA,0.2,0.3,,,medium_risk,high,,,,,,,,,Manual context review: Brazil forward hierarchy. Treat as rotation/sub option unless later expected-XI evidence says otherwise.,,
 amine_gouiri__alg,Amine Gouiri,ALG,0.45,0.55,,,medium_risk,high,,,,,,,,,Manual low-priority nation audit vs Bold+ XI: Gouiri not in expected XI; reduce test-match/Transfermarkt overpromotion.,,
 houssem_aouar__alg,Houssem Aouar,ALG,0.45,0.55,,,medium_risk,high,,,,,,,,,Manual low-priority nation audit vs Bold+ XI: Aouar not in expected XI; reduce test-match/Transfermarkt overpromotion.,,
 cristian_volpato__aus,Cristian Volpato,AUS,0.35,0.45,,,medium_risk,high,,,,,,,,,Manual low-priority nation audit vs Bold+ XI: Volpato not in expected XI; recent usage likely overpromoted him.,,
@@ -50,10 +44,6 @@ neil_el_aynaoui__mar,Neil El Aynaoui,MAR,0.45,0.55,,,medium_risk,high,,,,,,,,,Ma
 kerim_alajbegovi__bih,Kerim Alajbegovic,BIH,0.4,0.5,,,medium_risk,high,,,,,,,,,Manual low-priority nation audit vs Bold+ XI: Alajbegovic not in expected XI; reduce recent-match overpromotion.,,
 mois_s_caicedo__ecu,Moises Caicedo,ECU,0.55,0.65,,,medium_risk,medium,,,,,,,,,Manual low-priority nation audit vs Bold+ XI: model start_prob looks high relative to expected XI; reduce but do not zero because player quality/hierarchy remains plausible.,,
 zizo__egy,Ahmed Zizo,EGY,0.4,0.5,,,medium_risk,high,,,,,,,,,Manual low-priority nation audit vs Bold+ XI: Zizo not in expected XI; reduce elevated model signal.,,
-neymar_jr__bra,Neymar Jr.,BRA,0.05,0.1,0.2,0.35,high_risk,high,,,,,,,,,Manual context review: Neymar has extended recent Brazil absence/injury/not-in-squad history. Treat as unlikely starter until clear expected-XI evidence says otherwise.,,
-alisson_becker__bra,Alisson Becker,BRA,0.65,0.7,,,medium_risk,medium,,,,,,,,,Manual context review: Brazil GK hierarchy uncertain. Alisson likely but not locked starter over Ederson/Bento.,,
-ederson_moraes__bra,Ederson Moraes,BRA,0.3,0.35,,,medium_risk,medium,,,,,,,,,"Manual context review: Brazil GK hierarchy uncertain. Ederson remains plausible starter, not near-zero.",,
-bento_krepski__bra,Bento Krepski,BRA,0.05,0.08,,,medium_risk,high,,,,,,,,,Manual context review: Brazil GK hierarchy uncertain but Bento treated as outside option.,,
 kylian_mbapp__fra,Kylian Mbappe,FRA,0.95,0.98,0.98,0.98,low_risk,low,,,,,,,,,Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.,,
 harry_kane__eng,Harry Kane,ENG,0.97,0.99,0.98,0.98,low_risk,low,,,,,,,,,Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.,,
 erling_haaland__nor,Erling Haaland,NOR,0.93,0.97,0.98,0.98,low_risk,low,,,,,,,,,Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.,,
@@ -61,7 +51,6 @@ lautaro_mart_nez__arg,Lautaro Martinez,ARG,0.62,0.75,0.95,0.98,low_risk,medium,,
 lionel_messi__arg,Lionel Messi,ARG,0.93,0.97,0.98,0.98,low_risk,low,,,,,,,,,Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.,,
 florian_wirtz__ger,Florian Wirtz,GER,0.94,0.97,0.98,0.98,low_risk,low,,,,,,,,,Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.,,
 mikel_oyarzabal__esp,Mikel Oyarzabal,ESP,0.88,0.93,0.98,0.98,low_risk,low,,,,,,,,,Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.,,
-vinicius_j_nior__bra,Vinicius Junior,BRA,0.92,0.96,0.98,0.98,low_risk,low,,,,,,,,,Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.,,
 bruno_fernandes__por,Bruno Fernandes,POR,0.93,0.97,0.98,0.98,low_risk,low,,,,,,,,,Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.,,
 cristiano_ronaldo__por,Cristiano Ronaldo,POR,0.92,0.97,0.98,0.98,low_risk,low,,,,,,,,,Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.,,
 kevin_de_bruyne__bel,Kevin De Bruyne,BEL,0.91,0.95,0.98,0.98,low_risk,low,,,,,,,,,Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.,,
@@ -70,7 +59,6 @@ bukayo_saka__eng,Bukayo Saka,ENG,0.9,0.95,0.98,0.98,low_risk,low,,,,,,,,,Manual 
 cody_gakpo__ned,Cody Gakpo,NED,0.91,0.96,0.98,0.98,low_risk,low,,,,,,,,,Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.,,
 jamal_musiala__ger,Jamal Musiala,GER,0.9,0.95,0.98,0.98,low_risk,low,,,,,,,,,Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.,,
 jeremy_doku__bel,Jeremy Doku,BEL,0.86,0.92,0.98,0.98,low_risk,low,,,,,,,,,Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.,,
-raphinha__bra,Raphinha,BRA,0.88,0.93,0.98,0.98,low_risk,low,,,,,,,,,Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.,,
 charles_de_ketelaere__bel,Charles De Ketelaere,BEL,0.82,0.88,0.98,0.98,low_risk,low,,,,,,,,,Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.,,
 darwin_nunez__uru,Darwin Nunez,URU,0.88,0.93,0.98,0.98,low_risk,low,,,,,,,,,Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.,,
 son_heung_min__kor,Heung-Min Son,KOR,0.92,0.97,0.98,0.98,low_risk,low,,,,,,,,,Manual context review: treated as secure premium/key starter unless new injury or expected-XI evidence says otherwise.,,
@@ -78,15 +66,11 @@ jude_bellingham__eng,Jude Bellingham,ENG,0.93,0.97,0.98,0.98,low_risk,low,,,,,,,
 juli_n_lvarez__arg,Julian Alvarez,ARG,0.72,0.82,0.95,0.98,low_risk,medium,,,,,,,,,"Manual context review: Argentina striker role is shared/contested with Lautaro Martinez. Recent usage supports a slightly higher start chance than Lautaro, but not locked.",,
 brahim_d_az__mar,Brahim Diaz,MAR,0.72,0.85,0.95,0.95,low_risk,medium,,,,,,,,,"Manual context review: Brahim Diaz appears to be an important Morocco attacking starter/RW based on recent national-team usage. Raised from low model start probability, but not treated as fully locked due to some rotation/absence context.",,
 ismael_d_az__pan,Ismael Diaz,PAN,0.52,0.65,,,medium_risk,medium,,,,,,,,,,,
-casemiro__bra,Casemiro,BRA,0.83,0.90,,,low_risk,,,,,,,,,,,,
-roberto_alvarado__mex,Roberto Alvarado,MEX,0.85,0.86,0.94,0.94,low_risk,medium,,,,,,,,,Manual round 2 start_prob package applied 2026-06-17; no EV rebuild yet.,Mexico,Manual round 2 start_prob package
 nathaniel_brown__ger,Nathaniel Brown,GER,0.86,0.86,,,,,,,,,,,,,Manual round 2 start_prob package applied 2026-06-17; no EV rebuild yet.,Tyskland,Manual round 2 start_prob package
 cyle_christopher_larin__can,Cyle Christopher Larin,CAN,0.74,0.74,,,,,,,,,,,,,Manual round 2 start_prob package applied 2026-06-17; no EV rebuild yet.,Canada,Manual round 2 start_prob package
-matheus_cunha__bra,Matheus Cunha,BRA,0.6,0.6305,,,,,,,,,,,,,Manual round 2 start_prob package applied 2026-06-17; no EV rebuild yet.,Brasilien,Manual round 2 start_prob package
 rafael_le_o__por,Rafael Leão,POR,0.7,0.7,,,,,,,,,,,,,Manual round 2 start_prob package applied 2026-06-17; no EV rebuild yet.,Portugal,Manual round 2 start_prob package
 marko_arnautovi__aut,Marko Arnautovic,AUT,0.88,0.88,,,,,,,,,,,,,Manual round 2 start_prob package applied 2026-06-17; no EV rebuild yet.,Østrig,Manual round 2 start_prob package
 arda_g_ler__tur,Arda Güler,TUR,0.95,0.95,,,,,,,,,,,,,Manual round 2 start_prob package applied 2026-06-17; no EV rebuild yet.,Tyrkiet,Manual round 2 start_prob package
-ra_l_jim_nez__mex,Raul Jimenez,MEX,0.8585,0.9134,,,,,,,,,,,,,Manual round 2 start_prob package applied 2026-06-17; no EV rebuild yet.,Mexico,Manual round 2 start_prob package
 ismael_saibari__mar,Ismael Saibari,MAR,0.8391,0.8961,,,,,,,,,,,,,Manual round 2 start_prob package applied 2026-06-17; no EV rebuild yet.,Marokko,Manual round 2 start_prob package
 nicolas_seiwald__aut,Nicolas Seiwald,AUT,0.7843,0.7843,,,,,,,,,,,,,Manual round 2 start_prob package applied 2026-06-17; no EV rebuild yet.,Østrig,Manual round 2 start_prob package
 romano_schmid__aut,Romano Schmid,AUT,0.6861,0.6861,,,,,,,,,,,,,Manual round 2 start_prob package applied 2026-06-17; no EV rebuild yet.,Østrig,Manual round 2 start_prob package
@@ -143,3 +127,55 @@ kamaldeen_sulemana__gha,Kamaldeen Sulemana,GHA,0,0,0,0,team_eliminated_r32,,,,,,
 ernest_nuamah__gha,Ernest Nuamah,GHA,0,0,0,0,team_eliminated_r32,,,,,,,,,,Team eliminated before current knockout round; manual override to zero start/appearance.,Ghana,team_eliminated_r32
 antoine_semenyo__gha,Antoine Semenyo,GHA,0,0,0,0,team_eliminated_r32,,,,,,,,,,Team eliminated before current knockout round; manual override to zero start/appearance.,Ghana,team_eliminated_r32
 abdul_fatawu_issahaku__gha,Issahaku Abdul Fatawu,GHA,0,0,0,0,team_eliminated_r32,,,,,,,,,,Team eliminated before current knockout round; manual override to zero start/appearance.,Ghana,team_eliminated_r32
+alex_sandro__bra,Alex Sandro,BRA,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Brasilien,team_eliminated_r16
+alisson_becker__bra,Alisson Becker,BRA,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Brasilien,team_eliminated_r16
+bremer__bra,Bremer,BRA,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Brasilien,team_eliminated_r16
+bruno_guimaraes__bra,Bruno Guimaraes,BRA,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Brasilien,team_eliminated_r16
+casemiro__bra,Casemiro,BRA,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Brasilien,team_eliminated_r16
+danilo_luiz_da_silva__bra,Danilo Luiz da Silva,BRA,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Brasilien,team_eliminated_r16
+danilo_dos_santos__bra,Danilo dos Santos,BRA,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Brasilien,team_eliminated_r16
+douglas_santos__bra,Douglas Santos,BRA,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Brasilien,team_eliminated_r16
+ederson__bra,Ederson,BRA,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Brasilien,team_eliminated_r16
+ederson_moraes__bra,Ederson Moraes,BRA,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Brasilien,team_eliminated_r16
+endrick__bra,Endrick,BRA,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Brasilien,team_eliminated_r16
+fabinho__bra,Fabinho,BRA,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Brasilien,team_eliminated_r16
+gabriel_magalh_es__bra,Gabriel Magalhaes,BRA,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Brasilien,team_eliminated_r16
+gabriel_martinelli__bra,Gabriel Martinelli,BRA,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Brasilien,team_eliminated_r16
+igor_thiago__bra,Igor Thiago,BRA,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Brasilien,team_eliminated_r16
+leo_pereira__bra,Leo Pereira,BRA,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Brasilien,team_eliminated_r16
+lucas_paqueta__bra,Lucas Paqueta,BRA,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Brasilien,team_eliminated_r16
+luiz_henrique__bra,Luiz Henrique,BRA,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Brasilien,team_eliminated_r16
+marquinhos__bra,Marquinhos,BRA,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Brasilien,team_eliminated_r16
+matheus_cunha__bra,Matheus Cunha,BRA,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Brasilien,team_eliminated_r16
+neymar_jr__bra,Neymar Jr.,BRA,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Brasilien,team_eliminated_r16
+raphinha__bra,Raphinha,BRA,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Brasilien,team_eliminated_r16
+rayan__bra,Rayan,BRA,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Brasilien,team_eliminated_r16
+roger_ibanez__bra,Roger Ibanez,BRA,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Brasilien,team_eliminated_r16
+vinicius_j_nior__bra,Vinicius Junior,BRA,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Brasilien,team_eliminated_r16
+weverton__bra,Weverton,BRA,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Brasilien,team_eliminated_r16
+alexis_vega__mex,Alexis Vega,MEX,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Mexico,team_eliminated_r16
+alvaro_fidalgo__mex,Alvaro Fidalgo,MEX,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Mexico,team_eliminated_r16
+armando_gonzalez__mex,Armando Gonzalez,MEX,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Mexico,team_eliminated_r16
+brian_gutierrez__mex,Brian Gutierrez,MEX,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Mexico,team_eliminated_r16
+carlos_acevedo__mex,Carlos Acevedo,MEX,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Mexico,team_eliminated_r16
+cesar_huerta__mex,Cesar Huerta,MEX,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Mexico,team_eliminated_r16
+c_sar_montes__mex,Cesar Montes,MEX,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Mexico,team_eliminated_r16
+edson_alvarez__mex,Edson Alvarez,MEX,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Mexico,team_eliminated_r16
+erik_lira__mex,Erik Lira,MEX,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Mexico,team_eliminated_r16
+gilberto_mora__mex,Gilberto Mora,MEX,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Mexico,team_eliminated_r16
+guillermo_martinez__mex,Guillermo Martinez,MEX,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Mexico,team_eliminated_r16
+guillermo_ochoa__mex,Guillermo Ochoa,MEX,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Mexico,team_eliminated_r16
+israel_reyes__mex,Israel Reyes,MEX,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Mexico,team_eliminated_r16
+jes_s_gallardo__mex,Jesus Gallardo,MEX,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Mexico,team_eliminated_r16
+johan_v_squez__mex,Johan Vasquez,MEX,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Mexico,team_eliminated_r16
+jorge_sanchez__mex,Jorge Sanchez,MEX,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Mexico,team_eliminated_r16
+juli_n_qui_ones__mex,Julian Quinones,MEX,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Mexico,team_eliminated_r16
+luis_chavez__mex,Luis Chavez,MEX,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Mexico,team_eliminated_r16
+luis_romo__mex,Luis Romo,MEX,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Mexico,team_eliminated_r16
+mateo_chavez__mex,Mateo Chavez,MEX,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Mexico,team_eliminated_r16
+obed_vargas__mex,Obed Vargas,MEX,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Mexico,team_eliminated_r16
+orbel_n_pineda__mex,Orbelin Pineda,MEX,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Mexico,team_eliminated_r16
+ra_l_jim_nez__mex,Raul Jimenez,MEX,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Mexico,team_eliminated_r16
+raul_rangel__mex,Raul Rangel,MEX,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Mexico,team_eliminated_r16
+roberto_alvarado__mex,Roberto Alvarado,MEX,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Mexico,team_eliminated_r16
+santiago_gimenez__mex,Santiago Gimenez,MEX,0,0,0,0,high_risk,high,,,,,,,,,Manual elimination override for current knockout round.,Mexico,team_eliminated_r16
