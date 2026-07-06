@@ -4242,7 +4242,7 @@
             <div class="right-mode-title" id="rightModeTitle">Spillerliste</div>
             <div class="right-mode-actions">
               <button id="activePositionChip" class="position-filter-chip" type="button" hidden></button>
-              <button id="showPlayerListBtn" class="right-mode-btn active" type="button">Se spillerliste</button>
+              <button id="showPlayerListBtn" class="right-mode-btn active" type="button">Se alternativer</button>
             </div>
           </div>
 
@@ -4423,47 +4423,37 @@ setTimeout(removeDataStatusBox, 250);
       suppressedTransferChangeIds: "vm2026_suppressed_transfer_change_ids_v1",
       manualRecoveryClearedSlots: "vm2026_manual_recovery_cleared_slots_v1"
     };
-    const EMERGENCY_STATE_RESET_KEY = "vm2026_emergency_state_reset_20260705_v1";
+    const LOCAL_STATE_QUARANTINE_MARKER = "vm2026_local_state_quarantine_active";
+    const LOCAL_STATE_QUARANTINE_VALUE = "20260705";
 
-    function runEmergencyAppStateResetOnce() {
+    function shouldPreserveStorageKey(key) {
+      const normalized = String(key || "").trim().toLowerCase();
+      if (!normalized) return false;
+      return normalized.startsWith("sb-") || normalized.startsWith("supabase");
+    }
+
+    function quarantineBrowserStorage(storage) {
+      if (!storage) return;
       try {
-        if (localStorage.getItem(EMERGENCY_STATE_RESET_KEY) === "done") return;
-
-        const keysToRemove = [
-          STORAGE_KEYS.squad,
-          STORAGE_KEYS.squadPurchasePrices,
-          STORAGE_KEYS.transferBaselineSquad,
-          STORAGE_KEYS.transferBaselinePurchasePrices,
-          STORAGE_KEYS.transferChanges,
-          STORAGE_KEYS.suppressedTransferChangeIds,
-          STORAGE_KEYS.manualRecoveryClearedSlots,
-          STORAGE_KEYS.filterStateVersion,
-          STORAGE_KEYS.eligibleOnly,
-          STORAGE_KEYS.manualBankMillions,
-          STORAGE_KEYS.transferWindowKey,
-          STORAGE_KEYS.captainPlayerId,
-          STORAGE_KEYS.formation,
-          "vm2026_active_slot_key",
-          "vm2026_active_slot_key_v1",
-          "vm2026_force_player_list_for_active_slot",
-          "vm2026_force_player_list_for_active_slot_v1",
-          "vm2026_trade_list_mode",
-          "vm2026_trade_list_mode_v1",
-          "vm2026_player_list_mode",
-          "vm2026_player_list_mode_v1",
-          "vm2026_alternative_mode",
-          "vm2026_alternative_mode_v1",
-          "vm2026_show_player_list_mode",
-          "vm2026_show_player_list_mode_v1"
-        ];
-
+        const keysToRemove = [];
+        for (let index = 0; index < storage.length; index += 1) {
+          const key = storage.key(index);
+          if (!key || shouldPreserveStorageKey(key)) continue;
+          keysToRemove.push(key);
+        }
         keysToRemove.forEach(key => {
           try {
-            localStorage.removeItem(key);
+            storage.removeItem(key);
           } catch (_error) {}
         });
+      } catch (_error) {}
+    }
 
-        localStorage.setItem(EMERGENCY_STATE_RESET_KEY, "done");
+    function runLocalStateQuarantine() {
+      quarantineBrowserStorage(localStorage);
+      quarantineBrowserStorage(sessionStorage);
+      try {
+        localStorage.setItem(LOCAL_STATE_QUARANTINE_MARKER, LOCAL_STATE_QUARANTINE_VALUE);
       } catch (_error) {}
     }
 
@@ -4498,7 +4488,7 @@ setTimeout(removeDataStatusBox, 250);
       }
     }
 
-    runEmergencyAppStateResetOnce();
+    runLocalStateQuarantine();
 
     function withCacheBust(url) {
       if (!PAGE_CACHE_BUST) return url;
