@@ -14,6 +14,7 @@ SCRIPTS = [
     "tools/build_clean_market_optimizer_squads.py",
     "tools/write_model_status_snapshot.py",
     "tools/audit_app_data_consistency.py",
+    "tools/sanity_check_active_json.py",
 ]
 
 

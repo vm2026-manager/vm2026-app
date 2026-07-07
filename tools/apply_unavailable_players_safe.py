@@ -10,6 +10,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+from json_file_safety import write_json_strict
 from sync_final_ev_to_player_pool import sync_final_ev_to_pool
 
 
@@ -79,7 +80,7 @@ def write_csv(path: Path, fields: list[str], rows: list[dict[str, Any]]) -> None
 
 def write_json(path: Path, value: Any) -> None:
     temp = path.with_suffix(path.suffix + ".tmp")
-    temp.write_text(json.dumps(value, ensure_ascii=False, indent=2), encoding="utf-8")
+    write_json_strict(temp, value)
     temp.replace(path)
 
 

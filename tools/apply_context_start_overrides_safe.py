@@ -17,6 +17,7 @@ from repair_ev_price_quality_consistency import (
     formula_expected,
     reserve_safe_price_quality,
 )
+from json_file_safety import write_json_strict
 from sync_final_ev_to_player_pool import sync_final_ev_to_pool
 
 
@@ -103,7 +104,7 @@ def write_csv_atomic(path: Path, fields: list[str], rows: list[dict[str, Any]]) 
 
 def write_json_atomic(path: Path, value: Any) -> None:
     temp = path.with_suffix(path.suffix + ".tmp")
-    temp.write_text(json.dumps(value, ensure_ascii=False, indent=2), encoding="utf-8")
+    write_json_strict(temp, value)
     temp.replace(path)
 
 
