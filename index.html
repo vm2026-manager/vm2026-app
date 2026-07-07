@@ -6465,6 +6465,20 @@ function saveState() {
       saveTransferWindowKeyState();
     }
 
+    function ensureTransferBaselineBeforeAutoRemoval(preSanitationSquad = squad, preSanitationPurchasePrices = squadPurchasePrices) {
+      const currentWindowKey = getCurrentTransferWindowKey();
+      if (hasTransferBaselinePlayers() && transferWindowKey === currentWindowKey) {
+        return false;
+      }
+
+      if (!hasSquadPlayers(preSanitationSquad)) {
+        return false;
+      }
+
+      setTransferWindowBaselineState(currentWindowKey, preSanitationSquad, preSanitationPurchasePrices || {});
+      return true;
+    }
+
     function applyLoadedTransferBaselineState(nextBaselineSquad, nextBaselinePurchasePrices) {
       if (hasSquadPlayers(nextBaselineSquad)) {
         setTransferBaselineState(nextBaselineSquad, nextBaselinePurchasePrices || {});
@@ -9226,8 +9240,8 @@ const playerId = String(player.player_id || player.id || "");
         }
       });
 
-      if (removedEliminatedPlayer && !hasTransferBaselinePlayers() && hasSquadPlayers(previousSquad)) {
-        setTransferBaselineState(previousSquad, previousPurchasePrices || {});
+      if (removedEliminatedPlayer) {
+        ensureTransferBaselineBeforeAutoRemoval(previousSquad, previousPurchasePrices || {});
       }
 
       squad = cleanedSquad;
@@ -10713,6 +10727,10 @@ const playerId = String(player.player_id || player.id || "");
 
         return {
           slotKey,
+          outgoingPlayerId,
+          incomingPlayerId,
+          outgoingPlayerName: outgoingPlayer?.player_name || "",
+          incomingPlayerName: incomingPlayer?.player_name || "",
           outgoingPlayer,
           incomingPlayer,
           outgoingLockedPrice,
@@ -10745,10 +10763,10 @@ const playerId = String(player.player_id || player.id || "");
           slotKey: row.slotKey,
           slotPosition: slot?.positionCode || slot?.position || "",
           slotIndex: slot ? getCurrentSlots().findIndex(item => item.key === row.slotKey) : -1,
-          outPlayerId: row.outgoingPlayer?.player_id || null,
-          outPlayerName: row.outgoingPlayer?.player_name || "",
-          inPlayerId: row.incomingPlayer?.player_id || null,
-          inPlayerName: row.incomingPlayer?.player_name || "",
+          outPlayerId: row.outgoingPlayer?.player_id || row.outgoingPlayerId || null,
+          outPlayerName: row.outgoingPlayer?.player_name || row.outgoingPlayerName || "",
+          inPlayerId: row.incomingPlayer?.player_id || row.incomingPlayerId || null,
+          inPlayerName: row.incomingPlayer?.player_name || row.incomingPlayerName || "",
           outPrice: row.outgoingLockedPrice || 0,
           inPrice: row.incomingMarketPrice || 0,
           fee: row.fee || 0,
@@ -10938,7 +10956,7 @@ const playerId = String(player.player_id || player.id || "");
                     const flagTitle = getTradeFlagTitle(row.outgoingPlayer);
                     return flagUrl ? `<img class="player-change-flag" src="${flagUrl}" alt="${escapeHtml(flagTitle)}" title="${escapeHtml(flagTitle)}">` : "";
                   })() : ""}
-                  <div class="player-change-player">${escapeHtml(row.outgoingPlayer?.player_name || "Tom plads")}</div>
+                  <div class="player-change-player">${escapeHtml(row.outgoingPlayer?.player_name || row.outPlayerName || row.outgoingPlayerName || "Tom plads")}</div>
                 </div>
                 <div class="player-change-price">${formatMoney(row.outgoingLockedPrice)}</div>
               </div>
@@ -10949,7 +10967,7 @@ const playerId = String(player.player_id || player.id || "");
                     const flagTitle = getTradeFlagTitle(row.incomingPlayer);
                     return flagUrl ? `<img class="player-change-flag" src="${flagUrl}" alt="${escapeHtml(flagTitle)}" title="${escapeHtml(flagTitle)}">` : "";
                   })() : ""}
-                  <div class="player-change-player">${escapeHtml(row.incomingPlayer?.player_name || "Tom plads")}</div>
+                  <div class="player-change-player">${escapeHtml(row.incomingPlayer?.player_name || row.inPlayerName || row.incomingPlayerName || "Tom plads")}</div>
                 </div>
                 <div class="player-change-price">${formatMoney(row.incomingMarketPrice)}</div>
               </div>
@@ -10962,8 +10980,8 @@ const playerId = String(player.player_id || player.id || "");
                     class="player-change-row-btn secondary"
                     data-action="suppress-transfer-change"
                     data-slot-key="${escapeHtml(row.slotKey)}"
-                    data-out-player-id="${escapeHtml(String(row.outgoingPlayer?.player_id || row.outPlayerId || ""))}"
-                    data-in-player-id="${escapeHtml(String(row.incomingPlayer?.player_id || row.inPlayerId || ""))}"
+                    data-out-player-id="${escapeHtml(String(row.outgoingPlayer?.player_id || row.outPlayerId || row.outgoingPlayerId || ""))}"
+                    data-in-player-id="${escapeHtml(String(row.incomingPlayer?.player_id || row.inPlayerId || row.incomingPlayerId || ""))}"
                     data-timestamp="${escapeHtml(String(row.timestamp || ""))}"
                     aria-label="Fjern kun fra listen"
                     title="Fjern kun fra listen – ændrer ikke truppen"
