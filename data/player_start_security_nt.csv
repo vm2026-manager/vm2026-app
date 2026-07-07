@@ -1,4 +1,4 @@
-﻿﻿player_id,player_name,team_id,position,start_probability_pct,start_security,start_prob,start_prob_source,start_status,minutes_def_used,starts_def_used,nineties_def_used,min_pct_def_used,starts_per_ninety_used,base_start_score,start_reliability,minute_share_pf_used,starter_proxy_pf_used,merge_key,minute_share_pf,starter_proxy_pf,conditional_start_prob,availability_prob,availability_risk,availability_status,appearance_prob
+﻿player_id,player_name,team_id,position,start_probability_pct,start_security,start_prob,start_prob_source,start_status,minutes_def_used,starts_def_used,nineties_def_used,min_pct_def_used,starts_per_ninety_used,base_start_score,start_reliability,minute_share_pf_used,starter_proxy_pf_used,merge_key,minute_share_pf,starter_proxy_pf,conditional_start_prob,availability_prob,availability_risk,availability_status,appearance_prob
 nico_elvedi__sui,Nico Elvedi,SUI,DEF,88,0.8785,0.8785,transfermarkt_availability_split_2026_06_07,sikker starter - Transfermarkt landshold,,,,,,0.6095,,,,nico elvedi||sui,,,0.912,0.8948,low_risk,low_risk,
 silvan_widmer__sui,Silvan Widmer,SUI,DEF,84.0,0.84,0.84,manual_context_override_safe,sandsynlig starter - Transfermarkt landshold,,,,,,0.632,,,,silvan widmer||sui,,,0.89,0.94,medium_risk,medium_risk,0.96
 ricardo_rodr_guez__sui,Ricardo Rodriguez,SUI,DEF,48,0.4831,0.4831,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.8884,,,,ricardo rodriguez||sui,,,0.4948,0.9321,medium_risk,medium_risk,
@@ -21,16 +21,16 @@ david_zima__cze,David Zima,CZE,DEF,12,0.1206,0.1206,transfermarkt_availability_s
 jaroslav_zeleny__cze,Jaroslav Zeleny,CZE,DEF,37,0.3657,0.3657,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.4186,0.6386,high_risk,high_risk,
 tomas_holes__cze,Tomas Holes,CZE,DEF,19,0.187,0.187,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.2006,0.8065,medium_risk,medium_risk,
 vladimir_coufal__cze,Vladimir Coufal,CZE,DEF,91,0.9096,0.9096,transfermarkt_availability_split_2026_06_07,sikker starter - Transfermarkt landshold,,,,,,,,,,,,,0.97,0.8222,medium_risk,medium_risk,
-jo_o_cancelo__por,João Cancelo,POR,DEF,65,0.6523,0.6523,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.732,,,,joao cancelo||por,,,0.6879,0.852,medium_risk,medium_risk,
-n_lson_semedo__por,Nelson Semedo,POR,DEF,52,0.5183,0.5183,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.5609,,,,nelson semedo||por,,,0.5739,0.7233,medium_risk,medium_risk,
-diogo_dalot__por,Diogo Dalot,POR,DEF,37,0.37,0.37,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.577,,,,diogo dalot||por,,,0.3845,0.8924,medium_risk,medium_risk,
-nuno_tavares__por,Nuno Tavares,POR,DEF,0,0.0,0.0,holdet_official_unmatched_default,,,,,,,,,,,,,,0.0,,out,out_of_tournament,0.0
-r_ben_dias__por,Ruben Dias,POR,DEF,95,0.9454,0.9454,transfermarkt_availability_split_2026_06_07,sikker starter - Transfermarkt landshold,,,,,,0.8077,,,,ruben dias||por,,,0.9632,0.9472,low_risk,low_risk,
-nuno_mendes__por,Nuno Mendes,POR,DEF,88,0.88,0.88,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.7657,,,,nuno mendes||por,,,0.93,0.8951,low_risk,medium_risk,
-gon_alo_in_cio__por,Goncalo Inacio,POR,DEF,36,0.3606,0.3606,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.5955,,,,goncalo inacio||por,,,0.3841,0.825,medium_risk,medium_risk,
-tom_s_ara_jo__por,Tomas Araujo,POR,DEF,30,0.2957,0.2957,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.536,,,,tomas araujo||por,,,0.3439,0.6,high_risk,high_risk,
-antonio_silva__por,Antonio Silva,POR,DEF,0,0.0,0.0,holdet_official_unmatched_default,,,,,,,,,,,,,,0.0,,out,out_of_tournament,0.0
-renato_veiga__por,Renato Veiga,POR,DEF,58,0.5821,0.5821,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.5625,,,,renato veiga||por,,,0.603,0.9008,medium_risk,medium_risk,
+jo_o_cancelo__por,João Cancelo,POR,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.732,,,,joao cancelo||por,,,0,0,medium_risk,medium_risk,0
+n_lson_semedo__por,Nelson Semedo,POR,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.5609,,,,nelson semedo||por,,,0,0,medium_risk,medium_risk,0
+diogo_dalot__por,Diogo Dalot,POR,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.577,,,,diogo dalot||por,,,0,0,medium_risk,medium_risk,0
+nuno_tavares__por,Nuno Tavares,POR,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,,,,,,,,0,0,out,out_of_tournament,0
+r_ben_dias__por,Ruben Dias,POR,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.8077,,,,ruben dias||por,,,0,0,low_risk,low_risk,0
+nuno_mendes__por,Nuno Mendes,POR,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.7657,,,,nuno mendes||por,,,0,0,low_risk,medium_risk,0
+gon_alo_in_cio__por,Goncalo Inacio,POR,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.5955,,,,goncalo inacio||por,,,0,0,medium_risk,medium_risk,0
+tom_s_ara_jo__por,Tomas Araujo,POR,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.536,,,,tomas araujo||por,,,0,0,high_risk,high_risk,0
+antonio_silva__por,Antonio Silva,POR,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,,,,,,,,0,0,out,out_of_tournament,0
+renato_veiga__por,Renato Veiga,POR,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.5625,,,,renato veiga||por,,,0,0,medium_risk,medium_risk,0
 mustafa_eskihella__tur,Mustafa Eskihellac,TUR,DEF,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.8002,,,,mustafa eskihellac||tur,,,0.0,0.393,out,out_of_tournament,0.0
 mert_m_ld_r__tur,Mert Müldür,TUR,DEF,39,0.3893,0.3893,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7084,,,,mert muldur||tur,,,0.4125,0.8391,medium_risk,medium_risk,
 ferdi_kadioglu__tur,Ferdi Kadioglu,TUR,DEF,92,0.918,0.918,transfermarkt_availability_split_2026_06_07,sikker starter - Transfermarkt landshold,,,,,,0.8985,,,,ferdi kadioglu||tur,,,0.9439,0.9214,low_risk,low_risk,
@@ -143,16 +143,16 @@ callum_elder__aus,Callum Elder,AUS,DEF,0,0.0,0.0,transfermarkt_availability_spli
 harry_souttar__aus,Harry Souttar,AUS,DEF,95,0.9494,0.9494,transfermarkt_availability_split_2026_06_07,sikker starter - Transfermarkt landshold,,,,,,,,,,,,,0.97,0.9395,low_risk,low_risk,
 aziz_behich__aus,Aziz Behich,AUS,DEF,40.0,0.4,0.4,manual_context_override_safe,rotation/usikker - Transfermarkt landshold,,,,,,0.7021,,,,aziz behich||aus,,,0.5,0.7469,medium_risk,medium_risk,
 milo_degenek__aus,Milos Degenek,AUS,DEF,14,0.1367,0.1367,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6269,,,,milos degenek||aus,,,0.1464,0.8115,medium_risk,medium_risk,
-douglas_santos__bra,Douglas Santos,BRA,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,douglas santos||bra,,,0,0,high_risk,team_eliminated,0
-marquinhos__bra,Marquinhos,BRA,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,marquinhos||bra,,,0,0,high_risk,team_eliminated,0
-alex_sandro__bra,Alex Sandro,BRA,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,alex sandro||bra,,,0,0,high_risk,team_eliminated,0
-danilo_luiz_da_silva__bra,Danilo Luiz da Silva,BRA,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,danilo luiz da silva||bra,,,0,0,high_risk,team_eliminated,0
-der_milit_o__bra,Eder Militão,BRA,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,eder militao||bra,,,0,0,high_risk,team_eliminated,0
-gabriel_magalh_es__bra,Gabriel Magalhaes,BRA,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,gabriel magalhaes||bra,,,0,0,high_risk,team_eliminated,0
-roger_ibanez__bra,Roger Ibanez,BRA,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,roger ibanez||bra,,,0,0,high_risk,team_eliminated,0
-wesley_franca__bra,Wesley Franca,BRA,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,wesley franca||bra,,,0,0,high_risk,team_eliminated,0
-bremer__bra,Bremer,BRA,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,bremer||bra,,,0,0,high_risk,team_eliminated,0
-leo_pereira__bra,Leo Pereira,BRA,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,leo pereira||bra,,,0,0,high_risk,team_eliminated,0
+douglas_santos__bra,Douglas Santos,BRA,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,douglas santos||bra,,,0,0,high_risk,team_eliminated,0
+marquinhos__bra,Marquinhos,BRA,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,marquinhos||bra,,,0,0,high_risk,team_eliminated,0
+alex_sandro__bra,Alex Sandro,BRA,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,alex sandro||bra,,,0,0,high_risk,team_eliminated,0
+danilo_luiz_da_silva__bra,Danilo Luiz da Silva,BRA,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,danilo luiz da silva||bra,,,0,0,high_risk,team_eliminated,0
+der_milit_o__bra,Eder Militão,BRA,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,eder militao||bra,,,0,0,high_risk,team_eliminated,0
+gabriel_magalh_es__bra,Gabriel Magalhaes,BRA,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,gabriel magalhaes||bra,,,0,0,high_risk,team_eliminated,0
+roger_ibanez__bra,Roger Ibanez,BRA,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,roger ibanez||bra,,,0,0,high_risk,team_eliminated,0
+wesley_franca__bra,Wesley Franca,BRA,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,wesley franca||bra,,,0,0,high_risk,team_eliminated,0
+bremer__bra,Bremer,BRA,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,bremer||bra,,,0,0,high_risk,team_eliminated,0
+leo_pereira__bra,Leo Pereira,BRA,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,leo pereira||bra,,,0,0,high_risk,team_eliminated,0
 clement_akpa__civ,Clement Akpa,CIV,DEF,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.3215,,,,clement akpa||civ,,,0.0,0.6439,out,out_of_tournament,0.0
 christopher_operi__civ,Christopher Operi,CIV,DEF,11,0.1095,0.1095,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.1159,0.8404,medium_risk,medium_risk,
 ghislain_konan__civ,Ghislain Konan,CIV,DEF,63,0.63,0.63,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.755,,,,ghislain konan||civ,,,0.695,0.7328,medium_risk,medium_risk,
@@ -209,15 +209,15 @@ ju_sung_kim__kor,Ju-sung Kim,KOR,DEF,0,0.0,0.0,holdet_official_unmatched_default
 seol_young_woo__kor,Young-woo Seol,KOR,DEF,67,0.6673,0.6673,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.8234,,,,young-woo seol||kor,,,0.6988,0.8712,medium_risk,medium_risk,
 gi_hyuk_lee__kor,Gi-hyuk Lee,KOR,DEF,59,0.5856,0.5856,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.1931,,,,gi-hyuk lee||kor,,,0.681,0.6,high_risk,high_risk,
 wi_je_cho__kor,Wi-je Cho,KOR,DEF,5,0.0465,0.0465,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.05,0.8,unknown,unknown,
-jesus_angulo__mex,Jesus Angulo,MEX,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,jesus angulo||mex,,,0,0,high_risk,team_eliminated,0
-everardo_lopez__mex,Everardo Lopez,MEX,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,everardo lopez||mex,,,0,0,high_risk,team_eliminated,0
-c_sar_montes__mex,Cesar Montes,MEX,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,cesar montes||mex,,,0,0,high_risk,team_eliminated,0
-jes_s_gallardo__mex,Jesus Gallardo,MEX,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,jesus gallardo||mex,,,0,0,high_risk,team_eliminated,0
-israel_reyes__mex,Israel Reyes,MEX,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,israel reyes||mex,,,0,0,high_risk,team_eliminated,0
-mateo_chavez__mex,Mateo Chavez,MEX,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
-richard_ledezma__mex,Richard Ledezma,MEX,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,richard ledezma||mex,,,0,0,high_risk,team_eliminated,0
-jorge_sanchez__mex,Jorge Sanchez,MEX,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,jorge sanchez||mex,,,0,0,high_risk,team_eliminated,0
-johan_v_squez__mex,Johan Vasquez,MEX,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,johan vasquez||mex,,,0,0,high_risk,team_eliminated,0
+jesus_angulo__mex,Jesus Angulo,MEX,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,jesus angulo||mex,,,0,0,high_risk,team_eliminated,0
+everardo_lopez__mex,Everardo Lopez,MEX,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,everardo lopez||mex,,,0,0,high_risk,team_eliminated,0
+c_sar_montes__mex,Cesar Montes,MEX,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,cesar montes||mex,,,0,0,high_risk,team_eliminated,0
+jes_s_gallardo__mex,Jesus Gallardo,MEX,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,jesus gallardo||mex,,,0,0,high_risk,team_eliminated,0
+israel_reyes__mex,Israel Reyes,MEX,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,israel reyes||mex,,,0,0,high_risk,team_eliminated,0
+mateo_chavez__mex,Mateo Chavez,MEX,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
+richard_ledezma__mex,Richard Ledezma,MEX,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,richard ledezma||mex,,,0,0,high_risk,team_eliminated,0
+jorge_sanchez__mex,Jorge Sanchez,MEX,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,jorge sanchez||mex,,,0,0,high_risk,team_eliminated,0
+johan_v_squez__mex,Johan Vasquez,MEX,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,johan vasquez||mex,,,0,0,high_risk,team_eliminated,0
 francis_de_vries__nzl,Francis de Vries,NZL,DEF,34,0.3411,0.3411,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6054,,,,francis de vries||nzl,,,0.3838,0.6819,medium_risk,medium_risk,
 finn_surman__nzl,Finn Surman,NZL,DEF,89,0.8854,0.8854,transfermarkt_availability_split_2026_06_07,sikker starter - Transfermarkt landshold,,,,,,0.6455,,,,finn surman||nzl,,,0.934,0.8513,low_risk,low_risk,
 michael_boxall__nzl,Michael Boxall,NZL,DEF,40,0.3955,0.3955,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6833,,,,michael boxall||nzl,,,0.4251,0.8012,medium_risk,medium_risk,
@@ -230,18 +230,18 @@ tyler_bindon__nzl,Tyler Bindon,NZL,DEF,66,0.6587,0.6587,transfermarkt_availabili
 tommy_smith__nzl,Tommy Smith,NZL,DEF,44,0.4417,0.4417,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.0438,,,,tommy smith||nzl,,,0.5,0.6667,medium_risk,medium_risk,
 nando_pijnaker__nzl,Nando Pijnaker,NZL,DEF,12,0.1154,0.1154,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6188,,,,nando pijnaker||nzl,,,0.1242,0.7976,medium_risk,medium_risk,
 bill_tuiloma__nzl,Bill Tuiloma,NZL,DEF,0,0.0,0.0,holdet_official_unmatched_default,,,,,,,,,,,,,,0.0,,out,out_of_tournament,0.0
-jose_canale__par,Jose Canale,PAR,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
-blas_riveros__par,Blas Riveros,PAR,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,blas riveros||par,,,0,0,high_risk,team_eliminated,0
-omar_alderete__par,Omar Alderete,PAR,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,omar alderete||par,,,0,0,high_risk,team_eliminated,0
-j_nior_alonso__par,Junior Alonso,PAR,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,junior alonso||par,,,0,0,high_risk,team_eliminated,0
-fabian_balbuena__par,Fabian Balbuena,PAR,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
-alexis_duarte__par,Alexis Duarte,PAR,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,alexis duarte||par,,,0,0,high_risk,team_eliminated,0
-gustavo_vel_squez__par,Gustavo Velazquez,PAR,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,gustavo velazquez||par,,,0,0,high_risk,team_eliminated,0
-gonzalo_agustin_sandez__par,Gonzalo Agustin Sandez,PAR,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,gonzalo agustin sandez||par,,,0,0,high_risk,team_eliminated,0
-juan_jose_caceres__par,Juan Jose Caceres,PAR,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,juan jose caceres||par,,,0,0,high_risk,team_eliminated,0
-alan_ben_tez__par,Alan Benitez,PAR,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,alan benitez||par,,,0,0,high_risk,team_eliminated,0
-alexandro_maidana__par,Alexandro Maidana,PAR,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
-gustavo_g_mez__par,Gustavo Gomez,PAR,DEF,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,gustavo gomez||par,,,0,0,high_risk,team_eliminated,0
+jose_canale__par,Jose Canale,PAR,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
+blas_riveros__par,Blas Riveros,PAR,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,blas riveros||par,,,0,0,high_risk,team_eliminated,0
+omar_alderete__par,Omar Alderete,PAR,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,omar alderete||par,,,0,0,high_risk,team_eliminated,0
+j_nior_alonso__par,Junior Alonso,PAR,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,junior alonso||par,,,0,0,high_risk,team_eliminated,0
+fabian_balbuena__par,Fabian Balbuena,PAR,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
+alexis_duarte__par,Alexis Duarte,PAR,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,alexis duarte||par,,,0,0,high_risk,team_eliminated,0
+gustavo_vel_squez__par,Gustavo Velazquez,PAR,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,gustavo velazquez||par,,,0,0,high_risk,team_eliminated,0
+gonzalo_agustin_sandez__par,Gonzalo Agustin Sandez,PAR,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,gonzalo agustin sandez||par,,,0,0,high_risk,team_eliminated,0
+juan_jose_caceres__par,Juan Jose Caceres,PAR,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,juan jose caceres||par,,,0,0,high_risk,team_eliminated,0
+alan_ben_tez__par,Alan Benitez,PAR,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,alan benitez||par,,,0,0,high_risk,team_eliminated,0
+alexandro_maidana__par,Alexandro Maidana,PAR,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
+gustavo_g_mez__par,Gustavo Gomez,PAR,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,gustavo gomez||par,,,0,0,high_risk,team_eliminated,0
 khuliso_mudau__rsa,Khuliso Mudau,RSA,DEF,65,0.652,0.652,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.8279,,,,khuliso mudau||rsa,,,0.7365,0.6723,medium_risk,medium_risk,
 samukele_kabini__rsa,Samukele Kabini,RSA,DEF,31,0.313,0.313,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.3475,,,,samukele kabini||rsa,,,0.3394,0.7775,medium_risk,medium_risk,
 mbekezeli_mbokazi__rsa,Mbekezeli Mbokazi,RSA,DEF,42,0.4156,0.4156,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6885,,,,mbekezeli mbokazi||rsa,,,0.4578,0.7368,medium_risk,medium_risk,
@@ -262,16 +262,16 @@ sebastian_caceres__uru,Sebastian Caceres,URU,DEF,35,0.346,0.346,transfermarkt_av
 jos_luis_rodr_guez_bebanz__uru,Jose Luis Rodriguez Bebanz,URU,DEF,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.1955,,,,jose luis rodriguez bebanz||uru,,,0.0,0.6,out,out_of_tournament,0.0
 santiago_bueno__uru,Santiago Bueno,URU,DEF,27,0.2687,0.2687,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.3621,,,,santiago bueno||uru,,,0.3124,0.6,high_risk,high_risk,
 mat_as_vi_a__uru,Matias Viña,URU,DEF,37,0.3723,0.3723,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7228,,,,matias vina||uru,,,0.4032,0.7809,medium_risk,medium_risk,
-auston_trusty__usa,Auston Trusty,USA,DEF,25,0.2494,0.2494,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.2901,0.6,high_risk,high_risk,
-mark_mckenzie__usa,Mark McKenzie,USA,DEF,29,0.2945,0.2945,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.3942,,,,mark mckenzie||usa,,,0.3315,0.6819,medium_risk,medium_risk,
-miles_robinson__usa,Miles Robinson,USA,DEF,35,0.3543,0.3543,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.5132,,,,miles robinson||usa,,,0.3706,0.8748,medium_risk,medium_risk,
-sergino_dest__usa,Sergino Dest,USA,DEF,83,0.8263,0.8263,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,,,,,,,,0.9608,0.6,high_risk,high_risk,
-joe_scally__usa,Joe Scally,USA,DEF,12,0.1189,0.1189,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.1383,0.6,high_risk,high_risk,
-antonee_robinson__usa,Antonee Robinson,USA,DEF,83,0.8297,0.8297,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.7562,,,,antonee robinson||usa,,,0.9648,0.6,high_risk,high_risk,
-chris_richards__usa,Chris Richards,USA,DEF,82,0.8175,0.8175,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.6712,,,,chris richards||usa,,,0.9312,0.6512,high_risk,high_risk,
-tim_ream__usa,Tim Ream,USA,DEF,59,0.5896,0.5896,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.5761,,,,tim ream||usa,,,0.6745,0.6401,high_risk,high_risk,
-max_arfsten__usa,Max Arfsten,USA,DEF,16,0.1625,0.1625,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.8217,,,,max arfsten||usa,,,0.1657,0.9453,medium_risk,medium_risk,
-alex_freeman__usa,Alex Freeman,USA,DEF,90,0.8986,0.8986,transfermarkt_availability_split_2026_06_07,sikker starter - Transfermarkt landshold,,,,,,0.8632,,,,alex freeman||usa,,,0.9183,0.9389,low_risk,low_risk,
+auston_trusty__usa,Auston Trusty,USA,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,,,,,,,,0,0,high_risk,high_risk,0
+mark_mckenzie__usa,Mark McKenzie,USA,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.3942,,,,mark mckenzie||usa,,,0,0,medium_risk,medium_risk,0
+miles_robinson__usa,Miles Robinson,USA,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.5132,,,,miles robinson||usa,,,0,0,medium_risk,medium_risk,0
+sergino_dest__usa,Sergino Dest,USA,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,,,,,,,,0,0,high_risk,high_risk,0
+joe_scally__usa,Joe Scally,USA,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,,,,,,,,0,0,high_risk,high_risk,0
+antonee_robinson__usa,Antonee Robinson,USA,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.7562,,,,antonee robinson||usa,,,0,0,high_risk,high_risk,0
+chris_richards__usa,Chris Richards,USA,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.6712,,,,chris richards||usa,,,0,0,high_risk,high_risk,0
+tim_ream__usa,Tim Ream,USA,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.5761,,,,tim ream||usa,,,0,0,high_risk,high_risk,0
+max_arfsten__usa,Max Arfsten,USA,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.8217,,,,max arfsten||usa,,,0,0,medium_risk,medium_risk,0
+alex_freeman__usa,Alex Freeman,USA,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.8632,,,,alex freeman||usa,,,0,0,low_risk,low_risk,0
 willer_ditta__col,Willer Ditta,COL,DEF,53,0.5257,0.5257,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.3311,,,,willer ditta||col,,,0.6113,0.6,high_risk,high_risk,
 deiver_machado__col,Deiver Machado,COL,DEF,9,0.0855,0.0855,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.5106,,,,deiver machado||col,,,0.0995,0.6,high_risk,high_risk,
 yerry_mina__col,Yerry Mina,COL,DEF,34,0.3375,0.3375,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6156,,,,yerry mina||col,,,0.3705,0.7459,medium_risk,medium_risk,
@@ -585,10 +585,10 @@ moises_ramirez__ecu,Moises Ramirez,ECU,GK,9,0.0928,0.0928,transfermarkt_availabi
 camilo_vargas__col,Camilo Vargas,COL,GK,79,0.7899,0.7899,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,sandsynlig starter - GK hierarchy,,,,,,0.2844,,,,camilo vargas||col,,,0.7899,0.8267,medium_risk,medium_risk,
 alvaro_montero__col,Alvaro Montero,COL,GK,9,0.089,0.089,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.2008,,,,alvaro montero||col,,,0.089,0.7436,medium_risk,medium_risk,
 david_ospina__col,David Ospina,COL,GK,12,0.1212,0.1212,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.7171,,,,david ospina||col,,,0.1212,0.8866,medium_risk,medium_risk,
-chris_brady__usa,Chris Brady,USA,GK,3,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.0425,,,,chris brady||usa,,,0.0251,0.6613,medium_risk,medium_risk,
-patrick_schulte__usa,Patrick Schulte,USA,GK,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,ude - GK hierarchy,,,,,,0.2263,,,,patrick schulte||usa,,,0.0,0.6838,out,out_of_tournament,0.0
-matt_freese__usa,Matt Freese,USA,GK,76,0.7629,0.7629,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,sandsynlig starter - GK hierarchy,,,,,,0.6552,,,,matt freese||usa,,,0.7629,0.8934,medium_risk,medium_risk,
-matt_turner__usa,Matt Turner,USA,GK,21,0.212,0.212,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.6763,,,,matt turner||usa,,,0.212,0.8098,medium_risk,medium_risk,
+chris_brady__usa,Chris Brady,USA,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.0425,,,,chris brady||usa,,,0,0,medium_risk,medium_risk,0
+patrick_schulte__usa,Patrick Schulte,USA,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.2263,,,,patrick schulte||usa,,,0,0,out,out_of_tournament,0
+matt_freese__usa,Matt Freese,USA,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.6552,,,,matt freese||usa,,,0,0,medium_risk,medium_risk,0
+matt_turner__usa,Matt Turner,USA,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.6763,,,,matt turner||usa,,,0,0,medium_risk,medium_risk,0
 sergio_rochet__uru,Sergio Rochet,URU,GK,60,0.5955,0.5955,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,rotation/usikker - GK hierarchy,,,,,,0.6299,,,,sergio rochet||uru,,,0.5955,0.891,medium_risk,medium_risk,
 fernando_muslera__uru,Fernando Muslera,URU,GK,37,0.3731,0.3731,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,rotation/usikker - GK hierarchy,,,,,,0.8133,,,,fernando muslera||uru,,,0.3731,0.6,high_risk,high_risk,
 michael_woud__nzl,Michael Woud,NZL,GK,3,0.0255,0.0255,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.2867,,,,michael woud||nzl,,,0.0255,0.6,high_risk,high_risk,
@@ -596,18 +596,18 @@ santiago_mele__uru,Santiago Mele,URU,GK,3,0.0314,0.0314,transfermarkt_availabili
 ricardo_goss__rsa,Ricardo Goss,RSA,GK,5,0.0547,0.0547,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.086,,,,ricardo goss||rsa,,,0.0547,0.7059,medium_risk,medium_risk,
 ronwen_williams__rsa,Ronwen Williams,RSA,GK,92,0.92,0.92,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,sikker starter - GK hierarchy,,,,,,0.6946,,,,ronwen williams||rsa,,,0.92,0.6857,medium_risk,medium_risk,
 sipho_chaine__rsa,Sipho Chaine,RSA,GK,3,0.0252,0.0252,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.1051,,,,sipho chaine||rsa,,,0.0252,0.7062,medium_risk,medium_risk,
-orlando_gill__par,Orlando Gill,PAR,GK,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,orlando gill||par,,,0,0,high_risk,team_eliminated,0
-juan_espinola__par,Juan Espinola,PAR,GK,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,juan espinola||par,,,0,0,high_risk,team_eliminated,0
-roberto_gatito_fernandez__par,Roberto 'Gatito' Fernandez,PAR,GK,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,roberto 'gatito' fernandez||par,,,0,0,high_risk,team_eliminated,0
-carlos_miguel_coronel__par,Carlos Miguel Coronel,PAR,GK,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,carlos miguel coronel||par,,,0,0,high_risk,team_eliminated,0
-gaston_olveira__par,Gaston Olveira,PAR,GK,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,gaston olveira||par,,,0,0,high_risk,team_eliminated,0
+orlando_gill__par,Orlando Gill,PAR,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,orlando gill||par,,,0,0,high_risk,team_eliminated,0
+juan_espinola__par,Juan Espinola,PAR,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,juan espinola||par,,,0,0,high_risk,team_eliminated,0
+roberto_gatito_fernandez__par,Roberto 'Gatito' Fernandez,PAR,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,roberto 'gatito' fernandez||par,,,0,0,high_risk,team_eliminated,0
+carlos_miguel_coronel__par,Carlos Miguel Coronel,PAR,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,carlos miguel coronel||par,,,0,0,high_risk,team_eliminated,0
+gaston_olveira__par,Gaston Olveira,PAR,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,gaston olveira||par,,,0,0,high_risk,team_eliminated,0
 max_crocombe__nzl,Max Crocombe,NZL,GK,38,0.3832,0.3832,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,rotation/usikker - GK hierarchy,,,,,,0.44,,,,max crocombe||nzl,,,0.3832,0.8142,medium_risk,medium_risk,
 bum_keun_song__kor,Bum-Keun Song,KOR,GK,3,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.1593,,,,bum-keun song||kor,,,0.0251,0.703,medium_risk,medium_risk,
 alex_paulsen__nzl,Alex Paulsen,NZL,GK,59,0.5912,0.5912,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,rotation/usikker - GK hierarchy,,,,,,0.2446,,,,alex paulsen||nzl,,,0.5912,0.8052,medium_risk,medium_risk,
-raul_rangel__mex,Raul Rangel,MEX,GK,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,raul rangel||mex,,,0,0,high_risk,team_eliminated,0
-guillermo_ochoa__mex,Guillermo Ochoa,MEX,GK,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,guillermo ochoa||mex,,,0,0,high_risk,team_eliminated,0
+raul_rangel__mex,Raul Rangel,MEX,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,raul rangel||mex,,,0,0,high_risk,team_eliminated,0
+guillermo_ochoa__mex,Guillermo Ochoa,MEX,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,guillermo ochoa||mex,,,0,0,high_risk,team_eliminated,0
 kim_seung_gyu__kor,Seung-Gyu Kim,KOR,GK,70,0.7029,0.7029,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,sandsynlig starter - GK hierarchy,,,,,,0.5903,,,,seung-gyu kim||kor,,,0.7029,0.8226,medium_risk,medium_risk,
-carlos_acevedo__mex,Carlos Acevedo,MEX,GK,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,carlos acevedo||mex,,,0,0,high_risk,team_eliminated,0
+carlos_acevedo__mex,Carlos Acevedo,MEX,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,carlos acevedo||mex,,,0,0,high_risk,team_eliminated,0
 jo_hyeon_woo__kor,Hyeon-Woo Jo,KOR,GK,27,0.272,0.272,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,rotation/usikker - GK hierarchy,,,,,,0.4144,,,,hyeon-woo jo||kor,,,0.272,0.9458,medium_risk,medium_risk,
 zion_suzuki__jpn,Zion Suzuki,JPN,GK,94,0.9433,0.9433,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,sikker starter - GK hierarchy,,,,,,0.7731,,,,zion suzuki||jpn,,,0.9433,0.6927,medium_risk,medium_risk,
 keisuke_sako__jpn,Keisuke Osako,JPN,GK,3,0.0263,0.0263,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.3581,,,,keisuke osako||jpn,,,0.0263,0.7043,medium_risk,medium_risk,
@@ -623,11 +623,11 @@ jordan_pickford__eng,Jordan Pickford,ENG,GK,93,0.9287,0.9287,transfermarkt_avail
 yahia_fofana__civ,Yahia Fofana,CIV,GK,89,0.892,0.892,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,sikker starter - GK hierarchy,,,,,,0.8229,,,,yahia fofana||civ,,,0.892,0.9597,low_risk,low_risk,
 mohamed_kone__civ,Mohamed Kone,CIV,GK,3,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.1441,,,,mohamed kone||civ,,,0.0251,0.9529,medium_risk,medium_risk,
 alban_lafont__civ,Alban Lafont,CIV,GK,8,0.0829,0.0829,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.2905,,,,alban lafont||civ,,,0.0829,0.9294,medium_risk,medium_risk,
-bento_krepski__bra,Bento Krepski,BRA,GK,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
+bento_krepski__bra,Bento Krepski,BRA,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
 mathew_ryan__aus,Mathew Ryan,AUS,GK,89,0.8931,0.8931,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,sikker starter - GK hierarchy,,,,,,0.763,,,,mathew ryan||aus,,,0.8931,0.8325,medium_risk,medium_risk,
-alisson_becker__bra,Alisson Becker,BRA,GK,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,alisson becker||bra,,,0,0,high_risk,team_eliminated,0
-ederson_moraes__bra,Ederson Moraes,BRA,GK,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,ederson moraes||bra,,,0,0,high_risk,team_eliminated,0
-weverton__bra,Weverton,BRA,GK,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,weverton||bra,,,0,0,high_risk,team_eliminated,0
+alisson_becker__bra,Alisson Becker,BRA,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,alisson becker||bra,,,0,0,high_risk,team_eliminated,0
+ederson_moraes__bra,Ederson Moraes,BRA,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,ederson moraes||bra,,,0,0,high_risk,team_eliminated,0
+weverton__bra,Weverton,BRA,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,weverton||bra,,,0,0,high_risk,team_eliminated,0
 paul_izzo__aus,Paul Izzo,AUS,GK,3,0.0268,0.0268,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.199,,,,paul izzo||aus,,,0.0268,0.9408,medium_risk,medium_risk,
 juan_musso__arg,Juan Musso,ARG,GK,4,0.0368,0.0368,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,,,,,,,,0.0368,0.6,high_risk,high_risk,
 patrick_beach__aus,Patrick Beach,AUS,GK,8,0.0801,0.0801,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.2281,,,,patrick beach||aus,,,0.0801,0.878,medium_risk,medium_risk,
@@ -673,11 +673,11 @@ mert_gunok__tur,Mert Günok,TUR,GK,3,0.0293,0.0293,transfermarkt_availability_sp
 muhammed_sengezer__tur,Muhammed Sengezer,TUR,GK,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,ude - GK hierarchy,,,,,,0.344,,,,muhammed sengezer||tur,,,0.0,0.787,out,out_of_tournament,0.0
 ugurcan_cakir__tur,Ugurcan Cakir,TUR,GK,91,0.9123,0.9123,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,sikker starter - GK hierarchy,,,,,,0.4753,,,,ugurcan cakir||tur,,,0.9123,0.9001,low_risk,low_risk,
 altay_bayindir__tur,Altay Bayindir,TUR,GK,6,0.0584,0.0584,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.2022,,,,altay bayindir||tur,,,0.0584,0.9565,medium_risk,medium_risk,
-joao_carvalho__por,Joao Carvalho,POR,GK,0,0.0,0.0,holdet_official_unmatched_default,ude - GK hierarchy,,,,,,,,,,,,,0.0,,out,out_of_tournament,0.0
-ricardo_velho__por,Ricardo Velho,POR,GK,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,ude - GK hierarchy,,,,,,0.2,,,,ricardo velho||por,,,0.0,0.8529,out,out_of_tournament,0.0
-rui_silva__por,Rui Silva,POR,GK,3,0.0342,0.0342,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.0441,,,,rui silva||por,,,0.0342,0.6,high_risk,high_risk,
-jos_s__por,Jose Sa,POR,GK,34,0.3446,0.3446,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,rotation/usikker - GK hierarchy,,,,,,0.66,,,,jose sa||por,,,0.3446,0.6607,medium_risk,medium_risk,
-diogo_costa__por,Diogo Costa,POR,GK,62,0.6212,0.6212,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,rotation/usikker - GK hierarchy,,,,,,0.7534,,,,diogo costa||por,,,0.6212,0.9031,low_risk,low_risk,
+joao_carvalho__por,Joao Carvalho,POR,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,,,,,,,,0,0,out,out_of_tournament,0
+ricardo_velho__por,Ricardo Velho,POR,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.2,,,,ricardo velho||por,,,0,0,out,out_of_tournament,0
+rui_silva__por,Rui Silva,POR,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.0441,,,,rui silva||por,,,0,0,high_risk,high_risk,0
+jos_s__por,Jose Sa,POR,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.66,,,,jose sa||por,,,0,0,medium_risk,medium_risk,0
+diogo_costa__por,Diogo Costa,POR,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.7534,,,,diogo costa||por,,,0,0,low_risk,low_risk,0
 jindrich_stanek__cze,Jindrich Stanek,CZE,GK,3,0.0338,0.0338,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,,,,,,,,0.0338,0.7979,medium_risk,medium_risk,
 matej_kovar__cze,Matej Kovar,CZE,GK,90,0.9039,0.9039,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,sikker starter - GK hierarchy,,,,,,,,,,,,,0.9039,0.9516,medium_risk,medium_risk,
 martin_jedlicka__cze,Martin Jedlicka,CZE,GK,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,ude - GK hierarchy,,,,,,,,,,,,,0.0,0.8207,out,out_of_tournament,0.0
@@ -711,15 +711,15 @@ tomas_soucek__cze,Tomas Soucek,CZE,MID,94,0.9394,0.9394,transfermarkt_availabili
 lukas_provod__cze,Lukas Provod,CZE,MID,86,0.8588,0.8588,transfermarkt_availability_split_2026_06_07,sikker starter - Transfermarkt landshold,,,,,,,,,,,,,0.9047,0.8551,low_risk,low_risk,
 michal_sadilek__cze,Michal Sadilek,CZE,MID,35,0.3527,0.3527,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.3701,0.8653,medium_risk,medium_risk,
 vladimir_darida__cze,Vladimir Darida,CZE,MID,59,0.5939,0.5939,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,,,,,,,,0.6906,0.6,high_risk,high_risk,
-bruno_fernandes__por,Bruno Fernandes,POR,MID,93.0,0.93,0.93,manual_context_override_safe,sikker starter - Transfermarkt landshold,,,,,,0.8419,,,,bruno fernandes||por,,,0.97,0.98,low_risk,low_risk,0.98
-bernardo_silva__por,Bernardo Silva,POR,MID,89,0.8941,0.8941,transfermarkt_availability_split_2026_06_07,sikker starter - Transfermarkt landshold,,,,,,0.8322,,,,bernardo silva||por,,,0.9339,0.8782,low_risk,low_risk,
-r_ben_neves__por,Ruben Neves,POR,MID,33,0.3275,0.3275,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7206,,,,ruben neves||por,,,0.3498,0.8171,medium_risk,medium_risk,
-vitinha__por,Vitinha,POR,MID,62,0.6243,0.6243,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.7497,,,,vitinha||por,,,0.6461,0.9038,medium_risk,medium_risk,
-samu_costa__por,Samu Costa,POR,MID,77,0.7732,0.7732,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.65,,,,samu costa||por,,,0.8991,0.6,high_risk,high_risk,
-matheus_nunes__por,Matheus Nunes,POR,MID,24,0.2404,0.2404,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.5106,,,,matheus nunes||por,,,0.2795,0.6,high_risk,high_risk,
-pedro_pote_goncalves__por,Pedro 'Pote' Goncalves,POR,MID,0,0.0,0.0,holdet_new_player_import_default,ukendt / kræver review,,,,,,,,,,,,,0.0,1.0,out,out_of_tournament,0.0
-joao_palhinha__por,João Palhinha,POR,MID,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.0,0.8867,out,out_of_tournament,0.0
-jo_o_neves__por,João Neves,POR,MID,35,0.3506,0.3506,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6325,,,,joao neves||por,,,0.3639,0.8956,medium_risk,medium_risk,
+bruno_fernandes__por,Bruno Fernandes,POR,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.8419,,,,bruno fernandes||por,,,0,0,low_risk,low_risk,0
+bernardo_silva__por,Bernardo Silva,POR,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.8322,,,,bernardo silva||por,,,0,0,low_risk,low_risk,0
+r_ben_neves__por,Ruben Neves,POR,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.7206,,,,ruben neves||por,,,0,0,medium_risk,medium_risk,0
+vitinha__por,Vitinha,POR,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.7497,,,,vitinha||por,,,0,0,medium_risk,medium_risk,0
+samu_costa__por,Samu Costa,POR,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.65,,,,samu costa||por,,,0,0,high_risk,high_risk,0
+matheus_nunes__por,Matheus Nunes,POR,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.5106,,,,matheus nunes||por,,,0,0,high_risk,high_risk,0
+pedro_pote_goncalves__por,Pedro 'Pote' Goncalves,POR,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,,,,,,,,0,0,out,out_of_tournament,0
+joao_palhinha__por,João Palhinha,POR,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,,,,,,,,0,0,out,out_of_tournament,0
+jo_o_neves__por,João Neves,POR,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.6325,,,,joao neves||por,,,0,0,medium_risk,medium_risk,0
 kenan_yildiz__tur,Kenan Yildiz,TUR,MID,90,0.8953,0.8953,transfermarkt_availability_split_2026_06_04,sikker starter - Transfermarkt landshold,,,,,,0.8953,,,,kenan yildiz||tur,,,0.9333,0.8837,low_risk,low_risk,
 arda_g_ler__tur,Arda Güler,TUR,MID,95,0.95,0.95,manual_context_override_safe,sikker starter - Transfermarkt landshold,,,,,,0.8467,,,,arda guler||tur,,,0.95,0.9159,low_risk,medium_risk,
 kerem_akt_rko_lu__tur,Kerem Akturkoglu,TUR,MID,67,0.6674,0.6674,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.8753,,,,kerem akturkoglu||tur,,,0.6806,0.9445,medium_risk,medium_risk,
@@ -841,17 +841,17 @@ riley_mcgree__aus,Riley McGree,AUS,MID,0,0.0,0.0,transfermarkt_availability_spli
 patrick_yazbek__aus,Patrick Yazbek,AUS,MID,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.3071,,,,patrick yazbek||aus,,,0.0,0.6261,out,out_of_tournament,0.0
 ajdin_hrustic__aus,Ajdin Hrustic,AUS,MID,30,0.3022,0.3022,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.645,,,,ajdin hrustic||aus,,,0.3514,0.6,high_risk,high_risk,
 alexander_alex_robertson__aus,Alexander 'Alex' Robertson,AUS,MID,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.0,0.35,out,out_of_tournament,0.0
-casemiro__bra,Casemiro,BRA,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,casemiro||bra,,,0,0,high_risk,team_eliminated,0
-fabinho__bra,Fabinho,BRA,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
+casemiro__bra,Casemiro,BRA,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,casemiro||bra,,,0,0,high_risk,team_eliminated,0
+fabinho__bra,Fabinho,BRA,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
 jackson_irvine__aus,Jackson Irvine,AUS,MID,45.0,0.45,0.45,manual_context_override_safe,rotation/usikker - Transfermarkt landshold,,,,,,,,,,,,,0.55,0.8305,medium_risk,medium_risk,
 aiden_o_neill__aus,Aiden O'Neill,AUS,MID,88,0.8832,0.8832,transfermarkt_availability_split_2026_06_07,sikker starter - Transfermarkt landshold,,,,,,0.8854,,,,aiden o'neill||aus,,,0.9065,0.9266,low_risk,low_risk,
 mathew_leckie__aus,Mathew Leckie,AUS,MID,59,0.5896,0.5896,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,,,,,,,,0.6856,0.6,high_risk,high_risk,
-gabriel_sara__bra,Gabriel Sara,BRA,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
-lucas_paqueta__bra,Lucas Paqueta,BRA,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,lucas paqueta||bra,,,0,0,high_risk,team_eliminated,0
-bruno_guimaraes__bra,Bruno Guimaraes,BRA,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,bruno guimaraes||bra,,,0,0,high_risk,team_eliminated,0
-danilo_dos_santos__bra,Danilo dos Santos,BRA,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,danilo dos santos||bra,,,0,0,high_risk,team_eliminated,0
-andrey_santos__bra,Andrey Santos,BRA,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
-vitinho__bra,Vitinho,BRA,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
+gabriel_sara__bra,Gabriel Sara,BRA,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
+lucas_paqueta__bra,Lucas Paqueta,BRA,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,lucas paqueta||bra,,,0,0,high_risk,team_eliminated,0
+bruno_guimaraes__bra,Bruno Guimaraes,BRA,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,bruno guimaraes||bra,,,0,0,high_risk,team_eliminated,0
+danilo_dos_santos__bra,Danilo dos Santos,BRA,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,danilo dos santos||bra,,,0,0,high_risk,team_eliminated,0
+andrey_santos__bra,Andrey Santos,BRA,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
+vitinho__bra,Vitinho,BRA,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
 ibrahim_sangare__civ,Ibrahim Sangare,CIV,MID,17,0.1728,0.1728,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7036,,,,ibrahim sangare||civ,,,0.1923,0.7103,medium_risk,medium_risk,
 christ_inao_oulai__civ,Christ Inao Oulaï,CIV,MID,37,0.369,0.369,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.8296,,,,christ inao oulai||civ,,,0.3807,0.9127,medium_risk,medium_risk,
 parfait_guiagon__civ,Parfait Guiagon,CIV,MID,29,0.2891,0.2891,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.423,,,,parfait guiagon||civ,,,0.3322,0.6295,high_risk,high_risk,
@@ -898,24 +898,24 @@ jun_ho_bae__kor,Jun-ho Bae,KOR,MID,51,0.5051,0.5051,transfermarkt_availability_s
 jin_gyu_kim__kor,Jin-gyu Kim,KOR,MID,54,0.5377,0.5377,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.7167,,,,jin-gyu kim||kor,,,0.6252,0.6,high_risk,high_risk,
 jin_seob_park__kor,Jin-seob Park,KOR,MID,7,0.0687,0.0687,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.2925,,,,jin-seob park||kor,,,0.0746,0.7747,medium_risk,medium_risk,
 in_beom_hwang__kor,In-beom Hwang,KOR,MID,69,0.6856,0.6856,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.897,,,,in-beom hwang||kor,,,0.7355,0.8064,medium_risk,medium_risk,
-brian_gutierrez__mex,Brian Gutierrez,MEX,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,brian gutierrez||mex,,,0,0,high_risk,team_eliminated,0
-denzell_garcia__mex,Denzell Garcia,MEX,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,denzell garcia||mex,,,0,0,high_risk,team_eliminated,0
-alvaro_fidalgo__mex,Alvaro Fidalgo,MEX,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,alvaro fidalgo||mex,,,0,0,high_risk,team_eliminated,0
-obed_vargas__mex,Obed Vargas,MEX,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,obed vargas||mex,,,0,0,high_risk,team_eliminated,0
+brian_gutierrez__mex,Brian Gutierrez,MEX,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,brian gutierrez||mex,,,0,0,high_risk,team_eliminated,0
+denzell_garcia__mex,Denzell Garcia,MEX,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,denzell garcia||mex,,,0,0,high_risk,team_eliminated,0
+alvaro_fidalgo__mex,Alvaro Fidalgo,MEX,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,alvaro fidalgo||mex,,,0,0,high_risk,team_eliminated,0
+obed_vargas__mex,Obed Vargas,MEX,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,obed vargas||mex,,,0,0,high_risk,team_eliminated,0
 hwang_hee_chan__kor,Hee-Chan Hwang,KOR,MID,38,0.3786,0.3786,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7563,,,,hee-chan hwang||kor,,,0.4096,0.7833,medium_risk,medium_risk,
 dong_gyeong_lee__kor,Dong-gyeong Lee,KOR,MID,72,0.7208,0.7208,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.4607,,,,dong-gyeong lee||kor,,,0.8381,0.6,high_risk,high_risk,
-edson_alvarez__mex,Edson Alvarez,MEX,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
+edson_alvarez__mex,Edson Alvarez,MEX,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
 joe_bell__nzl,Joe Bell,NZL,MID,62,0.6207,0.6207,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.8244,,,,joe bell||nzl,,,0.6986,0.6817,medium_risk,medium_risk,
 elijah_just__nzl,Elijah Just,NZL,MID,89,0.8876,0.8876,transfermarkt_availability_split_2026_06_07,sikker starter - Transfermarkt landshold,,,,,,0.8857,,,,elijah just||nzl,,,0.9248,0.885,low_risk,low_risk,
-orbel_n_pineda__mex,Orbelin Pineda,MEX,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,orbelin pineda||mex,,,0,0,high_risk,team_eliminated,0
-erik_lira__mex,Erik Lira,MEX,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,erik lira||mex,,,0,0,high_risk,team_eliminated,0
-gilberto_mora__mex,Gilberto Mora,MEX,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
-cesar_huerta__mex,Cesar Huerta,MEX,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
-erick_sanchez__mex,Erick Sanchez,MEX,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,erick sanchez||mex,,,0,0,high_risk,team_eliminated,0
-luis_chavez__mex,Luis Chavez,MEX,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
-luis_romo__mex,Luis Romo,MEX,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
-roberto_alvarado__mex,Roberto Alvarado,MEX,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,roberto alvarado||mex,,,0,0,high_risk,team_eliminated,0
-carlos_rodriguez__mex,Carlos Rodriguez,MEX,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
+orbel_n_pineda__mex,Orbelin Pineda,MEX,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,orbelin pineda||mex,,,0,0,high_risk,team_eliminated,0
+erik_lira__mex,Erik Lira,MEX,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,erik lira||mex,,,0,0,high_risk,team_eliminated,0
+gilberto_mora__mex,Gilberto Mora,MEX,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
+cesar_huerta__mex,Cesar Huerta,MEX,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
+erick_sanchez__mex,Erick Sanchez,MEX,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,erick sanchez||mex,,,0,0,high_risk,team_eliminated,0
+luis_chavez__mex,Luis Chavez,MEX,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
+luis_romo__mex,Luis Romo,MEX,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
+roberto_alvarado__mex,Roberto Alvarado,MEX,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,roberto alvarado||mex,,,0,0,high_risk,team_eliminated,0
+carlos_rodriguez__mex,Carlos Rodriguez,MEX,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
 callum_mccowatt__nzl,Callum McCowatt,NZL,MID,38,0.3819,0.3819,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7572,,,,callum mccowatt||nzl,,,0.4204,0.7385,medium_risk,medium_risk,
 ryan_thomas__nzl,Ryan Thomas,NZL,MID,62,0.6186,0.6186,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.8342,,,,ryan thomas||nzl,,,0.7193,0.6,high_risk,high_risk,
 marko_stamenic__nzl,Marko Stamenic,NZL,MID,90,0.9032,0.9032,transfermarkt_availability_split_2026_06_07,sikker starter - Transfermarkt landshold,,,,,,0.8985,,,,marko stamenic||nzl,,,0.97,0.8034,medium_risk,medium_risk,
@@ -924,20 +924,20 @@ matthew_garbett__nzl,Matthew Garbett,NZL,MID,43,0.4267,0.4267,transfermarkt_avai
 alex_rufer__nzl,Alex Rufer,NZL,MID,32,0.3156,0.3156,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.5288,,,,alex rufer||nzl,,,0.3431,0.7717,medium_risk,medium_risk,
 ben_old__nzl,Ben Old,NZL,MID,37,0.3709,0.3709,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.8147,,,,ben old||nzl,,,0.3988,0.8004,medium_risk,medium_risk,
 lachlan_bayliss__nzl,Lachlan Bayliss,NZL,MID,5,0.0474,0.0474,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.8655,,,,lachlan bayliss||nzl,,,0.05,0.8538,medium_risk,medium_risk,
-miguel_almir_n__par,Miguel Almiron,PAR,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,miguel almiron||par,,,0,0,high_risk,team_eliminated,0
-alejandro_romero_gamarra__par,Alejandro Romero Gamarra,PAR,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
-mauricio_magalhaes_prado__par,Mauricio Magalhaes Prado,PAR,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
-gustavo_caballero__par,Gustavo Caballero,PAR,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
+miguel_almir_n__par,Miguel Almiron,PAR,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,miguel almiron||par,,,0,0,high_risk,team_eliminated,0
+alejandro_romero_gamarra__par,Alejandro Romero Gamarra,PAR,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
+mauricio_magalhaes_prado__par,Mauricio Magalhaes Prado,PAR,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
+gustavo_caballero__par,Gustavo Caballero,PAR,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
 sphephelo_yaya_sithole__rsa,Sphephelo Yaya Sithole,RSA,MID,80,0.8032,0.8032,transfermarkt_availability_split_2026_06_04,sandsynlig starter - Transfermarkt landshold,,,,,,0.8032,,,,sphephelo yaya sithole||rsa,,,0.8636,0.8,medium_risk,medium_risk,
 teboho_mokoena__rsa,Teboho Mokoena,RSA,MID,67,0.6667,0.6667,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.7948,,,,teboho mokoena||rsa,,,0.7321,0.7447,medium_risk,medium_risk,
-andr_s_cubas__par,Andres Cubas,PAR,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,andres cubas||par,,,0,0,high_risk,team_eliminated,0
-lucas_ramon_romero__par,Lucas Ramon Romero,PAR,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,lucas ramon romero||par,,,0,0,high_risk,team_eliminated,0
-dami_n_bobadilla__par,Damian Bobadilla,PAR,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,damian bobadilla||par,,,0,0,high_risk,team_eliminated,0
-matias_galarza_fonda__par,Matias Galarza Fonda,PAR,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,matias galarza fonda||par,,,0,0,high_risk,team_eliminated,0
-ram_n_sosa__par,Ramon Sosa,PAR,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,ramon sosa||par,,,0,0,high_risk,team_eliminated,0
-diego_g_mez__par,Diego Gomez,PAR,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,diego gomez||par,,,0,0,high_risk,team_eliminated,0
-hugo_cuenca__par,Hugo Cuenca,PAR,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,hugo cuenca||par,,,0,0,high_risk,team_eliminated,0
-braian_ojeda__par,Braian Ojeda,PAR,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,braian ojeda||par,,,0,0,high_risk,team_eliminated,0
+andr_s_cubas__par,Andres Cubas,PAR,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,andres cubas||par,,,0,0,high_risk,team_eliminated,0
+lucas_ramon_romero__par,Lucas Ramon Romero,PAR,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,lucas ramon romero||par,,,0,0,high_risk,team_eliminated,0
+dami_n_bobadilla__par,Damian Bobadilla,PAR,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,damian bobadilla||par,,,0,0,high_risk,team_eliminated,0
+matias_galarza_fonda__par,Matias Galarza Fonda,PAR,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,matias galarza fonda||par,,,0,0,high_risk,team_eliminated,0
+ram_n_sosa__par,Ramon Sosa,PAR,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,ramon sosa||par,,,0,0,high_risk,team_eliminated,0
+diego_g_mez__par,Diego Gomez,PAR,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,diego gomez||par,,,0,0,high_risk,team_eliminated,0
+hugo_cuenca__par,Hugo Cuenca,PAR,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,hugo cuenca||par,,,0,0,high_risk,team_eliminated,0
+braian_ojeda__par,Braian Ojeda,PAR,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,braian ojeda||par,,,0,0,high_risk,team_eliminated,0
 joaqu_n_piquerez__uru,Joaquin Piquerez,URU,MID,53,0.528,0.528,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.7167,,,,joaquin piquerez||uru,,,0.614,0.6,high_risk,high_risk,
 federico_valverde__uru,Federico Valverde,URU,MID,89,0.8894,0.8894,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.88,,,,federico valverde||uru,,,0.97,0.7625,medium_risk,medium_risk,
 rodrigo_bentancur__uru,Rodrigo Bentancur,URU,MID,86,0.8642,0.8642,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,,,,,,,,0.9419,0.7644,medium_risk,medium_risk,
@@ -952,18 +952,18 @@ juan_manuel_sanabria__uru,Juan Manuel Sanabria,URU,MID,10,0.0993,0.0993,transfer
 agustin_canobbio__uru,Agustin Canobbio,URU,MID,48,0.4775,0.4775,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,,,,,,,,0.5552,0.6,high_risk,high_risk,
 nicolas_de_la_cruz__uru,Nicolas de la Cruz,URU,MID,14,0.1385,0.1385,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.731,,,,nicolas de la cruz||uru,,,0.1562,0.676,medium_risk,medium_risk,
 emiliano_martinez_toranza__uru,Emiliano Martinez Toranza,URU,MID,5,0.048,0.048,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.3949,,,,emiliano martinez toranza||uru,,,0.0526,0.7521,medium_risk,medium_risk,
-tanner_tessmann__usa,Tanner Tessmann,USA,MID,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.8063,,,,tanner tessmann||usa,,,0.0,0.6,out,out_of_tournament,0.0
-brenden_aaronson__usa,Brenden Aaronson,USA,MID,8,0.0782,0.0782,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6836,,,,brenden aaronson||usa,,,0.0855,0.7545,medium_risk,medium_risk,
-malik_tillman__usa,Malik Tillman,USA,MID,58,0.5807,0.5807,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.6757,,,,malik tillman||usa,,,0.6367,0.7486,medium_risk,medium_risk,
-giovanni_reyna__usa,Giovanni Reyna,USA,MID,35,0.3506,0.3506,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7955,,,,giovanni reyna||usa,,,0.4077,0.6,high_risk,high_risk,
-cristian_roldan__usa,Cristian Roldan,USA,MID,6,0.0573,0.0573,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.4722,,,,cristian roldan||usa,,,0.0667,0.6,high_risk,high_risk,
-weston_mckennie__usa,Weston McKennie,USA,MID,63,0.6257,0.6257,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.8215,,,,weston mckennie||usa,,,0.7275,0.6,high_risk,high_risk,
-tyler_adams__usa,Tyler Adams,USA,MID,81,0.8123,0.8123,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.8298,,,,tyler adams||usa,,,0.9446,0.6,high_risk,high_risk,
+tanner_tessmann__usa,Tanner Tessmann,USA,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.8063,,,,tanner tessmann||usa,,,0,0,out,out_of_tournament,0
+brenden_aaronson__usa,Brenden Aaronson,USA,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.6836,,,,brenden aaronson||usa,,,0,0,medium_risk,medium_risk,0
+malik_tillman__usa,Malik Tillman,USA,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.6757,,,,malik tillman||usa,,,0,0,medium_risk,medium_risk,0
+giovanni_reyna__usa,Giovanni Reyna,USA,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.7955,,,,giovanni reyna||usa,,,0,0,high_risk,high_risk,0
+cristian_roldan__usa,Cristian Roldan,USA,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.4722,,,,cristian roldan||usa,,,0,0,high_risk,high_risk,0
+weston_mckennie__usa,Weston McKennie,USA,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.8215,,,,weston mckennie||usa,,,0,0,high_risk,high_risk,0
+tyler_adams__usa,Tyler Adams,USA,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.8298,,,,tyler adams||usa,,,0,0,high_risk,high_risk,0
 carlos_andres_gomez__col,Carlos Andres Gomez,COL,MID,25,0.2535,0.2535,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.4417,,,,carlos andres gomez||col,,,0.2948,0.6,high_risk,high_risk,
 jefferson_lerma__col,Jefferson Lerma,COL,MID,64,0.6388,0.6388,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.8225,,,,jefferson lerma||col,,,0.6935,0.7745,medium_risk,medium_risk,
-aidan_morris__usa,Aidan Morris,USA,MID,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.7453,,,,aidan morris||usa,,,0.0,0.6,out,out_of_tournament,0.0
-alex_zendejas__usa,Alex Zendejas,USA,MID,27,0.2654,0.2654,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.3087,0.6,high_risk,high_risk,
-sebastian_berhalter__usa,Sebastian Berhalter,USA,MID,62,0.6178,0.6178,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.6894,,,,sebastian berhalter||usa,,,0.6507,0.8557,medium_risk,medium_risk,
+aidan_morris__usa,Aidan Morris,USA,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.7453,,,,aidan morris||usa,,,0,0,out,out_of_tournament,0
+alex_zendejas__usa,Alex Zendejas,USA,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,,,,,,,,0,0,high_risk,high_risk,0
+sebastian_berhalter__usa,Sebastian Berhalter,USA,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.6894,,,,sebastian berhalter||usa,,,0,0,medium_risk,medium_risk,0
 manuel_ugarte__uru,Manuel Ugarte,URU,MID,85,0.852,0.852,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.7396,,,,manuel ugarte||uru,,,0.9267,0.7695,medium_risk,medium_risk,
 james_rodr_guez__col,James Rodriguez,COL,MID,82.0,0.82,0.82,manual_context_override_safe,sandsynlig starter - Transfermarkt landshold,,,,,,0.8875,,,,james rodriguez||col,,,0.9,0.92,low_risk,low_risk,0.92
 juan_quintero__col,Juan Quintero,COL,MID,4,0.0444,0.0444,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.0446,,,,juan quintero||col,,,0.05,0.6774,unknown,unknown,
@@ -1332,12 +1332,12 @@ anthony_valencia__ecu,Anthony Valencia,ECU,FWD,31,0.3076,0.3076,transfermarkt_av
 jhon_c_rdoba__col,Jhon Cordoba,COL,FWD,13,0.1309,0.1309,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6658,,,,jhon cordoba||col,,,0.1434,0.7514,medium_risk,medium_risk,
 rafael_santos_borre__col,Rafael Santos Borre,COL,FWD,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.0,0.8408,out,out_of_tournament,0.0
 johan_carbonero__col,Johan Carbonero,COL,FWD,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.0,0.8677,out,out_of_tournament,0.0
-patrick_agyemang__usa,Patrick Agyemang,USA,FWD,0,0,0,manual_unavailable_override,ude af VM,,,,,,0.7929,,,,patrick agyemang||usa,,,0,0,out,out_of_tournament,0.0
-haji_wright__usa,Haji Wright,USA,FWD,25,0.2538,0.2538,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.291,0.6352,high_risk,high_risk,
-christian_pulisic__usa,Christian Pulisic,USA,FWD,83,0.8318,0.8318,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.817,,,,christian pulisic||usa,,,0.9606,0.6169,high_risk,high_risk,
-timothy_weah__usa,Timothy Weah,USA,FWD,40,0.402,0.402,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7859,,,,timothy weah||usa,,,0.4675,0.6,high_risk,high_risk,
-ricardo_pepi__usa,Ricardo Pepi,USA,FWD,29,0.288,0.288,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6143,,,,ricardo pepi||usa,,,0.3293,0.641,high_risk,high_risk,
-folarin_balogun__usa,Folarin Balogun,USA,FWD,40,0.4033,0.4033,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.8342,,,,folarin balogun||usa,,,0.4347,0.7938,medium_risk,medium_risk,
+patrick_agyemang__usa,Patrick Agyemang,USA,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.7929,,,,patrick agyemang||usa,,,0,0,out,out_of_tournament,0
+haji_wright__usa,Haji Wright,USA,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,,,,,,,,0,0,high_risk,high_risk,0
+christian_pulisic__usa,Christian Pulisic,USA,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.817,,,,christian pulisic||usa,,,0,0,high_risk,high_risk,0
+timothy_weah__usa,Timothy Weah,USA,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.7859,,,,timothy weah||usa,,,0,0,high_risk,high_risk,0
+ricardo_pepi__usa,Ricardo Pepi,USA,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.6143,,,,ricardo pepi||usa,,,0,0,high_risk,high_risk,0
+folarin_balogun__usa,Folarin Balogun,USA,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.8342,,,,folarin balogun||usa,,,0,0,medium_risk,medium_risk,0
 darwin_nunez__uru,Darwin Nunez,URU,FWD,88.0,0.88,0.88,manual_context_override_safe,sandsynlig starter - Transfermarkt landshold,,,,,,0.7427,,,,darwin nunez||uru,,,0.93,0.98,low_risk,medium_risk,0.98
 agust_n_lvarez__uru,Agustin Alvarez,URU,FWD,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.602,,,,agustin alvarez||uru,,,0.0,0.6,out,out_of_tournament,0.0
 facundo_torres__uru,Facundo Torres,URU,FWD,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.4573,,,,facundo torres||uru,,,0.0,0.6192,out,out_of_tournament,0.0
@@ -1349,31 +1349,31 @@ thapelo_maseko__rsa,Thapelo Maseko,RSA,FWD,4,0.043,0.043,transfermarkt_availabil
 thapelo_morena__rsa,Thapelo Morena,RSA,FWD,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.7525,,,,thapelo morena||rsa,,,0.0,0.6,out,out_of_tournament,0.0
 brian_rodr_guez__uru,Brian Rodriguez,URU,FWD,10,0.0981,0.0981,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.583,,,,brian rodriguez||uru,,,0.1087,0.7217,medium_risk,medium_risk,
 rodrigo_aguirre__uru,Rodrigo Aguirre,URU,FWD,60,0.5997,0.5997,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.8234,,,,rodrigo aguirre||uru,,,0.6631,0.7267,medium_risk,medium_risk,
-julio_enciso__par,Julio Enciso,PAR,FWD,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,julio enciso||par,,,0,0,high_risk,team_eliminated,0
+julio_enciso__par,Julio Enciso,PAR,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,julio enciso||par,,,0,0,high_risk,team_eliminated,0
 lyle_foster__rsa,Lyle Foster,RSA,FWD,83,0.8284,0.8284,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.7768,,,,lyle foster||rsa,,,0.9632,0.6,high_risk,high_risk,
 evidence_makgopa__rsa,Evidence Makgopa,RSA,FWD,9,0.0875,0.0875,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7167,,,,evidence makgopa||rsa,,,0.1017,0.6,high_risk,high_risk,
 mohau_nkota__rsa,Mohau Nkota,RSA,FWD,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6085,,,,mohau nkota||rsa,,,0.0,0.732,out,out_of_tournament,0.0
 tshepang_moremi__rsa,Tshepang Moremi,RSA,FWD,79,0.7896,0.7896,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.649,,,,tshepang moremi||rsa,,,0.8836,0.6962,medium_risk,medium_risk,
 oswin_appollis__rsa,Oswin Appollis,RSA,FWD,40,0.4007,0.4007,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6643,,,,oswin appollis||rsa,,,0.4257,0.8323,medium_risk,medium_risk,
-alex_arce__par,Alex Arce,PAR,FWD,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,alex arce||par,,,0,0,high_risk,team_eliminated,0
-ronaldo_mart_nez__par,Ronaldo Martinez,PAR,FWD,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,ronaldo martinez||par,,,0,0,high_risk,team_eliminated,0
-gabriel_avalos__par,Gabriel Avalos,PAR,FWD,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,gabriel avalos||par,,,0,0,high_risk,team_eliminated,0
-ngel_romero__par,Angel Romero,PAR,FWD,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,angel romero||par,,,0,0,high_risk,team_eliminated,0
-antonio_sanabria__par,Antonio Sanabria,PAR,FWD,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,antonio sanabria||par,,,0,0,high_risk,team_eliminated,0
+alex_arce__par,Alex Arce,PAR,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,alex arce||par,,,0,0,high_risk,team_eliminated,0
+ronaldo_mart_nez__par,Ronaldo Martinez,PAR,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,ronaldo martinez||par,,,0,0,high_risk,team_eliminated,0
+gabriel_avalos__par,Gabriel Avalos,PAR,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,gabriel avalos||par,,,0,0,high_risk,team_eliminated,0
+ngel_romero__par,Angel Romero,PAR,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,angel romero||par,,,0,0,high_risk,team_eliminated,0
+antonio_sanabria__par,Antonio Sanabria,PAR,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,antonio sanabria||par,,,0,0,high_risk,team_eliminated,0
 iqraam_rayners__rsa,Iqraam Rayners,RSA,FWD,8,0.079,0.079,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.0918,0.6,high_risk,high_risk,
-isidro_pitta__par,Isidro Pitta,PAR,FWD,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
+isidro_pitta__par,Isidro Pitta,PAR,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
 chris_wood__nzl,Chris Wood,NZL,FWD,84,0.8446,0.8446,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.8404,,,,chris wood||nzl,,,0.9262,0.7483,medium_risk,medium_risk,
 ben_waine__nzl,Ben Waine,NZL,FWD,10,0.0955,0.0955,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6886,,,,ben waine||nzl,,,0.1007,0.8539,medium_risk,medium_risk,
 logan_rogerson__nzl,Logan Rogerson,NZL,FWD,0,0.0,0.0,holdet_official_unmatched_default,,,,,,,,,,,,,,0.0,,out,out_of_tournament,0.0
 kosta_barbarouses__nzl,Kosta Barbarouses,NZL,FWD,34,0.3355,0.3355,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.8303,,,,kosta barbarouses||nzl,,,0.3726,0.7156,medium_risk,medium_risk,
 jesse_randall__nzl,Jesse Randall,NZL,FWD,46,0.4601,0.4601,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.5613,,,,jesse randall||nzl,,,0.5277,0.6341,high_risk,high_risk,
-santiago_gimenez__mex,Santiago Gimenez,MEX,FWD,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
-juli_n_qui_ones__mex,Julian Quinones,MEX,FWD,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,julian quinones||mex,,,0,0,high_risk,team_eliminated,0
-alexis_vega__mex,Alexis Vega,MEX,FWD,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,alexis vega||mex,,,0,0,high_risk,team_eliminated,0
-ra_l_jim_nez__mex,Raul Jimenez,MEX,FWD,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,raul jimenez||mex,,,0,0,high_risk,team_eliminated,0
-armando_gonzalez__mex,Armando Gonzalez,MEX,FWD,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,armando gonzalez||mex,,,0,0,high_risk,team_eliminated,0
-guillermo_martinez__mex,Guillermo Martínez,MEX,FWD,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,guillermo martinez||mex,,,0,0,high_risk,team_eliminated,0
-german_berterame__mex,German Berterame,MEX,FWD,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,german berterame||mex,,,0,0,high_risk,team_eliminated,0
+santiago_gimenez__mex,Santiago Gimenez,MEX,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
+juli_n_qui_ones__mex,Julian Quinones,MEX,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,julian quinones||mex,,,0,0,high_risk,team_eliminated,0
+alexis_vega__mex,Alexis Vega,MEX,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,alexis vega||mex,,,0,0,high_risk,team_eliminated,0
+ra_l_jim_nez__mex,Raul Jimenez,MEX,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,raul jimenez||mex,,,0,0,high_risk,team_eliminated,0
+armando_gonzalez__mex,Armando Gonzalez,MEX,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,armando gonzalez||mex,,,0,0,high_risk,team_eliminated,0
+guillermo_martinez__mex,Guillermo Martínez,MEX,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,guillermo martinez||mex,,,0,0,high_risk,team_eliminated,0
+german_berterame__mex,German Berterame,MEX,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,german berterame||mex,,,0,0,high_risk,team_eliminated,0
 cho_gue_sung__kor,Gue-sung Cho,KOR,FWD,35,0.352,0.352,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.8209,,,,gue-sung cho||kor,,,0.3799,0.7903,medium_risk,medium_risk,
 son_heung_min__kor,Heung-Min Son,KOR,FWD,92.0,0.92,0.92,manual_context_override_safe,sikker starter - Transfermarkt landshold,,,,,,0.8464,,,,heung-min son||kor,,,0.97,0.98,low_risk,medium_risk,0.98
 yuito_suzuki__jpn,Yuito Suzuki,JPN,FWD,29,0.2926,0.2926,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6857,,,,yuito suzuki||jpn,,,0.3402,0.6,high_risk,high_risk,
@@ -1413,16 +1413,16 @@ elye_wahi__civ,Elye Wahi,CIV,FWD,35.0,0.35,0.35,manual_context_override_safe,rot
 bazoumana_toure__civ,Bazoumana Toure,CIV,FWD,27,0.2658,0.2658,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.4164,,,,bazoumana toure||civ,,,0.2823,0.8335,medium_risk,medium_risk,
 yan_diomande__civ,Yan Diomande,CIV,FWD,91,0.9123,0.9123,transfermarkt_availability_split_2026_06_07,sikker starter - Transfermarkt landshold,,,,,,0.8814,,,,yan diomande||civ,,,0.9424,0.9088,low_risk,low_risk,
 martial_godo__civ,Martial Godo,CIV,FWD,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.0,0.7934,out,out_of_tournament,0.0
-luiz_henrique__bra,Luiz Henrique,BRA,FWD,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,luiz henrique||bra,,,0,0,high_risk,team_eliminated,0
-rayan__bra,Rayan,BRA,FWD,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,rayan||bra,,,0,0,high_risk,team_eliminated,0
-igor_thiago__bra,Igor Thiago,BRA,FWD,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,igor thiago||bra,,,0,0,high_risk,team_eliminated,0
-endrick__bra,Endrick,BRA,FWD,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,endrick||bra,,,0,0,high_risk,team_eliminated,0
-joao_pedro__bra,João Pedro,BRA,FWD,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
-raphinha__bra,Raphinha,BRA,FWD,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,raphinha||bra,,,0,0,high_risk,team_eliminated,0
-neymar_jr__bra,Neymar Jr.,BRA,FWD,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,neymar jr.||bra,,,0,0,high_risk,team_eliminated,0
-gabriel_martinelli__bra,Gabriel Martinelli,BRA,FWD,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,gabriel martinelli||bra,,,0,0,high_risk,team_eliminated,0
-vinicius_j_nior__bra,Vinicius Junior,BRA,FWD,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,vinicius junior||bra,,,0,0,high_risk,team_eliminated,0
-matheus_cunha__bra,Matheus Cunha,BRA,FWD,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,matheus cunha||bra,,,0,0,high_risk,team_eliminated,0
+luiz_henrique__bra,Luiz Henrique,BRA,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,luiz henrique||bra,,,0,0,high_risk,team_eliminated,0
+rayan__bra,Rayan,BRA,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,rayan||bra,,,0,0,high_risk,team_eliminated,0
+igor_thiago__bra,Igor Thiago,BRA,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,igor thiago||bra,,,0,0,high_risk,team_eliminated,0
+endrick__bra,Endrick,BRA,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,endrick||bra,,,0,0,high_risk,team_eliminated,0
+joao_pedro__bra,João Pedro,BRA,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,,,,0,0,high_risk,team_eliminated,0
+raphinha__bra,Raphinha,BRA,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,raphinha||bra,,,0,0,high_risk,team_eliminated,0
+neymar_jr__bra,Neymar Jr.,BRA,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,neymar jr.||bra,,,0,0,high_risk,team_eliminated,0
+gabriel_martinelli__bra,Gabriel Martinelli,BRA,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,gabriel martinelli||bra,,,0,0,high_risk,team_eliminated,0
+vinicius_j_nior__bra,Vinicius Junior,BRA,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,vinicius junior||bra,,,0,0,high_risk,team_eliminated,0
+matheus_cunha__bra,Matheus Cunha,BRA,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,matheus cunha||bra,,,0,0,high_risk,team_eliminated,0
 awer_mabil__aus,Awer Mabil,AUS,FWD,29,0.2868,0.2868,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7036,,,,awer mabil||aus,,,0.3335,0.6,high_risk,high_risk,
 nestory_irankunda__aus,Nestory Irankunda,AUS,FWD,32,0.3241,0.3241,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.5879,,,,nestory irankunda||aus,,,0.3533,0.7639,medium_risk,medium_risk,
 martin_boyle__aus,Martin Boyle,AUS,FWD,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7263,,,,martin boyle||aus,,,0.0,0.8503,out,out_of_tournament,0.0
@@ -1496,14 +1496,14 @@ yunus_akgun__tur,Yunus Akgün,TUR,FWD,33,0.3302,0.3302,transfermarkt_availabilit
 baris_alper_yilmaz__tur,Baris Alper Yilmaz,TUR,FWD,36,0.3583,0.3583,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.8921,,,,baris alper yilmaz||tur,,,0.3857,0.7971,medium_risk,medium_risk,
 can_uzun__tur,Can Uzun,TUR,FWD,23,0.2318,0.2318,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.2696,0.6,high_risk,high_risk,
 deniz_g_l__tur,Deniz Gül,TUR,FWD,52,0.5224,0.5224,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.5475,,,,deniz gul||tur,,,0.5572,0.8218,medium_risk,medium_risk,
-rafael_le_o__por,Rafael Leão,POR,FWD,70,0.7,0.7,manual_context_override_safe,sandsynlig starter - Transfermarkt landshold,,,,,,0.8615,,,,rafael leao||por,,,0.7,0.8871,medium_risk,medium_risk,
-gon_alo_ramos__por,Goncalo Ramos,POR,FWD,35.0,0.35,0.35,manual_context_override_safe,rotation/usikker - Transfermarkt landshold,,,,,,0.6042,,,,goncalo ramos||por,,,0.45,0.9,medium_risk,medium_risk,0.75
-francisco_trinc_o__por,Francisco Trincao,POR,FWD,23,0.2321,0.2321,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.5447,,,,francisco trincao||por,,,0.2699,0.6,high_risk,high_risk,
-francisco_concei_o__por,Francisco Conceicao,POR,FWD,54,0.5406,0.5406,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.585,,,,francisco conceicao||por,,,0.5626,0.8886,medium_risk,medium_risk,
-jo_o_f_lix__por,João Felix,POR,FWD,33,0.3304,0.3304,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7051,,,,joao felix||por,,,0.3425,0.8986,medium_risk,medium_risk,
-pedro_neto__por,Pedro Neto,POR,FWD,36,0.3638,0.3638,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6389,,,,pedro neto||por,,,0.3922,0.7932,medium_risk,medium_risk,
-goncalo_guedes__por,Goncalo Guedes,POR,FWD,6,0.0611,0.0611,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6911,,,,goncalo guedes||por,,,0.0711,0.6,high_risk,high_risk,
-cristiano_ronaldo__por,Cristiano Ronaldo,POR,FWD,92.0,0.92,0.92,manual_context_override_safe,sikker starter - Transfermarkt landshold,,,,,,0.908,,,,cristiano ronaldo||por,,,0.97,0.98,low_risk,medium_risk,0.98
+rafael_le_o__por,Rafael Leão,POR,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.8615,,,,rafael leao||por,,,0,0,medium_risk,medium_risk,0
+gon_alo_ramos__por,Goncalo Ramos,POR,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.6042,,,,goncalo ramos||por,,,0,0,medium_risk,medium_risk,0
+francisco_trinc_o__por,Francisco Trincao,POR,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.5447,,,,francisco trincao||por,,,0,0,high_risk,high_risk,0
+francisco_concei_o__por,Francisco Conceicao,POR,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.585,,,,francisco conceicao||por,,,0,0,medium_risk,medium_risk,0
+jo_o_f_lix__por,João Felix,POR,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.7051,,,,joao felix||por,,,0,0,medium_risk,medium_risk,0
+pedro_neto__por,Pedro Neto,POR,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.6389,,,,pedro neto||por,,,0,0,medium_risk,medium_risk,0
+goncalo_guedes__por,Goncalo Guedes,POR,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.6911,,,,goncalo guedes||por,,,0,0,high_risk,high_risk,0
+cristiano_ronaldo__por,Cristiano Ronaldo,POR,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.908,,,,cristiano ronaldo||por,,,0,0,low_risk,medium_risk,0
 tomas_chory__cze,Tomas Chory,CZE,FWD,34,0.3391,0.3391,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.3579,0.8505,medium_risk,medium_risk,
 patrik_schick__cze,Patrik Schick,CZE,FWD,86,0.8552,0.8552,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,,,,,,,,0.9317,0.7656,medium_risk,medium_risk,
 jan_kliment__cze,Jan Kliment,CZE,FWD,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.0,0.6,out,out_of_tournament,0.0
@@ -1518,6 +1518,6 @@ ruben_vargas__sui,Ruben Vargas,SUI,FWD,91,0.9149,0.9149,transfermarkt_availabili
 andi_zeqiri__sui,Andi Zeqiri,SUI,FWD,0,0.0,0.0,holdet_official_unmatched_default,,,,,,,,,,,,,,0.0,,out,out_of_tournament,0.0
 cedric_itten__sui,Cedric Itten,SUI,FWD,4,0.043,0.043,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.4979,,,,cedric itten||sui,,,0.05,0.6,high_risk,high_risk,
 breel_embolo__sui,Breel Embolo,SUI,FWD,91,0.9109,0.9109,transfermarkt_availability_split_2026_06_07,sikker starter - Transfermarkt landshold,,,,,,0.8813,,,,breel embolo||sui,,,0.9544,0.8699,low_risk,low_risk,
-ederson__bra,Ederson,BRA,MID,0,0,0,team_eliminated_r16,hold sl?et ud,,,,,,0,0,,,casemiro||bra,,,0,0,high_risk,team_eliminated,0
+ederson__bra,Ederson,BRA,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0,0,,,casemiro||bra,,,0,0,high_risk,team_eliminated,0
 lutsharel_geertruida__ned,Lutsharel Geertruida,NED,DEF,0,0.0,0.52,transfermarkt_availability_split_2026_06_07,watchlist,,,,,,0.6634,,,,stefan de vrij||ned,,,0.65,0.8255,medium_risk,out_of_tournament,0.0
 agustin_giay__arg,Agustin Giay,ARG,DEF,0,0,0,,Ude / ikke valgbar,,,,,,,,,,,,,0,0,out,holdet_is_out,
