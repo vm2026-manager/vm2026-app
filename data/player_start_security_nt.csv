@@ -272,16 +272,16 @@ chris_richards__usa,Chris Richards,USA,DEF,0,0,0,team_eliminated_r16,hold slået
 tim_ream__usa,Tim Ream,USA,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.5761,,,,tim ream||usa,,,0,0,high_risk,high_risk,0
 max_arfsten__usa,Max Arfsten,USA,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.8217,,,,max arfsten||usa,,,0,0,medium_risk,medium_risk,0
 alex_freeman__usa,Alex Freeman,USA,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.8632,,,,alex freeman||usa,,,0,0,low_risk,low_risk,0
-willer_ditta__col,Willer Ditta,COL,DEF,53,0.5257,0.5257,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.3311,,,,willer ditta||col,,,0.6113,0.6,high_risk,high_risk,
-deiver_machado__col,Deiver Machado,COL,DEF,9,0.0855,0.0855,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.5106,,,,deiver machado||col,,,0.0995,0.6,high_risk,high_risk,
-yerry_mina__col,Yerry Mina,COL,DEF,34,0.3375,0.3375,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6156,,,,yerry mina||col,,,0.3705,0.7459,medium_risk,medium_risk,
-davinson_s_nchez__col,Davinson Sanchez,COL,DEF,89,0.8943,0.8943,transfermarkt_availability_split_2026_06_07,sikker starter - Transfermarkt landshold,,,,,,0.7666,,,,davinson sanchez||col,,,0.9387,0.8648,low_risk,low_risk,
-johan_mojica__col,Johan Mojica,COL,DEF,81,0.8105,0.8105,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.645,,,,johan mojica||col,,,0.9186,0.6636,medium_risk,medium_risk,
-juan_cabal__col,Juan Cabal,COL,DEF,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.0,0.6,out,out_of_tournament,0.0
-yerson_mosquera__col,Yerson Mosquera,COL,DEF,0,0.0,0.0,holdet_official_unmatched_default,,,,,,,,,,,,,,0.0,,out,out_of_tournament,0.0
-daniel_mu_oz__col,Daniel Muñoz,COL,DEF,65,0.6497,0.6497,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.7378,,,,daniel munoz||col,,,0.7018,0.7882,medium_risk,medium_risk,
-jhon_lucum__col,Jhon Lucumi,COL,DEF,39,0.3877,0.3877,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.5164,,,,jhon lucumi||col,,,0.417,0.7994,medium_risk,medium_risk,
-santiago_arias__col,Santiago Arias,COL,DEF,33,0.3307,0.3307,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6674,,,,santiago arias||col,,,0.3707,0.6916,medium_risk,medium_risk,
+willer_ditta__col,Willer Ditta,COL,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.3311,,,,willer ditta||col,,,0,0,high_risk,out_of_tournament,0
+deiver_machado__col,Deiver Machado,COL,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.5106,,,,deiver machado||col,,,0,0,high_risk,out_of_tournament,0
+yerry_mina__col,Yerry Mina,COL,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.6156,,,,yerry mina||col,,,0,0,high_risk,out_of_tournament,0
+davinson_s_nchez__col,Davinson Sanchez,COL,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.7666,,,,davinson sanchez||col,,,0,0,high_risk,out_of_tournament,0
+johan_mojica__col,Johan Mojica,COL,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.645,,,,johan mojica||col,,,0,0,high_risk,out_of_tournament,0
+juan_cabal__col,Juan Cabal,COL,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,,,,,,,,0,0,high_risk,out_of_tournament,0
+yerson_mosquera__col,Yerson Mosquera,COL,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,,,,,,,,0,0,high_risk,out_of_tournament,0
+daniel_mu_oz__col,Daniel Muñoz,COL,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.7378,,,,daniel munoz||col,,,0,0,high_risk,out_of_tournament,0
+jhon_lucum__col,Jhon Lucumi,COL,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.5164,,,,jhon lucumi||col,,,0,0,high_risk,out_of_tournament,0
+santiago_arias__col,Santiago Arias,COL,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.6674,,,,santiago arias||col,,,0,0,high_risk,out_of_tournament,0
 piero_hincapi__ecu,Piero Hincapie,ECU,DEF,91,0.9126,0.9126,transfermarkt_availability_split_2026_06_07,sikker starter - Transfermarkt landshold,,,,,,0.8766,,,,piero hincapie||ecu,,,0.97,0.8309,medium_risk,medium_risk,
 joel_ord_ez__ecu,Joel Ordonez,ECU,DEF,83,0.8348,0.8348,transfermarkt_availability_split_2026_06_07,sikker starter - Transfermarkt landshold,,,,,,0.4914,,,,joel ordonez||ecu,,,0.8899,0.823,medium_risk,medium_risk,
 ngelo_preciado__ecu,Angelo Preciado,ECU,DEF,16,0.164,0.164,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7096,,,,angelo preciado||ecu,,,0.1728,0.8546,medium_risk,medium_risk,
@@ -340,16 +340,16 @@ michael_amir_murillo__pan,Michael Amir Murillo,PAN,DEF,65,0.654,0.654,transferma
 andres_andrade__pan,Andres Andrade,PAN,DEF,64,0.6362,0.6362,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.7829,,,,andres andrade||pan,,,0.7031,0.7282,medium_risk,medium_risk,
 c_sar_blackman__pan,Cesar Blackman,PAN,DEF,56,0.5629,0.5629,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.443,,,,cesar blackman||pan,,,0.5992,0.827,medium_risk,medium_risk,
 martin_krug__pan,Martin Krug,PAN,DEF,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.4938,,,,martin krug||pan,,,0.0,0.6,out,out_of_tournament,0.0
-karim_hafez__egy,Karim Hafez,EGY,DEF,30,0.3013,0.3013,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.3621,,,,karim hafez||egy,,,0.3504,0.6,high_risk,high_risk,
-mohamed_abdelmonem__egy,Mohamed Abdelmonem,EGY,DEF,41,0.4129,0.4129,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.8455,,,,mohamed abdelmonem||egy,,,0.4426,0.8081,medium_risk,medium_risk,
-hossam_abdelmaguid__egy,Hossam Abdelmaguid,EGY,DEF,7,0.0728,0.0728,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6055,,,,hossam abdelmaguid||egy,,,0.0834,0.6342,high_risk,high_risk,
-yasser_ibrahim__egy,Yasser Ibrahim,EGY,DEF,52,0.5221,0.5221,transfermarkt_availability_split_2026_06_04,rotation/usikker - Transfermarkt landshold,,,,,,0.5221,,,,yasser ibrahim||egy,,,0.6071,0.6,high_risk,high_risk,
-khaled_sobhi__egy,Khaled Sobhi,EGY,DEF,0,0.0,0.0,holdet_official_unmatched_default,,,,,,,,,,,,,,0.0,,out,out_of_tournament,0.0
-mohamed_hany__egy,Mohamed Hany,EGY,DEF,85,0.8454,0.8454,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.6987,,,,mohamed hany||egy,,,0.97,0.633,high_risk,high_risk,
-rami_rabia__egy,Rami Rabia,EGY,DEF,17,0.1739,0.1739,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7193,,,,rami rabia||egy,,,0.2022,0.6,high_risk,high_risk,
-ahmed_nabil_kouka__egy,Ahmed Nabil Kouka,EGY,DEF,0,0.0,0.0,holdet_official_unmatched_default,,,,,,,,,,,,,,0.0,,out,out_of_tournament,0.0
-tarek_alaa__egy,Tarek Alaa,EGY,DEF,7,0.0693,0.0693,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.2325,,,,tarek alaa||egy,,,0.075,0.7826,medium_risk,medium_risk,
-ahmed_fatouh__egy,Ahmed Fatouh,EGY,DEF,57,0.5746,0.5746,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.6536,,,,ahmed fatouh||egy,,,0.6681,0.6,high_risk,high_risk,
+karim_hafez__egy,Karim Hafez,EGY,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.3621,,,,karim hafez||egy,,,0,0,high_risk,out_of_tournament,0
+mohamed_abdelmonem__egy,Mohamed Abdelmonem,EGY,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.8455,,,,mohamed abdelmonem||egy,,,0,0,high_risk,out_of_tournament,0
+hossam_abdelmaguid__egy,Hossam Abdelmaguid,EGY,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.6055,,,,hossam abdelmaguid||egy,,,0,0,high_risk,out_of_tournament,0
+yasser_ibrahim__egy,Yasser Ibrahim,EGY,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.5221,,,,yasser ibrahim||egy,,,0,0,high_risk,out_of_tournament,0
+khaled_sobhi__egy,Khaled Sobhi,EGY,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,,,,,,,,0,0,high_risk,out_of_tournament,0
+mohamed_hany__egy,Mohamed Hany,EGY,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.6987,,,,mohamed hany||egy,,,0,0,high_risk,out_of_tournament,0
+rami_rabia__egy,Rami Rabia,EGY,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.7193,,,,rami rabia||egy,,,0,0,high_risk,out_of_tournament,0
+ahmed_nabil_kouka__egy,Ahmed Nabil Kouka,EGY,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,,,,,,,,0,0,high_risk,out_of_tournament,0
+tarek_alaa__egy,Tarek Alaa,EGY,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.2325,,,,tarek alaa||egy,,,0,0,high_risk,out_of_tournament,0
+ahmed_fatouh__egy,Ahmed Fatouh,EGY,DEF,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.6536,,,,ahmed fatouh||egy,,,0,0,high_risk,out_of_tournament,0
 redouane_halhal__mar,Redouane Halhal,MAR,DEF,60,0.601,0.601,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,,,,,,,,0.6695,0.7076,medium_risk,medium_risk,
 abdelhamid_ait_boudlal__mar,Abdelhamid Ait Boudlal,MAR,DEF,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.8488,,,,abdelhamid ait boudlal||mar,,,0.0,0.6033,out,out_of_tournament,0.0
 zakaria_el_ouahdi__mar,Zakaria El Ouahdi,MAR,DEF,24,0.2428,0.2428,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.1545,,,,zakaria el ouahdi||mar,,,0.2824,0.6,high_risk,high_risk,
@@ -551,13 +551,13 @@ mory_diaw__sen,Mory Diaw,SEN,GK,27,0.2679,0.2679,transfermarkt_availability_spli
 edouard_mendy__sen,Edouard Mendy,SEN,GK,67,0.6706,0.6706,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,sandsynlig starter - GK hierarchy,,,,,,0.7597,,,,edouard mendy||sen,,,0.6706,0.6587,medium_risk,medium_risk,
 el_mehdi_al_harrar__mar,El Mehdi Al Harrar,MAR,GK,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,ude - GK hierarchy,,,,,,0.3112,,,,el mehdi al harrar||mar,,,0.0,0.6909,out,out_of_tournament,0.0
 ahmed_reda_tagnaouti__mar,Ahmed Reda Tagnaouti,MAR,GK,3,0.0251,0.0251,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,,,,,,,,0.0251,0.6,high_risk,high_risk,
-el_mahdi_soliman__egy,El Mahdi Soliman,EGY,GK,2,0.0151,0.0151,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.0386,,,,el mahdi soliman||egy,,,0.0151,0.7689,medium_risk,medium_risk,
+el_mahdi_soliman__egy,El Mahdi Soliman,EGY,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.0386,,,,el mahdi soliman||egy,,,0,0,high_risk,out_of_tournament,0
 el_mehdi_benabid__mar,El Mehdi Benabid,MAR,GK,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,ude - GK hierarchy,,,,,,0.2064,,,,el mehdi benabid||mar,,,0.0,0.6,out,out_of_tournament,0.0
 yassine_bono_bounou__mar,Yassine 'Bono' Bounou,MAR,GK,95,0.949,0.949,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,sikker starter - GK hierarchy,,,,,,0.5853,,,,yassine 'bono' bounou||mar,,,0.949,0.6512,medium_risk,medium_risk,
 munir_mohamedi_el_kajoui__mar,Munir Mohamedi El Kajoui,MAR,GK,3,0.0259,0.0259,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,,,,,,,,0.0259,,,,
-mohamed_alaa__egy,Mohamed Alaa,EGY,GK,2,0.0151,0.0151,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.0442,,,,mohamed alaa||egy,,,0.0151,0.8538,medium_risk,medium_risk,
-oufa_shobeir__egy,Mostafa Oufa Shobeir,EGY,GK,52,0.5193,0.5193,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,rotation/usikker - GK hierarchy,,,,,,,,,,,,,0.5193,0.8643,low_risk,low_risk,
-mohamed_el_shenawy__egy,Mohamed El-Shennawy,EGY,GK,45,0.4506,0.4506,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,rotation/usikker - GK hierarchy,,,,,,0.7849,,,,mohamed el-shennawy||egy,,,0.4506,0.6618,medium_risk,medium_risk,
+mohamed_alaa__egy,Mohamed Alaa,EGY,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.0442,,,,mohamed alaa||egy,,,0,0,high_risk,out_of_tournament,0
+oufa_shobeir__egy,Mostafa Oufa Shobeir,EGY,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,,,,,,,,0,0,high_risk,out_of_tournament,0
+mohamed_el_shenawy__egy,Mohamed El-Shennawy,EGY,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.7849,,,,mohamed el-shennawy||egy,,,0,0,high_risk,out_of_tournament,0
 luis_mejia__pan,Luis Mejia,PAN,GK,10,0.0982,0.0982,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.3979,,,,luis mejia||pan,,,0.0982,0.6394,high_risk,high_risk,
 cesar_samudio__pan,Cesar Samudio,PAN,GK,5,0.0476,0.0476,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.0443,,,,cesar samudio||pan,,,0.0476,0.7122,medium_risk,medium_risk,
 orlando_mosquera__pan,Orlando Mosquera,PAN,GK,85,0.8542,0.8542,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,sandsynlig starter - GK hierarchy,,,,,,0.4613,,,,orlando mosquera||pan,,,0.8542,0.8729,medium_risk,medium_risk,
@@ -582,9 +582,9 @@ martin_zlomisli__bih,Martin Zlomislic,BIH,GK,7,0.0652,0.0652,transfermarkt_avail
 osman_hadzikic__bih,Osman Hadzikic,BIH,GK,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,ude - GK hierarchy,,,,,,0.0478,,,,osman hadzikic||bih,,,0.0,0.9372,out,out_of_tournament,0.0
 hern_n_gal_ndez__ecu,Hernan Galindez,ECU,GK,78,0.7812,0.7812,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,sandsynlig starter - GK hierarchy,,,,,,0.4884,,,,hernan galindez||ecu,,,0.7812,0.9199,medium_risk,medium_risk,
 moises_ramirez__ecu,Moises Ramirez,ECU,GK,9,0.0928,0.0928,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.128,,,,moises ramirez||ecu,,,0.0928,0.8414,medium_risk,medium_risk,
-camilo_vargas__col,Camilo Vargas,COL,GK,79,0.7899,0.7899,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,sandsynlig starter - GK hierarchy,,,,,,0.2844,,,,camilo vargas||col,,,0.7899,0.8267,medium_risk,medium_risk,
-alvaro_montero__col,Alvaro Montero,COL,GK,9,0.089,0.089,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.2008,,,,alvaro montero||col,,,0.089,0.7436,medium_risk,medium_risk,
-david_ospina__col,David Ospina,COL,GK,12,0.1212,0.1212,transfermarkt_availability_split_2026_06_07+gk_hierarchy_normalized,reservekeeper - GK hierarchy,,,,,,0.7171,,,,david ospina||col,,,0.1212,0.8866,medium_risk,medium_risk,
+camilo_vargas__col,Camilo Vargas,COL,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.2844,,,,camilo vargas||col,,,0,0,high_risk,out_of_tournament,0
+alvaro_montero__col,Alvaro Montero,COL,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.2008,,,,alvaro montero||col,,,0,0,high_risk,out_of_tournament,0
+david_ospina__col,David Ospina,COL,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.7171,,,,david ospina||col,,,0,0,high_risk,out_of_tournament,0
 chris_brady__usa,Chris Brady,USA,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.0425,,,,chris brady||usa,,,0,0,medium_risk,medium_risk,0
 patrick_schulte__usa,Patrick Schulte,USA,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.2263,,,,patrick schulte||usa,,,0,0,out,out_of_tournament,0
 matt_freese__usa,Matt Freese,USA,GK,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.6552,,,,matt freese||usa,,,0,0,medium_risk,medium_risk,0
@@ -959,22 +959,22 @@ giovanni_reyna__usa,Giovanni Reyna,USA,MID,0,0,0,team_eliminated_r16,hold slået
 cristian_roldan__usa,Cristian Roldan,USA,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.4722,,,,cristian roldan||usa,,,0,0,high_risk,high_risk,0
 weston_mckennie__usa,Weston McKennie,USA,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.8215,,,,weston mckennie||usa,,,0,0,high_risk,high_risk,0
 tyler_adams__usa,Tyler Adams,USA,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.8298,,,,tyler adams||usa,,,0,0,high_risk,high_risk,0
-carlos_andres_gomez__col,Carlos Andres Gomez,COL,MID,25,0.2535,0.2535,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.4417,,,,carlos andres gomez||col,,,0.2948,0.6,high_risk,high_risk,
-jefferson_lerma__col,Jefferson Lerma,COL,MID,64,0.6388,0.6388,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.8225,,,,jefferson lerma||col,,,0.6935,0.7745,medium_risk,medium_risk,
+carlos_andres_gomez__col,Carlos Andres Gomez,COL,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.4417,,,,carlos andres gomez||col,,,0,0,high_risk,out_of_tournament,0
+jefferson_lerma__col,Jefferson Lerma,COL,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.8225,,,,jefferson lerma||col,,,0,0,high_risk,out_of_tournament,0
 aidan_morris__usa,Aidan Morris,USA,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.7453,,,,aidan morris||usa,,,0,0,out,out_of_tournament,0
 alex_zendejas__usa,Alex Zendejas,USA,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,,,,,,,,0,0,high_risk,high_risk,0
 sebastian_berhalter__usa,Sebastian Berhalter,USA,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.6894,,,,sebastian berhalter||usa,,,0,0,medium_risk,medium_risk,0
 manuel_ugarte__uru,Manuel Ugarte,URU,MID,85,0.852,0.852,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.7396,,,,manuel ugarte||uru,,,0.9267,0.7695,medium_risk,medium_risk,
-james_rodr_guez__col,James Rodriguez,COL,MID,82.0,0.82,0.82,manual_context_override_safe,sandsynlig starter - Transfermarkt landshold,,,,,,0.8875,,,,james rodriguez||col,,,0.9,0.92,low_risk,low_risk,0.92
-juan_quintero__col,Juan Quintero,COL,MID,4,0.0444,0.0444,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.0446,,,,juan quintero||col,,,0.05,0.6774,unknown,unknown,
-jhon_arias__col,Jhon Arias,COL,MID,67,0.6681,0.6681,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.8946,,,,jhon arias||col,,,0.7082,0.838,medium_risk,medium_risk,
-richard_r_os__col,Richard Rios,COL,MID,89,0.8948,0.8948,transfermarkt_availability_split_2026_06_07,sikker starter - Transfermarkt landshold,,,,,,0.8685,,,,richard rios||col,,,0.9189,0.9249,low_risk,low_risk,
-kevin_casta_o__col,Kevin Castano,COL,MID,8,0.0759,0.0759,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6173,,,,kevin castano||col,,,0.0794,0.8735,medium_risk,medium_risk,
-juan_portilla__col,Juan Portilla,COL,MID,27,0.2666,0.2666,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.43,,,,juan portilla||col,,,0.31,0.6,high_risk,high_risk,
-jaminton_campaz__col,Jaminton Campaz,COL,MID,4,0.043,0.043,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.4631,,,,jaminton campaz||col,,,0.05,0.6,high_risk,high_risk,
-jorge_carrascal__col,Jorge Carrascal,COL,MID,26,0.2581,0.2581,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.5975,,,,jorge carrascal||col,,,0.2855,0.725,medium_risk,medium_risk,
+james_rodr_guez__col,James Rodriguez,COL,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.8875,,,,james rodriguez||col,,,0,0,high_risk,out_of_tournament,0
+juan_quintero__col,Juan Quintero,COL,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.0446,,,,juan quintero||col,,,0,0,high_risk,out_of_tournament,0
+jhon_arias__col,Jhon Arias,COL,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.8946,,,,jhon arias||col,,,0,0,high_risk,out_of_tournament,0
+richard_r_os__col,Richard Rios,COL,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.8685,,,,richard rios||col,,,0,0,high_risk,out_of_tournament,0
+kevin_casta_o__col,Kevin Castano,COL,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.6173,,,,kevin castano||col,,,0,0,high_risk,out_of_tournament,0
+juan_portilla__col,Juan Portilla,COL,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.43,,,,juan portilla||col,,,0,0,high_risk,out_of_tournament,0
+jaminton_campaz__col,Jaminton Campaz,COL,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.4631,,,,jaminton campaz||col,,,0,0,high_risk,out_of_tournament,0
+jorge_carrascal__col,Jorge Carrascal,COL,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.5975,,,,jorge carrascal||col,,,0,0,high_risk,out_of_tournament,0
 denil_castillo__ecu,Denil Castillo,ECU,MID,24,0.2365,0.2365,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.275,0.6,high_risk,high_risk,
-gustavo_puerta__col,Gustavo Puerta,COL,MID,27,0.2706,0.2706,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.3363,,,,gustavo puerta||col,,,0.3146,0.6,high_risk,high_risk,
+gustavo_puerta__col,Gustavo Puerta,COL,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.3363,,,,gustavo puerta||col,,,0,0,high_risk,out_of_tournament,0
 kendry_p_ez__ecu,Kendry Paez,ECU,MID,12,0.1237,0.1237,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6298,,,,kendry paez||ecu,,,0.1258,0.952,medium_risk,medium_risk,
 gonzalo_plata__ecu,Gonzalo Plata,ECU,MID,78,0.78,0.78,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.7964,,,,gonzalo plata||ecu,,,0.78,0.6304,high_risk,high_risk,
 alan_franco__ecu,Alan Franco,ECU,MID,4,0.0445,0.0445,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.45,,,,alan franco||ecu,,,0.05,0.6875,unknown,unknown,
@@ -1031,23 +1031,23 @@ azarias_londono__pan,Azarias Londono,PAN,MID,47,0.4703,0.4703,transfermarkt_avai
 zidane_iqbal__irq,Zidane Iqbal,IRQ,MID,30,0.3015,0.3015,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.5733,,,,zidane iqbal||irq,,,0.3472,0.6233,high_risk,high_risk,
 youssef_amyn__irq,Youssef Amyn,IRQ,MID,55,0.5497,0.5497,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.7231,,,,youssef amyn||irq,,,0.6091,0.7215,medium_risk,medium_risk,
 jose_luis_rodriguez_francis__pan,Jose Luis Rodriguez Francis,PAN,MID,62,0.6182,0.6182,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.7578,,,,jose luis rodriguez francis||pan,,,0.6672,0.7902,medium_risk,medium_risk,
-mahmoud_trezeguet__egy,Mahmoud Trezeguet,EGY,MID,92.0,0.92,0.92,manual_context_override_safe,sikker starter - Transfermarkt landshold,,,,,,0.8438,,,,mahmoud trezeguet||egy,,,0.96,0.96,low_risk,low_risk,0.98
-haissem_hassan__egy,Haissem Hassan,EGY,MID,30,0.2955,0.2955,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.873,,,,haissem hassan||egy,,,0.3115,0.8538,medium_risk,medium_risk,
-emam_ashour__egy,Emam Ashour,EGY,MID,57,0.5732,0.5732,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.6622,,,,emam ashour||egy,,,0.6542,0.6464,high_risk,high_risk,
-islam_issa__egy,Islam Issa,EGY,MID,0,0.0,0.0,holdet_official_unmatched_default,,,,,,,,,,,,,,0.0,,out,out_of_tournament,0.0
-marwan_ateya__egy,Marwan Ateya,EGY,MID,45.0,0.45,0.45,manual_context_override_safe,rotation/usikker - Transfermarkt landshold,,,,,,0.8011,,,,marwan ateya||egy,,,0.55,0.7877,medium_risk,medium_risk,
-mohanad_lasheen__egy,Mohanad Lasheen,EGY,MID,69,0.6911,0.6911,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.4745,,,,mohanad lasheen||egy,,,0.8036,0.6,high_risk,high_risk,
-hamdy_fathy__egy,Hamdy Fathy,EGY,MID,86,0.8588,0.8588,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.865,,,,hamdy fathy||egy,,,0.9267,0.7905,medium_risk,medium_risk,
-mahmoud_saber__egy,Mahmoud Saber,EGY,MID,5,0.054,0.054,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.4889,,,,mahmoud saber||egy,,,0.0569,0.8529,medium_risk,medium_risk,
-ibrahim_adel__egy,Ibrahim Adel,EGY,MID,5,0.0534,0.0534,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6285,,,,ibrahim adel||egy,,,0.0617,0.6167,high_risk,high_risk,
-zizo__egy,Ahmed Zizo,EGY,MID,40.0,0.4,0.4,manual_context_override_safe,rotation/usikker - Transfermarkt landshold,,,,,,0.7866,,,,ahmed zizo||egy,,,0.5,0.8205,medium_risk,medium_risk,
+mahmoud_trezeguet__egy,Mahmoud Trezeguet,EGY,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.8438,,,,mahmoud trezeguet||egy,,,0,0,high_risk,out_of_tournament,0
+haissem_hassan__egy,Haissem Hassan,EGY,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.873,,,,haissem hassan||egy,,,0,0,high_risk,out_of_tournament,0
+emam_ashour__egy,Emam Ashour,EGY,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.6622,,,,emam ashour||egy,,,0,0,high_risk,out_of_tournament,0
+islam_issa__egy,Islam Issa,EGY,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,,,,,,,,0,0,high_risk,out_of_tournament,0
+marwan_ateya__egy,Marwan Ateya,EGY,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.8011,,,,marwan ateya||egy,,,0,0,high_risk,out_of_tournament,0
+mohanad_lasheen__egy,Mohanad Lasheen,EGY,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.4745,,,,mohanad lasheen||egy,,,0,0,high_risk,out_of_tournament,0
+hamdy_fathy__egy,Hamdy Fathy,EGY,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.865,,,,hamdy fathy||egy,,,0,0,high_risk,out_of_tournament,0
+mahmoud_saber__egy,Mahmoud Saber,EGY,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.4889,,,,mahmoud saber||egy,,,0,0,high_risk,out_of_tournament,0
+ibrahim_adel__egy,Ibrahim Adel,EGY,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.6285,,,,ibrahim adel||egy,,,0,0,high_risk,out_of_tournament,0
+zizo__egy,Ahmed Zizo,EGY,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.7866,,,,ahmed zizo||egy,,,0,0,high_risk,out_of_tournament,0
 mohamed_rabie_hrimat__mar,Mohamed Rabie Hrimat,MAR,MID,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.8342,,,,mohamed rabie hrimat||mar,,,0.0,0.6,out,out_of_tournament,0.0
 ayoube_amaimouni_echghouyab__mar,Ayoube Amaimouni-Echghouyab,MAR,MID,46,0.465,0.465,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.5,0.8,unknown,unknown,
 samir_el_mourabet__mar,Samir El Mourabet,MAR,MID,29,0.2896,0.2896,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.3052,0.8538,medium_risk,medium_risk,
 soufiane_rahimi__mar,Soufiane Rahimi,MAR,MID,28,0.28,0.28,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.3256,0.6,high_risk,high_risk,
 gessime_yassine__mar,Gessime Yassine,MAR,MID,29,0.2896,0.2896,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.3052,0.8538,medium_risk,medium_risk,
-nabil_dunga_emad__egy,Nabil 'Dunga' Emad,EGY,MID,25,0.2487,0.2487,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.2892,0.6,high_risk,high_risk,
-mostafa_ziko__egy,Mostafa Ziko,EGY,MID,46,0.465,0.465,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.8655,,,,mostafa ziko||egy,,,0.5,0.8,unknown,unknown,
+nabil_dunga_emad__egy,Nabil 'Dunga' Emad,EGY,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,,,,,,,,0,0,high_risk,out_of_tournament,0
+mostafa_ziko__egy,Mostafa Ziko,EGY,MID,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.8655,,,,mostafa ziko||egy,,,0,0,high_risk,out_of_tournament,0
 sofyan_amrabat__mar,Sofyan Amrabat,MAR,MID,39,0.3921,0.3921,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6942,,,,sofyan amrabat||mar,,,0.4447,0.6624,medium_risk,medium_risk,
 hakim_ziyech__mar,Hakim Ziyech,MAR,MID,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.8184,,,,hakim ziyech||mar,,,0.0,0.6007,out,out_of_tournament,0.0
 ayyoub_bouaddi__mar,Ayyoub Bouaddi,MAR,MID,35.0,0.35,0.35,manual_context_override_safe,rotation/usikker - Transfermarkt landshold,,,,,,,,,,,,,0.45,0.8,medium_risk,unknown,
@@ -1281,13 +1281,13 @@ amine_adli__mar,Amine Adli,MAR,FWD,0,0.0,0.0,transfermarkt_availability_split_20
 chemsdine_talbi__mar,Chemsdine Talbi,MAR,FWD,23,0.2297,0.2297,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.0792,,,,chemsdine talbi||mar,,,0.2566,0.7005,medium_risk,medium_risk,
 youssef_en_nesyri__mar,Youssef En-Nesyri,MAR,FWD,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7808,,,,youssef en-nesyri||mar,,,0.0,0.6874,out,out_of_tournament,0.0
 ayoub_el_kaabi__mar,Ayoub El Kaabi,MAR,FWD,34,0.3446,0.3446,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.7445,,,,ayoub el kaabi||mar,,,0.3951,0.635,high_risk,high_risk,
-aqtay_abdallah__egy,Aqtay Abdallah,EGY,FWD,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.0446,,,,aqtay abdallah||egy,,,0.0,0.75,out,out_of_tournament,0.0
-hamza_abdelkarim__egy,Hamza Abdelkarim,EGY,FWD,5,0.0465,0.0465,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.8655,,,,hamza abdelkarim||egy,,,0.05,0.8,unknown,unknown,
+aqtay_abdallah__egy,Aqtay Abdallah,EGY,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.0446,,,,aqtay abdallah||egy,,,0,0,high_risk,out_of_tournament,0
+hamza_abdelkarim__egy,Hamza Abdelkarim,EGY,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.8655,,,,hamza abdelkarim||egy,,,0,0,high_risk,out_of_tournament,0
 brahim_d_az__mar,Brahim Diaz,MAR,FWD,72.0,0.72,0.72,manual_context_override_safe,sandsynlig starter - Transfermarkt landshold,,,,,,0.8254,,,,brahim diaz||mar,,,0.85,0.95,low_risk,high_risk,0.95
-mostafa_mohamed__egy,Mostafa Mohamed,EGY,FWD,0,0.0,0.0,holdet_official_unmatched_default,,,,,,,,,,,,,,0.0,,out,out_of_tournament,0.0
-nasser_mansy__egy,Nasser Mansy,EGY,FWD,0,0.0,0.0,holdet_official_unmatched_default,,,,,,,,,,,,,,0.0,,out,out_of_tournament,0.0
-omar_marmoush__egy,Omar Marmoush,EGY,FWD,86,0.8621,0.8621,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.8626,,,,omar marmoush||egy,,,0.9493,0.7376,medium_risk,medium_risk,
-mohamed_salah__egy,Mohamed Salah,EGY,FWD,65,0.6536,0.6536,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.8489,,,,mohamed salah||egy,,,0.736,0.6799,medium_risk,medium_risk,
+mostafa_mohamed__egy,Mostafa Mohamed,EGY,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,,,,,,,,0,0,high_risk,out_of_tournament,0
+nasser_mansy__egy,Nasser Mansy,EGY,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,,,,,,,,0,0,high_risk,out_of_tournament,0
+omar_marmoush__egy,Omar Marmoush,EGY,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.8626,,,,omar marmoush||egy,,,0,0,high_risk,out_of_tournament,0
+mohamed_salah__egy,Mohamed Salah,EGY,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.8489,,,,mohamed salah||egy,,,0,0,high_risk,out_of_tournament,0
 ismael_d_az__pan,Ismael Diaz,PAN,FWD,52.0,0.52,0.52,manual_context_override_safe,rotation/usikker - Transfermarkt landshold,,,,,,0.6337,,,,ismael diaz||pan,,,0.65,0.6297,medium_risk,high_risk,
 jose_fajardo__pan,Jose Fajardo,PAN,FWD,35,0.3472,0.3472,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.714,,,,jose fajardo||pan,,,0.3889,0.6932,medium_risk,medium_risk,
 kadir_barria__pan,Kadir Barria,PAN,FWD,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6844,,,,kadir barria||pan,,,0.0,0.8952,out,out_of_tournament,0.0
@@ -1325,13 +1325,13 @@ jeremy_ar_valo__ecu,Jeremy Arevalo,ECU,FWD,5,0.0476,0.0476,transfermarkt_availab
 enner_valencia__ecu,Enner Valencia,ECU,FWD,88,0.8826,0.8826,transfermarkt_availability_split_2026_06_07,sandsynlig starter - Transfermarkt landshold,,,,,,0.8568,,,,enner valencia||ecu,,,0.9585,0.7737,medium_risk,medium_risk,
 kevin_rodr_guez__ecu,Kevin Rodriguez,ECU,FWD,7,0.0689,0.0689,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6968,,,,kevin rodriguez||ecu,,,0.0719,0.8786,medium_risk,medium_risk,
 nilson_angulo__ecu,Nilson Angulo,ECU,FWD,45.0,0.45,0.45,manual_context_override_safe,rotation/usikker - Transfermarkt landshold,,,,,,,,,,,,,0.55,0.6,medium_risk,high_risk,
-luis_d_az__col,Luis Diaz,COL,FWD,93,0.9323,0.9323,transfermarkt_availability_split_2026_06_07,sikker starter - Transfermarkt landshold,,,,,,0.9001,,,,luis diaz||col,,,0.97,0.889,low_risk,low_risk,
-juan_cucho_hernandez__col,Juan 'Cucho' Hernandez,COL,FWD,54,0.5405,0.5405,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,,,,,,,,0.6285,0.6,high_risk,high_risk,
-luis_suarez_charris__col,Luis Suarez Charris,COL,FWD,51,0.5148,0.5148,transfermarkt_availability_split_2026_06_07,rotation/usikker - Transfermarkt landshold,,,,,,0.6143,,,,luis suarez charris||col,,,0.5986,0.6,high_risk,high_risk,
+luis_d_az__col,Luis Diaz,COL,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.9001,,,,luis diaz||col,,,0,0,high_risk,out_of_tournament,0
+juan_cucho_hernandez__col,Juan 'Cucho' Hernandez,COL,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,,,,,,,,0,0,high_risk,out_of_tournament,0
+luis_suarez_charris__col,Luis Suarez Charris,COL,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.6143,,,,luis suarez charris||col,,,0,0,high_risk,out_of_tournament,0
 anthony_valencia__ecu,Anthony Valencia,ECU,FWD,31,0.3076,0.3076,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6757,,,,anthony valencia||ecu,,,0.3259,0.8397,medium_risk,medium_risk,
-jhon_c_rdoba__col,Jhon Cordoba,COL,FWD,13,0.1309,0.1309,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,0.6658,,,,jhon cordoba||col,,,0.1434,0.7514,medium_risk,medium_risk,
-rafael_santos_borre__col,Rafael Santos Borre,COL,FWD,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.0,0.8408,out,out_of_tournament,0.0
-johan_carbonero__col,Johan Carbonero,COL,FWD,0,0.0,0.0,transfermarkt_availability_split_2026_06_07,sjældent startende - Transfermarkt landshold,,,,,,,,,,,,,0.0,0.8677,out,out_of_tournament,0.0
+jhon_c_rdoba__col,Jhon Cordoba,COL,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.6658,,,,jhon cordoba||col,,,0,0,high_risk,out_of_tournament,0
+rafael_santos_borre__col,Rafael Santos Borre,COL,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,,,,,,,,0,0,high_risk,out_of_tournament,0
+johan_carbonero__col,Johan Carbonero,COL,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,,,,,,,,0,0,high_risk,out_of_tournament,0
 patrick_agyemang__usa,Patrick Agyemang,USA,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.7929,,,,patrick agyemang||usa,,,0,0,out,out_of_tournament,0
 haji_wright__usa,Haji Wright,USA,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,,,,,,,,0,0,high_risk,high_risk,0
 christian_pulisic__usa,Christian Pulisic,USA,FWD,0,0,0,team_eliminated_r16,hold slået ud,,,,,,0.817,,,,christian pulisic||usa,,,0,0,high_risk,high_risk,0
