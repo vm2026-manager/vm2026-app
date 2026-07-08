@@ -1,285 +1,137 @@
 ﻿match_id,home,away,team_id,team_name,opponent_id,opponent_name,player_id,player_name,position,scorer_odds,source,scorer_fetched_at,scorer_fetched_label,note,stage,kickoff_dk
-92,MEX,ENG,ENG,England,MEX,Mexico,anthony_gordon__eng,Anthony Gordon,FWD,4,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-92,MEX,ENG,ENG,England,MEX,Mexico,bukayo_saka__eng,Bukayo Saka,FWD,4,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-92,MEX,ENG,ENG,England,MEX,Mexico,declan_rice__eng,Declan Rice,MID,6.75,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-92,MEX,ENG,ENG,England,MEX,Mexico,eberechi_eze__eng,Eberechi Eze,MID,4.25,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-92,MEX,ENG,ENG,England,MEX,Mexico,elliot_anderson__eng,Elliot Anderson,MID,8,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
 92,MEX,ENG,ENG,England,MEX,Mexico,harry_kane__eng,Harry Kane,FWD,2.32,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
 92,MEX,ENG,ENG,England,MEX,Mexico,ivan_toney__eng,Ivan Toney,FWD,2.6,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-92,MEX,ENG,ENG,England,MEX,Mexico,jordan_henderson__eng,Jordan Henderson,MID,8.5,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-92,MEX,ENG,ENG,England,MEX,Mexico,jude_bellingham__eng,Jude Bellingham,MID,4,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-92,MEX,ENG,ENG,England,MEX,Mexico,kobbie_mainoo__eng,Kobbie Mainoo,MID,8,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+92,MEX,ENG,ENG,England,MEX,Mexico,ollie_watkins__eng,Ollie Watkins,FWD,2.7,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
 92,MEX,ENG,ENG,England,MEX,Mexico,marcus_rashford__eng,Marcus Rashford,FWD,3.9,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+92,MEX,ENG,ENG,England,MEX,Mexico,anthony_gordon__eng,Anthony Gordon,FWD,4,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+92,MEX,ENG,ENG,England,MEX,Mexico,bukayo_saka__eng,Bukayo Saka,FWD,4,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+92,MEX,ENG,ENG,England,MEX,Mexico,jude_bellingham__eng,Jude Bellingham,MID,4,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+92,MEX,ENG,ENG,England,MEX,Mexico,eberechi_eze__eng,Eberechi Eze,MID,4.25,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
 92,MEX,ENG,ENG,England,MEX,Mexico,morgan_rogers__eng,Morgan Rogers,MID,4.25,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
 92,MEX,ENG,ENG,England,MEX,Mexico,noni_madueke__eng,Noni Madueke,FWD,4.25,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-92,MEX,ENG,ENG,England,MEX,Mexico,ollie_watkins__eng,Ollie Watkins,FWD,2.7,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-92,MEX,ENG,MEX,Mexico,ENG,England,alexis_vega__mex,Alexis Vega,FWD,4.25,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-92,MEX,ENG,MEX,Mexico,ENG,England,alvaro_fidalgo__mex,Alvaro Fidalgo,MID,6.5,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-92,MEX,ENG,MEX,Mexico,ENG,England,armando_gonzalez__mex,Armando Gonzalez,FWD,3.55,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-92,MEX,ENG,MEX,Mexico,ENG,England,brian_gutierrez__mex,Brian Gutierrez,MID,5,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-92,MEX,ENG,MEX,Mexico,ENG,England,cesar_huerta__mex,Cesar Huerta,MID,4.75,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-92,MEX,ENG,MEX,Mexico,ENG,England,edson_alvarez__mex,Edson Alvarez,MID,9,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-92,MEX,ENG,MEX,Mexico,ENG,England,erik_lira__mex,Erik Lira,MID,11,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-92,MEX,ENG,MEX,Mexico,ENG,England,guillermo_martinez__mex,Guillermo Martinez,FWD,3.4,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-92,MEX,ENG,MEX,Mexico,ENG,England,juli_n_qui_ones__mex,Julian Quinones,FWD,3.35,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-92,MEX,ENG,MEX,Mexico,ENG,England,luis_chavez__mex,Luis Chavez,MID,5.75,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-92,MEX,ENG,MEX,Mexico,ENG,England,luis_romo__mex,Luis Romo,MID,7.5,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-92,MEX,ENG,MEX,Mexico,ENG,England,obed_vargas__mex,Obed Vargas,MID,9.5,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-92,MEX,ENG,MEX,Mexico,ENG,England,orbel_n_pineda__mex,Orbelin Pineda,MID,6.25,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+92,MEX,ENG,ENG,England,MEX,Mexico,declan_rice__eng,Declan Rice,MID,6.75,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+92,MEX,ENG,ENG,England,MEX,Mexico,elliot_anderson__eng,Elliot Anderson,MID,8,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+92,MEX,ENG,ENG,England,MEX,Mexico,kobbie_mainoo__eng,Kobbie Mainoo,MID,8,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+92,MEX,ENG,ENG,England,MEX,Mexico,jordan_henderson__eng,Jordan Henderson,MID,8.5,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
 92,MEX,ENG,MEX,Mexico,ENG,England,ra_l_jim_nez__mex,Raul Jimenez,FWD,3.2,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-92,MEX,ENG,MEX,Mexico,ENG,England,roberto_alvarado__mex,Roberto Alvarado,MID,5.25,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+92,MEX,ENG,MEX,Mexico,ENG,England,juli_n_qui_ones__mex,Julian Quinones,FWD,3.35,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+92,MEX,ENG,MEX,Mexico,ENG,England,guillermo_martinez__mex,Guillermo Martinez,FWD,3.4,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
 92,MEX,ENG,MEX,Mexico,ENG,England,santiago_gimenez__mex,Santiago Gimenez,FWD,3.4,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-93,USA,BEL,BEL,Belgien,USA,USA,alexis_saelemaekers__bel,Alexis Saelemaekers,FWD,4.5,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-93,USA,BEL,BEL,Belgien,USA,USA,amadou_onana__bel,Amadou Onana,MID,7.5,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-93,USA,BEL,BEL,Belgien,USA,USA,axel_witsel__bel,Axel Witsel,MID,6.5,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+92,MEX,ENG,MEX,Mexico,ENG,England,armando_gonzalez__mex,Armando Gonzalez,FWD,3.55,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+92,MEX,ENG,MEX,Mexico,ENG,England,alexis_vega__mex,Alexis Vega,FWD,4.25,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+92,MEX,ENG,MEX,Mexico,ENG,England,cesar_huerta__mex,Cesar Huerta,MID,4.75,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+92,MEX,ENG,MEX,Mexico,ENG,England,brian_gutierrez__mex,Brian Gutierrez,MID,5,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+92,MEX,ENG,MEX,Mexico,ENG,England,roberto_alvarado__mex,Roberto Alvarado,MID,5.25,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+92,MEX,ENG,MEX,Mexico,ENG,England,luis_chavez__mex,Luis Chavez,MID,5.75,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+92,MEX,ENG,MEX,Mexico,ENG,England,orbel_n_pineda__mex,Orbelin Pineda,MID,6.25,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+92,MEX,ENG,MEX,Mexico,ENG,England,alvaro_fidalgo__mex,Alvaro Fidalgo,MID,6.5,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+92,MEX,ENG,MEX,Mexico,ENG,England,luis_romo__mex,Luis Romo,MID,7.5,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+92,MEX,ENG,MEX,Mexico,ENG,England,edson_alvarez__mex,Edson Alvarez,MID,9,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+92,MEX,ENG,MEX,Mexico,ENG,England,obed_vargas__mex,Obed Vargas,MID,9.5,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+92,MEX,ENG,MEX,Mexico,ENG,England,erik_lira__mex,Erik Lira,MID,11,Danske Spil / Oddset,2026-07-03T09:34:08+02:00,Oddset 03.07 kl. 09:34,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+93,USA,BEL,BEL,Belgien,USA,USA,romelu_lukaku__bel,Romelu Lukaku,FWD,2.36,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+93,USA,BEL,BEL,Belgien,USA,USA,matias_fernandez_pardo__bel,Matias Fernandez-Pardo,FWD,3.15,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
 93,USA,BEL,BEL,Belgien,USA,USA,charles_de_ketelaere__bel,Charles De Ketelaere,FWD,3.3,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-93,USA,BEL,BEL,Belgien,USA,USA,diego_moreira__bel,Diego Moreira,MID,5,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-93,USA,BEL,BEL,Belgien,USA,USA,dodi_lukebakio__bel,Dodi Lukebakio,FWD,3.6,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-93,USA,BEL,BEL,Belgien,USA,USA,hans_vanaken__bel,Hans Vanaken,MID,4.5,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-93,USA,BEL,BEL,Belgien,USA,USA,jeremy_doku__bel,Jeremy Doku,FWD,3.75,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
 93,USA,BEL,BEL,Belgien,USA,USA,kevin_de_bruyne__bel,Kevin De Bruyne,MID,3.35,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
 93,USA,BEL,BEL,Belgien,USA,USA,leandro_trossard__bel,Leandro Trossard,FWD,3.45,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-93,USA,BEL,BEL,Belgien,USA,USA,matias_fernandez_pardo__bel,Matias Fernandez-Pardo,FWD,3.15,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-93,USA,BEL,BEL,Belgien,USA,USA,nicolas_raskin__bel,Nicolas Raskin,MID,6.5,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-93,USA,BEL,BEL,Belgien,USA,USA,romelu_lukaku__bel,Romelu Lukaku,FWD,2.36,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+93,USA,BEL,BEL,Belgien,USA,USA,dodi_lukebakio__bel,Dodi Lukebakio,FWD,3.6,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+93,USA,BEL,BEL,Belgien,USA,USA,jeremy_doku__bel,Jeremy Doku,FWD,3.75,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+93,USA,BEL,BEL,Belgien,USA,USA,alexis_saelemaekers__bel,Alexis Saelemaekers,FWD,4.5,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+93,USA,BEL,BEL,Belgien,USA,USA,hans_vanaken__bel,Hans Vanaken,MID,4.5,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
 93,USA,BEL,BEL,Belgien,USA,USA,youri_tielemans__bel,Youri Tielemans,MID,4.75,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-93,USA,BEL,USA,USA,BEL,Belgien,brenden_aaronson__usa,Brenden Aaronson,MID,3.8,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-93,USA,BEL,USA,USA,BEL,Belgien,christian_pulisic__usa,Christian Pulisic,FWD,2.75,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-93,USA,BEL,USA,USA,BEL,Belgien,cristian_roldan__usa,Cristian Roldan,MID,6.5,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-93,USA,BEL,USA,USA,BEL,Belgien,giovanni_reyna__usa,Giovanni Reyna,MID,3.6,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+93,USA,BEL,BEL,Belgien,USA,USA,diego_moreira__bel,Diego Moreira,MID,5,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+93,USA,BEL,BEL,Belgien,USA,USA,axel_witsel__bel,Axel Witsel,MID,6.5,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+93,USA,BEL,BEL,Belgien,USA,USA,nicolas_raskin__bel,Nicolas Raskin,MID,6.5,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+93,USA,BEL,BEL,Belgien,USA,USA,amadou_onana__bel,Amadou Onana,MID,7.5,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
 93,USA,BEL,USA,USA,BEL,Belgien,haji_wright__usa,Haji Wright,FWD,2.6,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-93,USA,BEL,USA,USA,BEL,Belgien,malik_tillman__usa,Malik Tillman,MID,3.95,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
 93,USA,BEL,USA,USA,BEL,Belgien,ricardo_pepi__usa,Ricardo Pepi,FWD,2.6,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+93,USA,BEL,USA,USA,BEL,Belgien,christian_pulisic__usa,Christian Pulisic,FWD,2.75,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+93,USA,BEL,USA,USA,BEL,Belgien,giovanni_reyna__usa,Giovanni Reyna,MID,3.6,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+93,USA,BEL,USA,USA,BEL,Belgien,brenden_aaronson__usa,Brenden Aaronson,MID,3.8,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+93,USA,BEL,USA,USA,BEL,Belgien,malik_tillman__usa,Malik Tillman,MID,3.95,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
 93,USA,BEL,USA,USA,BEL,Belgien,sebastian_berhalter__usa,Sebastian Berhalter,MID,5,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-93,USA,BEL,USA,USA,BEL,Belgien,tyler_adams__usa,Tyler Adams,MID,7.25,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
 93,USA,BEL,USA,USA,BEL,Belgien,weston_mckennie__usa,Weston McKennie,MID,5,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-94,POR,ESP,ESP,Spanien,POR,Portugal,alex_baena__esp,Alex Baena,MID,4.75,Danske Spil / Oddset,2026-07-03T09:33:12+02:00,Oddset 03.07 kl. 09:33,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-94,POR,ESP,ESP,Spanien,POR,Portugal,dani_olmo__esp,Dani Olmo,MID,3.8,Danske Spil / Oddset,2026-07-03T09:33:12+02:00,Oddset 03.07 kl. 09:33,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-94,POR,ESP,ESP,Spanien,POR,Portugal,lamine_yamal__esp,Lamine Yamal,FWD,2.7,Danske Spil / Oddset,2026-07-03T09:33:12+02:00,Oddset 03.07 kl. 09:33,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-94,POR,ESP,ESP,Spanien,POR,Portugal,marcos_llorente__esp,Marcos Llorente,MID,11,Danske Spil / Oddset,2026-07-03T09:33:12+02:00,Oddset 03.07 kl. 09:33,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+93,USA,BEL,USA,USA,BEL,Belgien,cristian_roldan__usa,Cristian Roldan,MID,6.5,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+93,USA,BEL,USA,USA,BEL,Belgien,tyler_adams__usa,Tyler Adams,MID,7.25,Danske Spil / Oddset,2026-07-03T09:32:21+02:00,Oddset 03.07 kl. 09:32,Manuelt aflæst fra screenshots/PDF 03.07,R16,
 94,POR,ESP,ESP,Spanien,POR,Portugal,mikel_oyarzabal__esp,Mikel Oyarzabal,FWD,2.45,Danske Spil / Oddset,2026-07-03T09:33:12+02:00,Oddset 03.07 kl. 09:33,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-94,POR,ESP,ESP,Spanien,POR,Portugal,pedri__esp,Pedri,MID,7,Danske Spil / Oddset,2026-07-03T09:33:12+02:00,Oddset 03.07 kl. 09:33,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+94,POR,ESP,ESP,Spanien,POR,Portugal,lamine_yamal__esp,Lamine Yamal,FWD,2.7,Danske Spil / Oddset,2026-07-03T09:33:12+02:00,Oddset 03.07 kl. 09:33,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+94,POR,ESP,ESP,Spanien,POR,Portugal,dani_olmo__esp,Dani Olmo,MID,3.8,Danske Spil / Oddset,2026-07-03T09:33:12+02:00,Oddset 03.07 kl. 09:33,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+94,POR,ESP,ESP,Spanien,POR,Portugal,alex_baena__esp,Alex Baena,MID,4.75,Danske Spil / Oddset,2026-07-03T09:33:12+02:00,Oddset 03.07 kl. 09:33,Manuelt aflæst fra screenshots/PDF 03.07,R16,
 94,POR,ESP,ESP,Spanien,POR,Portugal,yeremy_pino__esp,Yeremy Pino,MID,5,Danske Spil / Oddset,2026-07-03T09:33:12+02:00,Oddset 03.07 kl. 09:33,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-94,POR,ESP,POR,Portugal,ESP,Spanien,bernardo_silva__por,Bernardo Silva,MID,7.5,Danske Spil / Oddset,2026-07-03T09:33:12+02:00,Oddset 03.07 kl. 09:33,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-94,POR,ESP,POR,Portugal,ESP,Spanien,bruno_fernandes__por,Bruno Fernandes,MID,5.25,Danske Spil / Oddset,2026-07-03T09:33:12+02:00,Oddset 03.07 kl. 09:33,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+94,POR,ESP,ESP,Spanien,POR,Portugal,pedri__esp,Pedri,MID,7,Danske Spil / Oddset,2026-07-03T09:33:12+02:00,Oddset 03.07 kl. 09:33,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+94,POR,ESP,ESP,Spanien,POR,Portugal,marcos_llorente__esp,Marcos Llorente,MID,11,Danske Spil / Oddset,2026-07-03T09:33:12+02:00,Oddset 03.07 kl. 09:33,Manuelt aflæst fra screenshots/PDF 03.07,R16,
 94,POR,ESP,POR,Portugal,ESP,Spanien,cristiano_ronaldo__por,Cristiano Ronaldo,FWD,2.9,Danske Spil / Oddset,2026-07-03T09:33:12+02:00,Oddset 03.07 kl. 09:33,Manuelt aflæst fra screenshots/PDF 03.07,R16,
 94,POR,ESP,POR,Portugal,ESP,Spanien,gon_alo_ramos__por,Goncalo Ramos,FWD,4,Danske Spil / Oddset,2026-07-03T09:33:12+02:00,Oddset 03.07 kl. 09:33,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-94,POR,ESP,POR,Portugal,ESP,Spanien,jo_o_neves__por,João Neves,MID,10.5,Danske Spil / Oddset,2026-07-03T09:33:12+02:00,Oddset 03.07 kl. 09:33,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-94,POR,ESP,POR,Portugal,ESP,Spanien,pedro_neto__por,Pedro Neto,FWD,7,Danske Spil / Oddset,2026-07-03T09:33:12+02:00,Oddset 03.07 kl. 09:33,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+94,POR,ESP,POR,Portugal,ESP,Spanien,bruno_fernandes__por,Bruno Fernandes,MID,5.25,Danske Spil / Oddset,2026-07-03T09:33:12+02:00,Oddset 03.07 kl. 09:33,Manuelt aflæst fra screenshots/PDF 03.07,R16,
 94,POR,ESP,POR,Portugal,ESP,Spanien,rafael_le_o__por,Rafael Leão,FWD,5.5,Danske Spil / Oddset,2026-07-03T09:33:12+02:00,Oddset 03.07 kl. 09:33,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+94,POR,ESP,POR,Portugal,ESP,Spanien,pedro_neto__por,Pedro Neto,FWD,7,Danske Spil / Oddset,2026-07-03T09:33:12+02:00,Oddset 03.07 kl. 09:33,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+94,POR,ESP,POR,Portugal,ESP,Spanien,bernardo_silva__por,Bernardo Silva,MID,7.5,Danske Spil / Oddset,2026-07-03T09:33:12+02:00,Oddset 03.07 kl. 09:33,Manuelt aflæst fra screenshots/PDF 03.07,R16,
+94,POR,ESP,POR,Portugal,ESP,Spanien,jo_o_neves__por,João Neves,MID,10.5,Danske Spil / Oddset,2026-07-03T09:33:12+02:00,Oddset 03.07 kl. 09:33,Manuelt aflæst fra screenshots/PDF 03.07,R16,
 94,POR,ESP,POR,Portugal,ESP,Spanien,vitinha__por,Vitinha,MID,11.5,Danske Spil / Oddset,2026-07-03T09:33:12+02:00,Oddset 03.07 kl. 09:33,Manuelt aflæst fra screenshots/PDF 03.07,R16,
-95,ARG,EGY,ARG,Argentina,EGY,Egypten,alexis_mac_allister__arg,Alexis Mac Allister,MID,7.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-95,ARG,EGY,ARG,Argentina,EGY,Egypten,cristian_romero__arg,Cristian Romero,DEF,10.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-95,ARG,EGY,ARG,Argentina,EGY,Egypten,enzo_fern_ndez__arg,Enzo Fernandez,MID,5.75,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-95,ARG,EGY,ARG,Argentina,EGY,Egypten,giovani_lo_celso__arg,Giovani Lo Celso,MID,5.25,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-95,ARG,EGY,ARG,Argentina,EGY,Egypten,juli_n_lvarez__arg,Julian Alvarez,FWD,2.65,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-95,ARG,EGY,ARG,Argentina,EGY,Egypten,lautaro_mart_nez__arg,Lautaro Martinez,FWD,2.55,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
 95,ARG,EGY,ARG,Argentina,EGY,Egypten,lionel_messi__arg,Lionel Messi,FWD,1.67,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+95,ARG,EGY,ARG,Argentina,EGY,Egypten,lautaro_mart_nez__arg,Lautaro Martinez,FWD,2.55,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+95,ARG,EGY,ARG,Argentina,EGY,Egypten,juli_n_lvarez__arg,Julian Alvarez,FWD,2.65,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+95,ARG,EGY,ARG,Argentina,EGY,Egypten,nico_paz__arg,Nico Paz,MID,5.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+95,ARG,EGY,ARG,Argentina,EGY,Egypten,thiago_almada__arg,Thiago Almada,MID,5.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+95,ARG,EGY,ARG,Argentina,EGY,Egypten,giovani_lo_celso__arg,Giovani Lo Celso,MID,5.25,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+95,ARG,EGY,ARG,Argentina,EGY,Egypten,enzo_fern_ndez__arg,Enzo Fernandez,MID,5.75,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+95,ARG,EGY,ARG,Argentina,EGY,Egypten,alexis_mac_allister__arg,Alexis Mac Allister,MID,7.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+95,ARG,EGY,ARG,Argentina,EGY,Egypten,rodrigo_de_paul__arg,Rodrigo de Paul,MID,8.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+95,ARG,EGY,ARG,Argentina,EGY,Egypten,cristian_romero__arg,Cristian Romero,DEF,10.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
 95,ARG,EGY,ARG,Argentina,EGY,Egypten,lisandro_martinez__arg,Lisandro Martinez,DEF,10.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
 95,ARG,EGY,ARG,Argentina,EGY,Egypten,nahuel_molina__arg,Nahuel Molina,DEF,11.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-95,ARG,EGY,ARG,Argentina,EGY,Egypten,nico_paz__arg,Nico Paz,MID,5.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
 95,ARG,EGY,ARG,Argentina,EGY,Egypten,nicol_s_tagliafico__arg,Nicolas Tagliafico,DEF,11.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-95,ARG,EGY,ARG,Argentina,EGY,Egypten,rodrigo_de_paul__arg,Rodrigo de Paul,MID,8.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-95,ARG,EGY,ARG,Argentina,EGY,Egypten,thiago_almada__arg,Thiago Almada,MID,5.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-95,ARG,EGY,EGY,Egypten,ARG,Argentina,emam_ashour__egy,Emam Ashour,MID,9.50,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-95,ARG,EGY,EGY,Egypten,ARG,Argentina,haissem_hassan__egy,Haissem Hassan,MID,13.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-95,ARG,EGY,EGY,Egypten,ARG,Argentina,hamdy_fathy__egy,Hamdy Fathy,MID,23.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-95,ARG,EGY,EGY,Egypten,ARG,Argentina,hamza_abdelkarim__egy,Hamza Abdelkarim,FWD,7.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-95,ARG,EGY,EGY,Egypten,ARG,Argentina,hossam_abdelmaguid__egy,Hossam Abdelmaguid,DEF,25.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-95,ARG,EGY,EGY,Egypten,ARG,Argentina,karim_hafez__egy,Karim Hafez,DEF,19.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-95,ARG,EGY,EGY,Egypten,ARG,Argentina,mahmoud_trezeguet__egy,Mahmoud Trezeguet,MID,9.50,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-95,ARG,EGY,EGY,Egypten,ARG,Argentina,marwan_ateya__egy,Marwan Ateya,MID,21.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-95,ARG,EGY,EGY,Egypten,ARG,Argentina,mohamed_hany__egy,Mohamed Hany,DEF,26.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
 95,ARG,EGY,EGY,Egypten,ARG,Argentina,mohamed_salah__egy,Mohamed Salah,FWD,5.50,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-95,ARG,EGY,EGY,Egypten,ARG,Argentina,mostafa_ziko__egy,Mostafa Ziko,MID,7.50,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
 95,ARG,EGY,EGY,Egypten,ARG,Argentina,omar_marmoush__egy,Omar Marmoush,FWD,6.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+95,ARG,EGY,EGY,Egypten,ARG,Argentina,hamza_abdelkarim__egy,Hamza Abdelkarim,FWD,7.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+95,ARG,EGY,EGY,Egypten,ARG,Argentina,mostafa_ziko__egy,Mostafa Ziko,MID,7.50,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+95,ARG,EGY,EGY,Egypten,ARG,Argentina,emam_ashour__egy,Emam Ashour,MID,9.50,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+95,ARG,EGY,EGY,Egypten,ARG,Argentina,mahmoud_trezeguet__egy,Mahmoud Trezeguet,MID,9.50,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+95,ARG,EGY,EGY,Egypten,ARG,Argentina,haissem_hassan__egy,Haissem Hassan,MID,13.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+95,ARG,EGY,EGY,Egypten,ARG,Argentina,karim_hafez__egy,Karim Hafez,DEF,19.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+95,ARG,EGY,EGY,Egypten,ARG,Argentina,marwan_ateya__egy,Marwan Ateya,MID,21.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+95,ARG,EGY,EGY,Egypten,ARG,Argentina,hamdy_fathy__egy,Hamdy Fathy,MID,23.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+95,ARG,EGY,EGY,Egypten,ARG,Argentina,hossam_abdelmaguid__egy,Hossam Abdelmaguid,DEF,25.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
 95,ARG,EGY,EGY,Egypten,ARG,Argentina,rami_rabia__egy,Rami Rabia,DEF,25.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+95,ARG,EGY,EGY,Egypten,ARG,Argentina,mohamed_hany__egy,Mohamed Hany,DEF,26.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
 95,ARG,EGY,EGY,Egypten,ARG,Argentina,yasser_ibrahim__egy,Yasser Ibrahim,DEF,26.00,Danske Spil / Oddset,2026-07-04T07:29:26+02:00,Oddset 04.07 kl. 07:29,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-96,SUI,COL,COL,Colombia,SUI,Schweiz,carlos_andres_gomez__col,Carlos Andres Gomez,MID,4.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-96,SUI,COL,COL,Colombia,SUI,Schweiz,daniel_mu_oz__col,Daniel Muñoz,DEF,7.50,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-96,SUI,COL,COL,Colombia,SUI,Schweiz,davinson_s_nchez__col,Davinson Sanchez,DEF,10.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-96,SUI,COL,COL,Colombia,SUI,Schweiz,deiver_machado__col,Deiver Machado,DEF,12.50,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-96,SUI,COL,COL,Colombia,SUI,Schweiz,gustavo_puerta__col,Gustavo Puerta,MID,7.50,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-96,SUI,COL,COL,Colombia,SUI,Schweiz,james_rodr_guez__col,James Rodriguez,MID,4.75,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-96,SUI,COL,COL,Colombia,SUI,Schweiz,jefferson_lerma__col,Jefferson Lerma,MID,6.75,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-96,SUI,COL,COL,Colombia,SUI,Schweiz,jhon_arias__col,Jhon Arias,MID,4.50,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-96,SUI,COL,COL,Colombia,SUI,Schweiz,jhon_c_rdoba__col,Jhon Cordoba,FWD,3.70,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-96,SUI,COL,COL,Colombia,SUI,Schweiz,jhon_lucum__col,Jhon Lucumi,DEF,13.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-96,SUI,COL,COL,Colombia,SUI,Schweiz,johan_mojica__col,Johan Mojica,DEF,12.50,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-96,SUI,COL,COL,Colombia,SUI,Schweiz,jorge_carrascal__col,Jorge Carrascal,MID,6.75,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-96,SUI,COL,COL,Colombia,SUI,Schweiz,juan_portilla__col,Juan Portilla,MID,10.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-96,SUI,COL,COL,Colombia,SUI,Schweiz,kevin_casta_o__col,Kevin Castano,MID,13.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
 96,SUI,COL,COL,Colombia,SUI,Schweiz,luis_d_az__col,Luis Diaz,FWD,3.30,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
 96,SUI,COL,COL,Colombia,SUI,Schweiz,luis_suarez_charris__col,Luis Suarez Charris,FWD,3.30,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+96,SUI,COL,COL,Colombia,SUI,Schweiz,jhon_c_rdoba__col,Jhon Cordoba,FWD,3.70,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+96,SUI,COL,COL,Colombia,SUI,Schweiz,carlos_andres_gomez__col,Carlos Andres Gomez,MID,4.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+96,SUI,COL,COL,Colombia,SUI,Schweiz,jhon_arias__col,Jhon Arias,MID,4.50,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+96,SUI,COL,COL,Colombia,SUI,Schweiz,james_rodr_guez__col,James Rodriguez,MID,4.75,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+96,SUI,COL,COL,Colombia,SUI,Schweiz,jefferson_lerma__col,Jefferson Lerma,MID,6.75,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+96,SUI,COL,COL,Colombia,SUI,Schweiz,jorge_carrascal__col,Jorge Carrascal,MID,6.75,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+96,SUI,COL,COL,Colombia,SUI,Schweiz,daniel_mu_oz__col,Daniel Muñoz,DEF,7.50,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+96,SUI,COL,COL,Colombia,SUI,Schweiz,gustavo_puerta__col,Gustavo Puerta,MID,7.50,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+96,SUI,COL,COL,Colombia,SUI,Schweiz,davinson_s_nchez__col,Davinson Sanchez,DEF,10.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+96,SUI,COL,COL,Colombia,SUI,Schweiz,juan_portilla__col,Juan Portilla,MID,10.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
 96,SUI,COL,COL,Colombia,SUI,Schweiz,santiago_arias__col,Santiago Arias,DEF,12.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
 96,SUI,COL,COL,Colombia,SUI,Schweiz,willer_ditta__col,Willer Ditta,DEF,12.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
 96,SUI,COL,COL,Colombia,SUI,Schweiz,,Yaser Asprilla,,12.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-96,SUI,COL,SUI,Schweiz,COL,Colombia,aurele_amenda__sui,Aurele Amenda,DEF,16.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+96,SUI,COL,COL,Colombia,SUI,Schweiz,deiver_machado__col,Deiver Machado,DEF,12.50,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+96,SUI,COL,COL,Colombia,SUI,Schweiz,johan_mojica__col,Johan Mojica,DEF,12.50,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+96,SUI,COL,COL,Colombia,SUI,Schweiz,jhon_lucum__col,Jhon Lucumi,DEF,13.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+96,SUI,COL,COL,Colombia,SUI,Schweiz,kevin_casta_o__col,Kevin Castano,MID,13.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
 96,SUI,COL,SUI,Schweiz,COL,Colombia,breel_embolo__sui,Breel Embolo,FWD,3.40,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
 96,SUI,COL,SUI,Schweiz,COL,Colombia,cedric_itten__sui,Cedric Itten,FWD,4.25,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-96,SUI,COL,SUI,Schweiz,COL,Colombia,christian_fassnacht__sui,Christian Fassnacht,FWD,8.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
 96,SUI,COL,SUI,Schweiz,COL,Colombia,dan_ndoye__sui,Dan Ndoye,FWD,4.50,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-96,SUI,COL,SUI,Schweiz,COL,Colombia,djibril_sow__sui,Djibril Sow,MID,12.50,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-96,SUI,COL,SUI,Schweiz,COL,Colombia,fabian_rieder__sui,Fabian Rieder,MID,9.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-96,SUI,COL,SUI,Schweiz,COL,Colombia,granit_xhaka__sui,Granit Xhaka,MID,7.50,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+96,SUI,COL,SUI,Schweiz,COL,Colombia,mohamed_zeki_amdouni__sui,Mohamed Zeki Amdouni,FWD,5.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+96,SUI,COL,SUI,Schweiz,COL,Colombia,ruben_vargas__sui,Ruben Vargas,FWD,5.25,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
 96,SUI,COL,SUI,Schweiz,COL,Colombia,johan_manzambi__sui,Johan Manzambi,MID,5.50,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-96,SUI,COL,SUI,Schweiz,COL,Colombia,manuel_akanji__sui,Manuel Akanji,DEF,16.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+96,SUI,COL,SUI,Schweiz,COL,Colombia,granit_xhaka__sui,Granit Xhaka,MID,7.50,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+96,SUI,COL,SUI,Schweiz,COL,Colombia,christian_fassnacht__sui,Christian Fassnacht,FWD,8.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+96,SUI,COL,SUI,Schweiz,COL,Colombia,fabian_rieder__sui,Fabian Rieder,MID,9.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+96,SUI,COL,SUI,Schweiz,COL,Colombia,remo_freuler__sui,Remo Freuler,MID,11.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
 96,SUI,COL,SUI,Schweiz,COL,Colombia,michel_aebischer__sui,Michel Aebischer,MID,12.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
 96,SUI,COL,SUI,Schweiz,COL,Colombia,miro_muheim__sui,Miro Muheim,DEF,12.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-96,SUI,COL,SUI,Schweiz,COL,Colombia,mohamed_zeki_amdouni__sui,Mohamed Zeki Amdouni,FWD,5.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-96,SUI,COL,SUI,Schweiz,COL,Colombia,nico_elvedi__sui,Nico Elvedi,DEF,16.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-96,SUI,COL,SUI,Schweiz,COL,Colombia,remo_freuler__sui,Remo Freuler,MID,11.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+96,SUI,COL,SUI,Schweiz,COL,Colombia,djibril_sow__sui,Djibril Sow,MID,12.50,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
 96,SUI,COL,SUI,Schweiz,COL,Colombia,ricardo_rodr_guez__sui,Ricardo Rodriguez,DEF,13.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-96,SUI,COL,SUI,Schweiz,COL,Colombia,ruben_vargas__sui,Ruben Vargas,FWD,5.25,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
 96,SUI,COL,SUI,Schweiz,COL,Colombia,silvan_widmer__sui,Silvan Widmer,DEF,13.50,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
-,BRA,NOR,BRA,Brasilien,NOR,Norge,bruno_guimaraes__bra,Bruno Guimaraes,MID,5.30,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
-,BRA,NOR,BRA,Brasilien,NOR,Norge,casemiro__bra,Casemiro,MID,5.75,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
-,BRA,NOR,BRA,Brasilien,NOR,Norge,danilo_dos_santos__bra,Danilo dos Santos,MID,4.30,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
-,BRA,NOR,BRA,Brasilien,NOR,Norge,ederson__bra,Ederson,MID,4.50,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
-,BRA,NOR,BRA,Brasilien,NOR,Norge,endrick__bra,Endrick,FWD,2.60,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
-,BRA,NOR,BRA,Brasilien,NOR,Norge,fabinho__bra,Fabinho,MID,6.50,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
-,BRA,NOR,BRA,Brasilien,NOR,Norge,gabriel_martinelli__bra,Gabriel Martinelli,FWD,3.50,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
-,BRA,NOR,BRA,Brasilien,NOR,Norge,igor_thiago__bra,Igor Thiago,FWD,2.55,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
-,BRA,NOR,BRA,Brasilien,NOR,Norge,luiz_henrique__bra,Luiz Henrique,FWD,3.40,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
-,BRA,NOR,BRA,Brasilien,NOR,Norge,matheus_cunha__bra,Matheus Cunha,FWD,2.60,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
-,BRA,NOR,BRA,Brasilien,NOR,Norge,rayan__bra,Rayan,FWD,3.05,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
-,BRA,NOR,BRA,Brasilien,NOR,Norge,vinicius_j_nior__bra,Vinicius Junior,FWD,2.25,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
-,CAN,MAR,CAN,Canada,MAR,Marokko,ali_ahmed__can,Ali Ahmed,MID,6.25,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,CAN,MAR,CAN,Canada,MAR,Marokko,cyle_christopher_larin__can,Cyle Christopher Larin,FWD,4.00,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,CAN,MAR,CAN,Canada,MAR,Marokko,jacob_shaffelburg__can,Jacob Shaffelburg,MID,5.50,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,CAN,MAR,CAN,Canada,MAR,Marokko,jonathan_david__can,Jonathan David,FWD,3.60,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,CAN,MAR,CAN,Canada,MAR,Marokko,jonathan_osorio__can,Jonathan Osorio,MID,6.25,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,CAN,MAR,CAN,Canada,MAR,Marokko,liam_millar__can,Liam Millar,MID,6.00,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,CAN,MAR,CAN,Canada,MAR,Marokko,mathieu_choiniere__can,Mathieu Choiniere,MID,8.50,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,CAN,MAR,CAN,Canada,MAR,Marokko,nathan_saliba__can,Nathan Saliba,MID,7.25,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,CAN,MAR,CAN,Canada,MAR,Marokko,stephen_eustaquio__can,Stephen Eustaquio,MID,9.00,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,CAN,MAR,CAN,Canada,MAR,Marokko,tajon_buchanan__can,Tajon Buchanan,MID,3.60,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,CAN,MAR,CAN,Canada,MAR,Marokko,tani_oluwaseyi__can,Tani Oluwaseyi,FWD,4.00,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,FRA,PAR,FRA,Frankrig,PAR,Paraguay,adrien_rabiot__fra,Adrien Rabiot,MID,4.25,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,FRA,PAR,FRA,Frankrig,PAR,Paraguay,aur_lien_tchouam_ni__fra,Aurelien Tchouameni,MID,5.25,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,FRA,PAR,FRA,Frankrig,PAR,Paraguay,bradley_barcola__fra,Bradley Barcola,MID,2.48,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,FRA,PAR,FRA,Frankrig,PAR,Paraguay,d_sir_dou__fra,Desire Doue,FWD,2.37,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,FRA,PAR,FRA,Frankrig,PAR,Paraguay,jean_philippe_mateta__fra,Jean-Philippe Mateta,FWD,2.01,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,FRA,PAR,FRA,Frankrig,PAR,Paraguay,kylian_mbapp__fra,Kylian Mbappe,FWD,1.50,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,FRA,PAR,FRA,Frankrig,PAR,Paraguay,marcus_thuram__fra,Marcus Thuram,FWD,2.00,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,FRA,PAR,FRA,Frankrig,PAR,Paraguay,michael_olise__fra,Michael Olise,FWD,2.45,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,FRA,PAR,FRA,Frankrig,PAR,Paraguay,n_golo_kant__fra,N'Golo Kante,MID,5.00,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,FRA,PAR,FRA,Frankrig,PAR,Paraguay,ousmane_demb_l__fra,Ousmane Dembele,FWD,2.04,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,FRA,PAR,FRA,Frankrig,PAR,Paraguay,warren_za_re_emery__fra,Warren Zaire-Emery,MID,2.75,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,MAR,CAN,MAR,Marokko,CAN,Canada,amine_sbai__mar,Amine Sbai,FWD,3.80,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,MAR,CAN,MAR,Marokko,CAN,Canada,ayoub_el_kaabi__mar,Ayoub El Kaabi,FWD,2.60,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,MAR,CAN,MAR,Marokko,CAN,Canada,ayyoub_bouaddi__mar,Ayyoub Bouaddi,MID,7.50,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,MAR,CAN,MAR,Marokko,CAN,Canada,bilal_el_khannouss__mar,Bilal El Khannouss,MID,4.25,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,MAR,CAN,MAR,Marokko,CAN,Canada,brahim_d_az__mar,Brahim Diaz,FWD,3.05,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,MAR,CAN,MAR,Marokko,CAN,Canada,chemsdine_talbi__mar,Chemsdine Talbi,FWD,4.00,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,MAR,CAN,MAR,Marokko,CAN,Canada,ismael_saibari__mar,Ismael Saibari,MID,2.35,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,MAR,CAN,MAR,Marokko,CAN,Canada,sofyan_amrabat__mar,Sofyan Amrabat,MID,7.50,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,MAR,CAN,MAR,Marokko,CAN,Canada,soufiane_rahimi__mar,Soufiane Rahimi,MID,2.70,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,NOR,BRA,NOR,Norge,BRA,Brasilien,alexander_s_rloth__nor,Alexander Sørloth,FWD,3.50,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
-,NOR,BRA,NOR,Norge,BRA,Brasilien,andreas_schjelderup__nor,Andreas Schjelderup,MID,5.25,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
-,NOR,BRA,NOR,Norge,BRA,Brasilien,antonio_nusa__nor,Antonio Nusa,MID,5.00,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
-,NOR,BRA,NOR,Norge,BRA,Brasilien,erling_haaland__nor,Erling Haaland,FWD,2.25,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
-,NOR,BRA,NOR,Norge,BRA,Brasilien,fredrik_aursnes__nor,Fredrik Aursnes,MID,8.00,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
-,NOR,BRA,NOR,Norge,BRA,Brasilien,jens_petter_hauge__nor,Jens Petter Hauge,MID,4.50,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
-,NOR,BRA,NOR,Norge,BRA,Brasilien,j_rgen_strand_larsen__nor,Jørgen Strand Larsen,FWD,3.60,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
-,NOR,BRA,NOR,Norge,BRA,Brasilien,kristian_thorstvedt__nor,Kristian Thorstvedt,MID,5.25,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
-,NOR,BRA,NOR,Norge,BRA,Brasilien,martin_degaard__nor,Martin Ødegaard,MID,6.30,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
-,NOR,BRA,NOR,Norge,BRA,Brasilien,morten_thorsby__nor,Morten Thorsby,MID,6.50,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
-,NOR,BRA,NOR,Norge,BRA,Brasilien,oscar_bobb__nor,Oscar Bobb,MID,5.25,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
-,NOR,BRA,NOR,Norge,BRA,Brasilien,patrick_berg__nor,Patrick Berg,MID,7.25,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
-,NOR,BRA,NOR,Norge,BRA,Brasilien,sander_berge__nor,Sander Berge,MID,10.00,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
-,NOR,BRA,NOR,Norge,BRA,Brasilien,thelo_aasgaard__nor,Thelo Aasgaard,MID,5.00,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
-,PAR,FRA,PAR,Paraguay,FRA,Frankrig,alejandro_kaku_romero_gamarra__par,"Alejandro ""Kaku"" Romero Gamarra",MID,6.75,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,PAR,FRA,PAR,Paraguay,FRA,Frankrig,alex_arce__par,Alex Arce,FWD,5.00,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,PAR,FRA,PAR,Paraguay,FRA,Frankrig,andr_s_cubas__par,Andres Cubas,MID,13.00,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,PAR,FRA,PAR,Paraguay,FRA,Frankrig,antonio_sanabria__par,Antonio Sanabria,FWD,5.25,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,PAR,FRA,PAR,Paraguay,FRA,Frankrig,dami_n_bobadilla__par,Damian Bobadilla,MID,9.75,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,PAR,FRA,PAR,Paraguay,FRA,Frankrig,diego_g_mez__par,Diego Gomez,MID,7.30,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,PAR,FRA,PAR,Paraguay,FRA,Frankrig,gabriel_avalos__par,Gabriel Avalos,FWD,5.50,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,PAR,FRA,PAR,Paraguay,FRA,Frankrig,gustavo_caballero__par,Gustavo Caballero,MID,6.50,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,PAR,FRA,PAR,Paraguay,FRA,Frankrig,isidro_pitta__par,Isidro Pitta,FWD,5.50,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,PAR,FRA,PAR,Paraguay,FRA,Frankrig,julio_enciso__par,Julio Enciso,FWD,5.50,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,PAR,FRA,PAR,Paraguay,FRA,Frankrig,miguel_almir_n__par,Miguel Almiron,MID,6.30,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-,PAR,FRA,PAR,Paraguay,FRA,Frankrig,ram_n_sosa__par,Ramon Sosa,MID,7.25,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
-99,NOR,ENG,NOR,Norge,ENG,England,erling_haaland__nor,Erling Haaland,FWD,2.15,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,NOR,Norge,ENG,England,j_rgen_strand_larsen__nor,Jørgen Strand Larsen,FWD,3.40,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,NOR,Norge,ENG,England,alexander_s_rloth__nor,Alexander Sørloth,FWD,3.45,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,NOR,Norge,ENG,England,jens_petter_hauge__nor,Jens Petter Hauge,MID,4.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,NOR,Norge,ENG,England,thelo_aasgaard__nor,Thelo Aasgaard,MID,4.25,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,NOR,Norge,ENG,England,andreas_schjelderup__nor,Andreas Schjelderup,MID,4.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,NOR,Norge,ENG,England,antonio_nusa__nor,Antonio Nusa,MID,4.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,NOR,Norge,ENG,England,oscar_bobb__nor,Oscar Bobb,MID,4.75,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,NOR,Norge,ENG,England,kristian_thorstvedt__nor,Kristian Thorstvedt,MID,5.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,NOR,Norge,ENG,England,martin_degaard__nor,Martin Ødegaard,MID,6.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,NOR,Norge,ENG,England,morten_thorsby__nor,Morten Thorsby,MID,6.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,NOR,Norge,ENG,England,patrick_berg__nor,Patrick Berg,MID,7.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,NOR,Norge,ENG,England,fredrik_aursnes__nor,Fredrik Aursnes,MID,7.25,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,NOR,Norge,ENG,England,sander_berge__nor,Sander Berge,MID,8.75,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,NOR,Norge,ENG,England,henrik_falchener__nor,Henrik Falchener,DEF,9.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,NOR,Norge,ENG,England,julian_ryerson__nor,Julian Ryerson,DEF,9.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,NOR,Norge,ENG,England,david_m_ller_wolfe__nor,David Møller Wolfe,DEF,9.25,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,NOR,Norge,ENG,England,leo_ostigard__nor,Leo Østigård,DEF,9.25,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,NOR,Norge,ENG,England,fredrik_andr_bj_rkan__nor,Fredrik Andre Bjørkan,DEF,9.25,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,NOR,Norge,ENG,England,marcus_holmgren_pedersen__nor,Marcus Holmgren Pedersen,DEF,9.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,NOR,Norge,ENG,England,kristoffer_ajer__nor,Kristoffer Ajer,DEF,10.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,NOR,Norge,ENG,England,torbjorn_heggem__nor,Torbjørn Heggem,DEF,10.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,NOR,Norge,ENG,England,sondre_langas__nor,Sondre Langås,DEF,10.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,ENG,England,NOR,Norge,harry_kane__eng,Harry Kane,FWD,1.87,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,ENG,England,NOR,Norge,ivan_toney__eng,Ivan Toney,FWD,2.17,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,ENG,England,NOR,Norge,ollie_watkins__eng,Ollie Watkins,FWD,2.24,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,ENG,England,NOR,Norge,jude_bellingham__eng,Jude Bellingham,MID,3.10,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,ENG,England,NOR,Norge,marcus_rashford__eng,Marcus Rashford,FWD,3.15,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,ENG,England,NOR,Norge,anthony_gordon__eng,Anthony Gordon,FWD,3.25,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,ENG,England,NOR,Norge,bukayo_saka__eng,Bukayo Saka,FWD,3.35,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,ENG,England,NOR,Norge,noni_madueke__eng,Noni Madueke,FWD,3.45,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,ENG,England,NOR,Norge,eberechi_eze__eng,Eberechi Eze,MID,3.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,ENG,England,NOR,Norge,morgan_rogers__eng,Morgan Rogers,MID,3.80,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,ENG,England,NOR,Norge,declan_rice__eng,Declan Rice,MID,5.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,ENG,England,NOR,Norge,nico_o_reilly__eng,Nico O'Reilly,DEF,6.25,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,ENG,England,NOR,Norge,elliot_anderson__eng,Elliot Anderson,MID,6.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,ENG,England,NOR,Norge,jordan_henderson__eng,Jordan Henderson,MID,6.75,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,ENG,England,NOR,Norge,kobbie_mainoo__eng,Kobbie Mainoo,MID,7.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,ENG,England,NOR,Norge,reece_james__eng,Reece James,DEF,7.25,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,ENG,England,NOR,Norge,marc_gu_hi__eng,Marc Guehi,DEF,7.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,ENG,England,NOR,Norge,trevoh_chalobah__eng,Trevoh Chalobah,DEF,7.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,ENG,England,NOR,Norge,dan_burn__eng,Dan Burn,DEF,7.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,ENG,England,NOR,Norge,djed_spence__eng,Djed Spence,DEF,8.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,ENG,England,NOR,Norge,john_stones__eng,John Stones,DEF,8.75,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-99,NOR,ENG,ENG,England,NOR,Norge,ezri_konsa__eng,Ezri Konsa,DEF,9.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
-98,ESP,BEL,ESP,Spanien,BEL,Belgien,mikel_oyarzabal__esp,Mikel Oyarzabal,FWD,2.21,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,ESP,Spanien,BEL,Belgien,lamine_yamal__esp,Lamine Yamal,FWD,2.24,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,ESP,Spanien,BEL,Belgien,ferr_n_torres__esp,Ferran Torres,FWD,2.55,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,ESP,Spanien,BEL,Belgien,borja_iglesias__esp,Borja Iglesias,FWD,2.75,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,ESP,Spanien,BEL,Belgien,dani_olmo__esp,Dani Olmo,MID,3.35,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,ESP,Spanien,BEL,Belgien,mikel_merino__esp,Mikel Merino,MID,3.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,ESP,Spanien,BEL,Belgien,alex_baena__esp,Alex Baena,MID,3.65,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,ESP,Spanien,BEL,Belgien,victor_munoz__esp,Victor Munoz,FWD,3.65,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,ESP,Spanien,BEL,Belgien,yeremy_pino__esp,Yeremy Pino,MID,3.80,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,ESP,Spanien,BEL,Belgien,fabian_ruiz__esp,Fabian Ruiz,MID,4.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,ESP,Spanien,BEL,Belgien,alejandro_alex_grimaldo__esp,Alejandro 'Alex' Grimaldo,DEF,4.75,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,ESP,Spanien,BEL,Belgien,pablo_gavi__esp,Pablo Gavi,MID,5.25,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,ESP,Spanien,BEL,Belgien,rodri_hernandez__esp,Rodri Hernandez,MID,5.25,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,ESP,Spanien,BEL,Belgien,pedri__esp,Pedri,MID,5.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,ESP,Spanien,BEL,Belgien,marcos_llorente__esp,Marcos Llorente,MID,6.75,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,ESP,Spanien,BEL,Belgien,mart_n_zubimendi__esp,Martin Zubimendi,MID,6.75,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,ESP,Spanien,BEL,Belgien,pedro_porro__esp,Pedro Porro,DEF,7.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,ESP,Spanien,BEL,Belgien,aymeric_laporte__esp,Aymeric Laporte,DEF,7.25,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,ESP,Spanien,BEL,Belgien,marc_cucurella__esp,Marc Cucurella,DEF,7.25,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,ESP,Spanien,BEL,Belgien,marc_pubill__esp,Marc Pubill,DEF,7.25,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,ESP,Spanien,BEL,Belgien,pau_cubars__esp,Pau Cubarsi,DEF,7.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,BEL,Belgien,ESP,Spanien,romelu_lukaku__bel,Romelu Lukaku,FWD,3.40,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,BEL,Belgien,ESP,Spanien,charles_de_ketelaere__bel,Charles De Ketelaere,FWD,3.85,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,BEL,Belgien,ESP,Spanien,kevin_de_bruyne__bel,Kevin De Bruyne,MID,4.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,BEL,Belgien,ESP,Spanien,leandro_trossard__bel,Leandro Trossard,FWD,4.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,BEL,Belgien,ESP,Spanien,jeremy_doku__bel,Jeremy Doku,FWD,5.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,BEL,Belgien,ESP,Spanien,dodi_lukebakio__bel,Dodi Lukebakio,FWD,5.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,BEL,Belgien,ESP,Spanien,hans_vanaken__bel,Hans Vanaken,MID,6.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,BEL,Belgien,ESP,Spanien,youri_tielemans__bel,Youri Tielemans,MID,6.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,BEL,Belgien,ESP,Spanien,maxim_de_cuyper__bel,Maxim De Cuyper,DEF,7.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,BEL,Belgien,ESP,Spanien,nicolas_raskin__bel,Nicolas Raskin,MID,8.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,BEL,Belgien,ESP,Spanien,brandon_mechele__bel,Brandon Mechele,DEF,10.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,BEL,Belgien,ESP,Spanien,nathan_ngoy__bel,Nathan Ngoy,DEF,10.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
-98,ESP,BEL,BEL,Belgien,ESP,Spanien,timothy_castagne__bel,Timothy Castagne,DEF,11.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+96,SUI,COL,SUI,Schweiz,COL,Colombia,aurele_amenda__sui,Aurele Amenda,DEF,16.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+96,SUI,COL,SUI,Schweiz,COL,Colombia,manuel_akanji__sui,Manuel Akanji,DEF,16.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
+96,SUI,COL,SUI,Schweiz,COL,Colombia,nico_elvedi__sui,Nico Elvedi,DEF,16.00,Danske Spil / Oddset,2026-07-04T07:28:51+02:00,Oddset 04.07 kl. 07:28,Manuelt aflæst fra screenshots/PDF 04.07,R16,
 97,FRA,MAR,FRA,Frankrig,MAR,Marokko,kylian_mbapp__fra,Kylian Mbappe,FWD,1.74,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-09 22:00
 97,FRA,MAR,FRA,Frankrig,MAR,Marokko,marcus_thuram__fra,Marcus Thuram,FWD,2.41,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-09 22:00
 97,FRA,MAR,FRA,Frankrig,MAR,Marokko,jean_philippe_mateta__fra,Jean-Philippe Mateta,FWD,2.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-09 22:00
@@ -325,3 +177,197 @@
 97,FRA,MAR,MAR,Marokko,FRA,Frankrig,noussair_mazraoui__mar,Noussair Mazraoui,DEF,12.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-09 22:00
 97,FRA,MAR,MAR,Marokko,FRA,Frankrig,redouane_halhal__mar,Redouane Halhal,DEF,12.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-09 22:00
 97,FRA,MAR,MAR,Marokko,FRA,Frankrig,anass_salah_eddine__mar,Anass Salah-Eddine,DEF,12.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-09 22:00
+98,ESP,BEL,BEL,Belgien,ESP,Spanien,romelu_lukaku__bel,Romelu Lukaku,FWD,3.40,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,BEL,Belgien,ESP,Spanien,charles_de_ketelaere__bel,Charles De Ketelaere,FWD,3.85,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,BEL,Belgien,ESP,Spanien,kevin_de_bruyne__bel,Kevin De Bruyne,MID,4.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,BEL,Belgien,ESP,Spanien,leandro_trossard__bel,Leandro Trossard,FWD,4.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,BEL,Belgien,ESP,Spanien,jeremy_doku__bel,Jeremy Doku,FWD,5.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,BEL,Belgien,ESP,Spanien,dodi_lukebakio__bel,Dodi Lukebakio,FWD,5.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,BEL,Belgien,ESP,Spanien,hans_vanaken__bel,Hans Vanaken,MID,6.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,BEL,Belgien,ESP,Spanien,youri_tielemans__bel,Youri Tielemans,MID,6.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,BEL,Belgien,ESP,Spanien,maxim_de_cuyper__bel,Maxim De Cuyper,DEF,7.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,BEL,Belgien,ESP,Spanien,nicolas_raskin__bel,Nicolas Raskin,MID,8.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,BEL,Belgien,ESP,Spanien,brandon_mechele__bel,Brandon Mechele,DEF,10.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,BEL,Belgien,ESP,Spanien,nathan_ngoy__bel,Nathan Ngoy,DEF,10.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,BEL,Belgien,ESP,Spanien,timothy_castagne__bel,Timothy Castagne,DEF,11.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,ESP,Spanien,BEL,Belgien,mikel_oyarzabal__esp,Mikel Oyarzabal,FWD,2.21,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,ESP,Spanien,BEL,Belgien,lamine_yamal__esp,Lamine Yamal,FWD,2.24,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,ESP,Spanien,BEL,Belgien,ferr_n_torres__esp,Ferran Torres,FWD,2.55,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,ESP,Spanien,BEL,Belgien,borja_iglesias__esp,Borja Iglesias,FWD,2.75,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,ESP,Spanien,BEL,Belgien,dani_olmo__esp,Dani Olmo,MID,3.35,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,ESP,Spanien,BEL,Belgien,mikel_merino__esp,Mikel Merino,MID,3.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,ESP,Spanien,BEL,Belgien,alex_baena__esp,Alex Baena,MID,3.65,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,ESP,Spanien,BEL,Belgien,victor_munoz__esp,Victor Munoz,FWD,3.65,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,ESP,Spanien,BEL,Belgien,yeremy_pino__esp,Yeremy Pino,MID,3.80,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,ESP,Spanien,BEL,Belgien,fabian_ruiz__esp,Fabian Ruiz,MID,4.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,ESP,Spanien,BEL,Belgien,alejandro_alex_grimaldo__esp,Alejandro 'Alex' Grimaldo,DEF,4.75,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,ESP,Spanien,BEL,Belgien,pablo_gavi__esp,Pablo Gavi,MID,5.25,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,ESP,Spanien,BEL,Belgien,rodri_hernandez__esp,Rodri Hernandez,MID,5.25,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,ESP,Spanien,BEL,Belgien,pedri__esp,Pedri,MID,5.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,ESP,Spanien,BEL,Belgien,marcos_llorente__esp,Marcos Llorente,MID,6.75,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,ESP,Spanien,BEL,Belgien,mart_n_zubimendi__esp,Martin Zubimendi,MID,6.75,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,ESP,Spanien,BEL,Belgien,pedro_porro__esp,Pedro Porro,DEF,7.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,ESP,Spanien,BEL,Belgien,aymeric_laporte__esp,Aymeric Laporte,DEF,7.25,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,ESP,Spanien,BEL,Belgien,marc_cucurella__esp,Marc Cucurella,DEF,7.25,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,ESP,Spanien,BEL,Belgien,marc_pubill__esp,Marc Pubill,DEF,7.25,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+98,ESP,BEL,ESP,Spanien,BEL,Belgien,pau_cubars__esp,Pau Cubarsi,DEF,7.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-10 21:00
+99,NOR,ENG,ENG,England,NOR,Norge,harry_kane__eng,Harry Kane,FWD,1.87,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,ENG,England,NOR,Norge,ivan_toney__eng,Ivan Toney,FWD,2.17,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,ENG,England,NOR,Norge,ollie_watkins__eng,Ollie Watkins,FWD,2.24,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,ENG,England,NOR,Norge,jude_bellingham__eng,Jude Bellingham,MID,3.10,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,ENG,England,NOR,Norge,marcus_rashford__eng,Marcus Rashford,FWD,3.15,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,ENG,England,NOR,Norge,anthony_gordon__eng,Anthony Gordon,FWD,3.25,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,ENG,England,NOR,Norge,bukayo_saka__eng,Bukayo Saka,FWD,3.35,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,ENG,England,NOR,Norge,noni_madueke__eng,Noni Madueke,FWD,3.45,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,ENG,England,NOR,Norge,eberechi_eze__eng,Eberechi Eze,MID,3.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,ENG,England,NOR,Norge,morgan_rogers__eng,Morgan Rogers,MID,3.80,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,ENG,England,NOR,Norge,declan_rice__eng,Declan Rice,MID,5.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,ENG,England,NOR,Norge,nico_o_reilly__eng,Nico O'Reilly,DEF,6.25,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,ENG,England,NOR,Norge,elliot_anderson__eng,Elliot Anderson,MID,6.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,ENG,England,NOR,Norge,jordan_henderson__eng,Jordan Henderson,MID,6.75,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,ENG,England,NOR,Norge,kobbie_mainoo__eng,Kobbie Mainoo,MID,7.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,ENG,England,NOR,Norge,reece_james__eng,Reece James,DEF,7.25,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,ENG,England,NOR,Norge,marc_gu_hi__eng,Marc Guehi,DEF,7.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,ENG,England,NOR,Norge,trevoh_chalobah__eng,Trevoh Chalobah,DEF,7.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,ENG,England,NOR,Norge,dan_burn__eng,Dan Burn,DEF,7.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,ENG,England,NOR,Norge,djed_spence__eng,Djed Spence,DEF,8.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,ENG,England,NOR,Norge,john_stones__eng,John Stones,DEF,8.75,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,ENG,England,NOR,Norge,ezri_konsa__eng,Ezri Konsa,DEF,9.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,NOR,Norge,ENG,England,erling_haaland__nor,Erling Haaland,FWD,2.15,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,NOR,Norge,ENG,England,j_rgen_strand_larsen__nor,Jørgen Strand Larsen,FWD,3.40,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,NOR,Norge,ENG,England,alexander_s_rloth__nor,Alexander Sørloth,FWD,3.45,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,NOR,Norge,ENG,England,jens_petter_hauge__nor,Jens Petter Hauge,MID,4.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,NOR,Norge,ENG,England,thelo_aasgaard__nor,Thelo Aasgaard,MID,4.25,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,NOR,Norge,ENG,England,andreas_schjelderup__nor,Andreas Schjelderup,MID,4.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,NOR,Norge,ENG,England,antonio_nusa__nor,Antonio Nusa,MID,4.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,NOR,Norge,ENG,England,oscar_bobb__nor,Oscar Bobb,MID,4.75,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,NOR,Norge,ENG,England,kristian_thorstvedt__nor,Kristian Thorstvedt,MID,5.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,NOR,Norge,ENG,England,martin_degaard__nor,Martin Ødegaard,MID,6.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,NOR,Norge,ENG,England,morten_thorsby__nor,Morten Thorsby,MID,6.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,NOR,Norge,ENG,England,patrick_berg__nor,Patrick Berg,MID,7.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,NOR,Norge,ENG,England,fredrik_aursnes__nor,Fredrik Aursnes,MID,7.25,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,NOR,Norge,ENG,England,sander_berge__nor,Sander Berge,MID,8.75,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,NOR,Norge,ENG,England,henrik_falchener__nor,Henrik Falchener,DEF,9.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,NOR,Norge,ENG,England,julian_ryerson__nor,Julian Ryerson,DEF,9.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,NOR,Norge,ENG,England,david_m_ller_wolfe__nor,David Møller Wolfe,DEF,9.25,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,NOR,Norge,ENG,England,leo_ostigard__nor,Leo Østigård,DEF,9.25,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,NOR,Norge,ENG,England,fredrik_andr_bj_rkan__nor,Fredrik Andre Bjørkan,DEF,9.25,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,NOR,Norge,ENG,England,marcus_holmgren_pedersen__nor,Marcus Holmgren Pedersen,DEF,9.50,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,NOR,Norge,ENG,England,kristoffer_ajer__nor,Kristoffer Ajer,DEF,10.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,NOR,Norge,ENG,England,torbjorn_heggem__nor,Torbjørn Heggem,DEF,10.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+99,NOR,ENG,NOR,Norge,ENG,England,sondre_langas__nor,Sondre Langås,DEF,10.00,Danske Spil / Oddset,2026-07-06T10:00:00+02:00,Oddset 06.07 kl. 10:00,Manuelt aflæst fra Oddset 06.07 ca. 10:00,QF,2026-07-11 23:00
+100,ARG,SUI,ARG,Argentina,SUI,Schweiz,lionel_messi__arg,Lionel Messi,FWD,1.86,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,ARG,Argentina,SUI,Schweiz,lautaro_mart_nez__arg,Lautaro Martinez,FWD,2.60,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,ARG,Argentina,SUI,Schweiz,juli_n_lvarez__arg,Julian Alvarez,FWD,2.70,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,ARG,Argentina,SUI,Schweiz,jos_manuel_l_pez__arg,Jose Manuel Lopez,FWD,2.70,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,ARG,Argentina,SUI,Schweiz,nico_paz__arg,Nico Paz,MID,3.45,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07; alias-match fra screenshotnavn: Nicolas Paz Martinez,QF,
+100,ARG,SUI,ARG,Argentina,SUI,Schweiz,giuliano_simeone__arg,Giuliano Simeone,FWD,3.85,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,ARG,Argentina,SUI,Schweiz,thiago_almada__arg,Thiago Almada,MID,4.25,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,ARG,Argentina,SUI,Schweiz,enzo_fern_ndez__arg,Enzo Fernandez,MID,4.50,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,ARG,Argentina,SUI,Schweiz,giovani_lo_celso__arg,Giovani Lo Celso,MID,5.00,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,ARG,Argentina,SUI,Schweiz,nico_gonzalez__arg,Nico Gonzalez,FWD,5.00,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07; alias-match fra screenshotnavn: Nicolas Gonzalez,QF,
+100,ARG,SUI,ARG,Argentina,SUI,Schweiz,alexis_mac_allister__arg,Alexis Mac Allister,MID,5.50,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,ARG,Argentina,SUI,Schweiz,valentin_barco__arg,Valentin Barco,MID,6.00,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,ARG,Argentina,SUI,Schweiz,gonzalo_montiel__arg,Gonzalo Montiel,DEF,6.25,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,ARG,Argentina,SUI,Schweiz,rodrigo_de_paul__arg,Rodrigo de Paul,MID,6.25,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,ARG,Argentina,SUI,Schweiz,exequiel_palacios__arg,Exequiel Palacios,MID,6.50,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,ARG,Argentina,SUI,Schweiz,leandro_paredes__arg,Leandro Paredes,MID,6.75,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,ARG,Argentina,SUI,Schweiz,cristian_romero__arg,Cristian Romero,DEF,7.50,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,ARG,Argentina,SUI,Schweiz,marcos_senesi__arg,Marcos Senesi,MID,8.00,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,ARG,Argentina,SUI,Schweiz,nahuel_molina__arg,Nahuel Molina,DEF,8.25,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,ARG,Argentina,SUI,Schweiz,nicol_s_tagliafico__arg,Nicolas Tagliafico,DEF,8.25,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,ARG,Argentina,SUI,Schweiz,nicol_s_otamendi__arg,Nicolas Otamendi,DEF,8.50,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,ARG,Argentina,SUI,Schweiz,lisandro_martinez__arg,Lisandro Martinez,DEF,9.00,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,ARG,Argentina,SUI,Schweiz,facundo_medina__arg,Facundo Medina,DEF,9.25,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,SUI,Schweiz,ARG,Argentina,breel_embolo__sui,Breel Embolo,FWD,3.60,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,SUI,Schweiz,ARG,Argentina,cedric_itten__sui,Cedric Itten,FWD,4.25,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,SUI,Schweiz,ARG,Argentina,mohamed_zeki_amdouni__sui,Mohamed Zeki Amdouni,FWD,4.25,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07; alias-match fra screenshotnavn: Zeki Amdouni,QF,
+100,ARG,SUI,SUI,Schweiz,ARG,Argentina,noah_okafor__sui,Noah Okafor,MID,4.50,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,SUI,Schweiz,ARG,Argentina,christian_fassnacht__sui,Christian Fassnacht,FWD,5.00,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,SUI,Schweiz,ARG,Argentina,dan_ndoye__sui,Dan Ndoye,FWD,5.00,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,SUI,Schweiz,ARG,Argentina,johan_manzambi__sui,Johan Manzambi,MID,5.25,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,SUI,Schweiz,ARG,Argentina,ruben_vargas__sui,Ruben Vargas,FWD,5.50,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,SUI,Schweiz,ARG,Argentina,fabian_rieder__sui,Fabian Rieder,MID,6.75,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,SUI,Schweiz,ARG,Argentina,granit_xhaka__sui,Granit Xhaka,MID,7.00,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,SUI,Schweiz,ARG,Argentina,ardon_jashari__sui,Ardon Jashari,MID,8.25,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,SUI,Schweiz,ARG,Argentina,michel_aebischer__sui,Michel Aebischer,MID,9.00,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,SUI,Schweiz,ARG,Argentina,remo_freuler__sui,Remo Freuler,MID,9.00,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,SUI,Schweiz,ARG,Argentina,silvan_widmer__sui,Silvan Widmer,DEF,9.00,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,SUI,Schweiz,ARG,Argentina,denis_zakaria__sui,Denis Zakaria,MID,9.50,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,SUI,Schweiz,ARG,Argentina,djibril_sow__sui,Djibril Sow,MID,9.50,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,SUI,Schweiz,ARG,Argentina,miro_muheim__sui,Miro Muheim,DEF,10.00,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,SUI,Schweiz,ARG,Argentina,ricardo_rodr_guez__sui,Ricardo Rodriguez,DEF,10.00,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,SUI,Schweiz,ARG,Argentina,luca_jaquez__sui,Luca Jaquez,DEF,11.00,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07; alias-match fra screenshotnavn: Luca Antony Jaquez,QF,
+100,ARG,SUI,SUI,Schweiz,ARG,Argentina,eray_c_mert__sui,Eray Cömert,DEF,11.00,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,SUI,Schweiz,ARG,Argentina,manuel_akanji__sui,Manuel Akanji,DEF,12.00,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,SUI,Schweiz,ARG,Argentina,nico_elvedi__sui,Nico Elvedi,DEF,12.00,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+100,ARG,SUI,SUI,Schweiz,ARG,Argentina,aurele_amenda__sui,Aurele Amenda,DEF,13.00,Danske Spil / Oddset,2026-07-08T10:02:39+02:00,Oddset 08.07 kl. 10:02,Manuelt aflæst fra Oddset screenshot 08.07,QF,
+,BRA,NOR,BRA,Brasilien,NOR,Norge,vinicius_j_nior__bra,Vinicius Junior,FWD,2.25,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
+,BRA,NOR,BRA,Brasilien,NOR,Norge,igor_thiago__bra,Igor Thiago,FWD,2.55,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
+,BRA,NOR,BRA,Brasilien,NOR,Norge,endrick__bra,Endrick,FWD,2.60,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
+,BRA,NOR,BRA,Brasilien,NOR,Norge,matheus_cunha__bra,Matheus Cunha,FWD,2.60,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
+,BRA,NOR,BRA,Brasilien,NOR,Norge,rayan__bra,Rayan,FWD,3.05,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
+,BRA,NOR,BRA,Brasilien,NOR,Norge,luiz_henrique__bra,Luiz Henrique,FWD,3.40,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
+,BRA,NOR,BRA,Brasilien,NOR,Norge,gabriel_martinelli__bra,Gabriel Martinelli,FWD,3.50,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
+,BRA,NOR,BRA,Brasilien,NOR,Norge,danilo_dos_santos__bra,Danilo dos Santos,MID,4.30,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
+,BRA,NOR,BRA,Brasilien,NOR,Norge,ederson__bra,Ederson,MID,4.50,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
+,BRA,NOR,BRA,Brasilien,NOR,Norge,bruno_guimaraes__bra,Bruno Guimaraes,MID,5.30,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
+,BRA,NOR,BRA,Brasilien,NOR,Norge,casemiro__bra,Casemiro,MID,5.75,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
+,BRA,NOR,BRA,Brasilien,NOR,Norge,fabinho__bra,Fabinho,MID,6.50,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
+,CAN,MAR,CAN,Canada,MAR,Marokko,jonathan_david__can,Jonathan David,FWD,3.60,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,CAN,MAR,CAN,Canada,MAR,Marokko,tajon_buchanan__can,Tajon Buchanan,MID,3.60,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,CAN,MAR,CAN,Canada,MAR,Marokko,cyle_christopher_larin__can,Cyle Christopher Larin,FWD,4.00,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,CAN,MAR,CAN,Canada,MAR,Marokko,tani_oluwaseyi__can,Tani Oluwaseyi,FWD,4.00,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,CAN,MAR,CAN,Canada,MAR,Marokko,jacob_shaffelburg__can,Jacob Shaffelburg,MID,5.50,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,CAN,MAR,CAN,Canada,MAR,Marokko,liam_millar__can,Liam Millar,MID,6.00,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,CAN,MAR,CAN,Canada,MAR,Marokko,ali_ahmed__can,Ali Ahmed,MID,6.25,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,CAN,MAR,CAN,Canada,MAR,Marokko,jonathan_osorio__can,Jonathan Osorio,MID,6.25,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,CAN,MAR,CAN,Canada,MAR,Marokko,nathan_saliba__can,Nathan Saliba,MID,7.25,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,CAN,MAR,CAN,Canada,MAR,Marokko,mathieu_choiniere__can,Mathieu Choiniere,MID,8.50,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,CAN,MAR,CAN,Canada,MAR,Marokko,stephen_eustaquio__can,Stephen Eustaquio,MID,9.00,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,FRA,PAR,FRA,Frankrig,PAR,Paraguay,kylian_mbapp__fra,Kylian Mbappe,FWD,1.50,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,FRA,PAR,FRA,Frankrig,PAR,Paraguay,marcus_thuram__fra,Marcus Thuram,FWD,2.00,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,FRA,PAR,FRA,Frankrig,PAR,Paraguay,jean_philippe_mateta__fra,Jean-Philippe Mateta,FWD,2.01,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,FRA,PAR,FRA,Frankrig,PAR,Paraguay,ousmane_demb_l__fra,Ousmane Dembele,FWD,2.04,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,FRA,PAR,FRA,Frankrig,PAR,Paraguay,d_sir_dou__fra,Desire Doue,FWD,2.37,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,FRA,PAR,FRA,Frankrig,PAR,Paraguay,michael_olise__fra,Michael Olise,FWD,2.45,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,FRA,PAR,FRA,Frankrig,PAR,Paraguay,bradley_barcola__fra,Bradley Barcola,MID,2.48,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,FRA,PAR,FRA,Frankrig,PAR,Paraguay,warren_za_re_emery__fra,Warren Zaire-Emery,MID,2.75,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,FRA,PAR,FRA,Frankrig,PAR,Paraguay,adrien_rabiot__fra,Adrien Rabiot,MID,4.25,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,FRA,PAR,FRA,Frankrig,PAR,Paraguay,n_golo_kant__fra,N'Golo Kante,MID,5.00,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,FRA,PAR,FRA,Frankrig,PAR,Paraguay,aur_lien_tchouam_ni__fra,Aurelien Tchouameni,MID,5.25,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,MAR,CAN,MAR,Marokko,CAN,Canada,ismael_saibari__mar,Ismael Saibari,MID,2.35,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,MAR,CAN,MAR,Marokko,CAN,Canada,ayoub_el_kaabi__mar,Ayoub El Kaabi,FWD,2.60,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,MAR,CAN,MAR,Marokko,CAN,Canada,soufiane_rahimi__mar,Soufiane Rahimi,MID,2.70,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,MAR,CAN,MAR,Marokko,CAN,Canada,brahim_d_az__mar,Brahim Diaz,FWD,3.05,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,MAR,CAN,MAR,Marokko,CAN,Canada,amine_sbai__mar,Amine Sbai,FWD,3.80,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,MAR,CAN,MAR,Marokko,CAN,Canada,chemsdine_talbi__mar,Chemsdine Talbi,FWD,4.00,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,MAR,CAN,MAR,Marokko,CAN,Canada,bilal_el_khannouss__mar,Bilal El Khannouss,MID,4.25,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,MAR,CAN,MAR,Marokko,CAN,Canada,ayyoub_bouaddi__mar,Ayyoub Bouaddi,MID,7.50,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,MAR,CAN,MAR,Marokko,CAN,Canada,sofyan_amrabat__mar,Sofyan Amrabat,MID,7.50,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,NOR,BRA,NOR,Norge,BRA,Brasilien,erling_haaland__nor,Erling Haaland,FWD,2.25,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
+,NOR,BRA,NOR,Norge,BRA,Brasilien,alexander_s_rloth__nor,Alexander Sørloth,FWD,3.50,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
+,NOR,BRA,NOR,Norge,BRA,Brasilien,j_rgen_strand_larsen__nor,Jørgen Strand Larsen,FWD,3.60,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
+,NOR,BRA,NOR,Norge,BRA,Brasilien,jens_petter_hauge__nor,Jens Petter Hauge,MID,4.50,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
+,NOR,BRA,NOR,Norge,BRA,Brasilien,antonio_nusa__nor,Antonio Nusa,MID,5.00,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
+,NOR,BRA,NOR,Norge,BRA,Brasilien,thelo_aasgaard__nor,Thelo Aasgaard,MID,5.00,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
+,NOR,BRA,NOR,Norge,BRA,Brasilien,andreas_schjelderup__nor,Andreas Schjelderup,MID,5.25,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
+,NOR,BRA,NOR,Norge,BRA,Brasilien,kristian_thorstvedt__nor,Kristian Thorstvedt,MID,5.25,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
+,NOR,BRA,NOR,Norge,BRA,Brasilien,oscar_bobb__nor,Oscar Bobb,MID,5.25,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
+,NOR,BRA,NOR,Norge,BRA,Brasilien,martin_degaard__nor,Martin Ødegaard,MID,6.30,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
+,NOR,BRA,NOR,Norge,BRA,Brasilien,morten_thorsby__nor,Morten Thorsby,MID,6.50,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
+,NOR,BRA,NOR,Norge,BRA,Brasilien,patrick_berg__nor,Patrick Berg,MID,7.25,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
+,NOR,BRA,NOR,Norge,BRA,Brasilien,fredrik_aursnes__nor,Fredrik Aursnes,MID,8.00,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
+,NOR,BRA,NOR,Norge,BRA,Brasilien,sander_berge__nor,Sander Berge,MID,10.00,Danske Spil / Oddset,2026-07-01T15:27:00+02:00,Oddset 01.07 kl. 15:27,Manuelt aflæst fra screenshot 01.07,QF,
+,PAR,FRA,PAR,Paraguay,FRA,Frankrig,alex_arce__par,Alex Arce,FWD,5.00,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,PAR,FRA,PAR,Paraguay,FRA,Frankrig,antonio_sanabria__par,Antonio Sanabria,FWD,5.25,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,PAR,FRA,PAR,Paraguay,FRA,Frankrig,gabriel_avalos__par,Gabriel Avalos,FWD,5.50,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,PAR,FRA,PAR,Paraguay,FRA,Frankrig,isidro_pitta__par,Isidro Pitta,FWD,5.50,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,PAR,FRA,PAR,Paraguay,FRA,Frankrig,julio_enciso__par,Julio Enciso,FWD,5.50,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,PAR,FRA,PAR,Paraguay,FRA,Frankrig,miguel_almir_n__par,Miguel Almiron,MID,6.30,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,PAR,FRA,PAR,Paraguay,FRA,Frankrig,gustavo_caballero__par,Gustavo Caballero,MID,6.50,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,PAR,FRA,PAR,Paraguay,FRA,Frankrig,alejandro_kaku_romero_gamarra__par,"Alejandro ""Kaku"" Romero Gamarra",MID,6.75,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,PAR,FRA,PAR,Paraguay,FRA,Frankrig,ram_n_sosa__par,Ramon Sosa,MID,7.25,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,PAR,FRA,PAR,Paraguay,FRA,Frankrig,diego_g_mez__par,Diego Gomez,MID,7.30,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,PAR,FRA,PAR,Paraguay,FRA,Frankrig,dami_n_bobadilla__par,Damian Bobadilla,MID,9.75,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,
+,PAR,FRA,PAR,Paraguay,FRA,Frankrig,andr_s_cubas__par,Andres Cubas,MID,13.00,Danske Spil / Oddset,2026-07-01T15:28:00+02:00,Oddset 01.07 kl. 15:28,Manuelt aflæst fra screenshot 01.07,QF,

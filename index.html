@@ -4502,16 +4502,22 @@ setTimeout(removeDataStatusBox, 250);
       }
     }
 
-    function fetchWithCacheBust(url, options) {
-      return fetch(withCacheBust(url), options);
-    }
-
-    
     function withDataCacheBuster(url) {
       if (!url || typeof url !== 'string') return url;
       if (!url.startsWith('data/')) return url;
       const sep = url.includes('?') ? '&' : '?';
       return `${url}${sep}v=${Date.now()}`;
+    }
+
+    function fetchWithCacheBust(url, options) {
+      const requestUrl = PAGE_CACHE_BUST
+        ? withCacheBust(url)
+        : withDataCacheBuster(url);
+      const nextOptions = {
+        ...(options || {}),
+        cache: "no-store"
+      };
+      return fetch(requestUrl, nextOptions);
     }
 
 async function fetchCsvRows(url, errorLabel, optional = false) {
