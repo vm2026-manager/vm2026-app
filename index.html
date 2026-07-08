@@ -4127,7 +4127,7 @@
                 <div id="lowestOddsPopover" class="lowest-odds-popover" hidden>
                   <div class="lowest-odds-popover-head">
                     <div>
-                      <h3 class="lowest-odds-popover-title">Top 5 næste kampe</h3>
+                      <h3 class="lowest-odds-popover-title">Laveste odds i transfervinduet</h3>
                       <div class="lowest-odds-popover-subtitle">Laveste odds</div>
                     </div>
                     <button id="lowestOddsCloseBtn" class="lowest-odds-close" type="button" aria-label="Luk laveste odds">×</button>
@@ -5228,12 +5228,28 @@ function strategyDisplayName(strategyKey) {
         };
       }
 
+      if (currentWindowLabel === "Ottendedelsfinaler → Kvartfinaler") {
+        return {
+          title: "Laveste odds i næste runde",
+          allowedStages: ["QF", "QUARTER_FINAL", "QUARTER_FINALS", "KVARTFINALER", "1/4", "1/4-FINALER"],
+          minMatchId: 97,
+          maxMatchId: 100
+        };
+      }
+
       return {
-        title: "Top 5 næste kampe",
+        title: "Laveste odds i transfervinduet",
         allowedStages: [],
         minMatchId: null,
         maxMatchId: null
       };
+    }
+
+    function isKnownOddsTeamId(teamId) {
+      const canonicalId = canonicalTeamId(teamId);
+      if (!canonicalId) return false;
+      if (["TBD", "TBA", "0", "NA", "N/A", "UNKNOWN", "UKENDT"].includes(canonicalId)) return false;
+      return !!TEAM_DISPLAY_NAMES[canonicalId] || !!TEAM_ID_TO_FLAG_CODE[canonicalId];
     }
 
     function getActiveKnockoutRoundConfig() {
@@ -5342,9 +5358,7 @@ function strategyDisplayName(strategyKey) {
       const stage = String(getRowValue(row, ["stage", "round", "phase"]) || "")
         .trim()
         .toUpperCase();
-      if (Array.isArray(roundConfig.allowedStages) && roundConfig.allowedStages.includes(stage)) {
-        return true;
-      }
+      const stageMatches = Array.isArray(roundConfig.allowedStages) && roundConfig.allowedStages.includes(stage);
 
       const matchId = Number(String(getRowValue(row, ["match_id", "fixture_id", "id"]) || "").trim());
       if (Number.isFinite(matchId)) {
@@ -5352,6 +5366,8 @@ function strategyDisplayName(strategyKey) {
         if (Number.isFinite(roundConfig.maxMatchId) && matchId > roundConfig.maxMatchId) return false;
         if (Number.isFinite(roundConfig.minMatchId) || Number.isFinite(roundConfig.maxMatchId)) return true;
       }
+
+      if (stageMatches) return true;
 
       return !stage && !Number.isFinite(roundConfig.minMatchId) && !Number.isFinite(roundConfig.maxMatchId);
     }
@@ -5380,11 +5396,15 @@ function strategyDisplayName(strategyKey) {
           const drawOdds = parseWidgetOddsNumber(getRowValue(selectedRow, ["draw_odds", "x"]));
           const awayOdds = parseWidgetOddsNumber(getRowValue(selectedRow, ["away_win_odds", "a"]));
 
-          if (!Number.isFinite(homeOdds) || !Number.isFinite(drawOdds) || !Number.isFinite(awayOdds)) return null;
+          if (
+            !Number.isFinite(homeOdds) || homeOdds <= 0 ||
+            !Number.isFinite(drawOdds) || drawOdds <= 0 ||
+            !Number.isFinite(awayOdds) || awayOdds <= 0
+          ) return null;
 
           const homeTeamId = getOddsRowTeamId(selectedRow, "home") || canonicalTeamId(getRowValue(selectedRow, ["home", "home_team", "team_home"]));
           const awayTeamId = getOddsRowTeamId(selectedRow, "away") || canonicalTeamId(getRowValue(selectedRow, ["away", "away_team", "team_away"]));
-          if (!homeTeamId || !awayTeamId) return null;
+          if (!isKnownOddsTeamId(homeTeamId) || !isKnownOddsTeamId(awayTeamId)) return null;
 
           const favoriteIsHome = homeOdds <= awayOdds;
           return {
@@ -5432,16 +5452,24 @@ function strategyDisplayName(strategyKey) {
       try {
         const titleEl = lowestOddsPopover?.querySelector(".lowest-odds-popover-title");
         const roundConfig = getLowestOddsRoundConfig();
-        if (titleEl) titleEl.textContent = roundConfig.title || "Top 5 næste kampe";
+        if (titleEl) titleEl.textContent = roundConfig.title || "Laveste odds i transfervinduet";
         let matches = getTopNextRoundMatches();
-        if (!matches.length && Number.isFinite(roundConfig.minMatchId)) {
-          const knockoutRows = await fetchCsvRows(
-            KNOCKOUT_MATCH_ODDS_PROBS_URL,
-            "Kunne ikke hente knockout match odds probs",
-            true
-          );
+        if (
+          !matches.length &&
+          (
+            Number.isFinite(roundConfig.minMatchId) ||
+            Number.isFinite(roundConfig.maxMatchId) ||
+            (Array.isArray(roundConfig.allowedStages) && roundConfig.allowedStages.length)
+          )
+        ) {
+          const [rawMatchRows, rawKnockoutRows] = await Promise.all([
+            fetchCsvRows(MATCH_ODDS_URL, "Kunne ikke hente match odds", true),
+            fetchCsvRows(KNOCKOUT_MATCH_ODDS_URL, "Kunne ikke hente knockout match odds", true)
+          ]);
           matches = buildLowestOddsMatchesFromRows(
-            (Array.isArray(matchOddsRows) ? matchOddsRows : []).concat(Array.isArray(knockoutRows) ? knockoutRows : []),
+            (Array.isArray(matchOddsRows) ? matchOddsRows : [])
+              .concat(Array.isArray(rawMatchRows) ? rawMatchRows : [])
+              .concat(Array.isArray(rawKnockoutRows) ? rawKnockoutRows : []),
             roundConfig
           );
         }
