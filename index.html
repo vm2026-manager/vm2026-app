@@ -4287,12 +4287,9 @@
               <option value="Angriber">Angriber</option>
             </select>
             <select id="sortSelect">
-              <option value="scorer_odds_asc">Laveste scorerodds</option>
-              <option value="clean_sheet_desc">Højeste clean sheet-sandsynlighed</option>
+              <option value="odds_asc">Laveste odds (rent bur/scorer i kampen)</option>
               <option value="price_desc">Dyreste</option>
               <option value="price_asc">Billigste</option>
-              <option value="next_win_desc">Højeste vinderchance næste kamp</option>
-              <option value="name_asc">Navn A-Å</option>
             </select>
           </div>
 
@@ -8921,13 +8918,14 @@ const playerId = String(player.player_id || player.id || "");
       return null;
     }
 
-    function getPlayerCleanSheetSortValue(player) {
-      const info = getNextCleanSheetInfo(player);
-      const pct = Number(info?.pct);
-      return Number.isFinite(pct) && pct > 0 ? pct : null;
-    }
+    function getPlayerRelevantOddsSortValue(player) {
+      if (isCleanSheetEligiblePlayer(player)) {
+        const info = getNextCleanSheetInfo(player);
+        const yesOdds = Number(info?.yesOdds);
+        return Number.isFinite(yesOdds) && yesOdds > 0 ? yesOdds : null;
+      }
 
-    function getPlayerScorerOddsSortValue(player) {
+      if (!isScorerEligiblePlayer(player)) return null;
       const info = getNextScorerInfo(player) || (typeof getDirectTooltipScorerInfo === "function" ? getDirectTooltipScorerInfo(player) : null);
       const odds = Number(info?.odds);
       return Number.isFinite(odds) && odds > 0 ? odds : null;
@@ -11762,7 +11760,7 @@ function normalizeTradeListModeState({ clearInvalidSelection = false } = {}) {
 
 function getDefaultTradeSortValue() {
   const firstOption = sortSelect?.querySelector("option[value]");
-  return String(firstOption?.value || "scorer_odds_asc");
+  return String(firstOption?.value || "odds_asc");
 }
 
 function persistTradeFilterStateVersion() {
@@ -11996,22 +11994,12 @@ function renderTradeList() {
         players = players.filter(player => isEligibleNow(player));
       }
 
-      if (sortValue === "scorer_odds_asc") {
+      if (sortValue === "odds_asc") {
         players.sort((a, b) => {
           const metricCompare = compareNullableMetric(
-            getPlayerScorerOddsSortValue(a),
-            getPlayerScorerOddsSortValue(b),
+            getPlayerRelevantOddsSortValue(a),
+            getPlayerRelevantOddsSortValue(b),
             "asc"
-          );
-          if (metricCompare !== 0) return metricCompare;
-          return String(a.player_name || "").localeCompare(String(b.player_name || ""), "da");
-        });
-      } else if (sortValue === "clean_sheet_desc") {
-        players.sort((a, b) => {
-          const metricCompare = compareNullableMetric(
-            getPlayerCleanSheetSortValue(a),
-            getPlayerCleanSheetSortValue(b),
-            "desc"
           );
           if (metricCompare !== 0) return metricCompare;
           return String(a.player_name || "").localeCompare(String(b.player_name || ""), "da");
@@ -12020,10 +12008,6 @@ function renderTradeList() {
         players.sort((a, b) => getPlayerPrice(b) - getPlayerPrice(a));
       } else if (sortValue === "price_asc") {
         players.sort((a, b) => getPlayerPrice(a) - getPlayerPrice(b));
-      } else if (sortValue === "next_win_desc") {
-        players.sort((a, b) => (getNextMatchWinProb(b.team_id) || 0) - (getNextMatchWinProb(a.team_id) || 0));
-      } else if (sortValue === "name_asc") {
-        players.sort((a, b) => String(a.player_name || "").localeCompare(String(b.player_name || ""), "da"));
       }
 
       if (!players.length && recoverTradeListFiltersIfEmpty({
