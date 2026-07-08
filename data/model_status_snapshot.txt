@@ -1,52 +1,52 @@
 VM 2026 MODEL STATUS SNAPSHOT
 
-Oprettet: 2026-07-07T09:14:26
+Oprettet: 2026-07-08T09:50:06
 
 VURDERING
-- Bedste formation i seneste optimizer-kørsel: 3-4-3.
+- Bedste formation i seneste optimizer-kørsel: 4-3-3.
 - Modellen bruger nu Holdet.dk game 616 som officiel master-player-pool.
 - EV-filen er rebased til de officielle Holdet-spillere.
 - Optimizer-holdene matcher appens player_pool på player_id.
 - Forbehold: Startvurderinger, odds og trupper er stadig foreløbige og skal opdateres løbende.
 
 PLAYER POOL
-- Rækker: 286
-- Officiel Holdet-master: 286
-- Hold: 11
+- Rækker: 208
+- Officiel Holdet-master: 208
+- Hold: 8
 - Mangler pris: 0
-- Positioner: {'MID': 100, 'DEF': 93, 'FWD': 59, 'GK': 34}
+- Positioner: {'MID': 70, 'DEF': 67, 'FWD': 47, 'GK': 24}
 
 EV-FIL
-- Rækker: 286
-- Weighted EV sum: 299.196
-- Weighted EV mean: 1.0461
-- Weighted EV median: 1.0006
-- Positioner: {'MID': 100, 'DEF': 93, 'FWD': 59, 'GK': 34}
+- Rækker: 208
+- Weighted EV sum: 227.385
+- Weighted EV mean: 1.0932
+- Weighted EV median: 1.0540
+- Positioner: {'MID': 70, 'DEF': 67, 'FWD': 47, 'GK': 24}
 
 FORMATIONER
-- 3-4-3: status=Optimal, adjEV=147.945, rawEV=15.805, pris=49.986
-- 3-5-2: status=Optimal, adjEV=138.915, rawEV=15.816, pris=49.933
-- 4-3-3: status=Optimal, adjEV=131.698, rawEV=15.491, pris=49.947
-- 4-4-2: status=Optimal, adjEV=132.561, rawEV=14.213, pris=49.989
-- 4-5-1: status=Optimal, adjEV=133.02, rawEV=14.022, pris=49.981
-- 5-3-2: status=Optimal, adjEV=128.466, rawEV=15.408, pris=49.993
-- 5-4-1: status=Optimal, adjEV=127.819, rawEV=13.335, pris=49.981
+- 3-4-3: status=Optimal, adjEV=126.306, rawEV=13.795, pris=49.995
+- 3-5-2: status=Optimal, adjEV=132.816, rawEV=15.162, pris=49.992
+- 4-3-3: status=Optimal, adjEV=133.973, rawEV=11.298, pris=49.967
+- 4-4-2: status=Optimal, adjEV=133.361, rawEV=13.724, pris=49.961
+- 4-5-1: status=Optimal, adjEV=132.317, rawEV=12.642, pris=49.995
+- 5-3-2: status=Optimal, adjEV=127.695, rawEV=13.289, pris=49.961
+- 5-4-1: status=Optimal, adjEV=130.204, rawEV=12.21, pris=49.966
 
 BEDSTE HOLD
-- selected_formation: 3-4-3
-- squad_total_price_m: 49.986
-- squad_total_adj_ev: 147.945
-- squad_total_raw_ev: 15.805
+- selected_formation: 4-3-3
+- squad_total_price_m: 49.967
+- squad_total_adj_ev: 133.973
+- squad_total_raw_ev: 11.298
 
 SPILLERE
-- Mike Maignan | FRA | GK | pris=5.7 | EV=18.254
+- David Raya | ESP | GK | pris=5.0 | EV=16.721
 - Djed Spence | ENG | DEF | pris=2.7 | EV=3.917
-- Ibrahima Konate | FRA | DEF | pris=3.0 | EV=9.195
+- Facundo Medina | ARG | DEF | pris=2.8 | EV=4.144
 - Jarell Quansah | ENG | DEF | pris=2.6 | EV=2.653
-- Jordan Henderson | ENG | MID | pris=3.5 | EV=11.304
-- Manu Koné | FRA | MID | pris=3.7 | EV=13.180
+- Lucas Hernandez | FRA | DEF | pris=3.0 | EV=7.274
 - Martin Zubimendi | ESP | MID | pris=3.5 | EV=14.543
 - N'Golo Kante | FRA | MID | pris=3.0 | EV=7.975
-- Lamine Yamal | ESP | FWD | pris=9.5 | EV=26.045
+- Warren Zaire-Emery | FRA | MID | pris=3.0 | EV=7.440
+- Kylian Mbappe | FRA | FWD | pris=11.6 | EV=28.428
 - Mikel Oyarzabal | ESP | FWD | pris=8.4 | EV=23.982
 - Nico Williams | ESP | FWD | pris=4.6 | EV=16.896
