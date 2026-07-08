@@ -4408,7 +4408,6 @@ setTimeout(removeDataStatusBox, 250);
     const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
 
     const BUDGET_TOTAL = 50000000;
-    const MAX_PER_TEAM = 4;
     const HISTORY_LIMIT = 30;
     const AUTOSAVE_DEBOUNCE_MS = 700;
 
@@ -4970,7 +4969,7 @@ async function fetchCsvRows(url, errorLabel, optional = false) {
         bankLeft,
         usedIds: [...usedIdsBase],
         teamCounts: teamCountsBase,
-        maxPerTeam: MAX_PER_TEAM,
+        maxPerTeam: Infinity,
         maxDurationMs: AUTOFILL_TIMEOUT_MS - 1000
       };
     }
@@ -9350,20 +9349,7 @@ const playerId = String(player.player_id || player.id || "");
     }
 
     function canAddMoreFromTeam(player, playerIdToIgnore = null) {
-      const teamKey = playerTeamKey(player);
-      if (!teamKey) return true;
-
-      const counts = {};
-      Object.values(squad).forEach(playerId => {
-        if (!playerId) return;
-        if (playerIdToIgnore && String(playerId) === String(playerIdToIgnore)) return;
-        const p = getPlayerById(playerId);
-        const key = playerTeamKey(p);
-        if (!key) return;
-        counts[key] = (counts[key] || 0) + 1;
-      });
-
-      return (counts[teamKey] || 0) < MAX_PER_TEAM;
+      return true;
     }
 
     function getSquadConstraintIssues(squadObj, budgetLimit = getEffectiveBudgetTotal(), purchasePriceMap = squadPurchasePrices) {
@@ -9385,13 +9371,6 @@ const playerId = String(player.player_id || player.id || "");
         }
         seenIds.add(playerIdStr);
       }
-
-      const teamCounts = getCurrentTeamCounts(squadObj);
-      Object.entries(teamCounts).forEach(([teamName, count]) => {
-        if (count > MAX_PER_TEAM) {
-          issues.push(`for mange fra ${teamDisplayName(teamName, teamName)} (${count}/${MAX_PER_TEAM})`);
-        }
-      });
 
       Object.entries(squadObj).forEach(([slotKey, playerId]) => {
         if (!playerId) return;
@@ -9472,7 +9451,6 @@ const playerId = String(player.player_id || player.id || "");
         const ignoreId = currentPlayerInSlot ? currentPlayerInSlot.player_id : null;
 
         if (!activeSlot || !samePosition(activeSlot.positionCode || activeSlot.position, player.position)) return "Forkert position";
-        if (!canAddMoreFromTeam(player, ignoreId)) return "Maks fra land";
 
         const affordability = currentPlayerInSlot
           ? getReplacementAffordability(player, currentPlayerInSlot, activeSlot)
@@ -9488,7 +9466,6 @@ const playerId = String(player.player_id || player.id || "");
         return "";
       }
 
-      if (!canAddMoreFromTeam(player)) return "Maks fra land";
       if (!hasAvailableSlotForPosition(player.position)) return "Ingen plads";
       if (price > getBankLeft()) return `Ikke råd (${formatMoney(getBankLeft())} tilbage)`;
       return "";
@@ -9594,7 +9571,7 @@ const playerId = String(player.player_id || player.id || "");
 
       if (isAlreadyInSquad) return false;
       if (!getReplacementAffordability(candidate, currentPlayer, activeSlot).affordable) return false;
-      return canAddMoreFromTeam(candidate, currentPlayer.player_id);
+      return true;
     }
 
     function prioritizeReplacementCandidates(players, activeSlot, currentPlayer, modelChoice) {
@@ -9850,7 +9827,7 @@ const playerId = String(player.player_id || player.id || "");
           ${samePriceRows}
         ` : ""}
         ${!alternatives.length ? `
-          <div class="alternatives-subtitle">Ingen gyldige alternativer inden for position, budget og landeloft.</div>
+          <div class="alternatives-subtitle">Ingen gyldige alternativer inden for position og budget.</div>
         ` : ""}
       `;
 
@@ -10019,11 +9996,6 @@ const playerId = String(player.player_id || player.id || "");
         return;
       }
 
-      if (!canAddMoreFromTeam(player)) {
-        showStatus(`Du kan maksimalt vælge ${MAX_PER_TEAM} spillere fra ${teamDisplayName(player.team_id, player.team_name)}.`, "error");
-        return;
-      }
-
       const firstEmpty = findFirstEmptySlotByPosition(player.position);
       if (firstEmpty) {
         addPlayerToSlot(playerId, firstEmpty);
@@ -10084,11 +10056,6 @@ const playerId = String(player.player_id || player.id || "");
       const currentPlayerInSlot = getPlayerById(squad[slotKey]);
       const ignoreId = currentPlayerInSlot ? currentPlayerInSlot.player_id : null;
 
-      if (!canAddMoreFromTeam(player, ignoreId)) {
-        showStatus(`Du kan maksimalt vælge ${MAX_PER_TEAM} spillere fra ${teamDisplayName(player.team_id, player.team_name)}.`, "error");
-        return;
-      }
-
       const affordability = currentPlayerInSlot
         ? getReplacementAffordability(player, currentPlayerInSlot, slot)
         : null;
@@ -10146,7 +10113,6 @@ const playerId = String(player.player_id || player.id || "");
         .filter(player => !isPlayerUnavailable(player))
         .filter(player => samePosition(player.position, slotPosition))
         .filter(player => !usedIdsSet.has(String(player.player_id)))
-        .filter(player => (teamCounts[playerTeamKey(player)] || 0) < MAX_PER_TEAM)
         .sort((a, b) => getTransferLockedPrice(a) - getTransferLockedPrice(b));
 
       return candidates.length ? candidates[0] : null;
@@ -10177,7 +10143,6 @@ const playerId = String(player.player_id || player.id || "");
         .filter(player => !isPlayerUnavailable(player))
         .filter(player => samePosition(player.position, slotPosition))
         .filter(player => !usedIdsSet.has(String(player.player_id)))
-        .filter(player => (teamCounts[playerTeamKey(player)] || 0) < MAX_PER_TEAM)
         .filter(player => getTransferLockedPrice(player) <= maxPriceForSinglePlayer)
         .sort((a, b) => {
           const scoreDiff = getPlayerScore(b) - getPlayerScore(a);
@@ -10532,15 +10497,9 @@ const playerId = String(player.player_id || player.id || "");
           continue;
         }
 
-        const teamEligible = notUsed.filter(player => (teamCounts[playerTeamKey(player)] || 0) < MAX_PER_TEAM);
-        if (!teamEligible.length) {
-          parts.push(`${slot.position} (${slot.key}): blokeret af maks. ${MAX_PER_TEAM} fra samme land`);
-          continue;
-        }
-
-        const affordable = teamEligible.filter(player => getTransferLockedPrice(player) <= bankLeft);
+        const affordable = notUsed.filter(player => getTransferLockedPrice(player) <= bankLeft);
         if (!affordable.length) {
-          const cheapest = teamEligible
+          const cheapest = notUsed
             .map(player => getTransferLockedPrice(player))
             .filter(price => price > 0)
             .sort((a, b) => a - b)[0];
