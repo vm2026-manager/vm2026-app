@@ -3,12 +3,12 @@
     "player_pool_v1.json": {
       "exists": true,
       "path": "C:\\Users\\Administrator\\Desktop\\vm2026_local_app\\data\\player_pool_v1.json",
-      "size_bytes": 694821
+      "size_bytes": 441309
     },
     "optimal_squads_by_formation.json": {
       "exists": true,
       "path": "C:\\Users\\Administrator\\Desktop\\vm2026_local_app\\data\\optimal_squads_by_formation.json",
-      "size_bytes": 371368
+      "size_bytes": 371346
     },
     "fixtures_group.csv": {
       "exists": true,
@@ -27,16 +27,16 @@
     }
   },
   "player_pool": {
-    "player_count": 208,
-    "unique_player_ids": 208,
+    "player_count": 130,
+    "unique_player_ids": 130,
     "duplicate_ids": [],
     "position_counts": {
-      "DEF": 67,
-      "GK": 24,
-      "MID": 70,
-      "FWD": 47
+      "DEF": 40,
+      "GK": 15,
+      "MID": 42,
+      "FWD": 33
     },
-    "team_count": 8,
+    "team_count": 5,
     "missing_price_count": 0,
     "missing_position_count": 0,
     "missing_team_count": 0,
@@ -110,15 +110,14 @@
         "MID": 4,
         "FWD": 3
       },
-      "pool_total_price": 49995000,
-      "optimizer_total_price": 49995000,
+      "pool_total_price": 49987000,
+      "optimizer_total_price": 49987000,
       "budget_total": 50000000,
       "team_counts": {
         "Frankrig": 4,
-        "Marokko": 1,
         "England": 2,
-        "Argentina": 1,
-        "Spanien": 3
+        "Schweiz": 1,
+        "Spanien": 4
       },
       "match_methods": {
         "player_id": 11
@@ -139,15 +138,14 @@
         "MID": 5,
         "FWD": 2
       },
-      "pool_total_price": 49992000,
-      "optimizer_total_price": 49992000,
+      "pool_total_price": 49899000,
+      "optimizer_total_price": 49899000,
       "budget_total": 50000000,
       "team_counts": {
         "Frankrig": 4,
-        "England": 1,
-        "Schweiz": 1,
-        "Spanien": 4,
-        "Norge": 1
+        "England": 2,
+        "Argentina": 1,
+        "Spanien": 4
       },
       "match_methods": {
         "player_id": 11
@@ -168,14 +166,14 @@
         "MID": 3,
         "FWD": 3
       },
-      "pool_total_price": 49967000,
-      "optimizer_total_price": 49967000,
+      "pool_total_price": 49894000,
+      "optimizer_total_price": 49894000,
       "budget_total": 50000000,
       "team_counts": {
-        "Spanien": 4,
+        "Frankrig": 4,
         "England": 2,
         "Argentina": 1,
-        "Frankrig": 4
+        "Spanien": 4
       },
       "match_methods": {
         "player_id": 11
@@ -196,13 +194,13 @@
         "MID": 4,
         "FWD": 2
       },
-      "pool_total_price": 49961000,
-      "optimizer_total_price": 49961000,
+      "pool_total_price": 49964000,
+      "optimizer_total_price": 49964000,
       "budget_total": 50000000,
       "team_counts": {
-        "Frankrig": 4,
-        "England": 2,
-        "Schweiz": 1,
+        "Frankrig": 3,
+        "England": 3,
+        "Argentina": 1,
         "Spanien": 4
       },
       "match_methods": {
@@ -224,13 +222,12 @@
         "MID": 5,
         "FWD": 1
       },
-      "pool_total_price": 49995000,
-      "optimizer_total_price": 49995000,
+      "pool_total_price": 49773000,
+      "optimizer_total_price": 49773000,
       "budget_total": 50000000,
       "team_counts": {
         "Frankrig": 4,
-        "Marokko": 1,
-        "England": 2,
+        "England": 3,
         "Spanien": 4
       },
       "match_methods": {
@@ -252,13 +249,13 @@
         "MID": 3,
         "FWD": 2
       },
-      "pool_total_price": 49961000,
-      "optimizer_total_price": 49961000,
+      "pool_total_price": 49964000,
+      "optimizer_total_price": 49964000,
       "budget_total": 50000000,
       "team_counts": {
-        "Frankrig": 4,
-        "England": 2,
-        "Schweiz": 1,
+        "Frankrig": 3,
+        "England": 3,
+        "Argentina": 1,
         "Spanien": 4
       },
       "match_methods": {
@@ -280,14 +277,13 @@
         "MID": 4,
         "FWD": 1
       },
-      "pool_total_price": 49966000,
-      "optimizer_total_price": 49966000,
+      "pool_total_price": 49957000,
+      "optimizer_total_price": 49957000,
       "budget_total": 50000000,
       "team_counts": {
-        "Frankrig": 4,
-        "England": 2,
-        "Argentina": 1,
-        "Spanien": 4
+        "Spanien": 4,
+        "England": 4,
+        "Frankrig": 3
       },
       "match_methods": {
         "player_id": 11
