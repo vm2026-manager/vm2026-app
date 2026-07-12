@@ -1099,6 +1099,88 @@
       padding-bottom: 6px;
     }
 
+    .pitch-player-card.is-eliminated {
+      background: rgba(255,255,255,0.72);
+      border-color: rgba(153, 27, 27, 0.36);
+      box-shadow: 0 8px 18px rgba(127, 29, 29, 0.16);
+      filter: grayscale(0.75);
+    }
+
+    .pitch-player-card.is-eliminated::before,
+    .pitch-player-card.is-eliminated::after {
+      content: "";
+      position: absolute;
+      left: -8px;
+      right: -8px;
+      top: 50%;
+      height: 6px;
+      border-radius: 999px;
+      background: rgba(220, 38, 38, 0.86);
+      box-shadow: 0 1px 4px rgba(127, 29, 29, 0.32);
+      pointer-events: none;
+      z-index: 3;
+    }
+
+    .pitch-player-card.is-eliminated::before {
+      transform: rotate(45deg);
+    }
+
+    .pitch-player-card.is-eliminated::after {
+      transform: rotate(-45deg);
+    }
+
+    .pitch-eliminated-badge {
+      position: absolute;
+      top: -11px;
+      right: -7px;
+      z-index: 4;
+      border-radius: 999px;
+      padding: 2px 6px;
+      background: rgba(229, 231, 235, 0.95);
+      color: #374151;
+      border: 1px solid rgba(75, 85, 99, 0.28);
+      font-size: 9px;
+      font-weight: 900;
+      line-height: 1;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.18);
+      pointer-events: none;
+    }
+
+    .mobile-slot-hit.is-eliminated .mobile-slot-avatar,
+    .mobile-slot-card.is-eliminated .mobile-slot-chip {
+      filter: grayscale(0.75);
+      opacity: 0.72;
+    }
+
+    .mobile-slot-hit.is-eliminated .mobile-slot-avatar::before,
+    .mobile-slot-hit.is-eliminated .mobile-slot-avatar::after {
+      content: "";
+      position: absolute;
+      left: -4px;
+      right: -4px;
+      top: 50%;
+      height: 4px;
+      border-radius: 999px;
+      background: rgba(220, 38, 38, 0.9);
+      pointer-events: none;
+      z-index: 3;
+    }
+
+    .mobile-slot-hit.is-eliminated .mobile-slot-avatar::before {
+      transform: rotate(45deg);
+    }
+
+    .mobile-slot-hit.is-eliminated .mobile-slot-avatar::after {
+      transform: rotate(-45deg);
+    }
+
+    .mobile-slot-avatar .pitch-eliminated-badge {
+      top: -9px;
+      right: -12px;
+      padding: 1px 4px;
+      font-size: 7px;
+    }
+
     .pitch-player-suspension-line {
       margin-top: 3px;
       color: #b91c1c;
@@ -7581,12 +7663,11 @@ function getPlayerScore(player) {
       return 0;
     }
 
-    // Knockout filter: these are the teams still alive after the finished 1/16-finaler.
-    // Players from eliminated teams stay on the user's current squad if already selected,
-    // but they must not appear as new choices in player list, favorites, alternatives or team filter.
-    const TOURNAMENT_ALIVE_TEAM_IDS = new Set([
-      "CAN","BRA","PAR","MAR","NOR","FRA","MEX","ENG","BEL","USA",
-      "ESP","POR","SUI","EGY","AUS","ARG","CPV","COL","GHA"
+    // Explicit player data (holdet_is_out/is_out) is the primary source of elimination status.
+    // This frontend fallback covers newly eliminated teams before the data file is updated.
+    const FRONTEND_ELIMINATED_TEAM_IDS = new Set([
+      "USA","POR","BRA","MEX","PAR","EGY","COL","CAN",
+      "MAR","SUI","NOR","BEL"
     ]);
 
     function tournamentTeamId(value) {
@@ -7603,7 +7684,7 @@ function getPlayerScore(player) {
     function isTeamStillAlive(teamId) {
       const id = tournamentTeamId(teamId);
       if (!id) return true;
-      return TOURNAMENT_ALIVE_TEAM_IDS.has(id);
+      return !FRONTEND_ELIMINATED_TEAM_IDS.has(id);
     }
 
     function playerTournamentTeamId(player) {
@@ -7624,7 +7705,7 @@ function getPlayerScore(player) {
       if (!player) return false;
       const teamId = playerTournamentTeamId(player);
       if (!teamId) return false;
-      return !TOURNAMENT_ALIVE_TEAM_IDS.has(teamId);
+      return FRONTEND_ELIMINATED_TEAM_IDS.has(teamId);
     }
 
 
@@ -7674,29 +7755,18 @@ function getPlayerScore(player) {
     }
 
     function shouldAutoRemoveEliminatedSquadPlayer(player) {
-      return !!player && isPlayerUnavailable(player);
+      return false;
     }
 
     function getTransferSafeBaselinePlayerId(slotKey) {
       const baselinePlayerId = normalizeSquadSlotPlayerId(transferBaselineSquad?.[slotKey]);
       if (!baselinePlayerId) return null;
-      const baselinePlayer = getPlayerById(baselinePlayerId);
-      if (shouldAutoRemoveEliminatedSquadPlayer(baselinePlayer)) {
-        return null;
-      }
       return baselinePlayerId;
     }
 
     function getTransferSafeBaselineSquadState() {
       if (!transferBaselineSquad || typeof transferBaselineSquad !== "object") return {};
-      const nextBaselineSquad = cloneSquadState(transferBaselineSquad);
-      Object.entries(nextBaselineSquad).forEach(([slotKey, playerId]) => {
-        const player = getPlayerById(playerId);
-        if (shouldAutoRemoveEliminatedSquadPlayer(player)) {
-          delete nextBaselineSquad[slotKey];
-        }
-      });
-      return nextBaselineSquad;
+      return cloneSquadState(transferBaselineSquad);
     }
 
     function startPct(value) {
@@ -9305,16 +9375,10 @@ const playerId = String(player.player_id || player.id || "");
       const cleanedSquad = {};
       const previousSquad = cloneSquadState(squad);
       const previousPurchasePrices = cloneSquadState(squadPurchasePrices);
-      let removedEliminatedPlayer = false;
 
       Object.entries(squad).forEach(([slotKey, playerId]) => {
         const player = getPlayerById(playerId);
         if (!validSlotKeys.has(slotKey) || !player) {
-          return;
-        }
-
-        if (shouldAutoRemoveEliminatedSquadPlayer(player)) {
-          removedEliminatedPlayer = true;
           return;
         }
 
@@ -9323,17 +9387,13 @@ const playerId = String(player.player_id || player.id || "");
         }
       });
 
-      if (removedEliminatedPlayer) {
-        ensureTransferBaselineBeforeAutoRemoval(previousSquad, previousPurchasePrices || {});
-      }
-
       squad = cleanedSquad;
       squadPurchasePrices = buildPurchasePriceMapForSquad(cleanedSquad, previousSquad, previousPurchasePrices, {
         preferStartPriceForNew: true
       });
       sanitizeCaptainPlayerId(squad);
 
-      return removedEliminatedPlayer || JSON.stringify(previousSquad || {}) !== JSON.stringify(cleanedSquad || {});
+      return JSON.stringify(previousSquad || {}) !== JSON.stringify(cleanedSquad || {});
     }
 
     function getCurrentTeamCounts(squadObj = squad) {
@@ -11164,6 +11224,7 @@ function getMobileFormationRowLabel(positionCode) {
 function renderMobileFormationCard(slot, player, isActive) {
   const flagUrl = player ? getFlagUrl(getPlayerFlagCode(player)) : "";
   const isSuspended = player ? isSuspendedNextMatch(player) : false;
+  const isEliminated = player ? isPlayerUnavailable(player) : false;
   const displayName = player ? getMobilePitchPlayerName(player.player_name) : getMobileSlotPositionLabel(slot);
   const displayPrice = player ? formatMobilePitchPrice(getPlayerPrice(player)) : "";
   const captainArmband = player && isCaptainPlayer(player)
@@ -11175,11 +11236,12 @@ function renderMobileFormationCard(slot, player, isActive) {
     : `${positionHint}. Tryk for at vælge spiller.`;
 
   return `
-    <div class="mobile-slot-card ${player ? "filled" : "empty"} ${isActive ? "active" : ""}">
-      <button type="button" class="mobile-slot-hit ${isSuspended ? "is-suspended" : ""}" data-slot-key="${slot.key}" data-filled="${player ? "1" : "0"}" aria-label="${escapeHtml(ariaLabel)}">
+    <div class="mobile-slot-card ${player ? "filled" : "empty"} ${isActive ? "active" : ""} ${isEliminated ? "is-eliminated" : ""}">
+      <button type="button" class="mobile-slot-hit ${isSuspended ? "is-suspended" : ""} ${isEliminated ? "is-eliminated" : ""}" data-slot-key="${slot.key}" data-filled="${player ? "1" : "0"}" aria-label="${escapeHtml(ariaLabel)}">
         <div class="mobile-slot-avatar ${player ? "filled" : "empty"}">
           ${player ? `
             ${captainArmband}
+            ${isEliminated ? `<span class="pitch-eliminated-badge">Ude</span>` : ""}
             ${flagUrl
               ? `<img class="flag-img" src="${flagUrl}" alt="${escapeHtml(teamDisplayName(player.team_id, player.team_name))}">`
               : `<span class="mobile-slot-avatar-code">${escapeHtml(teamShortLabel(player.team_id, slot.positionCode) || positionHint)}</span>`}
@@ -11255,6 +11317,7 @@ function renderMobileFormationCard(slot, player, isActive) {
         const isActive = activeSlotKey === slot.key ? "active" : "";
         const opponentText = player ? nextOpponentText(player.team_id) : "";
         const isSuspended = player ? isSuspendedNextMatch(player) : false;
+        const isEliminated = player ? isPlayerUnavailable(player) : false;
         const displayName = player
           ? (useCompactMobilePitch ? getMobilePitchPlayerName(player.player_name) : player.player_name)
           : slot.position;
@@ -11289,7 +11352,7 @@ function renderMobileFormationCard(slot, player, isActive) {
         return `
           <div class="slot ${isActive}" style="left:${slot.x}%; top:${slot.y}%;">
             ${player ? `
-              <div class="pitch-player-card ${isSuspended ? "is-suspended" : ""}">
+              <div class="pitch-player-card ${isSuspended ? "is-suspended" : ""} ${isEliminated ? "is-eliminated" : ""}">
                 <div class="pitch-flag-row">
                   ${captainArmband}
                   <div class="pitch-player-flag">
@@ -11298,6 +11361,7 @@ function renderMobileFormationCard(slot, player, isActive) {
                       : escapeHtml(teamShortLabel(player.team_id, slot.positionCode) || "")}
                   </div>
                 </div>
+                ${isEliminated ? `<span class="pitch-eliminated-badge">Ude</span>` : ""}
                 ${playerBadges(player)}
                 <div class="player-name">${escapeHtml(displayName)}</div>
                 <div class="player-price">${escapeHtml(displayPrice)}</div>
