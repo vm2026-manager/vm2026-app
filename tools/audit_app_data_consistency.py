@@ -1,14 +1,13 @@
 ﻿from __future__ import annotations
 
 import csv
-import json
 import math
 import re
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any
 
-from json_file_safety import write_json_strict
+from json_file_safety import find_illegal_json_tokens, strict_json_loads, write_json_strict
 
 
 BASE_DIR = Path(__file__).resolve().parents[1]
@@ -50,8 +49,11 @@ POSITION_MAP = {
 
 
 def load_json(path: Path) -> Any:
-    with path.open("r", encoding="utf-8-sig") as f:
-        return json.load(f)
+    text = path.read_text(encoding="utf-8-sig")
+    tokens = find_illegal_json_tokens(text)
+    if tokens:
+        raise ValueError(f"{path} contains illegal JSON tokens: {tokens}")
+    return strict_json_loads(text)
 
 
 def load_csv(path: Path) -> list[dict[str, str]]:
